@@ -1,0 +1,102 @@
+[
+  {
+    "title": "Handling Division by Zero",
+    "ques": "Write a C# program that handles a division by zero error using try-catch-finally blocks. The program should take two integer inputs from the user and attempt to divide them, displaying an appropriate message if an exception occurs.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nclass Program {\n    static void Main() {\n        try {\n            Console.Write(\"Enter numerator: \");\n            int num = Convert.ToInt32(Console.ReadLine());\n            Console.Write(\"Enter denominator: \");\n            int denom = Convert.ToInt32(Console.ReadLine());\n            int result = num / denom;\n            Console.WriteLine($\"Result: {result}\");\n        }\n        catch (DivideByZeroException ex) {\n            Console.WriteLine(\"Error: Cannot divide by zero!\");\n        }\n        finally {\n            Console.WriteLine(\"Execution completed.\");\n        }\n    }\n}"
+    },
+    "explanation": "This program demonstrates ***try-catch-finally*** blocks:\n- The ***try*** block contains code that might throw an exception, here attempting division.\n- ```int result = num / denom;``` performs the division, which throws a ***DivideByZeroException*** if ***denom*** is 0.\n- The ***catch*** block catches the ***DivideByZeroException*** and prints an error message.\n- The ***finally*** block executes regardless of an exception, indicating the program’s end."
+  },
+  {
+    "title": "Creating a Custom Exception",
+    "ques": "Create a custom exception class in C# called 'NegativeNumberException' and use it in a program that checks if a user-entered number is negative. If it is, throw the custom exception.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\n\nclass NegativeNumberException : Exception {\n    public NegativeNumberException(string message) : base(message) {}\n}\n\nclass Program {\n    static void Main() {\n        try {\n            Console.Write(\"Enter a number: \");\n            int number = Convert.ToInt32(Console.ReadLine());\n            if (number < 0) {\n                throw new NegativeNumberException(\"Negative numbers are not allowed!\");\n            }\n            Console.WriteLine($\"You entered: {number}\");\n        }\n        catch (NegativeNumberException ex) {\n            Console.WriteLine($\"Custom Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This program defines a ***custom exception class***:\n- ```class NegativeNumberException : Exception``` creates a custom exception inheriting from the base ***Exception*** class.\n- The constructor ```public NegativeNumberException(string message) : base(message)``` passes a custom message to the base class.\n- In ***Main***, ```if (number < 0)``` checks for a negative number, and ```throw new NegativeNumberException``` throws the custom exception.\n- The ***catch*** block handles the custom exception and displays the message."
+  },
+  {
+    "title": "Throwing an Exception",
+    "ques": "Write a C# program that takes a user’s age as input and throws an exception if the age is less than 18, indicating they are not eligible to vote.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nclass Program {\n    static void Main() {\n        try {\n            Console.Write(\"Enter your age: \");\n            int age = Convert.ToInt32(Console.ReadLine());\n            if (age < 18) {\n                throw new Exception(\"You must be 18 or older to vote!\");\n            }\n            Console.WriteLine(\"You are eligible to vote.\");\n        }\n        catch (Exception ex) {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This program demonstrates ***throwing exceptions***:\n- ```int age = Convert.ToInt32(Console.ReadLine());``` gets the user’s age.\n- ```if (age < 18)``` checks eligibility, and ```throw new Exception``` explicitly throws an exception with a custom message.\n- The ***try*** block wraps the risky code, and the ***catch*** block catches the thrown ***Exception***, displaying the error message.\n- If no exception is thrown, it prints an eligibility message."
+  },
+  {
+    "title": "Using Checked and Unchecked",
+    "ques": "Write a C# program that demonstrates integer overflow using 'checked' and 'unchecked' contexts. Add two maximum integer values and show the difference in behavior.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nclass Program {\n    static void Main() {\n        int max = int.MaxValue;\n        Console.WriteLine(\"Unchecked context:\");\n        unchecked {\n            int result = max + 1;\n            Console.WriteLine($\"{max} + 1 = {result}\");\n        }\n        Console.WriteLine(\"\\nChecked context:\");\n        try {\n            checked {\n                int result = max + 1;\n                Console.WriteLine($\"{max} + 1 = {result}\");\n            }\n        }\n        catch (OverflowException ex) {\n            Console.WriteLine(\"Error: Integer overflow occurred!\");\n        }\n    }\n}"
+    },
+    "explanation": "This program shows ***checked*** and ***unchecked*** contexts:\n- ```int max = int.MaxValue;``` sets the maximum integer value (2,147,483,647).\n- In the ***unchecked*** block, ```max + 1``` overflows silently, wrapping around to -2,147,483,648.\n- In the ***checked*** block, ```max + 1``` throws an ***OverflowException*** because overflow checking is enabled.\n- The ***try-catch*** block catches the overflow exception and displays an error message."
+  },
+  {
+    "title": "Using Multiple Catch Blocks",
+    "ques": "Write a C# program that takes a string input from the user and converts it to an integer. Use multiple catch blocks to handle different exceptions: FormatException for invalid input and OverflowException for numbers outside the integer range.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nclass Program {\n    static void Main() {\n        try {\n            Console.Write(\"Enter a number: \");\n            string input = Console.ReadLine();\n            int number = Convert.ToInt32(input);\n            Console.WriteLine($\"You entered: {number}\");\n        }\n        catch (FormatException) {\n            Console.WriteLine(\"Error: Input must be a valid integer!\");\n        }\n        catch (OverflowException) {\n            Console.WriteLine(\"Error: Number is too large or too small for an integer!\");\n        }\n        catch (Exception ex) {\n            Console.WriteLine($\"Unexpected error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This program uses ***multiple catch blocks***:\n- The ***try*** block attempts to convert user input to an integer with ```Convert.ToInt32(input)```.\n- The first ***catch (FormatException)*** handles cases where the input isn’t a number (e.g., 'abc').\n- The second ***catch (OverflowException)*** catches cases where the number exceeds ***int*** limits (e.g., '999999999999999').\n- The final ***catch (Exception)*** acts as a fallback for any other unexpected errors.\n- Order matters: specific exceptions are caught before the general ***Exception***."
+  },
+  {
+    "title": "Exception Filters",
+    "ques": "Create a C# program that throws an exception with a custom error code in the message. Use an exception filter in the catch block to handle only exceptions where the error code is '404'.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nclass Program {\n    static void Main() {\n        try {\n            Console.Write(\"Enter an error code (e.g., 404, 500): \");\n            string code = Console.ReadLine();\n            throw new Exception($\"Error Code: {code}\");\n        }\n        catch (Exception ex) when (ex.Message.Contains(\"404\")) {\n            Console.WriteLine(\"Caught a 404 error: Resource not found!\");\n        }\n        catch (Exception ex) {\n            Console.WriteLine($\"Other error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This program demonstrates ***exception filters***:\n- ```throw new Exception($\"Error Code: {code}\");``` throws an exception with a user-defined error code.\n- The ***catch (Exception ex) when (ex.Message.Contains(\"404\"))*** uses a filter to catch only exceptions where the message contains '404'.\n- If the condition isn’t met, the exception falls through to the next ***catch*** block.\n- The second ***catch*** handles all other exceptions, showing the full message.\n- Filters allow conditional exception handling without rethrowing."
+  },
+  {
+    "title": "Rethrowing Exceptions",
+    "ques": "Write a C# program that catches an exception, logs it, and then rethrows it to be handled by a higher-level catch block. Simulate a file access error for demonstration.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nclass Program {\n    static void Main() {\n        try {\n            ProcessFile();\n        }\n        catch (Exception ex) {\n            Console.WriteLine($\"Main caught: {ex.Message}\");\n        }\n    }\n\n    static void ProcessFile() {\n        try {\n            throw new Exception(\"File access failed!\");\n        }\n        catch (Exception ex) {\n            Console.WriteLine(\"Logging: \" + ex.Message);\n            throw; // Rethrow the exception\n        }\n    }\n}"
+    },
+    "explanation": "This program shows ***rethrowing exceptions***:\n- ```ProcessFile()``` simulates a file error with ```throw new Exception```.\n- Inside ***ProcessFile***, the ***catch*** block logs the error with ```Console.WriteLine```.\n- ```throw;``` rethrows the original exception without altering its stack trace.\n- The outer ***try-catch*** in ***Main*** catches the rethrown exception and handles it.\n- Using ```throw;``` (not ```throw ex;```) preserves the exception’s original context."
+  },
+  {
+    "title": "Nested Try-Catch Blocks",
+    "ques": "Write a C# program that uses nested try-catch blocks to handle exceptions at different levels. The outer block should handle a general exception, while the inner block handles a specific arithmetic exception when dividing two user-input numbers.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nclass Program {\n    static void Main() {\n        try {\n            Console.Write(\"Enter numerator: \");\n            int num = Convert.ToInt32(Console.ReadLine());\n            try {\n                Console.Write(\"Enter denominator: \");\n                int denom = Convert.ToInt32(Console.ReadLine());\n                int result = num / denom;\n                Console.WriteLine($\"Result: {result}\");\n            }\n            catch (DivideByZeroException) {\n                Console.WriteLine(\"Inner catch: Cannot divide by zero!\");\n            }\n        }\n        catch (Exception ex) {\n            Console.WriteLine($\"Outer catch: Invalid input - {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This program demonstrates ***nested try-catch blocks***:\n- The outer ***try*** block wraps the entire operation, catching general exceptions like ***FormatException*** from invalid input.\n- The inner ***try*** block focuses on the division, catching the specific ***DivideByZeroException*** if ```denom``` is 0.\n- ```int result = num / denom;``` triggers the arithmetic exception if needed.\n- The inner ***catch*** handles the division-specific error, while the outer ***catch*** catches broader issues (e.g., non-numeric input).\n- This shows layered exception handling."
+  },
+  {
+    "title": "Exception Handling with Using Statement",
+    "ques": "Write a C# program that reads from a file using a 'using' statement and handles a potential FileNotFoundException. Simulate the exception by attempting to open a non-existent file.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\nclass Program {\n    static void Main() {\n        try {\n            using (StreamReader reader = new StreamReader(\"nonexistent.txt\")) {\n                string content = reader.ReadToEnd();\n                Console.WriteLine(content);\n            }\n        }\n        catch (FileNotFoundException ex) {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n        catch (Exception ex) {\n            Console.WriteLine($\"Unexpected error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This program uses a ***using statement*** with exception handling:\n- ```using (StreamReader reader = new StreamReader(\"nonexistent.txt\"))``` attempts to open a file, automatically disposing of the resource when done.\n- Since 'nonexistent.txt' doesn’t exist, a ***FileNotFoundException*** is thrown.\n- The ***catch (FileNotFoundException)*** block handles the specific error, displaying the message.\n- A general ***catch (Exception)*** block catches any other potential errors (e.g., permissions).\n- The ***using*** statement ensures proper resource cleanup even if an exception occurs."
+  },
+  {
+    "title": "Exception Handling in Async Methods",
+    "ques": "Write a C# program with an async method that simulates a delayed task (e.g., waiting 2 seconds) and throws an exception if a user-provided value is negative. Handle the exception in the calling method.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Threading.Tasks;\nclass Program {\n    static async Task Main() {\n        try {\n            Console.Write(\"Enter a number: \");\n            int value = Convert.ToInt32(Console.ReadLine());\n            await ProcessValueAsync(value);\n            Console.WriteLine(\"Task completed successfully.\");\n        }\n        catch (Exception ex) {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n\n    static async Task ProcessValueAsync(int value) {\n        await Task.Delay(2000); // Simulate async work\n        if (value < 0) {\n            throw new Exception(\"Negative values are not allowed!\");\n        }\n    }\n}"
+    },
+    "explanation": "This program handles exceptions in an ***async method***:\n- ```static async Task Main()``` enables async/await in the entry point (C# 7.1+).\n- ```await ProcessValueAsync(value)``` calls the async method, which delays for 2 seconds with ```Task.Delay```.\n- In ***ProcessValueAsync***, ```if (value < 0)``` throws an exception for negative input.\n- The ***try-catch*** in ***Main*** catches the exception propagated from the async method.\n- This demonstrates exception handling across asynchronous operations."
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Pointer Declaration and Initialization",
+    "ques": "Write a C program to declare and initialize a pointer to an integer variable. The program should print the value of the variable using the pointer and its memory address.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int num = 42;\n    int *ptr = &num;\n    printf(\"Value of num: %d\\n\", *ptr);\n    printf(\"Address of num: %p\\n\", (void*)ptr);\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates pointer declaration and initialization:\n- ***int num = 42;*** declares an integer variable `num` and initializes it with 42.\n- ***int *ptr = &num;*** declares a pointer `ptr` and initializes it with the address of `num` using the address-of operator `&`.\n- ***printf(\"Value of num: %d\\n\", *ptr);*** uses the dereference operator `*` to access the value at the address stored in `ptr`, printing 42.\n- ***printf(\"Address of num: %p\\n\", (void*)ptr);*** prints the memory address stored in `ptr`. The `(void*)` cast ensures proper formatting with `%p`."
+  },
+  {
+    "title": "Pointer Arithmetic",
+    "ques": "Write a C program that uses pointer arithmetic to increment a pointer to an integer by 2 units and then prints the resulting address and value at that new address. Assume the pointer initially points to the first element of an array of integers.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int arr[5] = {10, 20, 30, 40, 50};\n    int *ptr = arr;\n    printf(\"Initial address: %p, Value: %d\\n\", (void*)ptr, *ptr);\n    ptr = ptr + 2;\n    printf(\"New address: %p, Value: %d\\n\", (void*)ptr, *ptr);\n    return 0;\n}"
+    },
+    "explanation": "This program showcases pointer arithmetic:\n- ***int arr[5] = {10, 20, 30, 40, 50};*** defines an array of 5 integers.\n- ***int *ptr = arr;*** initializes `ptr` to point to the first element of `arr` (address of `arr[0]`).\n- ***printf(\"Initial address: %p, Value: %d\\n\", (void*)ptr, *ptr);*** prints the initial address and value (10).\n- ***ptr = ptr + 2;*** increments the pointer by 2 units. Since `ptr` is an `int*`, each unit is the size of an `int` (typically 4 bytes), so it moves to `arr[2]`.\n- ***printf(\"New address: %p, Value: %d\\n\", (void*)ptr, *ptr);*** prints the new address and value (30)."
+  },
+  {
+    "title": "Pointers and Arrays",
+    "ques": "Write a C program that uses a pointer to iterate through an array of 4 integers and prints each element along with its index. Use pointer notation instead of array indexing.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int arr[4] = {5, 15, 25, 35};\n    int *ptr = arr;\n    for (int i = 0; i < 4; i++) {\n        printf(\"Element at index %d: %d\\n\", i, *(ptr + i));\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program uses pointers with arrays:\n- ***int arr[4] = {5, 15, 25, 35};*** creates an array of 4 integers.\n- ***int *ptr = arr;*** sets `ptr` to the base address of `arr`.\n- ***for (int i = 0; i < 4; i++)*** loops 4 times to access each element.\n- ***printf(\"Element at index %d: %d\\n\", i, *(ptr + i));*** uses pointer arithmetic (`ptr + i`) to calculate the address of each element and dereferences it with `*` to get the value. For example, `*(ptr + 0)` is 5, `*(ptr + 1)` is 15, and so on."
+  },
+  {
+    "title": "Pointers to Functions",
+    "ques": "Write a C program that defines a function to add two integers and uses a function pointer to call it. The program should take two integers as input and print their sum using the function pointer.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint add(int a, int b) {\n    return a + b;\n}\nint main() {\n    int (*funcPtr)(int, int) = add;\n    int x = 8, y = 12;\n    int result = (*funcPtr)(x, y);\n    printf(\"Sum of %d and %d is %d\\n\", x, y, result);\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates pointers to functions:\n- ***int add(int a, int b)*** defines a function that returns the sum of two integers.\n- ***int (*funcPtr)(int, int) = add;*** declares a function pointer `funcPtr` that points to a function taking two `int` parameters and returning an `int`. It’s initialized to point to `add`.\n- ***int x = 8, y = 12;*** sets two integer variables.\n- ***int result = (*funcPtr)(x, y);*** calls the `add` function via the pointer by dereferencing it and passing `x` and `y`. The result is 20.\n- ***printf(\"Sum of %d and %d is %d\\n\", x, y, result);*** prints the sum."
+  },
+  {
+    "title": "Pointers to Pointers",
+    "ques": "Write a C program to demonstrate the use of a pointer to a pointer. Declare an integer variable, a pointer to it, and a pointer to that pointer. Use the pointer to the pointer to modify the original variable's value and print the result.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int num = 10;\n    int *ptr = &num;\n    int **pptr = &ptr;\n    **pptr = 50;\n    printf(\"Modified value of num: %d\\n\", num);\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates pointers to pointers:\n- ***int num = 10;*** declares an integer variable initialized to 10.\n- ***int *ptr = &num;*** declares a pointer `ptr` that holds the address of `num`.\n- ***int **pptr = &ptr;*** declares a pointer to a pointer `pptr` that holds the address of `ptr`.\n- *** **pptr = 50;*** dereferences `pptr` twice: the first `*` gets `ptr`, and the second `*` accesses `num`, changing its value to 50.\n- ***printf(\"Modified value of num: %d\\n\", num);*** prints the modified value of `num`, which is now 50."
+  },
+  {
+    "title": "Dynamic Memory Allocation with Pointers",
+    "ques": "Write a C program that dynamically allocates memory for an array of 3 integers using a pointer, allows the user to input values, and then prints the sum of those values. Free the allocated memory afterward.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *ptr = (int *)malloc(3 * sizeof(int));\n    if (ptr == NULL) {\n        printf(\"Memory allocation failed\\n\");\n        return 1;\n    }\n    printf(\"Enter 3 integers:\\n\");\n    for (int i = 0; i < 3; i++) {\n        scanf(\"%d\", ptr + i);\n    }\n    int sum = 0;\n    for (int i = 0; i < 3; i++) {\n        sum += *(ptr + i);\n    }\n    printf(\"Sum of the integers: %d\\n\", sum);\n    free(ptr);\n    return 0;\n}"
+    },
+    "explanation": "This program shows dynamic memory allocation:\n- ***int *ptr = (int *)malloc(3 * sizeof(int));*** allocates memory for 3 integers and returns a pointer to the first element.\n- ***if (ptr == NULL)*** checks if allocation failed, exiting if true.\n- ***scanf(\"%d\", ptr + i);*** uses pointer arithmetic to store user input at each position in the allocated memory.\n- ***sum += *(ptr + i);*** calculates the sum by dereferencing the pointer at each position.\n- ***printf(\"Sum of the integers: %d\\n\", sum);*** prints the sum of the integers.\n- ***free(ptr);*** releases the allocated memory to prevent memory leaks."
+  },
+  {
+    "title": "Pointers and Strings",
+    "ques": "Write a C program that uses a pointer to traverse a string and count the number of vowels (a, e, i, o, u, case-insensitive). Print the string and the vowel count.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <ctype.h>\nint main() {\n    char str[] = \"Hello World\";\n    char *ptr = str;\n    int vowels = 0;\n    while (*ptr != '\\0') {\n        char ch = tolower(*ptr);\n        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {\n            vowels++;\n        }\n        ptr++;\n    }\n    printf(\"String: %s\\n\", str);\n    printf(\"Number of vowels: %d\\n\", vowels);\n    return 0;\n}"
+    },
+    "explanation": "This program uses pointers with strings:\n- ***char str[] = \"Hello World\";*** declares a string (character array).\n- ***char *ptr = str;*** initializes `ptr` to point to the first character of `str`.\n- ***while (*ptr != '\\0')*** loops until the null terminator is reached.\n- ***char ch = tolower(*ptr);*** converts the current character to lowercase for case-insensitive comparison.\n- ***if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')*** checks if the character is a vowel, incrementing `vowels` if true.\n- ***ptr++;*** moves the pointer to the next character.\n- ***printf(\"String: %s\\n\", str);*** prints the original string.\n- ***printf(\"Number of vowels: %d\\n\", vowels);*** prints the vowel count (4 for \"Hello World\")."
+  },
+  {
+    "title": "Const Pointers",
+    "ques": "Write a C program to demonstrate the use of a constant pointer to a constant integer. Initialize an integer, assign it to the pointer, and attempt to modify the pointer's value and address to show what’s restricted. Print the value using the pointer.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int num = 25;\n    const int *const ptr = &num;\n    printf(\"Value through pointer: %d\\n\", *ptr);\n    /* *ptr = 30; // Error: cannot modify value */\n    /* ptr = &another_num; // Error: cannot modify pointer */\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates constant pointers:\n- ***int num = 25;*** declares an integer variable.\n- ***const int *const ptr = &num;*** declares a constant pointer to a constant integer, meaning neither the value it points to nor the pointer itself can be modified.\n- ***printf(\"Value through pointer: %d\\n\", *ptr);*** prints the value (25) by dereferencing `ptr`.\n- The commented lines *** *ptr = 30;*** and *** ptr = &another_num;*** would cause compilation errors because:\n  - The first `const` prevents modifying the value at `*ptr`.\n  - The second `const` prevents changing the address stored in `ptr`."
+  },
+  {
+    "title": "Void Pointers",
+    "ques": "Write a C program to demonstrate the use of a void pointer. Declare an integer and a float, use a void pointer to point to each, and print their values by casting the pointer appropriately.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int num = 100;\n    float fnum = 5.75;\n    void *vptr;\n    vptr = &num;\n    printf(\"Integer value: %d\\n\", *(int *)vptr);\n    vptr = &fnum;\n    printf(\"Float value: %.2f\\n\", *(float *)vptr);\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates void pointers:\n- ***int num = 100;*** and ***float fnum = 5.75;*** declare an integer and a float.\n- ***void *vptr;*** declares a void pointer, which can point to any data type but cannot be dereferenced directly.\n- ***vptr = &num;*** assigns the address of `num` to `vptr`.\n- ***printf(\"Integer value: %d\\n\", *(int *)vptr);*** casts `vptr` to an `int*` and dereferences it to print 100.\n- ***vptr = &fnum;*** reassigns `vptr` to the address of `fnum`.\n- ***printf(\"Float value: %.2f\\n\", *(float *)vptr);*** casts `vptr` to a `float*` and dereferences it to print 5.75."
+  },
+  {
+    "title": "Pointers and Structures",
+    "ques": "Write a C program that defines a structure for a student with a name (string) and age (integer). Use a pointer to the structure to set and print the student's details.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <string.h>\nstruct Student {\n    char name[20];\n    int age;\n};\nint main() {\n    struct Student stu;\n    struct Student *ptr = &stu;\n    strcpy(ptr->name, \"Alice\");\n    ptr->age = 20;\n    printf(\"Student Name: %s\\n\", ptr->name);\n    printf(\"Student Age: %d\\n\", ptr->age);\n    return 0;\n}"
+    },
+    "explanation": "This program uses pointers with structures:\n- ***struct Student { char name[20]; int age; };*** defines a structure `Student` with a name and age.\n- ***struct Student stu;*** creates an instance of the structure.\n- ***struct Student *ptr = &stu;*** declares a pointer to the structure and initializes it with the address of `stu`.\n- ***strcpy(ptr->name, \"Alice\");*** uses the arrow operator `->` to access and set the `name` field.\n- ***ptr->age = 20;*** sets the `age` field via the pointer.\n- ***printf(\"Student Name: %s\\n\", ptr->name);*** and ***printf(\"Student Age: %d\\n\", ptr->age);*** print the values using the pointer."
+  },
+  {
+    "title": "Null Pointers",
+    "ques": "Write a C program to demonstrate the use of a null pointer. Declare a pointer, set it to NULL, check if it’s null, and attempt to dereference it only if it’s not null. Print appropriate messages.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int *ptr = NULL;\n    if (ptr == NULL) {\n        printf(\"Pointer is NULL, cannot dereference\\n\");\n    } else {\n        printf(\"Value: %d\\n\", *ptr);\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates null pointers:\n- ***int *ptr = NULL;*** declares a pointer and initializes it to `NULL`, indicating it points to no valid memory.\n- ***if (ptr == NULL)*** checks if the pointer is null.\n- ***printf(\"Pointer is NULL, cannot dereference\\n\");*** executes because `ptr` is `NULL`, preventing a segmentation fault from dereferencing.\n- The `else` block (***printf(\"Value: %d\\n\", *ptr);***) would only run if `ptr` pointed to a valid address, but here it’s skipped."
+  },
+  {
+    "title": "Pointers and Multi-Dimensional Arrays",
+    "ques": "Write a C program that declares a 2x3 integer array, uses a pointer to traverse it, and prints each element along with its row and column indices.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};\n    int *ptr = &arr[0][0];\n    for (int i = 0; i < 2; i++) {\n        for (int j = 0; j < 3; j++) {\n            printf(\"Element at [%d][%d]: %d\\n\", i, j, *(ptr + i * 3 + j));\n        }\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program uses pointers with multi-dimensional arrays:\n- ***int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};*** declares a 2x3 array.\n- ***int *ptr = &arr[0][0];*** sets `ptr` to the address of the first element (contiguous in memory).\n- ***for (int i = 0; i < 2; i++)*** and ***for (int j = 0; j < 3; j++)*** loop over rows and columns.\n- ****(ptr + i * 3 + j)*** calculates the offset: `i * 3` moves to the start of the row (since each row has 3 elements), and `+ j` moves to the column. Dereferencing gives the value.\n- ***printf(\"Element at [%d][%d]: %d\\n\", i, j, *(ptr + i * 3 + j));*** prints each element with its indices, e.g., `[0][0]: 1`, `[0][1]: 2`, etc."
+  }
+]

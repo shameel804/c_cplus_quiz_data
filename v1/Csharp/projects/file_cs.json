@@ -1,0 +1,282 @@
+[
+  {
+    "title": "Reading a Text File",
+    "ques": "Write a C# program to read all lines from a text file named 'input.txt' and display them on the console.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\n\nclass Program\n{\n    static void Main()\n    {\n        try\n        {\n            string[] lines = File.ReadAllLines(\"input.txt\");\n            foreach (string line in lines)\n            {\n                Console.WriteLine(line);\n            }\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This program demonstrates reading a text file in C#:\n\n1. ***using System.IO;*** - Imports the IO namespace for file operations.\n2. ```string[] lines = File.ReadAllLines(\"input.txt\");``` - Reads all lines from 'input.txt' into a string array.\n3. ***foreach*** loop - Iterates through each line in the array.\n4. ```Console.WriteLine(line);``` - Prints each line to the console.\n5. ***try-catch*** block - Handles potential errors like file not found."
+  },
+  {
+    "title": "Writing to Binary File",
+    "ques": "Create a C# program that writes an integer array to a binary file 'data.bin'.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\n\nclass Program\n{\n    static void Main()\n    {\n        int[] numbers = { 1, 2, 3, 4, 5 };\n        using (BinaryWriter writer = new BinaryWriter(File.Open(\"data.bin\", FileMode.Create)))\n        {\n            foreach (int num in numbers)\n            {\n                writer.Write(num);\n            }\n        }\n        Console.WriteLine(\"Data written to binary file.\");\n    }\n}"
+    },
+    "explanation": "This program shows binary file writing:\n\n1. ***int[] numbers*** - Array to write to file.\n2. ```using (BinaryWriter writer = ...)``` - Creates a BinaryWriter with automatic resource disposal.\n3. ```File.Open(\"data.bin\", FileMode.Create)``` - Opens or creates 'data.bin'.\n4. ***foreach*** loop - Iterates through numbers.\n5. ```writer.Write(num);``` - Writes each integer in binary format."
+  },
+  {
+    "title": "Object Serialization",
+    "ques": "Write a C# program to serialize a custom class object to a binary file using BinaryFormatter.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\nusing System.Runtime.Serialization.Formatters.Binary;\n\n[Serializable]\nclass Person\n{\n    public string Name { get; set; }\n    public int Age { get; set; }\n}\n\nclass Program\n{\n    static void Main()\n    {\n        Person person = new Person { Name = \"John\", Age = 30 };\n        BinaryFormatter formatter = new BinaryFormatter();\n        using (FileStream fs = new FileStream(\"person.bin\", FileMode.Create))\n        {\n            formatter.Serialize(fs, person);\n        }\n        Console.WriteLine(\"Object serialized.\");\n    }\n}"
+    },
+    "explanation": "This demonstrates serialization:\n\n1. ***[Serializable]*** - Marks Person class as serializable.\n2. ```Person person = new Person {...}``` - Creates object to serialize.\n3. ```BinaryFormatter formatter``` - Creates formatter for binary serialization.\n4. ```FileStream fs = new FileStream(...)``` - Opens file stream.\n5. ```formatter.Serialize(fs, person);``` - Serializes object to file."
+  },
+  {
+    "title": "JSON File Handling",
+    "ques": "Create a C# program that writes an object to a JSON file and reads it back using System.Text.Json.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\nusing System.Text.Json;\n\nclass Student\n{\n    public string Name { get; set; }\n    public int Grade { get; set; }\n}\n\nclass Program\n{\n    static void Main()\n    {\n        Student student = new Student { Name = \"Alice\", Grade = 85 };\n        \n        // Writing to JSON\n        string jsonString = JsonSerializer.Serialize(student);\n        File.WriteAllText(\"student.json\", jsonString);\n        \n        // Reading from JSON\n        string jsonRead = File.ReadAllText(\"student.json\");\n        Student studentRead = JsonSerializer.Deserialize<Student>(jsonRead);\n        Console.WriteLine($\"Read: {studentRead.Name}, {studentRead.Grade}\");\n    }\n}"
+    },
+    "explanation": "This shows JSON handling:\n\n1. ***Student class*** - Defines data structure.\n2. ```JsonSerializer.Serialize(student)``` - Converts object to JSON string.\n3. ```File.WriteAllText(...)``` - Writes JSON to file.\n4. ```File.ReadAllText(...)``` - Reads JSON from file.\n5. ```JsonSerializer.Deserialize<Student>(...)``` - Converts JSON back to object."
+  },
+  {
+    "title": "Appending to a Text File",
+    "ques": "Write a C# program to append a new line of text to an existing file 'log.txt' without overwriting its contents.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\n\nclass Program\n{\n    static void Main()\n    {\n        string newLine = \"New log entry: \" + DateTime.Now.ToString();\n        try\n        {\n            using (StreamWriter writer = new StreamWriter(\"log.txt\", true))\n            {\n                writer.WriteLine(newLine);\n            }\n            Console.WriteLine(\"Text appended successfully.\");\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This program demonstrates appending to a text file:\n\n1. ***string newLine*** - Creates a string with a timestamp.\n2. ```StreamWriter writer = new StreamWriter(\"log.txt\", true)``` - Opens file in append mode (true).\n3. ```writer.WriteLine(newLine);``` - Appends the new line to the file.\n4. ***using*** statement - Ensures the file is properly closed after writing.\n5. ***try-catch*** - Handles potential IO exceptions."
+  },
+  {
+    "title": "Reading a Binary File",
+    "ques": "Create a C# program to read integers from a binary file 'data.bin' and display them.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\n\nclass Program\n{\n    static void Main()\n    {\n        try\n        {\n            using (BinaryReader reader = new BinaryReader(File.Open(\"data.bin\", FileMode.Open)))\n            {\n                while (reader.BaseStream.Position < reader.BaseStream.Length)\n                {\n                    int number = reader.ReadInt32();\n                    Console.WriteLine(number);\n                }\n            }\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This shows reading from a binary file:\n\n1. ```BinaryReader reader = new BinaryReader(...)``` - Creates a reader for the binary file.\n2. ```while (reader.BaseStream.Position < reader.BaseStream.Length)``` - Loops until end of file.\n3. ```reader.ReadInt32()``` - Reads an integer from the file.\n4. ```Console.WriteLine(number);``` - Displays each integer.\n5. ***try-catch*** - Catches errors like file not found or invalid format."
+  },
+  {
+    "title": "XML File Writing",
+    "ques": "Write a C# program to create an XML file 'employees.xml' containing employee data using XmlWriter.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Xml;\n\nclass Program\n{\n    static void Main()\n    {\n        using (XmlWriter writer = XmlWriter.Create(\"employees.xml\"))\n        {\n            writer.WriteStartDocument();\n            writer.WriteStartElement(\"Employees\");\n            writer.WriteStartElement(\"Employee\");\n            writer.WriteElementString(\"Name\", \"Jane Doe\");\n            writer.WriteElementString(\"ID\", \"1001\");\n            writer.WriteEndElement();\n            writer.WriteEndElement();\n            writer.WriteEndDocument();\n        }\n        Console.WriteLine(\"XML file created.\");\n    }\n}"
+    },
+    "explanation": "This demonstrates XML writing:\n\n1. ```XmlWriter.Create(\"employees.xml\")``` - Creates an XML writer for the file.\n2. ```WriteStartDocument()``` - Begins the XML document.\n3. ```WriteStartElement(\"Employees\")``` - Starts the root element.\n4. ```WriteElementString(...)``` - Writes elements with values (Name, ID).\n5. ***WriteEnd methods*** - Closes the opened elements and document."
+  },
+  {
+    "title": "Deserialization with Validation",
+    "ques": "Create a C# program to deserialize a Person object from 'person.bin' and validate the data, using BinaryFormatter.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\nusing System.Runtime.Serialization.Formatters.Binary;\n\n[Serializable]\nclass Person\n{\n    public string Name { get; set; }\n    public int Age { get; set; }\n}\n\nclass Program\n{\n    static void Main()\n    {\n        try\n        {\n            BinaryFormatter formatter = new BinaryFormatter();\n            using (FileStream fs = new FileStream(\"person.bin\", FileMode.Open))\n            {\n                Person person = (Person)formatter.Deserialize(fs);\n                if (string.IsNullOrEmpty(person.Name) || person.Age < 0)\n                {\n                    Console.WriteLine(\"Invalid data detected.\");\n                }\n                else\n                {\n                    Console.WriteLine($\"Name: {person.Name}, Age: {person.Age}\");\n                }\n            }\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This shows deserialization with validation:\n\n1. ***[Serializable]*** - Marks Person class for serialization.\n2. ```formatter.Deserialize(fs)``` - Reads object from file.\n3. ```(Person)``` - Casts deserialized object to Person type.\n4. ***if*** condition - Checks for valid Name and Age.\n5. ```Console.WriteLine(...)``` - Displays data or error message."
+  },
+  {
+    "title": "Reading with FileStream",
+    "ques": "Write a C# program to read the first 10 bytes from a text file 'sample.txt' using FileStream and display them as text.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\nusing System.Text;\n\nclass Program\n{\n    static void Main()\n    {\n        try\n        {\n            using (FileStream fs = new FileStream(\"sample.txt\", FileMode.Open, FileAccess.Read))\n            {\n                byte[] buffer = new byte[10];\n                int bytesRead = fs.Read(buffer, 0, 10);\n                string text = Encoding.UTF8.GetString(buffer, 0, bytesRead);\n                Console.WriteLine($\"First {bytesRead} bytes: {text}\");\n            }\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This program uses FileStream for low-level file reading:\n\n1. ```FileStream fs = new FileStream(...)``` - Opens 'sample.txt' for reading.\n2. ***byte[] buffer*** - Creates a 10-byte array to store data.\n3. ```fs.Read(buffer, 0, 10)``` - Reads up to 10 bytes into the buffer.\n4. ```Encoding.UTF8.GetString(...)``` - Converts bytes to text.\n5. ***try-catch*** - Handles file-related errors."
+  },
+  {
+    "title": "Creating a Temporary File",
+    "ques": "Create a C# program that generates a temporary text file, writes a message to it, and reads it back before deletion.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\n\nclass Program\n{\n    static void Main()\n    {\n        string tempFile = Path.GetTempFileName();\n        try\n        {\n            File.WriteAllText(tempFile, \"This is a temporary message.\");\n            string content = File.ReadAllText(tempFile);\n            Console.WriteLine($\"Content: {content}\");\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n        finally\n        {\n            if (File.Exists(tempFile))\n            {\n                File.Delete(tempFile);\n            }\n        }\n        Console.WriteLine(\"Temporary file handled.\");\n    }\n}"
+    },
+    "explanation": "This demonstrates temporary file handling:\n\n1. ```Path.GetTempFileName()``` - Generates a unique temporary file path.\n2. ```File.WriteAllText(...)``` - Writes a message to the temp file.\n3. ```File.ReadAllText(...)``` - Reads the content back.\n4. ***finally*** block - Ensures the file is deleted.\n5. ***try-catch*** - Manages potential IO errors."
+  },
+  {
+    "title": "Reading Specific Lines",
+    "ques": "Write a C# program to read and display only the second line from a text file 'data.txt'.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\nusing System.Linq;\n\nclass Program\n{\n    static void Main()\n    {\n        try\n        {\n            string secondLine = File.ReadLines(\"data.txt\").Skip(1).First();\n            Console.WriteLine($\"Second line: {secondLine}\");\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This shows reading a specific line:\n\n1. ```File.ReadLines(\"data.txt\")``` - Reads lines lazily (efficiently).\n2. ```Skip(1)``` - Skips the first line.\n3. ```First()``` - Takes the next (second) line.\n4. ```Console.WriteLine(...)``` - Displays the result.\n5. ***try-catch*** - Handles cases like file not found or too few lines."
+  },
+  {
+    "title": "Modifying XML with XmlDocument",
+    "ques": "Create a C# program that loads an XML file 'config.xml', adds a new element, and saves it back.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Xml;\n\nclass Program\n{\n    static void Main()\n    {\n        try\n        {\n            XmlDocument doc = new XmlDocument();\n            doc.Load(\"config.xml\");\n            XmlElement newElement = doc.CreateElement(\"Setting\");\n            newElement.SetAttribute(\"name\", \"Theme\");\n            newElement.InnerText = \"Dark\";\n            doc.DocumentElement.AppendChild(newElement);\n            doc.Save(\"config.xml\");\n            Console.WriteLine(\"XML modified and saved.\");\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This demonstrates XML modification:\n\n1. ```XmlDocument doc = new XmlDocument()``` - Creates an XML document object.\n2. ```doc.Load(\"config.xml\")``` - Loads the existing XML file.\n3. ```doc.CreateElement(\"Setting\")``` - Creates a new element.\n4. ```SetAttribute(...)``` and ***InnerText*** - Sets attributes and value.\n5. ```AppendChild(...)``` and ```doc.Save(...)``` - Adds and saves changes."
+  },
+  {
+    "title": "Checking File Attributes",
+    "ques": "Write a C# program to check and display the attributes (e.g., ReadOnly, Hidden) of a file 'document.txt'.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\n\nclass Program\n{\n    static void Main()\n    {\n        string filePath = \"document.txt\";\n        try\n        {\n            if (File.Exists(filePath))\n            {\n                FileAttributes attributes = File.GetAttributes(filePath);\n                Console.WriteLine($\"File: {filePath}\");\n                Console.WriteLine($\"ReadOnly: {(attributes & FileAttributes.ReadOnly) == FileAttributes.ReadOnly}\");\n                Console.WriteLine($\"Hidden: {(attributes & FileAttributes.Hidden) == FileAttributes.Hidden}\");\n                Console.WriteLine($\"Archive: {(attributes & FileAttributes.Archive) == FileAttributes.Archive}\");\n            }\n            else\n            {\n                Console.WriteLine(\"File does not exist.\");\n            }\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This program checks file attributes:\n\n1. ```File.GetAttributes(filePath)``` - Retrieves the file’s attributes.\n2. ***Bitwise AND (&)*** - Tests specific attributes like ReadOnly, Hidden.\n3. ```Console.WriteLine(...)``` - Displays true/false for each attribute.\n4. ***if (File.Exists(...))*** - Ensures the file exists before checking.\n5. ***try-catch*** - Handles access or IO errors."
+  },
+  {
+    "title": "Buffered File Copy",
+    "ques": "Create a C# program to copy a large file 'source.bin' to 'destination.bin' using BufferedStream for efficiency.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\n\nclass Program\n{\n    static void Main()\n    {\n        string source = \"source.bin\";\n        string dest = \"destination.bin\";\n        try\n        {\n            using (FileStream fsSource = new FileStream(source, FileMode.Open, FileAccess.Read))\n            using (BufferedStream bsSource = new BufferedStream(fsSource))\n            using (FileStream fsDest = new FileStream(dest, FileMode.Create, FileAccess.Write))\n            using (BufferedStream bsDest = new BufferedStream(fsDest))\n            {\n                byte[] buffer = new byte[1024];\n                int bytesRead;\n                while ((bytesRead = bsSource.Read(buffer, 0, buffer.Length)) > 0)\n                {\n                    bsDest.Write(buffer, 0, bytesRead);\n                }\n            }\n            Console.WriteLine(\"File copied successfully.\");\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This demonstrates buffered file copying:\n\n1. ***BufferedStream*** - Wraps FileStreams for efficient reading/writing.\n2. ```byte[] buffer = new byte[1024]``` - Uses a 1KB buffer.\n3. ```bsSource.Read(...)``` - Reads chunks into the buffer.\n4. ```bsDest.Write(...)``` - Writes chunks to the destination.\n5. ***while*** loop - Continues until all bytes are copied."
+  },
+  {
+    "title": "Serializing a Collection",
+    "ques": "Write a C# program to serialize a List of strings to a binary file 'list.bin' using BinaryFormatter.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\nusing System.Runtime.Serialization.Formatters.Binary;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static void Main()\n    {\n        List<string> items = new List<string> { \"Apple\", \"Banana\", \"Cherry\" };\n        try\n        {\n            BinaryFormatter formatter = new BinaryFormatter();\n            using (FileStream fs = new FileStream(\"list.bin\", FileMode.Create))\n            {\n                formatter.Serialize(fs, items);\n            }\n            Console.WriteLine(\"List serialized.\");\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This shows serializing a collection:\n\n1. ***List<string>*** - Defines a collection to serialize.\n2. ```BinaryFormatter formatter``` - Prepares for binary serialization.\n3. ```formatter.Serialize(fs, items)``` - Serializes the entire list.\n4. ***using FileStream*** - Ensures proper file handling.\n5. ***try-catch*** - Catches serialization or file errors."
+  },
+  {
+    "title": "Parsing XML with LINQ",
+    "ques": "Create a C# program to read and parse an XML file 'books.xml' using LINQ to XML, displaying all book titles.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Linq;\nusing System.Xml.Linq;\n\nclass Program\n{\n    static void Main()\n    {\n        try\n        {\n            XDocument doc = XDocument.Load(\"books.xml\");\n            var titles = from book in doc.Descendants(\"Book\")\n                         select book.Element(\"Title\")?.Value;\n            foreach (string title in titles)\n            {\n                Console.WriteLine($\"Title: {title}\");\n            }\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This demonstrates LINQ to XML parsing:\n\n1. ```XDocument.Load(\"books.xml\")``` - Loads the XML file.\n2. ***LINQ query*** - Selects all 'Title' elements under 'Book' nodes.\n3. ```?.Value``` - Safely gets the title text (null if missing).\n4. ***foreach*** - Prints each title.\n5. ***try-catch*** - Handles XML loading or parsing errors."
+  },
+  {
+    "title": "Reading with Specific Encoding",
+    "ques": "Write a C# program to read a text file 'notes.txt' using UTF-16 encoding and display its contents.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\nusing System.Text;\n\nclass Program\n{\n    static void Main()\n    {\n        string filePath = \"notes.txt\";\n        try\n        {\n            using (StreamReader reader = new StreamReader(filePath, Encoding.Unicode))\n            {\n                string content = reader.ReadToEnd();\n                Console.WriteLine($\"Content (UTF-16): {content}\");\n            }\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This program handles specific text encoding:\n\n1. ```StreamReader(filePath, Encoding.Unicode)``` - Opens file with UTF-16 encoding.\n2. ```reader.ReadToEnd()``` - Reads all text as a string.\n3. ```Console.WriteLine(...)``` - Displays the content.\n4. ***using*** - Ensures proper resource disposal.\n5. ***try-catch*** - Catches encoding or file errors."
+  },
+  {
+    "title": "Memory-Mapped File Access",
+    "ques": "Create a C# program to read a portion of a large binary file 'largefile.bin' using a memory-mapped file.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\nusing System.IO.MemoryMappedFiles;\n\nclass Program\n{\n    static void Main()\n    {\n        string filePath = \"largefile.bin\";\n        try\n        {\n            using (MemoryMappedFile mmf = MemoryMappedFile.CreateFromFile(filePath, FileMode.Open))\n            using (MemoryMappedViewAccessor accessor = mmf.CreateViewAccessor(0, 100))\n            {\n                byte[] data = new byte[100];\n                accessor.ReadArray(0, data, 0, data.Length);\n                Console.WriteLine($\"First 100 bytes: {BitConverter.ToString(data)}\");\n            }\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This demonstrates memory-mapped files:\n\n1. ```MemoryMappedFile.CreateFromFile(...)``` - Maps the file into memory.\n2. ```CreateViewAccessor(0, 100)``` - Accesses the first 100 bytes.\n3. ```accessor.ReadArray(...)``` - Reads bytes into an array.\n4. ```BitConverter.ToString(...)``` - Displays bytes as hex.\n5. ***try-catch*** - Handles file access errors."
+  },
+  {
+    "title": "Compressed Serialization",
+    "ques": "Write a C# program to serialize an object to a compressed binary file 'data.gz' using GZipStream.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\nusing System.IO.Compression;\nusing System.Runtime.Serialization.Formatters.Binary;\n\n[Serializable]\nclass Data\n{\n    public string Message { get; set; } = \"Compressed data example\";\n}\n\nclass Program\n{\n    static void Main()\n    {\n        Data data = new Data();\n        try\n        {\n            using (FileStream fs = new FileStream(\"data.gz\", FileMode.Create))\n            using (GZipStream gzip = new GZipStream(fs, CompressionMode.Compress))\n            {\n                BinaryFormatter formatter = new BinaryFormatter();\n                formatter.Serialize(gzip, data);\n            }\n            Console.WriteLine(\"Object serialized and compressed.\");\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This shows compressed serialization:\n\n1. ***[Serializable]*** - Marks Data class for serialization.\n2. ```GZipStream(fs, CompressionMode.Compress)``` - Compresses the output.\n3. ```formatter.Serialize(gzip, data)``` - Serializes into the compressed stream.\n4. ***using*** statements - Manage resources.\n5. ***try-catch*** - Handles compression or serialization errors."
+  },
+  {
+    "title": "Parsing JSON with JsonDocument",
+    "ques": "Create a C# program to read a JSON file 'config.json' and extract a specific property using JsonDocument.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\nusing System.Text.Json;\n\nclass Program\n{\n    static void Main()\n    {\n        try\n        {\n            string jsonString = File.ReadAllText(\"config.json\");\n            using (JsonDocument doc = JsonDocument.Parse(jsonString))\n            {\n                JsonElement root = doc.RootElement;\n                string version = root.GetProperty(\"version\").GetString();\n                Console.WriteLine($\"Version: {version}\");\n            }\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This demonstrates JSON parsing with JsonDocument:\n\n1. ```File.ReadAllText(...)``` - Reads JSON file as a string.\n2. ```JsonDocument.Parse(...)``` - Parses JSON into a DOM-like structure.\n3. ```root.GetProperty(\"version\")``` - Accesses the 'version' property.\n4. ```GetString()``` - Extracts the value as a string.\n5. ***try-catch*** - Handles JSON parsing or file errors."
+  },
+  {
+    "title": "Asynchronous File Writing",
+    "ques": "Write a C# program to asynchronously write multiple lines to a text file 'async.txt'.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\nusing System.Threading.Tasks;\n\nclass Program\n{\n    static async Task Main()\n    {\n        string[] lines = { \"Line 1\", \"Line 2\", \"Line 3\" };\n        try\n        {\n            using (StreamWriter writer = new StreamWriter(\"async.txt\", false))\n            {\n                foreach (string line in lines)\n                {\n                    await writer.WriteLineAsync(line);\n                }\n            }\n            Console.WriteLine(\"Lines written asynchronously.\");\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This demonstrates asynchronous file writing:\n\n1. ***async Task Main()*** - Enables async operations.\n2. ```StreamWriter(...)``` - Opens file for writing (false = overwrite).\n3. ```await writer.WriteLineAsync(...)``` - Writes each line asynchronously.\n4. ***using*** - Ensures proper disposal.\n5. ***try-catch*** - Handles IO exceptions."
+  },
+  {
+    "title": "Parsing CSV Files",
+    "ques": "Create a C# program to read and parse a CSV file 'data.csv' (with headers 'Name,Age') and display its contents.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\n\nclass Program\n{\n    static void Main()\n    {\n        string filePath = \"data.csv\";\n        try\n        {\n            string[] lines = File.ReadAllLines(filePath);\n            foreach (string line in lines.Skip(1)) // Skip header\n            {\n                string[] fields = line.Split(',');\n                if (fields.Length >= 2)\n                {\n                    Console.WriteLine($\"Name: {fields[0]}, Age: {fields[1]}\");\n                }\n            }\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This shows basic CSV parsing:\n\n1. ```File.ReadAllLines(...)``` - Reads all lines from the CSV.\n2. ```lines.Skip(1)``` - Skips the header row.\n3. ```line.Split(',')``` - Splits each line into fields.\n4. ***if (fields.Length >= 2)*** - Ensures valid data.\n5. ***try-catch*** - Handles file or parsing errors."
+  },
+  {
+    "title": "Deserializing Compressed Data",
+    "ques": "Write a C# program to deserialize an object from a compressed binary file 'data.gz' using GZipStream.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\nusing System.IO.Compression;\nusing System.Runtime.Serialization.Formatters.Binary;\n\n[Serializable]\nclass Data\n{\n    public string Message { get; set; }\n}\n\nclass Program\n{\n    static void Main()\n    {\n        try\n        {\n            using (FileStream fs = new FileStream(\"data.gz\", FileMode.Open))\n            using (GZipStream gzip = new GZipStream(fs, CompressionMode.Decompress))\n            {\n                BinaryFormatter formatter = new BinaryFormatter();\n                Data data = (Data)formatter.Deserialize(gzip);\n                Console.WriteLine($\"Deserialized: {data.Message}\");\n            }\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This demonstrates deserializing compressed data:\n\n1. ***[Serializable]*** - Marks Data class for serialization.\n2. ```GZipStream(fs, CompressionMode.Decompress)``` - Decompresses the stream.\n3. ```formatter.Deserialize(gzip)``` - Deserializes from the decompressed stream.\n4. ***using*** - Manages resources.\n5. ***try-catch*** - Handles decompression or deserialization errors."
+  },
+  {
+    "title": "Modifying JSON Dynamically",
+    "ques": "Create a C# program to load a JSON file 'settings.json', modify a property, and save it back using JsonSerializer.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\nusing System.Text.Json;\n\nclass Settings\n{\n    public string Mode { get; set; }\n    public int Level { get; set; }\n}\n\nclass Program\n{\n    static void Main()\n    {\n        try\n        {\n            string jsonString = File.ReadAllText(\"settings.json\");\n            Settings settings = JsonSerializer.Deserialize<Settings>(jsonString);\n            settings.Level = 10; // Modify property\n            string updatedJson = JsonSerializer.Serialize(settings, new JsonSerializerOptions { WriteIndented = true });\n            File.WriteAllText(\"settings.json\", updatedJson);\n            Console.WriteLine($\"Updated settings: Level = {settings.Level}\");\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This shows dynamic JSON modification:\n\n1. ```JsonSerializer.Deserialize<Settings>(...)``` - Loads JSON into an object.\n2. ***settings.Level = 10*** - Modifies the object.\n3. ```JsonSerializer.Serialize(...)``` - Serializes back with indentation.\n4. ```File.WriteAllText(...)``` - Saves updated JSON.\n5. ***try-catch*** - Handles JSON or file errors."
+  },
+  {
+    "title": "Monitoring File Changes",
+    "ques": "Write a C# program to monitor a directory for changes to text files and log them to the console.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\n\nclass Program\n{\n    static void Main()\n    {\n        using (FileSystemWatcher watcher = new FileSystemWatcher())\n        {\n            watcher.Path = Directory.GetCurrentDirectory();\n            watcher.Filter = \"*.txt\";\n            watcher.NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.FileName;\n            watcher.Changed += (sender, e) => Console.WriteLine($\"File changed: {e.FullPath}\");\n            watcher.Created += (sender, e) => Console.WriteLine($\"File created: {e.FullPath}\");\n            watcher.Deleted += (sender, e) => Console.WriteLine($\"File deleted: {e.FullPath}\");\n            watcher.EnableRaisingEvents = true;\n            Console.WriteLine(\"Monitoring started. Press Enter to stop.\");\n            Console.ReadLine();\n        }\n    }\n}"
+    },
+    "explanation": "This demonstrates file system monitoring:\n\n1. ```FileSystemWatcher``` - Watches the current directory.\n2. ```Filter = \"*.txt\"``` - Monitors only text files.\n3. ***NotifyFilter*** - Tracks changes to last write and file name.\n4. ***Event handlers*** - Log changes, creations, deletions.\n5. ```EnableRaisingEvents = true``` - Starts monitoring."
+  },
+  {
+    "title": "Handling File Locking",
+    "ques": "Create a C# program to write to a binary file 'locked.bin' with exclusive access, demonstrating file locking.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\n\nclass Program\n{\n    static void Main()\n    {\n        try\n        {\n            using (FileStream fs = new FileStream(\"locked.bin\", FileMode.Create, FileAccess.Write, FileShare.None))\n            using (BinaryWriter writer = new BinaryWriter(fs))\n            {\n                writer.Write(42);\n                Console.WriteLine(\"Writing with exclusive lock. Press Enter to release.\");\n                Console.ReadLine();\n            }\n            Console.WriteLine(\"File lock released.\");\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This shows file locking:\n\n1. ```FileStream(..., FileShare.None)``` - Opens with exclusive access.\n2. ```BinaryWriter``` - Writes a simple integer.\n3. ***Console.ReadLine()*** - Holds the lock until user input.\n4. ***using*** - Ensures file is closed, releasing the lock.\n5. ***try-catch*** - Handles access errors."
+  },
+  {
+    "title": "Custom JSON Serialization",
+    "ques": "Write a C# program to serialize an object to 'custom.json' with custom JsonSerializer options (e.g., ignoring nulls).",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.IO;\nusing System.Text.Json;\n\nclass Config\n{\n    public string Name { get; set; }\n    public int? Value { get; set; } = null;\n}\n\nclass Program\n{\n    static void Main()\n    {\n        Config config = new Config { Name = \"Test\" };\n        try\n        {\n            JsonSerializerOptions options = new JsonSerializerOptions\n            {\n                IgnoreNullValues = true,\n                WriteIndented = true\n            };\n            string json = JsonSerializer.Serialize(config, options);\n            File.WriteAllText(\"custom.json\", json);\n            Console.WriteLine(\"Serialized with custom options.\");\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This demonstrates custom JSON serialization:\n\n1. ***Config class*** - Includes a nullable property.\n2. ```JsonSerializerOptions``` - Ignores null values, adds indentation.\n3. ```JsonSerializer.Serialize(..., options)``` - Applies custom settings.\n4. ```File.WriteAllText(...)``` - Saves the JSON.\n5. ***try-catch*** - Handles serialization errors."
+  },
+  {
+    "title": "Querying XML with XPath",
+    "ques": "Create a C# program to load an XML file 'inventory.xml' and query items with XPath to find nodes with a specific attribute.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Xml;\n\nclass Program\n{\n    static void Main()\n    {\n        try\n        {\n            XmlDocument doc = new XmlDocument();\n            doc.Load(\"inventory.xml\");\n            XmlNodeList nodes = doc.SelectNodes(\"//Item[@category='Electronics']\");\n            foreach (XmlNode node in nodes)\n            {\n                string name = node.SelectSingleNode(\"Name\")?.InnerText;\n                Console.WriteLine($\"Electronic Item: {name}\");\n            }\n        }\n        catch (Exception ex)\n        {\n            Console.WriteLine($\"Error: {ex.Message}\");\n        }\n    }\n}"
+    },
+    "explanation": "This shows XPath querying in XML:\n\n1. ```XmlDocument.Load(...)``` - Loads the XML file.\n2. ```SelectNodes(\"//Item[@category='Electronics']\")``` - Finds items with category 'Electronics'.\n3. ```SelectSingleNode(\"Name\")``` - Gets the Name child node.\n4. ***foreach*** - Prints each matching item.\n5. ***try-catch*** - Handles XML or file errors."
+  }
+]

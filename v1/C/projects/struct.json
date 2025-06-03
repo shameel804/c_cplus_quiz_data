@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Defining a Student Structure",
+    "ques": "Write a C program to define a structure called 'Student' with fields for name (string), age (integer), and grade (float). Create a variable of this structure, assign values, and print them.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nstruct Student {\n    char name[50];\n    int age;\n    float grade;\n};\n\nint main() {\n    struct Student s1;\n    strcpy(s1.name, \"Alice\");\n    s1.age = 20;\n    s1.grade = 85.5;\n    printf(\"Name: %s, Age: %d, Grade: %.1f\\n\", s1.name, s1.age, s1.grade);\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates defining and using a structure:\n- ***struct Student*** defines a structure with three fields: ```name``` (char array), ```age``` (int), and ```grade``` (float).\n- In ```main()```, we declare a variable ```s1``` of type ```struct Student```.\n- ```strcpy``` is used to assign a string to ```name``` since direct assignment isn’t allowed for arrays.\n- We assign values to ```age``` and ```grade``` directly.\n- ***printf*** outputs the values with proper format specifiers: ```%s``` for string, ```%d``` for integer, and ```%.1f``` for float with one decimal place."
+  },
+  {
+    "title": "Nested Structure for Employee Address",
+    "ques": "Create a C program with a nested structure. Define a structure 'Address' with fields city (string) and zip (int), and a structure 'Employee' that contains name (string), id (int), and an 'Address' structure. Initialize and display an employee's details.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nstruct Address {\n    char city[50];\n    int zip;\n};\nstruct Employee {\n    char name[50];\n    int id;\n    struct Address addr;\n};\n\nint main() {\n    struct Employee e1;\n    strcpy(e1.name, \"Bob\");\n    e1.id = 101;\n    strcpy(e1.addr.city, \"New York\");\n    e1.addr.zip = 10001;\n    printf(\"Name: %s, ID: %d, City: %s, ZIP: %d\\n\", e1.name, e1.id, e1.addr.city, e1.addr.zip);\n    return 0;\n}"
+    },
+    "explanation": "This program shows nested structures:\n- ***struct Address*** has ```city``` (char array) and ```zip``` (int).\n- ***struct Employee*** includes ```name```, ```id```, and a nested ```struct Address addr```.\n- In ```main()```, ```e1``` is an ```Employee``` variable.\n- We use ```strcpy``` to set ```name``` and ```addr.city```, and direct assignment for ```id``` and ```addr.zip```.\n- ***printf*** accesses nested fields using the dot operator (e.g., ```e1.addr.city```) to display all details."
+  },
+  {
+    "title": "Union vs Structure Comparison",
+    "ques": "Write a C program to define a union 'Data' and a structure 'DataStruct' both with fields integer (int), floating (float), and character (char). Demonstrate the memory usage difference by assigning values and printing them.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nunion Data {\n    int integer;\n    float floating;\n    char character;\n};\nstruct DataStruct {\n    int integer;\n    float floating;\n    char character;\n};\n\nint main() {\n    union Data u;\n    struct DataStruct s;\n    u.integer = 65;\n    printf(\"Union: Integer: %d, Float: %f, Char: %c\\n\", u.integer, u.floating, u.character);\n    s.integer = 65; s.floating = 3.14; s.character = 'A';\n    printf(\"Struct: Integer: %d, Float: %f, Char: %c\\n\", s.integer, s.floating, s.character);\n    printf(\"Size of Union: %zu, Size of Struct: %zu\\n\", sizeof(u), sizeof(s));\n    return 0;\n}"
+    },
+    "explanation": "This program compares unions and structures:\n- ***union Data*** shares memory for ```integer```, ```floating```, and ```character```—only one can hold a valid value at a time.\n- ***struct DataStruct*** allocates separate memory for each field.\n- For the union, setting ```u.integer = 65``` overwrites other fields, so ```u.floating``` and ```u.character``` may show garbage or interpreted values.\n- For the structure, all fields (```s.integer```, ```s.floating```, ```s.character```) hold independent values.\n- ***sizeof*** shows the union uses the size of its largest member (e.g., 4 bytes for float), while the structure sums all fields (e.g., 4 + 4 + 1 = 9 bytes, padded to 12 on many systems)."
+  },
+  {
+    "title": "Array of Structures with Pointers",
+    "ques": "Create a C program to define a structure 'Book' with title (string), pages (int), and price (float). Make an array of 3 books, use a pointer to access and modify the second book, and print all books’ details.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nstruct Book {\n    char title[50];\n    int pages;\n    float price;\n};\n\nint main() {\n    struct Book books[3] = {{\"Book A\", 100, 9.99}, {\"Book B\", 200, 19.99}, {\"Book C\", 300, 29.99}};\n    struct Book *ptr = &books[1];\n    strcpy(ptr->title, \"Modified Book\");\n    ptr->pages = 250;\n    ptr->price = 24.99;\n    for (int i = 0; i < 3; i++) {\n        printf(\"Book %d: %s, Pages: %d, Price: %.2f\\n\", i+1, books[i].title, books[i].pages, books[i].price);\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program uses an array of structures and pointers:\n- ***struct Book*** defines ```title```, ```pages```, and ```price```.\n- ```books[3]``` is an array initialized with 3 books.\n- ***struct Book *ptr*** points to the second book (```&books[1]```).\n- We modify it using the arrow operator (```ptr->```), e.g., ```strcpy(ptr->title, \"Modified Book\")``` changes the title.\n- A ***for*** loop prints all books, showing the modified second book. The arrow operator (```->```) is equivalent to ```(*ptr).field``` but more concise."
+  },
+  {
+    "title": "Structure Padding and Alignment",
+    "ques": "Write a C program to define a structure 'Item' with fields flag (char), value (int), and rate (float). Demonstrate structure padding by printing the size of each field and the total size of the structure.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nstruct Item {\n    char flag;\n    int value;\n    float rate;\n};\n\nint main() {\n    struct Item item;\n    printf(\"Size of char: %zu\\n\", sizeof(char));\n    printf(\"Size of int: %zu\\n\", sizeof(int));\n    printf(\"Size of float: %zu\\n\", sizeof(float));\n    printf(\"Size of struct Item: %zu\\n\", sizeof(struct Item));\n    return 0;\n}"
+    },
+    "explanation": "This program explores structure padding:\n- ***struct Item*** has ```flag``` (1 byte), ```value``` (4 bytes), and ```rate``` (4 bytes).\n- Without padding, you’d expect 1 + 4 + 4 = 9 bytes, but ***sizeof(struct Item)*** often shows 12 bytes.\n- This is due to ***padding***: the compiler adds unused bytes (e.g., 3 after ```flag```) to align ```value``` and ```rate``` on 4-byte boundaries for efficiency.\n- ***sizeof*** reveals individual field sizes and the total, padded size of the structure."
+  },
+  {
+    "title": "Passing Nested Structure to Function",
+    "ques": "Create a C program with a nested structure 'Date' (day, month, year) inside a 'Person' structure (name and birth date). Write a function to print a person’s details and call it with a sample person.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nstruct Date {\n    int day;\n    int month;\n    int year;\n};\nstruct Person {\n    char name[50];\n    struct Date birth;\n};\n\nvoid printPerson(struct Person p) {\n    printf(\"Name: %s, Birth Date: %d/%d/%d\\n\", p.name, p.birth.day, p.birth.month, p.birth.year);\n}\n\nint main() {\n    struct Person p1;\n    strcpy(p1.name, \"Charlie\");\n    p1.birth.day = 15;\n    p1.birth.month = 6;\n    p1.birth.year = 1995;\n    printPerson(p1);\n    return 0;\n}"
+    },
+    "explanation": "This program passes a nested structure to a function:\n- ***struct Date*** has ```day```, ```month```, and ```year``` (all ints).\n- ***struct Person*** nests ```birth``` (type ```struct Date```) with ```name```.\n- The ```printPerson``` function takes a ```struct Person``` parameter and accesses nested fields (e.g., ```p.birth.day```).\n- In ```main()```, we initialize ```p1``` and call ```printPerson(p1)```, showing how structures can be passed by value to functions."
+  },
+  {
+    "title": "Union with Pointer Access",
+    "ques": "Write a C program to define a union 'Value' with fields num (int) and dec (float). Use a pointer to the union to assign and retrieve values, demonstrating how all fields share the same memory.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nunion Value {\n    int num;\n    float dec;\n};\n\nint main() {\n    union Value val;\n    union Value *ptr = &val;\n    ptr->num = 42;\n    printf(\"Num: %d\\n\", ptr->num);\n    printf(\"Dec (after num): %f\\n\", ptr->dec);\n    ptr->dec = 3.14;\n    printf(\"Dec: %f\\n\", ptr->dec);\n    printf(\"Num (after dec): %d\\n\", ptr->num);\n    return 0;\n}"
+    },
+    "explanation": "This program uses a pointer with a union:\n- ***union Value*** has ```num``` (int) and ```dec``` (float), sharing the same memory (typically 4 bytes).\n- ```ptr``` is a pointer to ```union Value```, set to ```&val```.\n- Assigning ```ptr->num = 42``` sets the union’s memory; ```ptr->dec``` interprets that same memory as a float, often yielding garbage.\n- Assigning ```ptr->dec = 3.14``` overwrites it; ```ptr->num``` then shows an invalid integer interpretation.\n- This shows unions store only one value at a time, unlike structures."
+  },
+  {
+    "title": "Dynamic Array of Structures",
+    "ques": "Create a C program to define a structure 'Point' with x and y (both int). Dynamically allocate an array of 3 points using malloc, assign values via pointers, and print them before freeing the memory.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <stdlib.h>\nstruct Point {\n    int x;\n    int y;\n};\n\nint main() {\n    struct Point *points = malloc(3 * sizeof(struct Point));\n    if (points == NULL) {\n        printf(\"Memory allocation failed\\n\");\n        return 1;\n    }\n    points[0].x = 1; points[0].y = 2;\n    points[1].x = 3; points[1].y = 4;\n    points[2].x = 5; points[2].y = 6;\n    for (int i = 0; i < 3; i++) {\n        printf(\"Point %d: (%d, %d)\\n\", i+1, points[i].x, points[i].y);\n    }\n    free(points);\n    return 0;\n}"
+    },
+    "explanation": "This program uses a dynamic array of structures:\n- ***struct Point*** has ```x``` and ```y``` (ints).\n- ```malloc(3 * sizeof(struct Point))``` allocates memory for 3 ```Point``` structures; ```points``` is a pointer to the first.\n- We assign values using array notation (```points[i].x```), which is equivalent to ```*(points + i).x```.\n- A ***for*** loop prints each point’s coordinates.\n- ***free(points)*** releases the memory to prevent leaks, showcasing dynamic allocation with structures."
+  },
+  {
+    "title": "Structure with Designated Initializers",
+    "ques": "Write a C program to define a structure 'Car' with fields model (string), year (int), and price (float). Use designated initializers to initialize a 'Car' variable and print its details.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nstruct Car {\n    char model[50];\n    int year;\n    float price;\n};\n\nint main() {\n    struct Car c1 = {\n        .model = \"Tesla Model 3\",\n        .year = 2023,\n        .price = 39999.99\n    };\n    printf(\"Model: %s, Year: %d, Price: %.2f\\n\", c1.model, c1.year, c1.price);\n    return 0;\n}"
+    },
+    "explanation": "This program uses designated initializers:\n- ***struct Car*** defines ```model```, ```year```, and ```price```.\n- ```c1``` is initialized with ***designated initializers*** (e.g., ```.model = \"Tesla Model 3\"```), allowing fields to be set in any order and leaving unspecified fields as 0.\n- This is a modern C feature (C99 onward), making initialization clearer than positional assignment.\n- ***printf*** displays the values, showing how the structure is fully initialized at declaration."
+  },
+  {
+    "title": "Structure with Bit-Fields",
+    "ques": "Create a C program to define a structure 'Flags' using bit-fields to store status (1 bit), priority (3 bits), and code (4 bits). Assign values and print them in binary to demonstrate bit-level control.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nstruct Flags {\n    unsigned int status : 1;\n    unsigned int priority : 3;\n    unsigned int code : 4;\n};\n\nint main() {\n    struct Flags f = {1, 5, 12};\n    printf(\"Status: %u (Binary: %1u)\\n\", f.status, f.status);\n    printf(\"Priority: %u (Binary: %3u)\\n\", f.priority, f.priority);\n    printf(\"Code: %u (Binary: %4u)\\n\", f.code, f.code);\n    printf(\"Size of Flags: %zu\\n\", sizeof(f));\n    return 0;\n}"
+    },
+    "explanation": "This program uses bit-fields:\n- ***struct Flags*** defines ```status``` (1 bit), ```priority``` (3 bits), and ```code``` (4 bits) with ```unsigned int``` type.\n- Bit-fields allocate specific bit widths, saving memory (here, 8 bits total, padded to 4 bytes).\n- ```f = {1, 5, 12}``` sets values; ```priority``` takes 5 (binary 101), and ```code``` takes 12 (binary 1100).\n- ***printf*** shows values; note ```priority``` maxes at 7 (3 bits) and ```code``` at 15 (4 bits), so larger values truncate.\n- ***sizeof(f)*** shows padding to the next integer boundary."
+  },
+  {
+    "title": "Structure Containing a Union",
+    "ques": "Write a C program to define a structure 'Measurement' that contains a union 'Value' with fields count (int) and weight (float), and a char field 'type' to indicate which union field is active. Use it to store and display a count and a weight.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nunion Value {\n    int count;\n    float weight;\n};\nstruct Measurement {\n    char type;\n    union Value val;\n};\n\nint main() {\n    struct Measurement m1 = {'c', .val.count = 100};\n    struct Measurement m2 = {'w', .val.weight = 12.5};\n    if (m1.type == 'c')\n        printf(\"Count: %d\\n\", m1.val.count);\n    if (m2.type == 'w')\n        printf(\"Weight: %.1f\\n\", m2.val.weight);\n    return 0;\n}"
+    },
+    "explanation": "This program nests a union in a structure:\n- ***union Value*** has ```count``` and ```weight```, sharing memory.\n- ***struct Measurement*** includes ```type``` (char) and ```val``` (union).\n- ```m1``` uses ```'c'``` for count, initialized with ```.val.count```; ```m2``` uses ```'w'``` for weight.\n- ***if*** statements check ```type``` to safely access the active union field, avoiding misinterpretation.\n- This shows how structures can use unions to store different data types conditionally."
+  },
+  {
+    "title": "Pointer Arithmetic with Array of Structures",
+    "ques": "Create a C program to define a structure 'Employee' with id (int) and salary (float). Create an array of 3 employees, use pointer arithmetic to increment a pointer through the array, and print each employee’s details.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nstruct Employee {\n    int id;\n    float salary;\n};\n\nint main() {\n    struct Employee emp[3] = {{1, 50000.0}, {2, 60000.0}, {3, 70000.0}};\n    struct Employee *ptr = emp;\n    for (int i = 0; i < 3; i++) {\n        printf(\"Employee ID: %d, Salary: %.2f\\n\", (ptr + i)->id, (ptr + i)->salary);\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program uses pointer arithmetic with structures:\n- ***struct Employee*** has ```id``` and ```salary```.\n- ```emp[3]``` is an array of 3 employees.\n- ```ptr``` points to ```emp``` (the array’s base address).\n- In the ***for*** loop, ```ptr + i``` advances the pointer by ```i * sizeof(struct Employee)``` bytes, not just 1 byte.\n- ```(ptr + i)->id``` uses the arrow operator to access fields; parentheses ensure correct precedence.\n- This demonstrates how pointers scale automatically with structure size in arrays."
+  },
+  {
+    "title": "Self-Referential Structure for Linked List",
+    "ques": "Write a C program to define a self-referential structure 'Node' with data (int) and a pointer to another Node. Create a two-node linked list and print their data.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nstruct Node {\n    int data;\n    struct Node *next;\n};\n\nint main() {\n    struct Node n1, n2;\n    n1.data = 10;\n    n1.next = &n2;\n    n2.data = 20;\n    n2.next = NULL;\n    struct Node *ptr = &n1;\n    while (ptr != NULL) {\n        printf(\"Data: %d\\n\", ptr->data);\n        ptr = ptr->next;\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program uses a self-referential structure:\n- ***struct Node*** has ```data``` and ```next```, a pointer to another ```Node```.\n- ```n1``` and ```n2``` are linked: ```n1.next = &n2```, and ```n2.next = NULL``` ends the list.\n- A pointer ```ptr``` traverses the list, printing each ```data``` until ```NULL```.\n- This is the basis for linked lists, showing how structures can reference themselves."
+  },
+  {
+    "title": "Anonymous Structure and Union",
+    "ques": "Create a C program to define a structure 'Record' with an anonymous union containing id (int) and score (float), and a char field 'type'. Use it to store and print an id and a score.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nstruct Record {\n    char type;\n    union {\n        int id;\n        float score;\n    };\n};\n\nint main() {\n    struct Record r1 = {'i', .id = 123};\n    struct Record r2 = {'s', .score = 95.5};\n    if (r1.type == 'i')\n        printf(\"ID: %d\\n\", r1.id);\n    if (r2.type == 's')\n        printf(\"Score: %.1f\\n\", r2.score);\n    return 0;\n}"
+    },
+    "explanation": "This program uses an anonymous union:\n- ***struct Record*** has ```type``` and an unnamed union with ```id``` and ```score```.\n- Without a union name, fields are accessed directly (e.g., ```r1.id``` instead of ```r1.val.id```).\n- ```r1``` and ```r2``` are initialized with designated initializers, and ```type``` determines the active field.\n- This C11 feature simplifies syntax for nested unions or structures."
+  },
+  {
+    "title": "Typedef with Structure",
+    "ques": "Write a C program to define a structure 'Point' with x and y (int) using typedef. Create a Point variable, assign values, and print them.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\ntypedef struct {\n    int x;\n    int y;\n} Point;\n\nint main() {\n    Point p = {3, 4};\n    printf(\"Point: (%d, %d)\\n\", p.x, p.y);\n    return 0;\n}"
+    },
+    "explanation": "This program uses ***typedef*** with a structure:\n- ```typedef struct { ... } Point``` defines an anonymous structure and aliases it as ```Point```.\n- We can declare ```Point p``` without ```struct```, improving readability.\n- ```p = {3, 4}``` initializes ```x``` and ```y``` positionally.\n- ***printf*** accesses fields directly, showing typedef’s convenience."
+  },
+  {
+    "title": "Union with Bit-Fields",
+    "ques": "Create a C program to define a union 'Control' with bit-fields flag (1 bit) and value (7 bits). Assign and print values to demonstrate overlapping bit usage.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nunion Control {\n    struct {\n        unsigned int flag : 1;\n        unsigned int value : 7;\n    };\n    unsigned int full : 8;\n};\n\nint main() {\n    union Control c;\n    c.flag = 1;\n    c.value = 65;\n    printf(\"Flag: %u, Value: %u, Full: %u\\n\", c.flag, c.value, c.full);\n    c.full = 255;\n    printf(\"After full set - Flag: %u, Value: %u, Full: %u\\n\", c.flag, c.value, c.full);\n    return 0;\n}"
+    },
+    "explanation": "This program uses bit-fields in a union:\n- ***union Control*** has an anonymous structure with ```flag``` (1 bit) and ```value``` (7 bits), and ```full``` (8 bits), all sharing 1 byte.\n- Setting ```c.flag = 1``` and ```c.value = 65``` builds a byte (e.g., 1000001 binary); ```c.full``` shows the combined value (129).\n- Setting ```c.full = 255``` (11111111 binary) overwrites both, so ```flag = 1``` and ```value = 127```.\n- This shows how unions allow multiple bit-level interpretations of the same memory."
+  }
+]

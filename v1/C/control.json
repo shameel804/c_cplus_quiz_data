@@ -1,0 +1,4601 @@
+[
+  {
+    "q": "Which of the following is the correct syntax of an if-else statement in C?",
+    "o": [
+      "if (condition) { /* statements */ } else { /* statements */ }",
+      "if condition then { /* statements */ } else { /* statements */ }",
+      "if (condition): { /* statements */ } else: { /* statements */ }",
+      "if condition { /* statements */ } else { /* statements */ }"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    if (x > 3) {\n        printf(\"Greater\\n\");\n    } else {\n        printf(\"Smaller\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Greater",
+      "Smaller",
+      "Error",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which loop is guaranteed to execute at least once in C?",
+    "o": [
+      "do-while loop",
+      "while loop",
+      "for loop",
+      "None of the above"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 1;\n    while (i < 3) {\n        printf(\"%d \", i);\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "1 2 ",
+      "1 2 3 ",
+      "0 1 ",
+      "1 1 "
+    ]
+  },
+  {
+    "q": "Which keyword is used to exit from a loop prematurely in C?",
+    "o": [
+      "break",
+      "exit",
+      "continue",
+      "stop"
+    ]
+  },
+  {
+    "q": "What is the output of this C code using switch statement?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 2;\n    switch (x) {\n        case 1: printf(\"One\\n\"); break;\n        case 2: printf(\"Two\\n\"); break;\n        default: printf(\"Other\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Two",
+      "One",
+      "Other",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following is used to skip the current iteration of a loop in C?",
+    "o": [
+      "continue",
+      "break",
+      "goto",
+      "exit"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for(i = 0; i < 3; i++) {\n        if(i == 1) continue;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "0 2 ",
+      "0 1 2 ",
+      "1 2 ",
+      "0 1 "
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax for a for loop in C?",
+    "o": [
+      "for(initialization; condition; increment) { /* statements */ }",
+      "for (condition; increment; initialization) { /* statements */ }",
+      "loop (initialization; condition; increment) { /* statements */ }",
+      "repeat (initialization; condition; increment) { /* statements */ }"
+    ]
+  },
+  {
+    "q": "What is the effect of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int num = 5;\n    if (num > 0) {\n        if (num < 10) {\n            printf(\"Single digit positive\\n\");\n        }\n    }\n    return 0;\n}",
+    "o": [
+      "Single digit positive",
+      "No output",
+      "Error",
+      "Negative"
+    ]
+  },
+  {
+    "q": "Which keyword allows jumping to a labeled statement in C?",
+    "o": [
+      "goto",
+      "jump",
+      "label",
+      "switch"
+    ]
+  },
+  {
+    "q": "What is the output of this program using goto?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 1;\n    if (x == 1)\n        goto print;\n    printf(\"This won't print\\n\");\nprint:\n    printf(\"Hello using goto\\n\");\n    return 0;\n}",
+    "o": [
+      "Hello using goto",
+      "This won't print",
+      "Error",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which statement correctly checks if a number is between 10 and 20 in C?",
+    "o": [
+      "if (num >= 10 && num <= 20)",
+      "if (num => 10 and num <= 20)",
+      "if (10 < num < 20)",
+      "if num in range(10, 20)"
+    ]
+  },
+  {
+    "q": "What is the output of this nested if condition?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 4;\n    if (x > 0) {\n        if (x < 5) {\n            printf(\"Between 0 and 5\\n\");\n        }\n    }\n    return 0;\n}",
+    "o": [
+      "Between 0 and 5",
+      "0",
+      "5",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following is true about a switch statement in C?",
+    "o": [
+      "It can be used to replace multiple if-else conditions comparing the same variable.",
+      "It can evaluate complex boolean expressions.",
+      "It supports string cases natively.",
+      "It automatically breaks after each case."
+    ]
+  },
+  {
+    "q": "What is the output of the following switch-case statement?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 3;\n    switch (a) {\n        case 1: printf(\"One\\n\");\n        case 2: printf(\"Two\\n\");\n        case 3: printf(\"Three\\n\");\n        default: printf(\"Default\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Three\nDefault",
+      "Three",
+      "Three\nTwo\nOne",
+      "Default"
+    ]
+  },
+  {
+    "q": "Which loop structure checks the condition *after* executing the loop body?",
+    "o": [
+      "do-while loop",
+      "while loop",
+      "for loop",
+      "None of the above"
+    ]
+  },
+  {
+    "q": "How many times will this loop execute?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 1;\n    while (i < 4) {\n        printf(\"%d \", i);\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "3 times",
+      "4 times",
+      "Infinite loop",
+      "0 times"
+    ]
+  },
+  {
+    "q": "Which of the following keywords will skip the rest of the loop body and go to the next iteration?",
+    "o": [
+      "continue",
+      "break",
+      "goto",
+      "return"
+    ]
+  },
+  {
+    "q": "What will be printed by this loop?",
+    "c": "#include <stdio.h>\nint main() {\n    for (int i = 1; i <= 5; i++) {\n        if (i == 4) break;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "1 2 3 ",
+      "1 2 3 4 5 ",
+      "1 2 3 4 ",
+      "2 3 4 "
+    ]
+  },
+  {
+    "q": "What does the following loop output?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    do {\n        printf(\"%d \", i);\n        i++;\n    } while (i < 3);\n    return 0;\n}",
+    "o": [
+      "0 1 2 ",
+      "1 2 3 ",
+      "0 1 2 3 ",
+      "0 1 2 3 4 "
+    ]
+  },
+  {
+    "q": "Which statement will cause the program to jump unconditionally to a labeled section?",
+    "o": [
+      "goto",
+      "break",
+      "switch",
+      "continue"
+    ]
+  },
+  {
+    "q": "What is the output of this program using goto?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    if (x == 5)\n        goto label;\n    printf(\"Before Label\\n\");\nlabel:\n    printf(\"After Label\\n\");\n    return 0;\n}",
+    "o": [
+      "After Label",
+      "Before Label",
+      "No output",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid use of 'break' in C?",
+    "o": [
+      "Exiting from nested if conditions",
+      "Exiting a switch-case block",
+      "Exiting a while loop",
+      "Exiting a for loop"
+    ]
+  },
+  {
+    "q": "What is the correct syntax of an if-else statement in C?",
+    "o": [
+      "if (condition) { /* code */ } else { /* code */ }",
+      "if condition then { /* code */ } else { /* code */ }",
+      "if (condition): { /* code */ } else: { /* code */ }",
+      "if {condition} then { /* code */ }"
+    ]
+  },
+  {
+    "q": "What is the output of this code using nested if?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 8;\n    if (a > 0) {\n        if (a % 2 == 0) {\n            printf(\"Positive Even\\n\");\n        }\n    }\n    return 0;\n}",
+    "o": [
+      "Positive Even",
+      "Positive",
+      "Even",
+      "No Output"
+    ]
+  },
+  {
+    "q": "Which of the following is FALSE about switch-case in C?",
+    "o": [
+      "It can evaluate expressions with relational operators.",
+      "It is used to select one option from many choices.",
+      "Each case must end with a break to avoid fall-through.",
+      "The default case is optional."
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 2;\n    switch (x + 1) {\n        case 1: printf(\"One\\n\"); break;\n        case 3: printf(\"Three\\n\"); break;\n        default: printf(\"Default\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Three",
+      "One",
+      "Default",
+      "No output"
+    ]
+  },
+  {
+    "q": "How many times will this for loop run?",
+    "c": "#include <stdio.h>\nint main() {\n    for (int i = 10; i > 5; i--) {\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "5 times",
+      "6 times",
+      "Infinite times",
+      "10 times"
+    ]
+  },
+  {
+    "q": "What is the main difference between while and do-while loops in C?",
+    "o": [
+      "do-while executes at least once, even if the condition is false.",
+      "while executes at least once, even if the condition is false.",
+      "while has better performance than do-while.",
+      "do-while is not supported in C."
+    ]
+  },
+  {
+    "q": "What will be printed by this code using continue?",
+    "c": "#include <stdio.h>\nint main() {\n    for (int i = 1; i <= 5; i++) {\n        if (i == 3) continue;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "1 2 4 5 ",
+      "1 2 3 4 5 ",
+      "1 2 3 5 ",
+      "1 3 5 "
+    ]
+  },
+  {
+    "q": "Which loop is guaranteed to run at least once?",
+    "o": [
+      "do-while loop",
+      "for loop",
+      "while loop",
+      "None of the above"
+    ]
+  },
+  {
+    "q": "What is the output of this goto-based program?",
+    "c": "#include <stdio.h>\nint main() {\n    goto skip;\n    printf(\"This won't print\\n\");\nskip:\n    printf(\"This will print\\n\");\n    return 0;\n}",
+    "o": [
+      "This will print",
+      "This won't print\nThis will print",
+      "Compilation error",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which statement is used to immediately exit a loop in C?",
+    "o": [
+      "break",
+      "continue",
+      "exit()",
+      "return loop"
+    ]
+  },
+  {
+    "q": "Choose the correct format of a while loop in C.",
+    "o": [
+      "while (condition) { /* code */ }",
+      "while condition: { /* code */ }",
+      "while {condition} do { /* code */ }",
+      "while condition then { /* code */ }"
+    ]
+  },
+  {
+    "q": "What is the output of this infinite loop with break?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 1;\n    while (1) {\n        printf(\"%d \", i);\n        if (i == 3) break;\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "1 2 3 ",
+      "1 2 3 4 ",
+      "1 2 ",
+      "Infinite Loop"
+    ]
+  },
+  {
+    "q": "Which of the following executes when none of the cases in a switch match?",
+    "o": [
+      "default",
+      "else",
+      "fallback",
+      "none"
+    ]
+  },
+  {
+    "q": "What is the output of this code using if-else?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    if (x > 10)\n        printf(\"Greater\\n\");\n    else\n        printf(\"Smaller or Equal\\n\");\n    return 0;\n}",
+    "o": [
+      "Smaller or Equal",
+      "Greater",
+      "No output",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following loops is most suitable when the number of iterations is known?",
+    "o": [
+      "for loop",
+      "while loop",
+      "do-while loop",
+      "infinite loop"
+    ]
+  },
+  {
+    "q": "What will be printed by this nested if condition?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 4;\n    if (a > 0) {\n        if (a < 10)\n            printf(\"Between 1 and 9\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Between 1 and 9",
+      "Greater than 0",
+      "Less than 10",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which keyword is used to skip the remaining code in a loop iteration?",
+    "o": [
+      "continue",
+      "break",
+      "skip",
+      "exit"
+    ]
+  },
+  {
+    "q": "What is the output of this for loop?",
+    "c": "#include <stdio.h>\nint main() {\n    for (int i = 0; i < 3; i++) {\n        printf(\"Loop\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Loop\nLoop\nLoop\n",
+      "Loop\nLoop\n",
+      "Loop\n",
+      "No output"
+    ]
+  },
+  {
+    "q": "What is the purpose of the break statement in a switch-case?",
+    "o": [
+      "To terminate the current case and exit the switch",
+      "To skip the current iteration",
+      "To end the program",
+      "To restart the loop"
+    ]
+  },
+  {
+    "q": "What will be printed by this do-while loop?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    do {\n        printf(\"%d \", i);\n        i++;\n    } while (i < 2);\n    return 0;\n}",
+    "o": [
+      "0 1 ",
+      "1 2 ",
+      "0 1 2 ",
+      "0 1 2 3 "
+    ]
+  },
+  {
+    "q": "Which of the following is TRUE about goto in C?",
+    "o": [
+      "It allows jumping to a labeled statement within a function.",
+      "It is used to exit from nested functions.",
+      "It is preferred over loops in modern programming.",
+      "It is used to create classes."
+    ]
+  },
+  {
+    "q": "What will be the output of this switch-case code?",
+    "c": "#include <stdio.h>\nint main() {\n    int num = 2;\n    switch(num) {\n        case 1: printf(\"One\\n\"); break;\n        case 2: printf(\"Two\\n\"); break;\n        default: printf(\"Other\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Two",
+      "One",
+      "Other",
+      "No output"
+    ]
+  },
+  {
+    "q": "What is the key difference between 'while' and 'do-while' loop?",
+    "o": [
+      "do-while checks condition after executing the loop body once.",
+      "while executes the loop body at least once.",
+      "while always runs indefinitely.",
+      "do-while is faster."
+    ]
+  },
+  {
+    "q": "What is the output of the following code with continue?",
+    "c": "#include <stdio.h>\nint main() {\n    for (int i = 1; i <= 4; i++) {\n        if (i == 2) continue;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "1 3 4 ",
+      "1 2 3 4 ",
+      "2 3 4 ",
+      "1 2 4 "
+    ]
+  },
+  {
+    "q": "Which loop guarantees at least one execution of the loop body?",
+    "o": [
+      "do-while loop",
+      "while loop",
+      "for loop",
+      "infinite loop"
+    ]
+  },
+  {
+    "q": "What is the output of this while loop?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 1;\n    while (i < 4) {\n        printf(\"%d \", i);\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "1 2 3 ",
+      "1 2 ",
+      "1 2 3 4 ",
+      "2 3 4 "
+    ]
+  },
+  {
+    "q": "Which of the following is a valid use of the if-else construct?",
+    "o": [
+      "if (x > 0) { printf(\"Positive\"); } else { printf(\"Non-positive\"); }",
+      "if x > 0 then printf(\"Positive\")",
+      "if (x > 0) printf(\"Positive\") else printf(\"Non-positive\")",
+      "if (x > 0): printf(\"Positive\")"
+    ]
+  },
+  {
+    "q": "What does the break statement do in a loop?",
+    "o": [
+      "Exits the loop immediately",
+      "Skips the current iteration",
+      "Goes to the next condition",
+      "Restarts the loop"
+    ]
+  },
+  {
+    "q": "What is the output of this code using goto?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 3;\n    if (a == 3) goto skip;\n    printf(\"Before goto\\n\");\nskip:\n    printf(\"After goto\\n\");\n    return 0;\n}",
+    "o": [
+      "After goto",
+      "Before goto\nAfter goto",
+      "Compilation error",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to skip the rest of the current loop iteration?",
+    "o": [
+      "continue",
+      "break",
+      "exit",
+      "skip"
+    ]
+  },
+  {
+    "q": "What will be printed by this nested if-else structure?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 7;\n    if (a > 0) {\n        if (a < 10)\n            printf(\"Single Digit Positive\\n\");\n        else\n            printf(\"Double Digit\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Single Digit Positive",
+      "Double Digit",
+      "Negative Number",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following is TRUE about the switch statement?",
+    "o": [
+      "It allows multiple case labels to be checked against a single variable.",
+      "It replaces if-else only in mathematical operations.",
+      "It is slower than if-else always.",
+      "It can evaluate expressions with logical operators."
+    ]
+  },
+  {
+    "q": "What is the output of the following switch-case without break?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 1;\n    switch(x) {\n        case 1: printf(\"One \");\n        case 2: printf(\"Two \");\n        case 3: printf(\"Three\");\n    }\n    return 0;\n}",
+    "o": [
+      "One Two Three",
+      "One",
+      "One Two",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of these loops checks the condition before entering the loop body?",
+    "o": [
+      "while loop",
+      "do-while loop",
+      "goto loop",
+      "skip loop"
+    ]
+  },
+  {
+    "q": "What is the output of this for loop with continue?",
+    "c": "#include <stdio.h>\nint main() {\n    for (int i = 0; i < 5; i++) {\n        if (i == 3) continue;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "0 1 2 4 ",
+      "0 1 2 3 4 ",
+      "1 2 3 4 ",
+      "0 1 2 3 "
+    ]
+  },
+  {
+    "q": "Which of the following best describes a nested loop?",
+    "o": [
+      "A loop inside another loop",
+      "A loop with conditions",
+      "A loop after a loop",
+      "A loop skipping conditions"
+    ]
+  },
+  {
+    "q": "Which control structure is best suited when multiple conditions are checked against a single variable?",
+    "o": [
+      "switch-case",
+      "nested if",
+      "if-else ladder",
+      "goto"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    if (x > 5)\n        if (x < 15)\n            printf(\"Between 5 and 15\\n\");\n        else\n            printf(\"Greater than 15\\n\");\n    return 0;\n}",
+    "o": [
+      "Between 5 and 15",
+      "Greater than 15",
+      "Nothing",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which statement is used to forcefully exit a loop regardless of the condition?",
+    "o": [
+      "break",
+      "continue",
+      "exit",
+      "return"
+    ]
+  },
+  {
+    "q": "What is the output of this do-while loop?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    do {\n        printf(\"%d \", i);\n        i++;\n    } while (i < 3);\n    return 0;\n}",
+    "o": [
+      "0 1 2 ",
+      "1 2 ",
+      "0 1 2 3 ",
+      "0 1 "
+    ]
+  },
+  {
+    "q": "Which of the following can be infinite if not handled properly?",
+    "o": [
+      "while loop",
+      "switch-case",
+      "if-else",
+      "goto"
+    ]
+  },
+  {
+    "q": "What happens if you forget a break statement in switch-case?",
+    "o": [
+      "Fall-through to the next case",
+      "Syntax error",
+      "Program crashes",
+      "Case is skipped"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 2;\n    switch(x) {\n        case 1: printf(\"One\\n\"); break;\n        case 2: printf(\"Two\\n\"); break;\n        case 3: printf(\"Three\\n\"); break;\n        default: printf(\"Default\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Two",
+      "One",
+      "Three",
+      "Default"
+    ]
+  },
+  {
+    "q": "Which of the following is correct syntax for a for loop?",
+    "o": [
+      "for (int i = 0; i < 10; i++)",
+      "for (i = 0 to 10)",
+      "loop from i = 0 to 10",
+      "for i in range(10)"
+    ]
+  },
+  {
+    "q": "Which keyword can be used to jump to a labeled part of code?",
+    "o": [
+      "goto",
+      "skip",
+      "continue",
+      "next"
+    ]
+  },
+  {
+    "q": "What is the output of the following loop?",
+    "c": "#include <stdio.h>\nint main() {\n    for (int i = 1; i <= 5; i++) {\n        if (i == 3) break;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "1 2 ",
+      "1 2 3 ",
+      "2 3 4 ",
+      "1 2 3 4 5"
+    ]
+  },
+  {
+    "q": "Which of the following loops is best when the number of iterations is known?",
+    "o": [
+      "for loop",
+      "while loop",
+      "do-while loop",
+      "goto"
+    ]
+  },
+  {
+    "q": "How many times will this loop run?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    while (i < 3) {\n        printf(\"Loop\\n\");\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "4",
+      "0"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int num = 4;\n    if (num % 2 == 0)\n        printf(\"Even\\n\");\n    else\n        printf(\"Odd\\n\");\n    return 0;\n}",
+    "o": [
+      "Even",
+      "Odd",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a nested if statement?",
+    "o": [
+      "An if statement inside another if or else block",
+      "An if with multiple conditions joined by &&",
+      "An if followed by multiple else-if blocks",
+      "A switch-case inside an if block"
+    ]
+  },
+  {
+    "q": "How many times will the loop run?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 1;\n    while (i <= 3) {\n        printf(\"%d \", i);\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "4",
+      "1"
+    ]
+  },
+  {
+    "q": "What will be printed by the following program?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for (i = 0; i < 5; i++) {\n        if (i == 2) continue;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "0 1 3 4 ",
+      "0 1 2 3 4 ",
+      "0 1 2 4 ",
+      "1 2 3 4"
+    ]
+  },
+  {
+    "q": "Which loop always executes the body at least once?",
+    "o": [
+      "do-while",
+      "while",
+      "for",
+      "None of these"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    switch(x) {\n        case 1:\n        case 5:\n            printf(\"Matched\\n\");\n            break;\n        default:\n            printf(\"Default\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Matched",
+      "Default",
+      "Error",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following control structures is used to transfer control to another part of the program?",
+    "o": [
+      "goto",
+      "if",
+      "switch",
+      "continue"
+    ]
+  },
+  {
+    "q": "Choose the correct statement about the break keyword in C.",
+    "o": [
+      "It immediately exits the loop or switch-case",
+      "It skips the current iteration and goes to the next one",
+      "It is used to exit from the main function",
+      "It pauses the program"
+    ]
+  },
+  {
+    "q": "What does the continue keyword do in a loop?",
+    "o": [
+      "Skips to the next iteration of the loop",
+      "Exits the loop completely",
+      "Pauses loop execution",
+      "Goes back to the start of the program"
+    ]
+  },
+  {
+    "q": "Identify the correct output of the following loop:",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 1;\n    do {\n        printf(\"%d \", i);\n        i++;\n    } while (i <= 3);\n    return 0;\n}",
+    "o": [
+      "1 2 3 ",
+      "0 1 2 ",
+      "1 2 ",
+      "2 3 4 "
+    ]
+  },
+  {
+    "q": "Which of these can be replaced with a switch-case in C?",
+    "o": [
+      "Multiple if-else conditions on the same variable",
+      "Any nested if-else logic",
+      "Loops",
+      "goto labels"
+    ]
+  },
+  {
+    "q": "How can an infinite loop be created using a for loop?",
+    "o": [
+      "for(;;)",
+      "for(0;1;0)",
+      "for(1;2;3)",
+      "for(i=0;i>=0;i++)"
+    ]
+  },
+  {
+    "q": "What is the output of the following C program?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    if (x > 5)\n        if (x < 15)\n            printf(\"Yes\\n\");\n        else\n            printf(\"No\\n\");\n    return 0;\n}",
+    "o": [
+      "Yes",
+      "No",
+      "Error",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which keyword is used to exit a loop prematurely in C?",
+    "o": [
+      "break",
+      "continue",
+      "exit",
+      "stop"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    while (i < 3) {\n        printf(\"Loop\\n\");\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "Loop\nLoop\nLoop",
+      "Loop\nLoop",
+      "Infinite Loop",
+      "No Output"
+    ]
+  },
+  {
+    "q": "Which statement correctly explains the purpose of a switch-case block in C?",
+    "o": [
+      "It allows multi-way branching based on the value of a variable.",
+      "It works like a for loop with fixed iterations.",
+      "It is used to define functions in C.",
+      "It is only used with string values."
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 1;\n    do {\n        printf(\"%d \", a);\n        a++;\n    } while(a <= 3);\n    return 0;\n}",
+    "o": [
+      "1 2 3 ",
+      "1 2 ",
+      "0 1 2 ",
+      "2 3 4 "
+    ]
+  },
+  {
+    "q": "What does the following code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for(i = 1; i <= 5; i++) {\n        if(i == 3) break;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "1 2 ",
+      "1 2 3 ",
+      "2 3 4 ",
+      "3 4 5 "
+    ]
+  },
+  {
+    "q": "What will be the output of this switch-case block?",
+    "c": "#include <stdio.h>\nint main() {\n    int ch = 2;\n    switch(ch) {\n        case 1: printf(\"One\\n\"); break;\n        case 2: printf(\"Two\\n\"); break;\n        default: printf(\"Other\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Two",
+      "One",
+      "Other",
+      "No output"
+    ]
+  },
+  {
+    "q": "When is the else part of an if-else executed?",
+    "o": [
+      "When the condition in if evaluates to false",
+      "When the condition in if is true",
+      "When there is a semicolon after if",
+      "Always"
+    ]
+  },
+  {
+    "q": "What happens when continue is used inside a loop?",
+    "o": [
+      "Skips the remaining code and starts next iteration",
+      "Exits the loop completely",
+      "Skips the loop condition",
+      "Skips the current function"
+    ]
+  },
+  {
+    "q": "What is the output of the following program?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for(i=0; i<3; i++) {\n        printf(\"%d \", i);\n        if(i == 1) continue;\n    }\n    return 0;\n}",
+    "o": [
+      "0 1 2 ",
+      "0 1 ",
+      "0 2 ",
+      "1 2 "
+    ]
+  },
+  {
+    "q": "Which of these is the correct structure of a do-while loop in C?",
+    "o": [
+      "do { /*code*/ } while(condition);",
+      "while(condition) { /*code*/ };",
+      "loop(condition) { /*code*/ };",
+      "do while(condition) { /*code*/ };"
+    ]
+  },
+  {
+    "q": "Which of the following keywords can transfer control to a labeled statement in C?",
+    "o": [
+      "goto",
+      "return",
+      "jump",
+      "switch"
+    ]
+  },
+  {
+    "q": "Which of the following loops is guaranteed to execute at least once?",
+    "o": [
+      "do-while",
+      "while",
+      "for",
+      "foreach"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 4;\n    if (a < 5)\n        if (a > 3)\n            printf(\"In Range\\n\");\n        else\n            printf(\"Too Low\\n\");\n    return 0;\n}",
+    "o": [
+      "In Range",
+      "Too Low",
+      "Error",
+      "No Output"
+    ]
+  },
+  {
+    "q": "What does the 'break' keyword do inside a loop?",
+    "o": [
+      "It immediately exits the loop",
+      "It skips to the next iteration",
+      "It restarts the loop",
+      "It pauses the loop temporarily"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for(i = 0; i < 5; i++) {\n        if(i == 2)\n            continue;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "0 1 3 4 ",
+      "0 1 2 3 4 ",
+      "0 2 4 ",
+      "1 2 3 4 "
+    ]
+  },
+  {
+    "q": "Which of the following best describes a switch-case statement in C?",
+    "o": [
+      "A control structure for multi-way branching based on integer values",
+      "A type of loop",
+      "A replacement for if-else only in string comparisons",
+      "Used for declaring functions"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 3;\n    switch(x) {\n        case 1: printf(\"One\"); break;\n        case 2: printf(\"Two\"); break;\n        case 3: printf(\"Three\"); break;\n        default: printf(\"Other\");\n    }\n    return 0;\n}",
+    "o": [
+      "Three",
+      "Two",
+      "One",
+      "Other"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the 'continue' statement in C?",
+    "o": [
+      "It skips the remaining code in the loop for the current iteration",
+      "It exits the loop entirely",
+      "It restarts the entire loop from the beginning",
+      "It causes a compilation error"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 1;\n    while(i < 4) {\n        printf(\"%d \", i);\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "1 2 3 ",
+      "0 1 2 ",
+      "2 3 4 ",
+      "1 2 3 4 "
+    ]
+  },
+  {
+    "q": "Which of the following uses labeled statements for jumping in C?",
+    "o": [
+      "goto",
+      "switch",
+      "jump",
+      "branch"
+    ]
+  },
+  {
+    "q": "What is the result of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    do {\n        printf(\"Hello \");\n        i++;\n    } while(i < 2);\n    return 0;\n}",
+    "o": [
+      "Hello Hello ",
+      "Hello ",
+      "Nothing",
+      "Infinite Hello"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid syntax for an if-else statement in C?",
+    "o": [
+      "if (x > 10) { printf(\"Big\"); } else { printf(\"Small\"); }",
+      "if x > 10 then printf(\"Big\") else printf(\"Small\")",
+      "if x > 10: printf(\"Big\") else: printf(\"Small\")",
+      "if (x > 10) then printf(\"Big\") else printf(\"Small\")"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int num = 7;\n    if (num % 2 == 0)\n        printf(\"Even\");\n    else\n        printf(\"Odd\");\n    return 0;\n}",
+    "o": [
+      "Odd",
+      "Even",
+      "7",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the primary use of the switch-case statement in C?",
+    "o": [
+      "To select one option from multiple possible values of an expression",
+      "To handle errors during runtime",
+      "To create conditional loops",
+      "To define functions with multiple return values"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    switch(x) {\n        case 1:\n        case 5:\n            printf(\"Matched\");\n            break;\n        default:\n            printf(\"Not Matched\");\n    }\n    return 0;\n}",
+    "o": [
+      "Matched",
+      "Not Matched",
+      "Error",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which of the following loops is best used when the number of iterations is known?",
+    "o": [
+      "for loop",
+      "while loop",
+      "do-while loop",
+      "infinite loop"
+    ]
+  },
+  {
+    "q": "What will be the output of this loop?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for (i = 1; i <= 3; i++) {\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "1 2 3 ",
+      "0 1 2 ",
+      "1 2 3 4 ",
+      "3 2 1 "
+    ]
+  },
+  {
+    "q": "Which keyword allows skipping the rest of the loop iteration in C?",
+    "o": [
+      "continue",
+      "break",
+      "skip",
+      "exit"
+    ]
+  },
+  {
+    "q": "How many times will this loop run?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    while (i < 4) {\n        printf(\"Loop \");\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "4",
+      "3",
+      "5",
+      "0"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 10;\n    if (a > 5)\n        if (a < 20)\n            printf(\"In Range\");\n    else\n        printf(\"Out of Range\");\n    return 0;\n}",
+    "o": [
+      "In Range",
+      "Out of Range",
+      "Nothing",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which statement transfers program control to a labeled statement?",
+    "o": [
+      "goto",
+      "switch",
+      "return",
+      "continue"
+    ]
+  },
+  {
+    "q": "Which C control structure is most appropriate for executing a block of code only if a condition is true?",
+    "o": [
+      "if statement",
+      "for loop",
+      "switch-case",
+      "goto statement"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 3;\n    int b = 5;\n    if (a < b)\n        printf(\"Smaller\");\n    return 0;\n}",
+    "o": [
+      "Smaller",
+      "Larger",
+      "Equal",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to exit a loop immediately in C?",
+    "o": [
+      "break",
+      "exit",
+      "stop",
+      "return"
+    ]
+  },
+  {
+    "q": "What is the output of this C program?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 2;\n    switch (x) {\n        case 1:\n            printf(\"One\");\n            break;\n        case 2:\n            printf(\"Two\");\n            break;\n        default:\n            printf(\"Default\");\n    }\n    return 0;\n}",
+    "o": [
+      "Two",
+      "One",
+      "Default",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which loop will always execute at least once, even if the condition is false at the beginning?",
+    "o": [
+      "do-while loop",
+      "while loop",
+      "for loop",
+      "None of the above"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 1;\n    while (i <= 3) {\n        printf(\"%d \", i);\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "1 2 3 ",
+      "0 1 2 ",
+      "1 2 3 4 ",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which keyword skips the current iteration and moves to the next one in a loop?",
+    "o": [
+      "continue",
+      "break",
+      "return",
+      "exit"
+    ]
+  },
+  {
+    "q": "What is the output of this nested if condition?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 8;\n    if (a > 5) {\n        if (a < 10)\n            printf(\"Yes\");\n        else\n            printf(\"No\");\n    }\n    return 0;\n}",
+    "o": [
+      "Yes",
+      "No",
+      "Nothing",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid use of the goto statement?",
+    "o": [
+      "To jump to a labeled part of code",
+      "To return a value from a function",
+      "To call a function recursively",
+      "To loop through an array"
+    ]
+  },
+  {
+    "q": "How many times will this loop run?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for (i = 0; i < 5; i++) {\n        if (i == 3)\n            break;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "0 1 2 ",
+      "0 1 2 3 ",
+      "1 2 3 ",
+      "0 1 2 3 4 "
+    ]
+  },
+  {
+    "q": "Which control structure is best suited when multiple values of a single variable are compared?",
+    "o": [
+      "switch-case",
+      "if-else-if ladder",
+      "nested if",
+      "for loop"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    do {\n        printf(\"%d \", i);\n        i++;\n    } while (i < 3);\n    return 0;\n}",
+    "o": [
+      "0 1 2 ",
+      "1 2 3 ",
+      "0 1 2 3 ",
+      "0 1 "
+    ]
+  },
+  {
+    "q": "Which loop checks the condition after executing the body at least once?",
+    "o": [
+      "do-while",
+      "while",
+      "for",
+      "goto"
+    ]
+  },
+  {
+    "q": "What will be the output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 4;\n    if (a > 2)\n        if (a < 6)\n            printf(\"Valid\");\n        else\n            printf(\"Invalid\");\n    return 0;\n}",
+    "o": [
+      "Valid",
+      "Invalid",
+      "Error",
+      "No output"
+    ]
+  },
+  {
+    "q": "What happens if break is not used in a switch-case block?",
+    "o": [
+      "Fall-through occurs to the next case",
+      "The program exits",
+      "Only the matched case executes",
+      "The loop is terminated"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 1;\n    while (i <= 4) {\n        if (i == 3)\n            continue;\n        printf(\"%d \", i);\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "Infinite loop",
+      "1 2 4 ",
+      "1 2 3 4 ",
+      "1 2 3 "
+    ]
+  },
+  {
+    "q": "Which keyword allows transferring control to another part of the program using labels?",
+    "o": [
+      "goto",
+      "continue",
+      "break",
+      "switch"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code?",
+    "c": "#include <stdio.h>\nint main() {\n    int ch = 1;\n    switch (ch) {\n        case 1:\n            printf(\"Apple\\n\");\n        case 2:\n            printf(\"Banana\\n\");\n        default:\n            printf(\"Fruit\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Apple\nBanana\nFruit\n",
+      "Apple",
+      "Fruit",
+      "Apple\nFruit"
+    ]
+  },
+  {
+    "q": "Which of the following is true about nested if statements in C?",
+    "o": [
+      "An if statement can exist inside another if statement",
+      "Only one if statement is allowed",
+      "Nested if is illegal in C",
+      "Only inside loops can if statements be nested"
+    ]
+  },
+  {
+    "q": "How many times will the following loop execute?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for (i = 0; i < 3; i++) {\n        if (i == 1)\n            break;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "0 ",
+      "0 1 ",
+      "1 ",
+      "0 1 2 "
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to write an if-else statement in C?",
+    "o": [
+      "if (x > 0) { printf(\"Positive\"); } else { printf(\"Non-positive\"); }",
+      "if x > 0: print(\"Positive\") else: print(\"Non-positive\")",
+      "if x > 0 then print Positive else print Non-positive",
+      "if x > 0 do { Positive } else { Non-positive }"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 1;\n    while (i <= 3) {\n        printf(\"%d \", i);\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "1 2 3 ",
+      "0 1 2 ",
+      "1 2 3 4 ",
+      "2 3 4 "
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid loop in C?",
+    "o": [
+      "foreach",
+      "for",
+      "while",
+      "do-while"
+    ]
+  },
+  {
+    "q": "How does the continue statement behave inside a loop?",
+    "o": [
+      "Skips the remaining code and goes to the next iteration",
+      "Exits the loop",
+      "Pauses the loop",
+      "Restarts the loop from the beginning"
+    ]
+  },
+  {
+    "q": "What will be the output of this C program?",
+    "c": "#include <stdio.h>\nint main() {\n    int num = 2;\n    switch(num) {\n        case 1: printf(\"One\\n\"); break;\n        case 2: printf(\"Two\\n\"); break;\n        default: printf(\"Other\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Two",
+      "One",
+      "Other",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these can be used to exit from a loop early?",
+    "o": [
+      "break",
+      "continue",
+      "exitloop",
+      "stop"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    if (x < 10)\n        if (x > 0)\n            printf(\"Single Digit Positive\\n\");\n    else\n        printf(\"Other\\n\");\n    return 0;\n}",
+    "o": [
+      "Single Digit Positive",
+      "Other",
+      "Error",
+      "No Output"
+    ]
+  },
+  {
+    "q": "What is the purpose of using 'goto' in C?",
+    "o": [
+      "To jump to a labeled part of code",
+      "To exit a function",
+      "To skip a loop",
+      "To pause execution"
+    ]
+  },
+  {
+    "q": "What is the output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 10;\n    if (a == 10)\n        printf(\"Ten\\n\");\n    else\n        printf(\"Not Ten\\n\");\n    return 0;\n}",
+    "o": [
+      "Ten",
+      "Not Ten",
+      "Ten Not Ten",
+      "No Output"
+    ]
+  },
+  {
+    "q": "Which statement about do-while loops is true?",
+    "o": [
+      "They always execute at least once",
+      "They execute only if condition is true initially",
+      "They never execute if condition is false",
+      "They are obsolete in modern C"
+    ]
+  },
+  {
+    "q": "Which keyword is used to skip the current iteration of a loop in C?",
+    "o": [
+      "continue",
+      "skip",
+      "next",
+      "pass"
+    ]
+  },
+  {
+    "q": "What is the output of this C code?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for (i = 1; i <= 5; i++) {\n        if (i == 3) continue;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "1 2 4 5 ",
+      "1 2 3 4 5 ",
+      "2 4 ",
+      "1 2 3 5 "
+    ]
+  },
+  {
+    "q": "What will happen if the condition inside a while loop is always true?",
+    "o": [
+      "It results in an infinite loop",
+      "It exits immediately",
+      "It causes a syntax error",
+      "It skips the loop"
+    ]
+  },
+  {
+    "q": "Which statement is true about a switch-case in C?",
+    "o": [
+      "Each case must end with a break to prevent fall-through",
+      "It can evaluate float values",
+      "Default case must come first",
+      "Multiple cases cannot share the same block"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 0;\n    do {\n        printf(\"%d \", x);\n        x++;\n    } while (x < 3);\n    return 0;\n}",
+    "o": [
+      "0 1 2 ",
+      "1 2 3 ",
+      "0 1 2 3 ",
+      "0 1 "
+    ]
+  },
+  {
+    "q": "Which of these is true about nested if statements in C?",
+    "o": [
+      "They allow checking multiple conditions in a hierarchical manner",
+      "They are not allowed inside loops",
+      "They require a switch-case block inside",
+      "They always need an else block"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    while (i < 3) {\n        printf(\"Loop \");\n        i++;\n        if (i == 2) break;\n    }\n    return 0;\n}",
+    "o": [
+      "Loop Loop ",
+      "Loop ",
+      "Loop Loop Loop ",
+      "No Output"
+    ]
+  },
+  {
+    "q": "Where is a 'goto' label defined in C?",
+    "o": [
+      "Before or after the goto statement, with a colon",
+      "Only after the goto statement",
+      "Only inside switch cases",
+      "Outside any function"
+    ]
+  },
+  {
+    "q": "Which of these loops executes its body at least once regardless of the condition?",
+    "o": [
+      "do-while",
+      "for",
+      "while",
+      "None of the above"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int day = 4;\n    switch(day) {\n        case 1:\n        case 2:\n            printf(\"Weekday\\n\");\n            break;\n        case 4:\n            printf(\"Midweek\\n\");\n            break;\n        default:\n            printf(\"Other\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Midweek",
+      "Weekday",
+      "Other",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following loops checks the condition after executing the body at least once?",
+    "o": [
+      "do-while",
+      "for",
+      "while",
+      "None of the above"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 10;\n    if (a > 5)\n        if (a < 20)\n            printf(\"Within range\");\n        else\n            printf(\"Out of range\");\n    return 0;\n}",
+    "o": [
+      "Within range",
+      "Out of range",
+      "Compilation Error",
+      "No Output"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the break statement in loops?",
+    "o": [
+      "It exits the loop immediately",
+      "It skips the current iteration",
+      "It pauses the loop temporarily",
+      "It jumps to the start of the loop"
+    ]
+  },
+  {
+    "q": "What is the output of this C code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 1;\n    switch(x) {\n        case 1:\n            printf(\"One \");\n        case 2:\n            printf(\"Two \");\n        default:\n            printf(\"Default\");\n    }\n    return 0;\n}",
+    "o": [
+      "One Two Default",
+      "One",
+      "One Two",
+      "Default"
+    ]
+  },
+  {
+    "q": "Which control structure can be used to repeat a block of code a known number of times?",
+    "o": [
+      "for loop",
+      "if statement",
+      "switch-case",
+      "goto"
+    ]
+  },
+  {
+    "q": "What is the output of this C code?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    while (i < 3) {\n        printf(\"%d \", i);\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "0 1 2 ",
+      "1 2 3 ",
+      "0 1 2 3 ",
+      "0 1 "
+    ]
+  },
+  {
+    "q": "Which of the following is not a valid loop structure in C?",
+    "o": [
+      "repeat-until",
+      "for",
+      "while",
+      "do-while"
+    ]
+  },
+  {
+    "q": "What does the following C code do?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 1;\n    label:\n    printf(\"%d \", i);\n    i++;\n    if (i <= 3) goto label;\n    return 0;\n}",
+    "o": [
+      "1 2 3 ",
+      "1 2 ",
+      "Infinite loop",
+      "1 2 3 4 "
+    ]
+  },
+  {
+    "q": "Which of the following best describes the role of the default case in a switch statement?",
+    "o": [
+      "It executes when no matching case is found",
+      "It must be placed at the beginning",
+      "It only works if break is omitted",
+      "It is required in every switch statement"
+    ]
+  },
+  {
+    "q": "What will be the output of this C code?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for(i = 1; i <= 3; i++) {\n        if (i == 2) continue;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "1 3 ",
+      "1 2 3 ",
+      "2 3 ",
+      "1 2 "
+    ]
+  },
+  {
+    "q": "Which of the following statements about the if-else structure in C is true?",
+    "o": [
+      "An else block is always associated with the nearest unmatched if",
+      "An if must always be followed by an else",
+      "Only one if can exist in a program",
+      "else can exist without if"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    if (x > 0)\n        if (x < 10)\n            printf(\"Small\");\n        else\n            printf(\"Big\");\n    return 0;\n}",
+    "o": [
+      "Small",
+      "Big",
+      "No Output",
+      "Error"
+    ]
+  },
+  {
+    "q": "In C, which control structure is best suited when multiple discrete values of a variable need to be checked?",
+    "o": [
+      "switch-case",
+      "if-else ladder",
+      "while loop",
+      "goto statement"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    do {\n        printf(\"%d \", i);\n        i++;\n    } while (i < 2);\n    return 0;\n}",
+    "o": [
+      "0 1 ",
+      "1 2 ",
+      "0 1 2 ",
+      "0 "
+    ]
+  },
+  {
+    "q": "Which loop is guaranteed to execute at least once, regardless of the condition?",
+    "o": [
+      "do-while",
+      "while",
+      "for",
+      "switch"
+    ]
+  },
+  {
+    "q": "What does the break statement do in a loop?",
+    "o": [
+      "It terminates the loop immediately",
+      "It skips to the next iteration",
+      "It restarts the loop",
+      "It pauses the loop temporarily"
+    ]
+  },
+  {
+    "q": "What is the output of the following program?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 1;\n    switch(a) {\n        case 1:\n            printf(\"One \");\n            break;\n        case 2:\n            printf(\"Two \");\n            break;\n        default:\n            printf(\"Default\");\n    }\n    return 0;\n}",
+    "o": [
+      "One ",
+      "Two ",
+      "Default",
+      "One Two Default"
+    ]
+  },
+  {
+    "q": "Which statement causes the loop to skip the rest of its body and immediately retest its condition?",
+    "o": [
+      "continue",
+      "break",
+      "goto",
+      "return"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 3;\n    if (x == 3)\n        goto label;\n    printf(\"Before\\n\");\nlabel:\n    printf(\"After\\n\");\n    return 0;\n}",
+    "o": [
+      "After",
+      "Before After",
+      "Before",
+      "No Output"
+    ]
+  },
+  {
+    "q": "Which of the following loops is most suitable when the number of iterations is known in advance?",
+    "o": [
+      "for loop",
+      "while loop",
+      "do-while loop",
+      "switch-case"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about the switch-case statement in C?",
+    "o": [
+      "It can only compare integer or character values",
+      "It can evaluate expressions involving floats",
+      "It can replace all types of if-else conditions",
+      "It must have a default case"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 1;\n    while (i <= 3) {\n        printf(\"%d \", i);\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "1 2 3 ",
+      "1 2 3 4 ",
+      "0 1 2 ",
+      "2 3 4 "
+    ]
+  },
+  {
+    "q": "In a nested if structure, which block executes if both conditions are false?",
+    "o": [
+      "None of the inner or outer blocks execute",
+      "Only the outer if block executes",
+      "Only the inner if block executes",
+      "Both blocks execute"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int num = 2;\n    switch(num + 1) {\n        case 3: printf(\"Three\\n\"); break;\n        case 2: printf(\"Two\\n\"); break;\n        default: printf(\"Other\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Three",
+      "Two",
+      "Other",
+      "No Output"
+    ]
+  },
+  {
+    "q": "What is the role of the default label in a switch statement?",
+    "o": [
+      "It executes when no case matches",
+      "It must be present in every switch",
+      "It only runs if break is missing",
+      "It is equivalent to the first case"
+    ]
+  },
+  {
+    "q": "What will the following program output?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for (i = 0; i < 5; i++) {\n        if (i == 3)\n            break;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "0 1 2 ",
+      "0 1 2 3 4 ",
+      "1 2 3 ",
+      "0 1 2 3 "
+    ]
+  },
+  {
+    "q": "Which statement is used to jump to a specific labeled part of a C program?",
+    "o": [
+      "goto",
+      "continue",
+      "break",
+      "return"
+    ]
+  },
+  {
+    "q": "What is the output of the following program?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 10;\n    if (a > 5)\n        if (a < 20)\n            printf(\"Valid\\n\");\n        else\n            printf(\"Invalid\\n\");\n    return 0;\n}",
+    "o": [
+      "Valid",
+      "Invalid",
+      "Valid Invalid",
+      "No Output"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the for loop in C?",
+    "o": [
+      "Entry-controlled loop",
+      "Exit-controlled loop",
+      "Conditional jump",
+      "Infinite by default"
+    ]
+  },
+  {
+    "q": "Which loop checks the condition after executing the loop body?",
+    "o": [
+      "do-while",
+      "for",
+      "while",
+      "if"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to skip the current iteration in a loop?",
+    "o": [
+      "continue",
+      "break",
+      "goto",
+      "exit"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    if (x > 2)\n        if (x < 10)\n            printf(\"x is between 2 and 10\\n\");\n        else\n            printf(\"x is greater than 10\\n\");\n    return 0;\n}",
+    "o": [
+      "x is between 2 and 10",
+      "x is greater than 10",
+      "x is less than 2",
+      "No Output"
+    ]
+  },
+  {
+    "q": "In a switch statement, what happens if the break statement is omitted?",
+    "o": [
+      "All subsequent cases are executed until a break is found",
+      "Only the matching case is executed",
+      "The program terminates",
+      "The default case is executed"
+    ]
+  },
+  {
+    "q": "Which loop is guaranteed to execute at least once?",
+    "o": [
+      "do-while loop",
+      "for loop",
+      "while loop",
+      "None of the above"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    do {\n        printf(\"%d \", i);\n        i++;\n    } while (i < 3);\n    return 0;\n}",
+    "o": [
+      "0 1 2 ",
+      "1 2 3 ",
+      "0 1 2 3 ",
+      "No Output"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the if-else statement in C?",
+    "o": [
+      "It can be nested inside another if or else block",
+      "It must be followed by a switch",
+      "It requires a loop",
+      "It cannot have more than one else"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for (i = 1; i <= 5; i++) {\n        if (i == 3)\n            continue;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "1 2 4 5 ",
+      "1 2 3 4 5 ",
+      "1 2 3 4 ",
+      "2 3 4 5 "
+    ]
+  },
+  {
+    "q": "How many times will this loop execute?\n\n```c\nint i = 1;\nwhile (i < 1) {\n  printf(\"Loop\\n\");\n  i++;\n}\n```",
+    "o": [
+      "0 times",
+      "1 time",
+      "Infinite times",
+      "Loop until i is 10"
+    ]
+  },
+  {
+    "q": "What is the main purpose of using the break statement?",
+    "o": [
+      "To exit from a loop or switch block prematurely",
+      "To skip to the next iteration",
+      "To stop the program",
+      "To return from a function"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid use of a control structure?",
+    "o": [
+      "Declaring a variable",
+      "Skipping an iteration",
+      "Making a decision",
+      "Looping through values"
+    ]
+  },
+  {
+    "q": "Which control structure is best suited for executing one block of code out of several choices based on a variable's value?",
+    "o": [
+      "switch-case",
+      "if-else",
+      "goto",
+      "while"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n  int num = 2;\n  switch(num) {\n    case 1: printf(\"One\\n\"); break;\n    case 2: printf(\"Two\\n\"); break;\n    case 3: printf(\"Three\\n\"); break;\n    default: printf(\"Other\\n\");\n  }\n  return 0;\n}",
+    "o": [
+      "Two",
+      "One",
+      "Three",
+      "Other"
+    ]
+  },
+  {
+    "q": "What happens if you omit the default case in a switch statement?",
+    "o": [
+      "The program works normally; default is optional",
+      "It causes a compile-time error",
+      "The switch won’t run at all",
+      "The first case is executed by default"
+    ]
+  },
+  {
+    "q": "How many times will the following loop run?",
+    "c": "#include <stdio.h>\nint main() {\n  int i;\n  for (i = 0; i < 5; i++) {\n    if (i == 3)\n      break;\n    printf(\"%d \", i);\n  }\n  return 0;\n}",
+    "o": [
+      "0 1 2 ",
+      "0 1 2 3 4 ",
+      "0 1 2 3 ",
+      "1 2 3 4 "
+    ]
+  },
+  {
+    "q": "What is the purpose of the goto statement in C?",
+    "o": [
+      "To jump to a labeled part of code",
+      "To loop through a block repeatedly",
+      "To skip a function",
+      "To terminate the program"
+    ]
+  },
+  {
+    "q": "Which loop checks the condition after executing the body once?",
+    "o": [
+      "do-while",
+      "while",
+      "for",
+      "infinite loop"
+    ]
+  },
+  {
+    "q": "What is the output of the following nested if code?",
+    "c": "#include <stdio.h>\nint main() {\n  int x = 10;\n  if (x > 0) {\n    if (x < 20)\n      printf(\"x is between 1 and 19\\n\");\n  }\n  return 0;\n}",
+    "o": [
+      "x is between 1 and 19",
+      "No output",
+      "x is less than 0",
+      "x is greater than 20"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about break and continue?",
+    "o": [
+      "break exits the loop, continue skips to the next iteration",
+      "both break and continue exit the loop",
+      "continue exits the loop, break skips",
+      "they are interchangeable"
+    ]
+  },
+  {
+    "q": "Which of the following can be used to implement an infinite loop?",
+    "o": [
+      "while(1)",
+      "for(i=0; i<1; i--)",
+      "do {} while(1);",
+      "All of the above"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n  int i = 1;\n  while (i <= 3) {\n    printf(\"%d \", i);\n    i++;\n  }\n  return 0;\n}",
+    "o": [
+      "1 2 3 ",
+      "1 2 ",
+      "1 2 3 4 ",
+      "2 3 4 "
+    ]
+  },
+  {
+    "q": "Which of the following is true about the 'if' statement in C?",
+    "o": [
+      "It executes a block of code if the condition is true",
+      "It always executes at least once",
+      "It only works inside loops",
+      "It must be followed by an else"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n  int a = 8;\n  if (a % 2 == 0)\n    printf(\"Even\\n\");\n  else\n    printf(\"Odd\\n\");\n  return 0;\n}",
+    "o": [
+      "Even",
+      "Odd",
+      "Error",
+      "8"
+    ]
+  },
+  {
+    "q": "Which loop is best when the number of iterations is known beforehand?",
+    "o": [
+      "for",
+      "while",
+      "do-while",
+      "goto"
+    ]
+  },
+  {
+    "q": "How many times will this loop execute?",
+    "c": "#include <stdio.h>\nint main() {\n  int i = 0;\n  while (i < 3) {\n    printf(\"%d \", i);\n    i++;\n  }\n  return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "4",
+      "Infinite"
+    ]
+  },
+  {
+    "q": "Which statement is used to skip the current iteration of a loop?",
+    "o": [
+      "continue",
+      "break",
+      "skip",
+      "exit"
+    ]
+  },
+  {
+    "q": "What is the purpose of the default case in a switch statement?",
+    "o": [
+      "It executes when no other case matches",
+      "It always executes first",
+      "It breaks the loop",
+      "It stores default variables"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n  int x = 5;\n  if (x > 0)\n    if (x < 10)\n      printf(\"Single Digit Positive\\n\");\n  return 0;\n}",
+    "o": [
+      "Single Digit Positive",
+      "No output",
+      "Positive",
+      "Single Digit"
+    ]
+  },
+  {
+    "q": "Which of the following loops will always execute at least once?",
+    "o": [
+      "do-while",
+      "while",
+      "for",
+      "None of the above"
+    ]
+  },
+  {
+    "q": "Which of the following is an invalid use of break?",
+    "o": [
+      "Outside of loops or switch",
+      "Inside a for loop",
+      "Inside a switch",
+      "Inside a while loop"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n  int i = 0;\n  for(i = 0; i < 5; i++) {\n    if(i == 2) continue;\n    printf(\"%d \", i);\n  }\n  return 0;\n}",
+    "o": [
+      "0 1 3 4 ",
+      "0 1 2 3 4 ",
+      "0 1 2 ",
+      "0 1 2 3 "
+    ]
+  },
+  {
+    "q": "Which of the following control structures allows multiple conditions to be checked in sequence?",
+    "o": [
+      "nested if",
+      "for loop",
+      "switch",
+      "goto"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n  int a = 10;\n  if (a > 5)\n    if (a < 15)\n      printf(\"In range\\n\");\n  return 0;\n}",
+    "o": [
+      "In range",
+      "Out of range",
+      "Nothing",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which statement can transfer control unconditionally to a labeled statement?",
+    "o": [
+      "goto",
+      "continue",
+      "switch",
+      "break"
+    ]
+  },
+  {
+    "q": "Which loop structure checks the condition after executing the loop body?",
+    "o": [
+      "do-while",
+      "for",
+      "while",
+      "nested for"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <stdio.h>\nint main() {\n  int i = 0;\n  while (i < 4) {\n    if (i == 2)\n      break;\n    printf(\"%d \", i);\n    i++;\n  }\n  return 0;\n}",
+    "o": [
+      "0 1 ",
+      "0 1 2 3 ",
+      "0 1 2 ",
+      "0 "
+    ]
+  },
+  {
+    "q": "In a switch-case, what happens if break is omitted?",
+    "o": [
+      "All subsequent cases execute until a break is found",
+      "The program terminates",
+      "It throws a compilation error",
+      "Only the default executes"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n  int x = 3;\n  switch (x) {\n    case 1:\n      printf(\"One\");\n      break;\n    case 3:\n      printf(\"Three\");\n      break;\n    default:\n      printf(\"Default\");\n  }\n  return 0;\n}",
+    "o": [
+      "Three",
+      "One",
+      "Default",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these is a correct syntax for a while loop?",
+    "o": [
+      "while(condition) { // statements }",
+      "while condition { // statements }",
+      "while(condition);",
+      "while: condition"
+    ]
+  },
+  {
+    "q": "What keyword exits the loop completely?",
+    "o": [
+      "break",
+      "continue",
+      "exit",
+      "stop"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n  int i;\n  for (i = 1; i <= 5; i++) {\n    if (i == 4)\n      continue;\n    printf(\"%d \", i);\n  }\n  return 0;\n}",
+    "o": [
+      "1 2 3 5 ",
+      "1 2 3 4 5 ",
+      "1 2 3 4 ",
+      "1 2 3 4 5 6 "
+    ]
+  },
+  {
+    "q": "Which keyword is used to skip the current iteration of a loop in C?",
+    "o": [
+      "continue",
+      "break",
+      "skip",
+      "pass"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n  int x = 5;\n  if (x > 0)\n    if (x < 10)\n      printf(\"x is between 0 and 10\\n\");\n    else\n      printf(\"x is 10 or more\\n\");\n  return 0;\n}",
+    "o": [
+      "x is between 0 and 10",
+      "x is 10 or more",
+      "x is negative",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which statement correctly initiates a for loop that runs 5 times?",
+    "o": [
+      "for(int i = 0; i < 5; i++)",
+      "for i in range(5)",
+      "foreach(i = 0; i < 5; i++)",
+      "loop(i = 0 to 5)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n  int i = 1;\n  do {\n    printf(\"%d \", i);\n    i++;\n  } while (i <= 3);\n  return 0;\n}",
+    "o": [
+      "1 2 3 ",
+      "1 2 ",
+      "2 3 ",
+      "0 1 2 "
+    ]
+  },
+  {
+    "q": "Which of the following is true about switch-case?",
+    "o": [
+      "It can replace multiple if-else if conditions for checking exact values.",
+      "It is used for checking ranges.",
+      "It accepts float and string in C.",
+      "It is used to jump to a specific line number."
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n  int x = 2;\n  switch(x) {\n    case 1:\n      printf(\"One\");\n    case 2:\n      printf(\"Two\");\n    case 3:\n      printf(\"Three\");\n  }\n  return 0;\n}",
+    "o": [
+      "TwoThree",
+      "Two",
+      "OneTwoThree",
+      "Three"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to exit from a switch block?",
+    "o": [
+      "break",
+      "exit",
+      "continue",
+      "return"
+    ]
+  },
+  {
+    "q": "What will be printed by the following code?",
+    "c": "#include <stdio.h>\nint main() {\n  int a = 7;\n  if (a % 2 == 0)\n    printf(\"Even\\n\");\n  else\n    printf(\"Odd\\n\");\n  return 0;\n}",
+    "o": [
+      "Odd",
+      "Even",
+      "Nothing",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following loops is guaranteed to execute at least once?",
+    "o": [
+      "do-while loop",
+      "while loop",
+      "for loop",
+      "infinite while loop"
+    ]
+  },
+  {
+    "q": "Which of the following control statements is used to terminate the loop early based on a condition?",
+    "o": [
+      "break",
+      "continue",
+      "goto",
+      "exit"
+    ]
+  },
+  {
+    "q": "Which loop is ideal when the number of iterations is known beforehand?",
+    "o": [
+      "for loop",
+      "while loop",
+      "do-while loop",
+      "infinite loop"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n  int i;\n  for(i = 1; i <= 3; i++) {\n    if(i == 2)\n      continue;\n    printf(\"%d \", i);\n  }\n  return 0;\n}",
+    "o": [
+      "1 3 ",
+      "1 2 3 ",
+      "2 3 ",
+      "1 2 "
+    ]
+  },
+  {
+    "q": "What is the purpose of the goto statement in C?",
+    "o": [
+      "It transfers control to a labeled statement within the same function.",
+      "It defines a loop.",
+      "It declares a new variable.",
+      "It exits the program."
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n  int num = 10;\n  if(num > 0)\n    printf(\"Positive\\n\");\n  else if(num < 0)\n    printf(\"Negative\\n\");\n  else\n    printf(\"Zero\\n\");\n  return 0;\n}",
+    "o": [
+      "Positive",
+      "Negative",
+      "Zero",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these is a correct switch-case usage in C?",
+    "c": "int x = 3;\nswitch(x) {\n  case 1:\n    printf(\"One\");\n    break;\n  case 3:\n    printf(\"Three\");\n    break;\n}",
+    "o": [
+      "Correct usage, will print 'Three'",
+      "Incorrect: break missing",
+      "Incorrect: switch requires strings",
+      "Incorrect: can't use int in switch"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n  int i = 5;\n  while(i < 5) {\n    printf(\"Looping\\n\");\n    i++;\n  }\n  return 0;\n}",
+    "o": [
+      "No output",
+      "Looping",
+      "Looping Looping",
+      "Infinite loop"
+    ]
+  },
+  {
+    "q": "Which loop checks the condition after executing the loop body?",
+    "o": [
+      "do-while loop",
+      "for loop",
+      "while loop",
+      "foreach loop"
+    ]
+  },
+  {
+    "q": "Which of these best explains nested if statements?",
+    "o": [
+      "An if statement inside another if block",
+      "Multiple else-if blocks",
+      "An if-else block used inside a loop",
+      "Using switch inside if"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "#include <stdio.h>\nint main() {\n  int i;\n  for(i = 1; i <= 3; i++) {\n    printf(\"%d \", i);\n    if(i == 2)\n      break;\n  }\n  return 0;\n}",
+    "o": [
+      "1 2 ",
+      "1 2 3 ",
+      "2 3 ",
+      "1 3 "
+    ]
+  },
+  {
+    "q": "Which of the following cannot be used as the expression in a switch statement in C?",
+    "o": [
+      "float",
+      "int",
+      "char",
+      "enum"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about the `do-while` loop in C?",
+    "o": [
+      "It executes the loop body at least once before checking the condition.",
+      "It never checks the loop condition.",
+      "It is similar to `for` loop with initialization inside.",
+      "It is used only for infinite loops."
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n  int x = 4;\n  if(x % 2 == 0)\n    if(x > 3)\n      printf(\"Even and greater than 3\\n\");\n    else\n      printf(\"Even and not greater than 3\\n\");\n  return 0;\n}",
+    "o": [
+      "Even and greater than 3",
+      "Even and not greater than 3",
+      "Odd and greater than 3",
+      "Syntax error"
+    ]
+  },
+  {
+    "q": "Which of the following control structures allows execution of one block out of many choices?",
+    "o": [
+      "switch-case",
+      "if statement",
+      "for loop",
+      "while loop"
+    ]
+  },
+  {
+    "q": "What does the following code print?",
+    "c": "#include <stdio.h>\nint main() {\n  int i = 0;\n  do {\n    printf(\"%d \", i);\n    i++;\n  } while(i < 3);\n  return 0;\n}",
+    "o": [
+      "0 1 2 ",
+      "1 2 3 ",
+      "0 1 2 3 ",
+      "0 1 2 3 4 "
+    ]
+  },
+  {
+    "q": "Which keyword is used to skip the current iteration of a loop?",
+    "o": [
+      "continue",
+      "break",
+      "goto",
+      "exit"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n  int a = 10;\n  switch(a) {\n    case 10:\n      printf(\"Ten\\n\");\n    default:\n      printf(\"Default\\n\");\n  }\n  return 0;\n}",
+    "o": [
+      "Ten\nDefault",
+      "Ten",
+      "Default",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which loop structure is best suited for checking a condition before every iteration?",
+    "o": [
+      "while loop",
+      "do-while loop",
+      "for loop",
+      "switch statement"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax for a basic `if` statement in C?",
+    "o": [
+      "if(condition) { // code }",
+      "if condition then // code",
+      "if[condition]: // code",
+      "if(condition); // code"
+    ]
+  },
+  {
+    "q": "What happens when `break` is used inside a loop?",
+    "o": [
+      "The loop terminates immediately.",
+      "The loop skips one iteration.",
+      "It causes a compile error.",
+      "It restarts the loop."
+    ]
+  },
+  {
+    "q": "What is the output of the following loop?",
+    "c": "#include <stdio.h>\nint main() {\n  int i;\n  for(i = 0; i < 3; i++) {\n    if(i == 1)\n      goto skip;\n    printf(\"%d \", i);\n  }\nskip:\n  printf(\"Skipped\\n\");\n  return 0;\n}",
+    "o": [
+      "0 Skipped",
+      "1 2 Skipped",
+      "0 1 2 Skipped",
+      "Skipped"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the `if-else` structure in C?",
+    "o": [
+      "It allows decision-making between two alternative paths.",
+      "It is used to repeat a block of code.",
+      "It selects one block from many based on case values.",
+      "It exits from a loop."
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n  int x = 3;\n  if(x < 5)\n    printf(\"Small\\n\");\n  else\n    printf(\"Large\\n\");\n  return 0;\n}",
+    "o": [
+      "Small",
+      "Large",
+      "Error",
+      "No output"
+    ]
+  },
+  {
+    "q": "What happens if `break` is not used in a `switch` statement in C?",
+    "o": [
+      "All subsequent cases will execute (fall-through).",
+      "The program will stop with an error.",
+      "Only the default case runs.",
+      "Nothing will be printed."
+    ]
+  },
+  {
+    "q": "Which loop guarantees at least one execution of the body even if the condition is false?",
+    "o": [
+      "do-while",
+      "for",
+      "while",
+      "infinite loop"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n  int i = 0;\n  while(i < 3) {\n    if(i == 1)\n      continue;\n    printf(\"%d \", i);\n    i++;\n  }\n  return 0;\n}",
+    "o": [
+      "Infinite loop",
+      "0 2",
+      "0 1 2",
+      "1 2"
+    ]
+  },
+  {
+    "q": "Which keyword is used to transfer control to a labeled statement?",
+    "o": [
+      "goto",
+      "break",
+      "continue",
+      "jump"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <stdio.h>\nint main() {\n  int i;\n  for(i = 1; i <= 3; i++) {\n    if(i == 2)\n      break;\n    printf(\"%d \", i);\n  }\n  return 0;\n}",
+    "o": [
+      "1",
+      "1 2",
+      "1 2 3",
+      "2 3"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid `switch` expression?",
+    "o": [
+      "An integer variable",
+      "A float expression",
+      "A string constant",
+      "A double value"
+    ]
+  },
+  {
+    "q": "What is the correct syntax of a `while` loop in C?",
+    "o": [
+      "while(condition) { /* code */ }",
+      "while condition then { /* code */ }",
+      "while { condition }",
+      "do while(condition);"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n  int a = 2;\n  switch(a) {\n    case 1:\n      printf(\"One\\n\");\n    case 2:\n      printf(\"Two\\n\");\n    case 3:\n      printf(\"Three\\n\");\n      break;\n    default:\n      printf(\"Other\\n\");\n  }\n  return 0;\n}",
+    "o": [
+      "Two\nThree",
+      "Three\nOther",
+      "Two",
+      "Three"
+    ]
+  },
+  {
+    "q": "Which of the following correctly represents a nested if statement in C?",
+    "o": [
+      "if(a > 0) { if(b > 0) { printf(\"Both positive\"); } }",
+      "if a > 0 then if b > 0 then print",
+      "if(a > 0) then { if(b > 0) print(); }",
+      "nested if(a > 0, b > 0)"
+    ]
+  },
+  {
+    "q": "What will be the output of the code below?",
+    "c": "#include <stdio.h>\nint main() {\n  int x = 5;\n  if(x > 0)\n    if(x < 10)\n      printf(\"Single digit positive\\n\");\n    else\n      printf(\"Positive\\n\");\n  return 0;\n}",
+    "o": [
+      "Single digit positive",
+      "Positive",
+      "No output",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "When is the `default` case in a `switch` statement executed?",
+    "o": [
+      "When no case matches the switch expression",
+      "When the first case fails",
+      "When all cases match",
+      "Only when break is used"
+    ]
+  },
+  {
+    "q": "What is the output of this loop code?",
+    "c": "#include <stdio.h>\nint main() {\n  int i = 0;\n  do {\n    printf(\"%d \", i);\n    i++;\n  } while(i < 3);\n  return 0;\n}",
+    "o": [
+      "0 1 2",
+      "1 2 3",
+      "0 1 2 3",
+      "0 1"
+    ]
+  },
+  {
+    "q": "Which loop is best suited when the number of iterations is known in advance?",
+    "o": [
+      "for loop",
+      "while loop",
+      "do-while loop",
+      "infinite loop"
+    ]
+  },
+  {
+    "q": "What does the `continue` statement do in a loop?",
+    "o": [
+      "Skips the rest of the loop and proceeds with the next iteration",
+      "Exits the loop entirely",
+      "Skips to the end of the program",
+      "Pauses the loop"
+    ]
+  },
+  {
+    "q": "What will this C code output?",
+    "c": "#include <stdio.h>\nint main() {\n  int x = 10;\n  while(x-- > 7)\n    printf(\"%d \", x);\n  return 0;\n}",
+    "o": [
+      "9 8 7",
+      "10 9 8",
+      "10 9 8 7",
+      "9 8"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to exit from any loop prematurely?",
+    "o": [
+      "break",
+      "exit",
+      "stop",
+      "end"
+    ]
+  },
+  {
+    "q": "What is the primary use of `goto` in C?",
+    "o": [
+      "To jump to a labeled part of the program",
+      "To define a loop",
+      "To switch between functions",
+      "To exit from the program"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "#include <stdio.h>\nint main() {\n  int x = 2;\n  switch(x) {\n    case 1:\n      printf(\"One \");\n    case 2:\n      printf(\"Two \");\n    default:\n      printf(\"Default\");\n  }\n  return 0;\n}",
+    "o": [
+      "Two Default",
+      "One",
+      "Two",
+      "Default"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    if (x > 5) {\n        printf(\"Greater than 5\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Greater than 5",
+      "Less than 5",
+      "5",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid use of the if-else statement in C?",
+    "o": [
+      "if (x > y) { return x; } else { return y; }",
+      "if x > y then return x else return y;",
+      "if (x > y) return x else return y;",
+      "if {x > y} then {return x;} else {return y;}"
+    ]
+  },
+  {
+    "q": "What is the output of the following switch-case block?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 2;\n    switch (x) {\n        case 1: printf(\"One\\n\"); break;\n        case 2: printf(\"Two\\n\"); break;\n        default: printf(\"Other\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Two",
+      "One",
+      "Other",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to exit a loop prematurely in C?",
+    "o": [
+      "break",
+      "stop",
+      "exit",
+      "terminate"
+    ]
+  },
+  {
+    "q": "What will be the output of this loop?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    while (i < 3) {\n        printf(\"%d \", i);\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "0 1 2",
+      "1 2 3",
+      "0 1 2 3",
+      "1 2"
+    ]
+  },
+  {
+    "q": "Which of the following loops is guaranteed to execute at least once?",
+    "o": [
+      "do-while",
+      "for",
+      "while",
+      "foreach"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for (i = 0; i < 5; i++) {\n        if (i == 3) continue;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "0 1 2 4",
+      "0 1 2 3 4",
+      "1 2 4",
+      "0 1 3 4"
+    ]
+  },
+  {
+    "q": "Which statement is true about the switch-case statement in C?",
+    "o": [
+      "It allows multi-way branching based on the value of an expression.",
+      "It can be used with strings.",
+      "It does not require a default case.",
+      "It only works with float values."
+    ]
+  },
+  {
+    "q": "What does the following code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 1;\n    if (x > 0) {\n        if (x < 5)\n            printf(\"x is between 0 and 5\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "x is between 0 and 5",
+      "x is less than 5",
+      "x is greater than 0",
+      "No output"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'goto' statement in C?",
+    "o": [
+      "To jump to a labeled part of the code",
+      "To exit from a loop",
+      "To define a new function",
+      "To create a loop"
+    ]
+  },
+  {
+    "q": "What is the output of this nested if statement?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 7;\n    if (x > 5) {\n        if (x < 10) {\n            printf(\"x is between 5 and 10\\n\");\n        }\n    }\n    return 0;\n}",
+    "o": [
+      "x is between 5 and 10",
+      "x is less than 5",
+      "x is greater than 10",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax for a switch statement in C?",
+    "o": [
+      "switch (expression) { case value: /* code */ break; }",
+      "switch expression { case value: /* code */ break; }",
+      "switch { expression case: value }",
+      "case switch(expression):"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    do {\n        printf(\"%d \", i);\n        i++;\n    } while (i < 3);\n    return 0;\n}",
+    "o": [
+      "0 1 2",
+      "1 2 3",
+      "0 1",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which loop should be used when the number of iterations is known beforehand?",
+    "o": [
+      "for",
+      "while",
+      "do-while",
+      "goto"
+    ]
+  },
+  {
+    "q": "What does this code snippet do?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for (i = 0; i < 5; i++) {\n        if (i == 2) break;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "0 1",
+      "0 1 2",
+      "1 2 3",
+      "0 1 2 3"
+    ]
+  },
+  {
+    "q": "Which keyword is used to skip the current iteration of a loop in C?",
+    "o": [
+      "continue",
+      "skip",
+      "next",
+      "pass"
+    ]
+  },
+  {
+    "q": "What will be the result of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    while (i < 3) {\n        printf(\"Looping\\n\");\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "Looping\nLooping\nLooping",
+      "Looping\nLooping",
+      "Looping",
+      "No output"
+    ]
+  },
+  {
+    "q": "What is the purpose of the default case in a switch statement?",
+    "o": [
+      "To execute code when no case matches",
+      "To execute code for all cases",
+      "To end the switch block",
+      "To define a starting point"
+    ]
+  },
+  {
+    "q": "Which of the following statements about 'goto' is correct?",
+    "o": [
+      "It transfers control to a labeled statement",
+      "It exits the program immediately",
+      "It skips the current function",
+      "It restarts the loop from beginning"
+    ]
+  },
+  {
+    "q": "What is the output of this code with continue?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for (i = 1; i <= 3; i++) {\n        if (i == 2) continue;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "1 3",
+      "1 2 3",
+      "2 3",
+      "1 2"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int num = 8;\n    if (num % 2 == 0)\n        printf(\"Even\\n\");\n    else\n        printf(\"Odd\\n\");\n    return 0;\n}",
+    "o": [
+      "Even",
+      "Odd",
+      "None",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which statement best describes the 'if-else' structure in C?",
+    "o": [
+      "It executes one block if the condition is true, and another if it is false.",
+      "It executes both blocks if the condition is true.",
+      "It can only be used inside loops.",
+      "It replaces the need for the switch-case structure."
+    ]
+  },
+  {
+    "q": "What is the output of this code using a switch statement?",
+    "c": "#include <stdio.h>\nint main() {\n    int choice = 4;\n    switch (choice) {\n        case 1: printf(\"One\\n\"); break;\n        case 2: printf(\"Two\\n\"); break;\n        default: printf(\"Other\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Other",
+      "One",
+      "Two",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a 'for' loop in C?",
+    "o": [
+      "It is used when the number of iterations is known.",
+      "It can only be used with integers.",
+      "It runs until the program ends.",
+      "It can only run in reverse."
+    ]
+  },
+  {
+    "q": "What does this loop print?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 5;\n    while (i > 0) {\n        printf(\"%d \", i);\n        i--;\n    }\n    return 0;\n}",
+    "o": [
+      "5 4 3 2 1",
+      "1 2 3 4 5",
+      "5 4 3 2",
+      "5 5 5 5 5"
+    ]
+  },
+  {
+    "q": "Which of the following loops ensures the body executes at least once?",
+    "o": [
+      "do-while",
+      "while",
+      "for",
+      "if"
+    ]
+  },
+  {
+    "q": "What is the output of this loop using break?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for (i = 1; i <= 5; i++) {\n        if (i == 4) break;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "1 2 3",
+      "1 2 3 4",
+      "1 2",
+      "1 2 3 4 5"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT true about the continue statement in C?",
+    "o": [
+      "It stops the current iteration and moves to the next one.",
+      "It can be used in all types of loops.",
+      "It skips the remaining code inside the loop for that iteration.",
+      "It exits the loop entirely."
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 1;\n    label:\n    printf(\"%d \", x);\n    x++;\n    if (x <= 3) goto label;\n    return 0;\n}",
+    "o": [
+      "1 2 3",
+      "1 2",
+      "2 3",
+      "1 2 3 4"
+    ]
+  },
+  {
+    "q": "Which control structure is considered bad practice and should be avoided when possible?",
+    "o": [
+      "goto",
+      "if-else",
+      "while",
+      "switch-case"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 12;\n    if (x < 10)\n        printf(\"Less than 10\\n\");\n    else\n        printf(\"10 or more\\n\");\n    return 0;\n}",
+    "o": [
+      "10 or more",
+      "Less than 10",
+      "10",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which control structure allows checking multiple possible constant values of an expression?",
+    "o": [
+      "switch-case",
+      "if-else",
+      "goto",
+      "while"
+    ]
+  },
+  {
+    "q": "What does this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 1;\n    while (i <= 3) {\n        printf(\"Loop\\n\");\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "Loop\nLoop\nLoop",
+      "Loop\nLoop",
+      "Loop",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following is true about a do-while loop?",
+    "o": [
+      "It executes the loop body before checking the condition.",
+      "It never checks the condition.",
+      "It only runs if the condition is true initially.",
+      "It can’t be nested."
+    ]
+  },
+  {
+    "q": "What is printed by this switch-case code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 3;\n    switch(a) {\n        case 1:\n        case 2:\n        case 3:\n            printf(\"Matched\\n\"); break;\n        default:\n            printf(\"Default\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Matched",
+      "Default",
+      "1",
+      "2"
+    ]
+  },
+  {
+    "q": "Which of these is an infinite loop in C?",
+    "o": [
+      "while(1) { /* code */ }",
+      "for(int i=0; i<0; i++) { }",
+      "do { } while(0);",
+      "if(1) { }"
+    ]
+  },
+  {
+    "q": "What is the purpose of the break statement in loops?",
+    "o": [
+      "To exit the loop immediately",
+      "To repeat the current iteration",
+      "To jump to the loop's beginning",
+      "To skip the next iteration"
+    ]
+  },
+  {
+    "q": "How many times will this loop execute?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for (i = 1; i <= 4; i++) {\n        if (i == 3) continue;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "3 times",
+      "4 times",
+      "2 times",
+      "5 times"
+    ]
+  },
+  {
+    "q": "In which scenario would you prefer using nested if statements?",
+    "o": [
+      "When you need to check multiple related conditions hierarchically",
+      "When you want to skip iterations in a loop",
+      "When switching between many values",
+      "When you want to repeat code a fixed number of times"
+    ]
+  },
+  {
+    "q": "Which statement about switch-case is FALSE?",
+    "o": [
+      "It allows checking for only integer or character values.",
+      "It is useful for replacing long if-else-if ladders with constants.",
+      "Each case must be terminated with a semicolon.",
+      "It can have a default case."
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 2, b = 3;\n    if (a != b)\n        printf(\"Not equal\\n\");\n    else\n        printf(\"Equal\\n\");\n    return 0;\n}",
+    "o": [
+      "Not equal",
+      "Equal",
+      "No output",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid nested if structure in C?",
+    "o": [
+      "if (x > 0) { if (x < 10) { printf(\"Valid range\"); } }",
+      "if x > 0: if x < 10: print(\"Valid\")",
+      "if (x > 0) then if (x < 10) printf(\"Valid range\");",
+      "if ((x > 0) && (x < 10)) printf(\"Valid\"); else"
+    ]
+  },
+  {
+    "q": "What will this do?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    switch(x) {\n        case 1: printf(\"One\\n\");\n        case 5: printf(\"Five\\n\");\n        case 10: printf(\"Ten\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Five\nTen",
+      "Five",
+      "One",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which loop executes its condition check after executing the loop body?",
+    "o": [
+      "do-while",
+      "while",
+      "for",
+      "None of the above"
+    ]
+  },
+  {
+    "q": "Which keyword allows skipping the rest of the loop body and starting the next iteration?",
+    "o": [
+      "continue",
+      "break",
+      "goto",
+      "pass"
+    ]
+  },
+  {
+    "q": "What does the following program output?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for (i = 0; i < 4; i++) {\n        if (i == 2) break;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "0 1",
+      "0 1 2 3",
+      "1 2",
+      "2 3"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the goto statement?",
+    "o": [
+      "It transfers control to a labeled statement.",
+      "It breaks out of a loop only.",
+      "It skips a case in a switch.",
+      "It executes a function from anywhere."
+    ]
+  },
+  {
+    "q": "How many times will the following loop run?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 1;\n    while (i < 4) {\n        printf(\"%d \", i);\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "3 times",
+      "4 times",
+      "2 times",
+      "Infinite"
+    ]
+  },
+  {
+    "q": "When would you use a switch instead of if-else?",
+    "o": [
+      "When comparing a variable against constant integral values",
+      "When checking ranges of values",
+      "When dealing with floating point comparisons",
+      "When calling functions conditionally"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the break statement in a switch-case?",
+    "o": [
+      "It exits the switch block immediately.",
+      "It skips the current case.",
+      "It evaluates the next condition.",
+      "It resets the value of the switch variable."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 0;\n    if (x)\n        printf(\"True\\n\");\n    else\n        printf(\"False\\n\");\n    return 0;\n}",
+    "o": [
+      "False",
+      "True",
+      "0",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the if-else ladder in C?",
+    "o": [
+      "It allows checking multiple conditions one after another.",
+      "It is limited to only two conditions.",
+      "It requires a loop to function.",
+      "It replaces the need for break statements."
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 1;\n    switch(a) {\n        case 0: printf(\"Zero\\n\"); break;\n        case 1: printf(\"One\\n\");\n        case 2: printf(\"Two\\n\"); break;\n        default: printf(\"Default\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "One\nTwo",
+      "One",
+      "One\nDefault",
+      "Zero"
+    ]
+  },
+  {
+    "q": "Which loop is best suited for executing a block of code at least once regardless of the condition?",
+    "o": [
+      "do-while",
+      "for",
+      "while",
+      "goto"
+    ]
+  },
+  {
+    "q": "What is the output of the following for loop?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for (i = 3; i > 0; i--)\n        printf(\"%d \", i);\n    return 0;\n}",
+    "o": [
+      "3 2 1",
+      "1 2 3",
+      "0 1 2 3",
+      "2 1 0"
+    ]
+  },
+  {
+    "q": "Which of the following statements about the continue keyword is correct?",
+    "o": [
+      "It skips the remaining loop code and proceeds with the next iteration.",
+      "It exits the loop immediately.",
+      "It restarts the loop completely.",
+      "It transfers control to another function."
+    ]
+  },
+  {
+    "q": "What is the result of executing the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 1;\n    label:\n    printf(\"%d \", x);\n    x++;\n    if (x <= 2) goto label;\n    return 0;\n}",
+    "o": [
+      "1 2",
+      "1 1",
+      "2 1",
+      "0 1"
+    ]
+  },
+  {
+    "q": "When is the default case in a switch statement executed?",
+    "o": [
+      "When no case matches the expression value",
+      "When the first case fails",
+      "Always, regardless of cases",
+      "Only when the variable is negative"
+    ]
+  },
+  {
+    "q": "How many times does this while loop execute?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    while (i < 2) {\n        printf(\"Loop \");\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "2 times",
+      "1 time",
+      "3 times",
+      "Infinite"
+    ]
+  },
+  {
+    "q": "Which of these control structures causes a jump to a labeled statement?",
+    "o": [
+      "goto",
+      "break",
+      "continue",
+      "return"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int num = 4;\n    if (num % 2 == 0 && num > 0)\n        printf(\"Even and positive\\n\");\n    return 0;\n}",
+    "o": [
+      "Even and positive",
+      "Even",
+      "Positive",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax for a switch statement in C?",
+    "o": [
+      "switch(variable) { case 1: /* code */ break; }",
+      "switch variable { case 1: /* code */ }",
+      "switch(variable): case 1 -> /* code */",
+      "switch(variable) then case 1: /* code */"
+    ]
+  },
+  {
+    "q": "How many times will this loop run?",
+    "c": "#include <stdio.h>\nint main() {\n    int count = 0;\n    do {\n        printf(\"Run \");\n        count++;\n    } while (count < 2);\n    return 0;\n}",
+    "o": [
+      "2 times",
+      "1 time",
+      "Infinite",
+      "0 times"
+    ]
+  },
+  {
+    "q": "Which keyword is used to stop the current iteration and jump to the next in loops?",
+    "o": [
+      "continue",
+      "break",
+      "goto",
+      "end"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    if (x < 3)\n        printf(\"Low\\n\");\n    else if (x < 10)\n        printf(\"Medium\\n\");\n    else\n        printf(\"High\\n\");\n    return 0;\n}",
+    "o": [
+      "Medium",
+      "Low",
+      "High",
+      "No output"
+    ]
+  },
+  {
+    "q": "What is the output of the following loop?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 1;\n    while (i <= 3) {\n        if (i == 2) {\n            i++;\n            continue;\n        }\n        printf(\"%d \", i);\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "1 3",
+      "1 2 3",
+      "2 3",
+      "1 2"
+    ]
+  },
+  {
+    "q": "Which of these control structures is best when the number of iterations is known?",
+    "o": [
+      "for loop",
+      "while loop",
+      "do-while loop",
+      "goto"
+    ]
+  },
+  {
+    "q": "What happens when break is executed inside a nested loop?",
+    "o": [
+      "It exits the innermost loop only",
+      "It exits all enclosing loops",
+      "It skips the next iteration",
+      "It ends the program"
+    ]
+  },
+  {
+    "q": "What is the output of this C code?",
+    "c": "#include <stdio.h>\nint main() {\n    int n = 2;\n    switch(n + 1) {\n        case 2: printf(\"Two\\n\"); break;\n        case 3: printf(\"Three\\n\"); break;\n        default: printf(\"Other\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Three",
+      "Two",
+      "Other",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following is TRUE about using goto in C?",
+    "o": [
+      "It can jump to any labeled statement in the same function.",
+      "It can jump to a label in another function.",
+      "It is required to exit all loops.",
+      "It automatically creates an infinite loop."
+    ]
+  },
+  {
+    "q": "What will the following C code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 10;\n    if (a > 5)\n        if (a < 15)\n            printf(\"Within range\\n\");\n    return 0;\n}",
+    "o": [
+      "Within range",
+      "Out of range",
+      "Error",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following is true about switch-case in C?",
+    "o": [
+      "Each case must end with a break to avoid fall-through (unless intentional).",
+      "Default must always come first.",
+      "Case labels can be variables.",
+      "Switch cannot be used with integers."
+    ]
+  },
+  {
+    "q": "How many times will this loop run?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for (i = 0; i < 5; i++) {\n        if (i == 3) break;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "3 times",
+      "4 times",
+      "5 times",
+      "0 times"
+    ]
+  },
+  {
+    "q": "Which loop is guaranteed to execute at least once?",
+    "o": [
+      "do-while",
+      "while",
+      "for",
+      "All of the above"
+    ]
+  },
+  {
+    "q": "What is the purpose of the break statement in loops?",
+    "o": [
+      "To exit the loop immediately",
+      "To pause the loop execution temporarily",
+      "To skip the current iteration",
+      "To go back to the start of the loop"
+    ]
+  },
+  {
+    "q": "What does the following code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    while (i < 3) {\n        printf(\"%d \", i);\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "0 1 2",
+      "1 2 3",
+      "0 1 2 3",
+      "1 2"
+    ]
+  },
+  {
+    "q": "What is wrong with this C switch-case snippet?\n\nswitch(x) {\n  case 1:\n    printf(\"One\");\n  case 2:\n    printf(\"Two\");\n}",
+    "o": [
+      "Missing break statements will cause fall-through.",
+      "Case labels must be strings.",
+      "Switch variable must be a float.",
+      "Default case is mandatory."
+    ]
+  },
+  {
+    "q": "Choose the correct output of this code.",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 3;\n    if (x > 5)\n        printf(\"A\\n\");\n    else\n        if (x > 2)\n            printf(\"B\\n\");\n        else\n            printf(\"C\\n\");\n    return 0;\n}",
+    "o": [
+      "B",
+      "A",
+      "C",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which keyword transfers control unconditionally to a labeled statement?",
+    "o": [
+      "goto",
+      "continue",
+      "return",
+      "switch"
+    ]
+  },
+  {
+    "q": "What is the result of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    for (;;) {\n        printf(\"Loop\\n\");\n        if (++i == 2) break;\n    }\n    return 0;\n}",
+    "o": [
+      "Loop\nLoop",
+      "Loop\nLoop\nLoop",
+      "Infinite loop",
+      "Error"
+    ]
+  },
+  {
+    "q": "What does this C code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 7;\n    if (x % 2)\n        printf(\"Odd\\n\");\n    else\n        printf(\"Even\\n\");\n    return 0;\n}",
+    "o": [
+      "Odd",
+      "Even",
+      "7",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the correct behavior of this switch-case block?",
+    "c": "switch(val) {\n  case 1:\n    printf(\"One\\n\");\n  default:\n    printf(\"Default\\n\");\n}",
+    "o": [
+      "It prints both statements if val is 1.",
+      "It will not compile without break.",
+      "Only default will execute for any value.",
+      "It requires a semicolon after switch."
+    ]
+  },
+  {
+    "q": "What is the output of this loop?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    while (i < 5) {\n        if (i == 3) break;\n        printf(\"%d \", i);\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "0 1 2",
+      "0 1 2 3 4",
+      "0 1 2 3",
+      "1 2 3"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the use of continue in a loop?",
+    "o": [
+      "Skips the rest of the loop body for current iteration",
+      "Ends the entire loop execution",
+      "Skips all iterations",
+      "Restarts the program"
+    ]
+  },
+  {
+    "q": "How many times will this do-while loop run?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 10;\n    do {\n        printf(\"Hello\\n\");\n    } while (i < 5);\n    return 0;\n}",
+    "o": [
+      "1 time",
+      "0 times",
+      "Infinite",
+      "5 times"
+    ]
+  },
+  {
+    "q": "Which of the following conditions will enter the else block?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5;\n    if (a > 10)\n        printf(\"Greater\\n\");\n    else\n        printf(\"Smaller or equal\\n\");\n    return 0;\n}",
+    "o": [
+      "When a is 5",
+      "When a is 15",
+      "When a is 11",
+      "Never"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid use of goto in C?",
+    "o": [
+      "Jumping to a label defined earlier in the same function",
+      "Jumping into another function",
+      "Jumping to a variable name",
+      "Jumping outside main()"
+    ]
+  },
+  {
+    "q": "Which output is expected from the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for (i = 0; i < 2; i++) {\n        printf(\"Loop \");\n        if (i == 1) continue;\n    }\n    return 0;\n}",
+    "o": [
+      "Loop Loop",
+      "Loop",
+      "Loop Loop Loop",
+      "No output"
+    ]
+  },
+  {
+    "q": "What is the correct structure of a nested if statement in C?",
+    "o": [
+      "if (condition1) { if (condition2) { /* code */ } }",
+      "if condition1 then if condition2 then { }",
+      "if (condition1) then if (condition2) { }",
+      "if (condition1, condition2) { }"
+    ]
+  },
+  {
+    "q": "What will be printed by this switch-case?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 2;\n    switch (x) {\n        case 1:\n        case 2:\n            printf(\"Matched\\n\"); break;\n        default:\n            printf(\"Not matched\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Matched",
+      "Not matched",
+      "Error",
+      "Matched\nNot matched"
+    ]
+  },
+  {
+    "q": "What will be the output of this C code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 10;\n    if (a == 10)\n        printf(\"Ten\\n\");\n    else\n        printf(\"Not Ten\\n\");\n    return 0;\n}",
+    "o": [
+      "Ten",
+      "Not Ten",
+      "10",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT required in a for loop declaration?",
+    "o": [
+      "The update expression",
+      "The initialization expression",
+      "The condition expression",
+      "None of the above"
+    ]
+  },
+  {
+    "q": "How many times will the loop run?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 1;\n    do {\n        printf(\"%d \", i);\n        i++;\n    } while (i < 4);\n    return 0;\n}",
+    "o": [
+      "3 times",
+      "4 times",
+      "2 times",
+      "0 times"
+    ]
+  },
+  {
+    "q": "Which of the following best describes nested if statements?",
+    "o": [
+      "An if block inside another if block",
+      "An if block repeated multiple times",
+      "An if block inside a loop",
+      "A case block inside an if"
+    ]
+  },
+  {
+    "q": "What will be printed?",
+    "c": "#include <stdio.h>\nint main() {\n    int val = 5;\n    switch(val) {\n        case 1:\n        case 5:\n            printf(\"Matched\\n\");\n            break;\n        default:\n            printf(\"Default\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Matched",
+      "Default",
+      "MatchedDefault",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which statement will skip the remaining code in the current loop iteration?",
+    "o": [
+      "continue",
+      "break",
+      "exit",
+      "return"
+    ]
+  },
+  {
+    "q": "Which of the following loops always checks the condition after executing the loop body?",
+    "o": [
+      "do-while",
+      "while",
+      "for",
+      "None of the above"
+    ]
+  },
+  {
+    "q": "What happens when you forget to include break in a switch-case?",
+    "o": [
+      "It causes fall-through to the next case(s)",
+      "It causes a compilation error",
+      "The default case runs immediately",
+      "The switch statement stops"
+    ]
+  },
+  {
+    "q": "What does this C loop output?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for (i = 0; i < 3; i++) {\n        if (i == 1)\n            continue;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "0 2",
+      "0 1 2",
+      "1 2",
+      "0 1"
+    ]
+  },
+  {
+    "q": "What is the use of the goto statement in C?",
+    "o": [
+      "To jump to a labeled line within the same function",
+      "To exit the program immediately",
+      "To return from a function",
+      "To restart a loop"
+    ]
+  },
+  {
+    "q": "What does the following code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 0;\n    if (x)\n        printf(\"True\\n\");\n    else\n        printf(\"False\\n\");\n    return 0;\n}",
+    "o": [
+      "False",
+      "True",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the correct use of a switch-case statement?",
+    "o": [
+      "Each case value must be a constant expression.",
+      "Case labels can be variables.",
+      "Default case must be at the top.",
+      "Only one case is allowed per switch."
+    ]
+  },
+  {
+    "q": "Which loop is most suitable when the number of iterations is known beforehand?",
+    "o": [
+      "for loop",
+      "while loop",
+      "do-while loop",
+      "goto loop"
+    ]
+  },
+  {
+    "q": "What will this code snippet output?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 3;\n    while (i--)\n        printf(\"%d \", i);\n    return 0;\n}",
+    "o": [
+      "2 1 0",
+      "3 2 1",
+      "2 1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the do-while loop in C?",
+    "o": [
+      "The loop body is executed at least once.",
+      "It never runs if the condition is false.",
+      "It is the same as while loop.",
+      "It can’t have break statements."
+    ]
+  },
+  {
+    "q": "Which of the following scenarios best suits a nested if statement?",
+    "o": [
+      "When multiple conditions depend on each other",
+      "When only one condition needs to be checked",
+      "When switch-case is unavailable",
+      "When you want to avoid using else"
+    ]
+  },
+  {
+    "q": "What is the result of this loop?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    for (; i < 4; i++) {\n        if (i == 2)\n            break;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "0 1",
+      "0 1 2",
+      "0 1 2 3",
+      "1 2"
+    ]
+  },
+  {
+    "q": "What does the 'continue' statement do in a loop?",
+    "o": [
+      "Skips the remaining statements and continues with the next iteration",
+      "Exits the loop",
+      "Skips the next loop entirely",
+      "Restarts the entire loop"
+    ]
+  },
+  {
+    "q": "Which is a valid label for the goto statement in C?",
+    "o": [
+      "start:",
+      "goto1:",
+      "123label:",
+      "-label:"
+    ]
+  },
+  {
+    "q": "What will this C code display?",
+    "c": "#include <stdio.h>\nint main() {\n    int num = 4;\n    switch (num) {\n        case 2:\n            printf(\"Two\\n\");\n            break;\n        case 4:\n            printf(\"Four\\n\");\n            break;\n        default:\n            printf(\"Default\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Four",
+      "Two",
+      "Default",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 2, b = 3;\n    if (a > b)\n        printf(\"A\\n\");\n    else if (a == b)\n        printf(\"Equal\\n\");\n    else\n        printf(\"B\\n\");\n    return 0;\n}",
+    "o": [
+      "B",
+      "A",
+      "Equal",
+      "2"
+    ]
+  },
+  {
+    "q": "Which of the following is true about switch-case in C?",
+    "o": [
+      "It can only compare integer or character expressions.",
+      "It can compare floating-point values.",
+      "It supports complex conditionals like > or <.",
+      "It can be used with strings natively."
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 1;\n    while (i <= 3) {\n        printf(\"%d \", i);\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "1 2 3",
+      "0 1 2",
+      "1 2 3 4",
+      "0 1 2 3"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a for loop?",
+    "o": [
+      "A loop that includes initialization, condition, and increment/decrement in a single line",
+      "A loop that only executes once",
+      "A function used to replace while loops",
+      "An infinite loop with an exit condition inside"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 1;\n    do {\n        printf(\"Hello \");\n    } while (x == 0);\n    return 0;\n}",
+    "o": [
+      "Hello",
+      "No output",
+      "Error",
+      "Infinite loop"
+    ]
+  },
+  {
+    "q": "Which keyword exits only the current loop in C?",
+    "o": [
+      "break",
+      "continue",
+      "goto",
+      "return"
+    ]
+  },
+  {
+    "q": "What does this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for (i = 1; i <= 5; i++) {\n        if (i % 2 == 0)\n            continue;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "1 3 5",
+      "2 4",
+      "1 2 3 4 5",
+      "1 2 4"
+    ]
+  },
+  {
+    "q": "Which of the following statements about nested if is correct?",
+    "o": [
+      "An if statement inside another if statement is called nested if.",
+      "Nested if must always have an else.",
+      "Nested if cannot be more than one level deep.",
+      "Nested if is illegal in C."
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    switch (x) {\n        case 5:\n        case 10:\n            printf(\"Matched\\n\");\n            break;\n        case 15:\n            printf(\"Fifteen\\n\");\n            break;\n    }\n    return 0;\n}",
+    "o": [
+      "Matched",
+      "Fifteen",
+      "10",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which label syntax is valid for the goto statement in C?",
+    "o": [
+      "myLabel:",
+      "goto.myLabel:",
+      "label()",
+      "label;"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 4;\n    if (x % 2 == 0 && x < 10)\n        printf(\"Valid\\n\");\n    else\n        printf(\"Invalid\\n\");\n    return 0;\n}",
+    "o": [
+      "Valid",
+      "Invalid",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which statement is true about the else-if ladder in C?",
+    "o": [
+      "It allows checking multiple conditions sequentially.",
+      "It must end with a default clause.",
+      "Only one else-if is allowed.",
+      "It cannot be used with nested ifs."
+    ]
+  },
+  {
+    "q": "What does this program print?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 1;\n    while (i <= 2) {\n        int j = 1;\n        while (j <= 2) {\n            printf(\"%d,%d \", i, j);\n            j++;\n        }\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "1,1 1,2 2,1 2,2",
+      "1,1 2,2",
+      "1,2 2,1",
+      "1,1 1,2 2,2"
+    ]
+  },
+  {
+    "q": "Which of the following is not allowed in a switch-case statement?",
+    "o": [
+      "Using floating-point values in case labels",
+      "Using break inside a case",
+      "Using default case",
+      "Using multiple cases"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int n = 3;\n    for (int i = 0; i < n; i++) {\n        if (i == 1)\n            goto skip;\n        printf(\"%d \", i);\n        skip:;\n    }\n    return 0;\n}",
+    "o": [
+      "0 2",
+      "0 1 2",
+      "1 2",
+      "0 1"
+    ]
+  },
+  {
+    "q": "Which keyword causes the loop to terminate completely in C?",
+    "o": [
+      "break",
+      "continue",
+      "goto",
+      "stop"
+    ]
+  },
+  {
+    "q": "How many times will the loop run?",
+    "c": "#include <stdio.h>\nint main() {\n    int count = 0;\n    while (count < 3) {\n        printf(\"Loop\\n\");\n        count++;\n    }\n    return 0;\n}",
+    "o": [
+      "3 times",
+      "2 times",
+      "4 times",
+      "Infinite"
+    ]
+  },
+  {
+    "q": "What is the output of the following for loop?",
+    "c": "#include <stdio.h>\nint main() {\n    for (int i = 0; i < 5; i++) {\n        if (i == 3)\n            break;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "0 1 2",
+      "0 1 2 3",
+      "1 2 3",
+      "0 1"
+    ]
+  },
+  {
+    "q": "Which loop is guaranteed to execute at least once?",
+    "o": [
+      "do-while",
+      "for",
+      "while",
+      "None"
+    ]
+  },
+  {
+    "q": "When is the condition checked in a while loop?",
+    "o": [
+      "Before the loop body executes",
+      "After the loop body executes",
+      "Only on the second iteration",
+      "After a break statement"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 1;\n    if (a > 0)\n        if (a < 5)\n            printf(\"Yes\\n\");\n        else\n            printf(\"No\\n\");\n    return 0;\n}",
+    "o": [
+      "Yes",
+      "No",
+      "Error",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the break statement?",
+    "o": [
+      "It terminates the nearest enclosing loop or switch.",
+      "It skips the current iteration and moves to the next.",
+      "It exits the entire program.",
+      "It jumps to a labeled statement."
+    ]
+  },
+  {
+    "q": "How many times will this loop run?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 5;\n    do {\n        printf(\"%d \", i);\n        i++;\n    } while (i < 5);\n    return 0;\n}",
+    "o": [
+      "1 time",
+      "0 times",
+      "Infinite times",
+      "5 times"
+    ]
+  },
+  {
+    "q": "Which of these is a correct reason to use a switch instead of if-else?",
+    "o": [
+      "When comparing a variable against many constant values",
+      "When using complex logical expressions",
+      "When values are floating-point",
+      "When the range of values is unknown"
+    ]
+  },
+  {
+    "q": "What is the output of this for loop?",
+    "c": "#include <stdio.h>\nint main() {\n    for (int i = 0; i < 6; i += 2)\n        printf(\"%d \", i);\n    return 0;\n}",
+    "o": [
+      "0 2 4",
+      "1 2 3",
+      "0 1 2",
+      "0 2 4 6"
+    ]
+  },
+  {
+    "q": "Which of the following correctly represents an infinite while loop?",
+    "o": [
+      "while(1) { }",
+      "while(0) { }",
+      "while(i < -1) { }",
+      "while(false) { }"
+    ]
+  },
+  {
+    "q": "What happens if the condition in a while loop is initially false?",
+    "o": [
+      "The loop body is skipped entirely.",
+      "The loop runs once then stops.",
+      "The loop throws an error.",
+      "The condition is ignored."
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    while (i < 3) {\n        printf(\"Hi \");\n        if (i == 1) break;\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "Hi Hi",
+      "Hi Hi Hi",
+      "Hi",
+      "Infinite loop"
+    ]
+  },
+  {
+    "q": "Which of these is a correct label for goto?",
+    "o": [
+      "end_loop:",
+      "goto:end",
+      "label;",
+      "goto(end)"
+    ]
+  },
+  {
+    "q": "What is the primary use of continue in a loop?",
+    "o": [
+      "To skip current iteration and go to the next",
+      "To exit the loop entirely",
+      "To jump to a label",
+      "To end the program"
+    ]
+  },
+  {
+    "q": "What will this C code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 3;\n    if (a < 5)\n        printf(\"Low\\n\");\n    if (a > 1)\n        printf(\"High\\n\");\n    return 0;\n}",
+    "o": [
+      "Low\nHigh",
+      "High",
+      "Low",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the purpose of 'continue' in loops?",
+    "o": [
+      "Skips the remaining code in current iteration and moves to next iteration",
+      "Terminates the entire loop",
+      "Returns a value from a function",
+      "Restarts the entire loop from beginning"
+    ]
+  },
+  {
+    "q": "What does this `switch` statement print?",
+    "c": "#include <stdio.h>\nint main() {\n    int val = 2;\n    switch (val) {\n        case 1:\n        case 2:\n        case 3:\n            printf(\"Matched\\n\");\n            break;\n        default:\n            printf(\"Default\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Matched",
+      "Default",
+      "Matched\nDefault",
+      "2"
+    ]
+  },
+  {
+    "q": "Which loop is most suitable when the number of iterations is known?",
+    "o": [
+      "for loop",
+      "while loop",
+      "do-while loop",
+      "goto loop"
+    ]
+  },
+  {
+    "q": "How many times is 'Hello' printed?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    while (i < 4) {\n        if (i == 2) {\n            i++;\n            continue;\n        }\n        printf(\"Hello \");\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "3",
+      "4",
+      "2",
+      "Infinite"
+    ]
+  },
+  {
+    "q": "Which of the following is true about nested loops?",
+    "o": [
+      "A loop inside another loop is allowed and called nested loop.",
+      "Only one level of nesting is allowed.",
+      "Nested loops must be of different types.",
+      "Nested loops are not allowed in C."
+    ]
+  },
+  {
+    "q": "What does this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 10;\n    do {\n        printf(\"Run\\n\");\n        i--;\n    } while (i >= 10);\n    return 0;\n}",
+    "o": [
+      "Run",
+      "Run Run",
+      "No output",
+      "Infinite loop"
+    ]
+  },
+  {
+    "q": "When is the expression in a `do-while` loop evaluated?",
+    "o": [
+      "After executing the loop body",
+      "Before the loop starts",
+      "Before and after every iteration",
+      "Only if a counter is used"
+    ]
+  },
+  {
+    "q": "Which of these is **not** valid in a `switch-case` block?",
+    "o": [
+      "case 1.5:",
+      "case 10:",
+      "case 'A':",
+      "case 0:"
+    ]
+  },
+  {
+    "q": "What will the output be?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 7;\n    if (a > 5)\n        if (a < 10)\n            printf(\"Between\\n\");\n        else\n            printf(\"Too high\\n\");\n    return 0;\n}",
+    "o": [
+      "Between",
+      "Too high",
+      "No output",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    if (x > 5)\n        printf(\"Greater\\n\");\n    else\n        printf(\"Smaller\\n\");\n    return 0;\n}",
+    "o": [
+      "Greater",
+      "Smaller",
+      "Error",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which of the following statements about 'goto' is true?",
+    "o": [
+      "It allows jumping to a labeled part of the program.",
+      "It can replace all types of loops.",
+      "It is always recommended in modern C code.",
+      "It works only inside switch statements."
+    ]
+  },
+  {
+    "q": "What will this loop output?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    for (; i < 3; ) {\n        printf(\"%d \", i);\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "0 1 2",
+      "1 2 3",
+      "0 1 2 3",
+      "0 2"
+    ]
+  },
+  {
+    "q": "What happens if you omit the `break` statement in a switch-case block?",
+    "o": [
+      "The execution continues to the next case.",
+      "The program will crash.",
+      "Only the default case is executed.",
+      "The switch statement ends automatically."
+    ]
+  },
+  {
+    "q": "Which of these loops will definitely execute at least once?",
+    "o": [
+      "do-while loop",
+      "while loop",
+      "for loop",
+      "goto loop"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    while (i < 3) {\n        printf(\"%d \", i);\n        i++;\n        if (i == 2) break;\n    }\n    return 0;\n}",
+    "o": [
+      "0 1",
+      "0 1 2",
+      "0 1 2 3",
+      "1 2"
+    ]
+  },
+  {
+    "q": "What is the purpose of a default case in switch statements?",
+    "o": [
+      "To handle unmatched case values.",
+      "To execute the first case by default.",
+      "To define a constant value.",
+      "To break the loop."
+    ]
+  },
+  {
+    "q": "How many times does this loop execute?",
+    "c": "#include <stdio.h>\nint main() {\n    for (int i = 1; i <= 4; i++) {\n        if (i == 3)\n            continue;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "3 times",
+      "4 times",
+      "2 times",
+      "Infinite"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int num = 2;\n    switch(num) {\n        case 1:\n            printf(\"One\");\n        case 2:\n            printf(\"Two\");\n        default:\n            printf(\"Default\");\n    }\n    return 0;\n}",
+    "o": [
+      "TwoDefault",
+      "OneTwoDefault",
+      "Two",
+      "Default"
+    ]
+  },
+  {
+    "q": "What is the correct structure of a 'for' loop in C?",
+    "o": [
+      "for (initialization; condition; increment) { /* body */ }",
+      "for (condition; increment; initialization) { }",
+      "for (initialization increment condition) { }",
+      "for (start; check; step) { }"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 4;\n    if (x > 2 && x < 5)\n        printf(\"In Range\\n\");\n    else\n        printf(\"Out of Range\\n\");\n    return 0;\n}",
+    "o": [
+      "In Range",
+      "Out of Range",
+      "Error",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which loop is best when the termination condition must be checked after each iteration?",
+    "o": [
+      "while loop",
+      "for loop",
+      "do-while loop",
+      "goto"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for (i = 1; i <= 5; i++) {\n        if (i == 4)\n            break;\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "1 2 3",
+      "1 2 3 4",
+      "1 2",
+      "2 3"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to skip the current iteration of a loop?",
+    "o": [
+      "continue",
+      "break",
+      "goto",
+      "pass"
+    ]
+  },
+  {
+    "q": "How many times will 'Done' be printed?",
+    "c": "#include <stdio.h>\nint main() {\n    int count = 0;\n    while (count < 3) {\n        printf(\"Done\\n\");\n        count++;\n    }\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "q": "What is required in every switch-case statement to avoid falling through?",
+    "o": [
+      "break",
+      "goto",
+      "continue",
+      "return"
+    ]
+  },
+  {
+    "q": "What does this `do-while` loop do?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    do {\n        printf(\"Loop\\n\");\n    } while (x < 5);\n    return 0;\n}",
+    "o": [
+      "Prints 'Loop' once",
+      "Prints 'Loop' infinitely",
+      "Does not print anything",
+      "Prints 'Loop' five times"
+    ]
+  },
+  {
+    "q": "Which of the following is true about nested `if` statements in C?",
+    "o": [
+      "They are allowed and can be any depth.",
+      "They are not allowed beyond two levels.",
+      "Only one nested `if` is allowed.",
+      "Nested `if` must include `else`."
+    ]
+  },
+  {
+    "q": "How does a `switch` statement determine which block to execute?",
+    "o": [
+      "By matching the value with a `case` label",
+      "By evaluating a boolean condition",
+      "By comparing variables to strings",
+      "By looping through all conditions"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    for (;;) {\n        if (i == 3) break;\n        printf(\"%d \", i);\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "0 1 2",
+      "1 2 3",
+      "0 1 2 3",
+      "Infinite loop"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid use of the if-else statement in C?",
+    "o": [
+      "To execute one block if a condition is true, another if it is false",
+      "To declare constants at runtime",
+      "To create infinite loops",
+      "To perform arithmetic operations"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 8;\n    if (a % 2 == 0)\n        printf(\"Even\\n\");\n    else\n        printf(\"Odd\\n\");\n    return 0;\n}",
+    "o": [
+      "Even",
+      "Odd",
+      "0",
+      "None"
+    ]
+  },
+  {
+    "q": "What does the `break` statement do in a loop?",
+    "o": [
+      "Exits the loop immediately",
+      "Skips the next iteration",
+      "Repeats the loop from the beginning",
+      "Stops the program"
+    ]
+  },
+  {
+    "q": "Which of these best describes a `do-while` loop?",
+    "o": [
+      "Executes the loop body at least once before checking the condition",
+      "Checks the condition first before execution",
+      "Can only be used with integers",
+      "Does not support break statements"
+    ]
+  },
+  {
+    "q": "What will the following program output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 1;\n    switch(x) {\n        case 1:\n            printf(\"One\\n\");\n        case 2:\n            printf(\"Two\\n\");\n        case 3:\n            printf(\"Three\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "One\nTwo\nThree",
+      "One",
+      "One\nTwo",
+      "Two\nThree"
+    ]
+  },
+  {
+    "q": "Which control structure is ideal for checking multiple discrete values of a variable?",
+    "o": [
+      "switch-case",
+      "if-else",
+      "while loop",
+      "goto"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 1;\n    while (i <= 5) {\n        if (i == 3)\n            goto skip;\n        printf(\"%d \", i);\n        i++;\n    }\nskip:\n    return 0;\n}",
+    "o": [
+      "1 2",
+      "1 2 3",
+      "1 2 3 4 5",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following is **true** about the `for` loop in C?",
+    "o": [
+      "It has initialization, condition, and increment sections",
+      "It must increment by 1",
+      "It can only count forward",
+      "It doesn’t support nested loops"
+    ]
+  },
+  {
+    "q": "How many times will the loop execute?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    do {\n        printf(\"Run\\n\");\n        i++;\n    } while(i < 3);\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "4",
+      "0"
+    ]
+  },
+  {
+    "q": "What is the output of the code below?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    if (x < 10)\n        if (x > 0)\n            printf(\"Positive\\n\");\n        else\n            printf(\"Zero or Negative\\n\");\n    return 0;\n}",
+    "o": [
+      "Positive",
+      "Zero or Negative",
+      "Error",
+      "No output"
+    ]
+  },
+  {
+    "q": "What is the output of this C code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 7;\n    if (a < 10)\n        if (a > 5)\n            printf(\"OK\\n\");\n        else\n            printf(\"Not OK\\n\");\n    return 0;\n}",
+    "o": [
+      "OK",
+      "Not OK",
+      "Nothing",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which control structure allows skipping the rest of the loop body and proceeding with the next iteration?",
+    "o": [
+      "continue",
+      "break",
+      "return",
+      "goto"
+    ]
+  },
+  {
+    "q": "How many times will the following loop run?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for (i = 5; i > 0; i--)\n        printf(\"%d \", i);\n    return 0;\n}",
+    "o": [
+      "5",
+      "4",
+      "6",
+      "0"
+    ]
+  },
+  {
+    "q": "What will be the output of this switch-case block?",
+    "c": "#include <stdio.h>\nint main() {\n    int n = 3;\n    switch(n) {\n        case 1:\n            printf(\"One\\n\"); break;\n        case 2:\n            printf(\"Two\\n\"); break;\n        default:\n            printf(\"Other\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Other",
+      "Three",
+      "No output",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the main drawback of using 'goto' in structured programming?",
+    "o": [
+      "It makes code harder to read and maintain",
+      "It increases execution speed",
+      "It is mandatory in loops",
+      "It simplifies debugging"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    while (i++ < 2)\n        printf(\"%d \", i);\n    return 0;\n}",
+    "o": [
+      "1 2",
+      "0 1",
+      "2 3",
+      "0 1 2"
+    ]
+  },
+  {
+    "q": "Which statement is true about the 'default' case in a switch block?",
+    "o": [
+      "It is optional but executes if no other case matches",
+      "It must be the first case",
+      "It replaces the need for 'if-else'",
+      "It handles string input"
+    ]
+  },
+  {
+    "q": "What is the output of this loop?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 1;\n    do {\n        if (i == 2)\n            break;\n        printf(\"%d \", i);\n        i++;\n    } while(i <= 3);\n    return 0;\n}",
+    "o": [
+      "1",
+      "1 2",
+      "1 2 3",
+      "2"
+    ]
+  },
+  {
+    "q": "Which of these correctly represents an infinite loop in C?",
+    "o": [
+      "while(1) {}",
+      "for(int i = 0; i < 0; i++) {}",
+      "do {} while(0);",
+      "switch(1) {}"
+    ]
+  },
+  {
+    "q": "What is the output of the following nested if structure?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    if (x > 0)\n        if (x < 10)\n            printf(\"Single Digit Positive\\n\");\n    return 0;\n}",
+    "o": [
+      "Single Digit Positive",
+      "No output",
+      "Negative",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 0;\n    if (x)\n        printf(\"True\\n\");\n    else\n        printf(\"False\\n\");\n    return 0;\n}",
+    "o": [
+      "False",
+      "True",
+      "0",
+      "No output"
+    ]
+  },
+  {
+    "q": "What happens when a 'break' is used inside a loop?",
+    "o": [
+      "The loop exits immediately",
+      "The current iteration is skipped",
+      "The loop restarts",
+      "The loop variable resets"
+    ]
+  },
+  {
+    "q": "How many times will 'Hello' be printed?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for(i = 2; i < 6; i += 2)\n        printf(\"Hello\\n\");\n    return 0;\n}",
+    "o": [
+      "2",
+      "4",
+      "3",
+      "1"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'default' keyword in a switch statement?",
+    "o": [
+      "To handle all unmatched cases",
+      "To terminate the switch",
+      "To indicate the start of switch",
+      "To return from the main function"
+    ]
+  },
+  {
+    "q": "What does this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 1;\n    while(i <= 3) {\n        printf(\"%d \", i);\n        if (i == 2)\n            break;\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "1 2",
+      "1 2 3",
+      "1 2 2",
+      "2 3"
+    ]
+  },
+  {
+    "q": "Which control structure executes its body before checking the condition?",
+    "o": [
+      "do-while",
+      "while",
+      "for",
+      "if-else"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 2;\n    switch(x + 1) {\n        case 1:\n            printf(\"One\\n\"); break;\n        case 3:\n            printf(\"Three\\n\"); break;\n        default:\n            printf(\"Default\\n\");\n    }\n    return 0;\n}",
+    "o": [
+      "Three",
+      "One",
+      "Default",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of these keywords is not used for loop control in C?",
+    "o": [
+      "exit",
+      "break",
+      "continue",
+      "goto"
+    ]
+  },
+  {
+    "q": "What is the final value of 'i' after this loop ends?",
+    "c": "#include <stdio.h>\nint main() {\n    int i;\n    for(i = 0; i < 3; i++) {}\n    printf(\"%d\", i);\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following correctly represents a nested if-else block?",
+    "o": [
+      "if (x > 0) { if (x < 10) { printf(\"OK\"); } }",
+      "if (x > 0): if (x < 10): print(\"OK\")",
+      "if x > 0 then if x < 10 then print OK",
+      "if (x > 0, x < 10) printf(\"OK\")"
+    ]
+  },
+  {
+    "q": "What is the output of this C code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 4;\n    if (x % 2 == 0 && x < 5)\n        printf(\"Valid\\n\");\n    else\n        printf(\"Invalid\\n\");\n    return 0;\n}",
+    "o": [
+      "Valid",
+      "Invalid",
+      "Error",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which loop will definitely execute at least once?",
+    "o": [
+      "do-while loop",
+      "while loop",
+      "for loop",
+      "switch-case"
+    ]
+  },
+  {
+    "q": "What is the result of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 1;\n    while(i <= 3) {\n        printf(\"%d \", i);\n        i++;\n        if(i == 3) continue;\n        printf(\"*\");\n    }\n    return 0;\n}",
+    "o": [
+      "1 *2 3 ",
+      "1 2 *3 ",
+      "1 *2 *3 ",
+      "1 2 3 *"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct `switch-case` syntax in C?",
+    "o": [
+      "switch(value) { case 1: break; }",
+      "switch(value) -> { case 1: break; }",
+      "switch(value) { case: 1 break; }",
+      "switch(value) case 1: break;"
+    ]
+  },
+  {
+    "q": "What is the effect of the `goto` statement?",
+    "o": [
+      "Transfers control to a labeled statement",
+      "Restarts the main function",
+      "Skips to the next function",
+      "Exits the program"
+    ]
+  },
+  {
+    "q": "How many times will this loop run?",
+    "c": "#include <stdio.h>\nint main() {\n    int count = 0;\n    for (int i = 0; i < 10; i++) {\n        if (i % 2 == 0) continue;\n        count++;\n    }\n    printf(\"%d\", count);\n    return 0;\n}",
+    "o": [
+      "5",
+      "10",
+      "0",
+      "9"
+    ]
+  },
+  {
+    "q": "What is the role of `else if` in a nested conditional?",
+    "o": [
+      "To handle multiple branching conditions",
+      "To restart the if-block",
+      "To exit the program on failure",
+      "To create loops"
+    ]
+  },
+  {
+    "q": "What will be the output?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    do {\n        printf(\"Loop \");\n        i++;\n    } while(i < 2);\n    return 0;\n}",
+    "o": [
+      "Loop Loop ",
+      "Loop ",
+      "No output",
+      "Loop Loop Loop "
+    ]
+  },
+  {
+    "q": "Which statement about `for` loops is TRUE?",
+    "o": [
+      "All three components (init, condition, update) are optional",
+      "It must include all three components",
+      "The loop must increment",
+      "It cannot contain a break"
+    ]
+  },
+  {
+    "q": "What does this nested if-else structure do?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 6;\n    if (x > 0)\n        if (x % 2 == 0)\n            printf(\"Positive Even\\n\");\n        else\n            printf(\"Positive Odd\\n\");\n    return 0;\n}",
+    "o": [
+      "Positive Even",
+      "Positive Odd",
+      "Negative",
+      "No output"
+    ]
+  }
+]

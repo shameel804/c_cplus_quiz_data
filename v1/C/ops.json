@@ -1,0 +1,7052 @@
+[
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 2;\n    printf(\"%d\", a / b);\n    return 0;\n}",
+    "o": [
+      "2",
+      "2.5",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is a relational operator in C?",
+    "o": [
+      ">=",
+      "&&",
+      "&",
+      "+"
+    ]
+  },
+  {
+    "q": "What is the result of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 10, y = 4;\n    printf(\"%d\", x & y);\n    return 0;\n}",
+    "o": [
+      "0",
+      "14",
+      "6",
+      "4"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct order of operator precedence (highest to lowest) in C?",
+    "o": [
+      "Unary > Multiplicative > Additive > Relational",
+      "Relational > Additive > Unary > Multiplicative",
+      "Additive > Unary > Relational > Multiplicative",
+      "Multiplicative > Additive > Relational > Unary"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 3;\n    a += b;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "8",
+      "2",
+      "3",
+      "5"
+    ]
+  },
+  {
+    "q": "Which of the following is a logical operator in C?",
+    "o": [
+      "&&",
+      "&",
+      "==",
+      "~"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 10;\n    float b = 3;\n    printf(\"%f\", a / b);\n    return 0;\n}",
+    "o": [
+      "3.333333",
+      "3",
+      "0",
+      "Compile error"
+    ]
+  },
+  {
+    "q": "Which of the following is the result of the expression `3 + 4 * 2` in C?",
+    "o": [
+      "11",
+      "14",
+      "7",
+      "17"
+    ]
+  },
+  {
+    "q": "Which of the following statements about type casting in C is correct?",
+    "o": [
+      "Casting can be used to convert a float to an int.",
+      "Casting is only allowed between int and char types.",
+      "Casting is not allowed in arithmetic expressions.",
+      "Casting always results in data loss."
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 4, b = 5;\n    printf(\"%d\", a && b);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "4",
+      "5"
+    ]
+  },
+  {
+    "q": "Which operator is used to calculate the remainder in C?",
+    "o": [
+      "%",
+      "/",
+      "//",
+      "&"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 7;\n    printf(\"%d\", a % 3);\n    return 0;\n}",
+    "o": [
+      "1",
+      "2",
+      "0",
+      "3"
+    ]
+  },
+  {
+    "q": "Which of the following operators has the highest precedence in C?",
+    "o": [
+      "*",
+      "+",
+      "==",
+      "&&"
+    ]
+  },
+  {
+    "q": "What will be the result of this expression: `(5 > 3) && (2 < 1)`?",
+    "o": [
+      "0",
+      "1",
+      "2",
+      "true"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 4, b = 2;\n    printf(\"%d\", a >> b);\n    return 0;\n}",
+    "o": [
+      "1",
+      "2",
+      "0",
+      "8"
+    ]
+  },
+  {
+    "q": "Which of the following is used for bitwise OR operation in C?",
+    "o": [
+      "|",
+      "||",
+      "&",
+      "^"
+    ]
+  },
+  {
+    "q": "Which statement about assignment operators is true in C?",
+    "o": [
+      "They can be combined with arithmetic operators like += or -=.",
+      "They must always be used alone.",
+      "They are only used with integers.",
+      "They are equivalent to logical operators."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    float a = 10;\n    int b = 3;\n    float result = a / b;\n    printf(\"%.2f\", result);\n    return 0;\n}",
+    "o": [
+      "3.33",
+      "3.00",
+      "3.00f",
+      "3"
+    ]
+  },
+  {
+    "q": "What will be the value of `x` after this code?\n\n`int x = 5;\nx *= 3 + 2;`",
+    "o": [
+      "25",
+      "15",
+      "30",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of the following conversions happens automatically in C?",
+    "o": [
+      "int to float",
+      "float to int (with rounding)",
+      "char to string",
+      "string to int"
+    ]
+  },
+  {
+    "q": "Which operator is used to check if two values are not equal in C?",
+    "o": [
+      "!=",
+      "==",
+      "><",
+      "=/="
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 8, y = 3;\n    printf(\"%d\", x % y);\n    return 0;\n}",
+    "o": [
+      "2",
+      "1",
+      "0",
+      "3"
+    ]
+  },
+  {
+    "q": "Which of these expressions evaluates to true in C?",
+    "o": [
+      "4 <= 5",
+      "7 = 7",
+      "3 !< 5",
+      "2 >< 1"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 2;\n    int b = 1;\n    printf(\"%d\", a & b);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid use of type casting?",
+    "o": [
+      "(float)5 / 2",
+      "float(5) / 2",
+      "(int -> float)5 / 2",
+      "cast float 5 / 2"
+    ]
+  },
+  {
+    "q": "What will be the result of this expression: `!0 && 1`?",
+    "o": [
+      "1",
+      "0",
+      "true",
+      "Compile Error"
+    ]
+  },
+  {
+    "q": "What does the expression `(int)(3.7 + 2.3)` evaluate to in C?",
+    "o": [
+      "6",
+      "6.0",
+      "5",
+      "7"
+    ]
+  },
+  {
+    "q": "Which of the following has the **lowest** precedence in C?",
+    "o": [
+      "=",
+      "*",
+      "+",
+      ">"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 1, b = 0;\n    printf(\"%d\", a || b);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "a",
+      "b"
+    ]
+  },
+  {
+    "q": "Which operator in C shifts all bits to the left?",
+    "o": [
+      "<<",
+      ">>",
+      "<=",
+      ">>>"
+    ]
+  },
+  {
+    "q": "Which operator in C is used for integer division?",
+    "o": [
+      "/",
+      "//",
+      "\\",
+      "div"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    int y = 4;\n    printf(\"%d\", x / y);\n    return 0;\n}",
+    "o": [
+      "2",
+      "2.5",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "q": "Which logical operator returns true only if both conditions are true?",
+    "o": [
+      "&&",
+      "||",
+      "!",
+      "&"
+    ]
+  },
+  {
+    "q": "What is the output of this bitwise expression: `5 | 3`?",
+    "o": [
+      "7",
+      "1",
+      "6",
+      "8"
+    ]
+  },
+  {
+    "q": "Which operator is used to assign a value to a variable?",
+    "o": [
+      "=",
+      "==",
+      ":=",
+      "=>"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 6;\n    a += 4;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "10",
+      "6",
+      "4",
+      "12"
+    ]
+  },
+  {
+    "q": "Which of these has **right-to-left** associativity in C?",
+    "o": [
+      "=",
+      "+",
+      "&&",
+      "!="
+    ]
+  },
+  {
+    "q": "Which operator will convert a value from one data type to another in C?",
+    "o": [
+      "Type casting",
+      "Conversion operator",
+      "Assignment",
+      "Transform"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    float result = (float)7 / 2;\n    printf(\"%.1f\", result);\n    return 0;\n}",
+    "o": [
+      "3.5",
+      "3.0",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "q": "Which operator in C inverts all the bits of a number?",
+    "o": [
+      "~",
+      "!",
+      "^",
+      "<<"
+    ]
+  },
+  {
+    "q": "Which operator would you use to find the remainder after division in C?",
+    "o": [
+      "%",
+      "/",
+      "&",
+      "//"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 4, b = 6;\n    printf(\"%d\", a ^ b);\n    return 0;\n}",
+    "o": [
+      "2",
+      "0",
+      "4",
+      "6"
+    ]
+  },
+  {
+    "q": "Which of the following expressions evaluates to false?",
+    "o": [
+      "5 < 2",
+      "3 == 3",
+      "7 >= 6",
+      "2 != 3"
+    ]
+  },
+  {
+    "q": "Which of the following is a bitwise AND operator in C?",
+    "o": [
+      "&",
+      "&&",
+      "and",
+      "@"
+    ]
+  },
+  {
+    "q": "What is the result of the expression `(5 > 2) && (3 < 1)`?",
+    "o": [
+      "0",
+      "1",
+      "true",
+      "error"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 10;\n    a >>= 1;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "5",
+      "10",
+      "2",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following shows implicit type conversion in C?",
+    "o": [
+      "int a = 5.9;",
+      "float b = (float) 3;",
+      "int c = (int) 9.8;",
+      "double d = (double) 6"
+    ]
+  },
+  {
+    "q": "What is the output of this expression: `3 + 2 * 2`?",
+    "o": [
+      "7",
+      "10",
+      "9",
+      "6"
+    ]
+  },
+  {
+    "q": "In C, what is the associativity of the assignment operator `=`?",
+    "o": [
+      "Right to Left",
+      "Left to Right",
+      "Top to Bottom",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of these statements about logical NOT (`!`) operator is true?",
+    "o": [
+      "It returns 1 if the operand is 0",
+      "It returns 0 if the operand is 0",
+      "It inverts the bits",
+      "It adds 1 to the operand"
+    ]
+  },
+  {
+    "q": "Which of the following is a relational operator in C?",
+    "o": [
+      ">=",
+      "&&",
+      "&",
+      "+"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 7, y = 2;\n    printf(\"%d\", x % y);\n    return 0;\n}",
+    "o": [
+      "1",
+      "3",
+      "2",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following statements about the `!=` operator is correct?",
+    "o": [
+      "It returns true if two values are not equal.",
+      "It assigns a value to a variable.",
+      "It checks if two values are equal.",
+      "It returns the opposite of the condition."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 3, b = 5;\n    printf(\"%d\", a & b);\n    return 0;\n}",
+    "o": [
+      "1",
+      "7",
+      "2",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is a compound assignment operator?",
+    "o": [
+      "+=",
+      "==",
+      "=>",
+      "=+"
+    ]
+  },
+  {
+    "q": "What will be the result of the expression: `8 >> 2`?",
+    "o": [
+      "2",
+      "4",
+      "1",
+      "8"
+    ]
+  },
+  {
+    "q": "Which operator group has the **highest precedence** in C?",
+    "o": [
+      "Parentheses `()`",
+      "Multiplication `*`",
+      "Assignment `=`",
+      "Logical AND `&&`"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int val = (int)3.9;\n    printf(\"%d\", val);\n    return 0;\n}",
+    "o": [
+      "3",
+      "4",
+      "0",
+      "9"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of **explicit type casting** in C?",
+    "o": [
+      "(float)5",
+      "5.0",
+      "int x = 5;",
+      "x += 2"
+    ]
+  },
+  {
+    "q": "Which operator has lower precedence: `==` or `+`?",
+    "o": [
+      "==",
+      "+",
+      "Both have same precedence",
+      "Depends on compiler"
+    ]
+  },
+  {
+    "q": "Which of the following evaluates to true in C?",
+    "o": [
+      "10 != 5",
+      "5 == 10",
+      "7 && 0",
+      "!(1)"
+    ]
+  },
+  {
+    "q": "What is the result of `6 | 3` in C?",
+    "o": [
+      "7",
+      "3",
+      "6",
+      "1"
+    ]
+  },
+  {
+    "q": "What will be printed by the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 2 + 3 * 4;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "14",
+      "20",
+      "24",
+      "10"
+    ]
+  },
+  {
+    "q": "Which expression correctly performs logical OR in C?",
+    "o": [
+      "a || b",
+      "a | b",
+      "a or b",
+      "a +| b"
+    ]
+  },
+  {
+    "q": "In the expression `a += 10`, what operation is performed?",
+    "o": [
+      "a = a + 10",
+      "a = 10",
+      "a + 10 = a",
+      "a = 10 + 10"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int result = 5 > 3 && 2 < 1;\n    printf(\"%d\", result);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "q": "Which of the following has the **lowest** precedence in C?",
+    "o": [
+      "=",
+      "+",
+      "&&",
+      ">"
+    ]
+  },
+  {
+    "q": "What is the correct way to force conversion from float to int?",
+    "o": [
+      "int x = (int)5.9;",
+      "int x = 5.9;",
+      "x = int(5.9);",
+      "x = cast<int>(5.9);"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid use of the bitwise XOR operator?",
+    "o": [
+      "x ^ y",
+      "x xor y",
+      "x ^^ y",
+      "x ~ y"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 1, b = 0;\n    printf(\"%d\", !a || b);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following expressions returns true only when both operands are true?",
+    "o": [
+      "x && y",
+      "x || y",
+      "!x",
+      "x & y"
+    ]
+  },
+  {
+    "q": "What is the result of `~10` in C?",
+    "o": [
+      "-11",
+      "11",
+      "-10",
+      "0"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 8, b = 3;\n    printf(\"%d\", a / b);\n    return 0;\n}",
+    "o": [
+      "2",
+      "2.67",
+      "3",
+      "1"
+    ]
+  },
+  {
+    "q": "Which operator is used to shift bits to the left in C?",
+    "o": [
+      "<<",
+      ">>",
+      "<",
+      "<<<"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    float x = 7 / 2;\n    printf(\"%.1f\", x);\n    return 0;\n}",
+    "o": [
+      "3.0",
+      "3.5",
+      "3.0f",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of **implicit type conversion**?",
+    "o": [
+      "int x = 5.5;",
+      "int x = (int)5.5;",
+      "x = (float)y;",
+      "float x = float(5);"
+    ]
+  },
+  {
+    "q": "What is the result of `2 * 3 + 4` in C, respecting precedence?",
+    "o": [
+      "10",
+      "14",
+      "12",
+      "24"
+    ]
+  },
+  {
+    "q": "Which of these operators is used to compare if two values are equal?",
+    "o": [
+      "==",
+      "=",
+      "===",
+      "!="
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 2;\n    printf(\"%d\", a % b);\n    return 0;\n}",
+    "o": [
+      "1",
+      "2",
+      "0",
+      "3"
+    ]
+  },
+  {
+    "q": "Which operator group is evaluated first based on C operator precedence?",
+    "o": [
+      "Unary operators (like `++`, `--`)",
+      "Multiplicative (`*`, `/`, `%`)",
+      "Additive (`+`, `-`)",
+      "Assignment (`=`, `+=`, etc.)"
+    ]
+  },
+  {
+    "q": "Which operator will return true if at least one of the two conditions is true?",
+    "o": [
+      "||",
+      "&&",
+      "&",
+      "!="
+    ]
+  },
+  {
+    "q": "What will the following expression evaluate to?\n`(4 + 2) * 3 - 5`",
+    "o": [
+      "13",
+      "11",
+      "17",
+      "9"
+    ]
+  },
+  {
+    "q": "What does the following code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 10, b = 5;\n    printf(\"%d\", a == b);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "5",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of these performs a **bitwise AND** operation in C?",
+    "o": [
+      "&",
+      "&&",
+      "and",
+      "^"
+    ]
+  },
+  {
+    "q": "Which of the following expressions involves **explicit type casting**?",
+    "o": [
+      "(float)5 / 2",
+      "5 / 2.0",
+      "5 + 2.5",
+      "x = y"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 3;\n    x <<= 1;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "6",
+      "3",
+      "1",
+      "8"
+    ]
+  },
+  {
+    "q": "Which assignment operator adds and then assigns the value?",
+    "o": [
+      "+=",
+      "++",
+      "=+",
+      "+"
+    ]
+  },
+  {
+    "q": "Which type conversion happens automatically in `int x = 2.8;`?",
+    "o": [
+      "float to int (implicit)",
+      "int to float (implicit)",
+      "int to double (explicit)",
+      "No conversion"
+    ]
+  },
+  {
+    "q": "In the absence of parentheses, which of the following has higher precedence?",
+    "o": [
+      "*",
+      "+",
+      "==",
+      "&&"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 7, b = 3;\n    printf(\"%d\", a & b);\n    return 0;\n}",
+    "o": [
+      "3",
+      "0",
+      "1",
+      "7"
+    ]
+  },
+  {
+    "q": "Which operator in C has the lowest precedence among the following?",
+    "o": [
+      "=",
+      "+",
+      "*",
+      "=="
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    int y = x++ + 3;\n    printf(\"%d\", y);\n    return 0;\n}",
+    "o": [
+      "8",
+      "9",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "q": "Which of the following correctly demonstrates logical NOT in C?",
+    "o": [
+      "!a",
+      "not a",
+      "~a",
+      "!!a"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "#include <stdio.h>\nint main() {\n    float a = 7.0;\n    int b = 2;\n    printf(\"%.2f\", a / b);\n    return 0;\n}",
+    "o": [
+      "3.50",
+      "3",
+      "3.00",
+      "3.25"
+    ]
+  },
+  {
+    "q": "Which of these operators will give remainder in C?",
+    "o": [
+      "%",
+      "/",
+      "*",
+      "//"
+    ]
+  },
+  {
+    "q": "What kind of conversion happens when a `char` is used in an arithmetic expression?",
+    "o": [
+      "Promoted to int",
+      "Converted to float",
+      "Converted to double",
+      "Remains char"
+    ]
+  },
+  {
+    "q": "Which bitwise operator inverts all bits of its operand?",
+    "o": [
+      "~",
+      "^",
+      "&",
+      "|"
+    ]
+  },
+  {
+    "q": "What is the result of this expression: `(3 > 2) && (4 < 2)`?",
+    "o": [
+      "0",
+      "1",
+      "2",
+      "true"
+    ]
+  },
+  {
+    "q": "Which operator group is evaluated **right to left** in C?",
+    "o": [
+      "Assignment (`=`, `+=`, etc.)",
+      "Multiplicative (`*`, `/`, `%`)",
+      "Additive (`+`, `-`)",
+      "Relational (`<`, `>`, etc.)"
+    ]
+  },
+  {
+    "q": "What will be the output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 9;\n    x = x & 1;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "1",
+      "9",
+      "0",
+      "8"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid use of type casting in C?",
+    "o": [
+      "(int)3.99",
+      "int(3.99)",
+      "cast(int, 3.99)",
+      "int:3.99"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 8, b = 3;\n    printf(\"%d\", a / b * b);\n    return 0;\n}",
+    "o": [
+      "6",
+      "2",
+      "8",
+      "3"
+    ]
+  },
+  {
+    "q": "Which operator would you use to compare two values for inequality in C?",
+    "o": [
+      "!=",
+      "==",
+      "<=",
+      "="
+    ]
+  },
+  {
+    "q": "What is the result of this bitwise operation: `12 | 5`?",
+    "o": [
+      "13",
+      "17",
+      "7",
+      "8"
+    ]
+  },
+  {
+    "q": "Which operator in C is used to shift bits to the right?",
+    "o": [
+      ">>",
+      "<<",
+      ">>>",
+      ">="
+    ]
+  },
+  {
+    "q": "What is the associativity of the logical AND (`&&`) operator?",
+    "o": [
+      "Left to right",
+      "Right to left",
+      "Top to bottom",
+      "No associativity"
+    ]
+  },
+  {
+    "q": "What does this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 2, y = 0;\n    printf(\"%d\", x && y);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following pairs of data types will result in implicit type conversion?",
+    "o": [
+      "int + float",
+      "float + float",
+      "int + int",
+      "char + char"
+    ]
+  },
+  {
+    "q": "What is the precedence of the `*` operator relative to `+`?",
+    "o": [
+      "Higher",
+      "Lower",
+      "Same",
+      "Depends on operands"
+    ]
+  },
+  {
+    "q": "What will be the result of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 4;\n    a |= 1;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "5",
+      "4",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following expressions evaluates to true in C?",
+    "o": [
+      "!(0 && 1)",
+      "0 && 1",
+      "1 && 0",
+      "0 || 0"
+    ]
+  },
+  {
+    "q": "What will be the result of the expression `5 + 2 * 3` in C?",
+    "o": [
+      "11",
+      "21",
+      "13",
+      "17"
+    ]
+  },
+  {
+    "q": "Which of these is the correct way to apply a bitwise XOR between two variables `a` and `b`?",
+    "o": [
+      "a ^ b",
+      "a && b",
+      "a | b",
+      "a % b"
+    ]
+  },
+  {
+    "q": "What does the following code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 6, b = 4;\n    printf(\"%d\", a & b);\n    return 0;\n}",
+    "o": [
+      "4",
+      "2",
+      "0",
+      "6"
+    ]
+  },
+  {
+    "q": "Which operator among the following has the **highest precedence** in C?",
+    "o": [
+      "++",
+      "*",
+      "==",
+      "&&"
+    ]
+  },
+  {
+    "q": "Which of these results in a type conversion from `float` to `int`?",
+    "o": [
+      "int x = (int)3.14;",
+      "int x = 3.14;",
+      "float x = 3.14f;",
+      "int x = 3;"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 2, b = 3;\n    printf(\"%d\", a < b && b < 5);\n    return 0;\n}",
+    "o": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is a compound assignment operator?",
+    "o": [
+      "+=",
+      "++",
+      "=",
+      "=="
+    ]
+  },
+  {
+    "q": "Which operator is used to convert lower precedence result to a higher precedence type implicitly?",
+    "o": [
+      "Implicit type promotion",
+      "Explicit type casting",
+      "Bitwise shift",
+      "No operator does this"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 10;\n    printf(\"%d\", a >> 1);\n    return 0;\n}",
+    "o": [
+      "5",
+      "1",
+      "10",
+      "20"
+    ]
+  },
+  {
+    "q": "What is the result of `7 % 3` in C?",
+    "o": [
+      "1",
+      "2",
+      "0",
+      "3"
+    ]
+  },
+  {
+    "q": "Which operator is used to perform logical OR in C?",
+    "o": [
+      "||",
+      "|",
+      "or",
+      "OR"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 3;\n    printf(\"%d\", ++x * 2);\n    return 0;\n}",
+    "o": [
+      "8",
+      "6",
+      "7",
+      "9"
+    ]
+  },
+  {
+    "q": "Which of these operators has **right-to-left associativity**?",
+    "o": [
+      "=",
+      "+",
+      "*",
+      "<"
+    ]
+  },
+  {
+    "q": "What will be the result of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    x <<= 1;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "10",
+      "2",
+      "1",
+      "15"
+    ]
+  },
+  {
+    "q": "Which of the following converts a `char` to `int` explicitly?",
+    "o": [
+      "(int)'A'",
+      "int('A')",
+      "char->int('A')",
+      "cast(int, 'A')"
+    ]
+  },
+  {
+    "q": "What is the output of the code below?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 2, b = 5;\n    printf(\"%d\", a > b || b > a);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "5"
+    ]
+  },
+  {
+    "q": "Which of these evaluates first in an expression due to highest precedence?",
+    "o": [
+      "Parentheses `()`",
+      "Addition `+`",
+      "Logical AND `&&`",
+      "Assignment `=`"
+    ]
+  },
+  {
+    "q": "What is the result of the expression: `10 & 6`?",
+    "o": [
+      "2",
+      "4",
+      "6",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of these will always result in a **float** result?",
+    "o": [
+      "5 / (float)2",
+      "5 / 2",
+      "(int)5 / 2",
+      "5.0 / (int)2"
+    ]
+  },
+  {
+    "q": "Which operator is used to shift bits to the left in C?",
+    "o": [
+      "<<",
+      ">>",
+      "<",
+      ">>>"
+    ]
+  },
+  {
+    "q": "What will be printed by the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 8, b = 3;\n    printf(\"%d\", a / b);\n    return 0;\n}",
+    "o": [
+      "2",
+      "2.67",
+      "3",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following operators has **lower precedence** than relational operators?",
+    "o": [
+      "&&",
+      "*",
+      "+",
+      "%"
+    ]
+  },
+  {
+    "q": "Which of these correctly casts a `double` to `int` in C?",
+    "o": [
+      "(int)9.81",
+      "int(9.81)",
+      "(float)9.81",
+      "cast<int>(9.81)"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 1;\n    printf(\"%d\", x && 0);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "x",
+      "error"
+    ]
+  },
+  {
+    "q": "In the expression `x = y = z = 10;`, which assignment happens first?",
+    "o": [
+      "z = 10",
+      "x = 10",
+      "y = 10",
+      "x = y"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 3;\n    a += 2;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "5",
+      "3",
+      "2",
+      "6"
+    ]
+  },
+  {
+    "q": "Which operator is used to perform bitwise OR in C?",
+    "o": [
+      "|",
+      "||",
+      "^",
+      "&"
+    ]
+  },
+  {
+    "q": "Which of the following statements is TRUE about type promotion in expressions?",
+    "o": [
+      "char and short are promoted to int",
+      "float is promoted to int",
+      "int is promoted to char",
+      "All types are always promoted to float"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 2;\n    float result = a / b;\n    printf(\"%.1f\", result);\n    return 0;\n}",
+    "o": [
+      "2.0",
+      "2.5",
+      "2",
+      "2.00"
+    ]
+  },
+  {
+    "q": "Which of the following expressions correctly checks if a number `n` is **not equal to 10**?",
+    "o": [
+      "n != 10",
+      "n =! 10",
+      "n <> 10",
+      "n not 10"
+    ]
+  },
+  {
+    "q": "What will this C code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 4;\n    printf(\"%d\", a % 2 == 0);\n    return 0;\n}",
+    "o": [
+      "1",
+      "2",
+      "0",
+      "4"
+    ]
+  },
+  {
+    "q": "Which of these has the **highest precedence** in C?",
+    "o": [
+      "Postfix `++`",
+      "Multiplication `*`",
+      "Assignment `=`",
+      "Logical AND `&&`"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 7;\n    printf(\"%d\", ~x);\n    return 0;\n}",
+    "o": [
+      "-8",
+      "-7",
+      "0",
+      "7"
+    ]
+  },
+  {
+    "q": "Which operator is used to check multiple **conditions together** in C?",
+    "o": [
+      "&&",
+      "&",
+      "||",
+      ","
+    ]
+  },
+  {
+    "q": "What will this expression evaluate to: `10 > 3 && 5 < 2`?",
+    "o": [
+      "0",
+      "1",
+      "2",
+      "10"
+    ]
+  },
+  {
+    "q": "Which one of these is a valid **compound assignment** operator?",
+    "o": [
+      "*=",
+      "*=",
+      "=+",
+      "=="
+    ]
+  },
+  {
+    "q": "Which of these results in **integer division** in C?",
+    "o": [
+      "7 / 2",
+      "7.0 / 2",
+      "(float)7 / 2",
+      "7 / 2.0"
+    ]
+  },
+  {
+    "q": "What is the effect of type casting in an expression like `(float)(3 / 2)`?",
+    "o": [
+      "It still gives 1.0 because integer division happens before casting",
+      "It gives 1.5 because it casts before division",
+      "It causes a compile error",
+      "It converts 3 and 2 into float before division"
+    ]
+  },
+  {
+    "q": "Which operator has **right-to-left associativity** in C?",
+    "o": [
+      "Ternary `?:`",
+      "Multiplication `*`",
+      "Subtraction `-`",
+      "Relational `>=`"
+    ]
+  },
+  {
+    "q": "What is the result of the expression `7 % 4 * 2` in C?",
+    "o": [
+      "6",
+      "3",
+      "2",
+      "1"
+    ]
+  },
+  {
+    "q": "Which operator in C can invert all bits of an integer?",
+    "o": [
+      "~",
+      "&",
+      "!",
+      "^"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 1, b = 0;\n    printf(\"%d\", a || b);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "a",
+      "error"
+    ]
+  },
+  {
+    "q": "In C, which type of casting is used when you write `(float)5`?",
+    "o": [
+      "Explicit type casting",
+      "Implicit type casting",
+      "Data compression",
+      "Auto conversion"
+    ]
+  },
+  {
+    "q": "Which operator combination gives the same result as `a = a + 5`?",
+    "o": [
+      "a += 5",
+      "a =+ 5",
+      "a == 5",
+      "a => 5"
+    ]
+  },
+  {
+    "q": "What is the result of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 6;\n    printf(\"%d\", x >> 1);\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "1",
+      "4"
+    ]
+  },
+  {
+    "q": "Which of these has **lower precedence** than logical AND `&&`?",
+    "o": [
+      "Assignment `=`",
+      "Addition `+`",
+      "Multiplication `*`",
+      "Relational `<`"
+    ]
+  },
+  {
+    "q": "What is the result of `5 > 3 && 2 < 1`?",
+    "o": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "q": "Which of the following will cause **integer promotion** in an arithmetic expression?",
+    "o": [
+      "Using `char` or `short` types",
+      "Using only `int` types",
+      "Adding two `float` values",
+      "Using a pointer"
+    ]
+  },
+  {
+    "q": "What is the associativity of the `=` operator in C?",
+    "o": [
+      "Right to Left",
+      "Left to Right",
+      "Top to Bottom",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following expressions correctly performs bitwise AND in C?",
+    "o": [
+      "x & y",
+      "x && y",
+      "x and y",
+      "x | y"
+    ]
+  },
+  {
+    "q": "What is the output of this C code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 12, b = 5;\n    printf(\"%d\", a % b);\n    return 0;\n}",
+    "o": [
+      "2",
+      "60",
+      "7",
+      "5"
+    ]
+  },
+  {
+    "q": "Which of the following represents implicit type conversion?",
+    "o": [
+      "Adding an int and a float",
+      "(float)num",
+      "Using (int)a + (float)b",
+      "Casting before assignment"
+    ]
+  },
+  {
+    "q": "Which operator has the **lowest precedence** among the following in C?",
+    "o": [
+      "=",
+      "&&",
+      "+",
+      "!="
+    ]
+  },
+  {
+    "q": "What is the output of the code below?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 8;\n    a >>= 2;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "2",
+      "4",
+      "6",
+      "16"
+    ]
+  },
+  {
+    "q": "What does the expression `x += y * z;` actually mean?",
+    "o": [
+      "x = x + (y * z)",
+      "x = (x + y) * z",
+      "x = x * y + z",
+      "x = x + y + z"
+    ]
+  },
+  {
+    "q": "What will be the output of the following?",
+    "c": "#include <stdio.h>\nint main() {\n    float a = 10 / 4;\n    printf(\"%.2f\", a);\n    return 0;\n}",
+    "o": [
+      "2.00",
+      "2.50",
+      "2.25",
+      "2.75"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of an expression with **left-to-right associativity**?",
+    "o": [
+      "a - b + c",
+      "a = b = c",
+      "a ? b : c",
+      "a += b"
+    ]
+  },
+  {
+    "q": "What is the result of this logical expression: `!((4 > 2) && (3 == 3))`?",
+    "o": [
+      "0",
+      "1",
+      "2",
+      "-1"
+    ]
+  },
+  {
+    "q": "Which of these expressions results in a **float output**?",
+    "o": [
+      "(float)(5 + 3) / 2",
+      "5 / 2",
+      "5 % 2",
+      "2 * 3 / 2"
+    ]
+  },
+  {
+    "q": "Which of these expressions correctly checks if `a` is between 5 and 10 (inclusive)?",
+    "o": [
+      "(a >= 5) && (a <= 10)",
+      "a => 5 && a =< 10",
+      "5 <= a <= 10",
+      "(a >= 5) || (a <= 10)"
+    ]
+  },
+  {
+    "q": "What will this C code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 7;\n    printf(\"%d\", a & 3);\n    return 0;\n}",
+    "o": [
+      "3",
+      "1",
+      "0",
+      "7"
+    ]
+  },
+  {
+    "q": "Which of the following operators has the **highest precedence** in C?",
+    "o": [
+      "()",
+      "*",
+      "==",
+      "="
+    ]
+  },
+  {
+    "q": "How is the logical NOT operator represented in C?",
+    "o": [
+      "!",
+      "~",
+      "not",
+      "¬"
+    ]
+  },
+  {
+    "q": "What is the result of this expression: `4 + 3 * 2`?",
+    "o": [
+      "10",
+      "14",
+      "16",
+      "12"
+    ]
+  },
+  {
+    "q": "What will be the output?",
+    "c": "#include <stdio.h>\nint main() {\n    float x = 5 / 2;\n    printf(\"%.1f\", x);\n    return 0;\n}",
+    "o": [
+      "2.0",
+      "2.5",
+      "3.0",
+      "2.2"
+    ]
+  },
+  {
+    "q": "Which of these statements about `=` and `==` is true?",
+    "o": [
+      "`=` is assignment, `==` is comparison",
+      "Both are used for comparison",
+      "Both are used for assignment",
+      "`==` is bitwise assignment"
+    ]
+  },
+  {
+    "q": "Which operator would you use to **toggle a specific bit** in C?",
+    "o": [
+      "^",
+      "&",
+      "~",
+      ">>"
+    ]
+  },
+  {
+    "q": "How many operands does the conditional operator `?:` work with?",
+    "o": [
+      "3",
+      "2",
+      "1",
+      "4"
+    ]
+  },
+  {
+    "q": "What is the value of `x` after executing this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 4;\n    x *= 3 + 2;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "20",
+      "12",
+      "14",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of the following correctly checks if a number is **not equal to 100**?",
+    "o": [
+      "x != 100",
+      "x =! 100",
+      "x <> 100",
+      "x not= 100"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 4, b = 2;\n    printf(\"%d\", a | b);\n    return 0;\n}",
+    "o": [
+      "6",
+      "2",
+      "4",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following performs an **explicit type cast** in C?",
+    "o": [
+      "(float)x",
+      "float = x",
+      "x = float(x)",
+      "float:x"
+    ]
+  },
+  {
+    "q": "Which arithmetic operator in C has **right-to-left** associativity?",
+    "o": [
+      "=",
+      "+",
+      "*",
+      "%"
+    ]
+  },
+  {
+    "q": "Evaluate the result of: `(5 > 3) && (2 < 1)`",
+    "o": [
+      "0",
+      "1",
+      "2",
+      "undefined"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    x = x / 3 * 3;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "9",
+      "10",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is a **bitwise complement** operator?",
+    "o": [
+      "~",
+      "&",
+      "^",
+      "!"
+    ]
+  },
+  {
+    "q": "Which operator is used to **shift bits left** in C?",
+    "o": [
+      "<<",
+      ">>",
+      "<=",
+      "<>"
+    ]
+  },
+  {
+    "q": "What is the output of this C code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 1, b = 0;\n    printf(\"%d\", a || b);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "-1"
+    ]
+  },
+  {
+    "q": "Which of these expressions will **always return 1** if `a = 5`?",
+    "o": [
+      "a == 5",
+      "a = 5",
+      "a =! 5",
+      "a < 5"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct result of the expression `7 % 3` in C?",
+    "o": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 8, b = 4;\n    printf(\"%d\", a >> 1);\n    return 0;\n}",
+    "o": [
+      "4",
+      "2",
+      "8",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is a **compound assignment** operator?",
+    "o": [
+      "+=",
+      "++",
+      "==",
+      "=>"
+    ]
+  },
+  {
+    "q": "What is the result of this expression: `(10 > 3) || (2 == 5)`?",
+    "o": [
+      "1",
+      "0",
+      "true",
+      "undefined"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 3;\n    float b = (float)(a / 2);\n    printf(\"%.1f\", b);\n    return 0;\n}",
+    "o": [
+      "1.0",
+      "1.5",
+      "2.0",
+      "1.2"
+    ]
+  },
+  {
+    "q": "Which operator is evaluated **last** in the expression: `x = a + b * c`?",
+    "o": [
+      "=",
+      "+",
+      "*",
+      "None of the above"
+    ]
+  },
+  {
+    "q": "Which of the following uses the **bitwise AND** operation?",
+    "o": [
+      "x & y",
+      "x && y",
+      "x | y",
+      "x ^ y"
+    ]
+  },
+  {
+    "q": "Which operator converts an integer to float when written like `(float)x`?",
+    "o": [
+      "Type casting operator",
+      "Implicit conversion operator",
+      "Arithmetic operator",
+      "Bitwise operator"
+    ]
+  },
+  {
+    "q": "What will the output be?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    printf(\"%d\", ++x * 2);\n    return 0;\n}",
+    "o": [
+      "12",
+      "10",
+      "11",
+      "14"
+    ]
+  },
+  {
+    "q": "Which statement about associativity is true in C?",
+    "o": [
+      "Multiplication and division are left-to-right associative",
+      "Assignment is left-to-right associative",
+      "All operators are right-to-left associative",
+      "Relational operators have higher precedence than arithmetic operators"
+    ]
+  },
+  {
+    "q": "What does the following expression evaluate to: `10 - 4 * 2`?",
+    "o": [
+      "2",
+      "12",
+      "4",
+      "16"
+    ]
+  },
+  {
+    "q": "What will be the output of the code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 2, b = 3, c = 4;\n    printf(\"%d\", a + b > c);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "7"
+    ]
+  },
+  {
+    "q": "Which operator has the **highest precedence** among the following?",
+    "o": [
+      "*",
+      "==",
+      "+",
+      "&&"
+    ]
+  },
+  {
+    "q": "What does `x ^= y;` mean in C?",
+    "o": [
+      "x = x ^ y",
+      "x = x && y",
+      "x = x + y",
+      "x = x | y"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int result = (3 + 2) * (4 - 1);\n    printf(\"%d\", result);\n    return 0;\n}",
+    "o": [
+      "15",
+      "5",
+      "21",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of these best represents **logical NOT** in C?",
+    "o": [
+      "!",
+      "~",
+      "not",
+      "!!"
+    ]
+  },
+  {
+    "q": "How many times will this code print the message?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    while (i < 3 && i >= 0) {\n        printf(\"Hello \");\n        i++;\n    }\n    return 0;\n}",
+    "o": [
+      "3",
+      "0",
+      "1",
+      "Infinite"
+    ]
+  },
+  {
+    "q": "Which operator has **right-to-left associativity**?",
+    "o": [
+      "=",
+      "+",
+      "*",
+      "%"
+    ]
+  },
+  {
+    "q": "Which of these casts `int` to `char` explicitly in C?",
+    "o": [
+      "(char)x",
+      "char x",
+      "x as char",
+      "cast(char, x)"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 2;\n    float c = a / b;\n    printf(\"%.1f\", c);\n    return 0;\n}",
+    "o": [
+      "2.0",
+      "2.5",
+      "2.2",
+      "2.1"
+    ]
+  },
+  {
+    "q": "Which of the following expressions evaluates to true in C?",
+    "o": [
+      "5 != 3 && 2 < 4",
+      "5 =! 3 && 2 < 4",
+      "5 <> 3 && 2 < 4",
+      "5 != 3 AND 2 < 4"
+    ]
+  },
+  {
+    "q": "What will be the output of the code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 6;\n    x += 3 * 2;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "12",
+      "15",
+      "18",
+      "9"
+    ]
+  },
+  {
+    "q": "What is the result of `~5` in C (assuming 32-bit int)?",
+    "o": [
+      "-6",
+      "6",
+      "-5",
+      "-4"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid relational expression in C?",
+    "o": [
+      "7 >= 3",
+      "7 >< 3",
+      "7 => 3",
+      "7 >> 3"
+    ]
+  },
+  {
+    "q": "What is the result of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    float a = 7 / 2;\n    printf(\"%.1f\", a);\n    return 0;\n}",
+    "o": [
+      "3.0",
+      "3.5",
+      "3.2",
+      "4.0"
+    ]
+  },
+  {
+    "q": "Which of the following operators has **lowest precedence**?",
+    "o": [
+      "=",
+      "*",
+      "==",
+      "&&"
+    ]
+  },
+  {
+    "q": "Which type of operator is `>>` in C?",
+    "o": [
+      "Bitwise right shift",
+      "Logical AND",
+      "Arithmetic",
+      "Relational"
+    ]
+  },
+  {
+    "q": "What is the value of the expression `(int)(7.9) + (int)(2.3)`?",
+    "o": [
+      "9",
+      "10",
+      "9.0",
+      "8.2"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 4;\n    int y = x++ * 2;\n    printf(\"%d\", y);\n    return 0;\n}",
+    "o": [
+      "8",
+      "10",
+      "4",
+      "6"
+    ]
+  },
+  {
+    "q": "Which expression will set the 2nd bit of a variable `x`?",
+    "o": [
+      "x = x | (1 << 1);",
+      "x = x & (1 << 1);",
+      "x = x ^ (1 << 2);",
+      "x = x << 2;"
+    ]
+  },
+  {
+    "q": "What is the result of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 8, b = 3;\n    int result = a % b;\n    printf(\"%d\", result);\n    return 0;\n}",
+    "o": [
+      "2",
+      "1",
+      "3",
+      "5"
+    ]
+  },
+  {
+    "q": "Which operator has higher precedence than logical AND (&&) in C?",
+    "o": [
+      "Relational operators (like <, >, ==)",
+      "Logical OR (||)",
+      "Assignment (=)",
+      "Comma operator (,)"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 3, y = 4;\n    printf(\"%d\", x & y);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "4",
+      "7"
+    ]
+  },
+  {
+    "q": "Which of the following correctly checks if both a and b are non-zero?",
+    "o": [
+      "a && b",
+      "a & b",
+      "a || b",
+      "a ^ b"
+    ]
+  },
+  {
+    "q": "What will be the result of this expression: `10 > 5 == 1`?",
+    "o": [
+      "1",
+      "0",
+      "5",
+      "True"
+    ]
+  },
+  {
+    "q": "Which expression performs a right shift by 3 bits?",
+    "o": [
+      "x >> 3",
+      "x <<< 3",
+      "x // 3",
+      "x >>> 3"
+    ]
+  },
+  {
+    "q": "How does the C compiler treat `7 / 2` by default?",
+    "o": [
+      "As integer division, result is 3",
+      "As float division, result is 3.5",
+      "As modulo operation",
+      "As invalid syntax"
+    ]
+  },
+  {
+    "q": "What is the result of implicit conversion in `float x = 5 / 2;`?",
+    "o": [
+      "2.0",
+      "2.5",
+      "2",
+      "2.00"
+    ]
+  },
+  {
+    "q": "Which statement best describes operator associativity in C?",
+    "o": [
+      "It defines the order in which operators of the same precedence are evaluated",
+      "It tells how many operands an operator can take",
+      "It decides the datatype of the result",
+      "It changes the priority of the operator"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 2;\n    int b = 3;\n    printf(\"%d\", a | b);\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "What is the value of the expression `10 + 3 * 2` in C?",
+    "o": [
+      "16",
+      "26",
+      "20",
+      "13"
+    ]
+  },
+  {
+    "q": "Which of the following shows a correct use of the bitwise XOR operator?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 3;\n    printf(\"%d\", a ^ b);\n    return 0;\n}",
+    "o": [
+      "6",
+      "2",
+      "8",
+      "1"
+    ]
+  },
+  {
+    "q": "Which assignment operator adds the right operand to the left and assigns the result to the left?",
+    "o": [
+      "+=",
+      "++",
+      "==",
+      "="
+    ]
+  },
+  {
+    "q": "What will the following expression evaluate to: `(5 > 2) && (3 == 3)`?",
+    "o": [
+      "1",
+      "0",
+      "True",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "In the expression `int x = (int)3.8;`, what is the final value of `x`?",
+    "o": [
+      "3",
+      "4",
+      "3.8",
+      "0"
+    ]
+  },
+  {
+    "q": "Which operator has higher precedence than logical OR (||) in C?",
+    "o": [
+      "Logical AND (&&)",
+      "Assignment (=)",
+      "Comma (,)",
+      "None of the above"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 4;\n    a <<= 1;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "8",
+      "2",
+      "4",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following operators has **right-to-left** associativity?",
+    "o": [
+      "=",
+      "+",
+      "&&",
+      "!="
+    ]
+  },
+  {
+    "q": "If `a = 5` and `b = 2`, what is the output of `a / b * b`?",
+    "o": [
+      "4",
+      "2.5",
+      "5",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following expressions involves **implicit type conversion** in C?",
+    "o": [
+      "float y = 7 + 3.5;",
+      "int x = 7 + 3;",
+      "char c = 'A';",
+      "int z = (int)4.8;"
+    ]
+  },
+  {
+    "q": "Which operator is used to invert each bit of a number in C?",
+    "o": [
+      "~",
+      "!",
+      "^",
+      "&"
+    ]
+  },
+  {
+    "q": "What is the result of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 2, y = 3;\n    printf(\"%d\", x && y);\n    return 0;\n}",
+    "o": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "What will be the result of the expression `(int)(7.8 + 2.3)` in C?",
+    "o": [
+      "10",
+      "9",
+      "10.1",
+      "7"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5;\n    printf(\"%d\", a > 3 || a < 2);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "5",
+      "2"
+    ]
+  },
+  {
+    "q": "Which of the following operators has the **lowest precedence** in C?",
+    "o": [
+      ", (comma)",
+      "&& (logical AND)",
+      "* (multiplication)",
+      "== (equal to)"
+    ]
+  },
+  {
+    "q": "Choose the correct output for the following bitwise operation:",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 7, y = 3;\n    printf(\"%d\", x & y);\n    return 0;\n}",
+    "o": [
+      "3",
+      "1",
+      "0",
+      "7"
+    ]
+  },
+  {
+    "q": "Which expression demonstrates an example of type conversion due to mixed data types?",
+    "o": [
+      "int a = 10 + 5.5;",
+      "int b = 10 * 2;",
+      "float x = 7.0;",
+      "char c = 'Z';"
+    ]
+  },
+  {
+    "q": "What is the output of the following operation?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 4, y = 2;\n    printf(\"%d\", x / y * y);\n    return 0;\n}",
+    "o": [
+      "4",
+      "2",
+      "0",
+      "8"
+    ]
+  },
+  {
+    "q": "Which of these operators is **right-associative** in C?",
+    "o": [
+      "?: (ternary)",
+      "&& (logical AND)",
+      "< (less than)",
+      "- (subtraction)"
+    ]
+  },
+  {
+    "q": "Which of these expressions evaluates to false (0) in C?",
+    "o": [
+      "(10 < 5)",
+      "(3 == 3)",
+      "(4 != 2)",
+      "(7 >= 2)"
+    ]
+  },
+  {
+    "q": "Which arithmetic operator has the highest precedence in C?",
+    "o": [
+      "*",
+      "+",
+      "-",
+      "%"
+    ]
+  },
+  {
+    "q": "What will be the result of this expression: `5 + 3 * 2`?",
+    "o": [
+      "11",
+      "16",
+      "13",
+      "10"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 8;\n    printf(\"%d\", a >> 1);\n    return 0;\n}",
+    "o": [
+      "4",
+      "8",
+      "16",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is a relational operator in C?",
+    "o": [
+      "!=",
+      "&&",
+      "~",
+      "="
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 3, y = 5;\n    printf(\"%d\", x & y);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "3",
+      "5"
+    ]
+  },
+  {
+    "q": "Which of the following shows an example of implicit type conversion?",
+    "o": [
+      "int x = 10.5;",
+      "int x = (int)10.5;",
+      "float x = (float)5;",
+      "int x = 5 + (int)2.2;"
+    ]
+  },
+  {
+    "q": "In C, which operator has right-to-left associativity?",
+    "o": [
+      "= (assignment)",
+      "+ (addition)",
+      "* (multiplication)",
+      "< (less than)"
+    ]
+  },
+  {
+    "q": "What is the value of this expression: `10 % 3`?",
+    "o": [
+      "1",
+      "3",
+      "0",
+      "10"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 4, b = 0;\n    printf(\"%d\", a && b);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid use of the compound assignment operator?",
+    "o": [
+      "x += 5;",
+      "x =+ 5;",
+      "x == x + 5;",
+      "x <== 5;"
+    ]
+  },
+  {
+    "q": "What will be the result of the following expression: `7 > 3 && 4 < 2`?",
+    "o": [
+      "0",
+      "1",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these correctly demonstrates bitwise OR in C?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 2, y = 4;\n    printf(\"%d\", x | y);\n    return 0;\n}",
+    "o": [
+      "6",
+      "2",
+      "4",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of these type conversions happens implicitly in C?",
+    "o": [
+      "int to float",
+      "float to int",
+      "double to int",
+      "char to string"
+    ]
+  },
+  {
+    "q": "What will this print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5;\n    a *= 2 + 3;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "25",
+      "16",
+      "13",
+      "10"
+    ]
+  },
+  {
+    "q": "Which operator in C has the lowest precedence?",
+    "o": [
+      "=",
+      "+",
+      "*",
+      "=="
+    ]
+  },
+  {
+    "q": "What is the result of: `8 ^ 3` (bitwise XOR)?",
+    "o": [
+      "11",
+      "5",
+      "0",
+      "24"
+    ]
+  },
+  {
+    "q": "Which of the following will evaluate to true (non-zero)?",
+    "o": [
+      "!(5 == 3)",
+      "5 = 3",
+      "5 < 3 && 4 > 1",
+      "5 & 0"
+    ]
+  },
+  {
+    "q": "What will this print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 2;\n    printf(\"%d\", ~a);\n    return 0;\n}",
+    "o": [
+      "-3",
+      "1",
+      "-2",
+      "2"
+    ]
+  },
+  {
+    "q": "Which is the correct order of operator precedence (highest to lowest)?",
+    "o": [
+      "* / %, then + -, then =",
+      "+ -, then * / %, then =",
+      "=, then + -, then * / %",
+      "==, then + -, then * /"
+    ]
+  },
+  {
+    "q": "How is explicit type casting done in C?",
+    "o": [
+      "(float)5",
+      "float(5)",
+      "cast<float>(5)",
+      "to_float(5)"
+    ]
+  },
+  {
+    "q": "Which of the following evaluates to true if `a = 10` and `b = 5`?",
+    "o": [
+      "a > b && b != 0",
+      "a < b && b != 0",
+      "a == b || b == 0",
+      "a != b && b == 0"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 4, b = 3;\n    printf(\"%d\", a % b * b);\n    return 0;\n}",
+    "o": [
+      "3",
+      "1",
+      "2",
+      "12"
+    ]
+  },
+  {
+    "q": "Which operator has the highest precedence in C?",
+    "o": [
+      "++ (Unary Increment)",
+      "+ (Addition)",
+      "== (Equality)",
+      "= (Assignment)"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 7;\n    x &= 3;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "3",
+      "7",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "q": "Which is a valid result of implicit type conversion in C?",
+    "o": [
+      "int to double during arithmetic",
+      "float to char automatically",
+      "double to int without data loss",
+      "string to int"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5;\n    int b = a++ + ++a;\n    printf(\"%d\", b);\n    return 0;\n}",
+    "o": [
+      "12",
+      "11",
+      "10",
+      "13"
+    ]
+  },
+  {
+    "q": "Which operator checks whether two values are not equal in C?",
+    "o": [
+      "!=",
+      "==",
+      "<>",
+      "!=="
+    ]
+  },
+  {
+    "q": "What is the result of `(float)(5/2)` in C?",
+    "o": [
+      "2.0",
+      "2.5",
+      "2.00",
+      "2.50"
+    ]
+  },
+  {
+    "q": "Choose the correct statement about associativity of `=` (assignment) operator in C.",
+    "o": [
+      "It is right-to-left",
+      "It is left-to-right",
+      "It depends on the data type",
+      "It has no associativity"
+    ]
+  },
+  {
+    "q": "Which expression demonstrates the use of compound assignment?",
+    "o": [
+      "x += 10;",
+      "x =+ 10;",
+      "x <= 10;",
+      "x == x + 10;"
+    ]
+  },
+  {
+    "q": "What will be the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 3;\n    printf(\"%d\", x * 2 + 4 / 2);\n    return 0;\n}",
+    "o": [
+      "8",
+      "7",
+      "10",
+      "9"
+    ]
+  },
+  {
+    "q": "Which operator is used to flip all bits in C?",
+    "o": [
+      "~",
+      "&",
+      "^",
+      "!"
+    ]
+  },
+  {
+    "q": "Which of the following expressions evaluates to 1 in C?",
+    "o": [
+      "!(5 > 10)",
+      "5 && 0",
+      "5 > 10",
+      "0 || 0"
+    ]
+  },
+  {
+    "q": "What does the following code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 12;\n    int b = 5;\n    printf(\"%d\", a % b);\n    return 0;\n}",
+    "o": [
+      "2",
+      "1",
+      "0",
+      "5"
+    ]
+  },
+  {
+    "q": "Which of the following shows an example of type casting in C?",
+    "o": [
+      "(float) 7 / 2",
+      "7.0 / 2",
+      "int(7.5) + 2",
+      "float = 2 / 5"
+    ]
+  },
+  {
+    "q": "In C, what is the associativity of the logical AND operator (&&)?",
+    "o": [
+      "Left to Right",
+      "Right to Left",
+      "None",
+      "Depends on context"
+    ]
+  },
+  {
+    "q": "What will the following code display?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 1, b = 2, c = 3;\n    printf(\"%d\", a | b & c);\n    return 0;\n}",
+    "o": [
+      "3",
+      "1",
+      "0",
+      "2"
+    ]
+  },
+  {
+    "q": "Which is the correct way to assign and multiply a variable in one step?",
+    "o": [
+      "a *= 5;",
+      "a =* 5;",
+      "a = a x 5;",
+      "*= a 5;"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    float x = (float)9/4;\n    printf(\"%.2f\", x);\n    return 0;\n}",
+    "o": [
+      "2.25",
+      "2.00",
+      "2.50",
+      "2"
+    ]
+  },
+  {
+    "q": "Which of the following expressions will result in a floating-point division in C?",
+    "o": [
+      "10 / (float)3",
+      "10 / 3",
+      "(int)10 / 3.0",
+      "float(10 / 3)"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 4, b = 6;\n    printf(\"%d\", a & b);\n    return 0;\n}",
+    "o": [
+      "4",
+      "6",
+      "2",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following operators has the highest precedence in C?",
+    "o": [
+      "*",
+      "&&",
+      "+",
+      "="
+    ]
+  },
+  {
+    "q": "What does the following expression evaluate to: (10 > 5) && (3 < 1)?",
+    "o": [
+      "0",
+      "1",
+      "-1",
+      "10"
+    ]
+  },
+  {
+    "q": "What will be printed by this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    x += 3 * 2;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "11",
+      "16",
+      "13",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of the following statements correctly explains the result of bitwise XOR operation?",
+    "o": [
+      "It returns 1 if bits are different",
+      "It returns 1 if bits are same",
+      "It inverts all bits",
+      "It shifts bits to the left"
+    ]
+  },
+  {
+    "q": "Choose the correct result of this expression: (float)(5 / 2)",
+    "o": [
+      "2.00",
+      "2.50",
+      "2.5",
+      "2.25"
+    ]
+  },
+  {
+    "q": "What is the result of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 7, b = 3;\n    printf(\"%d\", a >> b);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "q": "Which of the following shows correct usage of the logical OR operator in C?",
+    "o": [
+      "if (a > 0 || b < 5)",
+      "if (a > 0 | b < 5)",
+      "if a > 0 || b < 5",
+      "if (a > 0 or b < 5)"
+    ]
+  },
+  {
+    "q": "How does C evaluate the expression: `a = b = c = 5`?",
+    "o": [
+      "Right to Left",
+      "Left to Right",
+      "Depends on compiler",
+      "Not allowed in C"
+    ]
+  },
+  {
+    "q": "Which operator converts a lower data type to a higher one automatically?",
+    "o": [
+      "Implicit Type Conversion",
+      "Explicit Casting",
+      "Bitwise Shift",
+      "Ternary Operator"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 10, b = 3;\n    printf(\"%d\", a % b);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "3",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of the following is a relational operator in C?",
+    "o": [
+      "<=",
+      "&",
+      "=",
+      "||"
+    ]
+  },
+  {
+    "q": "What will the following expression return: !(5 > 2 && 3 != 3)?",
+    "o": [
+      "1",
+      "0",
+      "-1",
+      "3"
+    ]
+  },
+  {
+    "q": "What is the result of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 12, y = 5;\n    x &= y;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "4",
+      "5",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the operator precedence of *, /, and % in C?",
+    "o": [
+      "They all have equal precedence and associate left to right",
+      "They have equal precedence but associate right to left",
+      "* has higher precedence than / and %",
+      "Precedence is undefined in C"
+    ]
+  },
+  {
+    "q": "What is the value of `c` in this expression: `float c = (float)7 / 2;`?",
+    "o": [
+      "3.5",
+      "3.0",
+      "2.0",
+      "7"
+    ]
+  },
+  {
+    "q": "What does the expression `a |= 2` do?",
+    "o": [
+      "Performs bitwise OR between a and 2 and stores result in a",
+      "Assigns 2 to a",
+      "Checks if a is equal to 2",
+      "Performs logical OR and assigns result to a"
+    ]
+  },
+  {
+    "q": "What is the associativity of the assignment operator (=) in C?",
+    "o": [
+      "Right to Left",
+      "Left to Right",
+      "Top to Bottom",
+      "Depends on operands"
+    ]
+  },
+  {
+    "q": "Which type of casting is demonstrated by this code: `double d = (double)3/2;`?",
+    "o": [
+      "Explicit casting",
+      "Implicit conversion",
+      "Bit shifting",
+      "Relational casting"
+    ]
+  },
+  {
+    "q": "What will the following expression evaluate to?\n\n`int result = 4 * 2 + 3 > 10;`",
+    "o": [
+      "0",
+      "1",
+      "10",
+      "11"
+    ]
+  },
+  {
+    "q": "What is the result of the expression `10 + 5 * 2` in C?",
+    "o": [
+      "20",
+      "30",
+      "25",
+      "15"
+    ]
+  },
+  {
+    "q": "What does this expression evaluate to: `5 > 3 && 2 < 4`?",
+    "o": [
+      "1",
+      "0",
+      "-1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which operator has the highest precedence among the following in C?",
+    "o": [
+      "*",
+      "+",
+      "==",
+      "&&"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 8;\n    x >>= 1;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "4",
+      "8",
+      "2",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following is a logical operator in C?",
+    "o": [
+      "||",
+      "&",
+      "~",
+      "<<"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    float a = 9 / 2;\n    printf(\"%.1f\", a);\n    return 0;\n}",
+    "o": [
+      "4.0",
+      "4.5",
+      "5.0",
+      "Error"
+    ]
+  },
+  {
+    "q": "In C, what will be the type of result in this expression: `int a = 5; float b = 2.0; auto result = a + b;`?",
+    "o": [
+      "float",
+      "int",
+      "double",
+      "char"
+    ]
+  },
+  {
+    "q": "Which operator is used to invert all bits in a number?",
+    "o": [
+      "~",
+      "&",
+      "|",
+      "^"
+    ]
+  },
+  {
+    "q": "What does the following line of code return?\n\n`int val = (int)3.99;`",
+    "o": [
+      "3",
+      "4",
+      "3.99",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 2;\n    printf(\"%d\", a / b * b);\n    return 0;\n}",
+    "o": [
+      "4",
+      "2",
+      "5",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following expressions will return true in C?",
+    "o": [
+      "!(5 == 10)",
+      "5 = 5",
+      "5 !== 10",
+      "5 >< 10"
+    ]
+  },
+  {
+    "q": "What is the result of the following bitwise operation: `12 | 5`?",
+    "o": [
+      "13",
+      "7",
+      "8",
+      "10"
+    ]
+  },
+  {
+    "q": "Evaluate the following code:",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 6, b = 4;\n    printf(\"%d\", a & b);\n    return 0;\n}",
+    "o": [
+      "4",
+      "2",
+      "0",
+      "6"
+    ]
+  },
+  {
+    "q": "Which of these is true about the expression `a += b * c`?",
+    "o": [
+      "It’s equivalent to `a = a + (b * c)`",
+      "It’s equivalent to `a = a + b + c`",
+      "It’s equivalent to `a = b * c`",
+      "It’s equivalent to `a = a * (b + c)`"
+    ]
+  },
+  {
+    "q": "What is the associativity of the assignment (=) operator in C?",
+    "o": [
+      "Right to Left",
+      "Left to Right",
+      "No Associativity",
+      "Top to Bottom"
+    ]
+  },
+  {
+    "q": "What is the result of the following type cast in C?\n\n`(int)(7.8 + 2.3)`",
+    "o": [
+      "10",
+      "9",
+      "7",
+      "Error"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 3;\n    printf(\"%d\", ++x * 2);\n    return 0;\n}",
+    "o": [
+      "8",
+      "6",
+      "7",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which operator has the lowest precedence among the following?",
+    "o": [
+      "=",
+      "+",
+      "&&",
+      "*"
+    ]
+  },
+  {
+    "q": "Which one of these correctly represents type casting in C?",
+    "o": [
+      "(float)10",
+      "float(10)",
+      "cast<float>(10)",
+      "int->float(10)"
+    ]
+  },
+  {
+    "q": "If `int x = 10, y = 3;`, what is `x % y`?",
+    "o": [
+      "1",
+      "3",
+      "0",
+      "10"
+    ]
+  },
+  {
+    "q": "Which expression correctly checks if a number `n` is between 10 and 20 (inclusive) in C?",
+    "o": [
+      "(n >= 10 && n <= 20)",
+      "(n >= 10 || n <= 20)",
+      "(10 < n < 20)",
+      "(n => 10 && n =< 20)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 7;\n    printf(\"%d\", a << 1);\n    return 0;\n}",
+    "o": [
+      "14",
+      "3",
+      "8",
+      "15"
+    ]
+  },
+  {
+    "q": "Which of the following statements about operator precedence is TRUE in C?",
+    "o": [
+      "Multiplication has higher precedence than addition",
+      "Assignment has higher precedence than comparison",
+      "Logical OR has higher precedence than AND",
+      "Relational operators have the lowest precedence"
+    ]
+  },
+  {
+    "q": "Which expression will evaluate to 1 (true) in C?",
+    "o": [
+      "(5 != 3 && 4 < 6)",
+      "(5 == 3 || 4 > 6)",
+      "(5 < 3 && 4 > 6)",
+      "(5 == 5 || 4 != 4)"
+    ]
+  },
+  {
+    "q": "What will be the output of this C code?",
+    "c": "#include <stdio.h>\nint main() {\n    float x = 5.7;\n    printf(\"%d\", (int)x + 2);\n    return 0;\n}",
+    "o": [
+      "7",
+      "5",
+      "8",
+      "6"
+    ]
+  },
+  {
+    "q": "Which of these is the correct way to toggle a bit using bitwise XOR?",
+    "o": [
+      "num ^= 1 << pos;",
+      "num |= 1 << pos;",
+      "num &= ~(1 << pos);",
+      "num = ~num << pos;"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 8, b = 3;\n    printf(\"%d\", a / b * b);\n    return 0;\n}",
+    "o": [
+      "6",
+      "8",
+      "3",
+      "2"
+    ]
+  },
+  {
+    "q": "Which operator in C is right-associative?",
+    "o": [
+      "=",
+      "+",
+      "%",
+      "&&"
+    ]
+  },
+  {
+    "q": "What is the result of the expression `(5 > 2) && (0)` in C?",
+    "o": [
+      "0",
+      "1",
+      "true",
+      "undefined"
+    ]
+  },
+  {
+    "q": "Choose the correct result of this C expression:\n`(int)(4.9) + (int)(2.3)`",
+    "o": [
+      "6",
+      "7",
+      "6.2",
+      "Error"
+    ]
+  },
+  {
+    "q": "What will be the value of `result`?\n\n`int result = 10 % 3 * 2;`",
+    "o": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid use of a compound assignment operator?",
+    "o": [
+      "x *= 4;",
+      "x <== 4;",
+      "x <= 4;",
+      "x === 4;"
+    ]
+  },
+  {
+    "q": "What does the following code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 2;\n    printf(\"%d\", a > 3 && b < 5);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "5",
+      "2"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 3;\n    x = x++ + ++x;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "8",
+      "7",
+      "6",
+      "Compiler error"
+    ]
+  },
+  {
+    "q": "Which of the following expressions will be evaluated first in C?",
+    "o": [
+      "Parentheses ( )",
+      "Multiplication *",
+      "Assignment =",
+      "Logical AND &&"
+    ]
+  },
+  {
+    "q": "What does this code print?\n\n`printf(\"%d\", (int)3.9 + (int)4.2);`",
+    "o": [
+      "7",
+      "8",
+      "6",
+      "7.1"
+    ]
+  },
+  {
+    "q": "Which operator is used to set a specific bit to 1 in C?",
+    "o": [
+      "| (bitwise OR)",
+      "& (bitwise AND)",
+      "^ (bitwise XOR)",
+      "~ (bitwise NOT)"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 12;\n    int b = a >> 2;\n    printf(\"%d\", b);\n    return 0;\n}",
+    "o": [
+      "3",
+      "4",
+      "2",
+      "6"
+    ]
+  },
+  {
+    "q": "Which of these conversions requires explicit type casting in C?",
+    "o": [
+      "float to int",
+      "int to float",
+      "char to int",
+      "short to int"
+    ]
+  },
+  {
+    "q": "Which statement is TRUE about operator associativity?",
+    "o": [
+      "Most binary operators are left-associative in C",
+      "Assignment operators are left-associative",
+      "All operators have the same associativity",
+      "Associativity only applies to arithmetic operators"
+    ]
+  },
+  {
+    "q": "Which of the following evaluates to true in C?",
+    "o": [
+      "5 != 3 && 2 < 4",
+      "5 != 5 && 2 > 1",
+      "3 == 4 || 1 > 2",
+      "!(1)"
+    ]
+  },
+  {
+    "q": "What is the result of the expression: `8 / 3 * 3` in C?",
+    "o": [
+      "6",
+      "8",
+      "9",
+      "2"
+    ]
+  },
+  {
+    "q": "What is the result of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 6;\n    a += 4;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "10",
+      "6",
+      "4",
+      "12"
+    ]
+  },
+  {
+    "q": "Which operator has the highest precedence among these?",
+    "o": [
+      "* (Multiplication)",
+      "+ (Addition)",
+      "== (Equality)",
+      "&& (Logical AND)"
+    ]
+  },
+  {
+    "q": "What does this expression evaluate to in C?\n\n`(1 && 0) || (1 && 1)`",
+    "o": [
+      "1",
+      "0",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "q": "Which bitwise operation can be used to toggle a bit in C?",
+    "o": [
+      "^ (XOR)",
+      "& (AND)",
+      "| (OR)",
+      "~ (NOT)"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    int y = (float)x / 2;\n    printf(\"%d\", y);\n    return 0;\n}",
+    "o": [
+      "2",
+      "2.5",
+      "5",
+      "0"
+    ]
+  },
+  {
+    "q": "What is the value of `z` in the expression: `int z = 1 + 2 * 3;`?",
+    "o": [
+      "7",
+      "9",
+      "6",
+      "5"
+    ]
+  },
+  {
+    "q": "Which of these conversions will happen automatically (implicit casting)?",
+    "o": [
+      "int to float",
+      "float to int",
+      "double to int",
+      "long to short"
+    ]
+  },
+  {
+    "q": "Which operator has **right to left** associativity in C?",
+    "o": [
+      "= (Assignment)",
+      "* (Multiplication)",
+      "+ (Addition)",
+      "&& (Logical AND)"
+    ]
+  },
+  {
+    "q": "Which of the following expressions results in 1 (true) in C?",
+    "o": [
+      "(4 > 2) && (3 != 5)",
+      "(2 > 4) || (1 == 0)",
+      "!(0) && (2 == 3)",
+      "4 < 2 && 1"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 4;\n    int b = 7;\n    printf(\"%d\", a & b);\n    return 0;\n}",
+    "o": [
+      "4",
+      "3",
+      "0",
+      "7"
+    ]
+  },
+  {
+    "q": "Which of these is a **compound assignment operator** in C?",
+    "o": [
+      "+=",
+      "==",
+      "<=",
+      "&"
+    ]
+  },
+  {
+    "q": "Which of the following expressions is evaluated first due to precedence?",
+    "o": [
+      "Multiplication (*)",
+      "Logical AND (&&)",
+      "Assignment (=)",
+      "Relational (>)"
+    ]
+  },
+  {
+    "q": "What is the output of the following?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 2, b = 3;\n    printf(\"%d\", a | b);\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of these results in **implicit type conversion**?",
+    "o": [
+      "float f = 10;",
+      "int i = 3.14;",
+      "char c = (char)300;",
+      "int x = (int)'A';"
+    ]
+  },
+  {
+    "q": "How is the expression evaluated: `5 + 2 * 3`?",
+    "o": [
+      "11",
+      "21",
+      "15",
+      "7"
+    ]
+  },
+  {
+    "q": "Which expression uses a **bitwise OR**?",
+    "o": [
+      "x | y",
+      "x || y",
+      "x ^ y",
+      "x & y"
+    ]
+  },
+  {
+    "q": "What is the result of: `~5` in C (assuming 2's complement)?",
+    "o": [
+      "-6",
+      "-5",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "q": "Which operator has **lower precedence** than arithmetic operators?",
+    "o": [
+      "==",
+      "/",
+      "%",
+      "*"
+    ]
+  },
+  {
+    "q": "What will be the result of the following C expression?\n\n`int result = 10 / 3 * 3;`",
+    "o": [
+      "9",
+      "10",
+      "3",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following statements about type casting is true in C?",
+    "o": [
+      "Casting a float to int drops the decimal part.",
+      "Casting an int to float adds decimal points automatically.",
+      "Casting always results in a syntax error.",
+      "Type casting is only allowed for pointers."
+    ]
+  },
+  {
+    "q": "What is the output of the code below?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 8;\n    int y = 3;\n    printf(\"%d\", x % y);\n    return 0;\n}",
+    "o": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct use of a logical operator?",
+    "o": [
+      "(a > b) && (b < c)",
+      "a >> b && c",
+      "a & b && c",
+      "a and b"
+    ]
+  },
+  {
+    "q": "What does the following bitwise expression evaluate to?\n\n`(6 ^ 3)`",
+    "o": [
+      "5",
+      "9",
+      "7",
+      "3"
+    ]
+  },
+  {
+    "q": "Which operator has the **highest precedence** in C?",
+    "o": [
+      "Parentheses `()`",
+      "Multiplication `*`",
+      "Relational `>`",
+      "Logical AND `&&`"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 1, b = 0;\n    printf(\"%d\", a && b);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "Error",
+      "-1"
+    ]
+  },
+  {
+    "q": "Which operator is used for **bitwise shift to the left** in C?",
+    "o": [
+      "<<",
+      ">>",
+      "<-",
+      "<>"
+    ]
+  },
+  {
+    "q": "What happens when `int x = (int)3.9;` is executed in C?",
+    "o": [
+      "x becomes 3",
+      "x becomes 4",
+      "x becomes 0",
+      "x becomes 3.9"
+    ]
+  },
+  {
+    "q": "Evaluate this expression: `4 + 2 * 5 - 3`",
+    "o": [
+      "11",
+      "7",
+      "17",
+      "13"
+    ]
+  },
+  {
+    "q": "Which expression correctly evaluates to true only if both `a` is greater than `b` and `b` is not zero?",
+    "o": [
+      "(a > b) && (b != 0)",
+      "(a > b) & (b != 0)",
+      "(a > b) || (b == 0)",
+      "a > b and b != 0"
+    ]
+  },
+  {
+    "q": "What is the output of this code?\n\n`int a = 12, b = 4; printf(\"%d\", a >> b);`",
+    "o": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "q": "Which of the following correctly demonstrates implicit type conversion in C?",
+    "o": [
+      "float f = 10 / 3;",
+      "int i = (int)3.14;",
+      "char c = (char)1000;",
+      "double d = (double)f;"
+    ]
+  },
+  {
+    "q": "If `int a = 2; int b = 3;`, what will `a += b * 2;` set `a` to?",
+    "o": [
+      "8",
+      "6",
+      "10",
+      "12"
+    ]
+  },
+  {
+    "q": "Which of the following statements about bitwise AND `&` is true?",
+    "o": [
+      "It returns 1 only if both bits are 1.",
+      "It returns 1 if either bit is 1.",
+      "It flips all bits of the number.",
+      "It shifts bits to the left."
+    ]
+  },
+  {
+    "q": "What is the result of this expression?\n\n`10 > 5 && 3 < 1`",
+    "o": [
+      "0",
+      "1",
+      "3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following has the lowest precedence in C?",
+    "o": [
+      "Assignment `=`",
+      "Multiplication `*`",
+      "Addition `+`",
+      "Bitwise OR `|`"
+    ]
+  },
+  {
+    "q": "What will this code print?\n\n`int x = 5; printf(\"%d\", ~x);`",
+    "o": [
+      "-6",
+      "6",
+      "4",
+      "-5"
+    ]
+  },
+  {
+    "q": "Which of the following casts a float value to int explicitly?",
+    "o": [
+      "(int)value",
+      "int(value)",
+      "cast(int, value)",
+      "int = value"
+    ]
+  },
+  {
+    "q": "In C, what is the associativity of the assignment operator `=`?",
+    "o": [
+      "Right to left",
+      "Left to right",
+      "None",
+      "Depends on the data type"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 2;\n    int result = a + b * 3;\n    printf(\"%d\", result);\n    return 0;\n}",
+    "o": [
+      "11",
+      "21",
+      "15",
+      "7"
+    ]
+  },
+  {
+    "q": "Which of the following is a logical AND operator in C?",
+    "o": [
+      "&&",
+      "&",
+      "AND",
+      "and"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 4, y = 2;\n    printf(\"%d\", x >> y);\n    return 0;\n}",
+    "o": [
+      "1",
+      "2",
+      "0",
+      "8"
+    ]
+  },
+  {
+    "q": "Which of the following operators has the highest precedence in C?",
+    "o": [
+      "()",
+      "*",
+      "+",
+      "=="
+    ]
+  },
+  {
+    "q": "Which operator is used to perform bitwise OR in C?",
+    "o": [
+      "|",
+      "||",
+      "^",
+      "&"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 10;\n    a += 5;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "15",
+      "10",
+      "5",
+      "20"
+    ]
+  },
+  {
+    "q": "Which of the following correctly type casts an integer 'a' to float in C?",
+    "o": [
+      "(float)a",
+      "float(a)",
+      "cast<float>(a)",
+      "float:a"
+    ]
+  },
+  {
+    "q": "What is the result of the expression `5 > 3 && 2 < 4` in C?",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 3, y = 5;\n    int z = x & y;\n    printf(\"%d\", z);\n    return 0;\n}",
+    "o": [
+      "1",
+      "3",
+      "5",
+      "0"
+    ]
+  },
+  {
+    "q": "What does the expression `(float)(5/2)` evaluate to in C?",
+    "o": [
+      "2.000000",
+      "2.500000",
+      "2.5",
+      "2"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct result of the expression `7 % 3` in C?",
+    "o": [
+      "1",
+      "2",
+      "0",
+      "3"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 10, y = 4;\n    int result = x / y;\n    printf(\"%d\", result);\n    return 0;\n}",
+    "o": [
+      "2",
+      "2.5",
+      "0",
+      "3"
+    ]
+  },
+  {
+    "q": "Which operator is used for logical NOT in C?",
+    "o": [
+      "!",
+      "~",
+      "not",
+      "!!"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 6;\n    printf(\"%d\", a &= 3);\n    return 0;\n}",
+    "o": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "In C, which expression evaluates to true?",
+    "o": [
+      "4 != 5",
+      "4 = 5",
+      "4 == 5",
+      "4 >< 5"
+    ]
+  },
+  {
+    "q": "Which of the following statements about operator precedence in C is true?",
+    "o": [
+      "Multiplication has higher precedence than addition",
+      "Addition has higher precedence than multiplication",
+      "All arithmetic operators have the same precedence",
+      "Relational operators come before arithmetic operators"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int result = 1 || 0 && 0;\n    printf(\"%d\", result);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "Error",
+      "2"
+    ]
+  },
+  {
+    "q": "Which of these assignment operations will double the value of 'x'?",
+    "o": [
+      "x *= 2;",
+      "x = x + x;",
+      "x = x * 1;",
+      "x = x / 2;"
+    ]
+  },
+  {
+    "q": "What will be the result of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 8;\n    int y = ~x;\n    printf(\"%d\", y);\n    return 0;\n}",
+    "o": [
+      "-9",
+      "7",
+      "-8",
+      "-1"
+    ]
+  },
+  {
+    "q": "Which of the following correctly describes implicit type conversion in C?",
+    "o": [
+      "Automatic conversion of data types during expression evaluation",
+      "Manual conversion using cast operator",
+      "Conversion from float to int always",
+      "Only allowed with user-defined types"
+    ]
+  },
+  {
+    "q": "Which of the following expressions evaluates to false in C?",
+    "o": [
+      "3 > 5",
+      "5 > 3",
+      "10 >= 10",
+      "2 != 4"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 7, b = 3;\n    printf(\"%d\", a % b);\n    return 0;\n}",
+    "o": [
+      "1",
+      "2",
+      "0",
+      "10"
+    ]
+  },
+  {
+    "q": "Which bitwise operator is used to set a specific bit to 1 while leaving others unchanged?",
+    "o": [
+      "| (OR)",
+      "& (AND)",
+      "^ (XOR)",
+      "~ (NOT)"
+    ]
+  },
+  {
+    "q": "In the expression `a + b * c`, which operation is performed first in C?",
+    "o": [
+      "b * c",
+      "a + b",
+      "c + a",
+      "Depends on parentheses"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    x = x++;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "5",
+      "6",
+      "Error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "What is the role of type casting in C?",
+    "o": [
+      "To explicitly convert one data type to another",
+      "To remove data from memory",
+      "To initialize variables",
+      "To compare two values"
+    ]
+  },
+  {
+    "q": "Which of these expressions will return true in C?",
+    "o": [
+      "10 == 10 && 5 < 6",
+      "10 == 9 || 5 > 6",
+      "!(5 <= 5)",
+      "7 < 3 && 1"
+    ]
+  },
+  {
+    "q": "What does the expression `~0` evaluate to in C?",
+    "o": [
+      "-1",
+      "0",
+      "1",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of a compound assignment operator in C?",
+    "o": [
+      "+=",
+      "==",
+      "--",
+      "!="
+    ]
+  },
+  {
+    "q": "What will be the result of the following C code?",
+    "c": "#include <stdio.h>\nint main() {\n    float a = 5 / 2;\n    printf(\"%.1f\", a);\n    return 0;\n}",
+    "o": [
+      "2.0",
+      "2.5",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is the arithmetic division operator in C?",
+    "o": [
+      "/",
+      "\\",
+      "div",
+      "//"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 2, y = 3;\n    printf(\"%d\", x * y - y);\n    return 0;\n}",
+    "o": [
+      "3",
+      "1",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "q": "Which of the following correctly represents the logical OR operator in C?",
+    "o": [
+      "||",
+      "|",
+      "or",
+      "/|"
+    ]
+  },
+  {
+    "q": "Which operator is used to invert all bits in a number?",
+    "o": [
+      "~",
+      "!",
+      "^",
+      "#"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 12, b = 5;\n    printf(\"%d\", a & b);\n    return 0;\n}",
+    "o": [
+      "4",
+      "7",
+      "17",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following expressions evaluates to true?",
+    "o": [
+      "(5 <= 5) && (3 != 4)",
+      "(10 < 3) && (4 > 2)",
+      "(7 > 7) || (0 > 1)",
+      "!(2 == 2)"
+    ]
+  },
+  {
+    "q": "What does the expression `(int)3.9` return in C?",
+    "o": [
+      "3",
+      "4",
+      "3.9",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these has the **lowest precedence** in C?",
+    "o": [
+      "Assignment (=)",
+      "Multiplication (*)",
+      "Relational (<)",
+      "Logical AND (&&)"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int result = 8 >> 2;\n    printf(\"%d\", result);\n    return 0;\n}",
+    "o": [
+      "2",
+      "4",
+      "1",
+      "16"
+    ]
+  },
+  {
+    "q": "Which operator in C is used to combine conditions?",
+    "o": [
+      "&&",
+      "&",
+      "|",
+      "="
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to multiply two integers in C?",
+    "o": [
+      "a * b",
+      "a x b",
+      "a multiply b",
+      "a ** b"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 4;\n    printf(\"%d\", x % 2);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which operator is used for comparing equality in C?",
+    "o": [
+      "==",
+      "=",
+      "===",
+      "!="
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 10;\n    printf(\"%d\", a |= 4);\n    return 0;\n}",
+    "o": [
+      "14",
+      "6",
+      "4",
+      "0"
+    ]
+  },
+  {
+    "q": "Which operator has higher precedence than logical AND (&&)?",
+    "o": [
+      "Relational operators (>, <)",
+      "Logical OR (||)",
+      "Assignment (=)",
+      "Comma ( , )"
+    ]
+  },
+  {
+    "q": "What is the result of `(int)(7.8) + (float)(3)` in C?",
+    "o": [
+      "10.0",
+      "10",
+      "7.8",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following expressions correctly demonstrates short-circuit behavior?",
+    "o": [
+      "(0 && func())",
+      "(1 && func())",
+      "(0 || func())",
+      "(func() && 1)"
+    ]
+  },
+  {
+    "q": "What will be the output of the code below?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 1;\n    printf(\"%d\", x << 3);\n    return 0;\n}",
+    "o": [
+      "8",
+      "3",
+      "1",
+      "4"
+    ]
+  },
+  {
+    "q": "Which of these correctly casts an integer to a character type?",
+    "o": [
+      "(char)num",
+      "char(num)",
+      "char = num",
+      "(int)char"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the expression `10 + 20 / 5`?",
+    "o": [
+      "Division happens before addition",
+      "Addition happens before division",
+      "They are evaluated left to right",
+      "The expression is invalid"
+    ]
+  },
+  {
+    "q": "Which of the following is a relational operator in C?",
+    "o": [
+      ">=",
+      "&&",
+      "+=",
+      "||"
+    ]
+  },
+  {
+    "q": "What will be the result of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 9, b = 2;\n    float result = a / b;\n    printf(\"%.2f\", result);\n    return 0;\n}",
+    "o": [
+      "4.00",
+      "4.50",
+      "4.25",
+      "4"
+    ]
+  },
+  {
+    "q": "Which operator is used to perform bitwise exclusive OR (XOR) in C?",
+    "o": [
+      "^",
+      "^^",
+      "|",
+      "&"
+    ]
+  },
+  {
+    "q": "What is the output of this C code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 1, b = 0;\n    printf(\"%d\", a && b);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "2",
+      "-1"
+    ]
+  },
+  {
+    "q": "Which of these has **right-to-left** associativity in C?",
+    "o": [
+      "Assignment (=)",
+      "Addition (+)",
+      "Multiplication (*)",
+      "Relational (!=)"
+    ]
+  },
+  {
+    "q": "What will be the result of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int val = 5;\n    val <<= 1;\n    printf(\"%d\", val);\n    return 0;\n}",
+    "o": [
+      "10",
+      "2",
+      "5",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about type casting in C?",
+    "o": [
+      "It can change the way a value is interpreted by the compiler.",
+      "It always increases memory usage.",
+      "It prevents data loss in all cases.",
+      "It is only allowed in loops."
+    ]
+  },
+  {
+    "q": "What is the output of the following expression: `5 + 2 * 3`?",
+    "o": [
+      "11",
+      "21",
+      "7",
+      "13"
+    ]
+  },
+  {
+    "q": "Which of the following is an invalid assignment in C?",
+    "o": [
+      "int a = 5.5;",
+      "float b = 10;",
+      "char c = 'A';",
+      "int x = (int)3.9;"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 2, y = 3;\n    printf(\"%d\", !(x > y));\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "-1"
+    ]
+  },
+  {
+    "q": "Which of the following will give remainder when two integers are divided?",
+    "o": [
+      "%",
+      "/",
+      "*",
+      "&"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 10, y = 3;\n    printf(\"%d\", x / y);\n    return 0;\n}",
+    "o": [
+      "3",
+      "3.33",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which logical operator returns true only if both conditions are false?",
+    "o": [
+      "!",
+      "&&",
+      "||",
+      "&"
+    ]
+  },
+  {
+    "q": "What will this expression return: `(8 & 3)`?",
+    "o": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "q": "Which operator has the **highest precedence** in C?",
+    "o": [
+      "()",
+      "*",
+      "==",
+      "&&"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    x += 3;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "8",
+      "3",
+      "5",
+      "15"
+    ]
+  },
+  {
+    "q": "Which of these casts a `float` to an `int` in C?",
+    "o": [
+      "(int)num",
+      "int(num)",
+      "(float)num",
+      "(num)int"
+    ]
+  },
+  {
+    "q": "Which operator would be used to shift bits to the right?",
+    "o": [
+      ">>",
+      "<<",
+      ">>>",
+      "<>"
+    ]
+  },
+  {
+    "q": "What is the result of this expression: `4 + 5 * 2 - 1`?",
+    "o": [
+      "13",
+      "17",
+      "9",
+      "8"
+    ]
+  },
+  {
+    "q": "Which of the following will evaluate to true?",
+    "o": [
+      "(3 != 4) && (2 < 5)",
+      "(3 == 3) || (2 > 5)",
+      "(5 < 2) && (1 == 1)",
+      "!(2 <= 2)"
+    ]
+  },
+  {
+    "q": "Which operator is used to increase a variable’s value by one in C?",
+    "o": [
+      "++",
+      "+=",
+      "+1",
+      "--"
+    ]
+  },
+  {
+    "q": "What is the output of this C code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 3, b = 4;\n    printf(\"%d\", a > b);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "q": "Which of these is a logical NOT operator in C?",
+    "o": [
+      "!",
+      "~",
+      "not",
+      "!!"
+    ]
+  },
+  {
+    "q": "What does the expression `7 | 1` evaluate to?",
+    "o": [
+      "7",
+      "1",
+      "6",
+      "8"
+    ]
+  },
+  {
+    "q": "Which has higher precedence: multiplication (*) or addition (+)?",
+    "o": [
+      "Multiplication (*)",
+      "Addition (+)",
+      "They are equal",
+      "Depends on operands"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    float val = (float)7 / 2;\n    printf(\"%.1f\", val);\n    return 0;\n}",
+    "o": [
+      "3.5",
+      "3",
+      "4.0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these is a compound assignment operator?",
+    "o": [
+      "*=",
+      "*",
+      "=",
+      "=="
+    ]
+  },
+  {
+    "q": "What will this print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 4;\n    printf(\"%d\", a & 1);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "4",
+      "2"
+    ]
+  },
+  {
+    "q": "Which of the following expressions will evaluate to 1 (true)?",
+    "o": [
+      "!(2 > 3)",
+      "2 > 3",
+      "5 && 0",
+      "0 || 0"
+    ]
+  },
+  {
+    "q": "What does this line do in C: `int x = (int)3.99;`?",
+    "o": [
+      "Stores 3 in x",
+      "Rounding to 4",
+      "Stores 3.99 in x",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which operator would you use to compare if two values are not equal in C?",
+    "o": [
+      "!=",
+      "==",
+      "!==",
+      "<>"
+    ]
+  },
+  {
+    "q": "What is the output of this C program?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 6, b = 2;\n    printf(\"%d\", a % b);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "3",
+      "2"
+    ]
+  },
+  {
+    "q": "Which of the following performs a bitwise OR operation?",
+    "o": [
+      "|",
+      "||",
+      "&",
+      "^"
+    ]
+  },
+  {
+    "q": "Which assignment operator adds the right-hand value to the left-hand variable?",
+    "o": [
+      "+=",
+      "++",
+      "=",
+      ":="
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 7, b = 3;\n    printf(\"%d\", a > b && b > 5);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "3",
+      "7"
+    ]
+  },
+  {
+    "q": "Which expression demonstrates **implicit type conversion** in C?",
+    "o": [
+      "float y = 5 / 2;",
+      "int x = (int)5.6;",
+      "double z = (double)3;",
+      "char c = (char)100;"
+    ]
+  },
+  {
+    "q": "What is the value of `3 * 2 + 4 / 2` in C?",
+    "o": [
+      "8",
+      "5",
+      "10",
+      "3"
+    ]
+  },
+  {
+    "q": "What does this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 2;\n    printf(\"%d\", ~a);\n    return 0;\n}",
+    "o": [
+      "-3",
+      "-2",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "q": "Which of these has **left-to-right** associativity?",
+    "o": [
+      "Arithmetic operators (+, -)",
+      "Assignment operators",
+      "Logical OR",
+      "Unary operators"
+    ]
+  },
+  {
+    "q": "How does C handle this: `(int)(4.7 + 3.3)`?",
+    "o": [
+      "8",
+      "8.0",
+      "7.9",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which operator is used to combine multiple conditions in an `if` statement?",
+    "o": [
+      "&&",
+      "&",
+      "|",
+      "%"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 8;\n    printf(\"%d\", x >> 1);\n    return 0;\n}",
+    "o": [
+      "4",
+      "8",
+      "16",
+      "0"
+    ]
+  },
+  {
+    "q": "Which operator has the **lowest precedence** in C?",
+    "o": [
+      "=",
+      "+",
+      "*",
+      "!"
+    ]
+  },
+  {
+    "q": "Which of these is a valid example of **explicit type casting**?",
+    "o": [
+      "(float)7",
+      "float(7)",
+      "(7)float",
+      "cast(7, float)"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 10;\n    printf(\"%d\", a < b);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "5",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of these operators is used to flip bits in C?",
+    "o": [
+      "~",
+      "^",
+      "!",
+      "&"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the `==` operator?",
+    "o": [
+      "It compares two values for equality",
+      "It assigns values to variables",
+      "It performs bitwise AND",
+      "It checks data types"
+    ]
+  },
+  {
+    "q": "What will be the result of this expression: `6 + 3 * 2 - 1`?",
+    "o": [
+      "11",
+      "13",
+      "17",
+      "8"
+    ]
+  },
+  {
+    "q": "In the expression `a += 2;`, what does `+=` mean?",
+    "o": [
+      "Add 2 to a and assign the result to a",
+      "Compare a with 2",
+      "Assign 2 to a",
+      "Divide a by 2"
+    ]
+  },
+  {
+    "q": "What will this print in C?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 1, b = 0;\n    printf(\"%d\", a || b);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "-1"
+    ]
+  },
+  {
+    "q": "Which operator checks whether a value is greater than or equal to another?",
+    "o": [
+      ">=",
+      "=>",
+      ">>",
+      "=<"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 4, y = 2;\n    printf(\"%d\", x * y + x);\n    return 0;\n}",
+    "o": [
+      "12",
+      "10",
+      "8",
+      "6"
+    ]
+  },
+  {
+    "q": "Which bitwise operator inverts all bits of a number?",
+    "o": [
+      "~",
+      "^",
+      "&",
+      "|"
+    ]
+  },
+  {
+    "q": "What does this code return?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 10;\n    printf(\"%d\", a == b);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "5",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of these is a valid way to force a `double` into an `int`?",
+    "o": [
+      "(int)3.75",
+      "int(3.75)",
+      "cast<int>3.75",
+      "toInt(3.75)"
+    ]
+  },
+  {
+    "q": "What is the output of the following expression: `2 * 3 + 4 >> 1`?",
+    "o": [
+      "5",
+      "6",
+      "7",
+      "4"
+    ]
+  },
+  {
+    "q": "Which of the following has **right-to-left** associativity?",
+    "o": [
+      "Assignment operator (=)",
+      "Addition (+)",
+      "Multiplication (*)",
+      "Relational operators (==, !=)"
+    ]
+  },
+  {
+    "q": "Which logical operator ensures both conditions must be true?",
+    "o": [
+      "&&",
+      "||",
+      "&",
+      "!"
+    ]
+  },
+  {
+    "q": "What does this expression return: `10 % 3 == 1`?",
+    "o": [
+      "1",
+      "0",
+      "3",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of the following operators has the **highest precedence**?",
+    "o": [
+      "++",
+      "==",
+      "+",
+      "="
+    ]
+  },
+  {
+    "q": "Which operator in C is used to perform integer division?",
+    "o": [
+      "/",
+      "//",
+      "div",
+      "%"
+    ]
+  },
+  {
+    "q": "What is the output of this C code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 2, b = 3;\n    printf(\"%d\", (a + b) * b);\n    return 0;\n}",
+    "o": [
+      "15",
+      "10",
+      "6",
+      "9"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid use of the modulus operator?",
+    "o": [
+      "int x = 10 % 3;",
+      "int x = 10 % 3.0;",
+      "int x = 10.0 % 3;",
+      "int x = mod(10, 3);"
+    ]
+  },
+  {
+    "q": "What is the value of `4 && 0`?",
+    "o": [
+      "0",
+      "1",
+      "4",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5;\n    a <<= 1;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "10",
+      "2",
+      "6",
+      "1"
+    ]
+  },
+  {
+    "q": "Which operator is used to assign a value to a variable?",
+    "o": [
+      "=",
+      "==",
+      ":=",
+      "<-"
+    ]
+  },
+  {
+    "q": "Which of the following demonstrates **implicit** type conversion?",
+    "o": [
+      "float f = 10;",
+      "int x = (int)5.5;",
+      "char c = (char)100;",
+      "double d = (double)7;"
+    ]
+  },
+  {
+    "q": "Which has **higher precedence** in C?",
+    "o": [
+      "*",
+      "+",
+      "==",
+      "="
+    ]
+  },
+  {
+    "q": "What will this print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 8;\n    printf(\"%d\", a ^ 1);\n    return 0;\n}",
+    "o": [
+      "9",
+      "7",
+      "1",
+      "8"
+    ]
+  },
+  {
+    "q": "Which operator is **unary** among the following?",
+    "o": [
+      "!",
+      "+",
+      "==",
+      "&"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of an arithmetic operator in C?",
+    "o": [
+      "+",
+      "==",
+      "&&",
+      "&"
+    ]
+  },
+  {
+    "q": "What is the result of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 12;\n    printf(\"%d\", x % 5);\n    return 0;\n}",
+    "o": [
+      "2",
+      "3",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of these operators has **right-to-left** associativity in C?",
+    "o": [
+      "=",
+      "*",
+      "+",
+      ">"
+    ]
+  },
+  {
+    "q": "Which bitwise operator sets a bit to 1 if exactly one of the bits is 1?",
+    "o": [
+      "^",
+      "|",
+      "&",
+      "~"
+    ]
+  },
+  {
+    "q": "What does this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    float a = 7 / 2;\n    printf(\"%.1f\", a);\n    return 0;\n}",
+    "o": [
+      "3.0",
+      "3.5",
+      "4.0",
+      "3.2"
+    ]
+  },
+  {
+    "q": "Which operator is used to compare two values in C?",
+    "o": [
+      "==",
+      "=",
+      "===",
+      ":="
+    ]
+  },
+  {
+    "q": "What does the expression `!(5 > 3)` evaluate to?",
+    "o": [
+      "0",
+      "1",
+      "5",
+      "-1"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 3;\n    a &= 1;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of **explicit type casting**?",
+    "o": [
+      "int x = (int)3.14;",
+      "int x = 3.14;",
+      "float x = 5;",
+      "char x = 100;"
+    ]
+  },
+  {
+    "q": "Which expression will evaluate to true (1)?",
+    "o": [
+      "(4 != 2) && (3 > 1)",
+      "(5 == 5) || (2 < 1)",
+      "(7 < 3) && (0 != 1)",
+      "(6 > 9) && (2 == 2)"
+    ]
+  },
+  {
+    "q": "Which operator will result in a remainder after division?",
+    "o": [
+      "%",
+      "/",
+      "&",
+      "!="
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 6, b = 4;\n    printf(\"%d\", a > b && b > 2);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "6"
+    ]
+  },
+  {
+    "q": "Which operator performs bitwise OR in C?",
+    "o": [
+      "|",
+      "||",
+      "&",
+      "or"
+    ]
+  },
+  {
+    "q": "Which of the following expressions performs **type promotion** implicitly?",
+    "o": [
+      "int a = 5; float b = a + 2.5;",
+      "int a = (int)2.5;",
+      "float f = (float)7;",
+      "int x = (int)'A';"
+    ]
+  },
+  {
+    "q": "What is the output of this expression: `2 + 3 * 4`?",
+    "o": [
+      "14",
+      "20",
+      "24",
+      "18"
+    ]
+  },
+  {
+    "q": "Which of these has the **lowest precedence** in C?",
+    "o": [
+      "=",
+      "&&",
+      "+",
+      ">"
+    ]
+  },
+  {
+    "q": "Which operator toggles bits in C?",
+    "o": [
+      "^",
+      "&",
+      "!",
+      "||"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    x += 3;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "8",
+      "5",
+      "3",
+      "2"
+    ]
+  },
+  {
+    "q": "Which operator checks for **inequality** between two values?",
+    "o": [
+      "!=",
+      "==",
+      "<=",
+      "=>"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid use of **compound assignment**?",
+    "o": [
+      "x *= 4;",
+      "x =* 4;",
+      "x = x*;",
+      "*= x 4;"
+    ]
+  },
+  {
+    "q": "Which operator in C checks if both conditions are true?",
+    "o": [
+      "&&",
+      "&",
+      "||",
+      "=="
+    ]
+  },
+  {
+    "q": "What is the result of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 9;\n    printf(\"%d\", x % 4);\n    return 0;\n}",
+    "o": [
+      "1",
+      "2",
+      "4",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of these operators is used for **bitwise AND**?",
+    "o": [
+      "&",
+      "&&",
+      "|",
+      "^"
+    ]
+  },
+  {
+    "q": "Which of these expressions performs **explicit type casting**?",
+    "o": [
+      "float f = (float)10 / 3;",
+      "int a = 5.0;",
+      "double d = 2 + 2;",
+      "char c = 65;"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 2, b = 5;\n    printf(\"%d\", a * b + b);\n    return 0;\n}",
+    "o": [
+      "15",
+      "10",
+      "12",
+      "7"
+    ]
+  },
+  {
+    "q": "Which operator has **higher precedence** than logical AND (`&&`)?",
+    "o": [
+      "==",
+      "=",
+      "*",
+      "||"
+    ]
+  },
+  {
+    "q": "Which of the following is a **valid relational operator** in C?",
+    "o": [
+      "<=",
+      "=<",
+      "=>",
+      "<>"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 1, b = 0;\n    printf(\"%d\", a || b);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "a",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which operator shifts bits to the left in C?",
+    "o": [
+      "<<",
+      ">>",
+      "<=",
+      ">>>"
+    ]
+  },
+  {
+    "q": "Which operator performs addition and assignment in one step?",
+    "o": [
+      "+=",
+      "++",
+      "=+",
+      "+"
+    ]
+  },
+  {
+    "q": "Which of the following expressions uses an arithmetic operator?",
+    "o": [
+      "a + b",
+      "a == b",
+      "a && b",
+      "a | b"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 7;\n    printf(\"%d\", a >> 1);\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "4",
+      "7"
+    ]
+  },
+  {
+    "q": "Which of these is a logical NOT operation in C?",
+    "o": [
+      "!",
+      "~",
+      "not",
+      "!!"
+    ]
+  },
+  {
+    "q": "Which of these assignment operators multiplies and assigns?",
+    "o": [
+      "*=",
+      "=>",
+      "=*",
+      "**"
+    ]
+  },
+  {
+    "q": "What is the result of the following expression?\n\n`(5 > 3) && (2 != 2)`",
+    "o": [
+      "0",
+      "1",
+      "2",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which operator has higher precedence: `*` or `==`?",
+    "o": [
+      "*",
+      "==",
+      "Both have same",
+      "Depends on compiler"
+    ]
+  },
+  {
+    "q": "What will this C code output?",
+    "c": "#include <stdio.h>\nint main() {\n    float x = 10 / 4;\n    printf(\"%.1f\", x);\n    return 0;\n}",
+    "o": [
+      "2.0",
+      "2.5",
+      "2.4",
+      "2.3"
+    ]
+  },
+  {
+    "q": "Which of the following is **not** a bitwise operator in C?",
+    "o": [
+      "&&",
+      "|",
+      "&",
+      "^"
+    ]
+  },
+  {
+    "q": "Which conversion is an example of implicit type promotion?",
+    "o": [
+      "int to float",
+      "float to int",
+      "char to short",
+      "double to int"
+    ]
+  },
+  {
+    "q": "What does this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 4, b = 3;\n    printf(\"%d\", a > b || b == 1);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which operator in C is used to flip all bits of a number?",
+    "o": [
+      "~",
+      "!",
+      "^",
+      "||"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 2, b = 3;\n    printf(\"%d\", a * b - b);\n    return 0;\n}",
+    "o": [
+      "3",
+      "6",
+      "1",
+      "5"
+    ]
+  },
+  {
+    "q": "Which of the following shows correct use of type casting in C?",
+    "o": [
+      "int x = (int)5.9;",
+      "int x = 5.9(int);",
+      "cast int(5.9);",
+      "int = (x)5.9;"
+    ]
+  },
+  {
+    "q": "Which operator checks if both conditions are false and returns false otherwise?",
+    "o": [
+      "&&",
+      "||",
+      "|",
+      "!="
+    ]
+  },
+  {
+    "q": "What is the result of this expression: `6 / 2 + 3 * 2`?",
+    "o": [
+      "9",
+      "7",
+      "6",
+      "12"
+    ]
+  },
+  {
+    "q": "Which of the following operators has **right-to-left** associativity in C?",
+    "o": [
+      "? :",
+      "&&",
+      "<",
+      "/"
+    ]
+  },
+  {
+    "q": "What does this program output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 0;\n    printf(\"%d\", !b);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "-1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following operators cannot be overloaded in C?",
+    "o": [
+      "All operators in C are fixed",
+      "+",
+      "-",
+      "*"
+    ]
+  },
+  {
+    "q": "Which operation has **lower precedence** than logical AND (`&&`)?",
+    "o": [
+      "=",
+      "==",
+      "<",
+      "+"
+    ]
+  },
+  {
+    "q": "Which of the following is an invalid assignment in C?",
+    "o": [
+      "5 = x;",
+      "x = 5;",
+      "x = x + 1;",
+      "x += 2;"
+    ]
+  },
+  {
+    "q": "Which operator is used to check if two values are equal in C?",
+    "o": [
+      "==",
+      "=",
+      "!=",
+      "==="
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 8, b = 3;\n    printf(\"%d\", a % b + b);\n    return 0;\n}",
+    "o": [
+      "5",
+      "3",
+      "8",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid bitwise XOR operator in C?",
+    "o": [
+      "^",
+      "^^",
+      "xor",
+      "!="
+    ]
+  },
+  {
+    "q": "Which expression correctly converts a float to int explicitly?",
+    "o": [
+      "int x = (int)4.8;",
+      "int x = int(4.8);",
+      "x = toInt(4.8);",
+      "x = int:4.8;"
+    ]
+  },
+  {
+    "q": "Evaluate this expression: `2 + 3 * 2 - 4 / 2`",
+    "o": [
+      "6",
+      "4",
+      "8",
+      "10"
+    ]
+  },
+  {
+    "q": "Which operator group has the **highest precedence** in C?",
+    "o": [
+      "Postfix (++ --)",
+      "Multiplicative (* / %)",
+      "Additive (+ -)",
+      "Logical AND (&&)"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 2;\n    x <<= 2;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "8",
+      "4",
+      "2",
+      "16"
+    ]
+  },
+  {
+    "q": "Which operator is used to assign the result of addition back to the variable?",
+    "o": [
+      "+=",
+      "++",
+      "==",
+      "=+"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5;\n    printf(\"%d\", a > 3 && a < 10);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "5",
+      "10"
+    ]
+  },
+  {
+    "q": "Which conversion is **not performed automatically** by the compiler in C?",
+    "o": [
+      "float to int",
+      "char to int",
+      "int to float",
+      "short to int"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid relational expression in C?",
+    "o": [
+      "x != y",
+      "x =! y",
+      "x <> y",
+      "x !== y"
+    ]
+  },
+  {
+    "q": "What will this C program output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 4, b = 2;\n    printf(\"%d\", a / b * b);\n    return 0;\n}",
+    "o": [
+      "4",
+      "2",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "Which bitwise operator is used to set a specific bit to 1?",
+    "o": [
+      "|",
+      "&",
+      "^",
+      "&&"
+    ]
+  },
+  {
+    "q": "Which of the following performs a valid implicit type conversion?",
+    "o": [
+      "int a = 3.0;",
+      "float b = (float)3;",
+      "char c = (int)'a';",
+      "long d = (short)5;"
+    ]
+  },
+  {
+    "q": "Evaluate the expression: `8 / 2 + 3 * 2`",
+    "o": [
+      "10",
+      "9",
+      "12",
+      "8"
+    ]
+  },
+  {
+    "q": "Which operator has the lowest precedence among the following?",
+    "o": [
+      "=",
+      "&&",
+      "+",
+      "%"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 6;\n    printf(\"%d\", ~x);\n    return 0;\n}",
+    "o": [
+      "-7",
+      "-6",
+      "7",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is a compound assignment operator?",
+    "o": [
+      "-=",
+      "--",
+      "<=",
+      "=="
+    ]
+  },
+  {
+    "q": "Which logical operator returns true if either condition is true?",
+    "o": [
+      "||",
+      "&&",
+      "&",
+      "!="
+    ]
+  },
+  {
+    "q": "What will this program output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5, y = 10;\n    printf(\"%d\", (x > 3) && (y < 20));\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "10",
+      "5"
+    ]
+  },
+  {
+    "q": "Which operator in C is used to perform integer division?",
+    "o": [
+      "/",
+      "\\",
+      "//",
+      "div"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 10, b = 4;\n    printf(\"%d\", a % b * 2);\n    return 0;\n}",
+    "o": [
+      "4",
+      "2",
+      "6",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of these correctly applies a bitwise AND operation?",
+    "o": [
+      "a & b",
+      "a && b",
+      "a and b",
+      "AND(a, b)"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of implicit type conversion?",
+    "o": [
+      "int a = 3.7;",
+      "float b = (float)5;",
+      "int c = (int)'A';",
+      "double d = (int)7;"
+    ]
+  },
+  {
+    "q": "What is the result of: `10 - 4 * 2 + 1`?",
+    "o": [
+      "3",
+      "5",
+      "9",
+      "10"
+    ]
+  },
+  {
+    "q": "Which operator has right-to-left associativity?",
+    "o": [
+      "=",
+      "+",
+      "&&",
+      "<"
+    ]
+  },
+  {
+    "q": "What is printed by this C program?",
+    "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 1;\n    printf(\"%d\", x << 3);\n    return 0;\n}",
+    "o": [
+      "8",
+      "3",
+      "4",
+      "1"
+    ]
+  },
+  {
+    "q": "Which is a valid use of the assignment operator?",
+    "o": [
+      "x = x + 1;",
+      "x == x + 1;",
+      "x := x + 1;",
+      "x equals x + 1;"
+    ]
+  },
+  {
+    "q": "What does the expression `!0 && 1` evaluate to?",
+    "o": [
+      "1",
+      "0",
+      "-1",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of these conversions may lead to loss of data?",
+    "o": [
+      "float to int",
+      "int to float",
+      "char to int",
+      "short to int"
+    ]
+  },
+  {
+    "q": "Which of these operators in C returns true only when both operands are true?",
+    "o": [
+      "&&",
+      "||",
+      "&",
+      "^"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 7, b = 2;\n    printf(\"%d\", a >> b);\n    return 0;\n}",
+    "o": [
+      "1",
+      "3",
+      "2",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following expressions has the highest precedence?",
+    "o": [
+      "a++",
+      "a * b",
+      "a + b",
+      "a == b"
+    ]
+  },
+  {
+    "q": "Which is a correct example of explicit type conversion?",
+    "o": [
+      "float result = (float)5 / 2;",
+      "float result = 5.0 / 2;",
+      "float result = 5 / 2;",
+      "float result = cast(5 / 2);"
+    ]
+  },
+  {
+    "q": "Evaluate the following: `5 + 3 * 2 - 8 / 4`",
+    "o": [
+      "9",
+      "7",
+      "10",
+      "6"
+    ]
+  },
+  {
+    "q": "Which operator in C is used for one’s complement?",
+    "o": [
+      "~",
+      "!",
+      "-",
+      "&"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 10, y = 0;\n    printf(\"%d\", x && y);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "10",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these uses a compound bitwise assignment?",
+    "o": [
+      "a &= b;",
+      "a = b & c;",
+      "a = a && b;",
+      "a = a | b;"
+    ]
+  },
+  {
+    "q": "Which conversion occurs without an explicit cast?",
+    "o": [
+      "char to int",
+      "float to int",
+      "double to int",
+      "long to short"
+    ]
+  },
+  {
+    "q": "Which operator has the **lowest precedence** among these?",
+    "o": [
+      "=",
+      "+",
+      "*",
+      "&&"
+    ]
+  },
+  {
+    "q": "Which of the following returns false in a logical AND operation?",
+    "o": [
+      "0 && 1",
+      "1 && 1",
+      "1 && 2",
+      "5 && 3"
+    ]
+  },
+  {
+    "q": "What will this output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 3;\n    a *= 2 + 1;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "9",
+      "6",
+      "5",
+      "7"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid bitwise OR operation?",
+    "o": [
+      "x | y",
+      "x || y",
+      "x or y",
+      "x := y"
+    ]
+  },
+  {
+    "q": "Which expression converts an `int` to a `double` explicitly?",
+    "o": [
+      "double val = (double)5;",
+      "double val = 5;",
+      "double val = toDouble(5);",
+      "double val = cast(5);"
+    ]
+  },
+  {
+    "q": "What is the output of `12 / 3 * 2 + 1`?",
+    "o": [
+      "9",
+      "5",
+      "7",
+      "11"
+    ]
+  },
+  {
+    "q": "Which operator has **right-to-left associativity**?",
+    "o": [
+      "?:",
+      "+",
+      "/",
+      "=="
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 1;\n    printf(\"%d\", x ^ 1);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "-1",
+      "2"
+    ]
+  },
+  {
+    "q": "Which of the following correctly adds and assigns in one step?",
+    "o": [
+      "a += 5;",
+      "a =+ 5;",
+      "a = 5+;",
+      "a <= 5;"
+    ]
+  },
+  {
+    "q": "Which of these conversions can be **data lossy** in C?",
+    "o": [
+      "double to int",
+      "int to long",
+      "char to int",
+      "short to int"
+    ]
+  },
+  {
+    "q": "In C, what is the result of `!1 || 0`?",
+    "o": [
+      "0",
+      "1",
+      "true",
+      "undefined"
+    ]
+  },
+  {
+    "q": "Which operator has the highest precedence in the following list?",
+    "o": [
+      "*",
+      "+",
+      "==",
+      "&&"
+    ]
+  },
+  {
+    "q": "What is the result of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 2;\n    int b = 3;\n    printf(\"%d\", a & b);\n    return 0;\n}",
+    "o": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following performs a logical NOT operation?",
+    "o": [
+      "!",
+      "~",
+      "!!",
+      "not"
+    ]
+  },
+  {
+    "q": "Which expression causes implicit type conversion in C?",
+    "o": [
+      "float f = 10;",
+      "float f = (float)10;",
+      "int i = (int)10.5;",
+      "char c = (char)100;"
+    ]
+  },
+  {
+    "q": "Evaluate: `4 + 2 * 3 - 1`",
+    "o": [
+      "9",
+      "11",
+      "7",
+      "5"
+    ]
+  },
+  {
+    "q": "Which operator has left-to-right associativity?",
+    "o": [
+      "+",
+      "=",
+      "?:",
+      "sizeof"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 6;\n    printf(\"%d\", x | 1);\n    return 0;\n}",
+    "o": [
+      "7",
+      "6",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following correctly shifts a number two bits to the left?",
+    "o": [
+      "x << 2",
+      "x >> 2",
+      "x <<< 2",
+      "shift(x, 2)"
+    ]
+  },
+  {
+    "q": "Which conversion may cause precision loss?",
+    "o": [
+      "double to float",
+      "int to long",
+      "char to short",
+      "short to int"
+    ]
+  },
+  {
+    "q": "What is the value of this expression in C: `(1 || 0) && (0 || 0)`?",
+    "o": [
+      "0",
+      "1",
+      "true",
+      "-1"
+    ]
+  },
+  {
+    "q": "Which operator evaluates first in the expression: `5 + 3 * 2`?",
+    "o": [
+      "*",
+      "+",
+      "=",
+      "%"
+    ]
+  },
+  {
+    "q": "What will this program output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5;\n    printf(\"%d\", a++ * 2);\n    return 0;\n}",
+    "o": [
+      "10",
+      "12",
+      "6",
+      "11"
+    ]
+  },
+  {
+    "q": "Which operator performs bitwise XOR?",
+    "o": [
+      "^",
+      "&",
+      "&&",
+      "||"
+    ]
+  },
+  {
+    "q": "Which of the following is **implicit** type conversion?",
+    "o": [
+      "int x = 2.9;",
+      "float y = (float)3;",
+      "double z = (double)7;",
+      "int i = (int)'a';"
+    ]
+  },
+  {
+    "q": "What will be the output of `10 / 3 * 3`?",
+    "o": [
+      "9",
+      "10",
+      "3.33",
+      "3"
+    ]
+  },
+  {
+    "q": "Which operator in C has the **lowest precedence**?",
+    "o": [
+      "=",
+      "||",
+      "+",
+      "*"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 4;\n    int y = 2;\n    printf(\"%d\", x >> y);\n    return 0;\n}",
+    "o": [
+      "1",
+      "2",
+      "0",
+      "8"
+    ]
+  },
+  {
+    "q": "Which statement uses **compound assignment**?",
+    "o": [
+      "a -= 4;",
+      "a = a - 4;",
+      "a == a - 4;",
+      "a =- 4;"
+    ]
+  },
+  {
+    "q": "Which of the following will result in **loss of precision**?",
+    "o": [
+      "double to int",
+      "int to float",
+      "short to int",
+      "int to long"
+    ]
+  },
+  {
+    "q": "What is the result of `!(1 && 0)`?",
+    "o": [
+      "1",
+      "0",
+      "-1",
+      "Syntax error"
+    ]
+  },
+  {
+    "q": "Which operator will return 1 only if exactly one of the operands is 1 (in bitwise context)?",
+    "o": [
+      "^",
+      "&",
+      "|",
+      "&&"
+    ]
+  },
+  {
+    "q": "What will this C code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 1;\n    int b = 4;\n    printf(\"%d\", a | b);\n    return 0;\n}",
+    "o": [
+      "5",
+      "4",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "q": "In the expression `10 > 3 && 5 < 2`, what is the result?",
+    "o": [
+      "0",
+      "1",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these casts an integer to a character explicitly?",
+    "o": [
+      "char ch = (char)65;",
+      "char ch = 65;",
+      "char ch = cast(65);",
+      "char ch = toChar(65);"
+    ]
+  },
+  {
+    "q": "Evaluate: `18 / 3 + 2 * 4`",
+    "o": [
+      "14",
+      "10",
+      "16",
+      "12"
+    ]
+  },
+  {
+    "q": "Which operator has **higher precedence** than `&&`?",
+    "o": [
+      "==",
+      "||",
+      "=",
+      ","
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 8;\n    printf(\"%d\", ~x);\n    return 0;\n}",
+    "o": [
+      "-9",
+      "-8",
+      "8",
+      "0"
+    ]
+  },
+  {
+    "q": "Which operator is used for modulus operation in C?",
+    "o": [
+      "%",
+      "&",
+      "mod",
+      "//"
+    ]
+  },
+  {
+    "q": "Which assignment changes a variable's value using bitwise AND?",
+    "o": [
+      "x &= y;",
+      "x = x && y;",
+      "x = x & y;",
+      "x := y;"
+    ]
+  },
+  {
+    "q": "Which of these conversions is considered **widening**?",
+    "o": [
+      "int to float",
+      "float to int",
+      "double to int",
+      "int to char"
+    ]
+  },
+  {
+    "q": "Which operator will execute first in this expression: `5 - 2 * 4 + 1`?",
+    "o": [
+      "*",
+      "-",
+      "+",
+      "="
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 7;\n    int b = 2;\n    printf(\"%d\", a % b);\n    return 0;\n}",
+    "o": [
+      "1",
+      "3",
+      "2",
+      "0"
+    ]
+  },
+  {
+    "q": "Which operator is used for bitwise shift right in C?",
+    "o": [
+      ">>",
+      "<<",
+      ">>>",
+      "shiftr"
+    ]
+  },
+  {
+    "q": "What kind of conversion is happening in: `int a = 5.9;`?",
+    "o": [
+      "Implicit type conversion",
+      "Explicit casting",
+      "No conversion",
+      "Bitwise conversion"
+    ]
+  },
+  {
+    "q": "Evaluate the result of `4 * 2 + 6 / 3`",
+    "o": [
+      "10",
+      "14",
+      "6",
+      "8"
+    ]
+  },
+  {
+    "q": "Which of the following operators has **right-to-left associativity** in C?",
+    "o": [
+      "=",
+      "*",
+      "&&",
+      "+"
+    ]
+  },
+  {
+    "q": "What does the following code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 1;\n    int y = 0;\n    printf(\"%d\", x && y);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "-1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which compound assignment is equivalent to `a = a | b;`?",
+    "o": [
+      "a |= b;",
+      "a =| b;",
+      "a = b |;",
+      "a || b;"
+    ]
+  },
+  {
+    "q": "What type of conversion is done when a `char` is assigned to an `int`?",
+    "o": [
+      "Widening conversion",
+      "Narrowing conversion",
+      "No conversion",
+      "Type coercion"
+    ]
+  },
+  {
+    "q": "What will be the value of this expression: `!(0 || 1 && 1)`?",
+    "o": [
+      "0",
+      "1",
+      "-1",
+      "true"
+    ]
+  },
+  {
+    "q": "Which of the following expressions correctly checks if a number is **not equal** to 10?",
+    "o": [
+      "x != 10",
+      "x =! 10",
+      "x <> 10",
+      "x !== 10"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 2;\n    printf(\"%d\", a % b * b);\n    return 0;\n}",
+    "o": [
+      "2",
+      "3",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "q": "Which operator has **higher precedence** than relational operators like `<` or `>=`?",
+    "o": [
+      "*",
+      "==",
+      "&&",
+      "="
+    ]
+  },
+  {
+    "q": "Which of these conversions could result in data loss?",
+    "o": [
+      "float to int",
+      "int to float",
+      "short to int",
+      "char to unsigned char"
+    ]
+  },
+  {
+    "q": "What will the value of `x` be after executing `int x = 5; x <<= 1;`?",
+    "o": [
+      "10",
+      "6",
+      "2",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following statements about operator associativity is true?",
+    "o": [
+      "The assignment operator `=` is right-associative.",
+      "All binary operators are left-associative.",
+      "The `++` operator is left-associative.",
+      "Associativity doesn't matter in C."
+    ]
+  },
+  {
+    "q": "What is the output of the code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 3, b = 4;\n    printf(\"%d\", a & b);\n    return 0;\n}",
+    "o": [
+      "0",
+      "7",
+      "1",
+      "4"
+    ]
+  },
+  {
+    "q": "Which operator combination is used to represent **logical OR** in C?",
+    "o": [
+      "||",
+      "|",
+      "or",
+      "||="
+    ]
+  },
+  {
+    "q": "In C, what does the expression `(float)5 / 2` evaluate to?",
+    "o": [
+      "2.5",
+      "2",
+      "3",
+      "2.0"
+    ]
+  },
+  {
+    "q": "Which of these expressions will always result in a floating-point number?",
+    "o": [
+      "5 / 2.0",
+      "5 / 2",
+      "(int)5 / 2",
+      "5 % 2"
+    ]
+  },
+  {
+    "q": "Which expression correctly uses the ternary operator in C?",
+    "o": [
+      "x = (a > b) ? a : b;",
+      "x = a > b : a ? b;",
+      "x = (a > b) ? a, b;",
+      "x = ? a > b : b;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 9;\n    printf(\"%d\", x % 4 + 2);\n    return 0;\n}",
+    "o": [
+      "5",
+      "3",
+      "6",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of these operators has the **highest precedence** in C?",
+    "o": [
+      "++",
+      "&&",
+      "==",
+      "+"
+    ]
+  },
+  {
+    "q": "What kind of operation is `~x` in C?",
+    "o": [
+      "Bitwise NOT",
+      "Logical NOT",
+      "Unary minus",
+      "Shift operator"
+    ]
+  },
+  {
+    "q": "What will the result of this expression be: `10 >= 5 + 3 && 2`?",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of the following results in an **explicit** type conversion?",
+    "o": [
+      "(float)7 / 2",
+      "7 / 2",
+      "int x = 7.0;",
+      "7 + 2.0"
+    ]
+  },
+  {
+    "q": "What does the `|` operator do when used between two integers?",
+    "o": [
+      "Performs a bitwise OR",
+      "Performs a logical OR",
+      "Performs integer division",
+      "Compares values"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 2;\n    a *= 3 + 1;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "8",
+      "6",
+      "7",
+      "12"
+    ]
+  },
+  {
+    "q": "Which of the following expressions will result in `false` (0) in C?",
+    "o": [
+      "(5 < 2) || (3 == 4)",
+      "(2 <= 2) && (1 != 0)",
+      "(5 > 1) || (0)",
+      "!(0)"
+    ]
+  },
+  {
+    "q": "In C, which operator is **left-associative**?",
+    "o": [
+      "+",
+      "=",
+      "? :",
+      "sizeof"
+    ]
+  },
+  {
+    "q": "Which expression correctly checks if both `x` is even and `y` is positive?",
+    "o": [
+      "(x % 2 == 0) && (y > 0)",
+      "x % 2 == 0 && y > 0",
+      "x % 2 = 0 && y > 0",
+      "(x % 2 == 0) and (y > 0)"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 6, b = 3;\n    printf(\"%d\", a / b * b);\n    return 0;\n}",
+    "o": [
+      "6",
+      "3",
+      "2",
+      "9"
+    ]
+  },
+  {
+    "q": "Which of the following expressions performs an implicit conversion?",
+    "o": [
+      "int x = 3.14;",
+      "float y = (float)7;",
+      "int z = (int)'A';",
+      "char c = (char)100;"
+    ]
+  },
+  {
+    "q": "Which of these operators will be evaluated **last** in the expression `2 + 3 * 4 - 5`?",
+    "o": [
+      "+",
+      "*",
+      "-",
+      "All are evaluated simultaneously"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 4, y = 1;\n    printf(\"%d\", x ^ y);\n    return 0;\n}",
+    "o": [
+      "5",
+      "3",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following operators is used to invert all bits of an integer?",
+    "o": [
+      "~",
+      "!",
+      "&",
+      "^"
+    ]
+  },
+  {
+    "q": "Which one of the following is a valid compound assignment operator in C?",
+    "o": [
+      "<<=",
+      "<<<=",
+      "=== ",
+      "=|"
+    ]
+  },
+  {
+    "q": "Which is the correct order of precedence (highest to lowest) among these?",
+    "o": [
+      "* > + > =",
+      "= > + > *",
+      "+ > * > =",
+      "= > * > +"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    printf(\"%d\", !(x > 5 && x < 15));\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "-1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a **narrowing conversion** in C?",
+    "o": [
+      "double to int",
+      "int to float",
+      "char to int",
+      "short to long"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 10;\n    printf(\"%d\", a++ * 2);\n    return 0;\n}",
+    "o": [
+      "20",
+      "22",
+      "21",
+      "11"
+    ]
+  },
+  {
+    "q": "Which of these is a valid use of an assignment operator in C?",
+    "o": [
+      "x += 5;",
+      "x <== 5;",
+      "x == 5;",
+      "x <+ 5;"
+    ]
+  },
+  {
+    "q": "Which expression demonstrates **both** arithmetic and relational operators?",
+    "o": [
+      "(a + b) > c",
+      "a == b",
+      "a + b * c",
+      "a && b"
+    ]
+  },
+  {
+    "q": "What is the final value of `x` after this code runs?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 2;\n    x *= x + 3;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "10",
+      "6",
+      "9",
+      "5"
+    ]
+  },
+  {
+    "q": "Which operator is **right-associative**?",
+    "o": [
+      "?:",
+      "+",
+      "*",
+      "&&"
+    ]
+  },
+  {
+    "q": "Which of the following is a **bitwise** operation in C?",
+    "o": [
+      "a & b",
+      "a && b",
+      "a and b",
+      "a intersect b"
+    ]
+  },
+  {
+    "q": "What happens in the following statement: `int a = (int)3.99;`?",
+    "o": [
+      "Explicit conversion from float to int",
+      "Implicit conversion from float to int",
+      "Syntax error",
+      "Promotes int to float"
+    ]
+  },
+  {
+    "q": "Choose the correct precedence order from highest to lowest:",
+    "o": [
+      "++, *, +, ==",
+      "+, *, ==, ++",
+      "==, +, *, ++",
+      "*, ++, ==, +"
+    ]
+  },
+  {
+    "q": "What will be printed?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 4, b = 5;\n    printf(\"%d\", a | b);\n    return 0;\n}",
+    "o": [
+      "5",
+      "1",
+      "0",
+      "9"
+    ]
+  },
+  {
+    "q": "Which conversion type best describes `short s = (short)100000;`?",
+    "o": [
+      "Narrowing with data loss",
+      "Widening",
+      "Safe casting",
+      "Implicit widening"
+    ]
+  },
+  {
+    "q": "Which of the following C expressions will result in the value 0?",
+    "o": [
+      "!(4 > 2 && 1)",
+      "(3 < 4) || (0 && 1)",
+      "4 & 4",
+      "(3 + 2) > 2"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 3;\n    int y = x++ + ++x;\n    printf(\"%d\", y);\n    return 0;\n}",
+    "o": [
+      "8",
+      "7",
+      "6",
+      "9"
+    ]
+  },
+  {
+    "q": "Which operator is used for **logical NOT** in C?",
+    "o": [
+      "!",
+      "~",
+      "^",
+      "not"
+    ]
+  },
+  {
+    "q": "Which of the following C operators does **not** associate left to right?",
+    "o": [
+      "=",
+      "+",
+      "-",
+      "%"
+    ]
+  },
+  {
+    "q": "What is the result of the expression `(5 & 3) | 2` in C?",
+    "o": [
+      "3",
+      "7",
+      "1",
+      "6"
+    ]
+  },
+  {
+    "q": "In which scenario will an **implicit type conversion** occur?",
+    "o": [
+      "int a = 10.5;",
+      "float f = (float)10;",
+      "char c = (char)1000;",
+      "long l = (long)5;"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 1, b = 0;\n    printf(\"%d\", a || b && 0);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "Compiler error",
+      "Runtime error"
+    ]
+  },
+  {
+    "q": "Which of the following will result in a **floating point division**?",
+    "o": [
+      "5.0 / 2",
+      "5 / 2",
+      "(int)5.0 / 2",
+      "(int)(5.0 / 2)"
+    ]
+  },
+  {
+    "q": "How many bytes are affected by the bitwise NOT operation `~0xFF`?",
+    "o": [
+      "All bits of the integer size",
+      "Only the lower byte",
+      "Only signed bits",
+      "Only MSB"
+    ]
+  },
+  {
+    "q": "What is the result of the following expression: `(5 == 5) == 1`?",
+    "o": [
+      "1",
+      "0",
+      "true",
+      "false"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 8;\n    int b = a >> 1;\n    printf(\"%d\", b);\n    return 0;\n}",
+    "o": [
+      "4",
+      "8",
+      "16",
+      "2"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the expression: `!(x || y)`?",
+    "o": [
+      "True only if both x and y are false",
+      "True if x is true or y is false",
+      "Equivalent to x && y",
+      "Always false"
+    ]
+  },
+  {
+    "q": "How many times will the loop execute?",
+    "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    while (i++ < 3 && i < 5) {\n        printf(\"%d \", i);\n    }\n    return 0;\n}",
+    "o": [
+      "3",
+      "4",
+      "2",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following involves a **widening conversion** in C?",
+    "o": [
+      "int to double",
+      "float to int",
+      "char to short",
+      "double to int"
+    ]
+  },
+  {
+    "q": "What will be the output of the following program?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 3;\n    int c = a & b;\n    printf(\"%d\", c);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "5",
+      "3"
+    ]
+  },
+  {
+    "q": "Which of the following expressions ensures that multiplication happens before subtraction?",
+    "o": [
+      "a - (b * c)",
+      "(a - b) * c",
+      "a - b * c",
+      "a - b / c"
+    ]
+  },
+  {
+    "q": "Choose the correct form of type casting in C to avoid truncation in division:",
+    "o": [
+      "(float)a / b",
+      "float(a / b)",
+      "a / float(b)",
+      "(float)(a / b)"
+    ]
+  },
+  {
+    "q": "Which operation will be evaluated **first** in `a + b * c == d`?",
+    "o": [
+      "b * c",
+      "a + b",
+      "c == d",
+      "a == d"
+    ]
+  },
+  {
+    "q": "What is the effect of the compound assignment `x &= 0`?",
+    "o": [
+      "x becomes 0",
+      "x doubles",
+      "x remains unchanged",
+      "x becomes 1"
+    ]
+  },
+  {
+    "q": "Which of the following evaluates to `true` only if **both** operands are non-zero?",
+    "o": [
+      "x && y",
+      "x & y",
+      "x || y",
+      "x ^ y"
+    ]
+  },
+  {
+    "q": "What is the result of the expression `7 % 3 * 2 + 1` in C?",
+    "o": [
+      "5",
+      "3",
+      "7",
+      "4"
+    ]
+  },
+  {
+    "q": "Which operator has the **lowest precedence** among the following in C?",
+    "o": [
+      "=",
+      "*",
+      "==",
+      "&&"
+    ]
+  },
+  {
+    "q": "What is the output of the code below?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 2;\n    float result = a / b;\n    printf(\"%.1f\", result);\n    return 0;\n}",
+    "o": [
+      "2.0",
+      "2.5",
+      "2.2",
+      "Compiler error"
+    ]
+  },
+  {
+    "q": "Which of the following expressions uses a **bitwise exclusive OR**?",
+    "o": [
+      "a ^ b",
+      "a && b",
+      "a | b",
+      "~a"
+    ]
+  },
+  {
+    "q": "What will be printed after executing this program?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 3;\n    a <<= 2;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "12",
+      "6",
+      "8",
+      "9"
+    ]
+  },
+  {
+    "q": "Which conversion happens in `float f = 10;`?",
+    "o": [
+      "Implicit int to float",
+      "Explicit float to int",
+      "Truncation",
+      "Bitwise promotion"
+    ]
+  },
+  {
+    "q": "What will be the result of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 1;\n    int y = 0;\n    int z = x && y || x;\n    printf(\"%d\", z);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "q": "Which statement about relational operators is true in C?",
+    "o": [
+      "They return 0 or 1 based on the condition.",
+      "They change variable values directly.",
+      "They work only on integers.",
+      "They cannot be used inside if conditions."
+    ]
+  },
+  {
+    "q": "What is the associativity of the ternary operator (`?:`) in C?",
+    "o": [
+      "Right to left",
+      "Left to right",
+      "None",
+      "Depends on the expression"
+    ]
+  },
+  {
+    "q": "Which of these ensures no loss of data during type conversion?",
+    "o": [
+      "double = intVar;",
+      "int = doubleVar;",
+      "int = charVar;",
+      "float = shortVar;"
+    ]
+  },
+  {
+    "q": "Which of the following expressions will always return 0?",
+    "o": [
+      "5 & 0",
+      "5 | 0",
+      "5 ^ 5",
+      "~0",
+      "5 && 1"
+    ]
+  },
+  {
+    "q": "What will the following C code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 6;\n    int b = 3;\n    int result = a / b * b;\n    printf(\"%d\", result);\n    return 0;\n}",
+    "o": [
+      "6",
+      "9",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "What is the output of this expression: `(7 > 3) && (2 < 1)`?",
+    "o": [
+      "0",
+      "1",
+      "true",
+      "2"
+    ]
+  },
+  {
+    "q": "Which of these casts ensures a float result when dividing two integers?",
+    "o": [
+      "(float)a / b",
+      "(a + b) / 2.0",
+      "float(a / b)",
+      "a / (float)(b * 1)"
+    ]
+  },
+  {
+    "q": "What will be printed?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 2;\n    int b = 5;\n    printf(\"%d\", a ^ b);\n    return 0;\n}",
+    "o": [
+      "7",
+      "3",
+      "10",
+      "1"
+    ]
+  },
+  {
+    "q": "Which operator has higher precedence than `==`?",
+    "o": [
+      "*",
+      "&&",
+      "=",
+      "|"
+    ]
+  },
+  {
+    "q": "Which of the following **assignment operations** is correct for subtracting 10 from x?",
+    "o": [
+      "x -= 10;",
+      "x =- 10;",
+      "x = x -: 10;",
+      "x --= 10;"
+    ]
+  },
+  {
+    "q": "What does the expression `~0` evaluate to in a 32-bit system?",
+    "o": [
+      "-1",
+      "0",
+      "1",
+      "2"
+    ]
+  },
+  {
+    "q": "Which statement best describes type conversion in `int i = 5.99;`?",
+    "o": [
+      "The float is truncated to an integer",
+      "The float is rounded up",
+      "A compile error occurs",
+      "The float becomes a double"
+    ]
+  },
+  {
+    "q": "Which of the following will result in **short-circuiting**?",
+    "o": [
+      "x || y",
+      "x | y",
+      "x & y",
+      "x ^ y"
+    ]
+  },
+  {
+    "q": "Which of the following evaluates to true only when both `a` and `b` are non-zero in C?",
+    "o": [
+      "a && b",
+      "a || b",
+      "a & b",
+      "a ^ b"
+    ]
+  },
+  {
+    "q": "What will this program print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 4;\n    int b = 3;\n    int c = a % b * 2;\n    printf(\"%d\", c);\n    return 0;\n}",
+    "o": [
+      "2",
+      "3",
+      "1",
+      "4"
+    ]
+  },
+  {
+    "q": "Which of the following ensures that division gives a float result in C?",
+    "o": [
+      "(float)x / y",
+      "float(x / y)",
+      "x / float(y)",
+      "(float)(x / y)"
+    ]
+  },
+  {
+    "q": "Which of the following bitwise operations will set all bits of an integer `x` to 0?",
+    "o": [
+      "x &= 0",
+      "x ^= x",
+      "x |= 0",
+      "x = ~x"
+    ]
+  },
+  {
+    "q": "What is the output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    int y = 2;\n    int result = x / y + y * x;\n    printf(\"%d\", result);\n    return 0;\n}",
+    "o": [
+      "30",
+      "20",
+      "15",
+      "12"
+    ]
+  },
+  {
+    "q": "Which operator is right-associative in C?",
+    "o": [
+      "=",
+      "+",
+      "&&",
+      "=="
+    ]
+  },
+  {
+    "q": "In the expression `a + b * c / d`, which operator has the **highest precedence**?",
+    "o": [
+      "*",
+      "+",
+      "/",
+      "="
+    ]
+  },
+  {
+    "q": "What is the output of this C snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 7;\n    printf(\"%d\", a >> 1);\n    return 0;\n}",
+    "o": [
+      "3",
+      "4",
+      "7",
+      "2"
+    ]
+  },
+  {
+    "q": "Which of the following statements about implicit type conversion is true in C?",
+    "o": [
+      "It occurs automatically when mixed-type expressions are evaluated.",
+      "It always leads to data loss.",
+      "It only applies to arithmetic operators.",
+      "It must be specified by the programmer."
+    ]
+  },
+  {
+    "q": "Which compound assignment operator multiplies a variable by a value?",
+    "o": [
+      "*=",
+      "++",
+      "=/",
+      "&="
+    ]
+  },
+  {
+    "q": "Which operator is used to invert each bit of an integer in C?",
+    "o": [
+      "~",
+      "&",
+      "!",
+      "^"
+    ]
+  },
+  {
+    "q": "What is the result of the following expression: `10 + 3 * 2`?",
+    "o": [
+      "16",
+      "26",
+      "30",
+      "20"
+    ]
+  },
+  {
+    "q": "What will this C program output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 8;\n    int b = 3;\n    printf(\"%d\", a % b);\n    return 0;\n}",
+    "o": [
+      "2",
+      "1",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following uses a relational operator in C?",
+    "o": [
+      "a >= b",
+      "a = b",
+      "a & b",
+      "a != b != c"
+    ]
+  },
+  {
+    "q": "Which expression forces a floating-point result when dividing two integers?",
+    "o": [
+      "(float)(a) / b",
+      "(a + 0.0) / b",
+      "(a / b) + 0.0",
+      "float a / b"
+    ]
+  },
+  {
+    "q": "Which statement about `||` in C is correct?",
+    "o": [
+      "It evaluates to true if at least one operand is non-zero",
+      "It evaluates both operands regardless of the first one",
+      "It performs a bitwise OR",
+      "It can only be used in `if` conditions"
+    ]
+  },
+  {
+    "q": "What will the following program output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    x += 3 * 2;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "11",
+      "16",
+      "13",
+      "15"
+    ]
+  },
+  {
+    "q": "What type of conversion happens in this statement: `char c = 1000;`?",
+    "o": [
+      "Implicit narrowing conversion",
+      "Explicit type casting",
+      "Widening conversion",
+      "No conversion"
+    ]
+  },
+  {
+    "q": "Which of these has **right-to-left** associativity in C?",
+    "o": [
+      "Ternary (`?:`)",
+      "Multiplication (`*`)",
+      "Logical AND (`&&`)",
+      "Relational (`>=`)"
+    ]
+  },
+  {
+    "q": "What is the result of `a = b = 10;` in C?",
+    "o": [
+      "Both a and b become 10",
+      "Only a becomes 10",
+      "Only b becomes 10",
+      "It causes a syntax error"
+    ]
+  },
+  {
+    "q": "Which expression correctly checks if a number is even in C?",
+    "o": [
+      "num % 2 == 0",
+      "num & 1 == 1",
+      "num / 2 == 0",
+      "num == 2"
+    ]
+  },
+  {
+    "q": "What will this program print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 12;\n    int b = 5;\n    printf(\"%d\", a & b);\n    return 0;\n}",
+    "o": [
+      "4",
+      "1",
+      "0",
+      "5"
+    ]
+  },
+  {
+    "q": "Which of the following correctly promotes `char` to `int`?",
+    "o": [
+      "It happens implicitly when used in arithmetic expressions",
+      "You must use a cast: (int)c",
+      "Only in printf function",
+      "It doesn't happen automatically"
+    ]
+  },
+  {
+    "q": "Which C operator has the lowest precedence?",
+    "o": [
+      "=",
+      "&&",
+      "==",
+      "+"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 1, y = 0;\n    printf(\"%d\", x || y);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "true",
+      "error"
+    ]
+  },
+  {
+    "q": "Which operator is used for exclusive OR in C?",
+    "o": [
+      "^",
+      "&",
+      "||",
+      "!="
+    ]
+  },
+  {
+    "q": "In the expression `5 + 6 * 3 - 2`, which operation is performed first?",
+    "o": [
+      "6 * 3",
+      "5 + 6",
+      "3 - 2",
+      "5 + 6 *"
+    ]
+  },
+  {
+    "q": "What will this program output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5;\n    a *= 2 + 3;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "25",
+      "16",
+      "13",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of the following expressions performs an **explicit cast** in C?",
+    "o": [
+      "(double)5",
+      "5 + 0.0",
+      "5 * 1.0",
+      "auto_cast(5)"
+    ]
+  },
+  {
+    "q": "What is the result of this expression: `(8 > 3) && (4 == 4)`?",
+    "o": [
+      "1",
+      "0",
+      "true",
+      "error"
+    ]
+  }
+]

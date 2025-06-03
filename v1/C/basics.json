@@ -1,0 +1,6575 @@
+[
+  {
+    "q": "Who developed the C programming language?",
+    "o": [
+      "Dennis Ritchie",
+      "James Gosling",
+      "Bjarne Stroustrup",
+      "Ken Thompson"
+    ]
+  },
+  {
+    "q": "What is the correct structure of a basic C program?",
+    "o": [
+      "#include<stdio.h>\nint main() {\n    return 0;\n}",
+      "import <stdio.h>\nmain() {\n    return 0;\n}",
+      "#include<iostream>\nint main() {\n    return 0;\n}",
+      "using namespace std;\nint main() {\n    return 0;\n}"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid variable declaration in C?",
+    "o": [
+      "int number;",
+      "integer number;",
+      "num int;",
+      "int = number;"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int a = 10;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "10",
+      "a",
+      "%d",
+      "Compile error"
+    ]
+  },
+  {
+    "q": "Which of the following data types is used to store decimal numbers in C?",
+    "o": [
+      "float",
+      "int",
+      "char",
+      "long"
+    ]
+  },
+  {
+    "q": "Which of the following is a keyword in C?",
+    "o": [
+      "return",
+      "main",
+      "print",
+      "define"
+    ]
+  },
+  {
+    "q": "Identify the correct scanf syntax to read an integer value in C:",
+    "o": [
+      "scanf(\"%d\", &num);",
+      "scanf(\"%d\", num);",
+      "scanf(%d, &num);",
+      "read(%d, num);"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include<stdio.h>\nint main() {\n    int x = 5, y = 7;\n    printf(\"%d\", x + y);\n    return 0;\n}",
+    "o": [
+      "12",
+      "57",
+      "x + y",
+      "Compile error"
+    ]
+  },
+  {
+    "q": "Which of the following is an invalid identifier in C?",
+    "o": [
+      "2value",
+      "value2",
+      "_value",
+      "value_2"
+    ]
+  },
+  {
+    "q": "What is the purpose of the `#include<stdio.h>` statement in C?",
+    "o": [
+      "To include standard input/output functions",
+      "To declare the main function",
+      "To define a new data type",
+      "To import user-defined functions"
+    ]
+  },
+  {
+    "q": "Which year was the C programming language developed?",
+    "o": [
+      "1972",
+      "1983",
+      "1995",
+      "2000"
+    ]
+  },
+  {
+    "q": "What is the correct file extension for a C source file?",
+    "o": [
+      ".c",
+      ".cpp",
+      ".cs",
+      ".java"
+    ]
+  },
+  {
+    "q": "Which of the following correctly represents the structure of a C program?",
+    "o": [
+      "Preprocessor directives → main function → Statements",
+      "Statements → Preprocessor directives → main function",
+      "Header files → Loops → main function",
+      "main function → Header files → return 0"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?\n",
+    "c": "#include<stdio.h>\nint main() {\n    printf(\"C is fun!\");\n    return 0;\n}",
+    "o": [
+      "C is fun!",
+      "C_is_fun!",
+      "printf(\"C is fun!\")",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid variable name in C?",
+    "o": [
+      "totalMarks",
+      "int",
+      "float-value",
+      "123data"
+    ]
+  },
+  {
+    "q": "How do you declare a character variable in C?",
+    "o": [
+      "char letter;",
+      "character letter;",
+      "letter char;",
+      "char = letter;"
+    ]
+  },
+  {
+    "q": "What is the purpose of `scanf()` in C?",
+    "o": [
+      "To receive user input",
+      "To display output",
+      "To define a constant",
+      "To declare variables"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int age;\n    age = 25;\n    printf(\"Age: %d\", age);\n    return 0;\n}",
+    "o": [
+      "Age: 25",
+      "age = 25",
+      "%d",
+      "Compile error"
+    ]
+  },
+  {
+    "q": "Which of these is **not** a keyword in C?",
+    "o": [
+      "input",
+      "int",
+      "while",
+      "return"
+    ]
+  },
+  {
+    "q": "Which format specifier is used for reading a float value using scanf()?",
+    "o": [
+      "%f",
+      "%d",
+      "%lf",
+      "%c"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?\n",
+    "c": "#include<stdio.h>\nint main() {\n    float num = 3.14;\n    printf(\"%.2f\", num);\n    return 0;\n}",
+    "o": [
+      "3.14",
+      "3.1",
+      "3",
+      "Compile error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about identifiers in C?",
+    "o": [
+      "They must begin with a letter or underscore",
+      "They can start with a number",
+      "They can contain spaces",
+      "They must be written in capital letters"
+    ]
+  },
+  {
+    "q": "Which language was C developed as an evolution of?",
+    "o": [
+      "B",
+      "Python",
+      "Assembly",
+      "Fortran"
+    ]
+  },
+  {
+    "q": "Who is credited for developing the C language at Bell Labs?",
+    "o": [
+      "Dennis Ritchie",
+      "Brian Kernighan",
+      "Ken Thompson",
+      "Alan Turing"
+    ]
+  },
+  {
+    "q": "Which part of a C program indicates the starting point of execution?",
+    "o": [
+      "main() function",
+      "header files",
+      "preprocessor directive",
+      "variable declaration"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int num = 100;\n    printf(\"The number is %d\", num);\n    return 0;\n}",
+    "o": [
+      "The number is 100",
+      "num = 100",
+      "%d",
+      "The number is %d"
+    ]
+  },
+  {
+    "q": "Which of these is the correct way to declare multiple variables of the same type?",
+    "o": [
+      "int a, b, c;",
+      "int a b c;",
+      "int; a, b, c",
+      "a, b, c int;"
+    ]
+  },
+  {
+    "q": "Which of the following will correctly read two integers from user input?",
+    "o": [
+      "scanf(\"%d %d\", &x, &y);",
+      "scanf(\"%d %d\", x, y);",
+      "scanf(\"%d %d\", &x y);",
+      "read(x, y);"
+    ]
+  },
+  {
+    "q": "Which data type would you use to store a single character?",
+    "o": [
+      "char",
+      "character",
+      "string",
+      "alphabet"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid identifier in C?",
+    "o": [
+      "_score1",
+      "float",
+      "break-time",
+      "123value"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int a = 5, b = 6;\n    printf(\"%d %d\", a, b);\n    return 0;\n}",
+    "o": [
+      "5 6",
+      "a b",
+      "56",
+      "%d %d"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a constant in C?",
+    "o": [
+      "const",
+      "static",
+      "final",
+      "define"
+    ]
+  },
+  {
+    "q": "Which keyword is used to return a value from a function?",
+    "o": [
+      "return",
+      "exit",
+      "break",
+      "output"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?\n",
+    "c": "#include<stdio.h>\nint main() {\n    printf(\"%c\", 'A');\n    return 0;\n}",
+    "o": [
+      "A",
+      "%c",
+      "char",
+      "Compile Error"
+    ]
+  },
+  {
+    "q": "What was one of the main purposes behind creating the C language?",
+    "o": [
+      "To develop the UNIX operating system",
+      "To create desktop applications",
+      "To build websites",
+      "To replace Python"
+    ]
+  },
+  {
+    "q": "Which header file is essential for using printf and scanf in C?",
+    "o": [
+      "#include<stdio.h>",
+      "#include<conio.h>",
+      "#include<math.h>",
+      "#include<string.h>"
+    ]
+  },
+  {
+    "q": "How many main functions can a standard C program have?",
+    "o": [
+      "1",
+      "2",
+      "Unlimited",
+      "None"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int x = 3;\n    float y = 3.5;\n    printf(\"%d %.1f\", x, y);\n    return 0;\n}",
+    "o": [
+      "3 3.5",
+      "3.0 3.5",
+      "x y",
+      "3 3"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare a float variable?",
+    "o": [
+      "float temperature;",
+      "float = temperature;",
+      "temperature float;",
+      "float: temperature;"
+    ]
+  },
+  {
+    "q": "Which data type is used to store whole numbers in C?",
+    "o": [
+      "int",
+      "char",
+      "float",
+      "double"
+    ]
+  },
+  {
+    "q": "What is the output of this code?\n",
+    "c": "#include<stdio.h>\nint main() {\n    char ch = 'Z';\n    printf(\"%c\", ch);\n    return 0;\n}",
+    "o": [
+      "Z",
+      "%c",
+      "ch",
+      "Compile Error"
+    ]
+  },
+  {
+    "q": "Which of these is a **reserved keyword** in C?",
+    "o": [
+      "return",
+      "define",
+      "input",
+      "print"
+    ]
+  },
+  {
+    "q": "Which is a correct statement to take input of two integers from the user?",
+    "o": [
+      "scanf(\"%d %d\", &a, &b);",
+      "scanf(\"%d %d\", a, b);",
+      "input(a, b);",
+      "take(a, b);"
+    ]
+  },
+  {
+    "q": "Which of the following identifiers is **valid** in C?",
+    "o": [
+      "data_1",
+      "1data",
+      "data-1",
+      "data value"
+    ]
+  },
+  {
+    "q": "What will be the output of the code?\n",
+    "c": "#include<stdio.h>\nint main() {\n    printf(\"%d\", sizeof(int));\n    return 0;\n}",
+    "o": [
+      "Depends on system/compiler",
+      "2",
+      "4.0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the structure of a basic C program?",
+    "o": [
+      "Header Files → main() → Code Statements",
+      "main() → Header Files → Return",
+      "Statements → main() → Header Files",
+      "Variables → Code → Header"
+    ]
+  },
+  {
+    "q": "Which operating system was developed using the C programming language?",
+    "o": [
+      "UNIX",
+      "Windows",
+      "macOS",
+      "Linux Mint"
+    ]
+  },
+  {
+    "q": "What does the following C program output?\n",
+    "c": "#include<stdio.h>\nint main() {\n    printf(\"C is fun!\\n\");\n    return 0;\n}",
+    "o": [
+      "C is fun!",
+      "C is fun",
+      "C is fun!\\n",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these is NOT a valid keyword in C?",
+    "o": [
+      "input",
+      "if",
+      "else",
+      "return"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int age = 25;\n    printf(\"Age: %d\", age);\n    return 0;\n}",
+    "o": [
+      "Age: 25",
+      "%d",
+      "age",
+      "25: Age"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct variable declaration in C?",
+    "o": [
+      "int total;",
+      "int-total;",
+      "int = total;",
+      "total int;"
+    ]
+  },
+  {
+    "q": "Why is the main() function essential in a C program?",
+    "o": [
+      "It marks the starting point of execution",
+      "It stores all variables",
+      "It defines loops",
+      "It manages memory allocation"
+    ]
+  },
+  {
+    "q": "Which of the following correctly takes character input from the user?",
+    "o": [
+      "scanf(\" %c\", &ch);",
+      "scanf(\"%s\", ch);",
+      "input(ch);",
+      "scan(char);"
+    ]
+  },
+  {
+    "q": "Which of these is a valid identifier in C?",
+    "o": [
+      "total_marks",
+      "int",
+      "3score",
+      "marks-total"
+    ]
+  },
+  {
+    "q": "What does this code output?\n",
+    "c": "#include<stdio.h>\nint main() {\n    float num = 5.0;\n    printf(\"%0.2f\", num);\n    return 0;\n}",
+    "o": [
+      "5.00",
+      "5",
+      "0.2",
+      "float"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax to print a message in C?",
+    "o": [
+      "printf(\"Hello\");",
+      "print(\"Hello\")",
+      "echo(\"Hello\");",
+      "cout << \"Hello\";"
+    ]
+  },
+  {
+    "q": "Which of the following types will you use to store large decimal numbers?",
+    "o": [
+      "double",
+      "int",
+      "char",
+      "short"
+    ]
+  },
+  {
+    "q": "What is the purpose of #include<stdio.h>?",
+    "o": [
+      "To include standard input/output functions",
+      "To define variables",
+      "To declare constants",
+      "To start the main function"
+    ]
+  },
+  {
+    "q": "Who is considered the father of the C programming language?",
+    "o": [
+      "Dennis Ritchie",
+      "Ken Thompson",
+      "James Gosling",
+      "Bjarne Stroustrup"
+    ]
+  },
+  {
+    "q": "What will be the output of the following C code?\n",
+    "c": "#include<stdio.h>\nint main() {\n    printf(\"%d\", 10 + 20);\n    return 0;\n}",
+    "o": [
+      "30",
+      "10+20",
+      "1020",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which data type is best suited to store the number 32767?",
+    "o": [
+      "short",
+      "char",
+      "int",
+      "float"
+    ]
+  },
+  {
+    "q": "What does the 'return 0;' statement indicate in a C program?",
+    "o": [
+      "The program ended successfully",
+      "It returns the main function",
+      "It initializes variables",
+      "It prints a message"
+    ]
+  },
+  {
+    "q": "Which of the following is an invalid identifier?",
+    "o": [
+      "2nd_value",
+      "_value2",
+      "value_2",
+      "value2"
+    ]
+  },
+  {
+    "q": "What is the correct syntax to read a float value from the user?",
+    "o": [
+      "scanf(\"%f\", &num);",
+      "scanf(\"%d\", num);",
+      "input(num);",
+      "read(%f, num);"
+    ]
+  },
+  {
+    "q": "What is the purpose of a semicolon (;) in C?",
+    "o": [
+      "To mark the end of a statement",
+      "To start a comment",
+      "To declare a variable",
+      "To include a library"
+    ]
+  },
+  {
+    "q": "Which C keyword is used to define a constant value?",
+    "o": [
+      "const",
+      "define",
+      "permanent",
+      "final"
+    ]
+  },
+  {
+    "q": "What will be printed?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int x = 4 * 5;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "20",
+      "45",
+      "9",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which one is a valid variable declaration in C?",
+    "o": [
+      "int score1;",
+      "int-score1;",
+      "int = score1;",
+      "score1 int;"
+    ]
+  },
+  {
+    "q": "What will this code output?\n",
+    "c": "#include<stdio.h>\nint main() {\n    char c = 'A';\n    printf(\"%c\", c);\n    return 0;\n}",
+    "o": [
+      "A",
+      "%c",
+      "char",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to start the main body of a C program?",
+    "o": [
+      "main",
+      "start",
+      "function",
+      "void"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a typical structure of a C program?",
+    "o": [
+      "Preprocessor directives → main() function → variable declarations → statements",
+      "main() → preprocessor → statements",
+      "Statements → main → header",
+      "Variables → headers → printf"
+    ]
+  },
+  {
+    "q": "What does the following program print?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int a = 3, b = 7;\n    printf(\"%d\", a * b);\n    return 0;\n}",
+    "o": [
+      "21",
+      "10",
+      "37",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid keyword in C?",
+    "o": [
+      "switch",
+      "default_value",
+      "printline",
+      "define_var"
+    ]
+  },
+  {
+    "q": "Which of these variable names is valid in C?",
+    "o": [
+      "totalSum",
+      "int-value",
+      "float$rate",
+      "1score"
+    ]
+  },
+  {
+    "q": "What does this code print?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int val = 10;\n    printf(\"val = %d\", val);\n    return 0;\n}",
+    "o": [
+      "val = 10",
+      "val = val",
+      "10",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following data types is used to store a single character?",
+    "o": [
+      "char",
+      "int",
+      "float",
+      "string"
+    ]
+  },
+  {
+    "q": "In C, what is the role of `#include <stdio.h>`?",
+    "o": [
+      "It includes functions like printf and scanf",
+      "It defines variables",
+      "It initializes memory",
+      "It starts the main function"
+    ]
+  },
+  {
+    "q": "Which is the correct way to take integer input from user?",
+    "o": [
+      "scanf(\"%d\", &num);",
+      "scanf(num, %d);",
+      "input(%d, num);",
+      "cin >> num;"
+    ]
+  },
+  {
+    "q": "What will this code output?\n",
+    "c": "#include<stdio.h>\nint main() {\n    float a = 3.2f;\n    printf(\"%.1f\", a);\n    return 0;\n}",
+    "o": [
+      "3.2",
+      "3",
+      "3.20",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a keyword in C?",
+    "o": [
+      "loop",
+      "auto",
+      "const",
+      "break"
+    ]
+  },
+  {
+    "q": "Which of the following is true about C language?",
+    "o": [
+      "It was developed at Bell Labs in the 1970s",
+      "It is a purely object-oriented language",
+      "It cannot run on modern systems",
+      "It is slower than Python"
+    ]
+  },
+  {
+    "q": "What is the correct format specifier to print a character in C?",
+    "o": [
+      "%c",
+      "%s",
+      "%d",
+      "%lf"
+    ]
+  },
+  {
+    "q": "Which year was the C programming language developed?",
+    "o": [
+      "1972",
+      "1983",
+      "1991",
+      "2000"
+    ]
+  },
+  {
+    "q": "What will this code display?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int a = 4;\n    int b = 2;\n    printf(\"%d\", a / b);\n    return 0;\n}",
+    "o": [
+      "2",
+      "6",
+      "8",
+      "0"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a block of reusable code in C?",
+    "o": [
+      "void",
+      "return",
+      "main",
+      "do"
+    ]
+  },
+  {
+    "q": "Which variable name is invalid in C?",
+    "o": [
+      "float-rate",
+      "value_1",
+      "_data",
+      "totalAmount"
+    ]
+  },
+  {
+    "q": "What will this code print?\n",
+    "c": "#include<stdio.h>\nint main() {\n    char ch = 'Z';\n    printf(\"%c\", ch);\n    return 0;\n}",
+    "o": [
+      "Z",
+      "ch",
+      "%c",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which data type should be used for storing large whole numbers?",
+    "o": [
+      "long",
+      "short",
+      "float",
+      "char"
+    ]
+  },
+  {
+    "q": "What is the role of the `main()` function in a C program?",
+    "o": [
+      "It marks the starting point of program execution",
+      "It defines global variables",
+      "It includes all libraries",
+      "It declares data types"
+    ]
+  },
+  {
+    "q": "What is the output of this code?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int a;\n    scanf(\"%d\", &a);\n    printf(\"You entered: %d\", a);\n    return 0;\n}",
+    "o": [
+      "You entered: <entered value>",
+      "a",
+      "%d",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these is not a standard C keyword?",
+    "o": [
+      "repeat",
+      "break",
+      "goto",
+      "enum"
+    ]
+  },
+  {
+    "q": "What does this code do?\n",
+    "c": "#include<stdio.h>\nint main() {\n    float pi = 3.14;\n    printf(\"%.2f\", pi);\n    return 0;\n}",
+    "o": [
+      "3.14",
+      "3",
+      "3.140000",
+      "pi"
+    ]
+  },
+  {
+    "q": "Which statement correctly declares a character variable?",
+    "o": [
+      "char grade = 'A';",
+      "char grade = \"A\";",
+      "character grade = 'A';",
+      "grade = char 'A';"
+    ]
+  },
+  {
+    "q": "Which keyword is used to exit from a loop or a switch-case block?",
+    "o": [
+      "break",
+      "exit",
+      "stop",
+      "return"
+    ]
+  },
+  {
+    "q": "Who is the creator of the C programming language?",
+    "o": [
+      "Dennis Ritchie",
+      "Bjarne Stroustrup",
+      "James Gosling",
+      "Ken Thompson"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid `main` function declaration in C?",
+    "o": [
+      "int main()",
+      "main void()",
+      "int main[]",
+      "void int main()"
+    ]
+  },
+  {
+    "q": "What will this code output?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int x = 9;\n    printf(\"%d\", x + 1);\n    return 0;\n}",
+    "o": [
+      "10",
+      "9",
+      "1",
+      "11"
+    ]
+  },
+  {
+    "q": "Which of the following data types is used to store decimal numbers in C?",
+    "o": [
+      "float",
+      "int",
+      "char",
+      "short"
+    ]
+  },
+  {
+    "q": "Which of these is a valid identifier in C?",
+    "o": [
+      "_myValue2",
+      "2value",
+      "my-value",
+      "float"
+    ]
+  },
+  {
+    "q": "Which function is used to print output to the screen in C?",
+    "o": [
+      "printf()",
+      "cout",
+      "cin",
+      "output()"
+    ]
+  },
+  {
+    "q": "What is the correct format specifier to read a float value?",
+    "o": [
+      "%f",
+      "%d",
+      "%c",
+      "%lf"
+    ]
+  },
+  {
+    "q": "What will this program display?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int age;\n    age = 18;\n    printf(\"Age: %d\", age);\n    return 0;\n}",
+    "o": [
+      "Age: 18",
+      "Age: age",
+      "18",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is **not** a keyword in C?",
+    "o": [
+      "input",
+      "for",
+      "while",
+      "continue"
+    ]
+  },
+  {
+    "q": "In C, keywords are:",
+    "o": [
+      "Reserved words with special meaning",
+      "Variable names",
+      "User-defined functions",
+      "Used for comments"
+    ]
+  },
+  {
+    "q": "Which data type is most suitable to store a person's age?",
+    "o": [
+      "int",
+      "char",
+      "float",
+      "double"
+    ]
+  },
+  {
+    "q": "How many bytes does the `int` data type typically occupy in C (on most 32-bit systems)?",
+    "o": [
+      "4",
+      "2",
+      "1",
+      "8"
+    ]
+  },
+  {
+    "q": "In which operating system was C language first implemented?",
+    "o": [
+      "UNIX",
+      "MS-DOS",
+      "Linux",
+      "Windows"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct variable declaration in C?",
+    "o": [
+      "int number = 25;",
+      "int = 25 number;",
+      "number int = 25;",
+      "int: number = 25;"
+    ]
+  },
+  {
+    "q": "What does this C program print?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int a = 2, b = 3;\n    printf(\"%d\", a * b);\n    return 0;\n}",
+    "o": [
+      "6",
+      "5",
+      "23",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid format specifier in C?",
+    "o": [
+      "%q",
+      "%d",
+      "%f",
+      "%c"
+    ]
+  },
+  {
+    "q": "Which of the following identifiers is invalid?",
+    "o": [
+      "int",
+      "my_var",
+      "count2",
+      "_value"
+    ]
+  },
+  {
+    "q": "Which function is used to take input from the user in C?",
+    "o": [
+      "scanf()",
+      "cin",
+      "read()",
+      "get()"
+    ]
+  },
+  {
+    "q": "What is the output of this code?\n",
+    "c": "#include<stdio.h>\nint main() {\n    float pi = 3.14;\n    printf(\"Value: %.1f\", pi);\n    return 0;\n}",
+    "o": [
+      "Value: 3.1",
+      "Value: 3.14",
+      "Value: 3.140",
+      "Value: 3"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the structure of a C program?",
+    "o": [
+      "Preprocessor directives, main function, variable declarations, statements",
+      "Functions, comments, flowcharts",
+      "Headers, loops, pseudo code",
+      "Classes, objects, packages"
+    ]
+  },
+  {
+    "q": "Which data type is used to store a single character in C?",
+    "o": [
+      "char",
+      "int",
+      "string",
+      "float"
+    ]
+  },
+  {
+    "q": "What keyword is used to define a constant in C?",
+    "o": [
+      "const",
+      "fixed",
+      "define",
+      "static"
+    ]
+  },
+  {
+    "q": "What will this code output?\n",
+    "c": "#include<stdio.h>\nint main() {\n    char grade = 'B';\n    printf(\"Grade: %c\", grade);\n    return 0;\n}",
+    "o": [
+      "Grade: B",
+      "Grade: grade",
+      "B",
+      "%c"
+    ]
+  },
+  {
+    "q": "Which of these is a reserved keyword in C?",
+    "o": [
+      "return",
+      "function",
+      "print",
+      "input"
+    ]
+  },
+  {
+    "q": "Which programming language directly influenced the development of C?",
+    "o": [
+      "B",
+      "C++",
+      "Java",
+      "Pascal"
+    ]
+  },
+  {
+    "q": "Which part of a C program contains the instructions that get executed?",
+    "o": [
+      "main() function",
+      "header file",
+      "preprocessor directive",
+      "variable section"
+    ]
+  },
+  {
+    "q": "What will be the output of the following program?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int num = 7;\n    printf(\"%d\", num * 2);\n    return 0;\n}",
+    "o": [
+      "14",
+      "7",
+      "9",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following can be used to store a name in C?",
+    "o": [
+      "char name[20];",
+      "int name;",
+      "float name;",
+      "string name;"
+    ]
+  },
+  {
+    "q": "Which format specifier is used with `scanf` to read an integer value?",
+    "o": [
+      "%d",
+      "%f",
+      "%c",
+      "%s"
+    ]
+  },
+  {
+    "q": "Identify the keyword among the following:",
+    "o": [
+      "sizeof",
+      "number",
+      "_total",
+      "scanfdata"
+    ]
+  },
+  {
+    "q": "What is the output of this code?\n",
+    "c": "#include<stdio.h>\nint main() {\n    printf(\"Hello\\nWorld\");\n    return 0;\n}",
+    "o": [
+      "Hello\nWorld",
+      "Hello World",
+      "Hello\\nWorld",
+      "World Hello"
+    ]
+  },
+  {
+    "q": "Which data type would you use to represent a student’s percentage (e.g., 83.5)?",
+    "o": [
+      "float",
+      "char",
+      "int",
+      "double"
+    ]
+  },
+  {
+    "q": "Which of the following is **not allowed** as an identifier in C?",
+    "o": [
+      "2value",
+      "value_2",
+      "_total",
+      "averageScore"
+    ]
+  },
+  {
+    "q": "What keyword is used to declare a variable that should not be modified after initialization?",
+    "o": [
+      "const",
+      "static",
+      "unsigned",
+      "void"
+    ]
+  },
+  {
+    "q": "What will this code display?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int a = 8, b = 3;\n    printf(\"%d\", a % b);\n    return 0;\n}",
+    "o": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "What is the correct way to read a string using `scanf`?",
+    "o": [
+      "scanf(\"%s\", name);",
+      "scanf(name);",
+      "scanf(\"name\");",
+      "scanf(%s, &name);"
+    ]
+  },
+  {
+    "q": "Who is credited with the creation of the C programming language?",
+    "o": [
+      "Dennis Ritchie",
+      "Ken Thompson",
+      "Bjarne Stroustrup",
+      "James Gosling"
+    ]
+  },
+  {
+    "q": "Which of the following correctly ends every C program?",
+    "o": [
+      "return 0;",
+      "end;",
+      "exit;",
+      "finish();"
+    ]
+  },
+  {
+    "q": "What is the output of this code?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int x = 10;\n    printf(\"x is %d\", x);\n    return 0;\n}",
+    "o": [
+      "x is 10",
+      "%d",
+      "10",
+      "x is x"
+    ]
+  },
+  {
+    "q": "Which of the following represents a floating point variable in C?",
+    "o": [
+      "float temperature;",
+      "int temperature;",
+      "double temperature;",
+      "char temperature;"
+    ]
+  },
+  {
+    "q": "Which format specifier is used for character input?",
+    "o": [
+      "%c",
+      "%s",
+      "%d",
+      "%f"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid identifier in C?",
+    "o": [
+      "user_score",
+      "int",
+      "double@val",
+      "2ndValue"
+    ]
+  },
+  {
+    "q": "What will this code output?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int age;\n    scanf(\"%d\", &age);\n    printf(\"%d years old\", age);\n    return 0;\n}",
+    "o": [
+      "Displays user-entered age followed by 'years old'",
+      "Syntax error",
+      "Compile-time error",
+      "Garbage output"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a C program structure?",
+    "o": [
+      "Header files, main(), declarations, statements",
+      "Classes, main(), return statements",
+      "Modules, functions, return",
+      "Objects, packages, functions"
+    ]
+  },
+  {
+    "q": "Which of the following is **not** a valid data type in C?",
+    "o": [
+      "string",
+      "int",
+      "char",
+      "float"
+    ]
+  },
+  {
+    "q": "Which keyword is used to create a variable that holds whole numbers?",
+    "o": [
+      "int",
+      "char",
+      "float",
+      "long float"
+    ]
+  },
+  {
+    "q": "What is the correct syntax to print a newline in C using `printf`?",
+    "o": [
+      "\\n",
+      "/n",
+      "\n",
+      "newLine()"
+    ]
+  },
+  {
+    "q": "What is the output of this code?\n",
+    "c": "#include<stdio.h>\nint main() {\n    char letter = 'X';\n    printf(\"%c\", letter);\n    return 0;\n}",
+    "o": [
+      "X",
+      "%c",
+      "letter",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which company first used the C language to develop the UNIX operating system?",
+    "o": [
+      "Bell Labs",
+      "Microsoft",
+      "IBM",
+      "Apple"
+    ]
+  },
+  {
+    "q": "Which section of a C program must always be present?",
+    "o": [
+      "main() function",
+      "comments",
+      "header file",
+      "variable declaration"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int a = 4;\n    int b = 5;\n    printf(\"%d\", a + b);\n    return 0;\n}",
+    "o": [
+      "9",
+      "45",
+      "a + b",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which data type is used to store a single character in C?",
+    "o": [
+      "char",
+      "int",
+      "string",
+      "float"
+    ]
+  },
+  {
+    "q": "Which format specifier would you use in `printf` to print a float value?",
+    "o": [
+      "%f",
+      "%d",
+      "%c",
+      "%s"
+    ]
+  },
+  {
+    "q": "Which of the following is a reserved keyword in C?",
+    "o": [
+      "return",
+      "value",
+      "number1",
+      "input"
+    ]
+  },
+  {
+    "q": "What will be the output of this program?\n",
+    "c": "#include<stdio.h>\nint main() {\n    printf(\"C is fun!\");\n    return 0;\n}",
+    "o": [
+      "C is fun!",
+      "printf",
+      "main",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which identifier is valid in C?",
+    "o": [
+      "total_marks",
+      "float",
+      "123value",
+      "my-variable"
+    ]
+  },
+  {
+    "q": "Which symbol is used for comments in C?",
+    "o": [
+      "//",
+      "#",
+      "--",
+      "**"
+    ]
+  },
+  {
+    "q": "What will this code print?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int year = 2025;\n    printf(\"%d\", year);\n    return 0;\n}",
+    "o": [
+      "2025",
+      "%d",
+      "year",
+      "Error"
+    ]
+  },
+  {
+    "q": "What type of values can an `int` variable store?",
+    "o": [
+      "Whole numbers",
+      "Characters",
+      "Decimal numbers",
+      "Strings"
+    ]
+  },
+  {
+    "q": "Which of the following is not a keyword in C?",
+    "o": [
+      "define",
+      "int",
+      "return",
+      "if"
+    ]
+  },
+  {
+    "q": "Which year was the C programming language developed?",
+    "o": [
+      "1972",
+      "1983",
+      "1991",
+      "1965"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to start a C program?",
+    "o": [
+      "#include<stdio.h>",
+      "import stdio",
+      "#input <stdio.h>",
+      "include<stdio.h>"
+    ]
+  },
+  {
+    "q": "What is the output of this program?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int x = 2, y = 3;\n    printf(\"%d %d\", x, y);\n    return 0;\n}",
+    "o": [
+      "2 3",
+      "23",
+      "x y",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these is a correct variable declaration in C?",
+    "o": [
+      "int count = 0;",
+      "count int = 0;",
+      "int = count 0;",
+      "integer count;"
+    ]
+  },
+  {
+    "q": "Which keyword in C indicates a value will not be changed?",
+    "o": [
+      "const",
+      "static",
+      "final",
+      "fixed"
+    ]
+  },
+  {
+    "q": "What will this program print?\n",
+    "c": "#include<stdio.h>\nint main() {\n    float price = 49.99;\n    printf(\"%.2f\", price);\n    return 0;\n}",
+    "o": [
+      "49.99",
+      "49.9900",
+      "50.00",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is **not** a valid identifier?",
+    "o": [
+      "3value",
+      "_score",
+      "userInput",
+      "marks_total"
+    ]
+  },
+  {
+    "q": "Which statement is used to receive user input in C?",
+    "o": [
+      "scanf",
+      "input",
+      "gets",
+      "cin"
+    ]
+  },
+  {
+    "q": "What will the following code do?\n",
+    "c": "#include<stdio.h>\nint main() {\n    char ch;\n    scanf(\"%c\", &ch);\n    printf(\"%c\", ch);\n    return 0;\n}",
+    "o": [
+      "Takes a character input and prints it",
+      "Takes an integer input and prints it",
+      "Returns ASCII value",
+      "Shows a syntax error"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to declare a function that doesn’t return any value?",
+    "o": [
+      "void",
+      "null",
+      "empty",
+      "none"
+    ]
+  },
+  {
+    "q": "Which of the following is a data type used to store decimal numbers?",
+    "o": [
+      "float",
+      "int",
+      "char",
+      "bool"
+    ]
+  },
+  {
+    "q": "Which part of a C program is executed first?",
+    "o": [
+      "main()",
+      "printf()",
+      "scanf()",
+      "header files"
+    ]
+  },
+  {
+    "q": "Which programming language was C developed as an improvement of?",
+    "o": [
+      "B",
+      "Fortran",
+      "Pascal",
+      "Assembly"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid header file in a C program?",
+    "o": [
+      "#include<stdio.h>",
+      "#import<stdio.h>",
+      "include stdio",
+      "header<stdio.h>"
+    ]
+  },
+  {
+    "q": "What does this C code output?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int num = 25;\n    printf(\"Number: %d\", num);\n    return 0;\n}",
+    "o": [
+      "Number: 25",
+      "25",
+      "num",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a floating-point data type in C?",
+    "o": [
+      "float",
+      "int",
+      "char",
+      "short"
+    ]
+  },
+  {
+    "q": "Which format specifier is used to print a character using printf?",
+    "o": [
+      "%c",
+      "%s",
+      "%d",
+      "%x"
+    ]
+  },
+  {
+    "q": "Which of the following identifiers is invalid in C?",
+    "o": [
+      "2ndScore",
+      "total_marks",
+      "_value",
+      "score1"
+    ]
+  },
+  {
+    "q": "What keyword is used to define a constant value in C?",
+    "o": [
+      "const",
+      "static",
+      "fixed",
+      "set"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int a = 3, b = 4;\n    printf(\"%d\", a * b);\n    return 0;\n}",
+    "o": [
+      "12",
+      "7",
+      "34",
+      "a * b"
+    ]
+  },
+  {
+    "q": "Which of the following is a keyword in C?",
+    "o": [
+      "break",
+      "value",
+      "number",
+      "define_var"
+    ]
+  },
+  {
+    "q": "Which function is used to display output on the screen?",
+    "o": [
+      "printf",
+      "cin",
+      "display",
+      "input"
+    ]
+  },
+  {
+    "q": "Which symbol is used for including a header file?",
+    "o": [
+      "#",
+      "$",
+      "&",
+      "@"
+    ]
+  },
+  {
+    "q": "What does the following code do?\n",
+    "c": "#include<stdio.h>\nint main() {\n    int age;\n    scanf(\"%d\", &age);\n    return 0;\n}",
+    "o": [
+      "Takes an integer input from the user",
+      "Prints the age",
+      "Returns the address of age",
+      "Displays an error"
+    ]
+  },
+  {
+    "q": "Who developed the C programming language?",
+    "o": [
+      "Dennis Ritchie",
+      "James Gosling",
+      "Bjarne Stroustrup",
+      "Guido van Rossum"
+    ]
+  },
+  {
+    "q": "Which of the following correctly ends a C statement?",
+    "o": [
+      ";",
+      ":",
+      "!",
+      "."
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include<stdio.h>\nint main() {\n    int num = 10;\n    printf(\"%d\", num);\n    return 0;\n}",
+    "o": [
+      "10",
+      "%d",
+      "num",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid variable name in C?",
+    "o": [
+      "totalMarks",
+      "float",
+      "2value",
+      "user-name"
+    ]
+  },
+  {
+    "q": "What keyword is used to declare a variable whose value cannot be changed?",
+    "o": [
+      "const",
+      "let",
+      "static",
+      "final"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include<stdio.h>\nint main() {\n    char ch = 'Z';\n    printf(\"%c\", ch);\n    return 0;\n}",
+    "o": [
+      "Z",
+      "%c",
+      "ch",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which function is used to take input from the user?",
+    "o": [
+      "scanf",
+      "print",
+      "cin",
+      "getvalue"
+    ]
+  },
+  {
+    "q": "Which of the following is a keyword in C?",
+    "o": [
+      "return",
+      "main",
+      "input",
+      "printf"
+    ]
+  },
+  {
+    "q": "Which data type would be most appropriate to store a person's age?",
+    "o": [
+      "int",
+      "char",
+      "float",
+      "double"
+    ]
+  },
+  {
+    "q": "How would you correctly declare a variable to store decimal values?",
+    "o": [
+      "float price;",
+      "decimal price;",
+      "real price;",
+      "num price;"
+    ]
+  },
+  {
+    "q": "Which of the following is true about keywords in C?",
+    "o": [
+      "They are reserved words and cannot be used as variable names",
+      "They must be written in uppercase",
+      "They can be redefined by the programmer",
+      "They are optional in a program"
+    ]
+  },
+  {
+    "q": "What does this code output?",
+    "c": "#include<stdio.h>\nint main() {\n    int a = 4;\n    int b = 5;\n    printf(\"%d\", a + b);\n    return 0;\n}",
+    "o": [
+      "9",
+      "45",
+      "a + b",
+      "Error"
+    ]
+  },
+  {
+    "q": "What year was the C programming language developed?",
+    "o": [
+      "1972",
+      "1985",
+      "1990",
+      "1969"
+    ]
+  },
+  {
+    "q": "Which part of a C program tells the compiler where to start execution?",
+    "o": [
+      "main function",
+      "header file",
+      "declaration section",
+      "preprocessor directive"
+    ]
+  },
+  {
+    "q": "What is the output of the following C program?",
+    "c": "#include<stdio.h>\nint main() {\n    printf(\"%d\", 8 + 12);\n    return 0;\n}",
+    "o": [
+      "20",
+      "812",
+      "%d",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which data type is used to store a single character?",
+    "o": [
+      "char",
+      "int",
+      "string",
+      "float"
+    ]
+  },
+  {
+    "q": "Which function is used to accept input from the user in C?",
+    "o": [
+      "scanf()",
+      "input()",
+      "gets()",
+      "read()"
+    ]
+  },
+  {
+    "q": "Which of the following variable names is valid in C?",
+    "o": [
+      "_userScore",
+      "123marks",
+      "float#value",
+      "return"
+    ]
+  },
+  {
+    "q": "Which keyword is used to create a function in C?",
+    "o": [
+      "void",
+      "define",
+      "func",
+      "method"
+    ]
+  },
+  {
+    "q": "What is the output of this C code snippet?",
+    "c": "#include<stdio.h>\nint main() {\n    int x = 5;\n    printf(\"Value: %d\", x);\n    return 0;\n}",
+    "o": [
+      "Value: 5",
+      "x",
+      "%d",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these is a valid keyword in C?",
+    "o": [
+      "switch",
+      "value",
+      "option",
+      "defineVar"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares an integer variable in C?",
+    "o": [
+      "int age;",
+      "integer age;",
+      "num age;",
+      "var age;"
+    ]
+  },
+  {
+    "q": "Which header file is required to use printf and scanf functions?",
+    "o": [
+      "stdio.h",
+      "conio.h",
+      "stdlib.h",
+      "string.h"
+    ]
+  },
+  {
+    "q": "What is the correct syntax to print a newline in C?",
+    "o": [
+      "\\n",
+      "/n",
+      "\\r",
+      "<br>"
+    ]
+  },
+  {
+    "q": "Which company was C originally developed at?",
+    "o": [
+      "Bell Labs",
+      "Microsoft",
+      "IBM",
+      "Apple"
+    ]
+  },
+  {
+    "q": "What is the correct order of sections in a typical C program?",
+    "o": [
+      "Preprocessor directives, main function, variable declarations, statements",
+      "Variable declarations, main function, preprocessor directives, statements",
+      "Main function, preprocessor directives, statements, return",
+      "Preprocessor directives, statements, main function, return"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include<stdio.h>\nint main() {\n    int a = 3, b = 7;\n    printf(\"%d\", b - a);\n    return 0;\n}",
+    "o": [
+      "4",
+      "10",
+      "-4",
+      "3"
+    ]
+  },
+  {
+    "q": "Which of the following can store both integer and fractional parts?",
+    "o": [
+      "float",
+      "int",
+      "char",
+      "short"
+    ]
+  },
+  {
+    "q": "What is the correct format specifier to read an integer using scanf?",
+    "o": [
+      "%d",
+      "%c",
+      "%s",
+      "%f"
+    ]
+  },
+  {
+    "q": "Which of the following variable names is not valid in C?",
+    "o": [
+      "float",
+      "_value",
+      "marks2",
+      "total_marks"
+    ]
+  },
+  {
+    "q": "Which keyword is used to stop the execution of a loop or switch?",
+    "o": [
+      "break",
+      "stop",
+      "exit",
+      "return"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include<stdio.h>\nint main() {\n    char ch = 'A';\n    printf(\"%c\", ch);\n    return 0;\n}",
+    "o": [
+      "A",
+      "%c",
+      "ch",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid declaration of a character variable?",
+    "o": [
+      "char letter;",
+      "character letter;",
+      "char = letter;",
+      "var char;"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a keyword in C?",
+    "o": [
+      "input",
+      "return",
+      "if",
+      "float"
+    ]
+  },
+  {
+    "q": "Which statement is true about identifiers in C?",
+    "o": [
+      "They cannot start with a digit",
+      "They must be enclosed in quotes",
+      "They can contain special characters like @ and #",
+      "They are always written in uppercase"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "#include<stdio.h>\nint main() {\n    int num = 15;\n    printf(\"Result = %d\", num);\n    return 0;\n}",
+    "o": [
+      "Result = 15",
+      "Result = num",
+      "num",
+      "15"
+    ]
+  },
+  {
+    "q": "Who were the original creators of the C programming language?",
+    "o": [
+      "Dennis Ritchie and Brian Kernighan",
+      "Bjarne Stroustrup and James Gosling",
+      "Linus Torvalds and Ken Thompson",
+      "Guido van Rossum and Dennis Ritchie"
+    ]
+  },
+  {
+    "q": "Which of the following is mandatory in every C program?",
+    "o": [
+      "main function",
+      "scanf function",
+      "header file",
+      "user-defined function"
+    ]
+  },
+  {
+    "q": "What is the output of this C code snippet?",
+    "c": "#include<stdio.h>\nint main() {\n    float x = 4.5;\n    printf(\"%.1f\", x);\n    return 0;\n}",
+    "o": [
+      "4.5",
+      "4",
+      "4.50",
+      "%f"
+    ]
+  },
+  {
+    "q": "Which data type would you use to store a student's percentage score?",
+    "o": [
+      "float",
+      "char",
+      "int",
+      "short"
+    ]
+  },
+  {
+    "q": "How would you correctly accept a character input from the user?",
+    "o": [
+      "scanf(\" %c\", &ch);",
+      "scanf(\"%s\", ch);",
+      "scanf(\"%d\", &ch);",
+      "scanf(\"char\", ch);"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid identifier?",
+    "o": [
+      "2value",
+      "_temp",
+      "MAX_LIMIT",
+      "total1"
+    ]
+  },
+  {
+    "q": "Which of these keywords is used to define a constant value?",
+    "o": [
+      "#define",
+      "constvalue",
+      "fixed",
+      "static"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include<stdio.h>\nint main() {\n    int a = 6, b = 3;\n    printf(\"%d\", a / b);\n    return 0;\n}",
+    "o": [
+      "2",
+      "1",
+      "3",
+      "6"
+    ]
+  },
+  {
+    "q": "Which keyword in C is used to return a value from a function?",
+    "o": [
+      "return",
+      "send",
+      "output",
+      "exit"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct variable name?",
+    "o": [
+      "totalAmount",
+      "void",
+      "float-avg",
+      "123score"
+    ]
+  },
+  {
+    "q": "Which symbol is used to include header files in C?",
+    "o": [
+      "#",
+      "@",
+      "%",
+      "$"
+    ]
+  },
+  {
+    "q": "What does this C code print?",
+    "c": "#include<stdio.h>\nint main() {\n    int x = 10;\n    printf(\"x = %d\\n\", x);\n    return 0;\n}",
+    "o": [
+      "x = 10",
+      "x = x",
+      "10",
+      "%d"
+    ]
+  },
+  {
+    "q": "What year was the C programming language developed?",
+    "o": [
+      "1972",
+      "1985",
+      "1969",
+      "1991"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the structure of a basic C program?",
+    "o": [
+      "Preprocessor directives → main() → Statements",
+      "main() → Preprocessor directives → Statements",
+      "Statements → main() → Preprocessor directives",
+      "Comments → main() → #include"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 8, y = 3;\n    printf(\"%d\", x % y);\n    return 0;\n}",
+    "o": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "Which data type is most suitable for storing the number of pages in a book?",
+    "o": [
+      "int",
+      "char",
+      "float",
+      "double"
+    ]
+  },
+  {
+    "q": "Identify the correct syntax for accepting a float input in C.",
+    "o": [
+      "scanf(\"%f\", &value);",
+      "scanf(\"%d\", value);",
+      "scanf(\"%c\", &value);",
+      "scanf(\"float\", &value);"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid identifier in C?",
+    "o": [
+      "_count123",
+      "return",
+      "5value",
+      "float-num"
+    ]
+  },
+  {
+    "q": "Which keyword is used to declare a variable that cannot be modified?",
+    "o": [
+      "const",
+      "static",
+      "final",
+      "immutable"
+    ]
+  },
+  {
+    "q": "What will be the output of the code below?",
+    "c": "#include <stdio.h>\nint main() {\n    printf(\"%c\", 'A' + 1);\n    return 0;\n}",
+    "o": [
+      "B",
+      "A",
+      "1",
+      "C"
+    ]
+  },
+  {
+    "q": "Which of these is NOT a valid C keyword?",
+    "o": [
+      "repeat",
+      "switch",
+      "goto",
+      "auto"
+    ]
+  },
+  {
+    "q": "What is the correct format specifier for a double value in printf?",
+    "o": [
+      "%lf",
+      "%f",
+      "%d",
+      "%ld"
+    ]
+  },
+  {
+    "q": "Which header file is essential for using `printf()` and `scanf()`?",
+    "o": [
+      "stdio.h",
+      "stdlib.h",
+      "math.h",
+      "conio.h"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5;\n    printf(\"Value: %d\\n\", a++);\n    return 0;\n}",
+    "o": [
+      "Value: 5",
+      "Value: 6",
+      "5",
+      "6"
+    ]
+  },
+  {
+    "q": "Which language directly influenced the development of the C programming language?",
+    "o": [
+      "B",
+      "C++",
+      "Pascal",
+      "Python"
+    ]
+  },
+  {
+    "q": "Where does execution of a C program begin?",
+    "o": [
+      "From the main() function",
+      "From the first #include",
+      "From the top of the file",
+      "From the last function"
+    ]
+  },
+  {
+    "q": "Which of the following is used to declare a single character variable in C?",
+    "o": [
+      "char",
+      "int",
+      "string",
+      "float"
+    ]
+  },
+  {
+    "q": "Identify the correct use of scanf to read an integer.",
+    "o": [
+      "scanf(\"%d\", &num);",
+      "scanf(\"%c\", num);",
+      "scanf(\"%f\", &num);",
+      "scanf(num);"
+    ]
+  },
+  {
+    "q": "Which of these is an invalid variable name in C?",
+    "o": [
+      "2ndValue",
+      "value_2",
+      "_value",
+      "value2"
+    ]
+  },
+  {
+    "q": "What does the keyword `int` represent in C?",
+    "o": [
+      "Integer data type",
+      "Float data type",
+      "Character type",
+      "Array type"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 10;\n    float b = 2.5;\n    printf(\"%d %f\", a, b);\n    return 0;\n}",
+    "o": [
+      "10 2.500000",
+      "10 2.5",
+      "10 2",
+      "2.5 10"
+    ]
+  },
+  {
+    "q": "Which format specifier is used to print a character?",
+    "o": [
+      "%c",
+      "%s",
+      "%d",
+      "%x"
+    ]
+  },
+  {
+    "q": "What is the purpose of #include <stdio.h> in a C program?",
+    "o": [
+      "To enable input/output functions",
+      "To define math operations",
+      "To declare main() function",
+      "To import system drivers"
+    ]
+  },
+  {
+    "q": "Which keyword is used to declare variables that retain their value between function calls?",
+    "o": [
+      "static",
+      "auto",
+      "extern",
+      "register"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 7;\n    printf(\"%d\", x * 2 + 1);\n    return 0;\n}",
+    "o": [
+      "15",
+      "14",
+      "9",
+      "17"
+    ]
+  },
+  {
+    "q": "Which one is a valid identifier in C?",
+    "o": [
+      "student_score",
+      "student-score",
+      "student score",
+      "score#1"
+    ]
+  },
+  {
+    "q": "Which part of a C program must appear before any executable code?",
+    "o": [
+      "#include directives",
+      "return statement",
+      "main() function",
+      "printf statement"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the C language?",
+    "o": [
+      "A middle-level programming language",
+      "A purely high-level language",
+      "A low-level machine language",
+      "An assembly-only language"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a constant value in C?",
+    "o": [
+      "const",
+      "static",
+      "final",
+      "permanent"
+    ]
+  },
+  {
+    "q": "Identify the valid format for reading a floating-point value using scanf.",
+    "o": [
+      "scanf(\"%f\", &value);",
+      "scanf(\"%d\", &value);",
+      "scanf(\"%c\", &value);",
+      "scanf(value);"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid declaration of a variable?",
+    "o": [
+      "int totalMarks;",
+      "int total Marks;",
+      "int total-Marks;",
+      "int 1total;"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    char ch = 'A';\n    printf(\"%c\", ch + 1);\n    return 0;\n}",
+    "o": [
+      "B",
+      "A",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the role of the `main()` function in a C program?",
+    "o": [
+      "It marks the starting point of execution",
+      "It stores global variables",
+      "It imports other programs",
+      "It creates system files"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a variable that is available to all files?",
+    "o": [
+      "extern",
+      "auto",
+      "static",
+      "register"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5, y = 3;\n    printf(\"%d\", x - y);\n    return 0;\n}",
+    "o": [
+      "2",
+      "8",
+      "15",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to define a variable that is stored in CPU registers?",
+    "o": [
+      "register",
+      "auto",
+      "static",
+      "float"
+    ]
+  },
+  {
+    "q": "Which data type is best for storing a large whole number?",
+    "o": [
+      "long int",
+      "char",
+      "float",
+      "short"
+    ]
+  },
+  {
+    "q": "What does `scanf(\"%d\", &x);` do?",
+    "o": [
+      "Reads an integer and stores it in x",
+      "Reads a character and stores it in x",
+      "Prints the value of x",
+      "Skips the input of x"
+    ]
+  },
+  {
+    "q": "Who is considered the creator of the C programming language?",
+    "o": [
+      "Dennis Ritchie",
+      "Bjarne Stroustrup",
+      "Ken Thompson",
+      "James Gosling"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid identifier in C?",
+    "o": [
+      "total_score",
+      "2ndScore",
+      "score-total",
+      "float"
+    ]
+  },
+  {
+    "q": "Which function is used to output data to the console in C?",
+    "o": [
+      "printf()",
+      "cin>>",
+      "output()",
+      "disp()"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int age = 21;\n    printf(\"Age: %d\", age);\n    return 0;\n}",
+    "o": [
+      "Age: 21",
+      "21",
+      "Age = 21",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the size of a `char` variable in C on most systems?",
+    "o": [
+      "1 byte",
+      "2 bytes",
+      "4 bytes",
+      "Depends on compiler"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 3;\n    int b = a * 2;\n    printf(\"%d\", b);\n    return 0;\n}",
+    "o": [
+      "6",
+      "3",
+      "9",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a keyword in C?",
+    "o": [
+      "loop",
+      "auto",
+      "extern",
+      "return"
+    ]
+  },
+  {
+    "q": "What is the correct format specifier to read a character input in C?",
+    "o": [
+      "%c",
+      "%s",
+      "%d",
+      "%f"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a C program structure?",
+    "o": [
+      "Header files, main function, declarations, statements",
+      "Start block, header, end block",
+      "Declaration, loop, exit",
+      "Define, include, stop"
+    ]
+  },
+  {
+    "q": "Which of the following is used to accept input from the user?",
+    "o": [
+      "scanf()",
+      "input()",
+      "get()",
+      "read()"
+    ]
+  },
+  {
+    "q": "Choose the correct declaration of a float variable.",
+    "o": [
+      "float temp;",
+      "float = temp;",
+      "float: temp;",
+      "float->temp;"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 4;\n    float b = 5.0;\n    printf(\"%f\", a + b);\n    return 0;\n}",
+    "o": [
+      "9.000000",
+      "9",
+      "4.5",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which year was the C programming language developed?",
+    "o": [
+      "1972",
+      "1982",
+      "1969",
+      "1979"
+    ]
+  },
+  {
+    "q": "What is the purpose of `#include <stdio.h>` in a C program?",
+    "o": [
+      "To use input/output functions like printf and scanf",
+      "To include system-level functions",
+      "To write comments in a program",
+      "To define global variables"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n   int x = 7;\n   printf(\"x is %d\", x);\n   return 0;\n}",
+    "o": [
+      "x is 7",
+      "x = 7",
+      "7",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid C variable name?",
+    "o": [
+      "_totalMarks",
+      "2nd_value",
+      "float",
+      "total-value"
+    ]
+  },
+  {
+    "q": "Which keyword is used to declare a constant value in C?",
+    "o": [
+      "const",
+      "constant",
+      "define",
+      "final"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to take integer input from a user in C?",
+    "o": [
+      "scanf(\"%d\", &num);",
+      "input(num);",
+      "cin >> num;",
+      "read(num);"
+    ]
+  },
+  {
+    "q": "What is the output of the code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n   float pi = 3.14;\n   printf(\"%.1f\", pi);\n   return 0;\n}",
+    "o": [
+      "3.1",
+      "3.14",
+      "3",
+      "0.0"
+    ]
+  },
+  {
+    "q": "Which of the following is a primary data type in C?",
+    "o": [
+      "int",
+      "string",
+      "bool",
+      "real"
+    ]
+  },
+  {
+    "q": "What does the `return 0;` statement signify in the main function?",
+    "o": [
+      "The program ended successfully",
+      "The program has an error",
+      "The main function has no return type",
+      "It resets all variables"
+    ]
+  },
+  {
+    "q": "Which character is used to indicate the beginning of a preprocessor directive?",
+    "o": [
+      "#",
+      "@",
+      "%",
+      "&"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to declare a function in C?",
+    "o": [
+      "void",
+      "func",
+      "method",
+      "function"
+    ]
+  },
+  {
+    "q": "Identify the correct data type declaration.",
+    "o": [
+      "char letter = 'A';",
+      "char = 'A';",
+      "character letter = 'A';",
+      "char letter := 'A';"
+    ]
+  },
+  {
+    "q": "Who developed the C programming language?",
+    "o": [
+      "Dennis Ritchie",
+      "James Gosling",
+      "Bjarne Stroustrup",
+      "Ken Thompson"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a C program structure?",
+    "o": [
+      "Header files, main function, statements",
+      "Class, objects, methods",
+      "Packages, imports, main",
+      "Modules, decorators, body"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n   int a = 3, b = 2;\n   printf(\"%d\", a + b);\n   return 0;\n}",
+    "o": [
+      "5",
+      "32",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is not a valid identifier in C?",
+    "o": [
+      "2value",
+      "_main",
+      "value2",
+      "main_"
+    ]
+  },
+  {
+    "q": "Which data type is used to store a single character in C?",
+    "o": [
+      "char",
+      "string",
+      "character",
+      "chr"
+    ]
+  },
+  {
+    "q": "How do you print a float value in C using printf?",
+    "o": [
+      "printf(\"%f\", value);",
+      "print(value);",
+      "cout << value;",
+      "System.out.println(value);"
+    ]
+  },
+  {
+    "q": "Which of the following is a keyword in C?",
+    "o": [
+      "return",
+      "start",
+      "define",
+      "repeat"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n   int num;\n   scanf(\"%d\", &num);\n   printf(\"%d\", num);\n   return 0;\n}",
+    "o": [
+      "It will print the number entered by the user.",
+      "It will always print 0.",
+      "It will show a compilation error.",
+      "It prints garbage value."
+    ]
+  },
+  {
+    "q": "Which of these formats is correct for reading a character input using scanf?",
+    "o": [
+      "scanf(\" %c\", &ch);",
+      "scanf(\"char\", ch);",
+      "scanf(\"%s\", ch);",
+      "read(%c, ch);"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n   int age = 25;\n   printf(\"Age is: %d\", age);\n   return 0;\n}",
+    "o": [
+      "Age is: 25",
+      "Age is: %d",
+      "25",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a global constant in C?",
+    "o": [
+      "#define",
+      "constglobal",
+      "let",
+      "permanent"
+    ]
+  },
+  {
+    "q": "Which of the following statements about C identifiers is true?",
+    "o": [
+      "They can start with an underscore or a letter.",
+      "They can begin with a digit.",
+      "They may contain spaces.",
+      "They must match a keyword."
+    ]
+  },
+  {
+    "q": "In which year was the C language developed?",
+    "o": [
+      "1972",
+      "1983",
+      "1995",
+      "1965"
+    ]
+  },
+  {
+    "q": "Which part of a C program tells the compiler where to begin execution?",
+    "o": [
+      "main() function",
+      "#include directives",
+      "Header files",
+      "return statement"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n   int a = 4;\n   int b = 6;\n   printf(\"%d\", a * b);\n   return 0;\n}",
+    "o": [
+      "24",
+      "10",
+      "46",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of these is a valid C identifier?",
+    "o": [
+      "total_score",
+      "total score",
+      "1score",
+      "float"
+    ]
+  },
+  {
+    "q": "What does the '%c' format specifier in printf() represent?",
+    "o": [
+      "Character",
+      "Integer",
+      "String",
+      "Float"
+    ]
+  },
+  {
+    "q": "What is the size of an `int` in C on most modern systems?",
+    "o": [
+      "4 bytes",
+      "2 bytes",
+      "8 bytes",
+      "1 byte"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to define a fixed value in C?",
+    "o": [
+      "const",
+      "fixed",
+      "static",
+      "permanent"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n   float x = 5.5;\n   printf(\"%0.1f\", x);\n   return 0;\n}",
+    "o": [
+      "5.5",
+      "5",
+      "0.5",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which function is used to read formatted input in C?",
+    "o": [
+      "scanf()",
+      "readline()",
+      "input()",
+      "cin"
+    ]
+  },
+  {
+    "q": "Which of the following keywords cannot be used as an identifier?",
+    "o": [
+      "return",
+      "main",
+      "sum1",
+      "printf"
+    ]
+  },
+  {
+    "q": "What is the purpose of #include<stdio.h>?",
+    "o": [
+      "To include standard input-output functions",
+      "To create a user-defined header file",
+      "To include graphics",
+      "To compile the code"
+    ]
+  },
+  {
+    "q": "Which of the following best describes 'int marks = 90;'?",
+    "o": [
+      "Variable declaration and initialization",
+      "Only declaration",
+      "Only initialization",
+      "Function definition"
+    ]
+  },
+  {
+    "q": "Who is known as the creator of the C programming language?",
+    "o": [
+      "Dennis Ritchie",
+      "James Gosling",
+      "Bjarne Stroustrup",
+      "Guido van Rossum"
+    ]
+  },
+  {
+    "q": "What is the correct file extension for a standard C program?",
+    "o": [
+      ".c",
+      ".cpp",
+      ".cs",
+      ".py"
+    ]
+  },
+  {
+    "q": "What will be the output of this program?",
+    "c": "#include <stdio.h>\nint main() {\n   int age = 20;\n   printf(\"Age: %d\", age);\n   return 0;\n}",
+    "o": [
+      "Age: 20",
+      "20",
+      "Age: age",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these is a correct way to declare a character variable in C?",
+    "o": [
+      "char grade = 'A';",
+      "char grade = A;",
+      "char grade = \"A\";",
+      "char = 'A';"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid keyword in C?",
+    "o": [
+      "function",
+      "return",
+      "int",
+      "for"
+    ]
+  },
+  {
+    "q": "What does the 'main' function in a C program signify?",
+    "o": [
+      "The entry point of program execution",
+      "The name of the program file",
+      "A library function",
+      "An error handler"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "#include <stdio.h>\nint main() {\n   printf(\"%d %f\", 10, 10.5);\n   return 0;\n}",
+    "o": [
+      "10 10.500000",
+      "10 10",
+      "10.5 10",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which format specifier is used to print a float value using printf()?",
+    "o": [
+      "%f",
+      "%d",
+      "%c",
+      "%s"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid variable name in C?",
+    "o": [
+      "_count",
+      "2value",
+      "float",
+      "my-variable"
+    ]
+  },
+  {
+    "q": "In a C program, what does the 'return 0;' statement do in the main function?",
+    "o": [
+      "Indicates successful program termination",
+      "Terminates all header files",
+      "Declares a global variable",
+      "Ends scanf execution"
+    ]
+  },
+  {
+    "q": "Which of the following best describes keywords in C?",
+    "o": [
+      "Reserved words with special meaning",
+      "User-defined variable names",
+      "Functions in standard library",
+      "Strings used for output"
+    ]
+  },
+  {
+    "q": "What will happen if you try to use a C keyword as a variable name?",
+    "o": [
+      "Compiler error",
+      "Program runs normally",
+      "Value is auto-assigned",
+      "Keyword is ignored"
+    ]
+  },
+  {
+    "q": "Which year was the C programming language developed?",
+    "o": [
+      "1972",
+      "1982",
+      "1990",
+      "1969"
+    ]
+  },
+  {
+    "q": "Which header file is necessary to use printf and scanf in C?",
+    "o": [
+      "#include <stdio.h>",
+      "#include <conio.h>",
+      "#include <stdlib.h>",
+      "#include <string.h>"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n   int x = 7, y = 3;\n   printf(\"%d\", x + y);\n   return 0;\n}",
+    "o": [
+      "10",
+      "73",
+      "7 + 3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following data types can store decimal values?",
+    "o": [
+      "float",
+      "int",
+      "char",
+      "long"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid declaration of a variable in C?",
+    "o": [
+      "int marks = 90;",
+      "int = 90;",
+      "marks int = 90;",
+      "int: marks = 90;"
+    ]
+  },
+  {
+    "q": "What does scanf() function do in C?",
+    "o": [
+      "It takes input from the user",
+      "It prints output to the screen",
+      "It exits the program",
+      "It clears the screen"
+    ]
+  },
+  {
+    "q": "Which of these is a valid keyword in C?",
+    "o": [
+      "return",
+      "main",
+      "input",
+      "print"
+    ]
+  },
+  {
+    "q": "What is the correct format specifier for an integer in printf()?",
+    "o": [
+      "%d",
+      "%i",
+      "%c",
+      "%f"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n   char ch = 'Z';\n   printf(\"%c\", ch);\n   return 0;\n}",
+    "o": [
+      "Z",
+      "%c",
+      "ch",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which part of a C program contains the actual instructions to be executed?",
+    "o": [
+      "main() function",
+      "Header section",
+      "Preprocessor directives",
+      "Comments"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT allowed as a variable name?",
+    "o": [
+      "float",
+      "user_score",
+      "_temp",
+      "num1"
+    ]
+  },
+  {
+    "q": "What is the default return type of main() in C?",
+    "o": [
+      "int",
+      "void",
+      "char",
+      "float"
+    ]
+  },
+  {
+    "q": "Who developed the C programming language?",
+    "o": [
+      "Dennis Ritchie",
+      "Bjarne Stroustrup",
+      "James Gosling",
+      "Guido van Rossum"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to declare a character variable in C?",
+    "o": [
+      "char grade = 'A';",
+      "char grade = A;",
+      "char = 'A';",
+      "character grade = 'A';"
+    ]
+  },
+  {
+    "q": "What will the following code display?",
+    "c": "#include <stdio.h>\nint main() {\n   printf(\"Learning C!\");\n   return 0;\n}",
+    "o": [
+      "Learning C!",
+      "learning c",
+      "Learning C",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which symbol is used to start preprocessor directives in C?",
+    "o": [
+      "#",
+      "@",
+      "$",
+      "%"
+    ]
+  },
+  {
+    "q": "What is the correct syntax to get an integer input from the user in C?",
+    "o": [
+      "scanf(\"%d\", &num);",
+      "scanf(\"%f\", num);",
+      "scanf(\"%d\", num);",
+      "input(\"%d\", &num);"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid C keyword?",
+    "o": [
+      "include",
+      "return",
+      "if",
+      "while"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n   int a = 3, b = 2;\n   printf(\"%d\", a * b);\n   return 0;\n}",
+    "o": [
+      "6",
+      "5",
+      "3",
+      "32"
+    ]
+  },
+  {
+    "q": "In a C program, where does execution start?",
+    "o": [
+      "main() function",
+      "First header file",
+      "Last line of code",
+      "Any user-defined function"
+    ]
+  },
+  {
+    "q": "What is the correct way to declare a variable that stores age?",
+    "o": [
+      "int age;",
+      "integer age;",
+      "num age;",
+      "int: age;"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid identifier in C?",
+    "o": [
+      "_totalScore",
+      "123abc",
+      "float",
+      "user-name"
+    ]
+  },
+  {
+    "q": "Choose the correct output for the code below:",
+    "c": "#include <stdio.h>\nint main() {\n   float pi = 3.14;\n   printf(\"%f\", pi);\n   return 0;\n}",
+    "o": [
+      "3.140000",
+      "3.14",
+      "pi",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly prints 'Hello World' in C?",
+    "o": [
+      "printf(\"Hello World\");",
+      "print(\"Hello World\")",
+      "cout << \"Hello World\";",
+      "System.out.println(\"Hello World\");"
+    ]
+  },
+  {
+    "q": "Which year was the C programming language developed?",
+    "o": [
+      "1972",
+      "1983",
+      "1991",
+      "2000"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to include a header file in C?",
+    "o": [
+      "#include <stdio.h>",
+      "include<stdio.h>",
+      "#include stdio.h",
+      "Import stdio"
+    ]
+  },
+  {
+    "q": "What is the default return type of the `main` function in C?",
+    "o": [
+      "int",
+      "void",
+      "float",
+      "char"
+    ]
+  },
+  {
+    "q": "Identify the data type used to store decimal values in C.",
+    "o": [
+      "float",
+      "int",
+      "char",
+      "bool"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid variable name in C?",
+    "o": [
+      "total_marks",
+      "2marks",
+      "float",
+      "marks-total"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n   int x = 10;\n   printf(\"%d\", x);\n   return 0;\n}",
+    "o": [
+      "10",
+      "%d",
+      "x",
+      "0"
+    ]
+  },
+  {
+    "q": "Which symbol is used to end a statement in C?",
+    "o": [
+      ";",
+      ":",
+      ",",
+      "."
+    ]
+  },
+  {
+    "q": "What is the purpose of the `scanf` function?",
+    "o": [
+      "To take input from the user",
+      "To print output to the screen",
+      "To perform mathematical operations",
+      "To declare variables"
+    ]
+  },
+  {
+    "q": "Choose the correct data type to store a single character.",
+    "o": [
+      "char",
+      "string",
+      "text",
+      "character"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to define a constant value in C?",
+    "o": [
+      "const",
+      "final",
+      "define",
+      "constant"
+    ]
+  },
+  {
+    "q": "Which line correctly takes an integer input from the user?",
+    "o": [
+      "scanf(\"%d\", &age);",
+      "input(\"%d\", age);",
+      "read(%d, age);",
+      "scanf(\"d%\", age);"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", sizeof(char));\n    return 0;\n}",
+    "o": [
+      "1",
+      "2",
+      "4",
+      "8"
+    ]
+  },
+  {
+    "q": "Who is considered the father of the C programming language?",
+    "o": [
+      "Dennis Ritchie",
+      "Bjarne Stroustrup",
+      "James Gosling",
+      "Guido van Rossum"
+    ]
+  },
+  {
+    "q": "What is the correct structure of a basic C program?",
+    "o": [
+      "#include <stdio.h>\nint main() {\n   // code\n   return 0;\n}",
+      "main() {\n   #include <stdio.h>\n   return 0;\n}",
+      "int main {\n   printf(\"Hello\");\n}",
+      "#include stdio.h\nmain() return 0;"
+    ]
+  },
+  {
+    "q": "Which data type is used to store large whole numbers in C?",
+    "o": [
+      "long",
+      "float",
+      "char",
+      "short"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares an integer variable?",
+    "o": [
+      "int age;",
+      "integer age;",
+      "num age;",
+      "int: age;"
+    ]
+  },
+  {
+    "q": "What is the correct format specifier for printing a floating-point number using printf?",
+    "o": [
+      "%f",
+      "%d",
+      "%c",
+      "%lf"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    char letter = 'A';\n    printf(\"%c\", letter);\n    return 0;\n}",
+    "o": [
+      "A",
+      "letter",
+      "%c",
+      "char"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a keyword in C?",
+    "o": [
+      "input",
+      "return",
+      "switch",
+      "void"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 10;\n    printf(\"%d\", a + b);\n    return 0;\n}",
+    "o": [
+      "15",
+      "10",
+      "5",
+      "Compiler Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a function in C?",
+    "o": [
+      "int",
+      "function",
+      "voidFunc",
+      "define"
+    ]
+  },
+  {
+    "q": "Which of these is a valid identifier in C?",
+    "o": [
+      "_value123",
+      "123value",
+      "value-name",
+      "float"
+    ]
+  },
+  {
+    "q": "What does the `#include` directive do?",
+    "o": [
+      "Inserts the contents of a header file",
+      "Declares a variable",
+      "Defines a loop",
+      "Prints output"
+    ]
+  },
+  {
+    "q": "Choose the correct statement to read a float value from the user.",
+    "o": [
+      "scanf(\"%f\", &price);",
+      "scanf(\"f%\", price);",
+      "read(\"%f\", price);",
+      "input(\"%f\", price);"
+    ]
+  },
+  {
+    "q": "Which year was the C programming language developed?",
+    "o": [
+      "1972",
+      "1982",
+      "1969",
+      "1991"
+    ]
+  },
+  {
+    "q": "What will be the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int num = 7;\n    printf(\"Number: %d\", num);\n    return 0;\n}",
+    "o": [
+      "Number: 7",
+      "%d",
+      "num",
+      "7"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare a character variable?",
+    "o": [
+      "char grade;",
+      "character grade;",
+      "char: grade;",
+      "char grade()"
+    ]
+  },
+  {
+    "q": "Which function is used to display output in C?",
+    "o": [
+      "printf()",
+      "scanf()",
+      "getchar()",
+      "puts()"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid identifier in C?",
+    "o": [
+      "myVariable",
+      "2value",
+      "float",
+      "value-name"
+    ]
+  },
+  {
+    "q": "Which keyword is used to return a value from a function?",
+    "o": [
+      "return",
+      "break",
+      "continue",
+      "goto"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "#include <stdio.h>\nint main() {\n    int age;\n    scanf(\"%d\", &age);\n    return 0;\n}",
+    "o": [
+      "Reads an integer from the user",
+      "Prints the age",
+      "Returns the age",
+      "Defines a new data type"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT part of a basic C program structure?",
+    "o": [
+      "class definition",
+      "main function",
+      "preprocessor directives",
+      "statements and expressions"
+    ]
+  },
+  {
+    "q": "What is the purpose of using `#include <stdio.h>`?",
+    "o": [
+      "To use standard input and output functions",
+      "To define macros",
+      "To write loops",
+      "To create new keywords"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    float pi = 3.14;\n    printf(\"%.2f\", pi);\n    return 0;\n}",
+    "o": [
+      "3.14",
+      "3",
+      "3.140000",
+      "pi"
+    ]
+  },
+  {
+    "q": "Which of the following is used to take input in C?",
+    "o": [
+      "scanf()",
+      "input()",
+      "read()",
+      "cin"
+    ]
+  },
+  {
+    "q": "Choose the correct declaration for a variable storing a decimal number.",
+    "o": [
+      "float temperature;",
+      "int temperature;",
+      "decimal temperature;",
+      "real temperature;"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct structure of a C program?",
+    "o": [
+      "Preprocessor directives, main function, variable declarations, statements",
+      "main function, preprocessor directives, statements",
+      "Variable declarations, main function, preprocessor directives",
+      "Statements, variable declarations, main function"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int a = 10;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "10",
+      "%d",
+      "a",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to declare an integer variable in C?",
+    "o": [
+      "int num;",
+      "integer num;",
+      "num int;",
+      "int = num;"
+    ]
+  },
+  {
+    "q": "What will be the output of this program?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int x = 5, y = 3;\n    printf(\"%d\", x + y);\n    return 0;\n}",
+    "o": [
+      "8",
+      "53",
+      "x + y",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a keyword in C?",
+    "o": [
+      "return",
+      "print",
+      "input",
+      "main"
+    ]
+  },
+  {
+    "q": "What is the purpose of the `#include <stdio.h>` directive?",
+    "o": [
+      "It allows the program to use input/output functions like printf and scanf",
+      "It defines the main function of the program",
+      "It initializes global variables",
+      "It executes the program"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    char ch = 'A';\n    printf(\"%c\", ch);\n    return 0;\n}",
+    "o": [
+      "A",
+      "ch",
+      "%c",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these is not a valid identifier in C?",
+    "o": [
+      "int",
+      "totalMarks",
+      "_value",
+      "value123"
+    ]
+  },
+  {
+    "q": "Which of the following is used to read input from the user in C?",
+    "o": [
+      "scanf",
+      "printf",
+      "input",
+      "readline"
+    ]
+  },
+  {
+    "q": "Which data type is used to store a single character in C?",
+    "o": [
+      "char",
+      "int",
+      "float",
+      "string"
+    ]
+  },
+  {
+    "q": "Who is considered the creator of the C programming language?",
+    "o": [
+      "Dennis Ritchie",
+      "Ken Thompson",
+      "Brian Kernighan",
+      "James Gosling"
+    ]
+  },
+  {
+    "q": "Identify the correct placement of the `main()` function in a C program.",
+    "o": [
+      "It must appear exactly once in every C program.",
+      "It is optional in small programs.",
+      "It can be used multiple times for modularity.",
+      "It should only be used for I/O operations."
+    ]
+  },
+  {
+    "q": "What will be the result when this program is executed?",
+    "c": "#include <stdio.h>\n\nint main() {\n    float a = 5.25;\n    printf(\"%.1f\", a);\n    return 0;\n}",
+    "o": [
+      "5.2",
+      "5.25",
+      "5",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these is a valid identifier in C?",
+    "o": [
+      "_total1",
+      "1stTotal",
+      "int",
+      "float%"
+    ]
+  },
+  {
+    "q": "Choose the correct `scanf` statement to read an integer from the user.",
+    "o": [
+      "scanf(\"%d\", &number);",
+      "scanf(\"%d\", number);",
+      "scanf(number);",
+      "read(%d, number);"
+    ]
+  },
+  {
+    "q": "What will this program print on screen?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int a = 4, b = 6;\n    printf(\"Sum = %d\", a + b);\n    return 0;\n}",
+    "o": [
+      "Sum = 10",
+      "Sum = 46",
+      "a + b",
+      "%d"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a keyword in C?",
+    "o": [
+      "input",
+      "return",
+      "if",
+      "while"
+    ]
+  },
+  {
+    "q": "Which format specifier is used to print a character using `printf`?",
+    "o": [
+      "%c",
+      "%s",
+      "%d",
+      "%f"
+    ]
+  },
+  {
+    "q": "What does the `int` keyword specify in a variable declaration?",
+    "o": [
+      "That the variable holds an integer value",
+      "That the variable is internal",
+      "That the variable holds a floating value",
+      "That the variable is a function"
+    ]
+  },
+  {
+    "q": "Pick the correct structure of a simple C program.",
+    "o": [
+      "#include, main(), code inside main",
+      "header files after main, main inside header, code below",
+      "start with void, functions last, header at bottom",
+      "include libraries in main, print after return"
+    ]
+  },
+  {
+    "q": "Which section of a C program typically contains `#include` directives?",
+    "o": [
+      "The preprocessor section at the top",
+      "Inside the main function",
+      "After the return statement",
+      "Just before each variable declaration"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int age;\n    age = 30;\n    printf(\"Age: %d\", age);\n    return 0;\n}",
+    "o": [
+      "Age: 30",
+      "%d",
+      "age",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a 'keyword' in C?",
+    "o": [
+      "A reserved word that has a special meaning",
+      "A user-defined label for a variable",
+      "A type of data format",
+      "A function from the math library"
+    ]
+  },
+  {
+    "q": "What will be the output of this C code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    char initial = 'J';\n    printf(\"%c\\n\", initial);\n    return 0;\n}",
+    "o": [
+      "J",
+      "%c",
+      "initial",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these data types is best for storing the price of a product like 99.99?",
+    "o": [
+      "float",
+      "int",
+      "char",
+      "long"
+    ]
+  },
+  {
+    "q": "Select the correct way to take two integers as input from the user.",
+    "o": [
+      "scanf(\"%d %d\", &a, &b);",
+      "scanf(\"%d %d\", a, b);",
+      "scanf(a, b);",
+      "input(a, b);"
+    ]
+  },
+  {
+    "q": "Why is `main()` function important in C programming?",
+    "o": [
+      "Execution of the program starts from it",
+      "It stores the global variables",
+      "It loads external libraries",
+      "It handles memory management"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid variable name in C?",
+    "o": [
+      "user_score",
+      "int",
+      "2value",
+      "total#"
+    ]
+  },
+  {
+    "q": "Identify the keyword used to exit from a function in C.",
+    "o": [
+      "return",
+      "break",
+      "stop",
+      "exit"
+    ]
+  },
+  {
+    "q": "What is the correct format specifier to print a floating-point number with 2 decimal places?",
+    "o": [
+      "%.2f",
+      "%d.2",
+      "%float",
+      "%2f"
+    ]
+  },
+  {
+    "q": "What is the very first step in writing a C program that uses standard input and output functions?",
+    "o": [
+      "#include <stdio.h>",
+      "Declare main()",
+      "Start with variable declarations",
+      "Write the return statement first"
+    ]
+  },
+  {
+    "q": "What will this C code print to the screen?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int x = 7;\n    printf(\"Value: %d\\n\", x);\n    return 0;\n}",
+    "o": [
+      "Value: 7",
+      "x",
+      "%d",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes an 'identifier' in C?",
+    "o": [
+      "The name given to a variable, function, or array",
+      "A reserved keyword used by the compiler",
+      "A comment written for documentation",
+      "A data type specifier"
+    ]
+  },
+  {
+    "q": "Which output will this code produce?",
+    "c": "#include <stdio.h>\n\nint main() {\n    char symbol = '@';\n    printf(\"%c\", symbol);\n    return 0;\n}",
+    "o": [
+      "@",
+      "symbol",
+      "%c",
+      "Error"
+    ]
+  },
+  {
+    "q": "In C, how many bytes does an `int` typically use on a 32-bit system?",
+    "o": [
+      "4",
+      "2",
+      "8",
+      "1"
+    ]
+  },
+  {
+    "q": "Which is the correct way to read a `char` and an `int` from the user?",
+    "o": [
+      "scanf(\"%c %d\", &ch, &num);",
+      "scanf(\"%c, %d\", ch, num);",
+      "scanf(\"%c %d\", ch, num);",
+      "scanf(%c %d, &ch, &num);"
+    ]
+  },
+  {
+    "q": "Why is the semicolon (;) important in C syntax?",
+    "o": [
+      "It marks the end of a statement",
+      "It separates variable names",
+      "It denotes a comment",
+      "It starts a block of code"
+    ]
+  },
+  {
+    "q": "Which of these is NOT a valid keyword in C?",
+    "o": [
+      "define",
+      "if",
+      "void",
+      "return"
+    ]
+  },
+  {
+    "q": "How would you store the age of a person in a variable?",
+    "o": [
+      "int age;",
+      "age int;",
+      "integer age;",
+      "num age;"
+    ]
+  },
+  {
+    "q": "What is the correct format specifier to read a float value using `scanf`?",
+    "o": [
+      "%f",
+      "%lf",
+      "%d",
+      "%c"
+    ]
+  },
+  {
+    "q": "What inspired the creation of the C programming language?",
+    "o": [
+      "The need for a system programming language for UNIX",
+      "A replacement for Java on early machines",
+      "The popularity of object-oriented programming",
+      "To build Windows applications quickly"
+    ]
+  },
+  {
+    "q": "What will be displayed when the following C code runs?",
+    "c": "#include <stdio.h>\n\nint main() {\n    printf(\"Hello, C World!\\n\");\n    return 0;\n}",
+    "o": [
+      "Hello, C World!",
+      "printf",
+      "Error",
+      "main"
+    ]
+  },
+  {
+    "q": "In a typical C program, where do variable declarations appear?",
+    "o": [
+      "Inside the main function before they’re used",
+      "After the return statement",
+      "Outside all functions only",
+      "Only within header files"
+    ]
+  },
+  {
+    "q": "How many characters can a variable name in C legally start with?",
+    "o": [
+      "One letter or underscore only",
+      "A digit or letter",
+      "Any printable character",
+      "A symbol like # or @"
+    ]
+  },
+  {
+    "q": "What is the correct output of this code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int temp = 25;\n    printf(\"Temp: %d\\n\", temp);\n    return 0;\n}",
+    "o": [
+      "Temp: 25",
+      "25",
+      "%d",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these format specifiers is used for a long integer in `printf`?",
+    "o": [
+      "%ld",
+      "%lf",
+      "%li",
+      "%long"
+    ]
+  },
+  {
+    "q": "Which of the following is a legal variable declaration in C?",
+    "o": [
+      "float _balance;",
+      "_float balance;",
+      "float-balance;",
+      "float = balance;"
+    ]
+  },
+  {
+    "q": "What keyword is used to define a constant in C?",
+    "o": [
+      "const",
+      "static",
+      "final",
+      "define"
+    ]
+  },
+  {
+    "q": "How does the compiler treat the `main()` function in a C program?",
+    "o": [
+      "As the starting point of execution",
+      "As an optional function",
+      "As a variable holder",
+      "As a comment block"
+    ]
+  },
+  {
+    "q": "Which of these statements correctly reads two integers from the user?",
+    "o": [
+      "scanf(\"%d %d\", &x, &y);",
+      "scanf(\"%d, %d\", x, y);",
+      "read(x, y);",
+      "input(x, y);"
+    ]
+  },
+  {
+    "q": "Why is C considered a middle-level language?",
+    "o": [
+      "It combines features of both low-level and high-level languages",
+      "It’s easier than assembly but harder than Python",
+      "It can only be used for operating systems",
+      "It only works on 32-bit machines"
+    ]
+  },
+  {
+    "q": "What will be the output of this C program?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int a = 4, b = 2;\n    printf(\"%d\\n\", a * b);\n    return 0;\n}",
+    "o": [
+      "8",
+      "6",
+      "42",
+      "%d"
+    ]
+  },
+  {
+    "q": "Which line is essential to perform output in a basic C program?",
+    "o": [
+      "#include <stdio.h>",
+      "#include <output.h>",
+      "import io",
+      "#input/output"
+    ]
+  },
+  {
+    "q": "Which of the following is an invalid variable name in C?",
+    "o": [
+      "int",
+      "student_id",
+      "marks_1",
+      "_temp"
+    ]
+  },
+  {
+    "q": "Which function is used to take input from a user in C?",
+    "o": [
+      "scanf()",
+      "input()",
+      "gets()",
+      "read()"
+    ]
+  },
+  {
+    "q": "How does a C program know where to begin execution?",
+    "o": [
+      "From the `main()` function",
+      "From the top of the file",
+      "From the first variable declared",
+      "From the header file"
+    ]
+  },
+  {
+    "q": "What will this code snippet print?",
+    "c": "#include <stdio.h>\n\nint main() {\n    float pi = 3.14;\n    printf(\"Pi: %.2f\\n\", pi);\n    return 0;\n}",
+    "o": [
+      "Pi: 3.14",
+      "Pi: %f",
+      "3.14",
+      "%.2f"
+    ]
+  },
+  {
+    "q": "Choose the keyword that is used to define a function that doesn't return any value.",
+    "o": [
+      "void",
+      "null",
+      "zero",
+      "none"
+    ]
+  },
+  {
+    "q": "Which of the following is a proper way to declare a character variable?",
+    "o": [
+      "char grade;",
+      "character grade;",
+      "char = grade;",
+      "grade char;"
+    ]
+  },
+  {
+    "q": "Why are format specifiers like `%d` and `%f` used in C?",
+    "o": [
+      "To tell `printf` or `scanf` what type of data is being handled",
+      "To make the output look nice",
+      "They are optional and for readability only",
+      "To comment out lines of code"
+    ]
+  },
+  {
+    "q": "Which component of a C program runs before the compilation starts?",
+    "o": [
+      "The preprocessor directives",
+      "The main function",
+      "The linker",
+      "The compiler itself"
+    ]
+  },
+  {
+    "q": "What will be printed by this C code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int num = 100;\n    printf(\"Number = %d\\n\", num);\n    return 0;\n}",
+    "o": [
+      "Number = 100",
+      "100 = Number",
+      "%d",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best explains why C uses data types?",
+    "o": [
+      "To define the kind of data stored in variables",
+      "To decorate variables for formatting",
+      "To make variable names more readable",
+      "To avoid using memory"
+    ]
+  },
+  {
+    "q": "What is the correct format specifier to display a character in C?",
+    "o": [
+      "%c",
+      "%ch",
+      "%char",
+      "%s"
+    ]
+  },
+  {
+    "q": "Which of these is a valid C identifier?",
+    "o": [
+      "userID1",
+      "1userID",
+      "user-ID",
+      "int"
+    ]
+  },
+  {
+    "q": "What will the following code do when run?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int val;\n    scanf(\"%d\", &val);\n    printf(\"You entered: %d\\n\", val);\n    return 0;\n}",
+    "o": [
+      "It reads an integer and displays it",
+      "It assigns a default value to `val`",
+      "It prints an error about `scanf`",
+      "It ignores user input"
+    ]
+  },
+  {
+    "q": "Which keyword is used to declare a fixed value that cannot be changed?",
+    "o": [
+      "const",
+      "fixed",
+      "permanent",
+      "final"
+    ]
+  },
+  {
+    "q": "Which is true about C keywords?",
+    "o": [
+      "They cannot be used as variable names",
+      "They are written in uppercase only",
+      "They are declared in `#define`",
+      "They can be redefined"
+    ]
+  },
+  {
+    "q": "What does this line do in a C program?\n`#include <stdio.h>`",
+    "o": [
+      "It adds standard input/output functions",
+      "It declares the main function",
+      "It allocates memory",
+      "It compiles the program"
+    ]
+  },
+  {
+    "q": "What is the correct way to declare two integer variables in the same line?",
+    "o": [
+      "int a, b;",
+      "int: a, b;",
+      "int a; int b,",
+      "integer a b;"
+    ]
+  },
+  {
+    "q": "What is the role of the `main()` function in a C program?",
+    "o": [
+      "It marks the starting point of execution",
+      "It defines global variables",
+      "It stores header files",
+      "It ends the program"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    printf(\"%d + %d = %d\\n\", 3, 2, 3 + 2);\n    return 0;\n}",
+    "o": [
+      "3 + 2 = 5",
+      "5",
+      "%d + %d = %d",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which data type is best suited to store a person’s age?",
+    "o": [
+      "int",
+      "float",
+      "char",
+      "double"
+    ]
+  },
+  {
+    "q": "What is the purpose of `scanf()` in C?",
+    "o": [
+      "To take input from the user",
+      "To display output",
+      "To define variables",
+      "To call functions"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid C keyword?",
+    "o": [
+      "repeat",
+      "return",
+      "void",
+      "while"
+    ]
+  },
+  {
+    "q": "What will the following program output?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int a = 10, b = 20;\n    printf(\"%d %d\\n\", b, a);\n    return 0;\n}",
+    "o": [
+      "20 10",
+      "10 20",
+      "10 10",
+      "20 20"
+    ]
+  },
+  {
+    "q": "Which is the correct way to declare a variable that stores a decimal value?",
+    "o": [
+      "float price;",
+      "decimal price;",
+      "int price;",
+      "real price;"
+    ]
+  },
+  {
+    "q": "Which of the following lines is used to include standard input and output functions in C?",
+    "o": [
+      "#include <stdio.h>",
+      "#import stdio",
+      "use stdio.h",
+      "stdio.h include"
+    ]
+  },
+  {
+    "q": "Why must variable names in C not match any keyword?",
+    "o": [
+      "Because keywords are reserved for specific functionality",
+      "Because the compiler will ignore them",
+      "Because they are automatically declared",
+      "Because they start with special symbols"
+    ]
+  },
+  {
+    "q": "What does `%f` in a `printf()` statement represent?",
+    "o": [
+      "A floating-point value",
+      "A function call",
+      "A file name",
+      "A formatter header"
+    ]
+  },
+  {
+    "q": "Which part of a C program is executed first?",
+    "o": [
+      "The `main()` function",
+      "The first variable declaration",
+      "The first `#include` line",
+      "The last line of code"
+    ]
+  },
+  {
+    "q": "What will this program print on the screen?",
+    "c": "#include <stdio.h>\n\nint main() {\n    printf(\"Learning C is fun!\\n\");\n    return 0;\n}",
+    "o": [
+      "Learning C is fun!",
+      "Learning",
+      "C is fun!",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid data type in C?",
+    "o": [
+      "double",
+      "real",
+      "text",
+      "decimal"
+    ]
+  },
+  {
+    "q": "How do you correctly read a floating-point value from user input?",
+    "o": [
+      "scanf(\"%f\", &num);",
+      "read(%f, num);",
+      "scanf(\"float\", num);",
+      "input(%f, num);"
+    ]
+  },
+  {
+    "q": "What is true about C identifiers?",
+    "o": [
+      "They must begin with a letter or underscore",
+      "They can contain special characters",
+      "They must start with a number",
+      "They are enclosed in quotes"
+    ]
+  },
+  {
+    "q": "What will this program display?",
+    "c": "#include <stdio.h>\n\nint main() {\n    char ch = 'A';\n    printf(\"Character: %c\\n\", ch);\n    return 0;\n}",
+    "o": [
+      "Character: A",
+      "Character: ch",
+      "%c",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to stop the execution of a function and return control to the caller?",
+    "o": [
+      "return",
+      "stop",
+      "break",
+      "end"
+    ]
+  },
+  {
+    "q": "Which of the following variable declarations is valid in C?",
+    "o": [
+      "int count;",
+      "int-count;",
+      "int:count;",
+      "int = count;"
+    ]
+  },
+  {
+    "q": "Why is `#include <stdio.h>` used in C programs?",
+    "o": [
+      "To access input/output functions like printf and scanf",
+      "To start the execution of the program",
+      "To define the main function",
+      "To link the compiler"
+    ]
+  },
+  {
+    "q": "What does `%d` represent in a `printf` statement?",
+    "o": [
+      "An integer value",
+      "A double value",
+      "A decimal point",
+      "A data type"
+    ]
+  },
+  {
+    "q": "Which symbol marks the end of a statement in C?",
+    "o": [
+      "Semicolon (;)",
+      "Colon (:)",
+      "Comma (,)",
+      "Period (.)"
+    ]
+  },
+  {
+    "q": "What is the output of the following program?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int x = 7;\n    printf(\"Value: %d\\n\", x);\n    return 0;\n}",
+    "o": [
+      "Value: 7",
+      "x",
+      "%d",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to create a variable with no fractional part?",
+    "o": [
+      "int",
+      "float",
+      "char",
+      "double"
+    ]
+  },
+  {
+    "q": "Which function is used to display output on the screen in C?",
+    "o": [
+      "printf()",
+      "display()",
+      "show()",
+      "output()"
+    ]
+  },
+  {
+    "q": "What is wrong with this variable name: `2name`?",
+    "o": [
+      "It starts with a digit",
+      "It uses a reserved word",
+      "It contains a space",
+      "It is too short"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "#include <stdio.h>\n\nint main() {\n    float f = 5.2;\n    printf(\"%.1f\\n\", f);\n    return 0;\n}",
+    "o": [
+      "5.2",
+      "5",
+      "0.2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a function that doesn’t return anything?",
+    "o": [
+      "void",
+      "null",
+      "empty",
+      "none"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid identifier in C?",
+    "o": [
+      "total_marks",
+      "int",
+      "marks-total",
+      "float"
+    ]
+  },
+  {
+    "q": "Why is it important to use proper data types for variables?",
+    "o": [
+      "To ensure correct memory usage and data handling",
+      "To make code look pretty",
+      "To avoid compiler errors every time",
+      "To reuse keywords"
+    ]
+  },
+  {
+    "q": "What does this line do?\n`scanf(\"%d\", &num);`",
+    "o": [
+      "Takes an integer input and stores it in `num`",
+      "Prints the value of `num`",
+      "Declares the variable `num`",
+      "Returns an integer to main"
+    ]
+  },
+  {
+    "q": "Which file must be included to use `printf` and `scanf` in a C program?",
+    "o": [
+      "#include <stdio.h>",
+      "#include <stdlib.h>",
+      "#include <conio.h>",
+      "#include <main.h>"
+    ]
+  },
+  {
+    "q": "What does the following code print?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int age = 21;\n    printf(\"Age: %d years\\n\", age);\n    return 0;\n}",
+    "o": [
+      "Age: 21 years",
+      "21",
+      "Age: %d years",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the `main()` function?",
+    "o": [
+      "It is where program execution begins",
+      "It is used to declare variables",
+      "It is used only for input",
+      "It is required only for header files"
+    ]
+  },
+  {
+    "q": "Which data type is suitable to store a single letter?",
+    "o": [
+      "char",
+      "int",
+      "string",
+      "float"
+    ]
+  },
+  {
+    "q": "What is the purpose of using `&` in `scanf(\"%d\", &num);`?",
+    "o": [
+      "It provides the address of the variable",
+      "It multiplies the value",
+      "It declares the variable",
+      "It ends the input"
+    ]
+  },
+  {
+    "q": "Which of the following is **not** a keyword in C?",
+    "o": [
+      "input",
+      "while",
+      "switch",
+      "break"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int a = 5, b = 10;\n    printf(\"Sum = %d\\n\", a + b);\n    return 0;\n}",
+    "o": [
+      "Sum = 15",
+      "a + b",
+      "Sum = ab",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is **true** about C identifiers?",
+    "o": [
+      "They cannot be the same as keywords",
+      "They must be written in uppercase",
+      "They can begin with numbers",
+      "They must include special characters"
+    ]
+  },
+  {
+    "q": "What is the default return type of the `main()` function in C?",
+    "o": [
+      "int",
+      "void",
+      "char",
+      "return"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct declaration of a floating-point variable?",
+    "o": [
+      "float temp;",
+      "decimal temp;",
+      "number temp;",
+      "float:temp;"
+    ]
+  },
+  {
+    "q": "Which of the following correctly represents the basic structure of a C program?",
+    "o": [
+      "#include <stdio.h>\\nint main() { return 0; }",
+      "main() { include <stdio.h>; return 0; }",
+      "#main() { return 0; }",
+      "function main() return;"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\\nint main() {\\n   int val = 100;\\n   printf(\"Value is %d\\n\", val);\\n   return 0;\\n}",
+    "o": [
+      "Value is 100",
+      "%d",
+      "val",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is the smallest unit of memory allocation?",
+    "o": [
+      "Byte",
+      "Bit",
+      "Word",
+      "Block"
+    ]
+  },
+  {
+    "q": "Which function is used to get user input in C?",
+    "o": [
+      "scanf()",
+      "get()",
+      "input()",
+      "cin>>"
+    ]
+  },
+  {
+    "q": "Which of the following variable names is valid in C?",
+    "o": [
+      "_totalMarks",
+      "2ndPlace",
+      "float",
+      "total-marks"
+    ]
+  },
+  {
+    "q": "What is the output of this C program?",
+    "c": "#include <stdio.h>\\nint main() {\\n   char grade = 'B';\\n   printf(\"Grade: %c\\n\", grade);\\n   return 0;\\n}",
+    "o": [
+      "Grade: B",
+      "%c",
+      "grade",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a **keyword** in C?",
+    "o": [
+      "switch",
+      "define",
+      "main",
+      "print"
+    ]
+  },
+  {
+    "q": "Which data type would be best to store the number 3.1415?",
+    "o": [
+      "float",
+      "int",
+      "char",
+      "long"
+    ]
+  },
+  {
+    "q": "What does the `&` symbol in `scanf(\"%d\", &x);` mean?",
+    "o": [
+      "It passes the address of `x`",
+      "It declares the variable",
+      "It multiplies the value",
+      "It prints the variable"
+    ]
+  },
+  {
+    "q": "What is the role of `return 0;` in the `main()` function?",
+    "o": [
+      "It indicates successful program termination",
+      "It prints 0 to the screen",
+      "It ends the output",
+      "It starts the program"
+    ]
+  },
+  {
+    "q": "Which line in a C program usually contains the entry point of the program?",
+    "o": [
+      "int main()",
+      "#include <main.h>",
+      "start()",
+      "void entry()"
+    ]
+  },
+  {
+    "q": "What will be the output of this program?",
+    "c": "#include <stdio.h>\nint main() {\n   int a = 3, b = 4;\n   printf(\"%d\\n\", a * b);\n   return 0;\n}",
+    "o": [
+      "12",
+      "7",
+      "%d",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which data type is suitable to store a value like 65432?",
+    "o": [
+      "int",
+      "char",
+      "float",
+      "short"
+    ]
+  },
+  {
+    "q": "What does `printf(\"%c\", 'X');` do?",
+    "o": [
+      "Prints the character X",
+      "Prints the ASCII value of X",
+      "Prints %c",
+      "Prints a blank space"
+    ]
+  },
+  {
+    "q": "Which of the following is a **valid** C identifier?",
+    "o": [
+      "total_score",
+      "int",
+      "float-value",
+      "2marks"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n   float num = 2.50;\n   printf(\"%.2f\\n\", num);\n   return 0;\n}",
+    "o": [
+      "2.50",
+      "2",
+      "2.500",
+      "%.2f"
+    ]
+  },
+  {
+    "q": "Which of the following is **not** a keyword in C?",
+    "o": [
+      "input",
+      "for",
+      "return",
+      "auto"
+    ]
+  },
+  {
+    "q": "Why is `#include <stdio.h>` necessary in C programs?",
+    "o": [
+      "To use input and output functions",
+      "To define the `main()` function",
+      "To declare global variables",
+      "To start program execution"
+    ]
+  },
+  {
+    "q": "What does the format specifier `%f` represent in `printf()`?",
+    "o": [
+      "Floating-point value",
+      "Integer value",
+      "Character value",
+      "String"
+    ]
+  },
+  {
+    "q": "What is the role of `int` in this line: `int age = 20;`?",
+    "o": [
+      "It specifies the data type of the variable",
+      "It initializes the program",
+      "It prints the value",
+      "It ends the program"
+    ]
+  },
+  {
+    "q": "Which part of a C program handles displaying text to the user?",
+    "o": [
+      "printf()",
+      "scanf()",
+      "main()",
+      "include()"
+    ]
+  },
+  {
+    "q": "What is the correct data type to store a temperature value like 36.6?",
+    "o": [
+      "float",
+      "int",
+      "char",
+      "double"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid variable declaration in C?",
+    "o": [
+      "int count = 0;",
+      "declare count;",
+      "var count = 0;",
+      "int = 0;"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    printf(\"Hello, World!\\n\");\n    return 0;\n}",
+    "o": [
+      "Hello, World!",
+      "Hello",
+      "\\n",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword in C is used to declare a constant value that can't be changed?",
+    "o": [
+      "const",
+      "final",
+      "static",
+      "fixed"
+    ]
+  },
+  {
+    "q": "What will this C code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 10, b = 3;\n    printf(\"%d\\n\", a % b);\n    return 0;\n}",
+    "o": [
+      "1",
+      "3",
+      "0",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid identifier in C?",
+    "o": [
+      "total-marks",
+      "studentScore",
+      "_value",
+      "marks2"
+    ]
+  },
+  {
+    "q": "Which keyword is used to create user-defined functions in C?",
+    "o": [
+      "void",
+      "define",
+      "procedure",
+      "method"
+    ]
+  },
+  {
+    "q": "What does this line do?\n`scanf(\"%f\", &price);`",
+    "o": [
+      "Reads a floating-point number into variable `price`",
+      "Prints the price",
+      "Converts float to integer",
+      "Declares a variable"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to start a C program?",
+    "o": [
+      "#include <stdio.h>",
+      "#import <stdio.h>",
+      "using stdio;",
+      "begin program;"
+    ]
+  },
+  {
+    "q": "Which section of a C program contains function definitions?",
+    "o": [
+      "Function definition section",
+      "Declaration section",
+      "Preprocessor section",
+      "Output section"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 2;\n    printf(\"x = %d\\n\", x);\n    return 0;\n}",
+    "o": [
+      "x = 2",
+      "2",
+      "x = x",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which data type should be used to store a true/false value in C?",
+    "o": [
+      "int",
+      "bool",
+      "logical",
+      "truth"
+    ]
+  },
+  {
+    "q": "What will `printf(\"%d\", 7 / 2);` print in C?",
+    "o": [
+      "3",
+      "3.5",
+      "4",
+      "7/2"
+    ]
+  },
+  {
+    "q": "Which of the following is a reserved keyword in C?",
+    "o": [
+      "return",
+      "main",
+      "input",
+      "define"
+    ]
+  },
+  {
+    "q": "What does the `#` symbol indicate in a line like `#include <stdio.h>`?",
+    "o": [
+      "It is a preprocessor directive",
+      "It is a comment",
+      "It declares a function",
+      "It returns output"
+    ]
+  },
+  {
+    "q": "Which of these is a valid way to declare a character variable?",
+    "o": [
+      "char letter = 'A';",
+      "character letter = A;",
+      "char letter = A;",
+      "char letter = \"A\";"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\\n\", sizeof(int));\n    return 0;\n}",
+    "o": [
+      "4",
+      "2",
+      "8",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a function that does not return any value?",
+    "o": [
+      "void",
+      "null",
+      "none",
+      "empty"
+    ]
+  },
+  {
+    "q": "Which of the following variable names is invalid in C?",
+    "o": [
+      "float",
+      "user_age",
+      "_score",
+      "maxValue"
+    ]
+  },
+  {
+    "q": "In C programming, what is the first function that executes when a program runs?",
+    "o": [
+      "main()",
+      "start()",
+      "init()",
+      "run()"
+    ]
+  },
+  {
+    "q": "What will be the output of the following program?",
+    "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\\n\", 25 + 10);\n    return 0;\n}",
+    "o": [
+      "35",
+      "2510",
+      "25 + 10",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following data types is used to store single characters in C?",
+    "o": [
+      "char",
+      "string",
+      "character",
+      "text"
+    ]
+  },
+  {
+    "q": "What is the purpose of `scanf()` in C?",
+    "o": [
+      "To take input from the user",
+      "To print data to the screen",
+      "To define a variable",
+      "To return a value from main"
+    ]
+  },
+  {
+    "q": "Which of these is a valid identifier in C?",
+    "o": [
+      "roll_number",
+      "int",
+      "float-value",
+      "123name"
+    ]
+  },
+  {
+    "q": "What will be printed by the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int num = 5;\n    printf(\"%d\\n\", num * 2);\n    return 0;\n}",
+    "o": [
+      "10",
+      "5",
+      "%d",
+      "num"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a variable that stores decimal values?",
+    "o": [
+      "float",
+      "int",
+      "char",
+      "long"
+    ]
+  },
+  {
+    "q": "In the structure of a C program, where are header files typically included?",
+    "o": [
+      "At the top of the program",
+      "Inside the main function",
+      "After variable declarations",
+      "After the return statement"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct use of the `printf()` function?",
+    "o": [
+      "printf(\"Age: %d\", age);",
+      "printf(age);",
+      "printf('Age: ', age);",
+      "print(\"Age: %d\", age);"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a constant in C?",
+    "o": [
+      "const",
+      "final",
+      "static",
+      "fixed"
+    ]
+  },
+  {
+    "q": "What is the file extension of a standard C source file?",
+    "o": [
+      ".c",
+      ".cpp",
+      ".java",
+      ".exe"
+    ]
+  },
+  {
+    "q": "What will this C program print?",
+    "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\\n\", 4 * 5);\n    return 0;\n}",
+    "o": [
+      "20",
+      "9",
+      "45",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which data type is most suitable to store a large integer like 2,000,000?",
+    "o": [
+      "long",
+      "char",
+      "short",
+      "float"
+    ]
+  },
+  {
+    "q": "Which function is used to receive input from the user in C?",
+    "o": [
+      "scanf()",
+      "input()",
+      "read()",
+      "gets()"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid variable name in C?",
+    "o": [
+      "int",
+      "totalMarks",
+      "_count",
+      "value123"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    char ch = 'A';\n    printf(\"%c\\n\", ch);\n    return 0;\n}",
+    "o": [
+      "A",
+      "%c",
+      "ch",
+      "Error"
+    ]
+  },
+  {
+    "q": "What keyword is used to declare an integer type variable in C?",
+    "o": [
+      "int",
+      "integer",
+      "num",
+      "digit"
+    ]
+  },
+  {
+    "q": "Which of these is the correct syntax for including a header file?",
+    "o": [
+      "#include <stdio.h>",
+      "include<stdio.h>",
+      "#import <stdio>",
+      "#include stdio.h"
+    ]
+  },
+  {
+    "q": "Which keyword in C prevents a variable’s value from being changed?",
+    "o": [
+      "const",
+      "static",
+      "final",
+      "fixed"
+    ]
+  },
+  {
+    "q": "What part of a C program typically comes first?",
+    "o": [
+      "Preprocessor directives",
+      "Function definitions",
+      "Variable declarations",
+      "Main function"
+    ]
+  },
+  {
+    "q": "What does the `return 0;` statement signify in the main function?",
+    "o": [
+      "Successful execution of the program",
+      "Start of the program",
+      "An error occurred",
+      "Declares a variable"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 8;\n    int b = 2;\n    printf(\"%d\\n\", a / b);\n    return 0;\n}",
+    "o": [
+      "4",
+      "6",
+      "10",
+      "2"
+    ]
+  },
+  {
+    "q": "Which data type is best to store a person's age in C?",
+    "o": [
+      "int",
+      "char",
+      "float",
+      "double"
+    ]
+  },
+  {
+    "q": "What is the purpose of the `#include` directive?",
+    "o": [
+      "It adds library files to the program",
+      "It declares a function",
+      "It creates variables",
+      "It compiles the code"
+    ]
+  },
+  {
+    "q": "Which of these is a valid identifier in C?",
+    "o": [
+      "student1",
+      "1student",
+      "student-name",
+      "float"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    float pi = 3.14;\n    printf(\"%.2f\\n\", pi);\n    return 0;\n}",
+    "o": [
+      "3.14",
+      "3",
+      "314",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a variable that can store characters?",
+    "o": [
+      "char",
+      "int",
+      "text",
+      "alpha"
+    ]
+  },
+  {
+    "q": "What will this statement do?\n`scanf(\"%d\", &x);`",
+    "o": [
+      "Reads an integer value and stores it in x",
+      "Prints the value of x",
+      "Declares an integer variable",
+      "Returns the value of x"
+    ]
+  },
+  {
+    "q": "Where is the `main()` function typically placed in a C program?",
+    "o": [
+      "After header includes",
+      "Before header includes",
+      "Inside header files",
+      "Outside all code blocks"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a keyword in C?",
+    "o": [
+      "value",
+      "return",
+      "while",
+      "break"
+    ]
+  },
+  {
+    "q": "Which section of a C program usually contains `#include` directives?",
+    "o": [
+      "Preprocessor section",
+      "Main section",
+      "Loop section",
+      "Footer section"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int result = 3 + 4 * 2;\n    printf(\"%d\\n\", result);\n    return 0;\n}",
+    "o": [
+      "11",
+      "14",
+      "10",
+      "8"
+    ]
+  },
+  {
+    "q": "Which data type would you use to store the price of an item like 49.99?",
+    "o": [
+      "float",
+      "int",
+      "char",
+      "short"
+    ]
+  },
+  {
+    "q": "Which function is used to display output on the screen in C?",
+    "o": [
+      "printf()",
+      "scanf()",
+      "echo()",
+      "display()"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid C identifier?",
+    "o": [
+      "total_marks",
+      "total-marks",
+      "1total",
+      "float"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 6, b = 4;\n    printf(\"%d\\n\", a % b);\n    return 0;\n}",
+    "o": [
+      "2",
+      "10",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of these is a keyword in C?",
+    "o": [
+      "switch",
+      "input",
+      "define",
+      "string"
+    ]
+  },
+  {
+    "q": "Which format specifier is used to read a `float` value using `scanf()`?",
+    "o": [
+      "%f",
+      "%lf",
+      "%c",
+      "%d"
+    ]
+  },
+  {
+    "q": "In C, what does the `main()` function return by default if `return 0;` is not used?",
+    "o": [
+      "Implementation-defined value",
+      "0",
+      "1",
+      "It causes a compile-time error"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    char grade = 'B';\n    printf(\"Grade: %c\\n\", grade);\n    return 0;\n}",
+    "o": [
+      "Grade: B",
+      "%c",
+      "grade",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the correct sequence of a basic C program structure?",
+    "o": [
+      "Header files → main() → variable declarations → logic → return",
+      "main() → header files → logic → return",
+      "logic → main() → return → header files",
+      "variable declarations → logic → return → header files"
+    ]
+  },
+  {
+    "q": "What does this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    printf(\"Welcome to C!\\n\");\n    return 0;\n}",
+    "o": [
+      "Welcome to C!",
+      "Welcome to C",
+      "welcome to c!",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which data type is best for storing true/false logic in modern C (C99 and later)?",
+    "o": [
+      "_Bool",
+      "int",
+      "bool",
+      "char"
+    ]
+  },
+  {
+    "q": "What does the `&` symbol mean in a `scanf()` function?",
+    "o": [
+      "It gives the address of the variable",
+      "It gives the value of the variable",
+      "It multiplies two numbers",
+      "It declares a variable"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid identifier in C?",
+    "o": [
+      "int",
+      "_total",
+      "data1",
+      "MAX_VALUE"
+    ]
+  },
+  {
+    "q": "What is the output of the code below?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 7;\n    printf(\"%d\\n\", x + 3);\n    return 0;\n}",
+    "o": [
+      "10",
+      "73",
+      "7 + 3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which format specifier is used to print a character?",
+    "o": [
+      "%c",
+      "%s",
+      "%d",
+      "%f"
+    ]
+  },
+  {
+    "q": "What is the main role of keywords in C programming?",
+    "o": [
+      "They define the syntax and structure",
+      "They are used to name variables",
+      "They display output",
+      "They take user input"
+    ]
+  },
+  {
+    "q": "Which of these functions is part of C’s standard input/output library?",
+    "o": [
+      "printf()",
+      "echo()",
+      "writeLine()",
+      "disp()"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    float a = 10.5;\n    printf(\"%.1f\\n\", a);\n    return 0;\n}",
+    "o": [
+      "10.5",
+      "10",
+      "10.50",
+      "105"
+    ]
+  },
+  {
+    "q": "Which part of a C program starts the execution?",
+    "o": [
+      "main() function",
+      "start() function",
+      "begin() function",
+      "header file"
+    ]
+  },
+  {
+    "q": "What is the output of the following program?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 3, b = 7;\n    printf(\"%d\\n\", b - a);\n    return 0;\n}",
+    "o": [
+      "4",
+      "10",
+      "-4",
+      "3"
+    ]
+  },
+  {
+    "q": "Which data type in C is used to store single characters?",
+    "o": [
+      "char",
+      "int",
+      "string",
+      "text"
+    ]
+  },
+  {
+    "q": "What is the role of `#include <stdio.h>` in a C program?",
+    "o": [
+      "It includes functions for input and output",
+      "It declares the main function",
+      "It defines variables",
+      "It ends the program"
+    ]
+  },
+  {
+    "q": "Which identifier is valid in C?",
+    "o": [
+      "total_sum",
+      "2nd_value",
+      "float*value",
+      "char#name"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    printf(\"%c\\n\", 'Z');\n    return 0;\n}",
+    "o": [
+      "Z",
+      "'Z'",
+      "char",
+      "%c"
+    ]
+  },
+  {
+    "q": "Which format specifier is used with `scanf` to take integer input?",
+    "o": [
+      "%d",
+      "%i",
+      "%c",
+      "%f"
+    ]
+  },
+  {
+    "q": "Which of the following is a keyword in C?",
+    "o": [
+      "return",
+      "define",
+      "main",
+      "output"
+    ]
+  },
+  {
+    "q": "In which year was the C programming language developed?",
+    "o": [
+      "1972",
+      "1982",
+      "1995",
+      "1969"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    printf(\"x = %d\\n\", x);\n    return 0;\n}",
+    "o": [
+      "x = 10",
+      "x = x",
+      "10 = x",
+      "%d"
+    ]
+  },
+  {
+    "q": "Which programming language influenced the creation of C?",
+    "o": [
+      "B",
+      "C++",
+      "Java",
+      "Pascal"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int age = 25;\n    printf(\"Age: %d\\n\", age);\n    return 0;\n}",
+    "o": [
+      "Age: 25",
+      "25",
+      "Age = 25",
+      "%d"
+    ]
+  },
+  {
+    "q": "Which data type should be used to store a large whole number?",
+    "o": [
+      "long",
+      "float",
+      "char",
+      "short"
+    ]
+  },
+  {
+    "q": "What will happen if you forget to use `&` in a `scanf` statement?",
+    "o": [
+      "It may lead to incorrect input or a crash",
+      "It will still work fine",
+      "It prints a warning",
+      "It doubles the input value"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid identifier name?",
+    "o": [
+      "fileName1",
+      "1fileName",
+      "file-name",
+      "float"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    float f = 6.75;\n    printf(\"%.0f\\n\", f);\n    return 0;\n}",
+    "o": [
+      "7",
+      "6.75",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which function is used to take a string input from the user?",
+    "o": [
+      "scanf()",
+      "print()",
+      "input()",
+      "gets()"
+    ]
+  },
+  {
+    "q": "What is the purpose of the `return` keyword in a function?",
+    "o": [
+      "To send a value back to the calling function",
+      "To print output",
+      "To declare a variable",
+      "To stop the compiler"
+    ]
+  },
+  {
+    "q": "Which of these is placed at the end of every C statement (except control blocks)?",
+    "o": [
+      "Semicolon (;)",
+      "Colon (:)",
+      "Comma (,)",
+      "Dot (.)"
+    ]
+  },
+  {
+    "q": "What does the following code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int num;\n    scanf(\"%d\", &num);\n    printf(\"%d\\n\", num);\n    return 0;\n}",
+    "o": [
+      "Prints the number entered by user",
+      "Prints 0",
+      "Syntax error",
+      "Prints nothing"
+    ]
+  },
+  {
+    "q": "Which symbol is used to include a header file in C?",
+    "o": [
+      "#",
+      "%",
+      "@",
+      "$"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5;\n    int b = 2;\n    float result = a / b;\n    printf(\"%f\\n\", result);\n    return 0;\n}",
+    "o": [
+      "2.000000",
+      "2.500000",
+      "2",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following data types is used to store a single Unicode character in C?",
+    "o": [
+      "char",
+      "string",
+      "unicode",
+      "uchar"
+    ]
+  },
+  {
+    "q": "Which function is used to read formatted input in C?",
+    "o": [
+      "scanf()",
+      "input()",
+      "gets()",
+      "read()"
+    ]
+  },
+  {
+    "q": "Which identifier is valid according to C naming rules?",
+    "o": [
+      "_value2",
+      "2value",
+      "value-2",
+      "float"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 8;\n    printf(\"%d\\n\", x++);\n    return 0;\n}",
+    "o": [
+      "8",
+      "9",
+      "Error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a constant value in C?",
+    "o": [
+      "const",
+      "constant",
+      "#fixed",
+      "final"
+    ]
+  },
+  {
+    "q": "What type of error is generated if `main` is not defined in a C program?",
+    "o": [
+      "Linker error",
+      "Runtime error",
+      "Logical error",
+      "Syntax error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about C language?",
+    "o": [
+      "C is a procedural programming language",
+      "C supports object-oriented features by default",
+      "C does not allow function usage",
+      "C can only be used on Linux"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    char ch = 'A';\n    printf(\"%d\\n\", ch);\n    return 0;\n}",
+    "o": [
+      "65",
+      "A",
+      "Error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Who developed the C programming language?",
+    "o": [
+      "Dennis Ritchie",
+      "James Gosling",
+      "Bjarne Stroustrup",
+      "Ken Thompson"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int val = 20;\n    printf(\"Value is: %d\\n\", val);\n    return 0;\n}",
+    "o": [
+      "Value is: 20",
+      "val = 20",
+      "Value is: val",
+      "%d"
+    ]
+  },
+  {
+    "q": "Which of the following is used to store decimal values?",
+    "o": [
+      "float",
+      "int",
+      "char",
+      "short"
+    ]
+  },
+  {
+    "q": "What does `scanf(\"%d\", &num);` do?",
+    "o": [
+      "Takes integer input from user and stores it in `num`",
+      "Prints the value of `num`",
+      "Declares a variable",
+      "Returns the value of num"
+    ]
+  },
+  {
+    "q": "Which of the following is an invalid identifier?",
+    "o": [
+      "int",
+      "student_id",
+      "_count",
+      "marks123"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    char c = 'D';\n    printf(\"%c\\n\", c);\n    return 0;\n}",
+    "o": [
+      "D",
+      "'D'",
+      "char",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which data type would you use to store age (like 18, 21)?",
+    "o": [
+      "int",
+      "float",
+      "char",
+      "double"
+    ]
+  },
+  {
+    "q": "What is the role of `return 0;` in the main function?",
+    "o": [
+      "It ends the program and returns control to the OS",
+      "It prints 0 to the screen",
+      "It takes input from the user",
+      "It starts the program"
+    ]
+  },
+  {
+    "q": "What is the purpose of `#include <stdio.h>`?",
+    "o": [
+      "To use standard input/output functions like printf and scanf",
+      "To include variables",
+      "To define main function",
+      "To declare constants"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 4;\n    int b = 6;\n    printf(\"%d\\n\", a * b);\n    return 0;\n}",
+    "o": [
+      "24",
+      "10",
+      "46",
+      "4 * 6"
+    ]
+  },
+  {
+    "q": "Which section of a C program typically contains variable declarations?",
+    "o": [
+      "Declaration section",
+      "Execution section",
+      "Header section",
+      "Return section"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 4, y = 5;\n    printf(\"%d\\n\", x + y);\n    return 0;\n}",
+    "o": [
+      "9",
+      "45",
+      "x + y",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which data type is used to store a true/false value in C?",
+    "o": [
+      "_Bool",
+      "bool",
+      "boolean",
+      "truth"
+    ]
+  },
+  {
+    "q": "What does the `printf` function do in C?",
+    "o": [
+      "Displays output to the screen",
+      "Reads input from the keyboard",
+      "Allocates memory",
+      "Compiles the code"
+    ]
+  },
+  {
+    "q": "Which of these is a valid keyword in C?",
+    "o": [
+      "auto",
+      "define",
+      "main",
+      "print"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    float pi = 3.14;\n    printf(\"%.2f\\n\", pi);\n    return 0;\n}",
+    "o": [
+      "3.14",
+      "3",
+      "3.140000",
+      "pi"
+    ]
+  },
+  {
+    "q": "Which of the following identifiers is invalid in C?",
+    "o": [
+      "float",
+      "_temp",
+      "data1",
+      "total_sum"
+    ]
+  },
+  {
+    "q": "Why must we use `&` with variable names in `scanf`?",
+    "o": [
+      "To provide the memory address where input should be stored",
+      "To declare the variable",
+      "To cast the value",
+      "To assign a value"
+    ]
+  },
+  {
+    "q": "Which part of a C program executes first?",
+    "o": [
+      "The `main()` function",
+      "The first included header",
+      "The last function defined",
+      "Any function starting with `init_`"
+    ]
+  },
+  {
+    "q": "What does this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    char grade = 'B';\n    printf(\"Grade: %c\\n\", grade);\n    return 0;\n}",
+    "o": [
+      "Grade: B",
+      "grade = B",
+      "B",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which file extension is typically used for a C source file?",
+    "o": [
+      ".c",
+      ".cpp",
+      ".java",
+      ".cs"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int result = 10 % 3;\n    printf(\"%d\\n\", result);\n    return 0;\n}",
+    "o": [
+      "1",
+      "3",
+      "10",
+      "0"
+    ]
+  },
+  {
+    "q": "Which keyword is used to declare a variable whose value cannot be changed?",
+    "o": [
+      "const",
+      "static",
+      "final",
+      "fixed"
+    ]
+  },
+  {
+    "q": "Which of the following can be used as a valid variable name in C?",
+    "o": [
+      "_totalMarks",
+      "int",
+      "float-value",
+      "123data"
+    ]
+  },
+  {
+    "q": "What is the correct format specifier for `char` in `printf()`?",
+    "o": [
+      "%c",
+      "%d",
+      "%s",
+      "%f"
+    ]
+  },
+  {
+    "q": "Which part of a C program contains `#include` directives?",
+    "o": [
+      "Preprocessor section",
+      "Main function",
+      "Variable declaration block",
+      "Return block"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 7, y = 3;\n    printf(\"%d\\n\", x / y);\n    return 0;\n}",
+    "o": [
+      "2",
+      "2.33",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "Which function is used to display a message on the screen in C?",
+    "o": [
+      "printf()",
+      "display()",
+      "echo()",
+      "write()"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid keyword in C?",
+    "o": [
+      "volatile",
+      "define",
+      "input",
+      "print"
+    ]
+  },
+  {
+    "q": "What does this program output?",
+    "c": "#include <stdio.h>\nint main() {\n    int num;\n    scanf(\"%d\", &num);\n    printf(\"Entered: %d\\n\", num);\n    return 0;\n}",
+    "o": [
+      "It prints the number entered by the user",
+      "It always prints 0",
+      "It throws an error",
+      "It prints garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the structure of a C program?",
+    "o": [
+      "Header files → main() function → statements",
+      "main() → Header → return",
+      "Statements → Header files → main()",
+      "Variables → main() → compiler"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 2, b = 3;\n    printf(\"%d\\n\", a * b + 1);\n    return 0;\n}",
+    "o": [
+      "7",
+      "6",
+      "5",
+      "8"
+    ]
+  },
+  {
+    "q": "Which of the following is a floating-point data type in C?",
+    "o": [
+      "double",
+      "long",
+      "int",
+      "char"
+    ]
+  },
+  {
+    "q": "What is the purpose of the `&` symbol in `scanf()`?",
+    "o": [
+      "It gets the memory address of the variable",
+      "It ends the input line",
+      "It reads a string",
+      "It formats the output"
+    ]
+  },
+  {
+    "q": "Which identifier is invalid in C?",
+    "o": [
+      "3value",
+      "_sum",
+      "marks123",
+      "value_3"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    char c = 'Z';\n    printf(\"%c\\n\", c);\n    return 0;\n}",
+    "o": [
+      "Z",
+      "z",
+      "C",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a function in C?",
+    "o": [
+      "void",
+      "method",
+      "define",
+      "func"
+    ]
+  },
+  {
+    "q": "What is the correct format specifier for printing a float in `printf()`?",
+    "o": [
+      "%f",
+      "%lf",
+      "%d",
+      "%c"
+    ]
+  },
+  {
+    "q": "Which part of the program tells the compiler to include standard functions?",
+    "o": [
+      "#include <stdio.h>",
+      "int main()",
+      "return 0;",
+      "scanf()"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "#include <stdio.h>\nint main() {\n    int x;\n    scanf(\"%d\", &x);\n    printf(\"%d\\n\", x * 2);\n    return 0;\n}",
+    "o": [
+      "Reads a number and prints its double",
+      "Reads two numbers and adds them",
+      "Prints 0",
+      "Gives a compile-time error"
+    ]
+  },
+  {
+    "q": "Which of the following sections typically appears at the very beginning of a C program?",
+    "o": [
+      "Preprocessor directives",
+      "The main() function",
+      "Variable declarations",
+      "Return statements"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 8, b = 2;\n    printf(\"Result: %d\\n\", a / b);\n    return 0;\n}",
+    "o": [
+      "Result: 4",
+      "Result: 10",
+      "Result: 6",
+      "Result: 2"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to define constants in C?",
+    "o": [
+      "#define",
+      "constval",
+      "fixed",
+      "let"
+    ]
+  },
+  {
+    "q": "Which is a valid way to declare a character variable in C?",
+    "o": [
+      "char grade = 'A';",
+      "char grade = A;",
+      "character grade = 'A';",
+      "char grade = \"A\";"
+    ]
+  },
+  {
+    "q": "Which identifier is NOT valid according to C language rules?",
+    "o": [
+      "void",
+      "temp_1",
+      "number2",
+      "_value"
+    ]
+  },
+  {
+    "q": "What will be the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    float f = 2.5;\n    printf(\"%.1f\\n\", f);\n    return 0;\n}",
+    "o": [
+      "2.5",
+      "2.50",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which function is used to receive user input from the console in C?",
+    "o": [
+      "scanf()",
+      "input()",
+      "read()",
+      "gets()"
+    ]
+  },
+  {
+    "q": "Which keyword is used to exit a function and optionally return a value?",
+    "o": [
+      "return",
+      "exit",
+      "break",
+      "stop"
+    ]
+  },
+  {
+    "q": "What does this program print if the user inputs 6?",
+    "c": "#include <stdio.h>\nint main() {\n    int n;\n    scanf(\"%d\", &n);\n    printf(\"Twice: %d\\n\", n * 2);\n    return 0;\n}",
+    "o": [
+      "Twice: 12",
+      "Twice: 6",
+      "Twice: 8",
+      "Twice: 16"
+    ]
+  },
+  {
+    "q": "What is the correct syntax to declare an integer variable with an initial value of 100?",
+    "o": [
+      "int score = 100;",
+      "integer score = 100;",
+      "score = 100;",
+      "int = 100;"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the role of `main()` in a C program?",
+    "o": [
+      "It serves as the entry point of the program.",
+      "It defines all variables in a program.",
+      "It ends the execution of a program.",
+      "It is used to call header files."
+    ]
+  },
+  {
+    "q": "What is the output of this C program?",
+    "c": "#include <stdio.h>\nint main() {\n    int num = 4;\n    printf(\"%d\\n\", num + 6);\n    return 0;\n}",
+    "o": [
+      "10",
+      "46",
+      "6",
+      "4"
+    ]
+  },
+  {
+    "q": "Which of these is a valid declaration of a floating-point variable?",
+    "o": [
+      "float speed = 12.5;",
+      "float = 12.5;",
+      "speed float = 12.5;",
+      "float: speed = 12.5;"
+    ]
+  },
+  {
+    "q": "Which function is used to take multiple inputs from the user in C?",
+    "o": [
+      "scanf()",
+      "gets()",
+      "input()",
+      "get()"
+    ]
+  },
+  {
+    "q": "What is an identifier in C?",
+    "o": [
+      "The name used to identify variables, functions, arrays, etc.",
+      "A keyword reserved by the language",
+      "A symbol used for arithmetic",
+      "A data type like int or float"
+    ]
+  },
+  {
+    "q": "What does this program output if user inputs 3 and 4?",
+    "c": "#include <stdio.h>\nint main() {\n    int x, y;\n    scanf(\"%d %d\", &x, &y);\n    printf(\"%d\\n\", x * y);\n    return 0;\n}",
+    "o": [
+      "12",
+      "7",
+      "1",
+      "34"
+    ]
+  },
+  {
+    "q": "Which of these is a keyword in C?",
+    "o": [
+      "while",
+      "number",
+      "main",
+      "scan"
+    ]
+  },
+  {
+    "q": "Choose the correct `printf()` statement to print: Age: 25",
+    "o": [
+      "printf(\"Age: %d\", 25);",
+      "printf('Age: 25');",
+      "printf(\"Age = 25\")",
+      "printf(Age: 25);"
+    ]
+  },
+  {
+    "q": "Which of the following variable names is invalid in C?",
+    "o": [
+      "float",
+      "_value",
+      "item2",
+      "total_sum"
+    ]
+  },
+  {
+    "q": "What is the output of this C code?",
+    "c": "#include <stdio.h>\nint main() {\n    char letter = 'C';\n    printf(\"%c\\n\", letter);\n    return 0;\n}",
+    "o": [
+      "C",
+      "c",
+      "char",
+      "Error"
+    ]
+  },
+  {
+    "q": "In C programming, what is the purpose of the `#include` directive?",
+    "o": [
+      "It tells the compiler to include a standard or user-defined file.",
+      "It defines a new macro for variables.",
+      "It starts the execution of the program.",
+      "It creates a new data type."
+    ]
+  },
+  {
+    "q": "What will the following C program output?",
+    "c": "#include <stdio.h>\nint main() {\n    int age = 20;\n    printf(\"You are %d years old.\\n\", age);\n    return 0;\n}",
+    "o": [
+      "You are 20 years old.",
+      "You are age years old.",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these correctly declares a variable to store a decimal value?",
+    "o": [
+      "float temperature;",
+      "int temperature;",
+      "char temperature;",
+      "long temperature;"
+    ]
+  },
+  {
+    "q": "Which format specifier is used to scan a single character input?",
+    "o": [
+      "%c",
+      "%s",
+      "%d",
+      "%f"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid identifier in C?",
+    "o": [
+      "total_amount",
+      "int",
+      "void",
+      "5value"
+    ]
+  },
+  {
+    "q": "What is printed by this code?",
+    "c": "#include <stdio.h>\nint main() {\n    printf(\"Hello \");\n    printf(\"C!\\n\");\n    return 0;\n}",
+    "o": [
+      "Hello C!",
+      "Hello",
+      "C!",
+      "Hello C"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a keyword in C?",
+    "o": [
+      "define",
+      "int",
+      "float",
+      "return"
+    ]
+  },
+  {
+    "q": "Which data type would you use for storing the number 65536?",
+    "o": [
+      "long",
+      "char",
+      "short",
+      "float"
+    ]
+  },
+  {
+    "q": "What happens if you forget to use `&` in `scanf()`?",
+    "o": [
+      "It will likely cause a runtime error or unexpected behavior.",
+      "It prints garbage value.",
+      "It doubles the value.",
+      "It will compile but print nothing."
+    ]
+  },
+  {
+    "q": "Which of these best describes the structure of a C program?",
+    "o": [
+      "Preprocessor directives → main() function → Statements",
+      "Header → Comments → Return",
+      "main() → Loop → Print",
+      "Library → Compiler → Execution"
+    ]
+  },
+  {
+    "q": "What is the purpose of `return 0;` in the `main()` function of a C program?",
+    "o": [
+      "It signals successful program termination to the operating system.",
+      "It resets all variable values to zero.",
+      "It ends the compiler process.",
+      "It initializes all variables."
+    ]
+  },
+  {
+    "q": "What will the following C code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 7;\n    printf(\"x = %d\\n\", x);\n    return 0;\n}",
+    "o": [
+      "x = 7",
+      "x = x",
+      "x = %d",
+      "7"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct declaration for a constant integer in C?",
+    "o": [
+      "const int MAX = 100;",
+      "int const MAX = 100",
+      "#int MAX = 100;",
+      "define int MAX 100"
+    ]
+  },
+  {
+    "q": "Which function is used to display formatted output in C?",
+    "o": [
+      "printf()",
+      "disp()",
+      "write()",
+      "show()"
+    ]
+  },
+  {
+    "q": "Which identifier below is NOT valid in C?",
+    "o": [
+      "3score",
+      "_count",
+      "value_1",
+      "totalAmount"
+    ]
+  },
+  {
+    "q": "What does the following code display?",
+    "c": "#include <stdio.h>\nint main() {\n    float pi = 3.14;\n    printf(\"%.2f\\n\", pi);\n    return 0;\n}",
+    "o": [
+      "3.14",
+      "3.140",
+      "3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a block of statements that can be reused?",
+    "o": [
+      "void",
+      "define",
+      "main",
+      "loop"
+    ]
+  },
+  {
+    "q": "Which of these is used to read an integer input from the user?",
+    "o": [
+      "scanf(\"%d\", &variable);",
+      "input(variable);",
+      "read(variable, %d);",
+      "get(%d, variable);"
+    ]
+  },
+  {
+    "q": "What is the default return type of `main()` in C?",
+    "o": [
+      "int",
+      "void",
+      "float",
+      "char"
+    ]
+  },
+  {
+    "q": "What is the role of a header file like `#include <stdio.h>`?",
+    "o": [
+      "It provides declarations for standard input/output functions.",
+      "It starts the execution of the program.",
+      "It defines the memory size of variables.",
+      "It initializes all variables at compile time."
+    ]
+  },
+  {
+    "q": "Why is the `main()` function mandatory in every C program?",
+    "o": [
+      "Because it acts as the starting point of execution.",
+      "Because it declares all variables.",
+      "Because it is used to include libraries.",
+      "Because it ends the compilation."
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 8, b = 2;\n    printf(\"%d\\n\", a / b);\n    return 0;\n}",
+    "o": [
+      "4",
+      "10",
+      "0",
+      "6"
+    ]
+  },
+  {
+    "q": "Which of these is the correct way to declare a character variable in C?",
+    "o": [
+      "char grade = 'A';",
+      "char grade = \"A\";",
+      "character grade = 'A';",
+      "char = 'A';"
+    ]
+  },
+  {
+    "q": "Which keyword is used to create a new variable in C?",
+    "o": [
+      "int",
+      "var",
+      "create",
+      "declare"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid variable name in C?",
+    "o": [
+      "user_score",
+      "user-score",
+      "score@home",
+      "int"
+    ]
+  },
+  {
+    "q": "What will be the output of this program if user inputs: `John`?",
+    "c": "#include <stdio.h>\nint main() {\n    char name[20];\n    scanf(\"%s\", name);\n    printf(\"Hello %s\\n\", name);\n    return 0;\n}",
+    "o": [
+      "Hello John",
+      "John Hello",
+      "Hello",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which data type is best suited for storing large whole numbers?",
+    "o": [
+      "long",
+      "char",
+      "float",
+      "short"
+    ]
+  },
+  {
+    "q": "Choose the correct keyword to define a function that does not return any value.",
+    "o": [
+      "void",
+      "null",
+      "empty",
+      "none"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", sizeof(int));\n    return 0;\n}",
+    "o": [
+      "4",
+      "2",
+      "8",
+      "Depends on value of int"
+    ]
+  },
+  {
+    "q": "Which statement is true about identifiers in C?",
+    "o": [
+      "They must begin with a letter or underscore.",
+      "They can include spaces.",
+      "They may start with a number.",
+      "They can contain special characters like # or $."
+    ]
+  },
+  {
+    "q": "Which part of a C program is typically used to include libraries?",
+    "o": [
+      "#include directives at the top",
+      "The body of main()",
+      "Inside a loop",
+      "In the return statement"
+    ]
+  },
+  {
+    "q": "What will be the output of the following program?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 3;\n    printf(\"%d\\n\", a * b);\n    return 0;\n}",
+    "o": [
+      "15",
+      "8",
+      "2",
+      "53"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a variable to store a person's age?",
+    "o": [
+      "int age;",
+      "int: age;",
+      "int-age;",
+      "number age;"
+    ]
+  },
+  {
+    "q": "What is the purpose of `scanf()` in C?",
+    "o": [
+      "To accept user input during runtime",
+      "To display output on the screen",
+      "To define functions",
+      "To allocate memory"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid C identifier?",
+    "o": [
+      "2nd_number",
+      "_second",
+      "second_number",
+      "second2"
+    ]
+  },
+  {
+    "q": "What is the output of this program if the user inputs: 10?",
+    "c": "#include <stdio.h>\nint main() {\n    int num;\n    scanf(\"%d\", &num);\n    printf(\"%d squared is %d\\n\", num, num*num);\n    return 0;\n}",
+    "o": [
+      "10 squared is 100",
+      "10 100",
+      "squared is 100",
+      "100 squared is 10"
+    ]
+  },
+  {
+    "q": "Which of these is a keyword in C used for defining functions without return values?",
+    "o": [
+      "void",
+      "return",
+      "null",
+      "empty"
+    ]
+  },
+  {
+    "q": "Which of the following lines is part of a minimal valid C program?",
+    "o": [
+      "int main() { return 0; }",
+      "function main() { }",
+      "#main() { return; }",
+      "start() => { return 0; }"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid `printf()` usage to display: `Total = 25`?",
+    "o": [
+      "printf(\"Total = %d\", 25);",
+      "printf(\"Total =\", 25);",
+      "printf(\"Total = 25\");",
+      "printf(\"%d = Total\", 25);"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct size specifier for float in `scanf()`?",
+    "o": [
+      "%f",
+      "%d",
+      "%lf",
+      "%c"
+    ]
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Grade Calculator",
+    "ques": "Write a C program that takes a student's score (0-100) as input and assigns a grade based on the following: A (90-100), B (80-89), C (70-79), D (60-69), F (below 60). Use if-else statements.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int score;\n    printf(\"Enter score (0-100): \");\n    scanf(\"%d\", &score);\n    if (score >= 90 && score <= 100) {\n        printf(\"Grade: A\\n\");\n    } else if (score >= 80) {\n        printf(\"Grade: B\\n\");\n    } else if (score >= 70) {\n        printf(\"Grade: C\\n\");\n    } else if (score >= 60) {\n        printf(\"Grade: D\\n\");\n    } else if (score >= 0) {\n        printf(\"Grade: F\\n\");\n    } else {\n        printf(\"Invalid score\\n\");\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program uses ***if-else statements*** to determine a grade:\n- ```#include <stdio.h>``` includes the standard I/O library for input/output functions.\n- ```int main()``` is the entry point of the program.\n- ```int score;``` declares an integer variable to store the user’s input.\n- ```printf(\"Enter score (0-100): \");``` prompts the user for input.\n- ```scanf(\"%d\", &score);``` reads the integer input into ***score***.\n- ```if (score >= 90 && score <= 100)``` checks if the score is between 90 and 100 (inclusive) for grade A.\n- ```else if (score >= 80)``` checks for grade B (80-89), and so on for C, D, and F.\n- The final ```else``` handles invalid scores (e.g., negative numbers).\n- ```return 0;``` ends the program successfully."
+  },
+  {
+    "title": "Day of the Week",
+    "ques": "Create a C program that takes an integer (1-7) as input and outputs the corresponding day of the week (1 = Monday, 2 = Tuesday, etc.) using a switch-case statement. Handle invalid inputs.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int day;\n    printf(\"Enter a number (1-7): \");\n    scanf(\"%d\", &day);\n    switch (day) {\n        case 1: printf(\"Monday\\n\"); break;\n        case 2: printf(\"Tuesday\\n\"); break;\n        case 3: printf(\"Wednesday\\n\"); break;\n        case 4: printf(\"Thursday\\n\"); break;\n        case 5: printf(\"Friday\\n\"); break;\n        case 6: printf(\"Saturday\\n\"); break;\n        case 7: printf(\"Sunday\\n\"); break;\n        default: printf(\"Invalid day\\n\");\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program uses a ***switch-case*** structure:\n- ```int day;``` declares a variable for the day number.\n- ```scanf(\"%d\", &day);``` reads the user’s input.\n- ```switch (day)``` evaluates the value of ***day***.\n- ```case 1: printf(\"Monday\\n\"); break;``` prints 'Monday' if day is 1 and ***break*** exits the switch.\n- Similar cases handle days 2 through 7.\n- ```default:``` catches any invalid input (e.g., numbers outside 1-7).\n- Each case ends with ```break``` to prevent fall-through to the next case."
+  },
+  {
+    "title": "Factorial Calculator",
+    "ques": "Write a C program to calculate the factorial of a non-negative integer using a for loop. Prompt the user for input and display the result.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int n, i;\n    unsigned long long fact = 1;\n    printf(\"Enter a number: \");\n    scanf(\"%d\", &n);\n    if (n < 0) {\n        printf(\"Factorial not defined for negative numbers\\n\");\n    } else {\n        for (i = 1; i <= n; i++) {\n            fact *= i;\n        }\n        printf(\"Factorial of %d = %llu\\n\", n, fact);\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program uses a ***for loop*** to compute factorial:\n- ```unsigned long long fact = 1;``` initializes a large integer for the result.\n- ```scanf(\"%d\", &n);``` gets the input number.\n- ```if (n < 0)``` checks for negative numbers, where factorial isn’t defined.\n- ```for (i = 1; i <= n; i++)``` iterates from 1 to ***n***.\n- ```fact *= i;``` multiplies ***fact*** by each number in the sequence (e.g., 5! = 1*2*3*4*5).\n- ```printf(\"Factorial of %d = %llu\\n\", n, fact);``` displays the result using ***%llu*** for unsigned long long."
+  },
+  {
+    "title": "Number Guessing Game",
+    "ques": "Develop a C program where the computer generates a random number between 1 and 100, and the user guesses it. Use a while loop, and implement break and continue to control the flow. Provide feedback if the guess is too high or too low.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <stdlib.h>\n#include <time.h>\nint main() {\n    int guess, number, attempts = 0;\n    srand(time(0));\n    number = rand() % 100 + 1;\n    printf(\"Guess the number (1-100): \");\n    while (1) {\n        scanf(\"%d\", &guess);\n        attempts++;\n        if (guess < 0) {\n            printf(\"Negative numbers not allowed! Try again: \");\n            continue;\n        }\n        if (guess == number) {\n            printf(\"Correct! You took %d attempts.\\n\", attempts);\n            break;\n        } else if (guess > number) {\n            printf(\"Too high! Try again: \");\n        } else {\n            printf(\"Too low! Try again: \");\n        }\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program uses a ***while loop*** with ***break*** and ***continue***:\n- ```srand(time(0)); number = rand() % 100 + 1;``` generates a random number between 1 and 100.\n- ```while (1)``` creates an infinite loop.\n- ```scanf(\"%d\", &guess);``` reads the user’s guess.\n- ```attempts++``` tracks the number of guesses.\n- ```if (guess < 0) { ... continue; }``` skips invalid guesses using ***continue***.\n- ```if (guess == number) { ... break; }``` exits the loop with ***break*** when the guess is correct.\n- ```else if (guess > number)``` and ```else``` provide feedback for incorrect guesses."
+  },
+  {
+    "title": "Leap Year Checker",
+    "ques": "Write a C program that takes a year as input and determines if it’s a leap year using nested if statements. A year is a leap year if it’s divisible by 4, but not by 100 unless it’s also divisible by 400.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int year;\n    printf(\"Enter a year: \");\n    scanf(\"%d\", &year);\n    if (year % 4 == 0) {\n        if (year % 100 == 0) {\n            if (year % 400 == 0) {\n                printf(\"%d is a leap year\\n\", year);\n            } else {\n                printf(\"%d is not a leap year\\n\", year);\n            }\n        } else {\n            printf(\"%d is a leap year\\n\", year);\n        }\n    } else {\n        printf(\"%d is not a leap year\\n\", year);\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program uses ***nested if statements*** to check for a leap year:\n- ```scanf(\"%d\", &year);``` reads the input year.\n- ```if (year % 4 == 0)``` checks if the year is divisible by 4.\n- Nested ```if (year % 100 == 0)``` checks if it’s a century year.\n- Further nested ```if (year % 400 == 0)``` confirms if a century year is a leap year.\n- ```else``` clauses handle cases where conditions fail (e.g., divisible by 4 but not a leap year if only divisible by 100).\n- The logic follows the rule: leap if divisible by 4, but not by 100 unless also by 400."
+  },
+  {
+    "title": "Simple Menu System",
+    "ques": "Create a C program that displays a menu with options 1 (Add), 2 (Subtract), 3 (Multiply), and 4 (Exit). Use a do-while loop and switch-case to process user input until they choose to exit.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int choice;\n    do {\n        printf(\"Menu:\\n1. Add\\n2. Subtract\\n3. Multiply\\n4. Exit\\nEnter choice: \");\n        scanf(\"%d\", &choice);\n        switch (choice) {\n            case 1: printf(\"Addition selected\\n\"); break;\n            case 2: printf(\"Subtraction selected\\n\"); break;\n            case 3: printf(\"Multiplication selected\\n\"); break;\n            case 4: printf(\"Exiting...\\n\"); break;\n            default: printf(\"Invalid choice\\n\");\n        }\n    } while (choice != 4);\n    return 0;\n}"
+    },
+    "explanation": "This program combines a ***do-while loop*** and ***switch-case***:\n- ```do { ... } while (choice != 4);``` runs the menu at least once and continues until the user selects 4.\n- ```printf(\"Menu:\\n...\")``` displays options each iteration.\n- ```scanf(\"%d\", &choice);``` captures the user’s selection.\n- ```switch (choice)``` evaluates the input:\n  - ```case 1:``` to ```case 3:``` print operation names and ***break*** exits the switch.\n  - ```case 4:``` signals exit and the loop ends.\n  - ```default:``` handles invalid inputs.\n- The loop ensures continuous operation until exit."
+  },
+  {
+    "title": "Prime Number Validator",
+    "ques": "Write a C program that checks if a user-entered number is prime using a while loop and break statement. A prime number is only divisible by 1 and itself.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int num, i = 2;\n    printf(\"Enter a number: \");\n    scanf(\"%d\", &num);\n    if (num <= 1) {\n        printf(\"%d is not prime\\n\", num);\n    } else {\n        while (i <= num / 2) {\n            if (num % i == 0) {\n                printf(\"%d is not prime\\n\", num);\n                break;\n            }\n            i++;\n        }\n        if (i > num / 2) {\n            printf(\"%d is prime\\n\", num);\n        }\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program uses a ***while loop*** and ***break***:\n- ```scanf(\"%d\", &num);``` gets the input number.\n- ```if (num <= 1)``` filters out non-prime cases (0, 1, negatives).\n- ```while (i <= num / 2)``` tests divisors up to half of ***num***.\n- ```if (num % i == 0)``` checks if ***i*** divides ***num*** evenly; if true, it’s not prime, and ***break*** exits the loop.\n- ```i++``` increments the divisor.\n- ```if (i > num / 2)``` runs if no divisors are found, indicating a prime number."
+  },
+  {
+    "title": "Retry with Goto",
+    "ques": "Develop a C program that asks the user to enter a positive number. If the input is negative, use goto to prompt the user again until a valid input is provided.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int num;\nretry:\n    printf(\"Enter a positive number: \");\n    scanf(\"%d\", &num);\n    if (num < 0) {\n        printf(\"Negative number entered! Try again.\\n\");\n        goto retry;\n    }\n    printf(\"You entered: %d\\n\", num);\n    return 0;\n}"
+    },
+    "explanation": "This program uses ***goto*** for control flow:\n- ```retry:``` defines a label to jump back to.\n- ```scanf(\"%d\", &num);``` reads the user’s input.\n- ```if (num < 0)``` checks if the number is negative.\n- ```goto retry;``` jumps back to the ***retry*** label if the condition is true, prompting again.\n- Once a positive number (or zero) is entered, the loop is bypassed, and ```printf(\"You entered: %d\\n\", num);``` displays the result."
+  },
+  {
+    "title": "Triangle Type Classifier",
+    "ques": "Write a C program that takes three sides of a triangle as input and determines if it’s equilateral, isosceles, or scalene using nested if-else statements. Also, check if the sides can form a valid triangle (sum of any two sides must be greater than the third).",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    float a, b, c;\n    printf(\"Enter three sides of a triangle: \");\n    scanf(\"%f %f %f\", &a, &b, &c);\n    if (a + b <= c || b + c <= a || a + c <= b) {\n        printf(\"Not a valid triangle\\n\");\n    } else {\n        if (a == b) {\n            if (b == c) {\n                printf(\"Equilateral triangle\\n\");\n            } else {\n                printf(\"Isosceles triangle\\n\");\n            }\n        } else {\n            if (b == c || a == c) {\n                printf(\"Isosceles triangle\\n\");\n            } else {\n                printf(\"Scalene triangle\\n\");\n            }\n        }\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program uses ***nested if-else*** to classify a triangle:\n- ```scanf(\"%f %f %f\", &a, &b, &c);``` reads three sides.\n- ```if (a + b <= c || b + c <= a || a + c <= b)``` checks the triangle inequality theorem; if true, it’s invalid.\n- Outer ```if (a == b)``` tests if two sides are equal.\n- Nested ```if (b == c)``` checks if all three are equal (equilateral).\n- Else clauses handle isosceles (two equal sides) or scalene (no equal sides).\n- Additional nested checks (e.g., ```b == c || a == c```) ensure all isosceles cases are caught."
+  },
+  {
+    "title": "Vending Machine Simulator",
+    "ques": "Create a C program simulating a vending machine. Use a switch-case inside a for loop to allow the user 3 attempts to select an item (1 = Soda, 2 = Chips, 3 = Candy) before exiting. Display the selected item or an error for invalid choices.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int choice, i;\n    for (i = 1; i <= 3; i++) {\n        printf(\"Attempt %d/3 - Select item (1=Soda, 2=Chips, 3=Candy): \", i);\n        scanf(\"%d\", &choice);\n        switch (choice) {\n            case 1: printf(\"Dispensing Soda\\n\"); break;\n            case 2: printf(\"Dispensing Chips\\n\"); break;\n            case 3: printf(\"Dispensing Candy\\n\"); break;\n            default: printf(\"Invalid choice\\n\"); break;\n        }\n        if (choice >= 1 && choice <= 3) break;\n    }\n    if (i > 3) printf(\"No valid selection made. Machine resetting.\\n\");\n    return 0;\n}"
+    },
+    "explanation": "This program combines a ***for loop*** with ***switch-case***:\n- ```for (i = 1; i <= 3; i++)``` gives 3 attempts.\n- ```scanf(\"%d\", &choice);``` reads the user’s selection.\n- ```switch (choice)``` handles the options:\n  - ```case 1:``` to ```case 3:``` dispense items and ***break*** exits the switch.\n  - ```default:``` catches invalid inputs.\n- ```if (choice >= 1 && choice <= 3) break;``` exits the loop early on a valid choice.\n- ```if (i > 3)``` checks if all attempts were used without success."
+  },
+  {
+    "title": "Multiplication Table with Skip",
+    "ques": "Write a C program that prints the multiplication table of a number (1 to 10) using a do-while loop. Use continue to skip printing multiples of 5 (e.g., 5, 10, 15, etc.).",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int num, i = 0;\n    printf(\"Enter a number: \");\n    scanf(\"%d\", &num);\n    do {\n        i++;\n        if (num * i % 5 == 0) continue;\n        printf(\"%d x %d = %d\\n\", num, i, num * i);\n    } while (i < 10);\n    return 0;\n}"
+    },
+    "explanation": "This program uses a ***do-while loop*** with ***continue***:\n- ```scanf(\"%d\", &num);``` gets the input number.\n- ```do { ... } while (i < 10);``` runs from 1 to 10.\n- ```i++``` increments the multiplier.\n- ```if (num * i % 5 == 0) continue;``` skips multiples of 5 by jumping to the next iteration.\n- ```printf(\"%d x %d = %d\\n\", num, i, num * i);``` prints the table entry if not skipped."
+  },
+  {
+    "title": "Error Retry with Goto and Nested Loop",
+    "ques": "Develop a C program that asks the user to input a number between 1 and 10. Use goto to retry on invalid input, and once valid, print a pattern of stars (*) in a triangle shape using nested for loops (e.g., input 3 prints 1 star, then 2, then 3).",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int num, i, j;\nretry:\n    printf(\"Enter a number (1-10): \");\n    scanf(\"%d\", &num);\n    if (num < 1 || num > 10) {\n        printf(\"Invalid input! Try again.\\n\");\n        goto retry;\n    }\n    for (i = 1; i <= num; i++) {\n        for (j = 1; j <= i; j++) {\n            printf(\"* \");\n        }\n        printf(\"\\n\");\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program uses ***goto*** and ***nested for loops***:\n- ```retry:``` is a label for retrying input.\n- ```scanf(\"%d\", &num);``` reads the number.\n- ```if (num < 1 || num > 10) { ... goto retry; }``` jumps back if input is invalid.\n- Outer ```for (i = 1; i <= num; i++)``` controls the number of rows.\n- Inner ```for (j = 1; j <= i; j++)``` prints ***i*** stars per row.\n- ```printf(\"\\n\");``` moves to the next line after each row."
+  }
+]

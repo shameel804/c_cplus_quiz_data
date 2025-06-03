@@ -1,0 +1,252 @@
+[
+  {
+    "title": "Simple Delegate Example",
+    "ques": "Create a program that uses a delegate to perform basic arithmetic operations (addition and subtraction) on two numbers provided by the user.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\n\npublic class Program\n{\n    // Define a delegate type\n    public delegate int MathOperation(int a, int b);\n\n    public static void Main()\n    {\n        // Create delegate instances\n        MathOperation add = Add;\n        MathOperation subtract = Subtract;\n\n        Console.WriteLine(\"Enter two numbers:\");\n        int num1 = Convert.ToInt32(Console.ReadLine());\n        int num2 = Convert.ToInt32(Console.ReadLine());\n\n        // Use delegates\n        Console.WriteLine($\"Addition: {add(num1, num2)}\");\n        Console.WriteLine($\"Subtraction: {subtract(num1, num2)}\");\n    }\n\n    public static int Add(int a, int b)\n    {\n        return a + b;\n    }\n\n    public static int Subtract(int a, int b)\n    {\n        return a - b;\n    }\n}"
+    },
+    "explanation": "This program demonstrates a simple use of delegates in C#. Here’s a line-by-line explanation:\n\n- ***using System;***: Imports the System namespace for basic I/O and type conversion.\n- ```public delegate int MathOperation(int a, int b);```: Declares a delegate type named ***MathOperation*** that takes two integers and returns an integer.\n- ```MathOperation add = Add;```: Creates a delegate instance ***add*** that points to the ***Add*** method.\n- ```MathOperation subtract = Subtract;```: Creates another delegate instance ***subtract*** that points to the ***Subtract*** method.\n- The program then takes user input, converts it to integers, and uses the delegates to call the methods ***Add*** and ***Subtract***, printing the results.\n- ```public static int Add(int a, int b)``` and ```public static int Subtract(int a, int b)```: These are the methods the delegates reference, performing addition and subtraction respectively."
+  },
+  {
+    "title": "Multicast Delegate Demo",
+    "ques": "Write a program that uses a multicast delegate to notify multiple subscribers when a temperature change occurs.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\n\npublic class Program\n{\n    public delegate void TempChangeHandler(int temp);\n\n    public static void Main()\n    {\n        TempChangeHandler tempNotifier = null;\n        tempNotifier += LogTemperature;\n        tempNotifier += AlertIfHot;\n\n        Console.WriteLine(\"Enter temperature:\");\n        int temp = Convert.ToInt32(Console.ReadLine());\n        tempNotifier?.Invoke(temp);\n    }\n\n    public static void LogTemperature(int temp)\n    {\n        Console.WriteLine($\"Temperature logged: {temp}°C\");\n    }\n\n    public static void AlertIfHot(int temp)\n    {\n        if (temp > 30)\n            Console.WriteLine(\"Warning: Temperature exceeds 30°C!\");\n    }\n}"
+    },
+    "explanation": "This program showcases multicast delegates:\n\n- ***public delegate void TempChangeHandler(int temp);***: Defines a delegate type that takes an integer (temperature) and returns void.\n- ```TempChangeHandler tempNotifier = null;```: Initializes a delegate variable that will hold multiple method references.\n- ```tempNotifier += LogTemperature;``` and ```tempNotifier += AlertIfHot;```: Adds two methods to the delegate’s invocation list, making it multicast.\n- ```tempNotifier?.Invoke(temp);```: Safely invokes all methods in the delegate’s list with the user-provided temperature. The ***?.*** operator ensures no null reference exception.\n- ***LogTemperature*** logs the temperature, while ***AlertIfHot*** checks if it exceeds 30°C and issues a warning.\n- This demonstrates how multicast delegates can notify multiple subscribers at once."
+  },
+  {
+    "title": "Event with Handler",
+    "ques": "Design a program where a button class raises an event when clicked, and a subscriber reacts to it.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\n\npublic class Button\n{\n    public event EventHandler Clicked;\n\n    public void Click()\n    {\n        Console.WriteLine(\"Button clicked!\");\n        Clicked?.Invoke(this, EventArgs.Empty);\n    }\n}\n\npublic class Program\n{\n    public static void Main()\n    {\n        Button button = new Button();\n        button.Clicked += Button_Clicked;\n\n        Console.WriteLine(\"Press any key to click the button...\");\n        Console.ReadKey();\n        button.Click();\n    }\n\n    private static void Button_Clicked(object sender, EventArgs e)\n    {\n        Console.WriteLine(\"Event handler: Button was clicked!\");\n    }\n}"
+    },
+    "explanation": "This program illustrates events and event handlers:\n\n- ***public event EventHandler Clicked;***: Declares an event using the built-in ***EventHandler*** delegate type in the ***Button*** class.\n- ```Clicked?.Invoke(this, EventArgs.Empty);```: Raises the event when the ***Click*** method is called, passing the button instance as the sender and an empty ***EventArgs***.\n- ```button.Clicked += Button_Clicked;```: Subscribes the ***Button_Clicked*** method to the ***Clicked*** event.\n- When the user presses a key, ***button.Click()*** is called, triggering the event, and the handler ***Button_Clicked*** responds by printing a message.\n- This shows how events allow loose coupling between an event publisher (Button) and subscriber (handler)."
+  },
+  {
+    "title": "Lambda Expression Calculator",
+    "ques": "Create a program that uses lambda expressions with delegates to calculate the square and cube of a number.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\n\npublic class Program\n{\n    public delegate int Calculator(int x);\n\n    public static void Main()\n    {\n        Calculator square = x => x * x;\n        Calculator cube = x => x * x * x;\n\n        Console.WriteLine(\"Enter a number:\");\n        int num = Convert.ToInt32(Console.ReadLine());\n\n        Console.WriteLine($\"Square: {square(num)}\");\n        Console.WriteLine($\"Cube: {cube(num)}\");\n    }\n}"
+    },
+    "explanation": "This program uses lambda expressions with delegates:\n\n- ***public delegate int Calculator(int x);***: Defines a delegate type that takes an integer and returns an integer.\n- ```Calculator square = x => x * x;```: Creates a delegate instance using a lambda expression to compute the square of a number. The ***=>*** operator defines the lambda.\n- ```Calculator cube = x => x * x * x;```: Similarly, defines a lambda for calculating the cube.\n- The program takes a number from the user and applies both lambda-defined delegates, printing the results.\n- Lambda expressions provide a concise way to define delegate behavior inline without separate method definitions."
+  },
+  {
+    "title": "Anonymous Method Filter",
+    "ques": "Write a program that uses an anonymous method with a delegate to filter even numbers from an array.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\n\npublic class Program\n{\n    public delegate bool NumberFilter(int num);\n\n    public static void Main()\n    {\n        int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };\n\n        NumberFilter isEven = delegate (int num)\n        {\n            return num % 2 == 0;\n        };\n\n        Console.WriteLine(\"Even numbers:\");\n        foreach (int num in numbers)\n        {\n            if (isEven(num))\n                Console.Write($\"{num} \");\n        }\n    }\n}"
+    },
+    "explanation": "This program demonstrates anonymous methods:\n\n- ***public delegate bool NumberFilter(int num);***: Defines a delegate that takes an integer and returns a boolean.\n- ```NumberFilter isEven = delegate (int num) { return num % 2 == 0; };```: Creates a delegate instance using an anonymous method (introduced with ***delegate*** keyword) to check if a number is even.\n- The program iterates through an array of numbers, applying the ***isEven*** delegate to filter and print only even numbers.\n- Anonymous methods allow defining delegate logic inline without naming a separate method, though they are less concise than lambda expressions."
+  },
+  {
+    "title": "Delegate with Parameter Validation",
+    "ques": "Create a program that uses a delegate to process a string input, with validation to ensure the string is not null or empty before processing.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\n\npublic class Program\n{\n    public delegate string StringProcessor(string input);\n\n    public static void Main()\n    {\n        StringProcessor process = ValidateAndProcess;\n\n        Console.WriteLine(\"Enter a string:\");\n        string input = Console.ReadLine();\n        string result = process(input);\n        Console.WriteLine($\"Result: {result}\");\n    }\n\n    public static string ValidateAndProcess(string input)\n    {\n        if (string.IsNullOrEmpty(input))\n            return \"Error: Input cannot be null or empty\";\n        return input.ToUpper();\n    }\n}"
+    },
+    "explanation": "This exercise focuses on practical delegate usage with input validation:\n\n- ***public delegate string StringProcessor(string input);***: Defines a delegate that takes a string and returns a string.\n- ```StringProcessor process = ValidateAndProcess;```: Assigns the ***ValidateAndProcess*** method to the delegate.\n- The program takes user input and passes it to the delegate, which checks if the input is ***null*** or empty using ```string.IsNullOrEmpty``` before converting it to uppercase.\n- If invalid, it returns an error message; otherwise, it processes the string.\n- This shows how delegates can encapsulate logic with built-in validation."
+  },
+  {
+    "title": "Multicast Delegate with Return Values",
+    "ques": "Write a program that uses a multicast delegate to calculate multiple statistics (sum and average) of an array of numbers, handling return values appropriately.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\n\npublic class Program\n{\n    public delegate double StatCalculator(int[] numbers);\n\n    public static void Main()\n    {\n        int[] numbers = { 1, 2, 3, 4, 5 };\n        StatCalculator stats = CalculateSum;\n        stats += CalculateAverage;\n\n        // Invoke and handle each delegate separately\n        Delegate[] delegateList = stats.GetInvocationList();\n        foreach (StatCalculator calc in delegateList)\n        {\n            double result = calc(numbers);\n            Console.WriteLine($\"Result: {result}\");\n        }\n    }\n\n    public static double CalculateSum(int[] numbers)\n    {\n        return numbers.Sum();\n    }\n\n    public static double CalculateAverage(int[] numbers)\n    {\n        return numbers.Average();\n    }\n}"
+    },
+    "explanation": "This demonstrates multicast delegates with return values:\n\n- ***public delegate double StatCalculator(int[] numbers);***: Defines a delegate returning a double from an integer array.\n- ```stats += CalculateAverage;```: Adds multiple methods to the delegate, making it multicast.\n- Since multicast delegates with return values only return the last method’s result, ```GetInvocationList()``` is used to get each delegate in the chain.\n- The program iterates through the list, invoking each delegate (***CalculateSum*** and ***CalculateAverage***) and printing their results.\n- This highlights a limitation of multicast delegates and a workaround for handling multiple return values."
+  },
+  {
+    "title": "Custom Event with EventArgs",
+    "ques": "Design a program where a thermostat raises a custom event with temperature data when the temperature changes, and a handler logs the change.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\n\npublic class TempEventArgs : EventArgs\n{\n    public int Temperature { get; }\n    public TempEventArgs(int temp)\n    {\n        Temperature = temp;\n    }\n}\n\npublic class Thermostat\n{\n    public event EventHandler<TempEventArgs> TempChanged;\n\n    public void SetTemperature(int temp)\n    {\n        Console.WriteLine($\"Temperature set to {temp}°C\");\n        TempChanged?.Invoke(this, new TempEventArgs(temp));\n    }\n}\n\npublic class Program\n{\n    public static void Main()\n    {\n        Thermostat thermostat = new Thermostat();\n        thermostat.TempChanged += LogTempChange;\n\n        Console.WriteLine(\"Enter new temperature:\");\n        int temp = Convert.ToInt32(Console.ReadLine());\n        thermostat.SetTemperature(temp);\n    }\n\n    private static void LogTempChange(object sender, TempEventArgs e)\n    {\n        Console.WriteLine($\"Temperature changed to: {e.Temperature}°C\");\n    }\n}"
+    },
+    "explanation": "This program uses a custom event with ***EventArgs***:\n\n- ***public class TempEventArgs : EventArgs***: Defines a custom event argument class with a ***Temperature*** property.\n- ```public event EventHandler<TempEventArgs> TempChanged;```: Declares an event using a generic ***EventHandler*** with custom args.\n- ```TempChanged?.Invoke(this, new TempEventArgs(temp));```: Raises the event with the new temperature encapsulated in ***TempEventArgs***.\n- The handler ***LogTempChange*** receives the event data via ***e.Temperature*** and logs it.\n- This shows how to pass custom data through events for more complex scenarios."
+  },
+  {
+    "title": "Lambda with List Filtering",
+    "ques": "Create a program that uses a lambda expression with a delegate to filter a list of strings based on their length.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\nusing System.Collections.Generic;\n\npublic class Program\n{\n    public delegate bool StringFilter(string s);\n\n    public static void Main()\n    {\n        List<string> words = new List<string> { \"cat\", \"dog\", \"elephant\", \"rat\" };\n        StringFilter filter = s => s.Length > 3;\n\n        Console.WriteLine(\"Words longer than 3 characters:\");\n        foreach (string word in words)\n        {\n            if (filter(word))\n                Console.WriteLine(word);\n        }\n    }\n}"
+    },
+    "explanation": "This exercise uses lambda expressions for filtering:\n\n- ***public delegate bool StringFilter(string s);***: Defines a delegate that evaluates a string and returns a boolean.\n- ```StringFilter filter = s => s.Length > 3;```: Uses a lambda to define a condition checking if a string’s length exceeds 3.\n- The program applies this delegate to a list of strings, printing only those that match the condition (e.g., ***elephant***).\n- This demonstrates how lambdas can simplify filtering logic in a concise, readable way."
+  },
+  {
+    "title": "Anonymous Method with Counter",
+    "ques": "Write a program that uses an anonymous method with a delegate to count how many times a method is invoked.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\n\npublic class Program\n{\n    public delegate void ActionDelegate();\n\n    public static void Main()\n    {\n        int counter = 0;\n        ActionDelegate action = delegate ()\n        {\n            counter++;\n            Console.WriteLine($\"Action executed. Count: {counter}\");\n        };\n\n        action();\n        action();\n        action();\n    }\n}"
+    },
+    "explanation": "This showcases anonymous methods with state:\n\n- ***public delegate void ActionDelegate();***: Defines a delegate with no parameters or return value.\n- ```ActionDelegate action = delegate () { ... };```: Creates an anonymous method that increments a ***counter*** variable and prints the count.\n- The variable ***counter*** is captured in the anonymous method’s closure, allowing it to maintain state across invocations.\n- Each call to ```action()``` increases the count and displays it, showing how anonymous methods can use external variables.\n- This is a practical example of anonymous methods maintaining state."
+  },
+  {
+    "title": "Delegate Chaining for Text Transformation",
+    "ques": "Create a program that uses a delegate to chain multiple text transformations (e.g., trim, uppercase, and append a suffix) on a user-provided string.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\n\npublic class Program\n{\n    public delegate string TextTransformer(string text);\n\n    public static void Main()\n    {\n        TextTransformer transformer = TrimText;\n        transformer += ToUpperCase;\n        transformer += AppendSuffix;\n\n        Console.WriteLine(\"Enter a string:\");\n        string input = Console.ReadLine();\n        string result = input;\n\n        foreach (TextTransformer t in transformer.GetInvocationList())\n        {\n            result = t(result);\n        }\n        Console.WriteLine($\"Transformed text: {result}\");\n    }\n\n    public static string TrimText(string text)\n    {\n        return text.Trim();\n    }\n\n    public static string ToUpperCase(string text)\n    {\n        return text.ToUpper();\n    }\n\n    public static string AppendSuffix(string text)\n    {\n        return text + \"_DONE\";\n    }\n}"
+    },
+    "explanation": "This program demonstrates chaining delegates with sequential execution:\n\n- ***public delegate string TextTransformer(string text);***: Defines a delegate for transforming a string.\n- ```transformer += ToUpperCase;```: Adds multiple methods to the delegate, forming a chain.\n- Since multicast delegates with return values only return the last result, ```GetInvocationList()``` is used to execute each transformation in sequence, updating ***result*** each time.\n- ***TrimText*** removes whitespace, ***ToUpperCase*** converts to uppercase, and ***AppendSuffix*** adds a suffix.\n- This shows how to chain operations while preserving intermediate results."
+  },
+  {
+    "title": "Event with Restricted Access",
+    "ques": "Design a program where a counter class exposes an event that can only be subscribed to or unsubscribed from within the class, and an external method triggers it.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\n\npublic class Counter\n{\n    private event EventHandler CountChanged;\n\n    public Counter()\n    {\n        CountChanged += InternalHandler;\n    }\n\n    public void Increment()\n    {\n        Count++;\n        CountChanged?.Invoke(this, EventArgs.Empty);\n    }\n\n    public int Count { get; private set; } = 0;\n\n    private void InternalHandler(object sender, EventArgs e)\n    {\n        Console.WriteLine($\"Count updated to: {Count}\");\n    }\n}\n\npublic class Program\n{\n    public static void Main()\n    {\n        Counter counter = new Counter();\n        counter.Increment();\n        counter.Increment();\n    }\n}"
+    },
+    "explanation": "This exercise focuses on event access control:\n\n- ***private event EventHandler CountChanged;***: Declares the event as private, restricting subscription to within the ***Counter*** class.\n- ```CountChanged += InternalHandler;```: Subscribes an internal handler in the constructor, ensuring only this handler responds.\n- ```CountChanged?.Invoke(this, EventArgs.Empty);```: Raises the event when ***Increment*** is called, updating the ***Count*** property.\n- The handler ***InternalHandler*** logs the count, and external code cannot modify the event’s subscription list.\n- This demonstrates encapsulation with events, limiting external interference."
+  },
+  {
+    "title": "Lambda Expression with Event Subscription",
+    "ques": "Write a program where a timer class raises an event every second, and a lambda expression subscribed to the event calculates elapsed time.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\nusing System.Timers;\n\npublic class TimerExample\n{\n    private readonly Timer timer;\n    public event EventHandler<int> Tick;\n\n    public TimerExample()\n    {\n        timer = new Timer(1000); // 1 second\n        timer.Elapsed += (s, e) => Tick?.Invoke(this, e.SignalTime.Second);\n        timer.Start();\n    }\n}\n\npublic class Program\n{\n    public static void Main()\n    {\n        TimerExample timer = new TimerExample();\n        int startSeconds = DateTime.Now.Second;\n        timer.Tick += (sender, seconds) =>\n        {\n            int elapsed = (seconds - startSeconds + 60) % 60;\n            Console.WriteLine($\"Elapsed seconds: {elapsed}\");\n        };\n\n        Console.WriteLine(\"Press any key to exit...\");\n        Console.ReadKey();\n    }\n}"
+    },
+    "explanation": "This combines lambda expressions with events:\n\n- ***public event EventHandler<int> Tick;***: Defines an event with an integer parameter for seconds.\n- ```timer.Elapsed += (s, e) => Tick?.Invoke(this, e.SignalTime.Second);```: Uses a lambda to forward the timer’s elapsed event to ***Tick*** with the current second.\n- ```timer.Tick += (sender, seconds) => ...```: Subscribes a lambda that calculates elapsed time using the start time and current seconds, handling wraparound with modulo 60.\n- The program runs until a key is pressed, printing elapsed seconds every tick.\n- This shows how lambdas can simplify event handling logic."
+  },
+  {
+    "title": "Anonymous Method with Exception Handling",
+    "ques": "Create a program that uses an anonymous method with a delegate to divide two numbers, including exception handling for division by zero.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\n\npublic class Program\n{\n    public delegate double MathOperation(double a, double b);\n\n    public static void Main()\n    {\n        MathOperation divide = delegate (double a, double b)\n        {\n            try\n            {\n                if (b == 0)\n                    throw new DivideByZeroException();\n                return a / b;\n            }\n            catch (DivideByZeroException)\n            {\n                Console.WriteLine(\"Error: Division by zero!\");\n                return double.NaN;\n            }\n        };\n\n        Console.WriteLine(\"Enter two numbers:\");\n        double num1 = Convert.ToDouble(Console.ReadLine());\n        double num2 = Convert.ToDouble(Console.ReadLine());\n\n        double result = divide(num1, num2);\n        if (!double.IsNaN(result))\n            Console.WriteLine($\"Result: {result}\");\n    }\n}"
+    },
+    "explanation": "This uses an anonymous method with error handling:\n\n- ***public delegate double MathOperation(double a, double b);***: Defines a delegate for a mathematical operation returning a double.\n- ```MathOperation divide = delegate (double a, double b) { ... };```: Creates an anonymous method that divides two numbers.\n- Inside the anonymous method, a ***try-catch*** block checks for division by zero, throwing and catching a ***DivideByZeroException***, returning ***double.NaN*** on error.\n- The program takes user input and applies the delegate, only printing the result if it’s valid.\n- This illustrates how anonymous methods can include complex logic like exception handling."
+  },
+  {
+    "title": "Multicast Delegate with Conditional Execution",
+    "ques": "Write a program that uses a multicast delegate to perform actions on a number, but only executes specific actions based on conditions (e.g., odd or even).",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\n\npublic class Program\n{\n    public delegate void NumberAction(int number);\n\n    public static void Main()\n    {\n        NumberAction actions = null;\n        actions += n => { if (n % 2 == 0) Console.WriteLine($\"{n} is even\"); };\n        actions += n => { if (n % 2 != 0) Console.WriteLine($\"{n} is odd\"); };\n\n        Console.WriteLine(\"Enter a number:\");\n        int num = Convert.ToInt32(Console.ReadLine());\n        actions(num);\n    }\n}"
+    },
+    "explanation": "This uses multicast delegates with conditional logic:\n\n- ***public delegate void NumberAction(int number);***: Defines a delegate that takes an integer and performs an action.\n- ```actions += n => { if (n % 2 == 0) ... };```: Adds a lambda that checks if the number is even and prints a message if true.\n- ```actions += n => { if (n % 2 != 0) ... };```: Adds another lambda for odd numbers.\n- When ***actions(num)*** is called, both delegates execute, but their output depends on the condition inside each.\n- This shows how multicast delegates can include selective behavior, combining lambdas for flexibility."
+  },
+  {
+    "title": "Delegate with Asynchronous Operation",
+    "ques": "Create a program that uses a delegate to perform an asynchronous calculation (e.g., factorial) and displays the result when complete.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\nusing System.Threading.Tasks;\n\npublic class Program\n{\n    public delegate Task<int> AsyncOperation(int n);\n\n    public static void Main()\n    {\n        AsyncOperation factorial = async (n) =>\n        {\n            await Task.Delay(1000); // Simulate work\n            int result = 1;\n            for (int i = 2; i <= n; i++) result *= i;\n            return result;\n        };\n\n        Console.WriteLine(\"Enter a number:\");\n        int num = Convert.ToInt32(Console.ReadLine());\n        Console.WriteLine(\"Calculating...\");\n\n        factorial(num).ContinueWith(t =>\n            Console.WriteLine($\"Factorial: {t.Result}\")\n        );\n\n        Console.WriteLine(\"Press any key to exit...\");\n        Console.ReadKey();\n    }\n}"
+    },
+    "explanation": "This program integrates delegates with asynchronous operations:\n\n- ***public delegate Task<int> AsyncOperation(int n);***: Defines a delegate that returns a ***Task<int>*** for async operations.\n- ```AsyncOperation factorial = async (n) => ...```: Uses an async lambda expression to compute the factorial, simulating delay with ***Task.Delay***.\n- The factorial calculation runs asynchronously, and ***ContinueWith*** handles the result when complete, printing it.\n- The main thread continues, allowing user interaction while the computation runs in the background.\n- This demonstrates how delegates can encapsulate asynchronous logic."
+  },
+  {
+    "title": "Event with Cancellation Support",
+    "ques": "Design a program where a task manager raises an event before starting a task, allowing subscribers to cancel it.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\n\npublic class CancelEventArgs : EventArgs\n{\n    public bool Cancel { get; set; }\n    public string TaskName { get; }\n    public CancelEventArgs(string taskName)\n    {\n        TaskName = taskName;\n    }\n}\n\npublic class TaskManager\n{\n    public event EventHandler<CancelEventArgs> TaskStarting;\n\n    public void StartTask(string taskName)\n    {\n        var args = new CancelEventArgs(taskName);\n        TaskStarting?.Invoke(this, args);\n        if (!args.Cancel)\n            Console.WriteLine($\"Task '{taskName}' started.\");\n        else\n            Console.WriteLine($\"Task '{taskName}' was canceled.\");\n    }\n}\n\npublic class Program\n{\n    public static void Main()\n    {\n        TaskManager manager = new TaskManager();\n        manager.TaskStarting += (sender, e) =>\n        {\n            if (e.TaskName == \"DangerousTask\")\n            {\n                e.Cancel = true;\n                Console.WriteLine(\"Canceling dangerous task!\");\n            }\n        };\n\n        manager.StartTask(\"NormalTask\");\n        manager.StartTask(\"DangerousTask\");\n    }\n}"
+    },
+    "explanation": "This introduces events with cancellation:\n\n- ***public class CancelEventArgs : EventArgs***: Custom event args with a ***Cancel*** flag and task name.\n- ***public event EventHandler<CancelEventArgs> TaskStarting;***: Event raised before a task starts.\n- ```TaskStarting?.Invoke(this, args);```: Invokes the event, allowing subscribers to set ***args.Cancel***.\n- The lambda subscriber cancels tasks named ***DangerousTask*** by setting ***e.Cancel = true***.\n- The ***StartTask*** method checks the cancel flag and acts accordingly, showing how events can influence program flow."
+  },
+  {
+    "title": "Dynamic Delegate Invocation",
+    "ques": "Write a program that dynamically selects and invokes a delegate based on user input to perform different string operations.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\n\npublic class Program\n{\n    public delegate string StringOperation(string input);\n\n    public static void Main()\n    {\n        StringOperation reverse = s => new string(s.Reverse().ToArray());\n        StringOperation doubleText = s => s + s;\n\n        Console.WriteLine(\"Enter a string:\");\n        string input = Console.ReadLine();\n        Console.WriteLine(\"Choose operation (1: Reverse, 2: Double):\");\n        int choice = Convert.ToInt32(Console.ReadLine());\n\n        StringOperation selectedOp = choice == 1 ? reverse : doubleText;\n        string result = selectedOp(input);\n        Console.WriteLine($\"Result: {result}\");\n    }\n}"
+    },
+    "explanation": "This explores dynamic delegate selection:\n\n- ***public delegate string StringOperation(string input);***: Delegate for string operations.\n- ```StringOperation reverse = s => ...``` and ```doubleText = s => ...```: Defines two operations using lambdas—reversing and doubling a string.\n- User input determines which delegate is assigned to ***selectedOp*** using a ternary operator.\n- The selected delegate is invoked with the input string, showing how delegates can be dynamically chosen at runtime.\n- This highlights flexibility in delegate usage."
+  },
+  {
+    "title": "Lambda with Multicast Event Handling",
+    "ques": "Create a program where a sensor class raises an event when a value changes, and multiple lambda expressions handle it differently (e.g., logging, alerting).",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\n\npublic class Sensor\n{\n    private int value;\n    public event EventHandler<int> ValueChanged;\n\n    public void SetValue(int newValue)\n    {\n        value = newValue;\n        ValueChanged?.Invoke(this, value);\n    }\n}\n\npublic class Program\n{\n    public static void Main()\n    {\n        Sensor sensor = new Sensor();\n        sensor.ValueChanged += (s, v) => Console.WriteLine($\"Value logged: {v}\");\n        sensor.ValueChanged += (s, v) => { if (v > 50) Console.WriteLine($\"Alert: Value {v} exceeds 50!\"); };\n\n        Console.WriteLine(\"Enter sensor values (0 to exit):\");\n        while (true)\n        {\n            int input = Convert.ToInt32(Console.ReadLine());\n            if (input == 0) break;\n            sensor.SetValue(input);\n        }\n    }\n}"
+    },
+    "explanation": "This combines multicast events with lambdas:\n\n- ***public event EventHandler<int> ValueChanged;***: Event triggered when the sensor value changes.\n- Two lambda subscribers: one logs the value (```(s, v) => Console.WriteLine...```), and another alerts if the value exceeds 50.\n- ```ValueChanged?.Invoke(this, value);```: Raises the event, invoking all subscribers.\n- The program loops to accept values until 0 is entered, demonstrating multicast behavior with inline lambda logic.\n- This shows how lambdas can handle events in a concise, varied way."
+  },
+  {
+    "title": "Anonymous Method with Nested Delegate",
+    "ques": "Write a program that uses an anonymous method containing a nested delegate to process a list of numbers and apply a secondary operation.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\nusing System.Collections.Generic;\n\npublic class Program\n{\n    public delegate int NumberProcessor(int n);\n\n    public static void Main()\n    {\n        List<int> numbers = new List<int> { 1, 2, 3, 4, 5 };\n        NumberProcessor process = delegate (int n)\n        {\n            NumberProcessor doubleIfEven = x => x % 2 == 0 ? x * 2 : x;\n            return doubleIfEven(n);\n        };\n\n        Console.WriteLine(\"Processed numbers:\");\n        foreach (int num in numbers)\n        {\n            int result = process(num);\n            Console.WriteLine(result);\n        }\n    }\n}"
+    },
+    "explanation": "This uses an anonymous method with a nested delegate:\n\n- ***public delegate int NumberProcessor(int n);***: Delegate for processing numbers.\n- ```NumberProcessor process = delegate (int n) { ... };```: Anonymous method that defines a nested delegate ***doubleIfEven***.\n- The nested delegate doubles even numbers and leaves odd ones unchanged, applied within the outer delegate.\n- The program processes a list, applying the nested logic via the outer delegate.\n- This demonstrates how anonymous methods can encapsulate additional delegate logic internally."
+  },
+  {
+    "title": "Generic Delegate for Type-Safe Processing",
+    "ques": "Create a program that uses a generic delegate to process different data types (e.g., int and string) with type-specific operations.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\n\npublic class Program\n{\n    public delegate T Processor<T>(T input);\n\n    public static void Main()\n    {\n        Processor<int> doubleInt = x => x * 2;\n        Processor<string> reverseString = s => new string(s.Reverse().ToArray());\n\n        Console.WriteLine(\"Enter an integer:\");\n        int num = Convert.ToInt32(Console.ReadLine());\n        Console.WriteLine($\"Doubled: {doubleInt(num)}\");\n\n        Console.WriteLine(\"Enter a string:\");\n        string text = Console.ReadLine();\n        Console.WriteLine($\"Reversed: {reverseString(text)}\");\n    }\n}"
+    },
+    "explanation": "This explores generic delegates for type safety:\n\n- ***public delegate T Processor<T>(T input);***: Defines a generic delegate that takes and returns a type ***T***.\n- ```Processor<int> doubleInt = x => x * 2;```: Instantiates the delegate for integers, doubling the input.\n- ```Processor<string> reverseString = s => ...```: Instantiates it for strings, reversing the input.\n- The program processes user input of different types using the appropriate delegate instance.\n- This shows how generic delegates enable reusable, type-safe operations."
+  },
+  {
+    "title": "Event with Delayed Invocation",
+    "ques": "Design a program where a monitor class raises an event only after a value exceeds a threshold for a specified duration (e.g., 2 seconds).",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\nusing System.Timers;\n\npublic class Monitor\n{\n    private int value;\n    private Timer timer;\n    private int threshold = 100;\n    private bool thresholdExceeded;\n\n    public event EventHandler<int> ThresholdExceeded;\n\n    public Monitor()\n    {\n        timer = new Timer(2000); // 2 seconds\n        timer.Elapsed += CheckThreshold;\n    }\n\n    public void UpdateValue(int newValue)\n    {\n        value = newValue;\n        if (value > threshold && !thresholdExceeded)\n        {\n            timer.Start();\n        }\n        else\n        {\n            timer.Stop();\n            thresholdExceeded = false;\n        }\n    }\n\n    private void CheckThreshold(object sender, ElapsedEventArgs e)\n    {\n        if (value > threshold)\n        {\n            thresholdExceeded = true;\n            ThresholdExceeded?.Invoke(this, value);\n            timer.Stop();\n        }\n    }\n}\n\npublic class Program\n{\n    public static void Main()\n    {\n        Monitor monitor = new Monitor();\n        monitor.ThresholdExceeded += (s, v) => Console.WriteLine($\"Threshold exceeded: {v}\");\n\n        Console.WriteLine(\"Enter values (0 to exit):\");\n        while (true)\n        {\n            int input = Convert.ToInt32(Console.ReadLine());\n            if (input == 0) break;\n            monitor.UpdateValue(input);\n        }\n    }\n}"
+    },
+    "explanation": "This introduces events with delayed invocation:\n\n- ***public event EventHandler<int> ThresholdExceeded;***: Event raised when a condition persists.\n- A ***Timer*** checks if ***value*** exceeds 100 for 2 seconds before invoking the event.\n- ```UpdateValue``` starts the timer when the threshold is crossed and stops it otherwise.\n- ```CheckThreshold``` confirms the condition still holds after the delay, then raises the event.\n- This demonstrates conditional, timed event triggering."
+  },
+  {
+    "title": "Chained Lambda with Conditional Logic",
+    "ques": "Write a program that chains lambda expressions in a delegate to transform a number based on multiple conditions (e.g., positive, even).",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\n\npublic class Program\n{\n    public delegate int NumberTransformer(int n);\n\n    public static void Main()\n    {\n        NumberTransformer transform = n => n; // Start with identity\n        transform = x => x > 0 ? transform(x) * 2 : transform(x);\n        transform = x => x % 2 == 0 ? transform(x) + 1 : transform(x);\n\n        Console.WriteLine(\"Enter a number:\");\n        int num = Convert.ToInt32(Console.ReadLine());\n        int result = transform(num);\n        Console.WriteLine($\"Transformed: {result}\");\n    }\n}"
+    },
+    "explanation": "This chains lambdas with conditional logic:\n\n- ***public delegate int NumberTransformer(int n);***: Delegate for number transformations.\n- ```transform = n => n;```: Starts with an identity function.\n- ```transform = x => x > 0 ? transform(x) * 2 : transform(x);```: Doubles positive numbers, chaining with the prior delegate.\n- ```transform = x => x % 2 == 0 ? transform(x) + 1 : transform(x);```: Adds 1 to even numbers, further chaining.\n- The final delegate applies all transformations in sequence, showing how lambdas can build complex logic."
+  },
+  {
+    "title": "Multicast Delegate with Removal",
+    "ques": "Create a program that uses a multicast delegate to log messages, allowing the user to remove a specific logger dynamically.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\n\npublic class Program\n{\n    public delegate void Logger(string message);\n\n    public static void Main()\n    {\n        Logger log = null;\n        Logger verboseLog = m => Console.WriteLine($\"VERBOSE: {m}\");\n        Logger simpleLog = m => Console.WriteLine($\"SIMPLE: {m}\");\n\n        log += verboseLog;\n        log += simpleLog;\n\n        Console.WriteLine(\"Initial logging:\");\n        log(\"Test message\");\n\n        Console.WriteLine(\"Remove verbose logger? (y/n):\");\n        if (Console.ReadLine().ToLower() == \"y\")\n        {\n            log -= verboseLog;\n        }\n\n        Console.WriteLine(\"After removal:\");\n        log(\"Test message again\");\n    }\n}"
+    },
+    "explanation": "This manages multicast delegates dynamically:\n\n- ***public delegate void Logger(string message);***: Delegate for logging messages.\n- Two loggers (***verboseLog*** and ***simpleLog***) are added to the multicast delegate ***log***.\n- ```log -= verboseLog;```: Removes the verbose logger if the user chooses, demonstrating delegate subtraction.\n- The program logs a message before and after removal, showing the change in behavior.\n- This highlights how multicast delegates can be modified at runtime."
+  },
+  {
+    "title": "Anonymous Method with State Machine",
+    "ques": "Write a program that uses an anonymous method with a delegate to implement a simple state machine toggling between 'On' and 'Off' states.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "using System;\n\npublic class Program\n{\n    public delegate string StateChanger();\n\n    public static void Main()\n    {\n        bool isOn = false;\n        StateChanger toggle = delegate ()\n        {\n            isOn = !isOn;\n            return isOn ? \"On\" : \"Off\";\n        };\n\n        Console.WriteLine(\"Press Enter to toggle state, 'q' to quit:\");\n        while (true)\n        {\n            string input = Console.ReadLine();\n            if (input == \"q\") break;\n            Console.WriteLine($\"State: {toggle()}\");\n        }\n    }\n}"
+    },
+    "explanation": "This uses an anonymous method as a state machine:\n\n- ***public delegate string StateChanger();***: Delegate that changes and returns a state.\n- ```StateChanger toggle = delegate () { ... };```: Anonymous method that toggles ***isOn*** and returns the current state.\n- The ***isOn*** variable is captured in the closure, maintaining state across calls.\n- The program loops, toggling the state with each Enter press until 'q' is entered.\n- This shows how anonymous methods can implement simple stateful logic."
+  }
+]

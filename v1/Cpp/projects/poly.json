@@ -1,0 +1,152 @@
+[
+  {
+    "title": "Function Overloading Example",
+    "ques": "Write a C++ program that demonstrates compile-time polymorphism using function overloading. Create a class with multiple functions of the same name but different parameter types to calculate the area of different shapes (e.g., circle and rectangle).",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Shape {\npublic:\n    double area(double radius) {\n        return 3.14 * radius * radius;\n    }\n    double area(double length, double width) {\n        return length * width;\n    }\n};\n\nint main() {\n    Shape shape;\n    cout << \"Circle Area: \" << shape.area(5.0) << endl;\n    cout << \"Rectangle Area: \" << shape.area(4.0, 6.0) << endl;\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates ***compile-time polymorphism*** using function overloading.\n- ```#include <iostream>```: Includes the input-output stream library.\n- ```class Shape```: Defines a class to calculate areas.\n- ```double area(double radius)```: Overloaded function for a circle, using radius to compute area (π * r²).\n- ```double area(double length, double width)```: Overloaded function for a rectangle, multiplying length and width.\n- ```main()```: Creates a ***Shape*** object and calls both versions of the ```area``` function.\n- The compiler resolves which function to call based on the number and type of arguments at compile time."
+  },
+  {
+    "title": "Operator Overloading Example",
+    "ques": "Create a C++ program that showcases compile-time polymorphism by overloading the '+' operator to add two complex numbers. Define a class Complex with real and imaginary parts.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Complex {\nprivate:\n    double real, imag;\npublic:\n    Complex(double r = 0, double i = 0) : real(r), imag(i) {}\n    Complex operator+(const Complex& other) {\n        return Complex(real + other.real, imag + other.imag);\n    }\n    void display() {\n        cout << real << \" + \" << imag << \"i\" << endl;\n    }\n};\n\nint main() {\n    Complex c1(3.5, 2.5), c2(1.5, 4.5);\n    Complex c3 = c1 + c2;\n    cout << \"Result: \";\n    c3.display();\n    return 0;\n}"
+    },
+    "explanation": "This program illustrates ***operator overloading***, a form of compile-time polymorphism.\n- ```class Complex```: Represents a complex number with ***real*** and ***imag*** parts.\n- ```Complex(double r = 0, double i = 0)```: Constructor with default arguments.\n- ```Complex operator+(const Complex& other)```: Overloads the '+' operator to add two ***Complex*** objects by adding their real and imaginary parts.\n- ```void display()```: Prints the complex number.\n- ```main()```: Creates two complex numbers, adds them using the overloaded operator, and displays the result.\n- The '+' operator’s behavior is resolved at compile time."
+  },
+  {
+    "title": "Virtual Function Demonstration",
+    "ques": "Write a C++ program to demonstrate runtime polymorphism using virtual functions. Create a base class Animal and derived classes Dog and Cat, each with a speak() method.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Animal {\npublic:\n    virtual void speak() {\n        cout << \"Animal speaks\" << endl;\n    }\n};\n\nclass Dog : public Animal {\npublic:\n    void speak() override {\n        cout << \"Woof!\" << endl;\n    }\n};\n\nclass Cat : public Animal {\npublic:\n    void speak() override {\n        cout << \"Meow!\" << endl;\n    }\n};\n\nint main() {\n    Animal* animal;\n    Dog dog;\n    Cat cat;\n    animal = &dog;\n    animal->speak();\n    animal = &cat;\n    animal->speak();\n    return 0;\n}"
+    },
+    "explanation": "This program shows ***runtime polymorphism*** using virtual functions.\n- ```class Animal```: Base class with a ***virtual*** ```speak()``` function.\n- ```virtual void speak()```: Declares the function as virtual, enabling dynamic dispatch.\n- ```class Dog : public Animal``` and ```class Cat : public Animal```: Derived classes overriding ```speak()```.\n- ```void speak() override```: Ensures the function overrides the base class version.\n- ```Animal* animal```: Pointer to base class, which can point to derived objects.\n- ```animal->speak()```: Calls the appropriate derived class method at runtime based on the object type, not the pointer type."
+  },
+  {
+    "title": "Vtables and Vptrs Exploration",
+    "ques": "Write a C++ program to conceptually demonstrate how vtables and vptrs work with runtime polymorphism. Use a base class Shape and a derived class Circle with a virtual function.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Shape {\npublic:\n    virtual void draw() {\n        cout << \"Drawing Shape\" << endl;\n    }\n    virtual ~Shape() {}\n};\n\nclass Circle : public Shape {\npublic:\n    void draw() override {\n        cout << \"Drawing Circle\" << endl;\n    }\n};\n\nint main() {\n    Shape* shape = new Circle();\n    shape->draw();\n    delete shape;\n    return 0;\n}"
+    },
+    "explanation": "This program illustrates ***vtables*** and ***vptrs*** in runtime polymorphism.\n- ```class Shape```: Base class with a ***virtual*** ```draw()``` function and a virtual destructor.\n- ```virtual void draw()```: Enables runtime polymorphism; the compiler creates a vtable for ***Shape***.\n- ```class Circle : public Shape```: Derived class overriding ```draw()```.\n- ```Shape* shape = new Circle()```: Base class pointer points to a ***Circle*** object.\n- ```shape->draw()```: The ***vptr*** (virtual pointer) in the ***Circle*** object points to the vtable, which resolves to ```Circle::draw()``` at runtime.\n- ***Vtable***: A table of function pointers created per class with virtual functions.\n- ***Vptr***: A hidden pointer in each object instance pointing to its class’s vtable.\n- ```delete shape```: Virtual destructor ensures proper cleanup."
+  },
+  {
+    "title": "Pure Virtual Function and Abstract Class",
+    "ques": "Create a C++ program that uses a pure virtual function to define an abstract base class Vehicle and implement it in derived classes Car and Bike.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Vehicle {\npublic:\n    virtual void start() = 0; // Pure virtual function\n    virtual ~Vehicle() {}\n};\n\nclass Car : public Vehicle {\npublic:\n    void start() override {\n        cout << \"Car engine started\" << endl;\n    }\n};\n\nclass Bike : public Vehicle {\npublic:\n    void start() override {\n        cout << \"Bike engine started\" << endl;\n    }\n};\n\nint main() {\n    Vehicle* v1 = new Car();\n    Vehicle* v2 = new Bike();\n    v1->start();\n    v2->start();\n    delete v1;\n    delete v2;\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates ***pure virtual functions*** and ***abstract classes***.\n- ```class Vehicle```: Abstract base class with a ***pure virtual function*** ```start() = 0```.\n- ```virtual void start() = 0```: Makes ***Vehicle*** abstract; it cannot be instantiated directly.\n- ```class Car : public Vehicle``` and ```class Bike : public Vehicle```: Concrete classes implementing ```start()```.\n- ```void start() override```: Provides specific implementations for each derived class.\n- ```Vehicle* v1 = new Car()```: Pointer to abstract base class can hold derived class objects.\n- ```v1->start()``` and ```v2->start()```: Calls the overridden methods at runtime via polymorphism.\n- ```virtual ~Vehicle()```: Ensures proper destruction of derived objects."
+  },
+  {
+    "title": "Function Overloading with Different Return Types",
+    "ques": "Write a C++ program demonstrating compile-time polymorphism using function overloading. Create a class MathUtils with overloaded functions to compute the power of a number, returning either an integer or a double based on input types.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass MathUtils {\npublic:\n    int power(int base, int exp) {\n        int result = 1;\n        for (int i = 0; i < exp; i++) result *= base;\n        return result;\n    }\n    double power(double base, int exp) {\n        double result = 1.0;\n        for (int i = 0; i < exp; i++) result *= base;\n        return result;\n    }\n};\n\nint main() {\n    MathUtils util;\n    cout << \"Integer Power: \" << util.power(2, 3) << endl;\n    cout << \"Double Power: \" << util.power(2.5, 2) << endl;\n    return 0;\n}"
+    },
+    "explanation": "This program showcases ***compile-time polymorphism*** via function overloading.\n- ```class MathUtils```: Contains overloaded ***power*** functions.\n- ```int power(int base, int exp)```: Computes integer power using a loop.\n- ```double power(double base, int exp)```: Overloaded version for a double base, returning a double.\n- The compiler selects the correct function based on argument types at compile time.\n- ```main()```: Calls both versions, demonstrating how ***return type*** and ***parameter type*** influence the choice.\n- Note: Return type alone doesn’t enable overloading; parameter differences are key."
+  },
+  {
+    "title": "Operator Overloading for Vector Addition",
+    "ques": "Develop a C++ program that uses operator overloading to add two 2D vectors. Define a Vector2D class with x and y coordinates and overload the '+' operator to perform vector addition.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Vector2D {\nprivate:\n    float x, y;\npublic:\n    Vector2D(float x = 0, float y = 0) : x(x), y(y) {}\n    Vector2D operator+(const Vector2D& other) const {\n        return Vector2D(x + other.x, y + other.y);\n    }\n    void print() const {\n        cout << \"(\" << x << \", \" << y << \")\" << endl;\n    }\n};\n\nint main() {\n    Vector2D v1(3.2, 4.5), v2(1.8, 2.7);\n    Vector2D v3 = v1 + v2;\n    cout << \"Sum: \";\n    v3.print();\n    return 0;\n}"
+    },
+    "explanation": "This demonstrates ***operator overloading*** for compile-time polymorphism.\n- ```class Vector2D```: Represents a 2D vector with ***x*** and ***y*** coordinates.\n- ```Vector2D(float x = 0, float y = 0)```: Constructor with default values.\n- ```Vector2D operator+(const Vector2D& other) const```: Overloads '+' to add vectors component-wise.\n- ```const```: Ensures the method doesn’t modify the object.\n- ```print()```: Displays the vector.\n- ```main()```: Adds two vectors using the overloaded operator, resolved at compile time."
+  },
+  {
+    "title": "Runtime Polymorphism with Multiple Levels",
+    "ques": "Create a C++ program to show runtime polymorphism with a multi-level inheritance hierarchy. Define a base class Employee, an intermediate class Manager, and a derived class SeniorManager, each with a virtual function report().",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Employee {\npublic:\n    virtual void report() {\n        cout << \"Employee reporting\" << endl;\n    }\n};\n\nclass Manager : public Employee {\npublic:\n    void report() override {\n        cout << \"Manager reporting to upper management\" << endl;\n    }\n};\n\nclass SeniorManager : public Manager {\npublic:\n    void report() override {\n        cout << \"Senior Manager reporting to board\" << endl;\n    }\n};\n\nint main() {\n    Employee* emp;\n    Manager mgr;\n    SeniorManager srMgr;\n    emp = &mgr;\n    emp->report();\n    emp = &srMgr;\n    emp->report();\n    return 0;\n}"
+    },
+    "explanation": "This program highlights ***runtime polymorphism*** with virtual functions.\n- ```class Employee```: Base class with a ***virtual*** ```report()``` function.\n- ```class Manager : public Employee```: Intermediate class overriding ```report()```.\n- ```class SeniorManager : public Manager```: Further derived class overriding ```report()```.\n- ```virtual void report()```: Enables dynamic binding.\n- ```Employee* emp```: Base class pointer can point to any level in the hierarchy.\n- ```emp->report()```: Calls the appropriate overridden method at runtime based on the actual object type."
+  },
+  {
+    "title": "Vtables with Multiple Virtual Functions",
+    "ques": "Write a C++ program to explore vtables and vptrs by defining a base class Device with multiple virtual functions (powerOn and powerOff) and a derived class Smartphone overriding them.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Device {\npublic:\n    virtual void powerOn() {\n        cout << \"Device powering on\" << endl;\n    }\n    virtual void powerOff() {\n        cout << \"Device powering off\" << endl;\n    }\n    virtual ~Device() {}\n};\n\nclass Smartphone : public Device {\npublic:\n    void powerOn() override {\n        cout << \"Smartphone booting up\" << endl;\n    }\n    void powerOff() override {\n        cout << \"Smartphone shutting down\" << endl;\n    }\n};\n\nint main() {\n    Device* dev = new Smartphone();\n    dev->powerOn();\n    dev->powerOff();\n    delete dev;\n    return 0;\n}"
+    },
+    "explanation": "This illustrates ***vtables*** and ***vptrs*** with multiple virtual functions.\n- ```class Device```: Base class with two ***virtual*** functions: ```powerOn()``` and ```powerOff()```.\n- ```virtual ~Device()```: Virtual destructor for proper cleanup.\n- ```class Smartphone : public Device```: Overrides both virtual functions.\n- ```Device* dev = new Smartphone()```: Base pointer to a ***Smartphone*** object.\n- ```dev->powerOn()``` and ```dev->powerOff()```: The ***vptr*** points to the ***Smartphone*** vtable, which contains pointers to the overridden functions, resolved at runtime.\n- ***Vtable***: Stores addresses of all virtual functions for a class.\n- Multiple virtual functions increase the vtable size accordingly."
+  },
+  {
+    "title": "Abstract Class with Multiple Pure Virtual Functions",
+    "ques": "Develop a C++ program using an abstract base class GameCharacter with two pure virtual functions (attack and defend). Implement these in derived classes Warrior and Mage.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass GameCharacter {\npublic:\n    virtual void attack() = 0;\n    virtual void defend() = 0;\n    virtual ~GameCharacter() {}\n};\n\nclass Warrior : public GameCharacter {\npublic:\n    void attack() override {\n        cout << \"Warrior swings sword\" << endl;\n    }\n    void defend() override {\n        cout << \"Warrior raises shield\" << endl;\n    }\n};\n\nclass Mage : public GameCharacter {\npublic:\n    void attack() override {\n        cout << \"Mage casts fireball\" << endl;\n    }\n    void defend() override {\n        cout << \"Mage creates magic barrier\" << endl;\n    }\n};\n\nint main() {\n    GameCharacter* c1 = new Warrior();\n    GameCharacter* c2 = new Mage();\n    c1->attack();\n    c1->defend();\n    c2->attack();\n    c2->defend();\n    delete c1;\n    delete c2;\n    return 0;\n}"
+    },
+    "explanation": "This demonstrates ***pure virtual functions*** in an abstract class.\n- ```class GameCharacter```: Abstract base class with two ***pure virtual functions***: ```attack() = 0``` and ```defend() = 0```.\n- ```virtual ~GameCharacter()```: Virtual destructor for safe deletion.\n- ```class Warrior : public GameCharacter``` and ```class Mage : public GameCharacter```: Concrete classes implementing both functions.\n- ```attack()``` and ```defend()```: Overridden to provide specific behaviors.\n- ```GameCharacter* c1 = new Warrior()```: Pointer to abstract class can hold derived objects.\n- ```c1->attack()```: Runtime polymorphism calls the correct implementation via the vtable."
+  },
+  {
+    "title": "Function Overloading with Varied Parameter Counts",
+    "ques": "Write a C++ program to demonstrate compile-time polymorphism by overloading a function in a class Logger to log messages with different levels of detail (e.g., simple message vs. message with timestamp).",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <ctime>\nusing namespace std;\n\nclass Logger {\npublic:\n    void log(string message) {\n        cout << \"Log: \" << message << endl;\n    }\n    void log(string message, time_t timestamp) {\n        cout << \"Log [\" << ctime(&timestamp) << \"]: \" << message << endl;\n    }\n};\n\nint main() {\n    Logger logger;\n    logger.log(\"System started\");\n    time_t now = time(0);\n    logger.log(\"Detailed event\", now);\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates ***compile-time polymorphism*** with function overloading.\n- ```class Logger```: Contains overloaded ***log*** functions.\n- ```void log(string message)```: Simple version prints a message.\n- ```void log(string message, time_t timestamp)```: Overloaded version adds a timestamp using ```ctime```.\n- ```#include <ctime>```: Provides time-related functions.\n- ```main()```: Calls both versions; the compiler resolves which to use based on the number of arguments.\n- Overloading here depends on ***parameter count***, a key aspect of compile-time polymorphism."
+  },
+  {
+    "title": "Operator Overloading for String Concatenation",
+    "ques": "Create a C++ program that uses operator overloading to concatenate two custom String objects. Define a String class and overload the '+' operator to combine their contents.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass String {\nprivate:\n    string data;\npublic:\n    String(string s = \"\") : data(s) {}\n    String operator+(const String& other) const {\n        return String(data + other.data);\n    }\n    void show() const {\n        cout << data << endl;\n    }\n};\n\nint main() {\n    String s1(\"Hello, \"), s2(\"World!\");\n    String s3 = s1 + s2;\n    cout << \"Concatenated: \";\n    s3.show();\n    return 0;\n}"
+    },
+    "explanation": "This showcases ***operator overloading*** for compile-time polymorphism.\n- ```class String```: Wraps a standard ```string``` for custom behavior.\n- ```String(string s = \"\")```: Constructor with a default empty string.\n- ```String operator+(const String& other) const```: Overloads '+' to concatenate ***data*** from two ***String*** objects.\n- ```show()```: Displays the string.\n- ```main()```: Combines two strings using the overloaded operator, resolved at compile time.\n- The operation leverages the underlying ```std::string``` '+' operator."
+  },
+  {
+    "title": "Runtime Polymorphism with Function Override",
+    "ques": "Develop a C++ program to illustrate runtime polymorphism using virtual functions. Define a base class Appliance with a virtual function operate(), and derived classes Fan and Heater with specific implementations.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Appliance {\npublic:\n    virtual void operate() {\n        cout << \"Appliance is operating\" << endl;\n    }\n    virtual ~Appliance() {}\n};\n\nclass Fan : public Appliance {\npublic:\n    void operate() override {\n        cout << \"Fan is spinning\" << endl;\n    }\n};\n\nclass Heater : public Appliance {\npublic:\n    void operate() override {\n        cout << \"Heater is warming\" << endl;\n    }\n};\n\nint main() {\n    Appliance* app;\n    Fan fan;\n    Heater heater;\n    app = &fan;\n    app->operate();\n    app = &heater;\n    app->operate();\n    return 0;\n}"
+    },
+    "explanation": "This program illustrates ***runtime polymorphism*** with virtual functions.\n- ```class Appliance```: Base class with a ***virtual*** ```operate()``` function.\n- ```virtual ~Appliance()```: Ensures proper cleanup of derived objects.\n- ```class Fan : public Appliance``` and ```class Heater : public Appliance```: Override ```operate()``` with specific behaviors.\n- ```operate() override```: Explicitly marks the override for clarity.\n- ```Appliance* app```: Base pointer dynamically binds to derived objects.\n- ```app->operate()```: Calls the correct derived class method at runtime via the vtable."
+  },
+  {
+    "title": "Vtables with Mixed Virtual and Non-Virtual Functions",
+    "ques": "Write a C++ program to demonstrate vtables and vptrs with a mix of virtual and non-virtual functions. Use a base class Vehicle with a virtual function accelerate() and a non-virtual function stop(), overridden in a derived class Truck.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Vehicle {\npublic:\n    virtual void accelerate() {\n        cout << \"Vehicle accelerating\" << endl;\n    }\n    void stop() {\n        cout << \"Vehicle stopping\" << endl;\n    }\n    virtual ~Vehicle() {}\n};\n\nclass Truck : public Vehicle {\npublic:\n    void accelerate() override {\n        cout << \"Truck accelerating with load\" << endl;\n    }\n    void stop() {\n        cout << \"Truck stopping with brakes\" << endl;\n    }\n};\n\nint main() {\n    Vehicle* v = new Truck();\n    v->accelerate();\n    v->stop();\n    delete v;\n    return 0;\n}"
+    },
+    "explanation": "This explores ***vtables*** and ***vptrs*** with mixed function types.\n- ```class Vehicle```: Base class with ***virtual*** ```accelerate()``` and non-virtual ```stop()```.\n- ```virtual void accelerate()```: Added to the vtable for dynamic dispatch.\n- ```void stop()```: Non-virtual, resolved statically.\n- ```class Truck : public Vehicle```: Overrides both, but only ```accelerate()``` uses the vtable.\n- ```v->accelerate()```: Uses the ***vptr*** to call ```Truck::accelerate()``` at runtime.\n- ```v->stop()```: Calls ```Vehicle::stop()``` statically, as it’s not virtual.\n- ***Vtable***: Contains only virtual function pointers, not non-virtual ones."
+  },
+  {
+    "title": "Abstract Class with Optional Implementation",
+    "ques": "Create a C++ program with an abstract base class Tool having a pure virtual function use() and a virtual function clean() with a default implementation. Implement these in derived classes Hammer and Drill.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Tool {\npublic:\n    virtual void use() = 0;\n    virtual void clean() {\n        cout << \"Cleaning tool\" << endl;\n    }\n    virtual ~Tool() {}\n};\n\nclass Hammer : public Tool {\npublic:\n    void use() override {\n        cout << \"Hammering nail\" << endl;\n    }\n};\n\nclass Drill : public Tool {\npublic:\n    void use() override {\n        cout << \"Drilling hole\" << endl;\n    }\n    void clean() override {\n        cout << \"Cleaning drill bit\" << endl;\n    }\n};\n\nint main() {\n    Tool* t1 = new Hammer();\n    Tool* t2 = new Drill();\n    t1->use();\n    t1->clean();\n    t2->use();\n    t2->clean();\n    delete t1;\n    delete t2;\n    return 0;\n}"
+    },
+    "explanation": "This demonstrates an ***abstract class*** with a mix of pure and regular virtual functions.\n- ```class Tool```: Abstract due to ```use() = 0```, with a default ```clean()```.\n- ```virtual void use() = 0```: Pure virtual, must be overridden.\n- ```virtual void clean()```: Provides a default that can be overridden.\n- ```class Hammer : public Tool```: Implements ```use()```, inherits ```clean()```.\n- ```class Drill : public Tool```: Overrides both functions.\n- ```t1->clean()```: Calls default ```Tool::clean()```.\n- ```t2->clean()```: Calls overridden ```Drill::clean()``` via runtime polymorphism."
+  }
+]

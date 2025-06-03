@@ -1,0 +1,182 @@
+[
+  {
+    "title": "Single Inheritance Example",
+    "ques": "Write a C++ program to demonstrate single inheritance where a derived class inherits properties from a single base class. Create a base class 'Animal' with a function 'eat()' and a derived class 'Dog' that inherits 'Animal' and adds a function 'bark()'.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Animal {\npublic:\n    void eat() {\n        cout << \"This animal eats food.\" << endl;\n    }\n};\n\nclass Dog : public Animal {\npublic:\n    void bark() {\n        cout << \"The dog barks.\" << endl;\n    }\n};\n\nint main() {\n    Dog d;\n    d.eat();\n    d.bark();\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates ***single inheritance*** in C++:\n- The base class ***Animal*** has a public method ```eat()``` that prints a message.\n- The derived class ***Dog*** inherits from ```Animal``` using the ```: public Animal``` syntax, making ```eat()``` accessible.\n- ***Dog*** adds its own method ```bark()``` to extend functionality.\n- In ```main()```, we create a ***Dog*** object ```d``` and call both ```d.eat()``` (inherited) and ```d.bark()``` (defined in Dog).\n- Output: ```This animal eats food.``` followed by ```The dog barks.```"
+  },
+  {
+    "title": "Multiple Inheritance Example",
+    "ques": "Create a C++ program to show multiple inheritance. Define a class 'Engine' with a function 'start()', a class 'Wheels' with a function 'roll()', and a class 'Car' that inherits from both 'Engine' and 'Wheels'.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Engine {\npublic:\n    void start() {\n        cout << \"Engine starts.\" << endl;\n    }\n};\n\nclass Wheels {\npublic:\n    void roll() {\n        cout << \"Wheels roll.\" << endl;\n    }\n};\n\nclass Car : public Engine, public Wheels {\npublic:\n    void drive() {\n        cout << \"Car is driving.\" << endl;\n    }\n};\n\nint main() {\n    Car c;\n    c.start();\n    c.roll();\n    c.drive();\n    return 0;\n}"
+    },
+    "explanation": "This program illustrates ***multiple inheritance***:\n- ***Engine*** class defines ```start()``` to simulate an engine.\n- ***Wheels*** class defines ```roll()``` for wheel movement.\n- ***Car*** inherits from both using ```: public Engine, public Wheels```, gaining access to both ```start()``` and ```roll()```.\n- ***Car*** adds ```drive()``` as its own method.\n- In ```main()```, a ***Car*** object ```c``` calls ```start()```, ```roll()```, and ```drive()```.\n- Output: ```Engine starts.```, ```Wheels roll.```, ```Car is driving.```"
+  },
+  {
+    "title": "Multilevel Inheritance Example",
+    "ques": "Write a C++ program to demonstrate multilevel inheritance. Create a class 'Person' with a function 'introduce()', a class 'Employee' that inherits 'Person' and adds 'work()', and a class 'Manager' that inherits 'Employee' and adds 'manage()'.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Person {\npublic:\n    void introduce() {\n        cout << \"I am a person.\" << endl;\n    }\n};\n\nclass Employee : public Person {\npublic:\n    void work() {\n        cout << \"I am working.\" << endl;\n    }\n};\n\nclass Manager : public Employee {\npublic:\n    void manage() {\n        cout << \"I am managing the team.\" << endl;\n    }\n};\n\nint main() {\n    Manager m;\n    m.introduce();\n    m.work();\n    m.manage();\n    return 0;\n}"
+    },
+    "explanation": "This demonstrates ***multilevel inheritance***:\n- ***Person*** is the base class with ```introduce()```.\n- ***Employee*** inherits from ```Person``` and adds ```work()```.\n- ***Manager*** inherits from ```Employee```, forming a chain, and adds ```manage()```.\n- In ```main()```, a ***Manager*** object ```m``` can call all three methods: ```introduce()``` (from Person), ```work()``` (from Employee), and ```manage()``` (from Manager).\n- Output: ```I am a person.```, ```I am working.```, ```I am managing the team.```"
+  },
+  {
+    "title": "Constructor Inheritance Example",
+    "ques": "Write a C++ program to show constructor inheritance. Create a base class 'Vehicle' with a parameterized constructor and a derived class 'Bike' that inherits the constructor and adds its own parameter.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Vehicle {\nprotected:\n    string type;\npublic:\n    Vehicle(string t) : type(t) {\n        cout << \"Vehicle type: \" << type << endl;\n    }\n};\n\nclass Bike : public Vehicle {\nprivate:\n    int wheels;\npublic:\n    Bike(string t, int w) : Vehicle(t), wheels(w) {\n        cout << \"Bike has \" << wheels << \" wheels.\" << endl;\n    }\n};\n\nint main() {\n    Bike b(\"Two-wheeler\", 2);\n    return 0;\n}"
+    },
+    "explanation": "This program shows ***constructor inheritance***:\n- ***Vehicle*** has a constructor taking ```string t```, initializing ```type``` and printing it.\n- ***Bike*** inherits from ```Vehicle``` and uses ```: Vehicle(t)``` to call the base constructor, passing ```t```.\n- ***Bike***’s constructor also takes ```int w``` for ```wheels``` and initializes it.\n- In ```main()```, creating a ***Bike*** object ```b``` triggers both constructors.\n- Output: ```Vehicle type: Two-wheeler``` followed by ```Bike has 2 wheels.```"
+  },
+  {
+    "title": "Function Overriding Example",
+    "ques": "Create a C++ program to demonstrate function overriding. Define a base class 'Shape' with a virtual function 'draw()' and a derived class 'Circle' that overrides 'draw()'.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Shape {\npublic:\n    virtual void draw() {\n        cout << \"Drawing a shape.\" << endl;\n    }\n};\n\nclass Circle : public Shape {\npublic:\n    void draw() override {\n        cout << \"Drawing a circle.\" << endl;\n    }\n};\n\nint main() {\n    Shape* s = new Circle();\n    s->draw();\n    delete s;\n    return 0;\n}"
+    },
+    "explanation": "This demonstrates ***function overriding***:\n- ***Shape*** has a ***virtual*** function ```draw()```, allowing it to be overridden.\n- ***Circle*** overrides ```draw()``` with its own version using the ```override``` keyword for clarity.\n- In ```main()```, a ***Shape*** pointer ```s``` points to a ***Circle*** object.\n- Calling ```s->draw()``` invokes the overridden ```draw()``` from ***Circle*** due to virtual function resolution.\n- Output: ```Drawing a circle.``` (not the base class version)."
+  },
+  {
+    "title": "Virtual Base Class Example",
+    "ques": "Write a C++ program to demonstrate the use of a virtual base class to resolve the diamond problem in multiple inheritance. Create classes 'A', 'B', 'C', and 'D' where 'B' and 'C' inherit from 'A' virtually, and 'D' inherits from both 'B' and 'C'.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    void show() {\n        cout << \"Class A\" << endl;\n    }\n};\n\nclass B : virtual public A {};\n\nclass C : virtual public A {};\n\nclass D : public B, public C {};\n\nint main() {\n    D d;\n    d.show();\n    return 0;\n}"
+    },
+    "explanation": "This resolves the ***diamond problem*** using a ***virtual base class***:\n- ***A*** is the base class with ```show()```.\n- ***B*** and ***C*** inherit from ***A*** using ```virtual``` to ensure only one copy of ***A*** exists in the hierarchy.\n- ***D*** inherits from both ***B*** and ***C***, forming a diamond structure.\n- Without ```virtual```, ```d.show()``` would be ambiguous (two copies of A). With ```virtual```, there’s only one ***A*** instance.\n- In ```main()```, ```d.show()``` calls ***A***’s ```show()``` unambiguously.\n- Output: ```Class A```"
+  },
+  {
+    "title": "Hybrid Inheritance Example",
+    "ques": "Write a C++ program to demonstrate hybrid inheritance (a combination of multiple and multilevel inheritance). Create a base class 'Device' with a function 'powerOn()', a class 'Portable' that inherits 'Device' and adds 'charge()', a class 'Screen' with 'display()', and a class 'Smartphone' that inherits both 'Portable' and 'Screen'.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Device {\npublic:\n    void powerOn() {\n        cout << \"Device is powered on.\" << endl;\n    }\n};\n\nclass Portable : public Device {\npublic:\n    void charge() {\n        cout << \"Charging the device.\" << endl;\n    }\n};\n\nclass Screen {\npublic:\n    void display() {\n        cout << \"Displaying on screen.\" << endl;\n    }\n};\n\nclass Smartphone : public Portable, public Screen {\npublic:\n    void call() {\n        cout << \"Making a call.\" << endl;\n    }\n};\n\nint main() {\n    Smartphone s;\n    s.powerOn();\n    s.charge();\n    s.display();\n    s.call();\n    return 0;\n}"
+    },
+    "explanation": "This program showcases ***hybrid inheritance***:\n- ***Device*** is a base class with ```powerOn()```.\n- ***Portable*** uses ***single inheritance*** from ```Device``` and adds ```charge()```.\n- ***Screen*** is an independent class with ```display()```.\n- ***Smartphone*** uses ***multiple inheritance*** from ```Portable``` (which brings Device) and ```Screen```, and adds ```call()```.\n- In ```main()```, a ***Smartphone*** object ```s``` accesses all inherited methods plus its own.\n- Output: ```Device is powered on.```, ```Charging the device.```, ```Displaying on screen.```, ```Making a call.```"
+  },
+  {
+    "title": "Constructor Chaining in Multilevel Inheritance",
+    "ques": "Create a C++ program to show constructor chaining in multilevel inheritance. Define a class 'Base' with a constructor, a class 'Intermediate' that inherits 'Base' and has its own constructor, and a class 'Derived' that inherits 'Intermediate' and initializes all levels.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Base {\nprotected:\n    int x;\npublic:\n    Base(int a) : x(a) {\n        cout << \"Base constructor: x = \" << x << endl;\n    }\n};\n\nclass Intermediate : public Base {\nprotected:\n    int y;\npublic:\n    Intermediate(int a, int b) : Base(a), y(b) {\n        cout << \"Intermediate constructor: y = \" << y << endl;\n    }\n};\n\nclass Derived : public Intermediate {\nprivate:\n    int z;\npublic:\n    Derived(int a, int b, int c) : Intermediate(a, b), z(c) {\n        cout << \"Derived constructor: z = \" << z << endl;\n    }\n};\n\nint main() {\n    Derived d(1, 2, 3);\n    return 0;\n}"
+    },
+    "explanation": "This demonstrates ***constructor chaining*** in ***multilevel inheritance***:\n- ***Base*** constructor takes ```int a``` and initializes ```x```.\n- ***Intermediate*** inherits from ```Base```, calls ```Base(a)```, and initializes ```y``` with ```b```.\n- ***Derived*** inherits from ```Intermediate```, calls ```Intermediate(a, b)```, and initializes ```z``` with ```c```.\n- In ```main()```, creating a ***Derived*** object ```d``` triggers the chain: Base, Intermediate, then Derived.\n- Output: ```Base constructor: x = 1```, ```Intermediate constructor: y = 2```, ```Derived constructor: z = 3```."
+  },
+  {
+    "title": "Overriding with Access Modifiers",
+    "ques": "Write a C++ program to demonstrate function overriding with different access levels. Create a base class 'Gadget' with a protected virtual function 'operate()', and a derived class 'Robot' that overrides it as a public function.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Gadget {\nprotected:\n    virtual void operate() {\n        cout << \"Gadget is operating.\" << endl;\n    }\npublic:\n    void use() {\n        operate();\n    }\n};\n\nclass Robot : public Gadget {\npublic:\n    void operate() override {\n        cout << \"Robot is performing tasks.\" << endl;\n    }\n};\n\nint main() {\n    Robot r;\n    r.use();\n    r.operate();\n    return 0;\n}"
+    },
+    "explanation": "This shows ***function overriding*** with access level changes:\n- ***Gadget*** has a ***protected virtual*** ```operate()```, accessible only within the class or its derivatives.\n- ```use()``` is public and calls ```operate()``` internally.\n- ***Robot*** overrides ```operate()``` as ***public***, making it directly callable.\n- In ```main()```, ```r.use()``` calls the overridden ```operate()``` via polymorphism, and ```r.operate()``` calls it directly.\n- Output: ```Robot is performing tasks.``` (from ```use()```), ```Robot is performing tasks.``` (direct call)."
+  },
+  {
+    "title": "Virtual Base Class with Data",
+    "ques": "Create a C++ program using a virtual base class with data members to avoid duplication. Define a class 'Component' with an integer 'id', classes 'PartA' and 'PartB' that virtually inherit 'Component', and a class 'Product' that inherits both 'PartA' and 'PartB'.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Component {\npublic:\n    int id;\n    Component(int i) : id(i) {\n        cout << \"Component ID: \" << id << endl;\n    }\n};\n\nclass PartA : virtual public Component {\npublic:\n    PartA(int i) : Component(i) {}\n};\n\nclass PartB : virtual public Component {\npublic:\n    PartB(int i) : Component(i) {}\n};\n\nclass Product : public PartA, public PartB {\npublic:\n    Product(int i) : Component(i), PartA(i), PartB(i) {\n        cout << \"Product created with ID: \" << id << endl;\n    }\n};\n\nint main() {\n    Product p(101);\n    return 0;\n}"
+    },
+    "explanation": "This uses a ***virtual base class*** with data:\n- ***Component*** has an ```int id``` initialized via its constructor.\n- ***PartA*** and ***PartB*** inherit from ```Component``` with ```virtual``` to share one instance of ```Component```.\n- ***Product*** inherits from both, initializing ```Component``` once via ```Component(i)```.\n- Without ```virtual```, ```id``` would be duplicated, causing ambiguity. With ```virtual```, there’s one ```id```.\n- In ```main()```, creating ```p``` initializes ```id``` once.\n- Output: ```Component ID: 101```, ```Product created with ID: 101```."
+  },
+  {
+    "title": "Hierarchical Inheritance Example",
+    "ques": "Write a C++ program to demonstrate hierarchical inheritance where multiple derived classes inherit from a single base class. Create a base class 'Vehicle' with a function 'move()', and two derived classes 'Car' and 'Bike' that inherit from 'Vehicle' and add their own specific functions.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Vehicle {\npublic:\n    void move() {\n        cout << \"Vehicle is moving.\" << endl;\n    }\n};\n\nclass Car : public Vehicle {\npublic:\n    void honk() {\n        cout << \"Car honks: Beep Beep!\" << endl;\n    }\n};\n\nclass Bike : public Vehicle {\npublic:\n    void ringBell() {\n        cout << \"Bike rings bell: Ding Ding!\" << endl;\n    }\n};\n\nint main() {\n    Car c;\n    Bike b;\n    c.move();\n    c.honk();\n    b.move();\n    b.ringBell();\n    return 0;\n}"
+    },
+    "explanation": "This demonstrates ***hierarchical inheritance***:\n- ***Vehicle*** is the base class with a common method ```move()```.\n- ***Car*** and ***Bike*** both inherit from ```Vehicle``` using ```public```, sharing the ```move()``` method.\n- ***Car*** adds ```honk()```, and ***Bike*** adds ```ringBell()```, showing specialized behavior.\n- In ```main()```, separate objects ```c``` and ```b``` use the inherited ```move()``` and their own methods.\n- Output: ```Vehicle is moving.```, ```Car honks: Beep Beep!```, ```Vehicle is moving.```, ```Bike rings bell: Ding Ding!```."
+  },
+  {
+    "title": "Constructor with Default Arguments in Inheritance",
+    "ques": "Create a C++ program to show constructor inheritance with default arguments. Define a base class 'Person' with a constructor that has a default argument, and a derived class 'Student' that inherits it and adds its own parameter with a default value.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Person {\nprotected:\n    string name;\npublic:\n    Person(string n = \"Unknown\") : name(n) {\n        cout << \"Person name: \" << name << endl;\n    }\n};\n\nclass Student : public Person {\nprivate:\n    int grade;\npublic:\n    Student(string n = \"Anonymous\", int g = 0) : Person(n), grade(g) {\n        cout << \"Student grade: \" << grade << endl;\n    }\n};\n\nint main() {\n    Student s1;\n    Student s2(\"Alice\", 10);\n    return 0;\n}"
+    },
+    "explanation": "This explores ***constructor inheritance*** with ***default arguments***:\n- ***Person*** constructor takes ```string n``` with a default value ```\"Unknown\"```.\n- ***Student*** inherits from ```Person```, passing ```n``` to the base constructor, and adds ```grade``` with default ```0```.\n- In ```main()```, ```s1``` uses defaults, while ```s2``` provides explicit values.\n- For ```s1```: Base constructor uses ```\"Anonymous\"```, derived uses ```0```.\n- For ```s2```: Base uses ```\"Alice\"```, derived uses ```10```.\n- Output: ```Person name: Anonymous```, ```Student grade: 0```, then ```Person name: Alice```, ```Student grade: 10```."
+  },
+  {
+    "title": "Pure Virtual Function with Overriding",
+    "ques": "Write a C++ program to demonstrate function overriding with a pure virtual function. Create an abstract base class 'Animal' with a pure virtual function 'sound()', and derived classes 'Cat' and 'Dog' that override it.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Animal {\npublic:\n    virtual void sound() = 0; // Pure virtual function\n    void sleep() {\n        cout << \"Animal is sleeping.\" << endl;\n    }\n};\n\nclass Cat : public Animal {\npublic:\n    void sound() override {\n        cout << \"Cat says: Meow!\" << endl;\n    }\n};\n\nclass Dog : public Animal {\npublic:\n    void sound() override {\n        cout << \"Dog says: Woof!\" << endl;\n    }\n};\n\nint main() {\n    Animal* a1 = new Cat();\n    Animal* a2 = new Dog();\n    a1->sound();\n    a1->sleep();\n    a2->sound();\n    a2->sleep();\n    delete a1;\n    delete a2;\n    return 0;\n}"
+    },
+    "explanation": "This showcases ***function overriding*** with a ***pure virtual function***:\n- ***Animal*** is an abstract class with ```sound()``` as a ***pure virtual function*** (```= 0```), forcing derived classes to override it.\n- ```sleep()``` is a regular method for all animals.\n- ***Cat*** and ***Dog*** override ```sound()``` with their specific implementations.\n- In ```main()```, pointers of type ***Animal*** point to ```Cat``` and ```Dog``` objects, demonstrating polymorphism.\n- Output: ```Cat says: Meow!```, ```Animal is sleeping.```, ```Dog says: Woof!```, ```Animal is sleeping.```."
+  },
+  {
+    "title": "Virtual Base Class with Initialization List",
+    "ques": "Create a C++ program using a virtual base class with an initialization list to handle multiple inheritance. Define a class 'Base' with a string member, classes 'Derived1' and 'Derived2' that virtually inherit 'Base', and a class 'Combined' that inherits both and initializes the base class.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    string data;\n    Base(string d) : data(d) {\n        cout << \"Base data: \" << data << endl;\n    }\n};\n\nclass Derived1 : virtual public Base {\npublic:\n    Derived1(string d) : Base(d) {}\n};\n\nclass Derived2 : virtual public Base {\npublic:\n    Derived2(string d) : Base(d) {}\n};\n\nclass Combined : public Derived1, public Derived2 {\npublic:\n    Combined(string d) : Base(d), Derived1(d), Derived2(d) {\n        cout << \"Combined data: \" << data << endl;\n    }\n};\n\nint main() {\n    Combined c(\"Test\");\n    return 0;\n}"
+    },
+    "explanation": "This uses a ***virtual base class*** with an ***initialization list***:\n- ***Base*** has a ```string data``` initialized in its constructor.\n- ***Derived1*** and ***Derived2*** inherit virtually from ```Base```, ensuring one ```Base``` instance.\n- ***Combined*** inherits from both and explicitly initializes ```Base``` with ```Base(d)``` in its constructor list.\n- Without ```virtual```, multiple ```Base``` instances would exist. With ```virtual```, ```data``` is shared.\n- In ```main()```, ```c``` initializes ```data``` once.\n- Output: ```Base data: Test```, ```Combined data: Test```."
+  },
+  {
+    "title": "Single Inheritance with Protected Members",
+    "ques": "Write a C++ program to demonstrate single inheritance with protected members. Create a base class 'Employee' with a protected string 'name' and a public method to set it, and a derived class 'Manager' that inherits 'Employee' and accesses 'name' directly in a new method.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Employee {\nprotected:\n    string name;\npublic:\n    void setName(string n) {\n        name = n;\n        cout << \"Name set to: \" << name << endl;\n    }\n};\n\nclass Manager : public Employee {\npublic:\n    void display() {\n        cout << \"Manager name: \" << name << endl;\n    }\n};\n\nint main() {\n    Manager m;\n    m.setName(\"John\");\n    m.display();\n    return 0;\n}"
+    },
+    "explanation": "This showcases ***single inheritance*** with ***protected members***:\n- ***Employee*** has a ***protected*** ```string name```, accessible to derived classes but not outside.\n- ```setName()``` is a public method to modify ```name```.\n- ***Manager*** inherits from ```Employee``` and can directly access ```name``` in ```display()``` due to protected access.\n- In ```main()```, ```m``` uses ```setName()``` to set ```name``` and ```display()``` to show it.\n- Output: ```Name set to: John```, ```Manager name: John```."
+  },
+  {
+    "title": "Multiple Inheritance with Name Conflict",
+    "ques": "Create a C++ program to demonstrate multiple inheritance with a name conflict between base classes. Define a class 'Printer' and a class 'Scanner' both with a function 'process()', and a class 'MultiDevice' that inherits both and resolves the conflict.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Printer {\npublic:\n    void process() {\n        cout << \"Printing document.\" << endl;\n    }\n};\n\nclass Scanner {\npublic:\n    void process() {\n        cout << \"Scanning document.\" << endl;\n    }\n};\n\nclass MultiDevice : public Printer, public Scanner {\npublic:\n    void processPrinter() {\n        Printer::process();\n    }\n    void processScanner() {\n        Scanner::process();\n    }\n};\n\nint main() {\n    MultiDevice md;\n    md.processPrinter();\n    md.processScanner();\n    return 0;\n}"
+    },
+    "explanation": "This explores ***multiple inheritance*** with a ***name conflict***:\n- ***Printer*** and ***Scanner*** both have a ```process()``` method, causing ambiguity in the derived class.\n- ***MultiDevice*** inherits from both, and resolves the conflict by using scope resolution (```Printer::``` and ```Scanner::```) in new methods.\n- ```processPrinter()``` and ```processScanner()``` explicitly call the respective base class methods.\n- In ```main()```, ```md``` calls these new methods to avoid ambiguity.\n- Output: ```Printing document.```, ```Scanning document.```."
+  },
+  {
+    "title": "Multilevel Inheritance with Destructor",
+    "ques": "Write a C++ program to demonstrate multilevel inheritance with destructors. Create a class 'Base' with a destructor, a class 'Middle' that inherits 'Base' with its own destructor, and a class 'Top' that inherits 'Middle' with a destructor.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    Base() {\n        cout << \"Base constructor\" << endl;\n    }\n    ~Base() {\n        cout << \"Base destructor\" << endl;\n    }\n};\n\nclass Middle : public Base {\npublic:\n    Middle() {\n        cout << \"Middle constructor\" << endl;\n    }\n    ~Middle() {\n        cout << \"Middle destructor\" << endl;\n    }\n};\n\nclass Top : public Middle {\npublic:\n    Top() {\n        cout << \"Top constructor\" << endl;\n    }\n    ~Top() {\n        cout << \"Top destructor\" << endl;\n    }\n};\n\nint main() {\n    Top t;\n    return 0;\n}"
+    },
+    "explanation": "This demonstrates ***multilevel inheritance*** with ***destructors***:\n- ***Base*** has a constructor and destructor.\n- ***Middle*** inherits from ```Base```, adding its own constructor and destructor.\n- ***Top*** inherits from ```Middle```, completing the chain with its own constructor and destructor.\n- In ```main()```, creating a ```Top``` object ```t``` triggers constructors from ***Base*** to ***Top***, and destruction occurs in reverse order.\n- Output: ```Base constructor```, ```Middle constructor```, ```Top constructor```, then ```Top destructor```, ```Middle destructor```, ```Base destructor```."
+  },
+  {
+    "title": "Function Overriding with Covariant Return Types",
+    "ques": "Create a C++ program to demonstrate function overriding with covariant return types. Define a base class 'Shape' with a virtual function 'clone()' returning a 'Shape*', and a derived class 'Rectangle' that overrides it to return a 'Rectangle*'.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Shape {\npublic:\n    virtual Shape* clone() {\n        cout << \"Cloning a generic shape.\" << endl;\n        return new Shape();\n    }\n    virtual ~Shape() {}\n};\n\nclass Rectangle : public Shape {\npublic:\n    Rectangle* clone() override {\n        cout << \"Cloning a rectangle.\" << endl;\n        return new Rectangle();\n    }\n};\n\nint main() {\n    Shape* s = new Rectangle();\n    Shape* copy = s->clone();\n    delete s;\n    delete copy;\n    return 0;\n}"
+    },
+    "explanation": "This shows ***function overriding*** with ***covariant return types***:\n- ***Shape*** has a ***virtual*** ```clone()``` returning a ```Shape*```.\n- ***Rectangle*** overrides ```clone()``` to return a ```Rectangle*```, a derived type, which is allowed with covariance.\n- A virtual destructor in ```Shape``` ensures proper cleanup.\n- In ```main()```, ```s``` (a ```Shape*```) points to a ```Rectangle```, and ```clone()``` returns a ```Rectangle*``` cast to ```Shape*```.\n- Output: ```Cloning a rectangle.``` (overridden method is called)."
+  }
+]

@@ -1,0 +1,4239 @@
+[
+  {
+    "q": "What is encapsulation in C++?",
+    "o": [
+      "Bundling data and methods that operate on that data within one unit",
+      "Allowing multiple inheritance in classes",
+      "Hiding the class implementation from the user",
+      "Overloading functions with the same name"
+    ]
+  },
+  {
+    "q": "Which access specifier in C++ provides the highest level of data hiding?",
+    "o": [
+      "private",
+      "public",
+      "protected",
+      "internal"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Demo {\n  private:\n    int x = 10;\n  public:\n    void display() {\n      cout << x;\n    }\n};\n\nint main() {\n  Demo obj;\n  obj.display();\n  return 0;\n}",
+    "o": [
+      "10",
+      "x",
+      "Compilation Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following best demonstrates abstraction in C++?",
+    "o": [
+      "Defining a class with only relevant functions and hiding implementation details",
+      "Using global variables to access data anywhere",
+      "Exposing all member variables as public",
+      "Using only inline functions"
+    ]
+  },
+  {
+    "q": "What will be the output of this C++ code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Shape {\n  public:\n    virtual void draw() = 0;\n};\n\nclass Circle : public Shape {\n  public:\n    void draw() {\n      cout << \"Drawing Circle\";\n    }\n};\n\nint main() {\n  Circle c;\n  c.draw();\n  return 0;\n}",
+    "o": [
+      "Drawing Circle",
+      "Drawing Shape",
+      "Compilation Error",
+      "Runtime Error"
+    ]
+  },
+  {
+    "q": "Which statement about abstraction is TRUE?",
+    "o": [
+      "Abstraction focuses on exposing only the necessary parts of an object",
+      "Abstraction requires making all class members public",
+      "Abstraction does not allow inheritance",
+      "Abstraction forces implementation of all member functions"
+    ]
+  },
+  {
+    "q": "In C++, which of the following access modifiers allows class members to be accessible only within the class?",
+    "o": [
+      "private",
+      "protected",
+      "public",
+      "external"
+    ]
+  },
+  {
+    "q": "What is interface segregation in object-oriented programming?",
+    "o": [
+      "Designing smaller and more specific interfaces for clients",
+      "Using one large class for all operations",
+      "Combining multiple classes into one",
+      "Exposing all functions via public access"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\n  protected:\n    int x = 20;\n};\n\nclass Derived : public Base {\n  public:\n    void show() {\n      cout << x;\n    }\n};\n\nint main() {\n  Derived d;\n  d.show();\n  return 0;\n}",
+    "o": [
+      "20",
+      "x",
+      "Compilation Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Which principle does the following code demonstrate?\n\nclass BankAccount {\n  private:\n    double balance;\n  public:\n    void deposit(double amount);\n    void withdraw(double amount);\n};",
+    "o": [
+      "Encapsulation",
+      "Polymorphism",
+      "Inheritance",
+      "Recursion"
+    ]
+  },
+  {
+    "q": "Why is encapsulation important in C++?",
+    "o": [
+      "It helps protect data from unintended modification",
+      "It forces multiple inheritance",
+      "It allows unlimited access to data members",
+      "It makes functions global"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Employee {\n  private:\n    int salary = 50000;\n  public:\n    int getSalary() {\n      return salary;\n    }\n};\n\nint main() {\n  Employee e;\n  cout << e.getSalary();\n  return 0;\n}",
+    "o": [
+      "50000",
+      "salary",
+      "0",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about data hiding is TRUE?",
+    "o": [
+      "It restricts direct access to some components of an object",
+      "It exposes internal logic to the user",
+      "It encourages global variable use",
+      "It is the same as inheritance"
+    ]
+  },
+  {
+    "q": "In C++, which access modifier allows access to derived classes but not to outside code?",
+    "o": [
+      "protected",
+      "private",
+      "public",
+      "internal"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet demonstrating abstraction?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass AbstractDevice {\n  public:\n    virtual void start() = 0;\n};\n\nclass Printer : public AbstractDevice {\n  public:\n    void start() {\n      cout << \"Printer started\";\n    }\n};\n\nint main() {\n  Printer p;\n  p.start();\n  return 0;\n}",
+    "o": [
+      "Printer started",
+      "Device started",
+      "Compilation Error",
+      "AbstractDevice started"
+    ]
+  },
+  {
+    "q": "Which of the following best describes interface segregation?",
+    "o": [
+      "A class should not be forced to implement interfaces it does not use",
+      "Interfaces should expose all features of the class",
+      "A single interface should be used for all classes",
+      "Multiple unrelated functionalities should be combined"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of proper encapsulation in C++?",
+    "o": [
+      "Using private members and public getter/setter methods",
+      "Making all members public for easy access",
+      "Accessing data directly using global variables",
+      "Only using protected members in all classes"
+    ]
+  },
+  {
+    "q": "Which concept is used in C++ to implement abstraction?",
+    "o": [
+      "Abstract classes and pure virtual functions",
+      "Static member variables",
+      "Friend functions",
+      "Templates"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Interface {\n  public:\n    virtual void doSomething() = 0;\n};\n\nclass Concrete : public Interface {\n  public:\n    void doSomething() {\n      cout << \"Action done\";\n    }\n};\n\nint main() {\n  Concrete obj;\n  obj.doSomething();\n  return 0;\n}",
+    "o": [
+      "Action done",
+      "Compilation Error",
+      "Interface method",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which one of the following violates the Interface Segregation Principle?",
+    "o": [
+      "A class implementing methods that are irrelevant to its purpose",
+      "Using abstract base classes for similar types",
+      "Breaking large interfaces into smaller ones",
+      "Using pure virtual functions in base classes"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Car {\n  private:\n    string model = \"Sedan\";\n  public:\n    string getModel() {\n      return model;\n    }\n};\n\nint main() {\n  Car c;\n  cout << c.getModel();\n  return 0;\n}",
+    "o": [
+      "Sedan",
+      "model",
+      "Compilation Error",
+      "Car"
+    ]
+  },
+  {
+    "q": "Which of the following correctly demonstrates data hiding?",
+    "o": [
+      "Making data members private and accessing them via public methods",
+      "Declaring all variables as global",
+      "Using macros instead of functions",
+      "Accessing private data directly"
+    ]
+  },
+  {
+    "q": "What is the purpose of using pure virtual functions in C++?",
+    "o": [
+      "To create an abstract class and enforce method implementation in derived classes",
+      "To avoid using constructors",
+      "To automatically inherit all base class methods",
+      "To provide function overloading"
+    ]
+  },
+  {
+    "q": "What will be the result of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass User {\n  private:\n    string password = \"1234\";\n  public:\n    void showPassword() {\n      cout << password;\n    }\n};\n\nint main() {\n  User u;\n  u.showPassword();\n  return 0;\n}",
+    "o": [
+      "1234",
+      "password",
+      "Compilation Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Which principle is being followed when a class only exposes necessary information and hides the rest?",
+    "o": [
+      "Abstraction",
+      "Inheritance",
+      "Polymorphism",
+      "Composition"
+    ]
+  },
+  {
+    "q": "Which of the following violates encapsulation?",
+    "o": [
+      "Accessing object data directly without using methods",
+      "Keeping members private and using getters",
+      "Using constructors to initialize private data",
+      "Using inline methods for data access"
+    ]
+  },
+  {
+    "q": "How can we implement interface segregation in C++?",
+    "o": [
+      "By using multiple abstract base classes with specific responsibilities",
+      "By putting all functions in a single abstract class",
+      "By only using templates",
+      "By inheriting unrelated classes"
+    ]
+  },
+  {
+    "q": "What is the output of this code using protected access modifier?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Animal {\n  protected:\n    string type = \"Mammal\";\n};\n\nclass Dog : public Animal {\n  public:\n    void showType() {\n      cout << type;\n    }\n};\n\nint main() {\n  Dog d;\n  d.showType();\n  return 0;\n}",
+    "o": [
+      "Mammal",
+      "type",
+      "Compilation Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of abstraction?",
+    "o": [
+      "User interacts with a car object through its methods like start() and stop() without knowing how they work internally",
+      "Giving access to all variables to the user",
+      "Using nested loops for data processing",
+      "Creating multiple objects in main()"
+    ]
+  },
+  {
+    "q": "Which of the following design choices aligns with the Interface Segregation Principle?",
+    "o": [
+      "Splitting a large interface into smaller, role-specific ones",
+      "Combining unrelated methods into a single class",
+      "Allowing one interface for all unrelated tasks",
+      "Providing multiple implementations for the same interface"
+    ]
+  },
+  {
+    "q": "Which access specifier in C++ ensures that a class member is only accessible within the class itself?",
+    "o": [
+      "private",
+      "protected",
+      "public",
+      "extern"
+    ]
+  },
+  {
+    "q": "What does the following C++ code demonstrate?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass BankAccount {\n  private:\n    double balance;\n  public:\n    BankAccount(double b) { balance = b; }\n    void deposit(double amount) { balance += amount; }\n    double getBalance() { return balance; }\n};\n\nint main() {\n  BankAccount account(1000);\n  account.deposit(500);\n  cout << account.getBalance();\n  return 0;\n}",
+    "o": [
+      "Encapsulation and data hiding",
+      "Interface segregation",
+      "Multiple inheritance",
+      "Polymorphism"
+    ]
+  },
+  {
+    "q": "Which of the following best explains data hiding in C++?",
+    "o": [
+      "Preventing external access to internal object state using private members",
+      "Overloading functions for multiple behaviors",
+      "Sharing all member data with friend classes",
+      "Using virtual functions to hide base class methods"
+    ]
+  },
+  {
+    "q": "What happens if you try to access a private data member of a class directly in C++?",
+    "o": [
+      "Compilation error",
+      "Runtime error",
+      "The program returns a default value",
+      "The access is redirected to a getter function"
+    ]
+  },
+  {
+    "q": "Which of the following C++ features provides abstraction?",
+    "o": [
+      "Abstract classes with pure virtual functions",
+      "Global variables",
+      "Friend functions",
+      "Structs with all public members"
+    ]
+  },
+  {
+    "q": "What does this code illustrate in C++?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Printable {\n  public:\n    virtual void print() = 0;\n};\n\nclass Report : public Printable {\n  public:\n    void print() override {\n      cout << \"Report Printed\";\n    }\n};\n\nint main() {\n  Report r;\n  r.print();\n  return 0;\n}",
+    "o": [
+      "Abstraction using pure virtual function",
+      "Inheritance only",
+      "Encapsulation using getters",
+      "Function overloading"
+    ]
+  },
+  {
+    "q": "Which statement reflects the Interface Segregation Principle?",
+    "o": [
+      "Clients should not be forced to depend on methods they do not use",
+      "All interfaces should include all possible methods for reusability",
+      "Classes should inherit from multiple interfaces to reduce code",
+      "Single interface is always better for system design"
+    ]
+  },
+  {
+    "q": "What is the benefit of using getter and setter methods instead of accessing data members directly?",
+    "o": [
+      "They enforce encapsulation and validation logic",
+      "They reduce code length",
+      "They improve inheritance",
+      "They are required by the compiler"
+    ]
+  },
+  {
+    "q": "Which of the following would violate interface segregation?",
+    "o": [
+      "A class implementing a large interface with unrelated methods",
+      "Splitting interfaces based on responsibilities",
+      "Using multiple inheritance with abstract classes",
+      "Using virtual functions for abstraction"
+    ]
+  },
+  {
+    "q": "What does the following code demonstrate?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Engine {\n  public:\n    void start() {\n      cout << \"Engine Started\";\n    }\n};\n\nclass Car {\n  private:\n    Engine engine;\n  public:\n    void startCar() {\n      engine.start();\n    }\n};\n\nint main() {\n  Car myCar;\n  myCar.startCar();\n  return 0;\n}",
+    "o": [
+      "Encapsulation by hiding internal implementation details",
+      "Interface segregation by composing interfaces",
+      "Polymorphism through virtual methods",
+      "Abstraction using pure virtual classes"
+    ]
+  },
+  {
+    "q": "Which of the following best describes encapsulation in C++?",
+    "o": [
+      "Wrapping data and functions into a single unit",
+      "Using multiple inheritance for modularity",
+      "Separating class into header and implementation files",
+      "Implementing multiple interfaces"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Box {\n  private:\n    int length;\n  public:\n    void setLength(int l) { length = l; }\n    int getLength() { return length; }\n};\n\nint main() {\n  Box b;\n  b.setLength(12);\n  cout << b.getLength();\n  return 0;\n}",
+    "o": [
+      "12",
+      "0",
+      "Compilation Error",
+      "Garbage Value"
+    ]
+  },
+  {
+    "q": "Which of these helps achieve data hiding in C++?",
+    "o": [
+      "Making data members private",
+      "Using global variables",
+      "Overloading operators",
+      "Friend functions"
+    ]
+  },
+  {
+    "q": "What does the following code demonstrate?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Shape {\n  public:\n    virtual void draw() = 0;\n};\n\nclass Circle : public Shape {\n  public:\n    void draw() override {\n      cout << \"Drawing Circle\";\n    }\n};\n\nint main() {\n  Circle c;\n  c.draw();\n  return 0;\n}",
+    "o": [
+      "Abstraction using abstract class",
+      "Encapsulation with private data",
+      "Data hiding using friend class",
+      "Multiple inheritance"
+    ]
+  },
+  {
+    "q": "Which statement violates the concept of interface segregation?",
+    "o": [
+      "A class forced to implement methods it doesn't need",
+      "Splitting large interfaces into smaller ones",
+      "Implementing only required interfaces",
+      "Using abstract base classes wisely"
+    ]
+  },
+  {
+    "q": "Why are getter and setter methods preferred in encapsulated classes?",
+    "o": [
+      "They control access and validation of private data",
+      "They make the class smaller",
+      "They replace constructors",
+      "They reduce object size"
+    ]
+  },
+  {
+    "q": "Which C++ feature provides a way to hide implementation details from the user?",
+    "o": [
+      "Abstraction",
+      "Templates",
+      "Constructor overloading",
+      "Destructor"
+    ]
+  },
+  {
+    "q": "What is the result of accessing a protected member outside a class hierarchy?",
+    "o": [
+      "Compiler error",
+      "Segmentation fault",
+      "Undefined behavior",
+      "It works like a public member"
+    ]
+  },
+  {
+    "q": "What does this code demonstrate in C++?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Logger {\n  private:\n    string filePath;\n  public:\n    void setPath(string path) {\n      filePath = path;\n    }\n};\n\nint main() {\n  Logger log;\n  // log.filePath = \"log.txt\"; // This line causes error\n  return 0;\n}",
+    "o": [
+      "Data hiding by restricting direct access",
+      "Abstraction through virtual function",
+      "Interface segregation with multiple classes",
+      "Encapsulation through inheritance"
+    ]
+  },
+  {
+    "q": "Which principle states that 'No client should be forced to depend on methods it does not use'?",
+    "o": [
+      "Interface Segregation Principle",
+      "Liskov Substitution Principle",
+      "Open-Closed Principle",
+      "Encapsulation Principle"
+    ]
+  },
+  {
+    "q": "How does encapsulation improve code maintainability?",
+    "o": [
+      "By isolating data and only exposing necessary operations",
+      "By forcing global access to class members",
+      "By removing the need for constructors",
+      "By allowing uncontrolled data manipulation"
+    ]
+  },
+  {
+    "q": "Which access modifier allows members to be accessed only within the same class?",
+    "o": [
+      "private",
+      "public",
+      "protected",
+      "friend"
+    ]
+  },
+  {
+    "q": "What does the following code demonstrate?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Employee {\n  private:\n    int salary;\n  public:\n    void setSalary(int s) { salary = s; }\n    int getSalary() { return salary; }\n};\n\nint main() {\n  Employee e;\n  e.setSalary(3000);\n  cout << e.getSalary();\n  return 0;\n}",
+    "o": [
+      "Encapsulation using private data and public methods",
+      "Abstraction using abstract class",
+      "Data hiding using friend class",
+      "Interface segregation using inheritance"
+    ]
+  },
+  {
+    "q": "Which feature hides implementation details while showing only essential information?",
+    "o": [
+      "Abstraction",
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism"
+    ]
+  },
+  {
+    "q": "Which is an example of interface segregation?",
+    "o": [
+      "Breaking large interfaces into smaller, specific ones",
+      "Using a single interface with all possible methods",
+      "Making all data members public",
+      "Forcing classes to inherit unused functionality"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Device {\n  protected:\n    void reset() { cout << \"Resetting...\"; }\n};\n\nclass Phone : public Device {\n  public:\n    void restart() { reset(); }\n};\n\nint main() {\n  Phone p;\n  p.restart();\n  return 0;\n}",
+    "o": [
+      "Resetting...",
+      "Compilation error",
+      "No output",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "What is a major benefit of data hiding?",
+    "o": [
+      "It protects internal object state from unintended interference",
+      "It allows access to global variables",
+      "It makes all data public",
+      "It forces inheritance"
+    ]
+  },
+  {
+    "q": "Which of the following breaks encapsulation?",
+    "o": [
+      "Making all class members public",
+      "Using private access modifiers",
+      "Providing controlled access via getters/setters",
+      "Restricting data access"
+    ]
+  },
+  {
+    "q": "Which keyword is used in C++ to achieve abstraction?",
+    "o": [
+      "virtual",
+      "private",
+      "friend",
+      "static"
+    ]
+  },
+  {
+    "q": "What principle does the following design violate?\nA class InterfacePrinter has methods: printPDF(), printImage(), faxDocument(). A class PhotoPrinter implements all three even though it only needs printImage().",
+    "o": [
+      "Interface Segregation Principle",
+      "Encapsulation Principle",
+      "Open-Closed Principle",
+      "Single Responsibility Principle"
+    ]
+  },
+  {
+    "q": "Which access specifier allows members to be accessed by derived classes but not outside the class?",
+    "o": [
+      "protected",
+      "private",
+      "public",
+      "default"
+    ]
+  },
+  {
+    "q": "What does this code snippet illustrate?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Student {\n  private:\n    string name;\n  public:\n    void setName(string n) { name = n; }\n    string getName() { return name; }\n};\n\nint main() {\n  Student s;\n  s.setName(\"Ravi\");\n  cout << s.getName();\n  return 0;\n}",
+    "o": [
+      "Encapsulation with private data and public accessors",
+      "Abstraction through pure virtual functions",
+      "Multiple inheritance",
+      "Interface segregation"
+    ]
+  },
+  {
+    "q": "What is the main idea behind data hiding in OOP?",
+    "o": [
+      "Restricting direct access to internal object data",
+      "Using multiple base classes",
+      "Exposing all class members for flexibility",
+      "Avoiding the use of constructors"
+    ]
+  },
+  {
+    "q": "Which design approach violates the Interface Segregation Principle?",
+    "o": [
+      "A class implementing many irrelevant methods from a fat interface",
+      "Splitting interfaces based on specific behaviors",
+      "Defining an interface for printing and scanning separately",
+      "Allowing clients to implement only the functionality they need"
+    ]
+  },
+  {
+    "q": "What does the following code demonstrate?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Report {\n  public:\n    virtual void generate() = 0;\n};\n\nclass PDFReport : public Report {\n  public:\n    void generate() override {\n      cout << \"PDF Report Generated\";\n    }\n};\n\nint main() {\n  PDFReport r;\n  r.generate();\n  return 0;\n}",
+    "o": [
+      "Abstraction using abstract class and pure virtual function",
+      "Encapsulation using private members",
+      "Data hiding through protected inheritance",
+      "Overloading using function templates"
+    ]
+  },
+  {
+    "q": "Which of the following supports abstraction in C++?",
+    "o": [
+      "Abstract classes with pure virtual functions",
+      "Public data members in a class",
+      "Friend functions accessing private data",
+      "Global variables"
+    ]
+  },
+  {
+    "q": "What is the role of private access modifier in C++?",
+    "o": [
+      "To restrict access to within the class only",
+      "To allow access only from derived classes",
+      "To allow access from anywhere in the program",
+      "To allow only friend classes to access members"
+    ]
+  },
+  {
+    "q": "Why is interface segregation considered a good design principle?",
+    "o": [
+      "It ensures that classes only implement what they actually use",
+      "It requires every class to implement a single universal interface",
+      "It promotes tight coupling between modules",
+      "It encourages the use of global variables"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Device {\n  private:\n    string serial = \"XYZ123\";\n};\n\nint main() {\n  Device d;\n  // cout << d.serial; // error\n  return 0;\n}",
+    "o": [
+      "Compilation error due to private member access",
+      "Runtime error",
+      "Output: XYZ123",
+      "Output: 0"
+    ]
+  },
+  {
+    "q": "What best represents abstraction in object-oriented programming?",
+    "o": [
+      "Showing only essential details and hiding complexity",
+      "Providing unrestricted access to data members",
+      "Combining unrelated classes into one",
+      "Allowing multiple instances of static methods"
+    ]
+  },
+  {
+    "q": "Which principle is being followed when a class hides its internal data from direct access?",
+    "o": [
+      "Data hiding",
+      "Polymorphism",
+      "Inheritance",
+      "Multiple inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of this C++ program?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Box {\nprivate:\n    int length;\npublic:\n    void setLength(int l) { length = l; }\n    int getLength() { return length; }\n};\n\nint main() {\n    Box b;\n    b.setLength(12);\n    cout << b.getLength();\n    return 0;\n}",
+    "o": [
+      "12",
+      "0",
+      "Compilation error",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Why are access specifiers like private and protected important in encapsulation?",
+    "o": [
+      "They control how class members are accessed",
+      "They define virtual inheritance",
+      "They determine return types",
+      "They specify function overloading"
+    ]
+  },
+  {
+    "q": "What is true about abstraction in C++?",
+    "o": [
+      "It allows showing only essential features while hiding implementation details",
+      "It forces the programmer to write inline code",
+      "It makes every class inherit from a base class",
+      "It disables the use of constructors"
+    ]
+  },
+  {
+    "q": "Which concept helps in designing cleaner interfaces by splitting large interfaces into smaller ones?",
+    "o": [
+      "Interface Segregation Principle",
+      "Single Responsibility Principle",
+      "Open/Closed Principle",
+      "Liskov Substitution Principle"
+    ]
+  },
+  {
+    "q": "What will be the result of trying to access a private data member directly?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Sample {\nprivate:\n    int x = 100;\n};\n\nint main() {\n    Sample s;\n    // cout << s.x;\n    return 0;\n}",
+    "o": [
+      "Compilation error due to private access",
+      "Runtime error",
+      "100",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of violating Interface Segregation Principle?",
+    "o": [
+      "Forcing a class to implement unnecessary methods from an interface",
+      "Creating separate interfaces for different behaviors",
+      "Using protected access for inherited members",
+      "Hiding implementation using abstract classes"
+    ]
+  },
+  {
+    "q": "How is encapsulation achieved in C++?",
+    "o": [
+      "By making data members private and providing public methods for access",
+      "By using global variables",
+      "By writing everything in the main function",
+      "By overloading all functions"
+    ]
+  },
+  {
+    "q": "What is the role of abstract classes in C++?",
+    "o": [
+      "They define a contract for subclasses using pure virtual functions",
+      "They allow instantiation of objects",
+      "They expose all data members to the user",
+      "They override destructors automatically"
+    ]
+  },
+  {
+    "q": "What principle is being applied when only relevant methods are forced on a class?",
+    "o": [
+      "Interface Segregation Principle",
+      "Data Hiding Principle",
+      "Constructor Overloading Principle",
+      "Friend Class Rule"
+    ]
+  },
+  {
+    "q": "Which access modifier in C++ ensures the highest level of data hiding?",
+    "o": [
+      "private",
+      "protected",
+      "public",
+      "default"
+    ]
+  },
+  {
+    "q": "What is the output of this C++ code snippet demonstrating encapsulation?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Account {\nprivate:\n    int balance = 500;\npublic:\n    int getBalance() { return balance; }\n};\n\nint main() {\n    Account acc;\n    cout << acc.getBalance();\n    return 0;\n}",
+    "o": [
+      "500",
+      "0",
+      "Compilation error",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which C++ feature hides internal details and shows only necessary information to the user?",
+    "o": [
+      "Abstraction",
+      "Polymorphism",
+      "Friend function",
+      "Dynamic binding"
+    ]
+  },
+  {
+    "q": "How does Interface Segregation Principle improve code design?",
+    "o": [
+      "By splitting large interfaces into smaller, specific ones",
+      "By using global variables instead of classes",
+      "By making all classes implement all methods",
+      "By combining multiple classes into one"
+    ]
+  },
+  {
+    "q": "What is the correct way to prevent access to class members from outside the class?",
+    "o": [
+      "Declare them private",
+      "Declare them static",
+      "Use friend functions",
+      "Declare them global"
+    ]
+  },
+  {
+    "q": "Which of the following demonstrates a violation of encapsulation?",
+    "o": [
+      "Accessing a class variable directly using object.variable_name",
+      "Using a public getter method to retrieve a value",
+      "Using a setter method to modify a private variable",
+      "Restricting access with a private keyword"
+    ]
+  },
+  {
+    "q": "What will happen if a class implements an interface but leaves a method undefined?",
+    "c": "class Printable {\npublic:\n    virtual void print() = 0;\n};\n\nclass Report : public Printable {\n    // Missing definition\n};",
+    "o": [
+      "The class becomes abstract and cannot be instantiated",
+      "The method is automatically defined as empty",
+      "It compiles and runs normally",
+      "All methods are ignored"
+    ]
+  },
+  {
+    "q": "Why is data hiding considered a benefit of encapsulation?",
+    "o": [
+      "It prevents accidental modification of internal data",
+      "It improves loop performance",
+      "It avoids recursion",
+      "It enables operator overloading"
+    ]
+  },
+  {
+    "q": "Which concept ensures that a user interacts only with relevant methods?",
+    "o": [
+      "Interface Segregation Principle",
+      "Data Binding",
+      "Constructor Overloading",
+      "Public Access"
+    ]
+  },
+  {
+    "q": "What is the output of this code involving abstraction?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Shape {\npublic:\n    virtual void draw() = 0;\n};\n\nclass Circle : public Shape {\npublic:\n    void draw() override { cout << \"Drawing Circle\"; }\n};\n\nint main() {\n    Circle c;\n    c.draw();\n    return 0;\n}",
+    "o": [
+      "Drawing Circle",
+      "Drawing Shape",
+      "Compilation Error",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which feature of OOP ensures that object details are not exposed directly?",
+    "o": [
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism",
+      "Composition"
+    ]
+  },
+  {
+    "q": "What is the output of this C++ code demonstrating abstraction?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Animal {\npublic:\n    virtual void sound() = 0;\n};\n\nclass Dog : public Animal {\npublic:\n    void sound() override { cout << \"Bark\"; }\n};\n\nint main() {\n    Dog d;\n    d.sound();\n    return 0;\n}",
+    "o": [
+      "Bark",
+      "Dog",
+      "Animal",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "In C++, what does declaring class members as 'private' help achieve?",
+    "o": [
+      "Data hiding",
+      "Inheritance",
+      "Memory optimization",
+      "Function overloading"
+    ]
+  },
+  {
+    "q": "Which of the following best illustrates the Interface Segregation Principle?",
+    "o": [
+      "Designing multiple small interfaces for specific behaviors",
+      "Creating a base class with all possible methods",
+      "Using friend classes to access data",
+      "Combining multiple classes into one"
+    ]
+  },
+  {
+    "q": "What will be the output of this code snippet related to data hiding?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass User {\nprivate:\n    string password = \"abc123\";\npublic:\n    void showPassword() { cout << password; }\n};\n\nint main() {\n    User u;\n    u.showPassword();\n    return 0;\n}",
+    "o": [
+      "abc123",
+      "password",
+      "Compilation error",
+      "null"
+    ]
+  },
+  {
+    "q": "Why is encapsulation important in C++ class design?",
+    "o": [
+      "To restrict access and protect data from unintended modification",
+      "To allow global access to all variables",
+      "To write less code",
+      "To increase inheritance chains"
+    ]
+  },
+  {
+    "q": "Which keyword is used in C++ to define an abstract method?",
+    "o": [
+      "virtual ... = 0;",
+      "pure",
+      "abstract",
+      "interface"
+    ]
+  },
+  {
+    "q": "How can a C++ class enforce abstraction?",
+    "o": [
+      "By using at least one pure virtual function",
+      "By making all members public",
+      "By inheriting only from one class",
+      "By avoiding constructors"
+    ]
+  },
+  {
+    "q": "What does a class violate if it implements an interface with methods it doesn't use?",
+    "o": [
+      "Interface Segregation Principle",
+      "Abstraction Rule",
+      "Constructor Overloading",
+      "Friend Function Access"
+    ]
+  },
+  {
+    "q": "Which of the following demonstrates proper encapsulation in C++?",
+    "o": [
+      "Private members with public getter/setter methods",
+      "Public access to all member variables",
+      "Global access to class data",
+      "All methods declared static"
+    ]
+  },
+  {
+    "q": "Which access modifier in C++ allows access only within the same class?",
+    "o": [
+      "private",
+      "protected",
+      "public",
+      "external"
+    ]
+  },
+  {
+    "q": "What is the purpose of making class variables 'private' in C++?",
+    "o": [
+      "To hide implementation details from outside code",
+      "To reduce code size",
+      "To make variables static",
+      "To enable inheritance"
+    ]
+  },
+  {
+    "q": "Which of the following demonstrates abstraction in C++?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Vehicle {\npublic:\n    virtual void move() = 0;\n};\n\nclass Car : public Vehicle {\npublic:\n    void move() override { cout << \"Car is moving\"; }\n};\n\nint main() {\n    Car c;\n    c.move();\n    return 0;\n}",
+    "o": [
+      "Car is moving",
+      "Vehicle",
+      "move",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What is violated if a class is forced to implement methods it doesn't use?",
+    "o": [
+      "Interface Segregation Principle",
+      "Encapsulation",
+      "Abstraction Principle",
+      "Polymorphism Rule"
+    ]
+  },
+  {
+    "q": "How is encapsulation implemented in C++?",
+    "o": [
+      "By using classes with private data and public methods",
+      "By using global variables",
+      "By defining functions outside the class",
+      "By writing inline functions"
+    ]
+  },
+  {
+    "q": "What is the output of the following encapsulated class?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Student {\nprivate:\n    int age = 20;\npublic:\n    int getAge() { return age; }\n};\n\nint main() {\n    Student s;\n    cout << s.getAge();\n    return 0;\n}",
+    "o": [
+      "20",
+      "0",
+      "Compilation Error",
+      "Runtime Error"
+    ]
+  },
+  {
+    "q": "Which C++ class structure best adheres to the Interface Segregation Principle?",
+    "o": [
+      "Multiple small abstract classes with specific methods",
+      "One large interface with many unrelated methods",
+      "A single class with all public members",
+      "Inheritance with all method overrides"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a benefit of encapsulation?",
+    "o": [
+      "Direct manipulation of private members from outside",
+      "Improved code maintainability",
+      "Controlled access to data",
+      "Increased security"
+    ]
+  },
+  {
+    "q": "What is the keyword used in C++ to define a method that must be overridden by a subclass?",
+    "o": [
+      "virtual",
+      "static",
+      "abstract",
+      "final"
+    ]
+  },
+  {
+    "q": "Which of the following shows good data hiding practice?",
+    "c": "class BankAccount {\nprivate:\n    double balance;\npublic:\n    void deposit(double amount) { balance += amount; }\n};",
+    "o": [
+      "Using private balance and public methods to modify it",
+      "Allowing balance to be accessed directly",
+      "Declaring balance as public",
+      "Making deposit a friend function"
+    ]
+  },
+  {
+    "q": "Why is 'protected' access modifier useful in encapsulation?",
+    "o": [
+      "It allows access in the same class and derived classes",
+      "It hides data from all classes",
+      "It exposes members publicly",
+      "It restricts access to friend classes only"
+    ]
+  },
+  {
+    "q": "What will the following C++ program output?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Account {\nprivate:\n    double balance = 1500.75;\npublic:\n    double getBalance() { return balance; }\n};\n\nint main() {\n    Account acc;\n    cout << acc.getBalance();\n    return 0;\n}",
+    "o": [
+      "1500.75",
+      "balance",
+      "Compilation Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Which principle is directly supported by having private fields and public methods?",
+    "o": [
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism",
+      "Code Reuse"
+    ]
+  },
+  {
+    "q": "Which of the following is true about abstract classes in C++?",
+    "o": [
+      "They can have pure virtual functions and cannot be instantiated",
+      "They must have only static members",
+      "They cannot be inherited",
+      "They must be defined in header files"
+    ]
+  },
+  {
+    "q": "What concept does this code demonstrate?",
+    "c": "class Printable {\npublic:\n    virtual void print() = 0;\n};\n\nclass Document : public Printable {\npublic:\n    void print() override {\n        // implementation\n    }\n};",
+    "o": [
+      "Abstraction using interfaces",
+      "Encapsulation of print logic",
+      "Data hiding using virtual",
+      "Inheritance of private members"
+    ]
+  },
+  {
+    "q": "What is the benefit of breaking a large interface into smaller ones?",
+    "o": [
+      "It supports the Interface Segregation Principle",
+      "It reduces compilation errors",
+      "It avoids the need for abstraction",
+      "It enables polymorphism"
+    ]
+  },
+  {
+    "q": "Which of the following best implements abstraction in C++?",
+    "o": [
+      "Using pure virtual functions in abstract base classes",
+      "Using inline functions only",
+      "Using multiple inheritance",
+      "Using public global variables"
+    ]
+  },
+  {
+    "q": "Which feature of OOP hides unnecessary internal details from users?",
+    "o": [
+      "Abstraction",
+      "Inheritance",
+      "Templates",
+      "Friend classes"
+    ]
+  },
+  {
+    "q": "In which situation does interface segregation help most?",
+    "o": [
+      "When classes only need a subset of operations from an interface",
+      "When interfaces are reused across unrelated classes",
+      "When classes share static members",
+      "When public data is accessed externally"
+    ]
+  },
+  {
+    "q": "Which of the following is a disadvantage of not using data hiding?",
+    "o": [
+      "Class users can modify internal states in unexpected ways",
+      "Functions cannot be overloaded",
+      "Multiple inheritance becomes impossible",
+      "Virtual functions do not work"
+    ]
+  },
+  {
+    "q": "Which of the following best explains data hiding in C++?",
+    "o": [
+      "Restricting direct access to class members using private access specifier",
+      "Making all variables static",
+      "Declaring global variables",
+      "Using pointers to access members"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Box {\nprivate:\n    int width = 5;\npublic:\n    int getWidth() { return width; }\n};\n\nint main() {\n    Box b;\n    cout << b.getWidth();\n    return 0;\n}",
+    "o": [
+      "5",
+      "0",
+      "Error",
+      "undefined"
+    ]
+  },
+  {
+    "q": "Which feature allows one class to define a contract without providing complete implementation?",
+    "o": [
+      "Abstraction",
+      "Encapsulation",
+      "Polymorphism",
+      "Aggregation"
+    ]
+  },
+  {
+    "q": "What keyword is used to make a function pure virtual in C++?",
+    "o": [
+      "= 0",
+      "virtual",
+      "override",
+      "pure"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of interface segregation?",
+    "o": [
+      "Splitting a large interface into multiple smaller, specific interfaces",
+      "Using a base class with many virtual functions",
+      "Defining a class with many unrelated methods",
+      "Combining multiple classes into one"
+    ]
+  },
+  {
+    "q": "Which access modifier allows access to derived classes but not outside the class?",
+    "o": [
+      "protected",
+      "private",
+      "public",
+      "sealed"
+    ]
+  },
+  {
+    "q": "What does the following code demonstrate?",
+    "c": "class Engine {\npublic:\n    virtual void start() = 0;\n};\n\nclass ElectricEngine : public Engine {\npublic:\n    void start() override {\n        // Electric start\n    }\n};",
+    "o": [
+      "Abstraction using a pure virtual function",
+      "Encapsulation using inheritance",
+      "Polymorphism through static binding",
+      "Data hiding of the start function"
+    ]
+  },
+  {
+    "q": "What principle is followed if a class is forced to implement only relevant methods?",
+    "o": [
+      "Interface Segregation Principle",
+      "Open/Closed Principle",
+      "Dependency Inversion Principle",
+      "Single Responsibility Principle"
+    ]
+  },
+  {
+    "q": "Which is a good reason to keep class data members private?",
+    "o": [
+      "To prevent accidental modification of the internal state",
+      "To make them globally accessible",
+      "To reduce compilation time",
+      "To allow subclass overriding"
+    ]
+  },
+  {
+    "q": "Which of the following is true about encapsulation?",
+    "o": [
+      "It helps bind data and methods that operate on the data together",
+      "It ensures a class has only abstract methods",
+      "It enables multiple inheritance",
+      "It hides interface implementation from the user"
+    ]
+  },
+  {
+    "q": "Which access specifier ensures that class members are only accessible from within the same class?",
+    "o": [
+      "private",
+      "public",
+      "protected",
+      "internal"
+    ]
+  },
+  {
+    "q": "How does abstraction help in software design?",
+    "o": [
+      "By exposing only essential features and hiding the complexity",
+      "By allowing direct access to member variables",
+      "By making all methods inline",
+      "By preventing inheritance"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass User {\nprivate:\n    string password = \"secure123\";\npublic:\n    void showPassword() { cout << password; }\n};\n\nint main() {\n    User u;\n    u.showPassword();\n    return 0;\n}",
+    "o": [
+      "secure123",
+      "Compilation error",
+      "password",
+      "undefined"
+    ]
+  },
+  {
+    "q": "Which of the following best represents the Interface Segregation Principle?",
+    "o": [
+      "Clients should not be forced to depend on interfaces they do not use",
+      "Classes should have only one responsibility",
+      "Software entities should be open for extension but closed for modification",
+      "Derived classes must be substitutable for base classes"
+    ]
+  },
+  {
+    "q": "What is a pure virtual function used for in C++?",
+    "o": [
+      "To create an abstract class that cannot be instantiated",
+      "To allow multiple definitions of the function",
+      "To define default behavior for derived classes",
+      "To restrict access to class members"
+    ]
+  },
+  {
+    "q": "What does the following code illustrate?",
+    "c": "class Vehicle {\nprotected:\n    int speed;\n};\n\nclass Car : public Vehicle {\npublic:\n    void setSpeed(int s) { speed = s; }\n};",
+    "o": [
+      "Encapsulation using protected access modifier",
+      "Abstraction using base class",
+      "Interface segregation by subclassing",
+      "Data hiding through inheritance"
+    ]
+  },
+  {
+    "q": "Why is data hiding important in object-oriented programming?",
+    "o": [
+      "To prevent external code from modifying internal object state directly",
+      "To make member variables publicly accessible",
+      "To improve the visibility of all functions",
+      "To allow easier subclassing"
+    ]
+  },
+  {
+    "q": "Which of the following is **not** a benefit of encapsulation?",
+    "o": [
+      "Increased memory consumption",
+      "Better data integrity",
+      "Improved modularity",
+      "Control over data access"
+    ]
+  },
+  {
+    "q": "Which design decision violates interface segregation?",
+    "o": [
+      "Having a single interface with unrelated methods like `print()`, `save()`, and `fly()`",
+      "Splitting one large interface into smaller ones",
+      "Using virtual functions to allow override",
+      "Hiding implementation details behind interfaces"
+    ]
+  },
+  {
+    "q": "What will happen if you try to instantiate an abstract class in C++?",
+    "o": [
+      "Compilation error",
+      "Runtime exception",
+      "It will create an object with null values",
+      "The class will auto-implement the functions"
+    ]
+  },
+  {
+    "q": "Which of the following C++ access specifiers prevents access from outside the class entirely?",
+    "o": [
+      "private",
+      "public",
+      "protected",
+      "internal"
+    ]
+  },
+  {
+    "q": "What concept does this code illustrate?",
+    "c": "class Account {\nprivate:\n    double balance;\npublic:\n    void deposit(double amount) { balance += amount; }\n};",
+    "o": [
+      "Encapsulation using private data members and public methods",
+      "Inheritance from another class",
+      "Polymorphism with method overloading",
+      "Abstraction through interface"
+    ]
+  },
+  {
+    "q": "What principle is violated if an interface forces a class to implement methods it does not need?",
+    "o": [
+      "Interface Segregation Principle",
+      "Single Responsibility Principle",
+      "Open/Closed Principle",
+      "Liskov Substitution Principle"
+    ]
+  },
+  {
+    "q": "Which of these allows you to create a blueprint in C++ without giving full implementation?",
+    "o": [
+      "Abstract class",
+      "Static class",
+      "Friend function",
+      "Constructor"
+    ]
+  },
+  {
+    "q": "What is the role of a getter method in the context of data hiding?",
+    "o": [
+      "To provide controlled read access to private members",
+      "To make private members public",
+      "To declare a variable",
+      "To override constructors"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Device {\nprivate:\n    string model = \"X100\";\npublic:\n    string getModel() { return model; }\n};\n\nint main() {\n    Device d;\n    cout << d.getModel();\n    return 0;\n}",
+    "o": [
+      "X100",
+      "model",
+      "Compilation error",
+      "Null"
+    ]
+  },
+  {
+    "q": "Which of the following encourages breaking down large interfaces into smaller, more specific ones?",
+    "o": [
+      "Interface Segregation Principle",
+      "Encapsulation Principle",
+      "Dependency Injection",
+      "Constructor Overloading"
+    ]
+  },
+  {
+    "q": "Which feature of C++ helps in hiding internal implementation from the user?",
+    "o": [
+      "Abstraction",
+      "Inheritance",
+      "Overloading",
+      "Constructor chaining"
+    ]
+  },
+  {
+    "q": "In C++, which keyword is used to declare a class that cannot be instantiated directly?",
+    "o": [
+      "virtual with = 0",
+      "final",
+      "static",
+      "sealed"
+    ]
+  },
+  {
+    "q": "What access modifier should be used to allow access within class and derived classes only?",
+    "o": [
+      "protected",
+      "private",
+      "public",
+      "sealed"
+    ]
+  },
+  {
+    "q": "Which access specifier ensures that class members are only accessible within the same class?",
+    "o": [
+      "private",
+      "public",
+      "protected",
+      "default"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Person {\n  private:\n    string name;\n  public:\n    void setName(string n) {\n      name = n;\n    }\n    void display() {\n      cout << \"Name: \" << name << endl;\n    }\n};\n\nint main() {\n  Person p;\n  p.setName(\"Alice\");\n  p.display();\n  return 0;\n}",
+    "o": [
+      "Name: Alice",
+      "Name:",
+      "Compilation Error",
+      "Runtime Error"
+    ]
+  },
+  {
+    "q": "Which of the following best defines encapsulation in C++?",
+    "o": [
+      "Binding data and functions that operate on the data into a single unit",
+      "Hiding the implementation details of a class",
+      "Breaking code into smaller modules",
+      "Exposing all data members as public"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass A {\nprivate:\n    int x = 100;\npublic:\n    void show() {\n        cout << x << endl;\n    }\n};\n\nint main() {\n    A obj;\n    obj.show();\n    return 0;\n}",
+    "o": [
+      "100",
+      "0",
+      "Garbage value",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which concept is demonstrated when implementation details of a class are hidden from the user?",
+    "o": [
+      "Abstraction",
+      "Encapsulation",
+      "Polymorphism",
+      "Inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Car {\n  protected:\n    string model = \"Tesla\";\n  public:\n    void printModel() {\n      cout << model << endl;\n    }\n};\n\nint main() {\n  Car c;\n  c.printModel();\n  return 0;\n}",
+    "o": [
+      "Tesla",
+      "model",
+      "Compilation error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following statements about data hiding in C++ is true?",
+    "o": [
+      "It helps to protect object integrity by preventing unintended interference.",
+      "It is not supported by C++.",
+      "It means exposing all variables using public.",
+      "It is used to remove classes from memory."
+    ]
+  },
+  {
+    "q": "What does the interface segregation principle advocate?",
+    "o": [
+      "Clients should not be forced to depend on interfaces they do not use.",
+      "Every class should have only one responsibility.",
+      "High-level modules should not depend on low-level modules.",
+      "Objects should be replaceable with instances of their subtypes."
+    ]
+  },
+  {
+    "q": "Which keyword in C++ is used to restrict direct access to class members from outside the class?",
+    "o": [
+      "private",
+      "public",
+      "friend",
+      "inline"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Account {\n    private:\n        int balance = 5000;\n    public:\n        void showBalance() {\n            cout << \"Balance: \" << balance << endl;\n        }\n};\n\nint main() {\n    Account acc;\n    acc.showBalance();\n    return 0;\n}",
+    "o": [
+      "Balance: 5000",
+      "5000",
+      "Balance:",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes abstraction in C++?",
+    "o": [
+      "Hiding implementation details and showing only the necessary features",
+      "Bundling data and functions together",
+      "Providing multiple forms of a function",
+      "Deriving classes from a base class"
+    ]
+  },
+  {
+    "q": "What will be the result of trying to access a private data member of a class directly in C++?",
+    "o": [
+      "Compilation error",
+      "Runtime error",
+      "Value will be zero",
+      "Program will crash"
+    ]
+  },
+  {
+    "q": "How does encapsulation help in C++ programming?",
+    "o": [
+      "By protecting data from unauthorized access",
+      "By writing code in a single function",
+      "By making all members public",
+      "By preventing function overloading"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Box {\n    int length;\npublic:\n    void setLength(int l) {\n        length = l;\n    }\n    int getLength() {\n        return length;\n    }\n};\n\nint main() {\n    Box b;\n    b.setLength(12);\n    cout << b.getLength();\n    return 0;\n}",
+    "o": [
+      "12",
+      "0",
+      "length",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Why is data hiding important in object-oriented programming?",
+    "o": [
+      "It prevents misuse and unauthorized access of internal object details.",
+      "It eliminates the need for constructors.",
+      "It ensures all data is accessible by derived classes.",
+      "It allows direct access to member variables."
+    ]
+  },
+  {
+    "q": "Which of the following is true about access specifiers in C++?",
+    "o": [
+      "They define the visibility of class members.",
+      "They are used to define function overloading.",
+      "They can only be used in structs.",
+      "They are not applicable to member functions."
+    ]
+  },
+  {
+    "q": "Which principle states that an interface should have only the methods that are relevant to the client using it?",
+    "o": [
+      "Interface Segregation Principle",
+      "Liskov Substitution Principle",
+      "Single Responsibility Principle",
+      "Open-Closed Principle"
+    ]
+  },
+  {
+    "q": "Which access specifier allows members to be accessed only by the class and its derived classes?",
+    "o": [
+      "protected",
+      "private",
+      "public",
+      "internal"
+    ]
+  },
+  {
+    "q": "Which of the following is a key benefit of encapsulation?",
+    "o": [
+      "Improved maintainability of code",
+      "Faster execution time",
+      "Increased memory usage",
+      "Larger binary file size"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Employee {\nprivate:\n    string name;\npublic:\n    void setName(string n) {\n        name = n;\n    }\n    void getName() {\n        cout << name << endl;\n    }\n};\n\nint main() {\n    Employee e;\n    e.setName(\"John\");\n    e.getName();\n    return 0;\n}",
+    "o": [
+      "John",
+      "name",
+      "Compilation error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following is a violation of the Interface Segregation Principle?",
+    "o": [
+      "A class forced to implement methods it doesn't use",
+      "A class using multiple small interfaces",
+      "An interface segregated based on functionality",
+      "Using abstract classes with minimal methods"
+    ]
+  },
+  {
+    "q": "What does abstraction allow a programmer to do?",
+    "o": [
+      "Focus on essential features while hiding implementation details",
+      "Access private members of a class directly",
+      "Implement multiple inheritance",
+      "Automatically generate getter and setter methods"
+    ]
+  },
+  {
+    "q": "Which of the following best represents a well-encapsulated class?",
+    "o": [
+      "All data members are private with public getter/setter methods",
+      "All data members are public for easy access",
+      "Methods and data are globally declared",
+      "Only member functions are declared inside the class"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Student {\nprivate:\n    int id = 101;\npublic:\n    void displayId() {\n        cout << id << endl;\n    }\n};\n\nint main() {\n    Student s;\n    s.displayId();\n    return 0;\n}",
+    "o": [
+      "101",
+      "0",
+      "Compilation error",
+      "id"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a feature of encapsulation?",
+    "o": [
+      "Direct access to data members",
+      "Controlled access using setters/getters",
+      "Hiding internal data of a class",
+      "Improved code modularity"
+    ]
+  },
+  {
+    "q": "Which of the following demonstrates abstraction in C++?",
+    "o": [
+      "Using abstract classes to define an interface",
+      "Making all class members public",
+      "Inheriting multiple base classes",
+      "Using overloaded constructors"
+    ]
+  },
+  {
+    "q": "In C++, which access modifier restricts access to class members from outside the class and its subclasses?",
+    "o": [
+      "private",
+      "protected",
+      "public",
+      "internal"
+    ]
+  },
+  {
+    "q": "Which concept allows multiple small, specific interfaces rather than a large, general-purpose one?",
+    "o": [
+      "Interface Segregation",
+      "Encapsulation",
+      "Abstraction",
+      "Polymorphism"
+    ]
+  },
+  {
+    "q": "What is the primary reason to make class members private in C++?",
+    "o": [
+      "To prevent unauthorized access and ensure data integrity",
+      "To improve program speed",
+      "To allow inheritance",
+      "To make all members accessible globally"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass BankAccount {\nprivate:\n    int balance = 10000;\npublic:\n    int getBalance() {\n        return balance;\n    }\n};\n\nint main() {\n    BankAccount acc;\n    cout << acc.getBalance();\n    return 0;\n}",
+    "o": [
+      "10000",
+      "0",
+      "balance",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "How does abstraction improve software design?",
+    "o": [
+      "By reducing complexity and isolating impact of changes",
+      "By exposing all implementation details",
+      "By allowing global access to all members",
+      "By forcing use of inline functions only"
+    ]
+  },
+  {
+    "q": "Which of the following is an advantage of data hiding?",
+    "o": [
+      "It prevents external components from modifying internal object state directly",
+      "It allows all classes to access data freely",
+      "It forces developers to use friend functions always",
+      "It increases the size of the compiled program"
+    ]
+  },
+  {
+    "q": "What will happen if you try to access a protected data member from outside the class in C++?",
+    "o": [
+      "It will result in a compilation error",
+      "The value will be zero by default",
+      "It will print garbage value",
+      "It will execute successfully"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Demo {\nprotected:\n    int val = 42;\npublic:\n    void show() {\n        cout << val << endl;\n    }\n};\n\nint main() {\n    Demo d;\n    d.show();\n    return 0;\n}",
+    "o": [
+      "42",
+      "val",
+      "0",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Why is the Interface Segregation Principle important?",
+    "o": [
+      "It avoids forcing clients to depend on methods they do not use",
+      "It combines multiple responsibilities into one class",
+      "It helps make all interfaces large and comprehensive",
+      "It allows derived classes to ignore base class rules"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a correct practice in encapsulation?",
+    "o": [
+      "Making all class data members public",
+      "Using private data members",
+      "Providing getter and setter functions",
+      "Hiding internal implementation details"
+    ]
+  },
+  {
+    "q": "Which statement is true regarding abstraction in C++?",
+    "o": [
+      "Abstract classes cannot be instantiated directly",
+      "Abstraction exposes all data members to users",
+      "Abstraction requires only static methods",
+      "Abstraction eliminates the need for constructors"
+    ]
+  },
+  {
+    "q": "What is a common result of breaking the interface segregation principle?",
+    "o": [
+      "Classes become unnecessarily dependent on unused code",
+      "Code executes more efficiently",
+      "Compilation time decreases",
+      "Encapsulation becomes automatic"
+    ]
+  },
+  {
+    "q": "Which feature in C++ restricts direct access to class variables and promotes controlled interaction?",
+    "o": [
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism",
+      "Virtualization"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Book {\nprivate:\n    string title = \"C++ Guide\";\npublic:\n    void printTitle() {\n        cout << title << endl;\n    }\n};\n\nint main() {\n    Book b;\n    b.printTitle();\n    return 0;\n}",
+    "o": [
+      "C++ Guide",
+      "title",
+      "Compilation error",
+      "Runtime error"
+    ]
+  },
+  {
+    "q": "Which of the following is most closely associated with implementation hiding?",
+    "o": [
+      "Abstraction",
+      "Overloading",
+      "Multiple inheritance",
+      "Virtual destructors"
+    ]
+  },
+  {
+    "q": "How can abstraction be achieved in C++?",
+    "o": [
+      "Using abstract classes and pure virtual functions",
+      "Using friend functions",
+      "By making all methods inline",
+      "Using templates only"
+    ]
+  },
+  {
+    "q": "Which of these scenarios violates encapsulation?",
+    "o": [
+      "Accessing data members directly from outside the class",
+      "Using setter methods to update data",
+      "Using getter methods to retrieve values",
+      "Using constructors to initialize private members"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass User {\n    string username = \"guest\";\npublic:\n    void showUsername() {\n        cout << username << endl;\n    }\n};\n\nint main() {\n    User u;\n    u.showUsername();\n    return 0;\n}",
+    "o": [
+      "guest",
+      "username",
+      "Compilation error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "What does interface segregation encourage developers to do?",
+    "o": [
+      "Create smaller, more specific interfaces",
+      "Bundle all methods into one large interface",
+      "Avoid the use of inheritance",
+      "Use only public members"
+    ]
+  },
+  {
+    "q": "Which access specifier offers the **least** access control in C++?",
+    "o": [
+      "public",
+      "private",
+      "protected",
+      "internal"
+    ]
+  },
+  {
+    "q": "Why should a class expose only necessary functions to the outside world?",
+    "o": [
+      "To follow the principle of abstraction",
+      "To allow data to be freely modified",
+      "To implement function overloading",
+      "To make all data members accessible"
+    ]
+  },
+  {
+    "q": "In the context of encapsulation, what is the main purpose of setter functions?",
+    "o": [
+      "To provide controlled modification of private data",
+      "To display object status",
+      "To overload constructors",
+      "To define new classes"
+    ]
+  },
+  {
+    "q": "Which term describes the bundling of data and functions that operate on that data within one unit?",
+    "o": [
+      "Encapsulation",
+      "Abstraction",
+      "Inheritance",
+      "Overloading"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Vehicle {\nprivate:\n    int speed = 60;\npublic:\n    int getSpeed() {\n        return speed;\n    }\n};\n\nint main() {\n    Vehicle v;\n    cout << v.getSpeed();\n    return 0;\n}",
+    "o": [
+      "60",
+      "0",
+      "speed",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Why should large interfaces be avoided according to the Interface Segregation Principle?",
+    "o": [
+      "They force classes to implement irrelevant methods",
+      "They improve performance too much",
+      "They cannot be inherited",
+      "They are deprecated in C++"
+    ]
+  },
+  {
+    "q": "Which of the following best reflects **abstraction** in C++?",
+    "o": [
+      "Providing essential details while hiding background implementation",
+      "Combining multiple classes into one",
+      "Using multiple constructors",
+      "Making all data members public"
+    ]
+  },
+  {
+    "q": "What is the benefit of marking class data members as `private`?",
+    "o": [
+      "It prevents direct modification from outside the class",
+      "It increases execution speed",
+      "It enables multiple inheritance",
+      "It reduces code size"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Hidden {\nprivate:\n    int secret = 7;\npublic:\n    int reveal() {\n        return secret;\n    }\n};\n\nint main() {\n    Hidden h;\n    cout << h.reveal();\n    return 0;\n}",
+    "o": [
+      "7",
+      "secret",
+      "Compilation error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which keyword in C++ allows a derived class to access base class members but not external classes?",
+    "o": [
+      "protected",
+      "private",
+      "public",
+      "internal"
+    ]
+  },
+  {
+    "q": "Which concept supports information hiding and limits external access to internal workings of a class?",
+    "o": [
+      "Encapsulation",
+      "Polymorphism",
+      "Operator overloading",
+      "Friend functions"
+    ]
+  },
+  {
+    "q": "What kind of methods should an interface contain under the Interface Segregation Principle?",
+    "o": [
+      "Only those that are relevant to the implementing class",
+      "As many general-purpose methods as possible",
+      "Only virtual destructors",
+      "Static methods only"
+    ]
+  },
+  {
+    "q": "What does a class achieve by keeping internal variables private and exposing controlled access?",
+    "o": [
+      "Data hiding and controlled behavior",
+      "Free access to internal state",
+      "Faster program execution",
+      "Compile-time polymorphism"
+    ]
+  },
+  {
+    "q": "Encapsulation in C++ is best achieved by:",
+    "o": [
+      "Making data members private and providing public methods for access",
+      "Making all members public for simplicity",
+      "Using only friend functions",
+      "Avoiding the use of constructors"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Product {\nprivate:\n    double price = 19.99;\npublic:\n    void showPrice() {\n        cout << price << endl;\n    }\n};\n\nint main() {\n    Product p;\n    p.showPrice();\n    return 0;\n}",
+    "o": [
+      "19.99",
+      "price",
+      "Compilation error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following illustrates **data hiding**?",
+    "o": [
+      "Restricting access to internal object details using private members",
+      "Inheriting all public and protected members",
+      "Using global variables to access data",
+      "Making all class members public"
+    ]
+  },
+  {
+    "q": "According to the Interface Segregation Principle, an interface should:",
+    "o": [
+      "Have only the methods that are relevant to the client",
+      "Contain all features even if unused",
+      "Support all inheritance types",
+      "Be implemented by only one class"
+    ]
+  },
+  {
+    "q": "What is the result of declaring all members of a class `public`?",
+    "o": [
+      "Loss of encapsulation and potential data misuse",
+      "Increased security",
+      "Abstraction is automatically achieved",
+      "Better object-oriented structure"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Counter {\nprivate:\n    int count = 5;\npublic:\n    void increment() {\n        count++;\n        cout << count << endl;\n    }\n};\n\nint main() {\n    Counter c;\n    c.increment();\n    return 0;\n}",
+    "o": [
+      "6",
+      "5",
+      "Compilation error",
+      "count"
+    ]
+  },
+  {
+    "q": "Which access modifier in C++ is used to implement strict **data hiding**?",
+    "o": [
+      "private",
+      "public",
+      "protected",
+      "virtual"
+    ]
+  },
+  {
+    "q": "Why is it beneficial to use abstraction in software design?",
+    "o": [
+      "It reduces complexity by hiding unnecessary implementation details",
+      "It allows direct access to object attributes",
+      "It disables inheritance",
+      "It exposes all internal workings"
+    ]
+  },
+  {
+    "q": "A violation of encapsulation can result in:",
+    "o": [
+      "Uncontrolled data access and reduced modularity",
+      "Faster performance",
+      "Stronger type safety",
+      "Improved compile time"
+    ]
+  },
+  {
+    "q": "Which of the following best demonstrates interface segregation in practice?",
+    "o": [
+      "Dividing a large interface into smaller role-specific interfaces",
+      "Combining multiple unrelated methods into one interface",
+      "Making all class members public",
+      "Inheriting all methods even if unused"
+    ]
+  },
+  {
+    "q": "Which of the following is the key difference between abstraction and encapsulation?",
+    "o": [
+      "Abstraction hides implementation details, while encapsulation restricts access to data",
+      "Encapsulation hides implementation and abstraction exposes all data",
+      "Abstraction is only for private members",
+      "Encapsulation is only used with virtual functions"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Employee {\nprivate:\n    string name = \"John\";\npublic:\n    void displayName() {\n        cout << name << endl;\n    }\n};\n\nint main() {\n    Employee e;\n    e.displayName();\n    return 0;\n}",
+    "o": [
+      "John",
+      "name",
+      "Compilation error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which best defines interface segregation in OOP design?",
+    "o": [
+      "Clients should not be forced to depend on interfaces they do not use",
+      "Interfaces must include all functions of related classes",
+      "All classes must implement every method of the base interface",
+      "Large interfaces are more efficient and easier to test"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of abstraction in C++?",
+    "o": [
+      "Using a pure virtual function in an abstract class",
+      "Accessing private data directly",
+      "Making all data public",
+      "Declaring member functions as friend"
+    ]
+  },
+  {
+    "q": "What is the purpose of using getter and setter methods in a class?",
+    "o": [
+      "To control access to private members",
+      "To allow direct external modification",
+      "To make members public implicitly",
+      "To increase memory usage"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Student {\nprivate:\n    int age = 18;\npublic:\n    int getAge() {\n        return age;\n    }\n};\n\nint main() {\n    Student s;\n    cout << s.getAge();\n    return 0;\n}",
+    "o": [
+      "18",
+      "age",
+      "0",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which access modifier allows visibility to derived classes but not to the rest of the program?",
+    "o": [
+      "protected",
+      "private",
+      "public",
+      "default"
+    ]
+  },
+  {
+    "q": "When designing an interface, what should be avoided to adhere to interface segregation?",
+    "o": [
+      "Bundling unrelated methods into one interface",
+      "Dividing methods into multiple role-specific interfaces",
+      "Using abstract base classes",
+      "Defining pure virtual functions"
+    ]
+  },
+  {
+    "q": "How does encapsulation enhance software maintenance?",
+    "o": [
+      "By reducing dependencies and preventing direct access to internal data",
+      "By allowing all functions to directly access internal members",
+      "By removing the need for constructors",
+      "By increasing code duplication"
+    ]
+  },
+  {
+    "q": "Which of the following leads to a violation of data hiding in C++?",
+    "o": [
+      "Accessing private members directly from outside the class",
+      "Using getters to retrieve private values",
+      "Using constructors to initialize values",
+      "Keeping data members private"
+    ]
+  },
+  {
+    "q": "Which of the following best supports encapsulation in C++?",
+    "o": [
+      "Declaring data members as private and accessing them via public methods",
+      "Making all class members public",
+      "Using global variables inside classes",
+      "Avoiding the use of constructors"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Account {\nprivate:\n    double balance = 1500.50;\npublic:\n    void showBalance() {\n        cout << balance << endl;\n    }\n};\n\nint main() {\n    Account a;\n    a.showBalance();\n    return 0;\n}",
+    "o": [
+      "1500.5",
+      "balance",
+      "Compilation error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which principle is violated when a class is forced to implement methods it does not use?",
+    "o": [
+      "Interface Segregation",
+      "Encapsulation",
+      "Data Hiding",
+      "Constructor Overloading"
+    ]
+  },
+  {
+    "q": "What does abstraction primarily focus on in OOP?",
+    "o": [
+      "Hiding implementation details and exposing essential features",
+      "Making all class members protected",
+      "Preventing inheritance of data",
+      "Allowing unrestricted access to class members"
+    ]
+  },
+  {
+    "q": "Why are private members important in class design?",
+    "o": [
+      "They restrict direct access and enable data hiding",
+      "They allow unrestricted access from outside",
+      "They increase compilation speed",
+      "They reduce the number of functions needed"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Bank {\nprivate:\n    string code = \"BANK123\";\npublic:\n    string getCode() {\n        return code;\n    }\n};\n\nint main() {\n    Bank b;\n    cout << b.getCode();\n    return 0;\n}",
+    "o": [
+      "BANK123",
+      "code",
+      "Compilation error",
+      "123"
+    ]
+  },
+  {
+    "q": "Which design choice adheres to the Interface Segregation Principle?",
+    "o": [
+      "Splitting large interfaces into smaller, specific ones",
+      "Combining all methods into a single interface",
+      "Creating one interface for all system operations",
+      "Implementing unused methods for compliance"
+    ]
+  },
+  {
+    "q": "What is a key benefit of using abstraction in a large system?",
+    "o": [
+      "Simplifies complexity by exposing only relevant parts",
+      "Exposes all data for easy access",
+      "Reduces memory consumption by skipping functions",
+      "Combines all classes into one"
+    ]
+  },
+  {
+    "q": "How does encapsulation aid in debugging?",
+    "o": [
+      "By isolating changes and reducing ripple effects",
+      "By allowing direct access to all variables",
+      "By exposing all data to the debugger",
+      "By disabling inheritance temporarily"
+    ]
+  },
+  {
+    "q": "Which scenario indicates a violation of interface segregation?",
+    "o": [
+      "A class implementing many unrelated methods from a large interface",
+      "A class using multiple small interfaces based on need",
+      "A base class defining only pure virtual methods",
+      "An abstract class being inherited by multiple derived classes"
+    ]
+  },
+  {
+    "q": "Which feature ensures that an object controls how its data is accessed or modified?",
+    "o": [
+      "Encapsulation",
+      "Polymorphism",
+      "Overloading",
+      "Multiple inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Config {\nprivate:\n    string version = \"1.0.3\";\npublic:\n    string getVersion() {\n        return version;\n    }\n};\n\nint main() {\n    Config c;\n    cout << c.getVersion();\n    return 0;\n}",
+    "o": [
+      "1.0.3",
+      "version",
+      "Compilation error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "In which situation would you violate the interface segregation principle?",
+    "o": [
+      "By forcing a class to implement unused interface methods",
+      "By designing multiple small, purpose-specific interfaces",
+      "By using abstract classes with pure virtual methods",
+      "By avoiding large interfaces in base classes"
+    ]
+  },
+  {
+    "q": "Which of the following best enables abstraction in C++?",
+    "o": [
+      "Abstract classes and pure virtual functions",
+      "Public data members in every class",
+      "Global access to all variables",
+      "Private constructors"
+    ]
+  },
+  {
+    "q": "Why is direct access to class data members discouraged in OOP?",
+    "o": [
+      "It violates data hiding and can lead to inconsistent object state",
+      "It improves performance but reduces clarity",
+      "It helps with inheritance but reduces reusability",
+      "It increases abstraction but reduces debugging ability"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Logger {\nprivate:\n    bool enabled = true;\npublic:\n    void showStatus() {\n        cout << (enabled ? \"Enabled\" : \"Disabled\") << endl;\n    }\n};\n\nint main() {\n    Logger log;\n    log.showStatus();\n    return 0;\n}",
+    "o": [
+      "Enabled",
+      "Disabled",
+      "enabled",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What is one clear sign of poor interface design in terms of the Interface Segregation Principle?",
+    "o": [
+      "Interface contains unrelated functionalities",
+      "Interface only includes relevant behaviors",
+      "Interface is split across small components",
+      "Interface includes only abstract members"
+    ]
+  },
+  {
+    "q": "Which of the following is a common technique used to achieve data hiding in C++?",
+    "o": [
+      "Declaring members as private or protected",
+      "Making all members global",
+      "Using preprocessor directives",
+      "Avoiding constructors"
+    ]
+  },
+  {
+    "q": "Encapsulation helps achieve which of the following?",
+    "o": [
+      "Separation of concerns and modularity",
+      "Faster arithmetic operations",
+      "Automatic memory management",
+      "Platform independence"
+    ]
+  },
+  {
+    "q": "What principle is being followed when a user can interact with an object without knowing its internal details?",
+    "o": [
+      "Abstraction",
+      "Encapsulation",
+      "Polymorphism",
+      "Inheritance"
+    ]
+  },
+  {
+    "q": "Which access specifier is typically used to hide class members from outside access?",
+    "o": [
+      "private",
+      "public",
+      "protected",
+      "internal"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass User {\nprivate:\n    string role = \"admin\";\npublic:\n    void showRole() {\n        cout << role;\n    }\n};\n\nint main() {\n    User u;\n    u.showRole();\n    return 0;\n}",
+    "o": [
+      "admin",
+      "role",
+      "Compilation error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Abstraction in object-oriented programming is the process of:",
+    "o": [
+      "Hiding complex implementation and showing only the necessary details",
+      "Making everything private in a class",
+      "Allowing external access to internal variables",
+      "Preventing function overloading"
+    ]
+  },
+  {
+    "q": "What would violate the concept of encapsulation in C++?",
+    "o": [
+      "Allowing public access to internal data members",
+      "Restricting data with private access",
+      "Using getters and setters",
+      "Organizing code using classes"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Engine {\nprivate:\n    int rpm = 3000;\npublic:\n    int getRPM() {\n        return rpm;\n    }\n};\n\nint main() {\n    Engine e;\n    cout << e.getRPM();\n    return 0;\n}",
+    "o": [
+      "3000",
+      "rpm",
+      "Undefined",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What is the main goal of the Interface Segregation Principle?",
+    "o": [
+      "To avoid forcing classes to implement unused methods",
+      "To ensure all interfaces are implemented by every class",
+      "To make interfaces longer and more complete",
+      "To remove abstraction from interface design"
+    ]
+  },
+  {
+    "q": "In C++, a class that contains only pure virtual functions is considered:",
+    "o": [
+      "An abstract class",
+      "A final class",
+      "A concrete class",
+      "A virtual base"
+    ]
+  },
+  {
+    "q": "How does encapsulation improve code maintainability?",
+    "o": [
+      "By hiding data and centralizing changes in one place",
+      "By making data globally available",
+      "By reducing class usage",
+      "By removing constructor requirements"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Data {\nprivate:\n    int value = 42;\n};\n\nint main() {\n    Data d;\n    // cout << d.value; // This line is commented\n    cout << \"Access restricted\";\n    return 0;\n}",
+    "o": [
+      "Access restricted",
+      "42",
+      "value",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following promotes interface segregation?",
+    "o": [
+      "Creating small, client-specific interfaces",
+      "Creating a single universal interface for all operations",
+      "Making interface methods optional",
+      "Avoiding the use of pure virtual functions"
+    ]
+  },
+  {
+    "q": "Which keyword ensures that class members are only accessible from within the class?",
+    "o": [
+      "private",
+      "protected",
+      "public",
+      "static"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Product {\nprivate:\n    double price = 29.99;\npublic:\n    double getPrice() {\n        return price;\n    }\n};\n\nint main() {\n    Product p;\n    cout << p.getPrice();\n    return 0;\n}",
+    "o": [
+      "29.99",
+      "price",
+      "Undefined",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Abstraction allows programmers to:",
+    "o": [
+      "Focus on what an object does instead of how it does it",
+      "Access all implementation details",
+      "Write code without using classes",
+      "Avoid using constructors"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a benefit of encapsulation?",
+    "o": [
+      "Automatic exposure of internal logic",
+      "Improved modularity",
+      "Increased control over data",
+      "Reduced code complexity"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Login {\nprivate:\n    string token = \"abc123\";\npublic:\n    void printTokenLength() {\n        cout << token.length();\n    }\n};\n\nint main() {\n    Login l;\n    l.printTokenLength();\n    return 0;\n}",
+    "o": [
+      "6",
+      "abc123",
+      "Compilation error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "A violation of the Interface Segregation Principle occurs when:",
+    "o": [
+      "A class depends on methods it does not use",
+      "A class uses multiple small interfaces",
+      "Each interface contains minimal functionality",
+      "Interfaces are organized by client needs"
+    ]
+  },
+  {
+    "q": "What is the main purpose of abstract classes in C++?",
+    "o": [
+      "To define interfaces and enforce method overriding in derived classes",
+      "To store large amounts of data",
+      "To avoid inheritance",
+      "To act as standalone instances"
+    ]
+  },
+  {
+    "q": "How does data hiding enhance security in C++ programs?",
+    "o": [
+      "By preventing external code from modifying internal state directly",
+      "By encrypting all data members",
+      "By making variables protected by default",
+      "By storing all variables in a separate header"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Car {\nprotected:\n    string model = \"Sedan\";\npublic:\n    void printModel() {\n        cout << model;\n    }\n};\n\nint main() {\n    Car c;\n    c.printModel();\n    return 0;\n}",
+    "o": [
+      "Sedan",
+      "model",
+      "Compilation error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "When designing a reusable component, what should be preferred according to interface segregation?",
+    "o": [
+      "Multiple role-specific interfaces",
+      "One large and general interface",
+      "A mix of abstract and concrete methods in a base interface",
+      "Avoid interfaces altogether"
+    ]
+  },
+  {
+    "q": "Which feature in C++ enforces data hiding and restricts access to internal object details?",
+    "o": [
+      "Encapsulation",
+      "Inheritance",
+      "Overloading",
+      "Templates"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Employee {\nprivate:\n    int id = 1001;\npublic:\n    void displayId() {\n        cout << id;\n    }\n};\n\nint main() {\n    Employee emp;\n    emp.displayId();\n    return 0;\n}",
+    "o": [
+      "1001",
+      "id",
+      "Undefined",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What is the role of pure virtual functions in abstraction?",
+    "o": [
+      "They force derived classes to provide specific implementations",
+      "They allow instantiation of abstract classes",
+      "They provide default implementation",
+      "They support function overloading"
+    ]
+  },
+  {
+    "q": "Which of the following breaks encapsulation?",
+    "o": [
+      "Making data members public",
+      "Using getter methods",
+      "Declaring variables private",
+      "Defining constructors"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Device {\nprivate:\n    bool status = false;\npublic:\n    bool getStatus() {\n        return status;\n    }\n};\n\nint main() {\n    Device d;\n    cout << d.getStatus();\n    return 0;\n}",
+    "o": [
+      "0",
+      "false",
+      "status",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "How does interface segregation improve class design?",
+    "o": [
+      "By ensuring that classes only implement the methods they actually use",
+      "By forcing all methods into a single interface",
+      "By removing the need for inheritance",
+      "By disabling access control in derived classes"
+    ]
+  },
+  {
+    "q": "Which statement about abstraction in C++ is true?",
+    "o": [
+      "Abstraction hides implementation details using abstract classes or interfaces",
+      "Abstraction means providing access to all members of a class",
+      "Abstraction allows changing access modifiers at runtime",
+      "Abstraction requires multiple inheritance"
+    ]
+  },
+  {
+    "q": "What is the advantage of using getters and setters in C++?",
+    "o": [
+      "They control access and modification of private members",
+      "They make data publicly accessible",
+      "They eliminate the need for constructors",
+      "They replace the use of destructors"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Report {\nprotected:\n    string title = \"Q1 Summary\";\npublic:\n    void showTitle() {\n        cout << title;\n    }\n};\n\nint main() {\n    Report r;\n    r.showTitle();\n    return 0;\n}",
+    "o": [
+      "Q1 Summary",
+      "title",
+      "Compilation error",
+      "Summary"
+    ]
+  },
+  {
+    "q": "Which design practice aligns with the Interface Segregation Principle?",
+    "o": [
+      "Providing multiple, small, purpose-specific interfaces",
+      "Merging all methods into a single large interface",
+      "Avoiding interface usage completely",
+      "Using global variables in interface classes"
+    ]
+  },
+  {
+    "q": "Which of the following access specifiers provides the highest level of data hiding?",
+    "o": [
+      "private",
+      "protected",
+      "public",
+      "friend"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Sensor {\nprivate:\n    float temperature = 36.6;\npublic:\n    float readTemperature() {\n        return temperature;\n    }\n};\n\nint main() {\n    Sensor s;\n    cout << s.readTemperature();\n    return 0;\n}",
+    "o": [
+      "36.6",
+      "temperature",
+      "Compilation error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which concept enables classes to expose only relevant operations and hide internal logic?",
+    "o": [
+      "Abstraction",
+      "Polymorphism",
+      "Templates",
+      "Inheritance"
+    ]
+  },
+  {
+    "q": "Which of the following is a direct violation of the interface segregation principle?",
+    "o": [
+      "An interface that includes unrelated methods for all clients",
+      "Dividing interfaces into small role-specific contracts",
+      "Using pure virtual methods in abstract classes",
+      "Implementing only the required interface methods"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Account {\nprivate:\n    double balance = 100.50;\npublic:\n    void showBalance() {\n        cout << \"$\" << balance;\n    }\n};\n\nint main() {\n    Account a;\n    a.showBalance();\n    return 0;\n}",
+    "o": [
+      "$100.5",
+      "100.50",
+      "balance",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following supports encapsulation in C++?",
+    "o": [
+      "Grouping data and methods within a class",
+      "Global variables",
+      "Static methods only",
+      "Using free functions"
+    ]
+  },
+  {
+    "q": "An abstract class in C++ must contain at least:",
+    "o": [
+      "One pure virtual function",
+      "One private data member",
+      "A constructor",
+      "A friend function"
+    ]
+  },
+  {
+    "q": "Which of the following best explains data hiding?",
+    "o": [
+      "Restricting direct access to internal object state",
+      "Using multiple inheritance",
+      "Exposing all members publicly",
+      "Declaring functions outside the class"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Bank {\nprotected:\n    string branch = \"Downtown\";\npublic:\n    void printBranch() {\n        cout << branch;\n    }\n};\n\nint main() {\n    Bank b;\n    b.printBranch();\n    return 0;\n}",
+    "o": [
+      "Downtown",
+      "branch",
+      "Compilation error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "According to the interface segregation principle, which design should be avoided?",
+    "o": [
+      "A fat interface implemented by all classes",
+      "Splitting functionality into dedicated interfaces",
+      "Interfaces aligned with class responsibilities",
+      "Minimal method sets for a role"
+    ]
+  },
+  {
+    "q": "What is the main advantage of using private data members in a C++ class?",
+    "o": [
+      "They prevent external code from directly modifying internal state",
+      "They allow global access to data",
+      "They increase code execution speed",
+      "They eliminate the need for constructors"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Student {\nprivate:\n    int grade = 90;\npublic:\n    int getGrade() {\n        return grade;\n    }\n};\n\nint main() {\n    Student s;\n    cout << s.getGrade();\n    return 0;\n}",
+    "o": [
+      "90",
+      "grade",
+      "Compilation error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following is true about abstract classes in C++?",
+    "o": [
+      "They cannot be instantiated directly",
+      "They cannot be inherited",
+      "They must only contain constructors",
+      "They always contain at least one data member"
+    ]
+  },
+  {
+    "q": "Which scenario best represents a violation of encapsulation?",
+    "o": [
+      "Allowing public access to internal variables",
+      "Providing controlled access via getters/setters",
+      "Using protected variables within derived classes",
+      "Defining private methods for internal logic"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Box {\nprivate:\n    int width = 5;\npublic:\n    int getWidth() {\n        return width;\n    }\n};\n\nint main() {\n    Box b;\n    cout << b.getWidth();\n    return 0;\n}",
+    "o": [
+      "5",
+      "width",
+      "Undefined",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following describes the interface segregation principle?",
+    "o": [
+      "Clients should not be forced to depend on interfaces they do not use",
+      "All methods should be placed into a single abstract class",
+      "Each class should inherit only one interface",
+      "Abstract classes should never contain pure virtual methods"
+    ]
+  },
+  {
+    "q": "Which access specifier allows access within the same class and derived classes but not outside?",
+    "o": [
+      "protected",
+      "private",
+      "public",
+      "internal"
+    ]
+  },
+  {
+    "q": "Why are pure virtual functions used in C++?",
+    "o": [
+      "To enforce abstraction by requiring derived classes to implement the function",
+      "To define static methods",
+      "To enable constructor inheritance",
+      "To implement default functionality"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Profile {\nprivate:\n    string name = \"Guest\";\npublic:\n    void showName() {\n        cout << name;\n    }\n};\n\nint main() {\n    Profile p;\n    p.showName();\n    return 0;\n}",
+    "o": [
+      "Guest",
+      "name",
+      "Compilation error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following best reflects encapsulation?",
+    "o": [
+      "Binding data and the methods that operate on that data within a class",
+      "Sharing global data across files",
+      "Using friend functions excessively",
+      "Creating unrelated utility functions"
+    ]
+  },
+  {
+    "q": "Which of the following access specifiers helps in creating an interface while hiding implementation?",
+    "o": [
+      "public",
+      "private",
+      "protected",
+      "static"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass User {\nprivate:\n    string password = \"secure123\";\npublic:\n    int getLength() {\n        return password.length();\n    }\n};\n\nint main() {\n    User u;\n    cout << u.getLength();\n    return 0;\n}",
+    "o": [
+      "9",
+      "secure123",
+      "password",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which concept allows C++ programmers to design systems by separating interface from implementation?",
+    "o": [
+      "Abstraction",
+      "Inheritance",
+      "Polymorphism",
+      "Encapsulation"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct reason to use protected members in encapsulation?",
+    "o": [
+      "They allow controlled access in derived classes while hiding from external code",
+      "They are publicly accessible",
+      "They are accessible from anywhere in the program",
+      "They restrict access even in derived classes"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Library {\nprivate:\n    int totalBooks = 300;\npublic:\n    void showBooks() {\n        cout << totalBooks;\n    }\n};\n\nint main() {\n    Library lib;\n    lib.showBooks();\n    return 0;\n}",
+    "o": [
+      "300",
+      "totalBooks",
+      "Compilation error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "How does interface segregation improve software design?",
+    "o": [
+      "By ensuring that interfaces contain only methods relevant to the specific client",
+      "By grouping unrelated behaviors into one base class",
+      "By exposing internal logic to all consumers",
+      "By removing abstraction"
+    ]
+  },
+  {
+    "q": "Why should data members typically be declared private in a class?",
+    "o": [
+      "To prevent unauthorized access and protect data integrity",
+      "To reduce program speed",
+      "To make them accessible globally",
+      "To avoid using constructors"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid use of an abstract class in C++?",
+    "o": [
+      "To define a common interface for derived classes",
+      "To create instances directly",
+      "To store only static methods",
+      "To inherit multiple classes"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Admin {\nprotected:\n    string role = \"Moderator\";\npublic:\n    void displayRole() {\n        cout << role;\n    }\n};\n\nint main() {\n    Admin a;\n    a.displayRole();\n    return 0;\n}",
+    "o": [
+      "Moderator",
+      "role",
+      "Compilation error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which principle states that a class should not be forced to implement interfaces it does not use?",
+    "o": [
+      "Interface Segregation Principle",
+      "Single Responsibility Principle",
+      "Open/Closed Principle",
+      "Dependency Inversion Principle"
+    ]
+  },
+  {
+    "q": "What is encapsulation in C++?",
+    "o": [
+      "Bundling data and methods that operate on that data within one unit",
+      "Allowing multiple inheritance in classes",
+      "Hiding the class implementation from the user",
+      "Overloading functions with the same name"
+    ]
+  },
+  {
+    "q": "Which access specifier in C++ provides the highest level of data hiding?",
+    "o": [
+      "private",
+      "public",
+      "protected",
+      "internal"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Demo {\n  private:\n    int x = 10;\n  public:\n    void display() {\n      cout << x;\n    }\n};\n\nint main() {\n  Demo obj;\n  obj.display();\n  return 0;\n}",
+    "o": [
+      "10",
+      "x",
+      "Compilation Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following best demonstrates abstraction in C++?",
+    "o": [
+      "Defining a class with only relevant functions and hiding implementation details",
+      "Using global variables to access data anywhere",
+      "Exposing all member variables as public",
+      "Using only inline functions"
+    ]
+  },
+  {
+    "q": "What will be the output of this C++ code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Shape {\n  public:\n    virtual void draw() = 0;\n};\n\nclass Circle : public Shape {\n  public:\n    void draw() {\n      cout << \"Drawing Circle\";\n    }\n};\n\nint main() {\n  Circle c;\n  c.draw();\n  return 0;\n}",
+    "o": [
+      "Drawing Circle",
+      "Drawing Shape",
+      "Compilation Error",
+      "Runtime Error"
+    ]
+  },
+  {
+    "q": "Which statement about abstraction is TRUE?",
+    "o": [
+      "Abstraction focuses on exposing only the necessary parts of an object",
+      "Abstraction requires making all class members public",
+      "Abstraction does not allow inheritance",
+      "Abstraction forces implementation of all member functions"
+    ]
+  },
+  {
+    "q": "In C++, which of the following access modifiers allows class members to be accessible only within the class?",
+    "o": [
+      "private",
+      "protected",
+      "public",
+      "external"
+    ]
+  },
+  {
+    "q": "What is interface segregation in object-oriented programming?",
+    "o": [
+      "Designing smaller and more specific interfaces for clients",
+      "Using one large class for all operations",
+      "Combining multiple classes into one",
+      "Exposing all functions via public access"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\n  protected:\n    int x = 20;\n};\n\nclass Derived : public Base {\n  public:\n    void show() {\n      cout << x;\n    }\n};\n\nint main() {\n  Derived d;\n  d.show();\n  return 0;\n}",
+    "o": [
+      "20",
+      "x",
+      "Compilation Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Which principle does the following code demonstrate?\n\nclass BankAccount {\n  private:\n    double balance;\n  public:\n    void deposit(double amount);\n    void withdraw(double amount);\n};",
+    "o": [
+      "Encapsulation",
+      "Polymorphism",
+      "Inheritance",
+      "Recursion"
+    ]
+  },
+  {
+    "q": "Why is encapsulation important in C++?",
+    "o": [
+      "It helps protect data from unintended modification",
+      "It forces multiple inheritance",
+      "It allows unlimited access to data members",
+      "It makes functions global"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Employee {\n  private:\n    int salary = 50000;\n  public:\n    int getSalary() {\n      return salary;\n    }\n};\n\nint main() {\n  Employee e;\n  cout << e.getSalary();\n  return 0;\n}",
+    "o": [
+      "50000",
+      "salary",
+      "0",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about data hiding is TRUE?",
+    "o": [
+      "It restricts direct access to some components of an object",
+      "It exposes internal logic to the user",
+      "It encourages global variable use",
+      "It is the same as inheritance"
+    ]
+  },
+  {
+    "q": "In C++, which access modifier allows access to derived classes but not to outside code?",
+    "o": [
+      "protected",
+      "private",
+      "public",
+      "internal"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet demonstrating abstraction?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass AbstractDevice {\n  public:\n    virtual void start() = 0;\n};\n\nclass Printer : public AbstractDevice {\n  public:\n    void start() {\n      cout << \"Printer started\";\n    }\n};\n\nint main() {\n  Printer p;\n  p.start();\n  return 0;\n}",
+    "o": [
+      "Printer started",
+      "Device started",
+      "Compilation Error",
+      "AbstractDevice started"
+    ]
+  },
+  {
+    "q": "Which of the following best describes interface segregation?",
+    "o": [
+      "A class should not be forced to implement interfaces it does not use",
+      "Interfaces should expose all features of the class",
+      "A single interface should be used for all classes",
+      "Multiple unrelated functionalities should be combined"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of proper encapsulation in C++?",
+    "o": [
+      "Using private members and public getter/setter methods",
+      "Making all members public for easy access",
+      "Accessing data directly using global variables",
+      "Only using protected members in all classes"
+    ]
+  },
+  {
+    "q": "Which concept is used in C++ to implement abstraction?",
+    "o": [
+      "Abstract classes and pure virtual functions",
+      "Static member variables",
+      "Friend functions",
+      "Templates"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Interface {\n  public:\n    virtual void doSomething() = 0;\n};\n\nclass Concrete : public Interface {\n  public:\n    void doSomething() {\n      cout << \"Action done\";\n    }\n};\n\nint main() {\n  Concrete obj;\n  obj.doSomething();\n  return 0;\n}",
+    "o": [
+      "Action done",
+      "Compilation Error",
+      "Interface method",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which one of the following violates the Interface Segregation Principle?",
+    "o": [
+      "A class implementing methods that are irrelevant to its purpose",
+      "Using abstract base classes for similar types",
+      "Breaking large interfaces into smaller ones",
+      "Using pure virtual functions in base classes"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Car {\n  private:\n    string model = \"Sedan\";\n  public:\n    string getModel() {\n      return model;\n    }\n};\n\nint main() {\n  Car c;\n  cout << c.getModel();\n  return 0;\n}",
+    "o": [
+      "Sedan",
+      "model",
+      "Compilation Error",
+      "Car"
+    ]
+  },
+  {
+    "q": "Which of the following correctly demonstrates data hiding?",
+    "o": [
+      "Making data members private and accessing them via public methods",
+      "Declaring all variables as global",
+      "Using macros instead of functions",
+      "Accessing private data directly"
+    ]
+  },
+  {
+    "q": "What is the purpose of using pure virtual functions in C++?",
+    "o": [
+      "To create an abstract class and enforce method implementation in derived classes",
+      "To avoid using constructors",
+      "To automatically inherit all base class methods",
+      "To provide function overloading"
+    ]
+  },
+  {
+    "q": "What will be the result of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass User {\n  private:\n    string password = \"1234\";\n  public:\n    void showPassword() {\n      cout << password;\n    }\n};\n\nint main() {\n  User u;\n  u.showPassword();\n  return 0;\n}",
+    "o": [
+      "1234",
+      "password",
+      "Compilation Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Which principle is being followed when a class only exposes necessary information and hides the rest?",
+    "o": [
+      "Abstraction",
+      "Inheritance",
+      "Polymorphism",
+      "Composition"
+    ]
+  },
+  {
+    "q": "Which of the following violates encapsulation?",
+    "o": [
+      "Accessing object data directly without using methods",
+      "Keeping members private and using getters",
+      "Using constructors to initialize private data",
+      "Using inline methods for data access"
+    ]
+  },
+  {
+    "q": "How can we implement interface segregation in C++?",
+    "o": [
+      "By using multiple abstract base classes with specific responsibilities",
+      "By putting all functions in a single abstract class",
+      "By only using templates",
+      "By inheriting unrelated classes"
+    ]
+  },
+  {
+    "q": "What is the output of this code using protected access modifier?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Animal {\n  protected:\n    string type = \"Mammal\";\n};\n\nclass Dog : public Animal {\n  public:\n    void showType() {\n      cout << type;\n    }\n};\n\nint main() {\n  Dog d;\n  d.showType();\n  return 0;\n}",
+    "o": [
+      "Mammal",
+      "type",
+      "Compilation Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of abstraction?",
+    "o": [
+      "User interacts with a car object through its methods like start() and stop() without knowing how they work internally",
+      "Giving access to all variables to the user",
+      "Using nested loops for data processing",
+      "Creating multiple objects in main()"
+    ]
+  },
+  {
+    "q": "Which of the following design choices aligns with the Interface Segregation Principle?",
+    "o": [
+      "Splitting a large interface into smaller, role-specific ones",
+      "Combining unrelated methods into a single class",
+      "Allowing one interface for all unrelated tasks",
+      "Providing multiple implementations for the same interface"
+    ]
+  },
+  {
+    "q": "Which access specifier in C++ ensures that a class member is only accessible within the class itself?",
+    "o": [
+      "private",
+      "protected",
+      "public",
+      "extern"
+    ]
+  },
+  {
+    "q": "What does the following C++ code demonstrate?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass BankAccount {\n  private:\n    double balance;\n  public:\n    BankAccount(double b) { balance = b; }\n    void deposit(double amount) { balance += amount; }\n    double getBalance() { return balance; }\n};\n\nint main() {\n  BankAccount account(1000);\n  account.deposit(500);\n  cout << account.getBalance();\n  return 0;\n}",
+    "o": [
+      "Encapsulation and data hiding",
+      "Interface segregation",
+      "Multiple inheritance",
+      "Polymorphism"
+    ]
+  },
+  {
+    "q": "Which of the following best explains data hiding in C++?",
+    "o": [
+      "Preventing external access to internal object state using private members",
+      "Overloading functions for multiple behaviors",
+      "Sharing all member data with friend classes",
+      "Using virtual functions to hide base class methods"
+    ]
+  },
+  {
+    "q": "What happens if you try to access a private data member of a class directly in C++?",
+    "o": [
+      "Compilation error",
+      "Runtime error",
+      "The program returns a default value",
+      "The access is redirected to a getter function"
+    ]
+  },
+  {
+    "q": "Which of the following C++ features provides abstraction?",
+    "o": [
+      "Abstract classes with pure virtual functions",
+      "Global variables",
+      "Friend functions",
+      "Structs with all public members"
+    ]
+  },
+  {
+    "q": "What does this code illustrate in C++?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Printable {\n  public:\n    virtual void print() = 0;\n};\n\nclass Report : public Printable {\n  public:\n    void print() override {\n      cout << \"Report Printed\";\n    }\n};\n\nint main() {\n  Report r;\n  r.print();\n  return 0;\n}",
+    "o": [
+      "Abstraction using pure virtual function",
+      "Inheritance only",
+      "Encapsulation using getters",
+      "Function overloading"
+    ]
+  },
+  {
+    "q": "Which statement reflects the Interface Segregation Principle?",
+    "o": [
+      "Clients should not be forced to depend on methods they do not use",
+      "All interfaces should include all possible methods for reusability",
+      "Classes should inherit from multiple interfaces to reduce code",
+      "Single interface is always better for system design"
+    ]
+  },
+  {
+    "q": "What is the benefit of using getter and setter methods instead of accessing data members directly?",
+    "o": [
+      "They enforce encapsulation and validation logic",
+      "They reduce code length",
+      "They improve inheritance",
+      "They are required by the compiler"
+    ]
+  },
+  {
+    "q": "Which of the following would violate interface segregation?",
+    "o": [
+      "A class implementing a large interface with unrelated methods",
+      "Splitting interfaces based on responsibilities",
+      "Using multiple inheritance with abstract classes",
+      "Using virtual functions for abstraction"
+    ]
+  },
+  {
+    "q": "What does the following code demonstrate?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Engine {\n  public:\n    void start() {\n      cout << \"Engine Started\";\n    }\n};\n\nclass Car {\n  private:\n    Engine engine;\n  public:\n    void startCar() {\n      engine.start();\n    }\n};\n\nint main() {\n  Car myCar;\n  myCar.startCar();\n  return 0;\n}",
+    "o": [
+      "Encapsulation by hiding internal implementation details",
+      "Interface segregation by composing interfaces",
+      "Polymorphism through virtual methods",
+      "Abstraction using pure virtual classes"
+    ]
+  },
+  {
+    "q": "Which of the following best describes encapsulation in C++?",
+    "o": [
+      "Wrapping data and functions into a single unit",
+      "Using multiple inheritance for modularity",
+      "Separating class into header and implementation files",
+      "Implementing multiple interfaces"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Box {\n  private:\n    int length;\n  public:\n    void setLength(int l) { length = l; }\n    int getLength() { return length; }\n};\n\nint main() {\n  Box b;\n  b.setLength(12);\n  cout << b.getLength();\n  return 0;\n}",
+    "o": [
+      "12",
+      "0",
+      "Compilation Error",
+      "Garbage Value"
+    ]
+  },
+  {
+    "q": "Which of these helps achieve data hiding in C++?",
+    "o": [
+      "Making data members private",
+      "Using global variables",
+      "Overloading operators",
+      "Friend functions"
+    ]
+  },
+  {
+    "q": "What does the following code demonstrate?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Shape {\n  public:\n    virtual void draw() = 0;\n};\n\nclass Circle : public Shape {\n  public:\n    void draw() override {\n      cout << \"Drawing Circle\";\n    }\n};\n\nint main() {\n  Circle c;\n  c.draw();\n  return 0;\n}",
+    "o": [
+      "Abstraction using abstract class",
+      "Encapsulation with private data",
+      "Data hiding using friend class",
+      "Multiple inheritance"
+    ]
+  },
+  {
+    "q": "Which statement violates the concept of interface segregation?",
+    "o": [
+      "A class forced to implement methods it doesn't need",
+      "Splitting large interfaces into smaller ones",
+      "Implementing only required interfaces",
+      "Using abstract base classes wisely"
+    ]
+  },
+  {
+    "q": "Why are getter and setter methods preferred in encapsulated classes?",
+    "o": [
+      "They control access and validation of private data",
+      "They make the class smaller",
+      "They replace constructors",
+      "They reduce object size"
+    ]
+  },
+  {
+    "q": "Which C++ feature provides a way to hide implementation details from the user?",
+    "o": [
+      "Abstraction",
+      "Templates",
+      "Constructor overloading",
+      "Destructor"
+    ]
+  },
+  {
+    "q": "What is the result of accessing a protected member outside a class hierarchy?",
+    "o": [
+      "Compiler error",
+      "Segmentation fault",
+      "Undefined behavior",
+      "It works like a public member"
+    ]
+  },
+  {
+    "q": "What does this code demonstrate in C++?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Logger {\n  private:\n    string filePath;\n  public:\n    void setPath(string path) {\n      filePath = path;\n    }\n};\n\nint main() {\n  Logger log;\n  // log.filePath = \"log.txt\"; // This line causes error\n  return 0;\n}",
+    "o": [
+      "Data hiding by restricting direct access",
+      "Abstraction through virtual function",
+      "Interface segregation with multiple classes",
+      "Encapsulation through inheritance"
+    ]
+  },
+  {
+    "q": "Which principle states that 'No client should be forced to depend on methods it does not use'?",
+    "o": [
+      "Interface Segregation Principle",
+      "Liskov Substitution Principle",
+      "Open-Closed Principle",
+      "Encapsulation Principle"
+    ]
+  },
+  {
+    "q": "How does encapsulation improve code maintainability?",
+    "o": [
+      "By isolating data and only exposing necessary operations",
+      "By forcing global access to class members",
+      "By removing the need for constructors",
+      "By allowing uncontrolled data manipulation"
+    ]
+  },
+  {
+    "q": "Which access modifier allows members to be accessed only within the same class?",
+    "o": [
+      "private",
+      "public",
+      "protected",
+      "friend"
+    ]
+  },
+  {
+    "q": "What does the following code demonstrate?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Employee {\n  private:\n    int salary;\n  public:\n    void setSalary(int s) { salary = s; }\n    int getSalary() { return salary; }\n};\n\nint main() {\n  Employee e;\n  e.setSalary(3000);\n  cout << e.getSalary();\n  return 0;\n}",
+    "o": [
+      "Encapsulation using private data and public methods",
+      "Abstraction using abstract class",
+      "Data hiding using friend class",
+      "Interface segregation using inheritance"
+    ]
+  },
+  {
+    "q": "Which feature hides implementation details while showing only essential information?",
+    "o": [
+      "Abstraction",
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism"
+    ]
+  },
+  {
+    "q": "Which is an example of interface segregation?",
+    "o": [
+      "Breaking large interfaces into smaller, specific ones",
+      "Using a single interface with all possible methods",
+      "Making all data members public",
+      "Forcing classes to inherit unused functionality"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Device {\n  protected:\n    void reset() { cout << \"Resetting...\"; }\n};\n\nclass Phone : public Device {\n  public:\n    void restart() { reset(); }\n};\n\nint main() {\n  Phone p;\n  p.restart();\n  return 0;\n}",
+    "o": [
+      "Resetting...",
+      "Compilation error",
+      "No output",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "What is a major benefit of data hiding?",
+    "o": [
+      "It protects internal object state from unintended interference",
+      "It allows access to global variables",
+      "It makes all data public",
+      "It forces inheritance"
+    ]
+  },
+  {
+    "q": "Which of the following breaks encapsulation?",
+    "o": [
+      "Making all class members public",
+      "Using private access modifiers",
+      "Providing controlled access via getters/setters",
+      "Restricting data access"
+    ]
+  },
+  {
+    "q": "Which keyword is used in C++ to achieve abstraction?",
+    "o": [
+      "virtual",
+      "private",
+      "friend",
+      "static"
+    ]
+  },
+  {
+    "q": "What principle does the following design violate?\nA class InterfacePrinter has methods: printPDF(), printImage(), faxDocument(). A class PhotoPrinter implements all three even though it only needs printImage().",
+    "o": [
+      "Interface Segregation Principle",
+      "Encapsulation Principle",
+      "Open-Closed Principle",
+      "Single Responsibility Principle"
+    ]
+  },
+  {
+    "q": "Which access specifier allows members to be accessed by derived classes but not outside the class?",
+    "o": [
+      "protected",
+      "private",
+      "public",
+      "default"
+    ]
+  },
+  {
+    "q": "What does this code snippet illustrate?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Student {\n  private:\n    string name;\n  public:\n    void setName(string n) { name = n; }\n    string getName() { return name; }\n};\n\nint main() {\n  Student s;\n  s.setName(\"Ravi\");\n  cout << s.getName();\n  return 0;\n}",
+    "o": [
+      "Encapsulation with private data and public accessors",
+      "Abstraction through pure virtual functions",
+      "Multiple inheritance",
+      "Interface segregation"
+    ]
+  },
+  {
+    "q": "What is the main idea behind data hiding in OOP?",
+    "o": [
+      "Restricting direct access to internal object data",
+      "Using multiple base classes",
+      "Exposing all class members for flexibility",
+      "Avoiding the use of constructors"
+    ]
+  },
+  {
+    "q": "Which design approach violates the Interface Segregation Principle?",
+    "o": [
+      "A class implementing many irrelevant methods from a fat interface",
+      "Splitting interfaces based on specific behaviors",
+      "Defining an interface for printing and scanning separately",
+      "Allowing clients to implement only the functionality they need"
+    ]
+  },
+  {
+    "q": "What does the following code demonstrate?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Report {\n  public:\n    virtual void generate() = 0;\n};\n\nclass PDFReport : public Report {\n  public:\n    void generate() override {\n      cout << \"PDF Report Generated\";\n    }\n};\n\nint main() {\n  PDFReport r;\n  r.generate();\n  return 0;\n}",
+    "o": [
+      "Abstraction using abstract class and pure virtual function",
+      "Encapsulation using private members",
+      "Data hiding through protected inheritance",
+      "Overloading using function templates"
+    ]
+  },
+  {
+    "q": "Which of the following supports abstraction in C++?",
+    "o": [
+      "Abstract classes with pure virtual functions",
+      "Public data members in a class",
+      "Friend functions accessing private data",
+      "Global variables"
+    ]
+  },
+  {
+    "q": "What is the role of private access modifier in C++?",
+    "o": [
+      "To restrict access to within the class only",
+      "To allow access only from derived classes",
+      "To allow access from anywhere in the program",
+      "To allow only friend classes to access members"
+    ]
+  },
+  {
+    "q": "Why is interface segregation considered a good design principle?",
+    "o": [
+      "It ensures that classes only implement what they actually use",
+      "It requires every class to implement a single universal interface",
+      "It promotes tight coupling between modules",
+      "It encourages the use of global variables"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Device {\n  private:\n    string serial = \"XYZ123\";\n};\n\nint main() {\n  Device d;\n  // cout << d.serial; // error\n  return 0;\n}",
+    "o": [
+      "Compilation error due to private member access",
+      "Runtime error",
+      "Output: XYZ123",
+      "Output: 0"
+    ]
+  },
+  {
+    "q": "What best represents abstraction in object-oriented programming?",
+    "o": [
+      "Showing only essential details and hiding complexity",
+      "Providing unrestricted access to data members",
+      "Combining unrelated classes into one",
+      "Allowing multiple instances of static methods"
+    ]
+  },
+  {
+    "q": "Which principle is being followed when a class hides its internal data from direct access?",
+    "o": [
+      "Data hiding",
+      "Polymorphism",
+      "Inheritance",
+      "Multiple inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of this C++ program?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Box {\nprivate:\n    int length;\npublic:\n    void setLength(int l) { length = l; }\n    int getLength() { return length; }\n};\n\nint main() {\n    Box b;\n    b.setLength(12);\n    cout << b.getLength();\n    return 0;\n}",
+    "o": [
+      "12",
+      "0",
+      "Compilation error",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Why are access specifiers like private and protected important in encapsulation?",
+    "o": [
+      "They control how class members are accessed",
+      "They define virtual inheritance",
+      "They determine return types",
+      "They specify function overloading"
+    ]
+  },
+  {
+    "q": "What is true about abstraction in C++?",
+    "o": [
+      "It allows showing only essential features while hiding implementation details",
+      "It forces the programmer to write inline code",
+      "It makes every class inherit from a base class",
+      "It disables the use of constructors"
+    ]
+  },
+  {
+    "q": "Which concept helps in designing cleaner interfaces by splitting large interfaces into smaller ones?",
+    "o": [
+      "Interface Segregation Principle",
+      "Single Responsibility Principle",
+      "Open/Closed Principle",
+      "Liskov Substitution Principle"
+    ]
+  },
+  {
+    "q": "What will be the result of trying to access a private data member directly?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Sample {\nprivate:\n    int x = 100;\n};\n\nint main() {\n    Sample s;\n    // cout << s.x;\n    return 0;\n}",
+    "o": [
+      "Compilation error due to private access",
+      "Runtime error",
+      "100",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of violating Interface Segregation Principle?",
+    "o": [
+      "Forcing a class to implement unnecessary methods from an interface",
+      "Creating separate interfaces for different behaviors",
+      "Using protected access for inherited members",
+      "Hiding implementation using abstract classes"
+    ]
+  },
+  {
+    "q": "How is encapsulation achieved in C++?",
+    "o": [
+      "By making data members private and providing public methods for access",
+      "By using global variables",
+      "By writing everything in the main function",
+      "By overloading all functions"
+    ]
+  },
+  {
+    "q": "What is the role of abstract classes in C++?",
+    "o": [
+      "They define a contract for subclasses using pure virtual functions",
+      "They allow instantiation of objects",
+      "They expose all data members to the user",
+      "They override destructors automatically"
+    ]
+  },
+  {
+    "q": "What principle is being applied when only relevant methods are forced on a class?",
+    "o": [
+      "Interface Segregation Principle",
+      "Data Hiding Principle",
+      "Constructor Overloading Principle",
+      "Friend Class Rule"
+    ]
+  },
+  {
+    "q": "Which access modifier in C++ ensures the highest level of data hiding?",
+    "o": [
+      "private",
+      "protected",
+      "public",
+      "default"
+    ]
+  },
+  {
+    "q": "What is the output of this C++ code snippet demonstrating encapsulation?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Account {\nprivate:\n    int balance = 500;\npublic:\n    int getBalance() { return balance; }\n};\n\nint main() {\n    Account acc;\n    cout << acc.getBalance();\n    return 0;\n}",
+    "o": [
+      "500",
+      "0",
+      "Compilation error",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which C++ feature hides internal details and shows only necessary information to the user?",
+    "o": [
+      "Abstraction",
+      "Polymorphism",
+      "Friend function",
+      "Dynamic binding"
+    ]
+  },
+  {
+    "q": "How does Interface Segregation Principle improve code design?",
+    "o": [
+      "By splitting large interfaces into smaller, specific ones",
+      "By using global variables instead of classes",
+      "By making all classes implement all methods",
+      "By combining multiple classes into one"
+    ]
+  },
+  {
+    "q": "What is the correct way to prevent access to class members from outside the class?",
+    "o": [
+      "Declare them private",
+      "Declare them static",
+      "Use friend functions",
+      "Declare them global"
+    ]
+  },
+  {
+    "q": "Which of the following demonstrates a violation of encapsulation?",
+    "o": [
+      "Accessing a class variable directly using object.variable_name",
+      "Using a public getter method to retrieve a value",
+      "Using a setter method to modify a private variable",
+      "Restricting access with a private keyword"
+    ]
+  },
+  {
+    "q": "What will happen if a class implements an interface but leaves a method undefined?",
+    "c": "class Printable {\npublic:\n    virtual void print() = 0;\n};\n\nclass Report : public Printable {\n    // Missing definition\n};",
+    "o": [
+      "The class becomes abstract and cannot be instantiated",
+      "The method is automatically defined as empty",
+      "It compiles and runs normally",
+      "All methods are ignored"
+    ]
+  },
+  {
+    "q": "Why is data hiding considered a benefit of encapsulation?",
+    "o": [
+      "It prevents accidental modification of internal data",
+      "It improves loop performance",
+      "It avoids recursion",
+      "It enables operator overloading"
+    ]
+  },
+  {
+    "q": "Which concept ensures that a user interacts only with relevant methods?",
+    "o": [
+      "Interface Segregation Principle",
+      "Data Binding",
+      "Constructor Overloading",
+      "Public Access"
+    ]
+  },
+  {
+    "q": "What is the output of this code involving abstraction?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Shape {\npublic:\n    virtual void draw() = 0;\n};\n\nclass Circle : public Shape {\npublic:\n    void draw() override { cout << \"Drawing Circle\"; }\n};\n\nint main() {\n    Circle c;\n    c.draw();\n    return 0;\n}",
+    "o": [
+      "Drawing Circle",
+      "Drawing Shape",
+      "Compilation Error",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which feature of OOP ensures that object details are not exposed directly?",
+    "o": [
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism",
+      "Composition"
+    ]
+  },
+  {
+    "q": "What is the output of this C++ code demonstrating abstraction?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Animal {\npublic:\n    virtual void sound() = 0;\n};\n\nclass Dog : public Animal {\npublic:\n    void sound() override { cout << \"Bark\"; }\n};\n\nint main() {\n    Dog d;\n    d.sound();\n    return 0;\n}",
+    "o": [
+      "Bark",
+      "Dog",
+      "Animal",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "In C++, what does declaring class members as 'private' help achieve?",
+    "o": [
+      "Data hiding",
+      "Inheritance",
+      "Memory optimization",
+      "Function overloading"
+    ]
+  },
+  {
+    "q": "Which of the following best illustrates the Interface Segregation Principle?",
+    "o": [
+      "Designing multiple small interfaces for specific behaviors",
+      "Creating a base class with all possible methods",
+      "Using friend classes to access data",
+      "Combining multiple classes into one"
+    ]
+  },
+  {
+    "q": "What will be the output of this code snippet related to data hiding?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass User {\nprivate:\n    string password = \"abc123\";\npublic:\n    void showPassword() { cout << password; }\n};\n\nint main() {\n    User u;\n    u.showPassword();\n    return 0;\n}",
+    "o": [
+      "abc123",
+      "password",
+      "Compilation error",
+      "null"
+    ]
+  },
+  {
+    "q": "Why is encapsulation important in C++ class design?",
+    "o": [
+      "To restrict access and protect data from unintended modification",
+      "To allow global access to all variables",
+      "To write less code",
+      "To increase inheritance chains"
+    ]
+  },
+  {
+    "q": "Which keyword is used in C++ to define an abstract method?",
+    "o": [
+      "virtual ... = 0;",
+      "pure",
+      "abstract",
+      "interface"
+    ]
+  },
+  {
+    "q": "How can a C++ class enforce abstraction?",
+    "o": [
+      "By using at least one pure virtual function",
+      "By making all members public",
+      "By inheriting only from one class",
+      "By avoiding constructors"
+    ]
+  },
+  {
+    "q": "What does a class violate if it implements an interface with methods it doesn't use?",
+    "o": [
+      "Interface Segregation Principle",
+      "Abstraction Rule",
+      "Constructor Overloading",
+      "Friend Function Access"
+    ]
+  },
+  {
+    "q": "Which of the following demonstrates proper encapsulation in C++?",
+    "o": [
+      "Private members with public getter/setter methods",
+      "Public access to all member variables",
+      "Global access to class data",
+      "All methods declared static"
+    ]
+  },
+  {
+    "q": "Which access modifier in C++ allows access only within the same class?",
+    "o": [
+      "private",
+      "protected",
+      "public",
+      "external"
+    ]
+  },
+  {
+    "q": "What is the purpose of making class variables 'private' in C++?",
+    "o": [
+      "To hide implementation details from outside code",
+      "To reduce code size",
+      "To make variables static",
+      "To enable inheritance"
+    ]
+  },
+  {
+    "q": "Which of the following demonstrates abstraction in C++?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Vehicle {\npublic:\n    virtual void move() = 0;\n};\n\nclass Car : public Vehicle {\npublic:\n    void move() override { cout << \"Car is moving\"; }\n};\n\nint main() {\n    Car c;\n    c.move();\n    return 0;\n}",
+    "o": [
+      "Car is moving",
+      "Vehicle",
+      "move",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What is violated if a class is forced to implement methods it doesn't use?",
+    "o": [
+      "Interface Segregation Principle",
+      "Encapsulation",
+      "Abstraction Principle",
+      "Polymorphism Rule"
+    ]
+  },
+  {
+    "q": "How is encapsulation implemented in C++?",
+    "o": [
+      "By using classes with private data and public methods",
+      "By using global variables",
+      "By defining functions outside the class",
+      "By writing inline functions"
+    ]
+  },
+  {
+    "q": "What is the output of the following encapsulated class?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Student {\nprivate:\n    int age = 20;\npublic:\n    int getAge() { return age; }\n};\n\nint main() {\n    Student s;\n    cout << s.getAge();\n    return 0;\n}",
+    "o": [
+      "20",
+      "0",
+      "Compilation Error",
+      "Runtime Error"
+    ]
+  },
+  {
+    "q": "Which C++ class structure best adheres to the Interface Segregation Principle?",
+    "o": [
+      "Multiple small abstract classes with specific methods",
+      "One large interface with many unrelated methods",
+      "A single class with all public members",
+      "Inheritance with all method overrides"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a benefit of encapsulation?",
+    "o": [
+      "Direct manipulation of private members from outside",
+      "Improved code maintainability",
+      "Controlled access to data",
+      "Increased security"
+    ]
+  },
+  {
+    "q": "What is the keyword used in C++ to define a method that must be overridden by a subclass?",
+    "o": [
+      "virtual",
+      "static",
+      "abstract",
+      "final"
+    ]
+  },
+  {
+    "q": "Which of the following shows good data hiding practice?",
+    "c": "class BankAccount {\nprivate:\n    double balance;\npublic:\n    void deposit(double amount) { balance += amount; }\n};",
+    "o": [
+      "Using private balance and public methods to modify it",
+      "Allowing balance to be accessed directly",
+      "Declaring balance as public",
+      "Making deposit a friend function"
+    ]
+  },
+  {
+    "q": "Why is 'protected' access modifier useful in encapsulation?",
+    "o": [
+      "It allows access in the same class and derived classes",
+      "It hides data from all classes",
+      "It exposes members publicly",
+      "It restricts access to friend classes only"
+    ]
+  },
+  {
+    "q": "What will the following C++ program output?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Account {\nprivate:\n    double balance = 1500.75;\npublic:\n    double getBalance() { return balance; }\n};\n\nint main() {\n    Account acc;\n    cout << acc.getBalance();\n    return 0;\n}",
+    "o": [
+      "1500.75",
+      "balance",
+      "Compilation Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Which principle is directly supported by having private fields and public methods?",
+    "o": [
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism",
+      "Code Reuse"
+    ]
+  },
+  {
+    "q": "Which of the following is true about abstract classes in C++?",
+    "o": [
+      "They can have pure virtual functions and cannot be instantiated",
+      "They must have only static members",
+      "They cannot be inherited",
+      "They must be defined in header files"
+    ]
+  },
+  {
+    "q": "What concept does this code demonstrate?",
+    "c": "class Printable {\npublic:\n    virtual void print() = 0;\n};\n\nclass Document : public Printable {\npublic:\n    void print() override {\n        // implementation\n    }\n};",
+    "o": [
+      "Abstraction using interfaces",
+      "Encapsulation of print logic",
+      "Data hiding using virtual",
+      "Inheritance of private members"
+    ]
+  },
+  {
+    "q": "What is the benefit of breaking a large interface into smaller ones?",
+    "o": [
+      "It supports the Interface Segregation Principle",
+      "It reduces compilation errors",
+      "It avoids the need for abstraction",
+      "It enables polymorphism"
+    ]
+  },
+  {
+    "q": "Which of the following best implements abstraction in C++?",
+    "o": [
+      "Using pure virtual functions in abstract base classes",
+      "Using inline functions only",
+      "Using multiple inheritance",
+      "Using public global variables"
+    ]
+  },
+  {
+    "q": "Which feature of OOP hides unnecessary internal details from users?",
+    "o": [
+      "Abstraction",
+      "Inheritance",
+      "Templates",
+      "Friend classes"
+    ]
+  },
+  {
+    "q": "In which situation does interface segregation help most?",
+    "o": [
+      "When classes only need a subset of operations from an interface",
+      "When interfaces are reused across unrelated classes",
+      "When classes share static members",
+      "When public data is accessed externally"
+    ]
+  },
+  {
+    "q": "Which of the following is a disadvantage of not using data hiding?",
+    "o": [
+      "Class users can modify internal states in unexpected ways",
+      "Functions cannot be overloaded",
+      "Multiple inheritance becomes impossible",
+      "Virtual functions do not work"
+    ]
+  },
+  {
+    "q": "Which of the following best explains data hiding in C++?",
+    "o": [
+      "Restricting direct access to class members using private access specifier",
+      "Making all variables static",
+      "Declaring global variables",
+      "Using pointers to access members"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Box {\nprivate:\n    int width = 5;\npublic:\n    int getWidth() { return width; }\n};\n\nint main() {\n    Box b;\n    cout << b.getWidth();\n    return 0;\n}",
+    "o": [
+      "5",
+      "0",
+      "Error",
+      "undefined"
+    ]
+  },
+  {
+    "q": "Which feature allows one class to define a contract without providing complete implementation?",
+    "o": [
+      "Abstraction",
+      "Encapsulation",
+      "Polymorphism",
+      "Aggregation"
+    ]
+  },
+  {
+    "q": "What keyword is used to make a function pure virtual in C++?",
+    "o": [
+      "= 0",
+      "virtual",
+      "override",
+      "pure"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of interface segregation?",
+    "o": [
+      "Splitting a large interface into multiple smaller, specific interfaces",
+      "Using a base class with many virtual functions",
+      "Defining a class with many unrelated methods",
+      "Combining multiple classes into one"
+    ]
+  },
+  {
+    "q": "Which access modifier allows access to derived classes but not outside the class?",
+    "o": [
+      "protected",
+      "private",
+      "public",
+      "sealed"
+    ]
+  },
+  {
+    "q": "What does the following code demonstrate?",
+    "c": "class Engine {\npublic:\n    virtual void start() = 0;\n};\n\nclass ElectricEngine : public Engine {\npublic:\n    void start() override {\n        // Electric start\n    }\n};",
+    "o": [
+      "Abstraction using a pure virtual function",
+      "Encapsulation using inheritance",
+      "Polymorphism through static binding",
+      "Data hiding of the start function"
+    ]
+  },
+  {
+    "q": "What principle is followed if a class is forced to implement only relevant methods?",
+    "o": [
+      "Interface Segregation Principle",
+      "Open/Closed Principle",
+      "Dependency Inversion Principle",
+      "Single Responsibility Principle"
+    ]
+  },
+  {
+    "q": "Which is a good reason to keep class data members private?",
+    "o": [
+      "To prevent accidental modification of the internal state",
+      "To make them globally accessible",
+      "To reduce compilation time",
+      "To allow subclass overriding"
+    ]
+  },
+  {
+    "q": "Which of the following is true about encapsulation?",
+    "o": [
+      "It helps bind data and methods that operate on the data together",
+      "It ensures a class has only abstract methods",
+      "It enables multiple inheritance",
+      "It hides interface implementation from the user"
+    ]
+  },
+  {
+    "q": "Which access specifier ensures that class members are only accessible from within the same class?",
+    "o": [
+      "private",
+      "public",
+      "protected",
+      "internal"
+    ]
+  },
+  {
+    "q": "How does abstraction help in software design?",
+    "o": [
+      "By exposing only essential features and hiding the complexity",
+      "By allowing direct access to member variables",
+      "By making all methods inline",
+      "By preventing inheritance"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass User {\nprivate:\n    string password = \"secure123\";\npublic:\n    void showPassword() { cout << password; }\n};\n\nint main() {\n    User u;\n    u.showPassword();\n    return 0;\n}",
+    "o": [
+      "secure123",
+      "Compilation error",
+      "password",
+      "undefined"
+    ]
+  },
+  {
+    "q": "Which of the following best represents the Interface Segregation Principle?",
+    "o": [
+      "Clients should not be forced to depend on interfaces they do not use",
+      "Classes should have only one responsibility",
+      "Software entities should be open for extension but closed for modification",
+      "Derived classes must be substitutable for base classes"
+    ]
+  },
+  {
+    "q": "What is a pure virtual function used for in C++?",
+    "o": [
+      "To create an abstract class that cannot be instantiated",
+      "To allow multiple definitions of the function",
+      "To define default behavior for derived classes",
+      "To restrict access to class members"
+    ]
+  },
+  {
+    "q": "What does the following code illustrate?",
+    "c": "class Vehicle {\nprotected:\n    int speed;\n};\n\nclass Car : public Vehicle {\npublic:\n    void setSpeed(int s) { speed = s; }\n};",
+    "o": [
+      "Encapsulation using protected access modifier",
+      "Abstraction using base class",
+      "Interface segregation by subclassing",
+      "Data hiding through inheritance"
+    ]
+  },
+  {
+    "q": "Why is data hiding important in object-oriented programming?",
+    "o": [
+      "To prevent external code from modifying internal object state directly",
+      "To make member variables publicly accessible",
+      "To improve the visibility of all functions",
+      "To allow easier subclassing"
+    ]
+  },
+  {
+    "q": "Which of the following is **not** a benefit of encapsulation?",
+    "o": [
+      "Increased memory consumption",
+      "Better data integrity",
+      "Improved modularity",
+      "Control over data access"
+    ]
+  },
+  {
+    "q": "Which design decision violates interface segregation?",
+    "o": [
+      "Having a single interface with unrelated methods like `print()`, `save()`, and `fly()`",
+      "Splitting one large interface into smaller ones",
+      "Using virtual functions to allow override",
+      "Hiding implementation details behind interfaces"
+    ]
+  },
+  {
+    "q": "What will happen if you try to instantiate an abstract class in C++?",
+    "o": [
+      "Compilation error",
+      "Runtime exception",
+      "It will create an object with null values",
+      "The class will auto-implement the functions"
+    ]
+  },
+  {
+    "q": "Which of the following C++ access specifiers prevents access from outside the class entirely?",
+    "o": [
+      "private",
+      "public",
+      "protected",
+      "internal"
+    ]
+  },
+  {
+    "q": "What concept does this code illustrate?",
+    "c": "class Account {\nprivate:\n    double balance;\npublic:\n    void deposit(double amount) { balance += amount; }\n};",
+    "o": [
+      "Encapsulation using private data members and public methods",
+      "Inheritance from another class",
+      "Polymorphism with method overloading",
+      "Abstraction through interface"
+    ]
+  },
+  {
+    "q": "What principle is violated if an interface forces a class to implement methods it does not need?",
+    "o": [
+      "Interface Segregation Principle",
+      "Single Responsibility Principle",
+      "Open/Closed Principle",
+      "Liskov Substitution Principle"
+    ]
+  },
+  {
+    "q": "Which of these allows you to create a blueprint in C++ without giving full implementation?",
+    "o": [
+      "Abstract class",
+      "Static class",
+      "Friend function",
+      "Constructor"
+    ]
+  },
+  {
+    "q": "What is the role of a getter method in the context of data hiding?",
+    "o": [
+      "To provide controlled read access to private members",
+      "To make private members public",
+      "To declare a variable",
+      "To override constructors"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Device {\nprivate:\n    string model = \"X100\";\npublic:\n    string getModel() { return model; }\n};\n\nint main() {\n    Device d;\n    cout << d.getModel();\n    return 0;\n}",
+    "o": [
+      "X100",
+      "model",
+      "Compilation error",
+      "Null"
+    ]
+  },
+  {
+    "q": "Which of the following encourages breaking down large interfaces into smaller, more specific ones?",
+    "o": [
+      "Interface Segregation Principle",
+      "Encapsulation Principle",
+      "Dependency Injection",
+      "Constructor Overloading"
+    ]
+  },
+  {
+    "q": "Which feature of C++ helps in hiding internal implementation from the user?",
+    "o": [
+      "Abstraction",
+      "Inheritance",
+      "Overloading",
+      "Constructor chaining"
+    ]
+  },
+  {
+    "q": "In C++, which keyword is used to declare a class that cannot be instantiated directly?",
+    "o": [
+      "virtual with = 0",
+      "final",
+      "static",
+      "sealed"
+    ]
+  },
+  {
+    "q": "What access modifier should be used to allow access within class and derived classes only?",
+    "o": [
+      "protected",
+      "private",
+      "public",
+      "sealed"
+    ]
+  }
+]

@@ -1,0 +1,222 @@
+[
+  {
+    "title": "Storing Mixed Data with ArrayList",
+    "ques": "Write a C# program that uses an ArrayList to store a mix of integers, strings, and doubles. Add at least 5 items and then print each item with its type.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections;\n\nclass Program\n{\n    static void Main()\n    {\n        ArrayList mixedList = new ArrayList();\n        mixedList.Add(42);\n        mixedList.Add(\"Hello\");\n        mixedList.Add(3.14);\n        mixedList.Add(\"World\");\n        mixedList.Add(100);\n\n        foreach (var item in mixedList)\n        {\n            Console.WriteLine($\"Item: {item}, Type: {item.GetType()}\");\n        }\n    }\n}"
+    },
+    "explanation": "This program demonstrates the use of ***ArrayList***, a non-generic collection that can store items of any type.\n\n- ```using System.Collections;``` imports the namespace for ***ArrayList***.\n- ```ArrayList mixedList = new ArrayList();``` creates an empty ***ArrayList***.\n- ```mixedList.Add(...)``` adds items (an integer, strings, and a double) to the list.\n- The ***foreach*** loop iterates over each item, and ```GetType()``` retrieves the runtime type of each element.\n- ```Console.WriteLine``` outputs each item and its type, e.g., 'Item: 42, Type: System.Int32'."
+  },
+  {
+    "title": "Managing Students with List<T>",
+    "ques": "Create a C# program that uses a generic List<string> to store student names. Add 3 names, remove one, and print the remaining names.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static void Main()\n    {\n        List<string> students = new List<string>();\n        students.Add(\"Alice\");\n        students.Add(\"Bob\");\n        students.Add(\"Charlie\");\n        students.Remove(\"Bob\");\n\n        foreach (string name in students)\n        {\n            Console.WriteLine(name);\n        }\n    }\n}"
+    },
+    "explanation": "This program uses a ***generic List<T>***, specifically ```List<string>```, to store student names.\n\n- ```using System.Collections.Generic;``` is required for generic collections.\n- ```List<string> students = new List<string>();``` initializes a type-safe list for strings.\n- ```students.Add(...)``` adds three names to the list.\n- ```students.Remove(\"Bob\")``` removes the specified name.\n- The ***foreach*** loop prints the remaining names: 'Alice' and 'Charlie'."
+  },
+  {
+    "title": "Storing Key-Value Pairs with Dictionary",
+    "ques": "Write a C# program that uses a Dictionary<int, string> to store employee IDs (int) and names (string). Add 3 entries and retrieve the name for ID 2.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static void Main()\n    {\n        Dictionary<int, string> employees = new Dictionary<int, string>();\n        employees.Add(1, \"Alice\");\n        employees.Add(2, \"Bob\");\n        employees.Add(3, \"Charlie\");\n\n        Console.WriteLine($\"Employee with ID 2: {employees[2]}\");\n    }\n}"
+    },
+    "explanation": "This program uses a ***Dictionary<int, string>*** to store key-value pairs.\n\n- ```Dictionary<int, string> employees = new Dictionary<int, string>();``` creates a dictionary with integer keys and string values.\n- ```employees.Add(...)``` adds three employee entries with IDs as keys and names as values.\n- ```employees[2]``` retrieves the value associated with key 2, which is 'Bob'.\n- The result is printed using ***string interpolation***: 'Employee with ID 2: Bob'."
+  },
+  {
+    "title": "Filtering Numbers with LINQ",
+    "ques": "Write a C# program that uses LINQ to filter a List<int> of numbers and print only those greater than 10. Use a list with at least 5 numbers.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\n\nclass Program\n{\n    static void Main()\n    {\n        List<int> numbers = new List<int> { 5, 12, 8, 15, 3 };\n        var filtered = numbers.Where(n => n > 10);\n\n        foreach (int num in filtered)\n        {\n            Console.WriteLine(num);\n        }\n    }\n}"
+    },
+    "explanation": "This program introduces ***LINQ*** for querying collections.\n\n- ```using System.Linq;``` enables LINQ functionality.\n- ```List<int> numbers = new List<int> { 5, 12, 8, 15, 3 };``` initializes a list with 5 numbers.\n- ```numbers.Where(n => n > 10)``` uses a ***lambda expression*** to filter numbers greater than 10, returning an ***IEnumerable<int>***.\n- The ***foreach*** loop prints the filtered results: 12 and 15."
+  },
+  {
+    "title": "Generating Even Numbers with Yield",
+    "ques": "Create a C# program that uses the yield keyword to generate even numbers up to 10 and prints them using a foreach loop.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static void Main()\n    {\n        foreach (int number in GetEvenNumbers())\n        {\n            Console.WriteLine(number);\n        }\n    }\n\n    static IEnumerable<int> GetEvenNumbers()\n    {\n        for (int i = 2; i <= 10; i += 2)\n        {\n            yield return i;\n        }\n    }\n}"
+    },
+    "explanation": "This program demonstrates ***yield*** for lazy iteration.\n\n- ```GetEvenNumbers()``` is a method returning ```IEnumerable<int>```.\n- The ***for*** loop iterates from 2 to 10 with a step of 2.\n- ```yield return i;``` generates each even number one at a time, pausing execution until the next value is requested.\n- In ***Main***, the ***foreach*** loop consumes the iterator, printing 2, 4, 6, 8, and 10."
+  },
+  {
+    "title": "Sorting an ArrayList",
+    "ques": "Write a C# program that uses an ArrayList to store 5 integers, sorts them in ascending order, and prints the sorted list.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections;\n\nclass Program\n{\n    static void Main()\n    {\n        ArrayList numbers = new ArrayList();\n        numbers.Add(25);\n        numbers.Add(10);\n        numbers.Add(45);\n        numbers.Add(5);\n        numbers.Add(30);\n\n        numbers.Sort();\n\n        foreach (int num in numbers)\n        {\n            Console.WriteLine(num);\n        }\n    }\n}"
+    },
+    "explanation": "This program shows how to sort an ***ArrayList***.\n\n- ```ArrayList numbers = new ArrayList();``` creates a non-generic list.\n- ```numbers.Add(...)``` adds 5 unsorted integers.\n- ```numbers.Sort();``` sorts the list in ascending order using the default comparer (works because all elements are integers).\n- The ***foreach*** loop prints the sorted numbers: 5, 10, 25, 30, 45."
+  },
+  {
+    "title": "Custom Sorting with List<T>",
+    "ques": "Create a C# program that uses a List<string> to store 4 names and sorts them by string length using a custom comparison. Print the sorted list.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static void Main()\n    {\n        List<string> names = new List<string> { \"Bob\", \"Alice\", \"Tom\", \"Charlie\" };\n        names.Sort((a, b) => a.Length.CompareTo(b.Length));\n\n        foreach (string name in names)\n        {\n            Console.WriteLine(name);\n        }\n    }\n}"
+    },
+    "explanation": "This program sorts a ***List<T>*** using a custom criterion.\n\n- ```List<string> names = new List<string> { ... };``` initializes a list with 4 names.\n- ```names.Sort((a, b) => a.Length.CompareTo(b.Length));``` uses a ***lambda expression*** to sort by string length. ```CompareTo``` returns a comparison result.\n- The ***foreach*** loop prints the sorted names by length: 'Bob', 'Tom', 'Alice', 'Charlie' (3, 3, 5, 7 characters)."
+  },
+  {
+    "title": "Counting Entries with Dictionary",
+    "ques": "Write a C# program that uses a Dictionary<string, int> to count occurrences of words in a sentence. Use the sentence 'the cat and the dog' and print each word with its count.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static void Main()\n    {\n        string sentence = \"the cat and the dog\";\n        Dictionary<string, int> wordCount = new Dictionary<string, int>();\n\n        foreach (string word in sentence.Split(' '))\n        {\n            if (wordCount.ContainsKey(word))\n                wordCount[word]++;\n            else\n                wordCount[word] = 1;\n        }\n\n        foreach (var pair in wordCount)\n        {\n            Console.WriteLine($\"Word: {pair.Key}, Count: {pair.Value}\");\n        }\n    }\n}"
+    },
+    "explanation": "This program uses a ***Dictionary*** to count word occurrences.\n\n- ```sentence.Split(' ')``` splits the sentence into words.\n- ```wordCount.ContainsKey(word)``` checks if the word exists in the dictionary.\n- If it exists, ```wordCount[word]++``` increments its count; otherwise, it’s added with ```wordCount[word] = 1```.\n- The ***foreach*** loop with ```var pair``` iterates over key-value pairs, printing: 'the: 2', 'cat: 1', 'and: 1', 'dog: 1'."
+  },
+  {
+    "title": "Aggregating with LINQ",
+    "ques": "Write a C# program that uses LINQ to calculate the sum and average of a List<double> containing 5 numbers. Print both results.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\n\nclass Program\n{\n    static void Main()\n    {\n        List<double> values = new List<double> { 1.5, 2.5, 3.0, 4.5, 5.0 };\n        double sum = values.Sum();\n        double average = values.Average();\n\n        Console.WriteLine($\"Sum: {sum}\");\n        Console.WriteLine($\"Average: {average}\");\n    }\n}"
+    },
+    "explanation": "This program uses ***LINQ*** for aggregation.\n\n- ```List<double> values = new List<double> { ... };``` creates a list of 5 doubles.\n- ```values.Sum()``` computes the total (16.5).\n- ```values.Average()``` computes the mean (3.3).\n- ```Console.WriteLine``` outputs both results: 'Sum: 16.5' and 'Average: 3.3'."
+  },
+  {
+    "title": "Nested Yield for Multiplication Table",
+    "ques": "Create a C# program that uses yield to generate a multiplication table (1 to 3) as a sequence of results (e.g., '1 x 1 = 1', '1 x 2 = 2', etc.) and prints them.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static void Main()\n    {\n        foreach (string result in MultiplicationTable())\n        {\n            Console.WriteLine(result);\n        }\n    }\n\n    static IEnumerable<string> MultiplicationTable()\n    {\n        for (int i = 1; i <= 3; i++)\n        {\n            for (int j = 1; j <= 3; j++)\n            {\n                yield return $\"{i} x {j} = {i * j}\";\n            }\n        }\n    }\n}"
+    },
+    "explanation": "This program uses ***yield*** with nested loops.\n\n- ```MultiplicationTable()``` returns ```IEnumerable<string>```.\n- The outer ***for*** loop iterates over i (1 to 3), and the inner loop over j (1 to 3).\n- ```yield return $\"{i} x {j} = {i * j}\";``` generates each multiplication result as a string.\n- The ***foreach*** in ***Main*** prints: '1 x 1 = 1', '1 x 2 = 2', ..., '3 x 3 = 9'."
+  },
+  {
+    "title": "Converting ArrayList to List<T>",
+    "ques": "Write a C# program that creates an ArrayList with mixed types, filters out non-integer values, converts it to a List<int>, and prints the result.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static void Main()\n    {\n        ArrayList mixedList = new ArrayList { 10, \"hello\", 20, 3.5, 30 };\n        List<int> intList = new List<int>();\n\n        foreach (var item in mixedList)\n        {\n            if (item is int)\n                intList.Add((int)item);\n        }\n\n        foreach (int num in intList)\n        {\n            Console.WriteLine(num);\n        }\n    }\n}"
+    },
+    "explanation": "This program converts an ***ArrayList*** to a ***List<T>*** with type filtering.\n\n- ```ArrayList mixedList = new ArrayList { ... };``` initializes with mixed types.\n- ```List<int> intList = new List<int>();``` creates an empty generic list for integers.\n- The ***foreach*** loop uses ```is int``` to check if each item is an integer, casting and adding it with ```(int)item```.\n- The final ***foreach*** prints the filtered integers: 10, 20, 30."
+  },
+  {
+    "title": "Safe Dictionary Access with TryGetValue",
+    "ques": "Create a C# program that uses a Dictionary<string, int> to store fruit quantities. Attempt to retrieve the quantity of 'apple' and 'banana' (one missing) using TryGetValue, and print the results.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static void Main()\n    {\n        Dictionary<string, int> fruits = new Dictionary<string, int>\n        {\n            { \"apple\", 5 },\n            { \"orange\", 3 }\n        };\n\n        if (fruits.TryGetValue(\"apple\", out int appleCount))\n            Console.WriteLine($\"Apples: {appleCount}\");\n        else\n            Console.WriteLine(\"Apple not found\");\n\n        if (fruits.TryGetValue(\"banana\", out int bananaCount))\n            Console.WriteLine($\"Bananas: {bananaCount}\");\n        else\n            Console.WriteLine(\"Banana not found\");\n    }\n}"
+    },
+    "explanation": "This program uses ***TryGetValue*** for safe dictionary access.\n\n- ```Dictionary<string, int> fruits = new Dictionary<string, int> { ... };``` initializes with two entries using collection initializer syntax.\n- ```fruits.TryGetValue(\"apple\", out int appleCount)``` tries to get the value for 'apple', returning true and setting ```appleCount``` to 5.\n- For 'banana', it returns false since it’s not in the dictionary.\n- Outputs: 'Apples: 5' and 'Banana not found'."
+  },
+  {
+    "title": "Grouping with LINQ",
+    "ques": "Write a C# program that uses LINQ to group a List<string> of animal names by their first letter and prints each group.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\n\nclass Program\n{\n    static void Main()\n    {\n        List<string> animals = new List<string> { \"cat\", \"cow\", \"dog\", \"deer\" };\n        var grouped = animals.GroupBy(a => a[0]);\n\n        foreach (var group in grouped)\n        {\n            Console.WriteLine($\"Group: {group.Key}\");\n            foreach (string animal in group)\n            {\n                Console.WriteLine($\"  {animal}\");\n            }\n        }\n    }\n}"
+    },
+    "explanation": "This program uses ***LINQ*** for grouping.\n\n- ```List<string> animals = new List<string> { ... };``` initializes with 4 animal names.\n- ```animals.GroupBy(a => a[0])``` groups by the first character using a ***lambda expression***, returning an ```IGrouping<char, string>```.\n- The outer ***foreach*** iterates over groups (c and d), and the inner loop prints items in each group.\n- Output: 'Group: c' with 'cat', 'cow', then 'Group: d' with 'dog', 'deer'."
+  },
+  {
+    "title": "Yielding Prime Numbers",
+    "ques": "Create a C# program that uses yield to generate prime numbers up to 20 and prints them using a foreach loop. Include a helper method to check primality.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static void Main()\n    {\n        foreach (int prime in GetPrimesUpTo20())\n        {\n            Console.WriteLine(prime);\n        }\n    }\n\n    static IEnumerable<int> GetPrimesUpTo20()\n    {\n        for (int i = 2; i <= 20; i++)\n        {\n            if (IsPrime(i))\n                yield return i;\n        }\n    }\n\n    static bool IsPrime(int num)\n    {\n        if (num < 2) return false;\n        for (int i = 2; i <= Math.Sqrt(num); i++)\n        {\n            if (num % i == 0) return false;\n        }\n        return true;\n    }\n}"
+    },
+    "explanation": "This program uses ***yield*** to generate prime numbers conditionally.\n\n- ```GetPrimesUpTo20()``` iterates from 2 to 20.\n- ```IsPrime(num)``` checks if a number is prime by testing divisibility up to its square root.\n- ```yield return i``` yields each prime number (2, 3, 5, 7, 11, 13, 17, 19).\n- The ***foreach*** in ***Main*** prints these numbers one per line."
+  },
+  {
+    "title": "Reversing an ArrayList",
+    "ques": "Write a C# program that uses an ArrayList to store 5 strings, reverses the order of the items, and prints the reversed list.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections;\n\nclass Program\n{\n    static void Main()\n    {\n        ArrayList items = new ArrayList { \"apple\", \"banana\", \"cherry\", \"date\", \"elderberry\" };\n        items.Reverse();\n\n        foreach (var item in items)\n        {\n            Console.WriteLine(item);\n        }\n    }\n}"
+    },
+    "explanation": "This program demonstrates reversing an ***ArrayList***.\n\n- ```ArrayList items = new ArrayList { ... };``` initializes with 5 strings using a collection initializer.\n- ```items.Reverse();``` reverses the order of all elements in place.\n- The ***foreach*** loop prints the reversed list: 'elderberry', 'date', 'cherry', 'banana', 'apple'."
+  },
+  {
+    "title": "Checking Existence in Dictionary",
+    "ques": "Create a C# program that uses a Dictionary<int, string> to store student IDs and names. Check if ID 3 exists using ContainsKey, then add it if it’s missing, and print the updated dictionary.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static void Main()\n    {\n        Dictionary<int, string> students = new Dictionary<int, string>\n        {\n            { 1, \"Alice\" },\n            { 2, \"Bob\" }\n        };\n\n        if (!students.ContainsKey(3))\n        {\n            students[3] = \"Charlie\";\n            Console.WriteLine(\"Added ID 3: Charlie\");\n        }\n        else\n        {\n            Console.WriteLine(\"ID 3 already exists\");\n        }\n\n        foreach (var pair in students)\n        {\n            Console.WriteLine($\"ID: {pair.Key}, Name: {pair.Value}\");\n        }\n    }\n}"
+    },
+    "explanation": "This program uses ***ContainsKey*** to check for a key in a ***Dictionary***.\n\n- ```Dictionary<int, string> students = new Dictionary<int, string> { ... };``` initializes with two entries.\n- ```!students.ContainsKey(3)``` checks if key 3 is absent; if true, adds 'Charlie' using ```students[3]```.\n- Prints a confirmation message: 'Added ID 3: Charlie'.\n- The ***foreach*** loop outputs all entries: 'ID: 1, Name: Alice', 'ID: 2, Name: Bob', 'ID: 3, Name: Charlie'."
+  },
+  {
+    "title": "Joining Lists with LINQ",
+    "ques": "Write a C# program that uses LINQ to join two List<T> objects: one with student IDs and names, and another with IDs and grades. Print each student’s name and grade.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\n\nclass Program\n{\n    static void Main()\n    {\n        List<(int Id, string Name)> students = new List<(int, string)>\n        {\n            (1, \"Alice\"),\n            (2, \"Bob\")\n        };\n        List<(int Id, char Grade)> grades = new List<(int, char)>\n        {\n            (1, 'A'),\n            (2, 'B')\n        };\n\n        var result = students.Join(grades,\n            s => s.Id,\n            g => g.Id,\n            (s, g) => $\"{s.Name}: {g.Grade}\");\n\n        foreach (var entry in result)\n        {\n            Console.WriteLine(entry);\n        }\n    }\n}"
+    },
+    "explanation": "This program uses ***LINQ*** to perform a join.\n\n- ```List<(int Id, string Name)>``` and ```List<(int Id, char Grade)>``` use tuples to store data.\n- ```students.Join(...)``` joins the lists on the `Id` field, with ***lambda expressions*** ```s => s.Id``` and ```g => g.Id``` defining the keys, and ```(s, g) => ...``` creating the result string.\n- The ***foreach*** loop prints: 'Alice: A', 'Bob: B'."
+  },
+  {
+    "title": "Infinite Fibonacci Sequence with Yield",
+    "ques": "Create a C# program that uses yield to generate an infinite Fibonacci sequence and prints the first 10 numbers using a foreach loop with a break condition.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static void Main()\n    {\n        int count = 0;\n        foreach (int num in Fibonacci())\n        {\n            Console.WriteLine(num);\n            if (++count == 10) break;\n        }\n    }\n\n    static IEnumerable<int> Fibonacci()\n    {\n        int a = 0, b = 1;\n        while (true)\n        {\n            yield return a;\n            int temp = a;\n            a = b;\n            b = temp + b;\n        }\n    }\n}"
+    },
+    "explanation": "This program uses ***yield*** for an infinite sequence.\n\n- ```Fibonacci()``` generates Fibonacci numbers: starts with 0 and 1, then each number is the sum of the previous two.\n- ```yield return a;``` yields the current number, and variables ```a``` and ```b``` are updated.\n- The ***while (true)*** loop makes it infinite, but ***Main*** uses ```count``` and ```break``` to stop after 10 numbers.\n- Output: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34."
+  },
+  {
+    "title": "Inserting into ArrayList at Index",
+    "ques": "Write a C# program that uses an ArrayList to store 4 integers, inserts a new integer at index 2, and prints the updated list.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections;\n\nclass Program\n{\n    static void Main()\n    {\n        ArrayList numbers = new ArrayList { 10, 20, 30, 40 };\n        numbers.Insert(2, 25);\n\n        foreach (int num in numbers)\n        {\n            Console.WriteLine(num);\n        }\n    }\n}"
+    },
+    "explanation": "This program demonstrates inserting into an ***ArrayList*** at a specific position.\n\n- ```ArrayList numbers = new ArrayList { ... };``` initializes with 4 integers.\n- ```numbers.Insert(2, 25);``` inserts 25 at index 2, shifting subsequent elements right.\n- The ***foreach*** loop prints the updated list: 10, 20, 25, 30, 40."
+  },
+  {
+    "title": "Updating Dictionary Values",
+    "ques": "Create a C# program that uses a Dictionary<string, int> to store product names and quantities. Increase the quantity of each product by 10 using a loop, then print the updated dictionary.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static void Main()\n    {\n        Dictionary<string, int> inventory = new Dictionary<string, int>\n        {\n            { \"apple\", 50 },\n            { \"banana\", 30 },\n            { \"orange\", 20 }\n        };\n\n        foreach (var key in inventory.Keys)\n        {\n            inventory[key] += 10;\n        }\n\n        foreach (var pair in inventory)\n        {\n            Console.WriteLine($\"{pair.Key}: {pair.Value}\");\n        }\n    }\n}"
+    },
+    "explanation": "This program updates values in a ***Dictionary***.\n\n- ```Dictionary<string, int> inventory = new Dictionary<string, int> { ... };``` initializes with product quantities.\n- ```inventory.Keys``` provides a collection of keys, and the ***foreach*** loop iterates over them, incrementing each value with ```inventory[key] += 10```.\n- The final ***foreach*** prints: 'apple: 60', 'banana: 40', 'orange: 30'."
+  },
+  {
+    "title": "Ordering with LINQ Multiple Criteria",
+    "ques": "Write a C# program that uses LINQ to sort a List<(string Name, int Age)> by Age ascending, then by Name alphabetically if ages are equal. Print the sorted list.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\n\nclass Program\n{\n    static void Main()\n    {\n        List<(string Name, int Age)> people = new List<(string, int)>\n        {\n            (\"Bob\", 25),\n            (\"Alice\", 30),\n            (\"Charlie\", 25),\n            (\"Dave\", 30)\n        };\n\n        var sorted = people.OrderBy(p => p.Age).ThenBy(p => p.Name);\n\n        foreach (var person in sorted)\n        {\n            Console.WriteLine($\"{person.Name}, {person.Age}\");\n        }\n    }\n}"
+    },
+    "explanation": "This program uses ***LINQ*** for multi-criteria sorting.\n\n- ```List<(string Name, int Age)> people = new List<(string, int)> { ... };``` initializes with tuples.\n- ```OrderBy(p => p.Age)``` sorts by age, and ```ThenBy(p => p.Name)``` sorts by name when ages tie.\n- The ***foreach*** prints: 'Bob, 25', 'Charlie, 25', 'Alice, 30', 'Dave, 30'."
+  },
+  {
+    "title": "Yielding Odd Numbers with Filter",
+    "ques": "Create a C# program that uses yield to generate odd numbers up to 15, applying a filter in a separate method, and prints them using a foreach loop.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections.Generic;\n\nclass Program\n{\n    static void Main()\n    {\n        foreach (int num in GetOddNumbers())\n        {\n            Console.WriteLine(num);\n        }\n    }\n\n    static IEnumerable<int> GetOddNumbers()\n    {\n        for (int i = 1; i <= 15; i++)\n        {\n            if (IsOdd(i))\n                yield return i;\n        }\n    }\n\n    static bool IsOdd(int num)\n    {\n        return num % 2 != 0;\n    }\n}"
+    },
+    "explanation": "This program uses ***yield*** with a filter method.\n\n- ```GetOddNumbers()``` iterates from 1 to 15.\n- ```IsOdd(num)``` checks if a number is odd using the modulo operator.\n- ```yield return i``` yields only odd numbers: 1, 3, 5, 7, 9, 11, 13, 15.\n- The ***foreach*** in ***Main*** prints these numbers."
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Basic Try-Catch Block",
+    "ques": "Write a C++ program that demonstrates the use of try, catch, and throw blocks to handle division by zero.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nint main() {\n    double num, denom, result;\n    cout << \"Enter numerator: \";\n    cin >> num;\n    cout << \"Enter denominator: \";\n    cin >> denom;\n    try {\n        if (denom == 0) {\n            throw \"Division by zero is not allowed!\";\n        }\n        result = num / denom;\n        cout << \"Result: \" << result << endl;\n    }\n    catch (const char* msg) {\n        cout << \"Error: \" << msg << endl;\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates basic exception handling:\n- ***Line 1-2***: Include necessary header and namespace.\n- ***Line 5-8***: Declare variables and get user input for numerator and denominator.\n- ***Line 9-14***: The ```try``` block contains the code that might throw an exception.\n- ***Line 10-12***: If the denominator is zero, ```throw``` raises an exception with a string message.\n- ***Line 13***: If no exception, calculate and display the result.\n- ***Line 15-17***: The ```catch``` block catches the thrown string and prints the error message.\n- ***Line 19***: Return 0 to end the program."
+  },
+  {
+    "title": "Using Standard Exceptions",
+    "ques": "Create a C++ program that uses the standard exception 'std::out_of_range' to handle an invalid array index access.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <stdexcept>\nusing namespace std;\n\nint main() {\n    int arr[5] = {1, 2, 3, 4, 5};\n    int index;\n    cout << \"Enter an index (0-4): \";\n    cin >> index;\n    try {\n        if (index < 0 || index >= 5) {\n            throw out_of_range(\"Index out of bounds!\");\n        }\n        cout << \"Value: \" << arr[index] << endl;\n    }\n    catch (const out_of_range& e) {\n        cout << \"Exception: \" << e.what() << endl;\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program uses a standard exception:\n- ***Line 2***: Include ```<stdexcept>``` for standard exceptions.\n- ***Line 6***: Define an array of size 5.\n- ***Line 8-9***: Prompt user for an index.\n- ***Line 10-14***: ```try``` block checks if the index is valid.\n- ***Line 11-12***: If invalid, throw ```std::out_of_range``` with a custom message.\n- ***Line 13***: If valid, print the array value.\n- ***Line 15-17***: ```catch``` handles ```out_of_range```, using ```what()``` to display the error message."
+  },
+  {
+    "title": "Custom Exception Class",
+    "ques": "Design a C++ program with a custom exception class to handle negative input for calculating the square root.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <cmath>\nusing namespace std;\n\nclass NegativeNumberException {\nprivate:\n    string message;\npublic:\n    NegativeNumberException(string msg) : message(msg) {}\n    string what() { return message; }\n};\n\nint main() {\n    double num;\n    cout << \"Enter a number to find its square root: \";\n    cin >> num;\n    try {\n        if (num < 0) {\n            throw NegativeNumberException(\"Negative number not allowed for square root!\");\n        }\n        cout << \"Square root: \" << sqrt(num) << endl;\n    }\n    catch (const NegativeNumberException& e) {\n        cout << \"Error: \" << e.what() << endl;\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program defines a custom exception:\n- ***Line 5-10***: Define ```NegativeNumberException``` class with a message and ```what()``` method.\n- ***Line 14-16***: Get a number from the user.\n- ***Line 17-21***: ```try``` block checks for negativity.\n- ***Line 18-19***: If negative, throw the custom exception.\n- ***Line 20***: If positive, compute and display the square root using ```sqrt()```.\n- ***Line 22-24***: ```catch``` handles the custom exception and prints the error."
+  },
+  {
+    "title": "Exception Safety Example",
+    "ques": "Write a C++ program that demonstrates exception safety by ensuring a resource is cleaned up even if an exception occurs during dynamic memory allocation.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <stdexcept>\nusing namespace std;\n\nclass Resource {\npublic:\n    int* data;\n    Resource(int size) {\n        data = new int[size];\n        if (size > 1000) throw runtime_error(\"Size too large!\");\n        cout << \"Resource allocated\\n\";\n    }\n    ~Resource() {\n        delete[] data;\n        cout << \"Resource deallocated\\n\";\n    }\n};\n\nint main() {\n    try {\n        Resource res(2000);\n    }\n    catch (const runtime_error& e) {\n        cout << \"Caught exception: \" << e.what() << endl;\n    }\n    cout << \"Program continues...\\n\";\n    return 0;\n}"
+    },
+    "explanation": "This program ensures exception safety:\n- ***Line 5-16***: Define ```Resource``` class with dynamic memory allocation.\n- ***Line 9-10***: Constructor allocates memory and throws if size exceeds 1000.\n- ***Line 13-15***: Destructor ensures memory is freed.\n- ***Line 20-22***: ```try``` block creates a ```Resource``` object with a large size to trigger an exception.\n- ***Line 23-25***: ```catch``` handles the ```runtime_error```.\n- ***Key Point***: Even though an exception occurs, the destructor is called automatically due to stack unwinding, ensuring no memory leak."
+  },
+  {
+    "title": "Nested Try-Catch Blocks",
+    "ques": "Write a C++ program that uses nested try-catch blocks to handle multiple potential exceptions, such as invalid input and division by zero.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <stdexcept>\nusing namespace std;\n\nint main() {\n    double num, denom;\n    cout << \"Enter numerator: \";\n    cin >> num;\n    cout << \"Enter denominator: \";\n    cin >> denom;\n    try {\n        if (cin.fail()) {\n            throw runtime_error(\"Invalid input detected!\");\n        }\n        try {\n            if (denom == 0) {\n                throw logic_error(\"Division by zero!\");\n            }\n            cout << \"Result: \" << num / denom << endl;\n        }\n        catch (const logic_error& e) {\n            cout << \"Inner catch: \" << e.what() << endl;\n        }\n    }\n    catch (const runtime_error& e) {\n        cout << \"Outer catch: \" << e.what() << endl;\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates nested exception handling:\n- ***Line 6-10***: Get user input for numerator and denominator.\n- ***Line 11-24***: Outer ```try``` block checks for input failure.\n- ***Line 12-13***: If input is invalid (e.g., letters instead of numbers), throw ```runtime_error```.\n- ***Line 14-20***: Inner ```try``` block checks for division by zero.\n- ***Line 16-17***: If denominator is zero, throw ```logic_error```.\n- ***Line 18***: Perform division if no issues.\n- ***Line 21-23***: Inner ```catch``` handles division-specific errors.\n- ***Line 25-27***: Outer ```catch``` handles input-related errors.\n- This structure allows handling different exception types at appropriate levels."
+  },
+  {
+    "title": "Rethrowing Exceptions",
+    "ques": "Create a C++ program that demonstrates rethrowing an exception to allow higher-level handling after partial processing at a lower level.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <stdexcept>\nusing namespace std;\n\nvoid processNumber(int value) {\n    try {\n        if (value < 0) {\n            throw runtime_error(\"Negative value not allowed!\");\n        }\n        cout << \"Processing value: \" << value << endl;\n    }\n    catch (const runtime_error& e) {\n        cout << \"Lower level caught: \" << e.what() << endl;\n        throw; // Rethrow the exception\n    }\n}\n\nint main() {\n    int num;\n    cout << \"Enter a number: \";\n    cin >> num;\n    try {\n        processNumber(num);\n    }\n    catch (const runtime_error& e) {\n        cout << \"Main caught: \" << e.what() << endl;\n    }\n    cout << \"Program ends normally\\n\";\n    return 0;\n}"
+    },
+    "explanation": "This program shows exception rethrowing:\n- ***Line 5-14***: Define ```processNumber``` function with a ```try``` block.\n- ***Line 7-8***: Throw ```runtime_error``` if the input is negative.\n- ***Line 9***: Process the number if valid.\n- ***Line 11-14***: Catch the exception, log it, then rethrow it using ```throw;``` with no argument.\n- ***Line 18-20***: Get user input in ```main```.\n- ***Line 21-25***: Outer ```try-catch``` in ```main``` calls ```processNumber``` and catches the rethrown exception.\n- ***Line 26***: Continue execution after handling.\n- Rethrowing allows partial handling at a lower level while escalating to a higher level for final resolution."
+  },
+  {
+    "title": "Using noexcept Specifier",
+    "ques": "Write a C++ program that demonstrates the use of the noexcept specifier to indicate a function won’t throw exceptions, and handle a case where an exception is thrown despite this.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <stdexcept>\nusing namespace std;\n\nvoid safeFunction(int x) noexcept {\n    if (x < 0) {\n        throw runtime_error(\"Unexpected negative value!\");\n    }\n    cout << \"Value processed: \" << x << endl;\n}\n\nint main() {\n    try {\n        safeFunction(10);  // Should work fine\n        safeFunction(-5);  // Will cause termination\n    }\n    catch (const runtime_error& e) {\n        cout << \"Caught: \" << e.what() << endl;\n    }\n    cout << \"This line may not be reached if noexcept is violated\\n\";\n    return 0;\n}"
+    },
+    "explanation": "This program explores the ```noexcept``` specifier:\n- ***Line 5-9***: Define ```safeFunction``` marked with ```noexcept```, promising no exceptions.\n- ***Line 6-7***: Despite ```noexcept```, an exception is thrown if input is negative.\n- ***Line 8***: Normal processing if no exception.\n- ***Line 12-16***: ```try``` block in ```main``` calls ```safeFunction``` with valid and invalid inputs.\n- ***Line 17-19***: ```catch``` block attempts to handle exceptions.\n- ***Key Note***: If an exception escapes a ```noexcept``` function, the program calls ```std::terminate``` instead of propagating the exception, so the catch block may not execute for -5, and the program may terminate abruptly.\n- This demonstrates the importance of honoring ```noexcept``` guarantees."
+  },
+  {
+    "title": "Exception in Constructor",
+    "ques": "Create a C++ program that handles an exception thrown in a constructor, ensuring proper cleanup and demonstrating that destructors aren’t called for partially constructed objects.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <stdexcept>\nusing namespace std;\n\nclass Test {\npublic:\n    int* ptr;\n    Test(int size) {\n        cout << \"Constructor called\\n\";\n        ptr = new int[size];\n        if (size > 100) {\n            delete[] ptr;\n            throw runtime_error(\"Size exceeds limit!\");\n        }\n    }\n    ~Test() {\n        cout << \"Destructor called\\n\";\n        delete[] ptr;\n    }\n};\n\nint main() {\n    try {\n        Test obj(150);  // Exception in constructor\n    }\n    catch (const runtime_error& e) {\n        cout << \"Caught: \" << e.what() << endl;\n    }\n    cout << \"Program continues\\n\";\n    return 0;\n}"
+    },
+    "explanation": "This program handles constructor exceptions:\n- ***Line 5-18***: Define ```Test``` class with a constructor and destructor.\n- ***Line 8-13***: Constructor allocates memory and throws an exception if size > 100, cleaning up before throwing.\n- ***Line 15-17***: Destructor deallocates memory.\n- ***Line 22-25***: ```try``` block attempts to create a ```Test``` object with size 150, triggering an exception.\n- ***Line 26-28***: ```catch``` block handles the exception.\n- ***Key Point***: If an exception occurs in the constructor, the object isn’t fully constructed, so the destructor isn’t called. Manual cleanup (```delete[] ptr```) is needed before throwing.\n- ***Line 29***: Program continues after handling."
+  }
+]

@@ -1,0 +1,5599 @@
+[
+  {
+    "q": "Which of the following best describes .NET?",
+    "o": [
+      ".NET is a software development framework by Microsoft.",
+      ".NET is an operating system.",
+      ".NET is a version of Java.",
+      ".NET is a database management tool."
+    ]
+  },
+  {
+    "q": "What will be the output of the following C# code?",
+    "c": "int x = 10;\nint y = 20;\nConsole.WriteLine(x + y);",
+    "o": [
+      "30",
+      "1020",
+      "x + y",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which data type is used to store true or false values in C#?",
+    "o": [
+      "bool",
+      "boolean",
+      "truth",
+      "bit"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "string name = \"John\";\nConsole.WriteLine($\"Hello, {name}!\");",
+    "o": [
+      "Hello, John!",
+      "Hello, name!",
+      "$Hello, John!",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax to declare an integer variable in C#?",
+    "o": [
+      "int number = 5;",
+      "integer number = 5;",
+      "num number = 5;",
+      "int number := 5;"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "int a = 5;\nint b = 2;\nConsole.WriteLine(a / b);",
+    "o": [
+      "2",
+      "2.5",
+      "2.0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is used to read user input in C#?",
+    "o": [
+      "Console.ReadLine()",
+      "Input.Read()",
+      "Scanner.Read()",
+      "System.in()"
+    ]
+  },
+  {
+    "q": "What is the output of this loop code?",
+    "c": "for (int i = 1; i <= 3; i++)\n{\n    Console.Write(i + \" \");\n}",
+    "o": [
+      "1 2 3 ",
+      "123",
+      "0 1 2 ",
+      "1 2 3 4 "
+    ]
+  },
+  {
+    "q": "Which of these keywords is used for a decision-making structure in C#?",
+    "o": [
+      "if",
+      "switchcase",
+      "choose",
+      "decide"
+    ]
+  },
+  {
+    "q": "What is the output of this switch statement?",
+    "c": "int day = 2;\nswitch(day)\n{\n    case 1:\n        Console.WriteLine(\"Monday\");\n        break;\n    case 2:\n        Console.WriteLine(\"Tuesday\");\n        break;\n    default:\n        Console.WriteLine(\"Other day\");\n        break;\n}",
+    "o": [
+      "Tuesday",
+      "Monday",
+      "Other day",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which language is primarily used for developing applications on the .NET platform?",
+    "o": [
+      "C#",
+      "Python",
+      "Java",
+      "Swift"
+    ]
+  },
+  {
+    "q": "What is the output of the following C# code snippet?",
+    "c": "int a = 4;\nint b = 3;\nb = a++;\nConsole.WriteLine(a + \",\" + b);",
+    "o": [
+      "5,4",
+      "4,3",
+      "4,5",
+      "5,3"
+    ]
+  },
+  {
+    "q": "Which of the following is a value type in C#?",
+    "o": [
+      "int",
+      "string",
+      "object",
+      "dynamic"
+    ]
+  },
+  {
+    "q": "What is the correct way to write a comment in C#?",
+    "o": [
+      "// This is a comment",
+      "# This is a comment",
+      "<!-- This is a comment -->",
+      "/* This is not valid */"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "string first = \"Hello\";\nstring second = \"World\";\nConsole.WriteLine(first + \" \" + second);",
+    "o": [
+      "Hello World",
+      "HelloWorld",
+      "World Hello",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following operators is used to compare two values in C#?",
+    "o": [
+      "==",
+      "=",
+      "!=",
+      "=>"
+    ]
+  },
+  {
+    "q": "What does the Console.ReadLine() method return?",
+    "o": [
+      "A string",
+      "An integer",
+      "A character",
+      "A boolean"
+    ]
+  },
+  {
+    "q": "What is the output of this code using a while loop?",
+    "c": "int i = 1;\nwhile (i <= 3)\n{\n    Console.Write(i + \" \");\n    i++;\n}",
+    "o": [
+      "1 2 3 ",
+      "0 1 2 ",
+      "1 2 3 4 ",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to exit a loop early in C#?",
+    "o": [
+      "break",
+      "exit",
+      "stop",
+      "end"
+    ]
+  },
+  {
+    "q": "What is the result of this if-else statement?",
+    "c": "int score = 80;\nif (score >= 75)\n{\n    Console.WriteLine(\"Passed\");\n}\nelse\n{\n    Console.WriteLine(\"Failed\");\n}",
+    "o": [
+      "Passed",
+      "Failed",
+      "Error",
+      "score"
+    ]
+  },
+  {
+    "q": "Which of the following best describes C#?",
+    "o": [
+      "A modern, object-oriented programming language developed by Microsoft.",
+      "A scripting language for web browsers.",
+      "An open-source operating system.",
+      "A database query language."
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "double num = 7.0 / 2;\nConsole.WriteLine(num);",
+    "o": [
+      "3.5",
+      "3",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a constant in C#?",
+    "o": [
+      "const",
+      "final",
+      "static",
+      "readonly"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "int x = 10;\nint y = 3;\nConsole.WriteLine(x % y);",
+    "o": [
+      "1",
+      "0",
+      "3",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of the following is used to format strings in C#?",
+    "o": [
+      "$\"{variable}\"",
+      "#\"{variable}\"",
+      "&\"{variable}\"",
+      "@\"{variable}\""
+    ]
+  },
+  {
+    "q": "Which method reads a single line of input from the console?",
+    "o": [
+      "Console.ReadLine()",
+      "Console.Read()",
+      "Console.Input()",
+      "Console.ReadKey()"
+    ]
+  },
+  {
+    "q": "What is the correct output of this code?",
+    "c": "bool isOnline = true;\nif (isOnline)\n{\n    Console.WriteLine(\"User is online\");\n}\nelse\n{\n    Console.WriteLine(\"User is offline\");\n}",
+    "o": [
+      "User is online",
+      "User is offline",
+      "true",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used for switch-case branching in C#?",
+    "o": [
+      "switch",
+      "select",
+      "match",
+      "caseof"
+    ]
+  },
+  {
+    "q": "What does this loop print?",
+    "c": "for (int i = 3; i > 0; i--)\n{\n    Console.Write(i);\n}",
+    "o": [
+      "321",
+      "123",
+      "012",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct assignment of a character in C#?",
+    "o": [
+      "char letter = 'A';",
+      "char letter = \"A\";",
+      "char letter = A;",
+      "char letter = `A`;"
+    ]
+  },
+  {
+    "q": "Which component of the .NET framework is responsible for executing C# code?",
+    "o": [
+      "Common Language Runtime (CLR)",
+      "Intermediate Language Compiler",
+      "Global Assembly Cache",
+      "Microsoft Visual Studio"
+    ]
+  },
+  {
+    "q": "What will be the output of the following C# code?",
+    "c": "int result = 10 + 5 * 2;\nConsole.WriteLine(result);",
+    "o": [
+      "20",
+      "30",
+      "25",
+      "15"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a variable and assigns a value in C#?",
+    "o": [
+      "int count = 100;",
+      "int = 100 count;",
+      "int count := 100;",
+      "count int = 100;"
+    ]
+  },
+  {
+    "q": "What will the following C# snippet print?",
+    "c": "string name = \"John\";\nConsole.WriteLine(\"Name: \" + name);",
+    "o": [
+      "Name: John",
+      "John Name",
+      "name",
+      "Name: + name"
+    ]
+  },
+  {
+    "q": "Which of the following data types is used to store true/false values in C#?",
+    "o": [
+      "bool",
+      "boolean",
+      "bit",
+      "logic"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "int a = 8;\nint b = 3;\nConsole.WriteLine(a / b);",
+    "o": [
+      "2",
+      "2.66",
+      "3",
+      "8"
+    ]
+  },
+  {
+    "q": "Which method can be used to convert a string to an integer in C#?",
+    "o": [
+      "int.Parse()",
+      "string.ToInt()",
+      "Convert.ToString()",
+      "ToInt32.Parse()"
+    ]
+  },
+  {
+    "q": "What does the following loop output?",
+    "c": "for (int i = 0; i < 3; i++)\n{\n    Console.WriteLine(\"Looping\");\n}",
+    "o": [
+      "Looping\nLooping\nLooping",
+      "Looping",
+      "Looping\nLooping",
+      "Looping\nLooping\nLooping\nLooping"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to handle multiple conditions in an if-else chain?",
+    "o": [
+      "if (...) { } else if (...) { } else { }",
+      "if (...) then (...) else if (...) then (...)",
+      "if (...) { } elseif (...) { }",
+      "switch (...) { if (...) ... }"
+    ]
+  },
+  {
+    "q": "Which of the following is used to display output on the console in C#?",
+    "o": [
+      "Console.WriteLine()",
+      "System.Print()",
+      "Output.Write()",
+      "PrintConsole()"
+    ]
+  },
+  {
+    "q": "Which of these is the entry point of a C# console application?",
+    "o": [
+      "static void Main(string[] args)",
+      "public void start()",
+      "main()",
+      "entry()"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "int a = 4, b = 6;\nint sum = a + b;\nConsole.WriteLine(sum);",
+    "o": [
+      "10",
+      "46",
+      "12",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid declaration of a float variable in C#?",
+    "o": [
+      "float pi = 3.14f;",
+      "float pi = 3.14;",
+      "float pi := 3.14;",
+      "float = pi 3.14f;"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "string first = \"C#\";\nstring second = \"Rocks\";\nConsole.WriteLine(first + \" \" + second);",
+    "o": [
+      "C# Rocks",
+      "C#Rocks",
+      "C# + Rocks",
+      "first second"
+    ]
+  },
+  {
+    "q": "Which operator is used for logical AND in C#?",
+    "o": [
+      "&&",
+      "&",
+      "and",
+      "||"
+    ]
+  },
+  {
+    "q": "Which of the following allows a user to input data from the console in C#?",
+    "o": [
+      "Console.ReadLine()",
+      "Console.Input()",
+      "Scanner.nextLine()",
+      "Read.Input()"
+    ]
+  },
+  {
+    "q": "What will be the output?",
+    "c": "int x = 5;\nif (x < 10)\n{\n    Console.WriteLine(\"Less than 10\");\n}",
+    "o": [
+      "Less than 10",
+      "10",
+      "x",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which of the following is used to repeat a block of code a specific number of times?",
+    "o": [
+      "for loop",
+      "if statement",
+      "switch statement",
+      "goto statement"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to use switch-case in C#?",
+    "o": [
+      "switch(x) { case 1: break; }",
+      "switch x { case 1 => break; }",
+      "match(x) { 1 => ... }",
+      "switch(x): case 1;"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "int i = 1;\nwhile (i <= 3)\n{\n    Console.Write(i);\n    i++;\n}",
+    "o": [
+      "123",
+      "321",
+      "111",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the purpose of the .NET framework?",
+    "o": [
+      "To provide a platform for building and running applications",
+      "To convert Java code to C#",
+      "To store data in SQL format",
+      "To design web pages visually"
+    ]
+  },
+  {
+    "q": "What will the following code display?",
+    "c": "int a = 12;\nint b = 4;\nConsole.WriteLine(a % b);",
+    "o": [
+      "0",
+      "3",
+      "4",
+      "12"
+    ]
+  },
+  {
+    "q": "Which keyword is used in C# to declare a variable that cannot be changed after initialization?",
+    "o": [
+      "const",
+      "static",
+      "readonly",
+      "final"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "Console.Write(\"Enter your name: \");\nstring name = Console.ReadLine();\nConsole.WriteLine($\"Welcome, {name}!\");",
+    "o": [
+      "It will ask the user to enter their name and greet them.",
+      "It prints 'Welcome, {name}!'",
+      "It shows an error because of $ symbol",
+      "It prints 'Enter your name:' and stops"
+    ]
+  },
+  {
+    "q": "Which of the following correctly uses a switch statement?",
+    "o": [
+      "switch(day) { case 1: Console.WriteLine(\"Monday\"); break; }",
+      "if(day == 1) Console.WriteLine(\"Monday\");",
+      "match(day) => 1: \"Monday\";",
+      "select day { case 1 => \"Monday\" }"
+    ]
+  },
+  {
+    "q": "What is the result of the expression: `true && false` in C#?",
+    "o": [
+      "false",
+      "true",
+      "truefalse",
+      "Error"
+    ]
+  },
+  {
+    "q": "What does this code output?",
+    "c": "for (int i = 0; i < 2; i++)\n{\n    Console.WriteLine(\"Hi\");\n}",
+    "o": [
+      "Hi\nHi",
+      "Hi",
+      "Hi Hi Hi",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which method would you use to format a string in C#?",
+    "o": [
+      "string.Format()",
+      "format.String()",
+      "Stringify()",
+      "Console.ToString()"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a character variable in C#?",
+    "o": [
+      "char letter = 'A';",
+      "char letter = \"A\";",
+      "char letter = A;",
+      "character letter = 'A';"
+    ]
+  },
+  {
+    "q": "What does the following conditional block evaluate to?",
+    "c": "int temp = 35;\nif (temp > 30)\n{\n    Console.WriteLine(\"Hot\");\n}\nelse\n{\n    Console.WriteLine(\"Cool\");\n}",
+    "o": [
+      "Hot",
+      "Cool",
+      "Error",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which of the following best describes C#?",
+    "o": [
+      "A modern, object-oriented programming language developed by Microsoft",
+      "A low-level assembly language",
+      "A markup language like HTML",
+      "A language used only for mobile apps"
+    ]
+  },
+  {
+    "q": "What does this C# code output?",
+    "c": "int x = 7;\nint y = 3;\nConsole.WriteLine(x / y);",
+    "o": [
+      "2",
+      "2.33",
+      "3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare an integer variable in C#?",
+    "o": [
+      "int number = 10;",
+      "integer number = 10;",
+      "int = 10;",
+      "num number = 10;"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "string city = \"London\";\nConsole.WriteLine(\"City: \" + city);",
+    "o": [
+      "City: London",
+      "London City",
+      "city: London",
+      "City: city"
+    ]
+  },
+  {
+    "q": "What is the result of: `5 + 3 * 2` in C#?",
+    "o": [
+      "11",
+      "16",
+      "13",
+      "10"
+    ]
+  },
+  {
+    "q": "Which loop is best when the number of iterations is known?",
+    "o": [
+      "for loop",
+      "while loop",
+      "do-while loop",
+      "foreach loop"
+    ]
+  },
+  {
+    "q": "What does this code display?",
+    "c": "bool isOn = false;\nif (!isOn)\n{\n    Console.WriteLine(\"Device is off\");\n}",
+    "o": [
+      "Device is off",
+      "Device is on",
+      "false",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these is the correct syntax for reading a line from the console?",
+    "o": [
+      "Console.ReadLine();",
+      "Read.Console();",
+      "Input.Read();",
+      "Console.Input();"
+    ]
+  },
+  {
+    "q": "What type of data does `Console.ReadLine()` return?",
+    "o": [
+      "string",
+      "char",
+      "int",
+      "bool"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "int i = 0;\ndo\n{\n    Console.Write(i);\n    i++;\n} while (i < 3);",
+    "o": [
+      "012",
+      "123",
+      "Error",
+      "321"
+    ]
+  },
+  {
+    "q": "Which of these is a main component of the .NET framework?",
+    "o": [
+      "Common Language Runtime (CLR)",
+      "Java Virtual Machine (JVM)",
+      "Node.js",
+      "Python Interpreter"
+    ]
+  },
+  {
+    "q": "What will this code display?",
+    "c": "double pi = 3.14159;\nConsole.WriteLine($\"Value of pi: {pi}\");",
+    "o": [
+      "Value of pi: 3.14159",
+      "$Value of pi: {pi}",
+      "pi = 3.14159",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which data type would you use to store `true` or `false` in C#?",
+    "o": [
+      "bool",
+      "int",
+      "string",
+      "float"
+    ]
+  },
+  {
+    "q": "What does the following C# code output?",
+    "c": "int x = 10;\nif (x != 5)\n{\n    Console.WriteLine(\"Not five\");\n}",
+    "o": [
+      "Not five",
+      "Five",
+      "True",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these is a correct way to concatenate strings in C#?",
+    "o": [
+      "string fullName = firstName + \" \" + lastName;",
+      "string fullName = firstName . lastName;",
+      "string fullName = concat(firstName, lastName);",
+      "string fullName = join(firstName, lastName);"
+    ]
+  },
+  {
+    "q": "What is the default value of an `int` variable in C# if declared inside a class but not initialized?",
+    "o": [
+      "0",
+      "null",
+      "undefined",
+      "1"
+    ]
+  },
+  {
+    "q": "What is the output of this loop?",
+    "c": "int i = 1;\nwhile (i < 3)\n{\n    Console.WriteLine(i);\n    i++;\n}",
+    "o": [
+      "1\n2",
+      "1\n2\n3",
+      "0\n1\n2",
+      "2\n3"
+    ]
+  },
+  {
+    "q": "Which of the following operators is used for equality comparison in C#?",
+    "o": [
+      "==",
+      "=",
+      "===",
+      "!="
+    ]
+  },
+  {
+    "q": "What does `Console.Write(\"Hello\")` do?",
+    "o": [
+      "Prints 'Hello' without moving to a new line",
+      "Prints 'Hello' and adds a new line",
+      "Prints Hello in uppercase",
+      "Throws a syntax error"
+    ]
+  },
+  {
+    "q": "Which of these is the correct syntax for an `if` statement?",
+    "o": [
+      "if (x > 10) { Console.WriteLine(\"Big\"); }",
+      "if x > 10 then Console.WriteLine(\"Big\");",
+      "if x > 10: Console.WriteLine(\"Big\")",
+      "if (x > 10) then { Console.WriteLine(\"Big\"); }"
+    ]
+  },
+  {
+    "q": "Which platform allows C# code to run on multiple operating systems?",
+    "o": [
+      ".NET Core",
+      ".NET Framework",
+      "MonoDevelop",
+      "Java SDK"
+    ]
+  },
+  {
+    "q": "What is the output of this C# code?",
+    "c": "int a = 5, b = 10;\nConsole.WriteLine(a > b ? a : b);",
+    "o": [
+      "10",
+      "5",
+      "a",
+      "true"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a constant value in C#?",
+    "o": [
+      "const",
+      "final",
+      "readonly",
+      "static"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "string name = \"Sam\";\nConsole.WriteLine($\"Hello, {name.ToUpper()}\");",
+    "o": [
+      "Hello, SAM",
+      "Hello, Sam",
+      "Hello, sam",
+      "SAM"
+    ]
+  },
+  {
+    "q": "Which of these is a correct variable declaration?",
+    "o": [
+      "float temperature = 36.6f;",
+      "float temperature = 36.6;",
+      "float = temperature 36.6;",
+      "float temperature = \"36.6\";"
+    ]
+  },
+  {
+    "q": "What will be printed by this loop?",
+    "c": "for (int i = 2; i <= 6; i += 2)\n{\n    Console.Write(i);\n}",
+    "o": [
+      "246",
+      "23456",
+      "13579",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which statement is true about `switch` in C#?",
+    "o": [
+      "`switch` must use constant expressions in `case` labels",
+      "`switch` works only with strings",
+      "`switch` cannot be nested",
+      "`switch` allows range conditions"
+    ]
+  },
+  {
+    "q": "Which operator is used for modulus in C#?",
+    "o": [
+      "%",
+      "&",
+      "//",
+      "^"
+    ]
+  },
+  {
+    "q": "What does this program output?",
+    "c": "string user = \"Alex\";\nConsole.WriteLine(\"Welcome \" + user);",
+    "o": [
+      "Welcome Alex",
+      "Alex Welcome",
+      "user Welcome",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which C# statement reads user input from the console?",
+    "o": [
+      "Console.ReadLine();",
+      "input();",
+      "Scanner.Read();",
+      "readline();"
+    ]
+  },
+  {
+    "q": "Which company developed the C# programming language?",
+    "o": [
+      "Microsoft",
+      "Apple",
+      "Oracle",
+      "Google"
+    ]
+  },
+  {
+    "q": "What is the result of this C# code snippet?",
+    "c": "int x = 7;\nint y = 3;\nConsole.WriteLine(x % y);",
+    "o": [
+      "1",
+      "2",
+      "0",
+      "3"
+    ]
+  },
+  {
+    "q": "Which of the following data types is used to store a single Unicode character in C#?",
+    "o": [
+      "char",
+      "string",
+      "Character",
+      "byte"
+    ]
+  },
+  {
+    "q": "What does the following code output?",
+    "c": "bool isActive = true;\nif (!isActive)\n{\n    Console.WriteLine(\"Inactive\");\n}\nelse\n{\n    Console.WriteLine(\"Active\");\n}",
+    "o": [
+      "Active",
+      "Inactive",
+      "true",
+      "false"
+    ]
+  },
+  {
+    "q": "What keyword is used in C# to declare a block of code that handles exceptions?",
+    "o": [
+      "try",
+      "catch",
+      "handle",
+      "error"
+    ]
+  },
+  {
+    "q": "What is the output of this loop?",
+    "c": "int sum = 0;\nfor (int i = 1; i <= 3; i++) {\n    sum += i;\n}\nConsole.WriteLine(sum);",
+    "o": [
+      "6",
+      "5",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "Which operator is used for logical AND in C#?",
+    "o": [
+      "&&",
+      "&",
+      "and",
+      "AND"
+    ]
+  },
+  {
+    "q": "What is the purpose of `Console.WriteLine()` in C#?",
+    "o": [
+      "Outputs text and moves to the next line",
+      "Outputs text without a newline",
+      "Reads input from the user",
+      "Declares a variable"
+    ]
+  },
+  {
+    "q": "Which loop is guaranteed to execute at least once?",
+    "o": [
+      "do-while",
+      "while",
+      "for",
+      "foreach"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "string lang = \"C#\";\nConsole.WriteLine(lang.Length);",
+    "o": [
+      "2",
+      "3",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the Common Language Runtime (CLR) in .NET?",
+    "o": [
+      "It manages memory, code execution, and provides security.",
+      "It is the text editor for writing .NET code.",
+      "It compiles C# code to machine code.",
+      "It only runs on Windows."
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "int a = 2;\nint b = 3;\nConsole.WriteLine(a * b + 4);",
+    "o": [
+      "10",
+      "14",
+      "9",
+      "6"
+    ]
+  },
+  {
+    "q": "Which data type would you use to store true/false values in C#?",
+    "o": [
+      "bool",
+      "byte",
+      "char",
+      "int"
+    ]
+  },
+  {
+    "q": "What does the following code print?",
+    "c": "int x = 5;\nif (x != 5)\n{\n    Console.WriteLine(\"Not Five\");\n}\nelse\n{\n    Console.WriteLine(\"Five\");\n}",
+    "o": [
+      "Five",
+      "Not Five",
+      "x",
+      "true"
+    ]
+  },
+  {
+    "q": "Which of these is a correct way to format a string using interpolation in C#?",
+    "o": [
+      "$\"Welcome, {name}!\"",
+      "format(\"Welcome, {0}\", name)",
+      "\"Welcome, \" + name + \"!\"",
+      "string.Format(\"Welcome, {0}!\", name)"
+    ]
+  },
+  {
+    "q": "What does this loop print?",
+    "c": "for (int i = 1; i < 4; i++)\n{\n    Console.Write(i + \" \");\n}",
+    "o": [
+      "1 2 3 ",
+      "0 1 2 ",
+      "1 2 3 4 ",
+      "2 3 4 "
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to take input from the console in C#?",
+    "o": [
+      "Console.ReadLine()",
+      "Console.WriteLine()",
+      "Read()",
+      "scanf()"
+    ]
+  },
+  {
+    "q": "What will be printed by this switch-case block?",
+    "c": "int choice = 2;\nswitch (choice)\n{\n    case 1:\n        Console.WriteLine(\"One\");\n        break;\n    case 2:\n        Console.WriteLine(\"Two\");\n        break;\n    default:\n        Console.WriteLine(\"Other\");\n        break;\n}",
+    "o": [
+      "Two",
+      "One",
+      "Other",
+      "None"
+    ]
+  },
+  {
+    "q": "Which of these is a valid assignment for a `double` variable?",
+    "o": [
+      "double pi = 3.14;",
+      "double pi = \"3.14\";",
+      "double pi = true;",
+      "double pi = '3';"
+    ]
+  },
+  {
+    "q": "What is the default value of an uninitialized `int` field in a C# class?",
+    "o": [
+      "0",
+      "null",
+      "undefined",
+      "NaN"
+    ]
+  },
+  {
+    "q": "Which component of .NET is responsible for compiling Intermediate Language (IL) code to native code?",
+    "o": [
+      "Just-In-Time (JIT) Compiler",
+      "Common Type System (CTS)",
+      "Common Language Specification (CLS)",
+      "Global Assembly Cache (GAC)"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "int a = 10;\nint b = 4;\nConsole.WriteLine(a / b);",
+    "o": [
+      "2",
+      "2.5",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "q": "Which data type in C# is used to store decimal numbers with high precision?",
+    "o": [
+      "decimal",
+      "float",
+      "int",
+      "char"
+    ]
+  },
+  {
+    "q": "What will be printed by this conditional block?",
+    "c": "int num = 15;\nif (num % 5 == 0 && num % 3 == 0)\n{\n    Console.WriteLine(\"FizzBuzz\");\n}\nelse\n{\n    Console.WriteLine(\"Not FizzBuzz\");\n}",
+    "o": [
+      "FizzBuzz",
+      "Fizz",
+      "Buzz",
+      "Not FizzBuzz"
+    ]
+  },
+  {
+    "q": "Which method is used to convert a string to an integer in C#?",
+    "o": [
+      "int.Parse()",
+      "ToInt()",
+      "Convert.StringToInt()",
+      "parseInt()"
+    ]
+  },
+  {
+    "q": "What does this loop output?",
+    "c": "int x = 1;\nwhile (x <= 3)\n{\n    Console.WriteLine(x);\n    x++;\n}",
+    "o": [
+      "1\n2\n3",
+      "0\n1\n2",
+      "1\n2\n3\n4",
+      "3\n2\n1"
+    ]
+  },
+  {
+    "q": "Which operator is used to increment a value by 1 in C#?",
+    "o": [
+      "++",
+      "+=",
+      "add",
+      "+1"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a constant value that cannot be changed?",
+    "o": [
+      "const",
+      "readonly",
+      "static",
+      "final"
+    ]
+  },
+  {
+    "q": "What does the following code display?",
+    "c": "string name = \"Eve\";\nConsole.WriteLine(\"Hello \" + name + \"!\");",
+    "o": [
+      "Hello Eve!",
+      "Eve Hello!",
+      "Hello",
+      "Eve!"
+    ]
+  },
+  {
+    "q": "Which control structure is best for checking multiple specific values of a single variable?",
+    "o": [
+      "switch",
+      "if-else",
+      "for",
+      "while"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the C# language?",
+    "o": [
+      "A modern, object-oriented programming language developed by Microsoft",
+      "A scripting language used mainly for web design",
+      "An extension of Java used in Linux systems",
+      "A low-level assembly programming language"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "int x = 7;\nx += 3;\nConsole.WriteLine(x);",
+    "o": [
+      "10",
+      "9",
+      "7",
+      "3"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct declaration of a character variable in C#?",
+    "o": [
+      "char letter = 'A';",
+      "char letter = \"A\";",
+      "char letter = A;",
+      "char = 'A';"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "string name = \"Alex\";\nConsole.WriteLine($\"Welcome, {name}!\");",
+    "o": [
+      "Welcome, Alex!",
+      "$Welcome, {name}!",
+      "name",
+      "Welcome, name!"
+    ]
+  },
+  {
+    "q": "Which loop is guaranteed to execute at least once?",
+    "o": [
+      "do-while",
+      "while",
+      "for",
+      "foreach"
+    ]
+  },
+  {
+    "q": "Which of the following correctly reads a line of input from the user in C#?",
+    "o": [
+      "string input = Console.ReadLine();",
+      "string input = Read.Input();",
+      "Console.Write(input);",
+      "input = Read();"
+    ]
+  },
+  {
+    "q": "What will be printed by this switch statement?",
+    "c": "int day = 1;\nswitch (day)\n{\n    case 1:\n        Console.WriteLine(\"Monday\");\n        break;\n    case 2:\n        Console.WriteLine(\"Tuesday\");\n        break;\n}",
+    "o": [
+      "Monday",
+      "Tuesday",
+      "1",
+      "day"
+    ]
+  },
+  {
+    "q": "Which operator is used to compare two values for equality in C#?",
+    "o": [
+      "==",
+      "=",
+      "!=",
+      "equals"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid variable name in C#?",
+    "o": [
+      "totalAmount",
+      "2ndValue",
+      "float",
+      "total-amount"
+    ]
+  },
+  {
+    "q": "What is the result of this expression: (4 + 2) * 3?",
+    "o": [
+      "18",
+      "10",
+      "12",
+      "24"
+    ]
+  },
+  {
+    "q": "What is the purpose of the Common Language Runtime (CLR) in .NET?",
+    "o": [
+      "To manage execution of C# programs",
+      "To compile C++ code to machine language",
+      "To store files in a SQL database",
+      "To display graphical user interfaces"
+    ]
+  },
+  {
+    "q": "What will the following code display?",
+    "c": "bool isSunny = true;\nif (isSunny)\n{\n    Console.WriteLine(\"Wear sunglasses\");\n}",
+    "o": [
+      "Wear sunglasses",
+      "It will cause an error",
+      "false",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following data types is used to store a single true or false value in C#?",
+    "o": [
+      "bool",
+      "int",
+      "char",
+      "string"
+    ]
+  },
+  {
+    "q": "What will be printed when the following code is executed?",
+    "c": "int total = 100;\nint count = 4;\nConsole.WriteLine(total / count);",
+    "o": [
+      "25",
+      "100",
+      "4",
+      "0"
+    ]
+  },
+  {
+    "q": "Which symbol is used for string interpolation in C#?",
+    "o": [
+      "$",
+      "#",
+      "@",
+      "%"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "for (int i = 1; i <= 3; i++)\n{\n    Console.Write(i);\n}",
+    "o": [
+      "123",
+      "321",
+      "1 2 3",
+      "0 1 2"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid C# data type?",
+    "o": [
+      "real",
+      "string",
+      "int",
+      "bool"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "int a = 5, b = 2;\nConsole.WriteLine((float)a / b);",
+    "o": [
+      "2.5",
+      "2",
+      "3",
+      "2.0"
+    ]
+  },
+  {
+    "q": "Which of these best describes the use of 'break' in C#?",
+    "o": [
+      "To exit a loop or switch statement early",
+      "To skip the current iteration",
+      "To restart the loop",
+      "To continue from the beginning of the program"
+    ]
+  },
+  {
+    "q": "Which line correctly declares a variable to hold the user's name?",
+    "o": [
+      "string userName;",
+      "userName string;",
+      "string = userName;",
+      "str userName;"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct file extension for a C# source file?",
+    "o": [
+      ".cs",
+      ".csharp",
+      ".c#",
+      ".net"
+    ]
+  },
+  {
+    "q": "What will be printed by this C# code?",
+    "c": "int a = 8;\nint b = 3;\nConsole.WriteLine(a % b);",
+    "o": [
+      "2",
+      "5",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a constant value in C#?",
+    "o": [
+      "const",
+      "final",
+      "readonly",
+      "static"
+    ]
+  },
+  {
+    "q": "What is the default value of an uninitialized integer in C#?",
+    "o": [
+      "0",
+      "null",
+      "undefined",
+      "NaN"
+    ]
+  },
+  {
+    "q": "What does the following loop print?",
+    "c": "int i = 0;\nwhile (i < 3)\n{\n    Console.Write(i);\n    i++;\n}",
+    "o": [
+      "012",
+      "123",
+      "321",
+      "Loop runs infinitely"
+    ]
+  },
+  {
+    "q": "Which of the following correctly assigns a string value in C#?",
+    "o": [
+      "string name = \"John\";",
+      "string name = 'John';",
+      "name = string('John');",
+      "str name = John;"
+    ]
+  },
+  {
+    "q": "What is the role of the .NET framework in C# development?",
+    "o": [
+      "It provides a runtime environment and libraries for building applications",
+      "It is a compiler for converting C# to Java",
+      "It is used for connecting to SQL Server only",
+      "It is only used for mobile app development"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "int x = 10;\nif (x > 5 && x < 15)\n{\n    Console.WriteLine(\"In range\");\n}",
+    "o": [
+      "In range",
+      "Out of range",
+      "x",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which statement is used to skip an iteration in a loop?",
+    "o": [
+      "continue",
+      "break",
+      "return",
+      "exit"
+    ]
+  },
+  {
+    "q": "Which of the following correctly compares two integers for equality?",
+    "o": [
+      "if (a == b)",
+      "if (a = b)",
+      "if a == b:",
+      "if (a equals b)"
+    ]
+  },
+  {
+    "q": "Which component of .NET is responsible for managing memory, exceptions, and security?",
+    "o": [
+      "Common Language Runtime (CLR)",
+      "Common Type System (CTS)",
+      "Microsoft Intermediate Language (MSIL)",
+      "Base Class Library (BCL)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "int a = 7;\nint b = 2;\nConsole.WriteLine(a / b);",
+    "o": [
+      "3",
+      "3.5",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which operator is used to combine two strings in C#?",
+    "o": [
+      "+",
+      "&",
+      "*",
+      "%"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "string name = \"Eva\";\nConsole.WriteLine($\"Hello, {name}!\");",
+    "o": [
+      "Hello, Eva!",
+      "Hello, {name}!",
+      "name",
+      "Eva"
+    ]
+  },
+  {
+    "q": "Which loop is guaranteed to run at least once?",
+    "o": [
+      "do-while",
+      "while",
+      "for",
+      "foreach"
+    ]
+  },
+  {
+    "q": "What is the correct way to read user input as a string in C#?",
+    "o": [
+      "string input = Console.ReadLine();",
+      "input = read();",
+      "string input = Input.Read();",
+      "string input = ReadString();"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax for an if-else statement in C#?",
+    "o": [
+      "if (x > 5) { ... } else { ... }",
+      "if x > 5 then { ... } else { ... }",
+      "if x > 5: ... else: ...",
+      "if x > 5 { ... } elseif { ... }"
+    ]
+  },
+  {
+    "q": "Which data type should you use to store a person's age in C#?",
+    "o": [
+      "int",
+      "string",
+      "bool",
+      "double"
+    ]
+  },
+  {
+    "q": "What does the 'switch' statement do in C#?",
+    "o": [
+      "Evaluates an expression and matches it to case labels",
+      "Declares multiple variables",
+      "Loops through values",
+      "Executes code regardless of condition"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid variable declaration in C#?",
+    "o": [
+      "double price = 9.99;",
+      "price = double 9.99;",
+      "double = price 9.99;",
+      "float price := 9.99;"
+    ]
+  },
+  {
+    "q": "Which of the following is responsible for converting C# code to machine code in .NET?",
+    "o": [
+      "Just-In-Time (JIT) Compiler",
+      "Common Type System (CTS)",
+      "Intermediate Language (IL)",
+      "Base Class Library (BCL)"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "int x = 4;\nx += 3;\nConsole.WriteLine(x);",
+    "o": [
+      "7",
+      "4",
+      "3",
+      "43"
+    ]
+  },
+  {
+    "q": "Which symbol is used for single-line comments in C#?",
+    "o": [
+      "//",
+      "#",
+      "--",
+      "/*"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "string name = \"John\";\nint age = 25;\nConsole.WriteLine(\"{0} is {1} years old\", name, age);",
+    "o": [
+      "John is 25 years old",
+      "{0} is {1} years old",
+      "John 25",
+      "name is age years old"
+    ]
+  },
+  {
+    "q": "Which data type is best suited to store a person's middle initial?",
+    "o": [
+      "char",
+      "string",
+      "bool",
+      "int"
+    ]
+  },
+  {
+    "q": "What is the result of this expression: true || false?",
+    "o": [
+      "true",
+      "false",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "What will this loop print?",
+    "c": "for (int i = 2; i <= 6; i += 2)\n{\n    Console.Write(i + \" \");\n}",
+    "o": [
+      "2 4 6 ",
+      "1 2 3 ",
+      "2 3 4 ",
+      "2 4 5 6 "
+    ]
+  },
+  {
+    "q": "Which of the following is a correct 'switch' statement structure in C#?",
+    "o": [
+      "switch (value) { case 1: break; default: break; }",
+      "switch value: { case 1: break; default: break; }",
+      "switch (value) then { case 1: break; }",
+      "case value in switch { 1: break; }"
+    ]
+  },
+  {
+    "q": "What keyword is used to exit a loop immediately in C#?",
+    "o": [
+      "break",
+      "exit",
+      "stop",
+      "return"
+    ]
+  },
+  {
+    "q": "Which of the following reads a whole line of text from the console in C#?",
+    "o": [
+      "Console.ReadLine()",
+      "Console.Read()",
+      "Input.Get()",
+      "Read.Input()"
+    ]
+  },
+  {
+    "q": "Which file extension is typically used for a C# source code file?",
+    "o": [
+      ".cs",
+      ".csharp",
+      ".net",
+      ".c#"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "int result = 10 % 3;\nConsole.WriteLine(result);",
+    "o": [
+      "1",
+      "3",
+      "0",
+      "10"
+    ]
+  },
+  {
+    "q": "Which data type would you use to store a large whole number in C#?",
+    "o": [
+      "long",
+      "float",
+      "bool",
+      "char"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "int x = 5;\nif (x > 3 && x < 10)\n{\n    Console.WriteLine(\"Valid\");\n}",
+    "o": [
+      "Valid",
+      "Invalid",
+      "Error",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which .NET feature allows different languages like C#, VB.NET, and F# to interoperate?",
+    "o": [
+      "Common Language Runtime (CLR)",
+      "Base Class Library (BCL)",
+      "Windows Forms",
+      "Visual Studio"
+    ]
+  },
+  {
+    "q": "What is the output of this loop?",
+    "c": "int i = 0;\nwhile (i < 3)\n{\n    Console.WriteLine(i);\n    i++;\n}",
+    "o": [
+      "0\n1\n2",
+      "1\n2\n3",
+      "0\n1\n2\n3",
+      "1\n2"
+    ]
+  },
+  {
+    "q": "Which of the following is not a value type in C#?",
+    "o": [
+      "string",
+      "int",
+      "bool",
+      "double"
+    ]
+  },
+  {
+    "q": "What is the correct way to check if two variables `a` and `b` are not equal?",
+    "o": [
+      "a != b",
+      "a <> b",
+      "a not b",
+      "a !== b"
+    ]
+  },
+  {
+    "q": "Which of the following can be used to repeat a block of code a specific number of times?",
+    "o": [
+      "for loop",
+      "if statement",
+      "switch statement",
+      "try-catch block"
+    ]
+  },
+  {
+    "q": "What is the correct syntax to declare a constant value in C#?",
+    "o": [
+      "const double Pi = 3.14;",
+      "constant double Pi = 3.14;",
+      "final double Pi = 3.14;",
+      "let Pi = 3.14;"
+    ]
+  },
+  {
+    "q": "Which component of the .NET framework manages memory and execution of .NET programs?",
+    "o": [
+      "Common Language Runtime (CLR)",
+      "Common Type System (CTS)",
+      "Intermediate Language (IL)",
+      "Framework Class Library (FCL)"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "int a = 7, b = 2;\ndouble result = (double)a / b;\nConsole.WriteLine(result);",
+    "o": [
+      "3.5",
+      "3",
+      "3.0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to take input from the user in a C# console application?",
+    "o": [
+      "Console.ReadLine()",
+      "Console.Input()",
+      "Input.Read()",
+      "Read.Console()"
+    ]
+  },
+  {
+    "q": "What is the default value of a boolean variable in C#?",
+    "o": [
+      "false",
+      "true",
+      "0",
+      "null"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "int x = 6;\nif (x % 2 == 0)\n{\n    Console.Write(\"Even\");\n}\nelse\n{\n    Console.Write(\"Odd\");\n}",
+    "o": [
+      "Even",
+      "Odd",
+      "Error",
+      "6"
+    ]
+  },
+  {
+    "q": "Which of the following is used to repeat a block of code as long as a condition is true?",
+    "o": [
+      "while loop",
+      "if statement",
+      "switch statement",
+      "goto"
+    ]
+  },
+  {
+    "q": "Which of the following declares a variable of type `float`?",
+    "o": [
+      "float price = 9.99f;",
+      "float price = 9.99;",
+      "float price = \"9.99\";",
+      "float price = 9;"
+    ]
+  },
+  {
+    "q": "What is the correct format specifier for inserting a variable in a string using interpolation?",
+    "o": [
+      "$\"Hello, {name}!\"",
+      "fmt(\"Hello, {name}!\")",
+      "\"Hello, {0}\", name",
+      "interpolate(\"Hello, {name}\")"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a switch statement?",
+    "o": [
+      "A control statement that selects one of many code blocks to execute",
+      "A loop that continues until a condition becomes false",
+      "A statement to handle exceptions",
+      "A data type for multiple choices"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "int i = 1;\ndo\n{\n    Console.Write(i + \" \");\n    i++;\n} while (i <= 3);",
+    "o": [
+      "1 2 3 ",
+      "0 1 2 ",
+      "1 2 ",
+      "0 1 2 3"
+    ]
+  },
+  {
+    "q": "Which of the following is the entry point of a C# console application?",
+    "o": [
+      "static void Main(string[] args)",
+      "static int Start(string[] args)",
+      "public static Run()",
+      "int main()"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "int a = 3;\nint b = 4;\nConsole.WriteLine(a * b);",
+    "o": [
+      "12",
+      "7",
+      "1",
+      "34"
+    ]
+  },
+  {
+    "q": "Which operator is used for logical AND in C#?",
+    "o": [
+      "&&",
+      "&",
+      "and",
+      "AND"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "string name = \"Bob\";\nConsole.WriteLine($\"Welcome {name}!\");",
+    "o": [
+      "Welcome Bob!",
+      "Welcome {name}!",
+      "Bob Welcome!",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a value type in C#?",
+    "o": [
+      "int",
+      "string",
+      "object",
+      "array"
+    ]
+  },
+  {
+    "q": "Which keyword is used to skip the current iteration of a loop in C#?",
+    "o": [
+      "continue",
+      "skip",
+      "break",
+      "pass"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "int x = 2;\nswitch(x) {\n    case 1:\n        Console.WriteLine(\"One\"); break;\n    case 2:\n        Console.WriteLine(\"Two\"); break;\n    default:\n        Console.WriteLine(\"Other\"); break;\n}",
+    "o": [
+      "Two",
+      "One",
+      "Other",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare a string in C#?",
+    "o": [
+      "string message = \"Hello\";",
+      "str message = 'Hello';",
+      "string message := \"Hello\";",
+      "message = string(\"Hello\");"
+    ]
+  },
+  {
+    "q": "Which data type is best suited for true/false values in C#?",
+    "o": [
+      "bool",
+      "bit",
+      "boolean",
+      "flag"
+    ]
+  },
+  {
+    "q": "What is the output of this loop?",
+    "c": "for (int i = 1; i <= 3; i++) {\n    Console.Write(i + \" \");\n}",
+    "o": [
+      "1 2 3 ",
+      "0 1 2 ",
+      "1 2 ",
+      "0 1 2 3"
+    ]
+  },
+  {
+    "q": "Which language is primarily used with the .NET framework for developing Windows applications?",
+    "o": [
+      "C#",
+      "Java",
+      "Python",
+      "Ruby"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "int x = 10;\nint y = 3;\nConsole.WriteLine(x % y);",
+    "o": [
+      "1",
+      "3",
+      "0",
+      "10"
+    ]
+  },
+  {
+    "q": "Which keyword is used to declare a constant in C#?",
+    "o": [
+      "const",
+      "final",
+      "readonly",
+      "static"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "string city = \"Paris\";\nConsole.WriteLine(\"City: \" + city);",
+    "o": [
+      "City: Paris",
+      "Paris",
+      "City",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid data type in C#?",
+    "o": [
+      "real",
+      "float",
+      "int",
+      "string"
+    ]
+  },
+  {
+    "q": "Which operator is used to compare two values for equality in C#?",
+    "o": [
+      "==",
+      "=",
+      "!=",
+      "equals"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "int count = 0;\nwhile (count < 2)\n{\n    Console.Write(\"Hi \");\n    count++;\n}",
+    "o": [
+      "Hi Hi ",
+      "Hi ",
+      "Hi Hi Hi ",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which method is used to convert a string to an integer in C#?",
+    "o": [
+      "int.Parse()",
+      "Convert.Int()",
+      "ToInt()",
+      "parseInt()"
+    ]
+  },
+  {
+    "q": "Which of the following allows checking multiple conditions in a single structure?",
+    "o": [
+      "switch statement",
+      "while loop",
+      "for loop",
+      "goto statement"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "int score = 75;\nif (score >= 50)\n    Console.Write(\"Pass\");\nelse\n    Console.Write(\"Fail\");",
+    "o": [
+      "Pass",
+      "Fail",
+      "75",
+      "Error"
+    ]
+  },
+  {
+    "q": "What does the .NET framework provide for application development?",
+    "o": [
+      "A runtime environment and class libraries",
+      "Only a compiler",
+      "Database storage",
+      "A web browser"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "int a = 7;\nint b = 2;\ndouble result = (double)a / b;\nConsole.WriteLine(result);",
+    "o": [
+      "3.5",
+      "3",
+      "3.0",
+      "7"
+    ]
+  },
+  {
+    "q": "Which data type is used to store a single Unicode character in C#?",
+    "o": [
+      "char",
+      "string",
+      "Character",
+      "unicode"
+    ]
+  },
+  {
+    "q": "What will the following code display?",
+    "c": "Console.WriteLine(\"{0} + {1} = {2}\", 3, 4, 3+4);",
+    "o": [
+      "3 + 4 = 7",
+      "{0} + {1} = {2}",
+      "7",
+      "3 4 7"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax to take integer input from the user in C#?",
+    "o": [
+      "int number = Convert.ToInt32(Console.ReadLine());",
+      "int number = int.read();",
+      "int number = console.input();",
+      "int number = ReadLine();"
+    ]
+  },
+  {
+    "q": "Which operator is used to increase the value of a variable by 1?",
+    "o": [
+      "++",
+      "+",
+      "+=",
+      "=="
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "int i = 0;\ndo {\n    Console.Write(i + \" \");\n    i++;\n} while(i < 3);",
+    "o": [
+      "0 1 2 ",
+      "1 2 3 ",
+      "0 1 2 3 ",
+      "0 1 "
+    ]
+  },
+  {
+    "q": "Which control structure is best suited for checking multiple discrete values of a variable?",
+    "o": [
+      "switch",
+      "if-else",
+      "while",
+      "for"
+    ]
+  },
+  {
+    "q": "Which one is a reference type in C#?",
+    "o": [
+      "string",
+      "int",
+      "bool",
+      "char"
+    ]
+  },
+  {
+    "q": "What is the result of this code?",
+    "c": "int x = 5;\nint y = x++;\nConsole.WriteLine(y);",
+    "o": [
+      "5",
+      "6",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about C#?",
+    "o": [
+      "It is an object-oriented programming language developed by Microsoft.",
+      "It is a low-level language for device drivers.",
+      "It runs only on Linux systems.",
+      "It does not support web development."
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "int a = 4;\nbool result = a < 5 && a > 2;\nConsole.WriteLine(result);",
+    "o": [
+      "True",
+      "False",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which data type is used to store true or false values?",
+    "o": [
+      "bool",
+      "int",
+      "char",
+      "float"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "string name = \"Bob\";\nint age = 25;\nConsole.WriteLine($\"{name} is {age} years old.\");",
+    "o": [
+      "Bob is 25 years old.",
+      "{name} is {age} years old.",
+      "name is age years old.",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these is used to receive a line of text input from the user?",
+    "o": [
+      "Console.ReadLine()",
+      "Console.WriteLine()",
+      "Console.Read()",
+      "Console.Input()"
+    ]
+  },
+  {
+    "q": "What is the result of this expression: 10 / 4 in C#?",
+    "o": [
+      "2",
+      "2.5",
+      "2.0",
+      "4"
+    ]
+  },
+  {
+    "q": "What does this loop print?",
+    "c": "for(int i = 1; i <= 3; i++) {\n    Console.Write(i + \" \");\n}",
+    "o": [
+      "1 2 3 ",
+      "0 1 2 ",
+      "1 2 ",
+      "1 2 3 4 "
+    ]
+  },
+  {
+    "q": "Which keyword is used to exit a loop early in C#?",
+    "o": [
+      "break",
+      "exit",
+      "stop",
+      "terminate"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare a float variable in C#?",
+    "o": [
+      "float pi = 3.14f;",
+      "float pi = 3.14;",
+      "float pi = '3.14';",
+      "float pi = \"3.14\";"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "int x = 8;\nswitch (x) {\n    case 5:\n        Console.Write(\"Five\");\n        break;\n    case 8:\n        Console.Write(\"Eight\");\n        break;\n    default:\n        Console.Write(\"Other\");\n}",
+    "o": [
+      "Eight",
+      "Five",
+      "Other",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which component of .NET is responsible for executing C# programs?",
+    "o": [
+      "Common Language Runtime (CLR)",
+      "Visual Studio",
+      "MSIL",
+      "Garbage Collector"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "int x = 10;\nx += 5;\nConsole.WriteLine(x);",
+    "o": [
+      "15",
+      "10",
+      "5",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a value type in C#?",
+    "o": [
+      "int",
+      "string",
+      "object",
+      "dynamic"
+    ]
+  },
+  {
+    "q": "What will the following code display?",
+    "c": "int x = 3;\nif (x == 3)\n{\n    Console.WriteLine(\"Matched\");\n}\nelse\n{\n    Console.WriteLine(\"Not Matched\");\n}",
+    "o": [
+      "Matched",
+      "Not Matched",
+      "Error",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which function is used to print output in C#?",
+    "o": [
+      "Console.WriteLine()",
+      "print()",
+      "System.out.println()",
+      "echo()"
+    ]
+  },
+  {
+    "q": "What does the '%' operator do in C#?",
+    "o": [
+      "Returns the remainder of a division",
+      "Performs multiplication",
+      "Performs division",
+      "Returns percentage value"
+    ]
+  },
+  {
+    "q": "How many times will the following loop run?",
+    "c": "for (int i = 0; i < 4; i++)\n{\n    Console.Write(\"*\");\n}",
+    "o": [
+      "4",
+      "3",
+      "5",
+      "0"
+    ]
+  },
+  {
+    "q": "Which keyword is used for a conditional branching statement in C#?",
+    "o": [
+      "if",
+      "loop",
+      "goto",
+      "switchcase"
+    ]
+  },
+  {
+    "q": "Which of these best describes C#?",
+    "o": [
+      "A modern, object-oriented programming language developed by Microsoft",
+      "An outdated procedural language",
+      "A markup language for web design",
+      "A low-level assembly language"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "string fruit = \"Apple\";\nConsole.WriteLine(fruit.Length);",
+    "o": [
+      "5",
+      "4",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the purpose of the .NET Framework?",
+    "o": [
+      "To provide a runtime environment and libraries for building applications",
+      "To manage databases",
+      "To create operating systems",
+      "To run only unmanaged code"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "int x = 7;\nint y = 3;\nConsole.WriteLine(x % y);",
+    "o": [
+      "1",
+      "2",
+      "0",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of the following is used to declare a constant in C#?",
+    "o": [
+      "const",
+      "static",
+      "readonly",
+      "final"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "string city = \"London\";\nConsole.WriteLine($\"City: {city}\");",
+    "o": [
+      "City: London",
+      "$City: {city}",
+      "London",
+      "city: London"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a correct data type in C#?",
+    "o": [
+      "real",
+      "int",
+      "char",
+      "bool"
+    ]
+  },
+  {
+    "q": "How many times will the following loop execute?",
+    "c": "int count = 1;\nwhile (count <= 3)\n{\n    Console.Write(count);\n    count++;\n}",
+    "o": [
+      "3",
+      "2",
+      "1",
+      "Infinite"
+    ]
+  },
+  {
+    "q": "What is the result of this comparison: 5 == 5 in C#?",
+    "o": [
+      "True",
+      "False",
+      "5",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to get user input in C#?",
+    "o": [
+      "Console.ReadLine()",
+      "input()",
+      "scanf()",
+      "cin>>"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "int score = 80;\nswitch(score)\n{\n    case 90:\n        Console.Write(\"Excellent\");\n        break;\n    case 80:\n        Console.Write(\"Good\");\n        break;\n    default:\n        Console.Write(\"Try Again\");\n}",
+    "o": [
+      "Good",
+      "Excellent",
+      "Try Again",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which operator is used for logical OR in C#?",
+    "o": [
+      "||",
+      "&&",
+      "|",
+      "or"
+    ]
+  },
+  {
+    "q": "Which file extension is used for C# source code files?",
+    "o": [
+      ".cs",
+      ".c",
+      ".cpp",
+      ".csharp"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "int a = 10;\nint b = 4;\nConsole.WriteLine(a / b);",
+    "o": [
+      "2",
+      "2.5",
+      "2.0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which data type should be used to store true or false values in C#?",
+    "o": [
+      "bool",
+      "bit",
+      "boolean",
+      "int"
+    ]
+  },
+  {
+    "q": "Which of the following statements will correctly declare a string in C#?",
+    "o": [
+      "string name = \"John\";",
+      "String = 'John';",
+      "char name = 'John';",
+      "text name = John;"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "for (int i = 1; i <= 3; i++)\n{\n    Console.WriteLine(\"Loop: \" + i);\n}",
+    "o": [
+      "Loop: 1\nLoop: 2\nLoop: 3",
+      "1 2 3",
+      "Loop: 3\nLoop: 2\nLoop: 1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is used to combine strings in C#?",
+    "o": [
+      "+",
+      "&",
+      ".append()",
+      "concat()"
+    ]
+  },
+  {
+    "q": "What is the default value of an `int` variable in C# if it’s declared as a class field and not initialized?",
+    "o": [
+      "0",
+      "null",
+      "undefined",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following will evaluate to true?",
+    "o": [
+      "5 > 3 && 2 < 4",
+      "5 < 3 && 2 < 4",
+      "5 == 3 || 2 > 4",
+      "!true"
+    ]
+  },
+  {
+    "q": "What does this code do?",
+    "c": "int number = Convert.ToInt32(Console.ReadLine());",
+    "o": [
+      "Reads user input and converts it to an integer",
+      "Reads a file from console",
+      "Converts an integer to a string",
+      "Prints the number to the screen"
+    ]
+  },
+  {
+    "q": "Which loop is guaranteed to execute at least once?",
+    "o": [
+      "do-while loop",
+      "for loop",
+      "while loop",
+      "foreach loop"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the Common Language Runtime (CLR) in .NET?",
+    "o": [
+      "It manages memory and executes .NET applications",
+      "It handles only user authentication",
+      "It compiles C++ code to binary",
+      "It provides a text editor for C#"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "int a = 3, b = 2;\nb += a++;\nConsole.WriteLine(b);",
+    "o": [
+      "5",
+      "6",
+      "4",
+      "3"
+    ]
+  },
+  {
+    "q": "Which data type should be used to store a decimal number like 3.14 in C#?",
+    "o": [
+      "double",
+      "int",
+      "char",
+      "bool"
+    ]
+  },
+  {
+    "q": "Which of the following correctly outputs: Hello, John!",
+    "c": "string name = \"John\";\nConsole.WriteLine($\"Hello, {name}!\");",
+    "o": [
+      "Hello, John!",
+      "Hello, {name}!",
+      "Hello, name!",
+      "Hello John!"
+    ]
+  },
+  {
+    "q": "Which of these correctly checks if a number is positive in C#?",
+    "o": [
+      "if (number > 0)",
+      "if number > 0 then",
+      "if number := 0",
+      "if number gt 0"
+    ]
+  },
+  {
+    "q": "What does the following loop do?",
+    "c": "int i = 1;\ndo {\n  Console.WriteLine(i);\n  i++;\n} while (i <= 3);",
+    "o": [
+      "Prints numbers 1 to 3",
+      "Prints 0 to 3",
+      "Prints 1 to 2",
+      "Does not print anything"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid variable name in C#?",
+    "o": [
+      "userName",
+      "123name",
+      "void",
+      "user-name"
+    ]
+  },
+  {
+    "q": "What will be the output?",
+    "c": "string s = \"C#\";\nConsole.WriteLine(\"Welcome to \" + s);",
+    "o": [
+      "Welcome to C#",
+      "C# Welcome",
+      "Welcome C# to",
+      "Welcome + C#"
+    ]
+  },
+  {
+    "q": "Which C# keyword is used to exit a loop early?",
+    "o": [
+      "break",
+      "exit",
+      "continue",
+      "stop"
+    ]
+  },
+  {
+    "q": "What does the modulus operator (%) do in C#?",
+    "o": [
+      "Returns the remainder of a division",
+      "Divides two numbers",
+      "Returns the percentage",
+      "Returns the product of two numbers"
+    ]
+  },
+  {
+    "q": "Which of the following is true about C#?",
+    "o": [
+      "C# is a type-safe, object-oriented language developed by Microsoft.",
+      "C# is only used for web development.",
+      "C# cannot be used for desktop applications.",
+      "C# does not support object-oriented programming."
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "int x = 10;\nint y = 5;\nConsole.WriteLine(x % y);",
+    "o": [
+      "0",
+      "5",
+      "2",
+      "1"
+    ]
+  },
+  {
+    "q": "Which data type should you use to store a single Unicode character in C#?",
+    "o": [
+      "char",
+      "string",
+      "byte",
+      "bool"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "string name = \"Alice\";\nint age = 30;\nConsole.WriteLine(\"Name: {0}, Age: {1}\", name, age);",
+    "o": [
+      "Name: Alice, Age: 30",
+      "Name: {0}, Age: {1}",
+      "Alice, 30",
+      "Name and Age"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'switch' statement in C#?",
+    "o": [
+      "To select one of many code blocks to be executed",
+      "To define a method",
+      "To loop through a block of code",
+      "To compare two variables"
+    ]
+  },
+  {
+    "q": "What is the result of the following code?",
+    "c": "bool isRaining = false;\nif (!isRaining)\n{\n    Console.WriteLine(\"Go outside\");\n}",
+    "o": [
+      "Go outside",
+      "Stay inside",
+      "Nothing will be printed",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to declare a float variable in C#?",
+    "o": [
+      "float pi = 3.14f;",
+      "float pi = 3.14;",
+      "float pi = '3.14';",
+      "float pi := 3.14;"
+    ]
+  },
+  {
+    "q": "What is the output of this loop?",
+    "c": "for (int i = 2; i < 6; i += 2)\n{\n    Console.Write(i);\n}",
+    "o": [
+      "24",
+      "2345",
+      "26",
+      "2 4"
+    ]
+  },
+  {
+    "q": "Which operator is used to compare two values in C#?",
+    "o": [
+      "==",
+      "=",
+      "===",
+      "!="
+    ]
+  },
+  {
+    "q": "How do you read input from the user in C#?",
+    "o": [
+      "Console.ReadLine()",
+      "Console.Read()",
+      "Input()",
+      "Scanner.next()"
+    ]
+  },
+  {
+    "q": "Which of the following is the main runtime environment for executing C# applications?",
+    "o": [
+      ".NET Common Language Runtime (CLR)",
+      "Java Virtual Machine (JVM)",
+      "Python Interpreter",
+      "Windows Runtime"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "int a = 10;\nint b = 20;\nConsole.WriteLine(a + b);",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "1020"
+    ]
+  },
+  {
+    "q": "Which keyword is used to declare a variable in C#?",
+    "o": [
+      "int",
+      "var",
+      "dim",
+      "define"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "string name = \"John\";\nConsole.WriteLine($\"Hello, {name}!\");",
+    "o": [
+      "Hello, John!",
+      "Hello, name!",
+      "$Hello, John!",
+      "Hello John"
+    ]
+  },
+  {
+    "q": "Which of the following is used to read input from the user in C#?",
+    "o": [
+      "Console.ReadLine()",
+      "cin",
+      "input()",
+      "read()"
+    ]
+  },
+  {
+    "q": "What is the result of the following C# expression: 5 % 2?",
+    "o": [
+      "1",
+      "2",
+      "0",
+      "2.5"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "int number = 7;\nif (number % 2 == 0)\n{\n    Console.WriteLine(\"Even\");\n}\nelse\n{\n    Console.WriteLine(\"Odd\");\n}",
+    "o": [
+      "Odd",
+      "Even",
+      "7",
+      "True"
+    ]
+  },
+  {
+    "q": "Which loop is guaranteed to execute at least once in C#?",
+    "o": [
+      "do-while loop",
+      "for loop",
+      "while loop",
+      "foreach loop"
+    ]
+  },
+  {
+    "q": "What will be printed by the following code?",
+    "c": "for (int i = 1; i <= 3; i++)\n{\n    Console.Write(i + \" \");\n}",
+    "o": [
+      "1 2 3 ",
+      "0 1 2 ",
+      "1 2 3 4 ",
+      "2 3 4 "
+    ]
+  },
+  {
+    "q": "Which of the following is a valid switch statement syntax in C#?",
+    "o": [
+      "switch (x) { case 1: break; }",
+      "switch x { case 1: break; }",
+      "switch x ( case 1: break; )",
+      "select case x { 1: break; }"
+    ]
+  },
+  {
+    "q": "Which language is primarily used for developing applications on the .NET platform?",
+    "o": [
+      "C#",
+      "C",
+      "Python",
+      "Ruby"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "int x = 8;\nint y = 3;\nConsole.WriteLine(x / y);",
+    "o": [
+      "2",
+      "2.66",
+      "3",
+      "2.5"
+    ]
+  },
+  {
+    "q": "Which of the following is a value type in C#?",
+    "o": [
+      "int",
+      "string",
+      "object",
+      "Array"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "string firstName = \"Jane\";\nstring lastName = \"Doe\";\nConsole.WriteLine(firstName + \" \" + lastName);",
+    "o": [
+      "Jane Doe",
+      "JaneDoe",
+      "firstName lastName",
+      "Jane + Doe"
+    ]
+  },
+  {
+    "q": "Which of the following is used to format output in C# using placeholders?",
+    "o": [
+      "Console.WriteLine(\"Result: {0}\", value);",
+      "Console.WriteLine(\"Result: %s\", value);",
+      "Console.WriteLine(\"Result: value\");",
+      "Console.WriteLine(\"Result = &value\");"
+    ]
+  },
+  {
+    "q": "What is the default value of a bool variable in C# if not explicitly initialized?",
+    "o": [
+      "false",
+      "true",
+      "null",
+      "0"
+    ]
+  },
+  {
+    "q": "What is the output of this C# code snippet?",
+    "c": "int num = 15;\nif (num > 10 && num < 20)\n{\n    Console.WriteLine(\"In Range\");\n}",
+    "o": [
+      "In Range",
+      "Out of Range",
+      "Error",
+      "15"
+    ]
+  },
+  {
+    "q": "Which operator is used for string concatenation in C#?",
+    "o": [
+      "+",
+      "&",
+      ".",
+      "%"
+    ]
+  },
+  {
+    "q": "What does the following loop do?",
+    "c": "int i = 1;\nwhile (i <= 3)\n{\n    Console.Write(i);\n    i++;\n}",
+    "o": [
+      "123",
+      "0123",
+      "321",
+      "Infinite loop"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare a constant in C#?",
+    "o": [
+      "const double PI = 3.14;",
+      "double const PI = 3.14;",
+      "final double PI = 3.14;",
+      "PI = 3.14 const;"
+    ]
+  },
+  {
+    "q": "Which component of .NET is responsible for memory management and garbage collection?",
+    "o": [
+      "Common Language Runtime (CLR)",
+      "Just-In-Time Compiler (JIT)",
+      "Base Class Library (BCL)",
+      "Common Type System (CTS)"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "int a = 4;\nint b = 5;\nb *= a;\nConsole.WriteLine(b);",
+    "o": [
+      "20",
+      "9",
+      "1",
+      "45"
+    ]
+  },
+  {
+    "q": "Which data type would you use to store a single Unicode character in C#?",
+    "o": [
+      "char",
+      "string",
+      "Character",
+      "byte"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "bool isActive = true;\nConsole.WriteLine(isActive);",
+    "o": [
+      "True",
+      "False",
+      "true",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following statements correctly reads a line of input from the console in C#?",
+    "o": [
+      "string input = Console.ReadLine();",
+      "input = read();",
+      "read input = Console();",
+      "string input = Read.Console();"
+    ]
+  },
+  {
+    "q": "What is the size (in bytes) of an `int` in C#?",
+    "o": [
+      "4",
+      "2",
+      "8",
+      "1"
+    ]
+  },
+  {
+    "q": "What is the output of the following switch statement?",
+    "c": "int choice = 2;\nswitch (choice)\n{\n    case 1:\n        Console.WriteLine(\"One\");\n        break;\n    case 2:\n        Console.WriteLine(\"Two\");\n        break;\n    default:\n        Console.WriteLine(\"Other\");\n        break;\n}",
+    "o": [
+      "Two",
+      "One",
+      "Other",
+      "1"
+    ]
+  },
+  {
+    "q": "Which loop type is best used when the number of iterations is known in advance?",
+    "o": [
+      "for loop",
+      "while loop",
+      "do-while loop",
+      "foreach loop"
+    ]
+  },
+  {
+    "q": "What will the following code snippet output?",
+    "c": "int total = 0;\nfor (int i = 1; i <= 3; i++)\n{\n    total += i;\n}\nConsole.WriteLine(total);",
+    "o": [
+      "6",
+      "3",
+      "5",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following operators is used to compare two values for equality in C#?",
+    "o": [
+      "==",
+      "=",
+      "!=",
+      "equals"
+    ]
+  },
+  {
+    "q": "Which company developed the C# programming language?",
+    "o": [
+      "Microsoft",
+      "Oracle",
+      "IBM",
+      "Google"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "int x = 7;\nx++;\nConsole.WriteLine(x);",
+    "o": [
+      "8",
+      "7",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following data types is used to store a floating-point number in C#?",
+    "o": [
+      "float",
+      "int",
+      "bool",
+      "char"
+    ]
+  },
+  {
+    "q": "What is the result of this expression in C#: 10 + 3 * 2?",
+    "o": [
+      "16",
+      "26",
+      "20",
+      "13"
+    ]
+  },
+  {
+    "q": "What does the following code output?",
+    "c": "Console.WriteLine(\"C#\" + \" \" + \"Rocks!\");",
+    "o": [
+      "C# Rocks!",
+      "C#Rocks!",
+      "C# + Rocks!",
+      "C# + Rocks"
+    ]
+  },
+  {
+    "q": "Which method is used to convert a string to an integer in C#?",
+    "o": [
+      "int.Parse()",
+      "ConvertToInt()",
+      "toInt()",
+      "parseInt()"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "int i = 0;\ndo\n{\n    Console.Write(i);\n    i++;\n} while (i < 3);",
+    "o": [
+      "012",
+      "123",
+      "321",
+      "01"
+    ]
+  },
+  {
+    "q": "Which of these keywords is used to skip the current iteration of a loop in C#?",
+    "o": [
+      "continue",
+      "skip",
+      "pass",
+      "break"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "int a = 3, b = 4;\nif (a == b)\n    Console.WriteLine(\"Equal\");\nelse\n    Console.WriteLine(\"Not Equal\");",
+    "o": [
+      "Not Equal",
+      "Equal",
+      "3 4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid C# data type?",
+    "o": [
+      "real",
+      "int",
+      "float",
+      "decimal"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about C#?",
+    "o": [
+      "C# is a statically typed, object-oriented programming language developed for the .NET platform.",
+      "C# is a dynamically typed scripting language.",
+      "C# was developed by Apple for macOS applications.",
+      "C# does not support object-oriented programming."
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "int x = 12;\nint y = 5;\nConsole.WriteLine(x % y);",
+    "o": [
+      "2",
+      "0",
+      "1",
+      "7"
+    ]
+  },
+  {
+    "q": "Which data type would be most appropriate for storing a person's age in C#?",
+    "o": [
+      "byte",
+      "string",
+      "bool",
+      "double"
+    ]
+  },
+  {
+    "q": "Which C# statement will correctly display the value of a variable `score`?",
+    "o": [
+      "Console.WriteLine(\"Score: {0}\", score);",
+      "print(score);",
+      "echo(score);",
+      "Console.Output(score);"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "int result = 4 + 5 * 2;\nConsole.WriteLine(result);",
+    "o": [
+      "14",
+      "18",
+      "10",
+      "13"
+    ]
+  },
+  {
+    "q": "Which of the following control structures is used to execute a block of code repeatedly while a condition is true?",
+    "o": [
+      "while loop",
+      "if statement",
+      "switch statement",
+      "goto statement"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "int count = 0;\nwhile (count < 2)\n{\n    Console.Write(\"Hi \");\n    count++;\n}",
+    "o": [
+      "Hi Hi ",
+      "Hi",
+      "HiHiHi",
+      "Hi count"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a block of code that will only execute if a condition is false in C#?",
+    "o": [
+      "else",
+      "default",
+      "switch",
+      "then"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "int value = 10;\nif (value >= 10)\n{\n    Console.WriteLine(\"Valid\");\n}",
+    "o": [
+      "Valid",
+      "10",
+      "Invalid",
+      "true"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid identifier in C#?",
+    "o": [
+      "_totalAmount",
+      "1stNumber",
+      "float",
+      "my-variable"
+    ]
+  },
+  {
+    "q": "Which part of the .NET framework provides access to system-level functions and types?",
+    "o": [
+      "Base Class Library (BCL)",
+      "Common Intermediate Language (CIL)",
+      "Just-In-Time Compiler (JIT)",
+      "Common Language Specification (CLS)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "int a = 10;\nint b = 3;\ndouble result = (double)a / b;\nConsole.WriteLine(result);",
+    "o": [
+      "3.3333333333333335",
+      "3",
+      "0",
+      "10"
+    ]
+  },
+  {
+    "q": "Which data type is used to store a true or false value in C#?",
+    "o": [
+      "bool",
+      "bit",
+      "boolean",
+      "truth"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to format a string with two variables?",
+    "o": [
+      "Console.WriteLine(\"{0} scored {1} marks\", name, score);",
+      "Console.WriteLine(\"%s scored %d marks\", name, score);",
+      "Console.WriteLine(name + \" scored \" + score + \" marks\");",
+      "printf(\"%s scored %d marks\", name, score);"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "int x = 5;\nint y = 2;\nint z = x / y;\nConsole.WriteLine(z);",
+    "o": [
+      "2",
+      "2.5",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to exit a loop early in C#?",
+    "o": [
+      "break",
+      "exit",
+      "end",
+      "stop"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "for (int i = 3; i > 0; i--)\n{\n    Console.Write(i);\n}",
+    "o": [
+      "321",
+      "123",
+      "012",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which statement is used to choose one option from many based on the value of a variable?",
+    "o": [
+      "switch",
+      "if-else",
+      "goto",
+      "loop"
+    ]
+  },
+  {
+    "q": "What does this code snippet print?",
+    "c": "int score = 85;\nif (score >= 90)\n    Console.WriteLine(\"Grade A\");\nelse if (score >= 80)\n    Console.WriteLine(\"Grade B\");",
+    "o": [
+      "Grade B",
+      "Grade A",
+      "85",
+      "Grade C"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct variable declaration in C#?",
+    "o": [
+      "int number = 100;",
+      "integer number = 100;",
+      "num = 100;",
+      "var int number = 100;"
+    ]
+  },
+  {
+    "q": "Which language feature allows C# code to be compiled to an intermediate form that runs on the .NET runtime?",
+    "o": [
+      "Common Intermediate Language (CIL)",
+      "Just-In-Time Compilation",
+      "Base Class Library",
+      "Common Language Specification"
+    ]
+  },
+  {
+    "q": "What will the following C# code output?",
+    "c": "int a = 9;\nint b = 2;\nConsole.WriteLine(a % b);",
+    "o": [
+      "1",
+      "4.5",
+      "2",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following data types is suitable to store large decimal values with high precision?",
+    "o": [
+      "decimal",
+      "float",
+      "int",
+      "char"
+    ]
+  },
+  {
+    "q": "Which method is used in C# to display output without moving to the next line?",
+    "o": [
+      "Console.Write()",
+      "Console.WriteLine()",
+      "print()",
+      "Write.Output()"
+    ]
+  },
+  {
+    "q": "What is the result of this expression: (5 + 2) * 3 in C#?",
+    "o": [
+      "21",
+      "17",
+      "11",
+      "15"
+    ]
+  },
+  {
+    "q": "Which type of loop is guaranteed to execute at least once?",
+    "o": [
+      "do-while loop",
+      "for loop",
+      "while loop",
+      "foreach loop"
+    ]
+  },
+  {
+    "q": "What will be printed by the following code?",
+    "c": "int sum = 0;\nfor (int i = 1; i <= 3; i++)\n{\n    sum += i;\n}\nConsole.WriteLine(sum);",
+    "o": [
+      "6",
+      "9",
+      "3",
+      "1"
+    ]
+  },
+  {
+    "q": "What is the role of the 'default' keyword in a switch statement?",
+    "o": [
+      "It handles all unmatched cases.",
+      "It throws an exception if no case matches.",
+      "It returns the default value of a variable.",
+      "It defines the type of the switch expression."
+    ]
+  },
+  {
+    "q": "What will be the result of the following if-else statement?",
+    "c": "int temperature = 30;\nif (temperature > 35)\n    Console.WriteLine(\"Hot\");\nelse\n    Console.WriteLine(\"Moderate\");",
+    "o": [
+      "Moderate",
+      "Hot",
+      "35",
+      "Cold"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to declare and initialize a string in C#?",
+    "o": [
+      "string message = \"Hello World\";",
+      "str message = 'Hello World';",
+      "String = message(\"Hello World\");",
+      "text message = Hello World;"
+    ]
+  },
+  {
+    "q": "Which runtime environment does C# code typically run on?",
+    "o": [
+      ".NET CLR",
+      "Java JVM",
+      "Python Interpreter",
+      "Node.js Engine"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "int a = 6;\nint b = 4;\nint c = a - b;\nConsole.WriteLine(c);",
+    "o": [
+      "2",
+      "10",
+      "4",
+      "-2"
+    ]
+  },
+  {
+    "q": "Which keyword in C# is used to declare a variable that cannot be changed after initialization?",
+    "o": [
+      "const",
+      "var",
+      "readonly",
+      "static"
+    ]
+  },
+  {
+    "q": "Which method is used to read a line of input from the user in C#?",
+    "o": [
+      "Console.ReadLine()",
+      "Console.Input()",
+      "Input.Read()",
+      "Read.Console()"
+    ]
+  },
+  {
+    "q": "Evaluate this expression: 4 * 2 + 3 in C#",
+    "o": [
+      "11",
+      "14",
+      "10",
+      "9"
+    ]
+  },
+  {
+    "q": "Which loop is most appropriate when the number of iterations is known?",
+    "o": [
+      "for loop",
+      "while loop",
+      "do-while loop",
+      "foreach loop"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "int total = 1;\nint n = 3;\nwhile (n > 0)\n{\n    total *= n;\n    n--;\n}\nConsole.WriteLine(total);",
+    "o": [
+      "6",
+      "9",
+      "3",
+      "1"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define multiple execution paths based on a variable’s value?",
+    "o": [
+      "switch",
+      "case",
+      "select",
+      "route"
+    ]
+  },
+  {
+    "q": "What will be printed by this C# code?",
+    "c": "bool isActive = true;\nif (!isActive)\n    Console.WriteLine(\"Inactive\");\nelse\n    Console.WriteLine(\"Active\");",
+    "o": [
+      "Active",
+      "Inactive",
+      "true",
+      "false"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to define an integer variable in C#?",
+    "o": [
+      "int score = 100;",
+      "integer score = 100;",
+      "int score := 100;",
+      "int score -> 100;"
+    ]
+  },
+  {
+    "q": "Which component of .NET compiles C# code into machine-executable code at runtime?",
+    "o": [
+      "Just-In-Time Compiler (JIT)",
+      "Common Language Runtime (CLR)",
+      "Common Type System (CTS)",
+      "Base Class Library (BCL)"
+    ]
+  },
+  {
+    "q": "What will the following code display?",
+    "c": "int x = 8;\nx += 4;\nConsole.WriteLine(x);",
+    "o": [
+      "12",
+      "4",
+      "8",
+      "14"
+    ]
+  },
+  {
+    "q": "Which of the following is a value type in C#?",
+    "o": [
+      "int",
+      "string",
+      "object",
+      "class"
+    ]
+  },
+  {
+    "q": "Which method can be used to format a string with placeholders?",
+    "o": [
+      "string.Format()",
+      "Console.Insert()",
+      "Text.Replace()",
+      "Console.Interpolate()"
+    ]
+  },
+  {
+    "q": "What is the result of this expression: 10 / 4 in C# (integer division)?",
+    "o": [
+      "2",
+      "2.5",
+      "3.33",
+      "4"
+    ]
+  },
+  {
+    "q": "Which loop is best used when iterating over elements in an array?",
+    "o": [
+      "foreach loop",
+      "while loop",
+      "do-while loop",
+      "goto loop"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "int n = 5;\nif (n % 2 == 0)\n    Console.WriteLine(\"Even\");\nelse\n    Console.WriteLine(\"Odd\");",
+    "o": [
+      "Odd",
+      "Even",
+      "5",
+      "true"
+    ]
+  },
+  {
+    "q": "Which statement will transfer control out of the current loop in C#?",
+    "o": [
+      "break",
+      "return",
+      "continue",
+      "goto"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "string name = \"Bob\";\nConsole.WriteLine($\"Hello, {name}!\");",
+    "o": [
+      "Hello, Bob!",
+      "$Hello, Bob!",
+      "Hello, {name}!",
+      "name"
+    ]
+  },
+  {
+    "q": "Which of the following declares a character variable in C#?",
+    "o": [
+      "char grade = 'A';",
+      "character grade = \"A\";",
+      "char grade = \"A\";",
+      "char grade := 'A';"
+    ]
+  },
+  {
+    "q": "What is the main purpose of the Common Language Runtime (CLR) in the .NET Framework?",
+    "o": [
+      "It manages the execution of .NET programs.",
+      "It handles database connections.",
+      "It compiles Java bytecode.",
+      "It provides a web hosting environment."
+    ]
+  },
+  {
+    "q": "What will be printed by the following code?",
+    "c": "int a = 7, b = 2;\nConsole.WriteLine(a / b);",
+    "o": [
+      "3",
+      "3.5",
+      "2",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct declaration of a double variable in C#?",
+    "o": [
+      "double pi = 3.14;",
+      "double pi = '3.14';",
+      "double pi := 3.14;",
+      "float pi = 3.14;"
+    ]
+  },
+  {
+    "q": "Which function is used to convert a string to an integer in C#?",
+    "o": [
+      "int.Parse()",
+      "ToInt()",
+      "ConvertInt()",
+      "parseInt()"
+    ]
+  },
+  {
+    "q": "What will the following expression evaluate to in C#: (4 + 3 * 2)?",
+    "o": [
+      "10",
+      "14",
+      "12",
+      "8"
+    ]
+  },
+  {
+    "q": "Which loop checks the condition after the first iteration?",
+    "o": [
+      "do-while loop",
+      "while loop",
+      "for loop",
+      "foreach loop"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "int i = 1;\nwhile (i <= 3)\n{\n    Console.Write(i);\n    i++;\n}",
+    "o": [
+      "123",
+      "321",
+      "111",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which control structure would be most appropriate to evaluate a variable against several constant values?",
+    "o": [
+      "switch",
+      "if-else",
+      "for loop",
+      "do-while"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "bool hasAccess = false;\nConsole.WriteLine(hasAccess ? \"Granted\" : \"Denied\");",
+    "o": [
+      "Denied",
+      "Granted",
+      "false",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares and initializes a boolean variable?",
+    "o": [
+      "bool isReady = true;",
+      "boolean isReady = 1;",
+      "bit isReady = true;",
+      "bool isReady := true;"
+    ]
+  },
+  {
+    "q": "What is the extension of a typical C# source code file?",
+    "o": [
+      ".cs",
+      ".csharp",
+      ".c#",
+      ".net"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "int a = 10;\na--;\nConsole.WriteLine(a);",
+    "o": [
+      "9",
+      "10",
+      "11",
+      "0"
+    ]
+  },
+  {
+    "q": "Which data type should be used to store a single Unicode character in C#?",
+    "o": [
+      "char",
+      "string",
+      "byte",
+      "bool"
+    ]
+  },
+  {
+    "q": "Which of the following reads a single character from the console in C#?",
+    "o": [
+      "Console.Read()",
+      "Console.ReadKey()",
+      "Console.ReadChar()",
+      "Console.ReadLine()"
+    ]
+  },
+  {
+    "q": "What is the result of the following expression in C#: 5 + 2 * 3?",
+    "o": [
+      "11",
+      "21",
+      "15",
+      "9"
+    ]
+  },
+  {
+    "q": "Which statement exits the current loop immediately?",
+    "o": [
+      "break",
+      "continue",
+      "exit",
+      "return"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "int total = 0;\nfor (int i = 1; i < 4; i++)\n{\n    total += i;\n}\nConsole.WriteLine(total);",
+    "o": [
+      "6",
+      "10",
+      "4",
+      "3"
+    ]
+  },
+  {
+    "q": "Which control structure allows repeated execution while a condition remains true?",
+    "o": [
+      "while loop",
+      "if statement",
+      "switch statement",
+      "goto statement"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "int x = 15;\nif (x >= 10 && x <= 20)\n    Console.WriteLine(\"In range\");\nelse\n    Console.WriteLine(\"Out of range\");",
+    "o": [
+      "In range",
+      "Out of range",
+      "10",
+      "true"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a floating-point variable in C#?",
+    "o": [
+      "float distance = 12.5f;",
+      "float distance = \"12.5\";",
+      "float distance := 12.5;",
+      "float = distance(12.5);"
+    ]
+  },
+  {
+    "q": "Which tool is responsible for converting C# code into Intermediate Language (IL) code?",
+    "o": [
+      "C# Compiler (csc)",
+      "Just-In-Time (JIT) Compiler",
+      "CLR",
+      "MSBuild"
+    ]
+  },
+  {
+    "q": "What will be the output of the following C# code?",
+    "c": "int x = 3;\nint y = ++x;\nConsole.WriteLine(y);",
+    "o": [
+      "4",
+      "3",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is the default value of an `int` in C#?",
+    "o": [
+      "0",
+      "null",
+      "undefined",
+      "1"
+    ]
+  },
+  {
+    "q": "Which function in C# writes output without adding a new line?",
+    "o": [
+      "Console.Write()",
+      "Console.Println()",
+      "Console.Output()",
+      "Console.Print()"
+    ]
+  },
+  {
+    "q": "What will be the result of this expression in C#: (7 % 4)?",
+    "o": [
+      "3",
+      "1",
+      "0",
+      "2"
+    ]
+  },
+  {
+    "q": "Which of the following loops ensures that the loop body executes at least once?",
+    "o": [
+      "do-while loop",
+      "while loop",
+      "for loop",
+      "foreach loop"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "int i = 0;\nwhile (i < 2)\n{\n    Console.Write(\"* \");\n    i++;\n}",
+    "o": [
+      "* * ",
+      "* ",
+      "**",
+      "0 1"
+    ]
+  },
+  {
+    "q": "Which keyword is used in a switch-case to stop fall-through?",
+    "o": [
+      "break",
+      "stop",
+      "exit",
+      "return"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "string name = \"John\";\nint age = 30;\nConsole.WriteLine($\"Name: {name}, Age: {age}\");",
+    "o": [
+      "Name: John, Age: 30",
+      "$Name: John, Age: 30",
+      "Name: {name}, Age: {age}",
+      "John 30"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to declare a constant in C#?",
+    "o": [
+      "const double Pi = 3.1415;",
+      "constant Pi = 3.1415;",
+      "final Pi = 3.1415;",
+      "let Pi = 3.1415;"
+    ]
+  },
+  {
+    "q": "Which .NET component provides services like memory management and security?",
+    "o": [
+      "Common Language Runtime (CLR)",
+      "Just-In-Time (JIT) Compiler",
+      "Common Type System (CTS)",
+      "Global Assembly Cache (GAC)"
+    ]
+  },
+  {
+    "q": "What will the following C# code output?",
+    "c": "int x = 5;\nx *= 2;\nConsole.WriteLine(x);",
+    "o": [
+      "10",
+      "7",
+      "25",
+      "5"
+    ]
+  },
+  {
+    "q": "Which of the following types can hold decimal values in C#?",
+    "o": [
+      "double",
+      "int",
+      "char",
+      "bool"
+    ]
+  },
+  {
+    "q": "Which method in C# reads an entire line of user input as a string?",
+    "o": [
+      "Console.ReadLine()",
+      "Console.Input()",
+      "Console.Read()",
+      "Console.Scan()"
+    ]
+  },
+  {
+    "q": "What will be the result of this expression: (8 > 5) && (3 < 1) in C#?",
+    "o": [
+      "False",
+      "True",
+      "8",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which loop is ideal for repeating a block a known number of times?",
+    "o": [
+      "for loop",
+      "while loop",
+      "do-while loop",
+      "foreach loop"
+    ]
+  },
+  {
+    "q": "What will this C# code print?",
+    "c": "int n = 4;\nswitch (n)\n{\n    case 4:\n        Console.Write(\"Four\");\n        break;\n    default:\n        Console.Write(\"Unknown\");\n}",
+    "o": [
+      "Four",
+      "Unknown",
+      "Error",
+      "n"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid C# operator?",
+    "o": [
+      "%%",
+      "+=",
+      "==",
+      "&&"
+    ]
+  },
+  {
+    "q": "What does the following code print?",
+    "c": "bool isOnline = true;\nConsole.WriteLine(!isOnline);",
+    "o": [
+      "False",
+      "True",
+      "Error",
+      "isOnline"
+    ]
+  },
+  {
+    "q": "Which of the following declares an integer variable without assigning a value?",
+    "o": [
+      "int count;",
+      "int count =;",
+      "integer count;",
+      "int = count;"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'using System;' directive in C#?",
+    "o": [
+      "It allows access to classes in the System namespace.",
+      "It declares a new namespace.",
+      "It defines a system variable.",
+      "It initializes the CLR."
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "int a = 12;\nint b = 5;\nConsole.WriteLine(a % b);",
+    "o": [
+      "2",
+      "7",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a block that executes only if a condition is true?",
+    "o": [
+      "if",
+      "switch",
+      "for",
+      "do"
+    ]
+  },
+  {
+    "q": "Which of these is the correct way to declare a string in C#?",
+    "o": [
+      "string name = \"Alice\";",
+      "String name = 'Alice';",
+      "string name := \"Alice\";",
+      "char name = \"Alice\";"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "int i = 0;\ndo {\n    Console.Write(i);\n    i++;\n} while(i < 2);",
+    "o": [
+      "01",
+      "10",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following operators is used for logical OR in C#?",
+    "o": [
+      "||",
+      "&&",
+      "|=",
+      "^^"
+    ]
+  },
+  {
+    "q": "What will the output of the following code be?",
+    "c": "string fruit = \"Apple\";\nConsole.WriteLine(fruit.Length);",
+    "o": [
+      "5",
+      "6",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the default value of a bool type in C#?",
+    "o": [
+      "false",
+      "true",
+      "0",
+      "null"
+    ]
+  },
+  {
+    "q": "Which C# statement is used to skip the current iteration of a loop?",
+    "o": [
+      "continue",
+      "break",
+      "exit",
+      "skip"
+    ]
+  },
+  {
+    "q": "Which of the following statements correctly takes input from the user?",
+    "o": [
+      "string name = Console.ReadLine();",
+      "input name;",
+      "cin >> name;",
+      "scanf(\"%s\", name);"
+    ]
+  },
+  {
+    "q": "Which of the following is the runtime environment of .NET that manages code execution?",
+    "o": [
+      "CLR (Common Language Runtime)",
+      "CTS (Common Type System)",
+      "FCL (Framework Class Library)",
+      "CLI (Common Language Infrastructure)"
+    ]
+  },
+  {
+    "q": "What will the following C# code output?",
+    "c": "int a = 7;\nint b = 3;\nint result = a / b;\nConsole.WriteLine(result);",
+    "o": [
+      "2",
+      "2.33",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a method that does not return any value?",
+    "o": [
+      "void",
+      "empty",
+      "null",
+      "returnless"
+    ]
+  },
+  {
+    "q": "Which of these correctly initializes a boolean variable to false?",
+    "o": [
+      "bool isActive = false;",
+      "boolean isActive = false;",
+      "bool isActive := false;",
+      "bool isActive == false;"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "int sum = 0;\nfor (int i = 2; i <= 4; i++) {\n    sum += i;\n}\nConsole.WriteLine(sum);",
+    "o": [
+      "9",
+      "6",
+      "7",
+      "10"
+    ]
+  },
+  {
+    "q": "What operator is used for equality comparison in C#?",
+    "o": [
+      "==",
+      "=",
+      "===",
+      "!="
+    ]
+  },
+  {
+    "q": "What will this code display?",
+    "c": "string msg = \"Hi\";\nmsg += \" there!\";\nConsole.WriteLine(msg);",
+    "o": [
+      "Hi there!",
+      "Hi",
+      "there!",
+      "msg"
+    ]
+  },
+  {
+    "q": "Which data type would you use to store a whole number in C#?",
+    "o": [
+      "int",
+      "float",
+      "double",
+      "char"
+    ]
+  },
+  {
+    "q": "Which loop is best when iterating over an array in C#?",
+    "o": [
+      "foreach",
+      "while",
+      "do-while",
+      "goto"
+    ]
+  },
+  {
+    "q": "Which method is used to format strings in C# with placeholders?",
+    "o": [
+      "string.Format()",
+      "Console.Input()",
+      "format.String()",
+      "String.Read()"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the .NET Framework?",
+    "o": [
+      "A software development platform for building and running Windows applications",
+      "A web hosting service",
+      "A database engine",
+      "A text editor"
+    ]
+  },
+  {
+    "q": "What will this code display?",
+    "c": "int x = 10;\nint y = 4;\nConsole.WriteLine(x - y);",
+    "o": [
+      "6",
+      "14",
+      "4",
+      "40"
+    ]
+  },
+  {
+    "q": "Which of the following C# data types is used to store a single character?",
+    "o": [
+      "char",
+      "string",
+      "bool",
+      "int"
+    ]
+  },
+  {
+    "q": "What is the output of the following C# statement?\nConsole.WriteLine(\"{0} + {1} = {2}\", 2, 3, 5);",
+    "o": [
+      "2 + 3 = 5",
+      "{0} + {1} = {2}",
+      "5 + 3 = 2",
+      "2 + 3 = {2}"
+    ]
+  },
+  {
+    "q": "Which loop will execute at least once regardless of the condition?",
+    "o": [
+      "do-while loop",
+      "for loop",
+      "while loop",
+      "foreach loop"
+    ]
+  },
+  {
+    "q": "Which of these is a correct assignment of a float variable?",
+    "o": [
+      "float num = 5.75f;",
+      "float num = 5.75;",
+      "float num = \"5.75\";",
+      "float num := 5.75;"
+    ]
+  },
+  {
+    "q": "What will be the output of the code below?",
+    "c": "int count = 1;\nwhile (count <= 3) {\n    Console.Write(count);\n    count++;\n}",
+    "o": [
+      "123",
+      "321",
+      "12",
+      "234"
+    ]
+  },
+  {
+    "q": "Which operator is used to add two numbers in C#?",
+    "o": [
+      "+",
+      "&",
+      "++",
+      "add"
+    ]
+  },
+  {
+    "q": "Which of the following correctly uses the ternary operator in C#?",
+    "o": [
+      "string result = (age >= 18) ? \"Adult\" : \"Minor\";",
+      "string result = if age >= 18 then \"Adult\" else \"Minor\";",
+      "string result = age >= 18 ? \"Adult\";",
+      "string result = \"Adult\" if age >= 18 else \"Minor\";"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the 'switch' statement in C#?",
+    "o": [
+      "Each 'case' must end with a 'break' or 'return' statement.",
+      "It can only evaluate string values.",
+      "It replaces the 'if' statement in all scenarios.",
+      "It can only be used with loop statements."
+    ]
+  },
+  {
+    "q": "Which part of the .NET framework provides a large set of reusable classes?",
+    "o": [
+      "Framework Class Library (FCL)",
+      "Common Type System (CTS)",
+      "Just-In-Time Compiler (JIT)",
+      "Common Language Runtime (CLR)"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "int a = 3;\nint b = 4;\nb += a;\nConsole.WriteLine(b);",
+    "o": [
+      "7",
+      "1",
+      "4",
+      "12"
+    ]
+  },
+  {
+    "q": "Which keyword in C# is used to declare a variable that cannot change its value?",
+    "o": [
+      "const",
+      "readonly",
+      "static",
+      "final"
+    ]
+  },
+  {
+    "q": "What will the following output be?\nConsole.WriteLine(\"Welcome to C# {0}\", 2025);",
+    "o": [
+      "Welcome to C# 2025",
+      "Welcome to C# {0}",
+      "C# 2025",
+      "2025 Welcome to C#"
+    ]
+  },
+  {
+    "q": "Which control statement will stop the loop entirely?",
+    "o": [
+      "break",
+      "continue",
+      "return",
+      "skip"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct declaration of a double variable?",
+    "o": [
+      "double price = 9.99;",
+      "double price := 9.99;",
+      "double = 9.99;",
+      "double price = '9.99';"
+    ]
+  },
+  {
+    "q": "What will be the output of this C# code?",
+    "c": "for (int i = 1; i <= 3; i++) {\n    Console.Write(i * 2);\n}",
+    "o": [
+      "246",
+      "123",
+      "135",
+      "678"
+    ]
+  },
+  {
+    "q": "Which operator is used for incrementing a value by 1 in C#?",
+    "o": [
+      "++",
+      "+=",
+      "+",
+      "**"
+    ]
+  },
+  {
+    "q": "Which of the following is true about variable names in C#?",
+    "o": [
+      "They are case-sensitive.",
+      "They can start with a number.",
+      "They must always begin with an underscore.",
+      "They cannot include uppercase letters."
+    ]
+  },
+  {
+    "q": "Which method would you use to convert a string to an integer in C#?",
+    "o": [
+      "int.Parse()",
+      "Convert.ToString()",
+      "ToInteger()",
+      "Parse.Int()"
+    ]
+  },
+  {
+    "q": "Which component of the .NET framework is responsible for memory management and security?",
+    "o": [
+      "Common Language Runtime (CLR)",
+      "Common Type System (CTS)",
+      "Framework Class Library (FCL)",
+      "Visual Studio IDE"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "int value = 5;\nvalue *= 2;\nConsole.WriteLine(value);",
+    "o": [
+      "10",
+      "25",
+      "7",
+      "2"
+    ]
+  },
+  {
+    "q": "Which of the following data types in C# is used to store decimal numbers with high precision?",
+    "o": [
+      "decimal",
+      "int",
+      "float",
+      "char"
+    ]
+  },
+  {
+    "q": "What will this line of code output?\nConsole.WriteLine(\"Result: {0}\", 10 + 5);",
+    "o": [
+      "Result: 15",
+      "Result: 10 + 5",
+      "10 + 5",
+      "Result: {0}"
+    ]
+  },
+  {
+    "q": "Which keyword is used to evaluate multiple possible values of a variable in C#?",
+    "o": [
+      "switch",
+      "if",
+      "loop",
+      "case"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid variable declaration in C#?",
+    "o": [
+      "int count = 100;",
+      "int = count 100;",
+      "integer count = 100;",
+      "count int = 100;"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "int num = 8;\nif (num % 2 == 0) {\n    Console.WriteLine(\"Even\");\n} else {\n    Console.WriteLine(\"Odd\");\n}",
+    "o": [
+      "Even",
+      "Odd",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "q": "Which operator is used for logical AND in C#?",
+    "o": [
+      "&&",
+      "&",
+      "AND",
+      "%%"
+    ]
+  },
+  {
+    "q": "Which of the following allows you to repeat a block of code as long as a condition is true?",
+    "o": [
+      "while loop",
+      "switch statement",
+      "goto statement",
+      "break statement"
+    ]
+  },
+  {
+    "q": "Which method is used to display output to the console in C#?",
+    "o": [
+      "Console.WriteLine()",
+      "System.Output()",
+      "Console.Display()",
+      "Print()"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct file extension for a C# source code file?",
+    "o": [
+      ".cs",
+      ".c#",
+      ".csharp",
+      ".cpp"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "int a = 4;\nint b = 2;\nint c = a % b;\nConsole.WriteLine(c);",
+    "o": [
+      "0",
+      "2",
+      "1",
+      "4"
+    ]
+  },
+  {
+    "q": "Which data type in C# would you use to store a true or false value?",
+    "o": [
+      "bool",
+      "bit",
+      "int",
+      "char"
+    ]
+  },
+  {
+    "q": "Which of the following methods will correctly format and print a string?",
+    "o": [
+      "Console.WriteLine(\"Name: {0}\", \"Alice\");",
+      "Console.Display(\"Name: {0}\", \"Alice\");",
+      "print(\"Name: {0}\", \"Alice\");",
+      "Output.Write(\"Name: {0}\", \"Alice\");"
+    ]
+  },
+  {
+    "q": "Which loop structure checks the condition after executing the loop body?",
+    "o": [
+      "do-while",
+      "for",
+      "while",
+      "foreach"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare a string variable in C#?",
+    "o": [
+      "string name = \"John\";",
+      "String = name \"John\";",
+      "name : string = 'John';",
+      "str name = \"John\";"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "int x = 9;\nif (x > 10) {\n    Console.WriteLine(\"Greater\");\n} else {\n    Console.WriteLine(\"Smaller or Equal\");\n}",
+    "o": [
+      "Smaller or Equal",
+      "Greater",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "q": "What symbol is used to indicate a single-line comment in C#?",
+    "o": [
+      "//",
+      "#",
+      "/*",
+      "<!--"
+    ]
+  },
+  {
+    "q": "Which of the following correctly uses a switch statement in C#?",
+    "o": [
+      "switch (x) { case 1: Console.WriteLine(\"One\"); break; }",
+      "switch x { case 1 => Console.WriteLine(\"One\"); }",
+      "select (x) { when 1: Console.WriteLine(\"One\"); }",
+      "switch x (1) { write(\"One\"); }"
+    ]
+  },
+  {
+    "q": "Which .NET feature ensures code is executed in a managed environment?",
+    "o": [
+      "Common Language Runtime (CLR)",
+      "Code Access Security (CAS)",
+      "Global Assembly Cache (GAC)",
+      "Microsoft Intermediate Language (MSIL)"
+    ]
+  },
+  {
+    "q": "What does the Common Type System (CTS) in .NET ensure?",
+    "o": [
+      "Type safety and consistency across .NET languages",
+      "Automatic code compilation",
+      "Graphical user interface rendering",
+      "Encryption and decryption"
+    ]
+  },
+  {
+    "q": "What is the result of the following code?",
+    "c": "int x = 7;\nx += 3;\nConsole.WriteLine(x);",
+    "o": [
+      "10",
+      "7",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following C# data types is used to represent whole numbers?",
+    "o": [
+      "int",
+      "float",
+      "double",
+      "char"
+    ]
+  },
+  {
+    "q": "What will this statement print?\nConsole.WriteLine(\"Pi is approximately {0:F2}\", 3.14159);",
+    "o": [
+      "Pi is approximately 3.14",
+      "Pi is approximately 3",
+      "Pi is approximately {0:F2}",
+      "Pi is approximately 3.14159"
+    ]
+  },
+  {
+    "q": "Which loop is best when the number of iterations is known in advance?",
+    "o": [
+      "for loop",
+      "while loop",
+      "do-while loop",
+      "foreach loop"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to declare and assign a character in C#?",
+    "o": [
+      "char grade = 'A';",
+      "char grade = \"A\";",
+      "char grade := 'A';",
+      "character grade = 'A';"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "int total = 5;\ntotal = total - 2;\nConsole.WriteLine(total);",
+    "o": [
+      "3",
+      "2",
+      "5",
+      "7"
+    ]
+  },
+  {
+    "q": "Which symbol is used for the OR logical operator in C#?",
+    "o": [
+      "||",
+      "|",
+      "or",
+      "&&"
+    ]
+  },
+  {
+    "q": "What is the purpose of the `default` keyword in a switch statement?",
+    "o": [
+      "To execute code when no case matches",
+      "To declare a variable",
+      "To initialize a class",
+      "To return from a loop"
+    ]
+  },
+  {
+    "q": "What is the function of `Console.ReadLine()` in C#?",
+    "o": [
+      "Reads user input as a string",
+      "Displays output on the console",
+      "Clears the console screen",
+      "Reads a file line by line"
+    ]
+  },
+  {
+    "q": "Which language is primarily used for building applications on the .NET platform?",
+    "o": [
+      "C#",
+      "Java",
+      "Python",
+      "C"
+    ]
+  },
+  {
+    "q": "What is the output of this C# code?",
+    "c": "int x = 2;\nint y = 3;\nConsole.WriteLine(x * y);",
+    "o": [
+      "6",
+      "5",
+      "23",
+      "9"
+    ]
+  },
+  {
+    "q": "Which keyword is used in C# to declare a constant value that cannot change?",
+    "o": [
+      "const",
+      "fixed",
+      "readonly",
+      "final"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?\nConsole.WriteLine(\"Sum = {0}\", 7 + 8);",
+    "o": [
+      "Sum = 15",
+      "Sum = 7 + 8",
+      "Sum = {0}",
+      "15"
+    ]
+  },
+  {
+    "q": "Which loop is guaranteed to execute at least once in C#?",
+    "o": [
+      "do-while",
+      "while",
+      "for",
+      "foreach"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid declaration of a floating-point variable in C#?",
+    "o": [
+      "float radius = 4.5f;",
+      "float radius = 4.5;",
+      "float = 4.5f;",
+      "float radius := 4.5;"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "int value = 10;\nif (value != 5) {\n    Console.WriteLine(\"Not Five\");\n}",
+    "o": [
+      "Not Five",
+      "Five",
+      "10",
+      "False"
+    ]
+  },
+  {
+    "q": "Which operator is used to compare two values for equality in C#?",
+    "o": [
+      "==",
+      "=",
+      "===",
+      "!="
+    ]
+  },
+  {
+    "q": "Which of the following reads a line of user input from the console?",
+    "o": [
+      "Console.ReadLine()",
+      "Console.Write()",
+      "Console.Read()",
+      "Input.Read()"
+    ]
+  },
+  {
+    "q": "What will the following C# code print?",
+    "c": "for (int i = 0; i < 3; i++) {\n    Console.Write(i);\n}",
+    "o": [
+      "012",
+      "123",
+      "321",
+      "111"
+    ]
+  },
+  {
+    "q": "Which of the following components compiles C# code into Intermediate Language (IL) in .NET?",
+    "o": [
+      "C# Compiler (csc.exe)",
+      "CLR",
+      "JIT Compiler",
+      "MSIL Loader"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "int a = 15;\nint b = 4;\nConsole.WriteLine(a / b);",
+    "o": [
+      "3",
+      "3.75",
+      "4",
+      "0"
+    ]
+  },
+  {
+    "q": "Which data type is best suited to store a single Unicode character in C#?",
+    "o": [
+      "char",
+      "string",
+      "byte",
+      "int"
+    ]
+  },
+  {
+    "q": "What will this line of code output?\nConsole.WriteLine(\"{0} + {1} = {2}\", 2, 3, 2 + 3);",
+    "o": [
+      "2 + 3 = 5",
+      "2 + 3 = {2}",
+      "{0} + {1} = 5",
+      "2 + 3 = 6"
+    ]
+  },
+  {
+    "q": "Which control structure allows branching based on multiple conditions in C#?",
+    "o": [
+      "switch",
+      "for",
+      "while",
+      "goto"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to declare a boolean variable in C#?",
+    "o": [
+      "bool isActive = true;",
+      "boolean isActive = True;",
+      "bool isActive := true;",
+      "bool = isActive true;"
+    ]
+  },
+  {
+    "q": "What will the following C# code output?",
+    "c": "int i = 0;\nwhile (i < 2) {\n    Console.Write(\"{0} \", i);\n    i++;\n}",
+    "o": [
+      "0 1 ",
+      "1 2 ",
+      "0 1 2 ",
+      "0 0 "
+    ]
+  },
+  {
+    "q": "Which of the following is used to terminate a loop early in C#?",
+    "o": [
+      "break",
+      "exit",
+      "return",
+      "stop"
+    ]
+  },
+  {
+    "q": "Which method prints output without appending a new line in C#?",
+    "o": [
+      "Console.Write()",
+      "Console.WriteLine()",
+      "Console.Output()",
+      "Console.Display()"
+    ]
+  },
+  {
+    "q": "Which operator is used to assign a value to a variable in C#?",
+    "o": [
+      "=",
+      "==",
+      "!=",
+      ":="
+    ]
+  },
+  {
+    "q": "Which of the following is the core runtime environment for executing .NET applications?",
+    "o": [
+      "Common Language Runtime (CLR)",
+      "Visual Studio",
+      "Intermediate Language",
+      "Framework Class Library (FCL)"
+    ]
+  },
+  {
+    "q": "What is the output of the following C# code?",
+    "c": "int result = 10 % 4;\nConsole.WriteLine(result);",
+    "o": [
+      "2",
+      "6",
+      "0",
+      "4"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a variable whose value cannot be changed after initialization in C#?",
+    "o": [
+      "const",
+      "static",
+      "readonly",
+      "immutable"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?\nConsole.WriteLine(\"{0:C}\", 99.95);",
+    "o": [
+      "$99.95",
+      "99.95C",
+      "C99.95",
+      "99.95$"
+    ]
+  },
+  {
+    "q": "Which loop is best suited for iterating over an array in C#?",
+    "o": [
+      "foreach loop",
+      "while loop",
+      "do-while loop",
+      "goto loop"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid declaration of a double variable in C#?",
+    "o": [
+      "double pi = 3.1415;",
+      "double pi := 3.1415;",
+      "double pi = '3.1415';",
+      "double pi = \"3.1415\";"
+    ]
+  },
+  {
+    "q": "What will the following code snippet output?",
+    "c": "int count = 1;\ndo {\n    Console.WriteLine(count);\n    count++;\n} while (count <= 3);",
+    "o": [
+      "1\n2\n3",
+      "1\n2\n3\n4",
+      "0\n1\n2",
+      "1\n2"
+    ]
+  },
+  {
+    "q": "Which keyword is used for conditional branching in C#?",
+    "o": [
+      "if",
+      "for",
+      "loop",
+      "case"
+    ]
+  },
+  {
+    "q": "Which of these reads a single character from standard input in C#?",
+    "o": [
+      "Console.Read()",
+      "Console.ReadLine()",
+      "Console.Input()",
+      "Console.GetChar()"
+    ]
+  },
+  {
+    "q": "What is the output of this C# program?",
+    "c": "int a = 3, b = 2;\nif (a > b)\n    Console.WriteLine(\"a is greater\");\nelse\n    Console.WriteLine(\"b is greater\");",
+    "o": [
+      "a is greater",
+      "b is greater",
+      "a is greater b is greater",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which component of the .NET Framework provides garbage collection, exception handling, and type safety?",
+    "o": [
+      "Common Language Runtime (CLR)",
+      "Just-In-Time (JIT) Compiler",
+      "Intermediate Language (IL)",
+      "Global Assembly Cache (GAC)"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "int a = 8;\nint b = 3;\nConsole.WriteLine(a % b);",
+    "o": [
+      "2",
+      "5",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following data types is best for storing true/false values in C#?",
+    "o": [
+      "bool",
+      "int",
+      "char",
+      "string"
+    ]
+  },
+  {
+    "q": "What will the following code print?\nConsole.WriteLine(\"{0:D4}\", 42);",
+    "o": [
+      "0042",
+      "42",
+      "000042",
+      "D4"
+    ]
+  },
+  {
+    "q": "Which control structure is best used when checking multiple specific values of a variable?",
+    "o": [
+      "switch",
+      "for",
+      "while",
+      "if-else-if"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid assignment of a string in C#?",
+    "o": [
+      "string name = \"John\";",
+      "string name = 'John';",
+      "string name := \"John\";",
+      "str name = John;"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "int x = 0;\nfor (int i = 1; i <= 3; i++) {\n    x += i;\n}\nConsole.WriteLine(x);",
+    "o": [
+      "6",
+      "3",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "q": "Which statement is used to skip the current iteration of a loop in C#?",
+    "o": [
+      "continue",
+      "break",
+      "skip",
+      "exit"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to take user input from the console in C#?",
+    "o": [
+      "string input = Console.ReadLine();",
+      "input = ReadLine();",
+      "string input := Console.ReadLine();",
+      "Console.Input();"
+    ]
+  },
+  {
+    "q": "What will the following program output?",
+    "c": "int age = 20;\nif (age >= 18)\n    Console.WriteLine(\"Adult\");\nelse\n    Console.WriteLine(\"Minor\");",
+    "o": [
+      "Adult",
+      "Minor",
+      "18",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which file extension is used for C# source code files?",
+    "o": [
+      ".cs",
+      ".csharp",
+      ".net",
+      ".clr"
+    ]
+  },
+  {
+    "q": "What will be the output of this C# code?",
+    "c": "int a = 5;\nint b = 2;\nConsole.WriteLine(a / b);",
+    "o": [
+      "2",
+      "2.5",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "Which data type should be used to store a whole number in C#?",
+    "o": [
+      "int",
+      "float",
+      "string",
+      "bool"
+    ]
+  },
+  {
+    "q": "What does the following line of code output?\nConsole.WriteLine(\"{0,5}\", 42);",
+    "o": [
+      "   42",
+      "42   ",
+      "0042",
+      "42"
+    ]
+  },
+  {
+    "q": "Which loop structure evaluates its condition after executing the loop body?",
+    "o": [
+      "do-while",
+      "while",
+      "for",
+      "foreach"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid character literal in C#?",
+    "o": [
+      "'A'",
+      "\"A\"",
+      "'AB'",
+      "A"
+    ]
+  },
+  {
+    "q": "What will this code print to the console?",
+    "c": "int i = 1;\nwhile (i < 4) {\n    Console.Write(i);\n    i++;\n}",
+    "o": [
+      "123",
+      "0123",
+      "234",
+      "1122"
+    ]
+  },
+  {
+    "q": "Which keyword is used in C# to execute a block of code based on the value of a variable?",
+    "o": [
+      "switch",
+      "case",
+      "select",
+      "match"
+    ]
+  },
+  {
+    "q": "Which method is used to write text followed by a new line to the console in C#?",
+    "o": [
+      "Console.WriteLine()",
+      "Console.Write()",
+      "Console.PrintLine()",
+      "Console.Output()"
+    ]
+  },
+  {
+    "q": "What will be the result of this condition?\nint a = 10;\nif (a == 10)\n    Console.WriteLine(\"Ten\");",
+    "o": [
+      "Ten",
+      "10",
+      "True",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following is the entry point of a C# console application?",
+    "o": [
+      "Main method",
+      "Start method",
+      "Init method",
+      "Launch method"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "int x = 4;\nint y = 2;\nConsole.WriteLine(x * y + 3);",
+    "o": [
+      "11",
+      "10",
+      "8",
+      "5"
+    ]
+  },
+  {
+    "q": "Which data type is suitable for storing decimal numbers with high precision in C#?",
+    "o": [
+      "decimal",
+      "float",
+      "int",
+      "short"
+    ]
+  },
+  {
+    "q": "What is the result of the following output formatting?\nConsole.WriteLine(\"{0:F2}\", 3.14159);",
+    "o": [
+      "3.14",
+      "3.141",
+      "3.142",
+      "3.1"
+    ]
+  },
+  {
+    "q": "Which loop ensures the body is executed at least once?",
+    "o": [
+      "do-while",
+      "while",
+      "for",
+      "foreach"
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes a string in C#?",
+    "o": [
+      "string message = \"Hello!\";",
+      "string message = 'Hello!';",
+      "string = message \"Hello!\";",
+      "str message = Hello;"
+    ]
+  },
+  {
+    "q": "What will the output be?\nint total = 0;\nfor (int i = 1; i <= 2; i++) {\n    total += i;\n}\nConsole.WriteLine(total);",
+    "o": [
+      "3",
+      "1",
+      "2",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following statements is used to transfer control to the next iteration of a loop in C#?",
+    "o": [
+      "continue",
+      "break",
+      "goto",
+      "exit"
+    ]
+  },
+  {
+    "q": "How can you read a line of input from the user in C#?",
+    "o": [
+      "Console.ReadLine();",
+      "Input.ReadLine();",
+      "Read.ConsoleLine();",
+      "Console.Read();"
+    ]
+  },
+  {
+    "q": "What will be printed?\nint number = 7;\nswitch (number) {\n  case 7:\n    Console.Write(\"Lucky\");\n    break;\n  default:\n    Console.Write(\"Unlucky\");\n}",
+    "o": [
+      "Lucky",
+      "Unlucky",
+      "LuckyUnlucky",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the .NET Framework?",
+    "o": [
+      ".NET supports multiple programming languages.",
+      ".NET only runs on Windows.",
+      ".NET applications cannot be compiled.",
+      ".NET doesn't support object-oriented programming."
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "int a = 3;\na += 4;\nConsole.WriteLine(a);",
+    "o": [
+      "7",
+      "4",
+      "3",
+      "12"
+    ]
+  },
+  {
+    "q": "Which data type is used in C# to store a single Unicode character?",
+    "o": [
+      "char",
+      "string",
+      "int",
+      "byte"
+    ]
+  },
+  {
+    "q": "What does this code display?\nConsole.WriteLine(\"Result: {0:N2}\", 1234.5678);",
+    "o": [
+      "Result: 1,234.57",
+      "Result: 1234.57",
+      "Result: 1,234.5678",
+      "Result: 1234.5678"
+    ]
+  },
+  {
+    "q": "Which loop type is most suitable when the number of iterations is known?",
+    "o": [
+      "for loop",
+      "while loop",
+      "do-while loop",
+      "infinite loop"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid declaration for a float variable in C#?",
+    "o": [
+      "float pi = 3.14f;",
+      "float pi = 3.14;",
+      "float pi := 3.14;",
+      "float = 3.14;"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "int i = 5;\nwhile (i > 2)\n{\n    Console.Write(i);\n    i--;\n}",
+    "o": [
+      "543",
+      "432",
+      "321",
+      "210"
+    ]
+  },
+  {
+    "q": "Which statement stops loop execution and exits the loop?",
+    "o": [
+      "break",
+      "continue",
+      "return",
+      "exit"
+    ]
+  },
+  {
+    "q": "Which method is used to display output without a newline in C#?",
+    "o": [
+      "Console.Write()",
+      "Console.Print()",
+      "Console.Output()",
+      "Console.WriteLine()"
+    ]
+  },
+  {
+    "q": "What is the output of this switch block?",
+    "c": "int num = 2;\nswitch (num)\n{\n    case 1:\n        Console.Write(\"One\");\n        break;\n    case 2:\n        Console.Write(\"Two\");\n        break;\n    default:\n        Console.Write(\"Other\");\n}",
+    "o": [
+      "Two",
+      "One",
+      "Other",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which of the following is a key feature of C#?",
+    "o": [
+      "It supports both object-oriented and component-oriented programming.",
+      "It is only used for scripting.",
+      "It does not support strong typing.",
+      "It cannot be used for web development."
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "int a = 9;\nint b = 2;\nConsole.WriteLine(a / b);",
+    "o": [
+      "4",
+      "4.5",
+      "5",
+      "9"
+    ]
+  },
+  {
+    "q": "Which data type would you use to store a true or false value?",
+    "o": [
+      "bool",
+      "bit",
+      "char",
+      "int"
+    ]
+  },
+  {
+    "q": "What does this code print?\nConsole.WriteLine(\"Value: {0,6}\", 25);",
+    "o": [
+      "Value:     25",
+      "Value: 25",
+      "Value: 0025",
+      "Value: 25   "
+    ]
+  },
+  {
+    "q": "Which control structure allows repeated execution as long as a condition is true?",
+    "o": [
+      "while loop",
+      "switch statement",
+      "if statement",
+      "try-catch"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares an integer in C#?",
+    "o": [
+      "int count = 100;",
+      "integer count = 100;",
+      "int count := 100;",
+      "int = 100;"
+    ]
+  },
+  {
+    "q": "What does the following code output?",
+    "c": "int sum = 0;\nfor (int i = 0; i < 3; i++)\n{\n    sum += i;\n}\nConsole.WriteLine(sum);",
+    "o": [
+      "3",
+      "6",
+      "2",
+      "0"
+    ]
+  },
+  {
+    "q": "Which statement is used to exit from a loop in C#?",
+    "o": [
+      "break",
+      "skip",
+      "end",
+      "return"
+    ]
+  },
+  {
+    "q": "Which method would you use to convert a string to an integer in C#?",
+    "o": [
+      "int.Parse()",
+      "Convert.String()",
+      "ToInt()",
+      "String.ToInt()"
+    ]
+  },
+  {
+    "q": "What is the output of this switch-case block?",
+    "c": "int x = 10;\nswitch(x)\n{\n    case 5:\n        Console.Write(\"Five\");\n        break;\n    case 10:\n        Console.Write(\"Ten\");\n        break;\n    default:\n        Console.Write(\"Other\");\n}",
+    "o": [
+      "Ten",
+      "Five",
+      "Other",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following is used to compile C# programs?",
+    "o": [
+      "csc.exe",
+      "clr.exe",
+      "dotnet.exe",
+      "msbuild.exe"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "int x = 7;\nint y = 3;\nConsole.WriteLine(x % y);",
+    "o": [
+      "1",
+      "2",
+      "0",
+      "3"
+    ]
+  },
+  {
+    "q": "Which data type would best represent a true/false condition?",
+    "o": [
+      "bool",
+      "byte",
+      "char",
+      "float"
+    ]
+  },
+  {
+    "q": "What will this formatting code display?\nConsole.WriteLine(\"{0:C}\", 19.99);",
+    "o": [
+      "$19.99",
+      "19.99",
+      "USD 19.99",
+      "19,99"
+    ]
+  },
+  {
+    "q": "Which of the following is used for decision-making in C#?",
+    "o": [
+      "if-else",
+      "loop",
+      "case-break",
+      "foreach"
+    ]
+  },
+  {
+    "q": "Which is the correct way to declare a constant in C#?",
+    "o": [
+      "const double Pi = 3.14;",
+      "constant double Pi = 3.14;",
+      "define Pi = 3.14;",
+      "final double Pi = 3.14;"
+    ]
+  },
+  {
+    "q": "What will the following loop output?",
+    "c": "for (int i = 2; i <= 4; i++)\n{\n    Console.Write(i);\n}",
+    "o": [
+      "234",
+      "1234",
+      "345",
+      "24"
+    ]
+  },
+  {
+    "q": "Which keyword is used to skip the current iteration in a loop?",
+    "o": [
+      "continue",
+      "skip",
+      "exit",
+      "next"
+    ]
+  },
+  {
+    "q": "Which method is used to read a key input from the console without displaying it?",
+    "o": [
+      "Console.ReadKey(true)",
+      "Console.ReadKey(false)",
+      "Console.Read()",
+      "Console.ReadLine()"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "int choice = 3;\nswitch (choice)\n{\n    case 1:\n        Console.Write(\"One\");\n        break;\n    case 2:\n        Console.Write(\"Two\");\n        break;\n    default:\n        Console.Write(\"Unknown\");\n}",
+    "o": [
+      "Unknown",
+      "One",
+      "Two",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which component of .NET is responsible for executing C# code?",
+    "o": [
+      "Common Language Runtime (CLR)",
+      "Visual Studio",
+      "Common Type System (CTS)",
+      "Intermediate Language (IL)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "int a = 2, b = 5;\nConsole.WriteLine(b > a && a > 1);",
+    "o": [
+      "True",
+      "False",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a value type in C#?",
+    "o": [
+      "string",
+      "int",
+      "char",
+      "bool"
+    ]
+  },
+  {
+    "q": "What will the following line output?\nConsole.WriteLine(\"{0,5}\", 42);",
+    "o": [
+      "   42",
+      "42   ",
+      "0042",
+      "00042"
+    ]
+  },
+  {
+    "q": "Which control statement is used to select one of many blocks of code to execute?",
+    "o": [
+      "switch",
+      "if",
+      "for",
+      "while"
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes a double variable in C#?",
+    "o": [
+      "double d = 3.1415;",
+      "double d := 3.1415;",
+      "double = 3.1415;",
+      "real d = 3.1415;"
+    ]
+  },
+  {
+    "q": "What will be printed?",
+    "c": "int sum = 0;\nfor (int i = 1; i < 4; i++)\n{\n    sum += i * 2;\n}\nConsole.WriteLine(sum);",
+    "o": [
+      "12",
+      "6",
+      "9",
+      "8"
+    ]
+  },
+  {
+    "q": "Which keyword is used to exit from a switch block?",
+    "o": [
+      "break",
+      "stop",
+      "exit",
+      "return"
+    ]
+  },
+  {
+    "q": "What is the correct way to read an integer input from the user in C#?",
+    "o": [
+      "int x = int.Parse(Console.ReadLine());",
+      "int x = Console.Read();",
+      "int x = ReadInt();",
+      "int x = Convert.ToInt(Console.ReadLine());"
+    ]
+  },
+  {
+    "q": "What is the output?",
+    "c": "int value = 6;\nif (value % 2 == 0)\n{\n    Console.Write(\"Even\");\n}\nelse\n{\n    Console.Write(\"Odd\");\n}",
+    "o": [
+      "Even",
+      "Odd",
+      "True",
+      "False"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the Common Language Runtime (CLR) in .NET?",
+    "o": [
+      "It manages the execution of .NET programs.",
+      "It stores code libraries.",
+      "It is used for writing source code.",
+      "It is a database engine."
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "int x = 5;\nx *= 2;\nConsole.WriteLine(x);",
+    "o": [
+      "10",
+      "25",
+      "7",
+      "2"
+    ]
+  },
+  {
+    "q": "Which of the following is a reference type in C#?",
+    "o": [
+      "string",
+      "int",
+      "bool",
+      "char"
+    ]
+  },
+  {
+    "q": "What will this code output?\nConsole.WriteLine(\"{0:D4}\", 23);",
+    "o": [
+      "0023",
+      "023",
+      "23.00",
+      "23"
+    ]
+  },
+  {
+    "q": "Which statement is used to repeat a block of code a known number of times?",
+    "o": [
+      "for loop",
+      "if statement",
+      "switch statement",
+      "break statement"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to declare a character variable in C#?",
+    "o": [
+      "char letter = 'A';",
+      "char letter = \"A\";",
+      "char letter := 'A';",
+      "char = 'A';"
+    ]
+  },
+  {
+    "q": "What will be displayed?",
+    "c": "int count = 0;\ndo\n{\n    Console.Write(count);\n    count++;\n} while (count < 3);",
+    "o": [
+      "012",
+      "123",
+      "0123",
+      "01"
+    ]
+  },
+  {
+    "q": "Which keyword is used to immediately stop the current loop iteration and jump to the next?",
+    "o": [
+      "continue",
+      "break",
+      "skip",
+      "exit"
+    ]
+  },
+  {
+    "q": "Which method would you use to read a full line of user input in C#?",
+    "o": [
+      "Console.ReadLine()",
+      "Console.Read()",
+      "Console.Input()",
+      "Console.Scan()"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "int grade = 85;\nswitch (grade)\n{\n    case 100:\n        Console.Write(\"Perfect\");\n        break;\n    case 85:\n        Console.Write(\"Great\");\n        break;\n    default:\n        Console.Write(\"Try again\");\n}",
+    "o": [
+      "Great",
+      "Perfect",
+      "Try again",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which of the following is true about C#?",
+    "o": [
+      "It is a statically typed, object-oriented programming language developed by Microsoft.",
+      "It is dynamically typed and not object-oriented.",
+      "It is only used for scripting purposes.",
+      "It runs only on Windows OS."
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "int x = 10;\nint y = 3;\nConsole.WriteLine(x / y);",
+    "o": [
+      "3",
+      "3.33",
+      "0",
+      "3.0"
+    ]
+  },
+  {
+    "q": "Which data type is used for storing single-precision floating-point values?",
+    "o": [
+      "float",
+      "double",
+      "decimal",
+      "int"
+    ]
+  },
+  {
+    "q": "What does the following output?\nConsole.WriteLine(\"Hello {0}!\", \"World\");",
+    "o": [
+      "Hello World!",
+      "Hello {0}!",
+      "Hello!",
+      "World!"
+    ]
+  },
+  {
+    "q": "Which control structure is used to evaluate multiple conditions and execute one block?",
+    "o": [
+      "switch",
+      "while",
+      "for",
+      "if-else"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid variable declaration in C#?",
+    "o": [
+      "int number = 25;",
+      "int = 25;",
+      "number int = 25;",
+      "var int = 25;"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "int result = 1;\nfor (int i = 1; i <= 3; i++)\n{\n    result *= i;\n}\nConsole.WriteLine(result);",
+    "o": [
+      "6",
+      "3",
+      "9",
+      "0"
+    ]
+  },
+  {
+    "q": "Which keyword exits a loop immediately?",
+    "o": [
+      "break",
+      "continue",
+      "exit",
+      "return"
+    ]
+  },
+  {
+    "q": "Which method is used to write output to the console without a newline in C#?",
+    "o": [
+      "Console.Write()",
+      "Console.WriteLine()",
+      "Console.Output()",
+      "Console.Display()"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "int val = 7;\nif (val < 5)\n{\n    Console.Write(\"Small\");\n}\nelse\n{\n    Console.Write(\"Large\");\n}",
+    "o": [
+      "Large",
+      "Small",
+      "Nothing",
+      "val"
+    ]
+  }
+]

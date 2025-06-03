@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Basic File Writing with ofstream",
+    "ques": "Write a C++ program that uses ofstream to create a text file named 'output.txt' and writes the text 'Hello, File Handling!' into it. Handle potential file opening errors.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <fstream>\nusing namespace std;\n\nint main() {\n    ofstream outFile(\"output.txt\");\n    if (!outFile) {\n        cout << \"Error opening file!\" << endl;\n        return 1;\n    }\n    outFile << \"Hello, File Handling!\";\n    outFile.close();\n    cout << \"Data written successfully.\" << endl;\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates basic file writing using ***ofstream***:\n- ```#include <fstream>``` includes the file stream library.\n- ```ofstream outFile(\"output.txt\")``` creates an output file stream object and attempts to open 'output.txt' for writing.\n- ```if (!outFile)``` checks if the file failed to open (e.g., due to permissions); if so, it outputs an error and exits with ***1***.\n- ```outFile << \"Hello, File Handling!\"``` writes the string to the file using the stream insertion operator.\n- ```outFile.close()``` closes the file to free resources.\n- Finally, a success message is printed to the console."
+  },
+  {
+    "title": "Reading File with ifstream",
+    "ques": "Create a C++ program that uses ifstream to read and display the contents of a text file 'input.txt'. Assume the file contains multiple lines of text.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <fstream>\n#include <string>\nusing namespace std;\n\nint main() {\n    ifstream inFile(\"input.txt\");\n    if (!inFile) {\n        cout << \"Cannot open file!\" << endl;\n        return 1;\n    }\n    string line;\n    while (getline(inFile, line)) {\n        cout << line << endl;\n    }\n    inFile.close();\n    return 0;\n}"
+    },
+    "explanation": "This program uses ***ifstream*** to read a file:\n- ```ifstream inFile(\"input.txt\")``` opens 'input.txt' for reading.\n- ```if (!inFile)``` ensures the file opened successfully.\n- ```string line``` declares a string to store each line of text.\n- ```while (getline(inFile, line))``` reads the file line by line until the end, printing each line with ***cout***.\n- ```inFile.close()``` closes the file after reading.\n- The program exits with ***0*** on success."
+  },
+  {
+    "title": "File Open Modes Example",
+    "ques": "Write a C++ program that demonstrates the use of different file open modes with fstream. Open a file 'test.txt' in append mode to add 'New Data' and then reopen it in read mode to display its contents.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <fstream>\n#include <string>\nusing namespace std;\n\nint main() {\n    fstream file;\n    file.open(\"test.txt\", ios::out | ios::app);\n    if (!file) {\n        cout << \"Error opening file!\" << endl;\n        return 1;\n    }\n    file << \"New Data\\n\";\n    file.close();\n    \n    file.open(\"test.txt\", ios::in);\n    if (!file) {\n        cout << \"Error opening file!\" << endl;\n        return 1;\n    }\n    string line;\n    while (getline(file, line)) {\n        cout << line << endl;\n    }\n    file.close();\n    return 0;\n}"
+    },
+    "explanation": "This program showcases ***fstream*** with file open modes:\n- ```file.open(\"test.txt\", ios::out | ios::app)``` opens 'test.txt' in output mode (***ios::out***) and append mode (***ios::app***), adding data to the end.\n- ```file << \"New Data\\n\"``` appends the text with a newline.\n- ```file.close()``` closes the file after writing.\n- ```file.open(\"test.txt\", ios::in)``` reopens the file in input mode (***ios::in***) for reading.\n- ```while (getline(file, line))``` reads and displays each line.\n- The file is closed again with ***file.close()***."
+  },
+  {
+    "title": "Reading and Writing Objects",
+    "ques": "Design a C++ program that defines a 'Student' class with name and age attributes. Use fstream to write two Student objects to a file 'students.txt' and then read them back to display their details.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <fstream>\n#include <string>\nusing namespace std;\n\nclass Student {\npublic:\n    string name;\n    int age;\n    Student(string n = \"\", int a = 0) : name(n), age(a) {}\n};\n\nint main() {\n    fstream file(\"students.txt\", ios::out);\n    if (!file) {\n        cout << \"Error opening file!\" << endl;\n        return 1;\n    }\n    Student s1(\"Alice\", 20), s2(\"Bob\", 22);\n    file << s1.name << \" \" << s1.age << \"\\n\" << s2.name << \" \" << s2.age << \"\\n\";\n    file.close();\n    \n    file.open(\"students.txt\", ios::in);\n    if (!file) {\n        cout << \"Error opening file!\" << endl;\n        return 1;\n    }\n    string name;\n    int age;\n    while (file >> name >> age) {\n        cout << \"Name: \" << name << \", Age: \" << age << endl;\n    }\n    file.close();\n    return 0;\n}"
+    },
+    "explanation": "This program handles objects with ***fstream***:\n- ```class Student``` defines a simple class with ***name*** and ***age***.\n- ```fstream file(\"students.txt\", ios::out)``` opens the file for writing.\n- ```file << s1.name << \" \" << s1.age << \"\\n\"``` writes each Student’s data as a space-separated line.\n- After closing and reopening with ```ios::in```, ```file >> name >> age``` reads the data back into variables.\n- The while loop continues until all data is read, displaying each ***Student***’s details."
+  },
+  {
+    "title": "Binary File Handling",
+    "ques": "Write a C++ program that uses fstream to write an array of integers to a binary file 'numbers.dat' and then reads it back to verify the data. Use binary mode for file operations.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <fstream>\nusing namespace std;\n\nint main() {\n    int numbers[] = {10, 20, 30, 40, 50};\n    int size = 5;\n    \n    fstream file(\"numbers.dat\", ios::out | ios::binary);\n    if (!file) {\n        cout << \"Error opening file!\" << endl;\n        return 1;\n    }\n    file.write((char*)numbers, size * sizeof(int));\n    file.close();\n    \n    int readNumbers[5];\n    file.open(\"numbers.dat\", ios::in | ios::binary);\n    if (!file) {\n        cout << \"Error opening file!\" << endl;\n        return 1;\n    }\n    file.read((char*)readNumbers, size * sizeof(int));\n    for (int i = 0; i < size; i++) {\n        cout << readNumbers[i] << \" \";\n    }\n    cout << endl;\n    file.close();\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates ***binary file handling***:\n- ```fstream file(\"numbers.dat\", ios::out | ios::binary)``` opens the file in binary output mode.\n- ```file.write((char*)numbers, size * sizeof(int))``` writes the array as raw bytes.\n- After closing, ```ios::in | ios::binary``` reopens it for binary reading.\n- ```file.read((char*)readNumbers, size * sizeof(int))``` reads the bytes back into an array.\n- A loop prints the read values, verifying the data.\n- Casting to ***char**** is necessary for binary I/O with ***write*** and ***read***."
+  },
+  {
+    "title": "Exception Handling in File Operations",
+    "ques": "Write a C++ program that uses fstream to write 'Test Data' to a file 'data.txt' and handles potential file operation errors using try-catch blocks instead of manual checks.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <fstream>\n#include <stdexcept>\nusing namespace std;\n\nint main() {\n    try {\n        fstream file;\n        file.exceptions(fstream::failbit | fstream::badbit);\n        file.open(\"data.txt\", ios::out);\n        file << \"Test Data\";\n        file.close();\n        cout << \"Write operation completed successfully.\" << endl;\n    }\n    catch (const ios_base::failure& e) {\n        cout << \"File operation failed: \" << e.what() << endl;\n        return 1;\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program uses exceptions for error handling:\n- ```file.exceptions(fstream::failbit | fstream::badbit)``` sets the file stream to throw exceptions on failure (e.g., file not opened) or bad operations.\n- ```try``` block contains the file operations: opening with ***ios::out*** and writing ***Test Data***.\n- ```file << \"Test Data\"``` performs the write.\n- If an error occurs, the ***catch*** block catches ***ios_base::failure***, prints the error with ***e.what()***, and exits with ***1***.\n- On success, it prints a confirmation message."
+  },
+  {
+    "title": "File Truncation with Open Mode",
+    "ques": "Create a C++ program that uses ofstream with the trunc mode to overwrite an existing file 'log.txt' with the text 'Updated Log Entry'. Verify by reading the file afterward using ifstream.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <fstream>\n#include <string>\nusing namespace std;\n\nint main() {\n    ofstream outFile(\"log.txt\", ios::trunc);\n    if (!outFile) {\n        cout << \"Error opening file for writing!\" << endl;\n        return 1;\n    }\n    outFile << \"Updated Log Entry\";\n    outFile.close();\n\n    ifstream inFile(\"log.txt\");\n    if (!inFile) {\n        cout << \"Error opening file for reading!\" << endl;\n        return 1;\n    }\n    string content;\n    getline(inFile, content);\n    cout << \"File content: \" << content << endl;\n    inFile.close();\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates ***ios::trunc*** mode:\n- ```ofstream outFile(\"log.txt\", ios::trunc)``` opens 'log.txt' and truncates it (clears existing content).\n- ```outFile << \"Updated Log Entry\"``` writes new content, replacing anything previously in the file.\n- ```ifstream inFile(\"log.txt\")``` opens the file for reading.\n- ```getline(inFile, content)``` reads the single line into ***content***.\n- The program outputs the new content to verify truncation and writing."
+  },
+  {
+    "title": "File Position with seekg and tellg",
+    "ques": "Write a C++ program that uses ifstream to open a file 'positions.txt' containing 'Sample Text Data', moves the read position to the 7th character, and reads the remaining content. Use seekg and tellg to manage and display the file position.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <fstream>\n#include <string>\nusing namespace std;\n\nint main() {\n    ofstream outFile(\"positions.txt\");\n    outFile << \"Sample Text Data\";\n    outFile.close();\n\n    ifstream inFile(\"positions.txt\");\n    if (!inFile) {\n        cout << \"Error opening file!\" << endl;\n        return 1;\n    }\n    cout << \"Initial position: \" << inFile.tellg() << endl;\n    inFile.seekg(7);\n    cout << \"New position: \" << inFile.tellg() << endl;\n    string remaining;\n    getline(inFile, remaining);\n    cout << \"Remaining content: \" << remaining << endl;\n    inFile.close();\n    return 0;\n}"
+    },
+    "explanation": "This program explores file positioning:\n- First, ```ofstream``` writes ***Sample Text Data*** to 'positions.txt'.\n- ```ifstream inFile(\"positions.txt\")``` opens it for reading.\n- ```inFile.tellg()``` returns the current get position (initially ***0***).\n- ```inFile.seekg(7)``` moves the position to the 7th byte (0-based, so after 'Sample ').\n- ```tellg()``` confirms the new position (***7***).\n- ```getline``` reads from position 7 to the end, outputting ***Text Data***."
+  },
+  {
+    "title": "Binary Object Serialization",
+    "ques": "Design a C++ program that defines a 'Product' struct with id (int) and price (float). Use fstream in binary mode to write two Product objects to 'products.dat' and read them back, displaying their values.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <fstream>\nusing namespace std;\n\nstruct Product {\n    int id;\n    float price;\n    Product(int i = 0, float p = 0.0) : id(i), price(p) {}\n};\n\nint main() {\n    Product p1(101, 29.99), p2(102, 15.50);\n    fstream file(\"products.dat\", ios::out | ios::binary);\n    if (!file) {\n        cout << \"Error opening file!\" << endl;\n        return 1;\n    }\n    file.write((char*)&p1, sizeof(Product));\n    file.write((char*)&p2, sizeof(Product));\n    file.close();\n\n    file.open(\"products.dat\", ios::in | ios::binary);\n    if (!file) {\n        cout << \"Error opening file!\" << endl;\n        return 1;\n    }\n    Product readP;\n    while (file.read((char*)&readP, sizeof(Product))) {\n        cout << \"ID: \" << readP.id << \", Price: \" << readP.price << endl;\n    }\n    file.close();\n    return 0;\n}"
+    },
+    "explanation": "This program serializes objects in binary:\n- ```struct Product``` defines ***id*** and ***price*** with a constructor.\n- ```fstream file(\"products.dat\", ios::out | ios::binary)``` opens the file in binary write mode.\n- ```file.write((char*)&p1, sizeof(Product))``` writes each ***Product*** as raw bytes.\n- After reopening with ***ios::in | ios::binary***, ```file.read((char*)&readP, sizeof(Product))``` reads each object.\n- The while loop continues until no more data is read, displaying each ***Product***’s ***id*** and ***price***."
+  },
+  {
+    "title": "Simultaneous Read and Write with fstream",
+    "ques": "Write a C++ program that uses fstream to open a file 'notes.txt' in both read and write mode. Write 'Initial Note' to the file, then read and display its content without closing the file. Ensure the file pointer is correctly positioned for reading after writing.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <fstream>\n#include <string>\nusing namespace std;\n\nint main() {\n    fstream file(\"notes.txt\", ios::in | ios::out | ios::trunc);\n    if (!file) {\n        cout << \"Error opening file!\" << endl;\n        return 1;\n    }\n    file << \"Initial Note\";\n    file.flush();\n    file.seekg(0, ios::beg);\n    string content;\n    getline(file, content);\n    cout << \"File content: \" << content << endl;\n    file.close();\n    return 0;\n}"
+    },
+    "explanation": "This program uses ***fstream*** for simultaneous reading and writing:\n- ```fstream file(\"notes.txt\", ios::in | ios::out | ios::trunc)``` opens 'notes.txt' in read-write mode, with ***ios::trunc*** to clear existing content.\n- ```file << \"Initial Note\"``` writes the text.\n- ```file.flush()``` ensures the write is committed to the file before reading.\n- ```file.seekg(0, ios::beg)``` moves the read pointer to the file’s start.\n- ```getline(file, content)``` reads the content into ***content***.\n- The content is printed to verify, and ***file.close()*** frees resources."
+  },
+  {
+    "title": "Explicit End-of-File Handling",
+    "ques": "Create a C++ program that uses ifstream to read integers from a text file 'numbers.txt' (assume it contains space-separated integers like '1 2 3'). Explicitly check for end-of-file conditions and distinguish between EOF and other errors while reading.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <fstream>\nusing namespace std;\n\nint main() {\n    ifstream inFile(\"numbers.txt\");\n    if (!inFile) {\n        cout << \"Error opening file!\" << endl;\n        return 1;\n    }\n    int num;\n    while (true) {\n        inFile >> num;\n        if (inFile.eof()) {\n            cout << \"Reached end of file.\" << endl;\n            break;\n        }\n        if (inFile.fail()) {\n            cout << \"Error reading data (non-integer input or other issue).\" << endl;\n            break;\n        }\n        cout << \"Read number: \" << num << endl;\n    }\n    inFile.close();\n    return 0;\n}"
+    },
+    "explanation": "This program handles ***end-of-file*** explicitly:\n- ```ifstream inFile(\"numbers.txt\")``` opens the file for reading.\n- The ***while (true)*** loop reads integers with ```inFile >> num```.\n- ```inFile.eof()``` checks if the end of the file is reached, breaking the loop cleanly.\n- ```inFile.fail()``` detects errors (e.g., non-integer data), distinguishing them from EOF.\n- Valid numbers are printed with ***cout***.\n- The file is closed with ***inFile.close()*** after processing."
+  },
+  {
+    "title": "Updating Binary File Records",
+    "ques": "Design a C++ program that uses fstream in binary mode to store an array of 'Employee' structs (id and salary) in 'employees.dat'. Then update the salary of the employee with a specific id (e.g., id=2) to a new value and display all records to verify the change.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <fstream>\nusing namespace std;\n\nstruct Employee {\n    int id;\n    float salary;\n    Employee(int i = 0, float s = 0.0) : id(i), salary(s) {}\n};\n\nint main() {\n    Employee emp[] = {{1, 50000.0}, {2, 60000.0}, {3, 55000.0}};\n    int size = 3;\n    fstream file(\"employees.dat\", ios::out | ios::binary);\n    if (!file) {\n        cout << \"Error opening file!\" << endl;\n        return 1;\n    }\n    file.write((char*)emp, size * sizeof(Employee));\n    file.close();\n\n    file.open(\"employees.dat\", ios::in | ios::out | ios::binary);\n    if (!file) {\n        cout << \"Error opening file!\" << endl;\n        return 1;\n    }\n    Employee temp;\n    int targetId = 2;\n    float newSalary = 65000.0;\n    while (file.read((char*)&temp, sizeof(Employee))) {\n        if (temp.id == targetId) {\n            temp.salary = newSalary;\n            file.seekp(-static_cast<int>(sizeof(Employee)), ios::cur);\n            file.write((char*)&temp, sizeof(Employee));\n            break;\n        }\n    }\n    file.seekg(0, ios::beg);\n    cout << \"Updated records:\\n\";\n    while (file.read((char*)&temp, sizeof(Employee))) {\n        cout << \"ID: \" << temp.id << \", Salary: \" << temp.salary << endl;\n    }\n    file.close();\n    return 0;\n}"
+    },
+    "explanation": "This program updates a binary file record:\n- ```struct Employee``` defines ***id*** and ***salary***.\n- ```fstream file(\"employees.dat\", ios::out | ios::binary)``` writes the array of three ***Employee*** objects.\n- ```file.open(\"employees.dat\", ios::in | ios::out | ios::binary)``` reopens for reading and writing.\n- The loop reads each ***Employee*** with ```file.read``` until ***id == 2*** is found.\n- ```file.seekp(-static_cast<int>(sizeof(Employee)), ios::cur)``` moves the write pointer back one record.\n- ```file.write``` updates the salary to ***65000.0***.\n- ```file.seekg(0, ios::beg)``` resets the read pointer to display all records, verifying the update."
+  }
+]

@@ -1,0 +1,4563 @@
+[
+  {
+    "q": "What is the correct way to define a class named 'Person' in C#?",
+    "o": [
+      "public class Person { }",
+      "class: Person { }",
+      "define class Person { }",
+      "Person() { }"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Car {\n    public string Model;\n}\n\nclass Program {\n    static void Main() {\n        Car car = new Car();\n        car.Model = \"Tesla\";\n        Console.WriteLine(car.Model);\n    }\n}",
+    "o": [
+      "Tesla",
+      "Car",
+      "Model",
+      "NullReferenceException"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a constructor in C#?",
+    "o": [
+      "A special method used to initialize objects.",
+      "A method that returns a value.",
+      "A property that is only readable.",
+      "A function with static return type."
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "class Person {\n    public string Name;\n    public Person(string name) {\n        Name = name;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Person p = new Person(\"John\");\n        Console.WriteLine(p.Name);\n    }\n}",
+    "o": [
+      "John",
+      "Person",
+      "null",
+      "Name"
+    ]
+  },
+  {
+    "q": "Which of the following access modifiers allows access only within the same class?",
+    "o": [
+      "private",
+      "public",
+      "protected",
+      "internal"
+    ]
+  },
+  {
+    "q": "What is the purpose of a destructor in C#?",
+    "o": [
+      "To perform cleanup operations before an object is destroyed.",
+      "To initialize class members.",
+      "To overload operators.",
+      "To provide default values to properties."
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "class Sample {\n    private int _number;\n    public int Number {\n        get { return _number; }\n        set { _number = value; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Sample s = new Sample();\n        s.Number = 42;\n        Console.WriteLine(s.Number);\n    }\n}",
+    "o": [
+      "42",
+      "0",
+      "null",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following defines an indexer in C#?",
+    "o": [
+      "public string this[int index] { get; set; }",
+      "public string indexer(int index) { get; set; }",
+      "public string [int index] { get; set; }",
+      "public string -> index(int) { get; set; }"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about objects in C#?",
+    "o": [
+      "An object is an instance of a class.",
+      "An object defines the structure of a class.",
+      "An object cannot hold values.",
+      "Objects are declared using the 'define' keyword."
+    ]
+  },
+  {
+    "q": "What will be the output of the following C# code?",
+    "c": "class Student {\n    public string Name = \"Alex\";\n}\n\nclass Program {\n    static void Main() {\n        Student s1 = new Student();\n        Console.WriteLine(s1.Name);\n    }\n}",
+    "o": [
+      "Alex",
+      "Student",
+      "null",
+      "Name"
+    ]
+  },
+  {
+    "q": "Which of these statements about constructors is correct in C#?",
+    "o": [
+      "Constructors do not have a return type.",
+      "Constructors must return void.",
+      "Constructors can be called like regular methods.",
+      "Constructors must be static."
+    ]
+  },
+  {
+    "q": "What does the following code print?",
+    "c": "class Demo {\n    public Demo() {\n        Console.WriteLine(\"Constructor called\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        Demo d = new Demo();\n    }\n}",
+    "o": [
+      "Constructor called",
+      "Demo",
+      "null",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which access modifier allows a member to be accessed only within its own class or a derived class?",
+    "o": [
+      "protected",
+      "private",
+      "public",
+      "internal"
+    ]
+  },
+  {
+    "q": "What will the following C# code output?",
+    "c": "class Test {\n    private int _x;\n    public int X {\n        get { return _x; }\n        set { _x = value * 2; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Test t = new Test();\n        t.X = 3;\n        Console.WriteLine(t.X);\n    }\n}",
+    "o": [
+      "6",
+      "3",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about destructors in C#?",
+    "o": [
+      "They are used to perform cleanup before an object is reclaimed by garbage collection.",
+      "They can be called manually using object.~ClassName().",
+      "They can take parameters.",
+      "They can be overloaded like constructors."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class MyClass {\n    public string this[int index] {\n        get { return \"Index \" + index; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        MyClass obj = new MyClass();\n        Console.WriteLine(obj[2]);\n    }\n}",
+    "o": [
+      "Index 2",
+      "Index 0",
+      "Error",
+      "obj[2]"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to create an object of a class in C#?",
+    "o": [
+      "new",
+      "create",
+      "object",
+      "init"
+    ]
+  },
+  {
+    "q": "What will the following C# code output?",
+    "c": "class Gadget {\n    public string Brand;\n    public Gadget(string brand) {\n        Brand = brand;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Gadget g = new Gadget(\"Apple\");\n        Console.WriteLine(g.Brand);\n    }\n}",
+    "o": [
+      "Apple",
+      "Gadget",
+      "null",
+      "brand"
+    ]
+  },
+  {
+    "q": "Which statement about parameterless constructors in C# is correct?",
+    "o": [
+      "If no constructor is defined, C# provides a default parameterless constructor.",
+      "Parameterless constructors must always be declared explicitly.",
+      "A class cannot have a parameterless constructor if it has any other constructor.",
+      "They are not allowed in classes."
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "class Person {\n    public string Name { get; set; } = \"Bob\";\n}\n\nclass Program {\n    static void Main() {\n        Person p = new Person();\n        Console.WriteLine(p.Name);\n    }\n}",
+    "o": [
+      "Bob",
+      "null",
+      "Error",
+      "Name"
+    ]
+  },
+  {
+    "q": "Which access modifier makes a class member accessible only within its assembly?",
+    "o": [
+      "internal",
+      "private",
+      "protected",
+      "public"
+    ]
+  },
+  {
+    "q": "What is the correct syntax for defining an auto-implemented property in C#?",
+    "o": [
+      "public int Age { get; set; }",
+      "int Age() { return age; }",
+      "property int Age { get; set; }",
+      "define Age as int with getter and setter"
+    ]
+  },
+  {
+    "q": "What will be the output of this program?",
+    "c": "class Book {\n    private string title;\n    public string Title {\n        get { return title; }\n        set { title = value.ToUpper(); }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Book b = new Book();\n        b.Title = \"clean code\";\n        Console.WriteLine(b.Title);\n    }\n}",
+    "o": [
+      "CLEAN CODE",
+      "clean code",
+      "null",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about indexers in C#?",
+    "o": [
+      "Indexers allow objects to be indexed like arrays.",
+      "Indexers must return void.",
+      "Indexers can only be used in abstract classes.",
+      "Indexers are defined using the 'getset' keyword."
+    ]
+  },
+  {
+    "q": "What is the main purpose of a constructor in a C# class?",
+    "o": [
+      "To initialize objects of the class",
+      "To define properties",
+      "To destroy objects",
+      "To call base class methods"
+    ]
+  },
+  {
+    "q": "What will the following C# code print?",
+    "c": "class Car {\n    public string Model;\n    public Car() {\n        Model = \"Tesla\";\n    }\n}\n\nclass Program {\n    static void Main() {\n        Car c = new Car();\n        Console.WriteLine(c.Model);\n    }\n}",
+    "o": [
+      "Tesla",
+      "Model",
+      "null",
+      "Car"
+    ]
+  },
+  {
+    "q": "Which of the following access modifiers allows access from any other code in the same assembly or another assembly that references it?",
+    "o": [
+      "public",
+      "private",
+      "internal",
+      "protected"
+    ]
+  },
+  {
+    "q": "What is the output of the following C# code?",
+    "c": "class Counter {\n    private int _count;\n    public int Count {\n        get { return _count; }\n        set { _count = value + 1; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Counter c = new Counter();\n        c.Count = 4;\n        Console.WriteLine(c.Count);\n    }\n}",
+    "o": [
+      "5",
+      "4",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines an indexer in C#?",
+    "o": [
+      "public string this[int i] { get { return items[i]; } set { items[i] = value; } }",
+      "public string Indexer(int i) => items[i];",
+      "indexer string at(int i) => items[i];",
+      "get set string at index i in items"
+    ]
+  },
+  {
+    "q": "What happens when a destructor is defined in a C# class?",
+    "o": [
+      "It is called automatically before the object is garbage collected.",
+      "It must be called manually to release resources.",
+      "It replaces the constructor.",
+      "It is executed immediately after the constructor."
+    ]
+  },
+  {
+    "q": "What will this C# code output?",
+    "c": "class Box {\n    public int Width { get; set; } = 10;\n}\n\nclass Program {\n    static void Main() {\n        Box b = new Box();\n        Console.WriteLine(b.Width);\n    }\n}",
+    "o": [
+      "10",
+      "0",
+      "Width",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which statement about 'private' access modifier is true?",
+    "o": [
+      "A private member is accessible only within its containing class.",
+      "A private member is accessible from any class in the same namespace.",
+      "A private member can be accessed by derived classes.",
+      "Private members are accessible globally."
+    ]
+  },
+  {
+    "q": "Which of the following best describes a class in C#?",
+    "o": [
+      "A blueprint for creating objects",
+      "A method that performs actions",
+      "A loop used to iterate values",
+      "A type of access modifier"
+    ]
+  },
+  {
+    "q": "What will the following C# code display?",
+    "c": "class Student {\n    public string Name;\n    public Student(string name) {\n        Name = name;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Student s = new Student(\"Emma\");\n        Console.WriteLine(s.Name);\n    }\n}",
+    "o": [
+      "Emma",
+      "name",
+      "null",
+      "Student"
+    ]
+  },
+  {
+    "q": "What keyword is used to define a destructor in C#?",
+    "o": [
+      "~",
+      "!",
+      "finalize",
+      "destruct"
+    ]
+  },
+  {
+    "q": "Which access modifier allows a class member to be accessed by derived classes only?",
+    "o": [
+      "protected",
+      "private",
+      "internal",
+      "public"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class Test {\n    public int Value { get; set; }\n}\n\nclass Program {\n    static void Main() {\n        Test t = new Test();\n        Console.WriteLine(t.Value);\n    }\n}",
+    "o": [
+      "0",
+      "null",
+      "Error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following statements about indexers is correct?",
+    "o": [
+      "Indexers allow instances of a class to be indexed like arrays.",
+      "Indexers must return a boolean value.",
+      "Indexers require at least two parameters.",
+      "Indexers can only be used in static classes."
+    ]
+  },
+  {
+    "q": "What is the purpose of a parameterized constructor?",
+    "o": [
+      "To initialize objects with specific values at the time of creation",
+      "To override the base constructor",
+      "To delete an object explicitly",
+      "To automatically call destructors"
+    ]
+  },
+  {
+    "q": "What will the following program print?",
+    "c": "class MyClass {\n    public int Number { get; private set; } = 20;\n}\n\nclass Program {\n    static void Main() {\n        MyClass obj = new MyClass();\n        Console.WriteLine(obj.Number);\n    }\n}",
+    "o": [
+      "20",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Which statement correctly explains the use of the 'internal' access modifier in C#?",
+    "o": [
+      "It allows access to types or members within the same assembly.",
+      "It allows access from any code in the same class only.",
+      "It allows access only from derived classes.",
+      "It provides access to private members from other namespaces."
+    ]
+  },
+  {
+    "q": "What will this C# code output?",
+    "c": "class Book {\n    public string Title;\n    public Book(string t) {\n        Title = t;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Book b = new Book(\"C# Basics\");\n        Console.WriteLine(b.Title);\n    }\n}",
+    "o": [
+      "C# Basics",
+      "Title",
+      "Book",
+      "null"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a read-only auto-property in C#?",
+    "o": [
+      "public string Name { get; }",
+      "public string Name { get; set; }",
+      "private string Name { get; }",
+      "protected string Name { set; }"
+    ]
+  },
+  {
+    "q": "What does the tilde (~) symbol represent in a class definition?",
+    "o": [
+      "A destructor",
+      "An overloaded operator",
+      "A static method",
+      "A constructor"
+    ]
+  },
+  {
+    "q": "What is the output of this C# code?",
+    "c": "class Person {\n    public int Age { get; set; }\n    public Person() {\n        Age = 25;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Person p = new Person();\n        Console.WriteLine(p.Age);\n    }\n}",
+    "o": [
+      "25",
+      "0",
+      "null",
+      "Person"
+    ]
+  },
+  {
+    "q": "What is the benefit of using properties instead of public fields in C#?",
+    "o": [
+      "They provide encapsulation and validation logic.",
+      "They make the class abstract.",
+      "They are faster than fields.",
+      "They are required for constructors."
+    ]
+  },
+  {
+    "q": "What is the output of this C# program?",
+    "c": "class MyArray {\n    private string[] items = new string[3];\n    public string this[int index] {\n        get { return items[index]; }\n        set { items[index] = value; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        MyArray arr = new MyArray();\n        arr[0] = \"Indexers\";\n        Console.WriteLine(arr[0]);\n    }\n}",
+    "o": [
+      "Indexers",
+      "0",
+      "null",
+      "items"
+    ]
+  },
+  {
+    "q": "Which access modifier ensures the class member is accessible only within the same class?",
+    "o": [
+      "private",
+      "internal",
+      "protected",
+      "public"
+    ]
+  },
+  {
+    "q": "What is the output of the following C# code?",
+    "c": "class Car {\n    public string Model;\n    public Car() {\n        Model = \"Sedan\";\n    }\n}\n\nclass Program {\n    static void Main() {\n        Car c = new Car();\n        Console.WriteLine(c.Model);\n    }\n}",
+    "o": [
+      "Sedan",
+      "null",
+      "Car",
+      "Model"
+    ]
+  },
+  {
+    "q": "Which statement best describes the purpose of a constructor?",
+    "o": [
+      "It initializes a new instance of a class.",
+      "It destroys an existing object.",
+      "It calls a method automatically.",
+      "It defines an interface."
+    ]
+  },
+  {
+    "q": "Which C# access modifier allows a class member to be accessible from anywhere?",
+    "o": [
+      "public",
+      "private",
+      "internal",
+      "protected"
+    ]
+  },
+  {
+    "q": "What will this code snippet print?",
+    "c": "class Test {\n    public int X;\n    public Test(int value) {\n        X = value;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Test t = new Test(7);\n        Console.WriteLine(t.X);\n    }\n}",
+    "o": [
+      "7",
+      "0",
+      "X",
+      "null"
+    ]
+  },
+  {
+    "q": "What is the correct syntax to declare an auto-implemented property in C#?",
+    "o": [
+      "public string Name { get; set; }",
+      "public string Name() { get; set; }",
+      "string Name { return; }",
+      "get set string Name;"
+    ]
+  },
+  {
+    "q": "What does the following C# indexer allow?",
+    "c": "class MyList {\n    private int[] arr = new int[5];\n    public int this[int i] {\n        get { return arr[i]; }\n        set { arr[i] = value; }\n    }\n}",
+    "o": [
+      "It allows array-like access to the object.",
+      "It creates a new array object.",
+      "It performs iteration internally.",
+      "It defines a constructor."
+    ]
+  },
+  {
+    "q": "Which of the following is true about destructors in C#?",
+    "o": [
+      "They are declared using a tilde (~) followed by the class name.",
+      "They are manually called like methods.",
+      "They can be overloaded.",
+      "They must have parameters."
+    ]
+  },
+  {
+    "q": "Which code correctly demonstrates encapsulation using properties?",
+    "c": "class Employee {\n    private string name;\n    public string Name {\n        get { return name; }\n        set { name = value; }\n    }\n}",
+    "o": [
+      "It hides the field and controls access via getters and setters.",
+      "It allows direct public access to the field.",
+      "It uses only automatic properties.",
+      "It exposes all fields without any access control."
+    ]
+  },
+  {
+    "q": "Which of the following best defines a class in C#?",
+    "o": [
+      "A class is a blueprint for creating objects with specific attributes and behaviors.",
+      "A class is used only for static method storage.",
+      "A class is an alternative to an interface.",
+      "A class can only contain variables and no methods."
+    ]
+  },
+  {
+    "q": "What is the output of the following C# code?",
+    "c": "class Student {\n    public string Name;\n    public Student() {\n        Name = \"John\";\n    }\n}\n\nclass Program {\n    static void Main() {\n        Student s = new Student();\n        Console.WriteLine(s.Name);\n    }\n}",
+    "o": [
+      "John",
+      "Name",
+      "Student",
+      "null"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about parameterized constructors in C#?",
+    "o": [
+      "They allow values to be passed when creating an object.",
+      "They cannot be overloaded.",
+      "They automatically call the default constructor.",
+      "They must be static."
+    ]
+  },
+  {
+    "q": "Which access modifier allows members to be accessed only by derived classes?",
+    "o": [
+      "protected",
+      "internal",
+      "private",
+      "public"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "class Counter {\n    private static int count = 0;\n    public Counter() {\n        count++;\n    }\n    public static int GetCount() {\n        return count;\n    }\n}\n\nclass Program {\n    static void Main() {\n        new Counter();\n        new Counter();\n        Console.WriteLine(Counter.GetCount());\n    }\n}",
+    "o": [
+      "2",
+      "1",
+      "0",
+      "Counter"
+    ]
+  },
+  {
+    "q": "What is the purpose of an indexer in C#?",
+    "o": [
+      "To allow objects to be indexed like arrays.",
+      "To sort the properties of a class.",
+      "To define overloaded constructors.",
+      "To access private members directly."
+    ]
+  },
+  {
+    "q": "What is the correct way to define a destructor in C#?",
+    "o": [
+      "~MyClass() { /* cleanup */ }",
+      "destructor MyClass() { /* cleanup */ }",
+      "public void ~MyClass() { }",
+      "~MyClass(void) { }"
+    ]
+  },
+  {
+    "q": "What will this program output?",
+    "c": "class User {\n    public string Username { get; set; }\n}\n\nclass Program {\n    static void Main() {\n        User u = new User();\n        u.Username = \"admin\";\n        Console.WriteLine(u.Username);\n    }\n}",
+    "o": [
+      "admin",
+      "Username",
+      "null",
+      "User"
+    ]
+  },
+  {
+    "q": "Which keyword is used to restrict access to a member within the same class only?",
+    "o": [
+      "private",
+      "internal",
+      "protected",
+      "public"
+    ]
+  },
+  {
+    "q": "What does the following code print?",
+    "c": "class Animal {\n    public Animal() {\n        Console.WriteLine(\"Animal created\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        Animal a = new Animal();\n    }\n}",
+    "o": [
+      "Animal created",
+      "Animal",
+      "Created",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which access modifier makes a member accessible only within its own assembly?",
+    "o": [
+      "internal",
+      "private",
+      "protected",
+      "public"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "class Book {\n    public string Title { get; set; } = \"C# Basics\";\n}\n\nclass Program {\n    static void Main() {\n        Book b = new Book();\n        Console.WriteLine(b.Title);\n    }\n}",
+    "o": [
+      "C# Basics",
+      "null",
+      "Title",
+      "Book"
+    ]
+  },
+  {
+    "q": "What is the correct way to define a parameterized constructor in C#?",
+    "o": [
+      "public MyClass(int value) { }",
+      "constructor MyClass(int value) { }",
+      "MyClass = new MyClass(int value);",
+      "MyClass(int value);"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about indexers?",
+    "o": [
+      "Indexers allow objects to be accessed like arrays using the [] operator.",
+      "Indexers can only return integers.",
+      "Indexers replace constructors.",
+      "Indexers cannot be overloaded."
+    ]
+  },
+  {
+    "q": "What will the following program display?",
+    "c": "class Counter {\n    public static int Count = 0;\n    public Counter() {\n        Count++;\n    }\n}\n\nclass Program {\n    static void Main() {\n        new Counter();\n        new Counter();\n        Console.WriteLine(Counter.Count);\n    }\n}",
+    "o": [
+      "2",
+      "1",
+      "0",
+      "null"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the role of a destructor?",
+    "o": [
+      "It is used to perform cleanup before an object is destroyed.",
+      "It is used to create multiple object instances.",
+      "It initializes values when the object is created.",
+      "It defines the object’s structure."
+    ]
+  },
+  {
+    "q": "Which keyword in C# is used to create an instance of a class?",
+    "o": [
+      "new",
+      "create",
+      "instance",
+      "make"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "class Car {\n    public string Brand = \"Toyota\";\n}\n\nclass Program {\n    static void Main() {\n        Car c = new Car();\n        Console.WriteLine(c.Brand);\n    }\n}",
+    "o": [
+      "Toyota",
+      "Car",
+      "null",
+      "Brand"
+    ]
+  },
+  {
+    "q": "Which of the following statements about constructors is TRUE?",
+    "o": [
+      "Constructors are automatically called when an object is created.",
+      "Constructors must be static.",
+      "Constructors can return a value.",
+      "Constructors cannot be overloaded."
+    ]
+  },
+  {
+    "q": "What does the 'public' access modifier allow?",
+    "o": [
+      "Access from any other class or assembly.",
+      "Access from the same class only.",
+      "Access from the same assembly only.",
+      "Access from inherited classes only."
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "class Sample {\n    public int Number { get; set; }\n}\n\nclass Program {\n    static void Main() {\n        Sample s = new Sample();\n        s.Number = 25;\n        Console.WriteLine(s.Number);\n    }\n}",
+    "o": [
+      "25",
+      "0",
+      "Number",
+      "Sample"
+    ]
+  },
+  {
+    "q": "Which of the following allows an object to be accessed using array-like syntax?",
+    "o": [
+      "Indexer",
+      "Constructor",
+      "Property",
+      "Method"
+    ]
+  },
+  {
+    "q": "What is the correct way to define a read-only property in C#?",
+    "o": [
+      "public int Age { get; }",
+      "public int Age { set; }",
+      "public readonly int Age { get; set; }",
+      "readonly int Age { get; set; }"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "class Box {\n    private string material;\n    public Box(string m) {\n        material = m;\n        Console.WriteLine(\"Box made of \" + material);\n    }\n}\n\nclass Program {\n    static void Main() {\n        Box b = new Box(\"Wood\");\n    }\n}",
+    "o": [
+      "Box made of Wood",
+      "material",
+      "Wood",
+      "Box"
+    ]
+  },
+  {
+    "q": "Which of the following correctly creates an object of the class 'Student'?",
+    "o": [
+      "Student s = new Student();",
+      "Student();",
+      "create Student;",
+      "Student s = Student();"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "class Sample {\n    public Sample() {\n        Console.WriteLine(\"Constructor called\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        Sample obj = new Sample();\n    }\n}",
+    "o": [
+      "Constructor called",
+      "Sample",
+      "Main",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which modifier allows a class member to be accessed only within its class and derived classes?",
+    "o": [
+      "protected",
+      "internal",
+      "private",
+      "public"
+    ]
+  },
+  {
+    "q": "What is the purpose of a destructor in C#?",
+    "o": [
+      "To clean up resources when an object is no longer needed",
+      "To initialize an object with default values",
+      "To call another constructor",
+      "To set property values"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "class Item {\n    public string Name { get; set; } = \"Book\";\n}\n\nclass Program {\n    static void Main() {\n        Item i = new Item();\n        Console.WriteLine(i.Name);\n    }\n}",
+    "o": [
+      "Book",
+      "Item",
+      "null",
+      "Name"
+    ]
+  },
+  {
+    "q": "Which is a correct statement about automatic properties in C#?",
+    "o": [
+      "They generate a private backing field automatically.",
+      "They must be read-only.",
+      "They cannot be assigned a default value.",
+      "They require a body with logic."
+    ]
+  },
+  {
+    "q": "What is the result of this code?",
+    "c": "class Demo {\n    public int this[int index] => index * 2;\n}\n\nclass Program {\n    static void Main() {\n        Demo d = new Demo();\n        Console.WriteLine(d[3]);\n    }\n}",
+    "o": [
+      "6",
+      "3",
+      "2",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a class in C#?",
+    "o": [
+      "A blueprint for creating objects",
+      "A function that performs operations",
+      "A memory manager",
+      "A data container with no behavior"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a class in C#?",
+    "o": [
+      "public class Animal {}",
+      "define class Animal {}",
+      "class: Animal {}",
+      "public Animal {}"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "class Person {\n    public string Name;\n    public Person(string name) {\n        Name = name;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Person p = new Person(\"John\");\n        Console.WriteLine(p.Name);\n    }\n}",
+    "o": [
+      "John",
+      "Name",
+      "null",
+      "Person"
+    ]
+  },
+  {
+    "q": "Which access modifier makes a class member accessible only within the same assembly?",
+    "o": [
+      "internal",
+      "private",
+      "protected",
+      "public"
+    ]
+  },
+  {
+    "q": "What is the correct syntax for a destructor in C#?",
+    "o": [
+      "~MyClass() {}",
+      "destructor MyClass() {}",
+      "MyClass::~() {}",
+      "~MyClass(void) {}"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "class Test {\n    public string Title { get; set; } = \"Default\";\n}\n\nclass Program {\n    static void Main() {\n        Test t = new Test();\n        Console.WriteLine(t.Title);\n    }\n}",
+    "o": [
+      "Default",
+      "null",
+      "Test",
+      "Title"
+    ]
+  },
+  {
+    "q": "Which of the following can be used to provide array-like access to a class?",
+    "o": [
+      "Indexers",
+      "Properties",
+      "Constructors",
+      "Destructors"
+    ]
+  },
+  {
+    "q": "What is a constructor in C#?",
+    "o": [
+      "A special method called when an object is created",
+      "A function to destroy objects",
+      "A variable that stores object state",
+      "An accessor for class fields"
+    ]
+  },
+  {
+    "q": "What does this indexer return?",
+    "c": "class Letters {\n    public char this[int index] {\n        get { return (char)('A' + index); }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Letters l = new Letters();\n        Console.WriteLine(l[2]);\n    }\n}",
+    "o": [
+      "C",
+      "A",
+      "B",
+      "D"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a property in C#?",
+    "o": [
+      "get; set;",
+      "property",
+      "define",
+      "access"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "class Demo {\n    public Demo() {\n        Console.Write(\"Constructor \");\n    }\n    ~Demo() {\n        Console.Write(\"Destructor\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        Demo d = new Demo();\n    }\n}",
+    "o": [
+      "Constructor",
+      "Destructor",
+      "Constructor Destructor",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following allows overloading in C#?",
+    "o": [
+      "Constructors",
+      "Destructors",
+      "Indexers only",
+      "Access modifiers"
+    ]
+  },
+  {
+    "q": "What is the default access modifier for a class member in C#?",
+    "o": [
+      "private",
+      "public",
+      "protected",
+      "internal"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "class MyClass {\n    private int _x = 5;\n    public int X {\n        get { return _x; }\n        set { _x = value; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        MyClass obj = new MyClass();\n        Console.WriteLine(obj.X);\n    }\n}",
+    "o": [
+      "5",
+      "0",
+      "null",
+      "undefined"
+    ]
+  },
+  {
+    "q": "Which statement about indexers is true?",
+    "o": [
+      "They allow class instances to be indexed like arrays.",
+      "They are the same as properties.",
+      "They can be declared outside classes.",
+      "They are used to create loops."
+    ]
+  },
+  {
+    "q": "What will this program print?",
+    "c": "class Counter {\n    public static int Count = 0;\n    public Counter() {\n        Count++;\n    }\n}\n\nclass Program {\n    static void Main() {\n        new Counter();\n        new Counter();\n        Console.WriteLine(Counter.Count);\n    }\n}",
+    "o": [
+      "2",
+      "1",
+      "0",
+      "Count"
+    ]
+  },
+  {
+    "q": "Which access modifier allows access from anywhere in the program?",
+    "o": [
+      "public",
+      "private",
+      "protected",
+      "internal"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a class in C#?",
+    "o": [
+      "A blueprint for creating objects",
+      "A block of memory",
+      "A data type",
+      "A namespace"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "class Car {\n    public string Model;\n    public Car(string model) {\n        Model = model;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Car c = new Car(\"Tesla\");\n        Console.WriteLine(c.Model);\n    }\n}",
+    "o": [
+      "Tesla",
+      "Car",
+      "Model",
+      "null"
+    ]
+  },
+  {
+    "q": "Which of the following defines a read-only property in C#?",
+    "o": [
+      "public int Age { get; }",
+      "public int Age { set; }",
+      "public int Age { }",
+      "public readonly int Age;"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "class Sample {\n    private int[] data = { 1, 2, 3 };\n    public int this[int index] {\n        get { return data[index]; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Sample s = new Sample();\n        Console.WriteLine(s[1]);\n    }\n}",
+    "o": [
+      "2",
+      "1",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "What is the purpose of a destructor in C#?",
+    "o": [
+      "To clean up resources before an object is garbage collected",
+      "To create a copy of an object",
+      "To initialize values of properties",
+      "To call another class"
+    ]
+  },
+  {
+    "q": "Which access modifier allows a member to be accessible only within its own class and derived classes?",
+    "o": [
+      "protected",
+      "private",
+      "internal",
+      "public"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "class Counter {\n    public static int count = 0;\n    public Counter() {\n        count++;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Counter c1 = new Counter();\n        Counter c2 = new Counter();\n        Console.WriteLine(Counter.count);\n    }\n}",
+    "o": [
+      "2",
+      "1",
+      "0",
+      "3"
+    ]
+  },
+  {
+    "q": "What is true about auto-implemented properties in C#?",
+    "o": [
+      "They simplify property declarations when no additional logic is required",
+      "They are only valid in abstract classes",
+      "They require a constructor to initialize",
+      "They are slower than fields"
+    ]
+  },
+  {
+    "q": "Which keyword is used to create an object from a class in C#?",
+    "o": [
+      "new",
+      "object",
+      "create",
+      "make"
+    ]
+  },
+  {
+    "q": "What does the following code output?",
+    "c": "class Student {\n    public string Name;\n    public Student() {\n        Name = \"John\";\n    }\n}\n\nclass Program {\n    static void Main() {\n        Student s = new Student();\n        Console.WriteLine(s.Name);\n    }\n}",
+    "o": [
+      "John",
+      "Student",
+      "null",
+      "Name"
+    ]
+  },
+  {
+    "q": "Which of the following is true about constructors in C#?",
+    "o": [
+      "Constructors can be overloaded",
+      "Constructors can return a value",
+      "Constructors must be static",
+      "Constructors require a return type"
+    ]
+  },
+  {
+    "q": "What will this C# indexer return?",
+    "c": "class Box {\n    int[] items = {10, 20, 30};\n    public int this[int index] {\n        get { return items[index]; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Box b = new Box();\n        Console.WriteLine(b[0]);\n    }\n}",
+    "o": [
+      "10",
+      "20",
+      "30",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following access modifiers allows access within the same assembly but not from another assembly?",
+    "o": [
+      "internal",
+      "public",
+      "private",
+      "protected"
+    ]
+  },
+  {
+    "q": "Which of the following is true about a destructor in C#?",
+    "o": [
+      "It cannot be called explicitly",
+      "It can be overloaded",
+      "It takes parameters",
+      "It has a return type"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid auto-implemented property?",
+    "o": [
+      "public int Age { get; set; }",
+      "public int Age { get { return age; } }",
+      "public int Age() { return age; }",
+      "int Age = get set;"
+    ]
+  },
+  {
+    "q": "What will the following program output?",
+    "c": "class MyClass {\n    public int Value { get; private set; }\n    public MyClass(int val) {\n        Value = val;\n    }\n}\n\nclass Program {\n    static void Main() {\n        MyClass obj = new MyClass(42);\n        Console.WriteLine(obj.Value);\n    }\n}",
+    "o": [
+      "42",
+      "0",
+      "null",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly creates an object of a class in C#?",
+    "o": [
+      "Person p = new Person();",
+      "Person = new Person();",
+      "new Person = p();",
+      "Person p();"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "class Book {\n    public string Title;\n    public Book(string title) {\n        Title = title;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Book b = new Book(\"C# Basics\");\n        Console.WriteLine(b.Title);\n    }\n}",
+    "o": [
+      "C# Basics",
+      "null",
+      "Book",
+      "Title"
+    ]
+  },
+  {
+    "q": "Which statement about constructors is true?",
+    "o": [
+      "Constructors initialize objects when they are created",
+      "Constructors can only be private",
+      "Constructors must always be static",
+      "Constructors can return a value"
+    ]
+  },
+  {
+    "q": "Which of the following defines an indexer in a class?",
+    "o": [
+      "public int this[int i] { get { return data[i]; } }",
+      "public indexer int this[int i] { return data[i]; }",
+      "public int getIndex(int i) { return data[i]; }",
+      "index this[int i] { get => data[i]; }"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'private' access modifier?",
+    "o": [
+      "Restricts access to the member within the same class only",
+      "Allows access from any other class",
+      "Allows access only from derived classes",
+      "Allows access within the same assembly"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "class Demo {\n    ~Demo() {\n        Console.Write(\"Destroyed\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        Demo d = new Demo();\n    }\n}",
+    "o": [
+      "Output may vary due to garbage collection",
+      "Destroyed",
+      "No output",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to define a read-write property?",
+    "o": [
+      "public string Name { get; set; }",
+      "public string Name() { get; set; }",
+      "property string Name { get; set; }",
+      "string Name get set;"
+    ]
+  },
+  {
+    "q": "Which access modifier allows a class member to be accessed within its class, derived classes, and the same assembly?",
+    "o": [
+      "protected internal",
+      "internal",
+      "private protected",
+      "public"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a class in C#?",
+    "o": [
+      "A blueprint for creating objects",
+      "An instance of an object",
+      "A variable that stores data",
+      "A method that performs operations"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "class Car {\n    public string Model;\n    public Car() {\n        Model = \"Tesla\";\n    }\n}\n\nclass Program {\n    static void Main() {\n        Car c = new Car();\n        Console.WriteLine(c.Model);\n    }\n}",
+    "o": [
+      "Tesla",
+      "null",
+      "Car",
+      "Model"
+    ]
+  },
+  {
+    "q": "Which statement about destructors in C# is correct?",
+    "o": [
+      "They are used to perform cleanup operations before an object is reclaimed by garbage collection",
+      "They can be called manually",
+      "They can take parameters",
+      "They are required in every class"
+    ]
+  },
+  {
+    "q": "Which syntax correctly defines a write-only property in C#?",
+    "o": [
+      "public int Age { set { age = value; } }",
+      "public int Age { get; set; }",
+      "public int Age() { set; }",
+      "writeonly int Age { set; }"
+    ]
+  },
+  {
+    "q": "Which access modifier makes a class member accessible from any other code in the same assembly or another assembly that references it?",
+    "o": [
+      "public",
+      "private",
+      "internal",
+      "protected"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "class Container {\n    private int[] values = { 5, 10, 15 };\n    public int this[int index] {\n        get { return values[index]; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Container c = new Container();\n        Console.WriteLine(c[1]);\n    }\n}",
+    "o": [
+      "10",
+      "5",
+      "15",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following can be overloaded in C#?",
+    "o": [
+      "Constructors",
+      "Destructors",
+      "Access Modifiers",
+      "Index Names"
+    ]
+  },
+  {
+    "q": "What does 'internal' access modifier mean in C#?",
+    "o": [
+      "Accessible only within files in the same assembly",
+      "Accessible from anywhere",
+      "Accessible only in the same class",
+      "Accessible from derived classes only"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a class named 'Student' with one public field?",
+    "o": [
+      "class Student { public string name; }",
+      "class Student() { string name; }",
+      "public class Student(name) { }",
+      "class Student { string name = public; }"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "class MyClass {\n    public MyClass() {\n        Console.Write(\"Constructor Called\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        MyClass obj = new MyClass();\n    }\n}",
+    "o": [
+      "Constructor Called",
+      "Compilation Error",
+      "Runtime Error",
+      "No Output"
+    ]
+  },
+  {
+    "q": "Which access modifier allows a member to be accessed only by code in the same class or a derived class?",
+    "o": [
+      "protected",
+      "private",
+      "internal",
+      "public"
+    ]
+  },
+  {
+    "q": "What is a property in C#?",
+    "o": [
+      "A member that provides a flexible mechanism to read, write, or compute the value of a private field",
+      "A variable declared inside a method",
+      "A constructor with parameters",
+      "A method without return type"
+    ]
+  },
+  {
+    "q": "What will this code display?",
+    "c": "class Counter {\n    private int count;\n    public int Count {\n        get { return count; }\n        set { count = value; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Counter c = new Counter();\n        c.Count = 42;\n        Console.WriteLine(c.Count);\n    }\n}",
+    "o": [
+      "42",
+      "0",
+      "count",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which is the correct syntax for defining a destructor in C#?",
+    "o": [
+      "~MyClass() { /* cleanup code */ }",
+      "destructor MyClass() { }",
+      "MyClass::~MyClass() { }",
+      "~MyClass(void) { }"
+    ]
+  },
+  {
+    "q": "Which statement about indexers is true?",
+    "o": [
+      "They allow instances of a class to be indexed like arrays",
+      "They replace constructors in some cases",
+      "They are used only in static classes",
+      "They cannot have a return type"
+    ]
+  },
+  {
+    "q": "What is the default access modifier for a class member if none is specified?",
+    "o": [
+      "private",
+      "public",
+      "internal",
+      "protected"
+    ]
+  },
+  {
+    "q": "Which of the following is used to create an object of a class in C#?",
+    "o": [
+      "ClassName obj = new ClassName();",
+      "ClassName obj();",
+      "ClassName obj = ClassName();",
+      "new obj = ClassName();"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "class Example {\n    public Example(string message) {\n        Console.WriteLine(message);\n    }\n}\n\nclass Program {\n    static void Main() {\n        Example ex = new Example(\"Hello C#\");\n    }\n}",
+    "o": [
+      "Hello C#",
+      "Example",
+      "No Output",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "What keyword is used to define a read-only property in C#?",
+    "o": [
+      "get",
+      "readonly",
+      "set",
+      "const"
+    ]
+  },
+  {
+    "q": "Which of the following allows you to access class elements like an array?",
+    "o": [
+      "Indexer",
+      "Property",
+      "Constructor",
+      "Field"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "class Sample {\n    private int[] data = { 2, 4, 6 };\n    public int this[int i] {\n        get { return data[i]; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Sample s = new Sample();\n        Console.WriteLine(s[2]);\n    }\n}",
+    "o": [
+      "6",
+      "2",
+      "4",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which access modifier makes a member accessible only within the same class?",
+    "o": [
+      "private",
+      "public",
+      "protected",
+      "internal"
+    ]
+  },
+  {
+    "q": "Which of the following is true about destructors in C#?",
+    "o": [
+      "They do not take any parameters and cannot be overloaded",
+      "They must be declared as public",
+      "They are called manually using the 'delete' keyword",
+      "They require a return type"
+    ]
+  },
+  {
+    "q": "What is the correct way to create a property that exposes a private field named `_name`?",
+    "o": [
+      "public string Name { get { return _name; } set { _name = value; } }",
+      "public Name string { get; set; }",
+      "string Name() { return _name; }",
+      "public get set Name(_name);"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a parameterless constructor in C#?",
+    "o": [
+      "public MyClass() { }",
+      "constructor MyClass() { }",
+      "public void MyClass() { }",
+      "public MyClass(void) { }"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "class Car {\n    public string Model { get; set; } = \"Sedan\";\n}\n\nclass Program {\n    static void Main() {\n        Car c = new Car();\n        Console.WriteLine(c.Model);\n    }\n}",
+    "o": [
+      "Sedan",
+      "Car",
+      "Null",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which access modifier allows a class member to be accessed within its own class and by derived class instances?",
+    "o": [
+      "protected",
+      "private",
+      "internal",
+      "public"
+    ]
+  },
+  {
+    "q": "What is a characteristic of a destructor in C#?",
+    "o": [
+      "It is automatically called by the garbage collector.",
+      "It must be manually invoked.",
+      "It can have parameters.",
+      "It returns a boolean value."
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "class Book {\n    public string Title;\n}\n\nclass Program {\n    static void Main() {\n        Book b = new Book();\n        b.Title = \"C# Basics\";\n        Console.WriteLine(b.Title);\n    }\n}",
+    "o": [
+      "C# Basics",
+      "Book",
+      "Null",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "What is the purpose of using indexers in C#?",
+    "o": [
+      "To access class objects using array-like syntax",
+      "To define class-level constants",
+      "To override constructors",
+      "To create multiple instances of a class"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid auto-implemented property in C#?",
+    "o": [
+      "public int Age { get; set; }",
+      "public Age { int get; set; }",
+      "public int Age get; set;",
+      "int public Age { set; get; }"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "class Test {\n    private int _value;\n    public int Value {\n        get { return _value; }\n        set { _value = value * 2; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Test t = new Test();\n        t.Value = 3;\n        Console.WriteLine(t.Value);\n    }\n}",
+    "o": [
+      "6",
+      "3",
+      "0",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which statement correctly creates an object of the class `Student`?",
+    "o": [
+      "Student s = new Student();",
+      "Student s();",
+      "Student s = Student();",
+      "new Student = s();"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "class Person {\n    public string Name { get; set; }\n}\n\nclass Program {\n    static void Main() {\n        Person p = new Person { Name = \"John\" };\n        Console.WriteLine(p.Name);\n    }\n}",
+    "o": [
+      "John",
+      "Person",
+      "Null",
+      "Name"
+    ]
+  },
+  {
+    "q": "Which access modifier allows members to be accessed only within the same assembly?",
+    "o": [
+      "internal",
+      "private",
+      "protected",
+      "public"
+    ]
+  },
+  {
+    "q": "Which of the following is true about constructors in C#?",
+    "o": [
+      "They initialize objects when they are created.",
+      "They are called using the dot (.) operator.",
+      "They must have a return type.",
+      "They can be called manually after object creation."
+    ]
+  },
+  {
+    "q": "Which of the following allows an object to be indexed like an array?",
+    "o": [
+      "Indexer",
+      "Field",
+      "Constructor",
+      "Method"
+    ]
+  },
+  {
+    "q": "What will this code display?",
+    "c": "class Test {\n    private int[] numbers = { 1, 3, 5 };\n    public int this[int i] {\n        get { return numbers[i]; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Test t = new Test();\n        Console.WriteLine(t[1]);\n    }\n}",
+    "o": [
+      "3",
+      "1",
+      "5",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "What is the correct syntax to define a write-only property in C#?",
+    "o": [
+      "public int MyValue { set { /* code */ } }",
+      "public int MyValue { get; }",
+      "public int MyValue { get; set; }",
+      "public int MyValue => value;"
+    ]
+  },
+  {
+    "q": "What does a destructor look like in C#?",
+    "o": [
+      "~MyClass() { }",
+      "destructor MyClass() { }",
+      "void ~MyClass() { }",
+      "~MyClass(void) { }"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a class in C#?",
+    "o": [
+      "class",
+      "Class",
+      "define",
+      "object"
+    ]
+  },
+  {
+    "q": "What will be the output of this code snippet?",
+    "c": "class Animal {\n    public string Type;\n    public Animal() {\n        Type = \"Mammal\";\n    }\n}\n\nclass Program {\n    static void Main() {\n        Animal a = new Animal();\n        Console.WriteLine(a.Type);\n    }\n}",
+    "o": [
+      "Mammal",
+      "Animal",
+      "Null",
+      "Type"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a constructor?",
+    "o": [
+      "A special method used to initialize objects",
+      "A method that returns void always",
+      "A method that destroys an object",
+      "A method with the same name as the namespace"
+    ]
+  },
+  {
+    "q": "Which of these access modifiers makes a class member accessible from anywhere?",
+    "o": [
+      "public",
+      "private",
+      "protected",
+      "internal"
+    ]
+  },
+  {
+    "q": "What is the correct way to create a read-only property?",
+    "o": [
+      "public int MyProperty { get; }",
+      "public int MyProperty { set; }",
+      "private int MyProperty { get; set; }",
+      "int MyProperty => value;"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "class Test {\n    private string _message = \"Hello World\";\n    public string Message {\n        get { return _message; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Test t = new Test();\n        Console.WriteLine(t.Message);\n    }\n}",
+    "o": [
+      "Hello World",
+      "Message",
+      "Null",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which syntax defines an indexer in a class?",
+    "o": [
+      "public int this[int index] { get; set; }",
+      "public int GetItem(int index) { return 0; }",
+      "public void Index(int i) { }",
+      "public int [index] { get; set; }"
+    ]
+  },
+  {
+    "q": "What is the purpose of a destructor in C#?",
+    "o": [
+      "To clean up resources before an object is destroyed",
+      "To manually delete objects",
+      "To override constructors",
+      "To reset the object's state"
+    ]
+  },
+  {
+    "q": "Which of the following best defines an object in C#?",
+    "o": [
+      "An instance of a class",
+      "A static method",
+      "A type declaration",
+      "A code block"
+    ]
+  },
+  {
+    "q": "What does this code output?",
+    "c": "class MyClass {\n    public MyClass() {\n        Console.WriteLine(\"Constructor called\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        MyClass obj = new MyClass();\n    }\n}",
+    "o": [
+      "Constructor called",
+      "MyClass",
+      "Main",
+      "No output"
+    ]
+  },
+  {
+    "q": "What is a correct way to define a parameterized constructor in C#?",
+    "o": [
+      "public MyClass(int x) { }",
+      "MyClass(x) { }",
+      "constructor MyClass(int x) { }",
+      "public void MyClass(int x) { }"
+    ]
+  },
+  {
+    "q": "Which access modifier allows a member to be accessed within its class and derived classes only?",
+    "o": [
+      "protected",
+      "internal",
+      "private",
+      "public"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "class Demo {\n    private int _value;\n    public int Value {\n        get { return _value; }\n        set { _value = value; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Demo d = new Demo();\n        d.Value = 7;\n        Console.WriteLine(d.Value);\n    }\n}",
+    "o": [
+      "7",
+      "0",
+      "Null",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which statement is true about destructors in C#?",
+    "o": [
+      "A destructor has no parameters and no access modifiers.",
+      "A destructor must be explicitly called.",
+      "You can overload a destructor.",
+      "Destructors can return values."
+    ]
+  },
+  {
+    "q": "Which of the following syntax correctly declares a property with only a getter?",
+    "o": [
+      "public int MyProp { get; }",
+      "public int MyProp { get; set; }",
+      "public int GetMyProp() { return 1; }",
+      "get { return 5; }"
+    ]
+  },
+  {
+    "q": "What does the following code snippet output?",
+    "c": "class Book {\n    private string[] titles = {\"C#\", \"Java\", \"Python\"};\n    public string this[int i] {\n        get { return titles[i]; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Book b = new Book();\n        Console.WriteLine(b[2]);\n    }\n}",
+    "o": [
+      "Python",
+      "Java",
+      "C#",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "What is the main purpose of a class in C#?",
+    "o": [
+      "To define a blueprint for objects",
+      "To execute statements sequentially",
+      "To store a group of unrelated functions",
+      "To act as a database"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "class Car {\n    public string Brand;\n    public Car(string brand) {\n        Brand = brand;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Car c = new Car(\"Toyota\");\n        Console.WriteLine(c.Brand);\n    }\n}",
+    "o": [
+      "Toyota",
+      "Brand",
+      "Null",
+      "Car"
+    ]
+  },
+  {
+    "q": "Which of the following is true about a constructor in C#?",
+    "o": [
+      "It has the same name as the class",
+      "It must return an int",
+      "It can be called manually using `new()`",
+      "It is used to destroy the object"
+    ]
+  },
+  {
+    "q": "Which access modifier allows access to members only within the same assembly?",
+    "o": [
+      "internal",
+      "public",
+      "private",
+      "protected"
+    ]
+  },
+  {
+    "q": "What does this code output?",
+    "c": "class Sample {\n    private int _id = 42;\n    public int ID {\n        get { return _id; }\n        private set { _id = value; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Sample s = new Sample();\n        Console.WriteLine(s.ID);\n    }\n}",
+    "o": [
+      "42",
+      "0",
+      "Compilation Error",
+      "ID"
+    ]
+  },
+  {
+    "q": "Which statement correctly defines an auto-implemented property with both get and set?",
+    "o": [
+      "public string Name { get; set; }",
+      "public string Name() { get; set; }",
+      "public Name get() set()",
+      "string Name = { get, set }"
+    ]
+  },
+  {
+    "q": "What does the indexer in this code return?",
+    "c": "class Numbers {\n    private int[] data = { 2, 4, 6 };\n    public int this[int index] {\n        get { return data[index]; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Numbers n = new Numbers();\n        Console.WriteLine(n[1]);\n    }\n}",
+    "o": [
+      "4",
+      "2",
+      "6",
+      "Index out of range"
+    ]
+  },
+  {
+    "q": "What is the role of a destructor in C#?",
+    "o": [
+      "To perform cleanup operations before an object is reclaimed by garbage collection",
+      "To create an object when none exists",
+      "To initialize object properties",
+      "To overload a constructor"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a property that cannot be modified from outside the class?",
+    "o": [
+      "private set",
+      "public set",
+      "protected get",
+      "readonly"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "class Student {\n    public string Name;\n    public Student() {\n        Name = \"Default\";\n    }\n}\n\nclass Program {\n    static void Main() {\n        Student s = new Student();\n        Console.WriteLine(s.Name);\n    }\n}",
+    "o": [
+      "Default",
+      "null",
+      "Student",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following best defines an indexer in C#?",
+    "o": [
+      "An indexer allows objects to be indexed like arrays.",
+      "An indexer defines an automatic constructor.",
+      "An indexer defines a new class type.",
+      "An indexer initializes properties."
+    ]
+  },
+  {
+    "q": "Which of these is the correct way to define a constructor in C#?",
+    "o": [
+      "public MyClass() { }",
+      "void MyClass() { }",
+      "constructor MyClass() { }",
+      "public constructor MyClass() { }"
+    ]
+  },
+  {
+    "q": "What does the following code print?",
+    "c": "class Product {\n    public string Name { get; set; } = \"Laptop\";\n}\n\nclass Program {\n    static void Main() {\n        Product p = new Product();\n        Console.WriteLine(p.Name);\n    }\n}",
+    "o": [
+      "Laptop",
+      "null",
+      "Product",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which access modifier allows access from derived classes, even if they are in a different assembly?",
+    "o": [
+      "protected",
+      "private",
+      "internal",
+      "public"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "class Counter {\n    private int _value = 100;\n    public int Value {\n        get { return _value; }\n        set { if (value > 0) _value = value; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Counter c = new Counter();\n        c.Value = -50;\n        Console.WriteLine(c.Value);\n    }\n}",
+    "o": [
+      "100",
+      "-50",
+      "0",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "What is the correct syntax to define an indexer in a class?",
+    "o": [
+      "public int this[int index] { get; set; }",
+      "public indexer[int index] { get; set; }",
+      "public this[int] => int",
+      "public int indexer(int index) { get; set; }"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a class in C#?",
+    "o": [
+      "public class Car { }",
+      "class Car = { }",
+      "Car class { }",
+      "public Car() { }"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "class Vehicle {\n    public Vehicle() {\n        Console.Write(\"Constructor \");\n    }\n    ~Vehicle() {\n        Console.Write(\"Destructor\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        Vehicle v = new Vehicle();\n    }\n}",
+    "o": [
+      "Constructor",
+      "Destructor",
+      "Constructor Destructor",
+      "Runtime Error"
+    ]
+  },
+  {
+    "q": "Which access modifier allows access only within the same class?",
+    "o": [
+      "private",
+      "protected",
+      "internal",
+      "public"
+    ]
+  },
+  {
+    "q": "What is a property in C# used for?",
+    "o": [
+      "To encapsulate a field and provide controlled access",
+      "To create a constructor",
+      "To initialize a class",
+      "To override a method"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "class Book {\n    private string title = \"C# Basics\";\n    public string Title {\n        get { return title; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Book b = new Book();\n        Console.WriteLine(b.Title);\n    }\n}",
+    "o": [
+      "C# Basics",
+      "title",
+      "null",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which is the correct way to define a read-only property in C#?",
+    "o": [
+      "public int Age { get; }",
+      "public int Age() { get; }",
+      "readonly int Age { get; set; }",
+      "public Age => int;"
+    ]
+  },
+  {
+    "q": "What is the purpose of a destructor in a class?",
+    "o": [
+      "To perform cleanup operations before the object is garbage collected",
+      "To initialize objects during creation",
+      "To overload methods",
+      "To call static members"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "class Data {\n    public int this[int index] {\n        get { return index * 2; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Data d = new Data();\n        Console.WriteLine(d[4]);\n    }\n}",
+    "o": [
+      "8",
+      "4",
+      "2",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to define a class in C#?",
+    "o": [
+      "class",
+      "Class",
+      "define",
+      "struct"
+    ]
+  },
+  {
+    "q": "What is the output of the following C# code snippet?",
+    "c": "class Person {\n    public string Name;\n}\n\nclass Program {\n    static void Main() {\n        Person p = new Person();\n        p.Name = \"John\";\n        Console.WriteLine(p.Name);\n    }\n}",
+    "o": [
+      "John",
+      "Name",
+      "null",
+      "Person"
+    ]
+  },
+  {
+    "q": "What is the purpose of a constructor in C#?",
+    "o": [
+      "To initialize objects of a class",
+      "To define methods of a class",
+      "To inherit from a class",
+      "To destroy objects of a class"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Car {\n    public string Model;\n    public Car(string model) {\n        Model = model;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Car c = new Car(\"Tesla\");\n        Console.WriteLine(c.Model);\n    }\n}",
+    "o": [
+      "Tesla",
+      "Model",
+      "Car",
+      "null"
+    ]
+  },
+  {
+    "q": "Which access modifier makes a member accessible only within its own class?",
+    "o": [
+      "private",
+      "public",
+      "protected",
+      "internal"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Demo {\n    private int number = 42;\n    public int GetNumber() {\n        return number;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Demo d = new Demo();\n        Console.WriteLine(d.GetNumber());\n    }\n}",
+    "o": [
+      "42",
+      "0",
+      "number",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about properties in C#?",
+    "o": [
+      "They provide a flexible mechanism to read, write, or compute the value of a private field",
+      "They can only be used for reading data",
+      "They are the same as methods",
+      "They can only be declared as public"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class MyClass {\n    private int _value;\n    public int Value {\n        get { return _value; }\n        set { _value = value; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        MyClass obj = new MyClass();\n        obj.Value = 100;\n        Console.WriteLine(obj.Value);\n    }\n}",
+    "o": [
+      "100",
+      "0",
+      "_value",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a destructor in C#?",
+    "o": [
+      "~MyClass() { }",
+      "destructor MyClass() { }",
+      "MyClass::~() { }",
+      "void ~MyClass() { }"
+    ]
+  },
+  {
+    "q": "Which of the following statements about indexers in C# is correct?",
+    "o": [
+      "They allow instances of a class to be indexed like arrays",
+      "They replace the need for constructors",
+      "They can only be used with lists",
+      "They are used to override methods"
+    ]
+  },
+  {
+    "q": "Which of the following statements correctly creates an object of a class named `Employee`?",
+    "o": [
+      "Employee emp = new Employee();",
+      "Employee emp();",
+      "Employee emp = Employee();",
+      "new Employee emp();"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Sample {\n    public Sample() {\n        Console.WriteLine(\"Constructor Called\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        Sample s = new Sample();\n    }\n}",
+    "o": [
+      "Constructor Called",
+      "Sample",
+      "Main",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which access modifier allows a class member to be accessible only within its own class and by derived class instances?",
+    "o": [
+      "protected",
+      "private",
+      "internal",
+      "public"
+    ]
+  },
+  {
+    "q": "What is the purpose of an indexer in C#?",
+    "o": [
+      "To allow object instances to be accessed like arrays",
+      "To initialize class variables",
+      "To declare multiple constructors",
+      "To assign default values to fields"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Box {\n    private int length;\n    public int Length {\n        get { return length; }\n        set { length = value; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Box b = new Box();\n        b.Length = 7;\n        Console.WriteLine(b.Length);\n    }\n}",
+    "o": [
+      "7",
+      "0",
+      "length",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following defines a parameterized constructor in C#?",
+    "o": [
+      "public Car(string model) { this.Model = model; }",
+      "Car() : base() {}",
+      "public void Car(string model) {}",
+      "Car(string model) => Model = model;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Alpha {\n    public Alpha() {\n        Console.WriteLine(\"Alpha Constructor\");\n    }\n    ~Alpha() {\n        Console.WriteLine(\"Alpha Destructor\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        Alpha a = new Alpha();\n    }\n}",
+    "o": [
+      "Alpha Constructor",
+      "Alpha Destructor",
+      "Alpha",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following allows controlled access to class fields?",
+    "o": [
+      "Properties",
+      "Constructors",
+      "Methods",
+      "Indexers"
+    ]
+  },
+  {
+    "q": "What does the `internal` access modifier in C# mean?",
+    "o": [
+      "Accessible only within the same assembly",
+      "Accessible from any class",
+      "Accessible from derived classes",
+      "Accessible only inside the class"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Data {\n    public int this[int index] {\n        get { return index * 2; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Data d = new Data();\n        Console.WriteLine(d[3]);\n    }\n}",
+    "o": [
+      "6",
+      "3",
+      "2",
+      "0"
+    ]
+  },
+  {
+    "q": "Which keyword is used to create a new object in C#?",
+    "o": [
+      "new",
+      "create",
+      "object",
+      "class"
+    ]
+  },
+  {
+    "q": "What is the output of the following C# code snippet?",
+    "c": "class Book {\n    public string Title;\n    public Book() {\n        Title = \"Unknown\";\n    }\n}\n\nclass Program {\n    static void Main() {\n        Book b = new Book();\n        Console.WriteLine(b.Title);\n    }\n}",
+    "o": [
+      "Unknown",
+      "null",
+      "Title",
+      "Book"
+    ]
+  },
+  {
+    "q": "Which of the following is a characteristic of a destructor in C#?",
+    "o": [
+      "It has the same name as the class preceded by a tilde (~)",
+      "It takes parameters like constructors",
+      "It can be called explicitly",
+      "It is defined using the `destructor` keyword"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about access modifiers in C#?",
+    "o": [
+      "`protected` allows access within the class and derived classes",
+      "`private` allows access from any class in the same assembly",
+      "`internal` allows access from outside the assembly",
+      "`public` restricts access to only the base class"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Student {\n    private int age;\n    public int Age {\n        get { return age; }\n        set { age = value; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Student s = new Student();\n        s.Age = 21;\n        Console.WriteLine(s.Age);\n    }\n}",
+    "o": [
+      "21",
+      "0",
+      "age",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following defines an auto-implemented property in C#?",
+    "o": [
+      "public string Name { get; set; }",
+      "public string Name() { return name; }",
+      "get { return name; } set { name = value; }",
+      "private set { name = value; }"
+    ]
+  },
+  {
+    "q": "Which modifier makes class members visible only within the current assembly?",
+    "o": [
+      "internal",
+      "private",
+      "protected",
+      "public"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Counter {\n    public static int Count;\n    public Counter() {\n        Count++;\n    }\n}\n\nclass Program {\n    static void Main() {\n        new Counter();\n        new Counter();\n        Console.WriteLine(Counter.Count);\n    }\n}",
+    "o": [
+      "2",
+      "1",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is true about constructors in C#?",
+    "o": [
+      "They are called automatically when an object is created",
+      "They must have a return type",
+      "They can only be defined once per class",
+      "They can only be private"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class MyCollection {\n    private int[] data = { 10, 20, 30 };\n    public int this[int i] {\n        get { return data[i]; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        MyCollection mc = new MyCollection();\n        Console.WriteLine(mc[1]);\n    }\n}",
+    "o": [
+      "20",
+      "10",
+      "30",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following is true about objects in C#?",
+    "o": [
+      "Objects are instances of classes",
+      "Objects must be declared as static",
+      "Objects cannot have properties",
+      "Objects can only be created using interfaces"
+    ]
+  },
+  {
+    "q": "What is the output of the following C# code?",
+    "c": "class Sample {\n    public string Message = \"Welcome\";\n}\n\nclass Program {\n    static void Main() {\n        Sample s1 = new Sample();\n        Sample s2 = s1;\n        s2.Message = \"Hello\";\n        Console.WriteLine(s1.Message);\n    }\n}",
+    "o": [
+      "Hello",
+      "Welcome",
+      "Sample",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which statement about constructors is correct in C#?",
+    "o": [
+      "A class can have multiple constructors with different parameter lists",
+      "A constructor must have the same name as its namespace",
+      "A constructor must return an integer",
+      "A constructor can only be defined once"
+    ]
+  },
+  {
+    "q": "Which access modifier allows access to a member from the same class and derived classes within any assembly?",
+    "o": [
+      "protected",
+      "private",
+      "internal",
+      "protected internal"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Data {\n    public string Info { get; set; } = \"Data\";\n}\n\nclass Program {\n    static void Main() {\n        Data d = new Data();\n        Console.WriteLine(d.Info);\n    }\n}",
+    "o": [
+      "Data",
+      "Info",
+      "null",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following defines a read-only property in C#?",
+    "o": [
+      "public int Age { get; }",
+      "public int Age() { return age; }",
+      "private set { age = value; }",
+      "public Age { get; set; }"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines an indexer in C#?",
+    "o": [
+      "public int this[int i] { get { return i * 10; } }",
+      "public indexer[int i] => return i;",
+      "int this[i] => i;",
+      "this[int i] { get { return i; } }"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "class Example {\n    public Example(string name) {\n        Console.WriteLine(\"Hello \" + name);\n    }\n}\n\nclass Program {\n    static void Main() {\n        new Example(\"World\");\n    }\n}",
+    "o": [
+      "Hello World",
+      "World",
+      "Hello",
+      "Example"
+    ]
+  },
+  {
+    "q": "What is the role of access modifiers in a class?",
+    "o": [
+      "They control the visibility of class members",
+      "They define the return type of class methods",
+      "They initialize the object memory",
+      "They allow inheritance from multiple classes"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "class MyClass {\n    ~MyClass() {\n        Console.WriteLine(\"Destructor called\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        MyClass obj = new MyClass();\n    }\n}",
+    "o": [
+      "Output is not guaranteed at runtime",
+      "Destructor called",
+      "Error: destructors are not allowed",
+      "Nothing will happen"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a class in C#?",
+    "o": [
+      "A blueprint for creating objects",
+      "A container for namespaces",
+      "A memory allocation unit",
+      "A built-in data type"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "class Demo {\n    public string Name;\n    public Demo(string name) {\n        Name = name;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Demo d = new Demo(\"John\");\n        Console.WriteLine(d.Name);\n    }\n}",
+    "o": [
+      "John",
+      "Demo",
+      "null",
+      "name"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to define a destructor in C#?",
+    "o": [
+      "~",
+      "destructor",
+      "delete",
+      "destroy"
+    ]
+  },
+  {
+    "q": "Which access modifier allows access only within the containing class?",
+    "o": [
+      "private",
+      "internal",
+      "public",
+      "protected"
+    ]
+  },
+  {
+    "q": "What is the output of the following C# program?",
+    "c": "class Box {\n    private int _width = 5;\n    public int Width {\n        get { return _width; }\n        set { _width = value; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Box b = new Box();\n        b.Width = 10;\n        Console.WriteLine(b.Width);\n    }\n}",
+    "o": [
+      "10",
+      "5",
+      "Width",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following defines an indexer that stores and retrieves values from a private array?",
+    "o": [
+      "public int this[int i] { get => data[i]; set => data[i] = value; }",
+      "public indexer[int i] { return data[i]; }",
+      "int[] Indexer = new int[10];",
+      "private int[] this[int index];"
+    ]
+  },
+  {
+    "q": "Which statement is true about constructors in C#?",
+    "o": [
+      "They can be overloaded",
+      "They must return a value",
+      "They are static by default",
+      "They can be inherited"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Counter {\n    public static int Value = 0;\n    public Counter() {\n        Value++;\n    }\n}\n\nclass Program {\n    static void Main() {\n        new Counter();\n        new Counter();\n        new Counter();\n        Console.WriteLine(Counter.Value);\n    }\n}",
+    "o": [
+      "3",
+      "1",
+      "0",
+      "2"
+    ]
+  },
+  {
+    "q": "Which access modifier makes a class member accessible only within the same assembly and from derived classes?",
+    "o": [
+      "protected internal",
+      "internal",
+      "protected",
+      "private protected"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "class MyClass {\n    public int this[int i] => i * i;\n}\n\nclass Program {\n    static void Main() {\n        MyClass obj = new MyClass();\n        Console.WriteLine(obj[4]);\n    }\n}",
+    "o": [
+      "16",
+      "8",
+      "4",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following correctly creates an object of a class named 'Person'?",
+    "o": [
+      "Person p = new Person();",
+      "new Person = Person();",
+      "object p = Person();",
+      "Person p();"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "class Car {\n    public string Model;\n    public Car(string model) {\n        Model = model;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Car c = new Car(\"Sedan\");\n        Console.WriteLine(c.Model);\n    }\n}",
+    "o": [
+      "Sedan",
+      "Model",
+      "null",
+      "Car"
+    ]
+  },
+  {
+    "q": "What is a default constructor in C#?",
+    "o": [
+      "A constructor with no parameters",
+      "A constructor that must return void",
+      "A static method called 'Main'",
+      "A constructor with only optional parameters"
+    ]
+  },
+  {
+    "q": "What does the 'public' access modifier indicate?",
+    "o": [
+      "The member is accessible from anywhere",
+      "The member is accessible only within the same class",
+      "The member is only accessible to derived classes",
+      "The member is accessible within the same assembly only"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "class Employee {\n    private string _name = \"Default\";\n    public string Name {\n        get { return _name; }\n        set { _name = value; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Employee e = new Employee();\n        Console.WriteLine(e.Name);\n    }\n}",
+    "o": [
+      "Default",
+      "Name",
+      "null",
+      "Employee"
+    ]
+  },
+  {
+    "q": "Which of the following is true about indexers in C#?",
+    "o": [
+      "They allow objects to be indexed like arrays",
+      "They replace constructors in object initialization",
+      "They can only return strings",
+      "They must use the `set` accessor only"
+    ]
+  },
+  {
+    "q": "Which of the following access modifiers restricts access to the current class and derived classes only?",
+    "o": [
+      "protected",
+      "internal",
+      "private",
+      "public"
+    ]
+  },
+  {
+    "q": "What is the output of the following program?",
+    "c": "class Counter {\n    public static int Count = 0;\n    public Counter() {\n        Count += 2;\n    }\n}\n\nclass Program {\n    static void Main() {\n        new Counter();\n        new Counter();\n        Console.WriteLine(Counter.Count);\n    }\n}",
+    "o": [
+      "4",
+      "2",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following can be declared using auto-implemented properties?",
+    "o": [
+      "public int Id { get; set; }",
+      "public int Id() { return 0; }",
+      "public Id { get; set; }",
+      "get; set; int Id"
+    ]
+  },
+  {
+    "q": "What happens when a class does not define any constructor?",
+    "o": [
+      "A default constructor is provided by the compiler",
+      "The class cannot be instantiated",
+      "It causes a compilation error",
+      "All members become static"
+    ]
+  },
+  {
+    "q": "Which of the following best defines a C# object?",
+    "o": [
+      "An instance of a class",
+      "A function pointer",
+      "A memory block of static methods",
+      "A value type only"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class Student {\n    public Student() {\n        Console.WriteLine(\"Constructor called\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        Student s = new Student();\n    }\n}",
+    "o": [
+      "Constructor called",
+      "Student",
+      "Main",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which access modifier allows a class member to be accessed only by code in the same assembly?",
+    "o": [
+      "internal",
+      "public",
+      "protected",
+      "private"
+    ]
+  },
+  {
+    "q": "What is the output of the following C# code?",
+    "c": "class Sample {\n    private int _x = 100;\n    public int X {\n        get { return _x; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Sample s = new Sample();\n        Console.WriteLine(s.X);\n    }\n}",
+    "o": [
+      "100",
+      "0",
+      "X",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following defines a parameterized constructor correctly?",
+    "o": [
+      "public MyClass(int x) { this.x = x; }",
+      "public void MyClass(int x) { this.x = x; }",
+      "MyClass(x) => this.x = x;",
+      "void MyClass(int x) { x = x; }"
+    ]
+  },
+  {
+    "q": "What is the role of a destructor in a C# class?",
+    "o": [
+      "To clean up unmanaged resources before the object is reclaimed by garbage collection",
+      "To prevent access to private members",
+      "To initialize static variables",
+      "To enforce encapsulation"
+    ]
+  },
+  {
+    "q": "Which keyword is used to create an automatic property with only a getter?",
+    "o": [
+      "get;",
+      "readonly;",
+      "readonly get;",
+      "const;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "class Container {\n    public int this[int i] => i + 1;\n}\n\nclass Program {\n    static void Main() {\n        var c = new Container();\n        Console.WriteLine(c[3]);\n    }\n}",
+    "o": [
+      "4",
+      "3",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following modifiers provides the highest level of accessibility?",
+    "o": [
+      "public",
+      "internal",
+      "protected internal",
+      "private"
+    ]
+  },
+  {
+    "q": "Which of the following is true about a class constructor?",
+    "o": [
+      "It is automatically called when an object is created",
+      "It must be called explicitly in Main()",
+      "It can be inherited by derived classes",
+      "It cannot have parameters"
+    ]
+  },
+  {
+    "q": "Which of the following statements about classes in C# is correct?",
+    "o": [
+      "Classes support inheritance and encapsulation",
+      "Classes cannot have methods",
+      "Classes must be declared static",
+      "Classes cannot contain constructors"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "class MyClass {\n    public int Value;\n    public MyClass() {\n        Value = 25;\n    }\n}\n\nclass Program {\n    static void Main() {\n        MyClass obj = new MyClass();\n        Console.WriteLine(obj.Value);\n    }\n}",
+    "o": [
+      "25",
+      "0",
+      "null",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which constructor is automatically provided if no constructors are defined in a class?",
+    "o": [
+      "Default constructor",
+      "Copy constructor",
+      "Static constructor",
+      "Parameterized constructor"
+    ]
+  },
+  {
+    "q": "Which access modifier hides the class member from all other classes?",
+    "o": [
+      "private",
+      "internal",
+      "protected",
+      "public"
+    ]
+  },
+  {
+    "q": "What is the output of the following C# code?",
+    "c": "class Product {\n    private string _name = \"Gadget\";\n    public string Name {\n        get => _name;\n        set => _name = value;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Product p = new Product();\n        p.Name = \"Widget\";\n        Console.WriteLine(p.Name);\n    }\n}",
+    "o": [
+      "Widget",
+      "Gadget",
+      "Product",
+      "null"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a class with a private field and a public property?",
+    "o": [
+      "class A { private int _x; public int X { get; set; } }",
+      "class A { public int x; private int X() { return x; } }",
+      "class A { private X; get x; }",
+      "class A { int x; X get => x; }"
+    ]
+  },
+  {
+    "q": "Which of these defines an indexer that returns the character at a specific index from a string array?",
+    "o": [
+      "public char this[int i] => names[i][0];",
+      "public int Index(int i) => names[i];",
+      "char[] index(int i) = names[i];",
+      "this[int i]: names[i];"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "class Test {\n    public static int Counter = 0;\n    public Test() {\n        Counter++;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Test t1 = new Test();\n        Test t2 = new Test();\n        Test t3 = new Test();\n        Console.WriteLine(Test.Counter);\n    }\n}",
+    "o": [
+      "3",
+      "1",
+      "0",
+      "2"
+    ]
+  },
+  {
+    "q": "Which of the following defines an auto-implemented read-write property?",
+    "o": [
+      "public string Name { get; set; }",
+      "string Name() => name;",
+      "Name get => value;",
+      "property string Name;"
+    ]
+  },
+  {
+    "q": "Which access modifier allows members to be accessed from derived classes even if they are in different assemblies?",
+    "o": [
+      "protected",
+      "internal",
+      "private",
+      "private protected"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a class with a constructor that takes a string argument?",
+    "o": [
+      "class Person { public Person(string name) { } }",
+      "class Person(string name) { }",
+      "class Person { void Person(string name) { } }",
+      "class Person { constructor(string name) { } }"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "class MyClass {\n    public MyClass() {\n        Console.Write(\"Constructor\");\n    }\n    ~MyClass() {\n        Console.Write(\" Destructor\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        MyClass obj = new MyClass();\n    }\n}",
+    "o": [
+      "Constructor",
+      "Destructor",
+      "Constructor Destructor",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which keyword allows access to class members within the same class and derived classes only?",
+    "o": [
+      "protected",
+      "private",
+      "internal",
+      "public"
+    ]
+  },
+  {
+    "q": "What is the output of the following C# program?",
+    "c": "class MyClass {\n    public int this[int index] => index * 2;\n}\n\nclass Program {\n    static void Main() {\n        var obj = new MyClass();\n        Console.WriteLine(obj[4]);\n    }\n}",
+    "o": [
+      "8",
+      "4",
+      "2",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following statements about properties in C# is true?",
+    "o": [
+      "They can encapsulate a field and control access to it",
+      "They can only be used with strings",
+      "They are the same as methods",
+      "They do not support the get and set accessors"
+    ]
+  },
+  {
+    "q": "What will the following program print?",
+    "c": "class A {\n    public int Value { get; set; } = 100;\n}\n\nclass Program {\n    static void Main() {\n        A a = new A();\n        Console.WriteLine(a.Value);\n    }\n}",
+    "o": [
+      "100",
+      "0",
+      "null",
+      "Value"
+    ]
+  },
+  {
+    "q": "Which of the following can access a member declared as `private protected`?",
+    "o": [
+      "Derived classes in the same assembly",
+      "Any class in any assembly",
+      "Only the same class",
+      "Derived classes in any assembly"
+    ]
+  },
+  {
+    "q": "Which of these defines an auto-property with a private setter?",
+    "o": [
+      "public int ID { get; private set; }",
+      "private int ID { get; public set; }",
+      "public int ID { set; get; private }",
+      "int ID => get; set private;"
+    ]
+  },
+  {
+    "q": "What is the purpose of a destructor in C#?",
+    "o": [
+      "To perform cleanup operations before an object is reclaimed",
+      "To initialize object properties",
+      "To overload operators",
+      "To execute logic during class compilation"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct object instantiation in C#?",
+    "o": [
+      "Person person = new Person();",
+      "Person = new Person();",
+      "new Person = Person();",
+      "Person person();"
+    ]
+  },
+  {
+    "q": "Which of the following statements about objects in C# is correct?",
+    "o": [
+      "Objects are instances of classes and are created using the 'new' keyword",
+      "Objects cannot hold methods",
+      "Objects are declared using the class keyword directly",
+      "Objects do not support encapsulation"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "class Book {\n    public Book(string title) {\n        Console.WriteLine(title);\n    }\n}\n\nclass Program {\n    static void Main() {\n        Book b = new Book(\"C# Guide\");\n    }\n}",
+    "o": [
+      "C# Guide",
+      "Book",
+      "title",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which access modifier allows access only within the containing class?",
+    "o": [
+      "private",
+      "internal",
+      "protected",
+      "public"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "class Sample {\n    private int _value = 42;\n    public int Value {\n        get { return _value; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Sample s = new Sample();\n        Console.WriteLine(s.Value);\n    }\n}",
+    "o": [
+      "42",
+      "0",
+      "Value",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these correctly defines a class with an indexer that returns square of the index?",
+    "o": [
+      "public int this[int i] => i * i;",
+      "int this[int i] { return i; }",
+      "indexer int get(int i) => i * i;",
+      "public this[int i] => return i;"
+    ]
+  },
+  {
+    "q": "What is the role of a constructor in a class?",
+    "o": [
+      "To initialize an object when it is created",
+      "To destroy the object before garbage collection",
+      "To call static methods",
+      "To create abstract classes"
+    ]
+  },
+  {
+    "q": "Which of the following defines an auto-property with an initial value?",
+    "o": [
+      "public string Name { get; set; } = \"Unknown\";",
+      "public string Name() => \"Unknown\";",
+      "property string Name = \"Unknown\";",
+      "string Name { get set } => \"Unknown\";"
+    ]
+  },
+  {
+    "q": "What does the following code output?",
+    "c": "class Counter {\n    public static int Count;\n    public Counter() {\n        Count++;\n    }\n}\n\nclass Program {\n    static void Main() {\n        new Counter();\n        new Counter();\n        Console.WriteLine(Counter.Count);\n    }\n}",
+    "o": [
+      "2",
+      "0",
+      "1",
+      "3"
+    ]
+  },
+  {
+    "q": "Which access modifier makes a member accessible within the same assembly and by derived classes?",
+    "o": [
+      "protected internal",
+      "internal",
+      "private protected",
+      "private"
+    ]
+  },
+  {
+    "q": "What is the correct syntax to define a read-only property in C#?",
+    "o": [
+      "public int Age { get; }",
+      "public int Age() => get;",
+      "readonly public int Age;",
+      "get public int Age();"
+    ]
+  },
+  {
+    "q": "Which of the following is true about class instantiation in C#?",
+    "o": [
+      "Classes are instantiated using the 'new' keyword",
+      "Classes are instantiated using the 'create' keyword",
+      "Classes cannot be instantiated in C#",
+      "Only static methods can be called during instantiation"
+    ]
+  },
+  {
+    "q": "What will the following code display?",
+    "c": "class Car {\n    public string Model { get; set; }\n    public Car() {\n        Model = \"Sedan\";\n    }\n}\n\nclass Program {\n    static void Main() {\n        Car c = new Car();\n        Console.WriteLine(c.Model);\n    }\n}",
+    "o": [
+      "Sedan",
+      "null",
+      "Car",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a constructor?",
+    "o": [
+      "A special method used to initialize objects",
+      "A method that deletes the object",
+      "A method that can only be static",
+      "A method used to inherit from multiple classes"
+    ]
+  },
+  {
+    "q": "What is the output of the following C# code?",
+    "c": "class Box {\n    public int Width { get; }\n    public Box() {\n        Width = 10;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Box b = new Box();\n        Console.WriteLine(b.Width);\n    }\n}",
+    "o": [
+      "10",
+      "0",
+      "Width",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about destructors in C# is true?",
+    "o": [
+      "Destructors are used to release resources before an object is destroyed",
+      "Destructors must have parameters",
+      "Destructors can be overloaded",
+      "Destructors are called explicitly"
+    ]
+  },
+  {
+    "q": "Which is the correct syntax for an indexer that returns a string from an array?",
+    "o": [
+      "public string this[int index] => items[index];",
+      "indexer string this[int] = items[index];",
+      "public string at(int index) => items(index);",
+      "string get(int i) { return items[i]; }"
+    ]
+  },
+  {
+    "q": "What is the correct way to define a read-only auto-implemented property?",
+    "o": [
+      "public int Id { get; }",
+      "readonly int Id { get; set; }",
+      "int Id() => get;",
+      "public get-only int Id;"
+    ]
+  },
+  {
+    "q": "What will this program print?",
+    "c": "class Employee {\n    public string Name { get; set; } = \"John\";\n}\n\nclass Program {\n    static void Main() {\n        Employee emp = new Employee();\n        Console.WriteLine(emp.Name);\n    }\n}",
+    "o": [
+      "John",
+      "Name",
+      "null",
+      "Employee"
+    ]
+  },
+  {
+    "q": "Which access modifier allows access from anywhere in the application or other assemblies?",
+    "o": [
+      "public",
+      "private",
+      "protected",
+      "internal"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid class declaration in C#?",
+    "o": [
+      "public class Student { }",
+      "class: Student { }",
+      "public Student() { }",
+      "new class Student { }"
+    ]
+  },
+  {
+    "q": "What does the following code output?",
+    "c": "class MyClass {\n    public int X;\n    public MyClass(int x) {\n        X = x;\n    }\n}\n\nclass Program {\n    static void Main() {\n        MyClass obj = new MyClass(7);\n        Console.WriteLine(obj.X);\n    }\n}",
+    "o": [
+      "7",
+      "0",
+      "X",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following defines a class with a destructor in C#?",
+    "o": [
+      "class Demo { ~Demo() { } }",
+      "class Demo { destroy() { } }",
+      "class Demo { void ~Demo() { } }",
+      "class Demo { Demo~() { } }"
+    ]
+  },
+  {
+    "q": "Which access modifier allows a class member to be accessed only within its own class?",
+    "o": [
+      "private",
+      "protected",
+      "internal",
+      "public"
+    ]
+  },
+  {
+    "q": "What will be the output of this program?",
+    "c": "class Account {\n    public decimal Balance { get; private set; } = 100.50m;\n}\n\nclass Program {\n    static void Main() {\n        Account acc = new Account();\n        Console.WriteLine(acc.Balance);\n    }\n}",
+    "o": [
+      "100.50",
+      "0.0",
+      "Error",
+      "Balance"
+    ]
+  },
+  {
+    "q": "Which of the following defines a property that can only be read from outside the class?",
+    "o": [
+      "public int Score { get; private set; }",
+      "public int Score { set; private get; }",
+      "private int Score { get; set; }",
+      "int Score = 100;"
+    ]
+  },
+  {
+    "q": "What is the correct way to define an indexer in C#?",
+    "o": [
+      "public string this[int index] { get { return \"Item\"; } }",
+      "string this[int index] => \"Item\";",
+      "indexer[int] string => \"Item\";",
+      "public indexer string[int i] => \"Item\";"
+    ]
+  },
+  {
+    "q": "Which of these is the correct way to instantiate a class and call a property?",
+    "o": [
+      "var obj = new Test(); Console.WriteLine(obj.Name);",
+      "Test obj(); Console.WriteLine(Name);",
+      "obj = Test(); Name.write();",
+      "new Test.Name();"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "class Student {\n    public static string University = \"MIT\";\n}\n\nclass Program {\n    static void Main() {\n        Console.WriteLine(Student.University);\n    }\n}",
+    "o": [
+      "MIT",
+      "Student",
+      "University",
+      "null"
+    ]
+  },
+  {
+    "q": "What does an indexer allow a class to behave like?",
+    "o": [
+      "An array",
+      "A method",
+      "A constructor",
+      "A delegate"
+    ]
+  },
+  {
+    "q": "Which is the correct syntax for defining a class with a public property in C#?",
+    "o": [
+      "class Car { public string Brand { get; set; } }",
+      "class Car { string Brand = get; set; }",
+      "class Car() { string Brand => set; }",
+      "class Car { string get Brand(); }"
+    ]
+  },
+  {
+    "q": "Which of the following defines a class with a default constructor in C#?",
+    "o": [
+      "class Sample { public Sample() { } }",
+      "class Sample { Sample(int x) { } }",
+      "class Sample { void Sample() { } }",
+      "class Sample() { }"
+    ]
+  },
+  {
+    "q": "What does the following program output?",
+    "c": "class Point {\n    public int X { get; set; }\n    public Point(int x) {\n        X = x;\n    }\n}\n\nclass Program {\n    static void Main() {\n        var p = new Point(25);\n        Console.WriteLine(p.X);\n    }\n}",
+    "o": [
+      "25",
+      "0",
+      "X",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to allow access to members only within the same assembly?",
+    "o": [
+      "internal",
+      "private",
+      "protected",
+      "public"
+    ]
+  },
+  {
+    "q": "Which of the following allows creating a property that can only be modified inside the class?",
+    "o": [
+      "public int Age { get; private set; }",
+      "private int Age { get; set; }",
+      "public int Age { get; get; }",
+      "public int Age { set; set; }"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "class Test {\n    public static int Value = 50;\n}\n\nclass Program {\n    static void Main() {\n        Console.WriteLine(Test.Value);\n    }\n}",
+    "o": [
+      "50",
+      "0",
+      "Value",
+      "Test"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax for defining a private field in a class?",
+    "o": [
+      "private int id;",
+      "public int id;",
+      "internal int id;",
+      "protected int id;"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "class Product {\n    public string Name { get; set; } = \"Laptop\";\n}\n\nclass Program {\n    static void Main() {\n        Product p = new Product();\n        Console.WriteLine(p.Name);\n    }\n}",
+    "o": [
+      "Laptop",
+      "null",
+      "Product",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following allows a class to provide array-like access to its members?",
+    "o": [
+      "Indexer",
+      "Constructor",
+      "Destructor",
+      "Delegate"
+    ]
+  },
+  {
+    "q": "What will the following program print?",
+    "c": "class Person {\n    public string Name { get; set; }\n    public Person(string name) {\n        Name = name;\n    }\n}\n\nclass Program {\n    static void Main() {\n        var person = new Person(\"Emma\");\n        Console.WriteLine(person.Name);\n    }\n}",
+    "o": [
+      "Emma",
+      "null",
+      "Name",
+      "Person"
+    ]
+  },
+  {
+    "q": "Which access modifier ensures members can only be accessed in the same class or derived classes within the same assembly?",
+    "o": [
+      "private protected",
+      "protected",
+      "internal",
+      "public"
+    ]
+  },
+  {
+    "q": "Which access modifier allows class members to be accessed only within the same class and its derived classes?",
+    "o": [
+      "protected",
+      "private",
+      "internal",
+      "public"
+    ]
+  },
+  {
+    "q": "What does the following code print?",
+    "c": "class Test {\n    public int Number { get; set; }\n    public Test() {\n        Number = 42;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Test t = new Test();\n        Console.WriteLine(t.Number);\n    }\n}",
+    "o": [
+      "42",
+      "0",
+      "Number",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes an indexer in C#?",
+    "o": [
+      "A member that allows an object to be indexed like an array",
+      "A delegate that refers to array elements",
+      "A constructor that returns arrays",
+      "A class method to search indexes"
+    ]
+  },
+  {
+    "q": "Which of the following statements is valid in C#?",
+    "o": [
+      "public string this[int i] { get { return data[i]; } }",
+      "indexer string this[int i] => data[i];",
+      "get string this[int i] => data[i];",
+      "this[int i]: string => data[i];"
+    ]
+  },
+  {
+    "q": "What does this code output?",
+    "c": "class Book {\n    public static string Category = \"Fiction\";\n}\n\nclass Program {\n    static void Main() {\n        Console.WriteLine(Book.Category);\n    }\n}",
+    "o": [
+      "Fiction",
+      "Book",
+      "Category",
+      "null"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a constructor in C#?",
+    "o": [
+      "Same name as the class",
+      "construct",
+      "new",
+      "init"
+    ]
+  },
+  {
+    "q": "What is the result of executing this code?",
+    "c": "class Sample {\n    private int _value;\n    public Sample(int val) {\n        _value = val;\n    }\n    public int GetValue() {\n        return _value;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Sample s = new Sample(9);\n        Console.WriteLine(s.GetValue());\n    }\n}",
+    "o": [
+      "9",
+      "0",
+      "_value",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about destructors in C#?",
+    "o": [
+      "They are defined using ~ClassName() syntax",
+      "They can take parameters",
+      "They must be called manually",
+      "They are used to initialize class members"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "class Gadget {\n    public string Brand { get; set; } = \"TechCo\";\n}\n\nclass Program {\n    static void Main() {\n        Gadget g = new Gadget();\n        Console.WriteLine(g.Brand);\n    }\n}",
+    "o": [
+      "TechCo",
+      "null",
+      "Gadget",
+      "Brand"
+    ]
+  },
+  {
+    "q": "Which of the following defines an auto-implemented property with both get and set accessors?",
+    "o": [
+      "public int Age { get; set; }",
+      "int Age => get; set;",
+      "public get set Age;",
+      "auto int Age { get set; }"
+    ]
+  },
+  {
+    "q": "What is the purpose of a constructor in a C# class?",
+    "o": [
+      "To initialize objects of the class",
+      "To destroy objects",
+      "To define properties",
+      "To access private members"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "class Animal {\n    public string Type { get; set; } = \"Mammal\";\n}\n\nclass Program {\n    static void Main() {\n        Animal a = new Animal();\n        Console.WriteLine(a.Type);\n    }\n}",
+    "o": [
+      "Mammal",
+      "null",
+      "Type",
+      "Animal"
+    ]
+  },
+  {
+    "q": "Which of the following access modifiers makes a member accessible from any other code in the same assembly or another assembly?",
+    "o": [
+      "public",
+      "internal",
+      "private",
+      "protected"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to define a property in C#?",
+    "o": [
+      "public int Id { get; set; }",
+      "int Id() { return value; }",
+      "public Id get set;",
+      "property int Id;"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class MyClass {\n    public MyClass() {\n        Console.Write(\"Constructor called\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        MyClass obj = new MyClass();\n    }\n}",
+    "o": [
+      "Constructor called",
+      "Error",
+      "Nothing",
+      "Main"
+    ]
+  },
+  {
+    "q": "Which of the following is true about destructors in C#?",
+    "o": [
+      "They cannot have parameters",
+      "They can be overloaded",
+      "They are called manually",
+      "They return a value"
+    ]
+  },
+  {
+    "q": "What does this program display?",
+    "c": "class Device {\n    public string Model { get; set; } = \"X100\";\n}\n\nclass Program {\n    static void Main() {\n        var d = new Device();\n        Console.WriteLine(d.Model);\n    }\n}",
+    "o": [
+      "X100",
+      "null",
+      "Device",
+      "Model"
+    ]
+  },
+  {
+    "q": "Which access modifier allows a class member to be accessed within the same class and from derived classes, even if they are in different assemblies?",
+    "o": [
+      "protected",
+      "internal",
+      "private",
+      "public"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "class Box {\n    public int Width { get; set; }\n    public Box() {\n        Width = 10;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Box b = new Box();\n        Console.WriteLine(b.Width);\n    }\n}",
+    "o": [
+      "10",
+      "0",
+      "null",
+      "Width"
+    ]
+  },
+  {
+    "q": "Which of the following describes an object in C#?",
+    "o": [
+      "An instance of a class",
+      "A static method",
+      "A type definition",
+      "A reference type only"
+    ]
+  },
+  {
+    "q": "Which statement about C# classes is correct?",
+    "o": [
+      "A class is a blueprint for creating objects",
+      "A class is the same as a struct",
+      "A class must contain only static members",
+      "A class cannot inherit another class"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "class Counter {\n    public static int Count = 0;\n    public Counter() {\n        Count++;\n    }\n}\n\nclass Program {\n    static void Main() {\n        new Counter();\n        new Counter();\n        Console.WriteLine(Counter.Count);\n    }\n}",
+    "o": [
+      "2",
+      "1",
+      "0",
+      "Count"
+    ]
+  },
+  {
+    "q": "What is a constructor overloading in C#?",
+    "o": [
+      "Defining multiple constructors with different parameters",
+      "Overriding constructor in base class",
+      "Using default constructor only",
+      "Defining static constructor only"
+    ]
+  },
+  {
+    "q": "What will this program print?",
+    "c": "class User {\n    public string Name { get; set; }\n    public User(string name) {\n        Name = name;\n    }\n}\n\nclass Program {\n    static void Main() {\n        User u = new User(\"Derek\");\n        Console.WriteLine(u.Name);\n    }\n}",
+    "o": [
+      "Derek",
+      "null",
+      "Name",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a read-only auto-implemented property?",
+    "o": [
+      "public int Age { get; }",
+      "public int Age { get; private set; }",
+      "private int Age { set; }",
+      "int Age() => get;"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "class Product {\n    public string this[int index] => \"Item\" + index;\n}\n\nclass Program {\n    static void Main() {\n        Product p = new Product();\n        Console.WriteLine(p[3]);\n    }\n}",
+    "o": [
+      "Item3",
+      "Item",
+      "3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which access modifier is the most restrictive in C#?",
+    "o": [
+      "private",
+      "internal",
+      "protected",
+      "public"
+    ]
+  },
+  {
+    "q": "What is the purpose of using a destructor in C#?",
+    "o": [
+      "To perform cleanup operations before the object is reclaimed by the garbage collector",
+      "To initialize object members",
+      "To overload a method",
+      "To create multiple objects"
+    ]
+  },
+  {
+    "q": "What does the following code output?",
+    "c": "class Shape {\n    private int sides = 4;\n    public int GetSides() { return sides; }\n}\n\nclass Program {\n    static void Main() {\n        Shape s = new Shape();\n        Console.WriteLine(s.GetSides());\n    }\n}",
+    "o": [
+      "4",
+      "0",
+      "sides",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a property in C#?",
+    "o": [
+      "A member that provides a flexible mechanism to read, write, or compute the value of a private field",
+      "A method that always returns a value",
+      "A member that holds an event",
+      "A static method"
+    ]
+  },
+  {
+    "q": "Which of the following correctly instantiates an object of a class named 'Person'?",
+    "o": [
+      "Person p = new Person();",
+      "Person = new();",
+      "p = Person();",
+      "Person() = new p;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "class Sample {\n    public string Message = \"Welcome\";\n}\n\nclass Program {\n    static void Main() {\n        Sample s = new Sample();\n        Console.WriteLine(s.Message);\n    }\n}",
+    "o": [
+      "Welcome",
+      "Sample",
+      "null",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which constructor is called when an object is created using the 'new' keyword?",
+    "o": [
+      "The constructor that matches the provided parameters",
+      "The destructor",
+      "The last defined constructor in the class",
+      "Only the static constructor"
+    ]
+  },
+  {
+    "q": "Which access modifier allows access within the same class only?",
+    "o": [
+      "private",
+      "internal",
+      "protected",
+      "public"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "class Employee {\n    public int Id { get; set; }\n    public Employee() {\n        Id = 123;\n    }\n}\n\nclass Program {\n    static void Main() {\n        var emp = new Employee();\n        Console.WriteLine(emp.Id);\n    }\n}",
+    "o": [
+      "123",
+      "0",
+      "null",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following defines an indexer for a class?",
+    "o": [
+      "public string this[int index] { get { return data[index]; } }",
+      "public string getItem(int index) => data[index];",
+      "string item[] = new string[10];",
+      "indexer(int index) => return data[index];"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about static constructors in C#?",
+    "o": [
+      "They are called only once per type",
+      "They can have parameters",
+      "They are called manually",
+      "They return a value"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "class City {\n    public string Name { get; private set; } = \"Paris\";\n}\n\nclass Program {\n    static void Main() {\n        City c = new City();\n        Console.WriteLine(c.Name);\n    }\n}",
+    "o": [
+      "Paris",
+      "null",
+      "City",
+      "Name"
+    ]
+  },
+  {
+    "q": "Which access modifier allows access from the same assembly only?",
+    "o": [
+      "internal",
+      "protected",
+      "private",
+      "public"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a destructor in C#?",
+    "o": [
+      "A special method that is invoked when an object is destroyed",
+      "A method that must be called explicitly",
+      "A static method used to clean fields",
+      "A method that initializes class variables"
+    ]
+  },
+  {
+    "q": "What is the default access modifier for class members in C#?",
+    "o": [
+      "private",
+      "public",
+      "protected",
+      "internal"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "class Vehicle {\n    public string Brand = \"Toyota\";\n}\n\nclass Program {\n    static void Main() {\n        Vehicle v = new Vehicle();\n        Console.WriteLine(v.Brand);\n    }\n}",
+    "o": [
+      "Toyota",
+      "Vehicle",
+      "Brand",
+      "null"
+    ]
+  },
+  {
+    "q": "Which of the following is a characteristic of a constructor?",
+    "o": [
+      "It has no return type",
+      "It must be static",
+      "It must return an integer",
+      "It must be called manually"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "class Laptop {\n    public string Model { get; set; } = \"ThinkPad\";\n}\n\nclass Program {\n    static void Main() {\n        Laptop l = new Laptop();\n        Console.WriteLine(l.Model);\n    }\n}",
+    "o": [
+      "ThinkPad",
+      "null",
+      "Laptop",
+      "Model"
+    ]
+  },
+  {
+    "q": "Which statement is true about a class in C#?",
+    "o": [
+      "A class can contain fields, properties, methods, and constructors",
+      "A class cannot contain methods",
+      "A class must be abstract",
+      "A class can only have static members"
+    ]
+  },
+  {
+    "q": "What does the following indexer return?",
+    "c": "class Numbers {\n    private int[] data = { 10, 20, 30 };\n    public int this[int index] {\n        get { return data[index]; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Numbers n = new Numbers();\n        Console.WriteLine(n[1]);\n    }\n}",
+    "o": [
+      "20",
+      "10",
+      "30",
+      "IndexOutOfRangeException"
+    ]
+  },
+  {
+    "q": "Which of these access modifiers allows access only within the same class or derived classes?",
+    "o": [
+      "protected",
+      "public",
+      "internal",
+      "private"
+    ]
+  },
+  {
+    "q": "What is the purpose of a parameterized constructor?",
+    "o": [
+      "To initialize an object with specific values",
+      "To destroy an object",
+      "To access private fields",
+      "To overload methods"
+    ]
+  },
+  {
+    "q": "What will be the result of running this code?",
+    "c": "class MyClass {\n    private string message = \"Hello\";\n    public string GetMessage() {\n        return message;\n    }\n}\n\nclass Program {\n    static void Main() {\n        MyClass obj = new MyClass();\n        Console.WriteLine(obj.GetMessage());\n    }\n}",
+    "o": [
+      "Hello",
+      "message",
+      "null",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to create an object from a class?",
+    "o": [
+      "new",
+      "create",
+      "object",
+      "class"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to define a class in C#?",
+    "o": [
+      "public class Student { }",
+      "class Student = { };",
+      "define class Student()",
+      "new class Student() { }"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "class Gadget {\n    public string Name;\n    public Gadget() {\n        Name = \"Smartphone\";\n    }\n}\n\nclass Program {\n    static void Main() {\n        Gadget g = new Gadget();\n        Console.WriteLine(g.Name);\n    }\n}",
+    "o": [
+      "Smartphone",
+      "null",
+      "Gadget",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following describes a destructor in C#?",
+    "o": [
+      "A method that is automatically called when an object is destroyed",
+      "A method that initializes static variables",
+      "A method that must return an integer",
+      "A method used to overload operators"
+    ]
+  },
+  {
+    "q": "Which property syntax allows only read access to a private field?",
+    "o": [
+      "public int Age { get; }",
+      "public int Age { set; }",
+      "public int Age { get; set; }",
+      "private int Age { get; set; }"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "class IndexDemo {\n    private string[] items = { \"One\", \"Two\", \"Three\" };\n    public string this[int i] {\n        get { return items[i]; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        IndexDemo demo = new IndexDemo();\n        Console.WriteLine(demo[2]);\n    }\n}",
+    "o": [
+      "Three",
+      "Two",
+      "One",
+      "IndexOutOfRangeException"
+    ]
+  },
+  {
+    "q": "Which access modifier allows access from any code in the same assembly or another assembly that references it?",
+    "o": [
+      "public",
+      "protected",
+      "internal",
+      "private"
+    ]
+  },
+  {
+    "q": "What is the purpose of using 'this' in a constructor?",
+    "o": [
+      "To refer to the current instance of the class",
+      "To call a static method",
+      "To inherit a method from the base class",
+      "To define a new object"
+    ]
+  },
+  {
+    "q": "Which of the following best defines encapsulation?",
+    "o": [
+      "Wrapping data and code into a single unit (class)",
+      "Using multiple inheritance",
+      "Separating logic into different functions",
+      "Deriving a new class from an existing one"
+    ]
+  },
+  {
+    "q": "What is the result of this program?",
+    "c": "class Person {\n    public string Name { get; set; }\n}\n\nclass Program {\n    static void Main() {\n        Person p = new Person();\n        p.Name = \"Liam\";\n        Console.WriteLine(p.Name);\n    }\n}",
+    "o": [
+      "Liam",
+      "null",
+      "Person",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which statement correctly declares a private field in a class?",
+    "o": [
+      "private int count;",
+      "int count = private;",
+      "public private int count;",
+      "count: int private;"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a constructor in C#?",
+    "o": [
+      "Same name as the class",
+      "constructor",
+      "create",
+      "function"
+    ]
+  },
+  {
+    "q": "What will be the output of the following program?",
+    "c": "class Demo {\n    public Demo() {\n        Console.WriteLine(\"Constructor called\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        Demo d = new Demo();\n    }\n}",
+    "o": [
+      "Constructor called",
+      "Demo",
+      "Main",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the purpose of a destructor in C#?",
+    "o": [
+      "To perform cleanup operations before an object is destroyed",
+      "To create a new object",
+      "To initialize variables",
+      "To overload methods"
+    ]
+  },
+  {
+    "q": "Which of the following allows a class to define how its objects can be accessed like arrays?",
+    "o": [
+      "Indexer",
+      "Property",
+      "Field",
+      "Method"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "class Student {\n    public string Name { get; set; } = \"Emma\";\n}\n\nclass Program {\n    static void Main() {\n        Student s = new Student();\n        Console.WriteLine(s.Name);\n    }\n}",
+    "o": [
+      "Emma",
+      "null",
+      "Student",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to define a read-only property?",
+    "o": [
+      "public int Age { get; }",
+      "public int Age { get; set; }",
+      "private int Age { set; }",
+      "int Age => value;"
+    ]
+  },
+  {
+    "q": "Which access modifier makes a class member accessible only within its own class and derived classes?",
+    "o": [
+      "protected",
+      "private",
+      "internal",
+      "public"
+    ]
+  },
+  {
+    "q": "What is the default access modifier for a class in C# if none is specified?",
+    "o": [
+      "internal",
+      "public",
+      "private",
+      "protected"
+    ]
+  },
+  {
+    "q": "What is the output of the following program?",
+    "c": "class Sample {\n    private int _value = 42;\n    public int GetValue() {\n        return _value;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Sample s = new Sample();\n        Console.WriteLine(s.GetValue());\n    }\n}",
+    "o": [
+      "42",
+      "0",
+      "_value",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the correct way to define a property with both get and set accessors?",
+    "o": [
+      "public int Score { get; set; }",
+      "property int Score { get; set; }",
+      "int Score() { get; set; }",
+      "public int Score => value;"
+    ]
+  },
+  {
+    "q": "Which of the following defines an object from a class named `Book`?",
+    "o": [
+      "Book myBook = new Book();",
+      "Book = new myBook();",
+      "new Book = myBook();",
+      "class Book myBook();"
+    ]
+  },
+  {
+    "q": "What will this code display?",
+    "c": "class Car {\n    public Car(string model) {\n        Console.WriteLine(model);\n    }\n}\n\nclass Program {\n    static void Main() {\n        Car c = new Car(\"Civic\");\n    }\n}",
+    "o": [
+      "Civic",
+      "Car",
+      "Model",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which statement about constructors in C# is TRUE?",
+    "o": [
+      "A constructor initializes an object when it is created",
+      "A constructor must return an int",
+      "Constructors must be static",
+      "Constructors are called manually"
+    ]
+  },
+  {
+    "q": "Which of the following code snippets defines an auto-implemented property?",
+    "o": [
+      "public string Name { get; set; }",
+      "public string Name { set; }",
+      "public string Name() { return \"John\"; }",
+      "get; set; public string Name;"
+    ]
+  },
+  {
+    "q": "What is the result of the following code?",
+    "c": "class Container {\n    private int[] items = { 1, 2, 3 };\n    public int this[int index] {\n        get { return items[index]; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Container c = new Container();\n        Console.WriteLine(c[0]);\n    }\n}",
+    "o": [
+      "1",
+      "0",
+      "items",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to prevent access to a class member from outside its class?",
+    "o": [
+      "private",
+      "protected",
+      "internal",
+      "public"
+    ]
+  },
+  {
+    "q": "What does the following property definition mean?\n`public int Age { get; private set; }`",
+    "o": [
+      "Age can be read publicly but set only within the class",
+      "Age can only be read within the class",
+      "Age can only be set publicly",
+      "Age is not accessible from anywhere"
+    ]
+  },
+  {
+    "q": "Which of the following will correctly declare a class named `Person`?",
+    "o": [
+      "public class Person { }",
+      "Person : class { }",
+      "class = Person { }",
+      "define class Person { }"
+    ]
+  },
+  {
+    "q": "What will be printed by the following code?",
+    "c": "class Demo {\n    public int X { get; set; } = 100;\n}\n\nclass Program {\n    static void Main() {\n        Demo d = new Demo();\n        Console.WriteLine(d.X);\n    }\n}",
+    "o": [
+      "100",
+      "0",
+      "X",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the correct syntax for a destructor in C#?",
+    "o": [
+      "~ClassName()",
+      "destructor ClassName()",
+      "~ClassName{}",
+      "ClassName::~()"
+    ]
+  },
+  {
+    "q": "Which of the following statements about C# objects is TRUE?",
+    "o": [
+      "Objects are instances of classes",
+      "Objects define the structure of classes",
+      "Objects are only used to call static methods",
+      "Objects cannot hold data"
+    ]
+  },
+  {
+    "q": "What is the output of the following program?",
+    "c": "class MyClass {\n    public MyClass() {\n        Console.WriteLine(\"Object created\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        MyClass obj = new MyClass();\n    }\n}",
+    "o": [
+      "Object created",
+      "MyClass",
+      "Main",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a property with a private setter?",
+    "o": [
+      "public int Count { get; private set; }",
+      "public int Count { private set; private get; }",
+      "public property Count { get; set; }",
+      "get private; set public int Count;"
+    ]
+  },
+  {
+    "q": "What will be the output of this code snippet?",
+    "c": "class Sample {\n    private string[] data = { \"A\", \"B\", \"C\" };\n    public string this[int i] => data[i];\n}\n\nclass Program {\n    static void Main() {\n        Sample s = new Sample();\n        Console.WriteLine(s[1]);\n    }\n}",
+    "o": [
+      "B",
+      "A",
+      "C",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following access modifiers allows access within the same class only?",
+    "o": [
+      "private",
+      "public",
+      "internal",
+      "protected"
+    ]
+  },
+  {
+    "q": "Which of the following is true about parameterized constructors?",
+    "o": [
+      "They allow passing values at object creation",
+      "They are automatically created by the compiler",
+      "They must be static",
+      "They cannot be overloaded"
+    ]
+  },
+  {
+    "q": "What is the output of the following program?",
+    "c": "class Student {\n    public string Name { get; set; }\n    public Student(string name) {\n        Name = name;\n    }\n}\n\nclass Program {\n    static void Main() {\n        var s = new Student(\"Tom\");\n        Console.WriteLine(s.Name);\n    }\n}",
+    "o": [
+      "Tom",
+      "null",
+      "Student",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best defines an indexer in C#?",
+    "o": [
+      "An indexer allows an object to be indexed like an array",
+      "An indexer is used to define class properties",
+      "An indexer handles exceptions",
+      "An indexer is a type of constructor"
+    ]
+  },
+  {
+    "q": "What is the purpose of using `internal` access modifier?",
+    "o": [
+      "To restrict access to the current assembly",
+      "To allow access only in derived classes",
+      "To restrict access to only the same class",
+      "To allow global access"
+    ]
+  },
+  {
+    "q": "Which constructor is called when no arguments are passed while creating an object?",
+    "o": [
+      "Default constructor",
+      "Copy constructor",
+      "Static constructor",
+      "Destructor"
+    ]
+  },
+  {
+    "q": "Which of the following statements about C# classes is TRUE?",
+    "o": [
+      "A class is a blueprint for creating objects",
+      "A class is an instance of an object",
+      "A class cannot contain methods",
+      "A class must be static"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class MyClass {\n    public int Number;\n    public MyClass() {\n        Number = 99;\n    }\n}\n\nclass Program {\n    static void Main() {\n        MyClass obj = new MyClass();\n        Console.WriteLine(obj.Number);\n    }\n}",
+    "o": [
+      "99",
+      "0",
+      "MyClass",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the correct way to define a write-only property in C#?",
+    "o": [
+      "public int Age { set; }",
+      "public int Age { get; }",
+      "public set Age { int; }",
+      "public write Age { int; }"
+    ]
+  },
+  {
+    "q": "Which of the following keywords defines a constructor with no parameters?",
+    "o": [
+      "public ClassName()",
+      "public void ClassName()",
+      "new ClassName()",
+      "constructor ClassName()"
+    ]
+  },
+  {
+    "q": "What does the following indexer return?",
+    "c": "class Box {\n    private string[] items = { \"Red\", \"Green\", \"Blue\" };\n    public string this[int index] {\n        get { return items[index]; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Box b = new Box();\n        Console.WriteLine(b[2]);\n    }\n}",
+    "o": [
+      "Blue",
+      "Red",
+      "Green",
+      "2"
+    ]
+  },
+  {
+    "q": "What is the purpose of the `protected` access modifier?",
+    "o": [
+      "To allow access within the class and derived classes",
+      "To restrict access to only within the class",
+      "To allow access from anywhere",
+      "To allow access from other assemblies only"
+    ]
+  },
+  {
+    "q": "Which of the following allows an object to be accessed using square brackets?",
+    "o": [
+      "Indexer",
+      "Property",
+      "Constructor",
+      "Method"
+    ]
+  },
+  {
+    "q": "Which constructor will be called in the following code?",
+    "c": "class Shape {\n    public Shape() {\n        Console.WriteLine(\"Default constructor\");\n    }\n    public Shape(string type) {\n        Console.WriteLine(\"Parameterized constructor\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        Shape s = new Shape(\"Circle\");\n    }\n}",
+    "o": [
+      "Parameterized constructor",
+      "Default constructor",
+      "No constructor",
+      "Error"
+    ]
+  },
+  {
+    "q": "What does a destructor do in C#?",
+    "o": [
+      "It cleans up resources before an object is destroyed",
+      "It creates a new instance of an object",
+      "It is used to serialize an object",
+      "It executes code in a static context"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax for a class with a private field and a public property?",
+    "o": [
+      "private int _id;\npublic int ID { get => _id; set => _id = value; }",
+      "int _id;\nID() => _id;",
+      "private ID(int _id);\nget; set;",
+      "private int ID;\npublic ID() => ID;"
+    ]
+  },
+  {
+    "q": "Which of the following correctly instantiates an object of a class named `Laptop`?",
+    "o": [
+      "Laptop myLaptop = new Laptop();",
+      "Laptop = new myLaptop();",
+      "myLaptop() = Laptop new;",
+      "Laptop(); myLaptop = new;"
+    ]
+  },
+  {
+    "q": "What is the output of this C# program?",
+    "c": "class Employee {\n    public string Name;\n    public Employee(string name) {\n        Name = name;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Employee e = new Employee(\"Sara\");\n        Console.WriteLine(e.Name);\n    }\n}",
+    "o": [
+      "Sara",
+      "null",
+      "Employee",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following describes an auto-property in C#?",
+    "o": [
+      "A shorthand syntax for declaring a property without explicitly defining a field",
+      "A property that automatically calls a method",
+      "A property that does not allow setting values",
+      "A property that throws exceptions by default"
+    ]
+  },
+  {
+    "q": "Which code correctly defines a class with a default constructor?",
+    "o": [
+      "public class Animal {\n    public Animal() {\n        Console.WriteLine(\"Created\");\n    }\n}",
+      "public class Animal() {\n    Animal() { } }",
+      "class Animal : constructor() { }",
+      "Animal { default() { } }"
+    ]
+  },
+  {
+    "q": "What will be the output of this indexer usage?",
+    "c": "class Codes {\n    private int[] data = { 9, 8, 7 };\n    public int this[int index] => data[index];\n}\n\nclass Program {\n    static void Main() {\n        Codes c = new Codes();\n        Console.WriteLine(c[1]);\n    }\n}",
+    "o": [
+      "8",
+      "9",
+      "7",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which modifier allows access from the same assembly but not from other assemblies?",
+    "o": [
+      "internal",
+      "private",
+      "protected",
+      "public"
+    ]
+  },
+  {
+    "q": "Which of these is a feature of constructors in C#?",
+    "o": [
+      "They have the same name as the class",
+      "They must return a value",
+      "They are called explicitly using a method",
+      "They can be declared static only"
+    ]
+  },
+  {
+    "q": "What does this property declaration mean?\n`public double Balance { get; private set; }`",
+    "o": [
+      "Balance can be read from anywhere, but set only inside the class",
+      "Balance cannot be accessed at all",
+      "Balance can be set from outside but not read",
+      "Balance must be initialized at runtime"
+    ]
+  },
+  {
+    "q": "What is the output of this code using a property?",
+    "c": "class Circle {\n    public double Radius { get; set; }\n}\n\nclass Program {\n    static void Main() {\n        Circle c = new Circle();\n        c.Radius = 5.5;\n        Console.WriteLine(c.Radius);\n    }\n}",
+    "o": [
+      "5.5",
+      "0",
+      "Radius",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which access modifier allows a class member to be accessed only within its class and derived classes?",
+    "o": [
+      "protected",
+      "private",
+      "internal",
+      "sealed"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a public class named `Book`?",
+    "o": [
+      "public class Book { }",
+      "class public Book { }",
+      "Book class public { }",
+      "public Book : class { }"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "class Demo {\n    public Demo() {\n        Console.WriteLine(\"Constructor called\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        new Demo();\n    }\n}",
+    "o": [
+      "Constructor called",
+      "Demo",
+      "Main",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is TRUE about destructors in C#?",
+    "o": [
+      "Destructors are called automatically by the garbage collector",
+      "Destructors must be called manually",
+      "Destructors can have parameters",
+      "Destructors can be overloaded"
+    ]
+  },
+  {
+    "q": "Which line defines a property with both a getter and setter in C#?",
+    "o": [
+      "public string Name { get; set; }",
+      "string Name() { return; }",
+      "get string Name { set; }",
+      "public set string Name { get; }"
+    ]
+  },
+  {
+    "q": "What does the following code print?",
+    "c": "class Numbers {\n    private int[] arr = { 2, 4, 6 };\n    public int this[int index] {\n        get { return arr[index]; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Numbers n = new Numbers();\n        Console.WriteLine(n[0]);\n    }\n}",
+    "o": [
+      "2",
+      "4",
+      "6",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the use of the `private` access modifier?",
+    "o": [
+      "It restricts access to the containing class only",
+      "It allows access from any part of the program",
+      "It allows access only from derived classes",
+      "It grants access to all classes in the same namespace"
+    ]
+  },
+  {
+    "q": "Which constructor is invoked in this code?",
+    "c": "class Engine {\n    public Engine() {\n        Console.WriteLine(\"Default\");\n    }\n    public Engine(string model) {\n        Console.WriteLine(\"Parameterized\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        Engine e = new Engine();\n    }\n}",
+    "o": [
+      "Default",
+      "Parameterized",
+      "Error",
+      "Engine"
+    ]
+  },
+  {
+    "q": "Which of these is a correct way to define a read-only auto-implemented property?",
+    "o": [
+      "public int Id { get; }",
+      "public int Id { set; }",
+      "readonly int Id { get; set; }",
+      "public get-only int Id;"
+    ]
+  },
+  {
+    "q": "What is the primary purpose of using properties instead of public fields?",
+    "o": [
+      "To control access and encapsulate data",
+      "To increase memory allocation",
+      "To reduce code readability",
+      "To automatically serialize objects"
+    ]
+  },
+  {
+    "q": "Which of the following will result in a compilation error in C#?",
+    "o": [
+      "Defining two constructors with the same parameters",
+      "Having multiple constructors with different signatures",
+      "Using both get and set in a property",
+      "Defining an indexer with an int parameter"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to define a constructor in C#?",
+    "o": [
+      "The constructor has the same name as the class and no return type",
+      "The constructor is defined using the `new` keyword",
+      "Constructors are defined using `func` keyword",
+      "The keyword `init` is used for constructor"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "class Sample {\n    public string Message = \"Hello from class!\";\n}\n\nclass Program {\n    static void Main() {\n        Sample s = new Sample();\n        Console.WriteLine(s.Message);\n    }\n}",
+    "o": [
+      "Hello from class!",
+      "Sample",
+      "Message",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the purpose of the `set` accessor in a property?",
+    "o": [
+      "To assign a value to the backing field",
+      "To retrieve the value of the property",
+      "To override the constructor",
+      "To define an indexer"
+    ]
+  },
+  {
+    "q": "What does the following C# code demonstrate?",
+    "c": "class Counter {\n    private int _count;\n    public int Count {\n        get { return _count; }\n        set { _count = value; }\n    }\n}",
+    "o": [
+      "Encapsulation using a property",
+      "Function overloading",
+      "Destructor usage",
+      "Inheritance"
+    ]
+  },
+  {
+    "q": "Which access modifier restricts access to the current class only?",
+    "o": [
+      "private",
+      "protected",
+      "internal",
+      "public"
+    ]
+  },
+  {
+    "q": "What will the following code display?",
+    "c": "class Test {\n    public Test(string name) {\n        Console.WriteLine(\"Hi \" + name);\n    }\n}\n\nclass Program {\n    static void Main() {\n        Test t = new Test(\"Liam\");\n    }\n}",
+    "o": [
+      "Hi Liam",
+      "Liam",
+      "Test",
+      "Hi"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a default destructor in a C# class?",
+    "o": [
+      "~MyClass() { }",
+      "destructor MyClass() { }",
+      "void ~MyClass() { }",
+      "~MyClass(void) { }"
+    ]
+  },
+  {
+    "q": "What is the output of the following code using a property with only a getter?",
+    "c": "class Car {\n    private string _brand = \"Tesla\";\n    public string Brand {\n        get { return _brand; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Car c = new Car();\n        Console.WriteLine(c.Brand);\n    }\n}",
+    "o": [
+      "Tesla",
+      "null",
+      "_brand",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these best describes an indexer in C#?",
+    "o": [
+      "It allows objects to be indexed like arrays",
+      "It defines the class constructor",
+      "It restricts access to a class member",
+      "It handles memory cleanup"
+    ]
+  },
+  {
+    "q": "Which of the following correctly creates a public property named `Price` with only a getter?",
+    "o": [
+      "public double Price { get; }",
+      "double Price { get; }",
+      "public double get Price()",
+      "public Price { get => value; }"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about objects in C#?",
+    "o": [
+      "Objects are instances of classes",
+      "Objects can be created without classes",
+      "Objects do not use memory",
+      "Objects cannot be passed as arguments"
+    ]
+  },
+  {
+    "q": "What will be the output of the following program?",
+    "c": "class Student {\n    public string Name;\n    public Student(string name) {\n        Name = name;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Student s = new Student(\"Emma\");\n        Console.WriteLine(s.Name);\n    }\n}",
+    "o": [
+      "Emma",
+      "Student",
+      "null",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to restrict access to a class member from outside the class?",
+    "o": [
+      "private",
+      "public",
+      "internal",
+      "protected"
+    ]
+  },
+  {
+    "q": "Which code correctly defines a class with a read-only property in C#?",
+    "o": [
+      "public class Product {\n    public string Name { get; }\n}",
+      "public class Product {\n    readonly string Name { set; }\n}",
+      "public class Product {\n    string get Name() {}\n}",
+      "class Product: public {\n    get Name();\n}"
+    ]
+  },
+  {
+    "q": "What is the output of the following C# code using a parameterless constructor?",
+    "c": "class Box {\n    public Box() {\n        Console.WriteLine(\"Box created\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        Box b = new Box();\n    }\n}",
+    "o": [
+      "Box created",
+      "Box",
+      "Created",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following is true about destructors in C#?",
+    "o": [
+      "They cannot be overloaded",
+      "They must return void",
+      "They are called with the `delete` keyword",
+      "They can be manually invoked"
+    ]
+  },
+  {
+    "q": "Which line correctly defines an indexer in C#?",
+    "o": [
+      "public int this[int index] { get { return 0; } }",
+      "int[] index this { return 0; }",
+      "index[int] public this => 0;",
+      "this[int index] => return 0;"
+    ]
+  },
+  {
+    "q": "Which access modifier allows a class member to be accessible in the same class and derived classes?",
+    "o": [
+      "protected",
+      "private",
+      "internal",
+      "sealed"
+    ]
+  },
+  {
+    "q": "What does the following code demonstrate?",
+    "c": "class Laptop {\n    public string Brand { get; set; }\n}\n\nclass Program {\n    static void Main() {\n        Laptop l = new Laptop();\n        l.Brand = \"Dell\";\n        Console.WriteLine(l.Brand);\n    }\n}",
+    "o": [
+      "Use of auto-implemented property",
+      "Use of constructor overloading",
+      "Use of indexer",
+      "Use of destructor"
+    ]
+  },
+  {
+    "q": "Which of the following defines a constructor with one parameter in C#?",
+    "o": [
+      "public Car(string model) { }",
+      "Car() string model { }",
+      "constructor Car(string model);",
+      "Car(model string) public { }"
+    ]
+  },
+  {
+    "q": "Which of the following correctly creates an object of a class named `Vehicle`?",
+    "o": [
+      "Vehicle v = new Vehicle();",
+      "new Vehicle = Vehicle();",
+      "Vehicle v();",
+      "Vehicle v := Vehicle();"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "class Sample {\n    public int Number;\n    public Sample() {\n        Number = 50;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Sample s = new Sample();\n        Console.WriteLine(s.Number);\n    }\n}",
+    "o": [
+      "50",
+      "0",
+      "null",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which statement about access modifiers in C# is correct?",
+    "o": [
+      "`internal` allows access within the same assembly",
+      "`private` allows access across all classes",
+      "`protected` allows access from unrelated classes",
+      "`public` restricts access to the base class"
+    ]
+  },
+  {
+    "q": "Which of the following defines a property that can only be read in C#?",
+    "o": [
+      "public int Score { get; }",
+      "public int Score { set; }",
+      "int Score() { return 0; }",
+      "readonly property Score;"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "class Gadget {\n    public string Type { get; set; }\n}\n\nclass Program {\n    static void Main() {\n        Gadget g = new Gadget();\n        g.Type = \"Smartwatch\";\n        Console.WriteLine(g.Type);\n    }\n}",
+    "o": [
+      "Smartwatch",
+      "Type",
+      "null",
+      "Gadget"
+    ]
+  },
+  {
+    "q": "Which of the following is true about constructors in C#?",
+    "o": [
+      "Constructors initialize new instances of a class",
+      "Constructors return a string",
+      "Constructors can be called with the `Call` keyword",
+      "Constructors must be static"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a destructor in C#?",
+    "o": [
+      "~Account() { Console.WriteLine(\"Deleted\"); }",
+      "Account::~Account() { Console.WriteLine(\"Deleted\"); }",
+      "delete Account() { Console.WriteLine(\"Deleted\"); }",
+      "~Account(void) => Console.WriteLine(\"Deleted\");"
+    ]
+  },
+  {
+    "q": "Which concept does the following code demonstrate?",
+    "c": "class Person {\n    private int age;\n    public int Age {\n        get { return age; }\n        set { age = value; }\n    }\n}",
+    "o": [
+      "Encapsulation using properties",
+      "Inheritance",
+      "Constructor chaining",
+      "Method overloading"
+    ]
+  },
+  {
+    "q": "Which indexer declaration is valid in a C# class?",
+    "o": [
+      "public string this[int index] { get { return \"item\"; } }",
+      "string[] this[int i] => return i;",
+      "public indexer[int] { get => value; }",
+      "this[int i]: string => i;"
+    ]
+  },
+  {
+    "q": "What happens if a class has no constructor defined?",
+    "o": [
+      "The compiler provides a default parameterless constructor",
+      "The class will not compile",
+      "The class must be declared as static",
+      "An error is thrown at runtime"
+    ]
+  }
+]

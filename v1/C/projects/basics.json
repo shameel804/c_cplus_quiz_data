@@ -1,0 +1,102 @@
+[
+  {
+    "title": "Structure of a C Program",
+    "ques": "Write a simple C program that prints 'Hello, C World!'. Explain the structure of the program.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n\nint main() {\n    printf(\"Hello, C World!\\n\");\n    return 0;\n}"
+    },
+    "explanation": "***#include <stdio.h>***\nIncludes the standard input/output library necessary for using ***printf()***.\n\n***int main()***\nDefines the main function, the entry point of any C program.\n\n***printf(\"Hello, C World!\\n\");***\nPrints the string to the screen followed by a newline.\n\n***return 0;***\nIndicates that the program ended successfully."
+  },
+  {
+    "title": "Declaring and Using Variables",
+    "ques": "Write a C program that declares an integer and a float variable, assigns values, and prints them.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n\nint main() {\n    int age = 25;\n    float height = 5.9;\n\n    printf(\"Age: %d\\n\", age);\n    printf(\"Height: %.1f\\n\", height);\n\n    return 0;\n}"
+    },
+    "explanation": "***int age = 25;***\nDeclares an integer variable named ***age*** and assigns it the value ***25***.\n\n***float height = 5.9;***\nDeclares a float variable named ***height*** and assigns it the value ***5.9***.\n\n***printf(\"Age: %d\\n\", age);***\nPrints the integer value using ***%d*** format specifier.\n\n***printf(\"Height: %.1f\\n\", height);***\nPrints the float value with one decimal place using ***%.1f***."
+  },
+  {
+    "title": "Using scanf for Input",
+    "ques": "Write a C program that takes user's name and age as input and prints them.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n\nint main() {\n    char name[50];\n    int age;\n\n    printf(\"Enter your name: \");\n    scanf(\"%s\", name);\n\n    printf(\"Enter your age: \");\n    scanf(\"%d\", &age);\n\n    printf(\"Hello %s, you are %d years old.\\n\", name, age);\n\n    return 0;\n}"
+    },
+    "explanation": "***char name[50];***\nDeclares a character array to store the name.\n\n***int age;***\nDeclares an integer variable to store the age.\n\n***scanf(\"%s\", name);***\nTakes a string input. No ***&*** is needed for arrays.\n\n***scanf(\"%d\", &age);***\nTakes an integer input using the address-of operator ***&***.\n\n***printf(\"Hello %s, you are %d years old.\\n\", name, age);***\nDisplays the input values."
+  },
+  {
+    "title": "Reserved Keywords in C",
+    "ques": "What will happen if you try to use a C keyword as a variable name? Write a code example and explain the error.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n\nint main() {\n    int return = 10;\n    printf(\"Value: %d\\n\", return);\n    return 0;\n}"
+    },
+    "explanation": "***int return = 10;***\nThis line will cause a compile-time error because ***return*** is a ***keyword*** in C and cannot be used as a variable name.\n\nKeywords have predefined meanings and using them as identifiers is not allowed.\n\nTo fix this, use a different name like ***int result = 10;*** instead."
+  },
+  {
+    "title": "Identifier Naming Rules",
+    "ques": "Write a C program that uses valid identifiers to store student details. Also show invalid identifier examples and explain.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n\nint main() {\n    int studentAge = 20;\n    float student_height = 5.7;\n\n    printf(\"Age: %d\\n\", studentAge);\n    printf(\"Height: %.1f\\n\", student_height);\n\n    // int 1stStudent = 10; // Invalid: cannot start with a digit\n    // int float = 5;       // Invalid: 'float' is a keyword\n\n    return 0;\n}"
+    },
+    "explanation": "***studentAge*** and ***student_height*** are valid identifiers.\nThey follow rules:\n- Start with a letter or underscore\n- Contain letters, digits, or underscores\n- Not a keyword\n\n***int 1stStudent = 10;***\nInvalid because identifiers cannot start with a digit.\n\n***int float = 5;***\nInvalid because ***float*** is a keyword."
+  },
+  {
+    "title": "Multiple Variable Declaration",
+    "ques": "Write a C program that declares and initializes multiple variables of different types in one line, then prints them.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n\nint main() {\n    int a = 5, b = 10;\n    float pi = 3.14;\n    char grade = 'A';\n\n    printf(\"a = %d, b = %d\\n\", a, b);\n    printf(\"pi = %.2f\\n\", pi);\n    printf(\"grade = %c\\n\", grade);\n\n    return 0;\n}"
+    },
+    "explanation": "***int a = 5, b = 10;***\nDeclares and initializes two integer variables in one line.\n\n***float pi = 3.14;***\nDeclares and initializes a float variable.\n\n***char grade = 'A';***\nDeclares and initializes a character variable.\n\n***printf(...)***\nEach ***printf()*** displays the corresponding variable using format specifiers: ***%d*** for integers, ***%f*** for floats, ***%c*** for characters."
+  },
+  {
+    "title": "Uninitialized Variables",
+    "ques": "Write a C program that declares a variable without initializing it and attempts to print its value. Observe and explain the output.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n\nint main() {\n    int x;\n    printf(\"Value of x: %d\\n\", x);\n    return 0;\n}"
+    },
+    "explanation": "***int x;***\nDeclares an integer variable ***x*** but does not initialize it.\n\n***printf(\"Value of x: %d\\n\", x);***\nAttempts to print the value of ***x***. Since it's uninitialized, the output is ***undefined (garbage value)***.\n\nIt's important to always initialize variables before using them to avoid unexpected behavior."
+  },
+  {
+    "title": "Escape Sequences in Output",
+    "ques": "Write a C program demonstrating the use of escape sequences like \\n, \\t, and \\\".",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n\nint main() {\n    printf(\"Hello\\nWorld!\\n\");\n    printf(\"Column1\\tColumn2\\n\");\n    printf(\"She said \\\"C is fun!\\\"\\n\");\n    return 0;\n}"
+    },
+    "explanation": "***\\n***\nInserts a newline. Used to move the output cursor to the next line.\n\n***\\t***\nInserts a horizontal tab. Used to align text in columns.\n\n***\\\"***\nInserts a double quote character inside a string.\n\nThe output will be:\n```\nHello\nWorld!\nColumn1\tColumn2\nShe said \"C is fun!\"\n```"
+  },
+  {
+    "title": "Using Constants with #define",
+    "ques": "Write a C program using #define to declare a constant for Pi and calculate the area of a circle.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#define PI 3.14159\n\nint main() {\n    float radius = 5.0;\n    float area = PI * radius * radius;\n\n    printf(\"Area of circle: %.2f\\n\", area);\n    return 0;\n}"
+    },
+    "explanation": "***#define PI 3.14159***\nDefines a symbolic constant named ***PI***.\n\n***float radius = 5.0;***\nDeclares a float variable ***radius*** and assigns value.\n\n***float area = PI * radius * radius;***\nComputes the area using the formula πr².\n\n***printf(\"Area of circle: %.2f\\n\", area);***\nPrints the area rounded to 2 decimal places."
+  },
+  {
+    "title": "Size of Data Types",
+    "ques": "Write a C program that prints the size (in bytes) of different data types using sizeof operator.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n\nint main() {\n    printf(\"Size of int: %zu bytes\\n\", sizeof(int));\n    printf(\"Size of float: %zu bytes\\n\", sizeof(float));\n    printf(\"Size of char: %zu bytes\\n\", sizeof(char));\n    printf(\"Size of double: %zu bytes\\n\", sizeof(double));\n\n    return 0;\n}"
+    },
+    "explanation": "***sizeof(type)***\nReturns the size in bytes of the specified type.\n\n***%zu***\nUsed for printing ***size_t*** type, which is the return type of ***sizeof***.\n\nThe output may vary by system but shows memory usage of each type."
+  }
+]

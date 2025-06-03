@@ -1,0 +1,92 @@
+[
+  {
+    "title": "Creating a Simple Class",
+    "ques": "Write a C# program to create a class called 'Person' with fields for name and age, and a method to display the person's information. Create an object of this class and demonstrate its usage.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\n\nclass Person {\n    public string name;\n    public int age;\n\n    public void DisplayInfo() {\n        Console.WriteLine($\"Name: {name}, Age: {age}\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        Person person = new Person();\n        person.name = \"Alice\";\n        person.age = 25;\n        person.DisplayInfo();\n    }\n}"
+    },
+    "explanation": "This program demonstrates ***Classes and Objects***:\n- ```class Person``` defines a blueprint with fields ***name*** (string) and ***age*** (int), and a method ***DisplayInfo***.\n- The ***public*** access modifier allows these members to be accessed from outside the class.\n- In ```Main```, we create an object ```person``` using the ***new*** keyword.\n- We assign values to the fields (```person.name = \"Alice\"; person.age = 25;```).\n- Finally, ```person.DisplayInfo()``` calls the method to output: ***Name: Alice, Age: 25***."
+  },
+  {
+    "title": "Using Constructors",
+    "ques": "Create a C# class 'Rectangle' with fields for length and width. Implement a default constructor and a parameterized constructor to initialize these fields. Calculate and display the area using a method.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\n\nclass Rectangle {\n    private double length;\n    private double width;\n\n    public Rectangle() {\n        length = 0;\n        width = 0;\n    }\n\n    public Rectangle(double l, double w) {\n        length = l;\n        width = w;\n    }\n\n    public double GetArea() {\n        return length * width;\n    }\n}\n\nclass Program {\n    static void Main() {\n        Rectangle rect1 = new Rectangle();\n        Rectangle rect2 = new Rectangle(5.5, 3.2);\n        Console.WriteLine($\"Area of rect1: {rect1.GetArea()}\");\n        Console.WriteLine($\"Area of rect2: {rect2.GetArea()}\");\n    }\n}"
+    },
+    "explanation": "This program illustrates ***Constructors***:\n- ```Rectangle()``` is a ***default constructor*** setting ***length*** and ***width*** to 0.\n- ```Rectangle(double l, double w)``` is a ***parameterized constructor*** initializing fields with provided values.\n- Fields are ***private***, ensuring encapsulation.\n- ```GetArea()``` calculates the area.\n- In ```Main```, ```rect1``` uses the default constructor (area: ***0***), while ```rect2``` uses the parameterized constructor (area: ***17.6***)."
+  },
+  {
+    "title": "Implementing Properties",
+    "ques": "Design a C# class 'Book' with private fields for title and price. Use properties to access and modify these fields, ensuring price cannot be negative. Demonstrate the usage in a program.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\n\nclass Book {\n    private string title;\n    private double price;\n\n    public string Title {\n        get { return title; }\n        set { title = value; }\n    }\n\n    public double Price {\n        get { return price; }\n        set { price = (value >= 0) ? value : 0; }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Book book = new Book();\n        book.Title = \"C# Basics\";\n        book.Price = -10; // Will set to 0\n        Console.WriteLine($\"Title: {book.Title}, Price: {book.Price}\");\n        book.Price = 29.99;\n        Console.WriteLine($\"Title: {book.Title}, Price: {book.Price}\");\n    }\n}"
+    },
+    "explanation": "This program showcases ***Properties***:\n- ***Title*** property allows full get/set access to ```title```.\n- ***Price*** property includes validation: if the value is negative, it sets ```price``` to ***0***.\n- Properties provide controlled access to ***private*** fields.\n- In ```Main```, setting ```book.Price = -10``` results in ***0***, while ```29.99``` is accepted, showing the validation in action."
+  },
+  {
+    "title": "Access Modifiers Demo",
+    "ques": "Create a C# class 'Employee' with fields and methods using different access modifiers (public, private, protected). Demonstrate how these modifiers restrict or allow access in a derived class and main program.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\n\nclass Employee {\n    public string name = \"John Doe\";\n    private int salary = 50000;\n    protected string department = \"IT\";\n\n    public void DisplayPublic() {\n        Console.WriteLine($\"Name: {name}\");\n    }\n\n    private void DisplaySalary() {\n        Console.WriteLine($\"Salary: {salary}\");\n    }\n\n    protected void DisplayDepartment() {\n        Console.WriteLine($\"Department: {department}\");\n    }\n}\n\nclass Manager : Employee {\n    public void ShowDetails() {\n        DisplayPublic(); // Accessible\n        DisplayDepartment(); // Accessible via inheritance\n        // DisplaySalary(); // Error: private\n    }\n}\n\nclass Program {\n    static void Main() {\n        Employee emp = new Employee();\n        Console.WriteLine(emp.name); // Public: accessible\n        // emp.salary; // Error: private\n        // emp.department; // Error: protected\n\n        Manager mgr = new Manager();\n        mgr.ShowDetails();\n    }\n}"
+    },
+    "explanation": "This program explains ***Access Modifiers***:\n- ***public***: ```name``` and ```DisplayPublic``` are accessible everywhere.\n- ***private***: ```salary``` and ```DisplaySalary``` are only accessible within ```Employee```.\n- ***protected***: ```department``` and ```DisplayDepartment``` are accessible in ```Employee``` and derived classes like ```Manager```.\n- In ```Main```, only ```name``` is accessible directly. ```Manager.ShowDetails()``` can call ***protected*** members but not ***private*** ones."
+  },
+  {
+    "title": "Using Destructors",
+    "ques": "Write a C# program to create a class 'FileHandler' that simulates opening a file in its constructor and closing it in its destructor. Demonstrate the object creation and garbage collection process.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\n\nclass FileHandler {\n    private string fileName;\n\n    public FileHandler(string name) {\n        fileName = name;\n        Console.WriteLine($\"Opening file: {fileName}\");\n    }\n\n    ~FileHandler() {\n        Console.WriteLine($\"Closing file: {fileName}\");\n    }\n\n    public void ProcessFile() {\n        Console.WriteLine($\"Processing file: {fileName}\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        FileHandler file = new FileHandler(\"data.txt\");\n        file.ProcessFile();\n        file = null; // Make object eligible for garbage collection\n        GC.Collect(); // Force garbage collection to trigger destructor\n        Console.WriteLine(\"Main method completed.\");\n    }\n}"
+    },
+    "explanation": "This program demonstrates ***Destructors***:\n- ```FileHandler(string name)``` is the constructor, simulating file opening.\n- ```~FileHandler()``` is the ***destructor***, called by the garbage collector to clean up (simulating file closing).\n- ***Destructors*** in C# are prefixed with ```~``` and have no parameters.\n- In ```Main```, we create a ```file``` object, use it, then set it to ```null``` and call ```GC.Collect()``` to force garbage collection, triggering the destructor.\n- Output shows: ***Opening file***, ***Processing file***, ***Closing file***, reflecting the lifecycle."
+  },
+  {
+    "title": "Implementing Indexers",
+    "ques": "Create a C# class 'Dictionary' that uses an indexer to store and retrieve word-definition pairs in an array. Demonstrate adding and accessing elements using the indexer.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\n\nclass Dictionary {\n    private string[] definitions = new string[10];\n\n    public string this[int index] {\n        get {\n            if (index >= 0 && index < definitions.Length)\n                return definitions[index] ?? \"No definition\";\n            return \"Invalid index\";\n        }\n        set {\n            if (index >= 0 && index < definitions.Length)\n                definitions[index] = value;\n        }\n    }\n}\n\nclass Program {\n    static void Main() {\n        Dictionary dict = new Dictionary();\n        dict[0] = \"A fruit\";\n        dict[1] = \"A color\";\n        Console.WriteLine($\"Definition at 0: {dict[0]}\");\n        Console.WriteLine($\"Definition at 1: {dict[1]}\");\n        Console.WriteLine($\"Definition at 5: {dict[5]}\");\n    }\n}"
+    },
+    "explanation": "This program showcases ***Indexers***:\n- The ```this[int index]``` property defines an ***indexer***, allowing array-like access to ```definitions```.\n- ***get*** returns the definition or a default message if unset/invalid.\n- ***set*** assigns a value to the specified index if valid.\n- In ```Main```, we set ```dict[0]``` and ```dict[1]```, then access them and an unset index (***5***).\n- Output: ***A fruit***, ***A color***, ***No definition***, demonstrating indexer functionality."
+  },
+  {
+    "title": "Student Grade Manager",
+    "ques": "Create a C# class 'GradeManager' to store student grades in an array. Use a private array with an indexer to access grades by index, a property to set a maximum grade limit, and different access modifiers to control visibility. Include a method to calculate the average grade. Demonstrate its usage.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\n\nclass GradeManager {\n    private double[] grades;\n    private int maxGrades;\n    protected int gradeCount;\n\n    public GradeManager(int size) {\n        grades = new double[size];\n        maxGrades = size;\n        gradeCount = 0;\n    }\n\n    public double MaxGradeLimit {\n        get { return grades.Length * 100.0; }\n        set {\n            if (value > 0) maxGrades = (int)(value / 100.0);\n        }\n    }\n\n    public double this[int index] {\n        get {\n            if (index >= 0 && index < grades.Length)\n                return grades[index];\n            return -1;\n        }\n        set {\n            if (index >= 0 && index < maxGrades && value >= 0 && value <= 100) {\n                grades[index] = value;\n                if (index >= gradeCount) gradeCount = index + 1;\n            }\n        }\n    }\n\n    public double CalculateAverage() {\n        if (gradeCount == 0) return 0;\n        double sum = 0;\n        for (int i = 0; i < gradeCount; i++) {\n            sum += grades[i];\n        }\n        return sum / gradeCount;\n    }\n}\n\nclass Program {\n    static void Main() {\n        GradeManager gm = new GradeManager(5);\n        gm[0] = 85.5;\n        gm[1] = 92.0;\n        gm[2] = 78.5;\n        Console.WriteLine($\"Grade at 0: {gm[0]}\");\n        Console.WriteLine($\"Grade at 1: {gm[1]}\");\n        Console.WriteLine($\"Average grade: {gm.CalculateAverage()}\");\n    }\n}"
+    },
+    "explanation": "This program combines multiple ***OOP Concepts***:\n- ***Class and Constructor***: ```GradeManager``` uses a constructor to initialize a ***private*** ```grades``` array and ```maxGrades```.\n- ***Property***: ```MaxGradeLimit``` controls the maximum capacity conceptually (scaled by 100 for demo), with get/set logic.\n- ***Indexer***: ```this[int index]``` allows array-like access to ```grades``` with validation (e.g., grades between 0 and 100).\n- ***Access Modifiers***: ```private``` for ```grades``` (encapsulation), ```protected``` for ```gradeCount``` (accessible in derived classes), ```public``` for methods and properties.\n- ```CalculateAverage``` computes the average of stored grades.\n- In ```Main```, we set grades and retrieve them via the indexer, then calculate the average (***85.333...***)."
+  },
+  {
+    "title": "Resource Allocator",
+    "ques": "Create a C# class 'ResourceAllocator' to manage a pool of resources (e.g., memory units). Use a private field for total resources, a property to track allocated resources with validation, a constructor to set the initial pool size, and a protected method to reset the pool. Demonstrate allocation and resetting.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\n\nclass ResourceAllocator {\n    private int totalResources;\n    private int allocatedResources;\n\n    public ResourceAllocator(int poolSize) {\n        totalResources = poolSize > 0 ? poolSize : 100; // Default to 100 if invalid\n        allocatedResources = 0;\n    }\n\n    public int AllocatedResources {\n        get { return allocatedResources; }\n        set {\n            if (value >= 0 && value <= totalResources)\n                allocatedResources = value;\n            else if (value > totalResources)\n                allocatedResources = totalResources;\n            else\n                allocatedResources = 0;\n        }\n    }\n\n    public int AvailableResources {\n        get { return totalResources - allocatedResources; }\n    }\n\n    protected void ResetPool() {\n        allocatedResources = 0;\n        Console.WriteLine(\"Resource pool reset.\");\n    }\n\n    public void Allocate(int amount) {\n        AllocatedResources += amount;\n        Console.WriteLine($\"Allocated {amount} units. Total allocated: {AllocatedResources}\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        ResourceAllocator allocator = new ResourceAllocator(200);\n        allocator.Allocate(50);\n        allocator.Allocate(75);\n        Console.WriteLine($\"Available resources: {allocator.AvailableResources}\");\n        allocator.AllocatedResources = 300; // Exceeds total, caps at 200\n        Console.WriteLine($\"After excess allocation, allocated: {allocator.AllocatedResources}\");\n        // allocator.ResetPool(); // Error: protected\n    }\n}"
+    },
+    "explanation": "This program showcases ***OOP Concepts***:\n- ***Constructor***: ```ResourceAllocator(int poolSize)``` initializes ```totalResources``` with validation (defaulting to ***100*** if invalid).\n- ***Properties***: ```AllocatedResources``` allows controlled access with bounds checking (0 to ```totalResources```), and ```AvailableResources``` is read-only, calculated dynamically.\n- ***Access Modifiers***: ```private``` fields (```totalResources```, ```allocatedResources```) ensure encapsulation; ```protected``` ```ResetPool``` is only accessible in derived classes; ```public``` methods/properties allow external interaction.\n- ```Allocate``` updates the allocation state.\n- In ```Main```, we allocate ***50*** then ***75*** (total: ***125***), check availability (***75***), and test exceeding the limit (caps at ***200***)."
+  },
+  {
+    "title": "Task Counter",
+    "ques": "Create a C# class 'TaskCounter' to track the number of tasks created across all instances. Use a static property to maintain the total count, a private instance field for task ID, a constructor to assign IDs, and a protected method to display the count. Demonstrate creating multiple instances and accessing the total.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\n\nclass TaskCounter {\n    private int taskId;\n    private static int totalTasks = 0;\n\n    public TaskCounter() {\n        totalTasks++;\n        taskId = totalTasks;\n    }\n\n    public static int TotalTasks {\n        get { return totalTasks; }\n    }\n\n    public int TaskId {\n        get { return taskId; }\n    }\n\n    protected void ShowTotal() {\n        Console.WriteLine($\"Total tasks created: {TotalTasks}\");\n    }\n\n    public void DisplayTaskInfo() {\n        Console.WriteLine($\"Task ID: {taskId}, Total Tasks: {TotalTasks}\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        TaskCounter task1 = new TaskCounter();\n        TaskCounter task2 = new TaskCounter();\n        TaskCounter task3 = new TaskCounter();\n        task1.DisplayTaskInfo();\n        task2.DisplayTaskInfo();\n        task3.DisplayTaskInfo();\n        Console.WriteLine($\"Accessing static property: {TaskCounter.TotalTasks}\");\n        // task1.ShowTotal(); // Error: protected\n    }\n}"
+    },
+    "explanation": "This program highlights ***OOP Concepts***:\n- ***Class and Constructor***: ```TaskCounter``` uses a constructor to increment ```totalTasks``` and assign a unique ```taskId```.\n- ***Properties***: ```TotalTasks``` is a ***static property*** (shared across all instances), read-only, tracking the total; ```TaskId``` is an instance property.\n- ***Access Modifiers***: ```private``` for ```taskId``` and ```totalTasks``` (encapsulation); ```public``` for properties and ```DisplayTaskInfo```; ```protected``` for ```ShowTotal``` (inheritance-only access).\n- In ```Main```, three instances are created, each incrementing ```totalTasks```. Output shows IDs (***1, 2, 3***) and total (***3***), with static access via ```TaskCounter.TotalTasks```."
+  }
+]

@@ -1,0 +1,3529 @@
+[
+  {
+    "q": "Who developed the C++ programming language?",
+    "o": [
+      "Bjarne Stroustrup",
+      "Dennis Ritchie",
+      "James Gosling",
+      "Guido van Rossum"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int x = 5, y = 10;\n    cout << x + y;\n    return 0;\n}",
+    "o": [
+      "15",
+      "510",
+      "5 10",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare a class in C++?",
+    "o": [
+      "class MyClass { };",
+      "class MyClass() { };",
+      "def class MyClass { };",
+      "MyClass class() { };"
+    ]
+  },
+  {
+    "q": "Which of the following correctly reads input from the user in C++?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int age;\n    cin >> age;\n    cout << age;\n    return 0;\n}",
+    "o": [
+      "cin >> age;",
+      "input(age);",
+      "read(age);",
+      "scanf(\"%d\", &age);"
+    ]
+  },
+  {
+    "q": "Which of the following best defines Encapsulation in Object Oriented Programming?",
+    "o": [
+      "Wrapping data and methods into a single unit",
+      "Inheriting properties from base class",
+      "Overriding functions in derived class",
+      "Hiding the implementation details of functions"
+    ]
+  },
+  {
+    "q": "What is the output of this C++ code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\nclass Sample {\npublic:\n    void display() {\n        cout << \"Welcome to C++\";\n    }\n};\nint main() {\n    Sample obj;\n    obj.display();\n    return 0;\n}",
+    "o": [
+      "Welcome to C++",
+      "Sample",
+      "display",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which feature of OOP allows a derived class to provide a specific implementation of a function already defined in its base class?",
+    "o": [
+      "Polymorphism",
+      "Inheritance",
+      "Encapsulation",
+      "Abstraction"
+    ]
+  },
+  {
+    "q": "Which of the following is not a built-in data type in C++?",
+    "o": [
+      "string",
+      "int",
+      "float",
+      "char"
+    ]
+  },
+  {
+    "q": "How does C++ differ from C?",
+    "o": [
+      "C++ supports Object-Oriented Programming",
+      "C++ has fewer features than C",
+      "C++ doesn't support functions",
+      "C++ is older than C"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    cout << \"Hello, \" << \"World!\";\n    return 0;\n}",
+    "o": [
+      "Hello, World!",
+      "HelloWorld!",
+      "Hello,",
+      "World!"
+    ]
+  },
+  {
+    "q": "Which year was C++ first released?",
+    "o": [
+      "1985",
+      "1972",
+      "1995",
+      "2000"
+    ]
+  },
+  {
+    "q": "What is the correct way to include a header file in C++?",
+    "o": [
+      "#include <iostream>",
+      "include <iostream>",
+      "#include iostream",
+      "#import <iostream>"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int a = 7;\n    float b = 2.5;\n    cout << a * b;\n    return 0;\n}",
+    "o": [
+      "17.5",
+      "9",
+      "2.8",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is used for output in C++?",
+    "o": [
+      "cout",
+      "cin",
+      "print",
+      "output"
+    ]
+  },
+  {
+    "q": "Which of these best describes inheritance in OOP?",
+    "o": [
+      "Acquiring properties from another class",
+      "Encapsulating code inside functions",
+      "Restricting access to parts of code",
+      "Destroying object instances"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\nclass Car {\npublic:\n    string brand = \"Ford\";\n};\nint main() {\n    Car c;\n    cout << c.brand;\n    return 0;\n}",
+    "o": [
+      "Ford",
+      "brand",
+      "Car",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these is not a feature of Object-Oriented Programming?",
+    "o": [
+      "Compilation",
+      "Polymorphism",
+      "Abstraction",
+      "Encapsulation"
+    ]
+  },
+  {
+    "q": "Which data type is used to store a single character in C++?",
+    "o": [
+      "char",
+      "string",
+      "character",
+      "int"
+    ]
+  },
+  {
+    "q": "Which syntax is used for single-line comments in C++?",
+    "o": [
+      "// This is a comment",
+      "# This is a comment",
+      "/* This is a comment */",
+      "-- This is a comment"
+    ]
+  },
+  {
+    "q": "How do C++ strings differ from C-style strings?",
+    "o": [
+      "C++ strings are objects from the STL",
+      "C++ strings are arrays of characters",
+      "C++ strings end with a null character",
+      "C++ strings can't be modified"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about C++?",
+    "o": [
+      "C++ is a multi-paradigm programming language that supports both procedural and object-oriented programming.",
+      "C++ was developed before C.",
+      "C++ is an interpreted language.",
+      "C++ does not support user-defined data types."
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    double d = 3.14;\n    cout << sizeof(d);\n    return 0;\n}",
+    "o": [
+      "8",
+      "4",
+      "2",
+      "16"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a class in C++?",
+    "o": [
+      "class",
+      "struct",
+      "object",
+      "define"
+    ]
+  },
+  {
+    "q": "In C++, which data type is used to represent true/false values?",
+    "o": [
+      "bool",
+      "bit",
+      "flag",
+      "logic"
+    ]
+  },
+  {
+    "q": "Which of the following is **not** a principle of Object-Oriented Programming?",
+    "o": [
+      "Compilation",
+      "Inheritance",
+      "Polymorphism",
+      "Encapsulation"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    string name = \"John\";\n    cout << name.length();\n    return 0;\n}",
+    "o": [
+      "4",
+      "0",
+      "5",
+      "Error"
+    ]
+  },
+  {
+    "q": "What does 'cin' stand for in C++?",
+    "o": [
+      "Character input",
+      "Console input",
+      "Common input",
+      "Control input"
+    ]
+  },
+  {
+    "q": "Which of the following is a feature that C++ introduced over C?",
+    "o": [
+      "Classes and Objects",
+      "Pointers",
+      "Header files",
+      "Functions"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\nclass Test {\npublic:\n    void greet() {\n        cout << \"Hello!\";\n    }\n};\nint main() {\n    Test t;\n    t.greet();\n    return 0;\n}",
+    "o": [
+      "Hello!",
+      "greet",
+      "Test",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which concept allows objects of different classes to be treated as objects of a common base class?",
+    "o": [
+      "Polymorphism",
+      "Encapsulation",
+      "Composition",
+      "Friend function"
+    ]
+  },
+  {
+    "q": "Which of the following best describes C++?",
+    "o": [
+      "An extension of the C language with object-oriented features",
+      "A low-level assembly language",
+      "A language designed purely for operating system development",
+      "A markup language"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to declare a `float` variable in C++?",
+    "o": [
+      "float price = 19.99;",
+      "float = price 19.99;",
+      "float price = \"19.99\";",
+      "price float = 19.99;"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int a = 3, b = 2;\n    cout << a / b;\n    return 0;\n}",
+    "o": [
+      "1",
+      "1.5",
+      "2",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is used to create an object from a class in C++?",
+    "o": [
+      "ClassName obj;",
+      "object ClassName;",
+      "new ClassName;",
+      "ClassName = new object();"
+    ]
+  },
+  {
+    "q": "Which C++ feature allows a class to use properties and methods of another class?",
+    "o": [
+      "Inheritance",
+      "Polymorphism",
+      "Encapsulation",
+      "Abstraction"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    string name = \"C++\";\n    cout << name[1];\n    return 0;\n}",
+    "o": [
+      "+",
+      "C",
+      "P",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the difference in input methods between C and C++?",
+    "o": [
+      "C uses scanf, C++ uses cin",
+      "C++ uses scanf, C uses cin",
+      "Both use scanf",
+      "Both use cin"
+    ]
+  },
+  {
+    "q": "Which operator is used for accessing members of a class through a pointer?",
+    "o": [
+      "->",
+      ".",
+      "&",
+      "::"
+    ]
+  },
+  {
+    "q": "Which of the following concepts provides data hiding in OOP?",
+    "o": [
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism",
+      "Overloading"
+    ]
+  },
+  {
+    "q": "What is the correct syntax to write a C++ main function?",
+    "o": [
+      "int main() { }",
+      "main() int { }",
+      "function main() { }",
+      "void main() { }"
+    ]
+  },
+  {
+    "q": "Which of the following was the original name of C++ during its early development?",
+    "o": [
+      "C with Classes",
+      "C++0x",
+      "NextC",
+      "C-Plus"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int a = 10;\n    int b = 3;\n    cout << a % b;\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "3",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of the following is a fundamental difference between C and C++?",
+    "o": [
+      "C++ supports classes and objects, while C does not.",
+      "C++ uses printf instead of cout.",
+      "C does not support functions.",
+      "C++ does not support pointers."
+    ]
+  },
+  {
+    "q": "Which of the following is a valid syntax to define a constructor in C++?",
+    "o": [
+      "MyClass() { }",
+      "constructor MyClass() { }",
+      "void MyClass() { }",
+      "function MyClass() { }"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    char ch = 'A';\n    cout << int(ch);\n    return 0;\n}",
+    "o": [
+      "65",
+      "A",
+      "97",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used for inheritance in C++?",
+    "o": [
+      "public",
+      "extend",
+      "inherits",
+      "base"
+    ]
+  },
+  {
+    "q": "Which of the following is a user-defined data type in C++?",
+    "o": [
+      "class",
+      "int",
+      "double",
+      "char"
+    ]
+  },
+  {
+    "q": "Which of the following best describes abstraction in OOP?",
+    "o": [
+      "Hiding complex implementation details and showing only essential features",
+      "Combining data and functions",
+      "Reusing code from a base class",
+      "Providing multiple forms of the same function"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int num = 10;\n    cout << ++num;\n    return 0;\n}",
+    "o": [
+      "11",
+      "10",
+      "12",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which stream object is used for standard output in C++?",
+    "o": [
+      "cout",
+      "cin",
+      "cerr",
+      "clog"
+    ]
+  },
+  {
+    "q": "Which programming language directly influenced the creation of C++?",
+    "o": [
+      "C",
+      "Java",
+      "Pascal",
+      "Python"
+    ]
+  },
+  {
+    "q": "What will the following C++ code output?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    bool flag = true;\n    cout << flag;\n    return 0;\n}",
+    "o": [
+      "1",
+      "true",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes polymorphism?",
+    "o": [
+      "Ability of a function or object to take many forms",
+      "Ability to hide internal data",
+      "Ability to inherit members from another class",
+      "Ability to split one class into many subclasses"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax for a single-line comment in C++?",
+    "o": [
+      "// This is a comment",
+      "/* This is a comment */",
+      "# This is a comment",
+      "-- This is a comment"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ program?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int x = 4;\n    cout << (x == 4);\n    return 0;\n}",
+    "o": [
+      "1",
+      "4",
+      "0",
+      "true"
+    ]
+  },
+  {
+    "q": "Which of the following types is not a valid C++ keyword?",
+    "o": [
+      "string",
+      "int",
+      "float",
+      "bool"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    float a = 3.0f;\n    float b = 2.0f;\n    cout << a / b;\n    return 0;\n}",
+    "o": [
+      "1.5",
+      "1",
+      "1.0",
+      "0"
+    ]
+  },
+  {
+    "q": "Which access specifier allows members to be accessible only within the same class in C++?",
+    "o": [
+      "private",
+      "public",
+      "protected",
+      "friend"
+    ]
+  },
+  {
+    "q": "Which of these features is **exclusive to C++** and not available in C?",
+    "o": [
+      "Function overloading",
+      "Pointer arithmetic",
+      "Structures",
+      "Bitwise operations"
+    ]
+  },
+  {
+    "q": "What is the correct way to declare an object of a class in C++?",
+    "o": [
+      "MyClass obj;",
+      "MyClass = obj();",
+      "class obj = new MyClass();",
+      "object MyClass;"
+    ]
+  },
+  {
+    "q": "Who is the creator of the C++ programming language?",
+    "o": [
+      "Bjarne Stroustrup",
+      "Dennis Ritchie",
+      "James Gosling",
+      "Guido van Rossum"
+    ]
+  },
+  {
+    "q": "What is the output of this C++ program?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int x = 5;\n    cout << x * 2 + 1;\n    return 0;\n}",
+    "o": [
+      "11",
+      "10",
+      "12",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which feature of C++ allows the same function name to work with different data types?",
+    "o": [
+      "Function overloading",
+      "Data abstraction",
+      "Constructor chaining",
+      "Encapsulation"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax for taking input using `cin`?",
+    "o": [
+      "cin >> variable;",
+      "cin << variable;",
+      "input >> variable;",
+      "read(variable);"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid `char` declaration in C++?",
+    "o": [
+      "char grade = 'A';",
+      "char grade = \"A\";",
+      "char grade = A;",
+      "char grade = 65;"
+    ]
+  },
+  {
+    "q": "What is one of the key reasons for introducing C++ over C?",
+    "o": [
+      "To support object-oriented programming",
+      "To eliminate pointers",
+      "To avoid using headers",
+      "To run on more operating systems"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    string lang = \"C++\";\n    cout << lang.size();\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which concept in OOP helps in bundling data and functions together?",
+    "o": [
+      "Encapsulation",
+      "Abstraction",
+      "Inheritance",
+      "Polymorphism"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a destructor in C++?",
+    "o": [
+      "~MyClass() {}",
+      "destroy MyClass() {}",
+      "MyClass~() {}",
+      "delete MyClass() {}"
+    ]
+  },
+  {
+    "q": "Which of the following is true about C++ input/output streams?",
+    "o": [
+      "`cin` is used for input and `cout` is used for output",
+      "`cin` is used for output and `cout` is used for input",
+      "`cout` can only display integers",
+      "`cin` works only with strings"
+    ]
+  },
+  {
+    "q": "Which of the following features was added in C++ but not present in C?",
+    "o": [
+      "Classes and Objects",
+      "Structures",
+      "Functions",
+      "Preprocessor directives"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int a = 7, b = 3;\n    cout << a / b;\n    return 0;\n}",
+    "o": [
+      "2",
+      "2.33",
+      "3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following best explains the concept of inheritance in OOP?",
+    "o": [
+      "A class can derive properties and behaviors from another class",
+      "Functions can be called by many objects",
+      "Objects can encapsulate data",
+      "Data is hidden from external access"
+    ]
+  },
+  {
+    "q": "What is the correct way to include the standard input-output stream in C++?",
+    "o": [
+      "#include <iostream>",
+      "#include <stdio.h>",
+      "#include iostream.h",
+      "import iostream"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    cout << 'A' + 1;\n    return 0;\n}",
+    "o": [
+      "66",
+      "A1",
+      "B",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which data type in C++ is used to store a single character?",
+    "o": [
+      "char",
+      "string",
+      "int",
+      "bool"
+    ]
+  },
+  {
+    "q": "How does C++ handle input and output differently from C?",
+    "o": [
+      "C++ uses `cin` and `cout`, while C uses `scanf` and `printf`",
+      "C++ and C both use `printf` and `scanf`",
+      "C++ uses `input()` and `print()` functions",
+      "C++ uses `echo` and `read` statements"
+    ]
+  },
+  {
+    "q": "Which concept allows one function to behave differently based on input types?",
+    "o": [
+      "Polymorphism",
+      "Inheritance",
+      "Encapsulation",
+      "Abstraction"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <iostream>\nusing namespace std;\nclass Demo {\npublic:\n    Demo() {\n        cout << \"Constructor\";\n    }\n};\nint main() {\n    Demo d;\n    return 0;\n}",
+    "o": [
+      "Constructor",
+      "Demo",
+      "Object Created",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is **not** a valid identifier in C++?",
+    "o": [
+      "2value",
+      "_value",
+      "value_2",
+      "value2"
+    ]
+  },
+  {
+    "q": "Which year was C++ first introduced?",
+    "o": [
+      "1985",
+      "1979",
+      "1990",
+      "1980"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    double d = 5 / 2;\n    cout << d;\n    return 0;\n}",
+    "o": [
+      "2",
+      "2.5",
+      "2.0",
+      "2.50"
+    ]
+  },
+  {
+    "q": "Which OOP principle is used when a subclass modifies a method of its superclass?",
+    "o": [
+      "Overriding",
+      "Encapsulation",
+      "Abstraction",
+      "Overloading"
+    ]
+  },
+  {
+    "q": "Which of the following is a built-in data type in C++?",
+    "o": [
+      "float",
+      "string",
+      "vector",
+      "array"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int x = 3;\n    cout << x++;\n    return 0;\n}",
+    "o": [
+      "3",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT supported in C but supported in C++?",
+    "o": [
+      "Function overloading",
+      "Pointers",
+      "Switch-case",
+      "Structures"
+    ]
+  },
+  {
+    "q": "What is encapsulation in OOP?",
+    "o": [
+      "Wrapping data and functions into a single unit",
+      "Allowing access to data from any function",
+      "Using multiple classes in a program",
+      "Hiding classes from other files"
+    ]
+  },
+  {
+    "q": "Which header file is used to work with `string` objects in C++?",
+    "o": [
+      "#include <string>",
+      "#include <cstring>",
+      "#include <stdlib.h>",
+      "#include <char>"
+    ]
+  },
+  {
+    "q": "What will be the output?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    bool b = false;\n    cout << !b;\n    return 0;\n}",
+    "o": [
+      "1",
+      "false",
+      "0",
+      "true"
+    ]
+  },
+  {
+    "q": "Which of the following correctly shows class inheritance in C++?",
+    "o": [
+      "class Child : public Parent { };",
+      "class Child inherits Parent { };",
+      "class Child extends Parent { };",
+      "class Child < Parent { };"
+    ]
+  },
+  {
+    "q": "Which C++ keyword is used to create an object from a class?",
+    "o": [
+      "new",
+      "create",
+      "class",
+      "object"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int x = 10;\n    int y = 20;\n    cout << (x > y);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "10",
+      "20"
+    ]
+  },
+  {
+    "q": "Which of the following best defines abstraction in OOP?",
+    "o": [
+      "Hiding internal implementation and showing only functionality",
+      "Deriving new classes from existing ones",
+      "Binding data and methods together",
+      "Modifying behavior of base class methods"
+    ]
+  },
+  {
+    "q": "Which data type is used to represent true/false values in C++?",
+    "o": [
+      "bool",
+      "bit",
+      "flag",
+      "truth"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    string s = \"Hello\";\n    cout << s[1];\n    return 0;\n}",
+    "o": [
+      "e",
+      "H",
+      "l",
+      "o"
+    ]
+  },
+  {
+    "q": "Which of the following is not a C++ feature added over C?",
+    "o": [
+      "Garbage collection",
+      "Function overloading",
+      "Namespaces",
+      "Classes"
+    ]
+  },
+  {
+    "q": "Which syntax is used to define a class in C++?",
+    "o": [
+      "class MyClass { };",
+      "def MyClass { }",
+      "MyClass() => { }",
+      "new class MyClass()"
+    ]
+  },
+  {
+    "q": "What is the output of this C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    cout << sizeof(char);\n    return 0;\n}",
+    "o": [
+      "1",
+      "2",
+      "4",
+      "8"
+    ]
+  },
+  {
+    "q": "Which of the following allows code reuse through inheritance in C++?",
+    "o": [
+      "Base class",
+      "Child object",
+      "Constructor",
+      "Function pointer"
+    ]
+  },
+  {
+    "q": "Which of the following data types can hold a decimal number in C++?",
+    "o": [
+      "double",
+      "int",
+      "char",
+      "bool"
+    ]
+  },
+  {
+    "q": "Which programming language is C++ primarily derived from?",
+    "o": [
+      "C",
+      "Java",
+      "Python",
+      "Pascal"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    cout << \"C++\" << endl << \"Rocks!\";\n    return 0;\n}",
+    "o": [
+      "C++\nRocks!",
+      "C++ Rocks!",
+      "C++\tRocks!",
+      "Rocks! C++"
+    ]
+  },
+  {
+    "q": "Which of the following concepts allows objects to take many forms?",
+    "o": [
+      "Polymorphism",
+      "Encapsulation",
+      "Inheritance",
+      "Abstraction"
+    ]
+  },
+  {
+    "q": "Which of these data types is used to store large floating-point numbers?",
+    "o": [
+      "double",
+      "float",
+      "long",
+      "char"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int x = 4, y = 3;\n    cout << x % y;\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "q": "Which of the following statements about `cout` is true?",
+    "o": [
+      "`cout` is used for output in C++",
+      "`cout` is used for input in C++",
+      "`cout` is used to declare variables",
+      "`cout` is a keyword"
+    ]
+  },
+  {
+    "q": "What distinguishes C++ from C the most?",
+    "o": [
+      "Support for classes and objects",
+      "Support for pointers",
+      "Use of header files",
+      "Compiled language"
+    ]
+  },
+  {
+    "q": "Which is a correct example of defining a class in C++?",
+    "o": [
+      "class Animal { public: void speak(); };",
+      "class Animal -> speak();",
+      "Animal() class {}",
+      "def class Animal { }"
+    ]
+  },
+  {
+    "q": "What is the output of this C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    bool isOn = true;\n    cout << isOn;\n    return 0;\n}",
+    "o": [
+      "1",
+      "true",
+      "yes",
+      "on"
+    ]
+  },
+  {
+    "q": "Which principle of OOP helps reduce code duplication by sharing functionality between classes?",
+    "o": [
+      "Inheritance",
+      "Abstraction",
+      "Encapsulation",
+      "Composition"
+    ]
+  },
+  {
+    "q": "Who is the creator of C++?",
+    "o": [
+      "Bjarne Stroustrup",
+      "Dennis Ritchie",
+      "James Gosling",
+      "Guido van Rossum"
+    ]
+  },
+  {
+    "q": "What is the output of this C++ program?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int a = 5;\n    int b = 2;\n    float result = a / b;\n    cout << result;\n    return 0;\n}",
+    "o": [
+      "2",
+      "2.5",
+      "2.0",
+      "2.50"
+    ]
+  },
+  {
+    "q": "Which OOP principle allows restricting access to some components of an object?",
+    "o": [
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism",
+      "Abstraction"
+    ]
+  },
+  {
+    "q": "Which of the following is a user-defined data type in C++?",
+    "o": [
+      "class",
+      "int",
+      "float",
+      "char"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int val = 10;\n    cout << val * 2;\n    return 0;\n}",
+    "o": [
+      "20",
+      "10",
+      "12",
+      "5"
+    ]
+  },
+  {
+    "q": "How does C++ handle function overloading compared to C?",
+    "o": [
+      "C++ supports function overloading, C does not",
+      "Both support it equally",
+      "Only C supports function overloading",
+      "Function overloading is deprecated in C++"
+    ]
+  },
+  {
+    "q": "Which stream object is used for input from the user in C++?",
+    "o": [
+      "cin",
+      "cout",
+      "input",
+      "scanf"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    char ch = 'C';\n    cout << int(ch);\n    return 0;\n}",
+    "o": [
+      "67",
+      "C",
+      "99",
+      "char"
+    ]
+  },
+  {
+    "q": "Which of these is not a type of inheritance in C++?",
+    "o": [
+      "Multiple-level",
+      "Single",
+      "Multilevel",
+      "Multiple"
+    ]
+  },
+  {
+    "q": "Which feature allows a function to behave differently based on the object that invokes it?",
+    "o": [
+      "Polymorphism",
+      "Encapsulation",
+      "Overriding",
+      "Inheritance"
+    ]
+  },
+  {
+    "q": "Which of the following extensions is commonly used for C++ source files?",
+    "o": [
+      ".cpp",
+      ".c",
+      ".ccp",
+      ".hpp"
+    ]
+  },
+  {
+    "q": "What is the output of this C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int num = 7;\n    cout << num / 2.0;\n    return 0;\n}",
+    "o": [
+      "3.5",
+      "3",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which principle of OOP ensures that implementation details are hidden from the user?",
+    "o": [
+      "Abstraction",
+      "Inheritance",
+      "Polymorphism",
+      "Encapsulation"
+    ]
+  },
+  {
+    "q": "Which data type would you use to store a single character in C++?",
+    "o": [
+      "char",
+      "string",
+      "int",
+      "bool"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int a = 2, b = 3;\n    cout << a * b + 1;\n    return 0;\n}",
+    "o": [
+      "7",
+      "6",
+      "5",
+      "8"
+    ]
+  },
+  {
+    "q": "Which of these is a major addition in C++ that is not present in C?",
+    "o": [
+      "Classes and Objects",
+      "Functions",
+      "Pointers",
+      "Structs"
+    ]
+  },
+  {
+    "q": "What is the correct way to get user input in C++?",
+    "o": [
+      "cin >> variable;",
+      "scanf(\"%d\", &variable);",
+      "input(variable);",
+      "get(variable);"
+    ]
+  },
+  {
+    "q": "What will this code display?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    cout << \"The answer is: \" << 42;\n    return 0;\n}",
+    "o": [
+      "The answer is: 42",
+      "42 is the answer",
+      "The answer: 42",
+      "Answer: 42"
+    ]
+  },
+  {
+    "q": "Which OOP principle is most associated with 'is-a' relationships?",
+    "o": [
+      "Inheritance",
+      "Encapsulation",
+      "Abstraction",
+      "Composition"
+    ]
+  },
+  {
+    "q": "Which of the following is true about C++?",
+    "o": [
+      "C++ supports both procedural and object-oriented programming",
+      "C++ only supports procedural programming",
+      "C++ does not support low-level memory access",
+      "C++ is interpreted, not compiled"
+    ]
+  },
+  {
+    "q": "What year was C++ first released?",
+    "o": [
+      "1985",
+      "1990",
+      "1979",
+      "1995"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int x = 3;\n    int y = 4;\n    cout << x + y << endl;\n    return 0;\n}",
+    "o": [
+      "7",
+      "34",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "q": "Which OOP concept allows different classes to be treated through the same interface?",
+    "o": [
+      "Polymorphism",
+      "Encapsulation",
+      "Abstraction",
+      "Inheritance"
+    ]
+  },
+  {
+    "q": "Which of these data types would you use to store a true/false value in C++?",
+    "o": [
+      "bool",
+      "int",
+      "bit",
+      "logic"
+    ]
+  },
+  {
+    "q": "What is the output of this C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    float a = 5.0f / 2;\n    cout << a;\n    return 0;\n}",
+    "o": [
+      "2.5",
+      "2",
+      "2.0",
+      "5"
+    ]
+  },
+  {
+    "q": "What does the term 'object' represent in OOP?",
+    "o": [
+      "An instance of a class",
+      "A module of code",
+      "A function pointer",
+      "A loop variable"
+    ]
+  },
+  {
+    "q": "Which feature is introduced in C++ but not available in C?",
+    "o": [
+      "Function Overloading",
+      "Pointers",
+      "Structures",
+      "Header Files"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    string name = \"Bob\";\n    cout << \"Hello, \" << name;\n    return 0;\n}",
+    "o": [
+      "Hello, Bob",
+      "Hello Bob",
+      "Bob Hello",
+      "name"
+    ]
+  },
+  {
+    "q": "What does the keyword `public` specify in a C++ class?",
+    "o": [
+      "Access specifier for class members",
+      "A data type for variables",
+      "A loop control structure",
+      "A macro definition"
+    ]
+  },
+  {
+    "q": "Which of the following best describes encapsulation?",
+    "o": [
+      "Bundling data and functions together in a class",
+      "Allowing multiple forms of the same function",
+      "Hiding unnecessary details from the user",
+      "Acquiring properties from another class"
+    ]
+  },
+  {
+    "q": "Which of the following is used to define constants in C++?",
+    "o": [
+      "const",
+      "#define",
+      "final",
+      "constant"
+    ]
+  },
+  {
+    "q": "What will this C++ program output?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int a = 8, b = 3;\n    cout << a / b;\n    return 0;\n}",
+    "o": [
+      "2",
+      "2.5",
+      "3",
+      "8"
+    ]
+  },
+  {
+    "q": "Which OOP principle describes focusing only on relevant data while hiding unnecessary details?",
+    "o": [
+      "Abstraction",
+      "Encapsulation",
+      "Inheritance",
+      "Modularity"
+    ]
+  },
+  {
+    "q": "What is the default value of an uninitialized `int` variable in C++ (outside of any function)?",
+    "o": [
+      "0",
+      "Undefined",
+      "-1",
+      "null"
+    ]
+  },
+  {
+    "q": "Which of these is a correct way to write a single-line comment in C++?",
+    "o": [
+      "// This is a comment",
+      "# This is a comment",
+      "/* This is a comment */",
+      "<-- This is a comment -->"
+    ]
+  },
+  {
+    "q": "Which C++ feature allows the same function name to be used with different parameter types?",
+    "o": [
+      "Function Overloading",
+      "Inheritance",
+      "Encapsulation",
+      "Operator Overloading"
+    ]
+  },
+  {
+    "q": "What will this program print?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    cout << 10 + 5 * 2;\n    return 0;\n}",
+    "o": [
+      "20",
+      "30",
+      "25",
+      "15"
+    ]
+  },
+  {
+    "q": "Which of the following is true about class and struct in C++?",
+    "o": [
+      "Class members are private by default; struct members are public by default",
+      "They are exactly the same",
+      "Struct is used only in C",
+      "Struct cannot have member functions"
+    ]
+  },
+  {
+    "q": "Which stream is used for error messages in C++?",
+    "o": [
+      "cerr",
+      "cout",
+      "cin",
+      "clog"
+    ]
+  },
+  {
+    "q": "What is one key difference between C and C++?",
+    "o": [
+      "C++ supports object-oriented programming",
+      "C++ does not use pointers",
+      "C++ is an interpreted language",
+      "C++ has no preprocessor"
+    ]
+  },
+  {
+    "q": "Which of these is a correct way to declare a string in C++?",
+    "o": [
+      "string name = \"Alice\";",
+      "char name[] = 'Alice';",
+      "string name := \"Alice\";",
+      "str name = \"Alice\";"
+    ]
+  },
+  {
+    "q": "What is the output of the following program?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int x = 10;\n    int y = 3;\n    cout << x % y;\n    return 0;\n}",
+    "o": [
+      "1",
+      "3",
+      "0",
+      "10"
+    ]
+  },
+  {
+    "q": "Which concept in OOP allows one class to derive properties from another?",
+    "o": [
+      "Inheritance",
+      "Encapsulation",
+      "Abstraction",
+      "Composition"
+    ]
+  },
+  {
+    "q": "Which data type in C++ is typically used to represent decimal values?",
+    "o": [
+      "float",
+      "int",
+      "char",
+      "bool"
+    ]
+  },
+  {
+    "q": "What is the output of this C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    bool flag = true;\n    cout << flag;\n    return 0;\n}",
+    "o": [
+      "1",
+      "true",
+      "0",
+      "yes"
+    ]
+  },
+  {
+    "q": "Who coined the term 'C with Classes' which later evolved into C++?",
+    "o": [
+      "Bjarne Stroustrup",
+      "Brian Kernighan",
+      "Dennis Ritchie",
+      "Ken Thompson"
+    ]
+  },
+  {
+    "q": "Which of the following operators is used for input in C++?",
+    "o": [
+      ">>",
+      "<<",
+      "==",
+      "**"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int a = 2;\n    int b = 3;\n    cout << (a == b);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "true",
+      "false"
+    ]
+  },
+  {
+    "q": "Which OOP principle is best described as 'wrapping data and code together'?",
+    "o": [
+      "Encapsulation",
+      "Abstraction",
+      "Inheritance",
+      "Polymorphism"
+    ]
+  },
+  {
+    "q": "Which header file is required to use `cout` and `cin`?",
+    "o": [
+      "<iostream>",
+      "<stdio.h>",
+      "<string>",
+      "<conio.h>"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to define a class in C++?",
+    "o": [
+      "class",
+      "object",
+      "define",
+      "struct"
+    ]
+  },
+  {
+    "q": "What will this program print?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    double d = 3.14;\n    cout << d;\n    return 0;\n}",
+    "o": [
+      "3.14",
+      "3",
+      "314",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which feature in C++ allows functions with the same name but different parameters?",
+    "o": [
+      "Function Overloading",
+      "Function Templates",
+      "Virtual Functions",
+      "Function Wrapping"
+    ]
+  },
+  {
+    "q": "Which data type is suitable to store 'true' or 'false' values in C++?",
+    "o": [
+      "bool",
+      "int",
+      "char",
+      "string"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    char ch = 'A';\n    cout << (int)ch;\n    return 0;\n}",
+    "o": [
+      "65",
+      "A",
+      "97",
+      "1"
+    ]
+  },
+  {
+    "q": "Which programming paradigm is introduced in C++ compared to C?",
+    "o": [
+      "Object-Oriented Programming",
+      "Functional Programming",
+      "Logical Programming",
+      "Procedural Programming"
+    ]
+  },
+  {
+    "q": "Which of the following statements about C++ input/output is true?",
+    "o": [
+      "`cin` is used for input and `cout` is used for output.",
+      "`cout` is used for input and `cin` is used for output.",
+      "`cin` and `cout` are only available in C.",
+      "`scanf` and `printf` are mandatory in C++."
+    ]
+  },
+  {
+    "q": "Which access specifier allows members of a class to be accessible from outside?",
+    "o": [
+      "public",
+      "private",
+      "protected",
+      "external"
+    ]
+  },
+  {
+    "q": "What will be the output of this C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int val = 1;\n    val += 4;\n    cout << val;\n    return 0;\n}",
+    "o": [
+      "5",
+      "4",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is a benefit of using classes in C++?",
+    "o": [
+      "They allow grouping of related data and functions.",
+      "They speed up execution time.",
+      "They reduce the need for variables.",
+      "They eliminate the need for functions."
+    ]
+  },
+  {
+    "q": "Who is known as the creator of C++?",
+    "o": [
+      "Bjarne Stroustrup",
+      "Dennis Ritchie",
+      "James Gosling",
+      "Guido van Rossum"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int a = 6, b = 4;\n    cout << a * b;\n    return 0;\n}",
+    "o": [
+      "24",
+      "10",
+      "64",
+      "2"
+    ]
+  },
+  {
+    "q": "Which principle of OOP is demonstrated when a child class modifies the behavior of a base class function?",
+    "o": [
+      "Polymorphism",
+      "Encapsulation",
+      "Abstraction",
+      "Association"
+    ]
+  },
+  {
+    "q": "What type of data does the `char` type in C++ represent?",
+    "o": [
+      "A single character",
+      "A string of text",
+      "A boolean value",
+      "A decimal number"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int age;\n    cin >> age;\n    cout << \"Age: \" << age;\n    return 0;\n}",
+    "o": [
+      "Depends on user input",
+      "Syntax error",
+      "Age: ",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of these is NOT a valid feature of C++?",
+    "o": [
+      "Automatic garbage collection",
+      "Function overloading",
+      "Templates",
+      "Operator overloading"
+    ]
+  },
+  {
+    "q": "What is the size of a `bool` type in C++?",
+    "o": [
+      "1 byte",
+      "4 bytes",
+      "2 bytes",
+      "Depends on the system"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the purpose of constructors in C++?",
+    "o": [
+      "To initialize objects when they are created",
+      "To destroy objects after use",
+      "To define public variables",
+      "To overload functions"
+    ]
+  },
+  {
+    "q": "What will this program display?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int a = 10;\n    int b = 5;\n    cout << a - b;\n    return 0;\n}",
+    "o": [
+      "5",
+      "15",
+      "10",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is a key difference between C and C++?",
+    "o": [
+      "C++ supports classes and objects, while C does not.",
+      "C allows function overloading, C++ does not.",
+      "C++ uses `printf` by default.",
+      "C++ doesn't allow pointers."
+    ]
+  },
+  {
+    "q": "What symbol is used in C++ to indicate the scope resolution operator?",
+    "o": [
+      "::",
+      "->",
+      ".",
+      "=>"
+    ]
+  },
+  {
+    "q": "What is the output of the following program?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    cout << \"C++ is powerful!\";\n    return 0;\n}",
+    "o": [
+      "C++ is powerful!",
+      "cout",
+      "Error",
+      "C++"
+    ]
+  },
+  {
+    "q": "Which of the following is a key principle of Object-Oriented Programming?",
+    "o": [
+      "Encapsulation",
+      "Iteration",
+      "Compilation",
+      "Recursion"
+    ]
+  },
+  {
+    "q": "Which C++ data type would you use to store a number like 3.1415?",
+    "o": [
+      "double",
+      "int",
+      "char",
+      "bool"
+    ]
+  },
+  {
+    "q": "What will this C++ code output?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int x = 7;\n    x++;\n    cout << x;\n    return 0;\n}",
+    "o": [
+      "8",
+      "7",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "In which year was C++ officially released as a programming language?",
+    "o": [
+      "1985",
+      "1979",
+      "1991",
+      "1983"
+    ]
+  },
+  {
+    "q": "What is the correct way to read an integer input from the user in C++?",
+    "o": [
+      "cin >> num;",
+      "scanf(\"%d\", &num);",
+      "input(num);",
+      "read(num);"
+    ]
+  },
+  {
+    "q": "Which keyword is used to create a new object from a class in C++?",
+    "o": [
+      "new",
+      "create",
+      "object",
+      "make"
+    ]
+  },
+  {
+    "q": "Which of the following is a characteristic of C but not of C++?",
+    "o": [
+      "It is not object-oriented",
+      "It uses namespaces",
+      "It supports function overloading",
+      "It supports classes"
+    ]
+  },
+  {
+    "q": "What will be printed by the following code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    string name = \"Bob\";\n    cout << \"Hello, \" << name;\n    return 0;\n}",
+    "o": [
+      "Hello, Bob",
+      "name",
+      "Bob",
+      "Hello"
+    ]
+  },
+  {
+    "q": "Which of the following best describes polymorphism in C++?",
+    "o": [
+      "Ability of a function to behave differently based on the context",
+      "Hiding internal implementation details",
+      "Restricting access to data",
+      "Deriving one class from another"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int a = 9;\n    int b = 2;\n    cout << a / b;\n    return 0;\n}",
+    "o": [
+      "4",
+      "4.5",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is used to define a constant value in C++?",
+    "o": [
+      "const",
+      "static",
+      "fixed",
+      "perm"
+    ]
+  },
+  {
+    "q": "Which of these C++ features is not available in C?",
+    "o": [
+      "Classes and objects",
+      "Pointers",
+      "Arrays",
+      "Structures"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    cout << sizeof(char);\n    return 0;\n}",
+    "o": [
+      "1",
+      "4",
+      "2",
+      "8"
+    ]
+  },
+  {
+    "q": "Which OOP principle is focused on restricting direct access to object data?",
+    "o": [
+      "Encapsulation",
+      "Abstraction",
+      "Inheritance",
+      "Polymorphism"
+    ]
+  },
+  {
+    "q": "What is the correct way to write a single-line comment in C++?",
+    "o": [
+      "// This is a comment",
+      "# This is a comment",
+      "/* This is a comment */",
+      "-- This is a comment"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax to declare an integer variable in C++?",
+    "o": [
+      "int x;",
+      "x: int;",
+      "integer x;",
+      "var int x;"
+    ]
+  },
+  {
+    "q": "What will be the output of this C++ program?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    bool test = false;\n    cout << test;\n    return 0;\n}",
+    "o": [
+      "0",
+      "false",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these is the correct order of OOP evolution in C++?",
+    "o": [
+      "C with Classes → C++ → STL",
+      "STL → C with Classes → C++",
+      "C++ → C with Classes → STL",
+      "C → STL → C++"
+    ]
+  },
+  {
+    "q": "What does the term 'C with Classes' refer to?",
+    "o": [
+      "The early version of C++ that added class support to C",
+      "An advanced C tutorial",
+      "A class-based version of C language",
+      "The final version of C"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int a = 3;\n    int b = 2;\n    float result = (float)a / b;\n    cout << result;\n    return 0;\n}",
+    "o": [
+      "1.5",
+      "1",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to inherit a class in C++?",
+    "o": [
+      "public",
+      "extends",
+      "inherits",
+      "base"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to declare a string in C++?",
+    "o": [
+      "string name = \"John\";",
+      "char name = \"John\";",
+      "text name = 'John';",
+      "str name = John;"
+    ]
+  },
+  {
+    "q": "Which feature allows creating multiple functions with the same name but different parameters?",
+    "o": [
+      "Function Overloading",
+      "Encapsulation",
+      "Constructor Inheritance",
+      "Template Instantiation"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    cout << 4 * (2 + 3);\n    return 0;\n}",
+    "o": [
+      "20",
+      "14",
+      "23",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of the following is a fundamental difference between C and C++?",
+    "o": [
+      "C++ supports classes and objects, C does not",
+      "C++ does not support functions",
+      "C has better memory management",
+      "C is used only for operating systems"
+    ]
+  },
+  {
+    "q": "Which of the following concepts refers to hiding complex implementation details?",
+    "o": [
+      "Abstraction",
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int x = 10;\n    if (x > 5) {\n        cout << \"High\";\n    }\n    return 0;\n}",
+    "o": [
+      "High",
+      "10",
+      "5",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is a class in C++?",
+    "o": [
+      "A blueprint for creating objects",
+      "A way to group functions only",
+      "A data type like int or float",
+      "A memory block"
+    ]
+  },
+  {
+    "q": "Which of the following correctly uses the 'endl' manipulator in C++?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    cout << \"Hello\" << endl << \"World\";\n    return 0;\n}",
+    "o": [
+      "Hello\nWorld",
+      "Hello World",
+      "Hello\\nWorld",
+      "HelloendlWorld"
+    ]
+  },
+  {
+    "q": "Which keyword in C++ indicates that a class inherits publicly from another class?",
+    "o": [
+      "public",
+      "base",
+      "extends",
+      "super"
+    ]
+  },
+  {
+    "q": "What will this program output?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    float x = 5.5;\n    int y = (int)x;\n    cout << y;\n    return 0;\n}",
+    "o": [
+      "5",
+      "6",
+      "5.5",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following features is specific to C++ and not present in C?",
+    "o": [
+      "Function overloading",
+      "Pointers",
+      "Preprocessor directives",
+      "Switch-case statements"
+    ]
+  },
+  {
+    "q": "What is the use of `cin` in C++?",
+    "o": [
+      "To take input from the user",
+      "To display output to the console",
+      "To declare a variable",
+      "To define a function"
+    ]
+  },
+  {
+    "q": "Which concept of OOP helps in reusing existing code?",
+    "o": [
+      "Inheritance",
+      "Abstraction",
+      "Polymorphism",
+      "Encapsulation"
+    ]
+  },
+  {
+    "q": "How is a class defined in C++?",
+    "o": [
+      "class MyClass { };",
+      "MyClass class { };",
+      "define class MyClass()",
+      "MyClass = class() { };"
+    ]
+  },
+  {
+    "q": "What does the following code output?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    bool flag = true;\n    cout << flag;\n    return 0;\n}",
+    "o": [
+      "1",
+      "true",
+      "yes",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is **not** a C++ data type?",
+    "o": [
+      "real",
+      "int",
+      "char",
+      "bool"
+    ]
+  },
+  {
+    "q": "What is one of the primary goals behind the creation of C++?",
+    "o": [
+      "To add object-oriented features to C",
+      "To replace assembly language",
+      "To simplify Java",
+      "To create a scripting language"
+    ]
+  },
+  {
+    "q": "Who developed C++?",
+    "o": [
+      "Bjarne Stroustrup",
+      "Dennis Ritchie",
+      "James Gosling",
+      "Guido van Rossum"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    char ch = 'A';\n    cout << (int)ch;\n    return 0;\n}",
+    "o": [
+      "65",
+      "A",
+      "Error",
+      "97"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a class method outside the class in C++?",
+    "o": [
+      "scope resolution operator (::)",
+      "dot operator (.)",
+      "arrow operator (->)",
+      "this pointer"
+    ]
+  },
+  {
+    "q": "Which of the following is not a feature of OOP in C++?",
+    "o": [
+      "Preprocessor macros",
+      "Inheritance",
+      "Polymorphism",
+      "Encapsulation"
+    ]
+  },
+  {
+    "q": "What is the size of a 'bool' type in C++ (in most systems)?",
+    "o": [
+      "1 byte",
+      "2 bytes",
+      "4 bytes",
+      "8 bytes"
+    ]
+  },
+  {
+    "q": "Which line correctly declares an object of a class named 'Student'?",
+    "o": [
+      "Student s1;",
+      "s1 = new Student();",
+      "object Student s1;",
+      "Student = s1();"
+    ]
+  },
+  {
+    "q": "What will this program print?",
+    "c": "#include <iostream>\nusing namespace std;\nclass Demo {\npublic:\n    Demo() {\n        cout << \"Constructor called\";\n    }\n};\nint main() {\n    Demo obj;\n    return 0;\n}",
+    "o": [
+      "Constructor called",
+      "Demo",
+      "Error",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which concept allows multiple classes to be derived from a single base class?",
+    "o": [
+      "Inheritance",
+      "Polymorphism",
+      "Encapsulation",
+      "Abstraction"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\nint main() {\n    int x = 10;\n    int y = 3;\n    cout << x % y;\n    return 0;\n}",
+    "o": [
+      "1",
+      "3",
+      "0",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of the following is true about C++?",
+    "o": [
+      "It is a superset of C with object-oriented features",
+      "It completely replaces C",
+      "It does not support low-level memory manipulation",
+      "It was developed after Java"
+    ]
+  },
+  {
+    "q": "Who developed the C++ programming language and in which year?",
+    "o": [
+      "Bjarne Stroustrup, 1983",
+      "Dennis Ritchie, 1972",
+      "James Gosling, 1995",
+      "Guido van Rossum, 1991"
+    ]
+  },
+  {
+    "q": "What will be the output of the following C++ code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 10;\n    cout << x;\n    return 0;\n}",
+    "o": [
+      "10",
+      "x",
+      "0",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly takes user input in C++?",
+    "o": [
+      "cin >> variable;",
+      "input(variable);",
+      "scanf(\"%d\", &variable);",
+      "System.in.read(variable);"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    float a = 3.14;\n    cout << a;\n    return 0;\n}",
+    "o": [
+      "3.14",
+      "3",
+      "14",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following is not a fundamental concept of Object-Oriented Programming?",
+    "o": [
+      "Compilation",
+      "Encapsulation",
+      "Polymorphism",
+      "Inheritance"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid class definition in C++?",
+    "c": "class Car {\npublic:\n    void drive() {\n        cout << \"Driving\";\n    }\n};",
+    "o": [
+      "class Car {\npublic:\n    void drive() {\n        cout << \"Driving\";\n    }\n};",
+      "class Car()\npublic:\n    drive() {\n        print(\"Driving\");\n    }",
+      "Car class {\nfunction drive() {\n    print(\"Driving\");\n}}",
+      "define class Car {\n    drive() {\n        cout << \"Driving\";\n    }\n}"
+    ]
+  },
+  {
+    "q": "Which of the following is a major difference between C and C++?",
+    "o": [
+      "C++ supports object-oriented programming, while C does not",
+      "C++ is compiled while C is interpreted",
+      "C++ cannot use pointers, whereas C can",
+      "C++ is used only for web development"
+    ]
+  },
+  {
+    "q": "Which of the following best describes encapsulation?",
+    "o": [
+      "Wrapping data and functions into a single unit",
+      "Using functions without defining them",
+      "Inheritance of properties from base class",
+      "Creating multiple objects from a class"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass MyClass {\npublic:\n    void greet() {\n        cout << \"Hello from class!\";\n    }\n};\n\nint main() {\n    MyClass obj;\n    obj.greet();\n    return 0;\n}",
+    "o": [
+      "Hello from class!",
+      "Hello class",
+      "obj.greet",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which data type is used to store a single character in C++?",
+    "o": [
+      "char",
+      "string",
+      "character",
+      "text"
+    ]
+  },
+  {
+    "q": "Which feature was introduced in C++ that is not present in C?",
+    "o": [
+      "Classes and Objects",
+      "Pointers",
+      "Functions",
+      "Arrays"
+    ]
+  },
+  {
+    "q": "What will be the output of the following C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int a = 5, b = 2;\n    cout << a / b;\n    return 0;\n}",
+    "o": [
+      "2",
+      "2.5",
+      "5",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to declare a float variable in C++?",
+    "o": [
+      "float num = 3.14;",
+      "float = 3.14 num;",
+      "num float = 3.14;",
+      "float: num = 3.14"
+    ]
+  },
+  {
+    "q": "What does the term 'Polymorphism' mean in OOP?",
+    "o": [
+      "Ability of an object to take many forms",
+      "Hiding internal details",
+      "Deriving a new class from an existing one",
+      "Binding data and methods"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello\" << endl << \"World\";\n    return 0;\n}",
+    "o": [
+      "Hello\nWorld",
+      "Hello World",
+      "World Hello",
+      "HelloWorld"
+    ]
+  },
+  {
+    "q": "Which of the following is not a valid data type in C++?",
+    "o": [
+      "real",
+      "int",
+      "char",
+      "bool"
+    ]
+  },
+  {
+    "q": "What keyword is used to define a class in C++?",
+    "o": [
+      "class",
+      "Class",
+      "define",
+      "object"
+    ]
+  },
+  {
+    "q": "Which of the following code snippets correctly creates an object of a class?",
+    "c": "class Student {\npublic:\n    void show() {\n        cout << \"Student\";\n    }\n};\n\nint main() {\n    Student s;\n    s.show();\n    return 0;\n}",
+    "o": [
+      "Student s;",
+      "Student->s;",
+      "object s = Student();",
+      "Student = s();"
+    ]
+  },
+  {
+    "q": "Which principle of OOP means restricting access to internal object details?",
+    "o": [
+      "Encapsulation",
+      "Abstraction",
+      "Inheritance",
+      "Polymorphism"
+    ]
+  },
+  {
+    "q": "Which syntax is correct to include a header file in C++?",
+    "o": [
+      "#include <iostream>",
+      "include <iostream>",
+      "#import <iostream>",
+      "using <iostream>"
+    ]
+  },
+  {
+    "q": "Which of the following was the original name of C++ during its early development?",
+    "o": [
+      "C with Classes",
+      "Object C",
+      "C++ Builder",
+      "New C"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    bool flag = true;\n    cout << flag;\n    return 0;\n}",
+    "o": [
+      "1",
+      "true",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which one of the following input/output methods is preferred in C++ over C?",
+    "o": [
+      "cin and cout",
+      "printf and scanf",
+      "System.out.println",
+      "input() and print()"
+    ]
+  },
+  {
+    "q": "Which concept of OOP helps in reducing code duplication by reusing code?",
+    "o": [
+      "Inheritance",
+      "Polymorphism",
+      "Encapsulation",
+      "Abstraction"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    char letter = 'A';\n    cout << int(letter);\n    return 0;\n}",
+    "o": [
+      "65",
+      "A",
+      "'A'",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a primitive data type in C++?",
+    "o": [
+      "string",
+      "int",
+      "char",
+      "float"
+    ]
+  },
+  {
+    "q": "Which of the following statements about C and C++ is true?",
+    "o": [
+      "C++ supports both procedural and object-oriented programming, while C supports only procedural",
+      "C++ was developed before C",
+      "C++ cannot use pointers",
+      "C supports classes, while C++ does not"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'public' keyword in a class?",
+    "o": [
+      "To make class members accessible from outside the class",
+      "To protect class members from modification",
+      "To define the return type of a function",
+      "To declare a class constant"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int a = 5;\n    float b = 2.5;\n    cout << a + b;\n    return 0;\n}",
+    "o": [
+      "7.5",
+      "7",
+      "2.5",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about 'abstraction' in OOP?",
+    "o": [
+      "It hides complex implementation details and shows only the necessary features",
+      "It binds data and methods together",
+      "It allows functions with the same name to act differently",
+      "It prevents inheritance in derived classes"
+    ]
+  },
+  {
+    "q": "Who is the creator of the C++ programming language?",
+    "o": [
+      "Bjarne Stroustrup",
+      "Dennis Ritchie",
+      "James Gosling",
+      "Guido van Rossum"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    string name = \"C++\";\n    cout << \"Hello \" << name;\n    return 0;\n}",
+    "o": [
+      "Hello C++",
+      "C++ Hello",
+      "Hello",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a user-defined data type in C++?",
+    "o": [
+      "class",
+      "float",
+      "bool",
+      "double"
+    ]
+  },
+  {
+    "q": "Which of these is not present in C but is in C++?",
+    "o": [
+      "Function overloading",
+      "Structures",
+      "Pointers",
+      "Loops"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 10;\n    cout << x++ << \" \" << ++x;\n    return 0;\n}",
+    "o": [
+      "10 12",
+      "10 11",
+      "11 12",
+      "11 11"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to inherit a class in C++?",
+    "o": [
+      "public",
+      "inherit",
+      "extends",
+      "inherits"
+    ]
+  },
+  {
+    "q": "Which operator is used for output in C++?",
+    "o": [
+      "<<",
+      ">>",
+      "::",
+      "**"
+    ]
+  },
+  {
+    "q": "Which principle of OOP enables objects to behave differently based on context?",
+    "o": [
+      "Polymorphism",
+      "Abstraction",
+      "Encapsulation",
+      "Composition"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int a = 5;\n    int b = 3;\n    cout << (a > b);\n    return 0;\n}",
+    "o": [
+      "1",
+      "true",
+      "false",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is used to define constants in C++?",
+    "o": [
+      "const",
+      "define",
+      "final",
+      "static"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    double x = 5.75;\n    cout << (int)x;\n    return 0;\n}",
+    "o": [
+      "5",
+      "5.75",
+      "6",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which feature in C++ allows you to use the same function name with different parameters?",
+    "o": [
+      "Function Overloading",
+      "Inheritance",
+      "Encapsulation",
+      "Pointer Arithmetic"
+    ]
+  },
+  {
+    "q": "What will be the output of this C++ program?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"C++ is powerful!\";\n    return 0;\n}",
+    "o": [
+      "C++ is powerful!",
+      "C++ is powerful",
+      "powerful!",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following best defines Encapsulation in OOP?",
+    "o": [
+      "Binding data and functions that operate on it into a single unit",
+      "Creating multiple forms of a method",
+      "Deriving new classes from existing ones",
+      "Hiding the internal structure of an object"
+    ]
+  },
+  {
+    "q": "Which of the following C++ types is used to store a single character?",
+    "o": [
+      "char",
+      "int",
+      "string",
+      "float"
+    ]
+  },
+  {
+    "q": "Which of the following is a major enhancement in C++ compared to C?",
+    "o": [
+      "Support for classes and objects",
+      "Use of loops",
+      "Header file inclusion",
+      "Pointer arithmetic"
+    ]
+  },
+  {
+    "q": "Which line correctly declares an integer variable in C++?",
+    "o": [
+      "int number = 10;",
+      "integer number = 10;",
+      "num = 10;",
+      "int: number = 10;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int a = 2, b = 3;\n    cout << a * b;\n    return 0;\n}",
+    "o": [
+      "6",
+      "5",
+      "2",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "In C++, 'cin' is used for:",
+    "o": [
+      "Taking input from the user",
+      "Displaying output",
+      "Declaring variables",
+      "Compiling code"
+    ]
+  },
+  {
+    "q": "Which of the following was added in C++ to support object-oriented programming?",
+    "o": [
+      "Classes",
+      "Loops",
+      "Pointers",
+      "Preprocessors"
+    ]
+  },
+  {
+    "q": "Which of the following is considered the birth year of C++?",
+    "o": [
+      "1983",
+      "1972",
+      "1991",
+      "2000"
+    ]
+  },
+  {
+    "q": "What will be the output of the following program?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int num = 20;\n    cout << \"Number: \" << num;\n    return 0;\n}",
+    "o": [
+      "Number: 20",
+      "20",
+      "num",
+      "Number = 20"
+    ]
+  },
+  {
+    "q": "Which of the following best defines the principle of Abstraction in OOP?",
+    "o": [
+      "Hiding complex implementation details and showing only essential features",
+      "Binding data and methods together",
+      "Using one name for multiple methods",
+      "Deriving new classes"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid declaration of a float variable in C++?",
+    "o": [
+      "float temp = 36.6;",
+      "float = temp 36.6;",
+      "float temp : 36.6;",
+      "float temp 36.6"
+    ]
+  },
+  {
+    "q": "What is the main difference between C and C++?",
+    "o": [
+      "C++ supports object-oriented programming; C does not",
+      "C++ does not support pointers; C does",
+      "C++ is interpreted; C is compiled",
+      "C++ is older than C"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int a = 4, b = 5;\n    cout << a + b;\n    return 0;\n}",
+    "o": [
+      "9",
+      "20",
+      "45",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which C++ keyword is used to create an object from a class?",
+    "o": [
+      "new",
+      "create",
+      "object",
+      "instance"
+    ]
+  },
+  {
+    "q": "Which stream is used for output in C++?",
+    "o": [
+      "cout",
+      "cin",
+      "print",
+      "output"
+    ]
+  },
+  {
+    "q": "What will be the output of this C++ snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    bool flag = true;\n    cout << flag;\n    return 0;\n}",
+    "o": [
+      "1",
+      "true",
+      "yes",
+      "on"
+    ]
+  },
+  {
+    "q": "Which of the following describes Inheritance in OOP?",
+    "o": [
+      "Creating a new class from an existing class",
+      "Hiding unnecessary details",
+      "Defining multiple forms of a function",
+      "Restricting access to members"
+    ]
+  },
+  {
+    "q": "Which of the following was the original name of C++?",
+    "o": [
+      "C with Classes",
+      "C#",
+      "Object-C",
+      "B++"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    char ch = 'A';\n    cout << (int)ch;\n    return 0;\n}",
+    "o": [
+      "65",
+      "A",
+      "'A'",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly describes Polymorphism in OOP?",
+    "o": [
+      "Ability of one function or operator to behave differently based on context",
+      "Ability to hide data members from outside access",
+      "Defining a new class from an existing one",
+      "Splitting programs into multiple files"
+    ]
+  },
+  {
+    "q": "Which of the following is a user-defined data type in C++?",
+    "o": [
+      "class",
+      "int",
+      "float",
+      "bool"
+    ]
+  },
+  {
+    "q": "How does C++ differ from C?",
+    "o": [
+      "C++ supports classes and objects, C does not",
+      "C++ does not support pointers, C does",
+      "C++ is a scripting language, C is compiled",
+      "C++ has no main function"
+    ]
+  },
+  {
+    "q": "What is the output of this C++ code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    string name = \"John\";\n    cout << \"Hello \" << name;\n    return 0;\n}",
+    "o": [
+      "Hello John",
+      "Hello",
+      "John",
+      "Hello name"
+    ]
+  },
+  {
+    "q": "Which of these is an access specifier in C++?",
+    "o": [
+      "private",
+      "hidden",
+      "sealed",
+      "closed"
+    ]
+  },
+  {
+    "q": "What data type would you use to store a true or false value in C++?",
+    "o": [
+      "bool",
+      "char",
+      "int",
+      "flag"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int a = 10, b = 3;\n    cout << a / b;\n    return 0;\n}",
+    "o": [
+      "3",
+      "3.3",
+      "3.33",
+      "0"
+    ]
+  },
+  {
+    "q": "Which C++ principle promotes wrapping code and data into a single unit?",
+    "o": [
+      "Encapsulation",
+      "Abstraction",
+      "Polymorphism",
+      "Overloading"
+    ]
+  },
+  {
+    "q": "Who developed C++?",
+    "o": [
+      "Bjarne Stroustrup",
+      "Dennis Ritchie",
+      "James Gosling",
+      "Guido van Rossum"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int age = 25;\n    cout << \"Age: \" << age << endl;\n    return 0;\n}",
+    "o": [
+      "Age: 25",
+      "25: Age",
+      "Age = 25",
+      "age"
+    ]
+  },
+  {
+    "q": "Which feature of C++ allows the same function name to operate on different types?",
+    "o": [
+      "Function overloading",
+      "Inheritance",
+      "Encapsulation",
+      "Data abstraction"
+    ]
+  },
+  {
+    "q": "What is the default access specifier for class members in C++?",
+    "o": [
+      "private",
+      "public",
+      "protected",
+      "internal"
+    ]
+  },
+  {
+    "q": "Which of these is not a primitive data type in C++?",
+    "o": [
+      "string",
+      "int",
+      "float",
+      "char"
+    ]
+  },
+  {
+    "q": "How do you take integer input from the user in C++?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int num;\n    cin >> num;\n    cout << num;\n    return 0;\n}",
+    "o": [
+      "Using cin",
+      "Using scanf",
+      "Using input()",
+      "Using get()"
+    ]
+  },
+  {
+    "q": "What is one major improvement C++ brought over C?",
+    "o": [
+      "Object-oriented programming",
+      "Support for only structured programming",
+      "Elimination of header files",
+      "Removal of pointers"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a class in C++?",
+    "o": [
+      "class",
+      "object",
+      "define",
+      "type"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    float pi = 3.14;\n    cout << \"Value: \" << pi;\n    return 0;\n}",
+    "o": [
+      "Value: 3.14",
+      "3.14",
+      "pi = 3.14",
+      "value"
+    ]
+  },
+  {
+    "q": "Which of the following best explains Inheritance in OOP?",
+    "o": [
+      "Reusing properties of one class in another",
+      "Hiding unnecessary details",
+      "Overloading methods with different signatures",
+      "Creating private classes"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to define a constant in C++?",
+    "o": [
+      "const",
+      "constant",
+      "#define",
+      "let"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 4, y = 7;\n    cout << x * y;\n    return 0;\n}",
+    "o": [
+      "28",
+      "11",
+      "47",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following describes 'Encapsulation' in OOP?",
+    "o": [
+      "Binding data and functions together",
+      "Deriving one class from another",
+      "Having multiple forms of a function",
+      "Hiding base class implementation"
+    ]
+  },
+  {
+    "q": "Which of these is used to include a header file in C++?",
+    "o": [
+      "#include",
+      "import",
+      "#import",
+      "include()"
+    ]
+  },
+  {
+    "q": "What is the output of this C++ program?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    bool flag = true;\n    cout << flag;\n    return 0;\n}",
+    "o": [
+      "1",
+      "true",
+      "True",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following statements about C and C++ is true?",
+    "o": [
+      "C++ supports both procedural and object-oriented programming",
+      "C++ is only object-oriented",
+      "C++ does not support pointers like C",
+      "C and C++ have identical syntax for everything"
+    ]
+  },
+  {
+    "q": "Which data type is used to store a single character in C++?",
+    "o": [
+      "char",
+      "string",
+      "text",
+      "character"
+    ]
+  },
+  {
+    "q": "Which principle of OOP focuses on exposing only essential features?",
+    "o": [
+      "Abstraction",
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism"
+    ]
+  },
+  {
+    "q": "What will be the result of this code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int a = 5;\n    a += 3;\n    cout << a;\n    return 0;\n}",
+    "o": [
+      "8",
+      "5",
+      "3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following was introduced in C++ but not available in C?",
+    "o": [
+      "Classes",
+      "Pointers",
+      "Functions",
+      "Structures"
+    ]
+  },
+  {
+    "q": "Which year did Bjarne Stroustrup begin working on C++?",
+    "o": [
+      "1979",
+      "1989",
+      "1969",
+      "1995"
+    ]
+  },
+  {
+    "q": "What will be the output of the following program?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello\" << \" World\";\n    return 0;\n}",
+    "o": [
+      "Hello World",
+      "HelloWorld",
+      "Hello",
+      "World"
+    ]
+  },
+  {
+    "q": "Which feature of C++ is demonstrated when a derived class inherits properties of a base class?",
+    "o": [
+      "Inheritance",
+      "Polymorphism",
+      "Encapsulation",
+      "Abstraction"
+    ]
+  },
+  {
+    "q": "Which of the following is not a valid C++ data type?",
+    "o": [
+      "real",
+      "int",
+      "double",
+      "bool"
+    ]
+  },
+  {
+    "q": "How is a single-line comment written in C++?",
+    "o": [
+      "// comment",
+      "# comment",
+      "/* comment */",
+      "<!-- comment -->"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int a = 10;\n    float b = 2.5;\n    cout << a + b;\n    return 0;\n}",
+    "o": [
+      "12.5",
+      "10",
+      "2.5",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which OOP concept refers to using the same function name with different parameters?",
+    "o": [
+      "Function Overloading",
+      "Encapsulation",
+      "Inheritance",
+      "Constructor Chaining"
+    ]
+  },
+  {
+    "q": "Which function is used for input in C++?",
+    "o": [
+      "cin",
+      "scanf",
+      "input",
+      "read"
+    ]
+  },
+  {
+    "q": "Which of the following is a key difference between C and C++?",
+    "o": [
+      "C++ supports classes and objects; C does not",
+      "C supports function overloading; C++ does not",
+      "C++ does not support pointers; C does",
+      "C supports OOP natively"
+    ]
+  },
+  {
+    "q": "Which principle of OOP binds together code and the data it manipulates?",
+    "o": [
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism",
+      "Recursion"
+    ]
+  },
+  {
+    "q": "Who developed C++?",
+    "o": [
+      "Bjarne Stroustrup",
+      "Dennis Ritchie",
+      "James Gosling",
+      "Guido van Rossum"
+    ]
+  },
+  {
+    "q": "What will be the output of this code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int a = 2;\n    int b = 3;\n    cout << a << b;\n    return 0;\n}",
+    "o": [
+      "23",
+      "5",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is not a basic data type in C++?",
+    "o": [
+      "string",
+      "int",
+      "char",
+      "float"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << sizeof(double);\n    return 0;\n}",
+    "o": [
+      "8",
+      "4",
+      "2",
+      "16"
+    ]
+  },
+  {
+    "q": "Which of the following is used to define a class in C++?",
+    "o": [
+      "class",
+      "define",
+      "struct",
+      "object"
+    ]
+  },
+  {
+    "q": "Which of the following best defines polymorphism?",
+    "o": [
+      "Same function behaving differently based on context",
+      "Creating a class from another class",
+      "Wrapping data into a single unit",
+      "Hiding implementation details"
+    ]
+  },
+  {
+    "q": "Which of these is used for output in C++?",
+    "o": [
+      "cout",
+      "output()",
+      "write",
+      "display"
+    ]
+  },
+  {
+    "q": "How does C++ handle function overloading compared to C?",
+    "o": [
+      "C++ supports function overloading; C does not",
+      "C supports function overloading; C++ does not",
+      "Both support it",
+      "Neither supports it"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    void show() { cout << \"Base\"; }\n};\n\nint main() {\n    A obj;\n    obj.show();\n    return 0;\n}",
+    "o": [
+      "Base",
+      "Derived",
+      "Object",
+      "Show"
+    ]
+  },
+  {
+    "q": "Which C++ feature hides the internal implementation and shows only functionality?",
+    "o": [
+      "Abstraction",
+      "Encapsulation",
+      "Inheritance",
+      "Overloading"
+    ]
+  },
+  {
+    "q": "Which of the following is a key reason C++ was developed?",
+    "o": [
+      "To add object-oriented features to C",
+      "To replace Python",
+      "To simplify HTML syntax",
+      "To improve Java performance"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 7;\n    cout << x * 2;\n    return 0;\n}",
+    "o": [
+      "14",
+      "9",
+      "7",
+      "21"
+    ]
+  },
+  {
+    "q": "Which keyword is used to create an object of a class in C++?",
+    "o": [
+      "new",
+      "create",
+      "object",
+      "this"
+    ]
+  },
+  {
+    "q": "Which of these data types is used to store a single character?",
+    "o": [
+      "char",
+      "int",
+      "string",
+      "bool"
+    ]
+  },
+  {
+    "q": "How do you take integer input from the user in C++?",
+    "o": [
+      "cin >> variable;",
+      "input(variable);",
+      "scanf(\"%d\", &variable);",
+      "read(variable);"
+    ]
+  },
+  {
+    "q": "What concept allows a class to reuse properties of another class?",
+    "o": [
+      "Inheritance",
+      "Encapsulation",
+      "Abstraction",
+      "Overloading"
+    ]
+  },
+  {
+    "q": "Which of these features is exclusive to C++ and not available in C?",
+    "o": [
+      "Class and Objects",
+      "Pointers",
+      "Structures",
+      "Loops"
+    ]
+  },
+  {
+    "q": "What will be the output of this program?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    string name = \"C++\";\n    cout << \"Learning \" << name;\n    return 0;\n}",
+    "o": [
+      "Learning C++",
+      "C++",
+      "Learning",
+      "C"
+    ]
+  },
+  {
+    "q": "Which OOP principle focuses on bundling data and functions into one unit?",
+    "o": [
+      "Encapsulation",
+      "Inheritance",
+      "Polymorphism",
+      "Virtualization"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to declare a class in C++?",
+    "o": [
+      "class MyClass { };",
+      "MyClass class() { };",
+      "class: MyClass { };",
+      "def MyClass { };"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about C++?",
+    "o": [
+      "C++ supports both procedural and object-oriented programming",
+      "C++ is only an object-oriented language",
+      "C++ is a purely functional language",
+      "C++ was developed before C"
+    ]
+  },
+  {
+    "q": "What will be the output of this C++ program?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    float x = 5.5;\n    int y = 2;\n    cout << x / y;\n    return 0;\n}",
+    "o": [
+      "2.75",
+      "2",
+      "3",
+      "5"
+    ]
+  },
+  {
+    "q": "Which header is necessary for using `cin` and `cout`?",
+    "o": [
+      "<iostream>",
+      "<inputoutput>",
+      "<stream>",
+      "<stdio.h>"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a feature of C?",
+    "o": [
+      "Classes and Objects",
+      "Pointers",
+      "Functions",
+      "Structures"
+    ]
+  },
+  {
+    "q": "Which keyword is used to inherit a class in C++?",
+    "o": [
+      "public",
+      "extends",
+      "inherits",
+      "base"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    bool isReady = true;\n    cout << isReady;\n    return 0;\n}",
+    "o": [
+      "1",
+      "true",
+      "Yes",
+      "Ready"
+    ]
+  },
+  {
+    "q": "Which principle of OOP allows objects of different classes to respond differently to the same function call?",
+    "o": [
+      "Polymorphism",
+      "Abstraction",
+      "Encapsulation",
+      "Inheritance"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid variable declaration in C++?",
+    "o": [
+      "int number = 10;",
+      "int = 10 number;",
+      "number int = 10;",
+      "10 = int number;"
+    ]
+  },
+  {
+    "q": "Which of the following shows how to write a comment in C++?",
+    "o": [
+      "// This is a comment",
+      "# This is a comment",
+      "/* This is a comment */",
+      "' This is a comment"
+    ]
+  },
+  {
+    "q": "How is C++ different from C?",
+    "o": [
+      "C++ supports OOP while C does not",
+      "C++ does not support pointers",
+      "C++ is only used for game development",
+      "C++ is a scripting language"
+    ]
+  },
+  {
+    "q": "Who developed C++ and in which year?",
+    "o": [
+      "Bjarne Stroustrup in 1979",
+      "Dennis Ritchie in 1972",
+      "James Gosling in 1995",
+      "Guido van Rossum in 1991"
+    ]
+  },
+  {
+    "q": "What will be the output of this C++ code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int a = 3, b = 4;\n    cout << a + b * 2;\n    return 0;\n}",
+    "o": [
+      "11",
+      "14",
+      "10",
+      "7"
+    ]
+  },
+  {
+    "q": "Which of the following is a basic building block of object-oriented programming in C++?",
+    "o": [
+      "Class",
+      "Function",
+      "Header",
+      "Array"
+    ]
+  },
+  {
+    "q": "How do you print text to the console in C++?",
+    "o": [
+      "cout << \"Hello\";",
+      "print(\"Hello\")",
+      "System.out.println(\"Hello\");",
+      "echo \"Hello\";"
+    ]
+  },
+  {
+    "q": "Which of these is not a fundamental data type in C++?",
+    "o": [
+      "string",
+      "int",
+      "float",
+      "char"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int a = 5;\n    int b = ++a;\n    cout << b;\n    return 0;\n}",
+    "o": [
+      "6",
+      "5",
+      "7",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which principle of OOP helps hide internal implementation details from the user?",
+    "o": [
+      "Abstraction",
+      "Inheritance",
+      "Polymorphism",
+      "Constructor"
+    ]
+  },
+  {
+    "q": "Which C++ feature allows functions to have the same name but different parameters?",
+    "o": [
+      "Function Overloading",
+      "Function Chaining",
+      "Function Binding",
+      "Function Pointers"
+    ]
+  },
+  {
+    "q": "How do you read a value from user input in C++?",
+    "o": [
+      "cin >> variable;",
+      "scanf(\"%d\", &variable);",
+      "read(variable);",
+      "input(variable);"
+    ]
+  },
+  {
+    "q": "Which of the following is used to define a class method outside the class in C++?",
+    "o": [
+      "Scope resolution operator ::",
+      "Arrow operator ->",
+      "Dot operator .",
+      "Colon operator :"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the origin of C++?",
+    "o": [
+      "It was developed as an extension of C to support object-oriented programming",
+      "It was developed to replace Java",
+      "It is based on Python and Java",
+      "It was developed from scratch with no relation to C"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 10;\n    int y = 3;\n    cout << x % y;\n    return 0;\n}",
+    "o": [
+      "1",
+      "3",
+      "0",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of the following is a key feature that differentiates C++ from C?",
+    "o": [
+      "Support for classes and objects",
+      "Support for arrays",
+      "Use of header files",
+      "Support for loops"
+    ]
+  },
+  {
+    "q": "Which data type in C++ is used to store a single character?",
+    "o": [
+      "char",
+      "string",
+      "character",
+      "text"
+    ]
+  },
+  {
+    "q": "What is encapsulation in C++?",
+    "o": [
+      "Wrapping data and methods into a single unit",
+      "Inheriting properties from a base class",
+      "Having multiple functions with the same name",
+      "Hiding the code in macros"
+    ]
+  },
+  {
+    "q": "What will be the output of this program?",
+    "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    double pi = 3.14;\n    int radius = 2;\n    cout << pi * radius * radius;\n    return 0;\n}",
+    "o": [
+      "12.56",
+      "6.28",
+      "3.14",
+      "4"
+    ]
+  },
+  {
+    "q": "What is the default access specifier for class members in C++?",
+    "o": [
+      "private",
+      "public",
+      "protected",
+      "internal"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid syntax to define a class in C++?",
+    "o": [
+      "class MyClass { };",
+      "MyClass() { };",
+      "class: MyClass() { };",
+      "define MyClass() { };"
+    ]
+  },
+  {
+    "q": "Which of the following is true about `cin` in C++?",
+    "o": [
+      "`cin` is used for input from the keyboard",
+      "`cin` is used for file input",
+      "`cin` is a user-defined variable",
+      "`cin` is used only in C"
+    ]
+  },
+  {
+    "q": "Which concept allows a class to have more than one function with the same name?",
+    "o": [
+      "Function Overloading",
+      "Encapsulation",
+      "Data Hiding",
+      "Inheritance"
+    ]
+  }
+]

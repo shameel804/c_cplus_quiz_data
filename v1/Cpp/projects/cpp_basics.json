@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Hello World in C++",
+    "ques": "Write a simple C++ program that prints 'Hello, World!' to the console, demonstrating the basic syntax and structure of a C++ program introduced by Bjarne Stroustrup in the 1980s.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nint main() {\n    std::cout << \"Hello, World!\" << std::endl;\n    return 0;\n}"
+    },
+    "explanation": "This program showcases the basic syntax of C++, which evolved from C with object-oriented features.\n- ***#include <iostream>***: Includes the input/output stream library, a standard part of C++ for console I/O.\n- ***int main()***: The entry point of every C++ program, where execution begins.\n- ***std::cout << \"Hello, World!\" << std::endl;***: Uses the ```cout``` object from the ```std``` namespace to print 'Hello, World!' followed by a newline (```std::endl```).\n- ***return 0;***: Indicates successful program completion, a convention carried over from C."
+  },
+  {
+    "title": "Variable Types Demo",
+    "ques": "Create a C++ program that declares variables of different data types (integer, float, character) and takes user input to assign values to them, then displays the values.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\nint main() {\n    int age;\n    float height;\n    char initial;\n    cout << \"Enter your age: \";\n    cin >> age;\n    cout << \"Enter your height (in meters): \";\n    cin >> height;\n    cout << \"Enter your first initial: \";\n    cin >> initial;\n    cout << \"Age: \" << age << \", Height: \" << height << \", Initial: \" << initial << endl;\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates C++ data types and I/O operations.\n- ***#include <iostream>***: Includes the I/O library.\n- ***using namespace std;***: Allows use of ```cout``` and ```cin``` without the ```std::``` prefix.\n- ***int age; float height; char initial;***: Declares an integer, floating-point, and character variable.\n- ***cout << \"Enter your age: \"; cin >> age;***: Prompts the user and reads an integer into ```age``` using ```cin```.\n- Similar input operations occur for ```height``` and ```initial```.\n- ***cout << \"Age: \" << ... << endl;***: Outputs all variables with labels, separated by commas, and ends with a newline."
+  },
+  {
+    "title": "C vs C++ String Handling",
+    "ques": "Write a C++ program that highlights a key difference from C by using the C++ string class instead of C-style character arrays to concatenate and display two user-input words.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <string>\nusing namespace std;\nint main() {\n    string word1, word2;\n    cout << \"Enter first word: \";\n    cin >> word1;\n    cout << \"Enter second word: \";\n    cin >> word2;\n    string combined = word1 + word2;\n    cout << \"Combined: \" << combined << endl;\n    return 0;\n}"
+    },
+    "explanation": "This program illustrates a major difference between C and C++ in string handling.\n- ***#include <string>***: Includes the C++ string library, unavailable in standard C.\n- ***string word1, word2;***: Declares variables using the C++ ```string``` class, unlike C’s ```char[]```.\n- ***cin >> word1;***: Reads a word into ```word1``` without needing to specify size, unlike C’s ```scanf```.\n- ***string combined = word1 + word2;***: Uses the ```+``` operator to concatenate strings, a feature absent in C (which requires functions like ```strcat```).\n- ***cout << \"Combined: \" << combined << endl;***: Displays the result, leveraging C++’s streamlined I/O."
+  },
+  {
+    "title": "OOP Class Example",
+    "ques": "Develop a C++ program that demonstrates the principle of encapsulation in OOP by creating a 'Rectangle' class with private attributes for length and width, and public methods to set values and calculate the area.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\nclass Rectangle {\nprivate:\n    float length;\n    float width;\npublic:\n    void setDimensions(float l, float w) {\n        length = l;\n        width = w;\n    }\n    float getArea() {\n        return length * width;\n    }\n};\nint main() {\n    Rectangle rect;\n    rect.setDimensions(5.0, 3.0);\n    cout << \"Area of rectangle: \" << rect.getArea() << endl;\n    return 0;\n}"
+    },
+    "explanation": "This program showcases OOP encapsulation in C++.\n- ***class Rectangle { ... };***: Defines a class, a core OOP feature added to C++.\n- ***private: float length; float width;***: Declares private attributes, inaccessible directly from outside the class, enforcing encapsulation.\n- ***public: void setDimensions(float l, float w) { ... }***: A public method to set private attributes, controlling access.\n- ***float getArea() { return length * width; }***: A public method to compute and return the area, hiding the calculation details.\n- ***Rectangle rect; rect.setDimensions(5.0, 3.0);***: Creates an object and uses the method to set values.\n- ***cout << rect.getArea() << endl;***: Calls ```getArea()``` to display the result, demonstrating controlled access to private data."
+  },
+  {
+    "title": "C++ Comment Styles",
+    "ques": "Write a C++ program that demonstrates both single-line and multi-line comment styles, reflecting the evolution of C++ syntax from C, and prints a brief history statement about C++’s creation.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\nint main() {\n    // Single-line comment: C++ was developed by Bjarne Stroustrup in 1979\n    cout << \"C++ started as C with classes.\" << endl;\n    /* Multi-line comment:\n       It was renamed C++ in 1983,\n       symbolizing an increment over C */\n    cout << \"Official C++ came in 1983.\" << endl;\n    return 0;\n}"
+    },
+    "explanation": "This program highlights C++’s comment syntax and a brief history.\n- ***// Single-line comment***: Uses ```//```, inherited from C++’s evolution, for a single-line note about its origin.\n- ***cout << \"C++ started as C with classes.\" << endl;***: Prints a fact about C++’s early name, using basic output syntax.\n- ***/* Multi-line comment */***: Uses ```/* */```, a style from C, to span multiple lines about the renaming.\n- ***cout << \"Official C++ came in 1983.\" << endl;***: Outputs another historical fact.\n- ***return 0;***: Ends the program, a standard practice."
+  },
+  {
+    "title": "Type Casting Input",
+    "ques": "Create a C++ program that takes a floating-point number as input, casts it to an integer, and displays both values to illustrate data type conversion and I/O operations.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\nint main() {\n    float floatNum;\n    cout << \"Enter a decimal number: \";\n    cin >> floatNum;\n    int intNum = static_cast<int>(floatNum);\n    cout << \"Original (float): \" << floatNum << endl;\n    cout << \"Casted (int): \" << intNum << endl;\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates data type casting and I/O.\n- ***float floatNum;***: Declares a float variable to store a decimal input.\n- ***cout << \"Enter a decimal number: \"; cin >> floatNum;***: Prompts and reads a float from the user.\n- ***int intNum = static_cast<int>(floatNum);***: Uses C++’s ```static_cast``` to convert the float to an integer, truncating the decimal part.\n- ***cout << \"Original (float): \" << floatNum << endl;***: Displays the original float value.\n- ***cout << \"Casted (int): \" << intNum << endl;***: Shows the integer result after casting."
+  },
+  {
+    "title": "C++ Reference vs C Pointer",
+    "ques": "Write a C++ program that uses a reference variable to modify a value, contrasting this with C’s pointer-based approach, and outputs the result to highlight a key difference.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\nvoid increment(int& ref) {\n    ref++;\n}\nint main() {\n    int num = 5;\n    increment(num);\n    cout << \"After increment: \" << num << endl;\n    return 0;\n}"
+    },
+    "explanation": "This program shows C++ references as an alternative to C pointers.\n- ***void increment(int& ref) { ref++; }***: Defines a function taking an ```int&``` reference, allowing direct modification of the passed variable.\n- ***int num = 5;***: Initializes an integer variable.\n- ***increment(num);***: Passes ```num``` by reference, not by pointer (as C would require with ```int*```), incrementing it.\n- ***cout << \"After increment: \" << num << endl;***: Outputs the modified value (6), showing the effect.\n- In C, this would need a pointer (```*ptr++```), but C++ references simplify the syntax."
+  },
+  {
+    "title": "OOP Inheritance Demo",
+    "ques": "Develop a C++ program that demonstrates the OOP principle of inheritance by creating a base class 'Shape' and a derived class 'Circle' that inherits from it, calculating the circle’s area.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\nclass Shape {\nprotected:\n    float area;\npublic:\n    Shape() { area = 0; }\n    float getArea() { return area; }\n};\nclass Circle : public Shape {\nprivate:\n    float radius;\npublic:\n    Circle(float r) { radius = r; area = 3.14 * r * r; }\n};\nint main() {\n    Circle circ(2.5);\n    cout << \"Circle area: \" << circ.getArea() << endl;\n    return 0;\n}"
+    },
+    "explanation": "This program illustrates OOP inheritance.\n- ***class Shape { ... };***: Base class with a protected ```area``` variable and public methods.\n- ***protected: float area;***: Allows derived classes to access ```area```.\n- ***Shape() { area = 0; }***: Constructor initializes ```area```.\n- ***class Circle : public Shape { ... };***: ```Circle``` inherits from ```Shape``` publicly.\n- ***Circle(float r) { radius = r; area = 3.14 * r * r; }***: Constructor sets radius and calculates area, accessing the inherited ```area```.\n- ***Circle circ(2.5); cout << circ.getArea();***: Creates a ```Circle``` object and uses the inherited ```getArea()``` to display the area."
+  },
+  {
+    "title": "Custom Namespace Usage",
+    "ques": "Write a C++ program that defines a custom namespace to organize code, reflecting a feature introduced in C++’s development to improve modularity, and uses it to print a version message.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nnamespace MyCpp {\n    void printVersion() {\n        std::cout << \"C++ evolved from C, versioned in 1998 as C++98.\" << std::endl;\n    }\n}\nint main() {\n    MyCpp::printVersion();\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates namespaces, a C++ feature for code organization.\n- ***#include <iostream>***: Includes the I/O library.\n- ***namespace MyCpp { ... }***: Defines a custom namespace ```MyCpp```, a feature added to C++ to avoid name conflicts, unlike C.\n- ***void printVersion() { ... }***: A function inside the namespace that prints a historical note about C++ standardization.\n- ***std::cout << ... << std::endl;***: Uses the standard namespace for output.\n- ***MyCpp::printVersion();***: Calls the function using the namespace scope operator ```::```, showing modular access."
+  },
+  {
+    "title": "Boolean Input Check",
+    "ques": "Create a C++ program that uses the boolean data type to check if a user-input number is positive, demonstrating data types and basic console I/O operations.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\nint main() {\n    int number;\n    bool isPositive;\n    cout << \"Enter a number: \";\n    cin >> number;\n    isPositive = (number > 0);\n    cout << \"Is the number positive? \" << (isPositive ? \"Yes\" : \"No\") << endl;\n    return 0;\n}"
+    },
+    "explanation": "This program uses the ```bool``` type and I/O.\n- ***int number; bool isPositive;***: Declares an integer for input and a boolean to store the check result.\n- ***cout << \"Enter a number: \"; cin >> number;***: Prompts and reads an integer.\n- ***isPositive = (number > 0);***: Assigns ```true``` or ```false``` based on whether ```number``` is positive.\n- ***cout << ... << (isPositive ? \"Yes\" : \"No\") << endl;***: Uses a ternary operator to print 'Yes' if ```isPositive``` is ```true```, 'No' if ```false```."
+  },
+  {
+    "title": "Dynamic Memory in C++",
+    "ques": "Write a C++ program that allocates memory dynamically for an integer using the 'new' operator, a feature distinct from C’s malloc, takes user input, and displays it before cleanup.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\nint main() {\n    int* ptr = new int;\n    cout << \"Enter an integer: \";\n    cin >> *ptr;\n    cout << \"You entered: \" << *ptr << endl;\n    delete ptr;\n    return 0;\n}"
+    },
+    "explanation": "This program highlights C++’s dynamic memory management.\n- ***int* ptr = new int;***: Allocates memory for an integer using ```new```, a C++ operator simpler than C’s ```malloc```.\n- ***cout << \"Enter an integer: \"; cin >> *ptr;***: Takes user input and stores it in the dynamically allocated memory via the pointer.\n- ***cout << \"You entered: \" << *ptr << endl;***: Displays the value pointed to by ```ptr```.\n- ***delete ptr;***: Frees the memory, a C++ requirement unlike C’s ```free```, paired with ```new```."
+  },
+  {
+    "title": "OOP Polymorphism Example",
+    "ques": "Develop a C++ program that demonstrates the OOP principle of polymorphism by creating a base class 'Animal' with a virtual function and a derived class 'Dog' that overrides it to print a specific sound.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\nclass Animal {\npublic:\n    virtual void makeSound() {\n        cout << \"Some generic animal sound\" << endl;\n    }\n};\nclass Dog : public Animal {\npublic:\n    void makeSound() override {\n        cout << \"Woof Woof!\" << endl;\n    }\n};\nint main() {\n    Animal* pet = new Dog();\n    pet->makeSound();\n    delete pet;\n    return 0;\n}"
+    },
+    "explanation": "This program showcases polymorphism in OOP.\n- ***class Animal { ... virtual void makeSound() ... };***: Defines a base class with a ```virtual``` function, enabling runtime polymorphism.\n- ***class Dog : public Animal { ... void makeSound() override ... };***: ```Dog``` inherits from ```Animal``` and overrides ```makeSound()``` with ```override``` keyword.\n- ***Animal* pet = new Dog();***: Creates a ```Dog``` object but stores it in an ```Animal``` pointer, demonstrating upcasting.\n- ***pet->makeSound();***: Calls the overridden ```Dog``` version ('Woof Woof!') due to virtual function resolution, not the base version.\n- ***delete pet;***: Cleans up the dynamically allocated memory."
+  }
+]

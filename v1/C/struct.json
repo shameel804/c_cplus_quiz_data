@@ -1,0 +1,4079 @@
+[
+  {
+    "q": "Which keyword is used to define a structure in C?",
+    "o": [
+      "struct",
+      "structure",
+      "define",
+      "class"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nstruct Point {\n    int x;\n    int y;\n};\n\nint main() {\n    struct Point p = {10, 20};\n    printf(\"%d %d\", p.x, p.y);\n    return 0;\n}",
+    "o": [
+      "10 20",
+      "20 10",
+      "10",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about unions in C?",
+    "o": [
+      "A union uses the memory of the largest member only",
+      "A union allocates memory separately for each member",
+      "Unions cannot store primitive types",
+      "Unions are not supported in standard C"
+    ]
+  },
+  {
+    "q": "What is the correct syntax to access a member of a structure using a pointer?",
+    "o": [
+      "ptr->member",
+      "ptr.member",
+      "*ptr.member",
+      "&ptr->member"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nunion Data {\n    int i;\n    float f;\n};\n\nint main() {\n    union Data d;\n    d.i = 10;\n    d.f = 20.5;\n    printf(\"%d\", d.i);\n    return 0;\n}",
+    "o": [
+      "Garbage value or undefined output",
+      "10",
+      "20",
+      "20.5"
+    ]
+  },
+  {
+    "q": "Which of the following best explains the difference between structure and union in C?",
+    "o": [
+      "Structure allocates memory for all members; union shares memory for all members",
+      "Structure and union both share memory among members",
+      "Structure is faster than union",
+      "Union stores data in a compressed format"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a nested structure?",
+    "o": [
+      "struct Student {\n    char name[50];\n    struct Marks {\n        int math;\n        int science;\n    } mark;\n};",
+      "struct Student {\n    char name[50];\n    mark {\n        int math;\n        int science;\n    };\n};",
+      "nested struct Student {\n    char name[50];\n    int math, science;\n};",
+      "struct Student {\n    char name[50];\n    include Marks;\n};"
+    ]
+  },
+  {
+    "q": "How can you declare an array of structures in C?",
+    "o": [
+      "struct Employee employees[10];",
+      "array struct Employee[10];",
+      "Employee struct[10] employees;",
+      "struct[10] Employee employees;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nstruct Student {\n    char name[10];\n    int marks;\n};\n\nint main() {\n    struct Student s = {\"Tom\", 90};\n    struct Student *ptr = &s;\n    printf(\"%s %d\", ptr->name, ptr->marks);\n    return 0;\n}",
+    "o": [
+      "Tom 90",
+      "90 Tom",
+      "Compilation error",
+      "Garbage output"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about arrays of structures?",
+    "o": [
+      "They allow grouping of multiple structure variables of the same type",
+      "They are not allowed in C",
+      "They can only store primitive data types",
+      "Each element must be initialized separately during declaration"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a structure with the tag 'Book'?",
+    "o": [
+      "struct Book { char title[50]; int pages; };",
+      "structure Book { char title[50]; int pages; };",
+      "Book struct { char title[50]; int pages; };",
+      "class Book { char title[50]; int pages; };"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nstruct Date {\n    int day;\n    int month;\n};\n\nint main() {\n    struct Date d = {12, 8};\n    printf(\"%02d/%02d\", d.day, d.month);\n    return 0;\n}",
+    "o": [
+      "12/08",
+      "8/12",
+      "12-08",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly creates a pointer to a structure?",
+    "o": [
+      "struct Employee *emp;",
+      "pointer Employee emp;",
+      "struct *Employee emp;",
+      "Employee pointer *emp;"
+    ]
+  },
+  {
+    "q": "Which of the following is **false** about structures in C?",
+    "o": [
+      "Structure members must be of the same data type",
+      "Structures can have members of different data types",
+      "Structures can contain arrays",
+      "Structures can be passed to functions"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nstruct A {\n    int x;\n};\n\nstruct B {\n    struct A a;\n    int y;\n};\n\nint main() {\n    struct B b = {{5}, 10};\n    printf(\"%d %d\", b.a.x, b.y);\n    return 0;\n}",
+    "o": [
+      "5 10",
+      "10 5",
+      "Compilation error",
+      "5 0"
+    ]
+  },
+  {
+    "q": "What happens when you assign a value to a member of a union in C?",
+    "o": [
+      "It overwrites the memory of all other members",
+      "It updates all members at once",
+      "Each member gets its own copy of memory",
+      "Nothing happens until union is initialized"
+    ]
+  },
+  {
+    "q": "Which of the following code snippets declares an array of 5 structures of type Student?",
+    "o": [
+      "struct Student students[5];",
+      "array Student[5];",
+      "Student struct[5];",
+      "Student students(5);"
+    ]
+  },
+  {
+    "q": "What is the size of the following union likely to be?",
+    "c": "union Data {\n    int i;\n    float f;\n    char str[20];\n};",
+    "o": [
+      "20 (or more depending on padding)",
+      "4",
+      "24",
+      "Sum of all member sizes"
+    ]
+  },
+  {
+    "q": "Which operator is used to access structure members through a pointer?",
+    "o": [
+      "->",
+      ".",
+      "&",
+      "*"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid reason to use unions over structures?",
+    "o": [
+      "To save memory when only one member is used at a time",
+      "To store multiple variables of different types simultaneously",
+      "To enable nested declarations",
+      "To create constant objects"
+    ]
+  },
+  {
+    "q": "Which statement correctly initializes a structure variable in C?",
+    "o": [
+      "struct Car c = {\"Toyota\", 2020};",
+      "Car c = {\"Toyota\", 2020};",
+      "c = Car(\"Toyota\", 2020);",
+      "Car c(\"Toyota\", 2020);"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nstruct Coord {\n    int x, y;\n};\n\nint main() {\n    struct Coord c;\n    c.x = 7;\n    c.y = 3;\n    printf(\"%d,%d\", c.x, c.y);\n    return 0;\n}",
+    "o": [
+      "7,3",
+      "3,7",
+      "0,0",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a nested structure?",
+    "o": [
+      "A structure that contains another structure as a member",
+      "A structure declared inside a union",
+      "A structure that uses dynamic memory",
+      "A structure containing function pointers"
+    ]
+  },
+  {
+    "q": "What is the correct way to access a nested member?",
+    "o": [
+      "outer.inner.value",
+      "outer->inner.value",
+      "outer::inner.value",
+      "inner.outer.value"
+    ]
+  },
+  {
+    "q": "What is the main drawback of using unions compared to structures?",
+    "o": [
+      "Only one member can hold a value at any time",
+      "Unions cannot store integers",
+      "Unions require more memory",
+      "Unions cannot be used in arrays"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nunion Data {\n    int a;\n    char b;\n};\n\nint main() {\n    union Data d;\n    d.a = 65;\n    printf(\"%c\", d.b);\n    return 0;\n}",
+    "o": [
+      "A",
+      "65",
+      "Compilation error",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct declaration of pointer to a structure and using it?",
+    "o": [
+      "struct Point { int x; }; struct Point p = {5}; struct Point *ptr = &p; printf(\"%d\", ptr->x);",
+      "struct Point { int x; }; struct Point *ptr = {5}; printf(\"%d\", ptr->x);",
+      "Point p; *ptr = &p; printf(\"%d\", *ptr.x);",
+      "ptr->x = 5; printf(ptr->x);"
+    ]
+  },
+  {
+    "q": "Which statement correctly accesses the 'marks' field of the 3rd element in an array of structures?",
+    "o": [
+      "students[2].marks",
+      "students->marks[2]",
+      "students.marks[2]",
+      "students[3].marks"
+    ]
+  },
+  {
+    "q": "Which of the following is true about arrays of structures?",
+    "o": [
+      "Each element in the array is a separate structure variable",
+      "All structures in the array must have the same values",
+      "Array of structures cannot be declared globally",
+      "They can only contain primitive data"
+    ]
+  },
+  {
+    "q": "How do unions differ from structures in terms of memory allocation?",
+    "o": [
+      "Union allocates memory equal to the size of its largest member only",
+      "Union allocates total memory of all members combined",
+      "Union allocates separate memory for each member",
+      "Union uses dynamic memory only"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a structure in C?",
+    "o": [
+      "struct",
+      "structure",
+      "record",
+      "object"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nstruct Student {\n    char name[20];\n    int roll;\n};\n\nint main() {\n    struct Student s = {\"Alex\", 101};\n    printf(\"%d\", s.roll);\n    return 0;\n}",
+    "o": [
+      "101",
+      "Alex",
+      "0",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following is true for nested structures?",
+    "o": [
+      "One structure can be a member of another structure",
+      "Structures must not contain other structures",
+      "Nested structures are not allowed in C",
+      "Nested structures can only contain unions"
+    ]
+  },
+  {
+    "q": "Which syntax is correct for accessing a member of a structure through a pointer?",
+    "o": [
+      "ptr->member",
+      "ptr.member",
+      "(*ptr).>member",
+      "ptr=>member"
+    ]
+  },
+  {
+    "q": "What is the size of the following structure most likely to be?",
+    "c": "struct Info {\n  char a;\n  int b;\n};",
+    "o": [
+      "8 (due to padding)",
+      "5",
+      "4",
+      "1"
+    ]
+  },
+  {
+    "q": "What is the difference in memory allocation between structures and unions?",
+    "o": [
+      "Structures allocate memory for all members, unions share memory",
+      "Structures share memory, unions allocate separately",
+      "Both share the same memory space",
+      "Both allocate only the memory of the largest member"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nunion Test {\n    int x;\n    float y;\n};\n\nint main() {\n    union Test t;\n    t.y = 10.5;\n    printf(\"%d\", t.x);\n    return 0;\n}",
+    "o": [
+      "Garbage value",
+      "10",
+      "10.5",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to define an array of 100 structures named 'Record'?",
+    "o": [
+      "struct Record data[100];",
+      "Record data(100);",
+      "array Record[100];",
+      "struct Record = data[100];"
+    ]
+  },
+  {
+    "q": "What will be the output of this code snippet?",
+    "c": "#include <stdio.h>\nstruct Point {\n    int x, y;\n};\n\nint main() {\n    struct Point arr[2] = {{1, 2}, {3, 4}};\n    printf(\"%d\", arr[1].y);\n    return 0;\n}",
+    "o": [
+      "4",
+      "2",
+      "3",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following is not allowed in a structure definition in C?",
+    "o": [
+      "Declaring a function directly",
+      "Declaring a pointer",
+      "Using nested structures",
+      "Including arrays"
+    ]
+  },
+  {
+    "q": "Which is the correct way to declare a structure called 'Book' with members 'title' and 'price'?",
+    "o": [
+      "struct Book { char title[50]; float price; };",
+      "struct Book { title[50]; price; };",
+      "structure Book { string title; float price; };",
+      "Book = struct { char title[50]; float price; };"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nstruct Temp {\n    int x;\n};\n\nint main() {\n    struct Temp t1 = {10};\n    struct Temp *ptr = &t1;\n    printf(\"%d\", (*ptr).x);\n    return 0;\n}",
+    "o": [
+      "10",
+      "0",
+      "Compiler Error",
+      "Garbage Value"
+    ]
+  },
+  {
+    "q": "Which of the following is a key property of a union in C?",
+    "o": [
+      "Only the largest member decides the memory size",
+      "Each member has its own distinct memory space",
+      "Unions store multiple values simultaneously",
+      "Unions can only store integer values"
+    ]
+  },
+  {
+    "q": "What is the result of this code snippet?",
+    "c": "#include <stdio.h>\nunion Box {\n    int i;\n    float f;\n};\n\nint main() {\n    union Box b;\n    b.i = 25;\n    b.f = 5.5;\n    printf(\"%d\", b.i);\n    return 0;\n}",
+    "o": [
+      "Garbage value",
+      "25",
+      "5",
+      "0"
+    ]
+  },
+  {
+    "q": "How do you correctly define and initialize an array of 3 'Point' structures?",
+    "o": [
+      "struct Point arr[3] = {{1,2}, {3,4}, {5,6}};",
+      "Point arr[3] = (1,2), (3,4), (5,6);",
+      "struct arr[3] = Point{1,2}, Point{3,4}, Point{5,6};",
+      "arr = struct Point[3] {{1,2}, {3,4}, {5,6}};"
+    ]
+  },
+  {
+    "q": "Which operator is used to access structure members using a pointer?",
+    "o": [
+      "->",
+      ".",
+      "&",
+      "*"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nstruct Outer {\n    int a;\n    struct Inner {\n        int b;\n    } in;\n};\n\nint main() {\n    struct Outer o;\n    o.a = 5;\n    o.in.b = 10;\n    printf(\"%d\", o.in.b);\n    return 0;\n}",
+    "o": [
+      "10",
+      "5",
+      "0",
+      "Compiler error"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid reason to use structures in C?",
+    "o": [
+      "To group related variables of different types",
+      "To avoid using loops",
+      "To store only integers",
+      "To replace arrays"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nstruct Employee {\n    int id;\n    char name[10];\n};\n\nint main() {\n    struct Employee e[2] = {{1, \"John\"}, {2, \"Sara\"}};\n    printf(\"%s\", e[1].name);\n    return 0;\n}",
+    "o": [
+      "Sara",
+      "John",
+      "2",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a pointer to a structure named 'Node'?",
+    "o": [
+      "struct Node *ptr;",
+      "Node *struct ptr;",
+      "ptr = struct Node;",
+      "Node pointer ptr;"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a structure in C?",
+    "o": [
+      "A user-defined data type that groups variables of different types",
+      "A built-in data type to store large integers",
+      "A type of loop that stores multiple integers",
+      "A container used to perform bitwise operations"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nstruct Car {\n    int speed;\n};\n\nint main() {\n    struct Car c = {120};\n    struct Car *ptr = &c;\n    printf(\"%d\", ptr->speed);\n    return 0;\n}",
+    "o": [
+      "120",
+      "0",
+      "Garbage value",
+      "Compiler Error"
+    ]
+  },
+  {
+    "q": "Which of these correctly accesses a nested structure member?",
+    "o": [
+      "outer.inner.value",
+      "outer->inner->value",
+      "inner.outer.value",
+      "outer::inner.value"
+    ]
+  },
+  {
+    "q": "How is memory allocated in a union?",
+    "o": [
+      "All members share the same memory location",
+      "Each member gets its own memory space",
+      "Memory is allocated twice the size of largest member",
+      "Only the first member gets memory"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\nunion Value {\n    int i;\n    float f;\n};\n\nint main() {\n    union Value v;\n    v.i = 100;\n    printf(\"%d\", v.i);\n    return 0;\n}",
+    "o": [
+      "100",
+      "0",
+      "Garbage",
+      "Runtime error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the purpose of an array of structures?",
+    "o": [
+      "To store multiple records of similar structure type",
+      "To store multiple variables of different types in a single block",
+      "To allocate multiple memory blocks for unions",
+      "To store structure pointers only"
+    ]
+  },
+  {
+    "q": "What is the correct way to pass a structure to a function by reference?",
+    "o": [
+      "Using a pointer to the structure",
+      "Passing the structure variable directly",
+      "Using typedef",
+      "Declaring the structure inside the function"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nstruct Date {\n    int day, month, year;\n};\n\nint main() {\n    struct Date d = {7, 4, 2025};\n    printf(\"%d/%d/%d\", d.day, d.month, d.year);\n    return 0;\n}",
+    "o": [
+      "7/4/2025",
+      "04/07/2025",
+      "2025/4/7",
+      "4-7-2025"
+    ]
+  },
+  {
+    "q": "Which of these statements about unions is FALSE?",
+    "o": [
+      "Unions can store multiple member values at the same time",
+      "Only one union member can hold a value at a time",
+      "Union size equals size of its largest member",
+      "Unions are declared using the 'union' keyword"
+    ]
+  },
+  {
+    "q": "How can a structure pointer be used to modify the structure's data?",
+    "o": [
+      "By using the arrow (->) operator",
+      "By using the dot (.) operator directly on the pointer",
+      "By dereferencing it using comma operator",
+      "By using sizeof() function"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a structure in C?",
+    "o": [
+      "struct",
+      "structure",
+      "define",
+      "record"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nstruct Point {\n    int x, y;\n};\n\nint main() {\n    struct Point p1 = {2, 4};\n    printf(\"%d %d\", p1.x, p1.y);\n    return 0;\n}",
+    "o": [
+      "2 4",
+      "4 2",
+      "0 0",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a structure inside another structure?",
+    "o": [
+      "struct Outer { struct Inner { int a; } in; };",
+      "struct Outer { Inner struct { int a; }; in; };",
+      "struct Outer ( struct Inner { int a; }; in );",
+      "Outer struct { struct Inner { int a; } in; };"
+    ]
+  },
+  {
+    "q": "Which of the following is true about union memory usage?",
+    "o": [
+      "Only one member can store a value at any time",
+      "All members are stored in separate memory locations",
+      "Memory size is equal to sum of all member sizes",
+      "Unions do not allocate memory"
+    ]
+  },
+  {
+    "q": "What will be the output of the code below?",
+    "c": "#include <stdio.h>\nunion Data {\n    int x;\n    float y;\n};\n\nint main() {\n    union Data d;\n    d.y = 3.5;\n    d.x = 10;\n    printf(\"%d\", d.x);\n    return 0;\n}",
+    "o": [
+      "10",
+      "3",
+      "Garbage",
+      "3.5"
+    ]
+  },
+  {
+    "q": "What is the correct syntax to declare an array of 50 student structures?",
+    "o": [
+      "struct Student students[50];",
+      "Student[50] students;",
+      "array Student[50];",
+      "struct Student[50] = students;"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to access a member from a structure pointer?",
+    "o": [
+      "ptr->member",
+      "ptr.member",
+      "*ptr.member",
+      "ptr->*member"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <stdio.h>\nstruct Info {\n    int id;\n};\n\nvoid display(struct Info info) {\n    printf(\"ID: %d\", info.id);\n}\n\nint main() {\n    struct Info i = {101};\n    display(i);\n    return 0;\n}",
+    "o": [
+      "ID: 101",
+      "ID: 0",
+      "101",
+      "Compiler error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a difference between structure and union?",
+    "o": [
+      "Structure stores all members separately, union shares memory",
+      "Union size is equal to largest member, structure size is sum of members",
+      "Structures cannot have nested members while unions can",
+      "Structures and unions are declared using different keywords"
+    ]
+  },
+  {
+    "q": "Which of these correctly initializes a structure pointer?",
+    "o": [
+      "struct Employee *ptr = &e;",
+      "Employee ptr = &e;",
+      "struct *ptr = Employee;",
+      "struct ptr = *e;"
+    ]
+  },
+  {
+    "q": "Which of the following statements about structures in C is TRUE?",
+    "o": [
+      "Structures can hold variables of different data types.",
+      "Structures cannot be passed to functions.",
+      "Structure members must all be of the same type.",
+      "Structures automatically initialize members to zero."
+    ]
+  },
+  {
+    "q": "What will the following C program output?",
+    "c": "#include <stdio.h>\nstruct Book {\n    char title[20];\n    int pages;\n};\n\nint main() {\n    struct Book b = {\"C Guide\", 300};\n    printf(\"%s %d\", b.title, b.pages);\n    return 0;\n}",
+    "o": [
+      "C Guide 300",
+      "300 C Guide",
+      "C Guide",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which is the correct way to declare a pointer to a structure?",
+    "o": [
+      "struct Person *ptr;",
+      "Person *ptr;",
+      "*struct ptr;",
+      "ptr struct Person;"
+    ]
+  },
+  {
+    "q": "What distinguishes a union from a structure in C?",
+    "o": [
+      "Union shares memory between all members, while structure allocates separate memory.",
+      "Union uses more memory than structure.",
+      "Structure members are accessed by -> operator only.",
+      "Union does not support pointers."
+    ]
+  },
+  {
+    "q": "Predict the output of the program.",
+    "c": "#include <stdio.h>\nstruct Coord {\n    int x;\n    int y;\n};\n\nint main() {\n    struct Coord arr[2] = {{1, 2}, {3, 4}};\n    printf(\"%d\", arr[1].y);\n    return 0;\n}",
+    "o": [
+      "4",
+      "2",
+      "1",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a nested structure?",
+    "o": [
+      "struct A { struct B { int x; } b; };",
+      "nested struct { int x; };",
+      "struct A { int x; struct B; };",
+      "struct A ( struct B { int x; } );"
+    ]
+  },
+  {
+    "q": "Which operator is used to access a member from a structure variable?",
+    "o": [
+      ". (dot)",
+      "-> (arrow)",
+      ":: (scope resolution)",
+      "# (preprocessor)"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nunion Test {\n    int x;\n    float y;\n};\n\nint main() {\n    union Test t;\n    t.x = 5;\n    printf(\"%d\", t.x);\n    return 0;\n}",
+    "o": [
+      "5",
+      "0",
+      "Garbage",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "In which of the following scenarios is an array of structures most useful?",
+    "o": [
+      "When storing records of multiple employees with name, id, and salary",
+      "When accessing a single variable of multiple types",
+      "When defining a single constant",
+      "When declaring global variables"
+    ]
+  },
+  {
+    "q": "Which access syntax is valid when using a structure pointer?",
+    "o": [
+      "ptr->field",
+      "ptr.field",
+      "*ptr->field",
+      "ptr=>field"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a union in C?",
+    "o": [
+      "A user-defined data type where all members share the same memory location",
+      "A data type that allows only one data member",
+      "A collection of unrelated functions",
+      "A structure with default values"
+    ]
+  },
+  {
+    "q": "What will the following C code print?",
+    "c": "#include <stdio.h>\nstruct Item {\n    int code;\n    float price;\n};\n\nint main() {\n    struct Item it = {101, 25.5};\n    printf(\"%d %.1f\", it.code, it.price);\n    return 0;\n}",
+    "o": [
+      "101 25.5",
+      "25.5 101",
+      "101",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "How is memory allocated in a structure?",
+    "o": [
+      "Each member gets its own memory location",
+      "All members share the same memory space",
+      "Memory is allocated only to the first member",
+      "Only pointers are stored, no real memory allocation"
+    ]
+  },
+  {
+    "q": "Which of the following accesses the salary field of an employee pointer?",
+    "o": [
+      "emp->salary",
+      "emp.salary",
+      "*emp.salary",
+      "salary.emp"
+    ]
+  },
+  {
+    "q": "What does the following code output?",
+    "c": "#include <stdio.h>\nunion Info {\n    int id;\n    char ch;\n};\n\nint main() {\n    union Info i;\n    i.id = 97;\n    printf(\"%c\", i.ch);\n    return 0;\n}",
+    "o": [
+      "a",
+      "97",
+      "Compilation error",
+      "Undefined behavior"
+    ]
+  },
+  {
+    "q": "Which of the following is true about arrays of structures?",
+    "o": [
+      "They allow storing multiple structure variables of the same type",
+      "They can only store integers",
+      "Each structure in the array must have the same data",
+      "They cannot be indexed like normal arrays"
+    ]
+  },
+  {
+    "q": "Which of the following correctly passes a structure to a function by reference?",
+    "o": [
+      "void print(struct Student *s);",
+      "void print(struct Student s*);",
+      "void print(*struct Student);",
+      "void print(struct Student);"
+    ]
+  },
+  {
+    "q": "What is the output of this nested structure program?",
+    "c": "#include <stdio.h>\nstruct Date {\n    int day, month, year;\n};\nstruct Student {\n    int id;\n    struct Date dob;\n};\n\nint main() {\n    struct Student s = {1, {12, 8, 2000}};\n    printf(\"%d\", s.dob.year);\n    return 0;\n}",
+    "o": [
+      "2000",
+      "8",
+      "12",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following is true regarding memory layout in a union?",
+    "o": [
+      "The size is equal to its largest member",
+      "Each member gets a separate memory block",
+      "Size equals the sum of all members",
+      "Unions don't use memory"
+    ]
+  },
+  {
+    "q": "Which one is the correct way to define an array of 100 structures?",
+    "o": [
+      "struct Product inventory[100];",
+      "Product inventory = [100];",
+      "array[100] struct Product;",
+      "struct inventory[100] Product;"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a structure in C?",
+    "o": [
+      "struct",
+      "structure",
+      "record",
+      "union"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nstruct Point {\n    int x;\n    int y;\n};\n\nint main() {\n    struct Point p = {.y = 20, .x = 10};\n    printf(\"%d %d\", p.x, p.y);\n    return 0;\n}",
+    "o": [
+      "10 20",
+      "20 10",
+      "10 0",
+      "0 20"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a union?",
+    "o": [
+      "union Data { int i; float f; };",
+      "union Data = { int i; float f; };",
+      "union Data: int i; float f;",
+      "struct union Data { int i; float f; };"
+    ]
+  },
+  {
+    "q": "What will the output be?",
+    "c": "#include <stdio.h>\nunion Test {\n    int a;\n    char b;\n};\n\nint main() {\n    union Test t;\n    t.a = 65;\n    printf(\"%c\", t.b);\n    return 0;\n}",
+    "o": [
+      "A",
+      "65",
+      "Undefined",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about accessing members of a structure pointer?",
+    "o": [
+      "Use '->' operator",
+      "Use '.' operator",
+      "Use '&' operator",
+      "Use '::' operator"
+    ]
+  },
+  {
+    "q": "Which of these allows dynamic memory access to structure members?",
+    "o": [
+      "Pointer to structure",
+      "Array of structures",
+      "Nested structures",
+      "Union of structures"
+    ]
+  },
+  {
+    "q": "What is the result of using sizeof on a union?",
+    "o": [
+      "It gives the size of the largest member",
+      "It gives the total size of all members",
+      "It gives the size of the first member only",
+      "It results in a compilation error"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\nstruct Employee {\n    char name[10];\n    int id;\n};\n\nint main() {\n    struct Employee e[2] = {{\"Max\", 1}, {\"Sam\", 2}};\n    printf(\"%s\", e[1].name);\n    return 0;\n}",
+    "o": [
+      "Sam",
+      "Max",
+      "1",
+      "2"
+    ]
+  },
+  {
+    "q": "What happens if multiple members of a union are assigned values?",
+    "o": [
+      "Only the last assigned value is valid",
+      "All values are retained",
+      "All members get corrupted",
+      "Compilation error occurs"
+    ]
+  },
+  {
+    "q": "Which of these is a valid structure assignment?",
+    "o": [
+      "s2 = s1;",
+      "s2 == s1;",
+      "copy(s1, s2);",
+      "s1 -> s2;"
+    ]
+  },
+  {
+    "q": "Which operator is used to access members of a structure variable?",
+    "o": [
+      ". (dot)",
+      "-> (arrow)",
+      "& (ampersand)",
+      "* (asterisk)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nstruct Car {\n    char brand[10];\n    int year;\n};\n\nint main() {\n    struct Car c = {\"Ford\", 2022};\n    printf(\"%d\", c.year);\n    return 0;\n}",
+    "o": [
+      "2022",
+      "Ford",
+      "0",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What will happen if you access uninitialized members of a structure?",
+    "o": [
+      "They contain garbage values",
+      "They are automatically zero",
+      "They throw a runtime error",
+      "Compiler initializes them to NULL"
+    ]
+  },
+  {
+    "q": "Which of the following is a key difference between a structure and a union?",
+    "o": [
+      "Structure allocates memory for all members; union shares memory among members",
+      "Union can store more data than structure",
+      "Structure supports only integers",
+      "Structure allows only one member at a time"
+    ]
+  },
+  {
+    "q": "What does the following code output?",
+    "c": "#include <stdio.h>\nstruct Book {\n    int pages;\n};\n\nint main() {\n    struct Book b1 = {300}, b2;\n    b2 = b1;\n    printf(\"%d\", b2.pages);\n    return 0;\n}",
+    "o": [
+      "300",
+      "0",
+      "Garbage value",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which is the correct way to define a pointer to a structure?",
+    "o": [
+      "struct Student *ptr;",
+      "Student ptr;",
+      "*struct ptr Student;",
+      "struct *Student ptr;"
+    ]
+  },
+  {
+    "q": "Which of the following can contain an array as one of its members?",
+    "o": [
+      "Both structure and union",
+      "Only structure",
+      "Only union",
+      "Neither structure nor union"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nunion U {\n    int i;\n    float f;\n};\n\nint main() {\n    union U u;\n    u.f = 10.5;\n    printf(\"%d\", u.i);\n    return 0;\n}",
+    "o": [
+      "Garbage value",
+      "10.5",
+      "0",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of these best suits an array of structures?",
+    "o": [
+      "To store details of multiple students",
+      "To store characters of a string",
+      "To define a single student",
+      "To represent a constant value"
+    ]
+  },
+  {
+    "q": "Which access method is correct for nested structures?",
+    "o": [
+      "emp.doj.year",
+      "emp->doj->year",
+      "emp->doj.year",
+      "emp.doj->year"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to assign a value to a structure member?",
+    "o": [
+      "student.age = 20;",
+      "student->age = 20;",
+      "student := 20;",
+      "student => age = 20;"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <stdio.h>\nstruct Box {\n    int height;\n    int width;\n};\n\nint main() {\n    struct Box b = {5, 10};\n    printf(\"%d %d\", b.height, b.width);\n    return 0;\n}",
+    "o": [
+      "5 10",
+      "10 5",
+      "0 0",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "What is the primary memory-related benefit of a union over a structure?",
+    "o": [
+      "Memory is shared among all members in a union",
+      "Each member gets extra buffer space",
+      "Members are initialized automatically",
+      "Memory allocation happens only at runtime"
+    ]
+  },
+  {
+    "q": "Which of the following defines an array of 5 structures named `Book`?",
+    "o": [
+      "struct Book books[5];",
+      "Book[5] = struct books;",
+      "array Book books(5);",
+      "books = new struct Book[5];"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nunion Test {\n    int a;\n    float b;\n};\n\nint main() {\n    union Test t;\n    t.a = 100;\n    t.b = 3.14;\n    printf(\"%d\", t.a);\n    return 0;\n}",
+    "o": [
+      "Garbage value",
+      "100",
+      "3.14",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of these is the correct syntax for declaring a structure inside another structure (nested)?",
+    "o": [
+      "struct Outer { int id; struct Inner { int value; } inner; };",
+      "nested struct Inner { int value; }; struct Outer { Inner inner; };",
+      "class Outer { Inner inner; };",
+      "struct Outer => { struct Inner { int x; }; }"
+    ]
+  },
+  {
+    "q": "Which of the following accesses the member 'price' of a structure pointer 'itemPtr'?",
+    "o": [
+      "itemPtr->price",
+      "itemPtr.price",
+      "*itemPtr.price",
+      "itemPtr=>price"
+    ]
+  },
+  {
+    "q": "Why should unions be used cautiously?",
+    "o": [
+      "Only one member can store a valid value at a time",
+      "They take more memory than structures",
+      "They are slower to access",
+      "They do not support any data types except integers"
+    ]
+  },
+  {
+    "q": "Which statement correctly initializes a pointer to a structure?",
+    "o": [
+      "struct Student *ptr = &s;",
+      "Student ptr = *s;",
+      "*ptr struct = Student;",
+      "ptr -> struct = s;"
+    ]
+  },
+  {
+    "q": "What is the size of the following union likely to be (assuming 4 bytes for int and 8 bytes for double)?",
+    "c": "union Data {\n    int i;\n    double d;\n};",
+    "o": [
+      "8",
+      "12",
+      "4",
+      "16"
+    ]
+  },
+  {
+    "q": "What is the keyword used to define a structure in C?",
+    "o": [
+      "struct",
+      "structure",
+      "record",
+      "define"
+    ]
+  },
+  {
+    "q": "What will be the output of this program?",
+    "c": "#include <stdio.h>\nstruct Employee {\n    int id;\n    float salary;\n};\n\nint main() {\n    struct Employee e = {101, 5000.50};\n    printf(\"%d %.2f\", e.id, e.salary);\n    return 0;\n}",
+    "o": [
+      "101 5000.50",
+      "5000.50 101",
+      "101 0.00",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "How do structure and union differ in memory allocation?",
+    "o": [
+      "Structure allocates memory for all members; union shares memory for all members",
+      "Both allocate memory equally",
+      "Union allocates more memory than structure",
+      "Structure shares memory for all members"
+    ]
+  },
+  {
+    "q": "Which of the following declares a pointer to a structure named `Node`?",
+    "o": [
+      "struct Node *ptr;",
+      "Node *ptr();",
+      "pointer Node ptr;",
+      "ptr = &Node;"
+    ]
+  },
+  {
+    "q": "What will this code display?",
+    "c": "#include <stdio.h>\nstruct Data {\n    int x;\n};\n\nint main() {\n    struct Data arr[3] = {{1}, {2}, {3}};\n    printf(\"%d\", arr[1].x);\n    return 0;\n}",
+    "o": [
+      "2",
+      "1",
+      "3",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly passes a structure to a function by reference?",
+    "o": [
+      "void display(struct Point *p);",
+      "void display(struct Point p*);",
+      "void display(Point p);",
+      "void display(*struct Point p);"
+    ]
+  },
+  {
+    "q": "In a union, if you assign a value to one member, what happens to the other members?",
+    "o": [
+      "Their values become undefined",
+      "They get the same value",
+      "They are initialized to zero",
+      "They remain unaffected"
+    ]
+  },
+  {
+    "q": "What does the arrow operator (`->`) do in C?",
+    "o": [
+      "Accesses a structure member using a pointer",
+      "Creates a pointer to a structure",
+      "Returns the address of a structure",
+      "Converts a structure to a pointer"
+    ]
+  },
+  {
+    "q": "What is the output of the following union usage?",
+    "c": "#include <stdio.h>\nunion Mix {\n    int a;\n    char b;\n};\n\nint main() {\n    union Mix m;\n    m.a = 97;\n    printf(\"%c\", m.b);\n    return 0;\n}",
+    "o": [
+      "a",
+      "97",
+      "0",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following allows creation of complex data models like address inside employee records?",
+    "o": [
+      "Nested structures",
+      "Union of arrays",
+      "Structure within union",
+      "Bit fields"
+    ]
+  },
+  {
+    "q": "Which of the following is true about accessing members of a structure pointer?",
+    "o": [
+      "Use the -> operator",
+      "Use the . operator",
+      "Use the & operator",
+      "Use the * operator"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "#include <stdio.h>\nstruct Point {\n    int x, y;\n};\n\nint main() {\n    struct Point p = {3, 4};\n    struct Point *ptr = &p;\n    printf(\"%d %d\", ptr->x, ptr->y);\n    return 0;\n}",
+    "o": [
+      "3 4",
+      "4 3",
+      "0 0",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "What is the output of the following union usage?",
+    "c": "#include <stdio.h>\nunion Data {\n    int i;\n    float f;\n};\n\nint main() {\n    union Data d;\n    d.f = 10.5;\n    printf(\"%d\", d.i);\n    return 0;\n}",
+    "o": [
+      "Garbage value",
+      "10",
+      "0",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which is the correct way to define an array of 50 `Student` structures?",
+    "o": [
+      "struct Student students[50];",
+      "Student[50] students;",
+      "Student students;",
+      "students[50];"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a nested structure?",
+    "o": [
+      "struct Outer { struct Inner { int a; } in; };",
+      "struct Outer { int a; Inner b; };",
+      "struct Outer ( struct Inner { int a; } );",
+      "Outer -> Inner -> int;"
+    ]
+  },
+  {
+    "q": "What is the size of the following union likely to be?",
+    "c": "union Data {\n    int i;\n    float f;\n    char str[20];\n};",
+    "o": [
+      "20",
+      "4",
+      "24",
+      "8"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\nstruct Book {\n    char title[20];\n    int pages;\n};\n\nint main() {\n    struct Book b = {\"C Guide\", 300};\n    printf(\"%s %d\", b.title, b.pages);\n    return 0;\n}",
+    "o": [
+      "C Guide 300",
+      "C Guide",
+      "300",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid difference between union and structure?",
+    "o": [
+      "Unions use the same memory for all members; structures allocate memory for each member",
+      "Structures are faster than unions",
+      "Unions can’t have arrays",
+      "Structures can’t have nested members"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a union?",
+    "o": [
+      "union",
+      "struct",
+      "record",
+      "define"
+    ]
+  },
+  {
+    "q": "Which of these is a valid syntax to initialize a structure with values?",
+    "o": [
+      "struct Point p = {1, 2};",
+      "struct Point p = 1, 2;",
+      "Point p = (1, 2);",
+      "Point = {1, 2};"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a structure with members `int id` and `char name[20]`?",
+    "o": [
+      "struct Student { int id; char name[20]; };",
+      "structure Student { int id; char name[20]; };",
+      "struct Student = { int id, char name[20] };",
+      "struct Student ( int id; char name[20] );"
+    ]
+  },
+  {
+    "q": "What does the following code output?",
+    "c": "#include <stdio.h>\nstruct Data {\n    int x;\n};\n\nint main() {\n    struct Data d = {42};\n    struct Data *ptr = &d;\n    printf(\"%d\", (*ptr).x);\n    return 0;\n}",
+    "o": [
+      "42",
+      "0",
+      "Compilation error",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which statement best describes a union?",
+    "o": [
+      "A union allows storing different data types in the same memory location.",
+      "A union is used to store multiple instances of the same type.",
+      "A union occupies more memory than a structure.",
+      "A union automatically initializes all its members."
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nunion Test {\n    int i;\n    char c;\n};\n\nint main() {\n    union Test t;\n    t.i = 65;\n    printf(\"%c\", t.c);\n    return 0;\n}",
+    "o": [
+      "A",
+      "65",
+      "Error",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "How do you access the member `name` of the 3rd element in an array `arr` of structures?",
+    "o": [
+      "arr[2].name",
+      "arr[3].name",
+      "arr.name[2]",
+      "name.arr[2]"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "#include <stdio.h>\nstruct Point {\n    int x;\n    int y;\n};\n\nint main() {\n    struct Point p1 = {5, 10};\n    struct Point p2 = p1;\n    printf(\"%d %d\", p2.x, p2.y);\n    return 0;\n}",
+    "o": [
+      "5 10",
+      "10 5",
+      "0 0",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following allows dynamic access to structure members?",
+    "o": [
+      "Pointers to structures",
+      "Nested structures",
+      "Arrays of structures",
+      "Constant structures"
+    ]
+  },
+  {
+    "q": "In a union, changing the value of one member will:",
+    "o": [
+      "Affect the values of all other members due to shared memory",
+      "Keep other members unaffected",
+      "Delete the union",
+      "Raise a compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following is used to declare a structure variable while defining the structure?",
+    "o": [
+      "struct Car { int wheels; } c1;",
+      "struct Car c1 { int wheels; };",
+      "Car { struct c1; int wheels; };",
+      "int wheels { struct Car c1; };"
+    ]
+  },
+  {
+    "q": "How do you define a pointer to a structure named `Node`?",
+    "o": [
+      "struct Node *ptr;",
+      "Node ptr;",
+      "struct *Node ptr;",
+      "ptr struct Node;"
+    ]
+  },
+  {
+    "q": "Which of the following accesses the `marks` member using a pointer to a structure?",
+    "o": [
+      "ptr->marks",
+      "ptr.marks",
+      "(*ptr).>marks",
+      "ptr=>marks"
+    ]
+  },
+  {
+    "q": "What is the size of the following union likely to be (assuming int = 4 bytes, float = 4 bytes)?",
+    "c": "union Example {\n    int i;\n    float f;\n};",
+    "o": [
+      "4 bytes",
+      "8 bytes",
+      "0 bytes",
+      "Depends on number of members"
+    ]
+  },
+  {
+    "q": "Which of the following is true about structures in C?",
+    "o": [
+      "Structure members can be of different types",
+      "Structures cannot be passed to functions",
+      "All members share the same memory",
+      "Structures only support primitive types"
+    ]
+  },
+  {
+    "q": "What is the correct way to declare an array of 50 structures of type `Employee`?",
+    "o": [
+      "struct Employee list[50];",
+      "struct list[50] Employee;",
+      "Employee list(50);",
+      "Employee{50};"
+    ]
+  },
+  {
+    "q": "Which of the following initializes a nested structure correctly?",
+    "c": "struct Address {\n    int pin;\n};\n\nstruct Person {\n    struct Address addr;\n    char name[30];\n};\n\nstruct Person p = { {560001}, \"John\" };",
+    "o": [
+      "Valid initialization",
+      "Invalid due to name first",
+      "Invalid nesting",
+      "Requires pointer"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\nstruct Point {\n    int x, y;\n};\n\nint main() {\n    struct Point p = {10, 20};\n    struct Point *ptr = &p;\n    printf(\"%d\", ptr->y);\n    return 0;\n}",
+    "o": [
+      "20",
+      "10",
+      "0",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "What is one key difference between structures and unions?",
+    "o": [
+      "Structures allocate separate memory for each member, unions share memory",
+      "Unions allow more members than structures",
+      "Structures can't store floats, unions can",
+      "Structures support only pointers"
+    ]
+  },
+  {
+    "q": "Which of the following will declare and define a pointer to an array of structures?",
+    "o": [
+      "struct Item *p = arr;",
+      "struct Item arr = *p;",
+      "*struct p = Item arr;",
+      "arr -> *p = struct Item;"
+    ]
+  },
+  {
+    "q": "How many bytes will this structure likely occupy? (Assume int = 4 bytes)",
+    "c": "struct Demo {\n    int a;\n    int b;\n};",
+    "o": [
+      "8",
+      "4",
+      "0",
+      "Depends on padding"
+    ]
+  },
+  {
+    "q": "Which statement is true about accessing structure members using dot (.) operator?",
+    "o": [
+      "The dot operator is used when accessing members via a structure variable",
+      "The dot operator is used with pointers",
+      "It is the same as the arrow operator",
+      "It is used to define structure"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a structure in C?",
+    "o": [
+      "struct Student { int id; char name[50]; };",
+      "structure Student { int id; char name[50]; };",
+      "define struct Student { int id; char name[50]; }",
+      "Student struct { int id; char name[50]; };"
+    ]
+  },
+  {
+    "q": "Which operator is used to access members of a structure using a pointer?",
+    "o": [
+      "->",
+      ".",
+      "&",
+      "*"
+    ]
+  },
+  {
+    "q": "What will be the output of the following program?",
+    "c": "#include <stdio.h>\nunion Data {\n   int i;\n   float f;\n};\n\nint main() {\n   union Data d;\n   d.i = 10;\n   d.f = 20.5;\n   printf(\"%d\", d.i);\n   return 0;\n}",
+    "o": [
+      "Garbage value",
+      "10",
+      "20",
+      "0"
+    ]
+  },
+  {
+    "q": "What is the correct way to declare a pointer to a structure named `Book`?",
+    "o": [
+      "struct Book *ptr;",
+      "Book *ptr;",
+      "*struct Book ptr;",
+      "pointer Book ptr;"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a union?",
+    "o": [
+      "All members share the same memory location",
+      "Each member has its own memory",
+      "Only one member is allowed",
+      "It is the same as structure"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "struct Employee {\n    int id;\n    char name[10];\n};\n\nint main() {\n    struct Employee e = {101, \"Tom\"};\n    printf(\"%d\", e.id);\n    return 0;\n}",
+    "o": [
+      "101",
+      "Tom",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "How is a nested structure defined in C?",
+    "o": [
+      "By defining a structure inside another structure",
+      "By using struct arrays only",
+      "Using typedef only",
+      "C does not support nested structures"
+    ]
+  },
+  {
+    "q": "Which of the following best accesses the `name` field of the 3rd element in an array of structures?",
+    "o": [
+      "students[2].name",
+      "students(3).name",
+      "students->name[2]",
+      "students.name[2]"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a union in C?",
+    "o": [
+      "union",
+      "struct",
+      "shared",
+      "define"
+    ]
+  },
+  {
+    "q": "Which of the following allows dynamic access to structure members?",
+    "o": [
+      "Pointers to structures",
+      "Macros",
+      "Preprocessor directives",
+      "Arrays only"
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes a structure variable?",
+    "c": "struct Point { int x; int y; };",
+    "o": [
+      "struct Point p = {5, 10};",
+      "Point p = (5, 10);",
+      "struct Point = {x=5, y=10};",
+      "Point p <- {5, 10};"
+    ]
+  },
+  {
+    "q": "Which statement is true about memory allocation in unions?",
+    "o": [
+      "Unions allocate memory equal to the size of the largest member",
+      "Unions allocate memory equal to the sum of all members",
+      "Unions take no memory",
+      "Unions need manual memory management"
+    ]
+  },
+  {
+    "q": "What does this code output?",
+    "c": "struct Info { int code; char level; } data = {101, 'A'};\nprintf(\"%c\", data.level);",
+    "o": [
+      "A",
+      "101",
+      "0",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which is the correct syntax to pass a structure to a function by reference?",
+    "o": [
+      "void show(struct Item *i);",
+      "void show(struct Item i*);",
+      "void show(*struct Item i);",
+      "void show(Item i);"
+    ]
+  },
+  {
+    "q": "How do you access a structure member if you have a pointer to the structure?",
+    "o": [
+      "Using -> operator",
+      "Using . operator",
+      "Using & operator",
+      "Using * operator"
+    ]
+  },
+  {
+    "q": "Which of the following is a benefit of using structures in C?",
+    "o": [
+      "They group related variables under one name",
+      "They make functions execute faster",
+      "They allocate more memory automatically",
+      "They convert C code into assembly"
+    ]
+  },
+  {
+    "q": "Which is a valid way to define a nested structure?",
+    "c": "struct Date {\n  int day, month, year;\n};\n\nstruct Student {\n  char name[20];\n  struct Date dob;\n};",
+    "o": [
+      "Valid nested structure",
+      "Invalid due to `struct` keyword",
+      "Date must be a pointer",
+      "Cannot use structs inside structs"
+    ]
+  },
+  {
+    "q": "Given an array of 100 structures of type `Record`, how do you access the `id` of the 50th element?",
+    "o": [
+      "records[49].id",
+      "records[50].id",
+      "records->id[49]",
+      "records.id[50]"
+    ]
+  },
+  {
+    "q": "Which of the following is FALSE about structures and unions?",
+    "o": [
+      "Unions store only one member at a time",
+      "Structures store all members individually",
+      "Structures use less memory than unions",
+      "Structures can be nested"
+    ]
+  },
+  {
+    "q": "What is the output?",
+    "c": "union Test {\n    int x;\n    char ch;\n};\n\nint main() {\n    union Test t;\n    t.x = 65;\n    printf(\"%c\", t.ch);\n    return 0;\n}",
+    "o": [
+      "A",
+      "65",
+      "Error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "What is the correct way to declare an array of 5 structures named `Employee`?",
+    "o": [
+      "struct Employee staff[5];",
+      "Employee[5] staff;",
+      "struct Employee = [5];",
+      "Employee staff(5);"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a union?",
+    "o": [
+      "union Data { int i; float f; char c; };",
+      "union Data: int i, float f, char c;",
+      "data union { int i; float f; };",
+      "union { int i = 0; float f = 0.0; };"
+    ]
+  },
+  {
+    "q": "What is the output of the following program?",
+    "c": "struct Point { int x, y; } p = {3, 4};\nprintf(\"%d %d\", p.x, p.y);",
+    "o": [
+      "3 4",
+      "4 3",
+      "0 0",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following can be used to dynamically allocate memory for a structure?",
+    "o": [
+      "malloc()",
+      "sizeof()",
+      "scanf()",
+      "alloc()"
+    ]
+  },
+  {
+    "q": "What is a key limitation of unions in C?",
+    "o": [
+      "Only one member can contain a value at any time",
+      "They cannot be nested",
+      "They cannot store integers",
+      "They require dynamic memory"
+    ]
+  },
+  {
+    "q": "How do you pass a structure to a function by value?",
+    "o": [
+      "Directly by variable: func(s);",
+      "Using a pointer: func(&s);",
+      "Using -> operator",
+      "Using malloc before passing"
+    ]
+  },
+  {
+    "q": "What is the size of the following structure on a 32-bit system?",
+    "c": "struct Sample {\n  int a;\n  char b;\n  float c;\n};",
+    "o": [
+      "12 bytes",
+      "9 bytes",
+      "8 bytes",
+      "7 bytes"
+    ]
+  },
+  {
+    "q": "Which code correctly accesses a nested structure member?",
+    "c": "struct Date { int d, m, y; };\nstruct Person { char name[20]; struct Date dob; };",
+    "o": [
+      "p.dob.y",
+      "p->dob.y",
+      "p->dob->y",
+      "p.y"
+    ]
+  },
+  {
+    "q": "What is the purpose of using typedef with structures?",
+    "o": [
+      "To create an alias for a structure name",
+      "To allocate memory to the structure",
+      "To declare global variables",
+      "To define macros"
+    ]
+  },
+  {
+    "q": "Which of the following is used to access structure members using a pointer?",
+    "o": [
+      "-> operator",
+      ". operator",
+      "* operator",
+      "& operator"
+    ]
+  },
+  {
+    "q": "Which of the following is true about unions in C?",
+    "o": [
+      "All members share the same memory location",
+      "Each member has its own memory location",
+      "Unions can't be passed to functions",
+      "Unions must contain only one data type"
+    ]
+  },
+  {
+    "q": "What does the following structure declaration define?",
+    "c": "struct Student {\n   char name[50];\n   int age;\n};",
+    "o": [
+      "A blueprint for a Student variable with name and age",
+      "An array of students",
+      "A function returning student data",
+      "A constant data block"
+    ]
+  },
+  {
+    "q": "How is memory allocated in a structure with multiple members?",
+    "o": [
+      "Each member gets separate memory space",
+      "All members share the same memory",
+      "Only the first member gets memory",
+      "Depends on the compiler"
+    ]
+  },
+  {
+    "q": "How do you define a pointer to a structure?",
+    "c": "struct Book {\n   int id;\n};\n\nstruct Book *ptr;",
+    "o": [
+      "Defines a pointer to a Book structure",
+      "Defines a structure with pointer members",
+      "Allocates memory for a Book structure",
+      "Initializes a Book structure"
+    ]
+  },
+  {
+    "q": "Which syntax is correct to assign a value using structure pointer?",
+    "c": "(*ptr).age = 21;\n// or\nptr->age = 21;",
+    "o": [
+      "Both are valid",
+      "Only (*ptr).age = 21 is valid",
+      "Only ptr->age = 21 is valid",
+      "Neither are valid"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a nested structure?",
+    "o": [
+      "A structure containing another structure as a member",
+      "A structure that contains arrays only",
+      "A structure that has no members",
+      "A union within a union"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "union Data {\n  int i;\n  float f;\n};\n\nunion Data d;\nd.f = 5.5;\nprintf(\"%d\", d.i);",
+    "o": [
+      "Garbage value (due to memory overlap)",
+      "5",
+      "0",
+      "Compiler Error"
+    ]
+  },
+  {
+    "q": "Which of the following can be used to loop through an array of structures?",
+    "o": [
+      "A standard for loop using index",
+      "A pointer without indexing",
+      "Using malloc directly",
+      "You can't use loops with structures"
+    ]
+  },
+  {
+    "q": "Which of the following statements is false?",
+    "o": [
+      "A union can hold only one value at a time",
+      "Size of a structure is the sum of sizes of its members (with padding)",
+      "Structure members can be different data types",
+      "Unions take more memory than structures"
+    ]
+  },
+  {
+    "q": "Which operator is used to access structure members using a structure variable?",
+    "o": [
+      ". (dot) operator",
+      "-> (arrow) operator",
+      "& (ampersand) operator",
+      "* (asterisk) operator"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares and initializes a structure variable?",
+    "c": "struct Point {\n  int x, y;\n};\n\nstruct Point p = {10, 20};",
+    "o": [
+      "It declares a structure and initializes x to 10 and y to 20",
+      "It causes a syntax error",
+      "It initializes both x and y to 0",
+      "Only x is initialized"
+    ]
+  },
+  {
+    "q": "What will be the size of the following union on a 32-bit system?",
+    "c": "union Data {\n  int i;\n  char ch;\n  float f;\n};",
+    "o": [
+      "4 bytes",
+      "1 byte",
+      "5 bytes",
+      "9 bytes"
+    ]
+  },
+  {
+    "q": "What is the main difference between structures and unions in C?",
+    "o": [
+      "Structures allocate separate memory for each member, unions share memory",
+      "Structures can’t have functions, unions can",
+      "Structures support only integers, unions support all types",
+      "Unions are larger in size than structures"
+    ]
+  },
+  {
+    "q": "How do you access a member of a nested structure?",
+    "c": "emp.address.city",
+    "o": [
+      "Using dot operator twice",
+      "Using a pointer dereference",
+      "Using arrow operator only",
+      "Using a comma operator"
+    ]
+  },
+  {
+    "q": "What is the result of the following code?",
+    "c": "struct Student {\n  int roll;\n  float marks;\n};\n\nstruct Student s[2] = {{1, 89.5}, {2, 76.0}};\nprintf(\"%f\", s[1].marks);",
+    "o": [
+      "76.000000",
+      "89.500000",
+      "Undefined behavior",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a structure pointer and allocates memory?",
+    "o": [
+      "struct Node *ptr = (struct Node*)malloc(sizeof(struct Node));",
+      "struct Node ptr = malloc(struct Node);",
+      "ptr = new struct Node();",
+      "struct Node = *ptr;"
+    ]
+  },
+  {
+    "q": "Which of the following allows dynamic memory allocation for an array of structures?",
+    "o": [
+      "Using malloc with sizeof(struct)",
+      "Using #define",
+      "Using enum",
+      "Using union only"
+    ]
+  },
+  {
+    "q": "Which of these is NOT a valid use of structures?",
+    "o": [
+      "To define a function return type with multiple data types",
+      "To group related data types",
+      "To hold only one data type at a time",
+      "To represent a real-world entity"
+    ]
+  },
+  {
+    "q": "How do you access members of a structure using a pointer?",
+    "o": [
+      "Using -> operator",
+      "Using . operator",
+      "Using & operator",
+      "Using * operator"
+    ]
+  },
+  {
+    "q": "Which of the following best describes an array of structures?",
+    "o": [
+      "Multiple structure variables stored in contiguous memory",
+      "A structure that contains arrays",
+      "A structure pointer",
+      "An array with only integer members"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to define a structure named 'Book'?",
+    "o": [
+      "struct Book { char title[50]; int pages; };",
+      "struct { title[50]; int pages; } Book;",
+      "Book struct { char title[50]; int pages; };",
+      "define struct Book { char title[50]; int pages; };"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "union Test {\n  int a;\n  char b;\n};\n\nint main() {\n  union Test t;\n  t.a = 512;\n  printf(\"%c\", t.b);\n  return 0;\n}",
+    "o": [
+      "A character depending on system's endianness",
+      "512",
+      "Compilation error",
+      "Runtime error"
+    ]
+  },
+  {
+    "q": "Which statement is true about structures in C?",
+    "o": [
+      "Each member has its own memory location",
+      "Only one member can hold a value at a time",
+      "They cannot contain arrays",
+      "Structures are used only in embedded systems"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "struct A {\n  int x;\n  struct B {\n    int y;\n  } b;\n};\n\nint main() {\n  struct A a;\n  a.b.y = 5;\n  printf(\"%d\", a.b.y);\n  return 0;\n}",
+    "o": [
+      "5",
+      "0",
+      "Error: Cannot define struct B inside A",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a union in C?",
+    "o": [
+      "union",
+      "structure",
+      "typedef",
+      "memory"
+    ]
+  },
+  {
+    "q": "What will sizeof return for the following structure on a system with 4-byte int alignment?",
+    "c": "struct Example {\n  int a;\n  char b;\n};",
+    "o": [
+      "8",
+      "5",
+      "4",
+      "6"
+    ]
+  },
+  {
+    "q": "How do you access the member 'marks' of a structure pointer 's'?",
+    "o": [
+      "s->marks",
+      "*s.marks",
+      "s*.marks",
+      "s.marks"
+    ]
+  },
+  {
+    "q": "Which of the following best explains an array of structures?",
+    "o": [
+      "A collection of structure variables stored sequentially in memory",
+      "A structure with only arrays",
+      "A union of structure members",
+      "A structure used for dynamic memory"
+    ]
+  },
+  {
+    "q": "What is the output of this union usage?",
+    "c": "union mix {\n  int i;\n  float f;\n};\n\nint main() {\n  union mix m;\n  m.i = 5;\n  m.f = 3.14;\n  printf(\"%d\", m.i);\n  return 0;\n}",
+    "o": [
+      "Undefined behavior",
+      "5",
+      "3",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which access method is incorrect for structure pointers?",
+    "o": [
+      "*ptr.member",
+      "ptr->member",
+      "(*ptr).member",
+      "ptr -> member"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares an array of 10 structures of type 'Student'?",
+    "o": [
+      "struct Student students[10];",
+      "Student students = 10;",
+      "Student[10] students;",
+      "students[10] = struct Student;"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "struct Item {\n  int id;\n  float price;\n};\n\nint main() {\n  struct Item it = {101, 25.5};\n  printf(\"%d %.1f\", it.id, it.price);\n  return 0;\n}",
+    "o": [
+      "101 25.5",
+      "0 0.0",
+      "Garbage value",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What distinguishes a union from a structure in C?",
+    "o": [
+      "Union uses shared memory for all members",
+      "Union can only have one member",
+      "Structure is faster than union",
+      "Union allows inheritance"
+    ]
+  },
+  {
+    "q": "Which operator is used to access members of a structure pointer?",
+    "o": [
+      "->",
+      ".",
+      "::",
+      "&"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "struct Point {\n  int x, y;\n};\n\nint main() {\n  struct Point p1 = {3, 4};\n  struct Point *ptr = &p1;\n  printf(\"%d %d\", ptr->x, ptr->y);\n  return 0;\n}",
+    "o": [
+      "Prints 3 4",
+      "Prints address of p1",
+      "Gives segmentation fault",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of these is true about nested structures?",
+    "o": [
+      "A structure can contain another structure as a member",
+      "Two structures cannot be defined within each other",
+      "Nested structures require malloc",
+      "Nested structures must be global"
+    ]
+  },
+  {
+    "q": "What is the size of the following union likely to be on most systems?",
+    "c": "union Data {\n  int i;\n  float f;\n  char str[20];\n};",
+    "o": [
+      "20",
+      "4",
+      "24",
+      "8"
+    ]
+  },
+  {
+    "q": "Which of the following is correct to access the second student's name in an array?",
+    "o": [
+      "students[1].name",
+      "students->name[1]",
+      "students[1]->name",
+      "name.students[1]"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "struct A {\n  int x;\n};\n\nint main() {\n  struct A a1 = {10};\n  struct A a2 = a1;\n  printf(\"%d\", a2.x);\n  return 0;\n}",
+    "o": [
+      "10",
+      "0",
+      "Garbage",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Why are unions used in memory-constrained systems?",
+    "o": [
+      "They save memory by sharing storage among members",
+      "They are faster than structs",
+      "They eliminate the need for pointers",
+      "They can store multiple types simultaneously"
+    ]
+  },
+  {
+    "q": "Which statement correctly defines a structure named 'Book' with members title and pages?",
+    "o": [
+      "struct Book { char title[50]; int pages; };",
+      "structure Book { title: char[50], pages: int };",
+      "Book = struct { title[50], pages };",
+      "define struct Book (char title[50], int pages);"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "struct Car {\n  char model[20];\n  int year;\n};\n\nint main() {\n  struct Car c = {\"Sedan\", 2020};\n  printf(\"%s %d\", c.model, c.year);\n  return 0;\n}",
+    "o": [
+      "Sedan 2020",
+      "model 2020",
+      "2020 Sedan",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "What happens when you assign one structure variable to another of the same type?",
+    "o": [
+      "All members are copied from source to destination",
+      "Only the pointer is copied",
+      "It results in a compile-time error",
+      "Only primitive members are copied"
+    ]
+  },
+  {
+    "q": "Which of the following is TRUE about a union?",
+    "o": [
+      "Only one member can contain a value at any given time",
+      "All members store values simultaneously",
+      "Unions take more memory than structures",
+      "Unions allow inheritance in C"
+    ]
+  },
+  {
+    "q": "How do you access a member of a structure through a pointer?",
+    "o": [
+      "Using the '->' operator",
+      "Using the '.' operator",
+      "Using the '&' operator",
+      "Using the '*' operator"
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes an array of 3 Employee structures?",
+    "o": [
+      "struct Employee emp[3];",
+      "Employee emp = [3];",
+      "struct emp[3];",
+      "Employee[3] emp;"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "union Number {\n  int x;\n  float y;\n};\n\nint main() {\n  union Number n;\n  n.x = 100;\n  printf(\"%d\", n.x);\n  return 0;\n}",
+    "o": [
+      "100",
+      "0",
+      "Garbage",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which line correctly defines a nested structure?",
+    "o": [
+      "struct Student { char name[30]; struct Address { char city[20]; } addr; };",
+      "struct Student (name[30], Address {city[20]});",
+      "nested struct Student { name, city };",
+      "Student struct: name, address(city);"
+    ]
+  },
+  {
+    "q": "What is the size of the following structure on most systems (assuming int = 4 bytes, float = 4 bytes)?",
+    "c": "struct Data {\n  int id;\n  float value;\n};",
+    "o": [
+      "8",
+      "4",
+      "12",
+      "Depends on the system's alignment"
+    ]
+  },
+  {
+    "q": "Which of these is used to dynamically allocate memory for a structure?",
+    "o": [
+      "malloc()",
+      "calloc_structure()",
+      "new()",
+      "alloc_struct()"
+    ]
+  },
+  {
+    "q": "Which of the following is true regarding structures in C?",
+    "o": [
+      "Structures group related variables of different types under one name",
+      "Structures can only contain integers",
+      "Structures share memory between members like unions",
+      "Structure variables cannot be copied directly"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "struct Point {\n  int x, y;\n};\n\nint main() {\n  struct Point p = {1, 2};\n  printf(\"%d %d\", p.x, p.y);\n  return 0;\n}",
+    "o": [
+      "1 2",
+      "2 1",
+      "0 0",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which is a valid way to define and use a pointer to a structure?",
+    "o": [
+      "struct Student *ptr = &s;",
+      "Student *ptr = s;",
+      "ptr = Student&;",
+      "*struct ptr = Student;"
+    ]
+  },
+  {
+    "q": "What is the size of this union likely to be on a 32-bit system?",
+    "c": "union Test {\n  int i;\n  double d;\n};",
+    "o": [
+      "8",
+      "4",
+      "12",
+      "16"
+    ]
+  },
+  {
+    "q": "How do you initialize a nested structure?",
+    "c": "struct Date {\n  int day, month, year;\n};\n\nstruct Employee {\n  int id;\n  struct Date dob;\n};\n\nstruct Employee e = {1, {12, 8, 1990}};",
+    "o": [
+      "Valid nested initialization",
+      "Not allowed in C",
+      "Must use malloc",
+      "Needs typedef first"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to define a union?",
+    "o": [
+      "union Example { int a; float b; };",
+      "union Example ( int a; float b; );",
+      "Example union = { int a, float b };",
+      "union = Example { int a; float b; };"
+    ]
+  },
+  {
+    "q": "Which of the following best describes how memory is allocated in unions?",
+    "o": [
+      "Memory is shared by all members, equal to the largest member",
+      "Each member gets its own memory space",
+      "Unions use dynamic memory by default",
+      "All members are stored sequentially"
+    ]
+  },
+  {
+    "q": "How would you access the 'salary' of the 4th element in an array of structures named 'emp'?",
+    "o": [
+      "emp[3].salary",
+      "emp->salary[3]",
+      "emp.salary[4]",
+      "emp[4]->salary"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "union U {\n  int x;\n  char y;\n};\n\nint main() {\n  union U u;\n  u.x = 97;\n  printf(\"%c\", u.y);\n  return 0;\n}",
+    "o": [
+      "a",
+      "97",
+      "0",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following is FALSE about structures in C?",
+    "o": [
+      "Structures automatically initialize members to zero",
+      "Structures can be nested",
+      "Structure members can be of different types",
+      "Structures can be passed to functions"
+    ]
+  },
+  {
+    "q": "Which operator is used to access members of a structure using a pointer?",
+    "o": [
+      "->",
+      ".",
+      "&",
+      "::"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "struct Data {\n  int a;\n  float b;\n};\n\nint main() {\n  struct Data d = {10, 20.5};\n  printf(\"%d %.1f\", d.a, d.b);\n  return 0;\n}",
+    "o": [
+      "10 20.5",
+      "20.5 10",
+      "10 0.0",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about arrays of structures?",
+    "o": [
+      "They allow storage of multiple structure variables in contiguous memory",
+      "Each element in the array must have the same value",
+      "They can only hold integers",
+      "They cannot be initialized at the time of declaration"
+    ]
+  },
+  {
+    "q": "What is the key memory difference between a structure and a union?",
+    "o": [
+      "In a union, all members share the same memory location",
+      "In a structure, only one member can be used at a time",
+      "Unions occupy more memory than structures",
+      "Structures overwrite memory of previous members"
+    ]
+  },
+  {
+    "q": "Which of the following code snippets correctly declares an array of 5 `Point` structures?",
+    "c": "struct Point {\n  int x, y;\n};",
+    "o": [
+      "struct Point arr[5];",
+      "Point arr(5);",
+      "Point[5] arr;",
+      "array Point[5];"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "union Data {\n  int i;\n  float f;\n};\n\nint main() {\n  union Data d;\n  d.f = 10.0;\n  printf(\"%d\", d.i);\n  return 0;\n}",
+    "o": [
+      "Undefined output (depends on platform)",
+      "10",
+      "Compilation error",
+      "0"
+    ]
+  },
+  {
+    "q": "Can a structure contain a member that is a pointer to the same structure type?",
+    "o": [
+      "Yes, this is commonly used for linked lists",
+      "No, it's a recursive declaration error",
+      "Only in C++",
+      "Only with typedef"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "struct Book {\n  char title[20];\n  int pages;\n};\n\nint main() {\n  struct Book b = {\"C Guide\", 300};\n  printf(\"%s %d\", b.title, b.pages);\n  return 0;\n}",
+    "o": [
+      "C Guide 300",
+      "300 C Guide",
+      "C Guide",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about nested structures?",
+    "o": [
+      "A structure can contain another structure as a member",
+      "Nested structures are not allowed in C",
+      "Only unions can be nested",
+      "A structure can only contain primitive types"
+    ]
+  },
+  {
+    "q": "Which statement correctly assigns the address of a structure variable to a pointer?",
+    "c": "struct Student {\n  int id;\n};\nstruct Student s;",
+    "o": [
+      "struct Student *ptr = &s;",
+      "struct Student ptr = *s;",
+      "*ptr = &Student;",
+      "&ptr = Student;"
+    ]
+  },
+  {
+    "q": "What is the size of the following structure likely to be (on a 32-bit system)?",
+    "c": "struct Example {\n  int x;\n  char y;\n};",
+    "o": [
+      "8 bytes",
+      "5 bytes",
+      "4 bytes",
+      "9 bytes"
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes a structure?",
+    "c": "struct Item {\n  int id;\n  float price;\n};",
+    "o": [
+      "struct Item item1 = {101, 29.99};",
+      "struct Item item1 = 101, 29.99;",
+      "Item item1 = {101, 29.99};",
+      "item1 = {101, 29.99};"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "union Value {\n  int i;\n  char c;\n};\n\nint main() {\n  union Value v;\n  v.i = 65;\n  printf(\"%c\", v.c);\n  return 0;\n}",
+    "o": [
+      "A",
+      "65",
+      "Undefined",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a union in C?",
+    "o": [
+      "union",
+      "struct",
+      "enum",
+      "typedef"
+    ]
+  },
+  {
+    "q": "What happens if you access a structure member without using the dot or arrow operator?",
+    "o": [
+      "Compilation error",
+      "Runtime error",
+      "Garbage value",
+      "Nothing happens"
+    ]
+  },
+  {
+    "q": "Which statement about the following structure array is correct?",
+    "c": "struct Point {\n  int x, y;\n};\nstruct Point p[3];",
+    "o": [
+      "It creates an array of 3 structure variables",
+      "It is an invalid declaration",
+      "Only p[0] is valid, others cause error",
+      "Only dynamic allocation works here"
+    ]
+  },
+  {
+    "q": "How do you access structure members using a pointer in C?",
+    "o": [
+      "Using the -> operator",
+      "Using the . operator",
+      "Using the & operator",
+      "Using the * operator directly"
+    ]
+  },
+  {
+    "q": "Which of the following structures contains a nested structure?",
+    "c": "struct Address {\n  char city[20];\n};\n\nstruct Person {\n  char name[30];\n  struct Address addr;\n};",
+    "o": [
+      "struct Person",
+      "struct Address",
+      "None",
+      "Both are nested"
+    ]
+  },
+  {
+    "q": "Which of these can a union NOT do that a structure can?",
+    "o": [
+      "Store multiple members with different values simultaneously",
+      "Define multiple members",
+      "Be passed to a function",
+      "Be part of another structure"
+    ]
+  },
+  {
+    "q": "What is printed by the following code?",
+    "c": "struct Data {\n  int x;\n};\nint main() {\n  struct Data d, *ptr;\n  ptr = &d;\n  ptr->x = 42;\n  printf(\"%d\", d.x);\n  return 0;\n}",
+    "o": [
+      "42",
+      "0",
+      "Garbage value",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What does the following declaration represent?",
+    "c": "struct Book {\n  char title[100];\n  int pages;\n} b1, b2;",
+    "o": [
+      "It defines a structure and declares two structure variables",
+      "It only defines a structure type",
+      "It only declares variables b1 and b2 without a structure",
+      "It causes a syntax error"
+    ]
+  },
+  {
+    "q": "Which of the following allows accessing members of a structure pointer?",
+    "o": [
+      "->",
+      ".",
+      "::",
+      "->*"
+    ]
+  },
+  {
+    "q": "What is the difference between structure and union memory allocation?",
+    "o": [
+      "Structures allocate memory for all members, unions share memory",
+      "Unions allocate memory for all members, structures share memory",
+      "Both allocate memory the same way",
+      "Structures do not allocate memory"
+    ]
+  },
+  {
+    "q": "How do you pass a structure to a function efficiently?",
+    "o": [
+      "Pass a pointer to the structure",
+      "Pass each member individually",
+      "Copy the structure",
+      "Use global variables"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "struct Student {\n  int roll;\n};\n\nint main() {\n  struct Student s = {25};\n  struct Student *ptr = &s;\n  printf(\"%d\", ptr->roll);\n  return 0;\n}",
+    "o": [
+      "25",
+      "0",
+      "Garbage value",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax for an array of structures?",
+    "c": "struct Employee {\n  char name[50];\n  int id;\n};",
+    "o": [
+      "struct Employee emp[10];",
+      "struct Employee = emp[10];",
+      "struct Employee emp = [10];",
+      "struct Employee[10] emp;"
+    ]
+  },
+  {
+    "q": "In a union, what happens if you assign a value to one member and then access another?",
+    "o": [
+      "It may give unexpected or garbage results",
+      "It always gives the same value",
+      "It causes a runtime error",
+      "It resets the union"
+    ]
+  },
+  {
+    "q": "Which of the following is valid nested structure usage?",
+    "c": "struct Date {\n  int day, month, year;\n};\nstruct Event {\n  char name[50];\n  struct Date date;\n};",
+    "o": [
+      "struct Event e = {\"Meeting\", {1, 1, 2025}};",
+      "struct Event e = (\"Meeting\", {1, 1, 2025});",
+      "struct Event e = {\"Meeting\", 1, 1, 2025};",
+      "struct Event e = {{\"Meeting\"}, {1, 1, 2025}};"
+    ]
+  },
+  {
+    "q": "What is the result of sizeof() when applied to a union?",
+    "c": "union Data {\n  int i;\n  float f;\n  char str[20];\n};",
+    "o": [
+      "20",
+      "4",
+      "24",
+      "Depends on the compiler"
+    ]
+  },
+  {
+    "q": "Which of the following best describes 'p->x' in C?",
+    "o": [
+      "Accessing member x of the structure pointed by pointer p",
+      "Accessing pointer x of structure p",
+      "Dereferencing x and then accessing p",
+      "None of the above"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a structure in C?",
+    "o": [
+      "struct Point { int x; int y; };",
+      "structure Point { int x, y };",
+      "Point struct { x, y };",
+      "struct Point = { int x; int y; };"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "union test {\n  int x;\n  float y;\n};\n\nint main() {\n  union test t;\n  t.x = 10;\n  t.y = 20.5;\n  printf(\"%d\", t.x);\n  return 0;\n}",
+    "o": [
+      "Garbage value",
+      "10",
+      "20",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following allows a structure to contain another structure?",
+    "o": [
+      "Nested structure",
+      "Pointer to structure",
+      "Union",
+      "Structure array"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "struct Node {\n  int data;\n  struct Node *next;\n};\n\nint main() {\n  struct Node n;\n  n.data = 100;\n  n.next = NULL;\n  printf(\"%d\", n.data);\n  return 0;\n}",
+    "o": [
+      "100",
+      "0",
+      "NULL",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "How do you access the members of a structure using a structure variable?",
+    "o": [
+      "Using dot operator (.)",
+      "Using arrow operator (->)",
+      "Using star operator (*)",
+      "Using address operator (&)"
+    ]
+  },
+  {
+    "q": "What is the memory size of the following union?",
+    "c": "union Record {\n  int id;\n  char name[50];\n  float salary;\n};",
+    "o": [
+      "50",
+      "4",
+      "54",
+      "56"
+    ]
+  },
+  {
+    "q": "Which of the following is true about accessing structure array elements?",
+    "c": "struct Item {\n  int code;\n} items[5];",
+    "o": [
+      "items[0].code = 101;",
+      "items.code[0] = 101;",
+      "items(0).code = 101;",
+      "items->code = 101;"
+    ]
+  },
+  {
+    "q": "In which scenario would you prefer a union over a structure?",
+    "o": [
+      "When only one member will be used at a time",
+      "When all members need to be stored independently",
+      "When nesting is required",
+      "When using arrays of data"
+    ]
+  },
+  {
+    "q": "What is the purpose of the arrow operator (->) in C?",
+    "o": [
+      "To access structure members via a pointer",
+      "To dereference a variable",
+      "To define a structure",
+      "To call a function"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a pointer to a structure?",
+    "c": "struct Car {\n  char model[20];\n  int year;\n};",
+    "o": [
+      "struct Car *cptr;",
+      "Car *cptr;",
+      "*struct Car cptr;",
+      "Car struct *cptr;"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a structure in C?",
+    "o": [
+      "struct",
+      "structure",
+      "record",
+      "define"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "struct Book {\n  char title[20];\n  int pages;\n};\n\nint main() {\n  struct Book b1 = {\"C Guide\", 200};\n  printf(\"%d\", b1.pages);\n  return 0;\n}",
+    "o": [
+      "200",
+      "0",
+      "20",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a union?",
+    "o": [
+      "All members share the same memory location",
+      "Each member has its own separate memory",
+      "It allows nesting of other unions only",
+      "It is used only with arrays"
+    ]
+  },
+  {
+    "q": "What is the size of a union that contains an `int`, a `float`, and a `char[10]`?",
+    "o": [
+      "10 (or platform-dependent)",
+      "sizeof(int) + sizeof(float) + 10",
+      "sizeof(int) + sizeof(float)",
+      "sizeof(char)"
+    ]
+  },
+  {
+    "q": "What is the correct way to declare an array of 5 structures of type `Student`?",
+    "o": [
+      "struct Student s[5];",
+      "Student struct s[5];",
+      "s[5] struct Student;",
+      "array Student[5];"
+    ]
+  },
+  {
+    "q": "Which operator is used to access a member of a structure pointer?",
+    "o": [
+      "->",
+      ".",
+      "*",
+      "&"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "struct A {\n  int x;\n};\n\nint main() {\n  struct A a = {5};\n  struct A *ptr = &a;\n  printf(\"%d\", ptr->x);\n  return 0;\n}",
+    "o": [
+      "5",
+      "0",
+      "Garbage value",
+      "Compiler error"
+    ]
+  },
+  {
+    "q": "Which of the following allows nesting of structures inside a structure?",
+    "o": [
+      "struct Outer { struct Inner i; };",
+      "struct Outer ( struct Inner i );",
+      "struct Outer { Inner };",
+      "structure Outer includes Inner;"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT true about unions?",
+    "o": [
+      "All members can be used simultaneously",
+      "Only one member can contain a value at a time",
+      "They help save memory",
+      "All members share the same memory space"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "struct Sample {\n  int x;\n  float y;\n};\n\nint main() {\n  struct Sample arr[2] = {{1, 1.1}, {2, 2.2}};\n  printf(\"%.1f\", arr[1].y);\n  return 0;\n}",
+    "o": [
+      "2.2",
+      "1.1",
+      "1.0",
+      "0.0"
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes a structure variable?",
+    "c": "struct Point {\n  int x, y;\n};\n\nint main() {\n  struct Point p = {3, 4};\n  return 0;\n}",
+    "o": [
+      "Correct initialization of struct Point",
+      "Invalid because of missing typedef",
+      "Cannot initialize like this in C",
+      "Needs separate assignment to members"
+    ]
+  },
+  {
+    "q": "Which of the following statements is TRUE about structures in C?",
+    "o": [
+      "Structures can hold members of different data types",
+      "Structure members must be of the same type",
+      "Structures cannot contain arrays",
+      "Structure variables must be global"
+    ]
+  },
+  {
+    "q": "What will be the output of this program?",
+    "c": "union Data {\n  int i;\n  float f;\n};\n\nint main() {\n  union Data d;\n  d.i = 10;\n  d.f = 3.14;\n  printf(\"%d\", d.i);\n  return 0;\n}",
+    "o": [
+      "Garbage value",
+      "10",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "What is the purpose of using `typedef` with structures?",
+    "o": [
+      "To create an alias for the structure name",
+      "To restrict structure to certain scope",
+      "To automatically initialize structure members",
+      "To prevent structure modification"
+    ]
+  },
+  {
+    "q": "How do you access a nested structure member?",
+    "c": "struct Inner {\n  int a;\n};\n\nstruct Outer {\n  struct Inner in;\n};\n\nint main() {\n  struct Outer o;\n  o.in.a = 10;\n  printf(\"%d\", o.in.a);\n  return 0;\n}",
+    "o": [
+      "10",
+      "0",
+      "Compilation error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a pointer to a structure?",
+    "o": [
+      "struct Student *s;",
+      "pointer Student s;",
+      "Student ptr;",
+      "*struct Student s;"
+    ]
+  },
+  {
+    "q": "Which of the following allows dynamic memory allocation for a structure in C?",
+    "o": [
+      "malloc()",
+      "calloc_struct()",
+      "create()",
+      "new_struct()"
+    ]
+  },
+  {
+    "q": "Which of the following is a major difference between structures and unions?",
+    "o": [
+      "Structures allocate separate memory for each member, unions share the same memory",
+      "Structures can't have different data types, unions can",
+      "Unions are slower than structures",
+      "Structures are used only with functions"
+    ]
+  },
+  {
+    "q": "Given an array of structures, how do you access the member `name` of the third element?",
+    "o": [
+      "arr[2].name",
+      "arr.name[2]",
+      "arr->2.name",
+      "arr[3].name"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "struct S {\n  int x;\n};\n\nint main() {\n  struct S s1 = {10};\n  struct S *ptr = &s1;\n  ptr->x = 20;\n  printf(\"%d\", s1.x);\n  return 0;\n}",
+    "o": [
+      "20",
+      "10",
+      "0",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following is true about an array of structures?",
+    "o": [
+      "Each element of the array is a structure variable",
+      "It is illegal to create arrays of structures in C",
+      "All elements must be initialized with the same values",
+      "Only global arrays of structures are allowed"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "struct Data {\n  int a;\n  float b;\n};\n\nint main() {\n  struct Data arr[2] = {{1, 2.5}, {3, 4.5}};\n  printf(\"%.1f\", arr[1].b);\n  return 0;\n}",
+    "o": [
+      "4.5",
+      "2.5",
+      "3.0",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "How do unions save memory compared to structures?",
+    "o": [
+      "All members share the same memory location in a union",
+      "Unions compress data automatically",
+      "Unions allocate memory only at runtime",
+      "Unions reuse members from other unions"
+    ]
+  },
+  {
+    "q": "What is the correct syntax to access a structure member using a pointer?",
+    "o": [
+      "ptr->member",
+      "*ptr.member",
+      "ptr.member",
+      "(*ptr)->member"
+    ]
+  },
+  {
+    "q": "Which statement is TRUE regarding nested structures?",
+    "o": [
+      "A structure can contain another structure as a member",
+      "Nested structures are not allowed in C",
+      "Nested structures must be defined outside main()",
+      "Only one level of nesting is allowed"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "union Example {\n  int x;\n  char ch;\n};\n\nint main() {\n  union Example e;\n  e.x = 65;\n  printf(\"%c\", e.ch);\n  return 0;\n}",
+    "o": [
+      "A",
+      "65",
+      "Compilation error",
+      "Undefined behavior"
+    ]
+  },
+  {
+    "q": "What is the size of the following union likely to be (on most systems)?",
+    "c": "union U {\n  int a;\n  double b;\n  char c;\n};",
+    "o": [
+      "Size of the largest member (likely double)",
+      "Sum of sizes of all members",
+      "Size of the smallest member (char)",
+      "Always 4 bytes"
+    ]
+  },
+  {
+    "q": "Which of the following accesses the member 'grade' of structure 'student' using a pointer 'sPtr'?",
+    "o": [
+      "sPtr->grade",
+      "*sPtr.grade",
+      "&sPtr->grade",
+      "sPtr.grade"
+    ]
+  },
+  {
+    "q": "Which of the following is a key difference between structures and unions in terms of memory allocation?",
+    "o": [
+      "Structure members have separate memory locations, union members share the same",
+      "Structure members are stored in a compressed format, union members are not",
+      "Structure variables are larger than union variables by definition",
+      "Unions are allocated on the stack, structures on the heap"
+    ]
+  },
+  {
+    "q": "How do you pass a structure to a function by reference?",
+    "c": "struct Student {\n  int id;\n};\n\nvoid update(struct Student *s) {\n  s->id = 10;\n}",
+    "o": [
+      "By using a pointer to the structure",
+      "By copying the whole structure",
+      "By using `&` inside the function",
+      "By using union instead of struct"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a structure in C?",
+    "o": [
+      "struct",
+      "structure",
+      "define",
+      "record"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "struct Point {\n  int x, y;\n};\n\nint main() {\n  struct Point p = {3, 4};\n  printf(\"%d %d\", p.x, p.y);\n  return 0;\n}",
+    "o": [
+      "3 4",
+      "4 3",
+      "0 0",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to declare an array of 10 structures of type `Book`?",
+    "o": [
+      "struct Book library[10];",
+      "Book[10] library;",
+      "struct library[10] Book;",
+      "Book library;"
+    ]
+  },
+  {
+    "q": "What is the main use of unions in C?",
+    "o": [
+      "To save memory by using the same memory for different members",
+      "To group different data types in separate memory blocks",
+      "To define multiple return values from a function",
+      "To replace structures in modern C"
+    ]
+  },
+  {
+    "q": "Which operator is used to access structure members using a pointer?",
+    "o": [
+      "->",
+      ".",
+      "&",
+      "*"
+    ]
+  },
+  {
+    "q": "What will be the output of this program?",
+    "c": "union Test {\n  int i;\n  char c;\n};\n\nint main() {\n  union Test t;\n  t.i = 97;\n  printf(\"%c\", t.c);\n  return 0;\n}",
+    "o": [
+      "a",
+      "97",
+      "0",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which statement is TRUE about nested structures?",
+    "o": [
+      "You can define a structure inside another structure",
+      "Nested structures must be defined globally",
+      "Nested structures are deprecated in C",
+      "Nested structures cannot access outer members"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "struct Node {\n  int data;\n  struct Node *next;\n};",
+    "o": [
+      "Defines a self-referential structure for a linked list",
+      "Creates a structure with circular reference",
+      "Gives compilation error due to recursive definition",
+      "Creates an array of pointers"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about memory allocation in structures?",
+    "o": [
+      "Each member gets its own memory space",
+      "All members share the same memory space",
+      "Only the largest member gets memory",
+      "All members are compressed into one byte"
+    ]
+  },
+  {
+    "q": "What is the purpose of using an array of structures?",
+    "o": [
+      "To store multiple records of the same structure type",
+      "To create nested structures",
+      "To reduce the size of the structure",
+      "To access structure members using unions"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the size of a union?",
+    "o": [
+      "It is equal to the size of its largest member",
+      "It is the sum of all members’ sizes",
+      "It is always 4 bytes",
+      "It is double the size of a structure"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "struct Student {\n  char name[10];\n  int age;\n};\n\nint main() {\n  struct Student s = {\"John\", 20};\n  printf(\"%s %d\", s.name, s.age);\n  return 0;\n}",
+    "o": [
+      "John 20",
+      "20 John",
+      "Compilation Error",
+      "Segmentation Fault"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a structure pointer?",
+    "o": [
+      "struct Book *b;",
+      "struct *Book b;",
+      "Book &b;",
+      "Book -> b;"
+    ]
+  },
+  {
+    "q": "How do you access a member of a structure using a pointer?",
+    "o": [
+      "Using the -> operator",
+      "Using the . operator",
+      "Using the * operator",
+      "Using the & operator"
+    ]
+  },
+  {
+    "q": "What is the difference between structure and union?",
+    "o": [
+      "Structure allocates separate memory; union shares memory",
+      "Structure shares memory; union allocates separate memory",
+      "Structures are used for integers only",
+      "Unions can’t be passed to functions"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "union Data {\n  int x;\n  float y;\n};\n\nint main() {\n  union Data d;\n  d.x = 10;\n  d.y = 5.5;\n  printf(\"%d\", d.x);\n  return 0;\n}",
+    "o": [
+      "Garbage value",
+      "10",
+      "5",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which is the correct way to initialize an array of structures?",
+    "o": [
+      "struct Employee e[2] = {{\"Alice\", 25}, {\"Bob\", 30}};",
+      "Employee[2] = {\"Alice\", 25, \"Bob\", 30};",
+      "struct Employee = [2] {\"Alice\", 25};",
+      "struct Employee[] = {{Alice, 25}, {Bob, 30}};"
+    ]
+  },
+  {
+    "q": "Why might a union be preferred over a structure in embedded systems?",
+    "o": [
+      "To save memory by overlapping storage",
+      "To allow multiple data types to be accessed at once",
+      "To avoid using pointers",
+      "To avoid function calls"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "struct A {\n  int x;\n  struct B {\n    int y;\n  } b;\n};\n\nint main() {\n  struct A a = {5, {10}};\n  printf(\"%d\", a.b.y);\n  return 0;\n}",
+    "o": [
+      "10",
+      "5",
+      "0",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct reason to use a pointer to structure?",
+    "o": [
+      "To pass large structures efficiently to functions",
+      "To copy structures quickly",
+      "To increase memory size",
+      "To make structure members public"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a structure in C?",
+    "o": [
+      "struct",
+      "structure",
+      "define",
+      "record"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "struct Car {\n  char model[10];\n  int year;\n};\n\nint main() {\n  struct Car c = {\"Tesla\", 2023};\n  printf(\"%s %d\", c.model, c.year);\n  return 0;\n}",
+    "o": [
+      "Tesla 2023",
+      "2023 Tesla",
+      "model year",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about unions in C?",
+    "o": [
+      "All members share the same memory location",
+      "Each member has its own memory like structures",
+      "Union cannot have integer members",
+      "Unions require a pointer to be used"
+    ]
+  },
+  {
+    "q": "What will be the size of the following union on a system where int = 4 bytes and char[20] = 20 bytes?",
+    "c": "union Info {\n  int id;\n  char name[20];\n};",
+    "o": [
+      "20 bytes",
+      "24 bytes",
+      "4 bytes",
+      "16 bytes"
+    ]
+  },
+  {
+    "q": "How do you define an array of 100 structures named 'Student'?",
+    "o": [
+      "struct Student students[100];",
+      "students[100] = struct Student;",
+      "struct Student[100];",
+      "Student students(100);"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "struct Point {\n  int x, y;\n};\n\nvoid print(struct Point *p) {\n  printf(\"%d %d\", p->x, p->y);\n}\n\nint main() {\n  struct Point pt = {3, 4};\n  print(&pt);\n  return 0;\n}",
+    "o": [
+      "3 4",
+      "4 3",
+      "Compilation error",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "How do you access a nested structure member in C?",
+    "o": [
+      "Using dot (.) or arrow (->) operators recursively",
+      "Only using the & operator",
+      "Using a single * operator",
+      "Only using dot operator twice"
+    ]
+  },
+  {
+    "q": "Which of the following is true regarding structure padding in C?",
+    "o": [
+      "Compiler may insert padding bytes for alignment",
+      "Compiler always packs structures without padding",
+      "Padding only occurs in unions",
+      "Padding applies only to char members"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "union Test {\n  int i;\n  float f;\n};\n\nint main() {\n  union Test t;\n  t.i = 100;\n  printf(\"%d\", t.i);\n  return 0;\n}",
+    "o": [
+      "100",
+      "Garbage value",
+      "Compilation error",
+      "0"
+    ]
+  },
+  {
+    "q": "What is the correct syntax to assign a structure variable to another of the same type?",
+    "o": [
+      "struct1 = struct2;",
+      "struct1 := struct2;",
+      "assign(struct1, struct2);",
+      "copy struct1 to struct2;"
+    ]
+  },
+  {
+    "q": "What is the correct way to define a structure in C?",
+    "o": [
+      "struct student { char name[20]; int age; };",
+      "structure student { char name[20]; int age; };",
+      "student struct { char name[20]; int age; };",
+      "def student { char name[20]; int age; };"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nstruct point { int x; int y; };\nint main() {\n    struct point p = {5, 10};\n    printf(\"%d\", p.y);\n    return 0;\n}",
+    "o": [
+      "10",
+      "5",
+      "15",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a variable of a structure type?",
+    "o": [
+      "struct student s1;",
+      "student s1;",
+      "struct s1 student;",
+      "student struct s1;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nunion data {\n    int i;\n    float f;\n};\nint main() {\n    union data d;\n    d.i = 10;\n    d.f = 20.5;\n    printf(\"%d\", d.i);\n    return 0;\n}",
+    "o": [
+      "Some unpredictable value",
+      "10",
+      "20",
+      "20.5"
+    ]
+  },
+  {
+    "q": "What is the key difference between structures and unions in C?",
+    "o": [
+      "Structure members have separate memory locations while union members share the same memory location",
+      "Unions can have more members than structures",
+      "Structures use less memory than unions",
+      "Unions cannot be nested but structures can"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nstruct address {\n    char city[20];\n    int pin;\n};\nstruct employee {\n    char name[20];\n    struct address addr;\n};\nint main() {\n    struct employee emp = {\"John\", {\"New York\", 10001}};\n    printf(\"%s\", emp.addr.city);\n    return 0;\n}",
+    "o": [
+      "New York",
+      "John",
+      "10001",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "How do you access a structure member using a pointer to the structure?",
+    "o": [
+      "ptr->member",
+      "ptr.member",
+      "*ptr.member",
+      "ptr*->member"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nstruct test {\n    int a;\n    int b;\n};\nint main() {\n    struct test t[2] = {{1, 2}, {3, 4}};\n    printf(\"%d\", t[1].a);\n    return 0;\n}",
+    "o": [
+      "3",
+      "1",
+      "2",
+      "4"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a pointer to a structure?",
+    "o": [
+      "struct student *ptr;",
+      "student *ptr;",
+      "*ptr student;",
+      "struct *student ptr;"
+    ]
+  },
+  {
+    "q": "What is the size of the following union? (assuming int takes 4 bytes, float takes 4 bytes)",
+    "c": "union example {\n    int x;\n    float y;\n};",
+    "o": [
+      "4 bytes",
+      "8 bytes",
+      "16 bytes",
+      "1 byte"
+    ]
+  },
+  {
+    "q": "What is the correct way to initialize a structure member?",
+    "o": [
+      "struct student s1 = {\"Alice\", 20};",
+      "struct student s1 = student(\"Alice\", 20);",
+      "struct student s1 = new student(\"Alice\", 20);",
+      "struct student s1 = {\"Alice\"; 20};"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nstruct point {\n    int x;\n    int y;\n};\nvoid print(struct point *p) {\n    printf(\"%d %d\", p->x, p->y);\n}\nint main() {\n    struct point p1 = {5, 10};\n    print(&p1);\n    return 0;\n}",
+    "o": [
+      "5 10",
+      "10 5",
+      "Address of p1",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "How do you declare a nested structure in C?",
+    "o": [
+      "struct Address { char city[20]; struct Pin { int code; } pin; };",
+      "nested struct Address { char city[20]; int pin; };",
+      "struct Address { char city[20] + struct Pin { int code; }; };",
+      "struct Address { char city[20] nested int pin; };"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nunion Data {\n    int num;\n    char letter;\n};\nint main() {\n    union Data d;\n    d.num = 65;\n    printf(\"%c\", d.letter);\n    return 0;\n}",
+    "o": [
+      "'A' (ASCII 65)",
+      "65",
+      "Garbage value",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which statement about unions is true?",
+    "o": [
+      "All union members share the same memory location.",
+      "Unions allocate memory for all members simultaneously.",
+      "Unions cannot be used in arrays.",
+      "Unions are identical to structures in memory usage."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nstruct Book {\n    char title[20];\n    int pages;\n};\nint main() {\n    struct Book b[2] = {{\"C Programming\", 300}, {\"Algorithms\", 450}};\n    printf(\"%d\", b[1].pages);\n    return 0;\n}",
+    "o": [
+      "450",
+      "300",
+      "Garbage value",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "How do you access a nested structure member?",
+    "o": [
+      "employee.address.pin",
+      "employee->address->pin",
+      "employee.pin.address",
+      "employee(address.pin)"
+    ]
+  },
+  {
+    "q": "What is the size of this structure? (Assume int = 4 bytes, char = 1 byte, padding aligned to 4 bytes)",
+    "c": "struct Example {\n    int id;\n    char tag;\n};",
+    "o": [
+      "8 bytes (4 + 1 + 3 padding)",
+      "5 bytes",
+      "4 bytes",
+      "1 byte"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nstruct Point {\n    int x;\n    int y;\n};\nvoid move(struct Point *p) {\n    p->x += 5;\n}\nint main() {\n    struct Point p = {10, 20};\n    move(&p);\n    printf(\"%d\", p.x);\n    return 0;\n}",
+    "o": [
+      "15",
+      "10",
+      "20",
+      "25"
+    ]
+  },
+  {
+    "q": "Which of these correctly initializes a pointer to a structure?",
+    "o": [
+      "struct Student *ptr = &s1;",
+      "Student *ptr = s1;",
+      "struct ptr Student = s1;",
+      "*struct Student ptr = s1;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nunion Test {\n    short a;\n    char b[2];\n};\nint main() {\n    union Test t;\n    t.a = 0x4142;\n    printf(\"%c\", t.b[0]);\n    return 0;\n}",
+    "o": [
+      "'B' (0x42 in little-endian)",
+      "'A' (0x41)",
+      "0x4142",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What is the primary advantage of using unions over structures?",
+    "o": [
+      "Memory efficiency when storing mutually exclusive data.",
+      "Faster access to all members simultaneously.",
+      "Ability to nest other unions.",
+      "Automatic type conversion between members."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nstruct Node {\n    int data;\n    struct Node *next;\n};\nint main() {\n    struct Node n1 = {10, NULL};\n    printf(\"%d\", sizeof(n1));\n    return 0;\n}",
+    "o": [
+      "8 or 16 (depends on pointer size)",
+      "4",
+      "10",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "How do you dynamically allocate memory for an array of structures?",
+    "o": [
+      "struct Student *arr = malloc(5 * sizeof(struct Student));",
+      "struct Student arr = malloc(5);",
+      "struct *Student arr = calloc(5);",
+      "malloc(struct Student arr[5]);"
+    ]
+  },
+  {
+    "q": "What is the correct way to declare a structure with a bit field?",
+    "o": [
+      "struct { unsigned int flag : 1; };",
+      "struct { int flag : 1; };",
+      "struct { bit field flag : 1; };",
+      "struct { flag : 1bit; };"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nstruct { int x; char y; } s;\nint main() {\n    printf(\"%zu\", sizeof(s));\n    return 0;\n}",
+    "o": [
+      "8 (due to structure padding)",
+      "5",
+      "4",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of these correctly demonstrates a self-referential structure?",
+    "o": [
+      "struct Node { int data; struct Node* next; };",
+      "struct Node { int data; Node next; };",
+      "struct Node { int data; struct Node next; };",
+      "struct Node { int data; next* Node; };"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nunion {\n    int a;\n    float b;\n} u;\nint main() {\n    u.b = 3.14;\n    printf(\"%d\", u.a);\n    return 0;\n}",
+    "o": [
+      "A representation of 3.14 in integer form",
+      "3",
+      "3.14",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "How do you properly compare two structures in C?",
+    "o": [
+      "Compare each member individually",
+      "Use the == operator",
+      "Use memcmp() on the structures",
+      "Structures cannot be compared"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#pragma pack(1)\nstruct {\n    char a;\n    int b;\n} s;\nint main() {\n    printf(\"%zu\", sizeof(s));\n    return 0;\n}",
+    "o": [
+      "5",
+      "8",
+      "4",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of these is a correct way to declare an anonymous union?",
+    "o": [
+      "union { int x; float y; };",
+      "anonymous union { int x; float y; };",
+      "struct { union { int x; float y; } };",
+      "union anonymous { int x; float y; };"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nstruct Point { int x, y; };\nvoid foo(struct Point p) { p.x = 100; }\nint main() {\n    struct Point p1 = {10, 20};\n    foo(p1);\n    printf(\"%d\", p1.x);\n    return 0;\n}",
+    "o": [
+      "10",
+      "100",
+      "20",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What is the primary purpose of using #pragma pack in structures?",
+    "o": [
+      "To control memory alignment/padding",
+      "To increase structure size",
+      "To make structures packed with no alignment",
+      "To automatically optimize structure layout"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nstruct { int a; union { char b; int c; }; } s;\nint main() {\n    s.c = 0x12345678;\n    printf(\"%x\", s.b);\n    return 0;\n}",
+    "o": [
+      "78 (in little-endian systems)",
+      "12",
+      "12345678",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "How do you properly initialize a flexible array member in a structure?",
+    "o": [
+      "struct { int len; int arr[]; } *s = malloc(sizeof(*s) + n*sizeof(int));",
+      "struct { int len; int arr[]; } s = {0};",
+      "struct { int len; int arr[]; } s; s.arr = malloc(n*sizeof(int));",
+      "struct { int len; int arr[]; } s = malloc(sizeof(s) + n*sizeof(int));"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nstruct A { int x; };\nstruct B { struct A a; int y; };\nint main() {\n    struct B b = {.a.x = 10, .y = 20};\n    printf(\"%d\", b.a.x + b.y);\n    return 0;\n}",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet when run on a little-endian system?",
+    "c": "#include <stdio.h>\nunion EndianTest {\n    int num;\n    char bytes[4];\n};\nint main() {\n    union EndianTest et = {0x12345678};\n    printf(\"%x\", et.bytes[0]);\n    return 0;\n}",
+    "o": [
+      "78",
+      "12",
+      "34",
+      "56"
+    ]
+  },
+  {
+    "q": "Which of these correctly implements a tagged union in C?",
+    "o": [
+      "struct { enum {INT, FLOAT} tag; union { int i; float f; }; };",
+      "union { int tag; int i; float f; };",
+      "struct { int tag; int i; float f; };",
+      "union { enum {INT, FLOAT}; int i; float f; };"
+    ]
+  },
+  {
+    "q": "What is the size of this structure on a 32-bit system? (Assume alignment requirements: char=1, int=4, double=8)",
+    "c": "struct Mixed {\n    char a;\n    double b;\n    int c;\n};",
+    "o": [
+      "24 bytes (1 + 7 padding + 8 + 4 + 4 padding)",
+      "13 bytes",
+      "16 bytes",
+      "20 bytes"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nstruct { int x; };\nstruct { int y; };\nint main() {\n    struct { int x; } s1 = {5};\n    struct { int y; } s2 = {10};\n    printf(\"%d\", s1.x + s2.y);\n    return 0;\n}",
+    "o": [
+      "15",
+      "Compilation error (incompatible types)",
+      "5",
+      "10"
+    ]
+  },
+  {
+    "q": "How can you create a type-generic structure in C using unions?",
+    "o": [
+      "By combining a type tag with a union of different types",
+      "Using void pointers exclusively",
+      "By declaring all possible types as structure members",
+      "C doesn't support any form of generic programming"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nstruct S {\n    int x;\n    struct { int a, b; } nested;\n};\nint main() {\n    struct S s = {1, {2, 3}};\n    printf(\"%d\", s.nested.a + s.x);\n    return 0;\n}",
+    "o": [
+      "3",
+      "1",
+      "2",
+      "6"
+    ]
+  },
+  {
+    "q": "Which technique is used to implement polymorphism in C using structures and unions?",
+    "o": [
+      "Combining function pointers with type tags in structures",
+      "Using only unions with different types",
+      "Creating structures with identical memory layouts",
+      "C doesn't support any form of polymorphism"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nunion {\n    struct { char a, b; } s;\n    int i;\n} u;\nint main() {\n    u.i = 0;\n    u.s.a = 0x12;\n    u.s.b = 0x34;\n    printf(\"%x\", u.i);\n    return 0;\n}",
+    "o": [
+      "3412 (on little-endian) or 1234 (on big-endian)",
+      "0",
+      "1234",
+      "3412"
+    ]
+  },
+  {
+    "q": "What is the most efficient way to create a structure for network packet headers?",
+    "o": [
+      "Using packed structures with correct field ordering",
+      "Using regular structures with padding",
+      "Using unions for all fields",
+      "Using bitfields for all fields"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nstruct A { int x; };\nstruct B { struct A a; int y; };\nvoid foo(struct A *a) { a->x = 100; }\nint main() {\n    struct B b = {{10}, 20};\n    foo(&b.a);\n    printf(\"%d\", b.a.x);\n    return 0;\n}",
+    "o": [
+      "100",
+      "10",
+      "20",
+      "Undefined behavior"
+    ]
+  },
+  {
+    "q": "How would you implement a variant type in C using unions?",
+    "o": [
+      "Combine a type tag with a union of possible types",
+      "Use a void pointer and size information",
+      "Create separate structures for each type",
+      "Use a structure with all possible types as members"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#pragma pack(push, 1)\nstruct {\n    char a;\n    int b;\n    char c;\n} s;\n#pragma pack(pop)\nint main() {\n    printf(\"%zu\", sizeof(s));\n    return 0;\n}",
+    "o": [
+      "6",
+      "12",
+      "8",
+      "9"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet when compiled with strict aliasing enabled?",
+    "c": "#include <stdio.h>\nstruct Data {\n    int x;\n};\nint main() {\n    struct Data d = {10};\n    float *f = (float*)&d;\n    *f = 20.5;\n    printf(\"%d\", d.x);\n    return 0;\n}",
+    "o": [
+      "Undefined behavior (strict aliasing violation)",
+      "10",
+      "20",
+      "Some representation of 20.5 as integer"
+    ]
+  },
+  {
+    "q": "Which of these is the most correct way to implement type punning in modern C?",
+    "o": [
+      "Using memcpy between variables or through unions",
+      "Direct pointer casting between incompatible types",
+      "Using void pointers with explicit casts",
+      "Using #pragma pack to force memory alignment"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nstruct {\n    unsigned int flag:1;\n    unsigned int value:31;\n} bits;\nint main() {\n    bits.value = 2147483647;\n    bits.flag = 1;\n    printf(\"%u\", bits.value);\n    return 0;\n}",
+    "o": [
+      "2147483647",
+      "1",
+      "0",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "How would you properly initialize a flexible array member in a structure in C99?",
+    "o": [
+      "struct Header { int len; int data[]; } *h = malloc(sizeof(struct Header) + n*sizeof(int));",
+      "struct Header { int len; int data[]; } h = {0};",
+      "struct Header { int len; int data[]; }; Header.data = malloc(n*sizeof(int));",
+      "struct Header { int len; int *data; } h = {0, malloc(n*sizeof(int))};"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nunion {\n    struct { char a,b,c,d; };\n    unsigned int x;\n} u;\nint main() {\n    u.a = 0xAA;\n    u.b = 0xBB;\n    u.c = 0xCC;\n    u.d = 0xDD;\n    printf(\"%08X\", u.x);\n    return 0;\n}",
+    "o": [
+      "DDCCBBAA (little-endian) or AABBCCDD (big-endian)",
+      "AABBCCDD",
+      "DDCCBBAA",
+      "Undefined behavior"
+    ]
+  },
+  {
+    "q": "Which of these is a correct implementation of a forward declaration for a self-referential structure?",
+    "o": [
+      "struct Node; typedef struct Node { int data; struct Node *next; } Node;",
+      "typedef struct { int data; Node *next; } Node;",
+      "struct Node { int data; Node next; };",
+      "typedef struct Node { int data; Node next; };"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nstruct A { int x; };\nstruct B { struct A a; };\nstruct C { struct B b; };\nvoid foo(struct A *a) { a->x = 100; }\nint main() {\n    struct C c = {{{10}}};\n    foo(&c.b.a);\n    printf(\"%d\", c.b.a.x);\n    return 0;\n}",
+    "o": [
+      "100",
+      "10",
+      "Undefined behavior",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What is the most efficient way to copy a structure with a flexible array member?",
+    "o": [
+      "memcpy the entire allocated block including the header",
+      "Copy each element of the array individually",
+      "Assign one structure to another with = operator",
+      "Use a loop to copy each byte manually"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#pragma pack(push, 1)\nstruct {\n    char a;\n    short b;\n    char c;\n} s;\n#pragma pack(pop)\nint main() {\n    printf(\"%zu\", sizeof(s));\n    return 0;\n}",
+    "o": [
+      "4",
+      "6",
+      "8",
+      "Implementation defined"
+    ]
+  },
+  {
+    "q": "How would you properly implement a discriminated union in C11?",
+    "o": [
+      "struct { enum Tag tag; union { int i; float f; char *s; }; };",
+      "union { int tag; int i; float f; char *s; };",
+      "struct { int tag; int i; float f; char *s; };",
+      "typedef union { int i; float f; char *s; } TaggedUnion;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nstruct S {\n    int x;\n    struct { int a; union { int b; float c; }; } nested;\n};\nint main() {\n    struct S s = {1, {2, {.c=3.0f}}};\n    printf(\"%d\", s.nested.a + (int)s.nested.c);\n    return 0;\n}",
+    "o": [
+      "5",
+      "3",
+      "Undefined behavior",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of these is a correct way to handle structure serialization for network transmission?",
+    "o": [
+      "Convert each field to network byte order and pack into buffer",
+      "memcpy the entire structure directly to socket",
+      "Use #pragma pack and send raw structure",
+      "Let the compiler handle padding optimally"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet that demonstrates structure type punning through unions?",
+    "c": "#include <stdio.h>\nstruct IntVec { int x, y; };\nstruct FloatVec { float x, y; };\nunion VecUnion {\n    struct IntVec iv;\n    struct FloatVec fv;\n};\nint main() {\n    union VecUnion u = {.iv = {5, 10}};\n    u.fv.x = 3.14f;\n    printf(\"%d\", u.iv.x);\n    return 0;\n}",
+    "o": [
+      "A reinterpreted bit pattern of 3.14 as int",
+      "5",
+      "3",
+      "Undefined behavior"
+    ]
+  },
+  {
+    "q": "Which of these is the most correct implementation of a type-safe tagged union in C11?",
+    "o": [
+      "struct { enum {INT, FLOAT, STR} tag; union { int i; float f; char *s; }; };",
+      "union { int tag; int i; float f; char *s; };",
+      "struct { int tag; void *data; size_t size; };",
+      "typedef union { int i; float f; char *s; } Variant;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating structure padding with bitfields?",
+    "c": "#include <stdio.h>\nstruct {\n    unsigned a : 4;\n    unsigned   : 0; // zero-length bitfield\n    unsigned b : 4;\n} s;\nint main() {\n    printf(\"%zu\", sizeof(s));\n    return 0;\n}",
+    "o": [
+      "4 (forces alignment to next storage unit)",
+      "1",
+      "8",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "How would you properly implement a structure with dynamic polymorphism in C?",
+    "o": [
+      "Use function pointers in the structure combined with type tags",
+      "Create a union of all possible function signatures",
+      "Use void pointers and runtime type checking",
+      "Implement inheritance through nested structures"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating anonymous structure/union in C11?",
+    "c": "#include <stdio.h>\nstruct S {\n    union {\n        struct { int x, y; };\n        int coords[2];\n    };\n};\nint main() {\n    struct S s = {.x=5, .y=10};\n    printf(\"%d\", s.coords[0] + s.y);\n    return 0;\n}",
+    "o": [
+      "15",
+      "5",
+      "10",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which technique is most appropriate for implementing a variant array where elements can be different types?",
+    "o": [
+      "Array of structures containing a type tag and union",
+      "Array of void pointers with separate type information",
+      "Union of arrays for each possible type",
+      "Jagged array with different types in each row"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating strict aliasing rules?",
+    "c": "#include <stdio.h>\nstruct A { int x; };\nstruct B { int x; };\nint main() {\n    struct A a = {10};\n    struct B *b = (struct B*)&a;\n    printf(\"%d\", b->x);\n    return 0;\n}",
+    "o": [
+      "10 (but technically undefined behavior)",
+      "0",
+      "Compilation error",
+      "Runtime error"
+    ]
+  },
+  {
+    "q": "How would you properly implement a structure with runtime-sized array at the end (flexible array member) in C99?",
+    "o": [
+      "struct Header { size_t len; int data[]; }; followed by malloc(sizeof(Header) + n*sizeof(int))",
+      "struct Header { size_t len; int *data; }; followed by malloc(sizeof(Header)) and data=malloc(n*sizeof(int))",
+      "struct Header { size_t len; int data[0]; }; followed by malloc(sizeof(Header) + n*sizeof(int))",
+      "struct Header { size_t len; int data[1]; }; followed by malloc(sizeof(Header) + (n-1)*sizeof(int))"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating union punning with floating-point?",
+    "c": "#include <stdio.h>\nunion FloatPun {\n    float f;\n    struct { unsigned mant : 23, exp : 8, sign : 1; };\n};\nint main() {\n    union FloatPun fp = {.f = -0.5f};\n    printf(\"%x\", fp.exp);\n    return 0;\n}",
+    "o": [
+      "7e (IEEE 754 exponent for -0.5)",
+      "0",
+      "1",
+      "Undefined behavior"
+    ]
+  },
+  {
+    "q": "Which of these is the most efficient way to implement a packet header structure for network protocols?",
+    "o": [
+      "Packed structure with explicit byte ordering conversions",
+      "Regular structure with compiler's natural alignment",
+      "Union of structure and byte array",
+      "Separate variables for each header field"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet demonstrating structure assignment?",
+    "c": "#include <stdio.h>\nstruct S {\n    int x;\n    char *p;\n};\nint main() {\n    char str[] = \"test\";\n    struct S s1 = {5, str};\n    struct S s2 = s1;\n    s2.p[0] = 'T';\n    printf(\"%s\", s1.p);\n    return 0;\n}",
+    "o": [
+      "Test (shallow copy shares pointer)",
+      "test",
+      "Runtime error",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "How would you properly implement a structure with move semantics (transfer ownership) in C?",
+    "o": [
+      "Document ownership transfer and null out source pointers",
+      "Use double pointers for all members",
+      "Create a union with a 'moved' state flag",
+      "Implement reference counting in the structure"
+    ]
+  },
+  {
+    "q": "What is the output when accessing a union member that wasn't most recently written?",
+    "c": "#include <stdio.h>\nunion Data {\n    int i;\n    float f;\n};\nint main() {\n    union Data d;\n    d.f = 3.14f;\n    printf(\"%08x\", d.i);\n    return 0;\n}",
+    "o": [
+      "The IEEE 754 binary representation of 3.14",
+      "3",
+      "0",
+      "Undefined behavior"
+    ]
+  },
+  {
+    "q": "Which padding strategy is most space-efficient for this structure?",
+    "c": "struct Mixed {\n    char c;  // 1 byte\n    double d; // 8 bytes\n    int i;   // 4 bytes\n};",
+    "o": [
+      "Reorder members by size (double, int, char)",
+      "Use #pragma pack(1)",
+      "Add explicit padding bytes",
+      "Keep original order with compiler padding"
+    ]
+  },
+  {
+    "q": "What does this structure definition reveal about memory alignment?",
+    "c": "struct Mystery {\n    char a;\n    int b;\n    char c;\n    short d;\n};",
+    "o": [
+      "Likely occupies 12 bytes on 32-bit systems",
+      "Has no padding between members",
+      "Size equals sum of member sizes (8 bytes)",
+      "Alignment follows the strictest member (double)"
+    ]
+  },
+  {
+    "q": "How would you properly implement a network packet header with endian safety?",
+    "o": [
+      "Use packed struct with byte-order conversion functions",
+      "Union of struct and raw byte array",
+      "Bitfields for all numeric fields",
+      "memcpy directly to/from network buffer"
+    ]
+  },
+  {
+    "q": "What is the critical flaw in this structure bitfield design?",
+    "c": "struct Flags {\n    unsigned a : 3;\n    unsigned b : 30;\n    unsigned c : 3;\n};",
+    "o": [
+      "May span implementation-defined storage units",
+      "Uses too many bits for unsigned",
+      "Bitfields cannot be larger than 16 bits",
+      "Missing :0 for padding"
+    ]
+  },
+  {
+    "q": "What makes this union usage potentially dangerous?",
+    "c": "union PtrPun {\n    void *p;\n    uintptr_t i;\n};",
+    "o": [
+      "Pointer-integer conversion may lose information",
+      "Unions cannot contain pointer types",
+      "uintptr_t must be larger than void*",
+      "No danger - this is standard practice"
+    ]
+  },
+  {
+    "q": "Which technique properly handles structure serialization?",
+    "o": [
+      "Field-by-field conversion to network byte order",
+      "memcpy to unsigned char buffer",
+      "#pragma pack then direct write",
+      "Cast structure pointer to char* and send"
+    ]
+  },
+  {
+    "q": "What is the purpose of the :0 in this bitfield?",
+    "c": "struct {\n    unsigned a : 4;\n    unsigned   : 0;\n    unsigned b : 4;\n};",
+    "o": [
+      "Forces alignment to next storage unit boundary",
+      "Indicates unused bits",
+      "Creates anonymous padding field",
+      "Specifies zero-width bitfield"
+    ]
+  },
+  {
+    "q": "Why might this structure cause performance issues?",
+    "c": "struct Data {\n    char id;\n    double values[100];\n    char category;\n};",
+    "o": [
+      "Misaligned doubles requiring fixups",
+      "Excessive padding between members",
+      "Array too large for stack allocation",
+      "No issues - optimally designed"
+    ]
+  },
+  {
+    "q": "What is the key advantage of using a union over void* for polymorphism?",
+    "o": [
+      "Type safety through explicit member access",
+      "Smaller memory footprint",
+      "Faster member access speed",
+      "No advantage - void* is preferred"
+    ]
+  },
+  {
+    "q": "How does this structure achieve dynamic sizing?",
+    "c": "struct DynArray {\n    size_t length;\n    int elements[];\n};",
+    "o": [
+      "Flexible array member allows runtime sizing",
+      "Zero-length array hack",
+      "Pointer to separately allocated array",
+      "Variable-length structure extension"
+    ]
+  },
+  {
+    "q": "What critical safety check is missing here?",
+    "c": "struct String {\n    char *data;\n    size_t len;\n};\nvoid free_string(struct String *s) {\n    free(s->data);\n}",
+    "o": [
+      "Null check for s->data",
+      "Zeroing memory after free",
+      "Length field validation",
+      "No issues - properly implemented"
+    ]
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Using Basic WPF Controls - Button and TextBox",
+    "ques": "Create a simple WPF window that contains a TextBox and a Button. When the button is clicked, display the text entered in the TextBox in a MessageBox.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "<Window x:Class=\"WpfApp.MainWindow\"\n        xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"\n        xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"\n        Title=\"Basic Controls\" Height=\"200\" Width=\"300\">\n    <StackPanel Margin=\"10\">\n        <TextBox x:Name=\"inputTextBox\" Margin=\"0,0,0,10\" />\n        <Button Content=\"Show Text\" Click=\"Button_Click\" />\n    </StackPanel>\n</Window>\n\n// Code-behind (MainWindow.xaml.cs)\nprivate void Button_Click(object sender, RoutedEventArgs e)\n{\n    MessageBox.Show(inputTextBox.Text);\n}"
+    },
+    "explanation": "***<Window>*** tag defines the root of the WPF window.\n***xmlns*** attributes specify the namespaces used in XAML.\n***StackPanel*** is used to arrange controls vertically.\n***TextBox*** with x:Name allows accessing it in code-behind.\n***Button*** triggers the ***Click*** event, which is handled in the C# code.\nIn ***Button_Click*** method, ***MessageBox.Show*** displays the text from the ***TextBox*** using ***inputTextBox.Text***."
+  },
+  {
+    "title": "Event Handling in WPF",
+    "ques": "Create a WPF window with a Button. Change the background color of the window when the button is clicked.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "<Window x:Class=\"WpfApp.MainWindow\"\n        xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"\n        xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"\n        Title=\"Event Handling\" Height=\"200\" Width=\"300\">\n    <Grid>\n        <Button Content=\"Change Color\" Click=\"ChangeColor_Click\" HorizontalAlignment=\"Center\" VerticalAlignment=\"Center\" />\n    </Grid>\n</Window>\n\n// Code-behind (MainWindow.xaml.cs)\nprivate void ChangeColor_Click(object sender, RoutedEventArgs e)\n{\n    this.Background = Brushes.LightBlue;\n}"
+    },
+    "explanation": "The ***Button*** control triggers an event when clicked.\nThe ***Click*** event is wired to the ***ChangeColor_Click*** method.\nInside the method, ***this.Background = Brushes.LightBlue*** changes the background of the current window.\n***Brushes*** is a predefined class providing color brushes."
+  },
+  {
+    "title": "Using StackPanel and Resources in WPF",
+    "ques": "Create a WPF window using StackPanel layout and define a SolidColorBrush resource to style a Button.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "<Window x:Class=\"WpfApp.MainWindow\"\n        xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"\n        xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"\n        Title=\"Layout and Resources\" Height=\"200\" Width=\"300\">\n    <Window.Resources>\n        <SolidColorBrush x:Key=\"MyButtonColor\" Color=\"Orange\" />\n    </Window.Resources>\n    <StackPanel>\n        <Button Content=\"Click Me\" Background=\"{StaticResource MyButtonColor}\" Margin=\"10\" />\n    </StackPanel>\n</Window>"
+    },
+    "explanation": "***Window.Resources*** holds reusable resources such as brushes and styles.\nA ***SolidColorBrush*** with key ***MyButtonColor*** is defined to store an orange color.\nThe ***Button*** uses the brush using ***{StaticResource MyButtonColor}***.\n***StackPanel*** is used to layout the button vertically."
+  },
+  {
+    "title": "Basic Data Binding with MVVM Pattern",
+    "ques": "Create a WPF app with a TextBox and TextBlock bound to a property in the ViewModel. When text is entered in the TextBox, it should automatically update the TextBlock.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "<Window x:Class=\"WpfApp.MainWindow\"\n        xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"\n        xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"\n        xmlns:local=\"clr-namespace:WpfApp\"\n        Title=\"Data Binding\" Height=\"200\" Width=\"300\">\n    <Window.DataContext>\n        <local:MainViewModel />\n    </Window.DataContext>\n    <StackPanel Margin=\"10\">\n        <TextBox Text=\"{Binding UserText, UpdateSourceTrigger=PropertyChanged}\" Margin=\"0,0,0,10\" />\n        <TextBlock Text=\"{Binding UserText}\" />\n    </StackPanel>\n</Window>\n\n// ViewModel (MainViewModel.cs)\npublic class MainViewModel : INotifyPropertyChanged\n{\n    private string userText;\n    public string UserText\n    {\n        get => userText;\n        set { userText = value; OnPropertyChanged(nameof(UserText)); }\n    }\n\n    public event PropertyChangedEventHandler PropertyChanged;\n    protected void OnPropertyChanged(string name) => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));\n}"
+    },
+    "explanation": "***Window.DataContext*** sets the binding source to an instance of ***MainViewModel***.\n***TextBox*** is bound to ***UserText*** property with ***UpdateSourceTrigger=PropertyChanged*** so changes are updated in real-time.\n***TextBlock*** is also bound to the same property and reflects the updated value.\n***INotifyPropertyChanged*** interface ensures that UI updates when the ***UserText*** property changes.\n***OnPropertyChanged*** method raises the ***PropertyChanged*** event for UI updates."
+  },
+  {
+    "title": "Using RadioButton and TextBlock",
+    "ques": "Create a WPF window with three RadioButtons labeled 'Red', 'Green', and 'Blue'. When a RadioButton is selected, change the color of a TextBlock accordingly.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "<Window x:Class=\"WpfApp.MainWindow\"\n        xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"\n        xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"\n        Title=\"RadioButton Example\" Height=\"250\" Width=\"300\">\n    <StackPanel Margin=\"10\">\n        <TextBlock x:Name=\"colorText\" Text=\"Choose a color\" FontSize=\"16\" Margin=\"0,0,0,10\" />\n        <RadioButton Content=\"Red\" Checked=\"RadioButton_Checked\" />\n        <RadioButton Content=\"Green\" Checked=\"RadioButton_Checked\" />\n        <RadioButton Content=\"Blue\" Checked=\"RadioButton_Checked\" />\n    </StackPanel>\n</Window>\n\n// Code-behind (MainWindow.xaml.cs)\nprivate void RadioButton_Checked(object sender, RoutedEventArgs e)\n{\n    RadioButton rb = sender as RadioButton;\n    switch (rb.Content.ToString())\n    {\n        case \"Red\":\n            colorText.Foreground = Brushes.Red;\n            break;\n        case \"Green\":\n            colorText.Foreground = Brushes.Green;\n            break;\n        case \"Blue\":\n            colorText.Foreground = Brushes.Blue;\n            break;\n    }\n}"
+    },
+    "explanation": "***RadioButton*** controls allow selection of one option at a time.\nEach RadioButton has its ***Checked*** event wired to ***RadioButton_Checked***.\nIn the event handler, we use ***sender as RadioButton*** to get the selected button.\nThe ***switch*** block changes the ***TextBlock.Foreground*** color using the ***Brushes*** class based on the selected option."
+  },
+  {
+    "title": "Grid Layout and Shared Resource Style",
+    "ques": "Create a WPF window with a Grid layout and define a shared Style resource for buttons with uniform font size and padding.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "<Window x:Class=\"WpfApp.MainWindow\"\n        xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"\n        xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"\n        Title=\"Grid Layout and Style\" Height=\"200\" Width=\"300\">\n    <Window.Resources>\n        <Style x:Key=\"ButtonStyle\" TargetType=\"Button\">\n            <Setter Property=\"FontSize\" Value=\"14\" />\n            <Setter Property=\"Padding\" Value=\"10,5\" />\n        </Style>\n    </Window.Resources>\n    <Grid Margin=\"10\">\n        <Grid.ColumnDefinitions>\n            <ColumnDefinition />\n            <ColumnDefinition />\n        </Grid.ColumnDefinitions>\n        <Button Content=\"OK\" Grid.Column=\"0\" Style=\"{StaticResource ButtonStyle}\" />\n        <Button Content=\"Cancel\" Grid.Column=\"1\" Style=\"{StaticResource ButtonStyle}\" />\n    </Grid>\n</Window>"
+    },
+    "explanation": "***Grid*** layout divides the UI into rows and columns.\n***ColumnDefinition*** creates two equal-width columns.\nA ***Style*** resource named ***ButtonStyle*** is defined in ***Window.Resources***.\nThe style sets ***FontSize*** and ***Padding*** uniformly for all buttons using it.\nEach ***Button*** is placed in a column and applies the style using ***StaticResource***."
+  },
+  {
+    "title": "ListBox Data Binding with MVVM",
+    "ques": "Create a WPF window that displays a list of names in a ListBox using MVVM pattern. Bind the ListBox to a collection in the ViewModel.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "<Window x:Class=\"WpfApp.MainWindow\"\n        xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"\n        xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"\n        xmlns:local=\"clr-namespace:WpfApp\"\n        Title=\"ListBox Binding\" Height=\"250\" Width=\"300\">\n    <Window.DataContext>\n        <local:MainViewModel />\n    </Window.DataContext>\n    <Grid Margin=\"10\">\n        <ListBox ItemsSource=\"{Binding Names}\" />\n    </Grid>\n</Window>\n\n// ViewModel (MainViewModel.cs)\npublic class MainViewModel\n{\n    public ObservableCollection<string> Names { get; set; }\n\n    public MainViewModel()\n    {\n        Names = new ObservableCollection<string> { \"Alice\", \"Bob\", \"Charlie\", \"Diana\" };\n    }\n}"
+    },
+    "explanation": "***ObservableCollection<string>*** is used to hold the list of names so the UI updates if items change.\nThe ViewModel is set as ***Window.DataContext*** in XAML.\n***ListBox*** binds to the ***Names*** collection using ***ItemsSource***.\nThis allows WPF to automatically populate the ListBox with items from the ViewModel."
+  },
+  {
+    "title": "Binding Command to Button with MVVM",
+    "ques": "Implement a Button in WPF that uses a command from the ViewModel to display a MessageBox when clicked. Use ICommand interface to implement the command.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "<Window x:Class=\"WpfApp.MainWindow\"\n        xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"\n        xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"\n        xmlns:local=\"clr-namespace:WpfApp\"\n        Title=\"MVVM Command\" Height=\"200\" Width=\"300\">\n    <Window.DataContext>\n        <local:MainViewModel />\n    </Window.DataContext>\n    <StackPanel Margin=\"10\">\n        <Button Content=\"Show Message\" Command=\"{Binding ShowMessageCommand}\" />\n    </StackPanel>\n</Window>\n\n// ViewModel (MainViewModel.cs)\npublic class MainViewModel\n{\n    public ICommand ShowMessageCommand { get; }\n\n    public MainViewModel()\n    {\n        ShowMessageCommand = new RelayCommand(() => MessageBox.Show(\"Hello from MVVM!\"));\n    }\n}\n\n// RelayCommand (RelayCommand.cs)\npublic class RelayCommand : ICommand\n{\n    private readonly Action execute;\n    public RelayCommand(Action execute) => this.execute = execute;\n\n    public event EventHandler CanExecuteChanged;\n    public bool CanExecute(object parameter) => true;\n    public void Execute(object parameter) => execute();\n}"
+    },
+    "explanation": "***Button*** uses the ***Command*** property to bind to ***ShowMessageCommand*** from ViewModel.\nThe command is implemented using a ***RelayCommand*** class that wraps the execution logic.\nWhen the button is clicked, ***Execute*** method of the command is called.\n***MessageBox.Show*** is used to show the message.\n***ICommand*** interface enables decoupling of UI interaction from business logic in MVVM."
+  },
+  {
+    "title": "Checkbox Control with Dynamic Text Update",
+    "ques": "Create a WPF window with a CheckBox and a TextBlock. When the CheckBox is checked, display 'Checked', otherwise display 'Unchecked' in the TextBlock.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "<Window x:Class=\"WpfApp.MainWindow\"\n        xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"\n        xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"\n        Title=\"Checkbox Example\" Height=\"200\" Width=\"300\">\n    <StackPanel Margin=\"10\">\n        <CheckBox x:Name=\"myCheckBox\" Content=\"Check me\" Checked=\"CheckBox_Checked\" Unchecked=\"CheckBox_Unchecked\" />\n        <TextBlock x:Name=\"statusText\" FontSize=\"16\" Margin=\"0,10,0,0\" />\n    </StackPanel>\n</Window>\n\n// Code-behind (MainWindow.xaml.cs)\nprivate void CheckBox_Checked(object sender, RoutedEventArgs e)\n{\n    statusText.Text = \"Checked\";\n}\n\nprivate void CheckBox_Unchecked(object sender, RoutedEventArgs e)\n{\n    statusText.Text = \"Unchecked\";\n}"
+    },
+    "explanation": "***CheckBox*** control supports ***Checked*** and ***Unchecked*** events.\nEach event handler sets the ***Text*** of the ***TextBlock*** accordingly.\n***statusText.Text*** is updated based on whether the checkbox is checked or not."
+  },
+  {
+    "title": "Slider Control for Dynamic Font Size",
+    "ques": "Create a WPF window with a Slider and a TextBlock. Bind the Slider value to the TextBlock's font size using data binding.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "<Window x:Class=\"WpfApp.MainWindow\"\n        xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"\n        xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"\n        Title=\"Slider Binding\" Height=\"200\" Width=\"300\">\n    <StackPanel Margin=\"10\">\n        <Slider x:Name=\"fontSlider\" Minimum=\"10\" Maximum=\"40\" Value=\"16\" />\n        <TextBlock Text=\"Resizable Text\" FontSize=\"{Binding ElementName=fontSlider, Path=Value}\" Margin=\"0,10,0,0\" />\n    </StackPanel>\n</Window>"
+    },
+    "explanation": "***Slider*** control lets the user choose a numeric value between ***Minimum*** and ***Maximum***.\nThe ***TextBlock.FontSize*** is bound to ***fontSlider.Value*** using ***ElementName*** binding.\nThis makes the font size of the text update dynamically as the slider is moved."
+  },
+  {
+    "title": "UniformGrid Layout with Multiple Buttons",
+    "ques": "Create a WPF window using a UniformGrid layout to place four buttons in a 2x2 grid.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "<Window x:Class=\"WpfApp.MainWindow\"\n        xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"\n        xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"\n        Title=\"UniformGrid Layout\" Height=\"200\" Width=\"300\">\n    <UniformGrid Rows=\"2\" Columns=\"2\">\n        <Button Content=\"Button 1\" />\n        <Button Content=\"Button 2\" />\n        <Button Content=\"Button 3\" />\n        <Button Content=\"Button 4\" />\n    </UniformGrid>\n</Window>"
+    },
+    "explanation": "***UniformGrid*** divides the available space evenly among its children.\n***Rows*** and ***Columns*** define a 2x2 grid.\nEach ***Button*** automatically fills its respective cell with equal size and spacing."
+  },
+  {
+    "title": "Two-Way Binding with TextBox and ViewModel",
+    "ques": "Create a WPF application that binds a TextBox's text to a property in the ViewModel using two-way binding. Display the same text in a Label below the TextBox.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "<Window x:Class=\"WpfApp.MainWindow\"\n        xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"\n        xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"\n        xmlns:local=\"clr-namespace:WpfApp\"\n        Title=\"Two-Way Binding\" Height=\"200\" Width=\"300\">\n    <Window.DataContext>\n        <local:MainViewModel />\n    </Window.DataContext>\n    <StackPanel Margin=\"10\">\n        <TextBox Text=\"{Binding UserInput, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}\" />\n        <Label Content=\"{Binding UserInput}\" Margin=\"0,10,0,0\" />\n    </StackPanel>\n</Window>\n\n// ViewModel (MainViewModel.cs)\npublic class MainViewModel : INotifyPropertyChanged\n{\n    private string userInput;\n    public string UserInput\n    {\n        get => userInput;\n        set { userInput = value; OnPropertyChanged(nameof(UserInput)); }\n    }\n\n    public event PropertyChangedEventHandler PropertyChanged;\n    protected void OnPropertyChanged(string propertyName)\n    {\n        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));\n    }\n}"
+    },
+    "explanation": "***TextBox.Text*** is bound to ***UserInput*** with ***Mode=TwoWay*** so changes reflect both ways.\n***UpdateSourceTrigger=PropertyChanged*** updates the source on each keystroke.\nThe ***Label*** is bound to the same property to reflect the changes in real-time.\n***INotifyPropertyChanged*** ensures UI updates on property change."
+  },
+  {
+    "title": "ProgressBar Control with Button Trigger",
+    "ques": "Create a WPF window that shows a ProgressBar. When a button is clicked, the ProgressBar fills to 100% using a DispatcherTimer.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "<Window x:Class=\"WpfApp.MainWindow\"\n        xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"\n        xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"\n        Title=\"ProgressBar Example\" Height=\"200\" Width=\"300\">\n    <StackPanel Margin=\"10\">\n        <ProgressBar x:Name=\"myProgressBar\" Height=\"25\" Minimum=\"0\" Maximum=\"100\" />\n        <Button Content=\"Start\" Click=\"Button_Click\" Margin=\"0,10,0,0\" />\n    </StackPanel>\n</Window>\n\n// Code-behind (MainWindow.xaml.cs)\nprivate DispatcherTimer timer;\nprivate void Button_Click(object sender, RoutedEventArgs e)\n{\n    myProgressBar.Value = 0;\n    timer = new DispatcherTimer();\n    timer.Interval = TimeSpan.FromMilliseconds(50);\n    timer.Tick += (s, args) =>\n    {\n        if (myProgressBar.Value < 100)\n            myProgressBar.Value++;\n        else\n            timer.Stop();\n    };\n    timer.Start();\n}"
+    },
+    "explanation": "***ProgressBar*** visually represents progress using ***Value***.\nA ***DispatcherTimer*** is used to increment the value periodically.\nClicking the ***Button*** triggers the timer to update the bar every 50ms.\nWhen ***Value*** reaches ***100***, the timer stops."
+  },
+  {
+    "title": "GroupBox Control with RadioButtons",
+    "ques": "Design a WPF UI with a GroupBox titled 'Choose Gender' that contains two RadioButtons: Male and Female. Display the selected value in a TextBlock.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "<Window x:Class=\"WpfApp.MainWindow\"\n        xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"\n        xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"\n        Title=\"GroupBox Example\" Height=\"200\" Width=\"300\">\n    <StackPanel Margin=\"10\">\n        <GroupBox Header=\"Choose Gender\">\n            <StackPanel>\n                <RadioButton Content=\"Male\" GroupName=\"Gender\" Checked=\"Radio_Checked\" />\n                <RadioButton Content=\"Female\" GroupName=\"Gender\" Checked=\"Radio_Checked\" />\n            </StackPanel>\n        </GroupBox>\n        <TextBlock x:Name=\"resultText\" FontSize=\"16\" Margin=\"0,10,0,0\" />\n    </StackPanel>\n</Window>\n\n// Code-behind\nprivate void Radio_Checked(object sender, RoutedEventArgs e)\n{\n    RadioButton rb = sender as RadioButton;\n    resultText.Text = $\"Selected: {rb.Content}\";\n}"
+    },
+    "explanation": "***GroupBox*** is used to visually group related controls.\n***RadioButtons*** are grouped using the ***GroupName*** property.\nWhen any button is selected, the ***Checked*** event triggers and updates ***TextBlock***.\n***rb.Content*** dynamically reflects the selected option."
+  },
+  {
+    "title": "Using DockPanel for Layout",
+    "ques": "Design a WPF window with a DockPanel that docks a header TextBlock to the top, a footer to the bottom, and content (TextBox) to fill the remaining space.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "<Window x:Class=\"WpfApp.MainWindow\"\n        xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"\n        xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"\n        Title=\"DockPanel Layout\" Height=\"250\" Width=\"300\">\n    <DockPanel Margin=\"10\">\n        <TextBlock Text=\"Header\" DockPanel.Dock=\"Top\" FontWeight=\"Bold\" />\n        <TextBlock Text=\"Footer\" DockPanel.Dock=\"Bottom\" FontStyle=\"Italic\" />\n        <TextBox AcceptsReturn=\"True\" Text=\"Enter content here...\" />\n    </DockPanel>\n</Window>"
+    },
+    "explanation": "***DockPanel*** allows child elements to be docked to ***Top***, ***Bottom***, ***Left***, or ***Right***.\nThe ***TextBlock*** labeled 'Header' is docked to the ***Top***.\nAnother ***TextBlock*** labeled 'Footer' is docked to the ***Bottom***.\nThe ***TextBox*** takes the remaining space by default."
+  },
+  {
+    "title": "ListView Binding with Custom Object Collection",
+    "ques": "Create a ListView that displays a list of custom Person objects (Name and Age) using data binding from ViewModel.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "<Window x:Class=\"WpfApp.MainWindow\"\n        xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"\n        xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"\n        xmlns:local=\"clr-namespace:WpfApp\"\n        Title=\"ListView Example\" Height=\"300\" Width=\"400\">\n    <Window.DataContext>\n        <local:MainViewModel />\n    </Window.DataContext>\n    <Grid Margin=\"10\">\n        <ListView ItemsSource=\"{Binding People}\">\n            <ListView.View>\n                <GridView>\n                    <GridViewColumn Header=\"Name\" DisplayMemberBinding=\"{Binding Name}\" />\n                    <GridViewColumn Header=\"Age\" DisplayMemberBinding=\"{Binding Age}\" />\n                </GridView>\n            </ListView.View>\n        </ListView>\n    </Grid>\n</Window>\n\n// ViewModel and Model\npublic class Person\n{\n    public string Name { get; set; }\n    public int Age { get; set; }\n}\n\npublic class MainViewModel\n{\n    public ObservableCollection<Person> People { get; set; }\n    public MainViewModel()\n    {\n        People = new ObservableCollection<Person>\n        {\n            new Person { Name = \"John\", Age = 28 },\n            new Person { Name = \"Lisa\", Age = 34 },\n            new Person { Name = \"Mark\", Age = 22 }\n        };\n    }\n}"
+    },
+    "explanation": "***ListView*** is used with ***GridView*** to display structured data.\n***ItemsSource*** is bound to a collection of ***Person*** objects.\n***GridViewColumn*** uses ***DisplayMemberBinding*** to bind individual properties.\nThis enables tabular display of custom object data."
+  }
+]

@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Bank Account Encapsulation",
+    "ques": "Create a C++ program that demonstrates encapsulation using access modifiers. Implement a BankAccount class with private data members for account number and balance, and public methods to deposit, withdraw, and check balance.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass BankAccount {\nprivate:\n    string accountNumber;\n    double balance;\n\npublic:\n    BankAccount(string accNum, double initialBalance) {\n        accountNumber = accNum;\n        balance = (initialBalance >= 0) ? initialBalance : 0;\n    }\n\n    void deposit(double amount) {\n        if (amount > 0) {\n            balance += amount;\n            cout << \"Deposited: \" << amount << endl;\n        }\n    }\n\n    void withdraw(double amount) {\n        if (amount > 0 && amount <= balance) {\n            balance -= amount;\n            cout << \"Withdrawn: \" << amount << endl;\n        }\n    }\n\n    double getBalance() const {\n        return balance;\n    }\n};\n\nint main() {\n    BankAccount acc(\"12345\", 1000.0);\n    acc.deposit(500.0);\n    acc.withdraw(200.0);\n    cout << \"Balance: \" << acc.getBalance() << endl;\n    return 0;\n}"
+    },
+    "explanation": "This program showcases ***encapsulation*** with access modifiers:\n- ```private``` members ***accountNumber*** and ***balance*** are hidden from outside access, ensuring data protection.\n- The constructor initializes the account with ```accNum``` and ```initialBalance```, setting balance to 0 if negative.\n- ```deposit``` checks if ```amount > 0``` before adding to ***balance***, showing controlled access.\n- ```withdraw``` ensures ```amount``` is positive and doesn’t exceed ***balance***, maintaining integrity.\n- ```getBalance``` is a ***const*** method, allowing read-only access to ***balance***.\n- In ```main```, we create an object, perform operations, and display the result, all via public methods."
+  },
+  {
+    "title": "Shape Abstraction",
+    "ques": "Write a C++ program demonstrating abstraction with classes and interfaces. Create an abstract Shape class with a pure virtual function for area calculation, and implement it in Circle and Rectangle derived classes.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Shape {\npublic:\n    virtual double calculateArea() const = 0; // Pure virtual function\n    virtual ~Shape() {}\n};\n\nclass Circle : public Shape {\nprivate:\n    double radius;\npublic:\n    Circle(double r) : radius(r) {}\n    double calculateArea() const override {\n        return 3.14159 * radius * radius;\n    }\n};\n\nclass Rectangle : public Shape {\nprivate:\n    double width, height;\npublic:\n    Rectangle(double w, double h) : width(w), height(h) {}\n    double calculateArea() const override {\n        return width * height;\n    }\n};\n\nint main() {\n    Shape* shapes[] = {new Circle(5.0), new Rectangle(4.0, 6.0)};\n    for (int i = 0; i < 2; i++) {\n        cout << \"Area: \" << shapes[i]->calculateArea() << endl;\n        delete shapes[i];\n    }\n    return 0;\n}"
+    },
+    "explanation": "This demonstrates ***abstraction*** using an abstract base class:\n- ***Shape*** is an abstract class with a pure virtual function ```calculateArea() = 0```, defining an interface.\n- ```virtual ~Shape()``` ensures proper cleanup of derived objects.\n- ***Circle*** and ***Rectangle*** inherit from ***Shape***, implementing ```calculateArea``` with their specific formulas.\n- ```const``` ensures methods don’t modify objects, and ```override``` confirms correct implementation.\n- In ```main```, a ***Shape*** pointer array holds different shapes, showcasing polymorphism; areas are calculated and memory is freed."
+  },
+  {
+    "title": "Data Hiding with Employee",
+    "ques": "Implement a C++ program to illustrate data hiding. Create an Employee class where sensitive data like salary and ID are private, and provide public methods to access or modify them indirectly.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Employee {\nprivate:\n    string id;\n    double salary;\n\npublic:\n    Employee(string empId, double empSalary) {\n        id = empId;\n        salary = empSalary;\n    }\n\n    void setSalary(double newSalary) {\n        if (newSalary >= 0) salary = newSalary;\n    }\n\n    double getSalary() const {\n        return salary;\n    }\n\n    string getId() const {\n        return id;\n    }\n};\n\nint main() {\n    Employee emp(\"E001\", 50000.0);\n    cout << \"ID: \" << emp.getId() << \", Salary: \" << emp.getSalary() << endl;\n    emp.setSalary(60000.0);\n    cout << \"Updated Salary: \" << emp.getSalary() << endl;\n    return 0;\n}"
+    },
+    "explanation": "This program highlights ***data hiding***:\n- ***id*** and ***salary*** are ```private```, preventing direct external access.\n- The constructor sets initial values for these hidden members.\n- ```setSalary``` allows controlled modification of ***salary***, rejecting negative values.\n- ```getSalary``` and ```getId``` provide read-only access to private data.\n- In ```main```, we access and modify data only through public methods, ensuring ***salary*** and ***id*** remain protected."
+  },
+  {
+    "title": "Interface Segregation with Devices",
+    "ques": "Demonstrate interface segregation in C++ by creating separate interfaces for Printer and Scanner functionalities, then implement a MultifunctionDevice class that uses both.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass IPrinter {\npublic:\n    virtual void print() const = 0;\n    virtual ~IPrinter() {}\n};\n\nclass IScanner {\npublic:\n    virtual void scan() const = 0;\n    virtual ~IScanner() {}\n};\n\nclass MultifunctionDevice : public IPrinter, public IScanner {\npublic:\n    void print() const override {\n        cout << \"Printing document...\" << endl;\n    }\n    void scan() const override {\n        cout << \"Scanning document...\" << endl;\n    }\n};\n\nint main() {\n    MultifunctionDevice device;\n    IPrinter* printer = &device;\n    IScanner* scanner = &device;\n    printer->print();\n    scanner->scan();\n    return 0;\n}"
+    },
+    "explanation": "This illustrates ***interface segregation***:\n- ***IPrinter*** and ***IScanner*** are separate interfaces with pure virtual functions ```print``` and ```scan```.\n- Virtual destructors ensure proper cleanup.\n- ***MultifunctionDevice*** inherits both interfaces, implementing their methods.\n- In ```main```, we use pointers to specific interfaces (***IPrinter*** and ***IScanner***), showing a client can depend only on needed functionality.\n- This avoids forcing classes to implement unused methods, adhering to the principle."
+  },
+  {
+    "title": "Student Record Encapsulation",
+    "ques": "Create a C++ program that uses encapsulation with access modifiers to manage student records. Implement a Student class with private members for name and grade, and public methods to update and retrieve them.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Student {\nprivate:\n    string name;\n    double grade;\n\npublic:\n    Student(string studentName, double studentGrade) {\n        name = studentName;\n        grade = (studentGrade >= 0 && studentGrade <= 100) ? studentGrade : 0;\n    }\n\n    void updateGrade(double newGrade) {\n        if (newGrade >= 0 && newGrade <= 100) {\n            grade = newGrade;\n            cout << \"Grade updated to: \" << grade << endl;\n        }\n    }\n\n    string getName() const {\n        return name;\n    }\n\n    double getGrade() const {\n        return grade;\n    }\n};\n\nint main() {\n    Student student(\"Alice\", 85.5);\n    cout << \"Name: \" << student.getName() << \", Grade: \" << student.getGrade() << endl;\n    student.updateGrade(92.0);\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates ***encapsulation***:\n- ***name*** and ***grade*** are ```private```, restricting direct access.\n- The constructor initializes them, ensuring ***grade*** is between 0 and 100.\n- ```updateGrade``` modifies ***grade*** only if the new value is valid, enforcing rules.\n- ```getName``` and ```getGrade``` provide read-only access to private data.\n- In ```main```, we interact with the object solely through public methods, keeping data encapsulated."
+  },
+  {
+    "title": "Vehicle Abstraction",
+    "ques": "Write a C++ program showing abstraction with classes and interfaces. Define an abstract Vehicle class with a pure virtual function for speed calculation, and implement it in Car and Bicycle derived classes.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Vehicle {\npublic:\n    virtual double calculateSpeed() const = 0; // Pure virtual function\n    virtual ~Vehicle() {}\n};\n\nclass Car : public Vehicle {\nprivate:\n    double distance, time;\npublic:\n    Car(double d, double t) : distance(d), time(t) {}\n    double calculateSpeed() const override {\n        return (time > 0) ? distance / time : 0;\n    }\n};\n\nclass Bicycle : public Vehicle {\nprivate:\n    double distance, time;\npublic:\n    Bicycle(double d, double t) : distance(d), time(t) {}\n    double calculateSpeed() const override {\n        return (time > 0) ? distance / time : 0;\n    }\n};\n\nint main() {\n    Vehicle* vehicles[] = {new Car(100.0, 2.0), new Bicycle(20.0, 1.0)};\n    for (int i = 0; i < 2; i++) {\n        cout << \"Speed: \" << vehicles[i]->calculateSpeed() << \" units/hour\" << endl;\n        delete vehicles[i];\n    }\n    return 0;\n}"
+    },
+    "explanation": "This showcases ***abstraction***:\n- ***Vehicle*** is an abstract class with ```calculateSpeed() = 0``` as the interface.\n- ```virtual ~Vehicle()``` ensures proper destruction of derived objects.\n- ***Car*** and ***Bicycle*** compute speed as distance/time, handling division by zero.\n- ```override``` ensures correct implementation of the virtual function.\n- In ```main```, a ***Vehicle*** pointer array demonstrates polymorphism, calculating and displaying speeds."
+  },
+  {
+    "title": "Data Hiding with Inventory",
+    "ques": "Implement a C++ program to show data hiding. Create an Inventory class with private members for item count and value, and public methods to add items and get totals, keeping the data secure.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Inventory {\nprivate:\n    int itemCount;\n    double totalValue;\n\npublic:\n    Inventory(int count, double value) {\n        itemCount = (count >= 0) ? count : 0;\n        totalValue = (value >= 0) ? value : 0;\n    }\n\n    void addItem(int quantity, double value) {\n        if (quantity >= 0 && value >= 0) {\n            itemCount += quantity;\n            totalValue += value * quantity;\n        }\n    }\n\n    int getItemCount() const {\n        return itemCount;\n    }\n\n    double getTotalValue() const {\n        return totalValue;\n    }\n};\n\nint main() {\n    Inventory inv(10, 50.0);\n    inv.addItem(5, 10.0);\n    cout << \"Items: \" << inv.getItemCount() << \", Total Value: \" << inv.getTotalValue() << endl;\n    return 0;\n}"
+    },
+    "explanation": "This illustrates ***data hiding***:\n- ***itemCount*** and ***totalValue*** are ```private```, inaccessible directly.\n- The constructor initializes them, ensuring non-negative values.\n- ```addItem``` updates both members only if inputs are valid, maintaining control.\n- ```getItemCount``` and ```getTotalValue``` allow read-only access.\n- In ```main```, we add items and retrieve totals via public methods, keeping data hidden and secure."
+  },
+  {
+    "title": "Interface Segregation with Media Player",
+    "ques": "Demonstrate interface segregation in C++ by defining separate interfaces for AudioPlayer and VideoPlayer functionalities, then implement a MediaDevice class that supports both.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass IAudioPlayer {\npublic:\n    virtual void playAudio() const = 0;\n    virtual ~IAudioPlayer() {}\n};\n\nclass IVideoPlayer {\npublic:\n    virtual void playVideo() const = 0;\n    virtual ~IVideoPlayer() {}\n};\n\nclass MediaDevice : public IAudioPlayer, public IVideoPlayer {\npublic:\n    void playAudio() const override {\n        cout << \"Playing audio...\" << endl;\n    }\n    void playVideo() const override {\n        cout << \"Playing video...\" << endl;\n    }\n};\n\nint main() {\n    MediaDevice device;\n    IAudioPlayer* audio = &device;\n    IVideoPlayer* video = &device;\n    audio->playAudio();\n    video->playVideo();\n    return 0;\n}"
+    },
+    "explanation": "This shows ***interface segregation***:\n- ***IAudioPlayer*** and ***IVideoPlayer*** are distinct interfaces with ```playAudio``` and ```playVideo```.\n- Virtual destructors ensure proper cleanup.\n- ***MediaDevice*** implements both, providing specific functionality for each.\n- In ```main```, pointers to individual interfaces (***IAudioPlayer*** and ***IVideoPlayer***) access only relevant methods.\n- This ensures classes aren’t forced to implement unrelated functions."
+  },
+  {
+    "title": "Library Book Encapsulation",
+    "ques": "Create a C++ program that uses encapsulation with access modifiers to manage library books. Implement a Book class with private members for title and availability, and public methods to borrow and return the book.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Book {\nprivate:\n    string title;\n    bool isAvailable;\n\npublic:\n    Book(string bookTitle) {\n        title = bookTitle;\n        isAvailable = true;\n    }\n\n    bool borrowBook() {\n        if (isAvailable) {\n            isAvailable = false;\n            cout << title << \" borrowed successfully.\" << endl;\n            return true;\n        }\n        cout << title << \" is not available.\" << endl;\n        return false;\n    }\n\n    void returnBook() {\n        if (!isAvailable) {\n            isAvailable = true;\n            cout << title << \" returned successfully.\" << endl;\n        }\n    }\n\n    bool checkAvailability() const {\n        return isAvailable;\n    }\n};\n\nint main() {\n    Book book(\"The C++ Guide\");\n    book.borrowBook();\n    book.borrowBook();\n    book.returnBook();\n    cout << \"Available: \" << (book.checkAvailability() ? \"Yes\" : \"No\") << endl;\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates ***encapsulation***:\n- ***title*** and ***isAvailable*** are ```private```, restricting direct access.\n- The constructor sets the ***title*** and initializes ***isAvailable*** to true.\n- ```borrowBook``` changes ***isAvailable*** to false if available, returning a success flag.\n- ```returnBook``` sets ***isAvailable*** back to true if it was borrowed.\n- ```checkAvailability``` provides read-only access to the status.\n- In ```main```, we test borrowing and returning, interacting only through public methods."
+  },
+  {
+    "title": "Appliance Abstraction",
+    "ques": "Write a C++ program illustrating abstraction with classes and interfaces. Define an abstract Appliance class with a pure virtual function for power consumption, and implement it in Fan and Heater derived classes.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Appliance {\npublic:\n    virtual double calculatePower() const = 0; // Pure virtual function\n    virtual ~Appliance() {}\n};\n\nclass Fan : public Appliance {\nprivate:\n    double wattage;\npublic:\n    Fan(double w) : wattage(w) {}\n    double calculatePower() const override {\n        return wattage;\n    }\n};\n\nclass Heater : public Appliance {\nprivate:\n    double wattage;\npublic:\n    Heater(double w) : wattage(w) {}\n    double calculatePower() const override {\n        return wattage * 1.5; // Heaters consume more\n    }\n};\n\nint main() {\n    Appliance* appliances[] = {new Fan(50.0), new Heater(1000.0)};\n    for (int i = 0; i < 2; i++) {\n        cout << \"Power Consumption: \" << appliances[i]->calculatePower() << \" watts\" << endl;\n        delete appliances[i];\n    }\n    return 0;\n}"
+    },
+    "explanation": "This showcases ***abstraction***:\n- ***Appliance*** is an abstract class with ```calculatePower() = 0``` as the interface.\n- ```virtual ~Appliance()``` ensures proper cleanup.\n- ***Fan*** returns its ***wattage*** directly, while ***Heater*** multiplies by 1.5 for higher consumption.\n- ```override``` confirms correct implementation.\n- In ```main```, an ***Appliance*** pointer array uses polymorphism to compute and display power usage."
+  },
+  {
+    "title": "Data Hiding with Wallet",
+    "ques": "Implement a C++ program to demonstrate data hiding. Create a Wallet class with private members for cash and card count, and public methods to add cash and cards while keeping data secure.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Wallet {\nprivate:\n    double cash;\n    int cardCount;\n\npublic:\n    Wallet(double initialCash, int cards) {\n        cash = (initialCash >= 0) ? initialCash : 0;\n        cardCount = (cards >= 0) ? cards : 0;\n    }\n\n    void addCash(double amount) {\n        if (amount >= 0) {\n            cash += amount;\n            cout << \"Added \" << amount << \" to wallet.\" << endl;\n        }\n    }\n\n    void addCard() {\n        cardCount++;\n        cout << \"Card added.\" << endl;\n    }\n\n    double getCash() const {\n        return cash;\n    }\n\n    int getCardCount() const {\n        return cardCount;\n    }\n};\n\nint main() {\n    Wallet wallet(20.0, 2);\n    wallet.addCash(15.5);\n    wallet.addCard();\n    cout << \"Cash: \" << wallet.getCash() << \", Cards: \" << wallet.getCardCount() << endl;\n    return 0;\n}"
+    },
+    "explanation": "This illustrates ***data hiding***:\n- ***cash*** and ***cardCount*** are ```private```, preventing direct modification.\n- The constructor ensures non-negative initial values.\n- ```addCash``` increases ***cash*** if the amount is valid.\n- ```addCard``` increments ***cardCount*** safely.\n- ```getCash``` and ```getCardCount``` offer read-only access.\n- In ```main```, we modify and retrieve values through public methods, keeping data hidden."
+  },
+  {
+    "title": "Interface Segregation with Smart Home",
+    "ques": "Demonstrate interface segregation in C++ by creating separate interfaces for LightControl and TemperatureControl, then implement a SmartHomeDevice class that uses both functionalities.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass ILightControl {\npublic:\n    virtual void toggleLight() const = 0;\n    virtual ~ILightControl() {}\n};\n\nclass ITemperatureControl {\npublic:\n    virtual void adjustTemperature() const = 0;\n    virtual ~ITemperatureControl() {}\n};\n\nclass SmartHomeDevice : public ILightControl, public ITemperatureControl {\npublic:\n    void toggleLight() const override {\n        cout << \"Light toggled.\" << endl;\n    }\n    void adjustTemperature() const override {\n        cout << \"Temperature adjusted.\" << endl;\n    }\n};\n\nint main() {\n    SmartHomeDevice device;\n    ILightControl* light = &device;\n    ITemperatureControl* temp = &device;\n    light->toggleLight();\n    temp->adjustTemperature();\n    return 0;\n}"
+    },
+    "explanation": "This demonstrates ***interface segregation***:\n- ***ILightControl*** and ***ITemperatureControl*** are separate interfaces with ```toggleLight``` and ```adjustTemperature```.\n- Virtual destructors ensure proper cleanup.\n- ***SmartHomeDevice*** implements both interfaces with specific actions.\n- In ```main```, pointers to individual interfaces access only relevant methods.\n- This prevents forcing unrelated functionality on clients, adhering to the principle."
+  }
+]
