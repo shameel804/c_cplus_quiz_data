@@ -1,0 +1,4107 @@
+[
+  {
+    "q": "Which type of inheritance allows a derived class to inherit from more than one base class?",
+    "o": [
+      "Multiple inheritance",
+      "Single inheritance",
+      "Multilevel inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    void show() { cout << \"Base class\" << endl; }\n};\n\nclass Derived : public Base {\npublic:\n    void display() { cout << \"Derived class\" << endl; }\n};\n\nint main() {\n    Derived d;\n    d.show();\n    d.display();\n    return 0;\n}",
+    "o": [
+      "Base class\nDerived class",
+      "Derived class\nBase class",
+      "Base class",
+      "Derived class"
+    ]
+  },
+  {
+    "q": "In C++, which inheritance type involves a class derived from a class that is itself derived from another class?",
+    "o": [
+      "Multilevel inheritance",
+      "Multiple inheritance",
+      "Single inheritance",
+      "Hybrid inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"Constructor of A\\n\"; }\n};\n\nclass B : public A {\npublic:\n    B() { cout << \"Constructor of B\\n\"; }\n};\n\nint main() {\n    B b;\n    return 0;\n}",
+    "o": [
+      "Constructor of A\nConstructor of B",
+      "Constructor of B\nConstructor of A",
+      "Constructor of B",
+      "Constructor of A"
+    ]
+  },
+  {
+    "q": "What keyword is used in C++ to prevent multiple instances of a base class in the inheritance hierarchy?",
+    "o": [
+      "virtual",
+      "override",
+      "final",
+      "protected"
+    ]
+  },
+  {
+    "q": "What is function overriding in C++?",
+    "o": [
+      "Redefining a base class function in a derived class with the same signature",
+      "Using multiple functions with the same name but different parameters",
+      "Replacing the constructor of a base class",
+      "Calling a base class method from a derived class"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void show() { cout << \"Base\" << endl; }\n};\n\nclass Derived : public Base {\npublic:\n    void show() override { cout << \"Derived\" << endl; }\n};\n\nint main() {\n    Base* bptr;\n    Derived d;\n    bptr = &d;\n    bptr->show();\n    return 0;\n}",
+    "o": [
+      "Derived",
+      "Base",
+      "BaseDerived",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a virtual base class in C++?",
+    "o": [
+      "A base class that is shared among multiple derived classes to avoid duplication",
+      "A base class with all functions marked virtual",
+      "A class that cannot be instantiated",
+      "A class that uses virtual inheritance to override constructors"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\n\nclass B : virtual public A {\npublic:\n    B() { cout << \"B \"; }\n};\n\nclass C : virtual public A {\npublic:\n    C() { cout << \"C \"; }\n};\n\nclass D : public B, public C {\npublic:\n    D() { cout << \"D\"; }\n};\n\nint main() {\n    D d;\n    return 0;\n}",
+    "o": [
+      "A B C D",
+      "A C B D",
+      "B C A D",
+      "A D B C"
+    ]
+  },
+  {
+    "q": "In which scenario is constructor inheritance necessary in C++?",
+    "o": [
+      "When a derived class wants to reuse base class constructors",
+      "When the base class is abstract",
+      "When using friend functions",
+      "When overloading operators in a derived class"
+    ]
+  },
+  {
+    "q": "Which inheritance type does the following statement represent?\n\nclass B : public A {};\nclass C : public B {};",
+    "o": [
+      "Multilevel inheritance",
+      "Multiple inheritance",
+      "Hybrid inheritance",
+      "Single inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A-\"; }\n};\n\nclass B : public A {\npublic:\n    B() { cout << \"B-\"; }\n};\n\nclass C : public B {\npublic:\n    C() { cout << \"C\"; }\n};\n\nint main() {\n    C c;\n    return 0;\n}",
+    "o": [
+      "A-B-C",
+      "C-B-A",
+      "B-A-C",
+      "A-C-B"
+    ]
+  },
+  {
+    "q": "Which of the following allows a derived class to explicitly call the constructor of its base class?",
+    "o": [
+      "Initializer list",
+      "Static keyword",
+      "Override specifier",
+      "Constructor overloading"
+    ]
+  },
+  {
+    "q": "What is function overriding used for in inheritance?",
+    "o": [
+      "To provide a specific implementation of a base class method in the derived class",
+      "To overload functions with the same name in the same scope",
+      "To restrict access to a function",
+      "To copy the base class function into the derived class without changes"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Animal {\npublic:\n    void sound() { cout << \"Animal sound\" << endl; }\n};\n\nclass Dog : public Animal {\npublic:\n    void sound() { cout << \"Bark\" << endl; }\n};\n\nint main() {\n    Dog d;\n    d.sound();\n    return 0;\n}",
+    "o": [
+      "Bark",
+      "Animal sound",
+      "Bark\nAnimal sound",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which feature helps resolve the diamond problem in multiple inheritance?",
+    "o": [
+      "Virtual base class",
+      "Abstract class",
+      "Static inheritance",
+      "Private inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\n\nclass B : virtual public A {\npublic:\n    B() { cout << \"B \"; }\n};\n\nclass C : virtual public A {\npublic:\n    C() { cout << \"C \"; }\n};\n\nclass D : public B, public C {\npublic:\n    D() { cout << \"D\"; }\n};\n\nint main() {\n    D obj;\n    return 0;\n}",
+    "o": [
+      "A B C D",
+      "A C B D",
+      "B C D A",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "In C++, what happens when a derived class does not define a constructor?",
+    "o": [
+      "The base class constructor is automatically called",
+      "Compilation error",
+      "Derived class is abstract",
+      "Destructor is not called"
+    ]
+  },
+  {
+    "q": "What does the following declaration do?\n\nclass Derived : public Base {\n   using Base::Base;\n};",
+    "o": [
+      "Inherits all constructors from the base class",
+      "Creates a private copy of the base class",
+      "Prevents the base class from being inherited",
+      "Hides all base class methods"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about virtual functions?",
+    "o": [
+      "They allow dynamic (runtime) polymorphism",
+      "They can only be used with private inheritance",
+      "They must be static",
+      "They can't be overridden"
+    ]
+  },
+  {
+    "q": "Which inheritance type is shown when a class inherits from two or more base classes?",
+    "o": [
+      "Multiple inheritance",
+      "Single inheritance",
+      "Multilevel inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\n\nclass B : public A {\npublic:\n    B() { cout << \"B \"; }\n};\n\nclass C : public B {\npublic:\n    C() { cout << \"C\"; }\n};\n\nint main() {\n    C obj;\n    return 0;\n}",
+    "o": [
+      "A B C",
+      "C B A",
+      "B C A",
+      "A C B"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to inherit constructors from a base class in C++11 and later?",
+    "o": [
+      "using",
+      "inherit",
+      "constructor",
+      "base"
+    ]
+  },
+  {
+    "q": "What is the correct way to override a base class function in a derived class in modern C++?",
+    "o": [
+      "Use the 'override' specifier",
+      "Declare the function as 'final'",
+      "Use 'virtual' again in the derived class",
+      "Use 'static' keyword"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void show() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\npublic:\n    void show() override { cout << \"Derived\"; }\n};\n\nint main() {\n    Base* b = new Derived();\n    b->show();\n    return 0;\n}",
+    "o": [
+      "Derived",
+      "Base",
+      "BaseDerived",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following problems can be avoided using virtual base classes?",
+    "o": [
+      "Diamond problem",
+      "Constructor chaining",
+      "Multiple constructor definitions",
+      "Virtual destructor ambiguity"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass X {\npublic:\n    X() { cout << \"X \"; }\n};\n\nclass Y : virtual public X {\npublic:\n    Y() { cout << \"Y \"; }\n};\n\nclass Z : virtual public X {\npublic:\n    Z() { cout << \"Z \"; }\n};\n\nclass Final : public Y, public Z {\npublic:\n    Final() { cout << \"Final\"; }\n};\n\nint main() {\n    Final f;\n    return 0;\n}",
+    "o": [
+      "X Y Z Final",
+      "X Final Y Z",
+      "Y Z Final",
+      "Y Z X Final"
+    ]
+  },
+  {
+    "q": "Which type of inheritance is used when one class derives from another, and a third class derives from the second?",
+    "o": [
+      "Multilevel inheritance",
+      "Multiple inheritance",
+      "Single inheritance",
+      "Cyclic inheritance"
+    ]
+  },
+  {
+    "q": "Which of the following allows dynamic dispatch in C++?",
+    "o": [
+      "Virtual functions",
+      "Function templates",
+      "Static member functions",
+      "Function overloading"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A(int x) { cout << \"A: \" << x << \" \"; }\n};\n\nclass B : public A {\npublic:\n    using A::A;\n};\n\nint main() {\n    B b(10);\n    return 0;\n}",
+    "o": [
+      "A: 10",
+      "B: 10",
+      "A 10",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly demonstrates single inheritance in C++?",
+    "c": "class A {};\nclass B : public A {};",
+    "o": [
+      "Single inheritance",
+      "Multiple inheritance",
+      "Multilevel inheritance",
+      "Hybrid inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of this C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Parent {\npublic:\n    Parent() { cout << \"Parent \"; }\n};\n\nclass Child : public Parent {\npublic:\n    Child() { cout << \"Child\"; }\n};\n\nint main() {\n    Child c;\n    return 0;\n}",
+    "o": [
+      "Parent Child",
+      "Child Parent",
+      "Parent",
+      "Child"
+    ]
+  },
+  {
+    "q": "Which inheritance type can lead to ambiguity in case of shared base classes?",
+    "o": [
+      "Multiple inheritance",
+      "Single inheritance",
+      "Multilevel inheritance",
+      "Friend inheritance"
+    ]
+  },
+  {
+    "q": "What is the effect of the 'using Base::Base;' statement inside a derived class?",
+    "o": [
+      "It inherits constructors from the Base class",
+      "It makes Base class functions private",
+      "It hides all base class constructors",
+      "It deletes the base class constructors"
+    ]
+  },
+  {
+    "q": "Which of the following allows run-time polymorphism in C++?",
+    "o": [
+      "Virtual function",
+      "Function overloading",
+      "Constructor overloading",
+      "Static function"
+    ]
+  },
+  {
+    "q": "What is the output of this C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    void display() { cout << \"A\"; }\n};\n\nclass B : public A {\npublic:\n    void display() { cout << \"B\"; }\n};\n\nint main() {\n    B obj;\n    obj.display();\n    return 0;\n}",
+    "o": [
+      "B",
+      "A",
+      "AB",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "How many times is the virtual base class constructor called in the diamond inheritance scenario?",
+    "o": [
+      "Only once",
+      "Twice",
+      "As many times as inherited",
+      "Depends on visibility"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid type of inheritance in C++?",
+    "o": [
+      "Circular inheritance",
+      "Multiple inheritance",
+      "Single inheritance",
+      "Multilevel inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of this code with virtual inheritance?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\n\nclass B : virtual public A {\npublic:\n    B() { cout << \"B \"; }\n};\n\nclass C : virtual public A {\npublic:\n    C() { cout << \"C \"; }\n};\n\nclass D : public B, public C {\npublic:\n    D() { cout << \"D\"; }\n};\n\nint main() {\n    D obj;\n    return 0;\n}",
+    "o": [
+      "A B C D",
+      "B C A D",
+      "A D",
+      "B C D"
+    ]
+  },
+  {
+    "q": "Which statement is true about function overriding?",
+    "o": [
+      "The base class function must be virtual to enable overriding",
+      "Overridden functions must be static",
+      "Only private methods can be overridden",
+      "The function name must differ in derived class"
+    ]
+  },
+  {
+    "q": "Which inheritance type results in a linear chain of classes, each derived from the previous one?",
+    "o": [
+      "Multilevel inheritance",
+      "Multiple inheritance",
+      "Single inheritance",
+      "Virtual inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of this C++ program?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    Base() { cout << \"Base \"; }\n};\n\nclass Derived : public Base {\npublic:\n    Derived() { cout << \"Derived\"; }\n};\n\nint main() {\n    Derived d;\n    return 0;\n}",
+    "o": [
+      "Base Derived",
+      "Derived Base",
+      "Derived",
+      "Base"
+    ]
+  },
+  {
+    "q": "Which of the following is true about function overriding in C++?",
+    "o": [
+      "The function must have the same signature in base and derived class",
+      "The function must have different return types",
+      "The function must be static in the base class",
+      "The function name must be different"
+    ]
+  },
+  {
+    "q": "In C++, what does virtual inheritance prevent?",
+    "o": [
+      "Duplication of base class in diamond inheritance",
+      "Multiple base class constructors",
+      "Virtual destructor overriding",
+      "Access specifier conflicts"
+    ]
+  },
+  {
+    "q": "What is the output of this C++ code involving overriding?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    virtual void show() { cout << \"A\"; }\n};\n\nclass B : public A {\npublic:\n    void show() override { cout << \"B\"; }\n};\n\nint main() {\n    A* ptr = new B();\n    ptr->show();\n    return 0;\n}",
+    "o": [
+      "B",
+      "A",
+      "BA",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of these keywords is required to override a base class method dynamically?",
+    "o": [
+      "virtual",
+      "const",
+      "static",
+      "friend"
+    ]
+  },
+  {
+    "q": "What is the purpose of virtual base classes in multiple inheritance?",
+    "o": [
+      "To ensure only one copy of a common base class exists",
+      "To restrict constructor inheritance",
+      "To make a class abstract",
+      "To automatically override base methods"
+    ]
+  },
+  {
+    "q": "What is the output of this code using constructor inheritance?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A(int x) { cout << x; }\n};\n\nclass B : public A {\npublic:\n    using A::A;\n};\n\nint main() {\n    B b(42);\n    return 0;\n}",
+    "o": [
+      "42",
+      "0",
+      "Compilation error",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "In multiple inheritance, if two base classes have a common base class, what issue may occur?",
+    "o": [
+      "Diamond problem",
+      "Function hiding",
+      "Constructor slicing",
+      "Destructor mismatch"
+    ]
+  },
+  {
+    "q": "Which of the following inheritance types does the following represent?\n\nclass A {}; class B {}; class C : public A, public B {};",
+    "o": [
+      "Multiple inheritance",
+      "Multilevel inheritance",
+      "Single inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "Which inheritance type involves one derived class inheriting from more than one base class?",
+    "o": [
+      "Multiple inheritance",
+      "Multilevel inheritance",
+      "Single inheritance",
+      "Hybrid inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\nclass B : public A {\npublic:\n    B() { cout << \"B \"; }\n};\nclass C : public B {\npublic:\n    C() { cout << \"C\"; }\n};\n\nint main() {\n    C obj;\n    return 0;\n}",
+    "o": [
+      "A B C",
+      "C B A",
+      "B A C",
+      "C A B"
+    ]
+  },
+  {
+    "q": "Which keyword helps avoid the diamond problem in C++?",
+    "o": [
+      "virtual",
+      "override",
+      "explicit",
+      "final"
+    ]
+  },
+  {
+    "q": "Which of the following statements about constructor inheritance is correct in C++?",
+    "o": [
+      "A derived class can inherit constructors using the 'using' keyword.",
+      "Constructors are automatically inherited.",
+      "Constructors must always be redefined in derived classes.",
+      "Constructor inheritance works only with private inheritance."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void print() { cout << \"Base\"; }\n};\nclass Derived : public Base {\npublic:\n    void print() override { cout << \"Derived\"; }\n};\n\nint main() {\n    Base* ptr = new Derived();\n    ptr->print();\n    return 0;\n}",
+    "o": [
+      "Derived",
+      "Base",
+      "BaseDerived",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "In C++, what must be true for a derived class method to override a base class method?",
+    "o": [
+      "The base class method must be virtual",
+      "The derived method must be private",
+      "The function names must be different",
+      "The derived method must be declared as static"
+    ]
+  },
+  {
+    "q": "Which type of inheritance best describes this structure: Class B inherits Class A, and Class C inherits Class B?",
+    "o": [
+      "Multilevel inheritance",
+      "Multiple inheritance",
+      "Hybrid inheritance",
+      "Single inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of this program involving virtual base class?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\n\nclass B : virtual public A {\npublic:\n    B() { cout << \"B \"; }\n};\n\nclass C : virtual public A {\npublic:\n    C() { cout << \"C \"; }\n};\n\nclass D : public B, public C {\npublic:\n    D() { cout << \"D\"; }\n};\n\nint main() {\n    D obj;\n    return 0;\n}",
+    "o": [
+      "A B C D",
+      "B C A D",
+      "A D",
+      "B C D"
+    ]
+  },
+  {
+    "q": "Which of the following is true about overridden functions?",
+    "o": [
+      "They provide new definitions of virtual functions in derived classes",
+      "They replace static methods in base classes",
+      "They can only be private methods",
+      "They do not need to match the base function signature"
+    ]
+  },
+  {
+    "q": "Which syntax allows constructor inheritance from class A to class B?",
+    "c": "class A {\npublic:\n    A(int) {}\n};\n\nclass B : public A {\npublic:\n    __________;\n};",
+    "o": [
+      "using A::A",
+      "inherit A",
+      "B(int x) : A(x) {}",
+      "super(x)"
+    ]
+  },
+  {
+    "q": "Which of the following inheritance types best represents class B inheriting from both class A and class C?",
+    "o": [
+      "Multiple inheritance",
+      "Multilevel inheritance",
+      "Single inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "What will be the output of the following C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    Base() { cout << \"Base \"; }\n};\n\nclass Derived1 : virtual public Base {\npublic:\n    Derived1() { cout << \"Derived1 \"; }\n};\n\nclass Derived2 : virtual public Base {\npublic:\n    Derived2() { cout << \"Derived2 \"; }\n};\n\nclass Final : public Derived1, public Derived2 {\npublic:\n    Final() { cout << \"Final\"; }\n};\n\nint main() {\n    Final f;\n    return 0;\n}",
+    "o": [
+      "Base Derived1 Derived2 Final",
+      "Derived1 Derived2 Base Final",
+      "Base Final",
+      "Derived1 Base Final"
+    ]
+  },
+  {
+    "q": "Which inheritance type ensures that a derived class inherits from one base class only?",
+    "o": [
+      "Single inheritance",
+      "Multiple inheritance",
+      "Multilevel inheritance",
+      "Virtual inheritance"
+    ]
+  },
+  {
+    "q": "What is the effect of not using the virtual keyword in a function intended for overriding?",
+    "o": [
+      "The base class function will not be overridden at runtime",
+      "The program won’t compile",
+      "The base class function will be hidden completely",
+      "The function will become abstract"
+    ]
+  },
+  {
+    "q": "Which statement is true about constructor inheritance using 'using Base::Base;'?",
+    "o": [
+      "It allows the derived class to inherit all constructors from the base class",
+      "It disables the base class constructor",
+      "It makes the base constructor virtual",
+      "It overrides the base constructor"
+    ]
+  },
+  {
+    "q": "What will be the output of this code using function overriding?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Animal {\npublic:\n    virtual void speak() { cout << \"Animal\"; }\n};\nclass Dog : public Animal {\npublic:\n    void speak() override { cout << \"Dog\"; }\n};\nint main() {\n    Animal* a = new Dog();\n    a->speak();\n    return 0;\n}",
+    "o": [
+      "Dog",
+      "Animal",
+      "AnimalDog",
+      "DogAnimal"
+    ]
+  },
+  {
+    "q": "Which concept resolves ambiguity caused by multiple inheritance of the same base class?",
+    "o": [
+      "Virtual base class",
+      "Pure virtual function",
+      "Overloaded constructor",
+      "Friend function"
+    ]
+  },
+  {
+    "q": "Which of the following is required for dynamic dispatch in C++?",
+    "o": [
+      "A virtual function",
+      "A protected function",
+      "A static function",
+      "A friend function"
+    ]
+  },
+  {
+    "q": "In multilevel inheritance, a class is derived from another derived class. Which of the following demonstrates this?",
+    "c": "class A {};\nclass B : public A {};\nclass C : public B {};",
+    "o": [
+      "Multilevel inheritance",
+      "Multiple inheritance",
+      "Hierarchical inheritance",
+      "Single inheritance"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code with constructor inheritance?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Alpha {\npublic:\n    Alpha(int x) { cout << x << \" \"; }\n};\n\nclass Beta : public Alpha {\npublic:\n    using Alpha::Alpha;\n};\n\nint main() {\n    Beta b(20);\n    return 0;\n}",
+    "o": [
+      "20",
+      "0",
+      "Compilation Error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which inheritance type allows a derived class to access members from more than one base class?",
+    "o": [
+      "Multiple inheritance",
+      "Multilevel inheritance",
+      "Single inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "What will be the output of this C++ program?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\nclass B : public A {\npublic:\n    B() { cout << \"B \"; }\n};\nclass C : public A {\npublic:\n    C() { cout << \"C \"; }\n};\nclass D : public B, public C {\npublic:\n    D() { cout << \"D\"; }\n};\nint main() {\n    D obj;\n    return 0;\n}",
+    "o": [
+      "A B A C D",
+      "A C B D",
+      "B C A D",
+      "A B C D"
+    ]
+  },
+  {
+    "q": "Which of the following correctly describes multilevel inheritance?",
+    "o": [
+      "A derived class inherits from a class that is also derived",
+      "A class inherits from more than one base class",
+      "Multiple classes inherit from a single base class",
+      "All classes are inherited virtually"
+    ]
+  },
+  {
+    "q": "What does the 'override' specifier do in C++?",
+    "o": [
+      "Ensures the function overrides a base class virtual function",
+      "Prevents overriding of the function",
+      "Marks a function as abstract",
+      "Declares a pure virtual function"
+    ]
+  },
+  {
+    "q": "Which keyword is used to resolve ambiguity in diamond inheritance?",
+    "o": [
+      "virtual",
+      "override",
+      "explicit",
+      "abstract"
+    ]
+  },
+  {
+    "q": "What will be printed by the following code?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    A(int x) { cout << x << \" \"; }\n};\nclass B : public A {\npublic:\n    using A::A;\n};\nint main() {\n    B obj(100);\n    return 0;\n}",
+    "o": [
+      "100",
+      "0",
+      "Compilation error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of these is a necessary condition for overriding a function?",
+    "o": [
+      "The function must be virtual in the base class",
+      "The function must be private",
+      "The return type must be different",
+      "The function must be static"
+    ]
+  },
+  {
+    "q": "What is the primary use of a virtual base class in inheritance?",
+    "o": [
+      "To prevent multiple instances of a common base class",
+      "To make a function virtual",
+      "To disable function overriding",
+      "To hide constructors from derived classes"
+    ]
+  },
+  {
+    "q": "What is the output of this virtual inheritance code?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\nclass B : virtual public A {\npublic:\n    B() { cout << \"B \"; }\n};\nclass C : virtual public A {\npublic:\n    C() { cout << \"C \"; }\n};\nclass D : public B, public C {\npublic:\n    D() { cout << \"D\"; }\n};\nint main() {\n    D d;\n    return 0;\n}",
+    "o": [
+      "A B C D",
+      "B A C D",
+      "A D",
+      "B C A D"
+    ]
+  },
+  {
+    "q": "Which inheritance scenario can cause the diamond problem?",
+    "o": [
+      "Multiple inheritance",
+      "Multilevel inheritance",
+      "Single inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "In C++, what is required to inherit constructors from a base class?",
+    "o": [
+      "The 'using' declaration in the derived class",
+      "The base class must have virtual constructors",
+      "The derived class must be abstract",
+      "The constructors must be public and static"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\n\nclass Parent {\npublic:\n    virtual void greet() { cout << \"Hello from Parent\"; }\n};\n\nclass Child : public Parent {\npublic:\n    void greet() override { cout << \"Hello from Child\"; }\n};\n\nint main() {\n    Parent* p = new Child();\n    p->greet();\n    return 0;\n}",
+    "o": [
+      "Hello from Child",
+      "Hello from Parent",
+      "Compilation error",
+      "Undefined behavior"
+    ]
+  },
+  {
+    "q": "What kind of inheritance is demonstrated when a class is derived from a class that is already derived from another class?",
+    "o": [
+      "Multilevel inheritance",
+      "Multiple inheritance",
+      "Single inheritance",
+      "Virtual inheritance"
+    ]
+  },
+  {
+    "q": "Which of the following best resolves ambiguity in multiple inheritance where two base classes inherit from the same grandparent class?",
+    "o": [
+      "Declaring the grandparent class as a virtual base",
+      "Making all functions pure virtual",
+      "Using protected inheritance",
+      "Using friend classes"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\nclass B : public A {\npublic:\n    B() { cout << \"B \"; }\n};\nint main() {\n    B b;\n    return 0;\n}",
+    "o": [
+      "A B",
+      "B A",
+      "B",
+      "A"
+    ]
+  },
+  {
+    "q": "Which of the following is true about overriding a base class function?",
+    "o": [
+      "The function signatures must match exactly",
+      "The function names must differ",
+      "It is optional to mark the base function as virtual",
+      "The base class must be abstract"
+    ]
+  },
+  {
+    "q": "How many times is the constructor of a virtual base class called in a diamond inheritance structure?",
+    "o": [
+      "Once",
+      "Twice",
+      "Depends on number of derived classes",
+      "It is never called"
+    ]
+  },
+  {
+    "q": "What does the following code demonstrate?",
+    "c": "class A { };\nclass B : public A { };\nclass C : public B { };",
+    "o": [
+      "Multilevel inheritance",
+      "Multiple inheritance",
+      "Hybrid inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "What is the purpose of using 'virtual' before a base class in inheritance?",
+    "o": [
+      "To prevent duplicate copies of the base class",
+      "To enable protected access only",
+      "To override the constructor behavior",
+      "To restrict object creation"
+    ]
+  },
+  {
+    "q": "Which of these is true about constructor inheritance using 'using' in a derived class?",
+    "o": [
+      "It allows reuse of base class constructors",
+      "It hides the base class constructors",
+      "It creates new constructors in the derived class",
+      "It disables default construction"
+    ]
+  },
+  {
+    "q": "Which keyword is used in C++ to inherit constructors from the base class?",
+    "o": [
+      "using",
+      "virtual",
+      "override",
+      "extends"
+    ]
+  },
+  {
+    "q": "What is the output of the following program demonstrating multilevel inheritance?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\nclass B : public A {\npublic:\n    B() { cout << \"B \"; }\n};\nclass C : public B {\npublic:\n    C() { cout << \"C\"; }\n};\nint main() {\n    C obj;\n    return 0;\n}",
+    "o": [
+      "A B C",
+      "C B A",
+      "A C B",
+      "B C A"
+    ]
+  },
+  {
+    "q": "What kind of inheritance is shown when class D inherits from both class B and class C?",
+    "o": [
+      "Multiple inheritance",
+      "Single inheritance",
+      "Multilevel inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "Why is a virtual base class used in C++?",
+    "o": [
+      "To avoid duplication of base class members in diamond inheritance",
+      "To inherit pure virtual functions",
+      "To make a base class abstract",
+      "To allow private inheritance"
+    ]
+  },
+  {
+    "q": "Which of the following is required for a base class function to be overridden in a derived class?",
+    "o": [
+      "The function must be virtual in the base class",
+      "The function must be private",
+      "The function must be inline",
+      "The function must be static"
+    ]
+  },
+  {
+    "q": "What is the output of the following code using virtual inheritance?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\nclass B : virtual public A {\npublic:\n    B() { cout << \"B \"; }\n};\nclass C : virtual public A {\npublic:\n    C() { cout << \"C \"; }\n};\nclass D : public B, public C {\npublic:\n    D() { cout << \"D\"; }\n};\nint main() {\n    D d;\n    return 0;\n}",
+    "o": [
+      "A B C D",
+      "B C A D",
+      "A C B D",
+      "C B A D"
+    ]
+  },
+  {
+    "q": "What type of inheritance is represented by a derived class that has only one base class?",
+    "o": [
+      "Single inheritance",
+      "Multiple inheritance",
+      "Multilevel inheritance",
+      "Hybrid inheritance"
+    ]
+  },
+  {
+    "q": "Which of the following correctly overrides a virtual function from a base class in C++11 or later?",
+    "c": "class Base {\npublic:\n    virtual void display();\n};\n\nclass Derived : public Base {\npublic:\n    void display() override;\n};",
+    "o": [
+      "void display() override;",
+      "virtual void display();",
+      "void display();",
+      "void display() final;"
+    ]
+  },
+  {
+    "q": "In multiple inheritance, what can be used to avoid ambiguity when both base classes share a common base?",
+    "o": [
+      "Virtual inheritance",
+      "Function overloading",
+      "Static functions",
+      "Templates"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet demonstrating constructor inheritance?",
+    "c": "#include <iostream>\nusing namespace std;\nclass Base {\npublic:\n    Base(int x) { cout << x << \" \"; }\n};\nclass Derived : public Base {\npublic:\n    using Base::Base;\n};\nint main() {\n    Derived d(7);\n    return 0;\n}",
+    "o": [
+      "7",
+      "0",
+      "Compilation error",
+      "Runtime error"
+    ]
+  },
+  {
+    "q": "Which type of inheritance causes ambiguity in the diamond problem?",
+    "o": [
+      "Multiple inheritance",
+      "Multilevel inheritance",
+      "Single inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "What will be the output of this C++ code demonstrating overriding?",
+    "c": "#include <iostream>\nusing namespace std;\nclass Base {\npublic:\n    virtual void show() { cout << \"Base\"; }\n};\nclass Derived : public Base {\npublic:\n    void show() { cout << \"Derived\"; }\n};\nint main() {\n    Base *b = new Derived();\n    b->show();\n    return 0;\n}",
+    "o": [
+      "Derived",
+      "Base",
+      "BaseDerived",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "What does 'virtual' in virtual inheritance ensure in a diamond-shaped hierarchy?",
+    "o": [
+      "Only one copy of the base class is inherited",
+      "Base class functions become static",
+      "Constructors are automatically inherited",
+      "Derived class becomes abstract"
+    ]
+  },
+  {
+    "q": "Which of the following is true about constructor inheritance?",
+    "o": [
+      "Inherited constructors allow derived classes to use base constructors directly",
+      "Inherited constructors must be declared private",
+      "Constructors are automatically virtual",
+      "Constructors can be overloaded only in derived classes"
+    ]
+  },
+  {
+    "q": "What is the output of this program using single inheritance?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    void print() { cout << \"Class A\"; }\n};\nclass B : public A {\n};\nint main() {\n    B b;\n    b.print();\n    return 0;\n}",
+    "o": [
+      "Class A",
+      "Class B",
+      "Class A Class B",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "In C++, what is required to override a virtual function correctly?",
+    "o": [
+      "Matching signature in derived class",
+      "Changing return type only",
+      "Changing number of parameters",
+      "Function must be static"
+    ]
+  },
+  {
+    "q": "Which inheritance type involves a derived class inheriting from a class that already inherits from another?",
+    "o": [
+      "Multilevel inheritance",
+      "Multiple inheritance",
+      "Hierarchical inheritance",
+      "Single inheritance"
+    ]
+  },
+  {
+    "q": "What will be the output of the following C++ code using virtual base class?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\nclass B : virtual public A {\npublic:\n    B() { cout << \"B \"; }\n};\nclass C : virtual public A {\npublic:\n    C() { cout << \"C \"; }\n};\nclass D : public B, public C {\npublic:\n    D() { cout << \"D\"; }\n};\nint main() {\n    D obj;\n    return 0;\n}",
+    "o": [
+      "A B C D",
+      "A C B D",
+      "B C A D",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following keywords must be used in C++11 or later to explicitly inherit constructors?",
+    "o": [
+      "using",
+      "inherit",
+      "extends",
+      "constructor"
+    ]
+  },
+  {
+    "q": "What is true about function overriding in C++?",
+    "o": [
+      "It allows a derived class to redefine a base class method",
+      "It hides the base class method permanently",
+      "It makes all base class methods abstract",
+      "It must use static functions only"
+    ]
+  },
+  {
+    "q": "Which of the following is an advantage of using virtual base classes?",
+    "o": [
+      "Avoids multiple copies of a common base class",
+      "Allows multiple inheritance",
+      "Improves runtime speed",
+      "Automatically overrides all functions"
+    ]
+  },
+  {
+    "q": "What will be the output of the following program?",
+    "c": "#include <iostream>\nusing namespace std;\nclass Base {\npublic:\n    Base() { cout << \"Base \"; }\n};\nclass Derived : public Base {\npublic:\n    Derived() { cout << \"Derived\"; }\n};\nint main() {\n    Derived d;\n    return 0;\n}",
+    "o": [
+      "Base Derived",
+      "Derived Base",
+      "Derived",
+      "Base"
+    ]
+  },
+  {
+    "q": "Which inheritance type results in a class having more than one immediate base class?",
+    "o": [
+      "Multiple inheritance",
+      "Multilevel inheritance",
+      "Hybrid inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "What will happen if a derived class does not override a virtual function?",
+    "o": [
+      "The base class version is used",
+      "Compiler throws an error",
+      "Function becomes abstract",
+      "Program crashes at runtime"
+    ]
+  },
+  {
+    "q": "Identify the inheritance used in the following structure:",
+    "c": "class A { };\nclass B : public A { };\nclass C : public A { };\nclass D : public B, public C { };",
+    "o": [
+      "Diamond (Multiple) inheritance",
+      "Single inheritance",
+      "Multilevel inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "Which keyword allows derived class to use base class constructors?",
+    "o": [
+      "using",
+      "public",
+      "virtual",
+      "base"
+    ]
+  },
+  {
+    "q": "What is printed by this code?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    void show() { cout << \"A\"; }\n};\nclass B : public A {\npublic:\n    void show() { cout << \"B\"; }\n};\nint main() {\n    B b;\n    b.A::show();\n    return 0;\n}",
+    "o": [
+      "A",
+      "B",
+      "AB",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which feature is associated with function overriding in C++?",
+    "o": [
+      "Polymorphism",
+      "Encapsulation",
+      "Abstraction",
+      "Templates"
+    ]
+  },
+  {
+    "q": "Which of the following statements about constructor inheritance is FALSE?",
+    "o": [
+      "Constructors are not automatically inherited unless specified",
+      "Derived class can inherit constructors using 'using' keyword",
+      "Default constructor of base class is always inherited",
+      "You can inherit parameterized constructors"
+    ]
+  },
+  {
+    "q": "In C++, how is ambiguity resolved when two base classes have the same function?",
+    "o": [
+      "By explicitly specifying the class name using scope resolution",
+      "By overloading the function in derived class",
+      "Using the override keyword",
+      "By declaring function as private"
+    ]
+  },
+  {
+    "q": "Which of the following best describes multilevel inheritance?",
+    "o": [
+      "A derived class is inherited by another class",
+      "A class inherits from two base classes",
+      "Multiple classes inherit the same base class",
+      "One class inherits multiple derived classes"
+    ]
+  },
+  {
+    "q": "What will be the output of the following C++ program?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\nclass B : public A {\npublic:\n    B() { cout << \"B \"; }\n};\nclass C : public B {\npublic:\n    C() { cout << \"C\"; }\n};\nint main() {\n    C obj;\n    return 0;\n}",
+    "o": [
+      "A B C",
+      "C B A",
+      "A C B",
+      "B C A"
+    ]
+  },
+  {
+    "q": "Which statement about virtual base classes is true?",
+    "o": [
+      "They ensure only one instance of a shared base class",
+      "They prevent access to private members",
+      "They disable function overriding",
+      "They automatically generate constructors"
+    ]
+  },
+  {
+    "q": "What is the effect of declaring a function as virtual in a base class?",
+    "o": [
+      "Allows derived classes to override it",
+      "Makes it static",
+      "Makes it inline",
+      "Forces function overloading"
+    ]
+  },
+  {
+    "q": "What kind of inheritance is this?",
+    "c": "class A {};\nclass B : public A {};\nclass C : public B {};",
+    "o": [
+      "Multilevel inheritance",
+      "Multiple inheritance",
+      "Hybrid inheritance",
+      "Single inheritance"
+    ]
+  },
+  {
+    "q": "Which of the following keywords allows a derived class to inherit all constructors from the base class?",
+    "o": [
+      "using",
+      "virtual",
+      "override",
+      "inherit"
+    ]
+  },
+  {
+    "q": "How can function overriding be avoided in multiple inheritance when base classes have methods with same signature?",
+    "o": [
+      "Use scope resolution operator",
+      "Use 'override' keyword",
+      "Make function static",
+      "Declare function private"
+    ]
+  },
+  {
+    "q": "What will this program output?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    void greet() { cout << \"Hello from A\"; }\n};\nclass B : public A {\npublic:\n    void greet() { cout << \"Hello from B\"; }\n};\nint main() {\n    B b;\n    b.greet();\n    return 0;\n}",
+    "o": [
+      "Hello from B",
+      "Hello from A",
+      "Compilation error",
+      "Runtime error"
+    ]
+  },
+  {
+    "q": "Which type of inheritance allows a derived class to access members of two unrelated base classes?",
+    "o": [
+      "Multiple inheritance",
+      "Multilevel inheritance",
+      "Single inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "What will be the output of this constructor inheritance example?",
+    "c": "#include <iostream>\nusing namespace std;\nclass Base {\npublic:\n    Base(int x) { cout << x; }\n};\nclass Derived : public Base {\npublic:\n    using Base::Base;\n};\nint main() {\n    Derived d(99);\n    return 0;\n}",
+    "o": [
+      "99",
+      "0",
+      "Base Derived",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which type of inheritance is used when a class is derived from two unrelated base classes?",
+    "o": [
+      "Multiple inheritance",
+      "Multilevel inheritance",
+      "Hierarchical inheritance",
+      "Single inheritance"
+    ]
+  },
+  {
+    "q": "What will be the output of the following C++ code?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    void display() { cout << \"A \"; }\n};\nclass B : public A {\npublic:\n    void display() { cout << \"B\"; }\n};\nint main() {\n    A *a;\n    B b;\n    a = &b;\n    a->display();\n    return 0;\n}",
+    "o": [
+      "A",
+      "B",
+      "AB",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following describes function overriding?",
+    "o": [
+      "A derived class provides a new implementation of a virtual function from the base class",
+      "A function in derived class hides the base class function with the same name but different signature",
+      "Functions with the same name in base and derived class",
+      "A non-virtual function is redefined in derived class"
+    ]
+  },
+  {
+    "q": "Which keyword is necessary for ensuring a single instance of a base class in multiple inheritance?",
+    "o": [
+      "virtual",
+      "override",
+      "final",
+      "explicit"
+    ]
+  },
+  {
+    "q": "Identify the correct output of the following code using constructor inheritance.",
+    "c": "#include <iostream>\nusing namespace std;\nclass Base {\npublic:\n    Base(int x) { cout << \"Base: \" << x; }\n};\nclass Derived : public Base {\npublic:\n    using Base::Base;\n};\nint main() {\n    Derived d(10);\n    return 0;\n}",
+    "o": [
+      "Base: 10",
+      "Derived: 10",
+      "Base Derived",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "What is the purpose of using 'override' keyword in C++?",
+    "o": [
+      "To indicate that a virtual function is being overridden",
+      "To make a function virtual",
+      "To overload a function",
+      "To resolve ambiguity in inheritance"
+    ]
+  },
+  {
+    "q": "Which inheritance model is illustrated by this code?",
+    "c": "class A { };\nclass B : public A { };\nclass C : public A { };\nclass D : public B, public C { };",
+    "o": [
+      "Diamond problem (Multiple inheritance)",
+      "Multilevel inheritance",
+      "Single inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "When is a constructor of a virtual base class called in C++?",
+    "o": [
+      "It is called by the most derived class",
+      "It is called by each base class in the hierarchy",
+      "It is never called explicitly",
+      "It is called first regardless of order"
+    ]
+  },
+  {
+    "q": "What happens if a derived class constructor does not explicitly call the base class constructor?",
+    "o": [
+      "The base class's default constructor is called automatically",
+      "Compilation fails",
+      "The constructor of derived class fails",
+      "Only virtual functions are called"
+    ]
+  },
+  {
+    "q": "What is the effect of using 'virtual' in base class declaration?",
+    "o": [
+      "Prevents multiple instances of the base class in inheritance chain",
+      "Allows private members to be inherited",
+      "Automatically inherits constructors",
+      "Forces function overloading"
+    ]
+  },
+  {
+    "q": "In C++, what does the following inheritance represent?\n\nclass A {}; class B : public A {}; class C : public B {};",
+    "o": [
+      "Multilevel inheritance",
+      "Multiple inheritance",
+      "Single inheritance",
+      "Hybrid inheritance"
+    ]
+  },
+  {
+    "q": "Which keyword ensures that a function can be overridden in derived classes?",
+    "o": [
+      "virtual",
+      "override",
+      "static",
+      "final"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\nclass B : virtual public A {\npublic:\n    B() { cout << \"B \"; }\n};\nclass C : virtual public A {\npublic:\n    C() { cout << \"C \"; }\n};\nclass D : public B, public C {\npublic:\n    D() { cout << \"D\"; }\n};\nint main() {\n    D obj;\n    return 0;\n}",
+    "o": [
+      "A B C D",
+      "A A B C D",
+      "B C D",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following inheritance types may cause the diamond problem?",
+    "o": [
+      "Multiple inheritance",
+      "Single inheritance",
+      "Multilevel inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "What will be printed by this program?",
+    "c": "#include <iostream>\nusing namespace std;\nclass Base {\npublic:\n    virtual void show() { cout << \"Base\"; }\n};\nclass Derived : public Base {\npublic:\n    void show() override { cout << \"Derived\"; }\n};\nint main() {\n    Base* ptr = new Derived();\n    ptr->show();\n    return 0;\n}",
+    "o": [
+      "Derived",
+      "Base",
+      "Compilation error",
+      "Runtime error"
+    ]
+  },
+  {
+    "q": "In constructor inheritance, what does the 'using' keyword do?",
+    "o": [
+      "Inherits all constructors from the base class",
+      "Makes a function virtual",
+      "Creates a copy constructor",
+      "Avoids constructor overloading"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid type of inheritance in C++?",
+    "o": [
+      "Distributed inheritance",
+      "Single inheritance",
+      "Multiple inheritance",
+      "Multilevel inheritance"
+    ]
+  },
+  {
+    "q": "How is ambiguity resolved when the same method exists in both base classes in multiple inheritance?",
+    "o": [
+      "By using the scope resolution operator",
+      "By using the 'override' keyword",
+      "By making the function pure virtual",
+      "By declaring the function static"
+    ]
+  },
+  {
+    "q": "Which of the following is true about virtual base classes?",
+    "o": [
+      "They are used to prevent multiple instances of a base class",
+      "They disable virtual functions",
+      "They require overriding of all base class methods",
+      "They do not support inheritance"
+    ]
+  },
+  {
+    "q": "What kind of inheritance is used in the following code?",
+    "c": "class A {}; class B : public A {}; class C : public A {}; class D : public B, public C {};",
+    "o": [
+      "Diamond inheritance",
+      "Multilevel inheritance",
+      "Single inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "Which type of inheritance is used when a class is derived from a class that is already derived from another class?",
+    "o": [
+      "Multilevel inheritance",
+      "Multiple inheritance",
+      "Single inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"A\"; }\n};\nclass B : public A {\npublic:\n    B() { cout << \"B\"; }\n};\nint main() {\n    B obj;\n    return 0;\n}",
+    "o": [
+      "AB",
+      "BA",
+      "A B",
+      "B A"
+    ]
+  },
+  {
+    "q": "Which of the following correctly demonstrates function overriding in C++?",
+    "c": "class Base {\npublic:\n    virtual void show() {}\n};\nclass Derived : public Base {\npublic:\n    void show() override {}\n};",
+    "o": [
+      "Derived class redefines the base class's virtual function",
+      "Base class hides the derived class function",
+      "The function becomes overloaded",
+      "It causes a compile-time error"
+    ]
+  },
+  {
+    "q": "Which keyword should be used to inherit constructors from a base class?",
+    "o": [
+      "using",
+      "override",
+      "virtual",
+      "explicit"
+    ]
+  },
+  {
+    "q": "What is a virtual base class used for in C++?",
+    "o": [
+      "To avoid duplicate base class instances in multiple inheritance",
+      "To make functions abstract",
+      "To disable constructor overloading",
+      "To allow static member inheritance"
+    ]
+  },
+  {
+    "q": "Which of the following is valid multiple inheritance syntax in C++?",
+    "c": "class A {};\nclass B {};\nclass C : public A, public B {};",
+    "o": [
+      "class C : public A, public B {};",
+      "class C inherits A and B {}",
+      "class C extends A, B {}",
+      "class C : A & B {}"
+    ]
+  },
+  {
+    "q": "Which output will this code produce?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    virtual void print() { cout << \"A\"; }\n};\nclass B : public A {\npublic:\n    void print() { cout << \"B\"; }\n};\nint main() {\n    A* obj = new B();\n    obj->print();\n    return 0;\n}",
+    "o": [
+      "B",
+      "A",
+      "AB",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "In which inheritance model can the diamond problem occur?",
+    "o": [
+      "When two base classes inherit from the same base, and a derived class inherits both",
+      "When a derived class inherits one base class",
+      "When inheritance is private",
+      "When all functions are virtual"
+    ]
+  },
+  {
+    "q": "What is the role of 'virtual' keyword in base class constructor context?",
+    "o": [
+      "It has no effect since constructors cannot be virtual",
+      "It makes the constructor abstract",
+      "It delays constructor call",
+      "It allows constructor overloading"
+    ]
+  },
+  {
+    "q": "What is the order of constructor calls in multilevel inheritance?",
+    "o": [
+      "Base to derived",
+      "Derived to base",
+      "Random order",
+      "Only derived class constructor is called"
+    ]
+  },
+  {
+    "q": "Which inheritance type allows a class to inherit from more than one base class directly?",
+    "o": [
+      "Multiple inheritance",
+      "Multilevel inheritance",
+      "Single inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\nclass B : public A {\npublic:\n    B() { cout << \"B \"; }\n};\nclass C : public B {\npublic:\n    C() { cout << \"C\"; }\n};\nint main() {\n    C obj;\n    return 0;\n}",
+    "o": [
+      "A B C",
+      "C B A",
+      "A C B",
+      "B A C"
+    ]
+  },
+  {
+    "q": "What is required for a base class method to be overridden in the derived class?",
+    "o": [
+      "It must be declared as virtual in the base class",
+      "It must be static",
+      "It must be a constructor",
+      "It must be private"
+    ]
+  },
+  {
+    "q": "Which keyword is used to inherit all constructors from a base class in C++11 and above?",
+    "o": [
+      "using",
+      "virtual",
+      "inherits",
+      "override"
+    ]
+  },
+  {
+    "q": "What issue does the virtual base class solve in multiple inheritance?",
+    "o": [
+      "Duplicate base subobject",
+      "Constructor overloading",
+      "Object slicing",
+      "Name hiding"
+    ]
+  },
+  {
+    "q": "What is the output of this code involving virtual functions?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    virtual void show() { cout << \"A\"; }\n};\nclass B : public A {\npublic:\n    void show() { cout << \"B\"; }\n};\nint main() {\n    A a;\n    B b;\n    A* ptr = &b;\n    ptr->show();\n    return 0;\n}",
+    "o": [
+      "B",
+      "A",
+      "AB",
+      "Error"
+    ]
+  },
+  {
+    "q": "In which inheritance model can a class indirectly inherit from its grandparent class?",
+    "o": [
+      "Multilevel inheritance",
+      "Multiple inheritance",
+      "Single inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "What does the 'override' keyword help with in C++?",
+    "o": [
+      "It ensures the function is correctly overriding a base class virtual function",
+      "It converts a function to a virtual one",
+      "It hides base class function",
+      "It disables inheritance"
+    ]
+  },
+  {
+    "q": "Which of the following will prevent function overriding?",
+    "o": [
+      "Not marking the base class function as virtual",
+      "Using the same name for the function in both classes",
+      "Using public inheritance",
+      "Using the override keyword"
+    ]
+  },
+  {
+    "q": "Which of the following defines a virtual base class correctly?",
+    "c": "class A { };\nclass B : virtual public A { };\nclass C : virtual public A { };\nclass D : public B, public C { };",
+    "o": [
+      "class B : virtual public A { };",
+      "class B : A { };",
+      "class B : public virtual_base A { };",
+      "class B inherits virtual A { };"
+    ]
+  },
+  {
+    "q": "Which of the following best describes hierarchical inheritance?",
+    "o": [
+      "Multiple classes derived from a single base class",
+      "One class derived from two base classes",
+      "A chain of inheritance from one base to a final derived class",
+      "Multiple base classes inherited by a single class"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"Constructor A \"; }\n};\nclass B {\npublic:\n    B() { cout << \"Constructor B \"; }\n};\nclass C : public A, public B {\npublic:\n    C() { cout << \"Constructor C\"; }\n};\nint main() {\n    C obj;\n    return 0;\n}",
+    "o": [
+      "Constructor A Constructor B Constructor C",
+      "Constructor B Constructor A Constructor C",
+      "Constructor C Constructor A Constructor B",
+      "Constructor A Constructor C Constructor B"
+    ]
+  },
+  {
+    "q": "Which is true about function overriding?",
+    "o": [
+      "The base class function must be marked as virtual",
+      "The base class function must be private",
+      "Overriding is only possible in constructors",
+      "The overridden function must be static"
+    ]
+  },
+  {
+    "q": "Which of the following will allow a derived class to inherit all constructors from its base class?",
+    "o": [
+      "using BaseClass::BaseClass;",
+      "BaseClass() = inherited;",
+      "import BaseClass();",
+      "override BaseClass();"
+    ]
+  },
+  {
+    "q": "What problem does virtual inheritance resolve?",
+    "o": [
+      "Duplication of base class subobjects",
+      "Overloading ambiguity",
+      "Access specifier conflicts",
+      "Object slicing"
+    ]
+  },
+  {
+    "q": "What will be printed by the following code?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    virtual void print() { cout << \"A\"; }\n};\nclass B : public A {\npublic:\n    void print() { cout << \"B\"; }\n};\nint main() {\n    A a;\n    B b;\n    A* ptr = &a;\n    ptr->print();\n    return 0;\n}",
+    "o": [
+      "A",
+      "B",
+      "AB",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct syntax for virtual inheritance?",
+    "o": [
+      "class B : virtual public A {};",
+      "class B inherits virtual A {}",
+      "class B : A virtual {}",
+      "class B : public virtual_base A {}"
+    ]
+  },
+  {
+    "q": "Which of the following statements is TRUE about multilevel inheritance?",
+    "o": [
+      "A derived class acts as a base class for another class",
+      "Two base classes inherit from the same parent",
+      "Two classes inherit from each other directly",
+      "It is the same as multiple inheritance"
+    ]
+  },
+  {
+    "q": "What is the main difference between overriding and overloading?",
+    "o": [
+      "Overriding involves inheritance; overloading does not",
+      "Overriding must happen in the same class",
+      "Overloading requires virtual keyword",
+      "Overriding works only for constructors"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\nclass B : virtual public A {\npublic:\n    B() { cout << \"B \"; }\n};\nclass C : virtual public A {\npublic:\n    C() { cout << \"C \"; }\n};\nclass D : public B, public C {\npublic:\n    D() { cout << \"D\"; }\n};\nint main() {\n    D d;\n    return 0;\n}",
+    "o": [
+      "A B C D",
+      "A A B C D",
+      "B C A D",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes single inheritance?",
+    "o": [
+      "A derived class inherits from one base class",
+      "A class inherits from two or more base classes",
+      "A base class inherits from a derived class",
+      "Multiple derived classes inherit the same base class"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\nclass Parent {\npublic:\n    Parent() { cout << \"Parent \"; }\n};\nclass Child : public Parent {\npublic:\n    Child() { cout << \"Child\"; }\n};\nint main() {\n    Child c;\n    return 0;\n}",
+    "o": [
+      "Parent Child",
+      "Child Parent",
+      "ParentChild",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "What is required in a base class to allow derived classes to override its function?",
+    "o": [
+      "The function must be declared as virtual",
+      "The function must be declared as static",
+      "The function must be protected",
+      "The function must be inline"
+    ]
+  },
+  {
+    "q": "Which statement about virtual base classes is TRUE?",
+    "o": [
+      "They prevent multiple copies of a base class in the inheritance hierarchy",
+      "They prevent function overriding",
+      "They enforce private inheritance",
+      "They convert constructors to virtual functions"
+    ]
+  },
+  {
+    "q": "What is the correct way to inherit constructors from a base class in C++11?",
+    "o": [
+      "using Base::Base;",
+      "inherit Base();",
+      "construct Base();",
+      "copy Base();"
+    ]
+  },
+  {
+    "q": "What is the output of the following code involving virtual inheritance?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\nclass B : virtual public A {\npublic:\n    B() { cout << \"B \"; }\n};\nclass C : virtual public A {\npublic:\n    C() { cout << \"C \"; }\n};\nclass D : public B, public C {\npublic:\n    D() { cout << \"D\"; }\n};\nint main() {\n    D obj;\n    return 0;\n}",
+    "o": [
+      "A B C D",
+      "B C A D",
+      "A A B C D",
+      "C B A D"
+    ]
+  },
+  {
+    "q": "Which of the following function declarations in a derived class properly overrides a virtual function from the base class?",
+    "o": [
+      "void display() override;",
+      "virtual void display() const;",
+      "void display(int);",
+      "static void display();"
+    ]
+  },
+  {
+    "q": "What kind of inheritance is demonstrated when a class D inherits from both classes B and C, and both B and C inherit from class A?",
+    "o": [
+      "Diamond inheritance",
+      "Single inheritance",
+      "Multilevel inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "Which access specifier is typically used to ensure public inheritance in C++?",
+    "o": [
+      "public",
+      "protected",
+      "private",
+      "virtual"
+    ]
+  },
+  {
+    "q": "Which of the following is necessary for constructor inheritance to work in modern C++?",
+    "o": [
+      "C++11 or later and 'using' keyword",
+      "Inheritance from a virtual class",
+      "Abstract base class",
+      "Explicit constructor definition"
+    ]
+  },
+  {
+    "q": "Which type of inheritance allows a class to be derived from two base classes?",
+    "o": [
+      "Multiple inheritance",
+      "Single inheritance",
+      "Multilevel inheritance",
+      "Hybrid inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"A-\"; }\n};\nclass B : public A {\npublic:\n    B() { cout << \"B-\"; }\n};\nclass C : public B {\npublic:\n    C() { cout << \"C\"; }\n};\nint main() {\n    C obj;\n    return 0;\n}",
+    "o": [
+      "A-B-C",
+      "C-B-A",
+      "A-C-B",
+      "B-A-C"
+    ]
+  },
+  {
+    "q": "In function overriding, which condition must be met?",
+    "o": [
+      "The function signature must be identical in base and derived class",
+      "The function in the derived class must have a different return type",
+      "The function must be declared static",
+      "The base class function must be private"
+    ]
+  },
+  {
+    "q": "Which of the following introduces ambiguity in multiple inheritance?",
+    "o": [
+      "Same base class inherited by multiple parent classes",
+      "Private inheritance",
+      "Virtual function usage",
+      "Constructor overloading"
+    ]
+  },
+  {
+    "q": "Which feature allows a derived class to use all constructors of its base class?",
+    "o": [
+      "Constructor inheritance using 'using'",
+      "Virtual base class",
+      "Friend function",
+      "Protected constructor"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <iostream>\nusing namespace std;\nclass Base {\npublic:\n    virtual void show() { cout << \"Base\"; }\n};\nclass Derived : public Base {\npublic:\n    void show() override { cout << \"Derived\"; }\n};\nint main() {\n    Base* bptr = new Derived();\n    bptr->show();\n    return 0;\n}",
+    "o": [
+      "Derived",
+      "Base",
+      "BaseDerived",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "What is the output when constructors are inherited using the 'using' keyword?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    A(int x) { cout << \"A: \" << x << endl; }\n};\nclass B : public A {\npublic:\n    using A::A;\n};\nint main() {\n    B obj(100);\n    return 0;\n}",
+    "o": [
+      "A: 100",
+      "B: 100",
+      "100",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Why are virtual base classes used in C++?",
+    "o": [
+      "To avoid multiple instances of a common base class in diamond inheritance",
+      "To make a class abstract",
+      "To allow private inheritance",
+      "To simplify constructor calls"
+    ]
+  },
+  {
+    "q": "Which of the following correctly overrides a virtual function from the base class?",
+    "o": [
+      "void display() override;",
+      "void display(int x);",
+      "static void display();",
+      "virtual void display() const override = 0;"
+    ]
+  },
+  {
+    "q": "Which inheritance model forms a class hierarchy like: A → B → C?",
+    "o": [
+      "Multilevel inheritance",
+      "Multiple inheritance",
+      "Hierarchical inheritance",
+      "Hybrid inheritance"
+    ]
+  },
+  {
+    "q": "Which type of inheritance creates a hierarchy where one derived class inherits from another derived class?",
+    "o": [
+      "Multilevel inheritance",
+      "Multiple inheritance",
+      "Single inheritance",
+      "Hybrid inheritance"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <iostream>\nusing namespace std;\nclass X {\npublic:\n    X() { cout << \"X \"; }\n};\nclass Y : public X {\npublic:\n    Y() { cout << \"Y \"; }\n};\nclass Z : public Y {\npublic:\n    Z() { cout << \"Z\"; }\n};\nint main() {\n    Z obj;\n    return 0;\n}",
+    "o": [
+      "X Y Z",
+      "Z Y X",
+      "X Z Y",
+      "Y X Z"
+    ]
+  },
+  {
+    "q": "Which of the following is required to override a function correctly in C++?",
+    "o": [
+      "The base class function must be virtual",
+      "The function must be static in both classes",
+      "The function must have a different name",
+      "The derived function must be private"
+    ]
+  },
+  {
+    "q": "What does the following line of code do?\n\nusing Base::Base;",
+    "o": [
+      "Inherits all constructors from the Base class",
+      "Makes Base class a friend",
+      "Converts all functions to virtual",
+      "Declares a new constructor"
+    ]
+  },
+  {
+    "q": "What is a major reason to use virtual inheritance?",
+    "o": [
+      "To resolve the diamond problem",
+      "To prevent function overriding",
+      "To block constructor access",
+      "To allow static function usage"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    virtual void greet() { cout << \"Hello from A\"; }\n};\nclass B : public A {\npublic:\n    void greet() override { cout << \"Hello from B\"; }\n};\nint main() {\n    A* ptr = new B();\n    ptr->greet();\n    return 0;\n}",
+    "o": [
+      "Hello from B",
+      "Hello from A",
+      "B A",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which inheritance model is shown in the hierarchy where class D inherits from both B and C, and B and C inherit from A?",
+    "o": [
+      "Diamond inheritance",
+      "Multilevel inheritance",
+      "Hierarchical inheritance",
+      "Linear inheritance"
+    ]
+  },
+  {
+    "q": "In the context of constructor inheritance, which keyword allows a derived class to reuse all base constructors?",
+    "o": [
+      "using",
+      "import",
+      "friend",
+      "inherits"
+    ]
+  },
+  {
+    "q": "Which of these scenarios requires virtual inheritance?",
+    "o": [
+      "When two classes derive from a common base and a fourth class inherits both",
+      "When a class inherits constructors explicitly",
+      "When overloading a function in a derived class",
+      "When declaring abstract functions"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "#include <iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\nclass B : virtual public A {\npublic:\n    B() { cout << \"B \"; }\n};\nclass C : virtual public A {\npublic:\n    C() { cout << \"C \"; }\n};\nclass D : public B, public C {\npublic:\n    D() { cout << \"D\"; }\n};\nint main() {\n    D d;\n    return 0;\n}",
+    "o": [
+      "A B C D",
+      "B C A D",
+      "A A B C D",
+      "C B A D"
+    ]
+  },
+  {
+    "q": "Which type of inheritance involves a derived class inheriting from a single base class?",
+    "o": [
+      "Single inheritance",
+      "Multiple inheritance",
+      "Multilevel inheritance",
+      "Hybrid inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code snippet?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    void show() {\n        cout << \"Class A\";\n    }\n};\n\nclass B : public A {\n};\n\nint main() {\n    B obj;\n    obj.show();\n    return 0;\n}",
+    "o": [
+      "Class A",
+      "Class B",
+      "Compilation error",
+      "Runtime error"
+    ]
+  },
+  {
+    "q": "Which type of inheritance allows a class to inherit from more than one base class?",
+    "o": [
+      "Multiple inheritance",
+      "Single inheritance",
+      "Multilevel inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "What is function overriding in C++?",
+    "o": [
+      "Redefining a base class function in the derived class with the same signature",
+      "Creating a function with a different name in the derived class",
+      "Overloading a function with different parameters",
+      "Using a function from another namespace"
+    ]
+  },
+  {
+    "q": "What will be the output of the following C++ code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    Base() {\n        cout << \"Base constructor \";\n    }\n};\n\nclass Derived : public Base {\npublic:\n    Derived() {\n        cout << \"Derived constructor\";\n    }\n};\n\nint main() {\n    Derived d;\n    return 0;\n}",
+    "o": [
+      "Base constructor Derived constructor",
+      "Derived constructor Base constructor",
+      "Base constructor",
+      "Derived constructor"
+    ]
+  },
+  {
+    "q": "Which keyword is used in C++ to define a virtual base class?",
+    "o": [
+      "virtual",
+      "abstract",
+      "override",
+      "base"
+    ]
+  },
+  {
+    "q": "What does the following code demonstrate?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    void display() {\n        cout << \"Class A\";\n    }\n};\n\nclass B : public A {\npublic:\n    void display() {\n        cout << \"Class B\";\n    }\n};\n\nint main() {\n    B obj;\n    obj.display();\n    return 0;\n}",
+    "o": [
+      "Function overriding",
+      "Constructor overloading",
+      "Virtual inheritance",
+      "Multilevel inheritance"
+    ]
+  },
+  {
+    "q": "In multilevel inheritance, how many levels of inheritance are involved?",
+    "o": [
+      "At least three (Base → Intermediate → Derived)",
+      "Exactly two",
+      "Only one",
+      "More than one base class"
+    ]
+  },
+  {
+    "q": "What is the correct syntax for creating a virtual base class in C++?",
+    "o": [
+      "class B : virtual public A {}",
+      "class B : public virtual A {}",
+      "class B virtual A {}",
+      "class virtual B : public A {}"
+    ]
+  },
+  {
+    "q": "Which constructor is called first when creating an object of a derived class?",
+    "o": [
+      "Base class constructor",
+      "Derived class constructor",
+      "Friend class constructor",
+      "Virtual class constructor"
+    ]
+  },
+  {
+    "q": "Which inheritance type can lead to the diamond problem in C++?",
+    "o": [
+      "Multiple inheritance",
+      "Single inheritance",
+      "Multilevel inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\n\nclass B : public A {\npublic:\n    B() { cout << \"B \"; }\n};\n\nclass C : public B {\npublic:\n    C() { cout << \"C\"; }\n};\n\nint main() {\n    C obj;\n    return 0;\n}",
+    "o": [
+      "A B C",
+      "C B A",
+      "B C A",
+      "A C B"
+    ]
+  },
+  {
+    "q": "In function overriding, what must match between the base and derived class function?",
+    "o": [
+      "Function name and parameter list",
+      "Only return type",
+      "Only function name",
+      "Only access specifier"
+    ]
+  },
+  {
+    "q": "What is constructor inheritance in C++?",
+    "o": [
+      "Derived class using base class constructors using the 'using' keyword",
+      "Constructors being overridden in the derived class",
+      "Copy constructor passed to derived class",
+      "Inheritance of destructors only"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A\"; }\n};\n\nclass B : virtual public A {\npublic:\n    B() { cout << \"B\"; }\n};\n\nclass C : virtual public A {\npublic:\n    C() { cout << \"C\"; }\n};\n\nclass D : public B, public C {\npublic:\n    D() { cout << \"D\"; }\n};\n\nint main() {\n    D obj;\n    return 0;\n}",
+    "o": [
+      "ABCD",
+      "ABCDAB",
+      "ABCAD",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about virtual base classes?",
+    "o": [
+      "They help prevent multiple copies of base class in diamond inheritance",
+      "They make all functions of a class virtual",
+      "They prevent function overriding",
+      "They must be abstract"
+    ]
+  },
+  {
+    "q": "What is required to override a base class function in the derived class?",
+    "o": [
+      "Same function signature",
+      "Different return type",
+      "Different function name",
+      "Function must be private in base class"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    void print() {\n        cout << \"Base\";\n    }\n};\n\nclass B : public A {\npublic:\n    void print() {\n        cout << \"Derived\";\n    }\n};\n\nint main() {\n    B b;\n    b.print();\n    return 0;\n}",
+    "o": [
+      "Derived",
+      "Base",
+      "Compilation error",
+      "None"
+    ]
+  },
+  {
+    "q": "Which keyword allows a derived class in C++ to use constructors from its base class?",
+    "o": [
+      "using",
+      "this",
+      "inherit",
+      "constructor"
+    ]
+  },
+  {
+    "q": "In which inheritance type does the derived class inherit from a class that is already derived from another base class?",
+    "o": [
+      "Multilevel inheritance",
+      "Multiple inheritance",
+      "Hierarchical inheritance",
+      "Hybrid inheritance"
+    ]
+  },
+  {
+    "q": "In C++, which inheritance type allows one derived class to inherit from two unrelated base classes?",
+    "o": [
+      "Multiple inheritance",
+      "Multilevel inheritance",
+      "Single inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    void show() { cout << \"A \"; }\n};\n\nclass B : public A {\npublic:\n    void show() { cout << \"B \"; }\n};\n\nint main() {\n    B obj;\n    obj.show();\n    return 0;\n}",
+    "o": [
+      "B",
+      "A",
+      "AB",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about virtual base class is correct?",
+    "o": [
+      "It ensures only one copy of a base class is inherited when using multiple paths",
+      "It prevents a class from being inherited",
+      "It allows constructors to be inherited",
+      "It disables function overriding"
+    ]
+  },
+  {
+    "q": "What is the role of 'virtual' in virtual inheritance?",
+    "o": [
+      "To avoid multiple instances of the same base class",
+      "To make member functions virtual",
+      "To enable polymorphism",
+      "To hide base class methods"
+    ]
+  },
+  {
+    "q": "Which output will this code generate?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A\"; }\n};\n\nclass B : public A {\npublic:\n    B() { cout << \"B\"; }\n};\n\nclass C : public B {\npublic:\n    C() { cout << \"C\"; }\n};\n\nint main() {\n    C obj;\n    return 0;\n}",
+    "o": [
+      "ABC",
+      "CBA",
+      "A",
+      "ACB"
+    ]
+  },
+  {
+    "q": "Which of the following best describes function overriding in C++?",
+    "o": [
+      "Redefining a base class method in the derived class using the same signature",
+      "Using a base class function as-is",
+      "Defining multiple functions with the same name but different arguments",
+      "Calling base class function using base class object"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to allow constructor inheritance from a base class in C++11 and later?",
+    "o": [
+      "using",
+      "inherits",
+      "extends",
+      "constructor"
+    ]
+  },
+  {
+    "q": "Which inheritance type does the following code demonstrate?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\n};\nclass B : public A {\n};\nclass C : public B {\n};",
+    "o": [
+      "Multilevel inheritance",
+      "Multiple inheritance",
+      "Single inheritance",
+      "Hybrid inheritance"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    void display() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\n};\n\nint main() {\n    Derived d;\n    d.display();\n    return 0;\n}",
+    "o": [
+      "Base",
+      "Derived",
+      "display",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "When using multiple inheritance with virtual base classes, how many times is the base class constructor called?",
+    "o": [
+      "Once",
+      "Twice",
+      "Depends on the number of base classes",
+      "It is not called"
+    ]
+  },
+  {
+    "q": "Which inheritance type allows a class to derive from more than one base class directly?",
+    "o": [
+      "Multiple inheritance",
+      "Multilevel inheritance",
+      "Single inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "What will be the output of the following C++ code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass Animal {\npublic:\n    Animal() { cout << \"Animal \"; }\n};\n\nclass Mammal : public Animal {\npublic:\n    Mammal() { cout << \"Mammal \"; }\n};\n\nclass Dog : public Mammal {\npublic:\n    Dog() { cout << \"Dog\"; }\n};\n\nint main() {\n    Dog d;\n    return 0;\n}",
+    "o": [
+      "Animal Mammal Dog",
+      "Dog Mammal Animal",
+      "Mammal Dog",
+      "Animal Dog"
+    ]
+  },
+  {
+    "q": "Which of the following is true about function overriding?",
+    "o": [
+      "The function in the derived class must have the same signature as in the base class",
+      "The function must be private in the base class",
+      "The function must be declared as friend",
+      "The function must be overloaded in the base class"
+    ]
+  },
+  {
+    "q": "Which C++ keyword is used to declare that a base class should be shared in a diamond inheritance structure?",
+    "o": [
+      "virtual",
+      "override",
+      "shared",
+      "friend"
+    ]
+  },
+  {
+    "q": "What will be printed when this C++ code is run?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A\"; }\n};\n\nclass B : virtual public A {\npublic:\n    B() { cout << \"B\"; }\n};\n\nclass C : virtual public A {\npublic:\n    C() { cout << \"C\"; }\n};\n\nclass D : public B, public C {\npublic:\n    D() { cout << \"D\"; }\n};\n\nint main() {\n    D d;\n    return 0;\n}",
+    "o": [
+      "ABCD",
+      "ACBD",
+      "BACD",
+      "BCAD"
+    ]
+  },
+  {
+    "q": "What happens if a derived class uses `using Base::Base;` in C++11 or later?",
+    "o": [
+      "It inherits constructors from the base class",
+      "It hides the base class constructors",
+      "It overrides the base class methods",
+      "It disables constructor overloading"
+    ]
+  },
+  {
+    "q": "Which inheritance structure is shown in this code snippet?",
+    "c": "class Engine {};\nclass Wheels {};\nclass Car : public Engine, public Wheels {};",
+    "o": [
+      "Multiple inheritance",
+      "Multilevel inheritance",
+      "Single inheritance",
+      "Hybrid inheritance"
+    ]
+  },
+  {
+    "q": "What must be the same between base and derived class functions to achieve overriding?",
+    "o": [
+      "Function name, return type, and parameters",
+      "Only return type",
+      "Only function name",
+      "Only access specifier"
+    ]
+  },
+  {
+    "q": "In multilevel inheritance, which class acts both as a derived and a base class?",
+    "o": [
+      "Intermediate class",
+      "Base class",
+      "Final class",
+      "Friend class"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    Base(int x) { cout << x << \" \"; }\n};\n\nclass Derived : public Base {\npublic:\n    using Base::Base;\n};\n\nint main() {\n    Derived d(100);\n    return 0;\n}",
+    "o": [
+      "100",
+      "0",
+      "Compilation error",
+      "Base"
+    ]
+  },
+  {
+    "q": "Which of the following is a characteristic of single inheritance?",
+    "o": [
+      "A derived class inherits from only one base class",
+      "A class inherits from two unrelated base classes",
+      "A class inherits through multiple levels of base classes",
+      "A class inherits members using virtual keyword"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    void display() { cout << \"A::display\"; }\n};\n\nclass B : public A {\npublic:\n    void display() { cout << \"B::display\"; }\n};\n\nint main() {\n    B obj;\n    obj.display();\n    return 0;\n}",
+    "o": [
+      "B::display",
+      "A::display",
+      "display",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "In which type of inheritance can a derived class inherit from a base class that is itself derived from another class?",
+    "o": [
+      "Multilevel inheritance",
+      "Multiple inheritance",
+      "Single inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "What keyword allows a class to inherit constructors from its base class in modern C++?",
+    "o": [
+      "using",
+      "inherits",
+      "constructor",
+      "extends"
+    ]
+  },
+  {
+    "q": "Which of the following ensures that a class is inherited only once in the hierarchy, even if multiple paths exist?",
+    "o": [
+      "Virtual base class",
+      "Abstract class",
+      "Static inheritance",
+      "Private inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\n\nclass B : public A {\npublic:\n    B() { cout << \"B \"; }\n};\n\nclass C : public A {\npublic:\n    C() { cout << \"C \"; }\n};\n\nclass D : public B, public C {\npublic:\n    D() { cout << \"D \"; }\n};\n\nint main() {\n    D d;\n    return 0;\n}",
+    "o": [
+      "A B A C D",
+      "A C B D",
+      "B C A D",
+      "Compilation error due to ambiguity"
+    ]
+  },
+  {
+    "q": "Which of the following is true about overriding a virtual function?",
+    "o": [
+      "The base function must be marked as virtual",
+      "The derived function must be marked as static",
+      "The base function must be private",
+      "The function must have different signatures"
+    ]
+  },
+  {
+    "q": "Which inheritance type may lead to the Diamond Problem in C++?",
+    "o": [
+      "Multiple inheritance",
+      "Single inheritance",
+      "Multilevel inheritance",
+      "Friend inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of this C++ snippet?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void show() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\npublic:\n    void show() override { cout << \"Derived\"; }\n};\n\nint main() {\n    Base* ptr = new Derived();\n    ptr->show();\n    delete ptr;\n    return 0;\n}",
+    "o": [
+      "Derived",
+      "Base",
+      "BaseDerived",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "In a class hierarchy with virtual base classes, who is responsible for calling the constructor of the virtual base class?",
+    "o": [
+      "The most derived class",
+      "The immediate base class",
+      "Each base class separately",
+      "The compiler only"
+    ]
+  },
+  {
+    "q": "Which inheritance type involves a class being derived from more than one base class?",
+    "o": [
+      "Multiple inheritance",
+      "Multilevel inheritance",
+      "Single inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\n\nclass B : virtual public A {\npublic:\n    B() { cout << \"B \"; }\n};\n\nclass C : virtual public A {\npublic:\n    C() { cout << \"C \"; }\n};\n\nclass D : public B, public C {\npublic:\n    D() { cout << \"D\"; }\n};\n\nint main() {\n    D d;\n    return 0;\n}",
+    "o": [
+      "A B C D",
+      "A A B C D",
+      "B C A D",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to indicate that a class should inherit constructors from a base class in C++11 and above?",
+    "o": [
+      "using",
+      "inherits",
+      "constructor",
+      "extends"
+    ]
+  },
+  {
+    "q": "Which of the following best defines function overriding in C++?",
+    "o": [
+      "A derived class redefines a base class method with the same signature",
+      "A function calling itself repeatedly",
+      "Two functions with the same name but different parameters",
+      "Using the same function name in different files"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void show() { cout << \"Base \"; }\n};\n\nclass Derived : public Base {\npublic:\n    void show() override { cout << \"Derived\"; }\n};\n\nint main() {\n    Base *bptr = new Derived();\n    bptr->show();\n    delete bptr;\n    return 0;\n}",
+    "o": [
+      "Derived",
+      "Base",
+      "Base Derived",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "In multilevel inheritance, which class is directly derived from the base class?",
+    "o": [
+      "Intermediate class",
+      "Derived-most class",
+      "Virtual base class",
+      "Friend class"
+    ]
+  },
+  {
+    "q": "Which of the following statements about virtual base classes is true?",
+    "o": [
+      "They help to avoid duplicate base class members in diamond inheritance",
+      "They can only be used with private inheritance",
+      "They are mandatory for all types of inheritance",
+      "They disallow constructor chaining"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass Animal {\npublic:\n    Animal() { cout << \"Animal \"; }\n};\n\nclass Dog : public Animal {\npublic:\n    Dog() { cout << \"Dog \"; }\n};\n\nclass Poodle : public Dog {\npublic:\n    Poodle() { cout << \"Poodle\"; }\n};\n\nint main() {\n    Poodle p;\n    return 0;\n}",
+    "o": [
+      "Animal Dog Poodle",
+      "Poodle Dog Animal",
+      "Dog Poodle Animal",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly overrides a virtual function in C++?",
+    "o": [
+      "void show() override;",
+      "virtual void show() = 0;",
+      "override show();",
+      "virtual show() void;"
+    ]
+  },
+  {
+    "q": "What happens if a class inherits from the same base class through multiple paths and the base class is not virtual?",
+    "o": [
+      "Multiple copies of the base class exist in the derived class",
+      "The compiler throws a syntax error",
+      "The base class is automatically made virtual",
+      "Only one copy of base class is created"
+    ]
+  },
+  {
+    "q": "Which inheritance type allows a derived class to inherit from a base class that is itself derived from another class?",
+    "o": [
+      "Multilevel inheritance",
+      "Multiple inheritance",
+      "Single inheritance",
+      "Hybrid inheritance"
+    ]
+  },
+  {
+    "q": "What is printed when this C++ code runs?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\n\nclass B : public A {\npublic:\n    B() { cout << \"B \"; }\n};\n\nclass C : public B {\npublic:\n    C() { cout << \"C\"; }\n};\n\nint main() {\n    C obj;\n    return 0;\n}",
+    "o": [
+      "A B C",
+      "C B A",
+      "B C A",
+      "A C B"
+    ]
+  },
+  {
+    "q": "Which of the following must be used to override a virtual function correctly in modern C++?",
+    "o": [
+      "The override keyword",
+      "The overload keyword",
+      "The new keyword",
+      "The static keyword"
+    ]
+  },
+  {
+    "q": "In which inheritance type can the diamond problem occur in C++?",
+    "o": [
+      "Multiple inheritance",
+      "Single inheritance",
+      "Multilevel inheritance",
+      "Hierarchical inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    Base(int x) { cout << \"Base: \" << x << \" \"; }\n};\n\nclass Derived : public Base {\npublic:\n    using Base::Base;\n};\n\nint main() {\n    Derived d(42);\n    return 0;\n}",
+    "o": [
+      "Base: 42",
+      "Derived: 42",
+      "Compilation error",
+      "No output"
+    ]
+  },
+  {
+    "q": "When is the constructor of the virtual base class called in a diamond inheritance scenario?",
+    "o": [
+      "Only by the most derived class",
+      "Every time it appears in the inheritance chain",
+      "By each intermediate derived class",
+      "Automatically after main()"
+    ]
+  },
+  {
+    "q": "What is true about function overriding in C++?",
+    "o": [
+      "It requires a function with the same name and signature in a derived class",
+      "It allows changing the return type only",
+      "It is not possible without using virtual",
+      "It hides the base class function even if signatures differ"
+    ]
+  },
+  {
+    "q": "What does this code output?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    virtual void print() { cout << \"A \"; }\n};\n\nclass B : public A {\npublic:\n    void print() override { cout << \"B \"; }\n};\n\nvoid display(A* obj) {\n    obj->print();\n}\n\nint main() {\n    B b;\n    display(&b);\n    return 0;\n}",
+    "o": [
+      "B",
+      "A",
+      "Compilation Error",
+      "A B"
+    ]
+  },
+  {
+    "q": "Which of the following is **not** true about virtual base classes?",
+    "o": [
+      "They duplicate the base class members if not used",
+      "They solve ambiguity in multiple inheritance",
+      "They ensure only one instance of the base class",
+      "They are declared with the keyword 'virtual'"
+    ]
+  },
+  {
+    "q": "What does constructor inheritance allow in C++?",
+    "o": [
+      "The derived class to use the base class's constructors directly",
+      "Overriding the constructor logic",
+      "Calling main() from a constructor",
+      "Using private base constructors"
+    ]
+  },
+  {
+    "q": "Which of the following C++ code demonstrates single inheritance?",
+    "c": "class Animal {\npublic:\n    void eat() {}\n};\n\nclass Dog : public Animal {\n};",
+    "o": [
+      "Dog inherits from Animal (Single Inheritance)",
+      "Dog inherits from multiple base classes",
+      "Animal inherits from Dog",
+      "This is multilevel inheritance"
+    ]
+  },
+  {
+    "q": "What is printed by the following code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\n\nclass B1 : virtual public A {\npublic:\n    B1() { cout << \"B1 \"; }\n};\n\nclass B2 : virtual public A {\npublic:\n    B2() { cout << \"B2 \"; }\n};\n\nclass C : public B1, public B2 {\npublic:\n    C() { cout << \"C\"; }\n};\n\nint main() {\n    C obj;\n    return 0;\n}",
+    "o": [
+      "A B1 B2 C",
+      "B1 B2 C",
+      "A A B1 B2 C",
+      "B2 B1 C"
+    ]
+  },
+  {
+    "q": "Which of the following is true about constructor inheritance?",
+    "o": [
+      "It allows derived classes to inherit base class constructors using 'using' keyword",
+      "It allows constructors to be private in the base class",
+      "It automatically copies constructors in all inheritance types",
+      "It disables constructor chaining"
+    ]
+  },
+  {
+    "q": "How does function overriding differ from function overloading in C++?",
+    "o": [
+      "Overriding requires inheritance; overloading does not",
+      "Overloading requires inheritance; overriding does not",
+      "They are interchangeable terms",
+      "Overriding requires different function names"
+    ]
+  },
+  {
+    "q": "What does the following code demonstrate?",
+    "c": "class A {\npublic:\n    void show() {}\n};\n\nclass B : public A {\npublic:\n    void show(int x) {}\n};",
+    "o": [
+      "Function overloading, not overriding",
+      "Function overriding",
+      "Multiple inheritance",
+      "Virtual base class"
+    ]
+  },
+  {
+    "q": "What is the correct way to declare a virtual base class?",
+    "o": [
+      "class Derived : virtual public Base {}",
+      "class Derived : base virtual Base {}",
+      "class Base : virtual Derived {}",
+      "class Base : Derived virtual {}"
+    ]
+  },
+  {
+    "q": "Which of the following inheritance types is used when a class inherits from more than one base class?",
+    "o": [
+      "Multiple inheritance",
+      "Single inheritance",
+      "Multilevel inheritance",
+      "Hybrid inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    virtual void print() { cout << \"Class A\"; }\n};\n\nclass B : public A {\npublic:\n    void print() { cout << \"Class B\"; }\n};\n\nint main() {\n    A* ptr = new B();\n    ptr->print();\n    return 0;\n}",
+    "o": [
+      "Class B",
+      "Class A",
+      "Compilation Error",
+      "Undefined Behavior"
+    ]
+  },
+  {
+    "q": "Why are virtual base classes used in C++?",
+    "o": [
+      "To avoid duplication of base class members in multiple inheritance",
+      "To prevent function overriding",
+      "To disable constructors",
+      "To block access to base class methods"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\n\nclass B : public A {\npublic:\n    B() { cout << \"B \"; }\n};\n\nclass C : public B {\npublic:\n    C() { cout << \"C\"; }\n};\n\nint main() {\n    C obj;\n    return 0;\n}",
+    "o": [
+      "A B C",
+      "C B A",
+      "B C",
+      "A C B"
+    ]
+  },
+  {
+    "q": "Which of the following inheritance types is demonstrated when a class derives from another derived class?",
+    "o": [
+      "Multilevel Inheritance",
+      "Multiple Inheritance",
+      "Single Inheritance",
+      "Hierarchical Inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\n\nclass B : public A {\npublic:\n    B() { cout << \"B \"; }\n};\n\nclass C : public B {\npublic:\n    C() { cout << \"C\"; }\n};\n\nint main() {\n    C obj;\n    return 0;\n}",
+    "o": [
+      "A B C",
+      "C B A",
+      "B C A",
+      "A C B"
+    ]
+  },
+  {
+    "q": "Which keyword is used to inherit constructors from a base class in C++11 and above?",
+    "o": [
+      "using",
+      "inherit",
+      "constructor",
+      "extends"
+    ]
+  },
+  {
+    "q": "What is the purpose of a virtual base class in C++?",
+    "o": [
+      "To avoid duplicate base class sub-objects during multiple inheritance",
+      "To make the class abstract",
+      "To prevent overriding",
+      "To disallow further inheritance"
+    ]
+  },
+  {
+    "q": "Which of the following is function overriding?",
+    "c": "class A {\npublic:\n    void display() { cout << \"A\"; }\n};\n\nclass B : public A {\npublic:\n    void display() { cout << \"B\"; }\n};",
+    "o": [
+      "display() in B overrides display() in A",
+      "display() is overloaded",
+      "display() in A hides B's display()",
+      "This is constructor inheritance"
+    ]
+  },
+  {
+    "q": "In multiple inheritance, when both base classes have a common base class, which concept is used to resolve ambiguity?",
+    "o": [
+      "Virtual Base Class",
+      "Abstract Class",
+      "Friend Class",
+      "Pure Virtual Function"
+    ]
+  },
+  {
+    "q": "What kind of inheritance is shown in the following code?",
+    "c": "class A {};\nclass B : public A {};\nclass C : public A {};",
+    "o": [
+      "Hierarchical Inheritance",
+      "Multilevel Inheritance",
+      "Multiple Inheritance",
+      "Single Inheritance"
+    ]
+  },
+  {
+    "q": "Which statement best describes function overriding?",
+    "o": [
+      "It allows a derived class to provide a specific implementation of a base class function",
+      "It allows multiple functions with the same name and different parameters",
+      "It renames a function in the derived class",
+      "It hides all base class functions"
+    ]
+  },
+  {
+    "q": "What is the result of constructor inheritance?",
+    "o": [
+      "The derived class inherits constructors from the base class",
+      "Only virtual functions are inherited",
+      "Destructor becomes virtual",
+      "Function overriding is disabled"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid syntax to inherit multiple base classes?",
+    "o": [
+      "class C : public A, public B",
+      "class C : A & B",
+      "class C inherits A, B",
+      "class C :: A + B"
+    ]
+  },
+  {
+    "q": "Which inheritance model allows a derived class to inherit from more than one base class?",
+    "o": [
+      "Multiple Inheritance",
+      "Multilevel Inheritance",
+      "Single Inheritance",
+      "Hierarchical Inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    Base() { cout << \"Base \"; }\n};\n\nclass Derived : public Base {\npublic:\n    Derived() { cout << \"Derived\"; }\n};\n\nint main() {\n    Derived obj;\n    return 0;\n}",
+    "o": [
+      "Base Derived",
+      "Derived Base",
+      "Derived",
+      "Base"
+    ]
+  },
+  {
+    "q": "What will happen if two base classes have a member with the same name and are inherited without virtual base?",
+    "o": [
+      "Ambiguity occurs in the derived class",
+      "The compiler resolves it automatically",
+      "Derived class will only inherit one copy",
+      "It results in syntax error"
+    ]
+  },
+  {
+    "q": "Which keyword allows a derived class to access the constructor of its base class directly?",
+    "o": [
+      "using",
+      "base",
+      "super",
+      "inherited"
+    ]
+  },
+  {
+    "q": "What is true about virtual base classes in C++?",
+    "o": [
+      "They prevent duplication of base class members in diamond problem",
+      "They enforce abstract class behavior",
+      "They disallow multiple inheritance",
+      "They disable constructor inheritance"
+    ]
+  },
+  {
+    "q": "In the context of function overriding, what must the base class function have?",
+    "o": [
+      "It should be marked as virtual",
+      "It must be static",
+      "It must be protected",
+      "It must return void"
+    ]
+  },
+  {
+    "q": "What is the output of this code related to virtual inheritance?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    void show() { cout << \"A\"; }\n};\n\nclass B : virtual public A {};\nclass C : virtual public A {};\nclass D : public B, public C {};\n\nint main() {\n    D obj;\n    obj.show();\n    return 0;\n}",
+    "o": [
+      "A",
+      "Compilation Error",
+      "Ambiguous call",
+      "No Output"
+    ]
+  },
+  {
+    "q": "In C++, when is constructor inheritance most useful?",
+    "o": [
+      "When derived class does not declare its own constructor",
+      "When overriding virtual functions",
+      "When using friend functions",
+      "When accessing private members of base class"
+    ]
+  },
+  {
+    "q": "Which of the following correctly describes multilevel inheritance?",
+    "o": [
+      "A class derived from another derived class",
+      "A class derived from two base classes",
+      "Multiple classes derived from a common base",
+      "A class containing multiple base classes with common child"
+    ]
+  },
+  {
+    "q": "What does function overriding enable in C++?",
+    "o": [
+      "Polymorphic behavior via base class pointers",
+      "Using multiple constructors",
+      "Declaring multiple classes in the same file",
+      "Calling base class method only"
+    ]
+  },
+  {
+    "q": "Which inheritance type is used when a class inherits features from only one base class?",
+    "o": [
+      "Single Inheritance",
+      "Multilevel Inheritance",
+      "Multiple Inheritance",
+      "Hybrid Inheritance"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A\"; }\n};\n\nclass B : virtual public A {\npublic:\n    B() { cout << \"B\"; }\n};\n\nclass C : virtual public A {\npublic:\n    C() { cout << \"C\"; }\n};\n\nclass D : public B, public C {\npublic:\n    D() { cout << \"D\"; }\n};\n\nint main() {\n    D obj;\n    return 0;\n}",
+    "o": [
+      "ABCD",
+      "ABDC",
+      "AABCD",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which keyword resolves the diamond problem in C++ inheritance?",
+    "o": [
+      "virtual",
+      "friend",
+      "protected",
+      "static"
+    ]
+  },
+  {
+    "q": "Which of the following ensures that a derived class can override a base class function?",
+    "o": [
+      "The base function must be virtual",
+      "The base function must be private",
+      "The base function must be static",
+      "The derived class must be abstract"
+    ]
+  },
+  {
+    "q": "Which inheritance type results in a hierarchy where a derived class has multiple direct ancestors?",
+    "o": [
+      "Multiple Inheritance",
+      "Single Inheritance",
+      "Multilevel Inheritance",
+      "Hierarchical Inheritance"
+    ]
+  },
+  {
+    "q": "What is the role of the 'using' keyword in constructor inheritance?",
+    "o": [
+      "To inherit constructors from base class",
+      "To call base class method explicitly",
+      "To define virtual methods",
+      "To initialize member variables"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void print() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\npublic:\n    void print() override { cout << \"Derived\"; }\n};\n\nint main() {\n    Base* ptr = new Derived();\n    ptr->print();\n    return 0;\n}",
+    "o": [
+      "Derived",
+      "Base",
+      "Compilation Error",
+      "No Output"
+    ]
+  },
+  {
+    "q": "Which type of inheritance allows a class to be derived from a class which is already derived from another class?",
+    "o": [
+      "Multilevel Inheritance",
+      "Multiple Inheritance",
+      "Single Inheritance",
+      "Hierarchical Inheritance"
+    ]
+  },
+  {
+    "q": "Which of the following prevents multiple copies of a base class when using multiple inheritance?",
+    "o": [
+      "Virtual Base Class",
+      "Static Methods",
+      "Function Overriding",
+      "Friend Function"
+    ]
+  },
+  {
+    "q": "What is required to properly override a function in C++?",
+    "o": [
+      "Same name and same signature as base class virtual function",
+      "Different name and same parameters",
+      "Function must be static",
+      "The function must be private"
+    ]
+  },
+  {
+    "q": "Which type of inheritance involves a class being derived from two unrelated base classes?",
+    "o": [
+      "Multiple Inheritance",
+      "Single Inheritance",
+      "Multilevel Inheritance",
+      "Hybrid Inheritance"
+    ]
+  },
+  {
+    "q": "What will the following C++ code output?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\nclass B : public A {\npublic:\n    B() { cout << \"B \"; }\n};\nclass C : public B {\npublic:\n    C() { cout << \"C\"; }\n};\n\nint main() {\n    C obj;\n    return 0;\n}",
+    "o": [
+      "A B C",
+      "C B A",
+      "A C B",
+      "B A C"
+    ]
+  },
+  {
+    "q": "Which C++ inheritance mechanism best helps avoid duplicate base subobjects?",
+    "o": [
+      "Virtual inheritance",
+      "Static methods",
+      "Inline functions",
+      "Private inheritance"
+    ]
+  },
+  {
+    "q": "Which of these is true about function overriding in C++?",
+    "o": [
+      "It allows a derived class to redefine a base class’s virtual function.",
+      "It disables constructor overloading.",
+      "It is only allowed in single inheritance.",
+      "It works only with private functions."
+    ]
+  },
+  {
+    "q": "Which keyword is used in C++ to inherit constructors from the base class?",
+    "o": [
+      "using",
+      "inherit",
+      "extends",
+      "constructor"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    Base(int x) { cout << \"Base(\" << x << \") \"; }\n};\n\nclass Derived : public Base {\npublic:\n    using Base::Base;\n};\n\nint main() {\n    Derived d(5);\n    return 0;\n}",
+    "o": [
+      "Base(5)",
+      "Derived(5)",
+      "5",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "What is the correct syntax for declaring a virtual base class?",
+    "o": [
+      "class B : virtual public A",
+      "class B : abstract A",
+      "virtual class B : public A",
+      "class B virtual A"
+    ]
+  },
+  {
+    "q": "Which of the following describes multilevel inheritance?",
+    "o": [
+      "A is parent of B, B is parent of C",
+      "A and B both inherit from C",
+      "A inherits from both B and C",
+      "C inherits from A and B simultaneously"
+    ]
+  },
+  {
+    "q": "In C++, which of the following functions will be called when using base class pointer to derived object, if function is not virtual?",
+    "o": [
+      "Base class version",
+      "Derived class version",
+      "Both base and derived",
+      "None will be called"
+    ]
+  },
+  {
+    "q": "Which of the following is a benefit of virtual base classes in C++?",
+    "o": [
+      "They solve ambiguity caused by multiple inheritance",
+      "They allow multiple constructors",
+      "They make classes abstract",
+      "They enable friend functions"
+    ]
+  },
+  {
+    "q": "In multiple inheritance, if both base classes have a function with the same name, how can ambiguity be resolved?",
+    "o": [
+      "Using scope resolution operator",
+      "Using virtual keyword",
+      "By renaming one function",
+      "By making the function static"
+    ]
+  },
+  {
+    "q": "Which of the following inheritance types can create the diamond problem in C++?",
+    "o": [
+      "Multiple Inheritance",
+      "Single Inheritance",
+      "Multilevel Inheritance",
+      "Hierarchical Inheritance"
+    ]
+  },
+  {
+    "q": "What will be the output of the following C++ code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\n\nclass B : virtual public A {\npublic:\n    B() { cout << \"B \"; }\n};\n\nclass C : virtual public A {\npublic:\n    C() { cout << \"C \"; }\n};\n\nclass D : public B, public C {\npublic:\n    D() { cout << \"D\"; }\n};\n\nint main() {\n    D obj;\n    return 0;\n}",
+    "o": [
+      "A B C D",
+      "B C A D",
+      "A D C B",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of these best defines constructor inheritance in C++?",
+    "o": [
+      "Derived class uses constructors of base class using 'using' keyword",
+      "Constructors are always redefined in derived class",
+      "Base class constructors are hidden",
+      "Only parameterless constructors are inherited"
+    ]
+  },
+  {
+    "q": "Which one of the following enables polymorphic behavior in function overriding?",
+    "o": [
+      "Virtual function in base class",
+      "Private member function",
+      "Constructor overloading",
+      "Static member function"
+    ]
+  },
+  {
+    "q": "What is the correct way to call a base class constructor explicitly from a derived class?",
+    "o": [
+      "Using initializer list in constructor definition",
+      "Using 'super' keyword",
+      "Using function pointer",
+      "By declaring a static object"
+    ]
+  },
+  {
+    "q": "Which inheritance type is shown in the following hierarchy?\n`A -> B -> C`",
+    "o": [
+      "Multilevel Inheritance",
+      "Multiple Inheritance",
+      "Single Inheritance",
+      "Virtual Inheritance"
+    ]
+  },
+  {
+    "q": "What is the effect of declaring a class as a virtual base class?",
+    "o": [
+      "Ensures only one instance of the base class is inherited",
+      "Converts the base class to an interface",
+      "Disables function overriding",
+      "Enforces protected inheritance"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void display() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\npublic:\n    void display() override { cout << \"Derived\"; }\n};\n\nint main() {\n    Derived d;\n    Base* b = &d;\n    b->display();\n    return 0;\n}",
+    "o": [
+      "Derived",
+      "Base",
+      "Error",
+      "None"
+    ]
+  },
+  {
+    "q": "In C++, if a class is inherited using `virtual`, where does the base class constructor appear in the construction order?",
+    "o": [
+      "Before all non-virtual base constructors",
+      "After all base class constructors",
+      "Only when explicitly called",
+      "It doesn’t get called at all"
+    ]
+  },
+  {
+    "q": "Which of the following inheritance types allows a derived class to inherit from more than one base class?",
+    "o": [
+      "Multiple Inheritance",
+      "Single Inheritance",
+      "Multilevel Inheritance",
+      "Hierarchical Inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    Base() { cout << \"Base \"; }\n};\nclass Derived : public Base {\npublic:\n    Derived() { cout << \"Derived\"; }\n};\nint main() {\n    Derived d;\n    return 0;\n}",
+    "o": [
+      "Base Derived",
+      "Derived Base",
+      "Derived",
+      "Base"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid C++ inheritance type?",
+    "o": [
+      "Forward Inheritance",
+      "Single Inheritance",
+      "Multiple Inheritance",
+      "Multilevel Inheritance"
+    ]
+  },
+  {
+    "q": "How does a derived class inherit constructors from a base class in C++11 and above?",
+    "o": [
+      "By using the 'using' keyword",
+      "By declaring constructors explicitly",
+      "Using 'inherit' keyword",
+      "It happens automatically"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    virtual void show() { cout << \"A \"; }\n};\n\nclass B : public A {\npublic:\n    void show() override { cout << \"B\"; }\n};\n\nint main() {\n    A* ptr = new B();\n    ptr->show();\n    return 0;\n}",
+    "o": [
+      "B",
+      "A",
+      "A B",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "What does a virtual base class help resolve?",
+    "o": [
+      "Ambiguity due to multiple inheritance",
+      "Memory leaks in classes",
+      "Private member access",
+      "Constructor chaining"
+    ]
+  },
+  {
+    "q": "Which of the following is true about function overriding?",
+    "o": [
+      "It requires inheritance and a virtual function in base class",
+      "It requires function overloading",
+      "The base function must be static",
+      "The function must be private"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include<iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\n\nclass B1 : virtual public A {\npublic:\n    B1() { cout << \"B1 \"; }\n};\n\nclass B2 : virtual public A {\npublic:\n    B2() { cout << \"B2 \"; }\n};\n\nclass C : public B1, public B2 {\npublic:\n    C() { cout << \"C\"; }\n};\n\nint main() {\n    C obj;\n    return 0;\n}",
+    "o": [
+      "A B1 B2 C",
+      "A A B1 B2 C",
+      "B1 B2 C",
+      "C B2 B1 A"
+    ]
+  },
+  {
+    "q": "Which inheritance type is best described by 'class C : public A, public B'?",
+    "o": [
+      "Multiple Inheritance",
+      "Single Inheritance",
+      "Multilevel Inheritance",
+      "Hierarchical Inheritance"
+    ]
+  },
+  {
+    "q": "Which is a correct advantage of constructor inheritance?",
+    "o": [
+      "Reduces redundant constructor code in derived classes",
+      "It hides base class constructor",
+      "It disables base class constructor",
+      "Allows multiple constructors in the base class"
+    ]
+  },
+  {
+    "q": "Which type of inheritance allows a class to inherit from a class that is itself derived from another class?",
+    "o": [
+      "Multilevel Inheritance",
+      "Multiple Inheritance",
+      "Single Inheritance",
+      "Hybrid Inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include<iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\nclass B : public A {\npublic:\n    B() { cout << \"B \"; }\n};\nclass C : public B {\npublic:\n    C() { cout << \"C\"; }\n};\nint main() {\n    C obj;\n    return 0;\n}",
+    "o": [
+      "A B C ",
+      "C B A ",
+      "C ",
+      "B C A "
+    ]
+  },
+  {
+    "q": "Which keyword is used to resolve the ambiguity caused by multiple inheritance?",
+    "o": [
+      "virtual",
+      "override",
+      "this",
+      "super"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include<iostream>\nusing namespace std;\nclass A {\npublic:\n    void display() { cout << \"Base class\"; }\n};\nclass B : public A {\npublic:\n    void display() { cout << \"Derived class\"; }\n};\nint main() {\n    B obj;\n    obj.display();\n    return 0;\n}",
+    "o": [
+      "Derived class",
+      "Base class",
+      "Base classDerived class",
+      "Error"
+    ]
+  },
+  {
+    "q": "How is function overriding achieved in C++?",
+    "o": [
+      "By defining a function with the same signature in a derived class",
+      "By defining a function with a different name in a derived class",
+      "Using the overload keyword",
+      "By private inheritance"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "#include<iostream>\nusing namespace std;\nclass A {\npublic:\n    A(int x) { cout << x << \" \"; }\n};\nclass B : public A {\npublic:\n    using A::A;\n};\nint main() {\n    B obj(5);\n    return 0;\n}",
+    "o": [
+      "5 ",
+      "0 ",
+      "Error",
+      "A B 5"
+    ]
+  },
+  {
+    "q": "Which of the following inheritance types may lead to the diamond problem?",
+    "o": [
+      "Multiple Inheritance",
+      "Single Inheritance",
+      "Multilevel Inheritance",
+      "Hybrid Inheritance"
+    ]
+  },
+  {
+    "q": "What does the 'virtual' keyword do when used with a base class?",
+    "o": [
+      "Ensures only one instance of the base class is inherited",
+      "Allows function overloading",
+      "Allows private members to be inherited",
+      "Blocks constructor inheritance"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include<iostream>\nusing namespace std;\nclass A {\npublic:\n    virtual void show() { cout << \"A\"; }\n};\nclass B : public A {\npublic:\n    void show() override { cout << \"B\"; }\n};\nint main() {\n    A* ptr = new A();\n    ptr->show();\n    return 0;\n}",
+    "o": [
+      "A",
+      "B",
+      "AB",
+      "Error"
+    ]
+  },
+  {
+    "q": "In constructor inheritance, when we write 'using Base::Base;' inside the derived class, what does it mean?",
+    "o": [
+      "It inherits constructors from the base class",
+      "It disables base class constructors",
+      "It hides all constructors",
+      "It calls the base class destructor"
+    ]
+  },
+  {
+    "q": "Which type of inheritance results in a class inheriting features from more than one base class?",
+    "o": [
+      "Multiple Inheritance",
+      "Multilevel Inheritance",
+      "Single Inheritance",
+      "Hierarchical Inheritance"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include<iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\nclass B {\npublic:\n    B() { cout << \"B \"; }\n};\nclass C : public A, public B {\npublic:\n    C() { cout << \"C\"; }\n};\nint main() {\n    C obj;\n    return 0;\n}",
+    "o": [
+      "A B C",
+      "C B A",
+      "B A C",
+      "C A B"
+    ]
+  },
+  {
+    "q": "In multilevel inheritance, how many levels of classes are involved at minimum?",
+    "o": [
+      "Three",
+      "Two",
+      "One",
+      "Four"
+    ]
+  },
+  {
+    "q": "What will be the output of the code?",
+    "c": "#include<iostream>\nusing namespace std;\nclass Base {\npublic:\n    virtual void show() { cout << \"Base\"; }\n};\nclass Derived : public Base {\npublic:\n    void show() override { cout << \"Derived\"; }\n};\nint main() {\n    Base* ptr = new Derived();\n    ptr->show();\n    return 0;\n}",
+    "o": [
+      "Derived",
+      "Base",
+      "Error",
+      "BaseDerived"
+    ]
+  },
+  {
+    "q": "What is a virtual base class primarily used to solve?",
+    "o": [
+      "Diamond problem in multiple inheritance",
+      "Constructor overloading",
+      "Private inheritance",
+      "Access specifier issues"
+    ]
+  },
+  {
+    "q": "What does constructor inheritance allow in C++?",
+    "o": [
+      "Allows a derived class to inherit constructors from a base class",
+      "Disables base class constructors",
+      "Only allows default constructor",
+      "Hides all base class members"
+    ]
+  },
+  {
+    "q": "What is the correct way to inherit constructors from class Base?",
+    "o": [
+      "using Base::Base;",
+      "inherit Base::Base;",
+      "Base::inherit_constructors();",
+      "include Base::Base;"
+    ]
+  },
+  {
+    "q": "In which scenario do we need to use the 'virtual' keyword in inheritance?",
+    "o": [
+      "When a class is inherited by more than one derived class leading to ambiguity",
+      "When we want to restrict access to private members",
+      "To inherit only static members",
+      "To avoid multiple function definitions"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include<iostream>\nusing namespace std;\nclass A {\npublic:\n    void greet() { cout << \"Hello from A\"; }\n};\nclass B : public A {\npublic:\n    void greet() { cout << \"Hello from B\"; }\n};\nint main() {\n    B obj;\n    obj.greet();\n    return 0;\n}",
+    "o": [
+      "Hello from B",
+      "Hello from A",
+      "Hello",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about function overriding in C++?",
+    "o": [
+      "It allows a derived class to provide a specific implementation of a base class function",
+      "It only works with static methods",
+      "It hides the function completely in base class",
+      "It can only be used with private members"
+    ]
+  },
+  {
+    "q": "What kind of inheritance is shown when class C inherits from class B, and class B inherits from class A?",
+    "o": [
+      "Multilevel Inheritance",
+      "Multiple Inheritance",
+      "Hierarchical Inheritance",
+      "Hybrid Inheritance"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include<iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\nclass B : public A {\npublic:\n    B() { cout << \"B \"; }\n};\nclass C : public B {\npublic:\n    C() { cout << \"C\"; }\n};\nint main() {\n    C obj;\n    return 0;\n}",
+    "o": [
+      "A B C ",
+      "C B A ",
+      "B C A ",
+      "C A B "
+    ]
+  },
+  {
+    "q": "Which feature allows a derived class to redefine a function of the base class?",
+    "o": [
+      "Function Overriding",
+      "Function Overloading",
+      "Constructor Overriding",
+      "Virtual Inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include<iostream>\nusing namespace std;\nclass Base {\npublic:\n    virtual void show() { cout << \"Base\"; }\n};\nclass Derived : public Base {};\nint main() {\n    Derived d;\n    d.show();\n    return 0;\n}",
+    "o": [
+      "Base",
+      "Derived",
+      "Error",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which inheritance type can lead to ambiguity in member access without a virtual base class?",
+    "o": [
+      "Diamond Inheritance",
+      "Single Inheritance",
+      "Multilevel Inheritance",
+      "Hierarchical Inheritance"
+    ]
+  },
+  {
+    "q": "Which keyword is used to inherit constructors in C++11 and above?",
+    "o": [
+      "using",
+      "inherits",
+      "constructor",
+      "extends"
+    ]
+  },
+  {
+    "q": "Which concept solves the duplication of base class members in multiple inheritance?",
+    "o": [
+      "Virtual Base Class",
+      "Pure Virtual Function",
+      "Friend Function",
+      "Template Class"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include<iostream>\nusing namespace std;\nclass A {\npublic:\n    virtual void show() { cout << \"A \"; }\n};\nclass B : public A {\npublic:\n    void show() override { cout << \"B \"; }\n};\nint main() {\n    A* a = new B();\n    a->show();\n    return 0;\n}",
+    "o": [
+      "B ",
+      "A ",
+      "A B ",
+      "Error"
+    ]
+  },
+  {
+    "q": "When two base classes have a common base class, and both are inherited by a single derived class, what problem can occur?",
+    "o": [
+      "Diamond Problem",
+      "Constructor Conflict",
+      "Destructor Loop",
+      "Function Slicing"
+    ]
+  },
+  {
+    "q": "Which of the following is the best scenario to use a virtual base class?",
+    "o": [
+      "To prevent duplication of members in a diamond inheritance",
+      "To prevent constructor overloading",
+      "To avoid friend function conflicts",
+      "To improve runtime performance"
+    ]
+  },
+  {
+    "q": "Which inheritance allows a class to inherit from two or more base classes?",
+    "o": [
+      "Multiple Inheritance",
+      "Single Inheritance",
+      "Multilevel Inheritance",
+      "Hierarchical Inheritance"
+    ]
+  },
+  {
+    "q": "What will the following program output?",
+    "c": "#include<iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"Constructor A\\n\"; }\n};\nclass B : public A {\npublic:\n    B() { cout << \"Constructor B\\n\"; }\n};\nint main() {\n    B obj;\n    return 0;\n}",
+    "o": [
+      "Constructor A\nConstructor B\n",
+      "Constructor B\nConstructor A\n",
+      "Constructor A\n",
+      "Constructor B\n"
+    ]
+  },
+  {
+    "q": "In multilevel inheritance, how many base classes can a derived class have directly?",
+    "o": [
+      "One",
+      "Two",
+      "Multiple",
+      "None"
+    ]
+  },
+  {
+    "q": "Which inheritance type forms a diamond shape in class hierarchy?",
+    "o": [
+      "Hybrid Inheritance",
+      "Single Inheritance",
+      "Multilevel Inheritance",
+      "Hierarchical Inheritance"
+    ]
+  },
+  {
+    "q": "What is the purpose of 'virtual' keyword in virtual base classes?",
+    "o": [
+      "To avoid multiple copies of the grandparent class",
+      "To allow overriding functions",
+      "To access protected members",
+      "To make base class abstract"
+    ]
+  },
+  {
+    "q": "Which constructor(s) get called first in multiple inheritance?",
+    "o": [
+      "The base class constructors in the order they are inherited",
+      "The derived class constructor first",
+      "Random order",
+      "The last declared base class constructor"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "#include<iostream>\nusing namespace std;\nclass A {\npublic:\n    virtual void print() { cout << \"A\"; }\n};\nclass B : public A {\npublic:\n    void print() override { cout << \"B\"; }\n};\nint main() {\n    A* a = new B();\n    a->print();\n    return 0;\n}",
+    "o": [
+      "B",
+      "A",
+      "AB",
+      "BA"
+    ]
+  },
+  {
+    "q": "What is function overriding?",
+    "o": [
+      "Redefining a base class method in a derived class",
+      "Using the same function name with different parameters",
+      "Inheriting a function from base class",
+      "Using a base class method without changes"
+    ]
+  },
+  {
+    "q": "Which inheritance can cause ambiguity if not handled with virtual base classes?",
+    "o": [
+      "Multiple Inheritance",
+      "Single Inheritance",
+      "Multilevel Inheritance",
+      "Hierarchical Inheritance"
+    ]
+  },
+  {
+    "q": "Which C++ version introduced constructor inheritance using the 'using' keyword?",
+    "o": [
+      "C++11",
+      "C++98",
+      "C++03",
+      "C++17"
+    ]
+  },
+  {
+    "q": "Which of the following demonstrates single inheritance?",
+    "c": "class A {};\nclass B : public A {};",
+    "o": [
+      "B inherits from A (Single Inheritance)",
+      "A inherits from B (Multilevel Inheritance)",
+      "B inherits from two classes (Multiple Inheritance)",
+      "This is not inheritance"
+    ]
+  },
+  {
+    "q": "Which type of inheritance is used when class C inherits from class B which inherits from class A?",
+    "o": [
+      "Multilevel Inheritance",
+      "Multiple Inheritance",
+      "Single Inheritance",
+      "Hierarchical Inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include<iostream>\nusing namespace std;\nclass A {\npublic:\n    A() { cout << \"A \"; }\n};\nclass B: virtual public A {\npublic:\n    B() { cout << \"B \"; }\n};\nclass C: virtual public A {\npublic:\n    C() { cout << \"C \"; }\n};\nclass D: public B, public C {\npublic:\n    D() { cout << \"D\"; }\n};\nint main() {\n    D obj;\n    return 0;\n}",
+    "o": [
+      "A B C D",
+      "B C A D",
+      "A D B C",
+      "B C D"
+    ]
+  },
+  {
+    "q": "Which keyword is used to resolve the diamond problem in C++ inheritance?",
+    "o": [
+      "virtual",
+      "override",
+      "final",
+      "explicit"
+    ]
+  },
+  {
+    "q": "When is a derived class constructor executed?",
+    "o": [
+      "After all base class constructors have executed",
+      "Before any base class constructor",
+      "Only if explicitly called",
+      "Never automatically"
+    ]
+  },
+  {
+    "q": "In constructor inheritance using the 'using' keyword, what happens?",
+    "o": [
+      "The base class constructors are made available in the derived class",
+      "The derived class constructor is deleted",
+      "Only default constructor is inherited",
+      "All constructors are overridden"
+    ]
+  },
+  {
+    "q": "Which of the following is required for function overriding?",
+    "o": [
+      "Same function name and signature in base and derived class",
+      "Different return types",
+      "Functions must be static",
+      "Function must be private"
+    ]
+  },
+  {
+    "q": "Which of the following code snippets demonstrates multiple inheritance?",
+    "c": "class A {};\nclass B {};\nclass C : public A, public B {};",
+    "o": [
+      "C inherits from A and B (Multiple Inheritance)",
+      "C inherits from A only",
+      "C inherits from B only",
+      "C inherits from no class"
+    ]
+  },
+  {
+    "q": "What is the main issue solved by a virtual base class?",
+    "o": [
+      "Duplicate base class subobjects in multiple inheritance",
+      "Constructor chaining",
+      "Accessing protected members",
+      "Function overloading"
+    ]
+  },
+  {
+    "q": "Which of the following scenarios can result in ambiguity in multiple inheritance?",
+    "c": "class A { public: void show(); };\nclass B : public A {};\nclass C : public A {};\nclass D : public B, public C {\npublic:\n    void callShow() { show(); }\n};",
+    "o": [
+      "Both B and C have show() from A",
+      "Only B has show()",
+      "Only C has show()",
+      "No ambiguity occurs"
+    ]
+  },
+  {
+    "q": "Which inheritance type allows a class to inherit from two or more base classes?",
+    "o": [
+      "Multiple Inheritance",
+      "Single Inheritance",
+      "Multilevel Inheritance",
+      "Hybrid Inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code?",
+    "c": "class A {\npublic:\n    A() { std::cout << \"Constructor A \"; }\n};\nclass B : public A {\npublic:\n    B() { std::cout << \"Constructor B\"; }\n};\nint main() {\n    B obj;\n    return 0;\n}",
+    "o": [
+      "Constructor A Constructor B",
+      "Constructor B Constructor A",
+      "Constructor A",
+      "Constructor B"
+    ]
+  },
+  {
+    "q": "Which of the following correctly overrides a base class function?",
+    "c": "class Base {\npublic:\n    virtual void display();\n};\nclass Derived : public Base {\npublic:\n    void display() override;\n};",
+    "o": [
+      "Function display is overridden in Derived",
+      "Function display is overloaded in Derived",
+      "Function display is hidden in Derived",
+      "Function display is private"
+    ]
+  },
+  {
+    "q": "What is the role of a virtual base class?",
+    "o": [
+      "To prevent multiple copies of a base class in inheritance hierarchy",
+      "To allow access to private members of base",
+      "To make a class abstract",
+      "To hide inherited members"
+    ]
+  },
+  {
+    "q": "Which of the following code snippets demonstrates constructor inheritance?",
+    "c": "class A {\npublic:\n    A(int x) {}\n};\nclass B : public A {\npublic:\n    using A::A;\n};",
+    "o": [
+      "Class B inherits A’s constructor",
+      "Class B overrides A’s constructor",
+      "Class B cannot inherit constructor",
+      "Class B redefines constructor"
+    ]
+  },
+  {
+    "q": "Which of the following best defines function overriding in C++?",
+    "o": [
+      "A derived class redefining a base class's virtual function",
+      "Using different parameter types in a derived class function",
+      "A base class function calling a derived class function",
+      "Two functions with the same name in the same class"
+    ]
+  },
+  {
+    "q": "Which of the following demonstrates multilevel inheritance?",
+    "c": "class A {};\nclass B : public A {};\nclass C : public B {};",
+    "o": [
+      "C inherits A through B (Multilevel)",
+      "C and B inherit from A (Multiple)",
+      "Only B inherits from A (Single)",
+      "A inherits from B and C"
+    ]
+  },
+  {
+    "q": "What happens if virtual inheritance is not used in a diamond problem scenario?",
+    "o": [
+      "Duplicate base class subobjects are created",
+      "The program won't compile",
+      "Inheritance is not affected",
+      "Virtual functions won't work"
+    ]
+  },
+  {
+    "q": "Which of the following keywords ensures a base class constructor is used in the derived class?",
+    "o": [
+      "using",
+      "override",
+      "virtual",
+      "explicit"
+    ]
+  },
+  {
+    "q": "What is required for a function in a derived class to override a base class function?",
+    "o": [
+      "Function in base must be declared virtual",
+      "Function names must be different",
+      "Function in base must be static",
+      "Return types must be different"
+    ]
+  },
+  {
+    "q": "In which type of inheritance does a class inherit from a class which is already derived from another class?",
+    "o": [
+      "Multilevel Inheritance",
+      "Multiple Inheritance",
+      "Single Inheritance",
+      "Hierarchical Inheritance"
+    ]
+  },
+  {
+    "q": "Which of the following C++ code snippets demonstrates multiple inheritance?",
+    "c": "class A {};\nclass B {};\nclass C : public A, public B {};",
+    "o": [
+      "Class C inherits from both A and B",
+      "Class B inherits from C and A",
+      "Class A inherits from B and C",
+      "Class C inherits only from A"
+    ]
+  },
+  {
+    "q": "How can you inherit constructors from a base class in modern C++?",
+    "o": [
+      "Using the 'using' keyword",
+      "By redefining constructors",
+      "Using the 'inherit' keyword",
+      "By calling the base constructor explicitly"
+    ]
+  },
+  {
+    "q": "Which inheritance type might cause the 'diamond problem' in C++?",
+    "o": [
+      "Multiple Inheritance",
+      "Single Inheritance",
+      "Multilevel Inheritance",
+      "Hierarchical Inheritance"
+    ]
+  },
+  {
+    "q": "What keyword is used to prevent multiple copies of a base class in a multiple inheritance hierarchy?",
+    "o": [
+      "virtual",
+      "static",
+      "override",
+      "final"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "class Base {\npublic:\n    virtual void show() { std::cout << \"Base\"; }\n};\nclass Derived : public Base {\npublic:\n    void show() { std::cout << \"Derived\"; }\n};\nint main() {\n    Base* b = new Derived();\n    b->show();\n    return 0;\n}",
+    "o": [
+      "Derived",
+      "Base",
+      "BaseDerived",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly uses virtual base class?",
+    "c": "class A {};\nclass B : virtual public A {};\nclass C : virtual public A {};\nclass D : public B, public C {};",
+    "o": [
+      "A is virtually inherited by both B and C",
+      "B and C inherit from D",
+      "D is virtually inherited by A",
+      "Multiple copies of A exist in D"
+    ]
+  },
+  {
+    "q": "What is the main purpose of function overriding?",
+    "o": [
+      "To provide a specific implementation in the derived class",
+      "To hide base class functions",
+      "To overload functions with same name",
+      "To improve memory usage"
+    ]
+  },
+  {
+    "q": "What is printed by the following code?",
+    "c": "class A {\npublic:\n    A() { std::cout << \"A \"; }\n};\nclass B : public A {\npublic:\n    B() { std::cout << \"B \"; }\n};\nclass C : public B {\npublic:\n    C() { std::cout << \"C\"; }\n};\nint main() {\n    C obj;\n    return 0;\n}",
+    "o": [
+      "A B C",
+      "C B A",
+      "A C B",
+      "B A C"
+    ]
+  },
+  {
+    "q": "Which of the following statements is TRUE about virtual inheritance?",
+    "o": [
+      "It ensures only one instance of the base class exists in the inheritance path",
+      "It allows overriding private members",
+      "It disables function overriding",
+      "It allows constructor overloading"
+    ]
+  },
+  {
+    "q": "Which type of inheritance involves a class inheriting from two or more unrelated base classes?",
+    "o": [
+      "Multiple Inheritance",
+      "Multilevel Inheritance",
+      "Single Inheritance",
+      "Hierarchical Inheritance"
+    ]
+  },
+  {
+    "q": "Which constructor is called first when an object of a derived class is created?",
+    "o": [
+      "Base class constructor",
+      "Derived class constructor",
+      "Virtual function",
+      "None of the above"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "class A {\npublic:\n    A() { std::cout << \"A \"; }\n};\nclass B : public A {\npublic:\n    B() { std::cout << \"B \"; }\n};\nint main() {\n    B obj;\n    return 0;\n}",
+    "o": [
+      "A B ",
+      "B A ",
+      "A ",
+      "B "
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "class A {\npublic:\n    void show() { std::cout << \"A\"; }\n};\nclass B : public A {\npublic:\n    void show() { std::cout << \"B\"; }\n};\nint main() {\n    B b;\n    b.A::show();\n    return 0;\n}",
+    "o": [
+      "A",
+      "B",
+      "AB",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following prevents multiple copies of a common base class in an inheritance hierarchy?",
+    "o": [
+      "Virtual base class",
+      "Private inheritance",
+      "Protected base class",
+      "Static base class"
+    ]
+  },
+  {
+    "q": "What is function overriding in C++?",
+    "o": [
+      "Redefining a base class method in derived class",
+      "Using same function name with different parameters",
+      "Using base class method in multiple classes",
+      "Calling a method using different object types"
+    ]
+  },
+  {
+    "q": "Which of the following is true about constructor inheritance in C++11 and beyond?",
+    "o": [
+      "Base class constructors can be inherited using 'using' keyword",
+      "Derived class must redefine all constructors",
+      "Constructors are automatically inherited",
+      "Only default constructor is inherited"
+    ]
+  },
+  {
+    "q": "What is printed by this code?",
+    "c": "class A {\npublic:\n    virtual void show() { std::cout << \"A\"; }\n};\nclass B : public A {\npublic:\n    void show() override { std::cout << \"B\"; }\n};\nint main() {\n    A* a = new B();\n    a->show();\n    return 0;\n}",
+    "o": [
+      "B",
+      "A",
+      "AB",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly demonstrates multilevel inheritance?",
+    "c": "class A {};\nclass B : public A {};\nclass C : public B {};",
+    "o": [
+      "C inherits from B and indirectly from A",
+      "C inherits directly from both A and B",
+      "B inherits from C and A",
+      "A inherits from C"
+    ]
+  },
+  {
+    "q": "Why is a virtual base class used?",
+    "o": [
+      "To avoid ambiguity in diamond inheritance",
+      "To prevent function overriding",
+      "To overload virtual functions",
+      "To enforce protected access"
+    ]
+  },
+  {
+    "q": "Which inheritance type allows a class to derive from one base class only?",
+    "o": [
+      "Single Inheritance",
+      "Multiple Inheritance",
+      "Multilevel Inheritance",
+      "Hierarchical Inheritance"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to inherit constructors from a base class in C++11?",
+    "o": [
+      "using",
+      "inherit",
+      "base",
+      "constructor"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "class A {\npublic:\n    A() { std::cout << \"Base \"; }\n};\nclass B : public A {\npublic:\n    B() { std::cout << \"Derived\"; }\n};\nint main() {\n    B obj;\n    return 0;\n}",
+    "o": [
+      "Base Derived",
+      "Derived Base",
+      "Base",
+      "Derived"
+    ]
+  },
+  {
+    "q": "Which of the following best describes function overriding?",
+    "o": [
+      "Redefining a function in a derived class that exists in the base class with the same signature",
+      "Overloading a function with different arguments",
+      "Inheriting functions from base class without modification",
+      "Using functions from the standard library in user-defined classes"
+    ]
+  },
+  {
+    "q": "Which of the following code snippets correctly demonstrates multilevel inheritance?",
+    "c": "class A {};\nclass B : public A {};\nclass C : public B {};",
+    "o": [
+      "C inherits from B and B inherits from A",
+      "A inherits from B and B inherits from C",
+      "B inherits from both A and C",
+      "C and A inherit from B"
+    ]
+  },
+  {
+    "q": "In C++, a virtual base class is used to:",
+    "o": [
+      "Avoid duplication of base class members in multiple inheritance",
+      "Make the base class abstract",
+      "Enforce encapsulation",
+      "Enable constructor inheritance"
+    ]
+  },
+  {
+    "q": "Identify the correct output of this function overriding example:",
+    "c": "class Base {\npublic:\n    virtual void show() { std::cout << \"Base\"; }\n};\nclass Derived : public Base {\npublic:\n    void show() override { std::cout << \"Derived\"; }\n};\nint main() {\n    Base* b = new Derived();\n    b->show();\n    return 0;\n}",
+    "o": [
+      "Derived",
+      "Base",
+      "BaseDerived",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which inheritance type is shown in this example?",
+    "c": "class A {};\nclass B {};\nclass C : public A, public B {};",
+    "o": [
+      "Multiple Inheritance",
+      "Multilevel Inheritance",
+      "Single Inheritance",
+      "Hybrid Inheritance"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "class A {\npublic:\n    A() { std::cout << \"A \"; }\n};\nclass B : virtual public A {\npublic:\n    B() { std::cout << \"B \"; }\n};\nclass C : virtual public A {\npublic:\n    C() { std::cout << \"C \"; }\n};\nclass D : public B, public C {\npublic:\n    D() { std::cout << \"D\"; }\n};\nint main() {\n    D obj;\n    return 0;\n}",
+    "o": [
+      "A B C D",
+      "B C A D",
+      "A D B C",
+      "B A C D"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about virtual base classes?",
+    "o": [
+      "They ensure that only one copy of the base class is inherited in case of diamond problem.",
+      "They enable function overriding across unrelated classes.",
+      "They allow base class constructors to be private.",
+      "They prevent constructor chaining."
+    ]
+  }
+]

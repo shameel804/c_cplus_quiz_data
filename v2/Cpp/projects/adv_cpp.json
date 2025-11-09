@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Using Namespaces for Code Organization",
+    "ques": "Write a C++ program that demonstrates the use of namespaces to avoid naming conflicts. Create two namespaces, each containing a function with the same name 'calculate', and use the scope resolution operator to call them in main().",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nnamespace Math {\n    int calculate(int a, int b) {\n        return a + b;\n    }\n}\nnamespace Physics {\n    int calculate(int a, int b) {\n        return a * b;\n    }\n}\nint main() {\n    int x = 5, y = 3;\n    std::cout << \"Math::calculate: \" << Math::calculate(x, y) << std::endl;\n    std::cout << \"Physics::calculate: \" << Physics::calculate(x, y) << std::endl;\n    return 0;\n}"
+    },
+    "explanation": "This program shows how namespaces prevent naming conflicts:\n- ***Line 2-5***: Defines the ***Math*** namespace with a ```calculate``` function that adds two numbers.\n- ***Line 6-9***: Defines the ***Physics*** namespace with a ```calculate``` function that multiplies two numbers.\n- ***Line 11-14***: In ```main()```, we use the scope resolution operator ```::``` to specify which namespace’s ```calculate``` to call. ```Math::calculate(5, 3)``` returns 8, while ```Physics::calculate(5, 3)``` returns 15.\n- This demonstrates how namespaces allow identical function names to coexist without ambiguity."
+  },
+  {
+    "title": "Managing Memory with Smart Pointers",
+    "ques": "Create a C++ program using a unique_ptr to manage a dynamically allocated object. Demonstrate transferring ownership and explain how it prevents memory leaks.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <memory>\nclass Resource {\npublic:\n    Resource() { std::cout << \"Resource acquired\\n\"; }\n    ~Resource() { std::cout << \"Resource destroyed\\n\"; }\n    void use() { std::cout << \"Resource in use\\n\"; }\n};\nint main() {\n    std::unique_ptr<Resource> ptr1 = std::make_unique<Resource>();\n    ptr1->use();\n    std::unique_ptr<Resource> ptr2 = std::move(ptr1);\n    if (ptr1 == nullptr) std::cout << \"ptr1 is now null\\n\";\n    ptr2->use();\n    return 0;\n}"
+    },
+    "explanation": "This program showcases ***unique_ptr*** for safe memory management:\n- ***Line 3-7***: Defines a simple ***Resource*** class with constructor, destructor, and a method to show its lifecycle.\n- ***Line 10***: Creates a ```unique_ptr``` named ```ptr1``` using ```make_unique```, which allocates a ***Resource*** object.\n- ***Line 11***: Calls ```use()``` on the object via ```ptr1```.\n- ***Line 12***: Transfers ownership from ```ptr1``` to ```ptr2``` using ```std::move```, making ```ptr1``` null.\n- ***Line 13***: Checks if ```ptr1``` is null, confirming ownership transfer.\n- ***Line 14***: Uses ```ptr2```, showing the resource is still valid.\n- The destructor runs automatically when ```ptr2``` goes out of scope, preventing memory leaks."
+  },
+  {
+    "title": "Implementing Move Semantics",
+    "ques": "Write a C++ program that implements a class with move semantics using a move constructor and move assignment operator. Demonstrate moving a string resource between objects.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <string>\nclass Movable {\n    std::string* data;\npublic:\n    Movable(const std::string& s) : data(new std::string(s)) {}\n    ~Movable() { delete data; }\n    Movable(Movable&& other) noexcept : data(other.data) {\n        other.data = nullptr;\n    }\n    Movable& operator=(Movable&& other) noexcept {\n        if (this != &other) {\n            delete data;\n            data = other.data;\n            other.data = nullptr;\n        }\n        return *this;\n    }\n    void display() const { if (data) std::cout << *data << std::endl; else std::cout << \"Empty\\n\"; }\n};\nint main() {\n    Movable obj1(\"Hello\");\n    Movable obj2(std::move(obj1));\n    std::cout << \"obj1: \"; obj1.display();\n    std::cout << \"obj2: \"; obj2.display();\n    return 0;\n}"
+    },
+    "explanation": "This program illustrates ***move semantics***:\n- ***Line 3-18***: Defines ***Movable*** class with a pointer to a string.\n- ***Line 6***: Constructor allocates a new string.\n- ***Line 8-10***: Move constructor transfers ownership of ```data``` from ```other``` to the new object, nulling ```other.data```.\n- ***Line 11-17***: Move assignment operator deletes old data, takes ```other.data```, and nulls ```other.data```.\n- ***Line 21-22***: Creates ```obj1``` with \"Hello\", then moves it to ```obj2```.\n- ***Line 23-24***: Displays ```obj1``` as empty and ```obj2``` with \"Hello\", showing the resource was moved efficiently without copying."
+  },
+  {
+    "title": "Basic Multithreading with Threads",
+    "ques": "Write a C++ program that uses std::thread to run two concurrent tasks: one prints numbers 1 to 5, and another prints letters A to E. Ensure the main thread waits for both to finish.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <thread>\nvoid printNumbers() {\n    for (int i = 1; i <= 5; ++i) {\n        std::cout << i << \" \";\n    }\n    std::cout << std::endl;\n}\nvoid printLetters() {\n    for (char c = 'A'; c <= 'E'; ++c) {\n        std::cout << c << \" \";\n    }\n    std::cout << std::endl;\n}\nint main() {\n    std::thread t1(printNumbers);\n    std::thread t2(printLetters);\n    t1.join();\n    t2.join();\n    std::cout << \"Both threads completed\\n\";\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates basic ***multithreading***:\n- ***Line 3-7***: Function ```printNumbers``` prints 1 to 5.\n- ***Line 8-12***: Function ```printLetters``` prints A to E.\n- ***Line 15-16***: Creates two threads, ```t1``` and ```t2```, to run these functions concurrently.\n- ***Line 17-18***: ```join()``` ensures the main thread waits for both ```t1``` and ```t2``` to finish.\n- ***Line 19***: Confirms completion. Output order may vary due to thread scheduling, illustrating concurrency."
+  },
+  {
+    "title": "Nested Namespaces and Using Directive",
+    "ques": "Write a C++ program that uses nested namespaces to organize utility functions. Include a using directive to simplify access in main() and demonstrate resolving a specific function call with the scope resolution operator.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nnamespace Utils {\n    namespace StringOps {\n        void print(const std::string& s) {\n            std::cout << \"String: \" << s << std::endl;\n        }\n    }\n    namespace MathOps {\n        void print(int x) {\n            std::cout << \"Number: \" << x << std::endl;\n        }\n    }\n}\nint main() {\n    using namespace Utils::StringOps;\n    print(\"Hello\");  // Calls StringOps::print\n    Utils::MathOps::print(42);  // Explicitly calls MathOps::print\n    return 0;\n}"
+    },
+    "explanation": "This program explores ***nested namespaces***:\n- ***Line 2-6***: Defines ```Utils::StringOps``` with a ```print``` function for strings.\n- ***Line 7-10***: Defines ```Utils::MathOps``` with a ```print``` function for integers.\n- ***Line 13***: The ```using``` directive brings ```Utils::StringOps``` into scope, so ```print(\"Hello\")``` calls it directly.\n- ***Line 15***: Uses the scope resolution operator ```::``` to explicitly call ```Utils::MathOps::print```, avoiding ambiguity.\n- This shows how nested namespaces organize code and how ```using``` can simplify access while still allowing precise control."
+  },
+  {
+    "title": "Shared Pointers with Multiple Owners",
+    "ques": "Create a C++ program using shared_ptr to manage a resource shared between multiple owners. Demonstrate the reference count and how the resource is cleaned up when the last owner is gone.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <memory>\nclass SharedResource {\npublic:\n    SharedResource() { std::cout << \"Resource created\\n\"; }\n    ~SharedResource() { std::cout << \"Resource destroyed\\n\"; }\n    void use() { std::cout << \"Using resource\\n\"; }\n};\nint main() {\n    std::shared_ptr<SharedResource> ptr1 = std::make_shared<SharedResource>();\n    std::cout << \"Ref count: \" << ptr1.use_count() << std::endl;\n    {\n        std::shared_ptr<SharedResource> ptr2 = ptr1;\n        std::cout << \"Ref count after ptr2: \" << ptr1.use_count() << std::endl;\n        ptr2->use();\n    }\n    std::cout << \"Ref count after scope: \" << ptr1.use_count() << std::endl;\n    ptr1->use();\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates ***shared_ptr***:\n- ***Line 3-7***: Defines ***SharedResource*** with lifecycle messages.\n- ***Line 10***: Creates ```ptr1``` with ```make_shared```, initializing the resource.\n- ***Line 11***: ```use_count()``` shows 1 owner.\n- ***Line 12-15***: Inside a scope, ```ptr2``` shares ownership with ```ptr1```, increasing the ref count to 2.\n- ***Line 16***: After ```ptr2```’s scope ends, ref count drops to 1.\n- ***Line 17***: ```ptr1``` still owns the resource until ```main()``` ends, then it’s destroyed.\n- This highlights how ```shared_ptr``` tracks ownership and ensures cleanup only when all owners are gone."
+  },
+  {
+    "title": "Move Semantics with Vector",
+    "ques": "Write a C++ program that uses move semantics to efficiently transfer a large vector between functions. Show the state of the original vector after the move.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <vector>\nvoid processVector(std::vector<int>&& vec) {\n    std::cout << \"Processing vector of size: \" << vec.size() << std::endl;\n}\nint main() {\n    std::vector<int> numbers(1000, 42);  // Large vector\n    std::cout << \"Original size: \" << numbers.size() << std::endl;\n    processVector(std::move(numbers));\n    std::cout << \"Size after move: \" << numbers.size() << std::endl;\n    return 0;\n}"
+    },
+    "explanation": "This program uses ***move semantics*** with a vector:\n- ***Line 3-5***: Function ```processVector``` takes an rvalue reference (```&&```), accepting a moved vector.\n- ***Line 7***: Creates a large ```numbers``` vector with 1000 elements.\n- ***Line 9***: Moves ```numbers``` to ```processVector``` using ```std::move```, transferring ownership efficiently.\n- ***Line 10***: After the move, ```numbers``` is in a valid but unspecified state, typically empty (size 0).\n- This avoids copying the large vector, showcasing move semantics’ performance benefit."
+  },
+  {
+    "title": "Multithreading with Mutex",
+    "ques": "Write a C++ program that uses std::thread and std::mutex to safely increment a shared counter from multiple threads. Ensure thread safety and display the final result.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <thread>\n#include <mutex>\nint counter = 0;\nstd::mutex mtx;\nvoid increment(int times) {\n    for (int i = 0; i < times; ++i) {\n        std::lock_guard<std::mutex> lock(mtx);\n        ++counter;\n    }\n}\nint main() {\n    std::thread t1(increment, 1000);\n    std::thread t2(increment, 1000);\n    t1.join();\n    t2.join();\n    std::cout << \"Final counter: \" << counter << std::endl;\n    return 0;\n}"
+    },
+    "explanation": "This program ensures thread safety with a ***mutex***:\n- ***Line 4-5***: Declares a shared ```counter``` and a ```mutex``` to protect it.\n- ***Line 6-10***: Function ```increment``` uses ```lock_guard``` to lock the mutex while incrementing ```counter```.\n- ***Line 12-13***: Launches two threads, each incrementing ```counter``` 1000 times.\n- ***Line 14-15***: Waits for both threads to finish with ```join()```.\n- ***Line 16***: Outputs the final ```counter```, which should be 2000.\n- The mutex prevents race conditions, ensuring accurate increments despite concurrent access."
+  },
+  {
+    "title": "Alias Namespaces for Simplified Access",
+    "ques": "Write a C++ program that uses a namespace alias to simplify calling functions from a deeply nested namespace. Demonstrate both the alias and direct scope resolution in main().",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nnamespace Company {\n    namespace Department {\n        namespace Tools {\n            void log(const std::string& msg) {\n                std::cout << \"Log: \" << msg << std::endl;\n            }\n        }\n    }\n}\nint main() {\n    namespace ToolSet = Company::Department::Tools;\n    ToolSet::log(\"Using alias\");\n    Company::Department::Tools::log(\"Using full path\");\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates ***namespace aliases***:\n- ***Line 2-8***: Defines a deeply nested namespace ```Company::Department::Tools``` with a ```log``` function.\n- ***Line 11***: Creates an alias ```ToolSet``` for ```Company::Department::Tools``` using the ```namespace``` keyword.\n- ***Line 12***: Calls ```log``` via the alias, simplifying the syntax.\n- ***Line 13***: Calls ```log``` using the full namespace path with scope resolution ```::```.\n- This shows how aliases reduce verbosity while maintaining clarity in accessing nested namespaces."
+  },
+  {
+    "title": "Weak Pointers with Shared Pointers",
+    "ques": "Create a C++ program that uses a weak_ptr to break a circular reference between two objects managed by shared_ptr. Show how the resources are cleaned up properly.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <memory>\nclass Node {\npublic:\n    std::shared_ptr<Node> partner;\n    std::weak_ptr<Node> weak_partner;\n    ~Node() { std::cout << \"Node destroyed\\n\"; }\n};\nint main() {\n    std::shared_ptr<Node> node1 = std::make_shared<Node>();\n    std::shared_ptr<Node> node2 = std::make_shared<Node>();\n    node1->partner = node2;  // Strong reference\n    node2->weak_partner = node1;  // Weak reference\n    std::cout << \"Ref count node1: \" << node1.use_count() << std::endl;\n    std::cout << \"Ref count node2: \" << node2.use_count() << std::endl;\n    return 0;\n}"
+    },
+    "explanation": "This program uses ***weak_ptr*** to avoid circular references:\n- ***Line 3-7***: Defines ***Node*** with a ```shared_ptr``` (strong) and a ```weak_ptr``` (weak) to another ***Node***.\n- ***Line 10-11***: Creates two nodes with ```shared_ptr```.\n- ***Line 12***: ```node1``` holds a strong reference to ```node2```, increasing ```node2```’s ref count.\n- ***Line 13***: ```node2``` holds a weak reference to ```node1```, not affecting ```node1```’s ref count.\n- ***Line 14-15***: Shows ref counts (e.g., 2 for ```node2```, 1 for ```node1```).\n- When ```main()``` ends, ```node1``` and ```node2``` are destroyed properly because the weak reference prevents a cycle."
+  },
+  {
+    "title": "Move Semantics with Custom Swap",
+    "ques": "Write a C++ program that implements a custom class with a swap function using move semantics. Demonstrate swapping two objects and their states before and after.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <utility>\nclass Data {\n    int* value;\npublic:\n    Data(int v) : value(new int(v)) {}\n    ~Data() { delete value; }\n    void swap(Data& other) noexcept {\n        using std::swap;\n        swap(value, other.value);\n    }\n    void print() const { std::cout << (value ? *value : 0) << std::endl; }\n};\nint main() {\n    Data d1(10), d2(20);\n    std::cout << \"Before: d1 = \"; d1.print();\n    std::cout << \"Before: d2 = \"; d2.print();\n    d1.swap(d2);\n    std::cout << \"After: d1 = \"; d1.print();\n    std::cout << \"After: d2 = \"; d2.print();\n    return 0;\n}"
+    },
+    "explanation": "This program implements a ***swap*** function with move semantics:\n- ***Line 3-11***: Defines ***Data*** with a pointer to an integer and a ```swap``` function.\n- ***Line 8-10***: ```swap``` uses ```std::swap``` to exchange ```value``` pointers efficiently, marked ```noexcept``` for move safety.\n- ***Line 14-15***: Creates ```d1``` (10) and ```d2``` (20), prints initial states.\n- ***Line 17***: Swaps ```d1``` and ```d2``` using move semantics.\n- ***Line 18-19***: Prints swapped states (d1 = 20, d2 = 10).\n- This avoids deep copying, leveraging pointer swaps for efficiency."
+  },
+  {
+    "title": "Multithreading with Condition Variable",
+    "ques": "Write a C++ program that uses std::thread and std::condition_variable to coordinate two threads: one produces a value, and another consumes it. Ensure proper synchronization.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <thread>\n#include <mutex>\n#include <condition_variable>\nstd::mutex mtx;\nstd::condition_variable cv;\nbool ready = false;\nint data = 0;\nvoid producer() {\n    std::lock_guard<std::mutex> lock(mtx);\n    data = 42;\n    ready = true;\n    cv.notify_one();\n}\nvoid consumer() {\n    std::unique_lock<std::mutex> lock(mtx);\n    cv.wait(lock, []{ return ready; });\n    std::cout << \"Consumed: \" << data << std::endl;\n}\nint main() {\n    std::thread t1(producer);\n    std::thread t2(consumer);\n    t1.join();\n    t2.join();\n    return 0;\n}"
+    },
+    "explanation": "This program uses a ***condition variable*** for thread coordination:\n- ***Line 5-8***: Declares shared variables: ```mtx``` for locking, ```cv``` for signaling, ```ready``` flag, and ```data```.\n- ***Line 9-13***: ```producer``` sets ```data``` to 42, marks ```ready```, and notifies the consumer.\n- ***Line 14-17***: ```consumer``` waits on ```cv``` until ```ready``` is true, then prints ```data```.\n- ***Line 20-21***: Launches threads for producer and consumer.\n- ***Line 22-23***: Waits for both to complete.\n- The condition variable ensures the consumer only proceeds after the producer finishes, demonstrating synchronized data exchange."
+  },
+  {
+    "title": "Anonymous Namespaces for File Scope",
+    "ques": "Write a C++ program that uses an anonymous namespace to define a function with file-local scope. Demonstrate its inaccessibility from outside the file by attempting to call it from main() in a simulated multi-file scenario.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nnamespace {\n    void hiddenFunction() {\n        std::cout << \"This is hidden in this file\\n\";\n    }\n}\nvoid accessibleFunction() {\n    hiddenFunction();  // Can call within same file\n    std::cout << \"This is accessible\\n\";\n}\nint main() {\n    accessibleFunction();  // Works fine\n    // hiddenFunction();  // Uncommenting this would cause a compile error\n    std::cout << \"Main completed\\n\";\n    return 0;\n}"
+    },
+    "explanation": "This program showcases ***anonymous namespaces***:\n- ***Line 2-5***: Defines ```hiddenFunction``` in an anonymous namespace, limiting its linkage to this file.\n- ***Line 6-9***: Defines ```accessibleFunction``` outside the anonymous namespace, which can call ```hiddenFunction``` since it’s in the same file.\n- ***Line 11***: Calls ```accessibleFunction``` from ```main()```, which indirectly uses ```hiddenFunction```.\n- ***Line 12***: Commented-out call to ```hiddenFunction``` would fail if uncommented, as it’s not visible outside the anonymous namespace.\n- This mimics static linkage, ensuring ```hiddenFunction``` isn’t accessible across translation units."
+  },
+  {
+    "title": "Custom Deleter with Unique Pointer",
+    "ques": "Create a C++ program that uses a unique_ptr with a custom deleter to manage a file resource. Demonstrate opening and closing a file safely with the smart pointer.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <memory>\n#include <cstdio>\nstruct FileDeleter {\n    void operator()(FILE* fp) {\n        if (fp) {\n            fclose(fp);\n            std::cout << \"File closed\\n\";\n        }\n    }\n};\nint main() {\n    std::unique_ptr<FILE, FileDeleter> filePtr(fopen(\"test.txt\", \"w\"));\n    if (filePtr) {\n        std::cout << \"File opened\\n\";\n        fprintf(filePtr.get(), \"Hello, world!\\n\");\n    } else {\n        std::cout << \"File open failed\\n\";\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program uses ***unique_ptr*** with a custom deleter:\n- ***Line 4-10***: Defines ***FileDeleter*** with an ```operator()``` that closes a ***FILE*** pointer safely.\n- ***Line 12***: Creates a ```unique_ptr``` with ```FileDeleter``` to manage a file opened with ```fopen```.\n- ***Line 13-17***: Checks if the file opened, writes to it using ```get()``` to access the raw pointer.\n- When ```filePtr``` goes out of scope, the custom deleter automatically calls ```fclose```, printing \"File closed\".\n- This ensures the file resource is managed safely without manual cleanup."
+  },
+  {
+    "title": "Move Semantics with Temporary Objects",
+    "ques": "Write a C++ program that demonstrates move semantics with a temporary object passed to a function. Show how the original object’s state is affected after the move.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <string>\nclass TempData {\n    std::string* str;\npublic:\n    TempData(const std::string& s) : str(new std::string(s)) {}\n    TempData(TempData&& other) noexcept : str(other.str) { other.str = nullptr; }\n    ~TempData() { delete str; }\n    void display() const { std::cout << (str ? *str : \"null\") << std::endl; }\n};\nvoid consume(TempData&& data) {\n    std::cout << \"Consumed: \";\n    data.display();\n}\nint main() {\n    consume(TempData(\"Temporary\"));\n    TempData obj(\"Original\");\n    std::cout << \"Original before: \"; obj.display();\n    consume(std::move(obj));\n    std::cout << \"Original after: \"; obj.display();\n    return 0;\n}"
+    },
+    "explanation": "This program explores ***move semantics*** with temporaries:\n- ***Line 3-9***: Defines ***TempData*** with a move constructor that transfers a string pointer.\n- ***Line 11-13***: Function ```consume``` takes an rvalue reference, displaying the moved data.\n- ***Line 15***: Creates a temporary ***TempData*** object, moved into ```consume```, which prints \"Temporary\".\n- ***Line 16-19***: Creates ```obj```, moves it to ```consume```, and shows its state (\"null\") after the move.\n- This highlights how temporaries and explicit moves leave the source object in a valid but empty state."
+  },
+  {
+    "title": "Multithreading with Atomic Variables",
+    "ques": "Write a C++ program that uses std::atomic to safely update a shared counter across multiple threads without a mutex. Demonstrate concurrent increments and the final result.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <thread>\n#include <atomic>\nstd::atomic<int> counter(0);\nvoid increment(int times) {\n    for (int i = 0; i < times; ++i) {\n        counter.fetch_add(1, std::memory_order_relaxed);\n    }\n}\nint main() {\n    std::thread t1(increment, 1000);\n    std::thread t2(increment, 1000);\n    t1.join();\n    t2.join();\n    std::cout << \"Final counter: \" << counter << std::endl;\n    return 0;\n}"
+    },
+    "explanation": "This program uses ***std::atomic*** for thread-safe operations:\n- ***Line 4***: Declares an atomic integer ```counter``` initialized to 0.\n- ***Line 5-8***: Function ```increment``` uses ```fetch_add``` to atomically increment ```counter``` without a mutex.\n- ***Line 10-11***: Launches two threads, each incrementing ```counter``` 1000 times.\n- ***Line 12-13***: Waits for threads to finish.\n- ***Line 14***: Prints the final value, expected to be 2000.\n- Atomic operations ensure thread safety without locks, leveraging hardware-level synchronization."
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Basic Class Definition",
+    "ques": "Create a C++ program that defines a class called 'Rectangle' with length and width as private data members. Create an object of this class and calculate its area.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Rectangle {\nprivate:\n    float length;\n    float width;\npublic:\n    void setDimensions(float l, float w) {\n        length = l;\n        width = w;\n    }\n    float getArea() {\n        return length * width;\n    }\n};\n\nint main() {\n    Rectangle rect;\n    rect.setDimensions(5.0, 3.0);\n    cout << \"Area: \" << rect.getArea() << endl;\n    return 0;\n}"
+    },
+    "explanation": "Let’s break down the code:\n- ***#include <iostream>***: Includes the input/output stream library.\n- ***class Rectangle***: Defines a class named Rectangle.\n- ***private:***: Access specifier making ```length``` and ```width``` private, accessible only within the class.\n- ***public:***: Access specifier for methods ```setDimensions``` and ```getArea```, making them accessible outside.\n- ```void setDimensions(float l, float w)```: Method to set values for ```length``` and ```width```.\n- ```float getArea()```: Calculates and returns the area (length * width).\n- ***Rectangle rect***: Creates an object ```rect``` of class Rectangle.\n- ```rect.setDimensions(5.0, 3.0)```: Sets length = 5 and width = 3.\n- ```cout << rect.getArea()```: Outputs the area (15)."
+  },
+  {
+    "title": "Access Specifiers Demo",
+    "ques": "Write a C++ program to demonstrate public and private access specifiers using a 'Student' class with name and roll number.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Student {\nprivate:\n    int rollNo;\npublic:\n    string name;\n    void setRollNo(int r) {\n        rollNo = r;\n    }\n    int getRollNo() {\n        return rollNo;\n    }\n};\n\nint main() {\n    Student s1;\n    s1.name = \"Alice\";\n    s1.setRollNo(101);\n    cout << \"Name: \" << s1.name << \", Roll No: \" << s1.getRollNo() << endl;\n    return 0;\n}"
+    },
+    "explanation": "Here’s the explanation:\n- ***private: int rollNo***: ```rollNo``` is private, so it can’t be accessed directly outside the class.\n- ***public: string name***: ```name``` is public, allowing direct access.\n- ```void setRollNo(int r)```: Public method to set the private ```rollNo```.\n- ```int getRollNo()```: Public method to retrieve ```rollNo```.\n- ***Student s1***: Creates an object ```s1```.\n- ```s1.name = \"Alice\"```: Directly sets ```name``` because it’s public.\n- ```s1.setRollNo(101)```: Uses a method to set ```rollNo``` since it’s private.\n- Output displays both values, showing how access specifiers control visibility."
+  },
+  {
+    "title": "Constructor and Destructor",
+    "ques": "Create a C++ program with a 'Book' class that uses a constructor to initialize title and price, and a destructor to display a message when the object is destroyed.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Book {\nprivate:\n    string title;\n    float price;\npublic:\n    Book(string t, float p) {\n        title = t;\n        price = p;\n        cout << \"Book created: \" << title << endl;\n    }\n    ~Book() {\n        cout << \"Book destroyed: \" << title << endl;\n    }\n    void display() {\n        cout << \"Title: \" << title << \", Price: \" << price << endl;\n    }\n};\n\nint main() {\n    Book b1(\"C++ Guide\", 29.99);\n    b1.display();\n    return 0;\n}"
+    },
+    "explanation": "Line-by-line breakdown:\n- ***class Book***: Defines the Book class.\n- ***Book(string t, float p)***: Constructor that initializes ```title``` and ```price```, and prints a creation message.\n- ***~Book()***: Destructor that runs when the object is destroyed, printing a destruction message.\n- ```void display()```: Method to show book details.\n- ***Book b1(\"C++ Guide\", 29.99)***: Creates object ```b1```, triggering the constructor.\n- ```b1.display()```: Shows the book’s title and price.\n- When ```main()``` ends, ```b1``` goes out of scope, and the destructor is called automatically."
+  },
+  {
+    "title": "Using this Pointer",
+    "ques": "Write a C++ program with a 'Point' class that uses the 'this' pointer to differentiate between class members and parameters in a method.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Point {\nprivate:\n    int x;\n    int y;\npublic:\n    void setCoordinates(int x, int y) {\n        this->x = x;\n        this->y = y;\n    }\n    void showCoordinates() {\n        cout << \"X: \" << x << \", Y: \" << y << endl;\n    }\n};\n\nint main() {\n    Point p1;\n    p1.setCoordinates(3, 4);\n    p1.showCoordinates();\n    return 0;\n}"
+    },
+    "explanation": "Here’s the detailed explanation:\n- ***class Point***: Defines a class with private members ```x``` and ```y```.\n- ```void setCoordinates(int x, int y)```: Method with parameters named the same as class members.\n- ***this->x = x***: Uses ```this``` pointer to refer to the class member ```x```, not the parameter ```x```.\n- ***this->y = y***: Similarly, assigns parameter ```y``` to the class member ```y```.\n- ```void showCoordinates()```: Displays the values of ```x``` and ```y```.\n- ***Point p1***: Creates an object ```p1```.\n- ```p1.setCoordinates(3, 4)```: Sets ```x = 3``` and ```y = 4``` using ```this```.\n- Output confirms the coordinates are correctly set."
+  },
+  {
+    "title": "Member Functions with Default Arguments",
+    "ques": "Create a C++ program with a 'Box' class that has a member function to calculate volume, using default arguments for dimensions if not provided.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Box {\nprivate:\n    float length;\n    float width;\n    float height;\npublic:\n    void setDimensions(float l = 1.0, float w = 1.0, float h = 1.0) {\n        length = l;\n        width = w;\n        height = h;\n    }\n    float getVolume() {\n        return length * width * height;\n    }\n};\n\nint main() {\n    Box b1, b2;\n    b1.setDimensions(2.0, 3.0, 4.0);\n    b2.setDimensions();\n    cout << \"Volume of b1: \" << b1.getVolume() << endl;\n    cout << \"Volume of b2: \" << b2.getVolume() << endl;\n    return 0;\n}"
+    },
+    "explanation": "Here’s the breakdown:\n- ***class Box***: Defines a class with private members ```length```, ```width```, and ```height```.\n- ```void setDimensions(float l = 1.0, float w = 1.0, float h = 1.0)```: Method with default arguments, setting dimensions to 1.0 if not specified.\n- ```float getVolume()```: Calculates and returns the volume.\n- ***Box b1, b2***: Creates two objects.\n- ```b1.setDimensions(2.0, 3.0, 4.0)```: Sets specific dimensions for ```b1```.\n- ```b2.setDimensions()```: Uses default values (1.0, 1.0, 1.0) for ```b2```.\n- Output shows ```b1``` volume as 24 and ```b2``` as 1, demonstrating default arguments."
+  },
+  {
+    "title": "Static Members in Class",
+    "ques": "Write a C++ program with an 'Employee' class that uses a static member to keep track of the total number of employee objects created.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Employee {\nprivate:\n    string name;\npublic:\n    static int count; // Static member\n    Employee(string n) {\n        name = n;\n        count++;\n        cout << \"Employee \" << name << \" created. Total: \" << count << endl;\n    }\n    ~Employee() {\n        count--;\n        cout << \"Employee \" << name << \" destroyed. Total: \" << count << endl;\n    }\n};\n\nint Employee::count = 0; // Initialize static member\n\nint main() {\n    Employee e1(\"John\");\n    Employee e2(\"Jane\");\n    return 0;\n}"
+    },
+    "explanation": "Detailed explanation:\n- ***static int count***: Declares a static member shared across all objects of the class.\n- ```int Employee::count = 0```: Initializes the static member outside the class definition.\n- ***Employee(string n)***: Constructor increments ```count``` each time an object is created.\n- ***~Employee()***: Destructor decrements ```count``` when an object is destroyed.\n- ***Employee e1(\"John\")***: Creates first object, ```count``` becomes 1.\n- ***Employee e2(\"Jane\")***: Creates second object, ```count``` becomes 2.\n- When ```main()``` ends, objects are destroyed, and ```count``` decreases, showing the static member tracks total instances."
+  },
+  {
+    "title": "Friend Function Usage",
+    "ques": "Create a C++ program with a 'Circle' class that uses a friend function to calculate and display the circumference, accessing private members directly.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\nusing namespace std;\n\nclass Circle {\nprivate:\n    float radius;\npublic:\n    Circle(float r) {\n        radius = r;\n    }\n    friend void calcCircumference(Circle c); // Friend function declaration\n};\n\nvoid calcCircumference(Circle c) {\n    float circumference = 2 * 3.14159 * c.radius;\n    cout << \"Circumference: \" << circumference << endl;\n}\n\nint main() {\n    Circle c1(5.0);\n    calcCircumference(c1);\n    return 0;\n}"
+    },
+    "explanation": "Here’s the explanation:\n- ***class Circle***: Defines a class with a private member ```radius```.\n- ***friend void calcCircumference(Circle c)***: Declares a friend function that can access private members of Circle.\n- ```Circle(float r)```: Constructor to initialize ```radius```.\n- ```void calcCircumference(Circle c)```: Friend function that directly accesses ```c.radius``` to calculate circumference (2 * π * radius).\n- ***Circle c1(5.0)***: Creates an object with radius 5.\n- ```calcCircumference(c1)```: Calls the friend function, outputting circumference (approximately 31.4159).\n- This demonstrates how friend functions bypass access restrictions."
+  },
+  {
+    "title": "Constant Member Function",
+    "ques": "Write a C++ program with a 'Car' class that includes a constant member function to display details without modifying the object’s state.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Car {\nprivate:\n    string model;\n    int year;\npublic:\n    Car(string m, int y) {\n        model = m;\n        year = y;\n    }\n    void display() const {\n        cout << \"Model: \" << model << \", Year: \" << year << endl;\n    }\n    void setYear(int y) {\n        year = y;\n    }\n};\n\nint main() {\n    Car c1(\"Toyota\", 2020);\n    c1.display();\n    c1.setYear(2021);\n    c1.display();\n    return 0;\n}"
+    },
+    "explanation": "Line-by-line breakdown:\n- ***class Car***: Defines a class with private members ```model``` and ```year```.\n- ***Car(string m, int y)***: Constructor initializes the object.\n- ```void display() const```: Constant member function (marked with ```const```), promising not to modify the object’s state.\n- ```void setYear(int y)```: Non-const function to modify ```year```.\n- ***Car c1(\"Toyota\", 2020)***: Creates an object ```c1```.\n- ```c1.display()```: Calls the const function to show initial details.\n- ```c1.setYear(2021)```: Updates the year.\n- Second ```c1.display()``` call shows updated details, proving ```display()``` doesn’t alter state.\n- The ```const``` keyword ensures safety when only reading data."
+  }
+]

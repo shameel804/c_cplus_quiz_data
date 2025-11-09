@@ -1,0 +1,5494 @@
+[
+  {
+    "q": "Which of the following is used to read from a file in C++?",
+    "o": [
+      "ifstream",
+      "ofstream",
+      "cin",
+      "ostream"
+    ]
+  },
+  {
+    "q": "What will the following code snippet do?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\n\nint main() {\n    ofstream file(\"example.txt\");\n    file << \"Hello, File!\";\n    file.close();\n    return 0;\n}",
+    "o": [
+      "Create a file named example.txt and write 'Hello, File!' to it",
+      "Read contents from example.txt",
+      "Delete the file example.txt",
+      "Append 'Hello, File!' to standard output"
+    ]
+  },
+  {
+    "q": "Which file mode allows appending data to the end of a file?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::in",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "What is the purpose of fstream in C++?",
+    "o": [
+      "To read from and write to a file",
+      "To only read from a file",
+      "To only write to a file",
+      "To handle string input/output"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\n\nint main() {\n    ifstream file(\"data.txt\");\n    string word;\n    file >> word;\n    cout << word;\n    file.close();\n    return 0;\n}",
+    "o": [
+      "Prints the first word from data.txt",
+      "Prints the entire file content",
+      "Prints the last word from data.txt",
+      "Throws a compile-time error"
+    ]
+  },
+  {
+    "q": "Which of the following is correct for opening a binary file for writing?",
+    "o": [
+      "ofstream file(\"data.bin\", ios::binary);",
+      "ifstream file(\"data.bin\", ios::binary);",
+      "fstream file(\"data.bin\", ios::in);",
+      "ofstream file(\"data.bin\", ios::app);"
+    ]
+  },
+  {
+    "q": "Which file open mode will delete the contents of the file if it already exists?",
+    "o": [
+      "ios::trunc",
+      "ios::app",
+      "ios::in",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "What will this code output assuming the file contains: '42 65'?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\n\nint main() {\n    ifstream file(\"input.txt\");\n    int a, b;\n    file >> a >> b;\n    cout << a + b;\n    file.close();\n    return 0;\n}",
+    "o": [
+      "107",
+      "4265",
+      "42",
+      "65"
+    ]
+  },
+  {
+    "q": "Which header file is required for file handling in C++?",
+    "o": [
+      "<fstream>",
+      "<file>",
+      "<iostream>",
+      "<cstdio>"
+    ]
+  },
+  {
+    "q": "Which of the following correctly writes an object to a binary file?",
+    "c": "ofstream file(\"data.bin\", ios::binary);\nMyClass obj;\nfile.write(reinterpret_cast<char*>(&obj), sizeof(obj));\nfile.close();",
+    "o": [
+      "Writes the binary representation of the object to the file",
+      "Reads the object from a binary file",
+      "Writes the object in text format",
+      "Throws a compile-time error"
+    ]
+  },
+  {
+    "q": "Which C++ stream class can both read from and write to a file?",
+    "o": [
+      "fstream",
+      "ifstream",
+      "ofstream",
+      "stringstream"
+    ]
+  },
+  {
+    "q": "What does the ios::binary mode do when opening a file?",
+    "o": [
+      "Opens the file in binary mode",
+      "Encrypts the file data",
+      "Makes the file read-only",
+      "Compresses the file data"
+    ]
+  },
+  {
+    "q": "What is the output of the following C++ code if 'data.txt' contains: Hello World?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\n\nint main() {\n    ifstream inFile(\"data.txt\");\n    char ch;\n    inFile.get(ch);\n    cout << ch;\n    return 0;\n}",
+    "o": [
+      "H",
+      "Hello",
+      "World",
+      "d"
+    ]
+  },
+  {
+    "q": "Which mode combination allows a binary file to be read and written without deleting existing content?",
+    "o": [
+      "ios::in | ios::out | ios::binary",
+      "ios::out | ios::trunc",
+      "ios::app | ios::binary",
+      "ios::in | ios::trunc"
+    ]
+  },
+  {
+    "q": "How do you check if a file opened successfully using ifstream?",
+    "o": [
+      "if (file.is_open())",
+      "if (file.exists())",
+      "if (file.opened())",
+      "if (file == open)"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "#include <fstream>\nusing namespace std;\n\nint main() {\n    fstream file(\"log.txt\", ios::out | ios::app);\n    file << \"New entry\\n\";\n    file.close();\n    return 0;\n}",
+    "o": [
+      "Appends 'New entry' to log.txt",
+      "Overwrites log.txt with 'New entry'",
+      "Reads 'New entry' from log.txt",
+      "Deletes log.txt"
+    ]
+  },
+  {
+    "q": "What is the correct way to read a structure from a binary file?",
+    "o": [
+      "file.read(reinterpret_cast<char*>(&obj), sizeof(obj));",
+      "file << obj;",
+      "file >> obj;",
+      "file.read(&obj, sizeof(obj));"
+    ]
+  },
+  {
+    "q": "Which of the following is true about ios::trunc mode?",
+    "o": [
+      "It deletes existing content when the file is opened",
+      "It prevents writing to a file",
+      "It appends content to the file",
+      "It opens the file in read-only mode"
+    ]
+  },
+  {
+    "q": "What is required before writing binary objects to a file in C++?",
+    "o": [
+      "Open file with ios::binary flag",
+      "Call flush() manually",
+      "Encrypt the data first",
+      "Use file.sync() after every write"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to open a file for reading as binary?",
+    "o": [
+      "ifstream file(\"data.dat\", ios::in | ios::binary);",
+      "ifstream file(\"data.dat\", ios::binary | ios::app);",
+      "ifstream file(\"data.dat\", ios::out);",
+      "ofstream file(\"data.dat\", ios::binary | ios::trunc);"
+    ]
+  },
+  {
+    "q": "Which open mode is used with ofstream to write data while preserving existing content?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::in",
+      "ios::ate"
+    ]
+  },
+  {
+    "q": "What does ios::ate do when opening a file?",
+    "o": [
+      "Moves the write position to the end of the file immediately after opening",
+      "Truncates the file before writing",
+      "Prevents writing to the file",
+      "Opens file in binary mode"
+    ]
+  },
+  {
+    "q": "Which of the following can read AND write binary data from a file?",
+    "o": [
+      "fstream file(\"data.bin\", ios::in | ios::out | ios::binary);",
+      "ifstream file(\"data.bin\", ios::binary);",
+      "ofstream file(\"data.bin\", ios::binary);",
+      "fstream file(\"data.bin\", ios::trunc);"
+    ]
+  },
+  {
+    "q": "What will this code output assuming 'input.txt' contains: Test123?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\n\nint main() {\n    ifstream file(\"input.txt\");\n    file.seekg(4);\n    char ch;\n    file.get(ch);\n    cout << ch;\n    return 0;\n}",
+    "o": [
+      "1",
+      "T",
+      "e",
+      "3"
+    ]
+  },
+  {
+    "q": "Which method is used to write binary data to a file?",
+    "o": [
+      "write()",
+      "put()",
+      "get()",
+      "getline()"
+    ]
+  },
+  {
+    "q": "Which function can reposition the read pointer in a binary file?",
+    "o": [
+      "seekg()",
+      "seekp()",
+      "tellp()",
+      "rewind()"
+    ]
+  },
+  {
+    "q": "What happens if you open a file with ofstream without any mode flags?",
+    "o": [
+      "It creates the file and overwrites if it exists",
+      "It reads from the file",
+      "It appends to the file",
+      "It opens in binary mode"
+    ]
+  },
+  {
+    "q": "What will the following code output if 'data.txt' contains: C++ File Handling?",
+    "c": "#include <fstream>\n#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n    ifstream file(\"data.txt\");\n    string line;\n    getline(file, line);\n    cout << line;\n    return 0;\n}",
+    "o": [
+      "C++ File Handling",
+      "C++",
+      "File",
+      "Handling"
+    ]
+  },
+  {
+    "q": "Which mode is needed to read and write in the same session with a single stream?",
+    "o": [
+      "ios::in | ios::out",
+      "ios::binary | ios::app",
+      "ios::out | ios::trunc",
+      "ios::in | ios::binary"
+    ]
+  },
+  {
+    "q": "Which function returns the current position of the read pointer in a file?",
+    "o": [
+      "tellg()",
+      "seekg()",
+      "tellp()",
+      "seekp()"
+    ]
+  },
+  {
+    "q": "What is the purpose of the fstream class in C++?",
+    "o": [
+      "It allows both input and output operations on files",
+      "It is used only for reading files",
+      "It is used only for writing to files",
+      "It is used to manage standard input and output"
+    ]
+  },
+  {
+    "q": "Which mode combination will open a file in binary mode for writing only?",
+    "o": [
+      "ios::out | ios::binary",
+      "ios::in | ios::binary",
+      "ios::app | ios::binary",
+      "ios::in | ios::out | ios::binary"
+    ]
+  },
+  {
+    "q": "What is the result of using ios::app when opening a file?",
+    "o": [
+      "New data is always written at the end of the file",
+      "The file is cleared before writing",
+      "It disables writing",
+      "It only allows reading"
+    ]
+  },
+  {
+    "q": "What will this code write to the file?",
+    "c": "#include <fstream>\nusing namespace std;\nint main() {\n    ofstream file(\"output.txt\");\n    file << 10 << \" \" << 20;\n    file.close();\n    return 0;\n}",
+    "o": [
+      "10 20",
+      "1020",
+      "file error",
+      "20 10"
+    ]
+  },
+  {
+    "q": "What is the correct way to check if a file failed to open?",
+    "o": [
+      "if (!file)",
+      "if (file == NULL)",
+      "if (file.failopen())",
+      "if (file.status() == false)"
+    ]
+  },
+  {
+    "q": "How do you move the write pointer to the beginning of a file?",
+    "o": [
+      "file.seekp(0);",
+      "file.seekg(0);",
+      "file.reset();",
+      "file.rewind();"
+    ]
+  },
+  {
+    "q": "How is binary data written from an object to a file in C++?",
+    "o": [
+      "file.write(reinterpret_cast<char*>(&obj), sizeof(obj));",
+      "file << obj;",
+      "file.write(&obj, sizeof(obj));",
+      "file.append(reinterpret_cast<char*>(&obj), sizeof(obj));"
+    ]
+  },
+  {
+    "q": "What happens if ios::trunc is used with ios::out when opening a file?",
+    "o": [
+      "The existing content of the file is deleted",
+      "The file is opened in append mode",
+      "The file is locked for reading",
+      "The file opens in read-only mode"
+    ]
+  },
+  {
+    "q": "Which function is used to close an opened file stream?",
+    "o": [
+      "close()",
+      "end()",
+      "finish()",
+      "exit()"
+    ]
+  },
+  {
+    "q": "What will this code output if 'sample.txt' contains 'ABCDEF'?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream file(\"sample.txt\", ios::binary);\n    file.seekg(3);\n    char ch;\n    file.get(ch);\n    cout << ch;\n    return 0;\n}",
+    "o": [
+      "D",
+      "A",
+      "B",
+      "E"
+    ]
+  },
+  {
+    "q": "Which of the following file modes should be used to prevent overwriting existing content when writing to a file?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::binary",
+      "ios::out"
+    ]
+  },
+  {
+    "q": "Which C++ stream class is specifically designed for input file operations?",
+    "o": [
+      "ifstream",
+      "ofstream",
+      "fstream",
+      "cin"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "#include <fstream>\nusing namespace std;\nint main() {\n    ofstream file(\"log.txt\", ios::app);\n    file << \"Logged!\" << endl;\n    file.close();\n    return 0;\n}",
+    "o": [
+      "Appends 'Logged!' at the end of 'log.txt'",
+      "Overwrites the content with 'Logged!'",
+      "Reads data from 'log.txt'",
+      "Deletes the file content before writing"
+    ]
+  },
+  {
+    "q": "Which mode is required to open a file for both reading and writing in binary?",
+    "o": [
+      "ios::in | ios::out | ios::binary",
+      "ios::in | ios::app",
+      "ios::out | ios::trunc",
+      "ios::binary | ios::trunc"
+    ]
+  },
+  {
+    "q": "What will the following code output if the file 'data.txt' contains: '123456'?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream file(\"data.txt\");\n    file.seekg(2);\n    char ch;\n    file.get(ch);\n    cout << ch;\n    return 0;\n}",
+    "o": [
+      "3",
+      "1",
+      "2",
+      "4"
+    ]
+  },
+  {
+    "q": "To write a user-defined object to a binary file, which cast is typically used?",
+    "o": [
+      "reinterpret_cast<char*>",
+      "static_cast<char*>",
+      "dynamic_cast<char*>",
+      "const_cast<char*>"
+    ]
+  },
+  {
+    "q": "Which function is used to retrieve the current output position in a file stream?",
+    "o": [
+      "tellp()",
+      "tellg()",
+      "seekp()",
+      "getp()"
+    ]
+  },
+  {
+    "q": "Why would you use ios::binary while opening a file?",
+    "o": [
+      "To prevent translation of newline characters",
+      "To make the file readable only by binary editors",
+      "To enable appending data",
+      "To allow writing at the beginning of the file"
+    ]
+  },
+  {
+    "q": "What will the following code write to the file?",
+    "c": "#include <fstream>\nusing namespace std;\nint main() {\n    ofstream out(\"report.txt\");\n    int x = 42;\n    out.write((char*)&x, sizeof(x));\n    out.close();\n    return 0;\n}",
+    "o": [
+      "Binary representation of 42",
+      "Text '42'",
+      "Nothing",
+      "ASCII characters '4' and '2'"
+    ]
+  },
+  {
+    "q": "Which of the following modes will clear the contents of the file upon opening?",
+    "o": [
+      "ios::trunc",
+      "ios::app",
+      "ios::binary",
+      "ios::in"
+    ]
+  },
+  {
+    "q": "Which of the following statements correctly opens a file for reading in binary mode?",
+    "o": [
+      "ifstream file(\"data.bin\", ios::in | ios::binary);",
+      "ofstream file(\"data.bin\", ios::in | ios::binary);",
+      "fstream file(\"data.bin\", ios::out | ios::binary);",
+      "ifstream file(\"data.bin\", ios::out);"
+    ]
+  },
+  {
+    "q": "What is the default mode when using ofstream to open a file?",
+    "o": [
+      "ios::out",
+      "ios::app",
+      "ios::binary",
+      "ios::in"
+    ]
+  },
+  {
+    "q": "Which member function of ifstream is used to check end-of-file?",
+    "o": [
+      "eof()",
+      "end()",
+      "is_end()",
+      "checkeof()"
+    ]
+  },
+  {
+    "q": "What does the following code output if 'file.txt' contains: HelloWorld?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream fin(\"file.txt\");\n    fin.seekg(5);\n    char ch;\n    fin.get(ch);\n    cout << ch;\n    return 0;\n}",
+    "o": [
+      "W",
+      "H",
+      "e",
+      "o"
+    ]
+  },
+  {
+    "q": "How do you write the contents of an object `book` to a binary file?",
+    "o": [
+      "file.write(reinterpret_cast<char*>(&book), sizeof(book));",
+      "file << book;",
+      "file.insert(&book, sizeof(book));",
+      "file.store(reinterpret_cast<char*>(&book), sizeof(book));"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct use of fstream to read and write to a file?",
+    "o": [
+      "fstream file(\"data.txt\", ios::in | ios::out);",
+      "fstream file(\"data.txt\", ios::write | ios::read);",
+      "fstream file(\"data.txt\", ios::input | ios::output);",
+      "fstream file(\"data.txt\"); // No mode"
+    ]
+  },
+  {
+    "q": "What happens if you try to open a non-existing file using ifstream?",
+    "o": [
+      "It fails to open and the stream enters a fail state",
+      "A new file is created",
+      "The program crashes",
+      "It opens as an empty file"
+    ]
+  },
+  {
+    "q": "Which method is used to move the input file pointer to a desired location?",
+    "o": [
+      "seekg()",
+      "seekp()",
+      "tellg()",
+      "moveg()"
+    ]
+  },
+  {
+    "q": "Which of the following correctly reads binary data into a structure?",
+    "o": [
+      "file.read(reinterpret_cast<char*>(&obj), sizeof(obj));",
+      "file.get(obj);",
+      "file << obj;",
+      "file.scan(reinterpret_cast<char*>(&obj), sizeof(obj));"
+    ]
+  },
+  {
+    "q": "Which mode combination is used to open a binary file for reading and writing without truncating it?",
+    "o": [
+      "ios::in | ios::out | ios::binary",
+      "ios::out | ios::binary | ios::trunc",
+      "ios::in | ios::binary | ios::trunc",
+      "ios::app | ios::binary"
+    ]
+  },
+  {
+    "q": "Which C++ header is necessary for file handling using ifstream, ofstream, and fstream?",
+    "o": [
+      "<fstream>",
+      "<file>",
+      "<stream>",
+      "<iostream>"
+    ]
+  },
+  {
+    "q": "Which file mode will allow appending binary data to the end of an existing file?",
+    "o": [
+      "ios::app | ios::binary",
+      "ios::out | ios::trunc",
+      "ios::in | ios::binary",
+      "ios::out | ios::binary | ios::trunc"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if the file 'notes.txt' does not exist?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream fin(\"notes.txt\");\n    if (!fin)\n        cout << \"File not found\";\n    else\n        cout << \"File opened\";\n    return 0;\n}",
+    "o": [
+      "File not found",
+      "File opened",
+      "Compilation error",
+      "Runtime error"
+    ]
+  },
+  {
+    "q": "To reset the file pointer to the beginning of the file when using ifstream, you use:",
+    "o": [
+      "file.seekg(0);",
+      "file.seekp(0);",
+      "file.reset();",
+      "file.goto(0);"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "#include <fstream>\nusing namespace std;\nint main() {\n    fstream f(\"data.txt\", ios::out | ios::in);\n    f << \"ABC\";\n    f.seekg(0);\n    char ch;\n    f >> ch;\n    return 0;\n}",
+    "o": [
+      "Writes 'ABC' and reads back 'A'",
+      "Writes 'ABC' and reads back 'C'",
+      "Reads from a blank file",
+      "Compiles but doesn't run"
+    ]
+  },
+  {
+    "q": "When using `write()` and `read()` with binary files, what type of data is expected?",
+    "o": [
+      "Raw bytes (char*)",
+      "String literals",
+      "Formatted strings",
+      "C++ objects directly"
+    ]
+  },
+  {
+    "q": "Which file stream class can handle both input and output operations?",
+    "o": [
+      "fstream",
+      "ifstream",
+      "ofstream",
+      "istream"
+    ]
+  },
+  {
+    "q": "What is the correct way to check if a file opened successfully using fstream?",
+    "o": [
+      "if (file.is_open())",
+      "if (file.open())",
+      "if (file.exists())",
+      "if (file.good())"
+    ]
+  },
+  {
+    "q": "Which of the following code snippets will open a binary file for both reading and writing?",
+    "c": "// Assume 'employee.dat' exists\nfstream file;\nfile.open(\"employee.dat\", ___________ );",
+    "o": [
+      "ios::in | ios::out | ios::binary",
+      "ios::out | ios::trunc | ios::binary",
+      "ios::app | ios::binary",
+      "ios::in | ios::binary | ios::trunc"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to determine the current read position in a file?",
+    "o": [
+      "tellg()",
+      "seekg()",
+      "tellp()",
+      "get()"
+    ]
+  },
+  {
+    "q": "Which mode is used with `ofstream` to write to a file and preserve its existing content?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::binary",
+      "ios::in"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if the file contains the text: \"Data123\"?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream fin(\"test.txt\");\n    char ch;\n    fin.seekg(4);\n    fin.get(ch);\n    cout << ch;\n    return 0;\n}",
+    "o": [
+      "1",
+      "a",
+      "t",
+      "D"
+    ]
+  },
+  {
+    "q": "Which function sets the write pointer to a specific position in binary output mode?",
+    "o": [
+      "seekp()",
+      "seekg()",
+      "tellp()",
+      "write()"
+    ]
+  },
+  {
+    "q": "What happens if `ofstream` is used to open an existing file without any additional mode?",
+    "o": [
+      "File content is erased",
+      "File is appended",
+      "File is opened in binary mode",
+      "File is opened in read-only mode"
+    ]
+  },
+  {
+    "q": "Which code correctly opens a file and writes data to it in binary mode?",
+    "c": "#include <fstream>\nusing namespace std;\nint main() {\n    ofstream fout;\n    fout.open(\"data.bin\", __________);\n    int x = 10;\n    fout.write((char*)&x, sizeof(x));\n    return 0;\n}",
+    "o": [
+      "ios::binary",
+      "ios::in",
+      "ios::app",
+      "ios::trunc"
+    ]
+  },
+  {
+    "q": "How do you ensure that both input and output operations are allowed on a file?",
+    "o": [
+      "Use fstream with ios::in | ios::out",
+      "Use ifstream with ios::in | ios::out",
+      "Use ofstream with ios::in | ios::out",
+      "Use ios::binary only"
+    ]
+  },
+  {
+    "q": "Which function reads a block of binary data from a file into memory?",
+    "o": [
+      "read()",
+      "get()",
+      "getline()",
+      "fetch()"
+    ]
+  },
+  {
+    "q": "Which of the following is true about `ios::trunc` mode?",
+    "o": [
+      "It deletes existing content of the file if it exists",
+      "It appends new data to the file",
+      "It opens a file in read-only mode",
+      "It is required for reading binary files"
+    ]
+  },
+  {
+    "q": "What will the following code do?",
+    "c": "#include <fstream>\nusing namespace std;\nint main() {\n    fstream file(\"info.txt\", ios::in | ios::out);\n    file << \"Hello\";\n    file.seekg(0);\n    char c;\n    file.get(c);\n    return 0;\n}",
+    "o": [
+      "Write 'Hello' and read back 'H'",
+      "Write 'Hello' and read back 'o'",
+      "Fail to compile",
+      "Only write, no read"
+    ]
+  },
+  {
+    "q": "What is the output of `tellp()` function?",
+    "o": [
+      "Current position of the write pointer",
+      "Current position of the read pointer",
+      "Number of bytes remaining in the file",
+      "The filename"
+    ]
+  },
+  {
+    "q": "What happens if you open a file using `ifstream` but the file doesn't exist?",
+    "o": [
+      "The stream enters a fail state",
+      "A new file is created",
+      "Compilation error occurs",
+      "The program crashes"
+    ]
+  },
+  {
+    "q": "Which of the following correctly reads an integer from a binary file?",
+    "c": "ifstream fin(\"data.bin\", ios::binary);\nint n;\n______________;\nfin.close();",
+    "o": [
+      "fin.read((char*)&n, sizeof(n));",
+      "fin >> n;",
+      "fin.getline((char*)&n, sizeof(n));",
+      "fin.get(n);"
+    ]
+  },
+  {
+    "q": "Which file mode is used to open a file for writing at the end without overwriting existing content?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::in",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "What does `seekp(0, ios::end)` do in a file stream?",
+    "o": [
+      "Moves the write pointer to the end of the file",
+      "Reads from the end of the file",
+      "Clears the file contents",
+      "Moves the read pointer to the end"
+    ]
+  },
+  {
+    "q": "What is the output of the following program?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ofstream fout(\"log.txt\");\n    fout << \"Entry1\\n\";\n    fout.close();\n    fout.open(\"log.txt\", ios::app);\n    fout << \"Entry2\";\n    fout.close();\n    return 0;\n}",
+    "o": [
+      "Entry1\\nEntry2",
+      "Entry2",
+      "Entry1",
+      "Entry1Entry2"
+    ]
+  },
+  {
+    "q": "Which of the following is used to detect end-of-file condition in a file stream?",
+    "o": [
+      "eof()",
+      "end()",
+      "finished()",
+      "is_end()"
+    ]
+  },
+  {
+    "q": "How would you open a file named 'report.txt' for both input and output without truncating it?",
+    "o": [
+      "fstream file(\"report.txt\", ios::in | ios::out);",
+      "fstream file(\"report.txt\", ios::out);",
+      "ofstream file(\"report.txt\", ios::in | ios::out);",
+      "ifstream file(\"report.txt\", ios::in | ios::out);"
+    ]
+  },
+  {
+    "q": "Which function is used to write binary data to a file from memory?",
+    "o": [
+      "write()",
+      "put()",
+      "<< operator",
+      "append()"
+    ]
+  },
+  {
+    "q": "Which of the following flags is **NOT** valid in C++ file modes?",
+    "o": [
+      "ios::read",
+      "ios::app",
+      "ios::in",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "What is the correct way to open a file and check if it failed to open?",
+    "c": "ifstream file(\"input.txt\");\nif (______________) {\n    cout << \"File couldn't be opened\";\n}",
+    "o": [
+      "!file",
+      "file == true",
+      "file.open()",
+      "file.fail() == false"
+    ]
+  },
+  {
+    "q": "Which of the following will open a file for reading and writing in binary mode?",
+    "o": [
+      "fstream file(\"data.dat\", ios::in | ios::out | ios::binary);",
+      "ifstream file(\"data.dat\", ios::in | ios::binary);",
+      "ofstream file(\"data.dat\", ios::out | ios::binary);",
+      "fstream file(\"data.dat\", ios::app | ios::binary);"
+    ]
+  },
+  {
+    "q": "What is the purpose of `tellg()` in file handling?",
+    "o": [
+      "To get the current position of the get (read) pointer",
+      "To set the position of the get pointer",
+      "To get the current file name",
+      "To truncate the file"
+    ]
+  },
+  {
+    "q": "Which of the following is correct for writing a user-defined object to a binary file?",
+    "c": "struct Student {\n    int id;\n    char name[20];\n};\nStudent s = {1, \"John\"};\nofstream fout(\"data.bin\", ios::binary);\n______________;\nfout.close();",
+    "o": [
+      "fout.write((char*)&s, sizeof(s));",
+      "fout << s;",
+      "fout.put((char*)&s);",
+      "fout.append(s);"
+    ]
+  },
+  {
+    "q": "Which flag is used to prevent overwriting of data in a file while writing?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::binary",
+      "ios::ate"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "fstream file(\"log.txt\", ios::in | ios::out);\nfile.seekp(0, ios::end);\nfile << \"New entry\";",
+    "o": [
+      "Appends 'New entry' to the end of the file",
+      "Overwrites file content with 'New entry'",
+      "Deletes the file and writes 'New entry'",
+      "Reads and displays the file"
+    ]
+  },
+  {
+    "q": "Which mode must be combined with `ios::binary` to read a file without truncating its content?",
+    "o": [
+      "ios::in",
+      "ios::trunc",
+      "ios::app",
+      "ios::ate"
+    ]
+  },
+  {
+    "q": "What is the result of calling `read()` on an `ifstream` object?",
+    "o": [
+      "Reads raw bytes from the file into a memory buffer",
+      "Reads a line of text",
+      "Reads and parses an integer",
+      "Reads the entire file"
+    ]
+  },
+  {
+    "q": "Which of the following opens a file and places the get and put pointers at the end?",
+    "o": [
+      "ios::ate",
+      "ios::app",
+      "ios::trunc",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "Which statement about `ofstream` is true?",
+    "o": [
+      "It is used only for writing to files",
+      "It is used only for reading files",
+      "It is used for both input and output",
+      "It is used to open files in text mode only"
+    ]
+  },
+  {
+    "q": "What will this code output if the file contains \"ABCDE\"?",
+    "c": "ifstream fin(\"sample.txt\");\nfin.seekg(2);\nchar ch;\nfin.get(ch);\ncout << ch;\nfin.close();",
+    "o": [
+      "C",
+      "B",
+      "D",
+      "A"
+    ]
+  },
+  {
+    "q": "Which function moves the read pointer to a specific location in a file?",
+    "o": [
+      "seekg()",
+      "seekp()",
+      "tellg()",
+      "move()"
+    ]
+  },
+  {
+    "q": "What is the output of this code if 'example.txt' contains '12345'?",
+    "c": "ifstream fin(\"example.txt\");\nfin.seekg(3);\nchar ch;\nfin.get(ch);\ncout << ch;",
+    "o": [
+      "4",
+      "1",
+      "2",
+      "3"
+    ]
+  },
+  {
+    "q": "Which stream should be used to update both input and output in an existing file?",
+    "o": [
+      "fstream",
+      "ofstream",
+      "ifstream",
+      "filebuf"
+    ]
+  },
+  {
+    "q": "Which of the following correctly writes an object to a binary file?",
+    "c": "class Product {\n    int id;\n    float price;\n};\nProduct p;\nofstream out(\"store.dat\", ios::binary);\n_____________;",
+    "o": [
+      "out.write((char*)&p, sizeof(p));",
+      "out << p;",
+      "out.put(p);",
+      "out.write(&p, sizeof(p));"
+    ]
+  },
+  {
+    "q": "What does `ios::trunc` do when opening a file?",
+    "o": [
+      "Deletes existing content of the file",
+      "Appends to the file",
+      "Reads from the file",
+      "Reads and writes in binary mode"
+    ]
+  },
+  {
+    "q": "What is the purpose of the `flush()` function in file streams?",
+    "o": [
+      "To force writing of buffered data to the file",
+      "To clear the file content",
+      "To reset file stream flags",
+      "To close and reopen the file"
+    ]
+  },
+  {
+    "q": "How do you check whether a file was successfully opened?",
+    "o": [
+      "if (!file)",
+      "if (file.fail() == false)",
+      "if (file.is_open == false)",
+      "if (file.exists())"
+    ]
+  },
+  {
+    "q": "Which of the following modes creates a new file or overwrites if it already exists?",
+    "o": [
+      "ios::out",
+      "ios::in",
+      "ios::app",
+      "ios::ate"
+    ]
+  },
+  {
+    "q": "Which method returns the current write pointer position in a file?",
+    "o": [
+      "tellp()",
+      "seekp()",
+      "tellg()",
+      "position()"
+    ]
+  },
+  {
+    "q": "What happens if you try to open a file in `ios::in` mode but the file doesn’t exist?",
+    "o": [
+      "The stream fails to open",
+      "A new file is created",
+      "The contents are erased",
+      "The program crashes immediately"
+    ]
+  },
+  {
+    "q": "Which of the following flags is used to open a file and move the write pointer to the end?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::binary",
+      "ios::ate"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "ofstream fout(\"test.txt\");\nfout << \"Hello\";\nfout.close();\nifstream fin(\"test.txt\");\nstring s;\nfin >> s;\ncout << s;",
+    "o": [
+      "Hello",
+      "H",
+      "test.txt",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following modes is used to open a file for reading in binary format?",
+    "o": [
+      "ios::in | ios::binary",
+      "ios::out | ios::binary",
+      "ios::app | ios::binary",
+      "ios::trunc | ios::binary"
+    ]
+  },
+  {
+    "q": "Which function sets the get pointer to the beginning of the file?",
+    "o": [
+      "seekg(0)",
+      "seekp(0)",
+      "tellg()",
+      "rewind()"
+    ]
+  },
+  {
+    "q": "What is the correct way to check if an input file stream has reached the end of file?",
+    "o": [
+      "fin.eof()",
+      "fin.end()",
+      "fin.is_end()",
+      "eof(fin)"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "ifstream fin(\"data.txt\");\nchar ch;\nwhile (fin.get(ch)) {\n    cout << ch;\n}",
+    "o": [
+      "Reads and prints each character until EOF",
+      "Reads the first character only",
+      "Reads only integers from the file",
+      "Throws an error at EOF"
+    ]
+  },
+  {
+    "q": "Which of the following best describes `fstream` in C++?",
+    "o": [
+      "It can be used for both input and output operations on files",
+      "It is used only for binary file operations",
+      "It is a base class and cannot be used directly",
+      "It only supports writing to text files"
+    ]
+  },
+  {
+    "q": "What is the size of the object written using `write()` function dependent on?",
+    "o": [
+      "Size of the object in memory (usually with sizeof)",
+      "Size of the file",
+      "Length of the file name",
+      "Number of stream flags used"
+    ]
+  },
+  {
+    "q": "Which of the following is true about `ios::ate`?",
+    "o": [
+      "Opens the file and sets the position to the end, but allows writing anywhere",
+      "Opens the file and truncates it",
+      "Opens the file and appends only",
+      "Reads only the last byte of the file"
+    ]
+  },
+  {
+    "q": "What will happen if you use `ifstream fin(\"file.txt\");` and the file does not exist?",
+    "o": [
+      "The stream will fail and fin will evaluate to false",
+      "It will create an empty file",
+      "It will throw an exception",
+      "It will read garbage values"
+    ]
+  },
+  {
+    "q": "Which file stream class allows both reading and writing in C++?",
+    "o": [
+      "fstream",
+      "ifstream",
+      "ofstream",
+      "ofstreamstream"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "ofstream file(\"data.txt\");\nfile << \"OpenAI\";\nfile.close();\nifstream read(\"data.txt\");\nstring word;\nread >> word;\ncout << word;",
+    "o": [
+      "OpenAI",
+      "data.txt",
+      "O",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which open mode will create a new file and preserve existing content for appending?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::ate",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "Which function is used to write raw binary data to a file?",
+    "o": [
+      "write()",
+      "put()",
+      "insert()",
+      "print()"
+    ]
+  },
+  {
+    "q": "How would you correctly read a structure from a binary file?",
+    "c": "struct Item {\n  int id;\n  float price;\n};\nItem i;\nifstream fin(\"items.dat\", ios::binary);\n______________",
+    "o": [
+      "fin.read((char*)&i, sizeof(i));",
+      "fin >> i;",
+      "fin.get(i);",
+      "fin.extract((char*)&i, sizeof(i));"
+    ]
+  },
+  {
+    "q": "Which file mode opens the file for both input and output?",
+    "o": [
+      "ios::in | ios::out",
+      "ios::in | ios::app",
+      "ios::trunc | ios::binary",
+      "ios::out | ios::binary"
+    ]
+  },
+  {
+    "q": "What does `tellg()` return when used with an `ifstream`?",
+    "o": [
+      "Current get pointer position",
+      "Current put pointer position",
+      "Total file size",
+      "Remaining bytes to read"
+    ]
+  },
+  {
+    "q": "What happens when you open a file with `ios::trunc`?",
+    "o": [
+      "Contents of the file are deleted",
+      "File opens in append mode",
+      "File opens in read mode",
+      "Only the first line is deleted"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to write a string to a file?",
+    "o": [
+      "ofstream fout(\"sample.txt\"); fout << \"Hello\";",
+      "ofstream fout(\"sample.txt\"); fout.write(\"Hello\");",
+      "ofstream fout(\"sample.txt\"); fout.puts(\"Hello\");",
+      "ofstream fout(\"sample.txt\"); fout.insert(\"Hello\");"
+    ]
+  },
+  {
+    "q": "What is the main advantage of using binary files over text files in C++?",
+    "o": [
+      "Faster reading and writing of complex data",
+      "They are more human-readable",
+      "They take more disk space",
+      "They are easier to edit manually"
+    ]
+  },
+  {
+    "q": "Which header file must be included to use file streams in C++?",
+    "o": [
+      "<fstream>",
+      "<file>",
+      "<stream>",
+      "<iostream.h>"
+    ]
+  },
+  {
+    "q": "What is the correct way to open a file for both reading and writing in binary mode?",
+    "o": [
+      "fstream file(\"data.dat\", ios::in | ios::out | ios::binary);",
+      "ifstream file(\"data.dat\", ios::binary);",
+      "ofstream file(\"data.dat\", ios::in | ios::binary);",
+      "fstream file(\"data.dat\");"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to position the put pointer in a file?",
+    "o": [
+      "seekp()",
+      "seekg()",
+      "tellg()",
+      "rewind()"
+    ]
+  },
+  {
+    "q": "What does the following code snippet do?",
+    "c": "ofstream fout(\"log.txt\", ios::app);\nfout << \"New log entry\";\nfout.close();",
+    "o": [
+      "Appends a new line to log.txt without deleting existing data",
+      "Replaces the content of log.txt",
+      "Reads data from log.txt",
+      "Creates a binary file named log.txt"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid file opening mode in C++?",
+    "o": [
+      "ios::read",
+      "ios::app",
+      "ios::trunc",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "How can you move the read pointer to the beginning of a file after reaching EOF?",
+    "o": [
+      "fin.clear(); fin.seekg(0);",
+      "fin.seekg(0);",
+      "fin.rewind();",
+      "fin.close(); fin.open();"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "struct Student {\n  char name[30];\n  int roll;\n};\nStudent s;\nifstream fin(\"data.dat\", ios::binary);\nfin.read((char*)&s, sizeof(s));",
+    "o": [
+      "Reads a Student object from a binary file",
+      "Reads a line of text from the file",
+      "Reads only integer data from file",
+      "Compiles but throws a runtime error"
+    ]
+  },
+  {
+    "q": "Which stream class is used to write data to files in C++?",
+    "o": [
+      "ofstream",
+      "ifstream",
+      "fstream",
+      "filewrite"
+    ]
+  },
+  {
+    "q": "What will the following line of code do?\n`ofstream file(\"new.txt\", ios::trunc);`",
+    "o": [
+      "Open the file and delete all existing content",
+      "Open the file and preserve existing content",
+      "Open the file in append mode",
+      "Open the file in binary mode"
+    ]
+  },
+  {
+    "q": "Why is it recommended to use binary mode while writing objects to files?",
+    "o": [
+      "To preserve the memory structure of the object",
+      "To reduce the file size",
+      "To make the file human-readable",
+      "To enable multithreading"
+    ]
+  },
+  {
+    "q": "Which of the following opens a file named 'report.txt' in write mode, creating it if it doesn't exist?",
+    "o": [
+      "ofstream fout(\"report.txt\");",
+      "ifstream fout(\"report.txt\");",
+      "fstream fout(\"report.txt\", ios::in);",
+      "ofstream fout(\"report.txt\", ios::in);"
+    ]
+  },
+  {
+    "q": "What is the purpose of `ios::ate` file mode in C++?",
+    "o": [
+      "Open a file and move the pointer to the end immediately after opening",
+      "Open a file for appending data",
+      "Open a file in binary format",
+      "Truncate the file content on open"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet if 'info.txt' contains 'Data123'?",
+    "c": "ifstream fin(\"info.txt\");\nchar ch;\nwhile (fin.get(ch)) {\n  cout << ch;\n}",
+    "o": [
+      "Data123",
+      "info.txt",
+      "fin.get(ch)",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method is used to move the get pointer to a specific position in a file?",
+    "o": [
+      "seekg()",
+      "seekp()",
+      "moveg()",
+      "jumpto()"
+    ]
+  },
+  {
+    "q": "Which of the following code snippets correctly appends text to a file without erasing its current content?",
+    "c": "__________\nfout << \"Appended data.\";\nfout.close();",
+    "o": [
+      "ofstream fout(\"append.txt\", ios::app);",
+      "ofstream fout(\"append.txt\");",
+      "ofstream fout(\"append.txt\", ios::trunc);",
+      "ofstream fout(\"append.txt\", ios::binary);"
+    ]
+  },
+  {
+    "q": "In binary file handling, why is `reinterpret_cast<char*>` often used when writing objects?",
+    "o": [
+      "To convert the object pointer to a character pointer for writing bytes",
+      "To encrypt object data before writing",
+      "To add file headers to binary files",
+      "To cast integers to float for storage"
+    ]
+  },
+  {
+    "q": "Which of the following will open a file for reading as well as writing, without truncating its contents?",
+    "o": [
+      "fstream file(\"data.txt\", ios::in | ios::out);",
+      "ofstream file(\"data.txt\");",
+      "ifstream file(\"data.txt\");",
+      "ofstream file(\"data.txt\", ios::trunc);"
+    ]
+  },
+  {
+    "q": "What does the `eof()` function return in C++ file streams?",
+    "o": [
+      "True if end-of-file has been reached",
+      "True if file exists",
+      "False if file is binary",
+      "Number of bytes in file"
+    ]
+  },
+  {
+    "q": "Which statement correctly writes a float variable `score` to a binary file?",
+    "o": [
+      "fout.write(reinterpret_cast<char*>(&score), sizeof(score));",
+      "fout << score;",
+      "fout.insert(score);",
+      "fout.put(score);"
+    ]
+  },
+  {
+    "q": "Which of the following code snippets correctly reads multiple objects from a binary file?",
+    "c": "struct Record {\n  int id;\n  char name[20];\n};\nRecord r;\nifstream fin(\"records.dat\", ios::binary);\nwhile (___________) {\n  // process r\n}",
+    "o": [
+      "fin.read(reinterpret_cast<char*>(&r), sizeof(r))",
+      "fin >> r",
+      "fin.get(r)",
+      "fin.extract(reinterpret_cast<char*>(&r), sizeof(r))"
+    ]
+  },
+  {
+    "q": "Which file mode should be used with ofstream to overwrite the content of an existing file?",
+    "o": [
+      "ios::trunc",
+      "ios::app",
+      "ios::binary",
+      "ios::ate"
+    ]
+  },
+  {
+    "q": "What will the following code do?\n\nofstream file(\"data.txt\", ios::app);",
+    "o": [
+      "Open 'data.txt' for writing at the end without deleting existing content",
+      "Open 'data.txt' and truncate all existing content",
+      "Open 'data.txt' in binary mode",
+      "Open 'data.txt' in read mode only"
+    ]
+  },
+  {
+    "q": "Which of the following opens a file in both read and write mode using fstream?",
+    "o": [
+      "fstream file(\"sample.txt\", ios::in | ios::out);",
+      "ofstream file(\"sample.txt\", ios::in);",
+      "ifstream file(\"sample.txt\", ios::out);",
+      "fstream file(\"sample.txt\");"
+    ]
+  },
+  {
+    "q": "Which is the correct way to write an object `book` to a binary file?",
+    "o": [
+      "fout.write(reinterpret_cast<char*>(&book), sizeof(book));",
+      "fout.write(&book, sizeof(book));",
+      "fout << book;",
+      "fout.insert(book);"
+    ]
+  },
+  {
+    "q": "In binary file handling, what is the significance of `ios::binary`?",
+    "o": [
+      "Opens the file in binary mode to avoid newline character conversions",
+      "Encrypts the file while writing",
+      "Converts all text to binary format",
+      "Optimizes reading speed"
+    ]
+  },
+  {
+    "q": "What is the use of `tellg()` in file handling?",
+    "o": [
+      "Returns the current position of the get pointer",
+      "Moves the put pointer to the beginning",
+      "Resets all file error flags",
+      "Closes the file immediately"
+    ]
+  },
+  {
+    "q": "How can you read an entire line from a text file into a string in C++?",
+    "o": [
+      "getline(file, str);",
+      "file.get(str);",
+      "readline(file, str);",
+      "input(file, str);"
+    ]
+  },
+  {
+    "q": "Which method moves the file pointer to the beginning of a file for writing?",
+    "o": [
+      "seekp(0, ios::beg);",
+      "seekg(0, ios::beg);",
+      "move(0);",
+      "beginp();"
+    ]
+  },
+  {
+    "q": "Which mode combination allows writing binary data to a new file?",
+    "o": [
+      "ios::binary | ios::out",
+      "ios::in | ios::binary",
+      "ios::app | ios::in",
+      "ios::trunc | ios::in"
+    ]
+  },
+  {
+    "q": "What is required for reading an object from a binary file into a structure?",
+    "o": [
+      "read(reinterpret_cast<char*>(&object), sizeof(object))",
+      ">> operator with structure",
+      "get(object)",
+      "No casting needed when reading"
+    ]
+  },
+  {
+    "q": "What does the following code do?\n\nifstream fin(\"notes.txt\");\nif (!fin) {\n    cout << \"File not found\";\n}",
+    "o": [
+      "Checks if 'notes.txt' exists and is accessible for reading",
+      "Creates a new file named 'notes.txt'",
+      "Writes data to 'notes.txt'",
+      "Reads a line and prints it"
+    ]
+  },
+  {
+    "q": "Which open mode is used to add content to the end of a file without deleting existing data?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::in",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "Which statement is used to read binary data into a structure in C++?",
+    "o": [
+      "fin.read(reinterpret_cast<char*>(&obj), sizeof(obj));",
+      "fin >> obj;",
+      "getline(fin, obj);",
+      "read(obj);"
+    ]
+  },
+  {
+    "q": "Which of the following is true about fstream?",
+    "o": [
+      "fstream can be used for both input and output",
+      "fstream is used for formatted input only",
+      "fstream is used for binary files only",
+      "fstream cannot be used with open modes"
+    ]
+  },
+  {
+    "q": "What will this code output?\n\nofstream fout(\"sample.txt\");\nfout << \"Hello\";\nfout.close();",
+    "o": [
+      "Creates 'sample.txt' and writes 'Hello' to it",
+      "Reads from 'sample.txt'",
+      "Appends 'Hello' to the end of 'sample.txt'",
+      "Deletes content of 'sample.txt'"
+    ]
+  },
+  {
+    "q": "Which of the following flags ensures that an existing file is not truncated while writing?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::ate",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "What does the following line do?\n\nfile.seekg(0, ios::end);",
+    "o": [
+      "Moves the get pointer to the end of the file",
+      "Moves the put pointer to the beginning",
+      "Reads the first character from file",
+      "Writes to the end of the file"
+    ]
+  },
+  {
+    "q": "Which of the following correctly checks if a file stream is open?",
+    "o": [
+      "if (file.is_open())",
+      "if (file.open())",
+      "if (file.check())",
+      "if (file.exists())"
+    ]
+  },
+  {
+    "q": "What does ios::binary flag do when opening a file?",
+    "o": [
+      "Opens the file in binary mode (no text translation)",
+      "Encrypts the file",
+      "Opens file with root permissions",
+      "Forces file to be read-only"
+    ]
+  },
+  {
+    "q": "To read a class object from a binary file, which condition must be met?",
+    "o": [
+      "The class must not contain virtual functions or dynamic members",
+      "The class must inherit from ios",
+      "The class must be declared as public",
+      "The class must override read() method"
+    ]
+  },
+  {
+    "q": "Which of the following will open a file for both input and output in binary mode?",
+    "o": [
+      "fstream file(\"data.bin\", ios::in | ios::out | ios::binary);",
+      "ifstream file(\"data.bin\", ios::out);",
+      "ofstream file(\"data.bin\", ios::in);",
+      "fstream file(\"data.bin\", ios::binary);"
+    ]
+  },
+  {
+    "q": "What does `ios::ate` do when opening a file?",
+    "o": [
+      "Opens the file and moves the pointer to the end immediately",
+      "Appends data to the file",
+      "Truncates the file",
+      "Only allows reading from the beginning"
+    ]
+  },
+  {
+    "q": "Consider the following structure:\n\nstruct Student {\n  char name[50];\n  int roll;\n};\n\nWhich statement writes an object of this struct to a binary file?",
+    "o": [
+      "file.write(reinterpret_cast<char*>(&s), sizeof(s));",
+      "file << s;",
+      "file.insert(s);",
+      "write(file, s);"
+    ]
+  },
+  {
+    "q": "Which class is used in C++ for reading from text files?",
+    "o": [
+      "ifstream",
+      "ofstream",
+      "fstream",
+      "bufferstream"
+    ]
+  },
+  {
+    "q": "Which of the following will read a single character from a file using ifstream?",
+    "o": [
+      "file.get(ch);",
+      "file.read(ch);",
+      "file >> ch;",
+      "get(file, ch);"
+    ]
+  },
+  {
+    "q": "To write structured binary data, what is the advantage of using `ios::binary`?",
+    "o": [
+      "It prevents text encoding transformations during file I/O",
+      "It compresses data automatically",
+      "It ensures encryption of content",
+      "It forces uppercase letters"
+    ]
+  },
+  {
+    "q": "What does the following do?\n\nifstream file(\"input.txt\");\nfile.seekg(0, ios::end);\nint length = file.tellg();",
+    "o": [
+      "Finds the size of the file in bytes",
+      "Clears file content",
+      "Sets pointer to the start of file",
+      "Prints the file content"
+    ]
+  },
+  {
+    "q": "What happens when a file is opened with both ios::out and ios::trunc flags?",
+    "o": [
+      "The file is opened for writing and its content is cleared",
+      "The file is opened for writing and appends new content",
+      "The file is opened for reading only",
+      "The file is protected from overwriting"
+    ]
+  },
+  {
+    "q": "Which method should be used to move the write pointer back to the beginning of a file?",
+    "o": [
+      "file.seekp(0, ios::beg);",
+      "file.seekg(0, ios::beg);",
+      "file.rewind();",
+      "file.start();"
+    ]
+  },
+  {
+    "q": "In object-oriented file handling, which file mode is necessary when writing objects in binary?",
+    "o": [
+      "ios::binary | ios::out",
+      "ios::in | ios::binary",
+      "ios::app | ios::binary",
+      "ios::trunc | ios::binary"
+    ]
+  },
+  {
+    "q": "Which mode combination allows reading and writing to a binary file without truncating its contents?",
+    "o": [
+      "ios::in | ios::out | ios::binary",
+      "ios::out | ios::trunc | ios::binary",
+      "ios::app | ios::binary",
+      "ios::in | ios::trunc | ios::binary"
+    ]
+  },
+  {
+    "q": "What does `file.close();` do after reading or writing a file?",
+    "o": [
+      "It safely disconnects the stream from the file",
+      "It erases the file content",
+      "It reopens the file in binary mode",
+      "It flushes the buffer without closing the file"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?\n\nofstream fout(\"test.txt\");\nfout << 123 << 'A';\nfout.close();",
+    "o": [
+      "Writes 123 and 'A' to the file in plain text",
+      "Writes binary equivalent of 123 and A",
+      "Appends 123A at the start of the file",
+      "Throws a compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following can be used to detect end-of-file while reading using ifstream?",
+    "o": [
+      "file.eof()",
+      "file.end()",
+      "file.finished()",
+      "file.terminate()"
+    ]
+  },
+  {
+    "q": "What is required to write an object of a class to a binary file?",
+    "o": [
+      "Use of write() function with reinterpret_cast on object pointer",
+      "Using cout with object",
+      "Calling fwrite() directly on object",
+      "Using fstream with << operator"
+    ]
+  },
+  {
+    "q": "What happens when a file is opened using ios::trunc?",
+    "o": [
+      "Existing content is erased immediately",
+      "The file opens in read-only mode",
+      "Data is appended to the end",
+      "File is created only if it doesn't exist"
+    ]
+  },
+  {
+    "q": "Which stream object should you use to read and write data to the same file?",
+    "o": [
+      "fstream",
+      "ifstream",
+      "ofstream",
+      "ofstream and ifstream separately"
+    ]
+  },
+  {
+    "q": "To read binary data into a structure, what is the correct way to cast the address?",
+    "o": [
+      "reinterpret_cast<char*>(&obj)",
+      "(int)obj",
+      "static_cast<char*>(obj)",
+      "char_cast(obj)"
+    ]
+  },
+  {
+    "q": "How would you open a file to write at any location in the file without erasing it?",
+    "o": [
+      "ios::in | ios::out | ios::ate",
+      "ios::trunc",
+      "ios::binary | ios::out",
+      "ios::app"
+    ]
+  },
+  {
+    "q": "Which of the following is best suited for reading large blocks of binary data efficiently?",
+    "o": [
+      "read(char* buffer, streamsize n)",
+      "getline(buffer, size)",
+      ">> operator with string",
+      "get(char)"
+    ]
+  },
+  {
+    "q": "Which header file must be included for using ifstream, ofstream, and fstream?",
+    "o": [
+      "<fstream>",
+      "<iostream>",
+      "<file>",
+      "<stream>"
+    ]
+  },
+  {
+    "q": "What is the purpose of the ios::app file mode?",
+    "o": [
+      "To append data at the end of the file without erasing its contents",
+      "To open the file in binary format",
+      "To read data from the file",
+      "To truncate the file upon opening"
+    ]
+  },
+  {
+    "q": "What will the following code do?\n\nofstream file(\"sample.txt\", ios::out | ios::trunc);\nfile << \"Hello!\";",
+    "o": [
+      "Opens the file, clears previous content, and writes 'Hello!'",
+      "Appends 'Hello!' to the file without removing content",
+      "Reads 'Hello!' from the file",
+      "Throws a runtime error"
+    ]
+  },
+  {
+    "q": "Which of the following stream classes can handle both input and output operations?",
+    "o": [
+      "fstream",
+      "ifstream",
+      "ofstream",
+      "filehandle"
+    ]
+  },
+  {
+    "q": "How to properly read a structure object from a binary file?",
+    "o": [
+      "file.read(reinterpret_cast<char*>(&obj), sizeof(obj));",
+      "file >> obj;",
+      "file.get(obj);",
+      "file.scan(obj);"
+    ]
+  },
+  {
+    "q": "Which mode flag should be used with ofstream to avoid erasing the file's previous content?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::ate",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "What does the following code do?\n\nifstream fin(\"data.txt\");\nif (!fin) { cout << \"Error!\"; }",
+    "o": [
+      "Checks if file opening failed and prints an error message",
+      "Closes the file",
+      "Prints the content of file",
+      "Writes into the file"
+    ]
+  },
+  {
+    "q": "In binary file handling, what is the correct way to write an array of objects?",
+    "o": [
+      "file.write(reinterpret_cast<char*>(arr), sizeof(arr));",
+      "file.write(arr);",
+      "file << arr;",
+      "file.print(arr);"
+    ]
+  },
+  {
+    "q": "What is the correct sequence to position the get pointer to the beginning of a file?",
+    "o": [
+      "file.seekg(0, ios::beg);",
+      "file.seekp(0, ios::beg);",
+      "file.goto(0);",
+      "file.start();"
+    ]
+  },
+  {
+    "q": "Which stream object is best used for creating and writing to a file?",
+    "o": [
+      "ofstream",
+      "ifstream",
+      "fstream",
+      "filewriter"
+    ]
+  },
+  {
+    "q": "Which mode flag is used to open a file in binary write mode using ofstream?",
+    "o": [
+      "ios::binary | ios::out",
+      "ios::in | ios::binary",
+      "ios::app | ios::binary",
+      "ios::binary | ios::trunc"
+    ]
+  },
+  {
+    "q": "What will be the result of this code?\n\nifstream file(\"data.bin\", ios::binary);\nfile.read((char*)&num, sizeof(num));",
+    "o": [
+      "Reads binary data from file into the variable 'num'",
+      "Writes data to the binary file",
+      "Appends data at the end of file",
+      "Creates a new binary file and writes 0"
+    ]
+  },
+  {
+    "q": "Which of the following is used to move the write pointer to the end of the file?",
+    "o": [
+      "file.seekp(0, ios::end);",
+      "file.seekg(0, ios::end);",
+      "file.seekwrite(ios::end);",
+      "file.setpos(ios::end);"
+    ]
+  },
+  {
+    "q": "When reading a file using ifstream, what does the fail() function check?",
+    "o": [
+      "Whether the last input operation failed",
+      "Whether the file pointer is at the beginning",
+      "If the file exists",
+      "If the file is writable"
+    ]
+  },
+  {
+    "q": "Which of the following is correct for writing a structure in binary mode?",
+    "o": [
+      "file.write(reinterpret_cast<char*>(&student), sizeof(student));",
+      "file << student;",
+      "file.put(student);",
+      "file.insert(student);"
+    ]
+  },
+  {
+    "q": "What does ios::ate do when opening a file?",
+    "o": [
+      "Opens the file and moves the write pointer to the end",
+      "Truncates the file contents",
+      "Creates the file if it doesn’t exist",
+      "Appends new data after every line"
+    ]
+  },
+  {
+    "q": "Choose the correct way to read characters until the end of a file using ifstream:",
+    "o": [
+      "while (!file.eof()) { file.get(ch); }",
+      "while (file.eof()) { file.get(ch); }",
+      "for (int i = 0; i < file.size(); i++) { file >> ch; }",
+      "file.read_all();"
+    ]
+  },
+  {
+    "q": "Which stream class would be best for modifying content in an existing file?",
+    "o": [
+      "fstream",
+      "ofstream",
+      "ifstream",
+      "iostream"
+    ]
+  },
+  {
+    "q": "What does this code do?\n\nfstream f;\nf.open(\"log.txt\", ios::out | ios::app);",
+    "o": [
+      "Opens file for writing in append mode",
+      "Opens file in read-only mode",
+      "Deletes contents and writes anew",
+      "Reads file and appends new data"
+    ]
+  },
+  {
+    "q": "Which file mode combination is correct for reading and writing in a binary file?",
+    "o": [
+      "ios::in | ios::out | ios::binary",
+      "ios::binary | ios::trunc",
+      "ios::out | ios::binary | ios::app",
+      "ios::in | ios::binary | ios::trunc"
+    ]
+  },
+  {
+    "q": "What does the following code do?\n\nofstream outFile(\"example.txt\");\noutFile << \"Data\";\noutFile.close();",
+    "o": [
+      "Creates a file named example.txt and writes 'Data' into it",
+      "Reads from the file named example.txt",
+      "Appends 'Data' to example.txt without erasing its contents",
+      "Deletes the content of the file example.txt"
+    ]
+  },
+  {
+    "q": "Which file open mode is used to open a file for both input and output operations?",
+    "o": [
+      "ios::in | ios::out",
+      "ios::trunc",
+      "ios::binary | ios::out",
+      "ios::app | ios::in"
+    ]
+  },
+  {
+    "q": "What will happen if you open a file using ifstream but the file does not exist?",
+    "o": [
+      "The stream will fail to open",
+      "A new file will be created",
+      "An exception will always be thrown",
+      "The program terminates immediately"
+    ]
+  },
+  {
+    "q": "Which of the following statements correctly writes a structure to a binary file?",
+    "o": [
+      "outFile.write(reinterpret_cast<char*>(&emp), sizeof(emp));",
+      "outFile >> emp;",
+      "outFile.get(emp);",
+      "outFile.insert(emp);"
+    ]
+  },
+  {
+    "q": "What is the default file open mode for ofstream?",
+    "o": [
+      "ios::out",
+      "ios::in",
+      "ios::app",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "Which of the following correctly opens a file in binary read mode using ifstream?",
+    "o": [
+      "ifstream file(\"data.bin\", ios::binary);",
+      "ifstream file(\"data.bin\", ios::app);",
+      "ifstream file(\"data.bin\", ios::out);",
+      "ifstream file(\"data.bin\", ios::trunc);"
+    ]
+  },
+  {
+    "q": "Choose the correct way to open a file for appending using ofstream:",
+    "o": [
+      "ofstream file(\"log.txt\", ios::app);",
+      "ofstream file(\"log.txt\", ios::in);",
+      "ofstream file(\"log.txt\", ios::trunc);",
+      "ofstream file(\"log.txt\", ios::binary | ios::in);"
+    ]
+  },
+  {
+    "q": "Which function moves the file read pointer to a specific location?",
+    "o": [
+      "seekg()",
+      "seekp()",
+      "goto()",
+      "jump()"
+    ]
+  },
+  {
+    "q": "In C++ file handling, what is the role of the tellg() function?",
+    "o": [
+      "It returns the current position of the get pointer",
+      "It returns the length of the file",
+      "It tells if the file is open",
+      "It sets the file pointer to the beginning"
+    ]
+  },
+  {
+    "q": "What happens if you open a file with ios::trunc mode?",
+    "o": [
+      "The existing content of the file is deleted",
+      "The content is appended",
+      "The file opens in read-only mode",
+      "The file is executed"
+    ]
+  },
+  {
+    "q": "What does the following code do?\n\nfstream file(\"data.txt\", ios::out | ios::in);",
+    "o": [
+      "Opens 'data.txt' for both reading and writing",
+      "Only reads from the file 'data.txt'",
+      "Only writes to the file 'data.txt'",
+      "Appends data to 'data.txt'"
+    ]
+  },
+  {
+    "q": "Which of the following is true about ios::binary mode?",
+    "o": [
+      "It opens the file in binary mode",
+      "It appends binary data by default",
+      "It converts binary to text",
+      "It encrypts the file"
+    ]
+  },
+  {
+    "q": "How do you check if a file has successfully opened using ifstream?",
+    "o": [
+      "file.is_open()",
+      "file.exists()",
+      "file.ready()",
+      "file.check()"
+    ]
+  },
+  {
+    "q": "Which of the following correctly reads a structure from a binary file?",
+    "o": [
+      "inFile.read(reinterpret_cast<char*>(&obj), sizeof(obj));",
+      "inFile >> obj;",
+      "inFile.get(obj);",
+      "inFile.fetch(obj);"
+    ]
+  },
+  {
+    "q": "What is the purpose of ios::app?",
+    "o": [
+      "To append data at the end of file",
+      "To overwrite the existing content",
+      "To open file in read mode",
+      "To create a temporary file"
+    ]
+  },
+  {
+    "q": "What does the following code output?\n\nofstream fout(\"sample.txt\");\nfout << \"Hi!\";\nfout.close();",
+    "o": [
+      "Writes 'Hi!' to sample.txt",
+      "Appends 'Hi!' to sample.txt",
+      "Reads 'Hi!' from sample.txt",
+      "Deletes the contents of sample.txt"
+    ]
+  },
+  {
+    "q": "What happens if you open a file using ofstream and the file already exists?",
+    "o": [
+      "The contents are truncated",
+      "It raises a file already exists error",
+      "It appends data by default",
+      "It renames the existing file"
+    ]
+  },
+  {
+    "q": "Which file mode is needed to both write and append binary data?",
+    "o": [
+      "ios::app | ios::binary",
+      "ios::trunc | ios::binary",
+      "ios::in | ios::out",
+      "ios::binary | ios::trunc"
+    ]
+  },
+  {
+    "q": "Which function is used to write raw memory to a binary file?",
+    "o": [
+      "write()",
+      "put()",
+      "send()",
+      "stream()"
+    ]
+  },
+  {
+    "q": "Which header file is essential for file handling in C++?",
+    "o": [
+      "<fstream>",
+      "<fileio>",
+      "<file>",
+      "<iostream>"
+    ]
+  },
+  {
+    "q": "What does the following line do?\n\nofstream fout(\"data.txt\", ios::app);",
+    "o": [
+      "Opens 'data.txt' for appending data at the end",
+      "Overwrites the content of 'data.txt'",
+      "Reads from the file 'data.txt'",
+      "Deletes 'data.txt'"
+    ]
+  },
+  {
+    "q": "Which class is used for both reading and writing files in C++?",
+    "o": [
+      "fstream",
+      "ifstream",
+      "ofstream",
+      "file"
+    ]
+  },
+  {
+    "q": "What is the result of opening a file using ios::out | ios::trunc?",
+    "o": [
+      "The file is cleared if it exists, and opened for writing",
+      "The file is opened in read-only mode",
+      "The file is opened for appending",
+      "The file remains unchanged"
+    ]
+  },
+  {
+    "q": "Which function moves the put pointer to a specific position in a file?",
+    "o": [
+      "seekp()",
+      "seekg()",
+      "move()",
+      "jump()"
+    ]
+  },
+  {
+    "q": "How can you ensure a file opens in binary mode with both read and write access?",
+    "o": [
+      "fstream file(\"data.bin\", ios::in | ios::out | ios::binary);",
+      "ofstream file(\"data.bin\", ios::in | ios::binary);",
+      "ifstream file(\"data.bin\", ios::out | ios::binary);",
+      "fstream file(\"data.bin\", ios::trunc);"
+    ]
+  },
+  {
+    "q": "Which of the following modes is used to start writing at the end of a file without deleting content?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::binary",
+      "ios::ate"
+    ]
+  },
+  {
+    "q": "What will this snippet do?\n\nifstream fin(\"example.txt\");\nstring word;\nfin >> word;\ncout << word;",
+    "o": [
+      "Reads and prints the first word from example.txt",
+      "Prints the entire content of example.txt",
+      "Writes a word to example.txt",
+      "Prints the number of words in example.txt"
+    ]
+  },
+  {
+    "q": "Which mode should be combined with ios::binary for reading a binary file?",
+    "o": [
+      "ios::in",
+      "ios::out",
+      "ios::app",
+      "ios::trunc"
+    ]
+  },
+  {
+    "q": "Which of the following is true about binary file handling?",
+    "o": [
+      "Binary files store data in raw format for better performance",
+      "Binary files are always human-readable",
+      "You can use << and >> operators to write to binary files",
+      "They are only used for image files"
+    ]
+  },
+  {
+    "q": "What is the purpose of file.close() in C++?",
+    "o": [
+      "It safely closes the file and releases resources",
+      "It rewinds the file",
+      "It deletes the file",
+      "It encrypts the file"
+    ]
+  },
+  {
+    "q": "Which stream object is used for reading from files in C++?",
+    "o": [
+      "ifstream",
+      "ofstream",
+      "fstream",
+      "readfile"
+    ]
+  },
+  {
+    "q": "What does the following code do?\n\nofstream fout(\"report.txt\", ios::out | ios::trunc);",
+    "o": [
+      "Creates or overwrites 'report.txt' for writing",
+      "Appends data to 'report.txt'",
+      "Reads from 'report.txt'",
+      "Creates a binary file"
+    ]
+  },
+  {
+    "q": "Which mode allows you to write data at the end of an existing file?",
+    "o": [
+      "ios::app",
+      "ios::binary",
+      "ios::trunc",
+      "ios::ate"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?\n\nofstream fout(\"sample.txt\");\nfout << \"Data\";\nfout.close();",
+    "o": [
+      "Writes 'Data' to sample.txt",
+      "Reads 'Data' from sample.txt",
+      "Deletes sample.txt",
+      "Prints 'Data' on console"
+    ]
+  },
+  {
+    "q": "Which of the following is used to write a structure to a binary file?",
+    "o": [
+      "file.write(reinterpret_cast<char*>(&s), sizeof(s));",
+      "file << s;",
+      "file.put(s);",
+      "file.insert(s);"
+    ]
+  },
+  {
+    "q": "What is the effect of using ios::ate while opening a file?",
+    "o": [
+      "Moves the pointer to the end immediately after opening",
+      "Truncates the file",
+      "Opens file in binary mode",
+      "Closes the file after writing"
+    ]
+  },
+  {
+    "q": "How to open a file for both input and output in binary mode?",
+    "o": [
+      "fstream f(\"data.bin\", ios::in | ios::out | ios::binary);",
+      "ifstream f(\"data.bin\", ios::in | ios::binary);",
+      "ofstream f(\"data.bin\", ios::out | ios::binary);",
+      "fstream f(\"data.bin\", ios::app);"
+    ]
+  },
+  {
+    "q": "What is the correct way to check if a file was successfully opened?",
+    "o": [
+      "if (file.is_open())",
+      "if (file.exists())",
+      "if (file.check())",
+      "if (file.status())"
+    ]
+  },
+  {
+    "q": "What does ios::trunc do when opening a file with ofstream?",
+    "o": [
+      "Deletes existing content before writing",
+      "Reads the file",
+      "Appends content at the end",
+      "Encrypts the file"
+    ]
+  },
+  {
+    "q": "Which C++ stream is typically used to read a binary file?",
+    "o": [
+      "ifstream with ios::binary mode",
+      "ofstream with ios::in mode",
+      "fstream with ios::app",
+      "ifstream with ios::app"
+    ]
+  },
+  {
+    "q": "Which header file is necessary for file input and output in C++?",
+    "o": [
+      "<fstream>",
+      "<file>",
+      "<stream>",
+      "<iostream>"
+    ]
+  },
+  {
+    "q": "What does the following code do?\n\nifstream fin(\"data.txt\");\nstring word;\nfin >> word;\ncout << word;",
+    "o": [
+      "Reads the first word from 'data.txt' and prints it",
+      "Writes 'word' to 'data.txt'",
+      "Appends data to 'data.txt'",
+      "Reads an entire line from 'data.txt'"
+    ]
+  },
+  {
+    "q": "Which mode flag is used to prevent overwriting an existing file?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::in",
+      "ios::out"
+    ]
+  },
+  {
+    "q": "What does the following do?\n\nfstream file(\"log.txt\", ios::out | ios::in);",
+    "o": [
+      "Opens 'log.txt' for both reading and writing",
+      "Appends to 'log.txt'",
+      "Reads from 'log.txt' only",
+      "Creates a binary file"
+    ]
+  },
+  {
+    "q": "How to write binary data of a class object to a file?",
+    "o": [
+      "file.write(reinterpret_cast<char*>(&obj), sizeof(obj));",
+      "file << obj;",
+      "file.input(obj);",
+      "file.scan(obj);"
+    ]
+  },
+  {
+    "q": "Which function checks if the end of file is reached in a stream?",
+    "o": [
+      "eof()",
+      "end()",
+      "finish()",
+      "exit()"
+    ]
+  },
+  {
+    "q": "What does ios::binary do when used while opening a file?",
+    "o": [
+      "Opens the file in binary mode",
+      "Encrypts the file contents",
+      "Creates a new file only",
+      "Deletes all content before writing"
+    ]
+  },
+  {
+    "q": "Which of the following will open a file for appending in binary mode?",
+    "o": [
+      "ofstream file(\"log.dat\", ios::app | ios::binary);",
+      "ifstream file(\"log.dat\", ios::in | ios::binary);",
+      "fstream file(\"log.dat\", ios::trunc);",
+      "ofstream file(\"log.dat\", ios::out);"
+    ]
+  },
+  {
+    "q": "What is the effect of opening a file with ios::trunc?",
+    "o": [
+      "Erases the content of the file if it exists",
+      "Appends data to the file",
+      "Prevents any modification to the file",
+      "Creates the file in read-only mode"
+    ]
+  },
+  {
+    "q": "Which code snippet reads the entire content of a file character by character?",
+    "o": [
+      "char ch;\nwhile (fin.get(ch)) {\n  cout << ch;\n}",
+      "string line;\nwhile (getline(fin, line)) {\n  cout << line;\n}",
+      "fin >> ch;\ncout << ch;",
+      "fin.read(ch, 1);"
+    ]
+  },
+  {
+    "q": "What does this code do?\n\nofstream fout(\"output.txt\");\nfout << \"Welcome\";",
+    "o": [
+      "Creates a file named 'output.txt' and writes 'Welcome' into it",
+      "Reads 'Welcome' from a file",
+      "Appends 'Welcome' to standard output",
+      "Throws an error because 'fout' is uninitialized"
+    ]
+  },
+  {
+    "q": "Which file open mode allows writing at the end of the file without deleting existing content?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::ate",
+      "ios::in"
+    ]
+  },
+  {
+    "q": "What will the following code output?\n\nifstream fin(\"data.txt\");\nif (fin.is_open()) cout << \"Opened\"; else cout << \"Failed\";",
+    "o": [
+      "Opened",
+      "Failed",
+      "Compilation error",
+      "Runtime error"
+    ]
+  },
+  {
+    "q": "Which is the correct way to write a class object to a binary file?",
+    "o": [
+      "file.write(reinterpret_cast<char*>(&obj), sizeof(obj));",
+      "file.write(&obj, sizeof(obj));",
+      "file << obj;",
+      "file.output(obj);"
+    ]
+  },
+  {
+    "q": "Which of the following modes is used to both read and write in a file?",
+    "o": [
+      "ios::in | ios::out",
+      "ios::app",
+      "ios::binary",
+      "ios::trunc"
+    ]
+  },
+  {
+    "q": "What does 'seekg' do in C++ file handling?",
+    "o": [
+      "Moves the file read pointer",
+      "Closes the file",
+      "Writes data to a file",
+      "Flushes the buffer"
+    ]
+  },
+  {
+    "q": "Which code reads an object from a binary file?",
+    "o": [
+      "fin.read(reinterpret_cast<char*>(&obj), sizeof(obj));",
+      "fin >> obj;",
+      "fin.input(obj);",
+      "fin.get(obj);"
+    ]
+  },
+  {
+    "q": "Which is true about fstream?",
+    "o": [
+      "It can handle both reading and writing",
+      "It is only used for reading files",
+      "It is used only for binary files",
+      "It is obsolete in modern C++"
+    ]
+  },
+  {
+    "q": "What happens if you open a file with ios::trunc and the file exists?",
+    "o": [
+      "File content is deleted",
+      "New content is appended",
+      "File is opened in read-only mode",
+      "File cannot be opened"
+    ]
+  },
+  {
+    "q": "How to position the write pointer to the beginning of the file?",
+    "o": [
+      "file.seekp(0, ios::beg);",
+      "file.seekg(0, ios::end);",
+      "file.reset();",
+      "file.move(0);"
+    ]
+  },
+  {
+    "q": "Which C++ header file is required for file handling operations?",
+    "o": [
+      "<fstream>",
+      "<file>",
+      "<iostream>",
+      "<fileio>"
+    ]
+  },
+  {
+    "q": "What does the following code do?\n\nfstream file(\"example.txt\", ios::out | ios::in);",
+    "o": [
+      "Opens the file for both reading and writing",
+      "Opens the file for writing only",
+      "Appends data to file",
+      "Creates a binary file"
+    ]
+  },
+  {
+    "q": "Which of the following correctly opens a binary file for reading?",
+    "o": [
+      "ifstream fin(\"data.dat\", ios::binary);",
+      "ofstream fout(\"data.dat\", ios::binary);",
+      "fstream file(\"data.dat\", ios::out);",
+      "ifstream fin(\"data.dat\", ios::app);"
+    ]
+  },
+  {
+    "q": "Which stream class is typically used for writing to a text file?",
+    "o": [
+      "ofstream",
+      "ifstream",
+      "fstream",
+      "stdstream"
+    ]
+  },
+  {
+    "q": "What is the output of this code?\n\nofstream fout(\"demo.txt\");\nfout << 5 + 10;",
+    "o": [
+      "Writes 15 to demo.txt",
+      "Writes 5+10 to demo.txt",
+      "Writes 'fout' to demo.txt",
+      "Gives a syntax error"
+    ]
+  },
+  {
+    "q": "Which open mode will add data to the end of an existing file without deleting its contents?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::out",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "How can you move the get pointer to the end of a file?",
+    "o": [
+      "file.seekg(0, ios::end);",
+      "file.seekp(0, ios::end);",
+      "file.setg(ios::end);",
+      "file.end();"
+    ]
+  },
+  {
+    "q": "What does this code do?\n\nfile.write((char*)&obj, sizeof(obj));",
+    "o": [
+      "Writes the binary content of obj to file",
+      "Reads obj from a binary file",
+      "Creates a text file",
+      "Clears the contents of obj"
+    ]
+  },
+  {
+    "q": "Which combination of open modes is valid for binary file read and write?",
+    "o": [
+      "ios::in | ios::out | ios::binary",
+      "ios::trunc | ios::in",
+      "ios::app | ios::binary",
+      "ios::out | ios::text"
+    ]
+  },
+  {
+    "q": "Which of the following correctly reads an integer from a file?",
+    "o": [
+      "fin >> number;",
+      "fin.read(&number);",
+      "fin.getline(number);",
+      "fin.output(number);"
+    ]
+  },
+  {
+    "q": "Which C++ class is used to handle both input and output operations on files?",
+    "o": [
+      "fstream",
+      "ifstream",
+      "ofstream",
+      "fileio"
+    ]
+  },
+  {
+    "q": "What does this code snippet achieve?\n\nofstream fout(\"log.txt\", ios::app);\nfout << \"Log entry\";",
+    "o": [
+      "Appends 'Log entry' to the end of log.txt",
+      "Replaces the content of log.txt with 'Log entry'",
+      "Creates a binary file",
+      "Throws an error if log.txt doesn't exist"
+    ]
+  },
+  {
+    "q": "What will happen if you open a file using ios::trunc mode?",
+    "o": [
+      "It will erase the file's existing content",
+      "It appends data to the file",
+      "It opens the file in read-only mode",
+      "It prevents overwriting of the file"
+    ]
+  },
+  {
+    "q": "Which function is used to check if a file has been successfully opened?",
+    "o": [
+      "is_open()",
+      "open_check()",
+      "check_status()",
+      "file_valid()"
+    ]
+  },
+  {
+    "q": "What does the following code do?\n\nifstream fin(\"input.txt\");\nstring line;\ngetline(fin, line);",
+    "o": [
+      "Reads a line of text from input.txt into 'line'",
+      "Writes a line to input.txt",
+      "Appends text to input.txt",
+      "Deletes the content of input.txt"
+    ]
+  },
+  {
+    "q": "How do you move the write pointer to the beginning of a file in C++?",
+    "o": [
+      "file.seekp(0, ios::beg);",
+      "file.seekg(0, ios::beg);",
+      "file.setp(0);",
+      "file.goto_start();"
+    ]
+  },
+  {
+    "q": "Which mode is used with ofstream to create a binary file?",
+    "o": [
+      "ios::binary",
+      "ios::trunc",
+      "ios::in",
+      "ios::ate"
+    ]
+  },
+  {
+    "q": "Which of the following is true about binary file reading in C++?",
+    "o": [
+      "read() is used to extract raw bytes from the file",
+      ">> operator is used for binary file reading",
+      "get() is required for binary input",
+      "Binary files must use ios::app"
+    ]
+  },
+  {
+    "q": "What does ios::ate mode do?",
+    "o": [
+      "Moves the file pointer to the end of file on opening, but allows reading/writing anywhere",
+      "Appends data to the end of the file only",
+      "Opens file in binary mode",
+      "Clears content before writing"
+    ]
+  },
+  {
+    "q": "Which function is used to write raw binary data to a file?",
+    "o": [
+      "write()",
+      "put()",
+      "insert()",
+      "export()"
+    ]
+  },
+  {
+    "q": "Which C++ header is required for file handling operations?",
+    "o": [
+      "<fstream>",
+      "<file>",
+      "<io>",
+      "<stream>"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\n#include <fstream>\nusing namespace std;\n\nint main() {\n    ofstream file(\"example.txt\");\n    file << \"Hello, File!\";\n    file.close();\n    return 0;\n}",
+    "o": [
+      "Creates a file named example.txt and writes 'Hello, File!' to it",
+      "Reads 'Hello, File!' from example.txt",
+      "Compiles with an error",
+      "Appends text to example.txt"
+    ]
+  },
+  {
+    "q": "Which mode flag opens a file for both reading and writing in binary mode?",
+    "o": [
+      "ios::in | ios::out | ios::binary",
+      "ios::app | ios::binary",
+      "ios::trunc | ios::binary",
+      "ios::ate | ios::in"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "#include <fstream>\nusing namespace std;\n\nint main() {\n    fstream file(\"data.bin\", ios::out | ios::binary);\n    int num = 100;\n    file.write(reinterpret_cast<char*>(&num), sizeof(num));\n    file.close();\n    return 0;\n}",
+    "o": [
+      "Writes the binary representation of integer 100 to data.bin",
+      "Reads an integer from data.bin",
+      "Appends an integer to a text file",
+      "Opens a file in text mode and writes 100"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the `ifstream` class?",
+    "o": [
+      "It is used to read from files",
+      "It is used to write to files",
+      "It can only open binary files",
+      "It automatically creates a new file if not found"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\n#include <fstream>\nusing namespace std;\n\nint main() {\n    ifstream file(\"sample.txt\");\n    string text;\n    file >> text;\n    cout << text;\n    file.close();\n    return 0;\n}",
+    "o": [
+      "Prints the first word from sample.txt",
+      "Prints the entire content of sample.txt",
+      "Prints nothing",
+      "Throws an error"
+    ]
+  },
+  {
+    "q": "Which file mode flag is used to append data to the end of a file without overwriting it?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::binary",
+      "ios::ate"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <iostream>\n#include <fstream>\nusing namespace std;\n\nstruct Student {\n    char name[20];\n    int age;\n};\n\nint main() {\n    Student s = {\"John\", 20};\n    ofstream out(\"student.dat\", ios::binary);\n    out.write((char*)&s, sizeof(s));\n    out.close();\n    return 0;\n}",
+    "o": [
+      "Writes the Student object in binary format to student.dat",
+      "Reads a Student object from student.dat",
+      "Writes data to student.dat as text",
+      "Compiles with an error due to structure"
+    ]
+  },
+  {
+    "q": "Which file stream class should be used when both reading from and writing to a file is required?",
+    "o": [
+      "fstream",
+      "ifstream",
+      "ofstream",
+      "filebuffer"
+    ]
+  },
+  {
+    "q": "What will the following code snippet do?",
+    "c": "#include <fstream>\nusing namespace std;\n\nint main() {\n    ofstream fout(\"log.txt\", ios::app);\n    fout << \"New log entry\\n\";\n    fout.close();\n    return 0;\n}",
+    "o": [
+      "Appends 'New log entry' to log.txt",
+      "Overwrites log.txt with 'New log entry'",
+      "Reads from log.txt",
+      "Deletes content from log.txt"
+    ]
+  },
+  {
+    "q": "Which mode should be used with `ifstream` to open a binary file?",
+    "o": [
+      "ios::binary",
+      "ios::out",
+      "ios::app",
+      "ios::trunc"
+    ]
+  },
+  {
+    "q": "What is the role of `ios::trunc` when opening a file?",
+    "o": [
+      "Clears the file content if it already exists",
+      "Appends data to the end of the file",
+      "Opens the file in read-only mode",
+      "Opens the file in binary mode"
+    ]
+  },
+  {
+    "q": "What will the following C++ code output if 'data.txt' contains the text 'C++ Programming'?",
+    "c": "#include <iostream>\n#include <fstream>\nusing namespace std;\n\nint main() {\n    ifstream fin(\"data.txt\");\n    string word;\n    fin >> word;\n    cout << word;\n    fin.close();\n    return 0;\n}",
+    "o": [
+      "C++",
+      "C++ Programming",
+      "Programming",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which of the following flags will open a file and position the write pointer at the end of the file?",
+    "o": [
+      "ios::app",
+      "ios::ate",
+      "ios::binary",
+      "ios::in"
+    ]
+  },
+  {
+    "q": "Which of the following is required to write a structure object to a binary file?",
+    "o": [
+      "Use of write() with reinterpret_cast<char*>",
+      "Using << operator directly",
+      "Using % operator",
+      "Using print() function"
+    ]
+  },
+  {
+    "q": "What will happen if you open a file with `ofstream` without specifying any mode?",
+    "o": [
+      "The existing file will be truncated",
+      "The file will be opened in append mode",
+      "The file will be opened in read mode",
+      "It will create a binary file"
+    ]
+  },
+  {
+    "q": "Which C++ file mode flag will ensure a file is opened at the end but still allows reading?",
+    "o": [
+      "ios::ate | ios::in",
+      "ios::app",
+      "ios::trunc | ios::in",
+      "ios::binary | ios::out"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "#include <fstream>\nusing namespace std;\n\nstruct Data {\n    int id;\n    float value;\n};\n\nint main() {\n    Data d;\n    ifstream fin(\"record.dat\", ios::binary);\n    fin.read((char*)&d, sizeof(d));\n    fin.close();\n    return 0;\n}",
+    "o": [
+      "Reads a Data object from record.dat in binary format",
+      "Writes a Data object to record.dat",
+      "Appends a Data object to record.dat",
+      "Clears the contents of record.dat"
+    ]
+  },
+  {
+    "q": "Which of the following file modes will open a file for input and output without truncating it?",
+    "o": [
+      "ios::in | ios::out",
+      "ios::out | ios::trunc",
+      "ios::app | ios::in",
+      "ios::binary | ios::trunc"
+    ]
+  },
+  {
+    "q": "What will be the result of the following code snippet?",
+    "c": "#include <fstream>\nusing namespace std;\n\nint main() {\n    fstream file(\"demo.txt\", ios::out);\n    file << \"Line 1\";\n    file.close();\n\n    file.open(\"demo.txt\", ios::in);\n    string data;\n    file >> data;\n    cout << data;\n    file.close();\n    return 0;\n}",
+    "o": [
+      "Line",
+      "Line 1",
+      "1",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which of the following statements about `ofstream` is correct?",
+    "o": [
+      "`ofstream` is used for writing to files in C++.",
+      "`ofstream` is only used for reading from files.",
+      "`ofstream` cannot open binary files.",
+      "`ofstream` is a base class for file handling."
+    ]
+  },
+  {
+    "q": "What will be written into the file after executing the following code?",
+    "c": "#include <fstream>\nusing namespace std;\n\nint main() {\n    ofstream fout(\"output.txt\");\n    fout << 5 * 10 << endl;\n    fout.close();\n    return 0;\n}",
+    "o": [
+      "50",
+      "5 * 10",
+      "10",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which mode must be specified to write to a binary file using `ofstream`?",
+    "o": [
+      "ios::binary",
+      "ios::in",
+      "ios::ate",
+      "ios::app"
+    ]
+  },
+  {
+    "q": "What does the `ate` file mode flag do in C++?",
+    "o": [
+      "Opens a file and moves the pointer to the end",
+      "Opens a file for appending data",
+      "Truncates the file on open",
+      "Creates a temporary file"
+    ]
+  },
+  {
+    "q": "What will be the output of this code if 'notes.txt' contains 'Welcome to C++'?",
+    "c": "#include <iostream>\n#include <fstream>\nusing namespace std;\n\nint main() {\n    ifstream fin(\"notes.txt\");\n    char ch;\n    while (fin.get(ch)) {\n        cout << ch;\n    }\n    fin.close();\n    return 0;\n}",
+    "o": [
+      "Welcome to C++",
+      "Welcome",
+      "C++",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which of the following is required to read an object from a binary file?",
+    "o": [
+      "read((char*)&object, sizeof(object))",
+      ">> operator",
+      "scanf() function",
+      "cin.getline()"
+    ]
+  },
+  {
+    "q": "Which of the following open modes is the default for `ifstream`?",
+    "o": [
+      "ios::in",
+      "ios::out",
+      "ios::app",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "What is the behavior of the following code snippet?",
+    "c": "#include <fstream>\nusing namespace std;\n\nint main() {\n    ofstream fout(\"sample.txt\", ios::trunc);\n    fout << \"Overwritten content\";\n    fout.close();\n    return 0;\n}",
+    "o": [
+      "Overwrites any existing content in sample.txt",
+      "Appends content to sample.txt",
+      "Reads content from sample.txt",
+      "Creates sample.txt in binary mode"
+    ]
+  },
+  {
+    "q": "Which C++ file mode should be used to ensure that data written to a file is not erased if the file already exists?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::binary",
+      "ios::in"
+    ]
+  },
+  {
+    "q": "What will the following code do?",
+    "c": "#include <fstream>\nusing namespace std;\n\nint main() {\n    ofstream fout(\"data.txt\", ios::out | ios::trunc);\n    fout << \"Test\";\n    fout.close();\n    return 0;\n}",
+    "o": [
+      "Erases the file content if it exists and writes 'Test'",
+      "Appends 'Test' to the file",
+      "Reads 'Test' from the file",
+      "Does nothing because ios::trunc disables writing"
+    ]
+  },
+  {
+    "q": "What is the correct way to open a file for reading and writing in text mode?",
+    "o": [
+      "fstream file(\"file.txt\", ios::in | ios::out);",
+      "ifstream file(\"file.txt\", ios::out);",
+      "ofstream file(\"file.txt\", ios::in);",
+      "fstream file(\"file.txt\", ios::app | ios::binary);"
+    ]
+  },
+  {
+    "q": "Which of the following file modes ensures the file pointer is moved to the end immediately after opening?",
+    "o": [
+      "ios::ate",
+      "ios::trunc",
+      "ios::in",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "What is the result of the following code execution?",
+    "c": "#include <fstream>\nusing namespace std;\n\nstruct Person {\n    char name[20];\n    int age;\n};\n\nint main() {\n    Person p = {\"Alice\", 25};\n    ofstream fout(\"person.dat\", ios::binary);\n    fout.write((char*)&p, sizeof(p));\n    fout.close();\n    return 0;\n}",
+    "o": [
+      "Writes object p to person.dat in binary format",
+      "Reads object p from person.dat",
+      "Appends object p in text format",
+      "Opens person.dat for reading"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct statement about the `read()` function in C++ file handling?",
+    "o": [
+      "It reads raw bytes from a binary file into memory",
+      "It reads a single line of text from a file",
+      "It returns a string by default",
+      "It is only used with ofstream"
+    ]
+  },
+  {
+    "q": "What is required to read a structure from a binary file?",
+    "o": [
+      "ifstream.read((char*)&structVar, sizeof(structVar));",
+      "ifstream >> structVar;",
+      "fscanf(file, \"%d\", &structVar);",
+      "cin >> structVar;"
+    ]
+  },
+  {
+    "q": "Which of the following code snippets correctly checks if a file opened successfully using `ifstream`?",
+    "o": [
+      "if (file.is_open())",
+      "if (!file)",
+      "if (file.fail())",
+      "if (file == NULL)"
+    ]
+  },
+  {
+    "q": "Which combination of flags is used to open a binary file and append data to it?",
+    "o": [
+      "ios::binary | ios::app",
+      "ios::binary | ios::in",
+      "ios::binary | ios::trunc",
+      "ios::in | ios::out"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "#include <fstream>\nusing namespace std;\n\nint main() {\n    fstream file(\"info.dat\", ios::in | ios::binary);\n    if (!file) {\n        cout << \"Cannot open file\";\n    }\n    file.close();\n    return 0;\n}",
+    "o": [
+      "Opens a binary file for reading and checks if it fails",
+      "Opens a file for writing in binary mode",
+      "Appends data to the file in binary format",
+      "Opens a text file for reading"
+    ]
+  },
+  {
+    "q": "What does the `is_open()` method return in C++ file streams?",
+    "o": [
+      "true if the file is successfully opened",
+      "false if the file is successfully opened",
+      "The size of the file",
+      "The file pointer position"
+    ]
+  },
+  {
+    "q": "What is the result of the following code snippet?",
+    "c": "#include <fstream>\nusing namespace std;\n\nint main() {\n    ifstream fin(\"myfile.txt\");\n    if (!fin) {\n        cout << \"File could not be opened\";\n    } else {\n        cout << \"File opened successfully\";\n    }\n    fin.close();\n    return 0;\n}",
+    "o": [
+      "Displays success or failure message based on file availability",
+      "Writes to myfile.txt",
+      "Reads an integer from myfile.txt",
+      "Creates a binary file"
+    ]
+  },
+  {
+    "q": "Which of the following flags is used to open a file and remove its existing contents?",
+    "o": [
+      "ios::trunc",
+      "ios::in",
+      "ios::binary",
+      "ios::app"
+    ]
+  },
+  {
+    "q": "Which file mode should be used when reading binary data using `ifstream`?",
+    "o": [
+      "ios::in | ios::binary",
+      "ios::out | ios::binary",
+      "ios::app | ios::binary",
+      "ios::ate | ios::binary"
+    ]
+  },
+  {
+    "q": "What is the correct way to write a class object to a binary file in C++?",
+    "o": [
+      "file.write(reinterpret_cast<char*>(&obj), sizeof(obj));",
+      "file << obj;",
+      "file.write(&obj, sizeof(obj));",
+      "file.send(obj);"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <fstream>\nusing namespace std;\n\nint main() {\n    ofstream fout(\"text.txt\");\n    fout << \"ABC\\n123\";\n    fout.close();\n\n    ifstream fin(\"text.txt\");\n    string line;\n    getline(fin, line);\n    cout << line;\n    fin.close();\n    return 0;\n}",
+    "o": [
+      "ABC",
+      "123",
+      "ABC\\n123",
+      "text.txt"
+    ]
+  },
+  {
+    "q": "Which of the following classes allows both reading and writing operations on a file?",
+    "o": [
+      "fstream",
+      "ifstream",
+      "ofstream",
+      "filebuf"
+    ]
+  },
+  {
+    "q": "What does the `seekg()` function do in C++ file handling?",
+    "o": [
+      "Moves the get pointer to a specific location",
+      "Moves the put pointer to a specific location",
+      "Reads a character from the file",
+      "Writes a character to the file"
+    ]
+  },
+  {
+    "q": "What happens if `ifstream` fails to open a file?",
+    "o": [
+      "The stream becomes invalid and further operations fail",
+      "The file is created automatically",
+      "An exception is thrown by default",
+      "The program exits immediately"
+    ]
+  },
+  {
+    "q": "What does this code do?",
+    "c": "#include <fstream>\nusing namespace std;\n\nint main() {\n    fstream file(\"example.bin\", ios::out | ios::binary);\n    int arr[3] = {1, 2, 3};\n    file.write((char*)arr, sizeof(arr));\n    file.close();\n    return 0;\n}",
+    "o": [
+      "Writes the contents of an integer array in binary format",
+      "Reads an integer array from a file",
+      "Writes the array in text format",
+      "Reads a single integer from a binary file"
+    ]
+  },
+  {
+    "q": "Which method is used to move the file read pointer to the beginning of a file?",
+    "o": [
+      "seekg(0)",
+      "seekp(0)",
+      "reset()",
+      "setpos(0)"
+    ]
+  },
+  {
+    "q": "What is the behavior of the following C++ code?",
+    "c": "#include <fstream>\nusing namespace std;\n\nint main() {\n    ifstream fin(\"sample.txt\");\n    char ch;\n    while (fin.get(ch)) {\n        cout << ch;\n    }\n    fin.close();\n    return 0;\n}",
+    "o": [
+      "Reads and prints the file character by character",
+      "Reads and prints the file line by line",
+      "Prints only the first word",
+      "Writes to the file instead of reading"
+    ]
+  },
+  {
+    "q": "Which of the following C++ file stream classes is used for both reading and writing in a file?",
+    "o": [
+      "fstream",
+      "ifstream",
+      "ofstream",
+      "istringstream"
+    ]
+  },
+  {
+    "q": "Which combination of file modes is used to append binary data to the end of a file?",
+    "o": [
+      "ios::app | ios::binary",
+      "ios::trunc | ios::binary",
+      "ios::in | ios::binary",
+      "ios::out | ios::binary"
+    ]
+  },
+  {
+    "q": "What will be the content of the file after running the code below?",
+    "c": "#include <fstream>\nusing namespace std;\n\nint main() {\n    ofstream fout(\"log.txt\");\n    fout << \"Log entry 1\\n\";\n    fout.close();\n\n    fout.open(\"log.txt\", ios::app);\n    fout << \"Log entry 2\\n\";\n    fout.close();\n    return 0;\n}",
+    "o": [
+      "Log entry 1\nLog entry 2",
+      "Log entry 2",
+      "Log entry 1",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which of the following correctly opens a file for writing in binary mode using `ofstream`?",
+    "o": [
+      "ofstream fout(\"data.bin\", ios::binary);",
+      "ofstream fout(\"data.bin\", ios::in);",
+      "ifstream fout(\"data.bin\", ios::binary);",
+      "fstream fout(\"data.bin\", ios::in);"
+    ]
+  },
+  {
+    "q": "Which C++ file function checks whether the end of file has been reached?",
+    "o": [
+      "eof()",
+      "end()",
+      "terminate()",
+      "finished()"
+    ]
+  },
+  {
+    "q": "What is the purpose of using `write()` with a cast in binary file operations?",
+    "o": [
+      "To convert object data to bytes before writing",
+      "To read integers in text format",
+      "To compare file pointers",
+      "To compress file contents"
+    ]
+  },
+  {
+    "q": "Which header file is required for C++ file I/O operations?",
+    "o": [
+      "<fstream>",
+      "<fileio>",
+      "<iostream>",
+      "<cstdio>"
+    ]
+  },
+  {
+    "q": "What will the following code print if 'data.txt' contains: Hello\\nWorld?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\n\nint main() {\n    ifstream fin(\"data.txt\");\n    string line;\n    getline(fin, line);\n    cout << line;\n    fin.close();\n    return 0;\n}",
+    "o": [
+      "Hello",
+      "World",
+      "Hello\\nWorld",
+      "data.txt"
+    ]
+  },
+  {
+    "q": "Which function moves the output pointer to a specific location in a file?",
+    "o": [
+      "seekp()",
+      "seekg()",
+      "tellg()",
+      "reset()"
+    ]
+  },
+  {
+    "q": "What does this code do?",
+    "c": "#include <fstream>\nusing namespace std;\n\nint main() {\n    fstream file(\"log.txt\", ios::out | ios::in);\n    if (!file) {\n        cout << \"File could not be opened\";\n    }\n    file.close();\n    return 0;\n}",
+    "o": [
+      "Opens the file for both reading and writing",
+      "Creates a new binary file",
+      "Reads the file only",
+      "Writes to the file only"
+    ]
+  },
+  {
+    "q": "Which member function is used to write data to a binary file from an object?",
+    "o": [
+      "write()",
+      "put()",
+      "append()",
+      "insert()"
+    ]
+  },
+  {
+    "q": "Which flag combination will open a file for reading from the end in binary mode?",
+    "o": [
+      "ios::in | ios::ate | ios::binary",
+      "ios::in | ios::trunc | ios::binary",
+      "ios::out | ios::trunc | ios::binary",
+      "ios::in | ios::app | ios::binary"
+    ]
+  },
+  {
+    "q": "What will be the result of executing this code?",
+    "c": "#include <fstream>\nusing namespace std;\n\nint main() {\n    ofstream fout(\"newfile.txt\");\n    fout << 123 << endl;\n    fout.close();\n    return 0;\n}",
+    "o": [
+      "Creates or overwrites newfile.txt and writes '123'",
+      "Reads 123 from newfile.txt",
+      "Appends 123 to newfile.txt",
+      "Deletes newfile.txt"
+    ]
+  },
+  {
+    "q": "Which function retrieves the current get pointer position in a file stream?",
+    "o": [
+      "tellg()",
+      "tellp()",
+      "seekg()",
+      "position()"
+    ]
+  },
+  {
+    "q": "Which is a correct way to check if a file stream has reached end-of-file?",
+    "o": [
+      "if (fin.eof())",
+      "if (fin.end())",
+      "if (fin.done())",
+      "if (fin == null)"
+    ]
+  },
+  {
+    "q": "What will the following code print if 'nums.txt' contains: 5 10 15?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\n\nint main() {\n    ifstream fin(\"nums.txt\");\n    int x;\n    fin >> x;\n    cout << x;\n    fin.close();\n    return 0;\n}",
+    "o": [
+      "5",
+      "10",
+      "15",
+      "0"
+    ]
+  },
+  {
+    "q": "Which file mode will truncate a file to zero length if it already exists?",
+    "o": [
+      "ios::trunc",
+      "ios::in",
+      "ios::app",
+      "ios::ate"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax to read raw binary data into an object?",
+    "o": [
+      "file.read(reinterpret_cast<char*>(&obj), sizeof(obj));",
+      "file.read(&obj, sizeof(obj));",
+      "file << obj;",
+      "file.get(obj);"
+    ]
+  },
+  {
+    "q": "Which of the following C++ modes allows both reading and writing to a binary file?",
+    "o": [
+      "ios::in | ios::out | ios::binary",
+      "ios::app | ios::binary",
+      "ios::trunc | ios::binary",
+      "ios::ate | ios::binary"
+    ]
+  },
+  {
+    "q": "What does the following C++ code accomplish?",
+    "c": "#include <fstream>\nusing namespace std;\n\nint main() {\n    fstream file(\"demo.txt\", ios::out);\n    file << \"Data line\";\n    file.close();\n    return 0;\n}",
+    "o": [
+      "Creates or overwrites demo.txt and writes 'Data line'",
+      "Reads data from demo.txt",
+      "Appends data to demo.txt",
+      "Deletes demo.txt"
+    ]
+  },
+  {
+    "q": "Which function is used to retrieve the position of the output pointer in a file?",
+    "o": [
+      "tellp()",
+      "tellg()",
+      "seekp()",
+      "seekg()"
+    ]
+  },
+  {
+    "q": "In binary file handling, what is the purpose of `reinterpret_cast<char*>` when writing an object?",
+    "o": [
+      "To convert the object into a byte stream",
+      "To format the object as a string",
+      "To perform type checking",
+      "To initialize a file pointer"
+    ]
+  },
+  {
+    "q": "What will the output be if the file 'notes.txt' contains: Line1\\nLine2?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\n\nint main() {\n    ifstream fin(\"notes.txt\");\n    string text;\n    while (getline(fin, text)) {\n        cout << text << endl;\n    }\n    fin.close();\n    return 0;\n}",
+    "o": [
+      "Line1\nLine2",
+      "Line1",
+      "Line2",
+      "notes.txt"
+    ]
+  },
+  {
+    "q": "What happens if you open a file using `ofstream` without any file mode?",
+    "o": [
+      "It truncates the file if it exists or creates a new one",
+      "It opens the file for appending",
+      "It opens the file in binary mode",
+      "It opens the file only for reading"
+    ]
+  },
+  {
+    "q": "Which of the following classes is used only for reading from files?",
+    "o": [
+      "ifstream",
+      "ofstream",
+      "fstream",
+      "filebuf"
+    ]
+  },
+  {
+    "q": "How can you append data to an existing file without erasing its contents?",
+    "o": [
+      "Open it using ios::app mode",
+      "Open it using ios::trunc mode",
+      "Open it using ios::in mode",
+      "Open it using ios::ate mode"
+    ]
+  },
+  {
+    "q": "Which of the following file modes allows positioning at the end while retaining contents?",
+    "o": [
+      "ios::ate",
+      "ios::trunc",
+      "ios::in",
+      "ios::out"
+    ]
+  },
+  {
+    "q": "What is the output of this code if file 'temp.txt' contains: Hello World?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\n\nint main() {\n    ifstream fin(\"temp.txt\");\n    char word[6];\n    fin.read(word, 5);\n    word[5] = '\\0';\n    cout << word;\n    fin.close();\n    return 0;\n}",
+    "o": [
+      "Hello",
+      "World",
+      "Hello World",
+      "temp.txt"
+    ]
+  },
+  {
+    "q": "Which of the following file modes opens a file and appends all output to the end?",
+    "o": [
+      "ios::app",
+      "ios::in",
+      "ios::trunc",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "#include <fstream>\nusing namespace std;\nclass Item {\npublic:\n    int id;\n    float price;\n};\n\nint main() {\n    Item obj;\n    obj.id = 101;\n    obj.price = 49.99;\n    ofstream fout(\"items.dat\", ios::binary);\n    fout.write(reinterpret_cast<char*>(&obj), sizeof(obj));\n    fout.close();\n    return 0;\n}",
+    "o": [
+      "Writes binary data of an object to items.dat",
+      "Reads object data from items.dat",
+      "Appends text data to items.dat",
+      "Converts text file to binary"
+    ]
+  },
+  {
+    "q": "Which method is used to read a line from a file into a string in C++?",
+    "o": [
+      "getline()",
+      "readline()",
+      "get()",
+      "extract()"
+    ]
+  },
+  {
+    "q": "Which of the following correctly opens a file for both input and output in text mode?",
+    "o": [
+      "fstream file(\"data.txt\", ios::in | ios::out);",
+      "ofstream file(\"data.txt\", ios::in | ios::out);",
+      "ifstream file(\"data.txt\", ios::in | ios::out);",
+      "fstream file(\"data.txt\", ios::binary);"
+    ]
+  },
+  {
+    "q": "What will this code output if file 'sample.txt' contains the line: Welcome to C++?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream fin(\"sample.txt\");\n    string word;\n    fin >> word;\n    cout << word;\n    return 0;\n}",
+    "o": [
+      "Welcome",
+      "to",
+      "C++",
+      "sample.txt"
+    ]
+  },
+  {
+    "q": "Which stream class should be used when writing text to a file in C++?",
+    "o": [
+      "ofstream",
+      "ifstream",
+      "fstream",
+      "iostream"
+    ]
+  },
+  {
+    "q": "What is the purpose of ios::binary flag?",
+    "o": [
+      "Opens the file in binary mode",
+      "Opens the file in read-only mode",
+      "Compresses the file automatically",
+      "Encrypts the data"
+    ]
+  },
+  {
+    "q": "What does the function `seekg()` do in C++ file handling?",
+    "o": [
+      "Moves the file's get pointer to a specific location",
+      "Moves the file's put pointer to a specific location",
+      "Gets the size of the file",
+      "Closes the file stream"
+    ]
+  },
+  {
+    "q": "What will be the output if 'test.txt' contains: ABCDEF?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream fin(\"test.txt\");\n    fin.seekg(3);\n    char ch;\n    fin.get(ch);\n    cout << ch;\n    return 0;\n}",
+    "o": [
+      "D",
+      "A",
+      "C",
+      "E"
+    ]
+  },
+  {
+    "q": "Which file mode must be used with `ofstream` to prevent overwriting existing contents?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::in",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "Which of the following is used to check if a file has been successfully opened?",
+    "o": [
+      "file.is_open()",
+      "file.exists()",
+      "file.status()",
+      "file.opened()"
+    ]
+  },
+  {
+    "q": "What does the following C++ code do?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream file(\"data.txt\");\n    if (!file) cout << \"Cannot open file\";\n    else cout << \"File opened\";\n    return 0;\n}",
+    "o": [
+      "Checks if file 'data.txt' was opened successfully",
+      "Writes to 'data.txt'",
+      "Appends to 'data.txt'",
+      "Deletes 'data.txt'"
+    ]
+  },
+  {
+    "q": "Which open mode ensures that a new file is created and existing data is discarded?",
+    "o": [
+      "ios::trunc",
+      "ios::app",
+      "ios::in",
+      "ios::ate"
+    ]
+  },
+  {
+    "q": "Which of the following statements about `ofstream` is true?",
+    "o": [
+      "It is used for output operations on files",
+      "It is used for reading from files",
+      "It is a base class of ios",
+      "It handles binary streams only"
+    ]
+  },
+  {
+    "q": "What will the output be if the file contains: '42\\n13\\n7'?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream fin(\"numbers.txt\");\n    int x, y;\n    fin >> x >> y;\n    cout << x + y;\n    return 0;\n}",
+    "o": [
+      "55",
+      "13",
+      "42",
+      "7"
+    ]
+  },
+  {
+    "q": "What is the correct way to write a string into a file using `ofstream`?",
+    "o": [
+      "file << \"Hello World\";",
+      "file.write(\"Hello World\");",
+      "file.put(\"Hello World\");",
+      "file.append(\"Hello World\");"
+    ]
+  },
+  {
+    "q": "Which of the following opens a file for reading in binary mode?",
+    "o": [
+      "ifstream file(\"data.bin\", ios::binary);",
+      "ifstream file(\"data.bin\", ios::out);",
+      "ofstream file(\"data.bin\", ios::binary);",
+      "fstream file(\"data.bin\", ios::app);"
+    ]
+  },
+  {
+    "q": "What will happen if you try to read beyond the end of a file?",
+    "o": [
+      "The eof() function returns true",
+      "The file is deleted",
+      "The read operation continues with garbage values",
+      "The program crashes"
+    ]
+  },
+  {
+    "q": "Which of the following file open modes positions the put pointer at the end?",
+    "o": [
+      "ios::ate",
+      "ios::trunc",
+      "ios::binary",
+      "ios::in"
+    ]
+  },
+  {
+    "q": "What is the correct way to read an object from a binary file?",
+    "o": [
+      "file.read(reinterpret_cast<char*>(&obj), sizeof(obj));",
+      "file >> obj;",
+      "file.get(obj);",
+      "file.extract(obj);"
+    ]
+  },
+  {
+    "q": "Which of the following streams is capable of both input and output operations?",
+    "o": [
+      "fstream",
+      "ifstream",
+      "ofstream",
+      "iostream"
+    ]
+  },
+  {
+    "q": "What is the purpose of the `flush()` function in C++ file streams?",
+    "o": [
+      "To clear the buffer and write contents to the file immediately",
+      "To close the file",
+      "To rewind the file pointer",
+      "To clear the file contents"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "#include <fstream>\nusing namespace std;\nint main() {\n    ofstream file(\"log.txt\", ios::app);\n    file << \"New entry\\n\";\n    file.close();\n    return 0;\n}",
+    "o": [
+      "Appends 'New entry' to log.txt",
+      "Overwrites log.txt with 'New entry'",
+      "Reads from log.txt",
+      "Creates a binary file"
+    ]
+  },
+  {
+    "q": "Which file mode would you use to preserve existing data and write at the end of a file?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::in",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "Which file stream would be best for reading a binary file?",
+    "o": [
+      "ifstream with ios::binary",
+      "ofstream with ios::binary",
+      "fstream with ios::app",
+      "ifstream with ios::out"
+    ]
+  },
+  {
+    "q": "What will the following code output if 'input.txt' contains: C++ Programming?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream fin(\"input.txt\");\n    char ch;\n    fin.get(ch);\n    cout << ch;\n    fin.close();\n    return 0;\n}",
+    "o": [
+      "C",
+      "+",
+      "P",
+      " "
+    ]
+  },
+  {
+    "q": "What does `seekp()` do in file handling?",
+    "o": [
+      "Moves the put pointer to a specified location",
+      "Moves the get pointer to a specified location",
+      "Prints contents to console",
+      "Saves data to memory"
+    ]
+  },
+  {
+    "q": "How do you write binary data of a class object to a file?",
+    "o": [
+      "file.write(reinterpret_cast<char*>(&obj), sizeof(obj));",
+      "file << obj;",
+      "file.put(obj);",
+      "file.insert(obj);"
+    ]
+  },
+  {
+    "q": "What happens if you use `ios::trunc` while opening an existing file?",
+    "o": [
+      "The file contents are erased",
+      "The file is opened in read-only mode",
+      "The file is appended with new data",
+      "Nothing happens"
+    ]
+  },
+  {
+    "q": "Which of the following correctly checks the end-of-file condition?",
+    "o": [
+      "file.eof()",
+      "file.end()",
+      "file.finish()",
+      "file.done()"
+    ]
+  },
+  {
+    "q": "Which file stream is primarily used for input operations from a file?",
+    "o": [
+      "ifstream",
+      "ofstream",
+      "fstream",
+      "ifstreamstream"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    fstream file(\"sample.txt\", ios::out);\n    file << \"Hello World\";\n    file.close();\n    return 0;\n}",
+    "o": [
+      "Writes 'Hello World' to sample.txt",
+      "Reads from sample.txt",
+      "Appends data to sample.txt",
+      "Clears contents of sample.txt"
+    ]
+  },
+  {
+    "q": "Which of the following flags will truncate the contents of an existing file when opened?",
+    "o": [
+      "ios::trunc",
+      "ios::binary",
+      "ios::in",
+      "ios::app"
+    ]
+  },
+  {
+    "q": "How do you check if a file was not successfully opened using `ifstream`?",
+    "o": [
+      "if (!file)",
+      "if (file == NULL)",
+      "if (file.bad())",
+      "if (file.close())"
+    ]
+  },
+  {
+    "q": "What is the role of `ios::ate` in file handling?",
+    "o": [
+      "Moves the write pointer to the end when the file is opened",
+      "Appends new data after existing content",
+      "Reads the file in binary mode",
+      "Creates a temporary file"
+    ]
+  },
+  {
+    "q": "Which function is used to move the get pointer to a specific byte in the file?",
+    "o": [
+      "seekg()",
+      "seekp()",
+      "moveg()",
+      "jumpto()"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code if 'text.txt' contains 'abcde'?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream fin(\"text.txt\");\n    fin.seekg(2);\n    char ch;\n    fin.get(ch);\n    cout << ch;\n    return 0;\n}",
+    "o": [
+      "c",
+      "a",
+      "b",
+      "d"
+    ]
+  },
+  {
+    "q": "How do you write the contents of a class object to a binary file?",
+    "o": [
+      "Using write() with reinterpret_cast",
+      "Using operator<< directly",
+      "Using fread()",
+      "Using insert()"
+    ]
+  },
+  {
+    "q": "What does the `ios::in | ios::out` mode signify in a file stream?",
+    "o": [
+      "Open for both reading and writing",
+      "Only open for writing",
+      "Only open for appending",
+      "Open in binary mode"
+    ]
+  },
+  {
+    "q": "Which of the following is correct syntax to read data from a binary file?",
+    "o": [
+      "file.read(reinterpret_cast<char*>(&obj), sizeof(obj));",
+      "file >> obj;",
+      "file.scan(obj);",
+      "file.get(obj);"
+    ]
+  },
+  {
+    "q": "Which of the following correctly opens a file for binary output only?",
+    "o": [
+      "ofstream file(\"output.dat\", ios::binary);",
+      "ifstream file(\"output.dat\", ios::binary);",
+      "fstream file(\"output.dat\", ios::in);",
+      "ofstream file(\"output.dat\", ios::in);"
+    ]
+  },
+  {
+    "q": "What will the following code do?",
+    "c": "#include <fstream>\nusing namespace std;\nint main() {\n    ifstream file(\"data.txt\");\n    if (file.is_open()) file.close();\n    return 0;\n}",
+    "o": [
+      "Opens and then closes data.txt if it exists",
+      "Creates data.txt and writes text",
+      "Deletes data.txt from disk",
+      "Appends text to data.txt"
+    ]
+  },
+  {
+    "q": "Which function is used to write an object to a file in binary mode?",
+    "o": [
+      "write()",
+      "put()",
+      "insert()",
+      "stream()"
+    ]
+  },
+  {
+    "q": "What will be the output of the code below if 'myfile.txt' contains 'HelloWorld'?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream fin(\"myfile.txt\");\n    char ch;\n    fin.seekg(5);\n    fin.get(ch);\n    cout << ch;\n    return 0;\n}",
+    "o": [
+      "W",
+      "H",
+      "e",
+      "o"
+    ]
+  },
+  {
+    "q": "Which of the following modes is required to open a file for input in binary mode?",
+    "o": [
+      "ios::in | ios::binary",
+      "ios::out | ios::binary",
+      "ios::app | ios::binary",
+      "ios::trunc | ios::binary"
+    ]
+  },
+  {
+    "q": "What happens if you use `ofstream` to open an existing file without any open mode flags?",
+    "o": [
+      "The file gets overwritten",
+      "The file is appended",
+      "The file opens in read mode",
+      "The file is opened in binary mode"
+    ]
+  },
+  {
+    "q": "Which of the following opens a file in both read and write mode using `fstream`?",
+    "o": [
+      "fstream file(\"data.txt\", ios::in | ios::out);",
+      "ifstream file(\"data.txt\", ios::in | ios::out);",
+      "ofstream file(\"data.txt\", ios::in | ios::out);",
+      "fstream file(\"data.txt\", ios::binary);"
+    ]
+  },
+  {
+    "q": "What is the effect of using ios::app with ofstream?",
+    "o": [
+      "New data is added to the end of the file",
+      "The file is read from the beginning",
+      "The file content is cleared first",
+      "Binary data is written instead of text"
+    ]
+  },
+  {
+    "q": "How would you write multiple lines to a file using ofstream?",
+    "o": [
+      "Use newline characters (\\n) in the output stream",
+      "Use \\t character",
+      "Use cout instead of file object",
+      "Call file.putline()"
+    ]
+  },
+  {
+    "q": "Which function moves the write position in a file stream?",
+    "o": [
+      "seekp()",
+      "seekg()",
+      "setp()",
+      "offset()"
+    ]
+  },
+  {
+    "q": "Which of the following correctly checks if a file has reached the end?",
+    "o": [
+      "file.eof()",
+      "file.end()",
+      "file.atEnd()",
+      "file.finished()"
+    ]
+  },
+  {
+    "q": "What will the following code output if 'data.txt' contains the text: 'C++ Rocks!'?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream fin(\"data.txt\");\n    string str;\n    fin >> str;\n    cout << str;\n    return 0;\n}",
+    "o": [
+      "C++",
+      "C++ Rocks!",
+      "Rocks!",
+      "C"
+    ]
+  },
+  {
+    "q": "Which of the following modes will allow both reading and writing to a binary file?",
+    "o": [
+      "ios::in | ios::out | ios::binary",
+      "ios::app | ios::binary",
+      "ios::trunc | ios::binary",
+      "ios::in | ios::app"
+    ]
+  },
+  {
+    "q": "What does the `tellg()` function return?",
+    "o": [
+      "Current get pointer position",
+      "Current put pointer position",
+      "Size of the file",
+      "Line number in file"
+    ]
+  },
+  {
+    "q": "Which header file is required for using `ifstream`, `ofstream`, and `fstream`?",
+    "o": [
+      "<fstream>",
+      "<file>",
+      "<iostream>",
+      "<stream>"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ofstream fout(\"log.txt\");\n    fout << 10 << ' ' << 20;\n    fout.close();\n    return 0;\n}",
+    "o": [
+      "Writes '10 20' into log.txt",
+      "Appends '10 20' to log.txt",
+      "Reads '10 20' from log.txt",
+      "Clears log.txt"
+    ]
+  },
+  {
+    "q": "What does the following code achieve?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nstruct Point {\n    int x, y;\n};\nint main() {\n    Point p = {3, 4};\n    ofstream fout(\"point.bin\", ios::binary);\n    fout.write((char*)&p, sizeof(p));\n    fout.close();\n    return 0;\n}",
+    "o": [
+      "Writes the binary representation of struct Point to point.bin",
+      "Writes text data to point.bin",
+      "Reads binary data from point.bin",
+      "Appends Point to text file"
+    ]
+  },
+  {
+    "q": "Which method is used to read from a binary file into an object?",
+    "o": [
+      "read()",
+      "scan()",
+      "getline()",
+      "fetch()"
+    ]
+  },
+  {
+    "q": "Which open mode will prevent accidental truncation of a file when writing?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::out",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "What is the correct way to close a file stream in C++?",
+    "o": [
+      "file.close();",
+      "close(file);",
+      "end(file);",
+      "file.shut();"
+    ]
+  },
+  {
+    "q": "Which stream class is best suited for writing data to files?",
+    "o": [
+      "ofstream",
+      "ifstream",
+      "fstream",
+      "iostream"
+    ]
+  },
+  {
+    "q": "What does the `good()` member function of a file stream return?",
+    "o": [
+      "True if no errors have occurred",
+      "True if end of file is reached",
+      "False if file is open",
+      "True if file is closed"
+    ]
+  },
+  {
+    "q": "What will the following code print if 'data.txt' contains '123 456'?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    int a, b;\n    ifstream fin(\"data.txt\");\n    fin >> a >> b;\n    cout << a + b;\n    return 0;\n}",
+    "o": [
+      "579",
+      "123456",
+      "123",
+      "456"
+    ]
+  },
+  {
+    "q": "Which file mode allows overwriting the file from the beginning?",
+    "o": [
+      "ios::trunc",
+      "ios::binary",
+      "ios::app",
+      "ios::ate"
+    ]
+  },
+  {
+    "q": "Which C++ file stream function sets the read pointer to the beginning of the file?",
+    "o": [
+      "seekg(0)",
+      "seekp(0)",
+      "rewind()",
+      "restart()"
+    ]
+  },
+  {
+    "q": "What will the following code write to 'output.txt'?",
+    "c": "#include <fstream>\nusing namespace std;\nint main() {\n    ofstream file(\"output.txt\");\n    for (int i = 1; i <= 3; i++) file << i << \" \";\n    file.close();\n    return 0;\n}",
+    "o": [
+      "1 2 3 ",
+      "123",
+      "1\\n2\\n3",
+      "3 2 1 "
+    ]
+  },
+  {
+    "q": "Which of the following opens a file for both reading and writing in binary mode?",
+    "o": [
+      "fstream file(\"binary.dat\", ios::in | ios::out | ios::binary);",
+      "ifstream file(\"binary.dat\", ios::binary);",
+      "ofstream file(\"binary.dat\", ios::binary);",
+      "fstream file(\"binary.dat\", ios::app);"
+    ]
+  },
+  {
+    "q": "What does the `tellp()` function return?",
+    "o": [
+      "Current position of the put (write) pointer",
+      "Current position of the get (read) pointer",
+      "Total number of lines in file",
+      "Size of file in bytes"
+    ]
+  },
+  {
+    "q": "How do you append text to an existing file using `ofstream`?",
+    "o": [
+      "Open file with ios::app",
+      "Use ios::trunc flag",
+      "Use ios::in",
+      "Use ios::binary only"
+    ]
+  },
+  {
+    "q": "What is the correct way to read a full line from a file using C++?",
+    "o": [
+      "getline(file, line);",
+      "file >> line;",
+      "file.get(line);",
+      "readline(file, line);"
+    ]
+  },
+  {
+    "q": "Which of the following is true about `ifstream` in C++?",
+    "o": [
+      "It is used to read data from a file.",
+      "It is used to write data to a file.",
+      "It can only open binary files.",
+      "It requires ios::app flag to open."
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "#include <fstream>\nusing namespace std;\nint main() {\n    fstream file(\"sample.txt\", ios::in | ios::out);\n    return 0;\n}",
+    "o": [
+      "Opens file for both reading and writing",
+      "Creates a new file for binary writing",
+      "Appends data to sample.txt",
+      "Deletes contents of sample.txt"
+    ]
+  },
+  {
+    "q": "Which of the following is used to move the get pointer to a specific position in a file?",
+    "o": [
+      "seekg()",
+      "seekp()",
+      "move()",
+      "shift()"
+    ]
+  },
+  {
+    "q": "What happens if you open a file with ios::in but the file does not exist?",
+    "o": [
+      "The stream fails to open",
+      "The file is created",
+      "The file is truncated",
+      "The file opens in binary mode"
+    ]
+  },
+  {
+    "q": "What does this code output if 'log.txt' contains: 'Test123'?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    char ch;\n    ifstream fin(\"log.txt\");\n    fin.seekg(4);\n    fin.get(ch);\n    cout << ch;\n    return 0;\n}",
+    "o": [
+      "1",
+      "T",
+      "e",
+      "3"
+    ]
+  },
+  {
+    "q": "Which of the following flags is used to append data to an existing file?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::binary",
+      "ios::ate"
+    ]
+  },
+  {
+    "q": "Which method would you use to determine if a file stream was successfully opened?",
+    "o": [
+      "file.is_open()",
+      "file.good()",
+      "file.check()",
+      "file.opened()"
+    ]
+  },
+  {
+    "q": "What is the result of using `ios::trunc` when opening a file?",
+    "o": [
+      "It erases existing contents of the file.",
+      "It appends to the file.",
+      "It creates a new file in binary mode.",
+      "It throws an error if the file exists."
+    ]
+  },
+  {
+    "q": "Which of the following is correct syntax for reading binary data into a structure?",
+    "o": [
+      "file.read((char*)&obj, sizeof(obj));",
+      "file.get(obj, sizeof(obj));",
+      "file >> obj;",
+      "file.fetch(&obj);"
+    ]
+  },
+  {
+    "q": "Which file stream should be used to both read and write to a binary file?",
+    "o": [
+      "fstream",
+      "ifstream",
+      "ofstream",
+      "iostream"
+    ]
+  },
+  {
+    "q": "Which C++ class is specifically used for reading from a file?",
+    "o": [
+      "ifstream",
+      "ofstream",
+      "fstream",
+      "istream"
+    ]
+  },
+  {
+    "q": "What does the `open()` function of `fstream` do?",
+    "o": [
+      "It opens a file with the specified mode.",
+      "It creates a temporary buffer for I/O.",
+      "It saves changes to a file.",
+      "It initializes the file system."
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'input.txt' contains: Hello World?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream file(\"input.txt\");\n    string word;\n    file >> word;\n    cout << word;\n    return 0;\n}",
+    "o": [
+      "Hello",
+      "World",
+      "Hello World",
+      "Nothing (empty string)"
+    ]
+  },
+  {
+    "q": "Which of the following opens a file in both read and write mode and starts at the end of the file?",
+    "o": [
+      "ios::in | ios::out | ios::ate",
+      "ios::app",
+      "ios::trunc",
+      "ios::binary | ios::out"
+    ]
+  },
+  {
+    "q": "Which C++ function moves the put pointer to the beginning of a file?",
+    "o": [
+      "seekp(0)",
+      "seekg(0)",
+      "setp(0)",
+      "startp(0)"
+    ]
+  },
+  {
+    "q": "What will this code do?",
+    "c": "#include <fstream>\nusing namespace std;\nint main() {\n    ofstream fout(\"note.txt\", ios::app);\n    fout << \"Line added\" << endl;\n    fout.close();\n    return 0;\n}",
+    "o": [
+      "Appends 'Line added' to note.txt",
+      "Overwrites note.txt with 'Line added'",
+      "Reads 'Line added' from note.txt",
+      "Deletes contents of note.txt"
+    ]
+  },
+  {
+    "q": "How do you write binary data to a file using `ofstream`?",
+    "o": [
+      "Use fout.write((char*)&obj, sizeof(obj));",
+      "Use fout << obj;",
+      "Use fout.save(obj);",
+      "Use fout.binary(obj);"
+    ]
+  },
+  {
+    "q": "Which mode should be used to read from a binary file?",
+    "o": [
+      "ios::in | ios::binary",
+      "ios::trunc",
+      "ios::app",
+      "ios::ate"
+    ]
+  },
+  {
+    "q": "What does `file.clear()` do in file handling?",
+    "o": [
+      "Clears the error flags on the stream",
+      "Empties the contents of the file",
+      "Resets the file position to start",
+      "Deletes the file"
+    ]
+  },
+  {
+    "q": "Which of the following statements about `fstream` is true?",
+    "o": [
+      "It can be used for both reading and writing.",
+      "It is only used for writing binary data.",
+      "It is a subclass of ofstream.",
+      "It doesn't support file modes."
+    ]
+  },
+  {
+    "q": "Which of the following correctly opens a file in binary write mode?",
+    "o": [
+      "ofstream file(\"data.bin\", ios::binary);",
+      "ifstream file(\"data.bin\", ios::binary);",
+      "fstream file(\"data.bin\", ios::in);",
+      "ofstream file(\"data.bin\", ios::app);"
+    ]
+  },
+  {
+    "q": "What will happen if you try to read from a file stream that failed to open?",
+    "o": [
+      "The read operation will fail silently or set error flags.",
+      "An exception will always be thrown.",
+      "The file will be created automatically.",
+      "The program will crash immediately."
+    ]
+  },
+  {
+    "q": "What does this code print if 'text.txt' contains 'ABC\\nXYZ'?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream in(\"text.txt\");\n    string line;\n    getline(in, line);\n    cout << line;\n    return 0;\n}",
+    "o": [
+      "ABC",
+      "XYZ",
+      "ABC\\nXYZ",
+      "Nothing is printed"
+    ]
+  },
+  {
+    "q": "Which stream class can handle both input and output operations on a file?",
+    "o": [
+      "fstream",
+      "ifstream",
+      "ofstream",
+      "iostream"
+    ]
+  },
+  {
+    "q": "Which mode flag is used to prevent truncating an existing file during writing?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::binary",
+      "ios::ate"
+    ]
+  },
+  {
+    "q": "What is the function of `eof()` in file streams?",
+    "o": [
+      "Returns true if end-of-file is reached",
+      "Clears the file stream buffer",
+      "Closes the file",
+      "Resets the file pointer to the start"
+    ]
+  },
+  {
+    "q": "What will this code do?",
+    "c": "#include <fstream>\nusing namespace std;\nstruct Data {\n    int x;\n};\nint main() {\n    Data d = {42};\n    ofstream out(\"d.bin\", ios::binary);\n    out.write((char*)&d, sizeof(d));\n    out.close();\n    return 0;\n}",
+    "o": [
+      "Writes binary representation of structure 'd' to 'd.bin'",
+      "Writes text '42' to 'd.bin'",
+      "Throws compilation error",
+      "Writes hexadecimal value of d"
+    ]
+  },
+  {
+    "q": "Which method can be used to retrieve the current input file pointer location?",
+    "o": [
+      "tellg()",
+      "tellp()",
+      "seekg()",
+      "getpos()"
+    ]
+  },
+  {
+    "q": "Which of the following is required when reading objects from a binary file?",
+    "o": [
+      "The class or struct must not contain pointers or dynamic memory.",
+      "The class must be declared virtual.",
+      "The file must be opened in text mode.",
+      "The object must override operator>>."
+    ]
+  },
+  {
+    "q": "What is the effect of `ios::ate` when opening a file?",
+    "o": [
+      "Moves the file pointer to the end immediately after opening",
+      "Truncates the file",
+      "Reads the file from the start only",
+      "Appends content at the end automatically"
+    ]
+  },
+  {
+    "q": "Which C++ header file is needed for file handling using `ifstream`, `ofstream`, or `fstream`?",
+    "o": [
+      "<fstream>",
+      "<file>",
+      "<iostream>",
+      "<iomanip>"
+    ]
+  },
+  {
+    "q": "What does this code do?",
+    "c": "#include <fstream>\nusing namespace std;\nint main() {\n    ofstream fout(\"log.txt\");\n    fout << \"Test\";\n    fout.close();\n    return 0;\n}",
+    "o": [
+      "Creates/overwrites 'log.txt' and writes 'Test'",
+      "Appends 'Test' to 'log.txt'",
+      "Reads from 'log.txt'",
+      "Throws runtime error"
+    ]
+  },
+  {
+    "q": "Which file mode is used to ensure file contents are preserved while adding new data?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::in",
+      "ios::ate"
+    ]
+  },
+  {
+    "q": "Which C++ method is used to check if a file stream is in a good state for I/O?",
+    "o": [
+      "good()",
+      "ok()",
+      "check()",
+      "status()"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'data.txt' contains: 123 456?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream fin(\"data.txt\");\n    int a;\n    fin >> a;\n    cout << a;\n    return 0;\n}",
+    "o": [
+      "123",
+      "456",
+      "123456",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which stream is best suited to write structured data in binary format?",
+    "o": [
+      "ofstream with ios::binary",
+      "ifstream with ios::in",
+      "fstream with ios::app",
+      "cout with ios::binary"
+    ]
+  },
+  {
+    "q": "What happens if you try to open a file using `ifstream` in `ios::in` mode and the file doesn't exist?",
+    "o": [
+      "The file stream fails to open.",
+      "A new empty file is created.",
+      "The file is opened in write mode.",
+      "Garbage values are read."
+    ]
+  },
+  {
+    "q": "How can you open a file for both input and output in binary mode?",
+    "o": [
+      "fstream file(\"file.bin\", ios::in | ios::out | ios::binary);",
+      "ifstream file(\"file.bin\", ios::in | ios::binary);",
+      "ofstream file(\"file.bin\", ios::out | ios::binary);",
+      "ifstream file(\"file.bin\", ios::out | ios::binary);"
+    ]
+  },
+  {
+    "q": "Which method is used to reposition the output (put) pointer in a file stream?",
+    "o": [
+      "seekp()",
+      "seekg()",
+      "move()",
+      "shiftp()"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to close an open file in C++?",
+    "o": [
+      "file.close();",
+      "close(file);",
+      "end(file);",
+      "shutdown(file);"
+    ]
+  },
+  {
+    "q": "Which file mode allows appending new data to the end of an existing file?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::binary",
+      "ios::in"
+    ]
+  },
+  {
+    "q": "What does the `seekg()` function do in file handling?",
+    "o": [
+      "Moves the input (get) pointer to a specified location",
+      "Moves the output (put) pointer to a specified location",
+      "Flushes the output buffer",
+      "Closes the file stream"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "#include <fstream>\nusing namespace std;\nint main() {\n    ifstream fin(\"info.txt\");\n    if (!fin) {\n        cout << \"Failed to open file\";\n    }\n    return 0;\n}",
+    "o": [
+      "Checks if the file opened successfully",
+      "Reads from 'info.txt'",
+      "Appends to 'info.txt'",
+      "Overwrites 'info.txt'"
+    ]
+  },
+  {
+    "q": "Which stream class allows both input and output operations?",
+    "o": [
+      "fstream",
+      "ifstream",
+      "ofstream",
+      "istringstream"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'myfile.txt' contains: C++ Programming?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream in(\"myfile.txt\");\n    char ch;\n    in.get(ch);\n    cout << ch;\n    return 0;\n}",
+    "o": [
+      "C",
+      "+",
+      "P",
+      "Nothing is printed"
+    ]
+  },
+  {
+    "q": "Which of the following opens a file and clears its previous contents?",
+    "o": [
+      "ofstream file(\"out.txt\");",
+      "ifstream file(\"out.txt\");",
+      "fstream file(\"out.txt\", ios::in);",
+      "ofstream file(\"out.txt\", ios::app);"
+    ]
+  },
+  {
+    "q": "What will happen if you try to write to an `ifstream` object?",
+    "o": [
+      "It will result in a compilation error",
+      "It will write the data successfully",
+      "It will silently fail",
+      "It will append to the file"
+    ]
+  },
+  {
+    "q": "Which of the following allows reading raw binary data from a file?",
+    "o": [
+      "read((char*)&object, sizeof(object))",
+      "getline(file, object)",
+      "file >> object",
+      "file.extract(object)"
+    ]
+  },
+  {
+    "q": "What is the purpose of `tellp()` in file handling?",
+    "o": [
+      "Returns the current position of the put pointer",
+      "Returns the current position of the get pointer",
+      "Repositions the get pointer",
+      "Checks if file is open"
+    ]
+  },
+  {
+    "q": "Which combination is used to open a binary file for both reading and writing from the beginning?",
+    "o": [
+      "ios::in | ios::out | ios::binary",
+      "ios::app | ios::binary",
+      "ios::trunc | ios::binary",
+      "ios::ate | ios::binary"
+    ]
+  },
+  {
+    "q": "What does the `write()` function in ofstream do?",
+    "o": [
+      "Writes binary data from memory to a file",
+      "Writes text data followed by a newline",
+      "Reads text from a file",
+      "Reads binary data into memory"
+    ]
+  },
+  {
+    "q": "Which file mode flag is necessary to write to a file without deleting existing content?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::in",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "What is the result of this code?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    fstream file(\"sample.txt\", ios::out | ios::in);\n    if (!file) cout << \"Error\";\n    else cout << \"Opened\";\n    return 0;\n}",
+    "o": [
+      "Opened",
+      "Error",
+      "Compilation error",
+      "Runtime exception"
+    ]
+  },
+  {
+    "q": "Which function reads a full line from a file stream into a string?",
+    "o": [
+      "getline()",
+      "readline()",
+      "read()",
+      "fetchline()"
+    ]
+  },
+  {
+    "q": "What is required to read a structure from a binary file?",
+    "o": [
+      "The structure should be plain and not contain pointers.",
+      "The structure must inherit from `istream`.",
+      "The structure should override the `>>` operator.",
+      "The structure must be defined as a class."
+    ]
+  },
+  {
+    "q": "Which function in `ifstream` checks if the end of file has been reached?",
+    "o": [
+      "eof()",
+      "done()",
+      "ended()",
+      "finished()"
+    ]
+  },
+  {
+    "q": "Which of the following modes is used to open a file for writing in binary format?",
+    "o": [
+      "ios::out | ios::binary",
+      "ios::in | ios::binary",
+      "ios::trunc | ios::in",
+      "ios::app | ios::in"
+    ]
+  },
+  {
+    "q": "What will the following code do?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ofstream fout(\"notes.txt\", ios::app);\n    fout << \"More notes\";\n    fout.close();\n    return 0;\n}",
+    "o": [
+      "Appends 'More notes' to the end of 'notes.txt'",
+      "Overwrites 'notes.txt' with 'More notes'",
+      "Reads 'More notes' from 'notes.txt'",
+      "Clears 'notes.txt' and writes nothing"
+    ]
+  },
+  {
+    "q": "Which of the following classes is derived from `ios` and used for input operations?",
+    "o": [
+      "ifstream",
+      "ofstream",
+      "fstream",
+      "ostream"
+    ]
+  },
+  {
+    "q": "To open a file and move the write pointer to the end immediately, which flag is used?",
+    "o": [
+      "ios::ate",
+      "ios::trunc",
+      "ios::in",
+      "ios::beg"
+    ]
+  },
+  {
+    "q": "What will be the result of opening a file with `ios::trunc` mode?",
+    "o": [
+      "The file will be cleared if it exists",
+      "The file will be opened in append mode",
+      "The file will be opened in read-only mode",
+      "The file will remain unchanged"
+    ]
+  },
+  {
+    "q": "What does the following code snippet do?",
+    "c": "#include <fstream>\nusing namespace std;\nint main() {\n    ofstream file(\"output.txt\", ios::app);\n    file << \"Hello!\";\n    return 0;\n}",
+    "o": [
+      "Adds 'Hello!' to the end of 'output.txt'",
+      "Deletes 'output.txt' before writing",
+      "Reads 'Hello!' from 'output.txt'",
+      "Throws a compile-time error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly reads a binary file into an object?",
+    "o": [
+      "file.read((char*)&obj, sizeof(obj));",
+      "file >> obj;",
+      "file.extract(obj);",
+      "file.fetch(obj);"
+    ]
+  },
+  {
+    "q": "Which method in `ifstream` is used to move the read pointer to a specific location?",
+    "o": [
+      "seekg()",
+      "seekp()",
+      "moveg()",
+      "jumpg()"
+    ]
+  },
+  {
+    "q": "What does `ios::binary` ensure when opening a file?",
+    "o": [
+      "No translation of newline or EOF characters",
+      "File is opened for appending data",
+      "Text encoding is applied",
+      "File is opened in compressed mode"
+    ]
+  },
+  {
+    "q": "Which file stream should be used to read from and write to the same file?",
+    "o": [
+      "fstream",
+      "ifstream",
+      "ofstream",
+      "stringstream"
+    ]
+  },
+  {
+    "q": "What happens if `.eof()` is called before reading from an empty file?",
+    "o": [
+      "It returns false",
+      "It returns true",
+      "It throws an exception",
+      "It crashes the program"
+    ]
+  },
+  {
+    "q": "What is the output of the following code assuming 'log.txt' is empty?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream fin(\"log.txt\");\n    cout << fin.eof();\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "true",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What does the `tellg()` function return?",
+    "o": [
+      "Current get pointer position",
+      "Current put pointer position",
+      "Size of the file",
+      "Whether file is good"
+    ]
+  },
+  {
+    "q": "Which file mode flag is needed to open a file for reading from the beginning in binary format?",
+    "o": [
+      "ios::in | ios::binary",
+      "ios::out | ios::binary",
+      "ios::app | ios::binary",
+      "ios::trunc | ios::binary"
+    ]
+  },
+  {
+    "q": "Which file opening mode is used to open a file for input operations only?",
+    "o": [
+      "ios::in",
+      "ios::out",
+      "ios::app",
+      "ios::trunc"
+    ]
+  },
+  {
+    "q": "What does the `good()` function of a file stream return?",
+    "o": [
+      "True if the stream is ready for I/O operations",
+      "True if the end of file is reached",
+      "True if there’s an error in stream",
+      "True if file is closed"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    fstream file(\"data.txt\", ios::in | ios::out | ios::trunc);\n    file << \"Test\";\n    file.seekg(0);\n    string s;\n    file >> s;\n    cout << s;\n    return 0;\n}",
+    "o": [
+      "Test",
+      "data.txt",
+      "Nothing",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which mode ensures the file pointer is placed at the end of the file upon opening?",
+    "o": [
+      "ios::ate",
+      "ios::app",
+      "ios::trunc",
+      "ios::in"
+    ]
+  },
+  {
+    "q": "In C++ file handling, which class is primarily used for writing data to files?",
+    "o": [
+      "ofstream",
+      "ifstream",
+      "fstream",
+      "stringstream"
+    ]
+  },
+  {
+    "q": "What does `file.close()` do?",
+    "o": [
+      "Flushes and closes the file stream",
+      "Moves file pointer to beginning",
+      "Deletes the file",
+      "Clears the contents of the file"
+    ]
+  },
+  {
+    "q": "What is the primary use of `seekp()` in binary file handling?",
+    "o": [
+      "To move the write (put) pointer to a specific location",
+      "To move the read (get) pointer to a specific location",
+      "To print pointer address",
+      "To seek the start of the program"
+    ]
+  },
+  {
+    "q": "Which of the following is valid syntax for writing a class object to a binary file?",
+    "o": [
+      "file.write((char*)&obj, sizeof(obj));",
+      "file.insert(obj);",
+      "file << obj;",
+      "file.export(obj);"
+    ]
+  },
+  {
+    "q": "If a file opened with `ifstream` does not exist, what happens?",
+    "o": [
+      "The file stream fails to open",
+      "A new file is created",
+      "The program crashes",
+      "Garbage is read"
+    ]
+  },
+  {
+    "q": "Which function would you use to get the current output position in a file stream?",
+    "o": [
+      "tellp()",
+      "tellg()",
+      "seekp()",
+      "seekg()"
+    ]
+  },
+  {
+    "q": "Which of the following C++ classes can perform both input and output operations on files?",
+    "o": [
+      "fstream",
+      "ifstream",
+      "ofstream",
+      "iostream"
+    ]
+  },
+  {
+    "q": "What happens when you open a file using `ofstream` without specifying a mode?",
+    "o": [
+      "The file is created or truncated if it exists",
+      "The file is opened in append mode",
+      "The file is opened in read-only mode",
+      "An error is thrown"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "#include <fstream>\nusing namespace std;\nint main() {\n    ofstream fout(\"log.txt\");\n    fout.write(\"Hello\", 5);\n    fout.close();\n    return 0;\n}",
+    "o": [
+      "Writes 5 bytes of 'Hello' into the file",
+      "Reads 5 characters from the file",
+      "Appends 5 bytes to the file",
+      "Writes to the console"
+    ]
+  },
+  {
+    "q": "Which flag is used to open a file in binary mode to prevent newline translation?",
+    "o": [
+      "ios::binary",
+      "ios::in",
+      "ios::app",
+      "ios::trunc"
+    ]
+  },
+  {
+    "q": "How can we check if a file opened using `fstream` was successful?",
+    "o": [
+      "Use the `is_open()` method",
+      "Check file pointer against nullptr",
+      "Use `file.exists()`",
+      "Use `file.check()`"
+    ]
+  },
+  {
+    "q": "What will the following program print if 'data.txt' contains '12345'?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream fin(\"data.txt\");\n    char ch;\n    fin.seekg(2);\n    fin.get(ch);\n    cout << ch;\n    return 0;\n}",
+    "o": [
+      "3",
+      "1",
+      "2",
+      "4"
+    ]
+  },
+  {
+    "q": "Which file open mode is used to clear the contents of a file when opening it?",
+    "o": [
+      "ios::trunc",
+      "ios::ate",
+      "ios::in",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "Which function is used to read raw bytes from a binary file?",
+    "o": [
+      "read()",
+      "getline()",
+      "scan()",
+      "streamin()"
+    ]
+  },
+  {
+    "q": "What will happen if you forget to call `close()` on a file stream?",
+    "o": [
+      "The file may not be properly flushed and saved",
+      "The program will throw an error",
+      "The file will automatically be deleted",
+      "The stream will reopen automatically"
+    ]
+  },
+  {
+    "q": "What does `seekg(0, ios::end)` do?",
+    "o": [
+      "Moves the read pointer to the end of the file",
+      "Moves the write pointer to the end of the file",
+      "Closes the file",
+      "Starts reading from the beginning"
+    ]
+  },
+  {
+    "q": "What is the purpose of using `ios::app` when opening a file?",
+    "o": [
+      "To append data to the end of the file",
+      "To open file in binary mode",
+      "To truncate the file if it exists",
+      "To open the file in read-only mode"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to open a file for both input and output in binary mode?",
+    "o": [
+      "fstream file(\"data.bin\", ios::in | ios::out | ios::binary);",
+      "ifstream file(\"data.bin\", ios::in | ios::binary);",
+      "ofstream file(\"data.bin\", ios::out | ios::binary);",
+      "fstream file(\"data.bin\", ios::app | ios::binary);"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "#include <fstream>\nusing namespace std;\nint main() {\n    fstream file(\"example.txt\", ios::out | ios::trunc);\n    file << \"C++ File Handling\";\n    return 0;\n}",
+    "o": [
+      "Creates or clears 'example.txt' and writes to it",
+      "Appends to 'example.txt'",
+      "Reads from 'example.txt'",
+      "Deletes 'example.txt'"
+    ]
+  },
+  {
+    "q": "How do you move the put pointer to the beginning of a file?",
+    "o": [
+      "file.seekp(0);",
+      "file.seekg(0);",
+      "file.rewind();",
+      "file.head();"
+    ]
+  },
+  {
+    "q": "Which stream function is used to determine the current byte offset of the get pointer?",
+    "o": [
+      "tellg()",
+      "tellp()",
+      "getpos()",
+      "locateg()"
+    ]
+  },
+  {
+    "q": "What is required when reading or writing user-defined objects to binary files?",
+    "o": [
+      "Typecasting object address to char*",
+      "Overloading the extraction operator",
+      "Using a file format library",
+      "Converting object to string manually"
+    ]
+  },
+  {
+    "q": "What does this code do?",
+    "c": "#include <fstream>\nstruct Data {\n  int id;\n};\nint main() {\n  Data d = {101};\n  ofstream fout(\"data.bin\", ios::binary);\n  fout.write((char*)&d, sizeof(d));\n  fout.close();\n  return 0;\n}",
+    "o": [
+      "Writes the object 'd' to a binary file",
+      "Reads the object from a binary file",
+      "Throws a runtime error",
+      "Appends object to a text file"
+    ]
+  },
+  {
+    "q": "If a file is opened using `ios::ate`, what happens to the pointer?",
+    "o": [
+      "It is placed at the end but allows both read/write anywhere",
+      "It is placed at the beginning",
+      "It restricts writing only to the end",
+      "It deletes the file content"
+    ]
+  },
+  {
+    "q": "Which of the following is true about `ifstream`?",
+    "o": [
+      "It is used to read data from files",
+      "It can write to files",
+      "It supports binary-only mode",
+      "It cannot be used with file paths"
+    ]
+  },
+  {
+    "q": "What is the result of trying to read from a closed file stream?",
+    "o": [
+      "The operation fails silently or triggers failbit",
+      "The file is reopened automatically",
+      "It reads garbage values",
+      "It throws a syntax error"
+    ]
+  },
+  {
+    "q": "Which of the following will correctly check if a file was successfully opened for reading?",
+    "o": [
+      "if (file.is_open())",
+      "if (file.exists())",
+      "if (file.good())",
+      "if (file.readable())"
+    ]
+  },
+  {
+    "q": "What does the `eof()` function return?",
+    "o": [
+      "True if end of file is reached",
+      "True if file is empty",
+      "False if end of file is reached",
+      "True if file pointer is at the beginning"
+    ]
+  },
+  {
+    "q": "What does this program output?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ofstream fout(\"sample.txt\");\n    fout << \"42\";\n    fout.close();\n    ifstream fin(\"sample.txt\");\n    int x;\n    fin >> x;\n    cout << x;\n    return 0;\n}",
+    "o": [
+      "42",
+      "sample.txt",
+      "0",
+      "Runtime error"
+    ]
+  },
+  {
+    "q": "Which open mode should be used with `ofstream` to preserve existing data and append new data?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::in",
+      "ios::ate"
+    ]
+  },
+  {
+    "q": "Which method moves the get pointer to a specific location in an input file stream?",
+    "o": [
+      "seekg()",
+      "seekp()",
+      "setpos()",
+      "movep()"
+    ]
+  },
+  {
+    "q": "What is the correct way to write a string to a text file?",
+    "o": [
+      "file << \"Hello World\";",
+      "file.write(\"Hello World\");",
+      "file.put(\"Hello World\");",
+      "file.insert(\"Hello World\");"
+    ]
+  },
+  {
+    "q": "What does this code accomplish?",
+    "c": "#include <fstream>\nstruct Student {\n    int id;\n    float gpa;\n};\nint main() {\n    Student s = {1, 3.9};\n    ofstream fout(\"stud.dat\", ios::binary);\n    fout.write((char*)&s, sizeof(s));\n    fout.close();\n    return 0;\n}",
+    "o": [
+      "Saves the binary representation of a Student object to file",
+      "Reads a Student object from file",
+      "Appends text data to file",
+      "Creates a new text file"
+    ]
+  },
+  {
+    "q": "What will the following code do if 'data.txt' does not exist?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream fin(\"data.txt\");\n    if (!fin) cout << \"Failed to open file\";\n    return 0;\n}",
+    "o": [
+      "Prints 'Failed to open file'",
+      "Creates 'data.txt'",
+      "Writes to 'data.txt'",
+      "Prints the contents of the file"
+    ]
+  },
+  {
+    "q": "Which of the following flags is used to open a file for output and discard the contents if the file exists?",
+    "o": [
+      "ios::trunc",
+      "ios::binary",
+      "ios::in",
+      "ios::app"
+    ]
+  },
+  {
+    "q": "Which method can be used to flush the output buffer manually?",
+    "o": [
+      "file.flush();",
+      "file.clear();",
+      "file.sync();",
+      "file.clean();"
+    ]
+  },
+  {
+    "q": "Which mode allows data to be added at the end of a file without removing existing content?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::in",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "What will be the result of this program if 'file.txt' contains the text 'ABC'?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream fin(\"file.txt\");\n    char ch;\n    fin.get(ch);\n    cout << ch;\n    return 0;\n}",
+    "o": [
+      "A",
+      "B",
+      "C",
+      "Nothing is printed"
+    ]
+  },
+  {
+    "q": "Which class should be used to read data from a file in C++?",
+    "o": [
+      "ifstream",
+      "ofstream",
+      "fstream",
+      "iostream"
+    ]
+  },
+  {
+    "q": "What does this line of code do?\n`file.seekp(0, ios::end);`",
+    "o": [
+      "Moves the put pointer to the end of the file",
+      "Moves the get pointer to the end of the file",
+      "Resets the file",
+      "Closes the file"
+    ]
+  },
+  {
+    "q": "Which function checks whether a file stream has encountered an error?",
+    "o": [
+      "fail()",
+      "eof()",
+      "empty()",
+      "check()"
+    ]
+  },
+  {
+    "q": "Which of the following is true about binary file handling in C++?",
+    "o": [
+      "Binary mode avoids any character translation like newline conversions",
+      "Binary mode adds extra formatting",
+      "Binary mode is slower than text mode",
+      "Binary mode automatically compresses the file"
+    ]
+  },
+  {
+    "q": "What does the following program output?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ofstream file(\"demo.txt\");\n    file << 100;\n    file.close();\n    ifstream fin(\"demo.txt\");\n    int n;\n    fin >> n;\n    cout << n;\n    return 0;\n}",
+    "o": [
+      "100",
+      "demo.txt",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the effect of using both `ios::in` and `ios::out` while opening a file?",
+    "o": [
+      "The file can be read and written",
+      "The file is only for reading",
+      "The file is only for writing",
+      "The file is opened in binary mode"
+    ]
+  },
+  {
+    "q": "When reading a binary file into an object, what should you do?",
+    "o": [
+      "Typecast the object pointer to `char*`",
+      "Use the object name directly in `read()`",
+      "Use `getline()` instead of `read()`",
+      "Use extraction operator (`>>`) instead"
+    ]
+  },
+  {
+    "q": "Which file mode ensures that a new file is created if it doesn’t already exist?",
+    "o": [
+      "ios::out",
+      "ios::in",
+      "ios::app",
+      "ios::nocreate"
+    ]
+  },
+  {
+    "q": "Which of the following correctly opens a file in both input and output mode?",
+    "o": [
+      "fstream file(\"data.txt\", ios::in | ios::out);",
+      "ifstream file(\"data.txt\", ios::in | ios::out);",
+      "ofstream file(\"data.txt\", ios::in | ios::out);",
+      "fstream file(\"data.txt\", ios::app);"
+    ]
+  },
+  {
+    "q": "What does the following code accomplish?",
+    "c": "#include <fstream>\nint main() {\n    ofstream file(\"log.txt\", ios::app);\n    file << \"Logging info\";\n    return 0;\n}",
+    "o": [
+      "Appends text to 'log.txt'",
+      "Overwrites 'log.txt'",
+      "Reads from 'log.txt'",
+      "Deletes the contents of 'log.txt'"
+    ]
+  },
+  {
+    "q": "Which flag combination opens a file for binary input only?",
+    "o": [
+      "ios::in | ios::binary",
+      "ios::out | ios::binary",
+      "ios::app | ios::binary",
+      "ios::trunc | ios::binary"
+    ]
+  },
+  {
+    "q": "Which method is used to read raw binary data into an object from a file?",
+    "o": [
+      "read()",
+      "getline()",
+      ">> operator",
+      "extract()"
+    ]
+  },
+  {
+    "q": "In C++, how do you check if a file stream has reached the end of a file?",
+    "o": [
+      "file.eof()",
+      "file.end()",
+      "file.finish()",
+      "file.complete()"
+    ]
+  },
+  {
+    "q": "What will this code print if 'file.txt' contains the string 'C++ File'?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream fin(\"file.txt\");\n    string text;\n    getline(fin, text);\n    cout << text;\n    return 0;\n}",
+    "o": [
+      "C++ File",
+      "C++",
+      "File",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which C++ file stream is designed for both input and output operations?",
+    "o": [
+      "fstream",
+      "ifstream",
+      "ofstream",
+      "iostream"
+    ]
+  },
+  {
+    "q": "What will happen if you try to open a non-existent file with `ifstream`?",
+    "o": [
+      "The stream will fail to open",
+      "A new file will be created",
+      "The file will be overwritten",
+      "It throws a compile-time error"
+    ]
+  },
+  {
+    "q": "What does the `tellp()` function return?",
+    "o": [
+      "The current position of the put pointer",
+      "The total size of the file",
+      "The current position of the get pointer",
+      "The pointer to the beginning of the file"
+    ]
+  },
+  {
+    "q": "Which statement is TRUE about writing class objects to binary files?",
+    "o": [
+      "Object addresses must be cast to char* in write()",
+      "Objects can be written directly using << operator",
+      "Objects must first be converted to string",
+      "Only static members can be saved"
+    ]
+  },
+  {
+    "q": "What will the following code output if the file 'numbers.txt' contains: 12 34 56?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ifstream fin(\"numbers.txt\");\n    int x;\n    fin >> x;\n    cout << x;\n    return 0;\n}",
+    "o": [
+      "12",
+      "34",
+      "56",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following will correctly open a file for binary input and output?",
+    "o": [
+      "fstream file(\"data.bin\", ios::in | ios::out | ios::binary);",
+      "ifstream file(\"data.bin\", ios::in | ios::out | ios::binary);",
+      "ofstream file(\"data.bin\", ios::in | ios::out | ios::binary);",
+      "fstream file(\"data.bin\", ios::app | ios::binary);"
+    ]
+  },
+  {
+    "q": "What does the `seekg()` function do in file handling?",
+    "o": [
+      "Moves the get pointer to a specific location",
+      "Moves the put pointer to a specific location",
+      "Resets the file stream",
+      "Closes the file"
+    ]
+  },
+  {
+    "q": "Which file mode is used to ensure data is always written at the end of the file?",
+    "o": [
+      "ios::app",
+      "ios::trunc",
+      "ios::binary",
+      "ios::in"
+    ]
+  },
+  {
+    "q": "Which of the following operations is invalid with `ifstream`?",
+    "o": [
+      "Writing data to a file",
+      "Reading characters",
+      "Checking eof()",
+      "Opening a file in text mode"
+    ]
+  },
+  {
+    "q": "What is the role of `flush()` in file output streams?",
+    "o": [
+      "It forces the buffer to be written to the file",
+      "It clears the file contents",
+      "It closes the file",
+      "It rewinds the file pointer"
+    ]
+  },
+  {
+    "q": "What is the correct syntax to read an object from a binary file?",
+    "o": [
+      "file.read((char*)&obj, sizeof(obj));",
+      "file >> obj;",
+      "file.get(obj);",
+      "file.load(obj);"
+    ]
+  },
+  {
+    "q": "What happens when a file is opened with ios::trunc?",
+    "o": [
+      "Existing contents are deleted",
+      "Data is appended to the end",
+      "File is opened in binary mode",
+      "Nothing; it opens normally"
+    ]
+  },
+  {
+    "q": "Which function is used to position the put pointer in output streams?",
+    "o": [
+      "seekp()",
+      "seekg()",
+      "putp()",
+      "move()"
+    ]
+  },
+  {
+    "q": "What will this program print?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ofstream fout(\"out.txt\");\n    fout << \"Hello\";\n    fout.close();\n    ifstream fin(\"out.txt\");\n    string word;\n    fin >> word;\n    cout << word;\n    return 0;\n}",
+    "o": [
+      "Hello",
+      "out.txt",
+      "0",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which file open mode truncates the file to zero length if it already exists?",
+    "o": [
+      "ios::trunc",
+      "ios::app",
+      "ios::in",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "#include <fstream>\nint main() {\n    ofstream fout(\"data.txt\", ios::app);\n    fout << \"New Line\\n\";\n    fout.close();\n    return 0;\n}",
+    "o": [
+      "Appends \"New Line\" to data.txt",
+      "Overwrites data.txt with \"New Line\"",
+      "Reads from data.txt",
+      "Clears contents of data.txt"
+    ]
+  },
+  {
+    "q": "Which of the following will NOT create a new file if it doesn't exist?",
+    "o": [
+      "ifstream file(\"sample.txt\");",
+      "ofstream file(\"sample.txt\");",
+      "fstream file(\"sample.txt\", ios::out);",
+      "fstream file(\"sample.txt\", ios::in | ios::out);"
+    ]
+  },
+  {
+    "q": "Which function checks if a file was successfully opened?",
+    "o": [
+      "is_open()",
+      "eof()",
+      "fail()",
+      "good()"
+    ]
+  },
+  {
+    "q": "What will the program output?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ofstream fout(\"test.txt\");\n    fout << 42;\n    fout.close();\n    ifstream fin(\"test.txt\");\n    int x;\n    fin >> x;\n    cout << x;\n    return 0;\n}",
+    "o": [
+      "42",
+      "0",
+      "test.txt",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "What is the purpose of ios::binary?",
+    "o": [
+      "Opens file in binary mode to prevent newline translation",
+      "Encrypts file data before saving",
+      "Compresses file content",
+      "Prevents file from being overwritten"
+    ]
+  },
+  {
+    "q": "Which of the following statements will correctly write a structure to a binary file?",
+    "o": [
+      "file.write((char*)&s, sizeof(s));",
+      "file >> s;",
+      "file.put(s);",
+      "file.write(s);"
+    ]
+  },
+  {
+    "q": "Which file stream would be best for reading and writing data from a single file?",
+    "o": [
+      "fstream",
+      "ifstream",
+      "ofstream",
+      "iostream"
+    ]
+  },
+  {
+    "q": "Which of the following correctly repositions the get pointer to the beginning of the file?",
+    "o": [
+      "file.seekg(0, ios::beg);",
+      "file.seekp(0, ios::beg);",
+      "file.goto(0);",
+      "file.reset();"
+    ]
+  },
+  {
+    "q": "Which method retrieves the current byte offset of the get pointer?",
+    "o": [
+      "tellg()",
+      "seekg()",
+      "tellp()",
+      "position()"
+    ]
+  },
+  {
+    "q": "What is the correct way to open a file in output and binary mode simultaneously?",
+    "o": [
+      "ofstream file(\"data.bin\", ios::out | ios::binary);",
+      "ifstream file(\"data.bin\", ios::out | ios::binary);",
+      "fstream file(\"data.bin\", ios::out);",
+      "ofstream file(\"data.bin\", ios::app);"
+    ]
+  },
+  {
+    "q": "Which function in C++ is used to write binary data to a file?",
+    "o": [
+      "write()",
+      "put()",
+      "<< operator",
+      "insert()"
+    ]
+  },
+  {
+    "q": "What is the default mode of `ifstream`?",
+    "o": [
+      "ios::in",
+      "ios::out",
+      "ios::app",
+      "ios::binary"
+    ]
+  },
+  {
+    "q": "Which of the following file modes will allow overwriting the existing content?",
+    "o": [
+      "ios::trunc",
+      "ios::app",
+      "ios::binary",
+      "ios::in"
+    ]
+  },
+  {
+    "q": "What does the following code output?",
+    "c": "#include <fstream>\n#include <iostream>\nusing namespace std;\nint main() {\n    ofstream file(\"example.txt\");\n    file << \"Sample\";\n    file.close();\n    ifstream readFile(\"example.txt\");\n    string s;\n    readFile >> s;\n    cout << s;\n    return 0;\n}",
+    "o": [
+      "Sample",
+      "example.txt",
+      "file",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which function sets the position of the put pointer?",
+    "o": [
+      "seekp()",
+      "seekg()",
+      "tellp()",
+      "setp()"
+    ]
+  },
+  {
+    "q": "When using binary files, what is the purpose of casting an object pointer to char*?",
+    "o": [
+      "To access raw byte data",
+      "To convert to string format",
+      "To encrypt the object",
+      "To serialize into JSON"
+    ]
+  },
+  {
+    "q": "Which of the following is TRUE about reading objects from binary files?",
+    "o": [
+      "You must cast the object pointer to (char*) when using read()",
+      "You can use the >> operator directly",
+      "Binary files must be converted to text first",
+      "Only built-in types can be read from binary files"
+    ]
+  },
+  {
+    "q": "Which of the following correctly opens a file for both input and output without truncating it?",
+    "o": [
+      "fstream file(\"data.txt\", ios::in | ios::out);",
+      "ofstream file(\"data.txt\", ios::out);",
+      "ifstream file(\"data.txt\", ios::in | ios::trunc);",
+      "fstream file(\"data.txt\", ios::out | ios::trunc);"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to detect if file opening failed?",
+    "o": [
+      "!file",
+      "file.opened()",
+      "file.bad() == true",
+      "file.fail() == false"
+    ]
+  }
+]

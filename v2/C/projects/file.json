@@ -1,0 +1,122 @@
+[
+  {
+    "title": "Writing to a Text File",
+    "ques": "Write a C program that creates a text file named 'output.txt' and writes the string 'Hello, File Handling!' to it. Ensure the file is properly closed after writing.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    FILE *fp;\n    fp = fopen(\"output.txt\", \"w\");\n    if (fp == NULL) {\n        printf(\"Error opening file!\\n\");\n        return 1;\n    }\n    fprintf(fp, \"Hello, File Handling!\");\n    fclose(fp);\n    printf(\"File written successfully.\\n\");\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates basic file writing in C:\n- ***#include <stdio.h>*** includes the standard input-output library for file operations.\n- ***FILE *fp;*** declares a file pointer to handle the file.\n- ```fp = fopen(\"output.txt\", \"w\");``` opens 'output.txt' in write mode (\"w\"). If the file doesn’t exist, it’s created; if it does, it’s overwritten.\n- The ***if (fp == NULL)*** check ensures the file opened successfully, printing an error if not.\n- ```fprintf(fp, \"Hello, File Handling!\");``` writes the string to the file.\n- ***fclose(fp);*** closes the file, freeing resources.\n- A success message is printed to the console."
+  },
+  {
+    "title": "Reading from a Text File",
+    "ques": "Create a C program that reads a string from a file named 'input.txt' and prints it to the console. Assume 'input.txt' contains a single line of text.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    FILE *fp;\n    char buffer[100];\n    fp = fopen(\"input.txt\", \"r\");\n    if (fp == NULL) {\n        printf(\"Error opening file!\\n\");\n        return 1;\n    }\n    fscanf(fp, \"%99s\", buffer);\n    printf(\"Read from file: %s\\n\", buffer);\n    fclose(fp);\n    return 0;\n}"
+    },
+    "explanation": "This program reads from a text file:\n- ***char buffer[100];*** creates a character array to store the read string.\n- ```fp = fopen(\"input.txt\", \"r\");``` opens 'input.txt' in read mode (\"r\"). The file must exist.\n- ***if (fp == NULL)*** checks for file opening errors.\n- ```fscanf(fp, \"%99s\", buffer);``` reads a string (up to 99 characters to avoid buffer overflow) from the file into ***buffer***.\n- The read string is printed with ***printf***.\n- ***fclose(fp);*** closes the file to prevent resource leaks."
+  },
+  {
+    "title": "Appending to a File",
+    "ques": "Write a C program that appends the string ' Appended text.' to an existing file named 'log.txt'. If the file doesn’t exist, it should be created.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    FILE *fp;\n    fp = fopen(\"log.txt\", \"a\");\n    if (fp == NULL) {\n        printf(\"Error opening file!\\n\");\n        return 1;\n    }\n    fprintf(fp, \" Appended text.\");\n    fclose(fp);\n    printf(\"Text appended successfully.\\n\");\n    return 0;\n}"
+    },
+    "explanation": "This program appends text to a file:\n- ```fp = fopen(\"log.txt\", \"a\");``` opens 'log.txt' in append mode (\"a\"). New data is added to the end of the file; if it doesn’t exist, it’s created.\n- ***if (fp == NULL)*** ensures the file was opened.\n- ```fprintf(fp, \" Appended text.\");``` writes the string to the end of the file.\n- ***fclose(fp);*** closes the file.\n- A confirmation message is printed."
+  },
+  {
+    "title": "Binary File Writing and Reading",
+    "ques": "Develop a C program that writes an integer array {10, 20, 30} to a binary file 'data.bin' and then reads it back, printing the values to the console.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    FILE *fp;\n    int write_data[] = {10, 20, 30};\n    int read_data[3];\n    fp = fopen(\"data.bin\", \"wb\");\n    if (fp == NULL) {\n        printf(\"Error opening file!\\n\");\n        return 1;\n    }\n    fwrite(write_data, sizeof(int), 3, fp);\n    fclose(fp);\n    fp = fopen(\"data.bin\", \"rb\");\n    if (fp == NULL) {\n        printf(\"Error opening file!\\n\");\n        return 1;\n    }\n    fread(read_data, sizeof(int), 3, fp);\n    printf(\"Read from binary file: %d, %d, %d\\n\", read_data[0], read_data[1], read_data[2]);\n    fclose(fp);\n    return 0;\n}"
+    },
+    "explanation": "This program handles binary file operations:\n- ***int write_data[] = {10, 20, 30};*** defines the array to write.\n- ```fp = fopen(\"data.bin\", \"wb\");``` opens 'data.bin' in binary write mode (\"wb\").\n- ```fwrite(write_data, sizeof(int), 3, fp);``` writes 3 integers from ***write_data*** to the file in binary format.\n- The file is closed with ***fclose(fp)***.\n- ```fp = fopen(\"data.bin\", \"rb\");``` reopens the file in binary read mode (\"rb\").\n- ```fread(read_data, sizeof(int), 3, fp);``` reads 3 integers into ***read_data***.\n- The values are printed to verify the read operation.\n- ***fclose(fp);*** closes the file."
+  },
+  {
+    "title": "Checking End-of-File While Reading",
+    "ques": "Write a C program that reads and prints all lines from a text file named 'notes.txt' until the end of the file is reached. Use feof to detect the end of the file.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    FILE *fp;\n    char line[100];\n    fp = fopen(\"notes.txt\", \"r\");\n    if (fp == NULL) {\n        printf(\"Error opening file!\\n\");\n        return 1;\n    }\n    while (!feof(fp)) {\n        if (fgets(line, 100, fp) != NULL) {\n            printf(\"%s\", line);\n        }\n    }\n    fclose(fp);\n    printf(\"\\nFile reading complete.\\n\");\n    return 0;\n}"
+    },
+    "explanation": "This program reads a file line by line until the end:\n- ***char line[100];*** allocates space for each line.\n- ```fp = fopen(\"notes.txt\", \"r\");``` opens 'notes.txt' in read mode.\n- ***if (fp == NULL)*** checks for file opening errors.\n- ```while (!feof(fp))``` loops until the end-of-file is reached, detected by ***feof***.\n- ```fgets(line, 100, fp)``` reads up to 99 characters (plus null terminator) into ***line***; it returns NULL on error or EOF, but we check it to avoid printing garbage.\n- Each line is printed with ***printf***.\n- ***fclose(fp);*** closes the file after reading."
+  },
+  {
+    "title": "Error Handling in File Operations",
+    "ques": "Create a C program that attempts to write 'Test data' to a file named 'test.txt' and checks for errors during the operation using ferror.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    FILE *fp;\n    fp = fopen(\"test.txt\", \"w\");\n    if (fp == NULL) {\n        printf(\"Error opening file!\\n\");\n        return 1;\n    }\n    fprintf(fp, \"Test data\");\n    if (ferror(fp)) {\n        printf(\"Error occurred while writing to file!\\n\");\n        fclose(fp);\n        return 1;\n    }\n    fclose(fp);\n    printf(\"File written successfully.\\n\");\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates error checking:\n- ```fp = fopen(\"test.txt\", \"w\");``` opens 'test.txt' in write mode.\n- ***if (fp == NULL)*** ensures the file opened correctly.\n- ```fprintf(fp, \"Test data\");``` writes the string to the file.\n- ***ferror(fp)*** checks if an error occurred during the write operation (e.g., disk full).\n- If an error is detected, it prints an error message and exits after closing the file with ***fclose(fp)***.\n- If no error occurs, the file is closed, and a success message is printed."
+  },
+  {
+    "title": "File Positioning with fseek",
+    "ques": "Write a C program that writes the string 'abcdefghij' to a file 'position.txt', then uses fseek to move the file pointer to the 5th character and reads the remaining content.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    FILE *fp;\n    char buffer[10];\n    fp = fopen(\"position.txt\", \"w+\");\n    if (fp == NULL) {\n        printf(\"Error opening file!\\n\");\n        return 1;\n    }\n    fprintf(fp, \"abcdefghij\");\n    fseek(fp, 4, SEEK_SET);\n    fgets(buffer, 10, fp);\n    printf(\"Read from position 5: %s\\n\", buffer);\n    fclose(fp);\n    return 0;\n}"
+    },
+    "explanation": "This program uses file positioning:\n- ```fp = fopen(\"position.txt\", \"w+\");``` opens 'position.txt' in read-write mode (\"w+\"), creating it if needed.\n- ```fprintf(fp, \"abcdefghij\");``` writes 10 characters to the file.\n- ```fseek(fp, 4, SEEK_SET);``` moves the file pointer to the 5th character (offset 4 from start, as indexing starts at 0).\n- ```fgets(buffer, 10, fp);``` reads up to 9 characters (plus null terminator) from the current position (efghij).\n- The result is printed, showing the substring from the 5th character onward.\n- ***fclose(fp);*** closes the file."
+  },
+  {
+    "title": "Binary File Size Calculation",
+    "ques": "Develop a C program that writes a structure containing an integer and a float to a binary file 'struct.bin', then calculates and prints the file size using ftell.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nstruct Data {\n    int num;\n    float value;\n};\nint main() {\n    FILE *fp;\n    struct Data d = {42, 3.14};\n    fp = fopen(\"struct.bin\", \"wb\");\n    if (fp == NULL) {\n        printf(\"Error opening file!\\n\");\n        return 1;\n    }\n    fwrite(&d, sizeof(struct Data), 1, fp);\n    fseek(fp, 0, SEEK_END);\n    long size = ftell(fp);\n    printf(\"File size: %ld bytes\\n\", size);\n    fclose(fp);\n    return 0;\n}"
+    },
+    "explanation": "This program works with binary files and size:\n- ***struct Data*** defines a structure with an integer and float.\n- ```struct Data d = {42, 3.14};``` initializes the structure.\n- ```fp = fopen(\"struct.bin\", \"wb\");``` opens 'struct.bin' in binary write mode.\n- ```fwrite(&d, sizeof(struct Data), 1, fp);``` writes the structure to the file.\n- ```fseek(fp, 0, SEEK_END);``` moves the pointer to the end of the file.\n- ***ftell(fp)*** returns the current position (file size in bytes), stored in ***size***.\n- The size (typically 8 bytes: 4 for int, 4 for float, depending on system) is printed.\n- ***fclose(fp);*** closes the file."
+  },
+  {
+    "title": "Reading File Character by Character",
+    "ques": "Write a C program that reads a text file 'story.txt' character by character using fgetc and prints each character to the console until the end of the file.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    FILE *fp;\n    int c;\n    fp = fopen(\"story.txt\", \"r\");\n    if (fp == NULL) {\n        printf(\"Error opening file!\\n\");\n        return 1;\n    }\n    while ((c = fgetc(fp)) != EOF) {\n        putchar(c);\n    }\n    fclose(fp);\n    printf(\"\\nFile reading complete.\\n\");\n    return 0;\n}"
+    },
+    "explanation": "This program reads a file character by character:\n- ***int c;*** stores each character as an integer (since ***fgetc*** returns an int).\n- ```fp = fopen(\"story.txt\", \"r\");``` opens 'story.txt' in read mode.\n- ***if (fp == NULL)*** checks for file opening errors.\n- ```while ((c = fgetc(fp)) != EOF)``` reads one character at a time with ***fgetc***, continuing until ***EOF*** (end-of-file) is reached.\n- ```putchar(c);``` prints each character to the console.\n- ***fclose(fp);*** closes the file after reading.\n- A completion message is printed."
+  },
+  {
+    "title": "Resetting File Pointer with rewind",
+    "ques": "Create a C program that writes 'First line' to a file 'reset.txt', reads it, then uses rewind to reset the file pointer and reads it again, printing both reads.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    FILE *fp;\n    char buffer[50];\n    fp = fopen(\"reset.txt\", \"w+\");\n    if (fp == NULL) {\n        printf(\"Error opening file!\\n\");\n        return 1;\n    }\n    fprintf(fp, \"First line\");\n    fgets(buffer, 50, fp);\n    printf(\"First read (empty): %s\\n\", buffer);\n    rewind(fp);\n    fgets(buffer, 50, fp);\n    printf(\"Second read after rewind: %s\\n\", buffer);\n    fclose(fp);\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates ***rewind***:\n- ```fp = fopen(\"reset.txt\", \"w+\");``` opens 'reset.txt' in read-write mode.\n- ```fprintf(fp, \"First line\");``` writes the string to the file, positioning the pointer at the end.\n- ```fgets(buffer, 50, fp);``` tries to read, but since the pointer is at the end, it reads nothing (empty string).\n- ***rewind(fp);*** resets the file pointer to the beginning.\n- ```fgets(buffer, 50, fp);``` now reads 'First line' successfully.\n- Both reads are printed to show the effect of ***rewind***.\n- ***fclose(fp);*** closes the file."
+  },
+  {
+    "title": "Multiple Data Types in Binary File",
+    "ques": "Develop a C program that writes an integer (100), a double (45.67), and a char ('A') to a binary file 'mixed.bin', then reads them back and prints the values.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    FILE *fp;\n    int w_int = 100, r_int;\n    double w_double = 45.67, r_double;\n    char w_char = 'A', r_char;\n    fp = fopen(\"mixed.bin\", \"wb\");\n    if (fp == NULL) {\n        printf(\"Error opening file!\\n\");\n        return 1;\n    }\n    fwrite(&w_int, sizeof(int), 1, fp);\n    fwrite(&w_double, sizeof(double), 1, fp);\n    fwrite(&w_char, sizeof(char), 1, fp);\n    fclose(fp);\n    fp = fopen(\"mixed.bin\", \"rb\");\n    if (fp == NULL) {\n        printf(\"Error opening file!\\n\");\n        return 1;\n    }\n    fread(&r_int, sizeof(int), 1, fp);\n    fread(&r_double, sizeof(double), 1, fp);\n    fread(&r_char, sizeof(char), 1, fp);\n    printf(\"Read: int=%d, double=%.2f, char=%c\\n\", r_int, r_double, r_char);\n    fclose(fp);\n    return 0;\n}"
+    },
+    "explanation": "This program handles multiple data types in binary:\n- Variables for an ***int***, ***double***, and ***char*** are declared for writing and reading.\n- ```fp = fopen(\"mixed.bin\", \"wb\");``` opens 'mixed.bin' in binary write mode.\n- ```fwrite``` writes each variable with its respective size: ***sizeof(int)***, ***sizeof(double)***, ***sizeof(char)***.\n- The file is closed and reopened in read mode (\"rb\").\n- ```fread``` reads the data back into separate variables in the same order.\n- The values are printed to verify correctness.\n- ***fclose(fp);*** closes the file each time."
+  },
+  {
+    "title": "Simulating Read-Only File Mode",
+    "ques": "Write a C program that attempts to write 'Read only test' to a file 'readonly.txt' opened in read-only mode ('r'), catching the error, then reads from it assuming it already exists.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    FILE *fp;\n    char buffer[50];\n    fp = fopen(\"readonly.txt\", \"r\");\n    if (fp == NULL) {\n        printf(\"Error opening file!\\n\");\n        return 1;\n    }\n    fprintf(fp, \"Read only test\");\n    if (ferror(fp)) {\n        printf(\"Error: Cannot write in read-only mode.\\n\");\n        clearerr(fp);\n    }\n    fgets(buffer, 50, fp);\n    printf(\"Read content: %s\\n\", buffer);\n    fclose(fp);\n    return 0;\n}"
+    },
+    "explanation": "This program simulates read-only behavior:\n- ```fp = fopen(\"readonly.txt\", \"r\");``` opens 'readonly.txt' in read-only mode (\"r\"), assuming it exists.\n- ```fprintf(fp, \"Read only test\");``` attempts to write, which fails in \"r\" mode.\n- ***ferror(fp)*** detects the write error, and a message is printed.\n- ```clearerr(fp);``` clears the error state to allow further operations.\n- ```fgets(buffer, 50, fp);``` reads existing content (if any), though the pointer starts at the beginning.\n- The read content is printed (may be empty if the file was just created elsewhere).\n- ***fclose(fp);*** closes the file.\nNote: True read-only enforcement requires OS-level permissions (e.g., `chmod`), not just C file modes."
+  }
+]

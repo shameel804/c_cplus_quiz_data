@@ -1,0 +1,132 @@
+[
+  {
+    "title": "Sum of Two Types",
+    "ques": "Write a C++ program using a function template to calculate the sum of two values of any numeric type (e.g., int, double). Demonstrate its usage with different types.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n\ntemplate <typename T>\nT add(T a, T b) {\n    return a + b;\n}\n\nint main() {\n    std::cout << \"Int sum: \" << add(5, 3) << std::endl;\n    std::cout << \"Double sum: \" << add(5.5, 3.2) << std::endl;\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates a ***function template***:\n- ```#include <iostream>```: Includes input/output stream library.\n- ```template <typename T>```: Defines a template parameter ***T***, allowing the function to work with any type.\n- ```T add(T a, T b)```: A template function that adds two values of type ***T*** and returns their sum.\n- In ```main()```:\n  - ```add(5, 3)```: Calls the function with integers, outputting ***8***.\n  - ```add(5.5, 3.2)```: Calls it with doubles, outputting ***8.7***.\nThe compiler generates specific versions of the function for each type used."
+  },
+  {
+    "title": "Dynamic Integer Vector",
+    "ques": "Create a C++ program that uses the STL vector container to store integers. Allow the user to input numbers until they enter -1, then display all stored numbers.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <vector>\n\nint main() {\n    std::vector<int> numbers;\n    int input;\n    std::cout << \"Enter numbers (-1 to stop): \";\n    do {\n        std::cin >> input;\n        if (input != -1) numbers.push_back(input);\n    } while (input != -1);\n    std::cout << \"Stored numbers: \";\n    for (int num : numbers) {\n        std::cout << num << \" \";\n    }\n    std::cout << std::endl;\n    return 0;\n}"
+    },
+    "explanation": "This program uses the ***STL vector***:\n- ```#include <vector>```: Includes the vector library.\n- ```std::vector<int> numbers```: Declares a dynamic array of integers.\n- ```do-while``` loop: Takes user input and adds it to the vector using ***push_back*** until -1 is entered.\n- ```for (int num : numbers)```: A range-based for loop iterates over the vector to print each element.\nThe vector automatically manages memory and grows as needed."
+  },
+  {
+    "title": "Word Frequency Counter",
+    "ques": "Write a C++ program using an STL map to count the frequency of words entered by the user. Input ends when the user types 'END'.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <map>\n#include <string>\n\nint main() {\n    std::map<std::string, int> wordCount;\n    std::string word;\n    std::cout << \"Enter words (type 'END' to stop): \";\n    while (std::cin >> word && word != \"END\") {\n        wordCount[word]++;\n    }\n    std::cout << \"Word frequencies:\\n\";\n    for (const auto& pair : wordCount) {\n        std::cout << pair.first << \": \" << pair.second << std::endl;\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program uses an ***STL map***:\n- ```#include <map>```: Includes the map library.\n- ```std::map<std::string, int> wordCount```: A map with string keys (words) and int values (counts).\n- ```wordCount[word]++```: Increments the count for each word; if the word isn’t in the map, it’s added with a default value of 0 before incrementing.\n- ```for (const auto& pair : wordCount)```: Iterates over the map, where ***pair.first*** is the word and ***pair.second*** is its frequency.\nThe map automatically sorts keys alphabetically."
+  },
+  {
+    "title": "Vector Element Doubler",
+    "ques": "Create a C++ program that uses iterators and an STL algorithm to double all elements in a vector of integers. Initialize the vector with {1, 2, 3, 4, 5}.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> vec = {1, 2, 3, 4, 5};\n    std::cout << \"Original: \";\n    for (int n : vec) std::cout << n << \" \";\n    std::for_each(vec.begin(), vec.end(), [](int& n) { n *= 2; });\n    std::cout << \"\\nDoubled: \";\n    for (int n : vec) std::cout << n << \" \";\n    std::cout << std::endl;\n    return 0;\n}"
+    },
+    "explanation": "This program uses ***iterators*** and ***algorithms***:\n- ```#include <algorithm>```: Includes STL algorithms.\n- ```std::vector<int> vec = {1, 2, 3, 4, 5}```: Initializes a vector.\n- ```vec.begin(), vec.end()```: Iterators marking the start and end of the vector.\n- ```std::for_each```: Applies a ***lambda function*** to each element.\n- ```[](int& n) { n *= 2; }```: A lambda that doubles each element by reference.\nOutput shows the original (***1 2 3 4 5***) and doubled (***2 4 6 8 10***) values."
+  },
+  {
+    "title": "Class Template Box",
+    "ques": "Design a C++ class template 'Box' that can store a single item of any type. Include a method to retrieve the item and demonstrate it with an int and a string.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <string>\n\ntemplate <typename T>\nclass Box {\nprivate:\n    T item;\npublic:\n    Box(T value) : item(value) {}\n    T getItem() const { return item; }\n};\n\nint main() {\n    Box<int> intBox(42);\n    Box<std::string> strBox(\"Hello\");\n    std::cout << \"Integer Box: \" << intBox.getItem() << std::endl;\n    std::cout << \"String Box: \" << strBox.getItem() << std::endl;\n    return 0;\n}"
+    },
+    "explanation": "This program defines a ***class template***:\n- ```template <typename T>```: Declares a template parameter ***T***.\n- ```class Box```: A simple class with a private member ***item*** of type ***T***.\n- ```Box(T value)```: Constructor initializing ***item***.\n- ```T getItem()```: Returns the stored item.\n- In ```main()```:\n  - ```Box<int> intBox(42)```: Creates a box for an integer, outputs ***42***.\n  - ```Box<std::string> strBox(\"Hello\")```: Creates a box for a string, outputs ***Hello***.\nThe template allows reuse with any data type."
+  },
+  {
+    "title": "Reverse List Printer",
+    "ques": "Write a C++ program using the STL list container to store integers. Allow the user to input numbers until they enter 0, then print the list in reverse order using a reverse iterator.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <list>\n\nint main() {\n    std::list<int> numbers;\n    int input;\n    std::cout << \"Enter numbers (0 to stop): \";\n    do {\n        std::cin >> input;\n        if (input != 0) numbers.push_back(input);\n    } while (input != 0);\n    std::cout << \"Reversed list: \";\n    for (auto rit = numbers.rbegin(); rit != numbers.rend(); ++rit) {\n        std::cout << *rit << \" \";\n    }\n    std::cout << std::endl;\n    return 0;\n}"
+    },
+    "explanation": "This program uses the ***STL list***:\n- ```#include <list>```: Includes the list library.\n- ```std::list<int> numbers```: Declares a doubly-linked list for integers.\n- ```push_back(input)```: Adds numbers to the end of the list.\n- ```numbers.rbegin(), numbers.rend()```: Reverse iterators starting from the end and moving to the beginning.\n- ```for (auto rit = ...)```: Iterates backward, dereferencing ***rit*** with * to access each value.\nThe list allows efficient insertion and reverse traversal."
+  },
+  {
+    "title": "Filter Even Numbers",
+    "ques": "Create a C++ program that uses a vector, iterators, and a lambda function with an STL algorithm to filter out even numbers from a predefined vector {1, 2, 3, 4, 5, 6, 7, 8, 9, 10} and print the remaining odd numbers.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> vec = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};\n    std::cout << \"Original: \";\n    for (int n : vec) std::cout << n << \" \";\n    auto newEnd = std::remove_if(vec.begin(), vec.end(), [](int n) { return n % 2 == 0; });\n    vec.erase(newEnd, vec.end());\n    std::cout << \"\\nOdd numbers: \";\n    for (int n : vec) std::cout << n << \" \";\n    std::cout << std::endl;\n    return 0;\n}"
+    },
+    "explanation": "This program combines ***iterators***, ***algorithms***, and ***lambdas***:\n- ```std::vector<int> vec```: Initializes with 10 numbers.\n- ```std::remove_if```: Moves even numbers to the end based on the lambda ```[](int n) { return n % 2 == 0; }```, which returns true for even numbers.\n- ```vec.begin(), vec.end()```: Defines the range for the algorithm.\n- ```vec.erase(newEnd, vec.end())```: Removes the even numbers shifted to the end.\nOutput: Original (***1 2 3 4 5 6 7 8 9 10***) becomes Odd (***1 3 5 7 9***)."
+  },
+  {
+    "title": "Generic Pair Comparator",
+    "ques": "Write a C++ program using a class template to define a 'Pair' class that holds two values of any type. Include a method to compare which value is larger (assuming the type supports < operator) and demonstrate with int and double pairs.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n\ntemplate <typename T>\nclass Pair {\nprivate:\n    T first, second;\npublic:\n    Pair(T a, T b) : first(a), second(b) {}\n    T getLarger() const {\n        return (first > second) ? first : second;\n    }\n};\n\nint main() {\n    Pair<int> intPair(5, 9);\n    Pair<double> doublePair(3.14, 2.71);\n    std::cout << \"Larger int: \" << intPair.getLarger() << std::endl;\n    std::cout << \"Larger double: \" << doublePair.getLarger() << std::endl;\n    return 0;\n}"
+    },
+    "explanation": "This program uses a ***class template***:\n- ```template <typename T>```: Allows ***T*** to be any comparable type.\n- ```class Pair```: Stores two values in ***first*** and ***second***.\n- ```Pair(T a, T b)```: Constructor initializes the pair.\n- ```getLarger()```: Uses the > operator to compare and return the larger value.\n- In ```main()```:\n  - ```Pair<int>```: Compares 5 and 9, outputs ***9***.\n  - ```Pair<double>```: Compares 3.14 and 2.71, outputs ***3.14***.\nThe template ensures flexibility across types."
+  },
+  {
+    "title": "Sort Map by Value",
+    "ques": "Write a C++ program that uses an STL map to store string-int pairs, then sorts and prints them by value (not key) using a lambda function and a vector. Use the pairs {'apple': 5, 'banana': 2, 'cherry': 8}.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <map>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::map<std::string, int> fruits = {{\"apple\", 5}, {\"banana\", 2}, {\"cherry\", 8}};\n    std::vector<std::pair<std::string, int>> vec(fruits.begin(), fruits.end());\n    std::sort(vec.begin(), vec.end(), [](const auto& a, const auto& b) {\n        return a.second < b.second;\n    });\n    std::cout << \"Sorted by value:\\n\";\n    for (const auto& p : vec) {\n        std::cout << p.first << \": \" << p.second << std::endl;\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program uses ***map***, ***vector***, and ***lambda***:\n- ```std::map<std::string, int> fruits```: Stores key-value pairs.\n- ```std::vector<...> vec(fruits.begin(), fruits.end())```: Copies map entries into a vector.\n- ```std::sort```: Sorts the vector using a lambda ```[](const auto& a, const auto& b) { return a.second < b.second; }``` to compare values.\n- Output: ***banana: 2, apple: 5, cherry: 8*** (sorted by value).\nThe map’s default key-based sorting is bypassed by using a vector."
+  },
+  {
+    "title": "Template Specialization for Strings",
+    "ques": "Write a C++ program using a function template to print a value of any type. Provide an explicit specialization for strings that adds a prefix 'Text: ' before printing. Test it with an int and a string.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <string>\n\ntemplate <typename T>\nvoid print(T value) {\n    std::cout << value << std::endl;\n}\n\ntemplate <>\nvoid print<std::string>(std::string value) {\n    std::cout << \"Text: \" << value << std::endl;\n}\n\nint main() {\n    print(42);\n    print(std::string(\"Hello\"));\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates ***template specialization***:\n- ```template <typename T> void print```: General template prints any value.\n- ```template <> void print<std::string>```: Specialization for ***std::string*** adds a prefix.\n- In ```main()```:\n  - ```print(42)```: Uses the general template, outputs ***42***.\n  - ```print(std::string(\"Hello\"))```: Uses the specialized version, outputs ***Text: Hello***.\nSpecialization allows custom behavior for specific types."
+  },
+  {
+    "title": "Custom Sorted Vector",
+    "ques": "Create a C++ program that uses a vector and the STL sort algorithm with a custom comparator (lambda) to sort integers in descending order. Initialize with {4, 1, 3, 5, 2}.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> vec = {4, 1, 3, 5, 2};\n    std::cout << \"Original: \";\n    for (int n : vec) std::cout << n << \" \";\n    std::sort(vec.begin(), vec.end(), [](int a, int b) { return a > b; });\n    std::cout << \"\\nDescending: \";\n    for (int n : vec) std::cout << n << \" \";\n    std::cout << std::endl;\n    return 0;\n}"
+    },
+    "explanation": "This program uses ***STL sort*** with a ***lambda comparator***:\n- ```std::vector<int> vec```: Initialized with unsorted values.\n- ```std::sort(vec.begin(), vec.end(), ...)```: Sorts the vector using a lambda ```[](int a, int b) { return a > b; }``` for descending order.\n- Output: Original (***4 1 3 5 2***) becomes Descending (***5 4 3 2 1***).\nThe lambda overrides the default ascending sort."
+  },
+  {
+    "title": "Map to List Transfer",
+    "ques": "Write a C++ program that uses a map to store string-int pairs {'cat': 3, 'dog': 5, 'bird': 2}, then transfers keys with values greater than 3 to an STL list using iterators, and prints the list.",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <map>\n#include <list>\n#include <string>\n\nint main() {\n    std::map<std::string, int> data = {{\"cat\", 3}, {\"dog\", 5}, {\"bird\", 2}};\n    std::list<std::string> filtered;\n    for (auto it = data.begin(); it != data.end(); ++it) {\n        if (it->second > 3) filtered.push_back(it->first);\n    }\n    std::cout << \"Values > 3: \";\n    for (const auto& item : filtered) {\n        std::cout << item << \" \";\n    }\n    std::cout << std::endl;\n    return 0;\n}"
+    },
+    "explanation": "This program combines ***map*** and ***list*** with ***iterators***:\n- ```std::map<std::string, int> data```: Stores key-value pairs.\n- ```std::list<std::string> filtered```: Target list for filtered keys.\n- ```for (auto it = data.begin(); ...)```: Iterates over the map, checking ***it->second*** (value).\n- ```if (it->second > 3)```: Adds keys (***it->first***) with values > 3 to the list.\n- Output: ***dog*** (only 'dog' has value 5 > 3)."
+  },
+  {
+    "title": "Cumulative Sum with Lambda",
+    "ques": "Create a C++ program that uses a vector {1, 2, 3, 4} and the STL for_each algorithm with a lambda to compute and print the cumulative sum of elements (e.g., 1, 3, 6, 10).",
+    "answer": {
+      "type": "code",
+      "lang": "cpp",
+      "content": "#include <iostream>\n#include <vector>\n#include <algorithm>\n\nint main() {\n    std::vector<int> vec = {1, 2, 3, 4};\n    int sum = 0;\n    std::cout << \"Cumulative sum: \";\n    std::for_each(vec.begin(), vec.end(), [&sum](int n) {\n        sum += n;\n        std::cout << sum << \" \";\n    });\n    std::cout << std::endl;\n    return 0;\n}"
+    },
+    "explanation": "This program uses ***for_each*** with a ***lambda***:\n- ```std::vector<int> vec```: Contains initial values.\n- ```int sum = 0```: Tracks the running total.\n- ```std::for_each```: Applies the lambda to each element.\n- ```[&sum](int n) { sum += n; ... }```: Captures ***sum*** by reference, adds the current number, and prints it.\n- Output: ***1 3 6 10*** (cumulative sums: 1, 1+2, 1+2+3, 1+2+3+4)."
+  }
+]

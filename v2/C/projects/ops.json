@@ -1,0 +1,81 @@
+[
+  {
+    "title": "Sum and Compare",
+    "ques": "Write a C program that takes two integers as input, calculates their sum using an arithmetic operator, compares them using a relational operator, and checks if both are positive using a logical operator. Print appropriate messages based on the results.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int a, b, sum;\n    printf(\"Enter two integers: \");\n    scanf(\"%d %d\", &a, &b);\n    sum = a + b;\n    printf(\"Sum is: %d\\n\", sum);\n    if (a > b) {\n        printf(\"%d is greater than %d\\n\", a, b);\n    } else if (a < b) {\n        printf(\"%d is less than %d\\n\", a, b);\n    } else {\n        printf(\"%d is equal to %d\\n\", a, b);\n    }\n    if (a > 0 && b > 0) {\n        printf(\"Both numbers are positive\\n\");\n    } else {\n        printf(\"At least one number is not positive\\n\");\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates arithmetic, relational, and logical operators:\n- ***Line 1***: ```#include <stdio.h>``` includes the standard input-output library.\n- ***Line 2***: ```int main()``` defines the main function.\n- ***Line 3***: Declares variables ```a```, ```b```, and ```sum``` as integers.\n- ***Line 4***: Prompts user input with ```printf```.\n- ***Line 5***: Reads two integers into ```a``` and ```b``` using ```scanf```.\n- ***Line 6***: Uses the arithmetic operator ```+``` to compute ```sum = a + b```.\n- ***Line 7***: Prints the sum.\n- ***Lines 8-14***: Uses relational operators (```>```, ```<```, ```==```) to compare ```a``` and ```b```, printing the result.\n- ***Lines 15-18***: Uses the logical operator ```&&``` (AND) to check if both ```a > 0``` and ```b > 0```, printing the outcome.\n- ***Line 19***: Returns 0 to indicate successful execution."
+  },
+  {
+    "title": "Bitwise Shift and Assign",
+    "ques": "Write a C program that takes an integer input, performs a left shift by 2 bits using a bitwise operator, assigns the result to a variable using an assignment operator, and prints both the original and shifted values in decimal.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int num, shifted;\n    printf(\"Enter an integer: \");\n    scanf(\"%d\", &num);\n    shifted = num << 2;\n    printf(\"Original: %d\\n\", num);\n    printf(\"Shifted left by 2: %d\\n\", shifted);\n    return 0;\n}"
+    },
+    "explanation": "This program uses bitwise and assignment operators:\n- ***Line 1***: ```#include <stdio.h>``` includes the I/O library.\n- ***Line 2***: ```int main()``` starts the program.\n- ***Line 3***: Declares ```num``` for input and ```shifted``` for the result.\n- ***Line 4***: Prompts for an integer.\n- ***Line 5***: Reads input into ```num```.\n- ***Line 6***: Uses the bitwise left shift operator ```<<``` to shift ```num``` left by 2 bits, and the assignment operator ```=``` to store it in ```shifted``` (e.g., 3 becomes 12 because 3 * 2^2 = 12).\n- ***Line 7***: Prints the original value.\n- ***Line 8***: Prints the shifted value.\n- ***Line 9***: Returns 0."
+  },
+  {
+    "title": "Operator Precedence Puzzle",
+    "ques": "Write a C program to evaluate the expression '5 + 3 * 2' and '5 * 2 + 3' without parentheses, demonstrating operator precedence. Print both results and explain the difference.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int result1, result2;\n    result1 = 5 + 3 * 2;\n    result2 = 5 * 2 + 3;\n    printf(\"5 + 3 * 2 = %d\\n\", result1);\n    printf(\"5 * 2 + 3 = %d\\n\", result2);\n    return 0;\n}"
+    },
+    "explanation": "This program shows operator precedence:\n- ***Line 1***: ```#include <stdio.h>``` for I/O functions.\n- ***Line 2***: ```int main()``` begins execution.\n- ***Line 3***: Declares ```result1``` and ```result2```.\n- ***Line 4***: ```result1 = 5 + 3 * 2``` computes 11 because ```*``` (multiplication) has higher precedence than ```+``` (addition), so ```3 * 2 = 6```, then ```5 + 6 = 11```.\n- ***Line 5***: ```result2 = 5 * 2 + 3``` computes 13 because ```*``` is evaluated first, so ```5 * 2 = 10```, then ```10 + 3 = 13```.\n- ***Lines 6-7***: Prints both results.\n- ***Line 8***: Returns 0.\n- ***Note***: Multiplication precedes addition in C’s operator precedence rules."
+  },
+  {
+    "title": "Type Casting Division",
+    "ques": "Write a C program that takes two integers as input, performs integer division, and then casts one operand to float to perform floating-point division. Print both results to show the difference.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int a, b;\n    printf(\"Enter two integers: \");\n    scanf(\"%d %d\", &a, &b);\n    int int_div = a / b;\n    float float_div = (float)a / b;\n    printf(\"Integer division: %d\\n\", int_div);\n    printf(\"Float division: %.2f\\n\", float_div);\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates type casting:\n- ***Line 1***: ```#include <stdio.h>``` includes I/O library.\n- ***Line 2***: ```int main()``` starts the program.\n- ***Line 3***: Declares integers ```a``` and ```b```.\n- ***Line 4***: Prompts user input.\n- ***Line 5***: Reads two integers.\n- ***Line 6***: ```int_div = a / b``` performs integer division, truncating the decimal (e.g., 7 / 2 = 3).\n- ***Line 7***: ```float_div = (float)a / b``` casts ```a``` to float before division, yielding a precise result (e.g., 7.0 / 2 = 3.5).\n- ***Line 8***: Prints integer result.\n- ***Line 9***: Prints float result with 2 decimal places using ```%.2f```.\n- ***Line 10***: Returns 0."
+  },
+  {
+    "title": "Logical Expression Evaluator",
+    "ques": "Write a C program that takes three integers as input and uses logical operators (&&, ||, !) to check if: (1) all three are even, (2) at least one is negative, and (3) none are zero. Print the results of these conditions.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int a, b, c;\n    printf(\"Enter three integers: \");\n    scanf(\"%d %d %d\", &a, &b, &c);\n    int all_even = (a % 2 == 0) && (b % 2 == 0) && (c % 2 == 0);\n    int one_negative = (a < 0) || (b < 0) || (c < 0);\n    int none_zero = !(a == 0) && !(b == 0) && !(c == 0);\n    printf(\"All even: %d\\n\", all_even);\n    printf(\"At least one negative: %d\\n\", one_negative);\n    printf(\"None are zero: %d\\n\", none_zero);\n    return 0;\n}"
+    },
+    "explanation": "This program explores logical operators:\n- ***Line 1***: ```#include <stdio.h>``` includes the I/O library.\n- ***Line 2***: ```int main()``` starts the program.\n- ***Line 3***: Declares three integers ```a```, ```b```, and ```c```.\n- ***Line 4***: Prompts for input.\n- ***Line 5***: Reads three integers.\n- ***Line 6***: Uses ```&&``` (AND) with ```%``` (modulus) and ```==``` to check if all numbers are even (1 if true, 0 if false).\n- ***Line 7***: Uses ```||``` (OR) with ```<``` to check if at least one number is negative.\n- ***Line 8***: Uses ```!``` (NOT) and ```&&``` to check if none are zero.\n- ***Lines 9-11***: Prints results (1 for true, 0 for false).\n- ***Line 12***: Returns 0."
+  },
+  {
+    "title": "Bitwise XOR Swap",
+    "ques": "Write a C program that takes two integers as input and swaps their values using the bitwise XOR operator (^) without using a temporary variable. Print the values before and after swapping.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int a, b;\n    printf(\"Enter two integers: \");\n    scanf(\"%d %d\", &a, &b);\n    printf(\"Before swap: a = %d, b = %d\\n\", a, b);\n    a = a ^ b;\n    b = a ^ b;\n    a = a ^ b;\n    printf(\"After swap: a = %d, b = %d\\n\", a, b);\n    return 0;\n}"
+    },
+    "explanation": "This program uses the bitwise XOR operator for swapping:\n- ***Line 1***: ```#include <stdio.h>``` for I/O.\n- ***Line 2***: ```int main()``` begins execution.\n- ***Line 3***: Declares ```a``` and ```b```.\n- ***Line 4***: Prompts input.\n- ***Line 5***: Reads two integers.\n- ***Line 6***: Prints initial values.\n- ***Line 7***: ```a = a ^ b``` stores XOR of ```a``` and ```b``` in ```a```.\n- ***Line 8***: ```b = a ^ b``` updates ```b``` to original ```a``` value.\n- ***Line 9***: ```a = a ^ b``` updates ```a``` to original ```b``` value (XOR property: ```(a ^ b) ^ b = a```).\n- ***Line 10***: Prints swapped values.\n- ***Line 11***: Returns 0."
+  },
+  {
+    "title": "Associativity in Assignment",
+    "ques": "Write a C program to demonstrate the right-to-left associativity of the assignment operator (=). Assign a value to multiple variables in a single statement and print their values to verify.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int x, y, z;\n    x = y = z = 10;\n    printf(\"x = %d\\n\", x);\n    printf(\"y = %d\\n\", y);\n    printf(\"z = %d\\n\", z);\n    return 0;\n}"
+    },
+    "explanation": "This program shows assignment operator associativity:\n- ***Line 1***: ```#include <stdio.h>``` includes I/O functions.\n- ***Line 2***: ```int main()``` starts the program.\n- ***Line 3***: Declares ```x```, ```y```, and ```z```.\n- ***Line 4***: ```x = y = z = 10``` assigns 10 to ```z```, then ```y```, then ```x``` due to right-to-left associativity of ```=```.\n- ***Lines 5-7***: Prints values, all showing 10.\n- ***Line 8***: Returns 0.\n- ***Note***: The assignment operator ```=``` evaluates from right to left."},
+  {
+    "title": "Implicit Type Conversion",
+    "ques": "Write a C program that multiplies an integer by a float without explicit casting, demonstrating implicit type conversion. Print the result as both an integer and a float to observe the effect.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\nint main() {\n    int a = 5;\n    float b = 2.5;\n    float result = a * b;\n    int int_result = a * b;\n    printf(\"Float result: %.1f\\n\", result);\n    printf(\"Integer result: %d\\n\", int_result);\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates implicit type conversion:\n- ***Line 1***: ```#include <stdio.h>``` for I/O.\n- ***Line 2***: ```int main()``` begins execution.\n- ***Line 3***: Declares ```a``` as an integer with value 5.\n- ***Line 4***: Declares ```b``` as a float with value 2.5.\n- ***Line 5***: ```result = a * b``` implicitly converts ```a``` to float, computes 12.5.\n- ***Line 6***: ```int_result = a * b``` computes 12.5 but truncates to 12 when assigned to an integer.\n- ***Line 7***: Prints float result (12.5).\n- ***Line 8***: Prints integer result (12).\n- ***Line 9***: Returns 0.\n- ***Note***: C promotes the integer to float during multiplication with a float."
+  }
+]

@@ -1,0 +1,202 @@
+[
+  {
+    "title": "Hello World in C#",
+    "ques": "Write a simple C# program that prints 'Hello, World!' to the console to demonstrate the basic structure of a C# application using the .NET framework.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nnamespace HelloWorld\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            Console.WriteLine(\"Hello, World!\");\n        }\n    }\n}"
+    },
+    "explanation": "This program introduces the basic structure of a C# application:\n- ***using System;*** imports the System namespace, which contains fundamental classes like Console.\n- ***namespace HelloWorld*** organizes the code into a logical group to avoid naming conflicts.\n- ***class Program*** defines a class named Program, which is the container for the program logic.\n- ***static void Main(string[] args)*** is the entry point of the application, where execution begins. The ***static*** keyword means it can be called without creating an instance of the class.\n- ***Console.WriteLine(\"Hello, World!\");*** outputs the string 'Hello, World!' to the console, followed by a newline."
+  },
+  {
+    "title": "Variable Declaration and Arithmetic",
+    "ques": "Create a C# program that declares two integer variables, performs addition and multiplication on them, and displays the results.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nnamespace VariableMath\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            int a = 5;\n            int b = 3;\n            int sum = a + b;\n            int product = a * b;\n            Console.WriteLine(\"Sum: \" + sum);\n            Console.WriteLine(\"Product: \" + product);\n        }\n    }\n}"
+    },
+    "explanation": "This program demonstrates variables and operators:\n- ***int a = 5;*** declares and initializes an integer variable ***a*** with the value 5.\n- ***int b = 3;*** declares and initializes another integer variable ***b*** with the value 3.\n- ***int sum = a + b;*** uses the addition operator ***+*** to compute the sum of ***a*** and ***b***, storing it in ***sum***.\n- ***int product = a * b;*** uses the multiplication operator ****** to compute the product, stored in ***product***.\n- ***Console.WriteLine(\"Sum: \" + sum);*** concatenates the string \"Sum: \" with the value of ***sum*** using the ***+*** operator and prints it.\n- The second ***Console.WriteLine*** does the same for the product."
+  },
+  {
+    "title": "User Input and String Formatting",
+    "ques": "Write a C# program that prompts the user to enter their name and age, then prints a formatted greeting message using string interpolation.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nnamespace UserInput\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            Console.Write(\"Enter your name: \");\n            string name = Console.ReadLine();\n            Console.Write(\"Enter your age: \");\n            int age = Convert.ToInt32(Console.ReadLine());\n            Console.WriteLine($\"Hello, {name}! You are {age} years old.\");\n        }\n    }\n}"
+    },
+    "explanation": "This program handles input/output and string formatting:\n- ***Console.Write(\"Enter your name: \");*** displays a prompt without a newline, keeping the cursor on the same line.\n- ***string name = Console.ReadLine();*** reads a line of text input from the user and stores it in the ***name*** variable.\n- ***Console.Write(\"Enter your age: \");*** prompts for the user’s age.\n- ***int age = Convert.ToInt32(Console.ReadLine());*** reads the input as a string, converts it to an integer using ***Convert.ToInt32***, and stores it in ***age***.\n- ***Console.WriteLine($\"Hello, {name}! You are {age} years old.\");*** uses string interpolation with the ***$*** symbol to embed ***name*** and ***age*** directly into the output string."
+  },
+  {
+    "title": "Grade Calculator with Control Statements",
+    "ques": "Develop a C# program that takes a numeric score (0-100) as input and uses if-else statements to determine and print the corresponding letter grade (A, B, C, D, or F).",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nnamespace GradeCalculator\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            Console.Write(\"Enter your score (0-100): \");\n            int score = Convert.ToInt32(Console.ReadLine());\n            string grade;\n            if (score >= 90)\n                grade = \"A\";\n            else if (score >= 80)\n                grade = \"B\";\n            else if (score >= 70)\n                grade = \"C\";\n            else if (score >= 60)\n                grade = \"D\";\n            else\n                grade = \"F\";\n            Console.WriteLine($\"Your grade is: {grade}\");\n        }\n    }\n}"
+    },
+    "explanation": "This program uses control statements to assign a grade:\n- ***Console.Write(\"Enter your score (0-100): \");*** prompts the user for input.\n- ***int score = Convert.ToInt32(Console.ReadLine());*** converts the user’s input into an integer.\n- ***string grade;*** declares a variable to store the letter grade.\n- ***if (score >= 90)*** checks if the score is 90 or above; if true, ***grade = \"A\";*** is executed.\n- ***else if (score >= 80)*** checks the next range (80-89) for a B, and so on down to ***else***, which assigns an F for scores below 60.\n- The ***if-else*** chain evaluates conditions sequentially, stopping at the first true condition.\n- ***Console.WriteLine($\"Your grade is: {grade}\");*** outputs the computed grade using string interpolation."
+  },
+  {
+    "title": "Multiplication Table with Loops",
+    "ques": "Write a C# program that uses a for loop to print the multiplication table of a number entered by the user (from 1 to 10).",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nnamespace MultiplicationTable\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            Console.Write(\"Enter a number: \");\n            int number = Convert.ToInt32(Console.ReadLine());\n            for (int i = 1; i <= 10; i++)\n            {\n                Console.WriteLine($\"{number} x {i} = {number * i}\");\n            }\n        }\n    }\n}"
+    },
+    "explanation": "This program demonstrates loops:\n- ***Console.Write(\"Enter a number: \");*** prompts the user to input a number.\n- ***int number = Convert.ToInt32(Console.ReadLine());*** stores the input as an integer.\n- ***for (int i = 1; i <= 10; i++)*** initializes ***i*** to 1, runs the loop while ***i <= 10***, and increments ***i*** by 1 each iteration.\n- Inside the loop, ***Console.WriteLine($\"{number} x {i} = {number * i}\");*** uses string interpolation to format and print each line of the multiplication table.\n- The expression ***number * i*** calculates the product for each value of ***i*** from 1 to 10."
+  },
+  {
+    "title": "Environment Info Display",
+    "ques": "Write a C# program that uses the .NET framework to display the current operating system version and the .NET runtime version to demonstrate basic interaction with the environment.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nnamespace EnvironmentInfo\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            string osVersion = Environment.OSVersion.ToString();\n            string runtimeVersion = Environment.Version.ToString();\n            Console.WriteLine(\"Operating System: \" + osVersion);\n            Console.WriteLine(\"Runtime Version: \" + runtimeVersion);\n        }\n    }\n}"
+    },
+    "explanation": "This program explores .NET environment properties:\n- ***using System;*** imports the System namespace, which includes the ***Environment*** class.\n- ***string osVersion = Environment.OSVersion.ToString();*** retrieves the operating system version using ***Environment.OSVersion*** and converts it to a string.\n- ***string runtimeVersion = Environment.Version.ToString();*** gets the .NET runtime version.\n- ***Console.WriteLine(\"Operating System: \" + osVersion);*** concatenates and prints the OS version.\n- The second ***Console.WriteLine*** does the same for the runtime version.\nThis showcases how C# can interact with the .NET environment."
+  },
+  {
+    "title": "Type Conversion and Modulus",
+    "ques": "Create a C# program that declares a double variable for a price, converts it to an integer, and uses the modulus operator to check if the original price has cents (i.e., is not a whole number).",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nnamespace TypeConversion\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            double price = 12.75;\n            int wholePrice = (int)price;\n            bool hasCents = (price % 1) != 0;\n            Console.WriteLine(\"Original Price: \" + price);\n            Console.WriteLine(\"Whole Price: \" + wholePrice);\n            Console.WriteLine(\"Has Cents? \" + hasCents);\n        }\n    }\n}"
+    },
+    "explanation": "This program demonstrates data types and operators:\n- ***double price = 12.75;*** declares a double variable with a decimal value.\n- ***int wholePrice = (int)price;*** explicitly converts ***price*** to an integer using a cast, truncating the decimal part to 12.\n- ***bool hasCents = (price % 1) != 0;*** uses the modulus operator ***%*** to get the remainder of ***price*** divided by 1 (i.e., the decimal part). If it’s not 0, ***hasCents*** is ***true***.\n- ***Console.WriteLine(\"Original Price: \" + price);*** prints the original value.\n- The next two ***Console.WriteLine*** statements display the truncated integer and whether cents are present."
+  },
+  {
+    "title": "Formatted Receipt Output",
+    "ques": "Write a C# program that takes a product name and price as input, then outputs a formatted receipt-like string using the string format method with currency alignment.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nnamespace ReceiptOutput\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            Console.Write(\"Enter product name: \");\n            string product = Console.ReadLine();\n            Console.Write(\"Enter price: \");\n            double price = Convert.ToDouble(Console.ReadLine());\n            string receipt = String.Format(\"{0,-20} | {1,10:C}\", product, price);\n            Console.WriteLine(\"=== Receipt ===\");\n            Console.WriteLine(receipt);\n        }\n    }\n}"
+    },
+    "explanation": "This program focuses on string formatting:\n- ***Console.Write(\"Enter product name: \");*** prompts for a product name.\n- ***string product = Console.ReadLine();*** stores the input as a string.\n- ***double price = Convert.ToDouble(Console.ReadLine());*** converts the price input to a ***double***.\n- ***string receipt = String.Format(\"{0,-20} | {1,10:C}\", product, price);*** uses ***String.Format***: ***{0,-20}*** left-aligns the product name in a 20-character field, and ***{1,10:C}*** right-aligns the price in a 10-character field with currency formatting (e.g., $12.34).\n- ***Console.WriteLine(\"=== Receipt ===\");*** and the next line print a simple receipt layout."
+  },
+  {
+    "title": "Day of the Week with Switch",
+    "ques": "Develop a C# program that takes a number (1-7) as input and uses a switch statement to print the corresponding day of the week.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nnamespace DayOfWeek\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            Console.Write(\"Enter a number (1-7): \");\n            int dayNumber = Convert.ToInt32(Console.ReadLine());\n            string day;\n            switch (dayNumber)\n            {\n                case 1: day = \"Monday\"; break;\n                case 2: day = \"Tuesday\"; break;\n                case 3: day = \"Wednesday\"; break;\n                case 4: day = \"Thursday\"; break;\n                case 5: day = \"Friday\"; break;\n                case 6: day = \"Saturday\"; break;\n                case 7: day = \"Sunday\"; break;\n                default: day = \"Invalid day\"; break;\n            }\n            Console.WriteLine($\"Day: {day}\");\n        }\n    }\n}"
+    },
+    "explanation": "This program uses a switch statement:\n- ***int dayNumber = Convert.ToInt32(Console.ReadLine());*** converts the input to an integer.\n- ***string day;*** declares a variable for the day name.\n- ***switch (dayNumber)*** evaluates ***dayNumber*** and matches it to a ***case***.\n- Each ***case*** (e.g., ***case 1: day = \"Monday\"; break;***) assigns the corresponding day and ***break;*** exits the switch.\n- ***default:*** handles invalid inputs (numbers outside 1-7).\n- ***Console.WriteLine($\"Day: {day}\");*** prints the result using string interpolation."
+  },
+  {
+    "title": "Sum of Even Numbers with While Loop",
+    "ques": "Write a C# program that calculates and prints the sum of even numbers from 1 to a user-specified limit using a while loop.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nnamespace EvenSum\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            Console.Write(\"Enter a limit: \");\n            int limit = Convert.ToInt32(Console.ReadLine());\n            int number = 1;\n            int sum = 0;\n            while (number <= limit)\n            {\n                if (number % 2 == 0)\n                    sum += number;\n                number++;\n            }\n            Console.WriteLine($\"Sum of even numbers up to {limit}: {sum}\");\n        }\n    }\n}"
+    },
+    "explanation": "This program uses a while loop:\n- ***int limit = Convert.ToInt32(Console.ReadLine());*** gets the upper limit from the user.\n- ***int number = 1;*** initializes a counter.\n- ***int sum = 0;*** initializes the sum variable.\n- ***while (number <= limit)*** loops until ***number*** exceeds ***limit***.\n- Inside the loop, ***if (number % 2 == 0)*** checks if ***number*** is even using the modulus operator; if true, ***sum += number;*** adds it to ***sum***.\n- ***number++;*** increments the counter.\n- ***Console.WriteLine($\"Sum of even numbers up to {limit}: {sum}\");*** displays the final sum."
+  },
+  {
+    "title": "Machine Info with .NET",
+    "ques": "Write a C# program that uses the .NET framework to display the machine name and the number of processors available, showcasing basic system interaction.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nnamespace MachineInfo\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            string machineName = Environment.MachineName;\n            int processorCount = Environment.ProcessorCount;\n            Console.WriteLine(\"Machine Name: \" + machineName);\n            Console.WriteLine(\"Processor Count: \" + processorCount);\n        }\n    }\n}"
+    },
+    "explanation": "This program introduces .NET system properties:\n- ***using System;*** provides access to the ***Environment*** class.\n- ***string machineName = Environment.MachineName;*** retrieves the name of the current machine.\n- ***int processorCount = Environment.ProcessorCount;*** gets the number of logical processors.\n- ***Console.WriteLine(\"Machine Name: \" + machineName);*** concatenates and prints the machine name.\n- The second ***Console.WriteLine*** outputs the processor count.\nThis demonstrates how C# can access system-level information via .NET."
+  },
+  {
+    "title": "Bitwise Operator Check",
+    "ques": "Create a C# program that declares two integers, performs a bitwise AND operation, and checks if the result is non-zero to determine if both numbers share common set bits.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nnamespace BitwiseCheck\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            int num1 = 5;  // Binary: 0101\n            int num2 = 3;  // Binary: 0011\n            int result = num1 & num2;  // Binary: 0001 (1)\n            bool hasCommonBits = result != 0;\n            Console.WriteLine(\"Number 1: \" + num1);\n            Console.WriteLine(\"Number 2: \" + num2);\n            Console.WriteLine(\"Bitwise AND Result: \" + result);\n            Console.WriteLine(\"Common Bits? \" + hasCommonBits);\n        }\n    }\n}"
+    },
+    "explanation": "This program explores bitwise operators:\n- ***int num1 = 5;*** sets ***num1*** to 5 (binary: ***0101***).\n- ***int num2 = 3;*** sets ***num2*** to 3 (binary: ***0011***).\n- ***int result = num1 & num2;*** performs a bitwise AND (***&***), comparing each bit; result is 1 (binary: ***0001***).\n- ***bool hasCommonBits = result != 0;*** checks if the result is non-zero, indicating common set bits (true here since 1 ≠ 0).\n- The ***Console.WriteLine*** statements display the inputs, result, and conclusion."
+  },
+  {
+    "title": "Padded Number Table",
+    "ques": "Write a C# program that takes a number of rows as input and prints a table of numbers from 1 to 10, padded with leading zeros to a width of 3, using composite formatting.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nnamespace PaddedTable\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            Console.Write(\"Enter number of rows: \");\n            int rows = Convert.ToInt32(Console.ReadLine());\n            for (int i = 1; i <= rows; i++)\n            {\n                Console.WriteLine(\"Row {0:D2}: {1:D3} {2:D3} {3:D3}\", i, i * 1, i * 2, i * 3);\n            }\n        }\n    }\n}"
+    },
+    "explanation": "This program uses composite formatting:\n- ***int rows = Convert.ToInt32(Console.ReadLine());*** gets the number of rows.\n- ***for (int i = 1; i <= rows; i++)*** loops from 1 to the specified number of rows.\n- ***Console.WriteLine(\"Row {0:D2}: {1:D3} {2:D3} {3:D3}\", i, i * 1, i * 2, i * 3);*** uses composite formatting:\n  - ***{0:D2}*** pads the row number to 2 digits (e.g., 01).\n  - ***{1:D3}***, ***{2:D3}***, ***{3:D3}*** pad the multiples to 3 digits (e.g., 001).\nThe output creates a neatly aligned table with padded numbers."
+  },
+  {
+    "title": "Vowel or Consonant with Switch",
+    "ques": "Develop a C# program that takes a single character as input and uses a switch statement to determine if it’s a vowel or consonant (considering only lowercase a-z).",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nnamespace VowelCheck\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            Console.Write(\"Enter a letter (a-z): \");\n            char letter = Console.ReadLine()[0];\n            string result;\n            switch (letter)\n            {\n                case 'a':\n                case 'e':\n                case 'i':\n                case 'o':\n                case 'u': result = \"Vowel\"; break;\n                default:\n                    if (letter >= 'a' && letter <= 'z')\n                        result = \"Consonant\";\n                    else\n                        result = \"Invalid input\";\n                    break;\n            }\n            Console.WriteLine($\"The letter '{letter}' is a {result}\");\n        }\n    }\n}"
+    },
+    "explanation": "This program uses a switch for character classification:\n- ***char letter = Console.ReadLine()[0];*** takes the first character of the input.\n- ***string result;*** holds the classification.\n- ***switch (letter)*** checks ***letter*** against cases:\n  - ***case 'a':*** to ***case 'u':*** stack to match vowels, setting ***result = \"Vowel\"*** if any match.\n  - ***default:*** handles all other cases; ***if (letter >= 'a' && letter <= 'z')*** ensures it’s a lowercase letter, marking it as a consonant, otherwise ***Invalid input***.\n- ***Console.WriteLine($\"The letter '{letter}' is a {result}\");*** outputs the result."
+  },
+  {
+    "title": "Guess the Number with Do-While",
+    "ques": "Write a C# program that generates a random number between 1 and 10, then uses a do-while loop to prompt the user to guess it until they get it right, showing the number of attempts.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nnamespace GuessNumber\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            Random rand = new Random();\n            int target = rand.Next(1, 11);\n            int guess;\n            int attempts = 0;\n            do\n            {\n                Console.Write(\"Guess a number (1-10): \");\n                guess = Convert.ToInt32(Console.ReadLine());\n                attempts++;\n            } while (guess != target);\n            Console.WriteLine($\"Correct! It took you {attempts} attempts.\");\n        }\n    }\n}"
+    },
+    "explanation": "This program uses a do-while loop:\n- ***Random rand = new Random();*** creates a random number generator.\n- ***int target = rand.Next(1, 11);*** generates a number from 1 to 10 (inclusive).\n- ***int guess;*** and ***int attempts = 0;*** track the user’s guess and attempt count.\n- ***do { ... } while (guess != target);*** runs at least once, prompting for a guess and incrementing ***attempts***, repeating until ***guess*** equals ***target***.\n- ***Console.WriteLine($\"Correct! It took you {attempts} attempts.\");*** displays the success message with the attempt count."
+  },
+  {
+    "title": "Current Time with .NET",
+    "ques": "Write a C# program that uses the .NET framework to display the current date and time in a readable format, demonstrating basic use of DateTime.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nnamespace CurrentTime\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            DateTime now = DateTime.Now;\n            Console.WriteLine(\"Current Date and Time: \" + now.ToString(\"MMMM dd, yyyy HH:mm:ss\"));\n        }\n    }\n}"
+    },
+    "explanation": "This program introduces .NET’s DateTime:\n- ***using System;*** includes the namespace for ***DateTime***.\n- ***DateTime now = DateTime.Now;*** gets the current date and time from the system.\n- ***Console.WriteLine(\"Current Date and Time: \" + now.ToString(\"MMMM dd, yyyy HH:mm:ss\"));*** formats the output:\n  - ***MMMM***: full month name (e.g., April).\n  - ***dd***: day with leading zero.\n  - ***yyyy***: four-digit year.\n  - ***HH:mm:ss***: 24-hour time with hours, minutes, and seconds.\nThe result might look like 'Current Date and Time: April 10, 2025 14:30:45'."
+  },
+  {
+    "title": "Short-Circuit Logical Check",
+    "ques": "Create a C# program that declares an integer for age and a boolean for parental consent, then uses short-circuit logical operators to determine if a person can enter an event (age >= 18 or has consent).",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nnamespace LogicalCheck\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            int age = 16;\n            bool hasConsent = true;\n            bool canEnter = (age >= 18) || (hasConsent == true);\n            Console.WriteLine(\"Age: \" + age);\n            Console.WriteLine(\"Has Consent: \" + hasConsent);\n            Console.WriteLine(\"Can Enter? \" + canEnter);\n        }\n    }\n}"
+    },
+    "explanation": "This program uses logical operators:\n- ***int age = 16;*** sets an age value.\n- ***bool hasConsent = true;*** indicates parental consent.\n- ***bool canEnter = (age >= 18) || (hasConsent == true);*** uses ***||*** (OR with short-circuit evaluation):\n  - If ***age >= 18*** is true, it skips checking ***hasConsent***.\n  - Here, ***age >= 18*** is false, but ***hasConsent == true*** is true, so ***canEnter*** is true.\n- The ***Console.WriteLine*** statements display the inputs and result."
+  },
+  {
+    "title": "ASCII Art with Escape Sequences",
+    "ques": "Write a C# program that takes a user’s name and prints it inside a simple ASCII art box using escape sequences for newlines and tabs.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nnamespace ASCIIArt\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            Console.Write(\"Enter your name: \");\n            string name = Console.ReadLine();\n            Console.WriteLine(\"\\n\\t+-------+\");\n            Console.WriteLine(\"\\t|  \" + name + \"  |\");\n            Console.WriteLine(\"\\t+-------+\");\n        }\n    }\n}"
+    },
+    "explanation": "This program uses escape sequences for formatting:\n- ***string name = Console.ReadLine();*** gets the user’s name.\n- ***Console.WriteLine(\"\\n\\t+-------+\");***:\n  - ***\\n*** adds a newline before the box.\n  - ***\\t*** adds a tab for indentation.\n- ***Console.WriteLine(\"\\t|  \" + name + \"  |\");*** prints the name centered in the box with tabs and spaces.\n- The final ***Console.WriteLine*** closes the box.\nOutput might look like:\n\t+-------+\n\t|  Alex  |\n\t+-------+"
+  },
+  {
+    "title": "Odd/Even Counter with Nested If",
+    "ques": "Develop a C# program that takes a range limit as input and uses nested if statements within a loop to count odd and even numbers up to that limit.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nnamespace OddEvenCounter\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            Console.Write(\"Enter a limit: \");\n            int limit = Convert.ToInt32(Console.ReadLine());\n            int evenCount = 0;\n            int oddCount = 0;\n            for (int i = 1; i <= limit; i++)\n            {\n                if (i % 2 == 0)\n                {\n                    evenCount++;\n                }\n                else\n                {\n                    oddCount++;\n                }\n            }\n            Console.WriteLine($\"Even numbers: {evenCount}\");\n            Console.WriteLine($\"Odd numbers: {oddCount}\");\n        }\n    }\n}"
+    },
+    "explanation": "This program uses nested control structures:\n- ***int limit = Convert.ToInt32(Console.ReadLine());*** gets the range limit.\n- ***int evenCount = 0;*** and ***int oddCount = 0;*** initialize counters.\n- ***for (int i = 1; i <= limit; i++)*** loops from 1 to ***limit***.\n- ***if (i % 2 == 0)*** checks if ***i*** is even:\n  - If true, ***evenCount++*** increments the even counter.\n  - ***else*** triggers for odd numbers, incrementing ***oddCount***.\n- The final ***Console.WriteLine*** statements display the counts."
+  },
+  {
+    "title": "Pattern Printer with Nested Loops",
+    "ques": "Write a C# program that takes a number of rows as input and uses nested loops to print a right-angled triangle pattern of asterisks (*).",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nnamespace PatternPrinter\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            Console.Write(\"Enter number of rows: \");\n            int rows = Convert.ToInt32(Console.ReadLine());\n            for (int i = 1; i <= rows; i++)\n            {\n                for (int j = 1; j <= i; j++)\n                {\n                    Console.Write(\"* \");\n                }\n                Console.WriteLine();\n            }\n        }\n    }\n}"
+    },
+    "explanation": "This program uses nested loops for a pattern:\n- ***int rows = Convert.ToInt32(Console.ReadLine());*** gets the number of rows.\n- ***for (int i = 1; i <= rows; i++)*** controls the number of lines.\n- ***for (int j = 1; j <= i; j++)*** prints ***i*** asterisks on each line:\n  - On row 1, prints 1 *; row 2, 2 *s, etc.\n- ***Console.Write(\"* \");*** prints an asterisk with a space, staying on the same line.\n- ***Console.WriteLine();*** moves to the next line after each row.\nFor ***rows = 3***, output is:\n* \n* * \n* * * "
+  }
+]

@@ -1,0 +1,182 @@
+[
+  {
+    "title": "Allocate and Free an Integer Array",
+    "ques": "Write a C program that dynamically allocates memory for an array of 5 integers using malloc, assigns values to it, prints them, and then frees the memory.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *arr;\n    int n = 5;\n    arr = (int *)malloc(n * sizeof(int));\n    if (arr == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        return 1;\n    }\n    for (int i = 0; i < n; i++) {\n        arr[i] = i + 1;\n    }\n    printf(\"Array elements: \");\n    for (int i = 0; i < n; i++) {\n        printf(\"%d \", arr[i]);\n    }\n    printf(\"\\n\");\n    free(arr);\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates basic dynamic memory allocation using ***malloc***:\n- ```#include <stdlib.h>``` includes the library for memory functions.\n- ```int *arr;``` declares a pointer to hold the dynamically allocated memory.\n- ```arr = (int *)malloc(n * sizeof(int));``` allocates memory for 5 integers. ***sizeof(int)*** ensures portability across systems.\n- The ***if (arr == NULL)*** check ensures allocation succeeded; if not, it exits with an error.\n- A loop assigns values 1 to 5 to the array.\n- Another loop prints the values.\n- ```free(arr);``` releases the allocated memory to prevent memory leaks."
+  },
+  {
+    "title": "Initialize Array with Calloc",
+    "ques": "Create a C program that uses calloc to allocate memory for an array of 4 floats, initializes them to zero, modifies two elements, and prints the array.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    float *arr;\n    int n = 4;\n    arr = (float *)calloc(n, sizeof(float));\n    if (arr == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        return 1;\n    }\n    arr[1] = 5.5;\n    arr[3] = 9.9;\n    printf(\"Array elements: \");\n    for (int i = 0; i < n; i++) {\n        printf(\"%.1f \", arr[i]);\n    }\n    printf(\"\\n\");\n    free(arr);\n    return 0;\n}"
+    },
+    "explanation": "This program uses ***calloc*** for allocation:\n- ```calloc(n, sizeof(float))``` allocates memory for 4 floats and initializes them to 0, unlike ***malloc***.\n- ```float *arr;``` is a pointer to float for the array.\n- After allocation, ```arr[1] = 5.5;``` and ```arr[3] = 9.9;``` modify specific elements.\n- The loop prints all elements, showing 0.0 for unchanged ones due to ***calloc***’s initialization.\n- ```free(arr);``` deallocates the memory, ensuring no leaks."
+  },
+  {
+    "title": "Resize Array with Realloc",
+    "ques": "Write a C program that allocates memory for an array of 3 integers using malloc, resizes it to 6 integers using realloc, assigns values, and prints them.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *arr;\n    int n = 3;\n    arr = (int *)malloc(n * sizeof(int));\n    if (arr == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        return 1;\n    }\n    for (int i = 0; i < n; i++) {\n        arr[i] = i + 1;\n    }\n    arr = (int *)realloc(arr, 6 * sizeof(int));\n    if (arr == NULL) {\n        printf(\"Reallocation failed!\\n\");\n        return 1;\n    }\n    for (int i = 3; i < 6; i++) {\n        arr[i] = i + 1;\n    }\n    printf(\"Array elements: \");\n    for (int i = 0; i < 6; i++) {\n        printf(\"%d \", arr[i]);\n    }\n    printf(\"\\n\");\n    free(arr);\n    return 0;\n}"
+    },
+    "explanation": "This program showcases ***realloc***:\n- Initially, ```malloc(3 * sizeof(int))``` allocates space for 3 integers.\n- Values 1, 2, 3 are assigned.\n- ```realloc(arr, 6 * sizeof(int))``` resizes the array to hold 6 integers, preserving existing data.\n- New elements (indices 3 to 5) are assigned values 4, 5, 6.\n- The loop prints all 6 elements.\n- ```free(arr);``` cleans up the memory."
+  },
+  {
+    "title": "Memory Leak Example",
+    "ques": "Write a C program that demonstrates a memory leak by allocating memory for an array but not freeing it, and explain the issue.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *arr;\n    arr = (int *)malloc(5 * sizeof(int));\n    if (arr == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        return 1;\n    }\n    for (int i = 0; i < 5; i++) {\n        arr[i] = i + 10;\n    }\n    printf(\"Array allocated but not freed.\\n\");\n    return 0;\n}"
+    },
+    "explanation": "This program illustrates a ***memory leak***:\n- ```malloc(5 * sizeof(int))``` allocates memory for 5 integers.\n- Values are assigned, but there’s no ```free(arr);``` call.\n- When the program ends, the memory remains allocated but inaccessible, causing a leak.\n- In larger programs, repeated leaks can exhaust system memory.\n- To fix this, add ```free(arr);``` before ```return 0;```."
+  },
+  {
+    "title": "Pointer to Dynamic Memory",
+    "ques": "Create a C program that uses a pointer to dynamically allocate memory for a single double, assigns a value via the pointer, and prints it.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    double *ptr;\n    ptr = (double *)malloc(sizeof(double));\n    if (ptr == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        return 1;\n    }\n    *ptr = 42.75;\n    printf(\"Value at pointer: %.2f\\n\", *ptr);\n    free(ptr);\n    return 0;\n}"
+    },
+    "explanation": "This program uses a pointer with dynamic memory:\n- ```double *ptr;``` declares a pointer to a double.\n- ```malloc(sizeof(double))``` allocates memory for one double.\n- ```*ptr = 42.75;``` assigns a value using dereferencing.\n- ```printf``` accesses the value via ```*ptr```.\n- ```free(ptr);``` ensures no memory leak occurs."
+  },
+  {
+    "title": "Structure with Dynamic Memory",
+    "ques": "Write a C program that defines a structure for a student with a dynamically allocated name string, allocates memory for it, assigns a name, and prints it.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nstruct Student {\n    char *name;\n    int age;\n};\n\nint main() {\n    struct Student *s;\n    s = (struct Student *)malloc(sizeof(struct Student));\n    if (s == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        return 1;\n    }\n    s->name = (char *)malloc(20 * sizeof(char));\n    if (s->name == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        free(s);\n        return 1;\n    }\n    strcpy(s->name, \"Alice\");\n    s->age = 20;\n    printf(\"Student: %s, Age: %d\\n\", s->name, s->age);\n    free(s->name);\n    free(s);\n    return 0;\n}"
+    },
+    "explanation": "This program uses dynamic memory in a structure:\n- ```struct Student``` defines a structure with a ***char *name*** pointer and an integer age.\n- ```malloc(sizeof(struct Student))``` allocates memory for the structure.\n- ```s->name = (char *)malloc(20 * sizeof(char))``` allocates space for the name string.\n- ```strcpy(s->name, \"Alice\")``` copies the name into the allocated memory.\n- The age is set directly as ```s->age = 20```.\n- Both ```s->name``` and ```s``` are freed separately to avoid leaks."
+  },
+  {
+    "title": "Dangling Pointer After Free",
+    "ques": "Write a C program that allocates memory for an integer, assigns a value, frees it, and demonstrates a dangling pointer issue by attempting to access it afterward.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *ptr;\n    ptr = (int *)malloc(sizeof(int));\n    if (ptr == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        return 1;\n    }\n    *ptr = 100;\n    printf(\"Before free: %d\\n\", *ptr);\n    free(ptr);\n    printf(\"After free (dangling): %d\\n\", *ptr); // Undefined behavior\n    ptr = NULL; // Prevent dangling pointer\n    printf(\"After setting to NULL: %p\\n\", (void *)ptr);\n    return 0;\n}"
+    },
+    "explanation": "This program highlights a ***dangling pointer*** issue:\n- ```malloc(sizeof(int))``` allocates memory for an integer, and ```*ptr = 100``` assigns a value.\n- ```free(ptr)``` releases the memory, but ```ptr``` still points to that location, making it a dangling pointer.\n- Accessing ```*ptr``` after freeing (```printf(\"After free...\")```) causes undefined behavior—results are unpredictable.\n- Setting ```ptr = NULL``` afterward prevents accidental misuse, a good practice to avoid dangling pointers."
+  },
+  {
+    "title": "Dynamic 2D Array with Malloc",
+    "ques": "Create a C program that dynamically allocates a 3x4 2D array of integers using malloc, fills it with row-major values (e.g., 1, 2, 3...), and prints it.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int rows = 3, cols = 4;\n    int **arr;\n    arr = (int **)malloc(rows * sizeof(int *));\n    if (arr == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        return 1;\n    }\n    for (int i = 0; i < rows; i++) {\n        arr[i] = (int *)malloc(cols * sizeof(int));\n        if (arr[i] == NULL) {\n            printf(\"Memory allocation failed!\\n\");\n            for (int j = 0; j < i; j++) free(arr[j]);\n            free(arr);\n            return 1;\n        }\n    }\n    int value = 1;\n    for (int i = 0; i < rows; i++) {\n        for (int j = 0; j < cols; j++) {\n            arr[i][j] = value++;\n        }\n    }\n    for (int i = 0; i < rows; i++) {\n        for (int j = 0; j < cols; j++) {\n            printf(\"%2d \", arr[i][j]);\n        }\n        printf(\"\\n\");\n    }\n    for (int i = 0; i < rows; i++) {\n        free(arr[i]);\n    }\n    free(arr);\n    return 0;\n}"
+    },
+    "explanation": "This program creates a ***dynamic 2D array***:\n- ```int **arr``` is a pointer to pointers, representing the array.\n- ```malloc(rows * sizeof(int *))``` allocates memory for the row pointers.\n- A loop uses ```malloc(cols * sizeof(int))``` to allocate each row’s columns.\n- Error checking ensures partial allocations are freed if any fail.\n- Values are filled in row-major order (1 to 12).\n- Nested loops print the array.\n- Memory is freed in reverse: first each row (```free(arr[i])```), then the row pointers (```free(arr)```)."
+  },
+  {
+    "title": "Realloc Failure Handling",
+    "ques": "Write a C program that allocates memory for 5 integers, attempts to realloc to 10 integers, and handles the case where realloc fails without losing the original data.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *arr, *temp;\n    int n = 5;\n    arr = (int *)malloc(n * sizeof(int));\n    if (arr == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        return 1;\n    }\n    for (int i = 0; i < n; i++) {\n        arr[i] = i + 1;\n    }\n    temp = (int *)realloc(arr, 10 * sizeof(int));\n    if (temp == NULL) {\n        printf(\"Reallocation failed, original data preserved.\\n\");\n        printf(\"Original array: \");\n        for (int i = 0; i < n; i++) {\n            printf(\"%d \", arr[i]);\n        }\n        printf(\"\\n\");\n        free(arr);\n    } else {\n        arr = temp;\n        for (int i = 5; i < 10; i++) {\n            arr[i] = i + 1;\n        }\n        printf(\"Resized array: \");\n        for (int i = 0; i < annuale10; i++) {\n            printf(\"%d \", arr[i]);\n        }\n        printf(\"\\n\");\n        free(arr);\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates safe ***realloc*** usage:\n- ```malloc``` allocates space for 5 integers, filled with 1 to 5.\n- ```temp = (int *)realloc(arr, 10 * sizeof(int))``` attempts to resize.\n- If ```realloc``` fails (```temp == NULL```), the original ```arr``` is intact, and its data is printed before freeing.\n- If successful, ```arr = temp``` updates the pointer, new elements are assigned, and the full array is printed.\n- This approach prevents data loss on ***realloc*** failure."
+  },
+  {
+    "title": "Structure Array with Dynamic Memory",
+    "ques": "Create a C program that defines a structure for a book with dynamically allocated title and author strings, allocates an array of 2 books, assigns values, and prints them.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nstruct Book {\n    char *title;\n    char *author;\n    int year;\n};\n\nint main() {\n    struct Book *books;\n    int n = 2;\n    books = (struct Book *)malloc(n * sizeof(struct Book));\n    if (books == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        return 1;\n    }\n    books[0].title = (char *)malloc(20 * sizeof(char));\n    books[0].author = (char *)malloc(20 * sizeof(char));\n    books[1].title = (char *)malloc(20 * sizeof(char));\n    books[1].author = (char *)malloc(20 * sizeof(char));\n    if (!books[0].title || !books[0].author || !books[1].title || !books[1].author) {\n        printf(\"Memory allocation failed!\\n\");\n        for (int i = 0; i < n; i++) {\n            free(books[i].title);\n            free(books[i].author);\n        }\n        free(books);\n        return 1;\n    }\n    strcpy(books[0].title, \"1984\");\n    strcpy(books[0].author, \"George Orwell\");\n    books[0].year = 1949;\n    strcpy(books[1].title, \"Dune\");\n    strcpy(books[1].author, \"Frank Herbert\");\n    books[1].year = 1965;\n    for (int i = 0; i < n; i++) {\n        printf(\"Book %d: %s by %s (%d)\\n\", i + 1, books[i].title, books[i].author, books[i].year);\n    }\n    for (int i = 0; i < n; i++) {\n        free(books[i].title);\n        free(books[i].author);\n    }\n    free(books);\n    return 0;\n}"
+    },
+    "explanation": "This program uses dynamic memory for a ***structure array***:\n- ```struct Book``` has pointers ```title``` and ```author```, plus an integer ```year```.\n- ```malloc(n * sizeof(struct Book))``` allocates an array of 2 books.\n- For each book, ```malloc(20 * sizeof(char))``` allocates memory for ```title``` and ```author```.\n- Error checking ensures all allocations succeed, freeing prior allocations if any fail.\n- ```strcpy``` assigns string values, and ```year``` is set directly.\n- Data is printed, then all dynamically allocated memory is freed in reverse order."
+  },
+  {
+    "title": "Memory Alignment with Padding",
+    "ques": "Write a C program that dynamically allocates memory for a structure with different data types (char, int, double), demonstrates potential padding for alignment, and prints the memory layout.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <stdlib.h>\n\nstruct Data {\n    char a;\n    int b;\n    double c;\n};\n\nint main() {\n    struct Data *data;\n    data = (struct Data *)malloc(sizeof(struct Data));\n    if (data == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        return 1;\n    }\n    data->a = 'X';\n    data->b = 42;\n    data->c = 3.14;\n    printf(\"Size of struct Data: %zu bytes\\n\", sizeof(struct Data));\n    printf(\"Address of a: %p\\n\", (void *)&data->a);\n    printf(\"Address of b: %p\\n\", (void *)&data->b);\n    printf(\"Address of c: %p\\n\", (void *)&data->c);\n    printf(\"Values: a=%c, b=%d, c=%.2f\\n\", data->a, data->b, data->c);\n    free(data);\n    return 0;\n}"
+    },
+    "explanation": "This program explores ***memory alignment***:\n- ```struct Data``` contains a ```char``` (1 byte), ```int``` (typically 4 bytes), and ```double``` (typically 8 bytes).\n- ```malloc(sizeof(struct Data))``` allocates memory, but the compiler adds padding for alignment (e.g., ```int``` and ```double``` often align to 4- or 8-byte boundaries).\n- ```sizeof(struct Data)``` shows the total size, likely 16 or 24 bytes due to padding, not just 13 bytes (1+4+8).\n- Printing addresses reveals gaps (padding) between fields.\n- Values are assigned and printed to confirm correct access.\n- ```free(data)``` releases the memory."
+  },
+  {
+    "title": "Double-Free Error Demonstration",
+    "ques": "Create a C program that allocates memory for a string, frees it, and then attempts to free it again to demonstrate a double-free error.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nint main() {\n    char *str;\n    str = (char *)malloc(20 * sizeof(char));\n    if (str == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        return 1;\n    }\n    strcpy(str, \"Hello, World!\");\n    printf(\"String: %s\\n\", str);\n    free(str);\n    printf(\"Memory freed once.\\n\");\n    free(str); // Double-free error\n    printf(\"Attempted double-free (undefined behavior).\\n\");\n    return 0;\n}"
+    },
+    "explanation": "This program demonstrates a ***double-free error***:\n- ```malloc(20 * sizeof(char))``` allocates memory for a string.\n- ```strcpy``` fills it with \"Hello, World!\", and it’s printed.\n- ```free(str)``` releases the memory correctly the first time.\n- Calling ```free(str)``` again attempts to free already-freed memory, leading to undefined behavior (e.g., crashes or corruption).\n- To avoid this, set ```str = NULL``` after the first ```free``` and check before subsequent calls."
+  },
+  {
+    "title": "Structure with Function Pointer and Dynamic Memory",
+    "ques": "Write a C program that defines a structure with a dynamically allocated integer array and a function pointer, allocates memory, assigns a function to double the array values, and uses it.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <stdlib.h>\n\nstruct Processor {\n    int *data;\n    int size;\n    void (*process)(int *, int);\n};\n\nvoid doubleValues(int *arr, int size) {\n    for (int i = 0; i < size; i++) {\n        arr[i] *= 2;\n    }\n}\n\nint main() {\n    struct Processor *proc;\n    proc = (struct Processor *)malloc(sizeof(struct Processor));\n    if (proc == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        return 1;\n    }\n    proc->size = 3;\n    proc->data = (int *)malloc(proc->size * sizeof(int));\n    if (proc->data == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        free(proc);\n        return 1;\n    }\n    proc->process = doubleValues;\n    for (int i = 0; i < proc->size; i++) {\n        proc->data[i] = i + 1;\n    }\n    printf(\"Original: \");\n    for (int i = 0; i < proc->size; i++) {\n        printf(\"%d \", proc->data[i]);\n    }\n    printf(\"\\n\");\n    proc->process(proc->data, proc->size);\n    printf(\"Doubled: \");\n    for (int i = 0; i < proc->size; i++) {\n        printf(\"%d \", proc->data[i]);\n    }\n    printf(\"\\n\");\n    free(proc->data);\n    free(proc);\n    return 0;\n}"
+    },
+    "explanation": "This program combines ***dynamic memory*** and ***function pointers*** in a structure:\n- ```struct Processor``` has a pointer ```data```, a ```size```, and a function pointer ```process```.\n- ```malloc``` allocates the structure and its ```data``` array.\n- ```doubleValues``` is a function that doubles array values, assigned to ```proc->process```.\n- The array is initialized with 1, 2, 3, printed, processed to 2, 4, 6, and printed again.\n- Memory is freed properly with ```free(proc->data)``` and ```free(proc)```."
+  },
+  {
+    "title": "Reallocate Structure Field",
+    "ques": "Create a C program that defines a structure with a dynamically allocated string, initially allocates space for a short string, then uses realloc to expand it for a longer string, and prints both stages.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nstruct Message {\n    char *text;\n    int length;\n};\n\nint main() {\n    struct Message *msg;\n    msg = (struct Message *)malloc(sizeof(struct Message));\n    if (msg == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        return 1;\n    }\n    msg->length = 5;\n    msg->text = (char *)malloc(msg->length * sizeof(char));\n    if (msg->text == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        free(msg);\n        return 1;\n    }\n    strcpy(msg->text, \"Hi!\");\n    printf(\"Initial message: %s\\n\", msg->text);\n    msg->length = 20;\n    char *temp = (char *)realloc(msg->text, msg->length * sizeof(char));\n    if (temp == NULL) {\n        printf(\"Reallocation failed!\\n\");\n        free(msg->text);\n        free(msg);\n        return 1;\n    }\n    msg->text = temp;\n    strcpy(msg->text, \"Hello, how are you?\");\n    printf(\"Expanded message: %s\\n\", msg->text);\n    free(msg->text);\n    free(msg);\n    return 0;\n}"
+    },
+    "explanation": "This program reallocates a structure’s dynamic field:\n- ```struct Message``` has a ```text``` pointer and ```length```.\n- Initially, ```malloc(5 * sizeof(char))``` allocates space for a short string (\"Hi!\").\n- ```realloc``` expands it to 20 bytes, safely using a ```temp``` pointer to preserve data if it fails.\n- The longer string \"Hello, how are you?\" is copied into the resized memory.\n- Both stages are printed, and memory is freed with ```free(msg->text)``` and ```free(msg)```."
+  },
+  {
+    "title": "Simulate Memory Fragmentation",
+    "ques": "Write a C program that allocates multiple small chunks of memory, frees some in a non-sequential order to simulate fragmentation, and then attempts to allocate a larger block.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    char *chunks[5];\n    int i;\n    for (i = 0; i < 5; i++) {\n        chunks[i] = (char *)malloc(100 * sizeof(char));\n        if (chunks[i] == NULL) {\n            printf(\"Memory allocation failed at chunk %d!\\n\", i);\n            for (int j = 0; j < i; j++) free(chunks[j]);\n            return 1;\n        }\n        printf(\"Allocated chunk %d at %p\\n\", i, (void *)chunks[i]);\n    }\n    free(chunks[1]);\n    free(chunks[3]);\n    printf(\"Freed chunks 1 and 3, simulating fragmentation.\\n\");\n    char *big_chunk = (char *)malloc(250 * sizeof(char));\n    if (big_chunk == NULL) {\n        printf(\"Failed to allocate 250 bytes - possible fragmentation!\\n\");\n    } else {\n        printf(\"Successfully allocated 250 bytes at %p\\n\", (void *)big_chunk);\n        free(big_chunk);\n    }\n    for (i = 0; i < 5; i += 2) {\n        free(chunks[i]);\n    }\n    return 0;\n}"
+    },
+    "explanation": "This program simulates ***memory fragmentation***:\n- Five 100-byte chunks are allocated using ```malloc```, stored in an array.\n- ```free(chunks[1])``` and ```free(chunks[3])``` release non-adjacent blocks, leaving gaps.\n- Attempting to allocate 250 bytes with ```malloc``` may fail or succeed depending on the heap state, illustrating how fragmentation can prevent large allocations.\n- Remaining chunks (0, 2, 4) are freed to clean up.\n- In practice, fragmentation depends on the system’s memory allocator."
+  },
+  {
+    "title": "Nested Structures with Dynamic Memory",
+    "ques": "Create a C program that defines a structure containing another structure with a dynamically allocated field, allocates memory for both levels, assigns values, and prints them.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nstruct Address {\n    char *city;\n    int zip;\n};\n\nstruct Person {\n    char *name;\n    struct Address addr;\n};\n\nint main() {\n    struct Person *person;\n    person = (struct Person *)malloc(sizeof(struct Person));\n    if (person == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        return 1;\n    }\n    person->name = (char *)malloc(20 * sizeof(char));\n    person->addr.city = (char *)malloc(20 * sizeof(char));\n    if (person->name == NULL || person->addr.city == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        free(person->name);\n        free(person->addr.city);\n        free(person);\n        return 1;\n    }\n    strcpy(person->name, \"John Doe\");\n    strcpy(person->addr.city, \"New York\");\n    person->addr.zip = 10001;\n    printf(\"Person: %s, City: %s, ZIP: %d\\n\", person->name, person->addr.city, person->addr.zip);\n    free(person->name);\n    free(person->addr.city);\n    free(person);\n    return 0;\n}"
+    },
+    "explanation": "This program uses ***nested structures*** with dynamic memory:\n- ```struct Address``` has a dynamic ```city``` field and an ```int zip```.\n- ```struct Person``` contains a dynamic ```name``` and an ```Address``` instance.\n- ```malloc``` allocates memory for the ```Person``` structure, then separately for ```name``` and ```addr.city```.\n- Values are assigned using ```strcpy``` and direct assignment.\n- Data is printed, and memory is freed in reverse order: ```name```, ```addr.city```, then ```person```."
+  },
+  {
+    "title": "Invalid Free Attempt",
+    "ques": "Write a C program that allocates memory for an integer, incorrectly tries to free a pointer not returned by malloc/calloc/realloc, and then frees the correct pointer.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *ptr = (int *)malloc(sizeof(int));\n    if (ptr == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        return 1;\n    }\n    *ptr = 50;\n    printf(\"Value: %d\\n\", *ptr);\n    int x = 10;\n    int *invalid_ptr = &x;\n    // free(invalid_ptr); // Uncommenting this causes undefined behavior\n    printf(\"Avoided freeing invalid pointer %p (not dynamically allocated).\\n\", (void *)invalid_ptr);\n    free(ptr);\n    printf(\"Freed valid pointer %p.\\n\", (void *)ptr);\n    return 0;\n}"
+    },
+    "explanation": "This program addresses ***invalid free attempts***:\n- ```malloc``` allocates memory for ```ptr```, which is assigned 50.\n- ```int *invalid_ptr = &x``` points to a stack variable, not dynamic memory.\n- Attempting ```free(invalid_ptr)``` (commented out) would cause undefined behavior since it wasn’t allocated with ```malloc```, ```calloc```, or ```realloc```.\n- Only ```free(ptr)``` is valid, safely releasing the dynamically allocated memory."
+  },
+  {
+    "title": "Calloc with Realloc Expansion",
+    "ques": "Create a C program that uses calloc to allocate an array of 3 doubles initialized to zero, expands it to 6 doubles using realloc, assigns values, and prints the result.",
+    "answer": {
+      "type": "code",
+      "lang": "c",
+      "content": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    double *arr;\n    int n = 3;\n    arr = (double *)calloc(n, sizeof(double));\n    if (arr == NULL) {\n        printf(\"Memory allocation failed!\\n\");\n        return 1;\n    }\n    printf(\"Initial array (zeros): \");\n    for (int i = 0; i < n; i++) {\n        printf(\"%.1f \", arr[i]);\n    }\n    printf(\"\\n\");\n    double *temp = (double *)realloc(arr, 6 * sizeof(double));\n    if (temp == NULL) {\n        printf(\"Reallocation failed!\\n\");\n        free(arr);\n        return 1;\n    }\n    arr = temp;\n    for (int i = 0; i < 6; i++) {\n        arr[i] = i + 1.5;\n    }\n    printf(\"Expanded array: \");\n    for (int i = 0; i < 6; i++) {\n        printf(\"%.1f \", arr[i]);\n    }\n    printf(\"\\n\");\n    free(arr);\n    return 0;\n}"
+    },
+    "explanation": "This program combines ***calloc*** and ***realloc***:\n- ```calloc(n, sizeof(double))``` allocates 3 doubles, all initialized to 0.0.\n- The initial array is printed to confirm zeros.\n- ```realloc``` expands it to 6 doubles, using a ```temp``` pointer to handle failure safely.\n- New values (1.5 to 6.5) are assigned, overwriting the zeros.\n- The expanded array is printed, and ```free(arr)``` releases the memory.\n- Note: unlike ```calloc```, ```realloc``` doesn’t zero-initialize new space."
+  }
+]

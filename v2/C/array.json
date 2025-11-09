@@ -1,0 +1,4954 @@
+[
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[3] = {1, 2, 3};\n    printf(\"%d\", arr[1]);\n    return 0;\n}",
+    "o": [
+      "2",
+      "1",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a 2D array in C?",
+    "o": [
+      "int arr[3][3];",
+      "int arr(3)(3);",
+      "int arr[3, 3];",
+      "int arr[][];"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to declare a string in C?",
+    "o": [
+      "char str[] = \"Hello\";",
+      "char str[] = Hello;",
+      "string str = \"Hello\";",
+      "char str = 'Hello';"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char str[20] = \"Hello, world!\";\n    printf(\"%s\", strtok(str, \",\"));\n    return 0;\n}",
+    "o": [
+      "Hello",
+      "world!",
+      "Hello, world!",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct method to find the length of a string in C?",
+    "o": [
+      "strlen(str)",
+      "length(str)",
+      "size(str)",
+      "string_length(str)"
+    ]
+  },
+  {
+    "q": "Which of the following is true about character arrays vs strings in C?",
+    "o": [
+      "A string is a character array terminated by a null character.",
+      "A string is a character array without a null character.",
+      "A string is a single character.",
+      "A string does not exist in C."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char str[] = \"C Programming\";\n    printf(\"%s\", str + 2);\n    return 0;\n}",
+    "o": [
+      "Programming",
+      "C Programming",
+      "Progra",
+      "C"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare a 3D array in C?",
+    "o": [
+      "int arr[2][3][4];",
+      "int arr[2, 3, 4];",
+      "int arr[3][4];",
+      "int arr[3][4][5][6];"
+    ]
+  },
+  {
+    "q": "What will be the value of arr[1][2] after the following code is executed?\n\nint arr[2][3] = {{1, 2, 3}, {4, 5, 6}};\n",
+    "o": [
+      "5",
+      "3",
+      "6",
+      "2"
+    ]
+  },
+  {
+    "q": "Which of the following functions is used to concatenate two strings in C?",
+    "o": [
+      "strcat(str1, str2)",
+      "concat(str1, str2)",
+      "append(str1, str2)",
+      "strjoin(str1, str2)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[2][2] = {{1, 2}, {3, 4}};\n    printf(\"%d\", arr[1][0]);\n    return 0;\n}",
+    "o": [
+      "3",
+      "1",
+      "2",
+      "4"
+    ]
+  },
+  {
+    "q": "Which of the following functions in C is used to compare two strings?",
+    "o": [
+      "strcmp(str1, str2)",
+      "string_compare(str1, str2)",
+      "compare(str1, str2)",
+      "strcomp(str1, str2)"
+    ]
+  },
+  {
+    "q": "What is the difference between a character array and a string in C?",
+    "o": [
+      "A string is a character array terminated with a null character, whereas a character array is not necessarily terminated.",
+      "A string is the same as a character array in C.",
+      "A string is a fixed-length array, and a character array is a dynamic array.",
+      "A string does not support null termination."
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"CProgramming\";\n    printf(\"%c\", str[3]);\n    return 0;\n}",
+    "o": [
+      "P",
+      "C",
+      "r",
+      "g"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about multidimensional arrays in C?",
+    "o": [
+      "Multidimensional arrays are arrays of arrays.",
+      "Multidimensional arrays are not supported in C.",
+      "Multidimensional arrays are arrays of strings.",
+      "Multidimensional arrays only store integers."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"OpenAI\";\n    printf(\"%s\", str + 2);\n    return 0;\n}",
+    "o": [
+      "enAI",
+      "OpenAI",
+      "O",
+      "penAI"
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes a 1D array of integers with values 10, 20, 30 in C?",
+    "o": [
+      "int arr[] = {10, 20, 30};",
+      "int arr = [10, 20, 30];",
+      "int arr[3] = {10, 20, 30};",
+      "int arr[] = [10, 20, 30];"
+    ]
+  },
+  {
+    "q": "Which function is used to copy one string to another in C?",
+    "o": [
+      "strcpy(destination, source)",
+      "string_copy(destination, source)",
+      "copy_string(destination, source)",
+      "str_copy(destination, source)"
+    ]
+  },
+  {
+    "q": "What is the size of the following array in C?\n\nint arr[4][5];",
+    "o": [
+      "20",
+      "4",
+      "5",
+      "9"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Hello, C!\";\n    printf(\"%c\", str[7]);\n    return 0;\n}",
+    "o": [
+      "C",
+      "H",
+      "e",
+      "l"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};\n    printf(\"%d\", arr[0][2]);\n    return 0;\n}",
+    "o": [
+      "3",
+      "1",
+      "2",
+      "6"
+    ]
+  },
+  {
+    "q": "Which of the following functions in C is used to concatenate two strings?",
+    "o": [
+      "strcat(str1, str2)",
+      "strjoin(str1, str2)",
+      "string_concat(str1, str2)",
+      "append_string(str1, str2)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char str[] = \"Hello World\";\n    printf(\"%s\", str + 6);\n    return 0;\n}",
+    "o": [
+      "World",
+      "Hello World",
+      "o World",
+      "Hello"
+    ]
+  },
+  {
+    "q": "Which of the following is true about strings in C?",
+    "o": [
+      "Strings are character arrays terminated by a null character.",
+      "Strings are not supported in C.",
+      "Strings are a built-in data type in C.",
+      "Strings are always fixed in size."
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to define a 2D array in C?",
+    "o": [
+      "int arr[3][3];",
+      "int arr(3, 3);",
+      "int arr[] = {3, 3};",
+      "int arr[3] = [3, 3];"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char str[] = \"Hello\";\n    printf(\"%c\", str[1]);\n    return 0;\n}",
+    "o": [
+      "e",
+      "H",
+      "l",
+      "o"
+    ]
+  },
+  {
+    "q": "What is the size of the following 2D array in C?\n\nint arr[4][2];",
+    "o": [
+      "8",
+      "4",
+      "6",
+      "2"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"CProgramming\";\n    printf(\"%c\", str[5]);\n    return 0;\n}",
+    "o": [
+      "r",
+      "C",
+      "P",
+      "g"
+    ]
+  },
+  {
+    "q": "What does the following code snippet do?\n\n#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char str1[] = \"Hello\";\n    char str2[10];\n    strcpy(str2, str1);\n    printf(\"%s\", str2);\n    return 0;\n}",
+    "o": [
+      "It copies the string from str1 to str2.",
+      "It compares str1 and str2.",
+      "It concatenates str1 to str2.",
+      "It checks the length of str1 and stores it in str2."
+    ]
+  },
+  {
+    "q": "Which of the following is the correct method to initialize a character array in C?",
+    "o": [
+      "char str[] = \"Hello\";",
+      "char str[5] = \"Hello\";",
+      "char str = \"Hello\";",
+      "char str[6] = {'H', 'e', 'l', 'l', 'o'};"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[2][2] = {{10, 20}, {30, 40}};\n    printf(\"%d\", arr[1][1]);\n    return 0;\n}",
+    "o": [
+      "40",
+      "30",
+      "10",
+      "20"
+    ]
+  },
+  {
+    "q": "Which of the following functions is used to find the length of a string in C?",
+    "o": [
+      "strlen(str)",
+      "strlength(str)",
+      "size(str)",
+      "str_len(str)"
+    ]
+  },
+  {
+    "q": "What will be the value of arr[0][2] after the following code is executed?\n\nint arr[2][3] = {{1, 2, 3}, {4, 5, 6}};\n",
+    "o": [
+      "3",
+      "1",
+      "4",
+      "6"
+    ]
+  },
+  {
+    "q": "What is the correct syntax for declaring a 3D array in C?",
+    "o": [
+      "int arr[3][3][3];",
+      "int arr[3, 3, 3];",
+      "int arr[3][3];",
+      "int arr[3][3][3][3];"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char str[] = \"Learning C\";\n    printf(\"%c\", str[4]);\n    return 0;\n}",
+    "o": [
+      "r",
+      "L",
+      "e",
+      "n"
+    ]
+  },
+  {
+    "q": "Which of the following is true about a character array in C?",
+    "o": [
+      "A character array is an array of characters, typically terminated by a null character.",
+      "A character array is a type of string that does not require null termination.",
+      "A character array can store any data type.",
+      "A character array is automatically resized in C."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Array and Strings\";\n    printf(\"%s\", str + 6);\n    return 0;\n}",
+    "o": [
+      "and Strings",
+      "Array and Strings",
+      "Array",
+      "and"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare a 1D array of 5 integers in C?",
+    "o": [
+      "int arr[5];",
+      "int arr(5);",
+      "arr[5] int;",
+      "int[5] arr;"
+    ]
+  },
+  {
+    "q": "What does the following code snippet do?\n\n#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char str[20];\n    strcpy(str, \"C Programming\");\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "It copies the string \"C Programming\" into the character array str and prints it.",
+      "It concatenates the string \"C Programming\" into str.",
+      "It compares str with \"C Programming\".",
+      "It finds the length of the string and stores it in str."
+    ]
+  },
+  {
+    "q": "What is the correct way to pass a string to a function in C?",
+    "o": [
+      "By passing a pointer to the first element of the string.",
+      "By passing the entire string directly.",
+      "By passing an integer that represents the string length.",
+      "By passing an array of characters."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {5, 10, 15, 20};\n    printf(\"%d\", *(arr + 2));\n    return 0;\n}",
+    "o": [
+      "15",
+      "10",
+      "5",
+      "20"
+    ]
+  },
+  {
+    "q": "Which of the following functions in C is used to compare two strings?",
+    "o": [
+      "strcmp(str1, str2)",
+      "strcompare(str1, str2)",
+      "stringcmp(str1, str2)",
+      "compare_strings(str1, str2)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char str[] = \"C Programming\";\n    str[0] = 'c';\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "c Programming",
+      "C Programming",
+      "C programing",
+      "c programing"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to define a 2D array with 3 rows and 4 columns in C?",
+    "o": [
+      "int arr[3][4];",
+      "int arr[3, 4];",
+      "int arr[4][3];",
+      "int arr ;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[3] = {1, 2, 3};\n    printf(\"%d\", arr[2]);\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "What does the following code do?\n\n#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char str[20];\n    printf(\"Enter a string: \");\n    fgets(str, 20, stdin);\n    printf(\"You entered: %s\", str);\n    return 0;\n}",
+    "o": [
+      "It reads a string from the user and prints it.",
+      "It reads a string from the user and stores it in the str array.",
+      "It reads a string and prints a prompt message.",
+      "It reads a string but does not print it."
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to find the length of a string in C?",
+    "o": [
+      "strlen(str)",
+      "string_length(str)",
+      "length_of_string(str)",
+      "str_len(str)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"CProgramming\";\n    printf(\"%c\", *(str + 2));\n    return 0;\n}",
+    "o": [
+      "P",
+      "C",
+      "r",
+      "g"
+    ]
+  },
+  {
+    "q": "Which of the following is true about 2D arrays in C?",
+    "o": [
+      "A 2D array is an array of arrays.",
+      "A 2D array can only store integers.",
+      "A 2D array can store any data type.",
+      "A 2D array has a fixed size after initialization."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char str[] = \"Hello, World!\";\n    printf(\"%s\", str + 7);\n    return 0;\n}",
+    "o": [
+      "World!",
+      "Hello, World!",
+      "lo, World!",
+      "World"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[3] = {5, 10, 15};\n    printf(\"%d\", arr[1] + arr[2]);\n    return 0;\n}",
+    "o": [
+      "25",
+      "15",
+      "10",
+      "5"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to initialize a 2D array in C?",
+    "o": [
+      "int arr[2][2] = {{1, 2}, {3, 4}};",
+      "int arr[2][2] = (1, 2, 3, 4);",
+      "int arr[2, 2] = {1, 2, 3, 4};",
+      "int arr[2][2] = [1, 2, 3, 4];"
+    ]
+  },
+  {
+    "q": "What does the following code snippet do?\n\n#include <stdio.h>\n\nint main() {\n    char str[] = \"CProgramming\";\n    str[2] = 'R';\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "CRProgramming",
+      "CProgramming",
+      "CPrgramming",
+      "CProgamming"
+    ]
+  },
+  {
+    "q": "What is the correct way to declare a character array of size 10 in C?",
+    "o": [
+      "char str[10];",
+      "char str(10);",
+      "char[10] str;",
+      "char str[] = 10;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char str[20] = \"Welcome to C\";\n    printf(\"%d\", strlen(str));\n    return 0;\n}",
+    "o": [
+      "14",
+      "15",
+      "13",
+      "12"
+    ]
+  },
+  {
+    "q": "Which of the following functions can be used to concatenate two strings in C?",
+    "o": [
+      "strcat(str1, str2)",
+      "strcopy(str1, str2)",
+      "append(str1, str2)",
+      "join(str1, str2)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char str[] = \"Learning C\";\n    printf(\"%s\", str + 9);\n    return 0;\n}",
+    "o": [
+      "C",
+      "C ",
+      "Learning C",
+      "g C"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid statement for accessing elements of a 2D array in C?",
+    "o": [
+      "arr[1][2]",
+      "arr(1)(2)",
+      "arr[1, 2]",
+      "arr[1,2]"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"CProgramming\";\n    printf(\"%c\", *(str + 3));\n    return 0;\n}",
+    "o": [
+      "P",
+      "C",
+      "r",
+      "o"
+    ]
+  },
+  {
+    "q": "Which of the following is true about strings in C?",
+    "o": [
+      "A string is a sequence of characters terminated by a null character.",
+      "A string is a fixed-length array of characters.",
+      "A string in C can store any data type.",
+      "A string in C does not require null termination."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {1, 2, 3, 4, 5};\n    printf(\"%d\", *(arr + 3));\n    return 0;\n}",
+    "o": [
+      "4",
+      "3",
+      "5",
+      "2"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare a string in C?",
+    "o": [
+      "char str[] = \"Hello\";",
+      "string str = \"Hello\";",
+      "char str(5) = \"Hello\";",
+      "char str = \"Hello\";"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Hello World\";\n    printf(\"%c\", str[6]);\n    return 0;\n}",
+    "o": [
+      "W",
+      "e",
+      "l",
+      "H"
+    ]
+  },
+  {
+    "q": "Which of the following functions in C is used to copy a string?",
+    "o": [
+      "strcpy(dest, src)",
+      "stringcopy(dest, src)",
+      "strcopy(dest, src)",
+      "copystr(dest, src)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char str[20] = \"Hello\";\n    strcat(str, \" World\");\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "Hello World",
+      "HelloWorld",
+      "Hello World ",
+      "WorldHello"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to initialize a 2D array in C with values 1, 2, 3, and 4?",
+    "o": [
+      "int arr[2][2] = {{1, 2}, {3, 4}};",
+      "int arr[2][2] = (1, 2, 3, 4);",
+      "int arr[2,2] = {1, 2, 3, 4};",
+      "int arr[2][2] = [1, 2, 3, 4];"
+    ]
+  },
+  {
+    "q": "What does the following code snippet do?\n\n#include <stdio.h>\n\nint main() {\n    char str[] = \"Hello\";\n    printf(\"%s\", str+2);\n    return 0;\n}",
+    "o": [
+      "llo",
+      "He",
+      "Hell",
+      "Hello"
+    ]
+  },
+  {
+    "q": "What is the correct way to access the second element of a 2D array `arr[3][3]` in C?",
+    "o": [
+      "arr[1][1]",
+      "arr[2][2]",
+      "arr[1][2]",
+      "arr[0][1]"
+    ]
+  },
+  {
+    "q": "What is the result of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Programming\";\n    printf(\"%c\", *(str + 6));\n    return 0;\n}",
+    "o": [
+      "a",
+      "g",
+      "r",
+      "P"
+    ]
+  },
+  {
+    "q": "Which of the following is a characteristic of a character array in C?",
+    "o": [
+      "It is a sequence of characters stored in contiguous memory locations.",
+      "It can store any data type.",
+      "It has a fixed length and cannot be resized.",
+      "It is automatically null-terminated when declared."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {2, 4, 6, 8, 10};\n    printf(\"%d\", arr[2]);\n    return 0;\n}",
+    "o": [
+      "6",
+      "8",
+      "10",
+      "4"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare a 2D array of size 3x3 in C?",
+    "o": [
+      "int arr[3][3];",
+      "int arr[3,3];",
+      "int[3][3] arr;",
+      "array[3][3] int;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"CProgramming\";\n    printf(\"%c\", str[4]);\n    return 0;\n}",
+    "o": [
+      "P",
+      "C",
+      "r",
+      "o"
+    ]
+  },
+  {
+    "q": "Which function is used to compare two strings in C?",
+    "o": [
+      "strcmp(str1, str2)",
+      "strcompare(str1, str2)",
+      "stringcmp(str1, str2)",
+      "str_equal(str1, str2)"
+    ]
+  },
+  {
+    "q": "What does the following code snippet do?\n\n#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char str[] = \"Programming\";\n    printf(\"%d\", strlen(str));\n    return 0;\n}",
+    "o": [
+      "11",
+      "12",
+      "13",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of the following is true about strings in C?",
+    "o": [
+      "Strings are arrays of characters terminated by a null character ('\\0').",
+      "Strings in C can store any type of data.",
+      "Strings are objects and do not require null termination.",
+      "In C, strings are stored in dynamic memory and can change size."
+    ]
+  },
+  {
+    "q": "What is the correct syntax for initializing a 3x3 2D array in C with all elements set to zero?",
+    "o": [
+      "int arr[3][3] = {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}};",
+      "int arr[3][3] = {0};",
+      "int arr[3][3] = {{0}};",
+      "int arr[3][3] = [0, 0, 0];"
+    ]
+  },
+  {
+    "q": "What will be the result of the following code snippet?\n\n#include <stdio.h>\n\nint main() {\n    char str[] = \"C Programming\";\n    printf(\"%s\", str + 2);\n    return 0;\n}",
+    "o": [
+      "Programming",
+      "C Programming",
+      "Pro",
+      "ogramming"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Data\";\n    printf(\"%c\", *(str + 1));\n    return 0;\n}",
+    "o": [
+      "a",
+      "D",
+      "t",
+      "e"
+    ]
+  },
+  {
+    "q": "What is the correct way to define a function that takes a 2D array as an argument in C?",
+    "o": [
+      "void func(int arr[3][3])",
+      "void func(int arr[])",
+      "void func(int arr[3])",
+      "void func(int arr[3][3][3])"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {10, 20, 30, 40, 50};\n    printf(\"%d\", *(arr + 4));\n    return 0;\n}",
+    "o": [
+      "50",
+      "40",
+      "30",
+      "20"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to declare a string constant in C?",
+    "o": [
+      "const char* str = \"Hello\";",
+      "const string str = \"Hello\";",
+      "const char str[] = \"Hello\";",
+      "string str = \"Hello\";"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"CProgramming\";\n    printf(\"%c\", str[3]);\n    return 0;\n}",
+    "o": [
+      "P",
+      "C",
+      "g",
+      "r"
+    ]
+  },
+  {
+    "q": "Which of the following functions is used to get the length of a string in C?",
+    "o": [
+      "strlen(str)",
+      "strlength(str)",
+      "string_length(str)",
+      "strsize(str)"
+    ]
+  },
+  {
+    "q": "What is the result of the following code snippet?\n\n#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char str[] = \"Learning\";\n    printf(\"%d\", strlen(str));\n    return 0;\n}",
+    "o": [
+      "9",
+      "10",
+      "8",
+      "7"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct declaration of a 3x3 2D integer array in C?",
+    "o": [
+      "int arr[3][3];",
+      "int arr[3,3];",
+      "int arr(3)(3);",
+      "int arr ;"
+    ]
+  },
+  {
+    "q": "What is the correct way to copy one string into another in C?",
+    "o": [
+      "strcpy(destination, source);",
+      "stringcopy(destination, source);",
+      "str_copy(destination, source);",
+      "copy_string(destination, source);"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n\n#include <stdio.h>\n\nint main() {\n    char str[] = \"C Programming\";\n    printf(\"%s\", str + 2);\n    return 0;\n}",
+    "o": [
+      "Programming",
+      "C Programming",
+      "Prog",
+      "Programming!"
+    ]
+  },
+  {
+    "q": "What is the size of the array 'arr' after the following declaration?\n\nint arr[5];\n",
+    "o": [
+      "20 bytes",
+      "5 bytes",
+      "4 bytes",
+      "15 bytes"
+    ]
+  },
+  {
+    "q": "Which of the following is true about strings in C?",
+    "o": [
+      "Strings in C are null-terminated arrays of characters.",
+      "Strings are dynamically allocated arrays.",
+      "Strings in C are immutable.",
+      "Strings are treated as arrays of integers in C."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Hello, World!\";\n    printf(\"%c\", *(str + 7));\n    return 0;\n}",
+    "o": [
+      "W",
+      "H",
+      "l",
+      "o"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare a character array in C?",
+    "o": [
+      "char str[10];",
+      "char str(10);",
+      "char[] str = 10;",
+      "char str[] = {10};"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {1, 2, 3, 4, 5};\n    printf(\"%d\", *(arr + 3));\n    return 0;\n}",
+    "o": [
+      "4",
+      "3",
+      "5",
+      "2"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax to define a 2D array of integers with 2 rows and 3 columns in C?",
+    "o": [
+      "int arr[2][3];",
+      "int arr[2,3];",
+      "int arr[3][2];",
+      "int arr(2)(3);"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"CProgram\";\n    printf(\"%c\", str[1]);\n    return 0;\n}",
+    "o": [
+      "P",
+      "C",
+      "g",
+      "r"
+    ]
+  },
+  {
+    "q": "Which function is used to concatenate two strings in C?",
+    "o": [
+      "strcat(str1, str2)",
+      "strjoin(str1, str2)",
+      "string_concat(str1, str2)",
+      "concatenate(str1, str2)"
+    ]
+  },
+  {
+    "q": "What is the result of the following code snippet?\n\n#include <stdio.h>\n\nint main() {\n    char str[] = \"Apple\";\n    printf(\"%d\", strlen(str));\n    return 0;\n}",
+    "o": [
+      "5",
+      "4",
+      "6",
+      "7"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to initialize a 3D array in C with 2x2x2 dimensions?",
+    "o": [
+      "int arr[2][2][2] = {{{1, 2}, {3, 4}}, {{5, 6}, {7, 8}}};",
+      "int arr[2,2,2] = {{1,2}, {3,4}, {5,6}};",
+      "int arr[2][2][2] = (1, 2, 3, 4, 5, 6, 7, 8);",
+      "int arr[2,2,2] = {{1,2}, {3,4}};"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"ArrayExample\";\n    printf(\"%s\", str + 5);\n    return 0;\n}",
+    "o": [
+      "Example",
+      "ArrayExample",
+      "Array",
+      "rrayExample"
+    ]
+  },
+  {
+    "q": "What is the correct way to access the first element of a string in C?",
+    "o": [
+      "str[0]",
+      "str[1]",
+      "str{0}",
+      "str[1][0]"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {10, 20, 30, 40, 50};\n    printf(\"%d\", arr[2]);\n    return 0;\n}",
+    "o": [
+      "30",
+      "20",
+      "40",
+      "50"
+    ]
+  },
+  {
+    "q": "Which of the following functions can be used to compare two strings in C?",
+    "o": [
+      "strcmp(str1, str2)",
+      "stringcmp(str1, str2)",
+      "strcompare(str1, str2)",
+      "equal(str1, str2)"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Hello, C!\";\n    printf(\"%c\", str[7]);\n    return 0;\n}",
+    "o": [
+      "C",
+      "l",
+      "o",
+      "!"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare a 2D array of floats in C?",
+    "o": [
+      "float arr[3][3];",
+      "float arr[3,3];",
+      "float arr ;",
+      "float arr;[3][3]"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Programming\";\n    printf(\"%s\", str + 5);\n    return 0;\n}",
+    "o": [
+      "amming",
+      "gramming",
+      "Prog",
+      "Pro"
+    ]
+  },
+  {
+    "q": "What is the correct syntax to declare an array of 10 characters in C?",
+    "o": [
+      "char arr[10];",
+      "char arr(10);",
+      "char arr[] = 10;",
+      "arr[10] char;"
+    ]
+  },
+  {
+    "q": "Which of the following C functions is used to get the position of a character in a string?",
+    "o": [
+      "strchr(str, ch)",
+      "indexof(str, ch)",
+      "findchar(str, ch)",
+      "getcharposition(str, ch)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n\n#include <stdio.h>\n\nint main() {\n    char str[] = \"World\";\n    printf(\"%d\", strlen(str));\n    return 0;\n}",
+    "o": [
+      "5",
+      "4",
+      "6",
+      "7"
+    ]
+  },
+  {
+    "q": "What is the correct way to initialize a 3x3 array in C?",
+    "o": [
+      "int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};",
+      "int arr[3][3] = (1, 2, 3, 4, 5, 6, 7, 8, 9);",
+      "int arr[3,3] = {1, 2, 3, 4, 5, 6, 7, 8, 9};",
+      "int arr[3][3] = [1, 2, 3, 4, 5, 6, 7, 8, 9];"
+    ]
+  },
+  {
+    "q": "Which of the following is true about character arrays in C?",
+    "o": [
+      "Character arrays are used to store strings in C.",
+      "Character arrays are used to store integers in C.",
+      "Character arrays are dynamically allocated arrays.",
+      "Character arrays are fixed-size arrays that cannot store strings."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[3] = {1, 2, 3};\n    printf(\"%d\", *(arr + 1));\n    return 0;\n}",
+    "o": [
+      "2",
+      "1",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to define a string in C?",
+    "o": [
+      "char str[] = \"Hello, World!\";",
+      "char str = \"Hello, World!\";",
+      "char str[10] = 'Hello';",
+      "string str = 'Hello, World!';"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Array\";\n    printf(\"%c\", str[1]);\n    return 0;\n}",
+    "o": [
+      "r",
+      "A",
+      "y",
+      "a"
+    ]
+  },
+  {
+    "q": "What is the correct syntax for declaring a 2D array in C with 3 rows and 2 columns?",
+    "o": [
+      "int arr[3][2];",
+      "int arr[3, 2];",
+      "int arr[2][3];",
+      "int arr(3)(2);"
+    ]
+  },
+  {
+    "q": "Which function in C is used to copy a string from one array to another?",
+    "o": [
+      "strcpy(destination, source)",
+      "copystr(destination, source)",
+      "str_copy(destination, source)",
+      "copy_string(destination, source)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"CProgramming\";\n    printf(\"%s\", str + 3);\n    return 0;\n}",
+    "o": [
+      "Programming",
+      "Pro",
+      "CPro",
+      "ramming"
+    ]
+  },
+  {
+    "q": "Which of the following is used to calculate the length of a string in C?",
+    "o": [
+      "strlen(str)",
+      "size(str)",
+      "length(str)",
+      "strlen_length(str)"
+    ]
+  },
+  {
+    "q": "What is the correct syntax to initialize a character array in C with values 'a', 'b', and 'c'?",
+    "o": [
+      "char arr[] = {'a', 'b', 'c'};",
+      "char arr[3] = {'a', 'b', 'c'};",
+      "char arr = {'a', 'b', 'c'};",
+      "char arr[3] = a, b, c;"
+    ]
+  },
+  {
+    "q": "Which of the following methods can be used to iterate over the elements of a 2D array in C?",
+    "o": [
+      "Using nested for loops",
+      "Using a single for loop",
+      "Using a while loop",
+      "Using a recursive function"
+    ]
+  },
+  {
+    "q": "What is the result of the following code snippet?\n\n#include <stdio.h>\n\nint main() {\n    char str[] = \"Hello World\";\n    printf(\"%c\", str[6]);\n    return 0;\n}",
+    "o": [
+      "W",
+      "l",
+      "o",
+      " "
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {1, 2, 3, 4};\n    printf(\"%d\", arr[1] + arr[2]);\n    return 0;\n}",
+    "o": [
+      "5",
+      "6",
+      "4",
+      "3"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct declaration of a string array in C?",
+    "o": [
+      "char str[5][20];",
+      "char str[5];",
+      "char[5] str[];",
+      "str[5] = char[];"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Hello, C!\";\n    printf(\"%c\", *(str + 4));\n    return 0;\n}",
+    "o": [
+      "o",
+      "H",
+      "C",
+      "l"
+    ]
+  },
+  {
+    "q": "Which of the following functions is used to concatenate two strings in C?",
+    "o": [
+      "strcat(str1, str2)",
+      "stringConcat(str1, str2)",
+      "strJoin(str1, str2)",
+      "merge(str1, str2)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"CProgramming\";\n    printf(\"%c\", str[2]);\n    return 0;\n}",
+    "o": [
+      "P",
+      "r",
+      "C",
+      "g"
+    ]
+  },
+  {
+    "q": "What is the size of the following array in bytes?\n\nint arr[5];",
+    "o": [
+      "20 bytes",
+      "5 bytes",
+      "25 bytes",
+      "4 bytes"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid method to initialize a string in C?",
+    "o": [
+      "char str[] = \"Hello\";",
+      "char str = \"Hello\";",
+      "string str[] = 'Hello';",
+      "char str[6] = 'Hello';"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax to declare a 3D array in C?",
+    "o": [
+      "int arr[3][3][3];",
+      "int arr[3][3];",
+      "int arr (3);",
+      "int arr[3][3,3];"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Array\";\n    printf(\"%s\", str + 1);\n    return 0;\n}",
+    "o": [
+      "rray",
+      "Array",
+      "rra",
+      "ra"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to get the length of a string in C?",
+    "o": [
+      "strlen(str)",
+      "size(str)",
+      "length(str)",
+      "getlen(str)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {10, 20, 30, 40};\n    printf(\"%d\", arr[2]);\n    return 0;\n}",
+    "o": [
+      "30",
+      "20",
+      "40",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax for declaring a string in C?",
+    "o": [
+      "char str[] = \"Hello, World!\";",
+      "string str = \"Hello, World!\";",
+      "char str[14] = \"Hello, World!\";",
+      "str = \"Hello, World!\";"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Programming\";\n    printf(\"%c\", str[3]);\n    return 0;\n}",
+    "o": [
+      "g",
+      "P",
+      "o",
+      "r"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to declare a 2D array in C with 3 rows and 4 columns?",
+    "o": [
+      "int arr[3][4];",
+      "int arr[4][3];",
+      "int arr[3,4];",
+      "int arr(3)(4);"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Array\";\n    printf(\"%s\", str + 1);\n    return 0;\n}",
+    "o": [
+      "rray",
+      "Array",
+      "A",
+      "r"
+    ]
+  },
+  {
+    "q": "Which function is used to compare two strings in C?",
+    "o": [
+      "strcmp(str1, str2)",
+      "compare(str1, str2)",
+      "strcomp(str1, str2)",
+      "strcmpstr(str1, str2)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"CProgramming\";\n    printf(\"%c\", *(str + 5));\n    return 0;\n}",
+    "o": [
+      "P",
+      "C",
+      "g",
+      "r"
+    ]
+  },
+  {
+    "q": "What is the size of the following array in C?\n\nchar arr[10];",
+    "o": [
+      "10 bytes",
+      "20 bytes",
+      "5 bytes",
+      "1 byte"
+    ]
+  },
+  {
+    "q": "Which of the following functions is used to find the length of a string in C?",
+    "o": [
+      "strlen(str)",
+      "length(str)",
+      "size(str)",
+      "strlength(str)"
+    ]
+  },
+  {
+    "q": "What is the result of the following code snippet?\n\n#include <stdio.h>\n\nint main() {\n    char str[] = \"Hello\";\n    printf(\"%c\", str[4]);\n    return 0;\n}",
+    "o": [
+      "o",
+      "H",
+      "l",
+      "e"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {5, 10, 15};\n    printf(\"%d\", arr[0] * arr[1]);\n    return 0;\n}",
+    "o": [
+      "50",
+      "15",
+      "25",
+      "150"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare a character array to store a string in C?",
+    "o": [
+      "char str[50];",
+      "char str[] = 'Hello';",
+      "string str[50];",
+      "char str = \"Hello\";"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Hello\";\n    printf(\"%s\", str + 1);\n    return 0;\n}",
+    "o": [
+      "ello",
+      "Hello",
+      "H",
+      "e"
+    ]
+  },
+  {
+    "q": "Which of the following statements about 2D arrays in C is correct?",
+    "o": [
+      "They are arrays of arrays.",
+      "They are single-dimensional arrays.",
+      "They can only store integers.",
+      "They can only be initialized at compile-time."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"CProgramming\";\n    printf(\"%c\", str[1]);\n    return 0;\n}",
+    "o": [
+      "P",
+      "C",
+      "g",
+      "r"
+    ]
+  },
+  {
+    "q": "Which of the following functions is used to concatenate two strings in C?",
+    "o": [
+      "strcat(str1, str2)",
+      "strconcat(str1, str2)",
+      "strappend(str1, str2)",
+      "concat(str1, str2)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Programming\";\n    printf(\"%c\", str[5]);\n    return 0;\n}",
+    "o": [
+      "a",
+      "g",
+      "r",
+      "P"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to define a 3D array in C?",
+    "o": [
+      "int arr[3][3][3];",
+      "int arr[3][3];",
+      "int arr[3][3,3];",
+      "int arr(3)(3);"
+    ]
+  },
+  {
+    "q": "What is the size of the following array in C?\n\nfloat arr[10];",
+    "o": [
+      "40 bytes",
+      "10 bytes",
+      "20 bytes",
+      "4 bytes"
+    ]
+  },
+  {
+    "q": "What is the result of the following code snippet?\n\n#include <stdio.h>\n\nint main() {\n    char str[] = \"Arrays\";\n    printf(\"%c\", str[4]);\n    return 0;\n}",
+    "o": [
+      "y",
+      "A",
+      "r",
+      "s"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[4] = {1, 2, 3, 4};\n    printf(\"%d\", arr[2] + arr[3]);\n    return 0;\n}",
+    "o": [
+      "7",
+      "5",
+      "6",
+      "8"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax for initializing a string array in C?",
+    "o": [
+      "char str[3][5] = {\"Hello\", \"World\", \"C\"};",
+      "char str[3][5] = {\"Hello\", \"World\", C};",
+      "string str[3][5] = {\"Hello\", \"World\", \"C\"};",
+      "char str[3] = {\"Hello\", \"World\", \"C\"};"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Arrays\";\n    printf(\"%c\", *(str + 2));\n    return 0;\n}",
+    "o": [
+      "r",
+      "A",
+      "a",
+      "s"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to declare a 2D array of integers with 3 rows and 4 columns?",
+    "o": [
+      "int arr[3][4];",
+      "int arr[3,4];",
+      "int arr[4][3];",
+      "int arr[3][4] = {}; "
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"CProgramming\";\n    printf(\"%s\", str + 1);\n    return 0;\n}",
+    "o": [
+      "Programming",
+      "CProgramming",
+      "P",
+      "r"
+    ]
+  },
+  {
+    "q": "Which of the following functions is used to compare two strings in C?",
+    "o": [
+      "strcmp(str1, str2)",
+      "strcompare(str1, str2)",
+      "compare(str1, str2)",
+      "stringcmp(str1, str2)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Hello World\";\n    printf(\"%c\", str[6]);\n    return 0;\n}",
+    "o": [
+      "W",
+      "H",
+      "o",
+      "l"
+    ]
+  },
+  {
+    "q": "What is the correct way to declare a string in C?",
+    "o": [
+      "char str[] = \"Hello\";",
+      "string str = \"Hello\";",
+      "char str[5] = \"Hello\";",
+      "str = \"Hello\";"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {10, 20, 30};\n    printf(\"%d\", arr[0] * arr[1]);\n    return 0;\n}",
+    "o": [
+      "200",
+      "30",
+      "50",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about multidimensional arrays in C?",
+    "o": [
+      "They are arrays of arrays.",
+      "They can only store integers.",
+      "They can be dynamically allocated.",
+      "They are equivalent to a 1D array."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Hello World!\";\n    printf(\"%c\", *(str + 6));\n    return 0;\n}",
+    "o": [
+      "W",
+      "H",
+      "o",
+      "r"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to declare and initialize a 1D array in C?",
+    "o": [
+      "int arr[] = {1, 2, 3};",
+      "int arr[3] = (1, 2, 3);",
+      "int arr[3] = 1, 2, 3;",
+      "int arr(3) = {1, 2, 3};"
+    ]
+  },
+  {
+    "q": "What is the result of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {2, 4, 6};\n    printf(\"%d\", arr[1] * arr[2]);\n    return 0;\n}",
+    "o": [
+      "24",
+      "12",
+      "10",
+      "16"
+    ]
+  },
+  {
+    "q": "Which function is used to get the length of a string in C?",
+    "o": [
+      "strlen(str)",
+      "strlength(str)",
+      "string_length(str)",
+      "len(str)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"CProgramming\";\n    printf(\"%s\", str + 3);\n    return 0;\n}",
+    "o": [
+      "Programming",
+      "CProgramming",
+      "Pro",
+      "P"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to concatenate two strings in C?",
+    "o": [
+      "strcat(str1, str2)",
+      "concat(str1, str2)",
+      "str_append(str1, str2)",
+      "join(str1, str2)"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid syntax for a 2D array with 3 rows and 2 columns in C?",
+    "o": [
+      "int arr[3][2];",
+      "int arr[3][2] = {{1, 2}, {3, 4}, {5, 6}};",
+      "int arr[3][2] = (1, 2, 3, 4, 5, 6);",
+      "int arr[3][2] = {{1, 2}, {3, 4}};"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Coding\";\n    printf(\"%c\", str[0] + 1);\n    return 0;\n}",
+    "o": [
+      "B",
+      "C",
+      "D",
+      "O"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Arrays\";\n    str[0] = 'a';\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "arrays",
+      "Arrays",
+      "Aarrays",
+      "arrAys"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax for declaring a 3D array in C?",
+    "o": [
+      "int arr[3][3][3];",
+      "int arr[3][3];",
+      "int arr[3][3,3];",
+      "int arr[3][3] = {1, 2, 3};"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {1, 2, 3, 4};\n    printf(\"%d\", arr[0] + arr[3]);\n    return 0;\n}",
+    "o": [
+      "5",
+      "4",
+      "3",
+      "7"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a string in C?",
+    "o": [
+      "char str[] = \"Hello World!\";",
+      "string str = \"Hello World!\";",
+      "char str[12] = 'Hello World!';",
+      "str = \"Hello World!\";"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"C Language\";\n    printf(\"%c\", *(str + 4));\n    return 0;\n}",
+    "o": [
+      "L",
+      "C",
+      "a",
+      "n"
+    ]
+  },
+  {
+    "q": "Which of the following functions is used to copy one string to another in C?",
+    "o": [
+      "strcpy(str1, str2)",
+      "string_copy(str1, str2)",
+      "copy_string(str1, str2)",
+      "str_dup(str1, str2)"
+    ]
+  },
+  {
+    "q": "What is the correct way to declare a 2D array of integers with 4 rows and 3 columns in C?",
+    "o": [
+      "int arr[4][3];",
+      "int arr[3][4];",
+      "int arr[4][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}, {10, 11, 12}};",
+      "int arr[3][4] = {{1, 2}, {3, 4}, {5, 6}};"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Hello\";\n    str[0] = 'h';\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "hello",
+      "Hello",
+      "hEllo",
+      "hEllO"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a character array in C?",
+    "o": [
+      "char arr[5];",
+      "char arr[] = \"abc\";",
+      "char arr[5] = {\"a\", \"b\", \"c\"};",
+      "arr = \"abc\";"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Strings\";\n    printf(\"%d\", sizeof(str));\n    return 0;\n}",
+    "o": [
+      "8",
+      "7",
+      "6",
+      "9"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about arrays in C?",
+    "o": [
+      "Arrays in C are of fixed size once defined.",
+      "Arrays in C can store different types of data.",
+      "Arrays in C automatically resize when needed.",
+      "Arrays in C are passed by value to functions."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {5, 10, 15};\n    printf(\"%d\", arr[2] - arr[0]);\n    return 0;\n}",
+    "o": [
+      "10",
+      "15",
+      "5",
+      "25"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Hello\";\n    printf(\"%s\", str + 1);\n    return 0;\n}",
+    "o": [
+      "ello",
+      "Hello",
+      "H",
+      "o"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to declare a 2D array in C?",
+    "o": [
+      "int arr[3][4];",
+      "int arr(3)(4);",
+      "int arr[3, 4];",
+      "int arr[3, 4] = {1, 2, 3};"
+    ]
+  },
+  {
+    "q": "What is the result of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"CProgramming\";\n    printf(\"%c\", str[4]);\n    return 0;\n}",
+    "o": [
+      "P",
+      "C",
+      "o",
+      "r"
+    ]
+  },
+  {
+    "q": "Which function is used to compare two strings in C?",
+    "o": [
+      "strcmp(str1, str2)",
+      "string_compare(str1, str2)",
+      "str_equal(str1, str2)",
+      "compare_strings(str1, str2)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"World\";\n    printf(\"%c\", str[0] + 2);\n    return 0;\n}",
+    "o": [
+      "Y",
+      "W",
+      "X",
+      "Z"
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes a character array in C?",
+    "o": [
+      "char str[] = \"Hello\";",
+      "char str[6] = \"Hello\";",
+      "char str[5] = \"Hello\";",
+      "char str[6] = {H, e, l, l, o};"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[3] = {1, 2, 3};\n    printf(\"%d\", *(arr + 1));\n    return 0;\n}",
+    "o": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "q": "What is the correct way to access the element in the 2nd row and 3rd column of a 2D array?",
+    "o": [
+      "arr[1][2]",
+      "arr[2][1]",
+      "arr[1][3]",
+      "arr[0][2]"
+    ]
+  },
+  {
+    "q": "Which of the following is true about string handling in C?",
+    "o": [
+      "Strings in C are null-terminated arrays of characters.",
+      "Strings in C do not require null termination.",
+      "Strings in C are treated as integers.",
+      "Strings in C can hold multiple data types."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"CProgramming\";\n    printf(\"%s\", str + 2);\n    return 0;\n}",
+    "o": [
+      "Programming",
+      "CProgramming",
+      "oProgramming",
+      "ramming"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {10, 20, 30, 40};\n    printf(\"%d\", arr[1] * arr[3]);\n    return 0;\n}",
+    "o": [
+      "800",
+      "30",
+      "40",
+      "600"
+    ]
+  },
+  {
+    "q": "Which function is used to find the length of a string in C?",
+    "o": [
+      "strlen(str)",
+      "size_of(str)",
+      "length(str)",
+      "str_size(str)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Hello\";\n    str[0] = 'h';\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "hello",
+      "Hello",
+      "hEllo",
+      "hElLo"
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes a multidimensional array in C?",
+    "o": [
+      "int arr[3][2] = {{1, 2}, {3, 4}, {5, 6}};",
+      "int arr[3, 2] = {1, 2, 3, 4, 5, 6};",
+      "int arr[2][3] = {1, 2, 3, 4, 5, 6};",
+      "int arr[2][3] = {{1, 2}, {3, 4}, {5, 6}};"
+    ]
+  },
+  {
+    "q": "What is the result of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Array\";\n    printf(\"%c\", str[2]);\n    return 0;\n}",
+    "o": [
+      "r",
+      "A",
+      "y",
+      "a"
+    ]
+  },
+  {
+    "q": "Which of the following functions is used to concatenate two strings in C?",
+    "o": [
+      "strcat(str1, str2)",
+      "string_concat(str1, str2)",
+      "str_add(str1, str2)",
+      "concat_strings(str1, str2)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {1, 2, 3, 4};\n    printf(\"%d\", *(arr + 2));\n    return 0;\n}",
+    "o": [
+      "3",
+      "1",
+      "2",
+      "4"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a character array in C?",
+    "o": [
+      "char str[] = \"Hello\";",
+      "char str[5] = \"Hello\";",
+      "char str[6] = 'Hello';",
+      "char str = \"Hello\";"
+    ]
+  },
+  {
+    "q": "What is the correct way to initialize a 3x3 matrix in C?",
+    "o": [
+      "int matrix[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};",
+      "int matrix[3, 3] = {{1, 2}, {3, 4}, {5, 6}};",
+      "int matrix[3][3] = {1, 2, 3, 4, 5, 6, 7, 8, 9};",
+      "int matrix[3][3] = {{1, 2, 3, 4}, {5, 6, 7, 8}};"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"CProgram\";\n    printf(\"%s\", str + 2);\n    return 0;\n}",
+    "o": [
+      "Program",
+      "CProgram",
+      "rogram",
+      "Pogram"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {10, 20, 30, 40, 50};\n    printf(\"%d\", arr[2] + arr[4]);\n    return 0;\n}",
+    "o": [
+      "80",
+      "50",
+      "60",
+      "70"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to access the first character of a string in C?",
+    "o": [
+      "str[0]",
+      "str[1]",
+      "str[2]",
+      "str[3]"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Programming\";\n    printf(\"%c\", str[5]);\n    return 0;\n}",
+    "o": [
+      "a",
+      "P",
+      "g",
+      "r"
+    ]
+  },
+  {
+    "q": "Which function is used to copy one string to another in C?",
+    "o": [
+      "strcpy(dest, src)",
+      "string_copy(dest, src)",
+      "str_move(dest, src)",
+      "copy_string(dest, src)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"C Programming\";\n    printf(\"%s\", str + 2);\n    return 0;\n}",
+    "o": [
+      "Programming",
+      "C Programming",
+      "rogramming",
+      "ogramming"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare a multidimensional array of size 3x4 in C?",
+    "o": [
+      "int arr[3][4];",
+      "int arr[3,4];",
+      "int arr[3][4] = {1, 2, 3, 4};",
+      "int arr(3)(4);"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Hello\";\n    str[1] = 'a';\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "Hallo",
+      "Hello",
+      "Hella",
+      "Helo"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a string literal in C?",
+    "o": [
+      "char str[] = \"Hello\";",
+      "char str = \"Hello\";",
+      "char str[6] = {\"Hello\"};",
+      "char str[] = {H, e, l, l, o};"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {1, 2, 3, 4, 5};\n    printf(\"%d\", *(arr + 3));\n    return 0;\n}",
+    "o": [
+      "4",
+      "1",
+      "5",
+      "2"
+    ]
+  },
+  {
+    "q": "What is the correct way to initialize a 2D array with predefined values in C?",
+    "o": [
+      "int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};",
+      "int arr[2, 3] = {1, 2, 3, 4, 5, 6};",
+      "int arr[2][3] = {1, 2, 3; 4, 5, 6};",
+      "int arr[2][3] = {1, 2, 3 4, 5, 6};"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"ABCDE\";\n    printf(\"%c\", str[3]);\n    return 0;\n}",
+    "o": [
+      "D",
+      "E",
+      "A",
+      "B"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare and initialize a string in C?",
+    "o": [
+      "char str[] = \"Hello World!\";",
+      "char str[] = {\"Hello World!\"};",
+      "char str = \"Hello World!\";",
+      "char str[14] = \"Hello World!\";"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"C\";\n    str[0] = 'P';\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "P",
+      "C",
+      "CP",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which function is used to compare two strings in C?",
+    "o": [
+      "strcmp(str1, str2)",
+      "string_compare(str1, str2)",
+      "str_cmp(str1, str2)",
+      "compare_strings(str1, str2)"
+    ]
+  },
+  {
+    "q": "What is the correct way to define a 3x3 matrix in C?",
+    "o": [
+      "int matrix[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};",
+      "int matrix[3][3] = {1, 2, 3, 4, 5, 6, 7, 8, 9};",
+      "int matrix[3][3] = {1, 2, 3};",
+      "int matrix[3,3] = {{1, 2}, {3, 4}, {5, 6}};"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Array\";\n    printf(\"%s\", str + 1);\n    return 0;\n}",
+    "o": [
+      "rray",
+      "Array",
+      "Arr",
+      "ay"
+    ]
+  },
+  {
+    "q": "Which of the following correctly accesses the first element of a 2D array in C?",
+    "o": [
+      "arr[0][0]",
+      "arr[1][1]",
+      "arr[0]",
+      "arr[0][1]"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {5, 10, 15};\n    printf(\"%d\", *(arr + 1));\n    return 0;\n}",
+    "o": [
+      "10",
+      "5",
+      "15",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a 5x5 character matrix in C?",
+    "o": [
+      "char arr[5][5];",
+      "char arr(5)(5);",
+      "char arr[5];",
+      "char arr[5][5] = {'a', 'b', 'c', 'd', 'e'};"
+    ]
+  },
+  {
+    "q": "Which of the following statements about strings in C is true?",
+    "o": [
+      "A string is an array of characters terminated by a null character.",
+      "A string is a sequence of integers.",
+      "Strings in C are automatically null-terminated.",
+      "Strings in C are not mutable."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {10, 20, 30, 40};\n    printf(\"%d\", *(arr + 2));\n    return 0;\n}",
+    "o": [
+      "30",
+      "20",
+      "40",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare a character array to store a string in C?",
+    "o": [
+      "char str[100];",
+      "char str[] = 'Hello';",
+      "char str[5];",
+      "char str = 'Hello';"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Programming\";\n    printf(\"%s\", str + 5);\n    return 0;\n}",
+    "o": [
+      "amming",
+      "ogramming",
+      "ming",
+      "Programming"
+    ]
+  },
+  {
+    "q": "Which function is used to concatenate two strings in C?",
+    "o": [
+      "strcat(dest, src)",
+      "string_concat(dest, src)",
+      "str_join(dest, src)",
+      "combine_strings(dest, src)"
+    ]
+  },
+  {
+    "q": "What is the correct way to declare and initialize a 2D array with integers in C?",
+    "o": [
+      "int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};",
+      "int arr[2,3] = {1, 2, 3, 4, 5, 6};",
+      "int arr[2][3] = {1, 2, 3, 4, 5, 6};",
+      "int arr[2][3] = {1 2 3, 4 5 6};"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Hello\";\n    str[0] = 'J';\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "Jello",
+      "Hello",
+      "Jello World",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true regarding a null-terminated string in C?",
+    "o": [
+      "A string is terminated by a null character '\\0'.",
+      "A string is terminated by the character '0'.",
+      "A string can be terminated by any character.",
+      "A string is automatically null-terminated in C."
+    ]
+  },
+  {
+    "q": "What is the correct way to initialize a string with a predefined size of 10 in C?",
+    "o": [
+      "char str[10] = \"Hello\";",
+      "char str[10] = \"Hello World\";",
+      "char str[10] = 'Hello';",
+      "char str[10] = {\"Hello\"};"
+    ]
+  },
+  {
+    "q": "Which of the following methods will correctly change the value of the second element of an array in C?",
+    "o": [
+      "arr[1] = 10;",
+      "arr[2] = 10;",
+      "arr = 10;",
+      "arr(1) = 10;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Array\";\n    printf(\"%c\", *(str + 3));\n    return 0;\n}",
+    "o": [
+      "a",
+      "r",
+      "A",
+      "y"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"C Programming\";\n    printf(\"%s\", str + 2);\n    return 0;\n}",
+    "o": [
+      "Programming",
+      "C Programming",
+      "Pro",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about arrays in C?",
+    "o": [
+      "Arrays in C have a fixed size that cannot be changed.",
+      "Arrays in C can dynamically change their size.",
+      "Arrays are automatically resized when more elements are added.",
+      "Arrays can only hold elements of the same type in C."
+    ]
+  },
+  {
+    "q": "What will the following code snippet print?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[3] = {10, 20, 30};\n    printf(\"%d\", arr[1]);\n    return 0;\n}",
+    "o": [
+      "20",
+      "10",
+      "30",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following functions can be used to find the length of a string in C?",
+    "o": [
+      "strlen(str)",
+      "length(str)",
+      "string_len(str)",
+      "size(str)"
+    ]
+  },
+  {
+    "q": "How do you define a 2D array of 4 rows and 5 columns in C?",
+    "o": [
+      "int arr[4][5];",
+      "int arr[4, 5];",
+      "int arr[4][5] = {1, 2, 3, 4, 5};",
+      "int arr[5][4];"
+    ]
+  },
+  {
+    "q": "What will the following code snippet print?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Hello\";\n    str[0] = 'J';\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "Jello",
+      "Hello",
+      "Jell",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to copy one string into another in C?",
+    "o": [
+      "strcpy(dest, src)",
+      "copy_str(dest, src)",
+      "strncpy(dest, src, n)",
+      "string_copy(dest, src)"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct declaration of a string in C?",
+    "o": [
+      "char str[] = \"Hello World\";",
+      "string str = \"Hello World\";",
+      "char str = \"Hello World\";",
+      "char str[20] = 'Hello World';"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\n\nint main() {\n    char str[] = \"Array\";\n    printf(\"%c\", *(str + 4));\n    return 0;\n}",
+    "o": [
+      "y",
+      "A",
+      "r",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to initialize a 1D array of integers with values 1, 2, and 3 in C?",
+    "o": [
+      "int arr[] = {1, 2, 3};",
+      "int arr = {1, 2, 3};",
+      "int arr(3) = {1, 2, 3};",
+      "int arr[3] = {1, 2, 3};"
+    ]
+  },
+  {
+    "q": "What is the difference between a character array and a string in C?",
+    "o": [
+      "A string is a character array terminated with a null character '\\0'.",
+      "There is no difference between them.",
+      "A character array cannot store strings.",
+      "Strings do not require memory allocation."
+    ]
+  },
+  {
+    "q": "Which C standard library function is used to compare two strings?",
+    "o": [
+      "strcmp()",
+      "strcpy()",
+      "strlen()",
+      "strcat()"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[5] = {1, 2, 3};\n    printf(\"%d\", arr[4]);\n    return 0;\n}",
+    "o": [
+      "0",
+      "3",
+      "2",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which declaration correctly defines a 2D array of 3 rows and 4 columns?",
+    "o": [
+      "int arr[3][4];",
+      "int arr(3,4);",
+      "int arr[4][3];",
+      "int arr[3,4];"
+    ]
+  },
+  {
+    "q": "What is the correct way to read a string (including spaces) in C?",
+    "o": [
+      "fgets(str, sizeof(str), stdin);",
+      "scanf(\"%s\", str);",
+      "gets(str);",
+      "cin >> str;"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int matrix[2][2] = {{1, 2}, {3, 4}};\n    printf(\"%d\", matrix[1][0]);\n    return 0;\n}",
+    "o": [
+      "3",
+      "1",
+      "2",
+      "4"
+    ]
+  },
+  {
+    "q": "Which function is used to concatenate two strings in C?",
+    "o": [
+      "strcat()",
+      "strcmp()",
+      "strcpy()",
+      "strjoin()"
+    ]
+  },
+  {
+    "q": "How are multidimensional arrays stored in memory in C?",
+    "o": [
+      "Row-major order",
+      "Column-major order",
+      "Tree structure",
+      "Heap only"
+    ]
+  },
+  {
+    "q": "Which of the following statements is TRUE about 1D arrays in C?",
+    "o": [
+      "They store elements in contiguous memory locations.",
+      "They can store elements of different types.",
+      "They are always initialized to 0.",
+      "They can grow in size dynamically."
+    ]
+  },
+  {
+    "q": "What is the result of strlen(\"C\\0Programming\")?",
+    "o": [
+      "1",
+      "14",
+      "13",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following initializes all elements of a 1D integer array to zero?",
+    "o": [
+      "int arr[5] = {0};",
+      "int arr[5] = {};",
+      "int arr[5] = (0);",
+      "int arr[5];"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[20] = \"Hello\";\n    strcat(str, \" World\");\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "Hello World",
+      "Hello",
+      "World",
+      "HelloWorld"
+    ]
+  },
+  {
+    "q": "How is a string represented internally in C?",
+    "o": [
+      "As a null-terminated character array",
+      "As a special string type",
+      "As an integer array",
+      "As a void pointer"
+    ]
+  },
+  {
+    "q": "Which function copies one string to another in C?",
+    "o": [
+      "strcpy()",
+      "strcat()",
+      "strlen()",
+      "strcmp()"
+    ]
+  },
+  {
+    "q": "What does the following code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[2][3] = {{1,2,3}, {4,5,6}};\n    printf(\"%d\", arr[0][2]);\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "4",
+      "6"
+    ]
+  },
+  {
+    "q": "Which of the following is true about 2D arrays in C?",
+    "o": [
+      "They are arrays of arrays.",
+      "They are pointer arrays by default.",
+      "They can only be square-shaped.",
+      "They are not stored in memory."
+    ]
+  },
+  {
+    "q": "Which string function returns the length of a string excluding the null terminator?",
+    "o": [
+      "strlen()",
+      "strcpy()",
+      "strcat()",
+      "strcmp()"
+    ]
+  },
+  {
+    "q": "What is the correct way to declare a 3x3 integer matrix in C?",
+    "o": [
+      "int matrix[3][3];",
+      "int matrix(3,3);",
+      "int matrix[3,3];",
+      "int matrix = [3][3];"
+    ]
+  },
+  {
+    "q": "Which of the following character arrays is a proper string in C?",
+    "o": [
+      "char str[] = \"C programming\";",
+      "char str[] = {'C', ' ', 'p', 'r', 'o'};",
+      "char str[5] = \"C\";",
+      "char str = \"C\";"
+    ]
+  },
+  {
+    "q": "What does strcmp(\"hello\", \"hello\") return?",
+    "o": [
+      "0",
+      "1",
+      "-1",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a 2D array with 2 rows and 5 columns in C?",
+    "o": [
+      "int arr[2][5];",
+      "int arr(2,5);",
+      "int[2][5] arr;",
+      "array int arr[2][5];"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a[3] = {1, 2};\n    printf(\"%d\", a[2]);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "2",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which string function is used to find the length of a string in C?",
+    "o": [
+      "strlen()",
+      "strcat()",
+      "strcpy()",
+      "strcmp()"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char s1[10] = \"Hi\";\n    char s2[10] = \"There\";\n    strcat(s1, s2);\n    printf(\"%s\", s1);\n    return 0;\n}",
+    "o": [
+      "HiThere",
+      "Hi",
+      "ThereHi",
+      "Hi There"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to declare a character array as a string?",
+    "o": [
+      "char name[] = \"John\";",
+      "char name[] = {'J', 'o', 'h', 'n'};",
+      "char name = \"John\";",
+      "char[] name = \"John\";"
+    ]
+  },
+  {
+    "q": "What is stored at index [1][2] of this 2D array?\nint arr[2][3] = {{1,2,3}, {4,5,6}};",
+    "o": [
+      "6",
+      "2",
+      "3",
+      "5"
+    ]
+  },
+  {
+    "q": "Which function is used to copy one string to another in C?",
+    "o": [
+      "strcpy()",
+      "strcat()",
+      "strlen()",
+      "strcomp()"
+    ]
+  },
+  {
+    "q": "What is the default value of uninitialized elements in an array when partially initialized?",
+    "o": [
+      "0",
+      "-1",
+      "Depends on compiler",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a string in C?",
+    "o": [
+      "A character array terminated with '\\0'",
+      "A sequence of integers",
+      "A pointer to characters",
+      "An array of words"
+    ]
+  },
+  {
+    "q": "Which is a correct way to declare a 3D array in C?",
+    "o": [
+      "int arr[2][3][4];",
+      "int arr[2,3,4];",
+      "int arr = [2][3][4];",
+      "array arr[2][3][4];"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[5] = {1, 2, 3};\n    printf(\"%d\", arr[4]);\n    return 0;\n}",
+    "o": [
+      "0",
+      "3",
+      "Garbage value",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following string functions compares two strings in C?",
+    "o": [
+      "strcmp()",
+      "strcat()",
+      "strcpy()",
+      "strlen()"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a 2D array of 4 rows and 3 columns?",
+    "o": [
+      "int arr[4][3];",
+      "int arr(4,3);",
+      "int[4,3] arr;",
+      "array arr[4][3];"
+    ]
+  },
+  {
+    "q": "What is the difference between a character array and a string in C?",
+    "o": [
+      "A string is a character array terminated by '\\0'",
+      "There is no difference",
+      "Character arrays store integers",
+      "Strings do not need memory allocation"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str1[10] = \"abc\";\n    char str2[10] = \"abc\";\n    printf(\"%d\", strcmp(str1, str2));\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "-1",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which function appends one string to another in C?",
+    "o": [
+      "strcat()",
+      "strcpy()",
+      "strcmp()",
+      "strrev()"
+    ]
+  },
+  {
+    "q": "Which of the following statements is TRUE about multidimensional arrays in C?",
+    "o": [
+      "They are stored in row-major order in memory",
+      "They are stored in column-major order in memory",
+      "They cannot have more than 2 dimensions",
+      "They must be declared with all dimensions initialized"
+    ]
+  },
+  {
+    "q": "Which string function reverses a string in C (with standard libraries)?",
+    "o": [
+      "strrev()",
+      "strcpy()",
+      "strcat()",
+      "strlen()"
+    ]
+  },
+  {
+    "q": "What is the index of the last element in an array of size 7?",
+    "o": [
+      "6",
+      "7",
+      "8",
+      "5"
+    ]
+  },
+  {
+    "q": "Which of the following will store the string \"Hello\" in a character array properly?",
+    "o": [
+      "char str[] = \"Hello\";",
+      "char str[] = {'H','e','l','l','o'};",
+      "char str = \"Hello\";",
+      "char str[5] = \"Hello\";"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[] = {10, 20, 30, 40};\n    printf(\"%d\", *(arr + 2));\n    return 0;\n}",
+    "o": [
+      "30",
+      "20",
+      "10",
+      "40"
+    ]
+  },
+  {
+    "q": "Which of the following functions returns the length of a string in C?",
+    "o": [
+      "strlen()",
+      "strcpy()",
+      "strcat()",
+      "strcmp()"
+    ]
+  },
+  {
+    "q": "What is the size in bytes of a 3x3 integer array in C (assuming int is 4 bytes)?",
+    "o": [
+      "36",
+      "9",
+      "12",
+      "27"
+    ]
+  },
+  {
+    "q": "Which character is used to terminate strings in C?",
+    "o": [
+      "'\\0'",
+      "'\\n'",
+      "'\\t'",
+      "'\\r'"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    char str[10];\n    scanf(\"%s\", str);\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "Prints user-entered word until space",
+      "Prints entire line including spaces",
+      "Compiles but prints nothing",
+      "Causes runtime error"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to declare and initialize a 2D array?",
+    "o": [
+      "int matrix[2][3] = {{1,2,3},{4,5,6}};",
+      "int matrix[2][3] = {1,2,3,4,5,6};",
+      "int matrix[2,3] = {{1,2,3},{4,5,6}};",
+      "int matrix[2][3] = [1,2,3,4,5,6];"
+    ]
+  },
+  {
+    "q": "Which function is used to copy one string into another in C?",
+    "o": [
+      "strcpy()",
+      "strcat()",
+      "strlen()",
+      "strrev()"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about character arrays and strings in C?",
+    "o": [
+      "Strings are character arrays ending with '\\0'",
+      "Character arrays cannot hold alphabets",
+      "String is a data type in C",
+      "Character arrays need to use pointers"
+    ]
+  },
+  {
+    "q": "Which function compares a limited number of characters in two strings?",
+    "o": [
+      "strncmp()",
+      "strcmp()",
+      "strcpy()",
+      "strcat()"
+    ]
+  },
+  {
+    "q": "How many elements can the following array hold?\nint arr[5][4];",
+    "o": [
+      "20",
+      "9",
+      "10",
+      "25"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a 1D array of 5 integers?",
+    "o": [
+      "int arr[5];",
+      "int arr();",
+      "int arr = {5};",
+      "int[5] arr;"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code?",
+    "c": "#include <stdio.h>\nint main() {\n  char str[] = \"Hello\";\n  printf(\"%c\", str[1]);\n  return 0;\n}",
+    "o": [
+      "e",
+      "H",
+      "l",
+      "o"
+    ]
+  },
+  {
+    "q": "Which function is used to concatenate two strings in C?",
+    "o": [
+      "strcat()",
+      "strcpy()",
+      "strlen()",
+      "strcmp()"
+    ]
+  },
+  {
+    "q": "How is a 2D array stored in memory in C?",
+    "o": [
+      "Row-major order",
+      "Column-major order",
+      "Random order",
+      "Depends on compiler"
+    ]
+  },
+  {
+    "q": "What is the correct syntax to access the third row and second column in a 2D array `arr`?",
+    "o": [
+      "arr[2][1]",
+      "arr[1][2]",
+      "arr[3][2]",
+      "arr[2,1]"
+    ]
+  },
+  {
+    "q": "What does the `strcmp()` function return if two strings are equal?",
+    "o": [
+      "0",
+      "1",
+      "-1",
+      "Null"
+    ]
+  },
+  {
+    "q": "What will be the output of this program?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n  char str1[] = \"Hi\";\n  char str2[] = \"There\";\n  strcat(str1, str2);\n  printf(\"%s\", str1);\n  return 0;\n}",
+    "o": [
+      "Undefined behavior",
+      "HiThere",
+      "Hi",
+      "There"
+    ]
+  },
+  {
+    "q": "What is the main difference between character arrays and strings in C?",
+    "o": [
+      "Strings are null-terminated, char arrays may not be",
+      "Char arrays are always initialized",
+      "Strings can store integers",
+      "Char arrays can only store letters"
+    ]
+  },
+  {
+    "q": "How many dimensions does the following array have?\nint arr[2][3][4];",
+    "o": [
+      "3",
+      "2",
+      "1",
+      "4"
+    ]
+  },
+  {
+    "q": "Which string function would you use to copy one string to another safely in modern C?",
+    "o": [
+      "strncpy()",
+      "strcpy()",
+      "strcat()",
+      "strrev()"
+    ]
+  },
+  {
+    "q": "What is the correct way to declare a 2D array with 3 rows and 4 columns?",
+    "o": [
+      "int arr[3][4];",
+      "int arr(3,4);",
+      "int[3][4] arr;",
+      "array arr[3][4];"
+    ]
+  },
+  {
+    "q": "What does the following code output?",
+    "c": "#include <stdio.h>\nint main() {\n  int arr[5] = {1, 2, 3};\n  printf(\"%d\", arr[4]);\n  return 0;\n}",
+    "o": [
+      "0",
+      "3",
+      "1",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which string function is used to get the length of a string?",
+    "o": [
+      "strlen()",
+      "strcpy()",
+      "strcat()",
+      "strcmp()"
+    ]
+  },
+  {
+    "q": "Which of the following is true about character arrays and strings in C?",
+    "o": [
+      "A string is a character array ending with '\\0'",
+      "Character arrays cannot store multiple characters",
+      "Strings do not need to end with null character",
+      "Both are always interchangeable"
+    ]
+  },
+  {
+    "q": "How is a string represented in C?",
+    "o": [
+      "An array of characters terminated by a null character",
+      "A special string type",
+      "A pointer to an integer",
+      "As a void type"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n  char s1[10] = \"abc\";\n  char s2[] = \"def\";\n  strcat(s1, s2);\n  printf(\"%s\", s1);\n  return 0;\n}",
+    "o": [
+      "abcdef",
+      "abc",
+      "def",
+      "abc def"
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes a 2D integer array with 2 rows and 2 columns?",
+    "o": [
+      "int arr[2][2] = {{1, 2}, {3, 4}};",
+      "int arr[2,2] = {{1, 2}, {3, 4}};",
+      "int arr = [2][2] {{1,2},{3,4}};",
+      "int arr(2)(2) = {{1,2},{3,4}};"
+    ]
+  },
+  {
+    "q": "What does `strcpy()` do in C?",
+    "o": [
+      "Copies a string from source to destination",
+      "Compares two strings",
+      "Appends one string to another",
+      "Counts characters in a string"
+    ]
+  },
+  {
+    "q": "What is the default value in uninitialized elements of a local array in C?",
+    "o": [
+      "Garbage value",
+      "0",
+      "Null",
+      "Empty"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to declare a string?",
+    "o": [
+      "char name[] = \"John\";",
+      "char name = \"John\";",
+      "string name = 'John';",
+      "char name() = {'J','o','h','n'};"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[3] = {1, 2, 3};\n    printf(\"%d\", arr[1]);\n    return 0;\n}",
+    "o": [
+      "2",
+      "1",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following string handling functions in C is used to find the length of a string?",
+    "o": [
+      "strlen()",
+      "strcpy()",
+      "strcat()",
+      "strcmp()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    char str[] = \"Hello\";\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "Hello",
+      "H",
+      "ello",
+      "Error"
+    ]
+  },
+  {
+    "q": "In C, what is the key difference between a character array and a string?",
+    "o": [
+      "A string is a character array terminated by a null character '\\0', while a character array is not necessarily null-terminated",
+      "A character array can only store letters, while a string can store numbers too",
+      "A string is immutable, while a character array is mutable",
+      "There is no difference between the two"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet involving a 2D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[2][2] = {{1, 2}, {3, 4}};\n    printf(\"%d\", arr[1][0]);\n    return 0;\n}",
+    "o": [
+      "3",
+      "1",
+      "2",
+      "4"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a 3D array in C?",
+    "o": [
+      "int arr[2][3][4];",
+      "int arr[2,3,4];",
+      "int arr(2)(3)(4);",
+      "int arr[2][3][4"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet using a string function?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"World\";\n    printf(\"%d\", strlen(str));\n    return 0;\n}",
+    "o": [
+      "5",
+      "6",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "In a multidimensional array in C, how is the element arr[1][2] accessed in memory?",
+    "o": [
+      "It is stored in row-major order, calculated as base_address + (1 * num_columns + 2) * size_of_element",
+      "It is stored in column-major order, calculated as base_address + (2 * num_rows + 1) * size_of_element",
+      "It is accessed randomly in memory",
+      "It cannot be accessed directly"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet with a 1D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[5] = {10, 20, 30, 40, 50};\n    printf(\"%d\", arr[3]);\n    return 0;\n}",
+    "o": [
+      "40",
+      "30",
+      "50",
+      "10"
+    ]
+  },
+  {
+    "q": "Which C string function is used to copy one string to another?",
+    "o": [
+      "strcpy()",
+      "strncmp()",
+      "strchr()",
+      "strncat()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet involving string concatenation?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str1[20] = \"Good\";\n    char str2[] = \"Morning\";\n    strcat(str1, str2);\n    printf(\"%s\", str1);\n    return 0;\n}",
+    "o": [
+      "GoodMorning",
+      "Good Morning",
+      "MorningGood",
+      "Good"
+    ]
+  },
+  {
+    "q": "In C, what happens if a character array is not null-terminated when treated as a string?",
+    "o": [
+      "It may cause undefined behavior when used with string functions",
+      "It will automatically be null-terminated by the compiler",
+      "It will only print the first character",
+      "It will throw a compilation error"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet with a 2D array initialization?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[3][2] = {{5, 10}, {15, 20}, {25, 30}};\n    printf(\"%d\", arr[2][1]);\n    return 0;\n}",
+    "o": [
+      "30",
+      "25",
+      "20",
+      "15"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to initialize a multidimensional array in C?",
+    "o": [
+      "int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};",
+      "int arr[2][3] = (1, 2, 3, 4, 5, 6);",
+      "int arr[2,3] = {{1, 2, 3}, {4, 5, 6}};",
+      "int arr[2][3] = [1, 2, 3][4, 5, 6];"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet comparing two strings?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str1[] = \"apple\";\n    char str2[] = \"banana\";\n    int result = strcmp(str1, str2);\n    printf(\"%d\", result < 0);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "-1",
+      "Error"
+    ]
+  },
+  {
+    "q": "How many elements can a 3D array declared as 'int arr[2][3][4]' store in C?",
+    "o": [
+      "24",
+      "12",
+      "9",
+      "8"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet modifying a 1D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[4] = {3, 6, 9, 12};\n    arr[2] = 15;\n    printf(\"%d\", arr[2]);\n    return 0;\n}",
+    "o": [
+      "15",
+      "9",
+      "12",
+      "3"
+    ]
+  },
+  {
+    "q": "Which C string function is used to locate a character within a string?",
+    "o": [
+      "strchr()",
+      "strstr()",
+      "strtok()",
+      "strrev()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet splitting a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"C,Programming\";\n    char *token = strtok(str, \",\");\n    printf(\"%s\", token);\n    return 0;\n}",
+    "o": [
+      "C",
+      "Programming",
+      "C,Programming",
+      "Error"
+    ]
+  },
+  {
+    "q": "In C, why must a character array intended to be a string have enough space for the null terminator?",
+    "o": [
+      "String functions rely on the null terminator to determine the string's end",
+      "It prevents the array from being resized",
+      "It allows the array to store integers as well",
+      "It is optional and not strictly required"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet accessing a 2D array diagonally?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};\n    printf(\"%d\", arr[1][1]);\n    return 0;\n}",
+    "o": [
+      "5",
+      "4",
+      "6",
+      "9"
+    ]
+  },
+  {
+    "q": "Which of the following correctly accesses an element in a 3D array declared as 'int arr[2][2][3]'?",
+    "o": [
+      "arr[1][0][2]",
+      "arr[1,0,2]",
+      "arr(1)(0)(2)",
+      "arr[1][0][2][0]"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet reversing a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"Racecar\";\n    printf(\"%d\", strcmp(str, strrev(str)) == 0);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "-1",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the total memory size in bytes of a 2D array 'int arr[4][5]' on a system where int is 4 bytes?",
+    "o": [
+      "80",
+      "20",
+      "64",
+      "100"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet summing a 1D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[5] = {2, 4, 6, 8, 10};\n    int sum = 0;\n    for(int i = 0; i < 5; i++) sum += arr[i];\n    printf(\"%d\", sum);\n    return 0;\n}",
+    "o": [
+      "30",
+      "20",
+      "25",
+      "40"
+    ]
+  },
+  {
+    "q": "Which C string function compares only a specified number of characters between two strings?",
+    "o": [
+      "strncmp()",
+      "strcmp()",
+      "strcoll()",
+      "strxfrm()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet searching for a substring?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"Learning C is fun\";\n    char *result = strstr(str, \"C\");\n    printf(\"%s\", result);\n    return 0;\n}",
+    "o": [
+      "C is fun",
+      "Learning C",
+      "C",
+      "NULL"
+    ]
+  },
+  {
+    "q": "In C, what is the primary advantage of using a string over a character array without a null terminator?",
+    "o": [
+      "Strings can be safely processed by standard string functions",
+      "Character arrays are faster to access",
+      "Strings take up less memory",
+      "Character arrays can store more data types"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet multiplying elements in a 2D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};\n    int product = arr[0][2] * arr[1][1];\n    printf(\"%d\", product);\n    return 0;\n}",
+    "o": [
+      "15",
+      "12",
+      "18",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of the following declarations reserves space for a 4D array in C?",
+    "o": [
+      "int arr[2][2][2][2];",
+      "int arr[2,2,2,2];",
+      "int arr[2][2][2][2][2];",
+      "int arr{2}{2}{2}{2};"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet modifying a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[10] = \"Hello\";\n    strncpy(str, \"Hi\", 2);\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "Hi",
+      "Hello",
+      "Hiello",
+      "Hillo"
+    ]
+  },
+  {
+    "q": "How are elements of a multidimensional array stored in C memory?",
+    "o": [
+      "In contiguous memory locations in row-major order",
+      "In contiguous memory locations in column-major order",
+      "In non-contiguous memory blocks",
+      "In a linked list structure"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the maximum in a 1D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[6] = {7, 2, 9, 4, 6, 1};\n    int max = arr[0];\n    for(int i = 1; i < 6; i++) if(arr[i] > max) max = arr[i];\n    printf(\"%d\", max);\n    return 0;\n}",
+    "o": [
+      "9",
+      "7",
+      "6",
+      "4"
+    ]
+  },
+  {
+    "q": "Which C string function concatenates a specified number of characters from one string to another?",
+    "o": [
+      "strncat()",
+      "strcat()",
+      "strncpy()",
+      "strnlen()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet replacing characters in a string?",
+    "c": "#include <stdio.h>\nint main() {\n    char str[] = \"Programming\";\n    str[0] = 'C';\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "Crogramming",
+      "Programming",
+      "Crogramming",
+      "Error"
+    ]
+  },
+  {
+    "q": "In C, what happens if you try to use a string function on a character array without a null terminator?",
+    "o": [
+      "It may read beyond the array bounds until a null character is found",
+      "It will automatically terminate at the array's end",
+      "It will only process the first character",
+      "It will return a null pointer"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet summing a row in a 2D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[2][4] = {{1, 2, 3, 4}, {5, 6, 7, 8}};\n    int sum = 0;\n    for(int j = 0; j < 4; j++) sum += arr[1][j];\n    printf(\"%d\", sum);\n    return 0;\n}",
+    "o": [
+      "26",
+      "10",
+      "20",
+      "15"
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes a 3D array with all zeros in C?",
+    "o": [
+      "int arr[2][2][2] = {0};",
+      "int arr[2][2][2] = {};",
+      "int arr[2][2][2] = NULL;",
+      "int arr[2][2][2] = (0);"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet counting characters in a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"Data\";\n    int count = 0;\n    while(str[count] != '\\0') count++;\n    printf(\"%d\", count);\n    return 0;\n}",
+    "o": [
+      "4",
+      "5",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "What is the index of the last element in a 2D array declared as 'int arr[3][5]'?",
+    "o": [
+      "arr[2][4]",
+      "arr[3][5]",
+      "arr[2][5]",
+      "arr[3][4]"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet shifting elements in a 1D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[5] = {1, 2, 3, 4, 5};\n    int temp = arr[0];\n    for(int i = 0; i < 4; i++) arr[i] = arr[i+1];\n    arr[4] = temp;\n    printf(\"%d\", arr[3]);\n    return 0;\n}",
+    "o": [
+      "5",
+      "4",
+      "3",
+      "1"
+    ]
+  },
+  {
+    "q": "Which C string function returns a pointer to the first occurrence of a character set in a string?",
+    "o": [
+      "strpbrk()",
+      "strrchr()",
+      "strcspn()",
+      "strsep()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet appending a character to a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[10] = \"Code\";\n    str[strlen(str)] = '!';\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "Code!",
+      "Code",
+      "Code!\\0",
+      "Error"
+    ]
+  },
+  {
+    "q": "In C, what is a potential risk of treating a character array without a null terminator as a string?",
+    "o": [
+      "It can lead to buffer overflow or memory access violations",
+      "It will always result in a compiler error",
+      "It limits the array to a fixed size",
+      "It prevents modification of the array"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet calculating the average of a 2D array row?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[2][3] = {{10, 20, 30}, {40, 50, 60}};\n    int sum = 0;\n    for(int j = 0; j < 3; j++) sum += arr[0][j];\n    printf(\"%d\", sum / 3);\n    return 0;\n}",
+    "o": [
+      "20",
+      "30",
+      "10",
+      "60"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a multidimensional array with variable sizes in C?",
+    "o": [
+      "int arr[][2][3];",
+      "int arr[][][3];",
+      "int arr[2][][3];",
+      "int arr[2][3][];"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet measuring the length of a substring?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"Substring\";\n    printf(\"%d\", strcspn(str, \"r\"));\n    return 0;\n}",
+    "o": [
+      "3",
+      "9",
+      "6",
+      "0"
+    ]
+  },
+  {
+    "q": "What is the total number of elements in a 4D array declared as 'int arr[2][2][2][2]'?",
+    "o": [
+      "16",
+      "8",
+      "12",
+      "24"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet swapping two elements in a 1D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[4] = {10, 20, 30, 40};\n    int temp = arr[1];\n    arr[1] = arr[3];\n    arr[3] = temp;\n    printf(\"%d\", arr[1]);\n    return 0;\n}",
+    "o": [
+      "40",
+      "20",
+      "30",
+      "10"
+    ]
+  },
+  {
+    "q": "Which C string function calculates the length of the initial segment not containing any characters from a specified set?",
+    "o": [
+      "strcspn()",
+      "strspn()",
+      "strlen()",
+      "strchr()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet converting a string to uppercase manually?",
+    "c": "#include <stdio.h>\nint main() {\n    char str[] = \"test\";\n    for(int i = 0; str[i] != '\\0'; i++) if(str[i] >= 'a' && str[i] <= 'z') str[i] -= 32;\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "TEST",
+      "test",
+      "Test",
+      "TES"
+    ]
+  },
+  {
+    "q": "In C, why is it critical to ensure a character array used as a string is null-terminated?",
+    "o": [
+      "Without it, string functions may continue reading memory indefinitely",
+      "It allows the array to be dynamically resized",
+      "It prevents the string from being modified",
+      "It ensures the string is stored in reverse order"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the sum of a 2D array diagonal?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};\n    int sum = arr[0][0] + arr[1][1] + arr[2][2];\n    printf(\"%d\", sum);\n    return 0;\n}",
+    "o": [
+      "15",
+      "12",
+      "18",
+      "9"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to define a function accepting a 3D array in C?",
+    "o": [
+      "void func(int arr[][2][3]);",
+      "void func(int arr[][][]);",
+      "void func(int arr[2][2][3][]);",
+      "void func(int arr[2][][3]);"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet counting vowels in a string?",
+    "c": "#include <stdio.h>\nint main() {\n    char str[] = \"hello\";\n    int count = 0;\n    for(int i = 0; str[i] != '\\0'; i++) if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u') count++;\n    printf(\"%d\", count);\n    return 0;\n}",
+    "o": [
+      "2",
+      "5",
+      "3",
+      "1"
+    ]
+  },
+  {
+    "q": "How is the memory address of an element arr[1][1][1] in a 3D array 'int arr[2][2][2]' calculated?",
+    "o": [
+      "base_address + (1 * 2 * 2 + 1 * 2 + 1) * sizeof(int)",
+      "base_address + (1 + 1 + 1) * sizeof(int)",
+      "base_address + (1 * 2 + 1) * sizeof(int)",
+      "base_address + (1 * 2 * 2) * sizeof(int)"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet doubling elements in a 1D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[3] = {2, 4, 6};\n    for(int i = 0; i < 3; i++) arr[i] *= 2;\n    printf(\"%d\", arr[2]);\n    return 0;\n}",
+    "o": [
+      "12",
+      "6",
+      "8",
+      "4"
+    ]
+  },
+  {
+    "q": "Which C string function returns the length of the initial segment containing only characters from a specified set?",
+    "o": [
+      "strspn()",
+      "strcspn()",
+      "strnlen()",
+      "strpbrk()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet removing a character from a string?",
+    "c": "#include <stdio.h>\nint main() {\n    char str[] = \"Fleas\";\n    for(int i = 2; str[i] != '\\0'; i++) str[i] = str[i+1];\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "Flas",
+      "Fleas",
+      "Flea",
+      "Fles"
+    ]
+  },
+  {
+    "q": "In C, what is the behavior of string functions if a character array lacks a null terminator?",
+    "o": [
+      "They may process unintended memory until a null character is encountered",
+      "They will treat the array as an empty string",
+      "They will automatically append a null terminator",
+      "They will skip the array entirely"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the product of a 2D array column?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[3][2] = {{2, 3}, {4, 5}, {6, 7}};\n    int prod = 1;\n    for(int i = 0; i < 3; i++) prod *= arr[i][0];\n    printf(\"%d\", prod);\n    return 0;\n}",
+    "o": [
+      "48",
+      "24",
+      "12",
+      "105"
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes a 2D array with specific values in C?",
+    "o": [
+      "int arr[2][2] = {{1, 2}, {3, 4}};",
+      "int arr[2][2] = {1, 2; 3, 4};",
+      "int arr[2][2] = ([1, 2], [3, 4]);",
+      "int arr[2][2] = {{1; 2}, {3; 4}};"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the last occurrence of a character?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"banana\";\n    char *result = strrchr(str, 'a');\n    printf(\"%s\", result);\n    return 0;\n}",
+    "o": [
+      "a",
+      "banana",
+      "ana",
+      "nana"
+    ]
+  },
+  {
+    "q": "What is the size in bytes of a 3D array 'float arr[2][3][2]' if float is 4 bytes?",
+    "o": [
+      "48",
+      "24",
+      "36",
+      "12"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet incrementing even elements in a 1D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[5] = {1, 2, 3, 4, 5};\n    for(int i = 0; i < 5; i++) if(arr[i] % 2 == 0) arr[i]++;\n    printf(\"%d\", arr[3]);\n    return 0;\n}",
+    "o": [
+      "5",
+      "4",
+      "3",
+      "6"
+    ]
+  },
+  {
+    "q": "Which C string function returns a pointer to the last occurrence of a character in a string?",
+    "o": [
+      "strrchr()",
+      "strchr()",
+      "strstr()",
+      "strpbrk()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet inserting a character into a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[10] = \"Pat\";\n    int len = strlen(str);\n    for(int i = len; i >= 1; i--) str[i+1] = str[i];\n    str[1] = 'r';\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "Prat",
+      "Patr",
+      "Pat",
+      "Ptar"
+    ]
+  },
+  {
+    "q": "In C, what might happen if a string function operates on a character array larger than its allocated size without a null terminator?",
+    "o": [
+      "It could overwrite adjacent memory, causing unpredictable behavior",
+      "It will stop at the array’s defined boundary",
+      "It will resize the array automatically",
+      "It will return an error code"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the largest element in a 2D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[2][3] = {{3, 8, 2}, {7, 1, 9}};\n    int max = arr[0][0];\n    for(int i = 0; i < 2; i++) for(int j = 0; j < 3; j++) if(arr[i][j] > max) max = arr[i][j];\n    printf(\"%d\", max);\n    return 0;\n}",
+    "o": [
+      "9",
+      "8",
+      "7",
+      "3"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a 3D array with partial initialization in C?",
+    "o": [
+      "int arr[2][2][2] = {{{1, 2}, {3, 4}}, {{5, 6}}};",
+      "int arr[2][2][2] = {{1, 2}, {3, 4}, {5, 6}};",
+      "int arr[2][2][2] = [1, 2, 3, 4, 5, 6];",
+      "int arr[2][2][2] = {1; 2; 3; 4; 5; 6};"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet checking if a string is a palindrome?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"radar\";\n    int len = strlen(str);\n    int isPal = 1;\n    for(int i = 0; i < len/2; i++) if(str[i] != str[len-1-i]) isPal = 0;\n    printf(\"%d\", isPal);\n    return 0;\n}",
+    "o": [
+      "1",
+      "0",
+      "5",
+      "-1"
+    ]
+  },
+  {
+    "q": "How many dimensions does the array 'int arr[2][3][4][5]' have in C?",
+    "o": [
+      "4",
+      "3",
+      "5",
+      "2"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet rotating a 1D array right by one position?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[4] = {1, 2, 3, 4};\n    int temp = arr[3];\n    for(int i = 3; i > 0; i--) arr[i] = arr[i-1];\n    arr[0] = temp;\n    printf(\"%d\", arr[1]);\n    return 0;\n}",
+    "o": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "q": "Which C string function separates a string into tokens based on a delimiter?",
+    "o": [
+      "strtok()",
+      "strsep()",
+      "strpbrk()",
+      "strspn()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet duplicating a string character?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[10] = \"Sun\";\n    int len = strlen(str);\n    for(int i = len; i >= 2; i--) str[i+1] = str[i];\n    str[2] = 'n';\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "Sunn",
+      "Sun",
+      "Sunun",
+      "Snun"
+    ]
+  },
+  {
+    "q": "In C, what is the implication of a character array without a null terminator being passed to strlen()?",
+    "o": [
+      "It may read past the array until a null character is found, causing undefined behavior",
+      "It will return the array’s declared size",
+      "It will return zero",
+      "It will terminate the program"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet counting even numbers in a 2D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};\n    int count = 0;\n    for(int i = 0; i < 2; i++) for(int j = 0; j < 3; j++) if(arr[i][j] % 2 == 0) count++;\n    printf(\"%d\", count);\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "4",
+      "6"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid partial initialization of a 4D array in C?",
+    "o": [
+      "int arr[2][2][2][2] = {{{{1, 2}, {3, 4}}}};",
+      "int arr[2][2][2][2] = {{1, 2}, {3, 4}};",
+      "int arr[2][2][2][2] = [1, 2, 3, 4];",
+      "int arr[2][2][2][2] = {1; 2; 3; 4};"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the first vowel in a string?",
+    "c": "#include <stdio.h>\nint main() {\n    char str[] = \"Crypt\";\n    int i = 0;\n    while(str[i] != '\\0' && str[i] != 'a' && str[i] != 'e' && str[i] != 'i' && str[i] != 'o' && str[i] != 'u') i++;\n    printf(\"%c\", str[i]);\n    return 0;\n}",
+    "o": [
+      "y",
+      "C",
+      "r",
+      "\\0"
+    ]
+  },
+  {
+    "q": "What is the total number of bytes occupied by 'short arr[2][2][3]' if short is 2 bytes?",
+    "o": [
+      "24",
+      "12",
+      "16",
+      "8"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet setting odd indices to zero in a 1D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[5] = {1, 2, 3, 4, 5};\n    for(int i = 1; i < 5; i += 2) arr[i] = 0;\n    printf(\"%d\", arr[3]);\n    return 0;\n}",
+    "o": [
+      "0",
+      "4",
+      "2",
+      "5"
+    ]
+  },
+  {
+    "q": "Which C string function returns a pointer to the first occurrence of a substring within a string?",
+    "o": [
+      "strstr()",
+      "strrchr()",
+      "strpbrk()",
+      "strtok()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet swapping first and last characters of a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"Book\";\n    char temp = str[0];\n    str[0] = str[strlen(str)-1];\n    str[strlen(str)-1] = temp;\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "KooB",
+      "Book",
+      "BooK",
+      "kooB"
+    ]
+  },
+  {
+    "q": "In C, what can occur if a character array intended as a string is not properly null-terminated?",
+    "o": [
+      "String operations may access memory beyond the array, leading to potential crashes",
+      "The array will be treated as a single character",
+      "The compiler will refuse to compile the code",
+      "The array will be automatically padded with zeros"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the sum of odd-indexed elements in a 2D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[2][3] = {{1, 2, 3}, {4, 5, 6}};\n    int sum = 0;\n    for(int i = 0; i < 2; i++) for(int j = 1; j < 3; j += 2) sum += arr[i][j];\n    printf(\"%d\", sum);\n    return 0;\n}",
+    "o": [
+      "8",
+      "5",
+      "11",
+      "3"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid declaration for a 2D array with fixed columns in a function parameter?",
+    "o": [
+      "void func(int arr[][4]);",
+      "void func(int arr[][]);",
+      "void func(int arr[4][]);",
+      "void func(int arr[][4][]);"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet counting spaces in a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"Space Count\";\n    int count = 0;\n    for(int i = 0; i < strlen(str); i++) if(str[i] == ' ') count++;\n    printf(\"%d\", count);\n    return 0;\n}",
+    "o": [
+      "1",
+      "2",
+      "0",
+      "11"
+    ]
+  },
+  {
+    "q": "What is the memory offset of arr[1][2][1] in a 3D array 'int arr[3][3][2]' if int is 4 bytes?",
+    "o": [
+      "52",
+      "48",
+      "44",
+      "56"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet replacing even numbers with their negatives in a 1D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[4] = {1, 2, 3, 4};\n    for(int i = 0; i < 4; i++) if(arr[i] % 2 == 0) arr[i] = -arr[i];\n    printf(\"%d\", arr[1]);\n    return 0;\n}",
+    "o": [
+      "-2",
+      "2",
+      "1",
+      "-4"
+    ]
+  },
+  {
+    "q": "Which C string function compares strings using locale-specific rules?",
+    "o": [
+      "strcoll()",
+      "strcmp()",
+      "strncmp()",
+      "strxfrm()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet reversing a string manually?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"Star\";\n    int len = strlen(str);\n    for(int i = 0; i < len / 2; i++) {\n        char temp = str[i];\n        str[i] = str[len-1-i];\n        str[len-1-i] = temp;\n    }\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "ratS",
+      "Star",
+      "StaR",
+      "rats"
+    ]
+  },
+  {
+    "q": "In C, what is the risk of using a character array without a null terminator in a loop expecting a string?",
+    "o": [
+      "It may loop indefinitely or access invalid memory",
+      "It will stop at the first character",
+      "It will automatically terminate after the last element",
+      "It will cause a syntax error"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet calculating the difference between max and min in a 2D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[2][2] = {{5, 2}, {8, 3}};\n    int min = arr[0][0], max = arr[0][0];\n    for(int i = 0; i < 2; i++) for(int j = 0; j < 2; j++) {\n        if(arr[i][j] < min) min = arr[i][j];\n        if(arr[i][j] > max) max = arr[i][j];\n    }\n    printf(\"%d\", max - min);\n    return 0;\n}",
+    "o": [
+      "6",
+      "3",
+      "5",
+      "8"
+    ]
+  },
+  {
+    "q": "Which of the following allows a 3D array to be passed to a function with variable first dimension in C?",
+    "o": [
+      "void func(int arr[][3][2]);",
+      "void func(int arr[][][2]);",
+      "void func(int arr[3][2][]);",
+      "void func(int arr[3][][2]);"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the longest word length in a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"Big small huge\";\n    int max = 0, current = 0;\n    for(int i = 0; i <= strlen(str); i++) {\n        if(str[i] == ' ' || str[i] == '\\0') {\n            if(current > max) max = current;\n            current = 0;\n        } else current++;\n    }\n    printf(\"%d\", max);\n    return 0;\n}",
+    "o": [
+      "4",
+      "3",
+      "5",
+      "14"
+    ]
+  },
+  {
+    "q": "What is the total number of elements in a multidimensional array 'int arr[2][4][3]'?",
+    "o": [
+      "24",
+      "12",
+      "18",
+      "9"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet moving zeros to the end of a 1D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[5] = {1, 0, 3, 0, 5};\n    int temp[5], j = 0;\n    for(int i = 0; i < 5; i++) if(arr[i] != 0) temp[j++] = arr[i];\n    while(j < 5) temp[j++] = 0;\n    printf(\"%d\", temp[3]);\n    return 0;\n}",
+    "o": [
+      "0",
+      "3",
+      "5",
+      "1"
+    ]
+  },
+  {
+    "q": "Which C string function copies a specified number of characters from one string to another?",
+    "o": [
+      "strncpy()",
+      "strcpy()",
+      "strncat()",
+      "strxfrm()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet toggling case of a string’s first letter?",
+    "c": "#include <stdio.h>\nint main() {\n    char str[] = \"apple\";\n    if(str[0] >= 'a' && str[0] <= 'z') str[0] -= 32;\n    else if(str[0] >= 'A' && str[0] <= 'Z') str[0] += 32;\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "Apple",
+      "apple",
+      "aPPLE",
+      "APPLE"
+    ]
+  },
+  {
+    "q": "In C, what happens when a character array used as a string exceeds its bounds without a null terminator?",
+    "o": [
+      "It may overwrite adjacent memory or cause a segmentation fault",
+      "It will truncate itself to fit the allocated space",
+      "It will be null-terminated by the runtime environment",
+      "It will skip processing beyond the first element"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the sum of border elements in a 2D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};\n    int sum = 0;\n    for(int j = 0; j < 3; j++) sum += arr[0][j] + arr[2][j];\n    for(int i = 1; i < 2; i++) sum += arr[i][0] + arr[i][2];\n    printf(\"%d\", sum);\n    return 0;\n}",
+    "o": [
+      "30",
+      "25",
+      "20",
+      "15"
+    ]
+  },
+  {
+    "q": "Which of the following correctly specifies a 2D array parameter with fixed rows and columns in C?",
+    "o": [
+      "void func(int arr[2][3]);",
+      "void func(int arr[][]);",
+      "void func(int arr[][3][]);",
+      "void func(int arr[2][]);"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the number of unique characters in a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"loop\";\n    int seen[256] = {0}, count = 0;\n    for(int i = 0; i < strlen(str); i++) if(!seen[str[i]]) { seen[str[i]] = 1; count++; }\n    printf(\"%d\", count);\n    return 0;\n}",
+    "o": [
+      "3",
+      "4",
+      "2",
+      "1"
+    ]
+  },
+  {
+    "q": "What is the byte offset of element arr[1][1][2] in a 3D array 'int arr[2][3][3]' if int is 4 bytes?",
+    "o": [
+      "44",
+      "40",
+      "48",
+      "36"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet interleaving two 1D arrays into one?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr1[3] = {1, 3, 5}, arr2[3] = {2, 4, 6};\n    int result[6], k = 0;\n    for(int i = 0; i < 3; i++) { result[k++] = arr1[i]; result[k++] = arr2[i]; }\n    printf(\"%d\", result[4]);\n    return 0;\n}",
+    "o": [
+      "5",
+      "4",
+      "6",
+      "3"
+    ]
+  },
+  {
+    "q": "Which C string function returns a pointer to the next token in a string after a previous strtok() call?",
+    "o": [
+      "strtok()",
+      "strsep()",
+      "strstr()",
+      "strpbrk()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet shifting characters in a string left?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"Shift\";\n    for(int i = 0; i < strlen(str)-1; i++) str[i] = str[i+1];\n    str[strlen(str)-1] = ' ';\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "hift ",
+      "Shift",
+      "hif t",
+      "Sift "
+    ]
+  },
+  {
+    "q": "In C, what could result from passing a non-null-terminated character array to strcmp()?",
+    "o": [
+      "It may compare unintended memory until a null character is found",
+      "It will only compare the first character",
+      "It will return a default value of 0",
+      "It will halt execution immediately"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet counting elements greater than 5 in a 2D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[2][3] = {{4, 6, 2}, {8, 3, 7}};\n    int count = 0;\n    for(int i = 0; i < 2; i++) for(int j = 0; j < 3; j++) if(arr[i][j] > 5) count++;\n    printf(\"%d\", count);\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "4",
+      "6"
+    ]
+  },
+  {
+    "q": "Which of the following allows a function to accept a 3D array with fixed last two dimensions in C?",
+    "o": [
+      "void func(int arr[][2][4]);",
+      "void func(int arr[][][]);",
+      "void func(int arr[2][4][]);",
+      "void func(int arr[][2][]);"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the most frequent character in a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"bazaar\";\n    int count[256] = {0}, max = 0;\n    char maxChar;\n    for(int i = 0; i < strlen(str); i++) count[str[i]]++;\n    for(int i = 0; i < 256; i++) if(count[i] > max) { max = count[i]; maxChar = i; }\n    printf(\"%c\", maxChar);\n    return 0;\n}",
+    "o": [
+      "a",
+      "b",
+      "z",
+      "r"
+    ]
+  },
+  {
+    "q": "What is the total memory size in bytes of a 4D array 'char arr[2][2][2][2]' if char is 1 byte?",
+    "o": [
+      "16",
+      "8",
+      "24",
+      "12"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet merging two sorted 1D arrays into one?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr1[3] = {1, 3, 5}, arr2[3] = {2, 4, 6};\n    int merged[6], i = 0, j = 0, k = 0;\n    while(i < 3 && j < 3) merged[k++] = (arr1[i] < arr2[j]) ? arr1[i++] : arr2[j++];\n    while(i < 3) merged[k++] = arr1[i++];\n    printf(\"%d\", merged[2]);\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "4",
+      "5"
+    ]
+  },
+  {
+    "q": "Which C string function safely copies a string while ensuring null termination?",
+    "o": [
+      "strncpy()",
+      "strcpy()",
+      "strcat()",
+      "strncat()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet rotating characters in a string right?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"Ring\";\n    char temp = str[strlen(str)-1];\n    for(int i = strlen(str)-1; i > 0; i--) str[i] = str[i-1];\n    str[0] = temp;\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "gRin",
+      "Ring",
+      "Rign",
+      "ngRi"
+    ]
+  },
+  {
+    "q": "In C, what might happen if a character array without a null terminator is used with strcat()?",
+    "o": [
+      "It may append data to an unpredictable location in memory",
+      "It will append only to the first character",
+      "It will automatically null-terminate the array first",
+      "It will skip the operation entirely"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the sum of corner elements in a 2D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};\n    int sum = arr[0][0] + arr[0][2] + arr[2][0] + arr[2][2];\n    printf(\"%d\", sum);\n    return 0;\n}",
+    "o": [
+      "20",
+      "15",
+      "25",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to declare a 4D array with partial initialization in C?",
+    "o": [
+      "int arr[2][2][2][2] = {{{{1, 2}, {3, 4}}, {{5, 6}}}};",
+      "int arr[2][2][2][2] = {{1, 2, 3, 4, 5, 6}};",
+      "int arr[2][2][2][2] = [1, 2, 3, 4, 5, 6];",
+      "int arr[2][2][2][2] = {1; 2; 3; 4; 5; 6};"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet counting consonants in a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"Idea\";\n    int count = 0;\n    for(int i = 0; i < strlen(str); i++) if(str[i] != 'a' && str[i] != 'e' && str[i] != 'i' && str[i] != 'o' && str[i] != 'u') count++;\n    printf(\"%d\", count);\n    return 0;\n}",
+    "o": [
+      "2",
+      "4",
+      "1",
+      "3"
+    ]
+  },
+  {
+    "q": "What is the byte offset of element arr[0][2][1] in a 3D array 'int arr[2][3][2]' if int is 4 bytes?",
+    "o": [
+      "20",
+      "16",
+      "24",
+      "12"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet filtering positive numbers into a new 1D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[5] = {-1, 2, -3, 4, 5};\n    int result[5], k = 0;\n    for(int i = 0; i < 5; i++) if(arr[i] > 0) result[k++] = arr[i];\n    printf(\"%d\", result[1]);\n    return 0;\n}",
+    "o": [
+      "4",
+      "2",
+      "5",
+      "-3"
+    ]
+  },
+  {
+    "q": "Which C string function finds the length of a string up to a maximum specified limit?",
+    "o": [
+      "strnlen()",
+      "strlen()",
+      "strspn()",
+      "strcspn()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet mirroring a string around its center?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"abcd\";\n    int len = strlen(str);\n    for(int i = 0; i < len / 2; i++) str[i] = str[len-1-i];\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "dcba",
+      "abcd",
+      "cbad",
+      "dabc"
+    ]
+  },
+  {
+    "q": "In C, what is a potential issue with using strcpy() on a character array not null-terminated?",
+    "o": [
+      "It may copy data beyond the intended array, corrupting memory",
+      "It will copy only the first character",
+      "It will terminate early at the array’s size",
+      "It will return a null pointer"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet computing the product of a 2D array’s first row?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[2][3] = {{2, 3, 4}, {5, 6, 7}};\n    int prod = 1;\n    for(int j = 0; j < 3; j++) prod *= arr[0][j];\n    printf(\"%d\", prod);\n    return 0;\n}",
+    "o": [
+      "24",
+      "12",
+      "9",
+      "210"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a 2D array with a fixed number of rows in a function parameter?",
+    "o": [
+      "void func(int arr[3][]);",
+      "void func(int arr[][]);",
+      "void func(int arr[][3][]);",
+      "void func(int arr[3][3]);"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the second word in a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"First Second Third\";\n    char *token = strtok(str, \" \");\n    token = strtok(NULL, \" \");\n    printf(\"%s\", token);\n    return 0;\n}",
+    "o": [
+      "Second",
+      "First",
+      "Third",
+      "NULL"
+    ]
+  },
+  {
+    "q": "What is the total memory size in bytes of a 3D array 'double arr[2][2][2]' if double is 8 bytes?",
+    "o": [
+      "64",
+      "32",
+      "48",
+      "16"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet extracting odd numbers into a new 1D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[6] = {2, 3, 4, 5, 6, 7};\n    int result[6], k = 0;\n    for(int i = 0; i < 6; i++) if(arr[i] % 2 != 0) result[k++] = arr[i];\n    printf(\"%d\", result[2]);\n    return 0;\n}",
+    "o": [
+      "7",
+      "3",
+      "5",
+      "2"
+    ]
+  },
+  {
+    "q": "Which C string function safely concatenates strings up to a specified maximum length?",
+    "o": [
+      "strncat()",
+      "strcat()",
+      "strncpy()",
+      "strcpy()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet alternating case in a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"hello\";\n    for(int i = 0; i < strlen(str); i++) if(i % 2 == 0 && str[i] >= 'a' && str[i] <= 'z') str[i] -= 32;\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "HeLlO",
+      "hello",
+      "hElLo",
+      "HELLO"
+    ]
+  },
+  {
+    "q": "In C, what can occur if a non-null-terminated character array is passed to strstr()?",
+    "o": [
+      "It may search beyond the array, potentially causing a crash",
+      "It will return the first character’s address",
+      "It will automatically terminate at the array’s end",
+      "It will return NULL by default"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the average of a 2D array’s last column?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[3][2] = {{1, 2}, {3, 4}, {5, 6}};\n    int sum = 0;\n    for(int i = 0; i < 3; i++) sum += arr[i][1];\n    printf(\"%d\", sum / 3);\n    return 0;\n}",
+    "o": [
+      "4",
+      "2",
+      "6",
+      "12"
+    ]
+  },
+  {
+    "q": "Which of the following allows a function to accept a 4D array with fixed last three dimensions in C?",
+    "o": [
+      "void func(int arr[][2][2][2]);",
+      "void func(int arr[][][][]);",
+      "void func(int arr[2][2][2][]);",
+      "void func(int arr[][2][][2]);"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the middle character of a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"Trace\";\n    int mid = strlen(str) / 2;\n    printf(\"%c\", str[mid]);\n    return 0;\n}",
+    "o": [
+      "a",
+      "T",
+      "r",
+      "c"
+    ]
+  },
+  {
+    "q": "What is the byte offset of element arr[1][0][2] in a 3D array 'int arr[2][2][3]' if int is 4 bytes?",
+    "o": [
+      "32",
+      "28",
+      "36",
+      "24"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet sorting a 1D array in descending order?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[4] = {3, 1, 4, 2};\n    for(int i = 0; i < 3; i++) for(int j = i + 1; j < 4; j++) if(arr[i] < arr[j]) { int temp = arr[i]; arr[i] = arr[j]; arr[j] = temp; }\n    printf(\"%d\", arr[1]);\n    return 0;\n}",
+    "o": [
+      "3",
+      "4",
+      "2",
+      "1"
+    ]
+  },
+  {
+    "q": "Which C string function finds the last occurrence of a character and returns a pointer to it?",
+    "o": [
+      "strrchr()",
+      "strchr()",
+      "strstr()",
+      "strpbrk()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet removing all vowels from a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"Fleas\";\n    int k = 0;\n    for(int i = 0; i < strlen(str); i++) if(str[i] != 'a' && str[i] != 'e' && str[i] != 'i' && str[i] != 'o' && str[i] != 'u') str[k++] = str[i];\n    str[k] = '\\0';\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "Fls",
+      "Fleas",
+      "Flea",
+      "ls"
+    ]
+  },
+  {
+    "q": "In C, what happens if a character array without a null terminator is passed to strncat()?",
+    "o": [
+      "It may append data incorrectly, reading beyond the array",
+      "It will append only to the first character",
+      "It will treat the array as empty",
+      "It will automatically null-terminate it"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the sum of a 2D array’s secondary diagonal?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};\n    int sum = arr[0][2] + arr[1][1] + arr[2][0];\n    printf(\"%d\", sum);\n    return 0;\n}",
+    "o": [
+      "15",
+      "12",
+      "18",
+      "20"
+    ]
+  },
+  {
+    "q": "Which of the following correctly specifies a 3D array parameter with fixed middle and last dimensions in C?",
+    "o": [
+      "void func(int arr[][2][3]);",
+      "void func(int arr[][][]);",
+      "void func(int arr[2][3][]);",
+      "void func(int arr[][3][2]);"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the longest sequence of identical characters?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"aabbbcc\";\n    int max = 1, current = 1;\n    for(int i = 1; i < strlen(str); i++) {\n        if(str[i] == str[i-1]) current++;\n        else current = 1;\n        if(current > max) max = current;\n    }\n    printf(\"%d\", max);\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "7",
+      "1"
+    ]
+  },
+  {
+    "q": "What is the total number of bytes for a 2D array 'short arr[4][5]' if short is 2 bytes?",
+    "o": [
+      "40",
+      "20",
+      "48",
+      "32"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet rearranging a 1D array to place even numbers first?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[5] = {1, 2, 3, 4, 5};\n    int temp[5], k = 0;\n    for(int i = 0; i < 5; i++) if(arr[i] % 2 == 0) temp[k++] = arr[i];\n    for(int i = 0; i < 5; i++) if(arr[i] % 2 != 0) temp[k++] = arr[i];\n    printf(\"%d\", temp[1]);\n    return 0;\n}",
+    "o": [
+      "4",
+      "2",
+      "1",
+      "3"
+    ]
+  },
+  {
+    "q": "Which C string function searches for the first occurrence of any character from a set?",
+    "o": [
+      "strpbrk()",
+      "strstr()",
+      "strrchr()",
+      "strtok()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet doubling consonants in a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[10] = \"Cat\";\n    int len = strlen(str), k = len;\n    for(int i = len-1; i >= 0; i--) {\n        str[k--] = str[i];\n        if(str[i] != 'a' && str[i] != 'e' && str[i] != 'i' && str[i] != 'o' && str[i] != 'u') str[k--] = str[i];\n    }\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "Catt",
+      "Cat",
+      "Cta",
+      "CCatt"
+    ]
+  },
+  {
+    "q": "In C, what might happen if a character array lacks a null terminator when used with strcspn()?",
+    "o": [
+      "It may count beyond the array until a null character is encountered",
+      "It will return the array’s declared length",
+      "It will stop at the first character",
+      "It will return an error"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the median of a 2D array’s first row?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[2][3] = {{5, 2, 8}, {1, 4, 6}};\n    int row[3] = {arr[0][0], arr[0][1], arr[0][2]};\n    for(int i = 0; i < 2; i++) for(int j = i+1; j < 3; j++) if(row[i] > row[j]) { int t = row[i]; row[i] = row[j]; row[j] = t; }\n    printf(\"%d\", row[1]);\n    return 0;\n}",
+    "o": [
+      "5",
+      "2",
+      "8",
+      "4"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid declaration for a 2D array with variable rows in a function?",
+    "o": [
+      "void func(int arr[][5]);",
+      "void func(int arr[][]);",
+      "void func(int arr[5][]);",
+      "void func(int arr[][5][]);"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet counting word occurrences in a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"the cat the dog\";\n    int count = 0;\n    char *token = strtok(str, \" \");\n    while(token != NULL) { if(strcmp(token, \"the\") == 0) count++; token = strtok(NULL, \" \"); }\n    printf(\"%d\", count);\n    return 0;\n}",
+    "o": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "q": "What is the byte offset of element arr[1][1][0] in a 3D array 'int arr[3][2][2]' if int is 4 bytes?",
+    "o": [
+      "36",
+      "32",
+      "40",
+      "28"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet creating a 1D array of cumulative sums?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[4] = {1, 2, 3, 4};\n    for(int i = 1; i < 4; i++) arr[i] += arr[i-1];\n    printf(\"%d\", arr[2]);\n    return 0;\n}",
+    "o": [
+      "6",
+      "3",
+      "5",
+      "4"
+    ]
+  },
+  {
+    "q": "Which C string function calculates the length of the prefix consisting of characters not in a set?",
+    "o": [
+      "strcspn()",
+      "strspn()",
+      "strlen()",
+      "strnlen()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet replacing spaces with underscores in a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"Two Words\";\n    for(int i = 0; i < strlen(str); i++) if(str[i] == ' ') str[i] = '_';\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "Two_Words",
+      "Two Words",
+      "TwoWords",
+      "_Two_Words"
+    ]
+  },
+  {
+    "q": "In C, what could happen if a character array without a null terminator is used with strspn()?",
+    "o": [
+      "It may scan past the array, leading to undefined behavior",
+      "It will return the first character’s position",
+      "It will treat the array as a single character",
+      "It will return the maximum integer value"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the sum of elements in a 2D array’s inner square?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[4][4] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}};\n    int sum = arr[1][1] + arr[1][2] + arr[2][1] + arr[2][2];\n    printf(\"%d\", sum);\n    return 0;\n}",
+    "o": [
+      "34",
+      "30",
+      "38",
+      "24"
+    ]
+  },
+  {
+    "q": "Which of the following allows a function to accept a 3D array with only the last dimension fixed?",
+    "o": [
+      "void func(int arr[][][4]);",
+      "void func(int arr[][4][]);",
+      "void func(int arr[4][][]);",
+      "void func(int arr[][][]);"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the shortest word length in a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"cat dog mouse\";\n    int min = 100, current = 0;\n    for(int i = 0; i <= strlen(str); i++) {\n        if(str[i] == ' ' || str[i] == '\\0') {\n            if(current > 0 && current < min) min = current;\n            current = 0;\n        } else current++;\n    }\n    printf(\"%d\", min);\n    return 0;\n}",
+    "o": [
+      "3",
+      "5",
+      "4",
+      "13"
+    ]
+  },
+  {
+    "q": "What is the total number of elements in a 3D array 'int arr[3][4][2]'?",
+    "o": [
+      "24",
+      "12",
+      "18",
+      "8"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet creating a 1D array of differences from the first element?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[4] = {5, 7, 3, 9};\n    int first = arr[0];\n    for(int i = 0; i < 4; i++) arr[i] -= first;\n    printf(\"%d\", arr[3]);\n    return 0;\n}",
+    "o": [
+      "4",
+      "9",
+      "-2",
+      "7"
+    ]
+  },
+  {
+    "q": "Which C string function finds the first occurrence of a substring and returns a pointer to it?",
+    "o": [
+      "strstr()",
+      "strrchr()",
+      "strpbrk()",
+      "strtok()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet inserting a dash after every second character?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[10] = \"abcd\";\n    int len = strlen(str);\n    for(int i = len; i > 1; i--) str[i+1] = str[i-1];\n    for(int i = 2; i < len+2; i += 3) str[i] = '-';\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "ab-cd",
+      "abcd",
+      "a-b-c-d",
+      "ab-c-d"
+    ]
+  },
+  {
+    "q": "In C, what is the consequence of using strpbrk() on a character array without a null terminator?",
+    "o": [
+      "It may search beyond the array, risking memory access errors",
+      "It will return a pointer to the first character",
+      "It will stop at the array’s allocated size",
+      "It will return NULL automatically"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the sum of a 2D array’s middle row?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};\n    int sum = 0;\n    for(int j = 0; j < 3; j++) sum += arr[1][j];\n    printf(\"%d\", sum);\n    return 0;\n}",
+    "o": [
+      "15",
+      "12",
+      "18",
+      "6"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a 2D array parameter with a fixed number of columns in C?",
+    "o": [
+      "void func(int arr[][3]);",
+      "void func(int arr[][]);",
+      "void func(int arr[3][]);",
+      "void func(int arr[][3][]);"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the number of uppercase letters in a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"HeLLo World\";\n    int count = 0;\n    for(int i = 0; i < strlen(str); i++) if(str[i] >= 'A' && str[i] <= 'Z') count++;\n    printf(\"%d\", count);\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "4",
+      "11"
+    ]
+  },
+  {
+    "q": "What is the byte offset of element arr[0][1][1] in a 3D array 'int arr[2][2][2]' if int is 4 bytes?",
+    "o": [
+      "20",
+      "16",
+      "24",
+      "12"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet creating a 1D array of squares of original elements?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[4] = {1, 2, 3, 4};\n    for(int i = 0; i < 4; i++) arr[i] *= arr[i];\n    printf(\"%d\", arr[2]);\n    return 0;\n}",
+    "o": [
+      "9",
+      "3",
+      "6",
+      "12"
+    ]
+  },
+  {
+    "q": "Which C string function calculates the length of the prefix consisting of characters in a set?",
+    "o": [
+      "strspn()",
+      "strcspn()",
+      "strnlen()",
+      "strlen()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet interleaving two strings?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str1[] = \"abc\", str2[] = \"123\", result[10];\n    int k = 0;\n    for(int i = 0; i < 3; i++) { result[k++] = str1[i]; result[k++] = str2[i]; }\n    result[k] = '\\0';\n    printf(\"%s\", result);\n    return 0;\n}",
+    "o": [
+      "a1b2c3",
+      "abc123",
+      "123abc",
+      "a1b2c"
+    ]
+  },
+  {
+    "q": "In C, what might occur if a character array without a null terminator is passed to strnlen()?",
+    "o": [
+      "It may exceed the specified limit or array bounds",
+      "It will return the exact array size",
+      "It will stop at the first character",
+      "It will return zero"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the product of a 2D array’s middle column?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};\n    int prod = 1;\n    for(int i = 0; i < 3; i++) prod *= arr[i][1];\n    printf(\"%d\", prod);\n    return 0;\n}",
+    "o": [
+      "80",
+      "15",
+      "40",
+      "24"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to declare a 3D array with fixed last dimension in a function?",
+    "o": [
+      "void func(int arr[][][2]);",
+      "void func(int arr[][2][]);",
+      "void func(int arr[2][][]);",
+      "void func(int arr[][][]);"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the number of words ending with 'e'?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"cake blue red\";\n    int count = 0;\n    char *token = strtok(str, \" \");\n    while(token != NULL) { if(token[strlen(token)-1] == 'e') count++; token = strtok(NULL, \" \"); }\n    printf(\"%d\", count);\n    return 0;\n}",
+    "o": [
+      "2",
+      "1",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "What is the total byte size of a 2D array 'char arr[5][6]' if char is 1 byte?",
+    "o": [
+      "30",
+      "25",
+      "36",
+      "20"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet creating a 1D array of remainders when divided by 3?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[5] = {4, 7, 9, 11, 13};\n    for(int i = 0; i < 5; i++) arr[i] %= 3;\n    printf(\"%d\", arr[3]);\n    return 0;\n}",
+    "o": [
+      "2",
+      "11",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "Which C string function safely compares a specified number of characters between two strings?",
+    "o": [
+      "strncmp()",
+      "strcmp()",
+      "strcoll()",
+      "strxfrm()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet wrapping a string’s last character to the front?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"Glow\";\n    char temp[10];\n    temp[0] = str[strlen(str)-1];\n    strcpy(temp+1, str);\n    temp[strlen(str)] = '\\0';\n    printf(\"%s\", temp);\n    return 0;\n}",
+    "o": [
+      "wGlow",
+      "Glow",
+      "wGlo",
+      "Gloww"
+    ]
+  },
+  {
+    "q": "In C, what could happen if a character array without a null terminator is used with strncpy()?",
+    "o": [
+      "It may copy unintended memory if the source exceeds the destination",
+      "It will copy only the first character",
+      "It will automatically add a null terminator",
+      "It will skip the copy operation"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the sum of a 2D array’s outer columns?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};\n    int sum = 0;\n    for(int i = 0; i < 3; i++) sum += arr[i][0] + arr[i][2];\n    printf(\"%d\", sum);\n    return 0;\n}",
+    "o": [
+      "30",
+      "15",
+      "20",
+      "45"
+    ]
+  },
+  {
+    "q": "Which of the following allows a function to accept a 2D array with a fixed number of rows and columns?",
+    "o": [
+      "void func(int arr[4][5]);",
+      "void func(int arr[][]);",
+      "void func(int arr[][5][]);",
+      "void func(int arr[4][]);"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the total length of words starting with 's'?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"sun sea rock star\";\n    int total = 0;\n    char *token = strtok(str, \" \");\n    while(token != NULL) { if(token[0] == 's') total += strlen(token); token = strtok(NULL, \" \"); }\n    printf(\"%d\", total);\n    return 0;\n}",
+    "o": [
+      "10",
+      "7",
+      "3",
+      "17"
+    ]
+  },
+  {
+    "q": "What is the byte offset of element arr[1][0][1] in a 3D array 'int arr[2][2][3]' if int is 4 bytes?",
+    "o": [
+      "28",
+      "24",
+      "32",
+      "20"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet creating a 1D array of absolute differences from the average?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[4] = {2, 4, 6, 8};\n    int sum = 0;\n    for(int i = 0; i < 4; i++) sum += arr[i];\n    int avg = sum / 4;\n    for(int i = 0; i < 4; i++) arr[i] = arr[i] > avg ? arr[i] - avg : avg - arr[i];\n    printf(\"%d\", arr[1]);\n    return 0;\n}",
+    "o": [
+      "1",
+      "4",
+      "2",
+      "5"
+    ]
+  },
+  {
+    "q": "Which C string function concatenates two strings without exceeding a specified length?",
+    "o": [
+      "strncat()",
+      "strcat()",
+      "strcpy()",
+      "strncpy()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet swapping adjacent characters in a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"abcd\";\n    for(int i = 0; i < strlen(str)-1; i += 2) {\n        char temp = str[i];\n        str[i] = str[i+1];\n        str[i+1] = temp;\n    }\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "badc",
+      "abcd",
+      "cdab",
+      "bacd"
+    ]
+  },
+  {
+    "q": "In C, what might occur if a character array without a null terminator is passed to strcoll()?",
+    "o": [
+      "It may compare memory beyond the array, leading to unpredictable results",
+      "It will compare only the first character",
+      "It will return a predefined locale value",
+      "It will halt with an error"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the maximum difference between adjacent elements in a 2D array row?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[2][3] = {{1, 5, 3}, {2, 8, 4}};\n    int maxDiff = 0;\n    for(int j = 0; j < 2; j++) {\n        int diff = arr[0][j] > arr[0][j+1] ? arr[0][j] - arr[0][j+1] : arr[0][j+1] - arr[0][j];\n        if(diff > maxDiff) maxDiff = diff;\n    }\n    printf(\"%d\", maxDiff);\n    return 0;\n}",
+    "o": [
+      "4",
+      "2",
+      "5",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid declaration for a 3D array with fixed first and last dimensions in a function?",
+    "o": [
+      "void func(int arr[2][][3]);",
+      "void func(int arr[][][]);",
+      "void func(int arr[][2][3]);",
+      "void func(int arr[2][3][]);"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet counting characters before the first space?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"First Second\";\n    int count = strcspn(str, \" \");\n    printf(\"%d\", count);\n    return 0;\n}",
+    "o": [
+      "5",
+      "6",
+      "12",
+      "1"
+    ]
+  },
+  {
+    "q": "What is the total byte size of a 2D array 'float arr[3][4]' if float is 4 bytes?",
+    "o": [
+      "48",
+      "36",
+      "24",
+      "12"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet creating a 1D array of products with its index?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[4] = {2, 3, 4, 5};\n    for(int i = 0; i < 4; i++) arr[i] *= i;\n    printf(\"%d\", arr[3]);\n    return 0;\n}",
+    "o": [
+      "15",
+      "5",
+      "12",
+      "3"
+    ]
+  },
+  {
+    "q": "Which C string function transforms a string for locale-specific comparison?",
+    "o": [
+      "strxfrm()",
+      "strcoll()",
+      "strncmp()",
+      "strcpy()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet cycling characters in a string by moving the first to the end?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"Cycle\";\n    char temp = str[0];\n    for(int i = 0; i < strlen(str)-1; i++) str[i] = str[i+1];\n    str[strlen(str)-1] = temp;\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "ycleC",
+      "Cycle",
+      "Cycel",
+      "cleCy"
+    ]
+  },
+  {
+    "q": "In C, what could happen if a character array without a null terminator is passed to strxfrm()?",
+    "o": [
+      "It may transform unintended memory, causing overflow",
+      "It will transform only the first character",
+      "It will return the original array unchanged",
+      "It will truncate the array at its size"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the sum of elements above the main diagonal in a 2D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};\n    int sum = 0;\n    for(int i = 0; i < 3; i++) for(int j = i + 1; j < 3; j++) sum += arr[i][j];\n    printf(\"%d\", sum);\n    return 0;\n}",
+    "o": [
+      "11",
+      "15",
+      "8",
+      "20"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a 4D array parameter with fixed last two dimensions in C?",
+    "o": [
+      "void func(int arr[][2][2][3]);",
+      "void func(int arr[][][][]);",
+      "void func(int arr[2][2][3][]);",
+      "void func(int arr[][2][3][]);"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet counting occurrences of the letter 'a' case-insensitively?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"Banana\";\n    int count = 0;\n    for(int i = 0; i < strlen(str); i++) if(str[i] == 'a' || str[i] == 'A') count++;\n    printf(\"%d\", count);\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "6",
+      "1"
+    ]
+  },
+  {
+    "q": "What is the byte offset of element arr[0][1][2] in a 3D array 'int arr[2][3][3]' if int is 4 bytes?",
+    "o": [
+      "20",
+      "16",
+      "24",
+      "28"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet creating a 1D array of sums with the next element?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[5] = {1, 2, 3, 4, 5};\n    for(int i = 0; i < 4; i++) arr[i] += arr[i+1];\n    printf(\"%d\", arr[2]);\n    return 0;\n}",
+    "o": [
+      "7",
+      "3",
+      "6",
+      "4"
+    ]
+  },
+  {
+    "q": "Which C string function returns a pointer to the first character from a set found in a string?",
+    "o": [
+      "strpbrk()",
+      "strstr()",
+      "strrchr()",
+      "strtok()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet reversing every two characters in a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"abcd\";\n    for(int i = 0; i < strlen(str)-1; i += 2) {\n        char temp = str[i];\n        str[i] = str[i+1];\n        str[i+1] = temp;\n    }\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "badc",
+      "abcd",
+      "cbad",
+      "dcba"
+    ]
+  },
+  {
+    "q": "In C, what might happen if a character array without a null terminator is used with strpbrk()?",
+    "o": [
+      "It may search beyond the array, potentially accessing invalid memory",
+      "It will return a pointer to the first character",
+      "It will stop at the array’s declared size",
+      "It will return NULL by default"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the sum of elements below the main diagonal in a 2D array?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};\n    int sum = 0;\n    for(int i = 0; i < 3; i++) for(int j = 0; j < i; j++) sum += arr[i][j];\n    printf(\"%d\", sum);\n    return 0;\n}",
+    "o": [
+      "11",
+      "15",
+      "8",
+      "20"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a 2D array parameter with a fixed number of columns in C?",
+    "o": [
+      "void func(int arr[][4]);",
+      "void func(int arr[][]);",
+      "void func(int arr[4][]);",
+      "void func(int arr[][4][]);"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the length of the longest word without vowels?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"sky fly my\";\n    int max = 0, current = 0;\n    for(int i = 0; i <= strlen(str); i++) {\n        if(str[i] == ' ' || str[i] == '\\0') {\n            if(current > max) max = current;\n            current = 0;\n        } else if(str[i] != 'a' && str[i] != 'e' && str[i] != 'i' && str[i] != 'o' && str[i] != 'u') current++;\n        else current = 0;\n    }\n    printf(\"%d\", max);\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "4",
+      "9"
+    ]
+  },
+  {
+    "q": "What is the total byte size of a 3D array 'char arr[2][3][4]' if char is 1 byte?",
+    "o": [
+      "24",
+      "12",
+      "18",
+      "30"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet creating a 1D array of alternating signs?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[5] = {1, 2, 3, 4, 5};\n    for(int i = 1; i < 5; i += 2) arr[i] = -arr[i];\n    printf(\"%d\", arr[3]);\n    return 0;\n}",
+    "o": [
+      "-4",
+      "4",
+      "-2",
+      "3"
+    ]
+  },
+  {
+    "q": "Which C string function splits a string into tokens and modifies the original string?",
+    "o": [
+      "strtok()",
+      "strsep()",
+      "strstr()",
+      "strpbrk()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet duplicating the first character of a string?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[10] = \"Bat\";\n    int len = strlen(str);\n    for(int i = len; i >= 0; i--) str[i+1] = str[i];\n    str[0] = str[1];\n    printf(\"%s\", str);\n    return 0;\n}",
+    "o": [
+      "BBat",
+      "Bat",
+      "Baat",
+      "BatB"
+    ]
+  },
+  {
+    "q": "In C, what could happen if a character array without a null terminator is passed to strtok()?",
+    "o": [
+      "It may process memory beyond the array until a null is found",
+      "It will tokenize only the first character",
+      "It will return the original string unchanged",
+      "It will skip tokenization"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet finding the sum of a 2D array’s boundary excluding corners?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[3][3] = {{1, 2, 3}, {4, 5, 6}, {7, 8, 9}};\n    int sum = arr[0][1] + arr[1][0] + arr[1][2] + arr[2][1];\n    printf(\"%d\", sum);\n    return 0;\n}",
+    "o": [
+      "20",
+      "15",
+      "25",
+      "10"
+    ]
+  },
+  {
+    "q": "Which of the following allows a function to accept a 3D array with fixed first two dimensions in C?",
+    "o": [
+      "void func(int arr[2][3][]);",
+      "void func(int arr[][][]);",
+      "void func(int arr[][2][3]);",
+      "void func(int arr[2][][3]);"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet counting pairs of identical adjacent characters?",
+    "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char str[] = \"aabbcc\";\n    int count = 0;\n    for(int i = 0; i < strlen(str)-1; i++) if(str[i] == str[i+1]) count++;\n    printf(\"%d\", count);\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "6",
+      "1"
+    ]
+  },
+  {
+    "q": "What is the byte offset of element arr[1][2][0] in a 3D array 'int arr[2][3][2]' if int is 4 bytes?",
+    "o": [
+      "40",
+      "36",
+      "44",
+      "32"
+    ]
+  }
+]

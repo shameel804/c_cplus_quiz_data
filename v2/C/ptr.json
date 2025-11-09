@@ -1,0 +1,4316 @@
+[
+  {
+    "q": "Which of the following correctly declares a pointer to an integer?",
+    "o": [
+      "int *ptr;",
+      "int ptr*;",
+      "*int ptr;",
+      "pointer int *ptr;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 10;\n    int *p = &a;\n    printf(\"%d\", *p);\n    return 0;\n}",
+    "o": [
+      "10",
+      "Address of a",
+      "Garbage value",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following operations is valid in pointer arithmetic?",
+    "o": [
+      "ptr + 1",
+      "ptr * 2",
+      "ptr / 2",
+      "ptr % 3"
+    ]
+  },
+  {
+    "q": "What does the expression *(arr + i) refer to in C?",
+    "o": [
+      "It refers to the i-th element of the array 'arr'",
+      "It refers to the address of the i-th element of the array",
+      "It refers to the base address of the array",
+      "It refers to the value of i"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nvoid show(int *p) {\n    printf(\"%d\", *(p+1));\n}\nint main() {\n    int arr[] = {10, 20, 30};\n    show(arr);\n    return 0;\n}",
+    "o": [
+      "20",
+      "10",
+      "30",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a pointer to a function?",
+    "o": [
+      "A variable that stores the address of a function",
+      "A function that returns a pointer",
+      "A pointer that can only be used inside functions",
+      "A function that accepts a pointer as argument"
+    ]
+  },
+  {
+    "q": "What is the correct syntax to declare a pointer to a function that takes two integers and returns an integer?",
+    "o": [
+      "int (*funcPtr)(int, int);",
+      "int *funcPtr(int, int);",
+      "(*int funcPtr)(int, int);",
+      "int funcPtr(*)(int, int);"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint add(int a, int b) { return a + b; }\nint main() {\n    int (*fptr)(int, int) = add;\n    printf(\"%d\", fptr(2, 3));\n    return 0;\n}",
+    "o": [
+      "5",
+      "2",
+      "3",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which statement correctly initializes a pointer to the address of variable 'x'?",
+    "o": [
+      "int *ptr = &x;",
+      "int ptr = &x;",
+      "int *ptr = x;",
+      "ptr = address of x;"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    int *p = &x;\n    *p = 10;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "10",
+      "5",
+      "Garbage value",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following expressions increases a pointer to point to the next element in an int array?",
+    "o": [
+      "ptr++",
+      "ptr + 0.5",
+      "ptr--",
+      "++*ptr"
+    ]
+  },
+  {
+    "q": "What is the size increment when an int pointer is incremented?",
+    "o": [
+      "4 bytes (on a 32-bit system)",
+      "1 byte",
+      "2 bytes",
+      "8 bytes"
+    ]
+  },
+  {
+    "q": "What is the output of the code snippet below?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[3] = {100, 200, 300};\n    int *p = arr;\n    printf(\"%d\", *(p + 2));\n    return 0;\n}",
+    "o": [
+      "300",
+      "100",
+      "200",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following is true about arrays and pointers in C?",
+    "o": [
+      "Array name acts like a pointer to the first element",
+      "Pointers and arrays are entirely unrelated",
+      "Pointers can’t be used to access arrays",
+      "Array elements can only be accessed using indexing"
+    ]
+  },
+  {
+    "q": "What is the correct way to call a function using a function pointer?",
+    "o": [
+      "(*fptr)(x, y);",
+      "fptr[x, y];",
+      "*fptr[x, y];",
+      "fptr->(x, y);"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nvoid greet() {\n    printf(\"Hello from function pointer\\n\");\n}\nint main() {\n    void (*ptr)() = greet;\n    ptr();\n    return 0;\n}",
+    "o": [
+      "Hello from function pointer",
+      "Compilation error",
+      "Segmentation fault",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which of the following best describes pointer arithmetic?",
+    "o": [
+      "Only addition and subtraction are allowed on pointers",
+      "Any arithmetic operation can be done on pointers",
+      "Multiplication and division are common in pointer arithmetic",
+      "Pointers can't be incremented"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 20, b = 30;\n    int *p = &a, *q = &b;\n    printf(\"%d\", *p + *q);\n    return 0;\n}",
+    "o": [
+      "50",
+      "2030",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Which keyword is used to declare a pointer in C?",
+    "o": [
+      "*",
+      "&",
+      "ptr",
+      "ref"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 42;\n    int *ptr;\n    ptr = &a;\n    printf(\"%p\", ptr);\n    return 0;\n}",
+    "o": [
+      "Address of a",
+      "42",
+      "Compilation error",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "What is stored in a pointer variable?",
+    "o": [
+      "Address of another variable",
+      "Value of the variable it points to",
+      "Size of the variable",
+      "Type of the variable"
+    ]
+  },
+  {
+    "q": "Which of the following correctly accesses the third element of an array using pointer notation?",
+    "o": [
+      "*(arr + 2)",
+      "*arr[2]",
+      "*arr + 2",
+      "arr * 2"
+    ]
+  },
+  {
+    "q": "What is the output of the code snippet below?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[] = {4, 8, 12};\n    int *p = arr;\n    printf(\"%d\", *(p++));\n    return 0;\n}",
+    "o": [
+      "4",
+      "8",
+      "12",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which operation is invalid for pointers?",
+    "o": [
+      "ptr * 2",
+      "ptr + 1",
+      "ptr - 1",
+      "ptr++"
+    ]
+  },
+  {
+    "q": "Which of the following statements about pointer to function is correct?",
+    "o": [
+      "A function pointer can be passed as an argument to another function",
+      "A function pointer cannot point to void functions",
+      "You cannot store a function address in a variable",
+      "Function pointers are not allowed in standard C"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint multiply(int x, int y) { return x * y; }\nint main() {\n    int (*op)(int, int) = multiply;\n    printf(\"%d\", op(3, 4));\n    return 0;\n}",
+    "o": [
+      "12",
+      "7",
+      "0",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following represents the address of the first element in the array 'numbers'?",
+    "o": [
+      "numbers",
+      "&numbers[0]",
+      "*numbers",
+      "numbers[0]"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 25;\n    int *ptr = &x;\n    printf(\"%d\", *(&x));\n    return 0;\n}",
+    "o": [
+      "25",
+      "Address of x",
+      "0",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a pointer to a float?",
+    "o": [
+      "float *ptr;",
+      "float ptr;",
+      "*float ptr;",
+      "pointer float *ptr;"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int val = 7;\n    int *p = &val;\n    printf(\"%d\", *p + 1);\n    return 0;\n}",
+    "o": [
+      "8",
+      "7",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which operation advances a pointer to the next memory location of the same type?",
+    "o": [
+      "ptr++",
+      "ptr--",
+      "*ptr++",
+      "++(*ptr)"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[] = {2, 4, 6, 8};\n    int *p = arr;\n    printf(\"%d\", *(p + 3));\n    return 0;\n}",
+    "o": [
+      "8",
+      "2",
+      "6",
+      "4"
+    ]
+  },
+  {
+    "q": "What is the correct syntax for declaring a pointer to a function that returns int and takes two int parameters?",
+    "o": [
+      "int (*funcPtr)(int, int);",
+      "int *funcPtr(int, int);",
+      "int funcPtr(*)(int, int);",
+      "function int (*funcPtr)(int, int);"
+    ]
+  },
+  {
+    "q": "Which expression gives the value stored at the memory location pointed by 'ptr'?",
+    "o": [
+      "*ptr",
+      "&ptr",
+      "ptr&",
+      "value(ptr)"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nvoid hello() { printf(\"Hi!\\n\"); }\nint main() {\n    void (*fptr)() = hello;\n    fptr();\n    return 0;\n}",
+    "o": [
+      "Hi!",
+      "hello",
+      "Error",
+      "fptr"
+    ]
+  },
+  {
+    "q": "Which of the following is a result of pointer arithmetic when using an int pointer?",
+    "o": [
+      "It moves the pointer by 4 bytes on a 32-bit system",
+      "It moves the pointer by 1 byte",
+      "It causes undefined behavior",
+      "It resets the pointer to zero"
+    ]
+  },
+  {
+    "q": "How can you access the fifth element of an array using pointer arithmetic?",
+    "o": [
+      "*(arr + 4)",
+      "*arr[4]",
+      "&arr[5]",
+      "*(arr + 5)"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint sum(int a, int b) { return a + b; }\nint main() {\n    int (*fp)(int, int) = sum;\n    printf(\"%d\", fp(10, 15));\n    return 0;\n}",
+    "o": [
+      "25",
+      "10",
+      "15",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes a pointer to an integer variable?",
+    "o": [
+      "int *p = &x;",
+      "int p = *x;",
+      "int *p = x;",
+      "int &p = *x;"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 20;\n    int *ptr = &a;\n    *ptr = *ptr + 5;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "25",
+      "20",
+      "5",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which operator is used to get the address of a variable in C?",
+    "o": [
+      "&",
+      "*",
+      "#",
+      "%"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[] = {10, 20, 30};\n    int *p = arr;\n    p++;\n    printf(\"%d\", *p);\n    return 0;\n}",
+    "o": [
+      "20",
+      "10",
+      "30",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to pass a function pointer to another function?",
+    "o": [
+      "func(callback);",
+      "func(&callback());",
+      "func(*callback());",
+      "func(callback());"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nvoid greet() {\n    printf(\"Hello!\\n\");\n}\nint main() {\n    void (*fptr)() = greet;\n    (*fptr)();\n    return 0;\n}",
+    "o": [
+      "Hello!",
+      "greet",
+      "Error",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which expression retrieves the address of the first element of an array named 'nums'?",
+    "o": [
+      "nums",
+      "&nums[0]",
+      "*nums",
+      "nums[1]"
+    ]
+  },
+  {
+    "q": "What is the output of this pointer arithmetic?",
+    "c": "#include <stdio.h>\nint main() {\n    int a[3] = {1, 2, 3};\n    int *p = a;\n    printf(\"%d\", *(p + 2));\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "1",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about pointers and arrays in C?",
+    "o": [
+      "Array name is a constant pointer to the first element.",
+      "Arrays and pointers are completely different.",
+      "Pointers cannot be used to access array elements.",
+      "Array name stores the size of the array."
+    ]
+  },
+  {
+    "q": "What will this function pointer code output?",
+    "c": "#include <stdio.h>\nint square(int x) { return x * x; }\nint main() {\n    int (*fp)(int) = square;\n    printf(\"%d\", fp(6));\n    return 0;\n}",
+    "o": [
+      "36",
+      "6",
+      "12",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following statements correctly assigns the address of variable 'x' to a pointer 'ptr'?",
+    "o": [
+      "ptr = &x;",
+      "ptr = *x;",
+      "*ptr = x;",
+      "&ptr = x;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 100;\n    int *p = &x;\n    printf(\"%d\", *p);\n    return 0;\n}",
+    "o": [
+      "100",
+      "0",
+      "Address of x",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which operator is used to access the value at the address a pointer is pointing to?",
+    "o": [
+      "*",
+      "&",
+      "%",
+      "#"
+    ]
+  },
+  {
+    "q": "What is the output of the following pointer arithmetic?",
+    "c": "#include <stdio.h>\nint main() {\n    int a[] = {5, 10, 15};\n    int *p = a;\n    p = p + 2;\n    printf(\"%d\", *p);\n    return 0;\n}",
+    "o": [
+      "15",
+      "10",
+      "5",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a pointer to a function that returns void and takes no parameters?",
+    "o": [
+      "void (*funcPtr)();",
+      "void *funcPtr();",
+      "void funcPtr*();",
+      "function<void()> funcPtr;"
+    ]
+  },
+  {
+    "q": "How do you access the third element of an array using a pointer?",
+    "o": [
+      "*(arr + 2)",
+      "arr[3]",
+      "*arr + 2",
+      "&arr + 2"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nvoid printMsg() {\n    printf(\"Function call successful!\\n\");\n}\nint main() {\n    void (*fp)() = printMsg;\n    fp();\n    return 0;\n}",
+    "o": [
+      "Function call successful!",
+      "printMsg",
+      "Nothing",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is true regarding pointer arithmetic?",
+    "o": [
+      "Adding 1 to a pointer moves it to the next element of its type.",
+      "Pointer arithmetic always increases the address by 1 byte.",
+      "You can subtract an integer from a pointer but not add.",
+      "Pointer arithmetic works only on float types."
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    char arr[] = {'A', 'B', 'C'};\n    char *p = arr;\n    printf(\"%c\", *(p + 1));\n    return 0;\n}",
+    "o": [
+      "B",
+      "A",
+      "C",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following can be used to pass a function as an argument to another function?",
+    "o": [
+      "Using a function pointer",
+      "Using macros",
+      "Using typedef",
+      "Using #define"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to declare a pointer to a float variable?",
+    "o": [
+      "float *ptr;",
+      "float ptr*;",
+      "*float ptr;",
+      "ptr float*;"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int num = 42;\n    int *ptr = &num;\n    printf(\"%p\", ptr);\n    return 0;\n}",
+    "o": [
+      "Address of num",
+      "42",
+      "Compilation error",
+      "0"
+    ]
+  },
+  {
+    "q": "What is the result of incrementing a pointer to an int by 1?",
+    "o": [
+      "It moves to the next int (typically 4 bytes ahead)",
+      "It moves to the next byte",
+      "It adds 1 to the value pointed by the pointer",
+      "It causes an error"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[] = {3, 6, 9};\n    int *ptr = arr + 1;\n    printf(\"%d\", *(ptr - 1));\n    return 0;\n}",
+    "o": [
+      "3",
+      "6",
+      "9",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a pointer to a function that takes two ints and returns an int?",
+    "o": [
+      "int (*funcPtr)(int, int);",
+      "int *funcPtr(int, int);",
+      "(*funcPtr)(int, int) int;",
+      "function<int(int, int)> funcPtr;"
+    ]
+  },
+  {
+    "q": "Which statement about arrays and pointers in C is true?",
+    "o": [
+      "The array name acts like a pointer to its first element",
+      "Arrays can only be accessed using the [] operator",
+      "Pointers cannot be assigned to array elements",
+      "Pointer arithmetic is not valid on arrays"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <stdio.h>\nvoid show(int x) { printf(\"%d\", x); }\nint main() {\n    void (*ptr)(int) = show;\n    ptr(7);\n    return 0;\n}",
+    "o": [
+      "7",
+      "x",
+      "show",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid use of a pointer to access the second element of an array?",
+    "o": [
+      "*(arr + 1)",
+      "arr * 1",
+      "&(arr + 1)",
+      "*(arr - 1)"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a null pointer?",
+    "o": [
+      "A pointer that does not point to any valid memory location",
+      "A pointer that stores 0 as its value",
+      "A pointer pointing to address 1",
+      "A pointer always pointing to main memory"
+    ]
+  },
+  {
+    "q": "What does the following code print?",
+    "c": "#include <stdio.h>\nint multiply(int a, int b) { return a * b; }\nint main() {\n    int (*fptr)(int, int) = multiply;\n    printf(\"%d\", fptr(4, 5));\n    return 0;\n}",
+    "o": [
+      "20",
+      "9",
+      "25",
+      "1"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 8, y = 12;\n    int *p1 = &x, *p2 = &y;\n    int sum = *p1 + *p2;\n    printf(\"%d\", sum);\n    return 0;\n}",
+    "o": [
+      "20",
+      "8",
+      "12",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes a pointer to NULL in C?",
+    "o": [
+      "int *ptr = NULL;",
+      "int ptr = NULL;",
+      "NULL *ptr = int;",
+      "ptr = int NULL;"
+    ]
+  },
+  {
+    "q": "What does the expression `ptr++` do, assuming ptr is an int pointer?",
+    "o": [
+      "Moves the pointer to the next integer location",
+      "Increments the value at the pointer",
+      "Adds 1 to the pointer address (in bytes)",
+      "Decrements the pointer"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a[3] = {1, 2, 3};\n    int *p = a;\n    printf(\"%d\", *(p + 2));\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "Which syntax is used to declare a pointer to a function taking float and int, and returning float?",
+    "o": [
+      "float (*ptr)(float, int);",
+      "float *ptr(float, int);",
+      "(*float ptr)(float, int);",
+      "function<float(int, float)> ptr;"
+    ]
+  },
+  {
+    "q": "What is a key difference between arrays and pointers in C?",
+    "o": [
+      "Arrays allocate memory at compile time, while pointers can point anywhere at runtime",
+      "Pointers and arrays are exactly the same",
+      "Pointers store data, arrays store addresses",
+      "You cannot use pointer arithmetic on arrays"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nvoid greet() { printf(\"Welcome!\\n\"); }\nint main() {\n    void (*g)() = greet;\n    g();\n    return 0;\n}",
+    "o": [
+      "Welcome!",
+      "greet",
+      "Nothing",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is stored in a pointer variable after initialization like: int *ptr = &x;?",
+    "o": [
+      "Address of x",
+      "Value of x",
+      "Value at x + 1",
+      "Memory size of x"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about pointer arithmetic?",
+    "o": [
+      "Pointer arithmetic depends on the data type the pointer is pointing to",
+      "You can add any type of value to a pointer",
+      "Adding 1 to any pointer always increases it by 1 byte",
+      "Pointer subtraction is not allowed in C"
+    ]
+  },
+  {
+    "q": "What is the output of this function call using pointer to function?",
+    "c": "#include <stdio.h>\nint square(int n) { return n * n; }\nint main() {\n    int (*fptr)(int) = square;\n    printf(\"%d\", fptr(6));\n    return 0;\n}",
+    "o": [
+      "36",
+      "6",
+      "12",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare a pointer to a float?",
+    "o": [
+      "float *ptr;",
+      "ptr float*;",
+      "float ptr*;",
+      "*float ptr;"
+    ]
+  },
+  {
+    "q": "What will be the output of this program?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 10;\n    int *p = &a;\n    printf(\"%p\", (void*)p);\n    return 0;\n}",
+    "o": [
+      "Address of a",
+      "Value of a",
+      "10",
+      "Compile error"
+    ]
+  },
+  {
+    "q": "What does pointer arithmetic allow in C?",
+    "o": [
+      "Traversing arrays by incrementing/decrementing the pointer",
+      "Modifying constant values",
+      "Calling malloc automatically",
+      "Skipping type checking"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[] = {5, 10, 15};\n    int *ptr = arr;\n    printf(\"%d\", *(ptr + 1));\n    return 0;\n}",
+    "o": [
+      "10",
+      "5",
+      "15",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the relationship between arrays and pointers?",
+    "o": [
+      "Array name is a constant pointer to the first element",
+      "Pointers and arrays are completely unrelated",
+      "Array holds addresses, pointer holds data",
+      "Pointers always take more memory than arrays"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <stdio.h>\nint add(int a, int b) { return a + b; }\nint main() {\n    int (*func_ptr)(int, int) = add;\n    printf(\"%d\", func_ptr(3, 7));\n    return 0;\n}",
+    "o": [
+      "10",
+      "3",
+      "7",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these is a correct statement for pointer initialization?",
+    "o": [
+      "int *p = NULL;",
+      "int p = &a;",
+      "int *p = a;",
+      "pointer int p;"
+    ]
+  },
+  {
+    "q": "What happens when you increment a pointer of type `int*`?",
+    "o": [
+      "It moves to the next memory location for an int",
+      "It adds 1 byte to the address",
+      "It increases the value at the location",
+      "It changes the data type"
+    ]
+  },
+  {
+    "q": "How do you declare a pointer to a function that takes no arguments and returns int?",
+    "o": [
+      "int (*funcPtr)();",
+      "int funcPtr();",
+      "(*int funcPtr)();",
+      "int* funcPtr();"
+    ]
+  },
+  {
+    "q": "What will be the result of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[4] = {10, 20, 30, 40};\n    int *ptr = &arr[1];\n    printf(\"%d\", *(ptr + 2));\n    return 0;\n}",
+    "o": [
+      "40",
+      "10",
+      "20",
+      "30"
+    ]
+  },
+  {
+    "q": "Which statement correctly assigns the address of variable `b` to pointer `p`?",
+    "o": [
+      "p = &b;",
+      "*p = &b;",
+      "&p = b;",
+      "p = b;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int nums[] = {2, 4, 6};\n    int *p = nums;\n    printf(\"%d\", *(p + 1));\n    return 0;\n}",
+    "o": [
+      "4",
+      "2",
+      "6",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following operations is **not** valid in pointer arithmetic?",
+    "o": [
+      "Multiplying two pointers",
+      "Adding integer to pointer",
+      "Subtracting two pointers",
+      "Incrementing a pointer"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "#include <stdio.h>\nvoid message() {\n    printf(\"Function pointer called\\n\");\n}\nint main() {\n    void (*fp)() = message;\n    fp();\n    return 0;\n}",
+    "o": [
+      "Function pointer called",
+      "message",
+      "Function called",
+      "Compile-time error"
+    ]
+  },
+  {
+    "q": "What is the purpose of using pointers with arrays?",
+    "o": [
+      "To access and manipulate array elements efficiently using addresses",
+      "To increase array size at runtime",
+      "To store only addresses",
+      "To avoid memory usage"
+    ]
+  },
+  {
+    "q": "What is the correct way to declare a pointer to a function that returns `void` and takes an `int`?",
+    "o": [
+      "void (*funcPtr)(int);",
+      "void *funcPtr(int);",
+      "(*void funcPtr)(int);",
+      "function void* funcPtr(int);"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5;\n    int *ptr = &a;\n    *ptr = *ptr + 2;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "7",
+      "5",
+      "2",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare and initialize a pointer to an array element?",
+    "o": [
+      "int *p = &arr[0];",
+      "int p = arr;",
+      "int *p = arr[0];",
+      "pointer p = arr;"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 20;\n    int *ptr = &x;\n    printf(\"%d\", *ptr);\n    return 0;\n}",
+    "o": [
+      "20",
+      "Address of x",
+      "0",
+      "Compile error"
+    ]
+  },
+  {
+    "q": "How can we pass a function as a parameter using pointers in C?",
+    "o": [
+      "By passing its name without parentheses",
+      "By passing its return type",
+      "By declaring it as a macro",
+      "By using void *"
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes a null pointer in C?",
+    "o": [
+      "int *ptr = NULL;",
+      "int ptr = NULL;",
+      "*ptr = NULL;",
+      "NULL = ptr;"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[] = {1, 3, 5, 7};\n    int *p = arr + 2;\n    printf(\"%d\", *p);\n    return 0;\n}",
+    "o": [
+      "5",
+      "1",
+      "3",
+      "7"
+    ]
+  },
+  {
+    "q": "What does `*ptr++` do in pointer arithmetic?",
+    "o": [
+      "Dereferences `ptr`, then increments it",
+      "Increments `ptr`, then dereferences it",
+      "Increments the value pointed to by `ptr`",
+      "Causes a syntax error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a pointer to a function that takes two `float` arguments and returns `int`?",
+    "o": [
+      "int (*fptr)(float, float);",
+      "float (*fptr)(int, int);",
+      "int *fptr(float, float);",
+      "int fptr(*float, *float);"
+    ]
+  },
+  {
+    "q": "How do you access the third element of an array using pointer notation?",
+    "o": [
+      "*(arr + 2)",
+      "*arr + 2",
+      "arr[3]",
+      "*(arr + 3)"
+    ]
+  },
+  {
+    "q": "What is printed by this code?",
+    "c": "#include <stdio.h>\nvoid greet() {\n    printf(\"Welcome\\n\");\n}\nint main() {\n    void (*fp)() = greet;\n    (*fp)();\n    return 0;\n}",
+    "o": [
+      "Welcome",
+      "greet",
+      "fp",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "What will be the value of `*(p + 1)` if `p` points to the first element of the array `int a[] = {10, 20, 30};`?",
+    "o": [
+      "20",
+      "10",
+      "30",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following is true about pointer declaration?",
+    "o": [
+      "A pointer must be declared with the same data type it points to",
+      "You can assign a float value to an int pointer",
+      "Pointers do not require initialization",
+      "Pointers can point to keywords"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <stdio.h>\nint multiply(int x, int y) { return x * y; }\nint main() {\n    int (*mptr)(int, int) = multiply;\n    printf(\"%d\", mptr(4, 5));\n    return 0;\n}",
+    "o": [
+      "20",
+      "9",
+      "0",
+      "Compile error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a function pointer?",
+    "o": [
+      "A variable that stores the address of a function",
+      "A pointer to an array of functions",
+      "A special type of pointer for main() only",
+      "A pointer that cannot be dereferenced"
+    ]
+  },
+  {
+    "q": "Which declaration correctly defines a pointer to an `int`?",
+    "o": [
+      "int *p;",
+      "int p*;",
+      "*int p;",
+      "pointer int p;"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 8;\n    int *p = &a;\n    printf(\"%p\", (void*)p);\n    return 0;\n}",
+    "o": [
+      "Address of a",
+      "Value of a",
+      "8",
+      "Compile-time error"
+    ]
+  },
+  {
+    "q": "Which operator is used to access the value at the memory address stored in a pointer?",
+    "o": [
+      "*",
+      "&",
+      "%",
+      "#"
+    ]
+  },
+  {
+    "q": "What will be the output of the following program?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[] = {10, 20, 30};\n    int *ptr = arr;\n    ptr++;\n    printf(\"%d\", *ptr);\n    return 0;\n}",
+    "o": [
+      "20",
+      "10",
+      "30",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "Which expression accesses the fifth element of an array using a pointer `p`?",
+    "o": [
+      "*(p + 4)",
+      "*p + 4",
+      "p[5]",
+      "*(p + 5)"
+    ]
+  },
+  {
+    "q": "What does the following declaration mean: `int *(*fptr)(int, int);`?",
+    "o": [
+      "fptr is a pointer to a function that takes two ints and returns a pointer to int",
+      "fptr is a function that returns a pointer to int and takes two ints",
+      "fptr is a pointer to int that returns a function",
+      "fptr is an array of function pointers"
+    ]
+  },
+  {
+    "q": "How is pointer arithmetic affected by the data type of the pointer?",
+    "o": [
+      "It increments by the size of the data type",
+      "It always increments by 1 byte",
+      "It cannot perform arithmetic",
+      "It causes a compile-time error"
+    ]
+  },
+  {
+    "q": "Which code correctly calls a function through a function pointer?",
+    "c": "int sum(int a, int b) {\n    return a + b;\n}\nint main() {\n    int (*fptr)(int, int) = sum;\n    printf(\"%d\", fptr(2, 3));\n    return 0;\n}",
+    "o": [
+      "5",
+      "2",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following best describes an array name in context of pointers?",
+    "o": [
+      "It acts as a constant pointer to the first element",
+      "It is a pointer variable",
+      "It always stores an address",
+      "It is equivalent to &array"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 3, y = 4;\n    int *p = &x, *q = &y;\n    printf(\"%d\", *p + *q);\n    return 0;\n}",
+    "o": [
+      "7",
+      "12",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to assign the address of variable `x` to pointer `ptr`?",
+    "o": [
+      "ptr = &x;",
+      "ptr = x;",
+      "*ptr = &x;",
+      "&ptr = x;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int val = 50;\n    int *p = &val;\n    printf(\"%d\", *p);\n    return 0;\n}",
+    "o": [
+      "50",
+      "val",
+      "Address of val",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "What does the expression `ptr + 1` do if `ptr` is an `int` pointer?",
+    "o": [
+      "Increments the address by sizeof(int)",
+      "Moves to the next byte",
+      "Adds 1 to the value at ptr",
+      "Decrements the pointer"
+    ]
+  },
+  {
+    "q": "Which of the following can be used to pass a function as an argument in C?",
+    "o": [
+      "Function pointer",
+      "Normal pointer",
+      "Reference variable",
+      "Array name"
+    ]
+  },
+  {
+    "q": "What will be printed?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[3] = {11, 22, 33};\n    int *p = arr;\n    printf(\"%d\", *(p + 1));\n    return 0;\n}",
+    "o": [
+      "22",
+      "11",
+      "33",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "Which one of these is a correct syntax to declare a pointer to a function returning `void` and taking no arguments?",
+    "o": [
+      "void (*func_ptr)();",
+      "void func_ptr();",
+      "void *func_ptr();",
+      "(*func_ptr) void();"
+    ]
+  },
+  {
+    "q": "Which of the following is true about using pointers with arrays in C?",
+    "o": [
+      "Array elements can be accessed using pointer arithmetic",
+      "Array name cannot be used with pointers",
+      "Pointers do not work with arrays",
+      "Pointers store values, not addresses"
+    ]
+  },
+  {
+    "q": "What is the correct way to dereference a pointer and assign it a value?",
+    "o": [
+      "*ptr = 25;",
+      "ptr* = 25;",
+      "ptr = *25;",
+      "ptr = 25*;"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint square(int x) { return x * x; }\nint main() {\n    int (*fp)(int) = square;\n    printf(\"%d\", fp(6));\n    return 0;\n}",
+    "o": [
+      "36",
+      "12",
+      "6",
+      "0"
+    ]
+  },
+  {
+    "q": "What does the `&` operator do when used with a variable?",
+    "o": [
+      "Returns the address of the variable",
+      "Returns the value stored in the variable",
+      "Multiplies by 2",
+      "Returns size of the variable"
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes a pointer to a float variable `f`?",
+    "o": [
+      "float *ptr = &f;",
+      "float ptr = &f;",
+      "float *ptr = f;",
+      "*float ptr = &f;"
+    ]
+  },
+  {
+    "q": "What is the output of the code below?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 7, b = 3;\n    int *p1 = &a, *p2 = &b;\n    printf(\"%d\", *p1 - *p2);\n    return 0;\n}",
+    "o": [
+      "4",
+      "10",
+      "21",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about pointer arithmetic?",
+    "o": [
+      "Adding 1 to a pointer advances it by the size of its data type",
+      "Pointers can only be incremented, not decremented",
+      "Pointer arithmetic is not allowed in C",
+      "Subtracting pointers always gives 1"
+    ]
+  },
+  {
+    "q": "Which of the following correctly accesses the third element of array `arr` using a pointer `p`?",
+    "o": [
+      "*(p + 2)",
+      "*p + 2",
+      "p[3]",
+      "*(arr + 3)"
+    ]
+  },
+  {
+    "q": "What will be printed by this program?",
+    "c": "#include <stdio.h>\nint main() {\n    int nums[4] = {1, 2, 3, 4};\n    int *ptr = nums;\n    printf(\"%d\", *(ptr++));\n    return 0;\n}",
+    "o": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid function pointer declaration for a function returning `float` and taking two `int`s?",
+    "o": [
+      "float (*fptr)(int, int);",
+      "float *fptr(int, int);",
+      "(*fptr)(int, int) float;",
+      "float fptr(*)(int, int);"
+    ]
+  },
+  {
+    "q": "Which statement is true about pointers and arrays?",
+    "o": [
+      "Array name acts like a constant pointer to the first element",
+      "Pointers cannot be used to access array elements",
+      "Pointers store arrays, not addresses",
+      "Arrays are passed to functions by value"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "#include <stdio.h>\nvoid greet() {\n    printf(\"Hello\\n\");\n}\nint main() {\n    void (*funcPtr)() = greet;\n    funcPtr();\n    return 0;\n}",
+    "o": [
+      "Prints Hello",
+      "Does nothing",
+      "Causes a segmentation fault",
+      "Prints funcPtr"
+    ]
+  },
+  {
+    "q": "What is the size of a pointer on a 64-bit system?",
+    "o": [
+      "8 bytes",
+      "4 bytes",
+      "2 bytes",
+      "16 bytes"
+    ]
+  },
+  {
+    "q": "Which of the following is required to dynamically allocate memory for an array in C?",
+    "o": [
+      "A pointer and malloc() or calloc()",
+      "An array declaration only",
+      "A static variable",
+      "A structure"
+    ]
+  },
+  {
+    "q": "Which keyword is used to declare a pointer in C?",
+    "o": [
+      "*",
+      "&",
+      "ptr",
+      "ref"
+    ]
+  },
+  {
+    "q": "What is the output of the code below?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 8;\n    int *p = &x;\n    *p = *p + 2;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "10",
+      "8",
+      "2",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following operations is allowed on pointers?",
+    "o": [
+      "Incrementing a pointer",
+      "Multiplying two pointers",
+      "Dividing a pointer by another",
+      "Adding two pointers"
+    ]
+  },
+  {
+    "q": "Which of the following expressions gives the value stored at the address pointed by `ptr`?",
+    "o": [
+      "*ptr",
+      "&ptr",
+      "ptr*",
+      "ptr&"
+    ]
+  },
+  {
+    "q": "What will be printed?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[] = {10, 20, 30};\n    int *p = arr;\n    printf(\"%d\", *(p + 2));\n    return 0;\n}",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "40"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid pointer to a function taking two `int` arguments and returning `int`?",
+    "o": [
+      "int (*fptr)(int, int);",
+      "int *fptr(int, int);",
+      "int (fptr*)(int, int);",
+      "*int fptr(int, int);"
+    ]
+  },
+  {
+    "q": "What is the output?",
+    "c": "#include <stdio.h>\nvoid show(int x) {\n    printf(\"%d\", x);\n}\nint main() {\n    void (*ptr)(int) = show;\n    ptr(5);\n    return 0;\n}",
+    "o": [
+      "5",
+      "0",
+      "show",
+      "ptr"
+    ]
+  },
+  {
+    "q": "Which of these best describes the relationship between arrays and pointers in C?",
+    "o": [
+      "Array name is a constant pointer to the first element",
+      "Pointers cannot point to arrays",
+      "Arrays are more powerful than pointers",
+      "Array elements are stored in random locations"
+    ]
+  },
+  {
+    "q": "Which of the following declares a pointer `p` to an array of 10 integers?",
+    "o": [
+      "int (*p)[10];",
+      "int *p[10];",
+      "int p*[10];",
+      "int (p*)[10];"
+    ]
+  },
+  {
+    "q": "What will this print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 100;\n    int *p = &a;\n    printf(\"%p\", (void*)p);\n    return 0;\n}",
+    "o": [
+      "Address of a",
+      "100",
+      "*p",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax to declare a pointer to a `char` variable?",
+    "o": [
+      "char *ptr;",
+      "char ptr*;",
+      "*char ptr;",
+      "ptr char*;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 12;\n    int *p = &a;\n    printf(\"%d\", *p);\n    return 0;\n}",
+    "o": [
+      "12",
+      "0",
+      "Address of a",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "Which operation will move the pointer `p` to the next integer in memory?",
+    "o": [
+      "p++",
+      "p--",
+      "*p++",
+      "++(*p)"
+    ]
+  },
+  {
+    "q": "What does the expression `&arr[0]` represent for an array `arr`?",
+    "o": [
+      "Address of the first element",
+      "Value of the first element",
+      "Pointer to the last element",
+      "Address of the entire array"
+    ]
+  },
+  {
+    "q": "What is the output of the following?",
+    "c": "#include <stdio.h>\nint main() {\n    int numbers[] = {4, 5, 6};\n    int *p = numbers;\n    p++;\n    printf(\"%d\", *p);\n    return 0;\n}",
+    "o": [
+      "5",
+      "4",
+      "6",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "How is a function pointer typically invoked in C?",
+    "o": [
+      "(*fptr)(args);",
+      "fptr[*](args);",
+      "&fptr(args);",
+      "fptr(*args);"
+    ]
+  },
+  {
+    "q": "Which of these statements is true about pointer arithmetic in C?",
+    "o": [
+      "Pointer arithmetic considers the size of the data type",
+      "Pointers are incremented by 1 byte always",
+      "Only integer pointers can be incremented",
+      "Arithmetic is invalid for void pointers"
+    ]
+  },
+  {
+    "q": "What is the output?",
+    "c": "#include <stdio.h>\nvoid func() {\n    printf(\"Function called\\n\");\n}\nint main() {\n    void (*fptr)() = func;\n    (*fptr)();\n    return 0;\n}",
+    "o": [
+      "Function called",
+      "fptr",
+      "func",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What does `*(&x)` evaluate to in C, assuming `int x = 10;`?",
+    "o": [
+      "10",
+      "Address of x",
+      "Compilation error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[3] = {11, 22, 33};\n    int *ptr = arr;\n    printf(\"%d\", *(ptr + 1));\n    return 0;\n}",
+    "o": [
+      "22",
+      "11",
+      "33",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 25;\n    int *ptr = &x;\n    printf(\"%p\", (void*)ptr);\n    return 0;\n}",
+    "o": [
+      "Address of x",
+      "25",
+      "x",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following statements correctly assigns the address of variable `b` to pointer `p`?",
+    "o": [
+      "p = &b;",
+      "*p = &b;",
+      "p = b;",
+      "&p = b;"
+    ]
+  },
+  {
+    "q": "What happens when you increment a pointer of type `int*`?",
+    "o": [
+      "It points to the next integer in memory",
+      "It adds 1 to the value pointed by the pointer",
+      "It increases the pointer by 1 byte",
+      "It causes a runtime error"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[] = {2, 4, 6};\n    int *p = arr;\n    printf(\"%d\", *(p++));\n    return 0;\n}",
+    "o": [
+      "2",
+      "4",
+      "6",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which declaration represents a pointer to a function returning `float` and taking no arguments?",
+    "o": [
+      "float (*funcPtr)();",
+      "float *funcPtr();",
+      "(*float) funcPtr();",
+      "float funcPtr(*)();"
+    ]
+  },
+  {
+    "q": "How can you pass a function as an argument using pointers in C?",
+    "o": [
+      "Using a function pointer",
+      "Passing by reference",
+      "Using an array of functions",
+      "Passing as a string"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    int *p = &x;\n    *p += 10;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "15",
+      "10",
+      "5",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is true about pointer variables in C?",
+    "o": [
+      "They store memory addresses",
+      "They store variable values",
+      "They store data types",
+      "They store constants only"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nvoid display(char *str) {\n    printf(\"%s\", str);\n}\nint main() {\n    void (*fptr)(char*) = display;\n    fptr(\"Hello\");\n    return 0;\n}",
+    "o": [
+      "Hello",
+      "display",
+      "fptr",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly accesses the third element in an array using pointer `p`?",
+    "o": [
+      "*(p + 2)",
+      "*p + 2",
+      "*p[2]",
+      "*(p * 2)"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 10, *p = &a;\n    printf(\"%d\", *p);\n    return 0;\n}",
+    "o": [
+      "10",
+      "a",
+      "Address of a",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax to declare a pointer to an integer?",
+    "o": [
+      "int *ptr;",
+      "int ptr*;",
+      "*int ptr;",
+      "pointer int *ptr;"
+    ]
+  },
+  {
+    "q": "What is pointer arithmetic used for in C?",
+    "o": [
+      "To traverse through arrays and data structures",
+      "To perform mathematical operations on pointers",
+      "To convert pointers into integers",
+      "To compare addresses directly with values"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[] = {1, 2, 3};\n    int *p = arr;\n    printf(\"%d\", *(p + 1));\n    return 0;\n}",
+    "o": [
+      "2",
+      "1",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following expressions refers to the address of the first element of an array `arr`?",
+    "o": [
+      "arr",
+      "&arr[0]",
+      "*arr",
+      "arr[0]"
+    ]
+  },
+  {
+    "q": "What is a dangling pointer?",
+    "o": [
+      "A pointer pointing to a memory location that has been freed",
+      "A pointer that points to NULL",
+      "A pointer not yet initialized",
+      "A pointer with a fixed address"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nvoid greet() {\n    printf(\"Welcome\\n\");\n}\nint main() {\n    void (*fp)() = greet;\n    fp();\n    return 0;\n}",
+    "o": [
+      "Welcome",
+      "greet",
+      "fp",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What does the `*` operator do when used with a pointer?",
+    "o": [
+      "Dereferences the pointer to get the value",
+      "Declares a pointer variable",
+      "Finds the address of a variable",
+      "Multiplies two values"
+    ]
+  },
+  {
+    "q": "What is the result of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int val = 50;\n    int *p = &val;\n    *p = *p + 20;\n    printf(\"%d\", val);\n    return 0;\n}",
+    "o": [
+      "70",
+      "50",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about pointers and arrays in C?",
+    "o": [
+      "Array name acts as a pointer to the first element",
+      "Pointer and array are completely unrelated",
+      "Pointer can only point to integers in arrays",
+      "Pointers can't be used to access array elements"
+    ]
+  },
+  {
+    "q": "What does the following code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5;\n    int *ptr = &a;\n    printf(\"%p\", (void*)ptr);\n    return 0;\n}",
+    "o": [
+      "Address of variable a",
+      "Value of a",
+      "5",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes a pointer to `NULL`?",
+    "o": [
+      "int *ptr = NULL;",
+      "int ptr = NULL;",
+      "NULL *ptr = int;",
+      "ptr int = NULL;"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 3, y = 6;\n    int *p = &x, *q = &y;\n    printf(\"%d\", *p + *q);\n    return 0;\n}",
+    "o": [
+      "9",
+      "6",
+      "3",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What is the size of a pointer on a 64-bit system?",
+    "o": [
+      "8 bytes",
+      "4 bytes",
+      "2 bytes",
+      "Depends on data type"
+    ]
+  },
+  {
+    "q": "What is the correct way to pass a pointer to a function?",
+    "o": [
+      "void fun(int *p);",
+      "fun(*int p);",
+      "int *fun(p);",
+      "void fun(int p*);"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    char arr[] = \"Hello\";\n    char *ptr = arr;\n    printf(\"%c\", *(ptr + 1));\n    return 0;\n}",
+    "o": [
+      "e",
+      "H",
+      "l",
+      "o"
+    ]
+  },
+  {
+    "q": "How does pointer arithmetic work with integers?",
+    "o": [
+      "Increments/decrements by the size of the data type",
+      "Always increases by 1 byte",
+      "Adds the pointer to the value",
+      "It only works with arrays"
+    ]
+  },
+  {
+    "q": "Which of these is a valid pointer to a function that returns int?",
+    "o": [
+      "int (*funcPtr)();",
+      "int *funcPtr();",
+      "(*funcPtr) int();",
+      "int funcPtr*();"
+    ]
+  },
+  {
+    "q": "What does this code output?",
+    "c": "#include <stdio.h>\nvoid display(int *x) {\n    *x = *x + 1;\n}\nint main() {\n    int a = 10;\n    display(&a);\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "11",
+      "10",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is true about pointer and array relationship?",
+    "o": [
+      "Pointers can be used to iterate over arrays using arithmetic",
+      "Pointers can't access arrays directly",
+      "Arrays must be copied to pointer variables",
+      "Arrays are not compatible with pointers in C"
+    ]
+  },
+  {
+    "q": "Which operator is used to access the value at the address stored in a pointer?",
+    "o": [
+      "*",
+      "&",
+      "->",
+      "%"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[] = {10, 20, 30};\n    int *p = arr;\n    printf(\"%d\", *(p + 2));\n    return 0;\n}",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of these is a correct way to declare a pointer to a float?",
+    "o": [
+      "float *ptr;",
+      "float ptr*;",
+      "*float ptr;",
+      "float& ptr;"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 7;\n    int *p = &a;\n    printf(\"%d\", *p * 2);\n    return 0;\n}",
+    "o": [
+      "14",
+      "7",
+      "2",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What does the expression `&ptr` represent, where `ptr` is a pointer?",
+    "o": [
+      "Address of the pointer variable",
+      "Value stored at the pointer's address",
+      "Dereferenced pointer",
+      "Invalid syntax"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <stdio.h>\nvoid print(char *str) {\n    while(*str != '\\0') {\n        printf(\"%c \", *str);\n        str++;\n    }\n}\nint main() {\n    char msg[] = \"Hi\";\n    print(msg);\n    return 0;\n}",
+    "o": [
+      "H i ",
+      "Hi",
+      "H",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes pointer arithmetic?",
+    "o": [
+      "Adding/subtracting integers from pointers",
+      "Multiplying two pointers",
+      "Dividing pointer by integer",
+      "Performing modulus on pointers"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a pointer to a function that takes two ints and returns int?",
+    "o": [
+      "int (*funcPtr)(int, int);",
+      "int *funcPtr(int, int);",
+      "(*funcPtr int)(int, int);",
+      "funcPtr(int, int): int *"
+    ]
+  },
+  {
+    "q": "What happens when a pointer is incremented?",
+    "o": [
+      "It moves to the next memory location of the pointed data type",
+      "It moves one byte forward",
+      "It moves to a random memory",
+      "It stays at the same address"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax to assign the address of variable `x` to pointer `ptr`?",
+    "o": [
+      "ptr = &x;",
+      "&ptr = x;",
+      "ptr = x;",
+      "*ptr = &x;"
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes a pointer to an integer variable 'num'?",
+    "o": [
+      "int *p = &num;",
+      "int p = &num;",
+      "int *p = num;",
+      "int *&p = num;"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 100;\n    int *px = &x;\n    printf(\"%p\", px);\n    return 0;\n}",
+    "o": [
+      "Address of x",
+      "100",
+      "Garbage value",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What does the expression `*(&x)` return?",
+    "o": [
+      "Value of x",
+      "Address of x",
+      "Error",
+      "Undefined behavior"
+    ]
+  },
+  {
+    "q": "How many bytes does a pointer variable typically occupy in a 64-bit system?",
+    "o": [
+      "8",
+      "4",
+      "2",
+      "16"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[3] = {1, 2, 3};\n    int *ptr = arr;\n    printf(\"%d\", *(ptr++));\n    return 0;\n}",
+    "o": [
+      "1",
+      "2",
+      "3",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following is used to declare a pointer to a function that returns void and takes no arguments?",
+    "o": [
+      "void (*funcPtr)();",
+      "void *funcPtr();",
+      "(*funcPtr) void;",
+      "funcPtr void();"
+    ]
+  },
+  {
+    "q": "In pointer arithmetic, what does `ptr + 1` do when `ptr` is an `int*`?",
+    "o": [
+      "Moves the pointer forward by 4 bytes (on most systems)",
+      "Moves the pointer forward by 1 byte",
+      "Increments the value at ptr",
+      "Compiles but causes segmentation fault"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a NULL pointer?",
+    "o": [
+      "A pointer that doesn't point to any valid memory location",
+      "A pointer that holds a random value",
+      "A pointer with address 0xFFFF",
+      "A pointer that always causes segmentation fault"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <stdio.h>\nvoid greet() { printf(\"Hello\\n\"); }\nint main() {\n    void (*fptr)() = greet;\n    fptr();\n    return 0;\n}",
+    "o": [
+      "Hello",
+      "Compilation error",
+      "Segmentation fault",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of these correctly accesses the 3rd element of an array using a pointer?",
+    "o": [
+      "*(ptr + 2)",
+      "*ptr + 2",
+      "ptr[3]",
+      "*(ptr) + 2"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a pointer to a character?",
+    "o": [
+      "char *ptr;",
+      "char ptr*;",
+      "*char ptr;",
+      "char ptr;"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[] = {10, 20, 30};\n    int *p = arr;\n    printf(\"%d\", *(p + 1));\n    return 0;\n}",
+    "o": [
+      "20",
+      "10",
+      "30",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "Which of the following correctly passes a pointer to a function?",
+    "o": [
+      "void func(int *p);",
+      "void func(int p*);",
+      "void func(*int p);",
+      "void func(int p);"
+    ]
+  },
+  {
+    "q": "What does the following line do?\n\nint *ptr = NULL;",
+    "o": [
+      "Initializes a pointer to point to nothing",
+      "Declares an integer variable",
+      "Dereferences a NULL pointer",
+      "Creates an uninitialized pointer"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 10;\n    int *p = &a;\n    *p = b;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "10",
+      "5",
+      "0",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "Which expression is equivalent to accessing the ith element of an array using a pointer?",
+    "o": [
+      "*(ptr + i)",
+      "*ptr + i",
+      "ptr[i] + i",
+      "ptr * i"
+    ]
+  },
+  {
+    "q": "What is the output of this function pointer usage?",
+    "c": "#include <stdio.h>\nvoid show() { printf(\"Pointer Call\\n\"); }\nint main() {\n    void (*fp)() = show;\n    (*fp)();\n    return 0;\n}",
+    "o": [
+      "Pointer Call",
+      "Compilation error",
+      "Undefined behavior",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of these statements about pointer arithmetic is true?",
+    "o": [
+      "Incrementing a pointer moves it to the next element of its type",
+      "Incrementing a pointer always adds 1 byte",
+      "Pointer arithmetic is the same as regular arithmetic",
+      "Only char pointers can be incremented"
+    ]
+  },
+  {
+    "q": "What is the value of *(arr + 3) if arr is an array defined as `int arr[5] = {2, 4, 6, 8, 10};`?",
+    "o": [
+      "8",
+      "6",
+      "4",
+      "10"
+    ]
+  },
+  {
+    "q": "Which is a correct declaration for a function that takes an int pointer and returns a float?",
+    "o": [
+      "float func(int *);",
+      "float func(int);",
+      "float *func(int);",
+      "int func(float *);"
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes a pointer to an integer variable `x`?",
+    "o": [
+      "int *p = &x;",
+      "int p = &x;",
+      "*int p = x;",
+      "int *p = x;"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 100;\n    int *ptr = &x;\n    printf(\"%p\", ptr);\n    return 0;\n}",
+    "o": [
+      "Address of x",
+      "100",
+      "0",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What does the expression `ptr++` do when `ptr` is an integer pointer?",
+    "o": [
+      "Increases the pointer to point to the next integer",
+      "Increases the pointer value by 1 byte",
+      "Does nothing",
+      "Points to garbage"
+    ]
+  },
+  {
+    "q": "Which is the correct way to access the 3rd element of an array using a pointer?",
+    "o": [
+      "*(arr + 2)",
+      "*arr + 2",
+      "arr + 2",
+      "arr[3]"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\nvoid greet(char *msg) {\n    printf(\"%s\", msg);\n}\nint main() {\n    void (*func_ptr)(char *) = greet;\n    func_ptr(\"Hello\\n\");\n    return 0;\n}",
+    "o": [
+      "Hello",
+      "greet",
+      "Compilation error",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of these is a valid statement about pointers and arrays?",
+    "o": [
+      "Array name acts like a pointer to the first element",
+      "Pointer and array are the same in memory",
+      "Pointers can't point to arrays",
+      "Array indexing doesn't work with pointers"
+    ]
+  },
+  {
+    "q": "How many bytes will `ptr + 2` move if `ptr` is an int pointer and int is 4 bytes?",
+    "o": [
+      "8 bytes",
+      "2 bytes",
+      "4 bytes",
+      "1 byte"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5;\n    int *p = &a;\n    *p = *p + 10;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "15",
+      "5",
+      "10",
+      "0"
+    ]
+  },
+  {
+    "q": "What type does a pointer to a function that takes `int` and returns `float` have?",
+    "o": [
+      "float (*fptr)(int);",
+      "float *fptr(int);",
+      "int (*fptr)(float);",
+      "int fptr(float);"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[] = {1, 2, 3};\n    int *p = arr;\n    printf(\"%d\", *(++p));\n    return 0;\n}",
+    "o": [
+      "2",
+      "1",
+      "3",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare a pointer to a float?",
+    "o": [
+      "float *ptr;",
+      "ptr float*;",
+      "float ptr*;",
+      "*float ptr;"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 20;\n    int *p = &x;\n    printf(\"%d\", *p);\n    return 0;\n}",
+    "o": [
+      "20",
+      "0",
+      "Address of x",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which operation is valid with pointers?",
+    "o": [
+      "Incrementing a pointer to point to the next memory location",
+      "Adding two pointers",
+      "Multiplying two pointers",
+      "Dividing a pointer by a number"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[] = {10, 20, 30};\n    int *p = arr;\n    printf(\"%d\", *(p + 1));\n    return 0;\n}",
+    "o": [
+      "20",
+      "10",
+      "30",
+      "40"
+    ]
+  },
+  {
+    "q": "Which statement is true about array and pointer relationship in C?",
+    "o": [
+      "An array name can be used as a pointer to its first element",
+      "An array name is always a pointer variable",
+      "Arrays and pointers are completely unrelated",
+      "Pointers cannot point to array elements"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <stdio.h>\nvoid show(int x) { printf(\"%d\", x); }\nint main() {\n    void (*fptr)(int) = show;\n    fptr(42);\n    return 0;\n}",
+    "o": [
+      "42",
+      "show",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax for passing a function pointer as a parameter?",
+    "o": [
+      "void execute(void (*f)());",
+      "void execute(void f());",
+      "void execute(*f());",
+      "void execute(f());"
+    ]
+  },
+  {
+    "q": "What does `*(*ptr)` mean when `ptr` is a pointer to a pointer?",
+    "o": [
+      "It accesses the value pointed to by the pointer being pointed to",
+      "It causes a segmentation fault",
+      "It declares a pointer",
+      "It multiplies the pointer values"
+    ]
+  },
+  {
+    "q": "Which pointer expression accesses the 4th element of an array using a pointer `p`?",
+    "o": [
+      "*(p + 3)",
+      "*(p + 4)",
+      "*(p + 2)",
+      "*(p + 5)"
+    ]
+  },
+  {
+    "q": "What is the result of subtracting two pointers pointing to elements of the same array?",
+    "o": [
+      "It gives the number of elements between them",
+      "It gives the number of bytes between them",
+      "It causes an error",
+      "It returns a boolean"
+    ]
+  },
+  {
+    "q": "What does the following declaration mean? `int *ptr = NULL;`",
+    "o": [
+      "ptr is a pointer to int initialized to null",
+      "ptr is a null variable of type int",
+      "ptr is a pointer to null",
+      "ptr holds an integer value zero"
+    ]
+  },
+  {
+    "q": "What will be the output of the code?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 10;\n    int *p = &a;\n    p = &b;\n    printf(\"%d\", *p);\n    return 0;\n}",
+    "o": [
+      "10",
+      "5",
+      "Address of a",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following operations is valid for a pointer `p`?",
+    "o": [
+      "p++",
+      "p+p",
+      "p*p",
+      "++*p++"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[] = {1, 2, 3};\n    int *ptr = arr;\n    printf(\"%d\", *(ptr++));\n    return 0;\n}",
+    "o": [
+      "1",
+      "2",
+      "3",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following is TRUE about array names in C?",
+    "o": [
+      "They act like constant pointers to the first element",
+      "They can be reassigned like normal pointers",
+      "They are functions",
+      "They occupy separate memory than arrays"
+    ]
+  },
+  {
+    "q": "What is the correct way to declare a pointer to a function taking `int` and returning `float`?",
+    "o": [
+      "float (*fptr)(int);",
+      "float fptr(*int);",
+      "float *fptr(int);",
+      "int (*fptr)(float);"
+    ]
+  },
+  {
+    "q": "What will this print?",
+    "c": "#include <stdio.h>\nvoid hello() { printf(\"Hi\\n\"); }\nint main() {\n    void (*func)() = hello;\n    (*func)();\n    return 0;\n}",
+    "o": [
+      "Hi",
+      "hello",
+      "func",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "What does this code do?",
+    "c": "#include <stdio.h>\nint main() {\n    int x = 4;\n    int *p = &x;\n    *p += 2;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "6",
+      "4",
+      "2",
+      "Address of x"
+    ]
+  },
+  {
+    "q": "How many bytes will pointer `p+1` move forward for an `int *p`?",
+    "o": [
+      "4 bytes (on most systems)",
+      "1 byte",
+      "2 bytes",
+      "Depends on the value stored in p"
+    ]
+  },
+  {
+    "q": "Which of the following allows dynamic selection of a function at runtime?",
+    "o": [
+      "Function pointers",
+      "Switch statements",
+      "If-else chains",
+      "Macros"
+    ]
+  },
+  {
+    "q": "What does the `*` operator do when used with a pointer?",
+    "o": [
+      "It accesses the value pointed to by the pointer",
+      "It returns the memory address of the pointer",
+      "It initializes the pointer",
+      "It adds two pointers"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <stdio.h>\nint main() {\n    int a = 100;\n    int *ptr = &a;\n    printf(\"%p\", ptr);\n    return 0;\n}",
+    "o": [
+      "Memory address of a",
+      "100",
+      "Garbage value",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following statements is used to assign address of variable `x` to pointer `p`?",
+    "o": [
+      "p = &x;",
+      "*p = x;",
+      "p = *x;",
+      "&p = x;"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\nint main() {\n    int arr[3] = {10, 20, 30};\n    int *ptr = arr;\n    printf(\"%d\", *(ptr + 2));\n    return 0;\n}",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which is the correct way to declare a pointer to a function returning `int` and taking two `float` parameters?",
+    "o": [
+      "int (*funcPtr)(float, float);",
+      "int *funcPtr(float, float);",
+      "(*int funcPtr)(float, float);",
+      "float (*funcPtr)(int, int);"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <stdio.h>\nint add(int x, int y) { return x + y; }\nint main() {\n    int (*fptr)(int, int) = add;\n    printf(\"%d\", fptr(3, 4));\n    return 0;\n}",
+    "o": [
+      "7",
+      "3",
+      "4",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "How do pointers and arrays relate in C?",
+    "o": [
+      "Array name acts like a pointer to the first element",
+      "Pointer points to the entire array block",
+      "They are completely unrelated",
+      "Pointer is larger in size than an array"
+    ]
+  },
+  {
+    "q": "What is the result of this expression if `int *ptr` points to an integer array: `*(ptr + 1)`?",
+    "o": [
+      "Value at the next integer position in memory",
+      "Address of ptr incremented by 1 byte",
+      "Compilation error",
+      "Memory address of array"
+    ]
+  },
+  {
+    "q": "Which of the following will correctly increment a pointer to the next integer in an array?",
+    "o": [
+      "ptr++",
+      "*ptr++",
+      "++*ptr",
+      "ptr = ptr + sizeof(int)"
+    ]
+  },
+  {
+    "q": "What does the following line do? `int *ptr = malloc(sizeof(int));`",
+    "o": [
+      "Allocates memory for one integer and assigns its address to ptr",
+      "Declares an integer and assigns it to ptr",
+      "Assigns the value of sizeof(int) to ptr",
+      "Creates a static integer variable"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a pointer to an integer in C?",
+    "o": [
+      "int *ptr;",
+      "int ptr*;",
+      "*int ptr;",
+      "ptr int*;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int a = 10;\n    int *p = &a;\n    printf(\"%d\", *p);\n    return 0;\n}",
+    "o": [
+      "10",
+      "0",
+      "Address of a",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which operation is valid pointer arithmetic in C?",
+    "o": [
+      "ptr++",
+      "++*ptr",
+      "ptr + a + b",
+      "ptr * 2"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {1, 2, 3};\n    int *p = arr;\n    printf(\"%d\", *(p + 1));\n    return 0;\n}",
+    "o": [
+      "2",
+      "1",
+      "3",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following statements about pointers and arrays in C is true?",
+    "o": [
+      "An array name can be used as a pointer to its first element.",
+      "Pointers and arrays are always the same in memory representation.",
+      "Pointers cannot point to array elements.",
+      "Arrays are dynamically sized using pointers."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n\nvoid greet() {\n    printf(\"Hello from function!\\n\");\n}\n\nint main() {\n    void (*func_ptr)() = greet;\n    func_ptr();\n    return 0;\n}",
+    "o": [
+      "Hello from function!",
+      "Hello",
+      "Nothing is printed",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to declare a pointer to a function that returns int and takes two int parameters?",
+    "o": [
+      "int (*func_ptr)(int, int);",
+      "int *func_ptr(int, int);",
+      "int func_ptr(*)(int, int);",
+      "func_ptr int(*)(int, int);"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about pointer initialization?",
+    "o": [
+      "A pointer must be assigned a valid address before dereferencing.",
+      "Pointers are automatically initialized to NULL.",
+      "Dereferencing an uninitialized pointer is safe.",
+      "A pointer cannot be assigned the address of a variable."
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes a pointer to a float variable?",
+    "o": [
+      "float x = 5.5; float *p = &x;",
+      "float *x = &5.5;",
+      "float x = 5.5; *p = &x;",
+      "float x = 5.5; p = &x;"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int x = 20;\n    int *p = &x;\n    *p = *p + 5;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "25",
+      "20",
+      "5",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following is true about pointer arithmetic?",
+    "o": [
+      "Incrementing a pointer moves it by the size of the data type it points to.",
+      "Pointers can be incremented by any value without affecting memory.",
+      "Pointer arithmetic can only be done with void pointers.",
+      "Subtracting two pointers is illegal in C."
+    ]
+  },
+  {
+    "q": "What does the following code print?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {4, 5, 6};\n    int *p = arr + 2;\n    printf(\"%d\", *(p - 1));\n    return 0;\n}",
+    "o": [
+      "5",
+      "4",
+      "6",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which expression retrieves the address of the first element of an array named 'data'?",
+    "o": [
+      "data",
+      "&data[0]",
+      "*data",
+      "data + sizeof(data)"
+    ]
+  },
+  {
+    "q": "What is the output of this function pointer usage?",
+    "c": "#include <stdio.h>\n\nint add(int a, int b) { return a + b; }\n\nint main() {\n    int (*operation)(int, int) = add;\n    printf(\"%d\", operation(3, 4));\n    return 0;\n}",
+    "o": [
+      "7",
+      "12",
+      "3",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a pointer to a function?",
+    "o": [
+      "A variable that holds the address of a function.",
+      "A pointer that stores the return value of a function.",
+      "A function that returns a pointer.",
+      "A function that calls another function."
+    ]
+  },
+  {
+    "q": "Which line correctly declares an array of 5 integer pointers?",
+    "o": [
+      "int *arr[5];",
+      "int arr[*5];",
+      "int *(arr)5;",
+      "int arr[5*];"
+    ]
+  },
+  {
+    "q": "Which of the following correctly assigns the address of variable 'y' to pointer 'p'?",
+    "o": [
+      "p = &y;",
+      "*p = &y;",
+      "p = y;",
+      "&p = y;"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int val = 7;\n    int *ptr = &val;\n    printf(\"%p\", (void*)ptr);\n    return 0;\n}",
+    "o": [
+      "Address of val",
+      "7",
+      "Undefined",
+      "Compile-time error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes pointer arithmetic on an integer pointer?",
+    "o": [
+      "Incrementing the pointer moves it to the next integer in memory.",
+      "Incrementing the pointer adds exactly 1 byte.",
+      "Pointer arithmetic is only allowed on float types.",
+      "Pointer arithmetic is not allowed in C."
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int nums[] = {10, 20, 30, 40};\n    int *p = nums;\n    printf(\"%d\", *(p + 3));\n    return 0;\n}",
+    "o": [
+      "40",
+      "30",
+      "10",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "Which statement is true about the relationship between pointers and arrays in C?",
+    "o": [
+      "Array indexing can be performed using pointers.",
+      "Pointers and arrays are always interchangeable.",
+      "Only arrays can be indexed; pointers cannot.",
+      "Arrays are stored in reverse order using pointers."
+    ]
+  },
+  {
+    "q": "What is the output of this pointer-based function call?",
+    "c": "#include <stdio.h>\n\nvoid printValue(int x) {\n    printf(\"%d\", x);\n}\n\nint main() {\n    void (*funcPtr)(int) = printValue;\n    funcPtr(99);\n    return 0;\n}",
+    "o": [
+      "99",
+      "0",
+      "Compile error",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of these is a valid way to declare a pointer to a function returning void and taking a char pointer?",
+    "o": [
+      "void (*func)(char*);",
+      "void func(*char);",
+      "(*func) void(char*);",
+      "void *func(char*);"
+    ]
+  },
+  {
+    "q": "What is the value of *ptr after the following code runs?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int a = 100;\n    int *ptr = &a;\n    *ptr += 50;\n    printf(\"%d\", *ptr);\n    return 0;\n}",
+    "o": [
+      "150",
+      "100",
+      "50",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to declare a pointer to a character?",
+    "o": [
+      "char *p;",
+      "char p*;",
+      "*char p;",
+      "pointer char p;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int val = 42;\n    int *ptr = &val;\n    printf(\"%d\", *ptr + 1);\n    return 0;\n}",
+    "o": [
+      "43",
+      "42",
+      "1",
+      "Compile error"
+    ]
+  },
+  {
+    "q": "Which of the following is legal pointer arithmetic?",
+    "o": [
+      "p + 1",
+      "p * 2",
+      "p / 2",
+      "1 + *p"
+    ]
+  },
+  {
+    "q": "What value is printed by this code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int nums[] = {3, 6, 9};\n    int *p = nums;\n    printf(\"%d\", *(++p));\n    return 0;\n}",
+    "o": [
+      "6",
+      "3",
+      "9",
+      "Compile error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly retrieves the third element of an array using a pointer?",
+    "o": [
+      "*(ptr + 2)",
+      "*ptr + 2",
+      "ptr[3]",
+      "*ptr[2]"
+    ]
+  },
+  {
+    "q": "What is printed by this code using a function pointer?",
+    "c": "#include <stdio.h>\n\nvoid shout() {\n    printf(\"Pointers rock!\\n\");\n}\n\nint main() {\n    void (*fp)() = shout;\n    fp();\n    return 0;\n}",
+    "o": [
+      "Pointers rock!",
+      "Nothing",
+      "fp",
+      "Compile error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly assigns the address of function 'process' to a function pointer?",
+    "o": [
+      "func_ptr = process;",
+      "func_ptr = &*process();",
+      "func_ptr = *process;",
+      "&func_ptr = process;"
+    ]
+  },
+  {
+    "q": "What does the following code print?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {2, 4, 6, 8};\n    int *p = arr;\n    printf(\"%d\", *(p + 1) + *(p + 2));\n    return 0;\n}",
+    "o": [
+      "10",
+      "6",
+      "8",
+      "12"
+    ]
+  },
+  {
+    "q": "Which line properly initializes a pointer 'ptr' to NULL in C?",
+    "o": [
+      "int *ptr = NULL;",
+      "int ptr = NULL;",
+      "int *ptr = null;",
+      "ptr = NULL;"
+    ]
+  },
+  {
+    "q": "What is the output of the following program?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int x = 8, y = 12;\n    int *p = &x;\n    int *q = &y;\n    *p = *p + *q;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "20",
+      "12",
+      "8",
+      "0"
+    ]
+  },
+  {
+    "q": "Which operation is invalid for pointer arithmetic in C?",
+    "o": [
+      "Multiplying a pointer by a number",
+      "Adding an integer to a pointer",
+      "Subtracting two pointers of the same type",
+      "Incrementing a pointer"
+    ]
+  },
+  {
+    "q": "What does the following code print?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {11, 22, 33};\n    int *ptr = arr;\n    printf(\"%d\", *(ptr++));\n    return 0;\n}",
+    "o": [
+      "11",
+      "22",
+      "33",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following best explains how arrays and pointers relate in C?",
+    "o": [
+      "Array names act like constant pointers to their first element.",
+      "Arrays and pointers are completely unrelated in memory.",
+      "Pointers cannot access array elements.",
+      "Pointers always occupy more memory than arrays."
+    ]
+  },
+  {
+    "q": "What is the output of this function pointer example?",
+    "c": "#include <stdio.h>\n\nint square(int n) { return n * n; }\n\nint main() {\n    int (*func)(int) = square;\n    printf(\"%d\", func(5));\n    return 0;\n}",
+    "o": [
+      "25",
+      "10",
+      "5",
+      "Compile error"
+    ]
+  },
+  {
+    "q": "Which of these correctly defines a pointer to a function returning float and taking no parameters?",
+    "o": [
+      "float (*fptr)();",
+      "float *fptr();",
+      "(*fptr) float();",
+      "float fptr*();"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int data[3] = {1, 2, 3};\n    int *p = data;\n    printf(\"%d\", p[2]);\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "1",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following correctly assigns the address of an integer variable to a pointer?",
+    "o": [
+      "int a = 10; int *p = &a;",
+      "int *a = 10; int p = &a;",
+      "int *a = &p; int a = 10;",
+      "int p = 10; *a = &p;"
+    ]
+  },
+  {
+    "q": "What is the output of this pointer arithmetic operation?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {1, 3, 5, 7};\n    int *ptr = arr + 1;\n    printf(\"%d\", *(ptr + 2));\n    return 0;\n}",
+    "o": [
+      "7",
+      "5",
+      "3",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following operations is **not** valid on a pointer?",
+    "o": [
+      "Dereferencing a NULL pointer",
+      "Incrementing a pointer",
+      "Assigning one pointer to another of the same type",
+      "Passing a pointer to a function"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int values[] = {100, 200, 300};\n    int *p = &values[1];\n    printf(\"%d\", *(p - 1));\n    return 0;\n}",
+    "o": [
+      "100",
+      "200",
+      "300",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following best defines the type of `int (*ptr)(float, char)`?",
+    "o": [
+      "Pointer to function taking float and char, returning int",
+      "Function taking a pointer to float and char, returning int",
+      "Pointer to function returning float and char",
+      "Function pointer returning void"
+    ]
+  },
+  {
+    "q": "What will the output of the following code be?",
+    "c": "#include <stdio.h>\n\nint multiply(int x, int y) {\n    return x * y;\n}\n\nint main() {\n    int (*fptr)(int, int) = multiply;\n    printf(\"%d\", fptr(2, 3));\n    return 0;\n}",
+    "o": [
+      "6",
+      "5",
+      "2",
+      "Compile-time error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly accesses the second element of an array using pointer notation?",
+    "o": [
+      "*(arr + 1)",
+      "*arr + 1",
+      "arr[0] + 1",
+      "&arr + 1"
+    ]
+  },
+  {
+    "q": "Which is the correct way to declare a pointer to pointer to int?",
+    "o": [
+      "int **ptr;",
+      "int ptr**;",
+      "*int *ptr;",
+      "**int ptr;"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to initialize a pointer to an integer?",
+    "o": [
+      "int x = 25; int *p = &x;",
+      "int *x = &25;",
+      "int p = &x;",
+      "pointer int *p = x;"
+    ]
+  },
+  {
+    "q": "What is the output of the following program?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int a = 10;\n    int *ptr = &a;\n    printf(\"%d\", *ptr);\n    return 0;\n}",
+    "o": [
+      "10",
+      "Address of a",
+      "0",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following operations is valid with pointers?",
+    "o": [
+      "Subtracting two pointers of the same type",
+      "Multiplying two pointers",
+      "Dividing one pointer by another",
+      "Modulus between two pointers"
+    ]
+  },
+  {
+    "q": "What is printed by this code using pointer and array?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[3] = {7, 14, 21};\n    int *p = arr;\n    printf(\"%d\", *(p + 2));\n    return 0;\n}",
+    "o": [
+      "21",
+      "14",
+      "7",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following correctly calls a function using a function pointer?",
+    "o": [
+      "result = func_ptr(5);",
+      "result = *func_ptr(5);",
+      "call func_ptr(5);",
+      "run(func_ptr, 5);"
+    ]
+  },
+  {
+    "q": "What does this function pointer example output?",
+    "c": "#include <stdio.h>\n\nint square(int x) { return x * x; }\n\nint main() {\n    int (*fp)(int) = square;\n    printf(\"%d\", fp(6));\n    return 0;\n}",
+    "o": [
+      "36",
+      "12",
+      "6",
+      "Compile error"
+    ]
+  },
+  {
+    "q": "What is the result of this pointer expression?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int nums[] = {5, 10, 15};\n    int *p = nums + 1;\n    printf(\"%d\", *p);\n    return 0;\n}",
+    "o": [
+      "10",
+      "5",
+      "15",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare a pointer to a function taking two ints and returning a float?",
+    "o": [
+      "float (*fp)(int, int);",
+      "float *fp(int, int);",
+      "float (fp*)(int, int);",
+      "fp float*(int, int);"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a pointer to a float variable?",
+    "o": [
+      "float *ptr;",
+      "float ptr*;",
+      "*float ptr;",
+      "float pointer ptr;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int x = 4;\n    int *p = &x;\n    *p = *p + 6;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "10",
+      "6",
+      "4",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following statements about pointer arithmetic is true?",
+    "o": [
+      "Incrementing a pointer moves it to the next memory location based on the data type size.",
+      "Pointer arithmetic is only valid on void pointers.",
+      "You can multiply two pointers directly.",
+      "Pointers cannot be subtracted from each other."
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[5] = {0, 1, 2, 3, 4};\n    int *ptr = arr;\n    printf(\"%d\", *(ptr + 3));\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "4",
+      "1"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the expression `&arr[0]` in C?",
+    "o": [
+      "It gives the address of the first element in the array.",
+      "It gives the address of the array as a whole.",
+      "It gives the size of the array.",
+      "It gives the value of the first element."
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\n\nvoid greet() {\n    printf(\"Hi there!\\n\");\n}\n\nint main() {\n    void (*fptr)() = greet;\n    fptr();\n    return 0;\n}",
+    "o": [
+      "Hi there!",
+      "greet",
+      "fptr",
+      "Compile error"
+    ]
+  },
+  {
+    "q": "Which of these correctly declares a pointer to an array of 5 integers?",
+    "o": [
+      "int (*ptr)[5];",
+      "int *ptr[5];",
+      "int ptr(*[5]);",
+      "int *(ptr[5]);"
+    ]
+  },
+  {
+    "q": "What is the output of this program involving a pointer and increment?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int num = 20;\n    int *p = &num;\n    (*p)++;\n    printf(\"%d\", num);\n    return 0;\n}",
+    "o": [
+      "21",
+      "20",
+      "22",
+      "Compile-time error"
+    ]
+  },
+  {
+    "q": "Which line correctly initializes a pointer to point to an integer variable?",
+    "o": [
+      "int a = 50; int *p = &a;",
+      "int *a = p; int p = 50;",
+      "int p = 50; int *a = p;",
+      "pointer int *p = &a;"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {5, 10, 15};\n    int *ptr = arr;\n    ptr++;\n    printf(\"%d\", *ptr);\n    return 0;\n}",
+    "o": [
+      "10",
+      "5",
+      "15",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to perform pointer subtraction?",
+    "o": [
+      "int diff = ptr2 - ptr1;",
+      "int diff = ptr1 - 1;",
+      "int diff = ptr1 / ptr2;",
+      "int diff = ptr1 * ptr2;"
+    ]
+  },
+  {
+    "q": "Which of the following expressions accesses the third element of an array using pointer notation?",
+    "o": [
+      "*(arr + 2)",
+      "*arr + 2",
+      "arr + 3",
+      "&arr[3]",
+      "arr[3]"
+    ]
+  },
+  {
+    "q": "What will be the result of this code involving a function pointer?",
+    "c": "#include <stdio.h>\n\nint add(int x, int y) { return x + y; }\n\nint main() {\n    int (*op)(int, int) = add;\n    printf(\"%d\", op(3, 4));\n    return 0;\n}",
+    "o": [
+      "7",
+      "3",
+      "4",
+      "Compile error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the usage of a pointer to a function?",
+    "o": [
+      "It stores the address of a function and allows indirect calls.",
+      "It holds return values from functions.",
+      "It is used only for recursive functions.",
+      "It must point to static functions only."
+    ]
+  },
+  {
+    "q": "What is the output of this pointer arithmetic example?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int nums[] = {10, 20, 30};\n    int *p = nums + 2;\n    printf(\"%d\", *(p - 1));\n    return 0;\n}",
+    "o": [
+      "20",
+      "30",
+      "10",
+      "Compile error"
+    ]
+  },
+  {
+    "q": "Which of the following declarations is used for a pointer to a function returning void and taking no arguments?",
+    "o": [
+      "void (*funcptr)();",
+      "void *funcptr();",
+      "(*funcptr)(void) = void;",
+      "function void funcptr();"
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes a pointer to a character?",
+    "o": [
+      "char ch = 'A'; char *p = &ch;",
+      "char *ch = &'A';",
+      "char p = *'A';",
+      "*char p = ch;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int value = 8;\n    int *ptr = &value;\n    printf(\"%d\", *ptr + 2);\n    return 0;\n}",
+    "o": [
+      "10",
+      "8",
+      "2",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following statements about pointers and arrays is TRUE?",
+    "o": [
+      "An array name can be used as a pointer to its first element.",
+      "Pointers and arrays are completely unrelated.",
+      "You can change the address stored in an array name at runtime.",
+      "Pointers cannot point to arrays."
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int nums[] = {2, 4, 6};\n    int *p = nums;\n    printf(\"%d\", *(p + 1));\n    return 0;\n}",
+    "o": [
+      "4",
+      "2",
+      "6",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct function pointer declaration for a function returning `int` and taking two `char` arguments?",
+    "o": [
+      "int (*fptr)(char, char);",
+      "int *fptr(char, char);",
+      "fptr int(char, char);",
+      "int (char, char) *fptr;"
+    ]
+  },
+  {
+    "q": "What will be printed by the following program?",
+    "c": "#include <stdio.h>\n\nvoid display(int x) {\n    printf(\"Value: %d\\n\", x);\n}\n\nint main() {\n    void (*func)(int) = display;\n    func(5);\n    return 0;\n}",
+    "o": [
+      "Value: 5",
+      "display: 5",
+      "5",
+      "Compile-time error"
+    ]
+  },
+  {
+    "q": "Which of the following operations is invalid for pointer variables?",
+    "o": [
+      "Adding two pointer variables",
+      "Incrementing a pointer",
+      "Comparing two pointers of the same type",
+      "Subtracting two pointers within same array"
+    ]
+  },
+  {
+    "q": "Which statement best describes the behavior of `*ptr++`?",
+    "o": [
+      "Dereferences the current pointer, then increments it",
+      "Increments the pointer, then dereferences it",
+      "Increments the value pointed to by the pointer",
+      "Has undefined behavior"
+    ]
+  },
+  {
+    "q": "Which of the following correctly assigns the address of variable `b` to pointer `p`?",
+    "o": [
+      "int b = 9; int *p = &b;",
+      "int *p = &9;",
+      "int b = 9; *p = &b;",
+      "int *p = address of b;"
+    ]
+  },
+  {
+    "q": "What does this program output?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int a = 3;\n    int *ptr = &a;\n    printf(\"%p\", ptr);\n    return 0;\n}",
+    "o": [
+      "Memory address of variable a",
+      "3",
+      "Garbage value",
+      "*ptr"
+    ]
+  },
+  {
+    "q": "Which of the following is true about pointer arithmetic?",
+    "o": [
+      "Adding 1 to a pointer increases its address by the size of its data type",
+      "Adding 1 to a pointer always increases the address by 1 byte",
+      "You can divide one pointer by another",
+      "Pointer arithmetic works only with void pointers"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {10, 20, 30};\n    int *p = arr;\n    printf(\"%d\", *(++p));\n    return 0;\n}",
+    "o": [
+      "20",
+      "10",
+      "30",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct statement about arrays and pointers?",
+    "o": [
+      "The name of an array acts as a pointer to its first element",
+      "An array name holds the size of the array",
+      "Pointers cannot be used to access array elements",
+      "Arrays and pointers are completely unrelated"
+    ]
+  },
+  {
+    "q": "What is the output of this function pointer example?",
+    "c": "#include <stdio.h>\n\nint multiply(int a, int b) { return a * b; }\n\nint main() {\n    int (*ptr)(int, int) = multiply;\n    printf(\"%d\", ptr(3, 4));\n    return 0;\n}",
+    "o": [
+      "12",
+      "7",
+      "34",
+      "Compile error"
+    ]
+  },
+  {
+    "q": "Which declaration is valid for a pointer to a function taking no parameters and returning an int?",
+    "o": [
+      "int (*funcptr)();",
+      "(*int funcptr)();",
+      "int *funcptr();",
+      "int funcptr(*);"
+    ]
+  },
+  {
+    "q": "What does this pointer increment operation do?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int x[] = {1, 2, 3};\n    int *p = x;\n    p = p + 2;\n    printf(\"%d\", *p);\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "1",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare a pointer to an integer variable in C?",
+    "o": [
+      "int *ptr;",
+      "pointer int ptr;",
+      "int ptr*;",
+      "int& ptr;"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int a = 100;\n    int *p = &a;\n    printf(\"%d\", *p);\n    return 0;\n}",
+    "o": [
+      "100",
+      "Address of a",
+      "Garbage value",
+      "Compile-time error"
+    ]
+  },
+  {
+    "q": "Which of the following statements about pointer arithmetic is correct?",
+    "o": [
+      "Pointers are incremented in steps equal to the size of their data type.",
+      "Adding 1 to a pointer always moves it by 1 byte.",
+      "You can divide one pointer by another in pointer arithmetic.",
+      "Pointer arithmetic is not allowed in C."
+    ]
+  },
+  {
+    "q": "What is printed by the following code snippet?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {7, 14, 21};\n    int *ptr = arr;\n    printf(\"%d\", *(ptr + 2));\n    return 0;\n}",
+    "o": [
+      "21",
+      "14",
+      "7",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "Which of the following correctly describes a pointer and an array relationship in C?",
+    "o": [
+      "An array name acts like a pointer to its first element.",
+      "Pointers cannot access array elements.",
+      "Arrays can be reassigned at runtime like pointers.",
+      "Arrays and pointers are always stored in different memory blocks."
+    ]
+  },
+  {
+    "q": "What will this function pointer code output?",
+    "c": "#include <stdio.h>\n\nint square(int x) { return x * x; }\n\nint main() {\n    int (*fptr)(int) = square;\n    printf(\"%d\", fptr(5));\n    return 0;\n}",
+    "o": [
+      "25",
+      "10",
+      "5",
+      "Compile-time error"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare a pointer to a function that returns void and takes an int argument?",
+    "o": [
+      "void (*fptr)(int);",
+      "void fptr(*)(int);",
+      "(*fptr)(void, int);",
+      "fptr(void, int) *void;"
+    ]
+  },
+  {
+    "q": "What will be the output of the following pointer manipulation code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int numbers[] = {11, 22, 33};\n    int *ptr = numbers;\n    ptr++;\n    printf(\"%d\", *ptr);\n    return 0;\n}",
+    "o": [
+      "22",
+      "11",
+      "33",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "Which of the following initializes a null pointer correctly in C?",
+    "o": [
+      "int *ptr = NULL;",
+      "int ptr = NULL;",
+      "NULL = *ptr;",
+      "ptr = null;"
+    ]
+  },
+  {
+    "q": "What will be the result of the following code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int a = 42;\n    int *p = &a;\n    *p = *p + 1;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "43",
+      "42",
+      "*p",
+      "Address of a"
+    ]
+  },
+  {
+    "q": "Which statement about pointer arithmetic is accurate?",
+    "o": [
+      "Subtracting two pointers gives the number of elements between them.",
+      "You can add any integer to a void pointer.",
+      "Multiplying two pointers returns an address.",
+      "You can divide a pointer by an integer in C."
+    ]
+  },
+  {
+    "q": "What value will this code print?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[3] = {1, 2, 3};\n    int *ptr = arr + 1;\n    printf(\"%d\", *(ptr + 1));\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "1",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which best describes the difference between arrays and pointers?",
+    "o": [
+      "An array's address is fixed, but a pointer can be reassigned.",
+      "Arrays can point to functions, but pointers cannot.",
+      "Pointers always take more memory than arrays.",
+      "Pointers store size of arrays automatically."
+    ]
+  },
+  {
+    "q": "What will be the result of this code involving function pointers?",
+    "c": "#include <stdio.h>\n\nint subtract(int a, int b) { return a - b; }\n\nint main() {\n    int (*fp)(int, int) = subtract;\n    printf(\"%d\", fp(10, 3));\n    return 0;\n}",
+    "o": [
+      "7",
+      "13",
+      "3",
+      "Compile error"
+    ]
+  },
+  {
+    "q": "Which is the correct declaration of a function that takes a pointer to int and returns void?",
+    "o": [
+      "void func(int *p);",
+      "func(void *int);",
+      "int *void func();",
+      "function void func(pointer int);"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int data[] = {5, 10, 15};\n    int *p = &data[0];\n    printf(\"%d\", *(p++));\n    return 0;\n}",
+    "o": [
+      "5",
+      "10",
+      "15",
+      "Undefined behavior"
+    ]
+  },
+  {
+    "q": "Which line correctly declares a pointer to a float variable?",
+    "o": [
+      "float *ptr;",
+      "ptr float*;",
+      "float ptr*;",
+      "*float = ptr;"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int a = 25;\n    int *p = &a;\n    printf(\"%p\", (void*)p);\n    return 0;\n}",
+    "o": [
+      "Memory address of variable a",
+      "25",
+      "Garbage value",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following is TRUE about pointer arithmetic?",
+    "o": [
+      "Only addition and subtraction are allowed with pointers in C.",
+      "You can multiply a pointer by an integer.",
+      "Pointers support modulus operations.",
+      "All arithmetic operations are valid with pointers."
+    ]
+  },
+  {
+    "q": "What does this pointer operation produce?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int values[] = {4, 5, 6};\n    int *p = values;\n    printf(\"%d\", *(p + 2));\n    return 0;\n}",
+    "o": [
+      "6",
+      "4",
+      "5",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following best describes how a pointer works with arrays?",
+    "o": [
+      "Pointers can iterate through an array by incrementing the pointer.",
+      "Pointers store the entire array.",
+      "Pointers are slower than indexing with arrays.",
+      "You cannot use pointers to access array elements."
+    ]
+  },
+  {
+    "q": "What does this function pointer code print?",
+    "c": "#include <stdio.h>\n\nint divide(int a, int b) { return a / b; }\n\nint main() {\n    int (*fp)(int, int) = divide;\n    printf(\"%d\", fp(20, 4));\n    return 0;\n}",
+    "o": [
+      "5",
+      "4",
+      "20",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which is the correct way to declare a pointer to a function returning float?",
+    "o": [
+      "float (*funcPtr)(int);",
+      "float funcPtr(*int);",
+      "*float funcPtr(int);",
+      "funcPtr(float, int) *;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {9, 18, 27};\n    int *ptr = arr;\n    printf(\"%d\", *++ptr);\n    return 0;\n}",
+    "o": [
+      "18",
+      "9",
+      "27",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes a pointer to point to variable `x`?",
+    "o": [
+      "int x = 5; int *p = &x;",
+      "int x = 5; int *p = x;",
+      "int *p = address of x;",
+      "pointer p = &x;"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int val = 7;\n    int *ptr = &val;\n    printf(\"%d\", *ptr);\n    return 0;\n}",
+    "o": [
+      "7",
+      "ptr",
+      "val",
+      "Address of val"
+    ]
+  },
+  {
+    "q": "Which operation is valid in C pointer arithmetic?",
+    "o": [
+      "ptr + 1",
+      "ptr * 2",
+      "1 / ptr",
+      "ptr % 2"
+    ]
+  },
+  {
+    "q": "What will this program output?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {8, 16, 24};\n    int *p = arr;\n    printf(\"%d\", *(p + 1));\n    return 0;\n}",
+    "o": [
+      "16",
+      "8",
+      "24",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "Which of the following is TRUE regarding pointers and arrays in C?",
+    "o": [
+      "Pointer arithmetic can be used to iterate over arrays.",
+      "Arrays and pointers are the same in every context.",
+      "Pointers automatically know array sizes.",
+      "Pointers cannot be incremented."
+    ]
+  },
+  {
+    "q": "What does this function pointer code output?",
+    "c": "#include <stdio.h>\n\nint mod(int a, int b) { return a % b; }\n\nint main() {\n    int (*fptr)(int, int) = mod;\n    printf(\"%d\", fptr(10, 3));\n    return 0;\n}",
+    "o": [
+      "1",
+      "3",
+      "10",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct syntax to declare a pointer to a function taking two floats and returning int?",
+    "o": [
+      "int (*funcPtr)(float, float);",
+      "int *funcPtr(float, float);",
+      "int funcPtr(*float, *float);",
+      "*int funcPtr(float, float);"
+    ]
+  },
+  {
+    "q": "What does the following code print?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int data[4] = {2, 4, 6, 8};\n    int *ptr = &data[1];\n    printf(\"%d\", *(ptr + 2));\n    return 0;\n}",
+    "o": [
+      "8",
+      "2",
+      "6",
+      "4"
+    ]
+  },
+  {
+    "q": "Which of the following correctly assigns the address of variable `num` to a pointer?",
+    "o": [
+      "int *p = &num;",
+      "int p = &num;",
+      "int *p = num;",
+      "pointer p = address of num;"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int x = 9;\n    int *ptr = &x;\n    *ptr = 12;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "12",
+      "9",
+      "Garbage value",
+      "Address of x"
+    ]
+  },
+  {
+    "q": "Which statement about pointer arithmetic is correct?",
+    "o": [
+      "Incrementing a pointer moves it by the size of its data type.",
+      "Pointer addition always increases by 1 byte.",
+      "You can use any arithmetic operation on pointers.",
+      "Pointers to structs cannot be incremented."
+    ]
+  },
+  {
+    "q": "What is the result of this code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int a[] = {3, 6, 9};\n    int *p = a;\n    printf(\"%d\", *(p++));\n    return 0;\n}",
+    "o": [
+      "3",
+      "6",
+      "9",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the relationship between arrays and pointers in C?",
+    "o": [
+      "Array names act like constant pointers to the first element.",
+      "Arrays can be resized at runtime using pointers.",
+      "Pointers and arrays are completely unrelated in C.",
+      "You can assign an array to a pointer directly."
+    ]
+  },
+  {
+    "q": "What does this function pointer example print?",
+    "c": "#include <stdio.h>\n\nint multiply(int x, int y) { return x * y; }\n\nint main() {\n    int (*fptr)(int, int) = multiply;\n    printf(\"%d\", fptr(4, 5));\n    return 0;\n}",
+    "o": [
+      "20",
+      "9",
+      "1",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid declaration for a function pointer returning char and taking no parameters?",
+    "o": [
+      "char (*fptr)(void);",
+      "char *fptr(void);",
+      "char fptr(*void);",
+      "*char fptr();"
+    ]
+  },
+  {
+    "q": "What will be the output of this pointer arithmetic code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int list[] = {10, 20, 30};\n    int *p = list + 2;\n    printf(\"%d\", *p);\n    return 0;\n}",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "Which is the correct way to declare a pointer to a `char` in C?",
+    "o": [
+      "char *ptr;",
+      "ptr char*;",
+      "*char ptr;",
+      "char = *ptr;"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int x = 2, y = 4;\n    int *p = &x;\n    p = &y;\n    printf(\"%d\", *p);\n    return 0;\n}",
+    "o": [
+      "4",
+      "2",
+      "Address of y",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following pointer operations is NOT allowed in C?",
+    "o": [
+      "Multiplying two pointers",
+      "Adding an integer to a pointer",
+      "Subtracting two pointers",
+      "Comparing two pointers"
+    ]
+  },
+  {
+    "q": "What does the following code output?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {11, 22, 33};\n    int *ptr = arr;\n    ptr++;\n    printf(\"%d\", *ptr);\n    return 0;\n}",
+    "o": [
+      "22",
+      "11",
+      "33",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "What is true about arrays and pointers in C?",
+    "o": [
+      "The name of an array acts like a pointer to its first element.",
+      "Arrays can be reassigned to point elsewhere.",
+      "Pointers store the size of the array.",
+      "You can increment an array name like a pointer."
+    ]
+  },
+  {
+    "q": "What does the following function pointer example print?",
+    "c": "#include <stdio.h>\n\nint square(int x) { return x * x; }\n\nint main() {\n    int (*fp)(int) = square;\n    printf(\"%d\", fp(6));\n    return 0;\n}",
+    "o": [
+      "36",
+      "12",
+      "6",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which is a valid declaration for a pointer to a function taking two `int` parameters and returning `void`?",
+    "o": [
+      "void (*funcPtr)(int, int);",
+      "void funcPtr(*int, *int);",
+      "*void funcPtr(int, int);",
+      "funcPtr void(int, int);"
+    ]
+  },
+  {
+    "q": "What is the output of this pointer arithmetic code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int nums[] = {7, 14, 21};\n    int *p = nums;\n    printf(\"%d\", *(p + 2));\n    return 0;\n}",
+    "o": [
+      "21",
+      "7",
+      "14",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following statements declares a pointer to an integer and assigns it NULL?",
+    "o": [
+      "int *ptr = NULL;",
+      "int ptr = NULL;",
+      "int *ptr = &NULL;",
+      "pointer int = NULL;"
+    ]
+  },
+  {
+    "q": "What will be the output of this code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int x = 100;\n    int *px = &x;\n    *px += 50;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "150",
+      "100",
+      "50",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following pointer arithmetic operations is invalid in C?",
+    "o": [
+      "Adding two pointers",
+      "Adding an integer to a pointer",
+      "Subtracting two pointers",
+      "Subtracting an integer from a pointer"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {1, 2, 3, 4};\n    int *p = arr;\n    printf(\"%d\", *(p + 3));\n    return 0;\n}",
+    "o": [
+      "4",
+      "1",
+      "3",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following best explains the expression `*(&x)` in C?",
+    "o": [
+      "It gives the value of x.",
+      "It gives the address of x.",
+      "It gives a pointer to x.",
+      "It gives a syntax error."
+    ]
+  },
+  {
+    "q": "What is the output of the following code with a function pointer?",
+    "c": "#include <stdio.h>\n\nint add(int a, int b) { return a + b; }\n\nint main() {\n    int (*fptr)(int, int) = add;\n    printf(\"%d\", fptr(3, 4));\n    return 0;\n}",
+    "o": [
+      "7",
+      "3",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which is a valid declaration of a pointer to a function returning `int` and accepting no parameters?",
+    "o": [
+      "int (*funcPtr)(void);",
+      "int *funcPtr(void);",
+      "(*int funcPtr)();",
+      "int funcPtr(*)();"
+    ]
+  },
+  {
+    "q": "What does this code output?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int data[] = {10, 20, 30, 40};\n    int *p = data + 1;\n    printf(\"%d\", *(p + 2));\n    return 0;\n}",
+    "o": [
+      "40",
+      "10",
+      "20",
+      "30"
+    ]
+  },
+  {
+    "q": "Which is the correct way to initialize a pointer to an integer variable named `num`?",
+    "o": [
+      "int *ptr = &num;",
+      "int ptr = &num;",
+      "*int ptr = num;",
+      "int = *ptr num;"
+    ]
+  },
+  {
+    "q": "What will this program print?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int a = 10;\n    int *p = &a;\n    printf(\"%p\", (void*)p);\n    return 0;\n}",
+    "o": [
+      "Address of a",
+      "10",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is NOT a valid pointer arithmetic operation?",
+    "o": [
+      "Multiplying a pointer with an integer",
+      "Adding an integer to a pointer",
+      "Subtracting two pointers of the same type",
+      "Incrementing a pointer"
+    ]
+  },
+  {
+    "q": "What will the following program output?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int nums[] = {5, 10, 15};\n    int *p = nums;\n    printf(\"%d\", *(p + 2));\n    return 0;\n}",
+    "o": [
+      "15",
+      "5",
+      "10",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "Which of the following best describes how arrays and pointers relate in C?",
+    "o": [
+      "Array names act like constant pointers to the first element.",
+      "Pointers and arrays are always interchangeable in all operations.",
+      "An array stores memory addresses like a pointer does.",
+      "Arrays must be dereferenced to access elements."
+    ]
+  },
+  {
+    "q": "What will be printed by this code using function pointer?",
+    "c": "#include <stdio.h>\n\nint sub(int a, int b) { return a - b; }\n\nint main() {\n    int (*fp)(int, int) = sub;\n    printf(\"%d\", fp(9, 4));\n    return 0;\n}",
+    "o": [
+      "5",
+      "13",
+      "4",
+      "9"
+    ]
+  },
+  {
+    "q": "Which is the correct syntax to declare a pointer to a function returning `float` and taking two `int` arguments?",
+    "o": [
+      "float (*funcPtr)(int, int);",
+      "float *funcPtr(int, int);",
+      "*float funcPtr(int, int);",
+      "funcPtr float*(int, int);"
+    ]
+  },
+  {
+    "q": "What is the output of this code using a pointer and array?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int values[] = {2, 4, 6, 8};\n    int *ptr = &values[2];\n    printf(\"%d\", *(ptr - 1));\n    return 0;\n}",
+    "o": [
+      "4",
+      "2",
+      "6",
+      "8"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to declare and initialize a pointer to float?",
+    "o": [
+      "float *ptr = NULL;",
+      "float ptr = *NULL;",
+      "float = *ptr;",
+      "*float = ptr;"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int x = 25;\n    int *p = &x;\n    printf(\"%d\", *p);\n    return 0;\n}",
+    "o": [
+      "25",
+      "Address of x",
+      "Garbage value",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which pointer arithmetic operation is illegal?",
+    "o": [
+      "Multiplying a pointer by another pointer",
+      "Adding an integer to a pointer",
+      "Subtracting two pointers",
+      "Incrementing a pointer"
+    ]
+  },
+  {
+    "q": "What is the result of this code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int array[] = {1, 3, 5, 7};\n    int *p = array;\n    printf(\"%d\", *(p + 1));\n    return 0;\n}",
+    "o": [
+      "3",
+      "1",
+      "5",
+      "7"
+    ]
+  },
+  {
+    "q": "Which statement about arrays and pointers is true in C?",
+    "o": [
+      "A pointer can be used to iterate through an array.",
+      "Arrays and pointers are always interchangeable.",
+      "An array stores addresses like a pointer.",
+      "You can assign a new address to an array name."
+    ]
+  },
+  {
+    "q": "What will this function pointer example output?",
+    "c": "#include <stdio.h>\n\nint doubleIt(int x) { return x * 2; }\n\nint main() {\n    int (*fp)(int) = doubleIt;\n    printf(\"%d\", fp(8));\n    return 0;\n}",
+    "o": [
+      "16",
+      "8",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which is the correct syntax to declare a pointer to a function taking `char` and `int`, and returning `int`?",
+    "o": [
+      "int (*funcPtr)(char, int);",
+      "int funcPtr(char, int);",
+      "(*int funcPtr)(char, int);",
+      "funcPtr int(char, int);"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {10, 20, 30};\n    int *ptr = arr + 1;\n    printf(\"%d\", *(ptr - 1));\n    return 0;\n}",
+    "o": [
+      "10",
+      "20",
+      "30",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "Which of the following correctly initializes a pointer to point to an integer variable `val`?",
+    "o": [
+      "int *ptr = &val;",
+      "int *ptr = val;",
+      "*ptr = &val;",
+      "int ptr = &val;"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int a = 5;\n    int *p = &a;\n    a = a + *p;\n    printf(\"%d\", a);\n    return 0;\n}",
+    "o": [
+      "10",
+      "5",
+      "0",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which operation is invalid when using pointers in C?",
+    "o": [
+      "Dividing one pointer by another",
+      "Adding an integer to a pointer",
+      "Subtracting one pointer from another",
+      "Comparing two pointers"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {2, 4, 6, 8};\n    int *p = arr + 2;\n    printf(\"%d\", *p);\n    return 0;\n}",
+    "o": [
+      "6",
+      "2",
+      "4",
+      "8"
+    ]
+  },
+  {
+    "q": "What does the expression `*(arr + i)` do in C?",
+    "o": [
+      "Accesses the i-th element of the array `arr`",
+      "Declares a pointer to array",
+      "Assigns i to array arr",
+      "Creates a new array"
+    ]
+  },
+  {
+    "q": "What does this function pointer example print?",
+    "c": "#include <stdio.h>\n\nint multiply(int a, int b) { return a * b; }\n\nint main() {\n    int (*funcPtr)(int, int) = multiply;\n    printf(\"%d\", funcPtr(3, 4));\n    return 0;\n}",
+    "o": [
+      "12",
+      "7",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these correctly declares a pointer to a function that takes a `float` and returns a `char`?",
+    "o": [
+      "char (*fptr)(float);",
+      "char *fptr(float);",
+      "(*char fptr)(float);",
+      "float (*fptr)(char);"
+    ]
+  },
+  {
+    "q": "What is the output of this pointer arithmetic example?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int nums[] = {10, 20, 30};\n    int *ptr = nums;\n    ptr += 2;\n    printf(\"%d\", *ptr);\n    return 0;\n}",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a pointer to a `char` and assigns it to the address of variable `ch`?",
+    "o": [
+      "char *ptr = &ch;",
+      "char ptr = &ch;",
+      "*char ptr = ch;",
+      "ptr char = &ch;"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int val = 42;\n    int *p = &val;\n    printf(\"%d\", *p + 2);\n    return 0;\n}",
+    "o": [
+      "44",
+      "40",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following is not a valid operation involving pointers?",
+    "o": [
+      "Dereferencing an uninitialized pointer",
+      "Incrementing a pointer",
+      "Subtracting two pointers",
+      "Assigning NULL to a pointer"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[3] = {11, 22, 33};\n    int *ptr = arr;\n    printf(\"%d\", *(ptr + 1));\n    return 0;\n}",
+    "o": [
+      "22",
+      "11",
+      "33",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "Which of the following correctly describes pointer arithmetic in C?",
+    "o": [
+      "Incrementing a pointer moves it to the next memory location of its type",
+      "Pointer arithmetic always works in bytes, regardless of type",
+      "Pointer arithmetic is undefined in standard C",
+      "Only char pointers can be incremented"
+    ]
+  },
+  {
+    "q": "What does this code snippet print using a function pointer?",
+    "c": "#include <stdio.h>\n\nint square(int x) { return x * x; }\n\nint main() {\n    int (*fp)(int) = square;\n    printf(\"%d\", fp(6));\n    return 0;\n}",
+    "o": [
+      "36",
+      "12",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a pointer to a function that takes no parameters and returns `void`?",
+    "o": [
+      "void (*fptr)(void);",
+      "void fptr(void);",
+      "*void fptr();",
+      "fptr void();"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int numbers[] = {100, 200, 300};\n    int *ptr = numbers + 1;\n    printf(\"%d\", *(ptr + 1));\n    return 0;\n}",
+    "o": [
+      "300",
+      "100",
+      "200",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following declares a null pointer to an integer in C?",
+    "o": [
+      "int *ptr = NULL;",
+      "int ptr = NULL;",
+      "*int ptr = 0;",
+      "int *ptr = &NULL;"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int x = 7;\n    int *p = &x;\n    *p = *p + 3;\n    printf(\"%d\", x);\n    return 0;\n}",
+    "o": [
+      "10",
+      "7",
+      "3",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which operation is valid with pointers in C?",
+    "o": [
+      "Adding an integer value to a pointer",
+      "Multiplying two pointers",
+      "Dividing a pointer by an integer",
+      "Bitwise AND between two pointers"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int data[] = {1, 2, 3, 4};\n    int *ptr = data;\n    printf(\"%d\", *(++ptr));\n    return 0;\n}",
+    "o": [
+      "2",
+      "1",
+      "3",
+      "4"
+    ]
+  },
+  {
+    "q": "What best describes the difference between arrays and pointers?",
+    "o": [
+      "An array name is a constant pointer to the first element; a pointer can be reassigned.",
+      "Pointers consume more memory than arrays.",
+      "Pointers can't access array elements.",
+      "Arrays can point to any type of variable."
+    ]
+  },
+  {
+    "q": "What will the following code using a function pointer output?",
+    "c": "#include <stdio.h>\n\nint sum(int a, int b) { return a + b; }\n\nint main() {\n    int (*fptr)(int, int) = sum;\n    printf(\"%d\", fptr(2, 5));\n    return 0;\n}",
+    "o": [
+      "7",
+      "10",
+      "25",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a pointer to a function that returns an `int` and takes two `double` arguments?",
+    "o": [
+      "int (*ptr)(double, double);",
+      "int ptr(double, double);",
+      "(*int ptr)(double, double);",
+      "double (*ptr)(int, int);"
+    ]
+  },
+  {
+    "q": "What is the output of this pointer arithmetic code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int a[] = {10, 20, 30};\n    int *p = a;\n    printf(\"%d\", *(p + 2));\n    return 0;\n}",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to declare a pointer to an integer in C?",
+    "o": [
+      "int *p;",
+      "int p*;",
+      "*int p;",
+      "int &p;"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int val = 100;\n    int *ptr = &val;\n    printf(\"%p\", (void*)ptr);\n    return 0;\n}",
+    "o": [
+      "Address of val",
+      "100",
+      "Garbage value",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following operations is NOT valid for a pointer?",
+    "o": [
+      "Multiplying two pointers",
+      "Subtracting two pointers",
+      "Adding an integer to a pointer",
+      "Comparing two pointers"
+    ]
+  },
+  {
+    "q": "What does the following code output?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int nums[] = {5, 10, 15};\n    int *ptr = nums;\n    printf(\"%d\", *(ptr++));\n    return 0;\n}",
+    "o": [
+      "5",
+      "10",
+      "15",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "In C, how are arrays and pointers related?",
+    "o": [
+      "The array name acts as a constant pointer to its first element",
+      "Pointers cannot point to array elements",
+      "Arrays can be resized dynamically using pointers",
+      "Pointers and arrays are completely unrelated"
+    ]
+  },
+  {
+    "q": "What does this code using a function pointer print?",
+    "c": "#include <stdio.h>\n\nint triple(int x) { return x * 3; }\n\nint main() {\n    int (*fp)(int) = triple;\n    printf(\"%d\", fp(3));\n    return 0;\n}",
+    "o": [
+      "9",
+      "6",
+      "3",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid declaration of a pointer to a function that takes an `int` and returns `void`?",
+    "o": [
+      "void (*fptr)(int);",
+      "void fptr(int);",
+      "(*void fptr)(int);",
+      "int (*fptr)(void);"
+    ]
+  },
+  {
+    "q": "What will the following pointer arithmetic example output?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int values[] = {8, 16, 32};\n    int *ptr = values;\n    ptr = ptr + 1;\n    printf(\"%d\", *ptr);\n    return 0;\n}",
+    "o": [
+      "16",
+      "8",
+      "32",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "Which of the following declares a pointer to a float and assigns it the address of variable f?",
+    "o": [
+      "float *ptr = &f;",
+      "float ptr = &f;",
+      "*float ptr = f;",
+      "ptr float = &f;"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int a = 3, b = 6;\n    int *p1 = &a, *p2 = &b;\n    printf(\"%d\", *p1 + *p2);\n    return 0;\n}",
+    "o": [
+      "9",
+      "3",
+      "6",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What is the result of applying the increment operator to a pointer?",
+    "o": [
+      "It moves the pointer to the next element of its type",
+      "It adds 1 byte to the address",
+      "It always increases by 4",
+      "It leads to undefined behavior"
+    ]
+  },
+  {
+    "q": "What will be printed by this code snippet?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int arr[] = {9, 18, 27};\n    int *p = arr;\n    p++;\n    printf(\"%d\", *p);\n    return 0;\n}",
+    "o": [
+      "18",
+      "9",
+      "27",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which statement about pointers and arrays is true?",
+    "o": [
+      "Pointer arithmetic on arrays allows element access using pointer indexing",
+      "Arrays are pointers in all contexts",
+      "Pointers cannot be used with arrays in C",
+      "Pointer and array sizes are always equal"
+    ]
+  },
+  {
+    "q": "What will be printed by the function pointer code below?",
+    "c": "#include <stdio.h>\n\nint add(int x, int y) { return x + y; }\n\nint main() {\n    int (*f)(int, int) = add;\n    printf(\"%d\", f(4, 5));\n    return 0;\n}",
+    "o": [
+      "9",
+      "20",
+      "1",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of these is the correct syntax for a function that takes a pointer to a float and returns an int?",
+    "o": [
+      "int func(float *p);",
+      "int *func(float p);",
+      "float *func(int p);",
+      "int func(*float p);"
+    ]
+  },
+  {
+    "q": "What will the output be in the following code?",
+    "c": "#include <stdio.h>\n\nint main() {\n    int x = 12;\n    int *ptr = &x;\n    printf(\"%d\", (*ptr)++);\n    return 0;\n}",
+    "o": [
+      "12",
+      "13",
+      "Compilation error",
+      "Garbage value"
+    ]
+  }
+]

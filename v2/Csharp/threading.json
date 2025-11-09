@@ -1,0 +1,3953 @@
+[
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "using System;\nusing System.Threading;\n\nclass Program {\n    static void Main() {\n        Thread t = new Thread(() => Console.WriteLine(\"Thread started\"));\n        t.Start();\n    }\n}",
+    "o": [
+      "Thread started",
+      "Nothing",
+      "Error",
+      "Thread not started"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to start a new thread in C#?",
+    "o": [
+      "Start()",
+      "Run()",
+      "Begin()",
+      "Execute()"
+    ]
+  },
+  {
+    "q": "What will happen if two threads access a shared resource without synchronization in C#?",
+    "o": [
+      "Data corruption or unexpected behavior",
+      "Both threads will execute sequentially",
+      "Nothing will happen",
+      "The program will crash immediately"
+    ]
+  },
+  {
+    "q": "Which of the following is used to ensure thread safety when accessing shared resources in C#?",
+    "o": [
+      "lock statement",
+      "Thread.Sleep()",
+      "Thread.Join()",
+      "Thread.Priority()"
+    ]
+  },
+  {
+    "q": "What does the 'async' keyword indicate in C#?",
+    "o": [
+      "The method is asynchronous and can be awaited",
+      "The method runs synchronously in the background",
+      "The method executes on a separate thread",
+      "The method is executed when called"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid C# code for creating a task?",
+    "o": [
+      "Task.Run(() => { Console.WriteLine(\"Task executed\"); })",
+      "Task.Execute(() => { Console.WriteLine(\"Task executed\"); })",
+      "Task.Start(() => { Console.WriteLine(\"Task executed\"); })",
+      "new Task(() => { Console.WriteLine(\"Task executed\"); })"
+    ]
+  },
+  {
+    "q": "What will happen if you use 'Thread.Sleep(1000)' in C#?",
+    "o": [
+      "The current thread will pause for 1 second",
+      "The current thread will exit immediately",
+      "The application will terminate",
+      "The thread will restart"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to wait for a thread to finish execution in C#?",
+    "o": [
+      "Join()",
+      "Wait()",
+      "Exit()",
+      "Stop()"
+    ]
+  },
+  {
+    "q": "What is the primary benefit of parallel programming in C#?",
+    "o": [
+      "Faster execution by utilizing multiple processors or cores",
+      "Simpler code management",
+      "Reduced memory usage",
+      "Easier debugging"
+    ]
+  },
+  {
+    "q": "Which of the following is true about thread synchronization in C#?",
+    "o": [
+      "It helps avoid race conditions when multiple threads access shared data",
+      "It slows down the threads without any real benefit",
+      "It ensures threads run in a sequential manner",
+      "It automatically balances the CPU usage between threads"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'Thread.Join()' method in C#?",
+    "o": [
+      "It blocks the calling thread until the thread on which it is called has finished execution",
+      "It starts the thread execution",
+      "It pauses the current thread for a specified time",
+      "It terminates the thread"
+    ]
+  },
+  {
+    "q": "What will happen if you attempt to access the 'Thread.ManagedThreadId' property before a thread is started in C#?",
+    "o": [
+      "It will throw an InvalidOperationException",
+      "It will return 0",
+      "It will return the ID of the main thread",
+      "It will return -1"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to declare a thread in C#?",
+    "o": [
+      "Thread t = new Thread(() => { Console.WriteLine(\"Hello from thread\"); })",
+      "Thread t = new Thread(new ThreadStart(() => { Console.WriteLine(\"Hello from thread\"); }))",
+      "Thread t = new Thread(new Action(() => { Console.WriteLine(\"Hello from thread\"); }))",
+      "Thread t = new Thread(new Delegate(() => { Console.WriteLine(\"Hello from thread\"); }))"
+    ]
+  },
+  {
+    "q": "Which of the following types is used to represent a running task in C# when using async/await?",
+    "o": [
+      "Task",
+      "Thread",
+      "ThreadPool",
+      "WaitHandle"
+    ]
+  },
+  {
+    "q": "What does the 'Thread.Sleep(0)' do in C#?",
+    "o": [
+      "It gives the current thread up, allowing other threads to execute",
+      "It causes the thread to pause indefinitely",
+      "It resumes execution of the current thread",
+      "It terminates the thread"
+    ]
+  },
+  {
+    "q": "What is a key difference between 'Task' and 'Thread' in C#?",
+    "o": [
+      "Tasks are used for asynchronous programming, while threads are for parallelism",
+      "Threads can be run only in a background mode, whereas tasks can only be foreground",
+      "Tasks are slower than threads",
+      "Threads cannot return values, but tasks can"
+    ]
+  },
+  {
+    "q": "What is the use of 'Parallel.For()' in C#?",
+    "o": [
+      "It executes a loop in parallel across multiple threads",
+      "It executes a loop sequentially on the main thread",
+      "It pauses execution for a specified duration",
+      "It performs a recursive loop for thread synchronization"
+    ]
+  },
+  {
+    "q": "In which scenario would you use the 'Monitor.Enter()' method in C#?",
+    "o": [
+      "When you need to synchronize access to a shared resource",
+      "When you need to create a new thread",
+      "When you need to stop a thread from running",
+      "When you need to pause execution for a specific period"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the 'async' and 'await' keywords in C#?",
+    "o": [
+      "They are used for asynchronous programming to improve responsiveness",
+      "They are used to execute synchronous code in parallel",
+      "They block the main thread while waiting for completion",
+      "They can only be used with Thread-based methods"
+    ]
+  },
+  {
+    "q": "What does the 'ThreadPool' class in C# manage?",
+    "o": [
+      "It manages a pool of threads for executing small tasks concurrently",
+      "It manages memory usage across multiple threads",
+      "It defines the number of processors to be used in the system",
+      "It ensures thread safety for all threads"
+    ]
+  },
+  {
+    "q": "Which of the following is used to ensure that only one thread can access a block of code at a time in C#?",
+    "o": [
+      "lock keyword",
+      "Thread.Join()",
+      "Thread.Sleep()",
+      "Monitor.Wait()"
+    ]
+  },
+  {
+    "q": "Which method in C# is used to terminate a thread immediately?",
+    "o": [
+      "Abort()",
+      "Exit()",
+      "Stop()",
+      "Terminate()"
+    ]
+  },
+  {
+    "q": "What is the primary purpose of the 'Task.WhenAll()' method in C#?",
+    "o": [
+      "It waits for all tasks to complete before proceeding",
+      "It runs all tasks concurrently without waiting",
+      "It cancels all running tasks",
+      "It schedules tasks to run sequentially"
+    ]
+  },
+  {
+    "q": "Which of the following can be used to execute a block of code in parallel using multiple threads in C#?",
+    "o": [
+      "Parallel.For()",
+      "Thread.Start()",
+      "Task.Run()",
+      "ThreadPool.QueueUserWorkItem()"
+    ]
+  },
+  {
+    "q": "Which of the following is true about 'ThreadPool' in C#?",
+    "o": [
+      "It reuses threads from a pool to perform multiple tasks efficiently",
+      "It only works with background threads",
+      "It creates a new thread for each task",
+      "It handles synchronization of threads automatically"
+    ]
+  },
+  {
+    "q": "What does the 'await' keyword do in an async method in C#?",
+    "o": [
+      "It pauses the execution of the method until the awaited task completes",
+      "It runs the method asynchronously without waiting for completion",
+      "It terminates the async method",
+      "It allows the task to run synchronously"
+    ]
+  },
+  {
+    "q": "What is the benefit of using the 'Task.Run()' method in C#?",
+    "o": [
+      "It allows executing code asynchronously on a thread pool thread",
+      "It starts a new thread for each task",
+      "It pauses the current thread until the task completes",
+      "It guarantees that the task will complete without errors"
+    ]
+  },
+  {
+    "q": "What does 'Thread.IsBackground' property control in C#?",
+    "o": [
+      "Whether the thread runs in the background or foreground",
+      "Whether the thread can be aborted",
+      "Whether the thread is a part of the thread pool",
+      "Whether the thread executes asynchronously"
+    ]
+  },
+  {
+    "q": "Which method is used to schedule a method for execution on a background thread in C#?",
+    "o": [
+      "ThreadPool.QueueUserWorkItem()",
+      "Task.Run()",
+      "Thread.Start()",
+      "Monitor.Enter()"
+    ]
+  },
+  {
+    "q": "What happens if you try to access a task's result before it completes in C#?",
+    "o": [
+      "It will block the calling thread until the task completes",
+      "It will throw an exception immediately",
+      "It will return null",
+      "It will ignore the task result"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to force a thread to yield control to other threads in C#?",
+    "o": [
+      "Thread.Yield()",
+      "Thread.Sleep()",
+      "Thread.Join()",
+      "Thread.Abort()"
+    ]
+  },
+  {
+    "q": "What is the result of calling 'Thread.CurrentThread.IsBackground' on a background thread in C#?",
+    "o": [
+      "True",
+      "False",
+      "Throws InvalidOperationException",
+      "Null"
+    ]
+  },
+  {
+    "q": "Which of the following will cause a thread to wait for a signal in C#?",
+    "o": [
+      "Monitor.Wait()",
+      "Thread.Join()",
+      "Thread.Sleep()",
+      "Thread.Abort()"
+    ]
+  },
+  {
+    "q": "In C#, which of the following methods is used to cancel a running task?",
+    "o": [
+      "CancellationToken.Cancel()",
+      "Task.Cancel()",
+      "Thread.Abort()",
+      "Thread.Interrupt()"
+    ]
+  },
+  {
+    "q": "What is the purpose of 'ThreadPool.SetMinThreads()' in C#?",
+    "o": [
+      "It sets the minimum number of threads that should be available in the thread pool",
+      "It limits the maximum number of threads in the thread pool",
+      "It sets the priority of threads in the thread pool",
+      "It stops the thread pool from running"
+    ]
+  },
+  {
+    "q": "Which of the following is used to execute a block of code asynchronously in C#?",
+    "o": [
+      "async/await",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.Start()",
+      "Task.Run()"
+    ]
+  },
+  {
+    "q": "What does the 'Thread.Abort()' method do in C#?",
+    "o": [
+      "It attempts to terminate a thread immediately",
+      "It suspends the thread until further notice",
+      "It throws an exception in the thread",
+      "It stops the thread from running in the thread pool"
+    ]
+  },
+  {
+    "q": "What is the role of 'Task.Delay()' in C#?",
+    "o": [
+      "It creates an asynchronous delay before continuing execution",
+      "It forces a thread to pause execution for a specified time",
+      "It stops the task permanently",
+      "It prevents tasks from being executed concurrently"
+    ]
+  },
+  {
+    "q": "Which of the following ensures that only one thread at a time can enter a critical section in C#?",
+    "o": [
+      "lock statement",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.Sleep()",
+      "Monitor.Enter()"
+    ]
+  },
+  {
+    "q": "What is the effect of using 'Thread.Join()' on the main thread in C#?",
+    "o": [
+      "The main thread will block until the thread calling Join() finishes",
+      "The main thread will continue running concurrently",
+      "The main thread will be terminated",
+      "The main thread will execute the method immediately"
+    ]
+  },
+  {
+    "q": "What happens when a thread in C# enters the 'ThreadPool' and calls 'ThreadPool.QueueUserWorkItem()'?",
+    "o": [
+      "The thread is placed in the thread pool and executes the provided work item",
+      "The thread is terminated immediately",
+      "The thread is suspended indefinitely",
+      "The thread is executed only once"
+    ]
+  },
+  {
+    "q": "Which of the following methods can be used to prevent a thread from running concurrently in C#?",
+    "o": [
+      "Thread.Join()",
+      "Thread.Sleep()",
+      "Thread.Abort()",
+      "Thread.Start()"
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used to define a thread-safe operation in C#?",
+    "o": [
+      "lock",
+      "ThreadSafe",
+      "volatile",
+      "synchronized"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to implement asynchronous programming in C#?",
+    "o": [
+      "Using async and await keywords",
+      "Using Thread.Start() method",
+      "Using ThreadPool.QueueUserWorkItem()",
+      "Using Thread.Sleep()"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'CancellationToken' class in C#?",
+    "o": [
+      "To cancel a running task or thread",
+      "To pause the execution of a task",
+      "To stop a task from being executed",
+      "To start a new thread"
+    ]
+  },
+  {
+    "q": "Which of the following classes in C# is responsible for executing tasks concurrently in a thread pool?",
+    "o": [
+      "ThreadPool",
+      "Task",
+      "Thread",
+      "Parallel"
+    ]
+  },
+  {
+    "q": "What is the effect of calling 'Task.Wait()' in C#?",
+    "o": [
+      "It blocks the calling thread until the task completes",
+      "It cancels the task",
+      "It terminates the task immediately",
+      "It pauses the calling thread indefinitely"
+    ]
+  },
+  {
+    "q": "Which method is used to start an asynchronous task in C#?",
+    "o": [
+      "Task.Run()",
+      "Task.Start()",
+      "Thread.Start()",
+      "ThreadPool.QueueUserWorkItem()"
+    ]
+  },
+  {
+    "q": "What does the 'ThreadState' enumeration represent in C#?",
+    "o": [
+      "The current state of a thread",
+      "The priority of a thread",
+      "The execution time of a thread",
+      "The CPU usage of a thread"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to mark a method as being able to run asynchronously in C#?",
+    "o": [
+      "async",
+      "parallel",
+      "async-await",
+      "task-async"
+    ]
+  },
+  {
+    "q": "What does the 'Thread.Interrupt()' method do in C#?",
+    "o": [
+      "It interrupts a thread that is blocked, causing it to throw a ThreadInterruptedException",
+      "It terminates a running thread immediately",
+      "It pauses the current thread for a specified duration",
+      "It restarts a thread from the beginning"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to execute multiple tasks concurrently in C#?",
+    "o": [
+      "Task.WhenAll()",
+      "Thread.Start()",
+      "Thread.Join()",
+      "ThreadPool.QueueUserWorkItem()"
+    ]
+  },
+  {
+    "q": "What happens when a thread tries to access a resource that is locked by another thread in C#?",
+    "o": [
+      "The thread will wait until the resource is unlocked",
+      "The thread will throw an exception and stop",
+      "The thread will bypass the lock and access the resource",
+      "The thread will terminate automatically"
+    ]
+  },
+  {
+    "q": "Which method can be used to create a non-blocking delay in C#?",
+    "o": [
+      "Task.Delay()",
+      "Thread.Sleep()",
+      "Thread.Join()",
+      "Thread.Wait()"
+    ]
+  },
+  {
+    "q": "What is the primary purpose of the 'Monitor.Exit()' method in C#?",
+    "o": [
+      "It releases the lock on an object acquired by 'Monitor.Enter()'",
+      "It pauses the execution of a thread",
+      "It stops a thread from executing further",
+      "It terminates the thread immediately"
+    ]
+  },
+  {
+    "q": "Which method is used to ensure that a thread completes before the program exits in C#?",
+    "o": [
+      "Thread.Join()",
+      "Thread.Abort()",
+      "Thread.Sleep()",
+      "Thread.Start()"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about 'async' methods in C#?",
+    "o": [
+      "They allow the method to be executed asynchronously, improving responsiveness",
+      "They block the thread until the operation completes",
+      "They must always return a Task or Task<T>",
+      "They can only be used with static methods"
+    ]
+  },
+  {
+    "q": "Which method is used to queue work items to be executed in parallel in C#?",
+    "o": [
+      "Parallel.For()",
+      "Thread.Start()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Task.Run()"
+    ]
+  },
+  {
+    "q": "What does the 'Thread.Sleep(0)' method do in C#?",
+    "o": [
+      "It yields the current thread's time slice to other threads",
+      "It pauses the thread for zero milliseconds",
+      "It terminates the thread immediately",
+      "It blocks the thread indefinitely"
+    ]
+  },
+  {
+    "q": "What is the effect of using 'Task.WhenAny()' in C#?",
+    "o": [
+      "It returns when any of the provided tasks completes",
+      "It waits until all provided tasks complete",
+      "It cancels all provided tasks",
+      "It starts all tasks in sequence"
+    ]
+  },
+  {
+    "q": "What does the 'Thread.CurrentThread' property return in C#?",
+    "o": [
+      "It returns the current executing thread",
+      "It returns the main thread",
+      "It returns the thread pool thread",
+      "It returns a new thread"
+    ]
+  },
+  {
+    "q": "Which of the following is true about 'Task.WhenAll()' in C#?",
+    "o": [
+      "It waits for all tasks to complete before proceeding",
+      "It runs the tasks concurrently without waiting",
+      "It cancels the tasks when one of them fails",
+      "It executes the tasks sequentially"
+    ]
+  },
+  {
+    "q": "What happens if a thread in C# is interrupted using 'Thread.Interrupt()'?",
+    "o": [
+      "It throws a ThreadInterruptedException if the thread is blocked",
+      "It terminates the thread immediately",
+      "It causes the thread to sleep indefinitely",
+      "It restarts the thread execution"
+    ]
+  },
+  {
+    "q": "Which method is used to execute a method asynchronously and return a Task in C#?",
+    "o": [
+      "Task.Run()",
+      "Thread.Start()",
+      "Task.Execute()",
+      "ThreadPool.QueueUserWorkItem()"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to execute code in parallel in C#?",
+    "o": [
+      "Parallel.For()",
+      "Thread.Start()",
+      "Task.Run()",
+      "ThreadPool.QueueUserWorkItem()"
+    ]
+  },
+  {
+    "q": "What does the 'ThreadPool.SetMaxThreads()' method do in C#?",
+    "o": [
+      "It sets the maximum number of threads in the thread pool",
+      "It limits the number of background threads",
+      "It starts the maximum number of threads",
+      "It waits for all threads to finish before starting new ones"
+    ]
+  },
+  {
+    "q": "In which scenario would you use 'Thread.Sleep()' in C#?",
+    "o": [
+      "When you want to pause the current thread for a specified time",
+      "When you want to synchronize threads",
+      "When you want to terminate a thread",
+      "When you want to execute multiple tasks in parallel"
+    ]
+  },
+  {
+    "q": "What does the 'ThreadPool.QueueUserWorkItem()' method do in C#?",
+    "o": [
+      "It queues a work item for execution by a thread pool thread",
+      "It starts a new thread for the work item",
+      "It executes the work item synchronously",
+      "It pauses the current thread until the work item completes"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'CancellationTokenSource' class in C#?",
+    "o": [
+      "It provides a mechanism for cancelling a task or operation",
+      "It creates a new thread for the task",
+      "It pauses the task indefinitely",
+      "It synchronizes access to shared resources"
+    ]
+  },
+  {
+    "q": "What is the function of 'Monitor.Enter()' in C#?",
+    "o": [
+      "It acquires a lock on an object to ensure thread safety",
+      "It starts a new thread for a work item",
+      "It pauses the thread until further notice",
+      "It releases a previously acquired lock"
+    ]
+  },
+  {
+    "q": "Which of the following is used to check whether a thread is running in the background in C#?",
+    "o": [
+      "Thread.IsBackground",
+      "Thread.IsAlive",
+      "Thread.CurrentThread",
+      "ThreadState"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to suspend a thread temporarily in C#?",
+    "o": [
+      "Thread.Sleep()",
+      "Thread.Join()",
+      "Thread.Suspend()",
+      "Thread.Pause()"
+    ]
+  },
+  {
+    "q": "What does the 'Thread.Priority' property control in C#?",
+    "o": [
+      "It sets the priority of the thread relative to other threads",
+      "It determines how long the thread will run",
+      "It defines the CPU core the thread will run on",
+      "It changes the thread’s execution speed"
+    ]
+  },
+  {
+    "q": "What does 'async' modifier do in C#?",
+    "o": [
+      "It indicates that the method is asynchronous and will return a Task",
+      "It makes the method execute synchronously",
+      "It marks the method to execute after a delay",
+      "It blocks the thread until the method completes"
+    ]
+  },
+  {
+    "q": "Which of the following is true about 'Thread.Sleep()' in C#?",
+    "o": [
+      "It pauses the execution of the current thread for a specified time",
+      "It suspends the entire program until a condition is met",
+      "It terminates the thread immediately",
+      "It waits for all threads to finish before proceeding"
+    ]
+  },
+  {
+    "q": "What is the primary function of the 'ThreadPool' class in C#?",
+    "o": [
+      "To manage a pool of threads that can be used for executing work items",
+      "To create new threads for parallel execution",
+      "To execute a single task in a background thread",
+      "To manage thread priorities"
+    ]
+  },
+  {
+    "q": "Which of the following methods can be used to wait for a thread to finish executing in C#?",
+    "o": [
+      "Thread.Join()",
+      "Thread.Wait()",
+      "Thread.Pause()",
+      "Thread.Sleep()"
+    ]
+  },
+  {
+    "q": "Which of the following will cause a thread to be aborted in C#?",
+    "o": [
+      "Thread.Abort()",
+      "Thread.Pause()",
+      "Thread.Join()",
+      "Thread.Sleep()"
+    ]
+  },
+  {
+    "q": "Which method allows for handling multiple tasks concurrently and asynchronously in C#?",
+    "o": [
+      "Task.WhenAll()",
+      "Task.Run()",
+      "Task.Start()",
+      "ThreadPool.QueueUserWorkItem()"
+    ]
+  },
+  {
+    "q": "What is the purpose of 'Monitor.Enter()' in C#?",
+    "o": [
+      "It acquires a lock on an object to ensure thread safety",
+      "It releases a lock on an object",
+      "It pauses the thread execution",
+      "It starts a new thread"
+    ]
+  },
+  {
+    "q": "What is the primary benefit of using the 'async' and 'await' keywords in C#?",
+    "o": [
+      "They allow asynchronous execution without blocking the calling thread",
+      "They make the code synchronous",
+      "They terminate threads immediately after completion",
+      "They reduce the number of threads in use"
+    ]
+  },
+  {
+    "q": "Which method is used to signal that a task should be canceled in C#?",
+    "o": [
+      "CancellationTokenSource.Cancel()",
+      "Task.Cancellation()",
+      "Thread.Abort()",
+      "Thread.Interrupt()"
+    ]
+  },
+  {
+    "q": "Which of the following is true about a 'Thread' in C#?",
+    "o": [
+      "A thread is an independent unit of execution within a program",
+      "Threads can only be used in the main program",
+      "Threads are created by the compiler during compilation",
+      "Threads cannot execute in parallel"
+    ]
+  },
+  {
+    "q": "Which class is used to represent a running task in C#?",
+    "o": [
+      "Task",
+      "ThreadPool",
+      "Monitor",
+      "Thread"
+    ]
+  },
+  {
+    "q": "Which method is used to add a task to the thread pool in C#?",
+    "o": [
+      "ThreadPool.QueueUserWorkItem()",
+      "Task.Run()",
+      "Thread.Start()",
+      "Task.Wait()"
+    ]
+  },
+  {
+    "q": "Which of the following represents the correct way to declare a background thread in C#?",
+    "o": [
+      "Thread.IsBackground = true;",
+      "Thread.Background = true;",
+      "Thread.Start()",
+      "Thread.IsMainThread = false;"
+    ]
+  },
+  {
+    "q": "Which of the following is used to wait for a task to complete in C#?",
+    "o": [
+      "Task.Wait()",
+      "Thread.Sleep()",
+      "Thread.Join()",
+      "Task.Start()"
+    ]
+  },
+  {
+    "q": "What does the 'ThreadPool.SetMinThreads()' method do in C#?",
+    "o": [
+      "It sets the minimum number of threads in the thread pool",
+      "It increases the thread pool size dynamically",
+      "It limits the number of concurrent tasks",
+      "It blocks the threads from executing further"
+    ]
+  },
+  {
+    "q": "Which method can be used to execute code in parallel across multiple threads in C#?",
+    "o": [
+      "Parallel.For()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.Start()",
+      "Task.Run()"
+    ]
+  },
+  {
+    "q": "What is the primary purpose of the 'Monitor.Enter()' method in C#?",
+    "o": [
+      "To acquire a lock on an object for thread synchronization",
+      "To start a new thread for a task",
+      "To stop a thread from executing",
+      "To release a previously acquired lock"
+    ]
+  },
+  {
+    "q": "Which method is used to execute a method asynchronously in C#?",
+    "o": [
+      "Task.Run()",
+      "Thread.Start()",
+      "Task.Execute()",
+      "ThreadPool.QueueUserWorkItem()"
+    ]
+  },
+  {
+    "q": "Which of the following is used to safely increment a shared variable in multithreaded C# code?",
+    "o": [
+      "Interlocked.Increment()",
+      "Thread.Increment()",
+      "ThreadPool.Increment()",
+      "Monitor.Increment()"
+    ]
+  },
+  {
+    "q": "Which of the following is used to handle exceptions thrown by an asynchronous task in C#?",
+    "o": [
+      "Try-catch blocks within the task",
+      "Task.Fail() method",
+      "Thread.Abort() method",
+      "Thread.Interrupt() method"
+    ]
+  },
+  {
+    "q": "What does the 'Thread.Join()' method do in C#?",
+    "o": [
+      "It blocks the calling thread until the target thread finishes execution",
+      "It interrupts the target thread",
+      "It starts a new thread",
+      "It pauses the calling thread for a specific time"
+    ]
+  },
+  {
+    "q": "Which class in C# is used to manage parallel tasks and ensures their completion?",
+    "o": [
+      "Task",
+      "ThreadPool",
+      "Thread",
+      "Monitor"
+    ]
+  },
+  {
+    "q": "What is the role of the 'ThreadPool.SetMinThreads()' method in C#?",
+    "o": [
+      "It sets the minimum number of threads the thread pool should have",
+      "It sets the maximum number of threads the thread pool should use",
+      "It blocks all threads from executing",
+      "It pauses threads in the pool"
+    ]
+  },
+  {
+    "q": "Which method is used to run code in parallel across multiple threads in C#?",
+    "o": [
+      "Parallel.For()",
+      "Thread.Start()",
+      "Task.Run()",
+      "ThreadPool.QueueUserWorkItem()"
+    ]
+  },
+  {
+    "q": "Which of the following is a method to cancel an ongoing task in C#?",
+    "o": [
+      "CancellationTokenSource.Cancel()",
+      "Task.Abort()",
+      "Thread.Abort()",
+      "Thread.Interrupt()"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'lock' keyword in C#?",
+    "o": [
+      "It ensures only one thread can execute a block of code at a time",
+      "It terminates a thread immediately",
+      "It starts a new thread",
+      "It pauses the current thread"
+    ]
+  },
+  {
+    "q": "Which method in C# is used to wait for a thread to finish executing before continuing?",
+    "o": [
+      "Thread.Join()",
+      "Thread.Sleep()",
+      "Thread.Pause()",
+      "Thread.Start()"
+    ]
+  },
+  {
+    "q": "Which of the following is true about 'Task.WhenAll()' in C#?",
+    "o": [
+      "It waits for all the provided tasks to complete before proceeding",
+      "It waits for any one of the provided tasks to complete",
+      "It cancels all the tasks if one fails",
+      "It runs the tasks sequentially"
+    ]
+  },
+  {
+    "q": "Which of the following methods can be used to execute a task asynchronously in C#?",
+    "o": [
+      "Task.Run()",
+      "Thread.Start()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.Sleep()"
+    ]
+  },
+  {
+    "q": "What does the 'Thread.Abort()' method do in C#?",
+    "o": [
+      "It attempts to terminate the thread immediately",
+      "It pauses the thread",
+      "It starts a new thread",
+      "It checks if the thread is alive"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'Monitor.Enter()' and 'Monitor.Exit()' methods in C#?",
+    "o": [
+      "They are used to acquire and release a lock on an object for thread synchronization",
+      "They start and stop threads",
+      "They cancel tasks",
+      "They pause a thread for a specified duration"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to create a thread in C#?",
+    "o": [
+      "Thread.Start()",
+      "Task.Run()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.Sleep()"
+    ]
+  },
+  {
+    "q": "What does the 'Thread.IsAlive' property indicate in C#?",
+    "o": [
+      "It indicates whether the thread is currently executing",
+      "It indicates whether the thread is in the ready queue",
+      "It terminates the thread if true",
+      "It starts the thread execution"
+    ]
+  },
+  {
+    "q": "Which of the following is used to run multiple tasks in parallel in C#?",
+    "o": [
+      "Parallel.For()",
+      "Thread.Start()",
+      "Task.Run()",
+      "ThreadPool.QueueUserWorkItem()"
+    ]
+  },
+  {
+    "q": "Which method is used to synchronize access to a shared resource between threads in C#?",
+    "o": [
+      "lock statement",
+      "Thread.Sleep()",
+      "Thread.Join()",
+      "Thread.Start()"
+    ]
+  },
+  {
+    "q": "What is the effect of using the 'await' keyword in an async method in C#?",
+    "o": [
+      "It pauses the execution of the method until the awaited task completes",
+      "It cancels the task",
+      "It starts the task synchronously",
+      "It blocks the calling thread"
+    ]
+  },
+  {
+    "q": "Which method in C# can be used to cancel a task?",
+    "o": [
+      "CancellationTokenSource.Cancel()",
+      "Task.Stop()",
+      "Thread.Abort()",
+      "Task.Complete()"
+    ]
+  },
+  {
+    "q": "Which of the following ensures that multiple threads can safely access shared resources in C#?",
+    "o": [
+      "Locking",
+      "Thread.Abort()",
+      "Thread.Sleep()",
+      "Thread.Start()"
+    ]
+  },
+  {
+    "q": "What happens when 'Thread.Join()' is called in C#?",
+    "o": [
+      "The calling thread waits for the specified thread to finish execution",
+      "The thread is started",
+      "The thread is paused",
+      "The thread is canceled"
+    ]
+  },
+  {
+    "q": "Which of the following is true about 'Task.WhenAny()' in C#?",
+    "o": [
+      "It completes when any of the provided tasks completes",
+      "It waits for all tasks to complete before proceeding",
+      "It executes tasks sequentially",
+      "It cancels the tasks if one of them fails"
+    ]
+  },
+  {
+    "q": "Which method can be used to queue a work item to be executed by a thread pool thread in C#?",
+    "o": [
+      "ThreadPool.QueueUserWorkItem()",
+      "Task.Run()",
+      "Thread.Start()",
+      "Thread.Sleep()"
+    ]
+  },
+  {
+    "q": "Which method in C# is used to get the current thread?",
+    "o": [
+      "Thread.CurrentThread",
+      "Thread.GetCurrent()",
+      "Thread.Current()",
+      "Thread.GetThread()"
+    ]
+  },
+  {
+    "q": "Which of the following is a method used to pause the execution of a thread in C#?",
+    "o": [
+      "Thread.Sleep()",
+      "Thread.Wait()",
+      "Thread.Pause()",
+      "Thread.Suspend()"
+    ]
+  },
+  {
+    "q": "What does the 'ThreadPool.SetMaxThreads()' method do in C#?",
+    "o": [
+      "It sets the maximum number of threads that the thread pool can use",
+      "It sets the maximum number of threads that can run concurrently",
+      "It starts a new thread",
+      "It suspends the thread pool threads"
+    ]
+  },
+  {
+    "q": "Which of the following allows running a method asynchronously in C# without creating a new thread?",
+    "o": [
+      "Task.Run()",
+      "Thread.Start()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.Sleep()"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'CancellationToken' in C#?",
+    "o": [
+      "It allows a task to be cancelled from outside the task",
+      "It ensures that a thread is always alive",
+      "It pauses a thread until further notice",
+      "It resumes a paused thread"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to mark the beginning of a lock in C#?",
+    "o": [
+      "lock statement",
+      "Monitor.Enter()",
+      "Thread.Start()",
+      "ThreadPool.QueueUserWorkItem()"
+    ]
+  },
+  {
+    "q": "Which of the following is used to execute multiple asynchronous tasks concurrently in C#?",
+    "o": [
+      "Task.WhenAll()",
+      "Thread.Start()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.Sleep()"
+    ]
+  },
+  {
+    "q": "What does the 'Thread.Interrupt()' method do in C#?",
+    "o": [
+      "It interrupts a thread that is in a sleeping or waiting state",
+      "It terminates the thread immediately",
+      "It pauses the thread for a specific time",
+      "It starts a new thread"
+    ]
+  },
+  {
+    "q": "Which of the following is true about 'Thread.IsBackground' in C#?",
+    "o": [
+      "It determines whether the thread runs in the background and terminates when the main thread exits",
+      "It checks if the thread has finished execution",
+      "It checks the priority of the thread",
+      "It is used to lock the thread"
+    ]
+  },
+  {
+    "q": "Which method in C# is used to wait for all tasks in an array to complete?",
+    "o": [
+      "Task.WhenAll()",
+      "Task.WaitAll()",
+      "Task.Start()",
+      "Thread.Join()"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'async' keyword in C#?",
+    "o": [
+      "It marks a method as asynchronous and enables the use of 'await'",
+      "It indicates that the method runs synchronously",
+      "It automatically runs the method in parallel",
+      "It locks the thread during execution"
+    ]
+  },
+  {
+    "q": "Which method is used to ensure thread-safe execution of a block of code in C#?",
+    "o": [
+      "lock statement",
+      "Thread.Abort()",
+      "Thread.Sleep()",
+      "Thread.Join()"
+    ]
+  },
+  {
+    "q": "Which of the following is used to handle exceptions in an asynchronous method in C#?",
+    "o": [
+      "Try-catch blocks within the async method",
+      "Task.Fail()",
+      "Thread.Abort()",
+      "Thread.Interrupt()"
+    ]
+  },
+  {
+    "q": "Which method in C# is used to execute code asynchronously and return a Task object?",
+    "o": [
+      "Task.Run()",
+      "Thread.Start()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.Sleep()"
+    ]
+  },
+  {
+    "q": "Which of the following ensures thread synchronization when multiple threads need to access a shared resource in C#?",
+    "o": [
+      "Monitor.Enter() and Monitor.Exit()",
+      "Thread.Abort()",
+      "Thread.Start()",
+      "Task.WaitAll()"
+    ]
+  },
+  {
+    "q": "Which class is used in C# for parallel execution of a loop or tasks?",
+    "o": [
+      "Parallel",
+      "Thread",
+      "Task",
+      "ThreadPool"
+    ]
+  },
+  {
+    "q": "What does the 'CancellationTokenSource.Token' property represent in C#?",
+    "o": [
+      "It represents the cancellation token used to cancel a task",
+      "It starts the task asynchronously",
+      "It indicates the priority of the task",
+      "It ensures the thread continues execution"
+    ]
+  },
+  {
+    "q": "What is the primary purpose of using 'ThreadPool' in C#?",
+    "o": [
+      "It manages a pool of worker threads to perform tasks efficiently",
+      "It ensures only one thread runs at a time",
+      "It suspends threads for a specified time",
+      "It terminates threads after execution"
+    ]
+  },
+  {
+    "q": "Which method in C# can be used to create and run a background task without blocking the main thread?",
+    "o": [
+      "Task.Run()",
+      "Thread.Start()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.Sleep()"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the 'await' keyword in C#?",
+    "o": [
+      "It suspends the execution of the method until the awaited task completes",
+      "It terminates the task immediately",
+      "It pauses the main thread",
+      "It cancels the running task"
+    ]
+  },
+  {
+    "q": "Which of the following ensures that only one thread can access a block of code at a time in C#?",
+    "o": [
+      "lock statement",
+      "Thread.Sleep()",
+      "Thread.Join()",
+      "Task.WaitAll()"
+    ]
+  },
+  {
+    "q": "Which of the following classes in C# can be used to manage the execution of asynchronous tasks?",
+    "o": [
+      "Task",
+      "ThreadPool",
+      "Thread",
+      "ThreadQueue"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'Task.WhenAny()' method in C#?",
+    "o": [
+      "It completes when any of the provided tasks completes",
+      "It completes when all provided tasks complete",
+      "It cancels the tasks if one fails",
+      "It runs tasks sequentially"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to wait for a specific thread to finish in C#?",
+    "o": [
+      "Thread.Join()",
+      "Thread.Sleep()",
+      "Thread.Start()",
+      "ThreadPool.QueueUserWorkItem()"
+    ]
+  },
+  {
+    "q": "Which of the following is a thread-safe method in C# for incrementing a shared variable?",
+    "o": [
+      "Interlocked.Increment()",
+      "Thread.Increment()",
+      "Monitor.Increment()",
+      "Task.Increment()"
+    ]
+  },
+  {
+    "q": "Which of the following methods can be used to cancel a task in C#?",
+    "o": [
+      "CancellationTokenSource.Cancel()",
+      "Task.Abort()",
+      "Thread.Interrupt()",
+      "Thread.Abort()"
+    ]
+  },
+  {
+    "q": "Which of the following is used to execute a method asynchronously in C# without blocking the calling thread?",
+    "o": [
+      "Task.Run()",
+      "Thread.Start()",
+      "Thread.Sleep()",
+      "ThreadPool.QueueUserWorkItem()"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to check if a thread is currently running in C#?",
+    "o": [
+      "Thread.IsAlive",
+      "Thread.IsRunning",
+      "Thread.IsExecuting",
+      "Thread.Status"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a method that can be executed asynchronously in C#?",
+    "o": [
+      "async",
+      "await",
+      "asynchronous",
+      "parallel"
+    ]
+  },
+  {
+    "q": "Which of the following methods allows you to wait for a task to complete in C#?",
+    "o": [
+      "Task.Wait()",
+      "Task.Complete()",
+      "Thread.Sleep()",
+      "Thread.Join()"
+    ]
+  },
+  {
+    "q": "What does the 'Thread.Suspend()' method do in C#?",
+    "o": [
+      "It temporarily suspends the execution of the thread",
+      "It terminates the thread immediately",
+      "It pauses the thread indefinitely",
+      "It starts the thread execution"
+    ]
+  },
+  {
+    "q": "Which of the following is used to improve the performance of CPU-bound tasks by executing them concurrently in C#?",
+    "o": [
+      "Parallel.For()",
+      "Task.Run()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.Start()"
+    ]
+  },
+  {
+    "q": "What is the default number of threads in the thread pool in C#?",
+    "o": [
+      "The number of threads varies depending on the system and workload",
+      "1 thread",
+      "10 threads",
+      "20 threads"
+    ]
+  },
+  {
+    "q": "Which of the following is used to block the current thread in C# until a specified time interval has passed?",
+    "o": [
+      "Thread.Sleep()",
+      "Thread.Pause()",
+      "Thread.Join()",
+      "Thread.Delay()"
+    ]
+  },
+  {
+    "q": "Which method in C# is used to create a new thread and execute a method on that thread?",
+    "o": [
+      "Thread.Start()",
+      "Task.Run()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.Execute()"
+    ]
+  },
+  {
+    "q": "What does the 'Task.Delay()' method do in C#?",
+    "o": [
+      "It creates a delay before the task continues its execution asynchronously",
+      "It pauses the thread indefinitely",
+      "It terminates the task",
+      "It starts a new thread"
+    ]
+  },
+  {
+    "q": "Which of the following methods can be used to schedule a task to run on a background thread in C#?",
+    "o": [
+      "Task.Run()",
+      "Thread.Start()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.Sleep()"
+    ]
+  },
+  {
+    "q": "Which of the following ensures that only one thread can execute a particular code block at a time in C#?",
+    "o": [
+      "lock statement",
+      "Thread.Start()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Task.Run()"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the 'async' keyword in C#?",
+    "o": [
+      "It marks a method as asynchronous, allowing the use of 'await' inside the method",
+      "It makes a method execute synchronously",
+      "It pauses the method execution for a specified time",
+      "It executes the method in parallel"
+    ]
+  },
+  {
+    "q": "What is the primary use of 'Monitor.Enter()' in C#?",
+    "o": [
+      "It acquires a lock on a given object to ensure thread safety",
+      "It pauses the current thread",
+      "It starts a new thread",
+      "It schedules tasks for execution"
+    ]
+  },
+  {
+    "q": "Which method in C# can be used to wait for all tasks in an array to complete?",
+    "o": [
+      "Task.WhenAll()",
+      "Task.WaitAll()",
+      "Task.Start()",
+      "Thread.Join()"
+    ]
+  },
+  {
+    "q": "Which method is used to cancel a task before it completes in C#?",
+    "o": [
+      "CancellationTokenSource.Cancel()",
+      "Task.Abort()",
+      "Thread.Interrupt()",
+      "Thread.Abort()"
+    ]
+  },
+  {
+    "q": "Which class in C# provides a mechanism for scheduling and managing threads more efficiently?",
+    "o": [
+      "ThreadPool",
+      "Task",
+      "Thread",
+      "ThreadQueue"
+    ]
+  },
+  {
+    "q": "What is the effect of calling 'Task.Wait()' on a task in C#?",
+    "o": [
+      "It blocks the calling thread until the task completes",
+      "It cancels the task",
+      "It starts the task execution",
+      "It checks if the task is running"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to create a thread-safe increment of a variable in C#?",
+    "o": [
+      "Interlocked.Increment()",
+      "Thread.Increment()",
+      "Monitor.Increment()",
+      "Task.Increment()"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'Thread.Join()' method in C#?",
+    "o": [
+      "It makes the calling thread wait until the specified thread completes",
+      "It starts the thread execution",
+      "It suspends the thread for a specified time",
+      "It cancels the thread execution"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the 'ThreadPool' in C#?",
+    "o": [
+      "It provides a pool of threads that can be reused for executing tasks asynchronously",
+      "It creates new threads every time a task is executed",
+      "It guarantees that tasks are executed in a sequential manner",
+      "It allows only a single task to be executed at a time"
+    ]
+  },
+  {
+    "q": "Which of the following methods can be used to execute a task asynchronously and continue execution after the task finishes in C#?",
+    "o": [
+      "Task.ContinueWith()",
+      "Thread.Start()",
+      "Thread.Sleep()",
+      "Task.Wait()"
+    ]
+  },
+  {
+    "q": "What does the 'Task.WhenAll()' method do in C#?",
+    "o": [
+      "It waits for all the provided tasks to complete before continuing",
+      "It starts all tasks concurrently",
+      "It cancels the tasks if one fails",
+      "It waits for the first task to complete and ignores the rest"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about 'Thread.IsBackground' in C#?",
+    "o": [
+      "It determines whether the thread runs in the background and is terminated when the main thread exits",
+      "It checks if the thread has finished executing",
+      "It changes the thread's priority",
+      "It suspends the thread"
+    ]
+  },
+  {
+    "q": "What happens when you call 'Thread.Abort()' in C#?",
+    "o": [
+      "It attempts to terminate the specified thread",
+      "It pauses the thread until further notice",
+      "It starts a new thread",
+      "It locks the thread"
+    ]
+  },
+  {
+    "q": "Which class is used in C# to handle the execution of a parallel loop?",
+    "o": [
+      "Parallel",
+      "Task",
+      "Thread",
+      "ThreadPool"
+    ]
+  },
+  {
+    "q": "What does the 'Task.WhenAny()' method do in C#?",
+    "o": [
+      "It completes when any of the provided tasks completes",
+      "It waits for all the provided tasks to complete",
+      "It cancels all tasks if one fails",
+      "It runs the tasks sequentially"
+    ]
+  },
+  {
+    "q": "What is the result of calling 'Thread.Suspend()' in C#?",
+    "o": [
+      "It suspends the execution of the thread until it is resumed",
+      "It terminates the thread immediately",
+      "It pauses the thread for a specified amount of time",
+      "It waits for another thread to complete before starting"
+    ]
+  },
+  {
+    "q": "Which of the following methods can be used to schedule a background task to be executed on a thread pool thread in C#?",
+    "o": [
+      "ThreadPool.QueueUserWorkItem()",
+      "Task.Run()",
+      "Thread.Start()",
+      "Thread.Sleep()"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'CancellationToken' in C#?",
+    "o": [
+      "It is used to propagate a cancellation request to a task",
+      "It marks a thread as finished",
+      "It starts a task asynchronously",
+      "It pauses the task execution"
+    ]
+  },
+  {
+    "q": "What is the purpose of using 'ThreadPool.QueueUserWorkItem()' in C#?",
+    "o": [
+      "It schedules a method for execution on a thread pool thread",
+      "It creates a new thread for each task",
+      "It pauses the thread for a specified time",
+      "It ensures tasks run sequentially"
+    ]
+  },
+  {
+    "q": "Which of the following is the main benefit of using 'async' and 'await' in C#?",
+    "o": [
+      "It allows asynchronous operations without blocking the calling thread",
+      "It runs methods in parallel on different threads",
+      "It makes methods execute synchronously",
+      "It suspends the execution of the method"
+    ]
+  },
+  {
+    "q": "Which class in C# provides a way to handle tasks that might fail, using a continuations model?",
+    "o": [
+      "Task",
+      "Thread",
+      "ThreadPool",
+      "ThreadQueue"
+    ]
+  },
+  {
+    "q": "Which method is used in C# to safely increment a value across multiple threads?",
+    "o": [
+      "Interlocked.Increment()",
+      "Thread.Increment()",
+      "Task.Increment()",
+      "Monitor.Increment()"
+    ]
+  },
+  {
+    "q": "Which of the following is true about 'Task.Delay()' in C#?",
+    "o": [
+      "It asynchronously delays the execution of a task for a specified time",
+      "It blocks the thread for a specified time",
+      "It runs the task sequentially",
+      "It cancels the task"
+    ]
+  },
+  {
+    "q": "Which of the following is used to ensure that a task continues executing after completion in C#?",
+    "o": [
+      "Task.ContinueWith()",
+      "Task.Wait()",
+      "Thread.Join()",
+      "Thread.Sleep()"
+    ]
+  },
+  {
+    "q": "Which of the following methods can be used to make a thread wait until another thread completes in C#?",
+    "o": [
+      "Thread.Join()",
+      "Thread.Sleep()",
+      "Thread.Start()",
+      "Thread.Wait()"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to check if a task has completed in C#?",
+    "o": [
+      "Task.IsCompleted",
+      "Task.IsRunning",
+      "Thread.IsCompleted",
+      "Thread.IsAlive"
+    ]
+  },
+  {
+    "q": "What does the 'Thread.Interrupt()' method do in C#?",
+    "o": [
+      "It interrupts a thread that is in a waiting or sleeping state",
+      "It starts the thread execution",
+      "It pauses the thread for a specified time",
+      "It terminates the thread"
+    ]
+  },
+  {
+    "q": "Which of the following classes in C# is designed to handle parallel execution of loops and tasks?",
+    "o": [
+      "Parallel",
+      "ThreadPool",
+      "Thread",
+      "Task"
+    ]
+  },
+  {
+    "q": "What is the primary purpose of using 'Thread.Join()' in C#?",
+    "o": [
+      "It blocks the calling thread until the specified thread finishes execution",
+      "It pauses the thread for a specified time",
+      "It cancels the execution of a thread",
+      "It starts a new thread"
+    ]
+  },
+  {
+    "q": "Which method is used to run multiple tasks concurrently in C#?",
+    "o": [
+      "Task.WhenAll()",
+      "Thread.Start()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.Join()"
+    ]
+  },
+  {
+    "q": "What does the 'async' keyword indicate in C#?",
+    "o": [
+      "The method can perform asynchronous operations and may use 'await' inside",
+      "The method runs synchronously in a separate thread",
+      "The method is executed on the UI thread",
+      "The method will never return a value"
+    ]
+  },
+  {
+    "q": "Which of the following is true about the 'await' keyword in C#?",
+    "o": [
+      "It pauses the method execution until the awaited task completes",
+      "It terminates the task immediately",
+      "It runs the task in parallel",
+      "It checks if the task is completed"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to execute a method asynchronously in C#?",
+    "o": [
+      "Task.Run()",
+      "Thread.Start()",
+      "Thread.Sleep()",
+      "ThreadPool.QueueUserWorkItem()"
+    ]
+  },
+  {
+    "q": "What does the 'Thread.Sleep()' method do in C#?",
+    "o": [
+      "It pauses the thread for a specified time",
+      "It blocks the calling thread until another thread finishes",
+      "It creates a new thread",
+      "It starts the thread execution"
+    ]
+  },
+  {
+    "q": "What does the 'Task.WhenAny()' method do in C#?",
+    "o": [
+      "It completes as soon as any of the provided tasks completes",
+      "It waits for all the tasks to complete",
+      "It cancels all tasks if one fails",
+      "It runs the tasks sequentially"
+    ]
+  },
+  {
+    "q": "Which of the following classes is used for thread synchronization in C#?",
+    "o": [
+      "Monitor",
+      "Task",
+      "ThreadPool",
+      "Thread"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to create a background thread in C#?",
+    "o": [
+      "thread.IsBackground = true; thread.Start();",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.Sleep()",
+      "Task.Run()"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'Thread.IsAlive' property in C#?",
+    "o": [
+      "It checks if the thread is currently running",
+      "It starts the thread",
+      "It terminates the thread",
+      "It pauses the thread"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to execute a task asynchronously and return a result in C#?",
+    "o": [
+      "Task<T>.Run()",
+      "Thread.Start()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Task.Delay()"
+    ]
+  },
+  {
+    "q": "What happens when a thread calls 'Thread.Abort()' in C#?",
+    "o": [
+      "It attempts to terminate the thread immediately",
+      "It pauses the thread for a specified time",
+      "It blocks the thread until another thread completes",
+      "It throws an exception and continues execution"
+    ]
+  },
+  {
+    "q": "Which of the following methods in C# can be used to prevent multiple threads from accessing a shared resource simultaneously?",
+    "o": [
+      "lock statement",
+      "Thread.Join()",
+      "Task.ContinueWith()",
+      "Thread.Sleep()"
+    ]
+  },
+  {
+    "q": "What is the role of the 'CancellationTokenSource' class in C#?",
+    "o": [
+      "It is used to request the cancellation of a task",
+      "It starts a task asynchronously",
+      "It monitors the execution of a task",
+      "It schedules tasks for execution"
+    ]
+  },
+  {
+    "q": "Which method is used in C# to create a parallel loop execution for CPU-bound tasks?",
+    "o": [
+      "Parallel.For()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.Start()",
+      "Task.Run()"
+    ]
+  },
+  {
+    "q": "What does the 'Thread.IsBackground' property determine in C#?",
+    "o": [
+      "Whether the thread runs in the background and terminates when the main thread ends",
+      "Whether the thread runs in parallel with other threads",
+      "Whether the thread can be paused",
+      "Whether the thread is an I/O-bound thread"
+    ]
+  },
+  {
+    "q": "What is the purpose of using 'Task.WhenAny()' in C#?",
+    "o": [
+      "It waits for the first task to complete and returns the first task that finishes",
+      "It waits for all the tasks to complete",
+      "It cancels the first task if another task fails",
+      "It runs the tasks sequentially"
+    ]
+  },
+  {
+    "q": "Which of the following properties is used to check if a task has been completed in C#?",
+    "o": [
+      "Task.IsCompleted",
+      "Task.IsRunning",
+      "Thread.IsAlive",
+      "Thread.IsCompleted"
+    ]
+  },
+  {
+    "q": "Which of the following classes is responsible for running tasks in C# in a managed thread pool?",
+    "o": [
+      "ThreadPool",
+      "Thread",
+      "Task",
+      "ThreadQueue"
+    ]
+  },
+  {
+    "q": "What does the 'Monitor.Enter()' method do in C#?",
+    "o": [
+      "It acquires a lock on a specified object to ensure thread safety",
+      "It terminates the thread",
+      "It pauses the thread for a specified time",
+      "It starts the thread execution"
+    ]
+  },
+  {
+    "q": "Which of the following is used to ensure thread synchronization when multiple threads are accessing a shared resource in C#?",
+    "o": [
+      "lock keyword",
+      "Thread.Sleep()",
+      "Thread.Start()",
+      "Monitor.Exit()"
+    ]
+  },
+  {
+    "q": "What does the 'ThreadPool.QueueUserWorkItem()' method do in C#?",
+    "o": [
+      "It schedules a method for execution on a thread pool thread",
+      "It starts a new thread for each task",
+      "It pauses the current thread",
+      "It locks the current thread"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'async' keyword in C#?",
+    "o": [
+      "It indicates that a method can perform asynchronous operations",
+      "It pauses a method execution until a result is returned",
+      "It makes a method run synchronously",
+      "It runs the method on a separate thread"
+    ]
+  },
+  {
+    "q": "Which of the following methods can be used to execute a parallel loop in C#?",
+    "o": [
+      "Parallel.For()",
+      "Thread.Join()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.Start()"
+    ]
+  },
+  {
+    "q": "Which of the following methods in C# is used to stop the execution of a task?",
+    "o": [
+      "CancellationTokenSource.Cancel()",
+      "Task.Wait()",
+      "Thread.Abort()",
+      "Thread.Stop()"
+    ]
+  },
+  {
+    "q": "Which of the following is used to make sure that a task completes before continuing execution in C#?",
+    "o": [
+      "Task.Wait()",
+      "Task.Delay()",
+      "Thread.Start()",
+      "Thread.Join()"
+    ]
+  },
+  {
+    "q": "What does the 'Thread.Sleep()' method do in C#?",
+    "o": [
+      "It pauses the current thread for a specified duration",
+      "It terminates the thread",
+      "It starts a new thread",
+      "It locks the thread"
+    ]
+  },
+  {
+    "q": "Which of the following is used to check if a thread has completed its execution in C#?",
+    "o": [
+      "Thread.IsAlive",
+      "Thread.IsCompleted",
+      "Thread.IsFinished",
+      "Thread.IsRunning"
+    ]
+  },
+  {
+    "q": "Which of the following methods can be used to execute a task asynchronously in C#?",
+    "o": [
+      "Task.Run()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.Start()",
+      "Thread.Sleep()"
+    ]
+  },
+  {
+    "q": "What is the main purpose of using 'Interlocked' class in C#?",
+    "o": [
+      "It provides atomic operations for variables shared by multiple threads",
+      "It manages the thread pool",
+      "It suspends the thread execution",
+      "It creates new threads for execution"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet in C#?\n",
+    "c": "using System;\nusing System.Threading;\n\nclass Program {\n    static void Main() {\n        Thread t = new Thread(PrintMessage);\n        t.Start();\n    }\n    static void PrintMessage() {\n        Console.WriteLine(\"Hello from the thread!\");\n    }\n}",
+    "o": [
+      "Hello from the thread!",
+      "Hello from the main thread!",
+      "No output",
+      "Thread started"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to create a thread in C#?",
+    "o": [
+      "Thread t = new Thread(PrintMessage); t.Start();",
+      "Thread t = new Thread{PrintMessage()}; t.Start();",
+      "Thread t = new Thread(PrintMessage()); t.Start();",
+      "Thread t = new Thread(); t.Run(PrintMessage);"
+    ]
+  },
+  {
+    "q": "What is the purpose of using 'lock' in thread synchronization in C#?",
+    "o": [
+      "It ensures that only one thread can execute a critical section of code at a time.",
+      "It allows multiple threads to run in parallel without any restrictions.",
+      "It pauses the current thread until the lock is released by another thread.",
+      "It creates a new thread to handle the synchronization process."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet in C#?\n",
+    "c": "using System;\nusing System.Threading;\n\nclass Program {\n    static void Main() {\n        Thread t = new Thread(() => { Console.WriteLine(\"Thread started\"); });\n        t.Start();\n        t.Join();\n        Console.WriteLine(\"Main thread finished\");\n    }\n}",
+    "o": [
+      "Thread started\nMain thread finished",
+      "Main thread finished\nThread started",
+      "Thread started",
+      "Main thread finished"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used for thread synchronization in C# to block the thread until the other completes?",
+    "o": [
+      "Join()",
+      "Wait()",
+      "Lock()",
+      "Sleep()"
+    ]
+  },
+  {
+    "q": "What does the 'async' keyword in C# signify?",
+    "o": [
+      "It marks a method that contains asynchronous code.",
+      "It marks a method to run on the main thread.",
+      "It defines the execution time of a task.",
+      "It enables thread synchronization."
+    ]
+  },
+  {
+    "q": "Which of the following C# features is used for running multiple tasks concurrently?",
+    "o": [
+      "Parallel programming",
+      "Thread synchronization",
+      "Async/Await",
+      "Threading tasks"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'await' keyword in C#?",
+    "o": [
+      "It is used to wait for an asynchronous task to complete.",
+      "It runs code in parallel without blocking the main thread.",
+      "It pauses the current thread indefinitely.",
+      "It creates a new task to run asynchronously."
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to execute a task in parallel in C#?",
+    "o": [
+      "Parallel.For(0, 10, i => Console.WriteLine(i));",
+      "Thread.Start(() => Console.WriteLine(i));",
+      "new Task(() => Console.WriteLine(i)).Run();",
+      "Task.Parallel(() => Console.WriteLine(i));"
+    ]
+  },
+  {
+    "q": "In C#, what will happen if two threads try to modify a shared variable simultaneously without synchronization?",
+    "o": [
+      "It can cause race conditions and unpredictable results.",
+      "It will cause the program to crash immediately.",
+      "The threads will wait for each other to finish.",
+      "The system will automatically synchronize the threads."
+    ]
+  },
+  {
+    "q": "What is the primary purpose of the 'Thread' class in C#?",
+    "o": [
+      "It is used to create and manage threads in C# applications.",
+      "It is used to synchronize the execution of multiple threads.",
+      "It defines a method that runs on a specific thread.",
+      "It is used to block the thread until the task completes."
+    ]
+  },
+  {
+    "q": "What does the 'Thread.Sleep()' method do in C#?",
+    "o": [
+      "It pauses the execution of the current thread for a specified amount of time.",
+      "It terminates the thread after the specified time.",
+      "It makes the thread wait for a synchronization lock.",
+      "It continues execution of the thread in parallel."
+    ]
+  },
+  {
+    "q": "What will be the result of running the following C# code?\n",
+    "c": "using System;\nusing System.Threading;\n\nclass Program {\n    static void Main() {\n        Thread t1 = new Thread(PrintMessage);\n        Thread t2 = new Thread(PrintMessage);\n        t1.Start();\n        t2.Start();\n    }\n    static void PrintMessage() {\n        Console.WriteLine(\"Message from thread.\");\n    }\n}",
+    "o": [
+      "Message from thread.\nMessage from thread.",
+      "Message from thread.",
+      "No output.",
+      "Message from main thread."
+    ]
+  },
+  {
+    "q": "Which of the following is true about thread synchronization in C#?",
+    "o": [
+      "Thread synchronization is necessary to prevent data corruption when multiple threads access shared resources.",
+      "Thread synchronization is not required in C# as the system handles it automatically.",
+      "Thread synchronization always results in slower performance.",
+      "Thread synchronization can be achieved using the 'async' and 'await' keywords."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet in C#?\n",
+    "c": "using System;\nusing System.Threading;\n\nclass Program {\n    static void Main() {\n        Thread t = new Thread(Count);\n        t.Start();\n    }\n    static void Count() {\n        for (int i = 1; i <= 5; i++) {\n            Console.WriteLine(i);\n            Thread.Sleep(1000);\n        }\n    }\n}",
+    "o": [
+      "1\n2\n3\n4\n5",
+      "5\n4\n3\n2\n1",
+      "1\n2\n3\n4\n5\n(Each number appears with a 1-second delay)",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following methods is used for parallel execution in C#?",
+    "o": [
+      "Parallel.For()",
+      "Thread.Start()",
+      "Task.Wait()",
+      "Thread.Sleep()"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'Task' class in C#?",
+    "o": [
+      "It represents an asynchronous operation that can be executed in parallel.",
+      "It manages thread synchronization and prevents race conditions.",
+      "It creates new threads for concurrent execution.",
+      "It pauses the execution of the current thread."
+    ]
+  },
+  {
+    "q": "What happens if a thread is blocked in C# without using synchronization?",
+    "o": [
+      "It can lead to deadlocks and race conditions.",
+      "The thread will continue executing as normal.",
+      "The system will terminate the thread automatically.",
+      "The thread will be paused until the main thread completes."
+    ]
+  },
+  {
+    "q": "What is the difference between 'Task.Run()' and 'Thread.Start()' in C#?",
+    "o": [
+      "'Task.Run()' runs a method asynchronously on a thread pool, while 'Thread.Start()' starts a new thread.",
+      "'Task.Run()' creates a new thread, whereas 'Thread.Start()' executes asynchronously.",
+      "'Task.Run()' waits for the task to finish, while 'Thread.Start()' does not.",
+      "'Task.Run()' is used for parallel processing, while 'Thread.Start()' is used for synchronization."
+    ]
+  },
+  {
+    "q": "Which of the following C# concepts can be used to run multiple operations concurrently without blocking the main thread?",
+    "o": [
+      "Async/Await",
+      "Thread synchronization",
+      "Parallel.ForEach()",
+      "Thread.Sleep()"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'ThreadPool' class in C#?",
+    "o": [
+      "It provides a pool of threads for executing tasks asynchronously, improving performance and resource management.",
+      "It allows you to manually manage individual threads for each task.",
+      "It synchronizes threads to avoid race conditions.",
+      "It provides a fixed number of threads for parallel programming."
+    ]
+  },
+  {
+    "q": "Which method in C# can be used to safely pass data between threads?",
+    "o": [
+      "Monitor.Enter() and Monitor.Exit()",
+      "Thread.Sleep()",
+      "Task.WhenAll()",
+      "Thread.Join()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C# code snippet?\n",
+    "c": "using System;\nusing System.Threading;\n\nclass Program {\n    static void Main() {\n        Thread t = new Thread(PrintNumbers);\n        t.Start();\n        Console.WriteLine(\"Main thread\");\n    }\n    static void PrintNumbers() {\n        for (int i = 1; i <= 3; i++) {\n            Console.WriteLine(i);\n        }\n    }\n}",
+    "o": [
+      "Main thread\n1\n2\n3",
+      "1\n2\n3\nMain thread",
+      "Main thread\n1\nMain thread\n2\nMain thread\n3",
+      "1\n2\n3"
+    ]
+  },
+  {
+    "q": "Which of the following is a benefit of using the 'async' and 'await' keywords in C#?",
+    "o": [
+      "They allow the execution of asynchronous operations without blocking the main thread.",
+      "They synchronize multiple threads to avoid deadlocks.",
+      "They create new threads to handle tasks concurrently.",
+      "They are used to pause the execution of threads in a safe manner."
+    ]
+  },
+  {
+    "q": "What does the 'Task.WhenAny()' method do in C#?",
+    "o": [
+      "It waits for any of the provided tasks to complete and returns the first completed task.",
+      "It waits for all provided tasks to complete.",
+      "It executes the tasks in parallel and returns the first one to finish.",
+      "It cancels all tasks if one completes."
+    ]
+  },
+  {
+    "q": "Which of the following C# methods allows you to execute a task on multiple threads concurrently?",
+    "o": [
+      "Parallel.For()",
+      "Thread.Sleep()",
+      "Task.WhenAll()",
+      "Thread.Start()"
+    ]
+  },
+  {
+    "q": "What will happen if you try to modify shared data from multiple threads without synchronization in C#?",
+    "o": [
+      "It can result in race conditions, leading to unpredictable behavior.",
+      "The program will automatically handle synchronization.",
+      "The system will stop execution of the program.",
+      "The data will be automatically synchronized."
+    ]
+  },
+  {
+    "q": "Which of the following is used to run multiple tasks asynchronously while limiting the maximum number of concurrently running tasks in C#?",
+    "o": [
+      "Task.WhenAny() with a custom concurrency limit",
+      "Parallel.ForEach() with a degree of parallelism",
+      "Task.WhenAll() with cancellation tokens",
+      "Thread.Join() with thread pool management"
+    ]
+  },
+  {
+    "q": "What does the 'Thread.Interrupt()' method do in C#?",
+    "o": [
+      "It attempts to interrupt a thread's execution, causing it to throw a ThreadInterruptedException.",
+      "It terminates the thread immediately.",
+      "It pauses the thread's execution for a specific amount of time.",
+      "It starts the thread after it has been stopped."
+    ]
+  },
+  {
+    "q": "Which of the following correctly defines a task in C#?",
+    "o": [
+      "Task task = Task.Run(() => { Console.WriteLine(\"Hello, Task!\"); });",
+      "Task task = new Task(() => { Console.WriteLine(\"Hello, Task!\"); });",
+      "Task task = new Task{ Console.WriteLine(\"Hello, Task!\"); }",
+      "Task task = Task.Create(() => { Console.WriteLine(\"Hello, Task!\"); });"
+    ]
+  },
+  {
+    "q": "What does the 'Thread.Join()' method do in C#?",
+    "o": [
+      "It blocks the calling thread until the thread on which it is called has completed.",
+      "It starts the execution of a new thread.",
+      "It terminates the thread immediately.",
+      "It pauses the execution of the current thread for a specified time."
+    ]
+  },
+  {
+    "q": "Which of the following C# constructs can be used to execute multiple tasks concurrently, handling synchronization automatically?",
+    "o": [
+      "Parallel.ForEach()",
+      "Thread.Start()",
+      "Monitor.Enter()",
+      "Task.WaitAll()"
+    ]
+  },
+  {
+    "q": "What will be the output of the following C# code snippet?\n",
+    "c": "using System;\nusing System.Threading;\n\nclass Program {\n    static void Main() {\n        Thread t1 = new Thread(WriteNumbers);\n        Thread t2 = new Thread(WriteNumbers);\n        t1.Start();\n        t2.Start();\n    }\n    static void WriteNumbers() {\n        for (int i = 1; i <= 3; i++) {\n            Console.WriteLine(i);\n            Thread.Sleep(500);\n        }\n    }\n}",
+    "o": [
+      "1\n1\n2\n2\n3\n3",
+      "1\n2\n3\n1\n2\n3",
+      "1\n2\n3",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following is true about thread synchronization in C#?",
+    "o": [
+      "Thread synchronization prevents multiple threads from accessing shared resources simultaneously, avoiding data corruption.",
+      "Thread synchronization slows down thread execution but increases performance.",
+      "Thread synchronization always involves using the 'async' and 'await' keywords.",
+      "Thread synchronization is only necessary in single-threaded applications."
+    ]
+  },
+  {
+    "q": "Which class in C# provides the functionality to execute code on multiple threads simultaneously?",
+    "o": [
+      "Task",
+      "ThreadPool",
+      "Thread",
+      "Monitor"
+    ]
+  },
+  {
+    "q": "What is the primary difference between 'Task.Run()' and 'Thread.Start()' in C#?",
+    "o": [
+      "'Task.Run()' runs the task asynchronously on the thread pool, while 'Thread.Start()' creates and starts a new thread.",
+      "'Task.Run()' runs the task synchronously, while 'Thread.Start()' executes tasks asynchronously.",
+      "'Task.Run()' is for thread synchronization, while 'Thread.Start()' is for parallel execution.",
+      "'Task.Run()' is used for CPU-bound tasks, and 'Thread.Start()' is used for I/O-bound tasks."
+    ]
+  },
+  {
+    "q": "What is the main purpose of the 'async' and 'await' keywords in C#?",
+    "o": [
+      "They enable asynchronous programming by allowing methods to run without blocking the main thread.",
+      "They execute tasks synchronously to block the main thread until completion.",
+      "They handle thread synchronization to prevent race conditions.",
+      "They create new threads to execute tasks concurrently."
+    ]
+  },
+  {
+    "q": "Which of the following C# methods helps to execute multiple tasks concurrently and collects all results?",
+    "o": [
+      "Task.WhenAll()",
+      "Thread.Sleep()",
+      "Thread.Join()",
+      "Task.WhenAny()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C# code snippet?\n",
+    "c": "using System;\nusing System.Threading;\n\nclass Program {\n    static void Main() {\n        Task t1 = Task.Run(() => { Console.WriteLine(\"Task 1\"); });\n        Task t2 = Task.Run(() => { Console.WriteLine(\"Task 2\"); });\n        Task.WhenAll(t1, t2).Wait();\n    }\n}",
+    "o": [
+      "Task 1\nTask 2",
+      "Task 2\nTask 1",
+      "Task 1",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following C# methods is used to avoid deadlock situations during thread synchronization?",
+    "o": [
+      "Monitor.TryEnter()",
+      "Thread.Join()",
+      "Task.WhenAny()",
+      "Thread.Start()"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to create and start a thread in C#?",
+    "o": [
+      "Thread thread = new Thread(() => Console.WriteLine(\"Hello, Thread!\")); thread.Start();",
+      "Thread thread = new Thread(); thread.Start();",
+      "Thread thread = new Thread(() => Console.WriteLine(\"Hello, Thread!\")); thread.Begin();",
+      "Thread thread = new Thread(); thread.Execute();"
+    ]
+  },
+  {
+    "q": "What happens when a thread calls 'Thread.Sleep()' in C#?",
+    "o": [
+      "The current thread is paused for the specified time period and does not consume CPU resources.",
+      "The current thread is immediately terminated.",
+      "The thread is put on a queue for scheduling by the operating system.",
+      "The thread is moved to the background, allowing other threads to execute."
+    ]
+  },
+  {
+    "q": "What is the output of the following C# code snippet?\n",
+    "c": "using System;\nusing System.Threading;\n\nclass Program {\n    static void Main() {\n        Thread t1 = new Thread(PrintText);\n        Thread t2 = new Thread(PrintText);\n        t1.Start();\n        t2.Start();\n    }\n    static void PrintText() {\n        Console.WriteLine(\"Hello from thread!\");\n    }\n}",
+    "o": [
+      "Hello from thread!\nHello from thread!",
+      "Hello from thread!",
+      "No output",
+      "Hello from thread!\n"
+    ]
+  },
+  {
+    "q": "What is the purpose of using 'ThreadPool' in C#?",
+    "o": [
+      "It allows for better management and reuse of threads, reducing overhead for frequently started tasks.",
+      "It provides a method to control thread execution in a round-robin fashion.",
+      "It helps synchronize multiple threads executing in parallel.",
+      "It allows for creating threads manually in parallel programming."
+    ]
+  },
+  {
+    "q": "Which of the following can cause a 'Deadlock' in C# multithreading?",
+    "o": [
+      "When two or more threads wait for each other to release resources they hold, causing them to be stuck in a wait state.",
+      "When threads run simultaneously and complete in random order.",
+      "When tasks are scheduled in parallel but finish in sequence.",
+      "When threads pause for synchronization purposes."
+    ]
+  },
+  {
+    "q": "What does the 'async' keyword do in C#?",
+    "o": [
+      "It marks a method as asynchronous and allows the method to return control to the calling thread while it continues executing.",
+      "It makes the method execute synchronously without blocking the calling thread.",
+      "It allows the method to run on multiple threads concurrently.",
+      "It pauses the method’s execution to wait for external resources."
+    ]
+  },
+  {
+    "q": "Which method in C# ensures that a task does not proceed until all tasks are completed?",
+    "o": [
+      "Task.WhenAll()",
+      "Task.WhenAny()",
+      "Task.Run()",
+      "Thread.Join()"
+    ]
+  },
+  {
+    "q": "What is the purpose of using 'Monitor.Enter()' and 'Monitor.Exit()' in C#?",
+    "o": [
+      "They are used to synchronize access to a critical section of code, preventing race conditions.",
+      "They create and start new threads for concurrent execution.",
+      "They pause the current thread for a specified time.",
+      "They schedule tasks to run asynchronously on the thread pool."
+    ]
+  },
+  {
+    "q": "What is the correct syntax to use 'Parallel.For()' for executing code in parallel in C#?",
+    "o": [
+      "Parallel.For(0, 10, i => { Console.WriteLine(i); });",
+      "Parallel.ForEach(0, 10, i => { Console.WriteLine(i); });",
+      "Parallel.ForAll(10, i => { Console.WriteLine(i); });",
+      "Parallel(0, 10, i => { Console.WriteLine(i); });"
+    ]
+  },
+  {
+    "q": "Which method is used to safely stop a thread in C#?",
+    "o": [
+      "Thread.Abort()",
+      "Thread.Terminate()",
+      "Thread.Pause()",
+      "Thread.Stop()"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about the 'Task' class in C#?",
+    "o": [
+      "The 'Task' class is used to represent an asynchronous operation and is more efficient than using raw threads for parallelism.",
+      "The 'Task' class is used to manage threads directly and does not support asynchronous operations.",
+      "The 'Task' class only supports I/O-bound tasks and cannot be used for CPU-bound tasks.",
+      "The 'Task' class executes tasks synchronously and blocks the calling thread until completion."
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'Thread.IsAlive' property in C#?",
+    "o": [
+      "It checks if a thread is still running or has completed.",
+      "It determines whether a thread is in a waiting state.",
+      "It checks if the thread is eligible for garbage collection.",
+      "It verifies if a thread is in a paused state."
+    ]
+  },
+  {
+    "q": "What is the result of calling 'Thread.Abort()' in C#?",
+    "o": [
+      "It attempts to terminate the thread immediately, which may lead to an unstable state.",
+      "It pauses the thread for a specified amount of time.",
+      "It sends a signal to the thread to suspend its execution.",
+      "It safely completes the thread's execution and exits."
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to synchronize access to a shared resource in C# using a lock?",
+    "o": [
+      "lock (lockObject) { // Critical section }",
+      "Thread.Lock(lockObject) { // Critical section }",
+      "Monitor.Enter(lockObject) { // Critical section }",
+      "Task.Lock(lockObject) { // Critical section }"
+    ]
+  },
+  {
+    "q": "Which of the following methods can be used to wait for all threads to complete execution in C#?",
+    "o": [
+      "Thread.Join()",
+      "Thread.Sleep()",
+      "Thread.Wait()",
+      "Thread.Exit()"
+    ]
+  },
+  {
+    "q": "Which C# class allows you to execute a set of operations concurrently, but with a higher degree of control over the execution?",
+    "o": [
+      "Task",
+      "ThreadPool",
+      "Thread",
+      "Mutex"
+    ]
+  },
+  {
+    "q": "What is the effect of calling 'Thread.Sleep()' inside a loop in a multithreaded C# application?",
+    "o": [
+      "It pauses the current thread for the specified time, giving other threads an opportunity to run.",
+      "It terminates the thread after the specified time has passed.",
+      "It causes the thread to wait for user input before continuing.",
+      "It keeps the thread running without allowing other threads to execute."
+    ]
+  },
+  {
+    "q": "Which method in C# can be used to start a background thread that does not block the main thread?",
+    "o": [
+      "Task.Run()",
+      "Thread.Start()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.BeginInvoke()"
+    ]
+  },
+  {
+    "q": "Which of the following is true about 'async' methods in C#?",
+    "o": [
+      "An 'async' method runs asynchronously, allowing the main thread to remain responsive while the method executes.",
+      "An 'async' method runs synchronously but supports multiple threads.",
+      "An 'async' method blocks the main thread until the method finishes.",
+      "An 'async' method can only be used with CPU-bound tasks."
+    ]
+  },
+  {
+    "q": "Which of the following is the purpose of the 'await' keyword in C#?",
+    "o": [
+      "It is used to indicate that an 'async' method should be awaited and control should return to the caller until the operation completes.",
+      "It executes the method synchronously on the calling thread.",
+      "It pauses the current thread and waits for an external event to resume the execution.",
+      "It ensures the method runs on a separate thread to avoid blocking the main thread."
+    ]
+  },
+  {
+    "q": "What is the result of calling 'Thread.Start()' on a thread that has already been started in C#?",
+    "o": [
+      "An InvalidOperationException is thrown.",
+      "The thread restarts from the beginning.",
+      "The thread continues executing from where it left off.",
+      "The thread will enter a suspended state."
+    ]
+  },
+  {
+    "q": "Which of the following statements about the 'ThreadPool' in C# is true?",
+    "o": [
+      "The ThreadPool automatically manages a pool of worker threads to execute tasks asynchronously, improving performance.",
+      "The ThreadPool provides fine-grained control over each thread's execution time.",
+      "The ThreadPool is used to schedule threads that will execute synchronously on the calling thread.",
+      "The ThreadPool allows for manually controlling the thread creation and termination process."
+    ]
+  },
+  {
+    "q": "Which of the following keywords is used in C# to ensure that a method is executed on a single thread without any concurrent execution?",
+    "o": [
+      "lock",
+      "sync",
+      "monitor",
+      "threadsafe"
+    ]
+  },
+  {
+    "q": "Which of the following C# types is typically used for parallel execution of operations where each task operates independently?",
+    "o": [
+      "Parallel.For()",
+      "Task.Run()",
+      "Thread.Start()",
+      "Monitor.Enter()"
+    ]
+  },
+  {
+    "q": "What does the 'Thread.Join()' method do in C#?",
+    "o": [
+      "It blocks the calling thread until the thread on which it was called has completed execution.",
+      "It terminates the current thread immediately.",
+      "It suspends the calling thread until a specific event occurs.",
+      "It allows multiple threads to execute in parallel."
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about 'Task.WhenAll()' in C#?",
+    "o": [
+      "It waits for all the provided tasks to complete before continuing.",
+      "It immediately executes the tasks concurrently without waiting.",
+      "It schedules the tasks to run one after the other.",
+      "It cancels all tasks if one of the tasks fails."
+    ]
+  },
+  {
+    "q": "What happens when a thread reaches the end of its execution in C#?",
+    "o": [
+      "The thread terminates and cannot be restarted.",
+      "The thread is paused and can be resumed later.",
+      "The thread continues to run in the background.",
+      "The thread waits for additional instructions from the main thread."
+    ]
+  },
+  {
+    "q": "Which of the following is the best way to execute a long-running, non-blocking task in the background in C#?",
+    "o": [
+      "Task.Run()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.Start()",
+      "Task.Wait()"
+    ]
+  },
+  {
+    "q": "What is the effect of using the 'await' keyword in a method defined as 'async' in C#?",
+    "o": [
+      "It causes the method to pause and allows the calling thread to continue executing while the awaited operation completes.",
+      "It forces the method to execute synchronously, blocking the calling thread.",
+      "It immediately terminates the asynchronous operation and returns control to the calling thread.",
+      "It triggers the method to be executed on a separate thread."
+    ]
+  },
+  {
+    "q": "What is the primary advantage of using 'Task.WhenAny()' in C#?",
+    "o": [
+      "It allows for waiting until any of the provided tasks completes.",
+      "It ensures that all provided tasks are executed in parallel.",
+      "It waits for all tasks to complete, similar to 'Task.WhenAll()'.",
+      "It immediately cancels all tasks once one of them completes."
+    ]
+  },
+  {
+    "q": "What is the main purpose of the 'Monitor.Enter()' and 'Monitor.Exit()' methods in C#?",
+    "o": [
+      "They are used to lock a code block for thread synchronization, ensuring that only one thread can execute it at a time.",
+      "They create a new thread for executing a critical section of code.",
+      "They mark a method as asynchronous to allow concurrent execution.",
+      "They schedule the execution of tasks on the thread pool."
+    ]
+  },
+  {
+    "q": "What happens if a task is canceled while running in C#?",
+    "o": [
+      "The task will throw a TaskCanceledException and stop execution.",
+      "The task will finish its execution, but the result will be ignored.",
+      "The task will continue execution and ignore the cancellation request.",
+      "The task will enter a suspended state until manually resumed."
+    ]
+  },
+  {
+    "q": "Which of the following C# constructs is used to safely share data between threads in a multithreaded environment?",
+    "o": [
+      "Interlocked",
+      "ThreadLocal",
+      "Thread.Abort()",
+      "Thread.Synchronize()"
+    ]
+  },
+  {
+    "q": "Which C# method allows you to execute multiple tasks concurrently and return their results once all tasks are complete?",
+    "o": [
+      "Task.WhenAll()",
+      "Task.WhenAny()",
+      "Task.Run()",
+      "ThreadPool.QueueUserWorkItem()"
+    ]
+  },
+  {
+    "q": "What is the result of calling 'Task.Wait()' on a Task in C#?",
+    "o": [
+      "It blocks the calling thread until the task completes.",
+      "It cancels the task and throws an exception.",
+      "It immediately executes the task on a different thread.",
+      "It makes the task asynchronous."
+    ]
+  },
+  {
+    "q": "In C#, what does the 'ThreadPool' do when a thread has completed its task?",
+    "o": [
+      "The thread is returned to the pool for reuse.",
+      "The thread is discarded and cannot be reused.",
+      "The thread enters a paused state until needed again.",
+      "The thread waits for an external signal to start the next task."
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about 'async' methods in C#?",
+    "o": [
+      "An 'async' method allows the calling thread to continue executing while it runs asynchronously in the background.",
+      "An 'async' method always runs synchronously and blocks the calling thread.",
+      "An 'async' method is executed on a separate thread by default.",
+      "An 'async' method cannot return a value."
+    ]
+  },
+  {
+    "q": "Which of the following is the primary benefit of using 'Parallel.For()' over a regular 'for' loop in C#?",
+    "o": [
+      "It automatically divides work among multiple threads to execute concurrently, improving performance for CPU-bound operations.",
+      "It ensures that each iteration of the loop executes sequentially to avoid race conditions.",
+      "It allows for pausing between iterations to make the loop more efficient.",
+      "It simplifies asynchronous programming by eliminating the need for manual thread management."
+    ]
+  },
+  {
+    "q": "Which of the following is used to prevent multiple threads from accessing shared data simultaneously in C#?",
+    "o": [
+      "Mutex",
+      "Thread.Suspend()",
+      "Thread.Pause()",
+      "ThreadPool.Wait()"
+    ]
+  },
+  {
+    "q": "What is the primary advantage of using the 'Task' class in C# over using 'Thread' directly?",
+    "o": [
+      "The 'Task' class provides a higher-level abstraction and automatically manages thread pooling, improving efficiency.",
+      "The 'Task' class allows for manual control over the thread execution order.",
+      "The 'Task' class is more flexible and allows direct interaction with the operating system.",
+      "The 'Task' class is used for background tasks but does not support any synchronization mechanisms."
+    ]
+  },
+  {
+    "q": "What is the main difference between 'Task.Run()' and 'Thread.Start()' in C#?",
+    "o": [
+      "'Task.Run()' schedules a task to run asynchronously, utilizing the thread pool, while 'Thread.Start()' creates a new thread for execution.",
+      "'Task.Run()' is for synchronous execution, while 'Thread.Start()' is asynchronous.",
+      "'Task.Run()' requires the thread to be explicitly managed, while 'Thread.Start()' handles all management automatically.",
+      "'Task.Run()' allows tasks to run on separate processes, whereas 'Thread.Start()' runs on a single process."
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to perform thread synchronization in C# to prevent data corruption from simultaneous thread access?",
+    "o": [
+      "lock",
+      "Monitor.Wait()",
+      "Thread.Sleep()",
+      "Thread.Suspend()"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about 'Thread.Sleep()' in C#?",
+    "o": [
+      "It pauses the execution of the current thread for a specified amount of time, allowing other threads to run.",
+      "It suspends the current thread permanently until it is manually resumed.",
+      "It pauses the execution of all threads in the application.",
+      "It allows the thread to finish its execution immediately and return control to the calling thread."
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'Thread.IsBackground' property in C#?",
+    "o": [
+      "It determines whether a thread is a background thread, which will be automatically terminated when the application ends.",
+      "It sets the priority of the thread to run faster.",
+      "It allows the thread to execute asynchronously and non-blocking.",
+      "It guarantees that the thread runs before other threads in the application."
+    ]
+  },
+  {
+    "q": "In C#, what happens when a 'Task' completes with an exception?",
+    "o": [
+      "The exception is captured and stored in the Task, and can be accessed via Task.Exception.",
+      "The exception causes the application to crash immediately.",
+      "The exception is ignored, and the Task completes successfully.",
+      "The Task automatically retries the operation."
+    ]
+  },
+  {
+    "q": "Which of the following is a feature of 'Parallel.ForEach()' in C#?",
+    "o": [
+      "It allows the execution of a loop's iterations in parallel, improving performance on CPU-bound tasks.",
+      "It executes loop iterations sequentially to avoid race conditions.",
+      "It blocks the main thread until all loop iterations are complete.",
+      "It supports asynchronous execution but does not run in parallel."
+    ]
+  },
+  {
+    "q": "Which of the following C# methods is used to wait for multiple tasks to complete before continuing?",
+    "o": [
+      "Task.WhenAll()",
+      "Task.WhenAny()",
+      "Thread.Join()",
+      "Thread.Sleep()"
+    ]
+  },
+  {
+    "q": "In C#, which type of synchronization mechanism is typically used to prevent race conditions when multiple threads access shared resources?",
+    "o": [
+      "Mutex",
+      "Thread.Sleep()",
+      "Thread.Suspend()",
+      "Thread.Priority"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the 'async' and 'await' keywords in C#?",
+    "o": [
+      "'async' marks a method as asynchronous, and 'await' is used to pause execution until the awaited task completes, without blocking the thread.",
+      "'async' and 'await' are used to execute code synchronously and prevent concurrency.",
+      "'async' is used to define threads, and 'await' allows for waiting on thread completion.",
+      "'async' runs the method in the background, while 'await' allows other methods to run at the same time."
+    ]
+  },
+  {
+    "q": "Which of the following is true about thread synchronization in C#?",
+    "o": [
+      "Thread synchronization ensures that only one thread at a time can access a critical section of code, preventing race conditions.",
+      "Thread synchronization forces all threads to execute in the order they are created.",
+      "Thread synchronization is not necessary in C# because the system handles it automatically.",
+      "Thread synchronization only applies to parallel loops, not individual threads."
+    ]
+  },
+  {
+    "q": "What does the 'Thread.Join()' method do in C#?",
+    "o": [
+      "It blocks the calling thread until the thread on which 'Join()' is called has completed its execution.",
+      "It suspends the thread until it is manually resumed by another thread.",
+      "It allows multiple threads to run concurrently but in sequential order.",
+      "It waits for the thread to start, not complete."
+    ]
+  },
+  {
+    "q": "What is the main advantage of using 'Task.WhenAny()' in C#?",
+    "o": [
+      "It allows you to wait for the first task to complete, no matter which one finishes first.",
+      "It blocks all tasks until the last one completes.",
+      "It ensures all tasks are executed sequentially.",
+      "It returns a list of tasks that have failed."
+    ]
+  },
+  {
+    "q": "What is the purpose of using the 'volatile' keyword in multithreading in C#?",
+    "o": [
+      "It ensures that the value of the variable is always read directly from memory, preventing thread caching issues.",
+      "It makes the variable accessible across threads without needing synchronization.",
+      "It forces the compiler to optimize the variable for multithreading operations.",
+      "It causes the variable to always have the same value across all threads."
+    ]
+  },
+  {
+    "q": "Which of the following C# classes is specifically designed to perform thread synchronization?",
+    "o": [
+      "Monitor",
+      "ThreadPool",
+      "Thread",
+      "Task"
+    ]
+  },
+  {
+    "q": "What will happen if a thread tries to access a locked section of code that is already being executed by another thread in C#?",
+    "o": [
+      "The thread will block and wait until the lock is released by the other thread.",
+      "The thread will execute the locked code and overwrite the other thread's result.",
+      "The thread will throw an exception and terminate.",
+      "The thread will attempt to execute another part of the program without blocking."
+    ]
+  },
+  {
+    "q": "Which of the following C# methods allows you to run multiple operations concurrently in a specified range of values?",
+    "o": [
+      "Parallel.For()",
+      "Thread.Start()",
+      "Task.Run()",
+      "ThreadPool.QueueUserWorkItem()"
+    ]
+  },
+  {
+    "q": "What happens when you use the 'await' keyword in an asynchronous method in C#?",
+    "o": [
+      "The method pauses execution until the awaited task completes, without blocking the calling thread.",
+      "The method continues execution synchronously, blocking the calling thread.",
+      "The method is executed in parallel with other methods, but blocks the thread until completion.",
+      "The method immediately returns control to the calling thread and resumes later."
+    ]
+  },
+  {
+    "q": "What is the main role of 'Task.Run()' in C#?",
+    "o": [
+      "It runs a task asynchronously, scheduling it to execute on a thread pool thread.",
+      "It creates a new thread that runs the specified task synchronously.",
+      "It runs the task in a background thread without waiting for it to complete.",
+      "It executes the task in the calling thread while ensuring no blocking occurs."
+    ]
+  },
+  {
+    "q": "Which of the following methods can be used to cancel an ongoing task in C#?",
+    "o": [
+      "CancellationToken.Cancel()",
+      "Task.Abort()",
+      "Thread.Suspend()",
+      "Thread.Abort()"
+    ]
+  },
+  {
+    "q": "Which of the following C# constructs is used to prevent a thread from executing its critical section while another thread is accessing it?",
+    "o": [
+      "lock",
+      "Thread.Sleep()",
+      "Thread.Suspend()",
+      "Thread.Join()"
+    ]
+  },
+  {
+    "q": "What is the primary purpose of using the 'Task.WhenAll()' method in C#?",
+    "o": [
+      "It waits for all specified tasks to complete before continuing execution.",
+      "It executes the tasks sequentially, one after the other.",
+      "It returns the results of the tasks as soon as one task finishes.",
+      "It cancels all tasks after the first task completes."
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to execute multiple tasks concurrently in C#?",
+    "o": [
+      "Task.WhenAll()",
+      "Thread.Sleep()",
+      "Thread.Start()",
+      "Thread.Join()"
+    ]
+  },
+  {
+    "q": "What does the 'Task.ConfigureAwait(false)' method do in C#?",
+    "o": [
+      "It prevents the continuation of a task from being executed on the same synchronization context, improving performance.",
+      "It causes the task to execute synchronously.",
+      "It allows the task to run only in the background thread.",
+      "It cancels the task once the execution completes."
+    ]
+  },
+  {
+    "q": "Which of the following classes provides a simple thread pool mechanism in C#?",
+    "o": [
+      "ThreadPool",
+      "Monitor",
+      "Task",
+      "Mutex"
+    ]
+  },
+  {
+    "q": "What is the effect of setting 'Thread.IsBackground' to true in C#?",
+    "o": [
+      "The thread will be terminated automatically when the application exits, even if it is still running.",
+      "The thread will run with higher priority than other threads.",
+      "The thread will be forced to run synchronously.",
+      "The thread will never be able to access shared resources."
+    ]
+  },
+  {
+    "q": "Which of the following statements is true regarding the 'async' and 'await' keywords in C#?",
+    "o": [
+      "'async' marks a method as asynchronous, and 'await' is used to pause the method until a task completes.",
+      "'async' forces methods to run on a background thread, while 'await' synchronizes them.",
+      "'async' is used to create a new thread, and 'await' blocks the current thread.",
+      "'async' allows tasks to be completed synchronously, while 'await' makes tasks run sequentially."
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about the 'ThreadPool' class in C#?",
+    "o": [
+      "The 'ThreadPool' manages a pool of worker threads that can be used to execute tasks concurrently.",
+      "The 'ThreadPool' creates new threads for each task, making it inefficient for concurrent execution.",
+      "The 'ThreadPool' always executes tasks synchronously.",
+      "The 'ThreadPool' allows only one task to run at a time."
+    ]
+  },
+  {
+    "q": "What happens when you use 'lock' in C#?",
+    "o": [
+      "It ensures that only one thread can execute the critical section of code at a time, preventing race conditions.",
+      "It executes the critical section of code simultaneously on multiple threads.",
+      "It pauses the execution of the current thread until the lock is manually released.",
+      "It allows multiple threads to access the critical section but prioritizes one thread."
+    ]
+  },
+  {
+    "q": "What is the function of the 'CancellationToken' in C# multithreading?",
+    "o": [
+      "It allows you to cancel an ongoing task or thread, providing cooperative cancellation.",
+      "It forces the task to restart once the cancellation condition is met.",
+      "It suspends a task indefinitely until a condition is met.",
+      "It automatically restarts a cancelled task without requiring user input."
+    ]
+  },
+  {
+    "q": "What is the main purpose of 'Parallel.ForEach()' in C#?",
+    "o": [
+      "It executes iterations of a loop in parallel to improve performance, especially on CPU-bound tasks.",
+      "It executes the loop sequentially in a blocking manner.",
+      "It splits the loop into multiple tasks and runs them asynchronously in sequence.",
+      "It runs the loop on a single thread, prioritizing memory access."
+    ]
+  },
+  {
+    "q": "Which of the following C# constructs can be used to safely share data between multiple threads?",
+    "o": [
+      "lock",
+      "Thread.Sleep()",
+      "Task.Run()",
+      "ThreadPool.QueueUserWorkItem()"
+    ]
+  },
+  {
+    "q": "What is the difference between 'Task' and 'Thread' in C#?",
+    "o": [
+      "A 'Task' represents an asynchronous operation, while a 'Thread' represents a separate execution path in a program.",
+      "A 'Thread' is a higher-level abstraction of concurrency compared to a 'Task'.",
+      "'Task' directly manages CPU resources, while 'Thread' manages memory.",
+      "'Thread' can only execute in sequential order, while 'Task' runs concurrently."
+    ]
+  },
+  {
+    "q": "In C#, which of the following ensures that a thread can be safely interrupted when using 'Thread.Sleep()'?",
+    "o": [
+      "A thread can be safely interrupted by checking for cancellation periodically.",
+      "Threads cannot be interrupted once they start sleeping.",
+      "Threads will automatically stop if they exceed the sleep time.",
+      "Using 'Thread.Interrupt()' will prevent thread sleep."
+    ]
+  },
+  {
+    "q": "Which of the following methods in C# is used to determine if a thread is still alive?",
+    "o": [
+      "Thread.IsAlive",
+      "Thread.Status",
+      "Thread.IsRunning",
+      "Thread.IsFinished"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to create a thread in C#?",
+    "o": [
+      "Thread thread = new Thread(MyMethod); thread.Start();",
+      "Thread thread = new Thread(MyMethod()); thread.Start();",
+      "Thread thread = Thread.Create(MyMethod); thread.Start();",
+      "Thread thread = new Thread(); thread.Run(MyMethod);"
+    ]
+  },
+  {
+    "q": "What will happen if you use the 'Thread.Abort()' method in C#?",
+    "o": [
+      "It attempts to terminate a thread, causing an exception in the thread.",
+      "It suspends the thread indefinitely.",
+      "It terminates the thread's execution without raising exceptions.",
+      "It blocks the thread until it finishes the current operation."
+    ]
+  },
+  {
+    "q": "What does the 'Monitor.Enter()' method do in C#?",
+    "o": [
+      "It acquires a lock on an object to prevent other threads from accessing it until the lock is released.",
+      "It starts a new thread that will monitor the system for errors.",
+      "It waits for a thread to finish before allowing another to enter the critical section.",
+      "It automatically resumes a thread's execution after a specified delay."
+    ]
+  },
+  {
+    "q": "Which of the following best describes 'Parallel Programming' in C#?",
+    "o": [
+      "Parallel programming enables the execution of multiple tasks simultaneously, improving performance on multi-core processors.",
+      "Parallel programming allows tasks to run sequentially, blocking each other as needed.",
+      "Parallel programming runs tasks one after another but uses multiple threads to execute different methods.",
+      "Parallel programming forces the system to execute all threads on a single processor core."
+    ]
+  },
+  {
+    "q": "What is the primary benefit of using 'Task.WhenAll()' in C#?",
+    "o": [
+      "It waits for all specified tasks to complete and then returns a task that represents the completion of all.",
+      "It executes tasks sequentially but ensures they are all finished before the next operation.",
+      "It runs tasks concurrently but blocks until the first task finishes.",
+      "It cancels the first task when all other tasks have finished."
+    ]
+  },
+  {
+    "q": "Which of the following is true about the 'async' keyword in C#?",
+    "o": [
+      "'async' is used to define methods that can execute asynchronously and return a 'Task'.",
+      "'async' blocks the current thread while waiting for the method to finish.",
+      "'async' is used to define methods that always execute on a new thread.",
+      "'async' is only used to define methods that return 'void'."
+    ]
+  },
+  {
+    "q": "Which of the following C# methods is used to run a background task asynchronously?",
+    "o": [
+      "Task.Run()",
+      "Thread.Start()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.Sleep()"
+    ]
+  },
+  {
+    "q": "What is the function of 'Monitor.Wait()' in C#?",
+    "o": [
+      "It causes the current thread to wait until it is notified by another thread that it can continue.",
+      "It makes the thread pause until a specified time limit is reached.",
+      "It halts the execution of the thread until all other threads have completed.",
+      "It prevents a thread from being scheduled by the thread scheduler."
+    ]
+  },
+  {
+    "q": "In C#, what is the purpose of using 'Task.WhenAny()'?",
+    "o": [
+      "It waits for any one of the specified tasks to complete.",
+      "It waits for all tasks to complete before continuing.",
+      "It cancels the task once any of the specified tasks completes.",
+      "It immediately returns the result of the fastest task."
+    ]
+  },
+  {
+    "q": "Which of the following statements is correct regarding 'async' and 'await' in C#?",
+    "o": [
+      "'async' defines a method as asynchronous, and 'await' pauses the method until a task completes.",
+      "'async' ensures the method runs synchronously, and 'await' executes the next statement immediately.",
+      "'async' runs the method on a new thread, and 'await' suspends the program execution completely.",
+      "'async' ensures that all tasks run sequentially, and 'await' speeds up their execution."
+    ]
+  },
+  {
+    "q": "How can you cancel a running task in C#?",
+    "o": [
+      "By using a 'CancellationToken' to request the cancellation of the task.",
+      "By using 'Thread.Abort()' to stop the task immediately.",
+      "By setting the task's 'Status' to 'Canceled'.",
+      "By manually checking the task completion in a loop."
+    ]
+  },
+  {
+    "q": "What happens when 'Thread.Join()' is called in C#?",
+    "o": [
+      "The calling thread waits for the thread on which 'Join()' was called to finish execution.",
+      "It causes an immediate pause in the calling thread and prevents it from executing any further.",
+      "It forces the thread to terminate after a certain amount of time.",
+      "It suspends the calling thread until another task completes."
+    ]
+  },
+  {
+    "q": "Which of the following statements about thread synchronization in C# is correct?",
+    "o": [
+      "Thread synchronization ensures that multiple threads do not access shared resources simultaneously, preventing data corruption.",
+      "Thread synchronization automatically divides the workload equally among all threads.",
+      "Thread synchronization allows threads to execute without restrictions, speeding up processing.",
+      "Thread synchronization is used to make threads wait for a specified time before continuing."
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to ensure that only one thread can execute a critical section of code at a time in C#?",
+    "o": [
+      "lock",
+      "Thread.Start()",
+      "Monitor.Wait()",
+      "ThreadPool.QueueUserWorkItem()"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the behavior of 'Task.WhenAll()' in C#?",
+    "o": [
+      "It returns a task that completes when all the tasks in the input collection have finished.",
+      "It executes tasks in a sequential order and waits for each to complete.",
+      "It runs all tasks concurrently but blocks the main thread until one task completes.",
+      "It terminates tasks as soon as one of them completes, ignoring others."
+    ]
+  },
+  {
+    "q": "What is the purpose of 'Parallel.For()' in C#?",
+    "o": [
+      "It executes iterations of a loop concurrently, utilizing multiple threads for better performance.",
+      "It runs the loop sequentially but splits the workload across multiple threads.",
+      "It synchronizes the execution of all tasks, ensuring they finish in the same order.",
+      "It executes the loop in parallel, but the tasks run on the same thread."
+    ]
+  },
+  {
+    "q": "In C#, which method is used to execute a task asynchronously and ensure that the task is executed on a separate thread?",
+    "o": [
+      "Task.Run()",
+      "Thread.Start()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Task.WhenAll()"
+    ]
+  },
+  {
+    "q": "What does the 'ThreadPool' class in C# allow you to do?",
+    "o": [
+      "It provides a pool of worker threads to perform background operations efficiently.",
+      "It limits the number of threads that can run concurrently on the system.",
+      "It allows creating threads with specific memory allocations.",
+      "It provides a way to stop all threads immediately after a task is completed."
+    ]
+  },
+  {
+    "q": "Which of the following is a key difference between 'Thread' and 'Task' in C#?",
+    "o": [
+      "A 'Thread' is a lower-level concept that represents an actual thread of execution, whereas a 'Task' is a higher-level abstraction used to represent an asynchronous operation.",
+      "A 'Task' can only execute in the background, while a 'Thread' can execute in the foreground.",
+      "A 'Thread' automatically manages exceptions, while a 'Task' does not.",
+      "A 'Task' is used for CPU-bound operations, whereas a 'Thread' is used for I/O-bound operations."
+    ]
+  },
+  {
+    "q": "What is the purpose of 'lock' in C#?",
+    "o": [
+      "It ensures that only one thread can execute a block of code at a time, preventing race conditions.",
+      "It makes the thread wait for a specific period before continuing execution.",
+      "It suspends the thread until all other threads finish their operations.",
+      "It prevents the thread from being scheduled to run until other tasks are complete."
+    ]
+  },
+  {
+    "q": "Which of the following methods can be used to execute code in parallel on multiple threads in C#?",
+    "o": [
+      "Parallel.For()",
+      "Thread.Start()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Task.WhenAny()"
+    ]
+  },
+  {
+    "q": "What happens if 'Thread.Abort()' is called in C#?",
+    "o": [
+      "It attempts to terminate the thread immediately, but it may leave the thread in an unsafe state.",
+      "It suspends the thread and allows it to continue execution later.",
+      "It pauses the thread until it finishes the current task.",
+      "It forces the thread to terminate after a specified number of iterations."
+    ]
+  },
+  {
+    "q": "Which of the following synchronization techniques can prevent multiple threads from accessing a critical section simultaneously in C#?",
+    "o": [
+      "Monitor.Enter()",
+      "Thread.Sleep()",
+      "Thread.Join()",
+      "Task.WhenAll()"
+    ]
+  },
+  {
+    "q": "What does the 'async' keyword in C# signify?",
+    "o": [
+      "It marks a method as asynchronous, allowing it to be executed without blocking the calling thread.",
+      "It ensures that the method will run synchronously, blocking the thread until completion.",
+      "It automatically runs the method in parallel, without waiting for other operations to complete.",
+      "It enables a method to execute in the background while keeping the application responsive."
+    ]
+  },
+  {
+    "q": "Which of the following is true about the 'Thread.Sleep()' method in C#?",
+    "o": [
+      "It pauses the current thread for the specified time, allowing other threads to execute during that period.",
+      "It stops all threads in the application for the specified amount of time.",
+      "It makes the thread sleep indefinitely until manually resumed.",
+      "It causes the thread to stop permanently after the specified sleep time."
+    ]
+  },
+  {
+    "q": "What is the role of 'await' in C#?",
+    "o": [
+      "It pauses the execution of an asynchronous method until the awaited task is complete.",
+      "It executes a method synchronously in the background without blocking the main thread.",
+      "It cancels an asynchronous operation before it completes.",
+      "It runs the method asynchronously but blocks the calling thread until it finishes."
+    ]
+  },
+  {
+    "q": "Which of the following is the primary purpose of using 'Task.WhenAll()' in C#?",
+    "o": [
+      "It waits for all the tasks to complete and returns a single task that represents the completion of all of them.",
+      "It starts multiple tasks concurrently and immediately returns the result of the first one to finish.",
+      "It suspends the calling thread until the first task completes.",
+      "It runs all the tasks sequentially and waits for each one to finish before proceeding."
+    ]
+  },
+  {
+    "q": "In C#, what is the purpose of the 'ThreadPool.QueueUserWorkItem()' method?",
+    "o": [
+      "It queues a method for execution by a thread pool thread.",
+      "It starts a new thread and immediately runs the specified method on that thread.",
+      "It schedules a method to run after all other threads have completed.",
+      "It pauses the current thread until a new thread becomes available in the thread pool."
+    ]
+  },
+  {
+    "q": "What is the role of 'async' in an 'async' method in C#?",
+    "o": [
+      "It marks the method as asynchronous and enables the use of 'await' within the method to asynchronously wait for tasks.",
+      "It ensures that the method is executed synchronously on the main thread.",
+      "It makes the method run in parallel with other methods without waiting for completion.",
+      "It forces the method to return a result immediately without waiting for task completion."
+    ]
+  },
+  {
+    "q": "Which of the following statements about thread synchronization in C# is correct?",
+    "o": [
+      "Thread synchronization ensures that shared resources are accessed in a thread-safe manner, avoiding race conditions.",
+      "Thread synchronization is only necessary when running tasks on different machines.",
+      "Thread synchronization speeds up the performance of all threads by distributing tasks evenly.",
+      "Thread synchronization ensures that all threads will complete in the same order."
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to prevent thread interference when accessing shared data in C#?",
+    "o": [
+      "Using a lock statement to ensure that only one thread accesses the shared data at a time.",
+      "By using 'Thread.Join()' to wait for all threads to finish before accessing the data.",
+      "Running all threads sequentially to prevent simultaneous access to shared data.",
+      "Pausing threads using 'Thread.Sleep()' to reduce the risk of interference."
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to execute a task asynchronously in C# without blocking the main thread?",
+    "o": [
+      "Task.Run()",
+      "Thread.Start()",
+      "Thread.Sleep()",
+      "Monitor.Wait()"
+    ]
+  },
+  {
+    "q": "What does 'Thread.Join()' do in C#?",
+    "o": [
+      "It causes the current thread to wait until the thread on which 'Join()' was called has finished.",
+      "It interrupts the thread and causes it to stop immediately.",
+      "It suspends the execution of the thread indefinitely.",
+      "It pauses the calling thread until another task starts executing."
+    ]
+  },
+  {
+    "q": "Which of the following methods can be used to start a new thread in C#?",
+    "o": [
+      "Thread.Start()",
+      "Task.Run()",
+      "ThreadPool.QueueUserWorkItem()",
+      "All of the above"
+    ]
+  },
+  {
+    "q": "What is the difference between 'Task.WhenAny()' and 'Task.WhenAll()' in C#?",
+    "o": [
+      "'Task.WhenAny()' waits for the first task to complete, while 'Task.WhenAll()' waits for all tasks to complete.",
+      "'Task.WhenAll()' waits for the first task to complete, while 'Task.WhenAny()' waits for all tasks to complete.",
+      "'Task.WhenAny()' runs all tasks sequentially, while 'Task.WhenAll()' runs tasks concurrently.",
+      "'Task.WhenAny()' cancels tasks once one of them finishes, while 'Task.WhenAll()' ignores task completion."
+    ]
+  },
+  {
+    "q": "Which of the following is a primary use case for 'Parallel.For()' in C#?",
+    "o": [
+      "To execute a loop's iterations concurrently across multiple threads for performance optimization.",
+      "To execute a loop sequentially, ensuring that each iteration is run on a separate thread.",
+      "To limit the number of threads used in a loop based on available system resources.",
+      "To wait for the loop to complete before continuing with the next execution."
+    ]
+  },
+  {
+    "q": "What does the 'Thread.IsAlive' property in C# check?",
+    "o": [
+      "It checks whether a thread is still running or has finished executing.",
+      "It checks whether a thread is ready to start executing.",
+      "It checks whether a thread is blocked due to synchronization.",
+      "It checks whether a thread has been paused intentionally."
+    ]
+  },
+  {
+    "q": "Which of the following statements about 'async' and 'await' in C# is true?",
+    "o": [
+      "'async' allows the method to run asynchronously, while 'await' pauses the execution until the awaited task is completed.",
+      "'async' forces the method to execute synchronously, while 'await' runs the task in parallel.",
+      "'async' ensures that a method returns a value immediately, while 'await' blocks the thread.",
+      "'async' is only for CPU-bound operations, and 'await' is for I/O-bound tasks."
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'Thread.Sleep()' method in C#?",
+    "o": [
+      "It pauses the execution of the current thread for the specified amount of time.",
+      "It suspends all threads except the current one.",
+      "It makes the thread run faster by reducing the processing time of other threads.",
+      "It waits for other threads to finish before continuing execution."
+    ]
+  },
+  {
+    "q": "Which of the following is an advantage of using 'Task.WhenAll()' over multiple individual tasks in C#?",
+    "o": [
+      "It allows you to run multiple tasks concurrently and wait for all of them to complete.",
+      "It ensures that tasks are run sequentially to avoid thread interference.",
+      "It automatically adjusts the number of threads used based on system load.",
+      "It cancels all tasks if one task completes successfully."
+    ]
+  },
+  {
+    "q": "Which method should be used to create a new thread in C#?",
+    "o": [
+      "Thread.Start()",
+      "Task.Run()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Task.WhenAny()"
+    ]
+  },
+  {
+    "q": "In C#, what is the purpose of using a 'lock' statement?",
+    "o": [
+      "It ensures that only one thread can access a critical section of code at a time.",
+      "It suspends all threads from running until a specific condition is met.",
+      "It makes sure that threads run in a sequential manner.",
+      "It optimizes the performance of multi-threaded applications by reducing thread contention."
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to synchronize access to shared resources in C#?",
+    "o": [
+      "Using the 'lock' keyword to ensure exclusive access to the resource.",
+      "Using 'Thread.Join()' to synchronize thread completion before proceeding.",
+      "Using 'Thread.Sleep()' to avoid access conflicts between threads.",
+      "Using 'Task.WhenAll()' to synchronize tasks before accessing the shared resource."
+    ]
+  },
+  {
+    "q": "Which of the following describes 'Parallel.ForEach()' in C#?",
+    "o": [
+      "It executes a loop concurrently across multiple threads, processing elements of a collection in parallel.",
+      "It executes a loop sequentially and only uses a single thread.",
+      "It pauses the loop execution until all iterations have finished.",
+      "It processes only the first element in the collection and skips the rest."
+    ]
+  },
+  {
+    "q": "Which of the following is true about the 'Task.Run()' method in C#?",
+    "o": [
+      "It queues a task for execution on a separate thread and returns a Task object.",
+      "It executes a task synchronously on the calling thread.",
+      "It immediately pauses the calling thread until the task completes.",
+      "It runs the task only if there are idle threads in the system."
+    ]
+  },
+  {
+    "q": "Which of the following is a potential issue when using multiple threads in a C# application?",
+    "o": [
+      "Race conditions, where multiple threads attempt to modify shared data simultaneously.",
+      "The system will automatically adjust the thread priorities to avoid conflicts.",
+      "Threads will execute in a deterministic order, making the results predictable.",
+      "Memory usage will be reduced, as threads share memory automatically."
+    ]
+  },
+  {
+    "q": "What does the 'Thread.Abort()' method in C# do?",
+    "o": [
+      "It attempts to terminate a thread abruptly, forcing it to stop execution.",
+      "It pauses the thread and waits for the user to resume it.",
+      "It schedules the thread for execution after a certain delay.",
+      "It suspends all threads until one finishes executing."
+    ]
+  },
+  {
+    "q": "Which of the following methods can be used to start a task asynchronously in C#?",
+    "o": [
+      "Task.Run()",
+      "Thread.Start()",
+      "ThreadPool.QueueUserWorkItem()",
+      "All of the above"
+    ]
+  },
+  {
+    "q": "What does 'ThreadPool.QueueUserWorkItem()' do in C#?",
+    "o": [
+      "It schedules a method to run on a thread pool thread.",
+      "It starts a new thread to execute the method immediately.",
+      "It suspends the calling thread until a new thread is available in the pool.",
+      "It waits for all threads to finish before executing the method."
+    ]
+  },
+  {
+    "q": "What happens when a thread enters a 'Wait' state in C#?",
+    "o": [
+      "The thread is paused until a signal is received to continue.",
+      "The thread continues executing but temporarily stops yielding results.",
+      "The thread is terminated and cannot be resumed.",
+      "The thread is suspended for an indefinite period, using all available resources."
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about parallel programming in C#?",
+    "o": [
+      "Parallel programming allows multiple tasks to be executed simultaneously, often leading to improved performance on multi-core systems.",
+      "Parallel programming in C# is always slower than sequential execution due to thread management overhead.",
+      "Parallel programming is only applicable for I/O-bound operations, not CPU-bound tasks.",
+      "Parallel programming requires manual thread management to execute tasks concurrently."
+    ]
+  },
+  {
+    "q": "Which of the following is used to synchronize threads and prevent data races in C#?",
+    "o": [
+      "Monitor.Enter() and Monitor.Exit()",
+      "Thread.Sleep()",
+      "Thread.Interrupt()",
+      "Task.WhenAny()"
+    ]
+  },
+  {
+    "q": "Which keyword is used in C# to define a method that can be awaited in asynchronous programming?",
+    "o": [
+      "async",
+      "await",
+      "task",
+      "thread"
+    ]
+  },
+  {
+    "q": "Which of the following is an advantage of using 'async' and 'await' in C#?",
+    "o": [
+      "They allow non-blocking operations, enabling the application to remain responsive while waiting for a task to complete.",
+      "They force the method to execute synchronously on a separate thread.",
+      "They reduce the memory footprint by halting the execution of the method until the task is finished.",
+      "They automatically retry a failed task multiple times to ensure completion."
+    ]
+  },
+  {
+    "q": "What is the correct way to create a thread in C#?",
+    "o": [
+      "Thread t = new Thread(YourMethod); t.Start();",
+      "Thread.Start(YourMethod);",
+      "Thread.Execute(YourMethod);",
+      "Thread.Run(YourMethod);"
+    ]
+  },
+  {
+    "q": "What does the 'Task.WhenAny()' method do in C#?",
+    "o": [
+      "It returns a task that completes when any of the provided tasks complete.",
+      "It waits for all provided tasks to finish before continuing.",
+      "It cancels all tasks as soon as one completes.",
+      "It executes tasks in sequential order based on their start time."
+    ]
+  },
+  {
+    "q": "Which of the following is true about the 'Thread.Join()' method in C#?",
+    "o": [
+      "It blocks the calling thread until the thread on which it was called has finished executing.",
+      "It creates a new thread and runs the provided method on it.",
+      "It terminates the calling thread after a specified duration.",
+      "It pauses the thread to allow other threads to execute."
+    ]
+  },
+  {
+    "q": "What is the primary purpose of 'Thread.Sleep()' in C#?",
+    "o": [
+      "It pauses the execution of the current thread for a specified amount of time.",
+      "It makes the thread execute faster by reducing CPU usage.",
+      "It suspends all threads except the one that called it.",
+      "It schedules the thread for execution after a specified delay."
+    ]
+  },
+  {
+    "q": "What does 'ThreadPool.QueueUserWorkItem()' do in C#?",
+    "o": [
+      "It schedules a method for execution on a thread pool thread.",
+      "It creates a new thread and assigns it to the method.",
+      "It pauses the execution of a thread until it can be added to the thread pool.",
+      "It immediately executes the method in the calling thread."
+    ]
+  },
+  {
+    "q": "Which of the following methods are used to handle thread synchronization in C#?",
+    "o": [
+      "lock, Monitor, Mutex",
+      "Thread.Sleep, Thread.Join",
+      "Thread.Start, ThreadPool.QueueUserWorkItem",
+      "Task.Run, Task.WhenAll"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid syntax for creating and starting a task in C#?",
+    "o": [
+      "Task.Run(() => { // code here });",
+      "Task.Start(() => { // code here });",
+      "Task.Begin(() => { // code here });",
+      "Thread.Start(() => { // code here });"
+    ]
+  },
+  {
+    "q": "What is the difference between 'Task' and 'Thread' in C#?",
+    "o": [
+      "'Task' is used for asynchronous operations and is managed by the thread pool, while 'Thread' is used for creating individual threads.",
+      "'Thread' executes tasks asynchronously, while 'Task' is only for synchronous operations.",
+      "'Thread' handles multiple tasks concurrently, whereas 'Task' only executes one operation at a time.",
+      "'Task' has lower overhead than 'Thread' because it doesn't require explicit thread management."
+    ]
+  },
+  {
+    "q": "In C#, how do you prevent multiple threads from accessing a resource at the same time?",
+    "o": [
+      "Use synchronization methods like 'lock' or 'Monitor.Enter'.",
+      "Use 'Thread.Sleep()' to give other threads time to execute.",
+      "Use 'Task.WhenAny()' to ensure only one thread is executed.",
+      "Use 'Thread.Join()' to ensure one thread completes before another starts."
+    ]
+  },
+  {
+    "q": "What is the purpose of using 'async' and 'await' in C#?",
+    "o": [
+      "They allow for asynchronous programming, enabling non-blocking operations and improving the responsiveness of an application.",
+      "They execute tasks synchronously, ensuring that methods complete before continuing.",
+      "They execute tasks sequentially on a separate thread.",
+      "They limit the number of threads used in an application."
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to use 'Parallel.ForEach()' in C#?",
+    "o": [
+      "Parallel.ForEach(myCollection, item => { // code here });",
+      "Parallel.Execute(myCollection, item => { // code here });",
+      "Parallel.ExecuteEach(item => { // code here });",
+      "Parallel.For(myCollection, item => { // code here });"
+    ]
+  },
+  {
+    "q": "Which of the following will execute code asynchronously in C# without creating a new thread?",
+    "o": [
+      "Task.Run()",
+      "Thread.Start()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.Sleep()"
+    ]
+  },
+  {
+    "q": "What is the primary benefit of using the 'ThreadPool' in C# for multithreading?",
+    "o": [
+      "It reduces the overhead of thread creation by reusing threads from a pool.",
+      "It creates a new thread for every task, allowing better control over execution.",
+      "It increases CPU utilization by executing tasks in parallel on multiple CPUs.",
+      "It forces tasks to execute sequentially in the order they are added."
+    ]
+  },
+  {
+    "q": "In C#, which of the following statements about 'Mutex' is true?",
+    "o": [
+      "A 'Mutex' is used for cross-process synchronization, ensuring only one thread can access a resource at a time.",
+      "A 'Mutex' is used for synchronizing threads within the same process but not across processes.",
+      "A 'Mutex' blocks the calling thread until a specified timeout expires.",
+      "A 'Mutex' is only useful for I/O-bound operations, not CPU-bound operations."
+    ]
+  },
+  {
+    "q": "Which of the following methods can be used to wait for a thread to complete in C#?",
+    "o": [
+      "Thread.Join()",
+      "Thread.Wait()",
+      "Thread.Pause()",
+      "Thread.WaitFor()"
+    ]
+  },
+  {
+    "q": "What is the default behavior of a thread when it is started using the 'Thread.Start()' method in C#?",
+    "o": [
+      "The thread runs asynchronously and independently from the calling thread.",
+      "The thread runs synchronously and blocks the calling thread.",
+      "The thread waits for a signal to begin execution.",
+      "The thread enters a paused state until the calling thread finishes."
+    ]
+  },
+  {
+    "q": "In C#, which of the following is true about 'Parallel.For'?",
+    "o": [
+      "It executes a loop in parallel, utilizing multiple threads to execute iterations concurrently.",
+      "It guarantees that the iterations of the loop are executed sequentially.",
+      "It only runs the loop on a single thread, ignoring multi-core systems.",
+      "It automatically adjusts the number of iterations based on the CPU usage."
+    ]
+  },
+  {
+    "q": "What is the purpose of 'Monitor.Enter()' in C#?",
+    "o": [
+      "It acquires an exclusive lock on an object to ensure thread synchronization.",
+      "It pauses the current thread until other threads finish their work.",
+      "It releases a lock previously acquired by 'Monitor.Enter()'.",
+      "It schedules a task to run on the thread pool after acquiring the lock."
+    ]
+  },
+  {
+    "q": "Which of the following is a valid use of the 'async' keyword in C#?",
+    "o": [
+      "It is used to define a method that can be awaited and run asynchronously.",
+      "It creates a new thread for each task and executes it concurrently.",
+      "It pauses the method execution for a specified duration before resuming.",
+      "It makes the method return a synchronous result after waiting for a task."
+    ]
+  },
+  {
+    "q": "How can you prevent thread starvation in a multi-threaded application in C#?",
+    "o": [
+      "By using thread synchronization techniques like 'Monitor' or 'Mutex' to control access to resources.",
+      "By creating an infinite loop in the main thread to keep all threads active.",
+      "By setting the thread priority to 'Lowest' to prevent higher-priority threads from monopolizing CPU resources.",
+      "By creating a separate thread for each user request and letting the system manage them."
+    ]
+  },
+  {
+    "q": "In C#, how do you execute multiple asynchronous tasks concurrently and wait for all of them to finish?",
+    "o": [
+      "Task.WhenAll()",
+      "Task.WhenAny()",
+      "Thread.Join()",
+      "ThreadPool.QueueUserWorkItem()"
+    ]
+  },
+  {
+    "q": "What is the purpose of using the 'Task.WhenAny()' method in C#?",
+    "o": [
+      "It waits for the first task to complete out of a collection of tasks.",
+      "It waits for all tasks to complete before continuing.",
+      "It cancels the tasks once the first task completes.",
+      "It schedules all tasks to run concurrently and waits for the last one to finish."
+    ]
+  },
+  {
+    "q": "What is the difference between 'Thread.Sleep()' and 'Thread.Join()' in C#?",
+    "o": [
+      "'Thread.Sleep()' pauses the execution of the current thread, while 'Thread.Join()' blocks the calling thread until the specified thread has finished executing.",
+      "'Thread.Sleep()' blocks the calling thread, while 'Thread.Join()' schedules the thread for later execution.",
+      "'Thread.Sleep()' waits for the thread to complete, while 'Thread.Join()' pauses all threads in the process.",
+      "'Thread.Sleep()' makes the thread execute faster, while 'Thread.Join()' makes it execute slower."
+    ]
+  },
+  {
+    "q": "What is the role of the 'Task.Run()' method in C#?",
+    "o": [
+      "It schedules an asynchronous operation to run on a separate thread, allowing for non-blocking execution.",
+      "It creates a new thread and assigns the provided task to it for execution.",
+      "It synchronizes multiple tasks to execute on a single thread.",
+      "It pauses the calling thread until all tasks in the method are completed."
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to create a critical section in C# for thread synchronization?",
+    "o": [
+      "lock",
+      "Thread.Sleep()",
+      "Thread.Start()",
+      "Thread.Join()"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about 'async' and 'await' in C#?",
+    "o": [
+      "'async' defines an asynchronous method, and 'await' is used to pause the method's execution until a task completes.",
+      "'async' defines a synchronous method, and 'await' blocks the thread until completion.",
+      "'async' is used to define a thread, and 'await' is used to lock the thread during execution.",
+      "'async' and 'await' are used to execute tasks sequentially."
+    ]
+  },
+  {
+    "q": "What does the 'ThreadPool.QueueUserWorkItem()' method do in C#?",
+    "o": [
+      "It schedules a task to be executed by a thread from the thread pool.",
+      "It creates a new thread to execute the provided task.",
+      "It terminates the current thread and schedules a new one for execution.",
+      "It suspends all other threads while the provided task is executed."
+    ]
+  },
+  {
+    "q": "In C#, what is the purpose of the 'Monitor.Exit()' method?",
+    "o": [
+      "It releases a lock that was acquired using 'Monitor.Enter()' for thread synchronization.",
+      "It forces the current thread to wait until other threads have finished their work.",
+      "It prevents threads from accessing the critical section until the lock is released.",
+      "It executes the code inside the lock block asynchronously."
+    ]
+  },
+  {
+    "q": "Which of the following is used to ensure that only one thread executes a particular piece of code at a time in C#?",
+    "o": [
+      "lock",
+      "Thread.Join()",
+      "Task.WhenAll()",
+      "ThreadPool.QueueUserWorkItem()"
+    ]
+  },
+  {
+    "q": "What is the function of 'Task.WhenAny()' in C#?",
+    "o": [
+      "It waits for the first task to complete from a collection of tasks.",
+      "It waits for all tasks to complete before continuing.",
+      "It schedules tasks to run in parallel and waits for the last one to finish.",
+      "It cancels tasks once the first task completes."
+    ]
+  },
+  {
+    "q": "What is thread starvation in C#?",
+    "o": [
+      "Thread starvation occurs when threads with lower priority are not given enough CPU time, causing them to never execute.",
+      "Thread starvation happens when multiple threads try to access the same resource at the same time, leading to indefinite waiting.",
+      "Thread starvation occurs when a thread is blocked by other threads and cannot proceed with its task.",
+      "Thread starvation is the result of too many threads running concurrently, overwhelming the CPU."
+    ]
+  },
+  {
+    "q": "What is the purpose of 'Parallel.ForEach()' in C#?",
+    "o": [
+      "It runs a loop concurrently across multiple threads, executing iterations in parallel.",
+      "It executes a loop sequentially, one iteration at a time.",
+      "It waits for all loop iterations to complete before moving on.",
+      "It executes the loop on a single thread but optimizes CPU usage."
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'Thread.CurrentThread' property in C#?",
+    "o": [
+      "It returns the currently executing thread.",
+      "It sets the priority of the current thread.",
+      "It allows you to pause the execution of the current thread.",
+      "It creates a new thread for the current task."
+    ]
+  },
+  {
+    "q": "Which of the following is true about the 'Task' class in C#?",
+    "o": [
+      "The 'Task' class represents an asynchronous operation that can run in parallel with other tasks.",
+      "The 'Task' class is used to synchronize threads in a critical section.",
+      "The 'Task' class creates a new thread for each task, running them sequentially.",
+      "The 'Task' class can only be used for I/O-bound operations."
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to prevent thread interference in C#?",
+    "o": [
+      "Monitor.Enter()",
+      "Thread.Sleep()",
+      "Thread.Join()",
+      "Thread.Start()"
+    ]
+  },
+  {
+    "q": "In C#, what does the 'lock' keyword do?",
+    "o": [
+      "It ensures that only one thread can execute a critical section of code at a time.",
+      "It pauses the execution of a thread until the lock is acquired.",
+      "It creates a new thread for each operation within the lock block.",
+      "It prevents all other threads from executing during the lock period."
+    ]
+  },
+  {
+    "q": "What is the main advantage of using 'async' and 'await' in C#?",
+    "o": [
+      "They allow asynchronous operations to run without blocking the main thread, improving responsiveness.",
+      "They ensure that all tasks are executed sequentially, improving performance.",
+      "They synchronize tasks to execute in parallel on multiple threads.",
+      "They allow you to manually manage thread creation for each task."
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to create a thread in C#?",
+    "o": [
+      "Thread thread = new Thread(() => { /* code */ }); thread.Start();",
+      "Thread thread = new Thread(() => { /* code */ }); thread.Execute();",
+      "Thread thread = Thread.Start(() => { /* code */ });",
+      "Thread thread = new Thread(); thread.Run(() => { /* code */ });"
+    ]
+  },
+  {
+    "q": "What is the primary function of the 'ThreadPool' class in C#?",
+    "o": [
+      "It provides a pool of threads to execute tasks asynchronously, reducing thread creation overhead.",
+      "It creates a fixed number of threads for execution and assigns them tasks in a round-robin fashion.",
+      "It schedules tasks to run sequentially, one after another.",
+      "It automatically adjusts the number of threads based on CPU utilization."
+    ]
+  },
+  {
+    "q": "What does the 'Task.Delay()' method do in C#?",
+    "o": [
+      "It asynchronously delays the execution of the current task for a specified period without blocking the thread.",
+      "It pauses the execution of the current thread for a specified time.",
+      "It schedules a task to run after a specified delay on the thread pool.",
+      "It creates a new thread that waits for a specified time before executing."
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to execute a task asynchronously in C#?",
+    "o": [
+      "Task.Run(() => { /* code */ });",
+      "Task.Execute(() => { /* code */ });",
+      "Thread.Start(() => { /* code */ });",
+      "Thread.Run(() => { /* code */ });"
+    ]
+  },
+  {
+    "q": "What is the benefit of using 'Parallel.ForEach()' in C#?",
+    "o": [
+      "It allows parallel execution of iterations of a loop across multiple threads, improving performance for CPU-bound operations.",
+      "It executes the loop sequentially, ensuring only one iteration runs at a time.",
+      "It schedules the loop iterations for execution on the main thread for easier management.",
+      "It synchronizes all iterations of the loop to ensure correct output."
+    ]
+  },
+  {
+    "q": "Which of the following is the correct method to start a thread in C#?",
+    "o": [
+      "thread.Start();",
+      "thread.Run();",
+      "thread.Begin();",
+      "thread.Execute();"
+    ]
+  },
+  {
+    "q": "What is the main difference between 'Thread' and 'Task' in C#?",
+    "o": [
+      "'Thread' represents a unit of work with low-level control, while 'Task' represents an asynchronous operation that can be scheduled and managed by the runtime.",
+      "'Thread' is used for parallel programming, while 'Task' is used for synchronization.",
+      "'Task' directly interacts with the operating system, while 'Thread' interacts only within the process.",
+      "'Task' can run synchronously, while 'Thread' can only run asynchronously."
+    ]
+  },
+  {
+    "q": "Which of the following is used to perform thread synchronization in C#?",
+    "o": [
+      "Monitor.Enter() and Monitor.Exit()",
+      "Thread.Join() and Thread.Sleep()",
+      "Thread.Start() and Thread.Pause()",
+      "ThreadPool.QueueUserWorkItem()"
+    ]
+  },
+  {
+    "q": "What happens when multiple threads try to access the same resource at the same time in C#?",
+    "o": [
+      "It can result in data corruption unless synchronization mechanisms like locks are used.",
+      "It will automatically pause one of the threads to prevent conflicts.",
+      "It will cause the system to crash.",
+      "It will lead to slower execution without causing issues."
+    ]
+  },
+  {
+    "q": "What is the main advantage of using 'async' and 'await' keywords in C# for I/O-bound operations?",
+    "o": [
+      "They allow the operation to be performed asynchronously without blocking the main thread, improving responsiveness.",
+      "They ensure that the operation is always executed on a separate thread.",
+      "They guarantee that the operation is always executed synchronously.",
+      "They synchronize multiple tasks to ensure that I/O operations are completed in order."
+    ]
+  },
+  {
+    "q": "Which of the following methods is used to schedule an asynchronous task in C#?",
+    "o": [
+      "Task.Run()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.Start()",
+      "Thread.Join()"
+    ]
+  },
+  {
+    "q": "What is the primary purpose of using 'Thread.Sleep()' in C#?",
+    "o": [
+      "It pauses the current thread for a specified amount of time, allowing other threads to execute.",
+      "It forces the current thread to execute after a specific period.",
+      "It synchronizes the thread with the main application thread.",
+      "It terminates the current thread after a specified period."
+    ]
+  },
+  {
+    "q": "Which of the following C# constructs is used to run multiple iterations of a loop in parallel?",
+    "o": [
+      "Parallel.For()",
+      "Thread.For()",
+      "Task.Run()",
+      "Thread.Start()"
+    ]
+  },
+  {
+    "q": "What is 'thread pooling' in C#?",
+    "o": [
+      "It reuses a pool of threads to execute tasks, reducing the overhead of creating and destroying threads.",
+      "It creates a new thread for every task execution, ensuring that each task runs independently.",
+      "It groups tasks together into batches and executes them on a single thread.",
+      "It automatically synchronizes tasks across multiple threads."
+    ]
+  },
+  {
+    "q": "Which of the following is a key feature of the 'Thread' class in C#?",
+    "o": [
+      "It allows the creation and management of threads that execute code in parallel.",
+      "It automatically handles synchronization of threads.",
+      "It runs tasks asynchronously on a single thread.",
+      "It is used to optimize memory usage by creating threads dynamically."
+    ]
+  },
+  {
+    "q": "What is the primary purpose of using 'Monitor.Enter()' and 'Monitor.Exit()' in C#?",
+    "o": [
+      "They are used to implement thread synchronization to prevent multiple threads from accessing critical sections of code simultaneously.",
+      "They create and start new threads in a synchronized manner.",
+      "They are used to delay the execution of a thread by a specified amount of time.",
+      "They allow for parallel execution of multiple threads without synchronization."
+    ]
+  },
+  {
+    "q": "What is the main advantage of using 'async' and 'await' in C# over traditional threading methods?",
+    "o": [
+      "They allow asynchronous operations without blocking the calling thread, improving responsiveness and scalability.",
+      "They run tasks in parallel, ensuring faster execution of multiple threads.",
+      "They guarantee that tasks will execute sequentially on the main thread.",
+      "They automatically handle synchronization of threads."
+    ]
+  },
+  {
+    "q": "Which of the following correctly describes the 'Thread.Join()' method in C#?",
+    "o": [
+      "It blocks the calling thread until the thread it is called on has completed its execution.",
+      "It starts a new thread to execute a given task.",
+      "It allows a thread to execute while waiting for the completion of other threads.",
+      "It pauses the current thread for a specified amount of time."
+    ]
+  },
+  {
+    "q": "Which of the following statements about thread synchronization in C# is correct?",
+    "o": [
+      "Thread synchronization ensures that only one thread can access a critical section of code at a time.",
+      "Thread synchronization guarantees parallel execution of threads.",
+      "Thread synchronization prevents any task from running asynchronously.",
+      "Thread synchronization is not required when using the 'Task' class."
+    ]
+  },
+  {
+    "q": "Which C# class is used to execute multiple operations concurrently in a thread-safe manner?",
+    "o": [
+      "Parallel",
+      "Thread",
+      "Task",
+      "ThreadPool"
+    ]
+  },
+  {
+    "q": "What is the purpose of using the 'ThreadPool' class in C#?",
+    "o": [
+      "It provides a pool of threads to execute multiple tasks, optimizing thread management and reducing overhead.",
+      "It ensures that threads are executed sequentially to avoid race conditions.",
+      "It schedules tasks to execute on the main thread to avoid synchronization issues.",
+      "It automatically handles memory management for threads."
+    ]
+  },
+  {
+    "q": "Which of the following methods can be used to create and execute tasks asynchronously in C#?",
+    "o": [
+      "Task.Run()",
+      "Thread.Start()",
+      "ThreadPool.QueueUserWorkItem()",
+      "Thread.Execute()"
+    ]
+  },
+  {
+    "q": "What does the 'async' keyword do in a method definition in C#?",
+    "o": [
+      "It marks the method as asynchronous, allowing the use of 'await' within it to run operations without blocking the calling thread.",
+      "It ensures that the method will always execute on a separate thread.",
+      "It prevents the method from blocking the calling thread by using thread pooling.",
+      "It guarantees that the method will execute only after all other tasks have completed."
+    ]
+  }
+]

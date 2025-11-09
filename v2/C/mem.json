@@ -1,0 +1,3080 @@
+[
+  {
+    "q": "Which function is used in C to dynamically allocate memory for an array and initialize all elements to zero?",
+    "o": [
+      "calloc",
+      "malloc",
+      "realloc",
+      "free"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *ptr = (int *)malloc(sizeof(int));\n    *ptr = 42;\n    printf(\"%d\", *ptr);\n    free(ptr);\n    return 0;\n}",
+    "o": [
+      "42",
+      "0",
+      "Garbage value",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which C function is used to change the size of previously allocated memory?",
+    "o": [
+      "realloc",
+      "malloc",
+      "calloc",
+      "resize"
+    ]
+  },
+  {
+    "q": "What does the following C code do?",
+    "c": "int *arr = (int *)calloc(5, sizeof(int));",
+    "o": [
+      "Allocates memory for 5 integers and initializes them to 0",
+      "Allocates memory for 5 integers without initialization",
+      "Resizes an already allocated memory block",
+      "Frees the memory for 5 integers"
+    ]
+  },
+  {
+    "q": "What is the primary cause of memory leaks in C programs?",
+    "o": [
+      "Failing to call free() after dynamic memory allocation",
+      "Using malloc instead of calloc",
+      "Using global variables",
+      "Declaring local arrays"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *ptr = (int *)malloc(3 * sizeof(int));\n    ptr[0] = 10;\n    ptr[1] = 20;\n    ptr[2] = 30;\n    free(ptr);\n    printf(\"%d\", ptr[1]);\n    return 0;\n}",
+    "o": [
+      "Undefined behavior",
+      "20",
+      "0",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct way to free dynamically allocated memory in C?",
+    "o": [
+      "free(ptr);",
+      "delete(ptr);",
+      "release(ptr);",
+      "dispose(ptr);"
+    ]
+  },
+  {
+    "q": "How do you dynamically allocate memory for a structure in C?",
+    "o": [
+      "struct Person *p = (struct Person *)malloc(sizeof(struct Person));",
+      "Person p = malloc(sizeof(struct Person));",
+      "struct Person *p = malloc();",
+      "allocate(struct Person *p);"
+    ]
+  },
+  {
+    "q": "Which of the following correctly reallocates memory to increase size of an array?",
+    "c": "int *arr = malloc(5 * sizeof(int));\narr = realloc(arr, 10 * sizeof(int));",
+    "o": [
+      "Correctly reallocates memory for 10 integers",
+      "Leads to memory leak",
+      "Compilation error",
+      "Only reallocates memory for 5 integers"
+    ]
+  },
+  {
+    "q": "What happens if you use memory after it has been freed using free()?",
+    "o": [
+      "It results in undefined behavior",
+      "It works normally",
+      "It gives a segmentation fault",
+      "It prints a warning"
+    ]
+  },
+  {
+    "q": "Which of the following statements about malloc() is TRUE?",
+    "o": [
+      "malloc() allocates uninitialized memory on the heap",
+      "malloc() allocates zero-initialized memory",
+      "malloc() initializes memory to NULL",
+      "malloc() can only be used with arrays"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *p = malloc(2 * sizeof(int));\n    p[0] = 1; p[1] = 2;\n    free(p);\n    p = NULL;\n    printf(\"Freed and nullified\\n\");\n    return 0;\n}",
+    "o": [
+      "Freed and nullified",
+      "1 2",
+      "Compilation error",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "What does realloc() do when passed a NULL pointer?",
+    "o": [
+      "It behaves like malloc()",
+      "It frees the memory",
+      "It causes a segmentation fault",
+      "It returns NULL always"
+    ]
+  },
+  {
+    "q": "What type of memory is returned by dynamic memory allocation functions like malloc()?",
+    "o": [
+      "Heap memory",
+      "Stack memory",
+      "Global memory",
+      "Register memory"
+    ]
+  },
+  {
+    "q": "What is the potential issue with the following code snippet?",
+    "c": "#include <stdlib.h>\n\nvoid leak() {\n    int *ptr = malloc(sizeof(int) * 100);\n    // Forgot to free(ptr)\n}",
+    "o": [
+      "It causes a memory leak",
+      "It causes a segmentation fault",
+      "It causes a stack overflow",
+      "It initializes memory with zero"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to allocate memory for an array of 10 floats?",
+    "o": [
+      "float *arr = (float *)malloc(10 * sizeof(float));",
+      "float arr = malloc(10);",
+      "float *arr = malloc(float * 10);",
+      "float arr = (float)malloc(10);"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\ntypedef struct {\n    int *scores;\n} Student;\n\nint main() {\n    Student s;\n    s.scores = malloc(3 * sizeof(int));\n    s.scores[0] = 10;\n    printf(\"%d\", s.scores[0]);\n    free(s.scores);\n    return 0;\n}",
+    "o": [
+      "10",
+      "0",
+      "Garbage value",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which of the following may happen if you do not check the return value of malloc()?",
+    "o": [
+      "You may dereference a NULL pointer",
+      "Memory will be initialized with garbage",
+      "The system will crash immediately",
+      "malloc() will allocate stack memory"
+    ]
+  },
+  {
+    "q": "Which function is used to release dynamically allocated memory back to the system?",
+    "o": [
+      "free()",
+      "delete()",
+      "remove()",
+      "release()"
+    ]
+  },
+  {
+    "q": "In dynamic memory allocation, what is a common symptom of accessing memory out of bounds?",
+    "o": [
+      "Segmentation fault",
+      "Compilation error",
+      "Warning message",
+      "Memory leak"
+    ]
+  },
+  {
+    "q": "What happens if you call free() on a NULL pointer?",
+    "o": [
+      "Nothing happens; the call is safely ignored",
+      "It causes a segmentation fault",
+      "It prints an error",
+      "It resets the heap"
+    ]
+  },
+  {
+    "q": "Which of the following will result in a memory leak?",
+    "c": "#include <stdlib.h>\n\nint *allocate() {\n    int *arr = malloc(10 * sizeof(int));\n    arr = malloc(20 * sizeof(int));\n    return arr;\n}",
+    "o": [
+      "Reassigning malloc without freeing the first allocation",
+      "Using malloc inside a function",
+      "Returning a pointer from a function",
+      "Using sizeof incorrectly"
+    ]
+  },
+  {
+    "q": "Which of these correctly resizes a block of dynamically allocated memory?",
+    "o": [
+      "ptr = realloc(ptr, new_size);",
+      "realloc(ptr);",
+      "resize(ptr, new_size);",
+      "ptr = resize(ptr);"
+    ]
+  },
+  {
+    "q": "Which of these is TRUE about calloc() and malloc()?",
+    "o": [
+      "calloc() initializes memory to zero; malloc() does not",
+      "malloc() is slower than calloc() in all cases",
+      "malloc() initializes memory to NULL",
+      "calloc() requires casting while malloc() doesn't"
+    ]
+  },
+  {
+    "q": "What will be the output of this program?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    char *str = malloc(6);\n    str[0] = 'H'; str[1] = 'e'; str[2] = 'l'; str[3] = 'l'; str[4] = 'o'; str[5] = '\\0';\n    printf(\"%s\", str);\n    free(str);\n    return 0;\n}",
+    "o": [
+      "Hello",
+      "Hell",
+      "Hel",
+      "Undefined behavior"
+    ]
+  },
+  {
+    "q": "What is the risk of calling free() more than once on the same pointer?",
+    "o": [
+      "It leads to undefined behavior",
+      "It frees more memory than allocated",
+      "It causes a memory leak",
+      "The pointer gets converted to NULL"
+    ]
+  },
+  {
+    "q": "Which code snippet correctly allocates and initializes a 2D array using dynamic memory?",
+    "c": "int **arr = malloc(rows * sizeof(int *));\nfor(int i = 0; i < rows; i++) {\n    arr[i] = calloc(cols, sizeof(int));\n}",
+    "o": [
+      "Correctly allocates a 2D array with all values initialized to zero",
+      "Allocates a 1D array only",
+      "Initializes values to garbage",
+      "Compiles but doesn't allocate memory"
+    ]
+  },
+  {
+    "q": "Which of the following leads to a dangling pointer?",
+    "o": [
+      "Accessing memory after it has been freed",
+      "Allocating memory without using it",
+      "Using malloc inside a loop",
+      "Casting malloc to another type"
+    ]
+  },
+  {
+    "q": "What will be the result of the following code?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\ntypedef struct {\n    int *data;\n} Box;\n\nint main() {\n    Box b;\n    b.data = malloc(sizeof(int));\n    *b.data = 100;\n    printf(\"%d\", *b.data);\n    free(b.data);\n    return 0;\n}",
+    "o": [
+      "100",
+      "0",
+      "Garbage value",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "What should you always do after freeing dynamically allocated memory?",
+    "o": [
+      "Set the pointer to NULL",
+      "Reallocate the memory",
+      "Declare it again",
+      "Reinitialize the pointer with garbage"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *arr = calloc(3, sizeof(int));\n    printf(\"%d\", arr[1]);\n    free(arr);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "Garbage value",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What is the correct way to avoid memory leaks when reallocating memory?",
+    "o": [
+      "Use a temporary pointer to hold the new memory block before assigning",
+      "Directly assign realloc to the original pointer",
+      "Free the old pointer first, then call realloc",
+      "Assign realloc to a global pointer"
+    ]
+  },
+  {
+    "q": "What does the sizeof operator return when used with a pointer?",
+    "o": [
+      "The size of the pointer type",
+      "The size of the memory block pointed to",
+      "The number of elements the pointer can hold",
+      "The value stored in the pointer"
+    ]
+  },
+  {
+    "q": "Which function is used to allocate memory for an array and initialize it to zero?",
+    "o": [
+      "calloc()",
+      "malloc()",
+      "realloc()",
+      "initalloc()"
+    ]
+  },
+  {
+    "q": "What will this code do?",
+    "c": "#include <stdlib.h>\n\nint main() {\n    int *p = malloc(5 * sizeof(int));\n    free(p);\n    free(p);\n    return 0;\n}",
+    "o": [
+      "Cause undefined behavior due to double free",
+      "Safely ignore second free",
+      "Prints an error message",
+      "Fails to compile"
+    ]
+  },
+  {
+    "q": "Why is it important to free memory allocated with malloc or calloc?",
+    "o": [
+      "To avoid memory leaks",
+      "To avoid compilation errors",
+      "To increase program speed",
+      "To switch to stack memory"
+    ]
+  },
+  {
+    "q": "What will be the output of the following program?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *ptr = malloc(sizeof(int));\n    *ptr = 25;\n    printf(\"%d\", *ptr);\n    free(ptr);\n    return 0;\n}",
+    "o": [
+      "25",
+      "0",
+      "Garbage value",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "Which of the following best describes realloc() behavior when shrinking memory?",
+    "o": [
+      "It may reduce the memory block and preserve existing data",
+      "It always creates a new block of memory",
+      "It fills new memory with zeros",
+      "It deletes the original pointer"
+    ]
+  },
+  {
+    "q": "Which of the following is a sign of a memory leak in a C program?",
+    "o": [
+      "Gradual increase in memory usage during execution",
+      "Frequent segmentation faults",
+      "Compilation errors",
+      "Pointer arithmetic errors"
+    ]
+  },
+  {
+    "q": "What is the correct way to dynamically allocate memory for a structure?",
+    "c": "typedef struct {\n    int id;\n    char *name;\n} Student;",
+    "o": [
+      "Student *s = malloc(sizeof(Student));",
+      "Student s = malloc(sizeof(Student));",
+      "Student *s = malloc(Student);",
+      "Student s = malloc(Student *)"
+    ]
+  },
+  {
+    "q": "What is the default value of memory allocated by malloc()?",
+    "o": [
+      "Garbage value",
+      "Zero",
+      "NULL",
+      "Depends on the system"
+    ]
+  },
+  {
+    "q": "What will happen if you access memory that was freed using free()?",
+    "o": [
+      "It leads to undefined behavior",
+      "It resets the pointer",
+      "It reinitializes the memory",
+      "It throws a compile-time error"
+    ]
+  },
+  {
+    "q": "Which of the following is true about realloc()?",
+    "o": [
+      "It can be used to expand or shrink a previously allocated block",
+      "It can only expand memory",
+      "It initializes new memory to zero",
+      "It cannot be used after malloc()"
+    ]
+  },
+  {
+    "q": "What will this program output?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *nums = malloc(3 * sizeof(int));\n    nums[0] = 1; nums[1] = 2; nums[2] = 3;\n    nums = realloc(nums, 5 * sizeof(int));\n    nums[3] = 4; nums[4] = 5;\n    printf(\"%d\", nums[4]);\n    free(nums);\n    return 0;\n}",
+    "o": [
+      "5",
+      "3",
+      "0",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "Which code snippet correctly frees all allocated memory for a dynamic 2D array?",
+    "c": "for (int i = 0; i < rows; i++) {\n    free(matrix[i]);\n}\nfree(matrix);",
+    "o": [
+      "Properly frees a 2D array",
+      "Frees only the first row",
+      "Does not compile",
+      "Leads to a memory leak"
+    ]
+  },
+  {
+    "q": "What is a memory leak?",
+    "o": [
+      "Memory that was allocated but never freed",
+      "Memory freed more than once",
+      "Stack overflow error",
+      "Use of uninitialized pointer"
+    ]
+  },
+  {
+    "q": "Which of the following statements is correct regarding dynamic memory allocation in structures?",
+    "o": [
+      "You can allocate memory to structure members using malloc",
+      "malloc cannot be used with structures",
+      "Only arrays can be dynamically allocated",
+      "calloc is required for all structure memory"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\ntypedef struct {\n    int *arr;\n} Data;\n\nint main() {\n    Data d;\n    d.arr = malloc(sizeof(int));\n    *d.arr = 42;\n    printf(\"%d\", *d.arr);\n    free(d.arr);\n    return 0;\n}",
+    "o": [
+      "42",
+      "0",
+      "Segmentation fault",
+      "Compile error"
+    ]
+  },
+  {
+    "q": "Which function is used to deallocate dynamically allocated memory?",
+    "o": [
+      "free()",
+      "release()",
+      "delete()",
+      "remove()"
+    ]
+  },
+  {
+    "q": "What will be the result if you forget to free memory before a program exits?",
+    "o": [
+      "The memory remains allocated until the OS reclaims it",
+      "The memory is automatically freed",
+      "The program will crash",
+      "It causes a syntax error"
+    ]
+  },
+  {
+    "q": "Which function should be used when you want zero-initialized memory?",
+    "o": [
+      "calloc()",
+      "malloc()",
+      "realloc()",
+      "alloc()"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *p = malloc(2 * sizeof(int));\n    p[0] = 10;\n    p[1] = 20;\n    free(p);\n    printf(\"%d\", p[0]);\n    return 0;\n}",
+    "o": [
+      "Undefined behavior",
+      "10",
+      "0",
+      "Compile-time error"
+    ]
+  },
+  {
+    "q": "Why is it dangerous to use a pointer after calling free() on it?",
+    "o": [
+      "The memory may have been reallocated or corrupted",
+      "The pointer becomes NULL automatically",
+      "It will raise a compile-time error",
+      "It always causes a segmentation fault"
+    ]
+  },
+  {
+    "q": "How can you check if malloc() failed to allocate memory?",
+    "o": [
+      "Check if the returned pointer is NULL",
+      "Check if the returned pointer is 0",
+      "Use sizeof on the pointer",
+      "There is no way to check"
+    ]
+  },
+  {
+    "q": "What will the following code print?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *arr = calloc(4, sizeof(int));\n    printf(\"%d\", arr[2]);\n    free(arr);\n    return 0;\n}",
+    "o": [
+      "0",
+      "Garbage value",
+      "4",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "Which is the correct sequence of operations for safe memory reallocation?",
+    "o": [
+      "temp = realloc(ptr, new_size); if (temp) ptr = temp;",
+      "ptr = realloc(ptr, new_size);",
+      "realloc(ptr, new_size);",
+      "free(ptr); realloc(ptr, new_size);"
+    ]
+  },
+  {
+    "q": "Which of the following can cause a memory leak?",
+    "o": [
+      "Allocating memory and losing the reference without freeing",
+      "Accessing freed memory",
+      "Double freeing the same memory",
+      "Using calloc instead of malloc"
+    ]
+  },
+  {
+    "q": "What will this code do?",
+    "c": "#include <stdlib.h>\n\ntypedef struct {\n    int *data;\n} Box;\n\nint main() {\n    Box *b = malloc(sizeof(Box));\n    b->data = malloc(sizeof(int));\n    *b->data = 100;\n    free(b);\n    return 0;\n}",
+    "o": [
+      "Cause a memory leak (inner malloc not freed)",
+      "Free all allocated memory properly",
+      "Compile-time error due to pointer dereference",
+      "Cause a segmentation fault"
+    ]
+  },
+  {
+    "q": "Which of the following statements is FALSE about dynamic memory in C?",
+    "o": [
+      "Once memory is freed, it can be used safely again without issues",
+      "malloc does not initialize memory",
+      "calloc initializes memory to zero",
+      "Memory must be freed manually to avoid leaks"
+    ]
+  },
+  {
+    "q": "What happens when realloc() fails?",
+    "o": [
+      "It returns NULL and original block is not freed",
+      "It frees the original block automatically",
+      "It throws a runtime error",
+      "It crashes the program immediately"
+    ]
+  },
+  {
+    "q": "What will happen if you free a NULL pointer in C?",
+    "o": [
+      "It is safe and nothing happens",
+      "It causes a segmentation fault",
+      "It results in a compile-time error",
+      "It frees unrelated memory"
+    ]
+  },
+  {
+    "q": "Identify the issue in the code below.",
+    "c": "#include <stdlib.h>\nint main() {\n    int *p = malloc(sizeof(int) * 5);\n    p = malloc(sizeof(int) * 10);\n    return 0;\n}",
+    "o": [
+      "Memory leak due to lost reference to original allocation",
+      "Double free error",
+      "Syntax error in malloc",
+      "p is not initialized"
+    ]
+  },
+  {
+    "q": "Which of the following statements about calloc() is TRUE?",
+    "o": [
+      "calloc() initializes allocated memory to zero",
+      "calloc() allocates uninitialized memory",
+      "calloc() is faster than malloc()",
+      "calloc() does not require freeing"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *p = malloc(sizeof(int));\n    *p = 7;\n    free(p);\n    *p = 9;\n    printf(\"%d\", *p);\n    return 0;\n}",
+    "o": [
+      "Undefined behavior",
+      "9",
+      "7",
+      "0"
+    ]
+  },
+  {
+    "q": "When using realloc, what is a safe way to avoid memory leaks if the operation fails?",
+    "o": [
+      "Use a temporary pointer to hold the realloc result",
+      "Directly assign realloc to original pointer",
+      "Call free before realloc",
+      "Ignore the result and continue"
+    ]
+  },
+  {
+    "q": "Which function is typically used to release memory allocated dynamically?",
+    "o": [
+      "free()",
+      "delete()",
+      "release()",
+      "remove()"
+    ]
+  },
+  {
+    "q": "What is the role of sizeof operator in dynamic memory allocation?",
+    "o": [
+      "It helps calculate correct memory size in bytes",
+      "It frees unused memory",
+      "It initializes the memory",
+      "It checks memory leaks"
+    ]
+  },
+  {
+    "q": "How can you dynamically allocate memory for an array of 10 structures in C?",
+    "o": [
+      "struct MyStruct *arr = malloc(10 * sizeof(struct MyStruct));",
+      "struct MyStruct arr = malloc(10);",
+      "MyStruct arr = calloc(10);",
+      "malloc(10 * MyStruct);"
+    ]
+  },
+  {
+    "q": "What happens if you call free() on memory that was never dynamically allocated?",
+    "o": [
+      "It causes undefined behavior",
+      "It has no effect",
+      "It releases the memory safely",
+      "It results in a warning only"
+    ]
+  },
+  {
+    "q": "Which of the following best describes a memory leak?",
+    "o": [
+      "Allocated memory that is no longer accessible",
+      "Accessing memory after it is freed",
+      "Allocating memory using malloc",
+      "Using pointers to dynamic memory"
+    ]
+  },
+  {
+    "q": "What is the default value of memory allocated using malloc() in C?",
+    "o": [
+      "Garbage or undefined values",
+      "All bytes set to zero",
+      "Depends on compiler",
+      "All bytes set to one"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *arr = calloc(3, sizeof(int));\n    printf(\"%d\", arr[1]);\n    free(arr);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "Undefined",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "What will happen if realloc is called with a NULL pointer?",
+    "o": [
+      "It behaves like malloc",
+      "It frees the memory",
+      "It causes a segmentation fault",
+      "It returns NULL always"
+    ]
+  },
+  {
+    "q": "What mistake does this code make?",
+    "c": "#include <stdlib.h>\nint main() {\n    int *p;\n    *p = 100;\n    return 0;\n}",
+    "o": [
+      "Dereferencing an uninitialized pointer",
+      "Double free",
+      "Invalid malloc usage",
+      "Memory leak"
+    ]
+  },
+  {
+    "q": "Which of the following is true about freeing dynamic memory?",
+    "o": [
+      "free() should be called only once per allocation",
+      "free() can be called multiple times safely",
+      "free() is optional for malloc/calloc",
+      "free() also zeroes the memory"
+    ]
+  },
+  {
+    "q": "Which of the following statements correctly allocates dynamic memory for a string of 20 characters?",
+    "o": [
+      "char *str = malloc(20 * sizeof(char));",
+      "char str = malloc(20);",
+      "char *str = malloc(char * 20);",
+      "char *str = alloc(20);"
+    ]
+  },
+  {
+    "q": "What is the output of this program?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *ptr = malloc(3 * sizeof(int));\n    ptr[0] = 1;\n    ptr[1] = 2;\n    ptr[2] = 3;\n    ptr = realloc(ptr, 2 * sizeof(int));\n    printf(\"%d\", ptr[2]);\n    free(ptr);\n    return 0;\n}",
+    "o": [
+      "Undefined behavior",
+      "3",
+      "0",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "What does realloc do if the new size is zero and the pointer is not NULL?",
+    "o": [
+      "Frees the memory block and returns NULL",
+      "Raises a compile-time error",
+      "Does nothing",
+      "Frees the memory and returns original pointer"
+    ]
+  },
+  {
+    "q": "Why is dynamic memory useful when dealing with structures in C?",
+    "o": [
+      "It allows flexible and runtime-sized data fields",
+      "It increases compile-time performance",
+      "It removes the need for pointers",
+      "It avoids segmentation faults automatically"
+    ]
+  },
+  {
+    "q": "How to dynamically allocate memory inside a structure for a character array?",
+    "o": [
+      "Use malloc in a struct member (e.g., s.name = malloc(size);)",
+      "Use calloc for the struct only",
+      "Declare char name[100] in struct",
+      "Use realloc directly on struct"
+    ]
+  },
+  {
+    "q": "Which condition must be checked after using malloc() to ensure memory was allocated?",
+    "o": [
+      "Check if the returned pointer is NULL",
+      "Check if the pointer is less than 0",
+      "Check if sizeof(pointer) > 0",
+      "No check is needed"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *p = malloc(2 * sizeof(int));\n    if (p) {\n        p[0] = 5;\n        p[1] = 10;\n        free(p);\n        printf(\"%d\", p[0]);\n    }\n    return 0;\n}",
+    "o": [
+      "Undefined behavior",
+      "5",
+      "0",
+      "10"
+    ]
+  },
+  {
+    "q": "How is calloc different from malloc in C?",
+    "o": [
+      "calloc initializes memory to zero",
+      "calloc cannot be used for arrays",
+      "calloc is faster than malloc",
+      "calloc returns NULL always"
+    ]
+  },
+  {
+    "q": "Which of the following best avoids memory leaks when using realloc?",
+    "o": [
+      "Store realloc's return in a temporary pointer",
+      "Always use realloc in a loop",
+      "Free memory before realloc",
+      "Assign realloc result directly to original pointer"
+    ]
+  },
+  {
+    "q": "Why might you use dynamic memory for struct members?",
+    "o": [
+      "To store variable-length data like strings",
+      "To improve execution speed",
+      "To avoid using malloc",
+      "Because global variables can’t be used in structs"
+    ]
+  },
+  {
+    "q": "Identify the memory issue in this code:",
+    "c": "#include <stdlib.h>\nint main() {\n    int *p = malloc(sizeof(int));\n    free(p);\n    free(p);\n    return 0;\n}",
+    "o": [
+      "Double free error",
+      "Memory leak",
+      "Uninitialized pointer",
+      "Null pointer dereference"
+    ]
+  },
+  {
+    "q": "What does this code do?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\ntypedef struct {\n    char *name;\n} Student;\nint main() {\n    Student s;\n    s.name = malloc(20);\n    sprintf(s.name, \"Alice\");\n    printf(\"%s\", s.name);\n    free(s.name);\n    return 0;\n}",
+    "o": [
+      "Dynamically allocates memory for struct member 'name'",
+      "Statically allocates memory for name",
+      "Fails because name is uninitialized",
+      "Segmentation fault due to invalid memory"
+    ]
+  },
+  {
+    "q": "What is a consequence of not calling free() after malloc()?",
+    "o": [
+      "Memory leak",
+      "Compile-time error",
+      "Stack overflow",
+      "Segmentation fault immediately"
+    ]
+  },
+  {
+    "q": "What does realloc(NULL, size) return?",
+    "o": [
+      "Same as malloc(size)",
+      "Same as calloc(1, size)",
+      "Returns NULL always",
+      "Frees all memory"
+    ]
+  },
+  {
+    "q": "Which code snippet correctly uses realloc?",
+    "c": "#include <stdlib.h>\nint *resize_array(int *arr, int new_size) {\n    int *temp = realloc(arr, new_size * sizeof(int));\n    if (temp == NULL) return arr;\n    return temp;\n}",
+    "o": [
+      "Safely reallocates memory with backup pointer",
+      "Incorrect because realloc is inside if",
+      "Incorrect use of sizeof",
+      "Cannot use realloc with int arrays"
+    ]
+  },
+  {
+    "q": "Which function in C is used to release previously allocated memory?",
+    "o": [
+      "free()",
+      "delete()",
+      "remove()",
+      "release()"
+    ]
+  },
+  {
+    "q": "What will be the output of this code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *ptr = (int*)calloc(3, sizeof(int));\n    printf(\"%d\", ptr[2]);\n    free(ptr);\n    return 0;\n}",
+    "o": [
+      "0",
+      "Garbage value",
+      "Segmentation fault",
+      "3"
+    ]
+  },
+  {
+    "q": "What is the purpose of using realloc()?",
+    "o": [
+      "To resize a previously allocated memory block",
+      "To allocate memory for structures only",
+      "To clear memory contents",
+      "To deallocate memory"
+    ]
+  },
+  {
+    "q": "Which of the following causes a memory leak?",
+    "o": [
+      "Allocating memory with malloc but not freeing it",
+      "Using realloc to reduce memory size",
+      "Freeing a NULL pointer",
+      "Declaring local variables inside a function"
+    ]
+  },
+  {
+    "q": "What will happen in this code?",
+    "c": "#include <stdlib.h>\nint main() {\n    int *ptr = malloc(5 * sizeof(int));\n    ptr = malloc(10 * sizeof(int));\n    return 0;\n}",
+    "o": [
+      "Memory leak occurs because previous block is not freed",
+      "Both memory blocks are accessible",
+      "Compilation error due to double malloc",
+      "No memory is allocated"
+    ]
+  },
+  {
+    "q": "How can you prevent dangling pointers after freeing memory?",
+    "o": [
+      "Assign NULL to the pointer after free",
+      "Use calloc instead of malloc",
+      "Free the pointer twice",
+      "Don't use free at all"
+    ]
+  },
+  {
+    "q": "Which of the following is true about dynamic memory allocation in C?",
+    "o": [
+      "It allows allocating memory at runtime",
+      "It allocates memory on the stack",
+      "It is faster than static allocation",
+      "It does not require freeing memory manually"
+    ]
+  },
+  {
+    "q": "What will the following program do?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *a = malloc(sizeof(int) * 3);\n    a[0] = 1; a[1] = 2; a[2] = 3;\n    free(a);\n    a[1] = 10;\n    printf(\"%d\", a[1]);\n    return 0;\n}",
+    "o": [
+      "Undefined behavior",
+      "Prints 10",
+      "Prints 2",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What is the correct way to allocate memory for a structure with a pointer member?",
+    "c": "typedef struct {\n    char *name;\n} Person;\n\nint main() {\n    Person *p = malloc(sizeof(Person));\n    p->name = malloc(50);\n}",
+    "o": [
+      "Both structure and its pointer member are dynamically allocated",
+      "Only the structure is dynamically allocated",
+      "Memory is allocated statically",
+      "The program will not compile"
+    ]
+  },
+  {
+    "q": "What should you do before accessing memory returned by malloc?",
+    "o": [
+      "Check if the pointer is NULL",
+      "Immediately assign values to the memory",
+      "Use memset() on it without checking",
+      "Nothing, it's always safe"
+    ]
+  },
+  {
+    "q": "What is the main difference between malloc() and calloc()?",
+    "o": [
+      "calloc() initializes allocated memory to zero, malloc() does not",
+      "malloc() is faster than calloc()",
+      "calloc() can’t allocate memory for arrays",
+      "malloc() returns a double pointer"
+    ]
+  },
+  {
+    "q": "What does realloc(ptr, 0) effectively do?",
+    "o": [
+      "Frees the memory pointed to by ptr",
+      "Allocates 0 bytes but keeps the pointer valid",
+      "Resets the memory to NULL",
+      "Reinitializes the block to zero"
+    ]
+  },
+  {
+    "q": "What is the output of the code below?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *ptr = (int *)malloc(sizeof(int));\n    *ptr = 20;\n    free(ptr);\n    printf(\"%d\", *ptr);\n    return 0;\n}",
+    "o": [
+      "Undefined behavior",
+      "Prints 20",
+      "Prints 0",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What is a common cause of segmentation faults in dynamic memory usage?",
+    "o": [
+      "Accessing freed memory",
+      "Using sizeof() incorrectly",
+      "Calling free() on a valid pointer",
+      "Allocating more than 1KB of memory"
+    ]
+  },
+  {
+    "q": "Which of the following correctly declares a structure that uses dynamic memory?",
+    "c": "typedef struct {\n    int *data;\n    int size;\n} Array;",
+    "o": [
+      "Array arr; arr.data = malloc(sizeof(int) * 10);",
+      "Array arr = malloc(sizeof(Array));",
+      "int data[10]; Array arr = {data, 10};",
+      "Array arr = calloc(1, sizeof(Array));"
+    ]
+  },
+  {
+    "q": "Which function is most suitable to dynamically allocate memory for a 2D array?",
+    "o": [
+      "malloc() used in nested loops",
+      "calloc() with 2 arguments",
+      "free()",
+      "sizeof()"
+    ]
+  },
+  {
+    "q": "What happens if realloc() fails to allocate new memory?",
+    "o": [
+      "It returns NULL and original memory remains untouched",
+      "It frees the original block",
+      "It returns a pointer to the original memory anyway",
+      "It crashes the program"
+    ]
+  },
+  {
+    "q": "Why is it important to set a pointer to NULL after calling free()?",
+    "o": [
+      "To avoid accidental access to freed memory",
+      "To enable memory reuse",
+      "To make realloc() work",
+      "To prevent pointer arithmetic"
+    ]
+  },
+  {
+    "q": "How do you free memory allocated for an array of strings dynamically?",
+    "o": [
+      "Free each string first, then the array",
+      "Free the array only",
+      "Use delete instead of free",
+      "You can't free an array of strings"
+    ]
+  },
+  {
+    "q": "Which line properly frees a dynamically allocated structure and its pointer member?",
+    "c": "typedef struct {\n    char *name;\n} Student;\n\nStudent *s = malloc(sizeof(Student));\ns->name = malloc(100);",
+    "o": [
+      "free(s->name); free(s);",
+      "free(s); free(s->name);",
+      "delete s;",
+      "free(*s);"
+    ]
+  },
+  {
+    "q": "Which of the following will cause a memory leak in C?",
+    "o": [
+      "Allocating memory with malloc() and never calling free()",
+      "Calling free() multiple times on the same pointer",
+      "Using calloc() with a NULL pointer",
+      "Reallocating memory to a new pointer"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "int *ptr = malloc(5 * sizeof(int));\nif (ptr == NULL) {\n    printf(\"Memory not allocated\\n\");\n}",
+    "o": [
+      "Allocates space for 5 integers and checks for allocation failure",
+      "Allocates memory for a pointer only",
+      "Always fails to allocate memory",
+      "Prints values stored in allocated memory"
+    ]
+  },
+  {
+    "q": "What is the key difference between malloc() and realloc()?",
+    "o": [
+      "realloc() changes the size of a previously allocated block",
+      "malloc() initializes memory to zero",
+      "malloc() cannot be used for arrays",
+      "realloc() frees the previous memory"
+    ]
+  },
+  {
+    "q": "Which of the following is correct to allocate memory for an array of 100 float values?",
+    "o": [
+      "float *arr = (float *)malloc(100 * sizeof(float));",
+      "float arr[100] = malloc(sizeof(float));",
+      "float *arr = malloc(sizeof(arr));",
+      "malloc(arr, 100);"
+    ]
+  },
+  {
+    "q": "How do you safely reallocate memory using realloc()?",
+    "c": "int *temp = realloc(ptr, new_size);\nif (temp != NULL) {\n    ptr = temp;\n}",
+    "o": [
+      "Assign to a temporary pointer before overwriting the original",
+      "Reassign directly to ptr without checking",
+      "Call free() before realloc()",
+      "Only use malloc() for resizing"
+    ]
+  },
+  {
+    "q": "What will happen if free() is called on an already freed pointer?",
+    "o": [
+      "It results in undefined behavior",
+      "It frees the memory again safely",
+      "It returns NULL",
+      "It causes a segmentation fault immediately"
+    ]
+  },
+  {
+    "q": "Which of the following is TRUE about calloc()?",
+    "o": [
+      "It allocates memory and initializes it to zero",
+      "It allocates a single byte of memory",
+      "It cannot be used with structures",
+      "It always returns NULL"
+    ]
+  },
+  {
+    "q": "Which option best describes the correct way to dynamically allocate memory for a structure with a pointer member?",
+    "c": "typedef struct {\n    int *scores;\n    int count;\n} Record;",
+    "o": [
+      "Record *r = malloc(sizeof(Record));\nr->scores = malloc(sizeof(int) * 10);",
+      "Record r = malloc(sizeof(Record));",
+      "Record *r = calloc(10, sizeof(Record*));",
+      "Record *r; r->scores = malloc(10);"
+    ]
+  },
+  {
+    "q": "Why is it important to match every malloc/calloc with a free()?",
+    "o": [
+      "To prevent memory leaks",
+      "To avoid syntax errors",
+      "To improve performance",
+      "To reallocate memory later"
+    ]
+  },
+  {
+    "q": "What happens if you access memory after it has been freed?",
+    "o": [
+      "It results in undefined behavior",
+      "The program will continue normally",
+      "The memory will be reallocated automatically",
+      "It throws a compile-time error"
+    ]
+  },
+  {
+    "q": "What will happen if realloc() is called with a NULL pointer?",
+    "o": [
+      "It behaves like malloc() and allocates new memory",
+      "It returns NULL immediately",
+      "It frees the memory",
+      "It causes a segmentation fault"
+    ]
+  },
+  {
+    "q": "Which code snippet correctly allocates memory for a structure and its internal pointer?",
+    "c": "typedef struct {\n    int *arr;\n    int length;\n} List;",
+    "o": [
+      "List *l = malloc(sizeof(List));\nl->arr = malloc(sizeof(int) * 5);",
+      "List l;\nl.arr = malloc(5);",
+      "List *l = calloc(1, sizeof(List));\narr = malloc(5);",
+      "List l = malloc(sizeof(List));"
+    ]
+  },
+  {
+    "q": "How does calloc() differ from malloc()?",
+    "o": [
+      "calloc() zero-initializes the memory it allocates",
+      "calloc() allocates memory for only one element",
+      "malloc() returns NULL when successful",
+      "calloc() works only for integers"
+    ]
+  },
+  {
+    "q": "Which of the following scenarios will likely lead to a memory leak?",
+    "o": [
+      "Using realloc() without assigning the result to a temp pointer",
+      "Calling free() immediately after malloc()",
+      "Declaring an unused pointer",
+      "Passing a pointer to a function"
+    ]
+  },
+  {
+    "q": "Which is the correct syntax to deallocate memory allocated using calloc()?",
+    "o": [
+      "free(ptr);",
+      "calloc_free(ptr);",
+      "delete ptr;",
+      "free(ptr, size);"
+    ]
+  },
+  {
+    "q": "Why is it risky to return a pointer to a dynamically allocated array without managing its lifetime?",
+    "o": [
+      "Because memory leaks can occur if it’s not freed",
+      "Because arrays can't be returned from functions",
+      "Because calloc must be used instead of malloc",
+      "Because the pointer becomes static"
+    ]
+  },
+  {
+    "q": "What is the behavior of malloc() if zero bytes are requested?",
+    "o": [
+      "It may return NULL or a unique pointer that should not be dereferenced",
+      "It always returns NULL",
+      "It returns a pointer to zeroed memory",
+      "It allocates 1 byte by default"
+    ]
+  },
+  {
+    "q": "Which of the following helps detect memory leaks in a C program?",
+    "o": [
+      "Using tools like Valgrind",
+      "Declaring all variables globally",
+      "Compiling with gcc -O3",
+      "Avoiding the use of free()"
+    ]
+  },
+  {
+    "q": "In dynamic memory, what is a 'dangling pointer'?",
+    "o": [
+      "A pointer pointing to memory that has already been freed",
+      "A pointer pointing to the wrong data type",
+      "A pointer declared but never initialized",
+      "A pointer to a null-terminated string"
+    ]
+  },
+  {
+    "q": "Which function should you use to resize a dynamically allocated array?",
+    "o": [
+      "realloc()",
+      "memcpy()",
+      "calloc()",
+      "strncpy()"
+    ]
+  },
+  {
+    "q": "Which standard header file is required for using malloc() and free()?",
+    "o": [
+      "#include <stdlib.h>",
+      "#include <stdio.h>",
+      "#include <memory.h>",
+      "#include <malloc.h>"
+    ]
+  },
+  {
+    "q": "What does realloc(ptr, 0) do in C?",
+    "o": [
+      "It is equivalent to free(ptr)",
+      "It increases memory size to zero",
+      "It reallocates with default size",
+      "It throws a compile-time error"
+    ]
+  },
+  {
+    "q": "Which of the following code snippets correctly checks memory allocation?",
+    "c": "int *arr = malloc(10 * sizeof(int));\nif (arr == NULL) {\n    printf(\"Allocation failed\\n\");\n}",
+    "o": [
+      "It correctly verifies if malloc failed",
+      "It initializes memory to zero",
+      "It avoids the need for free()",
+      "It sets arr to NULL on success"
+    ]
+  },
+  {
+    "q": "What is the risk of using realloc without assigning the result to a temporary pointer first?",
+    "o": [
+      "The original pointer may be lost if realloc fails",
+      "The memory is automatically freed",
+      "The data will be duplicated",
+      "realloc always succeeds"
+    ]
+  },
+  {
+    "q": "Which statement about calloc is true?",
+    "o": [
+      "It takes two arguments: number of elements and size of each element",
+      "It requires manual initialization",
+      "It cannot be used with pointers",
+      "It returns void type only"
+    ]
+  },
+  {
+    "q": "What is a memory leak?",
+    "o": [
+      "When allocated memory is not freed after use",
+      "When too much memory is allocated at once",
+      "When malloc fails to return a pointer",
+      "When free() is called more than once"
+    ]
+  },
+  {
+    "q": "Which code snippet correctly frees dynamically allocated memory for a struct?",
+    "c": "typedef struct {\n    char *name;\n} Person;\n\nPerson *p = malloc(sizeof(Person));\np->name = malloc(50);\nfree(p->name);\nfree(p);",
+    "o": [
+      "Memory for both struct and inner pointer is freed",
+      "Only struct memory is freed",
+      "Causes double free error",
+      "Only inner pointer is freed"
+    ]
+  },
+  {
+    "q": "What happens if you forget to free dynamically allocated memory in a loop?",
+    "o": [
+      "It leads to memory leaks and increased memory usage",
+      "The compiler frees it automatically",
+      "The OS reclaims memory immediately",
+      "It improves performance"
+    ]
+  },
+  {
+    "q": "Which of the following best describes dynamic memory allocation?",
+    "o": [
+      "Memory allocated at runtime using functions like malloc",
+      "Memory allocated on the stack",
+      "Predefined memory size at compile time",
+      "Memory stored in registers"
+    ]
+  },
+  {
+    "q": "What must be done before accessing memory pointed by a pointer in C?",
+    "o": [
+      "It must be initialized or allocated using malloc/calloc",
+      "It must be cast to int",
+      "It must be declared global",
+      "It must be passed to free()"
+    ]
+  },
+  {
+    "q": "What will the following code output if memory allocation fails?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *arr = malloc(100000000000 * sizeof(int));\n    if (!arr) printf(\"Allocation failed\\n\");\n    return 0;\n}",
+    "o": [
+      "Allocation failed",
+      "Segmentation fault",
+      "Garbage value",
+      "No output"
+    ]
+  },
+  {
+    "q": "Which of the following is true about free() in C?",
+    "o": [
+      "It does not return memory to the program but makes it available for future allocations",
+      "It must be used after every malloc call inside a loop",
+      "It works only with memory allocated using calloc",
+      "It nullifies the pointer automatically"
+    ]
+  },
+  {
+    "q": "What is the best way to initialize a dynamically allocated array of 100 integers to zero?",
+    "o": [
+      "int *arr = calloc(100, sizeof(int));",
+      "int *arr = malloc(100 * sizeof(int));",
+      "int arr[100] = {0};",
+      "int *arr = malloc(sizeof(int[100])); memset(arr, 0, 100);"
+    ]
+  },
+  {
+    "q": "Which issue arises if you access memory after calling free()?",
+    "o": [
+      "Use-after-free error",
+      "Memory leak",
+      "Stack overflow",
+      "Double initialization"
+    ]
+  },
+  {
+    "q": "When using realloc(), what must you always check before assigning back to the original pointer?",
+    "o": [
+      "That the result is not NULL",
+      "That the original pointer is not NULL",
+      "That the memory was allocated using calloc",
+      "That the pointer is pointing to stack"
+    ]
+  },
+  {
+    "q": "What happens if you call free() on a NULL pointer?",
+    "o": [
+      "Nothing happens; it's safe",
+      "It causes undefined behavior",
+      "It frees all allocated memory",
+      "It triggers a segmentation fault"
+    ]
+  },
+  {
+    "q": "Which of the following describes a flexible way to manage memory in large data structures?",
+    "o": [
+      "Use of pointers to dynamically allocated memory within structures",
+      "Use of fixed-size arrays inside structures",
+      "Use of global arrays",
+      "Storing data in hardcoded arrays"
+    ]
+  },
+  {
+    "q": "What does realloc(ptr, size) do if ptr is not NULL and size is larger than the original size?",
+    "o": [
+      "Allocates new memory, copies old content, and frees the old block",
+      "Returns the same pointer always",
+      "Shrinks the pointer only",
+      "Frees the memory automatically"
+    ]
+  },
+  {
+    "q": "Which of these is the correct order to safely handle realloc in production code?",
+    "c": "int *temp = realloc(ptr, new_size);\nif (temp != NULL) {\n    ptr = temp;\n}",
+    "o": [
+      "It avoids memory leak if realloc fails",
+      "It forces malloc to reallocate twice",
+      "It leaks the new block",
+      "It creates a segmentation fault"
+    ]
+  },
+  {
+    "q": "Which situation will NOT cause a memory leak?",
+    "o": [
+      "Freeing all dynamically allocated memory before program exits",
+      "Reassigning a pointer without freeing previous memory",
+      "Not calling free on allocated pointers",
+      "Allocating memory in a loop without freeing"
+    ]
+  },
+  {
+    "q": "Which function is best used to resize an already allocated memory block in C?",
+    "o": [
+      "realloc",
+      "calloc",
+      "malloc",
+      "resize"
+    ]
+  },
+  {
+    "q": "What does the following code print?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *p = malloc(4 * sizeof(int));\n    if (p == NULL) return 1;\n    p[0] = 10; p[1] = 20; p[2] = 30; p[3] = 40;\n    printf(\"%d\", p[2]);\n    free(p);\n    return 0;\n}",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "40"
+    ]
+  },
+  {
+    "q": "Which of the following can result in a memory leak?",
+    "o": [
+      "Allocating memory with malloc but not calling free",
+      "Calling free twice on the same pointer",
+      "Using calloc without initialization",
+      "Using realloc with NULL pointer"
+    ]
+  },
+  {
+    "q": "What is the purpose of using malloc in a structure?",
+    "o": [
+      "To allocate memory for members that are arrays or pointers at runtime",
+      "To allocate stack memory for the structure",
+      "To automatically initialize all members",
+      "To free the structure automatically"
+    ]
+  },
+  {
+    "q": "What is the output of the code below?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *ptr = calloc(5, sizeof(int));\n    printf(\"%d\", ptr[4]);\n    free(ptr);\n    return 0;\n}",
+    "o": [
+      "0",
+      "Undefined",
+      "Garbage value",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "Which scenario leads to undefined behavior in C?",
+    "o": [
+      "Accessing memory after it has been freed",
+      "Allocating memory with malloc",
+      "Using sizeof operator",
+      "Declaring a pointer variable"
+    ]
+  },
+  {
+    "q": "Which function can initialize all allocated memory to zero?",
+    "o": [
+      "calloc",
+      "malloc",
+      "realloc",
+      "alloc"
+    ]
+  },
+  {
+    "q": "How can you avoid memory leaks in a C program that uses malloc?",
+    "o": [
+      "Always call free() on allocated memory when no longer needed",
+      "Avoid using malloc altogether",
+      "Call malloc twice for each allocation",
+      "Use calloc instead of malloc"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "struct Student {\n    char *name;\n};\n\nstruct Student *s = malloc(sizeof(struct Student));\ns->name = malloc(50);",
+    "o": [
+      "Allocates dynamic memory for a structure and its name field",
+      "Initializes name with 50 characters",
+      "Assigns NULL to name",
+      "Causes segmentation fault"
+    ]
+  },
+  {
+    "q": "What will happen if realloc fails to allocate memory?",
+    "o": [
+      "It returns NULL and original memory remains untouched",
+      "It frees the original memory",
+      "It corrupts the existing memory",
+      "It throws a compile-time error"
+    ]
+  },
+  {
+    "q": "Which of the following functions is used to allocate memory dynamically in C?",
+    "o": [
+      "malloc()",
+      "memalloc()",
+      "memory_alloc()",
+      "allocmem()"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *arr = (int *)malloc(3 * sizeof(int));\n    arr[0] = 1; arr[1] = 2; arr[2] = 3;\n    printf(\"%d\", arr[1]);\n    free(arr);\n    return 0;\n}",
+    "o": [
+      "2",
+      "1",
+      "3",
+      "Undefined behavior"
+    ]
+  },
+  {
+    "q": "Which function is used to deallocate memory that was previously allocated using malloc, calloc, or realloc?",
+    "o": [
+      "free()",
+      "delete()",
+      "dealloc()",
+      "remove()"
+    ]
+  },
+  {
+    "q": "What does calloc() do that malloc() does not?",
+    "o": [
+      "Initializes allocated memory to zero",
+      "Allocates memory for arrays only",
+      "Returns memory address as a string",
+      "Automatically resizes memory"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *ptr = (int *)calloc(4, sizeof(int));\n    printf(\"%d\", ptr[2]);\n    free(ptr);\n    return 0;\n}",
+    "o": [
+      "0",
+      "2",
+      "Undefined",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "What can lead to a memory leak in C?",
+    "o": [
+      "Allocating memory and not freeing it",
+      "Using too many global variables",
+      "Declaring too many local variables",
+      "Writing to NULL pointers"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *a = (int *)malloc(sizeof(int));\n    *a = 100;\n    free(a);\n    printf(\"%d\", *a);\n    return 0;\n}",
+    "o": [
+      "Undefined behavior",
+      "100",
+      "0",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "Which of the following correctly resizes a dynamically allocated array in C?",
+    "o": [
+      "realloc(ptr, new_size)",
+      "resize(ptr, new_size)",
+      "ptr = realloc(ptr, new_size * sizeof(int));",
+      "reallocate(ptr, new_size)"
+    ]
+  },
+  {
+    "q": "What is the purpose of using pointers with dynamic memory in C?",
+    "o": [
+      "To access and modify memory allocated at runtime",
+      "To avoid using arrays",
+      "To create recursive functions",
+      "To reduce compile time"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\ntypedef struct {\n    int *data;\n} MyStruct;\n\nint main() {\n    MyStruct ms;\n    ms.data = (int *)malloc(sizeof(int));\n    *ms.data = 42;\n    printf(\"%d\", *ms.data);\n    free(ms.data);\n    return 0;\n}",
+    "o": [
+      "42",
+      "0",
+      "Garbage value",
+      "Compilation error"
+    ]
+  },
+  {
+    "q": "What happens if you forget to call free() on dynamically allocated memory?",
+    "o": [
+      "It causes a memory leak",
+      "The program crashes immediately",
+      "Memory is freed automatically",
+      "The OS will raise an error"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *ptr = malloc(5 * sizeof(int));\n    for(int i = 0; i < 5; i++) ptr[i] = i * 10;\n    printf(\"%d\", *(ptr + 3));\n    free(ptr);\n    return 0;\n}",
+    "o": [
+      "30",
+      "3",
+      "10",
+      "40"
+    ]
+  },
+  {
+    "q": "Which function is typically used to increase or decrease the size of previously allocated memory?",
+    "o": [
+      "realloc()",
+      "malloc()",
+      "calloc()",
+      "adjust()"
+    ]
+  },
+  {
+    "q": "Which of the following can lead to a segmentation fault in dynamic memory usage?",
+    "o": [
+      "Accessing memory after it has been freed",
+      "Allocating memory using malloc",
+      "Declaring a pointer",
+      "Assigning NULL to a pointer"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    char *str = (char *)calloc(6, sizeof(char));\n    sprintf(str, \"Hi\");\n    printf(\"%s\", str);\n    free(str);\n    return 0;\n}",
+    "o": [
+      "Hi",
+      "0",
+      "NULL",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "Which of the following is true about calloc()?",
+    "o": [
+      "It allocates memory and initializes it to zero",
+      "It requires casting in C",
+      "It cannot be used for structs",
+      "It returns memory filled with 1s"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\ntypedef struct {\n    int *scores;\n} Student;\n\nint main() {\n    Student s;\n    s.scores = malloc(sizeof(int));\n    *(s.scores) = 99;\n    printf(\"%d\", *(s.scores));\n    free(s.scores);\n    return 0;\n}",
+    "o": [
+      "99",
+      "0",
+      "1",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which scenario best describes a dangling pointer?",
+    "o": [
+      "A pointer that references memory that has been freed",
+      "A pointer that is uninitialized",
+      "A pointer set to NULL",
+      "A pointer pointing to stack memory"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *arr = malloc(2 * sizeof(int));\n    arr[0] = 1; arr[1] = 2;\n    arr = realloc(arr, 4 * sizeof(int));\n    arr[2] = 3; arr[3] = 4;\n    printf(\"%d\", arr[3]);\n    free(arr);\n    return 0;\n}",
+    "o": [
+      "4",
+      "2",
+      "0",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct use of malloc for allocating space for a struct?",
+    "o": [
+      "MyStruct *ptr = (MyStruct *)malloc(sizeof(MyStruct));",
+      "MyStruct ptr = malloc(sizeof(MyStruct));",
+      "malloc(ptr, sizeof(MyStruct));",
+      "MyStruct *ptr = malloc(MyStruct);"
+    ]
+  },
+  {
+    "q": "Which of the following correctly checks if malloc failed?",
+    "o": [
+      "if (ptr == NULL)",
+      "if (*ptr == NULL)",
+      "if (malloc != NULL)",
+      "if (&ptr == NULL)"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *p = malloc(3 * sizeof(int));\n    if (p) {\n        for (int i = 0; i < 3; i++)\n            p[i] = i + 1;\n        printf(\"%d\", *(p+2));\n    }\n    free(p);\n    return 0;\n}",
+    "o": [
+      "3",
+      "2",
+      "1",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which of the following is a symptom of a memory leak?",
+    "o": [
+      "Gradual increase in program memory usage",
+      "Immediate crash after malloc",
+      "Segmentation fault on startup",
+      "Compiler warning"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\ntypedef struct {\n    int *arr;\n    int size;\n} Container;\n\nint main() {\n    Container c;\n    c.size = 2;\n    c.arr = malloc(c.size * sizeof(int));\n    c.arr[0] = 10; c.arr[1] = 20;\n    printf(\"%d\", c.arr[1]);\n    free(c.arr);\n    return 0;\n}",
+    "o": [
+      "20",
+      "10",
+      "2",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following correctly resizes a memory block pointed to by 'arr' to hold 20 integers?",
+    "o": [
+      "arr = realloc(arr, 20 * sizeof(int));",
+      "realloc(arr, 20);",
+      "realloc(&arr, 20 * sizeof(int));",
+      "arr = malloc(20);"
+    ]
+  },
+  {
+    "q": "What will happen if realloc fails?",
+    "o": [
+      "It returns NULL and the original memory block remains unchanged",
+      "It crashes the program",
+      "It frees the original memory",
+      "It clears the original data"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *data = calloc(4, sizeof(int));\n    printf(\"%d\", data[1]);\n    free(data);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "Garbage",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "Which of the following can safely avoid a dangling pointer after calling free()?",
+    "o": [
+      "Setting the pointer to NULL after free()",
+      "Avoiding the use of pointers",
+      "Declaring the pointer as static",
+      "Reallocating it immediately"
+    ]
+  },
+  {
+    "q": "In dynamic memory management, what is a common cause of 'double free' errors?",
+    "o": [
+      "Calling free() twice on the same pointer",
+      "Calling realloc() before malloc()",
+      "Using calloc instead of malloc",
+      "Freeing an uninitialized pointer"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\ntypedef struct {\n    char *name;\n} Person;\n\nint main() {\n    Person *p = malloc(sizeof(Person));\n    p->name = malloc(10);\n    sprintf(p->name, \"John\");\n    printf(\"%s\", p->name);\n    free(p->name);\n    free(p);\n    return 0;\n}",
+    "o": [
+      "John",
+      "NULL",
+      "Garbage",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "Which of the following statements about realloc() is correct?",
+    "o": [
+      "It can increase or decrease the size of an allocated memory block",
+      "It only increases memory size",
+      "It frees the memory block automatically",
+      "It zeroes the new memory area like calloc"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *nums = malloc(2 * sizeof(int));\n    nums[0] = 5;\n    nums[1] = 10;\n    free(nums);\n    nums = NULL;\n    if (nums == NULL) printf(\"%s\", \"Freed\\n\");\n    return 0;\n}",
+    "o": [
+      "Freed",
+      "5",
+      "NULL",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid reason to use dynamic memory allocation in C?",
+    "o": [
+      "To allocate memory when the size is not known at compile time",
+      "To speed up execution time",
+      "To avoid using functions",
+      "To prevent memory fragmentation"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *p = malloc(sizeof(int));\n    *p = 77;\n    printf(\"%d\", *p);\n    free(p);\n    return 0;\n}",
+    "o": [
+      "77",
+      "0",
+      "Undefined",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "Which of the following can lead to undefined behavior when working with dynamic memory?",
+    "o": [
+      "Using a pointer after it has been freed",
+      "Using malloc to allocate 0 bytes",
+      "Calling free(NULL)",
+      "Using realloc with size 0"
+    ]
+  },
+  {
+    "q": "What is the main difference between malloc() and calloc()?",
+    "o": [
+      "calloc() initializes memory to zero; malloc() does not",
+      "malloc() returns NULL on failure; calloc() returns garbage",
+      "calloc() is faster than malloc()",
+      "malloc() requires size in elements; calloc() does not"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\ntypedef struct {\n    int *ptr;\n} Box;\n\nint main() {\n    Box b;\n    b.ptr = calloc(1, sizeof(int));\n    printf(\"%d\", *(b.ptr));\n    free(b.ptr);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "Garbage",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "Why is it important to check the return value of malloc()?",
+    "o": [
+      "Because it might return NULL if memory allocation fails",
+      "Because it returns the number of bytes allocated",
+      "To avoid division by zero",
+      "To prevent stack overflow"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nint main() {\n    char *s = malloc(6);\n    strcpy(s, \"Test\");\n    printf(\"%s\", s);\n    free(s);\n    return 0;\n}",
+    "o": [
+      "Test",
+      "NULL",
+      "0",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following correctly allocates memory for an array of 50 floats?",
+    "o": [
+      "float *arr = (float *)malloc(50 * sizeof(float));",
+      "float arr = malloc(50);",
+      "float *arr = malloc(sizeof(float));",
+      "float *arr = calloc(1, 50);"
+    ]
+  },
+  {
+    "q": "What is the correct way to free dynamically allocated memory for a structure that contains a pointer?",
+    "o": [
+      "First free the internal pointer, then free the structure",
+      "Just free the structure pointer",
+      "Freeing the structure automatically frees internal pointers",
+      "There is no need to free internal pointers"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\ntypedef struct {\n    int *data;\n} Wrapper;\n\nint main() {\n    Wrapper w;\n    w.data = malloc(sizeof(int));\n    *w.data = 42;\n    printf(\"%d\", *w.data);\n    free(w.data);\n    return 0;\n}",
+    "o": [
+      "42",
+      "0",
+      "Garbage",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "What is a memory leak in C?",
+    "o": [
+      "Memory that is allocated but not freed",
+      "Memory used by the stack",
+      "Memory that has been initialized to zero",
+      "Memory automatically reclaimed by the OS"
+    ]
+  },
+  {
+    "q": "Which function should you use to allocate memory and initialize all bits to zero?",
+    "o": [
+      "calloc()",
+      "malloc()",
+      "realloc()",
+      "memalloc()"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\n\nint main() {\n    int *ptr = malloc(3 * sizeof(int));\n    if (!ptr) return 1;\n    ptr[0] = 11; ptr[1] = 22; ptr[2] = 33;\n    printf(\"%d\", ptr[1]);\n    free(ptr);\n    return 0;\n}",
+    "o": [
+      "22",
+      "33",
+      "11",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following is a safe practice when using realloc()?",
+    "o": [
+      "Assign the result to a temporary pointer first, then check for NULL",
+      "Directly assign the result to the original pointer",
+      "Always call free() before realloc()",
+      "Use realloc only with malloc, not with calloc"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\n\nint main() {\n    int *ptr = calloc(2, sizeof(int));\n    printf(\"%d\", ptr[0]);\n    free(ptr);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "Undefined",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "Which of the following would result in a segmentation fault?",
+    "o": [
+      "Dereferencing a NULL pointer returned by malloc",
+      "Allocating memory with calloc",
+      "Freeing a pointer and setting it to NULL",
+      "Checking if a pointer is NULL"
+    ]
+  },
+  {
+    "q": "Which of the following is true about dynamic memory in C?",
+    "o": [
+      "You must manually free memory allocated with malloc, calloc, or realloc",
+      "Memory is automatically freed when the function ends",
+      "The compiler frees unused memory",
+      "Static variables use dynamic memory"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\n\nint main() {\n    int *a = malloc(4 * sizeof(int));\n    for (int i = 0; i < 4; i++) a[i] = i + 1;\n    a = realloc(a, 2 * sizeof(int));\n    printf(\"%d\", a[1]);\n    free(a);\n    return 0;\n}",
+    "o": [
+      "2",
+      "3",
+      "4",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "What happens if you call free() on a pointer that was never allocated using malloc/calloc/realloc?",
+    "o": [
+      "It may cause undefined behavior",
+      "It safely does nothing",
+      "It returns 0",
+      "It initializes the pointer"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\n\nint main() {\n    int *ptr = malloc(sizeof(int));\n    if (!ptr) return 1;\n    *ptr = 100;\n    printf(\"%d\", *ptr);\n    free(ptr);\n    return 0;\n}",
+    "o": [
+      "100",
+      "0",
+      "1",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "Which function is used to allocate memory that can later be resized using realloc()?",
+    "o": [
+      "malloc()",
+      "calloc()",
+      "realloc()",
+      "memset()"
+    ]
+  },
+  {
+    "q": "What must you always do after calling realloc()?",
+    "o": [
+      "Check if the returned pointer is NULL before assigning",
+      "Free the original pointer manually",
+      "Initialize the returned memory",
+      "Clear the old memory content"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\ntypedef struct {\n    int *buffer;\n    int size;\n} Buffer;\n\nint main() {\n    Buffer b;\n    b.size = 2;\n    b.buffer = malloc(b.size * sizeof(int));\n    b.buffer[0] = 9; b.buffer[1] = 18;\n    printf(\"%d\", b.buffer[0] + b.buffer[1]);\n    free(b.buffer);\n    return 0;\n}",
+    "o": [
+      "27",
+      "9",
+      "18",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following is the best way to prevent memory leaks?",
+    "o": [
+      "Ensure every malloc/calloc has a corresponding free",
+      "Avoid dynamic memory altogether",
+      "Use realloc only once",
+      "Declare all pointers as static"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\n\nint main() {\n    int *x = calloc(5, sizeof(int));\n    x[4] = 10;\n    printf(\"%d\", x[0]);\n    free(x);\n    return 0;\n}",
+    "o": [
+      "0",
+      "10",
+      "Undefined",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following will likely cause a segmentation fault?",
+    "o": [
+      "Accessing memory after it has been freed",
+      "Allocating memory with malloc",
+      "Using sizeof() on a pointer",
+      "Calling free() with a valid pointer"
+    ]
+  },
+  {
+    "q": "How does calloc() differ from malloc()?",
+    "o": [
+      "calloc initializes memory to zero",
+      "calloc returns memory in reverse order",
+      "malloc uses less memory",
+      "malloc initializes memory to -1"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *arr = malloc(2 * sizeof(int));\n    arr[0] = 1;\n    arr[1] = 2;\n    arr = realloc(arr, 4 * sizeof(int));\n    arr[2] = 3;\n    arr[3] = 4;\n    printf(\"%d\", arr[3]);\n    free(arr);\n    return 0;\n}",
+    "o": [
+      "4",
+      "3",
+      "2",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which scenario can result in a memory leak?",
+    "o": [
+      "Allocating memory with malloc and never calling free",
+      "Calling free immediately after malloc",
+      "Using stack memory for variables",
+      "Assigning a value to a pointer"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *arr = malloc(3 * sizeof(int));\n    for (int i = 0; i < 3; i++) arr[i] = i;\n    printf(\"%d\", arr[2]);\n    free(arr);\n    return 0;\n}",
+    "o": [
+      "2",
+      "3",
+      "0",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following describes a dangling pointer?",
+    "o": [
+      "A pointer that points to a freed memory location",
+      "A pointer that is never initialized",
+      "A pointer that holds NULL",
+      "A pointer pointing to a local variable"
+    ]
+  },
+  {
+    "q": "What does realloc(ptr, 0) effectively do?",
+    "o": [
+      "Frees the memory pointed to by ptr",
+      "Increases the memory to 0 bytes and retains the pointer",
+      "Initializes ptr to zero",
+      "Causes a segmentation fault"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\ntypedef struct {\n    char *name;\n} Person;\n\nint main() {\n    Person p;\n    p.name = malloc(6);\n    sprintf(p.name, \"Alice\");\n    printf(\"%s\", p.name);\n    free(p.name);\n    return 0;\n}",
+    "o": [
+      "Alice",
+      "name",
+      "NULL",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "What is the primary reason to use dynamic memory allocation in structures?",
+    "o": [
+      "To allocate memory for fields whose size is not known at compile time",
+      "To increase performance",
+      "To reduce code size",
+      "To eliminate the need for header files"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\nint main() {\n    int *p = malloc(2 * sizeof(int));\n    if (!p) return 1;\n    p[0] = 10; p[1] = 20;\n    free(p);\n    p = realloc(p, 2 * sizeof(int));\n    if (!p) printf(\"NULL\"); else printf(\"OK\");\n    free(p);\n    return 0;\n}",
+    "o": [
+      "NULL",
+      "OK",
+      "10",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "Which of the following is a correct statement about free() in C?",
+    "o": [
+      "Calling free() on a NULL pointer has no effect",
+      "You must free memory only once per program",
+      "free() resets the pointer to NULL automatically",
+      "free() works only on memory allocated with calloc()"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *arr = calloc(3, sizeof(int));\n    printf(\"%d\", arr[1]);\n    free(arr);\n    return 0;\n}",
+    "o": [
+      "0",
+      "1",
+      "Garbage",
+      "3"
+    ]
+  },
+  {
+    "q": "Which mistake leads to a memory leak when using realloc()?",
+    "o": [
+      "Assigning realloc() directly to the original pointer without checking for NULL",
+      "Calling realloc() after free()",
+      "Using realloc() with calloc-allocated memory",
+      "Casting the result of realloc()"
+    ]
+  },
+  {
+    "q": "What happens if you try to realloc a pointer that was never initialized?",
+    "o": [
+      "It behaves like malloc",
+      "It causes a compile-time error",
+      "It frees memory automatically",
+      "It reuses old memory content"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *ptr = malloc(sizeof(int));\n    if (!ptr) return 1;\n    *ptr = 7;\n    free(ptr);\n    printf(\"%d\", *ptr);\n    return 0;\n}",
+    "o": [
+      "Undefined behavior",
+      "7",
+      "0",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "Which of the following must be considered when dynamically allocating memory inside a struct?",
+    "o": [
+      "Each dynamically allocated member must be freed separately",
+      "The struct must be declared as static",
+      "Pointers cannot be used inside structs",
+      "Structs do not support malloc"
+    ]
+  },
+  {
+    "q": "Which of the following will result in a double-free error?",
+    "o": [
+      "Calling free() twice on the same pointer without resetting it",
+      "Using malloc() and not calling free()",
+      "Calling realloc() on a NULL pointer",
+      "Calling free() on a global variable"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\nint main() {\n    int *data = calloc(4, sizeof(int));\n    data[0] = 1;\n    free(data);\n    printf(\"Done\");\n    return 0;\n}",
+    "o": [
+      "Done",
+      "1",
+      "0",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "What is a safe practice when using malloc in a function?",
+    "o": [
+      "Always check if the returned pointer is NULL",
+      "Assume the memory is always allocated",
+      "Cast the return value to void",
+      "Never free the pointer"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\ntypedef struct {\n    int *values;\n} Holder;\n\nint main() {\n    Holder h;\n    h.values = malloc(2 * sizeof(int));\n    h.values[0] = 4;\n    h.values[1] = 6;\n    printf(\"%d\", h.values[1]);\n    free(h.values);\n    return 0;\n}",
+    "o": [
+      "6",
+      "4",
+      "10",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following is true about calloc in C?",
+    "o": [
+      "It allocates and initializes memory to zero",
+      "It allocates memory but does not initialize it",
+      "It reallocates existing memory",
+      "It frees memory automatically"
+    ]
+  },
+  {
+    "q": "What happens if you forget to call free on memory allocated with malloc?",
+    "o": [
+      "It results in a memory leak",
+      "The compiler throws an error",
+      "The OS automatically frees it during execution",
+      "The memory is reset to NULL"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *nums = malloc(2 * sizeof(int));\n    nums[0] = 8;\n    nums[1] = 9;\n    nums = realloc(nums, 1 * sizeof(int));\n    printf(\"%d\", nums[0]);\n    free(nums);\n    return 0;\n}",
+    "o": [
+      "8",
+      "9",
+      "0",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which function is used to allocate memory and initialize it to zero?",
+    "o": [
+      "calloc()",
+      "malloc()",
+      "realloc()",
+      "memset()"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\nint main() {\n    int *ptr = malloc(3 * sizeof(int));\n    ptr[0] = 2; ptr[1] = 4; ptr[2] = 6;\n    printf(\"%d\", ptr[1]);\n    free(ptr);\n    return 0;\n}",
+    "o": [
+      "4",
+      "2",
+      "6",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "Which of the following scenarios is most likely to cause undefined behavior in C?",
+    "o": [
+      "Accessing memory after it has been freed",
+      "Allocating memory with malloc",
+      "Using sizeof() with a type",
+      "Declaring a pointer"
+    ]
+  },
+  {
+    "q": "What is the purpose of using realloc() in dynamic memory management?",
+    "o": [
+      "To resize a previously allocated memory block",
+      "To allocate zero-initialized memory",
+      "To copy a pointer",
+      "To free memory"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\ntypedef struct {\n    int *data;\n} Box;\n\nint main() {\n    Box b;\n    b.data = calloc(2, sizeof(int));\n    b.data[0] = 3;\n    b.data[1] = 7;\n    printf(\"%d\", b.data[0] + b.data[1]);\n    free(b.data);\n    return 0;\n}",
+    "o": [
+      "10",
+      "7",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "What should be done after freeing a dynamically allocated pointer?",
+    "o": [
+      "Set the pointer to NULL to avoid dangling pointer issues",
+      "Immediately call realloc() on it",
+      "Reuse it without reallocation",
+      "Reassign it to a stack variable"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\nint main() {\n    int *a = malloc(sizeof(int));\n    int *b = a;\n    free(a);\n    // printf(\"%d\", *b);  // this line is commented out\n    printf(\"Done\");\n    return 0;\n}",
+    "o": [
+      "Done",
+      "*b would be invalid if printed",
+      "Segmentation fault",
+      "0"
+    ]
+  },
+  {
+    "q": "Which condition causes memory fragmentation in C?",
+    "o": [
+      "Frequent allocation and freeing of different sized memory blocks",
+      "Allocating only one large block",
+      "Using calloc instead of malloc",
+      "Using stack memory"
+    ]
+  },
+  {
+    "q": "Which of the following best explains a memory leak?",
+    "o": [
+      "Allocated memory that is no longer referenced or freed",
+      "Freeing memory twice",
+      "Using uninitialized pointers",
+      "Passing a pointer by value"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    char *str = malloc(6);\n    str[0] = 'H'; str[1] = 'e'; str[2] = 'l'; str[3] = 'l'; str[4] = 'o'; str[5] = '\\0';\n    printf(\"%s\", str);\n    free(str);\n    return 0;\n}",
+    "o": [
+      "Hello",
+      "Hell",
+      "Undefined",
+      "Garbage"
+    ]
+  },
+  {
+    "q": "What happens if you call free() on a pointer not returned by malloc/calloc/realloc?",
+    "o": [
+      "It leads to undefined behavior",
+      "It resets the pointer to NULL",
+      "It does nothing",
+      "It prints an error"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\nint main() {\n    int *ptr = calloc(5, sizeof(int));\n    for (int i = 0; i < 5; i++) ptr[i] = i + 1;\n    printf(\"%d\", ptr[4]);\n    free(ptr);\n    return 0;\n}",
+    "o": [
+      "5",
+      "4",
+      "0",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "What should you always do after using realloc to resize a memory block?",
+    "o": [
+      "Check if the returned pointer is NULL before using it",
+      "Free the old pointer immediately",
+      "Use the original pointer without checking",
+      "Call malloc again"
+    ]
+  },
+  {
+    "q": "Which of the following can cause a segmentation fault?",
+    "o": [
+      "Accessing memory after it has been freed",
+      "Using calloc with 0 elements",
+      "Allocating memory with malloc and assigning NULL",
+      "Assigning a NULL pointer to another pointer"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *x = malloc(sizeof(int));\n    *x = 42;\n    printf(\"%d\", *x);\n    free(x);\n    return 0;\n}",
+    "o": [
+      "42",
+      "0",
+      "1",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following is correct about dynamic memory in structures?",
+    "o": [
+      "Memory for structure members must be freed individually if dynamically allocated",
+      "Calling free() on a structure automatically frees all members",
+      "malloc cannot be used inside structures",
+      "calloc is invalid for structures"
+    ]
+  },
+  {
+    "q": "What happens when realloc fails to allocate memory?",
+    "o": [
+      "It returns NULL and the original pointer remains unchanged",
+      "It frees the original memory",
+      "It partially copies the data",
+      "It sets the original pointer to NULL"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\ntypedef struct {\n    int *marks;\n} Student;\n\nint main() {\n    Student s;\n    s.marks = malloc(3 * sizeof(int));\n    s.marks[0] = 90;\n    printf(\"%d\", s.marks[0]);\n    free(s.marks);\n    return 0;\n}",
+    "o": [
+      "90",
+      "0",
+      "Undefined",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "Which function should be used to release memory allocated using calloc()?",
+    "o": [
+      "free()",
+      "delete()",
+      "clear()",
+      "dispose()"
+    ]
+  },
+  {
+    "q": "What can help detect memory leaks during development in C?",
+    "o": [
+      "Using tools like Valgrind",
+      "Using printf() after every malloc",
+      "Using calloc instead of malloc",
+      "Avoiding structures"
+    ]
+  },
+  {
+    "q": "Which function is best suited to resize a memory block while preserving its contents?",
+    "o": [
+      "realloc()",
+      "malloc()",
+      "calloc()",
+      "memset()"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *arr = malloc(3 * sizeof(int));\n    arr[0] = 10; arr[1] = 20; arr[2] = 30;\n    free(arr);\n    arr = NULL;\n    printf(\"Safe\");\n    return 0;\n}",
+    "o": [
+      "Safe",
+      "10",
+      "Segmentation fault",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which is a correct use of malloc() for allocating space for a 2-element float array?",
+    "o": [
+      "float *p = malloc(2 * sizeof(float));",
+      "float p = malloc(2 * sizeof(float));",
+      "float *p = malloc(sizeof(int));",
+      "float *p = malloc(2);"
+    ]
+  },
+  {
+    "q": "Which of the following is an example of a memory leak?",
+    "o": [
+      "Allocating memory and losing the pointer reference without calling free()",
+      "Calling free() on a NULL pointer",
+      "Using malloc() followed by realloc()",
+      "Freeing memory and setting the pointer to NULL"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\ntypedef struct {\n    char *name;\n} Person;\n\nint main() {\n    Person *p = malloc(sizeof(Person));\n    p->name = malloc(10);\n    p->name[0] = 'A'; p->name[1] = '\\0';\n    printf(\"%s\", p->name);\n    free(p->name);\n    free(p);\n    return 0;\n}",
+    "o": [
+      "A",
+      "\\0",
+      "Garbage",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "Which function can be used to dynamically allocate zero-initialized memory?",
+    "o": [
+      "calloc()",
+      "malloc()",
+      "realloc()",
+      "memset()"
+    ]
+  },
+  {
+    "q": "Which of the following statements is FALSE regarding dynamic memory?",
+    "o": [
+      "Memory allocated with malloc() is automatically freed when a function returns",
+      "You must manually free memory allocated with malloc()",
+      "calloc() initializes allocated memory to zero",
+      "free() should be called exactly once for each malloc()"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *nums = malloc(2 * sizeof(int));\n    nums[0] = 5; nums[1] = 10;\n    nums = realloc(nums, 4 * sizeof(int));\n    nums[2] = 15;\n    printf(\"%d\", nums[2]);\n    free(nums);\n    return 0;\n}",
+    "o": [
+      "15",
+      "10",
+      "5",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "What should you do before accessing memory returned by malloc()?",
+    "o": [
+      "Check if the returned pointer is not NULL",
+      "Initialize it using memset",
+      "Free it immediately",
+      "Cast it to void*"
+    ]
+  },
+  {
+    "q": "Which function should be used to safely allocate memory for a structure and its pointer members?",
+    "o": [
+      "Use malloc() for the structure and malloc() for each pointer inside it",
+      "Use calloc() only for the structure",
+      "Use realloc() directly",
+      "Use free() to allocate and initialize"
+    ]
+  },
+  {
+    "q": "Why is it important to check if a pointer is NULL after calling malloc()?",
+    "o": [
+      "To ensure the memory allocation was successful",
+      "To free the pointer immediately",
+      "To prevent initialization of memory",
+      "To cast it to another type"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *a = malloc(sizeof(int));\n    if (a != NULL) {\n        *a = 11;\n        printf(\"%d\", *a);\n        free(a);\n    }\n    return 0;\n}",
+    "o": [
+      "11",
+      "0",
+      "NULL",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "Which situation best describes a 'dangling pointer'?",
+    "o": [
+      "A pointer referencing memory that has already been freed",
+      "A pointer that is never initialized",
+      "A pointer holding NULL",
+      "A pointer to a static variable"
+    ]
+  },
+  {
+    "q": "What happens if realloc is used on a NULL pointer?",
+    "o": [
+      "It behaves like malloc",
+      "It causes a segmentation fault",
+      "It returns NULL without allocating memory",
+      "It must be freed before calling realloc"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\nint main() {\n    int *arr = calloc(4, sizeof(int));\n    printf(\"%d\", arr[2]);\n    free(arr);\n    return 0;\n}",
+    "o": [
+      "0",
+      "Garbage value",
+      "4",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "What kind of error is likely if you access memory after free()?",
+    "o": [
+      "Undefined behavior",
+      "Compilation error",
+      "Memory gets reset to zero",
+      "Nothing happens"
+    ]
+  },
+  {
+    "q": "Which is true about using malloc inside a struct in C?",
+    "o": [
+      "It is valid and often used for dynamically sized members",
+      "It is not allowed in C",
+      "It automatically frees when struct goes out of scope",
+      "It only works for global variables"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\ntypedef struct {\n    int *data;\n} Node;\n\nint main() {\n    Node *n = malloc(sizeof(Node));\n    n->data = malloc(sizeof(int));\n    *(n->data) = 123;\n    printf(\"%d\", *(n->data));\n    free(n->data);\n    free(n);\n    return 0;\n}",
+    "o": [
+      "123",
+      "0",
+      "Segmentation fault",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following should be avoided to prevent memory leaks?",
+    "o": [
+      "Overwriting pointers without freeing previous allocations",
+      "Using malloc with sizeof()",
+      "Calling free() more than once",
+      "Returning pointers from functions"
+    ]
+  },
+  {
+    "q": "Which of the following describes a memory leak?",
+    "o": [
+      "Allocated memory that is no longer accessible by any pointer",
+      "Using a pointer after freeing it",
+      "Passing a pointer to a function",
+      "Using a static variable in a function"
+    ]
+  },
+  {
+    "q": "Which of the following correctly frees dynamically allocated memory in C?",
+    "o": [
+      "free(ptr);",
+      "delete ptr;",
+      "remove(ptr);",
+      "dispose(ptr);"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\nint main() {\n    int *x = malloc(2 * sizeof(int));\n    x[0] = 7; x[1] = 14;\n    free(x);\n    printf(\"Done\");\n    return 0;\n}",
+    "o": [
+      "Done",
+      "7",
+      "Segmentation fault",
+      "14"
+    ]
+  },
+  {
+    "q": "What is a symptom of not calling free() on allocated memory?",
+    "o": [
+      "Memory leak",
+      "Segmentation fault",
+      "Compiler error",
+      "Logic error"
+    ]
+  },
+  {
+    "q": "Which of the following functions sets all allocated bytes to zero?",
+    "o": [
+      "calloc()",
+      "malloc()",
+      "realloc()",
+      "memcpy()"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\ntypedef struct {\n    int *arr;\n} Holder;\n\nint main() {\n    Holder h;\n    h.arr = malloc(2 * sizeof(int));\n    h.arr[0] = 8; h.arr[1] = 9;\n    printf(\"%d\", h.arr[1]);\n    free(h.arr);\n    return 0;\n}",
+    "o": [
+      "9",
+      "8",
+      "0",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "What will happen if you call realloc with a NULL pointer?",
+    "o": [
+      "It behaves like malloc",
+      "It causes an error",
+      "It frees memory",
+      "It zeroes the memory"
+    ]
+  },
+  {
+    "q": "What is the result of freeing a pointer twice?",
+    "o": [
+      "Undefined behavior",
+      "Nothing happens",
+      "The pointer resets to NULL",
+      "The program continues normally"
+    ]
+  },
+  {
+    "q": "Which of the following is correct when dynamically allocating an array of doubles?",
+    "o": [
+      "double *d = malloc(n * sizeof(double));",
+      "double d = malloc(n);",
+      "double *d = calloc(sizeof(double), n);",
+      "double *d = new double[n];"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\nint main() {\n    int *nums = malloc(3 * sizeof(int));\n    for (int i = 0; i < 3; i++) nums[i] = i * 2;\n    printf(\"%d\", nums[2]);\n    free(nums);\n    return 0;\n}",
+    "o": [
+      "4",
+      "2",
+      "3",
+      "0"
+    ]
+  },
+  {
+    "q": "What is a good practice after calling free() on a pointer?",
+    "o": [
+      "Set the pointer to NULL",
+      "Call malloc again immediately",
+      "Call realloc on it",
+      "Use it one last time"
+    ]
+  },
+  {
+    "q": "Which of the following correctly resizes a dynamic array in C while preserving its content?",
+    "o": [
+      "ptr = realloc(ptr, new_size);",
+      "realloc(new_size, ptr);",
+      "resize(ptr, new_size);",
+      "ptr = resize(ptr, new_size);"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\nint main() {\n    int *a = calloc(3, sizeof(int));\n    printf(\"%d\", a[1]);\n    free(a);\n    return 0;\n}",
+    "o": [
+      "0",
+      "3",
+      "Garbage value",
+      "Undefined behavior"
+    ]
+  },
+  {
+    "q": "Which of the following is a common cause of a memory leak in C?",
+    "o": [
+      "Losing all references to dynamically allocated memory",
+      "Freeing the same memory twice",
+      "Allocating memory on the stack",
+      "Using static memory inside a function"
+    ]
+  },
+  {
+    "q": "Which function is used to allocate memory for an array and initializes it to zero?",
+    "o": [
+      "calloc()",
+      "malloc()",
+      "realloc()",
+      "memalloc()"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *arr = malloc(4 * sizeof(int));\n    arr[0] = 1; arr[1] = 2; arr[2] = 3; arr[3] = 4;\n    printf(\"%d\", *(arr + 3));\n    free(arr);\n    return 0;\n}",
+    "o": [
+      "4",
+      "3",
+      "Undefined",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the behavior of realloc when shrinking memory?",
+    "o": [
+      "It may return the same or a new pointer, and old data is preserved up to the new size",
+      "It always frees memory automatically",
+      "It zeros out the memory after the new size",
+      "It requires a call to free before resizing"
+    ]
+  },
+  {
+    "q": "Which of the following statements about free() is correct?",
+    "o": [
+      "Calling free() does not set the pointer to NULL automatically",
+      "Calling free() sets all memory to zero",
+      "Calling free() prevents all memory leaks",
+      "free() reallocates the memory to another block"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\ntypedef struct {\n    int *scores;\n    int count;\n} Student;\n\nint main() {\n    Student s;\n    s.count = 2;\n    s.scores = malloc(s.count * sizeof(int));\n    s.scores[0] = 50; s.scores[1] = 100;\n    printf(\"%d\", s.scores[1]);\n    free(s.scores);\n    return 0;\n}",
+    "o": [
+      "100",
+      "50",
+      "0",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "What is one way to prevent accessing freed memory?",
+    "o": [
+      "Set the pointer to NULL after free()",
+      "Free the memory twice to ensure it's cleared",
+      "Use realloc immediately after free",
+      "Assign garbage value to the pointer"
+    ]
+  },
+  {
+    "q": "Why is using uninitialized memory dangerous in dynamically allocated arrays?",
+    "o": [
+      "It leads to undefined behavior and possible crashes",
+      "It slows down memory access",
+      "It improves performance but uses more memory",
+      "It is ignored by the compiler"
+    ]
+  },
+  {
+    "q": "Which of the following indicates a failed malloc() call?",
+    "o": [
+      "It returns NULL",
+      "It returns -1",
+      "It causes a segmentation fault",
+      "It exits the program"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\nint main() {\n    char *str = malloc(6);\n    str[0] = 'H'; str[1] = 'e'; str[2] = 'l'; str[3] = 'l'; str[4] = 'o'; str[5] = '\\0';\n    printf(\"%s\", str);\n    free(str);\n    return 0;\n}",
+    "o": [
+      "Hello",
+      "H",
+      "Segmentation fault",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which function is used to release dynamically allocated memory?",
+    "o": [
+      "free()",
+      "release()",
+      "delete()",
+      "remove()"
+    ]
+  },
+  {
+    "q": "What does calloc() do that malloc() does not?",
+    "o": [
+      "Initializes memory to zero",
+      "Allocates memory faster",
+      "Frees memory on error",
+      "Returns a pointer to pointer"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\ntypedef struct {\n    char *name;\n} Person;\n\nint main() {\n    Person *p = malloc(sizeof(Person));\n    p->name = malloc(5);\n    p->name[0] = 'J'; p->name[1] = 'o'; p->name[2] = 'e'; p->name[3] = '\\0';\n    printf(\"%s\", p->name);\n    free(p->name);\n    free(p);\n    return 0;\n}",
+    "o": [
+      "Joe",
+      "J",
+      "Segmentation fault",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "What kind of bug occurs when you write to memory after it has been freed?",
+    "o": [
+      "Use-after-free",
+      "Memory leak",
+      "Null pointer dereference",
+      "Buffer overflow"
+    ]
+  },
+  {
+    "q": "Which of the following is required before using realloc() safely?",
+    "o": [
+      "The pointer must have been allocated by malloc/calloc/realloc",
+      "The pointer must be NULL",
+      "The pointer must be freed first",
+      "The memory must be zero-initialized"
+    ]
+  },
+  {
+    "q": "What is a memory leak in C?",
+    "o": [
+      "Allocated memory that is never freed",
+      "Using a pointer after free",
+      "Accessing invalid memory address",
+      "Calling malloc with wrong size"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\nint main() {\n    int *a = malloc(sizeof(int));\n    if (a == NULL) return 1;\n    *a = 21;\n    printf(\"%d\", *a);\n    free(a);\n    return 0;\n}",
+    "o": [
+      "21",
+      "0",
+      "Segmentation fault",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following best avoids memory leaks in C programs?",
+    "o": [
+      "Always calling free() for every malloc()",
+      "Using more stack variables",
+      "Calling malloc() repeatedly",
+      "Declaring global variables"
+    ]
+  },
+  {
+    "q": "What will happen if you try to access memory after it has been freed?",
+    "o": [
+      "It causes undefined behavior",
+      "It prints zero",
+      "The program exits normally",
+      "It returns a null pointer"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\nint main() {\n    int *arr = calloc(4, sizeof(int));\n    printf(\"%d\", arr[2]);\n    free(arr);\n    return 0;\n}",
+    "o": [
+      "0",
+      "2",
+      "Garbage value",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "Which of the following is true about realloc()?",
+    "o": [
+      "It can move the memory block to a new location",
+      "It always expands in place",
+      "It requires the pointer to be NULL",
+      "It deletes the original block if resizing fails"
+    ]
+  },
+  {
+    "q": "What is the purpose of using dynamic memory allocation in structures?",
+    "o": [
+      "To allow flexible-sized members",
+      "To avoid defining struct fields",
+      "To create structures on the stack",
+      "To convert structures to pointers"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\ntypedef struct {\n    int *data;\n} Buffer;\n\nint main() {\n    Buffer buf;\n    buf.data = malloc(3 * sizeof(int));\n    buf.data[0] = 11;\n    printf(\"%d\", buf.data[0]);\n    free(buf.data);\n    return 0;\n}",
+    "o": [
+      "11",
+      "3",
+      "Garbage value",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "What happens if malloc fails to allocate memory?",
+    "o": [
+      "It returns NULL",
+      "It throws an exception",
+      "It frees existing memory",
+      "It prints an error"
+    ]
+  },
+  {
+    "q": "Which of these is valid for freeing dynamically allocated memory in a structure?",
+    "o": [
+      "free(struct_ptr->member);",
+      "delete struct_ptr->member;",
+      "free(member);",
+      "free(*struct_ptr);"
+    ]
+  },
+  {
+    "q": "What kind of problem arises if dynamically allocated memory is not freed?",
+    "o": [
+      "Memory leak",
+      "Stack overflow",
+      "Infinite loop",
+      "Null dereference"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\nint main() {\n    int *nums = malloc(2 * sizeof(int));\n    nums[0] = 1; nums[1] = 3;\n    nums = realloc(nums, 4 * sizeof(int));\n    nums[2] = 5;\n    printf(\"%d\", nums[2]);\n    free(nums);\n    return 0;\n}",
+    "o": [
+      "5",
+      "3",
+      "0",
+      "Segmentation fault"
+    ]
+  },
+  {
+    "q": "What should you do immediately after freeing a dynamically allocated pointer?",
+    "o": [
+      "Set it to NULL to avoid dangling pointer",
+      "Reallocate it with malloc again",
+      "Print its value",
+      "Use it in another function"
+    ]
+  },
+  {
+    "q": "Which of the following statements about calloc is true?",
+    "o": [
+      "It initializes all allocated memory to zero",
+      "It allocates memory twice as fast as malloc",
+      "It is only used for character arrays",
+      "It returns an integer instead of a pointer"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *ptr = malloc(3 * sizeof(int));\n    ptr[0] = 7; ptr[1] = 14; ptr[2] = 21;\n    free(ptr);\n    printf(\"%p\", (void *)ptr);\n    return 0;\n}",
+    "o": [
+      "The address of ptr (but the memory is freed)",
+      "0",
+      "Segmentation fault",
+      "7"
+    ]
+  },
+  {
+    "q": "Why is calling free() on a NULL pointer safe in C?",
+    "o": [
+      "Because free() checks for NULL before attempting to free memory",
+      "Because NULL points to an address that is always freed",
+      "Because it resets memory automatically",
+      "Because the OS handles memory freeing on NULL"
+    ]
+  },
+  {
+    "q": "Which of the following causes a memory leak?",
+    "o": [
+      "Overwriting a malloc'ed pointer without freeing it",
+      "Calling free() twice on the same pointer",
+      "Allocating memory inside a loop",
+      "Using calloc instead of malloc"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\ntypedef struct {\n    int *data;\n} Container;\n\nint main() {\n    Container *c = malloc(sizeof(Container));\n    c->data = calloc(2, sizeof(int));\n    c->data[1] = 42;\n    printf(\"%d\", c->data[1]);\n    free(c->data);\n    free(c);\n    return 0;\n}",
+    "o": [
+      "42",
+      "0",
+      "Segmentation fault",
+      "Undefined"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to allocate memory for an array of 10 doubles?",
+    "o": [
+      "double *arr = malloc(10 * sizeof(double));",
+      "double arr = malloc(10);",
+      "double *arr = malloc(10);",
+      "malloc(arr, 10 * sizeof(double));"
+    ]
+  },
+  {
+    "q": "What is the safest way to handle realloc failure?",
+    "o": [
+      "Use a temporary pointer to hold the result before assigning",
+      "Directly assign the result to the original pointer",
+      "Always free the original pointer before realloc",
+      "Use calloc instead"
+    ]
+  },
+  {
+    "q": "Which of the following would result in undefined behavior?",
+    "o": [
+      "Accessing memory after it has been freed",
+      "Calling malloc for a pointer",
+      "Calling free on a NULL pointer",
+      "Using calloc for zero-sized allocation"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "#include <stdlib.h>\n#include <stdio.h>\nint main() {\n    int *a = malloc(sizeof(int));\n    if (!a) return 1;\n    *a = 88;\n    printf(\"%d\", *a);\n    free(a);\n    return 0;\n}",
+    "o": [
+      "88",
+      "0",
+      "Segmentation fault",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "When dynamically allocating memory for a 2D array using pointers, what is essential?",
+    "o": [
+      "Allocating each row separately",
+      "Using calloc only",
+      "Avoiding free to retain memory",
+      "Using realloc directly on 2D pointers"
+    ]
+  }
+]

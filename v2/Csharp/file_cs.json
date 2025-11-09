@@ -1,0 +1,2875 @@
+[
+  {
+    "q": "Which of the following methods is used to read all lines from a text file in C#?",
+    "o": [
+      "File.ReadAllLines()",
+      "File.OpenText()",
+      "File.ReadByte()",
+      "StreamReader.Read()"
+    ]
+  },
+  {
+    "q": "What will the following code output if 'data.txt' contains the text 'Hello World'?",
+    "c": "string content = File.ReadAllText(\"data.txt\");\nConsole.WriteLine(content);",
+    "o": [
+      "Hello World",
+      "data.txt",
+      "System.IO.StreamReader",
+      "null"
+    ]
+  },
+  {
+    "q": "Which class is typically used for reading binary files in C#?",
+    "o": [
+      "BinaryReader",
+      "StreamWriter",
+      "FileReader",
+      "TextReader"
+    ]
+  },
+  {
+    "q": "What is the purpose of the BinaryWriter class in C#?",
+    "o": [
+      "To write primitive types in binary to a stream",
+      "To write characters to a stream as text",
+      "To read binary data from a stream",
+      "To serialize objects into XML"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "using (BinaryWriter writer = new BinaryWriter(File.Open(\"test.bin\", FileMode.Create)))\n{\n    writer.Write(42);\n    writer.Write(\"CSharp\");\n}",
+    "o": [
+      "A binary file with an int and a string written",
+      "The string '42CSharp' in plain text",
+      "42",
+      "CSharp"
+    ]
+  },
+  {
+    "q": "Which namespace is required for JSON serialization in .NET Core using System.Text.Json?",
+    "o": [
+      "System.Text.Json",
+      "System.Json",
+      "Newtonsoft.Json",
+      "System.Xml"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "var person = new { Name = \"Alice\", Age = 30 };\nstring json = JsonSerializer.Serialize(person);\nConsole.WriteLine(json);",
+    "o": [
+      "{\"Name\":\"Alice\",\"Age\":30}",
+      "{Name: Alice, Age: 30}",
+      "<Name>Alice</Name><Age>30</Age>",
+      "JsonSerializer"
+    ]
+  },
+  {
+    "q": "Which of the following is used to deserialize JSON to an object in C#?",
+    "o": [
+      "JsonSerializer.Deserialize<T>()",
+      "JsonConvert.ToObject()",
+      "XmlReader.Read()",
+      "BinaryReader.Read()"
+    ]
+  },
+  {
+    "q": "What does XML serialization in C# do?",
+    "o": [
+      "Converts an object into an XML format",
+      "Converts XML into a binary format",
+      "Saves an object to a text file",
+      "Reads an XML document line by line"
+    ]
+  },
+  {
+    "q": "What is the output of the following XML serialization code?",
+    "c": "public class Product {\n    public string Name { get; set; }\n    public int Price { get; set; }\n}\n\nProduct p = new Product { Name = \"Pen\", Price = 10 };\nXmlSerializer serializer = new XmlSerializer(typeof(Product));\nserializer.Serialize(Console.Out, p);",
+    "o": [
+      "<Product><Name>Pen</Name><Price>10</Price></Product>",
+      "<Name>Pen</Name><Price>10</Price>",
+      "{\"Name\":\"Pen\",\"Price\":10}",
+      "Product(Name: Pen, Price: 10)"
+    ]
+  },
+  {
+    "q": "Which class is used in C# to write text to a file line by line?",
+    "o": [
+      "StreamWriter",
+      "TextReader",
+      "FileStream",
+      "BinaryWriter"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "using (StreamWriter writer = new StreamWriter(\"log.txt\"))\n{\n    writer.WriteLine(\"Log entry\");\n}",
+    "o": [
+      "Writes 'Log entry' as a new line in 'log.txt'",
+      "Appends 'Log entry' to the end of the file without a newline",
+      "Reads a line from 'log.txt'",
+      "Deletes 'log.txt'"
+    ]
+  },
+  {
+    "q": "Which class should you use to read binary data from a file in C#?",
+    "o": [
+      "BinaryReader",
+      "StreamReader",
+      "TextReader",
+      "JsonReader"
+    ]
+  },
+  {
+    "q": "What will this code write into the binary file?",
+    "c": "using (BinaryWriter writer = new BinaryWriter(File.Open(\"data.bin\", FileMode.Create)))\n{\n    writer.Write(true);\n    writer.Write(123.45);\n}",
+    "o": [
+      "Binary representation of a boolean and a double",
+      "Plain text: 'true123.45'",
+      "Only the number 123.45 in binary",
+      "The string 'true' and '123.45' in UTF-8"
+    ]
+  },
+  {
+    "q": "Which of the following is true about serialization in C#?",
+    "o": [
+      "Serialization converts an object into a format suitable for storage or transmission",
+      "Serialization is used to render objects on the GUI",
+      "Serialization encrypts an object",
+      "Serialization always outputs binary data"
+    ]
+  },
+  {
+    "q": "What is the purpose of the [Serializable] attribute in C#?",
+    "o": [
+      "It marks a class so it can be serialized",
+      "It prevents a class from being inherited",
+      "It makes all members public",
+      "It automatically saves the object to a file"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "var json = \"{\\\"Name\\\":\\\"Bob\\\",\\\"Age\\\":40}\";\nvar person = JsonSerializer.Deserialize<Person>(json);\nConsole.WriteLine(person.Name);",
+    "o": [
+      "Bob",
+      "{\\\"Name\\\":\\\"Bob\\\"}",
+      "Person",
+      "40"
+    ]
+  },
+  {
+    "q": "Which of the following is required to serialize an object to XML in C#?",
+    "o": [
+      "An instance of XmlSerializer",
+      "BinaryFormatter",
+      "StreamReader",
+      "JsonSerializer"
+    ]
+  },
+  {
+    "q": "Which C# class is used to parse an XML document and read its elements?",
+    "o": [
+      "XmlReader",
+      "XmlWriter",
+      "XmlDocumentReader",
+      "JsonReader"
+    ]
+  },
+  {
+    "q": "Which method would you use to write a JSON string to a file in C#?",
+    "o": [
+      "File.WriteAllText()",
+      "JsonSerializer.SerializeToUtf8Bytes()",
+      "StreamReader.ReadLine()",
+      "Console.Write()"
+    ]
+  },
+  {
+    "q": "Which method is used to append text to an existing file in C#?",
+    "o": [
+      "File.AppendAllText()",
+      "File.CreateText()",
+      "File.WriteAllText()",
+      "File.ReadAllLines()"
+    ]
+  },
+  {
+    "q": "What is the output of the following code if 'note.txt' initially contains 'Hi'? ",
+    "c": "File.AppendAllText(\"note.txt\", \" there!\");\nstring result = File.ReadAllText(\"note.txt\");\nConsole.WriteLine(result);",
+    "o": [
+      "Hi there!",
+      " there!",
+      "Hi",
+      "Hithere!"
+    ]
+  },
+  {
+    "q": "Which of these best describes a binary file?",
+    "o": [
+      "A file that stores data in raw byte format",
+      "A file that stores text with line breaks",
+      "A compressed text file",
+      "A CSV file with binary headers"
+    ]
+  },
+  {
+    "q": "What will be written to 'output.bin' in the following code?",
+    "c": "using (BinaryWriter writer = new BinaryWriter(File.Open(\"output.bin\", FileMode.Create)))\n{\n    writer.Write(100);\n    writer.Write('A');\n}",
+    "o": [
+      "Raw binary data representing an integer and a char",
+      "Text: '100A'",
+      "ASCII values as string",
+      "Only the character A"
+    ]
+  },
+  {
+    "q": "Which method is used to deserialize an object from XML in C#?",
+    "o": [
+      "XmlSerializer.Deserialize()",
+      "BinaryFormatter.Deserialize()",
+      "JsonSerializer.Read()",
+      "XmlReader.ReadToEnd()"
+    ]
+  },
+  {
+    "q": "What is the main difference between JSON and XML in .NET serialization?",
+    "o": [
+      "JSON is more compact and often faster to parse",
+      "XML is more secure than JSON",
+      "JSON is strictly typed while XML is not",
+      "JSON cannot represent hierarchical data"
+    ]
+  },
+  {
+    "q": "Given the class below, what is required to serialize it to JSON?",
+    "c": "public class Car\n{\n    public string Brand { get; set; }\n    public int Year { get; set; }\n}",
+    "o": [
+      "Use JsonSerializer.Serialize(car)",
+      "Mark the class with [Serializable]",
+      "Use XmlSerializer.Serialize(car)",
+      "Override ToString() method"
+    ]
+  },
+  {
+    "q": "Which class is used to write XML content manually in C#?",
+    "o": [
+      "XmlWriter",
+      "XmlSerializer",
+      "StreamWriter",
+      "XmlReader"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to deserialize JSON to a C# object?",
+    "o": [
+      "JsonSerializer.Deserialize<MyClass>(jsonString)",
+      "JsonConvert.Parse(jsonString)",
+      "BinaryReader.Read(jsonString)",
+      "XmlSerializer.Deserialize(jsonString)"
+    ]
+  },
+  {
+    "q": "What is required before using BinaryFormatter to serialize an object?",
+    "o": [
+      "The class must be marked with [Serializable]",
+      "The class must be abstract",
+      "The class must implement IDisposable",
+      "The class must inherit from BinaryBase"
+    ]
+  },
+  {
+    "q": "Which namespace provides the File, Directory, and Path classes for file handling in C#?",
+    "o": [
+      "System.IO",
+      "System.Text",
+      "System.Data",
+      "System.Files"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "string[] lines = File.ReadAllLines(\"data.txt\");\nforeach (string line in lines)\n{\n    Console.WriteLine(line);\n}",
+    "o": [
+      "Reads all lines from 'data.txt' and prints them",
+      "Appends a line to 'data.txt'",
+      "Deletes 'data.txt' after reading",
+      "Reads only the first line from 'data.txt'"
+    ]
+  },
+  {
+    "q": "Which class is used to write primitive data types to a binary stream?",
+    "o": [
+      "BinaryWriter",
+      "StreamWriter",
+      "FileWriter",
+      "JsonWriter"
+    ]
+  },
+  {
+    "q": "Which method can be used to write an entire string to a new file, overwriting any existing file?",
+    "o": [
+      "File.WriteAllText()",
+      "File.AppendText()",
+      "File.ReadAllText()",
+      "File.ReadLines()"
+    ]
+  },
+  {
+    "q": "What will this code output if 'config.json' contains: { \"Version\": \"1.0\" }?",
+    "c": "string json = File.ReadAllText(\"config.json\");\nvar config = JsonSerializer.Deserialize<Dictionary<string, string>>(json);\nConsole.WriteLine(config[\"Version\"]);",
+    "o": [
+      "1.0",
+      "Version",
+      "{ \"Version\": \"1.0\" }",
+      "null"
+    ]
+  },
+  {
+    "q": "What attribute must a class have to allow XML serialization using XmlSerializer?",
+    "o": [
+      "A public parameterless constructor",
+      "A private constructor",
+      "It must inherit from XmlSerializableBase",
+      "It must be marked with [XmlData]"
+    ]
+  },
+  {
+    "q": "Which class is used for reading an XML file node by node in a forward-only manner?",
+    "o": [
+      "XmlReader",
+      "XmlTextWriter",
+      "XmlNode",
+      "XmlDocument"
+    ]
+  },
+  {
+    "q": "What happens if you deserialize a JSON string that has missing properties?",
+    "o": [
+      "Missing properties are left at their default values",
+      "An exception is thrown",
+      "Deserialization fails silently",
+      "JSON is rejected"
+    ]
+  },
+  {
+    "q": "Which method of JsonSerializer serializes a C# object into a JSON string?",
+    "o": [
+      "JsonSerializer.Serialize()",
+      "JsonSerializer.Write()",
+      "JsonSerializer.Stringify()",
+      "JsonConverter.SerializeObject()"
+    ]
+  },
+  {
+    "q": "What is the result of the following binary operation?",
+    "c": "using (BinaryWriter writer = new BinaryWriter(File.Open(\"info.dat\", FileMode.Create)))\n{\n    writer.Write(\"Hello\");\n    writer.Write(42);\n}",
+    "o": [
+      "Writes the string 'Hello' and the integer 42 in binary format",
+      "Writes the text 'Hello42' to the file",
+      "Writes ASCII values of characters only",
+      "Appends to the existing file 'info.dat'"
+    ]
+  },
+  {
+    "q": "Which method would you use to read all content from a text file into a single string in C#?",
+    "o": [
+      "File.ReadAllText()",
+      "File.ReadLines()",
+      "File.OpenRead()",
+      "File.ReadAllBytes()"
+    ]
+  },
+  {
+    "q": "What does the following code snippet do?",
+    "c": "string[] names = { \"Alice\", \"Bob\", \"Charlie\" };\nFile.WriteAllLines(\"names.txt\", names);",
+    "o": [
+      "Writes each name as a new line to 'names.txt'",
+      "Appends names to 'names.txt'",
+      "Reads names from 'names.txt'",
+      "Deletes 'names.txt'"
+    ]
+  },
+  {
+    "q": "Which file mode is used in FileStream to open an existing file or create a new one if it doesn't exist?",
+    "o": [
+      "FileMode.OpenOrCreate",
+      "FileMode.CreateNew",
+      "FileMode.Append",
+      "FileMode.Truncate"
+    ]
+  },
+  {
+    "q": "Which C# type is used to serialize an object into binary format?",
+    "o": [
+      "BinaryFormatter",
+      "XmlSerializer",
+      "JsonSerializer",
+      "TextWriter"
+    ]
+  },
+  {
+    "q": "What will the following code output if the JSON string is correct?",
+    "c": "string json = \"{ \\\"name\\\":\\\"Leo\\\", \\\"age\\\":30 }\";\nvar person = JsonSerializer.Deserialize<Dictionary<string, object>>(json);\nConsole.WriteLine(person[\"name\"]);",
+    "o": [
+      "Leo",
+      "name",
+      "30",
+      "System.Object"
+    ]
+  },
+  {
+    "q": "Which keyword in C# is used to mark a class so that it can be serialized using BinaryFormatter?",
+    "o": [
+      "[Serializable]",
+      "[BinaryContract]",
+      "[DataMember]",
+      "[JsonObject]"
+    ]
+  },
+  {
+    "q": "What is a potential security risk of using BinaryFormatter?",
+    "o": [
+      "It can be exploited to execute arbitrary code if used with untrusted data.",
+      "It compresses data insecurely.",
+      "It leaks memory on large objects.",
+      "It does not support reference types."
+    ]
+  },
+  {
+    "q": "What does the following code write to the file?",
+    "c": "File.WriteAllText(\"output.txt\", \"First\\nSecond\\nThird\");",
+    "o": [
+      "Three lines with 'First', 'Second', and 'Third'",
+      "A single line of text",
+      "Only the word 'Third'",
+      "Nothing, because \\n is invalid"
+    ]
+  },
+  {
+    "q": "Which of the following classes is used to parse and read JSON content?",
+    "o": [
+      "JsonDocument",
+      "XmlReader",
+      "BinaryReader",
+      "TextParser"
+    ]
+  },
+  {
+    "q": "Which XML-related class loads the entire XML document into memory for traversal and manipulation?",
+    "o": [
+      "XmlDocument",
+      "XmlReader",
+      "XmlWriter",
+      "XmlStream"
+    ]
+  },
+  {
+    "q": "Which method is used to append text to an existing file in C#?",
+    "o": [
+      "File.AppendAllText()",
+      "File.WriteAllText()",
+      "File.OpenRead()",
+      "File.ReadAllText()"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?",
+    "c": "File.WriteAllText(\"data.txt\", \"Hello\");\nstring content = File.ReadAllText(\"data.txt\");\nConsole.WriteLine(content);",
+    "o": [
+      "Hello",
+      "data.txt",
+      "null",
+      "An exception"
+    ]
+  },
+  {
+    "q": "Which of the following is used to write primitive data types in binary format?",
+    "o": [
+      "BinaryWriter",
+      "BinaryReader",
+      "FileStreamWriter",
+      "StreamSerializer"
+    ]
+  },
+  {
+    "q": "In C#, which class allows you to serialize an object to XML?",
+    "o": [
+      "XmlSerializer",
+      "XmlWriter",
+      "XmlDocument",
+      "XmlReader"
+    ]
+  },
+  {
+    "q": "What does the following C# code do?",
+    "c": "using (StreamWriter sw = new StreamWriter(\"log.txt\", true)) {\n    sw.WriteLine(\"Log started\");\n}",
+    "o": [
+      "Appends 'Log started' to 'log.txt'",
+      "Overwrites 'log.txt' with 'Log started'",
+      "Reads 'log.txt' and prints its contents",
+      "Deletes and recreates 'log.txt'"
+    ]
+  },
+  {
+    "q": "What is the advantage of using `using` with FileStream or StreamReader?",
+    "o": [
+      "It ensures the stream is automatically closed and disposed.",
+      "It makes the file write faster.",
+      "It encrypts the file data.",
+      "It compiles the code more efficiently."
+    ]
+  },
+  {
+    "q": "Which method would you use to deserialize a JSON string into a C# object?",
+    "o": [
+      "JsonSerializer.Deserialize<T>()",
+      "JsonConvert.Parse<T>()",
+      "JsonWriter.Write()",
+      "File.ReadAllJson()"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to write a list of strings to a file line by line?",
+    "o": [
+      "File.WriteAllLines(\"output.txt\", myList);",
+      "File.WriteText(\"output.txt\", myList);",
+      "File.SaveLines(\"output.txt\", myList);",
+      "TextWriter.WriteAll(myList);"
+    ]
+  },
+  {
+    "q": "In binary file handling, which method is used to read an integer?",
+    "o": [
+      "BinaryReader.ReadInt32()",
+      "BinaryReader.Read()",
+      "BinaryReader.GetInt()",
+      "BinaryReader.ReadLine()"
+    ]
+  },
+  {
+    "q": "Which class would you use to construct an XML file programmatically?",
+    "o": [
+      "XmlWriter",
+      "XmlReader",
+      "XmlNodeReader",
+      "XmlDeserializer"
+    ]
+  },
+  {
+    "q": "What does File.Exists(\"file.txt\") return if the file exists?",
+    "o": [
+      "true",
+      "false",
+      "null",
+      "An exception is thrown"
+    ]
+  },
+  {
+    "q": "Which class is used to read data from a binary file in C#?",
+    "o": [
+      "BinaryReader",
+      "BinaryWriter",
+      "FileStreamWriter",
+      "StreamSerializer"
+    ]
+  },
+  {
+    "q": "What is the result of the following code?",
+    "c": "File.WriteAllText(\"demo.txt\", \"Test\");\nbool exists = File.Exists(\"demo.txt\");\nConsole.WriteLine(exists);",
+    "o": [
+      "True",
+      "False",
+      "0",
+      "FileNotFoundException"
+    ]
+  },
+  {
+    "q": "Which .NET class would you use to convert an object to a JSON string?",
+    "o": [
+      "JsonSerializer",
+      "XmlSerializer",
+      "BinaryFormatter",
+      "DataContract"
+    ]
+  },
+  {
+    "q": "In file handling, what does the 'using' statement ensure?",
+    "o": [
+      "That the file stream is properly closed and disposed",
+      "That the file opens faster",
+      "That the file is only read once",
+      "That only one thread can access the file"
+    ]
+  },
+  {
+    "q": "What does this code do?",
+    "c": "var json = JsonSerializer.Serialize(new { Name = \"Liam\", Age = 22 });\nConsole.WriteLine(json);",
+    "o": [
+      "Prints a JSON string with Name and Age",
+      "Throws an error",
+      "Writes to a file",
+      "Reads a JSON string"
+    ]
+  },
+  {
+    "q": "Which of the following methods can be used to write binary data to a file?",
+    "o": [
+      "BinaryWriter.Write()",
+      "File.WriteAllText()",
+      "StreamReader.Write()",
+      "JsonSerializer.Write()"
+    ]
+  },
+  {
+    "q": "Which class should be used to read XML data sequentially in C#?",
+    "o": [
+      "XmlReader",
+      "XmlSerializer",
+      "XmlStream",
+      "XmlNavigator"
+    ]
+  },
+  {
+    "q": "Which mode in FileStream opens a file if it exists and truncates it to zero bytes?",
+    "o": [
+      "FileMode.Truncate",
+      "FileMode.Create",
+      "FileMode.Append",
+      "FileMode.OpenOrCreate"
+    ]
+  },
+  {
+    "q": "What is the correct way to write multiple lines to a text file?",
+    "o": [
+      "File.WriteAllLines(\"lines.txt\", new[] { \"Line1\", \"Line2\" });",
+      "File.WriteAllText(\"lines.txt\", new[] { \"Line1\", \"Line2\" });",
+      "File.Write(\"lines.txt\", \"Line1\\nLine2\");",
+      "File.WriteLines(\"lines.txt\", [\"Line1\", \"Line2\"]);"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to read all lines from a text file into a string array?",
+    "o": [
+      "File.ReadAllLines(\"data.txt\")",
+      "File.ReadText(\"data.txt\")",
+      "StreamReader.ReadAll(\"data.txt\")",
+      "File.ReadLines(\"data.txt\").ToString()"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "File.WriteAllText(\"sample.txt\", \"Welcome to C#\");\nstring text = File.ReadAllText(\"sample.txt\");\nConsole.WriteLine(text);",
+    "o": [
+      "Welcome to C#",
+      "sample.txt",
+      "True",
+      "An error is thrown"
+    ]
+  },
+  {
+    "q": "Which class is used to write primitive data types to a binary file?",
+    "o": [
+      "BinaryWriter",
+      "BinaryFormatter",
+      "StreamWriter",
+      "MemoryStream"
+    ]
+  },
+  {
+    "q": "To serialize a class object to JSON, which method should be used?",
+    "o": [
+      "JsonSerializer.Serialize()",
+      "JsonWriter.Write()",
+      "File.WriteAllJson()",
+      "JsonFile.Write()"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to deserialize XML content into a C# object?",
+    "o": [
+      "XmlSerializer.Deserialize(stream)",
+      "XmlReader.Read(stream)",
+      "JsonSerializer.Deserialize(stream)",
+      "File.ReadXmlObject()"
+    ]
+  },
+  {
+    "q": "What is the purpose of FileMode.CreateNew in C#?",
+    "o": [
+      "Creates a new file and throws an exception if it already exists",
+      "Creates a new file or overwrites if exists",
+      "Opens an existing file only",
+      "Appends data to an existing file"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?",
+    "c": "byte[] data = File.ReadAllBytes(\"logo.bin\");\nConsole.WriteLine(data.Length > 0);",
+    "o": [
+      "True",
+      "False",
+      "0",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Which namespace is required for JSON serialization in .NET Core?",
+    "o": [
+      "System.Text.Json",
+      "System.JsonConvert",
+      "System.Json.Core",
+      "System.Serialization.Json"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "File.AppendAllLines(\"log.txt\", new[] { \"Line A\", \"Line B\" });",
+    "o": [
+      "Adds 'Line A' and 'Line B' to the end of log.txt",
+      "Overwrites log.txt with two new lines",
+      "Reads the lines from log.txt",
+      "Deletes log.txt"
+    ]
+  },
+  {
+    "q": "Which class provides a fast, forward-only way to read XML data in C#?",
+    "o": [
+      "XmlReader",
+      "XmlDocument",
+      "XmlSerializer",
+      "XmlTextWriter"
+    ]
+  },
+  {
+    "q": "Which method is used to write text line by line to a file in C#?",
+    "o": [
+      "File.AppendAllLines()",
+      "File.ReadAllLines()",
+      "File.ReadTextLines()",
+      "File.WriteBytes()"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "var bytes = new byte[] { 0x41, 0x42, 0x43 };\nFile.WriteAllBytes(\"binary.dat\", bytes);\nConsole.WriteLine(File.ReadAllText(\"binary.dat\"));",
+    "o": [
+      "ABC",
+      "0x41 0x42 0x43",
+      "System.Byte[]",
+      "An exception is thrown"
+    ]
+  },
+  {
+    "q": "What does the 'FileMode.Append' enum do when used with FileStream?",
+    "o": [
+      "Opens the file and seeks to the end, or creates the file if it doesn’t exist",
+      "Overwrites the file if it exists",
+      "Throws an exception if file exists",
+      "Deletes and recreates the file"
+    ]
+  },
+  {
+    "q": "Which of these types supports both JSON serialization and deserialization in .NET 5+?",
+    "o": [
+      "System.Text.Json.JsonSerializer",
+      "Newtonsoft.Json.JsonTextReader",
+      "System.IO.JsonConverter",
+      "Microsoft.Json.NetParser"
+    ]
+  },
+  {
+    "q": "What will this C# snippet do?",
+    "c": "using (StreamWriter sw = new StreamWriter(\"log.txt\", true)) {\n    sw.WriteLine(\"New Entry\");\n}",
+    "o": [
+      "Append 'New Entry' to the log.txt file",
+      "Overwrite log.txt with 'New Entry'",
+      "Delete log.txt",
+      "Throw a compile-time error"
+    ]
+  },
+  {
+    "q": "Which class should be used to deserialize XML into a class instance?",
+    "o": [
+      "XmlSerializer",
+      "XmlDocument",
+      "XmlReader",
+      "DataContractJsonSerializer"
+    ]
+  },
+  {
+    "q": "What does File.ReadLines() return in C#?",
+    "o": [
+      "An IEnumerable<string> representing each line of the file",
+      "A string array of all words",
+      "A MemoryStream",
+      "An XmlNodeList"
+    ]
+  },
+  {
+    "q": "What is required for a class to be serialized using XmlSerializer?",
+    "o": [
+      "The class must have a parameterless constructor and public properties",
+      "The class must inherit from IXmlSerializable",
+      "All fields must be private",
+      "The class must be abstract"
+    ]
+  },
+  {
+    "q": "Which is true about BinaryReader and BinaryWriter?",
+    "o": [
+      "They are used for reading and writing primitive data types in binary format",
+      "They are used only for reading and writing text files",
+      "They support XML serialization",
+      "They can only handle image files"
+    ]
+  },
+  {
+    "q": "What does this code print?",
+    "c": "string json = \"{\\\"name\\\":\\\"John\\\",\\\"age\\\":30}\";\nvar person = JsonSerializer.Deserialize<Dictionary<string, object>>(json);\nConsole.WriteLine(person[\"name\"]);",
+    "o": [
+      "John",
+      "30",
+      "{ name: John }",
+      "System.Text.Json"
+    ]
+  },
+  {
+    "q": "Which method writes a string to a file, overwriting its existing content?",
+    "o": [
+      "File.WriteAllText()",
+      "File.AppendAllText()",
+      "File.ReadAllText()",
+      "File.WriteAllLines()"
+    ]
+  },
+  {
+    "q": "What is the output of this code snippet?",
+    "c": "string[] lines = { \"Line 1\", \"Line 2\" };\nFile.WriteAllLines(\"text.txt\", lines);\nvar readLines = File.ReadAllLines(\"text.txt\");\nConsole.WriteLine(readLines[1]);",
+    "o": [
+      "Line 2",
+      "Line 1",
+      "text.txt",
+      "Index out of range"
+    ]
+  },
+  {
+    "q": "Which file mode will open a file if it exists, or create a new one if it does not?",
+    "o": [
+      "FileMode.OpenOrCreate",
+      "FileMode.CreateNew",
+      "FileMode.Truncate",
+      "FileMode.Append"
+    ]
+  },
+  {
+    "q": "Which interface is used when customizing binary serialization?",
+    "o": [
+      "ISerializable",
+      "IDisposable",
+      "IFormattable",
+      "IComparable"
+    ]
+  },
+  {
+    "q": "Which code snippet correctly serializes an object to JSON and saves it to a file?",
+    "c": "var person = new { Name = \"Alex\", Age = 25 };\nstring json = JsonSerializer.Serialize(person);\nFile.WriteAllText(\"person.json\", json);",
+    "o": [
+      "The object is serialized and saved as JSON in the file.",
+      "Throws an error: anonymous types not supported.",
+      "Saves binary data instead of JSON.",
+      "JsonSerializer doesn’t support file writing."
+    ]
+  },
+  {
+    "q": "Which method in XmlDocument allows selecting nodes using XPath?",
+    "o": [
+      "SelectNodes()",
+      "FindNodes()",
+      "QueryNodes()",
+      "GetByXPath()"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'using' statement when working with file streams?",
+    "o": [
+      "Automatically disposes the stream after use",
+      "Increases performance",
+      "Disables exception handling",
+      "Prevents file overwriting"
+    ]
+  },
+  {
+    "q": "Which method is used to read a binary file into a byte array in C#?",
+    "o": [
+      "File.ReadAllBytes()",
+      "File.ReadBinary()",
+      "BinaryReader.ReadBytesAll()",
+      "File.GetBytes()"
+    ]
+  },
+  {
+    "q": "What does the following code do?",
+    "c": "var fs = new FileStream(\"output.bin\", FileMode.Create);\nusing (var writer = new BinaryWriter(fs)) {\n    writer.Write(100);\n    writer.Write(true);\n}",
+    "o": [
+      "Writes an integer and a boolean in binary format to output.bin",
+      "Writes text data to output.bin",
+      "Reads from output.bin",
+      "Throws a runtime error"
+    ]
+  },
+  {
+    "q": "Which attribute is commonly used to ignore a property during JSON serialization?",
+    "o": [
+      "[JsonIgnore]",
+      "[NonSerialized]",
+      "[IgnoreProperty]",
+      "[SkipJson]"
+    ]
+  },
+  {
+    "q": "Which class in C# is commonly used to read characters from a text file?",
+    "o": [
+      "StreamReader",
+      "FileStream",
+      "TextBox",
+      "ConsoleReader"
+    ]
+  },
+  {
+    "q": "What is the result of executing this code?",
+    "c": "File.WriteAllText(\"sample.txt\", \"Hello\");\nstring content = File.ReadAllText(\"sample.txt\");\nConsole.WriteLine(content);",
+    "o": [
+      "Hello",
+      "sample.txt",
+      "NullReferenceException",
+      "TextReader error"
+    ]
+  },
+  {
+    "q": "Which of the following best describes binary file writing?",
+    "o": [
+      "Data is written in raw format using bytes",
+      "Data is always human-readable",
+      "Only strings can be written",
+      "BinaryWriter is used for reading only"
+    ]
+  },
+  {
+    "q": "Which method is used to deserialize a JSON string into an object?",
+    "o": [
+      "JsonSerializer.Deserialize()",
+      "JsonConvert.FromJson()",
+      "JsonReader.Parse()",
+      "JsonFile.ToObject()"
+    ]
+  },
+  {
+    "q": "What will the following code output?",
+    "c": "var writer = new BinaryWriter(File.Open(\"data.bin\", FileMode.Create));\nwriter.Write(42);\nwriter.Close();\n\nvar reader = new BinaryReader(File.Open(\"data.bin\", FileMode.Open));\nConsole.WriteLine(reader.ReadInt32());\nreader.Close();",
+    "o": [
+      "42",
+      "data.bin",
+      "0",
+      "System.IO.Exception"
+    ]
+  },
+  {
+    "q": "What is required to serialize a custom object into XML using XmlSerializer?",
+    "o": [
+      "The object must be public and have a parameterless constructor",
+      "The class must inherit from XmlBase",
+      "The object must be static",
+      "You must use BinaryFormatter first"
+    ]
+  },
+  {
+    "q": "Which namespace provides support for working with JSON in .NET Core?",
+    "o": [
+      "System.Text.Json",
+      "System.Web.Json",
+      "System.Json.Serialization",
+      "Microsoft.JsonParser"
+    ]
+  },
+  {
+    "q": "What does File.AppendAllText() do?",
+    "o": [
+      "Appends the given text to the end of a file",
+      "Overwrites the file completely",
+      "Deletes the file before writing",
+      "Reads text from the file"
+    ]
+  },
+  {
+    "q": "Which of the following code snippets writes XML content to a file?",
+    "c": "XmlDocument doc = new XmlDocument();\ndoc.LoadXml(\"<user><name>John</name></user>\");\ndoc.Save(\"user.xml\");",
+    "o": [
+      "Creates an XML file named user.xml with the specified structure",
+      "Throws an XML format exception",
+      "Does not save anything",
+      "Only prints XML to console"
+    ]
+  },
+  {
+    "q": "Which class allows writing objects as binary data?",
+    "o": [
+      "BinaryFormatter",
+      "JsonSerializer",
+      "XmlSerializer",
+      "StreamReader"
+    ]
+  },
+  {
+    "q": "Which of the following is used to write binary data to a file in C#?",
+    "o": [
+      "BinaryWriter",
+      "TextWriter",
+      "StreamReader",
+      "FileWriter"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "File.WriteAllText(\"test.txt\", \"Line1\\nLine2\");\nstring[] lines = File.ReadAllLines(\"test.txt\");\nConsole.WriteLine(lines.Length);",
+    "o": [
+      "2",
+      "1",
+      "0",
+      "Line1"
+    ]
+  },
+  {
+    "q": "Which stream class is best suited for reading characters from a file?",
+    "o": [
+      "StreamReader",
+      "BinaryReader",
+      "MemoryStream",
+      "StreamWriter"
+    ]
+  },
+  {
+    "q": "Which class is used to deserialize XML into an object?",
+    "o": [
+      "XmlSerializer",
+      "XmlDocument",
+      "XmlReader",
+      "XmlConverter"
+    ]
+  },
+  {
+    "q": "What does FileMode.Append do when opening a file?",
+    "o": [
+      "Opens the file if it exists and sets the file pointer to the end of the file, or creates a new file",
+      "Creates a new file and overwrites if it exists",
+      "Reads the file from the beginning",
+      "Throws an exception if the file does not exist"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "var person = new { Name = \"Eva\", Age = 28 };\nstring json = JsonSerializer.Serialize(person);\nConsole.WriteLine(json);",
+    "o": [
+      "{\"Name\":\"Eva\",\"Age\":28}",
+      "{\"Eva\":28}",
+      "JsonSerializer error",
+      "System.NullReferenceException"
+    ]
+  },
+  {
+    "q": "Which of the following methods reads all bytes from a binary file?",
+    "o": [
+      "File.ReadAllBytes()",
+      "File.ReadAllText()",
+      "BinaryReader.ReadAll()",
+      "Stream.ReadBinary()"
+    ]
+  },
+  {
+    "q": "Which property of XmlNode gives the name of the node?",
+    "o": [
+      "Name",
+      "InnerText",
+      "Value",
+      "NodeType"
+    ]
+  },
+  {
+    "q": "In C#, which keyword ensures that a file stream is disposed properly?",
+    "o": [
+      "using",
+      "finally",
+      "dispose",
+      "end"
+    ]
+  },
+  {
+    "q": "What is required for a class to be serialized using BinaryFormatter?",
+    "o": [
+      "[Serializable] attribute",
+      "[Binary] attribute",
+      "[SerializableClass] attribute",
+      "Inheriting from ISerializable only"
+    ]
+  },
+  {
+    "q": "What is the purpose of File.Exists() in C#?",
+    "o": [
+      "Checks if a file exists at the specified path",
+      "Reads the file content",
+      "Deletes the file",
+      "Creates a new file"
+    ]
+  },
+  {
+    "q": "What does this code do?",
+    "c": "string[] data = {\"Line1\", \"Line2\"};\nFile.WriteAllLines(\"output.txt\", data);",
+    "o": [
+      "Writes each string as a new line to output.txt",
+      "Appends lines to the file",
+      "Reads lines from output.txt",
+      "Writes the strings without new lines"
+    ]
+  },
+  {
+    "q": "Which C# class is typically used to deserialize a JSON string into an object?",
+    "o": [
+      "JsonSerializer",
+      "JsonDocument",
+      "JsonTextReader",
+      "JsonHandler"
+    ]
+  },
+  {
+    "q": "Which method in BinaryReader is used to read a double value?",
+    "o": [
+      "ReadDouble()",
+      "ReadDecimal()",
+      "ReadFloat()",
+      "GetDouble()"
+    ]
+  },
+  {
+    "q": "Which class is part of System.Xml and is used for working with XML as a DOM?",
+    "o": [
+      "XmlDocument",
+      "XmlWriter",
+      "XmlSerializer",
+      "XmlStream"
+    ]
+  },
+  {
+    "q": "What will this code output?",
+    "c": "using (var writer = new StreamWriter(\"log.txt\")) {\n    writer.Write(\"Test\");\n}\nConsole.WriteLine(File.ReadAllText(\"log.txt\"));",
+    "o": [
+      "Test",
+      "log.txt",
+      "0",
+      "StreamWriter"
+    ]
+  },
+  {
+    "q": "Which method is used to convert an object to a JSON string in .NET?",
+    "o": [
+      "JsonSerializer.Serialize()",
+      "JsonConverter.ToJson()",
+      "JsonWriter.Convert()",
+      "JsonFormatter.Serialize()"
+    ]
+  },
+  {
+    "q": "What does XmlSerializer.Serialize() require to function properly?",
+    "o": [
+      "A stream or TextWriter and a valid object",
+      "Only a string path",
+      "A JSON object",
+      "A FileStream and XmlDocument"
+    ]
+  },
+  {
+    "q": "Which of the following file modes in FileStream will create a new file or overwrite if it exists?",
+    "o": [
+      "FileMode.Create",
+      "FileMode.Open",
+      "FileMode.Append",
+      "FileMode.OpenOrCreate"
+    ]
+  },
+  {
+    "q": "What type of data is best handled using BinaryWriter and BinaryReader?",
+    "o": [
+      "Structured binary data (like ints, floats, bools)",
+      "Plain text",
+      "JSON documents",
+      "XML nodes"
+    ]
+  },
+  {
+    "q": "Which method is used to append text to an existing file in C#?",
+    "o": [
+      "File.AppendAllText()",
+      "File.WriteText()",
+      "File.SaveText()",
+      "File.MergeText()"
+    ]
+  },
+  {
+    "q": "What will this code do?",
+    "c": "File.WriteAllText(\"data.txt\", \"Hello\");\nFile.AppendAllText(\"data.txt\", \" World\");\nConsole.WriteLine(File.ReadAllText(\"data.txt\"));",
+    "o": [
+      "Hello World",
+      "Hello",
+      "World",
+      "File not found"
+    ]
+  },
+  {
+    "q": "Which of these C# types allows binary writing to a file?",
+    "o": [
+      "BinaryWriter",
+      "TextWriter",
+      "StringWriter",
+      "StreamReader"
+    ]
+  },
+  {
+    "q": "Which method would you use to convert a JSON string to an object?",
+    "o": [
+      "JsonSerializer.Deserialize<T>()",
+      "JsonParser.Load<T>()",
+      "JsonObject.Convert<T>()",
+      "JsonFormat.Read<T>()"
+    ]
+  },
+  {
+    "q": "Which namespace contains the classes for working with XML in C#?",
+    "o": [
+      "System.Xml",
+      "System.Json",
+      "System.IO.Xml",
+      "System.XmlTools"
+    ]
+  },
+  {
+    "q": "What will this output?",
+    "c": "using (var reader = new BinaryReader(File.OpenRead(\"binary.dat\"))) {\n    int value = reader.ReadInt32();\n    Console.WriteLine(value);\n}",
+    "o": [
+      "Prints the first 4 bytes of the file as an integer",
+      "Prints the entire file",
+      "Throws an error if file exists",
+      "Prints file name"
+    ]
+  },
+  {
+    "q": "What must a class have to be serialized by XmlSerializer?",
+    "o": [
+      "A public parameterless constructor",
+      "A private constructor",
+      "An abstract modifier",
+      "Must inherit from XmlSerializable"
+    ]
+  },
+  {
+    "q": "Which class provides a forward-only, read-only cursor for processing XML?",
+    "o": [
+      "XmlReader",
+      "XmlWriter",
+      "XmlTextWriter",
+      "XmlNavigator"
+    ]
+  },
+  {
+    "q": "What will this code print?",
+    "c": "File.WriteAllLines(\"lines.txt\", new[]{\"A\", \"B\", \"C\"});\nvar content = File.ReadAllLines(\"lines.txt\");\nConsole.WriteLine(content[1]);",
+    "o": [
+      "B",
+      "A",
+      "C",
+      "lines.txt"
+    ]
+  },
+  {
+    "q": "Which JSON library is built-in with .NET Core 3.0+?",
+    "o": [
+      "System.Text.Json",
+      "Newtonsoft.Json",
+      "FastJson",
+      "Json.NET"
+    ]
+  },
+  {
+    "q": "Which method in C# is used to read all text from a file?",
+    "o": [
+      "File.ReadAllText()",
+      "File.ReadLines()",
+      "File.ReadToEnd()",
+      "File.OpenText()"
+    ]
+  },
+  {
+    "q": "What will the following code output?\n\nFile.WriteAllText(\"file.txt\", \"C# Programming\");\nConsole.WriteLine(File.ReadAllText(\"file.txt\"));",
+    "o": [
+      "C# Programming",
+      "file.txt",
+      "Error: File not found",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which class is used to write binary data to a file in C#?",
+    "o": [
+      "BinaryWriter",
+      "TextWriter",
+      "StreamWriter",
+      "FileWriter"
+    ]
+  },
+  {
+    "q": "Which C# method is used to deserialize a JSON string into an object?",
+    "o": [
+      "JsonSerializer.Deserialize()",
+      "JsonReader.ReadObject()",
+      "JsonObject.Parse()",
+      "JsonFormatter.Deserialize()"
+    ]
+  },
+  {
+    "q": "Which of the following is the correct way to serialize an object in C# using XML?",
+    "o": [
+      "XmlSerializer.Serialize()",
+      "XmlWriter.Serialize()",
+      "XmlReader.Serialize()",
+      "XmlDocument.Serialize()"
+    ]
+  },
+  {
+    "q": "What will this code do?\n\nusing (var writer = new StreamWriter(\"log.txt\"))\n{\n  writer.WriteLine(\"Log entry\");\n}\nConsole.WriteLine(File.ReadAllText(\"log.txt\"));",
+    "o": [
+      "Writes 'Log entry' to log.txt and then reads it",
+      "Throws an error because StreamWriter is not closed",
+      "Creates an empty file log.txt",
+      "Reads content from the file without writing"
+    ]
+  },
+  {
+    "q": "Which C# method is used to read all lines from a file into an array?",
+    "o": [
+      "File.ReadAllLines()",
+      "File.ReadLine()",
+      "File.ReadLines()",
+      "File.ReadToEnd()"
+    ]
+  },
+  {
+    "q": "What does the BinaryReader.ReadInt32() method return?",
+    "o": [
+      "A 4-byte integer from the binary stream",
+      "A string",
+      "A double value",
+      "An array of bytes"
+    ]
+  },
+  {
+    "q": "Which class is used to handle JSON serialization and deserialization in C#?",
+    "o": [
+      "JsonSerializer",
+      "JsonDocument",
+      "JsonObject",
+      "JsonHandler"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid way to deserialize JSON to a C# object?",
+    "o": [
+      "JsonSerializer.Deserialize<T>(jsonString)",
+      "Json.Parse<T>(jsonString)",
+      "DeserializeObject<T>(jsonString)",
+      "Json.ToObject<T>(jsonString)"
+    ]
+  },
+  {
+    "q": "What method would you use to write an array of strings to a file in C#?",
+    "o": [
+      "File.WriteAllLines()",
+      "File.WriteText()",
+      "File.AppendText()",
+      "File.CreateText()"
+    ]
+  },
+  {
+    "q": "What will the following code output?\n\nFile.WriteAllText(\"info.txt\", \"Data\");\nFile.AppendAllText(\"info.txt\", \" Processed\");\nConsole.WriteLine(File.ReadAllText(\"info.txt\"));",
+    "o": [
+      "Data Processed",
+      "Data",
+      "Processed",
+      "File not found"
+    ]
+  },
+  {
+    "q": "Which of the following C# methods is used for binary file reading?",
+    "o": [
+      "BinaryReader.ReadByte()",
+      "StreamReader.ReadLine()",
+      "File.ReadAllText()",
+      "TextReader.Read()"
+    ]
+  },
+  {
+    "q": "Which C# class is used to handle XML data serialization?",
+    "o": [
+      "XmlSerializer",
+      "XmlReader",
+      "XmlWriter",
+      "XmlDocument"
+    ]
+  },
+  {
+    "q": "Which attribute is required for a class to be serialized using JSON in C#?",
+    "o": [
+      "[Serializable]",
+      "[JsonObject]",
+      "[XmlElement]",
+      "[JsonProperty]"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?\n\nBinaryWriter writer = new BinaryWriter(File.Open(\"file.dat\", FileMode.Create));\nwriter.Write(100);\nwriter.Close();\nConsole.WriteLine(File.ReadAllText(\"file.dat\"));",
+    "o": [
+      "Error (Binary file cannot be read as text)",
+      "100",
+      "file.dat",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "How can you convert an object into a JSON string in C#?",
+    "o": [
+      "JsonSerializer.Serialize()",
+      "JsonObject.ToString()",
+      "JsonReader.Read()",
+      "JsonParser.Parse()"
+    ]
+  },
+  {
+    "q": "Which C# method can be used to deserialize XML data into an object?",
+    "o": [
+      "XmlSerializer.Deserialize()",
+      "XmlReader.ReadObject()",
+      "XmlTextReader.Deserialize()",
+      "XmlObject.Convert()"
+    ]
+  },
+  {
+    "q": "Which class provides a way to read JSON data from a file or string in C#?",
+    "o": [
+      "JsonReader",
+      "JsonParser",
+      "JsonDecoder",
+      "JsonFormatter"
+    ]
+  },
+  {
+    "q": "What will this code output?\n\nusing (var reader = new StreamReader(\"data.xml\"))\n{\n    Console.WriteLine(reader.ReadLine());\n}",
+    "o": [
+      "The first line of the XML file",
+      "The entire content of the file",
+      "Error, file not found",
+      "The last line of the XML file"
+    ]
+  },
+  {
+    "q": "Which of the following classes is used to read text files line by line in C#?",
+    "o": [
+      "StreamReader",
+      "StreamWriter",
+      "BinaryReader",
+      "TextWriter"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "using System;\nusing System.IO;\n\nclass Program\n{\n    static void Main()\n    {\n        File.WriteAllText(\"test.txt\", \"Hello C#\");\n        string content = File.ReadAllText(\"test.txt\");\n        Console.WriteLine(content);\n    }\n}",
+    "o": [
+      "Hello C#",
+      "test.txt",
+      "System.IO.File",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which of the following is used to write binary data to a file in C#?",
+    "o": [
+      "BinaryWriter",
+      "StreamReader",
+      "FileStream.Read",
+      "TextWriter"
+    ]
+  },
+  {
+    "q": "What will the following code print?\n",
+    "c": "using System;\nusing System.IO;\n\nclass Program\n{\n    static void Main()\n    {\n        using (BinaryWriter writer = new BinaryWriter(File.Open(\"data.bin\", FileMode.Create)))\n        {\n            writer.Write(100);\n        }\n\n        using (BinaryReader reader = new BinaryReader(File.Open(\"data.bin\", FileMode.Open)))\n        {\n            Console.WriteLine(reader.ReadInt32());\n        }\n    }\n}",
+    "o": [
+      "100",
+      "data.bin",
+      "System.IO.BinaryWriter",
+      "0"
+    ]
+  },
+  {
+    "q": "Which namespace contains the classes for JSON serialization and deserialization in C#?",
+    "o": [
+      "System.Text.Json",
+      "System.Xml.Linq",
+      "System.Runtime.Serialization.Formatters.Binary",
+      "System.IO.Compression"
+    ]
+  },
+  {
+    "q": "What is the purpose of the [Serializable] attribute in C#?",
+    "o": [
+      "It marks a class so that its instances can be serialized.",
+      "It generates a constructor for file reading.",
+      "It allows reading from binary files only.",
+      "It encrypts the file data automatically."
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "using System;\nusing System.Text.Json;\n\nclass Person {\n    public string Name { get; set; }\n    public int Age { get; set; }\n}\n\nclass Program {\n    static void Main() {\n        string json = \"{\\\"Name\\\":\\\"John\\\",\\\"Age\\\":30}\";\n        Person p = JsonSerializer.Deserialize<Person>(json);\n        Console.WriteLine(p.Name);\n    }\n}",
+    "o": [
+      "John",
+      "30",
+      "Name",
+      "System.Text.Json"
+    ]
+  },
+  {
+    "q": "Which class is commonly used for working with XML documents in C#?",
+    "o": [
+      "XmlDocument",
+      "JsonDocument",
+      "BinaryWriter",
+      "StreamReader"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "using System;\nusing System.Xml.Linq;\n\nclass Program\n{\n    static void Main()\n    {\n        XElement element = new XElement(\"Person\",\n            new XElement(\"Name\", \"Alice\"),\n            new XElement(\"Age\", \"25\")\n        );\n\n        Console.WriteLine(element.Element(\"Name\").Value);\n    }\n}",
+    "o": [
+      "Alice",
+      "25",
+      "<Name>Alice</Name>",
+      "Person"
+    ]
+  },
+  {
+    "q": "Which method is used to append text to an existing file in C#?",
+    "o": [
+      "File.AppendAllText",
+      "File.WriteAllText",
+      "FileStream.Close",
+      "File.ReadAllText"
+    ]
+  },
+  {
+    "q": "Which of the following methods reads all lines from a text file into a string array?",
+    "o": [
+      "File.ReadAllLines",
+      "File.ReadLine",
+      "StreamReader.ReadToEnd",
+      "FileStream.Read"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code snippet?\n",
+    "c": "using System;\nusing System.IO;\n\nclass Program {\n    static void Main() {\n        File.WriteAllLines(\"sample.txt\", new string[] { \"Line1\", \"Line2\" });\n        string[] lines = File.ReadAllLines(\"sample.txt\");\n        Console.WriteLine(lines[1]);\n    }\n}",
+    "o": [
+      "Line2",
+      "Line1",
+      "sample.txt",
+      "2"
+    ]
+  },
+  {
+    "q": "Which C# class is primarily used to read binary data from a file?",
+    "o": [
+      "BinaryReader",
+      "StreamWriter",
+      "FileStream",
+      "TextReader"
+    ]
+  },
+  {
+    "q": "What does the following code snippet do?\n",
+    "c": "using System;\nusing System.IO;\n\nclass Program {\n    static void Main() {\n        using (FileStream fs = new FileStream(\"example.bin\", FileMode.Create)) {\n            byte[] data = { 0x10, 0x20, 0x30 };\n            fs.Write(data, 0, data.Length);\n        }\n    }\n}",
+    "o": [
+      "Writes raw bytes to a binary file",
+      "Reads integers from a binary file",
+      "Serializes an object to a binary file",
+      "Deletes a binary file"
+    ]
+  },
+  {
+    "q": "Which of the following attributes is necessary to serialize a class using the BinaryFormatter?",
+    "o": [
+      "[Serializable]",
+      "[DataContract]",
+      "[BinaryData]",
+      "[MarshalAs]"
+    ]
+  },
+  {
+    "q": "What is the output of the following JSON deserialization in C#?\n",
+    "c": "using System;\nusing System.Text.Json;\n\nclass Car {\n    public string Model { get; set; }\n    public int Year { get; set; }\n}\n\nclass Program {\n    static void Main() {\n        string json = \"{\\\"Model\\\":\\\"Tesla\\\",\\\"Year\\\":2022}\";\n        Car car = JsonSerializer.Deserialize<Car>(json);\n        Console.WriteLine(car.Year);\n    }\n}",
+    "o": [
+      "2022",
+      "Tesla",
+      "Car",
+      "JsonSerializer"
+    ]
+  },
+  {
+    "q": "Which method is used to serialize an object into a JSON string in C#?",
+    "o": [
+      "JsonSerializer.Serialize",
+      "JsonConvert.ObjectToJson",
+      "JsonWriter.WriteJson",
+      "JsonTextWriter.Convert"
+    ]
+  },
+  {
+    "q": "In XML handling using LINQ to XML, which method returns all child elements with a specific name?",
+    "o": [
+      "Elements()",
+      "Element()",
+      "Descendants()",
+      "Attributes()"
+    ]
+  },
+  {
+    "q": "What is the output of the following XML query code?\n",
+    "c": "using System;\nusing System.Xml.Linq;\n\nclass Program {\n    static void Main() {\n        XElement book = new XElement(\"Book\",\n            new XElement(\"Title\", \"C# Programming\"),\n            new XElement(\"Price\", 29.99)\n        );\n        Console.WriteLine(book.Element(\"Price\").Value);\n    }\n}",
+    "o": [
+      "29.99",
+      "C# Programming",
+      "Book",
+      "System.Xml.Linq"
+    ]
+  },
+  {
+    "q": "Which of the following statements is true about JSON handling in C#?",
+    "o": [
+      "JsonSerializer is a built-in class for JSON processing.",
+      "Only third-party libraries can be used for JSON in C#.",
+      "C# does not support JSON serialization.",
+      "JSON is only used in ASP.NET and not in console applications."
+    ]
+  },
+  {
+    "q": "Which method from the File class writes a string array to a new text file in C#?",
+    "o": [
+      "File.WriteAllLines",
+      "File.AppendText",
+      "File.ReadAllText",
+      "File.ReadLines"
+    ]
+  },
+  {
+    "q": "What will be printed by the following code?\n",
+    "c": "using System;\nusing System.IO;\n\nclass Program {\n    static void Main() {\n        File.WriteAllText(\"data.txt\", \"First Line\\nSecond Line\");\n        string[] lines = File.ReadAllLines(\"data.txt\");\n        Console.WriteLine(lines.Length);\n    }\n}",
+    "o": [
+      "2",
+      "1",
+      "0",
+      "Compilation Error"
+    ]
+  },
+  {
+    "q": "Which stream class is ideal for writing primitive types in binary format?",
+    "o": [
+      "BinaryWriter",
+      "StreamReader",
+      "TextWriter",
+      "MemoryStream"
+    ]
+  },
+  {
+    "q": "Which of the following is **not** true about BinaryReader in C#?",
+    "o": [
+      "It writes binary data to a file.",
+      "It reads primitive data types.",
+      "It requires a stream as input.",
+      "It supports reading strings."
+    ]
+  },
+  {
+    "q": "What does the following code do?\n",
+    "c": "using System;\nusing System.IO;\nusing System.Runtime.Serialization.Formatters.Binary;\n\n[Serializable]\nclass Product {\n    public string Name;\n    public double Price;\n}\n\nclass Program {\n    static void Main() {\n        Product p = new Product { Name = \"Pen\", Price = 2.5 };\n        using (FileStream fs = new FileStream(\"product.dat\", FileMode.Create)) {\n            BinaryFormatter bf = new BinaryFormatter();\n            bf.Serialize(fs, p);\n        }\n    }\n}",
+    "o": [
+      "Serializes the Product object to a binary file",
+      "Reads a Product object from a file",
+      "Converts the file to a string",
+      "Deserializes an XML file"
+    ]
+  },
+  {
+    "q": "Which namespace provides types for JSON serialization in .NET Core and .NET 5+?",
+    "o": [
+      "System.Text.Json",
+      "Newtonsoft.Json",
+      "System.Json",
+      "System.Net.Json"
+    ]
+  },
+  {
+    "q": "What does this code output?\n",
+    "c": "using System;\nusing System.Text.Json;\n\nclass User {\n    public string Username { get; set; }\n    public int Id { get; set; }\n}\n\nclass Program {\n    static void Main() {\n        User user = new User { Username = \"admin\", Id = 1 };\n        string json = JsonSerializer.Serialize(user);\n        Console.WriteLine(json.Contains(\"admin\"));\n    }\n}",
+    "o": [
+      "True",
+      "False",
+      "admin",
+      "JsonSerializer"
+    ]
+  },
+  {
+    "q": "Which class in LINQ to XML allows you to represent an entire XML document?",
+    "o": [
+      "XDocument",
+      "XElement",
+      "XmlSerializer",
+      "XmlDocument"
+    ]
+  },
+  {
+    "q": "What will the following code print?\n",
+    "c": "using System;\nusing System.Xml.Linq;\n\nclass Program {\n    static void Main() {\n        XDocument doc = new XDocument(\n            new XElement(\"Library\",\n                new XElement(\"Book\", new XAttribute(\"Title\", \"C# 101\"))\n            )\n        );\n        Console.WriteLine(doc.Root.Name);\n    }\n}",
+    "o": [
+      "Library",
+      "Book",
+      "Title",
+      "C# 101"
+    ]
+  },
+  {
+    "q": "Which class is responsible for converting XML data to and from C# objects?",
+    "o": [
+      "XmlSerializer",
+      "XDocument",
+      "XmlReader",
+      "XmlConverter"
+    ]
+  },
+  {
+    "q": "Which method is used to check if a file exists before trying to read it?",
+    "o": [
+      "File.Exists",
+      "File.IsPresent",
+      "File.Available",
+      "File.Check"
+    ]
+  },
+  {
+    "q": "What does this code output?\n",
+    "c": "using System;\nusing System.IO;\n\nclass Program {\n    static void Main() {\n        File.WriteAllText(\"notes.txt\", \"C# File Handling\");\n        bool exists = File.Exists(\"notes.txt\");\n        Console.WriteLine(exists);\n    }\n}",
+    "o": [
+      "True",
+      "False",
+      "notes.txt",
+      "C# File Handling"
+    ]
+  },
+  {
+    "q": "Which method from File class appends text to an existing file?",
+    "o": [
+      "File.AppendAllText",
+      "File.WriteAllText",
+      "File.WriteLines",
+      "File.CreateText"
+    ]
+  },
+  {
+    "q": "Which class allows both reading and writing to a binary file?",
+    "o": [
+      "FileStream",
+      "StreamReader",
+      "TextWriter",
+      "FileInfo"
+    ]
+  },
+  {
+    "q": "What is required to deserialize a class using BinaryFormatter?",
+    "o": [
+      "The class must be marked with [Serializable] attribute",
+      "The class must inherit IFormatter",
+      "The class must override Deserialize method",
+      "The class must be declared as sealed"
+    ]
+  },
+  {
+    "q": "What will be printed by this code?\n",
+    "c": "using System;\nusing System.IO;\n\nclass Program {\n    static void Main() {\n        using (FileStream fs = new FileStream(\"sample.bin\", FileMode.Create)) {\n            fs.WriteByte(0x42);\n        }\n\n        using (FileStream fs = new FileStream(\"sample.bin\", FileMode.Open)) {\n            Console.WriteLine(fs.ReadByte());\n        }\n    }\n}",
+    "o": [
+      "66",
+      "42",
+      "0x42",
+      "sample.bin"
+    ]
+  },
+  {
+    "q": "Which of the following is true about System.Text.Json?",
+    "o": [
+      "It supports serialization and deserialization of C# objects to/from JSON.",
+      "It is only available in ASP.NET.",
+      "It requires Newtonsoft.Json to work.",
+      "It does not support collections."
+    ]
+  },
+  {
+    "q": "Which of the following will correctly serialize an object to JSON in C#?",
+    "o": [
+      "JsonSerializer.Serialize(obj)",
+      "JsonConvert.ObjectToJson(obj)",
+      "obj.ToJson()",
+      "SerializeJson(obj)"
+    ]
+  },
+  {
+    "q": "Which XML class provides a forward-only, read-only cursor over an XML document?",
+    "o": [
+      "XmlReader",
+      "XDocument",
+      "XmlSerializer",
+      "XElement"
+    ]
+  },
+  {
+    "q": "What is the result of this code?\n",
+    "c": "using System;\nusing System.Xml.Linq;\n\nclass Program {\n    static void Main() {\n        XElement person = new XElement(\"Person\",\n            new XAttribute(\"id\", 101),\n            new XElement(\"Name\", \"John\")\n        );\n        Console.WriteLine(person.Attribute(\"id\").Value);\n    }\n}",
+    "o": [
+      "101",
+      "John",
+      "Name",
+      "Person"
+    ]
+  },
+  {
+    "q": "Which of the following classes is best suited for reading a text file line by line?",
+    "o": [
+      "StreamReader",
+      "BinaryReader",
+      "TextWriter",
+      "FileInfo"
+    ]
+  },
+  {
+    "q": "What will the following code print?\n",
+    "c": "using System;\nusing System.IO;\n\nclass Program {\n    static void Main() {\n        File.WriteAllText(\"log.txt\", \"Line A\\nLine B\");\n        using (StreamReader reader = new StreamReader(\"log.txt\")) {\n            Console.WriteLine(reader.ReadLine());\n        }\n    }\n}",
+    "o": [
+      "Line A",
+      "Line B",
+      "log.txt",
+      "Line A\\nLine B"
+    ]
+  },
+  {
+    "q": "Which class would you use to write primitive types in binary format?",
+    "o": [
+      "BinaryWriter",
+      "TextWriter",
+      "StreamReader",
+      "File"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'using' statement with FileStream?",
+    "o": [
+      "Automatically disposes the stream after use",
+      "Prevents access to the file",
+      "Increases file buffer size",
+      "Opens multiple files at once"
+    ]
+  },
+  {
+    "q": "Which interface is implemented by classes that need to control their own serialization process?",
+    "o": [
+      "ISerializable",
+      "IBinarySerializable",
+      "IObjectConverter",
+      "IDeserialize"
+    ]
+  },
+  {
+    "q": "What is the output of this code?\n",
+    "c": "using System;\nusing System.Text.Json;\n\nclass User {\n    public string Name { get; set; }\n}\n\nclass Program {\n    static void Main() {\n        string json = \"{\\\"Name\\\":\\\"Liam\\\"}\";\n        User user = JsonSerializer.Deserialize<User>(json);\n        Console.WriteLine(user.Name);\n    }\n}",
+    "o": [
+      "Liam",
+      "User",
+      "Name",
+      "True"
+    ]
+  },
+  {
+    "q": "Which of the following can be used to serialize an object into an XML string?",
+    "o": [
+      "XmlSerializer",
+      "XmlReader",
+      "XmlDocument",
+      "XmlNode"
+    ]
+  },
+  {
+    "q": "What will this LINQ to XML code output?\n",
+    "c": "using System;\nusing System.Xml.Linq;\n\nclass Program {\n    static void Main() {\n        XElement element = new XElement(\"Employee\",\n            new XElement(\"Name\", \"Emma\"),\n            new XElement(\"Dept\", \"IT\")\n        );\n        Console.WriteLine(element.Element(\"Dept\").Value);\n    }\n}",
+    "o": [
+      "IT",
+      "Emma",
+      "Employee",
+      "Name"
+    ]
+  },
+  {
+    "q": "Which method reads the entire contents of a text file and returns it as a single string?",
+    "o": [
+      "File.ReadAllText",
+      "File.ReadLines",
+      "File.ReadAllLines",
+      "StreamReader.ReadLine"
+    ]
+  },
+  {
+    "q": "Which JSON-related type can be used to define naming policy or indentation behavior during serialization?",
+    "o": [
+      "JsonSerializerOptions",
+      "JsonConverter",
+      "JsonWriterSettings",
+      "JsonNamingStrategy"
+    ]
+  },
+  {
+    "q": "Which method in File class reads all lines of a text file into a string array?",
+    "o": [
+      "File.ReadAllLines",
+      "File.ReadLines",
+      "File.ReadText",
+      "File.ReadAsString"
+    ]
+  },
+  {
+    "q": "What will this code display?\n",
+    "c": "using System;\nusing System.IO;\n\nclass Program {\n    static void Main() {\n        string[] data = { \"A\", \"B\", \"C\" };\n        File.WriteAllLines(\"output.txt\", data);\n        string result = File.ReadAllText(\"output.txt\");\n        Console.WriteLine(result.Contains(\"B\"));\n    }\n}",
+    "o": [
+      "True",
+      "False",
+      "B",
+      "output.txt"
+    ]
+  },
+  {
+    "q": "Which method allows you to append lines to an existing text file?",
+    "o": [
+      "File.AppendAllLines",
+      "File.WriteAllText",
+      "File.ReadAllLines",
+      "File.CreateText"
+    ]
+  },
+  {
+    "q": "Which of the following classes is used to deserialize an XML string to an object?",
+    "o": [
+      "XmlSerializer",
+      "XmlTextWriter",
+      "XmlNodeReader",
+      "XmlDocument"
+    ]
+  },
+  {
+    "q": "What is the correct way to write binary data to a file?",
+    "o": [
+      "using (BinaryWriter bw = new BinaryWriter(File.Open(\"file.bin\", FileMode.Create))) { bw.Write(123); }",
+      "File.WriteAllBytes(\"file.bin\", \"123\")",
+      "BinaryWriter.Write(\"file.bin\", 123)",
+      "new FileStream(\"file.bin\", FileMode.Create).Write(123);"
+    ]
+  },
+  {
+    "q": "What will this JSON deserialization code output?\n",
+    "c": "using System;\nusing System.Text.Json;\n\nclass Product {\n    public string Name { get; set; }\n    public double Price { get; set; }\n}\n\nclass Program {\n    static void Main() {\n        string json = \"{\\\"Name\\\":\\\"Laptop\\\",\\\"Price\\\":799.99}\";\n        Product p = JsonSerializer.Deserialize<Product>(json);\n        Console.WriteLine(p.Price);\n    }\n}",
+    "o": [
+      "799.99",
+      "Laptop",
+      "Price",
+      "Json"
+    ]
+  },
+  {
+    "q": "Which class in System.Xml.Linq represents a single XML element?",
+    "o": [
+      "XElement",
+      "XDocument",
+      "XmlReader",
+      "XmlSerializer"
+    ]
+  },
+  {
+    "q": "Which statement about JSON serialization in .NET is correct?",
+    "o": [
+      "JsonSerializer is part of System.Text.Json and supports built-in C# types.",
+      "You must install Newtonsoft.Json to use any JSON serialization.",
+      "Json serialization only works with value types.",
+      "System.Text.Json only supports arrays, not lists."
+    ]
+  },
+  {
+    "q": "Which method from FileStream is used to move the position within a stream?",
+    "o": [
+      "Seek",
+      "MoveNext",
+      "Shift",
+      "Goto"
+    ]
+  },
+  {
+    "q": "What does the following LINQ to XML code print?\n",
+    "c": "using System;\nusing System.Xml.Linq;\n\nclass Program {\n    static void Main() {\n        XDocument doc = new XDocument(\n            new XElement(\"Root\",\n                new XElement(\"Child\", \"Value\")\n            )\n        );\n        Console.WriteLine(doc.Root.Elements().First().Value);\n    }\n}",
+    "o": [
+      "Value",
+      "Child",
+      "Root",
+      "XDocument"
+    ]
+  },
+  {
+    "q": "Which FileMode is used to open an existing file or create a new one if it doesn't exist?",
+    "o": [
+      "FileMode.OpenOrCreate",
+      "FileMode.Create",
+      "FileMode.Append",
+      "FileMode.Truncate"
+    ]
+  },
+  {
+    "q": "What is the output of this code?\n",
+    "c": "using System;\nusing System.IO;\n\nclass Program {\n    static void Main() {\n        using (StreamWriter sw = new StreamWriter(\"test.txt\")) {\n            sw.Write(\"Hello\");\n        }\n        using (StreamReader sr = new StreamReader(\"test.txt\")) {\n            Console.WriteLine(sr.ReadToEnd());\n        }\n    }\n}",
+    "o": [
+      "Hello",
+      "test.txt",
+      "StreamWriter",
+      "True"
+    ]
+  },
+  {
+    "q": "Which of the following is required to serialize a class using XmlSerializer?",
+    "o": [
+      "The class must have a public parameterless constructor",
+      "The class must be marked with [Serializable]",
+      "The class must inherit IXmlSerializable",
+      "The class must be sealed"
+    ]
+  },
+  {
+    "q": "Which type is best suited for serializing and deserializing JSON in .NET 5+ without extra libraries?",
+    "o": [
+      "System.Text.Json",
+      "Newtonsoft.Json",
+      "System.Json.Linq",
+      "System.JsonConverter"
+    ]
+  },
+  {
+    "q": "What is the result of the following binary write and read operation?\n",
+    "c": "using System;\nusing System.IO;\n\nclass Program {\n    static void Main() {\n        using (BinaryWriter writer = new BinaryWriter(File.Open(\"data.bin\", FileMode.Create))) {\n            writer.Write(true);\n        }\n        using (BinaryReader reader = new BinaryReader(File.Open(\"data.bin\", FileMode.Open))) {\n            Console.WriteLine(reader.ReadBoolean());\n        }\n    }\n}",
+    "o": [
+      "True",
+      "False",
+      "Boolean",
+      "0"
+    ]
+  },
+  {
+    "q": "Which of the following methods from File class returns a byte array from a file?",
+    "o": [
+      "File.ReadAllBytes",
+      "File.ReadBinary",
+      "File.ReadBytes",
+      "File.ReadAsStream"
+    ]
+  },
+  {
+    "q": "In XML handling using LINQ to XML, what does the XDocument.Load() method do?",
+    "o": [
+      "Loads an XML document from a file, stream, or text reader",
+      "Parses XML string into JSON",
+      "Creates a new XML root node",
+      "Validates XML schema"
+    ]
+  },
+  {
+    "q": "Which namespace contains the BinaryFormatter class used for binary serialization?",
+    "o": [
+      "System.Runtime.Serialization.Formatters.Binary",
+      "System.Binary",
+      "System.IO.Serialization",
+      "System.Serialization.Binary"
+    ]
+  },
+  {
+    "q": "What is the output of this JSON serialization code?\n",
+    "c": "using System;\nusing System.Text.Json;\n\nclass Book {\n    public string Title { get; set; } = \"C# 101\";\n}\n\nclass Program {\n    static void Main() {\n        Book book = new Book();\n        string json = JsonSerializer.Serialize(book);\n        Console.WriteLine(json);\n    }\n}",
+    "o": [
+      "{\"Title\":\"C# 101\"}",
+      "C# 101",
+      "Title",
+      "{Title: C# 101}"
+    ]
+  },
+  {
+    "q": "Which method in JsonSerializer is used to convert JSON string back into an object?",
+    "o": [
+      "Deserialize<T>()",
+      "ReadJson<T>()",
+      "ParseJson<T>()",
+      "ConvertFromJson<T>()"
+    ]
+  },
+  {
+    "q": "Which method is used to write a string directly to a text file, creating it if it doesn't exist?",
+    "o": [
+      "File.WriteAllText",
+      "FileStream.Write",
+      "File.AppendAllText",
+      "TextWriter.Write"
+    ]
+  },
+  {
+    "q": "What does the following code output?\n",
+    "c": "using System;\nusing System.IO;\n\nclass Program {\n    static void Main() {\n        File.AppendAllText(\"log.txt\", \"Line 1\\n\");\n        File.AppendAllText(\"log.txt\", \"Line 2\\n\");\n        var content = File.ReadAllLines(\"log.txt\");\n        Console.WriteLine(content.Length);\n    }\n}",
+    "o": [
+      "2",
+      "1",
+      "0",
+      "log.txt"
+    ]
+  },
+  {
+    "q": "Which class is typically used to convert an object to a JSON-formatted string?",
+    "o": [
+      "JsonSerializer",
+      "JsonWriter",
+      "JsonConverter",
+      "JsonObject"
+    ]
+  },
+  {
+    "q": "What is a common requirement for a class to be serialized using BinaryFormatter?",
+    "o": [
+      "It must be marked with the [Serializable] attribute",
+      "It must inherit from ISerializable",
+      "It must override ToString()",
+      "It must be declared as static"
+    ]
+  },
+  {
+    "q": "What will this XML code print?\n",
+    "c": "using System;\nusing System.Xml.Linq;\n\nclass Program {\n    static void Main() {\n        XElement root = new XElement(\"Student\",\n            new XElement(\"Name\", \"Noah\"),\n            new XElement(\"Age\", 22)\n        );\n        Console.WriteLine(root.Element(\"Age\").Value);\n    }\n}",
+    "o": [
+      "22",
+      "Noah",
+      "Student",
+      "Age"
+    ]
+  },
+  {
+    "q": "Which method can be used to read each line from a file lazily (efficient for large files)?",
+    "o": [
+      "File.ReadLines",
+      "File.ReadAllLines",
+      "StreamReader.ReadToEnd",
+      "File.ReadAllText"
+    ]
+  },
+  {
+    "q": "In the context of working with JSON, which of the following is true?",
+    "o": [
+      "JsonSerializer.Serialize converts an object to a JSON string",
+      "JsonSerializer.Parse converts JSON to XML",
+      "JsonReader must be used for all JSON tasks",
+      "Only primitive types can be serialized to JSON"
+    ]
+  },
+  {
+    "q": "What is the correct way to load an XML document from a file using LINQ to XML?",
+    "o": [
+      "XDocument.Load(\"file.xml\")",
+      "XmlDocument.Read(\"file.xml\")",
+      "XmlSerializer.Load(\"file.xml\")",
+      "XElement.Create(\"file.xml\")"
+    ]
+  },
+  {
+    "q": "Which file access mode allows both reading and writing to a file without overwriting it?",
+    "o": [
+      "FileMode.OpenOrCreate",
+      "FileMode.Create",
+      "FileMode.Truncate",
+      "FileMode.CreateNew"
+    ]
+  },
+  {
+    "q": "What does this binary writer code do?\n",
+    "c": "using System;\nusing System.IO;\n\nclass Program {\n    static void Main() {\n        using (var bw = new BinaryWriter(File.Open(\"data.bin\", FileMode.Create))) {\n            bw.Write(10);\n            bw.Write(\"CSharp\");\n        }\n    }\n}",
+    "o": [
+      "Writes an integer and a string in binary format",
+      "Reads binary data and prints it",
+      "Appends a string to a file",
+      "Serializes data to XML format"
+    ]
+  },
+  {
+    "q": "Which encoding does File.WriteAllText use by default when no encoding is specified?",
+    "o": [
+      "UTF8",
+      "ASCII",
+      "Unicode",
+      "UTF32"
+    ]
+  },
+  {
+    "q": "What will the following code output?\n",
+    "c": "using System;\nusing System.IO;\n\nclass Program {\n    static void Main() {\n        File.WriteAllText(\"data.txt\", \"Test\\nLine\");\n        var content = File.ReadAllText(\"data.txt\");\n        Console.WriteLine(content.Split('\\n')[1]);\n    }\n}",
+    "o": [
+      "Line",
+      "Test",
+      "data.txt",
+      "1"
+    ]
+  },
+  {
+    "q": "Which class is used to represent a JSON property/value pair in System.Text.Json?",
+    "o": [
+      "JsonElement",
+      "JsonSerializer",
+      "JsonReader",
+      "JsonNode"
+    ]
+  },
+  {
+    "q": "What is required for a type to be used with System.Text.Json deserialization?",
+    "o": [
+      "It must have public settable properties",
+      "It must be sealed",
+      "It must inherit from JsonBase",
+      "It must be decorated with [Serializable]"
+    ]
+  },
+  {
+    "q": "Which method should you use to ensure that each new string you write goes to the end of an existing text file?",
+    "o": [
+      "File.AppendAllText",
+      "File.WriteAllLines",
+      "File.ReadAllText",
+      "File.WriteAllText"
+    ]
+  },
+  {
+    "q": "Which file extension is typically used when working with binary serialization?",
+    "o": [
+      ".bin",
+      ".txt",
+      ".xml",
+      ".json"
+    ]
+  },
+  {
+    "q": "Which LINQ to XML class is used to load and query a full XML document?",
+    "o": [
+      "XDocument",
+      "XElement",
+      "XmlTextReader",
+      "XmlSerializer"
+    ]
+  },
+  {
+    "q": "What does this deserialization code output?\n",
+    "c": "using System;\nusing System.Text.Json;\n\nclass Car {\n    public string Brand { get; set; }\n}\n\nclass Program {\n    static void Main() {\n        string json = \"{\\\"Brand\\\":\\\"Toyota\\\"}\";\n        var car = JsonSerializer.Deserialize<Car>(json);\n        Console.WriteLine(car.Brand);\n    }\n}",
+    "o": [
+      "Toyota",
+      "Car",
+      "Brand",
+      "Json"
+    ]
+  },
+  {
+    "q": "What happens if you try to open a non-existing file using File.OpenRead()?",
+    "o": [
+      "A FileNotFoundException is thrown",
+      "An empty file is created",
+      "It returns null",
+      "It silently fails"
+    ]
+  },
+  {
+    "q": "Which method reads all text from a StreamReader until the end of the stream?",
+    "o": [
+      "ReadToEnd()",
+      "ReadLine()",
+      "Read()",
+      "Peek()"
+    ]
+  },
+  {
+    "q": "Which method in the File class can be used to copy a file to a new location?",
+    "o": [
+      "File.Copy",
+      "File.WriteAllText",
+      "File.Move",
+      "File.OpenRead"
+    ]
+  },
+  {
+    "q": "What does the following code print?\n",
+    "c": "using System;\nusing System.IO;\n\nclass Program {\n    static void Main() {\n        string[] lines = { \"First\", \"Second\" };\n        File.WriteAllLines(\"output.txt\", lines);\n        string read = File.ReadAllLines(\"output.txt\")[0];\n        Console.WriteLine(read);\n    }\n}",
+    "o": [
+      "First",
+      "Second",
+      "output.txt",
+      "2"
+    ]
+  },
+  {
+    "q": "Which binary writer method is used to write a double-precision floating point number?",
+    "o": [
+      "Write(Double)",
+      "WriteFloat()",
+      "WriteDecimal()",
+      "Write(double[])"
+    ]
+  },
+  {
+    "q": "Which XML element name will the following code produce?\n",
+    "c": "using System.Xml.Linq;\n\nvar doc = new XElement(\"Employee\",\n    new XElement(\"ID\", 101),\n    new XElement(\"Name\", \"Jane\")\n);\nConsole.WriteLine(doc.Name);",
+    "o": [
+      "Employee",
+      "Name",
+      "Jane",
+      "ID"
+    ]
+  },
+  {
+    "q": "Which property of StreamReader returns a Boolean indicating if the end of the stream has been reached?",
+    "o": [
+      "EndOfStream",
+      "CanRead",
+      "Position",
+      "Length"
+    ]
+  },
+  {
+    "q": "Which method is used to move a file from one path to another in C#?",
+    "o": [
+      "File.Move",
+      "File.Copy",
+      "File.Transfer",
+      "File.Rename"
+    ]
+  },
+  {
+    "q": "What will be the result of this serialization operation?\n",
+    "c": "using System.Text.Json;\n\nclass Product {\n    public int Id { get; set; } = 1;\n    public string Name { get; set; } = \"Book\";\n}\n\nvar json = JsonSerializer.Serialize(new Product());\nConsole.WriteLine(json);",
+    "o": [
+      "{\"Id\":1,\"Name\":\"Book\"}",
+      "1 Book",
+      "{Id=1, Name=Book}",
+      "System.Text.Json.Product"
+    ]
+  },
+  {
+    "q": "Which class is responsible for deserializing XML back into objects using attributes?",
+    "o": [
+      "XmlSerializer",
+      "XDocument",
+      "XmlNodeReader",
+      "XmlTextWriter"
+    ]
+  },
+  {
+    "q": "What exception is thrown if you try to write to a file that is already in use by another process?",
+    "o": [
+      "IOException",
+      "FileLoadException",
+      "InvalidOperationException",
+      "AccessViolationException"
+    ]
+  },
+  {
+    "q": "Which of the following best describes the purpose of BinaryReader?",
+    "o": [
+      "Reads primitive data types as binary values from a stream",
+      "Reads lines of text from a stream",
+      "Reads only strings from a file",
+      "Parses XML elements from a stream"
+    ]
+  },
+  {
+    "q": "Which of the following methods writes text to a file, creating it if it doesn't exist, or overwriting it if it does?",
+    "o": [
+      "File.WriteAllText",
+      "File.AppendAllText",
+      "StreamReader.ReadToEnd",
+      "File.ReadAllLines"
+    ]
+  },
+  {
+    "q": "What will the following code print?\n",
+    "c": "using System;\nusing System.IO;\n\nclass Program {\n    static void Main() {\n        File.WriteAllText(\"notes.txt\", \"Line A\\nLine B\");\n        var lines = File.ReadAllLines(\"notes.txt\");\n        Console.WriteLine(lines[1]);\n    }\n}",
+    "o": [
+      "Line B",
+      "Line A",
+      "notes.txt",
+      "2"
+    ]
+  },
+  {
+    "q": "Which class is commonly used to write binary data to a file?",
+    "o": [
+      "BinaryWriter",
+      "StreamReader",
+      "TextWriter",
+      "MemoryStream"
+    ]
+  },
+  {
+    "q": "Which serialization technique in C# allows saving and restoring the full state of an object graph to a human-readable format?",
+    "o": [
+      "XML Serialization",
+      "Binary Serialization",
+      "Reflection",
+      "DataContract Deserialization"
+    ]
+  },
+  {
+    "q": "What does this code print?\n",
+    "c": "using System.Text.Json;\n\nclass Person {\n    public string Name { get; set; } = \"Eva\";\n}\n\nclass Program {\n    static void Main() {\n        string json = JsonSerializer.Serialize(new Person());\n        Console.WriteLine(json);\n    }\n}",
+    "o": [
+      "{\"Name\":\"Eva\"}",
+      "Eva",
+      "Name: Eva",
+      "{ Eva }"
+    ]
+  },
+  {
+    "q": "Which method is used to parse a JSON string into a dynamic JsonDocument?",
+    "o": [
+      "JsonDocument.Parse",
+      "JsonSerializer.Deserialize",
+      "JsonReader.ReadJson",
+      "JsonUtility.Load"
+    ]
+  },
+  {
+    "q": "Which of the following methods reads all bytes from a file into a byte array?",
+    "o": [
+      "File.ReadAllBytes",
+      "File.ReadAllLines",
+      "BinaryReader.ReadString",
+      "Stream.ReadAll"
+    ]
+  },
+  {
+    "q": "What is the purpose of the FileShare parameter when opening a FileStream?",
+    "o": [
+      "To define how the file will be shared with other processes",
+      "To specify the file format (text/binary)",
+      "To enforce encryption while writing",
+      "To set the encoding for writing text"
+    ]
+  },
+  {
+    "q": "Which of these best describes XML serialization in .NET?",
+    "o": [
+      "It converts public properties and fields into an XML document.",
+      "It saves binary-encoded private fields into a file.",
+      "It reads XML from console input and creates a dictionary.",
+      "It directly writes to a JSON file using XmlWriter."
+    ]
+  },
+  {
+    "q": "What will the following code output?\n",
+    "c": "using System.Xml.Linq;\n\nXElement book = new XElement(\"Book\",\n    new XElement(\"Title\", \"C# in Depth\"),\n    new XElement(\"Author\", \"Jon Skeet\")\n);\nConsole.WriteLine(book.Element(\"Title\").Value);",
+    "o": [
+      "C# in Depth",
+      "Jon Skeet",
+      "Book",
+      "Title"
+    ]
+  },
+  {
+    "q": "Which method from the File class is used to determine whether a file exists at a given path?",
+    "o": [
+      "File.Exists",
+      "File.Check",
+      "File.Validate",
+      "File.Verify"
+    ]
+  },
+  {
+    "q": "What will the following C# code output?\n",
+    "c": "using System;\nusing System.IO;\n\nclass Program {\n    static void Main() {\n        string path = \"log.txt\";\n        File.AppendAllText(path, \"Log1\\n\");\n        File.AppendAllText(path, \"Log2\\n\");\n        string[] logs = File.ReadAllLines(path);\n        Console.WriteLine(logs.Length);\n    }\n}",
+    "o": [
+      "2",
+      "1",
+      "0",
+      "3"
+    ]
+  },
+  {
+    "q": "Which namespace contains the classes for XML serialization in C#?",
+    "o": [
+      "System.Xml.Serialization",
+      "System.Xml.Linq",
+      "System.Xml.Reader",
+      "System.Xml.Data"
+    ]
+  },
+  {
+    "q": "Which method would you use to deserialize an object from a JSON string using System.Text.Json?",
+    "o": [
+      "JsonSerializer.Deserialize",
+      "JsonConvert.ToObject",
+      "JsonParser.DeserializeObject",
+      "JsonSerializer.Load"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'using' statement when working with FileStream in C#?",
+    "o": [
+      "To ensure the stream is properly closed and disposed",
+      "To increase the speed of file writing",
+      "To allow file locking across processes",
+      "To avoid creating physical files"
+    ]
+  },
+  {
+    "q": "Which class is commonly used for parsing and manipulating XML using LINQ?",
+    "o": [
+      "XDocument",
+      "XmlReader",
+      "XmlSerializer",
+      "XmlElement"
+    ]
+  },
+  {
+    "q": "What will the following code print?\n",
+    "c": "using System;\nusing System.IO;\n\nclass Program {\n    static void Main() {\n        using (var writer = new StreamWriter(\"data.txt\")) {\n            writer.Write(\"CSharp\");\n        }\n        string content = File.ReadAllText(\"data.txt\");\n        Console.WriteLine(content);\n    }\n}",
+    "o": [
+      "CSharp",
+      "data.txt",
+      "0",
+      "System.IO.StreamWriter"
+    ]
+  },
+  {
+    "q": "Which method of JsonSerializer can be used to pretty-print JSON output?",
+    "o": [
+      "Serialize with JsonSerializerOptions.WriteIndented = true",
+      "SerializeFormatted",
+      "SerializeIndentedJson",
+      "EnableJsonFormatting()"
+    ]
+  },
+  {
+    "q": "Which class allows reading binary data such as integers and floats from a stream?",
+    "o": [
+      "BinaryReader",
+      "StreamReader",
+      "DataContractReader",
+      "ByteStream"
+    ]
+  },
+  {
+    "q": "Which of the following formats is human-readable and supported for data serialization in C#?",
+    "o": [
+      "JSON",
+      "Binary",
+      "IL",
+      "Assembly"
+    ]
+  },
+  {
+    "q": "Which of the following methods appends text to the end of a file?",
+    "o": [
+      "File.AppendAllText",
+      "File.WriteAllText",
+      "File.WriteLines",
+      "File.ReadAllText"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?\n",
+    "c": "using System;\nusing System.IO;\n\nclass Program {\n    static void Main() {\n        File.WriteAllText(\"sample.txt\", \"Hello\\nWorld\");\n        string[] lines = File.ReadAllLines(\"sample.txt\");\n        Console.WriteLine(lines[1]);\n    }\n}",
+    "o": [
+      "World",
+      "Hello",
+      "sample.txt",
+      "1"
+    ]
+  },
+  {
+    "q": "Which method in JsonSerializer allows converting a JSON string back to a C# object?",
+    "o": [
+      "Deserialize",
+      "Parse",
+      "ConvertToObject",
+      "Decode"
+    ]
+  },
+  {
+    "q": "Which class is used to write primitive types in binary format to a stream?",
+    "o": [
+      "BinaryWriter",
+      "StreamWriter",
+      "FileWriter",
+      "TextWriter"
+    ]
+  },
+  {
+    "q": "Which XML class allows creating and modifying XML documents in memory using LINQ?",
+    "o": [
+      "XDocument",
+      "XmlReader",
+      "XmlSerializer",
+      "XmlWriter"
+    ]
+  },
+  {
+    "q": "What does the following code print?\n",
+    "c": "using System.Text.Json;\n\nclass User {\n    public string Name { get; set; } = \"Chris\";\n}\n\nclass Program {\n    static void Main() {\n        var json = JsonSerializer.Serialize(new User());\n        Console.WriteLine(json);\n    }\n}",
+    "o": [
+      "{\"Name\":\"Chris\"}",
+      "Chris",
+      "System.Text.Json.User",
+      "{ Name = Chris }"
+    ]
+  },
+  {
+    "q": "Which interface must a class implement to support binary serialization using BinaryFormatter?",
+    "o": [
+      "ISerializable",
+      "IDataContract",
+      "IBinaryWritable",
+      "IXmlSerializable"
+    ]
+  },
+  {
+    "q": "What happens if you call File.ReadAllText() on a non-existent file?",
+    "o": [
+      "Throws FileNotFoundException",
+      "Returns null",
+      "Creates an empty file",
+      "Returns an empty string"
+    ]
+  },
+  {
+    "q": "Which method from FileStream class is used to write a byte array to a file?",
+    "o": [
+      "Write",
+      "WriteAllBytes",
+      "WriteBuffer",
+      "WriteData"
+    ]
+  },
+  {
+    "q": "Which JSON library is officially recommended in .NET Core and .NET 5+?",
+    "o": [
+      "System.Text.Json",
+      "Newtonsoft.Json",
+      "Json.NET",
+      "Microsoft.Json"
+    ]
+  },
+  {
+    "q": "Which stream class is typically used when reading text files line by line?",
+    "o": [
+      "StreamReader",
+      "BinaryReader",
+      "FileStream",
+      "TextWriter"
+    ]
+  },
+  {
+    "q": "What will this program print to the console?\n",
+    "c": "using System;\nusing System.IO;\n\nclass Program {\n    static void Main() {\n        File.WriteAllLines(\"test.txt\", new[] { \"A\", \"B\", \"C\" });\n        var lines = File.ReadAllLines(\"test.txt\");\n        Console.WriteLine(lines[0] + lines[2]);\n    }\n}",
+    "o": [
+      "AC",
+      "AB",
+      "BC",
+      "ABC"
+    ]
+  },
+  {
+    "q": "Which method writes all bytes to a file, replacing the file if it already exists?",
+    "o": [
+      "File.WriteAllBytes",
+      "File.AppendAllBytes",
+      "File.StreamBinaryWrite",
+      "File.WriteBinary"
+    ]
+  },
+  {
+    "q": "What class is used to deserialize XML into objects?",
+    "o": [
+      "XmlSerializer",
+      "XmlReader",
+      "XDocument",
+      "XmlConverter"
+    ]
+  },
+  {
+    "q": "What is the primary benefit of using JSON over XML in .NET data exchange?",
+    "o": [
+      "More compact and easier to read",
+      "Better validation support",
+      "Supports comments",
+      "Requires less memory to parse"
+    ]
+  },
+  {
+    "q": "Which of the following lines would serialize an object to JSON with indented formatting?",
+    "o": [
+      "JsonSerializer.Serialize(obj, new JsonSerializerOptions { WriteIndented = true })",
+      "JsonConvert.SerializeIndented(obj)",
+      "JsonSerializer.ToJson(obj, Formatting.Indented)",
+      "JsonSerializer.FormatJson(obj)"
+    ]
+  },
+  {
+    "q": "Which class is used to load an XML document for LINQ-style querying?",
+    "o": [
+      "XDocument",
+      "XmlTextReader",
+      "XmlTextWriter",
+      "XmlNode"
+    ]
+  },
+  {
+    "q": "What is the role of the [Serializable] attribute in C#?",
+    "o": [
+      "Marks a class as serializable by binary or XML formatters",
+      "Encrypts the class during runtime",
+      "Generates a unique ID for each object",
+      "Prevents a class from being cloned"
+    ]
+  },
+  {
+    "q": "What happens if BinaryWriter is used on a text file?",
+    "o": [
+      "The file may contain unreadable binary characters",
+      "The file will automatically convert to UTF-8 text",
+      "The file will be truncated to zero bytes",
+      "It throws an InvalidDataFormatException"
+    ]
+  },
+  {
+    "q": "Which of the following code snippets reads a JSON file and maps it to a C# class?\n",
+    "c": "using System.Text.Json;\n\nvar json = File.ReadAllText(\"data.json\");\nvar obj = JsonSerializer.Deserialize<MyClass>(json);",
+    "o": [
+      "JsonSerializer.Deserialize<MyClass>(json)",
+      "JsonConvert.ToObject<MyClass>(json)",
+      "JsonUtility.FromFile<MyClass>(\"data.json\")",
+      "File.JsonToObject<MyClass>(json)"
+    ]
+  },
+  {
+    "q": "Which of the following methods reads a binary file into an array of bytes?",
+    "o": [
+      "File.ReadAllBytes",
+      "File.ReadAllText",
+      "File.ReadLines",
+      "BinaryReader.ReadByte"
+    ]
+  },
+  {
+    "q": "What does the following C# code print?\n",
+    "c": "using System;\nusing System.IO;\n\nclass Program {\n    static void Main() {\n        var bytes = File.ReadAllBytes(\"image.jpg\");\n        Console.WriteLine(bytes.Length);\n    }\n}",
+    "o": [
+      "Number of bytes in the file",
+      "image.jpg",
+      "0",
+      "FileNotFoundException"
+    ]
+  },
+  {
+    "q": "Which class is used to serialize and deserialize objects to and from XML?",
+    "o": [
+      "XmlSerializer",
+      "XmlReader",
+      "BinaryFormatter",
+      "XmlWriter"
+    ]
+  },
+  {
+    "q": "What will the following code print?\n",
+    "c": "using System;\nusing System.IO;\n\nclass Program {\n    static void Main() {\n        File.WriteAllText(\"sample.txt\", \"Hello, world!\");\n        var content = File.ReadAllText(\"sample.txt\");\n        Console.WriteLine(content);\n    }\n}",
+    "o": [
+      "Hello, world!",
+      "sample.txt",
+      "null",
+      "FileNotFoundException"
+    ]
+  },
+  {
+    "q": "Which method is used to read XML data into a C# object using LINQ to XML?",
+    "o": [
+      "XElement.Parse",
+      "XmlReader.ReadElementContentAsString",
+      "XmlSerializer.Deserialize",
+      "XDocument.Load"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'StreamReader' class in C#?",
+    "o": [
+      "To read text from a file or stream",
+      "To write binary data to a file",
+      "To convert streams into byte arrays",
+      "To parse XML data"
+    ]
+  },
+  {
+    "q": "Which method from the File class reads a file line by line?",
+    "o": [
+      "File.ReadLines",
+      "File.ReadAllText",
+      "StreamReader.ReadToEnd",
+      "FileStream.Read"
+    ]
+  },
+  {
+    "q": "What happens when you try to serialize a class that doesn't have a parameterless constructor using BinaryFormatter?",
+    "o": [
+      "It throws a SerializationException",
+      "It fails silently",
+      "It automatically generates a default constructor",
+      "It serializes the class without errors"
+    ]
+  },
+  {
+    "q": "What will be the output of the following code?\n",
+    "c": "using System;\nusing System.Text.Json;\n\nclass User {\n    public string Name { get; set; } = \"John\";\n}\n\nclass Program {\n    static void Main() {\n        var user = new User();\n        string json = JsonSerializer.Serialize(user);\n        Console.WriteLine(json);\n    }\n}",
+    "o": [
+      "{\"Name\":\"John\"}",
+      "John",
+      "User object",
+      "null"
+    ]
+  },
+  {
+    "q": "Which method can you use to deserialize a JSON string into an object while skipping any unrecognized fields in C#?",
+    "o": [
+      "JsonSerializer.Deserialize<T>(json, new JsonSerializerOptions { AllowTrailingCommas = true })",
+      "JsonConvert.DeserializeObject<T>(json)",
+      "JsonSerializer.Deserialize<T>(json, new JsonSerializerOptions { IgnoreNullValues = true })",
+      "JsonReader.Deserialize<T>(json)"
+    ]
+  }
+]

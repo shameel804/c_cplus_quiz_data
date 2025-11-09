@@ -1,0 +1,162 @@
+[
+  {
+    "title": "Creating and Managing Threads",
+    "ques": "Write a C# program that demonstrates creating a thread using the Thread class, shows its lifecycle states, and handles basic thread execution.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Threading;\n\nclass Program\n{\n    static void Main()\n    {\n        Thread t = new Thread(ThreadMethod);\n        Console.WriteLine($\"Thread State: {t.ThreadState}\");\n        t.Start();\n        Console.WriteLine($\"Thread State after Start: {t.ThreadState}\");\n        t.Join();\n        Console.WriteLine($\"Thread State after Join: {t.ThreadState}\");\n    }\n\n    static void ThreadMethod()\n    {\n        Console.WriteLine(\"Thread is running...\");\n        Thread.Sleep(1000);\n        Console.WriteLine(\"Thread completed.\");\n    }\n}"
+    },
+    "explanation": "This program demonstrates the Thread class and its lifecycle:\n- ***Line 6***: Creates a new thread `t` with `ThreadMethod` as the execution method. At this point, the thread is in the ```Unstarted``` state.\n- ***Line 7***: Displays the initial thread state using `ThreadState` property.\n- ***Line 8***: `t.Start()` begins thread execution, transitioning it to the ```Running``` state.\n- ***Line 10***: `t.Join()` makes the main thread wait for `t` to complete, showing the ```WaitSleepJoin``` state temporarily.\n- ***Line 15-18***: The `ThreadMethod` runs in the new thread, with `Thread.Sleep(1000)` simulating work by pausing for 1 second.\n- After completion, the thread moves to the ```Stopped``` state, shown after `Join`."
+  },
+  {
+    "title": "Thread Synchronization with Lock",
+    "ques": "Create a C# program that uses thread synchronization to safely increment a shared counter using the lock keyword.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Threading;\n\nclass Counter\n{\n    private static int count = 0;\n    private static readonly object lockObject = new object();\n\n    static void Main()\n    {\n        Thread t1 = new Thread(IncrementCounter);\n        Thread t2 = new Thread(IncrementCounter);\n        t1.Start();\n        t2.Start();\n        t1.Join();\n        t2.Join();\n        Console.WriteLine($\"Final Count: {count}\");\n    }\n\n    static void IncrementCounter()\n    {\n        for (int i = 0; i < 1000; i++)\n        {\n            lock (lockObject)\n            {\n                count++;\n            }\n        }\n    }\n}"
+    },
+    "explanation": "This program ensures thread-safe increments:\n- ***Line 6***: Declares a shared `count` variable.\n- ***Line 7***: Creates a `lockObject` for synchronization.\n- ***Line 11-12***: Initializes two threads running `IncrementCounter`.\n- ***Line 21-27***: In `IncrementCounter`, the `lock` keyword ensures only one thread accesses `count` at a time.\n- Without `lock`, race conditions could occur, leading to incorrect results. Here, `lock` prevents this by serializing access.\n- ***Line 16***: `Join` ensures the main thread waits, and the final count should be ```2000``` (1000 increments per thread)."
+  },
+  {
+    "title": "Using Tasks with Async/Await",
+    "ques": "Write a C# program that uses async/await with Tasks to simulate downloading data asynchronously and processing it.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Threading.Tasks;\n\nclass Program\n{\n    static async Task Main()\n    {\n        Console.WriteLine(\"Starting download...\");\n        string result = await DownloadDataAsync();\n        Console.WriteLine($\"Result: {result}\");\n    }\n\n    static async Task<string> DownloadDataAsync()\n    {\n        await Task.Delay(2000); // Simulate network delay\n        return \"Download completed\";\n    }\n}"
+    },
+    "explanation": "This program showcases async/await:\n- ***Line 6***: `Main` is marked `async` to use `await`.\n- ***Line 9***: `await DownloadDataAsync()` pauses execution until the task completes, without blocking the thread.\n- ***Line 13-16***: `DownloadDataAsync` is an async method returning a `Task<string>`.\n- ***Line 15***: `Task.Delay(2000)` simulates a 2-second delay, mimicking an I/O operation like downloading.\n- The `await` keyword allows non-blocking execution, freeing the thread to handle other tasks while waiting."
+  },
+  {
+    "title": "Parallel Programming with Parallel.For",
+    "ques": "Create a C# program that uses Parallel.For to process an array of numbers in parallel, calculating their squares.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Threading.Tasks;\n\nclass Program\n{\n    static void Main()\n    {\n        int[] numbers = { 1, 2, 3, 4, 5 };\n        int[] squares = new int[numbers.Length];\n\n        Parallel.For(0, numbers.Length, i =>\n        {\n            squares[i] = numbers[i] * numbers[i];\n        });\n\n        Console.WriteLine(\"Squares: \" + string.Join(\", \", squares));\n    }\n}"
+    },
+    "explanation": "This program demonstrates parallel processing:\n- ***Line 8***: Defines an array `numbers` to process.\n- ***Line 9***: Creates an array `squares` to store results.\n- ***Line 11-13***: `Parallel.For` splits the loop across multiple threads, computing squares concurrently.\n- The lambda expression `i => { squares[i] = numbers[i] * numbers[i]; }` defines the work per iteration.\n- ***Line 15***: Displays the results (e.g., ```1, 4, 9, 16, 25```).\n- `Parallel.For` automatically manages thread creation and synchronization, improving performance on multi-core systems."
+  },
+  {
+    "title": "Using ThreadPool for Background Tasks",
+    "ques": "Write a C# program that uses the ThreadPool to queue and execute multiple background tasks efficiently.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Threading;\n\nclass Program\n{\n    static void Main()\n    {\n        for (int i = 1; i <= 3; i++)\n        {\n            ThreadPool.QueueUserWorkItem(TaskMethod, i);\n        }\n        Console.WriteLine(\"Tasks queued. Press Enter to exit.\");\n        Console.ReadLine();\n    }\n\n    static void TaskMethod(object state)\n    {\n        int taskId = (int)state;\n        Console.WriteLine($\"Task {taskId} started on thread {Thread.CurrentThread.ManagedThreadId}\");\n        Thread.Sleep(1000);\n        Console.WriteLine($\"Task {taskId} completed.\");\n    }\n}"
+    },
+    "explanation": "This program demonstrates ThreadPool usage:\n- ***Line 8-10***: Loops to queue 3 tasks using `ThreadPool.QueueUserWorkItem`, passing `TaskMethod` and a task ID.\n- ***Line 16-21***: `TaskMethod` executes on a pooled thread, with `state` cast to an integer for task identification.\n- `Thread.CurrentThread.ManagedThreadId` shows the thread executing each task, typically reusing pool threads.\n- ***Line 19***: `Thread.Sleep(1000)` simulates work, delaying for 1 second.\n- ThreadPool manages a pool of reusable threads, reducing overhead compared to creating new Thread instances.\n- The main thread continues, and output order may vary due to thread scheduling."
+  },
+  {
+    "title": "Synchronization with Monitor",
+    "ques": "Create a C# program that uses the Monitor class for thread synchronization to safely manage a shared resource.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Threading;\n\nclass Program\n{\n    static int resource = 0;\n    static object syncObject = new object();\n\n    static void Main()\n    {\n        Thread t1 = new Thread(UpdateResource);\n        Thread t2 = new Thread(UpdateResource);\n        t1.Start();\n        t2.Start();\n        t1.Join();\n        t2.Join();\n        Console.WriteLine($\"Final Resource Value: {resource}\");\n    }\n\n    static void UpdateResource()\n    {\n        for (int i = 0; i < 500; i++)\n        {\n            Monitor.Enter(syncObject);\n            try\n            {\n                resource++;\n            }\n            finally\n            {\n                Monitor.Exit(syncObject);\n            }\n        }\n    }\n}"
+    },
+    "explanation": "This program uses Monitor for synchronization:\n- ***Line 6***: Defines a shared `resource` variable.\n- ***Line 7***: Creates a `syncObject` for locking.\n- ***Line 11-12***: Starts two threads running `UpdateResource`.\n- ***Line 23-31***: `Monitor.Enter` acquires the lock, and `Monitor.Exit` releases it in a `try-finally` block to ensure release even if an exception occurs.\n- Without synchronization, `resource++` could produce inconsistent results due to race conditions; here, it ensures a final value of ```1000```.\n- Monitor provides more control than `lock` (e.g., for timeouts), though `lock` is a simpler syntactic sugar over Monitor."
+  },
+  {
+    "title": "Cancelling Tasks with CancellationToken",
+    "ques": "Write a C# program that demonstrates task cancellation using CancellationToken with async/await.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Threading;\nusing System.Threading.Tasks;\n\nclass Program\n{\n    static async Task Main()\n    {\n        CancellationTokenSource cts = new CancellationTokenSource();\n        CancellationToken token = cts.Token;\n\n        Task task = LongRunningTaskAsync(token);\n        await Task.Delay(1000);\n        cts.Cancel();\n        try\n        {\n            await task;\n        }\n        catch (OperationCanceledException)\n        {\n            Console.WriteLine(\"Task was canceled.\");\n        }\n    }\n\n    static async Task LongRunningTaskAsync(CancellationToken token)\n    {\n        Console.WriteLine(\"Task started...\");\n        for (int i = 0; i < 10; i++)\n        {\n            await Task.Delay(500, token);\n            token.ThrowIfCancellationRequested();\n            Console.WriteLine($\"Progress: {i + 1}/10\");\n        }\n        Console.WriteLine(\"Task completed.\");\n    }\n}"
+    },
+    "explanation": "This program shows task cancellation:\n- ***Line 9-10***: Creates a `CancellationTokenSource` and gets its `CancellationToken`.\n- ***Line 12***: Starts a task with the token.\n- ***Line 13-14***: Waits 1 second, then cancels the task via `cts.Cancel()`.\n- ***Line 26-33***: `LongRunningTaskAsync` checks for cancellation with `ThrowIfCancellationRequested()` after each delay.\n- ***Line 29***: `Task.Delay` respects the token, throwing if canceled mid-delay.\n- When canceled, an `OperationCanceledException` is caught, showing graceful termination instead of completion."
+  },
+  {
+    "title": "Parallel Execution with Parallel.Invoke",
+    "ques": "Create a C# program that uses Parallel.Invoke to execute multiple methods concurrently.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Threading.Tasks;\n\nclass Program\n{\n    static void Main()\n    {\n        Parallel.Invoke(\n            () => ProcessData(\"Task 1\", 1000),\n            () => ProcessData(\"Task 2\", 1500),\n            () => ProcessData(\"Task 3\", 800)\n        );\n        Console.WriteLine(\"All tasks completed.\");\n    }\n\n    static void ProcessData(string name, int delay)\n    {\n        Console.WriteLine($\"{name} starting...\");\n        Task.Delay(delay).Wait();\n        Console.WriteLine($\"{name} finished.\");\n    }\n}"
+    },
+    "explanation": "This program demonstrates Parallel.Invoke:\n- ***Line 8-11***: `Parallel.Invoke` runs three actions concurrently, each calling `ProcessData` with different delays.\n- ***Line 16-19***: `ProcessData` simulates work with `Task.Delay().Wait()`, blocking for the specified time.\n- The tasks run in parallel, leveraging multiple threads, and completion order depends on the delay (e.g., Task 3 may finish first).\n- ***Line 12***: The main thread waits for all actions to complete before printing the final message.\n- `Parallel.Invoke` is ideal for executing independent tasks simultaneously, simplifying parallel execution."
+  },
+  {
+    "title": "Controlling Thread Priority",
+    "ques": "Write a C# program that demonstrates how thread priority affects execution order by creating two threads with different priorities.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Threading;\n\nclass Program\n{\n    static void Main()\n    {\n        Thread highPriorityThread = new Thread(RunTask);\n        Thread lowPriorityThread = new Thread(RunTask);\n\n        highPriorityThread.Priority = ThreadPriority.Highest;\n        lowPriorityThread.Priority = ThreadPriority.Lowest;\n\n        highPriorityThread.Start(\"High Priority\");\n        lowPriorityThread.Start(\"Low Priority\");\n\n        highPriorityThread.Join();\n        lowPriorityThread.Join();\n    }\n\n    static void RunTask(object name)\n    {\n        for (int i = 0; i < 5; i++)\n        {\n            Console.WriteLine($\"{name}: Step {i + 1}\");\n            Thread.Sleep(100);\n        }\n    }\n}"
+    },
+    "explanation": "This program shows thread priority effects:\n- ***Line 8-9***: Creates two threads running `RunTask`.\n- ***Line 11-12***: Sets `Priority` to `Highest` and `Lowest`, influencing CPU scheduling.\n- ***Line 14-15***: Starts both threads with distinct names.\n- ***Line 21-25***: `RunTask` loops 5 times, printing progress with a 100ms delay.\n- The high-priority thread typically completes more steps earlier or faster, though exact behavior depends on the OS and CPU load.\n- Priority affects scheduling but doesn’t guarantee strict order; it’s a hint to the thread scheduler."
+  },
+  {
+    "title": "Limiting Resources with Semaphore",
+    "ques": "Create a C# program that uses a Semaphore to limit the number of threads accessing a resource concurrently.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Threading;\n\nclass Program\n{\n    static Semaphore semaphore = new Semaphore(2, 2); // 2 max concurrent\n\n    static void Main()\n    {\n        Thread[] threads = new Thread[5];\n        for (int i = 0; i < 5; i++)\n        {\n            threads[i] = new Thread(AccessResource);\n            threads[i].Start(i + 1);\n        }\n        foreach (Thread t in threads) t.Join();\n    }\n\n    static void AccessResource(object id)\n    {\n        Console.WriteLine($\"Thread {id} waiting...\");\n        semaphore.WaitOne();\n        Console.WriteLine($\"Thread {id} accessing resource.\");\n        Thread.Sleep(1000);\n        Console.WriteLine($\"Thread {id} releasing resource.\");\n        semaphore.Release();\n    }\n}"
+    },
+    "explanation": "This program limits concurrent access with Semaphore:\n- ***Line 6***: Initializes a `Semaphore` with 2 permits (initial and max).\n- ***Line 10-14***: Creates and starts 5 threads, each calling `AccessResource`.\n- ***Line 21-26***: `WaitOne` blocks if no permits are available; only 2 threads run concurrently.\n- After a 1-second delay (simulating work), `Release` frees a permit for another thread.\n- Output shows only 2 threads accessing the resource at a time, demonstrating Semaphore’s role in resource pooling (e.g., database connections)."
+  },
+  {
+    "title": "Custom Task Creation with TaskFactory",
+    "ques": "Write a C# program that uses TaskFactory to create and run tasks with custom options, such as long-running tasks.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Threading.Tasks;\n\nclass Program\n{\n    static void Main()\n    {\n        TaskFactory factory = new TaskFactory();\n        Task longTask = factory.StartNew(() => LongRunningWork(\"Long Task\"),\n            TaskCreationOptions.LongRunning);\n        Task shortTask = factory.StartNew(() => ShortWork(\"Short Task\"));\n\n        Task.WaitAll(longTask, shortTask);\n        Console.WriteLine(\"All tasks completed.\");\n    }\n\n    static void LongRunningWork(string name)\n    {\n        Console.WriteLine($\"{name} started.\");\n        Task.Delay(2000).Wait();\n        Console.WriteLine($\"{name} finished.\");\n    }\n\n    static void ShortWork(string name)\n    {\n        Console.WriteLine($\"{name} started.\");\n        Task.Delay(500).Wait();\n        Console.WriteLine($\"{name} finished.\");\n    }\n}"
+    },
+    "explanation": "This program uses TaskFactory for custom tasks:\n- ***Line 8***: Creates a `TaskFactory` instance.\n- ***Line 9-10***: Starts a long-running task with `TaskCreationOptions.LongRunning`, hinting it should use a dedicated thread.\n- ***Line 11***: Starts a short task with default options, likely using the ThreadPool.\n- ***Line 17-27***: Defines two methods with different delays (2s and 0.5s).\n- `LongRunning` avoids ThreadPool overhead for prolonged tasks, while the short task benefits from ThreadPool efficiency.\n- ***Line 13***: `WaitAll` ensures both tasks complete before proceeding."
+  },
+  {
+    "title": "Parallel.ForEach with Custom Partitioning",
+    "ques": "Create a C# program that uses Parallel.ForEach to process a collection in parallel, with custom partitioning for better load balancing.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Collections.Concurrent;\nusing System.Threading.Tasks;\n\nclass Program\n{\n    static void Main()\n    {\n        var numbers = Enumerable.Range(1, 10).ToList();\n        Parallel.ForEach(Partitioner.Create(0, numbers.Count), range =>\n        {\n            for (int i = range.Item1; i < range.Item2; i++)\n            {\n                int result = numbers[i] * 2;\n                Console.WriteLine($\"Number {numbers[i]} doubled = {result}\");\n            }\n        });\n    }\n}"
+    },
+    "explanation": "This program uses Parallel.ForEach with partitioning:\n- ***Line 9***: Creates a list of numbers 1 to 10.\n- ***Line 10-16***: `Parallel.ForEach` processes the list, using `Partitioner.Create` to split the range into chunks.\n- `range.Item1` and `range.Item2` define the start and end of each partition, processed by separate threads.\n- ***Line 13-14***: Doubles each number in the partition and prints the result.\n- Partitioning improves load balancing over default enumeration, especially for large or uneven workloads.\n- Output order varies due to parallel execution, but all numbers are processed correctly."
+  },
+  {
+    "title": "Using Thread-Local Storage",
+    "ques": "Write a C# program that uses ThreadLocal<T> to maintain thread-specific data across multiple threads.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Threading;\n\nclass Program\n{\n    static ThreadLocal<int> threadCounter = new ThreadLocal<int>(() => 0);\n\n    static void Main()\n    {\n        Thread[] threads = new Thread[3];\n        for (int i = 0; i < 3; i++)\n        {\n            threads[i] = new Thread(IncrementCounter);\n            threads[i].Start();\n        }\n        foreach (Thread t in threads) t.Join();\n        Console.WriteLine(\"All threads completed.\");\n    }\n\n    static void IncrementCounter()\n    {\n        for (int i = 0; i < 3; i++)\n        {\n            threadCounter.Value++;\n            Console.WriteLine($\"Thread {Thread.CurrentThread.ManagedThreadId}: Counter = {threadCounter.Value}\");\n            Thread.Sleep(100);\n        }\n    }\n}"
+    },
+    "explanation": "This program demonstrates thread-local storage:\n- ***Line 6***: Declares a `ThreadLocal<int>` with an initializer setting each thread’s value to 0.\n- ***Line 10-14***: Creates and starts 3 threads running `IncrementCounter`.\n- ***Line 21-25***: Each thread increments its own `threadCounter.Value`, which is isolated per thread.\n- Output shows each thread maintaining its own counter (e.g., 1, 2, 3), unaffected by others.\n- `ThreadLocal<T>` ensures data is unique to each thread, useful for avoiding shared state issues without locks."
+  },
+  {
+    "title": "Concurrent Reads/Writes with ReaderWriterLockSlim",
+    "ques": "Create a C# program that uses ReaderWriterLockSlim to allow multiple reads or exclusive writes to a shared resource.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Threading;\n\nclass Program\n{\n    static ReaderWriterLockSlim rwLock = new ReaderWriterLockSlim();\n    static int sharedValue = 0;\n\n    static void Main()\n    {\n        Thread reader1 = new Thread(ReadValue);\n        Thread reader2 = new Thread(ReadValue);\n        Thread writer = new Thread(WriteValue);\n\n        reader1.Start();\n        reader2.Start();\n        writer.Start();\n\n        reader1.Join();\n        reader2.Join();\n        writer.Join();\n    }\n\n    static void ReadValue()\n    {\n        rwLock.EnterReadLock();\n        try\n        {\n            Console.WriteLine($\"Read: {sharedValue} (Thread {Thread.CurrentThread.ManagedThreadId})\");\n            Thread.Sleep(500);\n        }\n        finally\n        {\n            rwLock.ExitReadLock();\n        }\n    }\n\n    static void WriteValue()\n    {\n        rwLock.EnterWriteLock();\n        try\n        {\n            sharedValue = 42;\n            Console.WriteLine($\"Wrote: {sharedValue} (Thread {Thread.CurrentThread.ManagedThreadId})\");\n            Thread.Sleep(1000);\n        }\n        finally\n        {\n            rwLock.ExitWriteLock();\n        }\n    }\n}"
+    },
+    "explanation": "This program uses ReaderWriterLockSlim:\n- ***Line 6***: Initializes a `ReaderWriterLockSlim` for synchronization.\n- ***Line 11-16***: Starts two reader threads and one writer thread.\n- ***Line 24-31***: `EnterReadLock` allows multiple threads to read `sharedValue` concurrently.\n- ***Line 37-44***: `EnterWriteLock` ensures exclusive access for writing, blocking all reads/writes.\n- Readers can run simultaneously, but the writer waits until no readers hold the lock, and vice versa.\n- This is more efficient than a simple lock when reads outnumber writes."
+  },
+  {
+    "title": "Task Continuation with ContinueWith",
+    "ques": "Write a C# program that uses Task.ContinueWith to chain tasks, processing a result from one task in a subsequent task.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Threading.Tasks;\n\nclass Program\n{\n    static void Main()\n    {\n        Task<int> initialTask = Task.Run(() => ComputeValue());\n        Task continuationTask = initialTask.ContinueWith(prevTask =>\n        {\n            int result = prevTask.Result;\n            Console.WriteLine($\"Continuation received: {result}\");\n            return result * 2;\n        });\n\n        continuationTask.Wait();\n        Console.WriteLine($\"Final result: {continuationTask.Result}\");\n    }\n\n    static int ComputeValue()\n    {\n        Task.Delay(1000).Wait();\n        return 10;\n    }\n}"
+    },
+    "explanation": "This program demonstrates task continuation:\n- ***Line 8***: Starts a task to compute a value (10) with a 1-second delay.\n- ***Line 9-13***: `ContinueWith` schedules a follow-up task that runs after `initialTask` completes.\n- ***Line 11***: Accesses the previous task’s result via `prevTask.Result`.\n- The continuation doubles the result (e.g., 20) and returns it.\n- ***Line 16***: `continuationTask.Result` retrieves the final value.\n- `ContinueWith` enables sequential task workflows, useful for dependent operations without blocking the main thread initially."
+  },
+  {
+    "title": "Parallel LINQ (PLINQ) for Data Processing",
+    "ques": "Create a C# program that uses PLINQ to process a large dataset in parallel, filtering and transforming the data.",
+    "answer": {
+      "type": "code",
+      "lang": "csharp",
+      "content": "using System;\nusing System.Linq;\n\nclass Program\n{\n    static void Main()\n    {\n        var numbers = Enumerable.Range(1, 100).ToArray();\n        var results = numbers.AsParallel()\n            .Where(n => n % 2 == 0)\n            .Select(n => n * n)\n            .ToArray();\n\n        Console.WriteLine(\"Even numbers squared: \" + string.Join(\", \", results.Take(10)) + \"...\");\n    }\n}"
+    },
+    "explanation": "This program uses PLINQ for parallel processing:\n- ***Line 8***: Creates an array of numbers 1 to 100.\n- ***Line 9-11***: `AsParallel()` enables parallel execution of the LINQ query.\n- `Where` filters even numbers, and `Select` squares them, both potentially running across multiple threads.\n- ***Line 13***: Displays the first 10 results (e.g., ```4, 16, 36, 64, 100, 144, 196, 256, 324, 400```).\n- PLINQ automatically partitions the data and leverages multiple cores, ideal for CPU-bound operations on large datasets.\n- Order may not be preserved unless `.AsOrdered()` is used, but here it’s not critical."
+  }
+]

@@ -1,0 +1,2880 @@
+[
+  {
+    "q": "Which function is used to open a file in C?",
+    "o": [
+      "fopen()",
+      "openfile()",
+      "file_open()",
+      "startfile()"
+    ]
+  },
+  {
+    "q": "What is the purpose of the fclose() function in C?",
+    "o": [
+      "It closes an opened file",
+      "It flushes the output buffer",
+      "It writes data to the file",
+      "It opens a file in read mode"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"test.txt\", \"w\");\n    fprintf(fp, \"Hello, World!\\n\");\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "A file named test.txt is created and contains 'Hello, World!'",
+      "The program gives a compile-time error",
+      "Nothing happens",
+      "The program crashes"
+    ]
+  },
+  {
+    "q": "Which mode is used to open a file for both reading and writing in binary mode, and also truncates the file to zero length?",
+    "o": [
+      "\"wb+\"",
+      "\"rb+\"",
+      "\"ab+\"",
+      "\"r+\""
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"data.txt\", \"r\");\n    int num;\n    fscanf(fp, \"%d\", &num);\n    printf(\"%d\\n\", num);\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "Prints the first integer from data.txt",
+      "Prints the first character from data.txt",
+      "Compiles with an error",
+      "Reads all integers from the file"
+    ]
+  },
+  {
+    "q": "Which of the following modes allows appending to a file in text mode?",
+    "o": [
+      "\"a\"",
+      "\"r\"",
+      "\"w\"",
+      "\"rb\""
+    ]
+  },
+  {
+    "q": "Which function is used to write formatted output to a file in C?",
+    "o": [
+      "fprintf()",
+      "fputs()",
+      "fwrite()",
+      "printf()"
+    ]
+  },
+  {
+    "q": "What is the output of the following code snippet?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"example.bin\", \"wb\");\n    int num = 100;\n    fwrite(&num, sizeof(int), 1, fp);\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "Writes the binary representation of 100 to example.bin",
+      "Writes the text '100' to example.bin",
+      "Nothing is written to the file",
+      "Creates a file but doesn't write anything"
+    ]
+  },
+  {
+    "q": "Which function is used to read formatted input from a file in C?",
+    "o": [
+      "fscanf()",
+      "fread()",
+      "fgets()",
+      "scanf()"
+    ]
+  },
+  {
+    "q": "Which of the following is true about binary file handling in C?",
+    "o": [
+      "fread() and fwrite() are used for binary files",
+      "Binary files can only be opened in read mode",
+      "Binary files must be converted to text before reading",
+      "Only characters can be stored in binary files"
+    ]
+  },
+  {
+    "q": "Which file mode in C is used to open a binary file for reading?",
+    "o": [
+      "\"rb\"",
+      "\"wb\"",
+      "\"ab\"",
+      "\"r\""
+    ]
+  },
+  {
+    "q": "What does the following code snippet do?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"log.txt\", \"a\");\n    fprintf(fp, \"Log entry\\n\");\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "Appends 'Log entry' to log.txt",
+      "Replaces log.txt with 'Log entry'",
+      "Reads 'Log entry' from log.txt",
+      "Creates log.txt and writes nothing"
+    ]
+  },
+  {
+    "q": "Which of the following correctly reads a string from a file in C?",
+    "o": [
+      "fscanf(fp, \"%s\", str);",
+      "fread(str, sizeof(char), 100, fp);",
+      "fgets(str, 100);",
+      "scanf(\"%s\", str);"
+    ]
+  },
+  {
+    "q": "What is the correct way to open a file for both reading and writing in binary mode?",
+    "o": [
+      "\"rb+\"",
+      "\"wb\"",
+      "\"a+\"",
+      "\"r\""
+    ]
+  },
+  {
+    "q": "What does fclose(fp) do in C?",
+    "o": [
+      "Closes the file and flushes buffers",
+      "Deletes the file",
+      "Saves file under a new name",
+      "Creates a new file"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"data.txt\", \"w\");\n    fprintf(fp, \"%d %s\", 25, \"Score\");\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "Writes '25 Score' to data.txt",
+      "Prints '25 Score' on screen",
+      "Reads '25 Score' from data.txt",
+      "Throws a compilation error"
+    ]
+  },
+  {
+    "q": "Which function is best suited for writing binary data to a file in C?",
+    "o": [
+      "fwrite()",
+      "fprintf()",
+      "fputs()",
+      "putc()"
+    ]
+  },
+  {
+    "q": "What is required after reading or writing a file to avoid memory leaks or corruption?",
+    "o": [
+      "Calling fclose()",
+      "Calling exit()",
+      "Calling flush()",
+      "Calling return()"
+    ]
+  },
+  {
+    "q": "What is the output of the following binary read code?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"num.bin\", \"rb\");\n    int x;\n    fread(&x, sizeof(int), 1, fp);\n    printf(\"%d\\n\", x);\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "Prints the integer stored in num.bin",
+      "Reads and prints the file name",
+      "Always prints 0",
+      "Gives a runtime error"
+    ]
+  },
+  {
+    "q": "Which file mode creates a new file or overwrites if it already exists, in binary mode?",
+    "o": [
+      "\"wb\"",
+      "\"ab\"",
+      "\"rb\"",
+      "\"r+\""
+    ]
+  },
+  {
+    "q": "Which file mode should you use in C to create a new file for both reading and writing in text mode?",
+    "o": [
+      "\"w+\"",
+      "\"r+\"",
+      "\"a+\"",
+      "\"wb\""
+    ]
+  },
+  {
+    "q": "What is the purpose of \"ab\" mode in C file handling?",
+    "o": [
+      "Appends data in binary format",
+      "Reads binary file from beginning",
+      "Overwrites binary file",
+      "Creates text file for appending"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"info.txt\", \"w\");\n    fprintf(fp, \"%s %d\", \"Level\", 2);\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "Creates a file with content 'Level 2'",
+      "Prints 'Level 2' to console",
+      "Reads 'Level 2' from file",
+      "Appends 'Level 2' to file"
+    ]
+  },
+  {
+    "q": "Which function is used to read binary data from a file?",
+    "o": [
+      "fread()",
+      "fscanf()",
+      "fgets()",
+      "fprintf()"
+    ]
+  },
+  {
+    "q": "Which statement is true regarding the mode \"r\" in fopen()?",
+    "o": [
+      "It opens an existing file for reading",
+      "It creates a new file for writing",
+      "It appends content to an existing file",
+      "It deletes the file content"
+    ]
+  },
+  {
+    "q": "What will be the result of this code?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"sample.dat\", \"rb\");\n    if (fp == NULL) {\n        printf(\"File not found\\n\");\n    } else {\n        printf(\"File opened\\n\");\n        fclose(fp);\n    }\n    return 0;\n}",
+    "o": [
+      "Displays 'File not found' if the file doesn’t exist",
+      "Always displays 'File opened'",
+      "Creates a new file and opens it",
+      "Deletes the file before opening"
+    ]
+  },
+  {
+    "q": "Which mode allows both reading and appending in text mode without truncating the file?",
+    "o": [
+      "\"a+\"",
+      "\"w+\"",
+      "\"r+\"",
+      "\"ab+\""
+    ]
+  },
+  {
+    "q": "Which function writes a string to a file without formatting in C?",
+    "o": [
+      "fputs()",
+      "fprintf()",
+      "fwrite()",
+      "puts()"
+    ]
+  },
+  {
+    "q": "What is the output of this code if 'input.txt' contains the text '42':\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"input.txt\", \"r\");\n    int x;\n    fscanf(fp, \"%d\", &x);\n    printf(\"%d\\n\", x);\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "42",
+      "input.txt",
+      "0",
+      "File not found"
+    ]
+  },
+  {
+    "q": "Which is the correct prototype for fclose in C?",
+    "o": [
+      "int fclose(FILE *stream);",
+      "void fclose(FILE *stream);",
+      "char fclose(FILE *stream);",
+      "FILE fclose(FILE *stream);"
+    ]
+  },
+  {
+    "q": "Which file mode in C is used to open a file for reading and writing without truncating the file?",
+    "o": [
+      "\"r+\"",
+      "\"w\"",
+      "\"w+\"",
+      "\"a+\""
+    ]
+  },
+  {
+    "q": "What is the output of the following code?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"score.txt\", \"w\");\n    if (fp != NULL) {\n        fprintf(fp, \"High Score: %d\", 100);\n        fclose(fp);\n    }\n    return 0;\n}",
+    "o": [
+      "Writes 'High Score: 100' to score.txt",
+      "Reads 'High Score: 100' from score.txt",
+      "Appends 'High Score: 100' to score.txt",
+      "Prints 'High Score: 100' to screen"
+    ]
+  },
+  {
+    "q": "Which file mode in C will create a file if it doesn't exist and allow writing at the end of file in binary?",
+    "o": [
+      "\"ab\"",
+      "\"rb\"",
+      "\"wb+\"",
+      "\"r+\""
+    ]
+  },
+  {
+    "q": "Which of the following correctly checks if a file was successfully opened?",
+    "o": [
+      "if (fp == NULL)",
+      "if (fp = NULL)",
+      "if (fopen(fp))",
+      "if (fp != 1)"
+    ]
+  },
+  {
+    "q": "Which of the following statements about fprintf() is correct?",
+    "o": [
+      "It writes formatted data to a file",
+      "It reads formatted data from a file",
+      "It writes raw binary data",
+      "It prints formatted data to console"
+    ]
+  },
+  {
+    "q": "What does the following C code do?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"data.bin\", \"wb\");\n    int val = 256;\n    fwrite(&val, sizeof(int), 1, fp);\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "Writes the integer 256 in binary format to data.bin",
+      "Writes the string \"256\" to data.bin",
+      "Reads the integer 256 from data.bin",
+      "Appends the integer 256 to a text file"
+    ]
+  },
+  {
+    "q": "What is the return value of fclose() when it is successful?",
+    "o": [
+      "0",
+      "1",
+      "-1",
+      "EOF"
+    ]
+  },
+  {
+    "q": "Which function should be used to read formatted input from a file?",
+    "o": [
+      "fscanf()",
+      "fgets()",
+      "fwrite()",
+      "fprintf()"
+    ]
+  },
+  {
+    "q": "What will happen if you open a file in \"w\" mode that already exists?",
+    "o": [
+      "The file content will be erased",
+      "An error will occur",
+      "Data will be appended",
+      "File will be opened in read-only mode"
+    ]
+  },
+  {
+    "q": "What is the purpose of fwrite() function in C?",
+    "o": [
+      "Writes data to a binary file",
+      "Reads text from a file",
+      "Appends formatted data to file",
+      "Opens a file in read mode"
+    ]
+  },
+  {
+    "q": "Which file mode is used to read a binary file in C?",
+    "o": [
+      "\"rb\"",
+      "\"wb\"",
+      "\"ab\"",
+      "\"r\""
+    ]
+  },
+  {
+    "q": "What will the following code do?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *f = fopen(\"log.txt\", \"a\");\n    fprintf(f, \"New entry\\n\");\n    fclose(f);\n    return 0;\n}",
+    "o": [
+      "Appends 'New entry' to log.txt",
+      "Overwrites log.txt with 'New entry'",
+      "Creates a binary file named log.txt",
+      "Reads contents from log.txt"
+    ]
+  },
+  {
+    "q": "Which function is used to close a file in C after use?",
+    "o": [
+      "fclose()",
+      "close()",
+      "endfile()",
+      "file_close()"
+    ]
+  },
+  {
+    "q": "Which of these modes opens a file for both reading and writing in binary mode and truncates it to zero length?",
+    "o": [
+      "\"wb+\"",
+      "\"rb+\"",
+      "\"ab+\"",
+      "\"r+\""
+    ]
+  },
+  {
+    "q": "What will be stored in 'output.txt' after this code runs?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"output.txt\", \"w\");\n    fprintf(fp, \"%d %s\", 42, \"done\");\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "42 done",
+      "done 42",
+      "output.txt",
+      "File is empty"
+    ]
+  },
+  {
+    "q": "Which function is typically used for writing structures to a binary file?",
+    "o": [
+      "fwrite()",
+      "fprintf()",
+      "fscanf()",
+      "fputs()"
+    ]
+  },
+  {
+    "q": "Which of the following opens a file in binary append mode?",
+    "o": [
+      "\"ab\"",
+      "\"wb\"",
+      "\"rb\"",
+      "\"a+\""
+    ]
+  },
+  {
+    "q": "What does fscanf() return upon reaching end-of-file?",
+    "o": [
+      "EOF",
+      "NULL",
+      "0",
+      "-1"
+    ]
+  },
+  {
+    "q": "What is required before using fread() or fwrite() on a file?",
+    "o": [
+      "The file must be opened in binary mode",
+      "The file must be opened in append mode",
+      "The file must contain strings only",
+      "The file must be created using fprintf"
+    ]
+  },
+  {
+    "q": "Which of these file functions is used to write formatted output to a file?",
+    "o": [
+      "fprintf()",
+      "fwrite()",
+      "fputs()",
+      "fscanf()"
+    ]
+  },
+  {
+    "q": "Which file mode is used to open an existing binary file for both reading and writing without truncating it?",
+    "o": [
+      "\"rb+\"",
+      "\"wb\"",
+      "\"ab+\"",
+      "\"r+\""
+    ]
+  },
+  {
+    "q": "What will the following C code do?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *file = fopen(\"data.txt\", \"r\");\n    if (file == NULL) printf(\"Error opening file\\n\");\n    else printf(\"File opened successfully\\n\");\n    fclose(file);\n    return 0;\n}",
+    "o": [
+      "Checks if the file exists and opens it for reading",
+      "Creates a new file for writing",
+      "Appends text to the file",
+      "Reads file in binary mode"
+    ]
+  },
+  {
+    "q": "Which of the following can be used to read an integer and a string from a file?",
+    "o": [
+      "fscanf(fp, \"%d %s\", &x, str);",
+      "fprintf(fp, \"%d %s\", x, str);",
+      "fwrite(&x, sizeof(x), 1, fp);",
+      "fgets(str, 100, fp);"
+    ]
+  },
+  {
+    "q": "What will the file pointer do if fopen() is called with mode \"w\" and the file already exists?",
+    "o": [
+      "Truncate the file to zero length",
+      "Append new data to existing content",
+      "Open the file for read-only",
+      "Cause a compilation error"
+    ]
+  },
+  {
+    "q": "What is the correct way to write a float value to a file using fprintf?",
+    "o": [
+      "fprintf(fp, \"%f\", value);",
+      "fwrite(&value, sizeof(float), 1, fp);",
+      "fputs(value, fp);",
+      "fscanf(fp, \"%f\", &value);"
+    ]
+  },
+  {
+    "q": "What is the role of fclose() in file handling?",
+    "o": [
+      "Closes the file and flushes buffers",
+      "Opens a file for reading",
+      "Writes data to a file",
+      "Creates a new file"
+    ]
+  },
+  {
+    "q": "What happens if fread() is used on a file opened in text mode?",
+    "o": [
+      "It may not read data correctly due to text interpretation",
+      "It reads data exactly like fscanf",
+      "It throws a runtime error",
+      "It writes binary data"
+    ]
+  },
+  {
+    "q": "Which of the following will correctly write a structure to a binary file?",
+    "o": [
+      "fwrite(&emp, sizeof(emp), 1, fp);",
+      "fprintf(fp, \"%s\", emp);",
+      "fscanf(fp, \"%s\", &emp);",
+      "fputs(emp, fp);"
+    ]
+  },
+  {
+    "q": "Which mode is used to open a new file for writing in binary mode?",
+    "o": [
+      "\"wb\"",
+      "\"rb+\"",
+      "\"ab\"",
+      "\"w\""
+    ]
+  },
+  {
+    "q": "What will the following code do?\n",
+    "c": "#include <stdio.h>\ntypedef struct {\n    int id;\n    float salary;\n} Employee;\n\nint main() {\n    FILE *fp = fopen(\"emp.dat\", \"wb\");\n    Employee e = {101, 50000.0};\n    fwrite(&e, sizeof(Employee), 1, fp);\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "Writes the structure to a binary file",
+      "Writes structure data as text",
+      "Appends structure to existing file",
+      "Reads structure from binary file"
+    ]
+  },
+  {
+    "q": "Which file mode allows both reading and appending to an existing text file?",
+    "o": [
+      "\"a+\"",
+      "\"w+\"",
+      "\"r\"",
+      "\"wb+\""
+    ]
+  },
+  {
+    "q": "What will this code output if 'data.txt' contains: 42 Hello?\n",
+    "c": "#include <stdio.h>\nint main() {\n    int num;\n    char word[10];\n    FILE *fp = fopen(\"data.txt\", \"r\");\n    fscanf(fp, \"%d %s\", &num, word);\n    printf(\"%d %s\", num, word);\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "42 Hello",
+      "0 Hello",
+      "42 ",
+      "Hello 42"
+    ]
+  },
+  {
+    "q": "Which function should you use to read a block of binary data from a file?",
+    "o": [
+      "fread()",
+      "fscanf()",
+      "fputs()",
+      "fprintf()"
+    ]
+  },
+  {
+    "q": "What does the 'r+' mode in fopen() do?",
+    "o": [
+      "Opens a file for both reading and writing",
+      "Opens a file for reading only",
+      "Opens a file for writing and truncates it",
+      "Opens a file in binary mode"
+    ]
+  },
+  {
+    "q": "What happens if you try to read from a file that wasn’t successfully opened?",
+    "o": [
+      "It causes undefined behavior or crash",
+      "It automatically creates a new file",
+      "It prints a warning and continues",
+      "It skips reading and continues"
+    ]
+  },
+  {
+    "q": "What does the following code do?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"log.bin\", \"wb\");\n    int x = 25;\n    fwrite(&x, sizeof(int), 1, fp);\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "Writes integer 25 to a binary file",
+      "Reads integer 25 from a binary file",
+      "Appends integer to a text file",
+      "Writes string to a binary file"
+    ]
+  },
+  {
+    "q": "Which statement best describes fprintf()?",
+    "o": [
+      "It writes formatted output to a file",
+      "It reads binary data from a file",
+      "It appends raw bytes to a file",
+      "It closes a file stream"
+    ]
+  },
+  {
+    "q": "Which mode will create the file if it doesn’t exist and write binary data to the end of it?",
+    "o": [
+      "\"ab\"",
+      "\"rb\"",
+      "\"wb+\"",
+      "\"r+\""
+    ]
+  },
+  {
+    "q": "How do you check if a file opened successfully?",
+    "o": [
+      "Check if the FILE pointer is NULL",
+      "Use feof(fp)",
+      "Check the return of fclose()",
+      "Use printf()"
+    ]
+  },
+  {
+    "q": "Which is the correct way to write a string to a text file?",
+    "o": [
+      "fputs(\"Hello\", fp);",
+      "fread(\"Hello\", sizeof(char), 5, fp);",
+      "fscanf(fp, \"%s\", \"Hello\");",
+      "fwrite(\"Hello\", sizeof(char), 1, fp);"
+    ]
+  },
+  {
+    "q": "What is returned by fopen() if the file fails to open?",
+    "o": [
+      "NULL",
+      "0",
+      "-1",
+      "EOF"
+    ]
+  },
+  {
+    "q": "What does the following code snippet do?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"test.txt\", \"w\");\n    fprintf(fp, \"Score: %d\", 90);\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "Writes 'Score: 90' to test.txt",
+      "Reads 'Score: 90' from test.txt",
+      "Appends 'Score: 90' to test.txt",
+      "Prints 'Score: 90' to stdout"
+    ]
+  },
+  {
+    "q": "Which function is used to close a file in C?",
+    "o": [
+      "fclose()",
+      "fend()",
+      "close()",
+      "endfile()"
+    ]
+  },
+  {
+    "q": "What does mode \"rb+\" mean when opening a file?",
+    "o": [
+      "Open for reading and writing in binary mode",
+      "Open for appending in binary mode",
+      "Open only for reading in binary mode",
+      "Open for writing and truncates the file"
+    ]
+  },
+  {
+    "q": "What is the output of the following code?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"nums.txt\", \"w\");\n    int i;\n    for(i = 1; i <= 3; i++) {\n        fprintf(fp, \"%d \", i);\n    }\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "Creates nums.txt with content: 1 2 3 ",
+      "Reads 1 2 3 from nums.txt",
+      "Appends 1 2 3 to nums.txt",
+      "Prints 1 2 3 to console"
+    ]
+  },
+  {
+    "q": "Which file function is used to write a block of data to a binary file?",
+    "o": [
+      "fwrite()",
+      "fputs()",
+      "fscanf()",
+      "fprintf()"
+    ]
+  },
+  {
+    "q": "Which of the following opens a file for appending in binary mode?",
+    "o": [
+      "\"ab\"",
+      "\"wb\"",
+      "\"rb\"",
+      "\"a+\""
+    ]
+  },
+  {
+    "q": "What does fscanf() return when it reaches end of file?",
+    "o": [
+      "EOF",
+      "0",
+      "-1",
+      "NULL"
+    ]
+  },
+  {
+    "q": "Which mode should be used to read a binary file without modifying its contents?",
+    "o": [
+      "\"rb\"",
+      "\"wb\"",
+      "\"ab\"",
+      "\"r+\""
+    ]
+  },
+  {
+    "q": "What is the correct way to read a float from a file in C?",
+    "o": [
+      "fscanf(fp, \"%f\", &val);",
+      "fprintf(fp, \"%f\", val);",
+      "fwrite(&val, sizeof(float), 1, fp);",
+      "fread(\"%f\", sizeof(float), 1, fp);"
+    ]
+  },
+  {
+    "q": "Which of the following modes opens a file for both reading and writing in binary mode, and creates it if it doesn't exist?",
+    "o": [
+      "\"wb+\"",
+      "\"rb+\"",
+      "\"ab+\"",
+      "\"r+\""
+    ]
+  },
+  {
+    "q": "What will the following code print?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"sample.txt\", \"w\");\n    fprintf(fp, \"%d %c\", 65, 'A');\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "Writes '65 A' to the file",
+      "Prints 65 A to stdout",
+      "Appends '65 A' to the file",
+      "Reads '65 A' from the file"
+    ]
+  },
+  {
+    "q": "Which of the following will write a string to a text file?",
+    "o": [
+      "fprintf(fp, \"%s\", \"Hello\");",
+      "fscanf(fp, \"%s\", str);",
+      "fread(str, sizeof(char), 1, fp);",
+      "fputc('H', fp);"
+    ]
+  },
+  {
+    "q": "What is the correct way to declare a file pointer in C?",
+    "o": [
+      "FILE *fp;",
+      "file fp;",
+      "FILE fp;",
+      "File *fp;"
+    ]
+  },
+  {
+    "q": "What is the purpose of fclose(fp) in C?",
+    "o": [
+      "To close an open file and flush the buffer",
+      "To free memory",
+      "To end program execution",
+      "To rewind the file pointer"
+    ]
+  },
+  {
+    "q": "Which of the following functions is used to write a single character to a file?",
+    "o": [
+      "fputc()",
+      "fputs()",
+      "fwrite()",
+      "putchar()"
+    ]
+  },
+  {
+    "q": "Which of these is a correct usage of fread in binary file handling?",
+    "o": [
+      "fread(&x, sizeof(int), 1, fp);",
+      "fread(x, sizeof(int), fp);",
+      "fread(fp, &x, sizeof(int), 1);",
+      "fread(x, fp, sizeof(int), 1);"
+    ]
+  },
+  {
+    "q": "What is the significance of the 'a' mode in fopen()?",
+    "o": [
+      "Appends to file; creates it if it doesn't exist",
+      "Reads and writes to a file",
+      "Opens file in binary read mode",
+      "Overwrites the file contents"
+    ]
+  },
+  {
+    "q": "What will this code write into the file?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"num.bin\", \"wb\");\n    int a = 100;\n    fwrite(&a, sizeof(int), 1, fp);\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "Binary data of integer 100",
+      "Text '100' into file",
+      "String \"int a = 100;\"",
+      "Nothing is written"
+    ]
+  },
+  {
+    "q": "Which function is used to read a string from a file until newline or EOF?",
+    "o": [
+      "fgets()",
+      "fputs()",
+      "fputc()",
+      "fscanf()"
+    ]
+  },
+  {
+    "q": "What does the mode \"a+\" do when opening a file with fopen()?",
+    "o": [
+      "Opens the file for reading and appending",
+      "Opens the file for writing only",
+      "Opens the file in binary read mode",
+      "Deletes contents and opens for writing"
+    ]
+  },
+  {
+    "q": "What does the following code do?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"log.txt\", \"a\");\n    fprintf(fp, \"New log entry\\n\");\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "Appends 'New log entry' to log.txt",
+      "Overwrites log.txt with 'New log entry'",
+      "Reads 'New log entry' from log.txt",
+      "Prints 'New log entry' to screen"
+    ]
+  },
+  {
+    "q": "Which file mode in fopen() is used to truncate a file to zero length?",
+    "o": [
+      "\"w\"",
+      "\"r\"",
+      "\"a\"",
+      "\"r+\""
+    ]
+  },
+  {
+    "q": "Which function is best suited for reading formatted data from a text file?",
+    "o": [
+      "fscanf()",
+      "fputs()",
+      "fgetc()",
+      "fwrite()"
+    ]
+  },
+  {
+    "q": "What will this code write into the file?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"data.txt\", \"w\");\n    fprintf(fp, \"%0.2f\", 3.14159);\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "3.14",
+      "3.14159",
+      "3.1",
+      "3"
+    ]
+  },
+  {
+    "q": "Which function would you use to read a block of binary data from a file?",
+    "o": [
+      "fread()",
+      "fputs()",
+      "fscanf()",
+      "fprintf()"
+    ]
+  },
+  {
+    "q": "What is the correct syntax to write a character to a file?",
+    "o": [
+      "fputc('x', fp);",
+      "putc(fp, 'x');",
+      "fprint('x', fp);",
+      "write(fp, 'x');"
+    ]
+  },
+  {
+    "q": "What will be stored in the file after this binary write?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"bin.dat\", \"wb\");\n    char ch = 'Z';\n    fwrite(&ch, sizeof(char), 1, fp);\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "Binary representation of 'Z'",
+      "ASCII code of 'Z' in text",
+      "Nothing, as fwrite doesn't work here",
+      "'Z' in plain text"
+    ]
+  },
+  {
+    "q": "Which function is used to check if the end of a file has been reached?",
+    "o": [
+      "feof()",
+      "fend()",
+      "fileend()",
+      "endfile()"
+    ]
+  },
+  {
+    "q": "What does the \"r+\" mode do in fopen()?",
+    "o": [
+      "Opens file for both reading and writing without truncating",
+      "Opens file for reading only",
+      "Creates new file for writing",
+      "Appends to file while reading"
+    ]
+  },
+  {
+    "q": "Which file mode will fail to open the file if it doesn't already exist?",
+    "o": [
+      "\"r\"",
+      "\"w\"",
+      "\"a\"",
+      "\"w+\""
+    ]
+  },
+  {
+    "q": "What will this code print?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"sample.txt\", \"w\");\n    fprintf(fp, \"Hello\\nWorld\");\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "Nothing printed on screen; writes to file",
+      "Hello printed to console",
+      "World printed to console",
+      "HelloWorld printed to console"
+    ]
+  },
+  {
+    "q": "Which of the following modes is used to append data to a binary file?",
+    "o": [
+      "\"ab\"",
+      "\"wb\"",
+      "\"rb\"",
+      "\"a\""
+    ]
+  },
+  {
+    "q": "What is the purpose of fclose() in C?",
+    "o": [
+      "To close a file and flush buffers",
+      "To reset the file position",
+      "To open a file in read mode",
+      "To free memory allocated by fopen"
+    ]
+  },
+  {
+    "q": "What will the following code output to the file?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *f = fopen(\"test.txt\", \"w\");\n    int x = 42;\n    fprintf(f, \"%d\", x);\n    fclose(f);\n    return 0;\n}",
+    "o": [
+      "42",
+      "%d",
+      "test.txt",
+      "Nothing"
+    ]
+  },
+  {
+    "q": "Which of the following reads a single character from a file?",
+    "o": [
+      "fgetc(fp)",
+      "getcchar(fp)",
+      "getch(fp)",
+      "file_getc(fp)"
+    ]
+  },
+  {
+    "q": "What does 'wb+' mode do in fopen()?",
+    "o": [
+      "Opens a binary file for both reading and writing; truncates to zero",
+      "Opens a text file in write-binary mode only",
+      "Appends to a binary file",
+      "Reads only from binary file"
+    ]
+  },
+  {
+    "q": "Which function is used to write formatted data to a file?",
+    "o": [
+      "fprintf()",
+      "printf()",
+      "fputs()",
+      "fprint()"
+    ]
+  },
+  {
+    "q": "What is returned by fopen() if the file cannot be opened?",
+    "o": [
+      "NULL",
+      "0",
+      "1",
+      "EOF"
+    ]
+  },
+  {
+    "q": "What will this program output?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"nums.dat\", \"wb\");\n    int n = 100;\n    fwrite(&n, sizeof(int), 1, fp);\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "Writes 100 in binary format to nums.dat",
+      "Writes ASCII 100 to file",
+      "Prints 100 to console",
+      "Writes nothing"
+    ]
+  },
+  {
+    "q": "Which file mode should be used to open a file for both reading and appending in text mode?",
+    "o": [
+      "\"a+\"",
+      "\"w+\"",
+      "\"r\"",
+      "\"ab\""
+    ]
+  },
+  {
+    "q": "What does this code do?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"log.txt\", \"r\");\n    if (fp == NULL) {\n        printf(\"Error opening file\\n\");\n    } else {\n        printf(\"File opened successfully\\n\");\n        fclose(fp);\n    }\n    return 0;\n}",
+    "o": [
+      "Checks if log.txt exists and opens it in read mode",
+      "Creates log.txt and writes to it",
+      "Appends text to log.txt",
+      "Deletes log.txt if not found"
+    ]
+  },
+  {
+    "q": "Which function is best used to write a string to a file without any formatting?",
+    "o": [
+      "fputs()",
+      "fprintf()",
+      "fwrite()",
+      "puts()"
+    ]
+  },
+  {
+    "q": "What does the following code print?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"data.txt\", \"w\");\n    fprintf(fp, \"%%d %%s\", 10, \"hello\");\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "Writes '10 hello' to data.txt",
+      "Prints '10 hello' on screen",
+      "Reads '10 hello' from data.txt",
+      "Nothing happens"
+    ]
+  },
+  {
+    "q": "What is the correct syntax to write binary data to a file?",
+    "o": [
+      "fwrite(ptr, size, count, file_ptr);",
+      "fwrite(file_ptr, size, count, ptr);",
+      "write(ptr, size, file_ptr);",
+      "fwrite(ptr, file_ptr, size, count);"
+    ]
+  },
+  {
+    "q": "Which mode opens the file for both reading and writing in binary mode?",
+    "o": [
+      "\"rb+\"",
+      "\"wb+\"",
+      "\"ab+\"",
+      "\"rwb\""
+    ]
+  },
+  {
+    "q": "What happens when you use fscanf() to read from a file?",
+    "o": [
+      "It reads formatted data from a file",
+      "It writes formatted data to a file",
+      "It opens a file in binary mode",
+      "It closes a file"
+    ]
+  },
+  {
+    "q": "Which function is used to close a file and release its resources?",
+    "o": [
+      "fclose()",
+      "fend()",
+      "fstop()",
+      "endfile()"
+    ]
+  },
+  {
+    "q": "Which code snippet correctly reads an integer from a file?\n",
+    "c": "int x;\nFILE *fp = fopen(\"input.txt\", \"r\");\nfscanf(fp, \"%d\", &x);\nfclose(fp);",
+    "o": [
+      "Reads an integer value and stores it in x",
+      "Writes the value of x to file",
+      "Reads a string and stores it in x",
+      "Reads binary data into x"
+    ]
+  },
+  {
+    "q": "What is the output of this code?\n",
+    "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"file.txt\", \"wb\");\n    int arr[2] = {1, 2};\n    fwrite(arr, sizeof(int), 2, fp);\n    fclose(fp);\n    return 0;\n}",
+    "o": [
+      "Writes binary values of integers 1 and 2 to file.txt",
+      "Writes '1 2' in plain text to file.txt",
+      "Prints 1 and 2 to the console",
+      "Does nothing"
+    ]
+  },
+  {
+    "q": "What is the primary function used to open a file in C?",
+    "o": [
+      "fopen()",
+      "open()",
+      "file_open()",
+      "create_file()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'test.txt' contains the number 123?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"test.txt\", \"r\");\n  int num;\n  fscanf(file, \"%d\", &num);\n  printf(\"%d\", num);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "123",
+      "0",
+      "Error",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "Which file mode in C is used for opening a file in binary read mode?",
+    "o": [
+      "rb",
+      "r",
+      "b",
+      "read_binary"
+    ]
+  },
+  {
+    "q": "What function is used to write formatted output to a file in C?",
+    "o": [
+      "fprintf()",
+      "fwrite()",
+      "fprint()",
+      "file_write()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"output.txt\", \"w\");\n  if (file != NULL) {\n    fprintf(file, \"Hello, C!\");\n    fclose(file);\n  }\n  return 0;\n}",
+    "o": [
+      "The file 'output.txt' will contain 'Hello, C!'",
+      "Hello, C! will be printed to the console",
+      "Error",
+      "Nothing will happen"
+    ]
+  },
+  {
+    "q": "What is the function used to close a file in C?",
+    "o": [
+      "fclose()",
+      "close()",
+      "file_close()",
+      "end_file()"
+    ]
+  },
+  {
+    "q": "Which file mode in C is used for appending to a text file?",
+    "o": [
+      "a",
+      "w",
+      "r",
+      "ab"
+    ]
+  },
+  {
+    "q": "What is the purpose of using 'fwrite()' in C file handling?",
+    "o": [
+      "To write a block of data to a binary file.",
+      "To write formatted text to a file.",
+      "To read formatted text from a file.",
+      "To read a block of data from a binary file."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'binary.bin' exists and contains the integer 1024 as binary data?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"binary.bin\", \"rb\");\n  int num;\n  fread(&num, sizeof(int), 1, file);\n  printf(\"%d\", num);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "1024",
+      "0",
+      "Error",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "In C, what is the difference between text and binary file modes?",
+    "o": [
+      "Text modes handle data as characters, while binary modes handle raw bytes.",
+      "Text modes are faster than binary modes.",
+      "Binary modes are only for reading, while text modes are for writing.",
+      "There is no difference between them."
+    ]
+  },
+  {
+    "q": "What does the 'w+' file mode in C allow you to do?",
+    "o": [
+      "Read and write to a file, truncating it to zero length or creating it if it does not exist.",
+      "Append to a file.",
+      "Read a file in binary mode.",
+      "Only write to a file."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'data.txt' does not exist?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"data.txt\", \"r\");\n  if (file == NULL) {\n    printf(\"File not found\");\n  } else {\n    printf(\"File opened\");\n    fclose(file);\n  }\n  return 0;\n}",
+    "o": [
+      "File not found",
+      "File opened",
+      "Error",
+      "Nothing will be printed"
+    ]
+  },
+  {
+    "q": "Which function is used to read a block of data from a binary file in C?",
+    "o": [
+      "fread()",
+      "fscanf()",
+      "fgets()",
+      "fgetc()"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'a+' file mode in C?",
+    "o": [
+      "Open for reading and appending (reading allowed anywhere, writing only at end).",
+      "Open for writing, creating the file if it does not exist.",
+      "Open for reading only.",
+      "Open for writing and reading, truncating the file."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"numbers.txt\", \"w\");\n  fprintf(file, \"%d %d %d\", 10, 20, 30);\n  fclose(file);\n\n  file = fopen(\"numbers.txt\", \"r\");\n  int a, b, c;\n  fscanf(file, \"%d %d %d\", &a, &b, &c);\n  printf(\"%d %d %d\", a, b, c);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "10 20 30",
+      "0 0 0",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "When handling binary files in C, what is the significance of the 'sizeof()' operator?",
+    "o": [
+      "It determines the size of data types for reading and writing binary data.",
+      "It determines the size of the file.",
+      "It checks if the file exists.",
+      "It closes the file."
+    ]
+  },
+  {
+    "q": "Which file mode in C is used to open a file for both reading and writing, without truncating it?",
+    "o": [
+      "r+",
+      "w+",
+      "a+",
+      "rb+"
+    ]
+  },
+  {
+    "q": "What is the primary difference between 'fprintf' and 'fwrite' in C file handling?",
+    "o": [
+      "fprintf is for formatted text, fwrite is for binary data.",
+      "fprintf is for binary data, fwrite is for formatted text.",
+      "fprintf is for reading, fwrite is for writing.",
+      "There is no difference."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'test.bin' exists and contains the character 'A' in binary form?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"test.bin\", \"rb\");\n  char c;\n  fread(&c, sizeof(char), 1, file);\n  printf(\"%c\", c);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "A",
+      "0",
+      "Error",
+      "Garbage character"
+    ]
+  },
+  {
+    "q": "In C, what happens if you try to write to a file opened in 'r' mode?",
+    "o": [
+      "An error will occur.",
+      "The write operation will be ignored.",
+      "The file will be truncated and written to.",
+      "The file will be appended to."
+    ]
+  },
+  {
+    "q": "What is the return value of `fopen()` in C if the file cannot be opened?",
+    "o": [
+      "NULL",
+      "0",
+      "-1",
+      "1"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'numbers.dat' is initially empty?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"numbers.dat\", \"wb\");\n  int data[] = {1, 2, 3};\n  fwrite(data, sizeof(int), 3, file);\n  fclose(file);\n\n  file = fopen(\"numbers.dat\", \"rb\");\n  int read_data[3];\n  fread(read_data, sizeof(int), 3, file);\n  printf(\"%d %d %d\", read_data[0], read_data[1], read_data[2]);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "1 2 3",
+      "0 0 0",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'b' character in file modes like 'rb' or 'wb'?",
+    "o": [
+      "Indicates binary file mode.",
+      "Indicates buffered I/O.",
+      "Indicates block I/O.",
+      "Indicates byte-level operations."
+    ]
+  },
+  {
+    "q": "Which function is used to read a single character from a file in C?",
+    "o": [
+      "fgetc()",
+      "fscanf()",
+      "fgets()",
+      "fread()"
+    ]
+  },
+  {
+    "q": "What happens if you try to read beyond the end of a file using `fscanf()` in C?",
+    "o": [
+      "fscanf() returns EOF.",
+      "An error occurs.",
+      "The program enters an infinite loop.",
+      "fscanf() returns 0."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'test.txt' contains '10 20\\n30'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"test.txt\", \"r\");\n  int a, b, c;\n  fscanf(file, \"%d %d\\n%d\", &a, &b, &c);\n  printf(\"%d %d %d\", a, b, c);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "10 20 30",
+      "0 0 0",
+      "Error",
+      "Garbage values"
+    ]
+  },
+    {
+    "q": "When using `fwrite()` to write a struct to a binary file, what is essential to ensure data integrity?",
+    "o": [
+      "Using the `sizeof()` operator with the struct.",
+      "Converting the struct to a string.",
+      "Using `fprintf()` instead.",
+      "Flushing the file buffer after writing."
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'r+' mode in C file handling?",
+    "o": [
+      "To open a file for both reading and writing.",
+      "To create a new file for reading and writing.",
+      "To open a file for reading only.",
+      "To append to a file for both reading and writing."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'my_file.txt' already contains 'Hello'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"my_file.txt\", \"a\");\n  fprintf(file, \", World!\");\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "The file 'my_file.txt' will contain 'Hello, World!'",
+      "The file 'my_file.txt' will contain 'World!'",
+      "The file 'my_file.txt' will contain 'Hello'",
+      "An error will occur."
+    ]
+  },
+  {
+    "q": "In C, what is the importance of checking the return value of `fclose()`?",
+    "o": [
+      "To ensure that the file was closed successfully.",
+      "To determine the size of the file.",
+      "To read the last character of the file.",
+      "To write the last line of the file."
+    ]
+  },
+  {
+    "q": "What is the primary function used to read formatted input from a file in C?",
+    "o": [
+      "fscanf()",
+      "fread()",
+      "fgets()",
+      "fgetc()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'data.bin' contains the bytes '0x41 0x42 0x43'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"data.bin\", \"rb\");\n  char buffer[3];\n  fread(buffer, sizeof(char), 3, file);\n  printf(\"%c%c%c\", buffer[0], buffer[1], buffer[2]);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "ABC",
+      "0x41 0x42 0x43",
+      "Error",
+      "Garbage characters"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'ab+' file mode in C?",
+    "o": [
+      "Open for reading and appending in binary mode.",
+      "Open for reading and writing in binary mode, truncating the file.",
+      "Open for writing in binary mode.",
+      "Open for reading in binary mode."
+    ]
+  },
+  {
+    "q": "Which function is used to read a line of text from a file in C?",
+    "o": [
+      "fgets()",
+      "fscanf()",
+      "fgetc()",
+      "fread()"
+    ]
+  },
+  {
+    "q": "What happens if you use `fprintf()` to write to a file opened in 'r' mode?",
+    "o": [
+      "An error will occur.",
+      "The write operation will be ignored.",
+      "The file will be overwritten.",
+      "The data will be appended to the file."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'test.txt' contains '123\\n456'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"test.txt\", \"r\");\n  char buffer[10];\n  fgets(buffer, 10, file);\n  printf(\"%s\", buffer);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "123\n",
+      "123456\n",
+      "Error",
+      "Garbage characters"
+    ]
+  },
+    {
+    "q": "When writing a structure to a binary file using `fwrite()`, what is the consequence of not using `sizeof()` correctly?",
+    "o": [
+      "Data corruption or incorrect file size.",
+      "The file will not open.",
+      "The program will crash.",
+      "The data will be written as text."
+    ]
+  },
+  {
+    "q": "What is the difference between 'w' and 'wb' file modes in C?",
+    "o": [
+      "'w' is for text, 'wb' is for binary.",
+      "'w' overwrites, 'wb' appends.",
+      "'w' reads, 'wb' writes.",
+      "There is no difference."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'test.bin' exists and contains the integer 258 represented in binary?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"test.bin\", \"rb\");\n  short num;\n  fread(&num, sizeof(short), 1, file);\n  printf(\"%d\", num);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "258",
+      "0",
+      "Error",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "In C, what is the purpose of the `feof()` function?",
+    "o": [
+      "To check if the end of file has been reached.",
+      "To check if a file exists.",
+      "To check if a file is empty.",
+      "To check if a file is open."
+    ]
+  },
+  {
+    "q": "What is the primary function used to write a single character to a file in C?",
+    "o": [
+      "fputc()",
+      "fprintf()",
+      "fwrite()",
+      "fputs()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'info.txt' contains 'Name: John Age: 30'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"info.txt\", \"r\");\n  char name[20];\n  int age;\n  fscanf(file, \"Name: %s Age: %d\", name, &age);\n  printf(\"Name: %s, Age: %d\", name, age);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "Name: John, Age: 30",
+      "Name: , Age: 0",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'rb+' file mode in C?",
+    "o": [
+      "Open for reading and writing in binary mode.",
+      "Open for reading and appending in binary mode.",
+      "Open for writing in binary mode.",
+      "Open for reading in binary mode."
+    ]
+  },
+  {
+    "q": "Which function is used to write a string to a file in C?",
+    "o": [
+      "fputs()",
+      "fprintf()",
+      "fwrite()",
+      "fputc()"
+    ]
+  },
+  {
+    "q": "What happens if you try to read from a file opened in 'w' mode?",
+    "o": [
+      "An error will occur.",
+      "The read operation will be ignored.",
+      "The file will be truncated.",
+      "The program will crash."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'data.txt' contains 'apple\\nbanana\\ncherry'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"data.txt\", \"r\");\n  char line[20];\n  fgets(line, 20, file);\n  printf(\"%s\", line);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "apple\n",
+      "applebanana\n",
+      "Error",
+      "Garbage characters"
+    ]
+  },
+  {
+    "q": "When handling binary files, how does `fread()` determine the number of bytes to read?",
+    "o": [
+      "By multiplying the size of each element by the number of elements.",
+      "By reading until a null terminator.",
+      "By reading a predefined block size.",
+      "By reading until the end of the file."
+    ]
+  },
+  {
+    "q": "What is the difference between 'a' and 'a+' file modes in C?",
+    "o": [
+      "'a' writes only, 'a+' reads and writes.",
+      "'a' reads only, 'a+' writes only.",
+      "'a' binary, 'a+' text.",
+      "There is no difference."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'values.bin' contains the float 3.14159 in binary format?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"values.bin\", \"rb\");\n  float value;\n  fread(&value, sizeof(float), 1, file);\n  printf(\"%.2f\", value);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "3.14",
+      "0.00",
+      "Error",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "In C, what is the purpose of the `rewind()` function?",
+    "o": [
+      "To set the file position indicator to the beginning of the file.",
+      "To delete the file.",
+      "To rename the file.",
+      "To check if the file is empty."
+    ]
+  },
+  {
+    "q": "What is the primary function used to write a formatted string to a file in C?",
+    "o": [
+      "fprintf()",
+      "fputs()",
+      "fwrite()",
+      "fputc()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'log.txt' exists and contains 'Line 1\\nLine 2'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"log.txt\", \"r\");\n  char buffer[100];\n  while (fgets(buffer, 100, file) != NULL) {\n    printf(\"%s\", buffer);\n  }\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "Line 1\nLine 2\n",
+      "Line 1Line 2",
+      "Error",
+      "Nothing printed"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'wb+' file mode in C?",
+    "o": [
+      "Open for reading and writing in binary mode, truncating the file.",
+      "Open for reading and appending in binary mode.",
+      "Open for writing in binary mode.",
+      "Open for reading in binary mode."
+    ]
+  },
+  {
+    "q": "Which function is used to write a single character to a file in C?",
+    "o": [
+      "fputc()",
+      "fprintf()",
+      "fwrite()",
+      "fputs()"
+    ]
+  },
+  {
+    "q": "What happens if you try to write to a file opened in 'r' mode?",
+    "o": [
+      "An error will occur.",
+      "The write operation will be ignored.",
+      "The file will be overwritten.",
+      "The data will be appended to the file."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'input.txt' contains '10,20,30'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"input.txt\", \"r\");\n  int a, b, c;\n  fscanf(file, \"%d,%d,%d\", &a, &b, &c);\n  printf(\"%d %d %d\", a, b, c);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "10 20 30",
+      "0 0 0",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "When handling binary files with structs, what is the importance of padding?",
+    "o": [
+      "Padding affects the size and layout of structs, which is crucial for binary file compatibility.",
+      "Padding is only relevant for text files.",
+      "Padding is automatically handled by the compiler and doesn't affect file handling.",
+      "Padding is only used to align text within a file."
+    ]
+  },
+  {
+    "q": "What is the difference between 'r+' and 'rb+' file modes in C?",
+    "o": [
+      "'r+' is text, 'rb+' is binary.",
+      "'r+' reads only, 'rb+' reads and writes.",
+      "'r+' appends, 'rb+' overwrites.",
+      "There is no difference."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'nums.bin' contains the float values 1.1, 2.2, and 3.3 in binary format?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"nums.bin\", \"rb\");\n  float values[3];\n  fread(values, sizeof(float), 3, file);\n  printf(\"%.1f %.1f %.1f\", values[0], values[1], values[2]);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "1.1 2.2 3.3",
+      "0.0 0.0 0.0",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "In C, what is the purpose of the `ftell()` function?",
+    "o": [
+      "To get the current file position indicator.",
+      "To set the file position indicator.",
+      "To check if the file is open.",
+      "To delete the file."
+    ]
+  },
+  {
+    "q": "What is the primary function used to write a block of data to a binary file in C?",
+    "o": [
+      "fwrite()",
+      "fprintf()",
+      "fputs()",
+      "fputc()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'config.txt' contains 'width=100\\nheight=200'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"config.txt\", \"r\");\n  int width, height;\n  fscanf(file, \"width=%d\\nheight=%d\", &width, &height);\n  printf(\"Width: %d, Height: %d\", width, height);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "Width: 100, Height: 200",
+      "Width: 0, Height: 0",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'a' file mode in C?",
+    "o": [
+      "Open for appending.",
+      "Open for reading.",
+      "Open for writing, truncating the file.",
+      "Open for reading and writing."
+    ]
+  },
+  {
+    "q": "Which function is used to read a string from a file in C, up to a specified delimiter or newline?",
+    "o": [
+      "fgets()",
+      "fscanf()",
+      "fread()",
+      "fgetc()"
+    ]
+  },
+  {
+    "q": "What happens if you try to read from a file opened in 'w' mode?",
+    "o": [
+      "An error will occur.",
+      "The read operation will be ignored.",
+      "The file will be truncated.",
+      "The program will crash."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'input.txt' contains '1.23 4.56 7.89'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"input.txt\", \"r\");\n  float a, b, c;\n  fscanf(file, \"%f %f %f\", &a, &b, &c);\n  printf(\"%.2f %.2f %.2f\", a, b, c);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "1.23 4.56 7.89",
+      "0.00 0.00 0.00",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "When handling binary files with structs, what is the consequence of platform-specific struct layout?",
+    "o": [
+      "Binary files may not be portable between different systems.",
+      "The program will crash.",
+      "The file will be converted to text.",
+      "There are no consequences."
+    ]
+  },
+  {
+    "q": "What is the difference between 'r' and 'rb' file modes in C?",
+    "o": [
+      "'r' is text, 'rb' is binary.",
+      "'r' writes, 'rb' reads.",
+      "'r' appends, 'rb' truncates.",
+      "There is no difference."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'data.bin' contains the long integer 1234567890 in binary?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"data.bin\", \"rb\");\n  long num;\n  fread(&num, sizeof(long), 1, file);\n  printf(\"%ld\", num);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "1234567890",
+      "0",
+      "Error",
+      "Garbage value"
+    ]
+  },
+  {
+    "q": "In C, what is the purpose of the `fseek()` function?",
+    "o": [
+      "To set the file position indicator.",
+      "To get the current file position indicator.",
+      "To check if the file is open.",
+      "To rename the file."
+    ]
+  },
+  {
+    "q": "What is the primary function used to write a string to a file in C?",
+    "o": [
+      "fputs()",
+      "fprintf()",
+      "fwrite()",
+      "fputc()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'values.txt' contains '10.5 20.75 30.125'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"values.txt\", \"r\");\n  double a, b, c;\n  fscanf(file, \"%lf %lf %lf\", &a, &b, &c);\n  printf(\"%.2lf %.2lf %.2lf\", a, b, c);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "10.50 20.75 30.13",
+      "0.00 0.00 0.00",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'a+' file mode in C?",
+    "o": [
+      "Open for reading and appending.",
+      "Open for reading only.",
+      "Open for writing, creating the file if it does not exist.",
+      "Open for writing only."
+    ]
+  },
+  {
+    "q": "Which function is used to read a single character from a file in C?",
+    "o": [
+      "fgetc()",
+      "fscanf()",
+      "fread()",
+      "fgets()"
+    ]
+  },
+  {
+    "q": "What happens if you try to write to a file opened in 'r' mode?",
+    "o": [
+      "An error will occur.",
+      "The write operation will be ignored.",
+      "The file will be overwritten.",
+      "The data will be appended to the file."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'lines.txt' contains 'Line 1\\nLine 2\\nLine 3'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"lines.txt\", \"r\");\n  char line[100];\n  while (fgets(line, 100, file) != NULL) {\n    printf(\"%s\", line);\n  }\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "Line 1\nLine 2\nLine 3\n",
+      "Line 1Line 2Line 3",
+      "Error",
+      "Nothing printed"
+    ]
+  },
+  {
+    "q": "When handling binary files with structs, what is the consequence of using different compilers on different systems?",
+    "o": [
+      "Struct layout may vary, leading to incompatibility.",
+      "The program will crash.",
+      "The file will be converted to text.",
+      "There are no consequences."
+    ]
+  },
+  {
+    "q": "What is the difference between 'w+' and 'wb+' file modes in C?",
+    "o": [
+      "'w+' is text, 'wb+' is binary.",
+      "'w+' reads only, 'wb+' writes only.",
+      "'w+' appends, 'wb+' truncates.",
+      "There is no difference."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'bytes.bin' contains the bytes '0x01 0x02 0x03 0x04'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"bytes.bin\", \"rb\");\n  unsigned char buffer[4];\n  fread(buffer, sizeof(unsigned char), 4, file);\n  for (int i = 0; i < 4; i++) {\n    printf(\"%02x \", buffer[i]);\n  }\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "01 02 03 04 ",
+      "1 2 3 4",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "In C, what is the purpose of the `fflush()` function?",
+    "o": [
+      "To flush the output buffer of a stream.",
+      "To set the file position indicator.",
+      "To check if the file is open.",
+      "To delete the file."
+    ]
+  },
+  {
+    "q": "What is the primary function used to read a formatted string from a file in C?",
+    "o": [
+      "fscanf()",
+      "fgets()",
+      "fread()",
+      "fgetc()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'data.csv' contains 'name,age,city\\nAlice,25,New York'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"data.csv\", \"r\");\n  char name[20], city[20];\n  int age;\n  fscanf(file, \"%*[^\\n]\\n%[^,],%d,%s\", name, &age, city);\n  printf(\"Name: %s, Age: %d, City: %s\", name, age, city);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "Name: Alice, Age: 25, City: New York",
+      "Name: , Age: 0, City: ",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'r+' file mode in C?",
+    "o": [
+      "Open for reading and writing.",
+      "Open for reading only.",
+      "Open for writing, creating the file if it does not exist.",
+      "Open for appending."
+    ]
+  },
+  {
+    "q": "Which function is used to write a single character to a file in C?",
+    "o": [
+      "fputc()",
+      "fprintf()",
+      "fwrite()",
+      "fputs()"
+    ]
+  },
+  {
+    "q": "What happens if you try to read from a file opened in 'w' mode?",
+    "o": [
+      "An error will occur.",
+      "The read operation will be ignored.",
+      "The file will be truncated.",
+      "The program will crash."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'records.txt' contains '10\\n20\\n30\\n40'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"records.txt\", \"r\");\n  int num;\n  while (fscanf(file, \"%d\", &num) == 1) {\n    printf(\"%d\\n\", num);\n  }\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "10\n20\n30\n40\n",
+      "10203040",
+      "Error",
+      "Nothing printed"
+    ]
+  },
+  {
+    "q": "When handling binary files with structures, what is the consequence of not using the 'packed' attribute (or similar compiler directives) when required?",
+    "o": [
+      "Incorrect struct size and alignment, leading to data corruption.",
+      "The file will be converted to text.",
+      "The program will crash.",
+      "There are no consequences."
+    ]
+  },
+  {
+    "q": "What is the difference between 'rb' and 'rb+' file modes in C?",
+    "o": [
+      "'rb' reads only, 'rb+' reads and writes.",
+      "'rb' is text, 'rb+' is binary.",
+      "'rb' appends, 'rb+' truncates.",
+      "There is no difference."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'raw.bin' contains the short integers 1000 and 2000 in binary?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"raw.bin\", \"rb\");\n  short nums[2];\n  fread(nums, sizeof(short), 2, file);\n  printf(\"%d %d\", nums[0], nums[1]);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "1000 2000",
+      "0 0",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "In C, what is the purpose of the `ferror()` function?",
+    "o": [
+      "To check if an error occurred on a stream.",
+      "To set the file position indicator.",
+      "To check if the file is open.",
+      "To delete the file."
+    ]
+  },
+  {
+    "q": "What is the primary function used to write a formatted output to a file in C?",
+    "o": [
+      "fprintf()",
+      "fputs()",
+      "fwrite()",
+      "fputc()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'items.txt' contains 'item1:10\\nitem2:20\\nitem3:30'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"items.txt\", \"r\");\n  char item[20];\n  int count;\n  while (fscanf(file, \"%[^:]:%d\\n\", item, &count) == 2) {\n    printf(\"%s - %d\\n\", item, count);\n  }\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "item1 - 10\nitem2 - 20\nitem3 - 30\n",
+      "item1:10\nitem2:20\nitem3:30\n",
+      "Error",
+      "Nothing printed"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'wb' file mode in C?",
+    "o": [
+      "Open for writing in binary mode.",
+      "Open for reading in binary mode.",
+      "Open for appending in binary mode.",
+      "Open for reading and writing in binary mode."
+    ]
+  },
+  {
+    "q": "Which function is used to read a line of text from a file, including the newline character, in C?",
+    "o": [
+      "fgets()",
+      "fscanf()",
+      "fread()",
+      "fgetc()"
+    ]
+  },
+  {
+    "q": "What happens if you try to append to a file opened in 'r' mode?",
+    "o": [
+      "An error will occur.",
+      "The append operation will be ignored.",
+      "The file will be overwritten.",
+      "The data will be written at the beginning of the file."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'numbers.txt' contains '10.5,20.25,30.75'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"numbers.txt\", \"r\");\n  float a, b, c;\n  fscanf(file, \"%f,%f,%f\", &a, &b, &c);\n  printf(\"%.2f %.2f %.2f\", a, b, c);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "10.50 20.25 30.75",
+      "0.00 0.00 0.00",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "When handling binary files with structs, what is the consequence of using different byte orders (endianness) on different systems?",
+    "o": [
+      "Data will be interpreted incorrectly, leading to errors.",
+      "The file will be converted to text.",
+      "The program will crash.",
+      "There are no consequences."
+    ]
+  },
+  {
+    "q": "What is the difference between 'a' and 'ab' file modes in C?",
+    "o": [
+      "'a' is text, 'ab' is binary.",
+      "'a' reads, 'ab' writes.",
+      "'a' truncates, 'ab' appends.",
+      "There is no difference."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'data.bin' contains the float values 1.0, 2.0, 3.0, and 4.0 in binary format?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"data.bin\", \"rb\");\n  float values[4];\n  fread(values, sizeof(float), 4, file);\n  for (int i = 0; i < 4; i++) {\n    printf(\"%.1f \", values[i]);\n  }\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "1.0 2.0 3.0 4.0 ",
+      "0.0 0.0 0.0 0.0",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "In C, what is the purpose of the `ftell()` function?",
+    "o": [
+      "To get the current file position indicator.",
+      "To set the file position indicator.",
+      "To check if the file is open.",
+      "To delete the file."
+    ]
+  },
+  {
+    "q": "What is the primary function used to write a character array (string) to a file in C?",
+    "o": [
+      "fputs()",
+      "fprintf()",
+      "fwrite()",
+      "fputc()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'config.ini' contains 'name=Alice\\nage=30\\ncity=London'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"config.ini\", \"r\");\n  char name[20], city[20];\n  int age;\n  fscanf(file, \"name=%s\\nage=%d\\ncity=%s\", name, &age, city);\n  printf(\"Name: %s, Age: %d, City: %s\", name, age, city);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "Name: Alice, Age: 30, City: London",
+      "Name: , Age: 0, City: ",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'w' file mode in C?",
+    "o": [
+      "Open for writing, truncating the file to zero length or creating the file if it does not exist.",
+      "Open for reading only.",
+      "Open for appending.",
+      "Open for reading and writing."
+    ]
+  },
+  {
+    "q": "Which function is used to read a specified number of bytes from a file into a buffer in C?",
+    "o": [
+      "fread()",
+      "fscanf()",
+      "fgets()",
+      "fgetc()"
+    ]
+  },
+  {
+    "q": "What happens if you try to modify a file opened in 'r' mode?",
+    "o": [
+      "An error will occur.",
+      "The modification will be ignored.",
+      "The file will be overwritten.",
+      "The data will be appended to the file."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'values.txt' contains '1.1,2.2,3.3,4.4'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"values.txt\", \"r\");\n  float values[4];\n  for (int i = 0; i < 4; i++) {\n    fscanf(file, \"%f,\", &values[i]);\n  }\n  for (int i = 0; i < 4; i++) {\n    printf(\"%.1f \", values[i]);\n  }\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "1.1 2.2 3.3 4.4 ",
+      "0.0 0.0 0.0 0.0",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "When handling binary files, what is the importance of considering the size of data types across different platforms?",
+    "o": [
+      "Data type sizes can vary, leading to incorrect data interpretation.",
+      "Data type sizes are always consistent across platforms.",
+      "Data type sizes only affect text files.",
+      "Data type sizes are not relevant for binary files."
+    ]
+  },
+  {
+    "q": "What is the difference between 'r+' and 'a+' file modes in C?",
+    "o": [
+      "'r+' allows reading and writing from any position, 'a+' allows reading and appending.",
+      "'r+' reads only, 'a+' writes only.",
+      "'r+' truncates, 'a+' appends.",
+      "There is no difference."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'bytes.bin' contains the bytes '0x48 0x65 0x6c 0x6c 0x6f'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"bytes.bin\", \"rb\");\n  char buffer[5];\n  fread(buffer, sizeof(char), 5, file);\n  printf(\"%s\", buffer);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "Hello",
+      "0x48 0x65 0x6c 0x6c 0x6f",
+      "Error",
+      "Garbage characters"
+    ]
+  },
+  {
+    "q": "In C, what is the purpose of the `clearerr()` function?",
+    "o": [
+      "To clear the end-of-file and error indicators for a stream.",
+      "To set the file position indicator.",
+      "To check if the file is open.",
+      "To delete the file."
+    ]
+  },
+  {
+    "q": "What is the primary function used to write a single formatted character to a file in C?",
+    "o": [
+      "fprintf()",
+      "fputs()",
+      "fwrite()",
+      "fputc()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'data.csv' contains 'id,name,value\\n1,apple,10.5\\n2,banana,20.3'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"data.csv\", \"r\");\n  int id;\n  char name[20];\n  float value;\n  fscanf(file, \"%*[^\\n]\\n%d,%[^,],%f\", &id, name, &value);\n  printf(\"ID: %d, Name: %s, Value: %.1f\", id, name, value);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "ID: 1, Name: apple, Value: 10.5",
+      "ID: 0, Name: , Value: 0.0",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'r' file mode in C?",
+    "o": [
+      "Open for reading only.",
+      "Open for writing, truncating the file to zero length or creating the file if it does not exist.",
+      "Open for appending.",
+      "Open for reading and writing."
+    ]
+  },
+  {
+    "q": "Which function is used to write a block of memory to a file in C?",
+    "o": [
+      "fwrite()",
+      "fprintf()",
+      "fgets()",
+      "fgetc()"
+    ]
+  },
+  {
+    "q": "What happens if you try to write to a file opened in 'r' mode?",
+    "o": [
+      "An error will occur.",
+      "The write operation will be ignored.",
+      "The file will be overwritten.",
+      "The data will be appended to the file."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'floats.txt' contains '1.2 3.4 5.6 7.8'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"floats.txt\", \"r\");\n  float a, b, c, d;\n  fscanf(file, \"%f %f %f %f\", &a, &b, &c, &d);\n  printf(\"%.2f %.2f %.2f %.2f\", a, b, c, d);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "1.20 3.40 5.60 7.80",
+      "0.00 0.00 0.00 0.00",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "When handling binary files with structs, what is the importance of considering the alignment of struct members?",
+    "o": [
+      "Alignment can affect the size and layout of structs, leading to incorrect file handling.",
+      "Alignment is only relevant for text files.",
+      "Alignment is automatically handled by the compiler and doesn't affect file handling.",
+      "Alignment is only used to align text within a file."
+    ]
+  },
+  {
+    "q": "What is the difference between 'w' and 'w+' file modes in C?",
+    "o": [
+      "'w' writes only, 'w+' reads and writes.",
+      "'w' reads only, 'w+' writes only.",
+      "'w' appends, 'w+' truncates.",
+      "There is no difference."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'bytes.bin' contains the bytes '0x0a 0x0b 0x0c 0x0d 0x0e'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"bytes.bin\", \"rb\");\n  unsigned char buffer[5];\n  fread(buffer, sizeof(unsigned char), 5, file);\n  for (int i = 0; i < 5; i++) {\n    printf(\"%02x \", buffer[i]);\n  }\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "0a 0b 0c 0d 0e ",
+      "10 11 12 13 14",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "In C, what is the purpose of the `rewind()` function?",
+    "o": [
+      "To set the file position indicator to the beginning of the file.",
+      "To check if an error occurred on a stream.",
+      "To check if the file is open.",
+      "To delete the file."
+    ]
+  },
+  {
+    "q": "What is the primary function used to read a block of data from a binary file in C?",
+    "o": [
+      "fread()",
+      "fscanf()",
+      "fgets()",
+      "fgetc()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'data.txt' contains 'name=John,age=30,city=NewYork'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"data.txt\", \"r\");\n  char name[20], city[20];\n  int age;\n  fscanf(file, \"name=%[^,],age=%d,city=%s\", name, &age, city);\n  printf(\"Name: %s, Age: %d, City: %s\", name, age, city);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "Name: John, Age: 30, City: NewYork",
+      "Name: , Age: 0, City: ",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'ab' file mode in C?",
+    "o": [
+      "Open for appending in binary mode.",
+      "Open for reading in binary mode.",
+      "Open for writing in binary mode.",
+      "Open for reading and writing in binary mode."
+    ]
+  },
+  {
+    "q": "Which function is used to write a formatted string to a file in C?",
+    "o": [
+      "fprintf()",
+      "fputs()",
+      "fwrite()",
+      "fputc()"
+    ]
+  },
+  {
+    "q": "What happens if you try to write to a file opened in 'r' mode?",
+    "o": [
+      "An error will occur.",
+      "The write operation will be ignored.",
+      "The file will be overwritten.",
+      "The data will be appended to the file."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'numbers.txt' contains '10 20 30 40 50'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"numbers.txt\", \"r\");\n  int nums[5];\n  for (int i = 0; i < 5; i++) {\n    fscanf(file, \"%d\", &nums[i]);\n  }\n  for (int i = 0; i < 5; i++) {\n    printf(\"%d \", nums[i]);\n  }\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "10 20 30 40 50 ",
+      "0 0 0 0 0 ",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "When handling binary files, what is the importance of considering the size of data types across different architectures?",
+    "o": [
+      "Data type sizes can vary, potentially leading to data corruption.",
+      "Data type sizes are always consistent across architectures.",
+      "Data type sizes only affect text files.",
+      "Data type sizes are not relevant for binary files."
+    ]
+  },
+  {
+    "q": "What is the difference between 'r+' and 'w+' file modes in C?",
+    "o": [
+      "'r+' reads and writes from any position, 'w+' truncates and writes from the beginning.",
+      "'r+' reads only, 'w+' writes only.",
+      "'r+' appends, 'w+' truncates.",
+      "There is no difference."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'binary.dat' contains the short integers 100 and 200 in binary?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"binary.dat\", \"rb\");\n  short a, b;\n  fread(&a, sizeof(short), 1, file);\n  fread(&b, sizeof(short), 1, file);\n  printf(\"%d %d\", a, b);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "100 200",
+      "0 0",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "In C, what is the purpose of the `ftell()` function?",
+    "o": [
+      "To get the current file position indicator.",
+      "To set the file position indicator.",
+      "To check if the file is open.",
+      "To delete the file."
+    ]
+  },
+  {
+    "q": "What is the primary function used to write a character to a file in C?",
+    "o": [
+      "fputc()",
+      "fprintf()",
+      "fwrite()",
+      "fputs()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'data.csv' contains 'name=Alice;age=25;city=London'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"data.csv\", \"r\");\n  char name[20], city[20];\n  int age;\n  fscanf(file, \"name=%[^;];age=%d;city=%s\", name, &age, city);\n  printf(\"Name: %s, Age: %d, City: %s\", name, age, city);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "Name: Alice, Age: 25, City: London",
+      "Name: , Age: 0, City: ",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'rb+' file mode in C?",
+    "o": [
+      "Open for reading and writing in binary mode.",
+      "Open for reading only in binary mode.",
+      "Open for appending in binary mode.",
+      "Open for writing in binary mode."
+    ]
+  },
+  {
+    "q": "Which function is used to read a string from a file up to a newline or EOF in C?",
+    "o": [
+      "fgets()",
+      "fscanf()",
+      "fread()",
+      "fgetc()"
+    ]
+  },
+  {
+    "q": "What happens if you try to modify a file opened in 'r' mode?",
+    "o": [
+      "An error will occur.",
+      "The modification will be ignored.",
+      "The file will be overwritten.",
+      "The data will be appended to the file."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'numbers.txt' contains '1.1,2.2,3.3,4.4,5.5'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"numbers.txt\", \"r\");\n  float nums[5];\n  for (int i = 0; i < 5; i++) {\n    fscanf(file, \"%f,\", &nums[i]);\n  }\n  for (int i = 0; i < 5; i++) {\n    printf(\"%.1f \", nums[i]);\n  }\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "1.1 2.2 3.3 4.4 5.5 ",
+      "0.0 0.0 0.0 0.0 0.0 ",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "When handling binary files, what is the importance of considering the alignment of struct members when reading or writing?",
+    "o": [
+      "Incorrect alignment can lead to data corruption or incorrect data interpretation.",
+      "Alignment is only relevant for text files.",
+      "Alignment is automatically handled by the compiler and doesn't affect file handling.",
+      "Alignment is only used to align text within a file."
+    ]
+  },
+  {
+    "q": "What is the difference between 'a+' and 'ab+' file modes in C?",
+    "o": [
+      "'a+' is text, 'ab+' is binary.",
+      "'a+' reads only, 'ab+' writes only.",
+      "'a+' truncates, 'ab+' appends.",
+      "There is no difference."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'raw.bin' contains the integers 10000 and 20000 in binary?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"raw.bin\", \"rb\");\n  int a, b;\n  fread(&a, sizeof(int), 1, file);\n  fread(&b, sizeof(int), 1, file);\n  printf(\"%d %d\", a, b);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "10000 20000",
+      "0 0",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "In C, what is the purpose of the `fflush()` function?",
+    "o": [
+      "To flush the output buffer of a stream.",
+      "To set the file position indicator.",
+      "To check if the file is open.",
+      "To delete the file."
+    ]
+  },
+  {
+    "q": "What is the primary function used to write a formatted string to a file with variable arguments in C?",
+    "o": [
+      "fprintf()",
+      "fputs()",
+      "fwrite()",
+      "fputc()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'data.txt' contains 'name:Alice;age:25;city:New York'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"data.txt\", \"r\");\n  char name[20], city[20];\n  int age;\n  fscanf(file, \"name:%[^;];age:%d;city:%[^\n]\", name, &age, city);\n  printf(\"Name: %s, Age: %d, City: %s\", name, age, city);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "Name: Alice, Age: 25, City: New York",
+      "Name: , Age: 0, City: ",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'w+' file mode in C?",
+    "o": [
+      "Open for reading and writing, truncating the file to zero length or creating it if it does not exist.",
+      "Open for reading only.",
+      "Open for appending.",
+      "Open for writing only."
+    ]
+  },
+  {
+    "q": "Which function is used to read a string from a file, including spaces, until a newline or EOF in C?",
+    "o": [
+      "fgets()",
+      "fscanf()",
+      "fread()",
+      "fgetc()"
+    ]
+  },
+  {
+    "q": "What happens if you try to read from a file opened in 'w' mode?",
+    "o": [
+      "An error will occur.",
+      "The read operation will be ignored.",
+      "The file will be truncated.",
+      "The program will crash."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'values.txt' contains '1.1 2.2 3.3 4.4 5.5'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"values.txt\", \"r\");\n  float values[5];\n  for (int i = 0; i < 5; i++) {\n    fscanf(file, \"%f\", &values[i]);\n  }\n  for (int i = 0; i < 5; i++) {\n    printf(\"%.1f \", values[i]);\n  }\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "1.1 2.2 3.3 4.4 5.5 ",
+      "0.0 0.0 0.0 0.0 0.0 ",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "When handling binary files with structs, what is the importance of considering the use of bit fields?",
+    "o": [
+      "Bit fields can lead to platform-dependent behavior and incorrect data interpretation.",
+      "Bit fields are only relevant for text files.",
+      "Bit fields are automatically handled by the compiler and don't affect file handling.",
+      "Bit fields are only used to align text within a file."
+    ]
+  },
+  {
+    "q": "What is the difference between 'rb+' and 'wb+' file modes in C?",
+    "o": [
+      "'rb+' reads and writes from any position, 'wb+' truncates and writes from the beginning.",
+      "'rb+' reads only, 'wb+' writes only.",
+      "'rb+' appends, 'wb+' truncates.",
+      "There is no difference."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'binary.bin' contains the long long integers 1234567890123 and 9876543210987 in binary?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"binary.bin\", \"rb\");\n  long long a, b;\n  fread(&a, sizeof(long long), 1, file);\n  fread(&b, sizeof(long long), 1, file);\n  printf(\"%lld %lld\", a, b);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "1234567890123 9876543210987",
+      "0 0",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "In C, what is the purpose of the `feof()` function?",
+    "o": [
+      "To check if the end-of-file indicator is set.",
+      "To set the file position indicator.",
+      "To check if the file is open.",
+      "To delete the file."
+    ]
+  },
+  {
+    "q": "What is the primary function used to write a formatted string to a file with a variable argument list in C?",
+    "o": [
+      "vfprintf()",
+      "fprintf()",
+      "fwrite()",
+      "fputs()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'data.txt' contains 'name=Alice;age=25;city=New York;country=USA'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"data.txt\", \"r\");\n  char name[20], city[20], country[20];\n  int age;\n  fscanf(file, \"name=%[^;];age=%d;city=%[^;];country=%s\", name, &age, city, country);\n  printf(\"Name: %s, Age: %d, City: %s, Country: %s\", name, age, city, country);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "Name: Alice, Age: 25, City: New York, Country: USA",
+      "Name: , Age: 0, City: , Country: ",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'a+' file mode in C?",
+    "o": [
+      "Open for reading and appending.",
+      "Open for reading only.",
+      "Open for writing, creating the file if it does not exist.",
+      "Open for writing only."
+    ]
+  },
+  {
+    "q": "Which function is used to read a string from a file, including spaces, until a specified delimiter or newline in C?",
+    "o": [
+      "fgets()",
+      "fscanf() with custom format specifiers",
+      "fread()",
+      "fgetc()"
+    ]
+  },
+  {
+    "q": "What happens if you try to append data to a file opened in 'r' mode?",
+    "o": [
+      "An error will occur.",
+      "The append operation will be ignored.",
+      "The file will be overwritten.",
+      "The data will be written at the beginning of the file."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'floats.txt' contains '1.1 2.2 3.3 4.4 5.5 6.6'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"floats.txt\", \"r\");\n  float values[6];\n  for (int i = 0; i < 6; i++) {\n    fscanf(file, \"%f\", &values[i]);\n  }\n  for (int i = 0; i < 6; i++) {\n    printf(\"%.1f \", values[i]);\n  }\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "1.1 2.2 3.3 4.4 5.5 6.6 ",
+      "0.0 0.0 0.0 0.0 0.0 0.0 ",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "When handling binary files with structs, what is the importance of considering the use of unions?",
+    "o": [
+      "Unions can lead to platform-dependent behavior and incorrect data interpretation.",
+      "Unions are only relevant for text files.",
+      "Unions are automatically handled by the compiler and don't affect file handling.",
+      "Unions are only used to align text within a file."
+    ]
+  },
+  {
+    "q": "What is the difference between 'wb' and 'wb+' file modes in C?",
+    "o": [
+      "'wb' writes only, 'wb+' reads and writes.",
+      "'wb' reads only, 'wb+' writes only.",
+      "'wb' appends, 'wb+' truncates.",
+      "There is no difference."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'data.bin' contains the double values 123.45 and 678.90 in binary?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"data.bin\", \"rb\");\n  double a, b;\n  fread(&a, sizeof(double), 1, file);\n  fread(&b, sizeof(double), 1, file);\n  printf(\"%.2lf %.2lf\", a, b);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "123.45 678.90",
+      "0.00 0.00",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "In C, what is the purpose of the `ferror()` function?",
+    "o": [
+      "To check if an error occurred on a stream.",
+      "To set the file position indicator.",
+      "To check if the file is open.",
+      "To delete the file."
+    ]
+  },
+  {
+    "q": "What is the primary function used to write a character array (string) to a file without a trailing newline in C?",
+    "o": [
+      "fputs()",
+      "fprintf()",
+      "fwrite()",
+      "fputc()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'config.txt' contains 'user=alice;pass=secret;level=admin'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"config.txt\", \"r\");\n  char user[20], pass[20], level[20];\n  fscanf(file, \"user=%[^;];pass=%[^;];level=%s\", user, pass, level);\n  printf(\"User: %s, Pass: %s, Level: %s\", user, pass, level);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "User: alice, Pass: secret, Level: admin",
+      "User: , Pass: , Level: ",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'r+' file mode in C?",
+    "o": [
+      "Open for reading and writing.",
+      "Open for reading only.",
+      "Open for writing, creating the file if it does not exist.",
+      "Open for appending."
+    ]
+  },
+  {
+    "q": "Which function is used to read a specific number of bytes from a file into a buffer in C?",
+    "o": [
+      "fread()",
+      "fscanf()",
+      "fgets()",
+      "fgetc()"
+    ]
+  },
+  {
+    "q": "What happens if you try to write to a file opened in 'r' mode?",
+    "o": [
+      "An error will occur.",
+      "The write operation will be ignored.",
+      "The file will be overwritten.",
+      "The data will be appended to the file."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'data.txt' contains '1.1,2.2,3.3,4.4,5.5,6.6'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"data.txt\", \"r\");\n  float values[6];\n  for (int i = 0; i < 6; i++) {\n    fscanf(file, \"%f,\", &values[i]);\n  }\n  for (int i = 0; i < 6; i++) {\n    printf(\"%.1f \", values[i]);\n  }\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "1.1 2.2 3.3 4.4 5.5 6.6 ",
+      "0.0 0.0 0.0 0.0 0.0 0.0 ",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "When handling binary files, what is the importance of considering the alignment of struct members when reading or writing complex nested structures?",
+    "o": [
+      "Incorrect alignment can lead to data corruption or incorrect data interpretation, especially in nested structures.",
+      "Alignment is only relevant for text files.",
+      "Alignment is automatically handled by the compiler and doesn't affect file handling.",
+      "Alignment is only used to align text within a file."
+    ]
+  },
+  {
+    "q": "What is the difference between 'rb' and 'r+b' file modes in C?",
+    "o": [
+      "'rb' reads only, 'r+b' reads and writes.",
+      "'rb' is text, 'r+b' is binary.",
+      "'rb' appends, 'r+b' truncates.",
+      "There is no difference."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'bytes.bin' contains the bytes '0x00 0x01 0x02 0x03 0x04 0x05'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"bytes.bin\", \"rb\");\n  unsigned char buffer[6];\n  fread(buffer, sizeof(unsigned char), 6, file);\n  for (int i = 0; i < 6; i++) {\n    printf(\"%02x \", buffer[i]);\n  }\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "00 01 02 03 04 05 ",
+      "0 1 2 3 4 5",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "In C, what is the purpose of the `clearerr()` function?",
+    "o": [
+      "To clear the end-of-file and error indicators for a stream.",
+      "To set the file position indicator.",
+      "To check if the file is open.",
+      "To delete the file."
+    ]
+  },
+  {
+    "q": "What is the primary function used to write a formatted string with a maximum field width to a file in C?",
+    "o": [
+      "fprintf() with width specifiers",
+      "fputs()",
+      "fwrite()",
+      "fputc()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'data.txt' contains 'name=John;age=30;city=London;country=UK'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"data.txt\", \"r\");\n  char name[20], city[20], country[20];\n  int age;\n  fscanf(file, \"name=%[^;];age=%d;city=%[^;];country=%s\", name, &age, city, country);\n  printf(\"Name: %s, Age: %d, City: %s, Country: %s\", name, age, city, country);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "Name: John, Age: 30, City: London, Country: UK",
+      "Name: , Age: 0, City: , Country: ",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'ab+' file mode in C?",
+    "o": [
+      "Open for reading and appending in binary mode.",
+      "Open for reading only in binary mode.",
+      "Open for writing in binary mode.",
+      "Open for reading and writing in text mode."
+    ]
+  },
+  {
+    "q": "Which function is used to read a string from a file, stopping at a specific character or newline, in C?",
+    "o": [
+      "fscanf() with custom format specifiers",
+      "fgets()",
+      "fread()",
+      "fgetc()"
+    ]
+  },
+  {
+    "q": "What happens if you try to read from a file opened in 'a' mode?",
+    "o": [
+      "An error will occur.",
+      "The read operation will be ignored.",
+      "The file will be truncated.",
+      "The program will crash."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'numbers.txt' contains '1.1,2.2,3.3,4.4,5.5,6.6,7.7'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"numbers.txt\", \"r\");\n  float values[7];\n  for (int i = 0; i < 7; i++) {\n    fscanf(file, \"%f,\", &values[i]);\n  }\n  for (int i = 0; i < 7; i++) {\n    printf(\"%.1f \", values[i]);\n  }\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "1.1 2.2 3.3 4.4 5.5 6.6 7.7 ",
+      "0.0 0.0 0.0 0.0 0.0 0.0 0.0 ",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "When handling binary files with structs, what is the importance of considering the use of padding and alignment when reading or writing variable-sized structures?",
+    "o": [
+      "Variable-sized structures with incorrect padding or alignment can lead to data corruption.",
+      "Padding and alignment are only relevant for text files.",
+      "Padding and alignment are automatically handled by the compiler and don't affect file handling.",
+      "Padding and alignment are only used to align text within a file."
+    ]
+  },
+  {
+    "q": "What is the difference between 'wb+' and 'ab+' file modes in C?",
+    "o": [
+      "'wb+' truncates and allows read/write, 'ab+' appends and allows read/write.",
+      "'wb+' reads only, 'ab+' writes only.",
+      "'wb+' appends, 'ab+' truncates.",
+      "There is no difference."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'data.bin' contains the unsigned integers 100000 and 200000 in binary?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"data.bin\", \"rb\");\n  unsigned int a, b;\n  fread(&a, sizeof(unsigned int), 1, file);\n  fread(&b, sizeof(unsigned int), 1, file);\n  printf(\"%u %u\", a, b);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "100000 200000",
+      "0 0",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "In C, what is the purpose of the `rewind()` function?",
+    "o": [
+      "To set the file position indicator to the beginning of the file.",
+      "To check if an error occurred on a stream.",
+      "To check if the file is open.",
+      "To delete the file."
+    ]
+  },
+  {
+    "q": "What is the primary function used to write a block of memory to a file with a specified size in C?",
+    "o": [
+      "fwrite()",
+      "fprintf()",
+      "fputs()",
+      "fputc()"
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'data.txt' contains 'user:Alice,age:25,city:London'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"data.txt\", \"r\");\n  char name[20], city[20];\n  int age;\n  fscanf(file, \"user:%[^,],age:%d,city:%s\", name, &age, city);\n  printf(\"Name: %s, Age: %d, City: %s\", name, age, city);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "Name: Alice, Age: 25, City: London",
+      "Name: , Age: 0, City: ",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "What is the purpose of the 'r+b' file mode in C?",
+    "o": [
+      "Open for reading and writing in binary mode.",
+      "Open for reading only in binary mode.",
+      "Open for writing in binary mode.",
+      "Open for appending in binary mode."
+    ]
+  },
+  {
+    "q": "Which function is used to read a string from a file up to a specified delimiter, excluding the delimiter, in C?",
+    "o": [
+      "fscanf() with custom format specifiers",
+      "fgets()",
+      "fread()",
+      "fgetc()"
+    ]
+  },
+  {
+    "q": "What happens if you try to modify a file opened in 'a' mode?",
+    "o": [
+      "Modifications are written at the end of the file.",
+      "An error will occur.",
+      "The modification will be ignored.",
+      "The file will be overwritten."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'values.txt' contains '1.1;2.2;3.3;4.4;5.5;6.6;7.7;8.8'?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"values.txt\", \"r\");\n  float values[8];\n  for (int i = 0; i < 8; i++) {\n    fscanf(file, \"%f;\", &values[i]);\n  }\n  for (int i = 0; i < 8; i++) {\n    printf(\"%.1f \", values[i]);\n  }\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "1.1 2.2 3.3 4.4 5.5 6.6 7.7 8.8 ",
+      "0.0 0.0 0.0 0.0 0.0 0.0 0.0 0.0 ",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "When handling binary files, what is the importance of considering the use of bitwise operations for data packing and unpacking?",
+    "o": [
+      "Bitwise operations are crucial for efficiently packing and unpacking data in binary files.",
+      "Bitwise operations are only relevant for text files.",
+      "Bitwise operations are automatically handled by the compiler and don't affect file handling.",
+      "Bitwise operations are only used to align text within a file."
+    ]
+  },
+  {
+    "q": "What is the difference between 'w+b' and 'r+b' file modes in C?",
+    "o": [
+      "'w+b' truncates and allows read/write, 'r+b' allows read/write from any position.",
+      "'w+b' reads only, 'r+b' writes only.",
+      "'w+b' appends, 'r+b' truncates.",
+      "There is no difference."
+    ]
+  },
+  {
+    "q": "What is the output of the following C code snippet, assuming 'raw.bin' contains the unsigned long integers 12345678901234 and 98765432109876 in binary?",
+    "c": "#include <stdio.h>\n\nint main() {\n  FILE *file = fopen(\"raw.bin\", \"rb\");\n  unsigned long long a, b;\n  fread(&a, sizeof(unsigned long long), 1, file);\n  fread(&b, sizeof(unsigned long long), 1, file);\n  printf(\"%llu %llu\", a, b);\n  fclose(file);\n  return 0;\n}",
+    "o": [
+      "12345678901234 98765432109876",
+      "0 0",
+      "Error",
+      "Garbage values"
+    ]
+  },
+  {
+    "q": "In C, what is the purpose of the `ftell()` function?",
+    "o": [
+      "To get the current file position indicator.",
+      "To set the file position indicator.",
+      "To check if the file is open.",
+      "To delete the file."
+    ]
+  }
+]
