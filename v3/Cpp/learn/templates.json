@@ -1,0 +1,91 @@
+{
+    "id": "learn_templates",
+    "topicId": "templates",
+    "topicTitle": "Templates and STL",
+    "description": "Write generic code using Templates and leverage the power of the Standard Template Library (STL) for efficient data handling.",
+    "baseKP": 90,
+    "slides": [
+        {
+            "id": "temp_1",
+            "type": "content",
+            "title": "One Code, Any Type 🧬",
+            "content": "# Templates\n\nImagine writing a `sum` function. You'd need one for `int`, one for `float`, one for `double`... Exhausting!\n\n**Templates** allow you to write generic code that works with **any data type**.\n\n```cpp\ntemplate <typename T>\nT sum(T a, T b) {\n    return a + b;\n}\n```\nNow `sum(5, 10)` works, and `sum(5.5, 2.3)` also works!"
+        },
+        {
+            "id": "temp_2",
+            "type": "content",
+            "title": "Function Templates",
+            "content": "# Generic Functions\n\nThe compiler automatically generates the correct function version based on the arguments you pass.\n\n```cpp\ntemplate <typename T>\nT getMax(T a, T b) {\n    return (a > b) ? a : b;\n}\n\nint main() {\n    cout << getMax(10, 20);      // T becomes int\n    cout << getMax(3.14, 2.71);  // T becomes double\n}\n```"
+        },
+        {
+            "id": "temp_3",
+            "type": "content",
+            "title": "Class Templates",
+            "content": "# Generic Classes\n\nYou can also make classes generic. Useful for data structures like stacks or queues.\n\n```cpp\ntemplate <class T>\nclass Box {\n    T value;\npublic:\n    Box(T v) : value(v) {}\n    T getValue() { return value; }\n};\n\nBox<int> intBox(10);\nBox<string> strBox(\"Hello\");\n```\nNote: You must specify the type `<int>` when creating the object."
+        },
+        {
+            "id": "temp_4",
+            "type": "content",
+            "title": "Introduction to STL",
+            "content": "# The Standard Template Library 📚\n\nSTL is a collection of pre-written, optimized templates for common data structures and algorithms.\n\n## Components\n1.  **Containers:** Store data (Vectors, Lists, Maps).\n2.  **Algorithms:** Process data (Sort, Search, Reverse).\n3.  **Iterators:** Traverse data (Like pointers for containers)."
+        },
+        {
+            "id": "temp_5",
+            "type": "content",
+            "title": "Vectors",
+            "content": "# Dynamic Arrays: Vector 📈\n\nUnlike arrays, `std::vector` can grow and shrink dynamically.\n\n```cpp\n#include <vector>\n\nvector<int> numbers;\nnumbers.push_back(10); // Adds 10\nnumbers.push_back(20); // Adds 20\n\ncout << numbers[0];    // Access like array\ncout << numbers.size(); // Get size (2)\n```"
+        },
+        {
+            "id": "temp_quiz_1",
+            "type": "quiz",
+            "title": "Vector Check",
+            "content": "Which method adds an element to the end of a vector?",
+            "quizQuestion": "Method:",
+            "quizOptions": [
+                "add()",
+                "insert()",
+                "push_back()",
+                "append()"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "temp_6",
+            "type": "content",
+            "title": "Iterators",
+            "content": "# Navigating Containers 🧭\n\nIterators are objects that point to elements in a container.\n\n```cpp\nvector<int> v = {1, 2, 3};\nvector<int>::iterator it;\n\nfor(it = v.begin(); it != v.end(); it++) {\n    cout << *it << \" \";\n}\n```\n\nModern C++ (C++11) makes this easier with auto range loops:\n`for(int x : v) cout << x;`"
+        },
+        {
+            "id": "temp_7",
+            "type": "content",
+            "title": "Algorithms",
+            "content": "# Ready-made Logic 🧠\n\nInclude `<algorithm>` to accept the superpowers.\n\n```cpp\n#include <algorithm>\n\nvector<int> v = {5, 1, 9, 3};\n\n// Sorting\nsort(v.begin(), v.end()); \n// v is now {1, 3, 5, 9}\n\n// Finding\nif (binary_search(v.begin(), v.end(), 5)) {\n    cout << \"Found 5!\";\n}\n```"
+        },
+        {
+            "id": "temp_8",
+            "type": "content",
+            "title": "Full Example: STL Power",
+            "content": "# STL in Action\n\n<!-- FULL_CODE_START\n#include <iostream>\n#include <vector>\n#include <algorithm>\n#include <string>\n\nusing namespace std;\n\nint main() {\n    // Vector of strings\n    vector<string> inventory;\n    \n    // Adding items\n    inventory.push_back(\"Sword\");\n    inventory.push_back(\"Potion\");\n    inventory.push_back(\"Shield\");\n    inventory.push_back(\"Apple\");\n    \n    cout << \"--- Unsorted Inventory ---\\n\";\n    for(string item : inventory) {\n         cout << \"- \" << item << endl;\n    }\n    \n    // Sorting alphabetically\n    sort(inventory.begin(), inventory.end());\n    \n    cout << \"\\n--- Sorted Inventory ---\\n\";\n    for(string item : inventory) {\n         cout << \"- \" << item << endl;\n    }\n    \n    // Searching\n    string search = \"Potion\";\n    if (binary_search(inventory.begin(), inventory.end(), search)) {\n        cout << \"\\nFound \" << search << \" in inventory!\\n\";\n    }\n    \n    return 0;\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "temp_quiz_2",
+            "type": "quiz",
+            "title": "Map Check",
+            "content": "Which STL container stores Key-Value pairs?",
+            "quizQuestion": "Container:",
+            "quizOptions": [
+                "vector",
+                "list",
+                "map",
+                "set"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "temp_9",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: Templates & STL 🎓\n\nDon't reinvent the wheel. Use the tools provided!\n\n## Key Takeaways\n- **Templates:** Generic functions (`template <typename T>`) and classes.\n- **STL:** Standard Template Library.\n- **Vector:** Resizable array. Most used container.\n- **Algorithm:** `sort`, `reverse`, `binary_search`.\n- **Iterator:** Pointer-like way to traverse containers.\n\nUsing STL makes you a competitive programmer. Efficient and fast!"
+        }
+    ]
+}

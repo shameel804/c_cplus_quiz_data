@@ -1,0 +1,102 @@
+[
+    {
+        "title": "Lambda Expressions",
+        "ques": "Write a C++ **lambda expression** that accepts two integers and returns their sum. Call it with values 5 and 3.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nint main() {\n    auto sum = [](int a, int b) {\n        return a + b;\n    };\n    cout << \"Sum: \" << sum(5, 3) << endl;\n    return 0;\n}"
+        },
+        "explanation": "Lambdas are anonymous functions. Syntax: `[capture](params) { body }`. They are very useful for short snippets passed to algorithms."
+    },
+    {
+        "title": "Lambda Capture Clauses",
+        "ques": "Explain the difference between `[=]` and `[&]` in a lambda capture clause. Create a lambda that captures a variable `x` by **reference** and modifies it.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 10;\n    auto modify = [&x]() {\n        x = 20; // Modified original x\n    };\n    modify();\n    cout << \"New x: \" << x << endl;\n    return 0;\n}"
+        },
+        "explanation": "`[=]` captures all local variables by value (copy). `[&]` captures them by reference. Specific variables can also be captured like `[&x, y]`."
+    },
+    {
+        "title": "Smart Pointers (unique_ptr)",
+        "ques": "What is a **`unique_ptr`**? Write a snippet to create a `unique_ptr` for an integer and show that it cannot be copied.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\n#include <memory>\nusing namespace std;\n\nint main() {\n    unique_ptr<int> p1 = make_unique<int>(100);\n    // unique_ptr<int> p2 = p1; // Error: Cannot copy\n    cout << *p1 << endl;\n    return 0;\n}"
+        },
+        "explanation": "`unique_ptr` ensures exclusive ownership. It automatically deletes the object when the pointer goes out of scope. Use `std::move` to transfer ownership."
+    },
+    {
+        "title": "Shared Pointer (shared_ptr)",
+        "ques": "Demonstrate **`shared_ptr`**. Create a shared pointer `p1`, then create `p2` from `p1` and print the `use_count()`.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\n#include <memory>\nusing namespace std;\n\nint main() {\n    shared_ptr<int> p1 = make_shared<int>(50);\n    shared_ptr<int> p2 = p1;\n    cout << \"Ref count: \" << p1.use_count() << endl; // Prints 2\n    return 0;\n}"
+        },
+        "explanation": "`shared_ptr` allows shared ownership. The object is destroyed only when the last `shared_ptr` pointing to it is destroyed (reference counting)."
+    },
+    {
+        "title": "Move Semantics (std::move)",
+        "ques": "What is the purpose of **`std::move`**? Show how to move a string `s1` to `s2` and check `s1` afterwards.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\n#include <string>\n#include <utility>\nusing namespace std;\n\nint main() {\n    string s1 = \"Big String\";\n    string s2 = move(s1);\n    cout << \"s2: \" << s2 << endl;\n    cout << \"s1: \" << s1 << endl; // s1 is now empty/valid but unspecified\n    return 0;\n}"
+        },
+        "explanation": "`std::move` casts an object to an rvalue reference, allowing resources to be \"moved\" (transferred) rather than copied, which is efficient for large objects."
+    },
+    {
+        "title": "Auto Keyword",
+        "ques": "Use the **`auto`** keyword to declare variables for an integer `5`, a double `3.14`, and a pointer to int.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "auto i = 5;      // int\nauto d = 3.14;   // double\nint x = 0;\nauto ptr = &x;   // int*"
+        },
+        "explanation": "`auto` tells the compiler to deduce the variable's type from its initializer. It makes code cleaner, especially with complex iterator types."
+    },
+    {
+        "title": "Range-based For Loop with Auto",
+        "ques": "Write a range-based for loop using `auto` (or `const auto&`) to iterate over a map of strings to integers.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "map<string, int> m = {{\"A\", 1}, {\"B\", 2}};\nfor (const auto &pair : m) {\n    cout << pair.first << \": \" << pair.second << endl;\n}"
+        },
+        "explanation": "This is the modern C++ standard for iteration. `const auto &` avoids expensive copies and prevents accidental modification."
+    },
+    {
+        "title": "Enumerators (enum class)",
+        "ques": "Why is **`enum class`** (Scoped Enum) preferred over traditional `enum`? Define a scoped enum `Color` with Red and Blue.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "enum class Color { Red, Blue };\n// Color c = Red; // Error: standard enum behavior\nColor c = Color::Red; // Correct"
+        },
+        "explanation": "`enum class` prevents name clashes (scoping) and implicit conversions to int, making code safer and more strongly typed."
+    },
+    {
+        "title": "Static Assert",
+        "ques": "What is **`static_assert`**? Write a statement that checks at compile-time if the size of `int` is at least 4 bytes.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "static_assert(sizeof(int) >= 4, \"Integers are too small!\");"
+        },
+        "explanation": "`static_assert` performs a check during compilation. If the condition is false, compilation fails with the provided error message."
+    },
+    {
+        "title": "Deleted Functions",
+        "ques": "block access to copy constructor using the **`= delete`** syntax to make a class `Uncopyable`.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "class Uncopyable {\npublic:\n    Uncopyable(const Uncopyable&) = delete;\n    Uncopyable& operator=(const Uncopyable&) = delete;\n};"
+        },
+        "explanation": "`= delete` explicitly disables a function. This is cleaner than the old C++98 hack of making them private and undefined."
+    }
+]

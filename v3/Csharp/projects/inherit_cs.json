@@ -1,0 +1,102 @@
+[
+    {
+        "title": "Basic Inheritance Syntax",
+        "ques": "How do you denote inheritance in C#? Create a class `Employee` and a subclass `Programmer`.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "class Employee {\n    public float salary = 40000;\n}\n\nclass Programmer : Employee {\n    public float bonus = 10000;\n}"
+        },
+        "explanation": "Use the colon `:` symbol. `class Derived : Base`. `Programmer` inherits all non-private members of `Employee`."
+    },
+    {
+        "title": "The 'base' Keyword",
+        "ques": "Use the **`base`** keyword to call the constructor of the base class from a derived class constructor.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "class Base {\n    public Base(int i) { }\n}\n\nclass Derived : Base {\n    public Derived(int i) : base(i) { }\n}"
+        },
+        "explanation": "`base` is used to access members of the base class. `base(args)` calls the parent constructor."
+    },
+    {
+        "title": "Sealed Classes",
+        "ques": "What does the **`sealed`** keyword do? Try to inherit from a sealed class `FinalClass`.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "sealed class FinalClass {\n    // ...\n}\n\n// class Derived : FinalClass {} // Error: cannot derive from sealed type"
+        },
+        "explanation": "A `sealed` class cannot be inherited. It prevents other classes from deriving from it."
+    },
+    {
+        "title": "Method Hiding (new)",
+        "ques": "Demonstrate **Method Hiding** using the `new` keyword to redefine a base class method in the derived class.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "using System;\nclass Base {\n    public void Show() { Console.WriteLine(\"Base\"); }\n}\n\nclass Derived : Base {\n    public new void Show() { Console.WriteLine(\"Derived\"); }\n}"
+        },
+        "explanation": "Using `new` explicitly tells the compiler that you intend to hide the base class member, suppressing the warning."
+    },
+    {
+        "title": "Polymorphism with Array",
+        "ques": "Create an array of base class `Shape` pointers containing `Circle` and `Square` objects. iterate and call a virtual method `Draw`.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "Shape[] shapes = { new Circle(), new Square() };\nforeach (Shape s in shapes) {\n    s.Draw();\n}"
+        },
+        "explanation": "The reference variable `s` (type `Shape`) can point to any derived class object. The overridden `Draw` method of the actual object type is called at runtime."
+    },
+    {
+        "title": "Interface Inheritance",
+        "ques": "Can a class implement **multiple interfaces**? Create a class `SmartPhone` implementing `ICamera` and `IPhone`.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "interface ICamera { void TakePhoto(); }\ninterface IPhone { void Call(); }\n\nclass SmartPhone : ICamera, IPhone {\n    public void TakePhoto() { /*...*/ }\n    public void Call() { /*...*/ }\n}"
+        },
+        "explanation": "C# does not support multiple inheritance of classes, but it supports implementing multiple interfaces."
+    },
+    {
+        "title": "Explicit Interface Implementation",
+        "ques": "If two interfaces have a method with the same name, how do you implement them distinctily? Using **Explicit Interface Implementation**.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "interface I1 { void Show(); }\ninterface I2 { void Show(); }\n\nclass C : I1, I2 {\n    void I1.Show() { Console.WriteLine(\"I1\"); }\n    void I2.Show() { Console.WriteLine(\"I2\"); }\n}"
+        },
+        "explanation": "Prefix the method name with the interface name. These methods are only accessible via an instance of the interface, not the class."
+    },
+    {
+        "title": "is and as Operators",
+        "ques": "Use **`is`** to check if an object is a string, and **`as`** to safely cast an object to a string.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "object obj = \"Hello\";\nif (obj is string) {\n    Console.WriteLine(\"It is a string\");\n}\n\nstring s = obj as string;\nif (s != null) {\n    Console.WriteLine(s);\n}"
+        },
+        "explanation": "`is` returns true/false. `as` returns the casted object or `null` if the cast fails (no exception)."
+    },
+    {
+        "title": "Abstract Properties",
+        "ques": "Can define an **abstract property**? Show syntax in an abstract class `Person`.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "abstract class Person {\n    public abstract string Name { get; set; }\n}"
+        },
+        "explanation": "Yes, abstract properties must be overridden in derived classes using the `override` keyword."
+    },
+    {
+        "title": "Calling Base Method",
+        "ques": "Override a method `Greet` in derived class but call the **base** class implementation inside it.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "public override void Greet() {\n    base.Greet();\n    Console.WriteLine(\" and from Derived\");\n}"
+        },
+        "explanation": "`base.MethodName()` calls the method as defined in the base class."
+    }
+]

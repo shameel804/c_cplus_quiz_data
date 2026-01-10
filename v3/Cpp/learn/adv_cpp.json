@@ -1,0 +1,85 @@
+{
+    "id": "learn_adv_cpp",
+    "topicId": "adv_cpp",
+    "topicTitle": "Advanced C++",
+    "description": "Unlock modern C++ features (C++11/14/17) like Smart Pointers, Lambdas, and Move Semantics for safer and faster code.",
+    "baseKP": 90,
+    "slides": [
+        {
+            "id": "adv_1",
+            "type": "content",
+            "title": "Modern C++ (C++11/14/17)",
+            "content": "# The New Era 🚀\n\nC++ has evolved significantly. Modern C++ focuses on **Safety** and **Performance**.\n\n## Key Features\n- Smart Pointers (No more memory leaks!)\n- Lambda Expressions\n- Auto Type Inference\n- Move Semantics"
+        },
+        {
+            "id": "adv_2",
+            "type": "content",
+            "title": "Smart Pointers: Unique",
+            "content": "# Owning It 🔒\n\n**`std::unique_ptr`**\n- Represents **exclusive ownership**.\n- Cannot be copied, only moved.\n- Automically deletes the object when it goes out of scope.\n\n```cpp\n#include <memory>\n\nunique_ptr<int> p1(new int(5));\n// unique_ptr<int> p2 = p1; // ERROR: Can't copy\nunique_ptr<int> p2 = move(p1); // OK: Ownership transferred\n```"
+        },
+        {
+            "id": "adv_3",
+            "type": "content",
+            "title": "Smart Pointers: Shared",
+            "content": "# Sharing is Caring 🤝\n\n**`std::shared_ptr`**\n- Allows multiple pointers to own the same resource.\n- Uses a **Reference Counter**.\n- Object is deleted only when the LAST shared_ptr is destroyed.\n\n```cpp\nshared_ptr<int> p1 = make_shared<int>(10);\nshared_ptr<int> p2 = p1; // Counter = 2\np1.reset(); // Counter = 1, object still alive\n```"
+        },
+        {
+            "id": "adv_quiz_1",
+            "type": "quiz",
+            "title": "Memory Safety",
+            "content": "What happens if you try to copy a `unique_ptr`?",
+            "quizQuestion": "Result:",
+            "quizOptions": [
+                "It copies the data",
+                "Compiler Error",
+                "Runtime Crash",
+                "It shares ownership"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "adv_4",
+            "type": "content",
+            "title": "Lambda Expressions",
+            "content": "# Anonymous Functions 😶\n\nDefine functions on the fly, often used for short snippets passed to algorithms.\n\n**Syntax:** `[capture](parameters) { body }`\n\n```cpp\nvector<int> v = {1, 2, 3};\nfor_each(v.begin(), v.end(), [](int n) {\n    cout << n * n << \" \";\n});\n```"
+        },
+        {
+            "id": "adv_5",
+            "type": "content",
+            "title": "Move Semantics",
+            "content": "# Moving vs Copying 📦\n\nCopying large objects is slow. **Move Semantics** allow resources (like memory) to be *transferred* from a temporary object to a new one.\n\n- Uses **R-value references** (`&&`).\n- `std::move(obj)` casts `obj` to an r-value, enabling the move constructor.\n\nCritically important for performance in vectors and containers."
+        },
+        {
+            "id": "adv_6",
+            "type": "content",
+            "title": "Auto Keyword",
+            "content": "# Let the Compiler Decide 🤖\n\nThe `auto` keyword deduces the type from the initializer.\n\n```cpp\nauto i = 5;          // int\nauto d = 3.14;       // double\nauto ptr = &i;       // int*\n\n// Very useful for complex types:\n// Instead of: std::map<string, vector<int>>::iterator it = ...\nauto it = myMap.begin(); \n```"
+        },
+        {
+            "id": "adv_7",
+            "type": "content",
+            "title": "Full Example: Modern C++",
+            "content": "# Modern Features Demo\n\n<!-- FULL_CODE_START\n#include <iostream>\n#include <vector>\n#include <memory>\n#include <algorithm>\n\nusing namespace std;\n\nclass Entity {\npublic:\n    Entity() { cout << \"Entity Created\\n\"; }\n    ~Entity() { cout << \"Entity Destroyed\\n\"; }\n    void greet() { cout << \"Hello from Entity!\\n\"; }\n};\n\nint main() {\n    cout << \"--- Smart Pointers ---\\n\";\n    {\n        // Scope block\n        unique_ptr<Entity> entity = make_unique<Entity>();\n        entity->greet();\n    } \n    // Entity is automatically destroyed here because scope ended!\n    cout << \"(Entity should be destroyed above)\\n\";\n    \n    cout << \"\\n--- Lambdas & Auto ---\\n\";\n    vector<int> numbers = {5, 2, 8, 1, 9};\n    \n    // Sort using lambda\n    sort(numbers.begin(), numbers.end(), [](int a, int b) {\n        return a > b; // Descending order\n    });\n    \n    cout << \"Sorted: \";\n    for(auto n : numbers) {\n        cout << n << \" \";\n    }\n    cout << endl;\n    \n    return 0;\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "adv_quiz_2",
+            "type": "quiz",
+            "title": "Auto Check",
+            "content": "`auto x = 'A';` What type is x?",
+            "quizQuestion": "Type of x:",
+            "quizOptions": [
+                "int",
+                "char",
+                "string",
+                "float"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "adv_8",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: Advanced C++ 🎓\n\nModern C++ is safer and more expressive.\n\n## Key Takeaways\n- **Smart Pointers:** `unique_ptr` and `shared_ptr` handle memory for you.\n- **Lambdas:** Inline functions for cleaner code.\n- **Auto:** Saves typing complex types.\n- **Move Semantics:** Optimizes performance by avoiding deep copies.\n\nYou have now covered the spectrum of C++ from basics to advanced features! Keep coding! 🚀"
+        }
+    ]
+}

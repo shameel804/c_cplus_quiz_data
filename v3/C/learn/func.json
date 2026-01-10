@@ -1,0 +1,97 @@
+{
+    "id": "learn_func",
+    "topicId": "func",
+    "topicTitle": "Functions",
+    "description": "Discover how to modularize your code using functions, perform recursion, and understand variable scope.",
+    "baseKP": 65,
+    "slides": [
+        {
+            "id": "func_1",
+            "type": "content",
+            "title": "Divide and Conquer",
+            "content": "# Functions 🧩\n\nA function is a block of code that performs a specific task. Instead of writing the same code again and again, you write a function once and **call** it whenever needed.\n\n## Why use Functions?\n- **Reusability:** Write once, use everywhere.\n- **Modularity:** Break complex problems into smaller, manageable chunks.\n- **Maintenance:** Easier to debug and update.\n- **Abstraction:** Hide implementation details from the user."
+        },
+        {
+            "id": "func_2",
+            "type": "content",
+            "title": "Defining a Function",
+            "content": "# Anatomy of a Function 🧪\n\n```c\nreturn_type function_name(parameter_list) {\n    // body of the function\n    return value;\n}\n```\n\n## Components\n1.  **Return Type:** Data type of the value returned (e.g., `int`, `void`).\n2.  **Function Name:** Unique identifier (e.g., `calculateSum`).\n3.  **Parameters:** Inputs to the function (optional).\n4.  **Body:** Statements to execute.\n\n```c\nint add(int a, int b) {\n    return a + b;\n}\n```"
+        },
+        {
+            "id": "func_3",
+            "type": "content",
+            "title": "Declaration vs Definition",
+            "content": "# The Promise and The Action 🤝\n\n## Declaration (Prototype)\nTells the compiler about the function's name and types. Usually at the top.\n```c\nint square(int n); \n```\n\n## Definition\nThe actual code block.\n```c\nint square(int n) {\n    return n * n;\n}\n```\n\n## Call\nExecuting the function.\n```c\nint result = square(5);\n```"
+        },
+        {
+            "id": "func_4",
+            "type": "content",
+            "title": "Call by Value",
+            "content": "# Passing Data 📨\n\nIn C, arguments are passed by **value** by default. This means a *copy* of the data is sent to the function.\n\n```c\nvoid modify(int x) {\n    x = 100; // Changes only the copy\n}\n\nint main() {\n    int num = 5;\n    modify(num);\n    // num is STILL 5 here!\n}\n```\nThe original variable `num` remains unchanged because `x` was just a copy."
+        },
+        {
+            "id": "func_quiz_1",
+            "type": "quiz",
+            "title": "Return Check",
+            "content": "What keyword is used to send a value back from a function?",
+            "quizQuestion": "Keyword:",
+            "quizOptions": [
+                "send",
+                "break",
+                "return",
+                "back"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "func_5",
+            "type": "content",
+            "title": "Scope and Lifetime",
+            "content": "# Where Variables Live 🏠\n\n## Local Variables\n- Declared inside a function.\n- Accessible **only** within that function.\n- Created when function starts, destroyed when it ends.\n\n## Global Variables\n- Declared outside any function.\n- Accessible by **all** functions.\n- Exist for the entire program duration.\n\n> ⚠️ **Best Practice:** Avoid global variables when possible. They make debugging harder!"
+        },
+        {
+            "id": "func_6",
+            "type": "content",
+            "title": "Storage Classes",
+            "content": "# Variable Properties 🗄️\n\nC has 4 storage classes defining scope, lifetime, and visibility.\n\n1.  **auto:** Default for local variables.\n2.  **extern:** Says \"variable is defined elsewhere\" (global).\n3.  **static:** \n    - **Local static:** Retains value between function calls.\n    - **Global static:** Limits scope to the current file only.\n4.  **register:** Suggests storing in CPU register for speed (rarely used now)."
+        },
+        {
+            "id": "func_7",
+            "type": "content",
+            "title": "Recursion",
+            "content": "# Functions calling Functions ♾️\n\n**Recursion** is when a function calls itself. It needs a **Base Case** to stop, otherwise it causes a stack overflow.\n\n**Example: Factorial**\n```c\nint factorial(int n) {\n    if (n == 0) return 1; // Base case\n    return n * factorial(n - 1); // Recursive call\n}\n```\n`factorial(3)` calls `3 * factorial(2)` -> `2 * factorial(1)` -> `1 * factorial(0)`."
+        },
+        {
+            "id": "func_quiz_2",
+            "type": "quiz",
+            "title": "Recursion Risk",
+            "content": "What happens if a recursive function lacks a base case?",
+            "quizQuestion": "Consequence:",
+            "quizOptions": [
+                "It works normally",
+                "Returns 0",
+                "Compiler Error",
+                "Stack Overflow (Crash)"
+            ],
+            "correctOptionIndex": 3
+        },
+        {
+            "id": "func_8",
+            "type": "content",
+            "title": "Math Functions",
+            "content": "# Built-in Power 🔋\n\nC provides many standard functions in `<math.h>`.\n\n- `sqrt(x)`: Square root.\n- `pow(x, y)`: Power (x^y).\n- `ceil(x)`: Roundup.\n- `floor(x)`: Round down.\n- `abs(x)`: Absolute value (in `<stdlib.h>`).\n\nDon't reinvent the wheel! Use standard libraries."
+        },
+        {
+            "id": "func_9",
+            "type": "content",
+            "title": "Full Example",
+            "content": "# Putting it all Together\n\nLet's see recursion and static variables in action.\n\n<!-- FULL_CODE_START\n#include <stdio.h>\n\n// Function Declaration\nint factorial(int n);\nvoid countCalls();\n\nint main() {\n    int num = 5;\n    \n    printf(\"Calculating factorial of %d...\\n\", num);\n    int result = factorial(num);\n    printf(\"Factorial of %d is %d\\n\", num, result);\n    \n    printf(\"\\n--- Testing Static Variable ---\\n\");\n    countCalls();\n    countCalls();\n    countCalls();\n    \n    return 0;\n}\n\n// Recursive Function Definition\nint factorial(int n) {\n    if (n <= 1)\n        return 1;\n    else\n        return n * factorial(n - 1);\n}\n\n// Static Variable Demo\nvoid countCalls() {\n    // Static variable is initialized only ONCE\n    // It keeps its value between calls\n    static int count = 0;\n    count++;\n    printf(\"This function has been called %d times\\n\", count);\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "func_10",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: Functions 🎓\n\nFunctions are the building blocks of structured programming.\n\n## Key Takeaways\n- **Defintion:** Return Type + Name + Parameters.\n- **Prototype:** Declares the function signature.\n- **Call by Value:** Variables are copied, original is safe.\n- **Scope:** Variables are local by default.\n- **Recursion:** A function calling itself matches many mathematical problems.\n- **Static:** Variables that remember their past.\n\nNext, we will explore **Arrays**, allowing us to store multiple values in a single variable!"
+        }
+    ]
+}

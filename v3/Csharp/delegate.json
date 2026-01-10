@@ -1,0 +1,6585 @@
+[
+  {
+    "q": "What is a delegate in C#?",
+    "type": "mcq",
+    "o": [
+      "A type-safe function pointer",
+      "A class type",
+      "An interface",
+      "A variable"
+    ]
+  },
+  {
+    "q": "Delegates hold references to methods.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "The ______ keyword declares a delegate type.",
+    "type": "fill_blank",
+    "answers": [
+      "delegate"
+    ],
+    "other_options": [
+      "func",
+      "action",
+      "event"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "delegate void Greet();\nstatic void SayHello() => Console.Write(\"Hello\");\nGreet g = SayHello;\ng();",
+    "o": [
+      "Hello",
+      "Error",
+      "Greet",
+      "null"
+    ]
+  },
+  {
+    "q": "Match delegate concepts:",
+    "type": "match",
+    "left": [
+      "Delegate",
+      "Instance",
+      "Invoke",
+      "Multicast"
+    ],
+    "right": [
+      "Type definition",
+      "Method reference",
+      "Call method",
+      "Multiple methods"
+    ]
+  },
+  {
+    "q": "What is a delegate signature?",
+    "type": "mcq",
+    "o": [
+      "Return type and parameter list",
+      "Method name only",
+      "Class type",
+      "Access modifier"
+    ]
+  },
+  {
+    "q": "Delegate signature must match the target method signature.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "delegate int MathOp(int a, int b);\nstatic int Add(int x, int y) => x + y;\nMathOp op = Add;\nConsole.WriteLine(op(3, 4));",
+    "o": [
+      "7",
+      "Error",
+      "34",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange delegate usage:",
+    "type": "rearrange",
+    "words": [
+      "Declare delegate type",
+      "Create method matching signature",
+      "Assign method to delegate",
+      "Invoke delegate"
+    ]
+  },
+  {
+    "q": "What is a multicast delegate?",
+    "type": "mcq",
+    "o": [
+      "A delegate that holds multiple method references",
+      "A single method delegate",
+      "A static delegate",
+      "An event delegate"
+    ]
+  },
+  {
+    "q": "The += operator adds methods to a delegate.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "delegate void Notify();\nstatic void A() => Console.Write(\"A\");\nstatic void B() => Console.Write(\"B\");\nNotify n = A;\nn += B;\nn();",
+    "o": [
+      "AB",
+      "A",
+      "B",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ operator removes methods from a delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "-="
+    ],
+    "other_options": [
+      "+=",
+      "-",
+      "remove"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "delegate void Notify();\nstatic void A() => Console.Write(\"A\");\nstatic void B() => Console.Write(\"B\");\nNotify n = A;\nn += B;\nn -= A;\nn();",
+    "o": [
+      "B",
+      "A",
+      "AB",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match multicast operations:",
+    "type": "match",
+    "left": [
+      "+=",
+      "-=",
+      "Invoke",
+      "null check"
+    ],
+    "right": [
+      "Add method",
+      "Remove method",
+      "Call all",
+      "Before invoke"
+    ]
+  },
+  {
+    "q": "What is the Action delegate?",
+    "type": "mcq",
+    "o": [
+      "A built-in delegate for void-returning methods",
+      "A returning delegate",
+      "An event type",
+      "A class type"
+    ]
+  },
+  {
+    "q": "Action<T> accepts up to 16 type parameters.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Action<string> print = s => Console.Write(s);\nprint(\"Hello\");",
+    "o": [
+      "Hello",
+      "Error",
+      "Action",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ delegate returns a value.",
+    "type": "fill_blank",
+    "answers": [
+      "Func"
+    ],
+    "other_options": [
+      "Action",
+      "Predicate",
+      "Event"
+    ]
+  },
+  {
+    "q": "What is the Func delegate?",
+    "type": "mcq",
+    "o": [
+      "A built-in delegate for methods that return a value",
+      "A void delegate",
+      "An event type",
+      "A class type"
+    ]
+  },
+  {
+    "q": "Func's last type parameter is the return type.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Func<int, int, int> add = (a, b) => a + b;\nConsole.WriteLine(add(2, 3));",
+    "o": [
+      "5",
+      "Error",
+      "23",
+      "Func"
+    ]
+  },
+  {
+    "q": "Match built-in delegates:",
+    "type": "match",
+    "left": [
+      "Action",
+      "Func",
+      "Predicate",
+      "EventHandler"
+    ],
+    "right": [
+      "Void return",
+      "Has return",
+      "Returns bool",
+      "Event pattern"
+    ]
+  },
+  {
+    "q": "What is the Predicate delegate?",
+    "type": "mcq",
+    "o": [
+      "A delegate that takes one parameter and returns bool",
+      "A void delegate",
+      "A value delegate",
+      "An event delegate"
+    ]
+  },
+  {
+    "q": "Rearrange delegate types by return:",
+    "type": "rearrange",
+    "words": [
+      "Action = void",
+      "Predicate = bool",
+      "Func = any type",
+      "Custom = defined"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Predicate<int> isEven = n => n % 2 == 0;\nConsole.WriteLine(isEven(4));",
+    "o": [
+      "True",
+      "False",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is a lambda expression?",
+    "type": "mcq",
+    "o": [
+      "An anonymous function using => syntax",
+      "A named method",
+      "A class",
+      "An interface"
+    ]
+  },
+  {
+    "q": "Lambda expressions create delegate instances inline.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(5));",
+    "o": [
+      "25",
+      "5",
+      "Error",
+      "10"
+    ]
+  },
+  {
+    "q": "The ______ operator separates lambda parameters from body.",
+    "type": "fill_blank",
+    "answers": [
+      "=>"
+    ],
+    "other_options": [
+      "->",
+      "::",
+      "?"
+    ]
+  },
+  {
+    "q": "What is an expression lambda?",
+    "type": "mcq",
+    "o": [
+      "A lambda with a single expression body",
+      "A lambda with braces",
+      "A named method",
+      "A class method"
+    ]
+  },
+  {
+    "q": "Match lambda types:",
+    "type": "match",
+    "left": [
+      "Expression lambda",
+      "Statement lambda",
+      "No parameters",
+      "Multiple parameters"
+    ],
+    "right": [
+      "x => x + 1",
+      "x => { return x; }",
+      "() => 42",
+      "(x, y) => x + y"
+    ]
+  },
+  {
+    "q": "What is a statement lambda?",
+    "type": "mcq",
+    "o": [
+      "A lambda with a block body using braces",
+      "A single expression",
+      "A named method",
+      "An interface"
+    ]
+  },
+  {
+    "q": "Statement lambdas require braces and explicit return.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Func<int, int> f = x => {\n    int result = x * 2;\n    return result + 1;\n};\nConsole.WriteLine(f(3));",
+    "o": [
+      "7",
+      "6",
+      "Error",
+      "3"
+    ]
+  },
+  {
+    "q": "Rearrange lambda complexity:",
+    "type": "rearrange",
+    "words": [
+      "Expression: single expr",
+      "Statement: multiple lines",
+      "Block: braces required",
+      "Return: explicit if block"
+    ]
+  },
+  {
+    "q": "What is variable capture in lambdas?",
+    "type": "mcq",
+    "o": [
+      "Lambdas accessing outer scope variables",
+      "Creating variables",
+      "Deleting variables",
+      "Static access"
+    ]
+  },
+  {
+    "q": "Captured variables have extended lifetime.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int factor = 2;\nFunc<int, int> multiply = x => x * factor;\nfactor = 3;\nConsole.WriteLine(multiply(5));",
+    "o": [
+      "15",
+      "10",
+      "Error",
+      "5"
+    ]
+  },
+  {
+    "q": "Lambdas capture variables by ______.",
+    "type": "fill_blank",
+    "answers": [
+      "reference"
+    ],
+    "other_options": [
+      "value",
+      "copy",
+      "pointer"
+    ]
+  },
+  {
+    "q": "What is a closure?",
+    "type": "mcq",
+    "o": [
+      "A lambda that captures variables from its enclosing scope",
+      "A closed class",
+      "A sealed method",
+      "An interface"
+    ]
+  },
+  {
+    "q": "Match closure concepts:",
+    "type": "match",
+    "left": [
+      "Closure",
+      "Captured variable",
+      "Lifetime",
+      "Scope"
+    ],
+    "right": [
+      "Lambda + variables",
+      "Referenced from outer",
+      "Extended",
+      "Where declared"
+    ]
+  },
+  {
+    "q": "What is an event in C#?",
+    "type": "mcq",
+    "o": [
+      "A notification mechanism using delegates",
+      "A method call",
+      "A class type",
+      "A variable"
+    ]
+  },
+  {
+    "q": "Events restrict delegate invocation to the declaring class.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "The ______ keyword declares an event.",
+    "type": "fill_blank",
+    "answers": [
+      "event"
+    ],
+    "other_options": [
+      "delegate",
+      "action",
+      "notify"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Publisher {\n    public event Action OnNotify;\n    public void Notify() => OnNotify?.Invoke();\n}\nvar p = new Publisher();\np.OnNotify += () => Console.Write(\"Notified\");\np.Notify();",
+    "o": [
+      "Notified",
+      "Error",
+      "Publisher",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange event pattern:",
+    "type": "rearrange",
+    "words": [
+      "Declare event",
+      "Subscribe with +=",
+      "Publisher raises event",
+      "Subscribers receive notification"
+    ]
+  },
+  {
+    "q": "What is the publisher-subscriber pattern?",
+    "type": "mcq",
+    "o": [
+      "Publisher raises events, subscribers handle them",
+      "Direct method calls",
+      "Interface implementation",
+      "Inheritance"
+    ]
+  },
+  {
+    "q": "Events enable loose coupling between components.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match event roles:",
+    "type": "match",
+    "left": [
+      "Publisher",
+      "Subscriber",
+      "Event",
+      "Handler"
+    ],
+    "right": [
+      "Raises event",
+      "Listens",
+      "Notification",
+      "Method called"
+    ]
+  },
+  {
+    "q": "What is EventHandler<T>?",
+    "type": "mcq",
+    "o": [
+      "A standard delegate for events with data",
+      "A void delegate",
+      "A class type",
+      "An interface"
+    ]
+  },
+  {
+    "q": "EventHandler requires specific signature (object sender, EventArgs e).",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class MyEventArgs : EventArgs { public string Message; }\nclass Publisher {\n    public event EventHandler<MyEventArgs> OnMessage;\n    public void Send(string msg) => OnMessage?.Invoke(this, new MyEventArgs { Message = msg });\n}\nvar p = new Publisher();\np.OnMessage += (s, e) => Console.Write(e.Message);\np.Send(\"Hello\");",
+    "o": [
+      "Hello",
+      "Error",
+      "MyEventArgs",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ class is the base for event data.",
+    "type": "fill_blank",
+    "answers": [
+      "EventArgs"
+    ],
+    "other_options": [
+      "EventData",
+      "Args",
+      "EventInfo"
+    ]
+  },
+  {
+    "q": "What is EventArgs.Empty?",
+    "type": "mcq",
+    "o": [
+      "A reusable empty EventArgs instance",
+      "A null value",
+      "An error value",
+      "A default constructor"
+    ]
+  },
+  {
+    "q": "Use EventArgs.Empty when no data is needed.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match EventHandler variations:",
+    "type": "match",
+    "left": [
+      "EventHandler",
+      "EventHandler<T>",
+      "Custom delegate",
+      "Action"
+    ],
+    "right": [
+      "Standard pattern",
+      "Generic with data",
+      "Full control",
+      "Simple, no sender"
+    ]
+  },
+  {
+    "q": "Rearrange EventHandler usage:",
+    "type": "rearrange",
+    "words": [
+      "Create EventArgs subclass",
+      "Declare EventHandler<T>",
+      "Raise with sender and args",
+      "Handle in subscriber"
+    ]
+  },
+  {
+    "q": "What is event accessor syntax?",
+    "type": "mcq",
+    "o": [
+      "Custom add and remove accessors for events",
+      "Property syntax",
+      "Method syntax",
+      "Field syntax"
+    ]
+  },
+  {
+    "q": "Event accessors allow custom subscription logic.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Publisher {\n    private Action handler;\n    public event Action OnEvent {\n        add { handler += value; Console.Write(\"Added \"); }\n        remove { handler -= value; }\n    }\n    public void Raise() => handler?.Invoke();\n}\nvar p = new Publisher();\np.OnEvent += () => Console.Write(\"Event\");\np.Raise();",
+    "o": [
+      "Added Event",
+      "Event Added",
+      "Event",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ accessor handles unsubscription.",
+    "type": "fill_blank",
+    "answers": [
+      "remove"
+    ],
+    "other_options": [
+      "add",
+      "delete",
+      "unsubscribe"
+    ]
+  },
+  {
+    "q": "What is invoke null check pattern?",
+    "type": "mcq",
+    "o": [
+      "Using ?. to safely invoke delegate",
+      "Checking for errors",
+      "Validating input",
+      "Exception handling"
+    ]
+  },
+  {
+    "q": "The ?. operator provides null-safe event invocation.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match invocation patterns:",
+    "type": "match",
+    "left": [
+      "?.Invoke()",
+      "if != null",
+      "GetInvocationList",
+      "BeginInvoke"
+    ],
+    "right": [
+      "Null-safe",
+      "Traditional check",
+      "List handlers",
+      "Async (obsolete)"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "event Action OnEvent;\nOnEvent?.Invoke();\nConsole.Write(\"No error\");",
+    "o": [
+      "No error",
+      "NullReferenceException",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "What is anonymous method syntax?",
+    "type": "mcq",
+    "o": [
+      "Using delegate keyword with inline method body",
+      "Named method",
+      "Lambda expression",
+      "Static method"
+    ]
+  },
+  {
+    "q": "Anonymous methods were introduced before lambdas.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Action<string> print = delegate(string s) { Console.Write(s); };\nprint(\"Hello\");",
+    "o": [
+      "Hello",
+      "Error",
+      "delegate",
+      "null"
+    ]
+  },
+  {
+    "q": "Lambdas are preferred over ______ methods.",
+    "type": "fill_blank",
+    "answers": [
+      "anonymous"
+    ],
+    "other_options": [
+      "named",
+      "static",
+      "virtual"
+    ]
+  },
+  {
+    "q": "Rearrange delegate evolution:",
+    "type": "rearrange",
+    "words": [
+      "Named delegates (C# 1)",
+      "Anonymous methods (C# 2)",
+      "Lambda expressions (C# 3)",
+      "Local functions (C# 7)"
+    ]
+  },
+  {
+    "q": "What is delegate covariance?",
+    "type": "mcq",
+    "o": [
+      "Delegate can return more derived type",
+      "Delegate can take more derived parameter",
+      "No variance",
+      "Error checking"
+    ]
+  },
+  {
+    "q": "Func<out T> is covariant in return type.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is delegate contravariance?",
+    "type": "mcq",
+    "o": [
+      "Delegate can accept less derived parameter type",
+      "Delegate can return less derived",
+      "No variance",
+      "Error checking"
+    ]
+  },
+  {
+    "q": "Action<in T> is contravariant in parameter.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match delegate variance:",
+    "type": "match",
+    "left": [
+      "Covariance",
+      "Contravariance",
+      "Return type",
+      "Parameter type"
+    ],
+    "right": [
+      "out",
+      "in",
+      "Covariant",
+      "Contravariant"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Animal { }\nclass Dog : Animal { }\nFunc<Dog> dogFactory = () => new Dog();\nFunc<Animal> animalFactory = dogFactory;\nConsole.Write(animalFactory().GetType().Name);",
+    "o": [
+      "Dog",
+      "Animal",
+      "Error",
+      "Func"
+    ]
+  },
+  {
+    "q": "Rearrange variance rules:",
+    "type": "rearrange",
+    "words": [
+      "out = return position",
+      "in = parameter position",
+      "Covariant: derived to base",
+      "Contravariant: base to derived"
+    ]
+  },
+  {
+    "q": "What is GetInvocationList?",
+    "type": "mcq",
+    "o": [
+      "Gets all delegates in a multicast delegate",
+      "Invokes all delegates",
+      "Removes delegates",
+      "Adds delegates"
+    ]
+  },
+  {
+    "q": "GetInvocationList returns Delegate array.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Action a = () => Console.Write(\"1\");\na += () => Console.Write(\"2\");\nConsole.Write(a.GetInvocationList().Length);",
+    "o": [
+      "2",
+      "1",
+      "Error",
+      "12"
+    ]
+  },
+  {
+    "q": "The ______ method returns the target of a delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "Target"
+    ],
+    "other_options": [
+      "Method",
+      "Object",
+      "Invoke"
+    ]
+  },
+  {
+    "q": "What is Delegate.Combine?",
+    "type": "mcq",
+    "o": [
+      "Combines multiple delegates into one",
+      "Splits delegates",
+      "Invokes delegates",
+      "Removes delegates"
+    ]
+  },
+  {
+    "q": "Match delegate operations:",
+    "type": "match",
+    "left": [
+      "Combine",
+      "Remove",
+      "Invoke",
+      "Clone"
+    ],
+    "right": [
+      "Merge delegates",
+      "Subtract handler",
+      "Execute all",
+      "Copy delegate"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Action a = () => Console.Write(\"A\");\nAction b = () => Console.Write(\"B\");\nAction combined = (Action)Delegate.Combine(a, b);\ncombined?.Invoke();",
+    "o": [
+      "AB",
+      "A",
+      "B",
+      "Error"
+    ]
+  },
+  {
+    "q": "Delegate.Remove is equivalent to -=.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Rearrange delegate operations:",
+    "type": "rearrange",
+    "words": [
+      "Create delegates",
+      "Combine with +=/Combine",
+      "Remove with -=/Remove",
+      "Invoke remaining"
+    ]
+  },
+  {
+    "q": "What is local function?",
+    "type": "mcq",
+    "o": [
+      "A method defined inside another method",
+      "A global function",
+      "A static method",
+      "A lambda"
+    ]
+  },
+  {
+    "q": "Local functions can capture local variables.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "void Outer()\n{\n    int x = 5;\n    int Inner(int y) => x + y;\n    Console.Write(Inner(3));\n}\nOuter();",
+    "o": [
+      "8",
+      "5",
+      "3",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ modifier prevents local function allocation.",
+    "type": "fill_blank",
+    "answers": [
+      "static"
+    ],
+    "other_options": [
+      "readonly",
+      "const",
+      "sealed"
+    ]
+  },
+  {
+    "q": "Static local functions cannot capture variables.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match local function features:",
+    "type": "match",
+    "left": [
+      "Local function",
+      "Static local",
+      "Recursive",
+      "Parameters"
+    ],
+    "right": [
+      "Nested method",
+      "No capture",
+      "Can self-call",
+      "Like normal method"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int Factorial(int n)\n{\n    int Compute(int x) => x <= 1 ? 1 : x * Compute(x - 1);\n    return Compute(n);\n}\nConsole.Write(Factorial(5));",
+    "o": [
+      "120",
+      "5",
+      "Error",
+      "24"
+    ]
+  },
+  {
+    "q": "Rearrange local function benefits:",
+    "type": "rearrange",
+    "words": [
+      "Encapsulate helper logic",
+      "Access outer variables",
+      "Avoid class pollution",
+      "Better performance than lambdas"
+    ]
+  },
+  {
+    "q": "What is expression-bodied event?",
+    "type": "mcq",
+    "o": [
+      "Using => for event accessors",
+      "Lambda events",
+      "Static events",
+      "Abstract events"
+    ]
+  },
+  {
+    "q": "Expression-bodied accessors work with events.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is weak event pattern?",
+    "type": "mcq",
+    "o": [
+      "Preventing memory leaks from event subscriptions",
+      "Weak typing",
+      "Error handling",
+      "Performance pattern"
+    ]
+  },
+  {
+    "q": "Strong references from events can cause memory leaks.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match event memory patterns:",
+    "type": "match",
+    "left": [
+      "Strong reference",
+      "Weak reference",
+      "Memory leak",
+      "Unsubscribe"
+    ],
+    "right": [
+      "Default behavior",
+      "WeakEventManager",
+      "Subscriber outlives",
+      "Proper cleanup"
+    ]
+  },
+  {
+    "q": "Unsubscribing with -= prevents memory leaks.",
+    "type": "fill_blank",
+    "answers": [
+      "-="
+    ],
+    "other_options": [
+      "+=",
+      "dispose",
+      "clear"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Publisher {\n    public event Action OnEvent;\n    public void Clear() => OnEvent = null;\n}\nvar p = new Publisher();\np.OnEvent += () => Console.Write(\"A\");\np.Clear();\np.OnEvent?.Invoke();\nConsole.Write(\"Done\");",
+    "o": [
+      "Done",
+      "ADone",
+      "A",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange event cleanup:",
+    "type": "rearrange",
+    "words": [
+      "Subscribe when needed",
+      "Use component lifecycle",
+      "Unsubscribe before disposal",
+      "Set to null if owner"
+    ]
+  },
+  {
+    "q": "What is method group conversion?",
+    "type": "mcq",
+    "o": [
+      "Implicitly converting method name to delegate",
+      "Grouping methods",
+      "Method overloading",
+      "Type conversion"
+    ]
+  },
+  {
+    "q": "Method groups can be assigned to compatible delegates.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "static int Double(int x) => x * 2;\nFunc<int, int> f = Double;\nConsole.Write(f(5));",
+    "o": [
+      "10",
+      "5",
+      "Error",
+      "Double"
+    ]
+  },
+  {
+    "q": "Method group syntax is cleaner than ______.",
+    "type": "fill_blank",
+    "answers": [
+      "new delegate"
+    ],
+    "other_options": [
+      "lambda",
+      "anonymous",
+      "static"
+    ]
+  },
+  {
+    "q": "Match delegate creation styles:",
+    "type": "match",
+    "left": [
+      "Method group",
+      "Lambda",
+      "Anonymous method",
+      "new Delegate()"
+    ],
+    "right": [
+      "MethodName",
+      "x => expr",
+      "delegate { }",
+      "Explicit construction"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "static void Print(string s) => Console.Write(s);\nAction<string> action = Print;\nnew List<string> { \"A\", \"B\", \"C\" }.ForEach(action);",
+    "o": [
+      "ABC",
+      "A",
+      "Error",
+      "List"
+    ]
+  },
+  {
+    "q": "Rearrange delegate invocation styles:",
+    "type": "rearrange",
+    "words": [
+      "Direct call: d()",
+      "Invoke: d.Invoke()",
+      "Null-safe: d?.Invoke()",
+      "DynamicInvoke for late binding"
+    ]
+  },
+  {
+    "q": "What is DynamicInvoke?",
+    "type": "mcq",
+    "o": [
+      "Invoking delegate with object[] parameters",
+      "Static invocation",
+      "Type-safe invoke",
+      "Error handling"
+    ]
+  },
+  {
+    "q": "DynamicInvoke uses reflection and is slower.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match invocation methods:",
+    "type": "match",
+    "left": [
+      "Invoke",
+      "DynamicInvoke",
+      "BeginInvoke",
+      "EndInvoke"
+    ],
+    "right": [
+      "Type-safe",
+      "Reflection-based",
+      "Async (obsolete)",
+      "Complete async"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Func<int, int, int> add = (a, b) => a + b;\nvar result = add.DynamicInvoke(3, 4);\nConsole.Write(result);",
+    "o": [
+      "7",
+      "Error",
+      "null",
+      "34"
+    ]
+  },
+  {
+    "q": "Prefer strongly-typed invoke over ______.",
+    "type": "fill_blank",
+    "answers": [
+      "DynamicInvoke"
+    ],
+    "other_options": [
+      "Invoke",
+      "Call",
+      "Execute"
+    ]
+  },
+  {
+    "q": "What is async delegate pattern?",
+    "type": "mcq",
+    "o": [
+      "Using async/await with Func<Task>",
+      "BeginInvoke/EndInvoke",
+      "Synchronous calls",
+      "Error handling"
+    ]
+  },
+  {
+    "q": "Func<Task> enables async delegate patterns.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Func<Task> asyncAction = async () => {\n    await Task.Delay(1);\n    Console.Write(\"Done\");\n};\nawait asyncAction();",
+    "o": [
+      "Done",
+      "Error",
+      "Task",
+      "null"
+    ]
+  },
+  {
+    "q": "Match async delegate types:",
+    "type": "match",
+    "left": [
+      "Func<Task>",
+      "Func<Task<T>>",
+      "Action (async void)",
+      "EventHandler async"
+    ],
+    "right": [
+      "Async no result",
+      "Async with result",
+      "Fire and forget",
+      "Use carefully"
+    ]
+  },
+  {
+    "q": "Rearrange async event handling:",
+    "type": "rearrange",
+    "words": [
+      "Define async handler",
+      "Subscribe to event",
+      "Event raised",
+      "Handler awaits async work"
+    ]
+  },
+  {
+    "q": "What is expression tree?",
+    "type": "mcq",
+    "o": [
+      "A data structure representing code as expression",
+      "A method call",
+      "A delegate type",
+      "An event"
+    ]
+  },
+  {
+    "q": "Expression<Func<>> creates expression tree, not delegate.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Expression<Func<int, int>> expr = x => x * 2;\nConsole.Write(expr.Body);",
+    "o": [
+      "(x * 2)",
+      "4",
+      "Error",
+      "Expression"
+    ]
+  },
+  {
+    "q": "The ______ method converts expression to delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "Compile"
+    ],
+    "other_options": [
+      "Execute",
+      "Build",
+      "Create"
+    ]
+  },
+  {
+    "q": "Match expression tree concepts:",
+    "type": "match",
+    "left": [
+      "Expression<T>",
+      "Body",
+      "Parameters",
+      "Compile"
+    ],
+    "right": [
+      "Tree type",
+      "Expression content",
+      "Input variables",
+      "To delegate"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Expression<Func<int, int>> expr = x => x + 1;\nvar compiled = expr.Compile();\nConsole.Write(compiled(5));",
+    "o": [
+      "6",
+      "5",
+      "Error",
+      "Expression"
+    ]
+  },
+  {
+    "q": "LINQ to SQL uses expression trees for query translation.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Rearrange expression tree usage:",
+    "type": "rearrange",
+    "words": [
+      "Create Expression<Func<>>",
+      "Analyze tree structure",
+      "Compile if needed",
+      "Execute or translate"
+    ]
+  },
+  {
+    "q": "What is expression visitor?",
+    "type": "mcq",
+    "o": [
+      "A pattern for traversing and modifying expression trees",
+      "A delegate type",
+      "An event handler",
+      "A method"
+    ]
+  },
+  {
+    "q": "ExpressionVisitor enables expression tree modification.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match expression tree patterns:",
+    "type": "match",
+    "left": [
+      "Create",
+      "Analyze",
+      "Modify",
+      "Execute"
+    ],
+    "right": [
+      "Expression<T>",
+      "Body, Parameters",
+      "ExpressionVisitor",
+      "Compile()"
+    ]
+  },
+  {
+    "q": "What is the Target property of a delegate?",
+    "type": "mcq",
+    "o": [
+      "The object instance the method belongs to",
+      "The method name",
+      "The return value",
+      "The parameters"
+    ]
+  },
+  {
+    "q": "Static method delegates have null Target.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Obj { public void M() => Console.Write(\"M\"); }\nvar obj = new Obj();\nAction a = obj.M;\nConsole.Write(a.Target == obj);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "M"
+    ]
+  },
+  {
+    "q": "The ______ property gets the method info of a delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "Method"
+    ],
+    "other_options": [
+      "Target",
+      "Info",
+      "Name"
+    ]
+  },
+  {
+    "q": "Match delegate properties:",
+    "type": "match",
+    "left": [
+      "Target",
+      "Method",
+      "GetInvocationList",
+      "GetType"
+    ],
+    "right": [
+      "Instance or null",
+      "MethodInfo",
+      "All handlers",
+      "Delegate type"
+    ]
+  },
+  {
+    "q": "What is custom event accessor pattern?",
+    "type": "mcq",
+    "o": [
+      "Using add/remove to provide custom subscription logic",
+      "Default event syntax",
+      "Lambda events",
+      "Static events"
+    ]
+  },
+  {
+    "q": "Custom accessors enable thread-safe event handling.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Rearrange custom event implementation:",
+    "type": "rearrange",
+    "words": [
+      "Declare private delegate field",
+      "Add accessor with locking",
+      "Remove accessor with locking",
+      "Raise with null check"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Safe {\n    private readonly object lockObj = new();\n    private Action handler;\n    public event Action OnEvent {\n        add { lock(lockObj) handler += value; }\n        remove { lock(lockObj) handler -= value; }\n    }\n    public void Raise() { Action h; lock(lockObj) h = handler; h?.Invoke(); }\n}\nvar s = new Safe();\ns.OnEvent += () => Console.Write(\"Safe\");\ns.Raise();",
+    "o": [
+      "Safe",
+      "Error",
+      "null",
+      "OnEvent"
+    ]
+  },
+  {
+    "q": "Lock ensures thread-safe event subscription.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match thread safety patterns:",
+    "type": "match",
+    "left": [
+      "lock",
+      "Interlocked",
+      "volatile",
+      "Copy before invoke"
+    ],
+    "right": [
+      "Exclusive access",
+      "Atomic operations",
+      "Memory barrier",
+      "Snapshot handler"
+    ]
+  },
+  {
+    "q": "What is the standard event pattern?",
+    "type": "mcq",
+    "o": [
+      "Using EventHandler with sender and EventArgs",
+      "Using Action",
+      "Using Func",
+      "Using delegate"
+    ]
+  },
+  {
+    "q": "The sender parameter identifies the event source.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "The ______ parameter carries event data.",
+    "type": "fill_blank",
+    "answers": [
+      "EventArgs"
+    ],
+    "other_options": [
+      "sender",
+      "data",
+      "info"
+    ]
+  },
+  {
+    "q": "Match event pattern components:",
+    "type": "match",
+    "left": [
+      "sender",
+      "e",
+      "EventHandler",
+      "OnRaise"
+    ],
+    "right": [
+      "Source object",
+      "Event data",
+      "Delegate type",
+      "Protected virtual"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Publisher {\n    public event EventHandler<EventArgs> OnEvent;\n    protected virtual void RaiseEvent() => OnEvent?.Invoke(this, EventArgs.Empty);\n    public void Trigger() => RaiseEvent();\n}\nvar p = new Publisher();\np.OnEvent += (s, e) => Console.Write(s.GetType().Name);\np.Trigger();",
+    "o": [
+      "Publisher",
+      "EventArgs",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Protected virtual OnXxx methods allow derived classes to override.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Rearrange standard event pattern:",
+    "type": "rearrange",
+    "words": [
+      "Create EventArgs subclass",
+      "Declare event with EventHandler<T>",
+      "Add protected OnXxx method",
+      "Invoke with this and args"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate code?",
+    "type": "mcq",
+    "c": "delegate int Operation(int x, int y);\nOperation op = (a, b) => a + b;\nConsole.WriteLine(op(1, 2));",
+    "o": [
+      "3",
+      "1",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword declares a delegate type.",
+    "type": "fill_blank",
+    "answers": [
+      "delegate"
+    ],
+    "other_options": [
+      "event",
+      "action",
+      "func"
+    ]
+  },
+  {
+    "q": "Delegates are type-safe function pointers.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the built-in delegates:",
+    "type": "match",
+    "left": [
+      "Action",
+      "Func",
+      "Predicate",
+      "Comparison"
+    ],
+    "right": [
+      "Void return",
+      "With return",
+      "Boolean return",
+      "Compare two"
+    ]
+  },
+  {
+    "q": "Rearrange the delegate invocation steps:",
+    "type": "rearrange",
+    "words": [
+      "Declare delegate",
+      "Instantiate",
+      "Assign method",
+      "Invoke"
+    ]
+  },
+  {
+    "q": "What is the output of this multicast delegate?",
+    "type": "mcq",
+    "c": "delegate void Notify();\nNotify n = () => Console.Write(\"A\");\nn += () => Console.Write(\"B\");\nn();",
+    "o": [
+      "AB",
+      "BA",
+      "A",
+      "B"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate code?",
+    "type": "mcq",
+    "c": "delegate int Operation(int x, int y);\nOperation op = (a, b) => a + b;\nConsole.WriteLine(op(7, 8));",
+    "o": [
+      "15",
+      "7",
+      "8",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword declares a delegate type.",
+    "type": "fill_blank",
+    "answers": [
+      "delegate"
+    ],
+    "other_options": [
+      "event",
+      "action",
+      "func"
+    ]
+  },
+  {
+    "q": "Delegates are type-safe function pointers.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the built-in delegates:",
+    "type": "match",
+    "left": [
+      "Action",
+      "Func",
+      "Predicate",
+      "Comparison"
+    ],
+    "right": [
+      "Void return",
+      "With return",
+      "Boolean return",
+      "Compare two"
+    ]
+  },
+  {
+    "q": "Rearrange the delegate invocation steps:",
+    "type": "rearrange",
+    "words": [
+      "Declare delegate",
+      "Instantiate",
+      "Assign method",
+      "Invoke"
+    ]
+  },
+  {
+    "q": "What is the output of this multicast delegate?",
+    "type": "mcq",
+    "c": "delegate void Notify();\nNotify n = () => Console.Write(\"A\");\nn += () => Console.Write(\"B\");\nn();",
+    "o": [
+      "AB",
+      "BA",
+      "A",
+      "B"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate code?",
+    "type": "mcq",
+    "c": "delegate int Operation(int x, int y);\nOperation op = (a, b) => a + b;\nConsole.WriteLine(op(13, 14));",
+    "o": [
+      "27",
+      "13",
+      "14",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword declares a delegate type.",
+    "type": "fill_blank",
+    "answers": [
+      "delegate"
+    ],
+    "other_options": [
+      "event",
+      "action",
+      "func"
+    ]
+  },
+  {
+    "q": "Delegates are type-safe function pointers.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the built-in delegates:",
+    "type": "match",
+    "left": [
+      "Action",
+      "Func",
+      "Predicate",
+      "Comparison"
+    ],
+    "right": [
+      "Void return",
+      "With return",
+      "Boolean return",
+      "Compare two"
+    ]
+  },
+  {
+    "q": "Rearrange the delegate invocation steps:",
+    "type": "rearrange",
+    "words": [
+      "Declare delegate",
+      "Instantiate",
+      "Assign method",
+      "Invoke"
+    ]
+  },
+  {
+    "q": "What is the output of this multicast delegate?",
+    "type": "mcq",
+    "c": "delegate void Notify();\nNotify n = () => Console.Write(\"A\");\nn += () => Console.Write(\"B\");\nn();",
+    "o": [
+      "AB",
+      "BA",
+      "A",
+      "B"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate code?",
+    "type": "mcq",
+    "c": "delegate int Operation(int x, int y);\nOperation op = (a, b) => a + b;\nConsole.WriteLine(op(19, 20));",
+    "o": [
+      "39",
+      "19",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword declares a delegate type.",
+    "type": "fill_blank",
+    "answers": [
+      "delegate"
+    ],
+    "other_options": [
+      "event",
+      "action",
+      "func"
+    ]
+  },
+  {
+    "q": "Delegates are type-safe function pointers.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the built-in delegates:",
+    "type": "match",
+    "left": [
+      "Action",
+      "Func",
+      "Predicate",
+      "Comparison"
+    ],
+    "right": [
+      "Void return",
+      "With return",
+      "Boolean return",
+      "Compare two"
+    ]
+  },
+  {
+    "q": "Rearrange the delegate invocation steps:",
+    "type": "rearrange",
+    "words": [
+      "Declare delegate",
+      "Instantiate",
+      "Assign method",
+      "Invoke"
+    ]
+  },
+  {
+    "q": "What is the output of this multicast delegate?",
+    "type": "mcq",
+    "c": "delegate void Notify();\nNotify n = () => Console.Write(\"A\");\nn += () => Console.Write(\"B\");\nn();",
+    "o": [
+      "AB",
+      "BA",
+      "A",
+      "B"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate code?",
+    "type": "mcq",
+    "c": "delegate int Operation(int x, int y);\nOperation op = (a, b) => a + b;\nConsole.WriteLine(op(25, 26));",
+    "o": [
+      "51",
+      "25",
+      "26",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword declares a delegate type.",
+    "type": "fill_blank",
+    "answers": [
+      "delegate"
+    ],
+    "other_options": [
+      "event",
+      "action",
+      "func"
+    ]
+  },
+  {
+    "q": "Delegates are type-safe function pointers.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the built-in delegates:",
+    "type": "match",
+    "left": [
+      "Action",
+      "Func",
+      "Predicate",
+      "Comparison"
+    ],
+    "right": [
+      "Void return",
+      "With return",
+      "Boolean return",
+      "Compare two"
+    ]
+  },
+  {
+    "q": "Rearrange the delegate invocation steps:",
+    "type": "rearrange",
+    "words": [
+      "Declare delegate",
+      "Instantiate",
+      "Assign method",
+      "Invoke"
+    ]
+  },
+  {
+    "q": "What is the output of this multicast delegate?",
+    "type": "mcq",
+    "c": "delegate void Notify();\nNotify n = () => Console.Write(\"A\");\nn += () => Console.Write(\"B\");\nn();",
+    "o": [
+      "AB",
+      "BA",
+      "A",
+      "B"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate code?",
+    "type": "mcq",
+    "c": "delegate int Operation(int x, int y);\nOperation op = (a, b) => a + b;\nConsole.WriteLine(op(31, 32));",
+    "o": [
+      "63",
+      "31",
+      "32",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword declares a delegate type.",
+    "type": "fill_blank",
+    "answers": [
+      "delegate"
+    ],
+    "other_options": [
+      "event",
+      "action",
+      "func"
+    ]
+  },
+  {
+    "q": "Delegates are type-safe function pointers.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the built-in delegates:",
+    "type": "match",
+    "left": [
+      "Action",
+      "Func",
+      "Predicate",
+      "Comparison"
+    ],
+    "right": [
+      "Void return",
+      "With return",
+      "Boolean return",
+      "Compare two"
+    ]
+  },
+  {
+    "q": "Rearrange the delegate invocation steps:",
+    "type": "rearrange",
+    "words": [
+      "Declare delegate",
+      "Instantiate",
+      "Assign method",
+      "Invoke"
+    ]
+  },
+  {
+    "q": "What is the output of this multicast delegate?",
+    "type": "mcq",
+    "c": "delegate void Notify();\nNotify n = () => Console.Write(\"A\");\nn += () => Console.Write(\"B\");\nn();",
+    "o": [
+      "AB",
+      "BA",
+      "A",
+      "B"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate code?",
+    "type": "mcq",
+    "c": "delegate int Operation(int x, int y);\nOperation op = (a, b) => a + b;\nConsole.WriteLine(op(37, 38));",
+    "o": [
+      "75",
+      "37",
+      "38",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword declares a delegate type.",
+    "type": "fill_blank",
+    "answers": [
+      "delegate"
+    ],
+    "other_options": [
+      "event",
+      "action",
+      "func"
+    ]
+  },
+  {
+    "q": "Delegates are type-safe function pointers.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the built-in delegates:",
+    "type": "match",
+    "left": [
+      "Action",
+      "Func",
+      "Predicate",
+      "Comparison"
+    ],
+    "right": [
+      "Void return",
+      "With return",
+      "Boolean return",
+      "Compare two"
+    ]
+  },
+  {
+    "q": "Rearrange the delegate invocation steps:",
+    "type": "rearrange",
+    "words": [
+      "Declare delegate",
+      "Instantiate",
+      "Assign method",
+      "Invoke"
+    ]
+  },
+  {
+    "q": "What is the output of this multicast delegate?",
+    "type": "mcq",
+    "c": "delegate void Notify();\nNotify n = () => Console.Write(\"A\");\nn += () => Console.Write(\"B\");\nn();",
+    "o": [
+      "AB",
+      "BA",
+      "A",
+      "B"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate code?",
+    "type": "mcq",
+    "c": "delegate int Operation(int x, int y);\nOperation op = (a, b) => a + b;\nConsole.WriteLine(op(43, 44));",
+    "o": [
+      "87",
+      "43",
+      "44",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword declares a delegate type.",
+    "type": "fill_blank",
+    "answers": [
+      "delegate"
+    ],
+    "other_options": [
+      "event",
+      "action",
+      "func"
+    ]
+  },
+  {
+    "q": "Delegates are type-safe function pointers.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the built-in delegates:",
+    "type": "match",
+    "left": [
+      "Action",
+      "Func",
+      "Predicate",
+      "Comparison"
+    ],
+    "right": [
+      "Void return",
+      "With return",
+      "Boolean return",
+      "Compare two"
+    ]
+  },
+  {
+    "q": "Rearrange the delegate invocation steps:",
+    "type": "rearrange",
+    "words": [
+      "Declare delegate",
+      "Instantiate",
+      "Assign method",
+      "Invoke"
+    ]
+  },
+  {
+    "q": "What is the output of this multicast delegate?",
+    "type": "mcq",
+    "c": "delegate void Notify();\nNotify n = () => Console.Write(\"A\");\nn += () => Console.Write(\"B\");\nn();",
+    "o": [
+      "AB",
+      "BA",
+      "A",
+      "B"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate code?",
+    "type": "mcq",
+    "c": "delegate int Operation(int x, int y);\nOperation op = (a, b) => a + b;\nConsole.WriteLine(op(49, 50));",
+    "o": [
+      "99",
+      "49",
+      "50",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword declares a delegate type.",
+    "type": "fill_blank",
+    "answers": [
+      "delegate"
+    ],
+    "other_options": [
+      "event",
+      "action",
+      "func"
+    ]
+  },
+  {
+    "q": "Delegates are type-safe function pointers.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this event code?",
+    "type": "mcq",
+    "c": "class Publisher {\n    public event Action OnNotify;\n    public void Raise() => OnNotify?.Invoke();\n}\nvar p = new Publisher();\np.OnNotify += () => Console.WriteLine(\"Event\");\np.Raise();",
+    "o": [
+      "Event",
+      "null",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents external classes from invoking events.",
+    "type": "fill_blank",
+    "answers": [
+      "event"
+    ],
+    "other_options": [
+      "delegate",
+      "private",
+      "protected"
+    ]
+  },
+  {
+    "q": "Events are based on delegates.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event concepts:",
+    "type": "match",
+    "left": [
+      "Publisher",
+      "Subscriber",
+      "EventArgs",
+      "EventHandler"
+    ],
+    "right": [
+      "Raises events",
+      "Handles events",
+      "Event data",
+      "Event delegate"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda with delegate?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(6));",
+    "o": [
+      "36",
+      "6",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Rearrange the event subscription process:",
+    "type": "rearrange",
+    "words": [
+      "Define event",
+      "Subscribe handler",
+      "Raise event",
+      "Execute handler"
+    ]
+  },
+  {
+    "q": "What is the output of this Func delegate?",
+    "type": "mcq",
+    "c": "Func<int, int, int> add = (a, b) => a + b;\nConsole.WriteLine(add(10, 20));",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this event code?",
+    "type": "mcq",
+    "c": "class Publisher {\n    public event Action OnNotify;\n    public void Raise() => OnNotify?.Invoke();\n}\nvar p = new Publisher();\np.OnNotify += () => Console.WriteLine(\"Event\");\np.Raise();",
+    "o": [
+      "Event",
+      "null",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents external classes from invoking events.",
+    "type": "fill_blank",
+    "answers": [
+      "event"
+    ],
+    "other_options": [
+      "delegate",
+      "private",
+      "protected"
+    ]
+  },
+  {
+    "q": "Events are based on delegates.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event concepts:",
+    "type": "match",
+    "left": [
+      "Publisher",
+      "Subscriber",
+      "EventArgs",
+      "EventHandler"
+    ],
+    "right": [
+      "Raises events",
+      "Handles events",
+      "Event data",
+      "Event delegate"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda with delegate?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(3));",
+    "o": [
+      "9",
+      "3",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Rearrange the event subscription process:",
+    "type": "rearrange",
+    "words": [
+      "Define event",
+      "Subscribe handler",
+      "Raise event",
+      "Execute handler"
+    ]
+  },
+  {
+    "q": "What is the output of this Func delegate?",
+    "type": "mcq",
+    "c": "Func<int, int, int> add = (a, b) => a + b;\nConsole.WriteLine(add(10, 20));",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this event code?",
+    "type": "mcq",
+    "c": "class Publisher {\n    public event Action OnNotify;\n    public void Raise() => OnNotify?.Invoke();\n}\nvar p = new Publisher();\np.OnNotify += () => Console.WriteLine(\"Event\");\np.Raise();",
+    "o": [
+      "Event",
+      "null",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents external classes from invoking events.",
+    "type": "fill_blank",
+    "answers": [
+      "event"
+    ],
+    "other_options": [
+      "delegate",
+      "private",
+      "protected"
+    ]
+  },
+  {
+    "q": "Events are based on delegates.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event concepts:",
+    "type": "match",
+    "left": [
+      "Publisher",
+      "Subscriber",
+      "EventArgs",
+      "EventHandler"
+    ],
+    "right": [
+      "Raises events",
+      "Handles events",
+      "Event data",
+      "Event delegate"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda with delegate?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(10));",
+    "o": [
+      "100",
+      "10",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Rearrange the event subscription process:",
+    "type": "rearrange",
+    "words": [
+      "Define event",
+      "Subscribe handler",
+      "Raise event",
+      "Execute handler"
+    ]
+  },
+  {
+    "q": "What is the output of this Func delegate?",
+    "type": "mcq",
+    "c": "Func<int, int, int> add = (a, b) => a + b;\nConsole.WriteLine(add(10, 20));",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this event code?",
+    "type": "mcq",
+    "c": "class Publisher {\n    public event Action OnNotify;\n    public void Raise() => OnNotify?.Invoke();\n}\nvar p = new Publisher();\np.OnNotify += () => Console.WriteLine(\"Event\");\np.Raise();",
+    "o": [
+      "Event",
+      "null",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents external classes from invoking events.",
+    "type": "fill_blank",
+    "answers": [
+      "event"
+    ],
+    "other_options": [
+      "delegate",
+      "private",
+      "protected"
+    ]
+  },
+  {
+    "q": "Events are based on delegates.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event concepts:",
+    "type": "match",
+    "left": [
+      "Publisher",
+      "Subscriber",
+      "EventArgs",
+      "EventHandler"
+    ],
+    "right": [
+      "Raises events",
+      "Handles events",
+      "Event data",
+      "Event delegate"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda with delegate?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(7));",
+    "o": [
+      "49",
+      "7",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Rearrange the event subscription process:",
+    "type": "rearrange",
+    "words": [
+      "Define event",
+      "Subscribe handler",
+      "Raise event",
+      "Execute handler"
+    ]
+  },
+  {
+    "q": "What is the output of this Func delegate?",
+    "type": "mcq",
+    "c": "Func<int, int, int> add = (a, b) => a + b;\nConsole.WriteLine(add(10, 20));",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this event code?",
+    "type": "mcq",
+    "c": "class Publisher {\n    public event Action OnNotify;\n    public void Raise() => OnNotify?.Invoke();\n}\nvar p = new Publisher();\np.OnNotify += () => Console.WriteLine(\"Event\");\np.Raise();",
+    "o": [
+      "Event",
+      "null",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents external classes from invoking events.",
+    "type": "fill_blank",
+    "answers": [
+      "event"
+    ],
+    "other_options": [
+      "delegate",
+      "private",
+      "protected"
+    ]
+  },
+  {
+    "q": "Events are based on delegates.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event concepts:",
+    "type": "match",
+    "left": [
+      "Publisher",
+      "Subscriber",
+      "EventArgs",
+      "EventHandler"
+    ],
+    "right": [
+      "Raises events",
+      "Handles events",
+      "Event data",
+      "Event delegate"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda with delegate?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(4));",
+    "o": [
+      "16",
+      "4",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Rearrange the event subscription process:",
+    "type": "rearrange",
+    "words": [
+      "Define event",
+      "Subscribe handler",
+      "Raise event",
+      "Execute handler"
+    ]
+  },
+  {
+    "q": "What is the output of this Func delegate?",
+    "type": "mcq",
+    "c": "Func<int, int, int> add = (a, b) => a + b;\nConsole.WriteLine(add(10, 20));",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this event code?",
+    "type": "mcq",
+    "c": "class Publisher {\n    public event Action OnNotify;\n    public void Raise() => OnNotify?.Invoke();\n}\nvar p = new Publisher();\np.OnNotify += () => Console.WriteLine(\"Event\");\np.Raise();",
+    "o": [
+      "Event",
+      "null",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents external classes from invoking events.",
+    "type": "fill_blank",
+    "answers": [
+      "event"
+    ],
+    "other_options": [
+      "delegate",
+      "private",
+      "protected"
+    ]
+  },
+  {
+    "q": "Events are based on delegates.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event concepts:",
+    "type": "match",
+    "left": [
+      "Publisher",
+      "Subscriber",
+      "EventArgs",
+      "EventHandler"
+    ],
+    "right": [
+      "Raises events",
+      "Handles events",
+      "Event data",
+      "Event delegate"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda with delegate?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(11));",
+    "o": [
+      "121",
+      "11",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Rearrange the event subscription process:",
+    "type": "rearrange",
+    "words": [
+      "Define event",
+      "Subscribe handler",
+      "Raise event",
+      "Execute handler"
+    ]
+  },
+  {
+    "q": "What is the output of this Func delegate?",
+    "type": "mcq",
+    "c": "Func<int, int, int> add = (a, b) => a + b;\nConsole.WriteLine(add(10, 20));",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this event code?",
+    "type": "mcq",
+    "c": "class Publisher {\n    public event Action OnNotify;\n    public void Raise() => OnNotify?.Invoke();\n}\nvar p = new Publisher();\np.OnNotify += () => Console.WriteLine(\"Event\");\np.Raise();",
+    "o": [
+      "Event",
+      "null",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents external classes from invoking events.",
+    "type": "fill_blank",
+    "answers": [
+      "event"
+    ],
+    "other_options": [
+      "delegate",
+      "private",
+      "protected"
+    ]
+  },
+  {
+    "q": "Events are based on delegates.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event concepts:",
+    "type": "match",
+    "left": [
+      "Publisher",
+      "Subscriber",
+      "EventArgs",
+      "EventHandler"
+    ],
+    "right": [
+      "Raises events",
+      "Handles events",
+      "Event data",
+      "Event delegate"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda with delegate?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(8));",
+    "o": [
+      "64",
+      "8",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Rearrange the event subscription process:",
+    "type": "rearrange",
+    "words": [
+      "Define event",
+      "Subscribe handler",
+      "Raise event",
+      "Execute handler"
+    ]
+  },
+  {
+    "q": "What is the output of this Func delegate?",
+    "type": "mcq",
+    "c": "Func<int, int, int> add = (a, b) => a + b;\nConsole.WriteLine(add(10, 20));",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this event code?",
+    "type": "mcq",
+    "c": "class Publisher {\n    public event Action OnNotify;\n    public void Raise() => OnNotify?.Invoke();\n}\nvar p = new Publisher();\np.OnNotify += () => Console.WriteLine(\"Event\");\np.Raise();",
+    "o": [
+      "Event",
+      "null",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents external classes from invoking events.",
+    "type": "fill_blank",
+    "answers": [
+      "event"
+    ],
+    "other_options": [
+      "delegate",
+      "private",
+      "protected"
+    ]
+  },
+  {
+    "q": "Events are based on delegates.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event concepts:",
+    "type": "match",
+    "left": [
+      "Publisher",
+      "Subscriber",
+      "EventArgs",
+      "EventHandler"
+    ],
+    "right": [
+      "Raises events",
+      "Handles events",
+      "Event data",
+      "Event delegate"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda with delegate?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(5));",
+    "o": [
+      "25",
+      "5",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Rearrange the event subscription process:",
+    "type": "rearrange",
+    "words": [
+      "Define event",
+      "Subscribe handler",
+      "Raise event",
+      "Execute handler"
+    ]
+  },
+  {
+    "q": "What is the output of this Func delegate?",
+    "type": "mcq",
+    "c": "Func<int, int, int> add = (a, b) => a + b;\nConsole.WriteLine(add(10, 20));",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this event code?",
+    "type": "mcq",
+    "c": "class Publisher {\n    public event Action OnNotify;\n    public void Raise() => OnNotify?.Invoke();\n}\nvar p = new Publisher();\np.OnNotify += () => Console.WriteLine(\"Event\");\np.Raise();",
+    "o": [
+      "Event",
+      "null",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents external classes from invoking events.",
+    "type": "fill_blank",
+    "answers": [
+      "event"
+    ],
+    "other_options": [
+      "delegate",
+      "private",
+      "protected"
+    ]
+  },
+  {
+    "q": "Events are based on delegates.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event concepts:",
+    "type": "match",
+    "left": [
+      "Publisher",
+      "Subscriber",
+      "EventArgs",
+      "EventHandler"
+    ],
+    "right": [
+      "Raises events",
+      "Handles events",
+      "Event data",
+      "Event delegate"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda with delegate?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(2));",
+    "o": [
+      "4",
+      "2",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Rearrange the event subscription process:",
+    "type": "rearrange",
+    "words": [
+      "Define event",
+      "Subscribe handler",
+      "Raise event",
+      "Execute handler"
+    ]
+  },
+  {
+    "q": "What is the output of this Func delegate?",
+    "type": "mcq",
+    "c": "Func<int, int, int> add = (a, b) => a + b;\nConsole.WriteLine(add(10, 20));",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this event code?",
+    "type": "mcq",
+    "c": "class Publisher {\n    public event Action OnNotify;\n    public void Raise() => OnNotify?.Invoke();\n}\nvar p = new Publisher();\np.OnNotify += () => Console.WriteLine(\"Event\");\np.Raise();",
+    "o": [
+      "Event",
+      "null",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents external classes from invoking events.",
+    "type": "fill_blank",
+    "answers": [
+      "event"
+    ],
+    "other_options": [
+      "delegate",
+      "private",
+      "protected"
+    ]
+  },
+  {
+    "q": "Events are based on delegates.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event concepts:",
+    "type": "match",
+    "left": [
+      "Publisher",
+      "Subscriber",
+      "EventArgs",
+      "EventHandler"
+    ],
+    "right": [
+      "Raises events",
+      "Handles events",
+      "Event data",
+      "Event delegate"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda with delegate?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(9));",
+    "o": [
+      "81",
+      "9",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Rearrange the event subscription process:",
+    "type": "rearrange",
+    "words": [
+      "Define event",
+      "Subscribe handler",
+      "Raise event",
+      "Execute handler"
+    ]
+  },
+  {
+    "q": "What is the output of this Func delegate?",
+    "type": "mcq",
+    "c": "Func<int, int, int> add = (a, b) => a + b;\nConsole.WriteLine(add(10, 20));",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this event code?",
+    "type": "mcq",
+    "c": "class Publisher {\n    public event Action OnNotify;\n    public void Raise() => OnNotify?.Invoke();\n}\nvar p = new Publisher();\np.OnNotify += () => Console.WriteLine(\"Event\");\np.Raise();",
+    "o": [
+      "Event",
+      "null",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents external classes from invoking events.",
+    "type": "fill_blank",
+    "answers": [
+      "event"
+    ],
+    "other_options": [
+      "delegate",
+      "private",
+      "protected"
+    ]
+  },
+  {
+    "q": "Events are based on delegates.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event concepts:",
+    "type": "match",
+    "left": [
+      "Publisher",
+      "Subscriber",
+      "EventArgs",
+      "EventHandler"
+    ],
+    "right": [
+      "Raises events",
+      "Handles events",
+      "Event data",
+      "Event delegate"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda with delegate?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(6));",
+    "o": [
+      "36",
+      "6",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Rearrange the event subscription process:",
+    "type": "rearrange",
+    "words": [
+      "Define event",
+      "Subscribe handler",
+      "Raise event",
+      "Execute handler"
+    ]
+  },
+  {
+    "q": "What is the output of this Func delegate?",
+    "type": "mcq",
+    "c": "Func<int, int, int> add = (a, b) => a + b;\nConsole.WriteLine(add(10, 20));",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this event code?",
+    "type": "mcq",
+    "c": "class Publisher {\n    public event Action OnNotify;\n    public void Raise() => OnNotify?.Invoke();\n}\nvar p = new Publisher();\np.OnNotify += () => Console.WriteLine(\"Event\");\np.Raise();",
+    "o": [
+      "Event",
+      "null",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents external classes from invoking events.",
+    "type": "fill_blank",
+    "answers": [
+      "event"
+    ],
+    "other_options": [
+      "delegate",
+      "private",
+      "protected"
+    ]
+  },
+  {
+    "q": "Events are based on delegates.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event concepts:",
+    "type": "match",
+    "left": [
+      "Publisher",
+      "Subscriber",
+      "EventArgs",
+      "EventHandler"
+    ],
+    "right": [
+      "Raises events",
+      "Handles events",
+      "Event data",
+      "Event delegate"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda with delegate?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(3));",
+    "o": [
+      "9",
+      "3",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Rearrange the event subscription process:",
+    "type": "rearrange",
+    "words": [
+      "Define event",
+      "Subscribe handler",
+      "Raise event",
+      "Execute handler"
+    ]
+  },
+  {
+    "q": "What is the output of this Func delegate?",
+    "type": "mcq",
+    "c": "Func<int, int, int> add = (a, b) => a + b;\nConsole.WriteLine(add(10, 20));",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this event code?",
+    "type": "mcq",
+    "c": "class Publisher {\n    public event Action OnNotify;\n    public void Raise() => OnNotify?.Invoke();\n}\nvar p = new Publisher();\np.OnNotify += () => Console.WriteLine(\"Event\");\np.Raise();",
+    "o": [
+      "Event",
+      "null",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents external classes from invoking events.",
+    "type": "fill_blank",
+    "answers": [
+      "event"
+    ],
+    "other_options": [
+      "delegate",
+      "private",
+      "protected"
+    ]
+  },
+  {
+    "q": "Events are based on delegates.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event concepts:",
+    "type": "match",
+    "left": [
+      "Publisher",
+      "Subscriber",
+      "EventArgs",
+      "EventHandler"
+    ],
+    "right": [
+      "Raises events",
+      "Handles events",
+      "Event data",
+      "Event delegate"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda with delegate?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(10));",
+    "o": [
+      "100",
+      "10",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Rearrange the event subscription process:",
+    "type": "rearrange",
+    "words": [
+      "Define event",
+      "Subscribe handler",
+      "Raise event",
+      "Execute handler"
+    ]
+  },
+  {
+    "q": "What is the output of this Func delegate?",
+    "type": "mcq",
+    "c": "Func<int, int, int> add = (a, b) => a + b;\nConsole.WriteLine(add(10, 20));",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this event code?",
+    "type": "mcq",
+    "c": "class Publisher {\n    public event Action OnNotify;\n    public void Raise() => OnNotify?.Invoke();\n}\nvar p = new Publisher();\np.OnNotify += () => Console.WriteLine(\"Event\");\np.Raise();",
+    "o": [
+      "Event",
+      "null",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents external classes from invoking events.",
+    "type": "fill_blank",
+    "answers": [
+      "event"
+    ],
+    "other_options": [
+      "delegate",
+      "private",
+      "protected"
+    ]
+  },
+  {
+    "q": "Events are based on delegates.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event concepts:",
+    "type": "match",
+    "left": [
+      "Publisher",
+      "Subscriber",
+      "EventArgs",
+      "EventHandler"
+    ],
+    "right": [
+      "Raises events",
+      "Handles events",
+      "Event data",
+      "Event delegate"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda with delegate?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(7));",
+    "o": [
+      "49",
+      "7",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Rearrange the event subscription process:",
+    "type": "rearrange",
+    "words": [
+      "Define event",
+      "Subscribe handler",
+      "Raise event",
+      "Execute handler"
+    ]
+  },
+  {
+    "q": "What is the output of this Func delegate?",
+    "type": "mcq",
+    "c": "Func<int, int, int> add = (a, b) => a + b;\nConsole.WriteLine(add(10, 20));",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this event code?",
+    "type": "mcq",
+    "c": "class Publisher {\n    public event Action OnNotify;\n    public void Raise() => OnNotify?.Invoke();\n}\nvar p = new Publisher();\np.OnNotify += () => Console.WriteLine(\"Event\");\np.Raise();",
+    "o": [
+      "Event",
+      "null",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents external classes from invoking events.",
+    "type": "fill_blank",
+    "answers": [
+      "event"
+    ],
+    "other_options": [
+      "delegate",
+      "private",
+      "protected"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced delegate code?",
+    "type": "mcq",
+    "c": "delegate int BinaryOp(int a, int b);\nBinaryOp op1 = (x, y) => x + y;\nBinaryOp op2 = (x, y) => x * y;\nBinaryOp combined = op1 + op2;\nConsole.WriteLine(combined(2, 3));",
+    "o": [
+      "6",
+      "5",
+      "Error",
+      "8"
+    ]
+  },
+  {
+    "q": "The ______ operator combines delegates into a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "+="
+    ],
+    "other_options": [
+      "+",
+      "=",
+      "::"
+    ]
+  },
+  {
+    "q": "Multicast delegates invoke handlers in the order they were added.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the delegate features:",
+    "type": "match",
+    "left": [
+      "Covariance",
+      "Contravariance",
+      "Multicast",
+      "Anonymous"
+    ],
+    "right": [
+      "Return type",
+      "Parameter type",
+      "Multiple methods",
+      "Lambda/Inline"
+    ]
+  },
+  {
+    "q": "What is the output of this event unsubscribe code?",
+    "type": "mcq",
+    "c": "event Action OnEvent;\nAction handler = () => Console.WriteLine(\"Fired\");\nOnEvent += handler;\nOnEvent -= handler;\nOnEvent?.Invoke();",
+    "o": [
+      "No output",
+      "Fired",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the delegate invocation list execution:",
+    "type": "rearrange",
+    "words": [
+      "Get invocation list",
+      "Iterate handlers",
+      "Invoke each",
+      "Complete"
+    ]
+  },
+  {
+    "q": "What is the output of this Predicate delegate?",
+    "type": "mcq",
+    "c": "Predicate<int> isEven = x => x % 2 == 0;\nConsole.WriteLine(isEven(16));",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "16"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced delegate code?",
+    "type": "mcq",
+    "c": "delegate int BinaryOp(int a, int b);\nBinaryOp op1 = (x, y) => x + y;\nBinaryOp op2 = (x, y) => x * y;\nBinaryOp combined = op1 + op2;\nConsole.WriteLine(combined(2, 3));",
+    "o": [
+      "6",
+      "5",
+      "Error",
+      "8"
+    ]
+  },
+  {
+    "q": "The ______ operator combines delegates into a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "+="
+    ],
+    "other_options": [
+      "+",
+      "=",
+      "::"
+    ]
+  },
+  {
+    "q": "Multicast delegates invoke handlers in the order they were added.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the delegate features:",
+    "type": "match",
+    "left": [
+      "Covariance",
+      "Contravariance",
+      "Multicast",
+      "Anonymous"
+    ],
+    "right": [
+      "Return type",
+      "Parameter type",
+      "Multiple methods",
+      "Lambda/Inline"
+    ]
+  },
+  {
+    "q": "What is the output of this event unsubscribe code?",
+    "type": "mcq",
+    "c": "event Action OnEvent;\nAction handler = () => Console.WriteLine(\"Fired\");\nOnEvent += handler;\nOnEvent -= handler;\nOnEvent?.Invoke();",
+    "o": [
+      "No output",
+      "Fired",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the delegate invocation list execution:",
+    "type": "rearrange",
+    "words": [
+      "Get invocation list",
+      "Iterate handlers",
+      "Invoke each",
+      "Complete"
+    ]
+  },
+  {
+    "q": "What is the output of this Predicate delegate?",
+    "type": "mcq",
+    "c": "Predicate<int> isEven = x => x % 2 == 0;\nConsole.WriteLine(isEven(13));",
+    "o": [
+      "False",
+      "True",
+      "Error",
+      "13"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced delegate code?",
+    "type": "mcq",
+    "c": "delegate int BinaryOp(int a, int b);\nBinaryOp op1 = (x, y) => x + y;\nBinaryOp op2 = (x, y) => x * y;\nBinaryOp combined = op1 + op2;\nConsole.WriteLine(combined(2, 3));",
+    "o": [
+      "6",
+      "5",
+      "Error",
+      "8"
+    ]
+  },
+  {
+    "q": "The ______ operator combines delegates into a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "+="
+    ],
+    "other_options": [
+      "+",
+      "=",
+      "::"
+    ]
+  },
+  {
+    "q": "Multicast delegates invoke handlers in the order they were added.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the delegate features:",
+    "type": "match",
+    "left": [
+      "Covariance",
+      "Contravariance",
+      "Multicast",
+      "Anonymous"
+    ],
+    "right": [
+      "Return type",
+      "Parameter type",
+      "Multiple methods",
+      "Lambda/Inline"
+    ]
+  },
+  {
+    "q": "What is the output of this event unsubscribe code?",
+    "type": "mcq",
+    "c": "event Action OnEvent;\nAction handler = () => Console.WriteLine(\"Fired\");\nOnEvent += handler;\nOnEvent -= handler;\nOnEvent?.Invoke();",
+    "o": [
+      "No output",
+      "Fired",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the delegate invocation list execution:",
+    "type": "rearrange",
+    "words": [
+      "Get invocation list",
+      "Iterate handlers",
+      "Invoke each",
+      "Complete"
+    ]
+  },
+  {
+    "q": "What is the output of this Predicate delegate?",
+    "type": "mcq",
+    "c": "Predicate<int> isEven = x => x % 2 == 0;\nConsole.WriteLine(isEven(10));",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "10"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced delegate code?",
+    "type": "mcq",
+    "c": "delegate int BinaryOp(int a, int b);\nBinaryOp op1 = (x, y) => x + y;\nBinaryOp op2 = (x, y) => x * y;\nBinaryOp combined = op1 + op2;\nConsole.WriteLine(combined(2, 3));",
+    "o": [
+      "6",
+      "5",
+      "Error",
+      "8"
+    ]
+  },
+  {
+    "q": "The ______ operator combines delegates into a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "+="
+    ],
+    "other_options": [
+      "+",
+      "=",
+      "::"
+    ]
+  },
+  {
+    "q": "Multicast delegates invoke handlers in the order they were added.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the delegate features:",
+    "type": "match",
+    "left": [
+      "Covariance",
+      "Contravariance",
+      "Multicast",
+      "Anonymous"
+    ],
+    "right": [
+      "Return type",
+      "Parameter type",
+      "Multiple methods",
+      "Lambda/Inline"
+    ]
+  },
+  {
+    "q": "What is the output of this event unsubscribe code?",
+    "type": "mcq",
+    "c": "event Action OnEvent;\nAction handler = () => Console.WriteLine(\"Fired\");\nOnEvent += handler;\nOnEvent -= handler;\nOnEvent?.Invoke();",
+    "o": [
+      "No output",
+      "Fired",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the delegate invocation list execution:",
+    "type": "rearrange",
+    "words": [
+      "Get invocation list",
+      "Iterate handlers",
+      "Invoke each",
+      "Complete"
+    ]
+  },
+  {
+    "q": "What is the output of this Predicate delegate?",
+    "type": "mcq",
+    "c": "Predicate<int> isEven = x => x % 2 == 0;\nConsole.WriteLine(isEven(17));",
+    "o": [
+      "False",
+      "True",
+      "Error",
+      "17"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced delegate code?",
+    "type": "mcq",
+    "c": "delegate int BinaryOp(int a, int b);\nBinaryOp op1 = (x, y) => x + y;\nBinaryOp op2 = (x, y) => x * y;\nBinaryOp combined = op1 + op2;\nConsole.WriteLine(combined(2, 3));",
+    "o": [
+      "6",
+      "5",
+      "Error",
+      "8"
+    ]
+  },
+  {
+    "q": "The ______ operator combines delegates into a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "+="
+    ],
+    "other_options": [
+      "+",
+      "=",
+      "::"
+    ]
+  },
+  {
+    "q": "Multicast delegates invoke handlers in the order they were added.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the delegate features:",
+    "type": "match",
+    "left": [
+      "Covariance",
+      "Contravariance",
+      "Multicast",
+      "Anonymous"
+    ],
+    "right": [
+      "Return type",
+      "Parameter type",
+      "Multiple methods",
+      "Lambda/Inline"
+    ]
+  },
+  {
+    "q": "What is the output of this event unsubscribe code?",
+    "type": "mcq",
+    "c": "event Action OnEvent;\nAction handler = () => Console.WriteLine(\"Fired\");\nOnEvent += handler;\nOnEvent -= handler;\nOnEvent?.Invoke();",
+    "o": [
+      "No output",
+      "Fired",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the delegate invocation list execution:",
+    "type": "rearrange",
+    "words": [
+      "Get invocation list",
+      "Iterate handlers",
+      "Invoke each",
+      "Complete"
+    ]
+  },
+  {
+    "q": "What is the output of this Predicate delegate?",
+    "type": "mcq",
+    "c": "Predicate<int> isEven = x => x % 2 == 0;\nConsole.WriteLine(isEven(14));",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "14"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced delegate code?",
+    "type": "mcq",
+    "c": "delegate int BinaryOp(int a, int b);\nBinaryOp op1 = (x, y) => x + y;\nBinaryOp op2 = (x, y) => x * y;\nBinaryOp combined = op1 + op2;\nConsole.WriteLine(combined(2, 3));",
+    "o": [
+      "6",
+      "5",
+      "Error",
+      "8"
+    ]
+  },
+  {
+    "q": "The ______ operator combines delegates into a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "+="
+    ],
+    "other_options": [
+      "+",
+      "=",
+      "::"
+    ]
+  },
+  {
+    "q": "Multicast delegates invoke handlers in the order they were added.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the delegate features:",
+    "type": "match",
+    "left": [
+      "Covariance",
+      "Contravariance",
+      "Multicast",
+      "Anonymous"
+    ],
+    "right": [
+      "Return type",
+      "Parameter type",
+      "Multiple methods",
+      "Lambda/Inline"
+    ]
+  },
+  {
+    "q": "What is the output of this event unsubscribe code?",
+    "type": "mcq",
+    "c": "event Action OnEvent;\nAction handler = () => Console.WriteLine(\"Fired\");\nOnEvent += handler;\nOnEvent -= handler;\nOnEvent?.Invoke();",
+    "o": [
+      "No output",
+      "Fired",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the delegate invocation list execution:",
+    "type": "rearrange",
+    "words": [
+      "Get invocation list",
+      "Iterate handlers",
+      "Invoke each",
+      "Complete"
+    ]
+  },
+  {
+    "q": "What is the output of this Predicate delegate?",
+    "type": "mcq",
+    "c": "Predicate<int> isEven = x => x % 2 == 0;\nConsole.WriteLine(isEven(11));",
+    "o": [
+      "False",
+      "True",
+      "Error",
+      "11"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced delegate code?",
+    "type": "mcq",
+    "c": "delegate int BinaryOp(int a, int b);\nBinaryOp op1 = (x, y) => x + y;\nBinaryOp op2 = (x, y) => x * y;\nBinaryOp combined = op1 + op2;\nConsole.WriteLine(combined(2, 3));",
+    "o": [
+      "6",
+      "5",
+      "Error",
+      "8"
+    ]
+  },
+  {
+    "q": "The ______ operator combines delegates into a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "+="
+    ],
+    "other_options": [
+      "+",
+      "=",
+      "::"
+    ]
+  },
+  {
+    "q": "Multicast delegates invoke handlers in the order they were added.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the delegate features:",
+    "type": "match",
+    "left": [
+      "Covariance",
+      "Contravariance",
+      "Multicast",
+      "Anonymous"
+    ],
+    "right": [
+      "Return type",
+      "Parameter type",
+      "Multiple methods",
+      "Lambda/Inline"
+    ]
+  },
+  {
+    "q": "What is the output of this event unsubscribe code?",
+    "type": "mcq",
+    "c": "event Action OnEvent;\nAction handler = () => Console.WriteLine(\"Fired\");\nOnEvent += handler;\nOnEvent -= handler;\nOnEvent?.Invoke();",
+    "o": [
+      "No output",
+      "Fired",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the delegate invocation list execution:",
+    "type": "rearrange",
+    "words": [
+      "Get invocation list",
+      "Iterate handlers",
+      "Invoke each",
+      "Complete"
+    ]
+  },
+  {
+    "q": "What is the output of this Predicate delegate?",
+    "type": "mcq",
+    "c": "Predicate<int> isEven = x => x % 2 == 0;\nConsole.WriteLine(isEven(18));",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "18"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced delegate code?",
+    "type": "mcq",
+    "c": "delegate int BinaryOp(int a, int b);\nBinaryOp op1 = (x, y) => x + y;\nBinaryOp op2 = (x, y) => x * y;\nBinaryOp combined = op1 + op2;\nConsole.WriteLine(combined(2, 3));",
+    "o": [
+      "6",
+      "5",
+      "Error",
+      "8"
+    ]
+  },
+  {
+    "q": "The ______ operator combines delegates into a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "+="
+    ],
+    "other_options": [
+      "+",
+      "=",
+      "::"
+    ]
+  },
+  {
+    "q": "Multicast delegates invoke handlers in the order they were added.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the delegate features:",
+    "type": "match",
+    "left": [
+      "Covariance",
+      "Contravariance",
+      "Multicast",
+      "Anonymous"
+    ],
+    "right": [
+      "Return type",
+      "Parameter type",
+      "Multiple methods",
+      "Lambda/Inline"
+    ]
+  },
+  {
+    "q": "What is the output of this event unsubscribe code?",
+    "type": "mcq",
+    "c": "event Action OnEvent;\nAction handler = () => Console.WriteLine(\"Fired\");\nOnEvent += handler;\nOnEvent -= handler;\nOnEvent?.Invoke();",
+    "o": [
+      "No output",
+      "Fired",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the delegate invocation list execution:",
+    "type": "rearrange",
+    "words": [
+      "Get invocation list",
+      "Iterate handlers",
+      "Invoke each",
+      "Complete"
+    ]
+  },
+  {
+    "q": "What is the output of this Predicate delegate?",
+    "type": "mcq",
+    "c": "Predicate<int> isEven = x => x % 2 == 0;\nConsole.WriteLine(isEven(15));",
+    "o": [
+      "False",
+      "True",
+      "Error",
+      "15"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced delegate code?",
+    "type": "mcq",
+    "c": "delegate int BinaryOp(int a, int b);\nBinaryOp op1 = (x, y) => x + y;\nBinaryOp op2 = (x, y) => x * y;\nBinaryOp combined = op1 + op2;\nConsole.WriteLine(combined(2, 3));",
+    "o": [
+      "6",
+      "5",
+      "Error",
+      "8"
+    ]
+  },
+  {
+    "q": "The ______ operator combines delegates into a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "+="
+    ],
+    "other_options": [
+      "+",
+      "=",
+      "::"
+    ]
+  },
+  {
+    "q": "Multicast delegates invoke handlers in the order they were added.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the delegate features:",
+    "type": "match",
+    "left": [
+      "Covariance",
+      "Contravariance",
+      "Multicast",
+      "Anonymous"
+    ],
+    "right": [
+      "Return type",
+      "Parameter type",
+      "Multiple methods",
+      "Lambda/Inline"
+    ]
+  },
+  {
+    "q": "What is the output of this event unsubscribe code?",
+    "type": "mcq",
+    "c": "event Action OnEvent;\nAction handler = () => Console.WriteLine(\"Fired\");\nOnEvent += handler;\nOnEvent -= handler;\nOnEvent?.Invoke();",
+    "o": [
+      "No output",
+      "Fired",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the delegate invocation list execution:",
+    "type": "rearrange",
+    "words": [
+      "Get invocation list",
+      "Iterate handlers",
+      "Invoke each",
+      "Complete"
+    ]
+  },
+  {
+    "q": "What is the output of this Predicate delegate?",
+    "type": "mcq",
+    "c": "Predicate<int> isEven = x => x % 2 == 0;\nConsole.WriteLine(isEven(12));",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "12"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced delegate code?",
+    "type": "mcq",
+    "c": "delegate int BinaryOp(int a, int b);\nBinaryOp op1 = (x, y) => x + y;\nBinaryOp op2 = (x, y) => x * y;\nBinaryOp combined = op1 + op2;\nConsole.WriteLine(combined(2, 3));",
+    "o": [
+      "6",
+      "5",
+      "Error",
+      "8"
+    ]
+  },
+  {
+    "q": "The ______ operator combines delegates into a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "+="
+    ],
+    "other_options": [
+      "+",
+      "=",
+      "::"
+    ]
+  },
+  {
+    "q": "Multicast delegates invoke handlers in the order they were added.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the delegate features:",
+    "type": "match",
+    "left": [
+      "Covariance",
+      "Contravariance",
+      "Multicast",
+      "Anonymous"
+    ],
+    "right": [
+      "Return type",
+      "Parameter type",
+      "Multiple methods",
+      "Lambda/Inline"
+    ]
+  },
+  {
+    "q": "What is the output of this event unsubscribe code?",
+    "type": "mcq",
+    "c": "event Action OnEvent;\nAction handler = () => Console.WriteLine(\"Fired\");\nOnEvent += handler;\nOnEvent -= handler;\nOnEvent?.Invoke();",
+    "o": [
+      "No output",
+      "Fired",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the delegate invocation list execution:",
+    "type": "rearrange",
+    "words": [
+      "Get invocation list",
+      "Iterate handlers",
+      "Invoke each",
+      "Complete"
+    ]
+  },
+  {
+    "q": "What is the output of this Predicate delegate?",
+    "type": "mcq",
+    "c": "Predicate<int> isEven = x => x % 2 == 0;\nConsole.WriteLine(isEven(19));",
+    "o": [
+      "False",
+      "True",
+      "Error",
+      "19"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced delegate code?",
+    "type": "mcq",
+    "c": "delegate int BinaryOp(int a, int b);\nBinaryOp op1 = (x, y) => x + y;\nBinaryOp op2 = (x, y) => x * y;\nBinaryOp combined = op1 + op2;\nConsole.WriteLine(combined(2, 3));",
+    "o": [
+      "6",
+      "5",
+      "Error",
+      "8"
+    ]
+  },
+  {
+    "q": "The ______ operator combines delegates into a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "+="
+    ],
+    "other_options": [
+      "+",
+      "=",
+      "::"
+    ]
+  },
+  {
+    "q": "Multicast delegates invoke handlers in the order they were added.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the delegate features:",
+    "type": "match",
+    "left": [
+      "Covariance",
+      "Contravariance",
+      "Multicast",
+      "Anonymous"
+    ],
+    "right": [
+      "Return type",
+      "Parameter type",
+      "Multiple methods",
+      "Lambda/Inline"
+    ]
+  },
+  {
+    "q": "What is the output of this event unsubscribe code?",
+    "type": "mcq",
+    "c": "event Action OnEvent;\nAction handler = () => Console.WriteLine(\"Fired\");\nOnEvent += handler;\nOnEvent -= handler;\nOnEvent?.Invoke();",
+    "o": [
+      "No output",
+      "Fired",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the delegate invocation list execution:",
+    "type": "rearrange",
+    "words": [
+      "Get invocation list",
+      "Iterate handlers",
+      "Invoke each",
+      "Complete"
+    ]
+  },
+  {
+    "q": "What is the output of this Predicate delegate?",
+    "type": "mcq",
+    "c": "Predicate<int> isEven = x => x % 2 == 0;\nConsole.WriteLine(isEven(16));",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "16"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced delegate code?",
+    "type": "mcq",
+    "c": "delegate int BinaryOp(int a, int b);\nBinaryOp op1 = (x, y) => x + y;\nBinaryOp op2 = (x, y) => x * y;\nBinaryOp combined = op1 + op2;\nConsole.WriteLine(combined(2, 3));",
+    "o": [
+      "6",
+      "5",
+      "Error",
+      "8"
+    ]
+  },
+  {
+    "q": "The ______ operator combines delegates into a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "+="
+    ],
+    "other_options": [
+      "+",
+      "=",
+      "::"
+    ]
+  },
+  {
+    "q": "Multicast delegates invoke handlers in the order they were added.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the delegate features:",
+    "type": "match",
+    "left": [
+      "Covariance",
+      "Contravariance",
+      "Multicast",
+      "Anonymous"
+    ],
+    "right": [
+      "Return type",
+      "Parameter type",
+      "Multiple methods",
+      "Lambda/Inline"
+    ]
+  },
+  {
+    "q": "What is the output of this event unsubscribe code?",
+    "type": "mcq",
+    "c": "event Action OnEvent;\nAction handler = () => Console.WriteLine(\"Fired\");\nOnEvent += handler;\nOnEvent -= handler;\nOnEvent?.Invoke();",
+    "o": [
+      "No output",
+      "Fired",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the delegate invocation list execution:",
+    "type": "rearrange",
+    "words": [
+      "Get invocation list",
+      "Iterate handlers",
+      "Invoke each",
+      "Complete"
+    ]
+  },
+  {
+    "q": "What is the output of this Predicate delegate?",
+    "type": "mcq",
+    "c": "Predicate<int> isEven = x => x % 2 == 0;\nConsole.WriteLine(isEven(13));",
+    "o": [
+      "False",
+      "True",
+      "Error",
+      "13"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced delegate code?",
+    "type": "mcq",
+    "c": "delegate int BinaryOp(int a, int b);\nBinaryOp op1 = (x, y) => x + y;\nBinaryOp op2 = (x, y) => x * y;\nBinaryOp combined = op1 + op2;\nConsole.WriteLine(combined(2, 3));",
+    "o": [
+      "6",
+      "5",
+      "Error",
+      "8"
+    ]
+  },
+  {
+    "q": "The ______ operator combines delegates into a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "+="
+    ],
+    "other_options": [
+      "+",
+      "=",
+      "::"
+    ]
+  },
+  {
+    "q": "Multicast delegates invoke handlers in the order they were added.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the delegate features:",
+    "type": "match",
+    "left": [
+      "Covariance",
+      "Contravariance",
+      "Multicast",
+      "Anonymous"
+    ],
+    "right": [
+      "Return type",
+      "Parameter type",
+      "Multiple methods",
+      "Lambda/Inline"
+    ]
+  },
+  {
+    "q": "What is the output of this event unsubscribe code?",
+    "type": "mcq",
+    "c": "event Action OnEvent;\nAction handler = () => Console.WriteLine(\"Fired\");\nOnEvent += handler;\nOnEvent -= handler;\nOnEvent?.Invoke();",
+    "o": [
+      "No output",
+      "Fired",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the delegate invocation list execution:",
+    "type": "rearrange",
+    "words": [
+      "Get invocation list",
+      "Iterate handlers",
+      "Invoke each",
+      "Complete"
+    ]
+  },
+  {
+    "q": "What is the output of this Predicate delegate?",
+    "type": "mcq",
+    "c": "Predicate<int> isEven = x => x % 2 == 0;\nConsole.WriteLine(isEven(10));",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "10"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced delegate code?",
+    "type": "mcq",
+    "c": "delegate int BinaryOp(int a, int b);\nBinaryOp op1 = (x, y) => x + y;\nBinaryOp op2 = (x, y) => x * y;\nBinaryOp combined = op1 + op2;\nConsole.WriteLine(combined(2, 3));",
+    "o": [
+      "6",
+      "5",
+      "Error",
+      "8"
+    ]
+  },
+  {
+    "q": "The ______ operator combines delegates into a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "+="
+    ],
+    "other_options": [
+      "+",
+      "=",
+      "::"
+    ]
+  },
+  {
+    "q": "Multicast delegates invoke handlers in the order they were added.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the delegate features:",
+    "type": "match",
+    "left": [
+      "Covariance",
+      "Contravariance",
+      "Multicast",
+      "Anonymous"
+    ],
+    "right": [
+      "Return type",
+      "Parameter type",
+      "Multiple methods",
+      "Lambda/Inline"
+    ]
+  },
+  {
+    "q": "What is the output of this event unsubscribe code?",
+    "type": "mcq",
+    "c": "event Action OnEvent;\nAction handler = () => Console.WriteLine(\"Fired\");\nOnEvent += handler;\nOnEvent -= handler;\nOnEvent?.Invoke();",
+    "o": [
+      "No output",
+      "Fired",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the delegate invocation list execution:",
+    "type": "rearrange",
+    "words": [
+      "Get invocation list",
+      "Iterate handlers",
+      "Invoke each",
+      "Complete"
+    ]
+  },
+  {
+    "q": "What is the output of this Predicate delegate?",
+    "type": "mcq",
+    "c": "Predicate<int> isEven = x => x % 2 == 0;\nConsole.WriteLine(isEven(17));",
+    "o": [
+      "False",
+      "True",
+      "Error",
+      "17"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced delegate code?",
+    "type": "mcq",
+    "c": "delegate int BinaryOp(int a, int b);\nBinaryOp op1 = (x, y) => x + y;\nBinaryOp op2 = (x, y) => x * y;\nBinaryOp combined = op1 + op2;\nConsole.WriteLine(combined(2, 3));",
+    "o": [
+      "6",
+      "5",
+      "Error",
+      "8"
+    ]
+  },
+  {
+    "q": "The ______ operator combines delegates into a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "+="
+    ],
+    "other_options": [
+      "+",
+      "=",
+      "::"
+    ]
+  },
+  {
+    "q": "What is the output of this closure delegate code?",
+    "type": "mcq",
+    "c": "int multiplier = 2;\nFunc<int, int> multiply = x => x * multiplier;\nmultiplier = 10;\nConsole.WriteLine(multiply(5));",
+    "o": [
+      "50",
+      "10",
+      "Error",
+      "5"
+    ]
+  },
+  {
+    "q": "The ______ stores the list of subscribed methods in a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "invocation list"
+    ],
+    "other_options": [
+      "handler list",
+      "method list",
+      "callback list"
+    ]
+  },
+  {
+    "q": "Delegates support covariance for return types.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced delegate scenarios:",
+    "type": "match",
+    "left": [
+      "BeginInvoke",
+      "EndInvoke",
+      "DynamicInvoke",
+      "GetInvocationList"
+    ],
+    "right": [
+      "Async start",
+      "Async result",
+      "Runtime invoke",
+      "Get handlers"
+    ]
+  },
+  {
+    "q": "What is the output of this event accessor code?",
+    "type": "mcq",
+    "c": "class MyClass {\n    private event Action _event;\n    public event Action MyEvent {\n        add { _event += value; Console.Write(\"Add\"); }\n        remove { _event -= value; Console.Write(\"Remove\"); }\n    }\n}\nvar obj = new MyClass();\nobj.MyEvent += () => { };",
+    "o": [
+      "Add",
+      "Remove",
+      "Error",
+      "No output"
+    ]
+  },
+  {
+    "q": "Rearrange the custom event accessor execution:",
+    "type": "rearrange",
+    "words": [
+      "Event subscription",
+      "Add accessor",
+      "Store handler",
+      "Return"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate return value code?",
+    "type": "mcq",
+    "c": "delegate int GetValue();\nGetValue g = () => 1;\ng += () => 2;\ng += () => 3;\nConsole.WriteLine(g());",
+    "o": [
+      "3",
+      "1",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this closure delegate code?",
+    "type": "mcq",
+    "c": "int multiplier = 4;\nFunc<int, int> multiply = x => x * multiplier;\nmultiplier = 10;\nConsole.WriteLine(multiply(5));",
+    "o": [
+      "50",
+      "20",
+      "Error",
+      "5"
+    ]
+  },
+  {
+    "q": "The ______ stores the list of subscribed methods in a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "invocation list"
+    ],
+    "other_options": [
+      "handler list",
+      "method list",
+      "callback list"
+    ]
+  },
+  {
+    "q": "Delegates support covariance for return types.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced delegate scenarios:",
+    "type": "match",
+    "left": [
+      "BeginInvoke",
+      "EndInvoke",
+      "DynamicInvoke",
+      "GetInvocationList"
+    ],
+    "right": [
+      "Async start",
+      "Async result",
+      "Runtime invoke",
+      "Get handlers"
+    ]
+  },
+  {
+    "q": "What is the output of this event accessor code?",
+    "type": "mcq",
+    "c": "class MyClass {\n    private event Action _event;\n    public event Action MyEvent {\n        add { _event += value; Console.Write(\"Add\"); }\n        remove { _event -= value; Console.Write(\"Remove\"); }\n    }\n}\nvar obj = new MyClass();\nobj.MyEvent += () => { };",
+    "o": [
+      "Add",
+      "Remove",
+      "Error",
+      "No output"
+    ]
+  },
+  {
+    "q": "Rearrange the custom event accessor execution:",
+    "type": "rearrange",
+    "words": [
+      "Event subscription",
+      "Add accessor",
+      "Store handler",
+      "Return"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate return value code?",
+    "type": "mcq",
+    "c": "delegate int GetValue();\nGetValue g = () => 1;\ng += () => 2;\ng += () => 3;\nConsole.WriteLine(g());",
+    "o": [
+      "3",
+      "1",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this closure delegate code?",
+    "type": "mcq",
+    "c": "int multiplier = 6;\nFunc<int, int> multiply = x => x * multiplier;\nmultiplier = 10;\nConsole.WriteLine(multiply(5));",
+    "o": [
+      "50",
+      "30",
+      "Error",
+      "5"
+    ]
+  },
+  {
+    "q": "The ______ stores the list of subscribed methods in a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "invocation list"
+    ],
+    "other_options": [
+      "handler list",
+      "method list",
+      "callback list"
+    ]
+  },
+  {
+    "q": "Delegates support covariance for return types.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced delegate scenarios:",
+    "type": "match",
+    "left": [
+      "BeginInvoke",
+      "EndInvoke",
+      "DynamicInvoke",
+      "GetInvocationList"
+    ],
+    "right": [
+      "Async start",
+      "Async result",
+      "Runtime invoke",
+      "Get handlers"
+    ]
+  },
+  {
+    "q": "What is the output of this event accessor code?",
+    "type": "mcq",
+    "c": "class MyClass {\n    private event Action _event;\n    public event Action MyEvent {\n        add { _event += value; Console.Write(\"Add\"); }\n        remove { _event -= value; Console.Write(\"Remove\"); }\n    }\n}\nvar obj = new MyClass();\nobj.MyEvent += () => { };",
+    "o": [
+      "Add",
+      "Remove",
+      "Error",
+      "No output"
+    ]
+  },
+  {
+    "q": "Rearrange the custom event accessor execution:",
+    "type": "rearrange",
+    "words": [
+      "Event subscription",
+      "Add accessor",
+      "Store handler",
+      "Return"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate return value code?",
+    "type": "mcq",
+    "c": "delegate int GetValue();\nGetValue g = () => 1;\ng += () => 2;\ng += () => 3;\nConsole.WriteLine(g());",
+    "o": [
+      "3",
+      "1",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this closure delegate code?",
+    "type": "mcq",
+    "c": "int multiplier = 3;\nFunc<int, int> multiply = x => x * multiplier;\nmultiplier = 10;\nConsole.WriteLine(multiply(5));",
+    "o": [
+      "50",
+      "15",
+      "Error",
+      "5"
+    ]
+  },
+  {
+    "q": "The ______ stores the list of subscribed methods in a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "invocation list"
+    ],
+    "other_options": [
+      "handler list",
+      "method list",
+      "callback list"
+    ]
+  },
+  {
+    "q": "Delegates support covariance for return types.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced delegate scenarios:",
+    "type": "match",
+    "left": [
+      "BeginInvoke",
+      "EndInvoke",
+      "DynamicInvoke",
+      "GetInvocationList"
+    ],
+    "right": [
+      "Async start",
+      "Async result",
+      "Runtime invoke",
+      "Get handlers"
+    ]
+  },
+  {
+    "q": "What is the output of this event accessor code?",
+    "type": "mcq",
+    "c": "class MyClass {\n    private event Action _event;\n    public event Action MyEvent {\n        add { _event += value; Console.Write(\"Add\"); }\n        remove { _event -= value; Console.Write(\"Remove\"); }\n    }\n}\nvar obj = new MyClass();\nobj.MyEvent += () => { };",
+    "o": [
+      "Add",
+      "Remove",
+      "Error",
+      "No output"
+    ]
+  },
+  {
+    "q": "Rearrange the custom event accessor execution:",
+    "type": "rearrange",
+    "words": [
+      "Event subscription",
+      "Add accessor",
+      "Store handler",
+      "Return"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate return value code?",
+    "type": "mcq",
+    "c": "delegate int GetValue();\nGetValue g = () => 1;\ng += () => 2;\ng += () => 3;\nConsole.WriteLine(g());",
+    "o": [
+      "3",
+      "1",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this closure delegate code?",
+    "type": "mcq",
+    "c": "int multiplier = 5;\nFunc<int, int> multiply = x => x * multiplier;\nmultiplier = 10;\nConsole.WriteLine(multiply(5));",
+    "o": [
+      "50",
+      "25",
+      "Error",
+      "5"
+    ]
+  },
+  {
+    "q": "The ______ stores the list of subscribed methods in a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "invocation list"
+    ],
+    "other_options": [
+      "handler list",
+      "method list",
+      "callback list"
+    ]
+  },
+  {
+    "q": "Delegates support covariance for return types.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced delegate scenarios:",
+    "type": "match",
+    "left": [
+      "BeginInvoke",
+      "EndInvoke",
+      "DynamicInvoke",
+      "GetInvocationList"
+    ],
+    "right": [
+      "Async start",
+      "Async result",
+      "Runtime invoke",
+      "Get handlers"
+    ]
+  },
+  {
+    "q": "What is the output of this event accessor code?",
+    "type": "mcq",
+    "c": "class MyClass {\n    private event Action _event;\n    public event Action MyEvent {\n        add { _event += value; Console.Write(\"Add\"); }\n        remove { _event -= value; Console.Write(\"Remove\"); }\n    }\n}\nvar obj = new MyClass();\nobj.MyEvent += () => { };",
+    "o": [
+      "Add",
+      "Remove",
+      "Error",
+      "No output"
+    ]
+  },
+  {
+    "q": "Rearrange the custom event accessor execution:",
+    "type": "rearrange",
+    "words": [
+      "Event subscription",
+      "Add accessor",
+      "Store handler",
+      "Return"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate return value code?",
+    "type": "mcq",
+    "c": "delegate int GetValue();\nGetValue g = () => 1;\ng += () => 2;\ng += () => 3;\nConsole.WriteLine(g());",
+    "o": [
+      "3",
+      "1",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this closure delegate code?",
+    "type": "mcq",
+    "c": "int multiplier = 2;\nFunc<int, int> multiply = x => x * multiplier;\nmultiplier = 10;\nConsole.WriteLine(multiply(5));",
+    "o": [
+      "50",
+      "10",
+      "Error",
+      "5"
+    ]
+  },
+  {
+    "q": "The ______ stores the list of subscribed methods in a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "invocation list"
+    ],
+    "other_options": [
+      "handler list",
+      "method list",
+      "callback list"
+    ]
+  },
+  {
+    "q": "Delegates support covariance for return types.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced delegate scenarios:",
+    "type": "match",
+    "left": [
+      "BeginInvoke",
+      "EndInvoke",
+      "DynamicInvoke",
+      "GetInvocationList"
+    ],
+    "right": [
+      "Async start",
+      "Async result",
+      "Runtime invoke",
+      "Get handlers"
+    ]
+  },
+  {
+    "q": "What is the output of this event accessor code?",
+    "type": "mcq",
+    "c": "class MyClass {\n    private event Action _event;\n    public event Action MyEvent {\n        add { _event += value; Console.Write(\"Add\"); }\n        remove { _event -= value; Console.Write(\"Remove\"); }\n    }\n}\nvar obj = new MyClass();\nobj.MyEvent += () => { };",
+    "o": [
+      "Add",
+      "Remove",
+      "Error",
+      "No output"
+    ]
+  },
+  {
+    "q": "Rearrange the custom event accessor execution:",
+    "type": "rearrange",
+    "words": [
+      "Event subscription",
+      "Add accessor",
+      "Store handler",
+      "Return"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate return value code?",
+    "type": "mcq",
+    "c": "delegate int GetValue();\nGetValue g = () => 1;\ng += () => 2;\ng += () => 3;\nConsole.WriteLine(g());",
+    "o": [
+      "3",
+      "1",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this closure delegate code?",
+    "type": "mcq",
+    "c": "int multiplier = 4;\nFunc<int, int> multiply = x => x * multiplier;\nmultiplier = 10;\nConsole.WriteLine(multiply(5));",
+    "o": [
+      "50",
+      "20",
+      "Error",
+      "5"
+    ]
+  },
+  {
+    "q": "The ______ stores the list of subscribed methods in a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "invocation list"
+    ],
+    "other_options": [
+      "handler list",
+      "method list",
+      "callback list"
+    ]
+  },
+  {
+    "q": "Delegates support covariance for return types.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced delegate scenarios:",
+    "type": "match",
+    "left": [
+      "BeginInvoke",
+      "EndInvoke",
+      "DynamicInvoke",
+      "GetInvocationList"
+    ],
+    "right": [
+      "Async start",
+      "Async result",
+      "Runtime invoke",
+      "Get handlers"
+    ]
+  },
+  {
+    "q": "What is the output of this event accessor code?",
+    "type": "mcq",
+    "c": "class MyClass {\n    private event Action _event;\n    public event Action MyEvent {\n        add { _event += value; Console.Write(\"Add\"); }\n        remove { _event -= value; Console.Write(\"Remove\"); }\n    }\n}\nvar obj = new MyClass();\nobj.MyEvent += () => { };",
+    "o": [
+      "Add",
+      "Remove",
+      "Error",
+      "No output"
+    ]
+  },
+  {
+    "q": "Rearrange the custom event accessor execution:",
+    "type": "rearrange",
+    "words": [
+      "Event subscription",
+      "Add accessor",
+      "Store handler",
+      "Return"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate return value code?",
+    "type": "mcq",
+    "c": "delegate int GetValue();\nGetValue g = () => 1;\ng += () => 2;\ng += () => 3;\nConsole.WriteLine(g());",
+    "o": [
+      "3",
+      "1",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this closure delegate code?",
+    "type": "mcq",
+    "c": "int multiplier = 6;\nFunc<int, int> multiply = x => x * multiplier;\nmultiplier = 10;\nConsole.WriteLine(multiply(5));",
+    "o": [
+      "50",
+      "30",
+      "Error",
+      "5"
+    ]
+  },
+  {
+    "q": "The ______ stores the list of subscribed methods in a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "invocation list"
+    ],
+    "other_options": [
+      "handler list",
+      "method list",
+      "callback list"
+    ]
+  },
+  {
+    "q": "Delegates support covariance for return types.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced delegate scenarios:",
+    "type": "match",
+    "left": [
+      "BeginInvoke",
+      "EndInvoke",
+      "DynamicInvoke",
+      "GetInvocationList"
+    ],
+    "right": [
+      "Async start",
+      "Async result",
+      "Runtime invoke",
+      "Get handlers"
+    ]
+  },
+  {
+    "q": "What is the output of this event accessor code?",
+    "type": "mcq",
+    "c": "class MyClass {\n    private event Action _event;\n    public event Action MyEvent {\n        add { _event += value; Console.Write(\"Add\"); }\n        remove { _event -= value; Console.Write(\"Remove\"); }\n    }\n}\nvar obj = new MyClass();\nobj.MyEvent += () => { };",
+    "o": [
+      "Add",
+      "Remove",
+      "Error",
+      "No output"
+    ]
+  },
+  {
+    "q": "Rearrange the custom event accessor execution:",
+    "type": "rearrange",
+    "words": [
+      "Event subscription",
+      "Add accessor",
+      "Store handler",
+      "Return"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate return value code?",
+    "type": "mcq",
+    "c": "delegate int GetValue();\nGetValue g = () => 1;\ng += () => 2;\ng += () => 3;\nConsole.WriteLine(g());",
+    "o": [
+      "3",
+      "1",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this closure delegate code?",
+    "type": "mcq",
+    "c": "int multiplier = 3;\nFunc<int, int> multiply = x => x * multiplier;\nmultiplier = 10;\nConsole.WriteLine(multiply(5));",
+    "o": [
+      "50",
+      "15",
+      "Error",
+      "5"
+    ]
+  },
+  {
+    "q": "The ______ stores the list of subscribed methods in a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "invocation list"
+    ],
+    "other_options": [
+      "handler list",
+      "method list",
+      "callback list"
+    ]
+  },
+  {
+    "q": "Delegates support covariance for return types.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced delegate scenarios:",
+    "type": "match",
+    "left": [
+      "BeginInvoke",
+      "EndInvoke",
+      "DynamicInvoke",
+      "GetInvocationList"
+    ],
+    "right": [
+      "Async start",
+      "Async result",
+      "Runtime invoke",
+      "Get handlers"
+    ]
+  },
+  {
+    "q": "What is the output of this event accessor code?",
+    "type": "mcq",
+    "c": "class MyClass {\n    private event Action _event;\n    public event Action MyEvent {\n        add { _event += value; Console.Write(\"Add\"); }\n        remove { _event -= value; Console.Write(\"Remove\"); }\n    }\n}\nvar obj = new MyClass();\nobj.MyEvent += () => { };",
+    "o": [
+      "Add",
+      "Remove",
+      "Error",
+      "No output"
+    ]
+  },
+  {
+    "q": "Rearrange the custom event accessor execution:",
+    "type": "rearrange",
+    "words": [
+      "Event subscription",
+      "Add accessor",
+      "Store handler",
+      "Return"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate return value code?",
+    "type": "mcq",
+    "c": "delegate int GetValue();\nGetValue g = () => 1;\ng += () => 2;\ng += () => 3;\nConsole.WriteLine(g());",
+    "o": [
+      "3",
+      "1",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this closure delegate code?",
+    "type": "mcq",
+    "c": "int multiplier = 5;\nFunc<int, int> multiply = x => x * multiplier;\nmultiplier = 10;\nConsole.WriteLine(multiply(5));",
+    "o": [
+      "50",
+      "25",
+      "Error",
+      "5"
+    ]
+  },
+  {
+    "q": "The ______ stores the list of subscribed methods in a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "invocation list"
+    ],
+    "other_options": [
+      "handler list",
+      "method list",
+      "callback list"
+    ]
+  },
+  {
+    "q": "Delegates support covariance for return types.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced delegate scenarios:",
+    "type": "match",
+    "left": [
+      "BeginInvoke",
+      "EndInvoke",
+      "DynamicInvoke",
+      "GetInvocationList"
+    ],
+    "right": [
+      "Async start",
+      "Async result",
+      "Runtime invoke",
+      "Get handlers"
+    ]
+  },
+  {
+    "q": "What is the output of this event accessor code?",
+    "type": "mcq",
+    "c": "class MyClass {\n    private event Action _event;\n    public event Action MyEvent {\n        add { _event += value; Console.Write(\"Add\"); }\n        remove { _event -= value; Console.Write(\"Remove\"); }\n    }\n}\nvar obj = new MyClass();\nobj.MyEvent += () => { };",
+    "o": [
+      "Add",
+      "Remove",
+      "Error",
+      "No output"
+    ]
+  },
+  {
+    "q": "Rearrange the custom event accessor execution:",
+    "type": "rearrange",
+    "words": [
+      "Event subscription",
+      "Add accessor",
+      "Store handler",
+      "Return"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate return value code?",
+    "type": "mcq",
+    "c": "delegate int GetValue();\nGetValue g = () => 1;\ng += () => 2;\ng += () => 3;\nConsole.WriteLine(g());",
+    "o": [
+      "3",
+      "1",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this closure delegate code?",
+    "type": "mcq",
+    "c": "int multiplier = 2;\nFunc<int, int> multiply = x => x * multiplier;\nmultiplier = 10;\nConsole.WriteLine(multiply(5));",
+    "o": [
+      "50",
+      "10",
+      "Error",
+      "5"
+    ]
+  },
+  {
+    "q": "The ______ stores the list of subscribed methods in a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "invocation list"
+    ],
+    "other_options": [
+      "handler list",
+      "method list",
+      "callback list"
+    ]
+  },
+  {
+    "q": "Delegates support covariance for return types.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced delegate scenarios:",
+    "type": "match",
+    "left": [
+      "BeginInvoke",
+      "EndInvoke",
+      "DynamicInvoke",
+      "GetInvocationList"
+    ],
+    "right": [
+      "Async start",
+      "Async result",
+      "Runtime invoke",
+      "Get handlers"
+    ]
+  },
+  {
+    "q": "What is the output of this event accessor code?",
+    "type": "mcq",
+    "c": "class MyClass {\n    private event Action _event;\n    public event Action MyEvent {\n        add { _event += value; Console.Write(\"Add\"); }\n        remove { _event -= value; Console.Write(\"Remove\"); }\n    }\n}\nvar obj = new MyClass();\nobj.MyEvent += () => { };",
+    "o": [
+      "Add",
+      "Remove",
+      "Error",
+      "No output"
+    ]
+  },
+  {
+    "q": "Rearrange the custom event accessor execution:",
+    "type": "rearrange",
+    "words": [
+      "Event subscription",
+      "Add accessor",
+      "Store handler",
+      "Return"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate return value code?",
+    "type": "mcq",
+    "c": "delegate int GetValue();\nGetValue g = () => 1;\ng += () => 2;\ng += () => 3;\nConsole.WriteLine(g());",
+    "o": [
+      "3",
+      "1",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this closure delegate code?",
+    "type": "mcq",
+    "c": "int multiplier = 4;\nFunc<int, int> multiply = x => x * multiplier;\nmultiplier = 10;\nConsole.WriteLine(multiply(5));",
+    "o": [
+      "50",
+      "20",
+      "Error",
+      "5"
+    ]
+  },
+  {
+    "q": "The ______ stores the list of subscribed methods in a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "invocation list"
+    ],
+    "other_options": [
+      "handler list",
+      "method list",
+      "callback list"
+    ]
+  },
+  {
+    "q": "Delegates support covariance for return types.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced delegate scenarios:",
+    "type": "match",
+    "left": [
+      "BeginInvoke",
+      "EndInvoke",
+      "DynamicInvoke",
+      "GetInvocationList"
+    ],
+    "right": [
+      "Async start",
+      "Async result",
+      "Runtime invoke",
+      "Get handlers"
+    ]
+  },
+  {
+    "q": "What is the output of this event accessor code?",
+    "type": "mcq",
+    "c": "class MyClass {\n    private event Action _event;\n    public event Action MyEvent {\n        add { _event += value; Console.Write(\"Add\"); }\n        remove { _event -= value; Console.Write(\"Remove\"); }\n    }\n}\nvar obj = new MyClass();\nobj.MyEvent += () => { };",
+    "o": [
+      "Add",
+      "Remove",
+      "Error",
+      "No output"
+    ]
+  },
+  {
+    "q": "Rearrange the custom event accessor execution:",
+    "type": "rearrange",
+    "words": [
+      "Event subscription",
+      "Add accessor",
+      "Store handler",
+      "Return"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate return value code?",
+    "type": "mcq",
+    "c": "delegate int GetValue();\nGetValue g = () => 1;\ng += () => 2;\ng += () => 3;\nConsole.WriteLine(g());",
+    "o": [
+      "3",
+      "1",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this closure delegate code?",
+    "type": "mcq",
+    "c": "int multiplier = 6;\nFunc<int, int> multiply = x => x * multiplier;\nmultiplier = 10;\nConsole.WriteLine(multiply(5));",
+    "o": [
+      "50",
+      "30",
+      "Error",
+      "5"
+    ]
+  },
+  {
+    "q": "The ______ stores the list of subscribed methods in a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "invocation list"
+    ],
+    "other_options": [
+      "handler list",
+      "method list",
+      "callback list"
+    ]
+  },
+  {
+    "q": "Delegates support covariance for return types.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced delegate scenarios:",
+    "type": "match",
+    "left": [
+      "BeginInvoke",
+      "EndInvoke",
+      "DynamicInvoke",
+      "GetInvocationList"
+    ],
+    "right": [
+      "Async start",
+      "Async result",
+      "Runtime invoke",
+      "Get handlers"
+    ]
+  },
+  {
+    "q": "What is the output of this event accessor code?",
+    "type": "mcq",
+    "c": "class MyClass {\n    private event Action _event;\n    public event Action MyEvent {\n        add { _event += value; Console.Write(\"Add\"); }\n        remove { _event -= value; Console.Write(\"Remove\"); }\n    }\n}\nvar obj = new MyClass();\nobj.MyEvent += () => { };",
+    "o": [
+      "Add",
+      "Remove",
+      "Error",
+      "No output"
+    ]
+  },
+  {
+    "q": "Rearrange the custom event accessor execution:",
+    "type": "rearrange",
+    "words": [
+      "Event subscription",
+      "Add accessor",
+      "Store handler",
+      "Return"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate return value code?",
+    "type": "mcq",
+    "c": "delegate int GetValue();\nGetValue g = () => 1;\ng += () => 2;\ng += () => 3;\nConsole.WriteLine(g());",
+    "o": [
+      "3",
+      "1",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this closure delegate code?",
+    "type": "mcq",
+    "c": "int multiplier = 3;\nFunc<int, int> multiply = x => x * multiplier;\nmultiplier = 10;\nConsole.WriteLine(multiply(5));",
+    "o": [
+      "50",
+      "15",
+      "Error",
+      "5"
+    ]
+  },
+  {
+    "q": "The ______ stores the list of subscribed methods in a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "invocation list"
+    ],
+    "other_options": [
+      "handler list",
+      "method list",
+      "callback list"
+    ]
+  },
+  {
+    "q": "Delegates support covariance for return types.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced delegate scenarios:",
+    "type": "match",
+    "left": [
+      "BeginInvoke",
+      "EndInvoke",
+      "DynamicInvoke",
+      "GetInvocationList"
+    ],
+    "right": [
+      "Async start",
+      "Async result",
+      "Runtime invoke",
+      "Get handlers"
+    ]
+  },
+  {
+    "q": "What is the output of this event accessor code?",
+    "type": "mcq",
+    "c": "class MyClass {\n    private event Action _event;\n    public event Action MyEvent {\n        add { _event += value; Console.Write(\"Add\"); }\n        remove { _event -= value; Console.Write(\"Remove\"); }\n    }\n}\nvar obj = new MyClass();\nobj.MyEvent += () => { };",
+    "o": [
+      "Add",
+      "Remove",
+      "Error",
+      "No output"
+    ]
+  },
+  {
+    "q": "Rearrange the custom event accessor execution:",
+    "type": "rearrange",
+    "words": [
+      "Event subscription",
+      "Add accessor",
+      "Store handler",
+      "Return"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate return value code?",
+    "type": "mcq",
+    "c": "delegate int GetValue();\nGetValue g = () => 1;\ng += () => 2;\ng += () => 3;\nConsole.WriteLine(g());",
+    "o": [
+      "3",
+      "1",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the output of this closure delegate code?",
+    "type": "mcq",
+    "c": "int multiplier = 5;\nFunc<int, int> multiply = x => x * multiplier;\nmultiplier = 10;\nConsole.WriteLine(multiply(5));",
+    "o": [
+      "50",
+      "25",
+      "Error",
+      "5"
+    ]
+  },
+  {
+    "q": "The ______ stores the list of subscribed methods in a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "invocation list"
+    ],
+    "other_options": [
+      "handler list",
+      "method list",
+      "callback list"
+    ]
+  },
+  {
+    "q": "What is the output of this complex delegate composition?",
+    "type": "mcq",
+    "c": "delegate void Log(string msg);\nLog logger = msg => Console.Write(\"A:\");\nlogger += msg => Console.Write(msg);\nlogger += msg => Console.Write(\":B\");\nlogger(\"X\");",
+    "o": [
+      "A:X:B",
+      "XAB",
+      "ABX",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method removes all handlers from a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "null assignment"
+    ],
+    "other_options": [
+      "Clear",
+      "RemoveAll",
+      "Reset"
+    ]
+  },
+  {
+    "q": "Event accessors allow custom add/remove logic.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event patterns:",
+    "type": "match",
+    "left": [
+      "EventHandler",
+      "EventHandler<T>",
+      "Action<T>",
+      "Func<T>"
+    ],
+    "right": [
+      "Non-generic event",
+      "Generic event",
+      "Void delegate",
+      "Return delegate"
+    ]
+  },
+  {
+    "q": "What is the output of this exception in delegate?",
+    "type": "mcq",
+    "c": "delegate void Process();\nProcess p = () => Console.Write(\"A\");\np += () => { throw new Exception(); };\np += () => Console.Write(\"B\");\ntry { p(); } catch { Console.Write(\"E\"); }",
+    "o": [
+      "AE",
+      "AEB",
+      "AB",
+      "E"
+    ]
+  },
+  {
+    "q": "Rearrange the event-driven architecture flow:",
+    "type": "rearrange",
+    "words": [
+      "State change",
+      "Event raised",
+      "Handlers notified",
+      "State updated"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate contravariance?",
+    "type": "mcq",
+    "c": "delegate void ProcessObject(object obj);\nAction<string> processString = s => Console.WriteLine(\"String\");\nProcessObject po = processString;",
+    "o": [
+      "Error",
+      "String",
+      "Compiles",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Lambda expressions can capture variables from outer scope.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex delegate composition?",
+    "type": "mcq",
+    "c": "delegate void Log(string msg);\nLog logger = msg => Console.Write(\"A:\");\nlogger += msg => Console.Write(msg);\nlogger += msg => Console.Write(\":B\");\nlogger(\"X\");",
+    "o": [
+      "A:X:B",
+      "XAB",
+      "ABX",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method removes all handlers from a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "null assignment"
+    ],
+    "other_options": [
+      "Clear",
+      "RemoveAll",
+      "Reset"
+    ]
+  },
+  {
+    "q": "Event accessors allow custom add/remove logic.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event patterns:",
+    "type": "match",
+    "left": [
+      "SynchronizationContext",
+      "Dispatcher",
+      "TaskScheduler",
+      "Thread"
+    ],
+    "right": [
+      "Cross-thread",
+      "UI thread",
+      "Task thread",
+      "Worker thread"
+    ]
+  },
+  {
+    "q": "What is the output of this exception in delegate?",
+    "type": "mcq",
+    "c": "delegate void Process();\nProcess p = () => Console.Write(\"A\");\np += () => { throw new Exception(); };\np += () => Console.Write(\"B\");\ntry { p(); } catch { Console.Write(\"E\"); }",
+    "o": [
+      "AE",
+      "AEB",
+      "AB",
+      "E"
+    ]
+  },
+  {
+    "q": "Rearrange the event-driven architecture flow:",
+    "type": "rearrange",
+    "words": [
+      "State change",
+      "Event raised",
+      "Handlers notified",
+      "State updated"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate contravariance?",
+    "type": "mcq",
+    "c": "delegate void ProcessObject(object obj);\nAction<string> processString = s => Console.WriteLine(\"String\");\nProcessObject po = processString;",
+    "o": [
+      "Error",
+      "String",
+      "Compiles",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Lambda expressions can capture variables from outer scope.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex delegate composition?",
+    "type": "mcq",
+    "c": "delegate void Log(string msg);\nLog logger = msg => Console.Write(\"A:\");\nlogger += msg => Console.Write(msg);\nlogger += msg => Console.Write(\":B\");\nlogger(\"X\");",
+    "o": [
+      "A:X:B",
+      "XAB",
+      "ABX",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method removes all handlers from a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "null assignment"
+    ],
+    "other_options": [
+      "Clear",
+      "RemoveAll",
+      "Reset"
+    ]
+  },
+  {
+    "q": "Event accessors allow custom add/remove logic.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event patterns:",
+    "type": "match",
+    "left": [
+      "Weak event",
+      "Strong event",
+      "EventAggregator",
+      "Observable"
+    ],
+    "right": [
+      "No memory leak",
+      "Standard event",
+      "Event bus",
+      "Reactive stream"
+    ]
+  },
+  {
+    "q": "What is the output of this exception in delegate?",
+    "type": "mcq",
+    "c": "delegate void Process();\nProcess p = () => Console.Write(\"A\");\np += () => { throw new Exception(); };\np += () => Console.Write(\"B\");\ntry { p(); } catch { Console.Write(\"E\"); }",
+    "o": [
+      "AE",
+      "AEB",
+      "AB",
+      "E"
+    ]
+  },
+  {
+    "q": "Rearrange the event-driven architecture flow:",
+    "type": "rearrange",
+    "words": [
+      "State change",
+      "Event raised",
+      "Handlers notified",
+      "State updated"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate contravariance?",
+    "type": "mcq",
+    "c": "delegate void ProcessObject(object obj);\nAction<string> processString = s => Console.WriteLine(\"String\");\nProcessObject po = processString;",
+    "o": [
+      "Error",
+      "String",
+      "Compiles",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Lambda expressions can capture variables from outer scope.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex delegate composition?",
+    "type": "mcq",
+    "c": "delegate void Log(string msg);\nLog logger = msg => Console.Write(\"A:\");\nlogger += msg => Console.Write(msg);\nlogger += msg => Console.Write(\":B\");\nlogger(\"X\");",
+    "o": [
+      "A:X:B",
+      "XAB",
+      "ABX",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method removes all handlers from a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "null assignment"
+    ],
+    "other_options": [
+      "Clear",
+      "RemoveAll",
+      "Reset"
+    ]
+  },
+  {
+    "q": "Event accessors allow custom add/remove logic.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event patterns:",
+    "type": "match",
+    "left": [
+      "EventHandler",
+      "EventHandler<T>",
+      "Action<T>",
+      "Func<T>"
+    ],
+    "right": [
+      "Non-generic event",
+      "Generic event",
+      "Void delegate",
+      "Return delegate"
+    ]
+  },
+  {
+    "q": "What is the output of this exception in delegate?",
+    "type": "mcq",
+    "c": "delegate void Process();\nProcess p = () => Console.Write(\"A\");\np += () => { throw new Exception(); };\np += () => Console.Write(\"B\");\ntry { p(); } catch { Console.Write(\"E\"); }",
+    "o": [
+      "AE",
+      "AEB",
+      "AB",
+      "E"
+    ]
+  },
+  {
+    "q": "Rearrange the event-driven architecture flow:",
+    "type": "rearrange",
+    "words": [
+      "State change",
+      "Event raised",
+      "Handlers notified",
+      "State updated"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate contravariance?",
+    "type": "mcq",
+    "c": "delegate void ProcessObject(object obj);\nAction<string> processString = s => Console.WriteLine(\"String\");\nProcessObject po = processString;",
+    "o": [
+      "Error",
+      "String",
+      "Compiles",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Lambda expressions can capture variables from outer scope.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex delegate composition?",
+    "type": "mcq",
+    "c": "delegate void Log(string msg);\nLog logger = msg => Console.Write(\"A:\");\nlogger += msg => Console.Write(msg);\nlogger += msg => Console.Write(\":B\");\nlogger(\"X\");",
+    "o": [
+      "A:X:B",
+      "XAB",
+      "ABX",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method removes all handlers from a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "null assignment"
+    ],
+    "other_options": [
+      "Clear",
+      "RemoveAll",
+      "Reset"
+    ]
+  },
+  {
+    "q": "Event accessors allow custom add/remove logic.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event patterns:",
+    "type": "match",
+    "left": [
+      "SynchronizationContext",
+      "Dispatcher",
+      "TaskScheduler",
+      "Thread"
+    ],
+    "right": [
+      "Cross-thread",
+      "UI thread",
+      "Task thread",
+      "Worker thread"
+    ]
+  },
+  {
+    "q": "What is the output of this exception in delegate?",
+    "type": "mcq",
+    "c": "delegate void Process();\nProcess p = () => Console.Write(\"A\");\np += () => { throw new Exception(); };\np += () => Console.Write(\"B\");\ntry { p(); } catch { Console.Write(\"E\"); }",
+    "o": [
+      "AE",
+      "AEB",
+      "AB",
+      "E"
+    ]
+  },
+  {
+    "q": "Rearrange the event-driven architecture flow:",
+    "type": "rearrange",
+    "words": [
+      "State change",
+      "Event raised",
+      "Handlers notified",
+      "State updated"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate contravariance?",
+    "type": "mcq",
+    "c": "delegate void ProcessObject(object obj);\nAction<string> processString = s => Console.WriteLine(\"String\");\nProcessObject po = processString;",
+    "o": [
+      "Error",
+      "String",
+      "Compiles",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Lambda expressions can capture variables from outer scope.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex delegate composition?",
+    "type": "mcq",
+    "c": "delegate void Log(string msg);\nLog logger = msg => Console.Write(\"A:\");\nlogger += msg => Console.Write(msg);\nlogger += msg => Console.Write(\":B\");\nlogger(\"X\");",
+    "o": [
+      "A:X:B",
+      "XAB",
+      "ABX",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method removes all handlers from a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "null assignment"
+    ],
+    "other_options": [
+      "Clear",
+      "RemoveAll",
+      "Reset"
+    ]
+  },
+  {
+    "q": "Event accessors allow custom add/remove logic.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event patterns:",
+    "type": "match",
+    "left": [
+      "Weak event",
+      "Strong event",
+      "EventAggregator",
+      "Observable"
+    ],
+    "right": [
+      "No memory leak",
+      "Standard event",
+      "Event bus",
+      "Reactive stream"
+    ]
+  },
+  {
+    "q": "What is the output of this exception in delegate?",
+    "type": "mcq",
+    "c": "delegate void Process();\nProcess p = () => Console.Write(\"A\");\np += () => { throw new Exception(); };\np += () => Console.Write(\"B\");\ntry { p(); } catch { Console.Write(\"E\"); }",
+    "o": [
+      "AE",
+      "AEB",
+      "AB",
+      "E"
+    ]
+  },
+  {
+    "q": "Rearrange the event-driven architecture flow:",
+    "type": "rearrange",
+    "words": [
+      "State change",
+      "Event raised",
+      "Handlers notified",
+      "State updated"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate contravariance?",
+    "type": "mcq",
+    "c": "delegate void ProcessObject(object obj);\nAction<string> processString = s => Console.WriteLine(\"String\");\nProcessObject po = processString;",
+    "o": [
+      "Error",
+      "String",
+      "Compiles",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Lambda expressions can capture variables from outer scope.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex delegate composition?",
+    "type": "mcq",
+    "c": "delegate void Log(string msg);\nLog logger = msg => Console.Write(\"A:\");\nlogger += msg => Console.Write(msg);\nlogger += msg => Console.Write(\":B\");\nlogger(\"X\");",
+    "o": [
+      "A:X:B",
+      "XAB",
+      "ABX",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method removes all handlers from a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "null assignment"
+    ],
+    "other_options": [
+      "Clear",
+      "RemoveAll",
+      "Reset"
+    ]
+  },
+  {
+    "q": "Event accessors allow custom add/remove logic.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event patterns:",
+    "type": "match",
+    "left": [
+      "EventHandler",
+      "EventHandler<T>",
+      "Action<T>",
+      "Func<T>"
+    ],
+    "right": [
+      "Non-generic event",
+      "Generic event",
+      "Void delegate",
+      "Return delegate"
+    ]
+  },
+  {
+    "q": "What is the output of this exception in delegate?",
+    "type": "mcq",
+    "c": "delegate void Process();\nProcess p = () => Console.Write(\"A\");\np += () => { throw new Exception(); };\np += () => Console.Write(\"B\");\ntry { p(); } catch { Console.Write(\"E\"); }",
+    "o": [
+      "AE",
+      "AEB",
+      "AB",
+      "E"
+    ]
+  },
+  {
+    "q": "Rearrange the event-driven architecture flow:",
+    "type": "rearrange",
+    "words": [
+      "State change",
+      "Event raised",
+      "Handlers notified",
+      "State updated"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate contravariance?",
+    "type": "mcq",
+    "c": "delegate void ProcessObject(object obj);\nAction<string> processString = s => Console.WriteLine(\"String\");\nProcessObject po = processString;",
+    "o": [
+      "Error",
+      "String",
+      "Compiles",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Lambda expressions can capture variables from outer scope.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex delegate composition?",
+    "type": "mcq",
+    "c": "delegate void Log(string msg);\nLog logger = msg => Console.Write(\"A:\");\nlogger += msg => Console.Write(msg);\nlogger += msg => Console.Write(\":B\");\nlogger(\"X\");",
+    "o": [
+      "A:X:B",
+      "XAB",
+      "ABX",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method removes all handlers from a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "null assignment"
+    ],
+    "other_options": [
+      "Clear",
+      "RemoveAll",
+      "Reset"
+    ]
+  },
+  {
+    "q": "Event accessors allow custom add/remove logic.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event patterns:",
+    "type": "match",
+    "left": [
+      "SynchronizationContext",
+      "Dispatcher",
+      "TaskScheduler",
+      "Thread"
+    ],
+    "right": [
+      "Cross-thread",
+      "UI thread",
+      "Task thread",
+      "Worker thread"
+    ]
+  },
+  {
+    "q": "What is the output of this exception in delegate?",
+    "type": "mcq",
+    "c": "delegate void Process();\nProcess p = () => Console.Write(\"A\");\np += () => { throw new Exception(); };\np += () => Console.Write(\"B\");\ntry { p(); } catch { Console.Write(\"E\"); }",
+    "o": [
+      "AE",
+      "AEB",
+      "AB",
+      "E"
+    ]
+  },
+  {
+    "q": "Rearrange the event-driven architecture flow:",
+    "type": "rearrange",
+    "words": [
+      "State change",
+      "Event raised",
+      "Handlers notified",
+      "State updated"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate contravariance?",
+    "type": "mcq",
+    "c": "delegate void ProcessObject(object obj);\nAction<string> processString = s => Console.WriteLine(\"String\");\nProcessObject po = processString;",
+    "o": [
+      "Error",
+      "String",
+      "Compiles",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Lambda expressions can capture variables from outer scope.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex delegate composition?",
+    "type": "mcq",
+    "c": "delegate void Log(string msg);\nLog logger = msg => Console.Write(\"A:\");\nlogger += msg => Console.Write(msg);\nlogger += msg => Console.Write(\":B\");\nlogger(\"X\");",
+    "o": [
+      "A:X:B",
+      "XAB",
+      "ABX",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method removes all handlers from a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "null assignment"
+    ],
+    "other_options": [
+      "Clear",
+      "RemoveAll",
+      "Reset"
+    ]
+  },
+  {
+    "q": "Event accessors allow custom add/remove logic.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event patterns:",
+    "type": "match",
+    "left": [
+      "Weak event",
+      "Strong event",
+      "EventAggregator",
+      "Observable"
+    ],
+    "right": [
+      "No memory leak",
+      "Standard event",
+      "Event bus",
+      "Reactive stream"
+    ]
+  },
+  {
+    "q": "What is the output of this exception in delegate?",
+    "type": "mcq",
+    "c": "delegate void Process();\nProcess p = () => Console.Write(\"A\");\np += () => { throw new Exception(); };\np += () => Console.Write(\"B\");\ntry { p(); } catch { Console.Write(\"E\"); }",
+    "o": [
+      "AE",
+      "AEB",
+      "AB",
+      "E"
+    ]
+  },
+  {
+    "q": "Rearrange the event-driven architecture flow:",
+    "type": "rearrange",
+    "words": [
+      "State change",
+      "Event raised",
+      "Handlers notified",
+      "State updated"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate contravariance?",
+    "type": "mcq",
+    "c": "delegate void ProcessObject(object obj);\nAction<string> processString = s => Console.WriteLine(\"String\");\nProcessObject po = processString;",
+    "o": [
+      "Error",
+      "String",
+      "Compiles",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Lambda expressions can capture variables from outer scope.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex delegate composition?",
+    "type": "mcq",
+    "c": "delegate void Log(string msg);\nLog logger = msg => Console.Write(\"A:\");\nlogger += msg => Console.Write(msg);\nlogger += msg => Console.Write(\":B\");\nlogger(\"X\");",
+    "o": [
+      "A:X:B",
+      "XAB",
+      "ABX",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method removes all handlers from a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "null assignment"
+    ],
+    "other_options": [
+      "Clear",
+      "RemoveAll",
+      "Reset"
+    ]
+  },
+  {
+    "q": "Event accessors allow custom add/remove logic.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event patterns:",
+    "type": "match",
+    "left": [
+      "EventHandler",
+      "EventHandler<T>",
+      "Action<T>",
+      "Func<T>"
+    ],
+    "right": [
+      "Non-generic event",
+      "Generic event",
+      "Void delegate",
+      "Return delegate"
+    ]
+  },
+  {
+    "q": "What is the output of this exception in delegate?",
+    "type": "mcq",
+    "c": "delegate void Process();\nProcess p = () => Console.Write(\"A\");\np += () => { throw new Exception(); };\np += () => Console.Write(\"B\");\ntry { p(); } catch { Console.Write(\"E\"); }",
+    "o": [
+      "AE",
+      "AEB",
+      "AB",
+      "E"
+    ]
+  },
+  {
+    "q": "Rearrange the event-driven architecture flow:",
+    "type": "rearrange",
+    "words": [
+      "State change",
+      "Event raised",
+      "Handlers notified",
+      "State updated"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate contravariance?",
+    "type": "mcq",
+    "c": "delegate void ProcessObject(object obj);\nAction<string> processString = s => Console.WriteLine(\"String\");\nProcessObject po = processString;",
+    "o": [
+      "Error",
+      "String",
+      "Compiles",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Lambda expressions can capture variables from outer scope.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex delegate composition?",
+    "type": "mcq",
+    "c": "delegate void Log(string msg);\nLog logger = msg => Console.Write(\"A:\");\nlogger += msg => Console.Write(msg);\nlogger += msg => Console.Write(\":B\");\nlogger(\"X\");",
+    "o": [
+      "A:X:B",
+      "XAB",
+      "ABX",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method removes all handlers from a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "null assignment"
+    ],
+    "other_options": [
+      "Clear",
+      "RemoveAll",
+      "Reset"
+    ]
+  },
+  {
+    "q": "Event accessors allow custom add/remove logic.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event patterns:",
+    "type": "match",
+    "left": [
+      "SynchronizationContext",
+      "Dispatcher",
+      "TaskScheduler",
+      "Thread"
+    ],
+    "right": [
+      "Cross-thread",
+      "UI thread",
+      "Task thread",
+      "Worker thread"
+    ]
+  },
+  {
+    "q": "What is the output of this exception in delegate?",
+    "type": "mcq",
+    "c": "delegate void Process();\nProcess p = () => Console.Write(\"A\");\np += () => { throw new Exception(); };\np += () => Console.Write(\"B\");\ntry { p(); } catch { Console.Write(\"E\"); }",
+    "o": [
+      "AE",
+      "AEB",
+      "AB",
+      "E"
+    ]
+  },
+  {
+    "q": "Rearrange the event-driven architecture flow:",
+    "type": "rearrange",
+    "words": [
+      "State change",
+      "Event raised",
+      "Handlers notified",
+      "State updated"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate contravariance?",
+    "type": "mcq",
+    "c": "delegate void ProcessObject(object obj);\nAction<string> processString = s => Console.WriteLine(\"String\");\nProcessObject po = processString;",
+    "o": [
+      "Error",
+      "String",
+      "Compiles",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Lambda expressions can capture variables from outer scope.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex delegate composition?",
+    "type": "mcq",
+    "c": "delegate void Log(string msg);\nLog logger = msg => Console.Write(\"A:\");\nlogger += msg => Console.Write(msg);\nlogger += msg => Console.Write(\":B\");\nlogger(\"X\");",
+    "o": [
+      "A:X:B",
+      "XAB",
+      "ABX",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method removes all handlers from a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "null assignment"
+    ],
+    "other_options": [
+      "Clear",
+      "RemoveAll",
+      "Reset"
+    ]
+  },
+  {
+    "q": "Event accessors allow custom add/remove logic.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event patterns:",
+    "type": "match",
+    "left": [
+      "Weak event",
+      "Strong event",
+      "EventAggregator",
+      "Observable"
+    ],
+    "right": [
+      "No memory leak",
+      "Standard event",
+      "Event bus",
+      "Reactive stream"
+    ]
+  },
+  {
+    "q": "What is the output of this exception in delegate?",
+    "type": "mcq",
+    "c": "delegate void Process();\nProcess p = () => Console.Write(\"A\");\np += () => { throw new Exception(); };\np += () => Console.Write(\"B\");\ntry { p(); } catch { Console.Write(\"E\"); }",
+    "o": [
+      "AE",
+      "AEB",
+      "AB",
+      "E"
+    ]
+  },
+  {
+    "q": "Rearrange the event-driven architecture flow:",
+    "type": "rearrange",
+    "words": [
+      "State change",
+      "Event raised",
+      "Handlers notified",
+      "State updated"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate contravariance?",
+    "type": "mcq",
+    "c": "delegate void ProcessObject(object obj);\nAction<string> processString = s => Console.WriteLine(\"String\");\nProcessObject po = processString;",
+    "o": [
+      "Error",
+      "String",
+      "Compiles",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Lambda expressions can capture variables from outer scope.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex delegate composition?",
+    "type": "mcq",
+    "c": "delegate void Log(string msg);\nLog logger = msg => Console.Write(\"A:\");\nlogger += msg => Console.Write(msg);\nlogger += msg => Console.Write(\":B\");\nlogger(\"X\");",
+    "o": [
+      "A:X:B",
+      "XAB",
+      "ABX",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method removes all handlers from a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "null assignment"
+    ],
+    "other_options": [
+      "Clear",
+      "RemoveAll",
+      "Reset"
+    ]
+  },
+  {
+    "q": "Event accessors allow custom add/remove logic.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event patterns:",
+    "type": "match",
+    "left": [
+      "EventHandler",
+      "EventHandler<T>",
+      "Action<T>",
+      "Func<T>"
+    ],
+    "right": [
+      "Non-generic event",
+      "Generic event",
+      "Void delegate",
+      "Return delegate"
+    ]
+  },
+  {
+    "q": "What is the output of this exception in delegate?",
+    "type": "mcq",
+    "c": "delegate void Process();\nProcess p = () => Console.Write(\"A\");\np += () => { throw new Exception(); };\np += () => Console.Write(\"B\");\ntry { p(); } catch { Console.Write(\"E\"); }",
+    "o": [
+      "AE",
+      "AEB",
+      "AB",
+      "E"
+    ]
+  },
+  {
+    "q": "Rearrange the event-driven architecture flow:",
+    "type": "rearrange",
+    "words": [
+      "State change",
+      "Event raised",
+      "Handlers notified",
+      "State updated"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate contravariance?",
+    "type": "mcq",
+    "c": "delegate void ProcessObject(object obj);\nAction<string> processString = s => Console.WriteLine(\"String\");\nProcessObject po = processString;",
+    "o": [
+      "Error",
+      "String",
+      "Compiles",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Lambda expressions can capture variables from outer scope.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex delegate composition?",
+    "type": "mcq",
+    "c": "delegate void Log(string msg);\nLog logger = msg => Console.Write(\"A:\");\nlogger += msg => Console.Write(msg);\nlogger += msg => Console.Write(\":B\");\nlogger(\"X\");",
+    "o": [
+      "A:X:B",
+      "XAB",
+      "ABX",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method removes all handlers from a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "null assignment"
+    ],
+    "other_options": [
+      "Clear",
+      "RemoveAll",
+      "Reset"
+    ]
+  },
+  {
+    "q": "Event accessors allow custom add/remove logic.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event patterns:",
+    "type": "match",
+    "left": [
+      "SynchronizationContext",
+      "Dispatcher",
+      "TaskScheduler",
+      "Thread"
+    ],
+    "right": [
+      "Cross-thread",
+      "UI thread",
+      "Task thread",
+      "Worker thread"
+    ]
+  },
+  {
+    "q": "What is the output of this exception in delegate?",
+    "type": "mcq",
+    "c": "delegate void Process();\nProcess p = () => Console.Write(\"A\");\np += () => { throw new Exception(); };\np += () => Console.Write(\"B\");\ntry { p(); } catch { Console.Write(\"E\"); }",
+    "o": [
+      "AE",
+      "AEB",
+      "AB",
+      "E"
+    ]
+  },
+  {
+    "q": "Rearrange the event-driven architecture flow:",
+    "type": "rearrange",
+    "words": [
+      "State change",
+      "Event raised",
+      "Handlers notified",
+      "State updated"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate contravariance?",
+    "type": "mcq",
+    "c": "delegate void ProcessObject(object obj);\nAction<string> processString = s => Console.WriteLine(\"String\");\nProcessObject po = processString;",
+    "o": [
+      "Error",
+      "String",
+      "Compiles",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Lambda expressions can capture variables from outer scope.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex delegate composition?",
+    "type": "mcq",
+    "c": "delegate void Log(string msg);\nLog logger = msg => Console.Write(\"A:\");\nlogger += msg => Console.Write(msg);\nlogger += msg => Console.Write(\":B\");\nlogger(\"X\");",
+    "o": [
+      "A:X:B",
+      "XAB",
+      "ABX",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method removes all handlers from a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "null assignment"
+    ],
+    "other_options": [
+      "Clear",
+      "RemoveAll",
+      "Reset"
+    ]
+  },
+  {
+    "q": "Event accessors allow custom add/remove logic.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event patterns:",
+    "type": "match",
+    "left": [
+      "Weak event",
+      "Strong event",
+      "EventAggregator",
+      "Observable"
+    ],
+    "right": [
+      "No memory leak",
+      "Standard event",
+      "Event bus",
+      "Reactive stream"
+    ]
+  },
+  {
+    "q": "What is the output of this exception in delegate?",
+    "type": "mcq",
+    "c": "delegate void Process();\nProcess p = () => Console.Write(\"A\");\np += () => { throw new Exception(); };\np += () => Console.Write(\"B\");\ntry { p(); } catch { Console.Write(\"E\"); }",
+    "o": [
+      "AE",
+      "AEB",
+      "AB",
+      "E"
+    ]
+  },
+  {
+    "q": "Rearrange the event-driven architecture flow:",
+    "type": "rearrange",
+    "words": [
+      "State change",
+      "Event raised",
+      "Handlers notified",
+      "State updated"
+    ]
+  },
+  {
+    "q": "What is the output of this delegate contravariance?",
+    "type": "mcq",
+    "c": "delegate void ProcessObject(object obj);\nAction<string> processString = s => Console.WriteLine(\"String\");\nProcessObject po = processString;",
+    "o": [
+      "Error",
+      "String",
+      "Compiles",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Lambda expressions can capture variables from outer scope.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex delegate composition?",
+    "type": "mcq",
+    "c": "delegate void Log(string msg);\nLog logger = msg => Console.Write(\"A:\");\nlogger += msg => Console.Write(msg);\nlogger += msg => Console.Write(\":B\");\nlogger(\"X\");",
+    "o": [
+      "A:X:B",
+      "XAB",
+      "ABX",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method removes all handlers from a multicast delegate.",
+    "type": "fill_blank",
+    "answers": [
+      "null assignment"
+    ],
+    "other_options": [
+      "Clear",
+      "RemoveAll",
+      "Reset"
+    ]
+  },
+  {
+    "q": "Event accessors allow custom add/remove logic.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the event patterns:",
+    "type": "match",
+    "left": [
+      "EventHandler",
+      "EventHandler<T>",
+      "Action<T>",
+      "Func<T>"
+    ],
+    "right": [
+      "Non-generic event",
+      "Generic event",
+      "Void delegate",
+      "Return delegate"
+    ]
+  },
+  {
+    "q": "What is the output of this exception in delegate?",
+    "type": "mcq",
+    "c": "delegate void Process();\nProcess p = () => Console.Write(\"A\");\np += () => { throw new Exception(); };\np += () => Console.Write(\"B\");\ntry { p(); } catch { Console.Write(\"E\"); }",
+    "o": [
+      "AE",
+      "AEB",
+      "AB",
+      "E"
+    ]
+  }
+]

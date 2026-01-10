@@ -1,0 +1,79 @@
+{
+    "id": "learn_delegate",
+    "topicId": "delegate",
+    "topicTitle": "Delegates and Events",
+    "description": "Understand the event-driven nature of C# using Delegates (Function Pointers) and Events.",
+    "baseKP": 80,
+    "slides": [
+        {
+            "id": "del_1",
+            "type": "content",
+            "title": "Function Pointers 2.0 🎯",
+            "content": "# What is a Delegate?\n\nA **Delegate** is an object that holds a reference to a method. It allows you to pass methods as arguments to other methods.\n\n```csharp\n// 1. Declare\npublic delegate void Notify(string message);\n\n// 2. Instantiate\nNotify myDelegate = MyMethod;\n\n// 3. Invoke\nmyDelegate(\"Hello!\");\n```"
+        },
+        {
+            "id": "del_2",
+            "type": "content",
+            "title": "Multicast Delegates",
+            "content": "# Chain Reaction ⛓️\n\nA delegate can point to multiple methods. Invoking it calls them all in order.\n\n```csharp\nNotify del = MethodA;\ndel += MethodB; // Add MethodB\n\ndel(\"Go!\"); // Calls MethodA then MethodB\n\ndel -= MethodA; // Remove MethodA\n```"
+        },
+        {
+            "id": "del_3",
+            "type": "content",
+            "title": "Lambda Expressions",
+            "content": "# Concise Code 🤏\n\nInstead of defining a whole method, use Lambdas.\n\n```csharp\n// Old way\ndelegate int Square(int x);\nSquare s = GetSquare;\n\n// Lambda way\nSquare s = (x) => x * x;\n\nConsole.WriteLine(s(5)); // 25\n```\nThe `=>` operator is read as \"goes to\"."
+        },
+        {
+            "id": "del_quiz_1",
+            "type": "quiz",
+            "title": "Lambda Syntax",
+            "content": "Which operator is used for lambda expressions?",
+            "quizQuestion": "Operator:",
+            "quizOptions": [
+                "->",
+                "=>",
+                "::",
+                "+="
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "del_4",
+            "type": "content",
+            "title": "Events",
+            "content": "# Something Happened! 📢\n\n**Events** allow a class to notify other classes when something interesting occurs (like a button click).\n\nIt is based on the Publisher-Subscriber model.\n\n```csharp\npublic class Button {\n    // Declare event\n    public event EventHandler Clicked;\n    \n    public void Press() {\n        // Raise event\n        if (Clicked != null) Clicked(this, EventArgs.Empty);\n    }\n}\n```"
+        },
+        {
+            "id": "del_5",
+            "type": "content",
+            "title": "Built-in Delegates",
+            "content": "# No more declarations 📦\n\nC# provides generic delegates so you don't have to declare your own.\n\n1.  **`Action`**: Returns void. `Action<int, string>`.\n2.  **`Func`**: Returns a value. `Func<int, int>` (Last type is return type).\n3.  **`Predicate`**: Returns bool. `Predicate<int>`.\n\n```csharp\nFunc<int, int, int> add = (a, b) => a + b;\nint result = add(5, 10);\n```"
+        },
+        {
+            "id": "del_6",
+            "type": "content",
+            "title": "Full Example: Event System",
+            "content": "# Notification System\n\n<!-- FULL_CODE_START\nusing System;\n\n// 1. Publisher\npublic class VideoUploader {\n    // Define event using standard delegate\n    public event EventHandler<string> VideoUploaded;\n\n    public void Upload(string title) {\n        Console.WriteLine($\"Uploading '{title}'...\");\n        System.Threading.Thread.Sleep(1000);\n        \n        // Notify subscribers\n        OnVideoUploaded(title);\n    }\n\n    protected virtual void OnVideoUploaded(string title) {\n        VideoUploaded?.Invoke(this, title);\n    }\n}\n\n// 2. Subscriber\npublic class Subscriber {\n    public void OnVideoUploaded(object sender, string title) {\n        Console.WriteLine($\"Subscriber: New video '{title}' is out!\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        VideoUploader uploader = new VideoUploader();\n        Subscriber sub = new Subscriber();\n        \n        // Subscribe\n        uploader.VideoUploaded += sub.OnVideoUploaded;\n        \n        uploader.Upload(\"C# Tutorial\");\n    }\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "del_quiz_2",
+            "type": "quiz",
+            "title": "Generic Delegates",
+            "content": "Which built-in delegate represents a method that returns a value?",
+            "quizQuestion": "Returns Value:",
+            "quizOptions": [
+                "Action",
+                "Func",
+                "Predicate",
+                "Event"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "del_7",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: Events 🎓\n\nMaking things reactive!\n\n## Key Takeaways\n- **Delegate:** Holds method reference.\n- **Unicast/Multicast:** Can hold one or many methods.\n- **Event:** A wrapper around delegates for safety (Pub/Sub).\n- **Lambda:** `(args) => expression`.\n- **Func/Action:** Ready-to-use delegates.\n\nNext, we'll see how to store data efficiently using **Collections and Generics**!"
+        }
+    ]
+}

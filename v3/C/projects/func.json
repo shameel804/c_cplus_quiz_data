@@ -1,0 +1,102 @@
+[
+    {
+        "title": "Defining a Function",
+        "ques": "Write a C function named `greet` that takes **no arguments** and returns **nothing** (void), but prints \"Welcome to C Programming!\" when called.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\n// Function definition\nvoid greet() {\n    printf(\"Welcome to C Programming!\\n\");\n}\n\nint main() {\n    greet(); // Calling the function\n    return 0;\n}"
+        },
+        "explanation": "A function is defined with a return type (here `void`), a name (`greet`), and a body enclosed in braces `{}`."
+    },
+    {
+        "title": "Function Parameters",
+        "ques": "Create a function `add` that accepts two integers as **parameters** and prints their sum. Call this function from `main` with values 10 and 20.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nvoid add(int a, int b) {\n    printf(\"Sum: %d\\n\", a + b);\n}\n\nint main() {\n    add(10, 20);\n    return 0;\n}"
+        },
+        "explanation": "Parameters act as placeholders. When `add(10, 20)` is called, `a` becomes 10 and `b` becomes 20."
+    },
+    {
+        "title": "Return Values",
+        "ques": "Write a function `multiply` that takes two integers, multiplies them, and **returns** the result. Print the returned value in `main`.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint multiply(int x, int y) {\n    return x * y;\n}\n\nint main() {\n    int result = multiply(5, 4);\n    printf(\"Product: %d\\n\", result);\n    return 0;\n}"
+        },
+        "explanation": "The `return` statement sends a value back to the caller. The function's return type must match the type of the value returned (here `int`)."
+    },
+    {
+        "title": "Function Prototypes",
+        "ques": "Explain why a **function prototype** is required if the function definition comes *after* the `main` function. Show an example.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\n// Function prototype\nvoid display();\n\nint main() {\n    display();\n    return 0;\n}\n\n// Function definition\nvoid display() {\n    printf(\"Function defined after main\\n\");\n}"
+        },
+        "explanation": "A prototype (declaration) tells the compiler about the function's name and signature before it is used, allowing the definition to be placed anywhere (e.g., after `main`)."
+    },
+    {
+        "title": "Recursion",
+        "ques": "Write a **recursive** function `factorial` that calculates the factorial of a number `n`. (Recall: `n! = n * (n-1)!` and `0! = 1`).",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint factorial(int n) {\n    if (n == 0)\n        return 1;\n    else\n        return n * factorial(n - 1);\n}\n\nint main() {\n    printf(\"Factorial of 5: %d\\n\", factorial(5));\n    return 0;\n}"
+        },
+        "explanation": "Recursion occurs when a function calls itself. It needs a base case (`n == 0`) to stop the recursion, otherwise it will run indefinitely (stack overflow)."
+    },
+    {
+        "title": "Pass by Value",
+        "ques": "Demonstrate **pass by value** by creating a function that attempts to swap two numbers but fails to affect the original variables in `main`.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nvoid swap(int x, int y) {\n    int temp = x;\n    x = y;\n    y = temp;\n    printf(\"Inside function: x=%d, y=%d\\n\", x, y);\n}\n\nint main() {\n    int a = 10, b = 20;\n    swap(a, b);\n    printf(\"Inside main: a=%d, b=%d\\n\", a, b);\n    return 0;\n}"
+        },
+        "explanation": "In logical C pass-by-value, a copy of the variable is passed. Changes inside the function only affect the copy, not the original variables."
+    },
+    {
+        "title": "Math Library Functions",
+        "ques": "Use the standard library function `pow()` from `<math.h>` to calculate **2 raised to the power of 3**.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n#include <math.h>\n\nint main() {\n    double base = 2.0, exp = 3.0;\n    double result = pow(base, exp);\n    printf(\"Result: %.1f\\n\", result);\n    return 0;\n}"
+        },
+        "explanation": "C provides standard libraries like `math.h` containing useful functions. `pow(x, y)` computes x to the power of y."
+    },
+    {
+        "title": "Static Variables",
+        "ques": "Write a function `counter` with a **static** variable that increments every time the function is called. Call it 3 times to show the value persisting.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nvoid counter() {\n    static int count = 0;\n    count++;\n    printf(\"Count: %d\\n\", count);\n}\n\nint main() {\n    counter();\n    counter();\n    counter();\n    return 0;\n}"
+        },
+        "explanation": "A `static` local variable retains its value between function calls. It is initialized only once."
+    },
+    {
+        "title": "Prime Number Check",
+        "ques": "Create a function `isPrime` that returns 1 if a number is **prime** and 0 otherwise. Test it with the number 17.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint isPrime(int n) {\n    if (n <= 1) return 0;\n    for (int i = 2; i * i <= n; i++) {\n        if (n % i == 0) return 0;\n    }\n    return 1;\n}\n\nint main() {\n    if (isPrime(17)) printf(\"17 is Prime\\n\");\n    else printf(\"17 is not Prime\\n\");\n    return 0;\n}"
+        },
+        "explanation": "This function encapsulates the logic for primality testing, adhering to the DRY (Don't Repeat Yourself) principle."
+    },
+    {
+        "title": "Recursive Fibonacci",
+        "ques": "Write a **recursive** function to return the `n`th Fibonacci number (where inputs 0->0, 1->1, 2->1, 3->2, etc.).",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint fib(int n) {\n    if (n <= 1)\n        return n;\n    return fib(n - 1) + fib(n - 2);\n}\n\nint main() {\n    printf(\"5th Fibonacci number: %d\\n\", fib(5));\n    return 0;\n}"
+        },
+        "explanation": "The Fibonacci sequence is defined recursively: `F(n) = F(n-1) + F(n-2)`. Recursive functions express this mathematical definition directly."
+    }
+]

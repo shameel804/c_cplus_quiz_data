@@ -1,0 +1,112 @@
+[
+    {
+        "title": "Declaring arrays",
+        "ques": "Declare an integer array named `numbers` of **size 5** and initialize it with values **10, 20, 30, 40, 50**. Write a loop to print all elements.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    int numbers[5] = {10, 20, 30, 40, 50};\n    for (int i = 0; i < 5; i++) {\n        printf(\"%d\\n\", numbers[i]);\n    }\n    return 0;\n}"
+        },
+        "explanation": "Arrays allow storing multiple values of the same type. `numbers[i]` accesses the element at index `i` (indices start at 0)."
+    },
+    {
+        "title": "Array Input",
+        "ques": "Write a program that declares an array of size 5, asks the user to **input 5 integers**, stores them in the array, and then prints them in **reverse order**.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    int arr[5];\n    printf(\"Enter 5 numbers: \");\n    for (int i = 0; i < 5; i++) {\n        scanf(\"%d\", &arr[i]);\n    }\n    printf(\"Reversed: \");\n    for (int i = 4; i >= 0; i--) {\n        printf(\"%d \", arr[i]);\n    }\n    return 0;\n}"
+        },
+        "explanation": "We fill the array using a loop from `0` to `4`. To print in reverse, we loop backwards from index `4` down to `0`."
+    },
+    {
+        "title": "Sum of Array Elements",
+        "ques": "Write a C program to find the **sum** of all elements in an array `{1, 2, 3, 4, 5}`.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    int arr[] = {1, 2, 3, 4, 5};\n    int sum = 0;\n    int size = sizeof(arr) / sizeof(arr[0]);\n    for (int i = 0; i < size; i++) {\n        sum += arr[i];\n    }\n    printf(\"Sum: %d\\n\", sum);\n    return 0;\n}"
+        },
+        "explanation": "We iterate through the array, adding each element `arr[i]` to a `sum` variable initialized to 0."
+    },
+    {
+        "title": "Finding Maximum",
+        "ques": "Create a program to find the **largest value** (maximum) in an array of integers `{12, 45, 2, 19, 5}`.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    int arr[] = {12, 45, 2, 19, 5};\n    int max = arr[0]; \n    for (int i = 1; i < 5; i++) {\n        if (arr[i] > max) {\n            max = arr[i];\n        }\n    }\n    printf(\"Max: %d\\n\", max);\n    return 0;\n}"
+        },
+        "explanation": "Initialize `max` with the first element. Then compare every subsequent element; if an element is greater than `max`, update `max`."
+    },
+    {
+        "title": "2D Arrays (Matrix)",
+        "ques": "Declare a 2D array (matrix) of size **2x3**. Initialize it with values `{{1, 2, 3}, {4, 5, 6}}` and print it in a grid format using nested loops.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    int matrix[2][3] = {{1, 2, 3}, {4, 5, 6}};\n    for (int i = 0; i < 2; i++) {\n        for (int j = 0; j < 3; j++) {\n            printf(\"%d \", matrix[i][j]);\n        }\n        printf(\"\\n\");\n    }\n    return 0;\n}"
+        },
+        "explanation": "A 2D array is essentially an array of arrays. `matrix[i][j]` accesses the element at row `i` and column `j`."
+    },
+    {
+        "title": "Strings in C",
+        "ques": "Strings in C are arrays of characters terminated by a null character. Define a string variable containing **\"Hello\"** and print it.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    char greeting[] = \"Hello\";\n    printf(\"%s\\n\", greeting);\n    return 0;\n}"
+        },
+        "explanation": "The string \"Hello\" is stored as `{'H', 'e', 'l', 'l', 'o', '\\0'}`. The `%s` format specifer is used to print strings."
+    },
+    {
+        "title": "String Input",
+        "ques": "Write a program that asks for the user's **name** and prints a greeting. Use `scanf` (assuming no spaces in name) or `fgets`.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    char name[50];\n    printf(\"Enter your name: \");\n    scanf(\"%s\", name);\n    printf(\"Hello, %s!\\n\", name);\n    return 0;\n}"
+        },
+        "explanation": "For strings, `scanf(\"%s\", name)` does not need the `&` operator because the array name itself acts as a pointer to the first element. Note: `%s` stops at whitespace."
+    },
+    {
+        "title": "String Length (strlen)",
+        "ques": "Use the `strlen` function from `<string.h>` to find and print the **length** of the string \"Programming\".",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char str[] = \"Programming\";\n    printf(\"Length: %lu\\n\", strlen(str));\n    return 0;\n}"
+        },
+        "explanation": "`strlen` returns the number of characters in the string, excluding the null terminator (`\\0`). \"Programming\" has 11 characters."
+    },
+    {
+        "title": "String Concatenation (strcat)",
+        "ques": "Demonstrate `strcat` to combine two strings. Initialize `s1` with \"Hello \" and `s2` with \"World\", then append `s2` to `s1`.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char s1[20] = \"Hello \"; // Ensure enough space\n    char s2[] = \"World\";\n    strcat(s1, s2);\n    printf(\"Result: %s\\n\", s1);\n    return 0;\n}"
+        },
+        "explanation": "`strcat(dest, src)` appends the `src` string to the end of the `dest` string. The destination array must have enough size to hold the result."
+    },
+    {
+        "title": "String Copy (strcpy)",
+        "ques": "Use `strcpy` to copy the content of one string variable `src` into another `dest`.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char src[] = \"CopyMe\";\n    char dest[20];\n    strcpy(dest, src);\n    printf(\"Dest: %s\\n\", dest);\n    return 0;\n}"
+        },
+        "explanation": "`strcpy(dest, src)` copies the string pointed to by `src` (including the null character) to the buffer pointed to by `dest`."
+    },
+    {
+        "title": "String Comparison (strcmp)",
+        "ques": "Write a program that compares two strings \"apple\" and \"banana\" using `strcmp` and prints which one comes first alphabetically.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n#include <string.h>\n\nint main() {\n    char s1[] = \"apple\";\n    char s2[] = \"banana\";\n    int result = strcmp(s1, s2);\n    if (result < 0) {\n        printf(\"%s comes first\\n\", s1);\n    } else if (result > 0) {\n        printf(\"%s comes first\\n\", s2);\n    } else {\n        printf(\"Strings are equal\\n\");\n    }\n    return 0;\n}"
+        },
+        "explanation": "`strcmp` returns `0` if strings are equal, negative if the first is lexicographically smaller, and positive if the first is larger."
+    }
+]

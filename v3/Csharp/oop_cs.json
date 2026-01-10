@@ -1,0 +1,6462 @@
+[
+  {
+    "q": "What is a class in C#?",
+    "type": "mcq",
+    "o": [
+      "A blueprint for creating objects",
+      "A variable type",
+      "A method declaration",
+      "A namespace"
+    ]
+  },
+  {
+    "q": "What is an object in C#?",
+    "type": "mcq",
+    "o": [
+      "An instance of a class",
+      "A type definition",
+      "A static method",
+      "A namespace"
+    ]
+  },
+  {
+    "q": "The ______ keyword is used to create an object.",
+    "type": "fill_blank",
+    "answers": [
+      "new"
+    ],
+    "other_options": [
+      "create",
+      "object",
+      "instance"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Dog { public string Name = \"Buddy\"; }\nvar d = new Dog();\nConsole.WriteLine(d.Name);",
+    "o": [
+      "Buddy",
+      "Dog",
+      "Name",
+      "Error"
+    ]
+  },
+  {
+    "q": "A class can contain fields, properties, and methods.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Counter { public int Value = 0; }\nvar c = new Counter();\nc.Value = 5;\nConsole.WriteLine(c.Value);",
+    "o": [
+      "5",
+      "0",
+      "Error",
+      "Value"
+    ]
+  },
+  {
+    "q": "Which keyword defines a class in C#?",
+    "type": "mcq",
+    "o": [
+      "class",
+      "type",
+      "struct",
+      "object"
+    ]
+  },
+  {
+    "q": "Match the OOP terms with their definitions:",
+    "type": "match",
+    "left": [
+      "Class",
+      "Object",
+      "Method",
+      "Field"
+    ],
+    "right": [
+      "Blueprint",
+      "Instance",
+      "Behavior",
+      "Data"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Person { public string Name; }\nvar p = new Person();\nConsole.WriteLine(p.Name == null);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "Name"
+    ]
+  },
+  {
+    "q": "Reference type variables default to null.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is encapsulation?",
+    "type": "mcq",
+    "o": [
+      "Hiding internal details and exposing only necessary parts",
+      "Creating multiple classes",
+      "Inheriting from a base class",
+      "Defining interfaces"
+    ]
+  },
+  {
+    "q": "The ______ access modifier makes a member accessible only within the same class.",
+    "type": "fill_blank",
+    "answers": [
+      "private"
+    ],
+    "other_options": [
+      "public",
+      "protected",
+      "internal"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Box { private int size = 10; public int GetSize() => size; }\nvar b = new Box();\nConsole.WriteLine(b.GetSize());",
+    "o": [
+      "10",
+      "Error",
+      "size",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the steps to create and use a class:",
+    "type": "rearrange",
+    "words": [
+      "Define class",
+      "Add members",
+      "Create object",
+      "Use object"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Car\n{\n    public string Brand { get; set; }\n}\nvar car = new Car { Brand = \"Toyota\" };\nConsole.WriteLine(car.Brand);",
+    "o": [
+      "Toyota",
+      "Car",
+      "Brand",
+      "Error"
+    ]
+  },
+  {
+    "q": "Properties provide controlled access to fields.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Circle\n{\n    public double Radius { get; set; }\n    public double Area => Math.PI * Radius * Radius;\n}\nvar c = new Circle { Radius = 1 };\nConsole.WriteLine(Math.Round(c.Area, 2));",
+    "o": [
+      "3.14",
+      "1",
+      "Error",
+      "6.28"
+    ]
+  },
+  {
+    "q": "Match the property accessors with their purpose:",
+    "type": "match",
+    "left": [
+      "get",
+      "set",
+      "init",
+      "private set"
+    ],
+    "right": [
+      "Read value",
+      "Write value",
+      "Init only",
+      "Internal write"
+    ]
+  },
+  {
+    "q": "What is a constructor?",
+    "type": "mcq",
+    "o": [
+      "A special method called when an object is created",
+      "A method that destroys objects",
+      "A static method",
+      "A property accessor"
+    ]
+  },
+  {
+    "q": "The constructor has the same name as the class.",
+    "type": "fill_blank",
+    "answers": [
+      "same"
+    ],
+    "other_options": [
+      "different",
+      "unique",
+      "special"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Person\n{\n    public string Name;\n    public Person(string name) => Name = name;\n}\nvar p = new Person(\"Alice\");\nConsole.WriteLine(p.Name);",
+    "o": [
+      "Alice",
+      "Person",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "A class can have multiple constructors.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Point\n{\n    public int X, Y;\n    public Point() { X = 0; Y = 0; }\n    public Point(int x, int y) { X = x; Y = y; }\n}\nvar p = new Point(3, 4);\nConsole.WriteLine(p.X);",
+    "o": [
+      "3",
+      "0",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the constructor overloading sequence:",
+    "type": "rearrange",
+    "words": [
+      "Define parameterless",
+      "Define with params",
+      "Call appropriate",
+      "Object initialized"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Counter\n{\n    public int Count { get; private set; }\n    public void Increment() => Count++;\n}\nvar c = new Counter();\nc.Increment();\nc.Increment();\nConsole.WriteLine(c.Count);",
+    "o": [
+      "2",
+      "0",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword refers to the current instance?",
+    "type": "mcq",
+    "o": [
+      "this",
+      "self",
+      "me",
+      "current"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Person\n{\n    public string Name;\n    public Person(string name) => this.Name = name;\n}\nvar p = new Person(\"Bob\");\nConsole.WriteLine(p.Name);",
+    "o": [
+      "Bob",
+      "name",
+      "Error",
+      "this"
+    ]
+  },
+  {
+    "q": "Match the this keyword uses:",
+    "type": "match",
+    "left": [
+      "this.field",
+      "this()",
+      "this[index]",
+      "return this"
+    ],
+    "right": [
+      "Access field",
+      "Call constructor",
+      "Indexer",
+      "Return instance"
+    ]
+  },
+  {
+    "q": "What is constructor chaining?",
+    "type": "mcq",
+    "o": [
+      "One constructor calling another",
+      "Creating multiple objects",
+      "Inheriting constructors",
+      "Overriding methods"
+    ]
+  },
+  {
+    "q": "The ______ keyword chains to another constructor in the same class.",
+    "type": "fill_blank",
+    "answers": [
+      "this"
+    ],
+    "other_options": [
+      "base",
+      "super",
+      "chain"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Rectangle\n{\n    public int Width, Height;\n    public Rectangle() : this(1, 1) { }\n    public Rectangle(int w, int h) { Width = w; Height = h; }\n}\nvar r = new Rectangle();\nConsole.WriteLine(r.Width);",
+    "o": [
+      "1",
+      "0",
+      "Error",
+      "Width"
+    ]
+  },
+  {
+    "q": "Static members belong to the class, not instances.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Counter\n{\n    public static int Count = 0;\n    public Counter() => Count++;\n}\nnew Counter();\nnew Counter();\nConsole.WriteLine(Counter.Count);",
+    "o": [
+      "2",
+      "0",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword defines a member that belongs to the type.",
+    "type": "fill_blank",
+    "answers": [
+      "static"
+    ],
+    "other_options": [
+      "class",
+      "shared",
+      "common"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Math\n{\n    public static int Add(int a, int b) => a + b;\n}\nConsole.WriteLine(Math.Add(3, 5));",
+    "o": [
+      "8",
+      "Error",
+      "3",
+      "5"
+    ]
+  },
+  {
+    "q": "Rearrange static class usage steps:",
+    "type": "rearrange",
+    "words": [
+      "Define static class",
+      "Add static members",
+      "Call via class name",
+      "No instantiation"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "static class Utility\n{\n    public static string Greet(string name) => $\"Hello, {name}!\";\n}\nConsole.WriteLine(Utility.Greet(\"World\"));",
+    "o": [
+      "Hello, World!",
+      "Error",
+      "Utility",
+      "Greet"
+    ]
+  },
+  {
+    "q": "A static class cannot be instantiated.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Data\n{\n    static Data() => Console.Write(\"Static \");\n    public Data() => Console.Write(\"Instance\");\n}\nnew Data();",
+    "o": [
+      "Static Instance",
+      "Instance Static",
+      "Static",
+      "Instance"
+    ]
+  },
+  {
+    "q": "Match the static concepts:",
+    "type": "match",
+    "left": [
+      "Static field",
+      "Static method",
+      "Static constructor",
+      "Static class"
+    ],
+    "right": [
+      "Shared data",
+      "Called on type",
+      "Runs once",
+      "No instances"
+    ]
+  },
+  {
+    "q": "What is a static constructor?",
+    "type": "mcq",
+    "o": [
+      "A constructor that initializes static members",
+      "A constructor with static parameters",
+      "A private constructor",
+      "A parameterless constructor"
+    ]
+  },
+  {
+    "q": "Static constructors run only once per type.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Config\n{\n    public static string Setting;\n    static Config() => Setting = \"Default\";\n}\nConsole.WriteLine(Config.Setting);",
+    "o": [
+      "Default",
+      "null",
+      "Error",
+      "Setting"
+    ]
+  },
+  {
+    "q": "The ______ modifier prevents a class from being inherited.",
+    "type": "fill_blank",
+    "answers": [
+      "sealed"
+    ],
+    "other_options": [
+      "final",
+      "static",
+      "private"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "sealed class FinalClass { public int Value = 42; }\nvar f = new FinalClass();\nConsole.WriteLine(f.Value);",
+    "o": [
+      "42",
+      "Error",
+      "FinalClass",
+      "null"
+    ]
+  },
+  {
+    "q": "Sealed classes can still be instantiated.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is an abstract class?",
+    "type": "mcq",
+    "o": [
+      "A class that cannot be instantiated directly",
+      "A class with no methods",
+      "A static class",
+      "A sealed class"
+    ]
+  },
+  {
+    "q": "The ______ keyword defines a class that cannot be instantiated.",
+    "type": "fill_blank",
+    "answers": [
+      "abstract"
+    ],
+    "other_options": [
+      "virtual",
+      "interface",
+      "sealed"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); }\nclass Circle : Shape\n{\n    public double Radius = 1;\n    public override double Area() => Math.PI * Radius * Radius;\n}\nShape s = new Circle();\nConsole.WriteLine(Math.Round(s.Area(), 2));",
+    "o": [
+      "3.14",
+      "Error",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "Rearrange the abstract class implementation:",
+    "type": "rearrange",
+    "words": [
+      "Define abstract class",
+      "Add abstract methods",
+      "Create derived class",
+      "Implement methods"
+    ]
+  },
+  {
+    "q": "Abstract methods have no implementation in the base class.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "abstract class Animal { public abstract void Speak(); }\nclass Dog : Animal { public override void Speak() => Console.WriteLine(\"Bark\"); }\nnew Dog().Speak();",
+    "o": [
+      "Bark",
+      "Animal",
+      "Error",
+      "Speak"
+    ]
+  },
+  {
+    "q": "Match the class modifiers:",
+    "type": "match",
+    "left": [
+      "abstract",
+      "sealed",
+      "static",
+      "partial"
+    ],
+    "right": [
+      "Cannot instantiate",
+      "Cannot inherit",
+      "No instances",
+      "Split definition"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "abstract class Base\n{\n    public virtual void Show() => Console.Write(\"Base \");\n    public abstract void Display();\n}\nclass Derived : Base\n{\n    public override void Display() => Console.Write(\"Derived\");\n}\nBase b = new Derived();\nb.Show();\nb.Display();",
+    "o": [
+      "Base Derived",
+      "Derived Base",
+      "Error",
+      "Base"
+    ]
+  },
+  {
+    "q": "A class can have both abstract and non-abstract methods.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is an interface in C#?",
+    "type": "mcq",
+    "o": [
+      "A contract that defines members a class must implement",
+      "A type of class",
+      "A static method",
+      "A field declaration"
+    ]
+  },
+  {
+    "q": "The ______ keyword defines an interface.",
+    "type": "fill_blank",
+    "answers": [
+      "interface"
+    ],
+    "other_options": [
+      "contract",
+      "abstract",
+      "type"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IGreet { string Greet(); }\nclass Person : IGreet { public string Greet() => \"Hello\"; }\nIGreet g = new Person();\nConsole.WriteLine(g.Greet());",
+    "o": [
+      "Hello",
+      "Person",
+      "Error",
+      "IGreet"
+    ]
+  },
+  {
+    "q": "A class can implement multiple interfaces.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IWalk { void Walk(); }\ninterface IRun { void Run(); }\nclass Athlete : IWalk, IRun\n{\n    public void Walk() => Console.Write(\"Walking \");\n    public void Run() => Console.Write(\"Running\");\n}\nvar a = new Athlete();\na.Walk();\na.Run();",
+    "o": [
+      "Walking Running",
+      "Running Walking",
+      "Error",
+      "Walking"
+    ]
+  },
+  {
+    "q": "Rearrange interface implementation steps:",
+    "type": "rearrange",
+    "words": [
+      "Define interface",
+      "Add member signatures",
+      "Implement in class",
+      "Use interface type"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IAdd { int Add(int a, int b); }\nclass Calculator : IAdd { public int Add(int a, int b) => a + b; }\nIAdd calc = new Calculator();\nConsole.WriteLine(calc.Add(5, 3));",
+    "o": [
+      "8",
+      "5",
+      "3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match interface features:",
+    "type": "match",
+    "left": [
+      "Method signature",
+      "Property",
+      "Event",
+      "Default implementation"
+    ],
+    "right": [
+      "No body",
+      "get/set",
+      "Event member",
+      "C# 8+ feature"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IShape { double Area { get; } }\nclass Square : IShape\n{\n    public double Side = 4;\n    public double Area => Side * Side;\n}\nIShape s = new Square();\nConsole.WriteLine(s.Area);",
+    "o": [
+      "16",
+      "4",
+      "Error",
+      "Area"
+    ]
+  },
+  {
+    "q": "Interfaces can have default implementations since C# 8.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IDefault { void Show() => Console.WriteLine(\"Default\"); }\nclass MyClass : IDefault { }\nIDefault obj = new MyClass();\nobj.Show();",
+    "o": [
+      "Default",
+      "Error",
+      "MyClass",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ keyword checks if an object implements an interface.",
+    "type": "fill_blank",
+    "answers": [
+      "is"
+    ],
+    "other_options": [
+      "as",
+      "implements",
+      "has"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IDisposable { void Dispose(); }\nclass Resource : IDisposable { public void Dispose() { } }\nvar r = new Resource();\nConsole.WriteLine(r is IDisposable);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "Resource"
+    ]
+  },
+  {
+    "q": "What is explicit interface implementation?",
+    "type": "mcq",
+    "o": [
+      "Implementing interface members without public modifier",
+      "Making all methods virtual",
+      "Using abstract classes",
+      "Creating static interfaces"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IA { void Method(); }\ninterface IB { void Method(); }\nclass C : IA, IB\n{\n    void IA.Method() => Console.Write(\"A\");\n    void IB.Method() => Console.Write(\"B\");\n}\nvar c = new C();\n((IA)c).Method();\n((IB)c).Method();",
+    "o": [
+      "AB",
+      "BA",
+      "Error",
+      "AA"
+    ]
+  },
+  {
+    "q": "Explicit interface implementations are accessible only through the interface type.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IMessage { string Message { get; } }\nrecord Note(string Message) : IMessage;",
+    "o": [
+      "Valid record implementing interface",
+      "Error",
+      "Warning",
+      "Null"
+    ]
+  },
+  {
+    "q": "Match inheritance concepts:",
+    "type": "match",
+    "left": [
+      "Single inheritance",
+      "Multiple interfaces",
+      "Base class",
+      "Derived class"
+    ],
+    "right": [
+      "One parent class",
+      "Many contracts",
+      "Parent type",
+      "Child type"
+    ]
+  },
+  {
+    "q": "What is inheritance?",
+    "type": "mcq",
+    "o": [
+      "A class deriving from another class",
+      "Creating multiple objects",
+      "Implementing interfaces",
+      "Defining static methods"
+    ]
+  },
+  {
+    "q": "The ______ symbol indicates inheritance in C#.",
+    "type": "fill_blank",
+    "answers": [
+      ":"
+    ],
+    "other_options": [
+      "extends",
+      "->",
+      "inherits"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Animal { public string Name = \"Animal\"; }\nclass Dog : Animal { }\nvar d = new Dog();\nConsole.WriteLine(d.Name);",
+    "o": [
+      "Animal",
+      "Dog",
+      "Error",
+      "Name"
+    ]
+  },
+  {
+    "q": "A derived class inherits all non-private members from the base class.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Vehicle { public void Start() => Console.Write(\"Starting \"); }\nclass Car : Vehicle { public void Drive() => Console.Write(\"Driving\"); }\nvar c = new Car();\nc.Start();\nc.Drive();",
+    "o": [
+      "Starting Driving",
+      "Driving Starting",
+      "Error",
+      "Starting"
+    ]
+  },
+  {
+    "q": "Rearrange the inheritance hierarchy:",
+    "type": "rearrange",
+    "words": [
+      "Define base class",
+      "Create derived class",
+      "Add : BaseClass",
+      "Use inherited members"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class A { public int X = 1; }\nclass B : A { public int Y = 2; }\nvar b = new B();\nConsole.WriteLine(b.X + b.Y);",
+    "o": [
+      "3",
+      "1",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "The base keyword refers to the parent class.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Parent { public Parent() => Console.Write(\"Parent \"); }\nclass Child : Parent { public Child() => Console.Write(\"Child\"); }\nnew Child();",
+    "o": [
+      "Parent Child",
+      "Child Parent",
+      "Child",
+      "Parent"
+    ]
+  },
+  {
+    "q": "Match the base keyword uses:",
+    "type": "match",
+    "left": [
+      "base()",
+      "base.Method()",
+      "base.Field",
+      ": base(params)"
+    ],
+    "right": [
+      "Call base constructor",
+      "Call base method",
+      "Access base field",
+      "Pass to base constructor"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Base { public Base(int x) => Console.Write(x); }\nclass Derived : Base { public Derived() : base(42) { } }\nnew Derived();",
+    "o": [
+      "42",
+      "0",
+      "Error",
+      "Derived"
+    ]
+  },
+  {
+    "q": "A virtual method can be overridden in derived classes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Animal { public virtual void Sound() => Console.Write(\"Sound\"); }\nclass Dog : Animal { public override void Sound() => Console.Write(\"Bark\"); }\nAnimal a = new Dog();\na.Sound();",
+    "o": [
+      "Bark",
+      "Sound",
+      "Error",
+      "Animal"
+    ]
+  },
+  {
+    "q": "The ______ keyword marks a method as overridable.",
+    "type": "fill_blank",
+    "answers": [
+      "virtual"
+    ],
+    "other_options": [
+      "override",
+      "abstract",
+      "new"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class A { public virtual int Value => 1; }\nclass B : A { public override int Value => 2; }\nA obj = new B();\nConsole.WriteLine(obj.Value);",
+    "o": [
+      "2",
+      "1",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "What is polymorphism?",
+    "type": "mcq",
+    "o": [
+      "Objects of different types responding to the same method differently",
+      "Creating multiple classes",
+      "Using static methods",
+      "Defining constructors"
+    ]
+  },
+  {
+    "q": "Rearrange the polymorphism implementation:",
+    "type": "rearrange",
+    "words": [
+      "Define virtual method",
+      "Override in derived",
+      "Use base type reference",
+      "Call method polymorphically"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Shape { public virtual void Draw() => Console.Write(\"Shape \"); }\nclass Circle : Shape { public override void Draw() => Console.Write(\"Circle\"); }\nShape[] shapes = { new Shape(), new Circle() };\nforeach (var s in shapes) s.Draw();",
+    "o": [
+      "Shape Circle",
+      "Circle Shape",
+      "Shape Shape",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match polymorphism types:",
+    "type": "match",
+    "left": [
+      "Compile-time",
+      "Runtime",
+      "Overloading",
+      "Overriding"
+    ],
+    "right": [
+      "Static binding",
+      "Dynamic binding",
+      "Same name, different params",
+      "Same signature, different behavior"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Base { public void Show() => Console.Write(\"Base\"); }\nclass Derived : Base { public new void Show() => Console.Write(\"Derived\"); }\nBase b = new Derived();\nb.Show();",
+    "o": [
+      "Base",
+      "Derived",
+      "Error",
+      "Both"
+    ]
+  },
+  {
+    "q": "The new keyword hides a base class member.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is method hiding?",
+    "type": "mcq",
+    "o": [
+      "Using new to define a member with the same name in derived class",
+      "Making methods private",
+      "Using virtual keyword",
+      "Deleting methods"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class A { public virtual void Method() => Console.Write(\"A\"); }\nclass B : A { public override void Method() => Console.Write(\"B\"); }\nclass C : B { public sealed override void Method() => Console.Write(\"C\"); }\nnew C().Method();",
+    "o": [
+      "C",
+      "B",
+      "A",
+      "Error"
+    ]
+  },
+  {
+    "q": "A sealed override prevents further overriding.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is composition in OOP?",
+    "type": "mcq",
+    "o": [
+      "A class containing objects of other classes",
+      "Inheriting from multiple classes",
+      "Implementing interfaces",
+      "Using static methods"
+    ]
+  },
+  {
+    "q": "The ______ relationship means 'has-a'.",
+    "type": "fill_blank",
+    "answers": [
+      "composition"
+    ],
+    "other_options": [
+      "inheritance",
+      "interface",
+      "abstract"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Engine { public void Start() => Console.Write(\"Engine \"); }\nclass Car\n{\n    private Engine engine = new();\n    public void Start()\n    {\n        engine.Start();\n        Console.Write(\"Car\");\n    }\n}\nnew Car().Start();",
+    "o": [
+      "Engine Car",
+      "Car Engine",
+      "Engine",
+      "Error"
+    ]
+  },
+  {
+    "q": "Composition is preferred over inheritance when there is no 'is-a' relationship.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Wheel { public int Size = 17; }\nclass Car { public Wheel[] Wheels = new Wheel[4]; }\nvar car = new Car();\ncar.Wheels[0] = new Wheel();\nConsole.WriteLine(car.Wheels[0].Size);",
+    "o": [
+      "17",
+      "0",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match OOP relationships:",
+    "type": "match",
+    "left": [
+      "is-a",
+      "has-a",
+      "uses-a",
+      "implements"
+    ],
+    "right": [
+      "Inheritance",
+      "Composition",
+      "Dependency",
+      "Interface"
+    ]
+  },
+  {
+    "q": "What is aggregation?",
+    "type": "mcq",
+    "o": [
+      "A weaker form of composition where parts can exist independently",
+      "Strong ownership of parts",
+      "Multiple inheritance",
+      "Interface implementation"
+    ]
+  },
+  {
+    "q": "In aggregation, the contained object can exist independently.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Department { public string Name; }\nclass Employee\n{\n    public Department Dept;\n    public Employee(Department d) => Dept = d;\n}\nvar dept = new Department { Name = \"IT\" };\nvar emp = new Employee(dept);\nConsole.WriteLine(emp.Dept.Name);",
+    "o": [
+      "IT",
+      "Employee",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the composition steps:",
+    "type": "rearrange",
+    "words": [
+      "Create inner class",
+      "Add as field",
+      "Initialize in constructor",
+      "Use through methods"
+    ]
+  },
+  {
+    "q": "What is dependency injection?",
+    "type": "mcq",
+    "o": [
+      "Providing dependencies from outside the class",
+      "Creating dependencies inside the class",
+      "Inheriting dependencies",
+      "Using static dependencies"
+    ]
+  },
+  {
+    "q": "The ______ principle states that high-level modules should depend on abstractions.",
+    "type": "fill_blank",
+    "answers": [
+      "DIP"
+    ],
+    "other_options": [
+      "SRP",
+      "OCP",
+      "LSP"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface ILogger { void Log(string msg); }\nclass ConsoleLogger : ILogger { public void Log(string msg) => Console.Write(msg); }\nclass App\n{\n    private ILogger logger;\n    public App(ILogger l) => logger = l;\n    public void Run() => logger.Log(\"Running\");\n}\nnew App(new ConsoleLogger()).Run();",
+    "o": [
+      "Running",
+      "App",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Constructor injection passes dependencies through the constructor.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IService { string GetData(); }\nclass RealService : IService { public string GetData() => \"Real\"; }\nclass MockService : IService { public string GetData() => \"Mock\"; }\nclass Client\n{\n    public IService Service { get; set; }\n}\nvar client = new Client { Service = new MockService() };\nConsole.WriteLine(client.Service.GetData());",
+    "o": [
+      "Mock",
+      "Real",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Match injection types:",
+    "type": "match",
+    "left": [
+      "Constructor",
+      "Property",
+      "Method",
+      "Interface"
+    ],
+    "right": [
+      "Via constructor parameter",
+      "Via property setter",
+      "Via method parameter",
+      "Via interface method"
+    ]
+  },
+  {
+    "q": "What is the Single Responsibility Principle?",
+    "type": "mcq",
+    "o": [
+      "A class should have only one reason to change",
+      "A class should be open for extension",
+      "Objects should be replaceable by subtypes",
+      "Interfaces should be specific"
+    ]
+  },
+  {
+    "q": "SRP means a class should have a single ______.",
+    "type": "fill_blank",
+    "answers": [
+      "responsibility"
+    ],
+    "other_options": [
+      "method",
+      "property",
+      "field"
+    ]
+  },
+  {
+    "q": "What is the Open/Closed Principle?",
+    "type": "mcq",
+    "o": [
+      "Open for extension, closed for modification",
+      "Open for modification, closed for extension",
+      "Always open",
+      "Always closed"
+    ]
+  },
+  {
+    "q": "Classes should be open for extension but closed for modification.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the Liskov Substitution Principle?",
+    "type": "mcq",
+    "o": [
+      "Subtypes must be substitutable for their base types",
+      "Classes should have one responsibility",
+      "Interfaces should be small",
+      "Depend on abstractions"
+    ]
+  },
+  {
+    "q": "Rearrange SOLID principles:",
+    "type": "rearrange",
+    "words": [
+      "Single Responsibility",
+      "Open/Closed",
+      "Liskov Substitution",
+      "Interface Segregation",
+      "Dependency Inversion"
+    ]
+  },
+  {
+    "q": "What is Interface Segregation Principle?",
+    "type": "mcq",
+    "o": [
+      "Many specific interfaces are better than one general interface",
+      "One large interface is best",
+      "Interfaces should be empty",
+      "All classes need interfaces"
+    ]
+  },
+  {
+    "q": "The ______ Principle states clients shouldn't depend on unused methods.",
+    "type": "fill_blank",
+    "answers": [
+      "ISP"
+    ],
+    "other_options": [
+      "SRP",
+      "OCP",
+      "DIP"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Person\n{\n    public string FirstName { get; set; }\n    public string LastName { get; set; }\n    public string FullName => $\"{FirstName} {LastName}\";\n}\nvar p = new Person { FirstName = \"John\", LastName = \"Doe\" };\nConsole.WriteLine(p.FullName);",
+    "o": [
+      "John Doe",
+      "FirstName LastName",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "A read-only property with expression body uses => syntax.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Calculator\n{\n    public int Add(int a, int b) => a + b;\n    public int Add(int a, int b, int c) => a + b + c;\n}\nvar calc = new Calculator();\nConsole.WriteLine(calc.Add(1, 2, 3));",
+    "o": [
+      "6",
+      "3",
+      "Error",
+      "1"
+    ]
+  },
+  {
+    "q": "Method overloading is a form of compile-time polymorphism.",
+    "type": "fill_blank",
+    "answers": [
+      "compile-time"
+    ],
+    "other_options": [
+      "runtime",
+      "dynamic",
+      "late"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Math\n{\n    public static int Max(int a, int b) => a > b ? a : b;\n    public static double Max(double a, double b) => a > b ? a : b;\n}\nConsole.WriteLine(Math.Max(3.5, 2.5));",
+    "o": [
+      "3.5",
+      "2.5",
+      "3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Overloaded methods must differ in parameter types or count.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Printer\n{\n    public void Print(string s) => Console.Write($\"String: {s} \");\n    public void Print(int n) => Console.Write($\"Int: {n}\");\n}\nnew Printer().Print(\"Hello\");\nnew Printer().Print(42);",
+    "o": [
+      "String: Hello Int: 42",
+      "Int: 42 String: Hello",
+      "Error",
+      "Hello 42"
+    ]
+  },
+  {
+    "q": "Match overloading concepts:",
+    "type": "match",
+    "left": [
+      "Same name",
+      "Different params",
+      "Same return",
+      "Different return only"
+    ],
+    "right": [
+      "Required",
+      "Required",
+      "Optional",
+      "Not allowed alone"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Shape\n{\n    public virtual double Area() => 0;\n}\nclass Rectangle : Shape\n{\n    public double Width, Height;\n    public Rectangle(double w, double h) { Width = w; Height = h; }\n    public override double Area() => Width * Height;\n}\nShape s = new Rectangle(3, 4);\nConsole.WriteLine(s.Area());",
+    "o": [
+      "12",
+      "0",
+      "Error",
+      "7"
+    ]
+  },
+  {
+    "q": "The override keyword is required to override a virtual method.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Perimeter(); }\nclass Square : Shape\n{\n    public double Side;\n    public Square(double s) => Side = s;\n    public override double Perimeter() => 4 * Side;\n}\nConsole.WriteLine(new Square(5).Perimeter());",
+    "o": [
+      "20",
+      "5",
+      "Error",
+      "25"
+    ]
+  },
+  {
+    "q": "The ______ keyword makes a property settable only in constructors.",
+    "type": "fill_blank",
+    "answers": [
+      "init"
+    ],
+    "other_options": [
+      "set",
+      "get",
+      "private"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Point\n{\n    public int X { get; init; }\n    public int Y { get; init; }\n}\nvar p = new Point { X = 5, Y = 10 };\nConsole.WriteLine(p.X);",
+    "o": [
+      "5",
+      "10",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Init-only properties cannot be modified after object initialization.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Rearrange the object creation with init properties:",
+    "type": "rearrange",
+    "words": [
+      "Define class with init",
+      "Create object",
+      "Use object initializer",
+      "Properties are readonly"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "record Person(string Name, int Age);\nvar p = new Person(\"Alice\", 30);\nConsole.WriteLine(p.Name);",
+    "o": [
+      "Alice",
+      "30",
+      "Person",
+      "Error"
+    ]
+  },
+  {
+    "q": "Records provide value-based equality by default.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "record Point(int X, int Y);\nvar p1 = new Point(1, 2);\nvar p2 = new Point(1, 2);\nConsole.WriteLine(p1 == p2);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "1, 2"
+    ]
+  },
+  {
+    "q": "Match record features:",
+    "type": "match",
+    "left": [
+      "Positional",
+      "with expression",
+      "ToString()",
+      "Equals()"
+    ],
+    "right": [
+      "Constructor params",
+      "Create modified copy",
+      "Display string",
+      "Value equality"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "record Car(string Brand, string Model);\nvar car1 = new Car(\"Toyota\", \"Camry\");\nvar car2 = car1 with { Model = \"Corolla\" };\nConsole.WriteLine(car2.Brand);",
+    "o": [
+      "Toyota",
+      "Corolla",
+      "Error",
+      "car1"
+    ]
+  },
+  {
+    "q": "The with expression creates a new record with modified values.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "record Person(string Name, int Age);\nvar p = new Person(\"Bob\", 25);\nConsole.WriteLine(p);",
+    "o": [
+      "Person { Name = Bob, Age = 25 }",
+      "Bob, 25",
+      "Person",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method deconstructs a record into variables.",
+    "type": "fill_blank",
+    "answers": [
+      "Deconstruct"
+    ],
+    "other_options": [
+      "Split",
+      "Extract",
+      "Unpack"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "record Point(int X, int Y);\nvar p = new Point(3, 4);\nvar (x, y) = p;\nConsole.WriteLine(x + y);",
+    "o": [
+      "7",
+      "3",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Record structs are value types with record features.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "record struct Coordinate(int X, int Y);\nConsole.WriteLine(typeof(Coordinate).IsValueType);",
+    "o": [
+      "True",
+      "False",
+      "Coordinate",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange record usage:",
+    "type": "rearrange",
+    "words": [
+      "Define record",
+      "Create instance",
+      "Compare with ==",
+      "Use with expression"
+    ]
+  },
+  {
+    "q": "What is a nested class?",
+    "type": "mcq",
+    "o": [
+      "A class defined inside another class",
+      "A class with nested loops",
+      "An inherited class",
+      "A generic class"
+    ]
+  },
+  {
+    "q": "Nested classes can access private members of the outer class.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Outer\n{\n    private int value = 10;\n    public class Inner\n    {\n        public int GetValue(Outer o) => o.value;\n    }\n}\nvar outer = new Outer();\nvar inner = new Outer.Inner();\nConsole.WriteLine(inner.GetValue(outer));",
+    "o": [
+      "10",
+      "Error",
+      "0",
+      "null"
+    ]
+  },
+  {
+    "q": "Match nested class access:",
+    "type": "match",
+    "left": [
+      "public nested",
+      "private nested",
+      "protected nested",
+      "internal nested"
+    ],
+    "right": [
+      "Accessible everywhere",
+      "Outer class only",
+      "Derived classes",
+      "Same assembly"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Container\n{\n    private class Helper { public static int Compute() => 42; }\n    public int GetResult() => Helper.Compute();\n}\nConsole.WriteLine(new Container().GetResult());",
+    "o": [
+      "42",
+      "Error",
+      "Helper",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ keyword creates a class that cannot be instantiated outside.",
+    "type": "fill_blank",
+    "answers": [
+      "private"
+    ],
+    "other_options": [
+      "sealed",
+      "static",
+      "abstract"
+    ]
+  },
+  {
+    "q": "What is a partial class?",
+    "type": "mcq",
+    "o": [
+      "A class definition split across multiple files",
+      "An incomplete class",
+      "A nested class",
+      "An abstract class"
+    ]
+  },
+  {
+    "q": "Partial classes are merged at compile time.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "partial class Data { public int X = 1; }\npartial class Data { public int Y = 2; }\nvar d = new Data();\nConsole.WriteLine(d.X + d.Y);",
+    "o": [
+      "3",
+      "1",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange partial class steps:",
+    "type": "rearrange",
+    "words": [
+      "Mark class as partial",
+      "Split into files",
+      "Compile together",
+      "Use as single class"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "partial class Calculator\n{\n    public int Add(int a, int b) => a + b;\n}\npartial class Calculator\n{\n    public int Multiply(int a, int b) => a * b;\n}\nvar calc = new Calculator();\nConsole.WriteLine(calc.Add(2, 3) + calc.Multiply(2, 3));",
+    "o": [
+      "11",
+      "5",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match partial class usage:",
+    "type": "match",
+    "left": [
+      "Generated code",
+      "Large classes",
+      "Team development",
+      "Separation of concerns"
+    ],
+    "right": [
+      "Tool output",
+      "Split for readability",
+      "Different files",
+      "Logic grouping"
+    ]
+  },
+  {
+    "q": "What is an extension method?",
+    "type": "mcq",
+    "o": [
+      "A static method that appears as an instance method",
+      "A method in a derived class",
+      "An abstract method",
+      "A virtual method"
+    ]
+  },
+  {
+    "q": "Extension methods use the ______ keyword on the first parameter.",
+    "type": "fill_blank",
+    "answers": [
+      "this"
+    ],
+    "other_options": [
+      "static",
+      "extern",
+      "ref"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "static class StringExtensions\n{\n    public static int WordCount(this string s) => s.Split(' ').Length;\n}\nConsole.WriteLine(\"Hello World\".WordCount());",
+    "o": [
+      "2",
+      "11",
+      "Error",
+      "Hello World"
+    ]
+  },
+  {
+    "q": "Extension methods must be in static classes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "static class IntExtensions\n{\n    public static bool IsEven(this int n) => n % 2 == 0;\n}\nConsole.WriteLine(4.IsEven());",
+    "o": [
+      "True",
+      "False",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange extension method definition:",
+    "type": "rearrange",
+    "words": [
+      "Create static class",
+      "Define static method",
+      "Use this keyword",
+      "Call on instance"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "static class ListExtensions\n{\n    public static T FirstOrDefault<T>(this List<T> list) => list.Count > 0 ? list[0] : default;\n}\nvar nums = new List<int> { 10, 20, 30 };\nConsole.WriteLine(nums.FirstOrDefault());",
+    "o": [
+      "10",
+      "0",
+      "30",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match extension method concepts:",
+    "type": "match",
+    "left": [
+      "Static class",
+      "this parameter",
+      "Static method",
+      "Instance call"
+    ],
+    "right": [
+      "Container requirement",
+      "Extended type",
+      "Method requirement",
+      "Usage syntax"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "static class ArrayExtensions\n{\n    public static int Sum(this int[] arr)\n    {\n        int total = 0;\n        foreach (var n in arr) total += n;\n        return total;\n    }\n}\nint[] nums = { 1, 2, 3, 4, 5 };\nConsole.WriteLine(nums.Sum());",
+    "o": [
+      "15",
+      "5",
+      "Error",
+      "1"
+    ]
+  },
+  {
+    "q": "Extension methods cannot access private members.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is operator overloading?",
+    "type": "mcq",
+    "o": [
+      "Defining custom behavior for operators",
+      "Using multiple operators",
+      "Overloading methods",
+      "Using static methods"
+    ]
+  },
+  {
+    "q": "Operator overloading uses the ______ keyword.",
+    "type": "fill_blank",
+    "answers": [
+      "operator"
+    ],
+    "other_options": [
+      "static",
+      "public",
+      "override"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Vector\n{\n    public int X, Y;\n    public Vector(int x, int y) { X = x; Y = y; }\n    public static Vector operator +(Vector a, Vector b) => new(a.X + b.X, a.Y + b.Y);\n}\nvar v = new Vector(1, 2) + new Vector(3, 4);\nConsole.WriteLine(v.X);",
+    "o": [
+      "4",
+      "1",
+      "3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Operator overloading methods must be static.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Money\n{\n    public decimal Amount;\n    public Money(decimal a) => Amount = a;\n    public static Money operator *(Money m, int n) => new(m.Amount * n);\n}\nvar m = new Money(10) * 3;\nConsole.WriteLine(m.Amount);",
+    "o": [
+      "30",
+      "10",
+      "3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match overloadable operators:",
+    "type": "match",
+    "left": [
+      "+",
+      "-",
+      "==",
+      "!="
+    ],
+    "right": [
+      "Addition",
+      "Subtraction",
+      "Equality",
+      "Inequality"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Fraction\n{\n    public int Num, Den;\n    public Fraction(int n, int d) { Num = n; Den = d; }\n    public static bool operator ==(Fraction a, Fraction b) => a.Num * b.Den == b.Num * a.Den;\n    public static bool operator !=(Fraction a, Fraction b) => !(a == b);\n}\nvar f1 = new Fraction(1, 2);\nvar f2 = new Fraction(2, 4);\nConsole.WriteLine(f1 == f2);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "1/2"
+    ]
+  },
+  {
+    "q": "When overloading ==, you must also overload !=.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Rearrange operator overloading:",
+    "type": "rearrange",
+    "words": [
+      "Define class",
+      "Add operator method",
+      "Make static public",
+      "Return result type"
+    ]
+  },
+  {
+    "q": "What is implicit conversion?",
+    "type": "mcq",
+    "o": [
+      "Automatic type conversion without cast",
+      "Manual type conversion with cast",
+      "Converting to string",
+      "Using as keyword"
+    ]
+  },
+  {
+    "q": "The ______ keyword defines an implicit conversion.",
+    "type": "fill_blank",
+    "answers": [
+      "implicit"
+    ],
+    "other_options": [
+      "explicit",
+      "convert",
+      "cast"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Celsius\n{\n    public double Value;\n    public Celsius(double v) => Value = v;\n    public static implicit operator double(Celsius c) => c.Value;\n}\nCelsius temp = new(25);\ndouble d = temp;\nConsole.WriteLine(d);",
+    "o": [
+      "25",
+      "Error",
+      "Celsius",
+      "0"
+    ]
+  },
+  {
+    "q": "Explicit conversion requires a cast operator.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Percentage\n{\n    public double Value;\n    public Percentage(double v) => Value = v;\n    public static explicit operator int(Percentage p) => (int)(p.Value * 100);\n}\nvar p = new Percentage(0.5);\nConsole.WriteLine((int)p);",
+    "o": [
+      "50",
+      "0.5",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Match conversion types:",
+    "type": "match",
+    "left": [
+      "implicit",
+      "explicit",
+      "as",
+      "is"
+    ],
+    "right": [
+      "Automatic",
+      "Cast required",
+      "Safe cast",
+      "Type check"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Wrapper<T>\n{\n    public T Value { get; set; }\n}\nvar w = new Wrapper<int> { Value = 42 };\nConsole.WriteLine(w.Value);",
+    "o": [
+      "42",
+      "Wrapper",
+      "Error",
+      "T"
+    ]
+  },
+  {
+    "q": "Generics allow type-safe code with type parameters.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Pair<T1, T2>\n{\n    public T1 First { get; set; }\n    public T2 Second { get; set; }\n}\nvar pair = new Pair<string, int> { First = \"Age\", Second = 30 };\nConsole.WriteLine(pair.First);",
+    "o": [
+      "Age",
+      "30",
+      "Error",
+      "Pair"
+    ]
+  },
+  {
+    "q": "The ______ keyword constrains a generic type parameter.",
+    "type": "fill_blank",
+    "answers": [
+      "where"
+    ],
+    "other_options": [
+      "constrain",
+      "restrict",
+      "limit"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Container<T> where T : new()\n{\n    public T Create() => new T();\n}\nvar c = new Container<List<int>>();\nConsole.WriteLine(c.Create().Count);",
+    "o": [
+      "0",
+      "Error",
+      "null",
+      "List"
+    ]
+  },
+  {
+    "q": "Rearrange generic class definition:",
+    "type": "rearrange",
+    "words": [
+      "class Name<T>",
+      "Add where constraint",
+      "Use T in members",
+      "Instantiate with type"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IComparable<T>\n{\n    int CompareTo(T other);\n}\nclass Number : IComparable<Number>\n{\n    public int Value;\n    public int CompareTo(Number other) => Value - other.Value;\n}\nvar n1 = new Number { Value = 5 };\nvar n2 = new Number { Value = 3 };\nConsole.WriteLine(n1.CompareTo(n2) > 0);",
+    "o": [
+      "True",
+      "False",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match generic constraints:",
+    "type": "match",
+    "left": [
+      "where T : class",
+      "where T : struct",
+      "where T : new()",
+      "where T : IInterface"
+    ],
+    "right": [
+      "Reference type",
+      "Value type",
+      "Parameterless constructor",
+      "Implements interface"
+    ]
+  },
+  {
+    "q": "What is covariance in generics?",
+    "type": "mcq",
+    "o": [
+      "A type can be assigned to a more derived type",
+      "A type can only match exactly",
+      "Types cannot change",
+      "Using multiple types"
+    ]
+  },
+  {
+    "q": "The out keyword enables covariance in generic interfaces.",
+    "type": "fill_blank",
+    "answers": [
+      "out"
+    ],
+    "other_options": [
+      "in",
+      "where",
+      "ref"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IProducer<out T> { T Produce(); }\nclass StringProducer : IProducer<string> { public string Produce() => \"Hello\"; }\nIProducer<object> producer = new StringProducer();\nConsole.WriteLine(producer.Produce());",
+    "o": [
+      "Hello",
+      "Error",
+      "object",
+      "null"
+    ]
+  },
+  {
+    "q": "Covariance allows assigning more derived to less derived.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is contravariance in generics?",
+    "type": "mcq",
+    "o": [
+      "A type can be assigned to a less derived type",
+      "Types must match exactly",
+      "A type can be assigned to more derived",
+      "No type substitution"
+    ]
+  },
+  {
+    "q": "The ______ keyword enables contravariance.",
+    "type": "fill_blank",
+    "answers": [
+      "in"
+    ],
+    "other_options": [
+      "out",
+      "where",
+      "ref"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IConsumer<in T> { void Consume(T item); }\nclass ObjectConsumer : IConsumer<object> { public void Consume(object item) => Console.Write(item); }\nIConsumer<string> consumer = new ObjectConsumer();\nconsumer.Consume(\"Test\");",
+    "o": [
+      "Test",
+      "Error",
+      "object",
+      "null"
+    ]
+  },
+  {
+    "q": "Match variance types:",
+    "type": "match",
+    "left": [
+      "Covariance",
+      "Contravariance",
+      "Invariance",
+      "out T"
+    ],
+    "right": [
+      "More to less derived",
+      "Less to more derived",
+      "Exact match only",
+      "Covariant type"
+    ]
+  },
+  {
+    "q": "Rearrange variance concepts:",
+    "type": "rearrange",
+    "words": [
+      "Define interface",
+      "Add in/out modifiers",
+      "Implement in class",
+      "Use variance"
+    ]
+  },
+  {
+    "q": "What is the Decorator pattern?",
+    "type": "mcq",
+    "o": [
+      "Adding behavior to objects dynamically",
+      "Creating objects in steps",
+      "Hiding implementation",
+      "Managing object lifecycle"
+    ]
+  },
+  {
+    "q": "Decorators wrap the original object and extend behavior.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IComponent { string Operation(); }\nclass ConcreteComponent : IComponent { public string Operation() => \"Component\"; }\nclass Decorator : IComponent\n{\n    private IComponent component;\n    public Decorator(IComponent c) => component = c;\n    public string Operation() => $\"Decorated({component.Operation()})\";\n}\nConsole.WriteLine(new Decorator(new ConcreteComponent()).Operation());",
+    "o": [
+      "Decorated(Component)",
+      "Component",
+      "Decorated",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match design patterns:",
+    "type": "match",
+    "left": [
+      "Decorator",
+      "Factory",
+      "Singleton",
+      "Observer"
+    ],
+    "right": [
+      "Add behavior",
+      "Create objects",
+      "Single instance",
+      "Notify changes"
+    ]
+  },
+  {
+    "q": "What is the Factory pattern?",
+    "type": "mcq",
+    "o": [
+      "Creating objects without specifying exact class",
+      "Decorating objects",
+      "Observing state changes",
+      "Managing dependencies"
+    ]
+  },
+  {
+    "q": "The ______ pattern encapsulates object creation.",
+    "type": "fill_blank",
+    "answers": [
+      "Factory"
+    ],
+    "other_options": [
+      "Singleton",
+      "Decorator",
+      "Observer"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IProduct { string Name { get; } }\nclass ProductA : IProduct { public string Name => \"A\"; }\nclass ProductB : IProduct { public string Name => \"B\"; }\nclass Factory\n{\n    public static IProduct Create(string type) => type == \"A\" ? new ProductA() : new ProductB();\n}\nConsole.WriteLine(Factory.Create(\"B\").Name);",
+    "o": [
+      "B",
+      "A",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Factory methods return interface or abstract types.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the Singleton pattern?",
+    "type": "mcq",
+    "o": [
+      "Ensuring only one instance of a class exists",
+      "Creating many instances",
+      "Decorating objects",
+      "Factory creation"
+    ]
+  },
+  {
+    "q": "Rearrange Singleton implementation:",
+    "type": "rearrange",
+    "words": [
+      "Private constructor",
+      "Static instance field",
+      "Public static property",
+      "Return same instance"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Singleton\n{\n    private static Singleton instance;\n    private Singleton() { }\n    public static Singleton Instance => instance ??= new Singleton();\n    public int Value = 42;\n}\nConsole.WriteLine(Singleton.Instance.Value);",
+    "o": [
+      "42",
+      "Error",
+      "null",
+      "0"
+    ]
+  },
+  {
+    "q": "Match Singleton requirements:",
+    "type": "match",
+    "left": [
+      "Private constructor",
+      "Static getter",
+      "Lazy initialization",
+      "Thread safety"
+    ],
+    "right": [
+      "Prevent external creation",
+      "Access point",
+      "Create on demand",
+      "Multiple thread access"
+    ]
+  },
+  {
+    "q": "What is the Observer pattern?",
+    "type": "mcq",
+    "o": [
+      "Objects subscribing to state changes",
+      "Single instance pattern",
+      "Object creation pattern",
+      "Decoration pattern"
+    ]
+  },
+  {
+    "q": "Observers are notified when the subject's state changes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IObserver { void Update(string msg); }\nclass Subject\n{\n    private List<IObserver> observers = new();\n    public void Subscribe(IObserver o) => observers.Add(o);\n    public void Notify(string msg) { foreach (var o in observers) o.Update(msg); }\n}\nclass Logger : IObserver { public void Update(string msg) => Console.Write(msg); }\nvar s = new Subject();\ns.Subscribe(new Logger());\ns.Notify(\"Event\");",
+    "o": [
+      "Event",
+      "Logger",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ pattern uses events in C#.",
+    "type": "fill_blank",
+    "answers": [
+      "Observer"
+    ],
+    "other_options": [
+      "Factory",
+      "Singleton",
+      "Decorator"
+    ]
+  },
+  {
+    "q": "What is the Strategy pattern?",
+    "type": "mcq",
+    "o": [
+      "Defining a family of algorithms that are interchangeable",
+      "Creating single instances",
+      "Observing changes",
+      "Decorating objects"
+    ]
+  },
+  {
+    "q": "Rearrange Strategy pattern implementation:",
+    "type": "rearrange",
+    "words": [
+      "Define strategy interface",
+      "Create concrete strategies",
+      "Context uses strategy",
+      "Swap strategies runtime"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface ISort { void Sort(int[] arr); }\nclass BubbleSort : ISort { public void Sort(int[] arr) => Console.Write(\"Bubble\"); }\nclass QuickSort : ISort { public void Sort(int[] arr) => Console.Write(\"Quick\"); }\nclass Sorter\n{\n    public ISort Strategy { get; set; }\n    public void Execute(int[] arr) => Strategy.Sort(arr);\n}\nvar s = new Sorter { Strategy = new QuickSort() };\ns.Execute(new int[] { 1, 2 });",
+    "o": [
+      "Quick",
+      "Bubble",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Match behavioral patterns:",
+    "type": "match",
+    "left": [
+      "Strategy",
+      "Observer",
+      "Command",
+      "State"
+    ],
+    "right": [
+      "Swap algorithms",
+      "Notify subscribers",
+      "Encapsulate request",
+      "Behavior based on state"
+    ]
+  },
+  {
+    "q": "What is the Template Method pattern?",
+    "type": "mcq",
+    "o": [
+      "Defining algorithm skeleton with steps overridden in subclasses",
+      "Creating object templates",
+      "Observing templates",
+      "Decorating templates"
+    ]
+  },
+  {
+    "q": "Template methods define the algorithm structure in the base class.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "abstract class DataProcessor\n{\n    public void Process()\n    {\n        Load();\n        Transform();\n    }\n    protected abstract void Load();\n    protected abstract void Transform();\n}\nclass CSVProcessor : DataProcessor\n{\n    protected override void Load() => Console.Write(\"Load \");\n    protected override void Transform() => Console.Write(\"Transform\");\n}\nnew CSVProcessor().Process();",
+    "o": [
+      "Load Transform",
+      "Transform Load",
+      "Error",
+      "Process"
+    ]
+  },
+  {
+    "q": "The ______ pattern uses abstract methods for customizable steps.",
+    "type": "fill_blank",
+    "answers": [
+      "Template Method"
+    ],
+    "other_options": [
+      "Strategy",
+      "Factory",
+      "Observer"
+    ]
+  },
+  {
+    "q": "What is the Builder pattern?",
+    "type": "mcq",
+    "o": [
+      "Constructing complex objects step by step",
+      "Creating single instances",
+      "Decorating objects",
+      "Observing changes"
+    ]
+  },
+  {
+    "q": "Builders separate construction from representation.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class HouseBuilder\n{\n    private string house = \"\";\n    public HouseBuilder AddRoof() { house += \"Roof \"; return this; }\n    public HouseBuilder AddWalls() { house += \"Walls \"; return this; }\n    public string Build() => house.Trim();\n}\nConsole.WriteLine(new HouseBuilder().AddWalls().AddRoof().Build());",
+    "o": [
+      "Walls Roof",
+      "Roof Walls",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Match creational patterns:",
+    "type": "match",
+    "left": [
+      "Builder",
+      "Factory",
+      "Singleton",
+      "Prototype"
+    ],
+    "right": [
+      "Step by step",
+      "Create instances",
+      "Single instance",
+      "Clone objects"
+    ]
+  },
+  {
+    "q": "What is the Prototype pattern?",
+    "type": "mcq",
+    "o": [
+      "Creating new objects by cloning existing ones",
+      "Creating templates",
+      "Single instance creation",
+      "Factory creation"
+    ]
+  },
+  {
+    "q": "The ______ interface provides the Clone method.",
+    "type": "fill_blank",
+    "answers": [
+      "ICloneable"
+    ],
+    "other_options": [
+      "IClonable",
+      "IPrototype",
+      "ICopy"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Person : ICloneable\n{\n    public string Name;\n    public object Clone() => MemberwiseClone();\n}\nvar p1 = new Person { Name = \"Alice\" };\nvar p2 = (Person)p1.Clone();\np2.Name = \"Bob\";\nConsole.WriteLine(p1.Name);",
+    "o": [
+      "Alice",
+      "Bob",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "MemberwiseClone creates a shallow copy.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the difference between shallow and deep copy?",
+    "type": "mcq",
+    "o": [
+      "Shallow copies references, deep copies values",
+      "They are the same",
+      "Shallow is faster always",
+      "Deep copies references"
+    ]
+  },
+  {
+    "q": "Rearrange cloning steps:",
+    "type": "rearrange",
+    "words": [
+      "Implement ICloneable",
+      "Call MemberwiseClone",
+      "Return cloned object",
+      "Use cloned copy"
+    ]
+  },
+  {
+    "q": "What is the Adapter pattern?",
+    "type": "mcq",
+    "o": [
+      "Converting interface of a class to another interface",
+      "Decorating objects",
+      "Creating instances",
+      "Observing changes"
+    ]
+  },
+  {
+    "q": "Adapters wrap an existing class with a new interface.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface ITarget { string Request(); }\nclass Adaptee { public string SpecificRequest() => \"Adaptee\"; }\nclass Adapter : ITarget\n{\n    private Adaptee adaptee = new();\n    public string Request() => adaptee.SpecificRequest();\n}\nConsole.WriteLine(new Adapter().Request());",
+    "o": [
+      "Adaptee",
+      "Adapter",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Match structural patterns:",
+    "type": "match",
+    "left": [
+      "Adapter",
+      "Decorator",
+      "Facade",
+      "Proxy"
+    ],
+    "right": [
+      "Convert interface",
+      "Add behavior",
+      "Simplify interface",
+      "Control access"
+    ]
+  },
+  {
+    "q": "What is the Facade pattern?",
+    "type": "mcq",
+    "o": [
+      "Providing a simplified interface to a complex subsystem",
+      "Adapting interfaces",
+      "Decorating objects",
+      "Creating proxies"
+    ]
+  },
+  {
+    "q": "Facades hide complexity behind a simple interface.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class SubsystemA { public string OperationA() => \"A\"; }\nclass SubsystemB { public string OperationB() => \"B\"; }\nclass Facade\n{\n    private SubsystemA a = new();\n    private SubsystemB b = new();\n    public string Operation() => $\"{a.OperationA()}{b.OperationB()}\";\n}\nConsole.WriteLine(new Facade().Operation());",
+    "o": [
+      "AB",
+      "BA",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ pattern provides a unified interface.",
+    "type": "fill_blank",
+    "answers": [
+      "Facade"
+    ],
+    "other_options": [
+      "Adapter",
+      "Proxy",
+      "Decorator"
+    ]
+  },
+  {
+    "q": "What is the Proxy pattern?",
+    "type": "mcq",
+    "o": [
+      "Controlling access to another object",
+      "Decorating objects",
+      "Creating instances",
+      "Observing changes"
+    ]
+  },
+  {
+    "q": "Proxies can add lazy loading, caching, or access control.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IService { string Execute(); }\nclass RealService : IService { public string Execute() => \"Real\"; }\nclass ProxyService : IService\n{\n    private RealService real;\n    public string Execute()\n    {\n        real ??= new RealService();\n        return $\"Proxy:{real.Execute()}\";\n    }\n}\nConsole.WriteLine(new ProxyService().Execute());",
+    "o": [
+      "Proxy:Real",
+      "Real",
+      "Proxy",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match proxy types:",
+    "type": "match",
+    "left": [
+      "Virtual proxy",
+      "Protection proxy",
+      "Remote proxy",
+      "Caching proxy"
+    ],
+    "right": [
+      "Lazy loading",
+      "Access control",
+      "Network calls",
+      "Store results"
+    ]
+  },
+  {
+    "q": "What is the Command pattern?",
+    "type": "mcq",
+    "o": [
+      "Encapsulating a request as an object",
+      "Decorating commands",
+      "Creating commands",
+      "Observing commands"
+    ]
+  },
+  {
+    "q": "Commands decouple sender from receiver.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface ICommand { void Execute(); }\nclass Light { public void TurnOn() => Console.Write(\"On\"); }\nclass LightOnCommand : ICommand\n{\n    private Light light;\n    public LightOnCommand(Light l) => light = l;\n    public void Execute() => light.TurnOn();\n}\nnew LightOnCommand(new Light()).Execute();",
+    "o": [
+      "On",
+      "Light",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange Command pattern:",
+    "type": "rearrange",
+    "words": [
+      "Define command interface",
+      "Create concrete commands",
+      "Receiver performs action",
+      "Invoker calls execute"
+    ]
+  },
+  {
+    "q": "What is the State pattern?",
+    "type": "mcq",
+    "o": [
+      "Allowing object behavior to change based on its state",
+      "Creating states",
+      "Observing states",
+      "Decorating states"
+    ]
+  },
+  {
+    "q": "The ______ pattern encapsulates state-specific behavior.",
+    "type": "fill_blank",
+    "answers": [
+      "State"
+    ],
+    "other_options": [
+      "Strategy",
+      "Command",
+      "Observer"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IState { string Handle(); }\nclass StateA : IState { public string Handle() => \"A\"; }\nclass StateB : IState { public string Handle() => \"B\"; }\nclass Context\n{\n    public IState State { get; set; } = new StateA();\n    public string Request() => State.Handle();\n}\nvar ctx = new Context();\nConsole.Write(ctx.Request());\nctx.State = new StateB();\nConsole.Write(ctx.Request());",
+    "o": [
+      "AB",
+      "AA",
+      "BB",
+      "Error"
+    ]
+  },
+  {
+    "q": "States encapsulate behavior for specific conditions.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the Chain of Responsibility pattern?",
+    "type": "mcq",
+    "o": [
+      "Passing a request along a chain of handlers",
+      "Creating chains",
+      "Decorating chains",
+      "Observing chains"
+    ]
+  },
+  {
+    "q": "Match responsibility patterns:",
+    "type": "match",
+    "left": [
+      "Chain of Responsibility",
+      "Command",
+      "Mediator",
+      "Memento"
+    ],
+    "right": [
+      "Pass request",
+      "Encapsulate request",
+      "Central communication",
+      "Save state"
+    ]
+  },
+  {
+    "q": "What is the Composite pattern?",
+    "type": "mcq",
+    "o": [
+      "Treating individual objects and compositions uniformly",
+      "Creating compositions",
+      "Decorating composites",
+      "Observing composites"
+    ]
+  },
+  {
+    "q": "Composites have the same interface as individual objects.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IComponent { int GetSize(); }\nclass Leaf : IComponent { public int GetSize() => 1; }\nclass Composite : IComponent\n{\n    private List<IComponent> children = new();\n    public void Add(IComponent c) => children.Add(c);\n    public int GetSize() => children.Sum(c => c.GetSize());\n}\nvar comp = new Composite();\ncomp.Add(new Leaf());\ncomp.Add(new Leaf());\nConsole.WriteLine(comp.GetSize());",
+    "o": [
+      "2",
+      "1",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "The ______ pattern creates tree structures.",
+    "type": "fill_blank",
+    "answers": [
+      "Composite"
+    ],
+    "other_options": [
+      "Decorator",
+      "Adapter",
+      "Facade"
+    ]
+  },
+  {
+    "q": "What is the Flyweight pattern?",
+    "type": "mcq",
+    "o": [
+      "Sharing common state among many objects",
+      "Creating lightweight objects",
+      "Decorating objects",
+      "Observing objects"
+    ]
+  },
+  {
+    "q": "Flyweights reduce memory by sharing intrinsic state.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Rearrange Flyweight implementation:",
+    "type": "rearrange",
+    "words": [
+      "Identify shared state",
+      "Create flyweight class",
+      "Factory manages instances",
+      "Client provides extrinsic state"
+    ]
+  },
+  {
+    "q": "What is the Bridge pattern?",
+    "type": "mcq",
+    "o": [
+      "Separating abstraction from implementation",
+      "Creating bridges",
+      "Decorating bridges",
+      "Observing bridges"
+    ]
+  },
+  {
+    "q": "Match structural patterns purposes:",
+    "type": "match",
+    "left": [
+      "Bridge",
+      "Composite",
+      "Flyweight",
+      "Decorator"
+    ],
+    "right": [
+      "Decouple abstraction",
+      "Tree structure",
+      "Share state",
+      "Add behavior"
+    ]
+  },
+  {
+    "q": "What is the Visitor pattern?",
+    "type": "mcq",
+    "o": [
+      "Adding operations to object structures without modifying them",
+      "Visiting objects",
+      "Creating visitors",
+      "Decorating visitors"
+    ]
+  },
+  {
+    "q": "Visitors separate algorithms from object structures.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is double dispatch?",
+    "type": "mcq",
+    "o": [
+      "Calling a method based on runtime types of two objects",
+      "Calling two methods",
+      "Dispatching events",
+      "Creating dispatchers"
+    ]
+  },
+  {
+    "q": "The ______ pattern uses Accept and Visit methods.",
+    "type": "fill_blank",
+    "answers": [
+      "Visitor"
+    ],
+    "other_options": [
+      "Strategy",
+      "Command",
+      "Observer"
+    ]
+  },
+  {
+    "q": "What is the Mediator pattern?",
+    "type": "mcq",
+    "o": [
+      "Centralizing complex communication between objects",
+      "Mediating disputes",
+      "Creating mediators",
+      "Observing mediation"
+    ]
+  },
+  {
+    "q": "Mediators reduce direct dependencies between objects.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match behavioral pattern purposes:",
+    "type": "match",
+    "left": [
+      "Mediator",
+      "Visitor",
+      "Iterator",
+      "Memento"
+    ],
+    "right": [
+      "Central coordination",
+      "Operations on structure",
+      "Sequential access",
+      "Undo capability"
+    ]
+  },
+  {
+    "q": "What is the Memento pattern?",
+    "type": "mcq",
+    "o": [
+      "Capturing and restoring object state",
+      "Remembering patterns",
+      "Creating memories",
+      "Observing history"
+    ]
+  },
+  {
+    "q": "Mementos store snapshots of object state.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Rearrange Memento implementation:",
+    "type": "rearrange",
+    "words": [
+      "Create memento class",
+      "Originator saves state",
+      "Caretaker stores momento",
+      "Restore when needed"
+    ]
+  },
+  {
+    "q": "What is the Iterator pattern?",
+    "type": "mcq",
+    "o": [
+      "Accessing elements of a collection sequentially",
+      "Creating iterators",
+      "Decorating iterators",
+      "Observing iteration"
+    ]
+  },
+  {
+    "q": "The ______ interface provides sequential access.",
+    "type": "fill_blank",
+    "answers": [
+      "IEnumerator"
+    ],
+    "other_options": [
+      "IIterator",
+      "ISequence",
+      "ICollection"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Range : IEnumerable<int>\n{\n    private int start, end;\n    public Range(int s, int e) { start = s; end = e; }\n    public IEnumerator<int> GetEnumerator()\n    {\n        for (int i = start; i <= end; i++) yield return i;\n    }\n    IEnumerator IEnumerable.GetEnumerator() => GetEnumerator();\n}\nvar sum = 0;\nforeach (var n in new Range(1, 3)) sum += n;\nConsole.WriteLine(sum);",
+    "o": [
+      "6",
+      "3",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "yield return enables lazy enumeration.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the object pool pattern?",
+    "type": "mcq",
+    "o": [
+      "Reusing objects from a pool instead of creating new ones",
+      "Swimming pool objects",
+      "Creating pools",
+      "Observing pools"
+    ]
+  },
+  {
+    "q": "Object pools improve performance by reusing expensive objects.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match resource management patterns:",
+    "type": "match",
+    "left": [
+      "Object Pool",
+      "Flyweight",
+      "Lazy Loading",
+      "Caching"
+    ],
+    "right": [
+      "Reuse instances",
+      "Share state",
+      "Load on demand",
+      "Store results"
+    ]
+  },
+  {
+    "q": "What is the Null Object pattern?",
+    "type": "mcq",
+    "o": [
+      "Using an object that does nothing instead of null",
+      "Checking for null everywhere",
+      "Creating null objects",
+      "Observing null"
+    ]
+  },
+  {
+    "q": "Null Objects prevent NullReferenceException.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface ILogger { void Log(string msg); }\nclass NullLogger : ILogger { public void Log(string msg) { } }\nclass RealLogger : ILogger { public void Log(string msg) => Console.Write(msg); }\nILogger logger = new NullLogger();\nlogger.Log(\"Test\");\nConsole.Write(\"Done\");",
+    "o": [
+      "Done",
+      "Test",
+      "TestDone",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ pattern uses a do-nothing implementation.",
+    "type": "fill_blank",
+    "answers": [
+      "Null Object"
+    ],
+    "other_options": [
+      "Singleton",
+      "Factory",
+      "Proxy"
+    ]
+  },
+  {
+    "q": "What is the Specification pattern?",
+    "type": "mcq",
+    "o": [
+      "Encapsulating business rules as objects",
+      "Specifying interfaces",
+      "Creating specifications",
+      "Observing rules"
+    ]
+  },
+  {
+    "q": "Specifications can be combined with And, Or, and Not.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface ISpecification<T> { bool IsSatisfiedBy(T item); }\nclass EvenSpec : ISpecification<int> { public bool IsSatisfiedBy(int n) => n % 2 == 0; }\nConsole.WriteLine(new EvenSpec().IsSatisfiedBy(4));",
+    "o": [
+      "True",
+      "False",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match specification combinations:",
+    "type": "match",
+    "left": [
+      "And",
+      "Or",
+      "Not",
+      "Composite"
+    ],
+    "right": [
+      "Both true",
+      "Either true",
+      "Invert result",
+      "Combine specs"
+    ]
+  },
+  {
+    "q": "What is the Repository pattern?",
+    "type": "mcq",
+    "o": [
+      "Abstracting data access behind a collection-like interface",
+      "Storing repositories",
+      "Creating repos",
+      "Version control"
+    ]
+  },
+  {
+    "q": "Repositories encapsulate data access logic.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Rearrange Repository pattern implementation:",
+    "type": "rearrange",
+    "words": [
+      "Define interface",
+      "Implement with data source",
+      "Expose CRUD methods",
+      "Use in services"
+    ]
+  },
+  {
+    "q": "What is the Unit of Work pattern?",
+    "type": "mcq",
+    "o": [
+      "Tracking changes and committing them as a unit",
+      "Working on units",
+      "Creating work units",
+      "Observing work"
+    ]
+  },
+  {
+    "q": "Unit of Work coordinates multiple repository operations.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match persistence patterns:",
+    "type": "match",
+    "left": [
+      "Repository",
+      "Unit of Work",
+      "Identity Map",
+      "Data Mapper"
+    ],
+    "right": [
+      "Collection interface",
+      "Track changes",
+      "No duplicates",
+      "Transform data"
+    ]
+  },
+  {
+    "q": "What is the Active Record pattern?",
+    "type": "mcq",
+    "o": [
+      "An object that wraps a database row and includes persistence logic",
+      "Recording active users",
+      "Creating records",
+      "Observing database"
+    ]
+  },
+  {
+    "q": "Active Record combines data and persistence in one class.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "abstract class Entity<T>\n{\n    public T Id { get; set; }\n    public override bool Equals(object obj)\n    {\n        if (obj is not Entity<T> other) return false;\n        return Equals(Id, other.Id);\n    }\n    public override int GetHashCode() => Id?.GetHashCode() ?? 0;\n}\nclass User : Entity<int> { public string Name; }\nvar u1 = new User { Id = 1, Name = \"A\" };\nvar u2 = new User { Id = 1, Name = \"B\" };\nConsole.WriteLine(u1.Equals(u2));",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "A"
+    ]
+  },
+  {
+    "q": "The ______ pattern tracks objects by identity.",
+    "type": "fill_blank",
+    "answers": [
+      "Identity Map"
+    ],
+    "other_options": [
+      "Repository",
+      "Unit of Work",
+      "Active Record"
+    ]
+  },
+  {
+    "q": "What is the Service Locator pattern?",
+    "type": "mcq",
+    "o": [
+      "Providing a central registry to resolve dependencies",
+      "Locating services geographically",
+      "Creating services",
+      "Observing services"
+    ]
+  },
+  {
+    "q": "Service Locator is often considered an anti-pattern.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class ServiceLocator\n{\n    private static Dictionary<Type, object> services = new();\n    public static void Register<T>(T service) => services[typeof(T)] = service;\n    public static T Get<T>() => (T)services[typeof(T)];\n}\nServiceLocator.Register<string>(\"Hello\");\nConsole.WriteLine(ServiceLocator.Get<string>());",
+    "o": [
+      "Hello",
+      "Error",
+      "string",
+      "null"
+    ]
+  },
+  {
+    "q": "Match dependency patterns:",
+    "type": "match",
+    "left": [
+      "DI Container",
+      "Service Locator",
+      "Constructor Injection",
+      "Property Injection"
+    ],
+    "right": [
+      "Manages lifetimes",
+      "Central registry",
+      "Via constructor",
+      "Via property"
+    ]
+  },
+  {
+    "q": "What is inversion of control?",
+    "type": "mcq",
+    "o": [
+      "Framework calls your code instead of vice versa",
+      "Inverting logic",
+      "Controlling inversions",
+      "Observing control"
+    ]
+  },
+  {
+    "q": "IoC containers manage object lifetimes and dependencies.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Rearrange IoC container usage:",
+    "type": "rearrange",
+    "words": [
+      "Register types",
+      "Resolve dependencies",
+      "Inject automatically",
+      "Dispose when done"
+    ]
+  },
+  {
+    "q": "What are object lifetimes in DI?",
+    "type": "mcq",
+    "o": [
+      "Transient, Scoped, and Singleton",
+      "Short and Long",
+      "Temporary only",
+      "Permanent only"
+    ]
+  },
+  {
+    "q": "The ______ lifetime creates a new instance each time.",
+    "type": "fill_blank",
+    "answers": [
+      "Transient"
+    ],
+    "other_options": [
+      "Scoped",
+      "Singleton",
+      "Instance"
+    ]
+  },
+  {
+    "q": "Match DI lifetimes:",
+    "type": "match",
+    "left": [
+      "Transient",
+      "Scoped",
+      "Singleton",
+      "Instance"
+    ],
+    "right": [
+      "Every request",
+      "Per scope",
+      "One for all",
+      "Pre-created"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IService { }\nclass MyService : IService { public int Id = new Random().Next(1000); }\n// Assuming Transient registration\nvar s1 = new MyService();\nvar s2 = new MyService();\nConsole.WriteLine(s1.Id == s2.Id);",
+    "o": [
+      "False (usually)",
+      "True",
+      "Error",
+      "Always True"
+    ]
+  },
+  {
+    "q": "Scoped lifetime creates one instance per request.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is a value object in DDD?",
+    "type": "mcq",
+    "o": [
+      "An immutable object defined by its attributes",
+      "An object with value",
+      "A numeric type",
+      "A reference type"
+    ]
+  },
+  {
+    "q": "Value objects are compared by value, not identity.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "record Money(decimal Amount, string Currency);\nvar m1 = new Money(100, \"USD\");\nvar m2 = new Money(100, \"USD\");\nConsole.WriteLine(m1 == m2);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "100"
+    ]
+  },
+  {
+    "q": "Match DDD concepts:",
+    "type": "match",
+    "left": [
+      "Entity",
+      "Value Object",
+      "Aggregate",
+      "Domain Event"
+    ],
+    "right": [
+      "Has identity",
+      "No identity",
+      "Consistency boundary",
+      "State change notification"
+    ]
+  },
+  {
+    "q": "What is an aggregate in DDD?",
+    "type": "mcq",
+    "o": [
+      "A cluster of objects treated as a single unit",
+      "A sum of values",
+      "A collection",
+      "An interface"
+    ]
+  },
+  {
+    "q": "Aggregates define transactional boundaries.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "The ______ root controls access to an aggregate.",
+    "type": "fill_blank",
+    "answers": [
+      "Aggregate"
+    ],
+    "other_options": [
+      "Entity",
+      "Value",
+      "Domain"
+    ]
+  },
+  {
+    "q": "Rearrange aggregate design:",
+    "type": "rearrange",
+    "words": [
+      "Identify root entity",
+      "Define boundaries",
+      "Enforce invariants",
+      "Expose through repository"
+    ]
+  },
+  {
+    "q": "What is a domain event?",
+    "type": "mcq",
+    "o": [
+      "A notification that something happened in the domain",
+      "A domain name",
+      "An error event",
+      "A database event"
+    ]
+  },
+  {
+    "q": "Domain events enable loose coupling.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "record OrderPlaced(int OrderId, DateTime When);\nvar evt = new OrderPlaced(1, DateTime.Now);\nConsole.WriteLine(evt.OrderId);",
+    "o": [
+      "1",
+      "OrderPlaced",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Match event patterns:",
+    "type": "match",
+    "left": [
+      "Domain Event",
+      "Integration Event",
+      "Event Handler",
+      "Event Store"
+    ],
+    "right": [
+      "Within context",
+      "Between contexts",
+      "Reacts to events",
+      "Persists events"
+    ]
+  },
+  {
+    "q": "What is CQRS?",
+    "type": "mcq",
+    "o": [
+      "Command Query Responsibility Segregation",
+      "Create Query Read Store",
+      "Common Query Response Service",
+      "Central Query Routing System"
+    ]
+  },
+  {
+    "q": "CQRS separates read and write operations.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "The ______ model handles write operations in CQRS.",
+    "type": "fill_blank",
+    "answers": [
+      "Command"
+    ],
+    "other_options": [
+      "Query",
+      "Read",
+      "Write"
+    ]
+  },
+  {
+    "q": "What is Event Sourcing?",
+    "type": "mcq",
+    "o": [
+      "Storing state as a sequence of events",
+      "Sourcing events externally",
+      "Creating event sources",
+      "Observing events"
+    ]
+  },
+  {
+    "q": "Event Sourcing enables complete audit trails.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Rearrange Event Sourcing steps:",
+    "type": "rearrange",
+    "words": [
+      "Receive command",
+      "Apply domain logic",
+      "Publish events",
+      "Store events",
+      "Rebuild state"
+    ]
+  },
+  {
+    "q": "What is a bounded context?",
+    "type": "mcq",
+    "o": [
+      "A linguistic boundary within which a model applies",
+      "A limited scope",
+      "A database boundary",
+      "An API boundary"
+    ]
+  },
+  {
+    "q": "Match bounded context relationships:",
+    "type": "match",
+    "left": [
+      "Shared Kernel",
+      "Customer-Supplier",
+      "Conformist",
+      "Anticorruption Layer"
+    ],
+    "right": [
+      "Shared code",
+      "Upstream-downstream",
+      "Follow upstream",
+      "Translate models"
+    ]
+  },
+  {
+    "q": "What is a mixin?",
+    "type": "mcq",
+    "o": [
+      "A way to add behavior to classes without inheritance",
+      "Mixing classes together",
+      "A type of interface",
+      "A static class"
+    ]
+  },
+  {
+    "q": "C# uses extension methods and interfaces for mixin-like behavior.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface ITimestamped { DateTime Created { get; } }\nstatic class TimestampExtensions\n{\n    public static string GetAge(this ITimestamped t) => (DateTime.Now - t.Created).Days + \" days\";\n}\nclass Document : ITimestamped { public DateTime Created => DateTime.Now.AddDays(-5); }\nConsole.WriteLine(new Document().GetAge());",
+    "o": [
+      "5 days",
+      "0 days",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ pattern provides default interface implementations.",
+    "type": "fill_blank",
+    "answers": [
+      "Mixin"
+    ],
+    "other_options": [
+      "Decorator",
+      "Adapter",
+      "Proxy"
+    ]
+  },
+  {
+    "q": "What is a trait?",
+    "type": "mcq",
+    "o": [
+      "A unit of behavior that can be composed into classes",
+      "A characteristic",
+      "A property",
+      "A method"
+    ]
+  },
+  {
+    "q": "C# 8+ default interface methods enable trait-like behavior.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match composition techniques:",
+    "type": "match",
+    "left": [
+      "Inheritance",
+      "Composition",
+      "Mixin",
+      "Trait"
+    ],
+    "right": [
+      "Is-a relationship",
+      "Has-a relationship",
+      "Behavior addition",
+      "Composable behavior"
+    ]
+  },
+  {
+    "q": "What is duck typing?",
+    "type": "mcq",
+    "o": [
+      "If it walks like a duck and quacks, it's a duck",
+      "Typing about ducks",
+      "A type of interface",
+      "Static typing"
+    ]
+  },
+  {
+    "q": "C# achieves duck typing through dynamic and patterns.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "dynamic duck = new { Quack = (Func<string>)(() => \"Quack!\") };\nConsole.WriteLine(duck.Quack());",
+    "o": [
+      "Quack!",
+      "Error",
+      "duck",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange duck typing concepts:",
+    "type": "rearrange",
+    "words": [
+      "No explicit interface",
+      "Check capabilities",
+      "Call if exists",
+      "Runtime resolution"
+    ]
+  },
+  {
+    "q": "What is the Dispose pattern?",
+    "type": "mcq",
+    "o": [
+      "Properly releasing unmanaged resources",
+      "Disposing of objects",
+      "Creating disposables",
+      "Observing disposal"
+    ]
+  },
+  {
+    "q": "IDisposable.Dispose should be idempotent.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Resource : IDisposable\n{\n    public void Dispose() => Console.Write(\"Disposed\");\n}\nusing (var r = new Resource()) { Console.Write(\"Using \"); }",
+    "o": [
+      "Using Disposed",
+      "Disposed Using",
+      "Using",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match disposal concepts:",
+    "type": "match",
+    "left": [
+      "IDisposable",
+      "using statement",
+      "Finalizer",
+      "GC.SuppressFinalize"
+    ],
+    "right": [
+      "Interface",
+      "Auto dispose",
+      "Last resort",
+      "Skip finalization"
+    ]
+  },
+  {
+    "q": "What is the Finalize pattern?",
+    "type": "mcq",
+    "o": [
+      "A destructor for releasing resources when GC collects",
+      "Finalizing objects",
+      "Creating finalizers",
+      "Observing finalization"
+    ]
+  },
+  {
+    "q": "Finalizers should call Dispose(false).",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "The ______ method prevents finalization.",
+    "type": "fill_blank",
+    "answers": [
+      "SuppressFinalize"
+    ],
+    "other_options": [
+      "Finalize",
+      "Dispose",
+      "Collect"
+    ]
+  },
+  {
+    "q": "Rearrange proper disposal pattern:",
+    "type": "rearrange",
+    "words": [
+      "Implement IDisposable",
+      "Create Dispose(bool)",
+      "Add finalizer",
+      "Call SuppressFinalize"
+    ]
+  },
+  {
+    "q": "What is the IAsyncDisposable interface?",
+    "type": "mcq",
+    "o": [
+      "Async version of IDisposable for async cleanup",
+      "Disposing async operations",
+      "Creating async disposables",
+      "Observing async"
+    ]
+  },
+  {
+    "q": "await using enables async disposal.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class AsyncResource : IAsyncDisposable\n{\n    public async ValueTask DisposeAsync()\n    {\n        await Task.Delay(1);\n        Console.Write(\"Disposed\");\n    }\n}\nawait using (var r = new AsyncResource()) { Console.Write(\"Using \"); }",
+    "o": [
+      "Using Disposed",
+      "Disposed Using",
+      "Using",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match async patterns:",
+    "type": "match",
+    "left": [
+      "IAsyncDisposable",
+      "await using",
+      "ValueTask",
+      "ConfigureAwait"
+    ],
+    "right": [
+      "Async cleanup",
+      "Auto async dispose",
+      "Lightweight task",
+      "Context config"
+    ]
+  },
+  {
+    "q": "What is the Producer-Consumer pattern?",
+    "type": "mcq",
+    "o": [
+      "Decoupling work production from consumption",
+      "Making products",
+      "Consuming data",
+      "Creating producers"
+    ]
+  },
+  {
+    "q": "Channels are used for producer-consumer in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var channel = Channel.CreateUnbounded<int>();\nawait channel.Writer.WriteAsync(42);\nConsole.WriteLine(await channel.Reader.ReadAsync());",
+    "o": [
+      "42",
+      "Error",
+      "channel",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ class provides bounded async queues.",
+    "type": "fill_blank",
+    "answers": [
+      "Channel"
+    ],
+    "other_options": [
+      "Queue",
+      "Buffer",
+      "Pipe"
+    ]
+  },
+  {
+    "q": "What is the Actor model?",
+    "type": "mcq",
+    "o": [
+      "Concurrent computation using message-passing actors",
+      "Acting systems",
+      "Creating actors",
+      "Observing actors"
+    ]
+  },
+  {
+    "q": "Actors process messages sequentially.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match concurrent patterns:",
+    "type": "match",
+    "left": [
+      "Actor",
+      "Producer-Consumer",
+      "Pipeline",
+      "Broadcast"
+    ],
+    "right": [
+      "Message passing",
+      "Queue based",
+      "Stages",
+      "To multiple"
+    ]
+  },
+  {
+    "q": "Rearrange actor model concepts:",
+    "type": "rearrange",
+    "words": [
+      "Actor receives message",
+      "Processes sequentially",
+      "May create actors",
+      "Sends messages"
+    ]
+  },
+  {
+    "q": "What is the Pipeline pattern?",
+    "type": "mcq",
+    "o": [
+      "Processing data through a series of stages",
+      "Piping data",
+      "Creating pipelines",
+      "Observing pipes"
+    ]
+  },
+  {
+    "q": "Each pipeline stage can run concurrently.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "async IAsyncEnumerable<int> GenerateAsync()\n{\n    for (int i = 1; i <= 3; i++)\n    {\n        await Task.Delay(1);\n        yield return i;\n    }\n}\nint sum = 0;\nawait foreach (var n in GenerateAsync()) sum += n;\nConsole.WriteLine(sum);",
+    "o": [
+      "6",
+      "3",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "IAsyncEnumerable enables async iteration.",
+    "type": "fill_blank",
+    "answers": [
+      "IAsyncEnumerable"
+    ],
+    "other_options": [
+      "IEnumerable",
+      "IAsyncIterator",
+      "AsyncStream"
+    ]
+  },
+  {
+    "q": "What is defensive copying?",
+    "type": "mcq",
+    "o": [
+      "Creating copies to prevent mutation of shared data",
+      "Copying defensively",
+      "Protecting copies",
+      "Observing copies"
+    ]
+  },
+  {
+    "q": "Defensive copying protects encapsulation.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Holder\n{\n    private readonly int[] data;\n    public Holder(int[] arr) => data = (int[])arr.Clone();\n    public int[] GetData() => (int[])data.Clone();\n}\nvar arr = new[] { 1, 2, 3 };\nvar h = new Holder(arr);\narr[0] = 99;\nConsole.WriteLine(h.GetData()[0]);",
+    "o": [
+      "1",
+      "99",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Match defensive techniques:",
+    "type": "match",
+    "left": [
+      "Defensive copy",
+      "Immutable collection",
+      "Readonly",
+      "Freeze"
+    ],
+    "right": [
+      "Clone on set/get",
+      "Cannot modify",
+      "Cannot reassign",
+      "Make immutable"
+    ]
+  },
+  {
+    "q": "What is the Law of Demeter?",
+    "type": "mcq",
+    "o": [
+      "Only talk to immediate friends",
+      "A law about demeter",
+      "Creating laws",
+      "Observing laws"
+    ]
+  },
+  {
+    "q": "The Law of Demeter reduces coupling.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Rearrange Law of Demeter principles:",
+    "type": "rearrange",
+    "words": [
+      "Use own fields",
+      "Use parameters",
+      "Use local objects",
+      "Use direct dependencies"
+    ]
+  },
+  {
+    "q": "What is Tell, Don't Ask?",
+    "type": "mcq",
+    "o": [
+      "Tell objects what to do instead of asking for data",
+      "Asking questions",
+      "Telling stories",
+      "Observing behavior"
+    ]
+  },
+  {
+    "q": "Tell, Don't Ask promotes behavior over data.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Account\n{\n    private decimal balance;\n    public Account(decimal b) => balance = b;\n    public void Withdraw(decimal amount)\n    {\n        if (amount <= balance) balance -= amount;\n    }\n    public bool CanAfford(decimal amount) => amount <= balance;\n}\nvar acc = new Account(100);\nacc.Withdraw(50);\nConsole.WriteLine(acc.CanAfford(50));",
+    "o": [
+      "True",
+      "False",
+      "50",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match OOP principles:",
+    "type": "match",
+    "left": [
+      "Tell Don't Ask",
+      "Law of Demeter",
+      "Single Responsibility",
+      "Open/Closed"
+    ],
+    "right": [
+      "Command over query",
+      "Limit knowledge",
+      "One reason to change",
+      "Extend not modify"
+    ]
+  },
+  {
+    "q": "What is Feature Envy code smell?",
+    "type": "mcq",
+    "o": [
+      "A method that uses another class's data more than its own",
+      "Envying features",
+      "Creating features",
+      "Observing envy"
+    ]
+  },
+  {
+    "q": "Feature Envy should be refactored by moving the method.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Point { public int X, Y; }\nclass PointOperations\n{\n    public static double Distance(Point p1, Point p2)\n    {\n        var dx = p1.X - p2.X;\n        var dy = p1.Y - p2.Y;\n        return Math.Sqrt(dx*dx + dy*dy);\n    }\n}\nvar p1 = new Point { X = 0, Y = 0 };\nvar p2 = new Point { X = 3, Y = 4 };\nConsole.WriteLine(PointOperations.Distance(p1, p2));",
+    "o": [
+      "5",
+      "7",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "The ______ smell indicates methods that should be in another class.",
+    "type": "fill_blank",
+    "answers": [
+      "Feature Envy"
+    ],
+    "other_options": [
+      "God Class",
+      "Long Method",
+      "Data Clump"
+    ]
+  },
+  {
+    "q": "What is a God Class anti-pattern?",
+    "type": "mcq",
+    "o": [
+      "A class that knows too much or does too much",
+      "A divine class",
+      "A perfect class",
+      "An abstract class"
+    ]
+  },
+  {
+    "q": "God Classes violate the Single Responsibility Principle.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match code smells:",
+    "type": "match",
+    "left": [
+      "God Class",
+      "Feature Envy",
+      "Long Method",
+      "Data Clump"
+    ],
+    "right": [
+      "Knows too much",
+      "Uses other's data",
+      "Too many lines",
+      "Always together"
+    ]
+  },
+  {
+    "q": "Rearrange refactoring steps:",
+    "type": "rearrange",
+    "words": [
+      "Identify smell",
+      "Write tests",
+      "Apply refactoring",
+      "Verify behavior"
+    ]
+  },
+  {
+    "q": "What is the Expression Problem?",
+    "type": "mcq",
+    "o": [
+      "Adding new types and operations without modifying existing code",
+      "Expressing problems",
+      "Creating expressions",
+      "Observing expressions"
+    ]
+  },
+  {
+    "q": "The Visitor pattern helps solve the Expression Problem.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is object-relational impedance mismatch?",
+    "type": "mcq",
+    "o": [
+      "Differences between OOP and relational database models",
+      "Object resistance",
+      "Relational problems",
+      "Database issues"
+    ]
+  },
+  {
+    "q": "ORMs help bridge the object-relational mismatch.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match mismatch types:",
+    "type": "match",
+    "left": [
+      "Inheritance",
+      "Identity",
+      "Navigation",
+      "Encapsulation"
+    ],
+    "right": [
+      "No table inheritance",
+      "Key vs reference",
+      "Joins vs properties",
+      "Public columns"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Base { public virtual void M() => Console.Write(\"B\"); }\nclass Derived : Base { public override void M() => Console.Write(\"D\"); }\nBase b = new Derived();\nb.M();",
+    "o": [
+      "D",
+      "B",
+      "BD",
+      "Error"
+    ]
+  },
+  {
+    "q": "Runtime polymorphism dispatches based on actual type.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IShape { double Area { get; } }\nclass Square : IShape { public double Side; public double Area => Side * Side; }\nclass Circle : IShape { public double Radius; public double Area => Math.PI * Radius * Radius; }\nIShape[] shapes = { new Square { Side = 2 }, new Circle { Radius = 1 } };\nConsole.WriteLine(Math.Round(shapes.Sum(s => s.Area), 2));",
+    "o": [
+      "7.14",
+      "4",
+      "3.14",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ principle ensures derived types are substitutable.",
+    "type": "fill_blank",
+    "answers": [
+      "Liskov Substitution"
+    ],
+    "other_options": [
+      "Open/Closed",
+      "Single Responsibility",
+      "Interface Segregation"
+    ]
+  },
+  {
+    "q": "Rearrange polymorphic dispatch:",
+    "type": "rearrange",
+    "words": [
+      "Define virtual method",
+      "Override in derived",
+      "Use base reference",
+      "Call resolves at runtime"
+    ]
+  },
+  {
+    "q": "What is static polymorphism?",
+    "type": "mcq",
+    "o": [
+      "Polymorphism resolved at compile time",
+      "Using static classes",
+      "Static methods only",
+      "Runtime polymorphism"
+    ]
+  },
+  {
+    "q": "Generics and overloading are forms of static polymorphism.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "static T Max<T>(T a, T b) where T : IComparable<T> => a.CompareTo(b) > 0 ? a : b;\nConsole.WriteLine(Max(3, 7));",
+    "o": [
+      "7",
+      "3",
+      "Error",
+      "10"
+    ]
+  },
+  {
+    "q": "Match polymorphism types:",
+    "type": "match",
+    "left": [
+      "Runtime",
+      "Compile-time",
+      "Parametric",
+      "Ad-hoc"
+    ],
+    "right": [
+      "Virtual dispatch",
+      "Overloading",
+      "Generics",
+      "Different implementations"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "record Person(string Name, int Age);\nvar people = new List<Person>\n{\n    new(\"Alice\", 30),\n    new(\"Bob\", 25)\n};\nConsole.WriteLine(people.OrderBy(p => p.Age).First().Name);",
+    "o": [
+      "Bob",
+      "Alice",
+      "25",
+      "Error"
+    ]
+  },
+  {
+    "q": "LINQ uses polymorphism through IEnumerable.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "abstract class Handler\n{\n    protected Handler next;\n    public void SetNext(Handler h) => next = h;\n    public virtual void Handle(int level)\n    {\n        if (next != null) next.Handle(level);\n    }\n}\nclass InfoHandler : Handler\n{\n    public override void Handle(int level)\n    {\n        if (level == 1) Console.Write(\"Info\");\n        else base.Handle(level);\n    }\n}\nclass ErrorHandler : Handler\n{\n    public override void Handle(int level)\n    {\n        if (level == 2) Console.Write(\"Error\");\n        else base.Handle(level);\n    }\n}\nvar info = new InfoHandler();\nvar error = new ErrorHandler();\ninfo.SetNext(error);\ninfo.Handle(2);",
+    "o": [
+      "Error",
+      "Info",
+      "InfoError",
+      "null"
+    ]
+  },
+  {
+    "q": "The Chain of Responsibility passes requests along handlers.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Rearrange OOP design process:",
+    "type": "rearrange",
+    "words": [
+      "Identify responsibilities",
+      "Define interfaces",
+      "Implement classes",
+      "Apply patterns"
+    ]
+  },
+  {
+    "q": "What is cohesion?",
+    "type": "mcq",
+    "o": [
+      "How closely related the responsibilities of a class are",
+      "Sticking together",
+      "Creating cohesive code",
+      "Observing cohesion"
+    ]
+  },
+  {
+    "q": "High cohesion is desirable.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is coupling?",
+    "type": "mcq",
+    "o": [
+      "The degree of dependency between classes",
+      "Joining classes",
+      "Creating couples",
+      "Observing coupling"
+    ]
+  },
+  {
+    "q": "Low coupling is desirable.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match quality metrics:",
+    "type": "match",
+    "left": [
+      "High cohesion",
+      "Low coupling",
+      "Single purpose",
+      "Few dependencies"
+    ],
+    "right": [
+      "Related responsibilities",
+      "Loose connections",
+      "SRP",
+      "DIP"
+    ]
+  },
+  {
+    "q": "The ______ keyword allows classes to be defined in multiple parts.",
+    "type": "fill_blank",
+    "answers": [
+      "partial"
+    ],
+    "other_options": [
+      "split",
+      "multi",
+      "fragment"
+    ]
+  },
+  {
+    "q": "Partial classes enable separation of generated and hand-written code.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this reflection code?",
+    "type": "mcq",
+    "c": "using System;\nusing System.Reflection;\nclass MyClass { public int Value { get; set; } }\nvar type = typeof(MyClass);\nvar props = type.GetProperties();\nConsole.WriteLine(props.Length);",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ attribute prevents a class from being inherited.",
+    "type": "fill_blank",
+    "answers": [
+      "sealed"
+    ],
+    "other_options": [
+      "final",
+      "locked",
+      "closed"
+    ]
+  },
+  {
+    "q": "Extension methods must be defined in non-static classes.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "What is the output of this extension method code?",
+    "type": "mcq",
+    "c": "public static class Extensions {\n    public static int Double(this int value) => value * 2;\n}\nint num = 5;\nConsole.WriteLine(num.Double());",
+    "o": [
+      "10",
+      "5",
+      "Error",
+      "25"
+    ]
+  },
+  {
+    "q": "Match the reflection types:",
+    "type": "match",
+    "left": [
+      "Type",
+      "PropertyInfo",
+      "MethodInfo",
+      "FieldInfo"
+    ],
+    "right": [
+      "Class metadata",
+      "Property metadata",
+      "Method metadata",
+      "Field metadata"
+    ]
+  },
+  {
+    "q": "What is the output of this attribute code?",
+    "type": "mcq",
+    "c": "[Obsolete(\"Use NewMethod\")]\npublic void OldMethod() { }\npublic void Test() {\n    OldMethod();\n}",
+    "o": [
+      "Warning",
+      "Error",
+      "No output",
+      "Exception"
+    ]
+  },
+  {
+    "q": "The ______ namespace contains classes for reflection.",
+    "type": "fill_blank",
+    "answers": [
+      "System.Reflection"
+    ],
+    "other_options": [
+      "System.Meta",
+      "System.Type",
+      "System.Inspect"
+    ]
+  },
+  {
+    "q": "Custom attributes must inherit from System.Attribute.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this dynamic binding code?",
+    "type": "mcq",
+    "c": "dynamic obj = \"Hello\";\nConsole.WriteLine(obj.Length);",
+    "o": [
+      "5",
+      "Error",
+      "Exception",
+      "0"
+    ]
+  },
+  {
+    "q": "Match the object lifetime concepts:",
+    "type": "match",
+    "left": [
+      "Stack",
+      "Heap",
+      "GC",
+      "Finalizer"
+    ],
+    "right": [
+      "Value types",
+      "Reference types",
+      "Memory cleanup",
+      "Destructor equivalent"
+    ]
+  },
+  {
+    "q": "What is the output of this operator overloading code?",
+    "type": "mcq",
+    "c": "class Point {\n    public int X, Y;\n    public static Point operator +(Point a, Point b) =>\n        new Point { X = a.X + b.X, Y = a.Y + b.Y };\n}\nvar p1 = new Point { X = 1, Y = 2 };\nvar p2 = new Point { X = 3, Y = 4 };\nvar p3 = p1 + p2;\nConsole.WriteLine(p3.X);",
+    "o": [
+      "4",
+      "1",
+      "3",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword is used to define indexers in a class.",
+    "type": "fill_blank",
+    "answers": [
+      "this"
+    ],
+    "other_options": [
+      "index",
+      "indexer",
+      "get"
+    ]
+  },
+  {
+    "q": "Indexers allow object access using array notation.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this indexer code?",
+    "type": "mcq",
+    "c": "class MyList {\n    private int[] data = new int[10];\n    public int this[int i] {\n        get => data[i];\n        set => data[i] = value;\n    }\n}\nvar list = new MyList();\nlist[0] = 42;\nConsole.WriteLine(list[0]);",
+    "o": [
+      "42",
+      "0",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Match the advanced OOP patterns:",
+    "type": "match",
+    "left": [
+      "Singleton",
+      "Factory",
+      "Observer",
+      "Strategy"
+    ],
+    "right": [
+      "Single instance",
+      "Object creation",
+      "Event notification",
+      "Algorithm selection"
+    ]
+  },
+  {
+    "q": "What is the output of this null-coalescing code?",
+    "type": "mcq",
+    "c": "string name = null;\nstring result = name ?? \"Default\";\nConsole.WriteLine(result);",
+    "o": [
+      "Default",
+      "null",
+      "Error",
+      "Empty string"
+    ]
+  },
+  {
+    "q": "The ______ operator checks if an object is not null before accessing members.",
+    "type": "fill_blank",
+    "answers": [
+      "?."
+    ],
+    "other_options": [
+      "!.",
+      "?:",
+      "::"
+    ]
+  },
+  {
+    "q": "Null-conditional operators short-circuit evaluation when null is encountered.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this null-conditional code?",
+    "type": "mcq",
+    "c": "string text = null;\nint? length = text?.Length;\nConsole.WriteLine(length.HasValue);",
+    "o": [
+      "False",
+      "True",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Match the nullable concepts:",
+    "type": "match",
+    "left": [
+      "Nullable<T>",
+      "HasValue",
+      "Value",
+      "GetValueOrDefault"
+    ],
+    "right": [
+      "Wrapper type",
+      "Check for null",
+      "Get value",
+      "Default if null"
+    ]
+  },
+  {
+    "q": "What is the output of this complex LINQ code analyzing item 425?",
+    "type": "mcq",
+    "c": "var nums = new[] { 1, 2, 3 };\nvar result = nums.Select(n => n * 2).Where(n => n > 2).Count();\nConsole.WriteLine(result);",
+    "o": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "The ______ interface enables LINQ query execution.",
+    "type": "fill_blank",
+    "answers": [
+      "IQueryable"
+    ],
+    "other_options": [
+      "ICollection",
+      "IList",
+      "IArray"
+    ]
+  },
+  {
+    "q": "Deferred execution means LINQ queries execute when enumerated.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the LINQ operators:",
+    "type": "match",
+    "left": [
+      "Where",
+      "Select",
+      "OrderBy",
+      "GroupBy"
+    ],
+    "right": [
+      "Filter",
+      "Project",
+      "Sort",
+      "Group"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda expression?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(6));",
+    "o": [
+      "36",
+      "6",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the LINQ query execution order:",
+    "type": "rearrange",
+    "words": [
+      "Query definition",
+      "Data source",
+      "Enumeration",
+      "Result generation"
+    ]
+  },
+  {
+    "q": "What is the output of this complex LINQ code analyzing item 431?",
+    "type": "mcq",
+    "c": "var nums = new[] { 7, 8, 9 };\nvar result = nums.Select(n => n * 2).Where(n => n > 8).Count();\nConsole.WriteLine(result);",
+    "o": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "The ______ interface enables LINQ query execution.",
+    "type": "fill_blank",
+    "answers": [
+      "IQueryable"
+    ],
+    "other_options": [
+      "ICollection",
+      "IList",
+      "IArray"
+    ]
+  },
+  {
+    "q": "Deferred execution means LINQ queries execute when enumerated.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the LINQ operators:",
+    "type": "match",
+    "left": [
+      "Where",
+      "Select",
+      "OrderBy",
+      "GroupBy"
+    ],
+    "right": [
+      "Filter",
+      "Project",
+      "Sort",
+      "Group"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda expression?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(2));",
+    "o": [
+      "4",
+      "2",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the LINQ query execution order:",
+    "type": "rearrange",
+    "words": [
+      "Query definition",
+      "Data source",
+      "Enumeration",
+      "Result generation"
+    ]
+  },
+  {
+    "q": "What is the output of this complex LINQ code analyzing item 437?",
+    "type": "mcq",
+    "c": "var nums = new[] { 13, 14, 15 };\nvar result = nums.Select(n => n * 2).Where(n => n > 14).Count();\nConsole.WriteLine(result);",
+    "o": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "The ______ interface enables LINQ query execution.",
+    "type": "fill_blank",
+    "answers": [
+      "IQueryable"
+    ],
+    "other_options": [
+      "ICollection",
+      "IList",
+      "IArray"
+    ]
+  },
+  {
+    "q": "Deferred execution means LINQ queries execute when enumerated.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the LINQ operators:",
+    "type": "match",
+    "left": [
+      "Where",
+      "Select",
+      "OrderBy",
+      "GroupBy"
+    ],
+    "right": [
+      "Filter",
+      "Project",
+      "Sort",
+      "Group"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda expression?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(8));",
+    "o": [
+      "64",
+      "8",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the LINQ query execution order:",
+    "type": "rearrange",
+    "words": [
+      "Query definition",
+      "Data source",
+      "Enumeration",
+      "Result generation"
+    ]
+  },
+  {
+    "q": "What is the output of this complex LINQ code analyzing item 443?",
+    "type": "mcq",
+    "c": "var nums = new[] { 19, 20, 21 };\nvar result = nums.Select(n => n * 2).Where(n => n > 20).Count();\nConsole.WriteLine(result);",
+    "o": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "The ______ interface enables LINQ query execution.",
+    "type": "fill_blank",
+    "answers": [
+      "IQueryable"
+    ],
+    "other_options": [
+      "ICollection",
+      "IList",
+      "IArray"
+    ]
+  },
+  {
+    "q": "Deferred execution means LINQ queries execute when enumerated.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the LINQ operators:",
+    "type": "match",
+    "left": [
+      "Where",
+      "Select",
+      "OrderBy",
+      "GroupBy"
+    ],
+    "right": [
+      "Filter",
+      "Project",
+      "Sort",
+      "Group"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda expression?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(4));",
+    "o": [
+      "16",
+      "4",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the LINQ query execution order:",
+    "type": "rearrange",
+    "words": [
+      "Query definition",
+      "Data source",
+      "Enumeration",
+      "Result generation"
+    ]
+  },
+  {
+    "q": "What is the output of this complex LINQ code analyzing item 449?",
+    "type": "mcq",
+    "c": "var nums = new[] { 25, 26, 27 };\nvar result = nums.Select(n => n * 2).Where(n => n > 26).Count();\nConsole.WriteLine(result);",
+    "o": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "The ______ interface enables LINQ query execution.",
+    "type": "fill_blank",
+    "answers": [
+      "IQueryable"
+    ],
+    "other_options": [
+      "ICollection",
+      "IList",
+      "IArray"
+    ]
+  },
+  {
+    "q": "Deferred execution means LINQ queries execute when enumerated.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the LINQ operators:",
+    "type": "match",
+    "left": [
+      "Where",
+      "Select",
+      "OrderBy",
+      "GroupBy"
+    ],
+    "right": [
+      "Filter",
+      "Project",
+      "Sort",
+      "Group"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda expression?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(10));",
+    "o": [
+      "100",
+      "10",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the LINQ query execution order:",
+    "type": "rearrange",
+    "words": [
+      "Query definition",
+      "Data source",
+      "Enumeration",
+      "Result generation"
+    ]
+  },
+  {
+    "q": "What is the output of this complex LINQ code analyzing item 455?",
+    "type": "mcq",
+    "c": "var nums = new[] { 31, 32, 33 };\nvar result = nums.Select(n => n * 2).Where(n => n > 32).Count();\nConsole.WriteLine(result);",
+    "o": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "The ______ interface enables LINQ query execution.",
+    "type": "fill_blank",
+    "answers": [
+      "IQueryable"
+    ],
+    "other_options": [
+      "ICollection",
+      "IList",
+      "IArray"
+    ]
+  },
+  {
+    "q": "Deferred execution means LINQ queries execute when enumerated.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the LINQ operators:",
+    "type": "match",
+    "left": [
+      "Where",
+      "Select",
+      "OrderBy",
+      "GroupBy"
+    ],
+    "right": [
+      "Filter",
+      "Project",
+      "Sort",
+      "Group"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda expression?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(6));",
+    "o": [
+      "36",
+      "6",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the LINQ query execution order:",
+    "type": "rearrange",
+    "words": [
+      "Query definition",
+      "Data source",
+      "Enumeration",
+      "Result generation"
+    ]
+  },
+  {
+    "q": "What is the output of this complex LINQ code analyzing item 461?",
+    "type": "mcq",
+    "c": "var nums = new[] { 37, 38, 39 };\nvar result = nums.Select(n => n * 2).Where(n => n > 38).Count();\nConsole.WriteLine(result);",
+    "o": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "The ______ interface enables LINQ query execution.",
+    "type": "fill_blank",
+    "answers": [
+      "IQueryable"
+    ],
+    "other_options": [
+      "ICollection",
+      "IList",
+      "IArray"
+    ]
+  },
+  {
+    "q": "Deferred execution means LINQ queries execute when enumerated.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the LINQ operators:",
+    "type": "match",
+    "left": [
+      "Where",
+      "Select",
+      "OrderBy",
+      "GroupBy"
+    ],
+    "right": [
+      "Filter",
+      "Project",
+      "Sort",
+      "Group"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda expression?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(2));",
+    "o": [
+      "4",
+      "2",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the LINQ query execution order:",
+    "type": "rearrange",
+    "words": [
+      "Query definition",
+      "Data source",
+      "Enumeration",
+      "Result generation"
+    ]
+  },
+  {
+    "q": "What is the output of this complex LINQ code analyzing item 467?",
+    "type": "mcq",
+    "c": "var nums = new[] { 43, 44, 45 };\nvar result = nums.Select(n => n * 2).Where(n => n > 44).Count();\nConsole.WriteLine(result);",
+    "o": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "The ______ interface enables LINQ query execution.",
+    "type": "fill_blank",
+    "answers": [
+      "IQueryable"
+    ],
+    "other_options": [
+      "ICollection",
+      "IList",
+      "IArray"
+    ]
+  },
+  {
+    "q": "Deferred execution means LINQ queries execute when enumerated.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the LINQ operators:",
+    "type": "match",
+    "left": [
+      "Where",
+      "Select",
+      "OrderBy",
+      "GroupBy"
+    ],
+    "right": [
+      "Filter",
+      "Project",
+      "Sort",
+      "Group"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda expression?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(8));",
+    "o": [
+      "64",
+      "8",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the LINQ query execution order:",
+    "type": "rearrange",
+    "words": [
+      "Query definition",
+      "Data source",
+      "Enumeration",
+      "Result generation"
+    ]
+  },
+  {
+    "q": "What is the output of this complex LINQ code analyzing item 473?",
+    "type": "mcq",
+    "c": "var nums = new[] { 49, 50, 51 };\nvar result = nums.Select(n => n * 2).Where(n => n > 50).Count();\nConsole.WriteLine(result);",
+    "o": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "The ______ interface enables LINQ query execution.",
+    "type": "fill_blank",
+    "answers": [
+      "IQueryable"
+    ],
+    "other_options": [
+      "ICollection",
+      "IList",
+      "IArray"
+    ]
+  },
+  {
+    "q": "Deferred execution means LINQ queries execute when enumerated.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the LINQ operators:",
+    "type": "match",
+    "left": [
+      "Where",
+      "Select",
+      "OrderBy",
+      "GroupBy"
+    ],
+    "right": [
+      "Filter",
+      "Project",
+      "Sort",
+      "Group"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda expression?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(4));",
+    "o": [
+      "16",
+      "4",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the LINQ query execution order:",
+    "type": "rearrange",
+    "words": [
+      "Query definition",
+      "Data source",
+      "Enumeration",
+      "Result generation"
+    ]
+  },
+  {
+    "q": "What is the output of this complex LINQ code analyzing item 479?",
+    "type": "mcq",
+    "c": "var nums = new[] { 55, 56, 57 };\nvar result = nums.Select(n => n * 2).Where(n => n > 56).Count();\nConsole.WriteLine(result);",
+    "o": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "The ______ interface enables LINQ query execution.",
+    "type": "fill_blank",
+    "answers": [
+      "IQueryable"
+    ],
+    "other_options": [
+      "ICollection",
+      "IList",
+      "IArray"
+    ]
+  },
+  {
+    "q": "Deferred execution means LINQ queries execute when enumerated.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the LINQ operators:",
+    "type": "match",
+    "left": [
+      "Where",
+      "Select",
+      "OrderBy",
+      "GroupBy"
+    ],
+    "right": [
+      "Filter",
+      "Project",
+      "Sort",
+      "Group"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda expression?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(10));",
+    "o": [
+      "100",
+      "10",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the LINQ query execution order:",
+    "type": "rearrange",
+    "words": [
+      "Query definition",
+      "Data source",
+      "Enumeration",
+      "Result generation"
+    ]
+  },
+  {
+    "q": "What is the output of this complex LINQ code analyzing item 485?",
+    "type": "mcq",
+    "c": "var nums = new[] { 61, 62, 63 };\nvar result = nums.Select(n => n * 2).Where(n => n > 62).Count();\nConsole.WriteLine(result);",
+    "o": [
+      "2",
+      "3",
+      "1",
+      "0"
+    ]
+  },
+  {
+    "q": "The ______ interface enables LINQ query execution.",
+    "type": "fill_blank",
+    "answers": [
+      "IQueryable"
+    ],
+    "other_options": [
+      "ICollection",
+      "IList",
+      "IArray"
+    ]
+  },
+  {
+    "q": "Deferred execution means LINQ queries execute when enumerated.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the LINQ operators:",
+    "type": "match",
+    "left": [
+      "Where",
+      "Select",
+      "OrderBy",
+      "GroupBy"
+    ],
+    "right": [
+      "Filter",
+      "Project",
+      "Sort",
+      "Group"
+    ]
+  },
+  {
+    "q": "What is the output of this lambda expression?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(6));",
+    "o": [
+      "36",
+      "6",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the LINQ query execution order:",
+    "type": "rearrange",
+    "words": [
+      "Query definition",
+      "Data source",
+      "Enumeration",
+      "Result generation"
+    ]
+  },
+  {
+    "q": "What is the output of this expression-bodied member code?",
+    "type": "mcq",
+    "c": "class Person {\n    private string name;\n    public string Name {\n        get => name;\n        set => name = value?.Trim();\n    }\n}\nvar p = new Person();\np.Name = \"  John  \";\nConsole.WriteLine(p.Name);",
+    "o": [
+      "John",
+      "  John  ",
+      "null",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword allows creation of objects without specifying the type explicitly.",
+    "type": "fill_blank",
+    "answers": [
+      "var"
+    ],
+    "other_options": [
+      "auto",
+      "dynamic",
+      "object"
+    ]
+  },
+  {
+    "q": "Expression-bodied members can be used for properties, methods, and operators.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this pattern matching code?",
+    "type": "mcq",
+    "c": "object obj = \"text\";\nif (obj is string s) {\n    Console.WriteLine(s.Length);\n}",
+    "o": [
+      "4",
+      "Error",
+      "0",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Match the C# 7+ features:",
+    "type": "match",
+    "left": [
+      "Tuples",
+      "Deconstruction",
+      "Pattern matching",
+      "Local functions"
+    ],
+    "right": [
+      "Multiple values",
+      "Extract tuple parts",
+      "Type checking",
+      "Nested methods"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced reflection and metadata code?",
+    "type": "mcq",
+    "c": "using System.Reflection;\nvar type = typeof(List<int>);\nvar genericArgs = type.GetGenericArguments();\nConsole.WriteLine(genericArgs.Length);",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ type enables deferred initialization.",
+    "type": "fill_blank",
+    "answers": [
+      "IQueryable"
+    ],
+    "other_options": [
+      "IEnumerable",
+      "ICollection",
+      "IList"
+    ]
+  },
+  {
+    "q": "Record types use structural equality by default.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced C# features:",
+    "type": "match",
+    "left": [
+      "Span<T>",
+      "Memory<T>",
+      "ReadOnlySpan<T>",
+      "ArraySegment<T>"
+    ],
+    "right": [
+      "Stack memory slice",
+      "Heap memory slice",
+      "Immutable span",
+      "Array portion"
+    ]
+  },
+  {
+    "q": "What is the output of this modern C# code?",
+    "type": "mcq",
+    "c": "record Point(int X, int Y);\nvar p1 = new Point(1, 2);\nvar p2 = new Point(1, 2);\nConsole.WriteLine(p1 == p2);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Rearrange the dependency injection lifecycle:",
+    "type": "rearrange",
+    "words": [
+      "Register services",
+      "Build container",
+      "Resolve dependencies",
+      "Dispose scope"
+    ]
+  },
+  {
+    "q": "What is the output of this IDisposable pattern code?",
+    "type": "mcq",
+    "c": "class Resource : IDisposable {\n    public void Dispose() => Console.WriteLine(\"Disposed\");\n}\nusing (var r = new Resource()) {\n    Console.WriteLine(\"Using\");\n}",
+    "o": [
+      "Using\\nDisposed",
+      "Disposed\\nUsing",
+      "Using",
+      "Disposed"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced reflection and metadata code?",
+    "type": "mcq",
+    "c": "using System.Reflection;\nvar type = typeof(List<int>);\nvar genericArgs = type.GetGenericArguments();\nConsole.WriteLine(genericArgs.Length);",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ type enables query translation.",
+    "type": "fill_blank",
+    "answers": [
+      "Lazy"
+    ],
+    "other_options": [
+      "WeakReference",
+      "SemaphoreSlim",
+      "CancellationToken"
+    ]
+  },
+  {
+    "q": "Contravariance requires the out keyword in generic type parameters.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "Match the advanced C# features:",
+    "type": "match",
+    "left": [
+      "ValueTask",
+      "Task",
+      "IAsyncEnumerable",
+      "async"
+    ],
+    "right": [
+      "Sync or async result",
+      "Async operation",
+      "Async stream",
+      "Async method"
+    ]
+  },
+  {
+    "q": "What is the output of this modern C# code?",
+    "type": "mcq",
+    "c": "class Point {\n    public int X, Y;\n    public void Deconstruct(out int x, out int y) { x = X; y = Y; }\n}\nvar p = new Point { X = 5, Y = 10 };\nvar (a, b) = p;\nConsole.WriteLine(a);",
+    "o": [
+      "5",
+      "10",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the dependency injection lifecycle:",
+    "type": "rearrange",
+    "words": [
+      "Register services",
+      "Build container",
+      "Resolve dependencies",
+      "Dispose scope"
+    ]
+  },
+  {
+    "q": "What is the output of this SOLID principle code?",
+    "type": "mcq",
+    "c": "interface INotify { void Send(string msg); }\nclass EmailNotifier : INotify {\n    public void Send(string msg) => Console.WriteLine($\"Email: {msg}\");\n}\nvar notifier = (INotify)new EmailNotifier();\nnotifier.Send(\"Test\");",
+    "o": [
+      "Email: Test",
+      "Test",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced reflection and metadata code?",
+    "type": "mcq",
+    "c": "using System.Reflection;\nvar type = typeof(List<int>);\nvar genericArgs = type.GetGenericArguments();\nConsole.WriteLine(genericArgs.Length);",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ type enables expression trees.",
+    "type": "fill_blank",
+    "answers": [
+      "Expression"
+    ],
+    "other_options": [
+      "Func",
+      "Action",
+      "Predicate"
+    ]
+  },
+  {
+    "q": "Covariance applies to return types in delegates and interfaces.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced C# features:",
+    "type": "match",
+    "left": [
+      "CallerMemberName",
+      "CallerFilePath",
+      "CallerLineNumber",
+      "nameof"
+    ],
+    "right": [
+      "Member name",
+      "File path",
+      "Line number",
+      "Symbol name"
+    ]
+  },
+  {
+    "q": "What is the output of this modern C# code?",
+    "type": "mcq",
+    "c": "var (x, y) = (10, 20);\nConsole.WriteLine(x + y);",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the dependency injection lifecycle:",
+    "type": "rearrange",
+    "words": [
+      "Register services",
+      "Build container",
+      "Resolve dependencies",
+      "Dispose scope"
+    ]
+  },
+  {
+    "q": "What is the output of this contravariance example?",
+    "type": "mcq",
+    "c": "Action<object> actObj = obj => Console.WriteLine(\"Object\");\nAction<string> actStr = actObj;\nactStr(\"test\");",
+    "o": [
+      "Object",
+      "test",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced reflection and metadata code?",
+    "type": "mcq",
+    "c": "using System.Reflection;\nvar type = typeof(List<int>);\nvar genericArgs = type.GetGenericArguments();\nConsole.WriteLine(genericArgs.Length);",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ type enables deferred initialization.",
+    "type": "fill_blank",
+    "answers": [
+      "IQueryable"
+    ],
+    "other_options": [
+      "IEnumerable",
+      "ICollection",
+      "IList"
+    ]
+  },
+  {
+    "q": "Init-only setters can be called after object initialization.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "Match the advanced C# features:",
+    "type": "match",
+    "left": [
+      "Span<T>",
+      "Memory<T>",
+      "ReadOnlySpan<T>",
+      "ArraySegment<T>"
+    ],
+    "right": [
+      "Stack memory slice",
+      "Heap memory slice",
+      "Immutable span",
+      "Array portion"
+    ]
+  },
+  {
+    "q": "What is the output of this modern C# code?",
+    "type": "mcq",
+    "c": "record Point(int X, int Y);\nvar p1 = new Point(1, 2);\nvar p2 = new Point(1, 2);\nConsole.WriteLine(p1 == p2);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Rearrange the dependency injection lifecycle:",
+    "type": "rearrange",
+    "words": [
+      "Register services",
+      "Build container",
+      "Resolve dependencies",
+      "Dispose scope"
+    ]
+  },
+  {
+    "q": "What is the output of this IDisposable pattern code?",
+    "type": "mcq",
+    "c": "class Resource : IDisposable {\n    public void Dispose() => Console.WriteLine(\"Disposed\");\n}\nusing (var r = new Resource()) {\n    Console.WriteLine(\"Using\");\n}",
+    "o": [
+      "Using\\nDisposed",
+      "Disposed\\nUsing",
+      "Using",
+      "Disposed"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced reflection and metadata code?",
+    "type": "mcq",
+    "c": "using System.Reflection;\nvar type = typeof(List<int>);\nvar genericArgs = type.GetGenericArguments();\nConsole.WriteLine(genericArgs.Length);",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ type enables query translation.",
+    "type": "fill_blank",
+    "answers": [
+      "Lazy"
+    ],
+    "other_options": [
+      "WeakReference",
+      "SemaphoreSlim",
+      "CancellationToken"
+    ]
+  },
+  {
+    "q": "Record types use structural equality by default.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced C# features:",
+    "type": "match",
+    "left": [
+      "ValueTask",
+      "Task",
+      "IAsyncEnumerable",
+      "async"
+    ],
+    "right": [
+      "Sync or async result",
+      "Async operation",
+      "Async stream",
+      "Async method"
+    ]
+  },
+  {
+    "q": "What is the output of this modern C# code?",
+    "type": "mcq",
+    "c": "class Point {\n    public int X, Y;\n    public void Deconstruct(out int x, out int y) { x = X; y = Y; }\n}\nvar p = new Point { X = 5, Y = 10 };\nvar (a, b) = p;\nConsole.WriteLine(a);",
+    "o": [
+      "5",
+      "10",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the dependency injection lifecycle:",
+    "type": "rearrange",
+    "words": [
+      "Register services",
+      "Build container",
+      "Resolve dependencies",
+      "Dispose scope"
+    ]
+  },
+  {
+    "q": "What is the output of this SOLID principle code?",
+    "type": "mcq",
+    "c": "interface INotify { void Send(string msg); }\nclass EmailNotifier : INotify {\n    public void Send(string msg) => Console.WriteLine($\"Email: {msg}\");\n}\nvar notifier = (INotify)new EmailNotifier();\nnotifier.Send(\"Test\");",
+    "o": [
+      "Email: Test",
+      "Test",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced reflection and metadata code?",
+    "type": "mcq",
+    "c": "using System.Reflection;\nvar type = typeof(List<int>);\nvar genericArgs = type.GetGenericArguments();\nConsole.WriteLine(genericArgs.Length);",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ type enables expression trees.",
+    "type": "fill_blank",
+    "answers": [
+      "Expression"
+    ],
+    "other_options": [
+      "Func",
+      "Action",
+      "Predicate"
+    ]
+  },
+  {
+    "q": "Contravariance requires the out keyword in generic type parameters.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "Match the advanced C# features:",
+    "type": "match",
+    "left": [
+      "CallerMemberName",
+      "CallerFilePath",
+      "CallerLineNumber",
+      "nameof"
+    ],
+    "right": [
+      "Member name",
+      "File path",
+      "Line number",
+      "Symbol name"
+    ]
+  },
+  {
+    "q": "What is the output of this modern C# code?",
+    "type": "mcq",
+    "c": "var (x, y) = (10, 20);\nConsole.WriteLine(x + y);",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the dependency injection lifecycle:",
+    "type": "rearrange",
+    "words": [
+      "Register services",
+      "Build container",
+      "Resolve dependencies",
+      "Dispose scope"
+    ]
+  },
+  {
+    "q": "What is the output of this contravariance example?",
+    "type": "mcq",
+    "c": "Action<object> actObj = obj => Console.WriteLine(\"Object\");\nAction<string> actStr = actObj;\nactStr(\"test\");",
+    "o": [
+      "Object",
+      "test",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced reflection and metadata code?",
+    "type": "mcq",
+    "c": "using System.Reflection;\nvar type = typeof(List<int>);\nvar genericArgs = type.GetGenericArguments();\nConsole.WriteLine(genericArgs.Length);",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ type enables deferred initialization.",
+    "type": "fill_blank",
+    "answers": [
+      "IQueryable"
+    ],
+    "other_options": [
+      "IEnumerable",
+      "ICollection",
+      "IList"
+    ]
+  },
+  {
+    "q": "Covariance applies to return types in delegates and interfaces.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced C# features:",
+    "type": "match",
+    "left": [
+      "Span<T>",
+      "Memory<T>",
+      "ReadOnlySpan<T>",
+      "ArraySegment<T>"
+    ],
+    "right": [
+      "Stack memory slice",
+      "Heap memory slice",
+      "Immutable span",
+      "Array portion"
+    ]
+  },
+  {
+    "q": "What is the output of this modern C# code?",
+    "type": "mcq",
+    "c": "record Point(int X, int Y);\nvar p1 = new Point(1, 2);\nvar p2 = new Point(1, 2);\nConsole.WriteLine(p1 == p2);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Rearrange the dependency injection lifecycle:",
+    "type": "rearrange",
+    "words": [
+      "Register services",
+      "Build container",
+      "Resolve dependencies",
+      "Dispose scope"
+    ]
+  },
+  {
+    "q": "What is the output of this IDisposable pattern code?",
+    "type": "mcq",
+    "c": "class Resource : IDisposable {\n    public void Dispose() => Console.WriteLine(\"Disposed\");\n}\nusing (var r = new Resource()) {\n    Console.WriteLine(\"Using\");\n}",
+    "o": [
+      "Using\\nDisposed",
+      "Disposed\\nUsing",
+      "Using",
+      "Disposed"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced reflection and metadata code?",
+    "type": "mcq",
+    "c": "using System.Reflection;\nvar type = typeof(List<int>);\nvar genericArgs = type.GetGenericArguments();\nConsole.WriteLine(genericArgs.Length);",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ type enables query translation.",
+    "type": "fill_blank",
+    "answers": [
+      "Lazy"
+    ],
+    "other_options": [
+      "WeakReference",
+      "SemaphoreSlim",
+      "CancellationToken"
+    ]
+  },
+  {
+    "q": "Init-only setters can be called after object initialization.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "Match the advanced C# features:",
+    "type": "match",
+    "left": [
+      "ValueTask",
+      "Task",
+      "IAsyncEnumerable",
+      "async"
+    ],
+    "right": [
+      "Sync or async result",
+      "Async operation",
+      "Async stream",
+      "Async method"
+    ]
+  },
+  {
+    "q": "What is the output of this modern C# code?",
+    "type": "mcq",
+    "c": "class Point {\n    public int X, Y;\n    public void Deconstruct(out int x, out int y) { x = X; y = Y; }\n}\nvar p = new Point { X = 5, Y = 10 };\nvar (a, b) = p;\nConsole.WriteLine(a);",
+    "o": [
+      "5",
+      "10",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the dependency injection lifecycle:",
+    "type": "rearrange",
+    "words": [
+      "Register services",
+      "Build container",
+      "Resolve dependencies",
+      "Dispose scope"
+    ]
+  },
+  {
+    "q": "What is the output of this SOLID principle code?",
+    "type": "mcq",
+    "c": "interface INotify { void Send(string msg); }\nclass EmailNotifier : INotify {\n    public void Send(string msg) => Console.WriteLine($\"Email: {msg}\");\n}\nvar notifier = (INotify)new EmailNotifier();\nnotifier.Send(\"Test\");",
+    "o": [
+      "Email: Test",
+      "Test",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced reflection and metadata code?",
+    "type": "mcq",
+    "c": "using System.Reflection;\nvar type = typeof(List<int>);\nvar genericArgs = type.GetGenericArguments();\nConsole.WriteLine(genericArgs.Length);",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ type enables expression trees.",
+    "type": "fill_blank",
+    "answers": [
+      "Expression"
+    ],
+    "other_options": [
+      "Func",
+      "Action",
+      "Predicate"
+    ]
+  },
+  {
+    "q": "Record types use structural equality by default.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced C# features:",
+    "type": "match",
+    "left": [
+      "CallerMemberName",
+      "CallerFilePath",
+      "CallerLineNumber",
+      "nameof"
+    ],
+    "right": [
+      "Member name",
+      "File path",
+      "Line number",
+      "Symbol name"
+    ]
+  },
+  {
+    "q": "What is the output of this modern C# code?",
+    "type": "mcq",
+    "c": "var (x, y) = (10, 20);\nConsole.WriteLine(x + y);",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the dependency injection lifecycle:",
+    "type": "rearrange",
+    "words": [
+      "Register services",
+      "Build container",
+      "Resolve dependencies",
+      "Dispose scope"
+    ]
+  },
+  {
+    "q": "What is the output of this contravariance example?",
+    "type": "mcq",
+    "c": "Action<object> actObj = obj => Console.WriteLine(\"Object\");\nAction<string> actStr = actObj;\nactStr(\"test\");",
+    "o": [
+      "Object",
+      "test",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced reflection and metadata code?",
+    "type": "mcq",
+    "c": "using System.Reflection;\nvar type = typeof(List<int>);\nvar genericArgs = type.GetGenericArguments();\nConsole.WriteLine(genericArgs.Length);",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ type enables deferred initialization.",
+    "type": "fill_blank",
+    "answers": [
+      "IQueryable"
+    ],
+    "other_options": [
+      "IEnumerable",
+      "ICollection",
+      "IList"
+    ]
+  },
+  {
+    "q": "Contravariance requires the out keyword in generic type parameters.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "Match the advanced C# features:",
+    "type": "match",
+    "left": [
+      "Span<T>",
+      "Memory<T>",
+      "ReadOnlySpan<T>",
+      "ArraySegment<T>"
+    ],
+    "right": [
+      "Stack memory slice",
+      "Heap memory slice",
+      "Immutable span",
+      "Array portion"
+    ]
+  },
+  {
+    "q": "What is the output of this modern C# code?",
+    "type": "mcq",
+    "c": "record Point(int X, int Y);\nvar p1 = new Point(1, 2);\nvar p2 = new Point(1, 2);\nConsole.WriteLine(p1 == p2);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Rearrange the dependency injection lifecycle:",
+    "type": "rearrange",
+    "words": [
+      "Register services",
+      "Build container",
+      "Resolve dependencies",
+      "Dispose scope"
+    ]
+  },
+  {
+    "q": "What is the output of this IDisposable pattern code?",
+    "type": "mcq",
+    "c": "class Resource : IDisposable {\n    public void Dispose() => Console.WriteLine(\"Disposed\");\n}\nusing (var r = new Resource()) {\n    Console.WriteLine(\"Using\");\n}",
+    "o": [
+      "Using\\nDisposed",
+      "Disposed\\nUsing",
+      "Using",
+      "Disposed"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced reflection and metadata code?",
+    "type": "mcq",
+    "c": "using System.Reflection;\nvar type = typeof(List<int>);\nvar genericArgs = type.GetGenericArguments();\nConsole.WriteLine(genericArgs.Length);",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ type enables query translation.",
+    "type": "fill_blank",
+    "answers": [
+      "Lazy"
+    ],
+    "other_options": [
+      "WeakReference",
+      "SemaphoreSlim",
+      "CancellationToken"
+    ]
+  },
+  {
+    "q": "Covariance applies to return types in delegates and interfaces.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced C# features:",
+    "type": "match",
+    "left": [
+      "ValueTask",
+      "Task",
+      "IAsyncEnumerable",
+      "async"
+    ],
+    "right": [
+      "Sync or async result",
+      "Async operation",
+      "Async stream",
+      "Async method"
+    ]
+  },
+  {
+    "q": "What is the output of this modern C# code?",
+    "type": "mcq",
+    "c": "class Point {\n    public int X, Y;\n    public void Deconstruct(out int x, out int y) { x = X; y = Y; }\n}\nvar p = new Point { X = 5, Y = 10 };\nvar (a, b) = p;\nConsole.WriteLine(a);",
+    "o": [
+      "5",
+      "10",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the dependency injection lifecycle:",
+    "type": "rearrange",
+    "words": [
+      "Register services",
+      "Build container",
+      "Resolve dependencies",
+      "Dispose scope"
+    ]
+  },
+  {
+    "q": "What is the output of this SOLID principle code?",
+    "type": "mcq",
+    "c": "interface INotify { void Send(string msg); }\nclass EmailNotifier : INotify {\n    public void Send(string msg) => Console.WriteLine($\"Email: {msg}\");\n}\nvar notifier = (INotify)new EmailNotifier();\nnotifier.Send(\"Test\");",
+    "o": [
+      "Email: Test",
+      "Test",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced reflection and metadata code?",
+    "type": "mcq",
+    "c": "using System.Reflection;\nvar type = typeof(List<int>);\nvar genericArgs = type.GetGenericArguments();\nConsole.WriteLine(genericArgs.Length);",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ type enables expression trees.",
+    "type": "fill_blank",
+    "answers": [
+      "Expression"
+    ],
+    "other_options": [
+      "Func",
+      "Action",
+      "Predicate"
+    ]
+  },
+  {
+    "q": "Init-only setters can be called after object initialization.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "Match the advanced C# features:",
+    "type": "match",
+    "left": [
+      "CallerMemberName",
+      "CallerFilePath",
+      "CallerLineNumber",
+      "nameof"
+    ],
+    "right": [
+      "Member name",
+      "File path",
+      "Line number",
+      "Symbol name"
+    ]
+  },
+  {
+    "q": "What is the output of this modern C# code?",
+    "type": "mcq",
+    "c": "var (x, y) = (10, 20);\nConsole.WriteLine(x + y);",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the dependency injection lifecycle:",
+    "type": "rearrange",
+    "words": [
+      "Register services",
+      "Build container",
+      "Resolve dependencies",
+      "Dispose scope"
+    ]
+  },
+  {
+    "q": "What is the output of this contravariance example?",
+    "type": "mcq",
+    "c": "Action<object> actObj = obj => Console.WriteLine(\"Object\");\nAction<string> actStr = actObj;\nactStr(\"test\");",
+    "o": [
+      "Object",
+      "test",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced reflection and metadata code?",
+    "type": "mcq",
+    "c": "using System.Reflection;\nvar type = typeof(List<int>);\nvar genericArgs = type.GetGenericArguments();\nConsole.WriteLine(genericArgs.Length);",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ type enables deferred initialization.",
+    "type": "fill_blank",
+    "answers": [
+      "IQueryable"
+    ],
+    "other_options": [
+      "IEnumerable",
+      "ICollection",
+      "IList"
+    ]
+  },
+  {
+    "q": "Record types use structural equality by default.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced C# features:",
+    "type": "match",
+    "left": [
+      "Span<T>",
+      "Memory<T>",
+      "ReadOnlySpan<T>",
+      "ArraySegment<T>"
+    ],
+    "right": [
+      "Stack memory slice",
+      "Heap memory slice",
+      "Immutable span",
+      "Array portion"
+    ]
+  },
+  {
+    "q": "What is the output of this modern C# code?",
+    "type": "mcq",
+    "c": "record Point(int X, int Y);\nvar p1 = new Point(1, 2);\nvar p2 = new Point(1, 2);\nConsole.WriteLine(p1 == p2);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Rearrange the dependency injection lifecycle:",
+    "type": "rearrange",
+    "words": [
+      "Register services",
+      "Build container",
+      "Resolve dependencies",
+      "Dispose scope"
+    ]
+  },
+  {
+    "q": "What is the output of this IDisposable pattern code?",
+    "type": "mcq",
+    "c": "class Resource : IDisposable {\n    public void Dispose() => Console.WriteLine(\"Disposed\");\n}\nusing (var r = new Resource()) {\n    Console.WriteLine(\"Using\");\n}",
+    "o": [
+      "Using\\nDisposed",
+      "Disposed\\nUsing",
+      "Using",
+      "Disposed"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced reflection and metadata code?",
+    "type": "mcq",
+    "c": "using System.Reflection;\nvar type = typeof(List<int>);\nvar genericArgs = type.GetGenericArguments();\nConsole.WriteLine(genericArgs.Length);",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ type enables query translation.",
+    "type": "fill_blank",
+    "answers": [
+      "Lazy"
+    ],
+    "other_options": [
+      "WeakReference",
+      "SemaphoreSlim",
+      "CancellationToken"
+    ]
+  },
+  {
+    "q": "Contravariance requires the out keyword in generic type parameters.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "Match the advanced C# features:",
+    "type": "match",
+    "left": [
+      "ValueTask",
+      "Task",
+      "IAsyncEnumerable",
+      "async"
+    ],
+    "right": [
+      "Sync or async result",
+      "Async operation",
+      "Async stream",
+      "Async method"
+    ]
+  },
+  {
+    "q": "What is the output of this modern C# code?",
+    "type": "mcq",
+    "c": "class Point {\n    public int X, Y;\n    public void Deconstruct(out int x, out int y) { x = X; y = Y; }\n}\nvar p = new Point { X = 5, Y = 10 };\nvar (a, b) = p;\nConsole.WriteLine(a);",
+    "o": [
+      "5",
+      "10",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the dependency injection lifecycle:",
+    "type": "rearrange",
+    "words": [
+      "Register services",
+      "Build container",
+      "Resolve dependencies",
+      "Dispose scope"
+    ]
+  },
+  {
+    "q": "What is the output of this SOLID principle code?",
+    "type": "mcq",
+    "c": "interface INotify { void Send(string msg); }\nclass EmailNotifier : INotify {\n    public void Send(string msg) => Console.WriteLine($\"Email: {msg}\");\n}\nvar notifier = (INotify)new EmailNotifier();\nnotifier.Send(\"Test\");",
+    "o": [
+      "Email: Test",
+      "Test",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced reflection and metadata code?",
+    "type": "mcq",
+    "c": "using System.Reflection;\nvar type = typeof(List<int>);\nvar genericArgs = type.GetGenericArguments();\nConsole.WriteLine(genericArgs.Length);",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ type enables expression trees.",
+    "type": "fill_blank",
+    "answers": [
+      "Expression"
+    ],
+    "other_options": [
+      "Func",
+      "Action",
+      "Predicate"
+    ]
+  },
+  {
+    "q": "Covariance applies to return types in delegates and interfaces.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced C# features:",
+    "type": "match",
+    "left": [
+      "CallerMemberName",
+      "CallerFilePath",
+      "CallerLineNumber",
+      "nameof"
+    ],
+    "right": [
+      "Member name",
+      "File path",
+      "Line number",
+      "Symbol name"
+    ]
+  },
+  {
+    "q": "What is the output of this modern C# code?",
+    "type": "mcq",
+    "c": "var (x, y) = (10, 20);\nConsole.WriteLine(x + y);",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the dependency injection lifecycle:",
+    "type": "rearrange",
+    "words": [
+      "Register services",
+      "Build container",
+      "Resolve dependencies",
+      "Dispose scope"
+    ]
+  },
+  {
+    "q": "What is the output of this contravariance example?",
+    "type": "mcq",
+    "c": "Action<object> actObj = obj => Console.WriteLine(\"Object\");\nAction<string> actStr = actObj;\nactStr(\"test\");",
+    "o": [
+      "Object",
+      "test",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced reflection and metadata code?",
+    "type": "mcq",
+    "c": "using System.Reflection;\nvar type = typeof(List<int>);\nvar genericArgs = type.GetGenericArguments();\nConsole.WriteLine(genericArgs.Length);",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ type enables deferred initialization.",
+    "type": "fill_blank",
+    "answers": [
+      "IQueryable"
+    ],
+    "other_options": [
+      "IEnumerable",
+      "ICollection",
+      "IList"
+    ]
+  },
+  {
+    "q": "Init-only setters can be called after object initialization.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "Match the advanced C# features:",
+    "type": "match",
+    "left": [
+      "Span<T>",
+      "Memory<T>",
+      "ReadOnlySpan<T>",
+      "ArraySegment<T>"
+    ],
+    "right": [
+      "Stack memory slice",
+      "Heap memory slice",
+      "Immutable span",
+      "Array portion"
+    ]
+  },
+  {
+    "q": "What is the output of this modern C# code?",
+    "type": "mcq",
+    "c": "record Point(int X, int Y);\nvar p1 = new Point(1, 2);\nvar p2 = new Point(1, 2);\nConsole.WriteLine(p1 == p2);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "Exception"
+    ]
+  },
+  {
+    "q": "Rearrange the dependency injection lifecycle:",
+    "type": "rearrange",
+    "words": [
+      "Register services",
+      "Build container",
+      "Resolve dependencies",
+      "Dispose scope"
+    ]
+  },
+  {
+    "q": "What is the output of this IDisposable pattern code?",
+    "type": "mcq",
+    "c": "class Resource : IDisposable {\n    public void Dispose() => Console.WriteLine(\"Disposed\");\n}\nusing (var r = new Resource()) {\n    Console.WriteLine(\"Using\");\n}",
+    "o": [
+      "Using\\nDisposed",
+      "Disposed\\nUsing",
+      "Using",
+      "Disposed"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced reflection and metadata code?",
+    "type": "mcq",
+    "c": "using System.Reflection;\nvar type = typeof(List<int>);\nvar genericArgs = type.GetGenericArguments();\nConsole.WriteLine(genericArgs.Length);",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ type enables query translation.",
+    "type": "fill_blank",
+    "answers": [
+      "Lazy"
+    ],
+    "other_options": [
+      "WeakReference",
+      "SemaphoreSlim",
+      "CancellationToken"
+    ]
+  },
+  {
+    "q": "Record types use structural equality by default.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced C# features:",
+    "type": "match",
+    "left": [
+      "ValueTask",
+      "Task",
+      "IAsyncEnumerable",
+      "async"
+    ],
+    "right": [
+      "Sync or async result",
+      "Async operation",
+      "Async stream",
+      "Async method"
+    ]
+  },
+  {
+    "q": "What is the output of this modern C# code?",
+    "type": "mcq",
+    "c": "class Point {\n    public int X, Y;\n    public void Deconstruct(out int x, out int y) { x = X; y = Y; }\n}\nvar p = new Point { X = 5, Y = 10 };\nvar (a, b) = p;\nConsole.WriteLine(a);",
+    "o": [
+      "5",
+      "10",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the dependency injection lifecycle:",
+    "type": "rearrange",
+    "words": [
+      "Register services",
+      "Build container",
+      "Resolve dependencies",
+      "Dispose scope"
+    ]
+  },
+  {
+    "q": "What is the output of this SOLID principle code?",
+    "type": "mcq",
+    "c": "interface INotify { void Send(string msg); }\nclass EmailNotifier : INotify {\n    public void Send(string msg) => Console.WriteLine($\"Email: {msg}\");\n}\nvar notifier = (INotify)new EmailNotifier();\nnotifier.Send(\"Test\");",
+    "o": [
+      "Email: Test",
+      "Test",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced reflection and metadata code?",
+    "type": "mcq",
+    "c": "using System.Reflection;\nvar type = typeof(List<int>);\nvar genericArgs = type.GetGenericArguments();\nConsole.WriteLine(genericArgs.Length);",
+    "o": [
+      "1",
+      "0",
+      "2",
+      "Error"
+    ]
+  }
+]

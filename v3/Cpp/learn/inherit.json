@@ -1,0 +1,85 @@
+{
+    "id": "learn_inherit",
+    "topicId": "inherit",
+    "topicTitle": "Inheritance",
+    "description": "Learn how to create new classes from existing ones, promoting code reuse and establishing relationships.",
+    "baseKP": 70,
+    "slides": [
+        {
+            "id": "inherit_1",
+            "type": "content",
+            "title": "Don't Repeat Yourself",
+            "content": "# The Family Tree 🌳\n\n**Inheritance** allows a class (Derived/Child) to acquire properties and behaviors of another class (Base/Parent).\n\n## Why?\n- **Reusability:** Don't rewrite code. If `Animal` has `eat()`, `Dog` can just inherit it.\n- **Extensibility:** Add new features to existing code easily.\n- **Hierarchy:** Models real-world relationships (IS-A relationship)."
+        },
+        {
+            "id": "inherit_2",
+            "type": "content",
+            "title": "Basic Syntax",
+            "content": "# Creating a Child 👶\n\nUse the colon `:` operator.\n\n```cpp\nclass Animal {\npublic:\n    void eat() { cout << \"Eating...\"; }\n};\n\n// Dog Inherits from Animal\nclass Dog : public Animal {\npublic:\n    void bark() { cout << \"Woof!\"; }\n};\n\nint main() {\n    Dog d;\n    d.eat();  // Inherited method\n    d.bark(); // Own method\n}\n```"
+        },
+        {
+            "id": "inherit_3",
+            "type": "content",
+            "title": "Modes of Inheritance",
+            "content": "# Controlling the Legacy 🛡️\n\n`class Child : [mode] Parent`\n\n1.  **Public (Most Common):**\n    - `public` members of Parent -> `public` in Child.\n    - `protected` -> `protected`.\n2.  **Protected:**\n    - `public` & `protected` -> `protected` in Child.\n3.  **Private:**\n    - `public` & `protected` -> `private` in Child.\n\n*Private members of Parent are NEVER accessible directly in Child, regardless of mode.*"
+        },
+        {
+            "id": "inherit_4",
+            "type": "content",
+            "title": "Types of Inheritance",
+            "content": "# Many Shapes 📐\n\n1.  **Single:** A -> B (One parent, one child).\n2.  **Multilevel:** A -> B -> C (Grandparent chain).\n3.  **Multiple:** A, B -> C (One child, multiple parents).\n4.  **Hierarchical:** A -> B, A -> C (One parent, multiple children).\n5.  **Hybrid:** Combination of above."
+        },
+        {
+            "id": "inherit_quiz_1",
+            "type": "quiz",
+            "title": "Inheritance Check",
+            "content": "Which type of inheritance involves a child class deriving from more than one parent class?",
+            "quizQuestion": "Type:",
+            "quizOptions": [
+                "Single",
+                "Multilevel",
+                "Multiple",
+                "Hierarchical"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "inherit_5",
+            "type": "content",
+            "title": "Constructors/Destructors",
+            "content": "# Order of Execution ⏳\n\nWhen a child object is created:\n1.  **Base Class Constructor** runs FIRST.\n2.  **Derived Class Constructor** runs SECOND.\n\nWhen a child object is destroyed:\n1.  **Derived Class Destructor** runs FIRST.\n2.  **Base Class Destructor** runs SECOND.\n\n> 🏗️ **Think:** You build the foundation before the roof. You demolish the roof before the foundation."
+        },
+        {
+            "id": "inherit_6",
+            "type": "content",
+            "title": "Multiple Inheritance",
+            "content": "# Two Parents 👪\n\nC++ allows a class to inherit from multiple classes.\n\n```cpp\nclass Father { ... };\nclass Mother { ... };\n\nclass Child : public Father, public Mother {\n    // Has traits of both\n};\n```\n\n**Ambiguity:** If both parents have a function `work()`, calling `child.work()` confuses the compiler. You must specify: `child.Father::work()`.\n\n**The Diamond Problem:** A -> B, A -> C, then B,C -> D. D gets two copies of A! Solved using `virtual` inheritance."
+        },
+        {
+            "id": "inherit_7",
+            "type": "content",
+            "title": "Full Example: Shape Hierarchy",
+            "content": "# Shapes Demo\n\n<!-- FULL_CODE_START\n#include <iostream>\nusing namespace std;\n\n// Base Class\nclass Shape {\nprotected:\n    int width, height;\npublic:\n    void setDimensions(int w, int h) {\n        width = w;\n        height = h;\n    }\n};\n\n// Derived Class 1\nclass Rectangle : public Shape {\npublic:\n    int getArea() {\n        return width * height;\n    }\n};\n\n// Derived Class 2\nclass Triangle : public Shape {\npublic:\n    int getArea() {\n        return (width * height) / 2;\n    }\n};\n\nint main() {\n    Rectangle rect;\n    rect.setDimensions(5, 7);\n    cout << \"Rect Area: \" << rect.getArea() << endl;\n    \n    Triangle tri;\n    tri.setDimensions(5, 7);\n    cout << \"Tri Area: \" << tri.getArea() << endl;\n    \n    return 0;\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "inherit_quiz_2",
+            "type": "quiz",
+            "title": "Access Check",
+            "content": "Can a derived class access the `private` members of its base class?",
+            "quizQuestion": "Access Private:",
+            "quizOptions": [
+                "Yes, always",
+                "No, never",
+                "Only if inheritance is public",
+                "Only via friend functions"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "inherit_8",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: Inheritance 🎓\n\nYou've unlocked code reusability!\n\n## Key Takeaways\n- **Definition:** Creating new classes from old ones.\n- **Syntax:** `class Child : public Parent`.\n- **Protected:** Visible to children, hidden from world.\n- **Constructors:** Base constructs first.\n- **Destructors:** Child destructs first.\n- **Multiple Inheritance:** Allowed but tricky (Ambiguity).\n\nInheritance sets the stage for the most magical feature of OOP: **Polymorphism**!"
+        }
+    ]
+}

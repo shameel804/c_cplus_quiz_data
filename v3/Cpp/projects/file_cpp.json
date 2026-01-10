@@ -1,0 +1,101 @@
+[
+    {
+        "title": "Opening File with fstream",
+        "ques": "Which header file is required for file handling in C++? Write a program to create a file \"test.txt\" and write \"Hello\" to it.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\n#include <fstream>\nusing namespace std;\n\nint main() {\n    ofstream outFile(\"test.txt\");\n    if (outFile.is_open()) {\n        outFile << \"Hello\" << endl;\n        outFile.close();\n    }\n    return 0;\n}"
+        },
+        "explanation": "`<fstream>` includes `ifstream` (read), `ofstream` (write), and `fstream` (both). `ofstream` creates a file for writing."
+    },
+    {
+        "title": "Reading from File",
+        "ques": "Use `ifstream` to read the string from \"test.txt\" created in the previous step and print it to the console.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\n#include <fstream>\nusing namespace std;\n\nint main() {\n    ifstream inFile(\"test.txt\");\n    string line;\n    if (inFile.is_open()) {\n        while (getline(inFile, line)) {\n            cout << line << endl;\n        }\n        inFile.close();\n    }\n    return 0;\n}"
+        },
+        "explanation": "`ifstream` opens a file for reading. `getline(stream, string)` reads a full line of text."
+    },
+    {
+        "title": "File Modes",
+        "ques": "How do you open a file for **appending** data instead of overwriting? Show the syntax.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "ofstream outFile(\"log.txt\", ios::app);"
+        },
+        "explanation": "`ios::app` is the append mode flag. It ensures data is added to the end of the file."
+    },
+    {
+        "title": "Check if File Exists",
+        "ques": "Write a snippet using `ifstream` to check if a file named \"config.txt\" exists.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "ifstream file(\"config.txt\");\nif (file.good()) {\n    cout << \"File exists\" << endl;\n} else {\n    cout << \"File does not exist\" << endl;\n}"
+        },
+        "explanation": "If `ifstream` successfully opens the file, `good()` (or implicit boolean conversion) returns true."
+    },
+    {
+        "title": "Binary IO (write)",
+        "ques": "Use `write()` to save an object of class `Person` (name, age) to a binary file \"person.dat\".",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <fstream>\nusing namespace std;\n\nclass Person {\npublic:\n    char name[50];\n    int age;\n};\n\nint main() {\n    Person p = {\"Alice\", 30};\n    ofstream outFile(\"person.dat\", ios::binary);\n    outFile.write((char*)&p, sizeof(p));\n    outFile.close();\n    return 0;\n}"
+        },
+        "explanation": "`write()` takes a `char*` pointer and size. We cast the object address `&p` to `char*` for binary writing."
+    },
+    {
+        "title": "Binary IO (read)",
+        "ques": "Read the `Person` object back from \"person.dat\" using `read()` and print the age.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\n#include <fstream>\nusing namespace std;\n\nclass Person {\npublic:\n    char name[50];\n    int age;\n};\n\nint main() {\n    Person p;\n    ifstream inFile(\"person.dat\", ios::binary);\n    inFile.read((char*)&p, sizeof(p));\n    cout << \"Age: \" << p.age << endl;\n    inFile.close();\n    return 0;\n}"
+        },
+        "explanation": "`read()` is the counterpart to `write()`. It reads raw bytes directly into the memory location of the object."
+    },
+    {
+        "title": "File Pointers (seekg/seekp)",
+        "ques": "Explain the difference between `seekg` and `seekp`. Write a line to move the read pointer to the beginning of the file.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "inFile.seekg(0, ios::beg);"
+        },
+        "explanation": "`seekg` moves the \"get\" (read) pointer. `seekp` moves the \"put\" (write) pointer. `ios::beg` refers to the beginning."
+    },
+    {
+        "title": "Reading Whole File",
+        "ques": "What is an efficient way to read an entire file into a **`std::string`** using `stringstream`?",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <sstream>\n#include <fstream>\n// ...\nifstream f(\"data.txt\");\nstringstream buffer;\nbuffer << f.rdbuf();\nstring content = buffer.str();"
+        },
+        "explanation": "This is a common C++ idiom. `rdbuf()` returns the file buffer, which is inserted into `stringstream`, then converted to a string."
+    },
+    {
+        "title": "Error Handling in Files",
+        "ques": "How do you check for end-of-file (EOF) while reading? Loop character by character until EOF.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "char c;\nwhile (inFile.get(c)) {\n    cout << c;\n}"
+        },
+        "explanation": "`inFile.get(c)` returns specific stream state. If it hits EOF or error, it evaluates to false, terminating the loop."
+    },
+    {
+        "title": "Close File",
+        "ques": "Why is it important to **close** a file? Does the destructor of `fstream` close it automatically?",
+        "answer": {
+            "type": "text",
+            "content": "Closing flushes buffers and releases system resources (file locks). Yes, `fstream` destructor closes the file automatically when the object goes out of scope, but explicit closing is good for checking errors or releasing early."
+        },
+        "explanation": "Relying on destructors is safe (RAII), but `close()` allows you to handle errors that might occur during closing (like flush failures)."
+    }
+]

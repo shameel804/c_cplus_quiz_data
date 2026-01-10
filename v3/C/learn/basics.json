@@ -1,0 +1,123 @@
+{
+    "id": "learn_basics",
+    "topicId": "basics",
+    "topicTitle": "Basics of C",
+    "description": "Master the foundational concepts of C programming, from its history and structure to variables, data types, and basic input/output.",
+    "baseKP": 50,
+    "slides": [
+        {
+            "id": "basics_1",
+            "type": "content",
+            "title": "Welcome to C Programming",
+            "content": "# The Legend of C 🦕\n\nC is often called the **\"Mother of all programming languages.\"** Created by **Dennis Ritchie** at Bell Labs in **1972**, it has stood the test of time.\n\n## Why C?\n- **Speed:** C is close to the hardware, making it incredibly fast.\n- **Portability:** C programs can run on different machines with little or no modification.\n- **Foundation:** Languages like C++, Java, Python, and C# borrow syntax or implementation details from C.\n- **System Programming:** OS kernels (Linux, Windows), drivers, and embedded systems are largely written in C.\n\n> 💡 **Fun Fact:** UNIX, one of the most influential operating systems, was the first major kernel rewritten in C!"
+        },
+        {
+            "id": "basics_2",
+            "type": "content",
+            "title": "Structure of a C Program",
+            "content": "# Anatomy of C 🦴\n\nEvery C program follows a specific structure.\n\n1.  **Documentation Section:** Comments about the program.\n2.  **Link Section:** Includes header files (e.g., `#include <stdio.h>`).\n3.  **Definition Section:** Defines constants (e.g., `#define PI 3.14`).\n4.  **Global Declaration:** Variables accessible throughout the program.\n5.  **`main()` Function:** The entry point where execution begins.\n6.  **Subprograms:** User-defined functions.\n\nAll execution starts from the `main()` function. Without it, your program won't run!"
+        },
+        {
+            "id": "basics_3",
+            "type": "content",
+            "title": "Your First Program",
+            "content": "# Hello, World! 🌍\n\nLet's write the classic first program.\n\n```c\n#include <stdio.h>\n\nint main() {\n    printf(\"Hello, World!\");\n    return 0;\n}\n```\n\n<!-- FULL_CODE_START\n#include <stdio.h>\n\n// This is a comment: The execution starts from main\nint main() {\n    // printf follows this format: printf(\"format_string\", arguments...);\n    printf(\"Hello, World!\\n\");\n    \n    // Showing a number\n    int year = 1972;\n    printf(\"C was created in %d\\n\", year);\n    \n    return 0;\n}\nFULL_CODE_END -->\n\n## Breakdown\n- `#include <stdio.h>`: Tells the compiler to include the Standard Input Output library (needed for `printf`).\n- `int main()`: The starting point. `int` means it returns an integer.\n- `{ ... }`: Curly braces define the block of code.\n- `printf(...)`: A function to print text to the console.\n- `return 0;`: Indicates the program finished successfully."
+        },
+        {
+            "id": "basics_4",
+            "type": "content",
+            "title": "How Code Becomes an App",
+            "content": "# The Compilation Process ⚙️\n\nA C program goes through four steps to become an executable:\n\n1.  **Preprocessing:** Handles lines starting with `#` (like imports). Replaces constants.\n2.  **Compiling:** Translates C code into Assembly code.\n3.  **Assembling:** Translates Assembly code into Machine code (Object file).\n4.  **Linking:** Combines object files and libraries into a single executable file.\n\n> 🧠 **Think of it:** You write the recipe (Source Code), and the compiler is the chef who cooks it into a meal (Executable) that the computer can eat!"
+        },
+        {
+            "id": "basics_quiz_1",
+            "type": "quiz",
+            "title": "History Check",
+            "content": "Let's see if you were paying attention to the history lesson!",
+            "quizQuestion": "Who is the creator of the C programming language?",
+            "quizOptions": [
+                "Bjarne Stroustrup",
+                "James Gosling",
+                "Dennis Ritchie",
+                "Guido van Rossum"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "basics_5",
+            "type": "content",
+            "title": "C Tokens and Syntax",
+            "content": "# Smallest Units: Tokens 🧱\n\nA C program is made up of **tokens**. These are the smallest meaningful units.\n\n## Types of Tokens\n- **Keywords:** Reserved words (e.g., `int`, `return`, `if`).\n- **Identifiers:** Names for variables/functions (e.g., `main`, `age`).\n- **Constants:** Fixed values (e.g., `100`, `'A'`, `3.14`).\n- **Strings:** Text inside double quotes (e.g., `\"Hello\"`).\n- **Special Symbols:** `{}`, `[]`, `()`, `,`, `;`.\n- **Operators:** `+`, `-`, `*`, `=`.\n\n> ⚠️ **Rule:** Every statement in C must end with a **semicolon (;)**. It's like the period at the end of a sentence."
+        },
+        {
+            "id": "basics_6",
+            "type": "content",
+            "title": "Variables",
+            "content": "# Storage Refills: Variables 📦\n\nA **variable** is a named storage location in memory used to hold data.\n\n## Declaration & Initialization\n\n```c\nint age;           // Declaration\nage = 25;          // Initialization\n\nfloat pi = 3.14;   // Both in one step\n```\n\n## Naming Rules\n- Must start with a letter or underscore (`_`).\n- Can contain letters, digits, and underscores.\n- **No spaces** allowed.\n- Case sensitive (`sum` is different from `Sum`).\n- Cannot use keywords (like `int`, `float`)."
+        },
+        {
+            "id": "basics_7",
+            "type": "content",
+            "title": "Data Types - 1",
+            "content": "# Data Types 📊\n\nC tells the compiler what type of data a variable holds.\n\n## Primary Data Types\n\n| Type | Format Spec | Size (Typical) | Description |\n|------|-------------|----------------|-------------|\n| `int` | `%d` or `%i` | 4 bytes | Whole numbers (e.g., 10, -5) |\n| `float` | `%f` | 4 bytes | Decimal numbers (e.g., 3.14) |\n| `double`| `%lf` | 8 bytes | High precision decimals |\n| `char` | `%c` | 1 byte | Single character (e.g., 'A') |\n| `void` | - | 0 bytes | Valueless/Empty |\n\n```c\nint score = 100;\nchar grade = 'A';\nfloat temperature = 98.6;\n```"
+        },
+        {
+            "id": "basics_quiz_2",
+            "type": "quiz",
+            "title": "Variable Logic",
+            "content": "Which of these variable names is allowed in C?",
+            "quizQuestion": "Select the VALID variable name:",
+            "quizOptions": [
+                "2ndPlayer",
+                "player-score",
+                "total_score",
+                "int"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "basics_8",
+            "type": "content",
+            "title": "Constants",
+            "content": "# Constants 🔒\n\nConstants are variables whose values cannot be changed after initialization.\n\n## Definition Methods\n\n1.  **Using `const` keyword:**\n    ```c\n    const float PI = 3.14159;\n    ```\n\n2.  **Using `#define` preprocessor:**\n    ```c\n    #define MAX_SCORE 100\n    ```\n    *(Note: No semicolon at the end of #define)*\n\nUse constants to prevent accidental changes to critical values like standard mathematical constants or configuration limits."
+        },
+        {
+            "id": "basics_9",
+            "type": "content",
+            "title": "Talking to the User",
+            "content": "# Input and Output 🗣️\n\nWe use the `<stdio.h>` library for I/O.\n\n## Output: `printf()`\nSends formatted output to the screen.\n```c\nprintf(\"Age is %d\", age);\n```\n\n## Input: `scanf()`\nReads formatted input from the keyboard.\n```c\nscanf(\"%d\", &age);\n```\n> ⚠️ **Crucial:** Notice the `&` (address-of) operator before `age` in `scanf`. It tells C *where* in memory to store the input.\n\n<!-- FULL_CODE_START\n#include <stdio.h>\n\nint main() {\n    int age;\n    float height;\n    \n    printf(\"Enter your age: \");\n    // Read an integer\n    scanf(\"%d\", &age);\n    \n    printf(\"Enter your height (in meters): \");\n    // Read a float\n    scanf(\"%f\", &height);\n    \n    printf(\"\\n--- Summary ---\\n\");\n    printf(\"You are %d years old.\\n\", age);\n    printf(\"You are %.2f meters tall.\\n\", height);\n    \n    return 0;\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "basics_10",
+            "type": "content",
+            "title": "Comments",
+            "content": "# Secret Notes: Comments 📝\n\nComments are ignored by the compiler but explain code to humans.\n\n- **Single-line Comment:** Starts with `//`\n  ```c\n  // This calculates area\n  int area = l * b;\n  ```\n\n- **Multi-line Comment:** Enclosed in `/* ... */`\n  ```c\n  /*\n     Author: Dev\n     Date: 2026\n     Purpose: Demo code\n  */\n  ```\n\nGood code documents itself, but comments handle the \"Why\", not just the \"What\"."
+        },
+        {
+            "id": "basics_11",
+            "type": "content",
+            "title": "Type Casting",
+            "content": "# Changing Shapes: Type Casting 🔄\n\nConverting one data type to another.\n\n## Implicit (Automatic)\nDone by compiler. Small type -> Large type.\n```c\nint x = 10;\nfloat y = x; // y becomes 10.0\n```\n\n## Explicit (Manual)\nDone by programmer. Useful for precision control.\n```c\nfloat a = 5.5;\nint b = (int)a; // b becomes 5 (truncates decimal)\n```\n\n**Example:**\n```c\nint sum = 17, count = 5;\n// Without cast: 17/5 = 3 (integer division)\n// With cast: 17/5.0 = 3.4\ndouble avg = (double)sum / count;\n```"
+        },
+        {
+            "id": "basics_quiz_3",
+            "type": "quiz",
+            "title": "Format Check",
+            "content": "Which format specifier is used for `float` variables?",
+            "quizQuestion": "Choose the correct format specifier:",
+            "quizOptions": [
+                "%d",
+                "%c",
+                "%f",
+                "%lf"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "basics_12",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: Basics of C 🎓\n\nYou've taken your first steps into the world of C!\n\n## Key Takeaways\n- **Structure:** `main()` is the entry point.\n- **Syntax:** Lines end with `;`, blocks in `{}`.\n- **Types:** `int`, `float`, `char`, `double` are the building blocks.\n- **Variables:** Must be declared before use. Naming rules apply.\n- **I/O:** `printf` to show, `scanf` to read (remember the `&`!).\n- **Compilation:** Preprocess -> Compile -> Assemble -> Link.\n\nPractice writing small programs to get comfortable with the syntax. Next, we'll dive into the math and logic of proper coding!"
+        }
+    ]
+}

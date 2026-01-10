@@ -1,0 +1,92 @@
+[
+    {
+        "title": "Defining a Structure",
+        "ques": "Define a structure named **`Student`** with three members: `name` (string), `id` (int), and `marks` (float). Create an instance and print its size.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nstruct Student {\n    char name[50];\n    int id;\n    float marks;\n};\n\nint main() {\n    struct Student s1;\n    printf(\"Size: %lu bytes\\n\", sizeof(s1));\n    return 0;\n}"
+        },
+        "explanation": "A structure groups variables of different types. `sizeof(s1)` returns the total memory allocated for the structure (including any padding)."
+    },
+    {
+        "title": "Accessing Members",
+        "ques": "Declare a `point` structure with `x` and `y` coordinates. Initialize it to `(10, 20)` and print the coordinates using the **dot operator** (`.`).",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nstruct Point {\n    int x;\n    int y;\n};\n\nint main() {\n    struct Point p1 = {10, 20};\n    printf(\"x: %d, y: %d\\n\", p1.x, p1.y);\n    return 0;\n}"
+        },
+        "explanation": "The dot operator `.` is used to access members of a structure variable."
+    },
+    {
+        "title": "Array of Structures",
+        "ques": "Create an array of **3 Book structures** (members: `title`, `price`). Initialize them and loop through to print the details.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nstruct Book {\n    char title[50];\n    float price;\n};\n\nint main() {\n    struct Book library[3] = {\n        {\"C Prog\", 20.5},\n        {\"Algorithms\", 50.0},\n        {\"OS\", 30.0}\n    };\n    for(int i=0; i<3; i++) {\n        printf(\"%s: $%.2f\\n\", library[i].title, library[i].price);\n    }\n    return 0;\n}"
+        },
+        "explanation": "We can create arrays where each element is a structure. `library[i]` accesses the specific structure, and `.title` accesses the member."
+    },
+    {
+        "title": "Pointer to Structure",
+        "ques": "Declare a pointer to a `Person` structure (members: `age`). Assign it the address of a variable and access `age` using the **arrow operator** (`->`).",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nstruct Person {\n    int age;\n};\n\nint main() {\n    struct Person p1 = {25};\n    struct Person *ptr = &p1;\n    printf(\"Age: %d\\n\", ptr->age);\n    return 0;\n}"
+        },
+        "explanation": "When accessing structure members via a pointer, use the arrow operator `->`. `ptr->age` is equivalent to `(*ptr).age`."
+    },
+    {
+        "title": "Typedef with Structs",
+        "ques": "Use `typedef` to create an alias **`s_emp`** for `struct Employee` and use it to declare a variable.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\ntypedef struct Employee {\n    int id;\n    char name[20];\n} s_emp;\n\nint main() {\n    s_emp e1 = {101, \"Alice\"};\n    printf(\"ID: %d\\n\", e1.id);\n    return 0;\n}"
+        },
+        "explanation": "`typedef` simplifies syntax, allowing us to use `s_emp` instead of writing `struct Employee` every time."
+    },
+    {
+        "title": "Nested Structures",
+        "ques": "Create a structure `Date` (day, month, year) and nest it inside a `Student` structure. Initialize and print the student's **birth year**.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nstruct Date {\n    int day, month, year;\n};\n\nstruct Student {\n    char name[20];\n    struct Date dob;\n};\n\nint main() {\n    struct Student s = {\"Bob\", {15, 8, 2000}};\n    printf(\"Birth Year: %d\\n\", s.dob.year);\n    return 0;\n}"
+        },
+        "explanation": "Structures can contain other structures. We access inner members using chained dot operators: `s.dob.year`."
+    },
+    {
+        "title": "Unions",
+        "ques": "Define a **Union** named `Data` with an `int` and a `float`. Assign proper values and explain why only one member holds a valid value at a time.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nunion Data {\n    int i;\n    float f;\n};\n\nint main() {\n    union Data data;\n    data.i = 10;\n    printf(\"i: %d\\n\", data.i);\n    data.f = 220.5;\n    printf(\"f: %.1f\\n\", data.f);\n    printf(\"i: %d (garbage)\\n\", data.i); // i is now corrupted\n    return 0;\n}"
+        },
+        "explanation": "Unions share the same memory location for all members. Writing to one member overwrites the others. Size of union = size of largest member."
+    },
+    {
+        "title": "Passing Struct to Function",
+        "ques": "Write a function `printPoint` that accepts a `Point` structure (by value) and prints its coordinates.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\ntypedef struct {\n    int x, y;\n} Point;\n\nvoid printPoint(Point p) {\n    printf(\"(%d, %d)\\n\", p.x, p.y);\n}\n\nint main() {\n    Point p1 = {5, 10};\n    printPoint(p1);\n    return 0;\n}"
+        },
+        "explanation": "Structures can be passed to functions just like primitive types. However, for large structures, passing by pointer is more efficient."
+    },
+    {
+        "title": "Bit Fields",
+        "ques": "Define a structure with **bit fields** to store a `flag` (1 bit) and a `status` (4 bits). Print the size of the structure.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nstruct Flags {\n    unsigned int flag : 1;\n    unsigned int status : 4;\n};\n\nint main() {\n    printf(\"Size: %lu\\n\", sizeof(struct Flags));\n    return 0;\n}"
+        },
+        "explanation": "Bit fields allow concise storage by specifying the exact number of bits a member requires. useful for hardware register access or compressing flags."
+    }
+]

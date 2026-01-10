@@ -1,0 +1,85 @@
+{
+    "id": "learn_ui",
+    "topicId": "ui",
+    "topicTitle": "WPF Development",
+    "description": "Build modern Desktop Applications using Windows Presentation Foundation (WPF) and XAML.",
+    "baseKP": 95,
+    "slides": [
+        {
+            "id": "ui_1",
+            "type": "content",
+            "title": "What is WPF? 🖥️",
+            "content": "# Windows Presentation Foundation\n\nA powerful framework for building Windows desktop apps.\n\n## XAML\nUses **eXtensible Application Markup Language** (XML-based) to define the UI, while C# handles the logic.\n- **Separation of Concerns:** Designers work on XAML, Developers work on C#."
+        },
+        {
+            "id": "ui_2",
+            "type": "content",
+            "title": "Basic XAML Logic",
+            "content": "# Declaring UI 🎨\n\n```xml\n<Window x:Class=\"MyApp.MainWindow\"\n        Title=\"My App\" Height=\"300\" Width=\"400\">\n    <StackPanel>\n        <TextBlock Text=\"Hello WPF!\" FontSize=\"20\"/>\n        <Button Content=\"Click Me\" Width=\"100\"/>\n    </StackPanel>\n</Window>\n```\n`StackPanel` stacks elements vertically."
+        },
+        {
+            "id": "ui_3",
+            "type": "content",
+            "title": "Layout Containers",
+            "content": "# Organizing Elements 📐\n\n1.  **Grid:** Most powerful. Uses Rows and Columns.\n2.  **StackPanel:** Stacks items horizontally/vertically.\n3.  **WrapPanel:** Wraps items to next line if space runs out.\n4.  **DockPanel:** Docks items to Top, Bottom, Left, Right."
+        },
+        {
+            "id": "ui_quiz_1",
+            "type": "quiz",
+            "title": "Container Check",
+            "content": "Which container organizes elements in a tabular structure with rows and cols?",
+            "quizQuestion": "Container:",
+            "quizOptions": [
+                "StackPanel",
+                "Grid",
+                "Canvas",
+                "Border"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "ui_4",
+            "type": "content",
+            "title": "Handling Events",
+            "content": "# Making it Interactive 🖱️\n\n**XAML:**\n```xml\n<Button Content=\"Click Me\" Click=\"Button_Click\"/>\n```\n\n**C# Code-Behind (.xaml.cs):**\n```csharp\nprivate void Button_Click(object sender, RoutedEventArgs e) {\n    MessageBox.Show(\"Button Clicked!\");\n}\n```"
+        },
+        {
+            "id": "ui_5",
+            "type": "content",
+            "title": "Data Binding",
+            "content": "# The Power of Binding 🔗\n\nConnect UI properties directly to data sources. If data changes, UI updates automatically!\n\n```xml\n<TextBox Text=\"{Binding UserName, UpdateSourceTrigger=PropertyChanged}\"/>\n<TextBlock Text=\"{Binding UserName}\"/>\n```\nTyping in the TextBox instantly updates the TextBlock without C# code!"
+        },
+        {
+            "id": "ui_6",
+            "type": "content",
+            "title": "MVVM Pattern",
+            "content": "# Model-View-ViewModel 🏗️\n\nThe standard architecture for WPF.\n\n1.  **Model:** Data (e.g., `User` class).\n2.  **View:** UI (XAML).\n3.  **ViewModel:** Logic that connects Model to View.\n\nKeeps code clean, testable, and maintainable."
+        },
+        {
+            "id": "ui_7",
+            "type": "content",
+            "title": "Full Example: Counter",
+            "content": "# Simple Counter App\n\n<!-- FULL_CODE_START\n// MainWindow.xaml\n<StackPanel VerticalAlignment=\"Center\" HorizontalAlignment=\"Center\">\n    <TextBlock x:Name=\"CounterText\" Text=\"0\" FontSize=\"40\" HorizontalAlignment=\"Center\"/>\n    <Button Content=\"Increment\" Click=\"Increment_Click\" Margin=\"0,20,0,0\" Padding=\"10\"/>\n</StackPanel>\n\n// MainWindow.xaml.cs\nusing System.Windows;\n\nnamespace CounterApp {\n    public partial class MainWindow : Window {\n        private int count = 0;\n\n        public MainWindow() {\n            InitializeComponent();\n        }\n\n        private void Increment_Click(object sender, RoutedEventArgs e) {\n            count++;\n            CounterText.Text = count.ToString();\n        }\n    }\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "ui_quiz_2",
+            "type": "quiz",
+            "title": "Binding Check",
+            "content": "Which markup extension is used to bind a property to a data source?",
+            "quizQuestion": "Syntax:",
+            "quizOptions": [
+                "{Bind ...}",
+                "{Data ...}",
+                "{Binding ...}",
+                "{Link ...}"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "ui_8",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: WPF 🎓\n\nYou're now a Desktop Developer!\n\n## Key Takeaways\n- **XAML:** Layout language.\n- **Code-Behind:** Logic file.\n- **Layouts:** Grid, StackPanel.\n- **Binding:** Powerful data synchronization.\n- **MVVM:** Professional architecture.\n\nThis concludes our C# journey. From console apps to full GUI applications, you have the tools to build anything!"
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+[
+    {
+        "title": "Compile-time Polymorphism",
+        "ques": "Give an example of **Compile-time Polymorphism** using **function overloading** of an `add` function (int vs string concatenation).",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Calculator {\npublic:\n    int add(int a, int b) { return a + b; }\n    string add(string a, string b) { return a + b; }\n};\n\nint main() {\n    Calculator c;\n    cout << c.add(5, 10) << endl;\n    cout << c.add(\"Hello\", \"World\") << endl;\n    return 0;\n}"
+        },
+        "explanation": "The compiler determines which function to call based on the arguments passed during compilation. This is also called early binding."
+    },
+    {
+        "title": "Operator Overloading",
+        "ques": "Overload the `+` operator for a `Complex` class (real and imag parts) to add two complex numbers.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nclass Complex {\npublic:\n    int r, i;\n    Complex(int r = 0, int i = 0) : r(r), i(i) {}\n    \n    // Overloading +\n    Complex operator + (Complex const &obj) {\n        Complex res;\n        res.r = r + obj.r;\n        res.i = i + obj.i;\n        return res;\n    }\n};\n\nint main() {\n    Complex c1(10, 5), c2(2, 4);\n    Complex c3 = c1 + c2;\n    cout << c3.r << \" + \" << c3.i << \"i\" << endl;\n    return 0;\n}"
+        },
+        "explanation": "Operator overloading allows redefining custom behavior for standard operators (like `+`, `-`, `<<`) for user-defined types."
+    },
+    {
+        "title": "Virtual Functions",
+        "ques": "Demonstrate **Runtime Polymorphism** using a `virtual` function `draw()` in a base class `Shape` and overriding it in `Circle`.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nclass Shape {\npublic:\n    virtual void draw() { cout << \"Drawing Shape\\n\"; }\n};\n\nclass Circle : public Shape {\npublic:\n    void draw() override { cout << \"Drawing Circle\\n\"; }\n};\n\nint main() {\n    Shape *s = new Circle();\n    s->draw(); // Calls Circle's draw\n    return 0;\n}"
+        },
+        "explanation": "The `virtual` keyword ensures that the derived class's function is called even when accessed via a base class pointer (Late Binding)."
+    },
+    {
+        "title": "Virtual Destructors",
+        "ques": "Why should a base class destructor be declared **virtual**? Write a snippet showing a potential memory leak if it's not virtual.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "class Base {\npublic:\n    virtual ~Base() { cout << \"Base Destructor\\n\"; }\n};\n\nclass Derived : public Base {\npublic:\n    ~Derived() { cout << \"Derived Destructor\\n\"; }\n};\n\n// Usage: Base *b = new Derived(); delete b;"
+        },
+        "explanation": "If the base destructor is not virtual, `delete b` will only call the Base destructor, ignoring the Derived destructor, leading to resource leaks."
+    },
+    {
+        "title": "Pure Virtual Functions",
+        "ques": "Define a **pure virtual function** `area()` in a class `Shape` and explain what it makes the class.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "class Shape {\npublic:\n    virtual int area() = 0; // Pure virtual\n};"
+        },
+        "explanation": "A pure virtual function has ` = 0`. It makes the class an **Abstract Class**, meaning you cannot instantiate `Shape` directly; derived classes must implement `area()`."
+    },
+    {
+        "title": "Abstract Classes",
+        "ques": "Can you create an object of an **Abstract Class**? Try to instantiate the `Shape` class from the previous exercise and explaining the result.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "// Shape s; // Compilation Error"
+        },
+        "explanation": "No, you cannot instantiate an abstract class. It serves only as an interface for derived classes."
+    },
+    {
+        "title": "Polymorphism with Arrays",
+        "ques": "Create an array of **pointers to Base** (`Shape`) that holds objects of `Circle` and `Square`. Loop through and call `draw()`.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nclass Shape {\npublic:\n    virtual void draw() = 0;\n};\n\nclass Circle : public Shape { void draw() { cout << \"Circle\\n\"; } };\nclass Square : public Shape { void draw() { cout << \"Square\\n\"; } };\n\nint main() {\n    Shape *arr[2];\n    arr[0] = new Circle();\n    arr[1] = new Square();\n    arr[0]->draw();\n    arr[1]->draw();\n    return 0;\n}"
+        },
+        "explanation": "To use polymorphism with collections, use pointers (or smart pointers) to the base class."
+    },
+    {
+        "title": "Method Hiding",
+        "ques": "What happens if you redefine a non-virtual function in a derived class? Is it polymorphism?",
+        "answer": {
+            "type": "text",
+            "content": "It is called **Method Hiding** (or shadowing), not run-time polymorphism. If you call the function via a Base pointer, the Base version will run, ignoring the Derived version."
+        },
+        "explanation": "Run-time polymorphism requires the base function to be `virtual`. Without it, binding is static."
+    },
+    {
+        "title": "Override Keyword",
+        "ques": "What is the purpose of the **`override`** keyword in C++11? Add it to a derived class function.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "void fun() override { ... }"
+        },
+        "explanation": "`override` explicitly tells the compiler that this function is meant to override a base virtual function. It generates an error if the signature doesn't match."
+    },
+    {
+        "title": "Final Keyword",
+        "ques": "Use the **`final`** keyword to prevent a class `Base` from being inherited further.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "class Base final {\n    // ...\n};\n\n// class Derived : public Base {}; // Error"
+        },
+        "explanation": "`final` specifies that a class cannot be inherited or a virtual function cannot be overridden further."
+    }
+]

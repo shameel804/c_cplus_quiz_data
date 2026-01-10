@@ -1,0 +1,97 @@
+{
+    "id": "learn_control",
+    "topicId": "control",
+    "topicTitle": "Control Structures",
+    "description": "Learn to control the flow of your program using decisions (if/else, switch) and loops (for, while, do-while).",
+    "baseKP": 60,
+    "slides": [
+        {
+            "id": "control_1",
+            "type": "content",
+            "title": "Steering Your Code",
+            "content": "# Control Flow 🏎️\n\nBy default, C programs execute from top to bottom, line by line. **Control Structures** allow you to change this flow based on conditions or loops.\n\n## Types of Control Flow\n1.  **Selection/Decision:** Execute code *only if* a condition is true (`if`, `switch`).\n2.  **Iteration/Loops:** Execute code *repeatedly* (`for`, `while`, `do-while`).\n3.  **Jump:** Transfer control to another part (`break`, `continue`, `goto`)."
+        },
+        {
+            "id": "control_2",
+            "type": "content",
+            "title": "The 'If' Statement",
+            "content": "# Decision Making with IF 🚦\n\nThe simplest decision logic.\n\n## Syntax\n```c\nif (condition) {\n    // code to execute if condition is true\n}\n```\n\n## Example\n```c\nint score = 85;\nif (score > 50) {\n    printf(\"You passed!\\n\");\n}\n```\nIf `score` was 40, nothing would be printed."
+        },
+        {
+            "id": "control_3",
+            "type": "content",
+            "title": "If-Else & Else-If",
+            "content": "# Two or More Paths 🛣️\n\n## If-Else\nHandle both True and False cases.\n```c\nif (age >= 18) {\n    printf(\"Adult\");\n} else {\n    printf(\"Minor\");\n}\n```\n\n## Else-If Ladder\nCheck multiple conditions in sequence.\n```c\nif (marks >= 90) {\n    printf(\"Grade A\");\n} else if (marks >= 80) {\n    printf(\"Grade B\");\n} else {\n    printf(\"Grade C\");\n}\n```"
+        },
+        {
+            "id": "control_4",
+            "type": "content",
+            "title": "Switch Statement",
+            "content": "# Multi-Way Branching: Switch 🎛️\n\nA cleaner alternative to many `else-if`s when checking a single variable against multiple constants.\n\n```c\nswitch (expression) {\n    case value1:\n        // code\n        break;\n    case value2:\n        // code\n        break;\n    default:\n        // default code\n}\n```\n\n> ⚠️ **Important:** Don't forget the `break;` statement! Without it, execution \"falls through\" to the next case automatically."
+        },
+        {
+            "id": "control_quiz_1",
+            "type": "quiz",
+            "title": "Switch Rules",
+            "content": "What happens if you forget `break` in a switch case?",
+            "quizQuestion": "Missing break causes:",
+            "quizOptions": [
+                "Compiler Error",
+                "Runtime Error",
+                "Fall-through execution",
+                "Infinite loop"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "control_5",
+            "type": "content",
+            "title": "Loops: While",
+            "content": "# Looping: While 🔁\n\nRepeats code as long as a condition is true.\n\n**Syntax:**\n```c\nwhile (condition) {\n    // code\n}\n```\n\n**Example:**\n```c\nint i = 1;\nwhile (i <= 5) {\n    printf(\"%d \", i);\n    i++; // Don't forget to update i!\n}\n```\nIf you forget `i++`, the condition never becomes false -> **Infinite Loop!** ♾️"
+        },
+        {
+            "id": "control_6",
+            "type": "content",
+            "title": "Loops: Do-While",
+            "content": "# Looping: Do-While ↩️\n\nSimilar to `while`, but guarantees the code runs **at least once**.\n\n**Syntax:**\n```c\ndo {\n    // code\n} while (condition);\n```\n\n**Example:**\n```c\nint i = 10;\ndo {\n    printf(\"%d\", i);\n} while (i < 5);\n```\nOutput: `10` (Even though `10 < 5` is false, it prints once before checking)."
+        },
+        {
+            "id": "control_7",
+            "type": "content",
+            "title": "Loops: For",
+            "content": "# Looping: For 🔄\n\nThe most compact loop. Good when you know the number of iterations.\n\n**Syntax:**\n```c\nfor (initialization; condition; update) {\n    // code\n}\n```\n\n**Example:**\n```c\nfor (int i = 0; i < 5; i++) {\n    printf(\"Iteration %d\\n\", i);\n}\n```\nAll loop control connection logic is in one line!"
+        },
+        {
+            "id": "control_quiz_2",
+            "type": "quiz",
+            "title": "Loop Logic",
+            "content": "`for(int i=0; i<5; i++)` runs the loop body how many times?",
+            "quizQuestion": "Iteration count:",
+            "quizOptions": [
+                "4",
+                "5",
+                "6",
+                "Infinite"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "control_8",
+            "type": "content",
+            "title": "Break and Continue",
+            "content": "# Jump Statements 🦘\n\n## Break\nExits the loop (or switch) immediately.\n```c\nfor (int i = 0; i < 10; i++) {\n    if (i == 5) break; // Stops when i is 5\n    printf(\"%d \", i);\n}\n// Output: 0 1 2 3 4\n```\n\n## Continue\nSkips the *current* iteration and jumps to the next one.\n```c\nfor (int i = 0; i < 5; i++) {\n    if (i == 2) continue; // Skips 2\n    printf(\"%d \", i);\n}\n// Output: 0 1 3 4\n```"
+        },
+        {
+            "id": "control_9",
+            "type": "content",
+            "title": "Full Example: Simple Calculator",
+            "content": "# Putting it Together 🧩\n\nLet's build a mini calculator using `switch` and `while`.\n\n<!-- FULL_CODE_START\n#include <stdio.h>\n\nint main() {\n    char op;\n    double n1, n2;\n    int running = 1;\n\n    printf(\"Example: Simple Calculator\\n\");\n\n    while (running) {\n        printf(\"Enter operator (+, -, *, /) or 'q' to quit: \");\n        scanf(\" %c\", &op); // Space before %c skips whitespace\n\n        if (op == 'q') {\n            printf(\"Exiting... Bye!\\n\");\n            break; // Break needs to be inside a loop or switch\n        }\n\n        printf(\"Enter two numbers: \");\n        scanf(\"%lf %lf\", &n1, &n2);\n\n        switch (op) {\n            case '+':\n                printf(\"Result: %.2lf\\n\", n1 + n2);\n                break;\n            case '-':\n                printf(\"Result: %.2lf\\n\", n1 - n2);\n                break;\n            case '*':\n                printf(\"Result: %.2lf\\n\", n1 * n2);\n                break;\n            case '/':\n                if (n2 != 0)\n                    printf(\"Result: %.2lf\\n\", n1 / n2);\n                else\n                    printf(\"Error: Division by zero!\\n\");\n                break;\n            default:\n                printf(\"Error: Invalid operator\\n\");\n        }\n        printf(\"--------------------\\n\");\n    }\n    return 0;\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "control_10",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: Control Structures 🎓\n\nYou are now the captain of your code's path!\n\n## Key Takeaways\n- **If-Else:** Basic decision making.\n- **Switch:** Good for menu-like options or equality checks.\n- **While:** Loop while true.\n- **Do-While:** Loop at least once.\n- **For:** Compact loop, best for counting.\n- **Break:** Exit loop/switch.\n- **Continue:** Skip to next iteration.\n\nLoops and decisions are the heart of algorithms. Mastering them is essential for solving complex problems!"
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+{
+    "id": "learn_mem",
+    "topicId": "mem",
+    "topicTitle": "Dynamic Memory Allocation",
+    "description": "Learn to manage memory manually, creating flexible programs that can handle variable amounts of data at runtime.",
+    "baseKP": 90,
+    "slides": [
+        {
+            "id": "mem_1",
+            "type": "content",
+            "title": "Static vs Dynamic",
+            "content": "# Memory Management 🧠\n\n**Static Allocation:** Memory size is fixed at compile time (Stack).\n`int arr[10];` // Fixed size 10\n\n**Dynamic Allocation:** Memory size is determined at runtime (Heap).\nUser inputs size -> Program requests that much memory.\n\n## Why Dynamic?\n- Efficient use of memory.\n- Create structures whose size isn't known beforehand (e.g., loading a file)."
+        },
+        {
+            "id": "mem_2",
+            "type": "content",
+            "title": "malloc()",
+            "content": "# Memory Allocation 🏗️\n\n`malloc` stands for **M**emory **ALLOC**ation.\nIt reserves a block of bytes in the heap and returns a `void*` pointer to it.\n\n```c\n#include <stdlib.h>\n\nint *ptr;\n// Allocate space for 5 integers\nptr = (int*) malloc(5 * sizeof(int));\n```\nIf allocation fails (RAM full), it returns `NULL`."
+        },
+        {
+            "id": "mem_3",
+            "type": "content",
+            "title": "calloc()",
+            "content": "# Contiguous Allocation 🖇️\n\nSimilar to `malloc`, but:\n1.  Takes two arguments (number of elements, size of each).\n2.  **Initializes memory to ZERO**.\n\n```c\nptr = (int*) calloc(5, sizeof(int));\n```\nUse `calloc` if you want a clean slate (no garbage values)."
+        },
+        {
+            "id": "mem_quiz_1",
+            "type": "quiz",
+            "title": "Default Values",
+            "content": "What is the initial value of memory allocated by `malloc`?",
+            "quizQuestion": "Initial value:",
+            "quizOptions": [
+                "Zero",
+                "Null",
+                "Garbage Value",
+                "One"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "mem_4",
+            "type": "content",
+            "title": "realloc()",
+            "content": "# Resizing Memory 📏\n\nNeed more space? Or less? `realloc` changes the size of previously allocated memory.\n\n```c\nptr = (int*) realloc(ptr, 10 * sizeof(int));\n```\nIt might move the data to a new location if the current block can't be extended."
+        },
+        {
+            "id": "mem_5",
+            "type": "content",
+            "title": "free()",
+            "content": "# Cleaning Up 🧹\n\nIn C, there is no Garbage Collector. If you allocate memory, **you must release it** when done.\n\n```c\nfree(ptr);\n```\n\n## Memory Leak\nIf you lose the pointer without calling `free()`, that memory stays occupied until the program ends. This is a **Memory Leak**."
+        },
+        {
+            "id": "mem_6",
+            "type": "content",
+            "title": "Full Example: Dynamic Array",
+            "content": "# Arrays without Limits\n\n<!-- FULL_CODE_START\n#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *arr;\n    int n;\n\n    printf(\"Enter number of elements: \");\n    scanf(\"%d\", &n);\n\n    // 1. Allocate memory\n    arr = (int*) malloc(n * sizeof(int));\n\n    if (arr == NULL) {\n        printf(\"Memory not allocated.\\n\");\n        exit(0);\n    }\n\n    // 2. Use memory\n    printf(\"Enter %d elements:\\n\", n);\n    for (int i = 0; i < n; ++i) {\n        scanf(\"%d\", &arr[i]);\n    }\n\n    printf(\"The elements are: \");\n    for (int i = 0; i < n; ++i) {\n        printf(\"%d \", arr[i]);\n    }\n    \n    // 3. Resize memory\n    printf(\"\\nExpanding array by 2 more...\\n\");\n    n = n + 2;\n    arr = (int*) realloc(arr, n * sizeof(int));\n    \n    arr[n-2] = 99;\n    arr[n-1] = 100;\n    \n    printf(\"New list: \");\n    for (int i = 0; i < n; ++i) {\n        printf(\"%d \", arr[i]);\n    }\n\n    // 4. Free memory\n    free(arr);\n    printf(\"\\nMemory released!\\n\");\n\n    return 0;\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "mem_quiz_2",
+            "type": "quiz",
+            "title": "Leak Check",
+            "content": "Which function is used to prevent memory leaks?",
+            "quizQuestion": "Function:",
+            "quizOptions": [
+                "malloc",
+                "clean",
+                "free",
+                "delete"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "mem_7",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: Memory Management 🎓\n\nWith great power comes great responsibility!\n\n## Key Takeaways\n- **Stack:** Automatic, fast, fixed size.\n- **Heap:** Manual (`malloc`), flexible size, slower.\n- **`malloc/calloc`**: To allocate.\n- **`realloc`**: To resize.\n- **`free`**: To release. **Always** free what you malloc.\n- **Leak:** Forgetting to free.\n\nControlling memory manually is what makes C ideal for system programming and game engines!"
+        }
+    ]
+}

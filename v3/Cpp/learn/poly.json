@@ -1,0 +1,85 @@
+{
+    "id": "learn_poly",
+    "topicId": "poly",
+    "topicTitle": "Polymorphism",
+    "description": "Master the art of 'many forms'. Learn how to make your code flexible with Overloading and Overriding.",
+    "baseKP": 80,
+    "slides": [
+        {
+            "id": "poly_1",
+            "type": "content",
+            "title": "Many Forms 🎭",
+            "content": "# Polymorphism\n\nFrom Greek: **Poly** (many) + **Morph** (forms).\n\nIt allows a function or operator to behave differently in different contexts.\n\n## Two Main Types\n1.  **Compile-Time (Static):** Method Overloading, Operator Overloading.\n2.  **Run-Time (Dynamic):** Method Overriding (Virtual Functions)."
+        },
+        {
+            "id": "poly_2",
+            "type": "content",
+            "title": "Method Overloading",
+            "content": "# Same Name, Different Job 👷\n\nYou can have multiple functions with the **same name** but **different parameters**.\n\n```cpp\nclass Printer {\npublic:\n    void print(int i) {\n        cout << \"Integer: \" << i << endl;\n    }\n    void print(string s) {\n        cout << \"String: \" << s << endl;\n    }\n};\n```\nThe compiler decides which one to call based on the arguments."
+        },
+        {
+            "id": "poly_3",
+            "type": "content",
+            "title": "Method Overriding",
+            "content": "# Changing Behavior 🧬\n\nA child class can provide a specific implementation of a function already defined in its parent class.\n\n```cpp\nclass Animal {\npublic:\n    void speak() { cout << \"Animal sound\"; }\n};\n\nclass Dog : public Animal {\npublic:\n    void speak() { cout << \"Woof!\"; } // Overriding\n};\n```"
+        },
+        {
+            "id": "poly_4",
+            "type": "content",
+            "title": "The Pointer Problem",
+            "content": "# When it breaks 🧩\n\nIf you use a pointer of type `Base` to point to a `Child` object, it calls the `Base` function by default!\n\n```cpp\nAnimal *ptr;\nDog d;\nptr = &d;\nptr->speak(); // Prints \"Animal sound\" 😱\n```\nThis is **Early Binding**. The compiler sees `Animal*` and links `Animal::speak()`."
+        },
+        {
+            "id": "poly_quiz_1",
+            "type": "quiz",
+            "title": "Binding Check",
+            "content": "What is the default binding mechanism in C++ for normal functions?",
+            "quizQuestion": "Default Binding:",
+            "quizOptions": [
+                "Late Binding (Runtime)",
+                "Early Binding (Compile-time)",
+                "Dynamic Linkage",
+                "None"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "poly_5",
+            "type": "content",
+            "title": "Virtual Functions",
+            "content": "# The `virtual` Fix 🔧\n\nUse the `virtual` keyword in the Base class to enable **Late Binding**.\n\n```cpp\nclass Animal {\npublic:\n    virtual void speak() { \n        cout << \"Animal sound\"; \n    }\n};\n\n// Now:\nptr->speak(); // Prints \"Woof!\" 🐶\n```\nThe program now checks the *actual object type* at runtime before calling."
+        },
+        {
+            "id": "poly_6",
+            "type": "content",
+            "title": "Abstract Classes",
+            "content": "# Interfaces 📑\n\nSometimes a Base class shouldn't be instantiated (e.g., a generic \"Shape\"). We use **Pure Virtual Functions**.\n\n```cpp\nclass Shape {\npublic:\n    // Pure Virtual Function\n    virtual void draw() = 0; \n};\n```\n- `Shape` is now an **Abstract Class**.\n- You cannot create `Shape s;`.\n- Any child (Circle, Square) **MUST** implement `draw()`."
+        },
+        {
+            "id": "poly_7",
+            "type": "content",
+            "title": "Full Example: Shape System",
+            "content": "# Polymorphism in Action\n\n<!-- FULL_CODE_START\n#include <iostream>\n#include <vector>\nusing namespace std;\n\n// Abstract Base Class\nclass Shape {\npublic:\n    virtual void draw() = 0; // Pure virtual\n    virtual ~Shape() {} // Virtual Destructor (Important!)\n};\n\nclass Circle : public Shape {\npublic:\n    void draw() override {\n        cout << \"Drawing a Circle 🔴\" << endl;\n    }\n};\n\nclass Square : public Shape {\npublic:\n    void draw() override {\n        cout << \"Drawing a Square 🟥\" << endl;\n    }\n};\n\nint main() {\n    // Vector of pointers to generic Shapes\n    vector<Shape*> shapes;\n    \n    shapes.push_back(new Circle());\n    shapes.push_back(new Square());\n    shapes.push_back(new Circle());\n    \n    cout << \"--- Rendering Scene ---\\n\";\n    \n    // Polymorphic call\n    for(Shape* s : shapes) {\n        s->draw(); // Calls the correct draw() for each object\n    }\n    \n    // Cleanup\n    for(Shape* s : shapes) delete s;\n    \n    return 0;\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "poly_quiz_2",
+            "type": "quiz",
+            "title": "Abstract Check",
+            "content": "Can you create an object of a class that has a pure virtual function?",
+            "quizQuestion": "Instantiate Abstract Class:",
+            "quizOptions": [
+                "Yes",
+                "No",
+                "Only if it has a constructor",
+                "Only with pointers"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "poly_8",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: Polymorphism 🎓\n\nWriting flexible and scalable code!\n\n## Key Takeaways\n- **Overloading:** Same name, different params (Compile-time).\n- **Overriding:** Child replaces Parent method (Runtime).\n- **Virtual:** The magic word for Runtime Polymorphism.\n- **Pure Virtual (`=0`):** Enforces implementation contract.\n- **Abstract Class:** Cannot be instantiated, serves as a base interface.\n\nNext, we'll wrap up the OOP pillars with **Encapsulation and Abstraction**!"
+        }
+    ]
+}

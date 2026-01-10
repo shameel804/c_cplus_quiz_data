@@ -1,0 +1,102 @@
+[
+    {
+        "title": "Classes and Objects",
+        "ques": "Create a class `Car` with fields `color` and `maxSpeed`. Instantiate an object of `Car` and set its fields.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "using System;\n\nclass Car {\n    public string color;\n    public int maxSpeed;\n}\n\nclass Program {\n    static void Main() {\n        Car myCar = new Car();\n        myCar.color = \"Red\";\n        myCar.maxSpeed = 200;\n        Console.WriteLine(myCar.color);\n    }\n}"
+        },
+        "explanation": "A class is a blueprint for objects. `new Car()` creates an instance (object) of the class."
+    },
+    {
+        "title": "Constructors",
+        "ques": "Add a **constructor** to the `Car` class to initialize `color` and `maxSpeed` upon object creation.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "class Car {\n    public string _color;\n    public int _maxSpeed;\n\n    public Car(string color, int maxSpeed) {\n        _color = color;\n        _maxSpeed = maxSpeed;\n    }\n}"
+        },
+        "explanation": "Constructors have the same name as the class and no return type. They run when an object is created."
+    },
+    {
+        "title": "Access Modifiers",
+        "ques": "Explain the difference between `public` and `private`. Create a class with a **private** field and try to access it from `Main` (show it fails or explain why).",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "class Account {\n    private double balance;\n}\n\n// Account acc = new Account();\n// acc.balance = 100; // Error: 'balance' is inaccessible due to its protection level"
+        },
+        "explanation": "`public` members are accessible from anywhere. `private` members are restricted to the containing class."
+    },
+    {
+        "title": "Properties (Getters/Setters)",
+        "ques": "Use a **Property** with get and set accessors to encapuslate a private field `name`. Ensure `name` is not empty in the setter.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "class Person {\n    private string name;\n    public string Name {\n        get { return name; }\n        set {\n            if (!string.IsNullOrEmpty(value)) name = value;\n        }\n    }\n}"
+        },
+        "explanation": "Properties provide a flexible mechanism to read, write, or compute the value of a private field, often adding validation logic."
+    },
+    {
+        "title": "Auto-Implemented Properties",
+        "ques": "Rewrite the previous property using **Auto-Implemented Property** syntax for a `Models` property in the `Car` class.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "class Car {\n    public string Model { get; set; }\n}"
+        },
+        "explanation": "Auto-implemented properties ` { get; set; }` make code concise when no special logic is needed in accessors. The compiler creates a hidden backing field."
+    },
+    {
+        "title": "Inheritance",
+        "ques": "Create a base class `Vehicle` with a method `Honk`. Create a derived class `Car` that **inherits** from `Vehicle`.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "using System;\n\nclass Vehicle {\n    public void Honk() { Console.WriteLine(\"Tuut, tuut!\"); }\n}\n\nclass Car : Vehicle {\n    public string model = \"Mustang\";\n}\n\nclass Program {\n    static void Main() {\n        Car myCar = new Car();\n        myCar.Honk(); // Inherited method\n    }\n}"
+        },
+        "explanation": "Inheritance (`:`) allows sharing code. `Car` inherits fields and methods from `Vehicle`."
+    },
+    {
+        "title": "Polymorphism (Virtual/Override)",
+        "ques": "Use **`virtual`** and **`override`** to enable polymorphism. `Animal` class makes a sound, `Pig` overrides it to say \"Wee Wee\".",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "class Animal {\n    public virtual void AnimalSound() {\n        Console.WriteLine(\"Animal makes a sound\");\n    }\n}\n\nclass Pig : Animal {\n    public override void AnimalSound() {\n        Console.WriteLine(\"The pig says: wee wee\");\n    }\n}"
+        },
+        "explanation": "`virtual` allows a method to be effectively overridden in a derived class. `override` provides the new implementation."
+    },
+    {
+        "title": "Abstraction (Abstract Classes)",
+        "ques": "Define an **abstract class** `Shape` with an abstract method `Area`. Implement `Area` in a `Square` subclass.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "abstract class Shape {\n    public abstract int Area();\n}\n\nclass Square : Shape {\n    public int side;\n    public override int Area() {\n        return side * side;\n    }\n}"
+        },
+        "explanation": "Abstract classes cannot be instantiated. Abstract methods have no body and must be implemented by derived classes."
+    },
+    {
+        "title": "Interfaces",
+        "ques": "Create an **interface** `IAnimal` with a method `animalSound()`. Implement it in a `Dog` class.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "interface IAnimal {\n    void animalSound(); // Interface method (does not have a body)\n}\n\nclass Dog : IAnimal {\n    public void animalSound() {\n        Console.WriteLine(\"The dog says: bow wow\");\n    }\n}"
+        },
+        "explanation": "Interfaces contain only abstract methods and properties (implicitly public). A class `implements` an interface using `:`."
+    },
+    {
+        "title": "Static Members",
+        "ques": "Add a **static** field `count` to a class `User` to track the number of users created. Increment it in the constructor.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "class User {\n    public static int count = 0;\n    public User() {\n        count++;\n    }\n}\n// Console.WriteLine(User.count);"
+        },
+        "explanation": "Static members belong to the class itself, not any specific object. They are shared across all instances."
+    }
+]

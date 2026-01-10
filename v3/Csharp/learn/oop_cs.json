@@ -1,0 +1,85 @@
+{
+    "id": "learn_oop_cs",
+    "topicId": "oop_cs",
+    "topicTitle": "OOP Concepts in C#",
+    "description": "Learn C#'s unique take on Object-Oriented Programming, including Properties, Access Modifiers, and Constructors.",
+    "baseKP": 60,
+    "slides": [
+        {
+            "id": "oop_1",
+            "type": "content",
+            "title": "Classes and Objects",
+            "content": "# The Blueprint 📐\n\nJust like other OOP languages, C# uses classes.\n\n```csharp\npublic class Car {\n    public string color = \"Red\";\n}\n\n// Usage\nCar myCar = new Car();\nConsole.WriteLine(myCar.color);\n```"
+        },
+        {
+            "id": "oop_2",
+            "type": "content",
+            "title": "Fields vs Properties",
+            "content": "# The C# Speciality 🌟\n\n- **Field:** A variable directly declared in a class (usually private).\n- **Property:** A member that provides a flexible mechanism to read, write, or compute the value of a private field.\n\nC# encourages using **Properties** over public fields."
+        },
+        {
+            "id": "oop_3",
+            "type": "content",
+            "title": "Properties",
+            "content": "# Getters and Setters 🛡️\n\nNo need to write `GetX()` and `SetX()` methods. Use Properties!\n\n```csharp\nclass Person {\n    private string name; // Field\n\n    public string Name { // Property\n        get { return name; }\n        set { name = value; }\n    }\n}\n// Usage:\np.Name = \"Bob\"; // Calls 'set'\nConsole.WriteLine(p.Name); // Calls 'get'\n```"
+        },
+        {
+            "id": "oop_4",
+            "type": "content",
+            "title": "Auto-Implemented Properties",
+            "content": "# The Magic Syntax ✨\n\nIf you don't need special logic in get/set, just do this:\n\n```csharp\npublic class Person {\n    public string Name { get; set; }\n    public int Age { get; set; }\n}\n```\nCompiler creates the private backing fields automatically!"
+        },
+        {
+            "id": "oop_quiz_1",
+            "type": "quiz",
+            "title": "Property Check",
+            "content": "Which keyword is NOT a part of C# property syntax?",
+            "quizQuestion": "Odd one out:",
+            "quizOptions": [
+                "get",
+                "set",
+                "val",
+                "value"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "oop_5",
+            "type": "content",
+            "title": "Access Modifiers",
+            "content": "# Controlling Visibility 🔒\n\n1.  **public:** Accessible everywhere.\n2.  **private:** Accessible only inside class.\n3.  **protected:** Accessible in class and children.\n4.  **internal:** Accessible anywhere in the **same assembly** (project). This is the default classes!"
+        },
+        {
+            "id": "oop_6",
+            "type": "content",
+            "title": "Constructors",
+            "content": "# Building Objects 🏗️\n\nSame name as class, no return type.\n\n```csharp\npublic class Box {\n    public int Size { get; set; }\n\n    // Constructor\n    public Box(int size) {\n        Size = size;\n    }\n}\n\nBox b = new Box(10);\n```"
+        },
+        {
+            "id": "oop_7",
+            "type": "content",
+            "title": "Full Example: Employee",
+            "content": "# OOP in Action\n\n<!-- FULL_CODE_START\nusing System;\n\npublic class Employee {\n    // Auto-Properties\n    public string Name { get; set; }\n    public double Salary { get; private set; } // Read-only from outside\n\n    // Constructor\n    public Employee(string name, double salary) {\n        Name = name;\n        Salary = salary;\n    }\n\n    public void GiveRaise(double amount) {\n        Salary += amount;\n        Console.WriteLine($\"{Name} got a raise! New Salary: ${Salary}\");\n    }\n}\n\nclass Program {\n    static void Main() {\n        Employee emp = new Employee(\"Alice\", 50000);\n        \n        Console.WriteLine(emp.Name + \" is hired.\");\n        \n        // emp.Salary = 100000; // Error! Setter is private\n        \n        emp.GiveRaise(5000);\n        \n        Console.ReadKey();\n    }\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "oop_quiz_2",
+            "type": "quiz",
+            "title": "Modifier Check",
+            "content": "Which modifier makes a member accessible only within the same project (.dll or .exe)?",
+            "quizQuestion": "Assembly Scope:",
+            "quizOptions": [
+                "public",
+                "protected",
+                "internal",
+                "static"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "oop_8",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: C# OOP 🎓\n\nClean and powerful.\n\n## Key Takeaways\n- **Properties:** Use `{ get; set; }` standard.\n- **Access:** `internal` is unique to C#.\n- **Constructors:** Initialize your objects.\n- **Encapsulation:** Use private setters to protect data.\n\nNext, we'll see how C# handles **Inheritance and Polymorphism**!"
+        }
+    ]
+}

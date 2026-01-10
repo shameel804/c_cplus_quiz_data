@@ -1,0 +1,149 @@
+[
+    {
+        "title": "Introduction to C Language",
+        "ques": "Explain **what C is** and mentioning **two key features** that make it a popular programming language.",
+        "answer": {
+            "type": "text",
+            "content": "*   **What C is:** C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system.\n*   **Key Features:**\n    1.  **Efficiency:** C programs are highly efficient and fast because the language maps efficiently to typical machine instructions.\n    2.  **Portability:** C programs written on one machine can be run on another machine with little or no modification."
+        },
+        "explanation": "This exercise introduces C as a foundational, efficient, and portable language, which is why it is used for system programming like operating systems and embedded systems."
+    },
+    {
+        "title": "Structure of a C Program",
+        "ques": "Every C program must have a specific function to serve as the starting point of execution. **Identify this function** and write a detailed, minimal C program that prints **\"Hello, World!\"** to the console.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    printf(\"Hello, World!\\n\");\n    return 0;\n}"
+        },
+        "explanation": "The `main()` function is the entry point of every C program. The `#include <stdio.h>` directive is necessary to use the `printf` function for output."
+    },
+    {
+        "title": "Comments in C",
+        "ques": "C supports two types of comments for documenting code. Write a code snippet showing both **single-line** and **multi-line** comments.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "// This is a single-line comment\n\n/* \n   This is a \n   multi-line comment \n*/\n\nint x = 10; // Variable declaration"
+        },
+        "explanation": "Comments are ignored by the compiler. Single-line comments start with `//`, while multi-line comments are enclosed between `/*` and `*/`."
+    },
+    {
+        "title": "Primitive Data Types",
+        "ques": "List the four basic data types in C used to represent integers, floating-point numbers, characters, and double-precision floating-point numbers. Give an example keyword for each.",
+        "answer": {
+            "type": "text",
+            "content": "1.  **Integer:** `int` (e.g., `int age = 25;`)\n2.  **Floating-point:** `float` (e.g., `float pi = 3.14;`)\n3.  **Character:** `char` (e.g., `char grade = 'A';`)\n4.  **Double-precision:** `double` (e.g., `double huge = 123.456789;`)"
+        },
+        "explanation": "C provides these fundamental types to store different kinds of data. `int` is for whole numbers, `float` and `double` for decimals, and `char` for single characters."
+    },
+    {
+        "title": "Variables and Initialization",
+        "ques": "Write a C program that declares an integer variable named `score`, assigns it the value **100**, and then prints it using `printf()`.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    int score = 100;\n    printf(\"The score is: %d\\n\", score);\n    return 0;\n}"
+        },
+        "explanation": "Variables store data. Here, `int score` declares an integer variable, and `= 100` initializes it. The `%d` format specifier is used in `printf` to display integer values."
+    },
+    {
+        "title": "Format Specifiers",
+        "ques": "Match the following data types with their correct `printf` format specifiers:\n\n*   `int`\n*   `float`\n*   `char`\n*   `double`",
+        "answer": {
+            "type": "text",
+            "content": "*   `int`  ->  `%d`\n*   `float` ->  `%f`\n*   `char`  ->  `%c`\n*   `double` -> `%lf`"
+        },
+        "explanation": "Format specifiers tell functions like `printf` and `scanf` how to interpret the data. `%d` is for integers, `%f` for floats, `%c` for characters, and `%lf` is commonly used for doubles (in `printf`, `%f` also works for double, but `%lf` is standard for `scanf`)."
+    },
+    {
+        "title": "User Input with scanf",
+        "ques": "Write a C program that asks the user to enter their **age** (an integer) and then prints it back. Use `scanf` for input.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    int age;\n    printf(\"Enter your age: \");\n    scanf(\"%d\", &age);\n    printf(\"Your age is: %d\\n\", age);\n    return 0;\n}"
+        },
+        "explanation": "`scanf` retrieves input from the user. The `&` (address-of operator) is crucial before the variable name `age` because `scanf` needs the memory address to store the input value."
+    },
+    {
+        "title": "Constants using #define",
+        "ques": "Define a constant named **PI** with the value **3.14159** using the preprocessor directive implemented in a C snippet to calculate the area of a circle with radius 5.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n#define PI 3.14159\n\nint main() {\n    int radius = 5;\n    float area = PI * radius * radius;\n    printf(\"Area: %f\\n\", area);\n    return 0;\n}"
+        },
+        "explanation": "`#define` is a preprocessor directive used to create symbolic constants. `PI` is replaced by `3.14159` throughout the code before compilation."
+    },
+    {
+        "title": "The const Keyword",
+        "ques": "Explain how the `const` keyword differs from `#define` for creating constants, and write a snippet using `const` to declare a read-only integer variable `MAX_VAL` set to 50.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "const int MAX_VAL = 50;\n// MAX_VAL = 60; // This would cause a compilation error"
+        },
+        "explanation": "The `const` keyword defines a variable whose value cannot be changed during execution. Unlike `#define`, `const` variables have a data type and are scoped like regular variables."
+    },
+    {
+        "title": "Simple Arithmetic",
+        "ques": "Write a program that takes two integers as input, `a` and `b`, and prints their **sum**.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    int a, b, sum;\n    printf(\"Enter two numbers: \");\n    scanf(\"%d %d\", &a, &b);\n    sum = a + b;\n    printf(\"Sum: %d\\n\", sum);\n    return 0;\n}"
+        },
+        "explanation": "This exercise combines input, variable usage, and basic arithmetic addition (`+`) to perform a simple calculation."
+    },
+    {
+        "title": "Sizeof Operator",
+        "ques": "Write a snippet using the `sizeof` operator to print the memory size (in bytes) of an `int`, a `float`, and a `double` on your system.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    printf(\"Size of int: %lu bytes\\n\", sizeof(int));\n    printf(\"Size of float: %lu bytes\\n\", sizeof(float));\n    printf(\"Size of double: %lu bytes\\n\", sizeof(double));\n    return 0;\n}"
+        },
+        "explanation": "`sizeof` is a compile-time operator that returns the size of a data type or variable in bytes. `%lu` (unsigned long) is often used for the result of `sizeof` (which returns `size_t`)."
+    },
+    {
+        "title": "Character Input/Output",
+        "ques": "Demonstrate how to read a single character using `getchar()` and print it using `putchar()`.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    char c;\n    printf(\"Enter a character: \");\n    c = getchar();\n    printf(\"You entered: \");\n    putchar(c);\n    return 0;\n}"
+        },
+        "explanation": "`getchar()` reads the next available character from standard input, and `putchar()` writes a single character to standard output. These are simpler alternatives to `scanf` and `printf` for single characters."
+    },
+    {
+        "title": "Variable Scope",
+        "ques": "Briefly explain the difference between **local** and **global** variables with a code example illustrating both.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint globalVar = 100; // Global variable\n\nvoid display() {\n    int localVar = 50; // Local variable\n    printf(\"Global: %d, Local: %d\\n\", globalVar, localVar);\n}\n\nint main() {\n    display();\n    // printf(\"%d\", localVar); // Error: localVar is not accessible here\n    return 0;\n}"
+        },
+        "explanation": "**Global variables** are declared outside all functions and can be accessed anywhere. **Local variables** are declared inside a function and are only accessible within that function."
+    },
+    {
+        "title": "Multiple Inputs",
+        "ques": "Write a program that inputs an **integer**, a **float**, and a **character** in a single line (separated by spaces) and prints them out.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    int i;\n    float f;\n    char c;\n    printf(\"Enter int, float, and char: \");\n    scanf(\"%d %f %c\", &i, &f, &c);\n    printf(\"Integer: %d, Float: %f, Char: %c\\n\", i, f, c);\n    return 0;\n}"
+        },
+        "explanation": "`scanf` can read multiple values by providing a format string with multiple specifiers (e.g., `%d %f %c`). Note that space in the format string handles whitespace skipping, which is important when reading characters after numbers."
+    },
+    {
+        "title": "Escape Sequences",
+        "ques": "What do the escape sequences `\\n`, `\\t`, and `\\\\` represent? Write a printf statement using all three.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    printf(\"Line 1\\nLine 2\\tTabbed\\t\\\\Backslash\\\\\\n\");\n    return 0;\n}"
+        },
+        "explanation": "`\\n` is a newline character (moves cursor to next line), `\\t` is a horizontal tab, and `\\\\` is used to print a literal backslash character."
+    }
+]

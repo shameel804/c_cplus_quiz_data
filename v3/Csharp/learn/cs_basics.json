@@ -1,0 +1,85 @@
+{
+    "id": "learn_cs_basics",
+    "topicId": "cs_basics",
+    "topicTitle": "Basics of C#",
+    "description": "Start your journey with C#, a powerful, modern language used for everything from web apps to game development.",
+    "baseKP": 50,
+    "slides": [
+        {
+            "id": "cs_1",
+            "type": "content",
+            "title": "Welcome to C# 🎼",
+            "content": "# The Sharpest tool 🔪\n\nC# (pronounced **C-Sharp**) is a modern, object-oriented language developed by **Microsoft**.\n\n## Why C#?\n- **Versatile:** Build Desktop, Web (ASP.NET), Mobile (Maui), and Games (Unity).\n- **Safe:** Type-safe and memory-safe (Garbage Collection).\n- **Evolving:** Constant updates (.NET 8+)."
+        },
+        {
+            "id": "cs_2",
+            "type": "content",
+            "title": "Hello World",
+            "content": "# Structure of C# 🏗️\n\n```csharp\nusing System; // Import standard library\n\nnamespace HelloWorld {\n    class Program {\n        static void Main(string[] args) {\n            Console.WriteLine(\"Hello World!\");\n        }\n    }\n}\n```\n- `using System`: Gives access to `Console`.\n- `Main`: The entry point.\n- `Console.WriteLine`: Prints newline."
+        },
+        {
+            "id": "cs_3",
+            "type": "content",
+            "title": "Input and Output",
+            "content": "# Talking to Console 🗣️\n\n## Output\n```csharp\nConsole.Write(\"No new line \");\nConsole.WriteLine(\"With new line\");\n```\n\n## Input\nReads a **string** from the user.\n```csharp\nstring name = Console.ReadLine();\n```"
+        },
+        {
+            "id": "cs_quiz_1",
+            "type": "quiz",
+            "title": "Method Check",
+            "content": "Which method prints text to the console and moves the cursor to the next line?",
+            "quizQuestion": "Method:",
+            "quizOptions": [
+                "Console.Write()",
+                "Console.Print()",
+                "Console.WriteLine()",
+                "Console.Log()"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "cs_4",
+            "type": "content",
+            "title": "Variables and Types",
+            "content": "# Storing Data 📦\n\nC# is strongly typed.\n\n```csharp\nint age = 25;\ndouble price = 19.99;\nchar grade = 'A';\nstring message = \"Hello\";\nbool isFun = true;\n```\n\n## The `var` Keyword\nLet compiler guess the type (Type Inference).\n```csharp\nvar x = 10; // x is int\n```"
+        },
+        {
+            "id": "cs_5",
+            "type": "content",
+            "title": "String Interpolation",
+            "content": "# Fancy Strings ✨\n\nThe easiest way to format strings is using the `$` symbol.\n\n```csharp\nstring name = \"Alice\";\nint age = 30;\n\n// Old way\nConsole.WriteLine(\"Name: \" + name + \", Age: \" + age);\n\n// New way (Interpolation)\nConsole.WriteLine($\"Name: {name}, Age: {age}\");\n```"
+        },
+        {
+            "id": "cs_6",
+            "type": "content",
+            "title": "Type Conversion",
+            "content": "# Changing Shapes 🔄\n\nInput is always string, so we need to convert it.\n\n```csharp\nConsole.Write(\"Enter age: \");\nstring input = Console.ReadLine();\n\n// Method 1: Convert Class\nint age = Convert.ToInt32(input);\n\n// Method 2: Parse\nint age2 = int.Parse(input);\n```"
+        },
+        {
+            "id": "cs_7",
+            "type": "content",
+            "title": "Full Example: Greeter",
+            "content": "# Interactive Program\n\n<!-- FULL_CODE_START\nusing System;\n\nnamespace GreeterApp {\n    class Program {\n        static void Main(string[] args) {\n            Console.Write(\"What is your name? \");\n            string name = Console.ReadLine();\n            \n            Console.Write(\"What year were you born? \");\n            string yearStr = Console.ReadLine();\n            \n            // Calculate Age\n            int year = int.Parse(yearStr);\n            int currentYear = DateTime.Now.Year;\n            int age = currentYear - year;\n            \n            Console.WriteLine($\"\\nHello, {name}!\");\n            Console.WriteLine($\"You are approx {age} years old.\");\n            \n            if (age < 18) {\n                Console.WriteLine(\"You are a minor.\");\n            } else {\n                Console.WriteLine(\"You are an adult.\");\n            }\n            \n            Console.ReadKey(); // Wait for key press\n        }\n    }\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "cs_quiz_2",
+            "type": "quiz",
+            "title": "Keyword Check",
+            "content": "Which keyword lets the compiler infer the variable type?",
+            "quizQuestion": "Inference:",
+            "quizOptions": [
+                "auto",
+                "var",
+                "dynamic",
+                "let"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "cs_8",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: C# Basics 🎓\n\nYou've taken the first step into the .NET world!\n\n## Key Takeaways\n- **Structure:** `using`, `namespace`, `class`, `Main`.\n- **Console:** `WriteLine`, `ReadLine`.\n- **Types:** `int`, `string`, `bool`, etc.\n- **Inference:** `var` keyword.\n- **Conversion:** `Convert.ToInt32()` or `int.Parse()`.\n\nNext, we dive straight into **Object-Oriented Programming (OOP)** in C#!"
+        }
+    ]
+}

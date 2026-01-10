@@ -1,0 +1,101 @@
+[
+    {
+        "title": "Arrays",
+        "ques": "Declare an **int array** of size 5, assign values, and print the length.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "int[] nums = new int[5];\nnums[0] = 10;\n// ...\nConsole.WriteLine(nums.Length);"
+        },
+        "explanation": "Arrays are fixed-size collections. `int[]` declares an array of integers."
+    },
+    {
+        "title": "ArrayList (Non-Generic)",
+        "ques": "What is `ArrayList`? Add an integer and a string to an `ArrayList` and explain why it's possible.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "using System.Collections;\n// ...\nArrayList list = new ArrayList();\nlist.Add(1);\nlist.Add(\"Two\");"
+        },
+        "explanation": "`ArrayList` (System.Collections) stores objects (`object` type), so it calls process mixed types but requires casting (boxing/unboxing), which is less performant."
+    },
+    {
+        "title": "List<T> (Generic)",
+        "ques": "Create a **Generic List** of strings `List<string>`. Add \"Red\", \"Blue\" and iterate over it.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "using System.Collections.Generic;\n// ...\nList<string> colors = new List<string>();\ncolors.Add(\"Red\");\ncolors.Add(\"Blue\");\nforeach(string c in colors) Console.WriteLine(c);"
+        },
+        "explanation": "`List<T>` (System.Collections.Generic) is strongly typed, safer, and faster than `ArrayList`. No boxing is needed."
+    },
+    {
+        "title": "Dictionary<TKey, TValue>",
+        "ques": "Use a **Dictionary** to map ID (int) to Name (string). Add a pair and retrieve the value for ID 1.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "Dictionary<int, string> users = new Dictionary<int, string>();\nusers.Add(1, \"Alice\");\nusers[2] = \"Bob\";\nConsole.WriteLine(users[1]);"
+        },
+        "explanation": "Dictionary stores key-value pairs for fast lookups. Keys must be unique."
+    },
+    {
+        "title": "HashSet<T>",
+        "ques": "How does **`HashSet<T>`** differ from `List<T>`? Add duplicate values to a HashSet and check the count.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "HashSet<int> set = new HashSet<int>();\nset.Add(1);\nset.Add(1); // Duplicate ignored\nConsole.WriteLine(set.Count); // Outputs 1"
+        },
+        "explanation": "`HashSet` contains only unique elements and provides high-performance set operations (mathematical sets). It does not maintain order."
+    },
+    {
+        "title": "Generic Class",
+        "ques": "Create a **Generic Class** `Box<T>` that holds a variable `content` of type `T`. Create `Box<int>` and `Box<string>`.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "class Box<T> {\n    public T content;\n    public Box(T c) { content = c; }\n}\n\n// Box<int> b1 = new Box<int>(10);\n// Box<string> b2 = new Box<string>(\"Hi\");"
+        },
+        "explanation": "Generics `<T>` allow defining classes/methods with a placeholder for the type, to be specified at instantiation."
+    },
+    {
+        "title": "Generic Constraints",
+        "ques": "Limit a generic class `Repository<T>` so that T must be a **class** (reference type). Syntax?",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "class Repository<T> where T : class {\n    // ...\n}"
+        },
+        "explanation": "`where T : constraint` restricts the types that can be used as arguments. `class`, `struct`, `new()`, or BaseClass are common constraints."
+    },
+    {
+        "title": "Queue<T> (FIFO)",
+        "ques": "Demonstrate a **Queue**. Enqueue \"First\", \"Second\" and Dequeue them.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "Queue<string> q = new Queue<string>();\nq.Enqueue(\"First\");\nq.Enqueue(\"Second\");\nConsole.WriteLine(q.Dequeue()); // Prints \"First\""
+        },
+        "explanation": "Queue is First-In-First-Out (FIFO). `Enqueue` adds to back, `Dequeue` removes from front."
+    },
+    {
+        "title": "Stack<T> (LIFO)",
+        "ques": "Demonstrate a **Stack**. Push 10, 20 and Pop the top element.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "Stack<int> s = new Stack<int>();\ns.Push(10);\ns.Push(20);\nConsole.WriteLine(s.Pop()); // Prints 20"
+        },
+        "explanation": "Stack is Last-In-First-Out (LIFO). `Push` adds to top, `Pop` removes from top."
+    },
+    {
+        "title": "IEnumerable interface",
+        "ques": "What interface must a collection implement to be usable in a **foreach** loop?",
+        "answer": {
+            "type": "text",
+            "content": "`IEnumerable` (or `IEnumerable<T>`). It provides the `GetEnumerator()` method."
+        },
+        "explanation": "Implementing `IEnumerable` allows a custom class to be iterated over using standard loop structures."
+    }
+]

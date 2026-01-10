@@ -1,0 +1,101 @@
+[
+    {
+        "title": "Encapsulation Basics",
+        "ques": "Define **Encapsulation**. Create a class `Account` where `balance` is hidden (private) and can only be accessed via public methods.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nclass Account {\nprivate:\n    double balance;\npublic:\n    void deposit(double amount) {\n        if (amount > 0) balance += amount;\n    }\n    double getBalance() {\n        return balance;\n    }\n};"
+        },
+        "explanation": "Encapsulation restricts direct access to some of an object's components, bundling data with the methods that operate on that data."
+    },
+    {
+        "title": "Data Hiding",
+        "ques": "Why is **Data Hiding** important? Modify the `Account` class to ensure `balance` cannot be set to a negative value.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "void setBalance(double b) {\n    if (b >= 0) {\n        balance = b;\n    } else {\n        cout << \"Invalid balance!\" << endl;\n    }\n}"
+        },
+        "explanation": "Data hiding protects object integrity by preventing invalid states (like negative balance) and reducing system complexity."
+    },
+    {
+        "title": "Abstraction",
+        "ques": "Explain **Abstraction** using a real-world analogy (e.g., a car). How does it differ from Encapsulation?",
+        "answer": {
+            "type": "text",
+            "content": "Abstraction hides complexity (showing only *what* an object does), while Encapsulation hides internal data (showing *how* it's stored). **Car Analogy:** Abstraction is the steering wheel/pedals (interface); Encapsulation is the engine under the hood (implementation)."
+        },
+        "explanation": "Abstraction provides a simplified interface to the user, hiding the complex implementation details."
+    },
+    {
+        "title": "Abstract Class Implementation",
+        "ques": "Implement an abstract class `Bank` with a pure virtual function `getInterestRate()`. Create `SBI` and `ICICI` subclasses implementing it.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nclass Bank {\npublic:\n    virtual float getInterestRate() = 0;\n};\n\nclass SBI : public Bank {\npublic:\n    float getInterestRate() { return 7.0; }\n};\n\nclass ICICI : public Bank {\npublic:\n    float getInterestRate() { return 8.5; }\n};\n\nint main() {\n    SBI s;\n    cout << \"SBI: \" << s.getInterestRate() << \"%\";\n    return 0;\n}"
+        },
+        "explanation": "Abstract classes enforce a contract. Any concrete subclass *must* provide an implementation for the pure virtual functions."
+    },
+    {
+        "title": "Interfaces in C++",
+        "ques": "C++ does not have an `interface` keyword. How do you simulate an **interface**? Create an interface `Playable` with `play()`.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "class Playable {\npublic:\n    virtual void play() = 0; // Pure virtual function\n    virtual ~Playable() {} // Virtual destructor\n};"
+        },
+        "explanation": "An interface in C++ is typically implemented as an abstract class containing *only* pure virtual functions and no data members."
+    },
+    {
+        "title": "Access Modifiers Revisited",
+        "ques": "Which access modifier allows members to be used in **derived classes** but not in `main()`? Create a class using it.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "class Base {\nprotected:\n    int x;\n};"
+        },
+        "explanation": "`protected` provides a middle ground between `public` and `private`, often used in inheritance scenarios to allow subclasses access to internals."
+    },
+    {
+        "title": "Friend Function",
+        "ques": "What is a **friend function**? Create a friend function `showBalance` that can access private members of `Account`.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nclass Account {\nprivate:\n    int balance = 1000;\n    friend void showBalance(Account a);\n};\n\nvoid showBalance(Account a) {\n    cout << \"Balance: \" << a.balance << endl; // Allowed\n}\n\nint main() {\n    Account acc;\n    showBalance(acc);\n    return 0;\n}"
+        },
+        "explanation": "A `friend` function is not a member of the class but is granted permission to access private and protected members."
+    },
+    {
+        "title": "Friend Class",
+        "ques": "Can an entire class be a **friend**? Make `Admin` a friend of `Account` so `Admin` can reset the balance.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "class Account {\n    int balance;\n    friend class Admin;\n};\n\nclass Admin {\npublic:\n    void reset(Account &a) { a.balance = 0; }\n};"
+        },
+        "explanation": "Friend classes are useful when two classes are tightly coupled, such as a container and an iterator, or a manager and a managed resource."
+    },
+    {
+        "title": "Mutable Keyword",
+        "ques": "What does the **`mutable`** keyword do? Use it to allow modifying a member variable inside a `const` function.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "class Test {\n    mutable int count;\npublic:\n    void view() const {\n        count++; // Allowed because of mutable\n    }\n};"
+        },
+        "explanation": "`mutable` allows a data member of a const object (or inside a const method) to be modified. It's often used for caching or counters."
+    },
+    {
+        "title": "Const Member Functions",
+        "ques": "Write a `const` member function `getName()` and explain why it guarantees not to modify the object state.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "class Person {\n    string name;\npublic:\n    string getName() const {\n        // name = \"Bob\"; // Error: Cannot modify member\n        return name;\n    }\n};"
+        },
+        "explanation": "A trailing `const` declares that the function is read-only. The compiler ensures it doesn't modify any non-mutable member variables."
+    }
+]

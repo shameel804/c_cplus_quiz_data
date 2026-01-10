@@ -1,0 +1,85 @@
+{
+    "id": "learn_collections",
+    "topicId": "collections",
+    "topicTitle": "Collections and Generics",
+    "description": "Move beyond arrays with flexible data structures like Lists, Dictionaries, and Sets.",
+    "baseKP": 80,
+    "slides": [
+        {
+            "id": "col_1",
+            "type": "content",
+            "title": "Arrays vs Lists 🥊",
+            "content": "# Arrays are rigid\n\n- Arrays have fixed size. `int[] arr = new int[5];`. You can't add a 6th element easily.\n\n# Lists are flexible\n- `List<T>` grows dynamically.\n- You can add, remove, and insert items on the fly."
+        },
+        {
+            "id": "col_2",
+            "type": "content",
+            "title": "Using List<T>",
+            "content": "# Dynamic Lists 📜\n\nIncluded in `System.Collections.Generic`.\n\n```csharp\nList<string> names = new List<string>();\n\nnames.Add(\"Alice\");\nnames.Add(\"Bob\");\n\nnames.Remove(\"Alice\");\n\nConsole.WriteLine(names[0]); // Access like array\nConsole.WriteLine(names.Count); // Get size\n```"
+        },
+        {
+            "id": "col_3",
+            "type": "content",
+            "title": "Dictionary<K, V>",
+            "content": "# Key-Value Pairs 🔑\n\nStores data associated with unique keys. Fast lookups.\n\n```csharp\nDictionary<string, int> ages = new Dictionary<string, int>();\n\nages.Add(\"Alice\", 25);\nages[\"Bob\"] = 30; // Alternative syntax\n\nConsole.WriteLine(ages[\"Alice\"]); // 25\n\nif (ages.ContainsKey(\"Charlie\")) {\n    // Safe check\n}\n```"
+        },
+        {
+            "id": "col_quiz_1",
+            "type": "quiz",
+            "title": "Collection Check",
+            "content": "Which collection is best for looking up a value using a unique ID?",
+            "quizQuestion": "Best Collection:",
+            "quizOptions": [
+                "List",
+                "Array",
+                "Dictionary",
+                "Queue"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "col_4",
+            "type": "content",
+            "title": "HashSet<T>",
+            "content": "# Unique Items Only 🦄\n\nA **HashSet** does not allow duplicates. It is unordered.\n\n```csharp\nHashSet<int> nums = new HashSet<int>();\nnums.Add(1);\nnums.Add(2);\nnums.Add(1); // Ignored!\n\nConsole.WriteLine(nums.Count); // 2\n```"
+        },
+        {
+            "id": "col_5",
+            "type": "content",
+            "title": "Stack and Queue",
+            "content": "# Ordered Processing 📚\n\n## Stack (LIFO)\n**Last-In, First-Out.** Like a stack of plates.\n- `Push()`, `Pop()`, `Peek()`. \n\n## Queue (FIFO)\n**First-In, First-Out.** Like a line at a store.\n- `Enqueue()`, `Dequeue()`, `Peek()`."
+        },
+        {
+            "id": "col_6",
+            "type": "content",
+            "title": "Iterating Collections",
+            "content": "# The `foreach` Loop ➰\n\nThe best way to traverse collections.\n\n```csharp\nList<string> colors = new List<string> { \"Red\", \"Green\", \"Blue\" };\n\nforeach (var color in colors) {\n    Console.WriteLine(color);\n}\n\nDictionary<string, int> ages = ...;\nforeach (var pair in ages) {\n    Console.WriteLine($\"{pair.Key} is {pair.Value}\");\n}\n```"
+        },
+        {
+            "id": "col_7",
+            "type": "content",
+            "title": "Full Example: Gradebook",
+            "content": "# Dictionary in Action\n\n<!-- FULL_CODE_START\nusing System;\nusing System.Collections.Generic;\n\nclass Program {\n    static void Main() {\n        // Map Student Name -> Score\n        Dictionary<string, int> grades = new Dictionary<string, int>();\n        \n        grades.Add(\"Alice\", 95);\n        grades.Add(\"Bob\", 82);\n        grades[\"Charlie\"] = 78;\n        \n        Console.WriteLine(\"--- Grades ---\");\n        \n        // Update a score\n        grades[\"Bob\"] = 85;\n        \n        foreach(var student in grades) {\n            Console.WriteLine($\"{student.Key}: {student.Value}\");\n        }\n        \n        // Calculate Average\n        int total = 0;\n        foreach(int score in grades.Values) {\n            total += score;\n        }\n        \n        double avg = (double)total / grades.Count;\n        Console.WriteLine($\"\\nAverage Class Score: {avg:F2}\");\n    }\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "col_quiz_2",
+            "type": "quiz",
+            "title": "Queue Check",
+            "content": "Which method removes the item at the BEGINNING of a Queue?",
+            "quizQuestion": "Remove Method:",
+            "quizOptions": [
+                "Pop()",
+                "Remove()",
+                "Dequeue()",
+                "Delete()"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "col_8",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: Collections 🎓\n\nOrganize your data like a pro.\n\n## Key Takeaways\n- **List:** Dynamic array. Most common.\n- **Dictionary:** Key-Value lookup.\n- **HashSet:** Unique items.\n- **Stack/Queue:** LIFO / FIFO.\n- **Generics `<T>`:** Ensures type safety.\n\nNext, we'll learn to handle runtime errors gracefully with **Exception Handling**!"
+        }
+    ]
+}

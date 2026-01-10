@@ -1,0 +1,79 @@
+{
+    "id": "learn_file_cpp",
+    "topicId": "file_cpp",
+    "topicTitle": "File Handling in C++",
+    "description": "Master file operations in C++ using the fstream library for persistent data storage.",
+    "baseKP": 85,
+    "slides": [
+        {
+            "id": "fcpp_1",
+            "type": "content",
+            "title": "Stream to File 📂",
+            "content": "# The `<fstream>` Library\n\nC++ simplifies file handling using Streams, just like `cin` and `cout`.\n\n## Three Main Classes\n1.  **`ofstream`:** Output File Stream (Write data).\n2.  **`ifstream`:** Input File Stream (Read data).\n3.  **`fstream`:** File Stream (Read and Write)."
+        },
+        {
+            "id": "fcpp_2",
+            "type": "content",
+            "title": "Writing to a File",
+            "content": "# Using ofstream ✍️\n\nIt works exactly like `cout`!\n\n```cpp\n#include <fstream>\n#include <iostream>\nusing namespace std;\n\nint main() {\n    ofstream MyFile(\"test.txt\");\n\n    if (MyFile.is_open()) {\n        MyFile << \"Hello C++ Files!\";\n        MyFile << \"\\nThis is easy.\";\n        MyFile.close();\n    }\n}\n```\n`close()` is essential to flush the buffer and free resources."
+        },
+        {
+            "id": "fcpp_3",
+            "type": "content",
+            "title": "Reading from a File",
+            "content": "# Using ifstream 📖\n\nIt works like `cin`, but we usually use `getline` to read full lines.\n\n```cpp\nstring line;\nifstream MyFile(\"test.txt\");\n\nif (MyFile.is_open()) {\n    while (getline(MyFile, line)) {\n        cout << line << endl;\n    }\n    MyFile.close();\n}\n```"
+        },
+        {
+            "id": "fcpp_quiz_1",
+            "type": "quiz",
+            "title": "Class Check",
+            "content": "Which class is specifically for READING files?",
+            "quizQuestion": "Reading Class:",
+            "quizOptions": [
+                "ofstream",
+                "ifstream",
+                "ostream",
+                "filebuf"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "fcpp_4",
+            "type": "content",
+            "title": "Why is_open()?",
+            "content": "# Safety First ⛑️\n\nAlways check if the file opened successfully. It might fail if:\n- File doesn't exist (for reading).\n- No permission.\n- Disk full.\n\n```cpp\nif (!file.is_open()) {\n    cout << \"Error opening file!\";\n    exit(1);\n}\n```"
+        },
+        {
+            "id": "fcpp_5",
+            "type": "content",
+            "title": "File Modes",
+            "content": "# Opening Modes 🎛️\n\nYou can specify how to open a file via the second argument.\n\n| Mode | Description |\n|---|---|\n| `ios::in` | Open for reading (Default for ifstream) |\n| `ios::out` | Open for writing (Default for ofstream) |\n| `ios::app` | Append to end of file |\n| `ios::binary` | Open in binary mode |\n\n```cpp\n// Append mode\nofstream file(\"log.txt\", ios::app);\nfile << \"New Entry\\n\";\n```"
+        },
+        {
+            "id": "fcpp_6",
+            "type": "content",
+            "title": "Full Example: Note Saver",
+            "content": "# Persistent Notes\n\n<!-- FULL_CODE_START\n#include <iostream>\n#include <fstream>\n#include <string>\nusing namespace std;\n\nint main() {\n    string filename = \"notes.txt\";\n    \n    // 1. Write (Append)\n    ofstream outfile;\n    outfile.open(filename, ios::app);\n    \n    if(outfile.is_open()) {\n        outfile << \"--- New Session ---\" << endl;\n        outfile << \"User saved this note.\" << endl;\n        cout << \"Note saved!\" << endl;\n        outfile.close();\n    } else {\n        cout << \"Unable to open file for writing!\" << endl;\n        return 1;\n    }\n    \n    // 2. Read Back\n    cout << \"\\nReading \" << filename << \":\\n\";\n    \n    ifstream infile(filename);\n    string line;\n    if(infile.is_open()) {\n        while (getline(infile, line)) {\n             cout << line << endl;\n        }\n        infile.close();\n    }\n    \n    return 0;\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "fcpp_quiz_2",
+            "type": "quiz",
+            "title": "Mode Check",
+            "content": "Which mode prevents overwriting existing file content?",
+            "quizQuestion": "Append Mode:",
+            "quizOptions": [
+                "ios::out",
+                "ios::trunc",
+                "ios::app",
+                "ios::ate"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "fcpp_7",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: File Handling in C++ 🎓\n\nPersistence made object-oriented.\n\n## Key Takeaways\n- **`<fstream>`:** The header you need.\n- **`ofstream`:** Uses `<<` to write.\n- **`ifstream`:** Uses `>>` or `getline` to read.\n- **`is_open()`:** Always check this.\n- **Modes:** `ios::app` helps in logging without deleting old data.\n\nFiles are great, but for complex data, professional apps often use Databases!"
+        }
+    ]
+}

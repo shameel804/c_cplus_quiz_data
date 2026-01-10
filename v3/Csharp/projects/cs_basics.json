@@ -1,0 +1,101 @@
+[
+    {
+        "title": "Introduction to C#",
+        "ques": "Explain **what C# is** and its relationship with the **.NET Framework**.",
+        "answer": {
+            "type": "text",
+            "content": "*   **What C# is:** C# (pronounced \"C-Sharp\") is a modern, object-oriented, and type-safe programming language developed by Microsoft.\n*   **Relationship with .NET:** C# runs on the .NET Framework (or .NET Core/.NET 5+), which provides a runtime environment (CLR) and a vast class library for building various applications."
+        },
+        "explanation": "C# is the primary language for .NET development. Code is compiled into Intermediate Language (IL) and executed by the Common Language Runtime (CLR)."
+    },
+    {
+        "title": "Hello World",
+        "ques": "Write a minimal C# program that prints **\"Hello, World!\"** to the console using the `System` namespace.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "using System;\n\nclass Program {\n    static void Main() {\n        Console.WriteLine(\"Hello, World!\");\n    }\n}"
+        },
+        "explanation": "`Main` is the entry point. `Console.WriteLine` prints text followed by a new line. `using System;` allows using `Console` without the `System.` prefix."
+    },
+    {
+        "title": "Variables and Data Types",
+        "ques": "Declare variables for a **name** (string), **age** (int), and **salary** (double). Assign values and print them.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "using System;\n\nclass Program {\n    static void Main() {\n        string name = \"Alice\";\n        int age = 30;\n        double salary = 50000.50;\n        Console.WriteLine($\"Name: {name}, Age: {age}, Salary: {salary}\");\n    }\n}"
+        },
+        "explanation": "C# is statically typed. `string`, `int`, and `double` are aliases for .NET types `String`, `Int32`, and `Double`.String interpolation `$\"...\"` simplifies formatting."
+    },
+    {
+        "title": "Reading Input",
+        "ques": "Write a program that asks for the user's **favorite color** and prints a message using that color name.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "using System;\n\nclass Program {\n    static void Main() {\n        Console.Write(\"Enter your favorite color: \");\n        string color = Console.ReadLine();\n        Console.WriteLine(\"Your favorite color is \" + color);\n    }\n}"
+        },
+        "explanation": "`Console.ReadLine()` reads a line of text from the standard input stream (keyboard) as a string."
+    },
+    {
+        "title": "Type Casting",
+        "ques": "Demonstrate **Implicit** (int to double) and **Explicit** (double to int) casting in C#.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "using System;\n\nclass Program {\n    static void Main() {\n        int myInt = 10;\n        double myDouble = myInt;       // Implicit casting\n        double pi = 3.14;\n        int intPi = (int)pi;           // Explicit casting\n        Console.WriteLine($\"{myDouble}, {intPi}\");\n    }\n}"
+        },
+        "explanation": "Implicit casting is automatic for safe conversions (smaller to larger type). Explicit casting requires syntax `(type)value` and may lose data (e.g., truncating decimals)."
+    },
+    {
+        "title": "If-Else Statement",
+        "ques": "Write a C# program to check if a number entered by the user is **Positive**, **Negative**, or **Zero**.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "using System;\n\nclass Program {\n    static void Main() {\n        int num = int.Parse(Console.ReadLine());\n        if (num > 0) Console.WriteLine(\"Positive\");\n        else if (num < 0) Console.WriteLine(\"Negative\");\n        else Console.WriteLine(\"Zero\");\n    }\n}"
+        },
+        "explanation": "`int.Parse()` converts the string input to an integer. The `if-else if-else` structure handles multiple conditions."
+    },
+    {
+        "title": "Switch Statement",
+        "ques": "Use a `switch` statement to print the name of the day based on an integer input (1 for Monday, etc.).",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "int day = 3;\nswitch (day) {\n    case 1: Console.WriteLine(\"Monday\"); break;\n    case 2: Console.WriteLine(\"Tuesday\"); break;\n    case 3: Console.WriteLine(\"Wednesday\"); break;\n    default: Console.WriteLine(\"Other\"); break;\n}"
+        },
+        "explanation": "The `switch` statement selects a code block to execute based on a match with the `case` value. `break` exits the switch block."
+    },
+    {
+        "title": "Foreach Loop",
+        "ques": "Create an array of strings containing **fruit names**. Use a `foreach` loop to print each fruit.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "using System;\n\nclass Program {\n    static void Main() {\n        string[] fruits = {\"Apple\", \"Banana\", \"Cherry\"};\n        foreach (string fruit in fruits) {\n            Console.WriteLine(fruit);\n        }\n    }\n}"
+        },
+        "explanation": "`foreach` is designed to iterate over collections (arrays, lists). It is cleaner and safer than a `for` loop when index access isn't needed."
+    },
+    {
+        "title": "Methods",
+        "ques": "Define a static method `Greetings` that takes a **name** as a parameter and prints \"Welcome, [name]!\". Call it from Main.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "using System;\n\nclass Program {\n    static void Greetings(string name) {\n        Console.WriteLine($\"Welcome, {name}!\");\n    }\n\n    static void Main() {\n        Greetings(\"John\");\n    }\n}"
+        },
+        "explanation": "Methods are blocks of code that perform a specific task. `static` means it belongs to the class and can be called without creating an instance of `Program`."
+    },
+    {
+        "title": "Method Overloading",
+        "ques": "Overload a method `Add`. One version adds two **integers**, and another adds two **doubles**.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "static int Add(int x, int y) {\n    return x + y;\n}\n\nstatic double Add(double x, double y) {\n    return x + y;\n}"
+        },
+        "explanation": "Method overloading allows multiple methods with the same name but different parameter lists (types or count)."
+    }
+]

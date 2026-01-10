@@ -1,0 +1,100 @@
+[
+    {
+        "title": "XAML Basics",
+        "ques": "What is **XAML**? Write a simple XAML snippet to create a `Button` with content \"Click Me\".",
+        "answer": {
+            "type": "code",
+            "lang": "xml",
+            "content": "<Button Content=\"Click Me\" Width=\"100\" Height=\"50\" />"
+        },
+        "explanation": "XAML (Extensible Application Markup Language) is a declarative XML-based language used in WPF to define UI elements."
+    },
+    {
+        "title": "Grid Layout",
+        "ques": "How do you define a **Grid** with 2 Rows? Write XAML.",
+        "answer": {
+            "type": "code",
+            "lang": "xml",
+            "content": "<Grid>\n    <Grid.RowDefinitions>\n        <RowDefinition Height=\"*\" />\n        <RowDefinition Height=\"Auto\" />\n    </Grid.RowDefinitions>\n    <!-- Content -->\n</Grid>"
+        },
+        "explanation": "The `Grid` panel supports arranging child controls in rows and columns. `*` takes available space, `Auto` sizes to content."
+    },
+    {
+        "title": "StackPanel",
+        "ques": "Which panel arranges child elements into a single **line** (vertical or horizontal)? Code a vertical stack.",
+        "answer": {
+            "type": "code",
+            "lang": "xml",
+            "content": "<StackPanel Orientation=\"Vertical\">\n    <TextBlock Text=\"Label 1\" />\n    <TextBlock Text=\"Label 2\" />\n</StackPanel>"
+        },
+        "explanation": "`StackPanel` stacks child elements sequentially. `Orientation` defaults to Vertical."
+    },
+    {
+        "title": "Event Handling",
+        "ques": "How do you attach a **Click** event handler to a button in XAML and implementing it in C#?",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "<!-- XAML -->\n<Button Click=\"Button_Click\" ... />\n\n// C# Code-Behind\nprivate void Button_Click(object sender, RoutedEventArgs e) {\n    MessageBox.Show(\"Clicked!\");\n}"
+        },
+        "explanation": "Events defined in XAML are wired up to methods in the code-behind file (`.xaml.cs`)."
+    },
+    {
+        "title": "Data Binding Basics",
+        "ques": "Explain the syntax `{Binding ...}`. Bind a TextBox's `Text` property to a property named `UserName`.",
+        "answer": {
+            "type": "code",
+            "lang": "xml",
+            "content": "<TextBox Text=\"{Binding UserName}\" />"
+        },
+        "explanation": "Data Binding connects UI properties to data object properties. Changes can flow OneWay or TwoWay."
+    },
+    {
+        "title": "INotifyPropertyChanged",
+        "ques": "To update the UI when the underlying data changes, which Interface must the data class implement?",
+        "answer": {
+            "type": "text",
+            "content": "**`INotifyPropertyChanged`**"
+        },
+        "explanation": "This interface has an event `PropertyChanged` which notifies the binding system that a property value has changed."
+    },
+    {
+        "title": "DataContext",
+        "ques": "What is the **`DataContext`** property used for? Set it to a new `ViewModel` instance in code-behind.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "public MainWindow() {\n    InitializeComponent();\n    this.DataContext = new MainViewModel();\n}"
+        },
+        "explanation": "`DataContext` is the source of data for bindings. Child elements inherit the DataContext of their parent."
+    },
+    {
+        "title": "Resources",
+        "ques": "Define a **StaticResource** for a SolidColorBrush with key \"MyBrush\" in `Window.Resources`.",
+        "answer": {
+            "type": "code",
+            "lang": "xml",
+            "content": "<Window.Resources>\n    <SolidColorBrush x:Key=\"MyBrush\" Color=\"Red\" />\n</Window.Resources>\n\n<Button Background=\"{StaticResource MyBrush}\" />"
+        },
+        "explanation": "Resources allow reusing styles, brushes, and templates throughout the application."
+    },
+    {
+        "title": "Styles",
+        "ques": "Create a **Style** for all Buttons that sets the `FontSize` to 20.",
+        "answer": {
+            "type": "code",
+            "lang": "xml",
+            "content": "<Style TargetType=\"Button\">\n    <Setter Property=\"FontSize\" Value=\"20\" />\n</Style>"
+        },
+        "explanation": "Styles group property settings to apply a consistent look and feel across controls."
+    },
+    {
+        "title": "MVVM Pattern",
+        "ques": "What does **MVVM** stand for and what are its three components?",
+        "answer": {
+            "type": "text",
+            "content": "1.  **Model:** Data and business logic.\n2.  **View:** The UI (XAML).\n3.  **ViewModel:** The glue between View and Model (handles state and commands)."
+        },
+        "explanation": "MVVM (Model-View-ViewModel) is the standard architectural pattern for WPF apps, promoting separation of concerns and testability."
+    }
+]

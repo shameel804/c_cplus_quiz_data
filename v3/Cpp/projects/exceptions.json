@@ -1,0 +1,100 @@
+[
+    {
+        "title": "Basic Try-Catch",
+        "ques": "Write a program that attempts to divide two numbers. Use a **try-catch** block to handle division by zero and print an error message.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int a = 10, b = 0;\n    try {\n        if (b == 0) {\n            throw \"Division by zero error!\";\n        }\n        cout << a / b << endl;\n    } catch (const char* msg) {\n        cout << msg << endl;\n    }\n    return 0;\n}"
+        },
+        "explanation": "The `try` block contains code that might throw an exception. The `catch` block handles the exception if one occurs."
+    },
+    {
+        "title": "Catching Multiple Exceptions",
+        "ques": "Demonstrate how to catch **multiple types of exceptions** (int vs double) from a single try block.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nint main() {\n    try {\n        throw 404; // Throws int\n        // throw 3.14; // Uncomment to throw double\n    } catch (int e) {\n        cout << \"Caught Integer: \" << e << endl;\n    } catch (double e) {\n        cout << \"Caught Double: \" << e << endl;\n    }\n    return 0;\n}"
+        },
+        "explanation": "You can have multiple `catch` blocks for a single `try` block to handle different data types thrown as exceptions."
+    },
+    {
+        "title": "Catch All",
+        "ques": "How do you define a generic catch block that **catches all** exceptions? Write the syntax.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "try {\n    // code\n} catch (...) {\n    cout << \"Caught generic exception\" << endl;\n}"
+        },
+        "explanation": "`catch (...)` (ellipsis) matches any exception type. It is usually placed last to handle unexpected errors."
+    },
+    {
+        "title": "Throwing Objects",
+        "ques": "Create a dummy class `MyException` and throw an object of this class. Catch it by reference.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nclass MyException {\npublic:\n    string msg;\n    MyException(string m) : msg(m) {}\n};\n\nint main() {\n    try {\n        throw MyException(\"Custom Error\");\n    } catch (MyException &e) {\n        cout << e.msg << endl;\n    }\n    return 0;\n}"
+        },
+        "explanation": "It is best practice to catch complex types (objects) by reference (`&`) to avoid object slicing and unnecessary copying."
+    },
+    {
+        "title": "Standard Exceptions",
+        "ques": "Use `std::exception` (or a derived class like `std::runtime_error`) to throw and catch a standard error.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\n#include <stdexcept>\nusing namespace std;\n\nint main() {\n    try {\n        throw runtime_error(\"Something went wrong\");\n    } catch (exception &e) {\n        cout << \"Std Exception: \" << e.what() << endl;\n    }\n    return 0;\n}"
+        },
+        "explanation": "`std::exception` is the base class for standard exceptions. The `what()` method returns the error message."
+    },
+    {
+        "title": "Re-throwing Exceptions",
+        "ques": "Explain how to **re-throw** an exception from inside a catch block so it can be handled by a caller.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "try {\n    // ...\n} catch (...) {\n    cout << \"Handling partially...\\n\";\n    throw; // Re-throws the current exception\n}"
+        },
+        "explanation": "Using `throw;` without arguments inside a catch block re-throws the currently caught exception to the next enclosing try-catch block."
+    },
+    {
+        "title": "Exception Specification",
+        "ques": "Check the modern C++ alternative to `throw()` lists. What does `noexcept` do?",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "void func() noexcept {\n    // This function guarantees not to throw exceptions\n}"
+        },
+        "explanation": "`noexcept` specifier tells the compiler (and reader) that the function will not throw any exceptions. If it does, `std::terminate` is called."
+    },
+    {
+        "title": "Constructor Exceptions",
+        "ques": "What happens if a **constructor** throws an exception? Is the destructor called?",
+        "answer": {
+            "type": "text",
+            "content": "If a constructor throws an exception, the object is considered **not fully created**, and its destructor is **NOT** called. However, destructors of fully constructed member objects are called."
+        },
+        "explanation": "Care must be taken in constructors to free any resources allocated *before* the throw, as the destructor won't run."
+    },
+    {
+        "title": "Destructor Exceptions",
+        "ques": "Why is it dangerous for a **destructor** to throw an exception?",
+        "answer": {
+            "type": "text",
+            "content": "If a destructor throws an exception while the stack is unwinding due to another exception, `std::terminate` is called immediately, crashing the program."
+        },
+        "explanation": "Destructors should generally not throw exceptions; they should handle errors internally."
+    },
+    {
+        "title": "Custom Exception Class",
+        "ques": "Inherit from `std::exception` to create a custom exception class `InvalidAgeException` that overrides `what()`.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\n#include <exception>\nusing namespace std;\n\nclass InvalidAgeException : public exception {\npublic:\n    const char* what() const noexcept override {\n        return \"Age cannot be negative!\";\n    }\n};\n\nint main() {\n    try {\n        throw InvalidAgeException();\n    } catch (exception &e) {\n        cout << e.what() << endl;\n    }\n    return 0;\n}"
+        },
+        "explanation": "Overriding `what()` allows providing a custom error message when the exception is caught as a standard `std::exception`."
+    }
+]

@@ -1,0 +1,85 @@
+{
+    "id": "learn_array",
+    "topicId": "array",
+    "topicTitle": "Arrays and Strings",
+    "description": "Handle collections of data efficiently using arrays and manipulate text with C strings.",
+    "baseKP": 70,
+    "slides": [
+        {
+            "id": "array_1",
+            "type": "content",
+            "title": "Data Collections",
+            "content": "# Arrays 📚\n\nWhat if you need to store the marks of 100 students? Declaring 100 variables (`mark1`, `mark2`...) is crazy!\n\n**Arrays** solve this. An array is a collection of variables of the **same type** stored in contiguous memory locations.\n\n## Syntax\n```c\ntype name[size];\nint marks[5]; // Stores 5 integers\n```"
+        },
+        {
+            "id": "array_2",
+            "type": "content",
+            "title": "Indices and Initialization",
+            "content": "# Zero-Based Indexing 0️⃣\n\nAccess elements using their **index**, which starts from **0**.\n`marks[0]` is the first element, `marks[4]` is the last (for size 5).\n\n## Initialization\n```c\n// All at once\nint scores[3] = {90, 85, 95};\n\n// One by one\nscores[0] = 90;\nscores[1] = 85;\n```\n\n> ⚠️ **Memory Safety:** accessing `scores[10]` in a size 3 array leads to **undefined behavior** (garbage value or crash)!"
+        },
+        {
+            "id": "array_quiz_1",
+            "type": "quiz",
+            "title": "Index Check",
+            "content": "For `int arr[10];`, what is the index of the last element?",
+            "quizQuestion": "Last Index:",
+            "quizOptions": [
+                "10",
+                "9",
+                "1",
+                "0"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "array_3",
+            "type": "content",
+            "title": "Multidimensional Arrays",
+            "content": "# Grids and Matrices ▦\n\nYou can have arrays of arrays! The most common is the **2D array**.\n\n## Declaration\n```c\n// 3 rows, 4 columns\nint matrix[3][4];\n```\n\n## Accessing\n`matrix[row][col]`\n\n```c\nint grid[2][2] = {\n    {1, 2}, // Row 0\n    {3, 4}  // Row 1\n};\nint val = grid[1][0]; // Gets 3\n```"
+        },
+        {
+            "id": "array_4",
+            "type": "content",
+            "title": "Introduction to Strings",
+            "content": "# Text in C 🔤\n\nC does **not** have a native `string` type. Instead, strings are **arrays of characters** terminated by a special **Null Character `\\0`**.\n\n```c\nchar name[6] = {'H', 'e', 'l', 'l', 'o', '\\0'};\n// OR easier way:\nchar name[] = \"Hello\"; // Compiler adds \\0 automatically\n```\n\nThe `\\0` (ASCII 0) tells functions where the string ends."
+        },
+        {
+            "id": "array_5",
+            "type": "content",
+            "title": "String I/O",
+            "content": "# Reading and Printing Strings 🎤\n\n## Printing\nUse `%s` specifier.\n```c\nprintf(\"Hello %s\", name);\n```\n\n## Reading\n`scanf` stops at whitespace (space, tab, newline).\nTo read a full line, use `fgets`.\n\n```c\nchar fullName[50];\nprintf(\"Enter full name: \");\nfgets(fullName, sizeof(fullName), stdin);\n```\n*(Avoid `gets()` as it is unsafe and causes buffer overflows!)*"
+        },
+        {
+            "id": "array_6",
+            "type": "content",
+            "title": "String Library",
+            "content": "# Helper Functions 🛠️\n\nInclude `<string.h>` for powerful tools.\n\n1.  **`strlen(s)`:** Returns length (excluding `\\0`).\n2.  **`strcpy(dest, src)`:** Copies src to dest.\n3.  **`strcat(dest, src)`:** Appends src to start of dest.\n4.  **`strcmp(s1, s2)`:** Compares two strings.\n    - 0 if equal\n    - <0 if s1 < s2\n    - >0 if s1 > s2\n\n> ⚠️ **You cannot use `=`** to assign strings after declaration! Use `strcpy`."
+        },
+        {
+            "id": "array_quiz_2",
+            "type": "quiz",
+            "title": "String Assignment",
+            "content": "Which is the correct way to copy \"Hello\" into `char str[10];`?",
+            "quizQuestion": "Correct Method:",
+            "quizOptions": [
+                "str = \"Hello\";",
+                "str == \"Hello\";",
+                "strcpy(str, \"Hello\");",
+                "str.copy(\"Hello\");"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "array_7",
+            "type": "content",
+            "title": "Full Code Example",
+            "content": "# Matrix Addition & Strings\n\n<!-- FULL_CODE_START\n#include <stdio.h>\n#include <string.h>\n\nint main() {\n    // --- Arrays Demo ---\n    int a[2][2] = {{1, 2}, {3, 4}};\n    int b[2][2] = {{5, 6}, {7, 8}};\n    int sum[2][2];\n    \n    printf(\"--- Matrix Addition ---\\n\");\n    // Nested loops for 2D arrays\n    for(int i=0; i<2; i++) {\n        for(int j=0; j<2; j++) {\n            sum[i][j] = a[i][j] + b[i][j];\n            printf(\"%d \", sum[i][j]);\n        }\n        printf(\"\\n\");\n    }\n    \n    // --- Strings Demo ---\n    printf(\"\\n--- String Operations ---\\n\");\n    char first[20] = \"Code\";\n    char second[] = \"Quiz\";\n    \n    // Concatenation\n    strcat(first, second);\n    printf(\"Combined: %s\\n\", first);\n    \n    // Length\n    printf(\"Length: %lu\\n\", strlen(first));\n    \n    // Comparison\n    if(strcmp(first, \"CodeQuiz\") == 0) {\n        printf(\"Strings match!\\n\");\n    }\n    \n    return 0;\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "array_8",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: Arrays & Strings 🎓\n\nArrays allow you to manage bulk data efficiently.\n\n## Key Takeaways\n- **Declaration:** `type name[size]`. Size is fixed.\n- **Access:** 0-based index. `arr[last]` is out of bounds!\n- **2D Arrays:** Rows and Columns `arr[r][c]`.\n- **Strings:** Character arrays ending with `\\0`.\n- **String Lib:** Use `<string.h>` functions (`strcpy`, `strlen`) instead of operators like `=` or `==`.\n\nArrays are closely related to **Pointers**, which is our next topic!"
+        }
+    ]
+}

@@ -1,0 +1,79 @@
+{
+    "id": "learn_file_cs",
+    "topicId": "file_cs",
+    "topicTitle": "File and Data Handling",
+    "description": "Learn to manage files, directories, and paths using the System.IO namespace.",
+    "baseKP": 85,
+    "slides": [
+        {
+            "id": "io_1",
+            "type": "content",
+            "title": "System.IO 📂",
+            "content": "# Accessing Disk\n\nThe `System.IO` namespace provides all the tools you need.\n\n## The `File` Class\nProvides static methods for checking, creating, copying, deleting, accessing, and opening files.\n\n```csharp\nusing System.IO;\n\nif (File.Exists(\"data.txt\")) {\n    Console.WriteLine(\"Found it!\");\n}\n```"
+        },
+        {
+            "id": "io_2",
+            "type": "content",
+            "title": "Easy Read/Write",
+            "content": "# Quick Methods ⚡\n\nFor small text files, use helper methods:\n\n```csharp\nstring content = \"Hello File!\";\n\n// Write (Overwrites)\nFile.WriteAllText(\"test.txt\", content);\n\n// Append\nFile.AppendAllText(\"test.txt\", \"\\nNew Line\");\n\n// Read\nstring readText = File.ReadAllText(\"test.txt\");\nConsole.WriteLine(readText);\n```"
+        },
+        {
+            "id": "io_3",
+            "type": "content",
+            "title": "Handling Paths",
+            "content": "# Path.Combine 🛣️\n\nWindows uses `\\`, Linux/Mac uses `/`.\nHardcoding paths like `\"C:\\folder\\file\"` breaks cross-platform compatibility.\n\nUse `Path.Combine()`:\n```csharp\nstring folder = \"MyData\";\nstring file = \"info.txt\";\n\n// Automatically uses correct separator\nstring fullPath = Path.Combine(folder, file); \n```"
+        },
+        {
+            "id": "io_quiz_1",
+            "type": "quiz",
+            "title": "Path Check",
+            "content": "Which method should you use to join folder and file names safely?",
+            "quizQuestion": "Join Paths:",
+            "quizOptions": [
+                "String.Join",
+                "Path.Combine",
+                "File.Connect",
+                "Path.Merge"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "io_4",
+            "type": "content",
+            "title": "Streams",
+            "content": "# For Large Files 🌊\n\nReading/Writing everything at once uses a lot of RAM. Use Streams for efficiency.\n\n```csharp\n// Writing\nusing (StreamWriter sw = new StreamWriter(\"log.txt\")) {\n    sw.WriteLine(\"Log Entry 1\");\n}\n\n// Reading line by line\nusing (StreamReader sr = new StreamReader(\"log.txt\")) {\n    string line;\n    while ((line = sr.ReadLine()) != null) {\n        Console.WriteLine(line);\n    }\n}\n```"
+        },
+        {
+            "id": "io_5",
+            "type": "content",
+            "title": "JSON Serialization",
+            "content": "# Saving Objects 💾\n\nModern apps allow saving objects to JSON strings.\n\n```csharp\nusing System.Text.Json;\n\nPerson p = new Person { Name = \"Alice\", Age = 25 };\n\n// Serialize (Object -> String)\nstring json = JsonSerializer.Serialize(p);\nFile.WriteAllText(\"person.json\", json);\n\n// Deserialize (String -> Object)\nPerson p2 = JsonSerializer.Deserialize<Person>(json);\n```"
+        },
+        {
+            "id": "io_6",
+            "type": "content",
+            "title": "Full Example: Journal",
+            "content": "# Simple Journal App\n\n<!-- FULL_CODE_START\nusing System;\nusing System.IO;\n\nclass Program {\n    static void Main() {\n        string path = \"journal.txt\";\n        \n        Console.Write(\"Write a diary entry: \");\n        string entry = Console.ReadLine();\n        \n        // Append with timestamp\n        string log = $\"[{DateTime.Now}] {entry}\\n\";\n        File.AppendAllText(path, log);\n        \n        Console.WriteLine(\"Saved!\\n\");\n        \n        Console.WriteLine(\"--- Past Entries ---\");\n        if (File.Exists(path)) {\n            string[] lines = File.ReadAllLines(path);\n            foreach(var line in lines) {\n                Console.WriteLine(line);\n            }\n        } else {\n            Console.WriteLine(\"No entries yet.\");\n        }\n    }\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "io_quiz_2",
+            "type": "quiz",
+            "title": "Read Check",
+            "content": "Which method reads a file line-by-line into a string array?",
+            "quizQuestion": "Read Lines:",
+            "quizOptions": [
+                "File.ReadLines",
+                "File.ReadAllText",
+                "File.ReadAllLines",
+                "File.GetLines"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "io_7",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: File Handling 🎓\n\nConnect your app to the world!\n\n## Key Takeaways\n- **File:** Static helper (`WriteAllText`, `Exists`).\n- **Streams:** `StreamWriter/Reader` for control.\n- **Path:** `Combine` for safety.\n- **Json:** Serialization for objects.\n\nNext, we tackle concurrent programming with **Multithreading**!"
+        }
+    ]
+}

@@ -1,0 +1,102 @@
+[
+    {
+        "title": "Defining a Delegate",
+        "ques": "Defind a **Delegate** named `MyDelegate` that points to a method taking a string and returning void.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "public delegate void MyDelegate(string msg);"
+        },
+        "explanation": "A delegate is a type safe function pointer. Syntax: `public delegate ReturnType Name(Parameters);`."
+    },
+    {
+        "title": "Using a Delegate",
+        "ques": "Create an instance of `MyDelegate` pointing to a static method `Print`, and **invoke** it.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "using System;\n\ndelegate void MyDelegate(string msg);\n\nclass Program {\n    static void Print(string s) { Console.WriteLine(s); }\n    \n    static void Main() {\n        MyDelegate del = Print;\n        del(\"Hello Delegate\");\n    }\n}"
+        },
+        "explanation": "Delegates can be assigned methods (matching the signature) directly. Calling the delegate (`del(...)`) calls the method."
+    },
+    {
+        "title": "Multicast Delegate",
+        "ques": "Demonstrate a **Multicast Delegate**. Add two methods to a delegate instance using `+=`.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "MyDelegate del = Method1;\ndel += Method2;\ndel(\"Call Both\"); // Invokes Method1 then Method2"
+        },
+        "explanation": "Multicast delegates hold a list of methods (invocation list). `+=` adds a method, `-=` removes it."
+    },
+    {
+        "title": "Func Delegate",
+        "ques": "Use the built-in generic **`Func`** delegate to point to a method that takes two `int`s and returns their `int` sum.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "Func<int, int, int> add = SumMethod;\nint result = add(10, 20);\n\n// static int SumMethod(int x, int y) { return x + y; }"
+        },
+        "explanation": "`Func<In1, In2, ..., Out>` is a predefined delegate for functions returning a value. The last type parameter is the return type."
+    },
+    {
+        "title": "Action Delegate",
+        "ques": "Use the built-in **`Action`** delegate for a method that takes a string and prints it (returns `void`).",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "Action<string> print = Console.WriteLine;\nprint(\"Hello Action\");"
+        },
+        "explanation": "`Action<T>` represents a method that takes parameters and returns void."
+    },
+    {
+        "title": "Anonymous Methods",
+        "ques": "Assign an **anonymous method** (using `delegate` keyword) to a delegate instance.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "delegate void PrintDel(string s);\nPrintDel p = delegate(string val) {\n    Console.WriteLine(val);\n};"
+        },
+        "explanation": "Anonymous methods allow defining code blocks inline where a delegate object is expected, without creating a named method."
+    },
+    {
+        "title": "Lambda Expressions",
+        "ques": "Rewrite the previous example using a **Lambda Expression** `=>`.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "PrintDel p = (val) => { Console.WriteLine(val); };\n// Or simpler: PrintDel p = val => Console.WriteLine(val);"
+        },
+        "explanation": "Lambdas are a more concise way to write anonymous functions. `(parameters) => expression-or-statement-block`."
+    },
+    {
+        "title": "Events Basics",
+        "ques": "Define an **Event** named `Notify` based on a delegate `EventHandler` in a class `Publisher`.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "class Publisher {\n    public delegate void EventHandler();\n    public event EventHandler Notify;\n    \n    public void Raise() {\n        Notify?.Invoke();\n    }\n}"
+        },
+        "explanation": "Events are a wrapper around delegates (pub-sub model). Users can assume `+=` or `-=` but cannot invoke the event directly from outside the class."
+    },
+    {
+        "title": "Subscribing to Events",
+        "ques": "Create a `Subscriber` class that subscribes to the `Notify` event of `Publisher`.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "Publisher p = new Publisher();\np.Notify += () => Console.WriteLine(\"Event Received\");\np.Raise();"
+        },
+        "explanation": "Subscribers register their event handlers (methods/delegates) using `+=` operator."
+    },
+    {
+        "title": "Predicate Delegate",
+        "ques": "Use a **`Predicate<int>`** to check if a number is even.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "Predicate<int> isEven = x => x % 2 == 0;\nbool result = isEven(4);"
+        },
+        "explanation": "`Predicate<T>` is a delegate that takes one parameter of type T and returns a `bool`. Equivalent to `Func<T, bool>`."
+    }
+]

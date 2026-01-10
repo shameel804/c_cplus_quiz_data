@@ -1,0 +1,100 @@
+[
+    {
+        "title": "Creating Threads",
+        "ques": "How do you create and start a new **Thread** that runs a method `PrintNumbers`?",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "using System.Threading;\n\nThread t = new Thread(PrintNumbers);\nt.Start();\n\n// static void PrintNumbers() { ... }"
+        },
+        "explanation": "`System.Threading.Thread` represents an OS thread. `Start()` begins execution concurrently."
+    },
+    {
+        "title": "Sleep",
+        "ques": "How do you pause the current thread for 1 second (1000 milliseconds)?",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "Thread.Sleep(1000);"
+        },
+        "explanation": "`Thread.Sleep` suspends the current thread for the specified amount of time."
+    },
+    {
+        "title": "Join",
+        "ques": "What does `thread.Join()` do? Write a snippet where the main thread waits for `t` to finish.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "Thread t = new Thread(DoWork);\nt.Start();\nt.Join(); // Waits here until t completes\nConsole.WriteLine(\"Done\");"
+        },
+        "explanation": "`Join` blocks the calling thread until the thread represented by the instance terminates."
+    },
+    {
+        "title": "Lock Keyword",
+        "ques": "Use the **`lock`** keyword to protect a shared resource `count` from race conditions.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "Object _lock = new Object();\nint count = 0;\n\nlock (_lock) {\n    count++;\n}"
+        },
+        "explanation": "`lock(obj)` ensures that only one thread can execute the block of code at a time. It acquires a mutual exclusion lock on the object."
+    },
+    {
+        "title": "Task Parallel Library (TPL)",
+        "ques": "Start a **Task** that runs a lambda expression printing \"Task Run\". Use `Task.Run`.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "using System.Threading.Tasks;\n\nTask.Run(() => {\n    Console.WriteLine(\"Task Run\");\n});"
+        },
+        "explanation": "Tasks are higher-level abstractions than Threads. `Task.Run` queues work to run on the ThreadPool."
+    },
+    {
+        "title": "Async and Await",
+        "ques": "Define an `async` method `GetDataAsync` that waits for 2 seconds (simulating I/O) using `await Task.Delay`.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "async Task GetDataAsync() {\n    await Task.Delay(2000);\n    Console.WriteLine(\"Data received\");\n}"
+        },
+        "explanation": "`async` marks a method as asynchronous. `await` pauses the execution of the method until the awaited task completes, without blocking the thread."
+    },
+    {
+        "title": "Returning Values from Async",
+        "ques": "How do you return an `int` from an async method? Method signature for returning 42.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "async Task<int> GetNumberAsync() {\n    return 42;\n}"
+        },
+        "explanation": "Use `Task<TResult>` as the return type. The result is wrapped in the task."
+    },
+    {
+        "title": "Waiting for Multiple Tasks",
+        "ques": "Use **`Task.WhenAll`** to wait for two tasks `t1` and `t2` to complete.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "Task t1 = Task.Delay(1000);\nTask t2 = Task.Delay(2000);\nawait Task.WhenAll(t1, t2);\nConsole.WriteLine(\"Both done\");"
+        },
+        "explanation": "`Task.WhenAll` creates a task that completes when all the supplied tasks have completed."
+    },
+    {
+        "title": "BackgroundWorker (Legacy)",
+        "ques": "What is `BackgroundWorker` primarily used for in WinForms (historical context)?",
+        "answer": {
+            "type": "text",
+            "content": "It allows running operations on a separate thread and safely reporting progress or completion back to the **UI thread** (via `ReportProgress` and `RunWorkerCompleted`)."
+        },
+        "explanation": "Modern UI apps prefer `async/await`, but `BackgroundWorker` was the standard for responsive UIs in older .NET versions."
+    },
+    {
+        "title": "Thread vs Task",
+        "ques": "Briefly explain why **Tasks** are generally preferred over manual **Threads**.",
+        "answer": {
+            "type": "text",
+            "content": "Tasks use the system **ThreadPool**, which is more efficient (reuses threads) than creating new OS threads. Tasks also provide better API for chaining, waiting, and return values (`async/await`)."
+        },
+        "explanation": "Creating a Thread is expensive (stack memory). Tasks optimize resource usage."
+    }
+]

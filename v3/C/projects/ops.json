@@ -1,0 +1,121 @@
+[
+    {
+        "title": "Arithmetic Operators",
+        "ques": "Write a C program that takes two integers `a = 15` and `b = 4` and prints the results of addition, subtraction, multiplication, division, and modulo operations.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    int a = 15, b = 4;\n    printf(\"a + b = %d\\n\", a + b);\n    printf(\"a - b = %d\\n\", a - b);\n    printf(\"a * b = %d\\n\", a * b);\n    printf(\"a / b = %d\\n\", a / b);\n    printf(\"a % b = %d\\n\", a % b);\n    return 0;\n}"
+        },
+        "explanation": "Standard arithmetic operators: `+` (add), `-` (subtract), `*` (multiply), `/` (divide), and `%` (modulo/remainder). Note integer division truncates decimals (15/4 = 3)."
+    },
+    {
+        "title": "Relational Operators",
+        "ques": "Create a program comparing two numbers `x` and `y` input by the user. Print **1 (true)** if `x` is greater than `y`, and **0 (false)** otherwise.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    int x, y;\n    printf(\"Enter x and y: \");\n    scanf(\"%d %d\", &x, &y);\n    printf(\"x > y is %d\\n\", x > y);\n    return 0;\n}"
+        },
+        "explanation": "Relational operators like `>` compare values and return `1` for true and `0` for false in C."
+    },
+    {
+        "title": "Logical Operators",
+        "ques": "Explain the difference between logical AND (`&&`) and logical OR (`||`) with a customized example checking if a number is between 10 and 20 (inclusive).",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    int num;\n    printf(\"Enter a number: \");\n    scanf(\"%d\", &num);\n    if (num >= 10 && num <= 20) {\n        printf(\"In range\\n\");\n    } else {\n        printf(\"Out of range\\n\");\n    }\n    return 0;\n}"
+        },
+        "explanation": "`&&` returns true only if **both** operands are true. `||` returns true if **at least one** operand is true. Here, we need both conditions (`>= 10` AND `<= 20`) to be met."
+    },
+    {
+        "title": "Increment and Decrement",
+        "ques": "What is the difference between **pre-increment** (`++i`) and **post-increment** (`i++`)? Demonstrate with a code snippet.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    int i = 5;\n    printf(\"Original: %d\\n\", i);\n    printf(\"Pre-increment: %d\\n\", ++i); // Increases, then prints 6\n    printf(\"Post-increment: %d\\n\", i++); // Prints 6, then increases\n    printf(\"Final: %d\\n\", i); // Prints 7\n    return 0;\n}"
+        },
+        "explanation": "`++i` increments the value **before** using it in the expression. `i++` uses the current value in the expression and **then** increments it."
+    },
+    {
+        "title": "Bitwise Operators",
+        "ques": "Perform Bitwise AND (`&`), OR (`|`), and XOR (`^`) on two integers: `a = 5` (0101 binary) and `b = 3` (0011 binary). Predict the output and verify with code.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    int a = 5, b = 3;\n    printf(\"a & b = %d\\n\", a & b); // 0101 & 0011 = 0001 (1)\n    printf(\"a | b = %d\\n\", a | b); // 0101 | 0011 = 0111 (7)\n    printf(\"a ^ b = %d\\n\", a ^ b); // 0101 ^ 0011 = 0110 (6)\n    return 0;\n}"
+        },
+        "explanation": "Bitwise operators work on bits. `&` sets bit to 1 if both bits are 1. `|` sets bit to 1 if at least one is 1. `^` sets bit to 1 if bits are different."
+    },
+    {
+        "title": "Left and Right Shift",
+        "ques": "Explain what the left shift (`<<`) and right shift (`>>`) operators do.",
+        "answer": {
+            "type": "text",
+            "content": "*   **Left Shift (`<<`):** Shifts bits to the left, filling with zeros. Equivalent to multiplying by powers of 2 (e.g., `x << 1` multiplies `x` by 2).\n*   **Right Shift (`>>`):** Shifts bits to the right. Equivalent to dividing by powers of 2 (integer division)."
+        },
+        "explanation": "Shifting acts as efficient multiplication or division by 2. `5 << 1` becomes 10, `5 >> 1` becomes 2."
+    },
+    {
+        "title": "Assignment Operators",
+        "ques": "Rewrite the statement `x = x + 10;` using a **compound assignment operator**.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "x += 10;"
+        },
+        "explanation": "Compound assignment operators (like `+=`, `-=`, `*=`) combine an arithmetic operation with assignment, making code more concise."
+    },
+    {
+        "title": "Conditional (Ternary) Operator",
+        "ques": "Use the conditional operator (`? :`) to find the **maximum** of two numbers `a` and `b` in a single line.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    int a = 10, b = 20;\n    int max = (a > b) ? a : b;\n    printf(\"Max: %d\\n\", max);\n    return 0;\n}"
+        },
+        "explanation": "The format is `condition ? value_if_true : value_if_false`. It checks if `a > b`; if true, `max` gets `a`, otherwise `b`."
+    },
+    {
+        "title": "Operator Precedence",
+        "ques": "Evaluate the expression `result = 5 + 3 * 2;` manually. Then write a C program to verify your answer.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    int result = 5 + 3 * 2;\n    printf(\"Result: %d\\n\", result);\n    return 0;\n}"
+        },
+        "explanation": "Multiplication (`*`) has higher precedence than addition (`+`). So `3 * 2` is evaluated first (6), then added to 5, resulting in 11. Use parentheses `(5 + 3) * 2` to change order."
+    },
+    {
+        "title": "Sizeof with Types vs Variables",
+        "ques": "Does `sizeof` work differently for a variable compared to a type? Check `sizeof(int)` vs `sizeof(x)` where `int x;`.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    int x;\n    printf(\"sizeof(int): %lu\\n\", sizeof(int));\n    printf(\"sizeof(x): %lu\\n\", sizeof(x));\n    return 0;\n}"
+        },
+        "explanation": "They return the same value. `sizeof` returns variable size based on its declared type. For `int`, it's typically 4 bytes on modern systems."
+    },
+    {
+        "title": "Type Casting",
+        "ques": "Write a program that divides two integers `a = 5` and `b = 2` but prints the distinct floating-point result **2.5** using **type casting**.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    int a = 5, b = 2;\n    float result = (float)a / b;\n    printf(\"Result: %.1f\\n\", result);\n    return 0;\n}"
+        },
+        "explanation": "Without casting, `5 / 2` does integer division yielding `2`. Casting `a` to `(float)` makes it `5.0 / 2`, promoting the operation to floating-point division."
+    },
+    {
+        "title": "Bitwise Complement",
+        "ques": "What does the bitwise complement operator (`~`) do? Apply it to `0` and explain the result.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n\nint main() {\n    int zero = 0;\n    printf(\"~0 = %d\\n\", ~zero);\n    return 0;\n}"
+        },
+        "explanation": "`~` flips all bits. `~0` turns all 0 bits into 1s, resulting in `-1` (in 2's complement representation)."
+    }
+]

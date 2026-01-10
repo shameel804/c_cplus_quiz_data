@@ -1,0 +1,77 @@
+{
+    "id": "learn_file",
+    "topicId": "file",
+    "topicTitle": "File Handling",
+    "description": "Learn to store data permanently by reading from and writing to files using C's standard I/O library.",
+    "baseKP": 85,
+    "slides": [
+        {
+            "id": "file_1",
+            "type": "content",
+            "title": "Persistent Memory",
+            "content": "# Saving Data 💾\n\nVariables are stored in RAM, which is **volatile** (data is lost when power goes off). To make data permanent, we use **Files** on the disk.\n\n## The `FILE` Structure\nC uses a structure called `FILE` to handle files. We use a pointer to this structure.\n\n```c\nFILE *fptr;\n```"
+        },
+        {
+            "id": "file_2",
+            "type": "content",
+            "title": "Opening a File",
+            "content": "# Opening the Door 🚪\n\nUse `fopen()` to open a file. It returns a pointer or `NULL` if it fails.\n\n```c\nfptr = fopen(\"filename.txt\", \"mode\");\n```\n\n## Common Modes\n| Mode | Meaning | Note |\n|---|---|---|\n| `\"w\"` | Write | Creates new file. **Overwrites** if exists. |\n| `\"r\"` | Read | Opens existing file. NULL if not found. |\n| `\"a\"` | Append | Adds to end. Creates if not found. |\n| `\"r+\"`| Read/Write | Modifies existing file. |"
+        },
+        {
+            "id": "file_quiz_1",
+            "type": "content",
+            "title": "Danger Zone",
+            "content": "# ⚠️ Warning: \"w\" Mode\n\nIf you open an important file like `data.txt` in `\"w\"` mode, C will **erase everything** in it immediately!\n\n> Always check if the pointer is valid before using it.\n\n```c\nif (fptr == NULL) {\n    printf(\"Error opening file!\");\n    exit(1);\n}\n```"
+        },
+        {
+            "id": "file_3",
+            "type": "content",
+            "title": "Writing to a File",
+            "content": "# Storing Text ✍️\n\nUse `fprintf()` just like `printf()`, but with the file pointer as the first argument.\n\n```c\nFILE *fp = fopen(\"notes.txt\", \"w\");\n\nfprintf(fp, \"Hello File!\\n\");\nfprintf(fp, \"Score: %d\\n\", 100);\n\nfclose(fp); // Always close!\n```\nYou can also use `fputc('A', fp)` to write a single character."
+        },
+        {
+            "id": "file_4",
+            "type": "content",
+            "title": "Reading from a File",
+            "content": "# Retrieving Data 📖\n\nUse `fscanf()` or `fgets()`.\n\n```c\nFILE *fp = fopen(\"notes.txt\", \"r\");\nchar buffer[100];\n\n// Reads one word (stops at space)\nfscanf(fp, \"%s\", buffer);\n\n// Reads a whole line\nfgets(buffer, 100, fp);\n```\n\nReading ends when `EOF` (End of File) is reached."
+        },
+        {
+            "id": "file_quiz_2",
+            "type": "quiz",
+            "title": "Mode Check",
+            "content": "Which mode should you use to add a log entry without deleting old logs?",
+            "quizQuestion": "Best Mode:",
+            "quizOptions": [
+                "\"w\"",
+                "\"r\"",
+                "\"a\"",
+                "\"w+\""
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "file_5",
+            "type": "content",
+            "title": "Binary Files",
+            "content": "# Raw Data 🤖\n\nText files are human-readable but slow. **Binary files** store data exactly as it looks in memory (raw bytes).\n\n## Modes\nUse `\"wb\"` (write binary) and `\"rb\"` (read binary).\n\n## Functions\n- `fwrite(&data, size, count, fp)`\n- `fread(&data, size, count, fp)`\n\nThis is great for saving entire structures (like a game save)!"
+        },
+        {
+            "id": "file_6",
+            "type": "content",
+            "title": "Random Access",
+            "content": "# Moving Around 🧭\n\nYou don't have to read linearly.\n\n1.  **`fseek(fp, offset, origin)`**: Moves the cursor.\n    - `SEEK_SET`: Start\n    - `SEEK_CUR`: Current\n    - `SEEK_END`: End\n2.  **`ftell(fp)`**: Returns current position.\n3.  **`rewind(fp)`**: Go back to start.\n\n```c\n// Move to 10th byte from start\nfseek(fp, 10, SEEK_SET);\n```"
+        },
+        {
+            "id": "file_7",
+            "type": "content",
+            "title": "Full Example: Mini Logger",
+            "content": "# File Logger Demo\n\n<!-- FULL_CODE_START\n#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    FILE *fp;\n    char note[100];\n    \n    // 1. Write (Append mode)\n    fp = fopen(\"diary.txt\", \"a\");\n    if (fp == NULL) {\n        printf(\"Error!\\n\");\n        return 1;\n    }\n    \n    printf(\"Enter a note to save: \");\n    fgets(note, sizeof(note), stdin);\n    \n    fprintf(fp, \"Entry: %s\", note);\n    printf(\"Saved!\\n\");\n    \n    fclose(fp);\n    \n    // 2. Read back\n    printf(\"\\n--- Reading Log ---\\n\");\n    fp = fopen(\"diary.txt\", \"r\");\n    \n    char buffer[100];\n    while(fgets(buffer, 100, fp) != NULL) {\n        printf(\"%s\", buffer);\n    }\n    \n    fclose(fp);\n    return 0;\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "file_8",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: File Handling 🎓\n\nYou can now make your programs remember things!\n\n## Key Takeaways\n- **Pointer:** `FILE *fp` is your handle.\n- **Modes:** `w` (destructive write), `r` (read), `a` (append).\n- **Functions:** `fprintf`, `fscanf`, `fgets`.\n- **Binary:** `fwrite`/`fread` for structures.\n- **Closure:** Always `fclose()` to prevent data loss or corruption.\n\nNext, we tackle the final boss of C: **Dynamic Memory Allocation**!"
+        }
+    ]
+}

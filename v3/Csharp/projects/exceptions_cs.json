@@ -1,0 +1,102 @@
+[
+    {
+        "title": "Try-Catch Block",
+        "ques": "Write a **try-catch** block to handle a `DivideByZeroException` when dividing two integers.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "try {\n    int a = 10, b = 0;\n    int c = a / b;\n} catch (DivideByZeroException ex) {\n    Console.WriteLine(\"Cannot divide by zero\");\n}"
+        },
+        "explanation": "Code that might throw an exception is placed in `try`. The `catch` block executes if that specific exception occurs."
+    },
+    {
+        "title": "Finally Block",
+        "ques": "What is the purpose of the **`finally`** block? Add it to the previous example to print \"Done\".",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "try {\n    // code\n} catch (Exception ex) {\n    // handle\n} finally {\n    Console.WriteLine(\"Done\");\n}"
+        },
+        "explanation": "`finally` always executes, regardless of whether an exception was thrown or caught. It is used for cleanup (releasing resources)."
+    },
+    {
+        "title": "Throwing Exceptions",
+        "ques": "Use the **`throw`** keyword to manually throw an `ArgumentException` if a variable `age` is negative.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "int age = -5;\nif (age < 0) {\n    throw new ArgumentException(\"Age cannot be negative\");\n}"
+        },
+        "explanation": "You can explicitly raise exceptions using `throw new ExceptionType(\"message\");`."
+    },
+    {
+        "title": "Exception Properties",
+        "ques": "When catching an exception variable `ex`, which property gives the **error text** and which gives the **call stack**?",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "Console.WriteLine(ex.Message); // Error text\nConsole.WriteLine(ex.StackTrace); // Call stack trace"
+        },
+        "explanation": "`ex.Message` provides a human-readable description. `ex.StackTrace` shows where the error occurred in the code."
+    },
+    {
+        "title": "Custom Exceptions",
+        "ques": "Create a **Custom Exception** class `InvalidUserException` inheriting from `Exception`.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "class InvalidUserException : Exception {\n    public InvalidUserException(string message) : base(message) { }\n}"
+        },
+        "explanation": "Custom exceptions allow handling specific application logic errors. They should inherit from `System.Exception`."
+    },
+    {
+        "title": "Catching General Exceptions",
+        "ques": "Why should you catch specific exceptions before `Exception` (base class)? Order `catch(Exception)` and `catch(FormatException)` correctly.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "try {\n    // ...\n} catch (FormatException) {\n    // Specific first\n} catch (Exception) {\n    // General last\n}"
+        },
+        "explanation": "Catch blocks are evaluated in order. If the base `Exception` is first, it will catch everything, making unreachable the specific blocks below it."
+    },
+    {
+        "title": "Conditional Catch (when)",
+        "ques": "Use an **Exception Filter** (`when` keyword) to catch an exception only if a condition is met.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "try {\n    throw new Exception(\"Error 500\");\n} catch (Exception ex) when (ex.Message.Contains(\"500\")) {\n    Console.WriteLine(\"Server Error\");\n}"
+        },
+        "explanation": "Filters allow a catch block to run only if the filter expression evaluates to true, keeping the stack trace intact if false."
+    },
+    {
+        "title": "Re-throwing",
+        "ques": "How do you **re-throw** an existing exception inside a catch block to preserve the stack trace?",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "catch (Exception) {\n    Console.WriteLine(\"Log error\");\n    throw; // Preserves stack trace\n    // throw ex; // Resets stack trace (Bad)\n}"
+        },
+        "explanation": "Using `throw;` alone re-throws the current exception. Using `throw ex;` resets the stack trace to the current line."
+    },
+    {
+        "title": "Using Statement (IDisposable)",
+        "ques": "The **`using`** statement is sugar for try-finally. Rewrite a file usage snippet with `using`.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "using (StreamReader reader = new StreamReader(\"file.txt\")) {\n    // Read file\n} // Dispose() called automatically here"
+        },
+        "explanation": "`using` ensures that `Dispose()` is called on the object (which must implement `IDisposable`) even if an exception occurs."
+    },
+    {
+        "title": "Tryparse",
+        "ques": "How does `int.TryParse` avoid exceptions compared to `int.Parse`? Write a snippet.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "int result;\nif (int.TryParse(\"123\", out result)) {\n    Console.WriteLine(result);\n} else {\n    Console.WriteLine(\"Invalid number\");\n}"
+        },
+        "explanation": "`TryParse` returns a boolean indicating success or failure instead of throwing an exception, which is more performant for validation."
+    }
+]

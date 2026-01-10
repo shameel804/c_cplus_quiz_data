@@ -1,0 +1,79 @@
+{
+    "id": "learn_exceptions_cs",
+    "topicId": "exceptions_cs",
+    "topicTitle": "Exception Handling",
+    "description": "Write reliable C# applications by anticipating errors and handling them gracefully.",
+    "baseKP": 80,
+    "slides": [
+        {
+            "id": "exc_1",
+            "type": "content",
+            "title": "Don't Crash! 💥",
+            "content": "# Handling Errors\n\nWhen code fails (e.g., File not found, No internet), C# throws an **Exception**. If you don't catch it, the app crashes.\n\n## The Trio\n- **try:** Wrap risky code here.\n- **catch:** Handle the error.\n- **finally:** Cleanup code (runs always)."
+        },
+        {
+            "id": "exc_2",
+            "type": "content",
+            "title": "Try-Catch Block",
+            "content": "# Basic Syntax\n\n```csharp\ntry {\n    int[] nums = {1, 2, 3};\n    Console.WriteLine(nums[10]); // Error!\n} \ncatch (IndexOutOfRangeException ex) {\n    Console.WriteLine(\"Index invalid!\");\n} \ncatch (Exception ex) {\n    Console.WriteLine(\"Something else wrong: \" + ex.Message);\n}\n```"
+        },
+        {
+            "id": "exc_3",
+            "type": "content",
+            "title": "The Finally Block",
+            "content": "# Cleaning Up 🧹\n\nCode in `finally` runs whether an exception happened or not. Perfect for closing files or database connections.\n\n```csharp\ntry {\n    // Open file...\n} catch {\n    // Handle error...\n} finally {\n    // Close file!\n}\n```"
+        },
+        {
+            "id": "exc_quiz_1",
+            "type": "quiz",
+            "title": "Finally Check",
+            "content": "Does the `finally` block execute if the `try` block has a `return` statement?",
+            "quizQuestion": "Execution:",
+            "quizOptions": [
+                "Yes, always",
+                "No, never",
+                "Only if error occurs",
+                "Depends on compiler"
+            ],
+            "correctOptionIndex": 0
+        },
+        {
+            "id": "exc_4",
+            "type": "content",
+            "title": "Throwing Exceptions",
+            "content": "# Raising Errors 🚩\n\nYou can manually trigger exceptions using `throw`.\n\n```csharp\npublic void SetAge(int age) {\n    if (age < 0) {\n        throw new ArgumentException(\"Age cannot be negative\");\n    }\n    this.Age = age;\n}\n```"
+        },
+        {
+            "id": "exc_5",
+            "type": "content",
+            "title": "The `using` Statement",
+            "content": "# Syntactic Sugar 🍬\n\nInstead of manually closing resources in `finally`, use `using`. It automatically calls `Dispose()`.\n\n```csharp\n// Old way: try { ... } finally { file.Close(); }\n\n// New way\nusing (StreamReader reader = new StreamReader(\"file.txt\")) {\n    Console.WriteLine(reader.ReadToEnd());\n}\n// 'reader' is automatically closed here!\n```"
+        },
+        {
+            "id": "exc_6",
+            "type": "content",
+            "title": "Full Example: Safe Calculator",
+            "content": "# Robust Code\n\n<!-- FULL_CODE_START\nusing System;\n\nclass Program {\n    static void Main() {\n        Console.Write(\"Enter number: \");\n        string input = Console.ReadLine();\n        \n        try {\n            int num = int.Parse(input);\n            int result = 100 / num;\n            Console.WriteLine($\"100 divided by {num} is {result}\");\n        }\n        catch (FormatException) {\n            Console.WriteLine(\"Error: Please enter a valid number.\");\n        }\n        catch (DivideByZeroException) {\n            Console.WriteLine(\"Error: Cannot divide by zero.\");\n        }\n        catch (Exception ex) {\n            Console.WriteLine($\"Unknown Error: {ex.Message}\");\n        }\n        finally {\n            Console.WriteLine(\"Calculation attempt finished.\");\n        }\n    }\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "exc_quiz_2",
+            "type": "quiz",
+            "title": "Keyword Check",
+            "content": "Which keyword is used to ensure code runs after a try/catch, even if an error occurred?",
+            "quizQuestion": "Keyword:",
+            "quizOptions": [
+                "lastly",
+                "ensure",
+                "finally",
+                "done"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "exc_7",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: Exceptions 🎓\n\nAnticipate the unexpected.\n\n## Key Takeaways\n- **Try/Catch:** The standard defense mechanism.\n- **Finally:** For cleanup.\n- **Throw:** To signal invalid states.\n- **Using:** Best practice for I/O resources.\n- **Specific Catch:** Catch specific errors before generic ones.\n\nNext, we'll learn about **File Handling** in C#!"
+        }
+    ]
+}

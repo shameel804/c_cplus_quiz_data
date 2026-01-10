@@ -1,0 +1,91 @@
+{
+    "id": "learn_classes",
+    "topicId": "classes",
+    "topicTitle": "Classes and Objects",
+    "description": "Dive deep into the core of OOP: creating classes, managing access, and using constructors.",
+    "baseKP": 60,
+    "slides": [
+        {
+            "id": "classes_1",
+            "type": "content",
+            "title": "Access Specifiers",
+            "content": "# Keeping Secrets 🔒\n\nNot everything in a class should be visible to the world. We control visibility using **Access Specifiers**.\n\n1.  **Public:** Accessible from anywhere.\n2.  **Private:** Accessible **only** inside the class. (Default if not specified).\n3.  **Protected:** Accessible inside the class and its child classes (Inheritance).\n\n```cpp\nclass Box {\nprivate:\n    int secretKey; // Hidden\npublic:\n    void open() { ... } // Visible\n};\n```"
+        },
+        {
+            "id": "classes_2",
+            "type": "content",
+            "title": "Member Functions",
+            "content": "# Defining Behaviors 🏃\n\nFunctions inside a class are called **Methods** or **Member Functions**.\n\n## 1. Inside Class Definition\n```cpp\nclass Person {\n    void walk() { cout << \"Walking\"; }\n};\n```\n\n## 2. Outside Class Definition\nUse the Scope Resolution Operator `::`.\n```cpp\nclass Person {\n    void walk(); // Prototype\n};\n\nvoid Person::walk() {\n    cout << \"Walking\";\n}\n```"
+        },
+        {
+            "id": "classes_3",
+            "type": "content",
+            "title": "Constructors",
+            "content": "# The Birth of an Object 👶\n\nA **Constructor** is a special method automatically called when an object is created.\n- Same name as the class.\n- No return type (not even void).\n\n```cpp\nclass Car {\npublic:\n    Car() {\n        cout << \"Car created!\";\n    }\n};\n\nint main() {\n    Car myCar; // Prints \"Car created!\"\n}\n```"
+        },
+        {
+            "id": "classes_quiz_1",
+            "type": "quiz",
+            "title": "Constructor Check",
+            "content": "What is the return type of a constructor?",
+            "quizQuestion": "Return Type:",
+            "quizOptions": [
+                "int",
+                "void",
+                "class type",
+                "None"
+            ],
+            "correctOptionIndex": 3
+        },
+        {
+            "id": "classes_4",
+            "type": "content",
+            "title": "Types of Constructors",
+            "content": "# Flavors of Constructors 🍦\n\n1.  **Default Constructor:** No parameters.\n2.  **Parameterized Constructor:** Takes arguments to initialize values.\n3.  **Copy Constructor:** Creates a new object as a copy of an existing one.\n\n```cpp\nclass Point {\n    int x, y;\npublic:\n    // Parameterized\n    Point(int i, int j) {\n        x = i;\n        y = j;\n    }\n};\n\nPoint p1(10, 20);\n```"
+        },
+        {
+            "id": "classes_5",
+            "type": "content",
+            "title": "Destructors",
+            "content": "# The End of the Line 💀\n\nA **Destructor** is called when an object is destroyed (goes out of scope). \n- Same name as class but with `~`.\n- Used to release resources (like closing files or freeing memory).\n\n```cpp\n~Car() {\n    cout << \"Car destroyed\";\n}\n```"
+        },
+        {
+            "id": "classes_6",
+            "type": "content",
+            "title": "The 'this' Pointer",
+            "content": "# Self Reference 🪞\n\nEvery object has a hidden pointer passed to all non-static member functions called `this`. It points to the object itself.\n\nUseful when parameter names match member names.\n\n```cpp\nclass Box {\n    int length;\npublic:\n    void setLength(int length) {\n        this->length = length;\n    }\n};\n```"
+        },
+        {
+            "id": "classes_7",
+            "type": "content",
+            "title": "Static Members",
+            "content": "# Sharing is Caring 🤝\n\n**Static** members belong to the **class**, not any specific object. There is only one copy shared by all objects.\n\n```cpp\nclass Counter {\npublic:\n    static int count;\n    Counter() { count++; }\n};\n\n// Initialize static member outside\nint Counter::count = 0;\n```\nIf you create 3 `Counter` objects, `count` will be 3."
+        },
+        {
+            "id": "classes_8",
+            "type": "content",
+            "title": "Full Example: Bank Account",
+            "content": "# OOP in Action\n\n<!-- FULL_CODE_START\n#include <iostream>\n#include <string>\n\nusing namespace std;\n\nclass BankAccount {\nprivate:\n    int accountNumber;\n    double balance;\npublic:\n    // Parameterized Constructor\n    BankAccount(int accNum, double initialBal) {\n        accountNumber = accNum;\n        balance = initialBal;\n        cout << \"Account \" << accountNumber << \" opened.\\n\";\n    }\n\n    // Method to deposit\n    void deposit(double amount) {\n        if (amount > 0) {\n            balance += amount;\n            cout << \"Deposited: $\" << amount << \"\\n\";\n        }\n    }\n\n    // Method to withdraw\n    void withdraw(double amount) {\n        if (amount <= balance) {\n            balance -= amount;\n            cout << \"Withdrew: $\" << amount << \"\\n\";\n        } else {\n            cout << \"Insufficient funds!\\n\";\n        }\n    }\n\n    // Display info\n    void display() {\n        cout << \"Acc: \" << accountNumber << \" | Bal: $\" << balance << \"\\n\";\n    }\n    \n    // Destructor\n    ~BankAccount() {\n        cout << \"Account \" << accountNumber << \" closed.\\n\";\n    }\n};\n\nint main() {\n    cout << \"--- Banking System ---\\n\";\n    \n    // Creating object\n    BankAccount myAcc(101, 500.0);\n    \n    myAcc.deposit(200);\n    myAcc.display();\n    \n    myAcc.withdraw(1000);\n    myAcc.withdraw(100);\n    \n    myAcc.display();\n    \n    return 0;\n} // Destructor called here\nFULL_CODE_END -->"
+        },
+        {
+            "id": "classes_quiz_2",
+            "type": "quiz",
+            "title": "Default Access",
+            "content": "If you don't specify an access modifier in a class, members are:",
+            "quizQuestion": "Default Visibility:",
+            "quizOptions": [
+                "Public",
+                "Private",
+                "Protected",
+                "Static"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "classes_9",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: Classes 🎓\n\nYou've built the engine of OOP!\n\n## Key Takeaways\n- **Access:** `public`, `private`, `protected` control security.\n- **Methods:** Can be defined inside or outside (`::`).\n- **Constructors:** Initialize objects automatically.\n- **Destructors:** Cleanup automatically.\n- **This:** Pointer to self.\n- **Static:** Shared data.\n\nWith classes, you can model anything. Next, we'll see how classes can relate to each other through **Inheritance**!"
+        }
+    ]
+}

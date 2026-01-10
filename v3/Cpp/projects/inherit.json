@@ -1,0 +1,101 @@
+[
+    {
+        "title": "Single Inheritance",
+        "ques": "Create a base class **`Animal`** with a method `eat()`, and a derived class **`Dog`** that inherits from it and adds a method `bark()`.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nclass Animal {\npublic:\n    void eat() {\n        cout << \"Eating...\" << endl;\n    }\n};\n\nclass Dog : public Animal {\npublic:\n    void bark() {\n        cout << \"Barking...\" << endl;\n    }\n};\n\nint main() {\n    Dog d;\n    d.eat();\n    d.bark();\n    return 0;\n}"
+        },
+        "explanation": "Inheritance allows a class (`Dog`) to acquire properties and behaviors of another class (`Animal`). Syntax: `class Derived : public Base`."
+    },
+    {
+        "title": "Protected Access Specifier",
+        "ques": "What does **`protected`** mean? Create a class with a protected variable `id` and access it from a derived class.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nclass Base {\nprotected:\n    int id;\n};\n\nclass Derived : public Base {\npublic:\n    void setId(int i) {\n        id = i; // Allowed\n    }\n    void display() {\n        cout << \"ID: \" << id << endl;\n    }\n};\n\nint main() {\n    Derived d;\n    d.setId(55);\n    d.display();\n    return 0;\n}"
+        },
+        "explanation": "`protected` members are accessible within the class and its derived classes (children), but not from outside (like `main`)."
+    },
+    {
+        "title": "Multilevel Inheritance",
+        "ques": "Implement **Multilevel Inheritance**: `GrandParent` -> `Parent` -> `Child`. Each class should have a simple print method.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nclass GrandParent { public: void gp() { cout << \"GP\\n\"; } };\nclass Parent : public GrandParent { public: void p() { cout << \"P\\n\"; } };\nclass Child : public Parent { public: void c() { cout << \"C\\n\"; } };\n\nint main() {\n    Child obj;\n    obj.gp();\n    obj.p();\n    obj.c();\n    return 0;\n}"
+        },
+        "explanation": "A derived class can itself serve as a base class for another class, forming a chain of inheritance."
+    },
+    {
+        "title": "Multiple Inheritance",
+        "ques": "Demonstrate **Multiple Inheritance** where class `C` inherits from both class `A` and class `B`.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nclass A { public: void funA() { cout << \"A called\\n\"; } };\nclass B { public: void funB() { cout << \"B called\\n\"; } };\n\nclass C : public A, public B {\n};\n\nint main() {\n    C obj;\n    obj.funA();\n    obj.funB();\n    return 0;\n}"
+        },
+        "explanation": "C++ supports multiple inheritance, allowing a class to inherit from more than one base class. Syntax: `class C : public A, public B`."
+    },
+    {
+        "title": "Constructor Execution Order",
+        "ques": "When creating an object of a derived class, which **constructor** is called first: Base or Derived? Demonstrate with code.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    Base() { cout << \"Base Constructor\\n\"; }\n};\n\nclass Derived : public Base {\npublic:\n    Derived() { cout << \"Derived Constructor\\n\"; }\n};\n\nint main() {\n    Derived d;\n    return 0;\n}"
+        },
+        "explanation": "The **Base** class constructor is executed first, followed by the **Derived** class constructor."
+    },
+    {
+        "title": "Calling Base Constructor",
+        "ques": "How do you pass arguments to a **parameterized base constructor** from the derived constructor? Use an initializer list.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    Base(int x) { cout << \"Base: \" << x << endl; }\n};\n\nclass Derived : public Base {\npublic:\n    Derived(int y) : Base(y) {\n        cout << \"Derived\" << endl;\n    }\n};\n\nint main() {\n    Derived d(10);\n    return 0;\n}"
+        },
+        "explanation": "Use the member initializer list syntax `: Base(args)` in the derived constructor to call a specific base constructor."
+    },
+    {
+        "title": "Function Overriding",
+        "ques": "Create a class `Base` with `display()` and a `Derived` class that **overrides** `display()`. Call `display()` on a derived object.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    void display() { cout << \"Base Display\\n\"; }\n};\n\nclass Derived : public Base {\npublic:\n    // Override\n    void display() { cout << \"Derived Display\\n\"; }\n};\n\nint main() {\n    Derived d;\n    d.display();\n    return 0;\n}"
+        },
+        "explanation": "Function overriding occurs when a derived class provides a specific implementation for a function already defined in its base class."
+    },
+    {
+        "title": "Accessing Overridden Methods",
+        "ques": "If `display()` is overridden in `Derived`, how can you call the **Base** version of `display()` from within a `Derived` method?",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "void someFunc() {\n    Base::display(); // Use scope resolution\n}"
+        },
+        "explanation": "The scope resolution operator `Base::methodName()` forces the call to the base class's implementation."
+    },
+    {
+        "title": "Hierarchical Inheritance",
+        "ques": "Explain **Hierarchical Inheritance** with a diagram concept (text) and a minimal code structure.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "// Hierarchical: One Base, Multiple Derived\n//      Shape\n//     /     \\\n//  Circle  Square\n\nclass Shape {};\nclass Circle : public Shape {};\nclass Square : public Shape {};"
+        },
+        "explanation": "Hierarchical inheritance happens when multiple derived classes inherit from a single base class."
+    },
+    {
+        "title": "Diamond Problem",
+        "ques": "What is the **Diamond Problem** in multiple inheritance? Briefly explain why virtual inheritance is needed.",
+        "answer": {
+            "type": "text",
+            "content": "The Diamond Problem occurs when two classes (B and C) inherit from A, and a class D inherits from both B and C. This creates two copies of A in D, leading to ambiguity. **Virtual inheritance** (`class B : virtual public A`) ensures only one instance of the base class A is present."
+        },
+        "explanation": "Without virtual inheritance, calling a method from A via an object of D would be ambiguous (compiler won't know whether to use the A-part of B or the A-part of C)."
+    }
+]

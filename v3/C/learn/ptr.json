@@ -1,0 +1,91 @@
+{
+    "id": "learn_ptr",
+    "topicId": "ptr",
+    "topicTitle": "Pointers",
+    "description": "Unlock the true power of C by directly accessing and manipulating memory addresses using pointers.",
+    "baseKP": 80,
+    "slides": [
+        {
+            "id": "ptr_1",
+            "type": "content",
+            "title": "Direct Memory Access",
+            "content": "# Pointers 📍\n\nMost variables store **data** (like `10` or `'A'`).\n A **Pointer** is a variable that stores the **memory address** of another variable.\n\n## Why Pointers?\n- **Efficiency:** Dealing with addresses is faster than copying large data.\n- **Power:** Modify variables outside functions (Call by Reference).\n- **Memory:** Essential for Dynamic Memory Allocation."
+        },
+        {
+            "id": "ptr_2",
+            "type": "content",
+            "title": "Key Operators",
+            "content": "# The Dynamic Duo 👯\n\n## 1. Address-of Operator (`&`)\nGets the memory location of a variable.\n```c\nint x = 10;\n// &x gives the address (e.g., 0x7ffee4)\n```\n\n## 2. Dereference Operator (`*`)\nGets the **value** stored at that address.\n```c\nint *p = &x;\nprintf(\"%d\", *p); // Prints 10\n```\n\n> 🧠 **Analogy:**  `x` is the House. `&x` is the Street Address. `p` is a piece of paper with the address written on it. `*p` is going to that address and looking inside the house."
+        },
+        {
+            "id": "ptr_3",
+            "type": "content",
+            "title": "Declaring Pointers",
+            "content": "# Syntax ✍️\n\n```c\ndata_type *pointer_name;\n```\n\n- `int *p;` -> Pointer to an integer.\n- `float *fp;` -> Pointer to a float.\n- `char *cp;` -> Pointer to a char.\n\n> ⚠️ **Safe Practice:** Always initialize pointers! If you don't have an address yet, set it to `NULL`.\n`int *p = NULL;`"
+        },
+        {
+            "id": "ptr_quiz_1",
+            "type": "quiz",
+            "title": "Operators Check",
+            "content": "If `val` is an integer, what type is `&val`?",
+            "quizQuestion": "Type of &val:",
+            "quizOptions": [
+                "int",
+                "int *",
+                "int **",
+                "address"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "ptr_4",
+            "type": "content",
+            "title": "Pointer Arithmetic",
+            "content": "# Math with Addresses ➕\n\nYou can add/subtract integers to pointers.\n\n```c\nint numbers[5] = {10, 20, 30, 40, 50};\nint *p = &numbers[0];\n\n// p points to 10 (index 0)\np = p + 1;\n// p now points to 20 (index 1)!\n```\n\n**Crucial:** `p + 1` doesn't just add 1 byte. It adds `sizeof(type)` bytes. For an integer (4 bytes), it jumps forward 4 bytes to the next integer."
+        },
+        {
+            "id": "ptr_5",
+            "type": "content",
+            "title": "Pointers and Arrays",
+            "content": "# Secret Identity 🕵️\n\nArrays and pointers are closely linked.\nThe name of an array acts like a constant pointer to the first element.\n\n```c\nint arr[] = {1, 2, 3};\n\n// These are same:\nprintf(\"%d\", arr[0]);\nprintf(\"%d\", *arr);\n\n// These are same:\nprintf(\"%d\", arr[1]);\nprintf(\"%d\", *(arr + 1));\n```"
+        },
+        {
+            "id": "ptr_6",
+            "type": "content",
+            "title": "Call by Reference",
+            "content": "# Modifying Originals 🛠️\n\nUsing pointers, we can pass addresses to functions, allowing them to change the original variables.\n\n```c\nvoid swap(int *a, int *b) {\n    int temp = *a;\n    *a = *b;\n    *b = temp;\n}\n\nint main() {\n    int x=5, y=10;\n    swap(&x, &y);\n    // x is now 10, y is 5\n}\n```"
+        },
+        {
+            "id": "ptr_quiz_2",
+            "type": "quiz",
+            "title": "Size Check",
+            "content": "On a 64-bit system, what is usually the size of a pointer variable?",
+            "quizQuestion": "Pointer size:",
+            "quizOptions": [
+                "2 bytes",
+                "4 bytes",
+                "8 bytes",
+                "Depends on data type"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "ptr_7",
+            "type": "content",
+            "title": "Advanced Pointers",
+            "content": "# Going Deeper 🕳️\n\n## Void Pointer (`void *`)\nA generic pointer. Can point to any data type. Must be cast before dereferencing.\n`void *p = &x;`\n\n## Pointer to Pointer (`int **p`)\nA variable that stores the address of another pointer.\n`x` -> `ptr1` -> `ptr2`\n\n```c\nint a = 5;\nint *p1 = &a;\nint **p2 = &p1;\n// **p2 will give 5\n```"
+        },
+        {
+            "id": "ptr_8",
+            "type": "content",
+            "title": "Full Code Example",
+            "content": "# Pointers in Action\n\n<!-- FULL_CODE_START\n#include <stdio.h>\n\n// Function to update value at a memory address\nvoid updateValue(int *p) {\n    *p = *p * 2;\n}\n\nint main() {\n    int num = 100;\n    int *ptr = &num;\n    \n    printf(\"Original num: %d\\n\", num);\n    printf(\"Address of num: %p\\n\", ptr);\n    \n    // Accessing via pointer\n    printf(\"Value via pointer (*ptr): %d\\n\", *ptr);\n    \n    // Changing value via pointer\n    *ptr = 200;\n    printf(\"New num (changed via ptr): %d\\n\", num);\n    \n    // Pointer Arithmetic with Array\n    printf(\"\\n--- Array Traversal ---\\n\");\n    int arr[] = {10, 20, 30};\n    int *pArray = arr;\n    \n    for(int i=0; i<3; i++) {\n        printf(\"Element %d: %d (Address: %p)\\n\", i, *(pArray + i), (pArray + i));\n    }\n    \n    // Call by reference\n    printf(\"\\n--- Call by Reference ---\\n\");\n    printf(\"Before update: %d\\n\", num);\n    updateValue(&num);\n    printf(\"After update: %d\\n\", num);\n    \n    return 0;\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "ptr_9",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: Pointers 🎓\n\nPointers are powerful but require care.\n\n## Key Takeaways\n- **Definition:** Variables storing addresses.\n- **`&`**: Get address.\n- **`*`**: Access value at address.\n- **Arithmetic:** `ptr++` moves to next element based on type size.\n- **Arrays:** Are essentially pointers to the first element.\n- **Use Case:** Efficient data passing and modifying variables inside functions.\n\nMastering pointers is the biggest hurdle in C. Once you get this, you are truly a C programmer! 🚀"
+        }
+    ]
+}

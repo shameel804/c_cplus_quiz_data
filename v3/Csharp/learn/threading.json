@@ -1,0 +1,79 @@
+{
+    "id": "learn_threading",
+    "topicId": "threading",
+    "topicTitle": "Multithreading and Async",
+    "description": "Unlock the full power of the CPU by running tasks concurrently using Threads, Tasks, and Async/Await.",
+    "baseKP": 90,
+    "slides": [
+        {
+            "id": "th_1",
+            "type": "content",
+            "title": "Doing Two Things at Once 🤹",
+            "content": "# Multithreading\n\nBy default, code runs line-by-line on a single thread (Main Thread).\n\n**Multithreading** allows you to run code in parallel.\n- **Pros:** Responsiveness (UI doesn't freeze), Performance.\n- **Cons:** Complexity (Race conditions)."
+        },
+        {
+            "id": "th_2",
+            "type": "content",
+            "title": "The Thread Class",
+            "content": "# Manual Control 🕹️\n\nIncluded in `System.Threading`.\n\n```csharp\nusing System.Threading;\n\nvoid Print() {\n    Console.WriteLine(\"Running on new thread!\");\n}\n\nThread t = new Thread(Print);\nt.Start(); // Moves 'Print' to separate thread\n\nConsole.WriteLine(\"Main thread continues...\");\n```"
+        },
+        {
+            "id": "th_3",
+            "type": "content",
+            "title": "Thread Safety",
+            "content": "# The Danger Zone ⚠️\n\nIf two threads modify the same variable at the same time, data gets corrupted (Race Condition).\n\n## The Lock\nUse `lock` to ensure only one thread enters a block at a time.\n\n```csharp\nobject _lock = new object();\n\nlock (_lock) {\n    // Only one thread can be here at a time\n    count++;\n}\n```"
+        },
+        {
+            "id": "th_quiz_1",
+            "type": "quiz",
+            "title": "Safety Check",
+            "content": "Which keyword prevents multiple threads from executing a code block simultaneously?",
+            "quizQuestion": "Keyword:",
+            "quizOptions": [
+                "stop",
+                "block",
+                "lock",
+                "sync"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "th_4",
+            "type": "content",
+            "title": "Tasks (TPL)",
+            "content": "# The Modern Way 🚀\n\n`Thread` is heavy. `Task` is light and optimized. Use `System.Threading.Tasks`.\n\n```csharp\nTask.Run(() => {\n    Console.WriteLine(\"Heavy work...\");\n});\n```\nTasks use a \"Thread Pool\" to manage resources efficiently."
+        },
+        {
+            "id": "th_5",
+            "type": "content",
+            "title": "Async and Await",
+            "content": "# Asynchronous Programming ⏳\n\nBest for I/O (File, DB, Web) where the CPU just waits.\n\n1.  **`async`**: Marks a method as asynchronous.\n2.  **`await`**: Pauses execution *without blocking* the thread until task finishes.\n\n```csharp\npublic async Task DownloadData() {\n    // Waits here, but UI stays responsive!\n    await Task.Delay(2000); \n    Console.WriteLine(\"Done!\");\n}\n```"
+        },
+        {
+            "id": "th_6",
+            "type": "content",
+            "title": "Full Example: Baking",
+            "content": "# Async Kitchen\n\n<!-- FULL_CODE_START\nusing System;\nusing System.Threading.Tasks;\n\nclass Program {\n    static async Task Main(string[] args) {\n        Console.WriteLine(\"--- Breakfast Started ---\");\n        \n        // Start Toast (Async)\n        Task<string> toastTask = ToastBread();\n        \n        // Make Coffee (Sync)\n        PourCoffee();\n        \n        // Wait for Toast\n        string toast = await toastTask;\n        Console.WriteLine(\"Result: \" + toast);\n        \n        Console.WriteLine(\"--- Breakfast Ready ---\");\n    }\n    \n    static async Task<string> ToastBread() {\n        Console.WriteLine(\"Putting bread in toaster...\");\n        await Task.Delay(2000); // Simulate 2s work\n        Console.WriteLine(\"Toast popped!\");\n        return \"Crunchy Toast\";\n    }\n    \n    static void PourCoffee() {\n        Console.WriteLine(\"Pouring coffee...\");\n    }\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "th_quiz_2",
+            "type": "quiz",
+            "title": "Async Check",
+            "content": "Which keyword MUST be used in the function signature if you want to use `await` inside it?",
+            "quizQuestion": "Keyword:",
+            "quizOptions": [
+                "async",
+                "await",
+                "task",
+                "void"
+            ],
+            "correctOptionIndex": 0
+        },
+        {
+            "id": "th_7",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: Concurrency 🎓\n\nMake your apps fly!\n\n## Key Takeaways\n- **Thread:** Low-level parallel execution.\n- **Lock:** Protects shared data.\n- **Task:** Higher-level abstraction (TPL).\n- **Async/Await:** Non-blocking wait. Essential for modern apps.\n\nNext, we'll finish with **WPF**, exploring how C# powers Windows Desktop Applications!"
+        }
+    ]
+}

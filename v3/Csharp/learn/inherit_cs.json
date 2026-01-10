@@ -1,0 +1,79 @@
+{
+    "id": "learn_inherit_cs",
+    "topicId": "inherit_cs",
+    "topicTitle": "Inheritance and Polymorphism",
+    "description": "Extend classes, override behaviors, and define contracts using Interfaces and Abstract Classes.",
+    "baseKP": 70,
+    "slides": [
+        {
+            "id": "inh_cs_1",
+            "type": "content",
+            "title": "Inheritance Syntax",
+            "content": "# Extending Classes 🧬\n\nUse the colon `:` syntax.\n\n```csharp\npublic class Animal {\n    public void Eat() { Console.WriteLine(\"Eating\"); }\n}\n\n// Dog inherits from Animal\npublic class Dog : Animal {\n    public void Bark() { Console.WriteLine(\"Woof\"); }\n}\n```\n`Dog` now has both `Eat()` and `Bark()`."
+        },
+        {
+            "id": "inh_cs_2",
+            "type": "content",
+            "title": "The `base` Keyword",
+            "content": "# Calling Parent 📞\n\nUse `base` to access members of the parent class, especially constructors.\n\n```csharp\npublic class Person {\n    public string Name { get; set; }\n    public Person(string name) { Name = name; }\n}\n\npublic class Student : Person {\n    public int Grade { get; set; }\n    // Pass name to parent constructor\n    public Student(string name, int grade) : base(name) {\n        Grade = grade;\n    }\n}\n```"
+        },
+        {
+            "id": "inh_cs_3",
+            "type": "content",
+            "title": "Method Overriding",
+            "content": "# Changing Behavior 🎭\n\nUnlike C++, C# requires explicit keywords for polymorphism.\n\n1.  **`virtual`**: Use in Base class to say \"This can be changed\".\n2.  **`override`**: Use in Child class to say \"I am changing this\".\n\n```csharp\nclass Animal {\n    public virtual void Speak() => Console.WriteLine(\"...\");\n}\nclass Dog : Animal {\n    public override void Speak() => Console.WriteLine(\"Bark\");\n}\n```"
+        },
+        {
+            "id": "inh_cs_quiz_1",
+            "type": "quiz",
+            "title": "Keyword Check",
+            "content": "Which keyword prevents a class from being inherited?",
+            "quizQuestion": "Stop Inheritance:",
+            "quizOptions": [
+                "static",
+                "final",
+                "sealed",
+                "const"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "inh_cs_4",
+            "type": "content",
+            "title": "Abstract Classes",
+            "content": "# Partial Blueprints 🧩\n\nAn **Abstract Class** cannot be instantiated. It can have abstract methods (no code) that children MUST implement.\n\n```csharp\npublic abstract class Shape {\n    // Must be implemented by child\n    public abstract double Area();\n    \n    // Normal method\n    public void Display() { Console.WriteLine(\"Shape\"); }\n}\n```"
+        },
+        {
+            "id": "inh_cs_5",
+            "type": "content",
+            "title": "Interfaces",
+            "content": "# Pure Contracts 📜\n\nAn **Interface** contains only method signatures. A class can implement **multiple** interfaces (solving multiple inheritance).\n\n```csharp\ninterface IMovable {\n    void Move();\n}\n\nclass Car : IMovable {\n    public void Move() { Console.WriteLine(\"Vroom\"); }\n}\n```\nNaming convention: Start with `I`."
+        },
+        {
+            "id": "inh_cs_6",
+            "type": "content",
+            "title": "Full Example: Shapes",
+            "content": "# Polymorphism Demo\n\n<!-- FULL_CODE_START\nusing System;\nusing System.Collections.Generic;\n\npublic abstract class Shape {\n    public abstract double GetArea();\n}\n\npublic class Circle : Shape {\n    public double Radius { get; set; }\n    public Circle(double r) => Radius = r;\n    public override double GetArea() => Math.PI * Radius * Radius;\n}\n\npublic class Square : Shape {\n    public double Side { get; set; }\n    public Square(double s) => Side = s;\n    public override double GetArea() => Side * Side;\n}\n\nclass Program {\n    static void Main() {\n        List<Shape> shapes = new List<Shape>();\n        shapes.Add(new Circle(5));\n        shapes.Add(new Square(4));\n        \n        foreach (var s in shapes) {\n            Console.WriteLine($\"Area: {s.GetArea():F2}\");\n        }\n        Console.ReadKey();\n    }\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "inh_cs_quiz_2",
+            "type": "quiz",
+            "title": "Interface Check",
+            "content": "Can an interface contain a constructor?",
+            "quizQuestion": "Constructor in Interface:",
+            "quizOptions": [
+                "Yes",
+                "No",
+                "Only static ones",
+                "In C# 8.0+"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "inh_cs_7",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: Inheritance 🎓\n\nBuilding hierarchies.\n\n## Key Takeaways\n- **Syntax:** `class Child : Parent`.\n- **Keywords:** `virtual` and `override` are mandatory.\n- **Base:** Access parent members.\n- **Abstract:** For base classes that shouldn't exist alone.\n- **Interface:** Defines capability (`ICanFly`).\n\nNext, we'll learn about **Delegates and Events**, the backbone of C# GUI programming!"
+        }
+    ]
+}

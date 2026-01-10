@@ -1,0 +1,81 @@
+[
+    {
+        "title": "Allocating Memory (malloc)",
+        "ques": "Use `malloc` to dynamically allocate memory for a **single integer**. Assign the value **100** to it and print it.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *ptr = (int*)malloc(sizeof(int));\n    if (ptr != NULL) {\n        *ptr = 100;\n        printf(\"Value: %d\\n\", *ptr);\n        free(ptr);\n    }\n    return 0;\n}"
+        },
+        "explanation": "`malloc(size)` allocates `size` bytes of uninitialized memory and returns a pointer to it. Always cast the return value (though optional in C, good practice) and check for NULL."
+    },
+    {
+        "title": "Freeing Memory",
+        "ques": "Explain why `free()` is necessary after dynamic allocation. Write a snippet showing a `free` call.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "free(ptr); \nptr = NULL; // Good practice to prevent dangling pointer"
+        },
+        "explanation": "Memory allocated on the heap is not automatically released. `free(ptr)` deallocates it to prevent memory leaks."
+    },
+    {
+        "title": "Contiguous Allocation (calloc)",
+        "ques": "How does `calloc` differ from `malloc`? Use `calloc` to allocate an **array of 5 integers** and verify they are initialized to zero.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *arr = (int*)calloc(5, sizeof(int));\n    if (arr != NULL) {\n        for(int i=0; i<5; i++) printf(\"%d \", arr[i]);\n        free(arr);\n    }\n    return 0;\n}"
+        },
+        "explanation": "`calloc(n, size)` allocates memory for `n` elements of `size` bytes and initializes all bytes to **zero**. `malloc` leaves memory containing garbage values."
+    },
+    {
+        "title": "Reallocating Memory (realloc)",
+        "ques": "You have a pointer `ptr` to an array of size 2. Use `realloc` to resize it to accept **5 integers**.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int *ptr = malloc(2 * sizeof(int));\n    // ... use ptr ...\n    int *new_ptr = realloc(ptr, 5 * sizeof(int));\n    if (new_ptr != NULL) {\n        ptr = new_ptr;\n        // ptr now points to size 5 block\n    }\n    free(ptr);\n    return 0;\n}"
+        },
+        "explanation": "`realloc(ptr, new_size)` alters the size of the memory block pointed to by `ptr`. It may move the block to a new location if necessary."
+    },
+    {
+        "title": "Dynamic Arrays",
+        "ques": "Create a program that asks the user for the **number of elements (n)**, allocates an array of that size using `malloc`, and reads `n` integers.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "#include <stdio.h>\n#include <stdlib.h>\n\nint main() {\n    int n;\n    printf(\"Enter number of elements: \");\n    scanf(\"%d\", &n);\n    int *arr = (int*)malloc(n * sizeof(int));\n    if (arr != NULL) {\n        for (int i = 0; i < n; i++) arr[i] = i + 1;\n        // ... process arr ...\n        free(arr);\n    }\n    return 0;\n}"
+        },
+        "explanation": "Dynamic allocation allows creating arrays whose size is determined at runtime, unlike static arrays which need a fixed size at compile time."
+    },
+    {
+        "title": "Memory Leak",
+        "ques": "What is a **memory leak**? Describe a scenario where it occurs in simple terms.",
+        "answer": {
+            "type": "text",
+            "content": "A memory leak happens when a program allocates memory on the heap (using `malloc`, etc.) but loses the pointer to it or fails to `free()` it before the program terminates or the scope ends. This memory remains occupied and cannot be reused."
+        },
+        "explanation": "Leaks reduce available memory over time, potentially causing the program or system to run out of memory (crash)."
+    },
+    {
+        "title": "Allocation Failure",
+        "ques": "Write a robust snippet used to allocate memory that explicitly checks if allocation **failed**.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "int *p = malloc(1000 * sizeof(int));\nif (p == NULL) {\n    printf(\"Memory allocation failed!\\n\");\n    exit(1); // Exit logical flow\n}"
+        },
+        "explanation": "If the system allows no more memory, `malloc` returns `NULL`. accessing a NULL pointer acts as undefined behavior (likely crash)."
+    },
+    {
+        "title": "Dangling Pointer",
+        "ques": "What specific problem creates a **dangling pointer**? Give a code example.",
+        "answer": {
+            "type": "code",
+            "lang": "c",
+            "content": "int *ptr = malloc(sizeof(int));\nfree(ptr);\n// ptr is now a dangling pointer\n*ptr = 10; // Dangerous! Undefined behavior"
+        },
+        "explanation": "A dangling pointer points to a memory location that has already been freed. Accessing it is unsafe. Mitigation: Set `ptr = NULL` immediately after freeing."
+    }
+]

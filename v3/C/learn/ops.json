@@ -1,0 +1,111 @@
+{
+    "id": "learn_ops",
+    "topicId": "ops",
+    "topicTitle": "Operators and Expressions",
+    "description": "Understand how to manipulate data using C's powerful operators, from basic arithmetic to bitwise logic.",
+    "baseKP": 50,
+    "slides": [
+        {
+            "id": "ops_1",
+            "type": "content",
+            "title": "The Tools of Math: Operators",
+            "content": "# Operators & Expressions 🧮\n\nProgramming is all about data manipulation. **Operators** are symbols that tell the compiler to perform specific mathematical or logical manipulations.\n\n## Terms\n- **Operand:** The data items being processed (e.g., `a`, `5`).\n- **Operator:** The symbol performing the action (e.g., `+`).\n- **Expression:** A combination of operands and operators (e.g., `a + 5`).\n\n```c\nint sum = 10 + 20;\n// 10, 20 are operands\n// + is the operator\n// 10 + 20 is the expression\n```"
+        },
+        {
+            "id": "ops_2",
+            "type": "content",
+            "title": "Arithmetic Operators",
+            "content": "# Basic Math ➗\n\nUsed for numerical calculations.\n\n| Operator | Name | Example (a=10, b=3) | Result |\n|---|---|---|---|\n| `+` | Addition | `a + b` | 13 |\n| `-` | Subtraction | `a - b` | 7 |\n| `*` | Multiplication | `a * b` | 30 |\n| `/` | Division | `a / b` | 3 (Integer division!) |\n| `%` | Modulus | `a % b` | 1 (Remainder) |\n\n> ⚠️ **Watch Out:** `10 / 3` gives `3` (integer), not `3.33`. To get decimals, at least one operand must be floating-point: `10.0 / 3` gives `3.33`."
+        },
+        {
+            "id": "ops_quiz_1",
+            "type": "quiz",
+            "title": "Modulus Check",
+            "content": "What is the result of `14 % 5`?",
+            "quizQuestion": "Calculate the remainder:",
+            "quizOptions": [
+                "2.8",
+                "2",
+                "4",
+                "5"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "ops_3",
+            "type": "content",
+            "title": "Relational Operators",
+            "content": "# Comparisons ⚖️\n\nUsed to compare two values. They return **1 (True)** or **0 (False)**.\n\n| Operator | Meaning | Example (x=5, y=3) | Result |\n|---|---|---|---|\n| `==` | Equal to | `x == y` | 0 |\n| `!=` | Not equal | `x != y` | 1 |\n| `>` | Greater than | `x > y` | 1 |\n| `<` | Less than | `x < y` | 0 |\n| `>=` | Greater/Equal | `x >= 5` | 1 |\n| `<=` | Less/Equal | `y <= 5` | 1 |\n\n> ⚠️ **Common Bug:** `x = 5` assigns 5 to x. `x == 5` checks if x equals 5."
+        },
+        {
+            "id": "ops_4",
+            "type": "content",
+            "title": "Logical Operators",
+            "content": "# Making Decisions 🚦\n\nUsed to combine multiple conditions.\n\n## 1. logical AND (`&&`)\nTrue only if **both** sides are true.\n- `(5 > 3) && (2 < 4)` -> `1 && 1` -> **1 (True)**\n\n## 2. logical OR (`||`)\nTrue if **at least one** side is true.\n- `(5 > 3) || (2 > 4)` -> `1 || 0` -> **1 (True)**\n\n## 3. logical NOT (`!`)\nReverses the state.\n- `!(5 > 3)` -> `!1` -> **0 (False)**\n\n**Short-Circuiting:**\nIn `A && B`, if A is false, B is not checked. In `A || B`, if A is true, B is not checked."
+        },
+        {
+            "id": "ops_5",
+            "type": "content",
+            "title": "Assignment & Increment",
+            "content": "# Shortcuts ✂️\n\n## Assignment Operators\n| Op | Expansion | Meaning |\n|---|---|---|\n| `=` | `a = 10` | Assign 10 to a |\n| `+=` | `a += 5` | `a = a + 5` |\n| `-=` | `a -= 5` | `a = a - 5` |\n| `*=` | `a *= 5` | `a = a * 5` |\n\n## Increment/Decrement (`++`, `--`)\nAdds or subtracts 1.\n- **Pre-increment (`++a`):** Change first, then use.\n- **Post-increment (`a++`):** Use first, then change.\n\n```c\nint a = 5;\nint b = a++; // b=5 (old a), a becomes 6\n\nint x = 5;\nint y = ++x; // y=6 (new x), x becomes 6\n```"
+        },
+        {
+            "id": "ops_quiz_2",
+            "type": "quiz",
+            "title": "Increment Trick",
+            "content": "Starting with `i = 3`, what is the value of `k` after `k = ++i * 2`?",
+            "quizQuestion": "Calculate:",
+            "quizOptions": [
+                "6",
+                "7",
+                "8",
+                "9"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "ops_6",
+            "type": "content",
+            "title": "Conditional Operator",
+            "content": "# The One-Liner IF ❓\n\nThe Ternary Operator is a shorthand for if-else.\n\n**Syntax:**\n`Condition ? Expression1 : Expression2;`\n\nIf Condition is true, it executes Expression1, else Expression2.\n\n```c\nint age = 20;\n// Can replace 4 lines of if-else code:\nchar* status = (age >= 18) ? \"Adult\" : \"Minor\";\n```\n\nThis is elegant for simple logic, but don't overuse it for complex conditions!"
+        },
+        {
+            "id": "ops_7",
+            "type": "content",
+            "title": "Bitwise Operators",
+            "content": "# Bit-Level Magic 010101\n\nC allows manipulation of data at the bit level. Important for embedded systems!\n\n| Op | Name | Example (A=5 `0101`, B=3 `0011`) | Result |\n|---|---|---|---|\n| `&` | AND | `A & B` | `0001` (1) |\n| `|` | OR | `A | B` | `0111` (7) |\n| `^` | XOR | `A ^ B` | `0110` (6) |\n| `~` | NOT | `~A` | Inverts bits |\n| `<<`| Left Shift | `A << 1` | `1010` (10) |\n| `>>`| Right Shift| `A >> 1` | `0010` (2) |\n\n`<< 1` effectively multiplies by 2. `>> 1` divides by 2."
+        },
+        {
+            "id": "ops_8",
+            "type": "content",
+            "title": "Operator Precedence",
+            "content": "# Who Goes First? 🥇\n\nJust like BODMAS in math, operators have priority.\n\n**Hierarchy (High to Low):**\n1.  Parentheses `()`\n2.  Unary `++`, `--`, `!`\n3.  Multiplicative `*`, `/`, `%`\n4.  Additive `+`, `-`\n5.  Relational `>`, `<`...\n6.  Equality `==`, `!=`\n7.  Logical AND `&&`\n8.  Logical OR `||`\n9.  Assignment `=, +=...`\n\nExample:\n`5 + 3 * 2` -> `5 + 6` -> `11` (Not 16!)\n\n> 💡 **Tip:** When in doubt, use parentheses! `(5 + 3) * 2` is clearer and safer."
+        },
+        {
+            "id": "ops_9",
+            "type": "content",
+            "title": "Expressions & Conversions",
+            "content": "# Mixing Types 🥤\n\nWhen operators mix types, C promotes the smaller type to the larger type.\n\n**Rule implies:**\n`int` op `double` -> result is `double`\n`float` op `int` -> result is `float`\n\n```c\nint i = 5;\ndouble d = 2.0;\ndouble res = i / d; // 5.0 / 2.0 = 2.5\n```\n\n<!-- FULL_CODE_START\n#include <stdio.h>\n\nint main() {\n    int a = 10, b = 3;\n    double c = 2.5;\n    \n    printf(\"--- Arithmetic ---\\n\");\n    printf(\"Integer Div: %d / %d = %d\\n\", a, b, a/b);\n    printf(\"Modulus: %d %% %d = %d\\n\", a, b, a%b);\n    \n    printf(\"\\n--- Increment ---\\n\");\n    int x = 5;\n    printf(\"Original x: %d\\n\", x);\n    printf(\"Using x++ (Post): %d\\n\", x++);\n    printf(\"After x++: %d\\n\", x);\n    printf(\"Using ++x (Pre): %d\\n\", ++x);\n    \n    printf(\"\\n--- Mixed Expressions ---\\n\");\n    // a (int) is promoted to double for the calculation\n    double mixed = a + c; \n    printf(\"%d (int) + %.1f (double) = %.2f (double)\\n\", a, c, mixed);\n    \n    printf(\"\\n--- Ternary ---\\n\");\n    x > 5 ? printf(\"x is big\\n\") : printf(\"x is small\\n\");\n    \n    return 0;\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "ops_quiz_3",
+            "type": "quiz",
+            "title": "Precedence Test",
+            "content": "What is the value of `result`? `int result = 2 + 3 * 4;`",
+            "quizQuestion": "Solve:",
+            "quizOptions": [
+                "20",
+                "14",
+                "24",
+                "10"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "ops_10",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: Operators 🎓\n\nYou are now equipped to calculate, compare, and decide!\n\n## Key Takeaways\n- **Arithmetic:** Watch out for integer division `/`.\n- **Relational:** `==` is not same as `=`.\n- **Logical:** `&&`, `||`, `!` help combine checks.\n- **Increment:** `++i` vs `i++` matters in assignments.\n- **Precedence:** `*` and `/` happen before `+` and `-`.\n- **Bitwise:** Low-level control for advanced needs.\n\nNext, we will use these operators to control the flow of our programs with `if`, `else`, and loops!"
+        }
+    ]
+}

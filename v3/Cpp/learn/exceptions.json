@@ -1,0 +1,79 @@
+{
+    "id": "learn_exceptions",
+    "topicId": "exceptions",
+    "topicTitle": "Exception Handling",
+    "description": "Write robust code that handles errors gracefully using Try, Catch, and Throw mechanisms.",
+    "baseKP": 80,
+    "slides": [
+        {
+            "id": "ex_1",
+            "type": "content",
+            "title": "When Things Go Wrong 💥",
+            "content": "# Handling Errors\n\nSometimes, things fail at runtime (e.g., dividing by zero, file not found).\nNormally, this **crashes** your program.\n\n**Exceptions** provide a way to transfer control from one part of a program to another when an error occurs, allowing nice recovery instead of a crash."
+        },
+        {
+            "id": "ex_2",
+            "type": "content",
+            "title": "The Big Three",
+            "content": "# try, catch, throw 🤹\n\n1.  **try:** Block of code that might cause an error.\n2.  **throw:** Signals that an error has occurred.\n3.  **catch:** Block that handles the error.\n\n```cpp\ntry {\n    // Risky code\n    throw 10;\n} catch (int e) {\n    // Handled here\n} \n```"
+        },
+        {
+            "id": "ex_3",
+            "type": "content",
+            "title": "Basic Example",
+            "content": "# Division by Zero ➗\n\n```cpp\nint numerator = 10, denominator = 0;\n\ntry {\n    if (denominator == 0) {\n        throw \"Division by Zero!\";\n    }\n    cout << numerator / denominator;\n} \ncatch (const char* msg) {\n    cerr << \"Error: \" << msg << endl;\n}\n```\nHere, we throw a string message and catch it."
+        },
+        {
+            "id": "ex_quiz_1",
+            "type": "quiz",
+            "title": "Keyword Check",
+            "content": "Which keyword is used to SIGNAL an exception?",
+            "quizQuestion": "Keyword:",
+            "quizOptions": [
+                "try",
+                "catch",
+                "throw",
+                "raise"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "ex_4",
+            "type": "content",
+            "title": "Multiple Catches",
+            "content": "# Catching Them All 🥅\n\nA try block can throw different types of exceptions.\n\n```cpp\ntry {\n    if (x == 0) throw 10;     // int\n    if (x == 1) throw 'a';    // char\n} \ncatch (int x)  { ... } \ncatch (char c) { ... }\n```\n\n**Catch All:** `catch (...)` handles any type of exception not caught by previous blocks. Use it as a last resort."
+        },
+        {
+            "id": "ex_5",
+            "type": "content",
+            "title": "Standard Exceptions",
+            "content": "# Built-in Errors 📚\n\nC++ provides a standard hierarchy of exceptions in `<stdexcept>`.\n\n- `std::exception` (Base class)\n- `std::logic_error`\n- `std::runtime_error`\n\n```cpp\n#include <stdexcept>\n\nthrow runtime_error(\"Something bad happened\");\n\ncatch (const std::exception& e) {\n    cout << e.what(); // Prints the message\n}\n```"
+        },
+        {
+            "id": "ex_6",
+            "type": "content",
+            "title": "Full Example: Safe Input",
+            "content": "# Safe Input Handling\n\n<!-- FULL_CODE_START\n#include <iostream>\n#include <stdexcept>\nusing namespace std;\n\ndouble divide(double a, double b) {\n    if (b == 0) {\n        throw runtime_error(\"Math Error: Division by zero\");\n    }\n    return a / b;\n}\n\nint main() {\n    double x, y;\n    cout << \"Enter two numbers (dividend divisor): \";\n    \n    // Check if input is valid numbers\n    if (!(cin >> x >> y)) {\n        cout << \"Invalid input! Not numbers.\" << endl;\n        return 1;\n    }\n    \n    try {\n        double result = divide(x, y);\n        cout << \"Result: \" << result << endl;\n    } \n    catch (const runtime_error& e) {\n        cout << \"Caught Exception: \" << e.what() << endl;\n    }\n    \n    cout << \"Program continues normally...\" << endl;\n    \n    return 0;\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "ex_quiz_2",
+            "type": "quiz",
+            "title": "Catch All",
+            "content": "What is the syntax for a catch block that handles ANY type of exception?",
+            "quizQuestion": "Syntax:",
+            "quizOptions": [
+                "catch (all)",
+                "catch (exception)",
+                "catch (...)",
+                "catch (any)"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "ex_7",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: Exception Handling 🎓\n\nDon't let your program crash unexpectedly!\n\n## Key Takeaways\n- **Try:** Wrap risky code in a `try` block.\n- **Throw:** Use `throw` to signal an error.\n- **Catch:** Handle the error in `catch` blocks.\n- **Hierarchy:** Prefer catching specific exceptions before generic ones (`...`).\n- **Standard Lib:** Use `std::runtime_error` for clearer code.\n\nNext, we will revisit **File Handling**, but this time with C++ streams!"
+        }
+    ]
+}

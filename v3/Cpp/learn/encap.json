@@ -1,0 +1,79 @@
+{
+    "id": "learn_encap",
+    "topicId": "encap",
+    "topicTitle": "Encapsulation and Abstraction",
+    "description": "Secure your code by bundling data with methods and hiding complex implementation details.",
+    "baseKP": 85,
+    "slides": [
+        {
+            "id": "encap_1",
+            "type": "content",
+            "title": "The Capsule 💊",
+            "content": "# Encapsulation\n\nEncapsulation is the process of bundling **data** (variables) and **methods** (functions) that manipulate the data into a single unit (Class).\n\nIt also restricts direct access to some of an object's components, which is a means of **preventing accidental interference**."
+        },
+        {
+            "id": "encap_2",
+            "type": "content",
+            "title": "Information Hiding",
+            "content": "# Private Matters 🔐\n\nWhy make data `private`?\n\nImagine a `BankAccount` class.\n```cpp\nclass BankAccount {\npublic:\n    double balance;\n};\n```\nIf `balance` is public, anyone can do: `account.balance = -99999;` 😱\n\nBy making it private, we protect the integrity of the object."
+        },
+        {
+            "id": "encap_3",
+            "type": "content",
+            "title": "Getters and Setters",
+            "content": "# Controlled Access 👮\n\nWe provide public methods to access private data.\n\n```cpp\nclass Account {\nprivate:\n    double balance;\npublic:\n    // Getter\n    double getBalance() {\n        return balance;\n    }\n    // Setter\n    void deposit(double amount) {\n        if (amount > 0) { // Validation!\n            balance += amount;\n        }\n    }\n};\n```"
+        },
+        {
+            "id": "encap_4",
+            "type": "content",
+            "title": "Abstraction",
+            "content": "# Hiding Complexity 🎭\n\n**Abstraction** means showing only the essential features of an object to the user and hiding the inner details.\n\n## Analogy: Car\n- **Interface (Visible):** Steering wheel, pedals, gear stick.\n- **Implementation (Hidden):** Fuel injection, combustion engine, transmission gears.\n\nYou don't need to know how the engine works to drive the car!"
+        },
+        {
+            "id": "encap_quiz_1",
+            "type": "quiz",
+            "title": "Concept Check",
+            "content": "Which concept is focused on 'hiding implementation details'?",
+            "quizQuestion": "Concept:",
+            "quizOptions": [
+                "Encapsulation",
+                "Abstraction",
+                "Inheritance",
+                "Polymorphism"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "encap_5",
+            "type": "content",
+            "title": "Friend Functions",
+            "content": "# A Trusted Friend 🤝\n\nSometimes, you want an external function to access your private secrets. You can declare it as a **friend**.\n\n```cpp\nclass Box {\n    int width;\npublic:\n    friend void printWidth(Box b);\n    void setWidth(int w) { width = w; }\n};\n\nvoid printWidth(Box b) {\n    // Can access private 'width' because it's a friend\n    cout << \"Width: \" << b.width;\n}\n```\n> ⚠️ **Note:** Friendship is not inherited. And use it sparingly!"
+        },
+        {
+            "id": "encap_6",
+            "type": "content",
+            "title": "Full Example: Secure User",
+            "content": "# Secure Data Management\n\n<!-- FULL_CODE_START\n#include <iostream>\n#include <string>\nusing namespace std;\n\nclass User {\nprivate:\n    string username;\n    string password; // Sensitive data\n    int age;\n\npublic:\n    User(string u, string p, int a) {\n        username = u;\n        password = p;\n        setAge(a);\n    }\n\n    // Setter with Validation\n    void setAge(int a) {\n        if (a >= 18 && a <= 120) {\n            age = a;\n        } else {\n            cout << \"Invalid age! Setting to default 18.\" << endl;\n            age = 18;\n        }\n    }\n\n    // Getter\n    int getAge() {\n        return age;\n    }\n\n    // Method that uses private data internally\n    bool login(string inputPass) {\n        return inputPass == password;\n    }\n};\n\nint main() {\n    User u1(\"admin\", \"1234\", 150); // Unrealistic age\n    \n    cout << \"User Age: \" << u1.getAge() << endl;\n    \n    if(u1.login(\"1234\")) {\n        cout << \"Login Successful!\" << endl;\n    } else {\n        cout << \"Access Denied!\" << endl;\n    }\n    \n    return 0;\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "encap_quiz_2",
+            "type": "quiz",
+            "title": "Friendship Rules",
+            "content": "If Class A is a friend of Class B, can Class B automatically access private members of Class A?",
+            "quizQuestion": "Is friendship mutual?",
+            "quizOptions": [
+                "Yes, always",
+                "No, friendship is not mutual",
+                "Only if specified",
+                "Yes, in C++11"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "encap_7",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: Security & simplicity 🎓\n\nBy bundling and hiding, we create robust software.\n\n## Key Takeaways\n- **Encapsulation:** Data + Methods. Protects data using `private`.\n- **Getters/Setters:** Controlled access points.\n- **Abstraction:** Hiding valid details to reduce complexity.\n- **Friend:** Breaking encapsulation rules for trusted entities.\n\nNext, we'll learn about **Templates**, C++'s way of writing generic, reusable code for any data type!"
+        }
+    ]
+}

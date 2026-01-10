@@ -1,0 +1,6507 @@
+[
+  {
+    "q": "What is C#?",
+    "type": "mcq",
+    "o": [
+      "A modern, object-oriented programming language developed by Microsoft",
+      "A markup language for web development",
+      "A database query language",
+      "An operating system"
+    ]
+  },
+  {
+    "q": "Which company developed C#?",
+    "type": "mcq",
+    "o": [
+      "Microsoft",
+      "Apple",
+      "Google",
+      "Oracle"
+    ]
+  },
+  {
+    "q": "What is the file extension for C# source files?",
+    "type": "mcq",
+    "o": [
+      ".cs",
+      ".csharp",
+      ".c#",
+      ".cpp"
+    ]
+  },
+  {
+    "q": "Which framework is commonly used to run C# applications?",
+    "type": "mcq",
+    "o": [
+      ".NET Framework",
+      "Java Virtual Machine",
+      "Node.js",
+      "Ruby on Rails"
+    ]
+  },
+  {
+    "q": "What is the output of this C# code?",
+    "type": "mcq",
+    "c": "Console.WriteLine(\"Hello World\");",
+    "o": [
+      "Hello World",
+      "hello world",
+      "HELLO WORLD",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to declare a variable in C#?",
+    "type": "mcq",
+    "o": [
+      "var",
+      "let",
+      "const",
+      "dim"
+    ]
+  },
+  {
+    "q": "What is the correct way to declare an integer variable in C#?",
+    "type": "mcq",
+    "o": [
+      "int number = 10;",
+      "integer number = 10;",
+      "num number = 10;",
+      "Int number = 10;"
+    ]
+  },
+  {
+    "q": "C# is a case-sensitive programming language.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Which method is the entry point of a C# console application?",
+    "type": "mcq",
+    "o": [
+      "Main()",
+      "Start()",
+      "Run()",
+      "Begin()"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int x = 5;\nint y = 3;\nConsole.WriteLine(x + y);",
+    "o": [
+      "8",
+      "53",
+      "5 + 3",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword is used to define a class in C#.",
+    "type": "fill_blank",
+    "answers": [
+      "class"
+    ],
+    "other_options": [
+      "struct",
+      "object",
+      "define"
+    ]
+  },
+  {
+    "q": "Which data type is used to store text in C#?",
+    "type": "mcq",
+    "o": [
+      "string",
+      "text",
+      "char",
+      "varchar"
+    ]
+  },
+  {
+    "q": "What is the default value of an int variable in C#?",
+    "type": "mcq",
+    "o": [
+      "0",
+      "null",
+      "undefined",
+      "-1"
+    ]
+  },
+  {
+    "q": "Which symbol is used to end a statement in C#?",
+    "type": "mcq",
+    "o": [
+      ";",
+      ":",
+      ".",
+      ","
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string name = \"C#\";\nConsole.WriteLine(name.Length);",
+    "o": [
+      "2",
+      "3",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which operator is used for equality comparison in C#?",
+    "type": "mcq",
+    "o": [
+      "==",
+      "=",
+      "===",
+      "!="
+    ]
+  },
+  {
+    "q": "C# supports multiple inheritance of classes.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "What is the correct syntax for a single-line comment in C#?",
+    "type": "mcq",
+    "o": [
+      "// This is a comment",
+      "# This is a comment",
+      "-- This is a comment",
+      "/* This is a comment"
+    ]
+  },
+  {
+    "q": "Which data type stores true or false values?",
+    "type": "mcq",
+    "o": [
+      "bool",
+      "boolean",
+      "bit",
+      "flag"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "bool isTrue = true;\nConsole.WriteLine(isTrue);",
+    "o": [
+      "True",
+      "true",
+      "1",
+      "Yes"
+    ]
+  },
+  {
+    "q": "Match the C# data types with their descriptions:",
+    "type": "match",
+    "left": [
+      "int",
+      "string",
+      "bool",
+      "double"
+    ],
+    "right": [
+      "Whole numbers",
+      "Text values",
+      "True or false",
+      "Decimal numbers"
+    ]
+  },
+  {
+    "q": "Which keyword is used to create a constant in C#?",
+    "type": "mcq",
+    "o": [
+      "const",
+      "final",
+      "static",
+      "readonly"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int a = 10;\nint b = 3;\nConsole.WriteLine(a / b);",
+    "o": [
+      "3",
+      "3.33",
+      "3.333333",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ namespace contains fundamental classes in C#.",
+    "type": "fill_blank",
+    "answers": [
+      "System"
+    ],
+    "other_options": [
+      "Core",
+      "Base",
+      "Main"
+    ]
+  },
+  {
+    "q": "Which keyword declares a method that does not return a value?",
+    "type": "mcq",
+    "o": [
+      "void",
+      "null",
+      "empty",
+      "none"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int x = 7;\nConsole.WriteLine(x % 2);",
+    "o": [
+      "1",
+      "3",
+      "0",
+      "3.5"
+    ]
+  },
+  {
+    "q": "C# is a statically typed programming language.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Which access modifier makes a member accessible only within its class?",
+    "type": "mcq",
+    "o": [
+      "private",
+      "public",
+      "protected",
+      "internal"
+    ]
+  },
+  {
+    "q": "What does the using directive do in C#?",
+    "type": "mcq",
+    "o": [
+      "Imports namespaces",
+      "Creates variables",
+      "Defines methods",
+      "Declares classes"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string s = \"Hello\";\nConsole.WriteLine(s.ToUpper());",
+    "o": [
+      "HELLO",
+      "hello",
+      "Hello",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the parts of a basic C# program structure:",
+    "type": "rearrange",
+    "words": [
+      "using System;",
+      "namespace",
+      "class",
+      "Main method",
+      "statements"
+    ]
+  },
+  {
+    "q": "Which operator is used for logical AND in C#?",
+    "type": "mcq",
+    "o": [
+      "&&",
+      "&",
+      "AND",
+      "and"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int x = 5;\nx++;\nConsole.WriteLine(x);",
+    "o": [
+      "6",
+      "5",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword is used to create an instance of a class.",
+    "type": "fill_blank",
+    "answers": [
+      "new"
+    ],
+    "other_options": [
+      "create",
+      "instance",
+      "make"
+    ]
+  },
+  {
+    "q": "Which of the following is a valid variable name in C#?",
+    "type": "mcq",
+    "o": [
+      "myVariable",
+      "1variable",
+      "my-variable",
+      "my variable"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "double d = 5.5;\nint i = (int)d;\nConsole.WriteLine(i);",
+    "o": [
+      "5",
+      "5.5",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "In C#, variables must be declared before they are used.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Which data type can store the largest whole number?",
+    "type": "mcq",
+    "o": [
+      "long",
+      "int",
+      "short",
+      "byte"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string a = \"Hello\";\nstring b = \"World\";\nConsole.WriteLine(a + \" \" + b);",
+    "o": [
+      "Hello World",
+      "HelloWorld",
+      "Hello + World",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which operator is used for logical OR in C#?",
+    "type": "mcq",
+    "o": [
+      "||",
+      "|",
+      "OR",
+      "or"
+    ]
+  },
+  {
+    "q": "Match the C# operators with their operations:",
+    "type": "match",
+    "left": [
+      "+",
+      "-",
+      "*",
+      "/"
+    ],
+    "right": [
+      "Addition",
+      "Subtraction",
+      "Multiplication",
+      "Division"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int x = 10;\nint y = 5;\nConsole.WriteLine(x > y);",
+    "o": [
+      "True",
+      "False",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a namespace in C#?",
+    "type": "mcq",
+    "o": [
+      "namespace",
+      "package",
+      "module",
+      "import"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "char c = 'A';\nConsole.WriteLine((int)c);",
+    "o": [
+      "65",
+      "A",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ data type is used to store a single character in C#.",
+    "type": "fill_blank",
+    "answers": [
+      "char"
+    ],
+    "other_options": [
+      "character",
+      "chr",
+      "letter"
+    ]
+  },
+  {
+    "q": "Which statement is used for decision making in C#?",
+    "type": "mcq",
+    "o": [
+      "if",
+      "for",
+      "while",
+      "do"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int x = 5;\nif (x > 3)\n    Console.WriteLine(\"Yes\");\nelse\n    Console.WriteLine(\"No\");",
+    "o": [
+      "Yes",
+      "No",
+      "5",
+      "Error"
+    ]
+  },
+  {
+    "q": "C# code must be compiled before execution.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int[] arr = {1, 2, 3};\nConsole.WriteLine(arr.Length);",
+    "o": [
+      "3",
+      "2",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which loop is guaranteed to execute at least once?",
+    "type": "mcq",
+    "o": [
+      "do-while",
+      "for",
+      "while",
+      "foreach"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "for (int i = 0; i < 3; i++)\n    Console.Write(i);",
+    "o": [
+      "012",
+      "123",
+      "0123",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match the loop types with their use cases:",
+    "type": "match",
+    "left": [
+      "for",
+      "while",
+      "do-while",
+      "foreach"
+    ],
+    "right": [
+      "Known iterations",
+      "Unknown iterations",
+      "Execute at least once",
+      "Iterate collections"
+    ]
+  },
+  {
+    "q": "Which keyword is used to exit a loop immediately?",
+    "type": "mcq",
+    "o": [
+      "break",
+      "exit",
+      "stop",
+      "end"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int i = 0;\nwhile (i < 3)\n{\n    Console.Write(i);\n    i++;\n}",
+    "o": [
+      "012",
+      "123",
+      "0123",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword skips the current iteration and continues with the next.",
+    "type": "fill_blank",
+    "answers": [
+      "continue"
+    ],
+    "other_options": [
+      "skip",
+      "next",
+      "pass"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string[] fruits = {\"apple\", \"banana\"};\nforeach (string f in fruits)\n    Console.Write(f + \" \");",
+    "o": [
+      "apple banana",
+      "fruits",
+      "0 1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which statement allows multiple case conditions?",
+    "type": "mcq",
+    "o": [
+      "switch",
+      "if",
+      "for",
+      "while"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int x = 2;\nswitch(x)\n{\n    case 1: Console.Write(\"One\"); break;\n    case 2: Console.Write(\"Two\"); break;\n    default: Console.Write(\"Other\"); break;\n}",
+    "o": [
+      "Two",
+      "One",
+      "Other",
+      "Error"
+    ]
+  },
+  {
+    "q": "In C#, the default case in a switch statement is mandatory.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int[] nums = new int[3];\nConsole.WriteLine(nums[0]);",
+    "o": [
+      "0",
+      "null",
+      "undefined",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword is used to define a method in C#?",
+    "type": "mcq",
+    "o": [
+      "No special keyword needed",
+      "function",
+      "def",
+      "method"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "static int Add(int a, int b)\n{\n    return a + b;\n}\n\nConsole.WriteLine(Add(3, 4));",
+    "o": [
+      "7",
+      "34",
+      "3 + 4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the method definition components:",
+    "type": "rearrange",
+    "words": [
+      "access modifier",
+      "return type",
+      "method name",
+      "parameters",
+      "body"
+    ]
+  },
+  {
+    "q": "Which keyword is used to return a value from a method?",
+    "type": "mcq",
+    "o": [
+      "return",
+      "yield",
+      "output",
+      "give"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "static void Greet(string name)\n{\n    Console.WriteLine(\"Hello \" + name);\n}\n\nGreet(\"Bob\");",
+    "o": [
+      "Hello Bob",
+      "Hello name",
+      "Greet Bob",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword makes a method accessible without creating an instance.",
+    "type": "fill_blank",
+    "answers": [
+      "static"
+    ],
+    "other_options": [
+      "public",
+      "const",
+      "shared"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int[] arr = {5, 10, 15};\nConsole.WriteLine(arr[1]);",
+    "o": [
+      "10",
+      "5",
+      "15",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which of these is a reference type in C#?",
+    "type": "mcq",
+    "o": [
+      "string",
+      "int",
+      "double",
+      "bool"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string s = null;\nConsole.WriteLine(s == null);",
+    "o": [
+      "True",
+      "False",
+      "null",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match the C# keywords with their purposes:",
+    "type": "match",
+    "left": [
+      "class",
+      "namespace",
+      "using",
+      "static"
+    ],
+    "right": [
+      "Define a type",
+      "Organize code",
+      "Import namespaces",
+      "Shared member"
+    ]
+  },
+  {
+    "q": "Which method is used to read a line from console input?",
+    "type": "mcq",
+    "o": [
+      "Console.ReadLine()",
+      "Console.Read()",
+      "Console.Input()",
+      "Console.Get()"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int x = 10;\nint y = x;\ny = 20;\nConsole.WriteLine(x);",
+    "o": [
+      "10",
+      "20",
+      "30",
+      "Error"
+    ]
+  },
+  {
+    "q": "In C#, arrays are zero-indexed.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string s = \"Hello\";\nConsole.WriteLine(s[0]);",
+    "o": [
+      "H",
+      "Hello",
+      "e",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which operator is used for not equal comparison?",
+    "type": "mcq",
+    "o": [
+      "!=",
+      "<>",
+      "=/=",
+      "not="
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "bool a = true;\nbool b = false;\nConsole.WriteLine(a && b);",
+    "o": [
+      "False",
+      "True",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ operator is used for logical NOT in C#.",
+    "type": "fill_blank",
+    "answers": [
+      "!"
+    ],
+    "other_options": [
+      "not",
+      "~",
+      "^"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "bool a = false;\nbool b = true;\nConsole.WriteLine(a || b);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Which keyword declares a variable that cannot be changed?",
+    "type": "mcq",
+    "o": [
+      "const",
+      "var",
+      "let",
+      "mutable"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "const int MAX = 100;\nConsole.WriteLine(MAX);",
+    "o": [
+      "100",
+      "MAX",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "C# supports garbage collection for memory management.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int x = 5;\nint y = 2;\nConsole.WriteLine((double)x / y);",
+    "o": [
+      "2.5",
+      "2",
+      "3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method converts a string to an integer?",
+    "type": "mcq",
+    "o": [
+      "int.Parse()",
+      "int.Convert()",
+      "int.ToInt()",
+      "int.Cast()"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string s = \"123\";\nint n = int.Parse(s);\nConsole.WriteLine(n + 1);",
+    "o": [
+      "124",
+      "1231",
+      "123",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match the string methods with their functions:",
+    "type": "match",
+    "left": [
+      "ToUpper()",
+      "ToLower()",
+      "Trim()",
+      "Length"
+    ],
+    "right": [
+      "Convert to uppercase",
+      "Convert to lowercase",
+      "Remove whitespace",
+      "Get character count"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string s = \"  Hello  \";\nConsole.WriteLine(s.Trim());",
+    "o": [
+      "Hello",
+      "  Hello  ",
+      "Hello  ",
+      "  Hello"
+    ]
+  },
+  {
+    "q": "Which method checks if a string contains a substring?",
+    "type": "mcq",
+    "o": [
+      "Contains()",
+      "Has()",
+      "Includes()",
+      "Find()"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string s = \"Hello World\";\nConsole.WriteLine(s.Contains(\"World\"));",
+    "o": [
+      "True",
+      "False",
+      "World",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method replaces characters in a string.",
+    "type": "fill_blank",
+    "answers": [
+      "Replace"
+    ],
+    "other_options": [
+      "Swap",
+      "Change",
+      "Substitute"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string s = \"Hello\";\nConsole.WriteLine(s.Replace(\"l\", \"x\"));",
+    "o": [
+      "Hexxo",
+      "Hexlo",
+      "Hello",
+      "Error"
+    ]
+  },
+  {
+    "q": "C# string objects are mutable.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string s = \"Hello\";\nConsole.WriteLine(s.Substring(1, 3));",
+    "o": [
+      "ell",
+      "Hel",
+      "llo",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method splits a string into an array?",
+    "type": "mcq",
+    "o": [
+      "Split()",
+      "Divide()",
+      "Separate()",
+      "Break()"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string s = \"a,b,c\";\nstring[] arr = s.Split(',');\nConsole.WriteLine(arr[1]);",
+    "o": [
+      "b",
+      "a",
+      "c",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the steps to declare and use a variable:",
+    "type": "rearrange",
+    "words": [
+      "Choose data type",
+      "Name variable",
+      "Assign value",
+      "Use variable"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int x = 10;\nx += 5;\nConsole.WriteLine(x);",
+    "o": [
+      "15",
+      "10",
+      "5",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which data type stores decimal numbers with high precision?",
+    "type": "mcq",
+    "o": [
+      "decimal",
+      "float",
+      "double",
+      "int"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "decimal price = 19.99m;\nConsole.WriteLine(price);",
+    "o": [
+      "19.99",
+      "19.99m",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which suffix is used for decimal literals in C#?",
+    "type": "mcq",
+    "o": [
+      "m",
+      "d",
+      "f",
+      "l"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int x = 10;\nConsole.WriteLine(x-- + --x);",
+    "o": [
+      "18",
+      "19",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method converts an object to its string representation.",
+    "type": "fill_blank",
+    "answers": [
+      "ToString"
+    ],
+    "other_options": [
+      "Convert",
+      "Parse",
+      "Format"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int n = 42;\nConsole.WriteLine(n.ToString());",
+    "o": [
+      "42",
+      "n",
+      "Integer",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method safely converts a string to an int without throwing an exception?",
+    "type": "mcq",
+    "o": [
+      "int.TryParse()",
+      "int.Parse()",
+      "Convert.ToInt32()",
+      "int.SafeParse()"
+    ]
+  },
+  {
+    "q": "The default keyword in C# can be used inline without specifying a type.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string s = \"Hello\";\nConsole.WriteLine(s.IndexOf('l'));",
+    "o": [
+      "2",
+      "3",
+      "1",
+      "-1"
+    ]
+  },
+  {
+    "q": "Which method returns -1 if a substring is not found?",
+    "type": "mcq",
+    "o": [
+      "IndexOf()",
+      "Contains()",
+      "Find()",
+      "Search()"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string s = \"Hello\";\nConsole.WriteLine(s.StartsWith(\"He\"));",
+    "o": [
+      "True",
+      "False",
+      "He",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match the type conversion methods with their behavior:",
+    "type": "match",
+    "left": [
+      "int.Parse()",
+      "int.TryParse()",
+      "Convert.ToInt32()",
+      "(int)"
+    ],
+    "right": [
+      "Throws on invalid input",
+      "Returns bool on failure",
+      "Handles null as 0",
+      "Explicit cast"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string s = \"World\";\nConsole.WriteLine(s.EndsWith(\"ld\"));",
+    "o": [
+      "True",
+      "False",
+      "ld",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method inserts characters into a string at a specified index.",
+    "type": "fill_blank",
+    "answers": [
+      "Insert"
+    ],
+    "other_options": [
+      "Add",
+      "Append",
+      "Put"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string s = \"Hello\";\nConsole.WriteLine(s.Insert(5, \" World\"));",
+    "o": [
+      "Hello World",
+      "HelloWorld",
+      " WorldHello",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method removes characters from a string?",
+    "type": "mcq",
+    "o": [
+      "Remove()",
+      "Delete()",
+      "Cut()",
+      "Erase()"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string s = \"Hello World\";\nConsole.WriteLine(s.Remove(5));",
+    "o": [
+      "Hello",
+      "World",
+      "Hello ",
+      "Error"
+    ]
+  },
+  {
+    "q": "The null-coalescing operator ?? returns the left operand if it is not null.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string s = null;\nConsole.WriteLine(s ?? \"default\");",
+    "o": [
+      "default",
+      "null",
+      "s",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which operator is the ternary conditional operator?",
+    "type": "mcq",
+    "o": [
+      "?:",
+      "??",
+      "?.",
+      ":?"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int x = 5;\nstring result = x > 3 ? \"Yes\" : \"No\";\nConsole.WriteLine(result);",
+    "o": [
+      "Yes",
+      "No",
+      "5",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the ternary operator components:",
+    "type": "rearrange",
+    "words": [
+      "condition",
+      "?",
+      "true value",
+      ":",
+      "false value"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int[] arr = {1, 2, 3, 4, 5};\nConsole.WriteLine(arr[arr.Length - 1]);",
+    "o": [
+      "5",
+      "4",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword declares a multidimensional array?",
+    "type": "mcq",
+    "o": [
+      "int[,] arr",
+      "int[][] arr",
+      "int[] arr[]",
+      "int[2] arr"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int[,] arr = {{1, 2}, {3, 4}};\nConsole.WriteLine(arr[1, 0]);",
+    "o": [
+      "3",
+      "2",
+      "1",
+      "4"
+    ]
+  },
+  {
+    "q": "The ______ property returns the total number of elements in an array.",
+    "type": "fill_blank",
+    "answers": [
+      "Length"
+    ],
+    "other_options": [
+      "Size",
+      "Count",
+      "Total"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int[,] arr = new int[2, 3];\nConsole.WriteLine(arr.Length);",
+    "o": [
+      "6",
+      "2",
+      "3",
+      "5"
+    ]
+  },
+  {
+    "q": "Which method sorts an array in ascending order?",
+    "type": "mcq",
+    "o": [
+      "Array.Sort()",
+      "Array.Order()",
+      "Array.Arrange()",
+      "Array.Ascending()"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int[] arr = {3, 1, 2};\nArray.Sort(arr);\nConsole.WriteLine(arr[0]);",
+    "o": [
+      "1",
+      "3",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "C# supports jagged arrays where each row can have a different length.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int[][] jagged = new int[2][];\njagged[0] = new int[] {1, 2};\njagged[1] = new int[] {3, 4, 5};\nConsole.WriteLine(jagged[1].Length);",
+    "o": [
+      "3",
+      "2",
+      "5",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method reverses an array?",
+    "type": "mcq",
+    "o": [
+      "Array.Reverse()",
+      "Array.Flip()",
+      "Array.Invert()",
+      "Array.Swap()"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int[] arr = {1, 2, 3};\nArray.Reverse(arr);\nConsole.WriteLine(arr[0]);",
+    "o": [
+      "3",
+      "1",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match the Array methods with their functions:",
+    "type": "match",
+    "left": [
+      "Sort()",
+      "Reverse()",
+      "IndexOf()",
+      "Copy()"
+    ],
+    "right": [
+      "Order elements",
+      "Flip order",
+      "Find position",
+      "Duplicate array"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int[] arr = {1, 2, 3, 2};\nConsole.WriteLine(Array.IndexOf(arr, 2));",
+    "o": [
+      "1",
+      "3",
+      "2",
+      "0"
+    ]
+  },
+  {
+    "q": "The ______ method clears all elements in an array to their default values.",
+    "type": "fill_blank",
+    "answers": [
+      "Clear"
+    ],
+    "other_options": [
+      "Reset",
+      "Empty",
+      "Delete"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int[] arr = {1, 2, 3};\nArray.Clear(arr, 0, arr.Length);\nConsole.WriteLine(arr[1]);",
+    "o": [
+      "0",
+      "2",
+      "null",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method copies elements from one array to another?",
+    "type": "mcq",
+    "o": [
+      "Array.Copy()",
+      "Array.Clone()",
+      "Array.Transfer()",
+      "Array.Move()"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int[] src = {1, 2, 3};\nint[] dest = new int[3];\nArray.Copy(src, dest, 3);\nConsole.WriteLine(dest[2]);",
+    "o": [
+      "3",
+      "0",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "The params keyword allows passing a variable number of arguments.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "static int Sum(params int[] nums)\n{\n    int total = 0;\n    foreach (int n in nums) total += n;\n    return total;\n}\n\nConsole.WriteLine(Sum(1, 2, 3, 4));",
+    "o": [
+      "10",
+      "4",
+      "1234",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword passes an argument by reference?",
+    "type": "mcq",
+    "o": [
+      "ref",
+      "out",
+      "in",
+      "byref"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "static void Double(ref int n)\n{\n    n *= 2;\n}\n\nint x = 5;\nDouble(ref x);\nConsole.WriteLine(x);",
+    "o": [
+      "10",
+      "5",
+      "25",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the steps of method execution:",
+    "type": "rearrange",
+    "words": [
+      "Call method",
+      "Pass arguments",
+      "Execute body",
+      "Return value",
+      "Continue caller"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "static void GetValues(out int a, out int b)\n{\n    a = 10;\n    b = 20;\n}\n\nint x, y;\nGetValues(out x, out y);\nConsole.WriteLine(x + y);",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "The out parameter must be assigned before the method returns.",
+    "type": "fill_blank",
+    "answers": [
+      "out"
+    ],
+    "other_options": [
+      "ref",
+      "in",
+      "params"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "static int Multiply(int a, int b = 2)\n{\n    return a * b;\n}\n\nConsole.WriteLine(Multiply(5));",
+    "o": [
+      "10",
+      "5",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default parameter values must appear after non-default parameters.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "static void Print(string msg, int count = 1)\n{\n    for (int i = 0; i < count; i++)\n        Console.Write(msg);\n}\n\nPrint(\"Hi\", 3);",
+    "o": [
+      "HiHiHi",
+      "Hi",
+      "Hi3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which feature allows calling a method with named arguments?",
+    "type": "mcq",
+    "o": [
+      "Named parameters",
+      "Optional parameters",
+      "Variable parameters",
+      "Default parameters"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "static int Calc(int a, int b, int c)\n{\n    return a + b * c;\n}\n\nConsole.WriteLine(Calc(c: 2, a: 1, b: 3));",
+    "o": [
+      "7",
+      "8",
+      "9",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match the parameter passing keywords:",
+    "type": "match",
+    "left": [
+      "ref",
+      "out",
+      "in",
+      "params"
+    ],
+    "right": [
+      "Two-way reference",
+      "Output only",
+      "Read-only reference",
+      "Variable arguments"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "static void Swap(ref int a, ref int b)\n{\n    int temp = a;\n    a = b;\n    b = temp;\n}\n\nint x = 1, y = 2;\nSwap(ref x, ref y);\nConsole.WriteLine(x);",
+    "o": [
+      "2",
+      "1",
+      "3",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ statement can return multiple values using tuples.",
+    "type": "fill_blank",
+    "answers": [
+      "return"
+    ],
+    "other_options": [
+      "yield",
+      "output",
+      "result"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "static (int, int) GetPair()\n{\n    return (10, 20);\n}\n\nvar result = GetPair();\nConsole.WriteLine(result.Item1);",
+    "o": [
+      "10",
+      "20",
+      "(10, 20)",
+      "Error"
+    ]
+  },
+  {
+    "q": "C# tuples can have named elements.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var tuple = (Name: \"Alice\", Age: 25);\nConsole.WriteLine(tuple.Name);",
+    "o": [
+      "Alice",
+      "Name",
+      "25",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which operator allows null-conditional member access?",
+    "type": "mcq",
+    "o": [
+      "?.",
+      "??",
+      "?:",
+      ".?"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string s = null;\nConsole.WriteLine(s?.Length ?? -1);",
+    "o": [
+      "-1",
+      "0",
+      "null",
+      "Error"
+    ]
+  },
+  {
+    "q": "The var keyword allows implicit type inference.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var numbers = new[] {1, 2, 3};\nConsole.WriteLine(numbers.GetType().Name);",
+    "o": [
+      "Int32[]",
+      "var[]",
+      "Array",
+      "Object[]"
+    ]
+  },
+  {
+    "q": "Which method joins array elements into a single string?",
+    "type": "mcq",
+    "o": [
+      "string.Join()",
+      "string.Concat()",
+      "string.Merge()",
+      "string.Combine()"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string[] words = {\"a\", \"b\", \"c\"};\nConsole.WriteLine(string.Join(\"-\", words));",
+    "o": [
+      "a-b-c",
+      "abc",
+      "a, b, c",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the compilation process steps:",
+    "type": "rearrange",
+    "words": [
+      "Write code",
+      "Compile to IL",
+      "JIT compile",
+      "Execute",
+      "Return result"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string s = \"  Hello  \";\nConsole.WriteLine(s.TrimStart().TrimEnd());",
+    "o": [
+      "Hello",
+      "  Hello",
+      "Hello  ",
+      "  Hello  "
+    ]
+  },
+  {
+    "q": "The ______ method pads a string to a specified length with spaces on the left.",
+    "type": "fill_blank",
+    "answers": [
+      "PadLeft"
+    ],
+    "other_options": [
+      "LeftPad",
+      "PadStart",
+      "SpaceLeft"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string s = \"Hi\";\nConsole.WriteLine(s.PadLeft(5));",
+    "o": [
+      "   Hi",
+      "Hi   ",
+      "  Hi ",
+      "Hi"
+    ]
+  },
+  {
+    "q": "Which method checks if two strings are equal ignoring case?",
+    "type": "mcq",
+    "o": [
+      "string.Equals() with StringComparison",
+      "string.Compare()",
+      "string.Match()",
+      "string.Same()"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string a = \"Hello\";\nstring b = \"HELLO\";\nConsole.WriteLine(string.Equals(a, b, StringComparison.OrdinalIgnoreCase));",
+    "o": [
+      "True",
+      "False",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match the string methods with their return types:",
+    "type": "match",
+    "left": [
+      "Length",
+      "ToUpper()",
+      "IndexOf()",
+      "Contains()"
+    ],
+    "right": [
+      "int",
+      "string",
+      "int",
+      "bool"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string s = \"Hello\";\nConsole.WriteLine(s.ToCharArray()[1]);",
+    "o": [
+      "e",
+      "H",
+      "l",
+      "Error"
+    ]
+  },
+  {
+    "q": "The static modifier means the member belongs to the type itself, not an instance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Console.WriteLine(Math.Abs(-5));",
+    "o": [
+      "5",
+      "-5",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which Math method returns the larger of two numbers?",
+    "type": "mcq",
+    "o": [
+      "Math.Max()",
+      "Math.Larger()",
+      "Math.Greater()",
+      "Math.Big()"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Console.WriteLine(Math.Max(3, 7));",
+    "o": [
+      "7",
+      "3",
+      "10",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method returns the smaller of two numbers.",
+    "type": "fill_blank",
+    "answers": [
+      "Min"
+    ],
+    "other_options": [
+      "Smaller",
+      "Lesser",
+      "Low"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Console.WriteLine(Math.Pow(2, 3));",
+    "o": [
+      "8",
+      "6",
+      "5",
+      "9"
+    ]
+  },
+  {
+    "q": "Which method returns the square root of a number?",
+    "type": "mcq",
+    "o": [
+      "Math.Sqrt()",
+      "Math.Root()",
+      "Math.Sq()",
+      "Math.SquareRoot()"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Console.WriteLine(Math.Sqrt(16));",
+    "o": [
+      "4",
+      "8",
+      "256",
+      "2"
+    ]
+  },
+  {
+    "q": "Math.Round() uses banker's rounding by default.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Console.WriteLine(Math.Floor(3.7));",
+    "o": [
+      "3",
+      "4",
+      "3.7",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method always rounds up to the nearest integer?",
+    "type": "mcq",
+    "o": [
+      "Math.Ceiling()",
+      "Math.Round()",
+      "Math.Floor()",
+      "Math.Up()"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Console.WriteLine(Math.Ceiling(3.1));",
+    "o": [
+      "4",
+      "3",
+      "3.1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match the Math methods with their functions:",
+    "type": "match",
+    "left": [
+      "Abs()",
+      "Pow()",
+      "Sqrt()",
+      "Round()"
+    ],
+    "right": [
+      "Absolute value",
+      "Exponentiation",
+      "Square root",
+      "Round to nearest"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Console.WriteLine(Math.Truncate(3.9));",
+    "o": [
+      "3",
+      "4",
+      "3.9",
+      "0"
+    ]
+  },
+  {
+    "q": "The ______ class is used for generating random numbers.",
+    "type": "fill_blank",
+    "answers": [
+      "Random"
+    ],
+    "other_options": [
+      "Rand",
+      "RNG",
+      "Randomizer"
+    ]
+  },
+  {
+    "q": "What does Random.Next(1, 10) return?",
+    "type": "mcq",
+    "o": [
+      "A random integer from 1 to 9",
+      "A random integer from 1 to 10",
+      "A random integer from 0 to 10",
+      "A random double from 1 to 10"
+    ]
+  },
+  {
+    "q": "The upper bound in Random.Next() is exclusive.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Console.WriteLine(5.GetType().Name);",
+    "o": [
+      "Int32",
+      "int",
+      "Integer",
+      "Number"
+    ]
+  },
+  {
+    "q": "Which method checks if a type is a value type?",
+    "type": "mcq",
+    "o": [
+      "Type.IsValueType",
+      "Type.IsValue()",
+      "Type.ValueType()",
+      "Type.CheckValue()"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Console.WriteLine(typeof(int).Name);",
+    "o": [
+      "Int32",
+      "int",
+      "Integer",
+      "System.Int32"
+    ]
+  },
+  {
+    "q": "Rearrange the numeric types by size (smallest to largest):",
+    "type": "rearrange",
+    "words": [
+      "byte",
+      "short",
+      "int",
+      "long",
+      "decimal"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "byte b = 255;\nb++;\nConsole.WriteLine(b);",
+    "o": [
+      "0",
+      "256",
+      "255",
+      "Error"
+    ]
+  },
+  {
+    "q": "The checked keyword throws an exception on integer overflow.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int.TryParse(\"abc\", out int result);\nConsole.WriteLine(result);",
+    "o": [
+      "0",
+      "abc",
+      "null",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method formats a number as currency?",
+    "type": "mcq",
+    "o": [
+      "ToString(\"C\")",
+      "ToString(\"$\")",
+      "ToCurrency()",
+      "Format(\"currency\")"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "double d = 1234.56;\nConsole.WriteLine(d.ToString(\"N0\"));",
+    "o": [
+      "1,235",
+      "1234.56",
+      "1234",
+      "1,234.56"
+    ]
+  },
+  {
+    "q": "The ______ format specifier displays numbers in scientific notation.",
+    "type": "fill_blank",
+    "answers": [
+      "E"
+    ],
+    "other_options": [
+      "S",
+      "X",
+      "N"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int x = 255;\nConsole.WriteLine(x.ToString(\"X\"));",
+    "o": [
+      "FF",
+      "255",
+      "0xFF",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match the format specifiers with their output:",
+    "type": "match",
+    "left": [
+      "D",
+      "X",
+      "N",
+      "P"
+    ],
+    "right": [
+      "Decimal integer",
+      "Hexadecimal",
+      "Number with commas",
+      "Percentage"
+    ]
+  },
+  {
+    "q": "What is string interpolation in C#?",
+    "type": "mcq",
+    "o": [
+      "Embedding expressions inside strings using $",
+      "Concatenating strings using +",
+      "Formatting strings using String.Format",
+      "Comparing strings for equality"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string name = \"Alice\";\nConsole.WriteLine($\"Hello, {name}!\");",
+    "o": [
+      "Hello, Alice!",
+      "Hello, {name}!",
+      "Hello, $name!",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ character prefix enables string interpolation.",
+    "type": "fill_blank",
+    "answers": [
+      "$"
+    ],
+    "other_options": [
+      "@",
+      "#",
+      "%"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int x = 5;\nint y = 10;\nConsole.WriteLine($\"{x} + {y} = {x + y}\");",
+    "o": [
+      "5 + 10 = 15",
+      "{x} + {y} = {x + y}",
+      "x + y = 15",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which prefix creates a verbatim string literal?",
+    "type": "mcq",
+    "o": [
+      "@",
+      "$",
+      "#",
+      "!"
+    ]
+  },
+  {
+    "q": "Verbatim strings preserve escape characters as literal text.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string path = @\"C:\\Users\\file.txt\";\nConsole.WriteLine(path);",
+    "o": [
+      "C:\\Users\\file.txt",
+      "C:Usersfile.txt",
+      "C:/Users/file.txt",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which feature combines $ and @ for interpolated verbatim strings?",
+    "type": "mcq",
+    "o": [
+      "$@ or @$ prefix",
+      "String.FormatVerbatim()",
+      "%%string syntax",
+      "Verbatim interpolation requires separate calls"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string s = $@\"Line1\nLine2\";\nConsole.Write(s.Contains(\"\\n\"));",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "Line1Line2"
+    ]
+  },
+  {
+    "q": "Match the string literal prefixes with their purpose:",
+    "type": "match",
+    "left": [
+      "$",
+      "@",
+      "$@",
+      "\"\"\""
+    ],
+    "right": [
+      "Interpolation",
+      "Verbatim",
+      "Both features",
+      "Raw string literal"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "double d = 3.14159;\nConsole.WriteLine($\"{d:F2}\");",
+    "o": [
+      "3.14",
+      "3.14159",
+      "3.1",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ format specifier displays a fixed number of decimal places.",
+    "type": "fill_blank",
+    "answers": [
+      "F"
+    ],
+    "other_options": [
+      "D",
+      "N",
+      "R"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int n = 42;\nConsole.WriteLine($\"{n,5}\");",
+    "o": [
+      "   42",
+      "42   ",
+      "42",
+      "Error"
+    ]
+  },
+  {
+    "q": "Positive alignment values right-align the output.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int n = 42;\nConsole.WriteLine($\"{n,-5}|\");",
+    "o": [
+      "42   |",
+      "   42|",
+      "42|",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which class provides culture-specific formatting?",
+    "type": "mcq",
+    "o": [
+      "CultureInfo",
+      "FormatInfo",
+      "LocaleInfo",
+      "RegionInfo"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "DateTime now = DateTime.Now;\nConsole.WriteLine(now.ToString(\"yyyy\"));",
+    "o": [
+      "The current 4-digit year",
+      "now",
+      "DateTime",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the DateTime format specifiers from smallest to largest time unit:",
+    "type": "rearrange",
+    "words": [
+      "ss",
+      "mm",
+      "HH",
+      "dd",
+      "MM",
+      "yyyy"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "DateTime dt = new DateTime(2024, 1, 15);\nConsole.WriteLine(dt.ToString(\"MMMM\"));",
+    "o": [
+      "January",
+      "01",
+      "1",
+      "Jan"
+    ]
+  },
+  {
+    "q": "The ______ property returns the current date and time.",
+    "type": "fill_blank",
+    "answers": [
+      "Now"
+    ],
+    "other_options": [
+      "Current",
+      "Today",
+      "Time"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "DateTime dt = DateTime.Today;\nConsole.WriteLine(dt.Hour);",
+    "o": [
+      "0",
+      "12",
+      "Current hour",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method adds days to a DateTime?",
+    "type": "mcq",
+    "o": [
+      "AddDays()",
+      "PlusDays()",
+      "DaysAdd()",
+      "IncDays()"
+    ]
+  },
+  {
+    "q": "DateTime values are immutable in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "DateTime dt = new DateTime(2024, 1, 1);\ndt = dt.AddMonths(2);\nConsole.WriteLine(dt.Month);",
+    "o": [
+      "3",
+      "2",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match the DateTime properties with their values:",
+    "type": "match",
+    "left": [
+      "Year",
+      "DayOfWeek",
+      "Hour",
+      "Ticks"
+    ],
+    "right": [
+      "Integer year",
+      "Enum value",
+      "0-23",
+      "100ns intervals"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "TimeSpan ts = TimeSpan.FromHours(1.5);\nConsole.WriteLine(ts.TotalMinutes);",
+    "o": [
+      "90",
+      "1.5",
+      "60",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ struct represents a time interval.",
+    "type": "fill_blank",
+    "answers": [
+      "TimeSpan"
+    ],
+    "other_options": [
+      "Duration",
+      "Interval",
+      "Period"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "DateTime d1 = new DateTime(2024, 1, 10);\nDateTime d2 = new DateTime(2024, 1, 5);\nConsole.WriteLine((d1 - d2).Days);",
+    "o": [
+      "5",
+      "-5",
+      "10",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method parses a string into a DateTime?",
+    "type": "mcq",
+    "o": [
+      "DateTime.Parse()",
+      "DateTime.Convert()",
+      "DateTime.FromString()",
+      "DateTime.Cast()"
+    ]
+  },
+  {
+    "q": "DateTime.TryParse returns false on invalid input.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "DateTime.TryParse(\"invalid\", out DateTime result);\nConsole.WriteLine(result == DateTime.MinValue);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Which method parses a DateTime with exact format?",
+    "type": "mcq",
+    "o": [
+      "DateTime.ParseExact()",
+      "DateTime.Parse()",
+      "DateTime.TryParse()",
+      "DateTime.Format()"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "enum Color { Red, Green, Blue }\nConsole.WriteLine((int)Color.Green);",
+    "o": [
+      "1",
+      "Green",
+      "2",
+      "0"
+    ]
+  },
+  {
+    "q": "The ______ keyword defines an enumeration type.",
+    "type": "fill_blank",
+    "answers": [
+      "enum"
+    ],
+    "other_options": [
+      "enumeration",
+      "const",
+      "type"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "enum Days { Mon = 1, Tue, Wed }\nConsole.WriteLine((int)Days.Wed);",
+    "o": [
+      "3",
+      "2",
+      "Wed",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the steps to use an enum:",
+    "type": "rearrange",
+    "words": [
+      "Define enum",
+      "Declare variable",
+      "Assign value",
+      "Use in logic"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "enum Status { Active, Inactive }\nStatus s = Status.Active;\nConsole.WriteLine(s.ToString());",
+    "o": [
+      "Active",
+      "0",
+      "Status.Active",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which method converts a string to an enum value?",
+    "type": "mcq",
+    "o": [
+      "Enum.Parse()",
+      "Enum.Convert()",
+      "Enum.FromString()",
+      "Enum.Cast()"
+    ]
+  },
+  {
+    "q": "Flags attribute allows combining enum values with bitwise OR.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "[Flags]\nenum Perms { Read = 1, Write = 2, Execute = 4 }\nPerms p = Perms.Read | Perms.Write;\nConsole.WriteLine((int)p);",
+    "o": [
+      "3",
+      "1",
+      "2",
+      "7"
+    ]
+  },
+  {
+    "q": "Match the enum concepts with their descriptions:",
+    "type": "match",
+    "left": [
+      "Default value",
+      "Underlying type",
+      "Flags",
+      "ToString()"
+    ],
+    "right": [
+      "Zero",
+      "int by default",
+      "Bitwise combinations",
+      "Name as string"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "enum Size : byte { S = 1, M = 2, L = 3 }\nConsole.WriteLine(sizeof(Size));",
+    "o": [
+      "1",
+      "4",
+      "2",
+      "8"
+    ]
+  },
+  {
+    "q": "The ______ method checks if a value is defined in an enum.",
+    "type": "fill_blank",
+    "answers": [
+      "IsDefined"
+    ],
+    "other_options": [
+      "Contains",
+      "Exists",
+      "HasValue"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "enum Color { Red, Green, Blue }\nConsole.WriteLine(Enum.IsDefined(typeof(Color), 5));",
+    "o": [
+      "False",
+      "True",
+      "Error",
+      "5"
+    ]
+  },
+  {
+    "q": "Which method returns all values of an enum?",
+    "type": "mcq",
+    "o": [
+      "Enum.GetValues()",
+      "Enum.All()",
+      "Enum.List()",
+      "Enum.Values()"
+    ]
+  },
+  {
+    "q": "Enums can have duplicate values assigned to different names.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "enum Num { A = 1, B = 1 }\nConsole.WriteLine(Num.A == Num.B);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "A"
+    ]
+  },
+  {
+    "q": "What is the purpose of nullable value types?",
+    "type": "mcq",
+    "o": [
+      "Allow value types to represent null",
+      "Make reference types non-nullable",
+      "Convert objects to primitives",
+      "Enable type inference"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int? x = null;\nConsole.WriteLine(x.HasValue);",
+    "o": [
+      "False",
+      "True",
+      "null",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ property returns the underlying value of a nullable type.",
+    "type": "fill_blank",
+    "answers": [
+      "Value"
+    ],
+    "other_options": [
+      "Data",
+      "Item",
+      "Content"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int? x = 10;\nConsole.WriteLine(x ?? 0);",
+    "o": [
+      "10",
+      "0",
+      "null",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the nullable type usage steps:",
+    "type": "rearrange",
+    "words": [
+      "Declare nullable",
+      "Assign value or null",
+      "Check HasValue",
+      "Access Value",
+      "Handle null case"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int? x = null;\nint y = x.GetValueOrDefault(5);\nConsole.WriteLine(y);",
+    "o": [
+      "5",
+      "0",
+      "null",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which operator assigns a value only if the variable is null?",
+    "type": "mcq",
+    "o": [
+      "??=",
+      "?=",
+      "=?",
+      "??"
+    ]
+  },
+  {
+    "q": "Match the nullable operators with their functions:",
+    "type": "match",
+    "left": [
+      "??",
+      "??=",
+      "?.",
+      "?[]"
+    ],
+    "right": [
+      "Null coalescing",
+      "Null coalescing assignment",
+      "Null conditional access",
+      "Null conditional indexing"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int? x = null;\nx ??= 10;\nConsole.WriteLine(x);",
+    "o": [
+      "10",
+      "null",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Nullable<T> and T? are equivalent.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Nullable<int> x = 5;\nConsole.WriteLine(x.GetType().Name);",
+    "o": [
+      "Int32",
+      "Nullable`1",
+      "Nullable<Int32>",
+      "Object"
+    ]
+  },
+  {
+    "q": "Which feature makes reference types non-nullable by default?",
+    "type": "mcq",
+    "o": [
+      "Nullable reference types",
+      "Value types",
+      "Generics",
+      "Type constraints"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int? a = 5;\nint? b = 3;\nConsole.WriteLine(a + b);",
+    "o": [
+      "8",
+      "null",
+      "53",
+      "Error"
+    ]
+  },
+  {
+    "q": "Nullable value types support lifted operators.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int? a = null;\nint? b = 5;\nConsole.WriteLine(a + b);",
+    "o": [
+      "null",
+      "5",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ syntax declares a read-only property with get-only accessor.",
+    "type": "fill_blank",
+    "answers": [
+      "get;"
+    ],
+    "other_options": [
+      "readonly",
+      "const",
+      "init;"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var list = new int[] { 1, 2, 3 };\nConsole.WriteLine(list[^1]);",
+    "o": [
+      "3",
+      "1",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ^ operator creates an index from the end.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int[] arr = { 1, 2, 3, 4, 5 };\nConsole.WriteLine(string.Join(\",\", arr[1..3]));",
+    "o": [
+      "2,3",
+      "1,2,3",
+      "2,3,4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match the index/range syntax with their meaning:",
+    "type": "match",
+    "left": [
+      "^1",
+      "[1..3]",
+      "[..3]",
+      "[2..]"
+    ],
+    "right": [
+      "Last element",
+      "Elements 1-2",
+      "First 3 elements",
+      "From index 2 to end"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string s = \"Hello\";\nConsole.WriteLine(s[..2]);",
+    "o": [
+      "He",
+      "Hello",
+      "Hel",
+      "Error"
+    ]
+  },
+  {
+    "q": "Ranges in C# have an exclusive end index.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int[] arr = { 1, 2, 3, 4, 5 };\nRange r = 1..4;\nConsole.WriteLine(arr[r].Length);",
+    "o": [
+      "3",
+      "4",
+      "5",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ struct represents a range with start and end indices.",
+    "type": "fill_blank",
+    "answers": [
+      "Range"
+    ],
+    "other_options": [
+      "Span",
+      "Slice",
+      "Segment"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Index idx = ^2;\nint[] arr = { 10, 20, 30, 40 };\nConsole.WriteLine(arr[idx]);",
+    "o": [
+      "30",
+      "40",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword creates a read-only span over a portion of an array?",
+    "type": "mcq",
+    "o": [
+      "ReadOnlySpan<T>",
+      "ArraySlice<T>",
+      "Segment<T>",
+      "View<T>"
+    ]
+  },
+  {
+    "q": "Span<T> allocates memory on the heap.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int[] arr = { 1, 2, 3 };\nSpan<int> span = arr;\nspan[0] = 10;\nConsole.WriteLine(arr[0]);",
+    "o": [
+      "10",
+      "1",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Match the collection types with their characteristics:",
+    "type": "match",
+    "left": [
+      "Array",
+      "Span<T>",
+      "ReadOnlySpan<T>",
+      "Memory<T>"
+    ],
+    "right": [
+      "Fixed size on heap",
+      "Stack-only view",
+      "Immutable view",
+      "Heap or managed"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "ReadOnlySpan<char> span = \"Hello\".AsSpan();\nConsole.WriteLine(span.Length);",
+    "o": [
+      "5",
+      "Hello",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "The ______ method creates a span from an array.",
+    "type": "fill_blank",
+    "answers": [
+      "AsSpan"
+    ],
+    "other_options": [
+      "ToSpan",
+      "GetSpan",
+      "CreateSpan"
+    ]
+  },
+  {
+    "q": "What is pattern matching in C#?",
+    "type": "mcq",
+    "o": [
+      "Testing expressions against patterns",
+      "Regular expression matching",
+      "String comparison",
+      "Type casting"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "object obj = 42;\nif (obj is int n)\n    Console.WriteLine(n);",
+    "o": [
+      "42",
+      "obj",
+      "Error",
+      "False"
+    ]
+  },
+  {
+    "q": "The is keyword can declare a variable in a pattern match.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "object obj = \"test\";\nvar result = obj switch\n{\n    int i => \"int\",\n    string s => \"string\",\n    _ => \"other\"\n};\nConsole.WriteLine(result);",
+    "o": [
+      "string",
+      "int",
+      "other",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the switch expression components:",
+    "type": "rearrange",
+    "words": [
+      "expression",
+      "switch",
+      "pattern",
+      "=>",
+      "result"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int x = 15;\nvar result = x switch\n{\n    < 10 => \"small\",\n    >= 10 and < 20 => \"medium\",\n    _ => \"large\"\n};\nConsole.WriteLine(result);",
+    "o": [
+      "medium",
+      "small",
+      "large",
+      "Error"
+    ]
+  },
+  {
+    "q": "The _ pattern is called the discard pattern.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int? x = null;\nif (x is null)\n    Console.WriteLine(\"null\");\nelse\n    Console.WriteLine(x);",
+    "o": [
+      "null",
+      "Error",
+      "0",
+      "False"
+    ]
+  },
+  {
+    "q": "Match the pattern types with their syntax:",
+    "type": "match",
+    "left": [
+      "Type pattern",
+      "Constant pattern",
+      "Relational pattern",
+      "Property pattern"
+    ],
+    "right": [
+      "is Type var",
+      "is 42",
+      "is > 10",
+      "is { Prop: value }"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "string s = \"Hello\";\nvar result = s switch\n{\n    { Length: > 3 } => \"long\",\n    _ => \"short\"\n};\nConsole.WriteLine(result);",
+    "o": [
+      "long",
+      "short",
+      "Error",
+      "Hello"
+    ]
+  },
+  {
+    "q": "The ______ keyword combines patterns with logical AND.",
+    "type": "fill_blank",
+    "answers": [
+      "and"
+    ],
+    "other_options": [
+      "&&",
+      "with",
+      "also"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int x = 5;\nif (x is > 0 and < 10)\n    Console.WriteLine(\"In range\");\nelse\n    Console.WriteLine(\"Out of range\");",
+    "o": [
+      "In range",
+      "Out of range",
+      "Error",
+      "5"
+    ]
+  },
+  {
+    "q": "The or keyword combines patterns with logical OR.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "object obj = 5;\nif (obj is int or string)\n    Console.WriteLine(\"Match\");\nelse\n    Console.WriteLine(\"No match\");",
+    "o": [
+      "Match",
+      "No match",
+      "Error",
+      "5"
+    ]
+  },
+  {
+    "q": "Which pattern negates another pattern?",
+    "type": "mcq",
+    "o": [
+      "not pattern",
+      "! pattern",
+      "none pattern",
+      "except pattern"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "object obj = null;\nif (obj is not null)\n    Console.WriteLine(\"not null\");\nelse\n    Console.WriteLine(\"null\");",
+    "o": [
+      "null",
+      "not null",
+      "Error",
+      "False"
+    ]
+  },
+  {
+    "q": "What is a record type in C#?",
+    "type": "mcq",
+    "o": [
+      "An immutable reference type with value-based equality",
+      "A type that records method calls",
+      "A database record wrapper",
+      "A logging mechanism"
+    ]
+  },
+  {
+    "q": "The record keyword creates a type with built-in equality semantics.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "record Point(int X, int Y);\nvar p1 = new Point(1, 2);\nvar p2 = new Point(1, 2);\nConsole.WriteLine(p1 == p2);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "Point(1, 2)"
+    ]
+  },
+  {
+    "q": "Match the type keywords with their characteristics:",
+    "type": "match",
+    "left": [
+      "class",
+      "struct",
+      "record",
+      "record struct"
+    ],
+    "right": [
+      "Reference type mutable",
+      "Value type",
+      "Reference type immutable",
+      "Value type with record features"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "record Person(string Name, int Age);\nvar p = new Person(\"Alice\", 30);\nConsole.WriteLine(p);",
+    "o": [
+      "Person { Name = Alice, Age = 30 }",
+      "Person",
+      "Alice, 30",
+      "Error"
+    ]
+  },
+  {
+    "q": "The with keyword creates a copy of a record with modified properties.",
+    "type": "fill_blank",
+    "answers": [
+      "with"
+    ],
+    "other_options": [
+      "copy",
+      "clone",
+      "new"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "record Point(int X, int Y);\nvar p1 = new Point(1, 2);\nvar p2 = p1 with { X = 5 };\nConsole.WriteLine(p2.Y);",
+    "o": [
+      "2",
+      "5",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which feature allows using records as dictionary keys efficiently?",
+    "type": "mcq",
+    "o": [
+      "Built-in GetHashCode implementation",
+      "Serialization support",
+      "Constructor parameters",
+      "ToString override"
+    ]
+  },
+  {
+    "q": "Records can be deconstructed into variables.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "record Point(int X, int Y);\nvar p = new Point(3, 4);\nvar (x, y) = p;\nConsole.WriteLine(x);",
+    "o": [
+      "3",
+      "4",
+      "(3, 4)",
+      "Error"
+    ]
+  },
+  {
+    "q": "What is the purpose of the init accessor?",
+    "type": "mcq",
+    "o": [
+      "Allow property assignment only during initialization",
+      "Initialize static fields",
+      "Create instances of classes",
+      "Define interface members"
+    ]
+  },
+  {
+    "q": "Rearrange the steps in record initialization:",
+    "type": "rearrange",
+    "words": [
+      "Define record",
+      "Create instance",
+      "Set properties",
+      "Immutable after init"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Person\n{\n    public string Name { get; init; }\n}\nvar p = new Person { Name = \"Alice\" };\nConsole.WriteLine(p.Name);",
+    "o": [
+      "Alice",
+      "Name",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ keyword defines a positional record.",
+    "type": "fill_blank",
+    "answers": [
+      "record"
+    ],
+    "other_options": [
+      "class",
+      "struct",
+      "type"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "record struct Point(int X, int Y);\nConsole.WriteLine(typeof(Point).IsValueType);",
+    "o": [
+      "True",
+      "False",
+      "Point",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword makes a local function accessible only within its containing method?",
+    "type": "mcq",
+    "o": [
+      "Local functions are always local",
+      "private",
+      "internal",
+      "static"
+    ]
+  },
+  {
+    "q": "Local functions can access variables from their enclosing scope.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int x = 10;\nint Double() => x * 2;\nConsole.WriteLine(Double());",
+    "o": [
+      "20",
+      "10",
+      "Error",
+      "x * 2"
+    ]
+  },
+  {
+    "q": "Match the function types with their characteristics:",
+    "type": "match",
+    "left": [
+      "Lambda",
+      "Local function",
+      "Static method",
+      "Extension method"
+    ],
+    "right": [
+      "Inline delegate",
+      "Named nested function",
+      "Type-level member",
+      "Adds methods to types"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "static int Add(int a, int b) => a + b;\nConsole.WriteLine(Add(3, 4));",
+    "o": [
+      "7",
+      "3",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "The static keyword on a local function prevents it from capturing local variables.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Func<int, int> square = x => x * x;\nConsole.WriteLine(square(5));",
+    "o": [
+      "25",
+      "5",
+      "10",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ type represents a method that returns void.",
+    "type": "fill_blank",
+    "answers": [
+      "Action"
+    ],
+    "other_options": [
+      "Func",
+      "Predicate",
+      "Method"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Action<string> greet = name => Console.WriteLine($\"Hello, {name}\");\ngreet(\"World\");",
+    "o": [
+      "Hello, World",
+      "World",
+      "Error",
+      "greet"
+    ]
+  },
+  {
+    "q": "Rearrange the lambda expression components:",
+    "type": "rearrange",
+    "words": [
+      "parameters",
+      "=>",
+      "expression or block"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Predicate<int> isEven = n => n % 2 == 0;\nConsole.WriteLine(isEven(4));",
+    "o": [
+      "True",
+      "False",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which keyword helps define expression-bodied members?",
+    "type": "mcq",
+    "o": [
+      "=> (arrow operator)",
+      "lambda",
+      "expr",
+      "body"
+    ]
+  },
+  {
+    "q": "Expression-bodied members can be used for methods, properties, and constructors.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Circle\n{\n    public double Radius { get; }\n    public double Area => Math.PI * Radius * Radius;\n    public Circle(double r) => Radius = r;\n}\nvar c = new Circle(1);\nConsole.WriteLine(Math.Round(c.Area, 2));",
+    "o": [
+      "3.14",
+      "1",
+      "6.28",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match the delegate types with their signatures:",
+    "type": "match",
+    "left": [
+      "Action<T>",
+      "Func<T, TResult>",
+      "Predicate<T>",
+      "Comparison<T>"
+    ],
+    "right": [
+      "void Method(T)",
+      "TResult Method(T)",
+      "bool Method(T)",
+      "int Method(T, T)"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Func<int, int, int> add = (a, b) => a + b;\nConsole.WriteLine(add(10, 20));",
+    "o": [
+      "30",
+      "10",
+      "20",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ expression creates an anonymous type.",
+    "type": "fill_blank",
+    "answers": [
+      "new"
+    ],
+    "other_options": [
+      "var",
+      "anonymous",
+      "type"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var person = new { Name = \"Alice\", Age = 30 };\nConsole.WriteLine(person.Name);",
+    "o": [
+      "Alice",
+      "person",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Anonymous types are immutable.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var p1 = new { X = 1, Y = 2 };\nvar p2 = new { X = 1, Y = 2 };\nConsole.WriteLine(p1.Equals(p2));",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "p1"
+    ]
+  },
+  {
+    "q": "Which type of initialization allows setting properties after construction?",
+    "type": "mcq",
+    "o": [
+      "Object initializer",
+      "Constructor initialization",
+      "Factory pattern",
+      "Property injection"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var list = new List<int> { 1, 2, 3 };\nConsole.WriteLine(list.Count);",
+    "o": [
+      "3",
+      "0",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the collection initialization steps:",
+    "type": "rearrange",
+    "words": [
+      "Create collection",
+      "Use initializer syntax",
+      "Add elements",
+      "Collection ready"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var dict = new Dictionary<string, int>\n{\n    [\"one\"] = 1,\n    [\"two\"] = 2\n};\nConsole.WriteLine(dict[\"two\"]);",
+    "o": [
+      "2",
+      "1",
+      "two",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match the initialization syntax with their uses:",
+    "type": "match",
+    "left": [
+      "{ Prop = val }",
+      "{ val1, val2 }",
+      "[key] = val",
+      "()"
+    ],
+    "right": [
+      "Object initializer",
+      "Collection initializer",
+      "Index initializer",
+      "Constructor"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int[] arr = [1, 2, 3, 4, 5];\nConsole.WriteLine(arr[2]);",
+    "o": [
+      "3",
+      "2",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Collection expressions use square brackets [].",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int[] a = [1, 2];\nint[] b = [3, 4];\nint[] c = [..a, ..b];\nConsole.WriteLine(c.Length);",
+    "o": [
+      "4",
+      "2",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ operator spreads elements in collection expressions.",
+    "type": "fill_blank",
+    "answers": [
+      ".."
+    ],
+    "other_options": [
+      "...",
+      "*",
+      "++"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "List<int> list = [1, 2, 3];\nConsole.WriteLine(list.GetType().Name);",
+    "o": [
+      "List`1",
+      "Int32[]",
+      "Array",
+      "List"
+    ]
+  },
+  {
+    "q": "Which feature allows defining top-level statements without a Main method?",
+    "type": "mcq",
+    "o": [
+      "Top-level statements",
+      "Script mode",
+      "Interactive mode",
+      "REPL"
+    ]
+  },
+  {
+    "q": "Top-level statements can only exist in one file per project.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this top-level statement code?",
+    "type": "mcq",
+    "c": "Console.WriteLine(args.Length);",
+    "o": [
+      "The number of command-line arguments",
+      "Error",
+      "args",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the file-scoped namespace components:",
+    "type": "rearrange",
+    "words": [
+      "namespace",
+      "Name",
+      ";",
+      "class definitions"
+    ]
+  },
+  {
+    "q": "What is the purpose of file-scoped namespaces?",
+    "type": "mcq",
+    "o": [
+      "Reduce indentation by eliminating namespace braces",
+      "Limit access to a single file",
+      "Create local namespaces",
+      "Enable script mode"
+    ]
+  },
+  {
+    "q": "Match the C# version features:",
+    "type": "match",
+    "left": [
+      "C# 9",
+      "C# 10",
+      "C# 11",
+      "C# 12"
+    ],
+    "right": [
+      "Records",
+      "File-scoped namespaces",
+      "Raw string literals",
+      "Primary constructors"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "namespace MyApp;\nclass Program\n{\n    static void Main() => Console.WriteLine(\"Hello\");\n}",
+    "o": [
+      "Hello",
+      "MyApp",
+      "Error",
+      "Program"
+    ]
+  },
+  {
+    "q": "The global using directive imports namespaces for all files in the project.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "using static System.Math;\nConsole.WriteLine(Sqrt(16));",
+    "o": [
+      "4",
+      "Error",
+      "16",
+      "Math.Sqrt"
+    ]
+  },
+  {
+    "q": "The using static directive allows using static members without type qualification.",
+    "type": "fill_blank",
+    "answers": [
+      "static"
+    ],
+    "other_options": [
+      "global",
+      "import",
+      "namespace"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "using Num = System.Int32;\nNum x = 42;\nConsole.WriteLine(x.GetType().Name);",
+    "o": [
+      "Int32",
+      "Num",
+      "x",
+      "Error"
+    ]
+  },
+  {
+    "q": "Which feature creates an alias for a namespace or type?",
+    "type": "mcq",
+    "o": [
+      "using alias directive",
+      "typedef",
+      "alias keyword",
+      "rename directive"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "const string greeting = \"Hello\";\nConsole.WriteLine($\"{greeting} World\");",
+    "o": [
+      "Hello World",
+      "greeting World",
+      "Error",
+      "$Hello World"
+    ]
+  },
+  {
+    "q": "Constants are evaluated at compile time.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the modifier keywords with their effects:",
+    "type": "match",
+    "left": [
+      "const",
+      "readonly",
+      "static",
+      "volatile"
+    ],
+    "right": [
+      "Compile-time constant",
+      "Run-time constant",
+      "Type-level member",
+      "Thread visibility"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Counter\n{\n    public static int Count = 0;\n    public Counter() => Count++;\n}\nnew Counter();\nnew Counter();\nConsole.WriteLine(Counter.Count);",
+    "o": [
+      "2",
+      "0",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "The readonly modifier allows assignment only in constructors.",
+    "type": "fill_blank",
+    "answers": [
+      "readonly"
+    ],
+    "other_options": [
+      "const",
+      "final",
+      "static"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Data\n{\n    public readonly int Value;\n    public Data(int v) => Value = v;\n}\nvar d = new Data(42);\nConsole.WriteLine(d.Value);",
+    "o": [
+      "42",
+      "0",
+      "Error",
+      "Value"
+    ]
+  },
+  {
+    "q": "Which keyword makes a struct field non-modifiable after construction?",
+    "type": "mcq",
+    "o": [
+      "readonly",
+      "const",
+      "immutable",
+      "final"
+    ]
+  },
+  {
+    "q": "Rearrange the access modifier restrictiveness (most to least restrictive):",
+    "type": "rearrange",
+    "words": [
+      "private",
+      "protected",
+      "internal",
+      "protected internal",
+      "public"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class A { protected int x = 5; }\nclass B : A { public int GetX() => x; }\nConsole.WriteLine(new B().GetX());",
+    "o": [
+      "5",
+      "Error",
+      "0",
+      "x"
+    ]
+  },
+  {
+    "q": "The internal modifier makes a member accessible within the same assembly.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Outer\n{\n    private class Inner { public static int Value = 10; }\n    public int GetValue() => Inner.Value;\n}\nConsole.WriteLine(new Outer().GetValue());",
+    "o": [
+      "10",
+      "Error",
+      "0",
+      "Inner.Value"
+    ]
+  },
+  {
+    "q": "Match the access modifiers with their scope:",
+    "type": "match",
+    "left": [
+      "private",
+      "protected",
+      "internal",
+      "public"
+    ],
+    "right": [
+      "Same class only",
+      "Derived classes",
+      "Same assembly",
+      "Everywhere"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Base { private protected int x = 5; }\nclass Derived : Base\n{\n    public int GetX() => x;\n}\nConsole.WriteLine(new Derived().GetX());",
+    "o": [
+      "5",
+      "Error",
+      "0",
+      "x"
+    ]
+  },
+  {
+    "q": "The private protected modifier combines private and protected.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Test\n{\n    public required string Name { get; set; }\n}\nvar t = new Test { Name = \"Hello\" };\nConsole.WriteLine(t.Name);",
+    "o": [
+      "Hello",
+      "Error",
+      "Name",
+      "null"
+    ]
+  },
+  {
+    "q": "The required modifier ensures a property must be set during initialization.",
+    "type": "fill_blank",
+    "answers": [
+      "required"
+    ],
+    "other_options": [
+      "mandatory",
+      "needed",
+      "must"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Point\n{\n    public int X { get; set; } = 10;\n    public int Y { get; set; } = 20;\n}\nvar p = new Point();\nConsole.WriteLine(p.X + p.Y);",
+    "o": [
+      "30",
+      "0",
+      "10",
+      "Error"
+    ]
+  },
+  {
+    "q": "Auto-properties can have default values.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Data\n{\n    private int _value;\n    public int Value\n    {\n        get => _value;\n        set => _value = value > 0 ? value : 0;\n    }\n}\nvar d = new Data { Value = -5 };\nConsole.WriteLine(d.Value);",
+    "o": [
+      "0",
+      "-5",
+      "5",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the property definition components:",
+    "type": "rearrange",
+    "words": [
+      "access modifier",
+      "type",
+      "name",
+      "get accessor",
+      "set accessor"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Test\n{\n    public string Name { get; private set; }\n    public Test(string name) => Name = name;\n}\nvar t = new Test(\"Alice\");\nConsole.WriteLine(t.Name);",
+    "o": [
+      "Alice",
+      "Error",
+      "null",
+      "Name"
+    ]
+  },
+  {
+    "q": "Match the property accessor modifiers:",
+    "type": "match",
+    "left": [
+      "get;",
+      "set;",
+      "init;",
+      "private set;"
+    ],
+    "right": [
+      "Read access",
+      "Write access",
+      "Init-only write",
+      "Write only in class"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Test\n{\n    public string this[int index] => $\"Item {index}\";\n}\nvar t = new Test();\nConsole.WriteLine(t[5]);",
+    "o": [
+      "Item 5",
+      "5",
+      "Error",
+      "t[5]"
+    ]
+  },
+  {
+    "q": "The this keyword defines an indexer.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Matrix\n{\n    private int[,] data = new int[2, 2];\n    public int this[int r, int c]\n    {\n        get => data[r, c];\n        set => data[r, c] = value;\n    }\n}\nvar m = new Matrix();\nm[0, 1] = 42;\nConsole.WriteLine(m[0, 1]);",
+    "o": [
+      "42",
+      "0",
+      "Error",
+      "m[0, 1]"
+    ]
+  },
+  {
+    "q": "The ______ method is called when an object is garbage collected.",
+    "type": "fill_blank",
+    "answers": [
+      "Finalize"
+    ],
+    "other_options": [
+      "Dispose",
+      "Destructor",
+      "Cleanup"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Resource : IDisposable\n{\n    public void Dispose() => Console.WriteLine(\"Disposed\");\n}\nusing (var r = new Resource()) { }\nConsole.WriteLine(\"Done\");",
+    "o": [
+      "Disposed then Done",
+      "Done then Disposed",
+      "Done",
+      "Error"
+    ]
+  },
+  {
+    "q": "The using statement automatically calls Dispose.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "using var file = new System.IO.StreamReader(\"test.txt\");",
+    "o": [
+      "Compiles successfully with using declaration",
+      "Error: missing braces",
+      "Error: invalid syntax",
+      "Warning only"
+    ]
+  },
+  {
+    "q": "Rearrange the dispose pattern implementation steps:",
+    "type": "rearrange",
+    "words": [
+      "Implement IDisposable",
+      "Create Dispose method",
+      "Suppress finalization",
+      "Release resources"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "static class Extensions\n{\n    public static int WordCount(this string s) => s.Split(' ').Length;\n}\nConsole.WriteLine(\"Hello World Test\".WordCount());",
+    "o": [
+      "3",
+      "15",
+      "Error",
+      "Hello World Test"
+    ]
+  },
+  {
+    "q": "Match the extension method requirements:",
+    "type": "match",
+    "left": [
+      "Static class",
+      "Static method",
+      "this keyword",
+      "First parameter"
+    ],
+    "right": [
+      "Container requirement",
+      "Method requirement",
+      "Extension marker",
+      "Extended type"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "static class IntExt\n{\n    public static bool IsEven(this int n) => n % 2 == 0;\n}\nConsole.WriteLine(4.IsEven());",
+    "o": [
+      "True",
+      "False",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Extension methods can access private members of the extended type.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "static class ListExt\n{\n    public static T SecondOrDefault<T>(this IList<T> list) =>\n        list.Count > 1 ? list[1] : default;\n}\nvar nums = new List<int> { 10, 20, 30 };\nConsole.WriteLine(nums.SecondOrDefault());",
+    "o": [
+      "20",
+      "10",
+      "30",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword marks a method as asynchronous.",
+    "type": "fill_blank",
+    "answers": [
+      "async"
+    ],
+    "other_options": [
+      "await",
+      "task",
+      "parallel"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "async Task<int> GetValueAsync()\n{\n    await Task.Delay(100);\n    return 42;\n}\nvar result = await GetValueAsync();\nConsole.WriteLine(result);",
+    "o": [
+      "42",
+      "Task<42>",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "The await keyword suspends execution until the task completes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "async Task PrintAsync()\n{\n    Console.WriteLine(\"Start\");\n    await Task.Delay(100);\n    Console.WriteLine(\"End\");\n}\nawait PrintAsync();",
+    "o": [
+      "Start then End",
+      "End then Start",
+      "Start only",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match the async/await components:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "Task<T>",
+      "ValueTask<T>"
+    ],
+    "right": [
+      "Method modifier",
+      "Suspension point",
+      "Reference type result",
+      "Value type result"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "async Task<string> FetchAsync()\n{\n    return await Task.FromResult(\"Hello\");\n}\nvar result = await FetchAsync();\nConsole.WriteLine(result);",
+    "o": [
+      "Hello",
+      "Task<Hello>",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Task.WhenAll waits for all tasks to complete.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var tasks = new[] { Task.FromResult(1), Task.FromResult(2) };\nvar results = await Task.WhenAll(tasks);\nConsole.WriteLine(results.Sum());",
+    "o": [
+      "3",
+      "2",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method returns when any task completes.",
+    "type": "fill_blank",
+    "answers": [
+      "WhenAny"
+    ],
+    "other_options": [
+      "WhenAll",
+      "Wait",
+      "First"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "CancellationTokenSource cts = new();\ncts.Cancel();\nConsole.WriteLine(cts.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Match the Task methods with their purpose:",
+    "type": "match",
+    "left": [
+      "Run()",
+      "Delay()",
+      "FromResult()",
+      "CompletedTask"
+    ],
+    "right": [
+      "Execute on thread pool",
+      "Async wait",
+      "Create completed task",
+      "Already completed task"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "async IAsyncEnumerable<int> GetNumbersAsync()\n{\n    for (int i = 1; i <= 3; i++)\n    {\n        await Task.Delay(10);\n        yield return i;\n    }\n}\nawait foreach (var n in GetNumbersAsync())\n    Console.Write(n);",
+    "o": [
+      "123",
+      "Error",
+      "0",
+      "1"
+    ]
+  },
+  {
+    "q": "IAsyncEnumerable enables asynchronous iteration.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "ConfigureAwait(false) prevents capturing the synchronization context.",
+    "o": [
+      "True statement about ConfigureAwait",
+      "Error",
+      "false",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the async operation lifecycle:",
+    "type": "rearrange",
+    "words": [
+      "Start task",
+      "Suspend caller",
+      "Execute async",
+      "Resume caller",
+      "Return result"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "ValueTask<int> GetValueAsync() => ValueTask.FromResult(42);\nvar result = await GetValueAsync();\nConsole.WriteLine(result);",
+    "o": [
+      "42",
+      "ValueTask<42>",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "ValueTask is more efficient for operations that complete synchronously.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var channel = Channel.CreateUnbounded<int>();\nawait channel.Writer.WriteAsync(42);\nvar result = await channel.Reader.ReadAsync();\nConsole.WriteLine(result);",
+    "o": [
+      "42",
+      "Error",
+      "0",
+      "Channel"
+    ]
+  },
+  {
+    "q": "The ______ class provides producer-consumer patterns in C#.",
+    "type": "fill_blank",
+    "answers": [
+      "Channel"
+    ],
+    "other_options": [
+      "Queue",
+      "Buffer",
+      "Pipe"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "SemaphoreSlim sem = new(1);\nawait sem.WaitAsync();\nConsole.WriteLine(sem.CurrentCount);",
+    "o": [
+      "0",
+      "1",
+      "Error",
+      "-1"
+    ]
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "lock",
+      "SemaphoreSlim",
+      "Mutex",
+      "ReaderWriterLockSlim"
+    ],
+    "right": [
+      "Monitor-based",
+      "Async-compatible",
+      "Cross-process",
+      "Multiple readers"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "object lockObj = new();\nlock (lockObj)\n{\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "lockObj",
+      "null"
+    ]
+  },
+  {
+    "q": "The lock statement uses Monitor under the covers.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Interlocked.Increment(ref int value) is atomic.",
+    "o": [
+      "True statement about Interlocked",
+      "Error",
+      "false",
+      "0"
+    ]
+  },
+  {
+    "q": "The ______ class provides atomic operations on variables.",
+    "type": "fill_blank",
+    "answers": [
+      "Interlocked"
+    ],
+    "other_options": [
+      "Atomic",
+      "Sync",
+      "Lock"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int counter = 0;\nInterlocked.Increment(ref counter);\nConsole.WriteLine(counter);",
+    "o": [
+      "1",
+      "0",
+      "Error",
+      "counter"
+    ]
+  },
+  {
+    "q": "Volatile.Read ensures the read is not reordered.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "ThreadLocal<int> local = new(() => 42);\nConsole.WriteLine(local.Value);",
+    "o": [
+      "42",
+      "0",
+      "Error",
+      "local"
+    ]
+  },
+  {
+    "q": "Rearrange the Parallel.ForEach execution steps:",
+    "type": "rearrange",
+    "words": [
+      "Partition data",
+      "Create tasks",
+      "Execute parallel",
+      "Aggregate results"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var nums = new[] { 1, 2, 3, 4, 5 };\nvar sum = nums.AsParallel().Sum();\nConsole.WriteLine(sum);",
+    "o": [
+      "15",
+      "5",
+      "Error",
+      "1"
+    ]
+  },
+  {
+    "q": "Match the PLINQ methods:",
+    "type": "match",
+    "left": [
+      "AsParallel()",
+      "WithDegreeOfParallelism()",
+      "AsOrdered()",
+      "ForAll()"
+    ],
+    "right": [
+      "Enable parallel",
+      "Limit threads",
+      "Preserve order",
+      "Execute action"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "ParallelOptions options = new() { MaxDegreeOfParallelism = 2 };\nConsole.WriteLine(options.MaxDegreeOfParallelism);",
+    "o": [
+      "2",
+      "0",
+      "Error",
+      "-1"
+    ]
+  },
+  {
+    "q": "The TaskScheduler determines how tasks are executed.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource(TimeSpan.FromSeconds(1));\nConsole.WriteLine(cts.Token.CanBeCanceled);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "1"
+    ]
+  },
+  {
+    "q": "The ______ interface indicates an object can be serialized.",
+    "type": "fill_blank",
+    "answers": [
+      "ISerializable"
+    ],
+    "other_options": [
+      "Serializable",
+      "IConvertible",
+      "IFormattable"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var json = JsonSerializer.Serialize(new { Name = \"Test\" });\nConsole.WriteLine(json.Contains(\"Name\"));",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "json"
+    ]
+  },
+  {
+    "q": "System.Text.Json is the modern JSON serializer in .NET.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var data = new { X = 1 };\nvar json = JsonSerializer.Serialize(data);\nConsole.WriteLine(json);",
+    "o": [
+      "{\"X\":1}",
+      "{ X = 1 }",
+      "Error",
+      "data"
+    ]
+  },
+  {
+    "q": "Match the serialization attributes:",
+    "type": "match",
+    "left": [
+      "[JsonPropertyName]",
+      "[JsonIgnore]",
+      "[JsonInclude]",
+      "[JsonConstructor]"
+    ],
+    "right": [
+      "Rename property",
+      "Exclude property",
+      "Include private",
+      "Deserialize constructor"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Data { [JsonIgnore] public int Id { get; set; } = 1; public string Name { get; set; } = \"Test\"; }\nvar json = JsonSerializer.Serialize(new Data());\nConsole.WriteLine(json.Contains(\"Id\"));",
+    "o": [
+      "False",
+      "True",
+      "Error",
+      "json"
+    ]
+  },
+  {
+    "q": "The JsonSerializerOptions class configures serialization behavior.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var options = new JsonSerializerOptions { WriteIndented = true };\nvar json = JsonSerializer.Serialize(new { A = 1 }, options);\nConsole.WriteLine(json.Contains(\"\\n\"));",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "json"
+    ]
+  },
+  {
+    "q": "Rearrange the deserialization steps:",
+    "type": "rearrange",
+    "words": [
+      "Read JSON string",
+      "Parse tokens",
+      "Map to type",
+      "Create object",
+      "Return instance"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var json = \"{\\\"Name\\\":\\\"Alice\\\"}\";\nvar doc = JsonDocument.Parse(json);\nConsole.WriteLine(doc.RootElement.GetProperty(\"Name\").GetString());",
+    "o": [
+      "Alice",
+      "{Name:Alice}",
+      "Error",
+      "doc"
+    ]
+  },
+  {
+    "q": "JsonDocument provides a read-only representation of JSON.",
+    "type": "fill_blank",
+    "answers": [
+      "JsonDocument"
+    ],
+    "other_options": [
+      "JsonObject",
+      "JsonParser",
+      "JsonReader"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "using var stream = new MemoryStream();\nusing var writer = new Utf8JsonWriter(stream);\nwriter.WriteStartObject();\nwriter.WriteNumber(\"Id\", 42);\nwriter.WriteEndObject();\nwriter.Flush();\nConsole.WriteLine(Encoding.UTF8.GetString(stream.ToArray()));",
+    "o": [
+      "{\"Id\":42}",
+      "Error",
+      "stream",
+      "42"
+    ]
+  },
+  {
+    "q": "Utf8JsonWriter writes JSON to a stream efficiently.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Span<byte> buffer = stackalloc byte[100];\nConsole.WriteLine(buffer.Length);",
+    "o": [
+      "100",
+      "0",
+      "Error",
+      "buffer"
+    ]
+  },
+  {
+    "q": "Match the memory types with their allocation:",
+    "type": "match",
+    "left": [
+      "stackalloc",
+      "new T[]",
+      "ArrayPool<T>",
+      "MemoryPool<T>"
+    ],
+    "right": [
+      "Stack allocation",
+      "Heap allocation",
+      "Pooled arrays",
+      "Pooled memory"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var pool = ArrayPool<int>.Shared;\nvar arr = pool.Rent(10);\nConsole.WriteLine(arr.Length >= 10);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "10"
+    ]
+  },
+  {
+    "q": "ArrayPool reduces allocations by reusing arrays.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Memory<int> memory = new int[] { 1, 2, 3 };\nConsole.WriteLine(memory.Length);",
+    "o": [
+      "3",
+      "0",
+      "Error",
+      "Memory"
+    ]
+  },
+  {
+    "q": "The ______ method pins memory for use with unmanaged code.",
+    "type": "fill_blank",
+    "answers": [
+      "Pin"
+    ],
+    "other_options": [
+      "Lock",
+      "Fix",
+      "Hold"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var arr = new int[] { 1, 2, 3, 4, 5 };\nMemory<int> mem = arr.AsMemory(1, 3);\nConsole.WriteLine(mem.Span[0]);",
+    "o": [
+      "2",
+      "1",
+      "3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the reflection discovery steps:",
+    "type": "rearrange",
+    "words": [
+      "Get Type",
+      "Get members",
+      "Filter by name",
+      "Invoke member"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Type t = typeof(string);\nConsole.WriteLine(t.Name);",
+    "o": [
+      "String",
+      "string",
+      "System.String",
+      "Error"
+    ]
+  },
+  {
+    "q": "The typeof operator returns the Type object.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Type t = typeof(int);\nConsole.WriteLine(t.IsPrimitive);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "int"
+    ]
+  },
+  {
+    "q": "Match the reflection methods:",
+    "type": "match",
+    "left": [
+      "GetType()",
+      "GetMembers()",
+      "GetMethod()",
+      "GetProperties()"
+    ],
+    "right": [
+      "Instance type",
+      "All members",
+      "Single method",
+      "All properties"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var methods = typeof(string).GetMethods();\nConsole.WriteLine(methods.Length > 0);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "The Activator.CreateInstance method creates object instances dynamically.",
+    "type": "fill_blank",
+    "answers": [
+      "Activator"
+    ],
+    "other_options": [
+      "Reflection",
+      "Factory",
+      "Creator"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var obj = Activator.CreateInstance<List<int>>();\nConsole.WriteLine(obj.Count);",
+    "o": [
+      "0",
+      "Error",
+      "null",
+      "List"
+    ]
+  },
+  {
+    "q": "MethodInfo.Invoke calls a method at runtime.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var method = typeof(string).GetMethod(\"ToUpper\", Type.EmptyTypes);\nvar result = method.Invoke(\"hello\", null);\nConsole.WriteLine(result);",
+    "o": [
+      "HELLO",
+      "hello",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the attribute usage steps:",
+    "type": "rearrange",
+    "words": [
+      "Define attribute",
+      "Apply to target",
+      "Retrieve via reflection",
+      "Process attribute"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "[Obsolete(\"Use NewMethod instead\")]\nvoid OldMethod() { }\nConsole.WriteLine(typeof(Program).GetMethod(\"OldMethod\").GetCustomAttribute<ObsoleteAttribute>().Message);",
+    "o": [
+      "Use NewMethod instead",
+      "Error",
+      "null",
+      "Obsolete"
+    ]
+  },
+  {
+    "q": "The Attribute class is the base for all custom attributes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "[AttributeUsage(AttributeTargets.Class)]\nclass MyAttribute : Attribute { }\nConsole.WriteLine(typeof(MyAttribute).BaseType.Name);",
+    "o": [
+      "Attribute",
+      "Object",
+      "MyAttribute",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match the AttributeTargets flags:",
+    "type": "match",
+    "left": [
+      "Class",
+      "Method",
+      "Property",
+      "Parameter"
+    ],
+    "right": [
+      "Type definition",
+      "Method definition",
+      "Property definition",
+      "Method parameter"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var attrs = typeof(int).GetCustomAttributes();\nConsole.WriteLine(attrs.Any(a => a is SerializableAttribute));",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "int"
+    ]
+  },
+  {
+    "q": "The CallerMemberName attribute provides the calling member name.",
+    "type": "fill_blank",
+    "answers": [
+      "CallerMemberName"
+    ],
+    "other_options": [
+      "CallerName",
+      "MemberName",
+      "MethodName"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "void Log([CallerMemberName] string member = \"\")\n{\n    Console.WriteLine(member);\n}\nLog();",
+    "o": [
+      "Main or calling method name",
+      "Log",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "CallerLineNumber provides the source line number.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "void ShowLine([CallerLineNumber] int line = 0) => Console.WriteLine(line > 0);\nShowLine();",
+    "o": [
+      "True",
+      "False",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the source generator pipeline:",
+    "type": "rearrange",
+    "words": [
+      "Analyze source",
+      "Generate code",
+      "Add to compilation",
+      "Compile together"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "const string pattern = @\"\\d+\";\nvar regex = new Regex(pattern);\nConsole.WriteLine(regex.IsMatch(\"abc123\"));",
+    "o": [
+      "True",
+      "False",
+      "123",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match the regex special characters:",
+    "type": "match",
+    "left": [
+      "\\d",
+      "\\w",
+      "\\s",
+      "."
+    ],
+    "right": [
+      "Digit",
+      "Word character",
+      "Whitespace",
+      "Any character"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var match = Regex.Match(\"Hello123World\", @\"\\d+\");\nConsole.WriteLine(match.Value);",
+    "o": [
+      "123",
+      "Hello123World",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Regex.Replace substitutes matching patterns.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var result = Regex.Replace(\"hello123world\", @\"\\d\", \"\");\nConsole.WriteLine(result);",
+    "o": [
+      "helloworld",
+      "hello123world",
+      "Error",
+      "123"
+    ]
+  },
+  {
+    "q": "The ______ option makes regex case-insensitive.",
+    "type": "fill_blank",
+    "answers": [
+      "IgnoreCase"
+    ],
+    "other_options": [
+      "CaseInsensitive",
+      "NoCase",
+      "AnyCase"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var regex = new Regex(@\"hello\", RegexOptions.IgnoreCase);\nConsole.WriteLine(regex.IsMatch(\"HELLO\"));",
+    "o": [
+      "True",
+      "False",
+      "HELLO",
+      "Error"
+    ]
+  },
+  {
+    "q": "Regex groups capture substrings within parentheses.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var match = Regex.Match(\"John:25\", @\"(\\w+):(\\d+)\");\nConsole.WriteLine(match.Groups[1].Value);",
+    "o": [
+      "John",
+      "25",
+      "John:25",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match the Regex methods:",
+    "type": "match",
+    "left": [
+      "Match()",
+      "Matches()",
+      "Replace()",
+      "Split()"
+    ],
+    "right": [
+      "First match",
+      "All matches",
+      "Substitute",
+      "Divide string"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var parts = Regex.Split(\"a1b2c3\", @\"\\d\");\nConsole.WriteLine(parts.Length);",
+    "o": [
+      "4",
+      "3",
+      "6",
+      "Error"
+    ]
+  },
+  {
+    "q": "The GeneratedRegex attribute compiles regex at build time.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "StringBuilder sb = new();\nsb.Append(\"Hello\").Append(\" \").Append(\"World\");\nConsole.WriteLine(sb.ToString());",
+    "o": [
+      "Hello World",
+      "HelloWorld",
+      "Error",
+      "sb"
+    ]
+  },
+  {
+    "q": "The StringBuilder class is more efficient for multiple string operations.",
+    "type": "fill_blank",
+    "answers": [
+      "StringBuilder"
+    ],
+    "other_options": [
+      "StringBuffer",
+      "StringWriter",
+      "StringBuilder"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "StringBuilder sb = new(\"Hello\");\nsb.Insert(5, \" World\");\nConsole.WriteLine(sb);",
+    "o": [
+      "Hello World",
+      "World Hello",
+      "Error",
+      "sb"
+    ]
+  },
+  {
+    "q": "StringBuilder.Clear removes all characters.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "StringBuilder sb = new(\"Hello\");\nsb.Replace(\"l\", \"L\");\nConsole.WriteLine(sb);",
+    "o": [
+      "HeLLo",
+      "HeLlo",
+      "Hello",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the StringBuilder operations for efficiency:",
+    "type": "rearrange",
+    "words": [
+      "Create builder",
+      "Set capacity",
+      "Append strings",
+      "Build result"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "StringBuilder sb = new();\nfor (int i = 0; i < 3; i++) sb.AppendLine(i.ToString());\nConsole.WriteLine(sb.ToString().Trim().Replace(\"\\r\\n\", \",\").Replace(\"\\n\", \",\"));",
+    "o": [
+      "0,1,2",
+      "012",
+      "Error",
+      "0 1 2"
+    ]
+  },
+  {
+    "q": "Match the StringBuilder methods:",
+    "type": "match",
+    "left": [
+      "Append()",
+      "Insert()",
+      "Remove()",
+      "Replace()"
+    ],
+    "right": [
+      "Add at end",
+      "Add at position",
+      "Delete chars",
+      "Substitute chars"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "StringBuilder sb = new(\"Hello World\");\nsb.Remove(5, 6);\nConsole.WriteLine(sb);",
+    "o": [
+      "Hello",
+      "World",
+      "HelloWorld",
+      "Error"
+    ]
+  },
+  {
+    "q": "The Capacity property indicates the allocated buffer size.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "StringBuilder sb = new(100);\nConsole.WriteLine(sb.Capacity >= 100);",
+    "o": [
+      "True",
+      "False",
+      "100",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method creates a char array from StringBuilder.",
+    "type": "fill_blank",
+    "answers": [
+      "CopyTo"
+    ],
+    "other_options": [
+      "ToCharArray",
+      "GetChars",
+      "Extract"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "StringBuilder sb = new(\"Test\");\nConsole.WriteLine(sb[0]);",
+    "o": [
+      "T",
+      "Test",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "StringBuilder supports indexer access to individual characters.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Expression<Func<int, bool>> expr = x => x > 5;\nConsole.WriteLine(expr.Body.NodeType);",
+    "o": [
+      "GreaterThan",
+      "Lambda",
+      "Error",
+      "x > 5"
+    ]
+  },
+  {
+    "q": "Expression trees represent code as data.",
+    "type": "fill_blank",
+    "answers": [
+      "Expression"
+    ],
+    "other_options": [
+      "Lambda",
+      "Delegate",
+      "Tree"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var param = Expression.Parameter(typeof(int), \"x\");\nvar body = Expression.Constant(42);\nvar lambda = Expression.Lambda<Func<int, int>>(body, param);\nvar func = lambda.Compile();\nConsole.WriteLine(func(0));",
+    "o": [
+      "42",
+      "0",
+      "Error",
+      "x"
+    ]
+  },
+  {
+    "q": "Match the Expression static methods:",
+    "type": "match",
+    "left": [
+      "Constant()",
+      "Parameter()",
+      "Lambda()",
+      "Call()"
+    ],
+    "right": [
+      "Create constant",
+      "Create parameter",
+      "Create lambda",
+      "Create method call"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Expression<Func<int, int>> expr = x => x * 2;\nConsole.WriteLine(expr.Parameters[0].Name);",
+    "o": [
+      "x",
+      "0",
+      "Error",
+      "int"
+    ]
+  },
+  {
+    "q": "Expression trees can be compiled to executable delegates.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "dynamic d = 5;\nConsole.WriteLine(d + 10);",
+    "o": [
+      "15",
+      "Error",
+      "d + 10",
+      "null"
+    ]
+  },
+  {
+    "q": "The dynamic type bypasses compile-time type checking.",
+    "type": "fill_blank",
+    "answers": [
+      "dynamic"
+    ],
+    "other_options": [
+      "var",
+      "object",
+      "auto"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "dynamic d = \"Hello\";\nConsole.WriteLine(d.Length);",
+    "o": [
+      "5",
+      "Error",
+      "Length",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the dynamic binding resolution steps:",
+    "type": "rearrange",
+    "words": [
+      "Compile with dynamic",
+      "Run program",
+      "Resolve at runtime",
+      "Execute method"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "dynamic d = new ExpandoObject();\nd.Name = \"Test\";\nConsole.WriteLine(d.Name);",
+    "o": [
+      "Test",
+      "Error",
+      "Name",
+      "null"
+    ]
+  },
+  {
+    "q": "ExpandoObject allows adding properties at runtime.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "dynamic d = new ExpandoObject();\nvar dict = d as IDictionary<string, object>;\ndict[\"Value\"] = 42;\nConsole.WriteLine(d.Value);",
+    "o": [
+      "42",
+      "Error",
+      "Value",
+      "null"
+    ]
+  },
+  {
+    "q": "Match the dynamic features:",
+    "type": "match",
+    "left": [
+      "ExpandoObject",
+      "DynamicObject",
+      "dynamic keyword",
+      "DLR"
+    ],
+    "right": [
+      "Add properties",
+      "Custom behavior",
+      "Late binding",
+      "Dynamic Language Runtime"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "unsafe\n{\n    int x = 10;\n    int* p = &x;\n    Console.WriteLine(*p);\n}",
+    "o": [
+      "10",
+      "Error",
+      "p",
+      "0x..."
+    ]
+  },
+  {
+    "q": "The unsafe keyword allows pointer manipulation.",
+    "type": "fill_blank",
+    "answers": [
+      "unsafe"
+    ],
+    "other_options": [
+      "pointer",
+      "managed",
+      "native"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "unsafe\n{\n    int[] arr = { 1, 2, 3 };\n    fixed (int* p = arr)\n    {\n        Console.WriteLine(*(p + 1));\n    }\n}",
+    "o": [
+      "2",
+      "1",
+      "3",
+      "Error"
+    ]
+  },
+  {
+    "q": "The fixed statement prevents the garbage collector from moving an object.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "unsafe\n{\n    int x = 42;\n    void* v = &x;\n    Console.WriteLine(*(int*)v);\n}",
+    "o": [
+      "42",
+      "Error",
+      "v",
+      "0"
+    ]
+  },
+  {
+    "q": "Rearrange the unsafe code compilation requirements:",
+    "type": "rearrange",
+    "words": [
+      "Enable unsafe in project",
+      "Use unsafe keyword",
+      "Use pointers",
+      "Compile with /unsafe"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Marshal.SizeOf(typeof(int));",
+    "o": [
+      "4",
+      "8",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match the interop concepts:",
+    "type": "match",
+    "left": [
+      "P/Invoke",
+      "COM Interop",
+      "Marshal",
+      "DllImport"
+    ],
+    "right": [
+      "Platform invoke",
+      "Component model",
+      "Data conversion",
+      "Import native DLL"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "[DllImport(\"kernel32.dll\")]\nstatic extern bool Beep(uint freq, uint duration);",
+    "o": [
+      "Valid P/Invoke declaration",
+      "Compilation error",
+      "Runtime error",
+      "Warning only"
+    ]
+  },
+  {
+    "q": "The DllImport attribute imports functions from native DLLs.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "GCHandle handle = GCHandle.Alloc(new object());\nConsole.WriteLine(handle.IsAllocated);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ class prevents garbage collection of an object.",
+    "type": "fill_blank",
+    "answers": [
+      "GCHandle"
+    ],
+    "other_options": [
+      "GC",
+      "Handle",
+      "Pin"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "IntPtr ptr = new(0x100);\nConsole.WriteLine(ptr.ToInt32());",
+    "o": [
+      "256",
+      "0x100",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "IntPtr represents a platform-specific pointer.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "nint n = 42;\nConsole.WriteLine(n);",
+    "o": [
+      "42",
+      "Error",
+      "nint",
+      "0"
+    ]
+  },
+  {
+    "q": "Match the pointer types:",
+    "type": "match",
+    "left": [
+      "IntPtr",
+      "nint",
+      "void*",
+      "delegate*"
+    ],
+    "right": [
+      "Platform pointer",
+      "Native integer",
+      "Untyped pointer",
+      "Function pointer"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "nuint size = (nuint)sizeof(IntPtr);\nConsole.WriteLine(size > 0);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "The nint and nuint types are native-sized integers.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "unsafe\n{\n    delegate*<int, int, int> funcPtr = &Add;\n    Console.WriteLine(funcPtr(3, 4));\n}\nstatic int Add(int a, int b) => a + b;",
+    "o": [
+      "7",
+      "Error",
+      "funcPtr",
+      "0"
+    ]
+  },
+  {
+    "q": "Function pointers provide low-overhead method invocation.",
+    "type": "fill_blank",
+    "answers": [
+      "Function"
+    ],
+    "other_options": [
+      "Delegate",
+      "Method",
+      "Pointer"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Span<int> span = stackalloc int[] { 1, 2, 3 };\nConsole.WriteLine(span[1]);",
+    "o": [
+      "2",
+      "1",
+      "3",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the source generator execution order:",
+    "type": "rearrange",
+    "words": [
+      "Initialize generator",
+      "Receive syntax trees",
+      "Generate source",
+      "Add to compilation"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "[GeneratedRegex(@\"\\d+\")]\npartial Regex DigitsRegex();",
+    "o": [
+      "Valid source-generated regex declaration",
+      "Compilation error",
+      "Runtime error",
+      "Warning"
+    ]
+  },
+  {
+    "q": "Source generators run at compile time to produce additional source code.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "partial void OnPropertyChanged(string name);",
+    "o": [
+      "Valid partial method declaration",
+      "Compilation error",
+      "Runtime error",
+      "Warning"
+    ]
+  },
+  {
+    "q": "Match the compilation features:",
+    "type": "match",
+    "left": [
+      "Source generators",
+      "Analyzers",
+      "Code fixes",
+      "Incremental generators"
+    ],
+    "right": [
+      "Generate code",
+      "Find issues",
+      "Suggest fixes",
+      "Efficient regeneration"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "AssemblyName name = new(\"TestAssembly\");\nConsole.WriteLine(name.Name);",
+    "o": [
+      "TestAssembly",
+      "name",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The AssemblyBuilder class creates assemblies at runtime.",
+    "type": "fill_blank",
+    "answers": [
+      "AssemblyBuilder"
+    ],
+    "other_options": [
+      "Assembly",
+      "ModuleBuilder",
+      "TypeBuilder"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var assembly = Assembly.GetExecutingAssembly();\nConsole.WriteLine(assembly.GetName().Name != null);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Reflection.Emit allows generating IL code at runtime.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "ILGenerator il = methodBuilder.GetILGenerator();\nil.Emit(OpCodes.Ldc_I4, 42);\nil.Emit(OpCodes.Ret);",
+    "o": [
+      "Valid IL generation code",
+      "Compilation error",
+      "Runtime error",
+      "Warning"
+    ]
+  },
+  {
+    "q": "Rearrange the dynamic assembly creation steps:",
+    "type": "rearrange",
+    "words": [
+      "Create AssemblyBuilder",
+      "Define module",
+      "Define type",
+      "Define method",
+      "Generate IL"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "TypeBuilder tb = moduleBuilder.DefineType(\"MyType\");\nConsole.WriteLine(tb.Name);",
+    "o": [
+      "MyType",
+      "tb",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Match the Emit classes:",
+    "type": "match",
+    "left": [
+      "AssemblyBuilder",
+      "ModuleBuilder",
+      "TypeBuilder",
+      "MethodBuilder"
+    ],
+    "right": [
+      "Build assembly",
+      "Build module",
+      "Build type",
+      "Build method"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var weakRef = new WeakReference(new object());\nGC.Collect();\nConsole.WriteLine(weakRef.IsAlive);",
+    "o": [
+      "False (usually)",
+      "True",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "WeakReference allows garbage collection of the referenced object.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "ConditionalWeakTable<object, string> table = new();\nvar key = new object();\ntable.Add(key, \"Value\");\nConsole.WriteLine(table.TryGetValue(key, out var val) ? val : \"None\");",
+    "o": [
+      "Value",
+      "None",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ class provides a weak reference table for associated data.",
+    "type": "fill_blank",
+    "answers": [
+      "ConditionalWeakTable"
+    ],
+    "other_options": [
+      "WeakTable",
+      "WeakDictionary",
+      "AssociationTable"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "GC.TryStartNoGCRegion(1024 * 1024);\nConsole.WriteLine(GC.GetGCMemoryInfo().GCHeapSize > 0);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "GC.Collect forces garbage collection.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "GC.GetTotalMemory(false) returns the approximate bytes used.",
+    "o": [
+      "True statement about GC.GetTotalMemory",
+      "Error",
+      "false",
+      "0"
+    ]
+  },
+  {
+    "q": "Rearrange the object lifecycle stages:",
+    "type": "rearrange",
+    "words": [
+      "Allocate",
+      "Use object",
+      "Unreachable",
+      "Finalize",
+      "Reclaim memory"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Console.WriteLine(GC.MaxGeneration);",
+    "o": [
+      "2",
+      "0",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match the GC methods:",
+    "type": "match",
+    "left": [
+      "Collect()",
+      "SuppressFinalize()",
+      "ReRegisterForFinalize()",
+      "WaitForPendingFinalizers()"
+    ],
+    "right": [
+      "Force collection",
+      "Skip finalization",
+      "Re-enable finalization",
+      "Wait for finalizers"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var gen = GC.GetGeneration(new object());\nConsole.WriteLine(gen >= 0);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "-1"
+    ]
+  },
+  {
+    "q": "The Large Object Heap stores objects larger than 85,000 bytes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "GCSettings.LatencyMode = GCLatencyMode.LowLatency;\nConsole.WriteLine(GCSettings.LatencyMode);",
+    "o": [
+      "LowLatency",
+      "Interactive",
+      "Error",
+      "Batch"
+    ]
+  },
+  {
+    "q": "The ______ enum controls GC latency behavior.",
+    "type": "fill_blank",
+    "answers": [
+      "GCLatencyMode"
+    ],
+    "other_options": [
+      "GCMode",
+      "LatencyMode",
+      "CollectionMode"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "ref int GetRef(int[] arr, int index) => ref arr[index];\nint[] nums = { 1, 2, 3 };\nref int r = ref GetRef(nums, 1);\nr = 20;\nConsole.WriteLine(nums[1]);",
+    "o": [
+      "20",
+      "2",
+      "1",
+      "Error"
+    ]
+  },
+  {
+    "q": "ref returns allow returning references to variables.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "ref readonly int GetReadonlyRef(int[] arr, int index) => ref arr[index];\nint[] nums = { 1, 2, 3 };\nref readonly int r = ref GetReadonlyRef(nums, 0);\nConsole.WriteLine(r);",
+    "o": [
+      "1",
+      "Error",
+      "0",
+      "r"
+    ]
+  },
+  {
+    "q": "Rearrange the ref struct restrictions:",
+    "type": "rearrange",
+    "words": [
+      "Stack only",
+      "No boxing",
+      "No async",
+      "No interface",
+      "No field in class"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "ref struct RefStruct { public Span<int> Data; }\nConsole.WriteLine(typeof(RefStruct).IsValueType);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "RefStruct"
+    ]
+  },
+  {
+    "q": "Match the ref features:",
+    "type": "match",
+    "left": [
+      "ref return",
+      "ref readonly",
+      "ref struct",
+      "ref local"
+    ],
+    "right": [
+      "Return reference",
+      "Readonly reference",
+      "Stack-only struct",
+      "Local reference"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "scoped Span<int> span = stackalloc int[3];\nConsole.WriteLine(span.Length);",
+    "o": [
+      "3",
+      "Error",
+      "0",
+      "span"
+    ]
+  },
+  {
+    "q": "The scoped keyword limits the lifetime of a ref variable.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "readonly struct Point { public int X { get; init; } public int Y { get; init; } }\nvar p = new Point { X = 1, Y = 2 };\nConsole.WriteLine(p.X);",
+    "o": [
+      "1",
+      "Error",
+      "0",
+      "Point"
+    ]
+  },
+  {
+    "q": "The ______ modifier makes a struct completely immutable.",
+    "type": "fill_blank",
+    "answers": [
+      "readonly"
+    ],
+    "other_options": [
+      "const",
+      "immutable",
+      "final"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "readonly ref struct ReadonlyRefStruct { public ReadOnlySpan<char> Data; }\nConsole.WriteLine(typeof(ReadonlyRefStruct).Name);",
+    "o": [
+      "ReadonlyRefStruct",
+      "Error",
+      "RefStruct",
+      "null"
+    ]
+  },
+  {
+    "q": "readonly ref struct combines readonly and ref struct constraints.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "[InlineArray(3)]\nstruct Buffer { private int _element0; }",
+    "o": [
+      "Valid inline array declaration",
+      "Compilation error",
+      "Runtime error",
+      "Warning"
+    ]
+  },
+  {
+    "q": "Match the struct modifiers:",
+    "type": "match",
+    "left": [
+      "readonly struct",
+      "ref struct",
+      "record struct",
+      "readonly ref struct"
+    ],
+    "right": [
+      "Immutable value type",
+      "Stack-only",
+      "With equality",
+      "Immutable stack-only"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var utf8 = \"Hello\"u8;\nConsole.WriteLine(utf8.Length);",
+    "o": [
+      "5",
+      "Error",
+      "Hello",
+      "10"
+    ]
+  },
+  {
+    "q": "UTF8 string literals end with u8 suffix.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "ReadOnlySpan<byte> bytes = \"Test\"u8;\nConsole.WriteLine(bytes[0]);",
+    "o": [
+      "84",
+      "T",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Rearrange the primary constructor execution:",
+    "type": "rearrange",
+    "words": [
+      "Define parameters",
+      "Capture in fields",
+      "Initialize members",
+      "Execute body"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Point(int x, int y)\n{\n    public int X => x;\n    public int Y => y;\n}\nvar p = new Point(3, 4);\nConsole.WriteLine(p.X);",
+    "o": [
+      "3",
+      "4",
+      "Error",
+      "Point"
+    ]
+  },
+  {
+    "q": "Primary constructors for classes capture parameters in the type scope.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "struct Point(int x, int y)\n{\n    public int X { get; } = x;\n    public int Y { get; } = y;\n}\nConsole.WriteLine(new Point(1, 2).Y);",
+    "o": [
+      "2",
+      "1",
+      "Error",
+      "Point"
+    ]
+  },
+  {
+    "q": "Match the constructor types:",
+    "type": "match",
+    "left": [
+      "Default constructor",
+      "Primary constructor",
+      "Static constructor",
+      "Copy constructor"
+    ],
+    "right": [
+      "Parameterless",
+      "In declaration",
+      "Type initialization",
+      "Clone object"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Logger(string name)\n{\n    public void Log(string msg) => Console.WriteLine($\"{name}: {msg}\");\n}\nnew Logger(\"App\").Log(\"Started\");",
+    "o": [
+      "App: Started",
+      "Started",
+      "Error",
+      "name: msg"
+    ]
+  },
+  {
+    "q": "The file keyword limits type visibility to the containing file.",
+    "type": "fill_blank",
+    "answers": [
+      "file"
+    ],
+    "other_options": [
+      "internal",
+      "private",
+      "local"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "file class LocalType { public static int Value = 42; }\nConsole.WriteLine(LocalType.Value);",
+    "o": [
+      "42",
+      "Error",
+      "null",
+      "LocalType"
+    ]
+  },
+  {
+    "q": "File-scoped types cannot be accessed from other files.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "using alias = System.Console;\nalias.WriteLine(\"Hello\");",
+    "o": [
+      "Hello",
+      "Error",
+      "alias",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the collection expression features:",
+    "type": "rearrange",
+    "words": [
+      "Use brackets",
+      "List elements",
+      "Spread operator",
+      "Type inference"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "int[] arr1 = [1, 2];\nint[] arr2 = [..arr1, 3];\nConsole.WriteLine(arr2.Length);",
+    "o": [
+      "3",
+      "2",
+      "4",
+      "Error"
+    ]
+  },
+  {
+    "q": "Collection expressions work with any type implementing IEnumerable.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "List<int> list = [1, 2, 3];\nConsole.WriteLine(list[^1]);",
+    "o": [
+      "3",
+      "1",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match the modern C# syntax features:",
+    "type": "match",
+    "left": [
+      "[] syntax",
+      ".. spread",
+      "^n index",
+      "..range"
+    ],
+    "right": [
+      "Collection literal",
+      "Spread elements",
+      "From end",
+      "Slice range"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Span<int> empty = [];\nConsole.WriteLine(empty.Length);",
+    "o": [
+      "0",
+      "Error",
+      "null",
+      "empty"
+    ]
+  },
+  {
+    "q": "The empty collection expression [] creates an empty collection.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "ReadOnlySpan<int> ros = [1, 2, 3];\nConsole.WriteLine(ros[0]);",
+    "o": [
+      "1",
+      "Error",
+      "ros",
+      "0"
+    ]
+  },
+  {
+    "q": "The ______ attribute marks a method as a collection builder.",
+    "type": "fill_blank",
+    "answers": [
+      "CollectionBuilder"
+    ],
+    "other_options": [
+      "Builder",
+      "Collection",
+      "Create"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "ImmutableArray<int> immutable = [1, 2, 3];\nConsole.WriteLine(immutable.Length);",
+    "o": [
+      "3",
+      "Error",
+      "0",
+      "immutable"
+    ]
+  },
+  {
+    "q": "Collection expressions support custom collection types.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "HashSet<int> set = [1, 2, 2, 3];\nConsole.WriteLine(set.Count);",
+    "o": [
+      "3",
+      "4",
+      "Error",
+      "set"
+    ]
+  },
+  {
+    "q": "Rearrange the alias directive types:",
+    "type": "rearrange",
+    "words": [
+      "Namespace alias",
+      "Type alias",
+      "Global using",
+      "Static using"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "using Point = (int X, int Y);\nPoint p = (3, 4);\nConsole.WriteLine(p.X);",
+    "o": [
+      "3",
+      "4",
+      "Error",
+      "Point"
+    ]
+  },
+  {
+    "q": "Type aliases can refer to tuple types.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "using unsafe FuncPtr = delegate*<int, int>;\nConsole.WriteLine(typeof(FuncPtr).Name);",
+    "o": [
+      "IntPtr or similar native type",
+      "Error",
+      "FuncPtr",
+      "delegate"
+    ]
+  },
+  {
+    "q": "Match the alias types:",
+    "type": "match",
+    "left": [
+      "using Alias =",
+      "global using",
+      "using static",
+      "extern alias"
+    ],
+    "right": [
+      "Type alias",
+      "Project-wide import",
+      "Static import",
+      "Assembly reference"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "using Numbers = int[];\nNumbers arr = [1, 2, 3];\nConsole.WriteLine(arr.Length);",
+    "o": [
+      "3",
+      "Error",
+      "Numbers",
+      "0"
+    ]
+  },
+  {
+    "q": "Any type, including arrays and pointers, can have an alias.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "lock (typeof(string))\n{\n    Console.WriteLine(\"Locked on type\");\n}",
+    "o": [
+      "Locked on type",
+      "Error",
+      "string",
+      "null"
+    ]
+  },
+  {
+    "q": "The new Lock class provides async-compatible locking.",
+    "type": "fill_blank",
+    "answers": [
+      "Lock"
+    ],
+    "other_options": [
+      "AsyncLock",
+      "Monitor",
+      "Mutex"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Lock l = new();\nusing (l.EnterScope())\n{\n    Console.WriteLine(\"In scope\");\n}",
+    "o": [
+      "In scope",
+      "Error",
+      "Lock",
+      "null"
+    ]
+  },
+  {
+    "q": "Lock.EnterScope returns a disposable that releases the lock.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "partial class C\n{\n    public partial int X { get; set; }\n}\npartial class C\n{\n    public partial int X { get => 1; set { } }\n}",
+    "o": [
+      "Valid partial property definition",
+      "Compilation error",
+      "Runtime error",
+      "Warning"
+    ]
+  },
+  {
+    "q": "Rearrange the partial property declaration requirements:",
+    "type": "rearrange",
+    "words": [
+      "Declaring part",
+      "Implementing part",
+      "Same signature",
+      "One implementation"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Console.WriteLine(Environment.Version);",
+    "o": [
+      "The .NET runtime version",
+      "Error",
+      "null",
+      "Version"
+    ]
+  },
+  {
+    "q": "Match the Environment properties:",
+    "type": "match",
+    "left": [
+      "MachineName",
+      "UserName",
+      "OSVersion",
+      "ProcessorCount"
+    ],
+    "right": [
+      "Computer name",
+      "Current user",
+      "OS info",
+      "CPU count"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Console.WriteLine(Environment.Is64BitProcess);",
+    "o": [
+      "True or False depending on process",
+      "Error",
+      "64",
+      "null"
+    ]
+  },
+  {
+    "q": "Environment.FailFast terminates the process immediately.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var args = Environment.GetCommandLineArgs();\nConsole.WriteLine(args.Length >= 1);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "The first command-line argument is always the executable path.",
+    "type": "fill_blank",
+    "answers": [
+      "executable"
+    ],
+    "other_options": [
+      "first",
+      "command",
+      "path"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Environment.SetEnvironmentVariable(\"TEST\", \"Value\");\nConsole.WriteLine(Environment.GetEnvironmentVariable(\"TEST\"));",
+    "o": [
+      "Value",
+      "TEST",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Environment variables can be set at process, user, or machine level.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Console.WriteLine(Path.GetDirectoryName(@\"C:\\folder\\file.txt\"));",
+    "o": [
+      "C:\\folder",
+      "file.txt",
+      "Error",
+      "folder"
+    ]
+  },
+  {
+    "q": "Match the Path methods:",
+    "type": "match",
+    "left": [
+      "GetFileName()",
+      "GetExtension()",
+      "GetDirectoryName()",
+      "Combine()"
+    ],
+    "right": [
+      "File name only",
+      "Extension only",
+      "Directory only",
+      "Join paths"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Console.WriteLine(Path.GetExtension(\"file.txt\"));",
+    "o": [
+      ".txt",
+      "txt",
+      "file",
+      "Error"
+    ]
+  },
+  {
+    "q": "Path.Combine handles directory separators correctly.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Console.WriteLine(Path.Combine(\"folder\", \"file.txt\"));",
+    "o": [
+      "folder/file.txt or folder\\file.txt",
+      "folderfile.txt",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ method returns a full absolute path.",
+    "type": "fill_blank",
+    "answers": [
+      "GetFullPath"
+    ],
+    "other_options": [
+      "GetAbsolutePath",
+      "FullPath",
+      "Resolve"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Console.WriteLine(Path.HasExtension(\"file.txt\"));",
+    "o": [
+      "True",
+      "False",
+      "file.txt",
+      "Error"
+    ]
+  },
+  {
+    "q": "Path.GetTempPath returns the system temporary directory.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Console.WriteLine(Path.GetRandomFileName().Length > 0);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Rearrange the file operation safety steps:",
+    "type": "rearrange",
+    "words": [
+      "Check exists",
+      "Open with using",
+      "Process content",
+      "Auto-dispose"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Console.WriteLine(Path.GetFileNameWithoutExtension(\"test.txt\"));",
+    "o": [
+      "test",
+      "test.txt",
+      ".txt",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match the file system static classes:",
+    "type": "match",
+    "left": [
+      "File",
+      "Directory",
+      "Path",
+      "FileInfo"
+    ],
+    "right": [
+      "File operations",
+      "Directory operations",
+      "Path manipulation",
+      "File metadata"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "var invalidChars = Path.GetInvalidFileNameChars();\nConsole.WriteLine(invalidChars.Length > 0);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "0"
+    ]
+  },
+  {
+    "q": "Path.IsPathFullyQualified determines if a path is absolute.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Console.WriteLine(Path.IsPathRooted(@\"C:\\file.txt\"));",
+    "o": [
+      "True",
+      "False",
+      "C:\\file.txt",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method changes the file extension of a path string.",
+    "type": "fill_blank",
+    "answers": [
+      "ChangeExtension"
+    ],
+    "other_options": [
+      "SetExtension",
+      "ReplaceExtension",
+      "ModifyExtension"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced file synchronization code?",
+    "type": "mcq",
+    "c": "using System.IO;\nusing System.Threading;\nvar resetEvent = new ManualResetEventSlim(false);\nusing var watcher = new FileSystemWatcher(@\".\", \"*.txt\");\nwatcher.NotifyFilter = NotifyFilters.LastWrite;\nwatcher.Changed += (s, e) => resetEvent.Set();\nwatcher.EnableRaisingEvents = true;\nFile.WriteAllText(\"test.txt\", \"data\");\nConsole.WriteLine(resetEvent.Wait(1000));",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "Hangs indefinitely"
+    ]
+  },
+  {
+    "q": "The ______ property of FileSystemWatcher specifies the size of the internal buffer.",
+    "type": "fill_blank",
+    "answers": [
+      "InternalBufferSize"
+    ],
+    "other_options": [
+      "BufferSize",
+      "QueueSize",
+      "EventBufferSize"
+    ]
+  },
+  {
+    "q": "FileSystemWatcher can detect changes across network drives reliably in all scenarios.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "What is the output of this memory-mapped file code?",
+    "type": "mcq",
+    "c": "using System.IO.MemoryMappedFiles;\nusing var mmf = MemoryMappedFile.CreateNew(\"test\", 10000);\nusing var accessor = mmf.CreateViewAccessor();\naccessor.Write(0, 42);\nint value = accessor.ReadInt32(0);\nConsole.WriteLine(value);",
+    "o": [
+      "42",
+      "0",
+      "Error",
+      "Exception"
+    ]
+  }
+]

@@ -1,0 +1,102 @@
+[
+    {
+        "title": "Defining a Class",
+        "ques": "Create a class named **`Car`** with public members `brand` (string) and `year` (int). Create an object of `Car` and assign values.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Car {\npublic:\n    string brand;\n    int year;\n};\n\nint main() {\n    Car myCar;\n    myCar.brand = \"Toyota\";\n    myCar.year = 2020;\n    cout << myCar.brand << \" \" << myCar.year << endl;\n    return 0;\n}"
+        },
+        "explanation": "Classes are user-defined data types acting as blueprints for objects. `public:` makes members accessible from outside the class."
+    },
+    {
+        "title": "Class Methods",
+        "ques": "Add a method (member function) named **`honk`** to the `Car` class that prints \"Beep beep!\" when called.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nclass Car {\npublic:\n    void honk() {\n        cout << \"Beep beep!\" << endl;\n    }\n};\n\nint main() {\n    Car myCar;\n    myCar.honk();\n    return 0;\n}"
+        },
+        "explanation": "Methods are functions defined inside a class. They define the behavior of the objects."
+    },
+    {
+        "title": "Constructors",
+        "ques": "What is a **constructor**? Add a constructor to the `Car` class to initialize `brand` and `year` when an object is created.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Car {\npublic:\n    string brand;\n    int year;\n    \n    // Constructor\n    Car(string b, int y) {\n        brand = b;\n        year = y;\n    }\n};\n\nint main() {\n    Car myCar(\"Ford\", 1999);\n    cout << myCar.brand << endl;\n    return 0;\n}"
+        },
+        "explanation": "A constructor is a special method with the same name as the class. It is automatically called when an object is instantiated."
+    },
+    {
+        "title": "Access Specifiers",
+        "ques": "Explain the difference between **`public`** and **`private`** access specifiers. Try to access a private member from `main` to see the restriction.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nclass MyClass {\nprivate:\n    int x; // Private\npublic:\n    int y; // Public\n};\n\nint main() {\n    MyClass obj;\n    obj.y = 10; // Allowed\n    // obj.x = 20; // Error: x is private\n    return 0;\n}"
+        },
+        "explanation": "`public` members are accessible from anywhere. `private` members (the default access) are only accessible from within the class itself."
+    },
+    {
+        "title": "Encapsulation (Getters/Setters)",
+        "ques": "Use **Encapsulation** to protect `salary` (private). Provide public methods `setSalary` and `getSalary` to access it.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nclass Employee {\nprivate:\n    int salary;\npublic:\n    void setSalary(int s) {\n        salary = s;\n    }\n    int getSalary() {\n        return salary;\n    }\n};\n\nint main() {\n    Employee emp;\n    emp.setSalary(50000);\n    cout << \"Salary: \" << emp.getSalary() << endl;\n    return 0;\n}"
+        },
+        "explanation": "Encapsulation bundles data (variables) and methods. Using getters and setters allows validation and control over data access."
+    },
+    {
+        "title": "Destructors",
+        "ques": "Define a **destructor** for a class `Test` that prints \"Object destroyed\" when the object goes out of scope.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nclass Test {\npublic:\n    // Destructor\n    ~Test() {\n        cout << \"Object destroyed\" << endl;\n    }\n};\n\nint main() {\n    Test t;\n    cout << \"Function execution\" << endl;\n    return 0;\n} // Destructor called here"
+        },
+        "explanation": "A destructor has the class name preceded by a tilde `~`. It takes no arguments and returns nothing. It cleans up resources."
+    },
+    {
+        "title": "Defining Methods Outside Class",
+        "ques": "Define a method `display()` **outside** the class definition using the scope resolution operator `::`.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nclass Box {\npublic:\n    void display(); // Prototype\n};\n\n// Definition outside\nvoid Box::display() {\n    cout << \"This is a box\" << endl;\n}\n\nint main() {\n    Box b;\n    b.display();\n    return 0;\n}"
+        },
+        "explanation": "To define a method outside the class, use `ReturnType ClassName::MethodName() { ... }`."
+    },
+    {
+        "title": "Static Members",
+        "ques": "Create a class `Counter` with a **static** integer `count` that tracks the number of objects created. Increment it in the constructor.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nclass Counter {\npublic:\n    static int count;\n    Counter() {\n        count++;\n    }\n};\n\nint Counter::count = 0; // Initialize static member\n\nint main() {\n    Counter c1;\n    Counter c2;\n    cout << \"Count: \" << Counter::count << endl;\n    return 0;\n}"
+        },
+        "explanation": "Static members belong to the class, not specific objects. There is only one copy of `count` shared by all `Counter` objects."
+    },
+    {
+        "title": "This Pointer",
+        "ques": "Explain the **`this`** pointer. Use it in a method to differentiate between a member variable `x` and a parameter `x`.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nclass Example {\n    int x;\npublic:\n    void setX(int x) {\n        this->x = x; // this->x refers to member, x refers to param\n    }\n    void print() { cout << x << endl; }\n};\n\nint main() {\n    Example e;\n    e.setX(42);\n    e.print();\n    return 0;\n}"
+        },
+        "explanation": "`this` is a pointer to the current object instance. It is used to access members when parameter names shadow member names."
+    },
+    {
+        "title": "Copy Constructor",
+        "ques": "Create a **copy constructor** for a class `Point` copying `x` and `y` coordinates. Demonstrate copying an object.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nclass Point {\npublic:\n    int x, y;\n    Point(int a, int b) : x(a), y(b) {}\n    \n    // Copy Constructor\n    Point(const Point &p) {\n        x = p.x;\n        y = p.y;\n        cout << \"Copied!\" << endl;\n    }\n};\n\nint main() {\n    Point p1(10, 20);\n    Point p2 = p1; // Calls copy constructor\n    return 0;\n}"
+        },
+        "explanation": "A copy constructor initializes a new object as a copy of an existing object. Signature: `ClassName(const ClassName &obj)`."
+    }
+]

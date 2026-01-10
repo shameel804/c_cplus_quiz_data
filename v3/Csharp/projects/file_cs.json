@@ -1,0 +1,102 @@
+[
+    {
+        "title": "System.IO Namespace",
+        "ques": "Which namespace contains types for reading and writing to files? Import it.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "using System.IO;"
+        },
+        "explanation": "`System.IO` contains classes like `File`, `StreamReader`, `StreamWriter`, `Directory`, etc."
+    },
+    {
+        "title": "Checking File Existence",
+        "ques": "Write code to check if a file \"config.xml\" **exists** before trying to open it.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "if (File.Exists(\"config.xml\")) {\n    Console.WriteLine(\"File found.\");\n} else {\n    Console.WriteLine(\"File not found.\");\n}"
+        },
+        "explanation": "`File.Exists(path)` returns true if the file exists at the specified path."
+    },
+    {
+        "title": "Writing Text to File",
+        "ques": "Use `File.WriteAllText` to **write** the string \"Hello World\" to \"test.txt\" (overwriting content).",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "string content = \"Hello World\";\nFile.WriteAllText(\"test.txt\", content);"
+        },
+        "explanation": "`File.WriteAllText` creates a new file, writes the contents, and then closes the file. If the file exists, it is overwritten."
+    },
+    {
+        "title": "Reading Text from File",
+        "ques": "Use `File.ReadAllText` to **read** the entire content of \"test.txt\" into a string variable.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "string text = File.ReadAllText(\"test.txt\");\nConsole.WriteLine(text);"
+        },
+        "explanation": "`File.ReadAllText` opens a text file, reads all lines of the file, and then closes the file."
+    },
+    {
+        "title": "StreamWriter (Appending)",
+        "ques": "Use **`StreamWriter`** to **append** a line \"New Log Entry\" to \"log.txt\". Use `true` for append mode.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "using (StreamWriter sw = new StreamWriter(\"log.txt\", true)) {\n    sw.WriteLine(\"New Log Entry\");\n}"
+        },
+        "explanation": "The second parameter of `StreamWriter` constructor determines whether to append (`true`) or overwrite (`false`)."
+    },
+    {
+        "title": "StreamReader (Reading Lines)",
+        "ques": "Use **`StreamReader`** to read a file \"data.txt\" line by line inside a `while` loop until null.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "using (StreamReader sr = new StreamReader(\"data.txt\")) {\n    string line;\n    while ((line = sr.ReadLine()) != null) {\n        Console.WriteLine(line);\n    }\n}"
+        },
+        "explanation": "`ReadLine()` returns the next line of characters from the input stream, or `null` if the end of the input stream is reached."
+    },
+    {
+        "title": "Directory Operations",
+        "ques": "Create a new **Directory** named \"Backup\" and delete it if it exists.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "if (Directory.Exists(\"Backup\")) {\n    Directory.Delete(\"Backup\", true); // true for recursive\n}\nDirectory.CreateDirectory(\"Backup\");"
+        },
+        "explanation": "`Directory` class provides static methods for creating, moving, and enumerating directories."
+    },
+    {
+        "title": "Path Class",
+        "ques": "Use `Path.Combine` to safely join directory \"C:\\Data\" and file \"file.txt\". Why use it instead of string concatenation?",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "string fullPath = Path.Combine(@\"C:\\Data\", \"file.txt\");"
+        },
+        "explanation": "`Path.Combine` automatically handles directory separators (`\\` or `/`) correctly for the underlying operating system."
+    },
+    {
+        "title": "File Info",
+        "ques": "Use **`FileInfo`** to get the size (length) of \"image.png\" in bytes.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "FileInfo fi = new FileInfo(\"image.png\");\nlong size = fi.Length;\nConsole.WriteLine($\"{size} bytes\");"
+        },
+        "explanation": "`FileInfo` provides instance methods and properties for creating, copying, deleting, moving, and opening files, aiding in gathering metadata."
+    },
+    {
+        "title": "BinaryWriter/Reader",
+        "ques": "Write an integer `100` and a boolean `true` to a binary file \"data.bin\" using **`BinaryWriter`**.",
+        "answer": {
+            "type": "code",
+            "lang": "csharp",
+            "content": "using (BinaryWriter bw = new BinaryWriter(File.Open(\"data.bin\", FileMode.Create))) {\n    bw.Write(100);\n    bw.Write(true);\n}"
+        },
+        "explanation": "`BinaryWriter` writes primitive types in binary format to a stream."
+    }
+]

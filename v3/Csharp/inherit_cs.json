@@ -1,0 +1,6459 @@
+[
+  {
+    "q": "What is inheritance in C#?",
+    "type": "mcq",
+    "o": [
+      "A mechanism where one class acquires properties of another",
+      "Creating multiple classes",
+      "Implementing interfaces",
+      "Using static methods"
+    ]
+  },
+  {
+    "q": "C# supports single class inheritance only.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "The ______ symbol is used for inheritance.",
+    "type": "fill_blank",
+    "answers": [
+      ":"
+    ],
+    "other_options": [
+      "extends",
+      "->",
+      "inherits"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Animal { public string Name = \"Animal\"; }\nclass Dog : Animal { }\nConsole.WriteLine(new Dog().Name);",
+    "o": [
+      "Animal",
+      "Dog",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Match inheritance terms:",
+    "type": "match",
+    "left": [
+      "Base class",
+      "Derived class",
+      "Parent",
+      "Child"
+    ],
+    "right": [
+      "Inherited from",
+      "Inherits",
+      "Superclass",
+      "Subclass"
+    ]
+  },
+  {
+    "q": "What is a base class?",
+    "type": "mcq",
+    "o": [
+      "A class that is inherited from",
+      "A derived class",
+      "An interface",
+      "A static class"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Parent { public Parent() => Console.Write(\"P \"); }\nclass Child : Parent { public Child() => Console.Write(\"C\"); }\nnew Child();",
+    "o": [
+      "P C",
+      "C P",
+      "C",
+      "Error"
+    ]
+  },
+  {
+    "q": "Base class constructors run before derived class constructors.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Rearrange constructor execution order:",
+    "type": "rearrange",
+    "words": [
+      "Base static constructor",
+      "Derived static constructor",
+      "Base instance constructor",
+      "Derived instance constructor"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class A { public A(int x) => Console.Write(x); }\nclass B : A { public B() : base(42) { } }\nnew B();",
+    "o": [
+      "42",
+      "0",
+      "Error",
+      "B"
+    ]
+  },
+  {
+    "q": "What is the protected access modifier?",
+    "type": "mcq",
+    "o": [
+      "Accessible in the class and derived classes",
+      "Accessible everywhere",
+      "Accessible in the class only",
+      "Accessible in the assembly"
+    ]
+  },
+  {
+    "q": "Protected members are accessible in derived classes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match access modifiers:",
+    "type": "match",
+    "left": [
+      "public",
+      "private",
+      "protected",
+      "internal"
+    ],
+    "right": [
+      "Everywhere",
+      "Same class",
+      "Same + derived",
+      "Same assembly"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Base\n{\n    protected int value = 10;\n}\nclass Derived : Base\n{\n    public int GetValue() => value;\n}\nConsole.WriteLine(new Derived().GetValue());",
+    "o": [
+      "10",
+      "Error",
+      "0",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ modifier combines protected and internal.",
+    "type": "fill_blank",
+    "answers": [
+      "protected internal"
+    ],
+    "other_options": [
+      "internal protected",
+      "protected private",
+      "private protected"
+    ]
+  },
+  {
+    "q": "What is method overriding?",
+    "type": "mcq",
+    "o": [
+      "Providing new implementation for a base class method",
+      "Creating new methods",
+      "Hiding methods",
+      "Deleting methods"
+    ]
+  },
+  {
+    "q": "The virtual keyword allows a method to be overridden.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Shape { public virtual void Draw() => Console.Write(\"Shape\"); }\nclass Circle : Shape { public override void Draw() => Console.Write(\"Circle\"); }\nShape s = new Circle();\ns.Draw();",
+    "o": [
+      "Circle",
+      "Shape",
+      "Error",
+      "Both"
+    ]
+  },
+  {
+    "q": "The ______ keyword is required to override a virtual method.",
+    "type": "fill_blank",
+    "answers": [
+      "override"
+    ],
+    "other_options": [
+      "new",
+      "virtual",
+      "abstract"
+    ]
+  },
+  {
+    "q": "Rearrange method overriding steps:",
+    "type": "rearrange",
+    "words": [
+      "Define virtual in base",
+      "Add override in derived",
+      "Provide new implementation",
+      "Call polymorphically"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Animal\n{\n    public virtual void Speak() => Console.Write(\"...\");\n}\nclass Dog : Animal\n{\n    public override void Speak() => Console.Write(\"Bark\");\n}\nclass Cat : Animal\n{\n    public override void Speak() => Console.Write(\"Meow\");\n}\nAnimal[] animals = { new Dog(), new Cat() };\nforeach (var a in animals) a.Speak();",
+    "o": [
+      "BarkMeow",
+      "......",
+      "Error",
+      "Bark"
+    ]
+  },
+  {
+    "q": "Polymorphism allows different types to respond differently.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is runtime polymorphism?",
+    "type": "mcq",
+    "o": [
+      "Method resolution at runtime based on actual object type",
+      "Method resolution at compile time",
+      "Using interfaces",
+      "Using generics"
+    ]
+  },
+  {
+    "q": "Match polymorphism types:",
+    "type": "match",
+    "left": [
+      "Compile-time",
+      "Runtime",
+      "Overloading",
+      "Overriding"
+    ],
+    "right": [
+      "Static binding",
+      "Dynamic binding",
+      "Same name, different params",
+      "Same signature, different behavior"
+    ]
+  },
+  {
+    "q": "What is method hiding?",
+    "type": "mcq",
+    "o": [
+      "Using new to define a method with the same name",
+      "Making methods private",
+      "Overriding virtual methods",
+      "Removing methods"
+    ]
+  },
+  {
+    "q": "The new keyword hides a base class member.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Base { public void Show() => Console.Write(\"Base\"); }\nclass Derived : Base { public new void Show() => Console.Write(\"Derived\"); }\nBase b = new Derived();\nb.Show();",
+    "o": [
+      "Base",
+      "Derived",
+      "Error",
+      "Both"
+    ]
+  },
+  {
+    "q": "The ______ keyword is used for method hiding.",
+    "type": "fill_blank",
+    "answers": [
+      "new"
+    ],
+    "other_options": [
+      "override",
+      "virtual",
+      "hide"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Base { public void Show() => Console.Write(\"Base\"); }\nclass Derived : Base { public new void Show() => Console.Write(\"Derived\"); }\nDerived d = new Derived();\nd.Show();",
+    "o": [
+      "Derived",
+      "Base",
+      "Error",
+      "Both"
+    ]
+  },
+  {
+    "q": "Rearrange hiding vs overriding:",
+    "type": "rearrange",
+    "words": [
+      "virtual + override = polymorphism",
+      "no virtual + new = hiding",
+      "Base reference uses base",
+      "Derived reference uses derived"
+    ]
+  },
+  {
+    "q": "What is an abstract class?",
+    "type": "mcq",
+    "o": [
+      "A class that cannot be instantiated directly",
+      "A class with no methods",
+      "A static class",
+      "A sealed class"
+    ]
+  },
+  {
+    "q": "Abstract classes can have both abstract and concrete methods.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "The ______ keyword defines an abstract method.",
+    "type": "fill_blank",
+    "answers": [
+      "abstract"
+    ],
+    "other_options": [
+      "virtual",
+      "override",
+      "new"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "abstract class Shape\n{\n    public abstract double Area();\n    public void Display() => Console.Write(\"Shape\");\n}\nclass Square : Shape\n{\n    public double Side = 4;\n    public override double Area() => Side * Side;\n}\nConsole.WriteLine(new Square().Area());",
+    "o": [
+      "16",
+      "Shape",
+      "Error",
+      "4"
+    ]
+  },
+  {
+    "q": "Match abstract concepts:",
+    "type": "match",
+    "left": [
+      "Abstract class",
+      "Abstract method",
+      "Concrete class",
+      "Concrete method"
+    ],
+    "right": [
+      "Cannot instantiate",
+      "No implementation",
+      "Can instantiate",
+      "Has implementation"
+    ]
+  },
+  {
+    "q": "What is a sealed class?",
+    "type": "mcq",
+    "o": [
+      "A class that cannot be inherited",
+      "A class that cannot be instantiated",
+      "A static class",
+      "An abstract class"
+    ]
+  },
+  {
+    "q": "Sealed classes prevent inheritance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "sealed class FinalClass { public int Value = 42; }\nvar f = new FinalClass();\nConsole.WriteLine(f.Value);",
+    "o": [
+      "42",
+      "Error",
+      "FinalClass",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents a class from being inherited.",
+    "type": "fill_blank",
+    "answers": [
+      "sealed"
+    ],
+    "other_options": [
+      "final",
+      "static",
+      "closed"
+    ]
+  },
+  {
+    "q": "What is a sealed override?",
+    "type": "mcq",
+    "o": [
+      "An override that cannot be further overridden",
+      "A method that cannot be called",
+      "A hidden method",
+      "An abstract method"
+    ]
+  },
+  {
+    "q": "sealed override prevents further overriding.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.Write(\"A\"); }\nclass B : A { public sealed override void M() => Console.Write(\"B\"); }\nclass C : B { }\nnew C().M();",
+    "o": [
+      "B",
+      "A",
+      "C",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange sealed method usage:",
+    "type": "rearrange",
+    "words": [
+      "Define virtual in base",
+      "Override with sealed",
+      "Derived cannot override",
+      "Method is fixed"
+    ]
+  },
+  {
+    "q": "What is the is keyword used for?",
+    "type": "mcq",
+    "o": [
+      "Checking if an object is of a certain type",
+      "Assigning values",
+      "Creating objects",
+      "Defining types"
+    ]
+  },
+  {
+    "q": "The is keyword returns a boolean.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Animal { }\nclass Dog : Animal { }\nobject obj = new Dog();\nConsole.WriteLine(obj is Animal);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "Dog"
+    ]
+  },
+  {
+    "q": "The ______ keyword safely casts to a type or returns null.",
+    "type": "fill_blank",
+    "answers": [
+      "as"
+    ],
+    "other_options": [
+      "is",
+      "cast",
+      "to"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Animal { }\nclass Dog : Animal { public void Bark() => Console.Write(\"Bark\"); }\nobject obj = new Dog();\n(obj as Dog)?.Bark();",
+    "o": [
+      "Bark",
+      "Error",
+      "null",
+      "Dog"
+    ]
+  },
+  {
+    "q": "Match type checking keywords:",
+    "type": "match",
+    "left": [
+      "is",
+      "as",
+      "typeof",
+      "(Type)"
+    ],
+    "right": [
+      "Check type",
+      "Safe cast",
+      "Get type info",
+      "Direct cast"
+    ]
+  },
+  {
+    "q": "What is pattern matching with is?",
+    "type": "mcq",
+    "o": [
+      "Checking type and declaring variable in one step",
+      "Matching regular expressions",
+      "String matching",
+      "Interface matching"
+    ]
+  },
+  {
+    "q": "Pattern matching simplifies type checking.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "object obj = \"Hello\";\nif (obj is string s)\n    Console.WriteLine(s.Length);",
+    "o": [
+      "5",
+      "Hello",
+      "Error",
+      "True"
+    ]
+  },
+  {
+    "q": "The ______ pattern matches any value.",
+    "type": "fill_blank",
+    "answers": [
+      "_"
+    ],
+    "other_options": [
+      "*",
+      "any",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange pattern matching types:",
+    "type": "rearrange",
+    "words": [
+      "Type pattern",
+      "Constant pattern",
+      "Property pattern",
+      "Relational pattern"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "object value = 42;\nvar result = value switch\n{\n    int n when n > 0 => \"Positive\",\n    int n when n < 0 => \"Negative\",\n    _ => \"Zero or other\"\n};\nConsole.WriteLine(result);",
+    "o": [
+      "Positive",
+      "Negative",
+      "Zero or other",
+      "Error"
+    ]
+  },
+  {
+    "q": "Switch expressions provide pattern-based branching.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the Object class?",
+    "type": "mcq",
+    "o": [
+      "The base class of all C# types",
+      "A special type for objects",
+      "An abstract class",
+      "A static class"
+    ]
+  },
+  {
+    "q": "All C# classes implicitly inherit from Object.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match Object methods:",
+    "type": "match",
+    "left": [
+      "ToString()",
+      "Equals()",
+      "GetHashCode()",
+      "GetType()"
+    ],
+    "right": [
+      "String representation",
+      "Value equality",
+      "Hash value",
+      "Runtime type"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Person { public string Name = \"Alice\"; }\nConsole.WriteLine(new Person().GetType().Name);",
+    "o": [
+      "Person",
+      "Alice",
+      "Object",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method returns the runtime type of an object.",
+    "type": "fill_blank",
+    "answers": [
+      "GetType"
+    ],
+    "other_options": [
+      "typeof",
+      "Type",
+      "RuntimeType"
+    ]
+  },
+  {
+    "q": "What does Equals() do by default?",
+    "type": "mcq",
+    "o": [
+      "Reference equality for classes",
+      "Value equality",
+      "Always returns true",
+      "Always returns false"
+    ]
+  },
+  {
+    "q": "Override Equals for value-based equality.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Point { public int X, Y; }\nvar p1 = new Point { X = 1, Y = 2 };\nvar p2 = new Point { X = 1, Y = 2 };\nConsole.WriteLine(p1.Equals(p2));",
+    "o": [
+      "False",
+      "True",
+      "Error",
+      "1, 2"
+    ]
+  },
+  {
+    "q": "Rearrange Equals implementation:",
+    "type": "rearrange",
+    "words": [
+      "Check null",
+      "Check type",
+      "Compare fields",
+      "Return bool"
+    ]
+  },
+  {
+    "q": "What is GetHashCode used for?",
+    "type": "mcq",
+    "o": [
+      "Generating a hash value for hash-based collections",
+      "Getting the object type",
+      "Creating strings",
+      "Comparing objects"
+    ]
+  },
+  {
+    "q": "Override GetHashCode when overriding Equals.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Point\n{\n    public int X, Y;\n    public override bool Equals(object obj) => obj is Point p && X == p.X && Y == p.Y;\n    public override int GetHashCode() => HashCode.Combine(X, Y);\n}\nvar p1 = new Point { X = 1, Y = 2 };\nvar p2 = new Point { X = 1, Y = 2 };\nConsole.WriteLine(p1.Equals(p2));",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "1"
+    ]
+  },
+  {
+    "q": "Match equality concepts:",
+    "type": "match",
+    "left": [
+      "Reference equality",
+      "Value equality",
+      "==",
+      "Equals()"
+    ],
+    "right": [
+      "Same memory",
+      "Same values",
+      "Operator",
+      "Method"
+    ]
+  },
+  {
+    "q": "What is the purpose of ToString()?",
+    "type": "mcq",
+    "o": [
+      "Returning a string representation of an object",
+      "Converting to string",
+      "Parsing strings",
+      "Formatting output"
+    ]
+  },
+  {
+    "q": "Default ToString returns the type name.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Person\n{\n    public string Name = \"Alice\";\n    public override string ToString() => $\"Person: {Name}\";\n}\nConsole.WriteLine(new Person());",
+    "o": [
+      "Person: Alice",
+      "Alice",
+      "Person",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ method creates a shallow copy of an object.",
+    "type": "fill_blank",
+    "answers": [
+      "MemberwiseClone"
+    ],
+    "other_options": [
+      "Clone",
+      "Copy",
+      "Shallow"
+    ]
+  },
+  {
+    "q": "What is upcasting?",
+    "type": "mcq",
+    "o": [
+      "Casting derived type to base type",
+      "Casting base to derived",
+      "Type conversion",
+      "Interface casting"
+    ]
+  },
+  {
+    "q": "Upcasting is implicit and always safe.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Animal { }\nclass Dog : Animal { }\nDog d = new Dog();\nAnimal a = d;\nConsole.WriteLine(a.GetType().Name);",
+    "o": [
+      "Dog",
+      "Animal",
+      "Error",
+      "Object"
+    ]
+  },
+  {
+    "q": "Match casting types:",
+    "type": "match",
+    "left": [
+      "Upcasting",
+      "Downcasting",
+      "Implicit",
+      "Explicit"
+    ],
+    "right": [
+      "To base",
+      "To derived",
+      "Automatic",
+      "Cast required"
+    ]
+  },
+  {
+    "q": "What is downcasting?",
+    "type": "mcq",
+    "o": [
+      "Casting base type to derived type",
+      "Casting derived to base",
+      "Type conversion",
+      "Interface casting"
+    ]
+  },
+  {
+    "q": "Downcasting requires an explicit cast.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Animal { }\nclass Dog : Animal { public void Bark() => Console.Write(\"Bark\"); }\nAnimal a = new Dog();\n((Dog)a).Bark();",
+    "o": [
+      "Bark",
+      "Error",
+      "Animal",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange safe downcasting:",
+    "type": "rearrange",
+    "words": [
+      "Check with is",
+      "Cast with as or ()",
+      "Use if not null",
+      "Handle invalid cast"
+    ]
+  },
+  {
+    "q": "What exception is thrown for invalid cast?",
+    "type": "mcq",
+    "o": [
+      "InvalidCastException",
+      "NullReferenceException",
+      "ArgumentException",
+      "TypeException"
+    ]
+  },
+  {
+    "q": "Using as returns null instead of throwing.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Animal { }\nclass Dog : Animal { }\nclass Cat : Animal { }\nAnimal a = new Dog();\nvar cat = a as Cat;\nConsole.WriteLine(cat == null);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "Cat"
+    ]
+  },
+  {
+    "q": "Match safe casting approaches:",
+    "type": "match",
+    "left": [
+      "is + cast",
+      "as + null check",
+      "pattern matching",
+      "try-catch"
+    ],
+    "right": [
+      "Check then cast",
+      "Cast then check",
+      "Combined check",
+      "Handle exception"
+    ]
+  },
+  {
+    "q": "What is covariance in C#?",
+    "type": "mcq",
+    "o": [
+      "Using more derived type where base type is expected",
+      "Using base where derived is expected",
+      "Exact type matching",
+      "No variance"
+    ]
+  },
+  {
+    "q": "The out keyword enables covariance in interfaces.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "IEnumerable<string> strings = new List<string> { \"a\", \"b\" };\nIEnumerable<object> objects = strings;\nConsole.WriteLine(objects.Count());",
+    "o": [
+      "2",
+      "Error",
+      "0",
+      "a"
+    ]
+  },
+  {
+    "q": "The ______ keyword enables contravariance.",
+    "type": "fill_blank",
+    "answers": [
+      "in"
+    ],
+    "other_options": [
+      "out",
+      "where",
+      "ref"
+    ]
+  },
+  {
+    "q": "What is contravariance?",
+    "type": "mcq",
+    "o": [
+      "Using base type where derived type is expected",
+      "Using derived where base is expected",
+      "Exact type matching",
+      "No variance"
+    ]
+  },
+  {
+    "q": "Contravariance applies to input type parameters.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match variance concepts:",
+    "type": "match",
+    "left": [
+      "Covariance",
+      "Contravariance",
+      "out T",
+      "in T"
+    ],
+    "right": [
+      "Output position",
+      "Input position",
+      "Covariant",
+      "Contravariant"
+    ]
+  },
+  {
+    "q": "Rearrange variance application:",
+    "type": "rearrange",
+    "words": [
+      "Define generic interface",
+      "Add in/out modifier",
+      "Implement interface",
+      "Use variance"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Action<object> objAction = o => Console.Write(o);\nAction<string> strAction = objAction;\nstrAction(\"Hello\");",
+    "o": [
+      "Hello",
+      "Error",
+      "object",
+      "null"
+    ]
+  },
+  {
+    "q": "Action<T> is contravariant in T.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is multi-level inheritance?",
+    "type": "mcq",
+    "o": [
+      "A class inheriting from a class that inherits from another",
+      "Multiple base classes",
+      "Interface inheritance",
+      "No inheritance"
+    ]
+  },
+  {
+    "q": "C# supports multi-level but not multiple class inheritance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class A { public A() => Console.Write(\"A \"); }\nclass B : A { public B() => Console.Write(\"B \"); }\nclass C : B { public C() => Console.Write(\"C\"); }\nnew C();",
+    "o": [
+      "A B C",
+      "C B A",
+      "C",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ creates a chain of base class references.",
+    "type": "fill_blank",
+    "answers": [
+      "inheritance hierarchy"
+    ],
+    "other_options": [
+      "interface chain",
+      "composition",
+      "aggregation"
+    ]
+  },
+  {
+    "q": "What is hierarchical inheritance?",
+    "type": "mcq",
+    "o": [
+      "Multiple classes inheriting from one base class",
+      "One class with many base classes",
+      "No base class",
+      "Multi-level inheritance"
+    ]
+  },
+  {
+    "q": "Match inheritance types:",
+    "type": "match",
+    "left": [
+      "Single",
+      "Multi-level",
+      "Hierarchical",
+      "Multiple"
+    ],
+    "right": [
+      "One base, one derived",
+      "Chain of classes",
+      "One base, many derived",
+      "Many bases (interfaces only)"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Animal { public virtual void Move() => Console.Write(\"Move\"); }\nclass Bird : Animal { public override void Move() => Console.Write(\"Fly\"); }\nclass Fish : Animal { public override void Move() => Console.Write(\"Swim\"); }\nnew Bird().Move();\nnew Fish().Move();",
+    "o": [
+      "FlySwim",
+      "MoveMove",
+      "Fly",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange inheritance design:",
+    "type": "rearrange",
+    "words": [
+      "Identify common behavior",
+      "Create base class",
+      "Override in derived",
+      "Use polymorphically"
+    ]
+  },
+  {
+    "q": "What is the diamond problem?",
+    "type": "mcq",
+    "o": [
+      "Ambiguity when a class inherits from two classes with common ancestor",
+      "A geometric issue",
+      "Memory leak",
+      "Compile time error"
+    ]
+  },
+  {
+    "q": "C# avoids diamond problem by not allowing multiple class inheritance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IA { void M(); }\ninterface IB { void M(); }\nclass C : IA, IB\n{\n    void IA.M() => Console.Write(\"A\");\n    void IB.M() => Console.Write(\"B\");\n}\nvar c = new C();\n((IA)c).M();\n((IB)c).M();",
+    "o": [
+      "AB",
+      "Error",
+      "AA",
+      "BB"
+    ]
+  },
+  {
+    "q": "Explicit interface implementation resolves naming conflicts.",
+    "type": "fill_blank",
+    "answers": [
+      "Explicit interface implementation"
+    ],
+    "other_options": [
+      "Method hiding",
+      "Overriding",
+      "Casting"
+    ]
+  },
+  {
+    "q": "What is constructor chaining?",
+    "type": "mcq",
+    "o": [
+      "Calling one constructor from another",
+      "Creating constructor chains",
+      "Multiple constructors",
+      "No constructors"
+    ]
+  },
+  {
+    "q": "The this keyword chains to another constructor in the same class.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Person\n{\n    public Person() : this(\"Unknown\") { Console.Write(\"1 \"); }\n    public Person(string name) { Console.Write($\"{name} \"); }\n}\nnew Person();",
+    "o": [
+      "Unknown 1 ",
+      "1 Unknown",
+      "Unknown",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match chaining keywords:",
+    "type": "match",
+    "left": [
+      "this()",
+      "base()",
+      "this",
+      "base"
+    ],
+    "right": [
+      "Same class constructor",
+      "Base constructor",
+      "Current instance",
+      "Base access"
+    ]
+  },
+  {
+    "q": "Rearrange constructor execution:",
+    "type": "rearrange",
+    "words": [
+      "Field initializers",
+      "Base constructor call",
+      "This constructor body",
+      "Return"
+    ]
+  },
+  {
+    "q": "What is the protected internal modifier?",
+    "type": "mcq",
+    "o": [
+      "Accessible in same assembly OR derived classes",
+      "Accessible in same assembly AND derived classes",
+      "Only derived classes",
+      "Only same assembly"
+    ]
+  },
+  {
+    "q": "protected internal uses OR logic, private protected uses AND.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match combined access modifiers:",
+    "type": "match",
+    "left": [
+      "protected internal",
+      "private protected",
+      "public",
+      "private"
+    ],
+    "right": [
+      "Assembly OR derived",
+      "Assembly AND derived",
+      "Everywhere",
+      "Same class"
+    ]
+  },
+  {
+    "q": "The ______ modifier limits access to derived classes in same assembly.",
+    "type": "fill_blank",
+    "answers": [
+      "private protected"
+    ],
+    "other_options": [
+      "protected internal",
+      "protected",
+      "internal"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Base\n{\n    protected internal int value = 10;\n}\nclass Derived : Base\n{\n    public void Show() => Console.Write(value);\n}\nnew Derived().Show();",
+    "o": [
+      "10",
+      "Error",
+      "0",
+      "null"
+    ]
+  },
+  {
+    "q": "What is method signature?",
+    "type": "mcq",
+    "o": [
+      "Method name and parameter types",
+      "Return type only",
+      "Method name only",
+      "Access modifier"
+    ]
+  },
+  {
+    "q": "Return type is not part of the method signature for overloading.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Calculator\n{\n    public int Add(int a, int b) => a + b;\n    public double Add(double a, double b) => a + b;\n}\nConsole.WriteLine(new Calculator().Add(1, 2));",
+    "o": [
+      "3",
+      "3.0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Match overloading concepts:",
+    "type": "match",
+    "left": [
+      "Same name",
+      "Different parameters",
+      "Same class",
+      "Resolution"
+    ],
+    "right": [
+      "Required",
+      "For overloading",
+      "Typical location",
+      "At compile time"
+    ]
+  },
+  {
+    "q": "What is hiding with properties?",
+    "type": "mcq",
+    "o": [
+      "Using new to redefine a property in derived class",
+      "Making properties private",
+      "Overriding properties",
+      "Removing properties"
+    ]
+  },
+  {
+    "q": "Properties can be hidden with the new keyword.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Base { public int Value => 1; }\nclass Derived : Base { public new int Value => 2; }\nBase b = new Derived();\nConsole.WriteLine(b.Value);",
+    "o": [
+      "1",
+      "2",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange property hiding behavior:",
+    "type": "rearrange",
+    "words": [
+      "Define in base",
+      "Add new in derived",
+      "Base ref returns base value",
+      "Derived ref returns derived"
+    ]
+  },
+  {
+    "q": "What is virtual property?",
+    "type": "mcq",
+    "o": [
+      "A property that can be overridden",
+      "A hidden property",
+      "A static property",
+      "A constant property"
+    ]
+  },
+  {
+    "q": "Virtual properties can be overridden like virtual methods.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Shape { public virtual double Area => 0; }\nclass Square : Shape\n{\n    public double Side = 5;\n    public override double Area => Side * Side;\n}\nShape s = new Square();\nConsole.WriteLine(s.Area);",
+    "o": [
+      "25",
+      "0",
+      "Error",
+      "5"
+    ]
+  },
+  {
+    "q": "The ______ enables polymorphism with properties.",
+    "type": "fill_blank",
+    "answers": [
+      "virtual"
+    ],
+    "other_options": [
+      "new",
+      "static",
+      "abstract"
+    ]
+  },
+  {
+    "q": "What is abstract property?",
+    "type": "mcq",
+    "o": [
+      "A property without implementation that must be overridden",
+      "A hidden property",
+      "A virtual property",
+      "A static property"
+    ]
+  },
+  {
+    "q": "Abstract properties must be implemented in derived classes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "abstract class Vehicle { public abstract int Wheels { get; } }\nclass Car : Vehicle { public override int Wheels => 4; }\nConsole.WriteLine(new Car().Wheels);",
+    "o": [
+      "4",
+      "Error",
+      "0",
+      "Vehicle"
+    ]
+  },
+  {
+    "q": "Match property modifiers:",
+    "type": "match",
+    "left": [
+      "virtual",
+      "abstract",
+      "override",
+      "sealed override"
+    ],
+    "right": [
+      "Can override",
+      "Must override",
+      "Overriding",
+      "Cannot override further"
+    ]
+  },
+  {
+    "q": "What is base member access?",
+    "type": "mcq",
+    "o": [
+      "Using base keyword to call parent class members",
+      "Creating base classes",
+      "Static member access",
+      "Private access"
+    ]
+  },
+  {
+    "q": "base.Method() calls the parent class implementation.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Parent { public virtual void Greet() => Console.Write(\"Hello \"); }\nclass Child : Parent\n{\n    public override void Greet()\n    {\n        base.Greet();\n        Console.Write(\"World\");\n    }\n}\nnew Child().Greet();",
+    "o": [
+      "Hello World",
+      "World",
+      "Hello",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange extending behavior:",
+    "type": "rearrange",
+    "words": [
+      "Override method",
+      "Call base.Method()",
+      "Add new behavior",
+      "Return result"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class A { public int X = 1; }\nclass B : A { public new int X = 2; }\nclass C : B { public new int X = 3; }\nConsole.WriteLine(((A)new C()).X);",
+    "o": [
+      "1",
+      "3",
+      "2",
+      "Error"
+    ]
+  },
+  {
+    "q": "Field hiding breaks through casting.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What keyword prevents a method from being overridden further?",
+    "type": "mcq",
+    "o": [
+      "sealed",
+      "final",
+      "abstract",
+      "virtual"
+    ]
+  },
+  {
+    "q": "The ______ keyword on override stops the override chain.",
+    "type": "fill_blank",
+    "answers": [
+      "sealed"
+    ],
+    "other_options": [
+      "final",
+      "static",
+      "virtual"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.Write(\"A\"); }\nclass B : A { public sealed override void M() => Console.Write(\"B\"); }\nclass C : B { }\nA a = new C();\na.M();",
+    "o": [
+      "B",
+      "A",
+      "C",
+      "Error"
+    ]
+  },
+  {
+    "q": "Match sealing concepts:",
+    "type": "match",
+    "left": [
+      "sealed class",
+      "sealed override",
+      "abstract class",
+      "virtual method"
+    ],
+    "right": [
+      "No inheritance",
+      "No more overriding",
+      "Must inherit",
+      "Can override"
+    ]
+  },
+  {
+    "q": "What is static binding?",
+    "type": "mcq",
+    "o": [
+      "Method resolution at compile time",
+      "Method resolution at runtime",
+      "No binding",
+      "Dynamic binding"
+    ]
+  },
+  {
+    "q": "Non-virtual methods use static binding.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is dynamic binding?",
+    "type": "mcq",
+    "o": [
+      "Method resolution at runtime based on object type",
+      "Compile time resolution",
+      "No resolution",
+      "Static binding"
+    ]
+  },
+  {
+    "q": "Virtual methods use dynamic binding.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match binding types:",
+    "type": "match",
+    "left": [
+      "Static binding",
+      "Dynamic binding",
+      "Early binding",
+      "Late binding"
+    ],
+    "right": [
+      "Compile time",
+      "Runtime",
+      "Same as static",
+      "Same as dynamic"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Base { public void NonVirtual() => Console.Write(\"B\"); }\nclass Derived : Base { public new void NonVirtual() => Console.Write(\"D\"); }\nBase b = new Derived();\nb.NonVirtual();",
+    "o": [
+      "B",
+      "D",
+      "Error",
+      "BD"
+    ]
+  },
+  {
+    "q": "The ______ type determines which method is called for virtual methods.",
+    "type": "fill_blank",
+    "answers": [
+      "runtime"
+    ],
+    "other_options": [
+      "compile-time",
+      "declared",
+      "static"
+    ]
+  },
+  {
+    "q": "Rearrange binding resolution:",
+    "type": "rearrange",
+    "words": [
+      "Check if virtual",
+      "Virtual: runtime type",
+      "Non-virtual: declared type",
+      "Call appropriate method"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Base\n{\n    public virtual void M() => Console.Write(\"Base \");\n    public void N() => Console.Write(\"Base\");\n}\nclass Derived : Base\n{\n    public override void M() => Console.Write(\"Derived \");\n    public new void N() => Console.Write(\"Derived\");\n}\nBase b = new Derived();\nb.M();\nb.N();",
+    "o": [
+      "Derived Base",
+      "Base Base",
+      "Derived Derived",
+      "Base Derived"
+    ]
+  },
+  {
+    "q": "What is the difference between is and typeof?",
+    "type": "mcq",
+    "o": [
+      "is checks instance type, typeof gets compile-time type info",
+      "They are the same",
+      "typeof checks instance",
+      "is gets type info"
+    ]
+  },
+  {
+    "q": "typeof is evaluated at compile time.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Animal { }\nclass Dog : Animal { }\nAnimal a = new Dog();\nConsole.WriteLine(a.GetType() == typeof(Dog));",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "Dog"
+    ]
+  },
+  {
+    "q": "Match type inspection:",
+    "type": "match",
+    "left": [
+      "GetType()",
+      "typeof()",
+      "is",
+      "as"
+    ],
+    "right": [
+      "Runtime type",
+      "Compile-time type",
+      "Check compatibility",
+      "Safe cast"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Animal { }\nclass Dog : Animal { }\nAnimal a = new Dog();\nConsole.WriteLine(a.GetType() == typeof(Animal));",
+    "o": [
+      "False",
+      "True",
+      "Error",
+      "Animal"
+    ]
+  },
+  {
+    "q": "The ______ method returns exact runtime type.",
+    "type": "fill_blank",
+    "answers": [
+      "GetType"
+    ],
+    "other_options": [
+      "typeof",
+      "is",
+      "as"
+    ]
+  },
+  {
+    "q": "What is Liskov Substitution Principle?",
+    "type": "mcq",
+    "o": [
+      "Derived types should be substitutable for base types",
+      "All classes should be substituted",
+      "Only interfaces matter",
+      "No substitution allowed"
+    ]
+  },
+  {
+    "q": "LSP is one of the SOLID principles.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match SOLID inheritance principles:",
+    "type": "match",
+    "left": [
+      "SRP",
+      "OCP",
+      "LSP",
+      "DIP"
+    ],
+    "right": [
+      "Single responsibility",
+      "Open/closed",
+      "Liskov substitution",
+      "Depend on abstractions"
+    ]
+  },
+  {
+    "q": "Violating LSP breaks polymorphism.",
+    "type": "fill_blank",
+    "answers": [
+      "LSP",
+      "Liskov Substitution Principle"
+    ],
+    "other_options": [
+      "OCP",
+      "SRP",
+      "DIP"
+    ]
+  },
+  {
+    "q": "What violates LSP?",
+    "type": "mcq",
+    "o": [
+      "Derived class that throws not implemented exception",
+      "Proper overriding",
+      "Using interfaces",
+      "Abstract classes"
+    ]
+  },
+  {
+    "q": "Rearrange LSP compliance check:",
+    "type": "rearrange",
+    "words": [
+      "Check base contract",
+      "Derived honors preconditions",
+      "Derived honors postconditions",
+      "Substitution works correctly"
+    ]
+  },
+  {
+    "q": "What is composition over inheritance?",
+    "type": "mcq",
+    "o": [
+      "Favoring has-a relationships over is-a",
+      "Using multiple inheritance",
+      "No relationships",
+      "Only inheritance"
+    ]
+  },
+  {
+    "q": "Composition provides more flexibility than inheritance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Engine { public void Start() => Console.Write(\"Vroom\"); }\nclass Car\n{\n    private Engine engine = new();\n    public void Start() => engine.Start();\n}\nnew Car().Start();",
+    "o": [
+      "Vroom",
+      "Error",
+      "Car",
+      "null"
+    ]
+  },
+  {
+    "q": "Match relationships:",
+    "type": "match",
+    "left": [
+      "Inheritance",
+      "Composition",
+      "Aggregation",
+      "Association"
+    ],
+    "right": [
+      "is-a",
+      "has-a (owns)",
+      "has-a (uses)",
+      "uses"
+    ]
+  },
+  {
+    "q": "The ______ relationship means one object owns another.",
+    "type": "fill_blank",
+    "answers": [
+      "composition"
+    ],
+    "other_options": [
+      "inheritance",
+      "aggregation",
+      "association"
+    ]
+  },
+  {
+    "q": "What is delegation?",
+    "type": "mcq",
+    "o": [
+      "One object passing requests to another",
+      "Creating delegates",
+      "Event handling",
+      "Method overriding"
+    ]
+  },
+  {
+    "q": "Delegation enables behavior reuse without inheritance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Logger { public void Log(string msg) => Console.Write(msg); }\nclass Service\n{\n    private Logger logger = new();\n    public void LogMessage(string msg) => logger.Log(msg);\n}\nnew Service().LogMessage(\"Hello\");",
+    "o": [
+      "Hello",
+      "Error",
+      "Service",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange delegation pattern:",
+    "type": "rearrange",
+    "words": [
+      "Contain helper object",
+      "Receive request",
+      "Forward to helper",
+      "Return result"
+    ]
+  },
+  {
+    "q": "What is interface inheritance?",
+    "type": "mcq",
+    "o": [
+      "An interface extending another interface",
+      "Class implementing interface",
+      "No inheritance",
+      "Multiple classes"
+    ]
+  },
+  {
+    "q": "Interfaces can inherit from multiple interfaces.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IReadable { void Read(); }\ninterface IWritable { void Write(); }\ninterface IReadWrite : IReadable, IWritable { }\nclass File : IReadWrite\n{\n    public void Read() => Console.Write(\"R\");\n    public void Write() => Console.Write(\"W\");\n}\nvar f = new File();\nf.Read();\nf.Write();",
+    "o": [
+      "RW",
+      "Error",
+      "R",
+      "W"
+    ]
+  },
+  {
+    "q": "Match interface concepts:",
+    "type": "match",
+    "left": [
+      "Interface",
+      "Implementation",
+      "Default method",
+      "Explicit implementation"
+    ],
+    "right": [
+      "Contract",
+      "Concrete code",
+      "C# 8+",
+      "Resolve conflicts"
+    ]
+  },
+  {
+    "q": "What are default interface members?",
+    "type": "mcq",
+    "o": [
+      "Methods with implementation in interfaces (C# 8+)",
+      "Required implementations",
+      "Abstract methods",
+      "Static methods"
+    ]
+  },
+  {
+    "q": "Default interface methods provide implementation in interfaces.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IGreeter { void Greet() => Console.Write(\"Hello\"); }\nclass Person : IGreeter { }\nIGreeter g = new Person();\ng.Greet();",
+    "o": [
+      "Hello",
+      "Error",
+      "Person",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ provides a default implementation in interfaces.",
+    "type": "fill_blank",
+    "answers": [
+      "default interface member"
+    ],
+    "other_options": [
+      "abstract method",
+      "virtual method",
+      "static method"
+    ]
+  },
+  {
+    "q": "Rearrange interface evolution:",
+    "type": "rearrange",
+    "words": [
+      "Define interface",
+      "Add default methods",
+      "Implementers get free",
+      "Override if needed"
+    ]
+  },
+  {
+    "q": "What is a marker interface?",
+    "type": "mcq",
+    "o": [
+      "An interface with no members used for tagging",
+      "An interface with many members",
+      "A default interface",
+      "An abstract class"
+    ]
+  },
+  {
+    "q": "ISerializable was historically a marker interface.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "Match interface types:",
+    "type": "match",
+    "left": [
+      "Marker",
+      "Functional",
+      "Default",
+      "Generic"
+    ],
+    "right": [
+      "No members",
+      "Single method",
+      "Has implementation",
+      "Type parameter"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IMarker { }\nclass Tagged : IMarker { }\nConsole.WriteLine(new Tagged() is IMarker);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "Tagged"
+    ]
+  },
+  {
+    "q": "C# attributes often replace marker interfaces.",
+    "type": "fill_blank",
+    "answers": [
+      "attributes"
+    ],
+    "other_options": [
+      "methods",
+      "properties",
+      "fields"
+    ]
+  },
+  {
+    "q": "What is method variance in delegates?",
+    "type": "mcq",
+    "o": [
+      "Return type covariance and parameter contravariance",
+      "No variance",
+      "Only covariance",
+      "Only contravariance"
+    ]
+  },
+  {
+    "q": "Func<T,TResult> is covariant in TResult.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "Func<object> objFunc = () => \"Hello\";\nConsole.Write(objFunc());",
+    "o": [
+      "Hello",
+      "Error",
+      "object",
+      "null"
+    ]
+  },
+  {
+    "q": "Match delegate variance:",
+    "type": "match",
+    "left": [
+      "Func<out T>",
+      "Action<in T>",
+      "Covariance",
+      "Contravariance"
+    ],
+    "right": [
+      "Return type",
+      "Parameter",
+      "Out direction",
+      "In direction"
+    ]
+  },
+  {
+    "q": "Rearrange variance understanding:",
+    "type": "rearrange",
+    "words": [
+      "out for output",
+      "in for input",
+      "Covariant preserves inheritance",
+      "Contravariant reverses inheritance"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Animal { public virtual void Sound() => Console.Write(\"...\"); }\nclass Dog : Animal { public override void Sound() => Console.Write(\"Bark \"); }\nclass GoldenRetriever : Dog { public override void Sound() => Console.Write(\"Woof\"); }\nAnimal a = new GoldenRetriever();\na.Sound();",
+    "o": [
+      "Woof",
+      "Bark",
+      "...",
+      "Error"
+    ]
+  },
+  {
+    "q": "Multi-level overriding follows the inheritance chain.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is protected constructor?",
+    "type": "mcq",
+    "o": [
+      "A constructor only callable by derived classes",
+      "A public constructor",
+      "A private constructor",
+      "No constructor"
+    ]
+  },
+  {
+    "q": "Protected constructors are common in abstract classes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "abstract class Base\n{\n    protected int value;\n    protected Base(int v) => value = v;\n}\nclass Derived : Base\n{\n    public Derived() : base(42) { }\n    public int GetValue() => value;\n}\nConsole.WriteLine(new Derived().GetValue());",
+    "o": [
+      "42",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Match constructor accessibility:",
+    "type": "match",
+    "left": [
+      "public",
+      "protected",
+      "private",
+      "internal"
+    ],
+    "right": [
+      "Anyone",
+      "Derived only",
+      "Same class",
+      "Same assembly"
+    ]
+  },
+  {
+    "q": "The ______ modifier makes a constructor visible only to derived classes.",
+    "type": "fill_blank",
+    "answers": [
+      "protected"
+    ],
+    "other_options": [
+      "private",
+      "public",
+      "internal"
+    ]
+  },
+  {
+    "q": "What is object slicing in C#?",
+    "type": "mcq",
+    "o": [
+      "C# avoids slicing because classes are reference types",
+      "Cutting objects",
+      "Losing data",
+      "Memory issue"
+    ]
+  },
+  {
+    "q": "C# reference semantics prevents object slicing.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "class Base { public int X = 1; }\nclass Derived : Base { public int Y = 2; }\nBase b = new Derived();\nConsole.WriteLine(b is Derived ? ((Derived)b).Y : 0);",
+    "o": [
+      "2",
+      "1",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange type preservation in C#:",
+    "type": "rearrange",
+    "words": [
+      "Create derived object",
+      "Assign to base reference",
+      "Object keeps derived type",
+      "Cast back if needed"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "interface IShape { double Area(); }\nstatic double TotalArea(IShape[] shapes) => shapes.Sum(s => s.Area());\nclass Circle : IShape { public double Radius; public double Area() => Math.PI * Radius * Radius; }\nclass Square : IShape { public double Side; public double Area() => Side * Side; }\nvar shapes = new IShape[] { new Circle { Radius = 1 }, new Square { Side = 2 } };\nConsole.WriteLine(Math.Round(TotalArea(shapes), 2));",
+    "o": [
+      "7.14",
+      "4",
+      "3.14",
+      "Error"
+    ]
+  },
+  {
+    "q": "Interface polymorphism enables heterogeneous collections.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match polymorphism benefits:",
+    "type": "match",
+    "left": [
+      "Extensibility",
+      "Flexibility",
+      "Testability",
+      "Maintainability"
+    ],
+    "right": [
+      "Add new types",
+      "Change behavior",
+      "Mock dependencies",
+      "Localize changes"
+    ]
+  },
+  {
+    "q": "What is the output of this code?",
+    "type": "mcq",
+    "c": "abstract class Template\n{\n    public void Execute()\n    {\n        Step1();\n        Step2();\n    }\n    protected abstract void Step1();\n    protected virtual void Step2() => Console.Write(\"Default\");\n}\nclass Concrete : Template\n{\n    protected override void Step1() => Console.Write(\"Custom \");\n}\nnew Concrete().Execute();",
+    "o": [
+      "Custom Default",
+      "Default",
+      "Custom",
+      "Error"
+    ]
+  },
+  {
+    "q": "Template Method pattern uses inheritance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "The ______ pattern defines algorithm skeleton with customizable steps.",
+    "type": "fill_blank",
+    "answers": [
+      "Template Method"
+    ],
+    "other_options": [
+      "Strategy",
+      "Factory",
+      "Observer"
+    ]
+  },
+  {
+    "q": "Rearrange Template Method pattern:",
+    "type": "rearrange",
+    "words": [
+      "Define template in base",
+      "Make steps abstract/virtual",
+      "Override in derived",
+      "Call template method"
+    ]
+  },
+  {
+    "q": "What is the output of this inheritance code?",
+    "type": "mcq",
+    "c": "class Base { public virtual void Show() => Console.WriteLine(\"Base\"); }\nclass Derived : Base { public override void Show() => Console.WriteLine(\"Derived\"); }\nBase b = new Derived();\nb.Show();",
+    "o": [
+      "Derived",
+      "Base",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ keyword overrides base class methods.",
+    "type": "fill_blank",
+    "answers": [
+      "override"
+    ],
+    "other_options": [
+      "virtual",
+      "new",
+      "abstract"
+    ]
+  },
+  {
+    "q": "Virtual methods must be overridden in derived classes.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "Match the OOP concepts:",
+    "type": "match",
+    "left": [
+      "virtual",
+      "override",
+      "abstract",
+      "sealed"
+    ],
+    "right": [
+      "Base method",
+      "Derived method",
+      "Must override",
+      "Cannot override"
+    ]
+  },
+  {
+    "q": "Rearrange the inheritance hierarchy:",
+    "type": "rearrange",
+    "words": [
+      "Object",
+      "Base class",
+      "Derived class",
+      "Instance"
+    ]
+  },
+  {
+    "q": "What is the output of this polymorphism code?",
+    "type": "mcq",
+    "c": "interface IAnimal { void Speak(); }\nclass Dog : IAnimal { public void Speak() => Console.WriteLine(\"Bark\"); }\nIAnimal a = new Dog();\na.Speak();",
+    "o": [
+      "Bark",
+      "Error",
+      "null",
+      "Speak"
+    ]
+  },
+  {
+    "q": "What is the output of this inheritance code?",
+    "type": "mcq",
+    "c": "class Base { public virtual void Show() => Console.WriteLine(\"Base\"); }\nclass Derived : Base { public override void Show() => Console.WriteLine(\"Derived\"); }\nBase b = new Derived();\nb.Show();",
+    "o": [
+      "Derived",
+      "Base",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ keyword overrides base class methods.",
+    "type": "fill_blank",
+    "answers": [
+      "override"
+    ],
+    "other_options": [
+      "virtual",
+      "new",
+      "abstract"
+    ]
+  },
+  {
+    "q": "Abstract classes cannot be instantiated directly.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the OOP concepts:",
+    "type": "match",
+    "left": [
+      "virtual",
+      "override",
+      "abstract",
+      "sealed"
+    ],
+    "right": [
+      "Base method",
+      "Derived method",
+      "Must override",
+      "Cannot override"
+    ]
+  },
+  {
+    "q": "Rearrange the inheritance hierarchy:",
+    "type": "rearrange",
+    "words": [
+      "Object",
+      "Base class",
+      "Derived class",
+      "Instance"
+    ]
+  },
+  {
+    "q": "What is the output of this polymorphism code?",
+    "type": "mcq",
+    "c": "interface IAnimal { void Speak(); }\nclass Dog : IAnimal { public void Speak() => Console.WriteLine(\"Bark\"); }\nIAnimal a = new Dog();\na.Speak();",
+    "o": [
+      "Bark",
+      "Error",
+      "null",
+      "Speak"
+    ]
+  },
+  {
+    "q": "What is the output of this inheritance code?",
+    "type": "mcq",
+    "c": "class Base { public virtual void Show() => Console.WriteLine(\"Base\"); }\nclass Derived : Base { public override void Show() => Console.WriteLine(\"Derived\"); }\nBase b = new Derived();\nb.Show();",
+    "o": [
+      "Derived",
+      "Base",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ keyword overrides base class methods.",
+    "type": "fill_blank",
+    "answers": [
+      "override"
+    ],
+    "other_options": [
+      "virtual",
+      "new",
+      "abstract"
+    ]
+  },
+  {
+    "q": "Virtual methods must be overridden in derived classes.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "Match the OOP concepts:",
+    "type": "match",
+    "left": [
+      "virtual",
+      "override",
+      "abstract",
+      "sealed"
+    ],
+    "right": [
+      "Base method",
+      "Derived method",
+      "Must override",
+      "Cannot override"
+    ]
+  },
+  {
+    "q": "Rearrange the inheritance hierarchy:",
+    "type": "rearrange",
+    "words": [
+      "Object",
+      "Base class",
+      "Derived class",
+      "Instance"
+    ]
+  },
+  {
+    "q": "What is the output of this polymorphism code?",
+    "type": "mcq",
+    "c": "interface IAnimal { void Speak(); }\nclass Dog : IAnimal { public void Speak() => Console.WriteLine(\"Bark\"); }\nIAnimal a = new Dog();\na.Speak();",
+    "o": [
+      "Bark",
+      "Error",
+      "null",
+      "Speak"
+    ]
+  },
+  {
+    "q": "What is the output of this inheritance code?",
+    "type": "mcq",
+    "c": "class Base { public virtual void Show() => Console.WriteLine(\"Base\"); }\nclass Derived : Base { public override void Show() => Console.WriteLine(\"Derived\"); }\nBase b = new Derived();\nb.Show();",
+    "o": [
+      "Derived",
+      "Base",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ keyword overrides base class methods.",
+    "type": "fill_blank",
+    "answers": [
+      "override"
+    ],
+    "other_options": [
+      "virtual",
+      "new",
+      "abstract"
+    ]
+  },
+  {
+    "q": "Abstract classes cannot be instantiated directly.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the OOP concepts:",
+    "type": "match",
+    "left": [
+      "virtual",
+      "override",
+      "abstract",
+      "sealed"
+    ],
+    "right": [
+      "Base method",
+      "Derived method",
+      "Must override",
+      "Cannot override"
+    ]
+  },
+  {
+    "q": "Rearrange the inheritance hierarchy:",
+    "type": "rearrange",
+    "words": [
+      "Object",
+      "Base class",
+      "Derived class",
+      "Instance"
+    ]
+  },
+  {
+    "q": "What is the output of this polymorphism code?",
+    "type": "mcq",
+    "c": "interface IAnimal { void Speak(); }\nclass Dog : IAnimal { public void Speak() => Console.WriteLine(\"Bark\"); }\nIAnimal a = new Dog();\na.Speak();",
+    "o": [
+      "Bark",
+      "Error",
+      "null",
+      "Speak"
+    ]
+  },
+  {
+    "q": "What is the output of this inheritance code?",
+    "type": "mcq",
+    "c": "class Base { public virtual void Show() => Console.WriteLine(\"Base\"); }\nclass Derived : Base { public override void Show() => Console.WriteLine(\"Derived\"); }\nBase b = new Derived();\nb.Show();",
+    "o": [
+      "Derived",
+      "Base",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ keyword overrides base class methods.",
+    "type": "fill_blank",
+    "answers": [
+      "override"
+    ],
+    "other_options": [
+      "virtual",
+      "new",
+      "abstract"
+    ]
+  },
+  {
+    "q": "Virtual methods must be overridden in derived classes.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "Match the OOP concepts:",
+    "type": "match",
+    "left": [
+      "virtual",
+      "override",
+      "abstract",
+      "sealed"
+    ],
+    "right": [
+      "Base method",
+      "Derived method",
+      "Must override",
+      "Cannot override"
+    ]
+  },
+  {
+    "q": "Rearrange the inheritance hierarchy:",
+    "type": "rearrange",
+    "words": [
+      "Object",
+      "Base class",
+      "Derived class",
+      "Instance"
+    ]
+  },
+  {
+    "q": "What is the output of this polymorphism code?",
+    "type": "mcq",
+    "c": "interface IAnimal { void Speak(); }\nclass Dog : IAnimal { public void Speak() => Console.WriteLine(\"Bark\"); }\nIAnimal a = new Dog();\na.Speak();",
+    "o": [
+      "Bark",
+      "Error",
+      "null",
+      "Speak"
+    ]
+  },
+  {
+    "q": "What is the output of this inheritance code?",
+    "type": "mcq",
+    "c": "class Base { public virtual void Show() => Console.WriteLine(\"Base\"); }\nclass Derived : Base { public override void Show() => Console.WriteLine(\"Derived\"); }\nBase b = new Derived();\nb.Show();",
+    "o": [
+      "Derived",
+      "Base",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ keyword overrides base class methods.",
+    "type": "fill_blank",
+    "answers": [
+      "override"
+    ],
+    "other_options": [
+      "virtual",
+      "new",
+      "abstract"
+    ]
+  },
+  {
+    "q": "Abstract classes cannot be instantiated directly.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the OOP concepts:",
+    "type": "match",
+    "left": [
+      "virtual",
+      "override",
+      "abstract",
+      "sealed"
+    ],
+    "right": [
+      "Base method",
+      "Derived method",
+      "Must override",
+      "Cannot override"
+    ]
+  },
+  {
+    "q": "Rearrange the inheritance hierarchy:",
+    "type": "rearrange",
+    "words": [
+      "Object",
+      "Base class",
+      "Derived class",
+      "Instance"
+    ]
+  },
+  {
+    "q": "What is the output of this polymorphism code?",
+    "type": "mcq",
+    "c": "interface IAnimal { void Speak(); }\nclass Dog : IAnimal { public void Speak() => Console.WriteLine(\"Bark\"); }\nIAnimal a = new Dog();\na.Speak();",
+    "o": [
+      "Bark",
+      "Error",
+      "null",
+      "Speak"
+    ]
+  },
+  {
+    "q": "What is the output of this inheritance code?",
+    "type": "mcq",
+    "c": "class Base { public virtual void Show() => Console.WriteLine(\"Base\"); }\nclass Derived : Base { public override void Show() => Console.WriteLine(\"Derived\"); }\nBase b = new Derived();\nb.Show();",
+    "o": [
+      "Derived",
+      "Base",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ keyword overrides base class methods.",
+    "type": "fill_blank",
+    "answers": [
+      "override"
+    ],
+    "other_options": [
+      "virtual",
+      "new",
+      "abstract"
+    ]
+  },
+  {
+    "q": "Virtual methods must be overridden in derived classes.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "Match the OOP concepts:",
+    "type": "match",
+    "left": [
+      "virtual",
+      "override",
+      "abstract",
+      "sealed"
+    ],
+    "right": [
+      "Base method",
+      "Derived method",
+      "Must override",
+      "Cannot override"
+    ]
+  },
+  {
+    "q": "Rearrange the inheritance hierarchy:",
+    "type": "rearrange",
+    "words": [
+      "Object",
+      "Base class",
+      "Derived class",
+      "Instance"
+    ]
+  },
+  {
+    "q": "What is the output of this polymorphism code?",
+    "type": "mcq",
+    "c": "interface IAnimal { void Speak(); }\nclass Dog : IAnimal { public void Speak() => Console.WriteLine(\"Bark\"); }\nIAnimal a = new Dog();\na.Speak();",
+    "o": [
+      "Bark",
+      "Error",
+      "null",
+      "Speak"
+    ]
+  },
+  {
+    "q": "What is the output of this inheritance code?",
+    "type": "mcq",
+    "c": "class Base { public virtual void Show() => Console.WriteLine(\"Base\"); }\nclass Derived : Base { public override void Show() => Console.WriteLine(\"Derived\"); }\nBase b = new Derived();\nb.Show();",
+    "o": [
+      "Derived",
+      "Base",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ keyword overrides base class methods.",
+    "type": "fill_blank",
+    "answers": [
+      "override"
+    ],
+    "other_options": [
+      "virtual",
+      "new",
+      "abstract"
+    ]
+  },
+  {
+    "q": "Abstract classes cannot be instantiated directly.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the OOP concepts:",
+    "type": "match",
+    "left": [
+      "virtual",
+      "override",
+      "abstract",
+      "sealed"
+    ],
+    "right": [
+      "Base method",
+      "Derived method",
+      "Must override",
+      "Cannot override"
+    ]
+  },
+  {
+    "q": "Rearrange the inheritance hierarchy:",
+    "type": "rearrange",
+    "words": [
+      "Object",
+      "Base class",
+      "Derived class",
+      "Instance"
+    ]
+  },
+  {
+    "q": "What is the output of this polymorphism code?",
+    "type": "mcq",
+    "c": "interface IAnimal { void Speak(); }\nclass Dog : IAnimal { public void Speak() => Console.WriteLine(\"Bark\"); }\nIAnimal a = new Dog();\na.Speak();",
+    "o": [
+      "Bark",
+      "Error",
+      "null",
+      "Speak"
+    ]
+  },
+  {
+    "q": "What is the output of this inheritance code?",
+    "type": "mcq",
+    "c": "class Base { public virtual void Show() => Console.WriteLine(\"Base\"); }\nclass Derived : Base { public override void Show() => Console.WriteLine(\"Derived\"); }\nBase b = new Derived();\nb.Show();",
+    "o": [
+      "Derived",
+      "Base",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ keyword overrides base class methods.",
+    "type": "fill_blank",
+    "answers": [
+      "override"
+    ],
+    "other_options": [
+      "virtual",
+      "new",
+      "abstract"
+    ]
+  },
+  {
+    "q": "Virtual methods must be overridden in derived classes.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "Match the OOP concepts:",
+    "type": "match",
+    "left": [
+      "virtual",
+      "override",
+      "abstract",
+      "sealed"
+    ],
+    "right": [
+      "Base method",
+      "Derived method",
+      "Must override",
+      "Cannot override"
+    ]
+  },
+  {
+    "q": "Rearrange the inheritance hierarchy:",
+    "type": "rearrange",
+    "words": [
+      "Object",
+      "Base class",
+      "Derived class",
+      "Instance"
+    ]
+  },
+  {
+    "q": "What is the output of this polymorphism code?",
+    "type": "mcq",
+    "c": "interface IAnimal { void Speak(); }\nclass Dog : IAnimal { public void Speak() => Console.WriteLine(\"Bark\"); }\nIAnimal a = new Dog();\na.Speak();",
+    "o": [
+      "Bark",
+      "Error",
+      "null",
+      "Speak"
+    ]
+  },
+  {
+    "q": "What is the output of this inheritance code?",
+    "type": "mcq",
+    "c": "class Base { public virtual void Show() => Console.WriteLine(\"Base\"); }\nclass Derived : Base { public override void Show() => Console.WriteLine(\"Derived\"); }\nBase b = new Derived();\nb.Show();",
+    "o": [
+      "Derived",
+      "Base",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ keyword overrides base class methods.",
+    "type": "fill_blank",
+    "answers": [
+      "override"
+    ],
+    "other_options": [
+      "virtual",
+      "new",
+      "abstract"
+    ]
+  },
+  {
+    "q": "Abstract classes cannot be instantiated directly.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the OOP concepts:",
+    "type": "match",
+    "left": [
+      "virtual",
+      "override",
+      "abstract",
+      "sealed"
+    ],
+    "right": [
+      "Base method",
+      "Derived method",
+      "Must override",
+      "Cannot override"
+    ]
+  },
+  {
+    "q": "Rearrange the inheritance hierarchy:",
+    "type": "rearrange",
+    "words": [
+      "Object",
+      "Base class",
+      "Derived class",
+      "Instance"
+    ]
+  },
+  {
+    "q": "What is the output of this polymorphism code?",
+    "type": "mcq",
+    "c": "interface IAnimal { void Speak(); }\nclass Dog : IAnimal { public void Speak() => Console.WriteLine(\"Bark\"); }\nIAnimal a = new Dog();\na.Speak();",
+    "o": [
+      "Bark",
+      "Error",
+      "null",
+      "Speak"
+    ]
+  },
+  {
+    "q": "What is the output of this inheritance code?",
+    "type": "mcq",
+    "c": "class Base { public virtual void Show() => Console.WriteLine(\"Base\"); }\nclass Derived : Base { public override void Show() => Console.WriteLine(\"Derived\"); }\nBase b = new Derived();\nb.Show();",
+    "o": [
+      "Derived",
+      "Base",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ keyword overrides base class methods.",
+    "type": "fill_blank",
+    "answers": [
+      "override"
+    ],
+    "other_options": [
+      "virtual",
+      "new",
+      "abstract"
+    ]
+  },
+  {
+    "q": "Virtual methods must be overridden in derived classes.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "Match the OOP concepts:",
+    "type": "match",
+    "left": [
+      "virtual",
+      "override",
+      "abstract",
+      "sealed"
+    ],
+    "right": [
+      "Base method",
+      "Derived method",
+      "Must override",
+      "Cannot override"
+    ]
+  },
+  {
+    "q": "Rearrange the inheritance hierarchy:",
+    "type": "rearrange",
+    "words": [
+      "Object",
+      "Base class",
+      "Derived class",
+      "Instance"
+    ]
+  },
+  {
+    "q": "What is the output of this polymorphism code?",
+    "type": "mcq",
+    "c": "interface IAnimal { void Speak(); }\nclass Dog : IAnimal { public void Speak() => Console.WriteLine(\"Bark\"); }\nIAnimal a = new Dog();\na.Speak();",
+    "o": [
+      "Bark",
+      "Error",
+      "null",
+      "Speak"
+    ]
+  },
+  {
+    "q": "What is the output of this inheritance code?",
+    "type": "mcq",
+    "c": "class Base { public virtual void Show() => Console.WriteLine(\"Base\"); }\nclass Derived : Base { public override void Show() => Console.WriteLine(\"Derived\"); }\nBase b = new Derived();\nb.Show();",
+    "o": [
+      "Derived",
+      "Base",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ keyword overrides base class methods.",
+    "type": "fill_blank",
+    "answers": [
+      "override"
+    ],
+    "other_options": [
+      "virtual",
+      "new",
+      "abstract"
+    ]
+  },
+  {
+    "q": "Abstract classes cannot be instantiated directly.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the OOP concepts:",
+    "type": "match",
+    "left": [
+      "virtual",
+      "override",
+      "abstract",
+      "sealed"
+    ],
+    "right": [
+      "Base method",
+      "Derived method",
+      "Must override",
+      "Cannot override"
+    ]
+  },
+  {
+    "q": "Rearrange the inheritance hierarchy:",
+    "type": "rearrange",
+    "words": [
+      "Object",
+      "Base class",
+      "Derived class",
+      "Instance"
+    ]
+  },
+  {
+    "q": "What is the output of this polymorphism code?",
+    "type": "mcq",
+    "c": "interface IAnimal { void Speak(); }\nclass Dog : IAnimal { public void Speak() => Console.WriteLine(\"Bark\"); }\nIAnimal a = new Dog();\na.Speak();",
+    "o": [
+      "Bark",
+      "Error",
+      "null",
+      "Speak"
+    ]
+  },
+  {
+    "q": "What is the output of this inheritance code?",
+    "type": "mcq",
+    "c": "class Base { public virtual void Show() => Console.WriteLine(\"Base\"); }\nclass Derived : Base { public override void Show() => Console.WriteLine(\"Derived\"); }\nBase b = new Derived();\nb.Show();",
+    "o": [
+      "Derived",
+      "Base",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ keyword overrides base class methods.",
+    "type": "fill_blank",
+    "answers": [
+      "override"
+    ],
+    "other_options": [
+      "virtual",
+      "new",
+      "abstract"
+    ]
+  },
+  {
+    "q": "Virtual methods must be overridden in derived classes.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "Match the OOP concepts:",
+    "type": "match",
+    "left": [
+      "virtual",
+      "override",
+      "abstract",
+      "sealed"
+    ],
+    "right": [
+      "Base method",
+      "Derived method",
+      "Must override",
+      "Cannot override"
+    ]
+  },
+  {
+    "q": "Rearrange the inheritance hierarchy:",
+    "type": "rearrange",
+    "words": [
+      "Object",
+      "Base class",
+      "Derived class",
+      "Instance"
+    ]
+  },
+  {
+    "q": "What is the output of this polymorphism code?",
+    "type": "mcq",
+    "c": "interface IAnimal { void Speak(); }\nclass Dog : IAnimal { public void Speak() => Console.WriteLine(\"Bark\"); }\nIAnimal a = new Dog();\na.Speak();",
+    "o": [
+      "Bark",
+      "Error",
+      "null",
+      "Speak"
+    ]
+  },
+  {
+    "q": "What is the output of this inheritance code?",
+    "type": "mcq",
+    "c": "class Base { public virtual void Show() => Console.WriteLine(\"Base\"); }\nclass Derived : Base { public override void Show() => Console.WriteLine(\"Derived\"); }\nBase b = new Derived();\nb.Show();",
+    "o": [
+      "Derived",
+      "Base",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ keyword overrides base class methods.",
+    "type": "fill_blank",
+    "answers": [
+      "override"
+    ],
+    "other_options": [
+      "virtual",
+      "new",
+      "abstract"
+    ]
+  },
+  {
+    "q": "Abstract classes cannot be instantiated directly.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the OOP concepts:",
+    "type": "match",
+    "left": [
+      "virtual",
+      "override",
+      "abstract",
+      "sealed"
+    ],
+    "right": [
+      "Base method",
+      "Derived method",
+      "Must override",
+      "Cannot override"
+    ]
+  },
+  {
+    "q": "Rearrange the inheritance hierarchy:",
+    "type": "rearrange",
+    "words": [
+      "Object",
+      "Base class",
+      "Derived class",
+      "Instance"
+    ]
+  },
+  {
+    "q": "What is the output of this polymorphism code?",
+    "type": "mcq",
+    "c": "interface IAnimal { void Speak(); }\nclass Dog : IAnimal { public void Speak() => Console.WriteLine(\"Bark\"); }\nIAnimal a = new Dog();\na.Speak();",
+    "o": [
+      "Bark",
+      "Error",
+      "null",
+      "Speak"
+    ]
+  },
+  {
+    "q": "What is the output of this inheritance code?",
+    "type": "mcq",
+    "c": "class Base { public virtual void Show() => Console.WriteLine(\"Base\"); }\nclass Derived : Base { public override void Show() => Console.WriteLine(\"Derived\"); }\nBase b = new Derived();\nb.Show();",
+    "o": [
+      "Derived",
+      "Base",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "The ______ keyword overrides base class methods.",
+    "type": "fill_blank",
+    "answers": [
+      "override"
+    ],
+    "other_options": [
+      "virtual",
+      "new",
+      "abstract"
+    ]
+  },
+  {
+    "q": "Virtual methods must be overridden in derived classes.",
+    "type": "true_false",
+    "correct": "False"
+  },
+  {
+    "q": "Match the OOP concepts:",
+    "type": "match",
+    "left": [
+      "virtual",
+      "override",
+      "abstract",
+      "sealed"
+    ],
+    "right": [
+      "Base method",
+      "Derived method",
+      "Must override",
+      "Cannot override"
+    ]
+  },
+  {
+    "q": "Rearrange the inheritance hierarchy:",
+    "type": "rearrange",
+    "words": [
+      "Object",
+      "Base class",
+      "Derived class",
+      "Instance"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced polymorphism code?",
+    "type": "mcq",
+    "c": "class Base {\n    public virtual void Method() => Console.WriteLine(\"Base\");\n}\nclass Middle : Base {\n    public override void Method() => Console.WriteLine(\"Middle\");\n}\nclass Derived : Middle {\n    public override void Method() => Console.WriteLine(\"Derived\");\n}\nBase b = new Derived();\nb.Method();",
+    "o": [
+      "Derived",
+      "Middle",
+      "Base",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents further inheritance of a class.",
+    "type": "fill_blank",
+    "answers": [
+      "sealed"
+    ],
+    "other_options": [
+      "final",
+      "locked",
+      "closed"
+    ]
+  },
+  {
+    "q": "Covariance allows derived return types in overridden methods.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the method hiding concepts:",
+    "type": "match",
+    "left": [
+      "new keyword",
+      "override keyword",
+      "virtual keyword",
+      "abstract keyword"
+    ],
+    "right": [
+      "Hide base method",
+      "Replace base method",
+      "Allow overriding",
+      "Force override"
+    ]
+  },
+  {
+    "q": "What is the output of this interface implementation?",
+    "type": "mcq",
+    "c": "interface IA { void M(); }\ninterface IB { void M(); }\nclass C : IA, IB {\n    void IA.M() => Console.WriteLine(\"IA\");\n    void IB.M() => Console.WriteLine(\"IB\");\n}\nC obj = new C();\n((IA)obj).M();",
+    "o": [
+      "IA",
+      "IB",
+      "Error",
+      "M"
+    ]
+  },
+  {
+    "q": "Rearrange the method resolution order:",
+    "type": "rearrange",
+    "words": [
+      "Virtual call",
+      "VTable lookup",
+      "Method dispatch",
+      "Execution"
+    ]
+  },
+  {
+    "q": "What is the output of this casting code?",
+    "type": "mcq",
+    "c": "class Base { }\nclass Derived : Base { public int Value = 42; }\nBase b = new Derived();\nConsole.WriteLine(((Derived)b).Value);",
+    "o": [
+      "42",
+      "Error",
+      "0",
+      "null"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced polymorphism code?",
+    "type": "mcq",
+    "c": "class Base {\n    public virtual void Method() => Console.WriteLine(\"Base\");\n}\nclass Middle : Base {\n    public override void Method() => Console.WriteLine(\"Middle\");\n}\nclass Derived : Middle {\n    public override void Method() => Console.WriteLine(\"Derived\");\n}\nBase b = new Derived();\nb.Method();",
+    "o": [
+      "Derived",
+      "Middle",
+      "Base",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents further inheritance of a class.",
+    "type": "fill_blank",
+    "answers": [
+      "sealed"
+    ],
+    "other_options": [
+      "final",
+      "locked",
+      "closed"
+    ]
+  },
+  {
+    "q": "Covariance allows derived return types in overridden methods.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the method hiding concepts:",
+    "type": "match",
+    "left": [
+      "new keyword",
+      "override keyword",
+      "virtual keyword",
+      "abstract keyword"
+    ],
+    "right": [
+      "Hide base method",
+      "Replace base method",
+      "Allow overriding",
+      "Force override"
+    ]
+  },
+  {
+    "q": "What is the output of this interface implementation?",
+    "type": "mcq",
+    "c": "interface IA { void M(); }\ninterface IB { void M(); }\nclass C : IA, IB {\n    void IA.M() => Console.WriteLine(\"IA\");\n    void IB.M() => Console.WriteLine(\"IB\");\n}\nC obj = new C();\n((IA)obj).M();",
+    "o": [
+      "IA",
+      "IB",
+      "Error",
+      "M"
+    ]
+  },
+  {
+    "q": "Rearrange the method resolution order:",
+    "type": "rearrange",
+    "words": [
+      "Virtual call",
+      "VTable lookup",
+      "Method dispatch",
+      "Execution"
+    ]
+  },
+  {
+    "q": "What is the output of this casting code?",
+    "type": "mcq",
+    "c": "class Base { }\nclass Derived : Base { public int Value = 42; }\nBase b = new Derived();\nConsole.WriteLine(((Derived)b).Value);",
+    "o": [
+      "42",
+      "Error",
+      "0",
+      "null"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced polymorphism code?",
+    "type": "mcq",
+    "c": "class Base {\n    public virtual void Method() => Console.WriteLine(\"Base\");\n}\nclass Middle : Base {\n    public override void Method() => Console.WriteLine(\"Middle\");\n}\nclass Derived : Middle {\n    public override void Method() => Console.WriteLine(\"Derived\");\n}\nBase b = new Derived();\nb.Method();",
+    "o": [
+      "Derived",
+      "Middle",
+      "Base",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents further inheritance of a class.",
+    "type": "fill_blank",
+    "answers": [
+      "sealed"
+    ],
+    "other_options": [
+      "final",
+      "locked",
+      "closed"
+    ]
+  },
+  {
+    "q": "Covariance allows derived return types in overridden methods.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the method hiding concepts:",
+    "type": "match",
+    "left": [
+      "new keyword",
+      "override keyword",
+      "virtual keyword",
+      "abstract keyword"
+    ],
+    "right": [
+      "Hide base method",
+      "Replace base method",
+      "Allow overriding",
+      "Force override"
+    ]
+  },
+  {
+    "q": "What is the output of this interface implementation?",
+    "type": "mcq",
+    "c": "interface IA { void M(); }\ninterface IB { void M(); }\nclass C : IA, IB {\n    void IA.M() => Console.WriteLine(\"IA\");\n    void IB.M() => Console.WriteLine(\"IB\");\n}\nC obj = new C();\n((IA)obj).M();",
+    "o": [
+      "IA",
+      "IB",
+      "Error",
+      "M"
+    ]
+  },
+  {
+    "q": "Rearrange the method resolution order:",
+    "type": "rearrange",
+    "words": [
+      "Virtual call",
+      "VTable lookup",
+      "Method dispatch",
+      "Execution"
+    ]
+  },
+  {
+    "q": "What is the output of this casting code?",
+    "type": "mcq",
+    "c": "class Base { }\nclass Derived : Base { public int Value = 42; }\nBase b = new Derived();\nConsole.WriteLine(((Derived)b).Value);",
+    "o": [
+      "42",
+      "Error",
+      "0",
+      "null"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced polymorphism code?",
+    "type": "mcq",
+    "c": "class Base {\n    public virtual void Method() => Console.WriteLine(\"Base\");\n}\nclass Middle : Base {\n    public override void Method() => Console.WriteLine(\"Middle\");\n}\nclass Derived : Middle {\n    public override void Method() => Console.WriteLine(\"Derived\");\n}\nBase b = new Derived();\nb.Method();",
+    "o": [
+      "Derived",
+      "Middle",
+      "Base",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents further inheritance of a class.",
+    "type": "fill_blank",
+    "answers": [
+      "sealed"
+    ],
+    "other_options": [
+      "final",
+      "locked",
+      "closed"
+    ]
+  },
+  {
+    "q": "Covariance allows derived return types in overridden methods.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the method hiding concepts:",
+    "type": "match",
+    "left": [
+      "new keyword",
+      "override keyword",
+      "virtual keyword",
+      "abstract keyword"
+    ],
+    "right": [
+      "Hide base method",
+      "Replace base method",
+      "Allow overriding",
+      "Force override"
+    ]
+  },
+  {
+    "q": "What is the output of this interface implementation?",
+    "type": "mcq",
+    "c": "interface IA { void M(); }\ninterface IB { void M(); }\nclass C : IA, IB {\n    void IA.M() => Console.WriteLine(\"IA\");\n    void IB.M() => Console.WriteLine(\"IB\");\n}\nC obj = new C();\n((IA)obj).M();",
+    "o": [
+      "IA",
+      "IB",
+      "Error",
+      "M"
+    ]
+  },
+  {
+    "q": "Rearrange the method resolution order:",
+    "type": "rearrange",
+    "words": [
+      "Virtual call",
+      "VTable lookup",
+      "Method dispatch",
+      "Execution"
+    ]
+  },
+  {
+    "q": "What is the output of this casting code?",
+    "type": "mcq",
+    "c": "class Base { }\nclass Derived : Base { public int Value = 42; }\nBase b = new Derived();\nConsole.WriteLine(((Derived)b).Value);",
+    "o": [
+      "42",
+      "Error",
+      "0",
+      "null"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced polymorphism code?",
+    "type": "mcq",
+    "c": "class Base {\n    public virtual void Method() => Console.WriteLine(\"Base\");\n}\nclass Middle : Base {\n    public override void Method() => Console.WriteLine(\"Middle\");\n}\nclass Derived : Middle {\n    public override void Method() => Console.WriteLine(\"Derived\");\n}\nBase b = new Derived();\nb.Method();",
+    "o": [
+      "Derived",
+      "Middle",
+      "Base",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents further inheritance of a class.",
+    "type": "fill_blank",
+    "answers": [
+      "sealed"
+    ],
+    "other_options": [
+      "final",
+      "locked",
+      "closed"
+    ]
+  },
+  {
+    "q": "Covariance allows derived return types in overridden methods.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the method hiding concepts:",
+    "type": "match",
+    "left": [
+      "new keyword",
+      "override keyword",
+      "virtual keyword",
+      "abstract keyword"
+    ],
+    "right": [
+      "Hide base method",
+      "Replace base method",
+      "Allow overriding",
+      "Force override"
+    ]
+  },
+  {
+    "q": "What is the output of this interface implementation?",
+    "type": "mcq",
+    "c": "interface IA { void M(); }\ninterface IB { void M(); }\nclass C : IA, IB {\n    void IA.M() => Console.WriteLine(\"IA\");\n    void IB.M() => Console.WriteLine(\"IB\");\n}\nC obj = new C();\n((IA)obj).M();",
+    "o": [
+      "IA",
+      "IB",
+      "Error",
+      "M"
+    ]
+  },
+  {
+    "q": "Rearrange the method resolution order:",
+    "type": "rearrange",
+    "words": [
+      "Virtual call",
+      "VTable lookup",
+      "Method dispatch",
+      "Execution"
+    ]
+  },
+  {
+    "q": "What is the output of this casting code?",
+    "type": "mcq",
+    "c": "class Base { }\nclass Derived : Base { public int Value = 42; }\nBase b = new Derived();\nConsole.WriteLine(((Derived)b).Value);",
+    "o": [
+      "42",
+      "Error",
+      "0",
+      "null"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced polymorphism code?",
+    "type": "mcq",
+    "c": "class Base {\n    public virtual void Method() => Console.WriteLine(\"Base\");\n}\nclass Middle : Base {\n    public override void Method() => Console.WriteLine(\"Middle\");\n}\nclass Derived : Middle {\n    public override void Method() => Console.WriteLine(\"Derived\");\n}\nBase b = new Derived();\nb.Method();",
+    "o": [
+      "Derived",
+      "Middle",
+      "Base",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents further inheritance of a class.",
+    "type": "fill_blank",
+    "answers": [
+      "sealed"
+    ],
+    "other_options": [
+      "final",
+      "locked",
+      "closed"
+    ]
+  },
+  {
+    "q": "Covariance allows derived return types in overridden methods.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the method hiding concepts:",
+    "type": "match",
+    "left": [
+      "new keyword",
+      "override keyword",
+      "virtual keyword",
+      "abstract keyword"
+    ],
+    "right": [
+      "Hide base method",
+      "Replace base method",
+      "Allow overriding",
+      "Force override"
+    ]
+  },
+  {
+    "q": "What is the output of this interface implementation?",
+    "type": "mcq",
+    "c": "interface IA { void M(); }\ninterface IB { void M(); }\nclass C : IA, IB {\n    void IA.M() => Console.WriteLine(\"IA\");\n    void IB.M() => Console.WriteLine(\"IB\");\n}\nC obj = new C();\n((IA)obj).M();",
+    "o": [
+      "IA",
+      "IB",
+      "Error",
+      "M"
+    ]
+  },
+  {
+    "q": "Rearrange the method resolution order:",
+    "type": "rearrange",
+    "words": [
+      "Virtual call",
+      "VTable lookup",
+      "Method dispatch",
+      "Execution"
+    ]
+  },
+  {
+    "q": "What is the output of this casting code?",
+    "type": "mcq",
+    "c": "class Base { }\nclass Derived : Base { public int Value = 42; }\nBase b = new Derived();\nConsole.WriteLine(((Derived)b).Value);",
+    "o": [
+      "42",
+      "Error",
+      "0",
+      "null"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced polymorphism code?",
+    "type": "mcq",
+    "c": "class Base {\n    public virtual void Method() => Console.WriteLine(\"Base\");\n}\nclass Middle : Base {\n    public override void Method() => Console.WriteLine(\"Middle\");\n}\nclass Derived : Middle {\n    public override void Method() => Console.WriteLine(\"Derived\");\n}\nBase b = new Derived();\nb.Method();",
+    "o": [
+      "Derived",
+      "Middle",
+      "Base",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents further inheritance of a class.",
+    "type": "fill_blank",
+    "answers": [
+      "sealed"
+    ],
+    "other_options": [
+      "final",
+      "locked",
+      "closed"
+    ]
+  },
+  {
+    "q": "Covariance allows derived return types in overridden methods.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the method hiding concepts:",
+    "type": "match",
+    "left": [
+      "new keyword",
+      "override keyword",
+      "virtual keyword",
+      "abstract keyword"
+    ],
+    "right": [
+      "Hide base method",
+      "Replace base method",
+      "Allow overriding",
+      "Force override"
+    ]
+  },
+  {
+    "q": "What is the output of this interface implementation?",
+    "type": "mcq",
+    "c": "interface IA { void M(); }\ninterface IB { void M(); }\nclass C : IA, IB {\n    void IA.M() => Console.WriteLine(\"IA\");\n    void IB.M() => Console.WriteLine(\"IB\");\n}\nC obj = new C();\n((IA)obj).M();",
+    "o": [
+      "IA",
+      "IB",
+      "Error",
+      "M"
+    ]
+  },
+  {
+    "q": "Rearrange the method resolution order:",
+    "type": "rearrange",
+    "words": [
+      "Virtual call",
+      "VTable lookup",
+      "Method dispatch",
+      "Execution"
+    ]
+  },
+  {
+    "q": "What is the output of this casting code?",
+    "type": "mcq",
+    "c": "class Base { }\nclass Derived : Base { public int Value = 42; }\nBase b = new Derived();\nConsole.WriteLine(((Derived)b).Value);",
+    "o": [
+      "42",
+      "Error",
+      "0",
+      "null"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced polymorphism code?",
+    "type": "mcq",
+    "c": "class Base {\n    public virtual void Method() => Console.WriteLine(\"Base\");\n}\nclass Middle : Base {\n    public override void Method() => Console.WriteLine(\"Middle\");\n}\nclass Derived : Middle {\n    public override void Method() => Console.WriteLine(\"Derived\");\n}\nBase b = new Derived();\nb.Method();",
+    "o": [
+      "Derived",
+      "Middle",
+      "Base",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents further inheritance of a class.",
+    "type": "fill_blank",
+    "answers": [
+      "sealed"
+    ],
+    "other_options": [
+      "final",
+      "locked",
+      "closed"
+    ]
+  },
+  {
+    "q": "Covariance allows derived return types in overridden methods.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the method hiding concepts:",
+    "type": "match",
+    "left": [
+      "new keyword",
+      "override keyword",
+      "virtual keyword",
+      "abstract keyword"
+    ],
+    "right": [
+      "Hide base method",
+      "Replace base method",
+      "Allow overriding",
+      "Force override"
+    ]
+  },
+  {
+    "q": "What is the output of this interface implementation?",
+    "type": "mcq",
+    "c": "interface IA { void M(); }\ninterface IB { void M(); }\nclass C : IA, IB {\n    void IA.M() => Console.WriteLine(\"IA\");\n    void IB.M() => Console.WriteLine(\"IB\");\n}\nC obj = new C();\n((IA)obj).M();",
+    "o": [
+      "IA",
+      "IB",
+      "Error",
+      "M"
+    ]
+  },
+  {
+    "q": "Rearrange the method resolution order:",
+    "type": "rearrange",
+    "words": [
+      "Virtual call",
+      "VTable lookup",
+      "Method dispatch",
+      "Execution"
+    ]
+  },
+  {
+    "q": "What is the output of this casting code?",
+    "type": "mcq",
+    "c": "class Base { }\nclass Derived : Base { public int Value = 42; }\nBase b = new Derived();\nConsole.WriteLine(((Derived)b).Value);",
+    "o": [
+      "42",
+      "Error",
+      "0",
+      "null"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced polymorphism code?",
+    "type": "mcq",
+    "c": "class Base {\n    public virtual void Method() => Console.WriteLine(\"Base\");\n}\nclass Middle : Base {\n    public override void Method() => Console.WriteLine(\"Middle\");\n}\nclass Derived : Middle {\n    public override void Method() => Console.WriteLine(\"Derived\");\n}\nBase b = new Derived();\nb.Method();",
+    "o": [
+      "Derived",
+      "Middle",
+      "Base",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents further inheritance of a class.",
+    "type": "fill_blank",
+    "answers": [
+      "sealed"
+    ],
+    "other_options": [
+      "final",
+      "locked",
+      "closed"
+    ]
+  },
+  {
+    "q": "Covariance allows derived return types in overridden methods.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the method hiding concepts:",
+    "type": "match",
+    "left": [
+      "new keyword",
+      "override keyword",
+      "virtual keyword",
+      "abstract keyword"
+    ],
+    "right": [
+      "Hide base method",
+      "Replace base method",
+      "Allow overriding",
+      "Force override"
+    ]
+  },
+  {
+    "q": "What is the output of this interface implementation?",
+    "type": "mcq",
+    "c": "interface IA { void M(); }\ninterface IB { void M(); }\nclass C : IA, IB {\n    void IA.M() => Console.WriteLine(\"IA\");\n    void IB.M() => Console.WriteLine(\"IB\");\n}\nC obj = new C();\n((IA)obj).M();",
+    "o": [
+      "IA",
+      "IB",
+      "Error",
+      "M"
+    ]
+  },
+  {
+    "q": "Rearrange the method resolution order:",
+    "type": "rearrange",
+    "words": [
+      "Virtual call",
+      "VTable lookup",
+      "Method dispatch",
+      "Execution"
+    ]
+  },
+  {
+    "q": "What is the output of this casting code?",
+    "type": "mcq",
+    "c": "class Base { }\nclass Derived : Base { public int Value = 42; }\nBase b = new Derived();\nConsole.WriteLine(((Derived)b).Value);",
+    "o": [
+      "42",
+      "Error",
+      "0",
+      "null"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced polymorphism code?",
+    "type": "mcq",
+    "c": "class Base {\n    public virtual void Method() => Console.WriteLine(\"Base\");\n}\nclass Middle : Base {\n    public override void Method() => Console.WriteLine(\"Middle\");\n}\nclass Derived : Middle {\n    public override void Method() => Console.WriteLine(\"Derived\");\n}\nBase b = new Derived();\nb.Method();",
+    "o": [
+      "Derived",
+      "Middle",
+      "Base",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents further inheritance of a class.",
+    "type": "fill_blank",
+    "answers": [
+      "sealed"
+    ],
+    "other_options": [
+      "final",
+      "locked",
+      "closed"
+    ]
+  },
+  {
+    "q": "Covariance allows derived return types in overridden methods.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the method hiding concepts:",
+    "type": "match",
+    "left": [
+      "new keyword",
+      "override keyword",
+      "virtual keyword",
+      "abstract keyword"
+    ],
+    "right": [
+      "Hide base method",
+      "Replace base method",
+      "Allow overriding",
+      "Force override"
+    ]
+  },
+  {
+    "q": "What is the output of this interface implementation?",
+    "type": "mcq",
+    "c": "interface IA { void M(); }\ninterface IB { void M(); }\nclass C : IA, IB {\n    void IA.M() => Console.WriteLine(\"IA\");\n    void IB.M() => Console.WriteLine(\"IB\");\n}\nC obj = new C();\n((IA)obj).M();",
+    "o": [
+      "IA",
+      "IB",
+      "Error",
+      "M"
+    ]
+  },
+  {
+    "q": "Rearrange the method resolution order:",
+    "type": "rearrange",
+    "words": [
+      "Virtual call",
+      "VTable lookup",
+      "Method dispatch",
+      "Execution"
+    ]
+  },
+  {
+    "q": "What is the output of this casting code?",
+    "type": "mcq",
+    "c": "class Base { }\nclass Derived : Base { public int Value = 42; }\nBase b = new Derived();\nConsole.WriteLine(((Derived)b).Value);",
+    "o": [
+      "42",
+      "Error",
+      "0",
+      "null"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced polymorphism code?",
+    "type": "mcq",
+    "c": "class Base {\n    public virtual void Method() => Console.WriteLine(\"Base\");\n}\nclass Middle : Base {\n    public override void Method() => Console.WriteLine(\"Middle\");\n}\nclass Derived : Middle {\n    public override void Method() => Console.WriteLine(\"Derived\");\n}\nBase b = new Derived();\nb.Method();",
+    "o": [
+      "Derived",
+      "Middle",
+      "Base",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents further inheritance of a class.",
+    "type": "fill_blank",
+    "answers": [
+      "sealed"
+    ],
+    "other_options": [
+      "final",
+      "locked",
+      "closed"
+    ]
+  },
+  {
+    "q": "Covariance allows derived return types in overridden methods.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the method hiding concepts:",
+    "type": "match",
+    "left": [
+      "new keyword",
+      "override keyword",
+      "virtual keyword",
+      "abstract keyword"
+    ],
+    "right": [
+      "Hide base method",
+      "Replace base method",
+      "Allow overriding",
+      "Force override"
+    ]
+  },
+  {
+    "q": "What is the output of this interface implementation?",
+    "type": "mcq",
+    "c": "interface IA { void M(); }\ninterface IB { void M(); }\nclass C : IA, IB {\n    void IA.M() => Console.WriteLine(\"IA\");\n    void IB.M() => Console.WriteLine(\"IB\");\n}\nC obj = new C();\n((IA)obj).M();",
+    "o": [
+      "IA",
+      "IB",
+      "Error",
+      "M"
+    ]
+  },
+  {
+    "q": "Rearrange the method resolution order:",
+    "type": "rearrange",
+    "words": [
+      "Virtual call",
+      "VTable lookup",
+      "Method dispatch",
+      "Execution"
+    ]
+  },
+  {
+    "q": "What is the output of this casting code?",
+    "type": "mcq",
+    "c": "class Base { }\nclass Derived : Base { public int Value = 42; }\nBase b = new Derived();\nConsole.WriteLine(((Derived)b).Value);",
+    "o": [
+      "42",
+      "Error",
+      "0",
+      "null"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced polymorphism code?",
+    "type": "mcq",
+    "c": "class Base {\n    public virtual void Method() => Console.WriteLine(\"Base\");\n}\nclass Middle : Base {\n    public override void Method() => Console.WriteLine(\"Middle\");\n}\nclass Derived : Middle {\n    public override void Method() => Console.WriteLine(\"Derived\");\n}\nBase b = new Derived();\nb.Method();",
+    "o": [
+      "Derived",
+      "Middle",
+      "Base",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents further inheritance of a class.",
+    "type": "fill_blank",
+    "answers": [
+      "sealed"
+    ],
+    "other_options": [
+      "final",
+      "locked",
+      "closed"
+    ]
+  },
+  {
+    "q": "Covariance allows derived return types in overridden methods.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the method hiding concepts:",
+    "type": "match",
+    "left": [
+      "new keyword",
+      "override keyword",
+      "virtual keyword",
+      "abstract keyword"
+    ],
+    "right": [
+      "Hide base method",
+      "Replace base method",
+      "Allow overriding",
+      "Force override"
+    ]
+  },
+  {
+    "q": "What is the output of this interface implementation?",
+    "type": "mcq",
+    "c": "interface IA { void M(); }\ninterface IB { void M(); }\nclass C : IA, IB {\n    void IA.M() => Console.WriteLine(\"IA\");\n    void IB.M() => Console.WriteLine(\"IB\");\n}\nC obj = new C();\n((IA)obj).M();",
+    "o": [
+      "IA",
+      "IB",
+      "Error",
+      "M"
+    ]
+  },
+  {
+    "q": "Rearrange the method resolution order:",
+    "type": "rearrange",
+    "words": [
+      "Virtual call",
+      "VTable lookup",
+      "Method dispatch",
+      "Execution"
+    ]
+  },
+  {
+    "q": "What is the output of this casting code?",
+    "type": "mcq",
+    "c": "class Base { }\nclass Derived : Base { public int Value = 42; }\nBase b = new Derived();\nConsole.WriteLine(((Derived)b).Value);",
+    "o": [
+      "42",
+      "Error",
+      "0",
+      "null"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced polymorphism code?",
+    "type": "mcq",
+    "c": "class Base {\n    public virtual void Method() => Console.WriteLine(\"Base\");\n}\nclass Middle : Base {\n    public override void Method() => Console.WriteLine(\"Middle\");\n}\nclass Derived : Middle {\n    public override void Method() => Console.WriteLine(\"Derived\");\n}\nBase b = new Derived();\nb.Method();",
+    "o": [
+      "Derived",
+      "Middle",
+      "Base",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents further inheritance of a class.",
+    "type": "fill_blank",
+    "answers": [
+      "sealed"
+    ],
+    "other_options": [
+      "final",
+      "locked",
+      "closed"
+    ]
+  },
+  {
+    "q": "Covariance allows derived return types in overridden methods.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the method hiding concepts:",
+    "type": "match",
+    "left": [
+      "new keyword",
+      "override keyword",
+      "virtual keyword",
+      "abstract keyword"
+    ],
+    "right": [
+      "Hide base method",
+      "Replace base method",
+      "Allow overriding",
+      "Force override"
+    ]
+  },
+  {
+    "q": "What is the output of this interface implementation?",
+    "type": "mcq",
+    "c": "interface IA { void M(); }\ninterface IB { void M(); }\nclass C : IA, IB {\n    void IA.M() => Console.WriteLine(\"IA\");\n    void IB.M() => Console.WriteLine(\"IB\");\n}\nC obj = new C();\n((IA)obj).M();",
+    "o": [
+      "IA",
+      "IB",
+      "Error",
+      "M"
+    ]
+  },
+  {
+    "q": "Rearrange the method resolution order:",
+    "type": "rearrange",
+    "words": [
+      "Virtual call",
+      "VTable lookup",
+      "Method dispatch",
+      "Execution"
+    ]
+  },
+  {
+    "q": "What is the output of this casting code?",
+    "type": "mcq",
+    "c": "class Base { }\nclass Derived : Base { public int Value = 42; }\nBase b = new Derived();\nConsole.WriteLine(((Derived)b).Value);",
+    "o": [
+      "42",
+      "Error",
+      "0",
+      "null"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced polymorphism code?",
+    "type": "mcq",
+    "c": "class Base {\n    public virtual void Method() => Console.WriteLine(\"Base\");\n}\nclass Middle : Base {\n    public override void Method() => Console.WriteLine(\"Middle\");\n}\nclass Derived : Middle {\n    public override void Method() => Console.WriteLine(\"Derived\");\n}\nBase b = new Derived();\nb.Method();",
+    "o": [
+      "Derived",
+      "Middle",
+      "Base",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents further inheritance of a class.",
+    "type": "fill_blank",
+    "answers": [
+      "sealed"
+    ],
+    "other_options": [
+      "final",
+      "locked",
+      "closed"
+    ]
+  },
+  {
+    "q": "Covariance allows derived return types in overridden methods.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the method hiding concepts:",
+    "type": "match",
+    "left": [
+      "new keyword",
+      "override keyword",
+      "virtual keyword",
+      "abstract keyword"
+    ],
+    "right": [
+      "Hide base method",
+      "Replace base method",
+      "Allow overriding",
+      "Force override"
+    ]
+  },
+  {
+    "q": "What is the output of this interface implementation?",
+    "type": "mcq",
+    "c": "interface IA { void M(); }\ninterface IB { void M(); }\nclass C : IA, IB {\n    void IA.M() => Console.WriteLine(\"IA\");\n    void IB.M() => Console.WriteLine(\"IB\");\n}\nC obj = new C();\n((IA)obj).M();",
+    "o": [
+      "IA",
+      "IB",
+      "Error",
+      "M"
+    ]
+  },
+  {
+    "q": "Rearrange the method resolution order:",
+    "type": "rearrange",
+    "words": [
+      "Virtual call",
+      "VTable lookup",
+      "Method dispatch",
+      "Execution"
+    ]
+  },
+  {
+    "q": "What is the output of this casting code?",
+    "type": "mcq",
+    "c": "class Base { }\nclass Derived : Base { public int Value = 42; }\nBase b = new Derived();\nConsole.WriteLine(((Derived)b).Value);",
+    "o": [
+      "42",
+      "Error",
+      "0",
+      "null"
+    ]
+  },
+  {
+    "q": "What is the output of this advanced polymorphism code?",
+    "type": "mcq",
+    "c": "class Base {\n    public virtual void Method() => Console.WriteLine(\"Base\");\n}\nclass Middle : Base {\n    public override void Method() => Console.WriteLine(\"Middle\");\n}\nclass Derived : Middle {\n    public override void Method() => Console.WriteLine(\"Derived\");\n}\nBase b = new Derived();\nb.Method();",
+    "o": [
+      "Derived",
+      "Middle",
+      "Base",
+      "Error"
+    ]
+  },
+  {
+    "q": "The ______ keyword prevents further inheritance of a class.",
+    "type": "fill_blank",
+    "answers": [
+      "sealed"
+    ],
+    "other_options": [
+      "final",
+      "locked",
+      "closed"
+    ]
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "is",
+      "as",
+      "typeof",
+      "GetType"
+    ],
+    "right": [
+      "Type check",
+      "Safe cast",
+      "Type literal",
+      "Runtime type"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 14; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "14",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "IDisposable",
+      "IComparable",
+      "IEnumerable",
+      "ICloneable"
+    ],
+    "right": [
+      "Cleanup",
+      "Comparison",
+      "Iteration",
+      "Copying"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 12; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "12",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "Liskov",
+      "DRY",
+      "YAGNI",
+      "SOLID"
+    ],
+    "right": [
+      "Substitution",
+      "Don't repeat",
+      "You ain't gonna need",
+      "Five principles"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 10; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "10",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "is",
+      "as",
+      "typeof",
+      "GetType"
+    ],
+    "right": [
+      "Type check",
+      "Safe cast",
+      "Type literal",
+      "Runtime type"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 18; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "18",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "IDisposable",
+      "IComparable",
+      "IEnumerable",
+      "ICloneable"
+    ],
+    "right": [
+      "Cleanup",
+      "Comparison",
+      "Iteration",
+      "Copying"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 16; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "16",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "Liskov",
+      "DRY",
+      "YAGNI",
+      "SOLID"
+    ],
+    "right": [
+      "Substitution",
+      "Don't repeat",
+      "You ain't gonna need",
+      "Five principles"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 14; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "14",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "is",
+      "as",
+      "typeof",
+      "GetType"
+    ],
+    "right": [
+      "Type check",
+      "Safe cast",
+      "Type literal",
+      "Runtime type"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 12; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "12",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "IDisposable",
+      "IComparable",
+      "IEnumerable",
+      "ICloneable"
+    ],
+    "right": [
+      "Cleanup",
+      "Comparison",
+      "Iteration",
+      "Copying"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 10; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "10",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "Liskov",
+      "DRY",
+      "YAGNI",
+      "SOLID"
+    ],
+    "right": [
+      "Substitution",
+      "Don't repeat",
+      "You ain't gonna need",
+      "Five principles"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 18; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "18",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "is",
+      "as",
+      "typeof",
+      "GetType"
+    ],
+    "right": [
+      "Type check",
+      "Safe cast",
+      "Type literal",
+      "Runtime type"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 16; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "16",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "IDisposable",
+      "IComparable",
+      "IEnumerable",
+      "ICloneable"
+    ],
+    "right": [
+      "Cleanup",
+      "Comparison",
+      "Iteration",
+      "Copying"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 14; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "14",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "Liskov",
+      "DRY",
+      "YAGNI",
+      "SOLID"
+    ],
+    "right": [
+      "Substitution",
+      "Don't repeat",
+      "You ain't gonna need",
+      "Five principles"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 12; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "12",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "is",
+      "as",
+      "typeof",
+      "GetType"
+    ],
+    "right": [
+      "Type check",
+      "Safe cast",
+      "Type literal",
+      "Runtime type"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 10; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "10",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "IDisposable",
+      "IComparable",
+      "IEnumerable",
+      "ICloneable"
+    ],
+    "right": [
+      "Cleanup",
+      "Comparison",
+      "Iteration",
+      "Copying"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 18; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "18",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "Liskov",
+      "DRY",
+      "YAGNI",
+      "SOLID"
+    ],
+    "right": [
+      "Substitution",
+      "Don't repeat",
+      "You ain't gonna need",
+      "Five principles"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 16; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "16",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "is",
+      "as",
+      "typeof",
+      "GetType"
+    ],
+    "right": [
+      "Type check",
+      "Safe cast",
+      "Type literal",
+      "Runtime type"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 14; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "14",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "IDisposable",
+      "IComparable",
+      "IEnumerable",
+      "ICloneable"
+    ],
+    "right": [
+      "Cleanup",
+      "Comparison",
+      "Iteration",
+      "Copying"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 12; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "12",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "Liskov",
+      "DRY",
+      "YAGNI",
+      "SOLID"
+    ],
+    "right": [
+      "Substitution",
+      "Don't repeat",
+      "You ain't gonna need",
+      "Five principles"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 10; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "10",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "is",
+      "as",
+      "typeof",
+      "GetType"
+    ],
+    "right": [
+      "Type check",
+      "Safe cast",
+      "Type literal",
+      "Runtime type"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 18; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "18",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "IDisposable",
+      "IComparable",
+      "IEnumerable",
+      "ICloneable"
+    ],
+    "right": [
+      "Cleanup",
+      "Comparison",
+      "Iteration",
+      "Copying"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 16; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "16",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "Liskov",
+      "DRY",
+      "YAGNI",
+      "SOLID"
+    ],
+    "right": [
+      "Substitution",
+      "Don't repeat",
+      "You ain't gonna need",
+      "Five principles"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 14; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "14",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "is",
+      "as",
+      "typeof",
+      "GetType"
+    ],
+    "right": [
+      "Type check",
+      "Safe cast",
+      "Type literal",
+      "Runtime type"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 12; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "12",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "IDisposable",
+      "IComparable",
+      "IEnumerable",
+      "ICloneable"
+    ],
+    "right": [
+      "Cleanup",
+      "Comparison",
+      "Iteration",
+      "Copying"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 10; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "10",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "Liskov",
+      "DRY",
+      "YAGNI",
+      "SOLID"
+    ],
+    "right": [
+      "Substitution",
+      "Don't repeat",
+      "You ain't gonna need",
+      "Five principles"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 18; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "18",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "is",
+      "as",
+      "typeof",
+      "GetType"
+    ],
+    "right": [
+      "Type check",
+      "Safe cast",
+      "Type literal",
+      "Runtime type"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 16; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "16",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "IDisposable",
+      "IComparable",
+      "IEnumerable",
+      "ICloneable"
+    ],
+    "right": [
+      "Cleanup",
+      "Comparison",
+      "Iteration",
+      "Copying"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 14; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "14",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "Liskov",
+      "DRY",
+      "YAGNI",
+      "SOLID"
+    ],
+    "right": [
+      "Substitution",
+      "Don't repeat",
+      "You ain't gonna need",
+      "Five principles"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 12; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "12",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  },
+  {
+    "q": "The ______ keyword calls the base class constructor.",
+    "type": "fill_blank",
+    "answers": [
+      "base"
+    ],
+    "other_options": [
+      "super",
+      "parent",
+      "this"
+    ]
+  },
+  {
+    "q": "Multiple interface inheritance is allowed in C#.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the advanced concepts:",
+    "type": "match",
+    "left": [
+      "is",
+      "as",
+      "typeof",
+      "GetType"
+    ],
+    "right": [
+      "Type check",
+      "Safe cast",
+      "Type literal",
+      "Runtime type"
+    ]
+  },
+  {
+    "q": "What is the output of this interface code?",
+    "type": "mcq",
+    "c": "interface I { int P { get; set; } }\nclass C : I { public int P { get; set; } = 10; }\nI obj = new C();\nConsole.WriteLine(obj.P);",
+    "o": [
+      "10",
+      "0",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "Rearrange the object construction order:",
+    "type": "rearrange",
+    "words": [
+      "Base constructor",
+      "Field initialization",
+      "Derived constructor",
+      "Object ready"
+    ]
+  },
+  {
+    "q": "What is the output of this abstract class code?",
+    "type": "mcq",
+    "c": "abstract class Shape { public abstract double Area(); public virtual double Perimeter() => 0; }\nclass Square : Shape { public double Side = 4; public override double Area() => Side * Side; }\nShape s = new Square();\nConsole.WriteLine(s.Area());",
+    "o": [
+      "16",
+      "4",
+      "0",
+      "Error"
+    ]
+  },
+  {
+    "q": "Default interface methods were introduced in C# 8.0.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this complex inheritance scenario?",
+    "type": "mcq",
+    "c": "class A { public virtual void M() => Console.WriteLine(\"A\"); }\nclass B : A { public override void M() => base.M(); }\nclass C : B { public override void M() { base.M(); Console.WriteLine(\"C\"); } }\nA obj = new C();\nobj.M();",
+    "o": [
+      "A\\nC",
+      "C\\nA",
+      "A",
+      "C"
+    ]
+  }
+]

@@ -1,0 +1,97 @@
+{
+    "id": "learn_struct",
+    "topicId": "struct",
+    "topicTitle": "Structures and Unions",
+    "description": "Create your own custom data types to group related variables and model real-world entities.",
+    "baseKP": 80,
+    "slides": [
+        {
+            "id": "struct_1",
+            "type": "content",
+            "title": "Grouping Data",
+            "content": "# Beyond Arrays 📦\n\nArrays are great, but they can only hold one type of data (e.g., only `int`).\n\nWhat if you want to represent a **Student**? You need:\n- Name (`char array`)\n- Age (`int`)\n- GPA (`float`)\n\n**Structures** allow you to group variables of **different types** under a single name."
+        },
+        {
+            "id": "struct_2",
+            "type": "content",
+            "title": "Defining a Structure",
+            "content": "# Blueprint 📐\n\nUse the `struct` keyword.\n\n```c\nstruct Student {\n    char name[50];\n    int age;\n    float gpa;\n};\n```\n\n**Declaring Variables:**\n```c\nstruct Student s1, s2;\n```\nHere `s1` and `s2` are variables of type `struct Student`."
+        },
+        {
+            "id": "struct_3",
+            "type": "content",
+            "title": "Accessing Members",
+            "content": "# The Dot Operator ⏺️\n\nUse the dot `.` operator to access or modify members.\n\n```c\n// Initialization\ns1.age = 20;\ns1.gpa = 3.8;\nstrcpy(s1.name, \"Alice\");\n\n// Accessing\nprintf(\"%s is %d years old.\", s1.name, s1.age);\n```\n\nYou can also initialize all at once:\n```c\nstruct Student s1 = {\"Alice\", 20, 3.8};\n```"
+        },
+        {
+            "id": "struct_4",
+            "type": "content",
+            "title": "Array of Structures",
+            "content": "# A Class of Students 🏫\n\nYou can create arrays of structures just like arrays of integers.\n\n```c\nstruct Student class[30];\n// class[0] is the first student\n// class[1] is the second student\n\nclass[0].age = 19;\nprintf(\"First student: %s\", class[0].name);\n```"
+        },
+        {
+            "id": "struct_5",
+            "type": "content",
+            "title": "Pointers to Structures",
+            "content": "# The Arrow Operator 🏹\n\nWhen you have a pointer to a structure, accessing members is different.\n\n```c\nstruct Student s1 = {\"Bob\", 21, 3.5};\nstruct Student *ptr = &s1;\n\n// Standard way (clunky)\n(*ptr).age = 22;\n\n// Arrow Operator (Preferred)\nptr->age = 22;\n```\nSo, `ptr->age` is the same as `(*ptr).age`."
+        },
+        {
+            "id": "struct_quiz_1",
+            "type": "quiz",
+            "title": "Syntax Check",
+            "content": "If `p` is a pointer to struct `Emp`, how do you access member `id`?",
+            "quizQuestion": "Correct Syntax:",
+            "quizOptions": [
+                "p.id",
+                "p->id",
+                "p:id",
+                "p@id"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "struct_6",
+            "type": "content",
+            "title": "Typedef",
+            "content": "# Creating Aliases 🏷️\n\n`typedef` gives a new name to an existing type. It makes code cleaner.\n\n```c\n// Old way\nstruct Point {\n    int x, y;\n};\nstruct Point p1;\n\n// With typedef\ntypedef struct {\n    int x, y;\n} Point;\n\nPoint p1; // No need to write 'struct' anymore!\n```"
+        },
+        {
+            "id": "struct_7",
+            "type": "content",
+            "title": "Unions",
+            "content": "# Shared Space: Unions 🤝\n\nLike a structure, but all members **share the same memory location**.\nThe size of the union is the size of its largest member.\n\n```c\nunion Data {\n    int i;\n    float f;\n    char str[20];\n};\n```\n\n**Key Difference:**\n- In `struct`, `i`, `f`, and `str` exist simultaneously.\n- In `union`, only **one** member can hold a value at a time. Writing to `f` overwrites `i`."
+        },
+        {
+            "id": "struct_quiz_2",
+            "type": "quiz",
+            "title": "Size Matters",
+            "content": "`struct A {int i; char c;};` vs `union B {int i; char c;};` (Assuming int=4, char=1)",
+            "quizQuestion": "Which is usually smaller?",
+            "quizOptions": [
+                "struct A",
+                "union B",
+                "Both are same",
+                "Depends on weather"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "struct_8",
+            "type": "content",
+            "title": "Enumerations (enum)",
+            "content": "# Named Constants 🔢\n\nFor defining a variable that can hold only a specific set of values.\n\n```c\nenum Day {SUNDAY, MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY};\n\nenum Day today = WEDNESDAY;\n\nif (today == SUNDAY) {\n    printf(\"Time to relax!\");\n}\n```\nInternally, `SUNDAY` is 0, `MONDAY` is 1, etc."
+        },
+        {
+            "id": "struct_9",
+            "type": "content",
+            "title": "Full Example: Employee Database",
+            "content": "# Structs in Action\n\n<!-- FULL_CODE_START\n#include <stdio.h>\n#include <string.h>\n\n// Define a structure\ntypedef struct {\n    int id;\n    char name[30];\n    float salary;\n} Employee;\n\nvoid printDetails(Employee e) {\n    printf(\"ID: %d | Name: %s | Salary: $%.2f\\n\", e.id, e.name, e.salary);\n}\n\nvoid giveRaise(Employee *e) {\n    e->salary += 500.0; // Accessing via pointer\n}\n\nint main() {\n    Employee emp1;\n    \n    // 1. Initialization\n    emp1.id = 101;\n    strcpy(emp1.name, \"John Doe\");\n    emp1.salary = 50000.0;\n    \n    printf(\"--- Initial Details ---\\n\");\n    printDetails(emp1);\n    \n    // 2. Modify via Pointer\n    giveRaise(&emp1);\n    \n    printf(\"--- After Raise ---\\n\");\n    printDetails(emp1);\n    \n    // 3. Array of Structs\n    Employee team[2] = {\n        {102, \"Jane\", 60000.0},\n        {103, \"Bob\", 55000.0}\n    };\n    \n    printf(\"--- Team Members ---\\n\");\n    for(int i=0; i<2; i++) {\n        printDetails(team[i]);\n    }\n    \n    return 0;\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "struct_10",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: Data Structures 🎓\n\nYou can now model complex data!\n\n## Key Takeaways\n- **Struct:** Groups different data types. Each member has its own memory.\n- **Union:** Shares memory. Only one active member at a time.\n- **Dot `.`**: For direct access `s.age`.\n- **Arrow `->`**: For pointer access `ptr->age`.\n- **Typedef:** Creates clean type aliases.\n- **Enum:** Makes code readable with named constants.\n\nNext up is **File Handling**, where we'll learn to save this data permanently!"
+        }
+    ]
+}

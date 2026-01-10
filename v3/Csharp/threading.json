@@ -1,0 +1,6399 @@
+[
+  {
+    "q": "What is the output of this Task code?",
+    "type": "mcq",
+    "c": "var task = Task.Run(() => Console.WriteLine(\"Task\"));\ntask.Wait();",
+    "o": [
+      "Task",
+      "Error",
+      "null",
+      "No output"
+    ]
+  },
+  {
+    "q": "The ______ keyword marks a method as asynchronous.",
+    "type": "fill_blank",
+    "answers": [
+      "async"
+    ],
+    "other_options": [
+      "await",
+      "task",
+      "thread"
+    ]
+  },
+  {
+    "q": "await pauses execution until the task completes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the threading concepts:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Thread",
+      "async",
+      "await"
+    ],
+    "right": [
+      "Async unit",
+      "OS thread",
+      "Async method",
+      "Wait for task"
+    ]
+  },
+  {
+    "q": "Rearrange the async execution:",
+    "type": "rearrange",
+    "words": [
+      "Start task",
+      "Continue execution",
+      "await task",
+      "Resume after"
+    ]
+  },
+  {
+    "q": "What is the output of Task.Delay?",
+    "type": "mcq",
+    "c": "await Task.Delay(100);\nConsole.WriteLine(\"Done\");",
+    "o": [
+      "Done",
+      "100",
+      "Error",
+      "Delay"
+    ]
+  },
+  {
+    "q": "What is the output of this Task code?",
+    "type": "mcq",
+    "c": "var task = Task.Run(() => Console.WriteLine(\"Task\"));\ntask.Wait();",
+    "o": [
+      "Task",
+      "Error",
+      "null",
+      "No output"
+    ]
+  },
+  {
+    "q": "The ______ keyword marks a method as asynchronous.",
+    "type": "fill_blank",
+    "answers": [
+      "async"
+    ],
+    "other_options": [
+      "await",
+      "task",
+      "thread"
+    ]
+  },
+  {
+    "q": "await pauses execution until the task completes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the threading concepts:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Thread",
+      "async",
+      "await"
+    ],
+    "right": [
+      "Async unit",
+      "OS thread",
+      "Async method",
+      "Wait for task"
+    ]
+  },
+  {
+    "q": "Rearrange the async execution:",
+    "type": "rearrange",
+    "words": [
+      "Start task",
+      "Continue execution",
+      "await task",
+      "Resume after"
+    ]
+  },
+  {
+    "q": "What is the output of Task.Delay?",
+    "type": "mcq",
+    "c": "await Task.Delay(100);\nConsole.WriteLine(\"Done\");",
+    "o": [
+      "Done",
+      "100",
+      "Error",
+      "Delay"
+    ]
+  },
+  {
+    "q": "What is the output of this Task code?",
+    "type": "mcq",
+    "c": "var task = Task.Run(() => Console.WriteLine(\"Task\"));\ntask.Wait();",
+    "o": [
+      "Task",
+      "Error",
+      "null",
+      "No output"
+    ]
+  },
+  {
+    "q": "The ______ keyword marks a method as asynchronous.",
+    "type": "fill_blank",
+    "answers": [
+      "async"
+    ],
+    "other_options": [
+      "await",
+      "task",
+      "thread"
+    ]
+  },
+  {
+    "q": "await pauses execution until the task completes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the threading concepts:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Thread",
+      "async",
+      "await"
+    ],
+    "right": [
+      "Async unit",
+      "OS thread",
+      "Async method",
+      "Wait for task"
+    ]
+  },
+  {
+    "q": "Rearrange the async execution:",
+    "type": "rearrange",
+    "words": [
+      "Start task",
+      "Continue execution",
+      "await task",
+      "Resume after"
+    ]
+  },
+  {
+    "q": "What is the output of Task.Delay?",
+    "type": "mcq",
+    "c": "await Task.Delay(100);\nConsole.WriteLine(\"Done\");",
+    "o": [
+      "Done",
+      "100",
+      "Error",
+      "Delay"
+    ]
+  },
+  {
+    "q": "What is the output of this Task code?",
+    "type": "mcq",
+    "c": "var task = Task.Run(() => Console.WriteLine(\"Task\"));\ntask.Wait();",
+    "o": [
+      "Task",
+      "Error",
+      "null",
+      "No output"
+    ]
+  },
+  {
+    "q": "The ______ keyword marks a method as asynchronous.",
+    "type": "fill_blank",
+    "answers": [
+      "async"
+    ],
+    "other_options": [
+      "await",
+      "task",
+      "thread"
+    ]
+  },
+  {
+    "q": "await pauses execution until the task completes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the threading concepts:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Thread",
+      "async",
+      "await"
+    ],
+    "right": [
+      "Async unit",
+      "OS thread",
+      "Async method",
+      "Wait for task"
+    ]
+  },
+  {
+    "q": "Rearrange the async execution:",
+    "type": "rearrange",
+    "words": [
+      "Start task",
+      "Continue execution",
+      "await task",
+      "Resume after"
+    ]
+  },
+  {
+    "q": "What is the output of Task.Delay?",
+    "type": "mcq",
+    "c": "await Task.Delay(100);\nConsole.WriteLine(\"Done\");",
+    "o": [
+      "Done",
+      "100",
+      "Error",
+      "Delay"
+    ]
+  },
+  {
+    "q": "What is the output of this Task code?",
+    "type": "mcq",
+    "c": "var task = Task.Run(() => Console.WriteLine(\"Task\"));\ntask.Wait();",
+    "o": [
+      "Task",
+      "Error",
+      "null",
+      "No output"
+    ]
+  },
+  {
+    "q": "The ______ keyword marks a method as asynchronous.",
+    "type": "fill_blank",
+    "answers": [
+      "async"
+    ],
+    "other_options": [
+      "await",
+      "task",
+      "thread"
+    ]
+  },
+  {
+    "q": "await pauses execution until the task completes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the threading concepts:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Thread",
+      "async",
+      "await"
+    ],
+    "right": [
+      "Async unit",
+      "OS thread",
+      "Async method",
+      "Wait for task"
+    ]
+  },
+  {
+    "q": "Rearrange the async execution:",
+    "type": "rearrange",
+    "words": [
+      "Start task",
+      "Continue execution",
+      "await task",
+      "Resume after"
+    ]
+  },
+  {
+    "q": "What is the output of Task.Delay?",
+    "type": "mcq",
+    "c": "await Task.Delay(100);\nConsole.WriteLine(\"Done\");",
+    "o": [
+      "Done",
+      "100",
+      "Error",
+      "Delay"
+    ]
+  },
+  {
+    "q": "What is the output of this Task code?",
+    "type": "mcq",
+    "c": "var task = Task.Run(() => Console.WriteLine(\"Task\"));\ntask.Wait();",
+    "o": [
+      "Task",
+      "Error",
+      "null",
+      "No output"
+    ]
+  },
+  {
+    "q": "The ______ keyword marks a method as asynchronous.",
+    "type": "fill_blank",
+    "answers": [
+      "async"
+    ],
+    "other_options": [
+      "await",
+      "task",
+      "thread"
+    ]
+  },
+  {
+    "q": "await pauses execution until the task completes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the threading concepts:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Thread",
+      "async",
+      "await"
+    ],
+    "right": [
+      "Async unit",
+      "OS thread",
+      "Async method",
+      "Wait for task"
+    ]
+  },
+  {
+    "q": "Rearrange the async execution:",
+    "type": "rearrange",
+    "words": [
+      "Start task",
+      "Continue execution",
+      "await task",
+      "Resume after"
+    ]
+  },
+  {
+    "q": "What is the output of Task.Delay?",
+    "type": "mcq",
+    "c": "await Task.Delay(100);\nConsole.WriteLine(\"Done\");",
+    "o": [
+      "Done",
+      "100",
+      "Error",
+      "Delay"
+    ]
+  },
+  {
+    "q": "What is the output of this Task code?",
+    "type": "mcq",
+    "c": "var task = Task.Run(() => Console.WriteLine(\"Task\"));\ntask.Wait();",
+    "o": [
+      "Task",
+      "Error",
+      "null",
+      "No output"
+    ]
+  },
+  {
+    "q": "The ______ keyword marks a method as asynchronous.",
+    "type": "fill_blank",
+    "answers": [
+      "async"
+    ],
+    "other_options": [
+      "await",
+      "task",
+      "thread"
+    ]
+  },
+  {
+    "q": "await pauses execution until the task completes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the threading concepts:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Thread",
+      "async",
+      "await"
+    ],
+    "right": [
+      "Async unit",
+      "OS thread",
+      "Async method",
+      "Wait for task"
+    ]
+  },
+  {
+    "q": "Rearrange the async execution:",
+    "type": "rearrange",
+    "words": [
+      "Start task",
+      "Continue execution",
+      "await task",
+      "Resume after"
+    ]
+  },
+  {
+    "q": "What is the output of Task.Delay?",
+    "type": "mcq",
+    "c": "await Task.Delay(100);\nConsole.WriteLine(\"Done\");",
+    "o": [
+      "Done",
+      "100",
+      "Error",
+      "Delay"
+    ]
+  },
+  {
+    "q": "What is the output of this Task code?",
+    "type": "mcq",
+    "c": "var task = Task.Run(() => Console.WriteLine(\"Task\"));\ntask.Wait();",
+    "o": [
+      "Task",
+      "Error",
+      "null",
+      "No output"
+    ]
+  },
+  {
+    "q": "The ______ keyword marks a method as asynchronous.",
+    "type": "fill_blank",
+    "answers": [
+      "async"
+    ],
+    "other_options": [
+      "await",
+      "task",
+      "thread"
+    ]
+  },
+  {
+    "q": "await pauses execution until the task completes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the threading concepts:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Thread",
+      "async",
+      "await"
+    ],
+    "right": [
+      "Async unit",
+      "OS thread",
+      "Async method",
+      "Wait for task"
+    ]
+  },
+  {
+    "q": "Rearrange the async execution:",
+    "type": "rearrange",
+    "words": [
+      "Start task",
+      "Continue execution",
+      "await task",
+      "Resume after"
+    ]
+  },
+  {
+    "q": "What is the output of Task.Delay?",
+    "type": "mcq",
+    "c": "await Task.Delay(100);\nConsole.WriteLine(\"Done\");",
+    "o": [
+      "Done",
+      "100",
+      "Error",
+      "Delay"
+    ]
+  },
+  {
+    "q": "What is the output of this Task code?",
+    "type": "mcq",
+    "c": "var task = Task.Run(() => Console.WriteLine(\"Task\"));\ntask.Wait();",
+    "o": [
+      "Task",
+      "Error",
+      "null",
+      "No output"
+    ]
+  },
+  {
+    "q": "The ______ keyword marks a method as asynchronous.",
+    "type": "fill_blank",
+    "answers": [
+      "async"
+    ],
+    "other_options": [
+      "await",
+      "task",
+      "thread"
+    ]
+  },
+  {
+    "q": "await pauses execution until the task completes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the threading concepts:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Thread",
+      "async",
+      "await"
+    ],
+    "right": [
+      "Async unit",
+      "OS thread",
+      "Async method",
+      "Wait for task"
+    ]
+  },
+  {
+    "q": "Rearrange the async execution:",
+    "type": "rearrange",
+    "words": [
+      "Start task",
+      "Continue execution",
+      "await task",
+      "Resume after"
+    ]
+  },
+  {
+    "q": "What is the output of Task.Delay?",
+    "type": "mcq",
+    "c": "await Task.Delay(100);\nConsole.WriteLine(\"Done\");",
+    "o": [
+      "Done",
+      "100",
+      "Error",
+      "Delay"
+    ]
+  },
+  {
+    "q": "What is the output of this Task code?",
+    "type": "mcq",
+    "c": "var task = Task.Run(() => Console.WriteLine(\"Task\"));\ntask.Wait();",
+    "o": [
+      "Task",
+      "Error",
+      "null",
+      "No output"
+    ]
+  },
+  {
+    "q": "The ______ keyword marks a method as asynchronous.",
+    "type": "fill_blank",
+    "answers": [
+      "async"
+    ],
+    "other_options": [
+      "await",
+      "task",
+      "thread"
+    ]
+  },
+  {
+    "q": "await pauses execution until the task completes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the threading concepts:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Thread",
+      "async",
+      "await"
+    ],
+    "right": [
+      "Async unit",
+      "OS thread",
+      "Async method",
+      "Wait for task"
+    ]
+  },
+  {
+    "q": "Rearrange the async execution:",
+    "type": "rearrange",
+    "words": [
+      "Start task",
+      "Continue execution",
+      "await task",
+      "Resume after"
+    ]
+  },
+  {
+    "q": "What is the output of Task.Delay?",
+    "type": "mcq",
+    "c": "await Task.Delay(100);\nConsole.WriteLine(\"Done\");",
+    "o": [
+      "Done",
+      "100",
+      "Error",
+      "Delay"
+    ]
+  },
+  {
+    "q": "What is the output of this Task code?",
+    "type": "mcq",
+    "c": "var task = Task.Run(() => Console.WriteLine(\"Task\"));\ntask.Wait();",
+    "o": [
+      "Task",
+      "Error",
+      "null",
+      "No output"
+    ]
+  },
+  {
+    "q": "The ______ keyword marks a method as asynchronous.",
+    "type": "fill_blank",
+    "answers": [
+      "async"
+    ],
+    "other_options": [
+      "await",
+      "task",
+      "thread"
+    ]
+  },
+  {
+    "q": "await pauses execution until the task completes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the threading concepts:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Thread",
+      "async",
+      "await"
+    ],
+    "right": [
+      "Async unit",
+      "OS thread",
+      "Async method",
+      "Wait for task"
+    ]
+  },
+  {
+    "q": "Rearrange the async execution:",
+    "type": "rearrange",
+    "words": [
+      "Start task",
+      "Continue execution",
+      "await task",
+      "Resume after"
+    ]
+  },
+  {
+    "q": "What is the output of Task.Delay?",
+    "type": "mcq",
+    "c": "await Task.Delay(100);\nConsole.WriteLine(\"Done\");",
+    "o": [
+      "Done",
+      "100",
+      "Error",
+      "Delay"
+    ]
+  },
+  {
+    "q": "What is the output of this Task code?",
+    "type": "mcq",
+    "c": "var task = Task.Run(() => Console.WriteLine(\"Task\"));\ntask.Wait();",
+    "o": [
+      "Task",
+      "Error",
+      "null",
+      "No output"
+    ]
+  },
+  {
+    "q": "The ______ keyword marks a method as asynchronous.",
+    "type": "fill_blank",
+    "answers": [
+      "async"
+    ],
+    "other_options": [
+      "await",
+      "task",
+      "thread"
+    ]
+  },
+  {
+    "q": "await pauses execution until the task completes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the threading concepts:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Thread",
+      "async",
+      "await"
+    ],
+    "right": [
+      "Async unit",
+      "OS thread",
+      "Async method",
+      "Wait for task"
+    ]
+  },
+  {
+    "q": "Rearrange the async execution:",
+    "type": "rearrange",
+    "words": [
+      "Start task",
+      "Continue execution",
+      "await task",
+      "Resume after"
+    ]
+  },
+  {
+    "q": "What is the output of Task.Delay?",
+    "type": "mcq",
+    "c": "await Task.Delay(100);\nConsole.WriteLine(\"Done\");",
+    "o": [
+      "Done",
+      "100",
+      "Error",
+      "Delay"
+    ]
+  },
+  {
+    "q": "What is the output of this Task code?",
+    "type": "mcq",
+    "c": "var task = Task.Run(() => Console.WriteLine(\"Task\"));\ntask.Wait();",
+    "o": [
+      "Task",
+      "Error",
+      "null",
+      "No output"
+    ]
+  },
+  {
+    "q": "The ______ keyword marks a method as asynchronous.",
+    "type": "fill_blank",
+    "answers": [
+      "async"
+    ],
+    "other_options": [
+      "await",
+      "task",
+      "thread"
+    ]
+  },
+  {
+    "q": "await pauses execution until the task completes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the threading concepts:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Thread",
+      "async",
+      "await"
+    ],
+    "right": [
+      "Async unit",
+      "OS thread",
+      "Async method",
+      "Wait for task"
+    ]
+  },
+  {
+    "q": "Rearrange the async execution:",
+    "type": "rearrange",
+    "words": [
+      "Start task",
+      "Continue execution",
+      "await task",
+      "Resume after"
+    ]
+  },
+  {
+    "q": "What is the output of Task.Delay?",
+    "type": "mcq",
+    "c": "await Task.Delay(100);\nConsole.WriteLine(\"Done\");",
+    "o": [
+      "Done",
+      "100",
+      "Error",
+      "Delay"
+    ]
+  },
+  {
+    "q": "What is the output of this Task code?",
+    "type": "mcq",
+    "c": "var task = Task.Run(() => Console.WriteLine(\"Task\"));\ntask.Wait();",
+    "o": [
+      "Task",
+      "Error",
+      "null",
+      "No output"
+    ]
+  },
+  {
+    "q": "The ______ keyword marks a method as asynchronous.",
+    "type": "fill_blank",
+    "answers": [
+      "async"
+    ],
+    "other_options": [
+      "await",
+      "task",
+      "thread"
+    ]
+  },
+  {
+    "q": "await pauses execution until the task completes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the threading concepts:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Thread",
+      "async",
+      "await"
+    ],
+    "right": [
+      "Async unit",
+      "OS thread",
+      "Async method",
+      "Wait for task"
+    ]
+  },
+  {
+    "q": "Rearrange the async execution:",
+    "type": "rearrange",
+    "words": [
+      "Start task",
+      "Continue execution",
+      "await task",
+      "Resume after"
+    ]
+  },
+  {
+    "q": "What is the output of Task.Delay?",
+    "type": "mcq",
+    "c": "await Task.Delay(100);\nConsole.WriteLine(\"Done\");",
+    "o": [
+      "Done",
+      "100",
+      "Error",
+      "Delay"
+    ]
+  },
+  {
+    "q": "What is the output of this Task code?",
+    "type": "mcq",
+    "c": "var task = Task.Run(() => Console.WriteLine(\"Task\"));\ntask.Wait();",
+    "o": [
+      "Task",
+      "Error",
+      "null",
+      "No output"
+    ]
+  },
+  {
+    "q": "The ______ keyword marks a method as asynchronous.",
+    "type": "fill_blank",
+    "answers": [
+      "async"
+    ],
+    "other_options": [
+      "await",
+      "task",
+      "thread"
+    ]
+  },
+  {
+    "q": "await pauses execution until the task completes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the threading concepts:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Thread",
+      "async",
+      "await"
+    ],
+    "right": [
+      "Async unit",
+      "OS thread",
+      "Async method",
+      "Wait for task"
+    ]
+  },
+  {
+    "q": "Rearrange the async execution:",
+    "type": "rearrange",
+    "words": [
+      "Start task",
+      "Continue execution",
+      "await task",
+      "Resume after"
+    ]
+  },
+  {
+    "q": "What is the output of Task.Delay?",
+    "type": "mcq",
+    "c": "await Task.Delay(100);\nConsole.WriteLine(\"Done\");",
+    "o": [
+      "Done",
+      "100",
+      "Error",
+      "Delay"
+    ]
+  },
+  {
+    "q": "What is the output of this Task code?",
+    "type": "mcq",
+    "c": "var task = Task.Run(() => Console.WriteLine(\"Task\"));\ntask.Wait();",
+    "o": [
+      "Task",
+      "Error",
+      "null",
+      "No output"
+    ]
+  },
+  {
+    "q": "The ______ keyword marks a method as asynchronous.",
+    "type": "fill_blank",
+    "answers": [
+      "async"
+    ],
+    "other_options": [
+      "await",
+      "task",
+      "thread"
+    ]
+  },
+  {
+    "q": "await pauses execution until the task completes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the threading concepts:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Thread",
+      "async",
+      "await"
+    ],
+    "right": [
+      "Async unit",
+      "OS thread",
+      "Async method",
+      "Wait for task"
+    ]
+  },
+  {
+    "q": "Rearrange the async execution:",
+    "type": "rearrange",
+    "words": [
+      "Start task",
+      "Continue execution",
+      "await task",
+      "Resume after"
+    ]
+  },
+  {
+    "q": "What is the output of Task.Delay?",
+    "type": "mcq",
+    "c": "await Task.Delay(100);\nConsole.WriteLine(\"Done\");",
+    "o": [
+      "Done",
+      "100",
+      "Error",
+      "Delay"
+    ]
+  },
+  {
+    "q": "What is the output of this Task code?",
+    "type": "mcq",
+    "c": "var task = Task.Run(() => Console.WriteLine(\"Task\"));\ntask.Wait();",
+    "o": [
+      "Task",
+      "Error",
+      "null",
+      "No output"
+    ]
+  },
+  {
+    "q": "The ______ keyword marks a method as asynchronous.",
+    "type": "fill_blank",
+    "answers": [
+      "async"
+    ],
+    "other_options": [
+      "await",
+      "task",
+      "thread"
+    ]
+  },
+  {
+    "q": "await pauses execution until the task completes.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the threading concepts:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Thread",
+      "async",
+      "await"
+    ],
+    "right": [
+      "Async unit",
+      "OS thread",
+      "Async method",
+      "Wait for task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Semaphore"
+    ],
+    "other_options": [
+      "async/await",
+      "Task.Run",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "ConfigureAwait",
+      "SynchronizationContext"
+    ],
+    "right": [
+      "Async method",
+      "Wait operation",
+      "Context control",
+      "Thread context"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Task.Run"
+    ],
+    "other_options": [
+      "lock",
+      "Monitor",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Task<T>",
+      "Task.Run",
+      "TaskFactory"
+    ],
+    "right": [
+      "Void task",
+      "Result task",
+      "Start task",
+      "Create task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Monitor"
+    ],
+    "other_options": [
+      "Mutex",
+      "Semaphore",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "lock",
+      "Monitor",
+      "Mutex",
+      "Semaphore"
+    ],
+    "right": [
+      "Simple sync",
+      "Advanced sync",
+      "Process sync",
+      "Count sync"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Semaphore"
+    ],
+    "other_options": [
+      "async/await",
+      "Task.Run",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "ConfigureAwait",
+      "SynchronizationContext"
+    ],
+    "right": [
+      "Async method",
+      "Wait operation",
+      "Context control",
+      "Thread context"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Task.Run"
+    ],
+    "other_options": [
+      "lock",
+      "Monitor",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Task<T>",
+      "Task.Run",
+      "TaskFactory"
+    ],
+    "right": [
+      "Void task",
+      "Result task",
+      "Start task",
+      "Create task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Monitor"
+    ],
+    "other_options": [
+      "Mutex",
+      "Semaphore",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "lock",
+      "Monitor",
+      "Mutex",
+      "Semaphore"
+    ],
+    "right": [
+      "Simple sync",
+      "Advanced sync",
+      "Process sync",
+      "Count sync"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Semaphore"
+    ],
+    "other_options": [
+      "async/await",
+      "Task.Run",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "ConfigureAwait",
+      "SynchronizationContext"
+    ],
+    "right": [
+      "Async method",
+      "Wait operation",
+      "Context control",
+      "Thread context"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Task.Run"
+    ],
+    "other_options": [
+      "lock",
+      "Monitor",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Task<T>",
+      "Task.Run",
+      "TaskFactory"
+    ],
+    "right": [
+      "Void task",
+      "Result task",
+      "Start task",
+      "Create task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Monitor"
+    ],
+    "other_options": [
+      "Mutex",
+      "Semaphore",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "lock",
+      "Monitor",
+      "Mutex",
+      "Semaphore"
+    ],
+    "right": [
+      "Simple sync",
+      "Advanced sync",
+      "Process sync",
+      "Count sync"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Semaphore"
+    ],
+    "other_options": [
+      "async/await",
+      "Task.Run",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "ConfigureAwait",
+      "SynchronizationContext"
+    ],
+    "right": [
+      "Async method",
+      "Wait operation",
+      "Context control",
+      "Thread context"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Task.Run"
+    ],
+    "other_options": [
+      "lock",
+      "Monitor",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Task<T>",
+      "Task.Run",
+      "TaskFactory"
+    ],
+    "right": [
+      "Void task",
+      "Result task",
+      "Start task",
+      "Create task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Monitor"
+    ],
+    "other_options": [
+      "Mutex",
+      "Semaphore",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "lock",
+      "Monitor",
+      "Mutex",
+      "Semaphore"
+    ],
+    "right": [
+      "Simple sync",
+      "Advanced sync",
+      "Process sync",
+      "Count sync"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Semaphore"
+    ],
+    "other_options": [
+      "async/await",
+      "Task.Run",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "ConfigureAwait",
+      "SynchronizationContext"
+    ],
+    "right": [
+      "Async method",
+      "Wait operation",
+      "Context control",
+      "Thread context"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Task.Run"
+    ],
+    "other_options": [
+      "lock",
+      "Monitor",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Task<T>",
+      "Task.Run",
+      "TaskFactory"
+    ],
+    "right": [
+      "Void task",
+      "Result task",
+      "Start task",
+      "Create task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Monitor"
+    ],
+    "other_options": [
+      "Mutex",
+      "Semaphore",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "lock",
+      "Monitor",
+      "Mutex",
+      "Semaphore"
+    ],
+    "right": [
+      "Simple sync",
+      "Advanced sync",
+      "Process sync",
+      "Count sync"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Semaphore"
+    ],
+    "other_options": [
+      "async/await",
+      "Task.Run",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "ConfigureAwait",
+      "SynchronizationContext"
+    ],
+    "right": [
+      "Async method",
+      "Wait operation",
+      "Context control",
+      "Thread context"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Task.Run"
+    ],
+    "other_options": [
+      "lock",
+      "Monitor",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Task<T>",
+      "Task.Run",
+      "TaskFactory"
+    ],
+    "right": [
+      "Void task",
+      "Result task",
+      "Start task",
+      "Create task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Monitor"
+    ],
+    "other_options": [
+      "Mutex",
+      "Semaphore",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "lock",
+      "Monitor",
+      "Mutex",
+      "Semaphore"
+    ],
+    "right": [
+      "Simple sync",
+      "Advanced sync",
+      "Process sync",
+      "Count sync"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Semaphore"
+    ],
+    "other_options": [
+      "async/await",
+      "Task.Run",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "ConfigureAwait",
+      "SynchronizationContext"
+    ],
+    "right": [
+      "Async method",
+      "Wait operation",
+      "Context control",
+      "Thread context"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Task.Run"
+    ],
+    "other_options": [
+      "lock",
+      "Monitor",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Task<T>",
+      "Task.Run",
+      "TaskFactory"
+    ],
+    "right": [
+      "Void task",
+      "Result task",
+      "Start task",
+      "Create task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Monitor"
+    ],
+    "other_options": [
+      "Mutex",
+      "Semaphore",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "lock",
+      "Monitor",
+      "Mutex",
+      "Semaphore"
+    ],
+    "right": [
+      "Simple sync",
+      "Advanced sync",
+      "Process sync",
+      "Count sync"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Semaphore"
+    ],
+    "other_options": [
+      "async/await",
+      "Task.Run",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "ConfigureAwait",
+      "SynchronizationContext"
+    ],
+    "right": [
+      "Async method",
+      "Wait operation",
+      "Context control",
+      "Thread context"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Task.Run"
+    ],
+    "other_options": [
+      "lock",
+      "Monitor",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Task<T>",
+      "Task.Run",
+      "TaskFactory"
+    ],
+    "right": [
+      "Void task",
+      "Result task",
+      "Start task",
+      "Create task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Monitor"
+    ],
+    "other_options": [
+      "Mutex",
+      "Semaphore",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "lock",
+      "Monitor",
+      "Mutex",
+      "Semaphore"
+    ],
+    "right": [
+      "Simple sync",
+      "Advanced sync",
+      "Process sync",
+      "Count sync"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Semaphore"
+    ],
+    "other_options": [
+      "async/await",
+      "Task.Run",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "ConfigureAwait",
+      "SynchronizationContext"
+    ],
+    "right": [
+      "Async method",
+      "Wait operation",
+      "Context control",
+      "Thread context"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Task.Run"
+    ],
+    "other_options": [
+      "lock",
+      "Monitor",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Task<T>",
+      "Task.Run",
+      "TaskFactory"
+    ],
+    "right": [
+      "Void task",
+      "Result task",
+      "Start task",
+      "Create task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Monitor"
+    ],
+    "other_options": [
+      "Mutex",
+      "Semaphore",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "lock",
+      "Monitor",
+      "Mutex",
+      "Semaphore"
+    ],
+    "right": [
+      "Simple sync",
+      "Advanced sync",
+      "Process sync",
+      "Count sync"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Semaphore"
+    ],
+    "other_options": [
+      "async/await",
+      "Task.Run",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "ConfigureAwait",
+      "SynchronizationContext"
+    ],
+    "right": [
+      "Async method",
+      "Wait operation",
+      "Context control",
+      "Thread context"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Task.Run"
+    ],
+    "other_options": [
+      "lock",
+      "Monitor",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Task<T>",
+      "Task.Run",
+      "TaskFactory"
+    ],
+    "right": [
+      "Void task",
+      "Result task",
+      "Start task",
+      "Create task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Monitor"
+    ],
+    "other_options": [
+      "Mutex",
+      "Semaphore",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "lock",
+      "Monitor",
+      "Mutex",
+      "Semaphore"
+    ],
+    "right": [
+      "Simple sync",
+      "Advanced sync",
+      "Process sync",
+      "Count sync"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Semaphore"
+    ],
+    "other_options": [
+      "async/await",
+      "Task.Run",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "ConfigureAwait",
+      "SynchronizationContext"
+    ],
+    "right": [
+      "Async method",
+      "Wait operation",
+      "Context control",
+      "Thread context"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Task.Run"
+    ],
+    "other_options": [
+      "lock",
+      "Monitor",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Task<T>",
+      "Task.Run",
+      "TaskFactory"
+    ],
+    "right": [
+      "Void task",
+      "Result task",
+      "Start task",
+      "Create task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Monitor"
+    ],
+    "other_options": [
+      "Mutex",
+      "Semaphore",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "lock",
+      "Monitor",
+      "Mutex",
+      "Semaphore"
+    ],
+    "right": [
+      "Simple sync",
+      "Advanced sync",
+      "Process sync",
+      "Count sync"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Semaphore"
+    ],
+    "other_options": [
+      "async/await",
+      "Task.Run",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "ConfigureAwait",
+      "SynchronizationContext"
+    ],
+    "right": [
+      "Async method",
+      "Wait operation",
+      "Context control",
+      "Thread context"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Task.Run"
+    ],
+    "other_options": [
+      "lock",
+      "Monitor",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Task<T>",
+      "Task.Run",
+      "TaskFactory"
+    ],
+    "right": [
+      "Void task",
+      "Result task",
+      "Start task",
+      "Create task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Monitor"
+    ],
+    "other_options": [
+      "Mutex",
+      "Semaphore",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "lock",
+      "Monitor",
+      "Mutex",
+      "Semaphore"
+    ],
+    "right": [
+      "Simple sync",
+      "Advanced sync",
+      "Process sync",
+      "Count sync"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Semaphore"
+    ],
+    "other_options": [
+      "async/await",
+      "Task.Run",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "ConfigureAwait",
+      "SynchronizationContext"
+    ],
+    "right": [
+      "Async method",
+      "Wait operation",
+      "Context control",
+      "Thread context"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Task.Run"
+    ],
+    "other_options": [
+      "lock",
+      "Monitor",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Task<T>",
+      "Task.Run",
+      "TaskFactory"
+    ],
+    "right": [
+      "Void task",
+      "Result task",
+      "Start task",
+      "Create task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Monitor"
+    ],
+    "other_options": [
+      "Mutex",
+      "Semaphore",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "lock",
+      "Monitor",
+      "Mutex",
+      "Semaphore"
+    ],
+    "right": [
+      "Simple sync",
+      "Advanced sync",
+      "Process sync",
+      "Count sync"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Semaphore"
+    ],
+    "other_options": [
+      "async/await",
+      "Task.Run",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "ConfigureAwait",
+      "SynchronizationContext"
+    ],
+    "right": [
+      "Async method",
+      "Wait operation",
+      "Context control",
+      "Thread context"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Task.Run"
+    ],
+    "other_options": [
+      "lock",
+      "Monitor",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Task<T>",
+      "Task.Run",
+      "TaskFactory"
+    ],
+    "right": [
+      "Void task",
+      "Result task",
+      "Start task",
+      "Create task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Monitor"
+    ],
+    "other_options": [
+      "Mutex",
+      "Semaphore",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "lock",
+      "Monitor",
+      "Mutex",
+      "Semaphore"
+    ],
+    "right": [
+      "Simple sync",
+      "Advanced sync",
+      "Process sync",
+      "Count sync"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Semaphore"
+    ],
+    "other_options": [
+      "async/await",
+      "Task.Run",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "ConfigureAwait",
+      "SynchronizationContext"
+    ],
+    "right": [
+      "Async method",
+      "Wait operation",
+      "Context control",
+      "Thread context"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Task.Run"
+    ],
+    "other_options": [
+      "lock",
+      "Monitor",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Task<T>",
+      "Task.Run",
+      "TaskFactory"
+    ],
+    "right": [
+      "Void task",
+      "Result task",
+      "Start task",
+      "Create task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Monitor"
+    ],
+    "other_options": [
+      "Mutex",
+      "Semaphore",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "lock",
+      "Monitor",
+      "Mutex",
+      "Semaphore"
+    ],
+    "right": [
+      "Simple sync",
+      "Advanced sync",
+      "Process sync",
+      "Count sync"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Semaphore"
+    ],
+    "other_options": [
+      "async/await",
+      "Task.Run",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "ConfigureAwait",
+      "SynchronizationContext"
+    ],
+    "right": [
+      "Async method",
+      "Wait operation",
+      "Context control",
+      "Thread context"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Task.Run"
+    ],
+    "other_options": [
+      "lock",
+      "Monitor",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Task<T>",
+      "Task.Run",
+      "TaskFactory"
+    ],
+    "right": [
+      "Void task",
+      "Result task",
+      "Start task",
+      "Create task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Monitor"
+    ],
+    "other_options": [
+      "Mutex",
+      "Semaphore",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "lock",
+      "Monitor",
+      "Mutex",
+      "Semaphore"
+    ],
+    "right": [
+      "Simple sync",
+      "Advanced sync",
+      "Process sync",
+      "Count sync"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Semaphore"
+    ],
+    "other_options": [
+      "async/await",
+      "Task.Run",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "ConfigureAwait",
+      "SynchronizationContext"
+    ],
+    "right": [
+      "Async method",
+      "Wait operation",
+      "Context control",
+      "Thread context"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Task.Run"
+    ],
+    "other_options": [
+      "lock",
+      "Monitor",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Task<T>",
+      "Task.Run",
+      "TaskFactory"
+    ],
+    "right": [
+      "Void task",
+      "Result task",
+      "Start task",
+      "Create task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Monitor"
+    ],
+    "other_options": [
+      "Mutex",
+      "Semaphore",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "lock",
+      "Monitor",
+      "Mutex",
+      "Semaphore"
+    ],
+    "right": [
+      "Simple sync",
+      "Advanced sync",
+      "Process sync",
+      "Count sync"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Semaphore"
+    ],
+    "other_options": [
+      "async/await",
+      "Task.Run",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "ConfigureAwait",
+      "SynchronizationContext"
+    ],
+    "right": [
+      "Async method",
+      "Wait operation",
+      "Context control",
+      "Thread context"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Task.Run"
+    ],
+    "other_options": [
+      "lock",
+      "Monitor",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Task<T>",
+      "Task.Run",
+      "TaskFactory"
+    ],
+    "right": [
+      "Void task",
+      "Result task",
+      "Start task",
+      "Create task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Monitor"
+    ],
+    "other_options": [
+      "Mutex",
+      "Semaphore",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "lock",
+      "Monitor",
+      "Mutex",
+      "Semaphore"
+    ],
+    "right": [
+      "Simple sync",
+      "Advanced sync",
+      "Process sync",
+      "Count sync"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Semaphore"
+    ],
+    "other_options": [
+      "async/await",
+      "Task.Run",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "ConfigureAwait",
+      "SynchronizationContext"
+    ],
+    "right": [
+      "Async method",
+      "Wait operation",
+      "Context control",
+      "Thread context"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Task.Run"
+    ],
+    "other_options": [
+      "lock",
+      "Monitor",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Task<T>",
+      "Task.Run",
+      "TaskFactory"
+    ],
+    "right": [
+      "Void task",
+      "Result task",
+      "Start task",
+      "Create task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Monitor"
+    ],
+    "other_options": [
+      "Mutex",
+      "Semaphore",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "lock",
+      "Monitor",
+      "Mutex",
+      "Semaphore"
+    ],
+    "right": [
+      "Simple sync",
+      "Advanced sync",
+      "Process sync",
+      "Count sync"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Semaphore"
+    ],
+    "other_options": [
+      "async/await",
+      "Task.Run",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "ConfigureAwait",
+      "SynchronizationContext"
+    ],
+    "right": [
+      "Async method",
+      "Wait operation",
+      "Context control",
+      "Thread context"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Task.Run"
+    ],
+    "other_options": [
+      "lock",
+      "Monitor",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Task<T>",
+      "Task.Run",
+      "TaskFactory"
+    ],
+    "right": [
+      "Void task",
+      "Result task",
+      "Start task",
+      "Create task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Monitor"
+    ],
+    "other_options": [
+      "Mutex",
+      "Semaphore",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "lock",
+      "Monitor",
+      "Mutex",
+      "Semaphore"
+    ],
+    "right": [
+      "Simple sync",
+      "Advanced sync",
+      "Process sync",
+      "Count sync"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Semaphore"
+    ],
+    "other_options": [
+      "async/await",
+      "Task.Run",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "ConfigureAwait",
+      "SynchronizationContext"
+    ],
+    "right": [
+      "Async method",
+      "Wait operation",
+      "Context control",
+      "Thread context"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Task.Run"
+    ],
+    "other_options": [
+      "lock",
+      "Monitor",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Task<T>",
+      "Task.Run",
+      "TaskFactory"
+    ],
+    "right": [
+      "Void task",
+      "Result task",
+      "Start task",
+      "Create task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Monitor"
+    ],
+    "other_options": [
+      "Mutex",
+      "Semaphore",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "lock",
+      "Monitor",
+      "Mutex",
+      "Semaphore"
+    ],
+    "right": [
+      "Simple sync",
+      "Advanced sync",
+      "Process sync",
+      "Count sync"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Semaphore"
+    ],
+    "other_options": [
+      "async/await",
+      "Task.Run",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "async",
+      "await",
+      "ConfigureAwait",
+      "SynchronizationContext"
+    ],
+    "right": [
+      "Async method",
+      "Wait operation",
+      "Context control",
+      "Thread context"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  },
+  {
+    "q": "The ______ synchronizes access to shared resources.",
+    "type": "fill_blank",
+    "answers": [
+      "Task.Run"
+    ],
+    "other_options": [
+      "lock",
+      "Monitor",
+      "ThreadSync"
+    ]
+  },
+  {
+    "q": "Deadlock occurs when threads wait indefinitely.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "Match the synchronization primitives:",
+    "type": "match",
+    "left": [
+      "Task",
+      "Task<T>",
+      "Task.Run",
+      "TaskFactory"
+    ],
+    "right": [
+      "Void task",
+      "Result task",
+      "Start task",
+      "Create task"
+    ]
+  },
+  {
+    "q": "What is the output of Parallel.For?",
+    "type": "mcq",
+    "c": "int count = 0;\nParallel.For(0, 10, i => Interlocked.Increment(ref count));\nConsole.WriteLine(count);",
+    "o": [
+      "10",
+      "0",
+      "Variable",
+      "Error"
+    ]
+  },
+  {
+    "q": "Rearrange the thread-safe operation:",
+    "type": "rearrange",
+    "words": [
+      "Acquire lock",
+      "Access resource",
+      "Release lock",
+      "Continue"
+    ]
+  },
+  {
+    "q": "What is the output of CancellationToken?",
+    "type": "mcq",
+    "c": "var cts = new CancellationTokenSource();\ncts.Cancel();\nConsole.WriteLine(cts.Token.IsCancellationRequested);",
+    "o": [
+      "True",
+      "False",
+      "Error",
+      "null"
+    ]
+  },
+  {
+    "q": "ThreadPool reuses threads for better performance.",
+    "type": "true_false",
+    "correct": "True"
+  },
+  {
+    "q": "What is the output of this lock code?",
+    "type": "mcq",
+    "c": "object lockObj = new object();\nlock (lockObj) {\n    Console.WriteLine(\"Locked\");\n}",
+    "o": [
+      "Locked",
+      "Error",
+      "null",
+      "lockObj"
+    ]
+  }
+]

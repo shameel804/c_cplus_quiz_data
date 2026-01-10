@@ -1,0 +1,121 @@
+[
+    {
+        "title": "Introduction to C++",
+        "ques": "Explain **what C++ is** and mention one key feature that distinguishes it from C (other than classes).",
+        "answer": {
+            "type": "text",
+            "content": "*   **What C++ is:** C++ is a powerful, general-purpose programming language that extends C with object-oriented features, generic programming support, and a rich standard library.\n*   **Key Distinction:** C++ supports **function overloading** (multiple functions with the same name but different parameters), which C does not."
+        },
+        "explanation": "C++ was designed as an extension of C (\"C with Classes\"). It adds paradigms like OOP and Generic Programming while maintaining C's efficiency."
+    },
+    {
+        "title": "Structure of a C++ Program",
+        "ques": "Write a minimal C++ program that prints **\"Hello, World!\"** to the console using **`iostream`** and **`std::cout`**.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\n\nint main() {\n    std::cout << \"Hello, World!\" << std::endl;\n    return 0;\n}"
+        },
+        "explanation": "`#include <iostream>` is required for input/output. `std::cout` represents the standard output stream. `<<` is the insertion operator."
+    },
+    {
+        "title": "Input with cin",
+        "ques": "Write a program that asks the user for their **favorite number** (an integer) and prints it back using `std::cin` and `std::cout`.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int num;\n    cout << \"Enter your favorite number: \";\n    cin >> num;\n    cout << \"Your favorite number is \" << num << endl;\n    return 0;\n}"
+        },
+        "explanation": "`cin` is the standard input stream. `>>` is the extraction operator, used to read data from the input stream into a variable."
+    },
+    {
+        "title": "Namespaces",
+        "ques": "What is a **namespace** in C++? Write a snippet showing how to avoid writing `std::` repeatedly.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"No need for std:: prefix here\" << endl;\n    return 0;\n}"
+        },
+        "explanation": "A namespace is a declarative region that provides a scope to identifiers. `using namespace std;` brings all names from the standard namespace into the current scope."
+    },
+    {
+        "title": "Reference Variables",
+        "ques": "Explain what a **reference variable** is in C++. Create an integer `x = 10` and a reference `ref` to it. changing `ref` should change `x`.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 10;\n    int &ref = x;\n    ref = 20;\n    cout << \"x: \" << x << endl; // Prints 20\n    return 0;\n}"
+        },
+        "explanation": "A reference is an alias for an existing variable. It must be initialized when declared and cannot be changed to refer to another variable."
+    },
+    {
+        "title": "Function Overloading",
+        "ques": "Demonstrate **function overloading** by creating two `print` functions: one that takes an `int` and another that takes a `double`.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nvoid print(int i) {\n    cout << \"Integer: \" << i << endl;\n}\n\nvoid print(double d) {\n    cout << \"Double: \" << d << endl;\n}\n\nint main() {\n    print(5);\n    print(5.5);\n    return 0;\n}"
+        },
+        "explanation": "Function overloading allows multiple functions to share the same name as long as their parameter lists (types or number of arguments) are different."
+    },
+    {
+        "title": "Default Arguments",
+        "ques": "Write a function `greet` that takes a name (string) and a message (string). Make the message default to **\"Welcome\"**. Call it with and without the message.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\n#include <string>\nusing namespace std;\n\nvoid greet(string name, string msg = \"Welcome\") {\n    cout << msg << \", \" << name << endl;\n}\n\nint main() {\n    greet(\"Alice\");\n    greet(\"Bob\", \"Hello\");\n    return 0;\n}"
+        },
+        "explanation": "Default arguments allow omitting parameters in function calls. They must be specified right-to-left in the parameter list."
+    },
+    {
+        "title": "String Class",
+        "ques": "Unlike C strings, C++ has a `std::string` class. Use it to concatenate two strings \"Hello\" and \"World\" using the `+` operator.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n    string s1 = \"Hello\";\n    string s2 = \"World\";\n    string s3 = s1 + \" \" + s2;\n    cout << s3 << endl;\n    return 0;\n}"
+        },
+        "explanation": "`std::string` manages memory automatically and provides intuitive operators like `+` for concatenation and `==` for comparison."
+    },
+    {
+        "title": "Boolean Type",
+        "ques": "C++ has a built-in `bool` type. Write a program capturing a boolean value from a user's choice (0 or 1) and printing valid if true.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nint main() {\n    bool isValid;\n    cout << \"Enter 1 for true, 0 for false: \";\n    cin >> isValid;\n    if (isValid) {\n        cout << \"Valid entry\" << endl;\n    } else {\n        cout << \"Invalid entry\" << endl;\n    }\n    return 0;\n}"
+        },
+        "explanation": "`bool` stores logical values `true` (1) or `false` (0). `cin` reads an integer (0 or 1) into a bool variable typically."
+    },
+    {
+        "title": "Inline Functions",
+        "ques": "What is an **inline function**? Write a small inline function `square` that accepts an int and returns its square.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\ninline int square(int x) {\n    return x * x;\n}\n\nint main() {\n    cout << square(5) << endl;\n    return 0;\n}"
+        },
+        "explanation": "The `inline` keyword suggests to the compiler to insert the function's body directly at the call site to reduce function call overhead."
+    },
+    {
+        "title": "New and Delete",
+        "ques": "Show how to dynamically allocate memory for an integer using **`new`** and free it using **`delete`** in C++.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int *ptr = new int;\n    *ptr = 100;\n    cout << \"Value: \" << *ptr << endl;\n    delete ptr;\n    return 0;\n}"
+        },
+        "explanation": "`new` allocates memory (like malloc) and calls the constructor. `delete` frees memory (like free) and calls the destructor."
+    },
+    {
+        "title": "Scope Resolution Operator",
+        "ques": "How do you access a **global variable** if a local variable has the same name? Use the **scope resolution operator** `::`.",
+        "answer": {
+            "type": "code",
+            "lang": "cpp",
+            "content": "#include <iostream>\nusing namespace std;\n\nint x = 10; // Global\n\nint main() {\n    int x = 20; // Local\n    cout << \"Local x: \" << x << endl;\n    cout << \"Global x: \" << ::x << endl;\n    return 0;\n}"
+        },
+        "explanation": "`::` enables accessing the global namespace from within a block where a variable name is shadowed."
+    }
+]

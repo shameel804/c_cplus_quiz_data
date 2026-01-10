@@ -1,0 +1,91 @@
+{
+    "id": "learn_cpp_basics",
+    "topicId": "cpp_basics",
+    "topicTitle": "Basics of C++ and OOP",
+    "description": "Transition from C to C++ and step into the world of Object-Oriented Programming (OOP).",
+    "baseKP": 50,
+    "slides": [
+        {
+            "id": "cpp_1",
+            "type": "content",
+            "title": "Welcome to C++ ➕➕",
+            "content": "# C with Classes 🚀\n\nC++ was developed by **Bjarne Stroustrup** in 1979 at Bell Labs.\n\n## Evolution\nHe wanted the efficiency of C but with better code organization. He added **Classes**, creating \"C with Classes\", which later became C++.\n\n## Who uses it?\n- **Game Engines:** Unreal Engine, Unity (Core).\n- **High-Performance Apps:** Adobe Photoshop, Chrome Browser.\n- **Finance:** High-frequency trading platforms."
+        },
+        {
+            "id": "cpp_2",
+            "type": "content",
+            "title": "Structure of a C++ Program",
+            "content": "# Anatomy of C++ 🦴\n\nLooks similar to C, but with new friends.\n\n```cpp\n#include <iostream>\n\nusing namespace std;\n\nint main() {\n    cout << \"Hello World!\";\n    return 0;\n}\n```\n\n- `<iostream>`: Input/Output Stream (replaces `<stdio.h>`).\n- `using namespace std`: Avoids writing `std::` everywhere.\n- `cout`: Console Output.\n- `<<`: Insertion Operator."
+        },
+        {
+            "id": "cpp_3",
+            "type": "content",
+            "title": "Input and Output",
+            "content": "# The Stream Team 🌊\n\n## Output: `cout`\nUses `<<` (insertion) to send data to screen.\n```cpp\ncout << \"Age: \" << 25 << endl;\n```\n(`endl` is like `\\n` but also flushes the buffer).\n\n## Input: `cin`\nUses `>>` (extraction) to get data from keyboard.\n```cpp\nint age;\ncin >> age;\n```\nNo need for `%d` or `&` (usually)!"
+        },
+        {
+            "id": "cpp_quiz_1",
+            "type": "quiz",
+            "title": "Operator Check",
+            "content": "Which operator is used with `cin`?",
+            "quizQuestion": "Operator for cin:",
+            "quizOptions": [
+                "<<",
+                ">>",
+                "&",
+                "%"
+            ],
+            "correctOptionIndex": 1
+        },
+        {
+            "id": "cpp_4",
+            "type": "content",
+            "title": "Namespaces",
+            "content": "# Handling Names 🏷️\n\nImagine two libraries both have a function named `draw()`. Which one does the compiler use? **Namespaces** solve this.\n\n```cpp\nnamespace A {\n    void draw() { ... }\n}\nnamespace B {\n    void draw() { ... }\n}\n```\n\nThe standard library lives in the `std` namespace.\n- `std::cout`\n- `std::string`\n\n`using namespace std;` lets you skip the prefix."
+        },
+        {
+            "id": "cpp_5",
+            "type": "content",
+            "title": "Introduction to OOP",
+            "content": "# Thinking in Objects 💭\n\n**C was Procedural:** Focus on functions (actions).\n**C++ is Object-Oriented:** Focus on objects (data + actions).\n\n## Real World Analogy\nInstead of just writing code to \"drive\", we create a **Car** object that has properties (color, speed) and behaviors (accelerate, brake)."
+        },
+        {
+            "id": "cpp_6",
+            "type": "content",
+            "title": "Class and Object",
+            "content": "# The Blueprint 📝\n\n- **Class:** The blueprint or template. (e.g., \"Car\")\n- **Object:** An instance of the class. (e.g., \"My Red Toyota\")\n\n```cpp\nclass Car {\npublic:  // Access specifier\n    string brand;\n    void honk() {\n        cout << \"Beep!\";\n    }\n};\n\nint main() {\n    Car myCar; // Creating object\n    myCar.brand = \"Toyota\";\n    myCar.honk();\n}\n```"
+        },
+        {
+            "id": "cpp_7",
+            "type": "content",
+            "title": "The 4 Pillars of OOP",
+            "content": "# The Foundation 🏛️\n\n1.  **Encapsulation:** Hiding data (using `private`). Protecting different parts of the car engine from the driver.\n2.  **Abstraction:** Showing only essentials. Steering wheel is valid, internal combustion physics is hidden.\n3.  **Inheritance:** Creating new classes from existing ones. `SportsCar` inherits from `Car`.\n4.  **Polymorphism:** Same name, different forms. `move()` can mean drive for a Car, or fly for a Plane."
+        },
+        {
+            "id": "cpp_quiz_2",
+            "type": "quiz",
+            "title": "OOP Concept",
+            "content": "Which OOP concept is about wrapping data and methods into a single unit?",
+            "quizQuestion": "Concept:",
+            "quizOptions": [
+                "Inheritance",
+                "Polymorphism",
+                "Encapsulation",
+                "Abstraction"
+            ],
+            "correctOptionIndex": 2
+        },
+        {
+            "id": "cpp_8",
+            "type": "content",
+            "title": "Full Code Example",
+            "content": "# First Class\n\n<!-- FULL_CODE_START\n#include <iostream>\n#include <string>\n\nusing namespace std;\n\n// 1. Define Class\nclass Hero {\n// 2. Access Specifier\npublic:\n    string name;\n    int powerLevel;\n\n    // Method (Function inside class)\n    void attack() {\n        cout << name << \" attacks for \" << powerLevel << \" damage!\" << endl;\n    }\n    \n    void heal() {\n        cout << name << \" recovers health.\" << endl;\n    }\n};\n\nint main() {\n    cout << \"--- Game Start ---\" << endl;\n    \n    // 3. Create Objects\n    Hero h1;\n    h1.name = \"Knight\";\n    h1.powerLevel = 50;\n    \n    Hero h2;\n    h2.name = \"Mage\";\n    h2.powerLevel = 80;\n    \n    // 4. Use Objects\n    h1.attack();\n    h2.attack();\n    h1.heal();\n    \n    return 0;\n}\nFULL_CODE_END -->"
+        },
+        {
+            "id": "cpp_9",
+            "type": "content",
+            "title": "Summary",
+            "content": "# Recap: C++ Basics 🎓\n\nWelcome to the modern world!\n\n## Key Takeaways\n- **IOStream:** `cout` and `cin` make I/O easier.\n- **Namespaces:** Organize code and prevent name clashes.\n- **OOP:** A paradigm based on objects and classes.\n- **Class:** The blueprint.\n- **Object:** The real thing.\n- **Pillars:** Encapsulation, Abstraction, Inheritance, Polymorphism.\n\nNext, we will look deeper into **Classes and Objects** to build more complex structures!"
+        }
+    ]
+}
