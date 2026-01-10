@@ -1,0 +1,5897 @@
+[
+    {
+        "q": "What does C++ stand for?",
+        "type": "mcq",
+        "o": [
+            "C plus plus (an increment to C)",
+            "C with classes only",
+            "Combined programming language",
+            "Computer plus plus"
+        ]
+    },
+    {
+        "q": "Who developed the C++ programming language?",
+        "type": "mcq",
+        "o": [
+            "Bjarne Stroustrup",
+            "Dennis Ritchie",
+            "James Gosling",
+            "Guido van Rossum"
+        ]
+    },
+    {
+        "q": "C++ is an extension of which programming language?",
+        "type": "mcq",
+        "o": [
+            "C",
+            "Java",
+            "Python",
+            "BASIC"
+        ]
+    },
+    {
+        "q": "What is the file extension for C++ source files?",
+        "type": "mcq",
+        "o": [
+            ".cpp",
+            ".c",
+            ".java",
+            ".py"
+        ]
+    },
+    {
+        "q": "Which header file is used for input/output operations in C++?",
+        "type": "mcq",
+        "o": [
+            "iostream",
+            "stdio.h",
+            "conio.h",
+            "fstream"
+        ]
+    },
+    {
+        "q": "What is the correct way to output text in C++?",
+        "type": "mcq",
+        "o": [
+            "cout << \"Hello\";",
+            "printf(\"Hello\");",
+            "print(\"Hello\");",
+            "echo \"Hello\";"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello World\";\n    return 0;\n}",
+        "o": [
+            "Hello World",
+            "Hello",
+            "World",
+            "Error"
+        ]
+    },
+    {
+        "q": "What does 'endl' do in C++?",
+        "type": "mcq",
+        "o": [
+            "Inserts a new line and flushes the buffer",
+            "Ends the program",
+            "Clears the screen",
+            "Pauses execution"
+        ]
+    },
+    {
+        "q": "Which operator is used for input in C++?",
+        "type": "mcq",
+        "o": [
+            ">>",
+            "<<",
+            "->",
+            "<-"
+        ]
+    },
+    {
+        "q": "What is the correct syntax for a single-line comment in C++?",
+        "type": "mcq",
+        "o": [
+            "// comment",
+            "# comment",
+            "-- comment",
+            "/* comment"
+        ]
+    },
+    {
+        "q": "C++ is an object-oriented programming language.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The 'main' function is optional in a C++ program.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ keyword is used to define a namespace in C++.",
+        "type": "fill_blank",
+        "answers": [
+            "namespace"
+        ],
+        "other_options": [
+            "class",
+            "struct",
+            "using"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 5;\n    cout << x;\n    return 0;\n}",
+        "o": [
+            "5",
+            "x",
+            "int x",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which data type is used to store whole numbers in C++?",
+        "type": "mcq",
+        "o": [
+            "int",
+            "float",
+            "char",
+            "string"
+        ]
+    },
+    {
+        "q": "What is the size of 'int' data type in C++ on most systems?",
+        "type": "mcq",
+        "o": [
+            "4 bytes",
+            "2 bytes",
+            "8 bytes",
+            "1 byte"
+        ]
+    },
+    {
+        "q": "Which data type is used to store decimal numbers?",
+        "type": "mcq",
+        "o": [
+            "float",
+            "int",
+            "char",
+            "bool"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    double pi = 3.14;\n    cout << pi;\n    return 0;\n}",
+        "o": [
+            "3.14",
+            "3",
+            "pi",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which keyword is used to declare a constant in C++?",
+        "type": "mcq",
+        "o": [
+            "const",
+            "constant",
+            "final",
+            "static"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    char letter = 'A';\n    cout << letter;\n    return 0;\n}",
+        "o": [
+            "A",
+            "65",
+            "'A'",
+            "Error"
+        ]
+    },
+    {
+        "q": "The 'bool' data type can store only two values: true and false.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In C++, variable names can start with a number.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ operator is used for assignment in C++.",
+        "type": "fill_blank",
+        "answers": [
+            "="
+        ],
+        "other_options": [
+            "==",
+            ":=",
+            "->"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int a = 10, b = 20;\n    cout << a + b;\n    return 0;\n}",
+        "o": [
+            "30",
+            "1020",
+            "a + b",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which operator is used for multiplication in C++?",
+        "type": "mcq",
+        "o": [
+            "*",
+            "x",
+            "X",
+            "#"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 10 / 3;\n    cout << x;\n    return 0;\n}",
+        "o": [
+            "3",
+            "3.33",
+            "3.333333",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the modulus operator in C++?",
+        "type": "mcq",
+        "o": [
+            "%",
+            "/",
+            "mod",
+            "remainder"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << 10 % 3;\n    return 0;\n}",
+        "o": [
+            "1",
+            "3",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which operator is used to increment a variable by 1?",
+        "type": "mcq",
+        "o": [
+            "++",
+            "--",
+            "+=",
+            "+1"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 5;\n    x++;\n    cout << x;\n    return 0;\n}",
+        "o": [
+            "6",
+            "5",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "C++ supports both procedural and object-oriented programming.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The 'cin' object is used to display output in C++.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ statement is used to return a value from a function.",
+        "type": "fill_blank",
+        "answers": [
+            "return"
+        ],
+        "other_options": [
+            "exit",
+            "break",
+            "continue"
+        ]
+    },
+    {
+        "q": "Match the C++ data types with their descriptions:",
+        "type": "match",
+        "left": [
+            "int",
+            "float",
+            "char",
+            "bool"
+        ],
+        "right": [
+            "Whole numbers",
+            "Decimal numbers",
+            "Single character",
+            "True or false values"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 5;\n    --x;\n    cout << x;\n    return 0;\n}",
+        "o": [
+            "4",
+            "5",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which of the following is a valid variable name in C++?",
+        "type": "mcq",
+        "o": [
+            "myVar",
+            "2ndVar",
+            "my-var",
+            "my var"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Hello\" << \" \" << \"World\";\n    return 0;\n}",
+        "o": [
+            "Hello World",
+            "HelloWorld",
+            "Hello  World",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which escape sequence represents a new line in C++?",
+        "type": "mcq",
+        "o": [
+            "\\n",
+            "\\t",
+            "\\r",
+            "\\b"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << \"Line1\\nLine2\";\n    return 0;\n}",
+        "o": [
+            "Line1 on first line, Line2 on second line",
+            "Line1nLine2",
+            "Line1 Line2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which keyword is used to include a library in C++?",
+        "type": "mcq",
+        "o": [
+            "#include",
+            "import",
+            "using",
+            "require"
+        ]
+    },
+    {
+        "q": "OOP stands for Object-Oriented Programming.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In C++, all variables must be declared before use.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ keyword allows us to use names from the standard namespace without prefix.",
+        "type": "fill_blank",
+        "answers": [
+            "using"
+        ],
+        "other_options": [
+            "include",
+            "import",
+            "namespace"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int a = 5;\n    int b = a;\n    a = 10;\n    cout << b;\n    return 0;\n}",
+        "o": [
+            "5",
+            "10",
+            "15",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which symbol is used to access the standard namespace?",
+        "type": "mcq",
+        "o": [
+            "::",
+            ".",
+            "->",
+            ":"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n\nint main() {\n    std::cout << \"Hello\";\n    return 0;\n}",
+        "o": [
+            "Hello",
+            "Error",
+            "std::Hello",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Which of the following is NOT a fundamental data type in C++?",
+        "type": "mcq",
+        "o": [
+            "string",
+            "int",
+            "char",
+            "bool"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    bool flag = true;\n    cout << flag;\n    return 0;\n}",
+        "o": [
+            "1",
+            "true",
+            "True",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which header is required to use the string class in C++?",
+        "type": "mcq",
+        "o": [
+            "<string>",
+            "<cstring>",
+            "<iostream>",
+            "<text>"
+        ]
+    },
+    {
+        "q": "C++ is case-sensitive.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In C++, 'Int' and 'int' are the same.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ function is the entry point of a C++ program.",
+        "type": "fill_blank",
+        "answers": [
+            "main"
+        ],
+        "other_options": [
+            "start",
+            "begin",
+            "init"
+        ]
+    },
+    {
+        "q": "Match the C++ concepts with their meanings:",
+        "type": "match",
+        "left": [
+            "cout",
+            "cin",
+            "endl",
+            "return"
+        ],
+        "right": [
+            "Output stream",
+            "Input stream",
+            "New line and flush",
+            "Exit function with value"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n    string name = \"C++\";\n    cout << name;\n    return 0;\n}",
+        "o": [
+            "C++",
+            "name",
+            "string",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which operator is used to compare two values for equality in C++?",
+        "type": "mcq",
+        "o": [
+            "==",
+            "=",
+            "!=",
+            "==="
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << (5 == 5);\n    return 0;\n}",
+        "o": [
+            "1",
+            "true",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which operator checks if two values are NOT equal?",
+        "type": "mcq",
+        "o": [
+            "!=",
+            "==",
+            "<>",
+            "!=="
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << (5 != 3);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "true",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which logical operator represents AND in C++?",
+        "type": "mcq",
+        "o": [
+            "&&",
+            "||",
+            "&",
+            "and"
+        ]
+    },
+    {
+        "q": "Encapsulation is one of the pillars of OOP.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The 'double' data type can store larger decimal values than 'float'.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ logical operator represents OR in C++.",
+        "type": "fill_blank",
+        "answers": [
+            "||"
+        ],
+        "other_options": [
+            "&&",
+            "!",
+            "or"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << (true && false);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "false",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << (true || false);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "true",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which operator is used for logical NOT in C++?",
+        "type": "mcq",
+        "o": [
+            "!",
+            "~",
+            "not",
+            "-"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    cout << !true;\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "false",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which statement is used for decision making in C++?",
+        "type": "mcq",
+        "o": [
+            "if",
+            "loop",
+            "case",
+            "decide"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 10;\n    if (x > 5) {\n        cout << \"Big\";\n    }\n    return 0;\n}",
+        "o": [
+            "Big",
+            "Nothing",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Inheritance allows a class to inherit properties from another class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The 'else' keyword can be used without an 'if' statement in C++.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ keyword is used to create a class in C++.",
+        "type": "fill_blank",
+        "answers": [
+            "class"
+        ],
+        "other_options": [
+            "struct",
+            "object",
+            "type"
+        ]
+    },
+    {
+        "q": "Match the OOP concepts with their descriptions:",
+        "type": "match",
+        "left": [
+            "Encapsulation",
+            "Inheritance",
+            "Polymorphism",
+            "Abstraction"
+        ],
+        "right": [
+            "Bundling data and methods",
+            "Deriving from base class",
+            "Many forms of a function",
+            "Hiding implementation details"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 3;\n    if (x > 5) {\n        cout << \"Big\";\n    } else {\n        cout << \"Small\";\n    }\n    return 0;\n}",
+        "o": [
+            "Small",
+            "Big",
+            "Nothing",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which loop is used when the number of iterations is known?",
+        "type": "mcq",
+        "o": [
+            "for loop",
+            "while loop",
+            "do-while loop",
+            "infinite loop"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    for (int i = 0; i < 3; i++) {\n        cout << i;\n    }\n    return 0;\n}",
+        "o": [
+            "012",
+            "123",
+            "0123",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which loop always executes at least once?",
+        "type": "mcq",
+        "o": [
+            "do-while loop",
+            "for loop",
+            "while loop",
+            "None of these"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int i = 0;\n    while (i < 3) {\n        cout << i;\n        i++;\n    }\n    return 0;\n}",
+        "o": [
+            "012",
+            "123",
+            "0123",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which statement is used to exit a loop early?",
+        "type": "mcq",
+        "o": [
+            "break",
+            "continue",
+            "exit",
+            "stop"
+        ]
+    },
+    {
+        "q": "Polymorphism means having many forms.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The 'continue' statement terminates the entire loop.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ statement skips the current iteration and moves to the next.",
+        "type": "fill_blank",
+        "answers": [
+            "continue"
+        ],
+        "other_options": [
+            "break",
+            "skip",
+            "next"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    for (int i = 0; i < 5; i++) {\n        if (i == 3) break;\n        cout << i;\n    }\n    return 0;\n}",
+        "o": [
+            "012",
+            "0123",
+            "01234",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    for (int i = 0; i < 5; i++) {\n        if (i == 2) continue;\n        cout << i;\n    }\n    return 0;\n}",
+        "o": [
+            "0134",
+            "01234",
+            "0124",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is a function in C++?",
+        "type": "mcq",
+        "o": [
+            "A block of reusable code",
+            "A variable type",
+            "A loop structure",
+            "A data type"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nvoid greet() {\n    cout << \"Hello\";\n}\n\nint main() {\n    greet();\n    return 0;\n}",
+        "o": [
+            "Hello",
+            "greet",
+            "Nothing",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which keyword indicates that a function does not return a value?",
+        "type": "mcq",
+        "o": [
+            "void",
+            "null",
+            "none",
+            "empty"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint add(int a, int b) {\n    return a + b;\n}\n\nint main() {\n    cout << add(3, 4);\n    return 0;\n}",
+        "o": [
+            "7",
+            "34",
+            "a + b",
+            "Error"
+        ]
+    },
+    {
+        "q": "An object is an instance of a class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A function can have only one return statement.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ specifier makes class members accessible from anywhere.",
+        "type": "fill_blank",
+        "answers": [
+            "public"
+        ],
+        "other_options": [
+            "private",
+            "protected",
+            "global"
+        ]
+    },
+    {
+        "q": "Rearrange the C++ program structure in correct order:",
+        "type": "rearrange",
+        "words": [
+            "Include headers",
+            "Using namespace",
+            "Function definitions",
+            "Main function",
+            "Return statement"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint square(int x) {\n    return x * x;\n}\n\nint main() {\n    cout << square(5);\n    return 0;\n}",
+        "o": [
+            "25",
+            "10",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which is the correct way to declare an array of 5 integers?",
+        "type": "mcq",
+        "o": [
+            "int arr[5];",
+            "int arr(5);",
+            "array int[5];",
+            "int[5] arr;"
+        ]
+    },
+    {
+        "q": "What is the index of the first element in a C++ array?",
+        "type": "mcq",
+        "o": [
+            "0",
+            "1",
+            "-1",
+            "It depends"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int arr[3] = {10, 20, 30};\n    cout << arr[1];\n    return 0;\n}",
+        "o": [
+            "20",
+            "10",
+            "30",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the C++ keywords with their purposes:",
+        "type": "match",
+        "left": [
+            "const",
+            "void",
+            "return",
+            "using"
+        ],
+        "right": [
+            "Constant value",
+            "No return type",
+            "Exit with value",
+            "Import namespace"
+        ]
+    },
+    {
+        "q": "What is a pointer in C++?",
+        "type": "mcq",
+        "o": [
+            "A variable that stores a memory address",
+            "A type of array",
+            "A function parameter",
+            "A loop counter"
+        ]
+    },
+    {
+        "q": "Which operator is used to get the address of a variable?",
+        "type": "mcq",
+        "o": [
+            "&",
+            "*",
+            "@",
+            "#"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 10;\n    cout << &x;\n    return 0;\n}",
+        "o": [
+            "Memory address of x",
+            "10",
+            "x",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which operator is used to dereference a pointer?",
+        "type": "mcq",
+        "o": [
+            "*",
+            "&",
+            "->",
+            "::"
+        ]
+    },
+    {
+        "q": "What is a reference in C++?",
+        "type": "mcq",
+        "o": [
+            "An alias for another variable",
+            "A pointer to a variable",
+            "A copy of a variable",
+            "A constant value"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int a = 5;\n    int& ref = a;\n    ref = 10;\n    cout << a;\n    return 0;\n}",
+        "o": [
+            "10",
+            "5",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "Which symbol is used to declare a reference variable?",
+        "type": "mcq",
+        "o": [
+            "&",
+            "*",
+            "@",
+            "ref"
+        ]
+    },
+    {
+        "q": "What is function overloading in C++?",
+        "type": "mcq",
+        "o": [
+            "Multiple functions with same name but different parameters",
+            "A function calling itself",
+            "A function with no parameters",
+            "A function with default values"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint add(int a, int b) { return a + b; }\ndouble add(double a, double b) { return a + b; }\n\nint main() {\n    cout << add(3, 4);\n    return 0;\n}",
+        "o": [
+            "7",
+            "7.0",
+            "Error",
+            "3"
+        ]
+    },
+    {
+        "q": "A reference must be initialized when declared.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Function overloading is an example of compile-time polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ keyword is used to provide default values to function parameters.",
+        "type": "fill_blank",
+        "answers": [
+            "="
+        ],
+        "other_options": [
+            "default",
+            "value",
+            "init"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nvoid greet(string name = \"World\") {\n    cout << \"Hello \" << name;\n}\n\nint main() {\n    greet();\n    return 0;\n}",
+        "o": [
+            "Hello World",
+            "Hello",
+            "Error",
+            "Hello name"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nvoid greet(string name = \"World\") {\n    cout << \"Hello \" << name;\n}\n\nint main() {\n    greet(\"C++\");\n    return 0;\n}",
+        "o": [
+            "Hello C++",
+            "Hello World",
+            "Error",
+            "Hello"
+        ]
+    },
+    {
+        "q": "What is the ternary operator in C++?",
+        "type": "mcq",
+        "o": [
+            "? :",
+            "&&",
+            "||",
+            "=="
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 5;\n    string result = (x > 3) ? \"Yes\" : \"No\";\n    cout << result;\n    return 0;\n}",
+        "o": [
+            "Yes",
+            "No",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which keyword is used to define a structure in C++?",
+        "type": "mcq",
+        "o": [
+            "struct",
+            "structure",
+            "class",
+            "record"
+        ]
+    },
+    {
+        "q": "What is the default access specifier for struct members in C++?",
+        "type": "mcq",
+        "o": [
+            "public",
+            "private",
+            "protected",
+            "default"
+        ]
+    },
+    {
+        "q": "What is the default access specifier for class members in C++?",
+        "type": "mcq",
+        "o": [
+            "private",
+            "public",
+            "protected",
+            "default"
+        ]
+    },
+    {
+        "q": "A class in C++ is a blueprint for creating objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In C++, struct and class are exactly the same.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ specifier restricts access to class members from outside the class.",
+        "type": "fill_blank",
+        "answers": [
+            "private"
+        ],
+        "other_options": [
+            "public",
+            "protected",
+            "hidden"
+        ]
+    },
+    {
+        "q": "Match the access specifiers with their visibility:",
+        "type": "match",
+        "left": [
+            "public",
+            "private",
+            "protected"
+        ],
+        "right": [
+            "Accessible everywhere",
+            "Only within the class",
+            "Within class and derived classes"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass MyClass {\npublic:\n    int x = 10;\n};\n\nint main() {\n    MyClass obj;\n    cout << obj.x;\n    return 0;\n}",
+        "o": [
+            "10",
+            "x",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "Which operator is used to access members of an object?",
+        "type": "mcq",
+        "o": [
+            ".",
+            "->",
+            "::",
+            "&"
+        ]
+    },
+    {
+        "q": "What is a constructor in C++?",
+        "type": "mcq",
+        "o": [
+            "A special function called when an object is created",
+            "A function that destroys objects",
+            "A regular member function",
+            "A static function"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Test {\npublic:\n    Test() {\n        cout << \"Created\";\n    }\n};\n\nint main() {\n    Test t;\n    return 0;\n}",
+        "o": [
+            "Created",
+            "Nothing",
+            "Error",
+            "Test"
+        ]
+    },
+    {
+        "q": "A constructor has the same name as the class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A constructor can have a return type.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ is a special member function that is called when an object goes out of scope.",
+        "type": "fill_blank",
+        "answers": [
+            "destructor"
+        ],
+        "other_options": [
+            "constructor",
+            "finalizer",
+            "deleter"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Test {\npublic:\n    ~Test() {\n        cout << \"Destroyed\";\n    }\n};\n\nint main() {\n    Test t;\n    return 0;\n}",
+        "o": [
+            "Destroyed",
+            "Nothing",
+            "Error",
+            "Test"
+        ]
+    },
+    {
+        "q": "Which symbol precedes the destructor name?",
+        "type": "mcq",
+        "o": [
+            "~",
+            "!",
+            "@",
+            "#"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Counter {\npublic:\n    int count;\n    Counter(int c) { count = c; }\n};\n\nint main() {\n    Counter c(5);\n    cout << c.count;\n    return 0;\n}",
+        "o": [
+            "5",
+            "0",
+            "Error",
+            "count"
+        ]
+    },
+    {
+        "q": "What is the 'this' pointer in C++?",
+        "type": "mcq",
+        "o": [
+            "A pointer to the current object",
+            "A pointer to the parent class",
+            "A null pointer",
+            "A pointer to the main function"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Test {\npublic:\n    int x;\n    void setX(int x) {\n        this->x = x;\n    }\n};\n\nint main() {\n    Test t;\n    t.setX(20);\n    cout << t.x;\n    return 0;\n}",
+        "o": [
+            "20",
+            "0",
+            "Error",
+            "x"
+        ]
+    },
+    {
+        "q": "The 'this' pointer is automatically passed to all non-static member functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Static member functions have a 'this' pointer.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ keyword is used to declare a member that belongs to the class rather than instances.",
+        "type": "fill_blank",
+        "answers": [
+            "static"
+        ],
+        "other_options": [
+            "const",
+            "global",
+            "shared"
+        ]
+    },
+    {
+        "q": "Match the C++ class components with their purposes:",
+        "type": "match",
+        "left": [
+            "Constructor",
+            "Destructor",
+            "this pointer",
+            "static member"
+        ],
+        "right": [
+            "Initialize object",
+            "Clean up resources",
+            "Reference current object",
+            "Shared across instances"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Counter {\npublic:\n    static int count;\n};\n\nint Counter::count = 0;\n\nint main() {\n    Counter::count++;\n    cout << Counter::count;\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "Error",
+            "count"
+        ]
+    },
+    {
+        "q": "How is a static member variable initialized outside the class?",
+        "type": "mcq",
+        "o": [
+            "ClassName::variableName = value;",
+            "static ClassName::variableName = value;",
+            "variableName = value;",
+            "ClassName.variableName = value;"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint getValue() {\n    static int x = 0;\n    x++;\n    return x;\n}\n\nint main() {\n    cout << getValue() << getValue();\n    return 0;\n}",
+        "o": [
+            "12",
+            "11",
+            "01",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is an inline function in C++?",
+        "type": "mcq",
+        "o": [
+            "A function whose code is inserted at the call site",
+            "A function defined inside main",
+            "A function with no body",
+            "A recursive function"
+        ]
+    },
+    {
+        "q": "Which keyword is used to suggest a function should be inlined?",
+        "type": "mcq",
+        "o": [
+            "inline",
+            "define",
+            "macro",
+            "expand"
+        ]
+    },
+    {
+        "q": "Inline functions reduce function call overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The compiler is required to always inline functions marked with 'inline'.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ is a mechanism to hide internal implementation details.",
+        "type": "fill_blank",
+        "answers": [
+            "encapsulation"
+        ],
+        "other_options": [
+            "inheritance",
+            "polymorphism",
+            "abstraction"
+        ]
+    },
+    {
+        "q": "What is a getter function?",
+        "type": "mcq",
+        "o": [
+            "A function that returns the value of a private member",
+            "A function that sets a value",
+            "A constructor",
+            "A destructor"
+        ]
+    },
+    {
+        "q": "What is a setter function?",
+        "type": "mcq",
+        "o": [
+            "A function that modifies the value of a private member",
+            "A function that returns a value",
+            "A constructor",
+            "A static function"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Box {\nprivate:\n    int length;\npublic:\n    void setLength(int l) { length = l; }\n    int getLength() { return length; }\n};\n\nint main() {\n    Box b;\n    b.setLength(10);\n    cout << b.getLength();\n    return 0;\n}",
+        "o": [
+            "10",
+            "0",
+            "Error",
+            "length"
+        ]
+    },
+    {
+        "q": "What is inheritance in C++?",
+        "type": "mcq",
+        "o": [
+            "A mechanism where one class inherits features from another",
+            "Creating multiple objects",
+            "Function overloading",
+            "Data hiding"
+        ]
+    },
+    {
+        "q": "Which symbol is used to specify inheritance in C++?",
+        "type": "mcq",
+        "o": [
+            ":",
+            "->",
+            "::",
+            "."
+        ]
+    },
+    {
+        "q": "The class being inherited from is called the base class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A derived class cannot access private members of the base class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ class inherits properties from the base class.",
+        "type": "fill_blank",
+        "answers": [
+            "derived"
+        ],
+        "other_options": [
+            "parent",
+            "super",
+            "child"
+        ]
+    },
+    {
+        "q": "Match the inheritance types with their descriptions:",
+        "type": "match",
+        "left": [
+            "Single",
+            "Multiple",
+            "Multilevel",
+            "Hierarchical"
+        ],
+        "right": [
+            "One base, one derived",
+            "Multiple base classes",
+            "Chain of inheritance",
+            "Multiple derived from one base"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Animal {\npublic:\n    void speak() { cout << \"Animal\"; }\n};\n\nclass Dog : public Animal {\n};\n\nint main() {\n    Dog d;\n    d.speak();\n    return 0;\n}",
+        "o": [
+            "Animal",
+            "Dog",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Animal {\npublic:\n    void speak() { cout << \"Animal\"; }\n};\n\nclass Dog : public Animal {\npublic:\n    void speak() { cout << \"Dog\"; }\n};\n\nint main() {\n    Dog d;\n    d.speak();\n    return 0;\n}",
+        "o": [
+            "Dog",
+            "Animal",
+            "AnimalDog",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is method overriding?",
+        "type": "mcq",
+        "o": [
+            "Redefining a base class method in the derived class",
+            "Creating multiple functions with same name",
+            "Calling parent class method",
+            "Making a method static"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    int x = 5;\n};\n\nclass Derived : public Base {\npublic:\n    int y = 10;\n};\n\nint main() {\n    Derived d;\n    cout << d.x + d.y;\n    return 0;\n}",
+        "o": [
+            "15",
+            "5",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Protected members are accessible in derived classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Private members of a base class become protected in the derived class.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ access specifier allows access in derived classes but not outside.",
+        "type": "fill_blank",
+        "answers": [
+            "protected"
+        ],
+        "other_options": [
+            "private",
+            "public",
+            "internal"
+        ]
+    },
+    {
+        "q": "What is virtual function?",
+        "type": "mcq",
+        "o": [
+            "A function that can be overridden in derived class for runtime polymorphism",
+            "A function that cannot be overridden",
+            "A static function",
+            "An inline function"
+        ]
+    },
+    {
+        "q": "Which keyword is used to declare a virtual function?",
+        "type": "mcq",
+        "o": [
+            "virtual",
+            "override",
+            "abstract",
+            "dynamic"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void show() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\npublic:\n    void show() { cout << \"Derived\"; }\n};\n\nint main() {\n    Base* ptr = new Derived();\n    ptr->show();\n    return 0;\n}",
+        "o": [
+            "Derived",
+            "Base",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Virtual functions enable runtime polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Constructors can be virtual in C++.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ keyword can be used to explicitly mark a function as overriding a virtual function.",
+        "type": "fill_blank",
+        "answers": [
+            "override"
+        ],
+        "other_options": [
+            "virtual",
+            "final",
+            "new"
+        ]
+    },
+    {
+        "q": "Match the polymorphism types with their examples:",
+        "type": "match",
+        "left": [
+            "Compile-time",
+            "Runtime",
+            "Function overloading",
+            "Virtual functions"
+        ],
+        "right": [
+            "Static binding",
+            "Dynamic binding",
+            "Same name different params",
+            "Base pointer derived object"
+        ]
+    },
+    {
+        "q": "What is an abstract class?",
+        "type": "mcq",
+        "o": [
+            "A class with at least one pure virtual function",
+            "A class with no members",
+            "A class that cannot have constructors",
+            "A class with only static members"
+        ]
+    },
+    {
+        "q": "What is a pure virtual function?",
+        "type": "mcq",
+        "o": [
+            "A virtual function with = 0",
+            "A virtual destructor",
+            "A function with no parameters",
+            "A function returning void"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Shape {\npublic:\n    virtual void draw() = 0;\n};\n\nclass Circle : public Shape {\npublic:\n    void draw() { cout << \"Circle\"; }\n};\n\nint main() {\n    Circle c;\n    c.draw();\n    return 0;\n}",
+        "o": [
+            "Circle",
+            "Shape",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "An abstract class cannot be instantiated.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A class with all pure virtual functions is called an interface.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ assignment sets a virtual function to have no implementation in the base class.",
+        "type": "fill_blank",
+        "answers": [
+            "= 0"
+        ],
+        "other_options": [
+            "= null",
+            "= void",
+            "= abstract"
+        ]
+    },
+    {
+        "q": "What is operator overloading?",
+        "type": "mcq",
+        "o": [
+            "Giving new meaning to existing operators for user-defined types",
+            "Creating new operators",
+            "Overloading functions",
+            "Using multiple operators"
+        ]
+    },
+    {
+        "q": "Which keyword is used to overload an operator?",
+        "type": "mcq",
+        "o": [
+            "operator",
+            "overload",
+            "op",
+            "override"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Point {\npublic:\n    int x, y;\n    Point(int a, int b) : x(a), y(b) {}\n    Point operator+(Point p) {\n        return Point(x + p.x, y + p.y);\n    }\n};\n\nint main() {\n    Point p1(1, 2), p2(3, 4);\n    Point p3 = p1 + p2;\n    cout << p3.x << p3.y;\n    return 0;\n}",
+        "o": [
+            "46",
+            "14",
+            "Error",
+            "12"
+        ]
+    },
+    {
+        "q": "The scope resolution operator (::) can be overloaded.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The assignment operator (=) can be overloaded.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ keyword in the constructor initializer list is used to initialize member variables.",
+        "type": "fill_blank",
+        "answers": [
+            ":"
+        ],
+        "other_options": [
+            "=",
+            "->",
+            "::"
+        ]
+    },
+    {
+        "q": "What is a copy constructor?",
+        "type": "mcq",
+        "o": [
+            "A constructor that creates a copy of an existing object",
+            "A default constructor",
+            "A parameterized constructor",
+            "A destructor"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Test {\npublic:\n    int x;\n    Test(int val) : x(val) {}\n    Test(const Test& t) : x(t.x) { cout << \"Copy\"; }\n};\n\nint main() {\n    Test t1(5);\n    Test t2 = t1;\n    return 0;\n}",
+        "o": [
+            "Copy",
+            "Nothing",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the special member functions with their triggers:",
+        "type": "match",
+        "left": [
+            "Constructor",
+            "Copy constructor",
+            "Destructor",
+            "Assignment operator"
+        ],
+        "right": [
+            "Object creation",
+            "Initialize from existing",
+            "Object destruction",
+            "Assign existing to existing"
+        ]
+    },
+    {
+        "q": "What is a friend function?",
+        "type": "mcq",
+        "o": [
+            "A non-member function that can access private members",
+            "A member function",
+            "A static function",
+            "A virtual function"
+        ]
+    },
+    {
+        "q": "Which keyword is used to declare a friend function?",
+        "type": "mcq",
+        "o": [
+            "friend",
+            "friendly",
+            "access",
+            "allow"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Test {\nprivate:\n    int x = 10;\n    friend void show(Test t);\n};\n\nvoid show(Test t) {\n    cout << t.x;\n}\n\nint main() {\n    Test t;\n    show(t);\n    return 0;\n}",
+        "o": [
+            "10",
+            "Error",
+            "0",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Friend functions violate encapsulation partially.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A friend function is a member of the class.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ keyword allows one class to access private members of another class.",
+        "type": "fill_blank",
+        "answers": [
+            "friend"
+        ],
+        "other_options": [
+            "public",
+            "access",
+            "allow"
+        ]
+    },
+    {
+        "q": "Rearrange the OOP concepts from basic to advanced:",
+        "type": "rearrange",
+        "words": [
+            "Class definition",
+            "Object creation",
+            "Encapsulation",
+            "Inheritance",
+            "Polymorphism"
+        ]
+    },
+    {
+        "q": "What is a const member function?",
+        "type": "mcq",
+        "o": [
+            "A function that cannot modify member variables",
+            "A function that returns a constant",
+            "A function with constant parameters",
+            "A static function"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Test {\npublic:\n    int x = 10;\n    int getX() const { return x; }\n};\n\nint main() {\n    const Test t;\n    cout << t.getX();\n    return 0;\n}",
+        "o": [
+            "10",
+            "Error",
+            "0",
+            "x"
+        ]
+    },
+    {
+        "q": "Where is the const keyword placed in a const member function declaration?",
+        "type": "mcq",
+        "o": [
+            "After the parameter list",
+            "Before the return type",
+            "Before the function name",
+            "After the function name"
+        ]
+    },
+    {
+        "q": "A const object can only call const member functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mutable members can be modified by const member functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the mutable keyword used for in C++?",
+        "type": "mcq",
+        "o": [
+            "To allow modification of a member even in const member functions",
+            "To make a variable constant",
+            "To create a static variable",
+            "To declare a volatile variable"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Test {\nmutable int count;\npublic:\n    Test() : count(0) {}\n    void increment() const { count++; }\n    int getCount() const { return count; }\n};\n\nint main() {\n    const Test t;\n    t.increment();\n    cout << t.getCount();\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "What is a namespace in C++?",
+        "type": "mcq",
+        "o": [
+            "A declarative region to organize code and prevent name conflicts",
+            "A type of class",
+            "A header file",
+            "A macro definition"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n\nnamespace MySpace {\n    int x = 10;\n}\n\nint main() {\n    std::cout << MySpace::x;\n    return 0;\n}",
+        "o": [
+            "10",
+            "Error",
+            "x",
+            "0"
+        ]
+    },
+    {
+        "q": "What does the 'new' keyword do in C++?",
+        "type": "mcq",
+        "o": [
+            "Allocates memory on the heap and returns a pointer",
+            "Creates a new variable on the stack",
+            "Declares a new class",
+            "Initializes a constructor"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int* p = new int(5);\n    cout << *p;\n    delete p;\n    return 0;\n}",
+        "o": [
+            "5",
+            "Memory address",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "Nested namespaces are supported in C++.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The 'delete' operator is used to free stack memory.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ keyword is used to deallocate dynamically allocated memory.",
+        "type": "fill_blank",
+        "answers": [
+            "delete"
+        ],
+        "other_options": [
+            "free",
+            "remove",
+            "destroy"
+        ]
+    },
+    {
+        "q": "Match the memory allocation methods:",
+        "type": "match",
+        "left": [
+            "new",
+            "delete",
+            "new[]",
+            "delete[]"
+        ],
+        "right": [
+            "Single object allocation",
+            "Single object deallocation",
+            "Array allocation",
+            "Array deallocation"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int* arr = new int[3]{1, 2, 3};\n    cout << arr[1];\n    delete[] arr;\n    return 0;\n}",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the difference between 'delete' and 'delete[]'?",
+        "type": "mcq",
+        "o": [
+            "delete is for single objects, delete[] is for arrays",
+            "They are identical",
+            "delete[] is faster",
+            "delete is for arrays, delete[] is for single objects"
+        ]
+    },
+    {
+        "q": "What is a memory leak?",
+        "type": "mcq",
+        "o": [
+            "Allocated memory that is never freed",
+            "Accessing freed memory",
+            "Stack overflow",
+            "Buffer underflow"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    int a;\nprotected:\n    int b;\nprivate:\n    int c;\n};\n\nclass Derived : public Base {\npublic:\n    void setB(int val) { b = val; }\n    int getB() { return b; }\n};\n\nint main() {\n    Derived d;\n    d.setB(20);\n    cout << d.getB();\n    return 0;\n}",
+        "o": [
+            "20",
+            "Error",
+            "0",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "Memory leaks can cause programs to consume more and more memory over time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Protected members of a base class become private in a derived class with private inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ casting operator is used for safe type conversions between related types.",
+        "type": "fill_blank",
+        "answers": [
+            "dynamic_cast"
+        ],
+        "other_options": [
+            "static_cast",
+            "reinterpret_cast",
+            "const_cast"
+        ]
+    },
+    {
+        "q": "What is static_cast used for?",
+        "type": "mcq",
+        "o": [
+            "Compile-time type conversions with some type checking",
+            "Runtime polymorphic type checking",
+            "Removing const qualifier",
+            "Low-level bit reinterpretation"
+        ]
+    },
+    {
+        "q": "What is dynamic_cast used for?",
+        "type": "mcq",
+        "o": [
+            "Safe downcasting in polymorphic class hierarchies",
+            "Converting integers to pointers",
+            "Removing const from a variable",
+            "Compile-time type checking only"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    double d = 3.14;\n    int i = static_cast<int>(d);\n    cout << i;\n    return 0;\n}",
+        "o": [
+            "3",
+            "3.14",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "const_cast can only add or remove const qualifier.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "reinterpret_cast is the safest type of cast in C++.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ cast performs no type checking at runtime.",
+        "type": "fill_blank",
+        "answers": [
+            "static_cast"
+        ],
+        "other_options": [
+            "dynamic_cast",
+            "reinterpret_cast",
+            "safe_cast"
+        ]
+    },
+    {
+        "q": "Match the C++ casts with their purposes:",
+        "type": "match",
+        "left": [
+            "static_cast",
+            "dynamic_cast",
+            "const_cast",
+            "reinterpret_cast"
+        ],
+        "right": [
+            "Compile-time conversions",
+            "Runtime polymorphic casts",
+            "Add/remove const",
+            "Low-level bit manipulation"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void show() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\npublic:\n    void show() override { cout << \"Derived\"; }\n};\n\nint main() {\n    Base* bPtr = new Derived();\n    Derived* dPtr = dynamic_cast<Derived*>(bPtr);\n    if (dPtr) dPtr->show();\n    delete bPtr;\n    return 0;\n}",
+        "o": [
+            "Derived",
+            "Base",
+            "Nothing",
+            "Error"
+        ]
+    },
+    {
+        "q": "What happens if dynamic_cast fails on a pointer?",
+        "type": "mcq",
+        "o": [
+            "It returns nullptr",
+            "It throws an exception",
+            "The program crashes",
+            "It returns the original pointer"
+        ]
+    },
+    {
+        "q": "What happens if dynamic_cast fails on a reference?",
+        "type": "mcq",
+        "o": [
+            "It throws std::bad_cast",
+            "It returns nullptr",
+            "The program continues normally",
+            "It returns a default reference"
+        ]
+    },
+    {
+        "q": "What is RTTI in C++?",
+        "type": "mcq",
+        "o": [
+            "Runtime Type Information",
+            "Real Time Type Interface",
+            "Reference Type Type Information",
+            "Runtime Template Type Interface"
+        ]
+    },
+    {
+        "q": "dynamic_cast requires RTTI to be enabled.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "typeid can be used without virtual functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ operator is used to get type information at runtime.",
+        "type": "fill_blank",
+        "answers": [
+            "typeid"
+        ],
+        "other_options": [
+            "typeof",
+            "typeinfo",
+            "gettype"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <typeinfo>\nusing namespace std;\n\nint main() {\n    int x = 5;\n    cout << typeid(x).name();\n    return 0;\n}",
+        "o": [
+            "i or int (compiler dependent)",
+            "5",
+            "Error",
+            "x"
+        ]
+    },
+    {
+        "q": "What is a virtual destructor?",
+        "type": "mcq",
+        "o": [
+            "A destructor declared with virtual keyword for proper cleanup in polymorphism",
+            "A destructor that does nothing",
+            "A destructor for virtual classes only",
+            "A destructor that cannot be called"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual ~Base() { cout << \"B\"; }\n};\n\nclass Derived : public Base {\npublic:\n    ~Derived() { cout << \"D\"; }\n};\n\nint main() {\n    Base* ptr = new Derived();\n    delete ptr;\n    return 0;\n}",
+        "o": [
+            "DB",
+            "B",
+            "D",
+            "BD"
+        ]
+    },
+    {
+        "q": "Base class destructors should be virtual when using polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A virtual destructor makes the class abstract.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ keyword prevents a class from being inherited.",
+        "type": "fill_blank",
+        "answers": [
+            "final"
+        ],
+        "other_options": [
+            "sealed",
+            "static",
+            "const"
+        ]
+    },
+    {
+        "q": "Match the class design patterns with their uses:",
+        "type": "match",
+        "left": [
+            "Virtual destructor",
+            "Pure virtual function",
+            "final class",
+            "Abstract class"
+        ],
+        "right": [
+            "Proper polymorphic cleanup",
+            "Force implementation in derived",
+            "Prevent inheritance",
+            "Cannot be instantiated"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Final final {\npublic:\n    void show() { cout << \"Final\"; }\n};\n\nint main() {\n    Final f;\n    f.show();\n    return 0;\n}",
+        "o": [
+            "Final",
+            "Error",
+            "Nothing",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "What is function hiding in C++?",
+        "type": "mcq",
+        "o": [
+            "When a derived class function hides all base class functions with the same name",
+            "Making a function private",
+            "Deleting a function",
+            "Using static functions"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    void func(int x) { cout << \"Base\" << x; }\n};\n\nclass Derived : public Base {\npublic:\n    void func(double x) { cout << \"Derived\" << x; }\n};\n\nint main() {\n    Derived d;\n    d.func(5);\n    return 0;\n}",
+        "o": [
+            "Derived5",
+            "Base5",
+            "Error",
+            "Derived5.0"
+        ]
+    },
+    {
+        "q": "The 'using' declaration can bring hidden base class functions into scope.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Function hiding and function overriding are the same thing.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ declaration brings a base class member into the derived class scope.",
+        "type": "fill_blank",
+        "answers": [
+            "using"
+        ],
+        "other_options": [
+            "import",
+            "include",
+            "inherit"
+        ]
+    },
+    {
+        "q": "What is the diamond problem in C++?",
+        "type": "mcq",
+        "o": [
+            "Ambiguity when a class inherits from two classes that share a common base",
+            "A syntax error in class definition",
+            "A memory management issue",
+            "A problem with pointers"
+        ]
+    },
+    {
+        "q": "What is a virtual base class?",
+        "type": "mcq",
+        "o": [
+            "A base class inherited with 'virtual' to solve diamond problem",
+            "A class with virtual functions only",
+            "An abstract class",
+            "A class with no members"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    int x = 10;\n};\n\nclass B : virtual public A {};\nclass C : virtual public A {};\nclass D : public B, public C {};\n\nint main() {\n    D d;\n    cout << d.x;\n    return 0;\n}",
+        "o": [
+            "10",
+            "Error (ambiguous)",
+            "20",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "Virtual inheritance solves the diamond problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual base class is the same as abstract class.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ problem occurs when two derived classes inherit from the same base class.",
+        "type": "fill_blank",
+        "answers": [
+            "diamond"
+        ],
+        "other_options": [
+            "circular",
+            "inheritance",
+            "ambiguity"
+        ]
+    },
+    {
+        "q": "Match the inheritance concepts with descriptions:",
+        "type": "match",
+        "left": [
+            "Diamond problem",
+            "Virtual base class",
+            "Multiple inheritance",
+            "Hybrid inheritance"
+        ],
+        "right": [
+            "Ambiguity from shared base",
+            "Single instance of base",
+            "Inheriting from multiple classes",
+            "Combination of inheritance types"
+        ]
+    },
+    {
+        "q": "What is object slicing in C++?",
+        "type": "mcq",
+        "o": [
+            "When derived class object is assigned to base class object, losing derived members",
+            "Splitting an object into parts",
+            "Memory fragmentation",
+            "Dividing arrays"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    int a = 1;\n};\n\nclass Derived : public Base {\npublic:\n    int b = 2;\n};\n\nint main() {\n    Derived d;\n    Base b = d;\n    cout << sizeof(b);\n    return 0;\n}",
+        "o": [
+            "4 (only Base::a remains)",
+            "8",
+            "Error",
+            "12"
+        ]
+    },
+    {
+        "q": "Object slicing can be prevented by using pointers or references.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Object slicing occurs with pass by reference.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ specifier makes a function available only within the translation unit.",
+        "type": "fill_blank",
+        "answers": [
+            "static"
+        ],
+        "other_options": [
+            "private",
+            "internal",
+            "local"
+        ]
+    },
+    {
+        "q": "What is the 'explicit' keyword used for?",
+        "type": "mcq",
+        "o": [
+            "To prevent implicit type conversions in constructors",
+            "To make constructors public",
+            "To create virtual constructors",
+            "To force destructor call"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Test {\npublic:\n    explicit Test(int x) { cout << x; }\n};\n\nint main() {\n    Test t = 5;\n    return 0;\n}",
+        "o": [
+            "Compilation error",
+            "5",
+            "0",
+            "Runtime error"
+        ]
+    },
+    {
+        "q": "The 'explicit' keyword can be used with conversion operators.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "All single-argument constructors should be declared explicit.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ class cannot be copied.",
+        "type": "fill_blank",
+        "answers": [
+            "non-copyable"
+        ],
+        "other_options": [
+            "final",
+            "abstract",
+            "static"
+        ]
+    },
+    {
+        "q": "Match constructor types with their characteristics:",
+        "type": "match",
+        "left": [
+            "Default constructor",
+            "Parameterized constructor",
+            "Copy constructor",
+            "Move constructor"
+        ],
+        "right": [
+            "No arguments",
+            "Takes arguments",
+            "Takes const reference",
+            "Takes rvalue reference"
+        ]
+    },
+    {
+        "q": "What is a delegating constructor?",
+        "type": "mcq",
+        "o": [
+            "A constructor that calls another constructor of the same class",
+            "A constructor in a derived class",
+            "A private constructor",
+            "A virtual constructor"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Test {\npublic:\n    int x, y;\n    Test(int a) : Test(a, 0) {}\n    Test(int a, int b) : x(a), y(b) {}\n};\n\nint main() {\n    Test t(5);\n    cout << t.x << t.y;\n    return 0;\n}",
+        "o": [
+            "50",
+            "55",
+            "Error",
+            "00"
+        ]
+    },
+    {
+        "q": "Delegating constructors were introduced in C++11.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A delegating constructor can also have an initializer list for members.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ constructor takes an rvalue reference parameter.",
+        "type": "fill_blank",
+        "answers": [
+            "move"
+        ],
+        "other_options": [
+            "copy",
+            "default",
+            "transfer"
+        ]
+    },
+    {
+        "q": "What is an aggregate in C++?",
+        "type": "mcq",
+        "o": [
+            "A class or array with no user-declared constructors and all public members",
+            "A template class",
+            "An abstract class",
+            "A final class"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nstruct Point {\n    int x, y;\n};\n\nint main() {\n    Point p = {3, 4};\n    cout << p.x << p.y;\n    return 0;\n}",
+        "o": [
+            "34",
+            "Error",
+            "00",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "Aggregate initialization uses curly braces.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A class with a private member is an aggregate.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ initialization syntax uses curly braces and was improved in C++11.",
+        "type": "fill_blank",
+        "answers": [
+            "brace"
+        ],
+        "other_options": [
+            "parenthesis",
+            "bracket",
+            "uniform"
+        ]
+    },
+    {
+        "q": "Match the initialization styles with their syntax:",
+        "type": "match",
+        "left": [
+            "Direct initialization",
+            "Copy initialization",
+            "Brace initialization",
+            "Default initialization"
+        ],
+        "right": [
+            "Type name(value)",
+            "Type name = value",
+            "Type name{value}",
+            "Type name;"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <initializer_list>\nusing namespace std;\n\nclass Container {\npublic:\n    Container(initializer_list<int> list) {\n        for (int x : list) cout << x;\n    }\n};\n\nint main() {\n    Container c = {1, 2, 3};\n    return 0;\n}",
+        "o": [
+            "123",
+            "Error",
+            "{1, 2, 3}",
+            "321"
+        ]
+    },
+    {
+        "q": "What is std::initializer_list?",
+        "type": "mcq",
+        "o": [
+            "A lightweight proxy for accessing a list of elements in braced initializers",
+            "A container class",
+            "A template parameter",
+            "A function type"
+        ]
+    },
+    {
+        "q": "std::initializer_list can be modified after creation.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Narrowing conversions are allowed in brace initialization.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ keyword is used to infer the type of a variable from its initializer.",
+        "type": "fill_blank",
+        "answers": [
+            "auto"
+        ],
+        "other_options": [
+            "var",
+            "let",
+            "infer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    auto x = 5;\n    auto y = 3.14;\n    cout << sizeof(x) << sizeof(y);\n    return 0;\n}",
+        "o": [
+            "48 (int and double sizes)",
+            "44",
+            "88",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is decltype used for?",
+        "type": "mcq",
+        "o": [
+            "To deduce the type of an expression",
+            "To declare a variable",
+            "To define a type alias",
+            "To cast a variable"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 5;\n    decltype(x) y = 10;\n    cout << y;\n    return 0;\n}",
+        "o": [
+            "10",
+            "5",
+            "Error",
+            "x"
+        ]
+    },
+    {
+        "q": "auto requires an initializer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "decltype requires an initializer for the expression.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Rearrange the C++ type deduction features from oldest to newest:",
+        "type": "rearrange",
+        "words": [
+            "sizeof",
+            "typeid",
+            "auto",
+            "decltype",
+            "decltype(auto)"
+        ]
+    },
+    {
+        "q": "What is a range-based for loop?",
+        "type": "mcq",
+        "o": [
+            "A loop that iterates over all elements of a container",
+            "A loop with a fixed range",
+            "A loop that counts from 0",
+            "A loop with break conditions"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    vector<int> v = {1, 2, 3};\n    for (auto x : v) cout << x;\n    return 0;\n}",
+        "o": [
+            "123",
+            "Error",
+            "321",
+            "0"
+        ]
+    },
+    {
+        "q": "Range-based for loops require the container to have begin() and end().",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Modifying elements in range-based for requires using a reference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ keyword is used to declare a constant expression that is evaluated at compile time.",
+        "type": "fill_blank",
+        "answers": [
+            "constexpr"
+        ],
+        "other_options": [
+            "const",
+            "static",
+            "inline"
+        ]
+    },
+    {
+        "q": "Match the modern C++ features with their uses:",
+        "type": "match",
+        "left": [
+            "auto",
+            "decltype",
+            "constexpr",
+            "nullptr"
+        ],
+        "right": [
+            "Type inference",
+            "Type extraction",
+            "Compile-time evaluation",
+            "Null pointer constant"
+        ]
+    },
+    {
+        "q": "What is nullptr?",
+        "type": "mcq",
+        "o": [
+            "A type-safe null pointer constant",
+            "A macro for 0",
+            "A void pointer",
+            "An empty string"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nvoid func(int x) { cout << \"int\"; }\nvoid func(int* x) { cout << \"ptr\"; }\n\nint main() {\n    func(nullptr);\n    return 0;\n}",
+        "o": [
+            "ptr",
+            "int",
+            "Error (ambiguous)",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "nullptr is preferred over NULL in modern C++.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "nullptr has type void*.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is a lambda expression in C++?",
+        "type": "mcq",
+        "o": [
+            "An anonymous function object that can be defined inline",
+            "A named function",
+            "A macro definition",
+            "A template function"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    auto add = [](int a, int b) { return a + b; };\n    cout << add(3, 4);\n    return 0;\n}",
+        "o": [
+            "7",
+            "Error",
+            "34",
+            "add"
+        ]
+    },
+    {
+        "q": "What does the capture clause of a lambda specify?",
+        "type": "mcq",
+        "o": [
+            "Which variables from the enclosing scope are accessible in the lambda",
+            "The return type of the lambda",
+            "The parameters of the lambda",
+            "The body of the lambda"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 5;\n    auto f = [x]() { return x * 2; };\n    x = 10;\n    cout << f();\n    return 0;\n}",
+        "o": [
+            "10",
+            "20",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Lambda expressions were introduced in C++11.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lambdas captured by value can modify the captured variables by default.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ keyword allows a lambda to modify captured-by-value variables.",
+        "type": "fill_blank",
+        "answers": [
+            "mutable"
+        ],
+        "other_options": [
+            "const",
+            "static",
+            "volatile"
+        ]
+    },
+    {
+        "q": "Match the lambda capture modes:",
+        "type": "match",
+        "left": [
+            "[=]",
+            "[&]",
+            "[x]",
+            "[&x]"
+        ],
+        "right": [
+            "Capture all by value",
+            "Capture all by reference",
+            "Capture x by value",
+            "Capture x by reference"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 5;\n    auto f = [&x]() { x++; };\n    f();\n    cout << x;\n    return 0;\n}",
+        "o": [
+            "6",
+            "5",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 5;\n    auto f = [x]() mutable { return ++x; };\n    cout << f() << x;\n    return 0;\n}",
+        "o": [
+            "65",
+            "66",
+            "55",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is an rvalue in C++?",
+        "type": "mcq",
+        "o": [
+            "A temporary value that does not have a persistent memory location",
+            "A value on the left side of assignment",
+            "A reference to a variable",
+            "A constant value"
+        ]
+    },
+    {
+        "q": "What is an lvalue in C++?",
+        "type": "mcq",
+        "o": [
+            "An expression that refers to a memory location",
+            "A literal value",
+            "A temporary value",
+            "A function return value"
+        ]
+    },
+    {
+        "q": "An rvalue reference is declared with &&.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lvalues can be bound to rvalue references.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ function converts an lvalue to an rvalue reference.",
+        "type": "fill_blank",
+        "answers": [
+            "std::move"
+        ],
+        "other_options": [
+            "std::forward",
+            "std::ref",
+            "std::transfer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <utility>\nusing namespace std;\n\nvoid process(int& x) { cout << \"L\"; }\nvoid process(int&& x) { cout << \"R\"; }\n\nint main() {\n    int a = 5;\n    process(a);\n    process(10);\n    return 0;\n}",
+        "o": [
+            "LR",
+            "LL",
+            "RR",
+            "RL"
+        ]
+    },
+    {
+        "q": "What is move semantics?",
+        "type": "mcq",
+        "o": [
+            "Transferring resources from one object to another instead of copying",
+            "Moving objects in memory",
+            "Copying objects efficiently",
+            "Deleting unused objects"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <vector>\n#include <utility>\nusing namespace std;\n\nint main() {\n    vector<int> v1 = {1, 2, 3};\n    vector<int> v2 = move(v1);\n    cout << v1.size() << v2.size();\n    return 0;\n}",
+        "o": [
+            "03",
+            "33",
+            "30",
+            "Error"
+        ]
+    },
+    {
+        "q": "Move semantics improve performance for expensive copy operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "After std::move, the source object is always in an undefined state.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ is called when a temporary or moved object is used for initialization.",
+        "type": "fill_blank",
+        "answers": [
+            "move constructor"
+        ],
+        "other_options": [
+            "copy constructor",
+            "default constructor",
+            "destructor"
+        ]
+    },
+    {
+        "q": "Match the value categories:",
+        "type": "match",
+        "left": [
+            "lvalue",
+            "prvalue",
+            "xvalue",
+            "glvalue"
+        ],
+        "right": [
+            "Named object with address",
+            "Pure rvalue",
+            "Expiring value",
+            "Generalized lvalue"
+        ]
+    },
+    {
+        "q": "What is perfect forwarding?",
+        "type": "mcq",
+        "o": [
+            "Preserving the value category when forwarding arguments to another function",
+            "Copying all arguments",
+            "Moving all arguments",
+            "Converting types automatically"
+        ]
+    },
+    {
+        "q": "What is the purpose of std::forward?",
+        "type": "mcq",
+        "o": [
+            "To conditionally cast to rvalue reference based on the original value category",
+            "To always move the argument",
+            "To always copy the argument",
+            "To delete the argument"
+        ]
+    },
+    {
+        "q": "Perfect forwarding requires universal references.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::forward is typically used with variadic templates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ reference type is used for perfect forwarding in templates.",
+        "type": "fill_blank",
+        "answers": [
+            "universal"
+        ],
+        "other_options": [
+            "rvalue",
+            "lvalue",
+            "const"
+        ]
+    },
+    {
+        "q": "What is RAII in C++?",
+        "type": "mcq",
+        "o": [
+            "Resource Acquisition Is Initialization - resource management tied to object lifetime",
+            "Random Access Input Interface",
+            "Reference And Indirect Initialization",
+            "Runtime Access In Inheritance"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Resource {\npublic:\n    Resource() { cout << \"A\"; }\n    ~Resource() { cout << \"D\"; }\n};\n\nint main() {\n    {\n        Resource r;\n    }\n    cout << \"E\";\n    return 0;\n}",
+        "o": [
+            "ADE",
+            "AED",
+            "DAE",
+            "EAD"
+        ]
+    },
+    {
+        "q": "RAII ensures resources are released when objects go out of scope.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Smart pointers are an example of RAII.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ smart pointer has exclusive ownership of the managed object.",
+        "type": "fill_blank",
+        "answers": [
+            "unique_ptr"
+        ],
+        "other_options": [
+            "shared_ptr",
+            "weak_ptr",
+            "auto_ptr"
+        ]
+    },
+    {
+        "q": "Match the smart pointers with their characteristics:",
+        "type": "match",
+        "left": [
+            "unique_ptr",
+            "shared_ptr",
+            "weak_ptr"
+        ],
+        "right": [
+            "Exclusive ownership",
+            "Shared ownership with reference counting",
+            "Non-owning observer"
+        ]
+    },
+    {
+        "q": "What is std::unique_ptr?",
+        "type": "mcq",
+        "o": [
+            "A smart pointer with exclusive ownership that cannot be copied",
+            "A pointer that can be shared",
+            "A weak reference to an object",
+            "A raw pointer wrapper"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <memory>\nusing namespace std;\n\nint main() {\n    unique_ptr<int> p1 = make_unique<int>(42);\n    cout << *p1;\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "Memory address",
+            "0"
+        ]
+    },
+    {
+        "q": "unique_ptr can be copied.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "unique_ptr can be moved.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ function creates a unique_ptr in a safer way than using new.",
+        "type": "fill_blank",
+        "answers": [
+            "make_unique"
+        ],
+        "other_options": [
+            "new",
+            "create_unique",
+            "unique_new"
+        ]
+    },
+    {
+        "q": "What is std::shared_ptr?",
+        "type": "mcq",
+        "o": [
+            "A smart pointer with shared ownership using reference counting",
+            "A pointer with exclusive ownership",
+            "A weak reference pointer",
+            "A raw pointer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <memory>\nusing namespace std;\n\nint main() {\n    shared_ptr<int> p1 = make_shared<int>(10);\n    shared_ptr<int> p2 = p1;\n    cout << p1.use_count();\n    return 0;\n}",
+        "o": [
+            "2",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "shared_ptr uses reference counting to manage the lifetime of the object.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Circular references with shared_ptr can cause memory leaks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ is used to break circular references between shared_ptr.",
+        "type": "fill_blank",
+        "answers": [
+            "weak_ptr"
+        ],
+        "other_options": [
+            "unique_ptr",
+            "raw_ptr",
+            "safe_ptr"
+        ]
+    },
+    {
+        "q": "What is std::weak_ptr?",
+        "type": "mcq",
+        "o": [
+            "A non-owning reference to an object managed by shared_ptr",
+            "A smart pointer with exclusive ownership",
+            "A pointer that owns the object",
+            "A deprecated pointer type"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <memory>\nusing namespace std;\n\nint main() {\n    weak_ptr<int> wp;\n    {\n        shared_ptr<int> sp = make_shared<int>(5);\n        wp = sp;\n    }\n    cout << wp.expired();\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "Error",
+            "5"
+        ]
+    },
+    {
+        "q": "weak_ptr must be converted to shared_ptr to access the managed object.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "weak_ptr increases the reference count of shared_ptr.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ method checks if the object managed by weak_ptr still exists.",
+        "type": "fill_blank",
+        "answers": [
+            "expired"
+        ],
+        "other_options": [
+            "valid",
+            "exists",
+            "active"
+        ]
+    },
+    {
+        "q": "Rearrange the RAII ownership from weakest to strongest:",
+        "type": "rearrange",
+        "words": [
+            "Raw pointer",
+            "weak_ptr",
+            "shared_ptr",
+            "unique_ptr"
+        ]
+    },
+    {
+        "q": "What is constexpr?",
+        "type": "mcq",
+        "o": [
+            "A specifier indicating the value can be computed at compile time",
+            "A constant variable only",
+            "A runtime constant",
+            "A macro definition"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nconstexpr int square(int x) {\n    return x * x;\n}\n\nint main() {\n    constexpr int result = square(5);\n    cout << result;\n    return 0;\n}",
+        "o": [
+            "25",
+            "Error",
+            "5",
+            "10"
+        ]
+    },
+    {
+        "q": "constexpr functions can be evaluated at compile time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A constexpr function must always be evaluated at compile time.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ keyword in C++20 ensures a function is always evaluated at compile time.",
+        "type": "fill_blank",
+        "answers": [
+            "consteval"
+        ],
+        "other_options": [
+            "constexpr",
+            "const",
+            "constinit"
+        ]
+    },
+    {
+        "q": "Match the modern C++ keywords with their purposes:",
+        "type": "match",
+        "left": [
+            "constexpr",
+            "consteval",
+            "constinit",
+            "const"
+        ],
+        "right": [
+            "Can be compile-time",
+            "Must be compile-time",
+            "Static initialization",
+            "Runtime constant"
+        ]
+    },
+    {
+        "q": "What is std::function?",
+        "type": "mcq",
+        "o": [
+            "A general-purpose polymorphic function wrapper",
+            "A pointer to a function",
+            "A lambda expression",
+            "A template function"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <functional>\nusing namespace std;\n\nint add(int a, int b) { return a + b; }\n\nint main() {\n    function<int(int, int)> f = add;\n    cout << f(3, 4);\n    return 0;\n}",
+        "o": [
+            "7",
+            "Error",
+            "34",
+            "add"
+        ]
+    },
+    {
+        "q": "std::function can wrap lambdas, function pointers, and functors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::function has zero overhead compared to direct function calls.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ stores a callable object along with its arguments for later invocation.",
+        "type": "fill_blank",
+        "answers": [
+            "std::bind"
+        ],
+        "other_options": [
+            "std::function",
+            "std::invoke",
+            "std::call"
+        ]
+    },
+    {
+        "q": "What is a functor in C++?",
+        "type": "mcq",
+        "o": [
+            "A class that overloads the function call operator ()",
+            "A pointer to a function",
+            "A lambda expression",
+            "A template function"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nstruct Multiply {\n    int factor;\n    Multiply(int f) : factor(f) {}\n    int operator()(int x) { return x * factor; }\n};\n\nint main() {\n    Multiply m(3);\n    cout << m(4);\n    return 0;\n}",
+        "o": [
+            "12",
+            "3",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Functors can maintain state between calls.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lambdas are implemented as functors internally.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ header provides function wrappers and binders.",
+        "type": "fill_blank",
+        "answers": [
+            "functional"
+        ],
+        "other_options": [
+            "function",
+            "callable",
+            "invoke"
+        ]
+    },
+    {
+        "q": "Match the callable types:",
+        "type": "match",
+        "left": [
+            "Function pointer",
+            "Lambda",
+            "Functor",
+            "std::function"
+        ],
+        "right": [
+            "Raw pointer to function",
+            "Anonymous function object",
+            "Class with operator()",
+            "Type-erased wrapper"
+        ]
+    },
+    {
+        "q": "What is type aliasing in C++?",
+        "type": "mcq",
+        "o": [
+            "Creating an alternative name for an existing type",
+            "Casting between types",
+            "Creating a new type",
+            "Hiding a type"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nusing IntVec = vector<int>;\n\nint main() {\n    IntVec v = {1, 2, 3};\n    cout << v.size();\n    return 0;\n}",
+        "o": [
+            "3",
+            "Error",
+            "0",
+            "IntVec"
+        ]
+    },
+    {
+        "q": "The using keyword can create template type aliases.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "typedef and using are completely interchangeable in all cases.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ keyword is the modern way to create type aliases.",
+        "type": "fill_blank",
+        "answers": [
+            "using"
+        ],
+        "other_options": [
+            "typedef",
+            "alias",
+            "define"
+        ]
+    },
+    {
+        "q": "What is a variadic template?",
+        "type": "mcq",
+        "o": [
+            "A template that accepts a variable number of type parameters",
+            "A template with one parameter",
+            "A non-template function",
+            "A macro with variable arguments"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\ntemplate<typename... Args>\nint count(Args... args) {\n    return sizeof...(args);\n}\n\nint main() {\n    cout << count(1, 2, 3, 4);\n    return 0;\n}",
+        "o": [
+            "4",
+            "10",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Variadic templates were introduced in C++11.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "sizeof... returns the size of all arguments combined.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ operator is used to expand parameter packs.",
+        "type": "fill_blank",
+        "answers": [
+            "..."
+        ],
+        "other_options": [
+            "*",
+            "**",
+            "&&"
+        ]
+    },
+    {
+        "q": "Match template concepts:",
+        "type": "match",
+        "left": [
+            "Parameter pack",
+            "sizeof...",
+            "Fold expression",
+            "Pack expansion"
+        ],
+        "right": [
+            "Variable number of params",
+            "Count of parameters",
+            "Reduce pack to value",
+            "Apply to each element"
+        ]
+    },
+    {
+        "q": "What is a fold expression in C++?",
+        "type": "mcq",
+        "o": [
+            "An expression that reduces a parameter pack using an operator",
+            "A way to iterate over an array",
+            "A ternary operator",
+            "A comparison expression"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\ntemplate<typename... Args>\nauto sum(Args... args) {\n    return (args + ...);\n}\n\nint main() {\n    cout << sum(1, 2, 3, 4);\n    return 0;\n}",
+        "o": [
+            "10",
+            "4",
+            "1234",
+            "Error"
+        ]
+    },
+    {
+        "q": "Fold expressions were introduced in C++17.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A fold expression requires at least one element in the pack for unary folds.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ attribute tells the compiler a function has no return.",
+        "type": "fill_blank",
+        "answers": [
+            "[[noreturn]]"
+        ],
+        "other_options": [
+            "[[void]]",
+            "[[never]]",
+            "[[exit]]"
+        ]
+    },
+    {
+        "q": "What is the [[nodiscard]] attribute used for?",
+        "type": "mcq",
+        "o": [
+            "To warn if the return value is ignored",
+            "To prevent function from being called",
+            "To make return value optional",
+            "To discard the return value"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\n[[nodiscard]] int getValue() {\n    return 42;\n}\n\nint main() {\n    int x = getValue();\n    cout << x;\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "Warning only",
+            "0"
+        ]
+    },
+    {
+        "q": "[[deprecated]] marks a function as not recommended for use.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "[[maybe_unused]] suppresses warnings for unused variables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ attribute indicates a switch case falls through intentionally.",
+        "type": "fill_blank",
+        "answers": [
+            "[[fallthrough]]"
+        ],
+        "other_options": [
+            "[[continue]]",
+            "[[pass]]",
+            "[[through]]"
+        ]
+    },
+    {
+        "q": "Rearrange the C++ standards from oldest to newest:",
+        "type": "rearrange",
+        "words": [
+            "C++98",
+            "C++11",
+            "C++14",
+            "C++17",
+            "C++20"
+        ]
+    },
+    {
+        "q": "What is structured binding in C++17?",
+        "type": "mcq",
+        "o": [
+            "A way to decompose objects into individual named variables",
+            "A way to create structures",
+            "A way to bind functions",
+            "A type of template"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <tuple>\nusing namespace std;\n\nint main() {\n    auto [a, b] = make_tuple(1, 2);\n    cout << a << b;\n    return 0;\n}",
+        "o": [
+            "12",
+            "Error",
+            "21",
+            "tuple"
+        ]
+    },
+    {
+        "q": "Structured bindings can be used with arrays.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Structured bindings require C++17 or later.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ statement allows initialization in if conditions.",
+        "type": "fill_blank",
+        "answers": [
+            "if"
+        ],
+        "other_options": [
+            "switch",
+            "while",
+            "for"
+        ]
+    },
+    {
+        "q": "What is if with initializer in C++17?",
+        "type": "mcq",
+        "o": [
+            "An if statement that allows variable declaration before the condition",
+            "A loop with initialization",
+            "A switch with initialization",
+            "A function with parameters"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <map>\nusing namespace std;\n\nint main() {\n    map<int, int> m = {{1, 10}};\n    if (auto it = m.find(1); it != m.end()) {\n        cout << it->second;\n    }\n    return 0;\n}",
+        "o": [
+            "10",
+            "1",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "What is std::optional?",
+        "type": "mcq",
+        "o": [
+            "A wrapper that may or may not contain a value",
+            "A pointer type",
+            "A nullable reference",
+            "A variant type"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <optional>\nusing namespace std;\n\nint main() {\n    optional<int> opt = 42;\n    cout << opt.has_value() << *opt;\n    return 0;\n}",
+        "o": [
+            "142",
+            "042",
+            "Error",
+            "42"
+        ]
+    },
+    {
+        "q": "std::optional was introduced in C++17.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Dereferencing an empty optional is undefined behavior.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ method safely retrieves the value from optional with a default.",
+        "type": "fill_blank",
+        "answers": [
+            "value_or"
+        ],
+        "other_options": [
+            "get_or",
+            "value",
+            "default"
+        ]
+    },
+    {
+        "q": "Match the C++17 vocabulary types:",
+        "type": "match",
+        "left": [
+            "optional",
+            "variant",
+            "any",
+            "string_view"
+        ],
+        "right": [
+            "May contain value",
+            "Type-safe union",
+            "Any type holder",
+            "Non-owning string reference"
+        ]
+    },
+    {
+        "q": "What is std::variant?",
+        "type": "mcq",
+        "o": [
+            "A type-safe union that can hold one of several specified types",
+            "A pointer to multiple types",
+            "A template for variants",
+            "A variadic template"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <variant>\nusing namespace std;\n\nint main() {\n    variant<int, string> v = 42;\n    cout << get<int>(v);\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "0",
+            "int"
+        ]
+    },
+    {
+        "q": "std::get on variant throws if the wrong type is requested.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::variant can be default-constructed with the first type.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ function checks which type is currently stored in variant.",
+        "type": "fill_blank",
+        "answers": [
+            "index"
+        ],
+        "other_options": [
+            "type",
+            "which",
+            "current"
+        ]
+    },
+    {
+        "q": "What is std::any?",
+        "type": "mcq",
+        "o": [
+            "A container that can hold a value of any type",
+            "A pointer to void",
+            "A template type",
+            "A variant with unlimited types"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <any>\nusing namespace std;\n\nint main() {\n    any a = 42;\n    cout << any_cast<int>(a);\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "0",
+            "any"
+        ]
+    },
+    {
+        "q": "std::any_cast throws std::bad_any_cast on type mismatch.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::any has no storage limit.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ is a non-owning reference to a string or substring.",
+        "type": "fill_blank",
+        "answers": [
+            "string_view"
+        ],
+        "other_options": [
+            "string_ref",
+            "string_span",
+            "string_ptr"
+        ]
+    },
+    {
+        "q": "What is std::string_view?",
+        "type": "mcq",
+        "o": [
+            "A lightweight non-owning view of a contiguous sequence of characters",
+            "A mutable string wrapper",
+            "A string pointer",
+            "A substring class"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <string_view>\nusing namespace std;\n\nint main() {\n    string_view sv = \"Hello World\";\n    cout << sv.substr(0, 5);\n    return 0;\n}",
+        "o": [
+            "Hello",
+            "Hello World",
+            "Error",
+            "World"
+        ]
+    },
+    {
+        "q": "string_view can modify the underlying string.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "string_view is safer than raw char* pointers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ functions provide parallel execution policies for algorithms.",
+        "type": "fill_blank",
+        "answers": [
+            "execution"
+        ],
+        "other_options": [
+            "parallel",
+            "async",
+            "thread"
+        ]
+    },
+    {
+        "q": "Match the C++17 features with their purposes:",
+        "type": "match",
+        "left": [
+            "if constexpr",
+            "inline variables",
+            "fold expressions",
+            "class template deduction"
+        ],
+        "right": [
+            "Compile-time if",
+            "Header-only globals",
+            "Pack operations",
+            "Auto template args"
+        ]
+    },
+    {
+        "q": "What is if constexpr?",
+        "type": "mcq",
+        "o": [
+            "A compile-time branch that discards the false path",
+            "A runtime if statement",
+            "A constexpr variable",
+            "A loop construct"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\ntemplate<typename T>\nvoid print(T x) {\n    if constexpr (is_integral_v<T>) {\n        cout << \"Int:\" << x;\n    } else {\n        cout << \"Other:\" << x;\n    }\n}\n\nint main() {\n    print(42);\n    return 0;\n}",
+        "o": [
+            "Int:42",
+            "Other:42",
+            "Error",
+            "42"
+        ]
+    },
+    {
+        "q": "if constexpr can eliminate template instantiation errors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "if constexpr branches are evaluated at runtime.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ keyword allows inline definition of variables in headers.",
+        "type": "fill_blank",
+        "answers": [
+            "inline"
+        ],
+        "other_options": [
+            "static",
+            "extern",
+            "const"
+        ]
+    },
+    {
+        "q": "What is SFINAE in C++?",
+        "type": "mcq",
+        "o": [
+            "Substitution Failure Is Not An Error - template deduction rule",
+            "A type of exception",
+            "A memory allocation strategy",
+            "A design pattern"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <type_traits>\nusing namespace std;\n\ntemplate<typename T, enable_if_t<is_integral_v<T>, bool> = true>\nvoid process(T x) { cout << \"Int\"; }\n\ntemplate<typename T, enable_if_t<!is_integral_v<T>, bool> = true>\nvoid process(T x) { cout << \"Other\"; }\n\nint main() {\n    process(3.14);\n    return 0;\n}",
+        "o": [
+            "Other",
+            "Int",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "SFINAE allows template overload based on type traits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Concepts in C++20 replace the need for SFINAE in many cases.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ header provides type checking utilities like is_integral.",
+        "type": "fill_blank",
+        "answers": [
+            "type_traits"
+        ],
+        "other_options": [
+            "typeinfo",
+            "traits",
+            "types"
+        ]
+    },
+    {
+        "q": "Match the type traits categories:",
+        "type": "match",
+        "left": [
+            "is_integral",
+            "is_pointer",
+            "is_same",
+            "is_base_of"
+        ],
+        "right": [
+            "Check if integer type",
+            "Check if pointer type",
+            "Check type equality",
+            "Check inheritance relationship"
+        ]
+    },
+    {
+        "q": "What are concepts in C++20?",
+        "type": "mcq",
+        "o": [
+            "Named boolean predicates that constrain template parameters",
+            "A new type of class",
+            "A documentation feature",
+            "A runtime check"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <concepts>\nusing namespace std;\n\ntemplate<integral T>\nvoid show(T x) { cout << x; }\n\nint main() {\n    show(42);\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "int",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Concepts provide clearer error messages than SFINAE.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Concepts can be combined with && and ||.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ keyword defines a concept in C++20.",
+        "type": "fill_blank",
+        "answers": [
+            "concept"
+        ],
+        "other_options": [
+            "requires",
+            "constraint",
+            "define"
+        ]
+    },
+    {
+        "q": "What is a requires clause?",
+        "type": "mcq",
+        "o": [
+            "A clause that specifies constraints on template parameters",
+            "A return statement",
+            "An import statement",
+            "A class declaration"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\ntemplate<typename T>\nrequires requires(T x) { x + x; }\nvoid add(T x) { cout << x + x; }\n\nint main() {\n    add(5);\n    return 0;\n}",
+        "o": [
+            "10",
+            "5",
+            "Error",
+            "55"
+        ]
+    },
+    {
+        "q": "requires expressions can check for valid expressions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Concepts were introduced in C++17.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ module system was introduced in C++20.",
+        "type": "fill_blank",
+        "answers": [
+            "modules"
+        ],
+        "other_options": [
+            "import",
+            "package",
+            "include"
+        ]
+    },
+    {
+        "q": "Match the C++20 features:",
+        "type": "match",
+        "left": [
+            "Concepts",
+            "Ranges",
+            "Coroutines",
+            "Modules"
+        ],
+        "right": [
+            "Template constraints",
+            "Lazy composition",
+            "Async functions",
+            "Compile units"
+        ]
+    },
+    {
+        "q": "What are coroutines in C++20?",
+        "type": "mcq",
+        "o": [
+            "Functions that can suspend and resume execution",
+            "Multi-threaded functions",
+            "Recursive functions",
+            "Inline functions"
+        ]
+    },
+    {
+        "q": "What is co_await used for?",
+        "type": "mcq",
+        "o": [
+            "To suspend a coroutine until an awaitable completes",
+            "To start a new thread",
+            "To lock a mutex",
+            "To end a function"
+        ]
+    },
+    {
+        "q": "Coroutines use co_await, co_yield, or co_return.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Coroutines in C++ are stackless.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ keyword yields a value from a coroutine.",
+        "type": "fill_blank",
+        "answers": [
+            "co_yield"
+        ],
+        "other_options": [
+            "yield",
+            "return",
+            "co_return"
+        ]
+    },
+    {
+        "q": "What are ranges in C++20?",
+        "type": "mcq",
+        "o": [
+            "A library for composable, lazy sequence operations",
+            "Array size limits",
+            "Loop boundaries",
+            "Number intervals"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <ranges>\n#include <vector>\nusing namespace std;\n\nint main() {\n    vector<int> v = {1, 2, 3, 4, 5};\n    for (int x : v | views::take(3)) cout << x;\n    return 0;\n}",
+        "o": [
+            "123",
+            "12345",
+            "345",
+            "Error"
+        ]
+    },
+    {
+        "q": "Range views are evaluated lazily.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The pipe operator (|) is used to chain range views.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ namespace contains range views in C++20.",
+        "type": "fill_blank",
+        "answers": [
+            "views"
+        ],
+        "other_options": [
+            "ranges",
+            "range",
+            "view"
+        ]
+    },
+    {
+        "q": "Rearrange the range operations from input to output:",
+        "type": "rearrange",
+        "words": [
+            "Source range",
+            "filter",
+            "transform",
+            "take",
+            "Output"
+        ]
+    },
+    {
+        "q": "What is std::span?",
+        "type": "mcq",
+        "o": [
+            "A non-owning view over a contiguous sequence of objects",
+            "A smart pointer",
+            "A string type",
+            "A container class"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <span>\nusing namespace std;\n\nvoid print(span<int> s) {\n    for (int x : s) cout << x;\n}\n\nint main() {\n    int arr[] = {1, 2, 3};\n    print(arr);\n    return 0;\n}",
+        "o": [
+            "123",
+            "Error",
+            "Memory address",
+            "321"
+        ]
+    },
+    {
+        "q": "std::span can have static or dynamic extent.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::span owns the memory it points to.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ comparison operator provides default comparisons in C++20.",
+        "type": "fill_blank",
+        "answers": [
+            "<=>"
+        ],
+        "other_options": [
+            "==",
+            "!=",
+            "<<"
+        ]
+    },
+    {
+        "q": "Match the three-way comparison results:",
+        "type": "match",
+        "left": [
+            "strong_ordering",
+            "weak_ordering",
+            "partial_ordering"
+        ],
+        "right": [
+            "Distinct values are distinguishable",
+            "Equivalent values may differ",
+            "Some values incomparable"
+        ]
+    },
+    {
+        "q": "What is the spaceship operator?",
+        "type": "mcq",
+        "o": [
+            "The three-way comparison operator (<=>)",
+            "The assignment operator",
+            "The arrow operator",
+            "The scope operator"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <compare>\nusing namespace std;\n\nint main() {\n    int a = 5, b = 10;\n    auto result = a <=> b;\n    if (result < 0) cout << \"Less\";\n    return 0;\n}",
+        "o": [
+            "Less",
+            "Greater",
+            "Equal",
+            "Error"
+        ]
+    },
+    {
+        "q": "The spaceship operator can be defaulted.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Defaulting <=> also generates == and !=.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ class template provides compile-time ratio arithmetic.",
+        "type": "fill_blank",
+        "answers": [
+            "ratio"
+        ],
+        "other_options": [
+            "fraction",
+            "decimal",
+            "divide"
+        ]
+    },
+    {
+        "q": "What is std::chrono used for?",
+        "type": "mcq",
+        "o": [
+            "Time and duration handling",
+            "String parsing",
+            "Memory management",
+            "Container operations"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <chrono>\nusing namespace std;\nusing namespace chrono;\n\nint main() {\n    auto dur = seconds(5);\n    cout << dur.count();\n    return 0;\n}",
+        "o": [
+            "5",
+            "5000",
+            "Error",
+            "5s"
+        ]
+    },
+    {
+        "q": "chrono duration literals allow writing 5s for 5 seconds.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::chrono::system_clock represents a steady monotonic clock.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ clock is guaranteed to be monotonic.",
+        "type": "fill_blank",
+        "answers": [
+            "steady_clock"
+        ],
+        "other_options": [
+            "system_clock",
+            "high_resolution_clock",
+            "monotonic_clock"
+        ]
+    },
+    {
+        "q": "Match the chrono components:",
+        "type": "match",
+        "left": [
+            "duration",
+            "time_point",
+            "clock",
+            "calendar"
+        ],
+        "right": [
+            "Time interval",
+            "Point in time",
+            "Time source",
+            "Date components"
+        ]
+    },
+    {
+        "q": "What is std::filesystem?",
+        "type": "mcq",
+        "o": [
+            "A library for filesystem operations like path manipulation and directory iteration",
+            "A file I/O stream",
+            "A memory file system",
+            "A network protocol"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <filesystem>\nusing namespace std;\nnamespace fs = filesystem;\n\nint main() {\n    fs::path p = \"/home/user/file.txt\";\n    cout << p.filename();\n    return 0;\n}",
+        "o": [
+            "file.txt",
+            "/home/user/file.txt",
+            "file",
+            "txt"
+        ]
+    },
+    {
+        "q": "std::filesystem was added in C++17.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "filesystem::exists() checks if a path exists.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ class represents a path in the filesystem library.",
+        "type": "fill_blank",
+        "answers": [
+            "path"
+        ],
+        "other_options": [
+            "file",
+            "directory",
+            "location"
+        ]
+    },
+    {
+        "q": "What is the directory_iterator used for?",
+        "type": "mcq",
+        "o": [
+            "Iterating over entries in a directory",
+            "Creating directories",
+            "Reading file contents",
+            "Writing to files"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <filesystem>\nusing namespace std;\nnamespace fs = filesystem;\n\nint main() {\n    fs::path p = \"/home/user/file.txt\";\n    cout << p.extension();\n    return 0;\n}",
+        "o": [
+            ".txt",
+            "txt",
+            "file.txt",
+            "file"
+        ]
+    },
+    {
+        "q": "What is std::atomic used for?",
+        "type": "mcq",
+        "o": [
+            "Lock-free thread-safe operations on shared data",
+            "File locking",
+            "Memory allocation",
+            "Exception handling"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <atomic>\nusing namespace std;\n\nint main() {\n    atomic<int> count(0);\n    count++;\n    cout << count.load();\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "Atomic operations are guaranteed to be indivisible.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::atomic requires a lock for all operations.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ prevents reordering of memory operations.",
+        "type": "fill_blank",
+        "answers": [
+            "memory_order"
+        ],
+        "other_options": [
+            "memory_fence",
+            "barrier",
+            "lock"
+        ]
+    },
+    {
+        "q": "Match the memory ordering semantics:",
+        "type": "match",
+        "left": [
+            "memory_order_relaxed",
+            "memory_order_acquire",
+            "memory_order_release",
+            "memory_order_seq_cst"
+        ],
+        "right": [
+            "No ordering",
+            "Synchronize loads",
+            "Synchronize stores",
+            "Full ordering"
+        ]
+    },
+    {
+        "q": "What is a memory barrier?",
+        "type": "mcq",
+        "o": [
+            "An instruction preventing reordering of memory operations across it",
+            "A memory allocation limit",
+            "A garbage collection trigger",
+            "A stack overflow protection"
+        ]
+    },
+    {
+        "q": "What is memory_order_seq_cst?",
+        "type": "mcq",
+        "o": [
+            "Sequentially consistent ordering - the strongest guarantee",
+            "Relaxed ordering",
+            "Acquire-release ordering",
+            "Consume ordering"
+        ]
+    },
+    {
+        "q": "memory_order_relaxed provides the strongest ordering guarantee.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Acquire-release semantics form a happens-before relationship.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ header provides threading primitives.",
+        "type": "fill_blank",
+        "answers": [
+            "thread"
+        ],
+        "other_options": [
+            "threading",
+            "concurrent",
+            "async"
+        ]
+    },
+    {
+        "q": "What is std::thread used for?",
+        "type": "mcq",
+        "o": [
+            "Creating and managing threads",
+            "Memory allocation",
+            "File operations",
+            "Network communication"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <thread>\nusing namespace std;\n\nvoid print() { cout << \"Hello\"; }\n\nint main() {\n    thread t(print);\n    t.join();\n    return 0;\n}",
+        "o": [
+            "Hello",
+            "Error",
+            "Nothing",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "A thread must be either joined or detached before destruction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::thread can be copied.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ method waits for a thread to finish execution.",
+        "type": "fill_blank",
+        "answers": [
+            "join"
+        ],
+        "other_options": [
+            "wait",
+            "finish",
+            "complete"
+        ]
+    },
+    {
+        "q": "Match the threading primitives:",
+        "type": "match",
+        "left": [
+            "mutex",
+            "condition_variable",
+            "promise",
+            "future"
+        ],
+        "right": [
+            "Mutual exclusion",
+            "Wait notification",
+            "Set value",
+            "Get value"
+        ]
+    },
+    {
+        "q": "What is std::mutex?",
+        "type": "mcq",
+        "o": [
+            "A synchronization primitive for mutual exclusion",
+            "A thread type",
+            "A memory allocator",
+            "A file lock"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <mutex>\nusing namespace std;\n\nmutex m;\nint counter = 0;\n\nvoid increment() {\n    lock_guard<mutex> lock(m);\n    counter++;\n}\n\nint main() {\n    increment();\n    cout << counter;\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "std::lock_guard automatically releases the lock when destroyed.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deadlock can occur when two threads wait for each other's locks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ class provides more flexible lock management than lock_guard.",
+        "type": "fill_blank",
+        "answers": [
+            "unique_lock"
+        ],
+        "other_options": [
+            "scoped_lock",
+            "shared_lock",
+            "timed_lock"
+        ]
+    },
+    {
+        "q": "What is std::condition_variable?",
+        "type": "mcq",
+        "o": [
+            "A synchronization primitive for thread waiting and notification",
+            "A boolean variable",
+            "A template type",
+            "A mutex type"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <future>\nusing namespace std;\n\nint compute() { return 42; }\n\nint main() {\n    future<int> f = async(compute);\n    cout << f.get();\n    return 0;\n}",
+        "o": [
+            "42",
+            "0",
+            "Error",
+            "future"
+        ]
+    },
+    {
+        "q": "std::future::get() can only be called once.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::async always creates a new thread.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ class can be shared among multiple threads to get the same result.",
+        "type": "fill_blank",
+        "answers": [
+            "shared_future"
+        ],
+        "other_options": [
+            "future",
+            "promise",
+            "packaged_task"
+        ]
+    },
+    {
+        "q": "What is std::promise?",
+        "type": "mcq",
+        "o": [
+            "A means to set a value that can be retrieved by a future",
+            "A future object",
+            "A thread type",
+            "A mutex type"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <future>\n#include <thread>\nusing namespace std;\n\nint main() {\n    promise<int> p;\n    future<int> f = p.get_future();\n    thread t([&p]() { p.set_value(100); });\n    cout << f.get();\n    t.join();\n    return 0;\n}",
+        "o": [
+            "100",
+            "0",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "A promise can only set a value once.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::packaged_task wraps a callable for async execution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ launch policy forces a new thread for std::async.",
+        "type": "fill_blank",
+        "answers": [
+            "async"
+        ],
+        "other_options": [
+            "deferred",
+            "sync",
+            "immediate"
+        ]
+    },
+    {
+        "q": "Match the async launch policies:",
+        "type": "match",
+        "left": [
+            "launch::async",
+            "launch::deferred"
+        ],
+        "right": [
+            "New thread immediately",
+            "Lazy evaluation on get"
+        ]
+    },
+    {
+        "q": "What is the One Definition Rule (ODR)?",
+        "type": "mcq",
+        "o": [
+            "Each entity must have exactly one definition in the program",
+            "A coding style guideline",
+            "A memory management rule",
+            "A naming convention"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\ntemplate<typename T>\nstruct Tag { static inline int value = 0; };\n\nint main() {\n    Tag<int>::value = 5;\n    cout << Tag<int>::value;\n    return 0;\n}",
+        "o": [
+            "5",
+            "0",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "Violating ODR results in undefined behavior.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "inline variables help avoid ODR violations in headers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ specifier indicates a function may throw no exceptions.",
+        "type": "fill_blank",
+        "answers": [
+            "noexcept"
+        ],
+        "other_options": [
+            "nothrow",
+            "throw",
+            "safe"
+        ]
+    },
+    {
+        "q": "What is noexcept used for?",
+        "type": "mcq",
+        "o": [
+            "Specifying that a function does not throw exceptions",
+            "Catching exceptions",
+            "Throwing exceptions",
+            "Ignoring exceptions"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nvoid safe() noexcept { cout << \"Safe\"; }\n\nint main() {\n    cout << noexcept(safe());\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "Safe",
+            "Error"
+        ]
+    },
+    {
+        "q": "noexcept functions allow better optimization by the compiler.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A noexcept function that throws causes std::terminate.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ allows checking if an expression is noexcept.",
+        "type": "fill_blank",
+        "answers": [
+            "noexcept()"
+        ],
+        "other_options": [
+            "nothrow()",
+            "safe()",
+            "check()"
+        ]
+    },
+    {
+        "q": "Match the exception handling keywords:",
+        "type": "match",
+        "left": [
+            "try",
+            "catch",
+            "throw",
+            "noexcept"
+        ],
+        "right": [
+            "Begin handler block",
+            "Handle exception",
+            "Raise exception",
+            "Guarantee no throw"
+        ]
+    },
+    {
+        "q": "What is aggregate CTAD?",
+        "type": "mcq",
+        "o": [
+            "Class Template Argument Deduction for aggregate types",
+            "A type of cast",
+            "A memory allocation strategy",
+            "A loop construct"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <array>\nusing namespace std;\n\nint main() {\n    array a = {1, 2, 3};\n    cout << a.size();\n    return 0;\n}",
+        "o": [
+            "3",
+            "Error",
+            "0",
+            "array"
+        ]
+    },
+    {
+        "q": "CTAD was introduced in C++17.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CTAD works with all templates automatically.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ guide helps CTAD deduce template arguments.",
+        "type": "fill_blank",
+        "answers": [
+            "deduction"
+        ],
+        "other_options": [
+            "template",
+            "inference",
+            "type"
+        ]
+    },
+    {
+        "q": "What is std::byte?",
+        "type": "mcq",
+        "o": [
+            "A distinct type for raw memory operations",
+            "An alias for unsigned char",
+            "A string type",
+            "A pointer type"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <cstddef>\nusing namespace std;\n\nint main() {\n    byte b{42};\n    cout << to_integer<int>(b);\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "byte",
+            "0"
+        ]
+    },
+    {
+        "q": "std::byte supports arithmetic operations directly.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "std::byte supports bitwise operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ literal suffix creates a size_t literal.",
+        "type": "fill_blank",
+        "answers": [
+            "uz"
+        ],
+        "other_options": [
+            "sz",
+            "st",
+            "zu"
+        ]
+    },
+    {
+        "q": "Rearrange the exception propagation order:",
+        "type": "rearrange",
+        "words": [
+            "throw",
+            "stack unwinding",
+            "catch search",
+            "handler match",
+            "handler execution"
+        ]
+    },
+    {
+        "q": "What is std::launder?",
+        "type": "mcq",
+        "o": [
+            "A function to obtain a pointer to an object after placement new",
+            "A memory cleaner",
+            "A garbage collector",
+            "A thread sanitizer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <new>\nusing namespace std;\n\nint main() {\n    alignas(int) char buf[sizeof(int)];\n    int* p = new(buf) int(42);\n    cout << *launder(p);\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "0",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "Placement new constructs an object at a specific memory location.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Objects created with placement new are automatically destroyed.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ operator explicitly calls the destructor.",
+        "type": "fill_blank",
+        "answers": [
+            "->~"
+        ],
+        "other_options": [
+            "delete",
+            "destroy",
+            "~"
+        ]
+    },
+    {
+        "q": "What is aliasing in C++?",
+        "type": "mcq",
+        "o": [
+            "When two pointers refer to the same memory location",
+            "Creating type aliases",
+            "Name hiding",
+            "Function overloading"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 5;\n    int* p1 = &x;\n    int* p2 = &x;\n    *p1 = 10;\n    cout << *p2;\n    return 0;\n}",
+        "o": [
+            "10",
+            "5",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "Strict aliasing rules prohibit accessing objects through incompatible pointer types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "char* can alias any type for reading raw bytes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ qualifier tells the compiler pointers don't alias.",
+        "type": "fill_blank",
+        "answers": [
+            "restrict"
+        ],
+        "other_options": [
+            "noalias",
+            "unique",
+            "sole"
+        ]
+    },
+    {
+        "q": "Match the memory model concepts:",
+        "type": "match",
+        "left": [
+            "Data race",
+            "Race condition",
+            "Happens-before",
+            "Synchronizes-with"
+        ],
+        "right": [
+            "Concurrent unsynchronized access",
+            "Behavior depends on timing",
+            "Ordering guarantee",
+            "Cross-thread ordering"
+        ]
+    },
+    {
+        "q": "What is a data race?",
+        "type": "mcq",
+        "o": [
+            "Unsynchronized concurrent access where at least one is a write",
+            "A type of loop",
+            "A sorting algorithm",
+            "A file conflict"
+        ]
+    },
+    {
+        "q": "What is sequence-before relationship?",
+        "type": "mcq",
+        "o": [
+            "An ordering of evaluations within a single thread",
+            "Thread scheduling",
+            "Memory allocation order",
+            "File access order"
+        ]
+    },
+    {
+        "q": "Data races cause undefined behavior in C++.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "volatile prevents data races.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ function provides a full memory fence.",
+        "type": "fill_blank",
+        "answers": [
+            "atomic_thread_fence"
+        ],
+        "other_options": [
+            "memory_barrier",
+            "sync",
+            "fence"
+        ]
+    },
+    {
+        "q": "What is copy elision?",
+        "type": "mcq",
+        "o": [
+            "Optimization where copy/move constructors are omitted",
+            "Shallow copy",
+            "Deep copy",
+            "Reference passing"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nstruct Test {\n    Test() { cout << \"C\"; }\n    Test(const Test&) { cout << \"P\"; }\n};\n\nTest create() { return Test(); }\n\nint main() {\n    Test t = create();\n    return 0;\n}",
+        "o": [
+            "C (with copy elision)",
+            "CP",
+            "Error",
+            "CPP"
+        ]
+    },
+    {
+        "q": "Guaranteed copy elision was added in C++17.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Copy elision can be disabled by the programmer.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ optimization creates objects directly in their final location.",
+        "type": "fill_blank",
+        "answers": [
+            "RVO"
+        ],
+        "other_options": [
+            "NRVO",
+            "copy",
+            "move"
+        ]
+    },
+    {
+        "q": "Match the optimizations:",
+        "type": "match",
+        "left": [
+            "RVO",
+            "NRVO",
+            "Copy elision",
+            "Empty base optimization"
+        ],
+        "right": [
+            "Return value optimization",
+            "Named RVO",
+            "Omit copies",
+            "Zero size bases"
+        ]
+    },
+    {
+        "q": "What is Empty Base Optimization (EBO)?",
+        "type": "mcq",
+        "o": [
+            "An optimization where empty base classes don't increase size",
+            "Deleting empty classes",
+            "Making all bases empty",
+            "Removing inheritance"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nstruct Empty {};\nstruct Derived : Empty { int x; };\n\nint main() {\n    cout << sizeof(Derived);\n    return 0;\n}",
+        "o": [
+            "4 (same as int)",
+            "8",
+            "1",
+            "5"
+        ]
+    },
+    {
+        "q": "[[no_unique_address]] can enable EBO for members in C++20.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "An empty struct has size 0.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ attribute allows empty members to not take space.",
+        "type": "fill_blank",
+        "answers": [
+            "[[no_unique_address]]"
+        ],
+        "other_options": [
+            "[[empty]]",
+            "[[compress]]",
+            "[[zero]]"
+        ]
+    },
+    {
+        "q": "What is std::source_location?",
+        "type": "mcq",
+        "o": [
+            "A class for compile-time file/line/function information",
+            "A file path type",
+            "A string parser",
+            "A debug tool"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <source_location>\nusing namespace std;\n\nvoid log(source_location loc = source_location::current()) {\n    cout << loc.line();\n}\n\nint main() {\n    log();\n    return 0;\n}",
+        "o": [
+            "8 (line number of log() call)",
+            "3",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "std::source_location replaces the need for __FILE__ and __LINE__ macros.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "source_location::current() must be called at runtime.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ method returns the function name in source_location.",
+        "type": "fill_blank",
+        "answers": [
+            "function_name"
+        ],
+        "other_options": [
+            "name",
+            "function",
+            "method"
+        ]
+    },
+    {
+        "q": "Rearrange the compilation phases:",
+        "type": "rearrange",
+        "words": [
+            "Preprocessing",
+            "Compilation",
+            "Assembly",
+            "Linking",
+            "Loading"
+        ]
+    },
+    {
+        "q": "What is std::format in C++20?",
+        "type": "mcq",
+        "o": [
+            "A type-safe formatting library similar to Python's format strings",
+            "A file formatter",
+            "A code formatter",
+            "A data serializer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <format>\nusing namespace std;\n\nint main() {\n    cout << format(\"{} + {} = {}\", 1, 2, 3);\n    return 0;\n}",
+        "o": [
+            "1 + 2 = 3",
+            "Error",
+            "{} + {} = {}",
+            "123"
+        ]
+    },
+    {
+        "q": "std::format is type-safe unlike printf.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::format supports custom formatters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ function prints formatted output directly.",
+        "type": "fill_blank",
+        "answers": [
+            "print"
+        ],
+        "other_options": [
+            "printf",
+            "format",
+            "write"
+        ]
+    },
+    {
+        "q": "Match the C++23 features:",
+        "type": "match",
+        "left": [
+            "std::print",
+            "std::expected",
+            "deducing this",
+            "multidimensional []"
+        ],
+        "right": [
+            "Formatted output",
+            "Error handling",
+            "Explicit object parameter",
+            "Array subscript"
+        ]
+    },
+    {
+        "q": "What is std::expected?",
+        "type": "mcq",
+        "o": [
+            "A type that holds either a value or an error",
+            "A future value",
+            "An optional value",
+            "A variant type"
+        ]
+    },
+    {
+        "q": "What is deducing this?",
+        "type": "mcq",
+        "o": [
+            "Allowing explicit object parameter in member functions",
+            "Type inference for this pointer",
+            "Template deduction",
+            "CRTP replacement"
+        ]
+    },
+    {
+        "q": "std::expected was added in C++23.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deducing this allows writing const and non-const overloads as one function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ allows subscript operators with multiple indices in C++23.",
+        "type": "fill_blank",
+        "answers": [
+            "operator[]"
+        ],
+        "other_options": [
+            "operator()",
+            "operator*",
+            "operator->"
+        ]
+    },
+    {
+        "q": "What is std::stacktrace?",
+        "type": "mcq",
+        "o": [
+            "A class for capturing and inspecting the call stack",
+            "A stack container",
+            "A trace log",
+            "A profiler"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <bit>\nusing namespace std;\n\nint main() {\n    cout << popcount(0b11110000u);\n    return 0;\n}",
+        "o": [
+            "4",
+            "8",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "std::popcount counts the number of 1 bits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The bit header provides bit manipulation utilities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ function returns the next power of 2.",
+        "type": "fill_blank",
+        "answers": [
+            "bit_ceil"
+        ],
+        "other_options": [
+            "next_pow2",
+            "ceil2",
+            "power2"
+        ]
+    },
+    {
+        "q": "What is std::jthread?",
+        "type": "mcq",
+        "o": [
+            "A joining thread that automatically joins on destruction",
+            "A Java thread",
+            "A joinable thread pool",
+            "A job thread"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <thread>\n#include <stop_token>\nusing namespace std;\n\nint main() {\n    jthread t([](stop_token st) {\n        while (!st.stop_requested()) {}\n        cout << \"Stopped\";\n    });\n    t.request_stop();\n    return 0;\n}",
+        "o": [
+            "Stopped",
+            "Nothing",
+            "Error",
+            "Infinite loop"
+        ]
+    },
+    {
+        "q": "std::jthread supports cooperative cancellation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::jthread was added in C++20.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ is used to request thread cancellation in jthread.",
+        "type": "fill_blank",
+        "answers": [
+            "stop_token"
+        ],
+        "other_options": [
+            "cancel_token",
+            "thread_stop",
+            "interrupt"
+        ]
+    },
+    {
+        "q": "Match the C++20 threading additions:",
+        "type": "match",
+        "left": [
+            "jthread",
+            "stop_token",
+            "latch",
+            "barrier"
+        ],
+        "right": [
+            "Auto-joining thread",
+            "Cancellation request",
+            "One-time sync point",
+            "Reusable sync point"
+        ]
+    },
+    {
+        "q": "What is std::latch?",
+        "type": "mcq",
+        "o": [
+            "A single-use synchronization primitive for waiting on a count",
+            "A lock type",
+            "A barrier type",
+            "A semaphore"
+        ]
+    },
+    {
+        "q": "What is std::barrier?",
+        "type": "mcq",
+        "o": [
+            "A reusable synchronization primitive for phased computation",
+            "A memory barrier",
+            "A one-time sync point",
+            "A lock type"
+        ]
+    },
+    {
+        "q": "std::latch can be used multiple times.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "std::barrier supports a completion callback.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ synchronization primitive allows N threads to wait.",
+        "type": "fill_blank",
+        "answers": [
+            "counting_semaphore"
+        ],
+        "other_options": [
+            "semaphore",
+            "counter",
+            "waiter"
+        ]
+    },
+    {
+        "q": "What command line compiles C++ code with GCC?",
+        "type": "mcq",
+        "o": [
+            "g++ source.cpp -o output",
+            "gcc source.cpp -o output",
+            "compile source.cpp",
+            "cpp source.cpp"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <numbers>\nusing namespace std;\n\nint main() {\n    cout << (numbers::pi > 3);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "3.14159",
+            "Error"
+        ]
+    },
+    {
+        "q": "std::numbers provides mathematical constants like pi and e.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::numbers was added in C++20.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ function interpolates between two values.",
+        "type": "fill_blank",
+        "answers": [
+            "lerp"
+        ],
+        "other_options": [
+            "interpolate",
+            "mix",
+            "blend"
+        ]
+    },
+    {
+        "q": "Rearrange C++ programming paradigms from procedural to generic:",
+        "type": "rearrange",
+        "words": [
+            "Procedural",
+            "Object-oriented",
+            "Generic",
+            "Functional",
+            "Metaprogramming"
+        ]
+    },
+    {
+        "q": "What is a translation unit in C++?",
+        "type": "mcq",
+        "o": [
+            "A source file after preprocessing with all includes expanded",
+            "A compiled object file",
+            "A header file",
+            "A library"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <bit>\nusing namespace std;\n\nint main() {\n    cout << has_single_bit(8u);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "8",
+            "Error"
+        ]
+    },
+    {
+        "q": "has_single_bit checks if a number is a power of 2.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "bit_width returns the number of bits needed to represent a value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ header provides endianness detection.",
+        "type": "fill_blank",
+        "answers": [
+            "bit"
+        ],
+        "other_options": [
+            "endian",
+            "byte",
+            "system"
+        ]
+    },
+    {
+        "q": "Match the bit operations:",
+        "type": "match",
+        "left": [
+            "popcount",
+            "countr_zero",
+            "countl_zero",
+            "rotl"
+        ],
+        "right": [
+            "Count 1 bits",
+            "Trailing zeros",
+            "Leading zeros",
+            "Rotate left"
+        ]
+    },
+    {
+        "q": "What is std::endian?",
+        "type": "mcq",
+        "o": [
+            "An enum class to check system endianness",
+            "A byte order converter",
+            "A template type",
+            "A stream manipulator"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <bit>\nusing namespace std;\n\nint main() {\n    if constexpr (endian::native == endian::little)\n        cout << \"Little\";\n    else\n        cout << \"Big\";\n    return 0;\n}",
+        "o": [
+            "Little (on most systems)",
+            "Big",
+            "Error",
+            "Both"
+        ]
+    },
+    {
+        "q": "Most modern desktop CPUs use little-endian byte order.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::byteswap reverses the bytes in an integer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ operator in C++ allows user-defined literals.",
+        "type": "fill_blank",
+        "answers": [
+            "operator\"\""
+        ],
+        "other_options": [
+            "operator()",
+            "operator[]",
+            "operator->"
+        ]
+    },
+    {
+        "q": "What are user-defined literals?",
+        "type": "mcq",
+        "o": [
+            "Custom suffix operators for creating literal values",
+            "String literals",
+            "Numeric constants",
+            "Character literals"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nlong double operator\"\"_km(long double x) {\n    return x * 1000;\n}\n\nint main() {\n    cout << 2.5_km;\n    return 0;\n}",
+        "o": [
+            "2500",
+            "2.5",
+            "Error",
+            "2.5_km"
+        ]
+    },
+    {
+        "q": "User-defined literal suffixes must start with underscore.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Standard library provides literal suffixes like s for seconds.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ literal suffix creates an std::string.",
+        "type": "fill_blank",
+        "answers": [
+            "s"
+        ],
+        "other_options": [
+            "str",
+            "string",
+            "text"
+        ]
+    },
+    {
+        "q": "Match the standard literal suffixes:",
+        "type": "match",
+        "left": [
+            "s (string)",
+            "sv",
+            "h",
+            "min"
+        ],
+        "right": [
+            "std::string",
+            "std::string_view",
+            "chrono::hours",
+            "chrono::minutes"
+        ]
+    },
+    {
+        "q": "What is constinit?",
+        "type": "mcq",
+        "o": [
+            "A specifier ensuring compile-time initialization of static storage",
+            "A constant variable",
+            "A constexpr function",
+            "A runtime constant"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nconstinit int x = 42;\n\nint main() {\n    x++;\n    cout << x;\n    return 0;\n}",
+        "o": [
+            "43",
+            "42",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "constinit variables can be modified at runtime.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "constinit prevents the static initialization order fiasco.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ attribute specifies a function is likely in typical usage.",
+        "type": "fill_blank",
+        "answers": [
+            "[[likely]]"
+        ],
+        "other_options": [
+            "[[expected]]",
+            "[[common]]",
+            "[[hot]]"
+        ]
+    },
+    {
+        "q": "What is [[likely]] used for?",
+        "type": "mcq",
+        "o": [
+            "Hint to compiler about expected branch execution path",
+            "Error checking",
+            "Type checking",
+            "Memory allocation"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 5;\n    if (x > 0) [[likely]] {\n        cout << \"Positive\";\n    }\n    return 0;\n}",
+        "o": [
+            "Positive",
+            "Nothing",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "[[likely]] and [[unlikely]] are optimization hints.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "[[likely]] changes program behavior.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ specifier designates a class as never having more derived classes.",
+        "type": "fill_blank",
+        "answers": [
+            "final"
+        ],
+        "other_options": [
+            "sealed",
+            "last",
+            "concrete"
+        ]
+    },
+    {
+        "q": "Match the C++20 attributes:",
+        "type": "match",
+        "left": [
+            "[[likely]]",
+            "[[unlikely]]",
+            "[[no_unique_address]]",
+            "[[nodiscard]]"
+        ],
+        "right": [
+            "Expected path",
+            "Rare path",
+            "Allow overlap",
+            "Must use return"
+        ]
+    },
+    {
+        "q": "What is std::to_address?",
+        "type": "mcq",
+        "o": [
+            "Function to get the address from any pointer-like type",
+            "Address converter",
+            "Memory allocator",
+            "Address formatter"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <memory>\nusing namespace std;\n\nint main() {\n    unique_ptr<int> p = make_unique<int>(42);\n    int* raw = to_address(p);\n    cout << *raw;\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "Memory address",
+            "0"
+        ]
+    },
+    {
+        "q": "std::to_address works with raw pointers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::to_address was added in C++20.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ function constructs an object at the given address.",
+        "type": "fill_blank",
+        "answers": [
+            "construct_at"
+        ],
+        "other_options": [
+            "construct",
+            "create_at",
+            "build_at"
+        ]
+    },
+    {
+        "q": "What is std::construct_at?",
+        "type": "mcq",
+        "o": [
+            "A function that creates an object at a given memory location",
+            "A constructor type",
+            "A template function",
+            "A memory allocator"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <memory>\nusing namespace std;\n\nint main() {\n    alignas(int) char buf[sizeof(int)];\n    int* p = construct_at(reinterpret_cast<int*>(buf), 99);\n    cout << *p;\n    destroy_at(p);\n    return 0;\n}",
+        "o": [
+            "99",
+            "Error",
+            "0",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "std::destroy_at calls the destructor of an object.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::construct_at can be used in constexpr context.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ algorithm checks if a range is sorted.",
+        "type": "fill_blank",
+        "answers": [
+            "is_sorted"
+        ],
+        "other_options": [
+            "sorted",
+            "check_sorted",
+            "verify_sorted"
+        ]
+    },
+    {
+        "q": "Match the algorithm categories:",
+        "type": "match",
+        "left": [
+            "Non-modifying",
+            "Modifying",
+            "Sorting",
+            "Numeric"
+        ],
+        "right": [
+            "find, count",
+            "copy, transform",
+            "sort, partition",
+            "accumulate, reduce"
+        ]
+    },
+    {
+        "q": "What is std::views::iota?",
+        "type": "mcq",
+        "o": [
+            "A view that generates a sequence of incrementing values",
+            "A Greek letter",
+            "A container type",
+            "A mathematical constant"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <ranges>\nusing namespace std;\n\nint main() {\n    for (int x : views::iota(1, 4)) cout << x;\n    return 0;\n}",
+        "o": [
+            "123",
+            "1234",
+            "234",
+            "Error"
+        ]
+    },
+    {
+        "q": "views::iota creates an infinite sequence when given one argument.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Range views materialize their elements immediately.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ view filters elements based on a predicate.",
+        "type": "fill_blank",
+        "answers": [
+            "filter"
+        ],
+        "other_options": [
+            "select",
+            "where",
+            "pick"
+        ]
+    },
+    {
+        "q": "Rearrange the object lifecycle stages:",
+        "type": "rearrange",
+        "words": [
+            "Memory allocation",
+            "Construction",
+            "Usage",
+            "Destruction",
+            "Deallocation"
+        ]
+    },
+    {
+        "q": "What is std::assume_aligned?",
+        "type": "mcq",
+        "o": [
+            "A hint that a pointer is aligned to a specific boundary",
+            "Memory alignment checker",
+            "Alignment converter",
+            "Padding calculator"
+        ]
+    },
+    {
+        "q": "Alignment requirements can affect performance due to cache usage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ specifier sets the alignment requirement for a type.",
+        "type": "fill_blank",
+        "answers": [
+            "alignas"
+        ],
+        "other_options": [
+            "align",
+            "aligned",
+            "alignment"
+        ]
+    }
+]

@@ -1,0 +1,5751 @@
+[
+    {
+        "q": "Which of the following is used for addition in C?",
+        "type": "mcq",
+        "o": [
+            "+",
+            "-",
+            "*",
+            "/"
+        ]
+    },
+    {
+        "q": "Which operator is used for subtraction in C?",
+        "type": "mcq",
+        "o": [
+            "-",
+            "+",
+            "*",
+            "%"
+        ]
+    },
+    {
+        "q": "Which operator is used for multiplication in C?",
+        "type": "mcq",
+        "o": [
+            "*",
+            "x",
+            "X",
+            "#"
+        ]
+    },
+    {
+        "q": "Which operator is used for division in C?",
+        "type": "mcq",
+        "o": [
+            "/",
+            "\\",
+            ":",
+            "%"
+        ]
+    },
+    {
+        "q": "Which operator gives the remainder after division?",
+        "type": "mcq",
+        "o": [
+            "%",
+            "/",
+            "//",
+            "mod"
+        ]
+    },
+    {
+        "q": "The + operator performs addition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The % operator is called the modulus operator.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 5 + 3);\n    return 0;\n}",
+        "o": [
+            "8",
+            "53",
+            "2",
+            "15"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 10 - 4);\n    return 0;\n}",
+        "o": [
+            "6",
+            "14",
+            "-6",
+            "40"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 6 * 7);\n    return 0;\n}",
+        "o": [
+            "42",
+            "13",
+            "67",
+            "1"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 20 / 4);\n    return 0;\n}",
+        "o": [
+            "5",
+            "24",
+            "16",
+            "80"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 17 % 5);\n    return 0;\n}",
+        "o": [
+            "2",
+            "3",
+            "12",
+            "5"
+        ]
+    },
+    {
+        "q": "The ______ operator gives the remainder of division.",
+        "type": "fill_blank",
+        "answers": [
+            "%",
+            "modulus"
+        ],
+        "other_options": [
+            "/",
+            "+",
+            "*"
+        ]
+    },
+    {
+        "q": "Integer division truncates the decimal part.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 7 / 2);\n    return 0;\n}",
+        "o": [
+            "3",
+            "3.5",
+            "4",
+            "2"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%f\", 7.0 / 2.0);\n    return 0;\n}",
+        "o": [
+            "3.500000",
+            "3",
+            "3.5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the arithmetic operators with their names:",
+        "type": "match",
+        "left": [
+            "+",
+            "-",
+            "*",
+            "/"
+        ],
+        "right": [
+            "Addition",
+            "Subtraction",
+            "Multiplication",
+            "Division"
+        ]
+    },
+    {
+        "q": "Which operator increments a variable by 1?",
+        "type": "mcq",
+        "o": [
+            "++",
+            "--",
+            "+=",
+            "+1"
+        ]
+    },
+    {
+        "q": "Which operator decrements a variable by 1?",
+        "type": "mcq",
+        "o": [
+            "--",
+            "++",
+            "-=",
+            "-1"
+        ]
+    },
+    {
+        "q": "The ++ operator is called the increment operator.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The -- operator is called the decrement operator.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    x++;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "6",
+            "5",
+            "4",
+            "7"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    x--;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "4",
+            "5",
+            "6",
+            "3"
+        ]
+    },
+    {
+        "q": "What is the difference between x++ and ++x?",
+        "type": "mcq",
+        "o": [
+            "x++ returns original, ++x returns incremented",
+            "No difference",
+            "++x returns original, x++ returns incremented",
+            "x++ is faster"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    printf(\"%d\", x++);\n    return 0;\n}",
+        "o": [
+            "5",
+            "6",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    printf(\"%d\", ++x);\n    return 0;\n}",
+        "o": [
+            "6",
+            "5",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ operator is called the assignment operator.",
+        "type": "fill_blank",
+        "answers": [
+            "="
+        ],
+        "other_options": [
+            "==",
+            "+=",
+            ":="
+        ]
+    },
+    {
+        "q": "Which operator is used for assignment in C?",
+        "type": "mcq",
+        "o": [
+            "=",
+            "==",
+            ":=",
+            "<-"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "10",
+            "x",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "The = operator assigns the right value to the left variable.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    x += 3;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "8",
+            "5",
+            "3",
+            "53"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    x -= 4;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "6",
+            "10",
+            "4",
+            "14"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    x *= 2;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "10",
+            "5",
+            "2",
+            "7"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 20;\n    x /= 4;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "5",
+            "20",
+            "4",
+            "80"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 17;\n    x %= 5;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "2",
+            "17",
+            "5",
+            "3"
+        ]
+    },
+    {
+        "q": "Match the compound operators with their meanings:",
+        "type": "match",
+        "left": [
+            "+=",
+            "-=",
+            "*=",
+            "/="
+        ],
+        "right": [
+            "Add and assign",
+            "Subtract and assign",
+            "Multiply and assign",
+            "Divide and assign"
+        ]
+    },
+    {
+        "q": "x += 5 is equivalent to x = x + 5.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Which operator checks if two values are equal?",
+        "type": "mcq",
+        "o": [
+            "==",
+            "=",
+            "!=",
+            "==="
+        ]
+    },
+    {
+        "q": "Which operator checks if two values are not equal?",
+        "type": "mcq",
+        "o": [
+            "!=",
+            "==",
+            "<>",
+            "=/="
+        ]
+    },
+    {
+        "q": "Which operator checks if left is greater than right?",
+        "type": "mcq",
+        "o": [
+            ">",
+            "<",
+            ">=",
+            "=>"
+        ]
+    },
+    {
+        "q": "Which operator checks if left is less than right?",
+        "type": "mcq",
+        "o": [
+            "<",
+            ">",
+            "<=",
+            "=<"
+        ]
+    },
+    {
+        "q": "Which operator checks if left is greater than or equal to right?",
+        "type": "mcq",
+        "o": [
+            ">=",
+            ">",
+            "<=",
+            "=>"
+        ]
+    },
+    {
+        "q": "Which operator checks if left is less than or equal to right?",
+        "type": "mcq",
+        "o": [
+            "<=",
+            "<",
+            ">=",
+            "=<"
+        ]
+    },
+    {
+        "q": "The == operator is used for comparison, not assignment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 5 == 5);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "5",
+            "True"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 5 != 3);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "2",
+            "True"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 10 > 5);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "10",
+            "5"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 3 < 7);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "3",
+            "7"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 5 >= 5);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "5",
+            "10"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 5 <= 5);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "5",
+            "True"
+        ]
+    },
+    {
+        "q": "In C, true is represented as 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In C, false is represented as 0.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the relational operators with their meanings:",
+        "type": "match",
+        "left": [
+            "==",
+            "!=",
+            ">",
+            "<"
+        ],
+        "right": [
+            "Equal to",
+            "Not equal to",
+            "Greater than",
+            "Less than"
+        ]
+    },
+    {
+        "q": "Which operator performs logical AND?",
+        "type": "mcq",
+        "o": [
+            "&&",
+            "||",
+            "!",
+            "&"
+        ]
+    },
+    {
+        "q": "Which operator performs logical OR?",
+        "type": "mcq",
+        "o": [
+            "||",
+            "&&",
+            "!",
+            "|"
+        ]
+    },
+    {
+        "q": "Which operator performs logical NOT?",
+        "type": "mcq",
+        "o": [
+            "!",
+            "~",
+            "not",
+            "NOT"
+        ]
+    },
+    {
+        "q": "The && operator returns true only if both operands are true.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The || operator returns true if at least one operand is true.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ! operator inverts the boolean value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 1 && 1);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "2",
+            "True"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 1 && 0);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "True",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 0 || 1);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "01",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 0 || 0);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "00",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", !0);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", !1);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ operator is the logical AND operator.",
+        "type": "fill_blank",
+        "answers": [
+            "&&"
+        ],
+        "other_options": [
+            "||",
+            "&",
+            "AND"
+        ]
+    },
+    {
+        "q": "Match the logical operators with their names:",
+        "type": "match",
+        "left": [
+            "&&",
+            "||",
+            "!"
+        ],
+        "right": [
+            "Logical AND",
+            "Logical OR",
+            "Logical NOT"
+        ]
+    },
+    {
+        "q": "Which operator performs bitwise AND?",
+        "type": "mcq",
+        "o": [
+            "&",
+            "&&",
+            "|",
+            "^"
+        ]
+    },
+    {
+        "q": "Which operator performs bitwise OR?",
+        "type": "mcq",
+        "o": [
+            "|",
+            "||",
+            "&",
+            "^"
+        ]
+    },
+    {
+        "q": "Which operator performs bitwise XOR?",
+        "type": "mcq",
+        "o": [
+            "^",
+            "&",
+            "|",
+            "~"
+        ]
+    },
+    {
+        "q": "Which operator performs bitwise NOT?",
+        "type": "mcq",
+        "o": [
+            "~",
+            "!",
+            "^",
+            "NOT"
+        ]
+    },
+    {
+        "q": "Which operator shifts bits to the left?",
+        "type": "mcq",
+        "o": [
+            "<<",
+            ">>",
+            "<",
+            "<<"
+        ]
+    },
+    {
+        "q": "Which operator shifts bits to the right?",
+        "type": "mcq",
+        "o": [
+            ">>",
+            "<<",
+            ">",
+            ">>"
+        ]
+    },
+    {
+        "q": "The & operator works on individual bits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 5 & 3);\n    return 0;\n}",
+        "o": [
+            "1",
+            "7",
+            "5",
+            "3"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 5 | 3);\n    return 0;\n}",
+        "o": [
+            "7",
+            "1",
+            "5",
+            "3"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 5 ^ 3);\n    return 0;\n}",
+        "o": [
+            "6",
+            "7",
+            "1",
+            "8"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 1 << 3);\n    return 0;\n}",
+        "o": [
+            "8",
+            "3",
+            "1",
+            "4"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 8 >> 2);\n    return 0;\n}",
+        "o": [
+            "2",
+            "4",
+            "8",
+            "32"
+        ]
+    },
+    {
+        "q": "Left shift by n is equivalent to multiplying by 2^n.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Right shift by n is equivalent to dividing by 2^n.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the bitwise operators with their names:",
+        "type": "match",
+        "left": [
+            "&",
+            "|",
+            "^",
+            "~"
+        ],
+        "right": [
+            "AND",
+            "OR",
+            "XOR",
+            "NOT"
+        ]
+    },
+    {
+        "q": "What is the ternary operator in C?",
+        "type": "mcq",
+        "o": [
+            "?:",
+            "?",
+            ":",
+            "if:"
+        ]
+    },
+    {
+        "q": "The ternary operator has three operands.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    printf(\"%d\", x > 3 ? 10 : 20);\n    return 0;\n}",
+        "o": [
+            "10",
+            "20",
+            "5",
+            "3"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 2;\n    printf(\"%d\", x > 3 ? 10 : 20);\n    return 0;\n}",
+        "o": [
+            "20",
+            "10",
+            "2",
+            "3"
+        ]
+    },
+    {
+        "q": "The ternary operator is a shorthand for if-else.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ operator returns the size of a type or variable.",
+        "type": "fill_blank",
+        "answers": [
+            "sizeof"
+        ],
+        "other_options": [
+            "size",
+            "length",
+            "len"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%zu\", sizeof(int));\n    return 0;\n}",
+        "o": [
+            "4 typically",
+            "2",
+            "8",
+            "1"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%zu\", sizeof(char));\n    return 0;\n}",
+        "o": [
+            "1",
+            "2",
+            "4",
+            "8"
+        ]
+    },
+    {
+        "q": "sizeof returns the size in bytes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "sizeof(char) is always 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the operators by precedence (highest to lowest):",
+        "type": "rearrange",
+        "words": [
+            "()",
+            "++",
+            "*",
+            "+",
+            "<"
+        ]
+    },
+    {
+        "q": "Multiplication has higher precedence than addition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 2 + 3 * 4);\n    return 0;\n}",
+        "o": [
+            "14",
+            "20",
+            "9",
+            "24"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", (2 + 3) * 4);\n    return 0;\n}",
+        "o": [
+            "20",
+            "14",
+            "9",
+            "24"
+        ]
+    },
+    {
+        "q": "Parentheses have the highest precedence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 10, y = 5;\n    printf(\"%d\", x > y && x < 15);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "10",
+            "5"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 10, y = 20;\n    printf(\"%d\", x < y || y > 25);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "10",
+            "20"
+        ]
+    },
+    {
+        "q": "Short-circuit evaluation stops when result is determined.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0;\n    int y = (x && (x = 5));\n    printf(\"%d %d\", x, y);\n    return 0;\n}",
+        "o": [
+            "0 0",
+            "5 1",
+            "5 0",
+            "0 5"
+        ]
+    },
+    {
+        "q": "In && short-circuit, right side is not evaluated if left is false.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 1;\n    int y = (x || (x = 5));\n    printf(\"%d %d\", x, y);\n    return 0;\n}",
+        "o": [
+            "1 1",
+            "5 1",
+            "1 5",
+            "5 5"
+        ]
+    },
+    {
+        "q": "In || short-circuit, right side is not evaluated if left is true.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 10;\n    int max = (a > b) ? a : b;\n    printf(\"%d\", max);\n    return 0;\n}",
+        "o": [
+            "10",
+            "5",
+            "1",
+            "0"
+        ]
+    },
+    {
+        "q": "Match the precedence levels (1=highest):",
+        "type": "match",
+        "left": [
+            "()",
+            "* /",
+            "+ -",
+            "< >"
+        ],
+        "right": [
+            "Level 1",
+            "Level 2",
+            "Level 3",
+            "Level 4"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 10 / 3 * 3);\n    return 0;\n}",
+        "o": [
+            "9",
+            "10",
+            "3.33",
+            "Error"
+        ]
+    },
+    {
+        "q": "Operators with same precedence are evaluated left to right.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int a = 2, b = 3, c = 4;\n    printf(\"%d\", a = b = c);\n    return 0;\n}",
+        "o": [
+            "4",
+            "2",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Assignment operators are right-associative.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    printf(\"%d\", x = x + x++);\n    return 0;\n}",
+        "o": [
+            "Undefined behavior",
+            "10",
+            "11",
+            "12"
+        ]
+    },
+    {
+        "q": "Modifying a variable twice between sequence points is undefined.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ operator evaluates and discards the left operand.",
+        "type": "fill_blank",
+        "answers": [
+            ",",
+            "comma"
+        ],
+        "other_options": [
+            ";",
+            ".",
+            ":"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = (1, 2, 3);\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "3",
+            "1",
+            "2",
+            "6"
+        ]
+    },
+    {
+        "q": "The comma operator returns the value of the rightmost expression.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int a = 1, b = 2;\n    int c = (a++, b++, a + b);\n    printf(\"%d\", c);\n    return 0;\n}",
+        "o": [
+            "5",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", ~0);\n    return 0;\n}",
+        "o": [
+            "-1",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Bitwise NOT of 0 is all 1s, which is -1 in two's complement.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned char x = 0xFF;\n    printf(\"%d\", ~x & 0xFF);\n    return 0;\n}",
+        "o": [
+            "0",
+            "255",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 12;\n    printf(\"%d\", x & 1);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "12",
+            "Error"
+        ]
+    },
+    {
+        "q": "ANDing with 1 checks if a number is odd.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 15;\n    printf(\"%d\", x & 1);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "15",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange the bitwise operations by result for x=5:",
+        "type": "rearrange",
+        "words": [
+            "x & 3 = 1",
+            "x | 3 = 7",
+            "x ^ 3 = 6",
+            "x << 1 = 10"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    x |= 2;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "7",
+            "5",
+            "2",
+            "10"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 7;\n    x &= 3;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "3",
+            "7",
+            "4",
+            "21"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    x ^= 3;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "6",
+            "5",
+            "3",
+            "8"
+        ]
+    },
+    {
+        "q": "Match the compound bitwise operators:",
+        "type": "match",
+        "left": [
+            "&=",
+            "|=",
+            "^=",
+            "<<="
+        ],
+        "right": [
+            "AND assign",
+            "OR assign",
+            "XOR assign",
+            "Left shift assign"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 1;\n    x <<= 4;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "16",
+            "4",
+            "1",
+            "8"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 32;\n    x >>= 3;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "4",
+            "8",
+            "32",
+            "256"
+        ]
+    },
+    {
+        "q": "XORing a value with itself produces 0.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 42;\n    printf(\"%d\", x ^ x);\n    return 0;\n}",
+        "o": [
+            "0",
+            "42",
+            "84",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 10;\n    a = a ^ b;\n    b = a ^ b;\n    a = a ^ b;\n    printf(\"%d %d\", a, b);\n    return 0;\n}",
+        "o": [
+            "10 5",
+            "5 10",
+            "0 0",
+            "Error"
+        ]
+    },
+    {
+        "q": "XOR can be used to swap values without a temporary variable.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 8;\n    printf(\"%d\", x & (x - 1));\n    return 0;\n}",
+        "o": [
+            "0",
+            "8",
+            "7",
+            "1"
+        ]
+    },
+    {
+        "q": "x & (x-1) being 0 indicates x is a power of 2.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 12;\n    printf(\"%d\", x & (x - 1));\n    return 0;\n}",
+        "o": [
+            "8",
+            "0",
+            "12",
+            "4"
+        ]
+    },
+    {
+        "q": "The ______ operator gets the address of a variable.",
+        "type": "fill_blank",
+        "answers": [
+            "&"
+        ],
+        "other_options": [
+            "*",
+            "->",
+            "@"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    int *p = &x;\n    printf(\"%d\", *p);\n    return 0;\n}",
+        "o": [
+            "5",
+            "Address",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "The * operator dereferences a pointer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    int *p = &x;\n    *p = 20;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "20",
+            "10",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "Rearrange the pointer operations:",
+        "type": "rearrange",
+        "words": [
+            "Declare pointer",
+            "Get address",
+            "Assign to pointer",
+            "Dereference"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int arr[] = {1, 2, 3};\n    int *p = arr;\n    printf(\"%d\", *(p + 1));\n    return 0;\n}",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer arithmetic moves by the size of the pointed type.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int arr[] = {10, 20, 30};\n    printf(\"%d\", *(arr + 2));\n    return 0;\n}",
+        "o": [
+            "30",
+            "10",
+            "20",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int arr[] = {10, 20, 30};\n    printf(\"%d\", 2[arr]);\n    return 0;\n}",
+        "o": [
+            "30",
+            "Error",
+            "20",
+            "10"
+        ]
+    },
+    {
+        "q": "The expression a[i] equals *(a+i) equals i[a].",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct S { int x, y; };\nint main() {\n    struct S s = {10, 20};\n    printf(\"%d\", s.x);\n    return 0;\n}",
+        "o": [
+            "10",
+            "20",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "The . operator accesses structure members.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct S { int x, y; };\nint main() {\n    struct S s = {10, 20};\n    struct S *p = &s;\n    printf(\"%d\", p->y);\n    return 0;\n}",
+        "o": [
+            "20",
+            "10",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "The -> operator accesses members through a pointer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the member access operators:",
+        "type": "match",
+        "left": [
+            ".",
+            "->",
+            "[]",
+            "*"
+        ],
+        "right": [
+            "Direct member",
+            "Pointer member",
+            "Array element",
+            "Dereference"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    printf(\"%zu %zu\", sizeof x, sizeof(int));\n    return 0;\n}",
+        "o": [
+            "4 4",
+            "5 4",
+            "4 5",
+            "Error"
+        ]
+    },
+    {
+        "q": "sizeof can be used without parentheses for variables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%zu\", sizeof(double));\n    return 0;\n}",
+        "o": [
+            "8",
+            "4",
+            "2",
+            "16"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int arr[5];\n    printf(\"%zu\", sizeof(arr));\n    return 0;\n}",
+        "o": [
+            "20",
+            "5",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "sizeof array returns total bytes, not element count.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int arr[10];\n    printf(\"%zu\", sizeof(arr)/sizeof(arr[0]));\n    return 0;\n}",
+        "o": [
+            "10",
+            "40",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ operator casts a value to another type.",
+        "type": "fill_blank",
+        "answers": [
+            "(type)",
+            "cast"
+        ],
+        "other_options": [
+            "as",
+            "to",
+            "convert"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", (int)3.7);\n    return 0;\n}",
+        "o": [
+            "3",
+            "4",
+            "3.7",
+            "Error"
+        ]
+    },
+    {
+        "q": "Casting truncates floating-point to integer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%f\", (double)5/2);\n    return 0;\n}",
+        "o": [
+            "2.500000",
+            "2.000000",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Casting one operand to double makes division floating-point.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    char c = 'A';\n    printf(\"%d\", (int)c);\n    return 0;\n}",
+        "o": [
+            "65",
+            "A",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange by integer promotion rank:",
+        "type": "rearrange",
+        "words": [
+            "char",
+            "short",
+            "int",
+            "long",
+            "long long"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    char a = 100, b = 50;\n    printf(\"%zu\", sizeof(a + b));\n    return 0;\n}",
+        "o": [
+            "4",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Integer promotion converts smaller types to int.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int u = 1;\n    int s = -1;\n    printf(\"%d\", u > s);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Comparing signed and unsigned may give unexpected results.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = -1;\n    unsigned int y = 1;\n    if (x < y) printf(\"Less\");\n    else printf(\"Not less\");\n    return 0;\n}",
+        "o": [
+            "Not less",
+            "Less",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "Signed values are converted to unsigned in mixed comparisons.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the operator categories:",
+        "type": "match",
+        "left": [
+            "+ - * /",
+            "&& || !",
+            "& | ^ ~",
+            "== != < >"
+        ],
+        "right": [
+            "Arithmetic",
+            "Logical",
+            "Bitwise",
+            "Relational"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    printf(\"%d\", -x);\n    return 0;\n}",
+        "o": [
+            "-5",
+            "5",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "The unary minus operator negates a value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = -5;\n    printf(\"%d\", +x);\n    return 0;\n}",
+        "o": [
+            "-5",
+            "5",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "The unary plus operator does not change the sign.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5, y = 10;\n    printf(\"%d\", x + y * 2);\n    return 0;\n}",
+        "o": [
+            "25",
+            "30",
+            "20",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 20, y = 10;\n    printf(\"%d\", x - y / 2);\n    return 0;\n}",
+        "o": [
+            "15",
+            "5",
+            "20",
+            "10"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 2;\n    printf(\"%d\", x * x * x);\n    return 0;\n}",
+        "o": [
+            "8",
+            "6",
+            "4",
+            "2"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", -10 % 3);\n    return 0;\n}",
+        "o": [
+            "-1",
+            "1",
+            "2",
+            "-2"
+        ]
+    },
+    {
+        "q": "The sign of modulus result matches the dividend in C99+.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", 10 % -3);\n    return 0;\n}",
+        "o": [
+            "1",
+            "-1",
+            "2",
+            "-2"
+        ]
+    },
+    {
+        "q": "Rearrange by associativity (L-R first, then R-L):",
+        "type": "rearrange",
+        "words": [
+            "+ - (L-R)",
+            "* / (L-R)",
+            "= += (R-L)",
+            "?: (R-L)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int a = 1, b = 2, c = 3;\n    printf(\"%d\", a < b < c);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "Chained comparisons are evaluated left to right.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int a = 3, b = 2, c = 1;\n    printf(\"%d\", a > b > c);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "a > b > c in C means (a > b) > c, not a > b AND b > c.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    printf(\"%d\", x / 0);\n    return 0;\n}",
+        "o": [
+            "Undefined behavior",
+            "0",
+            "Infinity",
+            "Error"
+        ]
+    },
+    {
+        "q": "Integer division by zero is undefined behavior.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%f\", 10.0 / 0.0);\n    return 0;\n}",
+        "o": [
+            "inf",
+            "0",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "Floating-point division by zero produces infinity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the special floating-point values:",
+        "type": "match",
+        "left": [
+            "1.0/0.0",
+            "-1.0/0.0",
+            "0.0/0.0",
+            "sqrt(-1)"
+        ],
+        "right": [
+            "+inf",
+            "-inf",
+            "nan",
+            "nan"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    x += x -= x *= 2;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "0",
+            "5",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Compound assignments are evaluated right to left.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int i = 0;\n    printf(\"%d\", i++ + ++i);\n    return 0;\n}",
+        "o": [
+            "Undefined behavior",
+            "2",
+            "1",
+            "3"
+        ]
+    },
+    {
+        "q": "Using ++ twice on same variable in one expression is undefined.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ operator has the lowest precedence.",
+        "type": "fill_blank",
+        "answers": [
+            ",",
+            "comma"
+        ],
+        "other_options": [
+            "=",
+            "?:",
+            "||"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = (printf(\"Hello\"), 5);\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "Hello5",
+            "5",
+            "Hello",
+            "Error"
+        ]
+    },
+    {
+        "q": "The comma operator can be used for side effects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    for(int i=0, j=10; i<j; i++, j--)\n        printf(\"%d \", i);\n    return 0;\n}",
+        "o": [
+            "0 1 2 3 4",
+            "0 1 2 3 4 5",
+            "0 1 2 3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Comma in for loop header separates expressions, not declarations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0;\n    int y = (x = 5, x + 1);\n    printf(\"%d\", y);\n    return 0;\n}",
+        "o": [
+            "6",
+            "5",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int a = 5 && 3;\n    printf(\"%d\", a);\n    return 0;\n}",
+        "o": [
+            "1",
+            "5",
+            "3",
+            "15"
+        ]
+    },
+    {
+        "q": "Logical AND returns 1, not the second operand.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int a = 0 || 7;\n    printf(\"%d\", a);\n    return 0;\n}",
+        "o": [
+            "1",
+            "7",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "C's logical operators return 1 or 0, not the operand values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    printf(\"%d\", !!x);\n    return 0;\n}",
+        "o": [
+            "1",
+            "5",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Double negation normalizes any non-zero to 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = -5;\n    printf(\"%d\", !!x);\n    return 0;\n}",
+        "o": [
+            "1",
+            "-1",
+            "0",
+            "5"
+        ]
+    },
+    {
+        "q": "Match the conversion sequences:",
+        "type": "match",
+        "left": [
+            "int + double",
+            "char + int",
+            "short * long",
+            "float - int"
+        ],
+        "right": [
+            "double",
+            "int",
+            "long",
+            "float"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 'A' + 1;\n    printf(\"%c\", x);\n    return 0;\n}",
+        "o": [
+            "B",
+            "A1",
+            "66",
+            "Error"
+        ]
+    },
+    {
+        "q": "Characters are promoted to integers for arithmetic.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%c\", 'Z' - 'A' + 'a');\n    return 0;\n}",
+        "o": [
+            "z",
+            "Z",
+            "a",
+            "Error"
+        ]
+    },
+    {
+        "q": "Character arithmetic can convert between cases.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 1 ^ 1 ^ 1;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "XOR is associative: a^b^a = b.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int arr[] = {1,2,3,4,5};\n    int n = sizeof(arr)/sizeof(arr[0]);\n    printf(\"%d\", arr[n/2]);\n    return 0;\n}",
+        "o": [
+            "3",
+            "2",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    int y = 20;\n    int z = x > y ? x : y;\n    printf(\"%d\", z);\n    return 0;\n}",
+        "o": [
+            "20",
+            "10",
+            "1",
+            "0"
+        ]
+    },
+    {
+        "q": "The ternary operator can find max of two values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    int y = 20;\n    int z = x < y ? x : y;\n    printf(\"%d\", z);\n    return 0;\n}",
+        "o": [
+            "10",
+            "20",
+            "1",
+            "0"
+        ]
+    },
+    {
+        "q": "The ternary operator can find min of two values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange from lowest to highest precedence:",
+        "type": "rearrange",
+        "words": [
+            ", (comma)",
+            "= +=",
+            "?:",
+            "||",
+            "&&"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int a = 1 || 2 && 0;\n    printf(\"%d\", a);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "&& has higher precedence than ||.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int a = (1 || 2) && 0;\n    printf(\"%d\", a);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5 & 3 | 2;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "3",
+            "7",
+            "1",
+            "0"
+        ]
+    },
+    {
+        "q": "& has higher precedence than |.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5 | 3 & 2;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "7",
+            "3",
+            "0",
+            "6"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 1 < 2 == 2 < 3;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "< and > have higher precedence than == and !=.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 3;\n    printf(\"%d\", a != b == 1);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the operator precedence groups (highest first):",
+        "type": "match",
+        "left": [
+            "() []",
+            "++ -- !",
+            "* / %",
+            "+ -"
+        ],
+        "right": [
+            "Level 1",
+            "Level 2",
+            "Level 3",
+            "Level 4"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0xF0;\n    int y = 0x0F;\n    printf(\"%x\", x | y);\n    return 0;\n}",
+        "o": [
+            "ff",
+            "f0",
+            "0f",
+            "Error"
+        ]
+    },
+    {
+        "q": "Hexadecimal OR combines bit patterns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0xF0;\n    int y = 0xFF;\n    printf(\"%x\", x & y);\n    return 0;\n}",
+        "o": [
+            "f0",
+            "ff",
+            "0f",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0xAB;\n    printf(\"%x\", x ^ 0xFF);\n    return 0;\n}",
+        "o": [
+            "54",
+            "ab",
+            "ff",
+            "Error"
+        ]
+    },
+    {
+        "q": "XOR with 0xFF inverts the lower 8 bits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b1010;\n    int y = 0b1100;\n    printf(\"%d\", x & y);\n    return 0;\n}",
+        "o": [
+            "8",
+            "14",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Binary literals (0b) are supported in C23 and many compilers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b1010;\n    int y = 0b0110;\n    printf(\"%d\", x | y);\n    return 0;\n}",
+        "o": [
+            "14",
+            "10",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the binary operations for 1010 and 1100:",
+        "type": "match",
+        "left": [
+            "AND",
+            "OR",
+            "XOR",
+            "NOT 1010"
+        ],
+        "right": [
+            "1000",
+            "1110",
+            "0110",
+            "0101"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 1;\n    while (x < 100) {\n        x <<= 1;\n    }\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "128",
+            "64",
+            "100",
+            "Error"
+        ]
+    },
+    {
+        "q": "Left shift doubles a value each time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 256;\n    int count = 0;\n    while (x > 1) {\n        x >>= 1;\n        count++;\n    }\n    printf(\"%d\", count);\n    return 0;\n}",
+        "o": [
+            "8",
+            "7",
+            "9",
+            "Error"
+        ]
+    },
+    {
+        "q": "Right shift halves a value each time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0x80000000;\n    printf(\"%u\", x >> 1);\n    return 0;\n}",
+        "o": [
+            "1073741824",
+            "0",
+            "2147483648",
+            "Error"
+        ]
+    },
+    {
+        "q": "Unsigned right shift fills with zeros.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = -8;\n    printf(\"%d\", x >> 1);\n    return 0;\n}",
+        "o": [
+            "-4",
+            "4",
+            "-3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Signed right shift is implementation-defined (arithmetic or logical).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ expression evaluates both conditions but returns the first true.",
+        "type": "fill_blank",
+        "answers": [
+            "ternary",
+            "?:"
+        ],
+        "other_options": [
+            "if-else",
+            "switch",
+            "&&"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int a = 1, b = 2, c = 3;\n    int max = (a > b) ? (a > c ? a : c) : (b > c ? b : c);\n    printf(\"%d\", max);\n    return 0;\n}",
+        "o": [
+            "3",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Nested ternary operators can find max of three values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    printf(\"%s\", x % 2 == 0 ? \"Even\" : \"Odd\");\n    return 0;\n}",
+        "o": [
+            "Odd",
+            "Even",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ternary operator can return strings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    (x > 5 ? printf(\"Big\") : printf(\"Small\"));\n    return 0;\n}",
+        "o": [
+            "Big",
+            "Small",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Ternary operator branches can contain function calls.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the operator types by typical precedence:",
+        "type": "rearrange",
+        "words": [
+            "Unary",
+            "Multiplicative",
+            "Additive",
+            "Relational",
+            "Logical"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    int y = x > 5 ? x++ : x--;\n    printf(\"%d %d\", x, y);\n    return 0;\n}",
+        "o": [
+            "11 10",
+            "10 10",
+            "9 10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Post-increment in ternary returns original value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    int y = x > 5 ? ++x : --x;\n    printf(\"%d %d\", x, y);\n    return 0;\n}",
+        "o": [
+            "11 11",
+            "10 11",
+            "11 10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pre-increment in ternary returns incremented value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int arr[] = {1, 2, 3};\n    int *p = arr;\n    printf(\"%d\", *p++);\n    return 0;\n}",
+        "o": [
+            "1",
+            "2",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "*p++ dereferences then increments the pointer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int arr[] = {1, 2, 3};\n    int *p = arr;\n    printf(\"%d\", (*p)++);\n    printf(\"%d\", *p);\n    return 0;\n}",
+        "o": [
+            "12",
+            "22",
+            "11",
+            "Error"
+        ]
+    },
+    {
+        "q": "(*p)++ increments the value, not the pointer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the pointer expressions:",
+        "type": "match",
+        "left": [
+            "*p++",
+            "(*p)++",
+            "++*p",
+            "*++p"
+        ],
+        "right": [
+            "Deref then inc ptr",
+            "Inc value",
+            "Inc then deref",
+            "Inc ptr then deref"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int arr[] = {1, 2, 3};\n    int *p = arr;\n    printf(\"%d\", *++p);\n    return 0;\n}",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "*++p increments pointer then dereferences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int arr[] = {1, 2, 3};\n    int *p = arr;\n    printf(\"%d\", ++*p);\n    return 0;\n}",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "++*p increments the value then returns it.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    printf(\"%d\", sizeof(x++));\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "45",
+            "46",
+            "55",
+            "Error"
+        ]
+    },
+    {
+        "q": "sizeof does not evaluate its operand at runtime.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ operator is evaluated at compile time.",
+        "type": "fill_blank",
+        "answers": [
+            "sizeof"
+        ],
+        "other_options": [
+            "strlen",
+            "typeof",
+            "sizeof()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    printf(\"%d\", (x = 5, x + 3));\n    return 0;\n}",
+        "o": [
+            "8",
+            "10",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 1, y = 2, z = 3;\n    x = y = z = 10;\n    printf(\"%d %d %d\", x, y, z);\n    return 0;\n}",
+        "o": [
+            "10 10 10",
+            "1 2 10",
+            "10 2 3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Chain assignment assigns the same value to all variables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    int y = (x *= 2) + 3;\n    printf(\"%d %d\", x, y);\n    return 0;\n}",
+        "o": [
+            "10 13",
+            "5 13",
+            "10 8",
+            "Error"
+        ]
+    },
+    {
+        "q": "Compound assignment returns the new value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 15;\n    printf(\"%d\", x & ~3);\n    return 0;\n}",
+        "o": [
+            "12",
+            "15",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "ANDing with ~3 clears the lowest 2 bits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 12;\n    printf(\"%d\", x | 3);\n    return 0;\n}",
+        "o": [
+            "15",
+            "12",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "ORing with 3 sets the lowest 2 bits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b1111;\n    printf(\"%d\", x ^ 0b0101);\n    return 0;\n}",
+        "o": [
+            "10",
+            "15",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "XOR toggles specific bits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the bit manipulation operations:",
+        "type": "rearrange",
+        "words": [
+            "Set bit: x |= mask",
+            "Clear bit: x &= ~mask",
+            "Toggle bit: x ^= mask",
+            "Check bit: x & mask"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0;\n    x |= (1 << 3);\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "8",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "(1 << n) creates a mask with bit n set.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0xFF;\n    x &= ~(1 << 4);\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "239",
+            "255",
+            "240",
+            "Error"
+        ]
+    },
+    {
+        "q": "~(1 << n) creates a mask with bit n cleared.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0xAB;\n    printf(\"%d\", (x >> 4) & 0xF);\n    return 0;\n}",
+        "o": [
+            "10",
+            "11",
+            "170",
+            "Error"
+        ]
+    },
+    {
+        "q": "Shift and mask extracts nibbles from bytes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0xAB;\n    printf(\"%d\", x & 0xF);\n    return 0;\n}",
+        "o": [
+            "11",
+            "10",
+            "171",
+            "Error"
+        ]
+    },
+    {
+        "q": "AND with 0xF extracts the lower nibble.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the bit extraction patterns:",
+        "type": "match",
+        "left": [
+            "x & 0xF",
+            "(x >> 4) & 0xF",
+            "x & 0xFF",
+            "(x >> 8) & 0xFF"
+        ],
+        "right": [
+            "Lower nibble",
+            "Upper nibble",
+            "Lower byte",
+            "Next byte"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    printf(\"%d\", x * 8);\n    printf(\" %d\", x << 3);\n    return 0;\n}",
+        "o": [
+            "40 40",
+            "40 8",
+            "8 40",
+            "Error"
+        ]
+    },
+    {
+        "q": "Left shift by 3 is equivalent to multiplying by 8.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 40;\n    printf(\"%d\", x / 8);\n    printf(\" %d\", x >> 3);\n    return 0;\n}",
+        "o": [
+            "5 5",
+            "5 8",
+            "8 5",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 7;\n    printf(\"%d\", x * 10);\n    printf(\" %d\", (x << 3) + (x << 1));\n    return 0;\n}",
+        "o": [
+            "70 70",
+            "70 80",
+            "80 70",
+            "Error"
+        ]
+    },
+    {
+        "q": "Multiplying by 10 can be done as (x<<3) + (x<<1).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned char x = 0x12;\n    unsigned char y = 0x34;\n    unsigned short z = (x << 8) | y;\n    printf(\"%x\", z);\n    return 0;\n}",
+        "o": [
+            "1234",
+            "3412",
+            "12",
+            "Error"
+        ]
+    },
+    {
+        "q": "Bit shifting can combine bytes into larger values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ operator extracts the low-order byte.",
+        "type": "fill_blank",
+        "answers": [
+            "& 0xFF",
+            "AND"
+        ],
+        "other_options": [
+            "| 0xFF",
+            "<< 8",
+            ">> 8"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0x1234;\n    printf(\"%x %x\", (x >> 8) & 0xFF, x & 0xFF);\n    return 0;\n}",
+        "o": [
+            "12 34",
+            "34 12",
+            "1234 0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Shift and mask splits a value into bytes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    int y = -5;\n    printf(\"%d\", x + y);\n    return 0;\n}",
+        "o": [
+            "0",
+            "10",
+            "-10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Adding a number and its negation gives zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    printf(\"%d\", -(-x));\n    return 0;\n}",
+        "o": [
+            "5",
+            "-5",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Double negation returns the original value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    printf(\"%d\", ~x + 1);\n    return 0;\n}",
+        "o": [
+            "-5",
+            "5",
+            "-6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Two's complement negation is ~x + 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the precedence (highest to lowest):",
+        "type": "rearrange",
+        "words": [
+            "++ --",
+            "! ~",
+            "* / %",
+            "+ -",
+            "<< >>"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    printf(\"%d\", x == 10);\n    printf(\"%d\", x = 10);\n    return 0;\n}",
+        "o": [
+            "110",
+            "1010",
+            "01",
+            "Error"
+        ]
+    },
+    {
+        "q": "= and == have very different meanings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    if (x = 0) printf(\"True\");\n    else printf(\"False\");\n    return 0;\n}",
+        "o": [
+            "False",
+            "True",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Using = instead of == in conditions is a common bug.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0;\n    if (x = 5) printf(\"True\");\n    else printf(\"False\");\n    return 0;\n}",
+        "o": [
+            "True",
+            "False",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Assignment returns the assigned value, which can be used in conditions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the common mistakes with corrections:",
+        "type": "match",
+        "left": [
+            "x = 5 (assignment)",
+            "x & y (bitwise)",
+            "x | y (bitwise)",
+            "!x (logical)"
+        ],
+        "right": [
+            "x == 5 (comparison)",
+            "x && y (logical)",
+            "x || y (logical)",
+            "~x (bitwise)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5 & 1 ? 10 : 20;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "10",
+            "20",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "5 & 1 equals 1 which is truthy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 4 & 1 ? 10 : 20;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "20",
+            "10",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "4 & 1 equals 0 which is falsy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int a = 1, b = 2, c = 3, d = 4;\n    int x = a + b * c - d;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "3",
+            "5",
+            "7",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int a = 1, b = 2, c = 3, d = 4;\n    int x = (a + b) * (c - d);\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "-3",
+            "3",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Parentheses override default precedence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    printf(\"%d\", x / 3 * 3 + x % 3);\n    return 0;\n}",
+        "o": [
+            "10",
+            "9",
+            "11",
+            "Error"
+        ]
+    },
+    {
+        "q": "(x/n)*n + x%n always equals x for positive integers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ operator calculates the absolute value conceptually.",
+        "type": "fill_blank",
+        "answers": [
+            "ternary",
+            "?:"
+        ],
+        "other_options": [
+            "abs",
+            "||",
+            "!"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = -5;\n    int abs_x = x < 0 ? -x : x;\n    printf(\"%d\", abs_x);\n    return 0;\n}",
+        "o": [
+            "5",
+            "-5",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Ternary can compute absolute value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 7, y = 3;\n    int sign = (x > y) - (x < y);\n    printf(\"%d\", sign);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "The sign function can be implemented without branches.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 3, y = 7;\n    int sign = (x > y) - (x < y);\n    printf(\"%d\", sign);\n    return 0;\n}",
+        "o": [
+            "-1",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5, y = 5;\n    int sign = (x > y) - (x < y);\n    printf(\"%d\", sign);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the comparison results:",
+        "type": "match",
+        "left": [
+            "5 > 3",
+            "3 > 5",
+            "5 == 5",
+            "5 != 5"
+        ],
+        "right": [
+            "1",
+            "0",
+            "1",
+            "0"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    int y = x > 3 && x < 10;\n    printf(\"%d\", y);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Chained comparisons require logical operators in C.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 15;\n    int y = x > 3 && x < 10;\n    printf(\"%d\", y);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "15",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0;\n    printf(\"%d\", x || 5);\n    return 0;\n}",
+        "o": [
+            "1",
+            "5",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "|| returns 1, not the truthy operand.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    printf(\"%d\", x && 10);\n    return 0;\n}",
+        "o": [
+            "1",
+            "10",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "&& returns 1, not the second truthy operand.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the evaluation order for &&:",
+        "type": "rearrange",
+        "words": [
+            "Evaluate left",
+            "If false return 0",
+            "Evaluate right",
+            "Return result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint f() { printf(\"f\"); return 1; }\nint g() { printf(\"g\"); return 1; }\nint main() {\n    f() && g();\n    return 0;\n}",
+        "o": [
+            "fg",
+            "f",
+            "gf",
+            "Error"
+        ]
+    },
+    {
+        "q": "Both sides of && are evaluated when left is true.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint f() { printf(\"f\"); return 0; }\nint g() { printf(\"g\"); return 1; }\nint main() {\n    f() && g();\n    return 0;\n}",
+        "o": [
+            "f",
+            "fg",
+            "gf",
+            "Error"
+        ]
+    },
+    {
+        "q": "Right side of && is skipped when left is false.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint f() { printf(\"f\"); return 1; }\nint g() { printf(\"g\"); return 1; }\nint main() {\n    f() || g();\n    return 0;\n}",
+        "o": [
+            "f",
+            "fg",
+            "gf",
+            "Error"
+        ]
+    },
+    {
+        "q": "Right side of || is skipped when left is true.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint f() { printf(\"f\"); return 0; }\nint g() { printf(\"g\"); return 1; }\nint main() {\n    f() || g();\n    return 0;\n}",
+        "o": [
+            "fg",
+            "f",
+            "gf",
+            "Error"
+        ]
+    },
+    {
+        "q": "Both sides of || are evaluated when left is false.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the short-circuit behaviors:",
+        "type": "match",
+        "left": [
+            "0 && x",
+            "1 && x",
+            "1 || x",
+            "0 || x"
+        ],
+        "right": [
+            "x not evaluated",
+            "x evaluated",
+            "x not evaluated",
+            "x evaluated"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    int y = (x > 0) - (x < 0);\n    printf(\"%d\", y);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0;\n    int y = (x > 0) - (x < 0);\n    printf(\"%d\", y);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = -5;\n    int y = (x > 0) - (x < 0);\n    printf(\"%d\", y);\n    return 0;\n}",
+        "o": [
+            "-1",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "The signum function returns -1, 0, or 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    int y = x & -x;\n    printf(\"%d\", y);\n    return 0;\n}",
+        "o": [
+            "2",
+            "10",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "x & -x isolates the lowest set bit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 12;\n    int y = x & -x;\n    printf(\"%d\", y);\n    return 0;\n}",
+        "o": [
+            "4",
+            "12",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 16;\n    int y = x & -x;\n    printf(\"%d\", y);\n    return 0;\n}",
+        "o": [
+            "16",
+            "1",
+            "8",
+            "Error"
+        ]
+    },
+    {
+        "q": "For powers of 2, x & -x equals x.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b11010;\n    int count = 0;\n    while (x) {\n        count += x & 1;\n        x >>= 1;\n    }\n    printf(\"%d\", count);\n    return 0;\n}",
+        "o": [
+            "3",
+            "5",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Counting set bits can be done by shifting and ANDing with 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 12;\n    int count = 0;\n    while (x) {\n        x = x & (x - 1);\n        count++;\n    }\n    printf(\"%d\", count);\n    return 0;\n}",
+        "o": [
+            "2",
+            "4",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Brian Kernighan's algorithm counts set bits efficiently.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b10110;\n    x = (x >> 1) | (x << 4);\n    x &= 0x1F;\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "11",
+            "22",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rotate right can be done with shift and OR.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the bit counting methods:",
+        "type": "match",
+        "left": [
+            "x & 1 loop",
+            "x & (x-1) loop",
+            "Lookup table",
+            "Parallel bit count"
+        ],
+        "right": [
+            "O(bits)",
+            "O(set bits)",
+            "O(bytes)",
+            "O(log bits)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0x12345678;\n    x = ((x & 0xFF00FF00) >> 8) | ((x & 0x00FF00FF) << 8);\n    printf(\"%x\", x);\n    return 0;\n}",
+        "o": [
+            "34127856",
+            "78563412",
+            "12345678",
+            "Error"
+        ]
+    },
+    {
+        "q": "Byte swapping uses mask, shift, and OR operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    int y = 3;\n    int z = x ^ y ^ x;\n    printf(\"%d\", z);\n    return 0;\n}",
+        "o": [
+            "3",
+            "5",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "XOR is self-inverse: a ^ b ^ a = b.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int arr[] = {1, 2, 3, 2, 1};\n    int result = 0;\n    for (int i = 0; i < 5; i++) result ^= arr[i];\n    printf(\"%d\", result);\n    return 0;\n}",
+        "o": [
+            "3",
+            "0",
+            "9",
+            "Error"
+        ]
+    },
+    {
+        "q": "XOR can find the single non-duplicate in a list.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the steps to swap using XOR:",
+        "type": "rearrange",
+        "words": [
+            "a ^= b",
+            "b ^= a",
+            "a ^= b"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    x = x ^ (1 << 2);\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "14",
+            "10",
+            "8",
+            "Error"
+        ]
+    },
+    {
+        "q": "XOR with a bit mask toggles that bit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 14;\n    x = x ^ (1 << 2);\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "10",
+            "14",
+            "16",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 7;\n    printf(\"%d\", (x & (x + 1)) == 0);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "7",
+            "Error"
+        ]
+    },
+    {
+        "q": "(x & (x+1)) == 0 checks if x is 2^n - 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 6;\n    printf(\"%d\", (x & (x + 1)) == 0);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the power-of-2 checks:",
+        "type": "match",
+        "left": [
+            "x & (x-1) == 0",
+            "x & (x+1) == 0",
+            "x & -x == x",
+            "x && !(x & (x-1))"
+        ],
+        "right": [
+            "Is power of 2",
+            "Is 2^n - 1",
+            "Is power of 2",
+            "Is power of 2 (non-zero)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = -10;\n    int mask = x >> 31;\n    printf(\"%d\", mask);\n    return 0;\n}",
+        "o": [
+            "-1",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Arithmetic right shift of negative fills with 1s.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    int mask = x >> 31;\n    printf(\"%d\", mask);\n    return 0;\n}",
+        "o": [
+            "0",
+            "-1",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = -10;\n    int abs_x = (x ^ (x >> 31)) - (x >> 31);\n    printf(\"%d\", abs_x);\n    return 0;\n}",
+        "o": [
+            "10",
+            "-10",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Branchless absolute value uses XOR and subtraction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    int abs_x = (x ^ (x >> 31)) - (x >> 31);\n    printf(\"%d\", abs_x);\n    return 0;\n}",
+        "o": [
+            "10",
+            "-10",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ technique avoids conditional branches.",
+        "type": "fill_blank",
+        "answers": [
+            "branchless",
+            "bitwise"
+        ],
+        "other_options": [
+            "conditional",
+            "ternary",
+            "switch"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5, y = 10;\n    int min = y ^ ((x ^ y) & -(x < y));\n    printf(\"%d\", min);\n    return 0;\n}",
+        "o": [
+            "5",
+            "10",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Branchless min uses XOR and mask.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5, y = 10;\n    int max = x ^ ((x ^ y) & -(x < y));\n    printf(\"%d\", max);\n    return 0;\n}",
+        "o": [
+            "10",
+            "5",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Branchless max uses the inverse mask of min.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the precedence for bitwise operators:",
+        "type": "rearrange",
+        "words": [
+            "~",
+            "<< >>",
+            "&",
+            "^",
+            "|"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    int y = x | x << 4;\n    printf(\"%d\", y);\n    return 0;\n}",
+        "o": [
+            "85",
+            "5",
+            "80",
+            "Error"
+        ]
+    },
+    {
+        "q": "Combining shifts with OR creates patterns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned x = 0xDEADBEEF;\n    unsigned y = ((x >> 16) ^ x) & 0xFFFF;\n    printf(\"%x\", y);\n    return 0;\n}",
+        "o": [
+            "608a",
+            "beef",
+            "dead",
+            "Error"
+        ]
+    },
+    {
+        "q": "XOR folding reduces bits while preserving entropy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    int y = 3;\n    int diff = x - y;\n    int sign = (diff >> 31) & 1;\n    printf(\"%d\", sign);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "The sign bit can be extracted by right shift and AND.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 3;\n    int y = 5;\n    int diff = x - y;\n    int sign = (diff >> 31) & 1;\n    printf(\"%d\", sign);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the sign bit extraction results:",
+        "type": "match",
+        "left": [
+            "(x >> 31) & 1 for x > 0",
+            "(x >> 31) & 1 for x < 0",
+            "(x >> 31) for x > 0",
+            "(x >> 31) for x < 0"
+        ],
+        "right": [
+            "0",
+            "1",
+            "0",
+            "-1"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int n = 3;\n    int mask = (1 << n) - 1;\n    printf(\"%d\", mask);\n    return 0;\n}",
+        "o": [
+            "7",
+            "8",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "(1 << n) - 1 creates a mask of n ones.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int n = 4;\n    int mask = ~((1 << n) - 1);\n    printf(\"%d\", mask & 0xFF);\n    return 0;\n}",
+        "o": [
+            "240",
+            "15",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "~((1 << n) - 1) creates a mask clearing n low bits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b11011011;\n    int pos = 4, len = 3;\n    int mask = ((1 << len) - 1) << pos;\n    printf(\"%d\", (x & mask) >> pos);\n    return 0;\n}",
+        "o": [
+            "5",
+            "3",
+            "7",
+            "Error"
+        ]
+    },
+    {
+        "q": "Bit field extraction uses mask and shift.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the steps for bit field extraction:",
+        "type": "rearrange",
+        "words": [
+            "Create mask of length bits",
+            "Shift mask to position",
+            "AND with value",
+            "Shift result right"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b11000011;\n    int pos = 2, len = 4, val = 0b1010;\n    int mask = ((1 << len) - 1) << pos;\n    x = (x & ~mask) | ((val << pos) & mask);\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "203",
+            "195",
+            "171",
+            "Error"
+        ]
+    },
+    {
+        "q": "Bit field insertion clears and sets bits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0xCAFEBABE;\n    x = ((x & 0xFFFF0000) >> 16) | ((x & 0x0000FFFF) << 16);\n    printf(\"%x\", x);\n    return 0;\n}",
+        "o": [
+            "babecafe",
+            "cafebabe",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Swapping halves uses shift, mask, and OR.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 100;\n    int n = 7;\n    int roundUp = (x + n) & ~n;\n    printf(\"%d\", roundUp);\n    return 0;\n}",
+        "o": [
+            "104",
+            "100",
+            "96",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rounding up to a power of 2 uses AND with negated mask.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 100;\n    int n = 8;\n    int roundDown = x & ~(n - 1);\n    printf(\"%d\", roundDown);\n    return 0;\n}",
+        "o": [
+            "96",
+            "100",
+            "104",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the rounding operations:",
+        "type": "match",
+        "left": [
+            "(x + n) & ~n",
+            "x & ~(n-1)",
+            "(x + n - 1) & ~(n-1)",
+            "(x + n/2) / n * n"
+        ],
+        "right": [
+            "Round up (mask)",
+            "Round down (mask)",
+            "Round up (power of 2)",
+            "Round nearest"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    int n = 8;\n    int nextPow = 1;\n    while (nextPow < x) nextPow <<= 1;\n    printf(\"%d\", nextPow);\n    return 0;\n}",
+        "o": [
+            "8",
+            "4",
+            "16",
+            "Error"
+        ]
+    },
+    {
+        "q": "Finding next power of 2 can be done by doubling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int v = 5;\n    v--;\n    v |= v >> 1;\n    v |= v >> 2;\n    v |= v >> 4;\n    v |= v >> 8;\n    v |= v >> 16;\n    v++;\n    printf(\"%u\", v);\n    return 0;\n}",
+        "o": [
+            "8",
+            "4",
+            "16",
+            "Error"
+        ]
+    },
+    {
+        "q": "Setting all bits below highest then adding 1 finds next power of 2.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ algorithm fills all bits below the highest set bit.",
+        "type": "fill_blank",
+        "answers": [
+            "smear",
+            "propagate"
+        ],
+        "other_options": [
+            "clear",
+            "toggle",
+            "shift"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b10110100;\n    int reversed = 0;\n    for (int i = 0; i < 8; i++) {\n        reversed = (reversed << 1) | (x & 1);\n        x >>= 1;\n    }\n    printf(\"%d\", reversed);\n    return 0;\n}",
+        "o": [
+            "45",
+            "180",
+            "90",
+            "Error"
+        ]
+    },
+    {
+        "q": "Bit reversal can be done with shift and OR loop.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 42;\n    int gray = x ^ (x >> 1);\n    printf(\"%d\", gray);\n    return 0;\n}",
+        "o": [
+            "63",
+            "42",
+            "21",
+            "Error"
+        ]
+    },
+    {
+        "q": "Gray code is computed as x ^ (x >> 1).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange by complexity (simplest first):",
+        "type": "rearrange",
+        "words": [
+            "Check odd: x & 1",
+            "Set bit: x | mask",
+            "Toggle bit: x ^ mask",
+            "Count bits: loop"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b11110000;\n    int parity = 0;\n    while (x) {\n        parity ^= 1;\n        x &= x - 1;\n    }\n    printf(\"%d\", parity);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Parity can be computed by toggling for each set bit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b11110001;\n    int parity = 0;\n    while (x) {\n        parity ^= 1;\n        x &= x - 1;\n    }\n    printf(\"%d\", parity);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0x12;\n    int y = 0x34;\n    int merged = (x & 0x0F) | ((y & 0x0F) << 4);\n    printf(\"%x\", merged);\n    return 0;\n}",
+        "o": [
+            "42",
+            "12",
+            "34",
+            "Error"
+        ]
+    },
+    {
+        "q": "Nibble merging uses mask and shift.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the bit operations with their purposes:",
+        "type": "match",
+        "left": [
+            "x & (x-1)",
+            "x & -x",
+            "x | (x-1)",
+            "x ^ (x-1)"
+        ],
+        "right": [
+            "Clear lowest set bit",
+            "Isolate lowest set bit",
+            "Set lowest zeros",
+            "Toggle low bits through lowest 1"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b10110000;\n    int y = x | (x - 1);\n    printf(\"%d\", y & 0xFF);\n    return 0;\n}",
+        "o": [
+            "191",
+            "176",
+            "255",
+            "Error"
+        ]
+    },
+    {
+        "q": "x | (x-1) sets all bits from the lowest set bit down.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b10110000;\n    int y = x ^ (x - 1);\n    printf(\"%d\", y);\n    return 0;\n}",
+        "o": [
+            "31",
+            "176",
+            "16",
+            "Error"
+        ]
+    },
+    {
+        "q": "x ^ (x-1) creates a mask of trailing zeros plus the lowest 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0x12345678;\n    int leadingZeros = 0;\n    if (x == 0) leadingZeros = 32;\n    else {\n        if ((x & 0xFFFF0000) == 0) { leadingZeros += 16; x <<= 16; }\n        if ((x & 0xFF000000) == 0) { leadingZeros += 8; x <<= 8; }\n        if ((x & 0xF0000000) == 0) { leadingZeros += 4; x <<= 4; }\n        if ((x & 0xC0000000) == 0) { leadingZeros += 2; x <<= 2; }\n        if ((x & 0x80000000) == 0) { leadingZeros += 1; }\n    }\n    printf(\"%d\", leadingZeros);\n    return 0;\n}",
+        "o": [
+            "3",
+            "4",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Binary search counts leading zeros efficiently.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the steps for counting trailing zeros:",
+        "type": "rearrange",
+        "words": [
+            "Check if lower half is zero",
+            "Add count and shift",
+            "Check next half",
+            "Return count"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int flags = 0;\n    flags |= (1 << 0);\n    flags |= (1 << 2);\n    flags |= (1 << 4);\n    printf(\"%d\", flags);\n    return 0;\n}",
+        "o": [
+            "21",
+            "7",
+            "16",
+            "Error"
+        ]
+    },
+    {
+        "q": "Bit flags use OR to set multiple bits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#define READ 1\n#define WRITE 2\n#define EXEC 4\nint main() {\n    int perms = READ | EXEC;\n    printf(\"%d\", (perms & WRITE) != 0);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Checking a flag uses AND with the mask.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#define READ 1\n#define WRITE 2\n#define EXEC 4\nint main() {\n    int perms = READ | WRITE | EXEC;\n    perms &= ~WRITE;\n    printf(\"%d\", perms);\n    return 0;\n}",
+        "o": [
+            "5",
+            "7",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Clearing a flag uses AND with negated mask.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the flag operations:",
+        "type": "match",
+        "left": [
+            "flags |= FLAG",
+            "flags &= ~FLAG",
+            "flags ^= FLAG",
+            "(flags & FLAG) != 0"
+        ],
+        "right": [
+            "Set flag",
+            "Clear flag",
+            "Toggle flag",
+            "Check flag"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b10101010;\n    int evens = x & 0xAA;\n    int odds = x & 0x55;\n    printf(\"%d %d\", evens, odds);\n    return 0;\n}",
+        "o": [
+            "170 0",
+            "0 170",
+            "85 85",
+            "Error"
+        ]
+    },
+    {
+        "q": "0xAA and 0x55 are masks for even and odd bits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned char x = 0b10101010;\n    x = ((x & 0xAA) >> 1) | ((x & 0x55) << 1);\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "85",
+            "170",
+            "255",
+            "Error"
+        ]
+    },
+    {
+        "q": "Swapping even and odd bits uses two masks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange the mask patterns for swapping pairs:",
+        "type": "rearrange",
+        "words": [
+            "Mask even: 0xAA",
+            "Mask odd: 0x55",
+            "Shift right even",
+            "Shift left odd",
+            "OR results"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned char x = 0b11110000;\n    x = (x >> 4) | (x << 4);\n    printf(\"%d\", x);\n    return 0;\n}",
+        "o": [
+            "15",
+            "240",
+            "255",
+            "Error"
+        ]
+    },
+    {
+        "q": "Swapping nibbles uses shift and OR.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0xABCD;\n    int swapped = ((x & 0xFF) << 8) | ((x >> 8) & 0xFF);\n    printf(\"%x\", swapped);\n    return 0;\n}",
+        "o": [
+            "cdab",
+            "abcd",
+            "dcba",
+            "Error"
+        ]
+    },
+    {
+        "q": "Byte swapping for 16-bit values uses shift and mask.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the swap operations:",
+        "type": "match",
+        "left": [
+            "Nibble swap",
+            "Byte swap (16)",
+            "Byte swap (32)",
+            "Bit pair swap"
+        ],
+        "right": [
+            "x>>4 | x<<4",
+            "(x&0xFF)<<8 | x>>8",
+            "BSWAP instruction",
+            "(x&0xAA)>>1 | (x&0x55)<<1"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    int y = 3;\n    int select = 1;\n    int result = select ? x : y;\n    printf(\"%d\", result);\n    return 0;\n}",
+        "o": [
+            "5",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Ternary operator selects based on boolean.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    int y = 3;\n    int select = 0;\n    int result = ((-select) & x) | ((select - 1) & y);\n    printf(\"%d\", result);\n    return 0;\n}",
+        "o": [
+            "3",
+            "5",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Branchless select uses masks based on condition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int a = 10, b = 5, c = 8;\n    int temp = a < b ? a : b;\n    int min3 = temp < c ? temp : c;\n    printf(\"%d\", min3);\n    return 0;\n}",
+        "o": [
+            "5",
+            "8",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Min of three uses two comparisons.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 7;\n    int clamp_lo = 5, clamp_hi = 10;\n    int clamped = x < clamp_lo ? clamp_lo : (x > clamp_hi ? clamp_hi : x);\n    printf(\"%d\", clamped);\n    return 0;\n}",
+        "o": [
+            "7",
+            "5",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Clamping restricts a value to a range.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 3;\n    int clamp_lo = 5, clamp_hi = 10;\n    int clamped = x < clamp_lo ? clamp_lo : (x > clamp_hi ? clamp_hi : x);\n    printf(\"%d\", clamped);\n    return 0;\n}",
+        "o": [
+            "5",
+            "3",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 15;\n    int clamp_lo = 5, clamp_hi = 10;\n    int clamped = x < clamp_lo ? clamp_lo : (x > clamp_hi ? clamp_hi : x);\n    printf(\"%d\", clamped);\n    return 0;\n}",
+        "o": [
+            "10",
+            "15",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0xABCD1234;\n    unsigned int rotated = (x << 8) | (x >> 24);\n    printf(\"%X\", rotated);\n    return 0;\n}",
+        "o": [
+            "CD1234AB",
+            "1234ABCD",
+            "ABCD1234",
+            "Error"
+        ]
+    },
+    {
+        "q": "Circular rotation preserves all bits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b10110100;\n    int reversed = 0;\n    for(int i = 0; i < 8; i++) {\n        reversed |= ((x >> i) & 1) << (7 - i);\n    }\n    printf(\"%d\", reversed);\n    return 0;\n}",
+        "o": [
+            "45",
+            "180",
+            "90",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int a = 5, b = 3;\n    int avg = (a & b) + ((a ^ b) >> 1);\n    printf(\"%d\", avg);\n    return 0;\n}",
+        "o": [
+            "4",
+            "3",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Bitwise average avoids overflow issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0x12345678;\n    unsigned int swapped = ((x & 0x00FF00FF) << 8) | ((x & 0xFF00FF00) >> 8);\n    printf(\"%X\", swapped);\n    return 0;\n}",
+        "o": [
+            "34127856",
+            "78563412",
+            "12345678",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = -7;\n    int sign = (x >> 31) | (((unsigned)-x) >> 31);\n    printf(\"%d\", sign);\n    return 0;\n}",
+        "o": [
+            "-1",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Sign extraction uses arithmetic right shift.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5, y = 10;\n    int diff = x - y;\n    int mask = diff >> 31;\n    int min = y + (diff & mask);\n    printf(\"%d\", min);\n    return 0;\n}",
+        "o": [
+            "5",
+            "10",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0b11001010;\n    int count = 0;\n    while(x) { count++; x &= (x - 1); }\n    printf(\"%d\", count);\n    return 0;\n}",
+        "o": [
+            "4",
+            "5",
+            "3",
+            "8"
+        ]
+    },
+    {
+        "q": "Brian Kernighan algorithm counts set bits efficiently.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b10110000;\n    int pos = 0;\n    int temp = x;\n    while(!(temp & 1)) { pos++; temp >>= 1; }\n    printf(\"%d\", pos);\n    return 0;\n}",
+        "o": [
+            "4",
+            "5",
+            "3",
+            "0"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 60;\n    int isolated = x & (-x);\n    printf(\"%d\", isolated);\n    return 0;\n}",
+        "o": [
+            "4",
+            "60",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "The expression x & (-x) isolates the rightmost set bit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the bit manipulation techniques with their uses:",
+        "type": "match",
+        "left": [
+            "x & (x-1)",
+            "x & (-x)",
+            "x ^ x",
+            "~x + 1"
+        ],
+        "right": [
+            "Clear lowest set bit",
+            "Isolate lowest set bit",
+            "Zero out value",
+            "Two's complement negation"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0b00101100;\n    x |= (x - 1);\n    printf(\"%u\", x);\n    return 0;\n}",
+        "o": [
+            "47",
+            "44",
+            "45",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 12;\n    int next = (x | (x - 1)) + 1;\n    printf(\"%d\", next);\n    return 0;\n}",
+        "o": [
+            "16",
+            "13",
+            "14",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0xF0F0;\n    unsigned int y = 0x0F0F;\n    unsigned int merged = (x & 0xFF00) | (y & 0x00FF);\n    printf(\"%X\", merged);\n    return 0;\n}",
+        "o": [
+            "F00F",
+            "0FF0",
+            "F0F0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Masking allows selective bit merging.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 7, y = 3;\n    int gcd;\n    while(y) { int t = y; y = x % y; x = t; }\n    gcd = x;\n    printf(\"%d\", gcd);\n    return 0;\n}",
+        "o": [
+            "1",
+            "3",
+            "7",
+            "21"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 5;\n    unsigned int y = 3;\n    while(y) {\n        unsigned int t = (x & y) << 1;\n        x = x ^ y;\n        y = t;\n    }\n    printf(\"%u\", x);\n    return 0;\n}",
+        "o": [
+            "8",
+            "5",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Bitwise addition uses XOR for sum and AND-shift for carry.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    int neg = ~x + 1;\n    printf(\"%d\", neg);\n    return 0;\n}",
+        "o": [
+            "-5",
+            "5",
+            "-6",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ of x plus 1 gives the two's complement negation.",
+        "type": "fill_blank",
+        "answers": [
+            "complement",
+            "~x"
+        ],
+        "other_options": [
+            "inverse",
+            "NOT",
+            "opposite"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0b10101010;\n    unsigned int spread = x;\n    spread = (spread | (spread << 4)) & 0x0F0F;\n    spread = (spread | (spread << 2)) & 0x3333;\n    printf(\"%X\", spread);\n    return 0;\n}",
+        "o": [
+            "3232",
+            "AAAA",
+            "5555",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int a = 10, b = 20, c = 15;\n    int max = a > b ? (a > c ? a : c) : (b > c ? b : c);\n    printf(\"%d\", max);\n    return 0;\n}",
+        "o": [
+            "20",
+            "15",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Nested ternary finds maximum of three values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = -15;\n    int abs_x = (x ^ (x >> 31)) - (x >> 31);\n    printf(\"%d\", abs_x);\n    return 0;\n}",
+        "o": [
+            "15",
+            "-15",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b1101;\n    int y = 0b1011;\n    int diff = x ^ y;\n    int count = 0;\n    while(diff) { count++; diff &= (diff - 1); }\n    printf(\"%d\", count);\n    return 0;\n}",
+        "o": [
+            "2",
+            "3",
+            "4",
+            "1"
+        ]
+    },
+    {
+        "q": "Hamming distance counts differing bit positions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int n = 7;\n    unsigned int mask = (1U << n) - 1;\n    printf(\"%u\", mask);\n    return 0;\n}",
+        "o": [
+            "127",
+            "128",
+            "63",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 100;\n    int y = 25;\n    int q = 0;\n    while(x >= y) { x -= y; q++; }\n    printf(\"%d\", q);\n    return 0;\n}",
+        "o": [
+            "4",
+            "3",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Division by subtraction is slower than hardware division.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 15;\n    x = x | (x >> 1);\n    x = x | (x >> 2);\n    x = x | (x >> 4);\n    printf(\"%u\", x);\n    return 0;\n}",
+        "o": [
+            "15",
+            "31",
+            "16",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 10;\n    x = x | (x >> 1);\n    x = x | (x >> 2);\n    x = x | (x >> 4);\n    x = x + 1;\n    printf(\"%u\", x);\n    return 0;\n}",
+        "o": [
+            "16",
+            "15",
+            "11",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ power of two can be found by propagating bits and adding one.",
+        "type": "fill_blank",
+        "answers": [
+            "next",
+            "nearest"
+        ],
+        "other_options": [
+            "previous",
+            "largest",
+            "smallest"
+        ]
+    },
+    {
+        "q": "Arrange the steps to compute parity of a 32-bit integer:",
+        "type": "rearrange",
+        "words": [
+            "XOR right 16",
+            "XOR right 8",
+            "XOR right 4",
+            "XOR right 2",
+            "XOR right 1"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0xFF00FF00;\n    x = ((x >> 8) & 0x00FF00FF) | ((x & 0x00FF00FF) << 8);\n    printf(\"%X\", x);\n    return 0;\n}",
+        "o": [
+            "FF00FF",
+            "FF00FF00",
+            "0FF00FF0",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int arr[] = {3, 5, 3, 5, 7};\n    int result = 0;\n    for(int i = 0; i < 5; i++) result ^= arr[i];\n    printf(\"%d\", result);\n    return 0;\n}",
+        "o": [
+            "7",
+            "0",
+            "3",
+            "5"
+        ]
+    },
+    {
+        "q": "XOR of paired elements cancels to zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    int doubled = x << 1;\n    int quadrupled = x << 2;\n    printf(\"%d %d\", doubled, quadrupled);\n    return 0;\n}",
+        "o": [
+            "10 20",
+            "5 10",
+            "10 40",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 100;\n    int div8 = x >> 3;\n    printf(\"%d\", div8);\n    return 0;\n}",
+        "o": [
+            "12",
+            "13",
+            "8",
+            "Error"
+        ]
+    },
+    {
+        "q": "Right shift by 3 divides by 8.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 7;\n    int mul5 = (x << 2) + x;\n    printf(\"%d\", mul5);\n    return 0;\n}",
+        "o": [
+            "35",
+            "28",
+            "12",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 9;\n    int mul10 = (x << 3) + (x << 1);\n    printf(\"%d\", mul10);\n    return 0;\n}",
+        "o": [
+            "90",
+            "72",
+            "18",
+            "Error"
+        ]
+    },
+    {
+        "q": "Multiplication by 10 equals left shift 3 plus left shift 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the shift expressions with their multipliers:",
+        "type": "match",
+        "left": [
+            "x << 1",
+            "x << 2",
+            "x << 3",
+            "(x << 2) + x"
+        ],
+        "right": [
+            "Multiply by 2",
+            "Multiply by 4",
+            "Multiply by 8",
+            "Multiply by 5"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0xDEADBEEF;\n    unsigned int nibble = (x >> 20) & 0xF;\n    printf(\"%X\", nibble);\n    return 0;\n}",
+        "o": [
+            "A",
+            "D",
+            "E",
+            "B"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b11110000;\n    int y = 0b00001111;\n    int interleaved = 0;\n    for(int i = 0; i < 4; i++) {\n        interleaved |= ((x >> i) & 1) << (2*i + 1);\n        interleaved |= ((y >> i) & 1) << (2*i);\n    }\n    printf(\"%d\", interleaved);\n    return 0;\n}",
+        "o": [
+            "255",
+            "240",
+            "15",
+            "Error"
+        ]
+    },
+    {
+        "q": "Bit interleaving alternates bits from two sources.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int flags = 0b10101010;\n    int n = 3;\n    int bit = (flags >> n) & 1;\n    printf(\"%d\", bit);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b10101010;\n    int y = 0b01010101;\n    int xor_check = x ^ y;\n    int all_ones = (xor_check == 0xFF);\n    printf(\"%d\", all_ones);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "255",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned long long x = 1ULL << 40;\n    printf(\"%llu\", x >> 30);\n    return 0;\n}",
+        "o": [
+            "1024",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "64-bit shifts require ULL suffix for proper operation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 20, y = 13;\n    int borrowed;\n    int diff = x - y;\n    borrowed = (diff < 0) ? 1 : 0;\n    printf(\"%d %d\", diff, borrowed);\n    return 0;\n}",
+        "o": [
+            "7 0",
+            "7 1",
+            "-7 1",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0b11001100;\n    unsigned int compressed = 0;\n    int j = 0;\n    for(int i = 0; i < 8; i += 2) {\n        compressed |= ((x >> i) & 1) << j++;\n    }\n    printf(\"%u\", compressed);\n    return 0;\n}",
+        "o": [
+            "0",
+            "12",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 128;\n    int log2 = 0;\n    int temp = x;\n    while(temp >>= 1) log2++;\n    printf(\"%d\", log2);\n    return 0;\n}",
+        "o": [
+            "7",
+            "8",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Floor of log base 2 can be computed by counting right shifts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 255;\n    int y = 100;\n    int sum = x + y;\n    int saturated = (sum > 255) ? 255 : sum;\n    printf(\"%d\", saturated);\n    return 0;\n}",
+        "o": [
+            "255",
+            "355",
+            "100",
+            "Error"
+        ]
+    },
+    {
+        "q": "Saturation arithmetic clamps results to valid range.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b11110000;\n    int spread = 0;\n    for(int i = 0; i < 4; i++) {\n        if((x >> (i + 4)) & 1) spread |= (0b11 << (i * 2));\n    }\n    printf(\"%d\", spread);\n    return 0;\n}",
+        "o": [
+            "255",
+            "240",
+            "15",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int gray = 0b1011;\n    int binary = gray;\n    for(int mask = gray >> 1; mask; mask >>= 1) {\n        binary ^= mask;\n    }\n    printf(\"%d\", binary);\n    return 0;\n}",
+        "o": [
+            "13",
+            "11",
+            "14",
+            "Error"
+        ]
+    },
+    {
+        "q": "Gray code to binary conversion uses iterative XOR.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int binary = 13;\n    int gray = binary ^ (binary >> 1);\n    printf(\"%d\", gray);\n    return 0;\n}",
+        "o": [
+            "11",
+            "13",
+            "14",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match Gray code operations with formulas:",
+        "type": "match",
+        "left": [
+            "Binary to Gray",
+            "Gray first bit",
+            "Adjacent codes",
+            "Code distance"
+        ],
+        "right": [
+            "n XOR (n >> 1)",
+            "Same as binary MSB",
+            "Differ by one bit",
+            "Hamming distance 1"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0x80000000;\n    int leading = 0;\n    while(!(x & 0x80000000)) { leading++; x <<= 1; }\n    printf(\"%d\", leading);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "31",
+            "32"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0x00800000;\n    int leading = 0;\n    while(!(x & 0x80000000)) { leading++; x <<= 1; }\n    printf(\"%d\", leading);\n    return 0;\n}",
+        "o": [
+            "8",
+            "7",
+            "9",
+            "23"
+        ]
+    },
+    {
+        "q": "Leading zero count determines the position of MSB.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 45;\n    int y = 17;\n    int product = 0;\n    while(y) {\n        if(y & 1) product += x;\n        x <<= 1;\n        y >>= 1;\n    }\n    printf(\"%d\", product);\n    return 0;\n}",
+        "o": [
+            "765",
+            "62",
+            "45",
+            "Error"
+        ]
+    },
+    {
+        "q": "Peasant multiplication uses shift and add.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange steps of shift-and-add multiplication:",
+        "type": "rearrange",
+        "words": [
+            "Check LSB",
+            "Add if set",
+            "Left shift x",
+            "Right shift y",
+            "Loop until zero"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0b01100100;\n    unsigned int cleared = x & ~(x - 1) ^ x;\n    printf(\"%u\", cleared);\n    return 0;\n}",
+        "o": [
+            "96",
+            "100",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5, y = 10, z = 7;\n    int median = (x > y) ? ((y > z) ? y : ((x > z) ? z : x)) : ((x > z) ? x : ((y > z) ? z : y));\n    printf(\"%d\", median);\n    return 0;\n}",
+        "o": [
+            "7",
+            "5",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Median of three uses nested ternary operators.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0xFF;\n    int y = 0xAA;\n    int blend = (x & 0xF0) | (y & 0x0F);\n    printf(\"%X\", blend);\n    return 0;\n}",
+        "o": [
+            "FA",
+            "AF",
+            "FF",
+            "AA"
+        ]
+    },
+    {
+        "q": "Bit field blending combines parts of two values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0b11001100;\n    unsigned int parity = x;\n    parity ^= parity >> 4;\n    parity ^= parity >> 2;\n    parity ^= parity >> 1;\n    printf(\"%u\", parity & 1);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Parity computation uses cascading XOR operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = -8;\n    int sign_extended = x >> 2;\n    printf(\"%d\", sign_extended);\n    return 0;\n}",
+        "o": [
+            "-2",
+            "-4",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Arithmetic right shift preserves the sign bit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0b10101010;\n    unsigned int even_bits = x & 0x55;\n    printf(\"%u\", even_bits);\n    return 0;\n}",
+        "o": [
+            "0",
+            "170",
+            "85",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0b10101010;\n    unsigned int odd_bits = x & 0xAA;\n    printf(\"%u\", odd_bits);\n    return 0;\n}",
+        "o": [
+            "170",
+            "85",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the bit masks with their purposes:",
+        "type": "match",
+        "left": [
+            "0x55",
+            "0xAA",
+            "0x0F",
+            "0xF0"
+        ],
+        "right": [
+            "Extract even bits",
+            "Extract odd bits",
+            "Extract low nibble",
+            "Extract high nibble"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 25;\n    int closest_mult_8 = (x + 7) & ~7;\n    printf(\"%d\", closest_mult_8);\n    return 0;\n}",
+        "o": [
+            "32",
+            "24",
+            "25",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rounding up to power of 2 uses AND with inverted mask.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 32;\n    int round_down = x & ~7;\n    printf(\"%d\", round_down);\n    return 0;\n}",
+        "o": [
+            "32",
+            "24",
+            "28",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 37;\n    int round_down = x & ~7;\n    printf(\"%d\", round_down);\n    return 0;\n}",
+        "o": [
+            "32",
+            "40",
+            "37",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ operator with inverted mask rounds down to alignment.",
+        "type": "fill_blank",
+        "answers": [
+            "&",
+            "AND"
+        ],
+        "other_options": [
+            "|",
+            "^",
+            "~"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0x12345678;\n    unsigned int reversed = 0;\n    for(int i = 0; i < 4; i++) {\n        reversed = (reversed << 8) | ((x >> (i * 8)) & 0xFF);\n    }\n    printf(\"%X\", reversed);\n    return 0;\n}",
+        "o": [
+            "78563412",
+            "12345678",
+            "87654321",
+            "Error"
+        ]
+    },
+    {
+        "q": "Byte reversal is used for endianness conversion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    int n = 3;\n    int mod_pow2 = x & ((1 << n) - 1);\n    printf(\"%d\", mod_pow2);\n    return 0;\n}",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Modulo by power of 2 can be done with bitwise AND.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0b11110000;\n    int has_zero_byte = ((x - 0x01010101) & ~x & 0x80808080);\n    printf(\"%d\", has_zero_byte != 0);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "240",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 7;\n    int is_pow2_minus1 = (x & (x + 1)) == 0;\n    printf(\"%d\", is_pow2_minus1);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "7",
+            "Error"
+        ]
+    },
+    {
+        "q": "A number is 2^n - 1 if and of number and number plus 1 is zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 12;\n    int is_pow2_minus1 = (x & (x + 1)) == 0;\n    printf(\"%d\", is_pow2_minus1);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "12",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 6;\n    int has_alternating = ((x ^ (x >> 1)) == (1 << (__builtin_popcount(x))) - 1);\n    printf(\"%d\", 1);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int a = 15, b = 9;\n    while(b) {\n        int borrow = (~a) & b;\n        a = a ^ b;\n        b = borrow << 1;\n    }\n    printf(\"%d\", a);\n    return 0;\n}",
+        "o": [
+            "6",
+            "15",
+            "9",
+            "Error"
+        ]
+    },
+    {
+        "q": "Bitwise subtraction uses XOR and borrow propagation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0b10110;\n    unsigned int smeared = x;\n    smeared |= smeared >> 1;\n    smeared |= smeared >> 2;\n    smeared |= smeared >> 4;\n    printf(\"%u\", smeared);\n    return 0;\n}",
+        "o": [
+            "31",
+            "22",
+            "16",
+            "Error"
+        ]
+    },
+    {
+        "q": "Bit smearing fills all bits below the highest set bit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b1010;\n    int propagated = x | (x << 1);\n    printf(\"%d\", propagated);\n    return 0;\n}",
+        "o": [
+            "30",
+            "10",
+            "20",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the advanced bit operations with results:",
+        "type": "match",
+        "left": [
+            "x | (x >> 1)",
+            "x & (x - 1)",
+            "x | (x - 1)",
+            "x ^ (x - 1)"
+        ],
+        "right": [
+            "Smear bits right",
+            "Clear rightmost 1",
+            "Set trailing zeros",
+            "Mask through rightmost 1"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b1000;\n    int trailing_mask = x ^ (x - 1);\n    printf(\"%d\", trailing_mask);\n    return 0;\n}",
+        "o": [
+            "15",
+            "8",
+            "7",
+            "Error"
+        ]
+    },
+    {
+        "q": "The expression x ^ (x-1) creates a mask through rightmost 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b10100;\n    int filled = x | (x - 1);\n    printf(\"%d\", filled);\n    return 0;\n}",
+        "o": [
+            "31",
+            "20",
+            "19",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 5;\n    unsigned int y = 3;\n    unsigned int mul = 0;\n    while(y) {\n        if(y & 1) mul ^= x;\n        x <<= 1;\n        y >>= 1;\n    }\n    printf(\"%u\", mul);\n    return 0;\n}",
+        "o": [
+            "6",
+            "15",
+            "8",
+            "Error"
+        ]
+    },
+    {
+        "q": "Carryless multiplication uses XOR instead of addition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b1100;\n    int y = 0b1010;\n    int majority = (x & y) | (x & (x ^ y)) | (y & (x ^ y));\n    printf(\"%d\", majority);\n    return 0;\n}",
+        "o": [
+            "14",
+            "12",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 7;\n    int y = 11;\n    int z = 13;\n    int any_pair_equal = !((x ^ y) && (y ^ z) && (x ^ z));\n    printf(\"%d\", any_pair_equal);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "7",
+            "Error"
+        ]
+    },
+    {
+        "q": "XOR of equal values is zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int arr[] = {1, 2, 1, 2, 3, 4, 3};\n    int result = 0;\n    for(int i = 0; i < 7; i++) result ^= arr[i];\n    printf(\"%d\", result);\n    return 0;\n}",
+        "o": [
+            "4",
+            "0",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b11011011;\n    int consecutive = (x & (x >> 1));\n    printf(\"%d\", consecutive != 0);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "219",
+            "Error"
+        ]
+    },
+    {
+        "q": "Detecting consecutive 1s uses AND of value and shifted value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b10101010;\n    int no_consecutive = !(x & (x >> 1));\n    printf(\"%d\", no_consecutive);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "170",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0xCAFEBABE;\n    unsigned int byte2 = (x >> 16) & 0xFF;\n    printf(\"%X\", byte2);\n    return 0;\n}",
+        "o": [
+            "FE",
+            "CA",
+            "BA",
+            "BE"
+        ]
+    },
+    {
+        "q": "Byte extraction uses shift and mask with 0xFF.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange bit manipulation complexity levels:",
+        "type": "rearrange",
+        "words": [
+            "Single bit ops",
+            "Multi-bit masks",
+            "Bit counting",
+            "Bit reversal",
+            "SIMD within register"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 100;\n    int aligned = (x + 15) & ~15;\n    printf(\"%d\", aligned);\n    return 0;\n}",
+        "o": [
+            "112",
+            "100",
+            "96",
+            "Error"
+        ]
+    },
+    {
+        "q": "Alignment to 16 uses mask of inverted 15.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0xFF;\n    int replicated = x | (x << 8) | (x << 16) | (x << 24);\n    printf(\"%X\", (unsigned)replicated);\n    return 0;\n}",
+        "o": [
+            "FFFFFFFF",
+            "FF",
+            "FF00FF00",
+            "Error"
+        ]
+    },
+    {
+        "q": "Byte replication broadcasts a byte to all positions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b1111;\n    int toggled = x ^ 0b0110;\n    printf(\"%d\", toggled);\n    return 0;\n}",
+        "o": [
+            "9",
+            "15",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "XOR with a mask toggles the corresponding bits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0;\n    int set = 1;\n    int n = 5;\n    x = (x & ~(1 << n)) | (set << n);\n    printf(\"%u\", x);\n    return 0;\n}",
+        "o": [
+            "32",
+            "5",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Conditional bit set clears then ORs the new value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b11111111;\n    int width = 4;\n    int pos = 2;\n    int extracted = (x >> pos) & ((1 << width) - 1);\n    printf(\"%d\", extracted);\n    return 0;\n}",
+        "o": [
+            "15",
+            "63",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Bit field extraction uses shift and width mask.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int dest = 0xFF00;\n    unsigned int src = 0b1010;\n    int width = 4;\n    int pos = 4;\n    unsigned int mask = ((1 << width) - 1) << pos;\n    dest = (dest & ~mask) | ((src << pos) & mask);\n    printf(\"%X\", dest);\n    return 0;\n}",
+        "o": [
+            "FFA0",
+            "FF00",
+            "FFAA",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match bit field operations with formulas:",
+        "type": "match",
+        "left": [
+            "Extract field",
+            "Clear field",
+            "Set field",
+            "Toggle field"
+        ],
+        "right": [
+            "(x >> pos) & mask",
+            "x & ~(mask << pos)",
+            "(x & ~m) | (v & m)",
+            "x ^ (mask << pos)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b10010110;\n    int bit_count = 0;\n    int temp = x;\n    temp = temp - ((temp >> 1) & 0x55);\n    temp = (temp & 0x33) + ((temp >> 2) & 0x33);\n    bit_count = (temp + (temp >> 4)) & 0x0F;\n    printf(\"%d\", bit_count);\n    return 0;\n}",
+        "o": [
+            "4",
+            "5",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Parallel popcount uses divide and conquer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = -1;\n    int all_ones = (x == ~0);\n    printf(\"%d\", all_ones);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "The value -1 in two's complement has all bits set.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0b10101100;\n    unsigned int y = 0b11001010;\n    unsigned int same_sign = !((x ^ y) >> 7);\n    printf(\"%u\", same_sign);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "255",
+            "Error"
+        ]
+    },
+    {
+        "q": "Sign comparison uses XOR and check of sign bit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    int y = 3;\n    int z = 7;\n    int sorted = (x <= y) && (y <= z);\n    printf(\"%d\", sorted);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b11110000;\n    int y = 0b00001111;\n    int merged = (x & ~y) | (y & ~x);\n    printf(\"%d\", merged);\n    return 0;\n}",
+        "o": [
+            "255",
+            "0",
+            "240",
+            "Error"
+        ]
+    },
+    {
+        "q": "The expression (x & ~y) | (y & ~x) equals x XOR y.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int a = 1, b = 2, c = 3;\n    int result = a + b * c - a / b;\n    printf(\"%d\", result);\n    return 0;\n}",
+        "o": [
+            "7",
+            "6",
+            "8",
+            "Error"
+        ]
+    },
+    {
+        "q": "Multiplication has higher precedence than addition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 10;\n    int y = ++x + x++;\n    printf(\"%d\", y);\n    return 0;\n}",
+        "o": [
+            "23",
+            "22",
+            "24",
+            "Error"
+        ]
+    },
+    {
+        "q": "Mixing pre and post increment in expressions is undefined behavior.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    int y = (x++, x + 2);\n    printf(\"%d\", y);\n    return 0;\n}",
+        "o": [
+            "8",
+            "7",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "The comma operator evaluates left, discards, returns right.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b11111111;\n    int cleared = x & ~(1 << 4);\n    printf(\"%d\", cleared);\n    return 0;\n}",
+        "o": [
+            "239",
+            "255",
+            "240",
+            "Error"
+        ]
+    },
+    {
+        "q": "Clearing a bit uses AND with inverted single bit mask.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int a = 3, b = 4, c = 5;\n    int result = (a > b) ? a : (b > c) ? b : c;\n    printf(\"%d\", result);\n    return 0;\n}",
+        "o": [
+            "5",
+            "4",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int x = 0b1111;\n    unsigned int y = x << 4 | x;\n    printf(\"%u\", y);\n    return 0;\n}",
+        "o": [
+            "255",
+            "240",
+            "15",
+            "Error"
+        ]
+    },
+    {
+        "q": "OR with shifted self creates repeated bit pattern.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 10, y = 20;\n    int min_val = y ^ ((x ^ y) & -(x < y));\n    printf(\"%d\", min_val);\n    return 0;\n}",
+        "o": [
+            "10",
+            "20",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Branchless minimum uses XOR and conditional mask.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 0b10000000;\n    int position = 0;\n    while(x) { x >>= 1; position++; }\n    printf(\"%d\", position);\n    return 0;\n}",
+        "o": [
+            "8",
+            "7",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 64;\n    int is_single_bit = x && !(x & (x - 1));\n    printf(\"%d\", is_single_bit);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "64",
+            "Error"
+        ]
+    },
+    {
+        "q": "Power of two check uses AND of n and n-1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int rgb = 0xFF5733;\n    unsigned int red = (rgb >> 16) & 0xFF;\n    printf(\"%u\", red);\n    return 0;\n}",
+        "o": [
+            "255",
+            "87",
+            "51",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned int rgb = 0xFF5733;\n    unsigned int green = (rgb >> 8) & 0xFF;\n    printf(\"%u\", green);\n    return 0;\n}",
+        "o": [
+            "87",
+            "255",
+            "51",
+            "Error"
+        ]
+    },
+    {
+        "q": "RGB color extraction uses shift and 0xFF mask.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int x = 5;\n    int sign = (x > 0) - (x < 0);\n    printf(\"%d\", sign);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Sign function returns 1, 0, or -1 based on value.",
+        "type": "true_false",
+        "correct": "True"
+    }
+]

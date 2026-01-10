@@ -1,0 +1,5587 @@
+[
+    {
+        "q": "What is polymorphism in C++?",
+        "type": "mcq",
+        "o": [
+            "Ability of objects to take many forms",
+            "A type of loop",
+            "Memory allocation technique",
+            "File handling method"
+        ]
+    },
+    {
+        "q": "What are the two types of polymorphism in C++?",
+        "type": "mcq",
+        "o": [
+            "Compile-time and Runtime polymorphism",
+            "Static and Dynamic memory",
+            "Public and Private polymorphism",
+            "Single and Multiple polymorphism"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Animal {\npublic:\n    virtual void speak() { cout << \"Animal\"; }\n};\n\nclass Dog : public Animal {\npublic:\n    void speak() override { cout << \"Woof\"; }\n};\n\nint main() {\n    Animal* a = new Dog();\n    a->speak();\n    delete a;\n    return 0;\n}",
+        "o": [
+            "Woof",
+            "Animal",
+            "AnimalWoof",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which keyword enables runtime polymorphism?",
+        "type": "mcq",
+        "o": [
+            "virtual",
+            "static",
+            "const",
+            "inline"
+        ]
+    },
+    {
+        "q": "What is compile-time polymorphism?",
+        "type": "mcq",
+        "o": [
+            "Polymorphism resolved at compile time using overloading/templates",
+            "Polymorphism resolved at runtime",
+            "Virtual function calls",
+            "Dynamic dispatch"
+        ]
+    },
+    {
+        "q": "Polymorphism means 'many forms'.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual functions enable runtime polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ keyword makes a function virtual.",
+        "type": "fill_blank",
+        "answers": [
+            "virtual"
+        ],
+        "other_options": [
+            "static",
+            "inline",
+            "const"
+        ]
+    },
+    {
+        "q": "What is function overloading?",
+        "type": "mcq",
+        "o": [
+            "Multiple functions with same name but different parameters",
+            "One function with multiple return types",
+            "Replacing a function",
+            "Deleting a function"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nvoid print(int x) { cout << \"Int: \" << x; }\nvoid print(double x) { cout << \"Double: \" << x; }\n\nint main() {\n    print(5);\n    return 0;\n}",
+        "o": [
+            "Int: 5",
+            "Double: 5",
+            "Error",
+            "5"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nvoid print(int x) { cout << \"Int\"; }\nvoid print(double x) { cout << \"Double\"; }\nvoid print(int x, int y) { cout << \"TwoInt\"; }\n\nint main() {\n    print(3.14);\n    return 0;\n}",
+        "o": [
+            "Double",
+            "Int",
+            "TwoInt",
+            "Error"
+        ]
+    },
+    {
+        "q": "Function overloading is compile-time polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Functions can be overloaded by return type alone.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ polymorphism uses function overloading.",
+        "type": "fill_blank",
+        "answers": [
+            "compile-time"
+        ],
+        "other_options": [
+            "runtime",
+            "dynamic",
+            "virtual"
+        ]
+    },
+    {
+        "q": "What is operator overloading?",
+        "type": "mcq",
+        "o": [
+            "Giving operators new meaning for user-defined types",
+            "Creating new operators",
+            "Deleting operators",
+            "Operator inheritance"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Point {\npublic:\n    int x, y;\n    Point(int a, int b) : x(a), y(b) {}\n    Point operator+(const Point& p) {\n        return Point(x + p.x, y + p.y);\n    }\n};\n\nint main() {\n    Point p1(1, 2), p2(3, 4);\n    Point p3 = p1 + p2;\n    cout << p3.x << p3.y;\n    return 0;\n}",
+        "o": [
+            "46",
+            "13",
+            "24",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which operator cannot be overloaded?",
+        "type": "mcq",
+        "o": [
+            ":: (scope resolution)",
+            "+ (addition)",
+            "- (subtraction)",
+            "* (multiplication)"
+        ]
+    },
+    {
+        "q": "Which operator cannot be overloaded in C++?",
+        "type": "mcq",
+        "o": [
+            ". (member access)",
+            "[] (subscript)",
+            "() (function call)",
+            "-> (arrow)"
+        ]
+    },
+    {
+        "q": "Operator overloading is compile-time polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ operator overloads output stream.",
+        "type": "fill_blank",
+        "answers": [
+            "<<"
+        ],
+        "other_options": [
+            ">>",
+            "->",
+            "::"
+        ]
+    },
+    {
+        "q": "Match the polymorphism types:",
+        "type": "match",
+        "left": [
+            "Function overloading",
+            "Operator overloading",
+            "Virtual functions",
+            "Templates"
+        ],
+        "right": [
+            "Same name different params",
+            "Custom operators",
+            "Runtime dispatch",
+            "Generic programming"
+        ]
+    },
+    {
+        "q": "What is a virtual function?",
+        "type": "mcq",
+        "o": [
+            "A function that can be overridden in derived class with dynamic dispatch",
+            "A static function",
+            "A private function",
+            "An inline function"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void show() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\npublic:\n    void show() override { cout << \"Derived\"; }\n};\n\nint main() {\n    Base b;\n    Derived d;\n    Base& ref = d;\n    ref.show();\n    return 0;\n}",
+        "o": [
+            "Derived",
+            "Base",
+            "BaseDerived",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    void show() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\npublic:\n    void show() { cout << \"Derived\"; }\n};\n\nint main() {\n    Base* p = new Derived();\n    p->show();\n    delete p;\n    return 0;\n}",
+        "o": [
+            "Base",
+            "Derived",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Virtual functions use dynamic binding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Non-virtual functions use static binding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ binding resolves function calls at runtime.",
+        "type": "fill_blank",
+        "answers": [
+            "dynamic"
+        ],
+        "other_options": [
+            "static",
+            "early",
+            "compile-time"
+        ]
+    },
+    {
+        "q": "What is dynamic binding?",
+        "type": "mcq",
+        "o": [
+            "Function call resolved at runtime based on object type",
+            "Function call resolved at compile time",
+            "Static memory allocation",
+            "Template instantiation"
+        ]
+    },
+    {
+        "q": "What is static binding?",
+        "type": "mcq",
+        "o": [
+            "Function call resolved at compile time based on pointer/reference type",
+            "Function call resolved at runtime",
+            "Dynamic memory allocation",
+            "Virtual function call"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Shape {\npublic:\n    virtual void draw() { cout << \"Shape\"; }\n};\n\nclass Circle : public Shape {\npublic:\n    void draw() override { cout << \"Circle\"; }\n};\n\nclass Square : public Shape {\npublic:\n    void draw() override { cout << \"Square\"; }\n};\n\nint main() {\n    Shape* shapes[2];\n    shapes[0] = new Circle();\n    shapes[1] = new Square();\n    shapes[0]->draw();\n    shapes[1]->draw();\n    delete shapes[0];\n    delete shapes[1];\n    return 0;\n}",
+        "o": [
+            "CircleSquare",
+            "ShapeShape",
+            "Circle",
+            "Error"
+        ]
+    },
+    {
+        "q": "Dynamic binding requires virtual keyword.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ table stores virtual function addresses.",
+        "type": "fill_blank",
+        "answers": [
+            "vtable"
+        ],
+        "other_options": [
+            "symbol",
+            "function",
+            "address"
+        ]
+    },
+    {
+        "q": "What is a vtable (virtual table)?",
+        "type": "mcq",
+        "o": [
+            "Table of pointers to virtual functions for a class",
+            "Table of variables",
+            "Memory allocation table",
+            "Template table"
+        ]
+    },
+    {
+        "q": "What is a vptr (virtual pointer)?",
+        "type": "mcq",
+        "o": [
+            "Pointer in object pointing to class vtable",
+            "Pointer to void",
+            "Virtual variable pointer",
+            "Template pointer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    virtual void f() { cout << \"A\"; }\n};\n\nclass B : public A {\npublic:\n    void f() override { cout << \"B\"; }\n};\n\nclass C : public B {\npublic:\n    void f() override { cout << \"C\"; }\n};\n\nint main() {\n    A* p = new C();\n    p->f();\n    delete p;\n    return 0;\n}",
+        "o": [
+            "C",
+            "A",
+            "B",
+            "Error"
+        ]
+    },
+    {
+        "q": "Each class with virtual functions has its own vtable.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "vptr adds overhead to object size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pointer is hidden in objects with virtual functions.",
+        "type": "fill_blank",
+        "answers": [
+            "vptr"
+        ],
+        "other_options": [
+            "vtable",
+            "this",
+            "base"
+        ]
+    },
+    {
+        "q": "Rearrange virtual function call mechanism:",
+        "type": "rearrange",
+        "words": [
+            "Object created",
+            "vptr initialized",
+            "Virtual call made",
+            "vtable lookup",
+            "Function executed"
+        ]
+    },
+    {
+        "q": "What is a pure virtual function?",
+        "type": "mcq",
+        "o": [
+            "Virtual function with = 0 that must be overridden",
+            "Normal virtual function",
+            "Static function",
+            "Inline function"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Shape {\npublic:\n    virtual void draw() = 0;\n};\n\nclass Circle : public Shape {\npublic:\n    void draw() override { cout << \"Circle\"; }\n};\n\nint main() {\n    Circle c;\n    c.draw();\n    return 0;\n}",
+        "o": [
+            "Circle",
+            "Error",
+            "Shape",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "What happens if you don't override a pure virtual function?",
+        "type": "mcq",
+        "o": [
+            "Derived class becomes abstract too",
+            "Compilation succeeds",
+            "Default implementation used",
+            "Runtime error"
+        ]
+    },
+    {
+        "q": "Pure virtual functions make a class abstract.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Abstract classes cannot be instantiated.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ syntax makes a virtual function pure.",
+        "type": "fill_blank",
+        "answers": [
+            "= 0"
+        ],
+        "other_options": [
+            "= delete",
+            "= default",
+            "= nullptr"
+        ]
+    },
+    {
+        "q": "What is an abstract class?",
+        "type": "mcq",
+        "o": [
+            "Class with at least one pure virtual function",
+            "Class with no members",
+            "Final class",
+            "Template class"
+        ]
+    },
+    {
+        "q": "What is the purpose of abstract classes?",
+        "type": "mcq",
+        "o": [
+            "Define interface for derived classes",
+            "Create objects directly",
+            "Store data only",
+            "Prevent inheritance"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Printable {\npublic:\n    virtual void print() const = 0;\n    virtual ~Printable() = default;\n};\n\nclass Document : public Printable {\n    string content = \"Hello\";\npublic:\n    void print() const override { cout << content; }\n};\n\nint main() {\n    Document d;\n    d.print();\n    return 0;\n}",
+        "o": [
+            "Hello",
+            "Error",
+            "Nothing",
+            "Printable"
+        ]
+    },
+    {
+        "q": "Abstract classes can have non-virtual members.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Abstract classes can have constructors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "An _______ class has at least one pure virtual function.",
+        "type": "fill_blank",
+        "answers": [
+            "abstract"
+        ],
+        "other_options": [
+            "concrete",
+            "final",
+            "sealed"
+        ]
+    },
+    {
+        "q": "Match the class types:",
+        "type": "match",
+        "left": [
+            "Concrete class",
+            "Abstract class",
+            "Interface",
+            "Final class"
+        ],
+        "right": [
+            "Can instantiate",
+            "Has pure virtual",
+            "All pure virtual",
+            "Cannot inherit"
+        ]
+    },
+    {
+        "q": "What is the override specifier?",
+        "type": "mcq",
+        "o": [
+            "Tells compiler function overrides base virtual function",
+            "Makes function virtual",
+            "Deletes function",
+            "Makes function final"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void foo(int x) { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\npublic:\n    void foo(int x) override { cout << \"Derived\"; }\n};\n\nint main() {\n    Base* p = new Derived();\n    p->foo(1);\n    delete p;\n    return 0;\n}",
+        "o": [
+            "Derived",
+            "Base",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "What is the benefit of override?",
+        "type": "mcq",
+        "o": [
+            "Compiler error if no base function to override",
+            "Runtime checking",
+            "Memory optimization",
+            "No benefit"
+        ]
+    },
+    {
+        "q": "override prevents accidental function hiding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "override is mandatory for overriding.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ keyword catches override errors at compile time.",
+        "type": "fill_blank",
+        "answers": [
+            "override"
+        ],
+        "other_options": [
+            "virtual",
+            "final",
+            "explicit"
+        ]
+    },
+    {
+        "q": "What is the final specifier for functions?",
+        "type": "mcq",
+        "o": [
+            "Prevents function from being overridden",
+            "Makes function virtual",
+            "Deletes function",
+            "Makes function inline"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void foo() final { cout << \"Base\"; }\n};\n\nclass Derived : public Base {};\n\nint main() {\n    Derived d;\n    d.foo();\n    return 0;\n}",
+        "o": [
+            "Base",
+            "Derived",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "What is final specifier for classes?",
+        "type": "mcq",
+        "o": [
+            "Prevents class from being inherited",
+            "Makes class abstract",
+            "Makes class template",
+            "Deletes class"
+        ]
+    },
+    {
+        "q": "final prevents further override/inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "final can optimize virtual calls.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ specifier stops inheritance chain.",
+        "type": "fill_blank",
+        "answers": [
+            "final"
+        ],
+        "other_options": [
+            "override",
+            "sealed",
+            "const"
+        ]
+    },
+    {
+        "q": "What is runtime type information (RTTI)?",
+        "type": "mcq",
+        "o": [
+            "Mechanism to determine object type at runtime",
+            "Compile-time type checking",
+            "Template information",
+            "Memory information"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <typeinfo>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual ~Base() {}\n};\n\nclass Derived : public Base {};\n\nint main() {\n    Base* b = new Derived();\n    cout << (typeid(*b) == typeid(Derived));\n    delete b;\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "Error",
+            "Derived"
+        ]
+    },
+    {
+        "q": "What does typeid return?",
+        "type": "mcq",
+        "o": [
+            "Reference to type_info object",
+            "String type name",
+            "Type size",
+            "Memory address"
+        ]
+    },
+    {
+        "q": "RTTI requires virtual functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "typeid works without virtual for static types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ operator returns runtime type information.",
+        "type": "fill_blank",
+        "answers": [
+            "typeid"
+        ],
+        "other_options": [
+            "typeof",
+            "decltype",
+            "typeinfo"
+        ]
+    },
+    {
+        "q": "What is dynamic_cast?",
+        "type": "mcq",
+        "o": [
+            "Safe runtime cast for polymorphic types",
+            "Compile-time cast",
+            "Reinterpret cast",
+            "Const cast"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual ~Base() {}\n};\n\nclass Derived : public Base {\npublic:\n    void special() { cout << \"Special\"; }\n};\n\nint main() {\n    Base* b = new Derived();\n    Derived* d = dynamic_cast<Derived*>(b);\n    if (d) d->special();\n    delete b;\n    return 0;\n}",
+        "o": [
+            "Special",
+            "Error",
+            "Nothing",
+            "nullptr"
+        ]
+    },
+    {
+        "q": "What does dynamic_cast return on failure for pointers?",
+        "type": "mcq",
+        "o": [
+            "nullptr",
+            "Throws exception",
+            "Original pointer",
+            "Random pointer"
+        ]
+    },
+    {
+        "q": "What does dynamic_cast do on failure for references?",
+        "type": "mcq",
+        "o": [
+            "Throws std::bad_cast",
+            "Returns nullptr",
+            "Returns original reference",
+            "Undefined behavior"
+        ]
+    },
+    {
+        "q": "dynamic_cast performs runtime type checking.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "dynamic_cast requires polymorphic types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ cast safely downcasts polymorphic types.",
+        "type": "fill_blank",
+        "answers": [
+            "dynamic_cast"
+        ],
+        "other_options": [
+            "static_cast",
+            "reinterpret_cast",
+            "const_cast"
+        ]
+    },
+    {
+        "q": "Rearrange casts from safest to most dangerous:",
+        "type": "rearrange",
+        "words": [
+            "Implicit conversion",
+            "dynamic_cast",
+            "static_cast",
+            "reinterpret_cast"
+        ]
+    },
+    {
+        "q": "What is static_cast?",
+        "type": "mcq",
+        "o": [
+            "Compile-time cast without runtime checking",
+            "Runtime cast with checking",
+            "Const removal cast",
+            "Bit pattern cast"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual ~Base() {}\n};\n\nclass Derived : public Base {\npublic:\n    int value = 42;\n};\n\nint main() {\n    Base* b = new Derived();\n    Derived* d = static_cast<Derived*>(b);\n    cout << d->value;\n    delete b;\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "0",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "When is static_cast safe for downcasting?",
+        "type": "mcq",
+        "o": [
+            "When you're certain of the object's actual type",
+            "Always safe",
+            "Never safe",
+            "Only for primitive types"
+        ]
+    },
+    {
+        "q": "static_cast performs no runtime checking.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "static_cast is faster than dynamic_cast.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ cast performs compile-time type conversion.",
+        "type": "fill_blank",
+        "answers": [
+            "static_cast"
+        ],
+        "other_options": [
+            "dynamic_cast",
+            "reinterpret_cast",
+            "const_cast"
+        ]
+    },
+    {
+        "q": "Match the C++ casts:",
+        "type": "match",
+        "left": [
+            "static_cast",
+            "dynamic_cast",
+            "const_cast",
+            "reinterpret_cast"
+        ],
+        "right": [
+            "Compile-time",
+            "Runtime check",
+            "Remove const",
+            "Bit pattern"
+        ]
+    },
+    {
+        "q": "What is covariant return type?",
+        "type": "mcq",
+        "o": [
+            "Overriding function returns derived type of base return type",
+            "Same return type required",
+            "Different parameter types",
+            "Template return type"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual Base* clone() { return new Base(*this); }\n    virtual void identify() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\npublic:\n    Derived* clone() override { return new Derived(*this); }\n    void identify() override { cout << \"Derived\"; }\n};\n\nint main() {\n    Derived d;\n    Derived* cloned = d.clone();\n    cloned->identify();\n    delete cloned;\n    return 0;\n}",
+        "o": [
+            "Derived",
+            "Base",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "What types can be covariant return types?",
+        "type": "mcq",
+        "o": [
+            "Pointers or references to classes",
+            "Any types",
+            "Only primitive types",
+            "Only templates"
+        ]
+    },
+    {
+        "q": "Covariant return types must be pointers or references.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Covariant returns improve the clone pattern.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ return type allows derived type in override.",
+        "type": "fill_blank",
+        "answers": [
+            "covariant"
+        ],
+        "other_options": [
+            "contravariant",
+            "invariant",
+            "variant"
+        ]
+    },
+    {
+        "q": "What is virtual destructor?",
+        "type": "mcq",
+        "o": [
+            "Destructor declared virtual for proper polymorphic deletion",
+            "Automatic destructor",
+            "Default destructor",
+            "Static destructor"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual ~Base() { cout << \"B\"; }\n};\n\nclass Derived : public Base {\npublic:\n    ~Derived() { cout << \"D\"; }\n};\n\nint main() {\n    Base* p = new Derived();\n    delete p;\n    return 0;\n}",
+        "o": [
+            "DB",
+            "B",
+            "D",
+            "Error"
+        ]
+    },
+    {
+        "q": "What happens without virtual destructor in polymorphic deletion?",
+        "type": "mcq",
+        "o": [
+            "Only base destructor called, resource leak possible",
+            "Both destructors called",
+            "Compilation error",
+            "Runtime exception"
+        ]
+    },
+    {
+        "q": "Virtual destructor is essential for polymorphic base classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Destructor can be both virtual and pure virtual.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ destructor ensures proper cleanup in inheritance.",
+        "type": "fill_blank",
+        "answers": [
+            "virtual"
+        ],
+        "other_options": [
+            "inline",
+            "static",
+            "explicit"
+        ]
+    },
+    {
+        "q": "What is function hiding in C++?",
+        "type": "mcq",
+        "o": [
+            "Derived function with same name hides all base overloads",
+            "Function is deleted",
+            "Function is made private",
+            "Function is inlined"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void foo(int x) { cout << \"Base::foo(int)\"; }\n    virtual void foo(double x) { cout << \"Base::foo(double)\"; }\n};\n\nclass Derived : public Base {\npublic:\n    void foo(int x) override { cout << \"Derived::foo(int)\"; }\n};\n\nint main() {\n    Derived d;\n    d.foo(3.14);\n    return 0;\n}",
+        "o": [
+            "Derived::foo(int)",
+            "Base::foo(double)",
+            "Error",
+            "Base::foo(int)"
+        ]
+    },
+    {
+        "q": "How to prevent function hiding?",
+        "type": "mcq",
+        "o": [
+            "Use 'using Base::function;' in derived class",
+            "Make function private",
+            "Delete the function",
+            "Use final specifier"
+        ]
+    },
+    {
+        "q": "Function hiding affects all overloads of the same name.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "'using' declaration can bring hidden base functions into scope.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ declaration prevents function hiding.",
+        "type": "fill_blank",
+        "answers": [
+            "using"
+        ],
+        "other_options": [
+            "friend",
+            "public",
+            "virtual"
+        ]
+    },
+    {
+        "q": "What is object slicing?",
+        "type": "mcq",
+        "o": [
+            "Losing derived part when copying to base object",
+            "Cutting object in half",
+            "Object deletion",
+            "Memory fragmentation"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void show() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\npublic:\n    void show() override { cout << \"Derived\"; }\n};\n\nint main() {\n    Derived d;\n    Base b = d;\n    b.show();\n    return 0;\n}",
+        "o": [
+            "Base",
+            "Derived",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "How to prevent object slicing?",
+        "type": "mcq",
+        "o": [
+            "Use pointers or references",
+            "Use copy constructor",
+            "Use move semantics",
+            "Use const objects"
+        ]
+    },
+    {
+        "q": "Object slicing occurs when copying derived to base by value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "References prevent slicing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Object _______ loses derived class data.",
+        "type": "fill_blank",
+        "answers": [
+            "slicing"
+        ],
+        "other_options": [
+            "copying",
+            "moving",
+            "deleting"
+        ]
+    },
+    {
+        "q": "What is the Non-Virtual Interface (NVI) pattern?",
+        "type": "mcq",
+        "o": [
+            "Public non-virtual calls private virtual",
+            "Virtual interface",
+            "Abstract interface",
+            "Template interface"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    void execute() {\n        cout << \"pre\";\n        doWork();\n        cout << \"post\";\n    }\nprivate:\n    virtual void doWork() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\nprivate:\n    void doWork() override { cout << \"Derived\"; }\n};\n\nint main() {\n    Derived d;\n    d.execute();\n    return 0;\n}",
+        "o": [
+            "preDerivedpost",
+            "preBasepost",
+            "Error",
+            "Derived"
+        ]
+    },
+    {
+        "q": "Why use NVI pattern?",
+        "type": "mcq",
+        "o": [
+            "Control pre/post conditions in base class",
+            "Make code shorter",
+            "Improve performance",
+            "Reduce memory"
+        ]
+    },
+    {
+        "q": "NVI separates interface from implementation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Private virtual functions can be overridden.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern uses non-virtual public calling virtual private.",
+        "type": "fill_blank",
+        "answers": [
+            "NVI"
+        ],
+        "other_options": [
+            "CRTP",
+            "RAII",
+            "PIMPL"
+        ]
+    },
+    {
+        "q": "What is double dispatch?",
+        "type": "mcq",
+        "o": [
+            "Dispatching based on two object types at runtime",
+            "Two function calls",
+            "Dual inheritance",
+            "Multiple dispatch"
+        ]
+    },
+    {
+        "q": "What pattern commonly implements double dispatch?",
+        "type": "mcq",
+        "o": [
+            "Visitor pattern",
+            "Factory pattern",
+            "Singleton pattern",
+            "Observer pattern"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Circle;\nclass Square;\n\nclass Visitor {\npublic:\n    virtual void visit(Circle&) = 0;\n    virtual void visit(Square&) = 0;\n    virtual ~Visitor() = default;\n};\n\nclass Shape {\npublic:\n    virtual void accept(Visitor& v) = 0;\n    virtual ~Shape() = default;\n};\n\nclass Circle : public Shape {\npublic:\n    void accept(Visitor& v) override { v.visit(*this); }\n};\n\nclass Square : public Shape {\npublic:\n    void accept(Visitor& v) override { v.visit(*this); }\n};\n\nclass DrawVisitor : public Visitor {\npublic:\n    void visit(Circle&) override { cout << \"C\"; }\n    void visit(Square&) override { cout << \"S\"; }\n};\n\nint main() {\n    Circle c;\n    DrawVisitor v;\n    c.accept(v);\n    return 0;\n}",
+        "o": [
+            "C",
+            "S",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Double dispatch requires two virtual calls.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Visitor pattern solves the expression problem for operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern provides double dispatch.",
+        "type": "fill_blank",
+        "answers": [
+            "visitor"
+        ],
+        "other_options": [
+            "factory",
+            "strategy",
+            "template"
+        ]
+    },
+    {
+        "q": "Match the design patterns with polymorphism:",
+        "type": "match",
+        "left": [
+            "Strategy",
+            "Template Method",
+            "Visitor",
+            "Factory"
+        ],
+        "right": [
+            "Interchangeable behavior",
+            "Algorithm skeleton",
+            "Double dispatch",
+            "Object creation"
+        ]
+    },
+    {
+        "q": "What is the Strategy pattern?",
+        "type": "mcq",
+        "o": [
+            "Define family of algorithms and make them interchangeable",
+            "Create objects",
+            "Single algorithm",
+            "Observer notification"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass SortStrategy {\npublic:\n    virtual void sort() = 0;\n    virtual ~SortStrategy() = default;\n};\n\nclass QuickSort : public SortStrategy {\npublic:\n    void sort() override { cout << \"Quick\"; }\n};\n\nclass MergeSort : public SortStrategy {\npublic:\n    void sort() override { cout << \"Merge\"; }\n};\n\nclass Sorter {\n    SortStrategy* strategy;\npublic:\n    Sorter(SortStrategy* s) : strategy(s) {}\n    void execute() { strategy->sort(); }\n};\n\nint main() {\n    MergeSort ms;\n    Sorter s(&ms);\n    s.execute();\n    return 0;\n}",
+        "o": [
+            "Merge",
+            "Quick",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Strategy pattern uses composition over inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Strategy allows changing behavior at runtime.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern switches algorithms at runtime.",
+        "type": "fill_blank",
+        "answers": [
+            "strategy"
+        ],
+        "other_options": [
+            "template method",
+            "factory",
+            "decorator"
+        ]
+    },
+    {
+        "q": "What is template method pattern?",
+        "type": "mcq",
+        "o": [
+            "Base defines algorithm skeleton, derived fills in steps",
+            "Template programming",
+            "Generic algorithms",
+            "Virtual templates"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Game {\npublic:\n    void play() {\n        start();\n        run();\n        end();\n    }\nprotected:\n    virtual void start() { cout << \"S\"; }\n    virtual void run() = 0;\n    virtual void end() { cout << \"E\"; }\n};\n\nclass Chess : public Game {\nprotected:\n    void run() override { cout << \"Chess\"; }\n};\n\nint main() {\n    Chess c;\n    c.play();\n    return 0;\n}",
+        "o": [
+            "SChessE",
+            "Chess",
+            "Error",
+            "SE"
+        ]
+    },
+    {
+        "q": "Template method uses inheritance for customization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Template method keeps algorithm structure in base.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ method pattern defines algorithm skeleton.",
+        "type": "fill_blank",
+        "answers": [
+            "template"
+        ],
+        "other_options": [
+            "strategy",
+            "factory",
+            "visitor"
+        ]
+    },
+    {
+        "q": "What is the State pattern?",
+        "type": "mcq",
+        "o": [
+            "Object behavior changes based on internal state",
+            "Static state",
+            "Constant behavior",
+            "Immutable objects"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass State {\npublic:\n    virtual void handle() = 0;\n    virtual ~State() = default;\n};\n\nclass On : public State {\npublic:\n    void handle() override { cout << \"On\"; }\n};\n\nclass Off : public State {\npublic:\n    void handle() override { cout << \"Off\"; }\n};\n\nclass Switch {\n    State* state;\npublic:\n    Switch(State* s) : state(s) {}\n    void press() { state->handle(); }\n};\n\nint main() {\n    On on;\n    Switch s(&on);\n    s.press();\n    return 0;\n}",
+        "o": [
+            "On",
+            "Off",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "State pattern encapsulates state-specific behavior.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "State pattern uses polymorphism for state transitions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern changes behavior based on object state.",
+        "type": "fill_blank",
+        "answers": [
+            "state"
+        ],
+        "other_options": [
+            "strategy",
+            "command",
+            "observer"
+        ]
+    },
+    {
+        "q": "Rearrange design patterns by purpose:",
+        "type": "rearrange",
+        "words": [
+            "Factory (creation)",
+            "Strategy (behavior)",
+            "Adapter (structure)",
+            "Observer (communication)"
+        ]
+    },
+    {
+        "q": "What is the Command pattern?",
+        "type": "mcq",
+        "o": [
+            "Encapsulate request as object for parameterization",
+            "Direct function call",
+            "Callback function",
+            "Event handler"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Command {\npublic:\n    virtual void execute() = 0;\n    virtual ~Command() = default;\n};\n\nclass PrintCommand : public Command {\n    string msg;\npublic:\n    PrintCommand(string m) : msg(m) {}\n    void execute() override { cout << msg; }\n};\n\nint main() {\n    PrintCommand cmd(\"Hello\");\n    cmd.execute();\n    return 0;\n}",
+        "o": [
+            "Hello",
+            "Error",
+            "Nothing",
+            "PrintCommand"
+        ]
+    },
+    {
+        "q": "Command pattern enables undo functionality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Command pattern decouples invoker from receiver.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern encapsulates requests as objects.",
+        "type": "fill_blank",
+        "answers": [
+            "command"
+        ],
+        "other_options": [
+            "strategy",
+            "observer",
+            "state"
+        ]
+    },
+    {
+        "q": "What is the Observer pattern?",
+        "type": "mcq",
+        "o": [
+            "Define one-to-many dependency for state changes",
+            "Single observer",
+            "Direct notification",
+            "Polling mechanism"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nclass Observer {\npublic:\n    virtual void update(int v) = 0;\n    virtual ~Observer() = default;\n};\n\nclass Subject {\n    vector<Observer*> observers;\n    int value = 0;\npublic:\n    void attach(Observer* o) { observers.push_back(o); }\n    void setValue(int v) {\n        value = v;\n        for (auto o : observers) o->update(value);\n    }\n};\n\nclass Display : public Observer {\npublic:\n    void update(int v) override { cout << v; }\n};\n\nint main() {\n    Subject s;\n    Display d;\n    s.attach(&d);\n    s.setValue(42);\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "0",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Observer pattern implements publish-subscribe.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Observer allows loose coupling between objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern notifies dependents of state changes.",
+        "type": "fill_blank",
+        "answers": [
+            "observer"
+        ],
+        "other_options": [
+            "mediator",
+            "command",
+            "state"
+        ]
+    },
+    {
+        "q": "Match the behavioral patterns:",
+        "type": "match",
+        "left": [
+            "Command",
+            "Observer",
+            "State",
+            "Strategy"
+        ],
+        "right": [
+            "Request object",
+            "Notify change",
+            "Behavior by state",
+            "Swap algorithm"
+        ]
+    },
+    {
+        "q": "What is the Decorator pattern?",
+        "type": "mcq",
+        "o": [
+            "Add responsibilities dynamically without subclassing",
+            "Final decoration",
+            "Static decoration",
+            "Template decoration"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Coffee {\npublic:\n    virtual string getDescription() = 0;\n    virtual ~Coffee() = default;\n};\n\nclass SimpleCoffee : public Coffee {\npublic:\n    string getDescription() override { return \"Coffee\"; }\n};\n\nclass MilkDecorator : public Coffee {\n    Coffee* coffee;\npublic:\n    MilkDecorator(Coffee* c) : coffee(c) {}\n    string getDescription() override { return coffee->getDescription() + \"+Milk\"; }\n};\n\nint main() {\n    SimpleCoffee c;\n    MilkDecorator m(&c);\n    cout << m.getDescription();\n    return 0;\n}",
+        "o": [
+            "Coffee+Milk",
+            "Coffee",
+            "Milk",
+            "Error"
+        ]
+    },
+    {
+        "q": "Decorator uses composition and inheritance together.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Decorators can be stacked.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern adds behavior dynamically.",
+        "type": "fill_blank",
+        "answers": [
+            "decorator"
+        ],
+        "other_options": [
+            "adapter",
+            "proxy",
+            "facade"
+        ]
+    },
+    {
+        "q": "What is the Adapter pattern?",
+        "type": "mcq",
+        "o": [
+            "Convert interface to another interface clients expect",
+            "Create objects",
+            "Decorate objects",
+            "Proxy objects"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Target {\npublic:\n    virtual void request() = 0;\n    virtual ~Target() = default;\n};\n\nclass Adaptee {\npublic:\n    void specificRequest() { cout << \"Adapted\"; }\n};\n\nclass Adapter : public Target {\n    Adaptee adaptee;\npublic:\n    void request() override { adaptee.specificRequest(); }\n};\n\nint main() {\n    Adapter a;\n    a.request();\n    return 0;\n}",
+        "o": [
+            "Adapted",
+            "Error",
+            "Target",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Adapter pattern wraps incompatible interface.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Adapter enables reuse of existing classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern makes incompatible interfaces work together.",
+        "type": "fill_blank",
+        "answers": [
+            "adapter"
+        ],
+        "other_options": [
+            "decorator",
+            "proxy",
+            "bridge"
+        ]
+    },
+    {
+        "q": "Rearrange structural patterns:",
+        "type": "rearrange",
+        "words": [
+            "Adapter (interface conversion)",
+            "Decorator (add behavior)",
+            "Proxy (access control)",
+            "Facade (simplify interface)"
+        ]
+    },
+    {
+        "q": "What is the Proxy pattern?",
+        "type": "mcq",
+        "o": [
+            "Provide surrogate to control access to object",
+            "Direct access",
+            "No access control",
+            "Decorator pattern"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Image {\npublic:\n    virtual void display() = 0;\n    virtual ~Image() = default;\n};\n\nclass RealImage : public Image {\npublic:\n    RealImage() { cout << \"Loading\"; }\n    void display() override { cout << \"Display\"; }\n};\n\nclass ProxyImage : public Image {\n    RealImage* real = nullptr;\npublic:\n    void display() override {\n        if (!real) real = new RealImage();\n        real->display();\n    }\n    ~ProxyImage() { delete real; }\n};\n\nint main() {\n    ProxyImage p;\n    p.display();\n    return 0;\n}",
+        "o": [
+            "LoadingDisplay",
+            "Display",
+            "Loading",
+            "Error"
+        ]
+    },
+    {
+        "q": "Proxy controls access to real object.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lazy loading is a use case for proxy pattern.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern provides a surrogate object.",
+        "type": "fill_blank",
+        "answers": [
+            "proxy"
+        ],
+        "other_options": [
+            "adapter",
+            "decorator",
+            "facade"
+        ]
+    },
+    {
+        "q": "What is the Factory Method pattern?",
+        "type": "mcq",
+        "o": [
+            "Define interface for creating objects, subclass decides type",
+            "Direct instantiation",
+            "Singleton creation",
+            "Builder pattern"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Product {\npublic:\n    virtual void use() = 0;\n    virtual ~Product() = default;\n};\n\nclass ConcreteProductA : public Product {\npublic:\n    void use() override { cout << \"A\"; }\n};\n\nclass Creator {\npublic:\n    virtual Product* create() = 0;\n    void operation() { create()->use(); }\n    virtual ~Creator() = default;\n};\n\nclass CreatorA : public Creator {\npublic:\n    Product* create() override { return new ConcreteProductA(); }\n};\n\nint main() {\n    CreatorA c;\n    c.operation();\n    return 0;\n}",
+        "o": [
+            "A",
+            "Error",
+            "Nothing",
+            "Product"
+        ]
+    },
+    {
+        "q": "Factory method defers instantiation to subclasses.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Factory method uses polymorphism for object creation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ method pattern lets subclasses decide object creation.",
+        "type": "fill_blank",
+        "answers": [
+            "factory"
+        ],
+        "other_options": [
+            "template",
+            "builder",
+            "prototype"
+        ]
+    },
+    {
+        "q": "Match creational patterns:",
+        "type": "match",
+        "left": [
+            "Factory Method",
+            "Abstract Factory",
+            "Builder",
+            "Prototype"
+        ],
+        "right": [
+            "Subclass creates",
+            "Family of products",
+            "Step by step",
+            "Clone objects"
+        ]
+    },
+    {
+        "q": "What is Abstract Factory pattern?",
+        "type": "mcq",
+        "o": [
+            "Create families of related objects without specifying classes",
+            "Single product creation",
+            "Concrete factory",
+            "Simple factory"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Button {\npublic:\n    virtual void render() = 0;\n    virtual ~Button() = default;\n};\n\nclass WinButton : public Button {\npublic:\n    void render() override { cout << \"Win\"; }\n};\n\nclass MacButton : public Button {\npublic:\n    void render() override { cout << \"Mac\"; }\n};\n\nclass GUIFactory {\npublic:\n    virtual Button* createButton() = 0;\n    virtual ~GUIFactory() = default;\n};\n\nclass WinFactory : public GUIFactory {\npublic:\n    Button* createButton() override { return new WinButton(); }\n};\n\nint main() {\n    WinFactory f;\n    Button* b = f.createButton();\n    b->render();\n    delete b;\n    return 0;\n}",
+        "o": [
+            "Win",
+            "Mac",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Abstract factory ensures product family consistency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Abstract factory uses polymorphism at factory level.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ factory creates families of related products.",
+        "type": "fill_blank",
+        "answers": [
+            "abstract"
+        ],
+        "other_options": [
+            "simple",
+            "concrete",
+            "generic"
+        ]
+    },
+    {
+        "q": "What is type erasure?",
+        "type": "mcq",
+        "o": [
+            "Hiding concrete type behind polymorphic interface",
+            "Type deletion",
+            "Type conversion",
+            "Type casting"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <functional>\nusing namespace std;\n\nint add(int a, int b) { return a + b; }\n\nint main() {\n    function<int(int,int)> f = add;\n    cout << f(2, 3);\n    return 0;\n}",
+        "o": [
+            "5",
+            "Error",
+            "0",
+            "23"
+        ]
+    },
+    {
+        "q": "std::function uses type erasure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::any is an example of type erasure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ technique hides concrete type at runtime.",
+        "type": "fill_blank",
+        "answers": [
+            "type erasure"
+        ],
+        "other_options": [
+            "type casting",
+            "type conversion",
+            "type hiding"
+        ]
+    },
+    {
+        "q": "What is CRTP (Curiously Recurring Template Pattern)?",
+        "type": "mcq",
+        "o": [
+            "Derived class as template parameter to base",
+            "Recursive templates",
+            "Template recursion",
+            "Infinite templates"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\ntemplate<typename Derived>\nclass Base {\npublic:\n    void interface() { static_cast<Derived*>(this)->implementation(); }\n};\n\nclass Impl : public Base<Impl> {\npublic:\n    void implementation() { cout << \"Impl\"; }\n};\n\nint main() {\n    Impl i;\n    i.interface();\n    return 0;\n}",
+        "o": [
+            "Impl",
+            "Error",
+            "Base",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "CRTP provides static polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CRTP has no virtual function overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern enables compile-time polymorphism.",
+        "type": "fill_blank",
+        "answers": [
+            "CRTP"
+        ],
+        "other_options": [
+            "RTTI",
+            "RAII",
+            "PIMPL"
+        ]
+    },
+    {
+        "q": "Match the polymorphism techniques:",
+        "type": "match",
+        "left": [
+            "Virtual functions",
+            "CRTP",
+            "Function overloading",
+            "Templates"
+        ],
+        "right": [
+            "Runtime dispatch",
+            "Static dispatch",
+            "Same name overloads",
+            "Generic types"
+        ]
+    },
+    {
+        "q": "What is constexpr virtual in C++20?",
+        "type": "mcq",
+        "o": [
+            "Virtual functions callable at compile time",
+            "Non-virtual constexpr",
+            "Runtime constexpr",
+            "Template virtual"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    constexpr virtual int get() const { return 1; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    constexpr int get() const override { return 2; }\n};\n\nint main() {\n    constexpr Derived d;\n    cout << d.get();\n    return 0;\n}",
+        "o": [
+            "2",
+            "1",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "constexpr virtual is a C++20 feature.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "constexpr virtual enables compile-time polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ specifier allows virtual calls at compile time.",
+        "type": "fill_blank",
+        "answers": [
+            "constexpr"
+        ],
+        "other_options": [
+            "consteval",
+            "const",
+            "inline"
+        ]
+    },
+    {
+        "q": "What is std::variant with polymorphism?",
+        "type": "mcq",
+        "o": [
+            "Type-safe union alternative to inheritance",
+            "Template variant",
+            "Variable template",
+            "Variant type"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <variant>\nusing namespace std;\n\nstruct Circle { void draw() const { cout << \"C\"; } };\nstruct Square { void draw() const { cout << \"S\"; } };\n\nint main() {\n    variant<Circle, Square> shape = Circle{};\n    visit([](auto& s) { s.draw(); }, shape);\n    return 0;\n}",
+        "o": [
+            "C",
+            "S",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "std::variant provides closed polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::visit enables dispatch on variant types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ provides type-safe sum types.",
+        "type": "fill_blank",
+        "answers": [
+            "std::variant"
+        ],
+        "other_options": [
+            "std::any",
+            "std::optional",
+            "std::tuple"
+        ]
+    },
+    {
+        "q": "Rearrange from static to dynamic polymorphism:",
+        "type": "rearrange",
+        "words": [
+            "Templates",
+            "CRTP",
+            "std::variant",
+            "Virtual functions",
+            "type_info"
+        ]
+    },
+    {
+        "q": "What is std::any?",
+        "type": "mcq",
+        "o": [
+            "Type-safe container for single value of any type",
+            "Any pointer",
+            "Void pointer wrapper",
+            "Template any"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <any>\nusing namespace std;\n\nint main() {\n    any a = 42;\n    cout << any_cast<int>(a);\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "0",
+            "any"
+        ]
+    },
+    {
+        "q": "std::any uses type erasure internally.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::any_cast throws on wrong type.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ container can hold any single value.",
+        "type": "fill_blank",
+        "answers": [
+            "std::any"
+        ],
+        "other_options": [
+            "std::variant",
+            "std::optional",
+            "void*"
+        ]
+    },
+    {
+        "q": "What is concepts with polymorphism in C++20?",
+        "type": "mcq",
+        "o": [
+            "Constrain template parameters for static polymorphism",
+            "Runtime concepts",
+            "Virtual concepts",
+            "Abstract concepts"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <concepts>\nusing namespace std;\n\ntemplate<typename T>\nconcept Drawable = requires(T t) { t.draw(); };\n\nstruct Circle { void draw() { cout << \"C\"; } };\n\nvoid render(Drawable auto& s) { s.draw(); }\n\nint main() {\n    Circle c;\n    render(c);\n    return 0;\n}",
+        "o": [
+            "C",
+            "Error",
+            "Nothing",
+            "Drawable"
+        ]
+    },
+    {
+        "q": "Concepts provide compile-time interface checking.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Concepts improve error messages over SFINAE.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ feature constrains template parameters.",
+        "type": "fill_blank",
+        "answers": [
+            "concepts"
+        ],
+        "other_options": [
+            "SFINAE",
+            "traits",
+            "requires"
+        ]
+    },
+    {
+        "q": "Match C++20 features with polymorphism:",
+        "type": "match",
+        "left": [
+            "Concepts",
+            "constexpr virtual",
+            "Ranges",
+            "Modules"
+        ],
+        "right": [
+            "Type constraints",
+            "Compile-time virtual",
+            "Lazy evaluation",
+            "Code organization"
+        ]
+    },
+    {
+        "q": "What is deducing this in C++23?",
+        "type": "mcq",
+        "o": [
+            "Explicit object parameter enabling CRTP without inheritance",
+            "This inference",
+            "Automatic this",
+            "Self parameter"
+        ]
+    },
+    {
+        "q": "Deducing this simplifies CRTP patterns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deducing this is a C++23 feature.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ feature deduces derived type in member functions.",
+        "type": "fill_blank",
+        "answers": [
+            "deducing this"
+        ],
+        "other_options": [
+            "explicit this",
+            "auto this",
+            "self type"
+        ]
+    },
+    {
+        "q": "What is virtual inheritance impact on polymorphism?",
+        "type": "mcq",
+        "o": [
+            "Single copy of virtual base enables consistent polymorphism",
+            "No impact",
+            "Doubles polymorphism",
+            "Disables polymorphism"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    virtual void foo() { cout << \"A\"; }\n};\n\nclass B : virtual public A {\npublic:\n    void foo() override { cout << \"B\"; }\n};\n\nclass C : virtual public A {\npublic:\n    void foo() override { cout << \"C\"; }\n};\n\nclass D : public B, public C {\npublic:\n    void foo() override { cout << \"D\"; }\n};\n\nint main() {\n    A* a = new D();\n    a->foo();\n    delete a;\n    return 0;\n}",
+        "o": [
+            "D",
+            "Error",
+            "A",
+            "BC"
+        ]
+    },
+    {
+        "q": "Virtual inheritance affects vtable layout.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Diamond problem relates to both inheritance and polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ inheritance ensures single base for polymorphism.",
+        "type": "fill_blank",
+        "answers": [
+            "virtual"
+        ],
+        "other_options": [
+            "public",
+            "private",
+            "protected"
+        ]
+    },
+    {
+        "q": "Rearrange polymorphism evolution in C++:",
+        "type": "rearrange",
+        "words": [
+            "Virtual functions (C++98)",
+            "override/final (C++11)",
+            "Generic lambdas (C++14)",
+            "constexpr virtual (C++20)",
+            "deducing this (C++23)"
+        ]
+    },
+    {
+        "q": "What is ADL (Argument Dependent Lookup) with polymorphism?",
+        "type": "mcq",
+        "o": [
+            "Function lookup based on argument types and namespaces",
+            "Automatic declaration lookup",
+            "Address lookup",
+            "Dynamic lookup"
+        ]
+    },
+    {
+        "q": "ADL affects operator overloading.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ADL enables customization points.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ lookup finds functions based on argument types.",
+        "type": "fill_blank",
+        "answers": [
+            "ADL"
+        ],
+        "other_options": [
+            "ODR",
+            "RTTI",
+            "CRTP"
+        ]
+    },
+    {
+        "q": "What is static polymorphism vs dynamic polymorphism?",
+        "type": "mcq",
+        "o": [
+            "Compile-time resolved vs runtime resolved dispatch",
+            "Same mechanism",
+            "Static is slower",
+            "Dynamic is compile-time"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\ntemplate<typename T>\nvoid process(const T& obj) { obj.execute(); }\n\nstruct A { void execute() const { cout << \"A\"; } };\nstruct B { void execute() const { cout << \"B\"; } };\n\nint main() {\n    A a; B b;\n    process(a);\n    process(b);\n    return 0;\n}",
+        "o": [
+            "AB",
+            "Error",
+            "AA",
+            "BB"
+        ]
+    },
+    {
+        "q": "Static polymorphism has no vtable overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Static polymorphism enables inlining.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ polymorphism is resolved at compile time.",
+        "type": "fill_blank",
+        "answers": [
+            "static"
+        ],
+        "other_options": [
+            "dynamic",
+            "runtime",
+            "virtual"
+        ]
+    },
+    {
+        "q": "Match polymorphism types with implementation:",
+        "type": "match",
+        "left": [
+            "Virtual functions",
+            "Templates",
+            "Overloading",
+            "CRTP"
+        ],
+        "right": [
+            "vtable",
+            "Instantiation",
+            "Name mangling",
+            "Static cast"
+        ]
+    },
+    {
+        "q": "What is multiple dispatch?",
+        "type": "mcq",
+        "o": [
+            "Dispatch based on multiple argument types",
+            "Single dispatch",
+            "Double dispatch only",
+            "Triple dispatch"
+        ]
+    },
+    {
+        "q": "C++ natively supports only single dispatch.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Double dispatch simulates multiple dispatch.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ dispatch depends on multiple object types.",
+        "type": "fill_blank",
+        "answers": [
+            "multiple"
+        ],
+        "other_options": [
+            "single",
+            "double",
+            "triple"
+        ]
+    },
+    {
+        "q": "Rearrange from simpler to more complex dispatch:",
+        "type": "rearrange",
+        "words": [
+            "Static binding",
+            "Single dispatch",
+            "Double dispatch",
+            "Multiple dispatch",
+            "Pattern matching"
+        ]
+    },
+    {
+        "q": "What is the virtual constructor idiom?",
+        "type": "mcq",
+        "o": [
+            "Clone pattern providing polymorphic construction",
+            "Virtual keyword on constructor",
+            "Template constructor",
+            "Default constructor"
+        ]
+    },
+    {
+        "q": "Constructors cannot be virtual.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Clone pattern simulates virtual constructor.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern simulates virtual construction.",
+        "type": "fill_blank",
+        "answers": [
+            "clone"
+        ],
+        "other_options": [
+            "factory",
+            "builder",
+            "prototype"
+        ]
+    },
+    {
+        "q": "What is thunk in virtual function implementation?",
+        "type": "mcq",
+        "o": [
+            "Code adjusting this pointer for multiple inheritance",
+            "Function stub",
+            "Template code",
+            "Inline code"
+        ]
+    },
+    {
+        "q": "Thunks are used in multiple inheritance vtables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Thunks adjust the this pointer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ adjusts pointers in multiple inheritance.",
+        "type": "fill_blank",
+        "answers": [
+            "thunk"
+        ],
+        "other_options": [
+            "stub",
+            "proxy",
+            "wrapper"
+        ]
+    },
+    {
+        "q": "What is devirtualization?",
+        "type": "mcq",
+        "o": [
+            "Compiler optimization converting virtual to direct call",
+            "Making function virtual",
+            "Removing functions",
+            "Template conversion"
+        ]
+    },
+    {
+        "q": "What enables devirtualization?",
+        "type": "mcq",
+        "o": [
+            "Compiler knowing exact type at compile time",
+            "Runtime information",
+            "Virtual specifier",
+            "Abstract classes"
+        ]
+    },
+    {
+        "q": "final keyword helps devirtualization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Devirtualization improves performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ optimization removes virtual call overhead.",
+        "type": "fill_blank",
+        "answers": [
+            "devirtualization"
+        ],
+        "other_options": [
+            "inlining",
+            "unrolling",
+            "vectorization"
+        ]
+    },
+    {
+        "q": "Match the optimization techniques:",
+        "type": "match",
+        "left": [
+            "Devirtualization",
+            "Inlining",
+            "EBO",
+            "RVO"
+        ],
+        "right": [
+            "Direct call",
+            "No function call",
+            "Empty base optimization",
+            "Copy elision"
+        ]
+    },
+    {
+        "q": "What is the Bridge pattern?",
+        "type": "mcq",
+        "o": [
+            "Separate abstraction from implementation",
+            "Connect two classes",
+            "Network bridge",
+            "Interface bridge"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Impl {\npublic:\n    virtual void operation() = 0;\n    virtual ~Impl() = default;\n};\n\nclass ConcreteImpl : public Impl {\npublic:\n    void operation() override { cout << \"Concrete\"; }\n};\n\nclass Abstraction {\n    Impl* impl;\npublic:\n    Abstraction(Impl* i) : impl(i) {}\n    void function() { impl->operation(); }\n};\n\nint main() {\n    ConcreteImpl c;\n    Abstraction a(&c);\n    a.function();\n    return 0;\n}",
+        "o": [
+            "Concrete",
+            "Error",
+            "Abstraction",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Bridge pattern decouples abstraction from implementation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Bridge allows independent variation of both sides.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern separates abstraction from implementation.",
+        "type": "fill_blank",
+        "answers": [
+            "bridge"
+        ],
+        "other_options": [
+            "adapter",
+            "decorator",
+            "facade"
+        ]
+    },
+    {
+        "q": "What is the Facade pattern?",
+        "type": "mcq",
+        "o": [
+            "Provide unified interface to subsystem",
+            "Complex interface",
+            "Direct access",
+            "Decorator pattern"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass SubA { public: void operationA() { cout << \"A\"; } };\nclass SubB { public: void operationB() { cout << \"B\"; } };\n\nclass Facade {\n    SubA a;\n    SubB b;\npublic:\n    void operation() { a.operationA(); b.operationB(); }\n};\n\nint main() {\n    Facade f;\n    f.operation();\n    return 0;\n}",
+        "o": [
+            "AB",
+            "A",
+            "B",
+            "Error"
+        ]
+    },
+    {
+        "q": "Facade simplifies complex subsystems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Facade provides a higher-level interface.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern provides simplified interface.",
+        "type": "fill_blank",
+        "answers": [
+            "facade"
+        ],
+        "other_options": [
+            "adapter",
+            "proxy",
+            "bridge"
+        ]
+    },
+    {
+        "q": "What is the Composite pattern?",
+        "type": "mcq",
+        "o": [
+            "Compose objects into tree structures",
+            "Single object only",
+            "Flat structure",
+            "Linear composition"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nclass Component {\npublic:\n    virtual void operation() = 0;\n    virtual ~Component() = default;\n};\n\nclass Leaf : public Component {\npublic:\n    void operation() override { cout << \"L\"; }\n};\n\nclass Composite : public Component {\n    vector<Component*> children;\npublic:\n    void add(Component* c) { children.push_back(c); }\n    void operation() override {\n        for (auto c : children) c->operation();\n    }\n};\n\nint main() {\n    Leaf l1, l2;\n    Composite c;\n    c.add(&l1);\n    c.add(&l2);\n    c.operation();\n    return 0;\n}",
+        "o": [
+            "LL",
+            "L",
+            "Error",
+            "Composite"
+        ]
+    },
+    {
+        "q": "Composite treats individual and composite uniformly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Composite is used for tree structures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern creates tree structures.",
+        "type": "fill_blank",
+        "answers": [
+            "composite"
+        ],
+        "other_options": [
+            "decorator",
+            "adapter",
+            "proxy"
+        ]
+    },
+    {
+        "q": "Match structural patterns with purpose:",
+        "type": "match",
+        "left": [
+            "Bridge",
+            "Facade",
+            "Composite",
+            "Flyweight"
+        ],
+        "right": [
+            "Separate abstraction",
+            "Simplify interface",
+            "Tree structure",
+            "Share state"
+        ]
+    },
+    {
+        "q": "What is the Flyweight pattern?",
+        "type": "mcq",
+        "o": [
+            "Share common state to support large numbers of objects",
+            "Heavy objects",
+            "Large objects",
+            "Single object"
+        ]
+    },
+    {
+        "q": "Flyweight reduces memory usage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Flyweight separates intrinsic and extrinsic state.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern shares common state.",
+        "type": "fill_blank",
+        "answers": [
+            "flyweight"
+        ],
+        "other_options": [
+            "singleton",
+            "prototype",
+            "factory"
+        ]
+    },
+    {
+        "q": "What is the Prototype pattern?",
+        "type": "mcq",
+        "o": [
+            "Create objects by cloning existing instances",
+            "First version",
+            "Template object",
+            "Abstract prototype"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Prototype {\npublic:\n    virtual Prototype* clone() const = 0;\n    virtual void print() const = 0;\n    virtual ~Prototype() = default;\n};\n\nclass Concrete : public Prototype {\n    int value;\npublic:\n    Concrete(int v) : value(v) {}\n    Prototype* clone() const override { return new Concrete(*this); }\n    void print() const override { cout << value; }\n};\n\nint main() {\n    Concrete c(42);\n    Prototype* p = c.clone();\n    p->print();\n    delete p;\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "0",
+            "Prototype"
+        ]
+    },
+    {
+        "q": "Prototype uses polymorphic clone.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prototype avoids knowing concrete class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern creates by cloning.",
+        "type": "fill_blank",
+        "answers": [
+            "prototype"
+        ],
+        "other_options": [
+            "factory",
+            "builder",
+            "singleton"
+        ]
+    },
+    {
+        "q": "Rearrange creational patterns by complexity:",
+        "type": "rearrange",
+        "words": [
+            "Simple Factory",
+            "Factory Method",
+            "Abstract Factory",
+            "Builder",
+            "Prototype"
+        ]
+    },
+    {
+        "q": "What is the Builder pattern?",
+        "type": "mcq",
+        "o": [
+            "Construct complex object step by step",
+            "Simple construction",
+            "Direct instantiation",
+            "Clone construction"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Product {\npublic:\n    string partA, partB;\n    void show() { cout << partA << partB; }\n};\n\nclass Builder {\npublic:\n    virtual void buildA() = 0;\n    virtual void buildB() = 0;\n    virtual Product* getResult() = 0;\n    virtual ~Builder() = default;\n};\n\nclass ConcreteBuilder : public Builder {\n    Product* p = new Product();\npublic:\n    void buildA() override { p->partA = \"A\"; }\n    void buildB() override { p->partB = \"B\"; }\n    Product* getResult() override { return p; }\n};\n\nint main() {\n    ConcreteBuilder b;\n    b.buildA();\n    b.buildB();\n    Product* p = b.getResult();\n    p->show();\n    delete p;\n    return 0;\n}",
+        "o": [
+            "AB",
+            "A",
+            "B",
+            "Error"
+        ]
+    },
+    {
+        "q": "Builder separates construction from representation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Builder allows different representations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern constructs step by step.",
+        "type": "fill_blank",
+        "answers": [
+            "builder"
+        ],
+        "other_options": [
+            "factory",
+            "prototype",
+            "singleton"
+        ]
+    },
+    {
+        "q": "What is the Singleton pattern?",
+        "type": "mcq",
+        "o": [
+            "Ensure only one instance exists",
+            "Multiple instances",
+            "Factory instance",
+            "Prototype instance"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Singleton {\n    static Singleton* instance;\n    Singleton() {}\npublic:\n    static Singleton* getInstance() {\n        if (!instance) instance = new Singleton();\n        return instance;\n    }\n    void show() { cout << \"Single\"; }\n};\n\nSingleton* Singleton::instance = nullptr;\n\nint main() {\n    Singleton* s = Singleton::getInstance();\n    s->show();\n    return 0;\n}",
+        "o": [
+            "Single",
+            "Error",
+            "Nothing",
+            "nullptr"
+        ]
+    },
+    {
+        "q": "Singleton guarantees single instance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Singleton provides global access point.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern ensures one instance.",
+        "type": "fill_blank",
+        "answers": [
+            "singleton"
+        ],
+        "other_options": [
+            "factory",
+            "prototype",
+            "builder"
+        ]
+    },
+    {
+        "q": "Match creational patterns with intent:",
+        "type": "match",
+        "left": [
+            "Singleton",
+            "Factory Method",
+            "Builder",
+            "Prototype"
+        ],
+        "right": [
+            "One instance",
+            "Subclass creates",
+            "Step construction",
+            "Clone creation"
+        ]
+    },
+    {
+        "q": "What is the Mediator pattern?",
+        "type": "mcq",
+        "o": [
+            "Define object encapsulating interaction between objects",
+            "Direct communication",
+            "No mediation",
+            "Adapter pattern"
+        ]
+    },
+    {
+        "q": "Mediator reduces coupling between objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mediator centralizes communication.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern centralizes object interaction.",
+        "type": "fill_blank",
+        "answers": [
+            "mediator"
+        ],
+        "other_options": [
+            "observer",
+            "command",
+            "strategy"
+        ]
+    },
+    {
+        "q": "What is the Chain of Responsibility pattern?",
+        "type": "mcq",
+        "o": [
+            "Pass request along chain of handlers",
+            "Single handler",
+            "Direct handling",
+            "Observer pattern"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Handler {\nprotected:\n    Handler* next = nullptr;\npublic:\n    void setNext(Handler* n) { next = n; }\n    virtual void handle(int r) {\n        if (next) next->handle(r);\n    }\n    virtual ~Handler() = default;\n};\n\nclass ConcreteHandler : public Handler {\n    int level;\npublic:\n    ConcreteHandler(int l) : level(l) {}\n    void handle(int r) override {\n        if (r <= level) cout << level;\n        else Handler::handle(r);\n    }\n};\n\nint main() {\n    ConcreteHandler h1(1), h2(5), h3(10);\n    h1.setNext(&h2);\n    h2.setNext(&h3);\n    h1.handle(3);\n    return 0;\n}",
+        "o": [
+            "5",
+            "1",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Chain of Responsibility decouples sender from receiver.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Handlers can pass requests to next in chain.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern passes requests along handlers.",
+        "type": "fill_blank",
+        "answers": [
+            "chain of responsibility"
+        ],
+        "other_options": [
+            "command",
+            "observer",
+            "mediator"
+        ]
+    },
+    {
+        "q": "Rearrange behavioral patterns:",
+        "type": "rearrange",
+        "words": [
+            "Command",
+            "Chain of Responsibility",
+            "Mediator",
+            "Observer",
+            "State"
+        ]
+    },
+    {
+        "q": "What is the Memento pattern?",
+        "type": "mcq",
+        "o": [
+            "Capture and restore object state",
+            "Forget state",
+            "Delete state",
+            "No state"
+        ]
+    },
+    {
+        "q": "Memento enables undo functionality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Memento preserves encapsulation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern captures object state.",
+        "type": "fill_blank",
+        "answers": [
+            "memento"
+        ],
+        "other_options": [
+            "command",
+            "state",
+            "observer"
+        ]
+    },
+    {
+        "q": "What is the Iterator pattern?",
+        "type": "mcq",
+        "o": [
+            "Access elements sequentially without exposing structure",
+            "Random access only",
+            "Direct access",
+            "No iteration"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    vector<int> v = {1, 2, 3};\n    for (auto it = v.begin(); it != v.end(); ++it) {\n        cout << *it;\n    }\n    return 0;\n}",
+        "o": [
+            "123",
+            "111",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Iterator provides uniform traversal.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "STL uses iterator pattern extensively.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern provides sequential access.",
+        "type": "fill_blank",
+        "answers": [
+            "iterator"
+        ],
+        "other_options": [
+            "visitor",
+            "composite",
+            "strategy"
+        ]
+    },
+    {
+        "q": "Match behavioral patterns with purpose:",
+        "type": "match",
+        "left": [
+            "Iterator",
+            "Memento",
+            "Chain of Responsibility",
+            "Interpreter"
+        ],
+        "right": [
+            "Sequential access",
+            "State capture",
+            "Request chain",
+            "Language grammar"
+        ]
+    },
+    {
+        "q": "What is the Interpreter pattern?",
+        "type": "mcq",
+        "o": [
+            "Define grammar representation and interpreter",
+            "Compiler pattern",
+            "Parser pattern",
+            "Lexer pattern"
+        ]
+    },
+    {
+        "q": "Interpreter defines language grammar.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Interpreter uses class hierarchy for grammar rules.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern interprets language expressions.",
+        "type": "fill_blank",
+        "answers": [
+            "interpreter"
+        ],
+        "other_options": [
+            "visitor",
+            "command",
+            "strategy"
+        ]
+    },
+    {
+        "q": "What is late binding?",
+        "type": "mcq",
+        "o": [
+            "Function resolution deferred to runtime",
+            "Early binding",
+            "Compile-time binding",
+            "Static binding"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void print() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\npublic:\n    void print() override { cout << \"Derived\"; }\n};\n\nvoid call(Base& b) { b.print(); }\n\nint main() {\n    Derived d;\n    call(d);\n    return 0;\n}",
+        "o": [
+            "Derived",
+            "Base",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Late binding is synonymous with dynamic binding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual functions enable late binding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ binding determines function at runtime.",
+        "type": "fill_blank",
+        "answers": [
+            "late"
+        ],
+        "other_options": [
+            "early",
+            "static",
+            "compile-time"
+        ]
+    },
+    {
+        "q": "What is early binding?",
+        "type": "mcq",
+        "o": [
+            "Function resolution at compile time",
+            "Runtime binding",
+            "Dynamic binding",
+            "Virtual binding"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    void print() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\npublic:\n    void print() { cout << \"Derived\"; }\n};\n\nvoid call(Base b) { b.print(); }\n\nint main() {\n    Derived d;\n    call(d);\n    return 0;\n}",
+        "o": [
+            "Base",
+            "Derived",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Early binding is faster than late binding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Non-virtual functions use early binding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ binding resolves at compile time.",
+        "type": "fill_blank",
+        "answers": [
+            "early"
+        ],
+        "other_options": [
+            "late",
+            "dynamic",
+            "runtime"
+        ]
+    },
+    {
+        "q": "Rearrange from compile-time to runtime:",
+        "type": "rearrange",
+        "words": [
+            "Early binding",
+            "Template instantiation",
+            "Overload resolution",
+            "Virtual dispatch",
+            "RTTI"
+        ]
+    },
+    {
+        "q": "What is interface in C++?",
+        "type": "mcq",
+        "o": [
+            "Abstract class with only pure virtual functions",
+            "Concrete class",
+            "Template class",
+            "Final class"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass IShape {\npublic:\n    virtual void draw() = 0;\n    virtual double area() = 0;\n    virtual ~IShape() = default;\n};\n\nclass Circle : public IShape {\npublic:\n    void draw() override { cout << \"Circle\"; }\n    double area() override { return 3.14; }\n};\n\nint main() {\n    Circle c;\n    c.draw();\n    return 0;\n}",
+        "o": [
+            "Circle",
+            "Error",
+            "IShape",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Interfaces define contracts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Interfaces cannot have data members.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "An _______ has only pure virtual functions.",
+        "type": "fill_blank",
+        "answers": [
+            "interface"
+        ],
+        "other_options": [
+            "abstract class",
+            "concrete class",
+            "template"
+        ]
+    },
+    {
+        "q": "What is duck typing simulation in C++?",
+        "type": "mcq",
+        "o": [
+            "Templates checking interface at compile time",
+            "Runtime duck typing",
+            "No duck typing",
+            "RTTI checking"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\ntemplate<typename T>\nvoid quack(T& t) { t.quack(); }\n\nstruct Duck { void quack() { cout << \"Quack\"; } };\nstruct Dog { void bark() { cout << \"Bark\"; } };\n\nint main() {\n    Duck d;\n    quack(d);\n    return 0;\n}",
+        "o": [
+            "Quack",
+            "Error",
+            "Bark",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Templates provide compile-time duck typing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Concepts improve duck typing with better errors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ typing checks interface at compile time.",
+        "type": "fill_blank",
+        "answers": [
+            "duck"
+        ],
+        "other_options": [
+            "strong",
+            "weak",
+            "static"
+        ]
+    },
+    {
+        "q": "Match typing styles:",
+        "type": "match",
+        "left": [
+            "Static typing",
+            "Dynamic typing",
+            "Duck typing",
+            "Strong typing"
+        ],
+        "right": [
+            "Compile-time check",
+            "Runtime check",
+            "Interface check",
+            "Type safety"
+        ]
+    },
+    {
+        "q": "What is contravariance?",
+        "type": "mcq",
+        "o": [
+            "Accepting base type where derived is expected",
+            "Returning derived instead of base",
+            "Same type",
+            "No variance"
+        ]
+    },
+    {
+        "q": "Contravariance applies to function parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "C++ doesn't directly support contravariant parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ variance accepts wider types.",
+        "type": "fill_blank",
+        "answers": [
+            "contra"
+        ],
+        "other_options": [
+            "co",
+            "in",
+            "bi"
+        ]
+    },
+    {
+        "q": "Rearrange type relationship concepts:",
+        "type": "rearrange",
+        "words": [
+            "Invariance",
+            "Covariance",
+            "Contravariance",
+            "Bivariance"
+        ]
+    },
+    {
+        "q": "What is polymorphic lambda in C++14?",
+        "type": "mcq",
+        "o": [
+            "Lambda with auto parameter accepting any type",
+            "Virtual lambda",
+            "Abstract lambda",
+            "Template specialization"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    auto print = [](auto x) { cout << x; };\n    print(42);\n    print(\"Hi\");\n    return 0;\n}",
+        "o": [
+            "42Hi",
+            "42",
+            "Hi",
+            "Error"
+        ]
+    },
+    {
+        "q": "Generic lambdas provide static polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "auto parameter generates template operator().",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ lambda accepts different types.",
+        "type": "fill_blank",
+        "answers": [
+            "generic"
+        ],
+        "other_options": [
+            "specific",
+            "typed",
+            "virtual"
+        ]
+    },
+    {
+        "q": "What is polymorphic allocator?",
+        "type": "mcq",
+        "o": [
+            "Allocator using type erasure for runtime selection",
+            "Static allocator",
+            "Default allocator",
+            "Template allocator only"
+        ]
+    },
+    {
+        "q": "std::pmr::polymorphic_allocator uses virtual dispatch.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Polymorphic allocator is in std::pmr namespace.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ allocator switches memory resources at runtime.",
+        "type": "fill_blank",
+        "answers": [
+            "polymorphic"
+        ],
+        "other_options": [
+            "static",
+            "default",
+            "template"
+        ]
+    },
+    {
+        "q": "Match memory resource types:",
+        "type": "match",
+        "left": [
+            "monotonic_buffer",
+            "unsynchronized_pool",
+            "synchronized_pool",
+            "new_delete"
+        ],
+        "right": [
+            "Fast linear",
+            "Unsync pool",
+            "Thread-safe pool",
+            "Default new"
+        ]
+    },
+    {
+        "q": "What is expression template?",
+        "type": "mcq",
+        "o": [
+            "Lazy evaluation technique for expression optimization",
+            "Simple expression",
+            "Runtime expression",
+            "Virtual expression"
+        ]
+    },
+    {
+        "q": "Expression templates avoid temporaries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Expression templates provide static polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ templates optimize expressions.",
+        "type": "fill_blank",
+        "answers": [
+            "expression"
+        ],
+        "other_options": [
+            "function",
+            "class",
+            "variable"
+        ]
+    },
+    {
+        "q": "What is policy-based design?",
+        "type": "mcq",
+        "o": [
+            "Compile-time customization using template parameters",
+            "Runtime policies",
+            "Virtual policies",
+            "No policies"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nstruct UpperPolicy {\n    static void print(string s) { cout << \"UPPER\"; }\n};\n\ntemplate<typename Policy>\nclass Printer {\npublic:\n    void print(string s) { Policy::print(s); }\n};\n\nint main() {\n    Printer<UpperPolicy> p;\n    p.print(\"hello\");\n    return 0;\n}",
+        "o": [
+            "UPPER",
+            "hello",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Policy-based design uses static polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Policies are provided as template parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ design uses templates for customization.",
+        "type": "fill_blank",
+        "answers": [
+            "policy-based"
+        ],
+        "other_options": [
+            "strategy",
+            "visitor",
+            "factory"
+        ]
+    },
+    {
+        "q": "Rearrange from static to dynamic customization:",
+        "type": "rearrange",
+        "words": [
+            "Policy-based",
+            "CRTP",
+            "Template specialization",
+            "Virtual functions",
+            "Type erasure"
+        ]
+    },
+    {
+        "q": "What is tag dispatch?",
+        "type": "mcq",
+        "o": [
+            "Overload resolution using empty tag types",
+            "Runtime dispatch",
+            "Virtual dispatch",
+            "Dynamic dispatch"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nstruct FastTag {};\nstruct SlowTag {};\n\nvoid algo(FastTag) { cout << \"Fast\"; }\nvoid algo(SlowTag) { cout << \"Slow\"; }\n\nint main() {\n    algo(FastTag{});\n    return 0;\n}",
+        "o": [
+            "Fast",
+            "Slow",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Tag dispatch selects overloads at compile time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Tags are typically empty structs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ dispatch uses empty types for selection.",
+        "type": "fill_blank",
+        "answers": [
+            "tag"
+        ],
+        "other_options": [
+            "type",
+            "virtual",
+            "dynamic"
+        ]
+    },
+    {
+        "q": "What is SFINAE?",
+        "type": "mcq",
+        "o": [
+            "Substitution Failure Is Not An Error",
+            "Static Function Is Not Allowed",
+            "Special Function Inheritance",
+            "Safe Failure In Arguments"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <type_traits>\nusing namespace std;\n\ntemplate<typename T>\nenable_if_t<is_integral_v<T>> print(T x) { cout << \"Int\"; }\n\ntemplate<typename T>\nenable_if_t<is_floating_point_v<T>> print(T x) { cout << \"Float\"; }\n\nint main() {\n    print(42);\n    print(3.14);\n    return 0;\n}",
+        "o": [
+            "IntFloat",
+            "Int",
+            "Float",
+            "Error"
+        ]
+    },
+    {
+        "q": "SFINAE enables compile-time overload selection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Concepts replace SFINAE in C++20.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ technique excludes invalid overloads.",
+        "type": "fill_blank",
+        "answers": [
+            "SFINAE"
+        ],
+        "other_options": [
+            "CRTP",
+            "ADL",
+            "RTTI"
+        ]
+    },
+    {
+        "q": "Match compile-time techniques:",
+        "type": "match",
+        "left": [
+            "SFINAE",
+            "Tag dispatch",
+            "if constexpr",
+            "Concepts"
+        ],
+        "right": [
+            "Substitution failure",
+            "Empty types",
+            "Compile branch",
+            "Type constraints"
+        ]
+    },
+    {
+        "q": "What is if constexpr?",
+        "type": "mcq",
+        "o": [
+            "Compile-time conditional that discards false branch",
+            "Runtime if",
+            "Virtual if",
+            "Dynamic if"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <type_traits>\nusing namespace std;\n\ntemplate<typename T>\nvoid print(T x) {\n    if constexpr (is_integral_v<T>) cout << \"Int\";\n    else cout << \"Other\";\n}\n\nint main() {\n    print(42);\n    print(3.14);\n    return 0;\n}",
+        "o": [
+            "IntOther",
+            "Int",
+            "Other",
+            "Error"
+        ]
+    },
+    {
+        "q": "if constexpr is evaluated at compile time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "False branch is not instantiated in if constexpr.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ statement provides compile-time branching.",
+        "type": "fill_blank",
+        "answers": [
+            "if constexpr"
+        ],
+        "other_options": [
+            "if else",
+            "switch",
+            "consteval if"
+        ]
+    },
+    {
+        "q": "What is function object (functor)?",
+        "type": "mcq",
+        "o": [
+            "Object with overloaded operator()",
+            "Regular function",
+            "Lambda only",
+            "Method pointer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nstruct Adder {\n    int value;\n    Adder(int v) : value(v) {}\n    int operator()(int x) { return x + value; }\n};\n\nint main() {\n    Adder add5(5);\n    cout << add5(10);\n    return 0;\n}",
+        "o": [
+            "15",
+            "5",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Functors can maintain state.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Functors are inlineable unlike function pointers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A _______ is a callable object with operator().",
+        "type": "fill_blank",
+        "answers": [
+            "functor"
+        ],
+        "other_options": [
+            "function",
+            "lambda",
+            "callback"
+        ]
+    },
+    {
+        "q": "Rearrange callable types:",
+        "type": "rearrange",
+        "words": [
+            "Function pointer",
+            "Functor",
+            "Lambda",
+            "std::function"
+        ]
+    },
+    {
+        "q": "What is mixin using CRTP?",
+        "type": "mcq",
+        "o": [
+            "Add functionality through template base class",
+            "Multiple inheritance",
+            "Virtual inheritance",
+            "Interface implementation"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\ntemplate<typename Derived>\nstruct Counter {\n    static int count;\n    Counter() { ++count; }\n    ~Counter() { --count; }\n};\n\ntemplate<typename Derived>\nint Counter<Derived>::count = 0;\n\nstruct Widget : Counter<Widget> {};\n\nint main() {\n    Widget w1, w2;\n    cout << Counter<Widget>::count;\n    return 0;\n}",
+        "o": [
+            "2",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "CRTP mixins provide per-class customization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mixin classes add functionality without virtual overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ technique adds functionality through templates.",
+        "type": "fill_blank",
+        "answers": [
+            "mixin"
+        ],
+        "other_options": [
+            "decorator",
+            "adapter",
+            "proxy"
+        ]
+    },
+    {
+        "q": "Match CRTP use cases:",
+        "type": "match",
+        "left": [
+            "Static polymorphism",
+            "Object counting",
+            "Comparisons",
+            "Cloning"
+        ],
+        "right": [
+            "Interface via base",
+            "Count instances",
+            "Operators from <",
+            "Virtual constructor"
+        ]
+    },
+    {
+        "q": "What is std::invoke?",
+        "type": "mcq",
+        "o": [
+            "Uniform callable invocation",
+            "Direct call only",
+            "Virtual call",
+            "Delayed call"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <functional>\nusing namespace std;\n\nvoid foo(int x) { cout << x; }\n\nint main() {\n    invoke(foo, 42);\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "0",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "std::invoke works with member functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::invoke provides uniform syntax for all callables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ function invokes any callable uniformly.",
+        "type": "fill_blank",
+        "answers": [
+            "std::invoke"
+        ],
+        "other_options": [
+            "std::call",
+            "std::apply",
+            "std::execute"
+        ]
+    },
+    {
+        "q": "What is std::apply?",
+        "type": "mcq",
+        "o": [
+            "Invoke callable with tuple as arguments",
+            "Apply function once",
+            "Virtual apply",
+            "Direct call"
+        ]
+    },
+    {
+        "q": "std::apply unpacks tuple for function call.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::apply works with any callable.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ function unpacks tuples for calling.",
+        "type": "fill_blank",
+        "answers": [
+            "std::apply"
+        ],
+        "other_options": [
+            "std::invoke",
+            "std::call",
+            "std::unpack"
+        ]
+    },
+    {
+        "q": "Match functional utilities:",
+        "type": "match",
+        "left": [
+            "std::invoke",
+            "std::apply",
+            "std::bind",
+            "std::function"
+        ],
+        "right": [
+            "Uniform call",
+            "Tuple unpack",
+            "Argument binding",
+            "Type erasure"
+        ]
+    },
+    {
+        "q": "What is virtual base class pointer adjustment?",
+        "type": "mcq",
+        "o": [
+            "Adjusting this pointer for virtual base access",
+            "No adjustment",
+            "Static adjustment",
+            "Compile-time adjustment"
+        ]
+    },
+    {
+        "q": "Virtual inheritance requires pointer adjustment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Vtable contains offset information for virtual bases.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ adjustment handles virtual base access.",
+        "type": "fill_blank",
+        "answers": [
+            "pointer"
+        ],
+        "other_options": [
+            "size",
+            "offset",
+            "alignment"
+        ]
+    },
+    {
+        "q": "Rearrange from simple to complex object layout:",
+        "type": "rearrange",
+        "words": [
+            "POD",
+            "Non-virtual class",
+            "Single inheritance",
+            "Multiple inheritance",
+            "Virtual inheritance"
+        ]
+    },
+    {
+        "q": "What is pure virtual destructor?",
+        "type": "mcq",
+        "o": [
+            "Destructor declared = 0 but must have implementation",
+            "No destructor",
+            "Default destructor",
+            "Virtual destructor only"
+        ]
+    },
+    {
+        "q": "Pure virtual destructor still needs implementation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pure virtual destructor makes class abstract.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A _______ destructor is pure but implemented.",
+        "type": "fill_blank",
+        "answers": [
+            "pure virtual"
+        ],
+        "other_options": [
+            "virtual",
+            "default",
+            "abstract"
+        ]
+    },
+    {
+        "q": "What is vtable pointer location?",
+        "type": "mcq",
+        "o": [
+            "Typically at the beginning of the object",
+            "At the end",
+            "In the middle",
+            "Not in object"
+        ]
+    },
+    {
+        "q": "vptr is usually at offset 0 in an object.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "vptr location is implementation-defined.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ is stored at the beginning of polymorphic objects.",
+        "type": "fill_blank",
+        "answers": [
+            "vptr"
+        ],
+        "other_options": [
+            "vtable",
+            "data",
+            "base"
+        ]
+    },
+    {
+        "q": "What is call-by-pointer-to-base idiom?",
+        "type": "mcq",
+        "o": [
+            "Using base pointer/reference for polymorphic behavior",
+            "Direct base call",
+            "No polymorphism",
+            "Static call"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Animal {\npublic:\n    virtual void speak() { cout << \"Animal\"; }\n};\n\nclass Cat : public Animal {\npublic:\n    void speak() override { cout << \"Meow\"; }\n};\n\nvoid talk(Animal* a) { a->speak(); }\n\nint main() {\n    Cat c;\n    talk(&c);\n    return 0;\n}",
+        "o": [
+            "Meow",
+            "Animal",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Polymorphism requires base type reference or pointer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Value semantics prevent polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ idiom uses base pointers for flexibility.",
+        "type": "fill_blank",
+        "answers": [
+            "call-by-pointer-to-base"
+        ],
+        "other_options": [
+            "call-by-value",
+            "call-by-copy",
+            "call-by-reference"
+        ]
+    },
+    {
+        "q": "Match polymorphism prerequisites:",
+        "type": "match",
+        "left": [
+            "Virtual keyword",
+            "Base pointer",
+            "Inheritance",
+            "Override"
+        ],
+        "right": [
+            "Enable dispatch",
+            "Runtime selection",
+            "Type hierarchy",
+            "Extend behavior"
+        ]
+    },
+    {
+        "q": "What is Liskov Substitution Principle with polymorphism?",
+        "type": "mcq",
+        "o": [
+            "Derived should be substitutable for base",
+            "Base replaces derived",
+            "No substitution",
+            "Compile-time only"
+        ]
+    },
+    {
+        "q": "LSP ensures behavioral subtyping.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Violating LSP breaks polymorphism assumptions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ principle ensures derived is substitutable.",
+        "type": "fill_blank",
+        "answers": [
+            "Liskov Substitution"
+        ],
+        "other_options": [
+            "Open-Closed",
+            "Single Responsibility",
+            "Interface Segregation"
+        ]
+    },
+    {
+        "q": "What is Open-Closed Principle with polymorphism?",
+        "type": "mcq",
+        "o": [
+            "Open for extension, closed for modification",
+            "Open for modification",
+            "Closed for extension",
+            "Neither open nor closed"
+        ]
+    },
+    {
+        "q": "Polymorphism enables OCP by allowing extensions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual functions support OCP.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ principle allows extension without modification.",
+        "type": "fill_blank",
+        "answers": [
+            "Open-Closed"
+        ],
+        "other_options": [
+            "Liskov Substitution",
+            "Single Responsibility",
+            "Interface Segregation"
+        ]
+    },
+    {
+        "q": "Rearrange SOLID principles:",
+        "type": "rearrange",
+        "words": [
+            "Single Responsibility",
+            "Open-Closed",
+            "Liskov Substitution",
+            "Interface Segregation",
+            "Dependency Inversion"
+        ]
+    },
+    {
+        "q": "What is Dependency Inversion Principle with polymorphism?",
+        "type": "mcq",
+        "o": [
+            "Depend on abstractions, not concretions",
+            "Depend on concretions",
+            "No dependencies",
+            "Direct dependencies"
+        ]
+    },
+    {
+        "q": "Polymorphism enables DIP through abstract interfaces.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "DIP reduces coupling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ principle prefers abstractions.",
+        "type": "fill_blank",
+        "answers": [
+            "Dependency Inversion"
+        ],
+        "other_options": [
+            "Open-Closed",
+            "Liskov Substitution",
+            "Single Responsibility"
+        ]
+    },
+    {
+        "q": "What is Interface Segregation Principle?",
+        "type": "mcq",
+        "o": [
+            "Many specific interfaces over one general",
+            "One large interface",
+            "No interfaces",
+            "Concrete classes only"
+        ]
+    },
+    {
+        "q": "ISP prevents fat interfaces.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ISP leads to better polymorphism design.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ principle prefers specific interfaces.",
+        "type": "fill_blank",
+        "answers": [
+            "Interface Segregation"
+        ],
+        "other_options": [
+            "Dependency Inversion",
+            "Open-Closed",
+            "Liskov Substitution"
+        ]
+    },
+    {
+        "q": "Match SOLID principles with polymorphism benefit:",
+        "type": "match",
+        "left": [
+            "SRP",
+            "OCP",
+            "LSP",
+            "DIP"
+        ],
+        "right": [
+            "Focused classes",
+            "Extend without modify",
+            "Substitutability",
+            "Abstract dependencies"
+        ]
+    },
+    {
+        "q": "What is currying with polymorphic functions?",
+        "type": "mcq",
+        "o": [
+            "Transform function taking multiple args to sequence of functions",
+            "Add curry to function",
+            "No transformation",
+            "Direct call"
+        ]
+    },
+    {
+        "q": "std::bind supports partial application.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lambdas can capture for currying effect.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ transforms multi-arg to chain of single-arg functions.",
+        "type": "fill_blank",
+        "answers": [
+            "currying"
+        ],
+        "other_options": [
+            "binding",
+            "applying",
+            "invoking"
+        ]
+    },
+    {
+        "q": "What is higher-order function?",
+        "type": "mcq",
+        "o": [
+            "Function taking or returning functions",
+            "Normal function",
+            "Low-order function",
+            "No function"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <algorithm>\n#include <vector>\nusing namespace std;\n\nint main() {\n    vector<int> v = {1, 2, 3};\n    int sum = 0;\n    for_each(v.begin(), v.end(), [&sum](int x) { sum += x; });\n    cout << sum;\n    return 0;\n}",
+        "o": [
+            "6",
+            "0",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "STL algorithms use higher-order functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Higher-order functions enable functional programming.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A _______ function operates on other functions.",
+        "type": "fill_blank",
+        "answers": [
+            "higher-order"
+        ],
+        "other_options": [
+            "lower-order",
+            "normal",
+            "simple"
+        ]
+    },
+    {
+        "q": "Rearrange from least to most flexible callable:",
+        "type": "rearrange",
+        "words": [
+            "Function pointer",
+            "Functor class",
+            "Named lambda",
+            "Generic lambda",
+            "std::function"
+        ]
+    },
+    {
+        "q": "What is perfect forwarding?",
+        "type": "mcq",
+        "o": [
+            "Forwarding arguments preserving value category",
+            "Imperfect forwarding",
+            "No forwarding",
+            "Copy forwarding"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <utility>\nusing namespace std;\n\nvoid process(int& x) { cout << \"L\"; }\nvoid process(int&& x) { cout << \"R\"; }\n\ntemplate<typename T>\nvoid forward_call(T&& arg) {\n    process(forward<T>(arg));\n}\n\nint main() {\n    int x = 5;\n    forward_call(x);\n    forward_call(10);\n    return 0;\n}",
+        "o": [
+            "LR",
+            "LL",
+            "RR",
+            "Error"
+        ]
+    },
+    {
+        "q": "std::forward preserves value category.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Perfect forwarding uses universal references.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ preserves lvalue/rvalue nature.",
+        "type": "fill_blank",
+        "answers": [
+            "std::forward"
+        ],
+        "other_options": [
+            "std::move",
+            "std::copy",
+            "std::ref"
+        ]
+    },
+    {
+        "q": "What is universal reference?",
+        "type": "mcq",
+        "o": [
+            "T&& in template context deducing type",
+            "Rvalue reference only",
+            "Lvalue reference only",
+            "No reference"
+        ]
+    },
+    {
+        "q": "Universal references deduce both lvalue and rvalue.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "auto&& is a universal reference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ reference deduces both value categories.",
+        "type": "fill_blank",
+        "answers": [
+            "universal"
+        ],
+        "other_options": [
+            "rvalue",
+            "lvalue",
+            "const"
+        ]
+    },
+    {
+        "q": "Match reference types:",
+        "type": "match",
+        "left": [
+            "T&",
+            "const T&",
+            "T&&",
+            "auto&&"
+        ],
+        "right": [
+            "Lvalue only",
+            "Any const",
+            "Rvalue only",
+            "Universal"
+        ]
+    },
+    {
+        "q": "What is reference collapsing?",
+        "type": "mcq",
+        "o": [
+            "Rules for combining references",
+            "Reference deletion",
+            "No references",
+            "Static references"
+        ]
+    },
+    {
+        "q": "& && collapses to &.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "&& && collapses to &&.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Reference _______ determines final reference type.",
+        "type": "fill_blank",
+        "answers": [
+            "collapsing"
+        ],
+        "other_options": [
+            "folding",
+            "merging",
+            "combining"
+        ]
+    },
+    {
+        "q": "What is move semantics with polymorphism?",
+        "type": "mcq",
+        "o": [
+            "Transfer ownership through virtual functions",
+            "Copy semantics only",
+            "No move support",
+            "Static move"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <utility>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void print() { cout << \"B\"; }\n    Base() = default;\n    Base(Base&&) { cout << \"Moved\"; }\n};\n\nclass Derived : public Base {\npublic:\n    void print() override { cout << \"D\"; }\n};\n\nint main() {\n    Derived d;\n    Derived d2 = move(d);\n    d2.print();\n    return 0;\n}",
+        "o": [
+            "MovedD",
+            "D",
+            "B",
+            "Error"
+        ]
+    },
+    {
+        "q": "Move constructors can be inherited.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual + move enables efficient polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ constructor transfers ownership.",
+        "type": "fill_blank",
+        "answers": [
+            "move"
+        ],
+        "other_options": [
+            "copy",
+            "default",
+            "virtual"
+        ]
+    },
+    {
+        "q": "Rearrange special member functions:",
+        "type": "rearrange",
+        "words": [
+            "Default constructor",
+            "Copy constructor",
+            "Move constructor",
+            "Destructor",
+            "Copy assignment"
+        ]
+    },
+    {
+        "q": "What is copy-and-swap idiom?",
+        "type": "mcq",
+        "o": [
+            "Implement assignment using copy and swap",
+            "Direct copy",
+            "No swap",
+            "Virtual swap"
+        ]
+    },
+    {
+        "q": "Copy-and-swap provides strong exception guarantee.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Swap should be noexcept.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ idiom implements safe assignment.",
+        "type": "fill_blank",
+        "answers": [
+            "copy-and-swap"
+        ],
+        "other_options": [
+            "move-and-copy",
+            "copy-and-delete",
+            "swap-and-move"
+        ]
+    },
+    {
+        "q": "What is rule of three?",
+        "type": "mcq",
+        "o": [
+            "Define destructor, copy constructor, copy assignment together",
+            "Define one",
+            "Define none",
+            "Define five"
+        ]
+    },
+    {
+        "q": "Rule of three applies to resource-managing classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Ignoring rule of three causes resource bugs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The rule of _______ covers copy operations and destructor.",
+        "type": "fill_blank",
+        "answers": [
+            "three"
+        ],
+        "other_options": [
+            "five",
+            "zero",
+            "one"
+        ]
+    },
+    {
+        "q": "Match special member function rules:",
+        "type": "match",
+        "left": [
+            "Rule of zero",
+            "Rule of three",
+            "Rule of five",
+            "Destructor"
+        ],
+        "right": [
+            "Use defaults",
+            "Copy + destroy",
+            "Copy + move + destroy",
+            "Cleanup"
+        ]
+    },
+    {
+        "q": "What is rule of five?",
+        "type": "mcq",
+        "o": [
+            "Rule of three plus move constructor and move assignment",
+            "Rule of three only",
+            "No move",
+            "Copy only"
+        ]
+    },
+    {
+        "q": "Rule of five is C++11 extension of rule of three.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Classes with pointers should follow rule of five.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The rule of _______ adds move operations.",
+        "type": "fill_blank",
+        "answers": [
+            "five"
+        ],
+        "other_options": [
+            "three",
+            "zero",
+            "one"
+        ]
+    },
+    {
+        "q": "What is rule of zero?",
+        "type": "mcq",
+        "o": [
+            "Don't define special members, use smart pointers",
+            "Define all members",
+            "Delete all members",
+            "No members"
+        ]
+    },
+    {
+        "q": "Rule of zero prefers composition with RAII types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "unique_ptr enables rule of zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The rule of _______ uses smart pointers for ownership.",
+        "type": "fill_blank",
+        "answers": [
+            "zero"
+        ],
+        "other_options": [
+            "three",
+            "five",
+            "one"
+        ]
+    },
+    {
+        "q": "Rearrange ownership management evolution:",
+        "type": "rearrange",
+        "words": [
+            "Raw pointers",
+            "Delete in destructor",
+            "Smart pointers",
+            "Rule of zero"
+        ]
+    },
+    {
+        "q": "What is unique_ptr with polymorphism?",
+        "type": "mcq",
+        "o": [
+            "Smart pointer managing polymorphic object lifetime",
+            "Raw pointer wrapper",
+            "Shared ownership",
+            "No polymorphism"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <memory>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void show() { cout << \"Base\"; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void show() override { cout << \"Derived\"; }\n};\n\nint main() {\n    unique_ptr<Base> p = make_unique<Derived>();\n    p->show();\n    return 0;\n}",
+        "o": [
+            "Derived",
+            "Base",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "unique_ptr works with virtual destructor.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "make_unique is exception-safe.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ smart pointer has exclusive ownership.",
+        "type": "fill_blank",
+        "answers": [
+            "unique_ptr"
+        ],
+        "other_options": [
+            "shared_ptr",
+            "weak_ptr",
+            "auto_ptr"
+        ]
+    },
+    {
+        "q": "What is shared_ptr with polymorphism?",
+        "type": "mcq",
+        "o": [
+            "Reference-counted pointer supporting polymorphism",
+            "Unique ownership",
+            "No counting",
+            "Weak ownership"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <memory>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void greet() { cout << \"Hi\"; }\n    virtual ~Base() = default;\n};\n\nclass Derived : public Base {\npublic:\n    void greet() override { cout << \"Hello\"; }\n};\n\nint main() {\n    shared_ptr<Base> p1 = make_shared<Derived>();\n    shared_ptr<Base> p2 = p1;\n    p2->greet();\n    return 0;\n}",
+        "o": [
+            "Hello",
+            "Hi",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "shared_ptr uses reference counting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "shared_ptr supports polymorphic deletion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ smart pointer shares ownership.",
+        "type": "fill_blank",
+        "answers": [
+            "shared_ptr"
+        ],
+        "other_options": [
+            "unique_ptr",
+            "weak_ptr",
+            "raw_ptr"
+        ]
+    },
+    {
+        "q": "Match smart pointer types:",
+        "type": "match",
+        "left": [
+            "unique_ptr",
+            "shared_ptr",
+            "weak_ptr",
+            "raw pointer"
+        ],
+        "right": [
+            "Exclusive",
+            "Shared count",
+            "Non-owning",
+            "Manual delete"
+        ]
+    },
+    {
+        "q": "What is weak_ptr use with polymorphism?",
+        "type": "mcq",
+        "o": [
+            "Non-owning observer that doesn't prevent deletion",
+            "Strong ownership",
+            "Exclusive ownership",
+            "No observation"
+        ]
+    },
+    {
+        "q": "weak_ptr breaks circular references.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "weak_ptr must be converted to shared_ptr for use.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pointer observes without owning.",
+        "type": "fill_blank",
+        "answers": [
+            "weak_ptr"
+        ],
+        "other_options": [
+            "shared_ptr",
+            "unique_ptr",
+            "raw_ptr"
+        ]
+    },
+    {
+        "q": "What is enable_shared_from_this?",
+        "type": "mcq",
+        "o": [
+            "Base class enabling shared_ptr from within object",
+            "Disable shared",
+            "Enable unique",
+            "Weak enable"
+        ]
+    },
+    {
+        "q": "enable_shared_from_this works with inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "shared_from_this is called on managed objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ mixin creates shared_ptr from this.",
+        "type": "fill_blank",
+        "answers": [
+            "enable_shared_from_this"
+        ],
+        "other_options": [
+            "enable_unique",
+            "enable_weak",
+            "enable_raw"
+        ]
+    },
+    {
+        "q": "Rearrange smart pointer safety level:",
+        "type": "rearrange",
+        "words": [
+            "Raw pointer",
+            "unique_ptr",
+            "shared_ptr",
+            "weak_ptr",
+            "make_shared"
+        ]
+    },
+    {
+        "q": "What is custom deleter for polymorphic smart pointer?",
+        "type": "mcq",
+        "o": [
+            "Custom cleanup function for special resource handling",
+            "Default delete",
+            "No cleanup",
+            "Static delete"
+        ]
+    },
+    {
+        "q": "unique_ptr supports custom deleters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "shared_ptr custom deleter doesn't affect type.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A _______ changes how smart pointer cleans up.",
+        "type": "fill_blank",
+        "answers": [
+            "custom deleter"
+        ],
+        "other_options": [
+            "default deleter",
+            "virtual deleter",
+            "static deleter"
+        ]
+    },
+    {
+        "q": "Match deleter scenarios:",
+        "type": "match",
+        "left": [
+            "Default delete",
+            "Array delete",
+            "Custom deleter",
+            "No-op"
+        ],
+        "right": [
+            "Single object",
+            "Array of objects",
+            "Special cleanup",
+            "Non-owning"
+        ]
+    },
+    {
+        "q": "What is aliasing constructor for shared_ptr?",
+        "type": "mcq",
+        "o": [
+            "Point to member while sharing ownership with owner",
+            "Simple copy",
+            "No aliasing",
+            "Weak aliasing"
+        ]
+    },
+    {
+        "q": "Aliasing maintains correct lifetime.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Aliased pointer shares ownership with original.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ constructor points to sub-object.",
+        "type": "fill_blank",
+        "answers": [
+            "aliasing"
+        ],
+        "other_options": [
+            "copying",
+            "moving",
+            "sharing"
+        ]
+    },
+    {
+        "q": "What is std::dynamic_pointer_cast?",
+        "type": "mcq",
+        "o": [
+            "Dynamic cast for shared_ptr maintaining sharing",
+            "Static cast",
+            "Reinterpret cast",
+            "Const cast"
+        ]
+    },
+    {
+        "q": "dynamic_pointer_cast returns null on failure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "dynamic_pointer_cast preserves reference count.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ casts shared_ptr polymorphically.",
+        "type": "fill_blank",
+        "answers": [
+            "dynamic_pointer_cast"
+        ],
+        "other_options": [
+            "static_pointer_cast",
+            "const_pointer_cast",
+            "reinterpret_pointer_cast"
+        ]
+    },
+    {
+        "q": "Match pointer cast functions:",
+        "type": "match",
+        "left": [
+            "static_pointer_cast",
+            "dynamic_pointer_cast",
+            "const_pointer_cast",
+            "reinterpret_pointer_cast"
+        ],
+        "right": [
+            "No check",
+            "RTTI check",
+            "Add/remove const",
+            "Bit pattern"
+        ]
+    },
+    {
+        "q": "What is thread-safe reference counting?",
+        "type": "mcq",
+        "o": [
+            "Atomic increment/decrement for shared_ptr",
+            "Non-atomic counting",
+            "No thread safety",
+            "Mutex-free"
+        ]
+    },
+    {
+        "q": "shared_ptr reference counting is atomic.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Accessing shared object requires external synchronization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ counting enables multi-threaded shared_ptr.",
+        "type": "fill_blank",
+        "answers": [
+            "atomic"
+        ],
+        "other_options": [
+            "mutex",
+            "lock-free",
+            "lock-based"
+        ]
+    },
+    {
+        "q": "Rearrange from single to multi-threaded safety:",
+        "type": "rearrange",
+        "words": [
+            "No synchronization",
+            "Atomic counter",
+            "Mutex protection",
+            "Thread-local copy"
+        ]
+    },
+    {
+        "q": "What is noexcept with virtual functions?",
+        "type": "mcq",
+        "o": [
+            "Exception specification that overrides must match or strengthen",
+            "Ignore exceptions",
+            "Throw exceptions",
+            "No specification"
+        ]
+    },
+    {
+        "q": "Override cannot weaken noexcept.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "noexcept enables certain optimizations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ specifier guarantees no exceptions.",
+        "type": "fill_blank",
+        "answers": [
+            "noexcept"
+        ],
+        "other_options": [
+            "throw",
+            "exception",
+            "nothrow"
+        ]
+    },
+    {
+        "q": "Match exception specifications:",
+        "type": "match",
+        "left": [
+            "noexcept",
+            "noexcept(expr)",
+            "throw()",
+            "No spec"
+        ],
+        "right": [
+            "No throw",
+            "Conditional",
+            "Deprecated C++11",
+            "May throw"
+        ]
+    },
+    {
+        "q": "What is exception-safe polymorphism?",
+        "type": "mcq",
+        "o": [
+            "Ensuring proper cleanup through virtual destructor",
+            "No exceptions",
+            "Ignore cleanup",
+            "Static cleanup"
+        ]
+    },
+    {
+        "q": "Virtual destructors ensure exception-safe cleanup.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RAII with polymorphism is exception-safe.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ principle ensures cleanup during exceptions.",
+        "type": "fill_blank",
+        "answers": [
+            "RAII"
+        ],
+        "other_options": [
+            "CRTP",
+            "PIMPL",
+            "NVI"
+        ]
+    },
+    {
+        "q": "Rearrange exception safety levels:",
+        "type": "rearrange",
+        "words": [
+            "No guarantee",
+            "Basic guarantee",
+            "Strong guarantee",
+            "No-throw guarantee"
+        ]
+    },
+    {
+        "q": "What is inline virtual function?",
+        "type": "mcq",
+        "o": [
+            "Virtual function marked inline, may be inlined when called directly",
+            "Always inlined",
+            "Never virtual",
+            "No inline"
+        ]
+    },
+    {
+        "q": "Inline virtual is still virtual through pointer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Direct call to virtual may be inlined.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "An _______ virtual function may be inlined in direct calls.",
+        "type": "fill_blank",
+        "answers": [
+            "inline"
+        ],
+        "other_options": [
+            "virtual",
+            "static",
+            "constexpr"
+        ]
+    },
+    {
+        "q": "What is default argument with virtual function?",
+        "type": "mcq",
+        "o": [
+            "Default is determined by static type, not dynamic",
+            "Dynamic default",
+            "No defaults allowed",
+            "Same as non-virtual"
+        ]
+    },
+    {
+        "q": "Virtual function default args are statically bound.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Overriding with different defaults causes surprises.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Default arguments use _______ binding.",
+        "type": "fill_blank",
+        "answers": [
+            "static"
+        ],
+        "other_options": [
+            "dynamic",
+            "late",
+            "runtime"
+        ]
+    },
+    {
+        "q": "Match virtual function behaviors:",
+        "type": "match",
+        "left": [
+            "Function call",
+            "Default arguments",
+            "Access specifier",
+            "Return type"
+        ],
+        "right": [
+            "Dynamic",
+            "Static",
+            "Static",
+            "Covariant allowed"
+        ]
+    },
+    {
+        "q": "What is access specifier for virtual override?",
+        "type": "mcq",
+        "o": [
+            "Override can have different access than base",
+            "Same access required",
+            "No access change",
+            "Public only"
+        ]
+    },
+    {
+        "q": "A private override is still called through base pointer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Access checking uses static type.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Access specifiers are checked _______ not dynamically.",
+        "type": "fill_blank",
+        "answers": [
+            "statically"
+        ],
+        "other_options": [
+            "dynamically",
+            "never",
+            "always"
+        ]
+    },
+    {
+        "q": "Rearrange from most to least accessible:",
+        "type": "rearrange",
+        "words": [
+            "public",
+            "protected",
+            "private",
+            "friend access only"
+        ]
+    },
+    {
+        "q": "What is protected inheritance with polymorphism?",
+        "type": "mcq",
+        "o": [
+            "Base publicly visible only within hierarchy",
+            "Fully public",
+            "Fully private",
+            "No inheritance"
+        ]
+    },
+    {
+        "q": "Protected inheritance limits base access to derived.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Polymorphism works through protected inheritance within hierarchy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ inheritance restricts base visibility.",
+        "type": "fill_blank",
+        "answers": [
+            "protected"
+        ],
+        "other_options": [
+            "public",
+            "private",
+            "virtual"
+        ]
+    },
+    {
+        "q": "What is private inheritance with polymorphism?",
+        "type": "mcq",
+        "o": [
+            "Uses implementation without exposing base interface",
+            "Public interface",
+            "No implementation",
+            "Virtual interface"
+        ]
+    },
+    {
+        "q": "Private inheritance hides base from external code.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Private inheritance is implementation inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ inheritance uses base for implementation.",
+        "type": "fill_blank",
+        "answers": [
+            "private"
+        ],
+        "other_options": [
+            "public",
+            "protected",
+            "virtual"
+        ]
+    },
+    {
+        "q": "Match inheritance access levels:",
+        "type": "match",
+        "left": [
+            "public : Base",
+            "protected : Base",
+            "private : Base",
+            "using Base::member"
+        ],
+        "right": [
+            "Is-a relationship",
+            "Limited is-a",
+            "Implemented-in-terms-of",
+            "Expose member"
+        ]
+    },
+    {
+        "q": "What is using declaration to expose base members?",
+        "type": "mcq",
+        "o": [
+            "Bring base's name into derived scope",
+            "Hide base member",
+            "Delete base member",
+            "Virtual member"
+        ]
+    },
+    {
+        "q": "using can change member access level.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "using prevents function hiding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ declaration brings base members to derived.",
+        "type": "fill_blank",
+        "answers": [
+            "using"
+        ],
+        "other_options": [
+            "typedef",
+            "friend",
+            "virtual"
+        ]
+    },
+    {
+        "q": "What is hiding vs overriding?",
+        "type": "mcq",
+        "o": [
+            "Hiding replaces base name, overriding extends virtual",
+            "Same thing",
+            "No difference",
+            "Overriding hides"
+        ]
+    },
+    {
+        "q": "Non-virtual functions are hidden not overridden.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual functions are overridden with dynamic dispatch.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ replaces name while override extends behavior.",
+        "type": "fill_blank",
+        "answers": [
+            "hiding"
+        ],
+        "other_options": [
+            "overriding",
+            "shadowing",
+            "replacing"
+        ]
+    },
+    {
+        "q": "What is object identity with polymorphism?",
+        "type": "mcq",
+        "o": [
+            "Same object accessed through different types",
+            "Different objects",
+            "No identity",
+            "Static identity"
+        ]
+    },
+    {
+        "q": "Base and derived pointers to same object have same address.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Object identity is preserved through casting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ remains constant through polymorphic access.",
+        "type": "fill_blank",
+        "answers": [
+            "object identity"
+        ],
+        "other_options": [
+            "object type",
+            "object value",
+            "object size"
+        ]
+    },
+    {
+        "q": "Match object concepts:",
+        "type": "match",
+        "left": [
+            "Object identity",
+            "Object state",
+            "Object behavior",
+            "Object type"
+        ],
+        "right": [
+            "Memory address",
+            "Member values",
+            "Virtual functions",
+            "Runtime class"
+        ]
+    },
+    {
+        "q": "What is polymorphic memory allocation?",
+        "type": "mcq",
+        "o": [
+            "Base pointer to heap-allocated derived",
+            "Stack allocation only",
+            "No allocation",
+            "Static allocation"
+        ]
+    },
+    {
+        "q": "Heap allocation enables runtime polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Polymorphic objects often require dynamic allocation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ keyword allocates polymorphic objects.",
+        "type": "fill_blank",
+        "answers": [
+            "new"
+        ],
+        "other_options": [
+            "malloc",
+            "alloc",
+            "create"
+        ]
+    },
+    {
+        "q": "What is placement new with polymorphism?",
+        "type": "mcq",
+        "o": [
+            "Construct object at specific memory location",
+            "Normal new",
+            "Delete operator",
+            "Malloc wrapper"
+        ]
+    },
+    {
+        "q": "Placement new works with polymorphic objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Placement new requires manual destructor call.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ new constructs at given address.",
+        "type": "fill_blank",
+        "answers": [
+            "placement"
+        ],
+        "other_options": [
+            "global",
+            "local",
+            "static"
+        ]
+    },
+    {
+        "q": "Rearrange allocation methods:",
+        "type": "rearrange",
+        "words": [
+            "Stack",
+            "new/delete",
+            "Placement new",
+            "Pool allocator",
+            "Custom allocator"
+        ]
+    },
+    {
+        "q": "What is virtual table inheritance?",
+        "type": "mcq",
+        "o": [
+            "Derived vtable extends base vtable entries",
+            "No inheritance",
+            "Separate vtables",
+            "Copy vtable"
+        ]
+    },
+    {
+        "q": "Derived vtable contains base virtual functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "vtable is inherited and extended.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The derived _______ includes base virtual function pointers.",
+        "type": "fill_blank",
+        "answers": [
+            "vtable"
+        ],
+        "other_options": [
+            "vptr",
+            "object",
+            "layout"
+        ]
+    },
+    {
+        "q": "What is virtual override with multiple inheritance?",
+        "type": "mcq",
+        "o": [
+            "Override must be unambiguous or explicitly qualified",
+            "Automatic resolution",
+            "No overriding",
+            "Random selection"
+        ]
+    },
+    {
+        "q": "Multiple bases with same virtual require single override.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Diamond inheritance may cause override ambiguity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ specifier clarifies ambiguous overrides.",
+        "type": "fill_blank",
+        "answers": [
+            "override"
+        ],
+        "other_options": [
+            "virtual",
+            "final",
+            "explicit"
+        ]
+    },
+    {
+        "q": "Match multiple inheritance issues:",
+        "type": "match",
+        "left": [
+            "Diamond problem",
+            "Ambiguous call",
+            "Name collision",
+            "Size overhead"
+        ],
+        "right": [
+            "Virtual base",
+            "Qualification",
+            "using declaration",
+            "Multiple vptrs"
+        ]
+    },
+    {
+        "q": "What is sizeof with polymorphic object?",
+        "type": "mcq",
+        "o": [
+            "Includes vptr overhead",
+            "Same as non-polymorphic",
+            "No overhead",
+            "Dynamic size"
+        ]
+    },
+    {
+        "q": "sizeof returns static type size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Polymorphic objects are larger due to vptr.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ operator returns compile-time size.",
+        "type": "fill_blank",
+        "answers": [
+            "sizeof"
+        ],
+        "other_options": [
+            "typeid",
+            "alignof",
+            "offsetof"
+        ]
+    },
+    {
+        "q": "What is alignas with polymorphic types?",
+        "type": "mcq",
+        "o": [
+            "Specify alignment for polymorphic objects",
+            "No alignment control",
+            "Automatic alignment",
+            "Virtual alignment"
+        ]
+    },
+    {
+        "q": "alignas affects memory layout of polymorphic objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "vptr has platform-specific alignment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ specifier controls memory alignment.",
+        "type": "fill_blank",
+        "answers": [
+            "alignas"
+        ],
+        "other_options": [
+            "sizeof",
+            "alignof",
+            "offsetof"
+        ]
+    },
+    {
+        "q": "Rearrange memory investigation operators:",
+        "type": "rearrange",
+        "words": [
+            "sizeof",
+            "alignof",
+            "offsetof",
+            "typeid"
+        ]
+    },
+    {
+        "q": "What is pointer-to-member with virtual functions?",
+        "type": "mcq",
+        "o": [
+            "Pointer to virtual function uses vtable offset",
+            "Direct address",
+            "No virtual support",
+            "Static pointer"
+        ]
+    },
+    {
+        "q": "Pointer-to-member virtual uses dynamic dispatch.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual pointer-to-member stores vtable index.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual _______ members dispatch through vtable.",
+        "type": "fill_blank",
+        "answers": [
+            "pointer-to-member"
+        ],
+        "other_options": [
+            "pointer",
+            "reference",
+            "direct"
+        ]
+    },
+    {
+        "q": "What is polymorphic exception handling?",
+        "type": "mcq",
+        "o": [
+            "Catch by base reference to handle derived exceptions",
+            "Catch by value",
+            "No polymorphism",
+            "Static catch"
+        ]
+    },
+    {
+        "q": "Catch by reference preserves exception polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Throwing by value slices derived exceptions.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Catch by _______ enables polymorphic exception handling.",
+        "type": "fill_blank",
+        "answers": [
+            "reference"
+        ],
+        "other_options": [
+            "value",
+            "pointer",
+            "copy"
+        ]
+    },
+    {
+        "q": "Match exception handling best practices:",
+        "type": "match",
+        "left": [
+            "Throw by value",
+            "Catch by reference",
+            "virtual what()",
+            "Exception hierarchy"
+        ],
+        "right": [
+            "Avoid slicing",
+            "Preserve type",
+            "Override message",
+            "Base std::exception"
+        ]
+    },
+    {
+        "q": "What is std::exception with polymorphism?",
+        "type": "mcq",
+        "o": [
+            "Base class for standard exception hierarchy",
+            "Final exception",
+            "No inheritance",
+            "Template exception"
+        ]
+    },
+    {
+        "q": "std::exception::what() is virtual.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Custom exceptions should inherit from std::exception.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ class is the polymorphic exception base.",
+        "type": "fill_blank",
+        "answers": [
+            "std::exception"
+        ],
+        "other_options": [
+            "std::error",
+            "std::failure",
+            "std::throw"
+        ]
+    },
+    {
+        "q": "What is nested exception?",
+        "type": "mcq",
+        "o": [
+            "Exception containing another exception for context",
+            "Single exception",
+            "No nesting",
+            "Flat exception"
+        ]
+    },
+    {
+        "q": "std::nested_exception enables exception chaining.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Nested exceptions preserve original context.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ class stores another exception.",
+        "type": "fill_blank",
+        "answers": [
+            "std::nested_exception"
+        ],
+        "other_options": [
+            "std::exception",
+            "std::runtime_error",
+            "std::logic_error"
+        ]
+    },
+    {
+        "q": "Rearrange exception hierarchy:",
+        "type": "rearrange",
+        "words": [
+            "std::exception",
+            "std::logic_error",
+            "std::runtime_error",
+            "std::out_of_range",
+            "Custom exception"
+        ]
+    },
+    {
+        "q": "What is polymorphic stream?",
+        "type": "mcq",
+        "o": [
+            "Stream with virtual functions for customization",
+            "Static stream",
+            "Template stream only",
+            "No polymorphism"
+        ]
+    },
+    {
+        "q": "std::iostream uses virtual functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Custom streams inherit from std::streambuf.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The std::_______ hierarchy uses polymorphism.",
+        "type": "fill_blank",
+        "answers": [
+            "iostream"
+        ],
+        "other_options": [
+            "string",
+            "vector",
+            "array"
+        ]
+    },
+    {
+        "q": "What is virtual file system pattern?",
+        "type": "mcq",
+        "o": [
+            "Abstract interface for different storage backends",
+            "Real filesystem only",
+            "No abstraction",
+            "Static filesystem"
+        ]
+    },
+    {
+        "q": "VFS enables testing with mock filesystems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "VFS decouples code from storage implementation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern abstracts storage backends.",
+        "type": "fill_blank",
+        "answers": [
+            "virtual file system"
+        ],
+        "other_options": [
+            "real file system",
+            "static file system",
+            "template file system"
+        ]
+    },
+    {
+        "q": "Match abstraction patterns:",
+        "type": "match",
+        "left": [
+            "VFS",
+            "Virtual clock",
+            "Mock network",
+            "Test double"
+        ],
+        "right": [
+            "Storage",
+            "Time",
+            "Communication",
+            "General fake"
+        ]
+    },
+    {
+        "q": "What is polymorphic comparator?",
+        "type": "mcq",
+        "o": [
+            "Virtual comparison function for containers",
+            "Static comparison",
+            "Template only",
+            "No comparison"
+        ]
+    },
+    {
+        "q": "Polymorphic comparators enable runtime sort strategies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::function can wrap comparators.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ comparator changes ordering at runtime.",
+        "type": "fill_blank",
+        "answers": [
+            "polymorphic"
+        ],
+        "other_options": [
+            "static",
+            "template",
+            "inline"
+        ]
+    },
+    {
+        "q": "Rearrange from most to least flexible comparison:",
+        "type": "rearrange",
+        "words": [
+            "Hardcoded",
+            "Template parameter",
+            "Function pointer",
+            "std::function",
+            "Polymorphic object"
+        ]
+    },
+    {
+        "q": "What is polymorphic logging?",
+        "type": "mcq",
+        "o": [
+            "Virtual logger interface with different backends",
+            "Single logger",
+            "No logging",
+            "Compile-time logging"
+        ]
+    },
+    {
+        "q": "Logger interface enables swapping implementations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Null logger pattern uses polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern swaps logging backends.",
+        "type": "fill_blank",
+        "answers": [
+            "polymorphic logger"
+        ],
+        "other_options": [
+            "static logger",
+            "template logger",
+            "macro logger"
+        ]
+    }
+]

@@ -1,0 +1,5690 @@
+[
+    {
+        "q": "What is a class in C++?",
+        "type": "mcq",
+        "o": [
+            "A user-defined data type that encapsulates data and functions",
+            "A function",
+            "A variable",
+            "A pointer"
+        ]
+    },
+    {
+        "q": "What is an object in C++?",
+        "type": "mcq",
+        "o": [
+            "An instance of a class",
+            "A function definition",
+            "A data type",
+            "A header file"
+        ]
+    },
+    {
+        "q": "Which keyword is used to define a class in C++?",
+        "type": "mcq",
+        "o": [
+            "class",
+            "struct",
+            "object",
+            "def"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Car {\npublic:\n    string brand = \"Toyota\";\n};\n\nint main() {\n    Car c;\n    cout << c.brand;\n    return 0;\n}",
+        "o": [
+            "Toyota",
+            "Car",
+            "Error",
+            "brand"
+        ]
+    },
+    {
+        "q": "A class is a blueprint for creating objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multiple objects can be created from a single class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ keyword is used to access public members of a class from outside.",
+        "type": "fill_blank",
+        "answers": [
+            "."
+        ],
+        "other_options": [
+            "->",
+            "::",
+            "&"
+        ]
+    },
+    {
+        "q": "What is the default access specifier for class members?",
+        "type": "mcq",
+        "o": [
+            "private",
+            "public",
+            "protected",
+            "default"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Box {\npublic:\n    int length = 10;\n    int width = 5;\n    int area() { return length * width; }\n};\n\nint main() {\n    Box b;\n    cout << b.area();\n    return 0;\n}",
+        "o": [
+            "50",
+            "15",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Class members can include both data and functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Private members can be accessed directly from outside the class.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Match the access specifiers with their visibility:",
+        "type": "match",
+        "left": [
+            "public",
+            "private",
+            "protected"
+        ],
+        "right": [
+            "Accessible everywhere",
+            "Only within class",
+            "Class and derived classes"
+        ]
+    },
+    {
+        "q": "What is a constructor in C++?",
+        "type": "mcq",
+        "o": [
+            "A special member function that initializes objects",
+            "A destructor",
+            "A regular function",
+            "A variable"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Test {\npublic:\n    Test() { cout << \"Created\"; }\n};\n\nint main() {\n    Test t;\n    return 0;\n}",
+        "o": [
+            "Created",
+            "Test",
+            "Nothing",
+            "Error"
+        ]
+    },
+    {
+        "q": "A constructor has the same name as the class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A constructor can have a return type.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ constructor takes no parameters.",
+        "type": "fill_blank",
+        "answers": [
+            "default"
+        ],
+        "other_options": [
+            "parameterized",
+            "copy",
+            "move"
+        ]
+    },
+    {
+        "q": "What is a destructor in C++?",
+        "type": "mcq",
+        "o": [
+            "A special member function called when an object is destroyed",
+            "A constructor",
+            "A regular function",
+            "An operator"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Test {\npublic:\n    ~Test() { cout << \"Destroyed\"; }\n};\n\nint main() {\n    Test t;\n    return 0;\n}",
+        "o": [
+            "Destroyed",
+            "Test",
+            "Nothing",
+            "Error"
+        ]
+    },
+    {
+        "q": "The destructor name is preceded by a tilde (~).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A class can have multiple destructors.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ symbol precedes the destructor name.",
+        "type": "fill_blank",
+        "answers": [
+            "~"
+        ],
+        "other_options": [
+            "!",
+            "@",
+            "#"
+        ]
+    },
+    {
+        "q": "Match the special member functions:",
+        "type": "match",
+        "left": [
+            "Constructor",
+            "Destructor",
+            "Copy constructor",
+            "Assignment operator"
+        ],
+        "right": [
+            "Initialize object",
+            "Clean up object",
+            "Create copy",
+            "Assign values"
+        ]
+    },
+    {
+        "q": "What is a parameterized constructor?",
+        "type": "mcq",
+        "o": [
+            "A constructor that accepts arguments",
+            "A constructor with no parameters",
+            "A destructor",
+            "A static function"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Rectangle {\npublic:\n    int width, height;\n    Rectangle(int w, int h) : width(w), height(h) {}\n    int area() { return width * height; }\n};\n\nint main() {\n    Rectangle r(4, 5);\n    cout << r.area();\n    return 0;\n}",
+        "o": [
+            "20",
+            "9",
+            "45",
+            "Error"
+        ]
+    },
+    {
+        "q": "Constructor initialization list is more efficient than assignment in constructor body.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A class can have multiple constructors with different parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ list initializes members before the constructor body executes.",
+        "type": "fill_blank",
+        "answers": [
+            "initializer"
+        ],
+        "other_options": [
+            "parameter",
+            "argument",
+            "assignment"
+        ]
+    },
+    {
+        "q": "What is a copy constructor?",
+        "type": "mcq",
+        "o": [
+            "A constructor that creates a copy of an existing object",
+            "A constructor with no parameters",
+            "A destructor",
+            "A move constructor"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Test {\npublic:\n    int x;\n    Test(int val) : x(val) {}\n    Test(const Test& other) : x(other.x) { cout << \"Copy\"; }\n};\n\nint main() {\n    Test t1(5);\n    Test t2 = t1;\n    return 0;\n}",
+        "o": [
+            "Copy",
+            "5",
+            "Nothing",
+            "Error"
+        ]
+    },
+    {
+        "q": "The copy constructor takes a const reference as parameter.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "If you don't define a copy constructor, the compiler provides one.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ copy copies only pointer addresses, not the pointed data.",
+        "type": "fill_blank",
+        "answers": [
+            "shallow"
+        ],
+        "other_options": [
+            "deep",
+            "full",
+            "complete"
+        ]
+    },
+    {
+        "q": "Match the copy types:",
+        "type": "match",
+        "left": [
+            "Shallow copy",
+            "Deep copy"
+        ],
+        "right": [
+            "Copies pointers only",
+            "Copies pointed data"
+        ]
+    },
+    {
+        "q": "What is the 'this' pointer?",
+        "type": "mcq",
+        "o": [
+            "A pointer to the current object",
+            "A pointer to the base class",
+            "A null pointer",
+            "A pointer to main()"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Counter {\npublic:\n    int count;\n    Counter(int c) : count(c) {}\n    Counter& increment() {\n        count++;\n        return *this;\n    }\n};\n\nint main() {\n    Counter c(5);\n    c.increment().increment();\n    cout << c.count;\n    return 0;\n}",
+        "o": [
+            "7",
+            "6",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "The 'this' pointer is available in all member functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Static member functions have access to the 'this' pointer.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ pointer allows method chaining by returning *this.",
+        "type": "fill_blank",
+        "answers": [
+            "this"
+        ],
+        "other_options": [
+            "self",
+            "me",
+            "object"
+        ]
+    },
+    {
+        "q": "What is a static member variable?",
+        "type": "mcq",
+        "o": [
+            "A variable shared by all objects of a class",
+            "A local variable",
+            "An instance variable",
+            "A constant"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Counter {\npublic:\n    static int count;\n    Counter() { count++; }\n};\n\nint Counter::count = 0;\n\nint main() {\n    Counter c1, c2, c3;\n    cout << Counter::count;\n    return 0;\n}",
+        "o": [
+            "3",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Static members are shared across all instances of a class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Static member variables must be defined outside the class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ keyword declares a member that belongs to the class rather than instances.",
+        "type": "fill_blank",
+        "answers": [
+            "static"
+        ],
+        "other_options": [
+            "const",
+            "mutable",
+            "extern"
+        ]
+    },
+    {
+        "q": "Match the member types:",
+        "type": "match",
+        "left": [
+            "Instance member",
+            "Static member",
+            "Const member",
+            "Mutable member"
+        ],
+        "right": [
+            "Per object",
+            "Shared by all",
+            "Cannot change",
+            "Can change in const methods"
+        ]
+    },
+    {
+        "q": "What is a static member function?",
+        "type": "mcq",
+        "o": [
+            "A function that can be called without an object",
+            "A virtual function",
+            "A constructor",
+            "A destructor"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Math {\npublic:\n    static int square(int x) { return x * x; }\n};\n\nint main() {\n    cout << Math::square(5);\n    return 0;\n}",
+        "o": [
+            "25",
+            "5",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Static member functions can access non-static members directly.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Static member functions can be called using the class name.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ operator is used to access static members using the class name.",
+        "type": "fill_blank",
+        "answers": [
+            "::"
+        ],
+        "other_options": [
+            ".",
+            "->",
+            "&"
+        ]
+    },
+    {
+        "q": "What is a const member function?",
+        "type": "mcq",
+        "o": [
+            "A function that cannot modify the object's state",
+            "A function that returns a constant",
+            "A constructor",
+            "A static function"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Rectangle {\n    int width, height;\npublic:\n    Rectangle(int w, int h) : width(w), height(h) {}\n    int area() const { return width * height; }\n};\n\nint main() {\n    const Rectangle r(3, 4);\n    cout << r.area();\n    return 0;\n}",
+        "o": [
+            "12",
+            "7",
+            "34",
+            "Error"
+        ]
+    },
+    {
+        "q": "Const objects can only call const member functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The const keyword for member functions is placed after the parameter list.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ keyword allows modification of a member by const member functions.",
+        "type": "fill_blank",
+        "answers": [
+            "mutable"
+        ],
+        "other_options": [
+            "volatile",
+            "static",
+            "const"
+        ]
+    },
+    {
+        "q": "Match the function qualifiers:",
+        "type": "match",
+        "left": [
+            "const",
+            "static",
+            "virtual",
+            "inline"
+        ],
+        "right": [
+            "No object modification",
+            "No this pointer",
+            "Runtime polymorphism",
+            "Expanded at call site"
+        ]
+    },
+    {
+        "q": "What is a friend function?",
+        "type": "mcq",
+        "o": [
+            "A non-member function that can access private members of a class",
+            "A member function",
+            "A constructor",
+            "A destructor"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Box {\n    int width;\npublic:\n    Box(int w) : width(w) {}\n    friend int getWidth(Box b);\n};\n\nint getWidth(Box b) { return b.width; }\n\nint main() {\n    Box b(10);\n    cout << getWidth(b);\n    return 0;\n}",
+        "o": [
+            "10",
+            "0",
+            "Error",
+            "width"
+        ]
+    },
+    {
+        "q": "Friend functions are not member functions of the class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Friendship is mutual between classes.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ keyword grants a function access to private members.",
+        "type": "fill_blank",
+        "answers": [
+            "friend"
+        ],
+        "other_options": [
+            "public",
+            "access",
+            "allow"
+        ]
+    },
+    {
+        "q": "What is a friend class?",
+        "type": "mcq",
+        "o": [
+            "A class that can access private members of another class",
+            "A derived class",
+            "A base class",
+            "A template class"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass A {\n    int x = 5;\n    friend class B;\n};\n\nclass B {\npublic:\n    void show(A& a) { cout << a.x; }\n};\n\nint main() {\n    A a;\n    B b;\n    b.show(a);\n    return 0;\n}",
+        "o": [
+            "5",
+            "Error",
+            "0",
+            "x"
+        ]
+    },
+    {
+        "q": "A friend class declaration can appear anywhere in the class definition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Friendship can be inherited.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ breaks encapsulation by allowing external access to private members.",
+        "type": "fill_blank",
+        "answers": [
+            "friend"
+        ],
+        "other_options": [
+            "public",
+            "protected",
+            "static"
+        ]
+    },
+    {
+        "q": "Rearrange the object creation steps:",
+        "type": "rearrange",
+        "words": [
+            "Memory allocation",
+            "Constructor call",
+            "Member initialization",
+            "Object ready"
+        ]
+    },
+    {
+        "q": "What is a nested class?",
+        "type": "mcq",
+        "o": [
+            "A class defined inside another class",
+            "A derived class",
+            "A friend class",
+            "A template class"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Outer {\npublic:\n    class Inner {\n    public:\n        int value = 42;\n    };\n};\n\nint main() {\n    Outer::Inner i;\n    cout << i.value;\n    return 0;\n}",
+        "o": [
+            "42",
+            "0",
+            "Error",
+            "Inner"
+        ]
+    },
+    {
+        "q": "Nested classes can access private members of the enclosing class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The enclosing class can access private members of a nested class.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ operator is used to access a nested class type.",
+        "type": "fill_blank",
+        "answers": [
+            "::"
+        ],
+        "other_options": [
+            ".",
+            "->",
+            "&"
+        ]
+    },
+    {
+        "q": "Match the class relationships:",
+        "type": "match",
+        "left": [
+            "Nested class",
+            "Friend class",
+            "Derived class",
+            "Base class"
+        ],
+        "right": [
+            "Defined inside",
+            "Has access privileges",
+            "Inherits from",
+            "Parent of derived"
+        ]
+    },
+    {
+        "q": "What is a getter method?",
+        "type": "mcq",
+        "o": [
+            "A method that returns the value of a private member",
+            "A method that sets a value",
+            "A constructor",
+            "A destructor"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Person {\n    string name;\npublic:\n    void setName(string n) { name = n; }\n    string getName() { return name; }\n};\n\nint main() {\n    Person p;\n    p.setName(\"John\");\n    cout << p.getName();\n    return 0;\n}",
+        "o": [
+            "John",
+            "name",
+            "Error",
+            "Person"
+        ]
+    },
+    {
+        "q": "Getters and setters implement encapsulation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Getters should typically be const member functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ method sets the value of a private member.",
+        "type": "fill_blank",
+        "answers": [
+            "setter"
+        ],
+        "other_options": [
+            "getter",
+            "accessor",
+            "mutator"
+        ]
+    },
+    {
+        "q": "What is operator overloading?",
+        "type": "mcq",
+        "o": [
+            "Defining custom behavior for operators with user-defined types",
+            "Overloading functions",
+            "Overriding virtual functions",
+            "Creating new operators"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Complex {\npublic:\n    int real, imag;\n    Complex(int r, int i) : real(r), imag(i) {}\n    Complex operator+(Complex& other) {\n        return Complex(real + other.real, imag + other.imag);\n    }\n};\n\nint main() {\n    Complex a(1, 2), b(3, 4);\n    Complex c = a + b;\n    cout << c.real << c.imag;\n    return 0;\n}",
+        "o": [
+            "46",
+            "13",
+            "Error",
+            "Complex"
+        ]
+    },
+    {
+        "q": "Most operators can be overloaded in C++.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The scope resolution operator (::) can be overloaded.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ keyword precedes the operator symbol in overloading.",
+        "type": "fill_blank",
+        "answers": [
+            "operator"
+        ],
+        "other_options": [
+            "overload",
+            "define",
+            "function"
+        ]
+    },
+    {
+        "q": "Match the operators that cannot be overloaded:",
+        "type": "match",
+        "left": [
+            "::",
+            ".",
+            ".*",
+            "?:"
+        ],
+        "right": [
+            "Scope resolution",
+            "Member access",
+            "Pointer to member",
+            "Ternary"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Counter {\npublic:\n    int count;\n    Counter(int c) : count(c) {}\n    Counter operator++() {\n        count++;\n        return *this;\n    }\n};\n\nint main() {\n    Counter c(5);\n    ++c;\n    cout << c.count;\n    return 0;\n}",
+        "o": [
+            "6",
+            "5",
+            "7",
+            "Error"
+        ]
+    },
+    {
+        "q": "Prefix and postfix increment operators have different signatures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Postfix increment uses a dummy int parameter to distinguish from prefix.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange operator overloading from unary to binary to comparison:",
+        "type": "rearrange",
+        "words": [
+            "++",
+            "+",
+            "==",
+            "<",
+            "<<"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Counter {\npublic:\n    int count;\n    Counter(int c) : count(c) {}\n    Counter operator++(int) {\n        Counter temp = *this;\n        count++;\n        return temp;\n    }\n};\n\nint main() {\n    Counter c(5);\n    cout << (c++).count;\n    return 0;\n}",
+        "o": [
+            "5",
+            "6",
+            "7",
+            "Error"
+        ]
+    },
+    {
+        "q": "The postfix ++ operator returns the value before incrementing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Prefix operators are generally more efficient than postfix.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ operator overload typically returns the modified object.",
+        "type": "fill_blank",
+        "answers": [
+            "prefix"
+        ],
+        "other_options": [
+            "postfix",
+            "binary",
+            "unary"
+        ]
+    },
+    {
+        "q": "What is the output operator overloading?",
+        "type": "mcq",
+        "o": [
+            "Overloading << for custom types with ostream",
+            "Overloading >> for input",
+            "Overloading = for assignment",
+            "Overloading + for addition"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Point {\npublic:\n    int x, y;\n    Point(int a, int b) : x(a), y(b) {}\n    friend ostream& operator<<(ostream& os, const Point& p);\n};\n\nostream& operator<<(ostream& os, const Point& p) {\n    os << \"(\" << p.x << \",\" << p.y << \")\";\n    return os;\n}\n\nint main() {\n    Point p(3, 4);\n    cout << p;\n    return 0;\n}",
+        "o": [
+            "(3,4)",
+            "3,4",
+            "Point",
+            "Error"
+        ]
+    },
+    {
+        "q": "Stream operators should be overloaded as friend functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The << operator returns a reference to ostream for chaining.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ operator is used for input stream overloading.",
+        "type": "fill_blank",
+        "answers": [
+            ">>"
+        ],
+        "other_options": [
+            "<<",
+            "->",
+            "::"
+        ]
+    },
+    {
+        "q": "Match the operator overloading types:",
+        "type": "match",
+        "left": [
+            "Member function",
+            "Friend function",
+            "Global function"
+        ],
+        "right": [
+            "Has this pointer",
+            "Access to private",
+            "Neither"
+        ]
+    },
+    {
+        "q": "What is the assignment operator overloading?",
+        "type": "mcq",
+        "o": [
+            "Overloading operator= to define custom assignment",
+            "Default constructor",
+            "Copy constructor",
+            "Move constructor"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Box {\npublic:\n    int* ptr;\n    Box(int val) { ptr = new int(val); }\n    Box& operator=(const Box& other) {\n        if (this != &other) {\n            *ptr = *other.ptr;\n        }\n        return *this;\n    }\n};\n\nint main() {\n    Box b1(5), b2(10);\n    b1 = b2;\n    cout << *b1.ptr;\n    return 0;\n}",
+        "o": [
+            "10",
+            "5",
+            "Error",
+            "15"
+        ]
+    },
+    {
+        "q": "Assignment operator should check for self-assignment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Assignment operator returns a reference for chaining.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ function is overloaded to define custom element access.",
+        "type": "fill_blank",
+        "answers": [
+            "operator[]"
+        ],
+        "other_options": [
+            "operator()",
+            "operator*",
+            "operator->"
+        ]
+    },
+    {
+        "q": "What is the subscript operator used for?",
+        "type": "mcq",
+        "o": [
+            "Accessing elements using array-like syntax",
+            "Adding elements",
+            "Removing elements",
+            "Sorting elements"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Array {\n    int arr[3] = {10, 20, 30};\npublic:\n    int& operator[](int index) { return arr[index]; }\n};\n\nint main() {\n    Array a;\n    cout << a[1];\n    return 0;\n}",
+        "o": [
+            "20",
+            "10",
+            "30",
+            "Error"
+        ]
+    },
+    {
+        "q": "The subscript operator can return a reference for modification.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The subscript operator can have a const overload.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ operator enables an object to be called like a function.",
+        "type": "fill_blank",
+        "answers": [
+            "()"
+        ],
+        "other_options": [
+            "[]",
+            "->",
+            "*"
+        ]
+    },
+    {
+        "q": "What is a functor?",
+        "type": "mcq",
+        "o": [
+            "A class with overloaded operator()",
+            "A pointer to a function",
+            "A lambda expression",
+            "A template function"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Adder {\n    int value;\npublic:\n    Adder(int v) : value(v) {}\n    int operator()(int x) { return x + value; }\n};\n\nint main() {\n    Adder add5(5);\n    cout << add5(10);\n    return 0;\n}",
+        "o": [
+            "15",
+            "10",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Functors can maintain state between calls.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Functors are more flexible than function pointers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ operator is overloaded to create pointer-like classes.",
+        "type": "fill_blank",
+        "answers": [
+            "->"
+        ],
+        "other_options": [
+            "*",
+            ".",
+            "::"
+        ]
+    },
+    {
+        "q": "Match the smart pointer operators:",
+        "type": "match",
+        "left": [
+            "operator*",
+            "operator->",
+            "operator bool"
+        ],
+        "right": [
+            "Dereference",
+            "Member access",
+            "Check validity"
+        ]
+    },
+    {
+        "q": "What is the arrow operator used for?",
+        "type": "mcq",
+        "o": [
+            "Accessing members through a pointer-like object",
+            "Dereferencing a pointer",
+            "Creating a new object",
+            "Deleting an object"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass SmartPtr {\n    int* ptr;\npublic:\n    SmartPtr(int* p) : ptr(p) {}\n    int* operator->() { return ptr; }\n    ~SmartPtr() { delete ptr; }\n};\n\nstruct Data { int value = 42; };\n\nint main() {\n    SmartPtr sp(new Data());\n    cout << sp->value;\n    return 0;\n}",
+        "o": [
+            "Error (type mismatch)",
+            "42",
+            "0",
+            "SmartPtr"
+        ]
+    },
+    {
+        "q": "The arrow operator must return a pointer or another object with arrow operator.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The dereference operator (*) can be overloaded.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ operator converts an object to another type.",
+        "type": "fill_blank",
+        "answers": [
+            "conversion"
+        ],
+        "other_options": [
+            "cast",
+            "transform",
+            "change"
+        ]
+    },
+    {
+        "q": "What is a type conversion operator?",
+        "type": "mcq",
+        "o": [
+            "An operator that converts an object to a different type",
+            "A constructor",
+            "A destructor",
+            "A copy constructor"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Integer {\n    int value;\npublic:\n    Integer(int v) : value(v) {}\n    operator int() const { return value; }\n};\n\nint main() {\n    Integer i(42);\n    int x = i;\n    cout << x;\n    return 0;\n}",
+        "o": [
+            "42",
+            "Integer",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "Conversion operators don't have a return type specified.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The explicit keyword can prevent implicit conversions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ keyword prevents implicit type conversions.",
+        "type": "fill_blank",
+        "answers": [
+            "explicit"
+        ],
+        "other_options": [
+            "implicit",
+            "convert",
+            "force"
+        ]
+    },
+    {
+        "q": "Match the special member function generation:",
+        "type": "match",
+        "left": [
+            "Default constructor",
+            "Copy constructor",
+            "Move constructor",
+            "Destructor"
+        ],
+        "right": [
+            "If no other constructors",
+            "If no move ops declared",
+            "If no copy/dtor declared",
+            "Always unless deleted"
+        ]
+    },
+    {
+        "q": "What is the Rule of Three?",
+        "type": "mcq",
+        "o": [
+            "If a class needs custom destructor, copy constructor, or copy assignment, it likely needs all three",
+            "A class should have three constructors",
+            "A class should have three members",
+            "A class should have three access specifiers"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <cstring>\nusing namespace std;\n\nclass String {\n    char* data;\npublic:\n    String(const char* str) {\n        data = new char[strlen(str) + 1];\n        strcpy(data, str);\n    }\n    ~String() { delete[] data; }\n    String(const String& other) {\n        data = new char[strlen(other.data) + 1];\n        strcpy(data, other.data);\n    }\n    const char* c_str() const { return data; }\n};\n\nint main() {\n    String s1(\"Hello\");\n    String s2 = s1;\n    cout << s2.c_str();\n    return 0;\n}",
+        "o": [
+            "Hello",
+            "Error",
+            "Crash",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "The Rule of Three is extended to Rule of Five in C++11.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rule of Zero suggests using smart pointers instead of raw pointers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ adds move constructor and move assignment to Rule of Three.",
+        "type": "fill_blank",
+        "answers": [
+            "Rule of Five"
+        ],
+        "other_options": [
+            "Rule of Four",
+            "Rule of Six",
+            "Rule of Seven"
+        ]
+    },
+    {
+        "q": "What is a move constructor?",
+        "type": "mcq",
+        "o": [
+            "A constructor that transfers resources from an rvalue",
+            "A copy constructor",
+            "A default constructor",
+            "A destructor"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <utility>\nusing namespace std;\n\nclass Buffer {\npublic:\n    int* data;\n    Buffer() : data(new int(42)) {}\n    Buffer(Buffer&& other) noexcept : data(other.data) {\n        other.data = nullptr;\n        cout << \"Moved\";\n    }\n    ~Buffer() { delete data; }\n};\n\nint main() {\n    Buffer b1;\n    Buffer b2 = move(b1);\n    return 0;\n}",
+        "o": [
+            "Moved",
+            "Nothing",
+            "42",
+            "Error"
+        ]
+    },
+    {
+        "q": "Move constructors should be marked noexcept for optimization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The moved-from object should be left in a valid state.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ assignment operator transfers ownership of resources.",
+        "type": "fill_blank",
+        "answers": [
+            "move"
+        ],
+        "other_options": [
+            "copy",
+            "default",
+            "transfer"
+        ]
+    },
+    {
+        "q": "Rearrange the special member functions from construction to destruction:",
+        "type": "rearrange",
+        "words": [
+            "Default constructor",
+            "Parameterized constructor",
+            "Copy constructor",
+            "Move constructor",
+            "Destructor"
+        ]
+    },
+    {
+        "q": "What is the = default specifier?",
+        "type": "mcq",
+        "o": [
+            "Requests the compiler to generate the default implementation",
+            "Sets a default value",
+            "Creates a default constructor",
+            "Removes a function"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Test {\npublic:\n    Test() = default;\n    Test(int x) { cout << x; }\n};\n\nint main() {\n    Test t1;\n    Test t2(5);\n    return 0;\n}",
+        "o": [
+            "5",
+            "05",
+            "Nothing",
+            "Error"
+        ]
+    },
+    {
+        "q": "= default can be used with constructors and destructors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "= default is more efficient than an empty implementation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ specifier prevents use of a special member function.",
+        "type": "fill_blank",
+        "answers": [
+            "= delete"
+        ],
+        "other_options": [
+            "= default",
+            "= 0",
+            "= nullptr"
+        ]
+    },
+    {
+        "q": "What is the = delete specifier?",
+        "type": "mcq",
+        "o": [
+            "Explicitly disables a function from being used",
+            "Deletes an object",
+            "Sets a function to null",
+            "Makes a function pure virtual"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass NonCopyable {\npublic:\n    NonCopyable() = default;\n    NonCopyable(const NonCopyable&) = delete;\n    void show() { cout << \"Hello\"; }\n};\n\nint main() {\n    NonCopyable n;\n    n.show();\n    return 0;\n}",
+        "o": [
+            "Hello",
+            "Error",
+            "Nothing",
+            "NonCopyable"
+        ]
+    },
+    {
+        "q": "= delete can be applied to any function, not just special members.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deleted functions participate in overload resolution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ design pattern ensures only one instance of a class.",
+        "type": "fill_blank",
+        "answers": [
+            "Singleton"
+        ],
+        "other_options": [
+            "Factory",
+            "Observer",
+            "Strategy"
+        ]
+    },
+    {
+        "q": "Match design patterns with their purposes:",
+        "type": "match",
+        "left": [
+            "Singleton",
+            "Factory",
+            "Observer",
+            "Strategy"
+        ],
+        "right": [
+            "Single instance",
+            "Object creation",
+            "Event notification",
+            "Interchangeable algorithms"
+        ]
+    },
+    {
+        "q": "What is a Singleton class?",
+        "type": "mcq",
+        "o": [
+            "A class with only one instance globally accessible",
+            "A class with one method",
+            "A class with one member",
+            "A final class"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Singleton {\n    static Singleton* instance;\n    Singleton() {}\npublic:\n    static Singleton* getInstance() {\n        if (!instance) instance = new Singleton();\n        return instance;\n    }\n    void show() { cout << \"Singleton\"; }\n};\n\nSingleton* Singleton::instance = nullptr;\n\nint main() {\n    Singleton::getInstance()->show();\n    return 0;\n}",
+        "o": [
+            "Singleton",
+            "Error",
+            "Nothing",
+            "nullptr"
+        ]
+    },
+    {
+        "q": "Singleton constructors are typically private.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The Meyer's Singleton uses a local static variable.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern creates objects without specifying the exact class.",
+        "type": "fill_blank",
+        "answers": [
+            "Factory"
+        ],
+        "other_options": [
+            "Singleton",
+            "Builder",
+            "Prototype"
+        ]
+    },
+    {
+        "q": "What is the Factory pattern?",
+        "type": "mcq",
+        "o": [
+            "A pattern for creating objects without exposing creation logic",
+            "A single instance pattern",
+            "An observer pattern",
+            "A strategy pattern"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <memory>\nusing namespace std;\n\nclass Animal {\npublic:\n    virtual void speak() = 0;\n    virtual ~Animal() = default;\n};\n\nclass Dog : public Animal {\npublic:\n    void speak() override { cout << \"Woof\"; }\n};\n\nclass AnimalFactory {\npublic:\n    static unique_ptr<Animal> createDog() {\n        return make_unique<Dog>();\n    }\n};\n\nint main() {\n    auto animal = AnimalFactory::createDog();\n    animal->speak();\n    return 0;\n}",
+        "o": [
+            "Woof",
+            "Animal",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Factory methods often return smart pointers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Factory pattern promotes loose coupling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern adds behavior to objects dynamically.",
+        "type": "fill_blank",
+        "answers": [
+            "Decorator"
+        ],
+        "other_options": [
+            "Adapter",
+            "Bridge",
+            "Composite"
+        ]
+    },
+    {
+        "q": "What is composition in OOP?",
+        "type": "mcq",
+        "o": [
+            "A class contains objects of other classes as members",
+            "A class inherits from another",
+            "A class implements an interface",
+            "A class is abstract"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Engine {\npublic:\n    void start() { cout << \"Engine started\"; }\n};\n\nclass Car {\n    Engine engine;\npublic:\n    void start() { engine.start(); }\n};\n\nint main() {\n    Car c;\n    c.start();\n    return 0;\n}",
+        "o": [
+            "Engine started",
+            "Car started",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Composition is a 'has-a' relationship.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Composition is often preferred over inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ relationship represents a whole-part association.",
+        "type": "fill_blank",
+        "answers": [
+            "composition"
+        ],
+        "other_options": [
+            "inheritance",
+            "aggregation",
+            "dependency"
+        ]
+    },
+    {
+        "q": "Match the OOP relationships:",
+        "type": "match",
+        "left": [
+            "Inheritance",
+            "Composition",
+            "Aggregation",
+            "Association"
+        ],
+        "right": [
+            "is-a",
+            "has-a (owns)",
+            "has-a (uses)",
+            "knows-a"
+        ]
+    },
+    {
+        "q": "What is aggregation?",
+        "type": "mcq",
+        "o": [
+            "A weak form of composition where contained objects can exist independently",
+            "Strong composition",
+            "Inheritance",
+            "Polymorphism"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Teacher {\npublic:\n    string name;\n    Teacher(string n) : name(n) {}\n};\n\nclass Course {\n    Teacher* instructor;\npublic:\n    Course(Teacher* t) : instructor(t) {}\n    void show() { cout << instructor->name; }\n};\n\nint main() {\n    Teacher t(\"John\");\n    Course c(&t);\n    c.show();\n    return 0;\n}",
+        "o": [
+            "John",
+            "Teacher",
+            "Error",
+            "Course"
+        ]
+    },
+    {
+        "q": "In aggregation, the contained object can outlive the container.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Aggregation typically uses pointers or references.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ allows a class to use the interface of another.",
+        "type": "fill_blank",
+        "answers": [
+            "delegation"
+        ],
+        "other_options": [
+            "inheritance",
+            "composition",
+            "aggregation"
+        ]
+    },
+    {
+        "q": "What is delegation?",
+        "type": "mcq",
+        "o": [
+            "Forwarding method calls to another object",
+            "Inheriting from a class",
+            "Creating a new object",
+            "Deleting an object"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Printer {\npublic:\n    void print() { cout << \"Printing\"; }\n};\n\nclass Document {\n    Printer printer;\npublic:\n    void print() { printer.print(); }\n};\n\nint main() {\n    Document d;\n    d.print();\n    return 0;\n}",
+        "o": [
+            "Printing",
+            "Document",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Delegation is an alternative to inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Delegation promotes code reuse without tight coupling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ member is initialized in every constructor.",
+        "type": "fill_blank",
+        "answers": [
+            "const"
+        ],
+        "other_options": [
+            "static",
+            "mutable",
+            "volatile"
+        ]
+    },
+    {
+        "q": "Rearrange object composition from simple to complex:",
+        "type": "rearrange",
+        "words": [
+            "Association",
+            "Dependency",
+            "Aggregation",
+            "Composition",
+            "Inheritance"
+        ]
+    },
+    {
+        "q": "What is a local class?",
+        "type": "mcq",
+        "o": [
+            "A class defined inside a function",
+            "A global class",
+            "A nested class",
+            "A friend class"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    class Local {\n    public:\n        int value = 100;\n    };\n    Local l;\n    cout << l.value;\n    return 0;\n}",
+        "o": [
+            "100",
+            "Local",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "Local classes can access local variables of enclosing function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Local classes cannot have static members.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ class is defined within another class for internal use.",
+        "type": "fill_blank",
+        "answers": [
+            "nested"
+        ],
+        "other_options": [
+            "local",
+            "friend",
+            "base"
+        ]
+    },
+    {
+        "q": "What is PIMPL idiom?",
+        "type": "mcq",
+        "o": [
+            "Pointer to IMPLementation - hiding implementation details",
+            "A design pattern for printing",
+            "A memory management technique",
+            "A threading pattern"
+        ]
+    },
+    {
+        "q": "What is the purpose of PIMPL?",
+        "type": "mcq",
+        "o": [
+            "To reduce compilation dependencies and hide implementation",
+            "To increase performance",
+            "To simplify code",
+            "To enable inheritance"
+        ]
+    },
+    {
+        "q": "PIMPL reduces header file dependencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "PIMPL uses a forward-declared class pointer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ idiom is also known as the Cheshire Cat idiom.",
+        "type": "fill_blank",
+        "answers": [
+            "PIMPL"
+        ],
+        "other_options": [
+            "CRTP",
+            "NVI",
+            "RAII"
+        ]
+    },
+    {
+        "q": "Match the C++ idioms:",
+        "type": "match",
+        "left": [
+            "PIMPL",
+            "RAII",
+            "CRTP",
+            "NVI"
+        ],
+        "right": [
+            "Hide implementation",
+            "Resource management",
+            "Static polymorphism",
+            "Template method"
+        ]
+    },
+    {
+        "q": "What is CRTP?",
+        "type": "mcq",
+        "o": [
+            "Curiously Recurring Template Pattern - static polymorphism",
+            "A runtime polymorphism technique",
+            "A memory pattern",
+            "A thread-safe pattern"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\ntemplate<typename Derived>\nclass Base {\npublic:\n    void interface() {\n        static_cast<Derived*>(this)->implementation();\n    }\n};\n\nclass Derived : public Base<Derived> {\npublic:\n    void implementation() { cout << \"Derived\"; }\n};\n\nint main() {\n    Derived d;\n    d.interface();\n    return 0;\n}",
+        "o": [
+            "Derived",
+            "Base",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "CRTP provides polymorphism without virtual functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CRTP is resolved at compile time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ idiom wraps public virtual functions with non-virtual interface.",
+        "type": "fill_blank",
+        "answers": [
+            "NVI"
+        ],
+        "other_options": [
+            "CRTP",
+            "PIMPL",
+            "RAII"
+        ]
+    },
+    {
+        "q": "What is NVI pattern?",
+        "type": "mcq",
+        "o": [
+            "Non-Virtual Interface - public non-virtual with private virtual",
+            "Virtual interface pattern",
+            "Abstract factory pattern",
+            "Template method pattern"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    void execute() {\n        cout << \"Before \";\n        doExecute();\n        cout << \" After\";\n    }\nprivate:\n    virtual void doExecute() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\n    void doExecute() override { cout << \"Derived\"; }\n};\n\nint main() {\n    Derived d;\n    d.execute();\n    return 0;\n}",
+        "o": [
+            "Before Derived After",
+            "Before Base After",
+            "Derived",
+            "Error"
+        ]
+    },
+    {
+        "q": "NVI allows pre- and post-processing in base class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "NVI keeps the public interface stable.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ specifier ensures initialization happens in the initializer list.",
+        "type": "fill_blank",
+        "answers": [
+            "const"
+        ],
+        "other_options": [
+            "static",
+            "mutable",
+            "virtual"
+        ]
+    },
+    {
+        "q": "What is an anonymous class in C++?",
+        "type": "mcq",
+        "o": [
+            "A class without a name, often used for one-time objects",
+            "A class with no members",
+            "A private class",
+            "A final class"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    class {\n    public:\n        int x = 10;\n    } obj;\n    cout << obj.x;\n    return 0;\n}",
+        "o": [
+            "10",
+            "Error",
+            "0",
+            "obj"
+        ]
+    },
+    {
+        "q": "Anonymous classes cannot have constructors.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Anonymous classes are useful for short-lived objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ expression creates anonymous function objects.",
+        "type": "fill_blank",
+        "answers": [
+            "lambda"
+        ],
+        "other_options": [
+            "functor",
+            "closure",
+            "delegate"
+        ]
+    },
+    {
+        "q": "Rearrange class design from basic to advanced:",
+        "type": "rearrange",
+        "words": [
+            "Simple class",
+            "Encapsulated class",
+            "Class with operators",
+            "PIMPL class",
+            "Template class"
+        ]
+    },
+    {
+        "q": "What is a template class?",
+        "type": "mcq",
+        "o": [
+            "A class definition that can work with different data types",
+            "A class with templates",
+            "A class pattern",
+            "A class diagram"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\ntemplate<typename T>\nclass Box {\n    T value;\npublic:\n    Box(T v) : value(v) {}\n    T get() { return value; }\n};\n\nint main() {\n    Box<int> b(42);\n    cout << b.get();\n    return 0;\n}",
+        "o": [
+            "42",
+            "Box",
+            "Error",
+            "T"
+        ]
+    },
+    {
+        "q": "Template classes are instantiated at compile time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Template classes can have multiple type parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ keyword introduces a template parameter.",
+        "type": "fill_blank",
+        "answers": [
+            "typename"
+        ],
+        "other_options": [
+            "class",
+            "type",
+            "param"
+        ]
+    },
+    {
+        "q": "What is template specialization?",
+        "type": "mcq",
+        "o": [
+            "Providing a specific implementation for particular type(s)",
+            "Creating a new template",
+            "Inheriting from a template",
+            "Deleting a template"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\ntemplate<typename T>\nclass Printer {\npublic:\n    void print(T val) { cout << val; }\n};\n\ntemplate<>\nclass Printer<bool> {\npublic:\n    void print(bool val) { cout << (val ? \"Yes\" : \"No\"); }\n};\n\nint main() {\n    Printer<bool> p;\n    p.print(true);\n    return 0;\n}",
+        "o": [
+            "Yes",
+            "1",
+            "true",
+            "Error"
+        ]
+    },
+    {
+        "q": "Explicit specialization replaces the primary template for specific types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Partial specialization is allowed for class templates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ specialization matches any pointer type.",
+        "type": "fill_blank",
+        "answers": [
+            "partial"
+        ],
+        "other_options": [
+            "full",
+            "complete",
+            "explicit"
+        ]
+    },
+    {
+        "q": "Match the template concepts:",
+        "type": "match",
+        "left": [
+            "Primary template",
+            "Full specialization",
+            "Partial specialization",
+            "Default template argument"
+        ],
+        "right": [
+            "General case",
+            "Specific type",
+            "Some parameters",
+            "Fallback value"
+        ]
+    },
+    {
+        "q": "What are non-type template parameters?",
+        "type": "mcq",
+        "o": [
+            "Template parameters that are values rather than types",
+            "Types that are not templates",
+            "Invalid parameters",
+            "Runtime values"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\ntemplate<int N>\nclass Array {\n    int data[N];\npublic:\n    int size() { return N; }\n};\n\nint main() {\n    Array<5> a;\n    cout << a.size();\n    return 0;\n}",
+        "o": [
+            "5",
+            "Array",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "Non-type template parameters must be constant expressions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pointers and references can be non-type template parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ parameter allows passing a value to a template.",
+        "type": "fill_blank",
+        "answers": [
+            "non-type"
+        ],
+        "other_options": [
+            "value",
+            "constant",
+            "runtime"
+        ]
+    },
+    {
+        "q": "What is a variadic class template?",
+        "type": "mcq",
+        "o": [
+            "A template that accepts any number of type parameters",
+            "A template with variable values",
+            "A template with default values",
+            "An invalid template"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\ntemplate<typename... Args>\nclass Tuple {\npublic:\n    static constexpr int size = sizeof...(Args);\n};\n\nint main() {\n    cout << Tuple<int, double, char>::size;\n    return 0;\n}",
+        "o": [
+            "3",
+            "Tuple",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "sizeof...(Args) returns the number of template arguments.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Variadic templates use ... for pack expansion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ operator packs template parameters.",
+        "type": "fill_blank",
+        "answers": [
+            "..."
+        ],
+        "other_options": [
+            "*",
+            "&",
+            "::"
+        ]
+    },
+    {
+        "q": "Match the variadic template operations:",
+        "type": "match",
+        "left": [
+            "typename... Args",
+            "Args...",
+            "sizeof...(Args)",
+            "std::tuple<Args...>"
+        ],
+        "right": [
+            "Parameter pack",
+            "Pack expansion",
+            "Pack size",
+            "Tuple of types"
+        ]
+    },
+    {
+        "q": "What is alias template?",
+        "type": "mcq",
+        "o": [
+            "A using declaration that creates a template alias",
+            "A typedef for templates",
+            "A template copy",
+            "A template reference"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <vector>\nusing namespace std;\n\ntemplate<typename T>\nusing Vec = vector<T>;\n\nint main() {\n    Vec<int> v = {1, 2, 3};\n    cout << v.size();\n    return 0;\n}",
+        "o": [
+            "3",
+            "Vec",
+            "Error",
+            "vector"
+        ]
+    },
+    {
+        "q": "Alias templates can simplify complex type expressions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Alias templates can be specialized.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ keyword creates alias templates.",
+        "type": "fill_blank",
+        "answers": [
+            "using"
+        ],
+        "other_options": [
+            "typedef",
+            "alias",
+            "define"
+        ]
+    },
+    {
+        "q": "What is member function template?",
+        "type": "mcq",
+        "o": [
+            "A template function defined inside a class",
+            "A templated class method",
+            "A static function",
+            "A virtual function"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Converter {\npublic:\n    template<typename T>\n    T convert(double x) { return static_cast<T>(x); }\n};\n\nint main() {\n    Converter c;\n    cout << c.convert<int>(3.7);\n    return 0;\n}",
+        "o": [
+            "3",
+            "3.7",
+            "Error",
+            "Converter"
+        ]
+    },
+    {
+        "q": "Member function templates can be defined in non-template classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Member function templates cannot be virtual.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ contains member function template definitions.",
+        "type": "fill_blank",
+        "answers": [
+            "header"
+        ],
+        "other_options": [
+            "source",
+            "implementation",
+            "library"
+        ]
+    },
+    {
+        "q": "What is explicit instantiation?",
+        "type": "mcq",
+        "o": [
+            "Forcing template code generation for specific types",
+            "Creating objects explicitly",
+            "Calling constructors",
+            "Deleting templates"
+        ]
+    },
+    {
+        "q": "What is the purpose of extern template?",
+        "type": "mcq",
+        "o": [
+            "Prevent implicit instantiation in a translation unit",
+            "Export templates",
+            "Import templates",
+            "Delete templates"
+        ]
+    },
+    {
+        "q": "Explicit instantiation can reduce compilation time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "extern template was introduced in C++11.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ declaration prevents template instantiation.",
+        "type": "fill_blank",
+        "answers": [
+            "extern template"
+        ],
+        "other_options": [
+            "explicit template",
+            "inline template",
+            "static template"
+        ]
+    },
+    {
+        "q": "Rearrange template instantiation from declaration to use:",
+        "type": "rearrange",
+        "words": [
+            "Template definition",
+            "Instantiation request",
+            "Code generation",
+            "Linking",
+            "Execution"
+        ]
+    },
+    {
+        "q": "What is std::enable_if?",
+        "type": "mcq",
+        "o": [
+            "A type trait for SFINAE-based conditional enabling",
+            "An if statement in templates",
+            "A compile-time constant",
+            "A runtime check"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <type_traits>\nusing namespace std;\n\ntemplate<typename T>\nenable_if_t<is_integral_v<T>, void>\nprocess(T x) { cout << \"Int: \" << x; }\n\nint main() {\n    process(42);\n    return 0;\n}",
+        "o": [
+            "Int: 42",
+            "42",
+            "Error",
+            "process"
+        ]
+    },
+    {
+        "q": "enable_if causes substitution failure for non-matching types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "enable_if_t is a shorthand for typename enable_if<...>::type.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ technique selects overloads based on type traits.",
+        "type": "fill_blank",
+        "answers": [
+            "SFINAE"
+        ],
+        "other_options": [
+            "Concepts",
+            "Tags",
+            "Traits"
+        ]
+    },
+    {
+        "q": "Match the type trait utilities:",
+        "type": "match",
+        "left": [
+            "is_same",
+            "is_base_of",
+            "is_convertible",
+            "decay"
+        ],
+        "right": [
+            "Check type equality",
+            "Check inheritance",
+            "Check conversion",
+            "Remove qualifiers"
+        ]
+    },
+    {
+        "q": "What is tag dispatching?",
+        "type": "mcq",
+        "o": [
+            "Using empty tag types to select function overloads",
+            "Dispatching events",
+            "Thread dispatch",
+            "Message passing"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nstruct fast_tag {};\nstruct slow_tag {};\n\nvoid process(fast_tag) { cout << \"Fast\"; }\nvoid process(slow_tag) { cout << \"Slow\"; }\n\ntemplate<bool Fast>\nvoid run() { process(conditional_t<Fast, fast_tag, slow_tag>{}); }\n\nint main() {\n    run<true>();\n    return 0;\n}",
+        "o": [
+            "Fast",
+            "Slow",
+            "Error",
+            "run"
+        ]
+    },
+    {
+        "q": "Tag dispatching is a compile-time technique.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Tag types are typically empty structs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ type selects between two types based on a condition.",
+        "type": "fill_blank",
+        "answers": [
+            "conditional_t"
+        ],
+        "other_options": [
+            "enable_if_t",
+            "decay_t",
+            "remove_cv_t"
+        ]
+    },
+    {
+        "q": "What is type erasure?",
+        "type": "mcq",
+        "o": [
+            "A technique to hide concrete types behind a uniform interface",
+            "Deleting type information",
+            "Type casting",
+            "Template specialization"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <functional>\nusing namespace std;\n\nint main() {\n    function<int(int)> f = [](int x) { return x * 2; };\n    cout << f(5);\n    return 0;\n}",
+        "o": [
+            "10",
+            "5",
+            "Error",
+            "function"
+        ]
+    },
+    {
+        "q": "std::function uses type erasure internally.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Type erasure typically involves virtual functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ class template provides type-erased callable wrapper.",
+        "type": "fill_blank",
+        "answers": [
+            "function"
+        ],
+        "other_options": [
+            "invoke",
+            "callable",
+            "functor"
+        ]
+    },
+    {
+        "q": "Match the type erasure implementations:",
+        "type": "match",
+        "left": [
+            "std::function",
+            "std::any",
+            "std::variant"
+        ],
+        "right": [
+            "Callable wrapper",
+            "Any type holder",
+            "Type-safe union"
+        ]
+    },
+    {
+        "q": "What is policy-based design?",
+        "type": "mcq",
+        "o": [
+            "Composing class behavior through template parameters",
+            "Security policies",
+            "Access control",
+            "Runtime policies"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nstruct AddPolicy {\n    static int apply(int a, int b) { return a + b; }\n};\n\ntemplate<typename Policy>\nclass Calculator {\npublic:\n    int calculate(int a, int b) { return Policy::apply(a, b); }\n};\n\nint main() {\n    Calculator<AddPolicy> c;\n    cout << c.calculate(3, 4);\n    return 0;\n}",
+        "o": [
+            "7",
+            "12",
+            "Error",
+            "Calculator"
+        ]
+    },
+    {
+        "q": "Policy-based design promotes code reuse through composition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Policies are passed as template parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern allows mixing behaviors via template policies.",
+        "type": "fill_blank",
+        "answers": [
+            "mixin"
+        ],
+        "other_options": [
+            "decorator",
+            "adapter",
+            "bridge"
+        ]
+    },
+    {
+        "q": "What is a mixin class?",
+        "type": "mcq",
+        "o": [
+            "A class that adds functionality through template inheritance",
+            "A class that mixes data types",
+            "A polymorphic class",
+            "An abstract class"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\ntemplate<typename Base>\nclass Counter : public Base {\n    int count = 0;\npublic:\n    void tick() { count++; Base::process(); }\n    int getCount() { return count; }\n};\n\nclass Logger {\npublic:\n    void process() { cout << \"Log \"; }\n};\n\nint main() {\n    Counter<Logger> c;\n    c.tick();\n    cout << c.getCount();\n    return 0;\n}",
+        "o": [
+            "Log 1",
+            "1",
+            "Log",
+            "Error"
+        ]
+    },
+    {
+        "q": "Mixins allow adding features to classes without modifying them.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mixins can create multiple layers of functionality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ class wraps CRTP to add functionality.",
+        "type": "fill_blank",
+        "answers": [
+            "mixin"
+        ],
+        "other_options": [
+            "wrapper",
+            "decorator",
+            "adapter"
+        ]
+    },
+    {
+        "q": "Rearrange class templates from simple to complex:",
+        "type": "rearrange",
+        "words": [
+            "Single type parameter",
+            "Multiple parameters",
+            "Non-type parameters",
+            "Variadic template",
+            "Policy-based"
+        ]
+    },
+    {
+        "q": "What is the Small Buffer Optimization (SBO)?",
+        "type": "mcq",
+        "o": [
+            "Storing small objects inline to avoid heap allocation",
+            "Buffer compression",
+            "Memory alignment",
+            "Cache optimization"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <string>\nusing namespace std;\n\nint main() {\n    string s = \"Hi\";\n    cout << s.capacity();\n    return 0;\n}",
+        "o": [
+            "15 or similar (SSO capacity)",
+            "2",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "std::string uses Small String Optimization (SSO).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "SBO avoids heap allocation for small objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ optimization stores small strings inline.",
+        "type": "fill_blank",
+        "answers": [
+            "SSO"
+        ],
+        "other_options": [
+            "SBO",
+            "COW",
+            "RVO"
+        ]
+    },
+    {
+        "q": "Match the memory optimizations:",
+        "type": "match",
+        "left": [
+            "SSO",
+            "SBO",
+            "COW",
+            "Move semantics"
+        ],
+        "right": [
+            "Small String Optimization",
+            "Small Buffer Optimization",
+            "Copy On Write",
+            "Transfer ownership"
+        ]
+    },
+    {
+        "q": "What is the Copy-and-Swap idiom?",
+        "type": "mcq",
+        "o": [
+            "A technique for implementing assignment operators safely",
+            "A copy mechanism",
+            "A swap algorithm",
+            "A sorting technique"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <algorithm>\nusing namespace std;\n\nclass Buffer {\n    int* data;\npublic:\n    Buffer(int v) : data(new int(v)) {}\n    Buffer(const Buffer& other) : data(new int(*other.data)) {}\n    ~Buffer() { delete data; }\n    friend void swap(Buffer& a, Buffer& b) noexcept {\n        using std::swap;\n        swap(a.data, b.data);\n    }\n    Buffer& operator=(Buffer other) {\n        swap(*this, other);\n        return *this;\n    }\n    int get() const { return *data; }\n};\n\nint main() {\n    Buffer b1(10), b2(20);\n    b1 = b2;\n    cout << b1.get();\n    return 0;\n}",
+        "o": [
+            "20",
+            "10",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "Copy-and-Swap provides strong exception safety.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Copy-and-Swap unifies copy and move assignment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ idiom passes by value to trigger copy/move.",
+        "type": "fill_blank",
+        "answers": [
+            "copy-and-swap"
+        ],
+        "other_options": [
+            "move-and-swap",
+            "copy-on-write",
+            "RAII"
+        ]
+    },
+    {
+        "q": "What is the Attorney-Client idiom?",
+        "type": "mcq",
+        "o": [
+            "A technique to grant limited access to private members",
+            "A design pattern",
+            "A legal framework",
+            "An access control method"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Secret;\n\nclass Attorney {\n    friend class Client;\n    static int getSecret(Secret& s);\n};\n\nclass Secret {\n    int value = 42;\n    friend class Attorney;\n};\n\nint Attorney::getSecret(Secret& s) { return s.value; }\n\nclass Client {\npublic:\n    void access(Secret& s) { cout << Attorney::getSecret(s); }\n};\n\nint main() {\n    Secret s;\n    Client c;\n    c.access(s);\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "0",
+            "Secret"
+        ]
+    },
+    {
+        "q": "Attorney-Client limits friend access to specific operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The Attorney acts as an intermediary for private access.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ idiom controls which friends can access which members.",
+        "type": "fill_blank",
+        "answers": [
+            "Attorney-Client"
+        ],
+        "other_options": [
+            "Passkey",
+            "PIMPL",
+            "Bridge"
+        ]
+    },
+    {
+        "q": "What is the Passkey idiom?",
+        "type": "mcq",
+        "o": [
+            "Using a private key class to restrict function access",
+            "Password protection",
+            "Encryption pattern",
+            "Security protocol"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Key {\n    friend class Allowed;\n    Key() {}\n};\n\nclass Secret {\npublic:\n    void access(Key) { cout << \"Allowed\"; }\n};\n\nclass Allowed {\npublic:\n    void call(Secret& s) { s.access(Key()); }\n};\n\nint main() {\n    Secret s;\n    Allowed a;\n    a.call(s);\n    return 0;\n}",
+        "o": [
+            "Allowed",
+            "Error",
+            "Secret",
+            "Key"
+        ]
+    },
+    {
+        "q": "Passkey requires passing a key object to call restricted functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Only friends of the Key class can create Key objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ idiom uses a private constructor key class.",
+        "type": "fill_blank",
+        "answers": [
+            "Passkey"
+        ],
+        "other_options": [
+            "Attorney",
+            "Friend",
+            "Access"
+        ]
+    },
+    {
+        "q": "Match the access control idioms:",
+        "type": "match",
+        "left": [
+            "Friend",
+            "Attorney-Client",
+            "Passkey",
+            "PIMPL"
+        ],
+        "right": [
+            "Full access",
+            "Controlled access",
+            "Key-based access",
+            "Hidden implementation"
+        ]
+    },
+    {
+        "q": "What is the Barton-Nackman trick?",
+        "type": "mcq",
+        "o": [
+            "Defining friend functions inside class templates",
+            "A sorting algorithm",
+            "A memory technique",
+            "An optimization"
+        ]
+    },
+    {
+        "q": "What is the purpose of empty base classes?",
+        "type": "mcq",
+        "o": [
+            "Adding functionality without increasing object size via EBO",
+            "Placeholder classes",
+            "Abstract classes",
+            "Interface classes"
+        ]
+    },
+    {
+        "q": "Empty base classes can be optimized away in derived classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "EBO is guaranteed by the standard for certain cases.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ optimization compresses empty base subobjects.",
+        "type": "fill_blank",
+        "answers": [
+            "EBO"
+        ],
+        "other_options": [
+            "SBO",
+            "SSO",
+            "RVO"
+        ]
+    },
+    {
+        "q": "What is the explicit object parameter (deducing this)?",
+        "type": "mcq",
+        "o": [
+            "A C++23 feature allowing explicit this parameter",
+            "A virtual function",
+            "A static function",
+            "A constructor"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nstruct Test {\n    void foo(this Test self) { cout << \"Called\"; }\n};\n\nint main() {\n    Test t;\n    t.foo();\n    return 0;\n}",
+        "o": [
+            "Called (C++23)",
+            "Error",
+            "Test",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Deducing this eliminates need for const and non-const overloads.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deducing this was introduced in C++23.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ parameter makes the implicit this explicit.",
+        "type": "fill_blank",
+        "answers": [
+            "explicit object"
+        ],
+        "other_options": [
+            "implicit object",
+            "this",
+            "self"
+        ]
+    },
+    {
+        "q": "Rearrange class feature additions from old to new:",
+        "type": "rearrange",
+        "words": [
+            "Constructor (C++98)",
+            "Explicit (C++98)",
+            "Default/Delete (C++11)",
+            "Inline static (C++17)",
+            "Deducing this (C++23)"
+        ]
+    },
+    {
+        "q": "What is aggregate initialization?",
+        "type": "mcq",
+        "o": [
+            "Initializing class members using braces without constructor",
+            "String initialization",
+            "Array initialization",
+            "Pointer initialization"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nstruct Point {\n    int x;\n    int y;\n};\n\nint main() {\n    Point p = {3, 4};\n    cout << p.x << p.y;\n    return 0;\n}",
+        "o": [
+            "34",
+            "Error",
+            "0",
+            "Point"
+        ]
+    },
+    {
+        "q": "Aggregates cannot have user-declared constructors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Aggregates can have public base classes in C++17.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ initialization uses braces for aggregates.",
+        "type": "fill_blank",
+        "answers": [
+            "aggregate"
+        ],
+        "other_options": [
+            "direct",
+            "copy",
+            "list"
+        ]
+    },
+    {
+        "q": "Match the initialization types:",
+        "type": "match",
+        "left": [
+            "Aggregate init",
+            "Direct init",
+            "Copy init",
+            "List init"
+        ],
+        "right": [
+            "Brace without ctor",
+            "Ctor call",
+            "= value",
+            "Uniform braces"
+        ]
+    },
+    {
+        "q": "What is designated initialization?",
+        "type": "mcq",
+        "o": [
+            "Initializing specific members by name using .name = value",
+            "Default initialization",
+            "Copy initialization",
+            "Move initialization"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nstruct Config {\n    int width = 800;\n    int height = 600;\n    bool fullscreen = false;\n};\n\nint main() {\n    Config c = {.height = 1080};\n    cout << c.height;\n    return 0;\n}",
+        "o": [
+            "1080",
+            "600",
+            "Error",
+            "Config"
+        ]
+    },
+    {
+        "q": "Designated initializers must be in declaration order in C++.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Designated initialization was added in C++20.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ syntax allows naming members during initialization.",
+        "type": "fill_blank",
+        "answers": [
+            "designated"
+        ],
+        "other_options": [
+            "named",
+            "explicit",
+            "ordered"
+        ]
+    },
+    {
+        "q": "What is structured binding?",
+        "type": "mcq",
+        "o": [
+            "Unpacking aggregates into named variables",
+            "Binding functions",
+            "Struct creation",
+            "Variable binding"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nstruct Point { int x, y; };\n\nint main() {\n    Point p = {3, 4};\n    auto [a, b] = p;\n    cout << a << b;\n    return 0;\n}",
+        "o": [
+            "34",
+            "Error",
+            "ab",
+            "Point"
+        ]
+    },
+    {
+        "q": "Structured bindings work with arrays, tuples, and structs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Structured bindings were introduced in C++17.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ declaration unpacks structure members.",
+        "type": "fill_blank",
+        "answers": [
+            "auto"
+        ],
+        "other_options": [
+            "struct",
+            "tuple",
+            "bind"
+        ]
+    },
+    {
+        "q": "Match the C++17 class features:",
+        "type": "match",
+        "left": [
+            "Inline variables",
+            "CTAD",
+            "Structured bindings",
+            "Aggregate bases"
+        ],
+        "right": [
+            "Header static",
+            "Template deduction",
+            "Unpack members",
+            "Inherit aggregates"
+        ]
+    },
+    {
+        "q": "What is CTAD (Class Template Argument Deduction)?",
+        "type": "mcq",
+        "o": [
+            "Compiler deduces template arguments from constructor parameters",
+            "Template casting",
+            "Type checking",
+            "Argument forwarding"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n    vector v = {1, 2, 3};\n    cout << v.size();\n    return 0;\n}",
+        "o": [
+            "3",
+            "Error",
+            "vector",
+            "0"
+        ]
+    },
+    {
+        "q": "CTAD allows omitting template arguments.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deduction guides help CTAD for complex cases.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ guide specifies how template args are deduced.",
+        "type": "fill_blank",
+        "answers": [
+            "deduction"
+        ],
+        "other_options": [
+            "template",
+            "type",
+            "inference"
+        ]
+    },
+    {
+        "q": "What is the purpose of operator<=> in classes?",
+        "type": "mcq",
+        "o": [
+            "Three-way comparison that enables all comparison operators",
+            "Assignment operator",
+            "Arrow operator",
+            "Shift operator"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <compare>\nusing namespace std;\n\nstruct Point {\n    int x, y;\n    auto operator<=>(const Point&) const = default;\n};\n\nint main() {\n    Point a{1, 2}, b{1, 3};\n    cout << (a < b);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "Error",
+            "Point"
+        ]
+    },
+    {
+        "q": "Defaulting <=> generates all comparison operators.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The spaceship operator was added in C++20.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ operator provides three-way comparison.",
+        "type": "fill_blank",
+        "answers": [
+            "<=>"
+        ],
+        "other_options": [
+            "==",
+            "!=",
+            "<"
+        ]
+    },
+    {
+        "q": "Rearrange comparison operators from equality to ordering:",
+        "type": "rearrange",
+        "words": [
+            "==",
+            "!=",
+            "<",
+            "<=",
+            "<=>"
+        ]
+    },
+    {
+        "q": "What are [[nodiscard]] classes?",
+        "type": "mcq",
+        "o": [
+            "Classes marked to warn if their instances are ignored",
+            "Non-copyable classes",
+            "Abstract classes",
+            "Final classes"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nstruct [[nodiscard]] Result {\n    int value;\n};\n\nResult compute() { return {42}; }\n\nint main() {\n    compute();\n    return 0;\n}",
+        "o": [
+            "Compiles with warning",
+            "42",
+            "Error",
+            "Result"
+        ]
+    },
+    {
+        "q": "[[nodiscard]] can be applied to classes and functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "[[nodiscard(\"reason\")]] was added in C++20.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ attribute warns about ignored return values.",
+        "type": "fill_blank",
+        "answers": [
+            "[[nodiscard]]"
+        ],
+        "other_options": [
+            "[[maybe_unused]]",
+            "[[deprecated]]",
+            "[[likely]]"
+        ]
+    },
+    {
+        "q": "Match the class attributes:",
+        "type": "match",
+        "left": [
+            "[[nodiscard]]",
+            "[[deprecated]]",
+            "[[maybe_unused]]",
+            "[[no_unique_address]]"
+        ],
+        "right": [
+            "Warn if ignored",
+            "Warn if used",
+            "No unused warning",
+            "Allow overlap"
+        ]
+    },
+    {
+        "q": "What is object slicing?",
+        "type": "mcq",
+        "o": [
+            "Losing derived class data when copied to base class object",
+            "Splitting objects",
+            "Memory slicing",
+            "Array slicing"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void show() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\npublic:\n    void show() override { cout << \"Derived\"; }\n};\n\nvoid print(Base b) { b.show(); }\n\nint main() {\n    Derived d;\n    print(d);\n    return 0;\n}",
+        "o": [
+            "Base (slicing)",
+            "Derived",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Object slicing occurs when passing by value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Using references or pointers prevents slicing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ problem occurs when derived objects are copied as base.",
+        "type": "fill_blank",
+        "answers": [
+            "slicing"
+        ],
+        "other_options": [
+            "casting",
+            "conversion",
+            "truncation"
+        ]
+    },
+    {
+        "q": "What is the virtual destructor rule?",
+        "type": "mcq",
+        "o": [
+            "Base classes with virtual functions should have virtual destructors",
+            "All destructors should be virtual",
+            "Virtual destructors are optional",
+            "Destructors cannot be virtual"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual ~Base() { cout << \"B\"; }\n};\n\nclass Derived : public Base {\npublic:\n    ~Derived() { cout << \"D\"; }\n};\n\nint main() {\n    Base* p = new Derived();\n    delete p;\n    return 0;\n}",
+        "o": [
+            "DB",
+            "B",
+            "D",
+            "Error"
+        ]
+    },
+    {
+        "q": "Not having virtual destructor can cause memory leaks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual destructor ensures proper cleanup of derived objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ destructor enables polymorphic deletion.",
+        "type": "fill_blank",
+        "answers": [
+            "virtual"
+        ],
+        "other_options": [
+            "pure",
+            "protected",
+            "private"
+        ]
+    },
+    {
+        "q": "Rearrange from base class design to derived class design:",
+        "type": "rearrange",
+        "words": [
+            "Define base interface",
+            "Add virtual destructor",
+            "Implement derived class",
+            "Override virtual functions",
+            "Test polymorphism"
+        ]
+    },
+    {
+        "q": "What is std::is_aggregate?",
+        "type": "mcq",
+        "o": [
+            "A type trait to check if a type is an aggregate",
+            "An aggregate function",
+            "A container type",
+            "A template class"
+        ]
+    },
+    {
+        "q": "What is std::is_trivially_copyable?",
+        "type": "mcq",
+        "o": [
+            "Checks if a type can be safely copied with memcpy",
+            "Checks for copy constructor",
+            "Checks for assignment operator",
+            "Checks for destructor"
+        ]
+    },
+    {
+        "q": "Trivially copyable types can be used with memcpy safely.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::is_standard_layout checks for C-compatible memory layout.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ type trait checks if a type has virtual functions.",
+        "type": "fill_blank",
+        "answers": [
+            "is_polymorphic"
+        ],
+        "other_options": [
+            "is_virtual",
+            "has_virtual",
+            "is_abstract"
+        ]
+    },
+    {
+        "q": "Match the type traits for classes:",
+        "type": "match",
+        "left": [
+            "is_class",
+            "is_aggregate",
+            "is_polymorphic",
+            "is_final"
+        ],
+        "right": [
+            "Check if class type",
+            "Check aggregate rules",
+            "Check virtual functions",
+            "Check final specifier"
+        ]
+    },
+    {
+        "q": "What is a POD type?",
+        "type": "mcq",
+        "o": [
+            "Plain Old Data - trivial and standard layout type",
+            "Pointer Object Data",
+            "Protected Object Definition",
+            "Private Object Declaration"
+        ]
+    },
+    {
+        "q": "What is std::is_trivial?",
+        "type": "mcq",
+        "o": [
+            "Checks if a type is trivially default constructible and copyable",
+            "Checks if a type is simple",
+            "Checks if a type is small",
+            "Checks if a type is empty"
+        ]
+    },
+    {
+        "q": "POD types have guaranteed memory layout compatibility with C.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::is_pod was deprecated in C++20.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ layout type can be cast to/from char arrays safely.",
+        "type": "fill_blank",
+        "answers": [
+            "standard"
+        ],
+        "other_options": [
+            "trivial",
+            "POD",
+            "aggregate"
+        ]
+    },
+    {
+        "q": "What is std::launder used for with classes?",
+        "type": "mcq",
+        "o": [
+            "Obtaining a pointer to an object after type-punning or placement new",
+            "Memory cleanup",
+            "Object deletion",
+            "Pointer arithmetic"
+        ]
+    },
+    {
+        "q": "What is the purpose of std::start_lifetime_as?",
+        "type": "mcq",
+        "o": [
+            "To begin the lifetime of an implicit object in memory (C++23)",
+            "Object construction",
+            "Memory allocation",
+            "Pointer creation"
+        ]
+    },
+    {
+        "q": "Object lifetime rules apply strictly to class objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Reusing memory requires proper object lifetime management.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ function starts implicit object lifetime.",
+        "type": "fill_blank",
+        "answers": [
+            "start_lifetime_as"
+        ],
+        "other_options": [
+            "launder",
+            "construct_at",
+            "make"
+        ]
+    },
+    {
+        "q": "Rearrange from class definition to object use:",
+        "type": "rearrange",
+        "words": [
+            "Class definition",
+            "Object declaration",
+            "Construction",
+            "Method calls",
+            "Destruction"
+        ]
+    },
+    {
+        "q": "What is a virtual base class?",
+        "type": "mcq",
+        "o": [
+            "A base class inherited virtually to prevent diamond inheritance issues",
+            "A class with virtual functions",
+            "An abstract class",
+            "A template class"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A\"; }\n};\n\nclass B : virtual public A {\npublic:\n    B() { cout << \"B\"; }\n};\n\nclass C : virtual public A {\npublic:\n    C() { cout << \"C\"; }\n};\n\nclass D : public B, public C {\npublic:\n    D() { cout << \"D\"; }\n};\n\nint main() {\n    D d;\n    return 0;\n}",
+        "o": [
+            "ABCD",
+            "AABCD",
+            "Error",
+            "ABCAD"
+        ]
+    },
+    {
+        "q": "Virtual inheritance solves the diamond problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual base class constructor is called by most derived class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ inheritance ensures only one copy of base class members.",
+        "type": "fill_blank",
+        "answers": [
+            "virtual"
+        ],
+        "other_options": [
+            "public",
+            "protected",
+            "private"
+        ]
+    },
+    {
+        "q": "What is protected inheritance?",
+        "type": "mcq",
+        "o": [
+            "Public members of base become protected in derived",
+            "All members become private",
+            "Only protected members are inherited",
+            "Members accessible only in derived"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\nprotected:\n    int x = 10;\n};\n\nclass Derived : protected Base {\npublic:\n    int get() { return x; }\n};\n\nint main() {\n    Derived d;\n    cout << d.get();\n    return 0;\n}",
+        "o": [
+            "10",
+            "Error",
+            "0",
+            "Base"
+        ]
+    },
+    {
+        "q": "Protected inheritance is less common than public inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Private inheritance models 'implemented-in-terms-of' relationship.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ inheritance hides all base members from external access.",
+        "type": "fill_blank",
+        "answers": [
+            "private"
+        ],
+        "other_options": [
+            "public",
+            "protected",
+            "virtual"
+        ]
+    },
+    {
+        "q": "Match the inheritance types:",
+        "type": "match",
+        "left": [
+            "public",
+            "protected",
+            "private",
+            "virtual"
+        ],
+        "right": [
+            "is-a relationship",
+            "internal use only",
+            "implementation detail",
+            "solve diamond"
+        ]
+    },
+    {
+        "q": "What is covariant return type?",
+        "type": "mcq",
+        "o": [
+            "Overriding virtual function with derived class pointer return type",
+            "Changing return type completely",
+            "Multiple return types",
+            "Template return type"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual Base* clone() { return new Base(*this); }\n    virtual void show() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\npublic:\n    Derived* clone() override { return new Derived(*this); }\n    void show() override { cout << \"Derived\"; }\n};\n\nint main() {\n    Derived d;\n    d.clone()->show();\n    return 0;\n}",
+        "o": [
+            "Derived",
+            "Base",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Covariant return type must be pointer or reference to derived class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Covariant return types improve type safety in hierarchies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ return type allows override with more derived type.",
+        "type": "fill_blank",
+        "answers": [
+            "covariant"
+        ],
+        "other_options": [
+            "contravariant",
+            "variant",
+            "invariant"
+        ]
+    },
+    {
+        "q": "What is a final class?",
+        "type": "mcq",
+        "o": [
+            "A class that cannot be inherited from",
+            "A complete class",
+            "The last class in a file",
+            "A derived class"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base final {\npublic:\n    void show() { cout << \"Base\"; }\n};\n\nint main() {\n    Base b;\n    b.show();\n    return 0;\n}",
+        "o": [
+            "Base",
+            "Error",
+            "Nothing",
+            "final"
+        ]
+    },
+    {
+        "q": "The final keyword can be applied to classes and virtual functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A final virtual function cannot be overridden further.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ specifier prevents further inheritance.",
+        "type": "fill_blank",
+        "answers": [
+            "final"
+        ],
+        "other_options": [
+            "sealed",
+            "const",
+            "static"
+        ]
+    },
+    {
+        "q": "What is RAII?",
+        "type": "mcq",
+        "o": [
+            "Resource Acquisition Is Initialization - tie resource lifetime to object lifetime",
+            "Runtime Allocation Is Interesting",
+            "Reference And Inheritance Interface",
+            "Resource Access In Instance"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <fstream>\nusing namespace std;\n\nclass FileHandler {\n    ofstream file;\npublic:\n    FileHandler(const string& name) : file(name) {\n        cout << \"Open \";\n    }\n    ~FileHandler() {\n        file.close();\n        cout << \"Close\";\n    }\n};\n\nint main() {\n    FileHandler fh(\"test.txt\");\n    return 0;\n}",
+        "o": [
+            "Open Close",
+            "Open",
+            "Close",
+            "Error"
+        ]
+    },
+    {
+        "q": "RAII prevents resource leaks through destructors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "RAII ensures cleanup even when exceptions occur.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern binds resource lifetime to scope.",
+        "type": "fill_blank",
+        "answers": [
+            "RAII"
+        ],
+        "other_options": [
+            "PIMPL",
+            "CRTP",
+            "NVI"
+        ]
+    },
+    {
+        "q": "Match the RAII wrappers:",
+        "type": "match",
+        "left": [
+            "unique_ptr",
+            "shared_ptr",
+            "lock_guard",
+            "fstream"
+        ],
+        "right": [
+            "Exclusive ownership",
+            "Shared ownership",
+            "Mutex locking",
+            "File handle"
+        ]
+    },
+    {
+        "q": "What is reference counting in classes?",
+        "type": "mcq",
+        "o": [
+            "Tracking number of references to shared resource for cleanup",
+            "Counting class members",
+            "Reference type counting",
+            "Instance counting"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <memory>\nusing namespace std;\n\nint main() {\n    shared_ptr<int> p1 = make_shared<int>(42);\n    shared_ptr<int> p2 = p1;\n    cout << p1.use_count();\n    return 0;\n}",
+        "o": [
+            "2",
+            "1",
+            "42",
+            "Error"
+        ]
+    },
+    {
+        "q": "shared_ptr uses reference counting internally.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Circular references can cause memory leaks with shared_ptr.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ breaks circular references in shared_ptr.",
+        "type": "fill_blank",
+        "answers": [
+            "weak_ptr"
+        ],
+        "other_options": [
+            "unique_ptr",
+            "raw_ptr",
+            "safe_ptr"
+        ]
+    },
+    {
+        "q": "What is strong exception safety?",
+        "type": "mcq",
+        "o": [
+            "Operation either succeeds completely or has no effect",
+            "No exceptions thrown",
+            "All exceptions caught",
+            "Basic cleanup guaranteed"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nclass Test {\n    vector<int> data;\npublic:\n    Test& operator=(Test other) noexcept {\n        data.swap(other.data);\n        return *this;\n    }\n    void add(int x) { data.push_back(x); }\n    int size() const { return data.size(); }\n};\n\nint main() {\n    Test t1, t2;\n    t1.add(1);\n    t2 = t1;\n    cout << t2.size();\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "Error",
+            "Test"
+        ]
+    },
+    {
+        "q": "noexcept functions provide better optimization opportunities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Move operations should generally be noexcept.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ guarantee ensures state rollback on failure.",
+        "type": "fill_blank",
+        "answers": [
+            "strong"
+        ],
+        "other_options": [
+            "basic",
+            "nothrow",
+            "weak"
+        ]
+    },
+    {
+        "q": "Match the exception safety levels:",
+        "type": "match",
+        "left": [
+            "No-throw",
+            "Strong",
+            "Basic",
+            "No guarantee"
+        ],
+        "right": [
+            "Never throws",
+            "Rollback on failure",
+            "Cleanup only",
+            "Unknown state"
+        ]
+    },
+    {
+        "q": "What is a virtual table (vtable)?",
+        "type": "mcq",
+        "o": [
+            "A lookup table for virtual function addresses",
+            "A table of virtual members",
+            "A virtual array",
+            "A template table"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void foo() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\npublic:\n    void foo() override { cout << \"Derived\"; }\n};\n\nint main() {\n    Base* p = new Derived();\n    p->foo();\n    delete p;\n    return 0;\n}",
+        "o": [
+            "Derived",
+            "Base",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Each class with virtual functions has its own vtable.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The vptr (virtual pointer) points to the class vtable.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ stores pointers to virtual function implementations.",
+        "type": "fill_blank",
+        "answers": [
+            "vtable"
+        ],
+        "other_options": [
+            "vptr",
+            "heap",
+            "stack"
+        ]
+    },
+    {
+        "q": "What is object layout?",
+        "type": "mcq",
+        "o": [
+            "Memory arrangement of class data members",
+            "Class hierarchy",
+            "Object creation order",
+            "Member function order"
+        ]
+    },
+    {
+        "q": "What is the purpose of alignas?",
+        "type": "mcq",
+        "o": [
+            "Specify alignment requirement for types or objects",
+            "Align text",
+            "Sort members",
+            "Order operations"
+        ]
+    },
+    {
+        "q": "Class members are laid out in declaration order.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Padding may be inserted between members for alignment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ specifier controls memory alignment.",
+        "type": "fill_blank",
+        "answers": [
+            "alignas"
+        ],
+        "other_options": [
+            "alignof",
+            "sizeof",
+            "offsetof"
+        ]
+    },
+    {
+        "q": "Rearrange class memory layout from start to end:",
+        "type": "rearrange",
+        "words": [
+            "Vptr (if virtual)",
+            "Base members",
+            "Derived members",
+            "Padding",
+            "End of object"
+        ]
+    },
+    {
+        "q": "What is multiple dispatch?",
+        "type": "mcq",
+        "o": [
+            "Dispatching based on runtime types of multiple objects",
+            "Multiple function calls",
+            "Multiple inheritance",
+            "Multiple threads"
+        ]
+    },
+    {
+        "q": "What is the visitor pattern?",
+        "type": "mcq",
+        "o": [
+            "Double dispatch pattern for operations on object structures",
+            "Iterator pattern",
+            "Observer pattern",
+            "Factory pattern"
+        ]
+    },
+    {
+        "q": "C++ uses single dispatch for virtual functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Visitor pattern enables adding new operations without modifying classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ function in visitor accepts the visitor object.",
+        "type": "fill_blank",
+        "answers": [
+            "accept"
+        ],
+        "other_options": [
+            "visit",
+            "process",
+            "handle"
+        ]
+    },
+    {
+        "q": "Match the behavioral patterns:",
+        "type": "match",
+        "left": [
+            "Visitor",
+            "Strategy",
+            "Command",
+            "Observer"
+        ],
+        "right": [
+            "Double dispatch",
+            "Algorithm swap",
+            "Request encapsulation",
+            "Event notification"
+        ]
+    },
+    {
+        "q": "What is decltype for member expressions?",
+        "type": "mcq",
+        "o": [
+            "Deduces the type of a member access expression",
+            "Declares a new type",
+            "Deletes a type",
+            "Defines a type"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Test {\npublic:\n    int value = 42;\n};\n\nint main() {\n    Test t;\n    decltype(t.value) x = 100;\n    cout << x;\n    return 0;\n}",
+        "o": [
+            "100",
+            "42",
+            "Error",
+            "Test"
+        ]
+    },
+    {
+        "q": "decltype(auto) can deduce reference types correctly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "decltype preserves const and volatile qualifiers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ keyword deduces expression type at compile time.",
+        "type": "fill_blank",
+        "answers": [
+            "decltype"
+        ],
+        "other_options": [
+            "auto",
+            "typeof",
+            "typeid"
+        ]
+    },
+    {
+        "q": "What is std::decay?",
+        "type": "mcq",
+        "o": [
+            "A type trait that removes references, cv-qualifiers, and array/function decay",
+            "A memory cleanup",
+            "Object destruction",
+            "Reference decay"
+        ]
+    },
+    {
+        "q": "What is the purpose of std::remove_cvref?",
+        "type": "mcq",
+        "o": [
+            "Removes const, volatile, and reference from a type",
+            "Removes class members",
+            "Removes functions",
+            "Removes constructors"
+        ]
+    },
+    {
+        "q": "Type traits are evaluated at compile time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::remove_cvref was added in C++20.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ trait strips const, volatile, and reference.",
+        "type": "fill_blank",
+        "answers": [
+            "remove_cvref"
+        ],
+        "other_options": [
+            "decay",
+            "remove_cv",
+            "remove_ref"
+        ]
+    },
+    {
+        "q": "Match the type transformation traits:",
+        "type": "match",
+        "left": [
+            "decay",
+            "add_const",
+            "remove_pointer",
+            "make_signed"
+        ],
+        "right": [
+            "Strip qualifiers",
+            "Add const",
+            "Remove pointer",
+            "Signed version"
+        ]
+    },
+    {
+        "q": "What is std::invoke?",
+        "type": "mcq",
+        "o": [
+            "A uniform way to call any callable object",
+            "Function declaration",
+            "Method invocation only",
+            "Event triggering"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <functional>\nusing namespace std;\n\nclass Test {\npublic:\n    int value = 42;\n    int getValue() { return value; }\n};\n\nint main() {\n    Test t;\n    cout << invoke(&Test::getValue, t);\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "0",
+            "Test"
+        ]
+    },
+    {
+        "q": "std::invoke works with member function pointers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::invoke works with data member pointers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ trait checks if a callable can be invoked.",
+        "type": "fill_blank",
+        "answers": [
+            "is_invocable"
+        ],
+        "other_options": [
+            "is_callable",
+            "can_invoke",
+            "has_call"
+        ]
+    },
+    {
+        "q": "What is std::mem_fn?",
+        "type": "mcq",
+        "o": [
+            "Creates a callable wrapper for member function pointers",
+            "Memory function",
+            "Member finder",
+            "Method factory"
+        ]
+    },
+    {
+        "q": "What is std::bind used for?",
+        "type": "mcq",
+        "o": [
+            "Creating a callable with bound arguments",
+            "Binding variables",
+            "Memory binding",
+            "Reference binding"
+        ]
+    },
+    {
+        "q": "std::bind_front was added in C++20.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Lambdas are often preferred over std::bind.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ creates wrapper for member function pointer.",
+        "type": "fill_blank",
+        "answers": [
+            "mem_fn"
+        ],
+        "other_options": [
+            "bind",
+            "invoke",
+            "function"
+        ]
+    },
+    {
+        "q": "Rearrange from callable definition to invocation:",
+        "type": "rearrange",
+        "words": [
+            "Define callable",
+            "Wrap with std::function",
+            "Bind arguments",
+            "Store callback",
+            "Invoke"
+        ]
+    },
+    {
+        "q": "What is a lambda capture?",
+        "type": "mcq",
+        "o": [
+            "Variables from enclosing scope stored in lambda",
+            "Lambda parameters",
+            "Return value",
+            "Function body"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    int x = 10;\n    auto f = [x]() mutable { return ++x; };\n    cout << f() << f();\n    return 0;\n}",
+        "o": [
+            "1112",
+            "1111",
+            "1011",
+            "Error"
+        ]
+    },
+    {
+        "q": "Lambdas are instances of compiler-generated closure classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "mutable allows modification of captured values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ capture clause captures this pointer.",
+        "type": "fill_blank",
+        "answers": [
+            "[this]"
+        ],
+        "other_options": [
+            "[=]",
+            "[&]",
+            "[*]"
+        ]
+    },
+    {
+        "q": "Match the lambda capture modes:",
+        "type": "match",
+        "left": [
+            "[=]",
+            "[&]",
+            "[this]",
+            "[*this]"
+        ],
+        "right": [
+            "Copy all",
+            "Reference all",
+            "Capture this ptr",
+            "Copy this object"
+        ]
+    },
+    {
+        "q": "What is init-capture in lambdas?",
+        "type": "mcq",
+        "o": [
+            "Capture variable with an initializer expression",
+            "Initial lambda call",
+            "First capture",
+            "Default value"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <memory>\nusing namespace std;\n\nint main() {\n    auto p = make_unique<int>(42);\n    auto f = [ptr = move(p)]() { return *ptr; };\n    cout << f();\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "0",
+            "nullptr"
+        ]
+    },
+    {
+        "q": "Init-capture enables move-only captures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Init-capture was added in C++14.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ capture allows capturing move-only types.",
+        "type": "fill_blank",
+        "answers": [
+            "init"
+        ],
+        "other_options": [
+            "copy",
+            "move",
+            "ref"
+        ]
+    },
+    {
+        "q": "What is a generic lambda?",
+        "type": "mcq",
+        "o": [
+            "A lambda with auto parameter types",
+            "A template lambda",
+            "A universal lambda",
+            "A base lambda"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    auto add = [](auto a, auto b) { return a + b; };\n    cout << add(3, 4);\n    return 0;\n}",
+        "o": [
+            "7",
+            "34",
+            "Error",
+            "auto"
+        ]
+    },
+    {
+        "q": "Generic lambdas are templates in disguise.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Template lambdas with explicit template list were added in C++20.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ keyword makes lambda parameters generic.",
+        "type": "fill_blank",
+        "answers": [
+            "auto"
+        ],
+        "other_options": [
+            "template",
+            "any",
+            "var"
+        ]
+    },
+    {
+        "q": "What is constexpr lambda?",
+        "type": "mcq",
+        "o": [
+            "A lambda that can be evaluated at compile time",
+            "A constant lambda",
+            "An immutable lambda",
+            "A fixed lambda"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nint main() {\n    constexpr auto square = [](int x) { return x * x; };\n    constexpr int result = square(5);\n    cout << result;\n    return 0;\n}",
+        "o": [
+            "25",
+            "5",
+            "Error",
+            "square"
+        ]
+    },
+    {
+        "q": "Lambdas are implicitly constexpr when possible since C++17.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "consteval lambdas must be evaluated at compile time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ lambdas can only be called at compile time.",
+        "type": "fill_blank",
+        "answers": [
+            "consteval"
+        ],
+        "other_options": [
+            "constexpr",
+            "const",
+            "static"
+        ]
+    },
+    {
+        "q": "Rearrange lambda features from C++11 to C++20:",
+        "type": "rearrange",
+        "words": [
+            "Basic lambda (C++11)",
+            "Generic lambda (C++14)",
+            "Init-capture (C++14)",
+            "constexpr (C++17)",
+            "Template lambda (C++20)"
+        ]
+    },
+    {
+        "q": "What is std::optional?",
+        "type": "mcq",
+        "o": [
+            "A wrapper that may or may not contain a value",
+            "An optional parameter",
+            "A nullable pointer",
+            "An optional class"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <optional>\nusing namespace std;\n\noptional<int> divide(int a, int b) {\n    if (b == 0) return nullopt;\n    return a / b;\n}\n\nint main() {\n    auto result = divide(10, 2);\n    cout << result.value_or(-1);\n    return 0;\n}",
+        "o": [
+            "5",
+            "10",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "std::optional avoids using special sentinel values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::nullopt represents an empty optional.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ method returns value or default.",
+        "type": "fill_blank",
+        "answers": [
+            "value_or"
+        ],
+        "other_options": [
+            "get",
+            "or_else",
+            "default"
+        ]
+    },
+    {
+        "q": "Match the vocabulary types:",
+        "type": "match",
+        "left": [
+            "optional",
+            "variant",
+            "any",
+            "expected"
+        ],
+        "right": [
+            "Maybe value",
+            "Type union",
+            "Any type",
+            "Value or error"
+        ]
+    },
+    {
+        "q": "What is std::expected?",
+        "type": "mcq",
+        "o": [
+            "A C++23 type that holds either a value or an error",
+            "An expected value type",
+            "A prediction type",
+            "A validation type"
+        ]
+    },
+    {
+        "q": "What is the purpose of std::variant?",
+        "type": "mcq",
+        "o": [
+            "Type-safe union that holds one of several types",
+            "Variable type",
+            "Variant function",
+            "Multiple inheritance"
+        ]
+    },
+    {
+        "q": "std::variant is type-safe unlike C unions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::visit applies a visitor to variant contents.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ function retrieves value from variant by type.",
+        "type": "fill_blank",
+        "answers": [
+            "get"
+        ],
+        "other_options": [
+            "value",
+            "visit",
+            "index"
+        ]
+    },
+    {
+        "q": "What is std::monostate?",
+        "type": "mcq",
+        "o": [
+            "An empty type for variant with no default-constructible first type",
+            "A single state",
+            "Monolithic state",
+            "State pattern"
+        ]
+    },
+    {
+        "q": "What is std::in_place_type?",
+        "type": "mcq",
+        "o": [
+            "Tag for in-place construction by type",
+            "Type placement",
+            "Position marker",
+            "Memory allocation"
+        ]
+    },
+    {
+        "q": "std::in_place enables direct construction in containers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "emplace methods use in-place construction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ constructs object directly in optional.",
+        "type": "fill_blank",
+        "answers": [
+            "emplace"
+        ],
+        "other_options": [
+            "construct",
+            "create",
+            "make"
+        ]
+    },
+    {
+        "q": "Rearrange vocabulary types by introduction:",
+        "type": "rearrange",
+        "words": [
+            "tuple (C++11)",
+            "optional (C++17)",
+            "variant (C++17)",
+            "any (C++17)",
+            "expected (C++23)"
+        ]
+    },
+    {
+        "q": "What is a transparent comparator?",
+        "type": "mcq",
+        "o": [
+            "A comparator that accepts different types without conversion",
+            "A clear comparator",
+            "An invisible comparator",
+            "A null comparator"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <set>\n#include <string>\nusing namespace std;\n\nint main() {\n    set<string, less<>> s = {\"apple\", \"banana\"};;\n    cout << s.count(\"apple\");\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "Error",
+            "apple"
+        ]
+    },
+    {
+        "q": "less<> is a transparent comparator.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Transparent comparators enable heterogeneous lookup.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ type member enables transparent comparison.",
+        "type": "fill_blank",
+        "answers": [
+            "is_transparent"
+        ],
+        "other_options": [
+            "is_comparable",
+            "can_compare",
+            "allows_hetero"
+        ]
+    },
+    {
+        "q": "What is a converting constructor?",
+        "type": "mcq",
+        "o": [
+            "A non-explicit constructor that enables implicit conversion",
+            "A copy constructor",
+            "A move constructor",
+            "A default constructor"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Number {\n    int value;\npublic:\n    Number(int v) : value(v) {}\n    int get() const { return value; }\n};\n\nvoid print(Number n) { cout << n.get(); }\n\nint main() {\n    print(42);\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "Number",
+            "0"
+        ]
+    },
+    {
+        "q": "Single-argument constructors enable implicit conversions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "explicit prevents unintended implicit conversions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ constructor allows implicit type conversion.",
+        "type": "fill_blank",
+        "answers": [
+            "converting"
+        ],
+        "other_options": [
+            "implicit",
+            "auto",
+            "cast"
+        ]
+    },
+    {
+        "q": "Match the constructor behaviors:",
+        "type": "match",
+        "left": [
+            "Default ctor",
+            "Copy ctor",
+            "Move ctor",
+            "Converting ctor"
+        ],
+        "right": [
+            "No arguments",
+            "Same type reference",
+            "Rvalue reference",
+            "Different type"
+        ]
+    },
+    {
+        "q": "What is ADL (Argument Dependent Lookup)?",
+        "type": "mcq",
+        "o": [
+            "Looking up function names in namespaces of argument types",
+            "Automatic dependency lookup",
+            "Argument definition lookup",
+            "Advanced directive lookup"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nnamespace N {\n    class C {};\n    void foo(C) { cout << \"ADL\"; }\n}\n\nint main() {\n    N::C c;\n    foo(c);\n    return 0;\n}",
+        "o": [
+            "ADL",
+            "Error",
+            "Nothing",
+            "foo"
+        ]
+    },
+    {
+        "q": "ADL enables natural function calling syntax for user types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "swap is often found through ADL.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ idiom uses ADL for customization points.",
+        "type": "fill_blank",
+        "answers": [
+            "two-step"
+        ],
+        "other_options": [
+            "three-step",
+            "lookup",
+            "search"
+        ]
+    },
+    {
+        "q": "What is a hidden friend?",
+        "type": "mcq",
+        "o": [
+            "A friend function visible only through ADL",
+            "A private friend",
+            "An invisible class",
+            "A protected member"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Point {\n    int x, y;\npublic:\n    Point(int a, int b) : x(a), y(b) {}\n    friend ostream& operator<<(ostream& os, const Point& p) {\n        return os << \"(\" << p.x << \",\" << p.y << \")\";\n    }\n};\n\nint main() {\n    Point p(3, 4);\n    cout << p;\n    return 0;\n}",
+        "o": [
+            "(3,4)",
+            "Point",
+            "Error",
+            "3,4"
+        ]
+    },
+    {
+        "q": "Hidden friends reduce overload set pollution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hidden friends are found through ADL only.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern defines friends inside class body.",
+        "type": "fill_blank",
+        "answers": [
+            "hidden friend"
+        ],
+        "other_options": [
+            "inline friend",
+            "nested friend",
+            "local friend"
+        ]
+    },
+    {
+        "q": "Rearrange from name lookup to function call:",
+        "type": "rearrange",
+        "words": [
+            "Unqualified name",
+            "Ordinary lookup",
+            "ADL lookup",
+            "Overload resolution",
+            "Best match call"
+        ]
+    },
+    {
+        "q": "What is an aggregate?",
+        "type": "mcq",
+        "o": [
+            "A type with no user-declared constructors and special rules",
+            "A collection type",
+            "A sum type",
+            "A container"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nstruct Aggregate {\n    int x;\n    double y;\n};\n\nint main() {\n    Aggregate a{1, 2.5};\n    cout << a.x;\n    return 0;\n}",
+        "o": [
+            "1",
+            "Error",
+            "Aggregate",
+            "0"
+        ]
+    },
+    {
+        "q": "Aggregates support brace initialization without constructors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Aggregates cannot have private or protected non-static members.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ type has only public members and no constructors.",
+        "type": "fill_blank",
+        "answers": [
+            "aggregate"
+        ],
+        "other_options": [
+            "POD",
+            "trivial",
+            "standard"
+        ]
+    },
+    {
+        "q": "Match the C++20 aggregate changes:",
+        "type": "match",
+        "left": [
+            "Parenthesis init",
+            "Designated init",
+            "CTAD",
+            "base aggregate"
+        ],
+        "right": [
+            "() syntax allowed",
+            ".member = value",
+            "Template deduction",
+            "Inherit aggregate"
+        ]
+    },
+    {
+        "q": "What is std::bit_cast?",
+        "type": "mcq",
+        "o": [
+            "Reinterpret object bytes as different type",
+            "Bit operations",
+            "Binary conversion",
+            "Cast to bits"
+        ]
+    },
+    {
+        "q": "What is the purpose of std::construct_at?",
+        "type": "mcq",
+        "o": [
+            "Construct object at given memory location",
+            "Memory allocation",
+            "Object creation",
+            "Pointer arithmetic"
+        ]
+    },
+    {
+        "q": "std::bit_cast is constexpr-friendly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::destroy_at calls destructor at given location.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ function is the constexpr replacement for placement new.",
+        "type": "fill_blank",
+        "answers": [
+            "construct_at"
+        ],
+        "other_options": [
+            "bit_cast",
+            "launder",
+            "start_lifetime_as"
+        ]
+    },
+    {
+        "q": "What is C++20 constexpr dynamic allocation?",
+        "type": "mcq",
+        "o": [
+            "Using new/delete in constexpr if freed before evaluation ends",
+            "Runtime allocation in constexpr",
+            "Static allocation",
+            "Stack allocation"
+        ]
+    },
+    {
+        "q": "What is the purpose of constinit?",
+        "type": "mcq",
+        "o": [
+            "Ensure variable is initialized at compile time",
+            "Constant initialization",
+            "Init list",
+            "Static init"
+        ]
+    },
+    {
+        "q": "constexpr vector is possible in C++20.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "constinit prevents dynamic initialization order fiasco.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ specifier requires static initialization.",
+        "type": "fill_blank",
+        "answers": [
+            "constinit"
+        ],
+        "other_options": [
+            "constexpr",
+            "const",
+            "static"
+        ]
+    },
+    {
+        "q": "Rearrange from declaration to destruction:",
+        "type": "rearrange",
+        "words": [
+            "Declaration",
+            "Storage allocation",
+            "Construction",
+            "Usage",
+            "Destruction",
+            "Deallocation"
+        ]
+    },
+    {
+        "q": "What is a trivial type?",
+        "type": "mcq",
+        "o": [
+            "A type that can be trivially constructed, copied, and destroyed",
+            "A simple type",
+            "A small type",
+            "An empty type"
+        ]
+    },
+    {
+        "q": "What is std::is_trivially_destructible?",
+        "type": "mcq",
+        "o": [
+            "Type trait to check if destructor does nothing",
+            "Check for delete operator",
+            "Memory leak check",
+            "Destructor presence"
+        ]
+    },
+    {
+        "q": "Trivial types can be memcpy'd safely.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Trivially destructible objects need no destructor call.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ type trait checks for trivial copy assignment.",
+        "type": "fill_blank",
+        "answers": [
+            "is_trivially_copy_assignable"
+        ],
+        "other_options": [
+            "is_copy_assignable",
+            "is_trivially_copyable",
+            "has_trivial_copy"
+        ]
+    },
+    {
+        "q": "Match the object lifetime operations:",
+        "type": "match",
+        "left": [
+            "Construction",
+            "Copy",
+            "Move",
+            "Destruction"
+        ],
+        "right": [
+            "Initialize object",
+            "Duplicate state",
+            "Transfer ownership",
+            "Cleanup resources"
+        ]
+    },
+    {
+        "q": "What is a user-declared constructor?",
+        "type": "mcq",
+        "o": [
+            "A constructor written by the programmer",
+            "A default constructor",
+            "An implicit constructor",
+            "A deleted constructor"
+        ]
+    },
+    {
+        "q": "What is an implicitly-declared constructor?",
+        "type": "mcq",
+        "o": [
+            "A constructor automatically generated by the compiler",
+            "A hidden constructor",
+            "A private constructor",
+            "A virtual constructor"
+        ]
+    },
+    {
+        "q": "User-declared constructors suppress default constructor generation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "= default can restore implicitly-declared special members.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ keyword triggers compiler generation of special members.",
+        "type": "fill_blank",
+        "answers": [
+            "= default"
+        ],
+        "other_options": [
+            "= 0",
+            "= delete",
+            "= override"
+        ]
+    },
+    {
+        "q": "What is object representation?",
+        "type": "mcq",
+        "o": [
+            "The bytes occupied by an object in memory",
+            "Object display",
+            "String representation",
+            "Debug output"
+        ]
+    },
+    {
+        "q": "What is value representation?",
+        "type": "mcq",
+        "o": [
+            "The bits that contribute to the value of an object",
+            "Object display",
+            "Number format",
+            "Data encoding"
+        ]
+    },
+    {
+        "q": "Object representation may include padding bytes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Value representation excludes padding bits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ representation includes all bytes of an object.",
+        "type": "fill_blank",
+        "answers": [
+            "object"
+        ],
+        "other_options": [
+            "value",
+            "memory",
+            "binary"
+        ]
+    },
+    {
+        "q": "Rearrange from type definition to memory layout:",
+        "type": "rearrange",
+        "words": [
+            "Type declaration",
+            "Size calculation",
+            "Alignment",
+            "Member layout",
+            "Padding insertion"
+        ]
+    },
+    {
+        "q": "What is incomplete type?",
+        "type": "mcq",
+        "o": [
+            "A type that has been declared but not defined",
+            "A partial class",
+            "A template parameter",
+            "An abstract class"
+        ]
+    },
+    {
+        "q": "What can be done with an incomplete type?",
+        "type": "mcq",
+        "o": [
+            "Declare pointers and references to it",
+            "Create instances",
+            "Access members",
+            "Call methods"
+        ]
+    },
+    {
+        "q": "Forward declarations create incomplete types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "sizeof cannot be applied to incomplete types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ declaration creates an incomplete type.",
+        "type": "fill_blank",
+        "answers": [
+            "forward"
+        ],
+        "other_options": [
+            "extern",
+            "static",
+            "inline"
+        ]
+    },
+    {
+        "q": "What is a most derived object?",
+        "type": "mcq",
+        "o": [
+            "The complete object in a class hierarchy",
+            "The base class",
+            "A virtual class",
+            "A template class"
+        ]
+    },
+    {
+        "q": "What is a subobject?",
+        "type": "mcq",
+        "o": [
+            "A base class or member within a complete object",
+            "A derived class",
+            "A nested class",
+            "An inner class"
+        ]
+    },
+    {
+        "q": "Base classes are subobjects of derived classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Data members are subobjects of containing objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ object has no containing object.",
+        "type": "fill_blank",
+        "answers": [
+            "complete"
+        ],
+        "other_options": [
+            "base",
+            "derived",
+            "primary"
+        ]
+    },
+    {
+        "q": "Match the object terminology:",
+        "type": "match",
+        "left": [
+            "Complete object",
+            "Base subobject",
+            "Member subobject",
+            "Most derived"
+        ],
+        "right": [
+            "Not a subobject",
+            "Inherited part",
+            "Data member",
+            "Dynamic type"
+        ]
+    },
+    {
+        "q": "What is compile-time reflection (proposed)?",
+        "type": "mcq",
+        "o": [
+            "Inspecting types and their members at compile time",
+            "Runtime type info",
+            "Debug reflection",
+            "Mirror classes"
+        ]
+    },
+    {
+        "q": "What is static reflection used for?",
+        "type": "mcq",
+        "o": [
+            "Generating code based on type structure",
+            "Runtime introspection",
+            "Memory layout",
+            "Debug information"
+        ]
+    },
+    {
+        "q": "C++ currently lacks standard compile-time reflection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Reflection proposals aim for compile-time type introspection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ TS proposes compile-time reflection.",
+        "type": "fill_blank",
+        "answers": [
+            "Reflection"
+        ],
+        "other_options": [
+            "Concepts",
+            "Modules",
+            "Ranges"
+        ]
+    },
+    {
+        "q": "Rearrange C++ evolution for classes:",
+        "type": "rearrange",
+        "words": [
+            "C++98 classes",
+            "C++11 move semantics",
+            "C++14 generics",
+            "C++17 structured bindings",
+            "C++20 concepts"
+        ]
+    },
+    {
+        "q": "What is a nested namespace?",
+        "type": "mcq",
+        "o": [
+            "A namespace defined inside another namespace",
+            "A class namespace",
+            "A local namespace",
+            "A template namespace"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nnamespace Outer {\n    namespace Inner {\n        class Test {\n        public:\n            void show() { cout << \"Nested\"; }\n        };\n    }\n}\n\nint main() {\n    Outer::Inner::Test t;\n    t.show();\n    return 0;\n}",
+        "o": [
+            "Nested",
+            "Test",
+            "Error",
+            "Inner"
+        ]
+    },
+    {
+        "q": "C++17 allows inline namespace declarations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Nested namespaces can use A::B::C syntax in C++17.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ namespace brings members to enclosing scope.",
+        "type": "fill_blank",
+        "answers": [
+            "inline"
+        ],
+        "other_options": [
+            "nested",
+            "using",
+            "anonymous"
+        ]
+    },
+    {
+        "q": "What is an anonymous namespace?",
+        "type": "mcq",
+        "o": [
+            "A namespace with no name, providing internal linkage",
+            "A hidden namespace",
+            "A private namespace",
+            "A deleted namespace"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nnamespace {\n    int secret = 42;\n}\n\nint main() {\n    cout << secret;\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "0",
+            "secret"
+        ]
+    },
+    {
+        "q": "Anonymous namespaces provide internal linkage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Anonymous namespaces replace static for internal linkage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ linkage restricts visibility to translation unit.",
+        "type": "fill_blank",
+        "answers": [
+            "internal"
+        ],
+        "other_options": [
+            "external",
+            "static",
+            "private"
+        ]
+    },
+    {
+        "q": "Match the linkage types:",
+        "type": "match",
+        "left": [
+            "External",
+            "Internal",
+            "None",
+            "Module"
+        ],
+        "right": [
+            "Visible across TUs",
+            "Single TU only",
+            "Local scope",
+            "C++20 modules"
+        ]
+    },
+    {
+        "q": "What is extern \"C\"?",
+        "type": "mcq",
+        "o": [
+            "Linkage specification for C-compatible function names",
+            "External C file",
+            "C language mode",
+            "C compiler directive"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nextern \"C\" int add(int a, int b) {\n    return a + b;\n}\n\nint main() {\n    cout << add(3, 4);\n    return 0;\n}",
+        "o": [
+            "7",
+            "Error",
+            "add",
+            "34"
+        ]
+    },
+    {
+        "q": "extern \"C\" disables C++ name mangling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "extern \"C\" functions cannot be overloaded.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ specification provides C linkage.",
+        "type": "fill_blank",
+        "answers": [
+            "extern \"C\""
+        ],
+        "other_options": [
+            "extern",
+            "static",
+            "inline"
+        ]
+    },
+    {
+        "q": "What is an inline variable?",
+        "type": "mcq",
+        "o": [
+            "A variable that can be defined in headers without ODR violations",
+            "A constant variable",
+            "A static variable",
+            "A thread-local variable"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Config {\npublic:\n    inline static int value = 100;\n};\n\nint main() {\n    cout << Config::value;\n    return 0;\n}",
+        "o": [
+            "100",
+            "Error",
+            "0",
+            "Config"
+        ]
+    },
+    {
+        "q": "Inline static members can be initialized in class definition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Inline variables were introduced in C++17.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ keyword allows header-only static member definitions.",
+        "type": "fill_blank",
+        "answers": [
+            "inline"
+        ],
+        "other_options": [
+            "static",
+            "constexpr",
+            "const"
+        ]
+    },
+    {
+        "q": "Rearrange from basic to advanced static members:",
+        "type": "rearrange",
+        "words": [
+            "Static data member",
+            "Static member function",
+            "Inline static",
+            "constexpr static",
+            "thread_local static"
+        ]
+    },
+    {
+        "q": "What is offsetof?",
+        "type": "mcq",
+        "o": [
+            "A macro that returns byte offset of a member within a struct",
+            "A size calculation",
+            "A pointer arithmetic",
+            "An alignment check"
+        ]
+    },
+    {
+        "q": "What is sizeof for classes?",
+        "type": "mcq",
+        "o": [
+            "Returns the size in bytes of an object including padding",
+            "Returns member count",
+            "Returns vtable size",
+            "Returns inheritance depth"
+        ]
+    },
+    {
+        "q": "Empty classes have size of at least 1 byte.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "sizeof includes the vptr if present.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ macro calculates member offset in struct.",
+        "type": "fill_blank",
+        "answers": [
+            "offsetof"
+        ],
+        "other_options": [
+            "sizeof",
+            "alignof",
+            "countof"
+        ]
+    },
+    {
+        "q": "Match the type inspection operations:",
+        "type": "match",
+        "left": [
+            "sizeof",
+            "alignof",
+            "offsetof",
+            "typeid"
+        ],
+        "right": [
+            "Size in bytes",
+            "Alignment requirement",
+            "Member offset",
+            "Type information"
+        ]
+    },
+    {
+        "q": "What is std::aligned_storage?",
+        "type": "mcq",
+        "o": [
+            "A type providing aligned raw storage for objects",
+            "Memory alignment",
+            "Storage class",
+            "Buffer type"
+        ]
+    },
+    {
+        "q": "What is std::aligned_union?",
+        "type": "mcq",
+        "o": [
+            "Aligned storage for any of several types",
+            "Union alignment",
+            "Type union",
+            "Memory pool"
+        ]
+    },
+    {
+        "q": "std::aligned_storage is deprecated in C++23.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "alignas specifier can increase but not decrease alignment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ trait provides storage for placement new.",
+        "type": "fill_blank",
+        "answers": [
+            "aligned_storage"
+        ],
+        "other_options": [
+            "aligned_union",
+            "raw_storage",
+            "buffer_storage"
+        ]
+    },
+    {
+        "q": "What is std::has_unique_object_representations?",
+        "type": "mcq",
+        "o": [
+            "Type trait to check if all bits contribute to value",
+            "Unique pointer check",
+            "Object comparison",
+            "Hash compatibility"
+        ]
+    },
+    {
+        "q": "What is std::is_layout_compatible?",
+        "type": "mcq",
+        "o": [
+            "C++20 trait to check if types have compatible memory layout",
+            "Layout check",
+            "Memory comparison",
+            "Struct compatibility"
+        ]
+    },
+    {
+        "q": "Layout-compatible types can be interconverted.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::is_layout_compatible requires C++20.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ trait checks memory layout equivalence.",
+        "type": "fill_blank",
+        "answers": [
+            "is_layout_compatible"
+        ],
+        "other_options": [
+            "is_same",
+            "is_convertible",
+            "is_base_of"
+        ]
+    },
+    {
+        "q": "What is object aliasing?",
+        "type": "mcq",
+        "o": [
+            "Multiple references or pointers to the same object",
+            "Object copying",
+            "Object renaming",
+            "Object duplication"
+        ]
+    },
+    {
+        "q": "What is strict aliasing rule?",
+        "type": "mcq",
+        "o": [
+            "Restricting type punning via incompatible pointer types",
+            "Name aliasing",
+            "Reference aliasing",
+            "Pointer aliasing"
+        ]
+    },
+    {
+        "q": "Violating strict aliasing is undefined behavior.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "char* can alias any type.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ rule affects type-punning through pointers.",
+        "type": "fill_blank",
+        "answers": [
+            "strict aliasing"
+        ],
+        "other_options": [
+            "aliasing",
+            "pointer",
+            "type punning"
+        ]
+    },
+    {
+        "q": "Match the C++20 class improvements:",
+        "type": "match",
+        "left": [
+            "Concepts",
+            "Coroutines",
+            "Modules",
+            "Ranges"
+        ],
+        "right": [
+            "Type constraints",
+            "Suspendable functions",
+            "Better compilation",
+            "Composable algorithms"
+        ]
+    },
+    {
+        "q": "What is a requires clause?",
+        "type": "mcq",
+        "o": [
+            "A constraint on template parameters using concepts",
+            "A requirement list",
+            "A dependency clause",
+            "An import statement"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <concepts>\nusing namespace std;\n\ntemplate<integral T>\nclass Counter {\n    T value;\npublic:\n    Counter(T v) : value(v) {}\n    T get() { return value; }\n};\n\nint main() {\n    Counter c(42);\n    cout << c.get();\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "Counter",
+            "0"
+        ]
+    },
+    {
+        "q": "Concepts can constrain template class parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "requires expressions can appear in class templates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ keyword introduces template constraints.",
+        "type": "fill_blank",
+        "answers": [
+            "requires"
+        ],
+        "other_options": [
+            "concept",
+            "constrain",
+            "check"
+        ]
+    },
+    {
+        "q": "What is a module interface unit?",
+        "type": "mcq",
+        "o": [
+            "A file that exports module declarations and definitions",
+            "Interface class",
+            "Header file",
+            "Implementation file"
+        ]
+    },
+    {
+        "q": "What is an export declaration?",
+        "type": "mcq",
+        "o": [
+            "Makes entity visible to module importers",
+            "Exports to file",
+            "Sends data",
+            "Shares namespace"
+        ]
+    },
+    {
+        "q": "Modules can export classes and their members.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Module interfaces replace header files.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ keyword makes declarations available to importers.",
+        "type": "fill_blank",
+        "answers": [
+            "export"
+        ],
+        "other_options": [
+            "import",
+            "module",
+            "public"
+        ]
+    },
+    {
+        "q": "Rearrange from traditional to modern C++ class organization:",
+        "type": "rearrange",
+        "words": [
+            "Header guards",
+            "Pragma once",
+            "Forward declarations",
+            "Modules import",
+            "Module export"
+        ]
+    },
+    {
+        "q": "What is std::source_location?",
+        "type": "mcq",
+        "o": [
+            "C++20 type providing source code location information",
+            "File location",
+            "Memory location",
+            "Code position"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <source_location>\nusing namespace std;\n\nvoid log(source_location loc = source_location::current()) {\n    cout << loc.line();\n}\n\nint main() {\n    log();\n    return 0;\n}",
+        "o": [
+            "Line number (e.g., 9)",
+            "log",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "source_location replaces __LINE__ and __FILE__ macros.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "source_location is evaluated at call site.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ function returns current source location.",
+        "type": "fill_blank",
+        "answers": [
+            "current"
+        ],
+        "other_options": [
+            "now",
+            "here",
+            "get"
+        ]
+    },
+    {
+        "q": "Match the debugging utilities:",
+        "type": "match",
+        "left": [
+            "source_location",
+            "stacktrace",
+            "assert",
+            "static_assert"
+        ],
+        "right": [
+            "File/line info",
+            "Call stack",
+            "Runtime check",
+            "Compile-time check"
+        ]
+    },
+    {
+        "q": "What is std::stacktrace?",
+        "type": "mcq",
+        "o": [
+            "C++23 type providing call stack information",
+            "Stack memory",
+            "Stack container",
+            "Exception trace"
+        ]
+    },
+    {
+        "q": "What is a constrained auto?",
+        "type": "mcq",
+        "o": [
+            "auto with a concept constraint",
+            "Limited automatic",
+            "Restricted variable",
+            "Bounded type"
+        ]
+    },
+    {
+        "q": "Constrained auto enforces type requirements on deduction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::stacktrace was added in C++23.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ feature provides runtime call stack info.",
+        "type": "fill_blank",
+        "answers": [
+            "stacktrace"
+        ],
+        "other_options": [
+            "source_location",
+            "backtrace",
+            "callstack"
+        ]
+    },
+    {
+        "q": "What is aggregate CTAD?",
+        "type": "mcq",
+        "o": [
+            "Template argument deduction for aggregate types",
+            "Aggregate construction",
+            "Template aggregation",
+            "CTAD copying"
+        ]
+    },
+    {
+        "q": "What is parenthesized aggregate initialization?",
+        "type": "mcq",
+        "o": [
+            "C++20 feature allowing () syntax for aggregate init",
+            "Function call syntax",
+            "Constructor call",
+            "Macro expansion"
+        ]
+    },
+    {
+        "q": "Parenthesized init works with aggregates in C++20.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Aggregate CTAD requires C++20.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ initialization uses parentheses for aggregates.",
+        "type": "fill_blank",
+        "answers": [
+            "parenthesized"
+        ],
+        "other_options": [
+            "brace",
+            "list",
+            "direct"
+        ]
+    },
+    {
+        "q": "Rearrange class features by C++ version:",
+        "type": "rearrange",
+        "words": [
+            "virtual functions (C++98)",
+            "rvalue references (C++11)",
+            "auto lambdas (C++14)",
+            "inline variables (C++17)",
+            "concepts (C++20)"
+        ]
+    },
+    {
+        "q": "What is std::is_constant_evaluated?",
+        "type": "mcq",
+        "o": [
+            "Checks if code is being evaluated at compile time",
+            "Checks for constants",
+            "Evaluates expressions",
+            "Validates constexpr"
+        ]
+    },
+    {
+        "q": "std::is_constant_evaluated was added in C++20.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ function detects constexpr evaluation context.",
+        "type": "fill_blank",
+        "answers": [
+            "is_constant_evaluated"
+        ],
+        "other_options": [
+            "constexpr",
+            "consteval",
+            "is_constexpr"
+        ]
+    },
+    {
+        "q": "What is a coroutine class?",
+        "type": "mcq",
+        "o": [
+            "A class with promise_type that enables coroutine behavior",
+            "A concurrent class",
+            "A parallel class",
+            "A threaded class"
+        ]
+    },
+    {
+        "q": "Coroutines use co_await, co_yield, and co_return keywords.",
+        "type": "true_false",
+        "correct": "True"
+    }
+]

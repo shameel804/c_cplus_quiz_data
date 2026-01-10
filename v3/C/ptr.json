@@ -1,0 +1,6647 @@
+[
+    {
+        "q": "What is a pointer in C?",
+        "type": "mcq",
+        "o": [
+            "A variable that stores memory address",
+            "A variable that stores integers",
+            "A function type",
+            "A data structure"
+        ]
+    },
+    {
+        "q": "The address-of operator in C is ______.",
+        "type": "fill_blank",
+        "answers": [
+            "&"
+        ],
+        "other_options": [
+            "*",
+            "->",
+            "."
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 10;\nint *p = &x;\nprintf(\"%d\", *p);",
+        "o": [
+            "10",
+            "Address of x",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "The dereference operator * retrieves the value at an address.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5;\nint *p = &x;\n*p = 20;\nprintf(\"%d\", x);",
+        "o": [
+            "20",
+            "5",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the pointer operation with its symbol:",
+        "type": "match",
+        "left": [
+            "Address-of",
+            "Dereference",
+            "Arrow",
+            "Dot"
+        ],
+        "right": [
+            "&",
+            "*",
+            "->",
+            "."
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *p;\nprintf(\"%d\", sizeof(p));",
+        "o": [
+            "8",
+            "4",
+            "2",
+            "1"
+        ]
+    },
+    {
+        "q": "Pointer size depends on the ______ architecture.",
+        "type": "fill_blank",
+        "answers": [
+            "system"
+        ],
+        "other_options": [
+            "data",
+            "variable",
+            "compiler"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 100;\nint *p = &x;\nprintf(\"%p\", (void*)p);",
+        "o": [
+            "Memory address of x",
+            "100",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "NULL pointer points to memory address 0.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Rearrange pointer declaration steps:",
+        "type": "rearrange",
+        "words": [
+            "data type",
+            "asterisk",
+            "pointer name",
+            "initialization"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *p = NULL;\nif (p == NULL)\n    printf(\"NULL\");\nelse\n    printf(\"Not NULL\");",
+        "o": [
+            "NULL",
+            "Not NULL",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "NULL is typically defined as ______ or (void*)0.",
+        "type": "fill_blank",
+        "answers": [
+            "0"
+        ],
+        "other_options": [
+            "1",
+            "-1",
+            "false"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {10, 20, 30};\nint *p = arr;\nprintf(\"%d\", *p);",
+        "o": [
+            "10",
+            "20",
+            "30",
+            "Error"
+        ]
+    },
+    {
+        "q": "Array name acts as a constant pointer to first element.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {10, 20, 30};\nint *p = arr;\nprintf(\"%d\", *(p + 1));",
+        "o": [
+            "20",
+            "10",
+            "30",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the pointer notation with array notation:",
+        "type": "match",
+        "left": [
+            "*p",
+            "*(p+1)",
+            "*(p+n)",
+            "p"
+        ],
+        "right": [
+            "arr[0]",
+            "arr[1]",
+            "arr[n]",
+            "&arr[0]"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[5] = {1, 2, 3, 4, 5};\nint *p = arr;\np++;\nprintf(\"%d\", *p);",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer arithmetic adds/subtracts in units of element ______.",
+        "type": "fill_blank",
+        "answers": [
+            "size"
+        ],
+        "other_options": [
+            "value",
+            "index",
+            "count"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[5] = {1, 2, 3, 4, 5};\nint *p = arr + 3;\nprintf(\"%d\", *p);",
+        "o": [
+            "4",
+            "3",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Incrementing a pointer moves it to the next element.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[5] = {1, 2, 3, 4, 5};\nint *p1 = arr;\nint *p2 = arr + 3;\nprintf(\"%ld\", p2 - p1);",
+        "o": [
+            "3",
+            "12",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange pointer subtraction result:",
+        "type": "rearrange",
+        "words": [
+            "difference in addresses",
+            "divide by element size",
+            "gives number of elements",
+            "between pointers"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *str = \"Hello\";\nprintf(\"%c\", *str);",
+        "o": [
+            "H",
+            "e",
+            "o",
+            "Error"
+        ]
+    },
+    {
+        "q": "String literals are stored as constant character ______.",
+        "type": "fill_blank",
+        "answers": [
+            "arrays"
+        ],
+        "other_options": [
+            "pointers",
+            "values",
+            "strings"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *str = \"Hello\";\nprintf(\"%c\", *(str + 4));",
+        "o": [
+            "o",
+            "l",
+            "H",
+            "Error"
+        ]
+    },
+    {
+        "q": "Modifying string literal through pointer is undefined behavior.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char str[] = \"Hello\";\nchar *p = str;\nwhile (*p) {\n    printf(\"%c\", *p);\n    p++;\n}",
+        "o": [
+            "Hello",
+            "H",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Match the string pointer operation with its meaning:",
+        "type": "match",
+        "left": [
+            "*p",
+            "p++",
+            "*p++",
+            "(*p)++"
+        ],
+        "right": [
+            "Current char",
+            "Next position",
+            "Get and move",
+            "Increment char"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5;\nvoid swap(int *a, int *b) {\n    int t = *a; *a = *b; *b = t;\n}\nint y = 10;\nswap(&x, &y);\nprintf(\"%d %d\", x, y);",
+        "o": [
+            "10 5",
+            "5 10",
+            "5 5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pass by pointer allows modifying original ______.",
+        "type": "fill_blank",
+        "answers": [
+            "variable"
+        ],
+        "other_options": [
+            "copy",
+            "value",
+            "address"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "void increment(int *p) {\n    (*p)++;\n}\nint x = 5;\nincrement(&x);\nprintf(\"%d\", x);",
+        "o": [
+            "6",
+            "5",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Passing array to function passes pointer to first element.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "void modify(int arr[], int n) {\n    for (int i = 0; i < n; i++)\n        arr[i] *= 2;\n}\nint arr[3] = {1, 2, 3};\nmodify(arr, 3);\nprintf(\"%d %d %d\", arr[0], arr[1], arr[2]);",
+        "o": [
+            "2 4 6",
+            "1 2 3",
+            "4 8 12",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange pass by pointer steps:",
+        "type": "rearrange",
+        "words": [
+            "pass address",
+            "receive in pointer",
+            "dereference to access",
+            "modify original"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int* getPointer() {\n    static int x = 100;\n    return &x;\n}\nint *p = getPointer();\nprintf(\"%d\", *p);",
+        "o": [
+            "100",
+            "0",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "Returning pointer to local variable causes ______ behavior.",
+        "type": "fill_blank",
+        "answers": [
+            "undefined"
+        ],
+        "other_options": [
+            "normal",
+            "safe",
+            "expected"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int **pp;\nint *p;\nint x = 10;\np = &x;\npp = &p;\nprintf(\"%d\", **pp);",
+        "o": [
+            "10",
+            "Address",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Double pointer stores address of another pointer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5, y = 10;\nint *p = &x;\nint **pp = &p;\n*pp = &y;\nprintf(\"%d\", *p);",
+        "o": [
+            "10",
+            "5",
+            "15",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the pointer level with its declaration:",
+        "type": "match",
+        "left": [
+            "Single",
+            "Double",
+            "Triple",
+            "Array of pointers"
+        ],
+        "right": [
+            "int *p",
+            "int **pp",
+            "int ***ppp",
+            "int *arr[]"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[2][3] = {{1,2,3}, {4,5,6}};\nint (*p)[3] = arr;\nprintf(\"%d\", p[1][2]);",
+        "o": [
+            "6",
+            "5",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer to array of n elements has type (*p)[______].",
+        "type": "fill_blank",
+        "answers": [
+            "n"
+        ],
+        "other_options": [
+            "1",
+            "0",
+            "size"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[2][3] = {{1,2,3}, {4,5,6}};\nprintf(\"%d\", *(*arr + 1));",
+        "o": [
+            "2",
+            "1",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "2D array name is pointer to first row (1D array).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[2][3] = {{1,2,3}, {4,5,6}};\nint *p = arr[0];\nprintf(\"%d\", *(p + 4));",
+        "o": [
+            "5",
+            "4",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange 2D array pointer access:",
+        "type": "rearrange",
+        "words": [
+            "base address",
+            "add row offset",
+            "add column offset",
+            "dereference"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "void (*fptr)(int);\nvoid print(int x) { printf(\"%d\", x); }\nfptr = print;\nfptr(42);",
+        "o": [
+            "42",
+            "0",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Function pointer stores address of a ______.",
+        "type": "fill_blank",
+        "answers": [
+            "function"
+        ],
+        "other_options": [
+            "variable",
+            "array",
+            "structure"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int add(int a, int b) { return a + b; }\nint (*fp)(int, int) = add;\nprintf(\"%d\", fp(3, 4));",
+        "o": [
+            "7",
+            "3",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Function pointers enable callback mechanisms.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int square(int x) { return x * x; }\nint cube(int x) { return x * x * x; }\nint (*ops[2])(int) = {square, cube};\nprintf(\"%d %d\", ops[0](3), ops[1](2));",
+        "o": [
+            "9 8",
+            "3 2",
+            "6 6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the function pointer use with its application:",
+        "type": "match",
+        "left": [
+            "Callback",
+            "Strategy pattern",
+            "Event handling",
+            "Plugin system"
+        ],
+        "right": [
+            "qsort",
+            "Different algorithms",
+            "GUI clicks",
+            "Loadable modules"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "const int *p;\nint x = 10;\np = &x;\nx = 20;\nprintf(\"%d\", *p);",
+        "o": [
+            "20",
+            "10",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "const int *p means value cannot be modified through ______.",
+        "type": "fill_blank",
+        "answers": [
+            "p"
+        ],
+        "other_options": [
+            "variable",
+            "address",
+            "memory"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 10;\nint * const p = &x;\n*p = 20;\nprintf(\"%d\", *p);",
+        "o": [
+            "20",
+            "10",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "int * const p means pointer address cannot change.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "const int * const p = NULL;\nprintf(\"%d\", p == NULL);",
+        "o": [
+            "1",
+            "0",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "Rearrange const pointer types:",
+        "type": "rearrange",
+        "words": [
+            "pointer to const",
+            "const pointer",
+            "const pointer to const",
+            "no const"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "void *vp;\nint x = 10;\nvp = &x;\nprintf(\"%d\", *(int*)vp);",
+        "o": [
+            "10",
+            "0",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "void pointer can point to any data ______.",
+        "type": "fill_blank",
+        "answers": [
+            "type"
+        ],
+        "other_options": [
+            "size",
+            "value",
+            "address"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "void *vp;\nint x = 10;\nvp = &x;\nvp++;",
+        "o": [
+            "Error",
+            "Works",
+            "Undefined",
+            "Increments by 1"
+        ]
+    },
+    {
+        "q": "Void pointer cannot be dereferenced without casting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "void printVal(void *p, char type) {\n    if (type == 'i') printf(\"%d\", *(int*)p);\n    else if (type == 'f') printf(\"%.1f\", *(float*)p);\n}\nint x = 5;\nprintVal(&x, 'i');",
+        "o": [
+            "5",
+            "5.0",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "Match the void pointer use with its purpose:",
+        "type": "match",
+        "left": [
+            "Generic functions",
+            "malloc return",
+            "qsort compare",
+            "Thread argument"
+        ],
+        "right": [
+            "Type-agnostic",
+            "Untyped memory",
+            "Generic comparison",
+            "Any data passing"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[5] = {1, 2, 3, 4, 5};\nint *p = arr;\nprintf(\"%d\", p[2]);",
+        "o": [
+            "3",
+            "2",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Array subscript operator [] works on ______.",
+        "type": "fill_blank",
+        "answers": [
+            "pointers"
+        ],
+        "other_options": [
+            "integers",
+            "arrays only",
+            "functions"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[5] = {1, 2, 3, 4, 5};\nprintf(\"%d\", 2[arr]);",
+        "o": [
+            "3",
+            "2",
+            "Error",
+            "1"
+        ]
+    },
+    {
+        "q": "a[i] is equivalent to *(a + i) and i[a].",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *strs[] = {\"one\", \"two\", \"three\"};\nprintf(\"%s\", strs[1]);",
+        "o": [
+            "two",
+            "one",
+            "three",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange array of pointers declaration:",
+        "type": "rearrange",
+        "words": [
+            "data type",
+            "asterisk",
+            "array name",
+            "brackets and size"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *strs[] = {\"cat\", \"dog\", \"bat\"};\nprintf(\"%c\", strs[0][1]);",
+        "o": [
+            "a",
+            "c",
+            "t",
+            "Error"
+        ]
+    },
+    {
+        "q": "Array of strings is array of char ______.",
+        "type": "fill_blank",
+        "answers": [
+            "pointers"
+        ],
+        "other_options": [
+            "arrays",
+            "values",
+            "literals"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *p = (int*)malloc(sizeof(int));\nif (p != NULL) {\n    *p = 100;\n    printf(\"%d\", *p);\n    free(p);\n}",
+        "o": [
+            "100",
+            "0",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "malloc returns pointer to allocated memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *arr = (int*)malloc(3 * sizeof(int));\narr[0] = 1; arr[1] = 2; arr[2] = 3;\nprintf(\"%d\", arr[1]);\nfree(arr);",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the memory function with its purpose:",
+        "type": "match",
+        "left": [
+            "malloc",
+            "calloc",
+            "realloc",
+            "free"
+        ],
+        "right": [
+            "Allocate uninitialized",
+            "Allocate zeroed",
+            "Resize allocation",
+            "Release memory"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *p = (int*)calloc(3, sizeof(int));\nprintf(\"%d %d %d\", p[0], p[1], p[2]);\nfree(p);",
+        "o": [
+            "0 0 0",
+            "Garbage",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "calloc initializes allocated memory to ______.",
+        "type": "fill_blank",
+        "answers": [
+            "zero"
+        ],
+        "other_options": [
+            "garbage",
+            "null",
+            "one"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *p = (int*)malloc(2 * sizeof(int));\np[0] = 1; p[1] = 2;\np = (int*)realloc(p, 4 * sizeof(int));\np[2] = 3; p[3] = 4;\nprintf(\"%d %d\", p[0], p[3]);\nfree(p);",
+        "o": [
+            "1 4",
+            "1 2",
+            "3 4",
+            "Error"
+        ]
+    },
+    {
+        "q": "realloc preserves existing data when resizing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *p = (int*)malloc(sizeof(int));\n*p = 50;\nfree(p);\nprintf(\"freed\");",
+        "o": [
+            "freed",
+            "50",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "Rearrange dynamic memory steps:",
+        "type": "rearrange",
+        "words": [
+            "allocate memory",
+            "check for NULL",
+            "use memory",
+            "free memory"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 10, y = 20;\nint *p = (x > y) ? &x : &y;\nprintf(\"%d\", *p);",
+        "o": [
+            "20",
+            "10",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointers can be used with ternary ______.",
+        "type": "fill_blank",
+        "answers": [
+            "operator"
+        ],
+        "other_options": [
+            "function",
+            "array",
+            "loop"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {5, 10, 15};\nint *p = arr;\nint *q = arr + 2;\nprintf(\"%d\", q > p);",
+        "o": [
+            "1",
+            "0",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointers can be compared using relational operators.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[5] = {1, 2, 3, 4, 5};\nint *start = arr;\nint *end = arr + 5;\nint count = 0;\nwhile (start < end) { count++; start++; }\nprintf(\"%d\", count);",
+        "o": [
+            "5",
+            "4",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the pointer comparison with its use:",
+        "type": "match",
+        "left": [
+            "p == q",
+            "p < q",
+            "p > q",
+            "p != q"
+        ],
+        "right": [
+            "Same address",
+            "p before q",
+            "p after q",
+            "Different addresses"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[5] = {10, 20, 30, 40, 50};\nint *p = arr + 2;\nprintf(\"%d %d\", *(p-1), *(p+1));",
+        "o": [
+            "20 40",
+            "30 30",
+            "10 50",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer arithmetic allows both addition and ______.",
+        "type": "fill_blank",
+        "answers": [
+            "subtraction"
+        ],
+        "other_options": [
+            "multiplication",
+            "division",
+            "modulo"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char str[] = \"world\";\nchar *p = str + strlen(str) - 1;\nwhile (p >= str) {\n    printf(\"%c\", *p);\n    p--;\n}",
+        "o": [
+            "dlrow",
+            "world",
+            "w",
+            "Error"
+        ]
+    },
+    {
+        "q": "Decrementing pointer moves backwards in memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[5] = {10, 20, 30, 40, 50};\nint *p = &arr[4];\nwhile (p >= arr) {\n    printf(\"%d \", *p);\n    p--;\n}",
+        "o": [
+            "50 40 30 20 10",
+            "10 20 30 40 50",
+            "50",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer traversal can go both forward and ______.",
+        "type": "fill_blank",
+        "answers": [
+            "backward"
+        ],
+        "other_options": [
+            "left",
+            "right",
+            "sideways"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 10, b = 20, c = 30;\nint *arr[3] = {&a, &b, &c};\nprintf(\"%d\", *arr[1]);",
+        "o": [
+            "20",
+            "10",
+            "30",
+            "Error"
+        ]
+    },
+    {
+        "q": "Array of pointers stores addresses of multiple variables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 5, b = 10;\nint *arr[2] = {&a, &b};\n*arr[0] = 100;\nprintf(\"%d\", a);",
+        "o": [
+            "100",
+            "5",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange pointer to pointer usage:",
+        "type": "rearrange",
+        "words": [
+            "declare double pointer",
+            "point to single pointer",
+            "dereference twice",
+            "get original value"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 42;\nint *p = &x;\nint **pp = &p;\nint ***ppp = &pp;\nprintf(\"%d\", ***ppp);",
+        "o": [
+            "42",
+            "Address",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Triple pointer needs ______ dereferences to get value.",
+        "type": "fill_blank",
+        "answers": [
+            "three"
+        ],
+        "other_options": [
+            "two",
+            "one",
+            "four"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "void allocate(int **p) {\n    *p = (int*)malloc(sizeof(int));\n    **p = 999;\n}\nint *ptr = NULL;\nallocate(&ptr);\nprintf(\"%d\", *ptr);\nfree(ptr);",
+        "o": [
+            "999",
+            "0",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "Double pointer in function allows modifying caller's pointer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *s1 = \"Hello\";\nchar s2[] = \"Hello\";\nprintf(\"%d %d\", sizeof(s1), sizeof(s2));",
+        "o": [
+            "8 6",
+            "5 5",
+            "6 6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match string storage with its property:",
+        "type": "match",
+        "left": [
+            "char *s",
+            "char s[]",
+            "const char *s",
+            "char s[10]"
+        ],
+        "right": [
+            "Pointer to literal",
+            "Array copy",
+            "Read-only",
+            "Fixed size array"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char s[] = \"Hello\";\nchar *p = s;\n*p = 'J';\nprintf(\"%s\", s);",
+        "o": [
+            "Jello",
+            "Hello",
+            "Error",
+            "J"
+        ]
+    },
+    {
+        "q": "Array strings can be modified, literal strings ______.",
+        "type": "fill_blank",
+        "answers": [
+            "cannot"
+        ],
+        "other_options": [
+            "can",
+            "must",
+            "should"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 10;\nconst int *p = &x;\nint *q = (int*)p;\n*q = 20;\nprintf(\"%d\", x);",
+        "o": [
+            "20",
+            "10",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "Casting away const allows modification but is dangerous.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {1, 2, 3};\nint *p = arr;\nint sum = *p + *(p+1) + *(p+2);\nprintf(\"%d\", sum);",
+        "o": [
+            "6",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange pointer-based sum calculation:",
+        "type": "rearrange",
+        "words": [
+            "point to array",
+            "dereference each",
+            "add values",
+            "print result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[4] = {10, 20, 30, 40};\nint *p = arr;\nint *q = arr + 3;\nint count = 0;\nwhile (p <= q) { count++; p++; }\nprintf(\"%d\", count);",
+        "o": [
+            "4",
+            "3",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer comparison valid when pointing to same ______.",
+        "type": "fill_blank",
+        "answers": [
+            "array"
+        ],
+        "other_options": [
+            "type",
+            "value",
+            "function"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int matrix[2][3] = {{1,2,3}, {4,5,6}};\nint (*p)[3] = matrix;\nprintf(\"%d\", (*p)[2]);",
+        "o": [
+            "3",
+            "2",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer to array works for 2D array row access.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int matrix[2][3] = {{1,2,3}, {4,5,6}};\nint (*p)[3] = matrix;\np++;\nprintf(\"%d\", (*p)[0]);",
+        "o": [
+            "4",
+            "1",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match 2D array access with pointer notation:",
+        "type": "match",
+        "left": [
+            "matrix[i][j]",
+            "*(matrix[i]+j)",
+            "*(*(matrix+i)+j)",
+            "&matrix[0][0]"
+        ],
+        "right": [
+            "Standard",
+            "Row pointer",
+            "Double dereference",
+            "Base address"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "typedef int* IntPtr;\nIntPtr p;\nint x = 50;\np = &x;\nprintf(\"%d\", *p);",
+        "o": [
+            "50",
+            "0",
+            "Error",
+            "Address"
+        ]
+    },
+    {
+        "q": "typedef creates alias for pointer ______.",
+        "type": "fill_blank",
+        "answers": [
+            "type"
+        ],
+        "other_options": [
+            "value",
+            "name",
+            "address"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "typedef void (*FuncPtr)(int);\nvoid greet(int x) { printf(\"%d\", x); }\nFuncPtr fp = greet;\nfp(42);",
+        "o": [
+            "42",
+            "0",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Function pointer typedef simplifies complex declarations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int (*fp)(int, int);\nint add(int a, int b) { return a + b; }\nint sub(int a, int b) { return a - b; }\nfp = add;\nint r1 = fp(5, 3);\nfp = sub;\nint r2 = fp(5, 3);\nprintf(\"%d %d\", r1, r2);",
+        "o": [
+            "8 2",
+            "2 8",
+            "5 3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange function pointer callback:",
+        "type": "rearrange",
+        "words": [
+            "define function",
+            "declare pointer",
+            "assign address",
+            "call through pointer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {5, 10, 15};\nint *p = arr;\nint val = *p++;\nprintf(\"%d %d\", val, *p);",
+        "o": [
+            "5 10",
+            "10 10",
+            "5 5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Post-increment *p++ gets value then advances ______.",
+        "type": "fill_blank",
+        "answers": [
+            "pointer"
+        ],
+        "other_options": [
+            "value",
+            "index",
+            "address"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {5, 10, 15};\nint *p = arr;\nint val = *++p;\nprintf(\"%d\", val);",
+        "o": [
+            "10",
+            "5",
+            "15",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pre-increment *++p advances pointer first then dereferences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {5, 10, 15};\nint *p = arr;\n(*p)++;\nprintf(\"%d\", arr[0]);",
+        "o": [
+            "6",
+            "5",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the expression with its result:",
+        "type": "match",
+        "left": [
+            "*p++",
+            "*++p",
+            "++*p",
+            "(*p)++"
+        ],
+        "right": [
+            "Get then advance",
+            "Advance then get",
+            "Increment value",
+            "Get then increment"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *p = NULL;\nif (!p) printf(\"NULL\");\nelse printf(\"Not NULL\");",
+        "o": [
+            "NULL",
+            "Not NULL",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "NULL pointer evaluates to ______ in boolean context.",
+        "type": "fill_blank",
+        "answers": [
+            "false"
+        ],
+        "other_options": [
+            "true",
+            "null",
+            "zero"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *p = (int*)malloc(0);\nif (p == NULL) printf(\"NULL\");\nelse printf(\"Not NULL\");\nfree(p);",
+        "o": [
+            "Not NULL",
+            "NULL",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "malloc(0) may return NULL or valid pointer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 10;\nint *p = &x;\nint *q = p;\n*q = 20;\nprintf(\"%d\", *p);",
+        "o": [
+            "20",
+            "10",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange pointer aliasing:",
+        "type": "rearrange",
+        "words": [
+            "create first pointer",
+            "copy to second",
+            "modify through either",
+            "both see change"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[5] = {1, 2, 3, 4, 5};\nint *p = arr;\nint *q = arr;\np += 2;\nprintf(\"%ld\", p - q);",
+        "o": [
+            "2",
+            "8",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer difference gives count of ______.",
+        "type": "fill_blank",
+        "answers": [
+            "elements"
+        ],
+        "other_options": [
+            "bytes",
+            "bits",
+            "addresses"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "struct Point { int x, y; };\nstruct Point p = {10, 20};\nstruct Point *ptr = &p;\nprintf(\"%d %d\", ptr->x, ptr->y);",
+        "o": [
+            "10 20",
+            "20 10",
+            "0 0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Arrow operator -> accesses member through pointer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "struct Point { int x, y; };\nstruct Point p = {5, 10};\nstruct Point *ptr = &p;\nptr->x = 100;\nprintf(\"%d\", p.x);",
+        "o": [
+            "100",
+            "5",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match structure access with its syntax:",
+        "type": "match",
+        "left": [
+            "Direct",
+            "Pointer",
+            "Nested direct",
+            "Nested pointer"
+        ],
+        "right": [
+            "obj.member",
+            "ptr->member",
+            "obj.inner.member",
+            "ptr->inner.member"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "struct Node { int data; struct Node *next; };\nstruct Node n1 = {10, NULL};\nstruct Node n2 = {20, &n1};\nprintf(\"%d\", n2.next->data);",
+        "o": [
+            "10",
+            "20",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Self-referential structure contains pointer to ______.",
+        "type": "fill_blank",
+        "answers": [
+            "itself"
+        ],
+        "other_options": [
+            "other",
+            "parent",
+            "child"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *p = (int*)malloc(5 * sizeof(int));\nfor (int i = 0; i < 5; i++) p[i] = i * 10;\nprintf(\"%d\", *(p + 3));\nfree(p);",
+        "o": [
+            "30",
+            "3",
+            "40",
+            "Error"
+        ]
+    },
+    {
+        "q": "Dynamically allocated arrays use pointer notation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int **matrix = (int**)malloc(2 * sizeof(int*));\nfor (int i = 0; i < 2; i++)\n    matrix[i] = (int*)malloc(3 * sizeof(int));\nmatrix[1][2] = 99;\nprintf(\"%d\", matrix[1][2]);\nfor (int i = 0; i < 2; i++) free(matrix[i]);\nfree(matrix);",
+        "o": [
+            "99",
+            "0",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "Rearrange 2D dynamic allocation:",
+        "type": "rearrange",
+        "words": [
+            "allocate row pointers",
+            "allocate each row",
+            "use matrix",
+            "free rows then base"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *str = (char*)malloc(10);\nstrcpy(str, \"Hello\");\nprintf(\"%s\", str);\nfree(str);",
+        "o": [
+            "Hello",
+            "H",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "String functions work on ______ allocated strings.",
+        "type": "fill_blank",
+        "answers": [
+            "dynamically"
+        ],
+        "other_options": [
+            "statically",
+            "globally",
+            "locally"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[4] = {1, 2, 3, 4};\nint (*p)[4] = &arr;\nprintf(\"%d\", (*p)[2]);",
+        "o": [
+            "3",
+            "2",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer to entire array differs from pointer to first element.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[4] = {1, 2, 3, 4};\nint *p = arr;\nint (*q)[4] = &arr;\nprintf(\"%lu %lu\", sizeof(*p), sizeof(*q));",
+        "o": [
+            "4 16",
+            "4 4",
+            "16 16",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match pointer type with sizeof result:",
+        "type": "match",
+        "left": [
+            "int *p = arr",
+            "int (*q)[n]",
+            "int **pp",
+            "void *vp"
+        ],
+        "right": [
+            "sizeof(int)",
+            "n * sizeof(int)",
+            "sizeof(int*)",
+            "Implementation defined"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 100;\nvoid *vp = &x;\nint *ip = (int*)vp;\nprintf(\"%d\", *ip);",
+        "o": [
+            "100",
+            "0",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "Void pointer requires explicit cast before ______.",
+        "type": "fill_blank",
+        "answers": [
+            "dereferencing"
+        ],
+        "other_options": [
+            "assigning",
+            "declaring",
+            "comparing"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "void *ptrs[3];\nint a = 1; float b = 2.0; char c = 'X';\nptrs[0] = &a; ptrs[1] = &b; ptrs[2] = &c;\nprintf(\"%d\", *(int*)ptrs[0]);",
+        "o": [
+            "1",
+            "2",
+            "X",
+            "Error"
+        ]
+    },
+    {
+        "q": "Array of void pointers can store mixed type addresses.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int compare(const void *a, const void *b) {\n    return *(int*)a - *(int*)b;\n}\nint arr[4] = {4, 2, 3, 1};\nqsort(arr, 4, sizeof(int), compare);\nprintf(\"%d %d\", arr[0], arr[3]);",
+        "o": [
+            "1 4",
+            "4 1",
+            "2 3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange qsort callback pattern:",
+        "type": "rearrange",
+        "words": [
+            "receive void pointers",
+            "cast to actual type",
+            "compare values",
+            "return difference"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int factorial(int n) {\n    if (n <= 1) return 1;\n    return n * factorial(n - 1);\n}\nint (*fp)(int) = factorial;\nprintf(\"%d\", fp(5));",
+        "o": [
+            "120",
+            "5",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Recursive function can be called via function ______.",
+        "type": "fill_blank",
+        "answers": [
+            "pointer"
+        ],
+        "other_options": [
+            "reference",
+            "value",
+            "name only"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {100, 200, 300};\nint (*ptr)[3] = &arr;\nprintf(\"%d\", *(*ptr + 1));",
+        "o": [
+            "200",
+            "100",
+            "300",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer to array dereference gives array itself.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *words[] = {\"apple\", \"banana\", \"cherry\"};\nchar **pp = words;\nprintf(\"%s\", *(pp + 1));",
+        "o": [
+            "banana",
+            "apple",
+            "cherry",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match pointer notation with its meaning:",
+        "type": "match",
+        "left": [
+            "pp",
+            "*pp",
+            "**pp",
+            "pp + 1"
+        ],
+        "right": [
+            "Points to first element",
+            "First string address",
+            "First char of first",
+            "Next string pointer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *words[] = {\"one\", \"two\", \"three\"};\nchar **pp = words;\npp++;\nprintf(\"%c\", **pp);",
+        "o": [
+            "t",
+            "o",
+            "w",
+            "Error"
+        ]
+    },
+    {
+        "q": "Double pointer to string array accesses character via ______ dereferences.",
+        "type": "fill_blank",
+        "answers": [
+            "two"
+        ],
+        "other_options": [
+            "one",
+            "three",
+            "zero"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 5, b = 10;\nint *p = &a;\nint **pp = &p;\n**pp = 50;\nprintf(\"%d %d\", a, *p);",
+        "o": [
+            "50 50",
+            "5 50",
+            "50 5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Modifying through double pointer changes original variable.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "void nullify(int **pp) {\n    *pp = NULL;\n}\nint x = 10;\nint *p = &x;\nnullify(&p);\nprintf(\"%d\", p == NULL);",
+        "o": [
+            "1",
+            "0",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange nullifying pointer through function:",
+        "type": "rearrange",
+        "words": [
+            "pass pointer address",
+            "receive double pointer",
+            "assign NULL to *pp",
+            "caller pointer becomes NULL"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int max(int a, int b) { return a > b ? a : b; }\nint min(int a, int b) { return a < b ? a : b; }\nint (*ops[])(int, int) = {max, min};\nprintf(\"%d %d\", ops[0](5, 3), ops[1](5, 3));",
+        "o": [
+            "5 3",
+            "3 5",
+            "5 5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Array of function pointers enables runtime ______ selection.",
+        "type": "fill_blank",
+        "answers": [
+            "function"
+        ],
+        "other_options": [
+            "variable",
+            "type",
+            "memory"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int apply(int (*f)(int), int x) {\n    return f(x);\n}\nint double_it(int x) { return x * 2; }\nprintf(\"%d\", apply(double_it, 5));",
+        "o": [
+            "10",
+            "5",
+            "25",
+            "Error"
+        ]
+    },
+    {
+        "q": "Passing function pointer as argument enables higher-order functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int add(int a, int b) { return a + b; }\nint (*getOp())(int, int) {\n    return add;\n}\nint (*fp)(int, int) = getOp();\nprintf(\"%d\", fp(3, 7));",
+        "o": [
+            "10",
+            "3",
+            "7",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match function pointer use with its pattern:",
+        "type": "match",
+        "left": [
+            "Callback",
+            "Factory",
+            "Strategy",
+            "Command"
+        ],
+        "right": [
+            "Pass as argument",
+            "Return function pointer",
+            "Select algorithm",
+            "Store for later"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *createArray(int n) {\n    int *arr = (int*)malloc(n * sizeof(int));\n    for (int i = 0; i < n; i++) arr[i] = i + 1;\n    return arr;\n}\nint *p = createArray(3);\nprintf(\"%d\", p[2]);\nfree(p);",
+        "o": [
+            "3",
+            "2",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Function returning dynamically allocated pointer is ______.",
+        "type": "fill_blank",
+        "answers": [
+            "valid"
+        ],
+        "other_options": [
+            "invalid",
+            "undefined",
+            "dangerous"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "struct Node {\n    int data;\n    struct Node *next;\n};\nstruct Node *create(int d) {\n    struct Node *n = (struct Node*)malloc(sizeof(struct Node));\n    n->data = d;\n    n->next = NULL;\n    return n;\n}\nstruct Node *head = create(10);\nhead->next = create(20);\nprintf(\"%d\", head->next->data);\nfree(head->next);\nfree(head);",
+        "o": [
+            "20",
+            "10",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Linked list nodes use self-referential pointer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "struct Node { int data; struct Node *next; };\nvoid insert(struct Node **head, int d) {\n    struct Node *n = (struct Node*)malloc(sizeof(struct Node));\n    n->data = d;\n    n->next = *head;\n    *head = n;\n}\nstruct Node *head = NULL;\ninsert(&head, 10);\ninsert(&head, 20);\nprintf(\"%d %d\", head->data, head->next->data);\nfree(head->next); free(head);",
+        "o": [
+            "20 10",
+            "10 20",
+            "10 10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange linked list insertion:",
+        "type": "rearrange",
+        "words": [
+            "allocate node",
+            "set data",
+            "point next to head",
+            "update head to new"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[2][3] = {{1,2,3}, {4,5,6}};\nint *p = &arr[0][0];\nprintf(\"%d\", *(p + 4));",
+        "o": [
+            "5",
+            "4",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Flattened 2D array access uses row*cols + col formula.",
+        "type": "fill_blank",
+        "answers": [
+            "row*cols + col"
+        ],
+        "other_options": [
+            "row+col",
+            "row*col",
+            "row/col"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int matrix[3][3] = {{1,2,3}, {4,5,6}, {7,8,9}};\nint *p = (int*)matrix;\nint sum = 0;\nfor (int i = 0; i < 9; i++) sum += p[i];\nprintf(\"%d\", sum);",
+        "o": [
+            "45",
+            "9",
+            "36",
+            "Error"
+        ]
+    },
+    {
+        "q": "2D array can be traversed as 1D using single pointer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int **createMatrix(int r, int c) {\n    int **m = (int**)malloc(r * sizeof(int*));\n    for (int i = 0; i < r; i++)\n        m[i] = (int*)calloc(c, sizeof(int));\n    return m;\n}\nint **m = createMatrix(2, 3);\nm[1][2] = 42;\nprintf(\"%d\", m[1][2]);\nfor (int i = 0; i < 2; i++) free(m[i]);\nfree(m);",
+        "o": [
+            "42",
+            "0",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match memory function with initialization:",
+        "type": "match",
+        "left": [
+            "malloc",
+            "calloc",
+            "realloc",
+            "alloca"
+        ],
+        "right": [
+            "Uninitialized",
+            "Zero initialized",
+            "Preserves data",
+            "Stack allocated"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *p = (int*)malloc(3 * sizeof(int));\np[0] = 10; p[1] = 20; p[2] = 30;\nint *q = (int*)realloc(p, 5 * sizeof(int));\nq[3] = 40; q[4] = 50;\nprintf(\"%d %d\", q[0], q[4]);\nfree(q);",
+        "o": [
+            "10 50",
+            "0 50",
+            "10 0",
+            "Error"
+        ]
+    },
+    {
+        "q": "realloc may return different ______ than original.",
+        "type": "fill_blank",
+        "answers": [
+            "address"
+        ],
+        "other_options": [
+            "size",
+            "type",
+            "value"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *str = (char*)malloc(6);\nstrcpy(str, \"Hello\");\nstr = (char*)realloc(str, 12);\nstrcat(str, \" World\");\nprintf(\"%s\", str);\nfree(str);",
+        "o": [
+            "Hello World",
+            "Hello",
+            "World",
+            "Error"
+        ]
+    },
+    {
+        "q": "String reallocation allows growing string buffer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *dangling() {\n    int x = 100;\n    return &x;\n}\nint *p = dangling();\nprintf(\"returned\");",
+        "o": [
+            "returned",
+            "100",
+            "Error",
+            "Crash"
+        ]
+    },
+    {
+        "q": "Rearrange dangling pointer scenario:",
+        "type": "rearrange",
+        "words": [
+            "local variable created",
+            "return its address",
+            "function ends",
+            "pointer becomes dangling"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *p = (int*)malloc(sizeof(int));\n*p = 10;\nfree(p);\np = NULL;\nprintf(\"%d\", p == NULL);",
+        "o": [
+            "1",
+            "0",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Setting freed pointer to NULL prevents ______ pointer.",
+        "type": "fill_blank",
+        "answers": [
+            "dangling"
+        ],
+        "other_options": [
+            "null",
+            "wild",
+            "void"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *p = (int*)malloc(sizeof(int));\nint *q = p;\nfree(p);\np = NULL;\nprintf(\"%d\", q == NULL);",
+        "o": [
+            "0",
+            "1",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "Multiple pointers to same memory create aliasing problem on free.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "void leak() {\n    int *p = (int*)malloc(100);\n}\nleak();\nprintf(\"done\");",
+        "o": [
+            "done",
+            "Error",
+            "Crash",
+            "100"
+        ]
+    },
+    {
+        "q": "Match memory issue with its description:",
+        "type": "match",
+        "left": [
+            "Memory leak",
+            "Dangling pointer",
+            "Double free",
+            "Wild pointer"
+        ],
+        "right": [
+            "Not freed",
+            "Points to freed",
+            "Freed twice",
+            "Uninitialized"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 10, y = 20;\nint *restrict p = &x;\n*p = 30;\nprintf(\"%d\", x);",
+        "o": [
+            "30",
+            "10",
+            "20",
+            "Error"
+        ]
+    },
+    {
+        "q": "restrict keyword promises no aliasing for ______.",
+        "type": "fill_blank",
+        "answers": [
+            "optimization"
+        ],
+        "other_options": [
+            "safety",
+            "debugging",
+            "validation"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "volatile int *p;\nint x = 10;\np = &x;\n*p = 20;\nprintf(\"%d\", *p);",
+        "o": [
+            "20",
+            "10",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "volatile prevents compiler optimization of pointer access.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[5] = {5, 4, 3, 2, 1};\nint *p = arr;\nint *q = arr + 4;\nwhile (p < q) {\n    int t = *p; *p = *q; *q = t;\n    p++; q--;\n}\nprintf(\"%d %d %d\", arr[0], arr[2], arr[4]);",
+        "o": [
+            "1 3 5",
+            "5 3 1",
+            "1 2 3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange two-pointer reversal:",
+        "type": "rearrange",
+        "words": [
+            "left at start",
+            "right at end",
+            "swap and move inward",
+            "until they meet"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[5] = {1, 2, 3, 4, 5};\nint *slow = arr, *fast = arr;\nwhile (*fast && *(fast + 1)) {\n    slow++;\n    fast += 2;\n}\nprintf(\"%d\", *slow);",
+        "o": [
+            "3",
+            "2",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Fast-slow pointer finds middle in single ______.",
+        "type": "fill_blank",
+        "answers": [
+            "pass"
+        ],
+        "other_options": [
+            "loop",
+            "scan",
+            "call"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int sorted[6] = {1, 2, 3, 4, 5, 6};\nint target = 9;\nint *left = sorted, *right = sorted + 5;\nint found = 0;\nwhile (left < right) {\n    if (*left + *right == target) { found = 1; break; }\n    if (*left + *right < target) left++;\n    else right--;\n}\nprintf(\"%d\", found);",
+        "o": [
+            "1",
+            "0",
+            "9",
+            "Error"
+        ]
+    },
+    {
+        "q": "Two-pointer in sorted array finds pair with sum O(n).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *strs[] = {\"cat\", \"dog\", \"zebra\", \"ant\"};\nint n = 4;\nfor (int i = 0; i < n-1; i++)\n    for (int j = 0; j < n-1-i; j++)\n        if (strcmp(strs[j], strs[j+1]) > 0) {\n            char *t = strs[j]; strs[j] = strs[j+1]; strs[j+1] = t;\n        }\nprintf(\"%s %s\", strs[0], strs[3]);",
+        "o": [
+            "ant zebra",
+            "cat zebra",
+            "ant cat",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match sorting strings with its method:",
+        "type": "match",
+        "left": [
+            "Swap pointers",
+            "Swap content",
+            "qsort strings",
+            "Custom compare"
+        ],
+        "right": [
+            "Efficient",
+            "Copy chars",
+            "strcmp callback",
+            "Function pointer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *concat(const char *a, const char *b) {\n    int len = strlen(a) + strlen(b) + 1;\n    char *result = (char*)malloc(len);\n    strcpy(result, a);\n    strcat(result, b);\n    return result;\n}\nchar *s = concat(\"Hello\", \"World\");\nprintf(\"%s\", s);\nfree(s);",
+        "o": [
+            "HelloWorld",
+            "Hello",
+            "World",
+            "Error"
+        ]
+    },
+    {
+        "q": "Returning malloc'd string requires caller to ______.",
+        "type": "fill_blank",
+        "answers": [
+            "free"
+        ],
+        "other_options": [
+            "copy",
+            "null",
+            "return"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *duplicate(const char *s) {\n    char *d = (char*)malloc(strlen(s) + 1);\n    char *p = d;\n    while (*s) *p++ = *s++;\n    *p = '\\0';\n    return d;\n}\nchar *dup = duplicate(\"Test\");\nprintf(\"%s\", dup);\nfree(dup);",
+        "o": [
+            "Test",
+            "T",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "String duplication copies until null terminator.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int bsearch_custom(int *arr, int n, int x) {\n    int *low = arr, *high = arr + n - 1;\n    while (low <= high) {\n        int *mid = low + (high - low) / 2;\n        if (*mid == x) return mid - arr;\n        if (*mid < x) low = mid + 1;\n        else high = mid - 1;\n    }\n    return -1;\n}\nint arr[5] = {1, 2, 3, 4, 5};\nprintf(\"%d\", bsearch_custom(arr, 5, 3));",
+        "o": [
+            "2",
+            "3",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange binary search with pointers:",
+        "type": "rearrange",
+        "words": [
+            "set low and high",
+            "calculate mid pointer",
+            "compare and adjust",
+            "return index or -1"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "void *memcpy_custom(void *dest, const void *src, size_t n) {\n    char *d = (char*)dest;\n    const char *s = (const char*)src;\n    while (n--) *d++ = *s++;\n    return dest;\n}\nint a[3] = {1, 2, 3};\nint b[3];\nmemcpy_custom(b, a, sizeof(a));\nprintf(\"%d\", b[1]);",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "memcpy uses byte-by-byte copy with ______ pointers.",
+        "type": "fill_blank",
+        "answers": [
+            "char"
+        ],
+        "other_options": [
+            "int",
+            "void",
+            "byte"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int compare(const void *a, const void *b) {\n    return strcmp(*(const char**)a, *(const char**)b);\n}\nchar *strs[] = {\"dog\", \"cat\", \"ant\"};\nqsort(strs, 3, sizeof(char*), compare);\nprintf(\"%s\", strs[0]);",
+        "o": [
+            "ant",
+            "cat",
+            "dog",
+            "Error"
+        ]
+    },
+    {
+        "q": "qsort for strings compares char** after dereferencing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "typedef struct { int x, y; } Point;\nPoint *createPoint(int x, int y) {\n    Point *p = (Point*)malloc(sizeof(Point));\n    p->x = x;\n    p->y = y;\n    return p;\n}\nPoint *p = createPoint(10, 20);\nprintf(\"%d %d\", p->x, p->y);\nfree(p);",
+        "o": [
+            "10 20",
+            "20 10",
+            "0 0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match struct operation with its syntax:",
+        "type": "match",
+        "left": [
+            "Stack struct",
+            "Heap struct",
+            "Struct pointer",
+            "Nested access"
+        ],
+        "right": [
+            "Point p = {1,2}",
+            "malloc + assign",
+            "Point *ptr",
+            "ptr->inner.member"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "typedef struct Node {\n    int data;\n    struct Node *left, *right;\n} Node;\nNode *create(int d) {\n    Node *n = (Node*)malloc(sizeof(Node));\n    n->data = d;\n    n->left = n->right = NULL;\n    return n;\n}\nNode *root = create(1);\nroot->left = create(2);\nroot->right = create(3);\nprintf(\"%d\", root->left->data + root->right->data);\nfree(root->left); free(root->right); free(root);",
+        "o": [
+            "5",
+            "1",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Binary tree nodes have left and right ______ pointers.",
+        "type": "fill_blank",
+        "answers": [
+            "child"
+        ],
+        "other_options": [
+            "parent",
+            "sibling",
+            "root"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int **create2D(int rows, int cols) {\n    int **arr = (int**)malloc(rows * sizeof(int*));\n    for (int i = 0; i < rows; i++) {\n        arr[i] = (int*)malloc(cols * sizeof(int));\n        for (int j = 0; j < cols; j++)\n            arr[i][j] = i * cols + j;\n    }\n    return arr;\n}\nint **m = create2D(2, 3);\nprintf(\"%d\", m[1][2]);\nfor (int i = 0; i < 2; i++) free(m[i]);\nfree(m);",
+        "o": [
+            "5",
+            "4",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "2D dynamic allocation uses array of row pointers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "void printArr(int *arr, int n) {\n    int *end = arr + n;\n    while (arr < end) {\n        printf(\"%d \", *arr++);\n    }\n}\nint arr[3] = {10, 20, 30};\nprintArr(arr, 3);",
+        "o": [
+            "10 20 30",
+            "30 20 10",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange pointer-based array print:",
+        "type": "rearrange",
+        "words": [
+            "calculate end pointer",
+            "loop while less than end",
+            "print and increment",
+            "array printed"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int sum(int *start, int *end) {\n    int s = 0;\n    while (start < end) s += *start++;\n    return s;\n}\nint arr[4] = {1, 2, 3, 4};\nprintf(\"%d\", sum(arr, arr + 4));",
+        "o": [
+            "10",
+            "6",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Range-based iteration uses start and end ______.",
+        "type": "fill_blank",
+        "answers": [
+            "pointers"
+        ],
+        "other_options": [
+            "indices",
+            "values",
+            "arrays"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "void reverse(char *s) {\n    char *end = s + strlen(s) - 1;\n    while (s < end) {\n        char t = *s; *s = *end; *end = t;\n        s++; end--;\n    }\n}\nchar str[] = \"Hello\";\nreverse(str);\nprintf(\"%s\", str);",
+        "o": [
+            "olleH",
+            "Hello",
+            "oH",
+            "Error"
+        ]
+    },
+    {
+        "q": "In-place string reversal uses two pointer technique.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *findChar(char *s, char c) {\n    while (*s) {\n        if (*s == c) return s;\n        s++;\n    }\n    return NULL;\n}\nchar *result = findChar(\"Hello\", 'l');\nprintf(\"%c\", result ? *result : '?');",
+        "o": [
+            "l",
+            "H",
+            "?",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match string search function with return:",
+        "type": "match",
+        "left": [
+            "strchr",
+            "strrchr",
+            "strstr",
+            "strtok"
+        ],
+        "right": [
+            "First char pointer",
+            "Last char pointer",
+            "Substring pointer",
+            "Token pointer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int countOccurrences(char *s, char c) {\n    int count = 0;\n    while (*s) if (*s++ == c) count++;\n    return count;\n}\nprintf(\"%d\", countOccurrences(\"Mississippi\", 's'));",
+        "o": [
+            "4",
+            "3",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Character counting uses pointer traversal with ______.",
+        "type": "fill_blank",
+        "answers": [
+            "comparison"
+        ],
+        "other_options": [
+            "addition",
+            "subtraction",
+            "division"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "void toUpper(char *s) {\n    while (*s) {\n        if (*s >= 'a' && *s <= 'z')\n            *s = *s - 32;\n        s++;\n    }\n}\nchar str[] = \"hello\";\ntoUpper(str);\nprintf(\"%s\", str);",
+        "o": [
+            "HELLO",
+            "hello",
+            "Hello",
+            "Error"
+        ]
+    },
+    {
+        "q": "ASCII conversion uses arithmetic on character values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int isPalindrome(char *s) {\n    char *end = s + strlen(s) - 1;\n    while (s < end) {\n        if (*s++ != *end--) return 0;\n    }\n    return 1;\n}\nprintf(\"%d\", isPalindrome(\"radar\"));",
+        "o": [
+            "1",
+            "0",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange palindrome check:",
+        "type": "rearrange",
+        "words": [
+            "start from ends",
+            "compare characters",
+            "move inward",
+            "all match means palindrome"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "void removeSpaces(char *s) {\n    char *d = s;\n    while (*s) {\n        if (*s != ' ') *d++ = *s;\n        s++;\n    }\n    *d = '\\0';\n}\nchar str[] = \"H e l l o\";\nremoveSpaces(str);\nprintf(\"%s\", str);",
+        "o": [
+            "Hello",
+            "H e l l o",
+            "Hlo",
+            "Error"
+        ]
+    },
+    {
+        "q": "In-place filtering uses read and write ______.",
+        "type": "fill_blank",
+        "answers": [
+            "pointers"
+        ],
+        "other_options": [
+            "indices",
+            "counters",
+            "markers"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int compare_desc(const void *a, const void *b) {\n    return *(int*)b - *(int*)a;\n}\nint arr[4] = {1, 4, 2, 3};\nqsort(arr, 4, sizeof(int), compare_desc);\nprintf(\"%d %d\", arr[0], arr[3]);",
+        "o": [
+            "4 1",
+            "1 4",
+            "3 2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Descending sort reverses comparison order.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "void *bsearch_ptr(void *key, void *base, size_t n, size_t size,\n                   int (*cmp)(const void*, const void*)) {\n    char *p = (char*)base;\n    while (n > 0) {\n        size_t h = n / 2;\n        char *mid = p + h * size;\n        int c = cmp(key, mid);\n        if (c == 0) return mid;\n        if (c > 0) { p = mid + size; n -= h + 1; }\n        else n = h;\n    }\n    return NULL;\n}\nint arr[5] = {1, 2, 3, 4, 5};\nint key = 4;\nint *r = bsearch_ptr(&key, arr, 5, sizeof(int), compare);\nprintf(\"%d\", r ? *r : -1);",
+        "o": [
+            "4",
+            "-1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match search algorithm with its complexity:",
+        "type": "match",
+        "left": [
+            "Linear search",
+            "Binary search",
+            "Hash lookup",
+            "Interpolation"
+        ],
+        "right": [
+            "O(n)",
+            "O(log n)",
+            "O(1) average",
+            "O(log log n) uniform"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "struct Pair { int first; int second; };\nint comparePairs(const void *a, const void *b) {\n    struct Pair *p1 = (struct Pair*)a;\n    struct Pair *p2 = (struct Pair*)b;\n    if (p1->first != p2->first)\n        return p1->first - p2->first;\n    return p1->second - p2->second;\n}\nstruct Pair arr[3] = {{2,3}, {1,5}, {2,1}};\nqsort(arr, 3, sizeof(struct Pair), comparePairs);\nprintf(\"%d\", arr[2].second);",
+        "o": [
+            "3",
+            "1",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Struct sorting requires custom comparison ______.",
+        "type": "fill_blank",
+        "answers": [
+            "function"
+        ],
+        "other_options": [
+            "operator",
+            "macro",
+            "template"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "typedef struct {\n    char name[20];\n    int age;\n} Person;\nPerson *createPerson(const char *name, int age) {\n    Person *p = (Person*)malloc(sizeof(Person));\n    strcpy(p->name, name);\n    p->age = age;\n    return p;\n}\nPerson *p = createPerson(\"Alice\", 25);\nprintf(\"%s %d\", p->name, p->age);\nfree(p);",
+        "o": [
+            "Alice 25",
+            "25 Alice",
+            "Alice",
+            "Error"
+        ]
+    },
+    {
+        "q": "Factory function returns dynamically allocated struct.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *partition(int *low, int *high) {\n    int pivot = *high;\n    int *i = low - 1;\n    for (int *j = low; j < high; j++) {\n        if (*j < pivot) {\n            i++;\n            int t = *i; *i = *j; *j = t;\n        }\n    }\n    int t = *(i+1); *(i+1) = *high; *high = t;\n    return i + 1;\n}\nint arr[4] = {3, 1, 4, 2};\nint *p = partition(arr, arr + 3);\nprintf(\"%d\", *p);",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange quicksort partition:",
+        "type": "rearrange",
+        "words": [
+            "choose pivot",
+            "partition around pivot",
+            "swap smaller to left",
+            "pivot in final position"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "void merge(int *arr, int *temp, int l, int m, int r) {\n    int i = l, j = m + 1, k = l;\n    while (i <= m && j <= r)\n        temp[k++] = (arr[i] <= arr[j]) ? arr[i++] : arr[j++];\n    while (i <= m) temp[k++] = arr[i++];\n    while (j <= r) temp[k++] = arr[j++];\n    for (i = l; i <= r; i++) arr[i] = temp[i];\n}\nint arr[4] = {4, 2, 3, 1};\nint temp[4];\nmerge(arr, temp, 0, 0, 1);\nprintf(\"%d %d\", arr[0], arr[1]);",
+        "o": [
+            "2 4",
+            "4 2",
+            "3 1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Merge operation combines two sorted ______.",
+        "type": "fill_blank",
+        "answers": [
+            "subarrays"
+        ],
+        "other_options": [
+            "elements",
+            "pointers",
+            "indices"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "size_t custom_strlen(const char *s) {\n    const char *p = s;\n    while (*p) p++;\n    return p - s;\n}\nprintf(\"%lu\", custom_strlen(\"Hello\"));",
+        "o": [
+            "5",
+            "6",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "strlen implementation uses pointer difference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *custom_strcpy(char *dest, const char *src) {\n    char *d = dest;\n    while ((*d++ = *src++));\n    return dest;\n}\nchar buf[10];\ncustom_strcpy(buf, \"Hi\");\nprintf(\"%s\", buf);",
+        "o": [
+            "Hi",
+            "H",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "Match string function with its implementation:",
+        "type": "match",
+        "left": [
+            "strlen",
+            "strcpy",
+            "strcmp",
+            "strcat"
+        ],
+        "right": [
+            "Count until null",
+            "Copy until null",
+            "Compare bytes",
+            "Append at end"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int custom_strcmp(const char *s1, const char *s2) {\n    while (*s1 && *s1 == *s2) { s1++; s2++; }\n    return *s1 - *s2;\n}\nprintf(\"%d\", custom_strcmp(\"abc\", \"abd\") < 0);",
+        "o": [
+            "1",
+            "0",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "strcmp returns negative if first string is ______.",
+        "type": "fill_blank",
+        "answers": [
+            "smaller"
+        ],
+        "other_options": [
+            "larger",
+            "equal",
+            "empty"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "void *custom_memset(void *s, int c, size_t n) {\n    unsigned char *p = s;\n    while (n--) *p++ = (unsigned char)c;\n    return s;\n}\nint arr[3];\ncustom_memset(arr, 0, sizeof(arr));\nprintf(\"%d %d %d\", arr[0], arr[1], arr[2]);",
+        "o": [
+            "0 0 0",
+            "Garbage",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "memset sets bytes to specified value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *createFibonacci(int n) {\n    int *fib = (int*)malloc(n * sizeof(int));\n    fib[0] = 0; fib[1] = 1;\n    for (int i = 2; i < n; i++)\n        fib[i] = fib[i-1] + fib[i-2];\n    return fib;\n}\nint *f = createFibonacci(6);\nprintf(\"%d\", f[5]);\nfree(f);",
+        "o": [
+            "5",
+            "8",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange dynamic sequence generation:",
+        "type": "rearrange",
+        "words": [
+            "allocate array",
+            "set initial values",
+            "compute remaining",
+            "return pointer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int **createPascal(int n) {\n    int **t = (int**)malloc(n * sizeof(int*));\n    for (int i = 0; i < n; i++) {\n        t[i] = (int*)malloc((i+1) * sizeof(int));\n        t[i][0] = t[i][i] = 1;\n        for (int j = 1; j < i; j++)\n            t[i][j] = t[i-1][j-1] + t[i-1][j];\n    }\n    return t;\n}\nint **p = createPascal(5);\nprintf(\"%d\", p[4][2]);\nfor (int i = 0; i < 5; i++) free(p[i]);\nfree(p);",
+        "o": [
+            "6",
+            "4",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Jagged array has rows of different ______.",
+        "type": "fill_blank",
+        "answers": [
+            "lengths"
+        ],
+        "other_options": [
+            "types",
+            "values",
+            "pointers"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "typedef struct {\n    void **data;\n    int size;\n    int capacity;\n} Vector;\nVector *createVector() {\n    Vector *v = (Vector*)malloc(sizeof(Vector));\n    v->capacity = 4;\n    v->size = 0;\n    v->data = (void**)malloc(v->capacity * sizeof(void*));\n    return v;\n}\nVector *v = createVector();\nprintf(\"%d %d\", v->size, v->capacity);\nfree(v->data); free(v);",
+        "o": [
+            "0 4",
+            "4 0",
+            "0 0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Dynamic array (vector) tracks size and capacity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "uintptr_t ptr_val = (uintptr_t)malloc(1);\nprintf(\"%d\", ptr_val != 0);",
+        "o": [
+            "1",
+            "0",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "Match pointer cast with its purpose:",
+        "type": "match",
+        "left": [
+            "(int*)",
+            "(void*)",
+            "(uintptr_t)",
+            "(char*)"
+        ],
+        "right": [
+            "Integer access",
+            "Generic pointer",
+            "Pointer to integer",
+            "Byte access"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[5] = {1, 2, 3, 4, 5};\nint *begin = arr;\nint *end = arr + 5;\nint sum = 0;\nfor (int *it = begin; it != end; ++it)\n    sum += *it;\nprintf(\"%d\", sum);",
+        "o": [
+            "15",
+            "5",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Iterator pattern uses begin and end ______.",
+        "type": "fill_blank",
+        "answers": [
+            "pointers"
+        ],
+        "other_options": [
+            "values",
+            "indices",
+            "markers"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int apply_all(int *arr, int n, int (*f)(int)) {\n    int result = 0;\n    for (int i = 0; i < n; i++)\n        result += f(arr[i]);\n    return result;\n}\nint square(int x) { return x * x; }\nint arr[3] = {1, 2, 3};\nprintf(\"%d\", apply_all(arr, 3, square));",
+        "o": [
+            "14",
+            "6",
+            "9",
+            "Error"
+        ]
+    },
+    {
+        "q": "Map-reduce pattern applies function and accumulates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "void foreach(int *arr, int n, void (*f)(int*)) {\n    for (int i = 0; i < n; i++)\n        f(&arr[i]);\n}\nvoid doubleVal(int *x) { *x *= 2; }\nint arr[3] = {1, 2, 3};\nforeach(arr, 3, doubleVal);\nprintf(\"%d %d %d\", arr[0], arr[1], arr[2]);",
+        "o": [
+            "2 4 6",
+            "1 2 3",
+            "4 8 12",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange foreach with function pointer:",
+        "type": "rearrange",
+        "words": [
+            "iterate array",
+            "pass element address",
+            "apply function",
+            "element modified"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *filter(int *arr, int n, int (*pred)(int), int *out_len) {\n    int *result = (int*)malloc(n * sizeof(int));\n    int k = 0;\n    for (int i = 0; i < n; i++)\n        if (pred(arr[i])) result[k++] = arr[i];\n    *out_len = k;\n    return result;\n}\nint isEven(int x) { return x % 2 == 0; }\nint arr[5] = {1, 2, 3, 4, 5};\nint len;\nint *evens = filter(arr, 5, isEven, &len);\nprintf(\"%d %d\", len, evens[1]);\nfree(evens);",
+        "o": [
+            "2 4",
+            "3 4",
+            "2 2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Filter pattern returns new array matching ______.",
+        "type": "fill_blank",
+        "answers": [
+            "predicate"
+        ],
+        "other_options": [
+            "function",
+            "value",
+            "index"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[4] = {1, 2, 3, 4};\nint *p = arr;\nwhile (*p) { printf(\"%d \", *p); p++; if (p > arr + 3) break; }",
+        "o": [
+            "1 2 3 4",
+            "1 2 3",
+            "Infinite",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer bounds checking prevents buffer overflow.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *p = \"ABCDE\";\nprintf(\"%c\", *(p + 2));",
+        "o": [
+            "C",
+            "B",
+            "D",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match pointer arithmetic with result:",
+        "type": "match",
+        "left": [
+            "p + 1",
+            "p + n",
+            "p - q",
+            "++p"
+        ],
+        "right": [
+            "Next element",
+            "n elements ahead",
+            "Elements between",
+            "Advance and return"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 5;\nint *p = &a;\nint **pp = &p;\nprintf(\"%d\", *p + **pp);",
+        "o": [
+            "10",
+            "5",
+            "15",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer to pointer adds one level of ______.",
+        "type": "fill_blank",
+        "answers": [
+            "indirection"
+        ],
+        "other_options": [
+            "memory",
+            "value",
+            "address"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 10;\nint *p = &x;\nprintf(\"%lu\", sizeof(p));",
+        "o": [
+            "8",
+            "4",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer size is same regardless of pointed type.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {10, 20, 30};\nint *p = arr;\nprintf(\"%d\", *(arr + 1));",
+        "o": [
+            "20",
+            "10",
+            "30",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange array decay to pointer:",
+        "type": "rearrange",
+        "words": [
+            "array declared",
+            "passed to function",
+            "decays to pointer",
+            "loses size info"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char str[] = \"Hello\";\nchar *p = str;\np[0] = 'M';\nprintf(\"%s\", str);",
+        "o": [
+            "Mello",
+            "Hello",
+            "Error",
+            "M"
+        ]
+    },
+    {
+        "q": "Array can be modified through pointer ______.",
+        "type": "fill_blank",
+        "answers": [
+            "access"
+        ],
+        "other_options": [
+            "copy",
+            "value",
+            "reference"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 1, b = 2;\nint *arr[2] = {&a, &b};\nprintf(\"%d\", *arr[0] + *arr[1]);",
+        "o": [
+            "3",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Array of pointers can point to scattered variables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int nums[3] = {5, 10, 15};\nint *ptr = nums + 1;\nprintf(\"%d %d\", ptr[-1], ptr[1]);",
+        "o": [
+            "5 15",
+            "10 10",
+            "5 10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match negative index with meaning:",
+        "type": "match",
+        "left": [
+            "p[-1]",
+            "p[0]",
+            "p[1]",
+            "p[-n]"
+        ],
+        "right": [
+            "Previous element",
+            "Current",
+            "Next element",
+            "n elements back"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "void test(int *arr) {\n    arr[0] = 100;\n}\nint nums[3] = {1, 2, 3};\ntest(nums);\nprintf(\"%d\", nums[0]);",
+        "o": [
+            "100",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Array passed to function is passed by ______.",
+        "type": "fill_blank",
+        "answers": [
+            "reference"
+        ],
+        "other_options": [
+            "value",
+            "copy",
+            "name"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5;\nint *p = &x;\n*p += 10;\nprintf(\"%d\", x);",
+        "o": [
+            "15",
+            "5",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Compound assignment works through pointer dereference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[4] = {1, 2, 3, 4};\nint sum = 0;\nfor (int *p = arr; p < arr + 4; p++)\n    sum += *p;\nprintf(\"%d\", sum);",
+        "o": [
+            "10",
+            "4",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange pointer loop pattern:",
+        "type": "rearrange",
+        "words": [
+            "initialize to start",
+            "compare with end",
+            "process element",
+            "increment pointer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *s = \"Hello\";\nint len = 0;\nwhile (*s++) len++;\nprintf(\"%d\", len);",
+        "o": [
+            "5",
+            "6",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Post-increment in while condition advances after ______.",
+        "type": "fill_blank",
+        "answers": [
+            "test"
+        ],
+        "other_options": [
+            "loop",
+            "break",
+            "return"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 10, b = 20;\nint *max = (a > b) ? &a : &b;\nprintf(\"%d\", *max);",
+        "o": [
+            "20",
+            "10",
+            "30",
+            "Error"
+        ]
+    },
+    {
+        "q": "Ternary operator can return pointer values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {10, 20, 30};\nint *p = &arr[2];\nprintf(\"%d\", p[-2]);",
+        "o": [
+            "10",
+            "20",
+            "30",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match pointer expression with equivalent:",
+        "type": "match",
+        "left": [
+            "*(p+i)",
+            "p[i]",
+            "&p[i]",
+            "*(&p[i])"
+        ],
+        "right": [
+            "p[i]",
+            "*(p+i)",
+            "p+i",
+            "p[i]"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 100;\nint *p = &x;\nint *q = p;\n(*q)--;\nprintf(\"%d\", *p);",
+        "o": [
+            "99",
+            "100",
+            "101",
+            "Error"
+        ]
+    },
+    {
+        "q": "Multiple pointers to same location are ______.",
+        "type": "fill_blank",
+        "answers": [
+            "aliases"
+        ],
+        "other_options": [
+            "copies",
+            "different",
+            "separate"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[5] = {5, 10, 15, 20, 25};\nint *p = arr + 2;\nprintf(\"%d %d %d\", *(p-1), *p, *(p+1));",
+        "o": [
+            "10 15 20",
+            "5 10 15",
+            "15 20 25",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer in middle can access elements in both directions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "struct Point { int x; int y; };\nstruct Point pts[2] = {{1,2}, {3,4}};\nstruct Point *p = pts;\nprintf(\"%d\", (p+1)->y);",
+        "o": [
+            "4",
+            "2",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange struct array pointer access:",
+        "type": "rearrange",
+        "words": [
+            "pointer to array",
+            "add index",
+            "use arrow operator",
+            "access member"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *p = (int*)malloc(sizeof(int) * 3);\nfor (int i = 0; i < 3; i++) *(p + i) = i * 5;\nprintf(\"%d\", p[2]);\nfree(p);",
+        "o": [
+            "10",
+            "5",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Dynamic array uses both pointer and array ______.",
+        "type": "fill_blank",
+        "answers": [
+            "notation"
+        ],
+        "other_options": [
+            "type",
+            "size",
+            "value"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *strings[3] = {\"one\", \"two\", \"three\"};\nprintf(\"%c\", strings[1][1]);",
+        "o": [
+            "w",
+            "t",
+            "o",
+            "Error"
+        ]
+    },
+    {
+        "q": "2D access on array of strings uses double indexing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int val = 42;\nvoid *vp = &val;\nprintf(\"%d\", *(int*)vp);",
+        "o": [
+            "42",
+            "0",
+            "Error",
+            "Address"
+        ]
+    },
+    {
+        "q": "Match void pointer operation with requirement:",
+        "type": "match",
+        "left": [
+            "Assign to void*",
+            "Assign from void*",
+            "Dereference",
+            "Arithmetic"
+        ],
+        "right": [
+            "Implicit cast OK",
+            "Cast needed in C++",
+            "Cast required",
+            "Not allowed"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 1, b = 2, c = 3;\nint *parr[] = {&a, &b, &c};\nint **pp = parr;\nprintf(\"%d\", **pp);",
+        "o": [
+            "1",
+            "2",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Double pointer to array accesses first element with ______ dereference.",
+        "type": "fill_blank",
+        "answers": [
+            "double"
+        ],
+        "other_options": [
+            "single",
+            "triple",
+            "no"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[2][2] = {{1,2}, {3,4}};\nint *p = (int*)arr;\nprintf(\"%d\", *(p + 3));",
+        "o": [
+            "4",
+            "3",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Casting 2D array to int* allows linear access.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "const char *msg = \"Hello\";\nprintf(\"%c\", msg[4]);",
+        "o": [
+            "o",
+            "l",
+            "H",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange const pointer declaration:",
+        "type": "rearrange",
+        "words": [
+            "const keyword",
+            "data type",
+            "asterisk",
+            "pointer name"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 50;\nint * const p = &x;\n*p = 100;\nprintf(\"%d\", x);",
+        "o": [
+            "100",
+            "50",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "Constant pointer can still modify pointed ______.",
+        "type": "fill_blank",
+        "answers": [
+            "value"
+        ],
+        "other_options": [
+            "address",
+            "type",
+            "size"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int nums[4] = {1, 2, 3, 4};\nint *end = nums + 4;\nint *p = nums;\nint count = 0;\nwhile (p != end) { count++; p++; }\nprintf(\"%d\", count);",
+        "o": [
+            "4",
+            "3",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "End pointer points one past last element.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int square(int x) { return x * x; }\nint (*fn)(int) = &square;\nprintf(\"%d\", fn(5));",
+        "o": [
+            "25",
+            "5",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match function pointer syntax with meaning:",
+        "type": "match",
+        "left": [
+            "int (*fp)()",
+            "int* fp()",
+            "(*fp)(args)",
+            "fp(args)"
+        ],
+        "right": [
+            "Pointer to function",
+            "Function returning int*",
+            "Call via pointer",
+            "Also valid call"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "void greet() { printf(\"Hi\"); }\nvoid (*fp)() = greet;\nfp();",
+        "o": [
+            "Hi",
+            "Error",
+            "Nothing",
+            "greet"
+        ]
+    },
+    {
+        "q": "Function name without () gives its ______.",
+        "type": "fill_blank",
+        "answers": [
+            "address"
+        ],
+        "other_options": [
+            "return",
+            "value",
+            "type"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int add(int a, int b) { return a + b; }\nint mul(int a, int b) { return a * b; }\nint (*op)(int,int);\nop = add;\nint r1 = op(3, 4);\nop = mul;\nint r2 = op(3, 4);\nprintf(\"%d %d\", r1, r2);",
+        "o": [
+            "7 12",
+            "12 7",
+            "7 7",
+            "Error"
+        ]
+    },
+    {
+        "q": "Function pointer can be reassigned to different functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {10, 20, 30};\nint *p = arr;\nint val = *p;\np++;\nval += *p;\nprintf(\"%d\", val);",
+        "o": [
+            "30",
+            "10",
+            "20",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange accumulate with pointer:",
+        "type": "rearrange",
+        "words": [
+            "initialize sum",
+            "dereference and add",
+            "advance pointer",
+            "repeat until end"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char str[] = \"ABCD\";\nchar *p = str + 3;\nwhile (p >= str) {\n    printf(\"%c\", *p--);\n}",
+        "o": [
+            "DCBA",
+            "ABCD",
+            "D",
+            "Error"
+        ]
+    },
+    {
+        "q": "Reverse traversal uses decrement ______.",
+        "type": "fill_blank",
+        "answers": [
+            "operator"
+        ],
+        "other_options": [
+            "function",
+            "loop",
+            "index"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int matrix[2][3] = {{1,2,3},{4,5,6}};\nint (*row)[3] = matrix;\nprintf(\"%d\", row[1][1]);",
+        "o": [
+            "5",
+            "2",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer to array of 3 ints navigates rows correctly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 10, y = 20;\nint *p = &x, *q = &y;\nint *temp = p;\np = q;\nq = temp;\nprintf(\"%d %d\", *p, *q);",
+        "o": [
+            "20 10",
+            "10 20",
+            "10 10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match swap type with what changes:",
+        "type": "match",
+        "left": [
+            "Swap pointers",
+            "Swap values",
+            "Swap via temp ptr",
+            "XOR swap"
+        ],
+        "right": [
+            "Pointers exchange",
+            "Values exchange",
+            "Uses third pointer",
+            "No temp needed"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int val = 100;\nint *p1 = &val;\nint *p2 = &val;\n*p1 = 50;\nprintf(\"%d\", *p2);",
+        "o": [
+            "50",
+            "100",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Two pointers to same location see each other's ______.",
+        "type": "fill_blank",
+        "answers": [
+            "changes"
+        ],
+        "other_options": [
+            "copies",
+            "values",
+            "addresses"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int data[5] = {1, 2, 3, 4, 5};\nint *first = data;\nint *last = data + 4;\nprintf(\"%d\", *last - *first);",
+        "o": [
+            "4",
+            "5",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer arithmetic gives difference in elements not bytes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char ch = 'A';\nchar *p = &ch;\n*p = *p + 1;\nprintf(\"%c\", ch);",
+        "o": [
+            "B",
+            "A",
+            "C",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange character increment via pointer:",
+        "type": "rearrange",
+        "words": [
+            "point to char",
+            "dereference",
+            "add one",
+            "assign back"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {10, 20, 30, 40};\nint *p = arr;\nint *q = arr + 2;\nprintf(\"%ld\", q - p);",
+        "o": [
+            "2",
+            "8",
+            "20",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer subtraction yields element ______.",
+        "type": "fill_blank",
+        "answers": [
+            "count"
+        ],
+        "other_options": [
+            "bytes",
+            "address",
+            "value"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int nums[3] = {5, 10, 15};\nint **pp;\nint *p = nums;\npp = &p;\nprintf(\"%d\", *(*pp + 2));",
+        "o": [
+            "15",
+            "5",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Double pointer can access array through indirection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "struct Data { int val; };\nstruct Data d = {42};\nstruct Data *p = &d;\nprintf(\"%d\", p->val);",
+        "o": [
+            "42",
+            "0",
+            "Error",
+            "Address"
+        ]
+    },
+    {
+        "q": "Match structure access with operator:",
+        "type": "match",
+        "left": [
+            "obj.member",
+            "ptr->member",
+            "(*ptr).member",
+            "ptr[0].member"
+        ],
+        "right": [
+            "Dot operator",
+            "Arrow operator",
+            "Dereference + dot",
+            "Array + dot"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "struct Box { int size; };\nstruct Box boxes[2] = {{10}, {20}};\nstruct Box *p = boxes;\np++;\nprintf(\"%d\", p->size);",
+        "o": [
+            "20",
+            "10",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Incrementing struct pointer moves by ______ size.",
+        "type": "fill_blank",
+        "answers": [
+            "struct"
+        ],
+        "other_options": [
+            "int",
+            "byte",
+            "element"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[4] = {1, 2, 3, 4};\nint *p = arr;\nint sum = 0;\ndo { sum += *p++; } while (p < arr + 4);\nprintf(\"%d\", sum);",
+        "o": [
+            "10",
+            "6",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Do-while with pointer processes at least one element.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5;\nint *p = &x;\nint y = (*p)++;\nprintf(\"%d %d\", x, y);",
+        "o": [
+            "6 5",
+            "5 5",
+            "6 6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange post-increment through pointer:",
+        "type": "rearrange",
+        "words": [
+            "dereference pointer",
+            "get current value",
+            "increment original",
+            "return old value"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5;\nint *p = &x;\nint y = ++(*p);\nprintf(\"%d %d\", x, y);",
+        "o": [
+            "6 6",
+            "5 6",
+            "6 5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pre-increment returns new ______.",
+        "type": "fill_blank",
+        "answers": [
+            "value"
+        ],
+        "other_options": [
+            "address",
+            "pointer",
+            "copy"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *s = \"Test\";\nwhile (*s) s++;\nprintf(\"%ld\", s - \"Test\");",
+        "o": [
+            "4",
+            "5",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer difference on string gives length.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 1, b = 2, c = 3;\nint *ptrs[] = {&c, &b, &a};\nfor (int i = 0; i < 3; i++)\n    printf(\"%d \", *ptrs[i]);",
+        "o": [
+            "3 2 1",
+            "1 2 3",
+            "3 3 3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match array of pointers use with benefit:",
+        "type": "match",
+        "left": [
+            "String array",
+            "Sorting strings",
+            "Variable access",
+            "Indirect array"
+        ],
+        "right": [
+            "char *arr[]",
+            "Swap pointers only",
+            "Through pointers",
+            "Flexible layout"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int val = 99;\nint *p = &val;\nint **pp = &p;\nprintf(\"%d %d\", *p, **pp);",
+        "o": [
+            "99 99",
+            "99 Address",
+            "Address 99",
+            "Error"
+        ]
+    },
+    {
+        "q": "Both *p and **pp give same result when pp points to p.",
+        "type": "fill_blank",
+        "answers": [
+            "same"
+        ],
+        "other_options": [
+            "different",
+            "error",
+            "undefined"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {10, 20, 30};\nint (*p)[3] = &arr;\nprintf(\"%d\", (*p)[1]);",
+        "o": [
+            "20",
+            "10",
+            "30",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer to entire array needs dereference before indexing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 5;\nint *p = &a;\nint *q = NULL;\nq = p;\nprintf(\"%d\", *q);",
+        "o": [
+            "5",
+            "0",
+            "NULL",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange pointer assignment:",
+        "type": "rearrange",
+        "words": [
+            "declare pointers",
+            "assign address to first",
+            "copy to second",
+            "both point same"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int data[] = {1, 2, 3, 4, 5};\nint *p = data + 2;\nprintf(\"%d\", *(p - 1) + *(p + 1));",
+        "o": [
+            "6",
+            "5",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Relative pointer access uses positive and ______ offsets.",
+        "type": "fill_blank",
+        "answers": [
+            "negative"
+        ],
+        "other_options": [
+            "zero",
+            "null",
+            "large"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *words[2] = {\"Hello\", \"World\"};\nchar **pp = words;\nprintf(\"%c\", (*pp)[1]);",
+        "o": [
+            "e",
+            "H",
+            "W",
+            "Error"
+        ]
+    },
+    {
+        "q": "Double pointer to string array accesses individual chars.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 10;\nint *p = &x;\nprintf(\"%d\", (*p)++);",
+        "o": [
+            "10",
+            "11",
+            "9",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match increment expression with result:",
+        "type": "match",
+        "left": [
+            "(*p)++",
+            "++(*p)",
+            "*p++",
+            "*++p"
+        ],
+        "right": [
+            "Get then inc value",
+            "Inc value then get",
+            "Get then inc ptr",
+            "Inc ptr then get"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 2, 3};\nint *p = arr;\nprintf(\"%d\", *p++ + *p);",
+        "o": [
+            "3",
+            "2",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Multiple side effects in expression cause undefined ______.",
+        "type": "fill_blank",
+        "answers": [
+            "behavior"
+        ],
+        "other_options": [
+            "output",
+            "value",
+            "error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[4] = {10, 20, 30, 40};\nint *p = arr;\np = p + 2;\nprintf(\"%d\", *p);",
+        "o": [
+            "30",
+            "20",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Adding integer to pointer skips that many elements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char str[] = \"AB\";\nchar *p = str;\nprintf(\"%c%c\", *p, *(p+1));",
+        "o": [
+            "AB",
+            "BA",
+            "AA",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange adjacent element access:",
+        "type": "rearrange",
+        "words": [
+            "get pointer",
+            "dereference current",
+            "add offset",
+            "dereference next"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int vals[3] = {100, 200, 300};\nint *ptr = &vals[1];\nprintf(\"%d\", ptr[1]);",
+        "o": [
+            "300",
+            "200",
+            "100",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer in middle uses relative ______.",
+        "type": "fill_blank",
+        "answers": [
+            "indexing"
+        ],
+        "other_options": [
+            "counting",
+            "adding",
+            "subtracting"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 5, b = 10;\nint *pa = &a, *pb = &b;\nprintf(\"%d\", *pa < *pb);",
+        "o": [
+            "1",
+            "0",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Comparison operators work on dereferenced pointer values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 7;\nint *p = &x;\nif (*p > 5) printf(\"Big\");\nelse printf(\"Small\");",
+        "o": [
+            "Big",
+            "Small",
+            "7",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match conditional with pointer use:",
+        "type": "match",
+        "left": [
+            "*p > val",
+            "p != NULL",
+            "*p == 0",
+            "p < q"
+        ],
+        "right": [
+            "Value comparison",
+            "Null check",
+            "Zero check",
+            "Address comparison"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {1, 2, 3};\nint *p = arr;\n*p = 10;\n*(p+1) = 20;\nprintf(\"%d %d\", arr[0], arr[1]);",
+        "o": [
+            "10 20",
+            "1 2",
+            "10 2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Assignment through pointer modifies original ______.",
+        "type": "fill_blank",
+        "answers": [
+            "array"
+        ],
+        "other_options": [
+            "pointer",
+            "copy",
+            "value"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int num = 25;\nint *p = &num;\nint **pp = &p;\n*p = 50;\nprintf(\"%d\", **pp);",
+        "o": [
+            "50",
+            "25",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Double pointer sees changes made through single pointer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *s = \"ABCD\";\nint i = 0;\nwhile (s[i]) { printf(\"%c\", s[i]); i++; }",
+        "o": [
+            "ABCD",
+            "A",
+            "D",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange index-based string traverse:",
+        "type": "rearrange",
+        "words": [
+            "initialize index",
+            "check character",
+            "print character",
+            "increment index"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int data[] = {5, 10, 15, 20};\nint *p1 = data, *p2 = data + 3;\nwhile (p1 < p2) { printf(\"%d \", *p1++); }",
+        "o": [
+            "5 10 15",
+            "5 10 15 20",
+            "20 15 10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Loop using pointer comparison stops before ______ pointer.",
+        "type": "fill_blank",
+        "answers": [
+            "end"
+        ],
+        "other_options": [
+            "start",
+            "middle",
+            "null"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[5] = {1, 2, 3, 4, 5};\nint *p = &arr[2];\nprintf(\"%d %d\", p[-1], p[1]);",
+        "o": [
+            "2 4",
+            "1 3",
+            "2 3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Negative and positive indices work from pointer position.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "struct Item { int id; char code; };\nstruct Item item = {10, 'A'};\nstruct Item *p = &item;\nprintf(\"%d %c\", p->id, p->code);",
+        "o": [
+            "10 A",
+            "A 10",
+            "10 10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match struct member access with syntax:",
+        "type": "match",
+        "left": [
+            "Direct member",
+            "Pointer member",
+            "Nested direct",
+            "Nested pointer"
+        ],
+        "right": [
+            "s.member",
+            "p->member",
+            "s.inner.m",
+            "p->inner.m"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "typedef struct { int x; } Num;\nNum n = {42};\nNum *p = &n;\np->x = 100;\nprintf(\"%d\", n.x);",
+        "o": [
+            "100",
+            "42",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Arrow operator modifies original struct ______.",
+        "type": "fill_blank",
+        "answers": [
+            "member"
+        ],
+        "other_options": [
+            "copy",
+            "value",
+            "address"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *p = NULL;\nif (p) printf(\"Not NULL\");\nelse printf(\"NULL\");",
+        "o": [
+            "NULL",
+            "Not NULL",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "NULL pointer is falsy in boolean context.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 10;\nint *p = &x;\nint *q = &x;\nprintf(\"%d\", p == q);",
+        "o": [
+            "1",
+            "0",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange pointer equality check:",
+        "type": "rearrange",
+        "words": [
+            "get first address",
+            "get second address",
+            "compare addresses",
+            "result is boolean"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {1, 2, 3};\nint *p = arr;\nint *q = arr + 3;\nprintf(\"%ld\", q - p);",
+        "o": [
+            "3",
+            "9",
+            "12",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer difference gives element count not ______.",
+        "type": "fill_blank",
+        "answers": [
+            "bytes"
+        ],
+        "other_options": [
+            "bits",
+            "values",
+            "addresses"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *str = \"Hello\";\nprintf(\"%s\", str + 2);",
+        "o": [
+            "llo",
+            "Hello",
+            "ll",
+            "Error"
+        ]
+    },
+    {
+        "q": "Adding to string pointer starts printing from offset.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[4] = {1, 2, 3, 4};\nint *end = arr + 4;\nint *p = end - 1;\nprintf(\"%d\", *p);",
+        "o": [
+            "4",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match pointer position with element:",
+        "type": "match",
+        "left": [
+            "arr",
+            "arr + n - 1",
+            "arr + n",
+            "arr - 1"
+        ],
+        "right": [
+            "First element",
+            "Last element",
+            "Past end",
+            "Before start (invalid)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *p = (int*)malloc(sizeof(int));\n*p = 42;\nint *q = p;\n*q = 84;\nprintf(\"%d\", *p);\nfree(p);",
+        "o": [
+            "84",
+            "42",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Aliased pointers share the same ______.",
+        "type": "fill_blank",
+        "answers": [
+            "memory"
+        ],
+        "other_options": [
+            "value",
+            "copy",
+            "type"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {10, 20, 30};\nprintf(\"%d\", sizeof(arr) / sizeof(*arr));",
+        "o": [
+            "3",
+            "12",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Array length calculation uses sizeof with dereference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5;\nint *p = &x;\nint **pp = &p;\n(*pp)++;\nprintf(\"done\");",
+        "o": [
+            "done",
+            "5",
+            "Error",
+            "Crash"
+        ]
+    },
+    {
+        "q": "Rearrange double pointer modification:",
+        "type": "rearrange",
+        "words": [
+            "dereference once",
+            "modify pointer value",
+            "pointer now points",
+            "elsewhere in memory"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char ch = 'Z';\nchar *p = &ch;\n(*p)--;\nprintf(\"%c\", ch);",
+        "o": [
+            "Y",
+            "Z",
+            "A",
+            "Error"
+        ]
+    },
+    {
+        "q": "Character decrement gives previous ASCII ______.",
+        "type": "fill_blank",
+        "answers": [
+            "character"
+        ],
+        "other_options": [
+            "value",
+            "code",
+            "number"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[2][2] = {{1, 2}, {3, 4}};\nint *p = &arr[0][0];\nprintf(\"%d %d\", p[1], p[2]);",
+        "o": [
+            "2 3",
+            "1 2",
+            "2 4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Flattened 2D array access is row-major order.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 100;\nvoid *vp = &x;\nint *ip = vp;\nprintf(\"%d\", *ip);",
+        "o": [
+            "100",
+            "0",
+            "Error",
+            "Address"
+        ]
+    },
+    {
+        "q": "Match void pointer cast with result:",
+        "type": "match",
+        "left": [
+            "(void*)",
+            "(int*)",
+            "(char*)",
+            "(float*)"
+        ],
+        "right": [
+            "Generic pointer",
+            "Integer access",
+            "Byte access",
+            "Float access"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 1, b = 2;\nint *ptrs[2] = {&a, &b};\n*ptrs[1] = 20;\nprintf(\"%d\", b);",
+        "o": [
+            "20",
+            "2",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Array of pointers allows modifying original ______.",
+        "type": "fill_blank",
+        "answers": [
+            "variables"
+        ],
+        "other_options": [
+            "pointers",
+            "copies",
+            "arrays"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int cube(int x) { return x * x * x; }\nint (*fp)(int) = cube;\nprintf(\"%d\", (*fp)(3));",
+        "o": [
+            "27",
+            "9",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Function pointer can be called with (*fp) or fp directly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {5, 10, 15};\nint *p = arr;\nprintf(\"%d\", p[0] + p[2]);",
+        "o": [
+            "20",
+            "15",
+            "25",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange array sum via pointer:",
+        "type": "rearrange",
+        "words": [
+            "point to array",
+            "use array notation",
+            "sum elements",
+            "print result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *s = \"Test\";\nchar *p = s;\nwhile (*p != '\\0') p++;\nprintf(\"%ld\", p - s);",
+        "o": [
+            "4",
+            "5",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer difference on string equals string ______.",
+        "type": "fill_blank",
+        "answers": [
+            "length"
+        ],
+        "other_options": [
+            "size",
+            "count",
+            "value"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int nums[4] = {1, 2, 3, 4};\nint *p = nums + 1;\nint *q = nums + 3;\nprintf(\"%d\", *q - *p);",
+        "o": [
+            "2",
+            "4",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Value difference uses dereferenced pointers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 50;\nint *p = &x;\nint y = *p / 2;\nprintf(\"%d\", y);",
+        "o": [
+            "25",
+            "50",
+            "100",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match operation with pointer expression:",
+        "type": "match",
+        "left": [
+            "*p + 1",
+            "*p * 2",
+            "*p / 2",
+            "*p % 2"
+        ],
+        "right": [
+            "Add one",
+            "Double",
+            "Half",
+            "Remainder"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {10, 20, 30};\nint *p = arr;\nint *q = arr + 2;\nprintf(\"%d\", *p + *q);",
+        "o": [
+            "40",
+            "30",
+            "50",
+            "Error"
+        ]
+    },
+    {
+        "q": "Summing first and last uses pointers to ______.",
+        "type": "fill_blank",
+        "answers": [
+            "both"
+        ],
+        "other_options": [
+            "first",
+            "last",
+            "middle"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char c = 'a';\nchar *p = &c;\nprintf(\"%d\", *p);",
+        "o": [
+            "97",
+            "a",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Printing char with %d shows ASCII value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int matrix[2][2] = {{1, 2}, {3, 4}};\nint (*p)[2] = matrix;\nprintf(\"%d\", (*(p + 1))[0]);",
+        "o": [
+            "3",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange row pointer access:",
+        "type": "rearrange",
+        "words": [
+            "pointer to row",
+            "add row offset",
+            "dereference to row",
+            "index column"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {5, 10, 15};\nint **pp;\nint *p = arr;\npp = &p;\n(*pp)++;\nprintf(\"%d\", **pp);",
+        "o": [
+            "10",
+            "5",
+            "15",
+            "Error"
+        ]
+    },
+    {
+        "q": "Incrementing through double pointer moves single ______.",
+        "type": "fill_blank",
+        "answers": [
+            "pointer"
+        ],
+        "other_options": [
+            "value",
+            "array",
+            "element"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 10;\nint *p = &x;\nprintf(\"%p\" != NULL ? \"valid\" : \"null\", p);",
+        "o": [
+            "valid",
+            "null",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Format specifier %p prints pointer address.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {100, 200, 300};\nint *p = &arr[1];\np--;\nprintf(\"%d\", *p);",
+        "o": [
+            "100",
+            "200",
+            "300",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match decrement with effect:",
+        "type": "match",
+        "left": [
+            "p--",
+            "--p",
+            "*p--",
+            "*--p"
+        ],
+        "right": [
+            "Dec after use",
+            "Dec before use",
+            "Get then dec ptr",
+            "Dec ptr then get"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int val = 7;\nint *p = &val;\nprintf(\"%d\", *p * *p);",
+        "o": [
+            "49",
+            "7",
+            "14",
+            "Error"
+        ]
+    },
+    {
+        "q": "Dereferenced pointer can be used in ______.",
+        "type": "fill_blank",
+        "answers": [
+            "expressions"
+        ],
+        "other_options": [
+            "declarations",
+            "definitions",
+            "macros"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *words[] = {\"one\", \"two\"};\nchar **p = words;\nprintf(\"%s\", p[1]);",
+        "o": [
+            "two",
+            "one",
+            "t",
+            "Error"
+        ]
+    },
+    {
+        "q": "Double pointer indexed gives string pointer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 1, b = 2, c = 3;\nint *arr[] = {&c, &b, &a};\nint sum = 0;\nfor (int i = 0; i < 3; i++) sum += *arr[i];\nprintf(\"%d\", sum);",
+        "o": [
+            "6",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange sum through pointer array:",
+        "type": "rearrange",
+        "words": [
+            "loop through array",
+            "dereference each",
+            "add to sum",
+            "print total"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "struct Pair { int a; int b; };\nstruct Pair p = {5, 10};\nstruct Pair *ptr = &p;\nprintf(\"%d\", ptr->a + ptr->b);",
+        "o": [
+            "15",
+            "5",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Arrow operator accesses struct member through ______.",
+        "type": "fill_blank",
+        "answers": [
+            "pointer"
+        ],
+        "other_options": [
+            "value",
+            "copy",
+            "reference"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 100;\nconst int *p = &x;\nprintf(\"%d\", *p);",
+        "o": [
+            "100",
+            "0",
+            "Error",
+            "Address"
+        ]
+    },
+    {
+        "q": "Pointer to const can read but not write.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 2, 3, 4, 5};\nint *p = arr, *q = arr + 4;\nint temp;\nwhile (p < q) {\n    temp = *p; *p = *q; *q = temp;\n    p++; q--;\n}\nprintf(\"%d %d\", arr[0], arr[4]);",
+        "o": [
+            "5 1",
+            "1 5",
+            "5 5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match swap with its requirement:",
+        "type": "match",
+        "left": [
+            "Value swap",
+            "Pointer swap",
+            "In-place",
+            "External"
+        ],
+        "right": [
+            "Change contents",
+            "Change addresses",
+            "No extra array",
+            "Using temp array"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char str[] = \"XYZ\";\nchar *p = str;\n*p = 'A';\nprintf(\"%s\", str);",
+        "o": [
+            "AYZ",
+            "XYZ",
+            "A",
+            "Error"
+        ]
+    },
+    {
+        "q": "Modifying string array through pointer changes ______.",
+        "type": "fill_blank",
+        "answers": [
+            "original"
+        ],
+        "other_options": [
+            "copy",
+            "pointer",
+            "literal"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *p = (int*)malloc(sizeof(int) * 2);\np[0] = 10; p[1] = 20;\nint sum = *(p) + *(p + 1);\nprintf(\"%d\", sum);\nfree(p);",
+        "o": [
+            "30",
+            "10",
+            "20",
+            "Error"
+        ]
+    },
+    {
+        "q": "Heap allocated arrays use pointer notation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {1, 2, 3};\nint *p = arr;\nint *end = arr + 3;\nfor (; p != end; p++)\n    printf(\"%d \", *p);",
+        "o": [
+            "1 2 3",
+            "1 2",
+            "3 2 1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange iterator pattern:",
+        "type": "rearrange",
+        "words": [
+            "set to begin",
+            "check against end",
+            "process current",
+            "move to next"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5, y = 10;\nint *p = &x;\nint *q = &y;\nint *r = (*p > *q) ? p : q;\nprintf(\"%d\", *r);",
+        "o": [
+            "10",
+            "5",
+            "15",
+            "Error"
+        ]
+    },
+    {
+        "q": "Ternary with pointers selects based on ______.",
+        "type": "fill_blank",
+        "answers": [
+            "condition"
+        ],
+        "other_options": [
+            "address",
+            "type",
+            "size"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {10, 20, 30};\nint *front = arr, *back = arr + 2;\nprintf(\"%d\", *back > *front);",
+        "o": [
+            "1",
+            "0",
+            "30",
+            "Error"
+        ]
+    },
+    {
+        "q": "Comparing values at two pointers requires dereferencing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *name = \"Alice\";\nint len = 0;\nfor (char *p = name; *p; p++) len++;\nprintf(\"%d\", len);",
+        "o": [
+            "5",
+            "6",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match loop type with pointer use:",
+        "type": "match",
+        "left": [
+            "for loop",
+            "while loop",
+            "do-while",
+            "recursive"
+        ],
+        "right": [
+            "Bounded iteration",
+            "Conditional",
+            "At least once",
+            "Stack based"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int data[4] = {1, 2, 3, 4};\nint *p = data;\nint product = 1;\nfor (int i = 0; i < 4; i++) product *= *(p + i);\nprintf(\"%d\", product);",
+        "o": [
+            "24",
+            "10",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Loop product uses pointer offset within ______.",
+        "type": "fill_blank",
+        "answers": [
+            "iteration"
+        ],
+        "other_options": [
+            "function",
+            "scope",
+            "block"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 1;\nint *p = &x;\nfor (int i = 0; i < 3; i++) *p *= 2;\nprintf(\"%d\", x);",
+        "o": [
+            "8",
+            "6",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Loop modifying through pointer affects original variable.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 2, 3, 4};\nint *p = arr + 3;\nprintf(\"%d %d\", *p, *(p - 3));",
+        "o": [
+            "4 1",
+            "1 4",
+            "3 0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange bidirectional access:",
+        "type": "rearrange",
+        "words": [
+            "pointer at end",
+            "subtract offset",
+            "access earlier",
+            "element retrieved"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char word[6] = \"hello\";\nchar *p = word + 4;\n*p = 'p';\nprintf(\"%s\", word);",
+        "o": [
+            "hellp",
+            "hello",
+            "hellop",
+            "Error"
+        ]
+    },
+    {
+        "q": "Modifying character at offset changes ______.",
+        "type": "fill_blank",
+        "answers": [
+            "string"
+        ],
+        "other_options": [
+            "pointer",
+            "array",
+            "literal"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int vals[3] = {10, 20, 30};\nint sum = *vals + *(vals + 1) + *(vals + 2);\nprintf(\"%d\", sum);",
+        "o": [
+            "60",
+            "30",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Array name with dereference acts like pointer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nint *p = &n;\n*p = *p + *p;\nprintf(\"%d\", n);",
+        "o": [
+            "10",
+            "5",
+            "15",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match pointer expression with equivalent:",
+        "type": "match",
+        "left": [
+            "*p + *p",
+            "*p * 2",
+            "2 * (*p)",
+            "*p << 1"
+        ],
+        "right": [
+            "Double value",
+            "Same as *p+*p",
+            "Same as *p*2",
+            "Left shift doubles"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[4] = {5, 10, 15, 20};\nint *p = arr;\nint max = *p++;\nwhile (p < arr + 4) {\n    if (*p > max) max = *p;\n    p++;\n}\nprintf(\"%d\", max);",
+        "o": [
+            "20",
+            "5",
+            "15",
+            "Error"
+        ]
+    },
+    {
+        "q": "Finding max uses comparison with current ______.",
+        "type": "fill_blank",
+        "answers": [
+            "maximum"
+        ],
+        "other_options": [
+            "minimum",
+            "average",
+            "sum"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {3, 1, 2};\nint *p = arr;\nint min = *p;\nfor (int i = 1; i < 3; i++)\n    if (*(p + i) < min) min = *(p + i);\nprintf(\"%d\", min);",
+        "o": [
+            "1",
+            "2",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Minimum finding updates when smaller value found.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *str = \"abcde\";\nchar *p = str;\nint vowels = 0;\nwhile (*p) {\n    if (*p == 'a' || *p == 'e') vowels++;\n    p++;\n}\nprintf(\"%d\", vowels);",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange counting characters:",
+        "type": "rearrange",
+        "words": [
+            "traverse string",
+            "check condition",
+            "increment count",
+            "move to next"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[5] = {2, 4, 6, 8, 10};\nint *p = arr;\nint evenSum = 0;\nfor (int i = 0; i < 5; i++)\n    if (*(p + i) % 2 == 0) evenSum += *(p + i);\nprintf(\"%d\", evenSum);",
+        "o": [
+            "30",
+            "20",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Conditional sum adds only matching ______.",
+        "type": "fill_blank",
+        "answers": [
+            "elements"
+        ],
+        "other_options": [
+            "indices",
+            "pointers",
+            "addresses"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 100, y = 200;\nint *arr[] = {&x, &y};\nint total = 0;\nfor (int i = 0; i < 2; i++) total += *arr[i];\nprintf(\"%d\", total);",
+        "o": [
+            "300",
+            "100",
+            "200",
+            "Error"
+        ]
+    },
+    {
+        "q": "Iterating pointer array requires element dereference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 5, b = 10, c = 15;\nint *ptrs[] = {&a, &b, &c};\n*ptrs[0] = *ptrs[1] + *ptrs[2];\nprintf(\"%d\", a);",
+        "o": [
+            "25",
+            "5",
+            "30",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match operation with pointer array:",
+        "type": "match",
+        "left": [
+            "*ptrs[i]",
+            "ptrs[i]",
+            "&ptrs[i]",
+            "**ptrs"
+        ],
+        "right": [
+            "Value at i",
+            "Pointer at i",
+            "Address of pointer",
+            "First value"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "struct Point { int x; int y; };\nstruct Point p = {5, 10};\nstruct Point *ptr = &p;\nptr->x += ptr->y;\nprintf(\"%d\", p.x);",
+        "o": [
+            "15",
+            "5",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Struct pointer modification affects original ______.",
+        "type": "fill_blank",
+        "answers": [
+            "struct"
+        ],
+        "other_options": [
+            "pointer",
+            "copy",
+            "value"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "struct Data { int val; };\nstruct Data arr[3] = {{10}, {20}, {30}};\nstruct Data *p = arr + 1;\nprintf(\"%d\", p->val);",
+        "o": [
+            "20",
+            "10",
+            "30",
+            "Error"
+        ]
+    },
+    {
+        "q": "Struct array pointer arithmetic works correctly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "typedef struct { int id; } Item;\nItem items[2] = {{1}, {2}};\nItem *p = items;\nint sum = 0;\nfor (int i = 0; i < 2; i++) sum += (p + i)->id;\nprintf(\"%d\", sum);",
+        "o": [
+            "3",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange struct array iteration:",
+        "type": "rearrange",
+        "words": [
+            "pointer to array",
+            "loop through indices",
+            "access via offset",
+            "use arrow operator"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5;\nint *p = &x;\nint **pp = &p;\nint ***ppp = &pp;\nprintf(\"%d\", ***ppp);",
+        "o": [
+            "5",
+            "Address",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "Triple pointer needs three dereferences for ______.",
+        "type": "fill_blank",
+        "answers": [
+            "value"
+        ],
+        "other_options": [
+            "address",
+            "pointer",
+            "type"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char chars[4] = {'a', 'b', 'c', '\\0'};\nchar *p = chars;\nwhile (*p) { printf(\"%c\", *p); p++; }",
+        "o": [
+            "abc",
+            "a",
+            "abc0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Character array with null terminator acts like string.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int nums[] = {1, 2, 3, 4, 5};\nint *start = nums + 1, *end = nums + 4;\nint sum = 0;\nfor (int *p = start; p < end; p++) sum += *p;\nprintf(\"%d\", sum);",
+        "o": [
+            "9",
+            "10",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match range with elements:",
+        "type": "match",
+        "left": [
+            "[1,4)",
+            "[0,5)",
+            "[2,3)",
+            "[0,3]"
+        ],
+        "right": [
+            "2,3,4",
+            "All 5",
+            "3 only",
+            "1,2,3"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {10, 20, 30};\nint *p = arr;\nint *q = p;\np++;\nprintf(\"%d %d\", *p, *q);",
+        "o": [
+            "20 10",
+            "10 20",
+            "20 20",
+            "Error"
+        ]
+    },
+    {
+        "q": "Incrementing one pointer leaves copy ______.",
+        "type": "fill_blank",
+        "answers": [
+            "unchanged"
+        ],
+        "other_options": [
+            "incremented",
+            "null",
+            "invalid"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int val = 42;\nint *p = &val;\n&val == p ? printf(\"Same\") : printf(\"Different\");",
+        "o": [
+            "Same",
+            "Different",
+            "42",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer equality means same memory address.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a[] = {1, 2};\nint b[] = {3, 4};\nint *parr[] = {a, b};\nprintf(\"%d\", parr[1][0]);",
+        "o": [
+            "3",
+            "1",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange 2D access via pointer array:",
+        "type": "rearrange",
+        "words": [
+            "get array pointer",
+            "index into arrays",
+            "access element",
+            "value retrieved"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int nums[3] = {5, 10, 15};\nint *p = nums;\nprintf(\"%d\", 2[p]);",
+        "o": [
+            "15",
+            "10",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Expression i[p] is equivalent to ______.",
+        "type": "fill_blank",
+        "answers": [
+            "p[i]"
+        ],
+        "other_options": [
+            "*p+i",
+            "p+i",
+            "&p[i]"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *s = \"Hello\";\nprintf(\"%c\", 4[s]);",
+        "o": [
+            "o",
+            "H",
+            "l",
+            "Error"
+        ]
+    },
+    {
+        "q": "Reverse indexing works due to commutative addition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[4] = {1, 2, 3, 4};\nint sum = arr[0] + 1[arr] + arr[2] + 3[arr];\nprintf(\"%d\", sum);",
+        "o": [
+            "10",
+            "4",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match indexing style with expression:",
+        "type": "match",
+        "left": [
+            "arr[i]",
+            "i[arr]",
+            "*(arr+i)",
+            "*(i+arr)"
+        ],
+        "right": [
+            "Standard",
+            "Reversed",
+            "Pointer form",
+            "Same as reversed"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 10;\nint *p = &x;\nprintf(\"%ld\", (long)p % 4 == 0 ? 1 : 0);",
+        "o": [
+            "1",
+            "0",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Memory alignment often requires addresses divisible by ______.",
+        "type": "fill_blank",
+        "answers": [
+            "type size"
+        ],
+        "other_options": [
+            "pointer size",
+            "one",
+            "memory size"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "void *vp;\nint x = 10;\nvp = &x;\nprintf(\"%d\", *(int*)vp);",
+        "o": [
+            "10",
+            "0",
+            "Address",
+            "Error"
+        ]
+    },
+    {
+        "q": "Void pointer can hold any type's address.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "float f = 3.14;\nvoid *vp = &f;\nprintf(\"%.2f\", *(float*)vp);",
+        "o": [
+            "3.14",
+            "3",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange void pointer usage:",
+        "type": "rearrange",
+        "words": [
+            "assign to void*",
+            "cast to type*",
+            "dereference",
+            "get value"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {1, 2, 3};\nvoid *vp = arr;\nint *ip = (int*)vp + 1;\nprintf(\"%d\", *ip);",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Void pointer must be cast before ______.",
+        "type": "fill_blank",
+        "answers": [
+            "arithmetic"
+        ],
+        "other_options": [
+            "assignment",
+            "comparison",
+            "declaration"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int matrix[2][2] = {{5, 6}, {7, 8}};\nint sum = **matrix + *(*matrix + 1) + **(matrix + 1) + *(*(matrix + 1) + 1);\nprintf(\"%d\", sum);",
+        "o": [
+            "26",
+            "20",
+            "18",
+            "Error"
+        ]
+    },
+    {
+        "q": "2D array pointer notation requires double dereference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 2, 3};\nint n = sizeof(arr) / sizeof(arr[0]);\nprintf(\"%d\", n);",
+        "o": [
+            "3",
+            "12",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match sizeof expression with result:",
+        "type": "match",
+        "left": [
+            "sizeof(arr)",
+            "sizeof(arr[0])",
+            "sizeof(&arr)",
+            "sizeof(*arr)"
+        ],
+        "right": [
+            "Total bytes",
+            "Element size",
+            "Pointer size",
+            "Element size"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 255;\nunsigned char *p = (unsigned char*)&x;\nprintf(\"%d\", *p);",
+        "o": [
+            "255",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Casting to char* accesses individual ______.",
+        "type": "fill_blank",
+        "answers": [
+            "bytes"
+        ],
+        "other_options": [
+            "bits",
+            "words",
+            "values"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int num = 0x12345678;\nunsigned char *p = (unsigned char*)&num;\nprintf(\"%x\", *p);",
+        "o": [
+            "78",
+            "12",
+            "34",
+            "Error"
+        ]
+    },
+    {
+        "q": "Little endian stores least significant byte first.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[2] = {100, 200};\nchar *p = (char*)arr;\np += sizeof(int);\nprintf(\"%d\", *(int*)p);",
+        "o": [
+            "200",
+            "100",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange byte-level array navigation:",
+        "type": "rearrange",
+        "words": [
+            "cast to char*",
+            "add type size",
+            "cast back to int*",
+            "dereference"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int val = 10;\nint *p = &val;\n(*p)++;\n++(*p);\nprintf(\"%d\", val);",
+        "o": [
+            "12",
+            "10",
+            "11",
+            "Error"
+        ]
+    },
+    {
+        "q": "Both post and pre increment through pointer affect ______.",
+        "type": "fill_blank",
+        "answers": [
+            "original"
+        ],
+        "other_options": [
+            "copy",
+            "pointer",
+            "address"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 5, b = 10;\nint *p = &a, *q = &b;\nif (*p < *q) printf(\"Less\");\nelse printf(\"Not Less\");",
+        "o": [
+            "Less",
+            "Not Less",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Comparison of dereferenced pointers compares values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {1, 2, 3};\nint *p = arr;\nwhile (p < arr + 3 && *p != 2) p++;\nprintf(\"%ld\", p - arr);",
+        "o": [
+            "1",
+            "0",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match search pattern with output:",
+        "type": "match",
+        "left": [
+            "Find first",
+            "Find last",
+            "Find count",
+            "Find index"
+        ],
+        "right": [
+            "Return on match",
+            "Track last match",
+            "Count matches",
+            "Pointer - start"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *names[] = {\"Alice\", \"Bob\", \"Carol\"};\nchar **p = names + 1;\nprintf(\"%s\", *p);",
+        "o": [
+            "Bob",
+            "Alice",
+            "Carol",
+            "Error"
+        ]
+    },
+    {
+        "q": "Double pointer to string array increments by ______ size.",
+        "type": "fill_blank",
+        "answers": [
+            "pointer"
+        ],
+        "other_options": [
+            "char",
+            "string",
+            "array"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int square(int n) { return n * n; }\nint (*f)(int);\nf = square;\nprintf(\"%d\", f(f(2)));",
+        "o": [
+            "16",
+            "4",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Nested function pointer calls are valid.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int triple(int x) { return x * 3; }\nint half(int x) { return x / 2; }\nint (*ops[])(int) = {triple, half};\nprintf(\"%d %d\", ops[0](4), ops[1](10));",
+        "o": [
+            "12 5",
+            "5 12",
+            "12 12",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange function pointer array call:",
+        "type": "rearrange",
+        "words": [
+            "index into array",
+            "get function pointer",
+            "call with argument",
+            "get result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int compute(int a, int b, int (*op)(int, int)) {\n    return op(a, b);\n}\nint add(int x, int y) { return x + y; }\nprintf(\"%d\", compute(3, 4, add));",
+        "o": [
+            "7",
+            "12",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Callback pattern passes function as ______.",
+        "type": "fill_blank",
+        "answers": [
+            "argument"
+        ],
+        "other_options": [
+            "return",
+            "global",
+            "static"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[4] = {4, 3, 2, 1};\nint *left = arr, *right = arr + 3;\nwhile (left < right) {\n    if (*left > *right) {\n        int t = *left; *left = *right; *right = t;\n    }\n    left++; right--;\n}\nprintf(\"%d %d %d %d\", arr[0], arr[1], arr[2], arr[3]);",
+        "o": [
+            "1 2 3 4",
+            "4 3 2 1",
+            "1 3 2 4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Two pointer technique swaps elements symmetrically.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[5] = {0, 1, 0, 1, 0};\nint *p = arr, *q = arr;\nwhile (q < arr + 5) {\n    if (*q == 1) { int t = *p; *p = *q; *q = t; p++; }\n    q++;\n}\nprintf(\"%d %d\", arr[0], arr[1]);",
+        "o": [
+            "1 1",
+            "0 1",
+            "0 0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match partitioning with result:",
+        "type": "match",
+        "left": [
+            "Move 1s left",
+            "Move 0s left",
+            "Move evens left",
+            "Move odds left"
+        ],
+        "right": [
+            "1s at start",
+            "0s at start",
+            "Evens at start",
+            "Odds at start"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char s1[] = \"AB\", s2[] = \"CD\";\nchar *p1 = s1, *p2 = s2;\nwhile (*p1 && *p2) printf(\"%c%c\", *p1++, *p2++);",
+        "o": [
+            "ACBD",
+            "ABCD",
+            "AB",
+            "Error"
+        ]
+    },
+    {
+        "q": "Interleaving uses two pointers advancing ______.",
+        "type": "fill_blank",
+        "answers": [
+            "together"
+        ],
+        "other_options": [
+            "separately",
+            "alternately",
+            "randomly"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a[] = {1, 3, 5}, b[] = {2, 4};\nint *pa = a, *pb = b;\nint merged[5], i = 0;\nwhile (pa < a + 3 && pb < b + 2)\n    merged[i++] = (*pa < *pb) ? *pa++ : *pb++;\nwhile (pa < a + 3) merged[i++] = *pa++;\nwhile (pb < b + 2) merged[i++] = *pb++;\nprintf(\"%d %d %d %d %d\", merged[0], merged[1], merged[2], merged[3], merged[4]);",
+        "o": [
+            "1 2 3 4 5",
+            "1 3 5 2 4",
+            "2 4 1 3 5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Merge uses comparison to select smaller element.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[6] = {1, 2, 2, 3, 3, 3};\nint *slow = arr, *fast = arr + 1;\nwhile (fast < arr + 6) {\n    if (*fast != *slow) *(++slow) = *fast;\n    fast++;\n}\nprintf(\"%ld\", slow - arr + 1);",
+        "o": [
+            "3",
+            "6",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange duplicate removal:",
+        "type": "rearrange",
+        "words": [
+            "two pointers",
+            "compare values",
+            "copy if different",
+            "count unique"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char str[] = \"hello world\";\nchar *p = str;\nwhile (*p) {\n    if (*p == ' ') *p = '-';\n    p++;\n}\nprintf(\"%s\", str);",
+        "o": [
+            "hello-world",
+            "hello world",
+            "helloworld",
+            "Error"
+        ]
+    },
+    {
+        "q": "Character replacement modifies string ______.",
+        "type": "fill_blank",
+        "answers": [
+            "in-place"
+        ],
+        "other_options": [
+            "copy",
+            "literal",
+            "temporarily"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[4] = {1, 2, 3, 4};\nint *p = arr + 1, *q = arr + 2;\nint temp = *p; *p = *q; *q = temp;\nprintf(\"%d %d\", arr[1], arr[2]);",
+        "o": [
+            "3 2",
+            "2 3",
+            "1 4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Swapping via pointers exchanges values at memory locations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int nums[5] = {5, 4, 3, 2, 1};\nint *p = nums;\nfor (int i = 0; i < 5; i++)\n    if (p[i] % 2 == 1) printf(\"%d \", p[i]);",
+        "o": [
+            "5 3 1",
+            "4 2",
+            "5 4 3 2 1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match filter condition with result:",
+        "type": "match",
+        "left": [
+            "Even numbers",
+            "Odd numbers",
+            "Greater than 3",
+            "Less than 3"
+        ],
+        "right": [
+            "x % 2 == 0",
+            "x % 2 == 1",
+            "x > 3",
+            "x < 3"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *src = \"Hello\";\nchar dest[10];\nchar *d = dest, *s = src;\nwhile (*s) *d++ = *s++;\n*d = '\\0';\nprintf(\"%s\", dest);",
+        "o": [
+            "Hello",
+            "H",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "Manual string copy uses pointer ______.",
+        "type": "fill_blank",
+        "answers": [
+            "increment"
+        ],
+        "other_options": [
+            "decrement",
+            "assignment",
+            "comparison"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {10, 20, 30};\nint **pp;\nint *p = arr;\npp = &p;\nprintf(\"%d\", (*pp)[2]);",
+        "o": [
+            "30",
+            "10",
+            "20",
+            "Error"
+        ]
+    },
+    {
+        "q": "Double pointer with array notation accesses elements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5, y = 10;\nvoid *arr[] = {&x, &y};\nprintf(\"%d %d\", *(int*)arr[0], *(int*)arr[1]);",
+        "o": [
+            "5 10",
+            "10 5",
+            "Address",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange void pointer array access:",
+        "type": "rearrange",
+        "words": [
+            "index into array",
+            "get void pointer",
+            "cast to type",
+            "dereference"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[4] = {1, 2, 3, 4};\nint *p = arr;\nint count = 0;\nwhile (*p++) count++;\nprintf(\"%d\", count);",
+        "o": [
+            "4",
+            "3",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "While loop with postfix increment processes all ______.",
+        "type": "fill_blank",
+        "answers": [
+            "elements"
+        ],
+        "other_options": [
+            "pointers",
+            "indices",
+            "values"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int *getMax(int *a, int *b) {\n    return (*a > *b) ? a : b;\n}\nint x = 5, y = 10;\nint *m = getMax(&x, &y);\nprintf(\"%d\", *m);",
+        "o": [
+            "10",
+            "5",
+            "Address",
+            "Error"
+        ]
+    },
+    {
+        "q": "Function can return pointer to existing variable.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {1, 2, 3};\nint *p = arr;\nint sum = 0;\nfor (int i = 0; i < 3; i++, p++) sum += *p;\nprintf(\"%d\", sum);",
+        "o": [
+            "6",
+            "3",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match for loop component with action:",
+        "type": "match",
+        "left": [
+            "Init",
+            "Condition",
+            "Body",
+            "Increment"
+        ],
+        "right": [
+            "Set pointer",
+            "Check bounds",
+            "Process",
+            "Advance pointer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *s1 = \"abc\", *s2 = \"def\";\nchar *p1 = s1, *p2 = s2;\nint result = 0;\nwhile (*p1 && *p2) {\n    result += (*p1 - *p2);\n    p1++; p2++;\n}\nprintf(\"%d\", result);",
+        "o": [
+            "-9",
+            "9",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Character difference comparison gives ASCII ______.",
+        "type": "fill_blank",
+        "answers": [
+            "difference"
+        ],
+        "other_options": [
+            "sum",
+            "product",
+            "quotient"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int matrix[2][3] = {{1, 2, 3}, {4, 5, 6}};\nint *p = &matrix[0][0];\nint total = 0;\nfor (int i = 0; i < 6; i++) total += p[i];\nprintf(\"%d\", total);",
+        "o": [
+            "21",
+            "6",
+            "15",
+            "Error"
+        ]
+    },
+    {
+        "q": "Flattening 2D array allows single-pointer traversal.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[5] = {1, 2, 3, 4, 5};\nint *start = arr + 1;\nint *end = arr + 4;\nint sum = 0;\nfor (int *p = start; p < end; p++) sum += *p;\nprintf(\"%d\", sum);",
+        "o": [
+            "9",
+            "10",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange subarray sum:",
+        "type": "rearrange",
+        "words": [
+            "set start pointer",
+            "set end pointer",
+            "iterate range",
+            "accumulate sum"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 10, y = 20, z = 30;\nint *arr[] = {&z, &y, &x};\nfor (int i = 0; i < 3; i++) printf(\"%d \", *arr[i]);",
+        "o": [
+            "30 20 10",
+            "10 20 30",
+            "30 30 30",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer array order determines output ______.",
+        "type": "fill_blank",
+        "answers": [
+            "order"
+        ],
+        "other_options": [
+            "value",
+            "type",
+            "size"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "double d = 3.14159;\ndouble *p = &d;\nprintf(\"%.2f\", *p);",
+        "o": [
+            "3.14",
+            "3.14159",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Double pointer works same as int pointer for syntax.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "long arr[3] = {100L, 200L, 300L};\nlong *p = arr + 1;\nprintf(\"%ld\", *p);",
+        "o": [
+            "200",
+            "100",
+            "300",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match pointer type with its size on 64-bit system:",
+        "type": "match",
+        "left": [
+            "int*",
+            "char*",
+            "long*",
+            "void*"
+        ],
+        "right": [
+            "8 bytes",
+            "8 bytes",
+            "8 bytes",
+            "8 bytes"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[4] = {4, 3, 2, 1};\nint *p = arr, *q = arr + 3;\nwhile (p < q) {\n    int t = *p; *p++ = *q; *q-- = t;\n}\nprintf(\"%d %d %d %d\", arr[0], arr[1], arr[2], arr[3]);",
+        "o": [
+            "1 2 3 4",
+            "4 3 2 1",
+            "1 3 2 4",
+            "Error"
+        ]
+    },
+    {
+        "q": "In-place reversal uses two pointers moving ______.",
+        "type": "fill_blank",
+        "answers": [
+            "inward"
+        ],
+        "other_options": [
+            "outward",
+            "forward",
+            "backward"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char str[] = \"abcdef\";\nchar *p = str + 5;\nwhile (p >= str) printf(\"%c\", *p--);",
+        "o": [
+            "fedcba",
+            "abcdef",
+            "f",
+            "Error"
+        ]
+    },
+    {
+        "q": "Reverse printing uses decrementing pointer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[6] = {1, 2, 3, 4, 5, 6};\nint *p = arr + 2;\nint sum = *(p - 2) + *(p - 1) + *p + *(p + 1) + *(p + 2) + *(p + 3);\nprintf(\"%d\", sum);",
+        "o": [
+            "21",
+            "15",
+            "18",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange full array access from middle:",
+        "type": "rearrange",
+        "words": [
+            "pointer at middle",
+            "use negative offset",
+            "use positive offset",
+            "sum all elements"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int val = 50;\nint *p1 = &val, *p2 = &val;\n*p1 += 10;\n*p2 -= 5;\nprintf(\"%d\", val);",
+        "o": [
+            "55",
+            "50",
+            "60",
+            "Error"
+        ]
+    },
+    {
+        "q": "Multiple pointers modifying same variable compound ______.",
+        "type": "fill_blank",
+        "answers": [
+            "changes"
+        ],
+        "other_options": [
+            "values",
+            "types",
+            "addresses"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {10, 20, 30};\nint (*p)[3] = &arr;\nint sum = (*p)[0] + (*p)[1] + (*p)[2];\nprintf(\"%d\", sum);",
+        "o": [
+            "60",
+            "30",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer to whole array requires dereference before indexing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 100;\nint *p = &x;\nint *q = p;\nq = NULL;\nprintf(\"%d\", *p);",
+        "o": [
+            "100",
+            "0",
+            "NULL",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match null assignment with effect:",
+        "type": "match",
+        "left": [
+            "p = NULL",
+            "q = NULL",
+            "*p = 0",
+            "p = q"
+        ],
+        "right": [
+            "p becomes null",
+            "q becomes null",
+            "Value becomes 0",
+            "p points to q target"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 1, b = 2;\nint *p = &a;\np = &b;\n*p = 3;\nprintf(\"%d %d\", a, b);",
+        "o": [
+            "1 3",
+            "3 2",
+            "1 2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Reassigning pointer changes what it ______.",
+        "type": "fill_blank",
+        "answers": [
+            "points to"
+        ],
+        "other_options": [
+            "stores",
+            "copies",
+            "references"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {5, 10, 15, 20};\nint *p = arr;\nwhile (*p != 15) p++;\nprintf(\"%ld\", p - arr);",
+        "o": [
+            "2",
+            "15",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Searching by value returns position as pointer difference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char *words[3] = {\"one\", \"two\", \"three\"};\nint i;\nfor (i = 0; i < 3; i++)\n    if (words[i][0] == 't') break;\nprintf(\"%d\", i);",
+        "o": [
+            "1",
+            "0",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange find first match:",
+        "type": "rearrange",
+        "words": [
+            "iterate array",
+            "check condition",
+            "break on match",
+            "return index"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int val = 25;\nint *p = &val;\nprintf(\"%d %d\", val, *&val);",
+        "o": [
+            "25 25",
+            "25 Address",
+            "Address 25",
+            "Error"
+        ]
+    },
+    {
+        "q": "Expression *&val equals ______ directly.",
+        "type": "fill_blank",
+        "answers": [
+            "val"
+        ],
+        "other_options": [
+            "&val",
+            "*val",
+            "NULL"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[3] = {10, 20, 30};\nint *p = arr;\n*p = *p + *(p + 1) + *(p + 2);\nprintf(\"%d\", arr[0]);",
+        "o": [
+            "60",
+            "10",
+            "30",
+            "Error"
+        ]
+    },
+    {
+        "q": "Combining multiple dereferences in expression is valid.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "struct Node { int data; struct Node *next; };\nstruct Node a = {10, NULL}, b = {20, NULL};\na.next = &b;\nprintf(\"%d\", a.next->data);",
+        "o": [
+            "20",
+            "10",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match linked list operation with its pointer use:",
+        "type": "match",
+        "left": [
+            "head->data",
+            "head->next",
+            "head->next->data",
+            "head = head->next"
+        ],
+        "right": [
+            "First value",
+            "Second node",
+            "Second value",
+            "Move forward"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[4] = {1, 2, 3, 4};\nint *p = arr;\nint result = *p * *(p+1) + *(p+2) * *(p+3);\nprintf(\"%d\", result);",
+        "o": [
+            "14",
+            "10",
+            "24",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer arithmetic follows operator ______.",
+        "type": "fill_blank",
+        "answers": [
+            "precedence"
+        ],
+        "other_options": [
+            "order",
+            "type",
+            "size"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 10;\nint *p = &x;\nint **pp = &p;\n*p = 20;\n**pp = 30;\nprintf(\"%d\", x);",
+        "o": [
+            "30",
+            "20",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Last assignment through any pointer level wins.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char s[] = \"HELLO\";\nchar *p = s;\nwhile (*p) { *p = *p + 32; p++; }\nprintf(\"%s\", s);",
+        "o": [
+            "hello",
+            "HELLO",
+            "hELLO",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange case conversion:",
+        "type": "rearrange",
+        "words": [
+            "traverse string",
+            "add ASCII offset",
+            "convert each char",
+            "string modified"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[5] = {5, 4, 3, 2, 1};\nint *max = arr, *p = arr + 1;\nwhile (p < arr + 5) {\n    if (*p > *max) max = p;\n    p++;\n}\nprintf(\"%ld\", max - arr);",
+        "o": [
+            "0",
+            "4",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Finding max element returns its ______.",
+        "type": "fill_blank",
+        "answers": [
+            "index"
+        ],
+        "other_options": [
+            "value",
+            "address",
+            "pointer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 5, b = 10, c = 15;\nint *max = &a;\nif (b > *max) max = &b;\nif (c > *max) max = &c;\nprintf(\"%d\", *max);",
+        "o": [
+            "15",
+            "5",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Tracking maximum uses pointer to current max element.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[4] = {10, 20, 30, 40};\nint *p = arr;\nint avg = (*p + *(p+1) + *(p+2) + *(p+3)) / 4;\nprintf(\"%d\", avg);",
+        "o": [
+            "25",
+            "100",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match calculation with formula:",
+        "type": "match",
+        "left": [
+            "Sum",
+            "Average",
+            "Product",
+            "Count"
+        ],
+        "right": [
+            "a+b+c+d",
+            "(a+b+c+d)/n",
+            "a*b*c*d",
+            "n"
+        ]
+    }
+]

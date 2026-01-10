@@ -1,0 +1,5694 @@
+[
+    {
+        "q": "Which keyword is used to define a structure in C?",
+        "type": "mcq",
+        "o": [
+            "struct",
+            "structure",
+            "class",
+            "record"
+        ]
+    },
+    {
+        "q": "A structure groups related data under one name.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Point { int x; int y; };\nint main() {\n    struct Point p = {10, 20};\n    printf(\"%d\", p.x);\n    return 0;\n}",
+        "o": [
+            "10",
+            "20",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which operator accesses structure members?",
+        "type": "mcq",
+        "o": [
+            ".",
+            "->",
+            "::",
+            ":"
+        ]
+    },
+    {
+        "q": "The ______ operator is used to access members of a structure variable.",
+        "type": "fill_blank",
+        "answers": [
+            ".",
+            "dot"
+        ],
+        "other_options": [
+            "->",
+            "::",
+            "&"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Box { int width; int height; };\nint main() {\n    struct Box b = {5, 10};\n    printf(\"%d\", b.height);\n    return 0;\n}",
+        "o": [
+            "10",
+            "5",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Structure members can be of different data types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Data { int num; char ch; };\nint main() {\n    struct Data d = {100, 'A'};\n    printf(\"%c\", d.ch);\n    return 0;\n}",
+        "o": [
+            "A",
+            "100",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which keyword is used to define a union in C?",
+        "type": "mcq",
+        "o": [
+            "union",
+            "struct",
+            "enum",
+            "typedef"
+        ]
+    },
+    {
+        "q": "A union shares memory among all its members.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the concepts with their descriptions:",
+        "type": "match",
+        "left": [
+            "struct",
+            "union",
+            "dot operator",
+            "arrow operator"
+        ],
+        "right": [
+            "Groups different data types together",
+            "Members share same memory location",
+            "Accesses member of structure variable",
+            "Accesses member via pointer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Student { int id; float marks; };\nint main() {\n    struct Student s;\n    s.id = 101;\n    s.marks = 85.5;\n    printf(\"%d\", s.id);\n    return 0;\n}",
+        "o": [
+            "101",
+            "85",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Structure variables can be initialized at declaration.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Pair { int a; int b; };\nint main() {\n    struct Pair p = {3, 7};\n    printf(\"%d\", p.a + p.b);\n    return 0;\n}",
+        "o": [
+            "10",
+            "3",
+            "7",
+            "Error"
+        ]
+    },
+    {
+        "q": "The size of a structure is at least the sum of member sizes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Rectangle { int len; int wid; };\nint main() {\n    struct Rectangle r = {4, 5};\n    int area = r.len * r.wid;\n    printf(\"%d\", area);\n    return 0;\n}",
+        "o": [
+            "20",
+            "9",
+            "45",
+            "Error"
+        ]
+    },
+    {
+        "q": "Structures can contain arrays as members.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Nums { int arr[3]; };\nint main() {\n    struct Nums n = {{1, 2, 3}};\n    printf(\"%d\", n.arr[1]);\n    return 0;\n}",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Arrange the steps to define and use a structure:",
+        "type": "rearrange",
+        "words": [
+            "Define struct",
+            "Declare variable",
+            "Initialize members",
+            "Access members",
+            "Use values"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Point { int x; int y; };\nint main() {\n    struct Point p1 = {1, 2};\n    struct Point p2 = p1;\n    printf(\"%d\", p2.y);\n    return 0;\n}",
+        "o": [
+            "2",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Structures can be assigned to each other if they are of the same type.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Item { int price; };\nint main() {\n    struct Item items[2] = {{100}, {200}};\n    printf(\"%d\", items[1].price);\n    return 0;\n}",
+        "o": [
+            "200",
+            "100",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Arrays of structures can be created in C.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ keyword creates an alias for a data type.",
+        "type": "fill_blank",
+        "answers": [
+            "typedef"
+        ],
+        "other_options": [
+            "struct",
+            "define",
+            "alias"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\ntypedef struct { int x; int y; } Point;\nint main() {\n    Point p = {5, 10};\n    printf(\"%d\", p.x);\n    return 0;\n}",
+        "o": [
+            "5",
+            "10",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "typedef simplifies structure variable declarations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Point { int x; int y; };\nint main() {\n    struct Point *p;\n    struct Point pt = {3, 4};\n    p = &pt;\n    printf(\"%d\", p->x);\n    return 0;\n}",
+        "o": [
+            "3",
+            "4",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "The -> operator accesses members through a structure pointer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Data { int val; };\nint main() {\n    struct Data d = {50};\n    struct Data *ptr = &d;\n    printf(\"%d\", ptr->val);\n    return 0;\n}",
+        "o": [
+            "50",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Match the syntax with their meanings:",
+        "type": "match",
+        "left": [
+            "s.member",
+            "p->member",
+            "(*p).member",
+            "&s"
+        ],
+        "right": [
+            "Access via variable",
+            "Access via pointer",
+            "Dereference then access",
+            "Address of structure"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Box { int w; int h; };\nint main() {\n    struct Box b = {3, 4};\n    struct Box *p = &b;\n    printf(\"%d\", (*p).h);\n    return 0;\n}",
+        "o": [
+            "4",
+            "3",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "The expression (*p).member is equivalent to p->member.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Num { int val; };\nvoid modify(struct Num *n) { n->val = 100; }\nint main() {\n    struct Num n = {10};\n    modify(&n);\n    printf(\"%d\", n.val);\n    return 0;\n}",
+        "o": [
+            "100",
+            "10",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Structures can be passed to functions by pointer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Val { int x; };\nstruct Val getVal() {\n    struct Val v = {42};\n    return v;\n}\nint main() {\n    struct Val v = getVal();\n    printf(\"%d\", v.x);\n    return 0;\n}",
+        "o": [
+            "42",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Functions can return structures in C.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nunion Data { int i; float f; char c; };\nint main() {\n    union Data d;\n    d.i = 10;\n    printf(\"%d\", d.i);\n    return 0;\n}",
+        "o": [
+            "10",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "All members of a union share the same memory location.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nunion Mix { int i; char c; };\nint main() {\n    union Mix m;\n    m.i = 65;\n    printf(\"%c\", m.c);\n    return 0;\n}",
+        "o": [
+            "A",
+            "65",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "The size of a union equals the size of its largest member.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nunion U { int a; double b; };\nint main() {\n    printf(\"%lu\", sizeof(union U));\n    return 0;\n}",
+        "o": [
+            "8",
+            "4",
+            "12",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ of a union is determined by its largest member.",
+        "type": "fill_blank",
+        "answers": [
+            "size"
+        ],
+        "other_options": [
+            "address",
+            "type",
+            "name"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct S { char a; int b; };\nint main() {\n    printf(\"%lu\", sizeof(struct S));\n    return 0;\n}",
+        "o": [
+            "8",
+            "5",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Structure padding may increase the size of a structure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is structure padding used for?",
+        "type": "mcq",
+        "o": [
+            "Memory alignment",
+            "Data compression",
+            "Error checking",
+            "Type conversion"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Packed { char a; char b; char c; };\nint main() {\n    printf(\"%lu\", sizeof(struct Packed));\n    return 0;\n}",
+        "o": [
+            "3",
+            "4",
+            "12",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the concepts with their memory characteristics:",
+        "type": "match",
+        "left": [
+            "Structure",
+            "Union",
+            "Padding",
+            "Alignment"
+        ],
+        "right": [
+            "Members have separate memory",
+            "Members share memory",
+            "Extra bytes for alignment",
+            "Address divisible by size"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Outer { int x; struct { int y; } inner; };\nint main() {\n    struct Outer o = {1, {2}};\n    printf(\"%d\", o.inner.y);\n    return 0;\n}",
+        "o": [
+            "2",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Structures can be nested inside other structures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Address { int pin; };\nstruct Person { char name[10]; struct Address addr; };\nint main() {\n    struct Person p = {\"John\", {12345}};\n    printf(\"%d\", p.addr.pin);\n    return 0;\n}",
+        "o": [
+            "12345",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Nested structure members are accessed with multiple dot operators.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Node { int data; struct Node *next; };\nint main() {\n    struct Node n1 = {10, NULL};\n    printf(\"%d\", n1.data);\n    return 0;\n}",
+        "o": [
+            "10",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "A structure can contain a pointer to itself.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Self-referential structures are used for which data structures?",
+        "type": "mcq",
+        "o": [
+            "Linked lists and trees",
+            "Arrays only",
+            "Simple variables",
+            "Enumerations"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Node {\n    int val;\n    struct Node *next;\n};\nint main() {\n    struct Node n2 = {20, NULL};\n    struct Node n1 = {10, &n2};\n    printf(\"%d\", n1.next->val);\n    return 0;\n}",
+        "o": [
+            "20",
+            "10",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "The -> operator is used to access members of a pointed structure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Bits { unsigned int flag : 1; };\nint main() {\n    struct Bits b;\n    b.flag = 1;\n    printf(\"%u\", b.flag);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "Error",
+            "255"
+        ]
+    },
+    {
+        "q": "Bit fields allow specifying the number of bits for a member.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ notation is used to define bit fields in structures.",
+        "type": "fill_blank",
+        "answers": [
+            ":",
+            "colon"
+        ],
+        "other_options": [
+            ".",
+            "->",
+            "::"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Flags { unsigned int a : 2; unsigned int b : 3; };\nint main() {\n    struct Flags f = {3, 7};\n    printf(\"%u %u\", f.a, f.b);\n    return 0;\n}",
+        "o": [
+            "3 7",
+            "0 0",
+            "3 0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Bit fields are useful for memory optimization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Bits { unsigned int a : 4; };\nint main() {\n    struct Bits b;\n    b.a = 15;\n    printf(\"%u\", b.a);\n    return 0;\n}",
+        "o": [
+            "15",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "A 4-bit field can store values from 0 to 15.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Bits { unsigned int a : 3; };\nint main() {\n    struct Bits b;\n    b.a = 10;\n    printf(\"%u\", b.a);\n    return 0;\n}",
+        "o": [
+            "2",
+            "10",
+            "7",
+            "Error"
+        ]
+    },
+    {
+        "q": "Overflow in bit fields wraps around to valid range.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match bit field sizes with maximum values:",
+        "type": "match",
+        "left": [
+            "1 bit",
+            "2 bits",
+            "3 bits",
+            "4 bits"
+        ],
+        "right": [
+            "Max value 1",
+            "Max value 3",
+            "Max value 7",
+            "Max value 15"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nenum Color { RED, GREEN, BLUE };\nint main() {\n    enum Color c = GREEN;\n    printf(\"%d\", c);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Enum values start at 0 by default.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nenum Day { MON = 1, TUE, WED };\nint main() {\n    printf(\"%d\", WED);\n    return 0;\n}",
+        "o": [
+            "3",
+            "2",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Enum values can be explicitly assigned.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ keyword defines a set of named integer constants.",
+        "type": "fill_blank",
+        "answers": [
+            "enum"
+        ],
+        "other_options": [
+            "struct",
+            "union",
+            "const"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nenum Status { OK = 0, ERROR = -1, PENDING = 1 };\nint main() {\n    enum Status s = ERROR;\n    printf(\"%d\", s);\n    return 0;\n}",
+        "o": [
+            "-1",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Enum values can be negative.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Point { int x; int y; };\nint main() {\n    struct Point arr[3] = {{0,0}, {1,1}, {2,2}};\n    printf(\"%d\", arr[2].x);\n    return 0;\n}",
+        "o": [
+            "2",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Arrays of structures can be initialized with compound literals.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Data { int id; char name[20]; };\nint main() {\n    struct Data d = {1, \"Test\"};\n    printf(\"%s\", d.name);\n    return 0;\n}",
+        "o": [
+            "Test",
+            "1",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Structure members can be character arrays.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <string.h>\nstruct Book { char title[50]; int pages; };\nint main() {\n    struct Book b;\n    strcpy(b.title, \"C Programming\");\n    b.pages = 300;\n    printf(\"%d\", b.pages);\n    return 0;\n}",
+        "o": [
+            "300",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "strcpy can be used to assign strings to structure character arrays.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Empty {};\nint main() {\n    printf(\"%lu\", sizeof(struct Empty));\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "An empty structure has undefined size in C.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange structure declaration components:",
+        "type": "rearrange",
+        "words": [
+            "struct keyword",
+            "Structure name",
+            "Opening brace",
+            "Member declarations",
+            "Closing brace"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Coord {\n    int x;\n    int y;\n} point = {5, 10};\nint main() {\n    printf(\"%d\", point.y);\n    return 0;\n}",
+        "o": [
+            "10",
+            "5",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Structure variables can be declared along with structure definition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct { int a; int b; } anonymous = {1, 2};\nint main() {\n    printf(\"%d\", anonymous.b);\n    return 0;\n}",
+        "o": [
+            "2",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Anonymous structures have no name tag.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Calc {\n    int (*add)(int, int);\n};\nint sum(int a, int b) { return a + b; }\nint main() {\n    struct Calc c = {sum};\n    printf(\"%d\", c.add(3, 4));\n    return 0;\n}",
+        "o": [
+            "7",
+            "34",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Structures can contain function pointers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Counter {\n    int count;\n    void (*increment)(struct Counter*);\n};\nvoid inc(struct Counter *c) { c->count++; }\nint main() {\n    struct Counter c = {0, inc};\n    c.increment(&c);\n    printf(\"%d\", c.count);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Function pointers in structures enable object-like behavior.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the structure features with their uses:",
+        "type": "match",
+        "left": [
+            "Function pointer member",
+            "Self-referential pointer",
+            "Bit fields",
+            "Nested structures"
+        ],
+        "right": [
+            "Callback mechanisms",
+            "Linked data structures",
+            "Memory optimization",
+            "Hierarchical data"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Flex { int len; int data[]; };\nint main() {\n    printf(\"%lu\", sizeof(struct Flex));\n    return 0;\n}",
+        "o": [
+            "4",
+            "0",
+            "8",
+            "Error"
+        ]
+    },
+    {
+        "q": "Flexible array members have zero size in sizeof.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nstruct Flex { int len; int data[]; };\nint main() {\n    struct Flex *f = malloc(sizeof(struct Flex) + 3 * sizeof(int));\n    f->len = 3;\n    f->data[0] = 10;\n    printf(\"%d\", f->data[0]);\n    free(f);\n    return 0;\n}",
+        "o": [
+            "10",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Flexible array members must be the last member of a structure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Outer {\n    int x;\n    union {\n        int i;\n        float f;\n    } inner;\n};\nint main() {\n    struct Outer o = {10, {.i = 20}};\n    printf(\"%d\", o.inner.i);\n    return 0;\n}",
+        "o": [
+            "20",
+            "10",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Unions can be nested inside structures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Point { int x; int y; };\nint main() {\n    struct Point p = {.y = 5, .x = 3};\n    printf(\"%d %d\", p.x, p.y);\n    return 0;\n}",
+        "o": [
+            "3 5",
+            "5 3",
+            "0 0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Designated initializers allow out-of-order initialization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Data { int a; int b; int c; };\nint main() {\n    struct Data d = {.c = 30};\n    printf(\"%d %d %d\", d.a, d.b, d.c);\n    return 0;\n}",
+        "o": [
+            "0 0 30",
+            "30 0 0",
+            "0 30 0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Uninitialized members in designated initializers default to zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ initializer allows specifying member names during initialization.",
+        "type": "fill_blank",
+        "answers": [
+            "designated"
+        ],
+        "other_options": [
+            "compound",
+            "default",
+            "named"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Test { int a; int b; int c; };\nint main() {\n    struct Test t = {0};\n    printf(\"%d %d %d\", t.a, t.b, t.c);\n    return 0;\n}",
+        "o": [
+            "0 0 0",
+            "0 garbage garbage",
+            "Error",
+            "1 1 1"
+        ]
+    },
+    {
+        "q": "Initializing a structure with {0} sets all members to zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Vec { int x; int y; int z; };\nint main() {\n    struct Vec v = {1};\n    printf(\"%d\", v.z);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "Garbage",
+            "Error"
+        ]
+    },
+    {
+        "q": "Partial initialization sets remaining members to zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Pair { int first; int second; };\nvoid swap(struct Pair *p) {\n    int temp = p->first;\n    p->first = p->second;\n    p->second = temp;\n}\nint main() {\n    struct Pair p = {5, 10};\n    swap(&p);\n    printf(\"%d %d\", p.first, p.second);\n    return 0;\n}",
+        "o": [
+            "10 5",
+            "5 10",
+            "0 0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Passing structure pointer allows modifying original structure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Point { int x; int y; };\nint main() {\n    struct Point p = {3, 4};\n    int *ptr = (int*)&p;\n    printf(\"%d\", *ptr);\n    return 0;\n}",
+        "o": [
+            "3",
+            "4",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Casting structure pointer to int pointer points to first member.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Data { char a; short b; int c; };\nint main() {\n    printf(\"%lu\", sizeof(struct Data));\n    return 0;\n}",
+        "o": [
+            "8",
+            "7",
+            "4",
+            "12"
+        ]
+    },
+    {
+        "q": "Structure padding depends on member alignment requirements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match the structure concepts with memory behavior:",
+        "type": "match",
+        "left": [
+            "First member offset",
+            "Padding bytes",
+            "Structure alignment",
+            "sizeof struct"
+        ],
+        "right": [
+            "Always zero",
+            "Added for alignment",
+            "Largest member alignment",
+            "Includes all padding"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Compact { char a; char b; char c; char d; };\nint main() {\n    printf(\"%lu\", sizeof(struct Compact));\n    return 0;\n}",
+        "o": [
+            "4",
+            "1",
+            "8",
+            "16"
+        ]
+    },
+    {
+        "q": "Structures of chars have no internal padding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Mixed { int i; char c; int j; };\nint main() {\n    printf(\"%lu\", sizeof(struct Mixed));\n    return 0;\n}",
+        "o": [
+            "12",
+            "9",
+            "8",
+            "16"
+        ]
+    },
+    {
+        "q": "Reordering structure members can reduce padding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Opt { int i; int j; char c; };\nint main() {\n    printf(\"%lu\", sizeof(struct Opt));\n    return 0;\n}",
+        "o": [
+            "12",
+            "9",
+            "8",
+            "10"
+        ]
+    },
+    {
+        "q": "Arrange structure members by size for optimal packing:",
+        "type": "rearrange",
+        "words": [
+            "char first",
+            "short second",
+            "int third",
+            "double fourth",
+            "long fifth"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stddef.h>\nstruct S { int a; char b; int c; };\nint main() {\n    printf(\"%lu\", offsetof(struct S, c));\n    return 0;\n}",
+        "o": [
+            "8",
+            "5",
+            "4",
+            "12"
+        ]
+    },
+    {
+        "q": "offsetof macro returns the byte offset of a structure member.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ macro from stddef.h gives member offset in structure.",
+        "type": "fill_blank",
+        "answers": [
+            "offsetof"
+        ],
+        "other_options": [
+            "sizeof",
+            "alignof",
+            "typeof"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nunion Val { int i; float f; };\nint main() {\n    union Val v;\n    v.f = 3.14;\n    printf(\"%d\", v.i != 0);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Reading a different union member than last written is type punning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nunion Endian { int i; char c[4]; };\nint main() {\n    union Endian e;\n    e.i = 0x01020304;\n    printf(\"%d\", e.c[0]);\n    return 0;\n}",
+        "o": [
+            "4",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Union type punning can detect system endianness.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Tagged {\n    int type;\n    union { int i; float f; char c; } data;\n};\nint main() {\n    struct Tagged t = {1, {.i = 42}};\n    printf(\"%d\", t.data.i);\n    return 0;\n}",
+        "o": [
+            "42",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Tagged unions combine a type field with a union for type safety.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match union use cases with descriptions:",
+        "type": "match",
+        "left": [
+            "Type punning",
+            "Tagged union",
+            "Memory saving",
+            "Endianness check"
+        ],
+        "right": [
+            "Reinterpret bit pattern",
+            "Discriminated variant type",
+            "Overlapping storage",
+            "Byte order detection"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct List {\n    int data;\n    struct List *prev;\n    struct List *next;\n};\nint main() {\n    struct List n = {10, NULL, NULL};\n    printf(\"%d\", n.data);\n    return 0;\n}",
+        "o": [
+            "10",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Doubly linked list nodes have prev and next pointers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Tree {\n    int val;\n    struct Tree *left;\n    struct Tree *right;\n};\nint main() {\n    struct Tree node = {100, NULL, NULL};\n    printf(\"%d\", node.val);\n    return 0;\n}",
+        "o": [
+            "100",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Binary tree nodes have left and right child pointers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Circle { float radius; };\nfloat area(struct Circle c) {\n    return 3.14 * c.radius * c.radius;\n}\nint main() {\n    struct Circle c = {2.0};\n    printf(\"%.2f\", area(c));\n    return 0;\n}",
+        "o": [
+            "12.56",
+            "6.28",
+            "2.00",
+            "Error"
+        ]
+    },
+    {
+        "q": "Structures can be passed to functions by value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Num { int val; };\nvoid tryModify(struct Num n) { n.val = 999; }\nint main() {\n    struct Num n = {5};\n    tryModify(n);\n    printf(\"%d\", n.val);\n    return 0;\n}",
+        "o": [
+            "5",
+            "999",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pass by value creates a copy, original remains unchanged.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ operator is used to get the address of a structure.",
+        "type": "fill_blank",
+        "answers": [
+            "&",
+            "ampersand"
+        ],
+        "other_options": [
+            "*",
+            "->",
+            "."
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Point { int x; int y; };\nint main() {\n    struct Point arr[2] = {{1, 2}, {3, 4}};\n    struct Point *p = arr;\n    printf(\"%d\", (p+1)->x);\n    return 0;\n}",
+        "o": [
+            "3",
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "q": "Pointer arithmetic on structure arrays moves by structure size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Point { int x; int y; };\nint main() {\n    struct Point arr[3] = {{0,0}, {1,1}, {2,2}};\n    printf(\"%d\", arr[1].x + arr[2].y);\n    return 0;\n}",
+        "o": [
+            "3",
+            "2",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Structure array elements are accessed with index and dot operator.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Stat { int min; int max; float avg; };\nstruct Stat compute(int a, int b, int c) {\n    struct Stat s;\n    s.min = a < b ? (a < c ? a : c) : (b < c ? b : c);\n    s.max = a > b ? (a > c ? a : c) : (b > c ? b : c);\n    s.avg = (a + b + c) / 3.0;\n    return s;\n}\nint main() {\n    struct Stat r = compute(5, 10, 15);\n    printf(\"%d\", r.max);\n    return 0;\n}",
+        "o": [
+            "15",
+            "5",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Functions can return structures containing multiple computed values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match structure passing methods with characteristics:",
+        "type": "match",
+        "left": [
+            "Pass by value",
+            "Pass by pointer",
+            "Return structure",
+            "Return pointer"
+        ],
+        "right": [
+            "Copies entire structure",
+            "Modifies original",
+            "Copies on return",
+            "Returns address only"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct RGB { unsigned char r; unsigned char g; unsigned char b; };\nint main() {\n    struct RGB color = {255, 128, 0};\n    printf(\"%d\", color.g);\n    return 0;\n}",
+        "o": [
+            "128",
+            "255",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Structures can represent color data with RGB components.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Date { int day; int month; int year; };\nint main() {\n    struct Date d = {15, 8, 2024};\n    printf(\"%d/%d/%d\", d.day, d.month, d.year);\n    return 0;\n}",
+        "o": [
+            "15/8/2024",
+            "8/15/2024",
+            "2024/8/15",
+            "Error"
+        ]
+    },
+    {
+        "q": "Structures are commonly used to represent dates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Time { int h; int m; int s; };\nint toSeconds(struct Time t) {\n    return t.h * 3600 + t.m * 60 + t.s;\n}\nint main() {\n    struct Time t = {1, 30, 45};\n    printf(\"%d\", toSeconds(t));\n    return 0;\n}",
+        "o": [
+            "5445",
+            "1845",
+            "3645",
+            "Error"
+        ]
+    },
+    {
+        "q": "Structure members can be used in calculations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange time structure members from largest to smallest unit:",
+        "type": "rearrange",
+        "words": [
+            "hours",
+            "minutes",
+            "seconds",
+            "milliseconds",
+            "microseconds"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Complex { double real; double imag; };\nstruct Complex add(struct Complex a, struct Complex b) {\n    struct Complex c = {a.real + b.real, a.imag + b.imag};\n    return c;\n}\nint main() {\n    struct Complex x = {1.0, 2.0};\n    struct Complex y = {3.0, 4.0};\n    struct Complex z = add(x, y);\n    printf(\"%.0f\", z.real);\n    return 0;\n}",
+        "o": [
+            "4",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Structures can represent complex numbers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Vec2 { float x; float y; };\nfloat dot(struct Vec2 a, struct Vec2 b) {\n    return a.x * b.x + a.y * b.y;\n}\nint main() {\n    struct Vec2 v1 = {3.0, 4.0};\n    struct Vec2 v2 = {2.0, 1.0};\n    printf(\"%.0f\", dot(v1, v2));\n    return 0;\n}",
+        "o": [
+            "10",
+            "7",
+            "14",
+            "Error"
+        ]
+    },
+    {
+        "q": "Dot product of vectors (3,4) and (2,1) is 3*2 + 4*1 = 10.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Rect { int x; int y; int w; int h; };\nint area(struct Rect r) { return r.w * r.h; }\nint main() {\n    struct Rect r = {0, 0, 10, 5};\n    printf(\"%d\", area(r));\n    return 0;\n}",
+        "o": [
+            "50",
+            "15",
+            "100",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rectangle structure includes position and dimensions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ keyword allows creating anonymous structures inside structures.",
+        "type": "fill_blank",
+        "answers": [
+            "struct"
+        ],
+        "other_options": [
+            "union",
+            "typedef",
+            "inline"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Outer {\n    int id;\n    struct { int a; int b; };\n};\nint main() {\n    struct Outer o = {1, 2, 3};\n    printf(\"%d\", o.b);\n    return 0;\n}",
+        "o": [
+            "3",
+            "2",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Anonymous inner structure members are accessed directly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Wrapper {\n    union { int i; float f; };\n};\nint main() {\n    struct Wrapper w;\n    w.i = 100;\n    printf(\"%d\", w.i);\n    return 0;\n}",
+        "o": [
+            "100",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Anonymous unions inside structures allow direct member access.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Status {\n    unsigned int active : 1;\n    unsigned int ready : 1;\n    unsigned int error : 1;\n};\nint main() {\n    struct Status s = {1, 0, 1};\n    printf(\"%u%u%u\", s.active, s.ready, s.error);\n    return 0;\n}",
+        "o": [
+            "101",
+            "110",
+            "011",
+            "Error"
+        ]
+    },
+    {
+        "q": "Bit fields are efficient for storing boolean flags.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match bit field declarations with their meanings:",
+        "type": "match",
+        "left": [
+            "unsigned int x : 1",
+            "unsigned int x : 4",
+            "int x : 8",
+            "unsigned int : 0"
+        ],
+        "right": [
+            "Single bit boolean",
+            "4-bit value 0-15",
+            "8-bit signed value",
+            "Padding to next boundary"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Bits {\n    unsigned int a : 4;\n    unsigned int b : 4;\n};\nint main() {\n    printf(\"%lu\", sizeof(struct Bits));\n    return 0;\n}",
+        "o": [
+            "4",
+            "1",
+            "2",
+            "8"
+        ]
+    },
+    {
+        "q": "Adjacent bit fields may share storage units.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Packed {\n    unsigned int a : 5;\n    unsigned int b : 6;\n    unsigned int c : 5;\n};\nint main() {\n    printf(\"%lu\", sizeof(struct Packed));\n    return 0;\n}",
+        "o": [
+            "4",
+            "2",
+            "3",
+            "8"
+        ]
+    },
+    {
+        "q": "Multiple bit fields can fit in a single storage unit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nenum Size { SMALL, MEDIUM, LARGE };\nstruct Product { char name[20]; enum Size size; int price; };\nint main() {\n    struct Product p = {\"Shirt\", MEDIUM, 50};\n    printf(\"%d\", p.size);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Structures can contain enum members.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nenum Type { INT_TYPE, FLOAT_TYPE, CHAR_TYPE };\nstruct Variant {\n    enum Type type;\n    union { int i; float f; char c; } data;\n};\nint main() {\n    struct Variant v = {INT_TYPE, {.i = 42}};\n    if(v.type == INT_TYPE) printf(\"%d\", v.data.i);\n    return 0;\n}",
+        "o": [
+            "42",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Tagged unions use enum to track active union member.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <string.h>\nstruct Student { int id; char name[50]; float gpa; };\nint main() {\n    struct Student s1 = {1, \"Alice\", 3.8};\n    struct Student s2;\n    memcpy(&s2, &s1, sizeof(struct Student));\n    printf(\"%s\", s2.name);\n    return 0;\n}",
+        "o": [
+            "Alice",
+            "1",
+            "3.8",
+            "Error"
+        ]
+    },
+    {
+        "q": "memcpy can copy entire structures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function copies memory byte by byte.",
+        "type": "fill_blank",
+        "answers": [
+            "memcpy"
+        ],
+        "other_options": [
+            "strcpy",
+            "memmove",
+            "memset"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <string.h>\nstruct Data { int arr[5]; };\nint main() {\n    struct Data d;\n    memset(&d, 0, sizeof(d));\n    printf(\"%d\", d.arr[2]);\n    return 0;\n}",
+        "o": [
+            "0",
+            "Garbage",
+            "Error",
+            "-1"
+        ]
+    },
+    {
+        "q": "memset can initialize all structure bytes to a value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct A { int x; };\nstruct B { int x; };\nint main() {\n    struct A a = {10};\n    struct B b;\n    b.x = a.x;\n    printf(\"%d\", b.x);\n    return 0;\n}",
+        "o": [
+            "10",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Different structure types cannot be directly assigned.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Point { int x; int y; };\nint compare(struct Point a, struct Point b) {\n    return (a.x == b.x) && (a.y == b.y);\n}\nint main() {\n    struct Point p1 = {3, 4};\n    struct Point p2 = {3, 4};\n    printf(\"%d\", compare(p1, p2));\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Structures must be compared member by member.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Counter {\n    int value;\n};\nstruct Counter increment(struct Counter c) {\n    c.value++;\n    return c;\n}\nint main() {\n    struct Counter c = {5};\n    c = increment(c);\n    printf(\"%d\", c.value);\n    return 0;\n}",
+        "o": [
+            "6",
+            "5",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Returning modified structure updates caller when assigned.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match structure operations with their requirements:",
+        "type": "match",
+        "left": [
+            "Assignment",
+            "Comparison",
+            "Copying",
+            "Initialization"
+        ],
+        "right": [
+            "Same type required",
+            "Member by member",
+            "memcpy or assign",
+            "Brace enclosed values"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\ntypedef struct { int x; int y; } Vec2;\ntypedef struct { Vec2 pos; Vec2 vel; } Particle;\nint main() {\n    Particle p = {{0, 0}, {1, 2}};\n    printf(\"%d\", p.vel.y);\n    return 0;\n}",
+        "o": [
+            "2",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "typedef structures can be used as members of other structures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\ntypedef struct Node {\n    int data;\n    struct Node *next;\n} Node;\nint main() {\n    Node n3 = {3, NULL};\n    Node n2 = {2, &n3};\n    Node n1 = {1, &n2};\n    printf(\"%d\", n1.next->next->data);\n    return 0;\n}",
+        "o": [
+            "3",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Chained pointer access traverses linked structures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange linked list traversal steps:",
+        "type": "rearrange",
+        "words": [
+            "Start at head",
+            "Check if NULL",
+            "Process data",
+            "Move to next",
+            "Repeat"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Matrix { int data[2][2]; };\nint main() {\n    struct Matrix m = {{{1, 2}, {3, 4}}};\n    printf(\"%d\", m.data[1][0]);\n    return 0;\n}",
+        "o": [
+            "3",
+            "1",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "q": "Structures can contain multidimensional arrays.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Str { char text[10]; };\nint main() {\n    struct Str s = {\"Hello\"};\n    printf(\"%c\", s.text[0]);\n    return 0;\n}",
+        "o": [
+            "H",
+            "e",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Character arrays in structures can be initialized with string literals.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Config {\n    int enabled;\n    int debug;\n    int verbose;\n};\nint main() {\n    struct Config cfg = {.debug = 1};\n    printf(\"%d%d%d\", cfg.enabled, cfg.debug, cfg.verbose);\n    return 0;\n}",
+        "o": [
+            "010",
+            "100",
+            "001",
+            "Error"
+        ]
+    },
+    {
+        "q": "Designated initializers set specific members, others default to zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Point3D { int x; int y; int z; };\nint main() {\n    struct Point3D p = {.z = 5, .x = 1};\n    printf(\"%d\", p.y);\n    return 0;\n}",
+        "o": [
+            "0",
+            "5",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Unspecified members in designated initializers are set to zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nstruct Point { int x; int y; };\nint main() {\n    struct Point *p = malloc(sizeof(struct Point));\n    p->x = 10;\n    p->y = 20;\n    printf(\"%d\", p->x + p->y);\n    free(p);\n    return 0;\n}",
+        "o": [
+            "30",
+            "10",
+            "20",
+            "Error"
+        ]
+    },
+    {
+        "q": "malloc can allocate memory for structures dynamically.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nstruct Node { int data; struct Node *next; };\nint main() {\n    struct Node *head = malloc(sizeof(struct Node));\n    head->data = 5;\n    head->next = malloc(sizeof(struct Node));\n    head->next->data = 10;\n    head->next->next = NULL;\n    printf(\"%d\", head->next->data);\n    free(head->next);\n    free(head);\n    return 0;\n}",
+        "o": [
+            "10",
+            "5",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Each node in a linked list requires separate memory allocation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nstruct Arr { int *data; int size; };\nint main() {\n    struct Arr a;\n    a.size = 3;\n    a.data = malloc(a.size * sizeof(int));\n    a.data[1] = 42;\n    printf(\"%d\", a.data[1]);\n    free(a.data);\n    return 0;\n}",
+        "o": [
+            "42",
+            "0",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Structures can contain pointers to dynamically allocated arrays.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function allocates memory for a single structure.",
+        "type": "fill_blank",
+        "answers": [
+            "malloc"
+        ],
+        "other_options": [
+            "calloc",
+            "realloc",
+            "free"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nstruct Data { int arr[5]; };\nint main() {\n    struct Data *d = calloc(1, sizeof(struct Data));\n    printf(\"%d\", d->arr[2]);\n    free(d);\n    return 0;\n}",
+        "o": [
+            "0",
+            "Garbage",
+            "Error",
+            "-1"
+        ]
+    },
+    {
+        "q": "calloc initializes allocated memory to zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match dynamic memory functions with their behavior:",
+        "type": "match",
+        "left": [
+            "malloc",
+            "calloc",
+            "realloc",
+            "free"
+        ],
+        "right": [
+            "Allocate uninitialized",
+            "Allocate zero-initialized",
+            "Resize allocation",
+            "Deallocate memory"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nstruct Item { int id; };\nint main() {\n    struct Item *arr = malloc(3 * sizeof(struct Item));\n    arr[0].id = 1;\n    arr[1].id = 2;\n    arr[2].id = 3;\n    printf(\"%d\", arr[2].id);\n    free(arr);\n    return 0;\n}",
+        "o": [
+            "3",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "malloc can allocate arrays of structures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nstruct Vec { int *data; int cap; };\nint main() {\n    struct Vec v = {malloc(4 * sizeof(int)), 4};\n    v.data = realloc(v.data, 8 * sizeof(int));\n    v.cap = 8;\n    printf(\"%d\", v.cap);\n    free(v.data);\n    return 0;\n}",
+        "o": [
+            "8",
+            "4",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "realloc can resize dynamically allocated arrays in structures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange dynamic structure array operations:",
+        "type": "rearrange",
+        "words": [
+            "Allocate array",
+            "Access elements",
+            "Resize if needed",
+            "Free memory",
+            "Set pointer null"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Point { int x; int y; };\nstruct Point add(struct Point a, struct Point b) {\n    return (struct Point){a.x + b.x, a.y + b.y};\n}\nint main() {\n    struct Point p = add((struct Point){1,2}, (struct Point){3,4});\n    printf(\"%d\", p.x);\n    return 0;\n}",
+        "o": [
+            "4",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Compound literals can create temporary structures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Point { int x; int y; };\nvoid setPoint(struct Point *p) {\n    *p = (struct Point){100, 200};\n}\nint main() {\n    struct Point pt = {0, 0};\n    setPoint(&pt);\n    printf(\"%d\", pt.y);\n    return 0;\n}",
+        "o": [
+            "200",
+            "0",
+            "100",
+            "Error"
+        ]
+    },
+    {
+        "q": "Compound literals can assign entire structures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nunion Bytes { unsigned int val; unsigned char bytes[4]; };\nint main() {\n    union Bytes b;\n    b.val = 0x12345678;\n    printf(\"%02X\", b.bytes[3]);\n    return 0;\n}",
+        "o": [
+            "12",
+            "78",
+            "34",
+            "56"
+        ]
+    },
+    {
+        "q": "Union byte access depends on system endianness.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nunion FloatBits { float f; unsigned int bits; };\nint main() {\n    union FloatBits fb;\n    fb.f = 1.0f;\n    printf(\"%d\", fb.bits != 0);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Float 1.0 has a specific bit pattern in IEEE 754.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ of float 1.0 in IEEE 754 is 0x3F800000.",
+        "type": "fill_blank",
+        "answers": [
+            "bit pattern",
+            "representation"
+        ],
+        "other_options": [
+            "value",
+            "address",
+            "size"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Packed {\n    char a;\n    int b;\n    char c;\n} __attribute__((packed));\nint main() {\n    printf(\"%lu\", sizeof(struct Packed));\n    return 0;\n}",
+        "o": [
+            "6",
+            "12",
+            "8",
+            "Error"
+        ]
+    },
+    {
+        "q": "The packed attribute removes structure padding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#pragma pack(push, 1)\nstruct Compact { char a; int b; };\n#pragma pack(pop)\nint main() {\n    printf(\"%lu\", sizeof(struct Compact));\n    return 0;\n}",
+        "o": [
+            "5",
+            "8",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "pragma pack controls structure member alignment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match packing methods with their syntax:",
+        "type": "match",
+        "left": [
+            "__attribute__((packed))",
+            "#pragma pack(1)",
+            "#pragma pack(push)",
+            "#pragma pack(pop)"
+        ],
+        "right": [
+            "GCC struct attribute",
+            "Set 1-byte alignment",
+            "Save current packing",
+            "Restore previous packing"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Flags {\n    unsigned int read : 1;\n    unsigned int write : 1;\n    unsigned int execute : 1;\n};\nint main() {\n    struct Flags f = {1, 1, 0};\n    f.execute = 1;\n    printf(\"%u%u%u\", f.read, f.write, f.execute);\n    return 0;\n}",
+        "o": [
+            "111",
+            "110",
+            "101",
+            "Error"
+        ]
+    },
+    {
+        "q": "Bit field members can be modified individually.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Permissions {\n    unsigned int owner : 3;\n    unsigned int group : 3;\n    unsigned int other : 3;\n};\nint main() {\n    struct Permissions p = {7, 5, 4};\n    printf(\"%u%u%u\", p.owner, p.group, p.other);\n    return 0;\n}",
+        "o": [
+            "754",
+            "457",
+            "547",
+            "Error"
+        ]
+    },
+    {
+        "q": "Unix permissions can be represented with 3-bit fields.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct IPv4 {\n    unsigned char octet[4];\n};\nint main() {\n    struct IPv4 ip = {{192, 168, 1, 1}};\n    printf(\"%u.%u.%u.%u\", ip.octet[0], ip.octet[1], ip.octet[2], ip.octet[3]);\n    return 0;\n}",
+        "o": [
+            "192.168.1.1",
+            "1.1.168.192",
+            "0.0.0.0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Structures can represent network addresses.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct MAC { unsigned char addr[6]; };\nint main() {\n    struct MAC m = {{0xAA, 0xBB, 0xCC, 0xDD, 0xEE, 0xFF}};\n    printf(\"%02X\", m.addr[2]);\n    return 0;\n}",
+        "o": [
+            "CC",
+            "AA",
+            "BB",
+            "FF"
+        ]
+    },
+    {
+        "q": "MAC addresses are 6 bytes long.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange network address types by size:",
+        "type": "rearrange",
+        "words": [
+            "IPv4 (4 bytes)",
+            "MAC (6 bytes)",
+            "IPv6 (16 bytes)",
+            "Port (2 bytes)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Header {\n    unsigned short type;\n    unsigned short length;\n    unsigned int checksum;\n};\nint main() {\n    printf(\"%lu\", sizeof(struct Header));\n    return 0;\n}",
+        "o": [
+            "8",
+            "6",
+            "10",
+            "12"
+        ]
+    },
+    {
+        "q": "Protocol headers are commonly represented as structures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Range { int start; int end; };\nint length(struct Range r) { return r.end - r.start; }\nint main() {\n    printf(\"%d\", length((struct Range){10, 50}));\n    return 0;\n}",
+        "o": [
+            "40",
+            "10",
+            "50",
+            "Error"
+        ]
+    },
+    {
+        "q": "Compound literals create temporary structures for function calls.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Interval { double low; double high; };\nstruct Interval intersect(struct Interval a, struct Interval b) {\n    double lo = a.low > b.low ? a.low : b.low;\n    double hi = a.high < b.high ? a.high : b.high;\n    return (struct Interval){lo, hi};\n}\nint main() {\n    struct Interval r = intersect((struct Interval){1.0, 5.0}, (struct Interval){3.0, 7.0});\n    printf(\"%.0f\", r.low);\n    return 0;\n}",
+        "o": [
+            "3",
+            "1",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Interval intersection uses max of lows and min of highs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ of an interval with [1,5] and [3,7] is [3,5].",
+        "type": "fill_blank",
+        "answers": [
+            "intersection"
+        ],
+        "other_options": [
+            "union",
+            "difference",
+            "complement"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Stack {\n    int data[10];\n    int top;\n};\nvoid push(struct Stack *s, int val) {\n    s->data[s->top++] = val;\n}\nint main() {\n    struct Stack s = {{0}, 0};\n    push(&s, 5);\n    push(&s, 10);\n    printf(\"%d\", s.data[1]);\n    return 0;\n}",
+        "o": [
+            "10",
+            "5",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Stack structure maintains top index for push operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Stack {\n    int data[10];\n    int top;\n};\nint pop(struct Stack *s) {\n    return s->data[--s->top];\n}\nint main() {\n    struct Stack s = {{5, 10, 15}, 3};\n    printf(\"%d\", pop(&s));\n    return 0;\n}",
+        "o": [
+            "15",
+            "10",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pop decrements top before returning value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match stack operations with their implementation:",
+        "type": "match",
+        "left": [
+            "push",
+            "pop",
+            "peek",
+            "isEmpty"
+        ],
+        "right": [
+            "data[top++] = val",
+            "return data[--top]",
+            "return data[top-1]",
+            "return top == 0"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Queue {\n    int data[10];\n    int front;\n    int rear;\n};\nvoid enqueue(struct Queue *q, int val) {\n    q->data[q->rear++] = val;\n}\nint main() {\n    struct Queue q = {{0}, 0, 0};\n    enqueue(&q, 1);\n    enqueue(&q, 2);\n    printf(\"%d\", q.data[0]);\n    return 0;\n}",
+        "o": [
+            "1",
+            "2",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Queue structure has front and rear indices.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Queue {\n    int data[10];\n    int front;\n    int rear;\n};\nint dequeue(struct Queue *q) {\n    return q->data[q->front++];\n}\nint main() {\n    struct Queue q = {{5, 10, 15}, 0, 3};\n    printf(\"%d\", dequeue(&q));\n    return 0;\n}",
+        "o": [
+            "5",
+            "15",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Dequeue returns element at front and increments front.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange data structure operations by FIFO order:",
+        "type": "rearrange",
+        "words": [
+            "First enqueued",
+            "Second enqueued",
+            "Third enqueued",
+            "First dequeued",
+            "Second dequeued"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct BinaryTree {\n    int value;\n    struct BinaryTree *left;\n    struct BinaryTree *right;\n};\nint main() {\n    struct BinaryTree root = {50, NULL, NULL};\n    struct BinaryTree left = {25, NULL, NULL};\n    struct BinaryTree right = {75, NULL, NULL};\n    root.left = &left;\n    root.right = &right;\n    printf(\"%d\", root.left->value);\n    return 0;\n}",
+        "o": [
+            "25",
+            "50",
+            "75",
+            "Error"
+        ]
+    },
+    {
+        "q": "Binary tree nodes can point to left and right children.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct BST {\n    int key;\n    struct BST *left;\n    struct BST *right;\n};\nstruct BST* search(struct BST *root, int key) {\n    if(!root || root->key == key) return root;\n    if(key < root->key) return search(root->left, key);\n    return search(root->right, key);\n}\nint main() {\n    struct BST n3 = {75, NULL, NULL};\n    struct BST n2 = {25, NULL, NULL};\n    struct BST n1 = {50, &n2, &n3};\n    struct BST *found = search(&n1, 25);\n    printf(\"%d\", found ? found->key : -1);\n    return 0;\n}",
+        "o": [
+            "25",
+            "50",
+            "75",
+            "-1"
+        ]
+    },
+    {
+        "q": "Binary search tree search compares key to navigate.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Pair { int key; int value; };\nstruct HashMap {\n    struct Pair entries[100];\n    int count;\n};\nvoid put(struct HashMap *m, int key, int value) {\n    m->entries[m->count++] = (struct Pair){key, value};\n}\nint main() {\n    struct HashMap m = {{{0}}, 0};\n    put(&m, 1, 100);\n    printf(\"%d\", m.entries[0].value);\n    return 0;\n}",
+        "o": [
+            "100",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Simple hash maps use arrays of key-value pairs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match data structures with their structures:",
+        "type": "match",
+        "left": [
+            "Stack",
+            "Queue",
+            "Linked List",
+            "Binary Tree"
+        ],
+        "right": [
+            "Array + top index",
+            "Array + front + rear",
+            "Data + next pointer",
+            "Value + left + right"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Matrix {\n    int rows;\n    int cols;\n    int data[3][3];\n};\nint get(struct Matrix *m, int r, int c) {\n    return m->data[r][c];\n}\nint main() {\n    struct Matrix m = {3, 3, {{1,2,3},{4,5,6},{7,8,9}}};\n    printf(\"%d\", get(&m, 1, 1));\n    return 0;\n}",
+        "o": [
+            "5",
+            "1",
+            "9",
+            "Error"
+        ]
+    },
+    {
+        "q": "Matrix structures can encapsulate dimensions and data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Sparse {\n    int row;\n    int col;\n    int value;\n};\nint main() {\n    struct Sparse entries[] = {{0,0,5}, {1,2,10}, {2,1,3}};\n    printf(\"%d\", entries[1].value);\n    return 0;\n}",
+        "o": [
+            "10",
+            "5",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Sparse matrices store only non-zero elements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ representation stores row, column, and value for each non-zero element.",
+        "type": "fill_blank",
+        "answers": [
+            "sparse",
+            "triplet"
+        ],
+        "other_options": [
+            "dense",
+            "compressed",
+            "packed"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Fraction {\n    int num;\n    int den;\n};\nstruct Fraction add(struct Fraction a, struct Fraction b) {\n    return (struct Fraction){a.num * b.den + b.num * a.den, a.den * b.den};\n}\nint main() {\n    struct Fraction r = add((struct Fraction){1,2}, (struct Fraction){1,3});\n    printf(\"%d/%d\", r.num, r.den);\n    return 0;\n}",
+        "o": [
+            "5/6",
+            "2/5",
+            "1/5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Fraction addition: a/b + c/d = (ad + bc)/bd.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Poly { int coeffs[10]; int degree; };\nint eval(struct Poly p, int x) {\n    int result = 0;\n    int power = 1;\n    for(int i = 0; i <= p.degree; i++) {\n        result += p.coeffs[i] * power;\n        power *= x;\n    }\n    return result;\n}\nint main() {\n    struct Poly p = {{1, 2, 1}, 2};\n    printf(\"%d\", eval(p, 2));\n    return 0;\n}",
+        "o": [
+            "9",
+            "4",
+            "7",
+            "Error"
+        ]
+    },
+    {
+        "q": "Polynomial 1 + 2x + x^2 at x=2 equals 1 + 4 + 4 = 9.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange polynomial evaluation steps:",
+        "type": "rearrange",
+        "words": [
+            "Initialize result",
+            "Iterate terms",
+            "Multiply by power",
+            "Add to result",
+            "Update power"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Color {\n    float h;\n    float s;\n    float v;\n};\nint main() {\n    struct Color c = {120.0, 0.5, 0.8};\n    printf(\"%.0f\", c.h);\n    return 0;\n}",
+        "o": [
+            "120",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "HSV color model uses hue, saturation, and value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Vertex {\n    float x, y, z;\n    float nx, ny, nz;\n    float u, v;\n};\nint main() {\n    printf(\"%lu\", sizeof(struct Vertex));\n    return 0;\n}",
+        "o": [
+            "32",
+            "24",
+            "36",
+            "40"
+        ]
+    },
+    {
+        "q": "3D vertex structures store position, normal, and texture coordinates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match 3D graphics components with their data:",
+        "type": "match",
+        "left": [
+            "Position",
+            "Normal",
+            "Texture coord",
+            "Color"
+        ],
+        "right": [
+            "x, y, z",
+            "nx, ny, nz",
+            "u, v",
+            "r, g, b, a"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Event {\n    int type;\n    int x;\n    int y;\n    int button;\n};\nint main() {\n    struct Event e = {1, 100, 200, 0};\n    printf(\"%d,%d\", e.x, e.y);\n    return 0;\n}",
+        "o": [
+            "100,200",
+            "1,0",
+            "0,0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Event structures store type and associated data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nunion EventData {\n    struct { int x; int y; } mouse;\n    struct { int key; int mods; } keyboard;\n    struct { int w; int h; } resize;\n};\nstruct Event {\n    int type;\n    union EventData data;\n};\nint main() {\n    struct Event e = {1, {.mouse = {50, 100}}};\n    printf(\"%d\", e.data.mouse.y);\n    return 0;\n}",
+        "o": [
+            "100",
+            "50",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Event unions save memory by overlapping event-specific data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Person {\n    char name[20];\n    int age;\n    float height;\n};\nint main() {\n    struct Person p = {\"Alice\", 25, 1.65};\n    printf(\"%s is %d\", p.name, p.age);\n    return 0;\n}",
+        "o": [
+            "Alice is 25",
+            "25 is Alice",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Person structures combine string and numeric data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ initializer syntax uses member names with dots.",
+        "type": "fill_blank",
+        "answers": [
+            "designated"
+        ],
+        "other_options": [
+            "positional",
+            "default",
+            "compound"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Employee {\n    int id;\n    char name[30];\n    double salary;\n};\nint main() {\n    struct Employee e = {.salary = 50000.0, .id = 101, .name = \"Bob\"};\n    printf(\"%d\", e.id);\n    return 0;\n}",
+        "o": [
+            "101",
+            "0",
+            "50000",
+            "Error"
+        ]
+    },
+    {
+        "q": "Designated initializers allow any member order.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Config {\n    int maxConn;\n    int timeout;\n    int retries;\n    char host[50];\n};\nint main() {\n    struct Config c = {.host = \"localhost\", .maxConn = 100};\n    printf(\"%d\", c.timeout);\n    return 0;\n}",
+        "o": [
+            "0",
+            "100",
+            "Garbage",
+            "Error"
+        ]
+    },
+    {
+        "q": "Unspecified designated members are zero-initialized.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match initialization styles with their features:",
+        "type": "match",
+        "left": [
+            "Positional",
+            "Designated",
+            "Partial",
+            "Zero {0}"
+        ],
+        "right": [
+            "Order must match",
+            "Use member names",
+            "Rest are zero",
+            "All members zero"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Nested {\n    struct { int x; int y; } point;\n    struct { int w; int h; } size;\n};\nint main() {\n    struct Nested n = {{10, 20}, {100, 200}};\n    printf(\"%d\", n.size.h);\n    return 0;\n}",
+        "o": [
+            "200",
+            "100",
+            "20",
+            "10"
+        ]
+    },
+    {
+        "q": "Nested structures require nested brace initialization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Window {\n    int x, y;\n    int width, height;\n    char title[50];\n};\nint main() {\n    struct Window w = {.title = \"My App\", .width = 800, .height = 600};\n    printf(\"%dx%d\", w.width, w.height);\n    return 0;\n}",
+        "o": [
+            "800x600",
+            "0x0",
+            "600x800",
+            "Error"
+        ]
+    },
+    {
+        "q": "Window structures represent GUI window properties.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange GUI element hierarchy:",
+        "type": "rearrange",
+        "words": [
+            "Application",
+            "Window",
+            "Panel",
+            "Widget",
+            "Label"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Record { int id; char name[20]; };\nint main() {\n    FILE *f = fopen(\"test.bin\", \"wb\");\n    struct Record r = {1, \"Test\"};\n    fwrite(&r, sizeof(struct Record), 1, f);\n    fclose(f);\n    printf(\"Written\");\n    return 0;\n}",
+        "o": [
+            "Written",
+            "Error",
+            "1",
+            "Test"
+        ]
+    },
+    {
+        "q": "fwrite can write structures to binary files.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Data { int x; };\nint main() {\n    struct Data d = {42};\n    FILE *f = fopen(\"data.bin\", \"wb\");\n    fwrite(&d, sizeof(d), 1, f);\n    fclose(f);\n    f = fopen(\"data.bin\", \"rb\");\n    struct Data r;\n    fread(&r, sizeof(r), 1, f);\n    fclose(f);\n    printf(\"%d\", r.x);\n    return 0;\n}",
+        "o": [
+            "42",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "fread reads structures from binary files.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match file operations with their descriptions:",
+        "type": "match",
+        "left": [
+            "fwrite",
+            "fread",
+            "fopen wb",
+            "fopen rb"
+        ],
+        "right": [
+            "Write binary data",
+            "Read binary data",
+            "Open for binary write",
+            "Open for binary read"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Point { int x; int y; };\nint main() {\n    struct Point arr[] = {{1,2}, {3,4}, {5,6}};\n    FILE *f = fopen(\"pts.bin\", \"wb\");\n    fwrite(arr, sizeof(struct Point), 3, f);\n    fclose(f);\n    printf(\"3 points written\");\n    return 0;\n}",
+        "o": [
+            "3 points written",
+            "Error",
+            "0",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Arrays of structures can be written in a single fwrite call.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ parameter of fwrite specifies element count.",
+        "type": "fill_blank",
+        "answers": [
+            "count",
+            "nmemb"
+        ],
+        "other_options": [
+            "size",
+            "ptr",
+            "stream"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Header { char magic[4]; int version; };\nint main() {\n    struct Header h = {\"BIN\", 1};\n    printf(\"%s v%d\", h.magic, h.version);\n    return 0;\n}",
+        "o": [
+            "BIN v1",
+            "Error",
+            "1",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "File headers often contain magic numbers and version info.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Coord { float lat; float lon; };\nint main() {\n    struct Coord loc = {40.7128, -74.0060};\n    printf(\"%.2f\", loc.lat);\n    return 0;\n}",
+        "o": [
+            "40.71",
+            "-74.01",
+            "0.00",
+            "Error"
+        ]
+    },
+    {
+        "q": "Structures can represent geographic coordinates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Timestamp { int year; int month; int day; int hour; int min; int sec; };\nint main() {\n    struct Timestamp ts = {2024, 1, 15, 10, 30, 0};\n    printf(\"%04d-%02d-%02d\", ts.year, ts.month, ts.day);\n    return 0;\n}",
+        "o": [
+            "2024-01-15",
+            "15-01-2024",
+            "01-15-2024",
+            "Error"
+        ]
+    },
+    {
+        "q": "Timestamp structures store date and time components.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange timestamp components from largest to smallest:",
+        "type": "rearrange",
+        "words": [
+            "Year",
+            "Month",
+            "Day",
+            "Hour",
+            "Minute",
+            "Second"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Version { int major; int minor; int patch; };\nint compareVer(struct Version a, struct Version b) {\n    if(a.major != b.major) return a.major - b.major;\n    if(a.minor != b.minor) return a.minor - b.minor;\n    return a.patch - b.patch;\n}\nint main() {\n    struct Version v1 = {1, 2, 3};\n    struct Version v2 = {1, 2, 4};\n    printf(\"%d\", compareVer(v1, v2) < 0 ? 1 : 0);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Version comparison prioritizes major over minor over patch.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Buffer { char data[256]; int len; int cap; };\nvoid append(struct Buffer *b, char c) {\n    if(b->len < b->cap) b->data[b->len++] = c;\n}\nint main() {\n    struct Buffer buf = {{0}, 0, 256};\n    append(&buf, 'A');\n    append(&buf, 'B');\n    printf(\"%d\", buf.len);\n    return 0;\n}",
+        "o": [
+            "2",
+            "0",
+            "256",
+            "Error"
+        ]
+    },
+    {
+        "q": "Buffer structures track length and capacity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Ring {\n    int data[8];\n    int head;\n    int tail;\n};\nvoid enqueue(struct Ring *r, int val) {\n    r->data[r->tail] = val;\n    r->tail = (r->tail + 1) % 8;\n}\nint main() {\n    struct Ring r = {{0}, 0, 0};\n    enqueue(&r, 5);\n    enqueue(&r, 10);\n    printf(\"%d\", r.tail);\n    return 0;\n}",
+        "o": [
+            "2",
+            "0",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Circular buffers use modulo for index wrapping.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ buffer wraps around when reaching the end.",
+        "type": "fill_blank",
+        "answers": [
+            "ring",
+            "circular"
+        ],
+        "other_options": [
+            "linear",
+            "dynamic",
+            "static"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Stats {\n    int count;\n    double sum;\n    double sumSq;\n};\nvoid addSample(struct Stats *s, double val) {\n    s->count++;\n    s->sum += val;\n    s->sumSq += val * val;\n}\nint main() {\n    struct Stats s = {0, 0.0, 0.0};\n    addSample(&s, 5.0);\n    addSample(&s, 10.0);\n    printf(\"%d\", s.count);\n    return 0;\n}",
+        "o": [
+            "2",
+            "15",
+            "125",
+            "Error"
+        ]
+    },
+    {
+        "q": "Statistics structures accumulate sample data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct MinMax { int min; int max; };\nstruct MinMax findMinMax(int *arr, int n) {\n    struct MinMax mm = {arr[0], arr[0]};\n    for(int i = 1; i < n; i++) {\n        if(arr[i] < mm.min) mm.min = arr[i];\n        if(arr[i] > mm.max) mm.max = arr[i];\n    }\n    return mm;\n}\nint main() {\n    int arr[] = {5, 2, 8, 1, 9};\n    struct MinMax r = findMinMax(arr, 5);\n    printf(\"%d,%d\", r.min, r.max);\n    return 0;\n}",
+        "o": [
+            "1,9",
+            "5,9",
+            "1,5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Functions can return structures with multiple computed values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match statistics terms with their formulas:",
+        "type": "match",
+        "left": [
+            "Mean",
+            "Variance",
+            "Count",
+            "Sum"
+        ],
+        "right": [
+            "sum / count",
+            "(sumSq/n) - mean^2",
+            "Number of samples",
+            "Total of all values"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Pair { const char *key; int value; };\nint lookup(struct Pair *table, int n, const char *key) {\n    for(int i = 0; i < n; i++) {\n        int match = 1;\n        for(int j = 0; table[i].key[j] && key[j]; j++) {\n            if(table[i].key[j] != key[j]) { match = 0; break; }\n        }\n        if(match) return table[i].value;\n    }\n    return -1;\n}\nint main() {\n    struct Pair t[] = {{\"a\", 1}, {\"b\", 2}, {\"c\", 3}};\n    printf(\"%d\", lookup(t, 3, \"b\"));\n    return 0;\n}",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "-1"
+        ]
+    },
+    {
+        "q": "Lookup tables use key-value pair structures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct State { int value; int (*transition)(int); };\nint inc(int x) { return x + 1; }\nint main() {\n    struct State s = {5, inc};\n    int next = s.transition(s.value);\n    printf(\"%d\", next);\n    return 0;\n}",
+        "o": [
+            "6",
+            "5",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "State machines can use function pointers for transitions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\ntypedef struct {\n    int (*compute)(int, int);\n    const char *name;\n} Operation;\nint add(int a, int b) { return a + b; }\nint mul(int a, int b) { return a * b; }\nint main() {\n    Operation ops[] = {{add, \"add\"}, {mul, \"mul\"}};\n    printf(\"%d\", ops[1].compute(3, 4));\n    return 0;\n}",
+        "o": [
+            "12",
+            "7",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Operation tables dispatch based on function pointers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange object-oriented concepts in C structures:",
+        "type": "rearrange",
+        "words": [
+            "Data members",
+            "Function pointers",
+            "Init function",
+            "Method dispatch",
+            "Cleanup"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Base { int type; };\nstruct Derived { struct Base base; int extra; };\nint main() {\n    struct Derived d = {{1}, 42};\n    struct Base *b = (struct Base*)&d;\n    printf(\"%d\", b->type);\n    return 0;\n}",
+        "o": [
+            "1",
+            "42",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Inheritance simulation places base struct first.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Animal {\n    const char *name;\n    void (*speak)(void);\n};\nvoid dog_speak(void) { printf(\"Woof\"); }\nvoid cat_speak(void) { printf(\"Meow\"); }\nint main() {\n    struct Animal animals[] = {{\"Dog\", dog_speak}, {\"Cat\", cat_speak}};\n    animals[1].speak();\n    return 0;\n}",
+        "o": [
+            "Meow",
+            "Woof",
+            "Cat",
+            "Error"
+        ]
+    },
+    {
+        "q": "Polymorphism in C uses function pointers for virtual methods.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ pattern uses structures with function pointers.",
+        "type": "fill_blank",
+        "answers": [
+            "vtable",
+            "virtual table"
+        ],
+        "other_options": [
+            "singleton",
+            "factory",
+            "observer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Interface {\n    void (*init)(void *self);\n    void (*process)(void *self, int data);\n    void (*cleanup)(void *self);\n};\nvoid my_init(void *s) { printf(\"Init \"); }\nvoid my_proc(void *s, int d) { printf(\"%d \", d); }\nvoid my_clean(void *s) { printf(\"Clean\"); }\nint main() {\n    struct Interface iface = {my_init, my_proc, my_clean};\n    iface.init(NULL);\n    iface.process(NULL, 42);\n    return 0;\n}",
+        "o": [
+            "Init 42 ",
+            "42 Init ",
+            "Error",
+            "Clean"
+        ]
+    },
+    {
+        "q": "Interface structures define callback contracts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Ref { int *ptr; int count; };\nvoid incRef(struct Ref *r) { r->count++; }\nvoid decRef(struct Ref *r) { r->count--; }\nint main() {\n    int val = 100;\n    struct Ref r = {&val, 1};\n    incRef(&r);\n    incRef(&r);\n    printf(\"%d\", r.count);\n    return 0;\n}",
+        "o": [
+            "3",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Reference counting tracks object usage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match memory management patterns with descriptions:",
+        "type": "match",
+        "left": [
+            "Reference count",
+            "Pool allocator",
+            "Arena allocator",
+            "Object cache"
+        ],
+        "right": [
+            "Track usage count",
+            "Pre-allocate fixed chunks",
+            "Bump pointer allocation",
+            "Reuse freed objects"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Callback { void (*fn)(void *ctx, int val); void *ctx; };\nvoid printer(void *ctx, int val) { printf(\"%d\", val); }\nint main() {\n    struct Callback cb = {printer, NULL};\n    cb.fn(cb.ctx, 99);\n    return 0;\n}",
+        "o": [
+            "99",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Callbacks store function pointer and context.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Observer {\n    void (*notify)(int event);\n};\nvoid handler1(int e) { printf(\"H1:%d \", e); }\nvoid handler2(int e) { printf(\"H2:%d\", e); }\nint main() {\n    struct Observer obs[] = {{handler1}, {handler2}};\n    for(int i = 0; i < 2; i++) obs[i].notify(5);\n    return 0;\n}",
+        "o": [
+            "H1:5 H2:5",
+            "H2:5 H1:5",
+            "5 5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Observer pattern notifies multiple listeners.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Plugin {\n    const char *name;\n    int (*init)(void);\n    void (*shutdown)(void);\n};\nint plug_init(void) { return 1; }\nvoid plug_shut(void) { }\nint main() {\n    struct Plugin p = {\"TestPlugin\", plug_init, plug_shut};\n    printf(\"%s:%d\", p.name, p.init());\n    return 0;\n}",
+        "o": [
+            "TestPlugin:1",
+            "1:TestPlugin",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "Plugin structures define loadable module interfaces.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange plugin lifecycle stages:",
+        "type": "rearrange",
+        "words": [
+            "Load",
+            "Initialize",
+            "Execute",
+            "Shutdown",
+            "Unload"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct List { void **items; int len; int cap; };\nvoid add(struct List *l, void *item) {\n    l->items[l->len++] = item;\n}\nint main() {\n    void *buffer[10];\n    struct List l = {buffer, 0, 10};\n    int x = 42;\n    add(&l, &x);\n    printf(\"%d\", l.len);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "42",
+            "Error"
+        ]
+    },
+    {
+        "q": "Generic list uses void pointers for type erasure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nstruct FlexArray { int size; int data[]; };\nint main() {\n    int n = 5;\n    struct FlexArray *fa = malloc(sizeof(struct FlexArray) + n * sizeof(int));\n    fa->size = n;\n    for(int i = 0; i < n; i++) fa->data[i] = i * 2;\n    printf(\"%d\", fa->data[3]);\n    free(fa);\n    return 0;\n}",
+        "o": [
+            "6",
+            "3",
+            "8",
+            "Error"
+        ]
+    },
+    {
+        "q": "Flexible array allocation includes base size plus array size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ array member must be the last in the structure.",
+        "type": "fill_blank",
+        "answers": [
+            "flexible"
+        ],
+        "other_options": [
+            "dynamic",
+            "variable",
+            "static"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Result { int success; int value; const char *error; };\nstruct Result divide(int a, int b) {\n    if(b == 0) return (struct Result){0, 0, \"Division by zero\"};\n    return (struct Result){1, a / b, NULL};\n}\nint main() {\n    struct Result r = divide(10, 2);\n    printf(\"%d\", r.value);\n    return 0;\n}",
+        "o": [
+            "5",
+            "10",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Result structures combine success flag, value, and error.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Option { int hasValue; int value; };\nstruct Option some(int val) { return (struct Option){1, val}; }\nstruct Option none(void) { return (struct Option){0, 0}; }\nint main() {\n    struct Option o = some(42);\n    if(o.hasValue) printf(\"%d\", o.value);\n    return 0;\n}",
+        "o": [
+            "42",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Option type indicates presence or absence of value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match error handling patterns with structures:",
+        "type": "match",
+        "left": [
+            "Option",
+            "Result",
+            "Error code",
+            "Exception"
+        ],
+        "right": [
+            "hasValue + value",
+            "success + value + error",
+            "Integer return",
+            "setjmp/longjmp"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Vec3 { float x, y, z; };\nstruct Vec3 cross(struct Vec3 a, struct Vec3 b) {\n    return (struct Vec3){\n        a.y * b.z - a.z * b.y,\n        a.z * b.x - a.x * b.z,\n        a.x * b.y - a.y * b.x\n    };\n}\nint main() {\n    struct Vec3 i = {1, 0, 0};\n    struct Vec3 j = {0, 1, 0};\n    struct Vec3 k = cross(i, j);\n    printf(\"%.0f\", k.z);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Cross product of unit i and j vectors gives unit k.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Mat2 { float m[2][2]; };\nstruct Mat2 identity(void) {\n    return (struct Mat2){{{1,0},{0,1}}};\n}\nint main() {\n    struct Mat2 I = identity();\n    printf(\"%.0f\", I.m[0][0] + I.m[1][1]);\n    return 0;\n}",
+        "o": [
+            "2",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Identity matrix has 1s on diagonal, 0s elsewhere.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Quat { float w, x, y, z; };\nfloat norm(struct Quat q) {\n    return q.w*q.w + q.x*q.x + q.y*q.y + q.z*q.z;\n}\nint main() {\n    struct Quat q = {1, 0, 0, 0};\n    printf(\"%.0f\", norm(q));\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Quaternion norm is sum of squared components.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange 3D transformation types:",
+        "type": "rearrange",
+        "words": [
+            "Translation",
+            "Rotation",
+            "Scale",
+            "Shear",
+            "Projection"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct AABB { float minX, minY, maxX, maxY; };\nint intersects(struct AABB a, struct AABB b) {\n    return !(a.maxX < b.minX || a.minX > b.maxX ||\n             a.maxY < b.minY || a.minY > b.maxY);\n}\nint main() {\n    struct AABB a = {0, 0, 10, 10};\n    struct AABB b = {5, 5, 15, 15};\n    printf(\"%d\", intersects(a, b));\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "AABB intersection tests for overlapping ranges.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Ray { struct { float x, y; } origin; struct { float x, y; } dir; };\nint main() {\n    struct Ray r = {{0, 0}, {1, 0}};\n    printf(\"dir: %.0f,%.0f\", r.dir.x, r.dir.y);\n    return 0;\n}",
+        "o": [
+            "dir: 1,0",
+            "dir: 0,0",
+            "dir: 0,1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Ray structure contains origin point and direction vector.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match geometry primitives with their components:",
+        "type": "match",
+        "left": [
+            "Point",
+            "Ray",
+            "Line segment",
+            "Circle"
+        ],
+        "right": [
+            "x, y coordinates",
+            "Origin and direction",
+            "Start and end points",
+            "Center and radius"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Token { int type; union { int intVal; float floatVal; char strVal[32]; } data; };\nint main() {\n    struct Token t = {1, {.intVal = 42}};\n    printf(\"%d\", t.data.intVal);\n    return 0;\n}",
+        "o": [
+            "42",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Lexer tokens use tagged unions for different value types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nenum NodeType { NUM, ADD, MUL };\nstruct ASTNode {\n    enum NodeType type;\n    union {\n        int num;\n        struct { struct ASTNode *l; struct ASTNode *r; } binop;\n    } data;\n};\nint main() {\n    struct ASTNode n = {NUM, {.num = 5}};\n    printf(\"%d\", n.data.num);\n    return 0;\n}",
+        "o": [
+            "5",
+            "0",
+            "NUM",
+            "Error"
+        ]
+    },
+    {
+        "q": "AST nodes use tagged unions for different node types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ is a tree representation of parsed code.",
+        "type": "fill_blank",
+        "answers": [
+            "AST",
+            "abstract syntax tree"
+        ],
+        "other_options": [
+            "CST",
+            "parse tree",
+            "token stream"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Command { const char *name; int (*execute)(int argc, char **argv); };\nint echo_cmd(int argc, char **argv) { return argc; }\nint main() {\n    struct Command cmds[] = {{\"echo\", echo_cmd}};\n    printf(\"%d\", cmds[0].execute(3, NULL));\n    return 0;\n}",
+        "o": [
+            "3",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Command structures map names to handler functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Config {\n    const char *key;\n    union {\n        int intVal;\n        const char *strVal;\n        double floatVal;\n    } value;\n    char type;\n};\nint main() {\n    struct Config c = {\"port\", {.intVal = 8080}, 'i'};\n    printf(\"%d\", c.value.intVal);\n    return 0;\n}",
+        "o": [
+            "8080",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Configuration structures hold typed key-value pairs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match configuration types with their uses:",
+        "type": "match",
+        "left": [
+            "Integer config",
+            "String config",
+            "Boolean config",
+            "Float config"
+        ],
+        "right": [
+            "Port numbers",
+            "File paths",
+            "Feature flags",
+            "Thresholds"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Alloc { void *(*alloc)(size_t); void (*dealloc)(void*); };\nvoid *my_alloc(size_t s) { return NULL; }\nvoid my_free(void *p) { }\nint main() {\n    struct Alloc a = {my_alloc, my_free};\n    printf(\"%d\", a.alloc(10) == NULL);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Custom allocator structures define memory management interfaces.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Pool { char buffer[1024]; int offset; };\nvoid *pool_alloc(struct Pool *p, int size) {\n    void *ptr = &p->buffer[p->offset];\n    p->offset += size;\n    return ptr;\n}\nint main() {\n    struct Pool p = {{0}, 0};\n    int *a = pool_alloc(&p, sizeof(int));\n    int *b = pool_alloc(&p, sizeof(int));\n    printf(\"%d\", p.offset);\n    return 0;\n}",
+        "o": [
+            "8",
+            "4",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Arena allocators use bump pointer allocation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match allocator types with characteristics:",
+        "type": "match",
+        "left": [
+            "Stack allocator",
+            "Pool allocator",
+            "Arena allocator",
+            "Heap allocator"
+        ],
+        "right": [
+            "LIFO deallocation",
+            "Fixed size blocks",
+            "Bulk deallocation",
+            "General purpose"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Cache { int data[16]; int valid[16]; int size; };\nint cache_get(struct Cache *c, int idx) {\n    if(idx < c->size && c->valid[idx]) return c->data[idx];\n    return -1;\n}\nint main() {\n    struct Cache c = {{10,20}, {1,1}, 2};\n    printf(\"%d\", cache_get(&c, 1));\n    return 0;\n}",
+        "o": [
+            "20",
+            "10",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Cache structures track data validity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ array indicates which cache entries are valid.",
+        "type": "fill_blank",
+        "answers": [
+            "valid",
+            "validity"
+        ],
+        "other_options": [
+            "data",
+            "index",
+            "size"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct LRU { int keys[4]; int vals[4]; int count; };\nvoid lru_put(struct LRU *l, int k, int v) {\n    for(int i = l->count; i > 0; i--) {\n        l->keys[i] = l->keys[i-1];\n        l->vals[i] = l->vals[i-1];\n    }\n    l->keys[0] = k;\n    l->vals[0] = v;\n    if(l->count < 4) l->count++;\n}\nint main() {\n    struct LRU l = {{0}, {0}, 0};\n    lru_put(&l, 1, 10);\n    lru_put(&l, 2, 20);\n    printf(\"%d\", l.keys[0]);\n    return 0;\n}",
+        "o": [
+            "2",
+            "1",
+            "10",
+            "20"
+        ]
+    },
+    {
+        "q": "LRU cache moves recently accessed items to front.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Trie { struct Trie *children[26]; int isEnd; };\nint main() {\n    struct Trie root = {{NULL}, 0};\n    printf(\"%d\", root.isEnd);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "26",
+            "Error"
+        ]
+    },
+    {
+        "q": "Trie nodes have array of child pointers for each character.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Graph { int adj[5][5]; int vertices; };\nint main() {\n    struct Graph g = {{{0,1,0},{1,0,1},{0,1,0}}, 3};\n    printf(\"%d\", g.adj[0][1]);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Adjacency matrix stores graph edge connections.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange graph traversal algorithms:",
+        "type": "rearrange",
+        "words": [
+            "BFS",
+            "DFS",
+            "Dijkstra",
+            "A*",
+            "Bellman-Ford"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Edge { int from; int to; int weight; };\nint main() {\n    struct Edge edges[] = {{0,1,5}, {1,2,3}, {0,2,10}};\n    printf(\"%d\", edges[1].weight);\n    return 0;\n}",
+        "o": [
+            "3",
+            "5",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Edge list stores graph edges with weights.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match graph representations with memory usage:",
+        "type": "match",
+        "left": [
+            "Adjacency matrix",
+            "Adjacency list",
+            "Edge list",
+            "Incidence matrix"
+        ],
+        "right": [
+            "O(V^2) space",
+            "O(V+E) space",
+            "O(E) space",
+            "O(V*E) space"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Heap { int data[100]; int size; };\nvoid push(struct Heap *h, int val) {\n    h->data[h->size++] = val;\n}\nint main() {\n    struct Heap h = {{0}, 0};\n    push(&h, 5);\n    push(&h, 3);\n    push(&h, 7);\n    printf(\"%d\", h.size);\n    return 0;\n}",
+        "o": [
+            "3",
+            "5",
+            "7",
+            "Error"
+        ]
+    },
+    {
+        "q": "Heap structures maintain size counter.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct PQueue { int data[100]; int priority[100]; int size; };\nvoid enqueue(struct PQueue *q, int val, int pri) {\n    q->data[q->size] = val;\n    q->priority[q->size++] = pri;\n}\nint main() {\n    struct PQueue q = {{0}, {0}, 0};\n    enqueue(&q, 10, 1);\n    enqueue(&q, 20, 3);\n    printf(\"%d\", q.priority[1]);\n    return 0;\n}",
+        "o": [
+            "3",
+            "1",
+            "20",
+            "Error"
+        ]
+    },
+    {
+        "q": "Priority queues store values with associated priorities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ queue orders elements by priority.",
+        "type": "fill_blank",
+        "answers": [
+            "priority"
+        ],
+        "other_options": [
+            "FIFO",
+            "LIFO",
+            "random"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Set { int elements[100]; int count; };\nint contains(struct Set *s, int val) {\n    for(int i = 0; i < s->count; i++)\n        if(s->elements[i] == val) return 1;\n    return 0;\n}\nint main() {\n    struct Set s = {{1,2,3}, 3};\n    printf(\"%d\", contains(&s, 2));\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Set structures check for element membership.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Multiset { int elem[100]; int cnt[100]; int uniq; };\nvoid add(struct Multiset *m, int val) {\n    for(int i = 0; i < m->uniq; i++) {\n        if(m->elem[i] == val) { m->cnt[i]++; return; }\n    }\n    m->elem[m->uniq] = val;\n    m->cnt[m->uniq++] = 1;\n}\nint main() {\n    struct Multiset m = {{0}, {0}, 0};\n    add(&m, 5); add(&m, 5); add(&m, 3);\n    printf(\"%d\", m.cnt[0]);\n    return 0;\n}",
+        "o": [
+            "2",
+            "1",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Multiset tracks element counts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Deque { int data[100]; int front; int back; };\nvoid pushFront(struct Deque *d, int val) {\n    d->front = (d->front - 1 + 100) % 100;\n    d->data[d->front] = val;\n}\nint main() {\n    struct Deque d = {{0}, 50, 50};\n    pushFront(&d, 10);\n    printf(\"%d\", d.data[d.front]);\n    return 0;\n}",
+        "o": [
+            "10",
+            "0",
+            "50",
+            "Error"
+        ]
+    },
+    {
+        "q": "Deque supports insertion at both ends.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match data structures with their operations:",
+        "type": "match",
+        "left": [
+            "Stack",
+            "Queue",
+            "Deque",
+            "Priority Queue"
+        ],
+        "right": [
+            "push/pop",
+            "enqueue/dequeue",
+            "pushFront/pushBack",
+            "insert/extractMax"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct BitSet { unsigned int bits[4]; };\nvoid setBit(struct BitSet *b, int pos) {\n    b->bits[pos/32] |= (1u << (pos % 32));\n}\nint getBit(struct BitSet *b, int pos) {\n    return (b->bits[pos/32] >> (pos % 32)) & 1;\n}\nint main() {\n    struct BitSet b = {{0}};\n    setBit(&b, 5);\n    printf(\"%d\", getBit(&b, 5));\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Bitset structures pack bits efficiently.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct BloomFilter { unsigned int bits[8]; int hashCount; };\nunsigned int hash1(int x) { return x % 256; }\nunsigned int hash2(int x) { return (x * 31) % 256; }\nvoid add(struct BloomFilter *bf, int x) {\n    bf->bits[hash1(x)/32] |= (1u << (hash1(x)%32));\n    bf->bits[hash2(x)/32] |= (1u << (hash2(x)%32));\n}\nint main() {\n    struct BloomFilter bf = {{0}, 2};\n    add(&bf, 42);\n    printf(\"Added\");\n    return 0;\n}",
+        "o": [
+            "Added",
+            "Error",
+            "42",
+            "0"
+        ]
+    },
+    {
+        "q": "Bloom filters use multiple hash functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange probabilistic data structures by false positive rate:",
+        "type": "rearrange",
+        "words": [
+            "Bloom filter",
+            "Counting filter",
+            "Cuckoo filter",
+            "Quotient filter"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct SkipNode { int val; struct SkipNode *next[4]; };\nint main() {\n    struct SkipNode n = {10, {NULL}};\n    printf(\"%d\", n.val);\n    return 0;\n}",
+        "o": [
+            "10",
+            "0",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Skip list nodes have multiple next pointers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct RBNode { int val; int color; struct RBNode *left, *right, *parent; };\nint main() {\n    struct RBNode n = {50, 1, NULL, NULL, NULL};\n    printf(\"%d\", n.color);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "50",
+            "Error"
+        ]
+    },
+    {
+        "q": "Red-black tree nodes have color property.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ tree maintains balance using node colors.",
+        "type": "fill_blank",
+        "answers": [
+            "red-black",
+            "RB"
+        ],
+        "other_options": [
+            "AVL",
+            "B",
+            "splay"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct AVLNode { int val; int height; struct AVLNode *left, *right; };\nint getHeight(struct AVLNode *n) { return n ? n->height : 0; }\nint balance(struct AVLNode *n) {\n    return n ? getHeight(n->left) - getHeight(n->right) : 0;\n}\nint main() {\n    struct AVLNode n = {10, 2, NULL, NULL};\n    printf(\"%d\", balance(&n));\n    return 0;\n}",
+        "o": [
+            "0",
+            "2",
+            "-2",
+            "Error"
+        ]
+    },
+    {
+        "q": "AVL trees track node heights for balance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match balanced tree types with properties:",
+        "type": "match",
+        "left": [
+            "AVL tree",
+            "Red-black tree",
+            "B-tree",
+            "Splay tree"
+        ],
+        "right": [
+            "Height balance factor",
+            "Node coloring",
+            "Multi-way branching",
+            "Self-adjusting"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct BTreeNode { int keys[5]; int children[6]; int keyCount; int isLeaf; };\nint main() {\n    struct BTreeNode n = {{10, 20, 30}, {0}, 3, 1};\n    printf(\"%d\", n.keys[1]);\n    return 0;\n}",
+        "o": [
+            "20",
+            "10",
+            "30",
+            "Error"
+        ]
+    },
+    {
+        "q": "B-tree nodes store multiple keys per node.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Segment { int left; int right; int max; };\nint main() {\n    struct Segment tree[7] = {{0,0,5}, {1,1,3}, {2,2,7}};\n    printf(\"%d\", tree[2].max);\n    return 0;\n}",
+        "o": [
+            "7",
+            "3",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Segment trees store range query results.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Fenwick { int tree[100]; int n; };\nvoid update(struct Fenwick *f, int i, int delta) {\n    for(; i <= f->n; i += i & (-i))\n        f->tree[i] += delta;\n}\nint main() {\n    struct Fenwick f = {{0}, 10};\n    update(&f, 5, 3);\n    printf(\"%d\", f.tree[5]);\n    return 0;\n}",
+        "o": [
+            "3",
+            "5",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Fenwick tree uses bit manipulation for index updates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange tree data structures by branching factor:",
+        "type": "rearrange",
+        "words": [
+            "Binary tree",
+            "Ternary tree",
+            "Quad tree",
+            "Octree",
+            "B-tree"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct QuadNode { int val; struct QuadNode *children[4]; };\nint main() {\n    struct QuadNode n = {100, {NULL, NULL, NULL, NULL}};\n    printf(\"%d\", n.val);\n    return 0;\n}",
+        "o": [
+            "100",
+            "0",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Quadtree nodes have exactly four children.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct KDNode { int point[2]; struct KDNode *left, *right; };\nint main() {\n    struct KDNode n = {{3, 4}, NULL, NULL};\n    printf(\"%d,%d\", n.point[0], n.point[1]);\n    return 0;\n}",
+        "o": [
+            "3,4",
+            "0,0",
+            "4,3",
+            "Error"
+        ]
+    },
+    {
+        "q": "K-D tree nodes store k-dimensional points.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ tree partitions space by alternating dimensions.",
+        "type": "fill_blank",
+        "answers": [
+            "K-D",
+            "KD"
+        ],
+        "other_options": [
+            "quad",
+            "oct",
+            "R"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct RTree { int mbr[4]; struct RTree *children[4]; int childCount; };\nint main() {\n    struct RTree n = {{0,0,10,10}, {NULL}, 0};\n    printf(\"%d\", n.mbr[2]);\n    return 0;\n}",
+        "o": [
+            "10",
+            "0",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "R-tree nodes store minimum bounding rectangles.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match spatial data structures with applications:",
+        "type": "match",
+        "left": [
+            "Quadtree",
+            "K-D tree",
+            "R-tree",
+            "Octree"
+        ],
+        "right": [
+            "2D spatial indexing",
+            "Nearest neighbor search",
+            "Database spatial index",
+            "3D voxel data"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct UFNode { int parent; int rank; };\nint find(struct UFNode *uf, int x) {\n    if(uf[x].parent != x) uf[x].parent = find(uf, uf[x].parent);\n    return uf[x].parent;\n}\nint main() {\n    struct UFNode uf[5] = {{0,0}, {1,0}, {2,0}, {3,0}, {4,0}};\n    uf[1].parent = 0;\n    uf[2].parent = 1;\n    printf(\"%d\", find(uf, 2));\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Union-Find uses path compression in find.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct UFNode { int parent; int rank; };\nvoid unite(struct UFNode *uf, int x, int y) {\n    int px = uf[x].parent, py = uf[y].parent;\n    if(uf[px].rank < uf[py].rank) uf[px].parent = py;\n    else if(uf[px].rank > uf[py].rank) uf[py].parent = px;\n    else { uf[py].parent = px; uf[px].rank++; }\n}\nint main() {\n    struct UFNode uf[3] = {{0,0}, {1,0}, {2,0}};\n    unite(uf, 0, 1);\n    printf(\"%d\", uf[1].parent);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Union by rank keeps trees balanced.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange Union-Find operations by complexity:",
+        "type": "rearrange",
+        "words": [
+            "makeSet O(1)",
+            "find O(a)",
+            "union O(a)",
+            "connected O(a)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct SparseMatrix { int rows; int cols; int nnz; int *rowPtr; int *colIdx; double *vals; };\nint main() {\n    int rp[] = {0, 2, 3};\n    int ci[] = {0, 2, 1};\n    double v[] = {1.0, 2.0, 3.0};\n    struct SparseMatrix m = {2, 3, 3, rp, ci, v};\n    printf(\"%d\", m.nnz);\n    return 0;\n}",
+        "o": [
+            "3",
+            "2",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "CSR format stores sparse matrices with row pointers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ format is efficient for row-wise sparse matrix operations.",
+        "type": "fill_blank",
+        "answers": [
+            "CSR",
+            "Compressed Sparse Row"
+        ],
+        "other_options": [
+            "CSC",
+            "COO",
+            "DOK"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct TripleSparse { int row; int col; double val; };\nint main() {\n    struct TripleSparse entries[] = {{0,0,1.0}, {1,2,2.0}, {2,1,3.0}};\n    printf(\"%.0f\", entries[1].val);\n    return 0;\n}",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "COO format stores row, column, value triples.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match sparse matrix formats with storage:",
+        "type": "match",
+        "left": [
+            "COO",
+            "CSR",
+            "CSC",
+            "DOK"
+        ],
+        "right": [
+            "Triple arrays",
+            "Row-compressed",
+            "Column-compressed",
+            "Dictionary of keys"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Rope { char *data; struct Rope *left; struct Rope *right; int weight; };\nint main() {\n    struct Rope r = {\"Hello\", NULL, NULL, 5};\n    printf(\"%s\", r.data);\n    return 0;\n}",
+        "o": [
+            "Hello",
+            "5",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Rope data structure enables efficient string concatenation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct StringBuilder { char data[1024]; int len; int cap; };\nvoid append(struct StringBuilder *sb, char c) {\n    if(sb->len < sb->cap) sb->data[sb->len++] = c;\n}\nint main() {\n    struct StringBuilder sb = {{0}, 0, 1024};\n    append(&sb, 'A'); append(&sb, 'B'); append(&sb, 'C');\n    sb.data[sb.len] = '\\0';\n    printf(\"%s\", sb.data);\n    return 0;\n}",
+        "o": [
+            "ABC",
+            "A",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "StringBuilder pattern builds strings incrementally.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct StringView { const char *data; int start; int len; };\nint main() {\n    const char *s = \"Hello World\";\n    struct StringView sv = {s, 6, 5};\n    printf(\"%.*s\", sv.len, sv.data + sv.start);\n    return 0;\n}",
+        "o": [
+            "World",
+            "Hello",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "String view provides non-owning string reference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange string representations by memory overhead:",
+        "type": "rearrange",
+        "words": [
+            "char array",
+            "String view",
+            "Rope",
+            "StringBuilder",
+            "Interned string"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Promise { int resolved; int value; void (*then)(int); };\nvoid handler(int v) { printf(\"%d\", v); }\nint main() {\n    struct Promise p = {0, 0, handler};\n    p.resolved = 1;\n    p.value = 42;\n    if(p.resolved) p.then(p.value);\n    return 0;\n}",
+        "o": [
+            "42",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Promise pattern stores value and callback.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Future { int ready; int result; };\nint poll(struct Future *f) {\n    if(!f->ready) { f->ready = 1; f->result = 100; }\n    return f->ready;\n}\nint main() {\n    struct Future f = {0, 0};\n    while(!poll(&f));\n    printf(\"%d\", f.result);\n    return 0;\n}",
+        "o": [
+            "100",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Future pattern represents deferred computation result.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ pattern wraps a value that may not be ready yet.",
+        "type": "fill_blank",
+        "answers": [
+            "Future",
+            "Promise"
+        ],
+        "other_options": [
+            "Option",
+            "Result",
+            "Maybe"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Generator { int state; int current; };\nint next(struct Generator *g) {\n    g->current = g->state * 2;\n    g->state++;\n    return g->current;\n}\nint main() {\n    struct Generator g = {1, 0};\n    printf(\"%d\", next(&g));\n    return 0;\n}",
+        "o": [
+            "2",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Generator structures maintain iteration state.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match async patterns with their purposes:",
+        "type": "match",
+        "left": [
+            "Future",
+            "Promise",
+            "Generator",
+            "Coroutine"
+        ],
+        "right": [
+            "Deferred value",
+            "Callback registration",
+            "Lazy sequence",
+            "Cooperative multitasking"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Message { int type; int sender; int receiver; char payload[256]; };\nint main() {\n    struct Message m = {1, 100, 200, \"Hello\"};\n    printf(\"%d->%d\", m.sender, m.receiver);\n    return 0;\n}",
+        "o": [
+            "100->200",
+            "1->Hello",
+            "200->100",
+            "Error"
+        ]
+    },
+    {
+        "q": "Message structures include sender and receiver IDs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Channel { int buffer[10]; int readIdx; int writeIdx; int count; };\nvoid send(struct Channel *ch, int val) {\n    ch->buffer[ch->writeIdx++] = val;\n    ch->writeIdx %= 10;\n    ch->count++;\n}\nint main() {\n    struct Channel ch = {{0}, 0, 0, 0};\n    send(&ch, 42);\n    printf(\"%d\", ch.count);\n    return 0;\n}",
+        "o": [
+            "1",
+            "42",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Channel structures buffer messages between producers and consumers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Actor { int id; void (*receive)(struct Actor*, int); };\nvoid handle(struct Actor *a, int msg) { printf(\"Actor%d got %d\", a->id, msg); }\nint main() {\n    struct Actor a = {1, handle};\n    a.receive(&a, 42);\n    return 0;\n}",
+        "o": [
+            "Actor1 got 42",
+            "42 got Actor1",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Actor model uses message passing for communication.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange concurrency primitives by abstraction level:",
+        "type": "rearrange",
+        "words": [
+            "Mutex",
+            "Semaphore",
+            "Channel",
+            "Actor",
+            "CSP"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Lock { int locked; int owner; };\nint tryLock(struct Lock *l, int id) {\n    if(!l->locked) { l->locked = 1; l->owner = id; return 1; }\n    return 0;\n}\nint main() {\n    struct Lock l = {0, -1};\n    printf(\"%d\", tryLock(&l, 42));\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "42",
+            "Error"
+        ]
+    },
+    {
+        "q": "Lock structures track locked state and owner.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Semaphore { int count; int max; };\nint wait(struct Semaphore *s) {\n    if(s->count > 0) { s->count--; return 1; }\n    return 0;\n}\nvoid signal(struct Semaphore *s) {\n    if(s->count < s->max) s->count++;\n}\nint main() {\n    struct Semaphore s = {2, 5};\n    wait(&s); wait(&s);\n    printf(\"%d\", s.count);\n    return 0;\n}",
+        "o": [
+            "0",
+            "2",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Semaphore maintains a count of available resources.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ primitive counts available resources.",
+        "type": "fill_blank",
+        "answers": [
+            "semaphore"
+        ],
+        "other_options": [
+            "mutex",
+            "lock",
+            "barrier"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct RWLock { int readers; int writer; };\nint readLock(struct RWLock *l) {\n    if(!l->writer) { l->readers++; return 1; }\n    return 0;\n}\nint main() {\n    struct RWLock l = {0, 0};\n    readLock(&l); readLock(&l);\n    printf(\"%d\", l.readers);\n    return 0;\n}",
+        "o": [
+            "2",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Read-write lock allows multiple readers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match synchronization primitives with behavior:",
+        "type": "match",
+        "left": [
+            "Mutex",
+            "Spinlock",
+            "Semaphore",
+            "RWLock"
+        ],
+        "right": [
+            "Exclusive access",
+            "Busy waiting",
+            "Counting access",
+            "Read/write sharing"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct RingBuffer { char data[16]; int head; int tail; int full; };\nint isEmpty(struct RingBuffer *rb) {\n    return !rb->full && (rb->head == rb->tail);\n}\nint main() {\n    struct RingBuffer rb = {{0}, 0, 0, 0};\n    printf(\"%d\", isEmpty(&rb));\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "16",
+            "Error"
+        ]
+    },
+    {
+        "q": "Ring buffer uses full flag to distinguish empty from full.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct SPSC { int buffer[8]; int readIdx; int writeIdx; };\nvoid produce(struct SPSC *q, int val) {\n    q->buffer[q->writeIdx % 8] = val;\n    q->writeIdx++;\n}\nint consume(struct SPSC *q) {\n    int val = q->buffer[q->readIdx % 8];\n    q->readIdx++;\n    return val;\n}\nint main() {\n    struct SPSC q = {{0}, 0, 0};\n    produce(&q, 42);\n    printf(\"%d\", consume(&q));\n    return 0;\n}",
+        "o": [
+            "42",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "SPSC queue is single-producer single-consumer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Vec { int *data; int len; int cap; };\nvoid ensureCap(struct Vec *v, int needed) {\n    if(v->cap < needed) v->cap = needed * 2;\n}\nint main() {\n    int arr[10];\n    struct Vec v = {arr, 0, 10};\n    ensureCap(&v, 15);\n    printf(\"%d\", v.cap);\n    return 0;\n}",
+        "o": [
+            "30",
+            "15",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Dynamic arrays double capacity on growth.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange container types by random access performance:",
+        "type": "rearrange",
+        "words": [
+            "Array O(1)",
+            "Hash table O(1)",
+            "BST O(log n)",
+            "Linked list O(n)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct SlabAlloc { char slabs[4][256]; int freeList[4]; int slabCount; };\nint main() {\n    struct SlabAlloc sa = {{{0}}, {0,1,2,3}, 4};\n    printf(\"%d\", sa.slabCount);\n    return 0;\n}",
+        "o": [
+            "4",
+            "256",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Slab allocator pre-allocates fixed-size blocks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct FreeList { void *head; int blockSize; };\nint main() {\n    struct FreeList fl = {NULL, 64};\n    printf(\"%d\", fl.blockSize);\n    return 0;\n}",
+        "o": [
+            "64",
+            "0",
+            "NULL",
+            "Error"
+        ]
+    },
+    {
+        "q": "Free list tracks available blocks for reuse.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ allocator reuses freed memory blocks.",
+        "type": "fill_blank",
+        "answers": [
+            "free list",
+            "pool"
+        ],
+        "other_options": [
+            "stack",
+            "heap",
+            "arena"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct MemRegion { void *base; size_t size; size_t used; };\nvoid *bump_alloc(struct MemRegion *r, size_t n) {\n    if(r->used + n > r->size) return NULL;\n    void *p = (char*)r->base + r->used;\n    r->used += n;\n    return p;\n}\nint main() {\n    char buf[1024];\n    struct MemRegion r = {buf, 1024, 0};\n    bump_alloc(&r, 100);\n    printf(\"%zu\", r.used);\n    return 0;\n}",
+        "o": [
+            "100",
+            "0",
+            "1024",
+            "Error"
+        ]
+    },
+    {
+        "q": "Bump allocator increments pointer for each allocation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match allocator types with deallocation strategy:",
+        "type": "match",
+        "left": [
+            "Bump allocator",
+            "Pool allocator",
+            "Stack allocator",
+            "Heap allocator"
+        ],
+        "right": [
+            "All at once",
+            "Return to pool",
+            "LIFO order",
+            "Individual free"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stddef.h>\n#define container_of(ptr, type, member) \\\n    ((type*)((char*)(ptr) - offsetof(type, member)))\nstruct Data { int x; int y; int z; };\nint main() {\n    struct Data d = {1, 2, 3};\n    int *py = &d.y;\n    struct Data *pd = container_of(py, struct Data, y);\n    printf(\"%d\", pd->x);\n    return 0;\n}",
+        "o": [
+            "1",
+            "2",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "container_of macro gets struct pointer from member pointer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct ListNode { struct ListNode *next; struct ListNode *prev; };\nstruct Item { int value; struct ListNode node; };\nint main() {\n    struct Item i = {42, {NULL, NULL}};\n    printf(\"%d\", i.value);\n    return 0;\n}",
+        "o": [
+            "42",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Intrusive lists embed node in data structure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct TreeHdr { struct TreeHdr *left; struct TreeHdr *right; struct TreeHdr *parent; };\nstruct MyNode { struct TreeHdr hdr; int data; };\nint main() {\n    struct MyNode n = {{NULL, NULL, NULL}, 99};\n    printf(\"%d\", n.data);\n    return 0;\n}",
+        "o": [
+            "99",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Header structs enable generic tree operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange intrusive data structure benefits:",
+        "type": "rearrange",
+        "words": [
+            "No extra allocation",
+            "Better cache locality",
+            "Type flexibility",
+            "Manual management",
+            "Ownership clarity"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Vtable { void (*method1)(void*); void (*method2)(void*); };\nstruct Object { struct Vtable *vtable; int data; };\nvoid m1(void *self) { printf(\"m1\"); }\nvoid m2(void *self) { printf(\"m2\"); }\nint main() {\n    struct Vtable vt = {m1, m2};\n    struct Object obj = {&vt, 10};\n    obj.vtable->method1(&obj);\n    return 0;\n}",
+        "o": [
+            "m1",
+            "m2",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Vtable pattern enables runtime polymorphism in C.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct TypeInfo { const char *name; size_t size; void (*print)(void*); };\nvoid printInt(void *p) { printf(\"%d\", *(int*)p); }\nint main() {\n    struct TypeInfo ti = {\"int\", sizeof(int), printInt};\n    int x = 42;\n    ti.print(&x);\n    return 0;\n}",
+        "o": [
+            "42",
+            "int",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Type info structures enable runtime type introspection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ pattern stores type metadata for runtime use.",
+        "type": "fill_blank",
+        "answers": [
+            "RTTI",
+            "type info"
+        ],
+        "other_options": [
+            "vtable",
+            "dispatch",
+            "reflection"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Factory { void *(*create)(void); void (*destroy)(void*); };\nvoid *createInt(void) { static int x = 5; return &x; }\nvoid destroyInt(void *p) { }\nint main() {\n    struct Factory f = {createInt, destroyInt};\n    int *p = f.create();\n    printf(\"%d\", *p);\n    return 0;\n}",
+        "o": [
+            "5",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Factory pattern encapsulates object creation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match design patterns with their purposes:",
+        "type": "match",
+        "left": [
+            "Factory",
+            "Singleton",
+            "Observer",
+            "Strategy"
+        ],
+        "right": [
+            "Object creation",
+            "Single instance",
+            "Event notification",
+            "Algorithm selection"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Builder { char *str; int len; int cap; };\nstruct Builder* withStr(struct Builder *b, char c) {\n    if(b->len < b->cap) b->str[b->len++] = c;\n    return b;\n}\nint main() {\n    char buf[100];\n    struct Builder b = {buf, 0, 100};\n    withStr(withStr(&b, 'A'), 'B');\n    buf[b.len] = 0;\n    printf(\"%s\", buf);\n    return 0;\n}",
+        "o": [
+            "AB",
+            "A",
+            "B",
+            "Error"
+        ]
+    },
+    {
+        "q": "Builder pattern returns self for method chaining.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Context { int state; void *data; int (*next)(struct Context*); };\nint step1(struct Context *c) { c->state = 1; return 1; }\nint step2(struct Context *c) { c->state = 2; return 0; }\nint main() {\n    struct Context c = {0, NULL, step1};\n    while(c.next(&c)) c.next = step2;\n    printf(\"%d\", c.state);\n    return 0;\n}",
+        "o": [
+            "2",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "State machine transitions can be function pointers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match design patterns with their key structures:",
+        "type": "match",
+        "left": [
+            "State machine",
+            "Builder",
+            "Prototype",
+            "Command"
+        ],
+        "right": [
+            "Current state + transitions",
+            "Self-returning methods",
+            "Clone function pointer",
+            "Execute function pointer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Rect { int x, y, w, h; };\nstruct Rect intersect(struct Rect a, struct Rect b) {\n    int x1 = a.x > b.x ? a.x : b.x;\n    int y1 = a.y > b.y ? a.y : b.y;\n    int x2 = (a.x+a.w) < (b.x+b.w) ? (a.x+a.w) : (b.x+b.w);\n    int y2 = (a.y+a.h) < (b.y+b.h) ? (a.y+a.h) : (b.y+b.h);\n    return (struct Rect){x1, y1, x2-x1, y2-y1};\n}\nint main() {\n    struct Rect r = intersect((struct Rect){0,0,10,10}, (struct Rect){5,5,10,10});\n    printf(\"%d\", r.w);\n    return 0;\n}",
+        "o": [
+            "5",
+            "10",
+            "15",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rectangle intersection computes overlapping region.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Circle { float cx, cy, r; };\nint contains(struct Circle c, float x, float y) {\n    float dx = x - c.cx;\n    float dy = y - c.cy;\n    return dx*dx + dy*dy <= c.r*c.r;\n}\nint main() {\n    struct Circle c = {0, 0, 5};\n    printf(\"%d\", contains(c, 3, 4));\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Point in circle uses distance squared comparison.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ of a point from circle center determines containment.",
+        "type": "fill_blank",
+        "answers": [
+            "distance"
+        ],
+        "other_options": [
+            "angle",
+            "area",
+            "perimeter"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Line { float a, b, c; };\nfloat distToLine(struct Line l, float x, float y) {\n    float d = l.a*x + l.b*y + l.c;\n    return d < 0 ? -d : d;\n}\nint main() {\n    struct Line l = {1, 0, -5};\n    printf(\"%.0f\", distToLine(l, 8, 0));\n    return 0;\n}",
+        "o": [
+            "3",
+            "5",
+            "8",
+            "Error"
+        ]
+    },
+    {
+        "q": "Line equation ax + by + c = 0 represents implicit form.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Triangle { float x1, y1, x2, y2, x3, y3; };\nfloat area(struct Triangle t) {\n    float a = t.x1*(t.y2-t.y3) + t.x2*(t.y3-t.y1) + t.x3*(t.y1-t.y2);\n    return a < 0 ? -a/2 : a/2;\n}\nint main() {\n    struct Triangle t = {0,0, 4,0, 0,3};\n    printf(\"%.0f\", area(t));\n    return 0;\n}",
+        "o": [
+            "6",
+            "12",
+            "7",
+            "Error"
+        ]
+    },
+    {
+        "q": "Triangle area uses shoelace formula.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange polygon properties by computation order:",
+        "type": "rearrange",
+        "words": [
+            "Vertices",
+            "Edges",
+            "Perimeter",
+            "Area",
+            "Centroid"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Transform { float m[3][3]; };\nstruct Transform identity() {\n    return (struct Transform){{{1,0,0},{0,1,0},{0,0,1}}};\n}\nint main() {\n    struct Transform t = identity();\n    printf(\"%.0f\", t.m[2][2]);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "3x3 identity matrix has 1s on diagonal.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Color { unsigned char r, g, b, a; };\nstruct Color blend(struct Color fg, struct Color bg) {\n    int a = fg.a;\n    return (struct Color){\n        (fg.r * a + bg.r * (255-a)) / 255,\n        (fg.g * a + bg.g * (255-a)) / 255,\n        (fg.b * a + bg.b * (255-a)) / 255,\n        255\n    };\n}\nint main() {\n    struct Color c = blend((struct Color){255,0,0,128}, (struct Color){0,0,255,255});\n    printf(\"%d\", c.r > c.b ? 1 : 0);\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "128",
+            "Error"
+        ]
+    },
+    {
+        "q": "Alpha blending interpolates colors by alpha value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match color operations with formulas:",
+        "type": "match",
+        "left": [
+            "Alpha blend",
+            "Grayscale",
+            "Invert",
+            "Brighten"
+        ],
+        "right": [
+            "src*a + dst*(1-a)",
+            "0.3R + 0.59G + 0.11B",
+            "255 - value",
+            "value + delta"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Pixel { unsigned char r, g, b; };\nstruct Pixel grayscale(struct Pixel p) {\n    unsigned char g = (p.r + p.g + p.b) / 3;\n    return (struct Pixel){g, g, g};\n}\nint main() {\n    struct Pixel p = grayscale((struct Pixel){60, 120, 180});\n    printf(\"%d\", p.r);\n    return 0;\n}",
+        "o": [
+            "120",
+            "60",
+            "180",
+            "Error"
+        ]
+    },
+    {
+        "q": "Simple grayscale averages RGB components.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Image { int width; int height; unsigned char *data; };\nint getPixel(struct Image *img, int x, int y) {\n    return img->data[y * img->width + x];\n}\nint main() {\n    unsigned char data[] = {1,2,3,4,5,6};\n    struct Image img = {3, 2, data};\n    printf(\"%d\", getPixel(&img, 1, 1));\n    return 0;\n}",
+        "o": [
+            "5",
+            "2",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Image pixel access uses y*width + x formula.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ stores image dimensions and pixel data.",
+        "type": "fill_blank",
+        "answers": [
+            "Image",
+            "Image structure"
+        ],
+        "other_options": [
+            "Pixel",
+            "Buffer",
+            "Array"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Audio { float *samples; int sampleRate; int channels; int length; };\nint main() {\n    float data[] = {0.1, 0.2, 0.3, 0.4};\n    struct Audio a = {data, 44100, 2, 2};\n    printf(\"%d\", a.sampleRate);\n    return 0;\n}",
+        "o": [
+            "44100",
+            "2",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Audio structures store samples, rate, and channels.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Video { int width; int height; int fps; int frameCount; };\nfloat duration(struct Video v) {\n    return (float)v.frameCount / v.fps;\n}\nint main() {\n    struct Video v = {1920, 1080, 30, 300};\n    printf(\"%.0f\", duration(v));\n    return 0;\n}",
+        "o": [
+            "10",
+            "300",
+            "30",
+            "Error"
+        ]
+    },
+    {
+        "q": "Video duration equals frames divided by fps.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange media formats by typical file size:",
+        "type": "rearrange",
+        "words": [
+            "Text",
+            "Audio",
+            "Image",
+            "Video",
+            "3D Model"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Font { const char *name; int size; int style; };\nint main() {\n    struct Font f = {\"Arial\", 12, 0};\n    printf(\"%s %d\", f.name, f.size);\n    return 0;\n}",
+        "o": [
+            "Arial 12",
+            "12 Arial",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Font structures store typeface properties.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Glyph { int codepoint; int width; int height; int advance; };\nint main() {\n    struct Glyph g = {'A', 10, 12, 11};\n    printf(\"%c: %d\", g.codepoint, g.advance);\n    return 0;\n}",
+        "o": [
+            "A: 11",
+            "A: 10",
+            "65: 11",
+            "Error"
+        ]
+    },
+    {
+        "q": "Glyph advance determines character spacing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match typography terms with meanings:",
+        "type": "match",
+        "left": [
+            "Glyph",
+            "Advance",
+            "Kerning",
+            "Leading"
+        ],
+        "right": [
+            "Character shape",
+            "Horizontal spacing",
+            "Pair adjustment",
+            "Line spacing"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct DateTime { int year; int month; int day; int hour; int min; int sec; };\nint isLeapYear(int y) { return (y%4==0 && y%100!=0) || y%400==0; }\nint main() {\n    printf(\"%d\", isLeapYear(2024));\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "2024",
+            "Error"
+        ]
+    },
+    {
+        "q": "Leap year is divisible by 4 but not 100, or by 400.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Duration { int days; int hours; int mins; int secs; };\nint toSeconds(struct Duration d) {\n    return d.days*86400 + d.hours*3600 + d.mins*60 + d.secs;\n}\nint main() {\n    struct Duration d = {0, 1, 30, 0};\n    printf(\"%d\", toSeconds(d));\n    return 0;\n}",
+        "o": [
+            "5400",
+            "90",
+            "3600",
+            "Error"
+        ]
+    },
+    {
+        "q": "Duration to seconds: 1 hour 30 min = 5400 seconds.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ structure represents time intervals.",
+        "type": "fill_blank",
+        "answers": [
+            "Duration",
+            "TimeSpan"
+        ],
+        "other_options": [
+            "DateTime",
+            "Timestamp",
+            "Interval"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Money { int cents; };\nstruct Money add(struct Money a, struct Money b) {\n    return (struct Money){a.cents + b.cents};\n}\nint main() {\n    struct Money m = add((struct Money){150}, (struct Money){250});\n    printf(\"%d.%02d\", m.cents/100, m.cents%100);\n    return 0;\n}",
+        "o": [
+            "4.00",
+            "400",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Money stored in cents avoids floating point errors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Ratio { int num; int den; };\nint gcd(int a, int b) { return b ? gcd(b, a%b) : a; }\nstruct Ratio simplify(struct Ratio r) {\n    int g = gcd(r.num, r.den);\n    return (struct Ratio){r.num/g, r.den/g};\n}\nint main() {\n    struct Ratio r = simplify((struct Ratio){12, 8});\n    printf(\"%d/%d\", r.num, r.den);\n    return 0;\n}",
+        "o": [
+            "3/2",
+            "12/8",
+            "6/4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Ratio simplification uses GCD.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange number representations by precision:",
+        "type": "rearrange",
+        "words": [
+            "Integer",
+            "Fixed point",
+            "Float",
+            "Double",
+            "Arbitrary precision"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct BigInt { unsigned int digits[4]; int len; };\nvoid print(struct BigInt b) {\n    for(int i = b.len-1; i >= 0; i--) printf(\"%u\", b.digits[i]);\n}\nint main() {\n    struct BigInt b = {{5, 4, 3}, 3};\n    print(b);\n    return 0;\n}",
+        "o": [
+            "345",
+            "543",
+            "354",
+            "Error"
+        ]
+    },
+    {
+        "q": "Big integers store digits in arrays.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Range { int lo; int hi; };\nint overlaps(struct Range a, struct Range b) {\n    return a.lo <= b.hi && b.lo <= a.hi;\n}\nint main() {\n    struct Range r1 = {5, 10};\n    struct Range r2 = {8, 15};\n    printf(\"%d\", overlaps(r1, r2));\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Range overlap checks for any intersection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match range operations with results:",
+        "type": "match",
+        "left": [
+            "Union",
+            "Intersection",
+            "Difference",
+            "Contains"
+        ],
+        "right": [
+            "Combined range",
+            "Overlapping part",
+            "Non-overlapping part",
+            "Point in range"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Bounds { int min; int max; };\nint clamp(int val, struct Bounds b) {\n    if(val < b.min) return b.min;\n    if(val > b.max) return b.max;\n    return val;\n}\nint main() {\n    printf(\"%d\", clamp(150, (struct Bounds){0, 100}));\n    return 0;\n}",
+        "o": [
+            "100",
+            "150",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Clamp restricts value within bounds.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Limit { int current; int max; };\nint canAdd(struct Limit *l, int amount) {\n    return l->current + amount <= l->max;\n}\nint main() {\n    struct Limit l = {80, 100};\n    printf(\"%d\", canAdd(&l, 25));\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "25",
+            "Error"
+        ]
+    },
+    {
+        "q": "Limit structures enforce maximum constraints.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function checks if operation exceeds limit.",
+        "type": "fill_blank",
+        "answers": [
+            "canAdd",
+            "check"
+        ],
+        "other_options": [
+            "add",
+            "set",
+            "get"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Counter { int value; int step; };\nvoid increment(struct Counter *c) { c->value += c->step; }\nint main() {\n    struct Counter c = {0, 5};\n    increment(&c);\n    increment(&c);\n    printf(\"%d\", c.value);\n    return 0;\n}",
+        "o": [
+            "10",
+            "5",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Counter with step increments by specified amount.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Accumulator { double sum; int count; };\nvoid add(struct Accumulator *a, double val) {\n    a->sum += val;\n    a->count++;\n}\ndouble mean(struct Accumulator *a) {\n    return a->count ? a->sum / a->count : 0;\n}\nint main() {\n    struct Accumulator a = {0, 0};\n    add(&a, 10); add(&a, 20); add(&a, 30);\n    printf(\"%.0f\", mean(&a));\n    return 0;\n}",
+        "o": [
+            "20",
+            "60",
+            "30",
+            "Error"
+        ]
+    },
+    {
+        "q": "Accumulator computes running statistics.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange statistical measures by computation need:",
+        "type": "rearrange",
+        "words": [
+            "Count",
+            "Sum",
+            "Mean",
+            "Variance",
+            "Standard deviation"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Filter { float alpha; float prev; };\nfloat lowpass(struct Filter *f, float input) {\n    f->prev = f->alpha * input + (1 - f->alpha) * f->prev;\n    return f->prev;\n}\nint main() {\n    struct Filter f = {0.5, 0};\n    lowpass(&f, 10);\n    printf(\"%.0f\", lowpass(&f, 10));\n    return 0;\n}",
+        "o": [
+            "8",
+            "10",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Exponential moving average uses alpha parameter.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct PID { float kp; float ki; float kd; float integral; float prevError; };\nfloat update(struct PID *p, float error) {\n    p->integral += error;\n    float derivative = error - p->prevError;\n    p->prevError = error;\n    return p->kp * error + p->ki * p->integral + p->kd * derivative;\n}\nint main() {\n    struct PID pid = {1.0, 0.1, 0.05, 0, 0};\n    printf(\"%.1f\", update(&pid, 10));\n    return 0;\n}",
+        "o": [
+            "11.5",
+            "10.0",
+            "10.5",
+            "Error"
+        ]
+    },
+    {
+        "q": "PID controller uses proportional, integral, derivative terms.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match control system terms with purposes:",
+        "type": "match",
+        "left": [
+            "Proportional",
+            "Integral",
+            "Derivative",
+            "Setpoint"
+        ],
+        "right": [
+            "Current error response",
+            "Accumulated error response",
+            "Error rate response",
+            "Target value"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Scheduler { int tasks[10]; int count; int current; };\nint next(struct Scheduler *s) {\n    if(s->count == 0) return -1;\n    int task = s->tasks[s->current];\n    s->current = (s->current + 1) % s->count;\n    return task;\n}\nint main() {\n    struct Scheduler s = {{1, 2, 3}, 3, 0};\n    next(&s); next(&s);\n    printf(\"%d\", next(&s));\n    return 0;\n}",
+        "o": [
+            "3",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Round-robin scheduler cycles through tasks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Timer { int interval; int elapsed; int active; };\nvoid tick(struct Timer *t) {\n    if(t->active) t->elapsed++;\n}\nint expired(struct Timer *t) {\n    return t->elapsed >= t->interval;\n}\nint main() {\n    struct Timer t = {3, 0, 1};\n    tick(&t); tick(&t); tick(&t);\n    printf(\"%d\", expired(&t));\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Timer expires when elapsed reaches interval.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ structure tracks time-based events.",
+        "type": "fill_blank",
+        "answers": [
+            "Timer"
+        ],
+        "other_options": [
+            "Counter",
+            "Clock",
+            "Scheduler"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Watchdog { int timeout; int counter; };\nvoid feed(struct Watchdog *w) { w->counter = 0; }\nint check(struct Watchdog *w) {\n    w->counter++;\n    return w->counter >= w->timeout;\n}\nint main() {\n    struct Watchdog w = {3, 0};\n    check(&w); check(&w); feed(&w); check(&w);\n    printf(\"%d\", w.counter);\n    return 0;\n}",
+        "o": [
+            "1",
+            "3",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Watchdog timer resets when fed.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange timing mechanisms by precision:",
+        "type": "rearrange",
+        "words": [
+            "Software timer",
+            "Hardware timer",
+            "RTC",
+            "High-precision timer",
+            "Atomic clock"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Logger { int level; const char *prefix; };\nvoid log_msg(struct Logger *l, int level, const char *msg) {\n    if(level >= l->level) printf(\"[%s] %s\\n\", l->prefix, msg);\n}\nint main() {\n    struct Logger l = {2, \"INFO\"};\n    log_msg(&l, 1, \"Debug\");\n    log_msg(&l, 2, \"Info\");\n    return 0;\n}",
+        "o": [
+            "[INFO] Info",
+            "[INFO] Debug",
+            "Debug Info",
+            "Error"
+        ]
+    },
+    {
+        "q": "Logger filters messages by level.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Metric { const char *name; int value; };\nvoid record(struct Metric *m, int v) { m->value = v; }\nint main() {\n    struct Metric m = {\"requests\", 0};\n    record(&m, 100);\n    record(&m, 150);\n    printf(\"%s: %d\", m.name, m.value);\n    return 0;\n}",
+        "o": [
+            "requests: 150",
+            "requests: 100",
+            "150",
+            "Error"
+        ]
+    },
+    {
+        "q": "Metric structures track named measurements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match observability concepts with purposes:",
+        "type": "match",
+        "left": [
+            "Logging",
+            "Metrics",
+            "Tracing",
+            "Alerting"
+        ],
+        "right": [
+            "Event recording",
+            "Numerical measurements",
+            "Request flow",
+            "Threshold notifications"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Health { int status; int checks; int failures; };\nint isHealthy(struct Health *h) {\n    return h->failures == 0 && h->status == 1;\n}\nint main() {\n    struct Health h = {1, 5, 0};\n    printf(\"%d\", isHealthy(&h));\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Health check returns true when no failures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Circuit { int state; int failures; int threshold; };\nint allowRequest(struct Circuit *c) {\n    if(c->state == 0) return 1;\n    if(c->state == 1 && c->failures < c->threshold) return 1;\n    return 0;\n}\nint main() {\n    struct Circuit c = {1, 3, 5};\n    printf(\"%d\", allowRequest(&c));\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Circuit breaker pattern prevents cascading failures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ pattern has open, closed, and half-open states.",
+        "type": "fill_blank",
+        "answers": [
+            "circuit breaker"
+        ],
+        "other_options": [
+            "retry",
+            "bulkhead",
+            "fallback"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Retry { int maxAttempts; int attempts; int delay; };\nint shouldRetry(struct Retry *r) {\n    return r->attempts < r->maxAttempts;\n}\nint main() {\n    struct Retry r = {3, 2, 100};\n    printf(\"%d\", shouldRetry(&r));\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Retry logic limits maximum attempts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange resilience patterns by complexity:",
+        "type": "rearrange",
+        "words": [
+            "Retry",
+            "Timeout",
+            "Circuit breaker",
+            "Bulkhead",
+            "Saga"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct RateLimit { int tokens; int max; int refillRate; };\nint allow(struct RateLimit *r) {\n    if(r->tokens > 0) { r->tokens--; return 1; }\n    return 0;\n}\nint main() {\n    struct RateLimit r = {2, 10, 1};\n    allow(&r); allow(&r);\n    printf(\"%d\", allow(&r));\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Token bucket rate limiter consumes tokens per request.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Quota { int used; int limit; int period; };\nint remaining(struct Quota *q) {\n    return q->limit - q->used;\n}\nint main() {\n    struct Quota q = {75, 100, 3600};\n    printf(\"%d\", remaining(&q));\n    return 0;\n}",
+        "o": [
+            "25",
+            "75",
+            "100",
+            "Error"
+        ]
+    },
+    {
+        "q": "Quota structures track usage against limits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match rate limiting algorithms with behaviors:",
+        "type": "match",
+        "left": [
+            "Token bucket",
+            "Leaky bucket",
+            "Fixed window",
+            "Sliding window"
+        ],
+        "right": [
+            "Burst allowed",
+            "Constant rate",
+            "Period reset",
+            "Rolling average"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Permission { int read; int write; int execute; };\nint canAccess(struct Permission p, int required) {\n    if(required == 1) return p.read;\n    if(required == 2) return p.write;\n    if(required == 4) return p.execute;\n    return 0;\n}\nint main() {\n    struct Permission p = {1, 0, 1};\n    printf(\"%d\", canAccess(p, 2));\n    return 0;\n}",
+        "o": [
+            "0",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Permission structures check access rights.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Role { const char *name; int permissions; };\nint hasPermission(struct Role r, int flag) {\n    return (r.permissions & flag) != 0;\n}\nint main() {\n    struct Role r = {\"admin\", 7};\n    printf(\"%d\", hasPermission(r, 4));\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Bitwise AND checks permission flags.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ model assigns permissions to roles.",
+        "type": "fill_blank",
+        "answers": [
+            "RBAC",
+            "Role-Based Access Control"
+        ],
+        "other_options": [
+            "ACL",
+            "MAC",
+            "DAC"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Session { int id; int userId; int expires; };\nint isValid(struct Session s, int currentTime) {\n    return currentTime < s.expires;\n}\nint main() {\n    struct Session s = {1, 100, 1000};\n    printf(\"%d\", isValid(s, 500));\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "500",
+            "Error"
+        ]
+    },
+    {
+        "q": "Session validity checks expiration time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange authentication steps:",
+        "type": "rearrange",
+        "words": [
+            "Identify",
+            "Authenticate",
+            "Authorize",
+            "Grant access",
+            "Log action"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Token { char data[64]; int type; int expires; };\nint main() {\n    struct Token t = {\"abc123\", 1, 3600};\n    printf(\"%s\", t.data);\n    return 0;\n}",
+        "o": [
+            "abc123",
+            "1",
+            "3600",
+            "Error"
+        ]
+    },
+    {
+        "q": "Token structures store authentication credentials.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Credential { char username[32]; char hash[64]; int salt; };\nint main() {\n    struct Credential c = {\"admin\", \"a1b2c3\", 12345};\n    printf(\"%s\", c.username);\n    return 0;\n}",
+        "o": [
+            "admin",
+            "a1b2c3",
+            "12345",
+            "Error"
+        ]
+    },
+    {
+        "q": "Credential structures store username and password hash.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match security concepts with implementations:",
+        "type": "match",
+        "left": [
+            "Hashing",
+            "Salting",
+            "Encryption",
+            "Signing"
+        ],
+        "right": [
+            "One-way transformation",
+            "Random data addition",
+            "Reversible encoding",
+            "Integrity verification"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Validator { int (*validate)(const char*); const char *error; };\nint notEmpty(const char *s) { return s && s[0] != '\\0'; }\nint main() {\n    struct Validator v = {notEmpty, \"Cannot be empty\"};\n    printf(\"%d\", v.validate(\"test\"));\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Validator structures combine check function with error message.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Rule { int min; int max; const char *name; };\nint check(struct Rule r, int val) {\n    return val >= r.min && val <= r.max;\n}\nint main() {\n    struct Rule r = {0, 100, \"percentage\"};\n    printf(\"%d\", check(r, 50));\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "50",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rule structures define validation constraints.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match validation types with checks:",
+        "type": "match",
+        "left": [
+            "Range",
+            "Pattern",
+            "Required",
+            "Unique"
+        ],
+        "right": [
+            "min <= val <= max",
+            "Regex match",
+            "Not null/empty",
+            "No duplicates"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Schema { const char *name; int type; int required; };\nint main() {\n    struct Schema s = {\"email\", 1, 1};\n    printf(\"%s: type=%d\", s.name, s.type);\n    return 0;\n}",
+        "o": [
+            "email: type=1",
+            "1: type=email",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Schema structures define data field properties.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Field { const char *name; int offset; int size; };\nint main() {\n    struct Field f = {\"age\", 24, 4};\n    printf(\"%s at %d\", f.name, f.offset);\n    return 0;\n}",
+        "o": [
+            "age at 24",
+            "24 at age",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Field metadata stores offset and size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ describes structure layout information.",
+        "type": "fill_blank",
+        "answers": [
+            "metadata",
+            "reflection"
+        ],
+        "other_options": [
+            "data",
+            "value",
+            "type"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Mapping { int from; int to; };\nint translate(struct Mapping *map, int n, int val) {\n    for(int i = 0; i < n; i++)\n        if(map[i].from == val) return map[i].to;\n    return val;\n}\nint main() {\n    struct Mapping m[] = {{1, 10}, {2, 20}, {3, 30}};\n    printf(\"%d\", translate(m, 3, 2));\n    return 0;\n}",
+        "o": [
+            "20",
+            "2",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Mapping structures translate values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Route { const char *path; void (*handler)(void); };\nvoid home(void) { printf(\"Home\"); }\nvoid about(void) { printf(\"About\"); }\nint main() {\n    struct Route routes[] = {{\"/\", home}, {\"/about\", about}};\n    routes[0].handler();\n    return 0;\n}",
+        "o": [
+            "Home",
+            "About",
+            "/",
+            "Error"
+        ]
+    },
+    {
+        "q": "Route structures map paths to handlers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange web request processing steps:",
+        "type": "rearrange",
+        "words": [
+            "Parse request",
+            "Match route",
+            "Call handler",
+            "Format response",
+            "Send response"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Middleware { int (*process)(void*, void*); struct Middleware *next; };\nint logger(void *req, void *res) { printf(\"Log \"); return 1; }\nint auth(void *req, void *res) { printf(\"Auth\"); return 1; }\nint main() {\n    struct Middleware m2 = {auth, NULL};\n    struct Middleware m1 = {logger, &m2};\n    m1.process(NULL, NULL);\n    m1.next->process(NULL, NULL);\n    return 0;\n}",
+        "o": [
+            "Log Auth",
+            "Auth Log",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Middleware chain processes requests sequentially.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Header { const char *name; const char *value; };\nint main() {\n    struct Header h = {\"Content-Type\", \"application/json\"};\n    printf(\"%s: %s\", h.name, h.value);\n    return 0;\n}",
+        "o": [
+            "Content-Type: application/json",
+            "application/json: Content-Type",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "HTTP headers are name-value pairs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match HTTP components with structures:",
+        "type": "match",
+        "left": [
+            "Header",
+            "Cookie",
+            "Query param",
+            "Form field"
+        ],
+        "right": [
+            "name + value",
+            "name + value + expiry",
+            "key + value",
+            "name + data"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Response { int status; const char *body; int length; };\nint main() {\n    struct Response r = {200, \"OK\", 2};\n    printf(\"%d\", r.status);\n    return 0;\n}",
+        "o": [
+            "200",
+            "OK",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Response structures contain status and body.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Request { const char *method; const char *path; const char *body; };\nint main() {\n    struct Request r = {\"GET\", \"/api/users\", NULL};\n    printf(\"%s %s\", r.method, r.path);\n    return 0;\n}",
+        "o": [
+            "GET /api/users",
+            "/api/users GET",
+            "Error",
+            "Garbage"
+        ]
+    },
+    {
+        "q": "Request structures contain method, path, and body.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange HTTP request lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Create request",
+            "Add headers",
+            "Send request",
+            "Receive response",
+            "Parse response"
+        ]
+    }
+]

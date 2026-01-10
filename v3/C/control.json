@@ -1,0 +1,6408 @@
+[
+    {
+        "q": "Which keyword is used to make a decision in C?",
+        "type": "mcq",
+        "o": [
+            "if",
+            "for",
+            "while",
+            "do"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5;\nif (x > 3) {\n    printf(\"Yes\");\n}",
+        "o": [
+            "Yes",
+            "No",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ statement is used to exit a loop early.",
+        "type": "fill_blank",
+        "answers": [
+            "break"
+        ],
+        "other_options": [
+            "continue",
+            "exit",
+            "return"
+        ]
+    },
+    {
+        "q": "In C, the if statement can only check one condition at a time.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i;\nfor (i = 0; i < 3; i++) {\n    printf(\"%d \", i);\n}",
+        "o": [
+            "0 1 2",
+            "1 2 3",
+            "0 1 2 3",
+            "1 2"
+        ]
+    },
+    {
+        "q": "Which loop executes at least once regardless of the condition?",
+        "type": "mcq",
+        "o": [
+            "do-while",
+            "for",
+            "while",
+            "if"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 0;\nwhile (x < 3) {\n    printf(\"%d \", x);\n    x++;\n}",
+        "o": [
+            "0 1 2",
+            "1 2 3",
+            "0 1 2 3",
+            "0 1"
+        ]
+    },
+    {
+        "q": "The else keyword is mandatory with every if statement.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Match the control structure with its purpose:",
+        "type": "match",
+        "left": [
+            "if",
+            "for",
+            "while",
+            "switch"
+        ],
+        "right": [
+            "Conditional execution",
+            "Known iterations",
+            "Unknown iterations",
+            "Multiple case selection"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 10;\nif (x == 10) {\n    printf(\"Equal\");\n} else {\n    printf(\"Not Equal\");\n}",
+        "o": [
+            "Equal",
+            "Not Equal",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which operator is used for equality comparison in C?",
+        "type": "mcq",
+        "o": [
+            "==",
+            "=",
+            "!=",
+            "==="
+        ]
+    },
+    {
+        "q": "A for loop in C requires three parts: initialization, condition, and ______.",
+        "type": "fill_blank",
+        "answers": [
+            "increment"
+        ],
+        "other_options": [
+            "decrement",
+            "update",
+            "loop"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5;\nif (x > 10) {\n    printf(\"Big\");\n} else {\n    printf(\"Small\");\n}",
+        "o": [
+            "Small",
+            "Big",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "The continue statement terminates the entire loop.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i = 0;\ndo {\n    printf(\"%d \", i);\n    i++;\n} while (i < 3);",
+        "o": [
+            "0 1 2",
+            "1 2 3",
+            "0 1 2 3",
+            "1 2"
+        ]
+    },
+    {
+        "q": "Which keyword is used to handle multiple cases in C?",
+        "type": "mcq",
+        "o": [
+            "switch",
+            "if",
+            "case",
+            "select"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 2;\nswitch (x) {\n    case 1: printf(\"One\"); break;\n    case 2: printf(\"Two\"); break;\n    default: printf(\"Other\");\n}",
+        "o": [
+            "Two",
+            "One",
+            "Other",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange the parts of a for loop in correct order:",
+        "type": "rearrange",
+        "words": [
+            "initialization",
+            "condition",
+            "loop body",
+            "update"
+        ]
+    },
+    {
+        "q": "A while loop checks the condition before executing the loop body.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i;\nfor (i = 1; i <= 5; i++) {\n    if (i == 3) break;\n    printf(\"%d \", i);\n}",
+        "o": [
+            "1 2",
+            "1 2 3",
+            "1 2 3 4 5",
+            "3"
+        ]
+    },
+    {
+        "q": "Which statement is used to skip the current iteration?",
+        "type": "mcq",
+        "o": [
+            "continue",
+            "break",
+            "skip",
+            "pass"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i;\nfor (i = 1; i <= 5; i++) {\n    if (i == 3) continue;\n    printf(\"%d \", i);\n}",
+        "o": [
+            "1 2 4 5",
+            "1 2 3 4 5",
+            "1 2",
+            "3"
+        ]
+    },
+    {
+        "q": "The default case in a switch statement is mandatory.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 3;\nif (x > 0 && x < 5) {\n    printf(\"In range\");\n}",
+        "o": [
+            "In range",
+            "Out of range",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ operator is used for logical AND in C.",
+        "type": "fill_blank",
+        "answers": [
+            "&&"
+        ],
+        "other_options": [
+            "||",
+            "&",
+            "AND"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 3;\nif (x > 5 || x < 4) {\n    printf(\"True\");\n} else {\n    printf(\"False\");\n}",
+        "o": [
+            "True",
+            "False",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the operator with its meaning:",
+        "type": "match",
+        "left": [
+            "&&",
+            "||",
+            "!",
+            "=="
+        ],
+        "right": [
+            "Logical AND",
+            "Logical OR",
+            "Logical NOT",
+            "Equality check"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 0;\nif (!x) {\n    printf(\"Zero\");\n}",
+        "o": [
+            "Zero",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "In C, 0 is considered as false in conditions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i = 5;\nwhile (i > 0) {\n    printf(\"%d \", i);\n    i--;\n}",
+        "o": [
+            "5 4 3 2 1",
+            "1 2 3 4 5",
+            "5 4 3 2 1 0",
+            "4 3 2 1 0"
+        ]
+    },
+    {
+        "q": "Which loop is best suited when the number of iterations is known?",
+        "type": "mcq",
+        "o": [
+            "for",
+            "while",
+            "do-while",
+            "if"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 10;\nif (x >= 10) {\n    printf(\"Pass\");\n}",
+        "o": [
+            "Pass",
+            "Fail",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ keyword marks each option in a switch statement.",
+        "type": "fill_blank",
+        "answers": [
+            "case"
+        ],
+        "other_options": [
+            "switch",
+            "option",
+            "label"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5;\nswitch (x) {\n    case 5: printf(\"Five\");\n    case 6: printf(\"Six\");\n}",
+        "o": [
+            "FiveSix",
+            "Five",
+            "Six",
+            "Error"
+        ]
+    },
+    {
+        "q": "Fall-through occurs in switch when break is missing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i;\nfor (i = 0; i < 5; i += 2) {\n    printf(\"%d \", i);\n}",
+        "o": [
+            "0 2 4",
+            "0 1 2 3 4",
+            "2 4",
+            "0 2 4 6"
+        ]
+    },
+    {
+        "q": "Rearrange the if-else structure correctly:",
+        "type": "rearrange",
+        "words": [
+            "if",
+            "condition",
+            "block",
+            "else",
+            "block"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 7;\nif (x % 2 == 0) {\n    printf(\"Even\");\n} else {\n    printf(\"Odd\");\n}",
+        "o": [
+            "Odd",
+            "Even",
+            "7",
+            "Error"
+        ]
+    },
+    {
+        "q": "The modulo operator % gives the remainder of division.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i = 0;\nwhile (i < 5) {\n    i++;\n}\nprintf(\"%d\", i);",
+        "o": [
+            "5",
+            "4",
+            "6",
+            "0"
+        ]
+    },
+    {
+        "q": "Which keyword provides a default action in switch?",
+        "type": "mcq",
+        "o": [
+            "default",
+            "else",
+            "otherwise",
+            "other"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 15;\nif (x > 10) {\n    if (x > 20) {\n        printf(\"Big\");\n    } else {\n        printf(\"Medium\");\n    }\n}",
+        "o": [
+            "Medium",
+            "Big",
+            "15",
+            "Error"
+        ]
+    },
+    {
+        "q": "Nested if statements are if statements inside other if statements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i, j;\nfor (i = 0; i < 2; i++) {\n    for (j = 0; j < 2; j++) {\n        printf(\"%d%d \", i, j);\n    }\n}",
+        "o": [
+            "00 01 10 11",
+            "00 10 01 11",
+            "01 10 11 00",
+            "11 10 01 00"
+        ]
+    },
+    {
+        "q": "Match the loop type with its behavior:",
+        "type": "match",
+        "left": [
+            "for",
+            "while",
+            "do-while",
+            "infinite"
+        ],
+        "right": [
+            "Counter-controlled",
+            "Pre-test loop",
+            "Post-test loop",
+            "Never ends"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 1;\nwhile (x <= 3) {\n    printf(\"%d \", x * 2);\n    x++;\n}",
+        "o": [
+            "2 4 6",
+            "1 2 3",
+            "2 3 4",
+            "1 3 5"
+        ]
+    },
+    {
+        "q": "The ______ loop checks condition after executing the body.",
+        "type": "fill_blank",
+        "answers": [
+            "do-while"
+        ],
+        "other_options": [
+            "for",
+            "while",
+            "if"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 100;\ndo {\n    printf(\"%d\", x);\n} while (x < 50);",
+        "o": [
+            "100",
+            "Nothing",
+            "50",
+            "Error"
+        ]
+    },
+    {
+        "q": "A do-while loop will always execute at least once.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i;\nfor (i = 10; i > 0; i -= 3) {\n    printf(\"%d \", i);\n}",
+        "o": [
+            "10 7 4 1",
+            "10 7 4",
+            "10 8 6 4 2",
+            "9 6 3 0"
+        ]
+    },
+    {
+        "q": "Which symbol represents not equal in C?",
+        "type": "mcq",
+        "o": [
+            "!=",
+            "<>",
+            "=/=",
+            "~="
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5;\nif (x != 5) {\n    printf(\"Not Five\");\n} else {\n    printf(\"Five\");\n}",
+        "o": [
+            "Five",
+            "Not Five",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "The else if keyword allows chaining multiple conditions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int score = 75;\nif (score >= 90) {\n    printf(\"A\");\n} else if (score >= 70) {\n    printf(\"B\");\n} else {\n    printf(\"C\");\n}",
+        "o": [
+            "B",
+            "A",
+            "C",
+            "75"
+        ]
+    },
+    {
+        "q": "Rearrange the else-if ladder structure:",
+        "type": "rearrange",
+        "words": [
+            "if",
+            "else if",
+            "else if",
+            "else"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 5, b = 10;\nif (a < b) {\n    printf(\"%d\", b - a);\n}",
+        "o": [
+            "5",
+            "10",
+            "15",
+            "-5"
+        ]
+    },
+    {
+        "q": "In C, any non-zero value is considered true.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = -5;\nif (x) {\n    printf(\"True\");\n} else {\n    printf(\"False\");\n}",
+        "o": [
+            "True",
+            "False",
+            "-5",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ______ operator returns true if either condition is true.",
+        "type": "fill_blank",
+        "answers": [
+            "||"
+        ],
+        "other_options": [
+            "&&",
+            "!",
+            "|"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i = 1;\nint sum = 0;\nwhile (i <= 4) {\n    sum += i;\n    i++;\n}\nprintf(\"%d\", sum);",
+        "o": [
+            "10",
+            "4",
+            "6",
+            "15"
+        ]
+    },
+    {
+        "q": "Match the keyword with its function:",
+        "type": "match",
+        "left": [
+            "break",
+            "continue",
+            "return",
+            "goto"
+        ],
+        "right": [
+            "Exit loop",
+            "Skip iteration",
+            "Exit function",
+            "Jump to label"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i;\nfor (i = 1; i <= 3; i++) {\n    printf(\"%d \", i * i);\n}",
+        "o": [
+            "1 4 9",
+            "1 2 3",
+            "2 4 6",
+            "1 3 5"
+        ]
+    },
+    {
+        "q": "A switch statement can use float values as cases.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char c = 'B';\nswitch (c) {\n    case 'A': printf(\"Apple\"); break;\n    case 'B': printf(\"Ball\"); break;\n    case 'C': printf(\"Cat\"); break;\n}",
+        "o": [
+            "Ball",
+            "Apple",
+            "Cat",
+            "B"
+        ]
+    },
+    {
+        "q": "Which data types can be used in switch case expressions?",
+        "type": "mcq",
+        "o": [
+            "int and char",
+            "float only",
+            "double only",
+            "string only"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 2;\nint y = (x > 1) ? 100 : 200;\nprintf(\"%d\", y);",
+        "o": [
+            "100",
+            "200",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "The ternary operator is a shorthand for if-else.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 10, b = 20;\nint max = (a > b) ? a : b;\nprintf(\"%d\", max);",
+        "o": [
+            "20",
+            "10",
+            "30",
+            "Error"
+        ]
+    },
+    {
+        "q": "The syntax for ternary operator is condition ? value1 : ______.",
+        "type": "fill_blank",
+        "answers": [
+            "value2"
+        ],
+        "other_options": [
+            "else",
+            "then",
+            "result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nint fact = 1;\nfor (int i = 1; i <= n; i++) {\n    fact *= i;\n}\nprintf(\"%d\", fact);",
+        "o": [
+            "120",
+            "24",
+            "5",
+            "25"
+        ]
+    },
+    {
+        "q": "An infinite loop runs forever unless interrupted.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i = 0;\nwhile (1) {\n    i++;\n    if (i == 3) break;\n}\nprintf(\"%d\", i);",
+        "o": [
+            "3",
+            "0",
+            "Infinite loop",
+            "Error"
+        ]
+    },
+    {
+        "q": "Which creates an infinite loop in C?",
+        "type": "mcq",
+        "o": [
+            "while(1)",
+            "while(0)",
+            "for(;;0)",
+            "do{}while(0)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "for (;;) {\n    printf(\"Hello\");\n    break;\n}",
+        "o": [
+            "Hello",
+            "Infinite loop",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Rearrange the order of execution in a for loop:",
+        "type": "rearrange",
+        "words": [
+            "init",
+            "check condition",
+            "execute body",
+            "update",
+            "repeat"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i;\nfor (i = 0; i < 10; i++) {\n    if (i % 2 == 0) continue;\n    printf(\"%d \", i);\n}",
+        "o": [
+            "1 3 5 7 9",
+            "0 2 4 6 8",
+            "1 2 3 4 5",
+            "0 1 2 3 4"
+        ]
+    },
+    {
+        "q": "The goto statement is recommended for structured programming.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i = 0;\nstart:\nprintf(\"%d \", i);\ni++;\nif (i < 3) goto start;",
+        "o": [
+            "0 1 2",
+            "1 2 3",
+            "0 1 2 3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the loop with its typical use case:",
+        "type": "match",
+        "left": [
+            "for",
+            "while",
+            "do-while",
+            "nested for"
+        ],
+        "right": [
+            "Array traversal",
+            "Input validation",
+            "Menu systems",
+            "Matrix operations"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int count = 0;\nfor (int i = 0; i < 5; i++) {\n    for (int j = 0; j < 5; j++) {\n        count++;\n    }\n}\nprintf(\"%d\", count);",
+        "o": [
+            "25",
+            "10",
+            "5",
+            "50"
+        ]
+    },
+    {
+        "q": "A nested loop is a loop inside another loop.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5;\nif (x > 3)\n    printf(\"A\");\n    printf(\"B\");",
+        "o": [
+            "AB",
+            "A",
+            "B",
+            "Error"
+        ]
+    },
+    {
+        "q": "Curly braces are required for single-statement if bodies.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 2;\nif (x = 5) {\n    printf(\"True\");\n} else {\n    printf(\"False\");\n}",
+        "o": [
+            "True",
+            "False",
+            "2",
+            "5"
+        ]
+    },
+    {
+        "q": "The ______ is called the assignment operator in C.",
+        "type": "fill_blank",
+        "answers": [
+            "="
+        ],
+        "other_options": [
+            "==",
+            "!=",
+            "==="
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i = 5;\nwhile (i-- > 0) {\n    printf(\"%d \", i);\n}",
+        "o": [
+            "4 3 2 1 0",
+            "5 4 3 2 1",
+            "5 4 3 2 1 0",
+            "4 3 2 1"
+        ]
+    },
+    {
+        "q": "The post-decrement operator decreases value after use.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i = 5;\nwhile (--i > 0) {\n    printf(\"%d \", i);\n}",
+        "o": [
+            "4 3 2 1",
+            "5 4 3 2 1",
+            "4 3 2 1 0",
+            "5 4 3 2"
+        ]
+    },
+    {
+        "q": "Match the increment/decrement operators:",
+        "type": "match",
+        "left": [
+            "i++",
+            "++i",
+            "i--",
+            "--i"
+        ],
+        "right": [
+            "Post-increment",
+            "Pre-increment",
+            "Post-decrement",
+            "Pre-decrement"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 1, y = 2;\nif (x == 1 && y == 2) {\n    printf(\"Both true\");\n}",
+        "o": [
+            "Both true",
+            "x is 1",
+            "y is 2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Short-circuit evaluation skips evaluating the second operand when the first determines the result.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 0;\nif (x && printf(\"Hello\")) {\n    printf(\"World\");\n}",
+        "o": [
+            "Nothing",
+            "Hello",
+            "HelloWorld",
+            "World"
+        ]
+    },
+    {
+        "q": "In logical AND, if the first operand is false, the second is ______.",
+        "type": "fill_blank",
+        "answers": [
+            "not evaluated"
+        ],
+        "other_options": [
+            "always true",
+            "evaluated first",
+            "checked twice"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 1;\nif (x || printf(\"Hello\")) {\n    printf(\"World\");\n}",
+        "o": [
+            "World",
+            "Hello",
+            "HelloWorld",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "In logical OR, if the first operand is true, the second is not evaluated.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i;\nfor (i = 0; i <= 2; i++);\nprintf(\"%d\", i);",
+        "o": [
+            "3",
+            "2",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "A semicolon after for() creates an empty loop body.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5, y = 10;\nint result = (x > y) ? x - y : y - x;\nprintf(\"%d\", result);",
+        "o": [
+            "5",
+            "-5",
+            "10",
+            "15"
+        ]
+    },
+    {
+        "q": "Which control structure allows selecting one of many blocks?",
+        "type": "mcq",
+        "o": [
+            "switch",
+            "if",
+            "while",
+            "for"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i = 0, sum = 0;\nwhile (i < 5) {\n    sum += i++;\n}\nprintf(\"%d\", sum);",
+        "o": [
+            "10",
+            "15",
+            "6",
+            "5"
+        ]
+    },
+    {
+        "q": "The expression i++ returns the value of i ______ incrementing.",
+        "type": "fill_blank",
+        "answers": [
+            "before"
+        ],
+        "other_options": [
+            "after",
+            "during",
+            "without"
+        ]
+    },
+    {
+        "q": "In a switch statement, cases must have unique constant values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i, j;\nfor (i = 1; i <= 2; i++) {\n    for (j = 1; j <= 3; j++) {\n        if (j == 2) break;\n        printf(\"%d \", j);\n    }\n}",
+        "o": [
+            "1 1",
+            "1 2 1 2",
+            "1 2 3 1 2 3",
+            "1"
+        ]
+    },
+    {
+        "q": "The break statement inside a nested loop exits only the innermost loop.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 3;\nswitch (x) {\n    default: printf(\"D\");\n    case 1: printf(\"A\"); break;\n    case 2: printf(\"B\");\n}",
+        "o": [
+            "DA",
+            "D",
+            "A",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the loop structure with its syntax:",
+        "type": "match",
+        "left": [
+            "for",
+            "while",
+            "do-while",
+            "switch"
+        ],
+        "right": [
+            "(init; cond; update)",
+            "(condition)",
+            "{} while(cond)",
+            "(expression)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 2, 3, 4, 5};\nint sum = 0;\nfor (int i = 0; i < 5; i++) {\n    sum += arr[i];\n}\nprintf(\"%d\", sum);",
+        "o": [
+            "15",
+            "10",
+            "5",
+            "20"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 4, result = 1;\nwhile (n > 0) {\n    result *= n;\n    n--;\n}\nprintf(\"%d\", result);",
+        "o": [
+            "24",
+            "4",
+            "10",
+            "0"
+        ]
+    },
+    {
+        "q": "The condition in a while loop is evaluated ______ each iteration.",
+        "type": "fill_blank",
+        "answers": [
+            "before"
+        ],
+        "other_options": [
+            "after",
+            "during",
+            "between"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "for (int i = 5; i >= 1; i--) {\n    if (i == 3) continue;\n    printf(\"%d \", i);\n}",
+        "o": [
+            "5 4 2 1",
+            "5 4 3 2 1",
+            "5 4",
+            "2 1"
+        ]
+    },
+    {
+        "q": "A switch case label must be a compile-time constant.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5;\nif (x > 0) {\n    x = -x;\n}\nif (x < 0) {\n    x = -x;\n}\nprintf(\"%d\", x);",
+        "o": [
+            "5",
+            "-5",
+            "0",
+            "10"
+        ]
+    },
+    {
+        "q": "Which statement correctly describes else if?",
+        "type": "mcq",
+        "o": [
+            "It adds more conditions after an if",
+            "It replaces the if statement",
+            "It creates a loop",
+            "It is same as else"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int count = 0;\nfor (int i = 1; i <= 10; i++) {\n    if (i % 2 == 0) count++;\n}\nprintf(\"%d\", count);",
+        "o": [
+            "5",
+            "10",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "q": "Rearrange the switch statement components:",
+        "type": "rearrange",
+        "words": [
+            "switch",
+            "expression",
+            "case",
+            "statements",
+            "break",
+            "default"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 10;\nwhile (x > 0) {\n    x -= 3;\n}\nprintf(\"%d\", x);",
+        "o": [
+            "-2",
+            "1",
+            "0",
+            "-1"
+        ]
+    },
+    {
+        "q": "The comma operator evaluates expressions from left to right.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 1, b = 2, c;\nc = (a++, b++, a + b);\nprintf(\"%d\", c);",
+        "o": [
+            "5",
+            "3",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "q": "In the expression (a, b, c), the result is the value of ______.",
+        "type": "fill_blank",
+        "answers": [
+            "c"
+        ],
+        "other_options": [
+            "a",
+            "b",
+            "all"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i;\nfor (i = 0, printf(\"A\"); i < 2; i++, printf(\"B\")) {\n    printf(\"C\");\n}",
+        "o": [
+            "ACBCB",
+            "ABCABC",
+            "ACBC",
+            "ABCBC"
+        ]
+    },
+    {
+        "q": "Match the code pattern with its purpose:",
+        "type": "match",
+        "left": [
+            "i++",
+            "++i",
+            "i += 2",
+            "i *= 2"
+        ],
+        "right": [
+            "Post-increment by 1",
+            "Pre-increment by 1",
+            "Increment by 2",
+            "Double the value"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 0;\ndo {\n    x++;\n    if (x == 3) break;\n} while (x < 5);\nprintf(\"%d\", x);",
+        "o": [
+            "3",
+            "5",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "q": "A loop counter variable defined inside for() has block scope.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "for (int i = 1; i <= 5; i++) {\n    if (i == 2 || i == 4) continue;\n    printf(\"%d \", i);\n}",
+        "o": [
+            "1 3 5",
+            "2 4",
+            "1 2 3 4 5",
+            "1 5"
+        ]
+    },
+    {
+        "q": "Which is the correct syntax for a ternary operator?",
+        "type": "mcq",
+        "o": [
+            "condition ? expr1 : expr2",
+            "condition : expr1 ? expr2",
+            "expr1 ? condition : expr2",
+            "condition ?? expr1 : expr2"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nint sum = 0;\nfor (int i = 1; i <= n; i++) {\n    sum += i * i;\n}\nprintf(\"%d\", sum);",
+        "o": [
+            "55",
+            "15",
+            "30",
+            "25"
+        ]
+    },
+    {
+        "q": "The ______ statement transfers control to a labeled statement.",
+        "type": "fill_blank",
+        "answers": [
+            "goto"
+        ],
+        "other_options": [
+            "jump",
+            "transfer",
+            "label"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 1;\nswitch (x) {\n    case 1:\n    case 2:\n    case 3:\n        printf(\"Low\");\n        break;\n    default:\n        printf(\"High\");\n}",
+        "o": [
+            "Low",
+            "High",
+            "LowHigh",
+            "Error"
+        ]
+    },
+    {
+        "q": "Multiple case labels can share the same code block.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int flag = 1;\nint count = 0;\nwhile (flag) {\n    count++;\n    if (count == 5) flag = 0;\n}\nprintf(\"%d\", count);",
+        "o": [
+            "5",
+            "4",
+            "6",
+            "1"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i = 10;\nwhile (i-- > 5) {\n    printf(\"%d \", i);\n}",
+        "o": [
+            "9 8 7 6 5",
+            "10 9 8 7 6",
+            "9 8 7 6",
+            "10 9 8 7 6 5"
+        ]
+    },
+    {
+        "q": "Match the expression with its result when x = 5:",
+        "type": "match",
+        "left": [
+            "x > 3",
+            "x == 5",
+            "x != 5",
+            "x < 5"
+        ],
+        "right": [
+            "True",
+            "True",
+            "False",
+            "False"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int power = 1;\nfor (int i = 0; i < 4; i++) {\n    power *= 2;\n}\nprintf(\"%d\", power);",
+        "o": [
+            "16",
+            "8",
+            "32",
+            "4"
+        ]
+    },
+    {
+        "q": "The expression x > 5 && x < 10 is true when x is ______ 5 and 10.",
+        "type": "fill_blank",
+        "answers": [
+            "between"
+        ],
+        "other_options": [
+            "outside",
+            "equal to",
+            "greater than"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 7;\nif (x >= 5 && x <= 10) {\n    printf(\"In range\");\n} else {\n    printf(\"Out\");\n}",
+        "o": [
+            "In range",
+            "Out",
+            "7",
+            "Error"
+        ]
+    },
+    {
+        "q": "The default case in switch executes when no case matches.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 100;\nswitch (x) {\n    case 1: printf(\"One\"); break;\n    case 2: printf(\"Two\"); break;\n}",
+        "o": [
+            "Nothing",
+            "One",
+            "Two",
+            "Error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i = 1;\nint product = 1;\nwhile (i <= 5) {\n    product *= i;\n    i++;\n}\nprintf(\"%d\", product);",
+        "o": [
+            "120",
+            "15",
+            "24",
+            "6"
+        ]
+    },
+    {
+        "q": "Rearrange the execution order of else-if ladder:",
+        "type": "rearrange",
+        "words": [
+            "check if",
+            "check else if",
+            "execute matching",
+            "else executes"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 6;\nint result = 1;\nfor (int i = 2; i <= n; i += 2) {\n    result *= i;\n}\nprintf(\"%d\", result);",
+        "o": [
+            "48",
+            "24",
+            "720",
+            "6"
+        ]
+    },
+    {
+        "q": "A labeled statement in C ends with a colon.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 2;\nint y = 3;\nif (x == 2)\n    if (y == 3)\n        printf(\"A\");\n    else\n        printf(\"B\");",
+        "o": [
+            "A",
+            "B",
+            "AB",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "The dangling else problem occurs when else matches the ______ if.",
+        "type": "fill_blank",
+        "answers": [
+            "nearest"
+        ],
+        "other_options": [
+            "first",
+            "outermost",
+            "previous"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 2;\nint y = 5;\nif (x == 2)\n    if (y == 3)\n        printf(\"A\");\nelse\n    printf(\"B\");",
+        "o": [
+            "B",
+            "A",
+            "Nothing",
+            "AB"
+        ]
+    },
+    {
+        "q": "Match the condition with its evaluation (a=5, b=10):",
+        "type": "match",
+        "left": [
+            "a < b",
+            "a > b",
+            "a == b",
+            "a != b"
+        ],
+        "right": [
+            "True",
+            "False",
+            "False",
+            "True"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int count = 0;\nfor (int i = 1; i <= 100; i++) {\n    if (i % 10 == 0) count++;\n}\nprintf(\"%d\", count);",
+        "o": [
+            "10",
+            "9",
+            "11",
+            "100"
+        ]
+    },
+    {
+        "q": "Using break in a switch prevents fall-through to next case.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i = 1, j = 1;\nwhile (i <= 3) {\n    while (j <= 3) {\n        printf(\"%d \", j);\n        j++;\n    }\n    i++;\n}",
+        "o": [
+            "1 2 3",
+            "1 2 3 1 2 3 1 2 3",
+            "1 1 1 2 2 2 3 3 3",
+            "1"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 0;\nfor (;;) {\n    if (x >= 3) break;\n    printf(\"%d \", x);\n    x++;\n}",
+        "o": [
+            "0 1 2",
+            "0 1 2 3",
+            "1 2 3",
+            "Infinite"
+        ]
+    },
+    {
+        "q": "The expression for(;;) creates a(n) ______ loop.",
+        "type": "fill_blank",
+        "answers": [
+            "infinite"
+        ],
+        "other_options": [
+            "empty",
+            "zero",
+            "null"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 10;\nint digits = 0;\nwhile (n > 0) {\n    digits++;\n    n /= 10;\n}\nprintf(\"%d\", digits);",
+        "o": [
+            "2",
+            "1",
+            "10",
+            "0"
+        ]
+    },
+    {
+        "q": "A for loop can have multiple initialization expressions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int sum = 0;\nfor (int i = 0, j = 10; i < j; i++, j--) {\n    sum++;\n}\nprintf(\"%d\", sum);",
+        "o": [
+            "5",
+            "10",
+            "0",
+            "20"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 1;\ndo {\n    printf(\"%d \", x);\n    x *= 2;\n} while (x <= 8);",
+        "o": [
+            "1 2 4 8",
+            "1 2 4",
+            "2 4 8",
+            "1 2 4 8 16"
+        ]
+    },
+    {
+        "q": "Match the loop type with when condition is checked:",
+        "type": "match",
+        "left": [
+            "for",
+            "while",
+            "do-while",
+            "switch"
+        ],
+        "right": [
+            "Before each iteration",
+            "Before each iteration",
+            "After each iteration",
+            "Once at start"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 10;\nif (x > 5)\n    printf(\"A\");\nprintf(\"B\");",
+        "o": [
+            "AB",
+            "A",
+            "B",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Without braces, an if statement controls only the next statement.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 3;\nif (x != 3);\n    printf(\"Hello\");",
+        "o": [
+            "Hello",
+            "Nothing",
+            "Error",
+            "3"
+        ]
+    },
+    {
+        "q": "A semicolon after if() makes it a(n) ______ if statement.",
+        "type": "fill_blank",
+        "answers": [
+            "empty"
+        ],
+        "other_options": [
+            "null",
+            "void",
+            "false"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5;\nswitch (x % 3) {\n    case 0: printf(\"A\"); break;\n    case 1: printf(\"B\"); break;\n    case 2: printf(\"C\"); break;\n}",
+        "o": [
+            "C",
+            "A",
+            "B",
+            "Error"
+        ]
+    },
+    {
+        "q": "Case labels in switch can use arithmetic expressions with constants.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 2;\nswitch (x) {\n    case 1+1: printf(\"Two\"); break;\n    case 3: printf(\"Three\"); break;\n}",
+        "o": [
+            "Two",
+            "Three",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i;\nfor (i = 0; i < 5; i++) {\n    if (i == 2) {\n        i = 10;\n        continue;\n    }\n    printf(\"%d \", i);\n}",
+        "o": [
+            "0 1",
+            "0 1 3 4",
+            "0 1 2 3 4",
+            "0 1 2"
+        ]
+    },
+    {
+        "q": "Rearrange the steps to find max of three numbers:",
+        "type": "rearrange",
+        "words": [
+            "compare a and b",
+            "get larger",
+            "compare with c",
+            "print max"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 5, b = 10, c = 7;\nint max = a;\nif (b > max) max = b;\nif (c > max) max = c;\nprintf(\"%d\", max);",
+        "o": [
+            "10",
+            "7",
+            "5",
+            "22"
+        ]
+    },
+    {
+        "q": "The expression (a > b) ? a : b finds the ______ of a and b.",
+        "type": "fill_blank",
+        "answers": [
+            "maximum"
+        ],
+        "other_options": [
+            "minimum",
+            "average",
+            "sum"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 3, b = 7;\nint min = (a < b) ? a : b;\nprintf(\"%d\", min);",
+        "o": [
+            "3",
+            "7",
+            "10",
+            "4"
+        ]
+    },
+    {
+        "q": "Match the control statement with exit behavior:",
+        "type": "match",
+        "left": [
+            "break",
+            "continue",
+            "return",
+            "exit()"
+        ],
+        "right": [
+            "Exits loop or switch",
+            "Skips to next iteration",
+            "Exits function",
+            "Exits program"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5;\nint y = (x > 3) ? ((x > 7) ? 1 : 2) : 3;\nprintf(\"%d\", y);",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "5"
+        ]
+    },
+    {
+        "q": "Nested ternary operators are allowed in C.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i, sum = 0;\nfor (i = 1; i <= 10; i++) {\n    if (i % 3 == 0) sum += i;\n}\nprintf(\"%d\", sum);",
+        "o": [
+            "18",
+            "33",
+            "12",
+            "9"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nfor (int i = 1; i <= n; i++) {\n    for (int j = 1; j <= i; j++) {\n        printf(\"*\");\n    }\n    printf(\" \");\n}",
+        "o": [
+            "* ** *** **** *****",
+            "***** **** *** ** *",
+            "* * * * *",
+            "*****"
+        ]
+    },
+    {
+        "q": "A(n) ______ loop is often used to print patterns.",
+        "type": "fill_blank",
+        "answers": [
+            "nested"
+        ],
+        "other_options": [
+            "single",
+            "infinite",
+            "empty"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int found = 0;\nfor (int i = 2; i <= 10; i++) {\n    if (10 % i == 0) {\n        found = 1;\n        break;\n    }\n}\nprintf(\"%d\", found);",
+        "o": [
+            "1",
+            "0",
+            "2",
+            "10"
+        ]
+    },
+    {
+        "q": "A flag variable is used to track a condition or state.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int count = 0;\nfor (int i = 1; i <= 50; i++) {\n    if (i % 7 == 0) count++;\n}\nprintf(\"%d\", count);",
+        "o": [
+            "7",
+            "8",
+            "6",
+            "50"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 100;\nwhile (x >= 10) {\n    x /= 2;\n}\nprintf(\"%d\", x);",
+        "o": [
+            "6",
+            "12",
+            "5",
+            "25"
+        ]
+    },
+    {
+        "q": "Match the operation with its effect on loop counter:",
+        "type": "match",
+        "left": [
+            "i++",
+            "i--",
+            "i += 2",
+            "i *= 2"
+        ],
+        "right": [
+            "Count up by 1",
+            "Count down by 1",
+            "Count up by 2",
+            "Double each time"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 1;\nwhile (x < 100) {\n    x *= 3;\n}\nprintf(\"%d\", x);",
+        "o": [
+            "243",
+            "81",
+            "27",
+            "729"
+        ]
+    },
+    {
+        "q": "The += operator adds the right operand to the left and stores result.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i = 0;\nwhile (i < 10) {\n    i += 3;\n    if (i == 9) break;\n}\nprintf(\"%d\", i);",
+        "o": [
+            "9",
+            "12",
+            "6",
+            "3"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char ch = 'A';\nswitch (ch) {\n    case 65: printf(\"Sixty-five\"); break;\n    case 66: printf(\"Sixty-six\"); break;\n}",
+        "o": [
+            "Sixty-five",
+            "Sixty-six",
+            "A",
+            "Error"
+        ]
+    },
+    {
+        "q": "In C, characters can be used in switch because they are stored as ______ values.",
+        "type": "fill_blank",
+        "answers": [
+            "integer"
+        ],
+        "other_options": [
+            "string",
+            "float",
+            "double"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int sum = 0;\nfor (int i = 1; i <= 5; i++) {\n    for (int j = 1; j <= 5; j++) {\n        if (i == j) sum += i;\n    }\n}\nprintf(\"%d\", sum);",
+        "o": [
+            "15",
+            "25",
+            "5",
+            "10"
+        ]
+    },
+    {
+        "q": "Diagonal elements in a matrix have equal row and column indices.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 123;\nint rev = 0;\nwhile (n > 0) {\n    rev = rev * 10 + n % 10;\n    n /= 10;\n}\nprintf(\"%d\", rev);",
+        "o": [
+            "321",
+            "123",
+            "213",
+            "132"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 12345;\nint count = 0;\nwhile (n > 0) {\n    count++;\n    n /= 10;\n}\nprintf(\"%d\", count);",
+        "o": [
+            "5",
+            "4",
+            "6",
+            "12345"
+        ]
+    },
+    {
+        "q": "Rearrange steps to reverse a number:",
+        "type": "rearrange",
+        "words": [
+            "extract digit",
+            "build reverse",
+            "remove digit",
+            "repeat"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 121;\nint original = n;\nint rev = 0;\nwhile (n > 0) {\n    rev = rev * 10 + n % 10;\n    n /= 10;\n}\nprintf(\"%d\", original == rev);",
+        "o": [
+            "1",
+            "0",
+            "121",
+            "True"
+        ]
+    },
+    {
+        "q": "A palindrome number reads the same forwards and backwards.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 7;\nint is_prime = 1;\nfor (int i = 2; i < n; i++) {\n    if (n % i == 0) {\n        is_prime = 0;\n        break;\n    }\n}\nprintf(\"%d\", is_prime);",
+        "o": [
+            "1",
+            "0",
+            "7",
+            "True"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 6, sum = 0;\nfor (int i = 1; i < n; i++) {\n    if (n % i == 0) sum += i;\n}\nprintf(\"%d\", sum == n);",
+        "o": [
+            "1",
+            "0",
+            "6",
+            "True"
+        ]
+    },
+    {
+        "q": "A perfect number equals the sum of its proper divisors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 12, b = 8;\nwhile (a != b) {\n    if (a > b) a -= b;\n    else b -= a;\n}\nprintf(\"%d\", a);",
+        "o": [
+            "4",
+            "8",
+            "12",
+            "1"
+        ]
+    },
+    {
+        "q": "The algorithm in the previous question computes the ______.",
+        "type": "fill_blank",
+        "answers": [
+            "GCD"
+        ],
+        "other_options": [
+            "LCM",
+            "sum",
+            "product"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nfor (int i = n; i >= 1; i--) {\n    for (int j = 1; j <= i; j++) {\n        printf(\"*\");\n    }\n    printf(\" \");\n}",
+        "o": [
+            "***** **** *** ** *",
+            "* ** *** **** *****",
+            "* * * * *",
+            "*****"
+        ]
+    },
+    {
+        "q": "Match the pattern type with its loop structure:",
+        "type": "match",
+        "left": [
+            "Right triangle",
+            "Inverted triangle",
+            "Rectangle",
+            "Diamond"
+        ],
+        "right": [
+            "j <= i",
+            "j <= n - i + 1",
+            "j <= width",
+            "Two triangles combined"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {5, 2, 8, 1, 9};\nint max = arr[0];\nfor (int i = 1; i < 5; i++) {\n    if (arr[i] > max) max = arr[i];\n}\nprintf(\"%d\", max);",
+        "o": [
+            "9",
+            "5",
+            "1",
+            "8"
+        ]
+    },
+    {
+        "q": "Finding the maximum element requires comparing with all elements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 10, fib1 = 0, fib2 = 1;\nfor (int i = 0; i < 5; i++) {\n    int next = fib1 + fib2;\n    fib1 = fib2;\n    fib2 = next;\n}\nprintf(\"%d\", fib2);",
+        "o": [
+            "8",
+            "5",
+            "13",
+            "21"
+        ]
+    },
+    {
+        "q": "In Fibonacci sequence, each number is the sum of the previous ______.",
+        "type": "fill_blank",
+        "answers": [
+            "two"
+        ],
+        "other_options": [
+            "three",
+            "one",
+            "four"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 153, sum = 0, temp = n;\nwhile (temp > 0) {\n    int d = temp % 10;\n    sum += d * d * d;\n    temp /= 10;\n}\nprintf(\"%d\", n == sum);",
+        "o": [
+            "1",
+            "0",
+            "153",
+            "True"
+        ]
+    },
+    {
+        "q": "An Armstrong number equals the sum of cubes of its digits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nfor (int i = 1; i <= n; i++) {\n    for (int j = 1; j <= n - i; j++) printf(\" \");\n    for (int k = 1; k <= i; k++) printf(\"*\");\n    printf(\"|\");\n}",
+        "o": [
+            "    *|   **|  ***| ****|*****|",
+            "*****|****|***|**|*|",
+            "*|**|***|****|*****|",
+            "    *    **   ***  **** *****"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {3, 1, 4, 1, 5};\nfor (int i = 0; i < 4; i++) {\n    for (int j = 0; j < 4 - i; j++) {\n        if (arr[j] > arr[j+1]) {\n            int t = arr[j];\n            arr[j] = arr[j+1];\n            arr[j+1] = t;\n        }\n    }\n}\nprintf(\"%d %d\", arr[0], arr[4]);",
+        "o": [
+            "1 5",
+            "3 5",
+            "5 1",
+            "1 3"
+        ]
+    },
+    {
+        "q": "Rearrange bubble sort steps:",
+        "type": "rearrange",
+        "words": [
+            "compare adjacent",
+            "swap if needed",
+            "move to next",
+            "repeat passes"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 2, 3, 4, 5};\nint target = 3, found = -1;\nfor (int i = 0; i < 5; i++) {\n    if (arr[i] == target) {\n        found = i;\n        break;\n    }\n}\nprintf(\"%d\", found);",
+        "o": [
+            "2",
+            "3",
+            "-1",
+            "1"
+        ]
+    },
+    {
+        "q": "Linear search has O(n) time complexity in worst case.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int low = 0, high = 9, target = 7;\nint arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};\nwhile (low <= high) {\n    int mid = (low + high) / 2;\n    if (arr[mid] == target) { printf(\"%d\", mid); break; }\n    else if (arr[mid] < target) low = mid + 1;\n    else high = mid - 1;\n}",
+        "o": [
+            "6",
+            "7",
+            "5",
+            "-1"
+        ]
+    },
+    {
+        "q": "Binary search requires a ______ array.",
+        "type": "fill_blank",
+        "answers": [
+            "sorted"
+        ],
+        "other_options": [
+            "unsorted",
+            "empty",
+            "reversed"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int matrix[2][3] = {{1,2,3}, {4,5,6}};\nint sum = 0;\nfor (int i = 0; i < 2; i++) {\n    for (int j = 0; j < 3; j++) {\n        sum += matrix[i][j];\n    }\n}\nprintf(\"%d\", sum);",
+        "o": [
+            "21",
+            "18",
+            "15",
+            "6"
+        ]
+    },
+    {
+        "q": "Match the matrix operation with its loop structure:",
+        "type": "match",
+        "left": [
+            "Row sum",
+            "Column sum",
+            "Diagonal sum",
+            "Total sum"
+        ],
+        "right": [
+            "Single row loop",
+            "Single column loop",
+            "i == j condition",
+            "Nested loops"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int count = 0;\nfor (int i = 2; i <= 20; i++) {\n    int is_prime = 1;\n    for (int j = 2; j < i; j++) {\n        if (i % j == 0) { is_prime = 0; break; }\n    }\n    if (is_prime) count++;\n}\nprintf(\"%d\", count);",
+        "o": [
+            "8",
+            "10",
+            "7",
+            "9"
+        ]
+    },
+    {
+        "q": "The Sieve of Eratosthenes is more efficient than trial division.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 10, sum = 0;\nfor (int i = 1; i <= n; i++) {\n    if (i % 2 == 0) sum += i;\n    else sum -= i;\n}\nprintf(\"%d\", sum);",
+        "o": [
+            "5",
+            "-5",
+            "10",
+            "0"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5, result = 1;\nfor (int i = 0; i < n; i++) {\n    result <<= 1;\n}\nprintf(\"%d\", result);",
+        "o": [
+            "32",
+            "16",
+            "64",
+            "10"
+        ]
+    },
+    {
+        "q": "Left shifting by 1 is equivalent to multiplying by ______.",
+        "type": "fill_blank",
+        "answers": [
+            "2"
+        ],
+        "other_options": [
+            "1",
+            "4",
+            "10"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 16, count = 0;\nwhile (n > 0) {\n    n >>= 1;\n    count++;\n}\nprintf(\"%d\", count);",
+        "o": [
+            "5",
+            "4",
+            "16",
+            "8"
+        ]
+    },
+    {
+        "q": "Match the bitwise operation with its effect:",
+        "type": "match",
+        "left": [
+            "n << 1",
+            "n >> 1",
+            "n & 1",
+            "n | 1"
+        ],
+        "right": [
+            "Multiply by 2",
+            "Divide by 2",
+            "Check odd/even",
+            "Set last bit"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a[5] = {10, 20, 30, 40, 50};\nint *p = a;\nfor (int i = 0; i < 5; i++) {\n    printf(\"%d \", *(p + i));\n}",
+        "o": [
+            "10 20 30 40 50",
+            "0 1 2 3 4",
+            "Garbage values",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer arithmetic allows iterating through arrays.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nint outer = 0;\nfor (int i = 0; i < n; i++) {\n    for (int j = 0; j < n; j++) {\n        if (j == 2) break;\n        outer++;\n    }\n}\nprintf(\"%d\", outer);",
+        "o": [
+            "10",
+            "25",
+            "15",
+            "5"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int sum = 0;\nfor (int i = 1; i <= 100; i++) {\n    if (i % 3 == 0 && i % 5 == 0) sum += i;\n}\nprintf(\"%d\", sum);",
+        "o": [
+            "315",
+            "450",
+            "250",
+            "195"
+        ]
+    },
+    {
+        "q": "The expression i % 3 == 0 && i % 5 == 0 checks divisibility by ______.",
+        "type": "fill_blank",
+        "answers": [
+            "15"
+        ],
+        "other_options": [
+            "3",
+            "5",
+            "8"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 4;\nfor (int i = 1; i <= n; i++) {\n    for (int j = 1; j <= n; j++) {\n        if (i == 1 || i == n || j == 1 || j == n)\n            printf(\"*\");\n        else\n            printf(\" \");\n    }\n    printf(\"|\");\n}",
+        "o": [
+            "****|*  *|*  *|****|",
+            "****|****|****|****|",
+            "*  *|*  *|*  *|*  *|",
+            "    |    |    |    |"
+        ]
+    },
+    {
+        "q": "A hollow rectangle pattern requires boundary condition checks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int nums[] = {1, 2, 2, 3, 3, 3, 4};\nint count = 1, max_count = 1;\nfor (int i = 1; i < 7; i++) {\n    if (nums[i] == nums[i-1]) count++;\n    else count = 1;\n    if (count > max_count) max_count = count;\n}\nprintf(\"%d\", max_count);",
+        "o": [
+            "3",
+            "2",
+            "4",
+            "1"
+        ]
+    },
+    {
+        "q": "Rearrange steps to find longest consecutive run:",
+        "type": "rearrange",
+        "words": [
+            "compare adjacent",
+            "increment count",
+            "reset if different",
+            "track maximum"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nfor (int i = 1; i <= n; i++) {\n    for (int j = i; j <= n; j++) {\n        printf(\"%d \", j);\n    }\n    printf(\"|\");\n}",
+        "o": [
+            "1 2 3 4 5 |2 3 4 5 |3 4 5 |4 5 |5 |",
+            "1 |1 2 |1 2 3 |1 2 3 4 |1 2 3 4 5 |",
+            "5 4 3 2 1 |4 3 2 1 |3 2 1 |2 1 |1 |",
+            "1 |2 |3 |4 |5 |"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nint left = 0, right = n - 1;\nwhile (left < right) {\n    int temp = left;\n    left = right;\n    right = temp;\n    left++; right--;\n}\nprintf(\"%d %d\", left, right);",
+        "o": [
+            "5 -1",
+            "0 4",
+            "2 2",
+            "4 0"
+        ]
+    },
+    {
+        "q": "Match the algorithm with its typical use case:",
+        "type": "match",
+        "left": [
+            "Two pointers",
+            "Sliding window",
+            "Binary search",
+            "Backtracking"
+        ],
+        "right": [
+            "Reverse array",
+            "Subarray problems",
+            "Sorted search",
+            "Combinatorics"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char str[] = \"Hello\";\nint len = 0;\nwhile (str[len] != '\\0') len++;\nprintf(\"%d\", len);",
+        "o": [
+            "5",
+            "6",
+            "4",
+            "Hello"
+        ]
+    },
+    {
+        "q": "Strings in C are terminated by the ______ character.",
+        "type": "fill_blank",
+        "answers": [
+            "null"
+        ],
+        "other_options": [
+            "newline",
+            "space",
+            "EOF"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char str[] = \"abcba\";\nint i = 0, j = 4, is_pal = 1;\nwhile (i < j) {\n    if (str[i] != str[j]) {\n        is_pal = 0;\n        break;\n    }\n    i++; j--;\n}\nprintf(\"%d\", is_pal);",
+        "o": [
+            "1",
+            "0",
+            "5",
+            "True"
+        ]
+    },
+    {
+        "q": "A string palindrome reads the same forwards and backwards.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int count[26] = {0};\nchar str[] = \"hello\";\nfor (int i = 0; str[i]; i++) {\n    count[str[i] - 'a']++;\n}\nprintf(\"%d\", count['l' - 'a']);",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "0"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 2, 3, 4, 5};\nint n = 5, sum = 0;\nfor (int i = 0; i < n; i++) {\n    sum ^= arr[i];\n}\nprintf(\"%d\", sum);",
+        "o": [
+            "1",
+            "0",
+            "15",
+            "5"
+        ]
+    },
+    {
+        "q": "XOR of a number with itself equals ______.",
+        "type": "fill_blank",
+        "answers": [
+            "zero"
+        ],
+        "other_options": [
+            "one",
+            "itself",
+            "undefined"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 10;\nint sum = n * (n + 1) / 2;\nprintf(\"%d\", sum);",
+        "o": [
+            "55",
+            "50",
+            "45",
+            "100"
+        ]
+    },
+    {
+        "q": "Match the formula with what it calculates:",
+        "type": "match",
+        "left": [
+            "n*(n+1)/2",
+            "n*(n+1)*(2n+1)/6",
+            "n*n",
+            "(n*(n+1)/2)^2"
+        ],
+        "right": [
+            "Sum 1 to n",
+            "Sum of squares",
+            "Perfect square",
+            "Sum of cubes"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 8, steps = 0;\nwhile (n != 1) {\n    if (n % 2 == 0) n /= 2;\n    else n = 3 * n + 1;\n    steps++;\n}\nprintf(\"%d\", steps);",
+        "o": [
+            "3",
+            "4",
+            "5",
+            "8"
+        ]
+    },
+    {
+        "q": "The Collatz conjecture states all sequences eventually reach 1.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a[3][3] = {{1,2,3},{4,5,6},{7,8,9}};\nint trace = 0;\nfor (int i = 0; i < 3; i++) {\n    trace += a[i][i];\n}\nprintf(\"%d\", trace);",
+        "o": [
+            "15",
+            "12",
+            "9",
+            "45"
+        ]
+    },
+    {
+        "q": "The trace of a matrix is the sum of ______ elements.",
+        "type": "fill_blank",
+        "answers": [
+            "diagonal"
+        ],
+        "other_options": [
+            "all",
+            "row",
+            "column"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a[2][3] = {{1,2,3},{4,5,6}};\nint b[3][2];\nfor (int i = 0; i < 2; i++) {\n    for (int j = 0; j < 3; j++) {\n        b[j][i] = a[i][j];\n    }\n}\nprintf(\"%d %d\", b[0][1], b[2][0]);",
+        "o": [
+            "4 3",
+            "2 7",
+            "1 6",
+            "3 4"
+        ]
+    },
+    {
+        "q": "Matrix transposition swaps rows and columns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 1, 2, 2, 3};\nint unique = 0;\nfor (int i = 0; i < 5; i++) {\n    unique ^= arr[i];\n}\nprintf(\"%d\", unique);",
+        "o": [
+            "3",
+            "0",
+            "1",
+            "2"
+        ]
+    },
+    {
+        "q": "Rearrange steps to find unique element using XOR:",
+        "type": "rearrange",
+        "words": [
+            "initialize zero",
+            "XOR all elements",
+            "pairs cancel",
+            "unique remains"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 100, sum = 0;\nfor (int i = 1; i <= n; i++) {\n    sum += (i % 2 == 0) ? i : -i;\n}\nprintf(\"%d\", sum);",
+        "o": [
+            "50",
+            "-50",
+            "0",
+            "100"
+        ]
+    },
+    {
+        "q": "The ternary operator can be used inside loop operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nfor (int i = 0; i < n; i++) {\n    for (int j = 0; j < n - i - 1; j++) printf(\" \");\n    for (int k = 0; k <= i; k++) printf(\"* \");\n    printf(\"|\");\n}",
+        "o": [
+            "    * |   * * |  * * * | * * * * |* * * * * |",
+            "* |* * |* * * |* * * * |* * * * * |",
+            "* * * * * |* * * * |* * * |* * |* |",
+            "    *|   **|  ***| ****|*****|"
+        ]
+    },
+    {
+        "q": "Match the triangle pattern with its leading spaces:",
+        "type": "match",
+        "left": [
+            "Left-aligned",
+            "Right-aligned",
+            "Center-aligned",
+            "Inverted center"
+        ],
+        "right": [
+            "No spaces",
+            "n-i-1 spaces",
+            "(n-i-1) spaces both",
+            "i spaces both"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {10, 20, 30, 40, 50};\nint n = 5;\nfor (int i = 0; i < n / 2; i++) {\n    int t = arr[i];\n    arr[i] = arr[n - 1 - i];\n    arr[n - 1 - i] = t;\n}\nprintf(\"%d %d %d\", arr[0], arr[2], arr[4]);",
+        "o": [
+            "50 30 10",
+            "10 30 50",
+            "50 20 10",
+            "10 20 50"
+        ]
+    },
+    {
+        "q": "Array reversal swaps elements from ______ ends.",
+        "type": "fill_blank",
+        "answers": [
+            "both"
+        ],
+        "other_options": [
+            "left",
+            "right",
+            "middle"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nint a[5] = {1, 2, 3, 4, 5};\nint temp = a[0];\nfor (int i = 0; i < n - 1; i++) {\n    a[i] = a[i + 1];\n}\na[n - 1] = temp;\nprintf(\"%d %d\", a[0], a[4]);",
+        "o": [
+            "2 1",
+            "1 5",
+            "5 1",
+            "2 5"
+        ]
+    },
+    {
+        "q": "Left rotation shifts elements toward the beginning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int sum1 = 0, sum2 = 0;\nfor (int i = 1; i <= 10; i++) {\n    if (i <= 5) sum1 += i;\n    else sum2 += i;\n}\nprintf(\"%d\", sum2 - sum1);",
+        "o": [
+            "25",
+            "15",
+            "40",
+            "10"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 6;\nfor (int i = 1; i <= n; i++) {\n    if (n % i == 0) printf(\"%d \", i);\n}",
+        "o": [
+            "1 2 3 6",
+            "1 2 3 4 5 6",
+            "2 3",
+            "1 6"
+        ]
+    },
+    {
+        "q": "A divisor of n satisfies n % divisor == ______.",
+        "type": "fill_blank",
+        "answers": [
+            "0"
+        ],
+        "other_options": [
+            "1",
+            "n",
+            "divisor"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 84;\nwhile (n % 2 == 0) {\n    printf(\"2 \");\n    n /= 2;\n}\nfor (int i = 3; i * i <= n; i += 2) {\n    while (n % i == 0) {\n        printf(\"%d \", i);\n        n /= i;\n    }\n}\nif (n > 2) printf(\"%d\", n);",
+        "o": [
+            "2 2 3 7",
+            "2 3 7 2",
+            "84",
+            "2 42"
+        ]
+    },
+    {
+        "q": "Match the number theory concept with its algorithm:",
+        "type": "match",
+        "left": [
+            "Prime factors",
+            "GCD",
+            "LCM",
+            "Primality"
+        ],
+        "right": [
+            "Division method",
+            "Euclidean algorithm",
+            "a*b/GCD",
+            "Trial division"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 12, b = 18;\nint gcd = 1;\nfor (int i = 1; i <= a && i <= b; i++) {\n    if (a % i == 0 && b % i == 0) gcd = i;\n}\nprintf(\"%d\", gcd);",
+        "o": [
+            "6",
+            "3",
+            "12",
+            "18"
+        ]
+    },
+    {
+        "q": "The brute force GCD method checks all numbers up to the smaller value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nfor (int i = 1; i <= n; i++) {\n    for (int j = 1; j <= n; j++) {\n        printf(\"%c \", (i + j) % 2 == 0 ? 'W' : 'B');\n    }\n    printf(\"|\");\n}",
+        "o": [
+            "W B W B W |B W B W B |W B W B W |B W B W B |W B W B W |",
+            "B W B W B |W B W B W |B W B W B |W B W B W |B W B W B |",
+            "W W W W W |B B B B B |W W W W W |B B B B B |W W W W W |",
+            "B B B B B |W W W W W |B B B B B |W W W W W |B B B B B |"
+        ]
+    },
+    {
+        "q": "A checkerboard pattern alternates based on ______ sum.",
+        "type": "fill_blank",
+        "answers": [
+            "index"
+        ],
+        "other_options": [
+            "value",
+            "row",
+            "column"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 1234;\nint first = n;\nwhile (first >= 10) first /= 10;\nint last = n % 10;\nprintf(\"%d %d\", first, last);",
+        "o": [
+            "1 4",
+            "4 1",
+            "12 34",
+            "1234 0"
+        ]
+    },
+    {
+        "q": "Rearrange steps to extract first digit:",
+        "type": "rearrange",
+        "words": [
+            "check if >= 10",
+            "divide by 10",
+            "repeat",
+            "digit remains"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int count = 0;\nfor (int i = 1; i <= 100; i++) {\n    int n = i;\n    while (n > 0) {\n        if (n % 10 == 5) count++;\n        n /= 10;\n    }\n}\nprintf(\"%d\", count);",
+        "o": [
+            "20",
+            "10",
+            "19",
+            "21"
+        ]
+    },
+    {
+        "q": "Counting digit occurrences requires extracting each digit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nfor (int i = 1; i <= n; i++) {\n    for (int j = 1; j <= n; j++) {\n        if (i == j || i + j == n + 1)\n            printf(\"* \");\n        else\n            printf(\"  \");\n    }\n    printf(\"|\");\n}",
+        "o": [
+            "*       * |  *   *   |    *     |  *   *   |*       * |",
+            "*         |  *       |    *     |      *   |        * |",
+            "* * * * * |* * * * * |* * * * * |* * * * * |* * * * * |",
+            "*       * |*       * |*       * |*       * |*       * |"
+        ]
+    },
+    {
+        "q": "An X pattern uses both main and anti-diagonal conditions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {3, 1, 4, 1, 5, 9, 2, 6};\nint n = 8, second = -1;\nint max = arr[0];\nfor (int i = 1; i < n; i++) {\n    if (arr[i] > max) {\n        second = max;\n        max = arr[i];\n    } else if (arr[i] > second && arr[i] != max) {\n        second = arr[i];\n    }\n}\nprintf(\"%d\", second);",
+        "o": [
+            "6",
+            "9",
+            "5",
+            "4"
+        ]
+    },
+    {
+        "q": "Finding second largest requires tracking ______ values.",
+        "type": "fill_blank",
+        "answers": [
+            "two"
+        ],
+        "other_options": [
+            "one",
+            "three",
+            "all"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 2, 3, 4, 5};\nint n = 5;\nfor (int i = 1; i < n; i++) {\n    arr[i] += arr[i - 1];\n}\nprintf(\"%d %d %d\", arr[2], arr[3], arr[4]);",
+        "o": [
+            "6 10 15",
+            "3 4 5",
+            "1 3 6",
+            "6 7 8"
+        ]
+    },
+    {
+        "q": "Match the array operation with its purpose:",
+        "type": "match",
+        "left": [
+            "Prefix sum",
+            "Suffix sum",
+            "Running max",
+            "Running min"
+        ],
+        "right": [
+            "Sum from start",
+            "Sum from end",
+            "Max so far",
+            "Min so far"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 10;\nint count = 0;\nfor (int i = 5; i <= n; i += 5) {\n    int temp = i;\n    while (temp % 5 == 0) {\n        count++;\n        temp /= 5;\n    }\n}\nprintf(\"%d\", count);",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "10"
+        ]
+    },
+    {
+        "q": "Trailing zeros in factorial depend on factors of ______.",
+        "type": "fill_blank",
+        "answers": [
+            "5"
+        ],
+        "other_options": [
+            "2",
+            "10",
+            "0"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 20;\nint count = 0;\nfor (int i = 5; i <= n; i *= 5) {\n    count += n / i;\n}\nprintf(\"%d\", count);",
+        "o": [
+            "4",
+            "5",
+            "3",
+            "20"
+        ]
+    },
+    {
+        "q": "The formula n/5 + n/25 + n/125... counts trailing zeros efficiently.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 10;\nint arr[10];\nfor (int i = 0; i < n; i++) arr[i] = i * i;\nint sum = 0;\nfor (int i = 0; i < n; i += 2) sum += arr[i];\nprintf(\"%d\", sum);",
+        "o": [
+            "120",
+            "285",
+            "165",
+            "100"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 5, b = 3;\na = a ^ b;\nb = a ^ b;\na = a ^ b;\nprintf(\"%d %d\", a, b);",
+        "o": [
+            "3 5",
+            "5 3",
+            "0 0",
+            "8 8"
+        ]
+    },
+    {
+        "q": "XOR can swap two variables without a ______ variable.",
+        "type": "fill_blank",
+        "answers": [
+            "temporary"
+        ],
+        "other_options": [
+            "extra",
+            "third",
+            "swap"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 7;\nint setBits = 0;\nwhile (n > 0) {\n    setBits += n & 1;\n    n >>= 1;\n}\nprintf(\"%d\", setBits);",
+        "o": [
+            "3",
+            "7",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "q": "Match the bitwise technique with its purpose:",
+        "type": "match",
+        "left": [
+            "n & 1",
+            "n & (n-1)",
+            "n | (1 << k)",
+            "n ^ n"
+        ],
+        "right": [
+            "Check last bit",
+            "Clear lowest set bit",
+            "Set kth bit",
+            "Result is zero"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 8;\nint isPowerOf2 = (n > 0) && ((n & (n - 1)) == 0);\nprintf(\"%d\", isPowerOf2);",
+        "o": [
+            "1",
+            "0",
+            "8",
+            "True"
+        ]
+    },
+    {
+        "q": "A power of 2 has exactly one set bit in binary.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {2, 4, 6, 8, 10};\nint n = 5;\nfor (int i = 0; i < n - 1; i++) {\n    int minIdx = i;\n    for (int j = i + 1; j < n; j++) {\n        if (arr[j] < arr[minIdx]) minIdx = j;\n    }\n    int t = arr[i]; arr[i] = arr[minIdx]; arr[minIdx] = t;\n}\nprintf(\"%d %d %d\", arr[0], arr[2], arr[4]);",
+        "o": [
+            "2 6 10",
+            "10 6 2",
+            "2 4 10",
+            "10 8 2"
+        ]
+    },
+    {
+        "q": "Selection sort finds the ______ element in each pass.",
+        "type": "fill_blank",
+        "answers": [
+            "minimum"
+        ],
+        "other_options": [
+            "maximum",
+            "median",
+            "average"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {5, 2, 4, 6, 1, 3};\nfor (int i = 1; i < 6; i++) {\n    int key = arr[i];\n    int j = i - 1;\n    while (j >= 0 && arr[j] > key) {\n        arr[j + 1] = arr[j];\n        j--;\n    }\n    arr[j + 1] = key;\n}\nprintf(\"%d %d %d\", arr[0], arr[2], arr[5]);",
+        "o": [
+            "1 3 6",
+            "5 4 3",
+            "1 2 6",
+            "5 2 1"
+        ]
+    },
+    {
+        "q": "Insertion sort is efficient for nearly sorted arrays.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int matrix[3][3] = {{1,2,3},{4,5,6},{7,8,9}};\nint anti_diag = 0;\nfor (int i = 0; i < 3; i++) {\n    anti_diag += matrix[i][2-i];\n}\nprintf(\"%d\", anti_diag);",
+        "o": [
+            "15",
+            "12",
+            "9",
+            "18"
+        ]
+    },
+    {
+        "q": "Rearrange matrix traversal orders:",
+        "type": "rearrange",
+        "words": [
+            "row-major",
+            "column-major",
+            "diagonal",
+            "anti-diagonal"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a[3][3] = {{1,0,0},{0,1,0},{0,0,1}};\nint isIdentity = 1;\nfor (int i = 0; i < 3 && isIdentity; i++) {\n    for (int j = 0; j < 3 && isIdentity; j++) {\n        if (i == j && a[i][j] != 1) isIdentity = 0;\n        if (i != j && a[i][j] != 0) isIdentity = 0;\n    }\n}\nprintf(\"%d\", isIdentity);",
+        "o": [
+            "1",
+            "0",
+            "3",
+            "True"
+        ]
+    },
+    {
+        "q": "An identity matrix has 1s on diagonal and 0s elsewhere.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 12;\nint phi = n;\nfor (int p = 2; p * p <= n; p++) {\n    if (n % p == 0) {\n        while (n % p == 0) n /= p;\n        phi -= phi / p;\n    }\n}\nif (n > 1) phi -= phi / n;\nprintf(\"%d\", phi);",
+        "o": [
+            "4",
+            "6",
+            "8",
+            "12"
+        ]
+    },
+    {
+        "q": "Euler's totient counts numbers ______ to n and less than n.",
+        "type": "fill_blank",
+        "answers": [
+            "coprime"
+        ],
+        "other_options": [
+            "equal",
+            "divisible",
+            "greater"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 28, sum = 0;\nfor (int i = 1; i < n; i++) {\n    if (n % i == 0) sum += i;\n}\nprintf(\"%s\", sum == n ? \"Perfect\" : \"Not\");",
+        "o": [
+            "Perfect",
+            "Not",
+            "28",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match the special number with its property:",
+        "type": "match",
+        "left": [
+            "Perfect",
+            "Armstrong",
+            "Palindrome",
+            "Prime"
+        ],
+        "right": [
+            "Sum of divisors = n",
+            "Sum of digit powers = n",
+            "Reverse = n",
+            "Only 1 and n divide"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {-2, 1, -3, 4, -1, 2, 1, -5, 4};\nint maxSum = arr[0], currSum = arr[0];\nfor (int i = 1; i < 9; i++) {\n    currSum = (currSum + arr[i] > arr[i]) ? currSum + arr[i] : arr[i];\n    if (currSum > maxSum) maxSum = currSum;\n}\nprintf(\"%d\", maxSum);",
+        "o": [
+            "6",
+            "7",
+            "4",
+            "10"
+        ]
+    },
+    {
+        "q": "Kadane's algorithm finds maximum ______ sum.",
+        "type": "fill_blank",
+        "answers": [
+            "subarray"
+        ],
+        "other_options": [
+            "array",
+            "element",
+            "total"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 2, 3, 4, 5};\nint n = 5, k = 2;\nfor (int r = 0; r < k; r++) {\n    int temp = arr[n-1];\n    for (int i = n-1; i > 0; i--) arr[i] = arr[i-1];\n    arr[0] = temp;\n}\nprintf(\"%d %d %d\", arr[0], arr[2], arr[4]);",
+        "o": [
+            "4 1 3",
+            "1 3 5",
+            "3 5 2",
+            "5 2 4"
+        ]
+    },
+    {
+        "q": "Right rotation by k moves elements k positions to the right.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {4, 2, 2, 8, 3, 3, 1};\nint n = 7;\nfor (int i = 0; i < n; i++) {\n    int count = 0;\n    for (int j = 0; j < n; j++) {\n        if (arr[i] == arr[j]) count++;\n    }\n    if (count > n / 2) { printf(\"%d\", arr[i]); break; }\n}",
+        "o": [
+            "Nothing",
+            "2",
+            "3",
+            "8"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nfor (int i = 1; i <= n; i++) {\n    for (int j = n; j >= i; j--) printf(\" \");\n    for (int k = 1; k <= 2*i-1; k++) printf(\"*\");\n    printf(\"|\");\n}",
+        "o": [
+            "     *|    ***|   *****|  *******| *********|",
+            "*|***|*****|*******|*********|",
+            "     *|     **|    ***|   ****|  *****|",
+            "*********|*******|*****|***|*|"
+        ]
+    },
+    {
+        "q": "Rearrange steps for pattern with spaces:",
+        "type": "rearrange",
+        "words": [
+            "print spaces",
+            "print stars",
+            "newline",
+            "next row"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 2, 3, 4, 5};\nint n = 5;\nint left = 0, right = n - 1;\nwhile (left < right) {\n    int t = arr[left];\n    arr[left] = arr[right];\n    arr[right] = t;\n    left++; right--;\n}\nint sum = 0;\nfor (int i = 0; i < n; i++) sum += arr[i] * (i + 1);\nprintf(\"%d\", sum);",
+        "o": [
+            "35",
+            "55",
+            "45",
+            "40"
+        ]
+    },
+    {
+        "q": "Weighted sum multiplies elements by their positions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char s1[] = \"hello\";\nchar s2[] = \"world\";\nint i = 0;\nwhile (s1[i] && s2[i]) {\n    char t = s1[i]; s1[i] = s2[i]; s2[i] = t;\n    i++;\n}\nprintf(\"%s %s\", s1, s2);",
+        "o": [
+            "world hello",
+            "hello world",
+            "horld wello",
+            "Error"
+        ]
+    },
+    {
+        "q": "String swapping exchanges characters at ______ positions.",
+        "type": "fill_blank",
+        "answers": [
+            "corresponding"
+        ],
+        "other_options": [
+            "random",
+            "adjacent",
+            "alternate"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nint spiral[5][5];\nint val = 1, top = 0, bot = n-1, left = 0, right = n-1;\nwhile (top <= bot && left <= right) {\n    for (int i = left; i <= right; i++) spiral[top][i] = val++;\n    top++;\n    for (int i = top; i <= bot; i++) spiral[i][right] = val++;\n    right--;\n    for (int i = right; i >= left; i--) spiral[bot][i] = val++;\n    bot--;\n    for (int i = bot; i >= top; i--) spiral[i][left] = val++;\n    left++;\n}\nprintf(\"%d %d %d\", spiral[0][0], spiral[2][2], spiral[4][4]);",
+        "o": [
+            "1 13 25",
+            "1 12 24",
+            "1 13 21",
+            "1 9 25"
+        ]
+    },
+    {
+        "q": "Match the matrix traversal with its pattern:",
+        "type": "match",
+        "left": [
+            "Spiral",
+            "Zigzag",
+            "Snake",
+            "Boundary"
+        ],
+        "right": [
+            "Outside to inside",
+            "Alternating direction",
+            "Row by row flip",
+            "Edges only"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a[3][3] = {{1,2,3},{4,5,6},{7,8,9}};\nint b[3][3] = {{9,8,7},{6,5,4},{3,2,1}};\nint c[3][3];\nfor (int i = 0; i < 3; i++)\n    for (int j = 0; j < 3; j++)\n        c[i][j] = a[i][j] + b[i][j];\nprintf(\"%d %d %d\", c[0][0], c[1][1], c[2][2]);",
+        "o": [
+            "10 10 10",
+            "1 5 9",
+            "9 5 1",
+            "18 10 2"
+        ]
+    },
+    {
+        "q": "Matrix addition adds elements at ______ positions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a[2][3] = {{1,2,3},{4,5,6}};\nint b[3][2] = {{7,8},{9,10},{11,12}};\nint c[2][2] = {0};\nfor (int i = 0; i < 2; i++)\n    for (int j = 0; j < 2; j++)\n        for (int k = 0; k < 3; k++)\n            c[i][j] += a[i][k] * b[k][j];\nprintf(\"%d %d\", c[0][0], c[1][1]);",
+        "o": [
+            "58 139",
+            "56 136",
+            "50 130",
+            "60 140"
+        ]
+    },
+    {
+        "q": "Matrix multiplication uses ______ nested loops.",
+        "type": "fill_blank",
+        "answers": [
+            "three"
+        ],
+        "other_options": [
+            "two",
+            "four",
+            "one"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 3, 5, 7, 9};\nint n = 5, target = 6;\nint low = 0, high = n - 1;\nwhile (low < high) {\n    int sum = arr[low] + arr[high];\n    if (sum == target) break;\n    else if (sum < target) low++;\n    else high--;\n}\nprintf(\"%d %d\", arr[low], arr[high]);",
+        "o": [
+            "1 5",
+            "1 7",
+            "3 5",
+            "1 9"
+        ]
+    },
+    {
+        "q": "Two-pointer technique requires a sorted array for pair sum.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 10;\nfor (int i = 2; i <= n; i++) {\n    int isPrime = 1;\n    for (int j = 2; j * j <= i; j++) {\n        if (i % j == 0) { isPrime = 0; break; }\n    }\n    if (isPrime) printf(\"%d \", i);\n}",
+        "o": [
+            "2 3 5 7",
+            "2 3 5 7 9",
+            "1 2 3 5 7",
+            "3 5 7"
+        ]
+    },
+    {
+        "q": "Checking divisibility up to sqrt(n) is sufficient for primality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 50;\nint sieve[51];\nfor (int i = 0; i <= n; i++) sieve[i] = 1;\nsieve[0] = sieve[1] = 0;\nfor (int i = 2; i * i <= n; i++) {\n    if (sieve[i]) {\n        for (int j = i * i; j <= n; j += i) sieve[j] = 0;\n    }\n}\nint count = 0;\nfor (int i = 0; i <= n; i++) if (sieve[i]) count++;\nprintf(\"%d\", count);",
+        "o": [
+            "15",
+            "14",
+            "16",
+            "25"
+        ]
+    },
+    {
+        "q": "Rearrange Sieve of Eratosthenes steps:",
+        "type": "rearrange",
+        "words": [
+            "mark all true",
+            "start from 2",
+            "mark multiples",
+            "count primes"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 48, b = 18;\nwhile (b != 0) {\n    int temp = b;\n    b = a % b;\n    a = temp;\n}\nprintf(\"%d\", a);",
+        "o": [
+            "6",
+            "3",
+            "12",
+            "18"
+        ]
+    },
+    {
+        "q": "Euclidean algorithm repeatedly takes ______ until zero.",
+        "type": "fill_blank",
+        "answers": [
+            "remainder"
+        ],
+        "other_options": [
+            "quotient",
+            "product",
+            "sum"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 12, b = 18;\nint gcd = a, temp_b = b;\nwhile (temp_b != 0) {\n    int t = temp_b;\n    temp_b = gcd % temp_b;\n    gcd = t;\n}\nint lcm = (a * b) / gcd;\nprintf(\"%d\", lcm);",
+        "o": [
+            "36",
+            "6",
+            "216",
+            "72"
+        ]
+    },
+    {
+        "q": "Match the algorithm complexity:",
+        "type": "match",
+        "left": [
+            "Bubble sort",
+            "Binary search",
+            "Linear search",
+            "Selection sort"
+        ],
+        "right": [
+            "O(n^2)",
+            "O(log n)",
+            "O(n)",
+            "O(n^2)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nint pascal[5][5] = {0};\nfor (int i = 0; i < n; i++) {\n    pascal[i][0] = 1;\n    for (int j = 1; j <= i; j++) {\n        pascal[i][j] = pascal[i-1][j-1] + pascal[i-1][j];\n    }\n}\nprintf(\"%d %d %d\", pascal[4][0], pascal[4][2], pascal[4][4]);",
+        "o": [
+            "1 6 1",
+            "1 4 1",
+            "1 3 1",
+            "1 10 1"
+        ]
+    },
+    {
+        "q": "Pascal's triangle uses ______ row to compute current row.",
+        "type": "fill_blank",
+        "answers": [
+            "previous"
+        ],
+        "other_options": [
+            "next",
+            "same",
+            "first"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 2, 2, 3, 3, 3, 4, 4, 4, 4};\nint n = 10;\nint maxCount = 0, mode = arr[0];\nfor (int i = 0; i < n; i++) {\n    int count = 0;\n    for (int j = 0; j < n; j++) {\n        if (arr[i] == arr[j]) count++;\n    }\n    if (count > maxCount) {\n        maxCount = count;\n        mode = arr[i];\n    }\n}\nprintf(\"%d\", mode);",
+        "o": [
+            "4",
+            "3",
+            "2",
+            "1"
+        ]
+    },
+    {
+        "q": "Mode is the most ______ occurring element.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char str[] = \"programming\";\nint freq[26] = {0};\nfor (int i = 0; str[i]; i++) {\n    freq[str[i] - 'a']++;\n}\nint maxFreq = 0;\nchar maxChar = 'a';\nfor (int i = 0; i < 26; i++) {\n    if (freq[i] > maxFreq) {\n        maxFreq = freq[i];\n        maxChar = 'a' + i;\n    }\n}\nprintf(\"%c %d\", maxChar, maxFreq);",
+        "o": [
+            "r 2",
+            "g 2",
+            "m 2",
+            "p 1"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};\nint n = 10, windowSum = 0, maxSum = 0;\nfor (int i = 0; i < 3; i++) windowSum += arr[i];\nmaxSum = windowSum;\nfor (int i = 3; i < n; i++) {\n    windowSum = windowSum - arr[i-3] + arr[i];\n    if (windowSum > maxSum) maxSum = windowSum;\n}\nprintf(\"%d\", maxSum);",
+        "o": [
+            "27",
+            "24",
+            "21",
+            "30"
+        ]
+    },
+    {
+        "q": "Sliding window maintains sum in ______ time per step.",
+        "type": "fill_blank",
+        "answers": [
+            "O(1)"
+        ],
+        "other_options": [
+            "O(n)",
+            "O(log n)",
+            "O(k)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char s[] = \"abcabc\";\nint n = 6, len = 0, maxLen = 0;\nint visited[256] = {0};\nfor (int i = 0; i < n; i++) {\n    if (visited[(int)s[i]]) {\n        for (int j = 0; j < 256; j++) visited[j] = 0;\n        len = 0;\n    }\n    visited[(int)s[i]] = 1;\n    len++;\n    if (len > maxLen) maxLen = len;\n}\nprintf(\"%d\", maxLen);",
+        "o": [
+            "3",
+            "6",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "q": "Match the string algorithm with its complexity:",
+        "type": "match",
+        "left": [
+            "Naive search",
+            "KMP",
+            "Rabin-Karp",
+            "Boyer-Moore"
+        ],
+        "right": [
+            "O(n*m)",
+            "O(n+m)",
+            "O(n+m) average",
+            "O(n/m) best"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 4;\nint count = 0;\nfor (int i = 0; i < (1 << n); i++) {\n    int bits = 0;\n    int temp = i;\n    while (temp) {\n        bits += temp & 1;\n        temp >>= 1;\n    }\n    if (bits == 2) count++;\n}\nprintf(\"%d\", count);",
+        "o": [
+            "6",
+            "4",
+            "8",
+            "16"
+        ]
+    },
+    {
+        "q": "The expression 1 << n generates 2 to the power ______.",
+        "type": "fill_blank",
+        "answers": [
+            "n"
+        ],
+        "other_options": [
+            "1",
+            "2",
+            "0"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 15;\nint highest = 0;\nwhile (n > 0) {\n    highest = n & 1;\n    n >>= 1;\n}\nprintf(\"%d\", highest);",
+        "o": [
+            "1",
+            "0",
+            "15",
+            "7"
+        ]
+    },
+    {
+        "q": "The most significant bit of a positive integer is always ______.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {2, 3, 2, 4, 5, 3, 2};\nint n = 7;\nint leader = arr[0], count = 1;\nfor (int i = 1; i < n; i++) {\n    if (arr[i] == leader) count++;\n    else count--;\n    if (count == 0) {\n        leader = arr[i];\n        count = 1;\n    }\n}\nprintf(\"%d\", leader);",
+        "o": [
+            "2",
+            "3",
+            "4",
+            "5"
+        ]
+    },
+    {
+        "q": "Boyer-Moore voting finds the ______ element.",
+        "type": "fill_blank",
+        "answers": [
+            "majority"
+        ],
+        "other_options": [
+            "minimum",
+            "maximum",
+            "median"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 2, 3, 4, 5};\nint n = 5;\nint prefixProd[5], suffixProd[5];\nprefixProd[0] = 1;\nfor (int i = 1; i < n; i++) prefixProd[i] = prefixProd[i-1] * arr[i-1];\nsuffixProd[n-1] = 1;\nfor (int i = n-2; i >= 0; i--) suffixProd[i] = suffixProd[i+1] * arr[i+1];\nint result = prefixProd[2] * suffixProd[2];\nprintf(\"%d\", result);",
+        "o": [
+            "40",
+            "60",
+            "120",
+            "20"
+        ]
+    },
+    {
+        "q": "Rearrange steps for product except self:",
+        "type": "rearrange",
+        "words": [
+            "prefix products",
+            "suffix products",
+            "multiply both",
+            "result array"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 6;\nint dp[7];\ndp[0] = 0; dp[1] = 1;\nfor (int i = 2; i <= n; i++) {\n    dp[i] = dp[i-1] + dp[i-2];\n}\nprintf(\"%d\", dp[n]);",
+        "o": [
+            "8",
+            "5",
+            "13",
+            "6"
+        ]
+    },
+    {
+        "q": "Dynamic programming stores solutions to ______ subproblems.",
+        "type": "fill_blank",
+        "answers": [
+            "overlapping"
+        ],
+        "other_options": [
+            "unique",
+            "random",
+            "simple"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nint ways[6] = {0};\nways[0] = 1;\nfor (int i = 1; i <= n; i++) {\n    if (i >= 1) ways[i] += ways[i-1];\n    if (i >= 2) ways[i] += ways[i-2];\n}\nprintf(\"%d\", ways[n]);",
+        "o": [
+            "8",
+            "5",
+            "13",
+            "6"
+        ]
+    },
+    {
+        "q": "Match the DP problem with its recurrence:",
+        "type": "match",
+        "left": [
+            "Fibonacci",
+            "Climbing stairs",
+            "Coin change",
+            "LCS"
+        ],
+        "right": [
+            "f(n-1) + f(n-2)",
+            "ways(n-1) + ways(n-2)",
+            "min(dp[i-coin]) + 1",
+            "max(dp[i-1][j], dp[i][j-1])"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int coins[] = {1, 2, 5};\nint amount = 11;\nint dp[12];\nfor (int i = 0; i <= amount; i++) dp[i] = amount + 1;\ndp[0] = 0;\nfor (int i = 1; i <= amount; i++) {\n    for (int j = 0; j < 3; j++) {\n        if (coins[j] <= i && dp[i - coins[j]] + 1 < dp[i])\n            dp[i] = dp[i - coins[j]] + 1;\n    }\n}\nprintf(\"%d\", dp[amount]);",
+        "o": [
+            "3",
+            "4",
+            "5",
+            "2"
+        ]
+    },
+    {
+        "q": "Coin change minimizes the ______ of coins used.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char s1[] = \"abcd\";\nchar s2[] = \"abdc\";\nint m = 4, n = 4;\nint dp[5][5] = {0};\nfor (int i = 1; i <= m; i++) {\n    for (int j = 1; j <= n; j++) {\n        if (s1[i-1] == s2[j-1]) dp[i][j] = dp[i-1][j-1] + 1;\n        else dp[i][j] = (dp[i-1][j] > dp[i][j-1]) ? dp[i-1][j] : dp[i][j-1];\n    }\n}\nprintf(\"%d\", dp[m][n]);",
+        "o": [
+            "3",
+            "4",
+            "2",
+            "1"
+        ]
+    },
+    {
+        "q": "LCS stands for Longest ______ Subsequence.",
+        "type": "fill_blank",
+        "answers": [
+            "Common"
+        ],
+        "other_options": [
+            "Continuous",
+            "Complete",
+            "Consecutive"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {10, 22, 9, 33, 21, 50, 41, 60};\nint n = 8;\nint lis[8];\nfor (int i = 0; i < n; i++) lis[i] = 1;\nfor (int i = 1; i < n; i++) {\n    for (int j = 0; j < i; j++) {\n        if (arr[i] > arr[j] && lis[i] < lis[j] + 1)\n            lis[i] = lis[j] + 1;\n    }\n}\nint maxLis = 0;\nfor (int i = 0; i < n; i++) if (lis[i] > maxLis) maxLis = lis[i];\nprintf(\"%d\", maxLis);",
+        "o": [
+            "5",
+            "4",
+            "6",
+            "3"
+        ]
+    },
+    {
+        "q": "LIS finds the longest ______ subsequence.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 4;\nint catalan[5] = {0};\ncatalan[0] = catalan[1] = 1;\nfor (int i = 2; i <= n; i++) {\n    for (int j = 0; j < i; j++) {\n        catalan[i] += catalan[j] * catalan[i-1-j];\n    }\n}\nprintf(\"%d\", catalan[n]);",
+        "o": [
+            "14",
+            "5",
+            "42",
+            "9"
+        ]
+    },
+    {
+        "q": "Catalan numbers count various combinatorial structures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {3, 2, 1, 5, 6, 4};\nint n = 6;\nfor (int i = n/2 - 1; i >= 0; i--) {\n    int largest = i, l = 2*i + 1, r = 2*i + 2;\n    if (l < n && arr[l] > arr[largest]) largest = l;\n    if (r < n && arr[r] > arr[largest]) largest = r;\n    if (largest != i) {\n        int t = arr[i]; arr[i] = arr[largest]; arr[largest] = t;\n    }\n}\nprintf(\"%d\", arr[0]);",
+        "o": [
+            "6",
+            "5",
+            "4",
+            "3"
+        ]
+    },
+    {
+        "q": "Rearrange heap operations:",
+        "type": "rearrange",
+        "words": [
+            "build heap",
+            "extract max",
+            "heapify",
+            "reduce size"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int low = 1, high = 100, target = 42;\nint guesses = 0;\nwhile (low <= high) {\n    int mid = (low + high) / 2;\n    guesses++;\n    if (mid == target) break;\n    else if (mid < target) low = mid + 1;\n    else high = mid - 1;\n}\nprintf(\"%d\", guesses);",
+        "o": [
+            "6",
+            "7",
+            "5",
+            "42"
+        ]
+    },
+    {
+        "q": "Binary search halves the search space each ______.",
+        "type": "fill_blank",
+        "answers": [
+            "iteration"
+        ],
+        "other_options": [
+            "comparison",
+            "element",
+            "array"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 10;\nint dp[11][11] = {0};\nfor (int i = 0; i <= n; i++) dp[i][0] = dp[0][i] = 1;\nfor (int i = 1; i <= n; i++)\n    for (int j = 1; j <= n; j++)\n        dp[i][j] = dp[i-1][j] + dp[i][j-1];\nprintf(\"%d\", dp[5][5]);",
+        "o": [
+            "252",
+            "126",
+            "70",
+            "210"
+        ]
+    },
+    {
+        "q": "Grid path problems count paths from top-left to bottom-right.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 8;\nint mask = 0;\nfor (int i = 0; i < 8; i += 2) {\n    mask |= (1 << i);\n}\nprintf(\"%d\", mask);",
+        "o": [
+            "85",
+            "170",
+            "255",
+            "128"
+        ]
+    },
+    {
+        "q": "Setting alternate bits creates a specific bit pattern.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 12;\nint result = 0;\nwhile (n > 0) {\n    result = (result << 1) | (n & 1);\n    n >>= 1;\n}\nprintf(\"%d\", result);",
+        "o": [
+            "3",
+            "12",
+            "6",
+            "48"
+        ]
+    },
+    {
+        "q": "Bit reversal flips the order of all bits in a number.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 4, 2, 3, 5};\nint n = 5;\nfor (int gap = n/2; gap > 0; gap /= 2) {\n    for (int i = gap; i < n; i++) {\n        int temp = arr[i];\n        int j;\n        for (j = i; j >= gap && arr[j-gap] > temp; j -= gap)\n            arr[j] = arr[j-gap];\n        arr[j] = temp;\n    }\n}\nprintf(\"%d %d %d\", arr[0], arr[2], arr[4]);",
+        "o": [
+            "1 3 5",
+            "5 3 1",
+            "1 2 5",
+            "5 2 1"
+        ]
+    },
+    {
+        "q": "Shell sort uses decreasing ______ for comparisons.",
+        "type": "fill_blank",
+        "answers": [
+            "gaps"
+        ],
+        "other_options": [
+            "elements",
+            "indices",
+            "values"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {64, 25, 12, 22, 11};\nint max = arr[0];\nfor (int i = 1; i < 5; i++)\n    if (arr[i] > max) max = arr[i];\nint count[65] = {0};\nfor (int i = 0; i < 5; i++) count[arr[i]]++;\nint idx = 0;\nfor (int i = 0; i <= max; i++)\n    while (count[i]-- > 0) arr[idx++] = i;\nprintf(\"%d %d %d\", arr[0], arr[2], arr[4]);",
+        "o": [
+            "11 22 64",
+            "64 22 11",
+            "11 12 64",
+            "64 25 11"
+        ]
+    },
+    {
+        "q": "Match the sorting algorithm with its characteristic:",
+        "type": "match",
+        "left": [
+            "Counting sort",
+            "Radix sort",
+            "Bucket sort",
+            "Merge sort"
+        ],
+        "right": [
+            "Integer range",
+            "Digit by digit",
+            "Distribution based",
+            "Divide and conquer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5, k = 2;\nint result = 1;\nfor (int i = 0; i < k; i++) {\n    result *= (n - i);\n    result /= (i + 1);\n}\nprintf(\"%d\", result);",
+        "o": [
+            "10",
+            "20",
+            "5",
+            "25"
+        ]
+    },
+    {
+        "q": "This code computes the binomial coefficient C(n, k).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 6;\nint dp[7] = {0};\ndp[1] = dp[2] = 1;\nfor (int i = 3; i <= n; i++)\n    dp[i] = dp[i-2] + dp[i-3];\nprintf(\"%d\", dp[n]);",
+        "o": [
+            "3",
+            "4",
+            "5",
+            "2"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 16;\nint log2n = 0;\nwhile ((1 << log2n) < n) log2n++;\nprintf(\"%d\", log2n);",
+        "o": [
+            "4",
+            "5",
+            "3",
+            "16"
+        ]
+    },
+    {
+        "q": "Computing log base 2 can be done with bit ______.",
+        "type": "fill_blank",
+        "answers": [
+            "shifting"
+        ],
+        "other_options": [
+            "masking",
+            "flipping",
+            "counting"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char str[] = \"aab\";\nint n = 3;\nint freq[26] = {0};\nfor (int i = 0; i < n; i++) freq[str[i] - 'a']++;\nint fact = 1, div = 1;\nfor (int i = 1; i <= n; i++) fact *= i;\nfor (int i = 0; i < 26; i++)\n    for (int j = 1; j <= freq[i]; j++) div *= j;\nprintf(\"%d\", fact / div);",
+        "o": [
+            "3",
+            "6",
+            "2",
+            "1"
+        ]
+    },
+    {
+        "q": "Permutations with repetition divide by factorial of frequencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a[3][3] = {{1,2,3},{4,5,6},{7,8,9}};\nfor (int i = 0; i < 3; i++) {\n    for (int j = i; j < 3; j++) {\n        int t = a[i][j];\n        a[i][j] = a[j][i];\n        a[j][i] = t;\n    }\n}\nprintf(\"%d %d %d\", a[0][1], a[1][0], a[2][0]);",
+        "o": [
+            "4 2 7",
+            "2 4 3",
+            "4 4 7",
+            "2 2 3"
+        ]
+    },
+    {
+        "q": "Rearrange in-place matrix transpose steps:",
+        "type": "rearrange",
+        "words": [
+            "iterate upper triangle",
+            "swap with lower",
+            "skip diagonal",
+            "complete"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 3;\nint a[3][3] = {{1,2,3},{4,5,6},{7,8,9}};\nfor (int i = 0; i < n; i++) {\n    for (int j = 0; j < n/2; j++) {\n        int t = a[i][j];\n        a[i][j] = a[i][n-1-j];\n        a[i][n-1-j] = t;\n    }\n}\nprintf(\"%d %d %d\", a[0][0], a[1][1], a[2][2]);",
+        "o": [
+            "3 5 7",
+            "1 5 9",
+            "7 5 3",
+            "9 5 1"
+        ]
+    },
+    {
+        "q": "Row reversal swaps elements from row ends.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int stack[10], top = -1;\nfor (int i = 1; i <= 5; i++) stack[++top] = i;\nint sum = 0;\nwhile (top >= 0) sum += stack[top--];\nprintf(\"%d\", sum);",
+        "o": [
+            "15",
+            "10",
+            "5",
+            "20"
+        ]
+    },
+    {
+        "q": "Stack follows ______ principle.",
+        "type": "fill_blank",
+        "answers": [
+            "LIFO"
+        ],
+        "other_options": [
+            "FIFO",
+            "random",
+            "priority"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int queue[10], front = 0, rear = -1;\nfor (int i = 1; i <= 5; i++) queue[++rear] = i;\nint sum = 0;\nwhile (front <= rear) sum += queue[front++];\nprintf(\"%d\", sum);",
+        "o": [
+            "15",
+            "10",
+            "5",
+            "20"
+        ]
+    },
+    {
+        "q": "Match the data structure with its property:",
+        "type": "match",
+        "left": [
+            "Stack",
+            "Queue",
+            "Deque",
+            "Priority Queue"
+        ],
+        "right": [
+            "LIFO",
+            "FIFO",
+            "Both ends",
+            "By priority"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 100;\nint sqrt_n = 0;\nwhile ((sqrt_n + 1) * (sqrt_n + 1) <= n) sqrt_n++;\nprintf(\"%d\", sqrt_n);",
+        "o": [
+            "10",
+            "9",
+            "11",
+            "100"
+        ]
+    },
+    {
+        "q": "Integer square root is found without floating point.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 100;\nint low = 1, high = n, ans = 0;\nwhile (low <= high) {\n    int mid = (low + high) / 2;\n    if (mid * mid <= n) {\n        ans = mid;\n        low = mid + 1;\n    } else high = mid - 1;\n}\nprintf(\"%d\", ans);",
+        "o": [
+            "10",
+            "9",
+            "11",
+            "50"
+        ]
+    },
+    {
+        "q": "Binary search can find square root in O(log n) time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "double low = 0, high = 4, eps = 0.001;\nwhile (high - low > eps) {\n    double mid = (low + high) / 2;\n    if (mid * mid < 4) low = mid;\n    else high = mid;\n}\nprintf(\"%.0f\", low);",
+        "o": [
+            "2",
+            "1",
+            "4",
+            "3"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 1, 2, 3, 3, 4, 4, 8, 8};\nint result = 0;\nfor (int i = 0; i < 9; i++) result ^= arr[i];\nprintf(\"%d\", result);",
+        "o": [
+            "2",
+            "0",
+            "8",
+            "1"
+        ]
+    },
+    {
+        "q": "XOR finds single element when others appear twice.",
+        "type": "fill_blank",
+        "answers": [
+            "exactly"
+        ],
+        "other_options": [
+            "at least",
+            "at most",
+            "never"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 7;\nint lookup[8] = {0, 1, 1, 2, 1, 2, 2, 3};\nint count = 0;\nwhile (n > 0) {\n    count += lookup[n & 7];\n    n >>= 3;\n}\nprintf(\"%d\", count);",
+        "o": [
+            "3",
+            "7",
+            "2",
+            "4"
+        ]
+    },
+    {
+        "q": "Lookup tables trade memory for computation speed.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nunsigned int inv = ~n + 1;\nprintf(\"%d\", (int)inv);",
+        "o": [
+            "-5",
+            "5",
+            "-6",
+            "6"
+        ]
+    },
+    {
+        "q": "Two's complement negation is ~n + ______.",
+        "type": "fill_blank",
+        "answers": [
+            "1"
+        ],
+        "other_options": [
+            "0",
+            "n",
+            "2"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 60, b = 13;\nint result = a ^ b;\nint hamming = 0;\nwhile (result) {\n    hamming++;\n    result &= (result - 1);\n}\nprintf(\"%d\", hamming);",
+        "o": [
+            "4",
+            "5",
+            "6",
+            "3"
+        ]
+    },
+    {
+        "q": "Match the bit operation with its count result:",
+        "type": "match",
+        "left": [
+            "n & (n-1)",
+            "Hamming distance",
+            "Popcount",
+            "Leading zeros"
+        ],
+        "right": [
+            "Clears lowest set bit",
+            "XOR then count 1s",
+            "Count set bits",
+            "Bits before first 1"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {2, 3, 1, 2, 4, 3};\nint n = 6, target = 7;\nint minLen = n + 1, sum = 0, left = 0;\nfor (int right = 0; right < n; right++) {\n    sum += arr[right];\n    while (sum >= target) {\n        int len = right - left + 1;\n        if (len < minLen) minLen = len;\n        sum -= arr[left++];\n    }\n}\nprintf(\"%d\", minLen);",
+        "o": [
+            "2",
+            "3",
+            "4",
+            "1"
+        ]
+    },
+    {
+        "q": "Minimum length subarray uses sliding ______ technique.",
+        "type": "fill_blank",
+        "answers": [
+            "window"
+        ],
+        "other_options": [
+            "pointer",
+            "index",
+            "counter"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 2, 3, 4, 5};\nint n = 5, queries = 3;\nint prefix[6] = {0};\nfor (int i = 0; i < n; i++) prefix[i+1] = prefix[i] + arr[i];\nint sum = prefix[4] - prefix[1];\nprintf(\"%d\", sum);",
+        "o": [
+            "9",
+            "12",
+            "10",
+            "14"
+        ]
+    },
+    {
+        "q": "Prefix sums enable O(1) range sum queries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 5, b = 10;\nint min = b ^ ((a ^ b) & -(a < b));\nprintf(\"%d\", min);",
+        "o": [
+            "5",
+            "10",
+            "0",
+            "15"
+        ]
+    },
+    {
+        "q": "Branchless min uses bitwise operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 10;\nint dp[11][3];\ndp[0][0] = dp[0][1] = dp[0][2] = 1;\nfor (int i = 1; i <= n; i++) {\n    dp[i][0] = dp[i-1][1] + dp[i-1][2];\n    dp[i][1] = dp[i-1][0] + dp[i-1][2];\n    dp[i][2] = dp[i-1][0] + dp[i-1][1];\n}\nprintf(\"%d\", dp[n][0] + dp[n][1] + dp[n][2]);",
+        "o": [
+            "3072",
+            "2048",
+            "4096",
+            "1536"
+        ]
+    },
+    {
+        "q": "State-based DP transitions between ______ states.",
+        "type": "fill_blank",
+        "answers": [
+            "defined"
+        ],
+        "other_options": [
+            "random",
+            "infinite",
+            "undefined"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 100;\nint arr[101];\nfor (int i = 2; i <= n; i++) arr[i] = 1;\nfor (int i = 2; i * i <= n; i++) {\n    if (arr[i]) {\n        for (int j = i * i; j <= n; j += i)\n            arr[j] = 0;\n    }\n}\nint sum = 0;\nfor (int i = 2; i <= n; i++) if (arr[i]) sum += i;\nprintf(\"%d\", sum);",
+        "o": [
+            "1060",
+            "1000",
+            "1100",
+            "1050"
+        ]
+    },
+    {
+        "q": "Rearrange prime sum calculation steps:",
+        "type": "rearrange",
+        "words": [
+            "sieve primes",
+            "mark composites",
+            "iterate range",
+            "sum primes"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 15;\nint result = n;\nfor (int i = 2; i * i <= n; i++) {\n    if (n % i == 0) {\n        while (n % i == 0) n /= i;\n        result -= result / i;\n    }\n}\nif (n > 1) result -= result / n;\nprintf(\"%d\", result);",
+        "o": [
+            "8",
+            "4",
+            "10",
+            "6"
+        ]
+    },
+    {
+        "q": "Euler's phi uses prime factorization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int base = 2, exp = 10, mod = 1000;\nint result = 1;\nwhile (exp > 0) {\n    if (exp & 1) result = (result * base) % mod;\n    base = (base * base) % mod;\n    exp >>= 1;\n}\nprintf(\"%d\", result);",
+        "o": [
+            "24",
+            "1024",
+            "512",
+            "256"
+        ]
+    },
+    {
+        "q": "Fast exponentiation uses ______ multiplication.",
+        "type": "fill_blank",
+        "answers": [
+            "repeated squaring"
+        ],
+        "other_options": [
+            "linear",
+            "recursive",
+            "iterative"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nint ways = 0;\nfor (int mask = 0; mask < (1 << n); mask++) {\n    int count = 0;\n    for (int i = 0; i < n; i++)\n        if (mask & (1 << i)) count++;\n    if (count == 3) ways++;\n}\nprintf(\"%d\", ways);",
+        "o": [
+            "10",
+            "5",
+            "15",
+            "20"
+        ]
+    },
+    {
+        "q": "Match the bitmask technique with its purpose:",
+        "type": "match",
+        "left": [
+            "1 << i",
+            "mask & (1 << i)",
+            "mask | (1 << i)",
+            "mask ^ (1 << i)"
+        ],
+        "right": [
+            "Create bit i",
+            "Check bit i",
+            "Set bit i",
+            "Toggle bit i"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 7;\nint mask = (1 << n) - 1;\nint comp = ~n & mask;\nprintf(\"%d\", comp);",
+        "o": [
+            "120",
+            "248",
+            "127",
+            "128"
+        ]
+    },
+    {
+        "q": "Complement within range uses mask of all 1s.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5, k = 3;\nint perm = 1;\nfor (int i = 0; i < k; i++) perm *= (n - i);\nprintf(\"%d\", perm);",
+        "o": [
+            "60",
+            "120",
+            "20",
+            "10"
+        ]
+    },
+    {
+        "q": "P(n,k) = n! / (n-k)! counts ______.",
+        "type": "fill_blank",
+        "answers": [
+            "permutations"
+        ],
+        "other_options": [
+            "combinations",
+            "subsets",
+            "partitions"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 123;\nint mirror = 0;\nint temp = n;\nwhile (temp > 0) {\n    mirror = mirror * 10 + temp % 10;\n    temp /= 10;\n}\nprintf(\"%d\", n + mirror);",
+        "o": [
+            "444",
+            "321",
+            "246",
+            "123"
+        ]
+    },
+    {
+        "q": "Summing a number with its reverse creates interesting patterns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {-1, 2, 3, -4, 5};\nint n = 5;\nint negCount = 0, zeroCount = 0, posCount = 0;\nfor (int i = 0; i < n; i++) {\n    if (arr[i] < 0) negCount++;\n    else if (arr[i] == 0) zeroCount++;\n    else posCount++;\n}\nprintf(\"%d %d %d\", negCount, zeroCount, posCount);",
+        "o": [
+            "2 0 3",
+            "1 0 4",
+            "3 0 2",
+            "2 1 2"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nint minSum = 0, maxSum = 0;\nint arr[] = {1, 2, 3, 4, 5};\nfor (int i = 0; i < 4; i++) minSum += arr[i];\nfor (int i = 1; i < 5; i++) maxSum += arr[i];\nprintf(\"%d %d\", minSum, maxSum);",
+        "o": [
+            "10 14",
+            "10 15",
+            "6 14",
+            "14 10"
+        ]
+    },
+    {
+        "q": "Rearrange steps for min-max sum of 4 elements:",
+        "type": "rearrange",
+        "words": [
+            "sort array",
+            "sum first 4",
+            "sum last 4",
+            "output both"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 2, 0, 0, 3, 0, 4};\nint n = 7;\nint insertPos = 0;\nfor (int i = 0; i < n; i++) {\n    if (arr[i] != 0) {\n        arr[insertPos++] = arr[i];\n    }\n}\nwhile (insertPos < n) arr[insertPos++] = 0;\nprintf(\"%d %d %d\", arr[3], arr[4], arr[5]);",
+        "o": [
+            "0 0 0",
+            "3 0 4",
+            "0 3 0",
+            "4 0 0"
+        ]
+    },
+    {
+        "q": "Moving zeros to end preserves relative order of non-zeros.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 10;\nint MOD = 1000000007;\nlong long dp[11];\ndp[0] = 1; dp[1] = 1;\nfor (int i = 2; i <= n; i++)\n    dp[i] = (dp[i-1] + dp[i-2]) % MOD;\nprintf(\"%lld\", dp[n]);",
+        "o": [
+            "89",
+            "55",
+            "144",
+            "34"
+        ]
+    },
+    {
+        "q": "Modular arithmetic prevents integer overflow in DP.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 17, m = 5;\nint result = ((a % m) + m) % m;\nprintf(\"%d\", result);",
+        "o": [
+            "2",
+            "17",
+            "-3",
+            "3"
+        ]
+    },
+    {
+        "q": "Double modulo handles negative numbers in modular arithmetic.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 10;\nlong long prev = 0, curr = 1;\nfor (int i = 2; i <= n; i++) {\n    long long temp = curr;\n    curr = prev + curr;\n    prev = temp;\n}\nprintf(\"%lld\", curr);",
+        "o": [
+            "55",
+            "89",
+            "34",
+            "144"
+        ]
+    },
+    {
+        "q": "Space-optimized Fibonacci uses only ______ variables.",
+        "type": "fill_blank",
+        "answers": [
+            "two"
+        ],
+        "other_options": [
+            "one",
+            "three",
+            "n"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {5, 1, 9, 3, 7};\nint n = 5;\nfor (int i = 0; i < n - 1; i++) {\n    for (int j = 0; j < n - i - 1; j++) {\n        if (arr[j] > arr[j+1]) {\n            arr[j] ^= arr[j+1];\n            arr[j+1] ^= arr[j];\n            arr[j] ^= arr[j+1];\n        }\n    }\n}\nprintf(\"%d\", arr[2]);",
+        "o": [
+            "5",
+            "3",
+            "7",
+            "9"
+        ]
+    },
+    {
+        "q": "XOR swap avoids using temporary variables.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 256;\nint highBit = 0;\nwhile (n >>= 1) highBit++;\nprintf(\"%d\", highBit);",
+        "o": [
+            "8",
+            "7",
+            "256",
+            "9"
+        ]
+    },
+    {
+        "q": "Position of highest set bit indicates ______ base 2.",
+        "type": "fill_blank",
+        "answers": [
+            "floor log"
+        ],
+        "other_options": [
+            "ceiling log",
+            "square root",
+            "power"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 29;\nint n = (x | (x - 1)) + 1;\nint result = n >> 1;\nprintf(\"%d\", result);",
+        "o": [
+            "16",
+            "32",
+            "8",
+            "29"
+        ]
+    },
+    {
+        "q": "Match the bit manipulation with its result for n=12:",
+        "type": "match",
+        "left": [
+            "n & -n",
+            "n | (n+1)",
+            "n ^ (n-1)",
+            "n & (n-1)"
+        ],
+        "right": [
+            "4 (lowest set)",
+            "13",
+            "7",
+            "8"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nint subsets = 0;\nfor (int mask = 0; mask < (1 << n); mask++) {\n    for (int sub = mask; sub > 0; sub = (sub - 1) & mask)\n        subsets++;\n    subsets++;\n}\nprintf(\"%d\", subsets);",
+        "o": [
+            "243",
+            "32",
+            "1024",
+            "120"
+        ]
+    },
+    {
+        "q": "Iterating submasks uses the formula sub = (sub-1) & mask.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 6;\nint count = 0;\nfor (int i = 0; i < (1 << n); i++) {\n    if ((i & (i >> 1)) == 0) count++;\n}\nprintf(\"%d\", count);",
+        "o": [
+            "21",
+            "32",
+            "18",
+            "64"
+        ]
+    },
+    {
+        "q": "No consecutive 1s check uses i & (i >> 1) == 0.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a[4][4] = {{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};\nint n = 4, sum = 0;\nfor (int layer = 0; layer < n/2; layer++) {\n    for (int i = layer; i < n - layer; i++) {\n        sum += a[layer][i] + a[n-1-layer][i];\n        if (i > layer && i < n - 1 - layer) {\n            sum += a[i][layer] + a[i][n-1-layer];\n        }\n    }\n}\nprintf(\"%d\", sum);",
+        "o": [
+            "136",
+            "256",
+            "168",
+            "120"
+        ]
+    },
+    {
+        "q": "Layer-by-layer traversal processes matrix in ______.",
+        "type": "fill_blank",
+        "answers": [
+            "rings"
+        ],
+        "other_options": [
+            "rows",
+            "columns",
+            "diagonals"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 4;\nint a[4][4] = {{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};\nfor (int i = 0; i < n; i++) {\n    for (int j = i; j < n; j++) {\n        int t = a[i][j]; a[i][j] = a[j][i]; a[j][i] = t;\n    }\n}\nfor (int i = 0; i < n; i++) {\n    for (int j = 0; j < n/2; j++) {\n        int t = a[i][j]; a[i][j] = a[i][n-1-j]; a[i][n-1-j] = t;\n    }\n}\nprintf(\"%d %d\", a[0][0], a[3][3]);",
+        "o": [
+            "4 13",
+            "1 16",
+            "13 4",
+            "16 1"
+        ]
+    },
+    {
+        "q": "Rearrange 90-degree clockwise rotation steps:",
+        "type": "rearrange",
+        "words": [
+            "transpose matrix",
+            "reverse rows",
+            "result rotated",
+            "in-place"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 7;\nint dp[8][8];\nfor (int i = 0; i <= n; i++) {\n    dp[i][0] = 1;\n    for (int j = 1; j <= i; j++)\n        dp[i][j] = dp[i-1][j-1] + dp[i-1][j];\n    for (int j = i + 1; j <= n; j++)\n        dp[i][j] = 0;\n}\nprintf(\"%d\", dp[n][3]);",
+        "o": [
+            "35",
+            "21",
+            "70",
+            "15"
+        ]
+    },
+    {
+        "q": "Pascal's triangle entry C(n,k) is at row n, column k.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 1000000;\nint MOD = 1000000007;\nlong long a = 0, b = 1;\nfor (int i = 2; i <= 50; i++) {\n    long long c = (a + b) % MOD;\n    a = b;\n    b = c;\n}\nprintf(\"%lld\", b);",
+        "o": [
+            "12586269025",
+            "20365011074",
+            "1548008755920",
+            "354224848179"
+        ]
+    },
+    {
+        "q": "Large Fibonacci needs modular arithmetic to avoid overflow.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int base = 3, exp = 7, mod = 11;\nint result = 1;\nbase %= mod;\nwhile (exp > 0) {\n    if (exp % 2 == 1) result = (result * base) % mod;\n    exp /= 2;\n    base = (base * base) % mod;\n}\nprintf(\"%d\", result);",
+        "o": [
+            "9",
+            "2187",
+            "3",
+            "5"
+        ]
+    },
+    {
+        "q": "Fast power computes a^b mod m in O(log b) time.",
+        "type": "fill_blank",
+        "answers": [
+            "log b"
+        ],
+        "other_options": [
+            "b",
+            "a",
+            "a*b"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 10, MOD = 1000000007;\nlong long fact[11];\nfact[0] = 1;\nfor (int i = 1; i <= n; i++)\n    fact[i] = (fact[i-1] * i) % MOD;\nprintf(\"%lld\", fact[n]);",
+        "o": [
+            "3628800",
+            "362880",
+            "40320",
+            "5040"
+        ]
+    },
+    {
+        "q": "Match the factorial property with its formula:",
+        "type": "match",
+        "left": [
+            "n!",
+            "n!/k!",
+            "n!/(k!(n-k)!)",
+            "(n-1)!"
+        ],
+        "right": [
+            "Product 1 to n",
+            "P(n,k)",
+            "C(n,k)",
+            "Derangements related"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {3, 4, 5, 1, 2};\nint n = 5;\nint low = 0, high = n - 1;\nwhile (low < high) {\n    int mid = (low + high) / 2;\n    if (arr[mid] > arr[high]) low = mid + 1;\n    else high = mid;\n}\nprintf(\"%d\", arr[low]);",
+        "o": [
+            "1",
+            "2",
+            "3",
+            "5"
+        ]
+    },
+    {
+        "q": "Finding minimum in rotated sorted array uses binary search.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {4, 5, 6, 7, 0, 1, 2};\nint n = 7, target = 0;\nint low = 0, high = n - 1;\nwhile (low <= high) {\n    int mid = (low + high) / 2;\n    if (arr[mid] == target) { printf(\"%d\", mid); break; }\n    if (arr[low] <= arr[mid]) {\n        if (target >= arr[low] && target < arr[mid]) high = mid - 1;\n        else low = mid + 1;\n    } else {\n        if (target > arr[mid] && target <= arr[high]) low = mid + 1;\n        else high = mid - 1;\n    }\n}",
+        "o": [
+            "4",
+            "0",
+            "3",
+            "6"
+        ]
+    },
+    {
+        "q": "Rotated array search requires checking which half is ______.",
+        "type": "fill_blank",
+        "answers": [
+            "sorted"
+        ],
+        "other_options": [
+            "rotated",
+            "larger",
+            "smaller"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 2, 3, 4, 5};\nint n = 5, k = 3;\nint gcd = n, temp_k = k;\nwhile (temp_k != 0) {\n    int t = temp_k;\n    temp_k = gcd % temp_k;\n    gcd = t;\n}\nint cycles = gcd;\nprintf(\"%d\", cycles);",
+        "o": [
+            "1",
+            "3",
+            "5",
+            "2"
+        ]
+    },
+    {
+        "q": "Array rotation by k uses gcd(n,k) cycles.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5, k = 2;\nint arr[] = {1, 2, 3, 4, 5};\nfor (int i = 0; i < n / 2; i++) {\n    int t = arr[i]; arr[i] = arr[n-1-i]; arr[n-1-i] = t;\n}\nfor (int i = 0; i < k / 2; i++) {\n    int t = arr[i]; arr[i] = arr[k-1-i]; arr[k-1-i] = t;\n}\nfor (int i = k; i < (n + k) / 2; i++) {\n    int t = arr[i]; arr[i] = arr[n-1-(i-k)]; arr[n-1-(i-k)] = t;\n}\nprintf(\"%d %d %d\", arr[0], arr[2], arr[4]);",
+        "o": [
+            "4 1 3",
+            "3 5 2",
+            "1 3 5",
+            "5 2 4"
+        ]
+    },
+    {
+        "q": "Rearrange reversal-based rotation steps:",
+        "type": "rearrange",
+        "words": [
+            "reverse all",
+            "reverse first k",
+            "reverse rest",
+            "done"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char s[] = \"abcabcbb\";\nint n = 8;\nint charIdx[256];\nfor (int i = 0; i < 256; i++) charIdx[i] = -1;\nint maxLen = 0, start = 0;\nfor (int end = 0; end < n; end++) {\n    if (charIdx[(int)s[end]] >= start)\n        start = charIdx[(int)s[end]] + 1;\n    charIdx[(int)s[end]] = end;\n    if (end - start + 1 > maxLen) maxLen = end - start + 1;\n}\nprintf(\"%d\", maxLen);",
+        "o": [
+            "3",
+            "4",
+            "2",
+            "8"
+        ]
+    },
+    {
+        "q": "Longest substring without repeating uses sliding window.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 4;\nint count = 0;\nfor (int i = 0; i < n; i++)\n    for (int j = i; j < n; j++)\n        for (int k = j; k < n; k++)\n            count++;\nprintf(\"%d\", count);",
+        "o": [
+            "20",
+            "64",
+            "10",
+            "35"
+        ]
+    },
+    {
+        "q": "Triple nested loops with i <= j <= k count ______ combinations.",
+        "type": "fill_blank",
+        "answers": [
+            "non-decreasing"
+        ],
+        "other_options": [
+            "all",
+            "increasing",
+            "decreasing"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 8;\nint ways = 0;\nfor (int i = 1; i <= n/2; i++) {\n    if (n % i == 0) ways++;\n}\nprintf(\"%d\", ways);",
+        "o": [
+            "3",
+            "4",
+            "2",
+            "8"
+        ]
+    },
+    {
+        "q": "Divisors up to n/2 exclude n itself.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 4;\nlong long bell[5][5] = {0};\nbell[0][0] = 1;\nfor (int i = 1; i <= n; i++) {\n    bell[i][0] = bell[i-1][i-1];\n    for (int j = 1; j <= i; j++)\n        bell[i][j] = bell[i-1][j-1] + bell[i][j-1];\n}\nprintf(\"%lld\", bell[n][0]);",
+        "o": [
+            "15",
+            "5",
+            "52",
+            "14"
+        ]
+    },
+    {
+        "q": "Match the number sequence with its count:",
+        "type": "match",
+        "left": [
+            "Bell numbers",
+            "Catalan numbers",
+            "Fibonacci",
+            "Factorials"
+        ],
+        "right": [
+            "Set partitions",
+            "Valid parentheses",
+            "Staircase ways",
+            "Permutations"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nint stirling[6][6] = {0};\nstirling[0][0] = 1;\nfor (int i = 1; i <= n; i++) {\n    for (int j = 1; j <= i; j++) {\n        stirling[i][j] = j * stirling[i-1][j] + stirling[i-1][j-1];\n    }\n}\nprintf(\"%d\", stirling[n][3]);",
+        "o": [
+            "25",
+            "15",
+            "10",
+            "35"
+        ]
+    },
+    {
+        "q": "Stirling numbers of second kind partition n into k non-empty subsets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 4;\nint derangements[5];\nderangements[0] = 1;\nderangements[1] = 0;\nfor (int i = 2; i <= n; i++)\n    derangements[i] = (i - 1) * (derangements[i-1] + derangements[i-2]);\nprintf(\"%d\", derangements[n]);",
+        "o": [
+            "9",
+            "6",
+            "2",
+            "14"
+        ]
+    },
+    {
+        "q": "A derangement has no element in its original position.",
+        "type": "fill_blank",
+        "answers": [
+            "no"
+        ],
+        "other_options": [
+            "one",
+            "all",
+            "some"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int MOD = 1000000007;\nlong long modpow(long long b, long long e, long long m) {\n    long long r = 1;\n    b %= m;\n    while (e > 0) {\n        if (e & 1) r = r * b % m;\n        b = b * b % m;\n        e >>= 1;\n    }\n    return r;\n}\nprintf(\"%lld\", modpow(2, 10, MOD));",
+        "o": [
+            "1024",
+            "2048",
+            "512",
+            "4096"
+        ]
+    },
+    {
+        "q": "Modular inverse uses Fermat's little theorem when m is prime.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 2, 3, 1, 2, 1};\nint n = 6;\nint count[4] = {0};\nfor (int i = 0; i < n; i++) count[arr[i]]++;\nint majority = -1;\nfor (int i = 1; i <= 3; i++)\n    if (count[i] > n / 2) majority = i;\nprintf(\"%d\", majority);",
+        "o": [
+            "1",
+            "2",
+            "3",
+            "-1"
+        ]
+    },
+    {
+        "q": "Majority element appears more than n/2 times.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 1, 2};\nint n = 3;\nint result = 0;\nfor (int i = 0; i < n; i++) {\n    result ^= arr[i];\n}\nprintf(\"%d\", result);",
+        "o": [
+            "2",
+            "0",
+            "1",
+            "3"
+        ]
+    },
+    {
+        "q": "XOR of array finds element appearing odd number of times.",
+        "type": "fill_blank",
+        "answers": [
+            "odd"
+        ],
+        "other_options": [
+            "even",
+            "once",
+            "twice"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 8;\nint gray = n ^ (n >> 1);\nprintf(\"%d\", gray);",
+        "o": [
+            "12",
+            "8",
+            "4",
+            "15"
+        ]
+    },
+    {
+        "q": "Match the code transformation with its result:",
+        "type": "match",
+        "left": [
+            "n ^ (n >> 1)",
+            "(gray ^ (gray >> 1))",
+            "n & -n",
+            "n | (n - 1)"
+        ],
+        "right": [
+            "Binary to Gray",
+            "Gray to Binary start",
+            "Lowest set bit",
+            "Set trailing zeros"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nint partition[6][6] = {0};\nfor (int i = 0; i <= n; i++) partition[0][i] = 1;\nfor (int i = 1; i <= n; i++) {\n    for (int j = 1; j <= n; j++) {\n        if (j > i) partition[i][j] = partition[i][i];\n        else partition[i][j] = partition[i-j][j] + partition[i][j-1];\n    }\n}\nprintf(\"%d\", partition[n][n]);",
+        "o": [
+            "7",
+            "5",
+            "11",
+            "15"
+        ]
+    },
+    {
+        "q": "Integer partitions count ways to write n as sum of positive integers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 6;\nint dp[7] = {0};\ndp[0] = 1;\nint coins[] = {1, 2, 3};\nfor (int c = 0; c < 3; c++) {\n    for (int i = coins[c]; i <= n; i++) {\n        dp[i] += dp[i - coins[c]];\n    }\n}\nprintf(\"%d\", dp[n]);",
+        "o": [
+            "7",
+            "24",
+            "9",
+            "6"
+        ]
+    },
+    {
+        "q": "Coin change for number of ways iterates coins then amounts.",
+        "type": "fill_blank",
+        "answers": [
+            "coins"
+        ],
+        "other_options": [
+            "amounts",
+            "both",
+            "neither"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int weights[] = {1, 2, 3};\nint values[] = {6, 10, 12};\nint W = 5;\nint dp[4][6] = {0};\nfor (int i = 1; i <= 3; i++) {\n    for (int w = 0; w <= W; w++) {\n        if (weights[i-1] <= w)\n            dp[i][w] = (dp[i-1][w] > values[i-1] + dp[i-1][w-weights[i-1]]) ? dp[i-1][w] : values[i-1] + dp[i-1][w-weights[i-1]];\n        else\n            dp[i][w] = dp[i-1][w];\n    }\n}\nprintf(\"%d\", dp[3][W]);",
+        "o": [
+            "22",
+            "18",
+            "28",
+            "16"
+        ]
+    },
+    {
+        "q": "Rearrange 0/1 knapsack DP steps:",
+        "type": "rearrange",
+        "words": [
+            "iterate items",
+            "iterate weights",
+            "include or exclude",
+            "take maximum"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char s1[] = \"sunday\";\nchar s2[] = \"saturday\";\nint m = 6, n = 8;\nint dp[7][9];\nfor (int i = 0; i <= m; i++) dp[i][0] = i;\nfor (int j = 0; j <= n; j++) dp[0][j] = j;\nfor (int i = 1; i <= m; i++) {\n    for (int j = 1; j <= n; j++) {\n        if (s1[i-1] == s2[j-1]) dp[i][j] = dp[i-1][j-1];\n        else dp[i][j] = 1 + ((dp[i-1][j] < dp[i][j-1]) ? ((dp[i-1][j] < dp[i-1][j-1]) ? dp[i-1][j] : dp[i-1][j-1]) : ((dp[i][j-1] < dp[i-1][j-1]) ? dp[i][j-1] : dp[i-1][j-1]));\n    }\n}\nprintf(\"%d\", dp[m][n]);",
+        "o": [
+            "3",
+            "4",
+            "2",
+            "5"
+        ]
+    },
+    {
+        "q": "Edit distance counts minimum operations to transform one string to another.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 5, 11, 5};\nint n = 4, sum = 0;\nfor (int i = 0; i < n; i++) sum += arr[i];\nif (sum % 2 != 0) { printf(\"0\"); }\nelse {\n    int target = sum / 2;\n    int dp[12] = {0};\n    dp[0] = 1;\n    for (int i = 0; i < n; i++)\n        for (int j = target; j >= arr[i]; j--)\n            dp[j] = dp[j] || dp[j - arr[i]];\n    printf(\"%d\", dp[target]);\n}",
+        "o": [
+            "1",
+            "0",
+            "11",
+            "22"
+        ]
+    },
+    {
+        "q": "Subset sum problem is solved using ______ programming.",
+        "type": "fill_blank",
+        "answers": [
+            "dynamic"
+        ],
+        "other_options": [
+            "linear",
+            "greedy",
+            "recursive"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int prices[] = {7, 1, 5, 3, 6, 4};\nint n = 6;\nint minPrice = prices[0], maxProfit = 0;\nfor (int i = 1; i < n; i++) {\n    if (prices[i] < minPrice) minPrice = prices[i];\n    else if (prices[i] - minPrice > maxProfit)\n        maxProfit = prices[i] - minPrice;\n}\nprintf(\"%d\", maxProfit);",
+        "o": [
+            "5",
+            "6",
+            "4",
+            "7"
+        ]
+    },
+    {
+        "q": "Best time to buy and sell stock uses single pass.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1};\nint n = 12;\nint leftMax[12], rightMax[12];\nleftMax[0] = arr[0];\nfor (int i = 1; i < n; i++)\n    leftMax[i] = (leftMax[i-1] > arr[i]) ? leftMax[i-1] : arr[i];\nrightMax[n-1] = arr[n-1];\nfor (int i = n-2; i >= 0; i--)\n    rightMax[i] = (rightMax[i+1] > arr[i]) ? rightMax[i+1] : arr[i];\nint water = 0;\nfor (int i = 0; i < n; i++) {\n    int minHeight = (leftMax[i] < rightMax[i]) ? leftMax[i] : rightMax[i];\n    water += minHeight - arr[i];\n}\nprintf(\"%d\", water);",
+        "o": [
+            "6",
+            "8",
+            "5",
+            "10"
+        ]
+    },
+    {
+        "q": "Match the problem with its optimal approach:",
+        "type": "match",
+        "left": [
+            "Trapping rain water",
+            "Max subarray",
+            "Stock profit",
+            "Longest increasing"
+        ],
+        "right": [
+            "Two arrays method",
+            "Kadane's algorithm",
+            "Track minimum",
+            "DP or binary search"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 3;\nint dp[4][4];\nfor (int i = 0; i < 4; i++) dp[0][i] = dp[i][0] = 1;\nfor (int i = 1; i <= n; i++)\n    for (int j = 1; j <= n; j++)\n        dp[i][j] = dp[i-1][j] + dp[i][j-1];\nprintf(\"%d\", dp[n][n]);",
+        "o": [
+            "20",
+            "6",
+            "10",
+            "35"
+        ]
+    },
+    {
+        "q": "Grid paths from (0,0) to (n,n) is C(2n, n).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {3, 10, 2, 1, 20};\nint n = 5;\nint diff[4];\nfor (int i = 0; i < n - 1; i++)\n    diff[i] = arr[i+1] - arr[i];\nint maxDiff = diff[0];\nfor (int i = 1; i < n - 1; i++)\n    if (diff[i] > maxDiff) maxDiff = diff[i];\nprintf(\"%d\", maxDiff);",
+        "o": [
+            "19",
+            "7",
+            "18",
+            "20"
+        ]
+    },
+    {
+        "q": "Difference array stores arr[i+1] - arr[i].",
+        "type": "fill_blank",
+        "answers": [
+            "differences"
+        ],
+        "other_options": [
+            "sums",
+            "products",
+            "averages"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nint prev[6] = {0}, curr[6] = {0};\nprev[0] = 1;\nfor (int i = 1; i <= n; i++) {\n    curr[0] = 1;\n    for (int j = 1; j <= n; j++)\n        curr[j] = prev[j] + curr[j-1];\n    for (int j = 0; j <= n; j++) prev[j] = curr[j];\n}\nprintf(\"%d\", prev[n]);",
+        "o": [
+            "252",
+            "126",
+            "70",
+            "210"
+        ]
+    },
+    {
+        "q": "Space-optimized grid DP uses two rows instead of full matrix.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 10;\nint steps = 0;\nwhile (n != 1) {\n    if (n % 2 == 0) n /= 2;\n    else n--;\n    steps++;\n}\nprintf(\"%d\", steps);",
+        "o": [
+            "5",
+            "4",
+            "6",
+            "10"
+        ]
+    },
+    {
+        "q": "Greedy approach chooses locally optimal at each step.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {100, 180, 260, 310, 40, 535, 695};\nint n = 7;\nint profit = 0;\nfor (int i = 1; i < n; i++) {\n    if (arr[i] > arr[i-1])\n        profit += arr[i] - arr[i-1];\n}\nprintf(\"%d\", profit);",
+        "o": [
+            "865",
+            "655",
+            "595",
+            "495"
+        ]
+    },
+    {
+        "q": "Rearrange stock profit with multiple transactions:",
+        "type": "rearrange",
+        "words": [
+            "check increase",
+            "add difference",
+            "move next",
+            "sum total"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 4;\nint arr[4][4] = {{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16}};\nint sum = 0;\nfor (int i = 0; i < n; i++)\n    for (int j = 0; j < n; j++)\n        if (i <= j) sum += arr[i][j];\nprintf(\"%d\", sum);",
+        "o": [
+            "100",
+            "136",
+            "120",
+            "68"
+        ]
+    },
+    {
+        "q": "Upper triangular includes diagonal and above.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 1000;\nint count = 0;\nfor (int a = 1; a < n; a++) {\n    for (int b = a; b < n; b++) {\n        int c = n - a - b;\n        if (c >= b && a*a + b*b == c*c) {\n            count++;\n        }\n    }\n}\nprintf(\"%d\", count);",
+        "o": [
+            "1",
+            "0",
+            "2",
+            "3"
+        ]
+    },
+    {
+        "q": "Pythagorean triplets satisfy a^2 + b^2 = c^2.",
+        "type": "fill_blank",
+        "answers": [
+            "c^2"
+        ],
+        "other_options": [
+            "a^2",
+            "b^2",
+            "a*b"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int MOD = 1000000007;\nint n = 20;\nlong long dp[21];\ndp[0] = dp[1] = 1;\nfor (int i = 2; i <= n; i++)\n    dp[i] = (dp[i-1] + dp[i-2]) % MOD;\nprintf(\"%lld\", dp[n]);",
+        "o": [
+            "10946",
+            "6765",
+            "17711",
+            "4181"
+        ]
+    },
+    {
+        "q": "Fibonacci f(20) is ______.",
+        "type": "fill_blank",
+        "answers": [
+            "10946"
+        ],
+        "other_options": [
+            "6765",
+            "4181",
+            "17711"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 10;\nint isPrime[11];\nfor (int i = 0; i <= n; i++) isPrime[i] = 1;\nisPrime[0] = isPrime[1] = 0;\nfor (int i = 2; i * i <= n; i++) {\n    if (isPrime[i]) {\n        for (int j = i * i; j <= n; j += i)\n            isPrime[j] = 0;\n    }\n}\nint twinCount = 0;\nfor (int i = 2; i <= n - 2; i++)\n    if (isPrime[i] && isPrime[i + 2]) twinCount++;\nprintf(\"%d\", twinCount);",
+        "o": [
+            "2",
+            "3",
+            "1",
+            "4"
+        ]
+    },
+    {
+        "q": "Twin primes differ by exactly 2.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 100;\nint goldbach = 0;\nint sieve[101];\nfor (int i = 0; i <= n; i++) sieve[i] = 1;\nsieve[0] = sieve[1] = 0;\nfor (int i = 2; i * i <= n; i++)\n    if (sieve[i])\n        for (int j = i*i; j <= n; j += i) sieve[j] = 0;\nfor (int i = 2; i <= n/2; i++)\n    if (sieve[i] && sieve[n - i]) { goldbach = 1; break; }\nprintf(\"%d\", goldbach);",
+        "o": [
+            "1",
+            "0",
+            "100",
+            "50"
+        ]
+    },
+    {
+        "q": "Match the conjecture with its statement:",
+        "type": "match",
+        "left": [
+            "Goldbach",
+            "Collatz",
+            "Twin prime",
+            "Fermat's last"
+        ],
+        "right": [
+            "Even = 2 primes",
+            "3n+1 reaches 1",
+            "Infinite pairs",
+            "No integer solution"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 36, b = 60, c = 48;\nint temp = b;\nwhile (temp != 0) {\n    int t = temp;\n    temp = a % temp;\n    a = t;\n}\nint gcd_ab = a;\na = gcd_ab;\ntemp = c;\nwhile (temp != 0) {\n    int t = temp;\n    temp = a % temp;\n    a = t;\n}\nprintf(\"%d\", a);",
+        "o": [
+            "12",
+            "6",
+            "24",
+            "4"
+        ]
+    },
+    {
+        "q": "GCD of three numbers uses GCD(GCD(a,b), c).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 100;\nint abundance = 0;\nfor (int i = 12; i <= n; i++) {\n    int sum = 0;\n    for (int j = 1; j < i; j++)\n        if (i % j == 0) sum += j;\n    if (sum > i) abundance++;\n}\nprintf(\"%d\", abundance);",
+        "o": [
+            "21",
+            "25",
+            "18",
+            "30"
+        ]
+    },
+    {
+        "q": "An abundant number has divisor sum ______ the number.",
+        "type": "fill_blank",
+        "answers": [
+            "greater than"
+        ],
+        "other_options": [
+            "equal to",
+            "less than",
+            "double"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "long long n = 123456789;\nint digits = 0;\nwhile (n > 0) {\n    digits++;\n    n /= 10;\n}\nprintf(\"%d\", digits);",
+        "o": [
+            "9",
+            "8",
+            "10",
+            "123456789"
+        ]
+    },
+    {
+        "q": "Counting digits uses repeated division by 10.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = -5;\nint abs_x = (x ^ (x >> 31)) - (x >> 31);\nprintf(\"%d\", abs_x);",
+        "o": [
+            "5",
+            "-5",
+            "0",
+            "4"
+        ]
+    },
+    {
+        "q": "Branchless absolute value uses arithmetic right shift.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 10;\nif (x >= 10) printf(\"A\");\nif (x > 10) printf(\"B\");\nif (x == 10) printf(\"C\");",
+        "o": [
+            "AC",
+            "ABC",
+            "A",
+            "C"
+        ]
+    },
+    {
+        "q": "Multiple if statements execute independently of each other.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int count = 0;\nfor (int i = 1; i <= 10; i++)\n    if (i % 2 == 0) count++;\nprintf(\"%d\", count);",
+        "o": [
+            "5",
+            "10",
+            "4",
+            "6"
+        ]
+    },
+    {
+        "q": "Match loop with its typical use:",
+        "type": "match",
+        "left": [
+            "for loop",
+            "while loop",
+            "do-while",
+            "nested loop"
+        ],
+        "right": [
+            "Known iterations",
+            "Unknown iterations",
+            "At least once",
+            "2D traversal"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int sum = 0;\nfor (int i = 1; i <= 5; i += 2) sum += i;\nprintf(\"%d\", sum);",
+        "o": [
+            "9",
+            "15",
+            "6",
+            "10"
+        ]
+    },
+    {
+        "q": "Loop increment can be any ______ value.",
+        "type": "fill_blank",
+        "answers": [
+            "integer"
+        ],
+        "other_options": [
+            "positive",
+            "negative",
+            "float"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "for (int i = 10; i > 0; i -= 3)\n    printf(\"%d \", i);",
+        "o": [
+            "10 7 4 1",
+            "10 7 4",
+            "10 8 6 4 2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Descending loop uses decrement in loop update.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5;\nwhile (x-- > 0) printf(\"%d \", x);",
+        "o": [
+            "4 3 2 1 0",
+            "5 4 3 2 1",
+            "4 3 2 1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange post-decrement loop:",
+        "type": "rearrange",
+        "words": [
+            "test current value",
+            "decrement variable",
+            "execute body",
+            "repeat until false"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 3;\nwhile (n > 0) {\n    printf(\"%d \", n);\n    n--;\n}",
+        "o": [
+            "3 2 1",
+            "3 2 1 0",
+            "2 1 0",
+            "Error"
+        ]
+    },
+    {
+        "q": "While loop checks condition ______ executing body.",
+        "type": "fill_blank",
+        "answers": [
+            "before"
+        ],
+        "other_options": [
+            "after",
+            "during",
+            "without"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 0;\ndo {\n    printf(\"%d \", n);\n    n++;\n} while (n < 3);",
+        "o": [
+            "0 1 2",
+            "1 2 3",
+            "0 1 2 3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Do-while always executes at least once.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i = 0;\nwhile (i < 5) {\n    if (i == 3) break;\n    printf(\"%d \", i++);\n}",
+        "o": [
+            "0 1 2",
+            "0 1 2 3",
+            "0 1 2 3 4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match control statement with its effect:",
+        "type": "match",
+        "left": [
+            "break",
+            "continue",
+            "return",
+            "goto"
+        ],
+        "right": [
+            "Exit loop",
+            "Skip iteration",
+            "Exit function",
+            "Jump to label"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "for (int i = 0; i < 5; i++) {\n    if (i == 2) continue;\n    printf(\"%d \", i);\n}",
+        "o": [
+            "0 1 3 4",
+            "0 1 2 3 4",
+            "0 1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Continue skips rest of current ______.",
+        "type": "fill_blank",
+        "answers": [
+            "iteration"
+        ],
+        "other_options": [
+            "loop",
+            "function",
+            "block"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int day = 3;\nswitch (day) {\n    case 1: printf(\"Mon\"); break;\n    case 2: printf(\"Tue\"); break;\n    case 3: printf(\"Wed\"); break;\n    default: printf(\"Other\");\n}",
+        "o": [
+            "Wed",
+            "Mon",
+            "Other",
+            "Error"
+        ]
+    },
+    {
+        "q": "Switch statement uses exact value matching.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 2;\nswitch (x) {\n    case 1:\n    case 2:\n    case 3: printf(\"Low\"); break;\n    default: printf(\"High\");\n}",
+        "o": [
+            "Low",
+            "High",
+            "LowHigh",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange switch fall-through:",
+        "type": "rearrange",
+        "words": [
+            "match case",
+            "execute statements",
+            "fall to next case",
+            "until break"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5;\nswitch (x) {\n    case 5: printf(\"A\");\n    case 6: printf(\"B\");\n    default: printf(\"C\");\n}",
+        "o": [
+            "ABC",
+            "A",
+            "AB",
+            "Error"
+        ]
+    },
+    {
+        "q": "Missing break causes ______ through.",
+        "type": "fill_blank",
+        "answers": [
+            "fall"
+        ],
+        "other_options": [
+            "pass",
+            "jump",
+            "skip"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "for (int i = 0; i < 3; i++)\n    for (int j = 0; j < 2; j++)\n        printf(\"%d%d \", i, j);",
+        "o": [
+            "00 01 10 11 20 21",
+            "00 10 20 01 11 21",
+            "01 02 11 12 21 22",
+            "Error"
+        ]
+    },
+    {
+        "q": "Inner loop completes fully for each outer iteration.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int count = 0;\nfor (int i = 0; i < 4; i++)\n    for (int j = 0; j < 3; j++)\n        count++;\nprintf(\"%d\", count);",
+        "o": [
+            "12",
+            "7",
+            "4",
+            "3"
+        ]
+    },
+    {
+        "q": "Match nested loop count with formula:",
+        "type": "match",
+        "left": [
+            "m * n",
+            "m + n",
+            "m - n",
+            "m / n"
+        ],
+        "right": [
+            "Total iterations",
+            "Sum of bounds",
+            "Difference",
+            "Ratio"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int found = 0;\nfor (int i = 0; i < 3 && !found; i++)\n    for (int j = 0; j < 3 && !found; j++)\n        if (i == 1 && j == 2) found = 1;\nprintf(\"%d\", found);",
+        "o": [
+            "1",
+            "0",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Flag variable can control multiple loop ______.",
+        "type": "fill_blank",
+        "answers": [
+            "exits"
+        ],
+        "other_options": [
+            "entries",
+            "iterations",
+            "scopes"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 10;\nprintf(\"%s\", x > 5 ? \"Big\" : \"Small\");",
+        "o": [
+            "Big",
+            "Small",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Ternary operator is a shorthand for if-else.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 5, b = 3;\nint max = (a > b) ? a : b;\nprintf(\"%d\", max);",
+        "o": [
+            "5",
+            "3",
+            "8",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange ternary evaluation:",
+        "type": "rearrange",
+        "words": [
+            "evaluate condition",
+            "if true first value",
+            "if false second value",
+            "return result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 0;\nprintf(\"%s\", !x ? \"Zero\" : \"Non-zero\");",
+        "o": [
+            "Zero",
+            "Non-zero",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Zero is ______ in C boolean context.",
+        "type": "fill_blank",
+        "answers": [
+            "false"
+        ],
+        "other_options": [
+            "true",
+            "undefined",
+            "error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5;\nif (x > 0 && x < 10)\n    printf(\"In range\");\nelse\n    printf(\"Out of range\");",
+        "o": [
+            "In range",
+            "Out of range",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Logical AND requires both conditions to be true.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 15;\nif (x < 5 || x > 10)\n    printf(\"Outside\");\nelse\n    printf(\"Inside\");",
+        "o": [
+            "Outside",
+            "Inside",
+            "15",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match logical operator with meaning:",
+        "type": "match",
+        "left": [
+            "&&",
+            "||",
+            "!",
+            "^"
+        ],
+        "right": [
+            "AND",
+            "OR",
+            "NOT",
+            "XOR (bitwise)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 1, b = 0;\nif (a && !b) printf(\"Yes\");\nelse printf(\"No\");",
+        "o": [
+            "Yes",
+            "No",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "NOT operator inverts boolean ______.",
+        "type": "fill_blank",
+        "answers": [
+            "value"
+        ],
+        "other_options": [
+            "type",
+            "size",
+            "address"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int i = 1;\nwhile (i <= 10) {\n    if (i % 3 == 0) { i++; continue; }\n    printf(\"%d \", i);\n    i++;\n}",
+        "o": [
+            "1 2 4 5 7 8 10",
+            "1 2 3 4 5 6 7 8 9 10",
+            "3 6 9",
+            "Error"
+        ]
+    },
+    {
+        "q": "Continue with increment inside if prevents infinite loop.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "for (int i = 0; i < 5; i++) {\n    if (i == 3) goto end;\n    printf(\"%d \", i);\n}\nend:\nprintf(\"Done\");",
+        "o": [
+            "0 1 2 Done",
+            "0 1 2 3 Done",
+            "Done",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange goto usage:",
+        "type": "rearrange",
+        "words": [
+            "define label",
+            "write goto statement",
+            "jump to label",
+            "continue execution"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 100;\nif (x > 50)\n    if (x > 75)\n        printf(\"A\");\n    else\n        printf(\"B\");\nelse\n    printf(\"C\");",
+        "o": [
+            "A",
+            "B",
+            "C",
+            "Error"
+        ]
+    },
+    {
+        "q": "Else binds to the nearest unmatched ______.",
+        "type": "fill_blank",
+        "answers": [
+            "if"
+        ],
+        "other_options": [
+            "else",
+            "switch",
+            "for"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 50;\nif (x > 50) {\n    if (x > 75) printf(\"A\");\n    else printf(\"B\");\n} else {\n    printf(\"C\");\n}",
+        "o": [
+            "C",
+            "A",
+            "B",
+            "Error"
+        ]
+    },
+    {
+        "q": "Braces clarify else binding in nested if.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int score = 85;\nif (score >= 90) printf(\"A\");\nelse if (score >= 80) printf(\"B\");\nelse if (score >= 70) printf(\"C\");\nelse printf(\"F\");",
+        "o": [
+            "B",
+            "A",
+            "C",
+            "F"
+        ]
+    },
+    {
+        "q": "Match grade range with output:",
+        "type": "match",
+        "left": [
+            "90-100",
+            "80-89",
+            "70-79",
+            "<70"
+        ],
+        "right": [
+            "A",
+            "B",
+            "C",
+            "F"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 4;\nint result = 1;\nfor (int i = 1; i <= n; i++) result *= i;\nprintf(\"%d\", result);",
+        "o": [
+            "24",
+            "10",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Factorial calculation multiplies from 1 to ______.",
+        "type": "fill_blank",
+        "answers": [
+            "n"
+        ],
+        "other_options": [
+            "0",
+            "n-1",
+            "n+1"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int sum = 0;\nfor (int i = 1; i <= 100; i++) sum += i;\nprintf(\"%d\", sum);",
+        "o": [
+            "5050",
+            "5000",
+            "4950",
+            "Error"
+        ]
+    },
+    {
+        "q": "Sum 1 to n equals n*(n+1)/2.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 7, rev = 0;\nwhile (n > 0) {\n    rev = rev * 10 + n % 10;\n    n /= 10;\n}\nprintf(\"%d\", rev);",
+        "o": [
+            "7",
+            "70",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange digit reversal:",
+        "type": "rearrange",
+        "words": [
+            "extract last digit",
+            "add to result",
+            "remove last digit",
+            "repeat until zero"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int num = 121;\nint temp = num, rev = 0;\nwhile (temp > 0) {\n    rev = rev * 10 + temp % 10;\n    temp /= 10;\n}\nprintf(\"%s\", num == rev ? \"Yes\" : \"No\");",
+        "o": [
+            "Yes",
+            "No",
+            "121",
+            "Error"
+        ]
+    },
+    {
+        "q": "Palindrome number equals its ______.",
+        "type": "fill_blank",
+        "answers": [
+            "reverse"
+        ],
+        "other_options": [
+            "square",
+            "half",
+            "double"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 17, isPrime = 1;\nfor (int i = 2; i * i <= n; i++)\n    if (n % i == 0) { isPrime = 0; break; }\nprintf(\"%d\", isPrime);",
+        "o": [
+            "1",
+            "0",
+            "17",
+            "Error"
+        ]
+    },
+    {
+        "q": "Prime check only needs to test up to square root.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 12, b = 8;\nwhile (b != 0) {\n    int t = b;\n    b = a % b;\n    a = t;\n}\nprintf(\"%d\", a);",
+        "o": [
+            "4",
+            "12",
+            "8",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match algorithm with its purpose:",
+        "type": "match",
+        "left": [
+            "Euclidean",
+            "Sieve",
+            "Binary search",
+            "Bubble sort"
+        ],
+        "right": [
+            "GCD",
+            "Primes",
+            "Search sorted",
+            "Sort elements"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nfor (int i = 1; i <= n; i++) {\n    for (int j = 1; j <= i; j++)\n        printf(\"*\");\n    printf(\"\\n\");\n}",
+        "o": [
+            "*\\n**\\n***\\n****\\n*****\\n",
+            "***\\n***\\n***\\n***\\n***",
+            "12345",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pattern printing uses nested loops for ______.",
+        "type": "fill_blank",
+        "answers": [
+            "rows"
+        ],
+        "other_options": [
+            "columns",
+            "values",
+            "indices"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {3, 1, 4, 1, 5};\nint max = arr[0];\nfor (int i = 1; i < 5; i++)\n    if (arr[i] > max) max = arr[i];\nprintf(\"%d\", max);",
+        "o": [
+            "5",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Finding maximum tracks current max value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {3, 1, 4, 1, 5};\nint min = arr[0];\nfor (int i = 1; i < 5; i++)\n    if (arr[i] < min) min = arr[i];\nprintf(\"%d\", min);",
+        "o": [
+            "1",
+            "5",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange find minimum:",
+        "type": "rearrange",
+        "words": [
+            "assume first is min",
+            "compare with rest",
+            "update if smaller",
+            "return min"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int target = 4;\nint arr[] = {1, 2, 3, 4, 5};\nint idx = -1;\nfor (int i = 0; i < 5; i++)\n    if (arr[i] == target) { idx = i; break; }\nprintf(\"%d\", idx);",
+        "o": [
+            "3",
+            "4",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Linear search returns ______ if not found.",
+        "type": "fill_blank",
+        "answers": [
+            "-1"
+        ],
+        "other_options": [
+            "0",
+            "NULL",
+            "false"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {1, 2, 3, 4, 5};\nint target = 3;\nint low = 0, high = 4, idx = -1;\nwhile (low <= high) {\n    int mid = (low + high) / 2;\n    if (arr[mid] == target) { idx = mid; break; }\n    if (arr[mid] < target) low = mid + 1;\n    else high = mid - 1;\n}\nprintf(\"%d\", idx);",
+        "o": [
+            "2",
+            "3",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Binary search requires sorted input.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int arr[] = {5, 2, 8, 1, 9};\nfor (int i = 0; i < 4; i++)\n    for (int j = 0; j < 4 - i; j++)\n        if (arr[j] > arr[j + 1]) {\n            int t = arr[j];\n            arr[j] = arr[j + 1];\n            arr[j + 1] = t;\n        }\nprintf(\"%d %d\", arr[0], arr[4]);",
+        "o": [
+            "1 9",
+            "5 9",
+            "1 5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match sort with its complexity:",
+        "type": "match",
+        "left": [
+            "Bubble",
+            "Selection",
+            "Insertion",
+            "Quick (avg)"
+        ],
+        "right": [
+            "O(n^2)",
+            "O(n^2)",
+            "O(n^2)",
+            "O(n log n)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int count = 0;\nfor (int i = 1; i <= 100; i++)\n    if (i % 5 == 0 && i % 3 == 0) count++;\nprintf(\"%d\", count);",
+        "o": [
+            "6",
+            "7",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Counting with condition uses if inside ______.",
+        "type": "fill_blank",
+        "answers": [
+            "loop"
+        ],
+        "other_options": [
+            "switch",
+            "function",
+            "block"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nfor (int i = 0; i < n; i++) {\n    for (int j = 0; j < n - i - 1; j++) printf(\" \");\n    for (int k = 0; k <= i; k++) printf(\"* \");\n    printf(\"\\n\");\n}",
+        "o": [
+            "Pyramid pattern",
+            "Square pattern",
+            "Rectangle",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pyramid pattern needs spaces before stars.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int year = 2024;\nif ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)\n    printf(\"Leap\");\nelse\n    printf(\"Not Leap\");",
+        "o": [
+            "Leap",
+            "Not Leap",
+            "2024",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange leap year check:",
+        "type": "rearrange",
+        "words": [
+            "divisible by 4",
+            "not divisible by 100",
+            "or divisible by 400",
+            "is leap year"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int num = 153;\nint temp = num, sum = 0;\nwhile (temp > 0) {\n    int d = temp % 10;\n    sum += d * d * d;\n    temp /= 10;\n}\nprintf(\"%s\", sum == num ? \"Armstrong\" : \"Not\");",
+        "o": [
+            "Armstrong",
+            "Not",
+            "153",
+            "Error"
+        ]
+    },
+    {
+        "q": "Armstrong number equals sum of cubed ______.",
+        "type": "fill_blank",
+        "answers": [
+            "digits"
+        ],
+        "other_options": [
+            "values",
+            "numbers",
+            "factors"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 10;\nint f1 = 0, f2 = 1;\nfor (int i = 0; i < n; i++) {\n    printf(\"%d \", f1);\n    int t = f1 + f2;\n    f1 = f2;\n    f2 = t;\n}",
+        "o": [
+            "0 1 1 2 3 5 8 13 21 34",
+            "1 1 2 3 5 8 13 21 34 55",
+            "0 1 2 3 4 5 6 7 8 9",
+            "Error"
+        ]
+    },
+    {
+        "q": "Fibonacci uses two previous terms.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 28;\nint sum = 0;\nfor (int i = 1; i < n; i++)\n    if (n % i == 0) sum += i;\nprintf(\"%s\", sum == n ? \"Perfect\" : \"Not\");",
+        "o": [
+            "Perfect",
+            "Not",
+            "28",
+            "Error"
+        ]
+    },
+    {
+        "q": "Match number type with property:",
+        "type": "match",
+        "left": [
+            "Perfect",
+            "Prime",
+            "Armstrong",
+            "Palindrome"
+        ],
+        "right": [
+            "Sum of divisors",
+            "Two factors only",
+            "Sum of cubes",
+            "Same reversed"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 10;\nfor (int i = 2; i <= n; i++) {\n    int isPrime = 1;\n    for (int j = 2; j * j <= i; j++)\n        if (i % j == 0) { isPrime = 0; break; }\n    if (isPrime) printf(\"%d \", i);\n}",
+        "o": [
+            "2 3 5 7",
+            "1 2 3 5 7",
+            "2 3 5 7 9",
+            "Error"
+        ]
+    },
+    {
+        "q": "Printing all primes uses nested loop with flag.",
+        "type": "fill_blank",
+        "answers": [
+            "flag"
+        ],
+        "other_options": [
+            "counter",
+            "pointer",
+            "array"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5;\nfor (int i = 1; i <= 10; i++)\n    printf(\"%d x %d = %d\\n\", n, i, n * i);",
+        "o": [
+            "Multiplication table of 5",
+            "5 printed 10 times",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Multiplication table uses loop from 1 to 10.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int n = 5, power = 3;\nint result = 1;\nfor (int i = 0; i < power; i++) result *= n;\nprintf(\"%d\", result);",
+        "o": [
+            "125",
+            "15",
+            "8",
+            "Error"
+        ]
+    },
+    {
+        "q": "Rearrange power calculation:",
+        "type": "rearrange",
+        "words": [
+            "initialize to 1",
+            "multiply by base",
+            "repeat exponent times",
+            "return result"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int a = 5, b = 0;\nint result = (b != 0) ? a / b : 0;\nprintf(\"%d\", result);",
+        "o": [
+            "0",
+            "Error",
+            "Undefined",
+            "5"
+        ]
+    },
+    {
+        "q": "Short-circuit evaluation prevents division by ______.",
+        "type": "fill_blank",
+        "answers": [
+            "zero"
+        ],
+        "other_options": [
+            "one",
+            "negative",
+            "float"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 5;\nswitch (x % 2) {\n    case 0: printf(\"Even\"); break;\n    case 1: printf(\"Odd\"); break;\n}",
+        "o": [
+            "Odd",
+            "Even",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Modulo 2 distinguishes even and odd.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "char grade = 'B';\nswitch (grade) {\n    case 'A': printf(\"Excellent\"); break;\n    case 'B': printf(\"Good\"); break;\n    case 'C': printf(\"Average\"); break;\n    default: printf(\"Fail\");\n}",
+        "o": [
+            "Good",
+            "Excellent",
+            "Average",
+            "Fail"
+        ]
+    },
+    {
+        "q": "Match grade with description:",
+        "type": "match",
+        "left": [
+            "A",
+            "B",
+            "C",
+            "F"
+        ],
+        "right": [
+            "Excellent",
+            "Good",
+            "Average",
+            "Fail"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int x = 0;\nwhile (1) {\n    x++;\n    if (x >= 5) break;\n}\nprintf(\"%d\", x);",
+        "o": [
+            "5",
+            "4",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Infinite loop with break is controlled termination.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "for (int i = 0; i < 10; i++) {\n    if (i % 3 == 0) continue;\n    printf(\"%d \", i);\n}",
+        "o": [
+            "1 2 4 5 7 8",
+            "0 3 6 9",
+            "1 2 3 4 5 6 7 8 9",
+            "Error"
+        ]
+    },
+    {
+        "q": "Continue skips ______ of loop iteration.",
+        "type": "fill_blank",
+        "answers": [
+            "rest"
+        ],
+        "other_options": [
+            "start",
+            "all",
+            "none"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "int count = 0;\nfor (int i = 1; i <= 100; i++)\n    if (i % 7 == 0) count++;\nprintf(\"%d\", count);",
+        "o": [
+            "14",
+            "15",
+            "7",
+            "Error"
+        ]
+    }
+]

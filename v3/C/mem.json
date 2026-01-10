@@ -1,0 +1,5904 @@
+[
+    {
+        "q": "Which function is used to allocate memory dynamically in C?",
+        "type": "mcq",
+        "o": [
+            "malloc",
+            "alloc",
+            "new",
+            "create"
+        ]
+    },
+    {
+        "q": "malloc() returns a pointer to void.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function allocates memory and returns a pointer.",
+        "type": "fill_blank",
+        "answers": [
+            "malloc"
+        ],
+        "other_options": [
+            "printf",
+            "scanf",
+            "return"
+        ]
+    },
+    {
+        "q": "What header file is needed for malloc()?",
+        "type": "mcq",
+        "o": [
+            "stdlib.h",
+            "stdio.h",
+            "string.h",
+            "malloc.h"
+        ]
+    },
+    {
+        "q": "Dynamic memory is allocated from the heap.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match memory functions with descriptions:",
+        "type": "match",
+        "left": [
+            "malloc",
+            "free",
+            "calloc",
+            "realloc"
+        ],
+        "right": [
+            "Allocate memory",
+            "Deallocate memory",
+            "Allocate and zero",
+            "Resize memory"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *p = malloc(sizeof(int));\n    *p = 42;\n    printf(\"%d\", *p);\n    free(p);\n    return 0;\n}",
+        "o": [
+            "42",
+            "0",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "sizeof() returns the size in bytes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange the correct order for dynamic memory usage:",
+        "type": "rearrange",
+        "words": [
+            "Allocate memory",
+            "Check for NULL",
+            "Use memory",
+            "Free memory"
+        ]
+    },
+    {
+        "q": "What does malloc return on failure?",
+        "type": "mcq",
+        "o": [
+            "NULL",
+            "0",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "You should always check if malloc returns NULL.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ pointer indicates allocation failure.",
+        "type": "fill_blank",
+        "answers": [
+            "NULL"
+        ],
+        "other_options": [
+            "void",
+            "zero",
+            "empty"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *arr = malloc(5 * sizeof(int));\n    for(int i = 0; i < 5; i++) arr[i] = i;\n    printf(\"%d\", arr[2]);\n    free(arr);\n    return 0;\n}",
+        "o": [
+            "2",
+            "0",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Arrays can be allocated dynamically using malloc.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match memory concepts:",
+        "type": "match",
+        "left": [
+            "Stack",
+            "Heap",
+            "Static",
+            "Code"
+        ],
+        "right": [
+            "Local variables",
+            "Dynamic memory",
+            "Global variables",
+            "Program instructions"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *p = calloc(5, sizeof(int));\n    printf(\"%d\", p[0]);\n    free(p);\n    return 0;\n}",
+        "o": [
+            "0",
+            "Garbage",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "calloc() initializes memory to zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function allocates zeroed memory.",
+        "type": "fill_blank",
+        "answers": [
+            "calloc"
+        ],
+        "other_options": [
+            "malloc",
+            "realloc",
+            "free"
+        ]
+    },
+    {
+        "q": "How many arguments does calloc take?",
+        "type": "mcq",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "0"
+        ]
+    },
+    {
+        "q": "calloc takes number of elements and size of each element.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange calloc parameters:",
+        "type": "rearrange",
+        "words": [
+            "Number of elements",
+            "Size of each element"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *p = malloc(5 * sizeof(int));\n    p = realloc(p, 10 * sizeof(int));\n    if(p) printf(\"Resized\");\n    free(p);\n    return 0;\n}",
+        "o": [
+            "Resized",
+            "Error",
+            "NULL",
+            "5"
+        ]
+    },
+    {
+        "q": "realloc() can increase or decrease memory size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function changes the size of allocated memory.",
+        "type": "fill_blank",
+        "answers": [
+            "realloc"
+        ],
+        "other_options": [
+            "malloc",
+            "calloc",
+            "free"
+        ]
+    },
+    {
+        "q": "What happens if realloc gets NULL as first argument?",
+        "type": "mcq",
+        "o": [
+            "Behaves like malloc",
+            "Returns NULL",
+            "Crashes",
+            "Frees memory"
+        ]
+    },
+    {
+        "q": "realloc(NULL, size) is equivalent to malloc(size).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match realloc behaviors:",
+        "type": "match",
+        "left": [
+            "realloc(NULL, n)",
+            "realloc(p, 0)",
+            "realloc(p, n)",
+            "realloc fails"
+        ],
+        "right": [
+            "Acts like malloc",
+            "Frees memory",
+            "Resizes memory",
+            "Returns NULL"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *p = malloc(sizeof(int));\n    *p = 10;\n    free(p);\n    printf(\"Freed\");\n    return 0;\n}",
+        "o": [
+            "Freed",
+            "10",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "free() deallocates dynamically allocated memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function releases memory back to the system.",
+        "type": "fill_blank",
+        "answers": [
+            "free"
+        ],
+        "other_options": [
+            "delete",
+            "remove",
+            "release"
+        ]
+    },
+    {
+        "q": "What happens if you free memory twice?",
+        "type": "mcq",
+        "o": [
+            "Undefined behavior",
+            "Nothing",
+            "Memory is freed again",
+            "Error message"
+        ]
+    },
+    {
+        "q": "Double free is a serious programming error.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange memory error types:",
+        "type": "rearrange",
+        "words": [
+            "Memory leak",
+            "Double free",
+            "Use after free",
+            "Buffer overflow"
+        ]
+    },
+    {
+        "q": "What is a memory leak?",
+        "type": "mcq",
+        "o": [
+            "Allocated memory not freed",
+            "Accessing freed memory",
+            "Freeing twice",
+            "Null pointer access"
+        ]
+    },
+    {
+        "q": "Memory leaks waste system resources.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ error occurs when allocated memory is never freed.",
+        "type": "fill_blank",
+        "answers": [
+            "memory leak",
+            "leak"
+        ],
+        "other_options": [
+            "double free",
+            "overflow",
+            "underflow"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *p = malloc(sizeof(int));\n    if(p == NULL) {\n        printf(\"Failed\");\n        return 1;\n    }\n    printf(\"Success\");\n    free(p);\n    return 0;\n}",
+        "o": [
+            "Success",
+            "Failed",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Checking for NULL prevents null pointer dereference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match error types with descriptions:",
+        "type": "match",
+        "left": [
+            "Null dereference",
+            "Buffer overflow",
+            "Use after free",
+            "Uninitialized read"
+        ],
+        "right": [
+            "Accessing NULL pointer",
+            "Writing past bounds",
+            "Accessing freed memory",
+            "Reading garbage"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    char *str = malloc(10);\n    str[0] = 'H';\n    str[1] = 'i';\n    str[2] = '\\0';\n    printf(\"%s\", str);\n    free(str);\n    return 0;\n}",
+        "o": [
+            "Hi",
+            "H",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Strings need null terminator when dynamically allocated.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ character terminates a string.",
+        "type": "fill_blank",
+        "answers": [
+            "null",
+            "\\0"
+        ],
+        "other_options": [
+            "newline",
+            "space",
+            "tab"
+        ]
+    },
+    {
+        "q": "What is the size argument for allocating a string of 10 characters?",
+        "type": "mcq",
+        "o": [
+            "11",
+            "10",
+            "9",
+            "12"
+        ]
+    },
+    {
+        "q": "String allocation must include space for null terminator.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange string allocation steps:",
+        "type": "rearrange",
+        "words": [
+            "Calculate length + 1",
+            "malloc memory",
+            "Copy string",
+            "Add null terminator",
+            "Use string"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\nint main() {\n    char *str = malloc(6);\n    strcpy(str, \"Hello\");\n    printf(\"%s\", str);\n    free(str);\n    return 0;\n}",
+        "o": [
+            "Hello",
+            "Hell",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "strcpy can write to dynamically allocated memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match string functions with descriptions:",
+        "type": "match",
+        "left": [
+            "strcpy",
+            "strdup",
+            "strcat",
+            "strlen"
+        ],
+        "right": [
+            "Copy string",
+            "Duplicate string",
+            "Concatenate strings",
+            "Get length"
+        ]
+    },
+    {
+        "q": "What does strdup do?",
+        "type": "mcq",
+        "o": [
+            "Allocates and copies string",
+            "Frees string",
+            "Compares strings",
+            "Finds substring"
+        ]
+    },
+    {
+        "q": "strdup allocates memory that must be freed.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function allocates memory and copies a string.",
+        "type": "fill_blank",
+        "answers": [
+            "strdup"
+        ],
+        "other_options": [
+            "strcpy",
+            "strcat",
+            "strcmp"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int **matrix = malloc(3 * sizeof(int*));\n    for(int i = 0; i < 3; i++)\n        matrix[i] = malloc(3 * sizeof(int));\n    matrix[1][1] = 5;\n    printf(\"%d\", matrix[1][1]);\n    for(int i = 0; i < 3; i++) free(matrix[i]);\n    free(matrix);\n    return 0;\n}",
+        "o": [
+            "5",
+            "0",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "2D arrays require allocation of row pointers and elements.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange 2D array allocation:",
+        "type": "rearrange",
+        "words": [
+            "Allocate row pointers",
+            "Allocate each row",
+            "Use array",
+            "Free each row",
+            "Free row pointers"
+        ]
+    },
+    {
+        "q": "What type is needed for a dynamic 2D array?",
+        "type": "mcq",
+        "o": [
+            "Pointer to pointer",
+            "Single pointer",
+            "Array",
+            "Structure"
+        ]
+    },
+    {
+        "q": "Double pointer allows dynamic 2D array allocation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ type is used for dynamic 2D arrays.",
+        "type": "fill_blank",
+        "answers": [
+            "int**",
+            "double pointer"
+        ],
+        "other_options": [
+            "int*",
+            "int[]",
+            "int"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\ntypedef struct { int x; int y; } Point;\nint main() {\n    Point *p = malloc(sizeof(Point));\n    p->x = 10;\n    p->y = 20;\n    printf(\"%d,%d\", p->x, p->y);\n    free(p);\n    return 0;\n}",
+        "o": [
+            "10,20",
+            "0,0",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Structures can be allocated dynamically.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match pointer operators:",
+        "type": "match",
+        "left": [
+            "->",
+            "*",
+            "&",
+            "."
+        ],
+        "right": [
+            "Pointer member access",
+            "Dereference",
+            "Address of",
+            "Direct member access"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *arr = malloc(3 * sizeof(int));\n    arr[0] = 1; arr[1] = 2; arr[2] = 3;\n    int sum = 0;\n    for(int i = 0; i < 3; i++) sum += arr[i];\n    printf(\"%d\", sum);\n    free(arr);\n    return 0;\n}",
+        "o": [
+            "6",
+            "3",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Array indexing works with dynamically allocated arrays.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The expression arr[i] is equivalent to ______(arr + i).",
+        "type": "fill_blank",
+        "answers": [
+            "*"
+        ],
+        "other_options": [
+            "&",
+            "->",
+            "."
+        ]
+    },
+    {
+        "q": "What is pointer arithmetic?",
+        "type": "mcq",
+        "o": [
+            "Math operations on pointers",
+            "Allocating memory",
+            "Freeing memory",
+            "Copying memory"
+        ]
+    },
+    {
+        "q": "Pointer arithmetic respects the element size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange pointer concepts:",
+        "type": "rearrange",
+        "words": [
+            "Pointer declaration",
+            "Memory allocation",
+            "Pointer arithmetic",
+            "Memory access",
+            "Memory deallocation"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *p = malloc(4 * sizeof(int));\n    for(int i = 0; i < 4; i++) *(p + i) = i * 2;\n    printf(\"%d\", *(p + 2));\n    free(p);\n    return 0;\n}",
+        "o": [
+            "4",
+            "2",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "*(p + i) is equivalent to p[i].",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match memory operations:",
+        "type": "match",
+        "left": [
+            "memcpy",
+            "memset",
+            "memmove",
+            "memcmp"
+        ],
+        "right": [
+            "Copy bytes",
+            "Fill bytes",
+            "Safe overlap copy",
+            "Compare bytes"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\nint main() {\n    int *arr = malloc(5 * sizeof(int));\n    memset(arr, 0, 5 * sizeof(int));\n    printf(\"%d\", arr[2]);\n    free(arr);\n    return 0;\n}",
+        "o": [
+            "0",
+            "5",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "memset fills memory with a byte value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function fills memory with a value.",
+        "type": "fill_blank",
+        "answers": [
+            "memset"
+        ],
+        "other_options": [
+            "memcpy",
+            "memmove",
+            "memcmp"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\nint main() {\n    int src[] = {1, 2, 3};\n    int *dst = malloc(3 * sizeof(int));\n    memcpy(dst, src, 3 * sizeof(int));\n    printf(\"%d\", dst[1]);\n    free(dst);\n    return 0;\n}",
+        "o": [
+            "2",
+            "1",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "memcpy copies bytes from source to destination.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange memory copy safety:",
+        "type": "rearrange",
+        "words": [
+            "Check destination size",
+            "Check source size",
+            "Check for overlap",
+            "Copy data",
+            "Verify result"
+        ]
+    },
+    {
+        "q": "When should memmove be used instead of memcpy?",
+        "type": "mcq",
+        "o": [
+            "When memory regions overlap",
+            "When memory is larger",
+            "When memory is smaller",
+            "Always"
+        ]
+    },
+    {
+        "q": "memmove handles overlapping memory regions safely.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function is safe for overlapping memory.",
+        "type": "fill_blank",
+        "answers": [
+            "memmove"
+        ],
+        "other_options": [
+            "memcpy",
+            "memset",
+            "memcmp"
+        ]
+    },
+    {
+        "q": "What is a dangling pointer?",
+        "type": "mcq",
+        "o": [
+            "Pointer to freed memory",
+            "NULL pointer",
+            "Uninitialized pointer",
+            "Valid pointer"
+        ]
+    },
+    {
+        "q": "Using dangling pointers causes undefined behavior.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match pointer issues:",
+        "type": "match",
+        "left": [
+            "Dangling pointer",
+            "Wild pointer",
+            "NULL pointer",
+            "Memory leak"
+        ],
+        "right": [
+            "Points to freed memory",
+            "Uninitialized pointer",
+            "Points to nothing",
+            "Unreleased memory"
+        ]
+    },
+    {
+        "q": "What should you do after freeing a pointer?",
+        "type": "mcq",
+        "o": [
+            "Set it to NULL",
+            "Use it again",
+            "Free it again",
+            "Ignore it"
+        ]
+    },
+    {
+        "q": "Setting freed pointers to NULL prevents dangling pointer usage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ value indicates a pointer points to nothing.",
+        "type": "fill_blank",
+        "answers": [
+            "NULL"
+        ],
+        "other_options": [
+            "0",
+            "void",
+            "empty"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *p = malloc(sizeof(int));\n    *p = 100;\n    free(p);\n    p = NULL;\n    if(p == NULL) printf(\"Safe\");\n    return 0;\n}",
+        "o": [
+            "Safe",
+            "100",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Comparing pointer to NULL is a safe check.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange safe memory practices:",
+        "type": "rearrange",
+        "words": [
+            "Initialize pointers",
+            "Check allocations",
+            "Use carefully",
+            "Free when done",
+            "Set to NULL"
+        ]
+    },
+    {
+        "q": "What is heap fragmentation?",
+        "type": "mcq",
+        "o": [
+            "Scattered free memory blocks",
+            "Too much memory",
+            "Too little memory",
+            "Corrupted memory"
+        ]
+    },
+    {
+        "q": "Fragmentation can waste memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ occurs when free blocks are scattered.",
+        "type": "fill_blank",
+        "answers": [
+            "fragmentation"
+        ],
+        "other_options": [
+            "leak",
+            "overflow",
+            "underflow"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    void *p = malloc(100);\n    int *ip = (int*)p;\n    ip[0] = 42;\n    printf(\"%d\", ip[0]);\n    free(p);\n    return 0;\n}",
+        "o": [
+            "42",
+            "0",
+            "Error",
+            "100"
+        ]
+    },
+    {
+        "q": "void* can be cast to any pointer type.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match type casting:",
+        "type": "match",
+        "left": [
+            "void*",
+            "int*",
+            "char*",
+            "double*"
+        ],
+        "right": [
+            "Generic pointer",
+            "Integer pointer",
+            "Character pointer",
+            "Float pointer"
+        ]
+    },
+    {
+        "q": "In C, is casting malloc's return value necessary?",
+        "type": "mcq",
+        "o": [
+            "No, in C it is implicit",
+            "Yes, always",
+            "Only for int",
+            "Only for struct"
+        ]
+    },
+    {
+        "q": "In C, void* converts implicitly to other pointer types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ pointer type is generic in C.",
+        "type": "fill_blank",
+        "answers": [
+            "void*",
+            "void"
+        ],
+        "other_options": [
+            "int*",
+            "char*",
+            "NULL"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    size_t size = 10 * sizeof(int);\n    int *p = malloc(size);\n    if(p) printf(\"%zu bytes\", size);\n    free(p);\n    return 0;\n}",
+        "o": [
+            "40 bytes",
+            "10 bytes",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "size_t is the correct type for memory sizes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange memory debugging tools:",
+        "type": "rearrange",
+        "words": [
+            "Valgrind",
+            "AddressSanitizer",
+            "Memory profiler",
+            "Static analysis"
+        ]
+    },
+    {
+        "q": "What is Valgrind used for?",
+        "type": "mcq",
+        "o": [
+            "Memory debugging",
+            "Compiling code",
+            "Linking libraries",
+            "Formatting code"
+        ]
+    },
+    {
+        "q": "Valgrind detects memory leaks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ tool checks for memory errors.",
+        "type": "fill_blank",
+        "answers": [
+            "Valgrind",
+            "valgrind"
+        ],
+        "other_options": [
+            "GCC",
+            "GDB",
+            "Make"
+        ]
+    },
+    {
+        "q": "What is AddressSanitizer?",
+        "type": "mcq",
+        "o": [
+            "Memory error detector",
+            "File compressor",
+            "Network tool",
+            "Debugger"
+        ]
+    },
+    {
+        "q": "AddressSanitizer is faster than Valgrind.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match debugging tools:",
+        "type": "match",
+        "left": [
+            "Valgrind",
+            "AddressSanitizer",
+            "LeakSanitizer",
+            "GDB"
+        ],
+        "right": [
+            "Runtime checker",
+            "Compiler-based",
+            "Leak detector",
+            "Interactive debugger"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int n = 5;\n    int *arr = malloc(n * sizeof(int));\n    for(int i = 0; i < n; i++) arr[i] = i * i;\n    printf(\"%d\", arr[4]);\n    free(arr);\n    return 0;\n}",
+        "o": [
+            "16",
+            "4",
+            "25",
+            "Error"
+        ]
+    },
+    {
+        "q": "Variable-length arrays can use malloc.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ size arrays use stack memory.",
+        "type": "fill_blank",
+        "answers": [
+            "fixed",
+            "static"
+        ],
+        "other_options": [
+            "dynamic",
+            "heap",
+            "variable"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *p = malloc(0);\n    printf(\"%s\", p ? \"Non-NULL\" : \"NULL or non-NULL\");\n    free(p);\n    return 0;\n}",
+        "o": [
+            "Implementation-defined",
+            "Always NULL",
+            "Always Non-NULL",
+            "Error"
+        ]
+    },
+    {
+        "q": "malloc(0) behavior is implementation-defined.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange memory allocation edge cases:",
+        "type": "rearrange",
+        "words": [
+            "Zero size",
+            "Very large size",
+            "NULL pointer",
+            "Out of memory"
+        ]
+    },
+    {
+        "q": "What is a memory pool?",
+        "type": "mcq",
+        "o": [
+            "Pre-allocated memory block",
+            "Network buffer",
+            "File cache",
+            "CPU register"
+        ]
+    },
+    {
+        "q": "Memory pools improve allocation performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ allocator uses fixed-size blocks.",
+        "type": "fill_blank",
+        "answers": [
+            "pool",
+            "slab"
+        ],
+        "other_options": [
+            "heap",
+            "stack",
+            "global"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\ntypedef struct Node { int data; struct Node *next; } Node;\nint main() {\n    Node *n = malloc(sizeof(Node));\n    n->data = 10;\n    n->next = NULL;\n    printf(\"%d\", n->data);\n    free(n);\n    return 0;\n}",
+        "o": [
+            "10",
+            "0",
+            "NULL",
+            "Error"
+        ]
+    },
+    {
+        "q": "Linked list nodes are typically heap-allocated.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match data structures with memory patterns:",
+        "type": "match",
+        "left": [
+            "Linked list",
+            "Dynamic array",
+            "Tree",
+            "Hash table"
+        ],
+        "right": [
+            "Individual nodes",
+            "Contiguous block",
+            "Hierarchical nodes",
+            "Array + chains"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *stack[10];\n    int top = 0;\n    stack[top++] = malloc(sizeof(int));\n    *stack[0] = 42;\n    printf(\"%d\", *stack[0]);\n    free(stack[0]);\n    return 0;\n}",
+        "o": [
+            "42",
+            "0",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer arrays can store dynamically allocated objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ structure stores pointers to allocated memory.",
+        "type": "fill_blank",
+        "answers": [
+            "pointer array",
+            "array of pointers"
+        ],
+        "other_options": [
+            "linked list",
+            "tree",
+            "hash"
+        ]
+    },
+    {
+        "q": "What is object lifetime?",
+        "type": "mcq",
+        "o": [
+            "Time from allocation to deallocation",
+            "Size of object",
+            "Type of object",
+            "Location of object"
+        ]
+    },
+    {
+        "q": "Dynamic objects live until explicitly freed.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange object lifecycles:",
+        "type": "rearrange",
+        "words": [
+            "Allocate",
+            "Initialize",
+            "Use",
+            "Cleanup",
+            "Free"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint* createArray(int n) {\n    int *arr = malloc(n * sizeof(int));\n    for(int i = 0; i < n; i++) arr[i] = i;\n    return arr;\n}\nint main() {\n    int *arr = createArray(5);\n    printf(\"%d\", arr[3]);\n    free(arr);\n    return 0;\n}",
+        "o": [
+            "3",
+            "0",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Functions can return dynamically allocated memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match ownership patterns:",
+        "type": "match",
+        "left": [
+            "Caller owns",
+            "Callee owns",
+            "Shared ownership",
+            "No ownership"
+        ],
+        "right": [
+            "Caller frees",
+            "Function frees",
+            "Reference counting",
+            "Stack memory"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nvoid fillArray(int *arr, int n) {\n    for(int i = 0; i < n; i++) arr[i] = i * 2;\n}\nint main() {\n    int *arr = malloc(3 * sizeof(int));\n    fillArray(arr, 3);\n    printf(\"%d\", arr[2]);\n    free(arr);\n    return 0;\n}",
+        "o": [
+            "4",
+            "2",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Dynamically allocated memory can be passed to functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ convention determines who frees memory.",
+        "type": "fill_blank",
+        "answers": [
+            "ownership"
+        ],
+        "other_options": [
+            "calling",
+            "naming",
+            "typing"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int **pp = malloc(sizeof(int*));\n    *pp = malloc(sizeof(int));\n    **pp = 99;\n    printf(\"%d\", **pp);\n    free(*pp);\n    free(pp);\n    return 0;\n}",
+        "o": [
+            "99",
+            "0",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Pointer to pointer requires two allocations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange multi-level allocation:",
+        "type": "rearrange",
+        "words": [
+            "Allocate outer pointer",
+            "Allocate inner pointer",
+            "Use data",
+            "Free inner",
+            "Free outer"
+        ]
+    },
+    {
+        "q": "What is alignment in memory allocation?",
+        "type": "mcq",
+        "o": [
+            "Memory address divisibility",
+            "Memory size",
+            "Memory type",
+            "Memory speed"
+        ]
+    },
+    {
+        "q": "malloc returns properly aligned memory for any type.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function allocates aligned memory.",
+        "type": "fill_blank",
+        "answers": [
+            "aligned_alloc",
+            "posix_memalign"
+        ],
+        "other_options": [
+            "malloc",
+            "calloc",
+            "realloc"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    char *buf = malloc(1024);\n    sprintf(buf, \"Hello, %s!\", \"World\");\n    printf(\"%s\", buf);\n    free(buf);\n    return 0;\n}",
+        "o": [
+            "Hello, World!",
+            "Hello",
+            "World",
+            "Error"
+        ]
+    },
+    {
+        "q": "Dynamic buffers can store formatted strings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match buffer operations:",
+        "type": "match",
+        "left": [
+            "sprintf",
+            "snprintf",
+            "sscanf",
+            "memcpy"
+        ],
+        "right": [
+            "Format to buffer",
+            "Safe format",
+            "Parse from buffer",
+            "Copy bytes"
+        ]
+    },
+    {
+        "q": "What is snprintf advantage over sprintf?",
+        "type": "mcq",
+        "o": [
+            "Prevents buffer overflow",
+            "Faster execution",
+            "Less memory",
+            "More formats"
+        ]
+    },
+    {
+        "q": "snprintf limits output to buffer size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function is safer for string formatting.",
+        "type": "fill_blank",
+        "answers": [
+            "snprintf"
+        ],
+        "other_options": [
+            "sprintf",
+            "printf",
+            "fprintf"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *arr1 = malloc(4 * sizeof(int));\n    int *arr2 = malloc(4 * sizeof(int));\n    for(int i = 0; i < 4; i++) { arr1[i] = i; arr2[i] = i + 10; }\n    printf(\"%d,%d\", arr1[1], arr2[1]);\n    free(arr1);\n    free(arr2);\n    return 0;\n}",
+        "o": [
+            "1,11",
+            "0,10",
+            "Error",
+            "1,1"
+        ]
+    },
+    {
+        "q": "Multiple allocations can coexist independently.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange allocation tracking:",
+        "type": "rearrange",
+        "words": [
+            "Record allocation",
+            "Store pointer",
+            "Use memory",
+            "Record free",
+            "Release pointer"
+        ]
+    },
+    {
+        "q": "What is a custom allocator?",
+        "type": "mcq",
+        "o": [
+            "User-defined memory management",
+            "System allocator",
+            "Compiler allocator",
+            "Network allocator"
+        ]
+    },
+    {
+        "q": "Custom allocators can improve performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ allocator is specialized for specific use cases.",
+        "type": "fill_blank",
+        "answers": [
+            "custom"
+        ],
+        "other_options": [
+            "system",
+            "default",
+            "standard"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    size_t count = 1000;\n    int *large = malloc(count * sizeof(int));\n    if(large) {\n        for(size_t i = 0; i < count; i++) large[i] = i;\n        printf(\"%d\", large[999]);\n        free(large);\n    }\n    return 0;\n}",
+        "o": [
+            "999",
+            "0",
+            "1000",
+            "Error"
+        ]
+    },
+    {
+        "q": "Large allocations should always check for NULL.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match allocation sizes:",
+        "type": "match",
+        "left": [
+            "Small",
+            "Medium",
+            "Large",
+            "Huge"
+        ],
+        "right": [
+            "Fast path",
+            "Normal path",
+            "mmap direct",
+            "Special handling"
+        ]
+    },
+    {
+        "q": "What is arena allocation?",
+        "type": "mcq",
+        "o": [
+            "Allocate from region, free all at once",
+            "Individual allocations",
+            "Stack allocation",
+            "Register allocation"
+        ]
+    },
+    {
+        "q": "Arena allocators are efficient for temporary objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ allocation pattern frees all memory together.",
+        "type": "fill_blank",
+        "answers": [
+            "arena",
+            "region"
+        ],
+        "other_options": [
+            "individual",
+            "stack",
+            "heap"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int capacity = 2;\n    int *arr = malloc(capacity * sizeof(int));\n    arr[0] = 1; arr[1] = 2;\n    capacity *= 2;\n    arr = realloc(arr, capacity * sizeof(int));\n    arr[2] = 3; arr[3] = 4;\n    printf(\"%d\", arr[3]);\n    free(arr);\n    return 0;\n}",
+        "o": [
+            "4",
+            "2",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Dynamic arrays grow using realloc.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange dynamic array growth:",
+        "type": "rearrange",
+        "words": [
+            "Check capacity",
+            "Calculate new size",
+            "Realloc memory",
+            "Update capacity",
+            "Add element"
+        ]
+    },
+    {
+        "q": "What growth factor is commonly used?",
+        "type": "mcq",
+        "o": [
+            "2x or 1.5x",
+            "1.1x",
+            "10x",
+            "100x"
+        ]
+    },
+    {
+        "q": "Exponential growth reduces reallocation frequency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ factor determines how much to grow array.",
+        "type": "fill_blank",
+        "answers": [
+            "growth"
+        ],
+        "other_options": [
+            "shrink",
+            "size",
+            "capacity"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\ntypedef struct { int *data; int size; int cap; } Vector;\nint main() {\n    Vector v = {malloc(4 * sizeof(int)), 0, 4};\n    v.data[v.size++] = 10;\n    v.data[v.size++] = 20;\n    printf(\"%d\", v.data[1]);\n    free(v.data);\n    return 0;\n}",
+        "o": [
+            "20",
+            "10",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Vector structures encapsulate dynamic arrays.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match container operations:",
+        "type": "match",
+        "left": [
+            "push",
+            "pop",
+            "get",
+            "set"
+        ],
+        "right": [
+            "Add element",
+            "Remove element",
+            "Read element",
+            "Write element"
+        ]
+    },
+    {
+        "q": "What is reference counting?",
+        "type": "mcq",
+        "o": [
+            "Track number of references to object",
+            "Count memory size",
+            "Count allocations",
+            "Count frees"
+        ]
+    },
+    {
+        "q": "Reference counting enables shared ownership.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ count determines when to free.",
+        "type": "fill_blank",
+        "answers": [
+            "reference"
+        ],
+        "other_options": [
+            "allocation",
+            "use",
+            "access"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\ntypedef struct { int refcount; int value; } RefObj;\nRefObj* create(int v) {\n    RefObj *o = malloc(sizeof(RefObj));\n    o->refcount = 1; o->value = v;\n    return o;\n}\nvoid release(RefObj *o) {\n    if(--o->refcount == 0) { free(o); }\n}\nint main() {\n    RefObj *obj = create(42);\n    printf(\"%d\", obj->value);\n    release(obj);\n    return 0;\n}",
+        "o": [
+            "42",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Reference counting frees when count reaches zero.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange reference counting operations:",
+        "type": "rearrange",
+        "words": [
+            "Create with count 1",
+            "Increment on share",
+            "Decrement on release",
+            "Free when zero"
+        ]
+    },
+    {
+        "q": "What is a smart pointer pattern?",
+        "type": "mcq",
+        "o": [
+            "Automatic memory management wrapper",
+            "Raw pointer type",
+            "Integer type",
+            "Function pointer"
+        ]
+    },
+    {
+        "q": "Smart pointers prevent memory leaks in C++.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ pointer pattern wraps raw pointers.",
+        "type": "fill_blank",
+        "answers": [
+            "smart"
+        ],
+        "other_options": [
+            "dumb",
+            "raw",
+            "null"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int **jagged = malloc(3 * sizeof(int*));\n    jagged[0] = malloc(2 * sizeof(int));\n    jagged[1] = malloc(4 * sizeof(int));\n    jagged[2] = malloc(3 * sizeof(int));\n    jagged[1][3] = 77;\n    printf(\"%d\", jagged[1][3]);\n    for(int i = 0; i < 3; i++) free(jagged[i]);\n    free(jagged);\n    return 0;\n}",
+        "o": [
+            "77",
+            "0",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Jagged arrays have rows of different sizes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match array types:",
+        "type": "match",
+        "left": [
+            "2D static",
+            "2D dynamic",
+            "Jagged",
+            "Flat"
+        ],
+        "right": [
+            "Compile-time size",
+            "Runtime size",
+            "Variable row sizes",
+            "1D representation"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int rows = 2, cols = 3;\n    int *flat = malloc(rows * cols * sizeof(int));\n    for(int i = 0; i < rows * cols; i++) flat[i] = i;\n    printf(\"%d\", flat[1 * cols + 2]);\n    free(flat);\n    return 0;\n}",
+        "o": [
+            "5",
+            "2",
+            "3",
+            "Error"
+        ]
+    },
+    {
+        "q": "2D arrays can be represented as flat 1D arrays.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The formula row * cols + col converts 2D to ______ index.",
+        "type": "fill_blank",
+        "answers": [
+            "1D",
+            "flat"
+        ],
+        "other_options": [
+            "2D",
+            "3D",
+            "matrix"
+        ]
+    },
+    {
+        "q": "What is buffer overflow?",
+        "type": "mcq",
+        "o": [
+            "Writing past allocated bounds",
+            "Reading uninitialized memory",
+            "Freeing memory twice",
+            "Null pointer access"
+        ]
+    },
+    {
+        "q": "Buffer overflow is a security vulnerability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange buffer safety:",
+        "type": "rearrange",
+        "words": [
+            "Know buffer size",
+            "Check bounds",
+            "Limit input",
+            "Use safe functions"
+        ]
+    },
+    {
+        "q": "What is stack smashing?",
+        "type": "mcq",
+        "o": [
+            "Stack buffer overflow",
+            "Heap corruption",
+            "Memory leak",
+            "Null dereference"
+        ]
+    },
+    {
+        "q": "Stack canaries detect stack smashing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ protects against stack buffer overflow.",
+        "type": "fill_blank",
+        "answers": [
+            "canary",
+            "stack canary"
+        ],
+        "other_options": [
+            "guard",
+            "fence",
+            "wall"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\nint main() {\n    char *src = \"Hello\";\n    size_t len = strlen(src) + 1;\n    char *dst = malloc(len);\n    if(dst) {\n        strncpy(dst, src, len);\n        printf(\"%s\", dst);\n        free(dst);\n    }\n    return 0;\n}",
+        "o": [
+            "Hello",
+            "Hell",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "strncpy limits copy length for safety.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match safe string functions:",
+        "type": "match",
+        "left": [
+            "strncpy",
+            "strlcpy",
+            "snprintf",
+            "fgets"
+        ],
+        "right": [
+            "Length-limited copy",
+            "BSD safe copy",
+            "Safe format",
+            "Safe line input"
+        ]
+    },
+    {
+        "q": "What is heap corruption?",
+        "type": "mcq",
+        "o": [
+            "Damaging heap metadata",
+            "Stack overflow",
+            "Memory leak",
+            "Null pointer"
+        ]
+    },
+    {
+        "q": "Heap corruption can cause crashes or exploits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ corruption occurs from out-of-bounds writes.",
+        "type": "fill_blank",
+        "answers": [
+            "heap"
+        ],
+        "other_options": [
+            "stack",
+            "data",
+            "code"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *arr = calloc(5, sizeof(int));\n    int sum = 0;\n    for(int i = 0; i < 5; i++) sum += arr[i];\n    printf(\"%d\", sum);\n    free(arr);\n    return 0;\n}",
+        "o": [
+            "0",
+            "5",
+            "Garbage",
+            "Error"
+        ]
+    },
+    {
+        "q": "calloc guarantees zero initialization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange memory initialization options:",
+        "type": "rearrange",
+        "words": [
+            "malloc (uninitialized)",
+            "calloc (zeroed)",
+            "memset (explicit)"
+        ]
+    },
+    {
+        "q": "What is the advantage of calloc over malloc + memset?",
+        "type": "mcq",
+        "o": [
+            "May optimize zero pages",
+            "Always faster",
+            "Uses less memory",
+            "No advantage"
+        ]
+    },
+    {
+        "q": "calloc can use copy-on-write zero pages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function combines allocation and zeroing.",
+        "type": "fill_blank",
+        "answers": [
+            "calloc"
+        ],
+        "other_options": [
+            "malloc",
+            "realloc",
+            "free"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    char *s = NULL;\n    free(s);\n    printf(\"OK\");\n    return 0;\n}",
+        "o": [
+            "OK",
+            "Crash",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "free(NULL) is safe and does nothing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match free behaviors:",
+        "type": "match",
+        "left": [
+            "free(NULL)",
+            "free(valid)",
+            "free(freed)",
+            "free(stack)"
+        ],
+        "right": [
+            "Does nothing",
+            "Releases memory",
+            "Undefined behavior",
+            "Undefined behavior"
+        ]
+    },
+    {
+        "q": "What is realloc failure behavior?",
+        "type": "mcq",
+        "o": [
+            "Returns NULL, original unchanged",
+            "Crashes",
+            "Frees original",
+            "Returns original"
+        ]
+    },
+    {
+        "q": "On realloc failure, original pointer is still valid.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ approach saves original before realloc.",
+        "type": "fill_blank",
+        "answers": [
+            "safe realloc"
+        ],
+        "other_options": [
+            "direct",
+            "inline",
+            "unsafe"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *p = malloc(sizeof(int));\n    int *old = p;\n    p = realloc(p, 10 * sizeof(int));\n    if(!p) { p = old; }\n    else { printf(\"Reallocated\"); }\n    free(p);\n    return 0;\n}",
+        "o": [
+            "Reallocated",
+            "Error",
+            "NULL",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Safe realloc pattern preserves original on failure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange safe realloc pattern:",
+        "type": "rearrange",
+        "words": [
+            "Save old pointer",
+            "Call realloc",
+            "Check result",
+            "Handle failure",
+            "Update pointer"
+        ]
+    },
+    {
+        "q": "What is memory pressure?",
+        "type": "mcq",
+        "o": [
+            "Low available memory",
+            "High CPU usage",
+            "Slow disk",
+            "Network congestion"
+        ]
+    },
+    {
+        "q": "Memory pressure can cause allocation failures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ occurs when system runs low on memory.",
+        "type": "fill_blank",
+        "answers": [
+            "pressure",
+            "memory pressure"
+        ],
+        "other_options": [
+            "overflow",
+            "underflow",
+            "leak"
+        ]
+    },
+    {
+        "q": "What is OOM (Out of Memory)?",
+        "type": "mcq",
+        "o": [
+            "System cannot allocate memory",
+            "File not found",
+            "Network error",
+            "Permission denied"
+        ]
+    },
+    {
+        "q": "OOM killer terminates processes on Linux.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match memory states:",
+        "type": "match",
+        "left": [
+            "Allocated",
+            "Free",
+            "Committed",
+            "Reserved"
+        ],
+        "right": [
+            "In use",
+            "Available",
+            "Backed by RAM/swap",
+            "Address space only"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    size_t huge = (size_t)-1;\n    void *p = malloc(huge);\n    printf(\"%s\", p ? \"Success\" : \"Failed\");\n    free(p);\n    return 0;\n}",
+        "o": [
+            "Failed",
+            "Success",
+            "Crash",
+            "Error"
+        ]
+    },
+    {
+        "q": "Very large allocations typically fail.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ value typically causes allocation failure.",
+        "type": "fill_blank",
+        "answers": [
+            "SIZE_MAX",
+            "(size_t)-1"
+        ],
+        "other_options": [
+            "0",
+            "1",
+            "-1"
+        ]
+    },
+    {
+        "q": "What is virtual memory?",
+        "type": "mcq",
+        "o": [
+            "Abstraction of physical memory",
+            "Physical RAM only",
+            "Disk storage",
+            "Network memory"
+        ]
+    },
+    {
+        "q": "Virtual memory allows processes to exceed physical RAM.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange virtual memory concepts:",
+        "type": "rearrange",
+        "words": [
+            "Virtual address",
+            "Page table",
+            "Physical address",
+            "RAM or swap"
+        ]
+    },
+    {
+        "q": "What is paging?",
+        "type": "mcq",
+        "o": [
+            "Memory divided into fixed-size pages",
+            "Variable-size allocation",
+            "Stack allocation",
+            "Register allocation"
+        ]
+    },
+    {
+        "q": "Page fault loads page from disk to RAM.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ size is typically 4KB on modern systems.",
+        "type": "fill_blank",
+        "answers": [
+            "page"
+        ],
+        "other_options": [
+            "block",
+            "sector",
+            "segment"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    void *pages[100];\n    for(int i = 0; i < 100; i++) {\n        pages[i] = malloc(4096);\n    }\n    printf(\"Allocated 100 pages\");\n    for(int i = 0; i < 100; i++) free(pages[i]);\n    return 0;\n}",
+        "o": [
+            "Allocated 100 pages",
+            "Error",
+            "NULL",
+            "0"
+        ]
+    },
+    {
+        "q": "Page-aligned allocations can be more efficient.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match memory regions:",
+        "type": "match",
+        "left": [
+            "Text",
+            "Data",
+            "BSS",
+            "Heap"
+        ],
+        "right": [
+            "Code segment",
+            "Initialized globals",
+            "Uninitialized globals",
+            "Dynamic memory"
+        ]
+    },
+    {
+        "q": "What is brk/sbrk used for?",
+        "type": "mcq",
+        "o": [
+            "Adjust heap size",
+            "Allocate stack",
+            "Map files",
+            "Create threads"
+        ]
+    },
+    {
+        "q": "Modern allocators prefer mmap over sbrk.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ system call adjusts the program break.",
+        "type": "fill_blank",
+        "answers": [
+            "brk",
+            "sbrk"
+        ],
+        "other_options": [
+            "malloc",
+            "mmap",
+            "alloc"
+        ]
+    },
+    {
+        "q": "What is mmap used for?",
+        "type": "mcq",
+        "o": [
+            "Map memory regions",
+            "Copy memory",
+            "Compare memory",
+            "Fill memory"
+        ]
+    },
+    {
+        "q": "Large allocations often use mmap directly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange allocator internals:",
+        "type": "rearrange",
+        "words": [
+            "Request from OS",
+            "Manage free list",
+            "Satisfy allocation",
+            "Track metadata",
+            "Return to OS"
+        ]
+    },
+    {
+        "q": "What is a free list?",
+        "type": "mcq",
+        "o": [
+            "List of available memory blocks",
+            "List of allocated blocks",
+            "List of pages",
+            "List of processes"
+        ]
+    },
+    {
+        "q": "Allocators maintain free lists for fast allocation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ list tracks available memory chunks.",
+        "type": "fill_blank",
+        "answers": [
+            "free"
+        ],
+        "other_options": [
+            "used",
+            "allocated",
+            "busy"
+        ]
+    },
+    {
+        "q": "What is memory coalescing?",
+        "type": "mcq",
+        "o": [
+            "Merging adjacent free blocks",
+            "Splitting blocks",
+            "Moving blocks",
+            "Copying blocks"
+        ]
+    },
+    {
+        "q": "Coalescing reduces fragmentation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match allocator strategies:",
+        "type": "match",
+        "left": [
+            "First fit",
+            "Best fit",
+            "Worst fit",
+            "Buddy"
+        ],
+        "right": [
+            "First suitable block",
+            "Smallest suitable",
+            "Largest block",
+            "Power-of-2 splits"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    void *blocks[3];\n    for(int i = 0; i < 3; i++) blocks[i] = malloc(100);\n    free(blocks[1]);\n    blocks[1] = malloc(50);\n    printf(\"%s\", blocks[1] ? \"Reused\" : \"New\");\n    for(int i = 0; i < 3; i++) free(blocks[i]);\n    return 0;\n}",
+        "o": [
+            "Reused",
+            "New",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Freed memory can be reused for new allocations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ allocator reuses freed blocks efficiently.",
+        "type": "fill_blank",
+        "answers": [
+            "slab",
+            "pool"
+        ],
+        "other_options": [
+            "stack",
+            "heap",
+            "global"
+        ]
+    },
+    {
+        "q": "What is thread-local storage?",
+        "type": "mcq",
+        "o": [
+            "Per-thread private data",
+            "Shared memory",
+            "Global memory",
+            "Stack memory"
+        ]
+    },
+    {
+        "q": "Thread-local allocators avoid contention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange multi-threaded allocation:",
+        "type": "rearrange",
+        "words": [
+            "Thread-local cache",
+            "Central heap",
+            "Lock contention",
+            "Lock-free operations"
+        ]
+    },
+    {
+        "q": "What is lock-free allocation?",
+        "type": "mcq",
+        "o": [
+            "Allocation without mutex locks",
+            "Slower allocation",
+            "Stack allocation",
+            "Static allocation"
+        ]
+    },
+    {
+        "q": "Lock-free allocators scale better with threads.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ allocator uses atomic operations.",
+        "type": "fill_blank",
+        "answers": [
+            "lock-free"
+        ],
+        "other_options": [
+            "locked",
+            "blocking",
+            "synchronized"
+        ]
+    },
+    {
+        "q": "What is jemalloc?",
+        "type": "mcq",
+        "o": [
+            "High-performance allocator",
+            "Compiler",
+            "Debugger",
+            "Profiler"
+        ]
+    },
+    {
+        "q": "jemalloc is used by Firefox and Facebook.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match allocator implementations:",
+        "type": "match",
+        "left": [
+            "ptmalloc",
+            "jemalloc",
+            "tcmalloc",
+            "mimalloc"
+        ],
+        "right": [
+            "glibc default",
+            "BSD/Facebook",
+            "Google",
+            "Microsoft"
+        ]
+    },
+    {
+        "q": "What is garbage collection?",
+        "type": "mcq",
+        "o": [
+            "Automatic memory reclamation",
+            "Manual deallocation",
+            "Memory compression",
+            "Memory encryption"
+        ]
+    },
+    {
+        "q": "C does not have built-in garbage collection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ collector automatically frees unused memory.",
+        "type": "fill_blank",
+        "answers": [
+            "garbage"
+        ],
+        "other_options": [
+            "memory",
+            "resource",
+            "object"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *p = malloc(sizeof(int));\n    *p = 123;\n    int *q = p;\n    free(p);\n    p = NULL;\n    printf(\"%s\", q == NULL ? \"NULL\" : \"Dangling\");\n    return 0;\n}",
+        "o": [
+            "Dangling",
+            "NULL",
+            "123",
+            "Error"
+        ]
+    },
+    {
+        "q": "Multiple pointers can alias the same memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange alias handling:",
+        "type": "rearrange",
+        "words": [
+            "Track all aliases",
+            "Free only once",
+            "Nullify all aliases",
+            "Avoid use after free"
+        ]
+    },
+    {
+        "q": "What is memory profiling?",
+        "type": "mcq",
+        "o": [
+            "Analyzing memory usage patterns",
+            "Compiling code",
+            "Debugging syntax",
+            "Optimizing CPU"
+        ]
+    },
+    {
+        "q": "Memory profilers help identify leaks and bloat.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ tool analyzes memory usage.",
+        "type": "fill_blank",
+        "answers": [
+            "profiler"
+        ],
+        "other_options": [
+            "compiler",
+            "linker",
+            "assembler"
+        ]
+    },
+    {
+        "q": "What is ASAN?",
+        "type": "mcq",
+        "o": [
+            "AddressSanitizer",
+            "Array Sanitizer",
+            "Allocation Sanitizer",
+            "Arithmetic Sanitizer"
+        ]
+    },
+    {
+        "q": "ASAN detects out-of-bounds access.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match sanitizers:",
+        "type": "match",
+        "left": [
+            "ASAN",
+            "MSAN",
+            "TSAN",
+            "UBSAN"
+        ],
+        "right": [
+            "Address errors",
+            "Uninitialized memory",
+            "Thread races",
+            "Undefined behavior"
+        ]
+    },
+    {
+        "q": "What flag enables AddressSanitizer in GCC/Clang?",
+        "type": "mcq",
+        "o": [
+            "-fsanitize=address",
+            "-g",
+            "-O2",
+            "-Wall"
+        ]
+    },
+    {
+        "q": "Sanitizers add runtime overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The -fsanitize=______ flag enables memory checking.",
+        "type": "fill_blank",
+        "answers": [
+            "address"
+        ],
+        "other_options": [
+            "memory",
+            "leak",
+            "undefined"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    printf(\"Dynamic memory mastery complete!\");\n    return 0;\n}",
+        "o": [
+            "Dynamic memory mastery complete!",
+            "Error",
+            "NULL",
+            "0"
+        ]
+    },
+    {
+        "q": "Understanding memory management is essential for C.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange memory learning progression:",
+        "type": "rearrange",
+        "words": [
+            "Basic allocation",
+            "Error handling",
+            "Data structures",
+            "Advanced patterns",
+            "Debugging"
+        ]
+    },
+    {
+        "q": "What is flexible array member (FAM)?",
+        "type": "mcq",
+        "o": [
+            "Array at end of struct with unspecified size",
+            "Fixed-size array",
+            "Pointer to array",
+            "Static array"
+        ]
+    },
+    {
+        "q": "FAM must be the last member of a struct.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ member allows variable-size structures.",
+        "type": "fill_blank",
+        "answers": [
+            "flexible array",
+            "FAM"
+        ],
+        "other_options": [
+            "fixed",
+            "static",
+            "const"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\ntypedef struct { int size; int data[]; } FlexArray;\nint main() {\n    FlexArray *fa = malloc(sizeof(FlexArray) + 3 * sizeof(int));\n    fa->size = 3;\n    for(int i = 0; i < 3; i++) fa->data[i] = i * i;\n    printf(\"%d\", fa->data[2]);\n    free(fa);\n    return 0;\n}",
+        "o": [
+            "4",
+            "2",
+            "9",
+            "Error"
+        ]
+    },
+    {
+        "q": "FAM requires special allocation calculation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match struct memory patterns:",
+        "type": "match",
+        "left": [
+            "Fixed struct",
+            "Pointer member",
+            "Flexible array",
+            "Nested struct"
+        ],
+        "right": [
+            "sizeof(struct)",
+            "Separate allocation",
+            "Variable size",
+            "Contained struct"
+        ]
+    },
+    {
+        "q": "What is memory-mapped file?",
+        "type": "mcq",
+        "o": [
+            "File mapped to process address space",
+            "Encrypted file",
+            "Compressed file",
+            "Network file"
+        ]
+    },
+    {
+        "q": "mmap can map files to memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function maps files or anonymous memory.",
+        "type": "fill_blank",
+        "answers": [
+            "mmap"
+        ],
+        "other_options": [
+            "malloc",
+            "fopen",
+            "fread"
+        ]
+    },
+    {
+        "q": "What is anonymous mapping?",
+        "type": "mcq",
+        "o": [
+            "Memory not backed by file",
+            "Named memory region",
+            "File mapping",
+            "Shared memory"
+        ]
+    },
+    {
+        "q": "Anonymous mmap is used for large allocations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange mmap parameters:",
+        "type": "rearrange",
+        "words": [
+            "Address hint",
+            "Length",
+            "Protection",
+            "Flags",
+            "File descriptor",
+            "Offset"
+        ]
+    },
+    {
+        "q": "What is MAP_PRIVATE?",
+        "type": "mcq",
+        "o": [
+            "Copy-on-write private mapping",
+            "Shared mapping",
+            "Read-only mapping",
+            "Executable mapping"
+        ]
+    },
+    {
+        "q": "MAP_SHARED allows multiple processes to share mapping.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ flag creates copy-on-write mapping.",
+        "type": "fill_blank",
+        "answers": [
+            "MAP_PRIVATE"
+        ],
+        "other_options": [
+            "MAP_SHARED",
+            "MAP_ANON",
+            "MAP_FIXED"
+        ]
+    },
+    {
+        "q": "What is munmap?",
+        "type": "mcq",
+        "o": [
+            "Unmap memory region",
+            "Allocate memory",
+            "Copy memory",
+            "Lock memory"
+        ]
+    },
+    {
+        "q": "munmap releases memory-mapped regions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match mmap operations:",
+        "type": "match",
+        "left": [
+            "mmap",
+            "munmap",
+            "mprotect",
+            "msync"
+        ],
+        "right": [
+            "Create mapping",
+            "Remove mapping",
+            "Change protection",
+            "Sync to file"
+        ]
+    },
+    {
+        "q": "What is mlock?",
+        "type": "mcq",
+        "o": [
+            "Lock memory in RAM",
+            "Lock file",
+            "Lock mutex",
+            "Lock thread"
+        ]
+    },
+    {
+        "q": "mlock prevents memory from being swapped.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function locks memory in physical RAM.",
+        "type": "fill_blank",
+        "answers": [
+            "mlock"
+        ],
+        "other_options": [
+            "lock",
+            "flock",
+            "pthread_mutex_lock"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\n#include <stdint.h>\nint main() {\n    uintptr_t addr = (uintptr_t)malloc(100);\n    printf(\"%s\", (addr & 0xF) == 0 ? \"Aligned\" : \"Unaligned\");\n    free((void*)addr);\n    return 0;\n}",
+        "o": [
+            "Aligned",
+            "Unaligned",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "malloc typically returns 16-byte aligned memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange alignment requirements:",
+        "type": "rearrange",
+        "words": [
+            "char: 1",
+            "short: 2",
+            "int: 4",
+            "double: 8",
+            "SIMD: 16+"
+        ]
+    },
+    {
+        "q": "What is posix_memalign?",
+        "type": "mcq",
+        "o": [
+            "Allocate with custom alignment",
+            "Standard malloc",
+            "Free memory",
+            "Copy memory"
+        ]
+    },
+    {
+        "q": "posix_memalign can allocate with arbitrary power-of-2 alignment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function allocates with specified alignment.",
+        "type": "fill_blank",
+        "answers": [
+            "posix_memalign",
+            "aligned_alloc"
+        ],
+        "other_options": [
+            "malloc",
+            "calloc",
+            "realloc"
+        ]
+    },
+    {
+        "q": "What is SIMD alignment requirement?",
+        "type": "mcq",
+        "o": [
+            "16, 32, or 64 bytes typically",
+            "1 byte",
+            "4 bytes",
+            "8 bytes"
+        ]
+    },
+    {
+        "q": "SSE requires 16-byte alignment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match SIMD alignment:",
+        "type": "match",
+        "left": [
+            "SSE",
+            "AVX",
+            "AVX-512",
+            "NEON"
+        ],
+        "right": [
+            "16 bytes",
+            "32 bytes",
+            "64 bytes",
+            "16 bytes"
+        ]
+    },
+    {
+        "q": "What is cache line alignment?",
+        "type": "mcq",
+        "o": [
+            "Aligning to cache line boundary",
+            "Memory allocation size",
+            "Page alignment",
+            "File alignment"
+        ]
+    },
+    {
+        "q": "Cache line size is typically 64 bytes on x86.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ alignment improves cache performance.",
+        "type": "fill_blank",
+        "answers": [
+            "cache line"
+        ],
+        "other_options": [
+            "page",
+            "word",
+            "byte"
+        ]
+    },
+    {
+        "q": "What is false sharing?",
+        "type": "mcq",
+        "o": [
+            "Cache line contention between threads",
+            "Memory leak",
+            "Double free",
+            "Buffer overflow"
+        ]
+    },
+    {
+        "q": "False sharing degrades multi-threaded performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange cache optimization:",
+        "type": "rearrange",
+        "words": [
+            "Identify hot data",
+            "Align to cache line",
+            "Pad structures",
+            "Measure performance"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *arr = malloc(100 * sizeof(int));\n    int *ptr = arr + 50;\n    ptrdiff_t diff = ptr - arr;\n    printf(\"%td\", diff);\n    free(arr);\n    return 0;\n}",
+        "o": [
+            "50",
+            "200",
+            "100",
+            "Error"
+        ]
+    },
+    {
+        "q": "ptrdiff_t is the correct type for pointer differences.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ type stores pointer subtraction results.",
+        "type": "fill_blank",
+        "answers": [
+            "ptrdiff_t"
+        ],
+        "other_options": [
+            "size_t",
+            "int",
+            "long"
+        ]
+    },
+    {
+        "q": "What is intptr_t?",
+        "type": "mcq",
+        "o": [
+            "Integer type that can hold pointer",
+            "Pointer to integer",
+            "Floating point type",
+            "Structure type"
+        ]
+    },
+    {
+        "q": "intptr_t allows pointer arithmetic as integers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match pointer integer types:",
+        "type": "match",
+        "left": [
+            "intptr_t",
+            "uintptr_t",
+            "ptrdiff_t",
+            "size_t"
+        ],
+        "right": [
+            "Signed pointer int",
+            "Unsigned pointer int",
+            "Pointer difference",
+            "Object size"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    size_t n = 5;\n    int *arr = calloc(n, sizeof *arr);\n    printf(\"%zu\", sizeof *arr);\n    free(arr);\n    return 0;\n}",
+        "o": [
+            "4",
+            "5",
+            "20",
+            "Error"
+        ]
+    },
+    {
+        "q": "sizeof *ptr avoids type duplication.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange allocation best practices:",
+        "type": "rearrange",
+        "words": [
+            "Use sizeof *ptr",
+            "Check NULL",
+            "Initialize data",
+            "Track ownership",
+            "Free properly"
+        ]
+    },
+    {
+        "q": "What is compound literal allocation?",
+        "type": "mcq",
+        "o": [
+            "Stack allocation with literal syntax",
+            "Heap allocation",
+            "Static allocation",
+            "Thread-local allocation"
+        ]
+    },
+    {
+        "q": "Compound literals have block scope lifetime.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ literals create temporary objects.",
+        "type": "fill_blank",
+        "answers": [
+            "compound"
+        ],
+        "other_options": [
+            "string",
+            "integer",
+            "floating"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int (*arr)[5] = malloc(3 * sizeof *arr);\n    arr[1][2] = 42;\n    printf(\"%d\", arr[1][2]);\n    free(arr);\n    return 0;\n}",
+        "o": [
+            "42",
+            "0",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer to array enables true 2D allocation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match array allocation patterns:",
+        "type": "match",
+        "left": [
+            "int **",
+            "int (*)[N]",
+            "int *",
+            "int[]"
+        ],
+        "right": [
+            "Jagged array",
+            "Contiguous 2D",
+            "Flat 1D",
+            "Stack array"
+        ]
+    },
+    {
+        "q": "What is VLA (Variable Length Array)?",
+        "type": "mcq",
+        "o": [
+            "Stack array with runtime size",
+            "Heap array",
+            "Static array",
+            "Global array"
+        ]
+    },
+    {
+        "q": "VLAs are allocated on the stack.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ array has size determined at runtime.",
+        "type": "fill_blank",
+        "answers": [
+            "variable length",
+            "VLA"
+        ],
+        "other_options": [
+            "fixed",
+            "static",
+            "dynamic"
+        ]
+    },
+    {
+        "q": "What is alloca?",
+        "type": "mcq",
+        "o": [
+            "Allocate on stack",
+            "Allocate on heap",
+            "Free memory",
+            "Copy memory"
+        ]
+    },
+    {
+        "q": "alloca memory is automatically freed on function return.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange stack vs heap tradeoffs:",
+        "type": "rearrange",
+        "words": [
+            "Stack: fast alloc",
+            "Stack: limited size",
+            "Heap: slower alloc",
+            "Heap: large size",
+            "Heap: explicit free"
+        ]
+    },
+    {
+        "q": "What is the danger of alloca?",
+        "type": "mcq",
+        "o": [
+            "Stack overflow with large sizes",
+            "Memory leak",
+            "Double free",
+            "Use after free"
+        ]
+    },
+    {
+        "q": "alloca should not be used in loops.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function allocates on stack like VLA.",
+        "type": "fill_blank",
+        "answers": [
+            "alloca"
+        ],
+        "other_options": [
+            "malloc",
+            "calloc",
+            "realloc"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\nint main() {\n    size_t len = 10;\n    char *buf = malloc(len);\n    memset(buf, 'A', len - 1);\n    buf[len - 1] = '\\0';\n    printf(\"%zu\", strlen(buf));\n    free(buf);\n    return 0;\n}",
+        "o": [
+            "9",
+            "10",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "strlen does not count the null terminator.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match string memory functions:",
+        "type": "match",
+        "left": [
+            "strlen",
+            "strcpy",
+            "strcat",
+            "strcmp"
+        ],
+        "right": [
+            "Get length",
+            "Copy string",
+            "Append string",
+            "Compare strings"
+        ]
+    },
+    {
+        "q": "What is reallocarray?",
+        "type": "mcq",
+        "o": [
+            "Overflow-safe realloc for arrays",
+            "Standard realloc",
+            "Free function",
+            "Copy function"
+        ]
+    },
+    {
+        "q": "reallocarray checks for multiplication overflow.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function prevents size overflow in realloc.",
+        "type": "fill_blank",
+        "answers": [
+            "reallocarray"
+        ],
+        "other_options": [
+            "realloc",
+            "malloc",
+            "calloc"
+        ]
+    },
+    {
+        "q": "What is integer overflow in size calculation?",
+        "type": "mcq",
+        "o": [
+            "Size wraps around causing small allocation",
+            "Allocation fails",
+            "Memory is doubled",
+            "No effect"
+        ]
+    },
+    {
+        "q": "Size overflow can cause buffer overflows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange overflow prevention:",
+        "type": "rearrange",
+        "words": [
+            "Check operands",
+            "Use safe multiply",
+            "Verify result",
+            "Handle overflow"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    size_t a = (size_t)-1;\n    size_t b = 2;\n    size_t result;\n    if (__builtin_mul_overflow(a, b, &result)) {\n        printf(\"Overflow\");\n    } else {\n        printf(\"%zu\", result);\n    }\n    return 0;\n}",
+        "o": [
+            "Overflow",
+            "Large number",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "__builtin_mul_overflow detects integer overflow.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match overflow detection:",
+        "type": "match",
+        "left": [
+            "__builtin_add_overflow",
+            "__builtin_sub_overflow",
+            "__builtin_mul_overflow",
+            "SIZE_MAX check"
+        ],
+        "right": [
+            "Addition overflow",
+            "Subtraction overflow",
+            "Multiplication overflow",
+            "Manual bounds check"
+        ]
+    },
+    {
+        "q": "What is use-after-free?",
+        "type": "mcq",
+        "o": [
+            "Accessing memory after free",
+            "Normal memory access",
+            "Double allocation",
+            "Memory leak"
+        ]
+    },
+    {
+        "q": "Use-after-free is a serious security vulnerability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ vulnerability exploits freed memory access.",
+        "type": "fill_blank",
+        "answers": [
+            "use-after-free",
+            "UAF"
+        ],
+        "other_options": [
+            "buffer-overflow",
+            "double-free",
+            "leak"
+        ]
+    },
+    {
+        "q": "What is heap spray?",
+        "type": "mcq",
+        "o": [
+            "Filling heap with controlled data for exploit",
+            "Cleaning heap",
+            "Defragmenting heap",
+            "Encrypting heap"
+        ]
+    },
+    {
+        "q": "Heap spray attacks exploit predictable allocation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange exploit mitigation:",
+        "type": "rearrange",
+        "words": [
+            "ASLR",
+            "Stack canaries",
+            "DEP/NX",
+            "CFI",
+            "Safe allocator"
+        ]
+    },
+    {
+        "q": "What is ASLR?",
+        "type": "mcq",
+        "o": [
+            "Address Space Layout Randomization",
+            "Allocation Size Limit Range",
+            "Array Stack Limit Register",
+            "Advanced Security Lock Runtime"
+        ]
+    },
+    {
+        "q": "ASLR randomizes memory layout each run.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ makes memory addresses unpredictable.",
+        "type": "fill_blank",
+        "answers": [
+            "ASLR",
+            "Address Space Layout Randomization"
+        ],
+        "other_options": [
+            "DEP",
+            "NX",
+            "CFI"
+        ]
+    },
+    {
+        "q": "What is DEP/NX?",
+        "type": "mcq",
+        "o": [
+            "Data Execution Prevention",
+            "Dynamic Error Prevention",
+            "Double Encryption Protocol",
+            "Debug Exit Point"
+        ]
+    },
+    {
+        "q": "NX bit prevents code execution from data pages.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match security features:",
+        "type": "match",
+        "left": [
+            "ASLR",
+            "DEP",
+            "Stack canary",
+            "Safe allocator"
+        ],
+        "right": [
+            "Randomize addresses",
+            "No execute data",
+            "Detect stack smashing",
+            "Detect heap corruption"
+        ]
+    },
+    {
+        "q": "What is CFI?",
+        "type": "mcq",
+        "o": [
+            "Control Flow Integrity",
+            "Code Format Interface",
+            "Crash Failure Index",
+            "C Function Interface"
+        ]
+    },
+    {
+        "q": "CFI prevents control flow hijacking.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ integrity prevents ROP attacks.",
+        "type": "fill_blank",
+        "answers": [
+            "control flow",
+            "CFI"
+        ],
+        "other_options": [
+            "data",
+            "memory",
+            "pointer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    volatile int *p = malloc(sizeof(int));\n    *p = 0x12345678;\n    free((void*)p);\n    printf(\"Freed\\n\");\n    return 0;\n}",
+        "o": [
+            "Freed",
+            "0x12345678",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "volatile prevents compiler optimizations on variable.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange secure memory handling:",
+        "type": "rearrange",
+        "words": [
+            "Zero sensitive data",
+            "Free memory",
+            "Nullify pointer",
+            "Verify cleanup"
+        ]
+    },
+    {
+        "q": "What is memory scrubbing?",
+        "type": "mcq",
+        "o": [
+            "Zeroing memory before free",
+            "Allocating memory",
+            "Compressing memory",
+            "Encrypting memory"
+        ]
+    },
+    {
+        "q": "Scrubbing prevents sensitive data leaks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function zeroes memory securely.",
+        "type": "fill_blank",
+        "answers": [
+            "memset_s",
+            "explicit_bzero"
+        ],
+        "other_options": [
+            "memset",
+            "bzero",
+            "memcpy"
+        ]
+    },
+    {
+        "q": "What is explicit_bzero?",
+        "type": "mcq",
+        "o": [
+            "Non-optimizable memory zero",
+            "Standard memset",
+            "Memory copy",
+            "Memory compare"
+        ]
+    },
+    {
+        "q": "Compiler may optimize away memset before free.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match secure memory functions:",
+        "type": "match",
+        "left": [
+            "memset_s",
+            "explicit_bzero",
+            "SecureZeroMemory",
+            "volatile memset"
+        ],
+        "right": [
+            "C11 secure zero",
+            "BSD secure zero",
+            "Windows secure zero",
+            "Compiler trick"
+        ]
+    },
+    {
+        "q": "What is memory barrier?",
+        "type": "mcq",
+        "o": [
+            "Prevents memory reordering",
+            "Allocates memory",
+            "Frees memory",
+            "Copies memory"
+        ]
+    },
+    {
+        "q": "Memory barriers ensure ordering in multi-threaded code.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ barrier prevents instruction reordering.",
+        "type": "fill_blank",
+        "answers": [
+            "memory"
+        ],
+        "other_options": [
+            "code",
+            "data",
+            "stack"
+        ]
+    },
+    {
+        "q": "What is acquire-release semantics?",
+        "type": "mcq",
+        "o": [
+            "Memory ordering for synchronization",
+            "Allocation strategy",
+            "Deallocation strategy",
+            "Compression technique"
+        ]
+    },
+    {
+        "q": "Acquire load prevents reordering with subsequent reads.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange memory ordering:",
+        "type": "rearrange",
+        "words": [
+            "Relaxed",
+            "Consume",
+            "Acquire",
+            "Release",
+            "Seq-cst"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\n#include <stdatomic.h>\nint main() {\n    atomic_int *a = malloc(sizeof(atomic_int));\n    atomic_store(a, 42);\n    printf(\"%d\", atomic_load(a));\n    free(a);\n    return 0;\n}",
+        "o": [
+            "42",
+            "0",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "atomic operations are thread-safe.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match atomic operations:",
+        "type": "match",
+        "left": [
+            "atomic_load",
+            "atomic_store",
+            "atomic_exchange",
+            "atomic_compare_exchange"
+        ],
+        "right": [
+            "Read value",
+            "Write value",
+            "Swap value",
+            "Conditional swap"
+        ]
+    },
+    {
+        "q": "What is lock-free data structure?",
+        "type": "mcq",
+        "o": [
+            "Structure without mutex locks",
+            "Immutable structure",
+            "Static structure",
+            "Simple array"
+        ]
+    },
+    {
+        "q": "Lock-free structures use atomic operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ structures avoid blocking.",
+        "type": "fill_blank",
+        "answers": [
+            "lock-free"
+        ],
+        "other_options": [
+            "locked",
+            "blocking",
+            "mutex"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    #pragma pack(push, 1)\n    typedef struct { char c; int i; } Packed;\n    #pragma pack(pop)\n    printf(\"%zu\", sizeof(Packed));\n    return 0;\n}",
+        "o": [
+            "5",
+            "8",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "pragma pack changes structure packing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange packing considerations:",
+        "type": "rearrange",
+        "words": [
+            "Alignment requirements",
+            "Cache performance",
+            "Network protocol",
+            "File format",
+            "Memory footprint"
+        ]
+    },
+    {
+        "q": "What is structure padding?",
+        "type": "mcq",
+        "o": [
+            "Bytes added for alignment",
+            "Data bytes",
+            "Pointer bytes",
+            "Header bytes"
+        ]
+    },
+    {
+        "q": "Padding ensures proper alignment for members.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ optimization reorders members to reduce padding.",
+        "type": "fill_blank",
+        "answers": [
+            "structure packing",
+            "member ordering"
+        ],
+        "other_options": [
+            "loop unrolling",
+            "inlining",
+            "vectorization"
+        ]
+    },
+    {
+        "q": "What is offsetof?",
+        "type": "mcq",
+        "o": [
+            "Get byte offset of struct member",
+            "Get size of struct",
+            "Get type of member",
+            "Get count of members"
+        ]
+    },
+    {
+        "q": "offsetof is useful for intrusive data structures.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match structure introspection:",
+        "type": "match",
+        "left": [
+            "sizeof",
+            "offsetof",
+            "_Alignof",
+            "typeof"
+        ],
+        "right": [
+            "Structure size",
+            "Member offset",
+            "Alignment requirement",
+            "Type of expression"
+        ]
+    },
+    {
+        "q": "What is container_of?",
+        "type": "mcq",
+        "o": [
+            "Get container struct from member pointer",
+            "Allocate container",
+            "Free container",
+            "Copy container"
+        ]
+    },
+    {
+        "q": "container_of is used in Linux kernel extensively.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ macro calculates containing structure address.",
+        "type": "fill_blank",
+        "answers": [
+            "container_of"
+        ],
+        "other_options": [
+            "offsetof",
+            "sizeof",
+            "typeof"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\n#include <stddef.h>\ntypedef struct { int a; int b; } Pair;\nint main() {\n    printf(\"%zu\", offsetof(Pair, b));\n    return 0;\n}",
+        "o": [
+            "4",
+            "0",
+            "8",
+            "Error"
+        ]
+    },
+    {
+        "q": "offsetof returns member's byte offset in struct.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange intrusive list operations:",
+        "type": "rearrange",
+        "words": [
+            "Embed node in data",
+            "Get container",
+            "Link nodes",
+            "Traverse list",
+            "Access data"
+        ]
+    },
+    {
+        "q": "What is buddy allocator?",
+        "type": "mcq",
+        "o": [
+            "Power-of-2 block splitting allocator",
+            "First-fit allocator",
+            "Best-fit allocator",
+            "Random allocator"
+        ]
+    },
+    {
+        "q": "Buddy allocator splits and merges power-of-2 blocks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ system uses buddy allocator for pages.",
+        "type": "fill_blank",
+        "answers": [
+            "Linux kernel",
+            "kernel"
+        ],
+        "other_options": [
+            "userspace",
+            "libc",
+            "glibc"
+        ]
+    },
+    {
+        "q": "What is slab allocator?",
+        "type": "mcq",
+        "o": [
+            "Object cache allocator",
+            "Page allocator",
+            "Stack allocator",
+            "Heap allocator"
+        ]
+    },
+    {
+        "q": "Slab allocator caches frequently-used object sizes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match Linux kernel allocators:",
+        "type": "match",
+        "left": [
+            "Buddy",
+            "Slab",
+            "SLUB",
+            "SLOB"
+        ],
+        "right": [
+            "Page allocator",
+            "Object cache",
+            "Modern slab",
+            "Embedded slab"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\ntypedef struct { int type; union { int i; float f; char c[8]; } data; } Variant;\nint main() {\n    Variant *v = malloc(sizeof(Variant));\n    v->type = 1;\n    v->data.i = 123;\n    printf(\"%d\", v->data.i);\n    free(v);\n    return 0;\n}",
+        "o": [
+            "123",
+            "0",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Tagged unions save memory for variant types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange type-safe variant pattern:",
+        "type": "rearrange",
+        "words": [
+            "Define type tag",
+            "Create union",
+            "Set tag on write",
+            "Check tag on read",
+            "Handle type"
+        ]
+    },
+    {
+        "q": "What is memory fence?",
+        "type": "mcq",
+        "o": [
+            "Instruction that orders memory accesses",
+            "Memory allocation boundary",
+            "Stack limit",
+            "Heap limit"
+        ]
+    },
+    {
+        "q": "Memory fences ensure visibility across threads.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ fence ensures all prior stores are visible.",
+        "type": "fill_blank",
+        "answers": [
+            "release"
+        ],
+        "other_options": [
+            "acquire",
+            "relaxed",
+            "consume"
+        ]
+    },
+    {
+        "q": "What is seq-cst ordering?",
+        "type": "mcq",
+        "o": [
+            "Sequentially consistent ordering",
+            "Random ordering",
+            "Relaxed ordering",
+            "No ordering"
+        ]
+    },
+    {
+        "q": "seq_cst is the strongest memory ordering.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match memory orderings:",
+        "type": "match",
+        "left": [
+            "Relaxed",
+            "Acquire",
+            "Release",
+            "Seq-cst"
+        ],
+        "right": [
+            "No ordering",
+            "Load barrier",
+            "Store barrier",
+            "Full barrier"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    void *mem = calloc(1, 1024);\n    if(mem) {\n        ((char*)mem)[1023] = 'X';\n        printf(\"OK\");\n        free(mem);\n    }\n    return 0;\n}",
+        "o": [
+            "OK",
+            "X",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "calloc(1, size) and calloc(size, 1) are equivalent.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange memory API best practices:",
+        "type": "rearrange",
+        "words": [
+            "Prefer calloc",
+            "Use sizeof *ptr",
+            "Check return",
+            "Initialize data",
+            "Document ownership"
+        ]
+    },
+    {
+        "q": "What is memory clobber in inline assembly?",
+        "type": "mcq",
+        "o": [
+            "Tells compiler memory may change",
+            "Clears memory",
+            "Allocates memory",
+            "Frees memory"
+        ]
+    },
+    {
+        "q": "Memory clobber prevents incorrect optimizations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ clobber tells compiler to reload memory.",
+        "type": "fill_blank",
+        "answers": [
+            "memory"
+        ],
+        "other_options": [
+            "register",
+            "stack",
+            "heap"
+        ]
+    },
+    {
+        "q": "What is restrict qualifier?",
+        "type": "mcq",
+        "o": [
+            "Promise no pointer aliasing",
+            "Restrict access",
+            "Limit size",
+            "Force alignment"
+        ]
+    },
+    {
+        "q": "restrict enables better optimization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match C99 qualifiers:",
+        "type": "match",
+        "left": [
+            "const",
+            "volatile",
+            "restrict",
+            "_Atomic"
+        ],
+        "right": [
+            "Read-only",
+            "No optimize",
+            "No aliasing",
+            "Thread-safe"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nvoid copy(int * restrict dst, const int * restrict src, size_t n) {\n    for(size_t i = 0; i < n; i++) dst[i] = src[i];\n}\nint main() {\n    int *a = malloc(3 * sizeof(int));\n    int *b = malloc(3 * sizeof(int));\n    a[0] = 1; a[1] = 2; a[2] = 3;\n    copy(b, a, 3);\n    printf(\"%d\", b[2]);\n    free(a); free(b);\n    return 0;\n}",
+        "o": [
+            "3",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "restrict allows compiler to assume no overlap.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange optimization qualifiers:",
+        "type": "rearrange",
+        "words": [
+            "const for immutable",
+            "restrict for no alias",
+            "inline for small funcs",
+            "static for internal"
+        ]
+    },
+    {
+        "q": "What is placement in memory allocators?",
+        "type": "mcq",
+        "o": [
+            "Where block is allocated",
+            "Size of block",
+            "Type of block",
+            "Owner of block"
+        ]
+    },
+    {
+        "q": "First-fit finds first suitable block.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ fit strategy finds smallest block.",
+        "type": "fill_blank",
+        "answers": [
+            "best"
+        ],
+        "other_options": [
+            "first",
+            "worst",
+            "next"
+        ]
+    },
+    {
+        "q": "What is next-fit allocator?",
+        "type": "mcq",
+        "o": [
+            "Continues search from last position",
+            "Always starts from beginning",
+            "Finds largest block",
+            "Random search"
+        ]
+    },
+    {
+        "q": "Next-fit distributes allocations across heap.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match allocator behaviors:",
+        "type": "match",
+        "left": [
+            "First-fit",
+            "Best-fit",
+            "Next-fit",
+            "Worst-fit"
+        ],
+        "right": [
+            "Fast, may fragment",
+            "Space-efficient, slow",
+            "Distributed usage",
+            "Leaves large holes"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    char *s1 = malloc(10);\n    char *s2 = malloc(20);\n    char *s3 = malloc(10);\n    free(s1);\n    free(s3);\n    char *s4 = malloc(10);\n    printf(\"%s\", s4 ? \"Allocated\" : \"Failed\");\n    free(s2); free(s4);\n    return 0;\n}",
+        "o": [
+            "Allocated",
+            "Failed",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Freed blocks may be reused for new allocations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange allocator lifecycle:",
+        "type": "rearrange",
+        "words": [
+            "Initialize heap",
+            "Maintain free list",
+            "Allocate blocks",
+            "Free blocks",
+            "Coalesce free blocks"
+        ]
+    },
+    {
+        "q": "What is memory throughput?",
+        "type": "mcq",
+        "o": [
+            "Bytes transferred per second",
+            "Allocation count",
+            "Free count",
+            "Block size"
+        ]
+    },
+    {
+        "q": "Memory bandwidth limits performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ hierarchy includes L1, L2, L3 caches.",
+        "type": "fill_blank",
+        "answers": [
+            "memory",
+            "cache"
+        ],
+        "other_options": [
+            "disk",
+            "network",
+            "register"
+        ]
+    },
+    {
+        "q": "What is working set?",
+        "type": "mcq",
+        "o": [
+            "Memory actively used by program",
+            "Total allocated memory",
+            "Free memory",
+            "Stack memory"
+        ]
+    },
+    {
+        "q": "Working set should fit in cache for best performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match memory hierarchy:",
+        "type": "match",
+        "left": [
+            "Registers",
+            "L1 cache",
+            "L3 cache",
+            "RAM"
+        ],
+        "right": [
+            "~1 cycle",
+            "~4 cycles",
+            "~40 cycles",
+            "~200 cycles"
+        ]
+    },
+    {
+        "q": "What is cache locality?",
+        "type": "mcq",
+        "o": [
+            "Accessing nearby memory addresses",
+            "Random access pattern",
+            "Network location",
+            "Disk position"
+        ]
+    },
+    {
+        "q": "Sequential access has good spatial locality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ locality accesses same data repeatedly.",
+        "type": "fill_blank",
+        "answers": [
+            "temporal"
+        ],
+        "other_options": [
+            "spatial",
+            "random",
+            "sequential"
+        ]
+    },
+    {
+        "q": "What is prefetching?",
+        "type": "mcq",
+        "o": [
+            "Loading data before it's needed",
+            "Writing data immediately",
+            "Freeing data early",
+            "Compressing data"
+        ]
+    },
+    {
+        "q": "Hardware prefetcher detects sequential patterns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange cache optimization steps:",
+        "type": "rearrange",
+        "words": [
+            "Analyze access patterns",
+            "Improve locality",
+            "Align to cache lines",
+            "Avoid false sharing",
+            "Measure improvement"
+        ]
+    },
+    {
+        "q": "What is write-back cache?",
+        "type": "mcq",
+        "o": [
+            "Writes to cache, later to memory",
+            "Writes directly to memory",
+            "Never writes to memory",
+            "Writes to disk"
+        ]
+    },
+    {
+        "q": "Write-through cache writes immediately to memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ cache delays memory writes.",
+        "type": "fill_blank",
+        "answers": [
+            "write-back"
+        ],
+        "other_options": [
+            "write-through",
+            "no-write",
+            "direct"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    #define N 1000000\n    int *arr = malloc(N * sizeof(int));\n    // Sequential access\n    for(int i = 0; i < N; i++) arr[i] = i;\n    long sum = 0;\n    for(int i = 0; i < N; i++) sum += arr[i];\n    printf(\"%ld\", sum % 1000);\n    free(arr);\n    return 0;\n}",
+        "o": [
+            "500",
+            "0",
+            "999",
+            "Error"
+        ]
+    },
+    {
+        "q": "Sequential access is cache-friendly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match cache patterns:",
+        "type": "match",
+        "left": [
+            "Sequential",
+            "Strided",
+            "Random",
+            "Blocked"
+        ],
+        "right": [
+            "Best locality",
+            "Moderate locality",
+            "Poor locality",
+            "Tile-based access"
+        ]
+    },
+    {
+        "q": "What is TLB?",
+        "type": "mcq",
+        "o": [
+            "Translation Lookaside Buffer",
+            "Total Load Bytes",
+            "Temporary Local Buffer",
+            "Thread Lock Block"
+        ]
+    },
+    {
+        "q": "TLB caches virtual-to-physical translations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ miss requires page table walk.",
+        "type": "fill_blank",
+        "answers": [
+            "TLB"
+        ],
+        "other_options": [
+            "cache",
+            "page",
+            "memory"
+        ]
+    },
+    {
+        "q": "What is huge pages?",
+        "type": "mcq",
+        "o": [
+            "Pages larger than 4KB",
+            "Many pages",
+            "Compressed pages",
+            "Encrypted pages"
+        ]
+    },
+    {
+        "q": "Huge pages reduce TLB misses.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange memory performance tools:",
+        "type": "rearrange",
+        "words": [
+            "perf",
+            "cachegrind",
+            "massif",
+            "heaptrack",
+            "valgrind"
+        ]
+    },
+    {
+        "q": "What is massif?",
+        "type": "mcq",
+        "o": [
+            "Valgrind heap profiler",
+            "CPU profiler",
+            "Disk profiler",
+            "Network profiler"
+        ]
+    },
+    {
+        "q": "Massif shows heap usage over time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ tool profiles memory allocation patterns.",
+        "type": "fill_blank",
+        "answers": [
+            "massif",
+            "heaptrack"
+        ],
+        "other_options": [
+            "gdb",
+            "strace",
+            "ltrace"
+        ]
+    },
+    {
+        "q": "What is heaptrack?",
+        "type": "mcq",
+        "o": [
+            "Lightweight heap profiler",
+            "CPU profiler",
+            "File tracker",
+            "Network monitor"
+        ]
+    },
+    {
+        "q": "heaptrack has lower overhead than Valgrind.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match profiling tools:",
+        "type": "match",
+        "left": [
+            "Valgrind",
+            "Massif",
+            "Heaptrack",
+            "perf"
+        ],
+        "right": [
+            "Memory errors",
+            "Heap usage",
+            "Fast profiling",
+            "Performance counters"
+        ]
+    },
+    {
+        "q": "Memory mastery requires understanding both theory and practice.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange memory expertise progression:",
+        "type": "rearrange",
+        "words": [
+            "Basic allocation",
+            "Error handling",
+            "Performance tuning",
+            "Security hardening",
+            "System integration"
+        ]
+    },
+    {
+        "q": "What is memory tagging?",
+        "type": "mcq",
+        "o": [
+            "Hardware-assisted memory safety",
+            "Labeling allocations",
+            "Naming memory regions",
+            "Commenting code"
+        ]
+    },
+    {
+        "q": "ARM MTE provides hardware memory tagging.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ extension adds memory tags on ARM.",
+        "type": "fill_blank",
+        "answers": [
+            "MTE",
+            "Memory Tagging Extension"
+        ],
+        "other_options": [
+            "SIMD",
+            "NEON",
+            "SVE"
+        ]
+    },
+    {
+        "q": "What is red zone in stack?",
+        "type": "mcq",
+        "o": [
+            "128-byte reserved area below stack pointer",
+            "Top of stack",
+            "Global memory",
+            "Heap memory"
+        ]
+    },
+    {
+        "q": "Red zone allows leaf functions to avoid stack adjustment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match ABI features:",
+        "type": "match",
+        "left": [
+            "Red zone",
+            "Shadow stack",
+            "Stack canary",
+            "Frame pointer"
+        ],
+        "right": [
+            "Leaf function optimization",
+            "Return address protection",
+            "Overflow detection",
+            "Stack unwinding"
+        ]
+    },
+    {
+        "q": "What is shadow stack?",
+        "type": "mcq",
+        "o": [
+            "Duplicate return address storage",
+            "Stack copy",
+            "Heap backup",
+            "Cache copy"
+        ]
+    },
+    {
+        "q": "Shadow stack protects return addresses.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ stack stores return addresses separately.",
+        "type": "fill_blank",
+        "answers": [
+            "shadow"
+        ],
+        "other_options": [
+            "main",
+            "alternate",
+            "backup"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    void *ptr = NULL;\n    ptr = realloc(ptr, 100);\n    if(ptr) printf(\"Allocated\");\n    free(ptr);\n    return 0;\n}",
+        "o": [
+            "Allocated",
+            "NULL",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "realloc(NULL, n) behaves like malloc(n).",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange realloc patterns:",
+        "type": "rearrange",
+        "words": [
+            "Start with NULL",
+            "Grow as needed",
+            "Shrink if possible",
+            "Free when done"
+        ]
+    },
+    {
+        "q": "What is memory sanitizer?",
+        "type": "mcq",
+        "o": [
+            "Detects uninitialized memory reads",
+            "Cleans memory",
+            "Encrypts memory",
+            "Compresses memory"
+        ]
+    },
+    {
+        "q": "MSAN detects use of uninitialized memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ sanitizer tracks initialization status.",
+        "type": "fill_blank",
+        "answers": [
+            "memory",
+            "MSAN"
+        ],
+        "other_options": [
+            "address",
+            "thread",
+            "undefined"
+        ]
+    },
+    {
+        "q": "What is leak sanitizer?",
+        "type": "mcq",
+        "o": [
+            "Detects memory not freed at exit",
+            "Fixes leaks",
+            "Compresses leaks",
+            "Encrypts leaks"
+        ]
+    },
+    {
+        "q": "LSAN runs at program exit to find leaks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match sanitizer outputs:",
+        "type": "match",
+        "left": [
+            "heap-buffer-overflow",
+            "stack-buffer-overflow",
+            "use-after-free",
+            "memory-leak"
+        ],
+        "right": [
+            "ASAN heap error",
+            "ASAN stack error",
+            "ASAN freed access",
+            "LSAN output"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\nint main() {\n    char *a = malloc(5);\n    char *b = malloc(5);\n    memcpy(a, \"test\", 5);\n    memcpy(b, a, 5);\n    printf(\"%s\", b);\n    free(a); free(b);\n    return 0;\n}",
+        "o": [
+            "test",
+            "NULL",
+            "Error",
+            "t"
+        ]
+    },
+    {
+        "q": "memcpy copies exact number of bytes specified.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange memcpy safety checks:",
+        "type": "rearrange",
+        "words": [
+            "Check dest size",
+            "Check src size",
+            "Check count",
+            "Verify no overlap",
+            "Copy data"
+        ]
+    },
+    {
+        "q": "What is buffer underflow?",
+        "type": "mcq",
+        "o": [
+            "Writing before buffer start",
+            "Writing past buffer end",
+            "Reading before start",
+            "Empty buffer"
+        ]
+    },
+    {
+        "q": "Underflow can corrupt adjacent data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ occurs when writing before buffer start.",
+        "type": "fill_blank",
+        "answers": [
+            "underflow",
+            "buffer underflow"
+        ],
+        "other_options": [
+            "overflow",
+            "leak",
+            "corruption"
+        ]
+    },
+    {
+        "q": "What is integer underflow?",
+        "type": "mcq",
+        "o": [
+            "Unsigned wraps to large value",
+            "Signed becomes negative",
+            "Zero result",
+            "Overflow"
+        ]
+    },
+    {
+        "q": "Unsigned underflow wraps to SIZE_MAX.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match integer issues:",
+        "type": "match",
+        "left": [
+            "Signed overflow",
+            "Unsigned overflow",
+            "Signed underflow",
+            "Unsigned underflow"
+        ],
+        "right": [
+            "Undefined behavior",
+            "Wraps to zero",
+            "Goes negative",
+            "Wraps to max"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    size_t n = 0;\n    n--;\n    if(n > 0) printf(\"Wrapped\");\n    return 0;\n}",
+        "o": [
+            "Wrapped",
+            "Nothing",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "size_t underflow wraps to maximum value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange size calculation safety:",
+        "type": "rearrange",
+        "words": [
+            "Check for zero",
+            "Check for overflow",
+            "Check for underflow",
+            "Perform calculation",
+            "Validate result"
+        ]
+    },
+    {
+        "q": "What is type confusion?",
+        "type": "mcq",
+        "o": [
+            "Treating memory as wrong type",
+            "Type mismatch error",
+            "Compiler warning",
+            "Linker error"
+        ]
+    },
+    {
+        "q": "Type confusion can lead to exploits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ confusion treats data as different type.",
+        "type": "fill_blank",
+        "answers": [
+            "type"
+        ],
+        "other_options": [
+            "size",
+            "location",
+            "owner"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    union { int i; float f; } u;\n    u.i = 0x40400000;\n    printf(\"%.1f\", u.f);\n    return 0;\n}",
+        "o": [
+            "3.0",
+            "0.0",
+            "1.0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Union type punning reinterprets bit patterns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match type punning methods:",
+        "type": "match",
+        "left": [
+            "Union",
+            "memcpy",
+            "Pointer cast",
+            "Bit manipulation"
+        ],
+        "right": [
+            "Defined in C",
+            "Always safe",
+            "May violate aliasing",
+            "Manual conversion"
+        ]
+    },
+    {
+        "q": "What is strict aliasing?",
+        "type": "mcq",
+        "o": [
+            "Compiler assumes different types don't alias",
+            "All pointers can alias",
+            "No aliasing allowed",
+            "Full aliasing"
+        ]
+    },
+    {
+        "q": "Violating strict aliasing is undefined behavior.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ aliasing rule helps compiler optimize.",
+        "type": "fill_blank",
+        "answers": [
+            "strict"
+        ],
+        "other_options": [
+            "loose",
+            "no",
+            "full"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\nint main() {\n    int src = 42;\n    float dst;\n    memcpy(&dst, &src, sizeof(int));\n    printf(\"%d bytes copied\", (int)sizeof(int));\n    return 0;\n}",
+        "o": [
+            "4 bytes copied",
+            "42",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "memcpy is safe for type punning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange aliasing-safe patterns:",
+        "type": "rearrange",
+        "words": [
+            "Use memcpy for punning",
+            "Use union for variants",
+            "Avoid pointer casts",
+            "Use char* for bytes"
+        ]
+    },
+    {
+        "q": "What is effective type?",
+        "type": "mcq",
+        "o": [
+            "Type of object stored in memory",
+            "Declared type",
+            "Pointer type",
+            "Return type"
+        ]
+    },
+    {
+        "q": "Malloc returns memory with no effective type.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ type is determined by first write.",
+        "type": "fill_blank",
+        "answers": [
+            "effective"
+        ],
+        "other_options": [
+            "declared",
+            "static",
+            "dynamic"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\n#include <stdalign.h>\nint main() {\n    printf(\"%zu\", alignof(max_align_t));\n    return 0;\n}",
+        "o": [
+            "16",
+            "1",
+            "4",
+            "8"
+        ]
+    },
+    {
+        "q": "max_align_t has maximum alignment requirement.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match alignment macros:",
+        "type": "match",
+        "left": [
+            "alignof",
+            "alignas",
+            "max_align_t",
+            "_Alignof"
+        ],
+        "right": [
+            "Get alignment",
+            "Set alignment",
+            "Max alignment type",
+            "C11 keyword"
+        ]
+    },
+    {
+        "q": "What is over-aligned type?",
+        "type": "mcq",
+        "o": [
+            "Type with alignment > max_align_t",
+            "Normal alignment",
+            "No alignment",
+            "Page alignment only"
+        ]
+    },
+    {
+        "q": "aligned_alloc handles over-aligned types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ allocation is needed for SIMD types.",
+        "type": "fill_blank",
+        "answers": [
+            "aligned",
+            "over-aligned"
+        ],
+        "other_options": [
+            "normal",
+            "default",
+            "standard"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    void *p = aligned_alloc(64, 128);\n    if(p) {\n        printf(\"Aligned to 64\");\n        free(p);\n    }\n    return 0;\n}",
+        "o": [
+            "Aligned to 64",
+            "Error",
+            "NULL",
+            "0"
+        ]
+    },
+    {
+        "q": "aligned_alloc size must be multiple of alignment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange aligned allocation:",
+        "type": "rearrange",
+        "words": [
+            "Determine alignment",
+            "Calculate size",
+            "Call aligned_alloc",
+            "Check NULL",
+            "Use memory"
+        ]
+    },
+    {
+        "q": "What is memory pool pattern?",
+        "type": "mcq",
+        "o": [
+            "Pre-allocate and reuse memory",
+            "Allocate on demand",
+            "Free immediately",
+            "Compress memory"
+        ]
+    },
+    {
+        "q": "Memory pools reduce allocation overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ pattern pre-allocates reusable blocks.",
+        "type": "fill_blank",
+        "answers": [
+            "pool",
+            "memory pool"
+        ],
+        "other_options": [
+            "stack",
+            "heap",
+            "cache"
+        ]
+    },
+    {
+        "q": "What is object pool?",
+        "type": "mcq",
+        "o": [
+            "Pool of same-type objects",
+            "General memory pool",
+            "String pool",
+            "Thread pool"
+        ]
+    },
+    {
+        "q": "Object pools reduce constructor/destructor overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match pool types:",
+        "type": "match",
+        "left": [
+            "Fixed pool",
+            "Growing pool",
+            "Object pool",
+            "Arena"
+        ],
+        "right": [
+            "Static size",
+            "Expandable",
+            "Typed objects",
+            "Batch free"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\ntypedef struct { char data[256]; } Block;\nint main() {\n    Block *pool = malloc(100 * sizeof(Block));\n    pool[50].data[0] = 'A';\n    printf(\"%c\", pool[50].data[0]);\n    free(pool);\n    return 0;\n}",
+        "o": [
+            "A",
+            "0",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Pool blocks are indexed like arrays.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange pool implementation:",
+        "type": "rearrange",
+        "words": [
+            "Allocate pool",
+            "Track free blocks",
+            "Allocate from pool",
+            "Return to pool",
+            "Free pool"
+        ]
+    },
+    {
+        "q": "What is free list?",
+        "type": "mcq",
+        "o": [
+            "Linked list of available blocks",
+            "List of allocated blocks",
+            "History of frees",
+            "Error log"
+        ]
+    },
+    {
+        "q": "Free list enables O(1) allocation from pool.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ list tracks available pool blocks.",
+        "type": "fill_blank",
+        "answers": [
+            "free"
+        ],
+        "other_options": [
+            "used",
+            "busy",
+            "active"
+        ]
+    },
+    {
+        "q": "What is intrusive free list?",
+        "type": "mcq",
+        "o": [
+            "Free list embedded in blocks themselves",
+            "External list",
+            "Bitmap tracking",
+            "Counter tracking"
+        ]
+    },
+    {
+        "q": "Intrusive lists use block memory for pointers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match tracking methods:",
+        "type": "match",
+        "left": [
+            "Free list",
+            "Bitmap",
+            "Stack",
+            "Counter"
+        ],
+        "right": [
+            "Linked available",
+            "Bit per block",
+            "LIFO allocation",
+            "Reference count"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int (*matrix)[4] = malloc(3 * sizeof(*matrix));\n    matrix[2][3] = 99;\n    printf(\"%d\", matrix[2][3]);\n    free(matrix);\n    return 0;\n}",
+        "o": [
+            "99",
+            "0",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pointer to array enables contiguous 2D allocation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange 2D patterns:",
+        "type": "rearrange",
+        "words": [
+            "Flat 1D",
+            "Pointer to array",
+            "Array of pointers",
+            "Pointer to pointer"
+        ]
+    },
+    {
+        "q": "What is row-major order?",
+        "type": "mcq",
+        "o": [
+            "Rows stored contiguously",
+            "Columns stored contiguously",
+            "Diagonal storage",
+            "Random storage"
+        ]
+    },
+    {
+        "q": "C uses row-major array layout.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ major order is used by C arrays.",
+        "type": "fill_blank",
+        "answers": [
+            "row"
+        ],
+        "other_options": [
+            "column",
+            "diagonal",
+            "hybrid"
+        ]
+    },
+    {
+        "q": "What is column-major order?",
+        "type": "mcq",
+        "o": [
+            "Columns stored contiguously",
+            "Rows stored contiguously",
+            "Diagonal storage",
+            "Random storage"
+        ]
+    },
+    {
+        "q": "Fortran uses column-major layout.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match array layouts:",
+        "type": "match",
+        "left": [
+            "C",
+            "Fortran",
+            "NumPy default",
+            "BLAS"
+        ],
+        "right": [
+            "Row-major",
+            "Column-major",
+            "Row-major",
+            "Column-major"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int rows = 3, cols = 4;\n    int (*arr)[cols] = malloc(rows * sizeof(*arr));\n    for(int i = 0; i < rows; i++)\n        for(int j = 0; j < cols; j++)\n            arr[i][j] = i * cols + j;\n    printf(\"%d\", arr[2][3]);\n    free(arr);\n    return 0;\n}",
+        "o": [
+            "11",
+            "23",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "VLA types can be used for array pointer types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange matrix access optimization:",
+        "type": "rearrange",
+        "words": [
+            "Access row-by-row",
+            "Avoid column jumps",
+            "Use blocking",
+            "Consider prefetch"
+        ]
+    },
+    {
+        "q": "What is blocking/tiling?",
+        "type": "mcq",
+        "o": [
+            "Processing data in cache-sized chunks",
+            "Blocking threads",
+            "Blocking I/O",
+            "Memory blocking"
+        ]
+    },
+    {
+        "q": "Blocking improves cache utilization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ technique processes cache-sized blocks.",
+        "type": "fill_blank",
+        "answers": [
+            "blocking",
+            "tiling"
+        ],
+        "other_options": [
+            "streaming",
+            "pipelining",
+            "buffering"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    size_t sizes[] = {10, 20, 30};\n    void *ptrs[3];\n    for(int i = 0; i < 3; i++) {\n        ptrs[i] = malloc(sizes[i]);\n    }\n    printf(\"All allocated\");\n    for(int i = 0; i < 3; i++) free(ptrs[i]);\n    return 0;\n}",
+        "o": [
+            "All allocated",
+            "Error",
+            "NULL",
+            "0"
+        ]
+    },
+    {
+        "q": "Multiple allocations require tracking all pointers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match allocation tracking patterns:",
+        "type": "match",
+        "left": [
+            "Array of pointers",
+            "Linked list",
+            "Hash table",
+            "Stack"
+        ],
+        "right": [
+            "Fixed count",
+            "Variable count",
+            "Fast lookup",
+            "LIFO order"
+        ]
+    },
+    {
+        "q": "What is RAII in C?",
+        "type": "mcq",
+        "o": [
+            "Cleanup attribute for automatic resource release",
+            "C++ only feature",
+            "Java feature",
+            "Python feature"
+        ]
+    },
+    {
+        "q": "GCC cleanup attribute enables RAII-like behavior.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ attribute calls function at scope exit.",
+        "type": "fill_blank",
+        "answers": [
+            "cleanup"
+        ],
+        "other_options": [
+            "destructor",
+            "finalizer",
+            "exit"
+        ]
+    },
+    {
+        "q": "What is defer pattern?",
+        "type": "mcq",
+        "o": [
+            "Schedule cleanup for scope exit",
+            "Delay allocation",
+            "Async execution",
+            "Lazy evaluation"
+        ]
+    },
+    {
+        "q": "Defer pattern improves resource safety.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange resource management:",
+        "type": "rearrange",
+        "words": [
+            "Acquire resource",
+            "Register cleanup",
+            "Use resource",
+            "Automatic cleanup on exit"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nvoid cleanup(int **p) { free(*p); }\nint main() {\n    __attribute__((cleanup(cleanup))) int *p = malloc(sizeof(int));\n    *p = 42;\n    printf(\"%d\", *p);\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "NULL",
+            "0"
+        ]
+    },
+    {
+        "q": "Cleanup attribute prevents leaks on early return.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match C resource patterns:",
+        "type": "match",
+        "left": [
+            "goto cleanup",
+            "cleanup attribute",
+            "atexit",
+            "finally simulation"
+        ],
+        "right": [
+            "Manual resource release",
+            "Automatic per-scope",
+            "Program exit",
+            "Error handling"
+        ]
+    },
+    {
+        "q": "What is escape analysis?",
+        "type": "mcq",
+        "o": [
+            "Determining if pointer leaves scope",
+            "String escaping",
+            "Exit analysis",
+            "Control flow analysis"
+        ]
+    },
+    {
+        "q": "Escape analysis can optimize stack vs heap allocation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ analysis determines allocation location.",
+        "type": "fill_blank",
+        "answers": [
+            "escape"
+        ],
+        "other_options": [
+            "flow",
+            "data",
+            "control"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int local = 10;\n    int *p = &local;\n    printf(\"%d\", *p);\n    return 0;\n}",
+        "o": [
+            "10",
+            "Error",
+            "NULL",
+            "0"
+        ]
+    },
+    {
+        "q": "Stack memory is valid only within its scope.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange memory safety principles:",
+        "type": "rearrange",
+        "words": [
+            "Initialize all memory",
+            "Check all bounds",
+            "Free all allocations",
+            "Nullify freed pointers",
+            "Validate all inputs"
+        ]
+    },
+    {
+        "q": "What is temporal safety?",
+        "type": "mcq",
+        "o": [
+            "Preventing access to freed memory",
+            "Time-based access",
+            "Performance timing",
+            "Scheduling safety"
+        ]
+    },
+    {
+        "q": "Use-after-free violates temporal safety.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ safety prevents dangling pointer use.",
+        "type": "fill_blank",
+        "answers": [
+            "temporal"
+        ],
+        "other_options": [
+            "spatial",
+            "type",
+            "thread"
+        ]
+    },
+    {
+        "q": "What is spatial safety?",
+        "type": "mcq",
+        "o": [
+            "Preventing out-of-bounds access",
+            "Location tracking",
+            "Memory layout",
+            "Address space"
+        ]
+    },
+    {
+        "q": "Buffer overflow violates spatial safety.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match memory safety types:",
+        "type": "match",
+        "left": [
+            "Temporal",
+            "Spatial",
+            "Type",
+            "Thread"
+        ],
+        "right": [
+            "Free/use timing",
+            "Bounds checking",
+            "Correct casting",
+            "Synchronization"
+        ]
+    },
+    {
+        "q": "What is fat pointer?",
+        "type": "mcq",
+        "o": [
+            "Pointer with bounds metadata",
+            "Large pointer",
+            "Double pointer",
+            "Void pointer"
+        ]
+    },
+    {
+        "q": "Fat pointers store size along with address.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ pointer includes bounds information.",
+        "type": "fill_blank",
+        "answers": [
+            "fat",
+            "bounded"
+        ],
+        "other_options": [
+            "thin",
+            "raw",
+            "normal"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    printf(\"Memory management mastery achieved!\");\n    return 0;\n}",
+        "o": [
+            "Memory management mastery achieved!",
+            "Error",
+            "NULL",
+            "0"
+        ]
+    },
+    {
+        "q": "Dynamic memory is essential for flexible programs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange C memory mastery:",
+        "type": "rearrange",
+        "words": [
+            "Learn basics",
+            "Handle errors",
+            "Optimize performance",
+            "Ensure security",
+            "Write robust code"
+        ]
+    },
+    {
+        "q": "What is memory sanitization?",
+        "type": "mcq",
+        "o": [
+            "Clearing sensitive data from memory",
+            "Allocating memory",
+            "Compressing memory",
+            "Encrypting files"
+        ]
+    },
+    {
+        "q": "Sensitive data should be zeroed before freeing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ prevents compiler from optimizing out zeroing.",
+        "type": "fill_blank",
+        "answers": [
+            "volatile",
+            "explicit_bzero",
+            "memset_s"
+        ],
+        "other_options": [
+            "const",
+            "static",
+            "register"
+        ]
+    },
+    {
+        "q": "What is write combining?",
+        "type": "mcq",
+        "o": [
+            "Batching multiple writes to memory",
+            "Single write",
+            "Read combining",
+            "Cache bypass"
+        ]
+    },
+    {
+        "q": "Write combining improves memory bus efficiency.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match memory write modes:",
+        "type": "match",
+        "left": [
+            "Write-through",
+            "Write-back",
+            "Write-combining",
+            "Uncached"
+        ],
+        "right": [
+            "Immediate write",
+            "Delayed write",
+            "Batched write",
+            "Direct access"
+        ]
+    },
+    {
+        "q": "What is non-temporal store?",
+        "type": "mcq",
+        "o": [
+            "Store bypassing cache",
+            "Temporary storage",
+            "Cached store",
+            "Sequential store"
+        ]
+    },
+    {
+        "q": "Non-temporal stores are used for streaming data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ stores bypass cache for large writes.",
+        "type": "fill_blank",
+        "answers": [
+            "non-temporal",
+            "streaming"
+        ],
+        "other_options": [
+            "cached",
+            "temporal",
+            "sequential"
+        ]
+    },
+    {
+        "q": "What is NUMA?",
+        "type": "mcq",
+        "o": [
+            "Non-Uniform Memory Access",
+            "New Unified Memory Architecture",
+            "Network Unified Memory Access",
+            "Named Unique Memory Address"
+        ]
+    },
+    {
+        "q": "NUMA systems have different memory access latencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange NUMA considerations:",
+        "type": "rearrange",
+        "words": [
+            "Identify local memory",
+            "Allocate on local node",
+            "Minimize remote access",
+            "Pin threads to cores"
+        ]
+    },
+    {
+        "q": "What is first-touch policy?",
+        "type": "mcq",
+        "o": [
+            "Memory allocated on first access node",
+            "Pre-allocation policy",
+            "Free-first policy",
+            "Cache policy"
+        ]
+    },
+    {
+        "q": "First-touch allocates memory on accessing CPU's node.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ policy places memory near first accessor.",
+        "type": "fill_blank",
+        "answers": [
+            "first-touch"
+        ],
+        "other_options": [
+            "round-robin",
+            "interleave",
+            "bind"
+        ]
+    },
+    {
+        "q": "What is memory interleaving?",
+        "type": "mcq",
+        "o": [
+            "Distributing memory across NUMA nodes",
+            "Sequential allocation",
+            "Single node allocation",
+            "Cache interleaving"
+        ]
+    },
+    {
+        "q": "Interleaving balances memory bandwidth.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match NUMA policies:",
+        "type": "match",
+        "left": [
+            "First-touch",
+            "Bind",
+            "Interleave",
+            "Preferred"
+        ],
+        "right": [
+            "Allocate on accessor",
+            "Force specific node",
+            "Distribute evenly",
+            "Try specific first"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    void *p = malloc(0);\n    if(p != NULL || p == NULL) printf(\"Implementation-defined\");\n    free(p);\n    return 0;\n}",
+        "o": [
+            "Implementation-defined",
+            "p is NULL",
+            "p is not NULL",
+            "Error"
+        ]
+    },
+    {
+        "q": "malloc(0) behavior is implementation-defined.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange edge case handling:",
+        "type": "rearrange",
+        "words": [
+            "Check size zero",
+            "Handle NULL input",
+            "Validate bounds",
+            "Log errors"
+        ]
+    },
+    {
+        "q": "What is memory compaction?",
+        "type": "mcq",
+        "o": [
+            "Moving allocations to reduce fragmentation",
+            "Compressing data",
+            "Deleting unused memory",
+            "Encrypting memory"
+        ]
+    },
+    {
+        "q": "C does not support automatic memory compaction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ cannot move allocations like GC languages.",
+        "type": "fill_blank",
+        "answers": [
+            "C allocator",
+            "malloc"
+        ],
+        "other_options": [
+            "Java GC",
+            "Python GC",
+            "Go GC"
+        ]
+    },
+    {
+        "q": "What is memory corruption defense?",
+        "type": "mcq",
+        "o": [
+            "Techniques to detect/prevent memory errors",
+            "Encrypting memory",
+            "Compressing memory",
+            "Deleting memory"
+        ]
+    },
+    {
+        "q": "Guard pages detect buffer overflows.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match defense techniques:",
+        "type": "match",
+        "left": [
+            "Guard pages",
+            "Canaries",
+            "Red zones",
+            "Quarantine"
+        ],
+        "right": [
+            "Protected boundaries",
+            "Stack overflow detection",
+            "Heap overflow detection",
+            "Delayed reuse"
+        ]
+    },
+    {
+        "q": "What is quarantine in allocators?",
+        "type": "mcq",
+        "o": [
+            "Delay reuse of freed memory",
+            "Immediate reuse",
+            "Memory compression",
+            "Memory encryption"
+        ]
+    },
+    {
+        "q": "Quarantine helps detect use-after-free.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ delays freed memory reuse.",
+        "type": "fill_blank",
+        "answers": [
+            "quarantine"
+        ],
+        "other_options": [
+            "pool",
+            "cache",
+            "buffer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\nint main() {\n    char *s = strdup(\"Hello\");\n    printf(\"%s\", s);\n    free(s);\n    return 0;\n}",
+        "o": [
+            "Hello",
+            "Error",
+            "NULL",
+            "H"
+        ]
+    },
+    {
+        "q": "strdup allocates and copies string.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange strdup implementation:",
+        "type": "rearrange",
+        "words": [
+            "Calculate strlen",
+            "Add 1 for null",
+            "Allocate memory",
+            "Copy string",
+            "Return pointer"
+        ]
+    },
+    {
+        "q": "What is strndup?",
+        "type": "mcq",
+        "o": [
+            "Duplicate at most n characters",
+            "Duplicate exactly n characters",
+            "Duplicate string n times",
+            "Compare n strings"
+        ]
+    },
+    {
+        "q": "strndup is safer than strdup for untrusted input.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ limits copied string length.",
+        "type": "fill_blank",
+        "answers": [
+            "strndup"
+        ],
+        "other_options": [
+            "strdup",
+            "strcpy",
+            "strncpy"
+        ]
+    },
+    {
+        "q": "What is asprintf?",
+        "type": "mcq",
+        "o": [
+            "Allocating sprintf",
+            "Appending sprintf",
+            "Array sprintf",
+            "Async sprintf"
+        ]
+    },
+    {
+        "q": "asprintf automatically allocates output buffer.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match string allocation functions:",
+        "type": "match",
+        "left": [
+            "strdup",
+            "strndup",
+            "asprintf",
+            "vasprintf"
+        ],
+        "right": [
+            "Copy string",
+            "Copy n chars",
+            "Format string",
+            "Format with va_list"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    char *s;\n    int ret = asprintf(&s, \"Value: %d\", 42);\n    if(ret > 0) {\n        printf(\"%s\", s);\n        free(s);\n    }\n    return 0;\n}",
+        "o": [
+            "Value: 42",
+            "42",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "asprintf returns -1 on allocation failure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange safe string formatting:",
+        "type": "rearrange",
+        "words": [
+            "Use asprintf",
+            "Check return value",
+            "Use result",
+            "Free when done"
+        ]
+    },
+    {
+        "q": "What is getline?",
+        "type": "mcq",
+        "o": [
+            "Read line with automatic allocation",
+            "Get line number",
+            "Fixed buffer read",
+            "Binary read"
+        ]
+    },
+    {
+        "q": "getline can reallocate buffer as needed.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function handles dynamic line reading.",
+        "type": "fill_blank",
+        "answers": [
+            "getline"
+        ],
+        "other_options": [
+            "fgets",
+            "gets",
+            "readline"
+        ]
+    },
+    {
+        "q": "What is memory debugging workflow?",
+        "type": "mcq",
+        "o": [
+            "Develop, test with sanitizers, fix issues",
+            "Deploy then debug",
+            "Random testing",
+            "Skip testing"
+        ]
+    },
+    {
+        "q": "Regular sanitizer testing catches memory errors early.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match debugging workflow:",
+        "type": "match",
+        "left": [
+            "Development",
+            "Testing",
+            "Profiling",
+            "Production"
+        ],
+        "right": [
+            "Write code",
+            "Run sanitizers",
+            "Analyze performance",
+            "Monitor issues"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    int *arr = malloc(5 * sizeof(int));\n    for(int i = 0; i < 5; i++) arr[i] = i + 1;\n    int sum = 0;\n    for(int i = 0; i < 5; i++) sum += arr[i];\n    printf(\"%d\", sum);\n    free(arr);\n    return 0;\n}",
+        "o": [
+            "15",
+            "10",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Dynamic arrays enable flexible data management.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange memory management expertise:",
+        "type": "rearrange",
+        "words": [
+            "Understand fundamentals",
+            "Practice patterns",
+            "Debug effectively",
+            "Optimize wisely",
+            "Maintain security"
+        ]
+    },
+    {
+        "q": "Memory management in C requires discipline and practice.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ language requires manual memory management.",
+        "type": "fill_blank",
+        "answers": [
+            "C"
+        ],
+        "other_options": [
+            "Python",
+            "Java",
+            "Go"
+        ]
+    },
+    {
+        "q": "What is lifetime analysis?",
+        "type": "mcq",
+        "o": [
+            "Tracking when memory is valid",
+            "Program duration",
+            "Variable declaration",
+            "Type checking"
+        ]
+    },
+    {
+        "q": "Understanding object lifetime prevents memory errors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match lifetime concepts:",
+        "type": "match",
+        "left": [
+            "Static",
+            "Automatic",
+            "Dynamic",
+            "Thread-local"
+        ],
+        "right": [
+            "Program lifetime",
+            "Scope lifetime",
+            "Manual control",
+            "Per-thread lifetime"
+        ]
+    },
+    {
+        "q": "Good memory management is key to robust C programs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange C memory best practices:",
+        "type": "rearrange",
+        "words": [
+            "Always check allocations",
+            "Initialize memory",
+            "Track ownership",
+            "Free properly",
+            "Test thoroughly"
+        ]
+    }
+]

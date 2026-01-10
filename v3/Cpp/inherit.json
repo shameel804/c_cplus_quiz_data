@@ -1,0 +1,5516 @@
+[
+    {
+        "q": "What is inheritance in C++?",
+        "type": "mcq",
+        "o": [
+            "A mechanism where a class acquires properties from another class",
+            "A function pointer",
+            "A type of loop",
+            "A memory allocation"
+        ]
+    },
+    {
+        "q": "Which keyword is used to inherit a class in C++?",
+        "type": "mcq",
+        "o": [
+            ": (colon)",
+            "extends",
+            "inherits",
+            "implements"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Animal {\npublic:\n    void speak() { cout << \"Animal\"; }\n};\n\nclass Dog : public Animal {};\n\nint main() {\n    Dog d;\n    d.speak();\n    return 0;\n}",
+        "o": [
+            "Animal",
+            "Dog",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "A derived class inherits members from the base class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Private members of base class are directly accessible in derived class.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ class is the class that inherits from another class.",
+        "type": "fill_blank",
+        "answers": [
+            "derived"
+        ],
+        "other_options": [
+            "base",
+            "parent",
+            "super"
+        ]
+    },
+    {
+        "q": "What is a base class?",
+        "type": "mcq",
+        "o": [
+            "A class from which other classes inherit",
+            "A class with only static members",
+            "A class with no constructor",
+            "A template class"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    int x = 10;\n};\n\nclass Derived : public Base {\npublic:\n    int y = 20;\n};\n\nint main() {\n    Derived d;\n    cout << d.x << d.y;\n    return 0;\n}",
+        "o": [
+            "1020",
+            "10",
+            "20",
+            "Error"
+        ]
+    },
+    {
+        "q": "A derived class can add new members to inherited ones.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The base class is also called parent class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ class is also known as the parent or superclass.",
+        "type": "fill_blank",
+        "answers": [
+            "base"
+        ],
+        "other_options": [
+            "derived",
+            "child",
+            "sub"
+        ]
+    },
+    {
+        "q": "Match the inheritance terminology:",
+        "type": "match",
+        "left": [
+            "Base class",
+            "Derived class",
+            "Inheritance",
+            "Override"
+        ],
+        "right": [
+            "Parent class",
+            "Child class",
+            "Code reuse mechanism",
+            "Redefine function"
+        ]
+    },
+    {
+        "q": "What is public inheritance?",
+        "type": "mcq",
+        "o": [
+            "Base public members remain public in derived class",
+            "All members become private",
+            "Only public members are inherited",
+            "No members are inherited"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    void show() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\npublic:\n    void display() { cout << \"Derived\"; }\n};\n\nint main() {\n    Derived d;\n    d.show();\n    d.display();\n    return 0;\n}",
+        "o": [
+            "BaseDerived",
+            "Base",
+            "Derived",
+            "Error"
+        ]
+    },
+    {
+        "q": "Public inheritance models an 'is-a' relationship.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Protected members remain protected in public inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ access specifier keeps base public members accessible.",
+        "type": "fill_blank",
+        "answers": [
+            "public"
+        ],
+        "other_options": [
+            "private",
+            "protected",
+            "friend"
+        ]
+    },
+    {
+        "q": "What is protected inheritance?",
+        "type": "mcq",
+        "o": [
+            "Public and protected base members become protected in derived",
+            "All members become public",
+            "No members are inherited",
+            "Only protected members are inherited"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\nprotected:\n    int value = 42;\n};\n\nclass Derived : public Base {\npublic:\n    void show() { cout << value; }\n};\n\nint main() {\n    Derived d;\n    d.show();\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "0",
+            "value"
+        ]
+    },
+    {
+        "q": "Protected members are accessible in derived classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Protected members are accessible from outside the class hierarchy.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ access level allows access in derived classes but not outside.",
+        "type": "fill_blank",
+        "answers": [
+            "protected"
+        ],
+        "other_options": [
+            "private",
+            "public",
+            "internal"
+        ]
+    },
+    {
+        "q": "Match the access specifiers in inheritance:",
+        "type": "match",
+        "left": [
+            "public in public",
+            "protected in public",
+            "private in any"
+        ],
+        "right": [
+            "Stays public",
+            "Stays protected",
+            "Not inherited"
+        ]
+    },
+    {
+        "q": "What is private inheritance?",
+        "type": "mcq",
+        "o": [
+            "All base public/protected members become private in derived",
+            "Only private members are inherited",
+            "No inheritance occurs",
+            "Members stay the same"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    int x = 10;\n};\n\nclass Derived : private Base {\npublic:\n    int getX() { return x; }\n};\n\nint main() {\n    Derived d;\n    cout << d.getX();\n    return 0;\n}",
+        "o": [
+            "10",
+            "Error",
+            "0",
+            "Base"
+        ]
+    },
+    {
+        "q": "Private inheritance models 'implemented-in-terms-of' relationship.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In private inheritance, base class members are accessible outside derived class.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ inheritance hides all base members from external access.",
+        "type": "fill_blank",
+        "answers": [
+            "private"
+        ],
+        "other_options": [
+            "public",
+            "protected",
+            "hidden"
+        ]
+    },
+    {
+        "q": "What is single inheritance?",
+        "type": "mcq",
+        "o": [
+            "A class inheriting from only one base class",
+            "A class with one member",
+            "One level of inheritance",
+            "Single object creation"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A\"; }\n};\n\nclass B : public A {\npublic:\n    B() { cout << \"B\"; }\n};\n\nint main() {\n    B b;\n    return 0;\n}",
+        "o": [
+            "AB",
+            "BA",
+            "B",
+            "A"
+        ]
+    },
+    {
+        "q": "Base class constructor is called before derived class constructor.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Derived class destructor is called before base class destructor.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ class constructor executes first in single inheritance.",
+        "type": "fill_blank",
+        "answers": [
+            "base"
+        ],
+        "other_options": [
+            "derived",
+            "child",
+            "sub"
+        ]
+    },
+    {
+        "q": "Rearrange constructor call order in single inheritance:",
+        "type": "rearrange",
+        "words": [
+            "Base constructor",
+            "Derived constructor",
+            "Derived body",
+            "Base members initialized"
+        ]
+    },
+    {
+        "q": "What is multiple inheritance?",
+        "type": "mcq",
+        "o": [
+            "A class inheriting from more than one base class",
+            "Multiple classes inheriting from one base",
+            "Multiple levels of inheritance",
+            "Multiple constructors"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    void showA() { cout << \"A\"; }\n};\n\nclass B {\npublic:\n    void showB() { cout << \"B\"; }\n};\n\nclass C : public A, public B {};\n\nint main() {\n    C c;\n    c.showA();\n    c.showB();\n    return 0;\n}",
+        "o": [
+            "AB",
+            "A",
+            "B",
+            "Error"
+        ]
+    },
+    {
+        "q": "C++ supports multiple inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multiple inheritance can cause ambiguity issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ problem occurs when multiple paths lead to same base class.",
+        "type": "fill_blank",
+        "answers": [
+            "diamond"
+        ],
+        "other_options": [
+            "circular",
+            "recursive",
+            "ambiguous"
+        ]
+    },
+    {
+        "q": "Match the inheritance types:",
+        "type": "match",
+        "left": [
+            "Single",
+            "Multiple",
+            "Multilevel",
+            "Hierarchical"
+        ],
+        "right": [
+            "One base class",
+            "Multiple bases",
+            "Chain of inheritance",
+            "Multiple derived from one"
+        ]
+    },
+    {
+        "q": "What is multilevel inheritance?",
+        "type": "mcq",
+        "o": [
+            "A class inheriting from a derived class",
+            "Multiple classes at same level",
+            "Abstract inheritance",
+            "Interface inheritance"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    A() { cout << \"A\"; }\n};\n\nclass B : public A {\npublic:\n    B() { cout << \"B\"; }\n};\n\nclass C : public B {\npublic:\n    C() { cout << \"C\"; }\n};\n\nint main() {\n    C c;\n    return 0;\n}",
+        "o": [
+            "ABC",
+            "CBA",
+            "C",
+            "Error"
+        ]
+    },
+    {
+        "q": "Multilevel inheritance forms a chain of classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "In multilevel inheritance, intermediate class is both base and derived.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ inheritance creates a hierarchy chain of classes.",
+        "type": "fill_blank",
+        "answers": [
+            "multilevel"
+        ],
+        "other_options": [
+            "multiple",
+            "hierarchical",
+            "hybrid"
+        ]
+    },
+    {
+        "q": "What is hierarchical inheritance?",
+        "type": "mcq",
+        "o": [
+            "Multiple classes inherit from a single base class",
+            "One class inherits from multiple classes",
+            "Chain of inheritance",
+            "No inheritance"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Animal {\npublic:\n    void eat() { cout << \"Eating \"; }\n};\n\nclass Dog : public Animal {\npublic:\n    void bark() { cout << \"Barking\"; }\n};\n\nclass Cat : public Animal {\npublic:\n    void meow() { cout << \"Meowing\"; }\n};\n\nint main() {\n    Dog d;\n    d.eat();\n    d.bark();\n    return 0;\n}",
+        "o": [
+            "Eating Barking",
+            "Barking",
+            "Eating",
+            "Error"
+        ]
+    },
+    {
+        "q": "Hierarchical inheritance has one base with multiple derived classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Each derived class in hierarchical inheritance has its own copy of base members.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ inheritance has multiple children from one parent.",
+        "type": "fill_blank",
+        "answers": [
+            "hierarchical"
+        ],
+        "other_options": [
+            "multilevel",
+            "multiple",
+            "single"
+        ]
+    },
+    {
+        "q": "Rearrange from simpler to complex inheritance:",
+        "type": "rearrange",
+        "words": [
+            "Single",
+            "Multilevel",
+            "Hierarchical",
+            "Multiple",
+            "Hybrid"
+        ]
+    },
+    {
+        "q": "What is hybrid inheritance?",
+        "type": "mcq",
+        "o": [
+            "A combination of two or more types of inheritance",
+            "A single inheritance type",
+            "Virtual inheritance only",
+            "Abstract inheritance"
+        ]
+    },
+    {
+        "q": "What is the diamond problem?",
+        "type": "mcq",
+        "o": [
+            "Ambiguity when a class inherits from two classes with same base",
+            "A syntax error",
+            "Memory leak",
+            "Infinite loop"
+        ]
+    },
+    {
+        "q": "The diamond problem occurs in multiple inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual inheritance solves the diamond problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ inheritance prevents duplicate base class copies.",
+        "type": "fill_blank",
+        "answers": [
+            "virtual"
+        ],
+        "other_options": [
+            "public",
+            "private",
+            "abstract"
+        ]
+    },
+    {
+        "q": "What is virtual inheritance?",
+        "type": "mcq",
+        "o": [
+            "Inheritance that ensures only one copy of base class",
+            "Inheritance of virtual functions",
+            "Abstract class inheritance",
+            "Interface inheritance"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass A {\npublic:\n    int x = 10;\n};\n\nclass B : virtual public A {};\nclass C : virtual public A {};\nclass D : public B, public C {};\n\nint main() {\n    D d;\n    cout << d.x;\n    return 0;\n}",
+        "o": [
+            "10",
+            "Error (ambiguous)",
+            "20",
+            "0"
+        ]
+    },
+    {
+        "q": "Virtual inheritance eliminates duplicate base subobjects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual base class constructor is called by most derived class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ keyword prevents duplicate copies in diamond inheritance.",
+        "type": "fill_blank",
+        "answers": [
+            "virtual"
+        ],
+        "other_options": [
+            "static",
+            "const",
+            "override"
+        ]
+    },
+    {
+        "q": "Match the inheritance issues and solutions:",
+        "type": "match",
+        "left": [
+            "Diamond problem",
+            "Ambiguity",
+            "Duplicate base"
+        ],
+        "right": [
+            "Virtual inheritance",
+            "Scope resolution",
+            "Single copy with virtual"
+        ]
+    },
+    {
+        "q": "What is function overriding?",
+        "type": "mcq",
+        "o": [
+            "Redefining a base class function in derived class",
+            "Defining multiple functions with same name",
+            "Deleting a function",
+            "Calling parent function"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    void show() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\npublic:\n    void show() { cout << \"Derived\"; }\n};\n\nint main() {\n    Derived d;\n    d.show();\n    return 0;\n}",
+        "o": [
+            "Derived",
+            "Base",
+            "BaseDerived",
+            "Error"
+        ]
+    },
+    {
+        "q": "Function overriding requires same signature in derived class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Overriding and overloading are the same concept.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ hides the base class function with same name.",
+        "type": "fill_blank",
+        "answers": [
+            "overriding"
+        ],
+        "other_options": [
+            "overloading",
+            "hiding",
+            "shadowing"
+        ]
+    },
+    {
+        "q": "What is name hiding in inheritance?",
+        "type": "mcq",
+        "o": [
+            "Derived class function hides all base functions with same name",
+            "Making functions private",
+            "Deleting functions",
+            "Renaming functions"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    void show(int x) { cout << \"Int: \" << x; }\n};\n\nclass Derived : public Base {\npublic:\n    void show(double x) { cout << \"Double: \" << x; }\n};\n\nint main() {\n    Derived d;\n    d.show(5);\n    return 0;\n}",
+        "o": [
+            "Double: 5",
+            "Int: 5",
+            "Error",
+            "Both"
+        ]
+    },
+    {
+        "q": "Derived class functions hide base class functions with same name.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "using declaration can bring hidden base functions into scope.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ declaration brings base class members into derived scope.",
+        "type": "fill_blank",
+        "answers": [
+            "using"
+        ],
+        "other_options": [
+            "import",
+            "include",
+            "inherit"
+        ]
+    },
+    {
+        "q": "Match the function concepts:",
+        "type": "match",
+        "left": [
+            "Overloading",
+            "Overriding",
+            "Hiding",
+            "Virtual"
+        ],
+        "right": [
+            "Same name different params",
+            "Same signature in derived",
+            "Name conceals base",
+            "Runtime polymorphism"
+        ]
+    },
+    {
+        "q": "How to call base class function from derived class?",
+        "type": "mcq",
+        "o": [
+            "Using Base::functionName() syntax",
+            "Using super.functionName()",
+            "Using parent.functionName()",
+            "Not possible"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    void greet() { cout << \"Hello \"; }\n};\n\nclass Derived : public Base {\npublic:\n    void greet() {\n        Base::greet();\n        cout << \"World\";\n    }\n};\n\nint main() {\n    Derived d;\n    d.greet();\n    return 0;\n}",
+        "o": [
+            "Hello World",
+            "World",
+            "Hello",
+            "Error"
+        ]
+    },
+    {
+        "q": "Scope resolution operator accesses base class members.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Base class function can be called even after overriding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ operator (::) is used to call base class functions.",
+        "type": "fill_blank",
+        "answers": [
+            "scope resolution"
+        ],
+        "other_options": [
+            "member access",
+            "pointer",
+            "reference"
+        ]
+    },
+    {
+        "q": "What is constructor inheritance?",
+        "type": "mcq",
+        "o": [
+            "Using base class constructors in derived class with 'using'",
+            "Calling base constructor automatically",
+            "Constructor overloading",
+            "Default constructor only"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    Base(int x) { cout << x; }\n};\n\nclass Derived : public Base {\npublic:\n    Derived() : Base(42) { cout << \"D\"; }\n};\n\nint main() {\n    Derived d;\n    return 0;\n}",
+        "o": [
+            "42D",
+            "D42",
+            "42",
+            "Error"
+        ]
+    },
+    {
+        "q": "Derived class must call base constructor if no default exists.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Constructor initializer list can call base class constructor.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ list passes arguments to base class constructor.",
+        "type": "fill_blank",
+        "answers": [
+            "initializer"
+        ],
+        "other_options": [
+            "parameter",
+            "argument",
+            "member"
+        ]
+    },
+    {
+        "q": "Rearrange constructor execution order:",
+        "type": "rearrange",
+        "words": [
+            "Virtual base constructors",
+            "Non-virtual base constructors",
+            "Member initialization",
+            "Derived constructor body"
+        ]
+    },
+    {
+        "q": "What is destructor order in inheritance?",
+        "type": "mcq",
+        "o": [
+            "Derived destructor first, then base destructor",
+            "Base destructor first, then derived",
+            "Only derived destructor",
+            "Only base destructor"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    ~Base() { cout << \"B\"; }\n};\n\nclass Derived : public Base {\npublic:\n    ~Derived() { cout << \"D\"; }\n};\n\nint main() {\n    Derived d;\n    return 0;\n}",
+        "o": [
+            "DB",
+            "BD",
+            "D",
+            "B"
+        ]
+    },
+    {
+        "q": "Destructors are called in reverse order of construction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual destructor is needed for polymorphic deletion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ destructor ensures proper cleanup in inheritance.",
+        "type": "fill_blank",
+        "answers": [
+            "virtual"
+        ],
+        "other_options": [
+            "public",
+            "protected",
+            "static"
+        ]
+    },
+    {
+        "q": "What happens without virtual destructor in polymorphism?",
+        "type": "mcq",
+        "o": [
+            "Only base destructor is called, causing resource leaks",
+            "Both destructors are called",
+            "Compilation error",
+            "No effect"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual ~Base() { cout << \"B\"; }\n};\n\nclass Derived : public Base {\npublic:\n    ~Derived() { cout << \"D\"; }\n};\n\nint main() {\n    Base* p = new Derived();\n    delete p;\n    return 0;\n}",
+        "o": [
+            "DB",
+            "B",
+            "D",
+            "Error"
+        ]
+    },
+    {
+        "q": "Virtual destructor allows proper polymorphic deletion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Destructor cannot be made virtual.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "The _______ keyword makes destructor support polymorphic deletion.",
+        "type": "fill_blank",
+        "answers": [
+            "virtual"
+        ],
+        "other_options": [
+            "override",
+            "final",
+            "delete"
+        ]
+    },
+    {
+        "q": "Match the destructor behaviors:",
+        "type": "match",
+        "left": [
+            "Non-virtual dtor",
+            "Virtual dtor",
+            "Pure virtual dtor"
+        ],
+        "right": [
+            "Only base dtor called",
+            "Full cleanup",
+            "Abstract base class"
+        ]
+    },
+    {
+        "q": "What is the using declaration in inheritance?",
+        "type": "mcq",
+        "o": [
+            "Brings base class members into derived class scope",
+            "Using a namespace",
+            "Including a header",
+            "Importing a module"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    void foo(int x) { cout << \"Int: \" << x; }\n};\n\nclass Derived : public Base {\npublic:\n    using Base::foo;\n    void foo(double x) { cout << \"Double: \" << x; }\n};\n\nint main() {\n    Derived d;\n    d.foo(5);\n    return 0;\n}",
+        "o": [
+            "Int: 5",
+            "Double: 5",
+            "Error",
+            "Both"
+        ]
+    },
+    {
+        "q": "using declaration prevents name hiding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "using Base::member brings member into derived scope.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ declaration inherits base class constructors.",
+        "type": "fill_blank",
+        "answers": [
+            "using"
+        ],
+        "other_options": [
+            "inherit",
+            "import",
+            "include"
+        ]
+    },
+    {
+        "q": "What is object slicing?",
+        "type": "mcq",
+        "o": [
+            "Losing derived class data when assigned to base class object",
+            "Cutting an object in pieces",
+            "Partial object initialization",
+            "Memory fragmentation"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    int b = 1;\n};\n\nclass Derived : public Base {\npublic:\n    int d = 2;\n};\n\nint main() {\n    Derived der;\n    Base base = der;\n    cout << sizeof(base);\n    return 0;\n}",
+        "o": [
+            "4 (or size of int)",
+            "8",
+            "Error",
+            "2"
+        ]
+    },
+    {
+        "q": "Object slicing occurs when copying by value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "References and pointers prevent object slicing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ problem causes loss of derived class data.",
+        "type": "fill_blank",
+        "answers": [
+            "slicing"
+        ],
+        "other_options": [
+            "casting",
+            "truncation",
+            "conversion"
+        ]
+    },
+    {
+        "q": "What is upcasting?",
+        "type": "mcq",
+        "o": [
+            "Converting derived class pointer/reference to base class",
+            "Converting base to derived",
+            "Type casting upward in memory",
+            "Increasing object size"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Animal {\npublic:\n    virtual void speak() { cout << \"Animal\"; }\n};\n\nclass Dog : public Animal {\npublic:\n    void speak() override { cout << \"Woof\"; }\n};\n\nint main() {\n    Dog d;\n    Animal* a = &d;\n    a->speak();\n    return 0;\n}",
+        "o": [
+            "Woof",
+            "Animal",
+            "Error",
+            "Dog"
+        ]
+    },
+    {
+        "q": "Upcasting is always safe and implicit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Upcasting requires no explicit cast.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ converts derived pointer to base pointer.",
+        "type": "fill_blank",
+        "answers": [
+            "upcasting"
+        ],
+        "other_options": [
+            "downcasting",
+            "cross-casting",
+            "recast"
+        ]
+    },
+    {
+        "q": "Match the casting directions:",
+        "type": "match",
+        "left": [
+            "Upcasting",
+            "Downcasting",
+            "Cross-casting",
+            "Side-casting"
+        ],
+        "right": [
+            "Derived to base",
+            "Base to derived",
+            "Between siblings",
+            "Parallel hierarchy"
+        ]
+    },
+    {
+        "q": "What is downcasting?",
+        "type": "mcq",
+        "o": [
+            "Converting base class pointer/reference to derived class",
+            "Converting derived to base",
+            "Decreasing type size",
+            "Memory deallocation"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual ~Base() {}\n};\n\nclass Derived : public Base {\npublic:\n    int value = 42;\n};\n\nint main() {\n    Base* b = new Derived();\n    Derived* d = dynamic_cast<Derived*>(b);\n    if (d) cout << d->value;\n    delete b;\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "nullptr",
+            "Base"
+        ]
+    },
+    {
+        "q": "Downcasting requires explicit cast.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "dynamic_cast checks type at runtime.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ cast safely converts base to derived with runtime check.",
+        "type": "fill_blank",
+        "answers": [
+            "dynamic_cast"
+        ],
+        "other_options": [
+            "static_cast",
+            "reinterpret_cast",
+            "const_cast"
+        ]
+    },
+    {
+        "q": "What does dynamic_cast return on failed pointer cast?",
+        "type": "mcq",
+        "o": [
+            "nullptr",
+            "Exception",
+            "Base pointer",
+            "Original pointer"
+        ]
+    },
+    {
+        "q": "What does dynamic_cast throw on failed reference cast?",
+        "type": "mcq",
+        "o": [
+            "std::bad_cast exception",
+            "nullptr",
+            "std::runtime_error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "dynamic_cast requires virtual functions in base class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "static_cast performs no runtime type checking.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ cast performs compile-time only type check.",
+        "type": "fill_blank",
+        "answers": [
+            "static_cast"
+        ],
+        "other_options": [
+            "dynamic_cast",
+            "reinterpret_cast",
+            "const_cast"
+        ]
+    },
+    {
+        "q": "Rearrange casts from safest to least safe:",
+        "type": "rearrange",
+        "words": [
+            "dynamic_cast",
+            "static_cast",
+            "C-style cast",
+            "reinterpret_cast"
+        ]
+    },
+    {
+        "q": "What is an abstract class?",
+        "type": "mcq",
+        "o": [
+            "A class with at least one pure virtual function",
+            "A class with no members",
+            "A template class",
+            "A final class"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Shape {\npublic:\n    virtual void draw() = 0;\n};\n\nclass Circle : public Shape {\npublic:\n    void draw() override { cout << \"Circle\"; }\n};\n\nint main() {\n    Circle c;\n    c.draw();\n    return 0;\n}",
+        "o": [
+            "Circle",
+            "Error",
+            "Shape",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Abstract classes cannot be instantiated.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pure virtual function has '= 0' syntax.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ function is declared with '= 0' syntax.",
+        "type": "fill_blank",
+        "answers": [
+            "pure virtual"
+        ],
+        "other_options": [
+            "abstract",
+            "virtual",
+            "interface"
+        ]
+    },
+    {
+        "q": "What is an interface in C++?",
+        "type": "mcq",
+        "o": [
+            "An abstract class with only pure virtual functions",
+            "A keyword for interfaces",
+            "A header file",
+            "A template"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Printable {\npublic:\n    virtual void print() const = 0;\n    virtual ~Printable() = default;\n};\n\nclass Document : public Printable {\npublic:\n    void print() const override { cout << \"Printing\"; }\n};\n\nint main() {\n    Document doc;\n    doc.print();\n    return 0;\n}",
+        "o": [
+            "Printing",
+            "Error",
+            "Printable",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "C++ has no interface keyword.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Interfaces are simulated using pure virtual functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern uses abstract class to define contract.",
+        "type": "fill_blank",
+        "answers": [
+            "interface"
+        ],
+        "other_options": [
+            "abstract",
+            "protocol",
+            "contract"
+        ]
+    },
+    {
+        "q": "Match the class types:",
+        "type": "match",
+        "left": [
+            "Concrete class",
+            "Abstract class",
+            "Interface",
+            "Final class"
+        ],
+        "right": [
+            "Can instantiate",
+            "Has pure virtual",
+            "All pure virtual",
+            "Cannot inherit"
+        ]
+    },
+    {
+        "q": "What is pure virtual destructor?",
+        "type": "mcq",
+        "o": [
+            "A virtual destructor declared as '= 0' with definition",
+            "A deleted destructor",
+            "A private destructor",
+            "A protected destructor"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual ~Base() = 0;\n};\n\nBase::~Base() { cout << \"B\"; }\n\nclass Derived : public Base {\npublic:\n    ~Derived() { cout << \"D\"; }\n};\n\nint main() {\n    Derived d;\n    return 0;\n}",
+        "o": [
+            "DB",
+            "B",
+            "D",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pure virtual destructor must have a definition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pure virtual destructor makes class abstract.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ destructor must be defined even if pure virtual.",
+        "type": "fill_blank",
+        "answers": [
+            "base class"
+        ],
+        "other_options": [
+            "derived class",
+            "virtual",
+            "abstract"
+        ]
+    },
+    {
+        "q": "What is the override specifier?",
+        "type": "mcq",
+        "o": [
+            "Indicates function overrides a base class virtual function",
+            "Forces function to be virtual",
+            "Makes function final",
+            "Deletes function"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void foo() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\npublic:\n    void foo() override { cout << \"Derived\"; }\n};\n\nint main() {\n    Base* p = new Derived();\n    p->foo();\n    delete p;\n    return 0;\n}",
+        "o": [
+            "Derived",
+            "Base",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "override causes compile error if no base function to override.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "override prevents accidental function hiding.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ keyword ensures function overrides base virtual.",
+        "type": "fill_blank",
+        "answers": [
+            "override"
+        ],
+        "other_options": [
+            "virtual",
+            "final",
+            "explicit"
+        ]
+    },
+    {
+        "q": "Rearrange virtual function declaration:",
+        "type": "rearrange",
+        "words": [
+            "virtual",
+            "Return type",
+            "Function name",
+            "Parameters",
+            "override/final"
+        ]
+    },
+    {
+        "q": "What is the final specifier for functions?",
+        "type": "mcq",
+        "o": [
+            "Prevents function from being overridden in derived classes",
+            "Makes function static",
+            "Deletes function",
+            "Makes function inline"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual void foo() final { cout << \"Base\"; }\n};\n\nclass Derived : public Base {};\n\nint main() {\n    Derived d;\n    d.foo();\n    return 0;\n}",
+        "o": [
+            "Base",
+            "Derived",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "final prevents further overriding of virtual function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "final can be applied to both classes and virtual functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ specifier stops inheritance chain for function.",
+        "type": "fill_blank",
+        "answers": [
+            "final"
+        ],
+        "other_options": [
+            "override",
+            "sealed",
+            "const"
+        ]
+    },
+    {
+        "q": "What is CRTP (Curiously Recurring Template Pattern)?",
+        "type": "mcq",
+        "o": [
+            "A class inheriting from a template instantiated with itself",
+            "A recursive template",
+            "A circular reference",
+            "A runtime pattern"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\ntemplate<typename T>\nclass Base {\npublic:\n    void interface() {\n        static_cast<T*>(this)->implementation();\n    }\n};\n\nclass Derived : public Base<Derived> {\npublic:\n    void implementation() { cout << \"CRTP\"; }\n};\n\nint main() {\n    Derived d;\n    d.interface();\n    return 0;\n}",
+        "o": [
+            "CRTP",
+            "Base",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "CRTP provides static polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CRTP has no runtime overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern achieves polymorphism without virtual functions.",
+        "type": "fill_blank",
+        "answers": [
+            "CRTP"
+        ],
+        "other_options": [
+            "NVI",
+            "PIMPL",
+            "Factory"
+        ]
+    },
+    {
+        "q": "Match the design patterns:",
+        "type": "match",
+        "left": [
+            "CRTP",
+            "NVI",
+            "PIMPL",
+            "Factory"
+        ],
+        "right": [
+            "Static polymorphism",
+            "Non-virtual interface",
+            "Implementation hiding",
+            "Object creation"
+        ]
+    },
+    {
+        "q": "What is the NVI (Non-Virtual Interface) idiom?",
+        "type": "mcq",
+        "o": [
+            "Public non-virtual functions calling private virtual functions",
+            "No virtual functions",
+            "Virtual interface only",
+            "Abstract pattern"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    void run() {\n        cout << \"Before \";\n        doRun();\n        cout << \" After\";\n    }\nprivate:\n    virtual void doRun() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\n    void doRun() override { cout << \"Derived\"; }\n};\n\nint main() {\n    Derived d;\n    d.run();\n    return 0;\n}",
+        "o": [
+            "Before Derived After",
+            "Before Base After",
+            "Derived",
+            "Error"
+        ]
+    },
+    {
+        "q": "NVI allows pre/post processing in base class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "NVI keeps virtual functions private or protected.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ idiom uses private virtual functions.",
+        "type": "fill_blank",
+        "answers": [
+            "NVI"
+        ],
+        "other_options": [
+            "CRTP",
+            "PIMPL",
+            "Template"
+        ]
+    },
+    {
+        "q": "What is empty base optimization (EBO)?",
+        "type": "mcq",
+        "o": [
+            "Compiler optimization where empty base classes take no space",
+            "Removing empty classes",
+            "Base class deletion",
+            "Memory zeroing"
+        ]
+    },
+    {
+        "q": "What is the typical size of an empty class?",
+        "type": "mcq",
+        "o": [
+            "1 byte",
+            "0 bytes",
+            "4 bytes",
+            "8 bytes"
+        ]
+    },
+    {
+        "q": "Empty base optimization is applied by default.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "EBO allows empty bases to share address with first member.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ attribute guarantees empty base optimization.",
+        "type": "fill_blank",
+        "answers": [
+            "[[no_unique_address]]"
+        ],
+        "other_options": [
+            "[[empty]]",
+            "[[optimize]]",
+            "[[packed]]"
+        ]
+    },
+    {
+        "q": "Rearrange from basic to advanced inheritance concepts:",
+        "type": "rearrange",
+        "words": [
+            "Single inheritance",
+            "Multiple inheritance",
+            "Virtual inheritance",
+            "CRTP",
+            "Mixins"
+        ]
+    },
+    {
+        "q": "What is a mixin class?",
+        "type": "mcq",
+        "o": [
+            "A class providing specific functionality to be mixed into other classes",
+            "A base class only",
+            "A derived class only",
+            "A template class"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\ntemplate<typename T>\nclass Printable {\npublic:\n    void print() { static_cast<T*>(this)->doPrint(); }\n};\n\nclass Item : public Printable<Item> {\npublic:\n    void doPrint() { cout << \"Item\"; }\n};\n\nint main() {\n    Item i;\n    i.print();\n    return 0;\n}",
+        "o": [
+            "Item",
+            "Printable",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Mixins use multiple inheritance to compose functionality.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CRTP can be used to implement mixins.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern composes behaviors through inheritance.",
+        "type": "fill_blank",
+        "answers": [
+            "mixin"
+        ],
+        "other_options": [
+            "decorator",
+            "adapter",
+            "proxy"
+        ]
+    },
+    {
+        "q": "Match the inheritance patterns:",
+        "type": "match",
+        "left": [
+            "Mixin",
+            "Policy",
+            "Trait",
+            "Tag"
+        ],
+        "right": [
+            "Behavior composition",
+            "Strategy template",
+            "Type characteristics",
+            "Type classification"
+        ]
+    },
+    {
+        "q": "What is a policy class?",
+        "type": "mcq",
+        "o": [
+            "A template parameter providing customizable behavior",
+            "A security class",
+            "An access control",
+            "A permission class"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\ntemplate<typename Policy>\nclass Container : public Policy {\npublic:\n    void store() { Policy::save(); }\n};\n\nstruct MemoryPolicy {\n    void save() { cout << \"Memory\"; }\n};\n\nint main() {\n    Container<MemoryPolicy> c;\n    c.store();\n    return 0;\n}",
+        "o": [
+            "Memory",
+            "Container",
+            "Error",
+            "Policy"
+        ]
+    },
+    {
+        "q": "Policy-based design uses compile-time polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Policies are typically passed as template parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ design pattern uses templates for customization.",
+        "type": "fill_blank",
+        "answers": [
+            "policy-based"
+        ],
+        "other_options": [
+            "strategy",
+            "template method",
+            "factory"
+        ]
+    },
+    {
+        "q": "What is inheriting constructors with 'using'?",
+        "type": "mcq",
+        "o": [
+            "Bringing base class constructors into derived class",
+            "Constructor overloading",
+            "Constructor delegation",
+            "Default constructors"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    Base(int x) { cout << x; }\n};\n\nclass Derived : public Base {\npublic:\n    using Base::Base;\n};\n\nint main() {\n    Derived d(42);\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "0",
+            "Derived"
+        ]
+    },
+    {
+        "q": "using Base::Base inherits all base constructors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Inherited constructors are implicit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ declaration inherits constructors from base class.",
+        "type": "fill_blank",
+        "answers": [
+            "using Base::Base"
+        ],
+        "other_options": [
+            "inherit Base",
+            "Base()",
+            "constructor()"
+        ]
+    },
+    {
+        "q": "What is constructor delegation?",
+        "type": "mcq",
+        "o": [
+            "One constructor calling another constructor of same class",
+            "Base constructor call",
+            "Constructor overloading",
+            "Constructor inheritance"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Test {\n    int x, y;\npublic:\n    Test() : Test(0, 0) { cout << \"Default \"; }\n    Test(int a, int b) : x(a), y(b) { cout << x << y; }\n};\n\nint main() {\n    Test t;\n    return 0;\n}",
+        "o": [
+            "00Default ",
+            "Default 00",
+            "00",
+            "Error"
+        ]
+    },
+    {
+        "q": "Constructor delegation avoids code duplication.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Delegating constructor cannot have member initializers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ constructor calls another constructor of same class.",
+        "type": "fill_blank",
+        "answers": [
+            "delegating"
+        ],
+        "other_options": [
+            "inheriting",
+            "forwarding",
+            "calling"
+        ]
+    },
+    {
+        "q": "Rearrange constructor initialization order:",
+        "type": "rearrange",
+        "words": [
+            "Virtual bases",
+            "Direct bases (left to right)",
+            "Members (declaration order)",
+            "Constructor body"
+        ]
+    },
+    {
+        "q": "What is aggregate initialization with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Initializing base and derived members with braces",
+            "Array initialization",
+            "List initialization",
+            "Vector initialization"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nstruct Base {\n    int a;\n};\n\nstruct Derived : Base {\n    int b;\n};\n\nint main() {\n    Derived d{1, 2};\n    cout << d.a << d.b;\n    return 0;\n}",
+        "o": [
+            "12",
+            "Error",
+            "01",
+            "21"
+        ]
+    },
+    {
+        "q": "Aggregates can have public base classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "C++17 allows aggregate initialization with base classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ initialization uses braces for derived aggregates.",
+        "type": "fill_blank",
+        "answers": [
+            "aggregate"
+        ],
+        "other_options": [
+            "brace",
+            "list",
+            "direct"
+        ]
+    },
+    {
+        "q": "What is protected virtual function?",
+        "type": "mcq",
+        "o": [
+            "Virtual function accessible only to derived classes",
+            "Abstract function",
+            "Deleted function",
+            "Static function"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\nprotected:\n    virtual void doWork() { cout << \"Base\"; }\npublic:\n    void work() { doWork(); }\n};\n\nclass Derived : public Base {\nprotected:\n    void doWork() override { cout << \"Derived\"; }\n};\n\nint main() {\n    Derived d;\n    d.work();\n    return 0;\n}",
+        "o": [
+            "Derived",
+            "Base",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Protected virtual functions can be overridden by derived classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "NVI pattern often uses protected virtual functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ access specifier hides virtual functions from external code.",
+        "type": "fill_blank",
+        "answers": [
+            "protected"
+        ],
+        "other_options": [
+            "private",
+            "public",
+            "internal"
+        ]
+    },
+    {
+        "q": "Match the access levels for virtual functions:",
+        "type": "match",
+        "left": [
+            "Public virtual",
+            "Protected virtual",
+            "Private virtual"
+        ],
+        "right": [
+            "Open interface",
+            "Template method",
+            "Implementation detail"
+        ]
+    },
+    {
+        "q": "What is covariant return type?",
+        "type": "mcq",
+        "o": [
+            "Returning derived type from overriding function",
+            "Returning multiple types",
+            "Variable return type",
+            "Template return"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual Base* clone() { return new Base(*this); }\n    virtual void print() { cout << \"Base\"; }\n};\n\nclass Derived : public Base {\npublic:\n    Derived* clone() override { return new Derived(*this); }\n    void print() override { cout << \"Derived\"; }\n};\n\nint main() {\n    Derived d;\n    d.clone()->print();\n    return 0;\n}",
+        "o": [
+            "Derived",
+            "Base",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Covariant return types must be pointers or references.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Covariance improves type safety in clone patterns.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ return type allows derived type in overriding method.",
+        "type": "fill_blank",
+        "answers": [
+            "covariant"
+        ],
+        "other_options": [
+            "contravariant",
+            "invariant",
+            "variant"
+        ]
+    },
+    {
+        "q": "What is contravariant parameter?",
+        "type": "mcq",
+        "o": [
+            "Parameter type in derived being more general than base",
+            "Return type variance",
+            "Template parameter",
+            "Reference parameter"
+        ]
+    },
+    {
+        "q": "C++ does not support contravariant parameters directly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Covariance applies to return types, contravariance to parameters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ variance means derived type can be more specific.",
+        "type": "fill_blank",
+        "answers": [
+            "covariance"
+        ],
+        "other_options": [
+            "contravariance",
+            "invariance",
+            "bivariance"
+        ]
+    },
+    {
+        "q": "Rearrange inheritance keywords by introduction:",
+        "type": "rearrange",
+        "words": [
+            "virtual (C++98)",
+            "override (C++11)",
+            "final (C++11)",
+            "using Base::Base (C++11)",
+            "[[no_unique_address]] (C++20)"
+        ]
+    },
+    {
+        "q": "What is memory layout in multiple inheritance?",
+        "type": "mcq",
+        "o": [
+            "Object contains subobjects of all base classes",
+            "Only first base",
+            "Only largest base",
+            "No base data"
+        ]
+    },
+    {
+        "q": "Multiple inheritance may have multiple vptrs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pointer adjustment may be needed when casting between bases.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ layout contains base subobjects sequentially.",
+        "type": "fill_blank",
+        "answers": [
+            "object"
+        ],
+        "other_options": [
+            "virtual",
+            "memory",
+            "class"
+        ]
+    },
+    {
+        "q": "What is vtable adjustment in multiple inheritance?",
+        "type": "mcq",
+        "o": [
+            "Thunks that adjust this pointer before calling virtual function",
+            "Table resizing",
+            "Memory adjustment",
+            "Pointer increment"
+        ]
+    },
+    {
+        "q": "What is a thunk in C++?",
+        "type": "mcq",
+        "o": [
+            "A small code segment for pointer adjustment before virtual call",
+            "A function type",
+            "A class type",
+            "A template"
+        ]
+    },
+    {
+        "q": "Thunks handle this pointer adjustment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multiple inheritance can increase object size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ adjusts this pointer in multiple inheritance.",
+        "type": "fill_blank",
+        "answers": [
+            "thunk"
+        ],
+        "other_options": [
+            "stub",
+            "wrapper",
+            "proxy"
+        ]
+    },
+    {
+        "q": "Match the implementation details:",
+        "type": "match",
+        "left": [
+            "VTable",
+            "VPtr",
+            "Thunk",
+            "RTTI"
+        ],
+        "right": [
+            "Function addresses",
+            "Table pointer in object",
+            "Pointer adjustment",
+            "Type information"
+        ]
+    },
+    {
+        "q": "What is RTTI (Runtime Type Information)?",
+        "type": "mcq",
+        "o": [
+            "Mechanism to determine object type at runtime",
+            "Return Type Type Info",
+            "Real Time Template Info",
+            "Runtime Template Type"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <typeinfo>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual ~Base() {}\n};\n\nclass Derived : public Base {};\n\nint main() {\n    Base* b = new Derived();\n    cout << typeid(*b).name();\n    delete b;\n    return 0;\n}",
+        "o": [
+            "Contains 'Derived' (implementation defined)",
+            "Base",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "RTTI requires virtual functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "typeid returns type_info reference.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ operator returns runtime type information.",
+        "type": "fill_blank",
+        "answers": [
+            "typeid"
+        ],
+        "other_options": [
+            "typeof",
+            "decltype",
+            "classof"
+        ]
+    },
+    {
+        "q": "What is virtual table pointer (vptr)?",
+        "type": "mcq",
+        "o": [
+            "Hidden pointer in object pointing to class vtable",
+            "Virtual pointer type",
+            "Variable pointer",
+            "Void pointer"
+        ]
+    },
+    {
+        "q": "Every object with virtual functions has a vptr.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "vptr adds sizeof(pointer) to object size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ points to the class's virtual table.",
+        "type": "fill_blank",
+        "answers": [
+            "vptr"
+        ],
+        "other_options": [
+            "vtable",
+            "this",
+            "offset"
+        ]
+    },
+    {
+        "q": "Rearrange from runtime to compile-time polymorphism:",
+        "type": "rearrange",
+        "words": [
+            "Virtual functions",
+            "RTTI",
+            "Dynamic cast",
+            "CRTP",
+            "Concepts"
+        ]
+    },
+    {
+        "q": "What is the Barton-Nackman trick?",
+        "type": "mcq",
+        "o": [
+            "Defining friend functions inside class template",
+            "A sorting algorithm",
+            "A memory trick",
+            "A compilation trick"
+        ]
+    },
+    {
+        "q": "The Barton-Nackman trick uses hidden friends.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Hidden friends are found only through ADL.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ trick defines operators as hidden friends.",
+        "type": "fill_blank",
+        "answers": [
+            "Barton-Nackman"
+        ],
+        "other_options": [
+            "CRTP",
+            "NVI",
+            "SFINAE"
+        ]
+    },
+    {
+        "q": "What is the enable_if technique with inheritance?",
+        "type": "mcq",
+        "o": [
+            "SFINAE-based conditional enabling of class templates",
+            "Runtime enabling",
+            "Exception enabling",
+            "Thread enabling"
+        ]
+    },
+    {
+        "q": "std::enable_if enables compile-time selection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "enable_if works through SFINAE.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ technique conditionally includes template specializations.",
+        "type": "fill_blank",
+        "answers": [
+            "SFINAE"
+        ],
+        "other_options": [
+            "RTTI",
+            "ADL",
+            "CRTP"
+        ]
+    },
+    {
+        "q": "Match the metaprogramming techniques:",
+        "type": "match",
+        "left": [
+            "SFINAE",
+            "enable_if",
+            "if constexpr",
+            "concepts"
+        ],
+        "right": [
+            "Substitution failure",
+            "Conditional type",
+            "Compile-time branch",
+            "Type constraints"
+        ]
+    },
+    {
+        "q": "What is std::is_base_of?",
+        "type": "mcq",
+        "o": [
+            "Type trait checking if one class is base of another",
+            "Base class finder",
+            "Inheritance checker",
+            "Type converter"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <type_traits>\nusing namespace std;\n\nclass Base {};\nclass Derived : public Base {};\nclass Other {};\n\nint main() {\n    cout << is_base_of<Base, Derived>::value;\n    cout << is_base_of<Base, Other>::value;\n    return 0;\n}",
+        "o": [
+            "10",
+            "01",
+            "11",
+            "00"
+        ]
+    },
+    {
+        "q": "is_base_of works at compile time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "is_base_of returns true for same type.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ trait checks inheritance relationship.",
+        "type": "fill_blank",
+        "answers": [
+            "is_base_of"
+        ],
+        "other_options": [
+            "is_derived_of",
+            "has_base",
+            "inherits_from"
+        ]
+    },
+    {
+        "q": "What is std::derived_from concept (C++20)?",
+        "type": "mcq",
+        "o": [
+            "Concept constraining type to be derived from a base",
+            "Derivation function",
+            "Base class helper",
+            "Template constraint"
+        ]
+    },
+    {
+        "q": "std::derived_from requires public inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Concepts provide better error messages than SFINAE.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ concept ensures public derivation from base.",
+        "type": "fill_blank",
+        "answers": [
+            "derived_from"
+        ],
+        "other_options": [
+            "is_base_of",
+            "base_class",
+            "inherits"
+        ]
+    },
+    {
+        "q": "Rearrange type traits by checking level:",
+        "type": "rearrange",
+        "words": [
+            "is_class",
+            "is_base_of",
+            "is_polymorphic",
+            "is_abstract",
+            "is_final"
+        ]
+    },
+    {
+        "q": "What is std::is_polymorphic?",
+        "type": "mcq",
+        "o": [
+            "Type trait checking if class has virtual functions",
+            "Polymorphism enabler",
+            "Virtual checker",
+            "Dynamic type trait"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <type_traits>\nusing namespace std;\n\nclass NonPoly {};\nclass Poly { virtual void f() {} };\n\nint main() {\n    cout << is_polymorphic<NonPoly>::value;\n    cout << is_polymorphic<Poly>::value;\n    return 0;\n}",
+        "o": [
+            "01",
+            "10",
+            "11",
+            "00"
+        ]
+    },
+    {
+        "q": "Polymorphic classes have at least one virtual function.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "is_polymorphic is evaluated at compile time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ trait checks for virtual functions.",
+        "type": "fill_blank",
+        "answers": [
+            "is_polymorphic"
+        ],
+        "other_options": [
+            "is_virtual",
+            "has_virtual",
+            "is_dynamic"
+        ]
+    },
+    {
+        "q": "What is std::is_abstract?",
+        "type": "mcq",
+        "o": [
+            "Type trait checking if class has pure virtual functions",
+            "Abstract factory check",
+            "Interface check",
+            "Virtual base check"
+        ]
+    },
+    {
+        "q": "Abstract classes return true for is_abstract.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "is_abstract checks for pure virtual functions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ trait detects classes with pure virtuals.",
+        "type": "fill_blank",
+        "answers": [
+            "is_abstract"
+        ],
+        "other_options": [
+            "is_pure",
+            "is_interface",
+            "has_pure_virtual"
+        ]
+    },
+    {
+        "q": "Match the type traits:",
+        "type": "match",
+        "left": [
+            "is_class",
+            "is_polymorphic",
+            "is_abstract",
+            "is_final"
+        ],
+        "right": [
+            "Class or struct",
+            "Has virtual",
+            "Has pure virtual",
+            "Cannot inherit"
+        ]
+    },
+    {
+        "q": "What is std::is_final?",
+        "type": "mcq",
+        "o": [
+            "Type trait checking if class cannot be inherited from",
+            "Final function check",
+            "Override check",
+            "Const check"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <type_traits>\nusing namespace std;\n\nclass Open {};\nclass Closed final {};\n\nint main() {\n    cout << is_final<Open>::value;\n    cout << is_final<Closed>::value;\n    return 0;\n}",
+        "o": [
+            "01",
+            "10",
+            "11",
+            "00"
+        ]
+    },
+    {
+        "q": "final classes return true for is_final.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "is_final is a C++14 type trait.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ trait checks for final specifier.",
+        "type": "fill_blank",
+        "answers": [
+            "is_final"
+        ],
+        "other_options": [
+            "is_sealed",
+            "is_locked",
+            "is_closed"
+        ]
+    },
+    {
+        "q": "What is protected inheritance used for?",
+        "type": "mcq",
+        "o": [
+            "Restricting base class interface to hierarchy only",
+            "Security purposes",
+            "Private data",
+            "Public API"
+        ]
+    },
+    {
+        "q": "Protected inheritance is less common than public.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Protected inheritance hides base interface from external code.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ inheritance makes base public members protected.",
+        "type": "fill_blank",
+        "answers": [
+            "protected"
+        ],
+        "other_options": [
+            "private",
+            "public",
+            "internal"
+        ]
+    },
+    {
+        "q": "Rearrange from most to least restrictive inheritance:",
+        "type": "rearrange",
+        "words": [
+            "private",
+            "protected",
+            "public"
+        ]
+    },
+    {
+        "q": "What is the Liskov Substitution Principle (LSP)?",
+        "type": "mcq",
+        "o": [
+            "Derived classes must be substitutable for base classes",
+            "Substituting algorithms",
+            "Variable substitution",
+            "Type replacement"
+        ]
+    },
+    {
+        "q": "LSP is about behavioral substitutability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Violating LSP breaks polymorphism expectations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ principle requires derived to preserve base contracts.",
+        "type": "fill_blank",
+        "answers": [
+            "LSP"
+        ],
+        "other_options": [
+            "SRP",
+            "OCP",
+            "DIP"
+        ]
+    },
+    {
+        "q": "Match the SOLID principles:",
+        "type": "match",
+        "left": [
+            "SRP",
+            "OCP",
+            "LSP",
+            "ISP"
+        ],
+        "right": [
+            "Single responsibility",
+            "Open/closed",
+            "Substitution",
+            "Interface segregation"
+        ]
+    },
+    {
+        "q": "What is composition over inheritance?",
+        "type": "mcq",
+        "o": [
+            "Preferring object composition to class inheritance",
+            "Combining functions",
+            "Inheriting compositions",
+            "Template composition"
+        ]
+    },
+    {
+        "q": "Composition provides better flexibility than inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Composition allows runtime behavior changes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern favors has-a over is-a relationships.",
+        "type": "fill_blank",
+        "answers": [
+            "composition"
+        ],
+        "other_options": [
+            "inheritance",
+            "aggregation",
+            "delegation"
+        ]
+    },
+    {
+        "q": "What is delegation in OOP?",
+        "type": "mcq",
+        "o": [
+            "Forwarding method calls to a contained object",
+            "Inheritance forwarding",
+            "Template delegation",
+            "Event delegation"
+        ]
+    },
+    {
+        "q": "Delegation can simulate inheritance behavior.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Delegation provides more flexibility than inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern forwards calls to member objects.",
+        "type": "fill_blank",
+        "answers": [
+            "delegation"
+        ],
+        "other_options": [
+            "proxy",
+            "adapter",
+            "facade"
+        ]
+    },
+    {
+        "q": "Rearrange from tight to loose coupling:",
+        "type": "rearrange",
+        "words": [
+            "Public inheritance",
+            "Protected inheritance",
+            "Private inheritance",
+            "Composition",
+            "Dependency injection"
+        ]
+    },
+    {
+        "q": "What is the template method pattern?",
+        "type": "mcq",
+        "o": [
+            "Base class defines algorithm skeleton with customizable steps",
+            "Template classes",
+            "Method templates",
+            "Generic programming"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Algorithm {\npublic:\n    void run() {\n        step1();\n        step2();\n    }\nprotected:\n    virtual void step1() { cout << \"1\"; }\n    virtual void step2() = 0;\n};\n\nclass Impl : public Algorithm {\nprotected:\n    void step2() override { cout << \"2\"; }\n};\n\nint main() {\n    Impl i;\n    i.run();\n    return 0;\n}",
+        "o": [
+            "12",
+            "1",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Template method uses inheritance for customization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Template method keeps algorithm structure in base class.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern defines skeleton in base with hooks.",
+        "type": "fill_blank",
+        "answers": [
+            "template method"
+        ],
+        "other_options": [
+            "strategy",
+            "visitor",
+            "factory"
+        ]
+    },
+    {
+        "q": "Match the creational patterns:",
+        "type": "match",
+        "left": [
+            "Factory",
+            "Abstract Factory",
+            "Builder",
+            "Prototype"
+        ],
+        "right": [
+            "Create objects",
+            "Create families",
+            "Step-by-step",
+            "Clone objects"
+        ]
+    },
+    {
+        "q": "What is the prototype pattern?",
+        "type": "mcq",
+        "o": [
+            "Creating objects by cloning existing prototypes",
+            "First version object",
+            "Interface pattern",
+            "Abstract class"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass Prototype {\npublic:\n    virtual Prototype* clone() const = 0;\n    virtual void print() const = 0;\n    virtual ~Prototype() = default;\n};\n\nclass Concrete : public Prototype {\n    int value;\npublic:\n    Concrete(int v) : value(v) {}\n    Prototype* clone() const override { return new Concrete(*this); }\n    void print() const override { cout << value; }\n};\n\nint main() {\n    Concrete c(42);\n    Prototype* copy = c.clone();\n    copy->print();\n    delete copy;\n    return 0;\n}",
+        "o": [
+            "42",
+            "Error",
+            "0",
+            "Prototype"
+        ]
+    },
+    {
+        "q": "Prototype uses clone() to create new objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Covariant return types improve clone pattern.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ creates objects by copying existing ones.",
+        "type": "fill_blank",
+        "answers": [
+            "prototype pattern"
+        ],
+        "other_options": [
+            "factory pattern",
+            "builder pattern",
+            "singleton"
+        ]
+    },
+    {
+        "q": "What is virtual clone idiom?",
+        "type": "mcq",
+        "o": [
+            "Using virtual function to clone polymorphic objects",
+            "Clone function",
+            "Copy constructor",
+            "Move operation"
+        ]
+    },
+    {
+        "q": "Virtual clone allows polymorphic copying.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Clone pattern solves slicing problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ idiom creates copies through base pointer.",
+        "type": "fill_blank",
+        "answers": [
+            "virtual clone"
+        ],
+        "other_options": [
+            "virtual copy",
+            "deep copy",
+            "polymorphic copy"
+        ]
+    },
+    {
+        "q": "Rearrange object creation patterns by complexity:",
+        "type": "rearrange",
+        "words": [
+            "Simple factory",
+            "Factory method",
+            "Abstract factory",
+            "Builder",
+            "Prototype"
+        ]
+    },
+    {
+        "q": "What is static polymorphism with CRTP?",
+        "type": "mcq",
+        "o": [
+            "Compile-time polymorphism using derived class as template parameter",
+            "Runtime polymorphism",
+            "Virtual functions",
+            "Dynamic dispatch"
+        ]
+    },
+    {
+        "q": "Static polymorphism has no virtual function overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "CRTP enables compile-time method selection.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ polymorphism uses templates instead of virtuals.",
+        "type": "fill_blank",
+        "answers": [
+            "static"
+        ],
+        "other_options": [
+            "dynamic",
+            "runtime",
+            "virtual"
+        ]
+    },
+    {
+        "q": "What is type erasure?",
+        "type": "mcq",
+        "o": [
+            "Hiding concrete type behind runtime interface",
+            "Type deletion",
+            "Type conversion",
+            "Type casting"
+        ]
+    },
+    {
+        "q": "std::function uses type erasure internally.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::any is an example of type erasure.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ technique hides concrete types at runtime.",
+        "type": "fill_blank",
+        "answers": [
+            "type erasure"
+        ],
+        "other_options": [
+            "type hiding",
+            "type wrapping",
+            "type boxing"
+        ]
+    },
+    {
+        "q": "Match the type handling techniques:",
+        "type": "match",
+        "left": [
+            "Type erasure",
+            "Type traits",
+            "SFINAE",
+            "Concepts"
+        ],
+        "right": [
+            "Hide concrete type",
+            "Query type properties",
+            "Exclude overloads",
+            "Constrain templates"
+        ]
+    },
+    {
+        "q": "What is the expression problem?",
+        "type": "mcq",
+        "o": [
+            "Adding new types vs new operations extensibility tradeoff",
+            "Syntax problem",
+            "Evaluation problem",
+            "Parsing problem"
+        ]
+    },
+    {
+        "q": "Inheritance makes adding new types easy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Visitor pattern makes adding operations easy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ problem is about extensibility in two dimensions.",
+        "type": "fill_blank",
+        "answers": [
+            "expression"
+        ],
+        "other_options": [
+            "extension",
+            "design",
+            "architecture"
+        ]
+    },
+    {
+        "q": "What is virtual inheritance initialization?",
+        "type": "mcq",
+        "o": [
+            "Most derived class must initialize virtual bases",
+            "Automatic initialization",
+            "No initialization needed",
+            "Base initializes itself"
+        ]
+    },
+    {
+        "q": "Virtual bases are initialized before non-virtual bases.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Intermediate classes cannot control virtual base initialization.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ class initializes virtual base.",
+        "type": "fill_blank",
+        "answers": [
+            "most derived"
+        ],
+        "other_options": [
+            "immediate base",
+            "direct base",
+            "virtual base"
+        ]
+    },
+    {
+        "q": "Rearrange initialization order:",
+        "type": "rearrange",
+        "words": [
+            "Virtual bases",
+            "Direct non-virtual bases",
+            "Member objects",
+            "Constructor body"
+        ]
+    },
+    {
+        "q": "What is access control inheritance?",
+        "type": "mcq",
+        "o": [
+            "How access specifiers change through inheritance",
+            "Security inheritance",
+            "Permission inheritance",
+            "Role inheritance"
+        ]
+    },
+    {
+        "q": "What does 'using Base::member' in derived do?",
+        "type": "mcq",
+        "o": [
+            "Changes access level or brings hidden member into scope",
+            "Imports member",
+            "Copies member",
+            "Deletes member"
+        ]
+    },
+    {
+        "q": "using can change access specifier of inherited member.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Private base members remain inaccessible even with using.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ declaration can expose base protected member publicly.",
+        "type": "fill_blank",
+        "answers": [
+            "using"
+        ],
+        "other_options": [
+            "friend",
+            "public",
+            "expose"
+        ]
+    },
+    {
+        "q": "What is the difference between override and final?",
+        "type": "mcq",
+        "o": [
+            "override verifies base exists, final prevents further overriding",
+            "Both prevent overriding",
+            "Both verify base exists",
+            "No difference"
+        ]
+    },
+    {
+        "q": "A function can have both override and final.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "final on class prevents any inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ and _______ are context-sensitive keywords.",
+        "type": "fill_blank",
+        "answers": [
+            "override",
+            "final"
+        ],
+        "other_options": [
+            "virtual",
+            "delete"
+        ]
+    },
+    {
+        "q": "Match the specifier effects:",
+        "type": "match",
+        "left": [
+            "virtual",
+            "override",
+            "final",
+            "= 0"
+        ],
+        "right": [
+            "Enable polymorphism",
+            "Verify override",
+            "Stop override",
+            "Make pure virtual"
+        ]
+    },
+    {
+        "q": "What is pointer-to-member with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Pointers to base members work with derived objects",
+            "Member pointers only",
+            "Base pointers only",
+            "No inheritance support"
+        ]
+    },
+    {
+        "q": "Base member pointers are covariant with derived objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual member pointers enable polymorphic calls.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ to member works polymorphically with virtuals.",
+        "type": "fill_blank",
+        "answers": [
+            "pointer"
+        ],
+        "other_options": [
+            "reference",
+            "handle",
+            "accessor"
+        ]
+    },
+    {
+        "q": "What is subobject in multiple inheritance?",
+        "type": "mcq",
+        "o": [
+            "Part of object representing each base class",
+            "Child object",
+            "Nested object",
+            "Inner class"
+        ]
+    },
+    {
+        "q": "Each non-virtual base creates a subobject.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual bases share a single subobject.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ represents base class data within derived object.",
+        "type": "fill_blank",
+        "answers": [
+            "subobject"
+        ],
+        "other_options": [
+            "subclass",
+            "component",
+            "part"
+        ]
+    },
+    {
+        "q": "Rearrange class relationship types:",
+        "type": "rearrange",
+        "words": [
+            "is-a (public)",
+            "implemented-in-terms-of (private)",
+            "has-a (composition)",
+            "uses-a (association)"
+        ]
+    },
+    {
+        "q": "What is association vs aggregation vs composition?",
+        "type": "mcq",
+        "o": [
+            "Increasing strength of has-a relationship",
+            "Different inheritance types",
+            "Access specifier types",
+            "Template specializations"
+        ]
+    },
+    {
+        "q": "Composition implies ownership and lifecycle management.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Aggregation is a weaker form of has-a than composition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ relationship implies ownership and same lifetime.",
+        "type": "fill_blank",
+        "answers": [
+            "composition"
+        ],
+        "other_options": [
+            "aggregation",
+            "association",
+            "dependency"
+        ]
+    },
+    {
+        "q": "Match the UML relationships:",
+        "type": "match",
+        "left": [
+            "Inheritance",
+            "Composition",
+            "Aggregation",
+            "Dependency"
+        ],
+        "right": [
+            "Empty arrow",
+            "Filled diamond",
+            "Empty diamond",
+            "Dashed arrow"
+        ]
+    },
+    {
+        "q": "What is a virtual base offset?",
+        "type": "mcq",
+        "o": [
+            "Distance from derived object to virtual base subobject",
+            "Base class size",
+            "Function offset",
+            "Member offset"
+        ]
+    },
+    {
+        "q": "Virtual base offsets are stored in vtable.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual inheritance adds indirection overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ stores virtual base location.",
+        "type": "fill_blank",
+        "answers": [
+            "vtable"
+        ],
+        "other_options": [
+            "vptr",
+            "offset table",
+            "base table"
+        ]
+    },
+    {
+        "q": "What is cross-casting?",
+        "type": "mcq",
+        "o": [
+            "Casting between sibling bases in multiple inheritance",
+            "Type crossing",
+            "Cast conversion",
+            "Type transformation"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nclass A { public: virtual ~A() {} };\nclass B { public: virtual ~B() {} };\nclass C : public A, public B {};\n\nint main() {\n    C c;\n    A* a = &c;\n    B* b = dynamic_cast<B*>(a);\n    cout << (b != nullptr);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "Error",
+            "Undefined"
+        ]
+    },
+    {
+        "q": "dynamic_cast enables cross-casting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Cross-casting requires runtime type information.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ cast allows conversion between sibling bases.",
+        "type": "fill_blank",
+        "answers": [
+            "dynamic_cast"
+        ],
+        "other_options": [
+            "static_cast",
+            "reinterpret_cast",
+            "cross_cast"
+        ]
+    },
+    {
+        "q": "Rearrange cast types from safest to most dangerous:",
+        "type": "rearrange",
+        "words": [
+            "Implicit conversion",
+            "static_cast",
+            "dynamic_cast",
+            "const_cast",
+            "reinterpret_cast"
+        ]
+    },
+    {
+        "q": "What is the common base idiom?",
+        "type": "mcq",
+        "o": [
+            "Multiple classes inheriting from a common abstract base",
+            "Common class",
+            "Shared base",
+            "Universal base"
+        ]
+    },
+    {
+        "q": "Common base enables heterogeneous containers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Common base provides polymorphic interface.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ base enables polymorphic collections.",
+        "type": "fill_blank",
+        "answers": [
+            "common"
+        ],
+        "other_options": [
+            "shared",
+            "abstract",
+            "virtual"
+        ]
+    },
+    {
+        "q": "What is the dominance rule in virtual inheritance?",
+        "type": "mcq",
+        "o": [
+            "Derived member overrides intermediate class implementations",
+            "Base dominates",
+            "First defined wins",
+            "Last defined wins"
+        ]
+    },
+    {
+        "q": "Dominance resolves ambiguity in virtual inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Most derived override dominates intermediate overrides.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ rule picks most derived class implementation.",
+        "type": "fill_blank",
+        "answers": [
+            "dominance"
+        ],
+        "other_options": [
+            "precedence",
+            "priority",
+            "override"
+        ]
+    },
+    {
+        "q": "Match the multiple inheritance concepts:",
+        "type": "match",
+        "left": [
+            "Diamond problem",
+            "Dominance",
+            "Virtual base",
+            "Cross-cast"
+        ],
+        "right": [
+            "Duplicate base",
+            "Override selection",
+            "Single copy",
+            "Sibling conversion"
+        ]
+    },
+    {
+        "q": "What is object identity in inheritance?",
+        "type": "mcq",
+        "o": [
+            "Comparing if two pointers/references refer to same object",
+            "Object name",
+            "Object type",
+            "Object value"
+        ]
+    },
+    {
+        "q": "Base pointer to same object has same identity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Address comparison can fail in multiple inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ compares if pointers refer to same object.",
+        "type": "fill_blank",
+        "answers": [
+            "identity"
+        ],
+        "other_options": [
+            "equality",
+            "sameness",
+            "reference"
+        ]
+    },
+    {
+        "q": "What is coercion in C++ inheritance?",
+        "type": "mcq",
+        "o": [
+            "Implicit type conversion between related types",
+            "Forced conversion",
+            "Explicit casting",
+            "Type punning"
+        ]
+    },
+    {
+        "q": "Derived to base is an implicit coercion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Coercion preserves type safety in upcasting.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ conversion happens implicitly for derived to base.",
+        "type": "fill_blank",
+        "answers": [
+            "coercion"
+        ],
+        "other_options": [
+            "casting",
+            "transformation",
+            "promotion"
+        ]
+    },
+    {
+        "q": "Rearrange from strongest to weakest type relationship:",
+        "type": "rearrange",
+        "words": [
+            "Same type",
+            "Public inheritance",
+            "Protected inheritance",
+            "Private inheritance",
+            "No relationship"
+        ]
+    },
+    {
+        "q": "What is the acyclic visitor pattern?",
+        "type": "mcq",
+        "o": [
+            "Visitor without cyclic dependencies using dynamic_cast",
+            "Graph visitor",
+            "Tree visitor",
+            "Linear visitor"
+        ]
+    },
+    {
+        "q": "Acyclic visitor breaks compile-time dependencies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Acyclic visitor uses runtime type checking.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ visitor pattern removes cyclic includes.",
+        "type": "fill_blank",
+        "answers": [
+            "acyclic"
+        ],
+        "other_options": [
+            "modern",
+            "extensible",
+            "template"
+        ]
+    },
+    {
+        "q": "What is a mixin layer?",
+        "type": "mcq",
+        "o": [
+            "Stacking multiple mixin classes through template inheritance",
+            "Single mixin",
+            "Mixin interface",
+            "Mixin factory"
+        ]
+    },
+    {
+        "q": "Mixin layers provide composable behavior stacking.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Mixin layers use templates for composition.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pattern stacks behaviors through template inheritance.",
+        "type": "fill_blank",
+        "answers": [
+            "mixin layer"
+        ],
+        "other_options": [
+            "decorator",
+            "composite",
+            "chain"
+        ]
+    },
+    {
+        "q": "Match the composition patterns:",
+        "type": "match",
+        "left": [
+            "Mixin",
+            "Decorator",
+            "Composite",
+            "Proxy"
+        ],
+        "right": [
+            "Template composition",
+            "Runtime wrapping",
+            "Tree structure",
+            "Interface forwarding"
+        ]
+    },
+    {
+        "q": "What is a fat interface?",
+        "type": "mcq",
+        "o": [
+            "Interface with more methods than clients need",
+            "Large class",
+            "Complex interface",
+            "Overloaded interface"
+        ]
+    },
+    {
+        "q": "Fat interfaces violate Interface Segregation Principle.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Multiple small interfaces are preferred over one fat interface.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ principle recommends small, focused interfaces.",
+        "type": "fill_blank",
+        "answers": [
+            "Interface Segregation"
+        ],
+        "other_options": [
+            "Single Responsibility",
+            "Open/Closed",
+            "Liskov"
+        ]
+    },
+    {
+        "q": "What is a role interface?",
+        "type": "mcq",
+        "o": [
+            "An interface representing a specific capability or role",
+            "User role",
+            "Permission interface",
+            "Access control"
+        ]
+    },
+    {
+        "q": "Role interfaces are typically small and focused.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "A class can implement multiple role interfaces.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ interface defines a single capability.",
+        "type": "fill_blank",
+        "answers": [
+            "role"
+        ],
+        "other_options": [
+            "fat",
+            "god",
+            "utility"
+        ]
+    },
+    {
+        "q": "Rearrange from bad to good interface design:",
+        "type": "rearrange",
+        "words": [
+            "God interface",
+            "Fat interface",
+            "General interface",
+            "Role interface",
+            "Minimal interface"
+        ]
+    },
+    {
+        "q": "What is implementation inheritance vs interface inheritance?",
+        "type": "mcq",
+        "o": [
+            "Inheriting code vs inheriting contract only",
+            "Same thing",
+            "Public vs private",
+            "Template vs virtual"
+        ]
+    },
+    {
+        "q": "Pure virtual functions provide interface inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Non-virtual functions provide implementation inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ inheritance provides only method signatures.",
+        "type": "fill_blank",
+        "answers": [
+            "interface"
+        ],
+        "other_options": [
+            "implementation",
+            "code",
+            "behavior"
+        ]
+    },
+    {
+        "q": "What is the fragile base class problem?",
+        "type": "mcq",
+        "o": [
+            "Base class changes breaking derived classes",
+            "Weak base",
+            "Missing base",
+            "Abstract base"
+        ]
+    },
+    {
+        "q": "Fragile base class problem is a maintenance issue.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Composition helps avoid fragile base class problem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ problem occurs when base changes break derived.",
+        "type": "fill_blank",
+        "answers": [
+            "fragile base class"
+        ],
+        "other_options": [
+            "brittle base",
+            "weak base",
+            "unstable base"
+        ]
+    },
+    {
+        "q": "Match the inheritance problems:",
+        "type": "match",
+        "left": [
+            "Diamond",
+            "Fragile base",
+            "Fat interface",
+            "Deep hierarchy"
+        ],
+        "right": [
+            "Duplicate base",
+            "Change sensitivity",
+            "Too many methods",
+            "Complexity"
+        ]
+    },
+    {
+        "q": "What is the prefer composition rule?",
+        "type": "mcq",
+        "o": [
+            "Use composition unless is-a relationship is clear",
+            "Never use inheritance",
+            "Always use composition",
+            "Avoid all relationships"
+        ]
+    },
+    {
+        "q": "Composition provides better encapsulation than inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Inheritance should model true is-a relationships.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ guideline recommends composition by default.",
+        "type": "fill_blank",
+        "answers": [
+            "prefer composition"
+        ],
+        "other_options": [
+            "prefer inheritance",
+            "avoid inheritance",
+            "minimize coupling"
+        ]
+    },
+    {
+        "q": "What is a god class anti-pattern?",
+        "type": "mcq",
+        "o": [
+            "A class that knows and does too much",
+            "A base class",
+            "An interface class",
+            "A singleton class"
+        ]
+    },
+    {
+        "q": "God classes violate Single Responsibility Principle.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Refactoring god classes often involves extracting smaller classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ anti-pattern has class doing too many things.",
+        "type": "fill_blank",
+        "answers": [
+            "god class"
+        ],
+        "other_options": [
+            "fat class",
+            "mega class",
+            "super class"
+        ]
+    },
+    {
+        "q": "Rearrange from anti-pattern to good design:",
+        "type": "rearrange",
+        "words": [
+            "God class",
+            "Fat class",
+            "Bloated class",
+            "Focused class",
+            "Single responsibility"
+        ]
+    },
+    {
+        "q": "What is the Law of Demeter?",
+        "type": "mcq",
+        "o": [
+            "Only talk to immediate friends, avoid chained calls",
+            "Inheritance law",
+            "Abstraction rule",
+            "Encapsulation principle"
+        ]
+    },
+    {
+        "q": "Law of Demeter reduces coupling.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Violating Law of Demeter creates fragile code.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ principle limits object interaction depth.",
+        "type": "fill_blank",
+        "answers": [
+            "Law of Demeter"
+        ],
+        "other_options": [
+            "SOLID",
+            "DRY",
+            "KISS"
+        ]
+    },
+    {
+        "q": "What are C++20 concepts with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Constraining template parameters including inheritance checks",
+            "Concept inheritance",
+            "Virtual concepts",
+            "Abstract concepts"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <concepts>\nusing namespace std;\n\nclass Base {};\nclass Derived : public Base {};\n\ntemplate<derived_from<Base> T>\nvoid foo(T) { cout << \"OK\"; }\n\nint main() {\n    foo(Derived{});\n    return 0;\n}",
+        "o": [
+            "OK",
+            "Error",
+            "Nothing",
+            "Base"
+        ]
+    },
+    {
+        "q": "derived_from concept checks public inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Concepts improve error messages over SFINAE.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ concept constrains type to inherit from base.",
+        "type": "fill_blank",
+        "answers": [
+            "derived_from"
+        ],
+        "other_options": [
+            "is_base_of",
+            "inherits",
+            "subclass_of"
+        ]
+    },
+    {
+        "q": "Match C++20 features with inheritance:",
+        "type": "match",
+        "left": [
+            "derived_from",
+            "[[no_unique_address]]",
+            "constexpr virtual",
+            "spaceship operator"
+        ],
+        "right": [
+            "Inheritance constraint",
+            "EBO member",
+            "Compile-time virtual",
+            "Comparison generation"
+        ]
+    },
+    {
+        "q": "What is constexpr virtual in C++20?",
+        "type": "mcq",
+        "o": [
+            "Virtual functions that can be called at compile time",
+            "Constant virtual",
+            "Static virtual",
+            "Inline virtual"
+        ]
+    },
+    {
+        "q": "constexpr virtual allows compile-time polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "constexpr virtual can be evaluated at compile time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ virtual function works in constant expressions.",
+        "type": "fill_blank",
+        "answers": [
+            "constexpr"
+        ],
+        "other_options": [
+            "consteval",
+            "static",
+            "inline"
+        ]
+    },
+    {
+        "q": "What is explicit object parameter (deducing this)?",
+        "type": "mcq",
+        "o": [
+            "C++23 feature allowing explicit this parameter",
+            "Explicit constructor",
+            "This pointer",
+            "Self parameter"
+        ]
+    },
+    {
+        "q": "Deducing this enables CRTP without inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Explicit object parameter is a C++23 feature.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ feature allows deducing derived type from this.",
+        "type": "fill_blank",
+        "answers": [
+            "deducing this"
+        ],
+        "other_options": [
+            "explicit this",
+            "self type",
+            "auto this"
+        ]
+    },
+    {
+        "q": "Rearrange C++ inheritance evolution:",
+        "type": "rearrange",
+        "words": [
+            "Multiple inheritance (C++98)",
+            "final/override (C++11)",
+            "EBO guarantee (C++17)",
+            "Concepts (C++20)",
+            "Deducing this (C++23)"
+        ]
+    },
+    {
+        "q": "What is inheritance in consteval context?",
+        "type": "mcq",
+        "o": [
+            "Inheritance working in immediate functions",
+            "Constant inheritance",
+            "Static inheritance",
+            "Template inheritance"
+        ]
+    },
+    {
+        "q": "consteval functions must be evaluated at compile time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual functions cannot be consteval.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ specifier requires compile-time evaluation.",
+        "type": "fill_blank",
+        "answers": [
+            "consteval"
+        ],
+        "other_options": [
+            "constexpr",
+            "constinit",
+            "const"
+        ]
+    },
+    {
+        "q": "What is if constexpr with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Compile-time branching based on type traits",
+            "Runtime if",
+            "Virtual dispatch",
+            "Template specialization"
+        ]
+    },
+    {
+        "q": "if constexpr enables compile-time polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "if constexpr branches are evaluated at compile time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ enables type-based compile-time branching.",
+        "type": "fill_blank",
+        "answers": [
+            "if constexpr"
+        ],
+        "other_options": [
+            "if consteval",
+            "if static",
+            "if type"
+        ]
+    },
+    {
+        "q": "Match the compile-time techniques:",
+        "type": "match",
+        "left": [
+            "if constexpr",
+            "concepts",
+            "SFINAE",
+            "constexpr"
+        ],
+        "right": [
+            "Compile-time branch",
+            "Type constraint",
+            "Substitution failure",
+            "Compile-time evaluation"
+        ]
+    },
+    {
+        "q": "What is module partition inheritance visibility?",
+        "type": "mcq",
+        "o": [
+            "How classes in module partitions relate across modules",
+            "File organization",
+            "Header inclusion",
+            "Namespace visibility"
+        ]
+    },
+    {
+        "q": "Modules can export derived classes without base.",
+        "type": "true_false",
+        "correct": "False"
+    },
+    {
+        "q": "Module exports include necessary base classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ system affects inheritance visibility.",
+        "type": "fill_blank",
+        "answers": [
+            "module"
+        ],
+        "other_options": [
+            "namespace",
+            "header",
+            "include"
+        ]
+    },
+    {
+        "q": "Rearrange C++ code organization evolution:",
+        "type": "rearrange",
+        "words": [
+            "Header files",
+            "Precompiled headers",
+            "Header units",
+            "Modules",
+            "Module partitions"
+        ]
+    },
+    {
+        "q": "What is the open-closed principle with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Open for extension via inheritance, closed for modification",
+            "Open files",
+            "Closed classes",
+            "File handling"
+        ]
+    },
+    {
+        "q": "Inheritance supports the open-closed principle.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "New functionality can be added via derived classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ principle allows extension without modification.",
+        "type": "fill_blank",
+        "answers": [
+            "open-closed"
+        ],
+        "other_options": [
+            "single responsibility",
+            "liskov",
+            "interface segregation"
+        ]
+    },
+    {
+        "q": "What is the dependency inversion principle?",
+        "type": "mcq",
+        "o": [
+            "Depend on abstractions, not concretions",
+            "Invert dependencies",
+            "Reverse inclusion",
+            "Swap parameters"
+        ]
+    },
+    {
+        "q": "DIP recommends programming to interfaces.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Abstract base classes enable dependency inversion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ principle inverts traditional dependency direction.",
+        "type": "fill_blank",
+        "answers": [
+            "dependency inversion"
+        ],
+        "other_options": [
+            "dependency injection",
+            "interface",
+            "abstraction"
+        ]
+    },
+    {
+        "q": "Match SOLID with inheritance:",
+        "type": "match",
+        "left": [
+            "SRP",
+            "OCP",
+            "LSP",
+            "DIP"
+        ],
+        "right": [
+            "One reason to change",
+            "Extension point",
+            "Substitutability",
+            "Abstract dependency"
+        ]
+    },
+    {
+        "q": "What is strategic inheritance?",
+        "type": "mcq",
+        "o": [
+            "Intentional use of inheritance for design goals",
+            "Random inheritance",
+            "Automatic inheritance",
+            "Default inheritance"
+        ]
+    },
+    {
+        "q": "Inheritance should be planned and intentional.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Designing for inheritance requires careful consideration.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ use of inheritance is better than accidental.",
+        "type": "fill_blank",
+        "answers": [
+            "strategic"
+        ],
+        "other_options": [
+            "random",
+            "automatic",
+            "default"
+        ]
+    },
+    {
+        "q": "Rearrange inheritance design steps:",
+        "type": "rearrange",
+        "words": [
+            "Identify abstractions",
+            "Design interfaces",
+            "Implement base",
+            "Create derived",
+            "Test polymorphism"
+        ]
+    },
+    {
+        "q": "What is deep copy in inheritance?",
+        "type": "mcq",
+        "o": [
+            "Copying all levels including dynamically allocated members",
+            "Shallow copy",
+            "Reference copy",
+            "Pointer copy"
+        ]
+    },
+    {
+        "q": "Virtual clone implements deep copy polymorphically.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deep copy prevents shared state problems.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ copy duplicates all levels of object.",
+        "type": "fill_blank",
+        "answers": [
+            "deep"
+        ],
+        "other_options": [
+            "shallow",
+            "reference",
+            "pointer"
+        ]
+    },
+    {
+        "q": "What is the assignment operator with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Must explicitly call base class assignment",
+            "Automatic base assignment",
+            "No base assignment",
+            "Only derived assignment"
+        ]
+    },
+    {
+        "q": "Base assignment must be explicitly called in derived operator=.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Self-assignment check is important in derived classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ operator in derived should call Base::operator=.",
+        "type": "fill_blank",
+        "answers": [
+            "assignment"
+        ],
+        "other_options": [
+            "copy",
+            "move",
+            "comparison"
+        ]
+    },
+    {
+        "q": "Match the special members with inheritance:",
+        "type": "match",
+        "left": [
+            "Constructor",
+            "Destructor",
+            "Copy ctor",
+            "Move ctor"
+        ],
+        "right": [
+            "Base first",
+            "Derived first",
+            "Base part copied",
+            "Base part moved"
+        ]
+    },
+    {
+        "q": "What is move semantics with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Moving resources from base and derived parts",
+            "Base move only",
+            "Derived move only",
+            "No move support"
+        ]
+    },
+    {
+        "q": "Move constructor should move base class portion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "std::move is needed to invoke base move operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ function casts to rvalue for move semantics.",
+        "type": "fill_blank",
+        "answers": [
+            "std::move"
+        ],
+        "other_options": [
+            "std::forward",
+            "std::copy",
+            "std::swap"
+        ]
+    },
+    {
+        "q": "What is swap with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Swapping base and derived parts efficiently",
+            "Only base swap",
+            "Only derived swap",
+            "No swap support"
+        ]
+    },
+    {
+        "q": "Swap should call base class swap.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Copy-and-swap idiom works with inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ idiom provides strong exception safety.",
+        "type": "fill_blank",
+        "answers": [
+            "copy-and-swap"
+        ],
+        "other_options": [
+            "copy-on-write",
+            "swap-and-delete",
+            "move-and-swap"
+        ]
+    },
+    {
+        "q": "Rearrange from newer to older C++ versions:",
+        "type": "rearrange",
+        "words": [
+            "C++23",
+            "C++20",
+            "C++17",
+            "C++14",
+            "C++11"
+        ]
+    },
+    {
+        "q": "What is exception specification with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Derived noexcept must be same or stronger than base",
+            "Any specification allowed",
+            "No specifications",
+            "Base specification ignored"
+        ]
+    },
+    {
+        "q": "Derived override cannot be less restrictive than base noexcept.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "noexcept(true) in derived is compatible with base noexcept.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ specifier constrains derived class overrides.",
+        "type": "fill_blank",
+        "answers": [
+            "noexcept"
+        ],
+        "other_options": [
+            "throw",
+            "exception",
+            "error"
+        ]
+    },
+    {
+        "q": "What is the rule of zero with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Use compiler-generated special members when possible",
+            "Delete all members",
+            "Define all members",
+            "Define no members ever"
+        ]
+    },
+    {
+        "q": "Rule of zero prefers default special members.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Base classes often need rule of five.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ rule uses compiler-generated members.",
+        "type": "fill_blank",
+        "answers": [
+            "rule of zero"
+        ],
+        "other_options": [
+            "rule of five",
+            "rule of three",
+            "rule of one"
+        ]
+    },
+    {
+        "q": "Match the rules:",
+        "type": "match",
+        "left": [
+            "Rule of zero",
+            "Rule of three",
+            "Rule of five"
+        ],
+        "right": [
+            "Default members",
+            "Copy+dtor",
+            "Move+copy+dtor"
+        ]
+    },
+    {
+        "q": "What is smart pointer with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Using unique_ptr/shared_ptr with base class pointers",
+            "Raw pointers only",
+            "No pointer support",
+            "Only derived pointers"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\n#include <memory>\nusing namespace std;\n\nclass Base {\npublic:\n    virtual ~Base() { cout << \"B\"; }\n};\n\nclass Derived : public Base {\npublic:\n    ~Derived() { cout << \"D\"; }\n};\n\nint main() {\n    unique_ptr<Base> p = make_unique<Derived>();\n    return 0;\n}",
+        "o": [
+            "DB",
+            "B",
+            "D",
+            "Error"
+        ]
+    },
+    {
+        "q": "Smart pointers work with polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "make_unique can create derived objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pointer manages ownership of polymorphic objects.",
+        "type": "fill_blank",
+        "answers": [
+            "unique_ptr"
+        ],
+        "other_options": [
+            "raw pointer",
+            "weak_ptr",
+            "auto_ptr"
+        ]
+    },
+    {
+        "q": "What is shared_ptr with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Shared ownership of polymorphic objects",
+            "Single ownership",
+            "No ownership",
+            "Manual ownership"
+        ]
+    },
+    {
+        "q": "shared_ptr supports polymorphic deletion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "shared_ptr aliasing enables component access.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pointer enables shared polymorphic ownership.",
+        "type": "fill_blank",
+        "answers": [
+            "shared_ptr"
+        ],
+        "other_options": [
+            "unique_ptr",
+            "weak_ptr",
+            "auto_ptr"
+        ]
+    },
+    {
+        "q": "Rearrange smart pointers by ownership model:",
+        "type": "rearrange",
+        "words": [
+            "Exclusive (unique_ptr)",
+            "Shared (shared_ptr)",
+            "Non-owning (weak_ptr)",
+            "Reference (observer_ptr)"
+        ]
+    },
+    {
+        "q": "What is enable_shared_from_this?",
+        "type": "mcq",
+        "o": [
+            "Base class enabling object to get shared_ptr to itself",
+            "Shared pointer creator",
+            "Pointer enabler",
+            "This pointer getter"
+        ]
+    },
+    {
+        "q": "enable_shared_from_this requires public inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "shared_from_this() returns shared_ptr to current object.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ base class enables self shared_ptr creation.",
+        "type": "fill_blank",
+        "answers": [
+            "enable_shared_from_this"
+        ],
+        "other_options": [
+            "shared_this",
+            "this_shared",
+            "get_shared"
+        ]
+    },
+    {
+        "q": "What is inheritance in templates?",
+        "type": "mcq",
+        "o": [
+            "Derived class templates inheriting from base templates",
+            "Only non-template inheritance",
+            "Template methods only",
+            "No template inheritance"
+        ]
+    },
+    {
+        "q": "Template derived can inherit from template base.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Template parameters can be used in inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ can inherit from template base class.",
+        "type": "fill_blank",
+        "answers": [
+            "template derived"
+        ],
+        "other_options": [
+            "normal class",
+            "struct only",
+            "function"
+        ]
+    },
+    {
+        "q": "Match the template inheritance patterns:",
+        "type": "match",
+        "left": [
+            "Template inherits template",
+            "Template inherits non-template",
+            "Non-template inherits template",
+            "CRTP"
+        ],
+        "right": [
+            "Generic extension",
+            "Specialized derivation",
+            "Specific instantiation",
+            "Self as parameter"
+        ]
+    },
+    {
+        "q": "What is variadic template inheritance?",
+        "type": "mcq",
+        "o": [
+            "Inheriting from multiple base classes via parameter pack",
+            "Single base inheritance",
+            "No variadic support",
+            "Function variadic only"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <iostream>\nusing namespace std;\n\nstruct A { void a() { cout << \"A\"; } };\nstruct B { void b() { cout << \"B\"; } };\n\ntemplate<typename... Bases>\nstruct Multi : Bases... {};\n\nint main() {\n    Multi<A, B> m;\n    m.a();\n    m.b();\n    return 0;\n}",
+        "o": [
+            "AB",
+            "A",
+            "B",
+            "Error"
+        ]
+    },
+    {
+        "q": "Variadic inheritance creates multiple base classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Pack expansion works in inheritance list.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ expands to multiple base classes.",
+        "type": "fill_blank",
+        "answers": [
+            "parameter pack"
+        ],
+        "other_options": [
+            "single parameter",
+            "template argument",
+            "type list"
+        ]
+    },
+    {
+        "q": "What is fold expression with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Folding operations over variadic base classes",
+            "Single operation",
+            "No fold support",
+            "Function fold only"
+        ]
+    },
+    {
+        "q": "Fold expressions work with variadic bases.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "C++17 introduced fold expressions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ expression reduces parameter pack.",
+        "type": "fill_blank",
+        "answers": [
+            "fold"
+        ],
+        "other_options": [
+            "reduce",
+            "accumulate",
+            "combine"
+        ]
+    },
+    {
+        "q": "Rearrange variadic features by version:",
+        "type": "rearrange",
+        "words": [
+            "Variadic templates (C++11)",
+            "Generic lambdas (C++14)",
+            "Fold expressions (C++17)",
+            "Concepts (C++20)"
+        ]
+    },
+    {
+        "q": "What is empty base optimization with multiple inheritance?",
+        "type": "mcq",
+        "o": [
+            "Multiple empty bases optimized to zero size",
+            "Single base only",
+            "No optimization",
+            "Always adds size"
+        ]
+    },
+    {
+        "q": "EBO applies to multiple empty base classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "[[no_unique_address]] achieves EBO for members.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ optimizes empty bases to zero overhead.",
+        "type": "fill_blank",
+        "answers": [
+            "EBO"
+        ],
+        "other_options": [
+            "RVO",
+            "NRVO",
+            "DCE"
+        ]
+    },
+    {
+        "q": "What is private virtual base?",
+        "type": "mcq",
+        "o": [
+            "Virtual inheritance with private access",
+            "Public virtual",
+            "Protected virtual",
+            "No virtual"
+        ]
+    },
+    {
+        "q": "Private virtual base hides base from further derivation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual and access specifier are independent.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ virtual inheritance combines both specifiers.",
+        "type": "fill_blank",
+        "answers": [
+            "private"
+        ],
+        "other_options": [
+            "public",
+            "protected",
+            "friend"
+        ]
+    },
+    {
+        "q": "Match the virtual inheritance types:",
+        "type": "match",
+        "left": [
+            "public virtual",
+            "protected virtual",
+            "private virtual"
+        ],
+        "right": [
+            "Open hierarchy",
+            "Limited hierarchy",
+            "Hidden hierarchy"
+        ]
+    },
+    {
+        "q": "What is aggregate inheritance in C++17?",
+        "type": "mcq",
+        "o": [
+            "Aggregates can have public non-virtual base classes",
+            "No base classes",
+            "Virtual bases only",
+            "Private bases only"
+        ]
+    },
+    {
+        "q": "C++17 relaxed aggregate requirements for inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Aggregate initialization includes base class members.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ feature allows aggregates with bases.",
+        "type": "fill_blank",
+        "answers": [
+            "C++17 aggregate"
+        ],
+        "other_options": [
+            "C++11",
+            "C++14",
+            "C++98"
+        ]
+    },
+    {
+        "q": "What is designated initializer with inheritance?",
+        "type": "mcq",
+        "o": [
+            "C++20 feature for naming members in initialization",
+            "Unnamed initialization",
+            "Default initialization",
+            "Zero initialization"
+        ]
+    },
+    {
+        "q": "Designated initializers work with derived aggregates.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Base class cannot use designated initializers directly.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ initialization names members explicitly.",
+        "type": "fill_blank",
+        "answers": [
+            "designated"
+        ],
+        "other_options": [
+            "aggregate",
+            "brace",
+            "list"
+        ]
+    },
+    {
+        "q": "Rearrange aggregate evolution:",
+        "type": "rearrange",
+        "words": [
+            "POD types (C++98)",
+            "Trivial types (C++11)",
+            "Relaxed aggregates (C++14)",
+            "Base classes (C++17)",
+            "Designated init (C++20)"
+        ]
+    },
+    {
+        "q": "What is CTAD with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Class Template Argument Deduction for derived types",
+            "Constructor deduction",
+            "Copy deduction",
+            "Type deduction"
+        ]
+    },
+    {
+        "q": "CTAD can deduce base class template arguments.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Deduction guides can handle inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ deduces template arguments from constructors.",
+        "type": "fill_blank",
+        "answers": [
+            "CTAD"
+        ],
+        "other_options": [
+            "ADL",
+            "SFINAE",
+            "CRTP"
+        ]
+    },
+    {
+        "q": "What is comparing objects in inheritance?",
+        "type": "mcq",
+        "o": [
+            "Comparing base and derived class objects polymorphically",
+            "Only base comparison",
+            "Only derived comparison",
+            "No comparison support"
+        ]
+    },
+    {
+        "q": "Comparison operators can be virtual.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Spaceship operator can be inherited.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ operator provides three-way comparison.",
+        "type": "fill_blank",
+        "answers": [
+            "spaceship (<=>)"
+        ],
+        "other_options": [
+            "equality (==)",
+            "less (<)",
+            "greater (>)"
+        ]
+    },
+    {
+        "q": "Match comparison operators:",
+        "type": "match",
+        "left": [
+            "==",
+            "<",
+            "<=>",
+            "!="
+        ],
+        "right": [
+            "Equality",
+            "Less than",
+            "Three-way",
+            "Inequality"
+        ]
+    },
+    {
+        "q": "What is defaulted comparison with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Compiler-generated comparison including base class",
+            "Manual comparison only",
+            "No default comparison",
+            "Only derived comparison"
+        ]
+    },
+    {
+        "q": "Defaulted spaceship compares base class first.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Defaulted == compares base then derived members.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ comparison includes base class members.",
+        "type": "fill_blank",
+        "answers": [
+            "defaulted"
+        ],
+        "other_options": [
+            "deleted",
+            "explicit",
+            "virtual"
+        ]
+    },
+    {
+        "q": "What is class size with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Size includes all base class subobjects",
+            "Only derived size",
+            "Only base size",
+            "No size calculation"
+        ]
+    },
+    {
+        "q": "sizeof includes all inherited members.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual inheritance may increase object size.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ operator returns total object size.",
+        "type": "fill_blank",
+        "answers": [
+            "sizeof"
+        ],
+        "other_options": [
+            "alignof",
+            "offsetof",
+            "typeid"
+        ]
+    },
+    {
+        "q": "Rearrange from smallest to largest typical size:",
+        "type": "rearrange",
+        "words": [
+            "Empty class",
+            "One member",
+            "Single inheritance",
+            "Multiple inheritance",
+            "Virtual inheritance"
+        ]
+    },
+    {
+        "q": "What is alignof with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Returns alignment requirement including bases",
+            "Only derived alignment",
+            "No alignment",
+            "Pointer alignment only"
+        ]
+    },
+    {
+        "q": "alignof considers base class alignment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Derived class alignment is at least base class alignment.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ operator returns alignment requirement.",
+        "type": "fill_blank",
+        "answers": [
+            "alignof"
+        ],
+        "other_options": [
+            "sizeof",
+            "offsetof",
+            "typeid"
+        ]
+    },
+    {
+        "q": "What is offsetof with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Returns byte offset of member from object start",
+            "Virtual offset",
+            "Base offset only",
+            "No offset support"
+        ]
+    },
+    {
+        "q": "offsetof works with standard layout types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Base class members have offsets in derived objects.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ macro returns member position in bytes.",
+        "type": "fill_blank",
+        "answers": [
+            "offsetof"
+        ],
+        "other_options": [
+            "sizeof",
+            "alignof",
+            "memberof"
+        ]
+    },
+    {
+        "q": "Match the introspection operators:",
+        "type": "match",
+        "left": [
+            "sizeof",
+            "alignof",
+            "offsetof",
+            "typeid"
+        ],
+        "right": [
+            "Size in bytes",
+            "Alignment bytes",
+            "Member offset",
+            "Runtime type"
+        ]
+    },
+    {
+        "q": "What is standard layout with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Specific layout rules for interop with C",
+            "Any layout",
+            "Virtual layout",
+            "Random layout"
+        ]
+    },
+    {
+        "q": "Standard layout requires single class with non-static members.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual functions break standard layout.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ layout enables C interoperability.",
+        "type": "fill_blank",
+        "answers": [
+            "standard"
+        ],
+        "other_options": [
+            "trivial",
+            "POD",
+            "pod"
+        ]
+    },
+    {
+        "q": "What is trivially copyable with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Object can be copied with memcpy",
+            "Any object",
+            "Virtual objects",
+            "Abstract objects"
+        ]
+    },
+    {
+        "q": "Trivially copyable requires trivial copy operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual functions make class non-trivially copyable.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ trait checks if type can be memcpy'd.",
+        "type": "fill_blank",
+        "answers": [
+            "is_trivially_copyable"
+        ],
+        "other_options": [
+            "is_trivial",
+            "is_standard_layout",
+            "is_pod"
+        ]
+    },
+    {
+        "q": "Rearrange type traits by strictness:",
+        "type": "rearrange",
+        "words": [
+            "is_class",
+            "is_trivially_copyable",
+            "is_standard_layout",
+            "is_trivial",
+            "is_pod"
+        ]
+    },
+    {
+        "q": "What is member pointer with virtual functions?",
+        "type": "mcq",
+        "o": [
+            "Pointer to member function that can be virtual",
+            "Only non-virtual",
+            "No pointer support",
+            "Static only"
+        ]
+    },
+    {
+        "q": "Pointer to virtual function invokes correct override.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Member function pointers support polymorphism.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ pointer supports virtual dispatch.",
+        "type": "fill_blank",
+        "answers": [
+            "member function"
+        ],
+        "other_options": [
+            "regular function",
+            "static function",
+            "data member"
+        ]
+    },
+    {
+        "q": "What is aggregate copy in inheritance?",
+        "type": "mcq",
+        "o": [
+            "Copying all members including inherited ones",
+            "Only derived members",
+            "Only base members",
+            "No copy"
+        ]
+    },
+    {
+        "q": "Aggregate copy includes base class members.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Implicit copy constructor copies base portion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ copy constructor handles base automatically.",
+        "type": "fill_blank",
+        "answers": [
+            "implicit"
+        ],
+        "other_options": [
+            "explicit",
+            "deleted",
+            "default"
+        ]
+    },
+    {
+        "q": "Match copy behavior:",
+        "type": "match",
+        "left": [
+            "Implicit copy",
+            "Explicit copy",
+            "Deleted copy",
+            "Default copy"
+        ],
+        "right": [
+            "Compiler generated",
+            "User defined",
+            "No copy allowed",
+            "Requested default"
+        ]
+    },
+    {
+        "q": "What is constexpr with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Using inheritance in compile-time computations",
+            "Runtime only",
+            "No inheritance support",
+            "Templates only"
+        ]
+    },
+    {
+        "q": "constexpr classes can have inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "constexpr virtual functions work in C++20.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ specifier enables compile-time inheritance.",
+        "type": "fill_blank",
+        "answers": [
+            "constexpr"
+        ],
+        "other_options": [
+            "consteval",
+            "constinit",
+            "const"
+        ]
+    },
+    {
+        "q": "What is inheritance in coroutines?",
+        "type": "mcq",
+        "o": [
+            "Promise type can use inheritance for customization",
+            "No inheritance in coroutines",
+            "Only base coroutines",
+            "Static coroutines only"
+        ]
+    },
+    {
+        "q": "Coroutine promise types can inherit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Awaitable types can use inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ type in coroutines can use inheritance.",
+        "type": "fill_blank",
+        "answers": [
+            "promise"
+        ],
+        "other_options": [
+            "handle",
+            "frame",
+            "state"
+        ]
+    },
+    {
+        "q": "Rearrange C++20 features:",
+        "type": "rearrange",
+        "words": [
+            "Concepts",
+            "Ranges",
+            "Modules",
+            "Coroutines",
+            "Three-way comparison"
+        ]
+    },
+    {
+        "q": "What is ranges with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Range views and adaptors using inheritance",
+            "No inheritance",
+            "Only arrays",
+            "Only vectors"
+        ]
+    },
+    {
+        "q": "Range adaptors use internal inheritance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Views can inherit from view_interface.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ interface provides common view operations.",
+        "type": "fill_blank",
+        "answers": [
+            "view_interface"
+        ],
+        "other_options": [
+            "range_base",
+            "view_base",
+            "range_interface"
+        ]
+    },
+    {
+        "q": "What is span with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Span works with polymorphic containers",
+            "Only raw arrays",
+            "Only vectors",
+            "No polymorphism"
+        ]
+    },
+    {
+        "q": "std::span can view base or derived arrays.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Span provides non-owning view of contiguous data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ provides non-owning contiguous view.",
+        "type": "fill_blank",
+        "answers": [
+            "std::span"
+        ],
+        "other_options": [
+            "std::view",
+            "std::range",
+            "std::array"
+        ]
+    },
+    {
+        "q": "Match C++20 vocabulary types:",
+        "type": "match",
+        "left": [
+            "span",
+            "string_view",
+            "optional",
+            "variant"
+        ],
+        "right": [
+            "Contiguous view",
+            "String view",
+            "Maybe value",
+            "One of types"
+        ]
+    },
+    {
+        "q": "What are hidden friends with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Friend functions found only via ADL",
+            "Private friends",
+            "Protected friends",
+            "Public friends"
+        ]
+    },
+    {
+        "q": "Hidden friends reduce overload set pollution.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "ADL finds hidden friends through arguments.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ idiom defines operators as inline friends.",
+        "type": "fill_blank",
+        "answers": [
+            "hidden friends"
+        ],
+        "other_options": [
+            "Barton-Nackman",
+            "inline friends",
+            "local friends"
+        ]
+    },
+    {
+        "q": "What is inline namespace with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Namespace whose members are usable in enclosing namespace",
+            "Normal namespace",
+            "Anonymous namespace",
+            "Private namespace"
+        ]
+    },
+    {
+        "q": "Inline namespaces help with library versioning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Class inheritance works across inline namespaces.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ namespace exposes members to parent.",
+        "type": "fill_blank",
+        "answers": [
+            "inline"
+        ],
+        "other_options": [
+            "anonymous",
+            "nested",
+            "global"
+        ]
+    },
+    {
+        "q": "Rearrange namespace features by introduction:",
+        "type": "rearrange",
+        "words": [
+            "Namespaces (C++98)",
+            "ADL (C++98)",
+            "Inline namespaces (C++11)",
+            "Nested definitions (C++17)",
+            "Modules (C++20)"
+        ]
+    },
+    {
+        "q": "What is std::type_identity with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Identity transformation preventing type deduction",
+            "Type conversion",
+            "Type creation",
+            "Type deletion"
+        ]
+    },
+    {
+        "q": "type_identity_t prevents template deduction.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "type_identity is useful with inheritance hierarchies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ transformation returns type unchanged.",
+        "type": "fill_blank",
+        "answers": [
+            "type_identity"
+        ],
+        "other_options": [
+            "type_info",
+            "type_index",
+            "type_name"
+        ]
+    },
+    {
+        "q": "What is source_location with inheritance?",
+        "type": "mcq",
+        "o": [
+            "C++20 feature for compile-time file/line info",
+            "Runtime location",
+            "Memory location",
+            "Object location"
+        ]
+    },
+    {
+        "q": "source_location captures call site information.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Base class can use source_location from derived call.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ type replaces __FILE__ and __LINE__.",
+        "type": "fill_blank",
+        "answers": [
+            "source_location"
+        ],
+        "other_options": [
+            "file_location",
+            "call_location",
+            "code_location"
+        ]
+    },
+    {
+        "q": "Rearrange inheritance topics by complexity:",
+        "type": "rearrange",
+        "words": [
+            "Single inheritance",
+            "Multiple inheritance",
+            "Virtual inheritance",
+            "CRTP",
+            "Type erasure"
+        ]
+    },
+    {
+        "q": "What is explicit conversion with base class?",
+        "type": "mcq",
+        "o": [
+            "Conversion constructor with explicit keyword",
+            "Implicit conversion",
+            "Automatic conversion",
+            "No conversion"
+        ]
+    },
+    {
+        "q": "explicit prevents implicit base to derived conversion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Explicit constructors require cast for conversion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ keyword prevents implicit conversions.",
+        "type": "fill_blank",
+        "answers": [
+            "explicit"
+        ],
+        "other_options": [
+            "implicit",
+            "convert",
+            "cast"
+        ]
+    },
+    {
+        "q": "What is default member initializer with inheritance?",
+        "type": "mcq",
+        "o": [
+            "In-class member initialization also works with inheritance",
+            "No default initialization",
+            "Base only initialization",
+            "Derived only"
+        ]
+    },
+    {
+        "q": "Default member initializers work in derived classes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Default initializers are overridden by constructor.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ initializer provides default value in class.",
+        "type": "fill_blank",
+        "answers": [
+            "default member"
+        ],
+        "other_options": [
+            "constructor",
+            "base",
+            "static"
+        ]
+    },
+    {
+        "q": "Match the initialization methods:",
+        "type": "match",
+        "left": [
+            "Default member",
+            "Constructor initializer",
+            "Aggregate",
+            "Designated"
+        ],
+        "right": [
+            "In-class value",
+            "Init list value",
+            "Brace value",
+            "Named value"
+        ]
+    },
+    {
+        "q": "What is friend with derived class?",
+        "type": "mcq",
+        "o": [
+            "Friends of base are not automatically friends of derived",
+            "Friendship is inherited",
+            "Always friends",
+            "Never friends"
+        ]
+    },
+    {
+        "q": "Friendship is not inherited.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Derived class must declare its own friends.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ relationship does not pass to derived classes.",
+        "type": "fill_blank",
+        "answers": [
+            "friend"
+        ],
+        "other_options": [
+            "inheritance",
+            "virtual",
+            "public"
+        ]
+    },
+    {
+        "q": "What is extern C with inheritance?",
+        "type": "mcq",
+        "o": [
+            "C linkage does not support inheritance",
+            "C supports inheritance",
+            "Automatic C export",
+            "No restrictions"
+        ]
+    },
+    {
+        "q": "Classes cannot be exported with C linkage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Virtual functions are incompatible with C ABI.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ linkage requires C-compatible types.",
+        "type": "fill_blank",
+        "answers": [
+            "extern C"
+        ],
+        "other_options": [
+            "extern C++",
+            "static",
+            "inline"
+        ]
+    },
+    {
+        "q": "Rearrange from C compatible to C++ only:",
+        "type": "rearrange",
+        "words": [
+            "POD struct",
+            "Standard layout",
+            "Trivially copyable",
+            "Polymorphic class",
+            "Abstract class"
+        ]
+    },
+    {
+        "q": "What is static_assert with inheritance?",
+        "type": "mcq",
+        "o": [
+            "Compile-time assertion checking type traits",
+            "Runtime assertion",
+            "Debug assertion",
+            "No assertion"
+        ]
+    },
+    {
+        "q": "static_assert can verify inheritance relationships.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "static_assert is evaluated at compile time.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The _______ checks conditions at compile time.",
+        "type": "fill_blank",
+        "answers": [
+            "static_assert"
+        ],
+        "other_options": [
+            "assert",
+            "require",
+            "ensure"
+        ]
+    }
+]

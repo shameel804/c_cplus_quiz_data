@@ -1,0 +1,5802 @@
+[
+    {
+        "q": "Which header file is required for file operations in C?",
+        "type": "mcq",
+        "o": [
+            "<stdio.h>",
+            "<stdlib.h>",
+            "<string.h>",
+            "<file.h>"
+        ]
+    },
+    {
+        "q": "The fopen() function opens a file for reading or writing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"test.txt\", \"w\");\n    if(fp != NULL) {\n        printf(\"File opened\");\n        fclose(fp);\n    }\n    return 0;\n}",
+        "o": [
+            "File opened",
+            "Error",
+            "NULL",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "fclose() is used to close an open file.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function opens a file and returns a FILE pointer.",
+        "type": "fill_blank",
+        "answers": [
+            "fopen"
+        ],
+        "other_options": [
+            "fclose",
+            "fread",
+            "fwrite"
+        ]
+    },
+    {
+        "q": "Match file modes with their descriptions:",
+        "type": "match",
+        "left": [
+            "r",
+            "w",
+            "a",
+            "r+"
+        ],
+        "right": [
+            "Read only",
+            "Write only (create/truncate)",
+            "Append only",
+            "Read and write"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"nonexistent.txt\", \"r\");\n    printf(\"%d\", fp == NULL);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "fopen() returns NULL if the file cannot be opened.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"test.txt\", \"w\");\n    fprintf(fp, \"Hello\");\n    fclose(fp);\n    printf(\"Written\");\n    return 0;\n}",
+        "o": [
+            "Written",
+            "Hello",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "fprintf() writes formatted output to a file.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange file operation steps in order:",
+        "type": "rearrange",
+        "words": [
+            "Open file",
+            "Check for errors",
+            "Read/Write data",
+            "Close file"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"test.txt\", \"w\");\n    fputc('A', fp);\n    fclose(fp);\n    fp = fopen(\"test.txt\", \"r\");\n    printf(\"%c\", fgetc(fp));\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "A",
+            "65",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "fputc() writes a single character to a file.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function reads a single character from a file.",
+        "type": "fill_blank",
+        "answers": [
+            "fgetc",
+            "getc"
+        ],
+        "other_options": [
+            "fputc",
+            "getchar",
+            "putc"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"test.txt\", \"w\");\n    fputs(\"Hello World\", fp);\n    fclose(fp);\n    printf(\"Done\");\n    return 0;\n}",
+        "o": [
+            "Done",
+            "Hello World",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "fputs() writes a string to a file without adding a newline.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match file functions with their operations:",
+        "type": "match",
+        "left": [
+            "fgetc",
+            "fputc",
+            "fgets",
+            "fputs"
+        ],
+        "right": [
+            "Read character",
+            "Write character",
+            "Read line",
+            "Write string"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"test.txt\", \"w\");\n    fputs(\"Line1\\nLine2\", fp);\n    fclose(fp);\n    fp = fopen(\"test.txt\", \"r\");\n    char buf[20];\n    fgets(buf, 20, fp);\n    printf(\"%s\", buf);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "Line1",
+            "Line1\\nLine2",
+            "Line2",
+            "Error"
+        ]
+    },
+    {
+        "q": "fgets() reads a line up to newline or buffer limit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"test.txt\", \"w\");\n    fprintf(fp, \"%d %s\", 42, \"test\");\n    fclose(fp);\n    fp = fopen(\"test.txt\", \"r\");\n    int n; char s[10];\n    fscanf(fp, \"%d %s\", &n, s);\n    printf(\"%d\", n);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "42",
+            "test",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "fscanf() reads formatted input from a file.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange file I/O pairs:",
+        "type": "rearrange",
+        "words": [
+            "fprintf-fscanf",
+            "fputc-fgetc",
+            "fputs-fgets",
+            "fwrite-fread"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"data.bin\", \"wb\");\n    int num = 100;\n    fwrite(&num, sizeof(int), 1, fp);\n    fclose(fp);\n    fp = fopen(\"data.bin\", \"rb\");\n    int result;\n    fread(&result, sizeof(int), 1, fp);\n    printf(\"%d\", result);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "100",
+            "1",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "fwrite() writes binary data to a file.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function reads binary data from a file.",
+        "type": "fill_blank",
+        "answers": [
+            "fread"
+        ],
+        "other_options": [
+            "fwrite",
+            "fscanf",
+            "fgets"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"test.txt\", \"w\");\n    fprintf(fp, \"Hello\");\n    long pos = ftell(fp);\n    fclose(fp);\n    printf(\"%ld\", pos);\n    return 0;\n}",
+        "o": [
+            "5",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "ftell() returns the current file position.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match seek constants with positions:",
+        "type": "match",
+        "left": [
+            "SEEK_SET",
+            "SEEK_CUR",
+            "SEEK_END"
+        ],
+        "right": [
+            "Beginning of file",
+            "Current position",
+            "End of file"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"test.txt\", \"w+\");\n    fputs(\"ABCDE\", fp);\n    fseek(fp, 0, SEEK_SET);\n    printf(\"%c\", fgetc(fp));\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "A",
+            "E",
+            "B",
+            "Error"
+        ]
+    },
+    {
+        "q": "fseek() moves the file position indicator.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"test.txt\", \"w+\");\n    fputs(\"Hello\", fp);\n    rewind(fp);\n    char c = fgetc(fp);\n    printf(\"%c\", c);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "H",
+            "o",
+            "EOF",
+            "Error"
+        ]
+    },
+    {
+        "q": "rewind() moves file position to the beginning.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange file position operations:",
+        "type": "rearrange",
+        "words": [
+            "Open file",
+            "Write data",
+            "Rewind",
+            "Read data",
+            "Close file"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"test.txt\", \"w\");\n    fputs(\"Test\", fp);\n    fclose(fp);\n    fp = fopen(\"test.txt\", \"r\");\n    fgetc(fp); fgetc(fp); fgetc(fp); fgetc(fp);\n    printf(\"%d\", feof(fp) == 0);\n    fgetc(fp);\n    printf(\"%d\", feof(fp) != 0);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "11",
+            "10",
+            "01",
+            "00"
+        ]
+    },
+    {
+        "q": "feof() returns non-zero when end-of-file is reached.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function checks for file read/write errors.",
+        "type": "fill_blank",
+        "answers": [
+            "ferror"
+        ],
+        "other_options": [
+            "feof",
+            "ftell",
+            "fseek"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"test.txt\", \"w\");\n    fputs(\"Line 1\\n\", fp);\n    fflush(fp);\n    printf(\"Flushed\");\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "Flushed",
+            "Line 1",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "fflush() forces buffered data to be written to the file.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match buffer modes with behaviors:",
+        "type": "match",
+        "left": [
+            "_IOFBF",
+            "_IOLBF",
+            "_IONBF"
+        ],
+        "right": [
+            "Full buffering",
+            "Line buffering",
+            "No buffering"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"%d\", remove(\"nonexistent.txt\"));\n    return 0;\n}",
+        "o": [
+            "-1",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "remove() deletes a file from the filesystem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"old.txt\", \"w\");\n    fputs(\"Test\", fp);\n    fclose(fp);\n    int r = rename(\"old.txt\", \"new.txt\");\n    printf(\"%d\", r == 0);\n    remove(\"new.txt\");\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "rename() changes the name of a file.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange file management operations:",
+        "type": "rearrange",
+        "words": [
+            "Create file",
+            "Write content",
+            "Close file",
+            "Rename file",
+            "Delete file"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = tmpfile();\n    if(fp != NULL) {\n        fputs(\"Temp\", fp);\n        printf(\"Created\");\n        fclose(fp);\n    }\n    return 0;\n}",
+        "o": [
+            "Created",
+            "Temp",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "tmpfile() creates a temporary file that is deleted when closed.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function generates a unique temporary filename.",
+        "type": "fill_blank",
+        "answers": [
+            "tmpnam"
+        ],
+        "other_options": [
+            "tmpfile",
+            "tempnam",
+            "mktemp"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"test.txt\", \"w\");\n    int arr[] = {1, 2, 3, 4, 5};\n    fwrite(arr, sizeof(int), 5, fp);\n    fclose(fp);\n    fp = fopen(\"test.txt\", \"rb\");\n    int result[5];\n    fread(result, sizeof(int), 5, fp);\n    printf(\"%d\", result[2]);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "3",
+            "2",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "fwrite() can write arrays of data to a file.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match fread/fwrite parameters with meanings:",
+        "type": "match",
+        "left": [
+            "ptr",
+            "size",
+            "nmemb",
+            "stream"
+        ],
+        "right": [
+            "Data buffer",
+            "Element size",
+            "Element count",
+            "File pointer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstruct Point { int x; int y; };\nint main() {\n    FILE *fp = fopen(\"pt.bin\", \"wb\");\n    struct Point p = {10, 20};\n    fwrite(&p, sizeof(struct Point), 1, fp);\n    fclose(fp);\n    fp = fopen(\"pt.bin\", \"rb\");\n    struct Point r;\n    fread(&r, sizeof(struct Point), 1, fp);\n    printf(\"%d,%d\", r.x, r.y);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "10,20",
+            "20,10",
+            "Error",
+            "0,0"
+        ]
+    },
+    {
+        "q": "Structures can be written to binary files using fwrite().",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"test.txt\", \"a\");\n    fputs(\"Appended\", fp);\n    fclose(fp);\n    printf(\"Done\");\n    return 0;\n}",
+        "o": [
+            "Done",
+            "Appended",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Mode 'a' opens file for appending at the end.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange file modes by capability:",
+        "type": "rearrange",
+        "words": [
+            "r (read)",
+            "w (write)",
+            "a (append)",
+            "r+ (read/write)",
+            "w+ (truncate/read/write)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"test.txt\", \"w+\");\n    fputs(\"ABCDEF\", fp);\n    fseek(fp, 2, SEEK_SET);\n    fputc('X', fp);\n    rewind(fp);\n    char buf[10];\n    fgets(buf, 10, fp);\n    printf(\"%s\", buf);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "ABXDEF",
+            "ABCDEF",
+            "XBCDEF",
+            "Error"
+        ]
+    },
+    {
+        "q": "Files opened with '+' allow both reading and writing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ mode opens for reading and writing, creating if needed.",
+        "type": "fill_blank",
+        "answers": [
+            "w+"
+        ],
+        "other_options": [
+            "r+",
+            "a+",
+            "rb+"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"test.dat\", \"wb\");\n    double val = 3.14159;\n    fwrite(&val, sizeof(double), 1, fp);\n    fclose(fp);\n    fp = fopen(\"test.dat\", \"rb\");\n    double result;\n    fread(&result, sizeof(double), 1, fp);\n    printf(\"%.2f\", result);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "3.14",
+            "3.14159",
+            "0.00",
+            "Error"
+        ]
+    },
+    {
+        "q": "Binary mode preserves exact data representation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match text vs binary modes:",
+        "type": "match",
+        "left": [
+            "r",
+            "rb",
+            "w",
+            "wb"
+        ],
+        "right": [
+            "Text read",
+            "Binary read",
+            "Text write",
+            "Binary write"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    char str[100];\n    sprintf(str, \"Value: %d\", 42);\n    printf(\"%s\", str);\n    return 0;\n}",
+        "o": [
+            "Value: 42",
+            "42",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "sprintf() writes formatted output to a string.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    char str[] = \"123 abc\";\n    int num; char word[10];\n    sscanf(str, \"%d %s\", &num, word);\n    printf(\"%d-%s\", num, word);\n    return 0;\n}",
+        "o": [
+            "123-abc",
+            "abc-123",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "sscanf() reads formatted input from a string.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange string I/O functions by type:",
+        "type": "rearrange",
+        "words": [
+            "sprintf (format to string)",
+            "sscanf (parse from string)",
+            "snprintf (safe format)",
+            "vprintf (variadic)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    char buf[10];\n    snprintf(buf, 10, \"Hello World!\");\n    printf(\"%s\", buf);\n    return 0;\n}",
+        "o": [
+            "Hello Wor",
+            "Hello World!",
+            "Error",
+            "Hello"
+        ]
+    },
+    {
+        "q": "snprintf() limits output to prevent buffer overflow.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function is safer than sprintf for buffer management.",
+        "type": "fill_blank",
+        "answers": [
+            "snprintf"
+        ],
+        "other_options": [
+            "sprintf",
+            "fprintf",
+            "printf"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    int c;\n    FILE *fp = fopen(\"test.txt\", \"w\");\n    fputs(\"ABC\", fp);\n    fclose(fp);\n    fp = fopen(\"test.txt\", \"r\");\n    while((c = fgetc(fp)) != EOF) {\n        printf(\"%c\", c);\n    }\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "ABC",
+            "CBA",
+            "Error",
+            "-1"
+        ]
+    },
+    {
+        "q": "EOF indicates end-of-file when reading.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match EOF handling patterns:",
+        "type": "match",
+        "left": [
+            "fgetc != EOF",
+            "feof(fp)",
+            "ferror(fp)",
+            "clearerr(fp)"
+        ],
+        "right": [
+            "Read until end",
+            "Check EOF flag",
+            "Check error flag",
+            "Reset error flags"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"test.txt\", \"w\");\n    for(int i = 0; i < 5; i++) {\n        fprintf(fp, \"%d\\n\", i * 10);\n    }\n    fclose(fp);\n    fp = fopen(\"test.txt\", \"r\");\n    int val;\n    fscanf(fp, \"%d\", &val);\n    printf(\"%d\", val);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "0",
+            "10",
+            "40",
+            "Error"
+        ]
+    },
+    {
+        "q": "fprintf() writes each value on a separate line with \\n.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"count.txt\", \"w\");\n    int count = 0;\n    for(int i = 0; i < 100; i++) {\n        fprintf(fp, \"X\");\n        count++;\n    }\n    fclose(fp);\n    printf(\"%d\", count);\n    return 0;\n}",
+        "o": [
+            "100",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "fprintf() can be called multiple times to build file content.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange file size determination methods:",
+        "type": "rearrange",
+        "words": [
+            "Open file",
+            "Seek to end",
+            "Get position (ftell)",
+            "Seek to start",
+            "Use size"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"size.txt\", \"w\");\n    fputs(\"12345\", fp);\n    fclose(fp);\n    fp = fopen(\"size.txt\", \"rb\");\n    fseek(fp, 0, SEEK_END);\n    long size = ftell(fp);\n    printf(\"%ld\", size);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "5",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "File size can be determined using fseek and ftell.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ macro represents the end-of-file indicator.",
+        "type": "fill_blank",
+        "answers": [
+            "EOF"
+        ],
+        "other_options": [
+            "NULL",
+            "EOL",
+            "END"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *src = fopen(\"src.txt\", \"w\");\n    fputs(\"Copy me\", src);\n    fclose(src);\n    src = fopen(\"src.txt\", \"r\");\n    FILE *dst = fopen(\"dst.txt\", \"w\");\n    int c;\n    while((c = fgetc(src)) != EOF) {\n        fputc(c, dst);\n    }\n    fclose(src);\n    fclose(dst);\n    printf(\"Copied\");\n    return 0;\n}",
+        "o": [
+            "Copied",
+            "Copy me",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Files can be copied by reading bytes from source and writing to destination.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match file copy strategies:",
+        "type": "match",
+        "left": [
+            "Byte-by-byte",
+            "Line-by-line",
+            "Block copy",
+            "Memory mapped"
+        ],
+        "right": [
+            "fgetc/fputc",
+            "fgets/fputs",
+            "fread/fwrite",
+            "mmap"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"log.txt\", \"a\");\n    fprintf(fp, \"Entry 1\\n\");\n    fclose(fp);\n    fp = fopen(\"log.txt\", \"a\");\n    fprintf(fp, \"Entry 2\\n\");\n    fclose(fp);\n    printf(\"Logged\");\n    return 0;\n}",
+        "o": [
+            "Logged",
+            "Entry 1",
+            "Entry 2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Append mode adds new content at the end of existing file.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"rec.bin\", \"wb\");\n    struct { int id; float val; } rec = {1, 3.14};\n    fwrite(&rec, sizeof(rec), 1, fp);\n    fclose(fp);\n    fp = fopen(\"rec.bin\", \"rb\");\n    struct { int id; float val; } r;\n    fread(&r, sizeof(r), 1, fp);\n    printf(\"%d\", r.id);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "1",
+            "3",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Fixed-size records enable random access in binary files.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange record file operations:",
+        "type": "rearrange",
+        "words": [
+            "Define struct",
+            "Open binary file",
+            "Write records",
+            "Seek to record",
+            "Read record"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"recs.bin\", \"wb\");\n    int data[] = {10, 20, 30, 40, 50};\n    fwrite(data, sizeof(int), 5, fp);\n    fclose(fp);\n    fp = fopen(\"recs.bin\", \"rb\");\n    fseek(fp, 2 * sizeof(int), SEEK_SET);\n    int val;\n    fread(&val, sizeof(int), 1, fp);\n    printf(\"%d\", val);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "30",
+            "20",
+            "10",
+            "Error"
+        ]
+    },
+    {
+        "q": "fseek with record size enables random record access.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The record at index n starts at byte offset ______.",
+        "type": "fill_blank",
+        "answers": [
+            "n * sizeof(record)",
+            "n * record_size"
+        ],
+        "other_options": [
+            "n",
+            "sizeof(record)",
+            "n + 1"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"update.bin\", \"wb+\");\n    int data[] = {1, 2, 3};\n    fwrite(data, sizeof(int), 3, fp);\n    fseek(fp, sizeof(int), SEEK_SET);\n    int newVal = 99;\n    fwrite(&newVal, sizeof(int), 1, fp);\n    rewind(fp);\n    int result[3];\n    fread(result, sizeof(int), 3, fp);\n    printf(\"%d,%d,%d\", result[0], result[1], result[2]);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "1,99,3",
+            "1,2,3",
+            "99,2,3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Records can be updated in place using fseek and fwrite.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match file access patterns:",
+        "type": "match",
+        "left": [
+            "Sequential",
+            "Random",
+            "Indexed",
+            "Memory mapped"
+        ],
+        "right": [
+            "Read start to end",
+            "Seek to position",
+            "Lookup then seek",
+            "Direct memory access"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    char buffer[1024];\n    FILE *fp = fopen(\"buf.txt\", \"w\");\n    setvbuf(fp, buffer, _IOFBF, 1024);\n    fputs(\"Buffered write\", fp);\n    fclose(fp);\n    printf(\"Done\");\n    return 0;\n}",
+        "o": [
+            "Done",
+            "Buffered write",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "setvbuf() sets custom buffering for a file stream.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"test.txt\", \"w\");\n    setbuf(fp, NULL);\n    fputs(\"Unbuffered\", fp);\n    fclose(fp);\n    printf(\"Written\");\n    return 0;\n}",
+        "o": [
+            "Written",
+            "Unbuffered",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "setbuf(fp, NULL) disables buffering for the stream.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange buffering types by I/O frequency:",
+        "type": "rearrange",
+        "words": [
+            "Unbuffered (every call)",
+            "Line buffered (each line)",
+            "Full buffered (buffer full)",
+            "Custom buffer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"lines.txt\", \"w\");\n    fputs(\"Line 1\\nLine 2\\nLine 3\\n\", fp);\n    fclose(fp);\n    fp = fopen(\"lines.txt\", \"r\");\n    int count = 0;\n    char buf[100];\n    while(fgets(buf, 100, fp) != NULL) count++;\n    printf(\"%d\", count);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "3",
+            "1",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "fgets() returns NULL when no more lines can be read.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function reads text lines including the newline.",
+        "type": "fill_blank",
+        "answers": [
+            "fgets"
+        ],
+        "other_options": [
+            "gets",
+            "fputs",
+            "fread"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"csv.txt\", \"w\");\n    fprintf(fp, \"1,Alice,25\\n2,Bob,30\\n\");\n    fclose(fp);\n    fp = fopen(\"csv.txt\", \"r\");\n    int id, age; char name[20];\n    fscanf(fp, \"%d,%[^,],%d\", &id, name, &age);\n    printf(\"%s\", name);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "Alice",
+            "1",
+            "25",
+            "Error"
+        ]
+    },
+    {
+        "q": "fscanf with %[^,] reads until comma is encountered.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match format specifiers with data types:",
+        "type": "match",
+        "left": [
+            "%d",
+            "%f",
+            "%s",
+            "%c"
+        ],
+        "right": [
+            "Integer",
+            "Float",
+            "String",
+            "Character"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"hex.txt\", \"w\");\n    fprintf(fp, \"%X %o\", 255, 8);\n    fclose(fp);\n    fp = fopen(\"hex.txt\", \"r\");\n    unsigned int hex, oct;\n    fscanf(fp, \"%x %o\", &hex, &oct);\n    printf(\"%u,%u\", hex, oct);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "255,8",
+            "FF,10",
+            "Error",
+            "0,0"
+        ]
+    },
+    {
+        "q": "%X prints hexadecimal in uppercase.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"width.txt\", \"w\");\n    fprintf(fp, \"%5d %-5d %05d\", 42, 42, 42);\n    fclose(fp);\n    printf(\"Done\");\n    return 0;\n}",
+        "o": [
+            "Done",
+            "42",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "%5d right-aligns in 5-character field.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange format width modifiers by effect:",
+        "type": "rearrange",
+        "words": [
+            "%d (default)",
+            "%5d (width 5)",
+            "%-5d (left align)",
+            "%05d (zero pad)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"prec.txt\", \"w\");\n    fprintf(fp, \"%.2f %.4f\", 3.14159, 3.14159);\n    fclose(fp);\n    fp = fopen(\"prec.txt\", \"r\");\n    char buf[50];\n    fgets(buf, 50, fp);\n    printf(\"%s\", buf);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "3.14 3.1416",
+            "3.14159 3.14159",
+            "Error",
+            "3.1 3.1"
+        ]
+    },
+    {
+        "q": "%.2f formats float with 2 decimal places.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ specifier %.ns limits string output to n characters.",
+        "type": "fill_blank",
+        "answers": [
+            "precision"
+        ],
+        "other_options": [
+            "width",
+            "format",
+            "length"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    freopen(\"out.txt\", \"w\", stdout);\n    printf(\"Redirected\");\n    fclose(stdout);\n    return 0;\n}",
+        "o": [
+            "(no console output)",
+            "Redirected",
+            "Error",
+            "out.txt"
+        ]
+    },
+    {
+        "q": "freopen() redirects standard streams to files.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match standard streams with descriptors:",
+        "type": "match",
+        "left": [
+            "stdin",
+            "stdout",
+            "stderr"
+        ],
+        "right": [
+            "Standard input",
+            "Standard output",
+            "Standard error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    fprintf(stderr, \"Error message\");\n    fprintf(stdout, \"Normal output\");\n    return 0;\n}",
+        "o": [
+            "(both printed)",
+            "Error message",
+            "Normal output",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "stderr is typically unbuffered for immediate error output.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"test.txt\", \"w\");\n    fputs(\"Test\", fp);\n    int fd = fileno(fp);\n    printf(\"%d\", fd >= 0);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "-1",
+            "Error"
+        ]
+    },
+    {
+        "q": "fileno() returns the file descriptor for a stream.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange file abstraction levels:",
+        "type": "rearrange",
+        "words": [
+            "File descriptor (int)",
+            "FILE pointer",
+            "Stream buffer",
+            "User buffer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"data.txt\", \"w\");\n    int nums[] = {1, 2, 3, 4, 5};\n    for(int i = 0; i < 5; i++) {\n        fprintf(fp, \"%d \", nums[i]);\n    }\n    fclose(fp);\n    printf(\"Written\");\n    return 0;\n}",
+        "o": [
+            "Written",
+            "1 2 3 4 5",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "fprintf() can write multiple values in a loop.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"parse.txt\", \"w\");\n    fprintf(fp, \"100 200 300\");\n    fclose(fp);\n    fp = fopen(\"parse.txt\", \"r\");\n    int a, b, c;\n    fscanf(fp, \"%d %d %d\", &a, &b, &c);\n    printf(\"%d\", a + b + c);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "600",
+            "100",
+            "300",
+            "Error"
+        ]
+    },
+    {
+        "q": "fscanf() can read multiple values at once.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match file parsing techniques:",
+        "type": "match",
+        "left": [
+            "fscanf",
+            "fgets + sscanf",
+            "fgetc loop",
+            "fread"
+        ],
+        "right": [
+            "Format-based parsing",
+            "Line-then-parse",
+            "Character-by-character",
+            "Binary parsing"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"config.txt\", \"w\");\n    fprintf(fp, \"name=test\\nvalue=42\\n\");\n    fclose(fp);\n    fp = fopen(\"config.txt\", \"r\");\n    char line[100];\n    while(fgets(line, 100, fp)) {\n        if(line[0] != '\\n') printf(\"Got line\\n\");\n    }\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "Got line (twice)",
+            "Got line (once)",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Config files often use key=value format.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ character is commonly used as line separator.",
+        "type": "fill_blank",
+        "answers": [
+            "newline",
+            "\\n"
+        ],
+        "other_options": [
+            "comma",
+            "space",
+            "tab"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    FILE *fp = fopen(\"tokens.txt\", \"w\");\n    fprintf(fp, \"apple,banana,cherry\");\n    fclose(fp);\n    fp = fopen(\"tokens.txt\", \"r\");\n    char buf[100];\n    fgets(buf, 100, fp);\n    char *tok = strtok(buf, \",\");\n    printf(\"%s\", tok);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "apple",
+            "banana",
+            "cherry",
+            "Error"
+        ]
+    },
+    {
+        "q": "strtok() splits strings by delimiter.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"exist.txt\", \"r\");\n    if(fp == NULL) {\n        printf(\"Not found\");\n    } else {\n        printf(\"Found\");\n        fclose(fp);\n    }\n    return 0;\n}",
+        "o": [
+            "Not found",
+            "Found",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Checking fopen() return value detects missing files.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange error handling steps:",
+        "type": "rearrange",
+        "words": [
+            "Open file",
+            "Check NULL",
+            "Handle error",
+            "Continue or exit"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <errno.h>\nint main() {\n    FILE *fp = fopen(\"missing.txt\", \"r\");\n    if(fp == NULL) {\n        printf(\"%d\", errno != 0);\n    }\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "errno is set when file operations fail.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function prints system error messages.",
+        "type": "fill_blank",
+        "answers": [
+            "perror"
+        ],
+        "other_options": [
+            "printf",
+            "fprintf",
+            "strerror"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"test.txt\", \"w\");\n    if(fp) {\n        perror(\"fopen\");\n    }\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "fopen: Success",
+            "Error",
+            "Nothing",
+            "fopen: failed"
+        ]
+    },
+    {
+        "q": "perror() prints custom prefix with error message.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match error handling functions:",
+        "type": "match",
+        "left": [
+            "perror",
+            "strerror",
+            "errno",
+            "ferror"
+        ],
+        "right": [
+            "Print error to stderr",
+            "Get error string",
+            "Error number variable",
+            "Check stream error"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"blocks.bin\", \"wb\");\n    char block[512];\n    for(int i = 0; i < 512; i++) block[i] = 'A';\n    fwrite(block, 1, 512, fp);\n    fclose(fp);\n    printf(\"Done\");\n    return 0;\n}",
+        "o": [
+            "Done",
+            "512",
+            "Error",
+            "A"
+        ]
+    },
+    {
+        "q": "Block I/O writes fixed-size chunks efficiently.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"multi.bin\", \"wb\");\n    double vals[] = {1.1, 2.2, 3.3};\n    size_t written = fwrite(vals, sizeof(double), 3, fp);\n    fclose(fp);\n    printf(\"%zu\", written);\n    return 0;\n}",
+        "o": [
+            "3",
+            "24",
+            "8",
+            "Error"
+        ]
+    },
+    {
+        "q": "fwrite() returns number of elements written.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange binary file creation steps:",
+        "type": "rearrange",
+        "words": [
+            "Define data structure",
+            "Open binary mode",
+            "Write with fwrite",
+            "Verify elements written",
+            "Close file"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"rnd.bin\", \"wb+\");\n    int data[] = {10, 20, 30, 40, 50};\n    fwrite(data, sizeof(int), 5, fp);\n    fseek(fp, 3 * sizeof(int), SEEK_SET);\n    int val;\n    fread(&val, sizeof(int), 1, fp);\n    printf(\"%d\", val);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "40",
+            "30",
+            "50",
+            "Error"
+        ]
+    },
+    {
+        "q": "Random access reads specific positions in file.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The offset for record n is ______ bytes from start.",
+        "type": "fill_blank",
+        "answers": [
+            "n * record_size",
+            "n * sizeof"
+        ],
+        "other_options": [
+            "n",
+            "record_size",
+            "n + 1"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\ntypedef struct { int id; char name[20]; } Record;\nint main() {\n    FILE *fp = fopen(\"db.bin\", \"wb\");\n    Record r1 = {1, \"Alice\"};\n    Record r2 = {2, \"Bob\"};\n    fwrite(&r1, sizeof(Record), 1, fp);\n    fwrite(&r2, sizeof(Record), 1, fp);\n    fclose(fp);\n    fp = fopen(\"db.bin\", \"rb\");\n    fseek(fp, sizeof(Record), SEEK_SET);\n    Record r;\n    fread(&r, sizeof(Record), 1, fp);\n    printf(\"%s\", r.name);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "Bob",
+            "Alice",
+            "Error",
+            "1"
+        ]
+    },
+    {
+        "q": "Seeking by record size reads specific records.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match database file operations:",
+        "type": "match",
+        "left": [
+            "Insert",
+            "Read",
+            "Update",
+            "Delete"
+        ],
+        "right": [
+            "fwrite at end",
+            "fseek + fread",
+            "fseek + fwrite",
+            "Mark as deleted"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"upd.bin\", \"wb+\");\n    int data[] = {1, 2, 3};\n    fwrite(data, sizeof(int), 3, fp);\n    fseek(fp, sizeof(int), SEEK_SET);\n    int newVal = 99;\n    fwrite(&newVal, sizeof(int), 1, fp);\n    rewind(fp);\n    int result[3];\n    fread(result, sizeof(int), 3, fp);\n    printf(\"%d\", result[1]);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "99",
+            "2",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "In-place updates overwrite existing data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"count.bin\", \"wb\");\n    int recs = 0;\n    fwrite(&recs, sizeof(int), 1, fp);\n    fclose(fp);\n    fp = fopen(\"count.bin\", \"rb+\");\n    fread(&recs, sizeof(int), 1, fp);\n    recs++;\n    rewind(fp);\n    fwrite(&recs, sizeof(int), 1, fp);\n    rewind(fp);\n    fread(&recs, sizeof(int), 1, fp);\n    printf(\"%d\", recs);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "2",
+            "Error"
+        ]
+    },
+    {
+        "q": "File headers can store metadata like record count.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange file header operations:",
+        "type": "rearrange",
+        "words": [
+            "Read header",
+            "Process data",
+            "Update header",
+            "Write header back"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"idx.dat\", \"wb+\");\n    int index[10] = {0};\n    fwrite(index, sizeof(int), 10, fp);\n    fseek(fp, 5 * sizeof(int), SEEK_SET);\n    int val = 100;\n    fwrite(&val, sizeof(int), 1, fp);\n    rewind(fp);\n    int result[10];\n    fread(result, sizeof(int), 10, fp);\n    printf(\"%d\", result[5]);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "100",
+            "0",
+            "5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Index files store positions for quick lookup.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ structure enables O(1) record access.",
+        "type": "fill_blank",
+        "answers": [
+            "index",
+            "hash"
+        ],
+        "other_options": [
+            "tree",
+            "list",
+            "array"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"log.txt\", \"a\");\n    fprintf(fp, \"[INFO] Started\\n\");\n    fflush(fp);\n    fprintf(fp, \"[INFO] Processing\\n\");\n    fclose(fp);\n    printf(\"Logged\");\n    return 0;\n}",
+        "o": [
+            "Logged",
+            "[INFO]",
+            "Error",
+            "Started"
+        ]
+    },
+    {
+        "q": "Append mode is ideal for log files.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match logging patterns:",
+        "type": "match",
+        "left": [
+            "Append mode",
+            "fflush",
+            "Timestamp",
+            "Log level"
+        ],
+        "right": [
+            "Add to end",
+            "Write immediately",
+            "When logged",
+            "Severity indicator"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <time.h>\nint main() {\n    FILE *fp = fopen(\"ts.log\", \"w\");\n    time_t now = time(NULL);\n    fprintf(fp, \"%ld: Event\\n\", now);\n    fclose(fp);\n    printf(\"Timestamped\");\n    return 0;\n}",
+        "o": [
+            "Timestamped",
+            "Event",
+            "Error",
+            "now"
+        ]
+    },
+    {
+        "q": "time() provides Unix timestamp for logging.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"rotate.log\", \"w\");\n    for(int i = 0; i < 1000; i++) {\n        fprintf(fp, \"Log entry %d\\n\", i);\n    }\n    fclose(fp);\n    printf(\"Written\");\n    return 0;\n}",
+        "o": [
+            "Written",
+            "1000",
+            "Error",
+            "Log entry"
+        ]
+    },
+    {
+        "q": "Log rotation prevents files from growing indefinitely.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange log file management:",
+        "type": "rearrange",
+        "words": [
+            "Check file size",
+            "Close current log",
+            "Rename to backup",
+            "Open new log",
+            "Delete old backups"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    char magic[4] = {'P', 'N', 'G', '\\0'};\n    FILE *fp = fopen(\"img.bin\", \"wb\");\n    fwrite(magic, 1, 4, fp);\n    fclose(fp);\n    fp = fopen(\"img.bin\", \"rb\");\n    char buf[4];\n    fread(buf, 1, 4, fp);\n    printf(\"%s\", buf);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "PNG",
+            "P",
+            "Error",
+            "4"
+        ]
+    },
+    {
+        "q": "Magic bytes identify file format.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ bytes at file start identify file type.",
+        "type": "fill_blank",
+        "answers": [
+            "magic",
+            "signature"
+        ],
+        "other_options": [
+            "header",
+            "format",
+            "type"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\ntypedef struct { char magic[4]; int version; int count; } Header;\nint main() {\n    FILE *fp = fopen(\"custom.dat\", \"wb\");\n    Header h = {\"XYZ\", 1, 0};\n    fwrite(&h, sizeof(Header), 1, fp);\n    fclose(fp);\n    printf(\"Created\");\n    return 0;\n}",
+        "o": [
+            "Created",
+            "XYZ",
+            "Error",
+            "1"
+        ]
+    },
+    {
+        "q": "Custom file formats use structured headers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match file format components:",
+        "type": "match",
+        "left": [
+            "Magic bytes",
+            "Version",
+            "Record count",
+            "Checksum"
+        ],
+        "right": [
+            "Format identifier",
+            "Compatibility check",
+            "Data size info",
+            "Integrity verification"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"verify.bin\", \"wb\");\n    int data[] = {1, 2, 3, 4, 5};\n    int sum = 0;\n    for(int i = 0; i < 5; i++) sum += data[i];\n    fwrite(data, sizeof(int), 5, fp);\n    fwrite(&sum, sizeof(int), 1, fp);\n    fclose(fp);\n    printf(\"%d\", sum);\n    return 0;\n}",
+        "o": [
+            "15",
+            "5",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Checksums verify data integrity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"safe.txt\", \"w\");\n    if(fp == NULL) {\n        return 1;\n    }\n    fprintf(fp, \"Data\");\n    if(ferror(fp)) {\n        printf(\"Write failed\");\n    } else {\n        printf(\"Success\");\n    }\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "Success",
+            "Write failed",
+            "Error",
+            "Data"
+        ]
+    },
+    {
+        "q": "Robust code checks for errors after operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange file safety practices:",
+        "type": "rearrange",
+        "words": [
+            "Check open result",
+            "Verify writes",
+            "Handle errors",
+            "Ensure close",
+            "Cleanup on failure"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"trans.txt\", \"w\");\n    fprintf(fp, \"Original\");\n    fclose(fp);\n    fp = fopen(\"trans.tmp\", \"w\");\n    fprintf(fp, \"Updated\");\n    fclose(fp);\n    remove(\"trans.txt\");\n    rename(\"trans.tmp\", \"trans.txt\");\n    printf(\"Committed\");\n    return 0;\n}",
+        "o": [
+            "Committed",
+            "Updated",
+            "Error",
+            "Original"
+        ]
+    },
+    {
+        "q": "Write-to-temp-then-rename is atomic update pattern.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ file pattern ensures safe updates.",
+        "type": "fill_blank",
+        "answers": [
+            "temporary",
+            "temp"
+        ],
+        "other_options": [
+            "backup",
+            "copy",
+            "shadow"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"backup.txt\", \"w\");\n    fprintf(fp, \"Important\");\n    fclose(fp);\n    FILE *bak = fopen(\"backup.txt.bak\", \"w\");\n    fp = fopen(\"backup.txt\", \"r\");\n    int c;\n    while((c = fgetc(fp)) != EOF) fputc(c, bak);\n    fclose(fp);\n    fclose(bak);\n    printf(\"Backed up\");\n    return 0;\n}",
+        "o": [
+            "Backed up",
+            "Important",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Creating backup copies protects against data loss.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match file safety techniques:",
+        "type": "match",
+        "left": [
+            "Backup",
+            "Atomic rename",
+            "Write-ahead log",
+            "Checksum"
+        ],
+        "right": [
+            "Copy before change",
+            "Safe replacement",
+            "Recovery journal",
+            "Verify integrity"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp1 = fopen(\"file1.txt\", \"w\");\n    FILE *fp2 = fopen(\"file2.txt\", \"w\");\n    fprintf(fp1, \"Data 1\");\n    fprintf(fp2, \"Data 2\");\n    fclose(fp1);\n    fclose(fp2);\n    printf(\"Both written\");\n    return 0;\n}",
+        "o": [
+            "Both written",
+            "Data 1",
+            "Data 2",
+            "Error"
+        ]
+    },
+    {
+        "q": "Multiple files can be open simultaneously.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *src = fopen(\"src.bin\", \"rb\");\n    if(src == NULL) {\n        src = fopen(\"src.bin\", \"wb\");\n        int data = 42;\n        fwrite(&data, sizeof(int), 1, src);\n        fclose(src);\n        src = fopen(\"src.bin\", \"rb\");\n    }\n    int val;\n    fread(&val, sizeof(int), 1, src);\n    printf(\"%d\", val);\n    fclose(src);\n    return 0;\n}",
+        "o": [
+            "42",
+            "0",
+            "Error",
+            "NULL"
+        ]
+    },
+    {
+        "q": "Fallback creation handles missing files.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange file existence check flow:",
+        "type": "rearrange",
+        "words": [
+            "Try to open",
+            "Check NULL",
+            "Create if missing",
+            "Initialize content",
+            "Use file"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"sized.bin\", \"wb\");\n    fseek(fp, 1023, SEEK_SET);\n    fputc(0, fp);\n    fclose(fp);\n    fp = fopen(\"sized.bin\", \"rb\");\n    fseek(fp, 0, SEEK_END);\n    printf(\"%ld\", ftell(fp));\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "1024",
+            "1023",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Seeking past end and writing creates sparse file.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ file has holes filled with zeros.",
+        "type": "fill_blank",
+        "answers": [
+            "sparse"
+        ],
+        "other_options": [
+            "compact",
+            "dense",
+            "regular"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"trunc.txt\", \"w\");\n    fprintf(fp, \"Hello World\");\n    fclose(fp);\n    fp = fopen(\"trunc.txt\", \"w\");\n    fprintf(fp, \"Hi\");\n    fclose(fp);\n    fp = fopen(\"trunc.txt\", \"r\");\n    char buf[20];\n    fgets(buf, 20, fp);\n    printf(\"%s\", buf);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "Hi",
+            "Hello World",
+            "Hi World",
+            "Error"
+        ]
+    },
+    {
+        "q": "Mode 'w' truncates existing file content.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match file modes with truncation:",
+        "type": "match",
+        "left": [
+            "r",
+            "w",
+            "a",
+            "r+"
+        ],
+        "right": [
+            "No truncate",
+            "Truncates",
+            "No truncate",
+            "No truncate"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"lines.txt\", \"w\");\n    fprintf(fp, \"A\\nB\\nC\\n\");\n    fclose(fp);\n    fp = fopen(\"lines.txt\", \"r\");\n    char c;\n    int lines = 0;\n    while((c = fgetc(fp)) != EOF) {\n        if(c == '\\n') lines++;\n    }\n    printf(\"%d\", lines);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "3",
+            "2",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Counting newlines determines line count.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"words.txt\", \"w\");\n    fprintf(fp, \"one two three\");\n    fclose(fp);\n    fp = fopen(\"words.txt\", \"r\");\n    char word[20];\n    int count = 0;\n    while(fscanf(fp, \"%s\", word) == 1) count++;\n    printf(\"%d\", count);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "3",
+            "1",
+            "13",
+            "Error"
+        ]
+    },
+    {
+        "q": "fscanf with %s reads whitespace-separated words.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange text file analysis steps:",
+        "type": "rearrange",
+        "words": [
+            "Open file",
+            "Initialize counters",
+            "Read content",
+            "Update counts",
+            "Report results"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"chars.txt\", \"w\");\n    fprintf(fp, \"Hello\");\n    fclose(fp);\n    fp = fopen(\"chars.txt\", \"r\");\n    int count = 0;\n    while(fgetc(fp) != EOF) count++;\n    printf(\"%d\", count);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "5",
+            "6",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Character counting reads until EOF.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function returns file descriptor from stream.",
+        "type": "fill_blank",
+        "answers": [
+            "fileno"
+        ],
+        "other_options": [
+            "fdopen",
+            "fopen",
+            "freopen"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"merge.txt\", \"w\");\n    FILE *f1 = fopen(\"a.txt\", \"w\");\n    fprintf(f1, \"AAA\");\n    fclose(f1);\n    FILE *f2 = fopen(\"b.txt\", \"w\");\n    fprintf(f2, \"BBB\");\n    fclose(f2);\n    f1 = fopen(\"a.txt\", \"r\");\n    f2 = fopen(\"b.txt\", \"r\");\n    int c;\n    while((c = fgetc(f1)) != EOF) fputc(c, fp);\n    while((c = fgetc(f2)) != EOF) fputc(c, fp);\n    fclose(f1);\n    fclose(f2);\n    fclose(fp);\n    printf(\"Merged\");\n    return 0;\n}",
+        "o": [
+            "Merged",
+            "AAABBB",
+            "Error",
+            "AAA"
+        ]
+    },
+    {
+        "q": "File merging concatenates multiple sources.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match file operations with use cases:",
+        "type": "match",
+        "left": [
+            "Merge",
+            "Split",
+            "Compare",
+            "Filter"
+        ],
+        "right": [
+            "Combine files",
+            "Divide large file",
+            "Find differences",
+            "Select matching lines"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"sorted.txt\", \"w\");\n    int nums[] = {3, 1, 4, 1, 5};\n    for(int i = 0; i < 4; i++) {\n        for(int j = i+1; j < 5; j++) {\n            if(nums[i] > nums[j]) {\n                int t = nums[i];\n                nums[i] = nums[j];\n                nums[j] = t;\n            }\n        }\n    }\n    for(int i = 0; i < 5; i++) fprintf(fp, \"%d \", nums[i]);\n    fclose(fp);\n    printf(\"Sorted\");\n    return 0;\n}",
+        "o": [
+            "Sorted",
+            "3 1 4 1 5",
+            "1 1 3 4 5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Data can be sorted in memory then written to file.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"search.txt\", \"w\");\n    fprintf(fp, \"apple\\nbanana\\ncherry\\n\");\n    fclose(fp);\n    fp = fopen(\"search.txt\", \"r\");\n    char line[50];\n    int found = 0;\n    while(fgets(line, 50, fp)) {\n        if(line[0] == 'b') found = 1;\n    }\n    printf(\"%d\", found);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "1",
+            "0",
+            "banana",
+            "Error"
+        ]
+    },
+    {
+        "q": "Linear search reads lines until match found.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange external sort steps:",
+        "type": "rearrange",
+        "words": [
+            "Split into chunks",
+            "Sort each chunk",
+            "Write to temp files",
+            "Merge sorted files",
+            "Delete temps"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *in = fopen(\"input.txt\", \"w\");\n    fprintf(in, \"Hello World\");\n    fclose(in);\n    in = fopen(\"input.txt\", \"r\");\n    FILE *out = fopen(\"upper.txt\", \"w\");\n    int c;\n    while((c = fgetc(in)) != EOF) {\n        if(c >= 'a' && c <= 'z') c -= 32;\n        fputc(c, out);\n    }\n    fclose(in);\n    fclose(out);\n    printf(\"Converted\");\n    return 0;\n}",
+        "o": [
+            "Converted",
+            "HELLO WORLD",
+            "Error",
+            "Hello World"
+        ]
+    },
+    {
+        "q": "Character transformations can be applied during copy.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ASCII difference between 'a' and 'A' is ______.",
+        "type": "fill_blank",
+        "answers": [
+            "32"
+        ],
+        "other_options": [
+            "26",
+            "65",
+            "97"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"pipe.txt\", \"w\");\n    fprintf(fp, \"field1|field2|field3\");\n    fclose(fp);\n    fp = fopen(\"pipe.txt\", \"r\");\n    char f1[20], f2[20], f3[20];\n    fscanf(fp, \"%[^|]|%[^|]|%s\", f1, f2, f3);\n    printf(\"%s\", f2);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "field2",
+            "field1",
+            "field3",
+            "Error"
+        ]
+    },
+    {
+        "q": "Pipe delimiter is common in data files.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match delimited formats:",
+        "type": "match",
+        "left": [
+            "CSV",
+            "TSV",
+            "PSV",
+            "Fixed-width"
+        ],
+        "right": [
+            "Comma separated",
+            "Tab separated",
+            "Pipe separated",
+            "Column positions"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"json.txt\", \"w\");\n    fprintf(fp, \"{\\\"name\\\":\\\"test\\\"}\");\n    fclose(fp);\n    printf(\"Written\");\n    return 0;\n}",
+        "o": [
+            "Written",
+            "{\"name\":\"test\"}",
+            "Error",
+            "json"
+        ]
+    },
+    {
+        "q": "JSON format uses key-value pairs with colons.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"xml.txt\", \"w\");\n    fprintf(fp, \"<root><item>value</item></root>\");\n    fclose(fp);\n    printf(\"Created\");\n    return 0;\n}",
+        "o": [
+            "Created",
+            "<root>",
+            "Error",
+            "value"
+        ]
+    },
+    {
+        "q": "XML format uses opening and closing tags.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange structured file formats by age:",
+        "type": "rearrange",
+        "words": [
+            "CSV",
+            "XML",
+            "JSON",
+            "YAML",
+            "TOML"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"ini.txt\", \"w\");\n    fprintf(fp, \"[section]\\nkey=value\\n\");\n    fclose(fp);\n    printf(\"Saved\");\n    return 0;\n}",
+        "o": [
+            "Saved",
+            "[section]",
+            "value",
+            "Error"
+        ]
+    },
+    {
+        "q": "INI format uses sections in square brackets.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ format groups settings in [sections].",
+        "type": "fill_blank",
+        "answers": [
+            "INI"
+        ],
+        "other_options": [
+            "JSON",
+            "XML",
+            "YAML"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"props.txt\", \"w\");\n    fprintf(fp, \"# Comment\\nname=John\\nage=30\\n\");\n    fclose(fp);\n    fp = fopen(\"props.txt\", \"r\");\n    char line[100];\n    while(fgets(line, 100, fp)) {\n        if(line[0] != '#' && line[0] != '\\n') printf(\"Property\\n\");\n    }\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "Property (twice)",
+            "Property (once)",
+            "# Comment",
+            "Error"
+        ]
+    },
+    {
+        "q": "Hash character commonly indicates comments.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match config comment styles:",
+        "type": "match",
+        "left": [
+            "#",
+            "//",
+            ";",
+            "/* */"
+        ],
+        "right": [
+            "Shell/Python style",
+            "C++ style",
+            "INI style",
+            "C block style"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    ungetc('X', stdin);\n    int c = getchar();\n    printf(\"%c\", c);\n    return 0;\n}",
+        "o": [
+            "X",
+            "EOF",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "ungetc() pushes character back to stream.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"peek.txt\", \"w\");\n    fprintf(fp, \"ABC\");\n    fclose(fp);\n    fp = fopen(\"peek.txt\", \"r\");\n    int c = fgetc(fp);\n    ungetc(c, fp);\n    c = fgetc(fp);\n    printf(\"%c\", c);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "A",
+            "B",
+            "C",
+            "Error"
+        ]
+    },
+    {
+        "q": "ungetc() enables look-ahead parsing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange stream position operations:",
+        "type": "rearrange",
+        "words": [
+            "fseek (set position)",
+            "ftell (get position)",
+            "rewind (go to start)",
+            "fgetpos (save position)",
+            "fsetpos (restore position)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"pos.txt\", \"w+\");\n    fprintf(fp, \"ABCDEF\");\n    fpos_t pos;\n    fseek(fp, 3, SEEK_SET);\n    fgetpos(fp, &pos);\n    fseek(fp, 0, SEEK_SET);\n    fsetpos(fp, &pos);\n    printf(\"%c\", fgetc(fp));\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "D",
+            "A",
+            "C",
+            "Error"
+        ]
+    },
+    {
+        "q": "fgetpos/fsetpos save and restore file position.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The fpos_t type stores ______ position information.",
+        "type": "fill_blank",
+        "answers": [
+            "file",
+            "stream"
+        ],
+        "other_options": [
+            "memory",
+            "buffer",
+            "pointer"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"wide.txt\", \"w\");\n    fprintf(fp, \"テスト\");\n    fclose(fp);\n    printf(\"Written\");\n    return 0;\n}",
+        "o": [
+            "Written",
+            "テスト",
+            "Error",
+            "???"
+        ]
+    },
+    {
+        "q": "UTF-8 encoding supports non-ASCII characters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match character encodings:",
+        "type": "match",
+        "left": [
+            "ASCII",
+            "UTF-8",
+            "UTF-16",
+            "Latin-1"
+        ],
+        "right": [
+            "7-bit English",
+            "Variable width",
+            "2-4 bytes",
+            "Western European"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned char bom[] = {0xEF, 0xBB, 0xBF};\n    FILE *fp = fopen(\"bom.txt\", \"wb\");\n    fwrite(bom, 1, 3, fp);\n    fprintf(fp, \"UTF-8 text\");\n    fclose(fp);\n    printf(\"BOM written\");\n    return 0;\n}",
+        "o": [
+            "BOM written",
+            "UTF-8 text",
+            "Error",
+            "EF BB BF"
+        ]
+    },
+    {
+        "q": "BOM marks byte order at file start.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"dos.txt\", \"wb\");\n    fprintf(fp, \"Line 1\\r\\n\");\n    fprintf(fp, \"Line 2\\r\\n\");\n    fclose(fp);\n    printf(\"DOS format\");\n    return 0;\n}",
+        "o": [
+            "DOS format",
+            "Line 1",
+            "Error",
+            "\\r\\n"
+        ]
+    },
+    {
+        "q": "Windows uses CRLF (\\r\\n) line endings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange line endings by platform:",
+        "type": "rearrange",
+        "words": [
+            "LF (Unix/Mac)",
+            "CRLF (Windows)",
+            "CR (old Mac)"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"null.bin\", \"wb\");\n    char data[] = {0, 'A', 0, 'B', 0};\n    fwrite(data, 1, 5, fp);\n    fclose(fp);\n    fp = fopen(\"null.bin\", \"rb\");\n    fseek(fp, 0, SEEK_END);\n    printf(\"%ld\", ftell(fp));\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "5",
+            "2",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Binary files can contain null bytes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ byte has value zero.",
+        "type": "fill_blank",
+        "answers": [
+            "null",
+            "NUL"
+        ],
+        "other_options": [
+            "EOF",
+            "EOL",
+            "empty"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"escape.txt\", \"w\");\n    fprintf(fp, \"Tab:\\tNewline:\\nQuote:\\\"\");\n    fclose(fp);\n    printf(\"Escaped\");\n    return 0;\n}",
+        "o": [
+            "Escaped",
+            "Tab:",
+            "Error",
+            "\\t\\n"
+        ]
+    },
+    {
+        "q": "Escape sequences represent special characters.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match escape sequences:",
+        "type": "match",
+        "left": [
+            "\\n",
+            "\\t",
+            "\\r",
+            "\\\\"
+        ],
+        "right": [
+            "Newline",
+            "Tab",
+            "Carriage return",
+            "Backslash"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"raw.bin\", \"wb\");\n    unsigned char bytes[] = {0xFF, 0x00, 0xAB, 0xCD};\n    fwrite(bytes, 1, 4, fp);\n    fclose(fp);\n    fp = fopen(\"raw.bin\", \"rb\");\n    unsigned char b;\n    fread(&b, 1, 1, fp);\n    printf(\"%X\", b);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "FF",
+            "255",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Binary files store raw byte values.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"endian.bin\", \"wb\");\n    int val = 0x12345678;\n    fwrite(&val, sizeof(int), 1, fp);\n    fclose(fp);\n    fp = fopen(\"endian.bin\", \"rb\");\n    unsigned char b;\n    fread(&b, 1, 1, fp);\n    printf(\"%02X\", b);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "78 (on little-endian)",
+            "12",
+            "Error",
+            "56"
+        ]
+    },
+    {
+        "q": "Little-endian stores least significant byte first.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange endianness concepts:",
+        "type": "rearrange",
+        "words": [
+            "Big-endian (network)",
+            "Little-endian (x86)",
+            "Mixed-endian",
+            "Byte swapping"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"align.bin\", \"wb\");\n    struct __attribute__((packed)) { char c; int i; } data = {'A', 42};\n    fwrite(&data, sizeof(data), 1, fp);\n    fclose(fp);\n    printf(\"%zu\", sizeof(data));\n    return 0;\n}",
+        "o": [
+            "5",
+            "8",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Packed structures avoid padding bytes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ attribute removes structure padding.",
+        "type": "fill_blank",
+        "answers": [
+            "packed"
+        ],
+        "other_options": [
+            "aligned",
+            "compact",
+            "tight"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"array.bin\", \"wb\");\n    float data[] = {1.5, 2.5, 3.5};\n    fwrite(data, sizeof(float), 3, fp);\n    fclose(fp);\n    fp = fopen(\"array.bin\", \"rb\");\n    float f;\n    fseek(fp, sizeof(float), SEEK_SET);\n    fread(&f, sizeof(float), 1, fp);\n    printf(\"%.1f\", f);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "2.5",
+            "1.5",
+            "3.5",
+            "Error"
+        ]
+    },
+    {
+        "q": "Array elements can be accessed by offset calculation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match binary data types with sizes:",
+        "type": "match",
+        "left": [
+            "char",
+            "short",
+            "int",
+            "double"
+        ],
+        "right": [
+            "1 byte",
+            "2 bytes",
+            "4 bytes",
+            "8 bytes"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"var.bin\", \"wb\");\n    char str[] = \"Hello\";\n    int len = 5;\n    fwrite(&len, sizeof(int), 1, fp);\n    fwrite(str, 1, len, fp);\n    fclose(fp);\n    fp = fopen(\"var.bin\", \"rb\");\n    fread(&len, sizeof(int), 1, fp);\n    printf(\"%d\", len);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "5",
+            "Hello",
+            "0",
+            "Error"
+        ]
+    },
+    {
+        "q": "Length-prefixed strings store size before data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"nested.bin\", \"wb\");\n    struct { int type; union { int i; float f; } val; } r = {1, {.i = 42}};\n    fwrite(&r, sizeof(r), 1, fp);\n    fclose(fp);\n    printf(\"Written\");\n    return 0;\n}",
+        "o": [
+            "Written",
+            "42",
+            "Error",
+            "1"
+        ]
+    },
+    {
+        "q": "Tagged unions store type indicator with value.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange binary format design:",
+        "type": "rearrange",
+        "words": [
+            "Define header",
+            "Define record types",
+            "Plan versioning",
+            "Implement read/write",
+            "Test compatibility"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"lock.txt\", \"w\");\n    fprintf(fp, \"Exclusive access\");\n    fclose(fp);\n    printf(\"Written\");\n    return 0;\n}",
+        "o": [
+            "Written",
+            "Locked",
+            "Error",
+            "Exclusive"
+        ]
+    },
+    {
+        "q": "File locking prevents concurrent write conflicts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match locking strategies:",
+        "type": "match",
+        "left": [
+            "Advisory lock",
+            "Mandatory lock",
+            "Shared lock",
+            "Exclusive lock"
+        ],
+        "right": [
+            "Cooperative programs",
+            "OS enforced",
+            "Multiple readers",
+            "Single writer"
+        ]
+    },
+    {
+        "q": "What does POSIX flock() function do?",
+        "type": "mcq",
+        "o": [
+            "Applies file lock",
+            "Opens file",
+            "Reads file",
+            "Closes file"
+        ]
+    },
+    {
+        "q": "Advisory locks require cooperative processes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ lock allows multiple readers.",
+        "type": "fill_blank",
+        "answers": [
+            "shared",
+            "read"
+        ],
+        "other_options": [
+            "exclusive",
+            "write",
+            "sole"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <stdlib.h>\nint main() {\n    FILE *fp = fopen(\"large.bin\", \"wb\");\n    char *buf = malloc(4096);\n    for(int i = 0; i < 4096; i++) buf[i] = 'X';\n    for(int i = 0; i < 1000; i++) fwrite(buf, 1, 4096, fp);\n    fclose(fp);\n    free(buf);\n    printf(\"Written\");\n    return 0;\n}",
+        "o": [
+            "Written",
+            "4096000",
+            "Error",
+            "Nothing"
+        ]
+    },
+    {
+        "q": "Large files are written efficiently with block buffers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange large file writing strategies:",
+        "type": "rearrange",
+        "words": [
+            "Allocate buffer",
+            "Fill buffer",
+            "Write block",
+            "Repeat",
+            "Close file"
+        ]
+    },
+    {
+        "q": "What is memory-mapped file I/O?",
+        "type": "mcq",
+        "o": [
+            "File mapped to memory address space",
+            "File stored in RAM",
+            "Compressed file",
+            "Encrypted file"
+        ]
+    },
+    {
+        "q": "Memory-mapped I/O treats files as memory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The mmap() function returns ______ on success.",
+        "type": "fill_blank",
+        "answers": [
+            "pointer",
+            "address"
+        ],
+        "other_options": [
+            "integer",
+            "FILE",
+            "descriptor"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"direct.bin\", \"wb\");\n    for(int i = 0; i < 100; i++) {\n        fwrite(&i, sizeof(int), 1, fp);\n    }\n    fclose(fp);\n    printf(\"%ld\", 100L * sizeof(int));\n    return 0;\n}",
+        "o": [
+            "400",
+            "100",
+            "4",
+            "Error"
+        ]
+    },
+    {
+        "q": "Direct I/O bypasses system buffer cache.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match I/O types with characteristics:",
+        "type": "match",
+        "left": [
+            "Buffered I/O",
+            "Direct I/O",
+            "Memory-mapped",
+            "Async I/O"
+        ],
+        "right": [
+            "Uses page cache",
+            "Bypasses cache",
+            "Address space mapping",
+            "Non-blocking"
+        ]
+    },
+    {
+        "q": "What is O_APPEND flag used for?",
+        "type": "mcq",
+        "o": [
+            "Atomic append",
+            "Create file",
+            "Read only",
+            "Truncate"
+        ]
+    },
+    {
+        "q": "O_APPEND ensures atomic append operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"scatter.txt\", \"wb+\");\n    char data[] = \"ABCDEF\";\n    fwrite(data, 1, 6, fp);\n    fseek(fp, 0, SEEK_SET);\n    char buf[3];\n    fread(buf, 1, 3, fp);\n    fseek(fp, 0, SEEK_SET);\n    fread(buf, 1, 3, fp);\n    printf(\"%c%c%c\", buf[0], buf[1], buf[2]);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "ABC",
+            "DEF",
+            "Error",
+            "ABCDEF"
+        ]
+    },
+    {
+        "q": "Scatter/gather I/O combines multiple buffers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange asynchronous I/O steps:",
+        "type": "rearrange",
+        "words": [
+            "Submit request",
+            "Continue work",
+            "Check completion",
+            "Process result"
+        ]
+    },
+    {
+        "q": "What does pread() do differently from read()?",
+        "type": "mcq",
+        "o": [
+            "Reads at offset without seeking",
+            "Reads faster",
+            "Reads from network",
+            "Reads encrypted data"
+        ]
+    },
+    {
+        "q": "pread() and pwrite() are thread-safe for position.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ I/O operations use explicit offsets.",
+        "type": "fill_blank",
+        "answers": [
+            "positional",
+            "pread/pwrite"
+        ],
+        "other_options": [
+            "sequential",
+            "buffered",
+            "random"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"stat.txt\", \"w\");\n    fprintf(fp, \"Test content\");\n    fclose(fp);\n    fp = fopen(\"stat.txt\", \"rb\");\n    fseek(fp, 0, SEEK_END);\n    long size = ftell(fp);\n    fclose(fp);\n    printf(\"%ld\", size);\n    return 0;\n}",
+        "o": [
+            "12",
+            "0",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "stat() retrieves file metadata without opening.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match file metadata fields:",
+        "type": "match",
+        "left": [
+            "st_size",
+            "st_mtime",
+            "st_mode",
+            "st_uid"
+        ],
+        "right": [
+            "File size",
+            "Modification time",
+            "Permissions",
+            "Owner ID"
+        ]
+    },
+    {
+        "q": "What does truncate() do to a file?",
+        "type": "mcq",
+        "o": [
+            "Changes file size",
+            "Deletes file",
+            "Opens file",
+            "Reads file"
+        ]
+    },
+    {
+        "q": "truncate() can both shrink and extend files.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"extend.bin\", \"wb\");\n    fseek(fp, 999, SEEK_SET);\n    fputc('A', fp);\n    fclose(fp);\n    fp = fopen(\"extend.bin\", \"rb\");\n    fseek(fp, 0, SEEK_END);\n    printf(\"%ld\", ftell(fp));\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "1000",
+            "999",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Files can be extended by seeking past end and writing.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange file system operations:",
+        "type": "rearrange",
+        "words": [
+            "Create inode",
+            "Allocate blocks",
+            "Update directory",
+            "Write data",
+            "Update metadata"
+        ]
+    },
+    {
+        "q": "What is a symbolic link?",
+        "type": "mcq",
+        "o": [
+            "File that points to another file",
+            "Hard copy of file",
+            "Compressed file",
+            "Encrypted file"
+        ]
+    },
+    {
+        "q": "symlink() creates a symbolic link.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ link points to filename, not inode.",
+        "type": "fill_blank",
+        "answers": [
+            "symbolic",
+            "soft"
+        ],
+        "other_options": [
+            "hard",
+            "physical",
+            "direct"
+        ]
+    },
+    {
+        "q": "What is the difference between hard and soft links?",
+        "type": "mcq",
+        "o": [
+            "Hard links share inode",
+            "Soft links are faster",
+            "Hard links cross filesystems",
+            "No difference"
+        ]
+    },
+    {
+        "q": "Hard links cannot cross filesystem boundaries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match link types with properties:",
+        "type": "match",
+        "left": [
+            "Hard link",
+            "Symbolic link",
+            "Dangling link",
+            "Self link"
+        ],
+        "right": [
+            "Same inode",
+            "Path reference",
+            "Target deleted",
+            "Points to self"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    char path[256];\n    sprintf(path, \"%s/%s\", \"/tmp\", \"test.txt\");\n    printf(\"%s\", path);\n    return 0;\n}",
+        "o": [
+            "/tmp/test.txt",
+            "test.txt",
+            "/tmp",
+            "Error"
+        ]
+    },
+    {
+        "q": "Path manipulation builds file paths programmatically.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char *path = \"/home/user/file.txt\";\n    char *base = strrchr(path, '/');\n    printf(\"%s\", base + 1);\n    return 0;\n}",
+        "o": [
+            "file.txt",
+            "/file.txt",
+            "/home/user",
+            "Error"
+        ]
+    },
+    {
+        "q": "basename() extracts filename from path.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange path components:",
+        "type": "rearrange",
+        "words": [
+            "Root",
+            "Directory",
+            "Subdirectory",
+            "Filename",
+            "Extension"
+        ]
+    },
+    {
+        "q": "What does realpath() return?",
+        "type": "mcq",
+        "o": [
+            "Absolute canonical path",
+            "File size",
+            "File type",
+            "File owner"
+        ]
+    },
+    {
+        "q": "realpath() resolves symbolic links.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ path contains no symbolic links.",
+        "type": "fill_blank",
+        "answers": [
+            "canonical",
+            "absolute"
+        ],
+        "other_options": [
+            "relative",
+            "symbolic",
+            "virtual"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"/tmp/test.txt\", \"w\");\n    fprintf(fp, \"Temp data\");\n    fclose(fp);\n    printf(\"Created\");\n    return 0;\n}",
+        "o": [
+            "Created",
+            "/tmp",
+            "Error",
+            "Temp data"
+        ]
+    },
+    {
+        "q": "Temporary directories store transient files.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match directory functions:",
+        "type": "match",
+        "left": [
+            "mkdir",
+            "rmdir",
+            "opendir",
+            "readdir"
+        ],
+        "right": [
+            "Create directory",
+            "Remove directory",
+            "Open for listing",
+            "Read entry"
+        ]
+    },
+    {
+        "q": "What does opendir() return?",
+        "type": "mcq",
+        "o": [
+            "DIR pointer",
+            "FILE pointer",
+            "Integer",
+            "String"
+        ]
+    },
+    {
+        "q": "readdir() iterates directory entries.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    char cwd[256] = \".\";\n    printf(\"CWD: %s\", cwd);\n    return 0;\n}",
+        "o": [
+            "CWD: .",
+            "CWD: /",
+            "Error",
+            "CWD: ~"
+        ]
+    },
+    {
+        "q": "getcwd() retrieves current working directory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange directory traversal:",
+        "type": "rearrange",
+        "words": [
+            "Open directory",
+            "Read entry",
+            "Check if directory",
+            "Recurse if needed",
+            "Close directory"
+        ]
+    },
+    {
+        "q": "What is the difference between absolute and relative paths?",
+        "type": "mcq",
+        "o": [
+            "Absolute starts from root",
+            "Relative is longer",
+            "Absolute is relative to home",
+            "No difference"
+        ]
+    },
+    {
+        "q": "Relative paths depend on current directory.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ path starts with forward slash on Unix.",
+        "type": "fill_blank",
+        "answers": [
+            "absolute"
+        ],
+        "other_options": [
+            "relative",
+            "symbolic",
+            "virtual"
+        ]
+    },
+    {
+        "q": "What does access() check?",
+        "type": "mcq",
+        "o": [
+            "File permissions",
+            "File size",
+            "File type",
+            "File age"
+        ]
+    },
+    {
+        "q": "access() tests read/write/execute permissions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match permission flags:",
+        "type": "match",
+        "left": [
+            "R_OK",
+            "W_OK",
+            "X_OK",
+            "F_OK"
+        ],
+        "right": [
+            "Read permission",
+            "Write permission",
+            "Execute permission",
+            "File exists"
+        ]
+    },
+    {
+        "q": "What is umask?",
+        "type": "mcq",
+        "o": [
+            "Default permission mask",
+            "File type",
+            "User ID",
+            "File size"
+        ]
+    },
+    {
+        "q": "umask affects default permissions of new files.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"perms.txt\", \"w\");\n    fprintf(fp, \"Protected\");\n    fclose(fp);\n    printf(\"File created\");\n    return 0;\n}",
+        "o": [
+            "File created",
+            "Protected",
+            "Error",
+            "perms"
+        ]
+    },
+    {
+        "q": "chmod() changes file permissions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange permission bits:",
+        "type": "rearrange",
+        "words": [
+            "Owner read/write/execute",
+            "Group read/write/execute",
+            "Other read/write/execute"
+        ]
+    },
+    {
+        "q": "What does chown() change?",
+        "type": "mcq",
+        "o": [
+            "File ownership",
+            "File content",
+            "File name",
+            "File size"
+        ]
+    },
+    {
+        "q": "chown() requires root privileges for non-owned files.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ permission allows reading a file.",
+        "type": "fill_blank",
+        "answers": [
+            "read",
+            "r"
+        ],
+        "other_options": [
+            "write",
+            "execute",
+            "modify"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char filename[] = \"document.txt\";\n    char *dot = strrchr(filename, '.');\n    if(dot) printf(\"%s\", dot + 1);\n    return 0;\n}",
+        "o": [
+            "txt",
+            ".txt",
+            "document",
+            "Error"
+        ]
+    },
+    {
+        "q": "File extension determines file type by convention.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match file extensions with types:",
+        "type": "match",
+        "left": [
+            ".txt",
+            ".json",
+            ".csv",
+            ".bin"
+        ],
+        "right": [
+            "Plain text",
+            "JSON data",
+            "Comma-separated",
+            "Binary data"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"compress.txt\", \"w\");\n    char repeated = 'A';\n    int count = 10;\n    fprintf(fp, \"%c%d\", repeated, count);\n    fclose(fp);\n    printf(\"RLE encoded\");\n    return 0;\n}",
+        "o": [
+            "RLE encoded",
+            "A10",
+            "Error",
+            "AAAAAAAAAA"
+        ]
+    },
+    {
+        "q": "Run-length encoding compresses repeated data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nstatic char base64_chars[] = \"ABCDEFGHIJ\";\nint main() {\n    printf(\"%c\", base64_chars[5]);\n    return 0;\n}",
+        "o": [
+            "F",
+            "E",
+            "6",
+            "Error"
+        ]
+    },
+    {
+        "q": "Base64 encoding converts binary to printable text.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange compression pipeline:",
+        "type": "rearrange",
+        "words": [
+            "Read input",
+            "Apply algorithm",
+            "Write compressed",
+            "Store metadata",
+            "Verify integrity"
+        ]
+    },
+    {
+        "q": "What is checksumming used for?",
+        "type": "mcq",
+        "o": [
+            "Verify file integrity",
+            "Compress file",
+            "Encrypt file",
+            "Delete file"
+        ]
+    },
+    {
+        "q": "CRC32 is a common checksum algorithm.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function generates hash values.",
+        "type": "fill_blank",
+        "answers": [
+            "hash",
+            "checksum"
+        ],
+        "other_options": [
+            "compress",
+            "encrypt",
+            "verify"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    unsigned char key = 0x55;\n    FILE *in = fopen(\"plain.bin\", \"wb\");\n    fputc('A', in);\n    fclose(in);\n    in = fopen(\"plain.bin\", \"rb\");\n    FILE *out = fopen(\"cipher.bin\", \"wb\");\n    int c;\n    while((c = fgetc(in)) != EOF) {\n        fputc(c ^ key, out);\n    }\n    fclose(in);\n    fclose(out);\n    printf(\"Encrypted\");\n    return 0;\n}",
+        "o": [
+            "Encrypted",
+            "A",
+            "Error",
+            "plain"
+        ]
+    },
+    {
+        "q": "XOR is a simple encryption operation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match security concepts:",
+        "type": "match",
+        "left": [
+            "Encryption",
+            "Hashing",
+            "Signing",
+            "Key derivation"
+        ],
+        "right": [
+            "Confidentiality",
+            "Integrity check",
+            "Authentication",
+            "Password storage"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"journal.dat\", \"a+b\");\n    int entry = 42;\n    fwrite(&entry, sizeof(int), 1, fp);\n    fflush(fp);\n    printf(\"Journaled\");\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "Journaled",
+            "42",
+            "Error",
+            "journal"
+        ]
+    },
+    {
+        "q": "Write-ahead logging ensures durability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is fsync() used for?",
+        "type": "mcq",
+        "o": [
+            "Force write to disk",
+            "Read from disk",
+            "Lock file",
+            "Delete file"
+        ]
+    },
+    {
+        "q": "fsync() flushes data to persistent storage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange durability guarantees:",
+        "type": "rearrange",
+        "words": [
+            "Write to buffer",
+            "fflush to kernel",
+            "fsync to disk",
+            "Verify write"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"version.dat\", \"wb\");\n    int version = 2;\n    fwrite(&version, sizeof(int), 1, fp);\n    fclose(fp);\n    printf(\"v%d\", version);\n    return 0;\n}",
+        "o": [
+            "v2",
+            "2",
+            "Error",
+            "version"
+        ]
+    },
+    {
+        "q": "File format versioning enables backward compatibility.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ field indicates file format version.",
+        "type": "fill_blank",
+        "answers": [
+            "version",
+            "format_version"
+        ],
+        "other_options": [
+            "magic",
+            "header",
+            "type"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\ntypedef struct { int version; int flags; int count; } FileHeader;\nint main() {\n    FILE *fp = fopen(\"custom.dat\", \"wb\");\n    FileHeader h = {1, 0, 0};\n    fwrite(&h, sizeof(FileHeader), 1, fp);\n    fclose(fp);\n    printf(\"Header written\");\n    return 0;\n}",
+        "o": [
+            "Header written",
+            "12",
+            "Error",
+            "1"
+        ]
+    },
+    {
+        "q": "Structured headers define file format layouts.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match file format design patterns:",
+        "type": "match",
+        "left": [
+            "Magic number",
+            "Version",
+            "Size field",
+            "Checksum"
+        ],
+        "right": [
+            "Type identification",
+            "Compatibility",
+            "Length prefix",
+            "Integrity"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"chunk.dat\", \"wb\");\n    char type[4] = \"DATA\";\n    int size = 100;\n    fwrite(type, 1, 4, fp);\n    fwrite(&size, sizeof(int), 1, fp);\n    fclose(fp);\n    printf(\"Chunk header\");\n    return 0;\n}",
+        "o": [
+            "Chunk header",
+            "DATA",
+            "100",
+            "Error"
+        ]
+    },
+    {
+        "q": "Chunk-based formats allow extensibility.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"stream.dat\", \"wb\");\n    for(int i = 0; i < 10; i++) {\n        int len = 4;\n        int data = i * 10;\n        fwrite(&len, sizeof(int), 1, fp);\n        fwrite(&data, sizeof(int), 1, fp);\n    }\n    fclose(fp);\n    printf(\"Stream written\");\n    return 0;\n}",
+        "o": [
+            "Stream written",
+            "10",
+            "40",
+            "Error"
+        ]
+    },
+    {
+        "q": "Length-prefixed records enable variable-size data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange TLV (Type-Length-Value) structure:",
+        "type": "rearrange",
+        "words": [
+            "Type field",
+            "Length field",
+            "Value data"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"index.dat\", \"wb+\");\n    long offsets[10] = {0};\n    fwrite(offsets, sizeof(long), 10, fp);\n    long dataPos = ftell(fp);\n    offsets[0] = dataPos;\n    fprintf(fp, \"Record 0\");\n    rewind(fp);\n    fwrite(offsets, sizeof(long), 10, fp);\n    fclose(fp);\n    printf(\"Indexed\");\n    return 0;\n}",
+        "o": [
+            "Indexed",
+            "80",
+            "Error",
+            "Record 0"
+        ]
+    },
+    {
+        "q": "Index tables enable fast record lookup.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ stores positions for quick access.",
+        "type": "fill_blank",
+        "answers": [
+            "index",
+            "offset table"
+        ],
+        "other_options": [
+            "header",
+            "footer",
+            "data"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"sparse.dat\", \"wb\");\n    fseek(fp, 1000000, SEEK_SET);\n    fputc('X', fp);\n    fclose(fp);\n    fp = fopen(\"sparse.dat\", \"rb\");\n    fseek(fp, 0, SEEK_END);\n    printf(\"%ld\", ftell(fp));\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "1000001",
+            "1000000",
+            "1",
+            "Error"
+        ]
+    },
+    {
+        "q": "Sparse files save disk space for mostly-empty files.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match storage concepts:",
+        "type": "match",
+        "left": [
+            "Block",
+            "Inode",
+            "Extent",
+            "Cluster"
+        ],
+        "right": [
+            "Storage unit",
+            "File metadata",
+            "Contiguous blocks",
+            "Allocation unit"
+        ]
+    },
+    {
+        "q": "What is file fragmentation?",
+        "type": "mcq",
+        "o": [
+            "Non-contiguous blocks",
+            "File corruption",
+            "Deleted files",
+            "Compressed files"
+        ]
+    },
+    {
+        "q": "Fragmentation slows sequential reads.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"cache.dat\", \"wb+\");\n    char data[4096];\n    for(int i = 0; i < 4096; i++) data[i] = 'X';\n    fwrite(data, 1, 4096, fp);\n    rewind(fp);\n    fread(data, 1, 4096, fp);\n    printf(\"Cached\");\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "Cached",
+            "4096",
+            "Error",
+            "X"
+        ]
+    },
+    {
+        "q": "Page cache improves repeated read performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange I/O optimization techniques:",
+        "type": "rearrange",
+        "words": [
+            "Buffer reads",
+            "Batch writes",
+            "Use page cache",
+            "Prefetch data",
+            "Align to blocks"
+        ]
+    },
+    {
+        "q": "What is preallocation used for?",
+        "type": "mcq",
+        "o": [
+            "Reserve contiguous space",
+            "Delete file",
+            "Compress file",
+            "Encrypt file"
+        ]
+    },
+    {
+        "q": "Preallocation reduces fragmentation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ call reserves file space without writing.",
+        "type": "fill_blank",
+        "answers": [
+            "fallocate",
+            "posix_fallocate"
+        ],
+        "other_options": [
+            "fwrite",
+            "fseek",
+            "truncate"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"batch.txt\", \"w\");\n    for(int i = 0; i < 1000; i++) {\n        fprintf(fp, \"Line %d\\n\", i);\n    }\n    fclose(fp);\n    printf(\"Done\");\n    return 0;\n}",
+        "o": [
+            "Done",
+            "1000",
+            "Error",
+            "Line"
+        ]
+    },
+    {
+        "q": "Batch writing is more efficient than many small writes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match performance patterns:",
+        "type": "match",
+        "left": [
+            "Sequential",
+            "Random",
+            "Buffered",
+            "Direct"
+        ],
+        "right": [
+            "Fastest for large reads",
+            "Slow due to seeks",
+            "Uses page cache",
+            "Bypasses cache"
+        ]
+    },
+    {
+        "q": "What is write amplification?",
+        "type": "mcq",
+        "o": [
+            "Extra writes beyond data size",
+            "Faster writes",
+            "Compressed writes",
+            "Encrypted writes"
+        ]
+    },
+    {
+        "q": "SSDs suffer from write amplification.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"aligned.bin\", \"wb\");\n    char buf[4096] __attribute__((aligned(4096)));\n    for(int i = 0; i < 4096; i++) buf[i] = 0;\n    fwrite(buf, 1, 4096, fp);\n    fclose(fp);\n    printf(\"Aligned\");\n    return 0;\n}",
+        "o": [
+            "Aligned",
+            "4096",
+            "Error",
+            "0"
+        ]
+    },
+    {
+        "q": "Aligned I/O improves performance on modern storage.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange storage hierarchy by speed:",
+        "type": "rearrange",
+        "words": [
+            "CPU Cache",
+            "RAM",
+            "SSD",
+            "HDD",
+            "Network Storage"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"sync.txt\", \"w\");\n    fprintf(fp, \"Important\");\n    fflush(fp);\n    fclose(fp);\n    printf(\"Synced\");\n    return 0;\n}",
+        "o": [
+            "Synced",
+            "Important",
+            "Error",
+            "sync"
+        ]
+    },
+    {
+        "q": "Explicit syncing ensures data reaches disk.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The O_SYNC flag ensures ______ writes.",
+        "type": "fill_blank",
+        "answers": [
+            "synchronous"
+        ],
+        "other_options": [
+            "asynchronous",
+            "buffered",
+            "cached"
+        ]
+    },
+    {
+        "q": "What does fdatasync() synchronize?",
+        "type": "mcq",
+        "o": [
+            "Data only, not metadata",
+            "Metadata only",
+            "Neither",
+            "Network data"
+        ]
+    },
+    {
+        "q": "fdatasync() is faster than fsync().",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match sync operations:",
+        "type": "match",
+        "left": [
+            "fflush",
+            "fsync",
+            "fdatasync",
+            "sync"
+        ],
+        "right": [
+            "Buffer to kernel",
+            "File to disk",
+            "Data to disk",
+            "All files to disk"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"dup.txt\", \"w\");\n    fprintf(fp, \"Original\");\n    fclose(fp);\n    FILE *src = fopen(\"dup.txt\", \"r\");\n    FILE *dst = fopen(\"copy.txt\", \"w\");\n    int c;\n    while((c = fgetc(src)) != EOF) fputc(c, dst);\n    fclose(src);\n    fclose(dst);\n    printf(\"Duplicated\");\n    return 0;\n}",
+        "o": [
+            "Duplicated",
+            "Original",
+            "Error",
+            "copy"
+        ]
+    },
+    {
+        "q": "File duplication copies content to new file.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"diff.txt\", \"w\");\n    fprintf(fp, \"Line A\\nLine B\\nLine C\\n\");\n    fclose(fp);\n    printf(\"Created\");\n    return 0;\n}",
+        "o": [
+            "Created",
+            "Line A",
+            "Error",
+            "diff"
+        ]
+    },
+    {
+        "q": "File differencing identifies changes between versions.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange file patching steps:",
+        "type": "rearrange",
+        "words": [
+            "Read original",
+            "Read patch",
+            "Apply changes",
+            "Write result",
+            "Verify output"
+        ]
+    },
+    {
+        "q": "What is atomic file replacement?",
+        "type": "mcq",
+        "o": [
+            "rename() swaps files atomically",
+            "Overwrite in place",
+            "Delete then create",
+            "Copy then delete"
+        ]
+    },
+    {
+        "q": "rename() is atomic on same filesystem.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ pattern writes to temp then renames.",
+        "type": "fill_blank",
+        "answers": [
+            "atomic",
+            "safe-write"
+        ],
+        "other_options": [
+            "direct",
+            "streaming",
+            "buffered"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"recover.dat\", \"wb+\");\n    int data = 42;\n    fwrite(&data, sizeof(int), 1, fp);\n    fflush(fp);\n    printf(\"Recoverable\");\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "Recoverable",
+            "42",
+            "Error",
+            "recover"
+        ]
+    },
+    {
+        "q": "Journaling enables crash recovery.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match recovery strategies:",
+        "type": "match",
+        "left": [
+            "Write-ahead log",
+            "Checkpointing",
+            "Redo log",
+            "Undo log"
+        ],
+        "right": [
+            "Log before write",
+            "Periodic state save",
+            "Replay operations",
+            "Rollback changes"
+        ]
+    },
+    {
+        "q": "What is copy-on-write?",
+        "type": "mcq",
+        "o": [
+            "Copy data on modification",
+            "Copy immediately",
+            "Never copy",
+            "Compress on copy"
+        ]
+    },
+    {
+        "q": "CoW filesystems create copies on modification.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"snap.dat\", \"wb\");\n    int version = 1;\n    fwrite(&version, sizeof(int), 1, fp);\n    fclose(fp);\n    printf(\"Snapshot v%d\", version);\n    return 0;\n}",
+        "o": [
+            "Snapshot v1",
+            "1",
+            "Error",
+            "snap"
+        ]
+    },
+    {
+        "q": "Snapshots capture point-in-time file state.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange backup strategies by frequency:",
+        "type": "rearrange",
+        "words": [
+            "Full backup",
+            "Incremental backup",
+            "Differential backup",
+            "Continuous backup"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"quota.txt\", \"w\");\n    long usage = 1024;\n    long limit = 10240;\n    fprintf(fp, \"Used: %ld/%ld\", usage, limit);\n    fclose(fp);\n    printf(\"Quota checked\");\n    return 0;\n}",
+        "o": [
+            "Quota checked",
+            "1024",
+            "Error",
+            "quota"
+        ]
+    },
+    {
+        "q": "Disk quotas limit storage per user.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ system limits storage usage.",
+        "type": "fill_blank",
+        "answers": [
+            "quota"
+        ],
+        "other_options": [
+            "permission",
+            "limit",
+            "allocation"
+        ]
+    },
+    {
+        "q": "What is file watching used for?",
+        "type": "mcq",
+        "o": [
+            "Monitor file changes",
+            "Lock files",
+            "Compress files",
+            "Encrypt files"
+        ]
+    },
+    {
+        "q": "inotify watches for file system events.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match file events:",
+        "type": "match",
+        "left": [
+            "CREATE",
+            "MODIFY",
+            "DELETE",
+            "MOVE"
+        ],
+        "right": [
+            "New file",
+            "Changed content",
+            "Removed file",
+            "Renamed/moved"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"event.log\", \"a\");\n    fprintf(fp, \"[EVENT] File modified\\n\");\n    fclose(fp);\n    printf(\"Logged\");\n    return 0;\n}",
+        "o": [
+            "Logged",
+            "[EVENT]",
+            "Error",
+            "event"
+        ]
+    },
+    {
+        "q": "Event logs record file system activity.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"audit.log\", \"a\");\n    fprintf(fp, \"User accessed file X\\n\");\n    fflush(fp);\n    printf(\"Audited\");\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "Audited",
+            "User",
+            "Error",
+            "audit"
+        ]
+    },
+    {
+        "q": "Audit logs track access for security.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange logging best practices:",
+        "type": "rearrange",
+        "words": [
+            "Timestamp entries",
+            "Include context",
+            "Flush frequently",
+            "Rotate logs",
+            "Archive old logs"
+        ]
+    },
+    {
+        "q": "What is pipe() used for in file I/O?",
+        "type": "mcq",
+        "o": [
+            "Inter-process communication",
+            "File compression",
+            "File encryption",
+            "File deletion"
+        ]
+    },
+    {
+        "q": "Pipes create unidirectional byte streams.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ end of a pipe is read from.",
+        "type": "fill_blank",
+        "answers": [
+            "read"
+        ],
+        "other_options": [
+            "write",
+            "open",
+            "close"
+        ]
+    },
+    {
+        "q": "What is dup2() used for?",
+        "type": "mcq",
+        "o": [
+            "Duplicate file descriptor",
+            "Delete file",
+            "Read file",
+            "Write file"
+        ]
+    },
+    {
+        "q": "dup2() redirects standard I/O to files.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match file descriptor operations:",
+        "type": "match",
+        "left": [
+            "dup",
+            "dup2",
+            "close",
+            "fcntl"
+        ],
+        "right": [
+            "Duplicate descriptor",
+            "Duplicate to specific fd",
+            "Release descriptor",
+            "Control attributes"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"named.txt\", \"w\");\n    fprintf(fp, \"Named pipe data\");\n    fclose(fp);\n    printf(\"Written\");\n    return 0;\n}",
+        "o": [
+            "Written",
+            "Named pipe data",
+            "Error",
+            "named"
+        ]
+    },
+    {
+        "q": "Named pipes (FIFOs) have filesystem names.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is select() used for?",
+        "type": "mcq",
+        "o": [
+            "Multiplex I/O on multiple descriptors",
+            "Delete files",
+            "Create files",
+            "Compress files"
+        ]
+    },
+    {
+        "q": "select() monitors multiple file descriptors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange I/O multiplexing evolution:",
+        "type": "rearrange",
+        "words": [
+            "select",
+            "poll",
+            "epoll/kqueue",
+            "io_uring"
+        ]
+    },
+    {
+        "q": "What is poll() advantage over select()?",
+        "type": "mcq",
+        "o": [
+            "No descriptor limit",
+            "Faster always",
+            "Fewer syscalls",
+            "Less code"
+        ]
+    },
+    {
+        "q": "epoll is more scalable than select for many fds.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ system call scales best for thousands of connections.",
+        "type": "fill_blank",
+        "answers": [
+            "epoll",
+            "kqueue"
+        ],
+        "other_options": [
+            "select",
+            "poll",
+            "read"
+        ]
+    },
+    {
+        "q": "What is io_uring?",
+        "type": "mcq",
+        "o": [
+            "Linux async I/O interface",
+            "File format",
+            "Compression tool",
+            "Network protocol"
+        ]
+    },
+    {
+        "q": "io_uring reduces syscall overhead.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match async I/O patterns:",
+        "type": "match",
+        "left": [
+            "Blocking",
+            "Non-blocking",
+            "Async",
+            "Event-driven"
+        ],
+        "right": [
+            "Wait for completion",
+            "Return immediately",
+            "Callback on done",
+            "React to events"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <fcntl.h>\nint main() {\n    FILE *fp = fopen(\"nonblock.txt\", \"w\");\n    fprintf(fp, \"Non-blocking\");\n    fclose(fp);\n    printf(\"Done\");\n    return 0;\n}",
+        "o": [
+            "Done",
+            "Non-blocking",
+            "Error",
+            "nonblock"
+        ]
+    },
+    {
+        "q": "O_NONBLOCK makes operations non-blocking.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is aio_read()?",
+        "type": "mcq",
+        "o": [
+            "Asynchronous read",
+            "Synchronous read",
+            "Delete file",
+            "Create file"
+        ]
+    },
+    {
+        "q": "POSIX AIO provides asynchronous I/O APIs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange asynchronous operation flow:",
+        "type": "rearrange",
+        "words": [
+            "Submit operation",
+            "Continue execution",
+            "Check for completion",
+            "Process result",
+            "Clean up"
+        ]
+    },
+    {
+        "q": "What is scatter-gather I/O?",
+        "type": "mcq",
+        "o": [
+            "Multiple buffer operations",
+            "File compression",
+            "File encryption",
+            "Single buffer read"
+        ]
+    },
+    {
+        "q": "readv()/writev() use multiple buffers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ structure describes buffer vector.",
+        "type": "fill_blank",
+        "answers": [
+            "iovec"
+        ],
+        "other_options": [
+            "buffer",
+            "array",
+            "block"
+        ]
+    },
+    {
+        "q": "What is sendfile() used for?",
+        "type": "mcq",
+        "o": [
+            "Zero-copy file transfer",
+            "Delete file",
+            "Compress file",
+            "Encrypt file"
+        ]
+    },
+    {
+        "q": "sendfile() avoids kernel-user copies.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match zero-copy techniques:",
+        "type": "match",
+        "left": [
+            "sendfile",
+            "splice",
+            "mmap",
+            "copy_file_range"
+        ],
+        "right": [
+            "File to socket",
+            "Pipe efficient transfer",
+            "Direct access",
+            "File to file"
+        ]
+    },
+    {
+        "q": "What is splice() used for?",
+        "type": "mcq",
+        "o": [
+            "Move data between pipe and file",
+            "Create file",
+            "Delete file",
+            "Compress file"
+        ]
+    },
+    {
+        "q": "splice() enables zero-copy between descriptors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"zerocopy.bin\", \"wb\");\n    char data[4096];\n    for(int i = 0; i < 4096; i++) data[i] = 'Z';\n    fwrite(data, 1, 4096, fp);\n    fclose(fp);\n    printf(\"Efficient\");\n    return 0;\n}",
+        "o": [
+            "Efficient",
+            "4096",
+            "Z",
+            "Error"
+        ]
+    },
+    {
+        "q": "Large block transfers are more efficient.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange file transfer optimization:",
+        "type": "rearrange",
+        "words": [
+            "Use large buffers",
+            "Minimize syscalls",
+            "Use zero-copy",
+            "Align to page size",
+            "Use async I/O"
+        ]
+    },
+    {
+        "q": "What is posix_fadvise() used for?",
+        "type": "mcq",
+        "o": [
+            "Advise kernel on access pattern",
+            "Delete file",
+            "Encrypt file",
+            "Compress file"
+        ]
+    },
+    {
+        "q": "fadvise() hints improve I/O performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ hint indicates sequential access.",
+        "type": "fill_blank",
+        "answers": [
+            "POSIX_FADV_SEQUENTIAL"
+        ],
+        "other_options": [
+            "POSIX_FADV_RANDOM",
+            "POSIX_FADV_NORMAL",
+            "POSIX_FADV_NOREUSE"
+        ]
+    },
+    {
+        "q": "What is madvise() used for?",
+        "type": "mcq",
+        "o": [
+            "Advise kernel on memory usage",
+            "Delete memory",
+            "Allocate memory",
+            "Copy memory"
+        ]
+    },
+    {
+        "q": "madvise() improves mmap performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match memory advice hints:",
+        "type": "match",
+        "left": [
+            "MADV_SEQUENTIAL",
+            "MADV_RANDOM",
+            "MADV_DONTNEED",
+            "MADV_WILLNEED"
+        ],
+        "right": [
+            "Sequential access",
+            "Random access",
+            "Not needed soon",
+            "Prefetch data"
+        ]
+    },
+    {
+        "q": "What is extent allocation?",
+        "type": "mcq",
+        "o": [
+            "Contiguous block reservation",
+            "File deletion",
+            "File compression",
+            "File encryption"
+        ]
+    },
+    {
+        "q": "Extents reduce fragmentation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"extent.bin\", \"wb\");\n    char block[1048576];\n    for(int i = 0; i < 1048576; i++) block[i] = 0;\n    fwrite(block, 1, 1048576, fp);\n    fclose(fp);\n    printf(\"1MB allocated\");\n    return 0;\n}",
+        "o": [
+            "1MB allocated",
+            "1048576",
+            "Error",
+            "extent"
+        ]
+    },
+    {
+        "q": "Pre-allocating large files improves performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange file system layers:",
+        "type": "rearrange",
+        "words": [
+            "Application",
+            "C library",
+            "System call",
+            "VFS",
+            "File system",
+            "Block device"
+        ]
+    },
+    {
+        "q": "What is VFS?",
+        "type": "mcq",
+        "o": [
+            "Virtual File System",
+            "Very Fast Storage",
+            "Variable File Size",
+            "Volume File System"
+        ]
+    },
+    {
+        "q": "VFS provides uniform file system interface.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ layer abstracts file systems.",
+        "type": "fill_blank",
+        "answers": [
+            "VFS",
+            "virtual"
+        ],
+        "other_options": [
+            "block",
+            "device",
+            "buffer"
+        ]
+    },
+    {
+        "q": "What is the block layer?",
+        "type": "mcq",
+        "o": [
+            "Manages block device I/O",
+            "Manages network I/O",
+            "Manages memory",
+            "Manages processes"
+        ]
+    },
+    {
+        "q": "Block size affects I/O performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match storage layer characteristics:",
+        "type": "match",
+        "left": [
+            "Block size",
+            "Page size",
+            "Sector size",
+            "Cluster size"
+        ],
+        "right": [
+            "FS allocation unit",
+            "Memory unit",
+            "Physical minimum",
+            "FAT allocation"
+        ]
+    },
+    {
+        "q": "What is journaling in filesystems?",
+        "type": "mcq",
+        "o": [
+            "Logging changes before commit",
+            "Deleting files",
+            "Compressing files",
+            "Encrypting files"
+        ]
+    },
+    {
+        "q": "Journaling prevents filesystem corruption.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"journal.log\", \"a\");\n    fprintf(fp, \"COMMIT: data saved\\n\");\n    fflush(fp);\n    fclose(fp);\n    printf(\"Logged\");\n    return 0;\n}",
+        "o": [
+            "Logged",
+            "COMMIT",
+            "Error",
+            "journal"
+        ]
+    },
+    {
+        "q": "fflush ensures data reaches kernel buffers.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange commit sequence:",
+        "type": "rearrange",
+        "words": [
+            "Write to journal",
+            "Write data",
+            "Commit journal",
+            "Update metadata",
+            "Clear journal"
+        ]
+    },
+    {
+        "q": "What is cow (copy on write) filesystem?",
+        "type": "mcq",
+        "o": [
+            "Never overwrites in place",
+            "Always copies immediately",
+            "Compresses on write",
+            "Encrypts on write"
+        ]
+    },
+    {
+        "q": "CoW filesystems enable instant snapshots.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ filesystem uses CoW by default.",
+        "type": "fill_blank",
+        "answers": [
+            "btrfs",
+            "ZFS"
+        ],
+        "other_options": [
+            "ext4",
+            "NTFS",
+            "FAT"
+        ]
+    },
+    {
+        "q": "What is deduplication?",
+        "type": "mcq",
+        "o": [
+            "Eliminating duplicate data",
+            "Compressing data",
+            "Encrypting data",
+            "Deleting data"
+        ]
+    },
+    {
+        "q": "Deduplication saves storage space.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match storage features:",
+        "type": "match",
+        "left": [
+            "Deduplication",
+            "Compression",
+            "Encryption",
+            "RAID"
+        ],
+        "right": [
+            "Remove duplicates",
+            "Reduce size",
+            "Protect content",
+            "Redundancy"
+        ]
+    },
+    {
+        "q": "What is RAID used for?",
+        "type": "mcq",
+        "o": [
+            "Redundant data storage",
+            "File compression",
+            "File encryption",
+            "File deletion"
+        ]
+    },
+    {
+        "q": "RAID provides fault tolerance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"raid.dat\", \"wb\");\n    char data[] = \"Redundant\";\n    fwrite(data, 1, 9, fp);\n    fclose(fp);\n    printf(\"Protected\");\n    return 0;\n}",
+        "o": [
+            "Protected",
+            "Redundant",
+            "Error",
+            "raid"
+        ]
+    },
+    {
+        "q": "Software RAID operates at OS level.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange RAID levels by protection:",
+        "type": "rearrange",
+        "words": [
+            "RAID 0 (none)",
+            "RAID 1 (mirror)",
+            "RAID 5 (parity)",
+            "RAID 6 (double parity)",
+            "RAID 10 (mirror+stripe)"
+        ]
+    },
+    {
+        "q": "What is network file system?",
+        "type": "mcq",
+        "o": [
+            "Access remote files as local",
+            "Compress files",
+            "Encrypt files",
+            "Delete files"
+        ]
+    },
+    {
+        "q": "NFS allows transparent network file access.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ protocol allows mounting remote directories.",
+        "type": "fill_blank",
+        "answers": [
+            "NFS",
+            "SMB/CIFS"
+        ],
+        "other_options": [
+            "HTTP",
+            "FTP",
+            "SSH"
+        ]
+    },
+    {
+        "q": "What is FUSE?",
+        "type": "mcq",
+        "o": [
+            "Filesystem in userspace",
+            "Fast Unix Storage Engine",
+            "File Update Service",
+            "Format Unified System"
+        ]
+    },
+    {
+        "q": "FUSE allows custom filesystems without kernel code.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match filesystem types:",
+        "type": "match",
+        "left": [
+            "ext4",
+            "XFS",
+            "btrfs",
+            "NTFS"
+        ],
+        "right": [
+            "Linux default",
+            "High performance",
+            "Copy on write",
+            "Windows native"
+        ]
+    },
+    {
+        "q": "What is FAT filesystem known for?",
+        "type": "mcq",
+        "o": [
+            "Wide compatibility",
+            "Strong security",
+            "Large file support",
+            "Journaling"
+        ]
+    },
+    {
+        "q": "FAT32 has 4GB file size limit.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"compat.txt\", \"w\");\n    fprintf(fp, \"Cross-platform\");\n    fclose(fp);\n    printf(\"Written\");\n    return 0;\n}",
+        "o": [
+            "Written",
+            "Cross-platform",
+            "Error",
+            "compat"
+        ]
+    },
+    {
+        "q": "Text mode handles line endings differently per OS.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange filesystem evolution:",
+        "type": "rearrange",
+        "words": [
+            "FAT",
+            "NTFS/ext2",
+            "ext3/HFS+",
+            "ext4/APFS",
+            "btrfs/ZFS"
+        ]
+    },
+    {
+        "q": "What is inode limit?",
+        "type": "mcq",
+        "o": [
+            "Maximum number of files",
+            "Maximum file size",
+            "Maximum path length",
+            "Maximum block size"
+        ]
+    },
+    {
+        "q": "Running out of inodes prevents file creation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ stores file metadata on Unix.",
+        "type": "fill_blank",
+        "answers": [
+            "inode"
+        ],
+        "other_options": [
+            "block",
+            "sector",
+            "cluster"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"pathlen.txt\", \"w\");\n    fprintf(fp, \"/very/long/path/name\");\n    fclose(fp);\n    printf(\"Path stored\");\n    return 0;\n}",
+        "o": [
+            "Path stored",
+            "/very/long",
+            "Error",
+            "pathlen"
+        ]
+    },
+    {
+        "q": "PATH_MAX limits maximum path length.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match filesystem limits:",
+        "type": "match",
+        "left": [
+            "NAME_MAX",
+            "PATH_MAX",
+            "OPEN_MAX",
+            "LINK_MAX"
+        ],
+        "right": [
+            "Filename length",
+            "Full path length",
+            "Open files count",
+            "Hard link count"
+        ]
+    },
+    {
+        "q": "What is getrlimit() used for?",
+        "type": "mcq",
+        "o": [
+            "Get resource limits",
+            "Get file size",
+            "Get file type",
+            "Get file owner"
+        ]
+    },
+    {
+        "q": "RLIMIT_NOFILE limits open file descriptors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"resource.txt\", \"w\");\n    fprintf(fp, \"Limited resource\");\n    fclose(fp);\n    printf(\"Created\");\n    return 0;\n}",
+        "o": [
+            "Created",
+            "Limited resource",
+            "Error",
+            "resource"
+        ]
+    },
+    {
+        "q": "setrlimit() modifies process limits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange resource limit categories:",
+        "type": "rearrange",
+        "words": [
+            "CPU time",
+            "Memory",
+            "Open files",
+            "Processes",
+            "File size"
+        ]
+    },
+    {
+        "q": "What is ulimit command used for?",
+        "type": "mcq",
+        "o": [
+            "Set shell resource limits",
+            "Delete files",
+            "Compress files",
+            "Encrypt files"
+        ]
+    },
+    {
+        "q": "ulimit can increase descriptor limits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ limit affects file size.",
+        "type": "fill_blank",
+        "answers": [
+            "RLIMIT_FSIZE"
+        ],
+        "other_options": [
+            "RLIMIT_NOFILE",
+            "RLIMIT_DATA",
+            "RLIMIT_STACK"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"stream.txt\", \"w\");\n    setvbuf(fp, NULL, _IONBF, 0);\n    fprintf(fp, \"Unbuffered\");\n    fclose(fp);\n    printf(\"Written\");\n    return 0;\n}",
+        "o": [
+            "Written",
+            "Unbuffered",
+            "Error",
+            "stream"
+        ]
+    },
+    {
+        "q": "Unbuffered I/O writes immediately.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match buffering modes:",
+        "type": "match",
+        "left": [
+            "_IONBF",
+            "_IOLBF",
+            "_IOFBF"
+        ],
+        "right": [
+            "No buffering",
+            "Line buffering",
+            "Full buffering"
+        ]
+    },
+    {
+        "q": "What is BUFSIZ used for?",
+        "type": "mcq",
+        "o": [
+            "Default buffer size",
+            "Maximum file size",
+            "Maximum path",
+            "Maximum name"
+        ]
+    },
+    {
+        "q": "BUFSIZ is defined in stdio.h.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"bufsiz.txt\", \"w\");\n    char buf[BUFSIZ];\n    setvbuf(fp, buf, _IOFBF, BUFSIZ);\n    fprintf(fp, \"Buffered\");\n    fclose(fp);\n    printf(\"Done\");\n    return 0;\n}",
+        "o": [
+            "Done",
+            "Buffered",
+            "Error",
+            "BUFSIZ"
+        ]
+    },
+    {
+        "q": "Custom buffers can improve performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange buffer sizes by typical value:",
+        "type": "rearrange",
+        "words": [
+            "512 bytes",
+            "4KB",
+            "64KB",
+            "1MB"
+        ]
+    },
+    {
+        "q": "What is the purpose of FILE structure?",
+        "type": "mcq",
+        "o": [
+            "Manage stream state",
+            "Store file data",
+            "Encrypt files",
+            "Compress files"
+        ]
+    },
+    {
+        "q": "FILE is opaque structure in C.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ pointer tracks stream state.",
+        "type": "fill_blank",
+        "answers": [
+            "FILE"
+        ],
+        "other_options": [
+            "int",
+            "char",
+            "void"
+        ]
+    },
+    {
+        "q": "What is file handle leak?",
+        "type": "mcq",
+        "o": [
+            "Not closing opened files",
+            "Corrupting file data",
+            "Deleting wrong file",
+            "Compressing file"
+        ]
+    },
+    {
+        "q": "Handle leaks exhaust file descriptors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match file handling issues:",
+        "type": "match",
+        "left": [
+            "Handle leak",
+            "Race condition",
+            "Data corruption",
+            "Deadlock"
+        ],
+        "right": [
+            "Forgot fclose",
+            "Concurrent access",
+            "Partial write",
+            "Lock cycle"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    for(int i = 0; i < 5; i++) {\n        FILE *fp = fopen(\"leak.txt\", \"w\");\n        fprintf(fp, \"%d\", i);\n        fclose(fp);\n    }\n    printf(\"No leak\");\n    return 0;\n}",
+        "o": [
+            "No leak",
+            "5",
+            "Error",
+            "leak"
+        ]
+    },
+    {
+        "q": "Proper fclose prevents descriptor leaks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is TOCTTOU vulnerability?",
+        "type": "mcq",
+        "o": [
+            "Time of check to time of use",
+            "File corruption",
+            "Handle leak",
+            "Buffer overflow"
+        ]
+    },
+    {
+        "q": "TOCTTOU can cause security issues.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange race condition prevention:",
+        "type": "rearrange",
+        "words": [
+            "Use atomic operations",
+            "Lock resources",
+            "Minimize window",
+            "Check and use atomically"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"atomic.txt\", \"w\");\n    fprintf(fp, \"Safe write\");\n    fclose(fp);\n    printf(\"Atomic\");\n    return 0;\n}",
+        "o": [
+            "Atomic",
+            "Safe write",
+            "Error",
+            "atomic"
+        ]
+    },
+    {
+        "q": "O_EXCL flag prevents race in file creation.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ flag creates file exclusively.",
+        "type": "fill_blank",
+        "answers": [
+            "O_EXCL",
+            "O_CREAT"
+        ],
+        "other_options": [
+            "O_RDONLY",
+            "O_WRONLY",
+            "O_APPEND"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"final.txt\", \"w\");\n    fprintf(fp, \"Complete file handling quiz!\");\n    fclose(fp);\n    printf(\"Done\");\n    return 0;\n}",
+        "o": [
+            "Done",
+            "Complete",
+            "Error",
+            "final"
+        ]
+    },
+    {
+        "q": "Proper file handling requires open-use-close pattern.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match file best practices:",
+        "type": "match",
+        "left": [
+            "Check return",
+            "Close files",
+            "Use binary mode",
+            "Handle errors"
+        ],
+        "right": [
+            "Detect failures",
+            "Free resources",
+            "Preserve data",
+            "Report problems"
+        ]
+    },
+    {
+        "q": "What is resource acquisition is initialization (RAII)?",
+        "type": "mcq",
+        "o": [
+            "Cleanup on scope exit",
+            "File compression",
+            "File encryption",
+            "File deletion"
+        ]
+    },
+    {
+        "q": "RAII pattern ensures cleanup in C++.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange cleanup pattern in C:",
+        "type": "rearrange",
+        "words": [
+            "Acquire resource",
+            "Check success",
+            "Use resource",
+            "Handle errors",
+            "Release resource"
+        ]
+    },
+    {
+        "q": "What is defensive file programming?",
+        "type": "mcq",
+        "o": [
+            "Anticipating and handling failures",
+            "Using encryption",
+            "Using compression",
+            "Using backup"
+        ]
+    },
+    {
+        "q": "Defensive programming checks all operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ approach validates all inputs and outputs.",
+        "type": "fill_blank",
+        "answers": [
+            "defensive"
+        ],
+        "other_options": [
+            "offensive",
+            "passive",
+            "active"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"check.txt\", \"w\");\n    if(!fp) return 1;\n    if(fprintf(fp, \"Safe\") < 0) { fclose(fp); return 1; }\n    if(fclose(fp) != 0) return 1;\n    printf(\"All checked\");\n    return 0;\n}",
+        "o": [
+            "All checked",
+            "Safe",
+            "Error",
+            "1"
+        ]
+    },
+    {
+        "q": "Checking fclose return detects deferred errors.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match robust file patterns:",
+        "type": "match",
+        "left": [
+            "Check open",
+            "Check write",
+            "Check close",
+            "Use temp file"
+        ],
+        "right": [
+            "Verify access",
+            "Verify data written",
+            "Verify flush",
+            "Atomic update"
+        ]
+    },
+    {
+        "q": "What is graceful degradation?",
+        "type": "mcq",
+        "o": [
+            "Continue with reduced functionality",
+            "Stop immediately",
+            "Retry forever",
+            "Ignore errors"
+        ]
+    },
+    {
+        "q": "Good programs handle file errors gracefully.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange error handling priorities:",
+        "type": "rearrange",
+        "words": [
+            "Detect error",
+            "Log error",
+            "Attempt recovery",
+            "Notify user",
+            "Degrade gracefully"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = tmpfile();\n    fprintf(fp, \"Temporary\");\n    rewind(fp);\n    char buf[20];\n    fgets(buf, 20, fp);\n    printf(\"%s\", buf);\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "Temporary",
+            "NULL",
+            "Error",
+            "tmpfile"
+        ]
+    },
+    {
+        "q": "tmpfile() creates an auto-deleted temporary file.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ function creates unique temporary filename.",
+        "type": "fill_blank",
+        "answers": [
+            "tmpnam",
+            "mktemp"
+        ],
+        "other_options": [
+            "fopen",
+            "freopen",
+            "tmpfile"
+        ]
+    },
+    {
+        "q": "What is mkstemp() used for?",
+        "type": "mcq",
+        "o": [
+            "Create secure temp file with descriptor",
+            "Delete file",
+            "Compress file",
+            "Encrypt file"
+        ]
+    },
+    {
+        "q": "mkstemp() is safer than tmpnam().",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match temporary file functions:",
+        "type": "match",
+        "left": [
+            "tmpfile",
+            "tmpnam",
+            "mkstemp",
+            "mkdtemp"
+        ],
+        "right": [
+            "Anonymous temp file",
+            "Temp filename only",
+            "Secure temp file",
+            "Temp directory"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"secure.txt\", \"w\");\n    fprintf(fp, \"Private data\");\n    fclose(fp);\n    printf(\"Secured\");\n    return 0;\n}",
+        "o": [
+            "Secured",
+            "Private data",
+            "Error",
+            "secure"
+        ]
+    },
+    {
+        "q": "File permissions protect sensitive data.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is secure file handling?",
+        "type": "mcq",
+        "o": [
+            "Preventing unauthorized access",
+            "Fastest access",
+            "Compressed access",
+            "Network access"
+        ]
+    },
+    {
+        "q": "Race conditions can create security vulnerabilities.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange secure file creation:",
+        "type": "rearrange",
+        "words": [
+            "Set restrictive umask",
+            "Create file",
+            "Write data",
+            "Set permissions",
+            "Close file"
+        ]
+    },
+    {
+        "q": "What is path traversal vulnerability?",
+        "type": "mcq",
+        "o": [
+            "Accessing files outside intended directory",
+            "Reading too fast",
+            "Writing too slow",
+            "Network timeout"
+        ]
+    },
+    {
+        "q": "Input validation prevents path traversal attacks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ sequence allows directory traversal.",
+        "type": "fill_blank",
+        "answers": [
+            "../",
+            "..\\"
+        ],
+        "other_options": [
+            "./",
+            "/",
+            "~"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"sanitized.txt\", \"w\");\n    fprintf(fp, \"Clean input\");\n    fclose(fp);\n    printf(\"Sanitized\");\n    return 0;\n}",
+        "o": [
+            "Sanitized",
+            "Clean input",
+            "Error",
+            "sanitized"
+        ]
+    },
+    {
+        "q": "Canonicalizing paths helps prevent attacks.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match security best practices:",
+        "type": "match",
+        "left": [
+            "Validate input",
+            "Sanitize paths",
+            "Use least privilege",
+            "Check permissions"
+        ],
+        "right": [
+            "Reject bad data",
+            "Canonicalize paths",
+            "Minimal access rights",
+            "Verify authorization"
+        ]
+    },
+    {
+        "q": "What is privilege escalation?",
+        "type": "mcq",
+        "o": [
+            "Gaining higher permissions",
+            "Faster file access",
+            "Bigger file size",
+            "More network bandwidth"
+        ]
+    },
+    {
+        "q": "Drop privileges after file operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"config.ini\", \"r\");\n    if(!fp) {\n        printf(\"Not found\");\n        return 1;\n    }\n    char line[256];\n    while(fgets(line, 256, fp)) {\n        printf(\"%s\", line);\n    }\n    fclose(fp);\n    return 0;\n}",
+        "o": [
+            "File content or Not found",
+            "Error always",
+            "config only",
+            "Empty output"
+        ]
+    },
+    {
+        "q": "Config files often store application settings.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange configuration file handling:",
+        "type": "rearrange",
+        "words": [
+            "Check existence",
+            "Open file",
+            "Parse content",
+            "Apply settings",
+            "Close file"
+        ]
+    },
+    {
+        "q": "What is INI file format?",
+        "type": "mcq",
+        "o": [
+            "Section/key-value configuration",
+            "Binary format",
+            "Compressed archive",
+            "Encrypted storage"
+        ]
+    },
+    {
+        "q": "JSON is a common configuration format.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ format uses sections and key=value pairs.",
+        "type": "fill_blank",
+        "answers": [
+            "INI"
+        ],
+        "other_options": [
+            "JSON",
+            "XML",
+            "YAML"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *log = fopen(\"app.log\", \"a\");\n    fprintf(log, \"[INFO] Application started\\n\");\n    fflush(log);\n    fclose(log);\n    printf(\"Logged\");\n    return 0;\n}",
+        "o": [
+            "Logged",
+            "[INFO]",
+            "Error",
+            "app"
+        ]
+    },
+    {
+        "q": "Log files track application behavior.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match log levels:",
+        "type": "match",
+        "left": [
+            "DEBUG",
+            "INFO",
+            "WARN",
+            "ERROR"
+        ],
+        "right": [
+            "Detailed debugging",
+            "Normal operations",
+            "Potential issues",
+            "Failure occurred"
+        ]
+    },
+    {
+        "q": "What is log rotation?",
+        "type": "mcq",
+        "o": [
+            "Archiving old logs, starting new ones",
+            "Encrypting logs",
+            "Compressing logs",
+            "Deleting logs"
+        ]
+    },
+    {
+        "q": "Log rotation prevents disk exhaustion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\n#include <time.h>\nint main() {\n    FILE *log = fopen(\"timed.log\", \"a\");\n    time_t now = time(NULL);\n    fprintf(log, \"[%ld] Event\\n\", now);\n    fclose(log);\n    printf(\"Timestamped\");\n    return 0;\n}",
+        "o": [
+            "Timestamped",
+            "[0]",
+            "Error",
+            "timed"
+        ]
+    },
+    {
+        "q": "Timestamps help correlate log events.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange log entry components:",
+        "type": "rearrange",
+        "words": [
+            "Timestamp",
+            "Log level",
+            "Source",
+            "Message",
+            "Context"
+        ]
+    },
+    {
+        "q": "What is structured logging?",
+        "type": "mcq",
+        "o": [
+            "Machine-parseable log format",
+            "Compressed logs",
+            "Encrypted logs",
+            "Deleted logs"
+        ]
+    },
+    {
+        "q": "JSON logs are easier to parse programmatically.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ logging format enables easy searching.",
+        "type": "fill_blank",
+        "answers": [
+            "structured",
+            "JSON"
+        ],
+        "other_options": [
+            "plain",
+            "binary",
+            "compressed"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *db = fopen(\"records.db\", \"wb+\");\n    int record = 42;\n    fwrite(&record, sizeof(int), 1, db);\n    fclose(db);\n    printf(\"Stored\");\n    return 0;\n}",
+        "o": [
+            "Stored",
+            "42",
+            "Error",
+            "records"
+        ]
+    },
+    {
+        "q": "Binary files store raw data efficiently.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match data storage patterns:",
+        "type": "match",
+        "left": [
+            "Key-value",
+            "Document",
+            "Relational",
+            "Graph"
+        ],
+        "right": [
+            "Simple lookup",
+            "JSON-like storage",
+            "Tables and rows",
+            "Nodes and edges"
+        ]
+    },
+    {
+        "q": "What is CRUD in file operations?",
+        "type": "mcq",
+        "o": [
+            "Create/Read/Update/Delete",
+            "Compress/Restore/Undo/Debug",
+            "Close/Read/Upload/Download",
+            "Copy/Rename/Unlink/Duplicate"
+        ]
+    },
+    {
+        "q": "CRUD describes basic data operations.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"state.dat\", \"wb\");\n    int state[] = {1, 2, 3, 4, 5};\n    fwrite(state, sizeof(int), 5, fp);\n    fclose(fp);\n    printf(\"State saved\");\n    return 0;\n}",
+        "o": [
+            "State saved",
+            "5",
+            "Error",
+            "state"
+        ]
+    },
+    {
+        "q": "State persistence stores program data across runs.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange serialization steps:",
+        "type": "rearrange",
+        "words": [
+            "Marshal data",
+            "Open file",
+            "Write bytes",
+            "Close file",
+            "Verify integrity"
+        ]
+    },
+    {
+        "q": "What is deserialization?",
+        "type": "mcq",
+        "o": [
+            "Converting bytes to objects",
+            "Compressing data",
+            "Encrypting data",
+            "Deleting data"
+        ]
+    },
+    {
+        "q": "Deserialize must handle corrupted data safely.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ process converts objects to bytes.",
+        "type": "fill_blank",
+        "answers": [
+            "serialization",
+            "marshalling"
+        ],
+        "other_options": [
+            "compression",
+            "encryption",
+            "hashing"
+        ]
+    },
+    {
+        "q": "What is file-based database?",
+        "type": "mcq",
+        "o": [
+            "Database stored in files",
+            "Database stored in memory",
+            "Database stored on network",
+            "Database stored in cloud"
+        ]
+    },
+    {
+        "q": "SQLite is a popular file-based database.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match database types:",
+        "type": "match",
+        "left": [
+            "SQLite",
+            "Berkeley DB",
+            "LevelDB",
+            "LMDB"
+        ],
+        "right": [
+            "SQL embedded",
+            "Key-value storage",
+            "Google key-value",
+            "Memory-mapped KV"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"transactions.log\", \"a\");\n    fprintf(fp, \"BEGIN\\n\");\n    fprintf(fp, \"INSERT 42\\n\");\n    fprintf(fp, \"COMMIT\\n\");\n    fflush(fp);\n    fclose(fp);\n    printf(\"Transaction logged\");\n    return 0;\n}",
+        "o": [
+            "Transaction logged",
+            "BEGIN",
+            "Error",
+            "42"
+        ]
+    },
+    {
+        "q": "Transaction logs enable recovery after crashes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is ACID in database context?",
+        "type": "mcq",
+        "o": [
+            "Atomicity/Consistency/Isolation/Durability",
+            "Add/Change/Insert/Delete",
+            "Append/Copy/Index/Drop",
+            "Access/Compress/Inline/Decrypt"
+        ]
+    },
+    {
+        "q": "Durability requires data to survive crashes.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange transaction steps:",
+        "type": "rearrange",
+        "words": [
+            "BEGIN transaction",
+            "Perform operations",
+            "Log changes",
+            "COMMIT or ROLLBACK",
+            "Release locks"
+        ]
+    },
+    {
+        "q": "What is write-ahead logging (WAL)?",
+        "type": "mcq",
+        "o": [
+            "Log changes before applying",
+            "Log changes after applying",
+            "Log changes during applying",
+            "Never log changes"
+        ]
+    },
+    {
+        "q": "WAL enables atomic commits.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ technique logs before modifying data.",
+        "type": "fill_blank",
+        "answers": [
+            "WAL",
+            "write-ahead logging"
+        ],
+        "other_options": [
+            "lazy-write",
+            "sync-write",
+            "batch-write"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"bitmap.bmp\", \"wb\");\n    unsigned char header[54] = {0x42, 0x4D};\n    fwrite(header, 1, 54, fp);\n    fclose(fp);\n    printf(\"BMP header written\");\n    return 0;\n}",
+        "o": [
+            "BMP header written",
+            "54",
+            "Error",
+            "bitmap"
+        ]
+    },
+    {
+        "q": "Binary format headers identify file types.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match binary formats:",
+        "type": "match",
+        "left": [
+            "BMP",
+            "PNG",
+            "ZIP",
+            "PDF"
+        ],
+        "right": [
+            "0x42 0x4D",
+            "0x89 PNG",
+            "0x50 0x4B",
+            "%PDF"
+        ]
+    },
+    {
+        "q": "What is big endian vs little endian?",
+        "type": "mcq",
+        "o": [
+            "Byte order in multi-byte values",
+            "File size difference",
+            "Compression ratio",
+            "Encryption strength"
+        ]
+    },
+    {
+        "q": "Network byte order is big endian.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    FILE *fp = fopen(\"endian.bin\", \"wb\");\n    unsigned int x = 0x01020304;\n    fwrite(&x, sizeof(unsigned int), 1, fp);\n    fclose(fp);\n    printf(\"Written\");\n    return 0;\n}",
+        "o": [
+            "Written",
+            "16909060",
+            "Error",
+            "endian"
+        ]
+    },
+    {
+        "q": "Endianness affects binary file portability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange cross-platform considerations:",
+        "type": "rearrange",
+        "words": [
+            "Handle endianness",
+            "Use fixed-size types",
+            "Align structures",
+            "Document format",
+            "Test on platforms"
+        ]
+    },
+    {
+        "q": "What is memory-mapped database?",
+        "type": "mcq",
+        "o": [
+            "Database using mmap for access",
+            "Database in RAM only",
+            "Compressed database",
+            "Encrypted database"
+        ]
+    },
+    {
+        "q": "LMDB uses memory-mapping for performance.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ type ensures consistent size across platforms.",
+        "type": "fill_blank",
+        "answers": [
+            "int32_t",
+            "uint64_t"
+        ],
+        "other_options": [
+            "int",
+            "long",
+            "size_t"
+        ]
+    },
+    {
+        "q": "What is file format documentation?",
+        "type": "mcq",
+        "o": [
+            "Specification of file structure",
+            "Compressed file",
+            "Encrypted file",
+            "Deleted file"
+        ]
+    },
+    {
+        "q": "Good documentation enables interoperability.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Match documentation elements:",
+        "type": "match",
+        "left": [
+            "Header spec",
+            "Data layout",
+            "Version history",
+            "Examples"
+        ],
+        "right": [
+            "Format identification",
+            "Field definitions",
+            "Change log",
+            "Sample files"
+        ]
+    },
+    {
+        "q": "What is the output of this code?",
+        "type": "mcq",
+        "c": "#include <stdio.h>\nint main() {\n    printf(\"File I/O mastery complete!\");\n    return 0;\n}",
+        "o": [
+            "File I/O mastery complete!",
+            "Error",
+            "NULL",
+            "0"
+        ]
+    },
+    {
+        "q": "Mastering file I/O requires practice.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "Arrange learning progression:",
+        "type": "rearrange",
+        "words": [
+            "Basic open/close",
+            "Read/write text",
+            "Binary I/O",
+            "Random access",
+            "Advanced topics"
+        ]
+    },
+    {
+        "q": "What is file descriptor exhaustion?",
+        "type": "mcq",
+        "o": [
+            "Running out of available descriptors",
+            "File too large",
+            "Disk full",
+            "Network error"
+        ]
+    },
+    {
+        "q": "Closing unused files prevents descriptor exhaustion.",
+        "type": "true_false",
+        "correct": "True"
+    },
+    {
+        "q": "The ______ limit defines maximum open files.",
+        "type": "fill_blank",
+        "answers": [
+            "RLIMIT_NOFILE",
+            "ulimit"
+        ],
+        "other_options": [
+            "RLIMIT_DATA",
+            "RLIMIT_CPU",
+            "RLIMIT_STACK"
+        ]
+    },
+    {
+        "q": "What causes EMFILE error?",
+        "type": "mcq",
+        "o": [
+            "Too many open files",
+            "File not found",
+            "Permission denied",
+            "Disk full"
+        ]
+    },
+    {
+        "q": "File operations are fundamental to C programming.",
+        "type": "true_false",
+        "correct": "True"
+    }
+]
