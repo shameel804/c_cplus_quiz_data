@@ -1,0 +1,1638 @@
+[
+  {
+    "word": "CLASS",
+    "hint": "Blueprint for creating objects"
+  },
+  {
+    "word": "OBJECT",
+    "hint": "Base type for all types"
+  },
+  {
+    "word": "STRUCT",
+    "hint": "Value type composite data structure"
+  },
+  {
+    "word": "INTERFACE",
+    "hint": "Contract defining member signatures"
+  },
+  {
+    "word": "ENUM",
+    "hint": "Named set of integer constants"
+  },
+  {
+    "word": "DELEGATE",
+    "hint": "Type-safe function pointer"
+  },
+  {
+    "word": "EVENT",
+    "hint": "Publisher-subscriber notification mechanism"
+  },
+  {
+    "word": "NAMESPACE",
+    "hint": "Scope for organizing types"
+  },
+  {
+    "word": "USING",
+    "hint": "Imports namespace or disposes resource"
+  },
+  {
+    "word": "PUBLIC",
+    "hint": "Access modifier for open members"
+  },
+  {
+    "word": "PRIVATE",
+    "hint": "Access restricted to containing type"
+  },
+  {
+    "word": "PROTECTED",
+    "hint": "Access for class and derived types"
+  },
+  {
+    "word": "INTERNAL",
+    "hint": "Access limited to same assembly"
+  },
+  {
+    "word": "SEALED",
+    "hint": "Prevents class from being inherited"
+  },
+  {
+    "word": "ABSTRACT",
+    "hint": "Must be implemented by derived class"
+  },
+  {
+    "word": "VIRTUAL",
+    "hint": "Allows method override in subclass"
+  },
+  {
+    "word": "OVERRIDE",
+    "hint": "Replaces virtual base member"
+  },
+  {
+    "word": "STATIC",
+    "hint": "Belongs to the type not instance"
+  },
+  {
+    "word": "READONLY",
+    "hint": "Field assignable only at declaration"
+  },
+  {
+    "word": "CONST",
+    "hint": "Compile-time constant value"
+  },
+  {
+    "word": "VOLATILE",
+    "hint": "Field may change unexpectedly"
+  },
+  {
+    "word": "EXTERN",
+    "hint": "Method implemented externally"
+  },
+  {
+    "word": "PARTIAL",
+    "hint": "Splits type across multiple files"
+  },
+  {
+    "word": "ASYNC",
+    "hint": "Marks method as asynchronous"
+  },
+  {
+    "word": "AWAIT",
+    "hint": "Suspends until task completes"
+  },
+  {
+    "word": "TASK",
+    "hint": "Represents an asynchronous operation"
+  },
+  {
+    "word": "VOID",
+    "hint": "Represents no return value"
+  },
+  {
+    "word": "BOOL",
+    "hint": "Boolean true or false type"
+  },
+  {
+    "word": "BYTE",
+    "hint": "Unsigned eight-bit integer"
+  },
+  {
+    "word": "SBYTE",
+    "hint": "Signed eight-bit integer"
+  },
+  {
+    "word": "CHAR",
+    "hint": "Unicode character type"
+  },
+  {
+    "word": "SHORT",
+    "hint": "Sixteen-bit signed integer"
+  },
+  {
+    "word": "USHORT",
+    "hint": "Sixteen-bit unsigned integer"
+  },
+  {
+    "word": "LONG",
+    "hint": "Sixty-four-bit signed integer"
+  },
+  {
+    "word": "ULONG",
+    "hint": "Sixty-four-bit unsigned integer"
+  },
+  {
+    "word": "FLOAT",
+    "hint": "Single precision floating point"
+  },
+  {
+    "word": "DOUBLE",
+    "hint": "Double precision floating point"
+  },
+  {
+    "word": "DECIMAL",
+    "hint": "High precision financial type"
+  },
+  {
+    "word": "STRING",
+    "hint": "Immutable character sequence type"
+  },
+  {
+    "word": "DYNAMIC",
+    "hint": "Type resolved at runtime"
+  },
+  {
+    "word": "NULLABLE",
+    "hint": "Value type that can be null"
+  },
+  {
+    "word": "NINT",
+    "hint": "Native sized signed integer"
+  },
+  {
+    "word": "NUINT",
+    "hint": "Native sized unsigned integer"
+  },
+  {
+    "word": "RECORD",
+    "hint": "Immutable reference type with equality"
+  },
+  {
+    "word": "TUPLE",
+    "hint": "Lightweight multiple value container"
+  },
+  {
+    "word": "SPAN",
+    "hint": "Memory-safe contiguous data view"
+  },
+  {
+    "word": "RETURN",
+    "hint": "Exits method with optional value"
+  },
+  {
+    "word": "SWITCH",
+    "hint": "Multi-way branching statement"
+  },
+  {
+    "word": "CASE",
+    "hint": "Label inside a switch block"
+  },
+  {
+    "word": "DEFAULT",
+    "hint": "Fallback switch label or value"
+  },
+  {
+    "word": "BREAK",
+    "hint": "Exits loop or switch immediately"
+  },
+  {
+    "word": "CONTINUE",
+    "hint": "Skips to next loop iteration"
+  },
+  {
+    "word": "GOTO",
+    "hint": "Unconditional jump to a label"
+  },
+  {
+    "word": "WHILE",
+    "hint": "Loop with pre-checked condition"
+  },
+  {
+    "word": "FOREACH",
+    "hint": "Iterates over collection elements"
+  },
+  {
+    "word": "ELSE",
+    "hint": "Alternative branch in conditional"
+  },
+  {
+    "word": "THROW",
+    "hint": "Raises an exception object"
+  },
+  {
+    "word": "CATCH",
+    "hint": "Handles a thrown exception"
+  },
+  {
+    "word": "FINALLY",
+    "hint": "Block that always executes"
+  },
+  {
+    "word": "WHEN",
+    "hint": "Exception filter condition"
+  },
+  {
+    "word": "TYPEOF",
+    "hint": "Gets System.Type of a type"
+  },
+  {
+    "word": "SIZEOF",
+    "hint": "Returns size of unmanaged type"
+  },
+  {
+    "word": "NAMEOF",
+    "hint": "Returns name of symbol as string"
+  },
+  {
+    "word": "CHECKED",
+    "hint": "Enables overflow checking"
+  },
+  {
+    "word": "UNCHECKED",
+    "hint": "Disables overflow checking"
+  },
+  {
+    "word": "STACKALLOC",
+    "hint": "Allocates memory on the stack"
+  },
+  {
+    "word": "FIXED",
+    "hint": "Pins pointer in managed memory"
+  },
+  {
+    "word": "UNSAFE",
+    "hint": "Allows pointer operations in code"
+  },
+  {
+    "word": "LOCK",
+    "hint": "Mutual exclusion synchronization"
+  },
+  {
+    "word": "YIELD",
+    "hint": "Produces value from iterator"
+  },
+  {
+    "word": "PROPERTY",
+    "hint": "Encapsulated field with accessors"
+  },
+  {
+    "word": "INDEXER",
+    "hint": "Allows array-like access on objects"
+  },
+  {
+    "word": "GETTER",
+    "hint": "Property read accessor"
+  },
+  {
+    "word": "SETTER",
+    "hint": "Property write accessor"
+  },
+  {
+    "word": "INIT",
+    "hint": "Init-only property setter"
+  },
+  {
+    "word": "REQUIRED",
+    "hint": "Property must be set at creation"
+  },
+  {
+    "word": "GENERIC",
+    "hint": "Type parameterized construct"
+  },
+  {
+    "word": "WHERE",
+    "hint": "Generic type constraint clause"
+  },
+  {
+    "word": "COVARIANT",
+    "hint": "Output type parameter variance"
+  },
+  {
+    "word": "LAMBDA",
+    "hint": "Anonymous inline function expression"
+  },
+  {
+    "word": "ACTION",
+    "hint": "Delegate returning void"
+  },
+  {
+    "word": "FUNC",
+    "hint": "Delegate with return value"
+  },
+  {
+    "word": "PREDICATE",
+    "hint": "Delegate returning boolean"
+  },
+  {
+    "word": "CLOSURE",
+    "hint": "Lambda capturing outer variables"
+  },
+  {
+    "word": "LINQ",
+    "hint": "Language integrated query syntax"
+  },
+  {
+    "word": "SELECT",
+    "hint": "Projects elements into new form"
+  },
+  {
+    "word": "ORDERBY",
+    "hint": "Sorts query results"
+  },
+  {
+    "word": "GROUPBY",
+    "hint": "Groups elements by key"
+  },
+  {
+    "word": "JOIN",
+    "hint": "Correlates two data sources"
+  },
+  {
+    "word": "AGGREGATE",
+    "hint": "Applies accumulator over sequence"
+  },
+  {
+    "word": "DISTINCT",
+    "hint": "Returns unique elements only"
+  },
+  {
+    "word": "SKIP",
+    "hint": "Bypasses specified number of items"
+  },
+  {
+    "word": "TAKE",
+    "hint": "Returns specified number of items"
+  },
+  {
+    "word": "FIRST",
+    "hint": "Returns first matching element"
+  },
+  {
+    "word": "LAST",
+    "hint": "Returns last matching element"
+  },
+  {
+    "word": "SINGLE",
+    "hint": "Returns only matching element"
+  },
+  {
+    "word": "COUNT",
+    "hint": "Returns number of elements"
+  },
+  {
+    "word": "CONCAT",
+    "hint": "Joins two sequences together"
+  },
+  {
+    "word": "EXCEPT",
+    "hint": "Set difference of two sequences"
+  },
+  {
+    "word": "INTERSECT",
+    "hint": "Common elements of two sequences"
+  },
+  {
+    "word": "CONTAINS",
+    "hint": "Checks if sequence has element"
+  },
+  {
+    "word": "RANGE",
+    "hint": "Generates sequence of integers"
+  },
+  {
+    "word": "REPEAT",
+    "hint": "Generates repeated value sequence"
+  },
+  {
+    "word": "EMPTY",
+    "hint": "Returns empty typed sequence"
+  },
+  {
+    "word": "TOLIST",
+    "hint": "Converts sequence to List"
+  },
+  {
+    "word": "TOARRAY",
+    "hint": "Converts sequence to array"
+  },
+  {
+    "word": "TODICTION",
+    "hint": "Converts sequence to Dictionary"
+  },
+  {
+    "word": "CAST",
+    "hint": "Converts elements to specified type"
+  },
+  {
+    "word": "OFTYPE",
+    "hint": "Filters elements by type"
+  },
+  {
+    "word": "SELECTMANY",
+    "hint": "Flattens nested sequences"
+  },
+  {
+    "word": "THENBY",
+    "hint": "Secondary sort ordering"
+  },
+  {
+    "word": "LIST",
+    "hint": "Generic dynamic array collection"
+  },
+  {
+    "word": "DICTIONARY",
+    "hint": "Key-value pair collection"
+  },
+  {
+    "word": "HASHSET",
+    "hint": "Unique elements unordered set"
+  },
+  {
+    "word": "SORTEDSET",
+    "hint": "Ordered unique element collection"
+  },
+  {
+    "word": "QUEUE",
+    "hint": "First-in first-out collection"
+  },
+  {
+    "word": "STACK",
+    "hint": "Last-in first-out collection"
+  },
+  {
+    "word": "LINKEDLIST",
+    "hint": "Doubly linked list collection"
+  },
+  {
+    "word": "SORTEDLIST",
+    "hint": "Sorted key-value pair collection"
+  },
+  {
+    "word": "ARRAY",
+    "hint": "Fixed-size indexed collection"
+  },
+  {
+    "word": "ARRAYLIST",
+    "hint": "Non-generic dynamic array"
+  },
+  {
+    "word": "HASHTABLE",
+    "hint": "Non-generic key-value collection"
+  },
+  {
+    "word": "COLLECTION",
+    "hint": "Base class for custom collections"
+  },
+  {
+    "word": "ENUMERABLE",
+    "hint": "Exposes enumerator for iteration"
+  },
+  {
+    "word": "ENUMERATOR",
+    "hint": "Object that iterates a collection"
+  },
+  {
+    "word": "COMPARABLE",
+    "hint": "Defines natural ordering for type"
+  },
+  {
+    "word": "COMPARER",
+    "hint": "Custom comparison logic provider"
+  },
+  {
+    "word": "EQUATABLE",
+    "hint": "Defines equality for a type"
+  },
+  {
+    "word": "DISPOSABLE",
+    "hint": "Interface for resource cleanup"
+  },
+  {
+    "word": "CLONEABLE",
+    "hint": "Interface for object copying"
+  },
+  {
+    "word": "OBSERVABLE",
+    "hint": "Push-based notification provider"
+  },
+  {
+    "word": "FORMATTABLE",
+    "hint": "Custom string formatting interface"
+  },
+  {
+    "word": "SERIALIZABLE",
+    "hint": "Marks type for serialization"
+  },
+  {
+    "word": "ATTRIBUTE",
+    "hint": "Metadata attached to code elements"
+  },
+  {
+    "word": "OBSOLETE",
+    "hint": "Marks element as deprecated"
+  },
+  {
+    "word": "CONDITIONAL",
+    "hint": "Conditionally includes method call"
+  },
+  {
+    "word": "FLAGS",
+    "hint": "Enables bitwise enum combinations"
+  },
+  {
+    "word": "ASSEMBLY",
+    "hint": "Compiled deployment unit"
+  },
+  {
+    "word": "REFLECTION",
+    "hint": "Inspects types at runtime"
+  },
+  {
+    "word": "ACTIVATOR",
+    "hint": "Creates instances dynamically"
+  },
+  {
+    "word": "BINDING",
+    "hint": "Runtime member access flags"
+  },
+  {
+    "word": "EMIT",
+    "hint": "Generates IL code at runtime"
+  },
+  {
+    "word": "INVOKE",
+    "hint": "Calls method via reflection"
+  },
+  {
+    "word": "FIELDINFO",
+    "hint": "Reflection info about a field"
+  },
+  {
+    "word": "METHODINFO",
+    "hint": "Reflection info about a method"
+  },
+  {
+    "word": "TYPEINFO",
+    "hint": "Runtime type information object"
+  },
+  {
+    "word": "EXPRESSION",
+    "hint": "Represents code as data tree"
+  },
+  {
+    "word": "THREAD",
+    "hint": "Unit of concurrent execution"
+  },
+  {
+    "word": "MUTEX",
+    "hint": "Cross-process synchronization lock"
+  },
+  {
+    "word": "SEMAPHORE",
+    "hint": "Counting synchronization primitive"
+  },
+  {
+    "word": "MONITOR",
+    "hint": "Object-level synchronization lock"
+  },
+  {
+    "word": "BARRIER",
+    "hint": "Multi-phase thread sync point"
+  },
+  {
+    "word": "INTERLOCKED",
+    "hint": "Atomic variable operations"
+  },
+  {
+    "word": "DEADLOCK",
+    "hint": "Threads blocked waiting each other"
+  },
+  {
+    "word": "THREADPOOL",
+    "hint": "Managed pool of worker threads"
+  },
+  {
+    "word": "PARALLEL",
+    "hint": "Data and task parallel helpers"
+  },
+  {
+    "word": "CONCURRENT",
+    "hint": "Thread-safe collection namespace"
+  },
+  {
+    "word": "CHANNEL",
+    "hint": "Producer-consumer async pipeline"
+  },
+  {
+    "word": "SPINLOCK",
+    "hint": "Busy-wait synchronization lock"
+  },
+  {
+    "word": "SPINWAIT",
+    "hint": "Lightweight spinning wait helper"
+  },
+  {
+    "word": "CANCELLATION",
+    "hint": "Cooperative operation cancellation"
+  },
+  {
+    "word": "TASKRUN",
+    "hint": "Queues work on thread pool"
+  },
+  {
+    "word": "VALUETASK",
+    "hint": "Lightweight allocation-free task"
+  },
+  {
+    "word": "CONFIGAWAIT",
+    "hint": "Controls captured sync context"
+  },
+  {
+    "word": "DISPOSE",
+    "hint": "Releases unmanaged resources"
+  },
+  {
+    "word": "FINALIZE",
+    "hint": "Destructor called by garbage collector"
+  },
+  {
+    "word": "GARBAGE",
+    "hint": "Automatic memory reclamation"
+  },
+  {
+    "word": "MANAGED",
+    "hint": "Memory handled by runtime"
+  },
+  {
+    "word": "UNMANAGED",
+    "hint": "Memory outside runtime control"
+  },
+  {
+    "word": "BOXING",
+    "hint": "Value type wrapped as object"
+  },
+  {
+    "word": "UNBOXING",
+    "hint": "Extracts value type from object"
+  },
+  {
+    "word": "PINVOKE",
+    "hint": "Calls native unmanaged functions"
+  },
+  {
+    "word": "MARSHAL",
+    "hint": "Converts between managed and native"
+  },
+  {
+    "word": "INTEROP",
+    "hint": "Interaction with native code"
+  },
+  {
+    "word": "DLLIMPORT",
+    "hint": "Imports function from native DLL"
+  },
+  {
+    "word": "SAFEHANDLE",
+    "hint": "Reliable native handle wrapper"
+  },
+  {
+    "word": "WEAK",
+    "hint": "Reference not preventing collection"
+  },
+  {
+    "word": "REFERENCE",
+    "hint": "Variable pointing to heap object"
+  },
+  {
+    "word": "VALUE",
+    "hint": "Type stored directly on stack"
+  },
+  {
+    "word": "POINTER",
+    "hint": "Unsafe direct memory address"
+  },
+  {
+    "word": "EXCEPTION",
+    "hint": "Base class for all errors"
+  },
+  {
+    "word": "NULLREF",
+    "hint": "Accessing member on null object"
+  },
+  {
+    "word": "ARGUMENT",
+    "hint": "Bad argument passed exception"
+  },
+  {
+    "word": "OUTOFRANGE",
+    "hint": "Index beyond valid bounds"
+  },
+  {
+    "word": "INVALID",
+    "hint": "Operation not valid for state"
+  },
+  {
+    "word": "FORMAT",
+    "hint": "Incorrect format string exception"
+  },
+  {
+    "word": "OVERFLOW",
+    "hint": "Arithmetic overflow exception"
+  },
+  {
+    "word": "DIVIDEBY",
+    "hint": "Division by zero exception"
+  },
+  {
+    "word": "TIMEOUT",
+    "hint": "Operation exceeded time limit"
+  },
+  {
+    "word": "CUSTOM",
+    "hint": "User-defined exception type"
+  },
+  {
+    "word": "INNEREXC",
+    "hint": "Wrapped original exception reference"
+  },
+  {
+    "word": "STREAM",
+    "hint": "Byte sequence abstraction"
+  },
+  {
+    "word": "READER",
+    "hint": "Reads characters from stream"
+  },
+  {
+    "word": "WRITER",
+    "hint": "Writes characters to stream"
+  },
+  {
+    "word": "FILESTREAM",
+    "hint": "Stream for file operations"
+  },
+  {
+    "word": "MEMSTREAM",
+    "hint": "Stream backed by memory buffer"
+  },
+  {
+    "word": "TEXTREADER",
+    "hint": "Abstract character input reader"
+  },
+  {
+    "word": "TEXTWRITER",
+    "hint": "Abstract character output writer"
+  },
+  {
+    "word": "BINARY",
+    "hint": "Reads and writes primitive types"
+  },
+  {
+    "word": "DIRECTORY",
+    "hint": "Static file system directory ops"
+  },
+  {
+    "word": "PATH",
+    "hint": "File path manipulation utilities"
+  },
+  {
+    "word": "ENCODING",
+    "hint": "Character encoding conversion"
+  },
+  {
+    "word": "CONSOLE",
+    "hint": "Standard input output interface"
+  },
+  {
+    "word": "READLINE",
+    "hint": "Reads line from standard input"
+  },
+  {
+    "word": "WRITELINE",
+    "hint": "Outputs line to standard output"
+  },
+  {
+    "word": "INTERPOLATE",
+    "hint": "Embeds expressions in string"
+  },
+  {
+    "word": "VERBATIM",
+    "hint": "String literal without escapes"
+  },
+  {
+    "word": "RAWSTRING",
+    "hint": "Multi-line unescaped string literal"
+  },
+  {
+    "word": "SUBSTRING",
+    "hint": "Extracts portion of a string"
+  },
+  {
+    "word": "TRIM",
+    "hint": "Removes leading and trailing spaces"
+  },
+  {
+    "word": "SPLIT",
+    "hint": "Divides string by delimiter"
+  },
+  {
+    "word": "REPLACE",
+    "hint": "Substitutes characters in string"
+  },
+  {
+    "word": "STARTSWITH",
+    "hint": "Checks string prefix match"
+  },
+  {
+    "word": "ENDSWITH",
+    "hint": "Checks string suffix match"
+  },
+  {
+    "word": "INDEXOF",
+    "hint": "Finds first occurrence position"
+  },
+  {
+    "word": "PADLEFT",
+    "hint": "Pads string on the left"
+  },
+  {
+    "word": "PADRIGHT",
+    "hint": "Pads string on the right"
+  },
+  {
+    "word": "TOSTRING",
+    "hint": "Converts object to string form"
+  },
+  {
+    "word": "PARSE",
+    "hint": "Converts string to typed value"
+  },
+  {
+    "word": "TRYPARSE",
+    "hint": "Safe string to value conversion"
+  },
+  {
+    "word": "CONVERT",
+    "hint": "Type conversion utility class"
+  },
+  {
+    "word": "ISNULL",
+    "hint": "Checks for null string or empty"
+  },
+  {
+    "word": "STRINGBUILD",
+    "hint": "Mutable string for concatenation"
+  },
+  {
+    "word": "REGEX",
+    "hint": "Regular expression pattern matching"
+  },
+  {
+    "word": "MATCH",
+    "hint": "Single regex match result"
+  },
+  {
+    "word": "CAPTURE",
+    "hint": "Regex captured group text"
+  },
+  {
+    "word": "PATTERN",
+    "hint": "Type checking and deconstruction"
+  },
+  {
+    "word": "DISCARD",
+    "hint": "Unused variable placeholder"
+  },
+  {
+    "word": "GLOBAL",
+    "hint": "Top-level using for all files"
+  },
+  {
+    "word": "FILESCOPED",
+    "hint": "Namespace scoped to single file"
+  },
+  {
+    "word": "TOPLEVEL",
+    "hint": "Simplified program entry point"
+  },
+  {
+    "word": "WITH",
+    "hint": "Creates modified record copy"
+  },
+  {
+    "word": "DECONSTRUCT",
+    "hint": "Breaks object into variables"
+  },
+  {
+    "word": "EXTENSION",
+    "hint": "Adds methods to existing types"
+  },
+  {
+    "word": "PARAMS",
+    "hint": "Variable argument count parameter"
+  },
+  {
+    "word": "OPERATOR",
+    "hint": "Overloads built-in operators"
+  },
+  {
+    "word": "IMPLICIT",
+    "hint": "Automatic type conversion operator"
+  },
+  {
+    "word": "EXPLICIT",
+    "hint": "Manual cast conversion operator"
+  },
+  {
+    "word": "OVERLOAD",
+    "hint": "Multiple methods with same name"
+  },
+  {
+    "word": "ACCESSOR",
+    "hint": "Get or set for a property"
+  },
+  {
+    "word": "AUTOPROP",
+    "hint": "Compiler-generated property backing"
+  },
+  {
+    "word": "BACKING",
+    "hint": "Hidden field behind a property"
+  },
+  {
+    "word": "THIS",
+    "hint": "Reference to current instance"
+  },
+  {
+    "word": "BASE",
+    "hint": "Access to parent class members"
+  },
+  {
+    "word": "CONSTRUCTOR",
+    "hint": "Initializes new object instance"
+  },
+  {
+    "word": "INHERIT",
+    "hint": "Deriving from a base class"
+  },
+  {
+    "word": "POLYMORPH",
+    "hint": "Same interface different behavior"
+  },
+  {
+    "word": "ENCAPSULATE",
+    "hint": "Hiding internal implementation"
+  },
+  {
+    "word": "ABSTRACTION",
+    "hint": "Hiding complexity behind interface"
+  },
+  {
+    "word": "DOWNCASTING",
+    "hint": "Converting base to derived type"
+  },
+  {
+    "word": "UPCASTING",
+    "hint": "Converting derived to base type"
+  },
+  {
+    "word": "COALESCE",
+    "hint": "Null fallback operator"
+  },
+  {
+    "word": "TERNARY",
+    "hint": "Conditional expression operator"
+  },
+  {
+    "word": "BITWISE",
+    "hint": "Operations on individual bits"
+  },
+  {
+    "word": "SHIFT",
+    "hint": "Moves bits left or right"
+  },
+  {
+    "word": "LOGICAL",
+    "hint": "Boolean AND OR NOT operations"
+  },
+  {
+    "word": "UNARY",
+    "hint": "Operator with single operand"
+  },
+  {
+    "word": "MODULUS",
+    "hint": "Remainder after division"
+  },
+  {
+    "word": "LITERAL",
+    "hint": "Fixed value in source code"
+  },
+  {
+    "word": "IDENTIFIER",
+    "hint": "Name for a program entity"
+  },
+  {
+    "word": "STATEMENT",
+    "hint": "Complete instruction to execute"
+  },
+  {
+    "word": "PARAMETER",
+    "hint": "Variable in method definition"
+  },
+  {
+    "word": "VARARG",
+    "hint": "Variable-length argument list"
+  },
+  {
+    "word": "NAMED",
+    "hint": "Specifies argument by name"
+  },
+  {
+    "word": "OPTIONAL",
+    "hint": "Parameter with default value"
+  },
+  {
+    "word": "REFPARAM",
+    "hint": "Pass by reference parameter"
+  },
+  {
+    "word": "OUTPARAM",
+    "hint": "Output-only reference parameter"
+  },
+  {
+    "word": "INPARAM",
+    "hint": "Read-only reference parameter"
+  },
+  {
+    "word": "SCOPED",
+    "hint": "Limits ref struct escape scope"
+  },
+  {
+    "word": "REFSTRUCT",
+    "hint": "Stack-only value type"
+  },
+  {
+    "word": "MEMORY",
+    "hint": "Contiguous memory region owner"
+  },
+  {
+    "word": "BUFFER",
+    "hint": "Temporary data storage region"
+  },
+  {
+    "word": "HTTPCLNT",
+    "hint": "Sends HTTP requests"
+  },
+  {
+    "word": "JSONSER",
+    "hint": "Serializes objects to JSON"
+  },
+  {
+    "word": "XMLDOC",
+    "hint": "XML document manipulation class"
+  },
+  {
+    "word": "DATATABLE",
+    "hint": "In-memory tabular data structure"
+  },
+  {
+    "word": "DATASET",
+    "hint": "Collection of data tables"
+  },
+  {
+    "word": "DBCONNECT",
+    "hint": "Database connection object"
+  },
+  {
+    "word": "DBCOMMAND",
+    "hint": "Executes database commands"
+  },
+  {
+    "word": "DATAREADER",
+    "hint": "Forward-only data result stream"
+  },
+  {
+    "word": "TRANSACTION",
+    "hint": "Atomic database operation unit"
+  },
+  {
+    "word": "TIMER",
+    "hint": "Periodic event trigger"
+  },
+  {
+    "word": "STOPWATCH",
+    "hint": "High-resolution time measurement"
+  },
+  {
+    "word": "DATETIME",
+    "hint": "Date and time representation"
+  },
+  {
+    "word": "TIMESPAN",
+    "hint": "Duration of time interval"
+  },
+  {
+    "word": "DATEONLY",
+    "hint": "Date without time component"
+  },
+  {
+    "word": "TIMEONLY",
+    "hint": "Time without date component"
+  },
+  {
+    "word": "GUID",
+    "hint": "Globally unique identifier type"
+  },
+  {
+    "word": "RANDOM",
+    "hint": "Pseudo-random number generator"
+  },
+  {
+    "word": "MATH",
+    "hint": "Mathematical functions class"
+  },
+  {
+    "word": "MATHF",
+    "hint": "Float math functions class"
+  },
+  {
+    "word": "BITCONVERT",
+    "hint": "Converts base types to bytes"
+  },
+  {
+    "word": "ENVIRON",
+    "hint": "System environment information"
+  },
+  {
+    "word": "PROCESS",
+    "hint": "System process control class"
+  },
+  {
+    "word": "DIAGNOSTIC",
+    "hint": "Debugging and tracing utilities"
+  },
+  {
+    "word": "DEBUG",
+    "hint": "Conditional debugging output"
+  },
+  {
+    "word": "TRACE",
+    "hint": "Application execution tracing"
+  },
+  {
+    "word": "ASSERT",
+    "hint": "Debug conditional check"
+  },
+  {
+    "word": "CONTRACT",
+    "hint": "Method preconditions and postconditions"
+  },
+  {
+    "word": "TESTMETHOD",
+    "hint": "Marks unit test function"
+  },
+  {
+    "word": "TESTCLASS",
+    "hint": "Contains unit test methods"
+  },
+  {
+    "word": "SETUP",
+    "hint": "Runs before each test method"
+  },
+  {
+    "word": "TEARDOWN",
+    "hint": "Runs after each test method"
+  },
+  {
+    "word": "MOCK",
+    "hint": "Simulated object for testing"
+  },
+  {
+    "word": "DEPENDENCY",
+    "hint": "External requirement injection"
+  },
+  {
+    "word": "INJECTION",
+    "hint": "Providing dependencies externally"
+  },
+  {
+    "word": "SINGLETON",
+    "hint": "Single instance design pattern"
+  },
+  {
+    "word": "FACTORY",
+    "hint": "Creates objects without specifying type"
+  },
+  {
+    "word": "OBSERVER",
+    "hint": "Notifies dependents of state change"
+  },
+  {
+    "word": "STRATEGY",
+    "hint": "Encapsulates swappable algorithms"
+  },
+  {
+    "word": "DECORATOR",
+    "hint": "Adds behavior dynamically"
+  },
+  {
+    "word": "BUILDER",
+    "hint": "Step-by-step object construction"
+  },
+  {
+    "word": "REPOSITORY",
+    "hint": "Data access abstraction pattern"
+  },
+  {
+    "word": "MEDIATOR",
+    "hint": "Centralizes communication pattern"
+  },
+  {
+    "word": "ITERATOR",
+    "hint": "Sequential access without exposure"
+  },
+  {
+    "word": "ADAPTER",
+    "hint": "Converts interface compatibility"
+  },
+  {
+    "word": "FACADE",
+    "hint": "Simplified interface to subsystem"
+  },
+  {
+    "word": "COMMAND",
+    "hint": "Encapsulates request as object"
+  },
+  {
+    "word": "DEFERRED",
+    "hint": "Execution delayed until needed"
+  },
+  {
+    "word": "LAZY",
+    "hint": "Delayed initialization on access"
+  },
+  {
+    "word": "EAGER",
+    "hint": "Immediate evaluation of value"
+  },
+  {
+    "word": "FINALIZER",
+    "hint": "Destructor for managed objects"
+  },
+  {
+    "word": "SUPPRESS",
+    "hint": "Prevents finalizer from running"
+  },
+  {
+    "word": "GENERATION",
+    "hint": "GC heap age classification"
+  },
+  {
+    "word": "COMPACTION",
+    "hint": "GC memory defragmentation"
+  },
+  {
+    "word": "PINNED",
+    "hint": "Object fixed in memory location"
+  },
+  {
+    "word": "NATIVEINT",
+    "hint": "Platform-dependent integer size"
+  },
+  {
+    "word": "REFRETURN",
+    "hint": "Method returning by reference"
+  },
+  {
+    "word": "REFLOCAL",
+    "hint": "Local variable holding reference"
+  },
+  {
+    "word": "COVARIANCE",
+    "hint": "Output type parameter flexibility"
+  },
+  {
+    "word": "INVARIANCE",
+    "hint": "No variance on type parameter"
+  },
+  {
+    "word": "CONSTRAINT",
+    "hint": "Limits on generic type parameter"
+  },
+  {
+    "word": "NEWCONST",
+    "hint": "Requires parameterless constructor"
+  },
+  {
+    "word": "CLASSCONST",
+    "hint": "Constrains to reference types"
+  },
+  {
+    "word": "STRUCTCONST",
+    "hint": "Constrains to value types"
+  },
+  {
+    "word": "NOTNULL",
+    "hint": "Constrains to non-nullable types"
+  },
+  {
+    "word": "ANNOTATION",
+    "hint": "Nullable reference annotation"
+  },
+  {
+    "word": "PRAGMA",
+    "hint": "Compiler directive instruction"
+  },
+  {
+    "word": "REGION",
+    "hint": "Collapsible code section marker"
+  },
+  {
+    "word": "PREPROCESSOR",
+    "hint": "Compile-time code directives"
+  },
+  {
+    "word": "WARNING",
+    "hint": "Compiler warning control directive"
+  },
+  {
+    "word": "SYMBOL",
+    "hint": "Named entity in compilation"
+  },
+  {
+    "word": "DEFINE",
+    "hint": "Defines conditional symbol"
+  },
+  {
+    "word": "IFDEF",
+    "hint": "Conditional compilation check"
+  },
+  {
+    "word": "CALLER",
+    "hint": "Gets calling method information"
+  },
+  {
+    "word": "FILEPATH",
+    "hint": "Source file path attribute"
+  },
+  {
+    "word": "LINENUMBER",
+    "hint": "Source line number attribute"
+  },
+  {
+    "word": "MEMBERNAME",
+    "hint": "Calling member name attribute"
+  },
+  {
+    "word": "BENCHMARK",
+    "hint": "Performance measurement test"
+  },
+  {
+    "word": "PROFILER",
+    "hint": "Runtime performance analyzer"
+  },
+  {
+    "word": "APPDOM",
+    "hint": "Application domain boundary"
+  },
+  {
+    "word": "ENTRYPOINT",
+    "hint": "Program start method"
+  },
+  {
+    "word": "MAINMETHOD",
+    "hint": "Primary execution entry point"
+  },
+  {
+    "word": "AWAITER",
+    "hint": "Provides await pattern support"
+  },
+  {
+    "word": "TASKDELAY",
+    "hint": "Async sleep operation"
+  },
+  {
+    "word": "WHENALL",
+    "hint": "Awaits all tasks completion"
+  },
+  {
+    "word": "WHENANY",
+    "hint": "Awaits first task completion"
+  },
+  {
+    "word": "ASYNCENUM",
+    "hint": "Asynchronous iteration stream"
+  },
+  {
+    "word": "PIPE",
+    "hint": "High-performance IO pipeline"
+  },
+  {
+    "word": "SOCKET",
+    "hint": "Network communication endpoint"
+  },
+  {
+    "word": "TCPCLIENT",
+    "hint": "TCP network connection client"
+  },
+  {
+    "word": "IPADDRESS",
+    "hint": "Network address representation"
+  },
+  {
+    "word": "ENDPOINT",
+    "hint": "Network socket address pair"
+  },
+  {
+    "word": "LISTENER",
+    "hint": "Accepts incoming connections"
+  },
+  {
+    "word": "CRYPTO",
+    "hint": "Cryptographic operations namespace"
+  },
+  {
+    "word": "HASHING",
+    "hint": "Produces fixed-size digest values"
+  },
+  {
+    "word": "SYMMETRIC",
+    "hint": "Same key encrypts and decrypts"
+  },
+  {
+    "word": "ASYMMETRIC",
+    "hint": "Public-private key encryption"
+  },
+  {
+    "word": "IMMUTABLE",
+    "hint": "Collection that cannot be changed"
+  },
+  {
+    "word": "FROZEN",
+    "hint": "Optimized read-only collection"
+  },
+  {
+    "word": "READONLYSP",
+    "hint": "Read-only memory span view"
+  },
+  {
+    "word": "VALUETUPLE",
+    "hint": "Lightweight named value group"
+  },
+  {
+    "word": "RECURSE",
+    "hint": "Method calling itself pattern"
+  },
+  {
+    "word": "MULTICAST",
+    "hint": "Delegate with multiple targets"
+  },
+  {
+    "word": "SUBSCRIBE",
+    "hint": "Attaches handler to event"
+  },
+  {
+    "word": "UNSUBSCRIBE",
+    "hint": "Removes handler from event"
+  },
+  {
+    "word": "RAISE",
+    "hint": "Triggers an event notification"
+  },
+  {
+    "word": "HANDLER",
+    "hint": "Method responding to event"
+  },
+  {
+    "word": "EVENTARGS",
+    "hint": "Data passed with event notification"
+  },
+  {
+    "word": "ANONYMOUS",
+    "hint": "Type created without declaration"
+  },
+  {
+    "word": "LOCAL",
+    "hint": "Function defined inside method"
+  },
+  {
+    "word": "TUPLELIT",
+    "hint": "Inline tuple value creation"
+  },
+  {
+    "word": "INDEX",
+    "hint": "Position from end of collection"
+  },
+  {
+    "word": "CONFIGUR",
+    "hint": "Application configuration system"
+  },
+  {
+    "word": "LOGGING",
+    "hint": "Application logging framework"
+  },
+  {
+    "word": "MIDDLEWARE",
+    "hint": "Request processing pipeline stage"
+  },
+  {
+    "word": "HOSTING",
+    "hint": "Application host builder pattern"
+  },
+  {
+    "word": "VARIANCE",
+    "hint": "Generic type parameter direction"
+  },
+  {
+    "word": "CACHING",
+    "hint": "Storing computed results for reuse"
+  },
+  {
+    "word": "SCOPE",
+    "hint": "Visibility region of a variable"
+  },
+  {
+    "word": "LIFETIME",
+    "hint": "Duration of object existence"
+  },
+  {
+    "word": "SWITCHEXPR",
+    "hint": "Expression-based switch syntax"
+  },
+  {
+    "word": "STATICCTOR",
+    "hint": "One-time type initializer"
+  },
+  {
+    "word": "RANGEOP",
+    "hint": "Sequence range operator syntax"
+  },
+  {
+    "word": "ZIPPER",
+    "hint": "Merges two sequences pairwise"
+  },
+  {
+    "word": "DECOMPILE",
+    "hint": "Reverses compiled IL to source"
+  },
+  {
+    "word": "NESTING",
+    "hint": "Types defined inside other types"
+  },
+  {
+    "word": "SEALING",
+    "hint": "Preventing class inheritance"
+  },
+  {
+    "word": "FINALIZING",
+    "hint": "GC destructor cleanup process"
+  },
+  {
+    "word": "MARSHALING",
+    "hint": "Data conversion across boundaries"
+  },
+  {
+    "word": "RESOLVING",
+    "hint": "Finding dependency at runtime"
+  },
+  {
+    "word": "THROTTLE",
+    "hint": "Limits rate of execution"
+  },
+  {
+    "word": "DEBOUNCE",
+    "hint": "Delays until input settles"
+  },
+  {
+    "word": "CSPROJ",
+    "hint": "Project configuration XML file"
+  },
+  {
+    "word": "NUGET",
+    "hint": "Package manager for dotnet"
+  },
+  {
+    "word": "SOLUTION",
+    "hint": "Groups multiple projects together"
+  },
+  {
+    "word": "DOTNET",
+    "hint": "Runtime and SDK platform"
+  },
+  {
+    "word": "ROSLYN",
+    "hint": "Compiler platform for analysis"
+  },
+  {
+    "word": "ANALYZER",
+    "hint": "Code analysis at compile time"
+  }
+]

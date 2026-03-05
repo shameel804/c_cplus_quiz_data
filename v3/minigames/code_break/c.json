@@ -1,0 +1,1730 @@
+[
+  {
+    "word": "PRINTF",
+    "hint": "Standard output formatting function"
+  },
+  {
+    "word": "SCANF",
+    "hint": "Standard input formatting function"
+  },
+  {
+    "word": "MALLOC",
+    "hint": "Allocates memory on the heap"
+  },
+  {
+    "word": "CALLOC",
+    "hint": "Allocates zeroed memory blocks"
+  },
+  {
+    "word": "REALLOC",
+    "hint": "Resizes previously allocated memory"
+  },
+  {
+    "word": "FREE",
+    "hint": "Releases allocated memory"
+  },
+  {
+    "word": "POINTER",
+    "hint": "Variable that stores a memory address"
+  },
+  {
+    "word": "STRUCT",
+    "hint": "User-defined composite data type"
+  },
+  {
+    "word": "UNION",
+    "hint": "Members share the same memory space"
+  },
+  {
+    "word": "ENUM",
+    "hint": "Named integer constant set"
+  },
+  {
+    "word": "TYPEDEF",
+    "hint": "Creates an alias for a data type"
+  },
+  {
+    "word": "VOID",
+    "hint": "Represents absence of type"
+  },
+  {
+    "word": "CHAR",
+    "hint": "Single character data type"
+  },
+  {
+    "word": "FLOAT",
+    "hint": "Single precision floating point"
+  },
+  {
+    "word": "DOUBLE",
+    "hint": "Double precision floating point"
+  },
+  {
+    "word": "SHORT",
+    "hint": "Reduced size integer type"
+  },
+  {
+    "word": "LONG",
+    "hint": "Extended size integer type"
+  },
+  {
+    "word": "SIGNED",
+    "hint": "Allows negative integer values"
+  },
+  {
+    "word": "UNSIGNED",
+    "hint": "Only non-negative integer values"
+  },
+  {
+    "word": "CONST",
+    "hint": "Declares an immutable variable"
+  },
+  {
+    "word": "STATIC",
+    "hint": "Persists variable across function calls"
+  },
+  {
+    "word": "EXTERN",
+    "hint": "Declares variable defined elsewhere"
+  },
+  {
+    "word": "AUTO",
+    "hint": "Default local variable storage class"
+  },
+  {
+    "word": "REGISTER",
+    "hint": "Suggests storing variable in CPU register"
+  },
+  {
+    "word": "VOLATILE",
+    "hint": "Value may change unexpectedly"
+  },
+  {
+    "word": "SIZEOF",
+    "hint": "Returns size of a type in bytes"
+  },
+  {
+    "word": "RETURN",
+    "hint": "Exits function with a value"
+  },
+  {
+    "word": "SWITCH",
+    "hint": "Multi-way branching statement"
+  },
+  {
+    "word": "CASE",
+    "hint": "Label inside a switch block"
+  },
+  {
+    "word": "DEFAULT",
+    "hint": "Fallback label in switch statement"
+  },
+  {
+    "word": "BREAK",
+    "hint": "Exits loop or switch immediately"
+  },
+  {
+    "word": "CONTINUE",
+    "hint": "Skips to next loop iteration"
+  },
+  {
+    "word": "GOTO",
+    "hint": "Unconditional jump to a label"
+  },
+  {
+    "word": "WHILE",
+    "hint": "Loop with pre-checked condition"
+  },
+  {
+    "word": "ELSE",
+    "hint": "Alternative branch in conditional"
+  },
+  {
+    "word": "INLINE",
+    "hint": "Suggests function code substitution"
+  },
+  {
+    "word": "RESTRICT",
+    "hint": "Pointer alias optimization hint"
+  },
+  {
+    "word": "INCLUDE",
+    "hint": "Preprocessor file insertion directive"
+  },
+  {
+    "word": "DEFINE",
+    "hint": "Preprocessor macro definition"
+  },
+  {
+    "word": "IFDEF",
+    "hint": "Conditional if macro is defined"
+  },
+  {
+    "word": "IFNDEF",
+    "hint": "Conditional if macro is not defined"
+  },
+  {
+    "word": "ENDIF",
+    "hint": "Ends preprocessor conditional block"
+  },
+  {
+    "word": "ELIF",
+    "hint": "Preprocessor else-if directive"
+  },
+  {
+    "word": "UNDEF",
+    "hint": "Removes a macro definition"
+  },
+  {
+    "word": "PRAGMA",
+    "hint": "Compiler-specific directive"
+  },
+  {
+    "word": "MACRO",
+    "hint": "Preprocessor text substitution rule"
+  },
+  {
+    "word": "HEADER",
+    "hint": "File included for declarations"
+  },
+  {
+    "word": "STDIO",
+    "hint": "Standard input output header"
+  },
+  {
+    "word": "STDLIB",
+    "hint": "Standard utility functions header"
+  },
+  {
+    "word": "STRING",
+    "hint": "Character array manipulation header"
+  },
+  {
+    "word": "MATH",
+    "hint": "Mathematical functions header"
+  },
+  {
+    "word": "CTYPE",
+    "hint": "Character classification header"
+  },
+  {
+    "word": "ASSERT",
+    "hint": "Diagnostic runtime check macro"
+  },
+  {
+    "word": "STRLEN",
+    "hint": "Returns length of a string"
+  },
+  {
+    "word": "STRCMP",
+    "hint": "Compares two strings"
+  },
+  {
+    "word": "STRCPY",
+    "hint": "Copies one string to another"
+  },
+  {
+    "word": "STRCAT",
+    "hint": "Concatenates two strings"
+  },
+  {
+    "word": "STRNCMP",
+    "hint": "Compares n characters of strings"
+  },
+  {
+    "word": "STRNCPY",
+    "hint": "Copies n characters from a string"
+  },
+  {
+    "word": "STRNCAT",
+    "hint": "Concatenates n characters of strings"
+  },
+  {
+    "word": "STRSTR",
+    "hint": "Finds substring in a string"
+  },
+  {
+    "word": "STRCHR",
+    "hint": "Finds first character occurrence"
+  },
+  {
+    "word": "STRRCHR",
+    "hint": "Finds last character occurrence"
+  },
+  {
+    "word": "STRTOK",
+    "hint": "Splits string into tokens"
+  },
+  {
+    "word": "MEMCPY",
+    "hint": "Copies bytes between memory blocks"
+  },
+  {
+    "word": "MEMMOVE",
+    "hint": "Safe overlapping memory copy"
+  },
+  {
+    "word": "MEMSET",
+    "hint": "Fills memory with a byte value"
+  },
+  {
+    "word": "MEMCMP",
+    "hint": "Compares two memory blocks"
+  },
+  {
+    "word": "FOPEN",
+    "hint": "Opens a file stream"
+  },
+  {
+    "word": "FCLOSE",
+    "hint": "Closes an open file stream"
+  },
+  {
+    "word": "FREAD",
+    "hint": "Reads binary data from file"
+  },
+  {
+    "word": "FWRITE",
+    "hint": "Writes binary data to file"
+  },
+  {
+    "word": "FPRINTF",
+    "hint": "Formatted output to file stream"
+  },
+  {
+    "word": "FSCANF",
+    "hint": "Formatted input from file stream"
+  },
+  {
+    "word": "FGETS",
+    "hint": "Reads a line from file stream"
+  },
+  {
+    "word": "FPUTS",
+    "hint": "Writes a string to file stream"
+  },
+  {
+    "word": "FSEEK",
+    "hint": "Sets file position indicator"
+  },
+  {
+    "word": "FTELL",
+    "hint": "Returns current file position"
+  },
+  {
+    "word": "REWIND",
+    "hint": "Resets file position to beginning"
+  },
+  {
+    "word": "FEOF",
+    "hint": "Checks for end-of-file indicator"
+  },
+  {
+    "word": "FERROR",
+    "hint": "Checks file stream error status"
+  },
+  {
+    "word": "FFLUSH",
+    "hint": "Flushes output stream buffer"
+  },
+  {
+    "word": "SPRINTF",
+    "hint": "Formatted output to string buffer"
+  },
+  {
+    "word": "SSCANF",
+    "hint": "Formatted input from a string"
+  },
+  {
+    "word": "SNPRINTF",
+    "hint": "Safe formatted output to buffer"
+  },
+  {
+    "word": "GETCHAR",
+    "hint": "Reads single character from stdin"
+  },
+  {
+    "word": "PUTCHAR",
+    "hint": "Writes single character to stdout"
+  },
+  {
+    "word": "PUTS",
+    "hint": "Outputs string with newline"
+  },
+  {
+    "word": "ATOI",
+    "hint": "Converts string to integer"
+  },
+  {
+    "word": "ATOF",
+    "hint": "Converts string to float"
+  },
+  {
+    "word": "ATOL",
+    "hint": "Converts string to long integer"
+  },
+  {
+    "word": "STRTOL",
+    "hint": "String to long with error checking"
+  },
+  {
+    "word": "STRTOD",
+    "hint": "String to double with error checking"
+  },
+  {
+    "word": "STRTOUL",
+    "hint": "String to unsigned long conversion"
+  },
+  {
+    "word": "RAND",
+    "hint": "Generates pseudo-random integer"
+  },
+  {
+    "word": "SRAND",
+    "hint": "Seeds the random number generator"
+  },
+  {
+    "word": "EXIT",
+    "hint": "Terminates program execution"
+  },
+  {
+    "word": "ABORT",
+    "hint": "Abnormal program termination"
+  },
+  {
+    "word": "ATEXIT",
+    "hint": "Registers function called at exit"
+  },
+  {
+    "word": "SYSTEM",
+    "hint": "Executes a shell command"
+  },
+  {
+    "word": "QSORT",
+    "hint": "Standard library quicksort function"
+  },
+  {
+    "word": "BSEARCH",
+    "hint": "Binary search on sorted array"
+  },
+  {
+    "word": "ISALPHA",
+    "hint": "Checks if character is alphabetic"
+  },
+  {
+    "word": "ISDIGIT",
+    "hint": "Checks if character is a digit"
+  },
+  {
+    "word": "ISALNUM",
+    "hint": "Checks if character is alphanumeric"
+  },
+  {
+    "word": "ISSPACE",
+    "hint": "Checks if character is whitespace"
+  },
+  {
+    "word": "ISUPPER",
+    "hint": "Checks if character is uppercase"
+  },
+  {
+    "word": "ISLOWER",
+    "hint": "Checks if character is lowercase"
+  },
+  {
+    "word": "TOUPPER",
+    "hint": "Converts character to uppercase"
+  },
+  {
+    "word": "TOLOWER",
+    "hint": "Converts character to lowercase"
+  },
+  {
+    "word": "ISPRINT",
+    "hint": "Checks if character is printable"
+  },
+  {
+    "word": "ISPUNCT",
+    "hint": "Checks if character is punctuation"
+  },
+  {
+    "word": "ISCNTRL",
+    "hint": "Checks if character is control char"
+  },
+  {
+    "word": "CEIL",
+    "hint": "Rounds up to nearest integer"
+  },
+  {
+    "word": "FLOOR",
+    "hint": "Rounds down to nearest integer"
+  },
+  {
+    "word": "SQRT",
+    "hint": "Computes square root"
+  },
+  {
+    "word": "FABS",
+    "hint": "Absolute value of a float"
+  },
+  {
+    "word": "LABS",
+    "hint": "Absolute value of a long"
+  },
+  {
+    "word": "LDIV",
+    "hint": "Long integer division with remainder"
+  },
+  {
+    "word": "MODF",
+    "hint": "Splits float into integer and fraction"
+  },
+  {
+    "word": "FMOD",
+    "hint": "Floating point remainder operation"
+  },
+  {
+    "word": "FREXP",
+    "hint": "Extracts mantissa and exponent"
+  },
+  {
+    "word": "LDEXP",
+    "hint": "Multiplies by power of two"
+  },
+  {
+    "word": "SIGNAL",
+    "hint": "Sets a signal handler function"
+  },
+  {
+    "word": "RAISE",
+    "hint": "Sends a signal to the program"
+  },
+  {
+    "word": "SETJMP",
+    "hint": "Saves execution context for jump"
+  },
+  {
+    "word": "LONGJMP",
+    "hint": "Restores saved execution context"
+  },
+  {
+    "word": "TIME",
+    "hint": "Returns current calendar time"
+  },
+  {
+    "word": "CLOCK",
+    "hint": "Returns processor time used"
+  },
+  {
+    "word": "DIFFTIME",
+    "hint": "Computes difference between times"
+  },
+  {
+    "word": "MKTIME",
+    "hint": "Converts struct tm to time_t"
+  },
+  {
+    "word": "STRFTIME",
+    "hint": "Formats time as a string"
+  },
+  {
+    "word": "GMTIME",
+    "hint": "Converts time to UTC struct"
+  },
+  {
+    "word": "CTIME",
+    "hint": "Converts time to readable string"
+  },
+  {
+    "word": "ASCTIME",
+    "hint": "Converts tm struct to string"
+  },
+  {
+    "word": "PERROR",
+    "hint": "Prints error message to stderr"
+  },
+  {
+    "word": "ERRNO",
+    "hint": "Global error number variable"
+  },
+  {
+    "word": "STRERROR",
+    "hint": "Returns error description string"
+  },
+  {
+    "word": "NULL",
+    "hint": "Null pointer constant macro"
+  },
+  {
+    "word": "STDIN",
+    "hint": "Standard input stream"
+  },
+  {
+    "word": "STDOUT",
+    "hint": "Standard output stream"
+  },
+  {
+    "word": "STDERR",
+    "hint": "Standard error output stream"
+  },
+  {
+    "word": "ARRAY",
+    "hint": "Contiguous indexed data collection"
+  },
+  {
+    "word": "BUFFER",
+    "hint": "Temporary data storage area"
+  },
+  {
+    "word": "STACK",
+    "hint": "LIFO memory for local variables"
+  },
+  {
+    "word": "HEAP",
+    "hint": "Dynamic memory allocation region"
+  },
+  {
+    "word": "SCOPE",
+    "hint": "Visibility region of a variable"
+  },
+  {
+    "word": "LINKAGE",
+    "hint": "Visibility across translation units"
+  },
+  {
+    "word": "TOKEN",
+    "hint": "Smallest lexical unit in source code"
+  },
+  {
+    "word": "LITERAL",
+    "hint": "Fixed value written in source code"
+  },
+  {
+    "word": "OPERAND",
+    "hint": "Value acted upon by an operator"
+  },
+  {
+    "word": "LVALUE",
+    "hint": "Expression with assignable address"
+  },
+  {
+    "word": "RVALUE",
+    "hint": "Expression that holds a value only"
+  },
+  {
+    "word": "CASTING",
+    "hint": "Explicit type conversion operation"
+  },
+  {
+    "word": "TERNARY",
+    "hint": "Conditional expression using question mark"
+  },
+  {
+    "word": "MODULUS",
+    "hint": "Remainder after integer division"
+  },
+  {
+    "word": "BITWISE",
+    "hint": "Operations on individual bits"
+  },
+  {
+    "word": "SHIFT",
+    "hint": "Moves bits left or right"
+  },
+  {
+    "word": "NEGATE",
+    "hint": "Reverses sign of a number"
+  },
+  {
+    "word": "LOGICAL",
+    "hint": "Boolean AND, OR, NOT operations"
+  },
+  {
+    "word": "UNARY",
+    "hint": "Operator with a single operand"
+  },
+  {
+    "word": "BINARY",
+    "hint": "Operator with two operands"
+  },
+  {
+    "word": "COMMA",
+    "hint": "Operator that sequences expressions"
+  },
+  {
+    "word": "ARROW",
+    "hint": "Accesses member through pointer"
+  },
+  {
+    "word": "DEREF",
+    "hint": "Accesses value at pointer address"
+  },
+  {
+    "word": "ADDRESS",
+    "hint": "Memory location of a variable"
+  },
+  {
+    "word": "OFFSET",
+    "hint": "Byte distance within a struct"
+  },
+  {
+    "word": "PADDING",
+    "hint": "Extra bytes for memory alignment"
+  },
+  {
+    "word": "PACKING",
+    "hint": "Removes struct alignment padding"
+  },
+  {
+    "word": "ENDIAN",
+    "hint": "Byte ordering in memory storage"
+  },
+  {
+    "word": "SEGMENT",
+    "hint": "Section of program memory layout"
+  },
+  {
+    "word": "BITFIELD",
+    "hint": "Struct member with specified bit width"
+  },
+  {
+    "word": "OVERFLOW",
+    "hint": "Value exceeds type maximum capacity"
+  },
+  {
+    "word": "UNDERFLOW",
+    "hint": "Value below type minimum capacity"
+  },
+  {
+    "word": "TRUNCATE",
+    "hint": "Data loss from type narrowing"
+  },
+  {
+    "word": "PROMOTE",
+    "hint": "Implicit widening type conversion"
+  },
+  {
+    "word": "COERCION",
+    "hint": "Implicit type conversion by compiler"
+  },
+  {
+    "word": "VARIADIC",
+    "hint": "Function accepting variable arguments"
+  },
+  {
+    "word": "CALLBACK",
+    "hint": "Function passed as an argument"
+  },
+  {
+    "word": "RECURSION",
+    "hint": "Function that calls itself"
+  },
+  {
+    "word": "ITERATION",
+    "hint": "Repeated execution using loops"
+  },
+  {
+    "word": "LOOP",
+    "hint": "Repeating block of code"
+  },
+  {
+    "word": "SEQUENCE",
+    "hint": "Statements executed in order"
+  },
+  {
+    "word": "BRANCHING",
+    "hint": "Conditional execution path selection"
+  },
+  {
+    "word": "MAIN",
+    "hint": "Entry point function of a program"
+  },
+  {
+    "word": "ARGC",
+    "hint": "Count of command line arguments"
+  },
+  {
+    "word": "ARGV",
+    "hint": "Array of command line argument strings"
+  },
+  {
+    "word": "ENVP",
+    "hint": "Array of environment variable strings"
+  },
+  {
+    "word": "PROTOTYPE",
+    "hint": "Forward declaration of a function"
+  },
+  {
+    "word": "DECLARATOR",
+    "hint": "Part of declaration naming a variable"
+  },
+  {
+    "word": "SPECIFIER",
+    "hint": "Keyword indicating type or storage"
+  },
+  {
+    "word": "QUALIFIER",
+    "hint": "Modifies type properties like const"
+  },
+  {
+    "word": "PARAMETER",
+    "hint": "Variable in function definition"
+  },
+  {
+    "word": "ARGUMENT",
+    "hint": "Value passed to a function call"
+  },
+  {
+    "word": "IDENTIFIER",
+    "hint": "Name given to a program entity"
+  },
+  {
+    "word": "EXPRESSION",
+    "hint": "Combination producing a value"
+  },
+  {
+    "word": "STATEMENT",
+    "hint": "Complete instruction to execute"
+  },
+  {
+    "word": "COMPOUND",
+    "hint": "Block of statements in braces"
+  },
+  {
+    "word": "DIRECTIVE",
+    "hint": "Instruction for the preprocessor"
+  },
+  {
+    "word": "DEREFERENCE",
+    "hint": "Follows pointer to get value"
+  },
+  {
+    "word": "INDIRECTION",
+    "hint": "Accessing data through a pointer"
+  },
+  {
+    "word": "ALLOCATION",
+    "hint": "Reserving memory at runtime"
+  },
+  {
+    "word": "DANGLING",
+    "hint": "Pointer to freed memory location"
+  },
+  {
+    "word": "WILD",
+    "hint": "Uninitialized pointer variable"
+  },
+  {
+    "word": "LEAK",
+    "hint": "Memory not freed after use"
+  },
+  {
+    "word": "SEGFAULT",
+    "hint": "Invalid memory access error"
+  },
+  {
+    "word": "CORE",
+    "hint": "Memory dump file after crash"
+  },
+  {
+    "word": "LINKER",
+    "hint": "Combines object files into executable"
+  },
+  {
+    "word": "COMPILER",
+    "hint": "Translates source code to machine code"
+  },
+  {
+    "word": "ASSEMBLER",
+    "hint": "Converts assembly to machine code"
+  },
+  {
+    "word": "LOADER",
+    "hint": "Places executable into memory"
+  },
+  {
+    "word": "OBJECT",
+    "hint": "Compiled translation unit file"
+  },
+  {
+    "word": "SYMBOL",
+    "hint": "Named entity in object file table"
+  },
+  {
+    "word": "LINKING",
+    "hint": "Resolving external symbol references"
+  },
+  {
+    "word": "DYNAMIC",
+    "hint": "Runtime library loading and linking"
+  },
+  {
+    "word": "ARCHIVE",
+    "hint": "Collection of object files in library"
+  },
+  {
+    "word": "MAKEFILE",
+    "hint": "Build automation script for C projects"
+  },
+  {
+    "word": "COMPILE",
+    "hint": "Translating source to object code"
+  },
+  {
+    "word": "PREPROCESS",
+    "hint": "First phase of C compilation"
+  },
+  {
+    "word": "PARSE",
+    "hint": "Analyzing source code structure"
+  },
+  {
+    "word": "SYNTAX",
+    "hint": "Grammar rules of the language"
+  },
+  {
+    "word": "SEMANTIC",
+    "hint": "Meaning and logic of code"
+  },
+  {
+    "word": "BLOCK",
+    "hint": "Code enclosed in curly braces"
+  },
+  {
+    "word": "GLOBAL",
+    "hint": "Variable accessible everywhere"
+  },
+  {
+    "word": "LOCAL",
+    "hint": "Variable visible only in its block"
+  },
+  {
+    "word": "FILE",
+    "hint": "Opaque type for stream operations"
+  },
+  {
+    "word": "STREAM",
+    "hint": "Abstraction for sequential data flow"
+  },
+  {
+    "word": "FORMAT",
+    "hint": "Specifier for printf and scanf"
+  },
+  {
+    "word": "SENTINEL",
+    "hint": "Special value marking end of data"
+  },
+  {
+    "word": "GUARD",
+    "hint": "Prevents multiple header inclusion"
+  },
+  {
+    "word": "OPAQUE",
+    "hint": "Hidden implementation pointer type"
+  },
+  {
+    "word": "HANDLE",
+    "hint": "Abstract reference to a resource"
+  },
+  {
+    "word": "MUTEX",
+    "hint": "Mutual exclusion synchronization lock"
+  },
+  {
+    "word": "THREAD",
+    "hint": "Concurrent execution unit"
+  },
+  {
+    "word": "ATOMIC",
+    "hint": "Indivisible operation on shared data"
+  },
+  {
+    "word": "FORK",
+    "hint": "Creates a child process copy"
+  },
+  {
+    "word": "EXEC",
+    "hint": "Replaces process with new program"
+  },
+  {
+    "word": "WAIT",
+    "hint": "Suspends until child process ends"
+  },
+  {
+    "word": "PIPE",
+    "hint": "Unidirectional interprocess data channel"
+  },
+  {
+    "word": "SOCKET",
+    "hint": "Endpoint for network communication"
+  },
+  {
+    "word": "SELECT",
+    "hint": "Monitors multiple file descriptors"
+  },
+  {
+    "word": "POLL",
+    "hint": "Waits for events on descriptors"
+  },
+  {
+    "word": "MMAP",
+    "hint": "Maps file into process memory"
+  },
+  {
+    "word": "SHMEM",
+    "hint": "Shared memory between processes"
+  },
+  {
+    "word": "GETENV",
+    "hint": "Retrieves environment variable value"
+  },
+  {
+    "word": "PUTENV",
+    "hint": "Sets an environment variable"
+  },
+  {
+    "word": "TMPFILE",
+    "hint": "Creates a temporary file stream"
+  },
+  {
+    "word": "TMPNAM",
+    "hint": "Generates a temporary file name"
+  },
+  {
+    "word": "REMOVE",
+    "hint": "Deletes a file from filesystem"
+  },
+  {
+    "word": "RENAME",
+    "hint": "Changes name of a file"
+  },
+  {
+    "word": "CLEARERR",
+    "hint": "Clears file stream error flags"
+  },
+  {
+    "word": "UNGETC",
+    "hint": "Pushes character back to stream"
+  },
+  {
+    "word": "SETVBUF",
+    "hint": "Sets stream buffering mode and size"
+  },
+  {
+    "word": "SETBUF",
+    "hint": "Sets buffer for a file stream"
+  },
+  {
+    "word": "VPRINTF",
+    "hint": "Variadic formatted output to stdout"
+  },
+  {
+    "word": "VFPRINTF",
+    "hint": "Variadic formatted output to file"
+  },
+  {
+    "word": "VSPRINTF",
+    "hint": "Variadic formatted output to string"
+  },
+  {
+    "word": "WCHAR",
+    "hint": "Wide character data type"
+  },
+  {
+    "word": "WCSCPY",
+    "hint": "Copies wide character string"
+  },
+  {
+    "word": "WCSLEN",
+    "hint": "Length of wide character string"
+  },
+  {
+    "word": "LOCALE",
+    "hint": "Region-specific formatting settings"
+  },
+  {
+    "word": "SETLOCALE",
+    "hint": "Sets program locale category"
+  },
+  {
+    "word": "LOCALECONV",
+    "hint": "Gets locale numeric formatting info"
+  },
+  {
+    "word": "MEMCHR",
+    "hint": "Finds byte in memory block"
+  },
+  {
+    "word": "STRSPN",
+    "hint": "Length of matching character prefix"
+  },
+  {
+    "word": "STRCSPN",
+    "hint": "Length before first rejected character"
+  },
+  {
+    "word": "STRPBRK",
+    "hint": "Finds first matching character in set"
+  },
+  {
+    "word": "STRTOF",
+    "hint": "String to float with error checking"
+  },
+  {
+    "word": "STRTOLD",
+    "hint": "String to long double conversion"
+  },
+  {
+    "word": "STRTOLL",
+    "hint": "String to long long conversion"
+  },
+  {
+    "word": "LLDIV",
+    "hint": "Long long division with remainder"
+  },
+  {
+    "word": "IMAXABS",
+    "hint": "Max-width integer absolute value"
+  },
+  {
+    "word": "IMAXDIV",
+    "hint": "Max-width integer division result"
+  },
+  {
+    "word": "BOOL",
+    "hint": "Boolean type from stdbool header"
+  },
+  {
+    "word": "TRUE",
+    "hint": "Boolean true value macro"
+  },
+  {
+    "word": "FALSE",
+    "hint": "Boolean false value macro"
+  },
+  {
+    "word": "COMPLEX",
+    "hint": "Complex number type keyword"
+  },
+  {
+    "word": "ALIGNOF",
+    "hint": "Queries alignment of a type"
+  },
+  {
+    "word": "ALIGNAS",
+    "hint": "Specifies alignment requirement"
+  },
+  {
+    "word": "NORETURN",
+    "hint": "Function that never returns"
+  },
+  {
+    "word": "GENERIC",
+    "hint": "Type-generic selection expression"
+  },
+  {
+    "word": "ONCE",
+    "hint": "Ensures single initialization call"
+  },
+  {
+    "word": "THRD",
+    "hint": "Thread management function prefix"
+  },
+  {
+    "word": "MTXLOCK",
+    "hint": "Acquires a mutex lock"
+  },
+  {
+    "word": "COND",
+    "hint": "Condition variable for threading"
+  },
+  {
+    "word": "STRDUP",
+    "hint": "Duplicates a string with malloc"
+  },
+  {
+    "word": "NONNULL",
+    "hint": "Attribute for non-null parameters"
+  },
+  {
+    "word": "FALLTHRU",
+    "hint": "Intentional switch case fall-through"
+  },
+  {
+    "word": "UNUSED",
+    "hint": "Suppresses unused variable warning"
+  },
+  {
+    "word": "PACKED",
+    "hint": "Removes struct padding attribute"
+  },
+  {
+    "word": "ALIGNED",
+    "hint": "Sets alignment attribute on type"
+  },
+  {
+    "word": "SECTION",
+    "hint": "Places symbol in named ELF section"
+  },
+  {
+    "word": "WEAK",
+    "hint": "Symbol with lower linking priority"
+  },
+  {
+    "word": "ALIAS",
+    "hint": "Alternative name for a function"
+  },
+  {
+    "word": "CDECL",
+    "hint": "Default C calling convention"
+  },
+  {
+    "word": "FASTCALL",
+    "hint": "Register-based calling convention"
+  },
+  {
+    "word": "STDCALL",
+    "hint": "Callee cleans stack convention"
+  },
+  {
+    "word": "INTRINSIC",
+    "hint": "Compiler built-in function"
+  },
+  {
+    "word": "BUILTIN",
+    "hint": "Compiler provided special function"
+  },
+  {
+    "word": "PREFETCH",
+    "hint": "Hints data cache loading"
+  },
+  {
+    "word": "LIKELY",
+    "hint": "Branch prediction optimization hint"
+  },
+  {
+    "word": "UNLIKELY",
+    "hint": "Branch prediction cold path hint"
+  },
+  {
+    "word": "CLEANUP",
+    "hint": "Auto-called function on scope exit"
+  },
+  {
+    "word": "EMBEDDED",
+    "hint": "Programming for hardware devices"
+  },
+  {
+    "word": "FIRMWARE",
+    "hint": "Software stored in hardware memory"
+  },
+  {
+    "word": "INTERRUPT",
+    "hint": "Hardware event handler routine"
+  },
+  {
+    "word": "BITMASK",
+    "hint": "Pattern for isolating specific bits"
+  },
+  {
+    "word": "NIBBLE",
+    "hint": "Four-bit data unit"
+  },
+  {
+    "word": "BYTE",
+    "hint": "Eight-bit data unit"
+  },
+  {
+    "word": "WORD",
+    "hint": "Natural data unit of processor"
+  },
+  {
+    "word": "ENDIANNESS",
+    "hint": "Byte order in multi-byte values"
+  },
+  {
+    "word": "TWOS",
+    "hint": "Complement for signed integers"
+  },
+  {
+    "word": "ONES",
+    "hint": "Complement bitwise inversion method"
+  },
+  {
+    "word": "VARARGS",
+    "hint": "Variable argument list mechanism"
+  },
+  {
+    "word": "VALIST",
+    "hint": "Type for variadic argument access"
+  },
+  {
+    "word": "VASTART",
+    "hint": "Initializes variadic argument list"
+  },
+  {
+    "word": "VAEND",
+    "hint": "Cleans up variadic argument list"
+  },
+  {
+    "word": "VAARG",
+    "hint": "Retrieves next variadic argument"
+  },
+  {
+    "word": "VACOPY",
+    "hint": "Copies variadic argument list state"
+  },
+  {
+    "word": "OFFSETOF",
+    "hint": "Byte offset of struct member"
+  },
+  {
+    "word": "CONTAINER",
+    "hint": "Gets struct from member pointer"
+  },
+  {
+    "word": "EMBED",
+    "hint": "Includes binary data in source"
+  },
+  {
+    "word": "DECAY",
+    "hint": "Array converts to pointer implicitly"
+  },
+  {
+    "word": "PROMOTION",
+    "hint": "Small integer widens to int"
+  },
+  {
+    "word": "NARROWING",
+    "hint": "Type conversion with data loss risk"
+  },
+  {
+    "word": "WIDENING",
+    "hint": "Safe conversion to larger type"
+  },
+  {
+    "word": "IMPLICIT",
+    "hint": "Automatic type conversion by compiler"
+  },
+  {
+    "word": "EXPLICIT",
+    "hint": "Programmer-specified type conversion"
+  },
+  {
+    "word": "PRECEDENCE",
+    "hint": "Operator evaluation priority order"
+  },
+  {
+    "word": "BINDING",
+    "hint": "Direction operators are evaluated"
+  },
+  {
+    "word": "POSTFIX",
+    "hint": "Operator applied after operand"
+  },
+  {
+    "word": "PREFIX",
+    "hint": "Operator applied before operand"
+  },
+  {
+    "word": "INCREMENT",
+    "hint": "Increases value by one"
+  },
+  {
+    "word": "DECREMENT",
+    "hint": "Decreases value by one"
+  },
+  {
+    "word": "CONDITIONAL",
+    "hint": "If-else decision structure"
+  },
+  {
+    "word": "NESTED",
+    "hint": "Structure placed inside another"
+  },
+  {
+    "word": "INFINITE",
+    "hint": "Loop that never terminates"
+  },
+  {
+    "word": "TRAVERSE",
+    "hint": "Visit each element in sequence"
+  },
+  {
+    "word": "INDEX",
+    "hint": "Position number in an array"
+  },
+  {
+    "word": "BOUNDS",
+    "hint": "Valid range of array indices"
+  },
+  {
+    "word": "SUBSCRIPT",
+    "hint": "Array element access operator"
+  },
+  {
+    "word": "MULTIDIM",
+    "hint": "Array with multiple dimensions"
+  },
+  {
+    "word": "JAGGED",
+    "hint": "Array of pointers to arrays"
+  },
+  {
+    "word": "MATRIX",
+    "hint": "Two-dimensional array structure"
+  },
+  {
+    "word": "LOOKUP",
+    "hint": "Table-based value retrieval"
+  },
+  {
+    "word": "HASHTABLE",
+    "hint": "Key-value mapping data structure"
+  },
+  {
+    "word": "LINKED",
+    "hint": "List with pointer-connected nodes"
+  },
+  {
+    "word": "NODE",
+    "hint": "Element in a linked data structure"
+  },
+  {
+    "word": "HEAD",
+    "hint": "First node in a linked list"
+  },
+  {
+    "word": "TAIL",
+    "hint": "Last node in a linked list"
+  },
+  {
+    "word": "QUEUE",
+    "hint": "FIFO data structure"
+  },
+  {
+    "word": "DEQUEUE",
+    "hint": "Removes element from front of queue"
+  },
+  {
+    "word": "ENQUEUE",
+    "hint": "Adds element to end of queue"
+  },
+  {
+    "word": "PUSH",
+    "hint": "Adds element to top of stack"
+  },
+  {
+    "word": "TREE",
+    "hint": "Hierarchical node-based structure"
+  },
+  {
+    "word": "GRAPH",
+    "hint": "Nodes connected by edges"
+  },
+  {
+    "word": "SORTING",
+    "hint": "Arranging elements in order"
+  },
+  {
+    "word": "SEARCH",
+    "hint": "Finding element in collection"
+  },
+  {
+    "word": "HASHING",
+    "hint": "Maps data to fixed-size values"
+  },
+  {
+    "word": "COLLISION",
+    "hint": "Two keys mapping to same hash"
+  },
+  {
+    "word": "PROBING",
+    "hint": "Resolving hash table collisions"
+  },
+  {
+    "word": "CHAINING",
+    "hint": "Linked list collision resolution"
+  },
+  {
+    "word": "PIVOT",
+    "hint": "Partition element in quicksort"
+  },
+  {
+    "word": "MERGE",
+    "hint": "Combines two sorted sequences"
+  },
+  {
+    "word": "BUBBLE",
+    "hint": "Simple swap-based sorting method"
+  },
+  {
+    "word": "INSERTION",
+    "hint": "Sorting by placing in position"
+  },
+  {
+    "word": "SELECTION",
+    "hint": "Sorting by finding minimum each pass"
+  },
+  {
+    "word": "WPRINTF",
+    "hint": "Wide character formatted output"
+  },
+  {
+    "word": "PTRDIFF",
+    "hint": "Type for pointer subtraction result"
+  },
+  {
+    "word": "INTPTR",
+    "hint": "Integer type that holds a pointer"
+  },
+  {
+    "word": "UINTPTR",
+    "hint": "Unsigned integer holding pointer value"
+  },
+  {
+    "word": "SSIZE",
+    "hint": "Signed variant of size type"
+  },
+  {
+    "word": "LINE",
+    "hint": "Predefined macro for line number"
+  },
+  {
+    "word": "DATE",
+    "hint": "Predefined macro for compile date"
+  },
+  {
+    "word": "FUNC",
+    "hint": "Predefined identifier for function name"
+  },
+  {
+    "word": "STRINGIFY",
+    "hint": "Macro operator converting to string"
+  },
+  {
+    "word": "CONCAT",
+    "hint": "Macro token pasting operator"
+  },
+  {
+    "word": "OBJLIKE",
+    "hint": "Simple text replacement macro"
+  },
+  {
+    "word": "FUNCLIKE",
+    "hint": "Macro that accepts parameters"
+  },
+  {
+    "word": "MULTILINE",
+    "hint": "Macro continued with backslash"
+  },
+  {
+    "word": "POISON",
+    "hint": "Pragma making identifier an error"
+  },
+  {
+    "word": "TRIGRAPH",
+    "hint": "Three-char alternate symbol sequence"
+  },
+  {
+    "word": "DIGRAPH",
+    "hint": "Two-char alternate token spelling"
+  },
+  {
+    "word": "ESCAPE",
+    "hint": "Backslash special character sequence"
+  },
+  {
+    "word": "NEWLINE",
+    "hint": "Line ending escape character"
+  },
+  {
+    "word": "TABCHAR",
+    "hint": "Horizontal tab escape character"
+  },
+  {
+    "word": "BACKSLASH",
+    "hint": "Escape character in string literals"
+  },
+  {
+    "word": "OCTAL",
+    "hint": "Base-eight number representation"
+  },
+  {
+    "word": "HEXADEC",
+    "hint": "Base-sixteen number representation"
+  },
+  {
+    "word": "DECIMAL",
+    "hint": "Base-ten number representation"
+  },
+  {
+    "word": "MANTISSA",
+    "hint": "Significand of floating point number"
+  },
+  {
+    "word": "EXPONENT",
+    "hint": "Power part of floating point number"
+  },
+  {
+    "word": "INFINITY",
+    "hint": "Special floating point value"
+  },
+  {
+    "word": "ISINF",
+    "hint": "Tests for infinity value"
+  },
+  {
+    "word": "ISNAN",
+    "hint": "Tests for not-a-number value"
+  },
+  {
+    "word": "FPCLASS",
+    "hint": "Classifies floating point value"
+  },
+  {
+    "word": "DENORMAL",
+    "hint": "Subnormal floating point number"
+  },
+  {
+    "word": "ROUNDOFF",
+    "hint": "Floating point precision error"
+  },
+  {
+    "word": "EPSILON",
+    "hint": "Smallest meaningful float difference"
+  },
+  {
+    "word": "TRUNC",
+    "hint": "Rounds toward zero"
+  },
+  {
+    "word": "ROUND",
+    "hint": "Rounds to nearest integer"
+  },
+  {
+    "word": "COPYSIGN",
+    "hint": "Copies sign between float values"
+  },
+  {
+    "word": "NEXTAFTER",
+    "hint": "Adjacent floating point value"
+  },
+  {
+    "word": "REMAINDER",
+    "hint": "IEEE floating point remainder"
+  },
+  {
+    "word": "FDIM",
+    "hint": "Positive difference of two floats"
+  },
+  {
+    "word": "FMAX",
+    "hint": "Returns larger of two floats"
+  },
+  {
+    "word": "FMIN",
+    "hint": "Returns smaller of two floats"
+  },
+  {
+    "word": "HYPOT",
+    "hint": "Computes hypotenuse length"
+  },
+  {
+    "word": "CBRT",
+    "hint": "Computes cube root"
+  },
+  {
+    "word": "TGAMMA",
+    "hint": "True gamma function"
+  },
+  {
+    "word": "LGAMMA",
+    "hint": "Log of gamma function"
+  },
+  {
+    "word": "ERFC",
+    "hint": "Complementary error function"
+  },
+  {
+    "word": "ASIN",
+    "hint": "Inverse sine function"
+  },
+  {
+    "word": "ACOS",
+    "hint": "Inverse cosine function"
+  },
+  {
+    "word": "ATAN",
+    "hint": "Inverse tangent function"
+  },
+  {
+    "word": "SINH",
+    "hint": "Hyperbolic sine function"
+  },
+  {
+    "word": "COSH",
+    "hint": "Hyperbolic cosine function"
+  },
+  {
+    "word": "TANH",
+    "hint": "Hyperbolic tangent function"
+  },
+  {
+    "word": "ASINH",
+    "hint": "Inverse hyperbolic sine"
+  },
+  {
+    "word": "ACOSH",
+    "hint": "Inverse hyperbolic cosine"
+  },
+  {
+    "word": "ATANH",
+    "hint": "Inverse hyperbolic tangent"
+  },
+  {
+    "word": "SIGACTION",
+    "hint": "Extended signal handling function"
+  },
+  {
+    "word": "SIGHANDLER",
+    "hint": "Function type for signal handling"
+  },
+  {
+    "word": "SIGSEGV",
+    "hint": "Signal for invalid memory access"
+  },
+  {
+    "word": "SIGTERM",
+    "hint": "Signal requesting termination"
+  },
+  {
+    "word": "SIGINT",
+    "hint": "Signal for keyboard interrupt"
+  },
+  {
+    "word": "SIGABRT",
+    "hint": "Signal for abnormal termination"
+  },
+  {
+    "word": "LOCALTIME",
+    "hint": "Converts time to local struct"
+  },
+  {
+    "word": "WCSCMP",
+    "hint": "Compares wide character strings"
+  },
+  {
+    "word": "WCSCAT",
+    "hint": "Concatenates wide character strings"
+  },
+  {
+    "word": "ISGRAPH",
+    "hint": "Checks if character has graphical form"
+  },
+  {
+    "word": "ISXDIGIT",
+    "hint": "Checks if character is hex digit"
+  }
+]

@@ -1,0 +1,3063 @@
+[
+    {
+        "tags": [
+            "using",
+            "System;",
+            "class Program",
+            "{",
+            "static void Main()",
+            "{",
+            "}",
+            "}"
+        ],
+        "description": "Minimal C# Program"
+    },
+    {
+        "tags": [
+            "Console.WriteLine(",
+            "\"Hello\")",
+            ";"
+        ],
+        "description": "Console Write Line"
+    },
+    {
+        "tags": [
+            "Console.Write(",
+            "\"text\")",
+            ";"
+        ],
+        "description": "Console Write No Newline"
+    },
+    {
+        "tags": [
+            "string",
+            "input",
+            "=",
+            "Console.ReadLine()",
+            ";"
+        ],
+        "description": "Read Console Input"
+    },
+    {
+        "tags": [
+            "int",
+            "n",
+            "=",
+            "int.Parse(",
+            "Console.ReadLine())",
+            ";"
+        ],
+        "description": "Read Parse Integer"
+    },
+    {
+        "tags": [
+            "Console.WriteLine(",
+            "$\"{name} is {age}\")",
+            ";"
+        ],
+        "description": "String Interpolation Output"
+    },
+    {
+        "tags": [
+            "int",
+            "x",
+            "=",
+            "10",
+            ";"
+        ],
+        "description": "Integer Variable Declaration"
+    },
+    {
+        "tags": [
+            "double",
+            "d",
+            "=",
+            "3.14",
+            ";"
+        ],
+        "description": "Double Variable Declaration"
+    },
+    {
+        "tags": [
+            "float",
+            "f",
+            "=",
+            "3.14f",
+            ";"
+        ],
+        "description": "Float Variable Declaration"
+    },
+    {
+        "tags": [
+            "decimal",
+            "m",
+            "=",
+            "9.99m",
+            ";"
+        ],
+        "description": "Decimal Variable Declaration"
+    },
+    {
+        "tags": [
+            "char",
+            "c",
+            "=",
+            "'A'",
+            ";"
+        ],
+        "description": "Char Variable Declaration"
+    },
+    {
+        "tags": [
+            "bool",
+            "flag",
+            "=",
+            "true",
+            ";"
+        ],
+        "description": "Boolean Variable Declaration"
+    },
+    {
+        "tags": [
+            "string",
+            "name",
+            "=",
+            "\"Alice\"",
+            ";"
+        ],
+        "description": "String Variable Declaration"
+    },
+    {
+        "tags": [
+            "var",
+            "x",
+            "=",
+            "42",
+            ";"
+        ],
+        "description": "Var Implicit Typing"
+    },
+    {
+        "tags": [
+            "const",
+            "int",
+            "MAX",
+            "=",
+            "100",
+            ";"
+        ],
+        "description": "Constant Declaration"
+    },
+    {
+        "tags": [
+            "readonly",
+            "int",
+            "val",
+            "=",
+            "10",
+            ";"
+        ],
+        "description": "Readonly Field Declaration"
+    },
+    {
+        "tags": [
+            "long",
+            "big",
+            "=",
+            "999999L",
+            ";"
+        ],
+        "description": "Long Variable Declaration"
+    },
+    {
+        "tags": [
+            "byte",
+            "b",
+            "=",
+            "255",
+            ";"
+        ],
+        "description": "Byte Variable Declaration"
+    },
+    {
+        "tags": [
+            "dynamic",
+            "obj",
+            "=",
+            "42",
+            ";"
+        ],
+        "description": "Dynamic Variable"
+    },
+    {
+        "tags": [
+            "object",
+            "o",
+            "=",
+            "\"hello\"",
+            ";"
+        ],
+        "description": "Object Type Variable"
+    },
+    {
+        "tags": [
+            "int?",
+            "nullable",
+            "=",
+            "null",
+            ";"
+        ],
+        "description": "Nullable Int Declaration"
+    },
+    {
+        "tags": [
+            "int",
+            "val",
+            "=",
+            "nullable",
+            "??",
+            "0",
+            ";"
+        ],
+        "description": "Null Coalescing Operator"
+    },
+    {
+        "tags": [
+            "nullable",
+            "??=",
+            "42",
+            ";"
+        ],
+        "description": "Null Coalescing Assignment"
+    },
+    {
+        "tags": [
+            "int",
+            "len",
+            "=",
+            "str?.Length",
+            "??",
+            "0",
+            ";"
+        ],
+        "description": "Null Conditional Access"
+    },
+    {
+        "tags": [
+            "if",
+            "(x > 0)",
+            "{",
+            "/*true*/",
+            "}",
+            "else",
+            "{",
+            "/*false*/",
+            "}"
+        ],
+        "description": "If Else Statement"
+    },
+    {
+        "tags": [
+            "if",
+            "(a)",
+            "{}",
+            "else if",
+            "(b)",
+            "{}",
+            "else",
+            "{}"
+        ],
+        "description": "If Else-If Chain"
+    },
+    {
+        "tags": [
+            "(x > y)",
+            "?",
+            "x",
+            ":",
+            "y",
+            ";"
+        ],
+        "description": "Ternary Operator"
+    },
+    {
+        "tags": [
+            "switch",
+            "(val)",
+            "{",
+            "case 1:",
+            "break;",
+            "default:",
+            "break;",
+            "}"
+        ],
+        "description": "Switch Case Statement"
+    },
+    {
+        "tags": [
+            "var",
+            "result",
+            "=",
+            "x switch",
+            "{",
+            "1 => \"one\",",
+            "_ => \"other\"",
+            "};"
+        ],
+        "description": "Switch Expression"
+    },
+    {
+        "tags": [
+            "case",
+            "int n",
+            "when",
+            "n > 0:",
+            "break;"
+        ],
+        "description": "Switch Case When Guard"
+    },
+    {
+        "tags": [
+            "for",
+            "(int i=0;",
+            "i<n;",
+            "i++)",
+            "{",
+            "/*body*/",
+            "}"
+        ],
+        "description": "For Loop Structure"
+    },
+    {
+        "tags": [
+            "while",
+            "(x > 0)",
+            "{",
+            "x--;",
+            "}"
+        ],
+        "description": "While Loop Structure"
+    },
+    {
+        "tags": [
+            "do",
+            "{",
+            "x++;",
+            "}",
+            "while",
+            "(x < 10)",
+            ";"
+        ],
+        "description": "Do While Loop"
+    },
+    {
+        "tags": [
+            "foreach",
+            "(var item",
+            "in",
+            "list)",
+            "{",
+            "/*use item*/",
+            "}"
+        ],
+        "description": "Foreach Loop"
+    },
+    {
+        "tags": [
+            "foreach",
+            "(var (k,v)",
+            "in",
+            "dict)",
+            "{",
+            "/*use k,v*/",
+            "}"
+        ],
+        "description": "Foreach Deconstruct"
+    },
+    {
+        "tags": [
+            "int",
+            "Add(",
+            "int a,",
+            "int b)",
+            "{",
+            "return a + b;",
+            "}"
+        ],
+        "description": "Method Returning Sum"
+    },
+    {
+        "tags": [
+            "void",
+            "Greet()",
+            "{",
+            "Console.WriteLine(",
+            "\"Hi\");",
+            "}"
+        ],
+        "description": "Void Method Definition"
+    },
+    {
+        "tags": [
+            "int",
+            "Add(",
+            "int a,",
+            "int b = 0)",
+            "{",
+            "return a+b;",
+            "}"
+        ],
+        "description": "Default Parameter Method"
+    },
+    {
+        "tags": [
+            "void",
+            "Swap(",
+            "ref int a,",
+            "ref int b)",
+            "{",
+            "/*swap*/",
+            "}"
+        ],
+        "description": "Ref Parameter Method"
+    },
+    {
+        "tags": [
+            "void",
+            "GetValues(",
+            "out int x,",
+            "out int y)",
+            "{",
+            "x=1;y=2;",
+            "}"
+        ],
+        "description": "Out Parameter Method"
+    },
+    {
+        "tags": [
+            "void",
+            "Print(",
+            "params int[]",
+            "nums)",
+            "{",
+            "/*iterate*/",
+            "}"
+        ],
+        "description": "Params Array Method"
+    },
+    {
+        "tags": [
+            "static",
+            "int",
+            "Square(",
+            "int x)",
+            "=>",
+            "x * x",
+            ";"
+        ],
+        "description": "Expression Body Method"
+    },
+    {
+        "tags": [
+            "int",
+            "Sum(",
+            "int n)",
+            "{",
+            "if(n<=0)",
+            "return 0;",
+            "return n+Sum(n-1);",
+            "}"
+        ],
+        "description": "Recursive Sum Method"
+    },
+    {
+        "tags": [
+            "(int, string)",
+            "GetInfo()",
+            "{",
+            "return (1,\"hi\");",
+            "}"
+        ],
+        "description": "Tuple Return Method"
+    },
+    {
+        "tags": [
+            "var",
+            "(id, name)",
+            "=",
+            "GetInfo()",
+            ";"
+        ],
+        "description": "Tuple Deconstruction"
+    },
+    {
+        "tags": [
+            "static",
+            "void",
+            "Log(",
+            "this string s)",
+            "{",
+            "Console.WriteLine(s);",
+            "}"
+        ],
+        "description": "Extension Method"
+    },
+    {
+        "tags": [
+            "void",
+            "Print(int x);",
+            "void",
+            "Print(string s);"
+        ],
+        "description": "Method Overloading"
+    },
+    {
+        "tags": [
+            "int[]",
+            "arr",
+            "=",
+            "{1, 2, 3}",
+            ";"
+        ],
+        "description": "Array Initialization"
+    },
+    {
+        "tags": [
+            "int[]",
+            "arr",
+            "=",
+            "new int[5]",
+            ";"
+        ],
+        "description": "Array With Size"
+    },
+    {
+        "tags": [
+            "int[,]",
+            "mat",
+            "=",
+            "new int[3,3]",
+            ";"
+        ],
+        "description": "2D Array Declaration"
+    },
+    {
+        "tags": [
+            "int[][]",
+            "jagged",
+            "=",
+            "new int[3][]",
+            ";"
+        ],
+        "description": "Jagged Array Declaration"
+    },
+    {
+        "tags": [
+            "Array.Sort(",
+            "arr)",
+            ";"
+        ],
+        "description": "Sort Array"
+    },
+    {
+        "tags": [
+            "Array.Reverse(",
+            "arr)",
+            ";"
+        ],
+        "description": "Reverse Array"
+    },
+    {
+        "tags": [
+            "int",
+            "idx",
+            "=",
+            "Array.IndexOf(",
+            "arr, val)",
+            ";"
+        ],
+        "description": "Find Array Index"
+    },
+    {
+        "tags": [
+            "Array.Copy(",
+            "src,",
+            "dst,",
+            "len)",
+            ";"
+        ],
+        "description": "Copy Array Elements"
+    },
+    {
+        "tags": [
+            "int",
+            "len",
+            "=",
+            "arr.Length",
+            ";"
+        ],
+        "description": "Array Length Property"
+    },
+    {
+        "tags": [
+            "var",
+            "span",
+            "=",
+            "arr.AsSpan()",
+            ";"
+        ],
+        "description": "Array To Span"
+    },
+    {
+        "tags": [
+            "List<int>",
+            "list",
+            "=",
+            "new()",
+            ";"
+        ],
+        "description": "List Declaration"
+    },
+    {
+        "tags": [
+            "list.Add(",
+            "42)",
+            ";"
+        ],
+        "description": "List Add Element"
+    },
+    {
+        "tags": [
+            "list.Remove(",
+            "42)",
+            ";"
+        ],
+        "description": "List Remove Element"
+    },
+    {
+        "tags": [
+            "list.RemoveAt(",
+            "0)",
+            ";"
+        ],
+        "description": "List Remove At Index"
+    },
+    {
+        "tags": [
+            "list.Insert(",
+            "0,",
+            "val)",
+            ";"
+        ],
+        "description": "List Insert At Index"
+    },
+    {
+        "tags": [
+            "list.Contains(",
+            "42)",
+            ";"
+        ],
+        "description": "List Contains Check"
+    },
+    {
+        "tags": [
+            "list.Sort()",
+            ";"
+        ],
+        "description": "List Sort"
+    },
+    {
+        "tags": [
+            "list.Clear()",
+            ";"
+        ],
+        "description": "List Clear All"
+    },
+    {
+        "tags": [
+            "int",
+            "count",
+            "=",
+            "list.Count",
+            ";"
+        ],
+        "description": "List Count Property"
+    },
+    {
+        "tags": [
+            "list.ForEach(",
+            "x =>",
+            "Console.Write(x))",
+            ";"
+        ],
+        "description": "List ForEach Lambda"
+    },
+    {
+        "tags": [
+            "Dictionary<string,int>",
+            "dict",
+            "=",
+            "new()",
+            ";"
+        ],
+        "description": "Dictionary Declaration"
+    },
+    {
+        "tags": [
+            "dict[\"key\"]",
+            "=",
+            "42",
+            ";"
+        ],
+        "description": "Dictionary Set Value"
+    },
+    {
+        "tags": [
+            "dict.Add(",
+            "\"key\",",
+            "42)",
+            ";"
+        ],
+        "description": "Dictionary Add Pair"
+    },
+    {
+        "tags": [
+            "if(",
+            "dict.ContainsKey(",
+            "\"key\"))",
+            "/*found*/"
+        ],
+        "description": "Dictionary Contains Key"
+    },
+    {
+        "tags": [
+            "if(",
+            "dict.TryGetValue(",
+            "\"key\",",
+            "out var v))",
+            "{}"
+        ],
+        "description": "Dictionary Try Get Value"
+    },
+    {
+        "tags": [
+            "dict.Remove(",
+            "\"key\")",
+            ";"
+        ],
+        "description": "Dictionary Remove Key"
+    },
+    {
+        "tags": [
+            "HashSet<int>",
+            "set",
+            "=",
+            "new()",
+            ";"
+        ],
+        "description": "HashSet Declaration"
+    },
+    {
+        "tags": [
+            "set.Add(1);",
+            "set.Remove(1);",
+            "set.Contains(1);"
+        ],
+        "description": "HashSet Operations"
+    },
+    {
+        "tags": [
+            "set.UnionWith(",
+            "other)",
+            ";"
+        ],
+        "description": "HashSet Union"
+    },
+    {
+        "tags": [
+            "set.IntersectWith(",
+            "other)",
+            ";"
+        ],
+        "description": "HashSet Intersection"
+    },
+    {
+        "tags": [
+            "Queue<int>",
+            "q",
+            "=",
+            "new()",
+            ";"
+        ],
+        "description": "Queue Declaration"
+    },
+    {
+        "tags": [
+            "q.Enqueue(10);",
+            "q.Peek();",
+            "q.Dequeue();"
+        ],
+        "description": "Queue Operations"
+    },
+    {
+        "tags": [
+            "Stack<int>",
+            "s",
+            "=",
+            "new()",
+            ";"
+        ],
+        "description": "Stack Declaration"
+    },
+    {
+        "tags": [
+            "s.Push(10);",
+            "s.Peek();",
+            "s.Pop();"
+        ],
+        "description": "Stack Operations"
+    },
+    {
+        "tags": [
+            "LinkedList<int>",
+            "ll",
+            "=",
+            "new()",
+            ";"
+        ],
+        "description": "LinkedList Declaration"
+    },
+    {
+        "tags": [
+            "SortedDictionary<",
+            "string,int>",
+            "sd",
+            "=",
+            "new();"
+        ],
+        "description": "SortedDictionary Declaration"
+    },
+    {
+        "tags": [
+            "SortedSet<int>",
+            "ss",
+            "=",
+            "new()",
+            ";"
+        ],
+        "description": "SortedSet Declaration"
+    },
+    {
+        "tags": [
+            "PriorityQueue<",
+            "string,int>",
+            "pq",
+            "=",
+            "new();"
+        ],
+        "description": "PriorityQueue Declaration"
+    },
+    {
+        "tags": [
+            "class",
+            "Dog",
+            "{",
+            "public string Name;",
+            "public void Bark();",
+            "}"
+        ],
+        "description": "Simple Class Definition"
+    },
+    {
+        "tags": [
+            "class",
+            "Point",
+            "{",
+            "public int X;",
+            "public int Y;",
+            "public Point(int x,int y)",
+            "{X=x;Y=y;}",
+            "}"
+        ],
+        "description": "Class With Constructor"
+    },
+    {
+        "tags": [
+            "public",
+            "string Name",
+            "{",
+            "get;",
+            "set;",
+            "}"
+        ],
+        "description": "Auto Property"
+    },
+    {
+        "tags": [
+            "public",
+            "string Name",
+            "{",
+            "get;",
+            "init;",
+            "}"
+        ],
+        "description": "Init Only Property"
+    },
+    {
+        "tags": [
+            "public",
+            "int Age",
+            "{",
+            "get;",
+            "private set;",
+            "}"
+        ],
+        "description": "Private Setter Property"
+    },
+    {
+        "tags": [
+            "private int _x;",
+            "public int X",
+            "{",
+            "get => _x;",
+            "set => _x = value;",
+            "}"
+        ],
+        "description": "Full Property Definition"
+    },
+    {
+        "tags": [
+            "public",
+            "required",
+            "string Name",
+            "{",
+            "get;",
+            "set;",
+            "}"
+        ],
+        "description": "Required Property C#11"
+    },
+    {
+        "tags": [
+            "public",
+            "int Count",
+            "=>",
+            "list.Count",
+            ";"
+        ],
+        "description": "Expression Body Property"
+    },
+    {
+        "tags": [
+            "public",
+            "int this[int i]",
+            "{",
+            "get => arr[i];",
+            "set => arr[i]=value;",
+            "}"
+        ],
+        "description": "Indexer Property"
+    },
+    {
+        "tags": [
+            "class",
+            "Animal",
+            "{",
+            "public virtual",
+            "void Speak()",
+            "{}",
+            "}"
+        ],
+        "description": "Virtual Method Class"
+    },
+    {
+        "tags": [
+            "class",
+            "Dog",
+            ":",
+            "Animal",
+            "{",
+            "public override",
+            "void Speak()",
+            "{}",
+            "}"
+        ],
+        "description": "Override Method Class"
+    },
+    {
+        "tags": [
+            "abstract",
+            "class",
+            "Shape",
+            "{",
+            "public abstract",
+            "double Area();",
+            "}"
+        ],
+        "description": "Abstract Class Definition"
+    },
+    {
+        "tags": [
+            "class",
+            "Circle",
+            ":",
+            "Shape",
+            "{",
+            "public override",
+            "double Area()",
+            "=> Math.PI*r*r;",
+            "}"
+        ],
+        "description": "Abstract Class Override"
+    },
+    {
+        "tags": [
+            "sealed",
+            "class",
+            "Final",
+            "{",
+            "/*no inherit*/",
+            "}"
+        ],
+        "description": "Sealed Class"
+    },
+    {
+        "tags": [
+            "static",
+            "class",
+            "Helper",
+            "{",
+            "public static",
+            "void Log();",
+            "}"
+        ],
+        "description": "Static Class Definition"
+    },
+    {
+        "tags": [
+            "partial",
+            "class",
+            "MyClass",
+            "{",
+            "/*part 1*/",
+            "}"
+        ],
+        "description": "Partial Class"
+    },
+    {
+        "tags": [
+            "public",
+            "class",
+            "Outer",
+            "{",
+            "private class",
+            "Inner { }",
+            "}"
+        ],
+        "description": "Nested Class"
+    },
+    {
+        "tags": [
+            "class",
+            "Box<T>",
+            "{",
+            "public T Value;",
+            "public Box(T v)",
+            "{Value=v;}",
+            "}"
+        ],
+        "description": "Generic Class"
+    },
+    {
+        "tags": [
+            "class",
+            "Repo<T>",
+            "where T",
+            ": class,",
+            "new()",
+            "{",
+            "}"
+        ],
+        "description": "Generic Constraint Class"
+    },
+    {
+        "tags": [
+            "where T",
+            ":",
+            "IComparable<T>"
+        ],
+        "description": "Interface Generic Constraint"
+    },
+    {
+        "tags": [
+            "where T",
+            ":",
+            "struct"
+        ],
+        "description": "Struct Generic Constraint"
+    },
+    {
+        "tags": [
+            "interface",
+            "IAnimal",
+            "{",
+            "void Speak();",
+            "string Name {get;}",
+            "}"
+        ],
+        "description": "Interface Definition"
+    },
+    {
+        "tags": [
+            "class",
+            "Dog",
+            ":",
+            "IAnimal",
+            "{",
+            "public void Speak();",
+            "public string Name{get;}",
+            "}"
+        ],
+        "description": "Interface Implementation"
+    },
+    {
+        "tags": [
+            "class",
+            "Cat",
+            ":",
+            "IAnimal,",
+            "ICloneable",
+            "{",
+            "}"
+        ],
+        "description": "Multiple Interfaces"
+    },
+    {
+        "tags": [
+            "interface",
+            "ILogger",
+            "{",
+            "void Log(string m)",
+            "=>",
+            "Console.WriteLine(m);",
+            "}"
+        ],
+        "description": "Default Interface Method"
+    },
+    {
+        "tags": [
+            "struct",
+            "Point",
+            "{",
+            "public int X;",
+            "public int Y;",
+            "}"
+        ],
+        "description": "Struct Definition"
+    },
+    {
+        "tags": [
+            "readonly",
+            "struct",
+            "Vec2",
+            "{",
+            "public readonly",
+            "int X, Y;",
+            "}"
+        ],
+        "description": "Readonly Struct"
+    },
+    {
+        "tags": [
+            "ref",
+            "struct",
+            "Span",
+            "{",
+            "/*stack only*/",
+            "}"
+        ],
+        "description": "Ref Struct Declaration"
+    },
+    {
+        "tags": [
+            "record",
+            "Person(",
+            "string Name,",
+            "int Age)",
+            ";"
+        ],
+        "description": "Record Type"
+    },
+    {
+        "tags": [
+            "record",
+            "struct",
+            "Point(",
+            "int X,",
+            "int Y)",
+            ";"
+        ],
+        "description": "Record Struct"
+    },
+    {
+        "tags": [
+            "var",
+            "p2",
+            "=",
+            "p1 with",
+            "{",
+            "Name = \"Bob\"",
+            "};"
+        ],
+        "description": "Record With Expression"
+    },
+    {
+        "tags": [
+            "record",
+            "class",
+            "Base;",
+            "record",
+            "class",
+            "Child",
+            ":",
+            "Base;"
+        ],
+        "description": "Record Inheritance"
+    },
+    {
+        "tags": [
+            "enum",
+            "Color",
+            "{",
+            "Red,",
+            "Green,",
+            "Blue",
+            "}"
+        ],
+        "description": "Enum Definition"
+    },
+    {
+        "tags": [
+            "enum",
+            "Day",
+            ":",
+            "byte",
+            "{",
+            "Mon=1,",
+            "Tue,",
+            "Wed",
+            "}"
+        ],
+        "description": "Enum With Underlying Type"
+    },
+    {
+        "tags": [
+            "[Flags]",
+            "enum",
+            "Perm",
+            "{",
+            "Read=1,",
+            "Write=2,",
+            "Exec=4",
+            "}"
+        ],
+        "description": "Flags Enum"
+    },
+    {
+        "tags": [
+            "Color",
+            "c",
+            "=",
+            "Color.Red",
+            ";"
+        ],
+        "description": "Enum Variable Usage"
+    },
+    {
+        "tags": [
+            "string",
+            "name",
+            "=",
+            "Enum.GetName(",
+            "typeof(Color),",
+            "val);"
+        ],
+        "description": "Enum Get Name"
+    },
+    {
+        "tags": [
+            "delegate",
+            "int",
+            "MathOp(",
+            "int a,",
+            "int b)",
+            ";"
+        ],
+        "description": "Delegate Declaration"
+    },
+    {
+        "tags": [
+            "MathOp",
+            "add",
+            "=",
+            "(a,b)",
+            "=>",
+            "a + b",
+            ";"
+        ],
+        "description": "Delegate Lambda Assignment"
+    },
+    {
+        "tags": [
+            "Action<int>",
+            "act",
+            "=",
+            "x =>",
+            "Console.Write(x)",
+            ";"
+        ],
+        "description": "Action Delegate"
+    },
+    {
+        "tags": [
+            "Func<int,int>",
+            "fn",
+            "=",
+            "x =>",
+            "x * x",
+            ";"
+        ],
+        "description": "Func Delegate"
+    },
+    {
+        "tags": [
+            "Predicate<int>",
+            "isEven",
+            "=",
+            "x =>",
+            "x % 2 == 0",
+            ";"
+        ],
+        "description": "Predicate Delegate"
+    },
+    {
+        "tags": [
+            "Func<int,int,int>",
+            "add",
+            "=",
+            "(a, b)",
+            "=>",
+            "a + b",
+            ";"
+        ],
+        "description": "Two Param Func"
+    },
+    {
+        "tags": [
+            "event",
+            "EventHandler",
+            "OnClick",
+            ";"
+        ],
+        "description": "Event Declaration"
+    },
+    {
+        "tags": [
+            "OnClick",
+            "+=",
+            "Handler",
+            ";"
+        ],
+        "description": "Event Subscribe"
+    },
+    {
+        "tags": [
+            "OnClick",
+            "-=",
+            "Handler",
+            ";"
+        ],
+        "description": "Event Unsubscribe"
+    },
+    {
+        "tags": [
+            "OnClick?.",
+            "Invoke(",
+            "this,",
+            "EventArgs.Empty)",
+            ";"
+        ],
+        "description": "Event Raise Invoke"
+    },
+    {
+        "tags": [
+            "event",
+            "EventHandler<",
+            "MyArgs>",
+            "Changed;"
+        ],
+        "description": "Generic Event Handler"
+    },
+    {
+        "tags": [
+            "var",
+            "sq",
+            "=",
+            "(int x)",
+            "=>",
+            "x * x",
+            ";"
+        ],
+        "description": "Lambda Expression"
+    },
+    {
+        "tags": [
+            "list.Where(",
+            "x =>",
+            "x > 5)",
+            ";"
+        ],
+        "description": "Lambda In Where"
+    },
+    {
+        "tags": [
+            "list.Select(",
+            "x =>",
+            "x * 2)",
+            ";"
+        ],
+        "description": "Lambda In Select"
+    },
+    {
+        "tags": [
+            "list.OrderBy(",
+            "x =>",
+            "x)",
+            ";"
+        ],
+        "description": "Lambda In OrderBy"
+    },
+    {
+        "tags": [
+            "list.Any(",
+            "x =>",
+            "x > 10)",
+            ";"
+        ],
+        "description": "Lambda In Any"
+    },
+    {
+        "tags": [
+            "list.All(",
+            "x =>",
+            "x > 0)",
+            ";"
+        ],
+        "description": "Lambda In All"
+    },
+    {
+        "tags": [
+            "list.First(",
+            "x =>",
+            "x > 5)",
+            ";"
+        ],
+        "description": "Lambda In First"
+    },
+    {
+        "tags": [
+            "list.Count(",
+            "x =>",
+            "x > 0)",
+            ";"
+        ],
+        "description": "Lambda In Count"
+    },
+    {
+        "tags": [
+            "var",
+            "result",
+            "=",
+            "from x",
+            "in list",
+            "where x>5",
+            "select x;"
+        ],
+        "description": "LINQ Query Syntax"
+    },
+    {
+        "tags": [
+            "var",
+            "result",
+            "=",
+            "from x",
+            "in list",
+            "orderby x",
+            "select x;"
+        ],
+        "description": "LINQ Order By Query"
+    },
+    {
+        "tags": [
+            "var",
+            "groups",
+            "=",
+            "from x",
+            "in list",
+            "group x",
+            "by x.Key;"
+        ],
+        "description": "LINQ Group By Query"
+    },
+    {
+        "tags": [
+            "var",
+            "joined",
+            "=",
+            "from a in listA",
+            "join b in listB",
+            "on a.Id equals b.Id",
+            "select (a,b);"
+        ],
+        "description": "LINQ Join Query"
+    },
+    {
+        "tags": [
+            "list.Where()",
+            ".OrderBy()",
+            ".Select()",
+            ".ToList();"
+        ],
+        "description": "LINQ Method Chain"
+    },
+    {
+        "tags": [
+            "list.GroupBy(",
+            "x => x.Key)",
+            ".Select(g =>",
+            "new{g.Key})",
+            ";"
+        ],
+        "description": "LINQ GroupBy Method"
+    },
+    {
+        "tags": [
+            "list.Distinct()",
+            ".ToList()",
+            ";"
+        ],
+        "description": "LINQ Distinct"
+    },
+    {
+        "tags": [
+            "list.Skip(5)",
+            ".Take(10)",
+            ".ToList()",
+            ";"
+        ],
+        "description": "LINQ Skip Take"
+    },
+    {
+        "tags": [
+            "list.Aggregate(",
+            "(a,b) =>",
+            "a + b)",
+            ";"
+        ],
+        "description": "LINQ Aggregate"
+    },
+    {
+        "tags": [
+            "list.Sum()",
+            ";"
+        ],
+        "description": "LINQ Sum"
+    },
+    {
+        "tags": [
+            "list.Average()",
+            ";"
+        ],
+        "description": "LINQ Average"
+    },
+    {
+        "tags": [
+            "list.Min()",
+            ";",
+            "list.Max()",
+            ";"
+        ],
+        "description": "LINQ Min Max"
+    },
+    {
+        "tags": [
+            "list.Zip(",
+            "other,",
+            "(a,b) =>",
+            "a+b)",
+            ";"
+        ],
+        "description": "LINQ Zip Combine"
+    },
+    {
+        "tags": [
+            "list.SelectMany(",
+            "x => x.Items)",
+            ";"
+        ],
+        "description": "LINQ Select Many"
+    },
+    {
+        "tags": [
+            "try",
+            "{",
+            "/*code*/",
+            "}",
+            "catch",
+            "(Exception ex)",
+            "{",
+            "/*handle*/",
+            "}"
+        ],
+        "description": "Try Catch Block"
+    },
+    {
+        "tags": [
+            "try",
+            "{}",
+            "catch",
+            "{}",
+            "finally",
+            "{",
+            "/*cleanup*/",
+            "}"
+        ],
+        "description": "Try Catch Finally"
+    },
+    {
+        "tags": [
+            "throw new",
+            "Exception(",
+            "\"msg\")",
+            ";"
+        ],
+        "description": "Throw Exception"
+    },
+    {
+        "tags": [
+            "throw new",
+            "ArgumentException(",
+            "\"bad arg\")",
+            ";"
+        ],
+        "description": "Throw Argument Exception"
+    },
+    {
+        "tags": [
+            "throw new",
+            "InvalidOperationException(",
+            "\"invalid\")",
+            ";"
+        ],
+        "description": "Throw Invalid Operation"
+    },
+    {
+        "tags": [
+            "throw new",
+            "NotImplementedException()",
+            ";"
+        ],
+        "description": "Throw Not Implemented"
+    },
+    {
+        "tags": [
+            "catch",
+            "(FormatException)",
+            "{}",
+            "catch",
+            "(Exception)",
+            "{}"
+        ],
+        "description": "Multiple Catch Blocks"
+    },
+    {
+        "tags": [
+            "catch",
+            "(Exception ex)",
+            "when",
+            "(ex.Message.Contains(",
+            "\"key\"))",
+            "{}"
+        ],
+        "description": "Exception Filter When"
+    },
+    {
+        "tags": [
+            "class",
+            "MyError",
+            ":",
+            "Exception",
+            "{",
+            "public MyError(",
+            "string msg)",
+            ": base(msg){}",
+            "}"
+        ],
+        "description": "Custom Exception Class"
+    },
+    {
+        "tags": [
+            "async",
+            "Task<int>",
+            "GetAsync()",
+            "{",
+            "return await",
+            "FetchAsync();",
+            "}"
+        ],
+        "description": "Async Await Method"
+    },
+    {
+        "tags": [
+            "await",
+            "Task.Delay(",
+            "1000)",
+            ";"
+        ],
+        "description": "Await Task Delay"
+    },
+    {
+        "tags": [
+            "Task.Run(",
+            "() =>",
+            "DoWork())",
+            ";"
+        ],
+        "description": "Task Run Background"
+    },
+    {
+        "tags": [
+            "await",
+            "Task.WhenAll(",
+            "t1,",
+            "t2,",
+            "t3)",
+            ";"
+        ],
+        "description": "Await When All Tasks"
+    },
+    {
+        "tags": [
+            "await",
+            "Task.WhenAny(",
+            "t1,",
+            "t2)",
+            ";"
+        ],
+        "description": "Await When Any Task"
+    },
+    {
+        "tags": [
+            "var",
+            "result",
+            "=",
+            "await",
+            "httpClient.",
+            "GetStringAsync(url);"
+        ],
+        "description": "Await HTTP Get"
+    },
+    {
+        "tags": [
+            "async",
+            "IAsyncEnumerable<int>",
+            "Gen()",
+            "{",
+            "yield return 1;",
+            "await Task.Delay(100);",
+            "}"
+        ],
+        "description": "Async Enumerable"
+    },
+    {
+        "tags": [
+            "await foreach",
+            "(var item",
+            "in",
+            "AsyncStream())",
+            "{}"
+        ],
+        "description": "Await Foreach Stream"
+    },
+    {
+        "tags": [
+            "CancellationTokenSource",
+            "cts",
+            "=",
+            "new()",
+            ";"
+        ],
+        "description": "Cancellation Token Source"
+    },
+    {
+        "tags": [
+            "token.",
+            "ThrowIfCancellation",
+            "Requested()",
+            ";"
+        ],
+        "description": "Check Cancellation"
+    },
+    {
+        "tags": [
+            "ValueTask<int>",
+            "GetAsync()",
+            "=>",
+            "new(42)",
+            ";"
+        ],
+        "description": "ValueTask Return"
+    },
+    {
+        "tags": [
+            "SemaphoreSlim",
+            "sem",
+            "=",
+            "new(1, 1)",
+            ";"
+        ],
+        "description": "SemaphoreSlim Declaration"
+    },
+    {
+        "tags": [
+            "await",
+            "sem.WaitAsync();",
+            "try{/*work*/}",
+            "finally{",
+            "sem.Release();",
+            "}"
+        ],
+        "description": "Semaphore Wait Release"
+    },
+    {
+        "tags": [
+            "using",
+            "var reader",
+            "=",
+            "new StreamReader(",
+            "\"file.txt\")",
+            ";"
+        ],
+        "description": "Using StreamReader"
+    },
+    {
+        "tags": [
+            "File.ReadAllText(",
+            "\"file.txt\")",
+            ";"
+        ],
+        "description": "Read All File Text"
+    },
+    {
+        "tags": [
+            "File.WriteAllText(",
+            "\"file.txt\",",
+            "content)",
+            ";"
+        ],
+        "description": "Write All File Text"
+    },
+    {
+        "tags": [
+            "File.ReadAllLines(",
+            "\"file.txt\")",
+            ";"
+        ],
+        "description": "Read All File Lines"
+    },
+    {
+        "tags": [
+            "File.AppendAllText(",
+            "\"log.txt\",",
+            "msg)",
+            ";"
+        ],
+        "description": "Append To File"
+    },
+    {
+        "tags": [
+            "File.Exists(",
+            "\"file.txt\")",
+            ";"
+        ],
+        "description": "Check File Exists"
+    },
+    {
+        "tags": [
+            "File.Delete(",
+            "\"file.txt\")",
+            ";"
+        ],
+        "description": "Delete File"
+    },
+    {
+        "tags": [
+            "File.Copy(",
+            "src,",
+            "dst)",
+            ";"
+        ],
+        "description": "Copy File"
+    },
+    {
+        "tags": [
+            "File.Move(",
+            "old,",
+            "newPath)",
+            ";"
+        ],
+        "description": "Move Rename File"
+    },
+    {
+        "tags": [
+            "Directory.Create",
+            "Directory(",
+            "\"newDir\")",
+            ";"
+        ],
+        "description": "Create Directory"
+    },
+    {
+        "tags": [
+            "Directory.GetFiles(",
+            "path,",
+            "\"*.txt\")",
+            ";"
+        ],
+        "description": "Get Directory Files"
+    },
+    {
+        "tags": [
+            "Path.Combine(",
+            "dir,",
+            "file)",
+            ";"
+        ],
+        "description": "Combine File Paths"
+    },
+    {
+        "tags": [
+            "Path.GetExtension(",
+            "file)",
+            ";"
+        ],
+        "description": "Get File Extension"
+    },
+    {
+        "tags": [
+            "await",
+            "File.ReadAllTextAsync(",
+            "\"file.txt\")",
+            ";"
+        ],
+        "description": "Async Read File"
+    },
+    {
+        "tags": [
+            "await",
+            "File.WriteAllTextAsync(",
+            "\"file.txt\",",
+            "data)",
+            ";"
+        ],
+        "description": "Async Write File"
+    },
+    {
+        "tags": [
+            "using",
+            "(var fs",
+            "= new FileStream(",
+            "path,",
+            "FileMode.Open))",
+            "{}"
+        ],
+        "description": "FileStream Usage"
+    },
+    {
+        "tags": [
+            "string",
+            "s",
+            "=",
+            "str.ToUpper()",
+            ";"
+        ],
+        "description": "String To Upper"
+    },
+    {
+        "tags": [
+            "string",
+            "s",
+            "=",
+            "str.ToLower()",
+            ";"
+        ],
+        "description": "String To Lower"
+    },
+    {
+        "tags": [
+            "string",
+            "s",
+            "=",
+            "str.Trim()",
+            ";"
+        ],
+        "description": "String Trim Whitespace"
+    },
+    {
+        "tags": [
+            "string[]",
+            "parts",
+            "=",
+            "str.Split(',')",
+            ";"
+        ],
+        "description": "String Split"
+    },
+    {
+        "tags": [
+            "string",
+            "s",
+            "=",
+            "string.Join(",
+            "\",\",",
+            "arr)",
+            ";"
+        ],
+        "description": "String Join Array"
+    },
+    {
+        "tags": [
+            "bool",
+            "has",
+            "=",
+            "str.Contains(",
+            "\"key\")",
+            ";"
+        ],
+        "description": "String Contains Check"
+    },
+    {
+        "tags": [
+            "bool",
+            "sw",
+            "=",
+            "str.StartsWith(",
+            "\"pre\")",
+            ";"
+        ],
+        "description": "String Starts With"
+    },
+    {
+        "tags": [
+            "bool",
+            "ew",
+            "=",
+            "str.EndsWith(",
+            "\".txt\")",
+            ";"
+        ],
+        "description": "String Ends With"
+    },
+    {
+        "tags": [
+            "string",
+            "s",
+            "=",
+            "str.Replace(",
+            "\"old\",",
+            "\"new\")",
+            ";"
+        ],
+        "description": "String Replace"
+    },
+    {
+        "tags": [
+            "string",
+            "s",
+            "=",
+            "str.Substring(",
+            "0, 5)",
+            ";"
+        ],
+        "description": "String Substring"
+    },
+    {
+        "tags": [
+            "int",
+            "idx",
+            "=",
+            "str.IndexOf(",
+            "\"key\")",
+            ";"
+        ],
+        "description": "String Index Of"
+    },
+    {
+        "tags": [
+            "bool",
+            "empty",
+            "=",
+            "string.IsNullOr",
+            "Empty(str)",
+            ";"
+        ],
+        "description": "String Null Or Empty"
+    },
+    {
+        "tags": [
+            "bool",
+            "blank",
+            "=",
+            "string.IsNullOr",
+            "WhiteSpace(str)",
+            ";"
+        ],
+        "description": "String Null Or Whitespace"
+    },
+    {
+        "tags": [
+            "var",
+            "sb",
+            "=",
+            "new StringBuilder()",
+            ";",
+            "sb.Append(\"hi\");"
+        ],
+        "description": "StringBuilder Usage"
+    },
+    {
+        "tags": [
+            "string",
+            "s",
+            "=",
+            "$\"{x:N2}\"",
+            ";"
+        ],
+        "description": "Format Number String"
+    },
+    {
+        "tags": [
+            "string",
+            "raw",
+            "=",
+            "\"\"\"",
+            "raw text",
+            "\"\"\"",
+            ";"
+        ],
+        "description": "Raw String Literal"
+    },
+    {
+        "tags": [
+            "is",
+            "int n",
+            "&&",
+            "n > 0"
+        ],
+        "description": "Pattern Match Type Guard"
+    },
+    {
+        "tags": [
+            "if(obj",
+            "is",
+            "string s)",
+            "{",
+            "/*use s*/",
+            "}"
+        ],
+        "description": "Type Pattern Is"
+    },
+    {
+        "tags": [
+            "obj",
+            "switch",
+            "{",
+            "int i => i*2,",
+            "string s => s.Length,",
+            "_ => 0",
+            "}"
+        ],
+        "description": "Pattern Match Switch"
+    },
+    {
+        "tags": [
+            "case",
+            "(int x,",
+            "int y)",
+            "when",
+            "x > y:",
+            "break;"
+        ],
+        "description": "Tuple Pattern Match"
+    },
+    {
+        "tags": [
+            "{ Name:",
+            "\"Ali\",",
+            "Age: > 18 }",
+            "=>",
+            "true"
+        ],
+        "description": "Property Pattern Match"
+    },
+    {
+        "tags": [
+            "[1, ..,",
+            "var last]",
+            "=>",
+            "last"
+        ],
+        "description": "List Pattern Match"
+    },
+    {
+        "tags": [
+            ">= 0",
+            "and",
+            "<= 100"
+        ],
+        "description": "Relational Pattern"
+    },
+    {
+        "tags": [
+            "not null",
+            "and",
+            "{ Length:",
+            "> 0 }"
+        ],
+        "description": "Logical Pattern Combo"
+    },
+    {
+        "tags": [
+            "var",
+            "obj",
+            "=",
+            "new {",
+            "Name=\"Ali\",",
+            "Age=25",
+            "};"
+        ],
+        "description": "Anonymous Type"
+    },
+    {
+        "tags": [
+            "(int X,",
+            "int Y)",
+            "point",
+            "=",
+            "(10, 20)",
+            ";"
+        ],
+        "description": "Named Tuple"
+    },
+    {
+        "tags": [
+            "Span<int>",
+            "span",
+            "=",
+            "stackalloc",
+            "int[10]",
+            ";"
+        ],
+        "description": "Stack Alloc Span"
+    },
+    {
+        "tags": [
+            "ReadOnlySpan<char>",
+            "ros",
+            "=",
+            "\"hello\"",
+            ";"
+        ],
+        "description": "ReadOnly Span String"
+    },
+    {
+        "tags": [
+            "Memory<int>",
+            "mem",
+            "=",
+            "new int[10]",
+            ";"
+        ],
+        "description": "Memory Type Usage"
+    },
+    {
+        "tags": [
+            "var",
+            "slice",
+            "=",
+            "arr[1..^1]",
+            ";"
+        ],
+        "description": "Range Operator Slice"
+    },
+    {
+        "tags": [
+            "var",
+            "last",
+            "=",
+            "arr[^1]",
+            ";"
+        ],
+        "description": "Index From End"
+    },
+    {
+        "tags": [
+            "Range",
+            "r",
+            "=",
+            "1..5",
+            ";"
+        ],
+        "description": "Range Type Variable"
+    },
+    {
+        "tags": [
+            "Index",
+            "idx",
+            "=",
+            "^2",
+            ";"
+        ],
+        "description": "Index Type Variable"
+    },
+    {
+        "tags": [
+            "IEnumerable<int>",
+            "Gen()",
+            "{",
+            "yield return 1;",
+            "yield return 2;",
+            "}"
+        ],
+        "description": "Yield Return Iterator"
+    },
+    {
+        "tags": [
+            "yield",
+            "break",
+            ";"
+        ],
+        "description": "Yield Break Statement"
+    },
+    {
+        "tags": [
+            "using",
+            "System.IO;",
+            "using",
+            "System.Linq;",
+            "using",
+            "System.Collections.Generic;"
+        ],
+        "description": "Common Using Directives"
+    },
+    {
+        "tags": [
+            "global",
+            "using",
+            "System",
+            ";"
+        ],
+        "description": "Global Using Directive"
+    },
+    {
+        "tags": [
+            "using",
+            "Alias",
+            "=",
+            "System.Collections.",
+            "Generic.List<int>",
+            ";"
+        ],
+        "description": "Using Type Alias"
+    },
+    {
+        "tags": [
+            "namespace",
+            "MyApp",
+            ";"
+        ],
+        "description": "File Scoped Namespace"
+    },
+    {
+        "tags": [
+            "namespace",
+            "MyApp",
+            "{",
+            "class Foo{}",
+            "}"
+        ],
+        "description": "Block Scoped Namespace"
+    },
+    {
+        "tags": [
+            "[Serializable]",
+            "class",
+            "Data",
+            "{",
+            "}"
+        ],
+        "description": "Serializable Attribute"
+    },
+    {
+        "tags": [
+            "[Obsolete(",
+            "\"Use NewFn\")]",
+            "void OldFn()",
+            "{}"
+        ],
+        "description": "Obsolete Attribute"
+    },
+    {
+        "tags": [
+            "[Required]",
+            "public",
+            "string Name",
+            "{get;set;}"
+        ],
+        "description": "Required Attribute"
+    },
+    {
+        "tags": [
+            "[MaxLength(100)]",
+            "public",
+            "string Bio",
+            "{get;set;}"
+        ],
+        "description": "MaxLength Attribute"
+    },
+    {
+        "tags": [
+            "class",
+            "MyAttribute",
+            ":",
+            "Attribute",
+            "{",
+            "}"
+        ],
+        "description": "Custom Attribute Class"
+    },
+    {
+        "tags": [
+            "var",
+            "attrs",
+            "=",
+            "typeof(T).",
+            "GetCustomAttributes()",
+            ";"
+        ],
+        "description": "Get Custom Attributes"
+    },
+    {
+        "tags": [
+            "Type",
+            "t",
+            "=",
+            "typeof(",
+            "MyClass)",
+            ";"
+        ],
+        "description": "Typeof Reflection"
+    },
+    {
+        "tags": [
+            "Type",
+            "t",
+            "=",
+            "obj.GetType()",
+            ";"
+        ],
+        "description": "GetType Reflection"
+    },
+    {
+        "tags": [
+            "var",
+            "props",
+            "=",
+            "t.GetProperties()",
+            ";"
+        ],
+        "description": "Get Type Properties"
+    },
+    {
+        "tags": [
+            "var",
+            "method",
+            "=",
+            "t.GetMethod(",
+            "\"Fn\")",
+            ";"
+        ],
+        "description": "Get Method By Name"
+    },
+    {
+        "tags": [
+            "method.Invoke(",
+            "obj,",
+            "args)",
+            ";"
+        ],
+        "description": "Invoke Via Reflection"
+    },
+    {
+        "tags": [
+            "var",
+            "obj",
+            "=",
+            "Activator.",
+            "CreateInstance<T>()",
+            ";"
+        ],
+        "description": "Activator Create Instance"
+    },
+    {
+        "tags": [
+            "lock",
+            "(lockObj)",
+            "{",
+            "/*critical*/",
+            "}"
+        ],
+        "description": "Lock Statement"
+    },
+    {
+        "tags": [
+            "Interlocked.",
+            "Increment(",
+            "ref count)",
+            ";"
+        ],
+        "description": "Interlocked Increment"
+    },
+    {
+        "tags": [
+            "var",
+            "thread",
+            "=",
+            "new Thread(",
+            "DoWork)",
+            ";",
+            "thread.Start();"
+        ],
+        "description": "Thread Start"
+    },
+    {
+        "tags": [
+            "Parallel.ForEach(",
+            "items,",
+            "item =>",
+            "Process(item))",
+            ";"
+        ],
+        "description": "Parallel ForEach"
+    },
+    {
+        "tags": [
+            "Parallel.For(",
+            "0, n,",
+            "i =>",
+            "Process(i))",
+            ";"
+        ],
+        "description": "Parallel For Loop"
+    },
+    {
+        "tags": [
+            "Channel.",
+            "CreateBounded<int>(",
+            "100)",
+            ";"
+        ],
+        "description": "Bounded Channel"
+    },
+    {
+        "tags": [
+            "Mutex",
+            "mtx",
+            "=",
+            "new Mutex()",
+            ";"
+        ],
+        "description": "Mutex Declaration"
+    },
+    {
+        "tags": [
+            "using",
+            "var",
+            "timer",
+            "=",
+            "new Timer(",
+            "Callback, null,",
+            "0, 1000);"
+        ],
+        "description": "Timer Declaration"
+    },
+    {
+        "tags": [
+            "Lazy<T>",
+            "lazy",
+            "=",
+            "new(",
+            "() => new T())",
+            ";"
+        ],
+        "description": "Lazy Initialization"
+    },
+    {
+        "tags": [
+            "T",
+            "val",
+            "=",
+            "lazy.Value",
+            ";"
+        ],
+        "description": "Lazy Access Value"
+    },
+    {
+        "tags": [
+            "WeakReference<Obj>",
+            "wr",
+            "=",
+            "new(obj)",
+            ";"
+        ],
+        "description": "Weak Reference"
+    },
+    {
+        "tags": [
+            "GC.Collect()",
+            ";"
+        ],
+        "description": "Force Garbage Collection"
+    },
+    {
+        "tags": [
+            "using",
+            "IDisposable",
+            "pattern:",
+            "public void",
+            "Dispose()",
+            "{/*free*/}"
+        ],
+        "description": "IDisposable Pattern"
+    },
+    {
+        "tags": [
+            "using",
+            "(var res",
+            "= new Res())",
+            "{",
+            "/*use*/",
+            "}"
+        ],
+        "description": "Using Statement"
+    },
+    {
+        "tags": [
+            "using",
+            "var res",
+            "= new Res()",
+            ";"
+        ],
+        "description": "Using Declaration"
+    },
+    {
+        "tags": [
+            "Regex.IsMatch(",
+            "str,",
+            "pattern)",
+            ";"
+        ],
+        "description": "Regex Is Match"
+    },
+    {
+        "tags": [
+            "var",
+            "match",
+            "=",
+            "Regex.Match(",
+            "str,",
+            "pattern)",
+            ";"
+        ],
+        "description": "Regex Match"
+    },
+    {
+        "tags": [
+            "Regex.Replace(",
+            "str,",
+            "pattern,",
+            "\"rep\")",
+            ";"
+        ],
+        "description": "Regex Replace"
+    },
+    {
+        "tags": [
+            "[GeneratedRegex(",
+            "\"\\\\d+\")]",
+            "partial Regex",
+            "NumRegex();"
+        ],
+        "description": "Source Gen Regex"
+    },
+    {
+        "tags": [
+            "var",
+            "json",
+            "=",
+            "JsonSerializer.",
+            "Serialize(obj)",
+            ";"
+        ],
+        "description": "JSON Serialize"
+    },
+    {
+        "tags": [
+            "var",
+            "obj",
+            "=",
+            "JsonSerializer.",
+            "Deserialize<T>(",
+            "json)",
+            ";"
+        ],
+        "description": "JSON Deserialize"
+    },
+    {
+        "tags": [
+            "HttpClient",
+            "client",
+            "=",
+            "new()",
+            ";"
+        ],
+        "description": "HttpClient Declaration"
+    },
+    {
+        "tags": [
+            "var",
+            "resp",
+            "=",
+            "await client.",
+            "GetAsync(url)",
+            ";"
+        ],
+        "description": "HttpClient Get Async"
+    },
+    {
+        "tags": [
+            "var",
+            "resp",
+            "=",
+            "await client.",
+            "PostAsync(",
+            "url, content)",
+            ";"
+        ],
+        "description": "HttpClient Post Async"
+    },
+    {
+        "tags": [
+            "DateTime",
+            "now",
+            "=",
+            "DateTime.Now",
+            ";"
+        ],
+        "description": "Get Current DateTime"
+    },
+    {
+        "tags": [
+            "DateOnly",
+            "today",
+            "=",
+            "DateOnly.",
+            "FromDateTime(",
+            "DateTime.Now);"
+        ],
+        "description": "DateOnly From DateTime"
+    },
+    {
+        "tags": [
+            "TimeSpan",
+            "dur",
+            "=",
+            "TimeSpan.",
+            "FromMinutes(30)",
+            ";"
+        ],
+        "description": "TimeSpan Duration"
+    },
+    {
+        "tags": [
+            "Stopwatch",
+            "sw",
+            "=",
+            "Stopwatch.",
+            "StartNew()",
+            ";"
+        ],
+        "description": "Stopwatch Timer"
+    },
+    {
+        "tags": [
+            "Math.Max(",
+            "a, b)",
+            ";"
+        ],
+        "description": "Math Max Value"
+    },
+    {
+        "tags": [
+            "Math.Min(",
+            "a, b)",
+            ";"
+        ],
+        "description": "Math Min Value"
+    },
+    {
+        "tags": [
+            "Math.Abs(",
+            "x)",
+            ";"
+        ],
+        "description": "Math Absolute Value"
+    },
+    {
+        "tags": [
+            "Math.Sqrt(",
+            "x)",
+            ";"
+        ],
+        "description": "Math Square Root"
+    },
+    {
+        "tags": [
+            "Math.Round(",
+            "x, 2)",
+            ";"
+        ],
+        "description": "Math Round Decimal"
+    },
+    {
+        "tags": [
+            "Math.Clamp(",
+            "val, min,",
+            "max)",
+            ";"
+        ],
+        "description": "Math Clamp Value"
+    },
+    {
+        "tags": [
+            "Random",
+            "rng",
+            "=",
+            "new()",
+            ";",
+            "int r",
+            "= rng.Next(100);"
+        ],
+        "description": "Random Number Generation"
+    },
+    {
+        "tags": [
+            "int",
+            "x",
+            "=",
+            "(int)",
+            "3.14",
+            ";"
+        ],
+        "description": "Explicit Cast Double"
+    },
+    {
+        "tags": [
+            "var",
+            "s",
+            "=",
+            "obj",
+            "as",
+            "string",
+            ";"
+        ],
+        "description": "As Safe Cast"
+    },
+    {
+        "tags": [
+            "if(obj",
+            "is",
+            "int)",
+            "/*type check*/"
+        ],
+        "description": "Is Type Check"
+    },
+    {
+        "tags": [
+            "Convert.ToInt32(",
+            "str)",
+            ";"
+        ],
+        "description": "Convert To Integer"
+    },
+    {
+        "tags": [
+            "int.TryParse(",
+            "str,",
+            "out var n)",
+            ";"
+        ],
+        "description": "TryParse Integer"
+    },
+    {
+        "tags": [
+            "checked",
+            "{",
+            "int r",
+            "= x*y;",
+            "}"
+        ],
+        "description": "Checked Overflow"
+    },
+    {
+        "tags": [
+            "unchecked",
+            "{",
+            "int r",
+            "= x*y;",
+            "}"
+        ],
+        "description": "Unchecked Overflow"
+    },
+    {
+        "tags": [
+            "static",
+            "int",
+            "operator +(",
+            "Vec a,",
+            "Vec b)",
+            "=>",
+            "new(a.X+b.X);"
+        ],
+        "description": "Operator Overload"
+    },
+    {
+        "tags": [
+            "static",
+            "implicit",
+            "operator",
+            "double(",
+            "Meter m)",
+            "=>",
+            "m.Value;"
+        ],
+        "description": "Implicit Conversion"
+    },
+    {
+        "tags": [
+            "static",
+            "explicit",
+            "operator",
+            "int(",
+            "Meter m)",
+            "=>",
+            "(int)m.Value;"
+        ],
+        "description": "Explicit Conversion"
+    },
+    {
+        "tags": [
+            "public void",
+            "Deconstruct(",
+            "out int x,",
+            "out int y)",
+            "{",
+            "x=X;y=Y;",
+            "}"
+        ],
+        "description": "Deconstruct Method"
+    },
+    {
+        "tags": [
+            "#region",
+            "Methods",
+            "/*code*/",
+            "#endregion"
+        ],
+        "description": "Region Directive"
+    },
+    {
+        "tags": [
+            "#if",
+            "DEBUG",
+            "/*debug code*/",
+            "#endif"
+        ],
+        "description": "Conditional Compilation"
+    },
+    {
+        "tags": [
+            "#pragma",
+            "warning",
+            "disable",
+            "CS0168"
+        ],
+        "description": "Pragma Disable Warning"
+    },
+    {
+        "tags": [
+            "unsafe",
+            "{",
+            "int* p",
+            "= &x;",
+            "*p = 42;",
+            "}"
+        ],
+        "description": "Unsafe Pointer Block"
+    },
+    {
+        "tags": [
+            "fixed",
+            "(int* p",
+            "= arr)",
+            "{",
+            "/*use p*/",
+            "}"
+        ],
+        "description": "Fixed Pointer Statement"
+    },
+    {
+        "tags": [
+            "sizeof(",
+            "int)",
+            ";"
+        ],
+        "description": "Sizeof Operator"
+    },
+    {
+        "tags": [
+            "nameof(",
+            "variable)",
+            ";"
+        ],
+        "description": "Nameof Operator"
+    },
+    {
+        "tags": [
+            "default(",
+            "int)",
+            ";"
+        ],
+        "description": "Default Value Expression"
+    }
+]

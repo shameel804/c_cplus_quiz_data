@@ -1,0 +1,3383 @@
+[
+    {
+        "tags": [
+            "#include",
+            "<iostream>",
+            "int",
+            "main()",
+            "{",
+            "return 0;",
+            "}"
+        ],
+        "description": "Minimal C++ Program"
+    },
+    {
+        "tags": [
+            "#include",
+            "<iostream>",
+            "int",
+            "main()",
+            "{",
+            "std::cout<<\"Hi\";",
+            "return 0;",
+            "}"
+        ],
+        "description": "Hello World Program"
+    },
+    {
+        "tags": [
+            "using",
+            "namespace",
+            "std",
+            ";"
+        ],
+        "description": "Using Namespace Std"
+    },
+    {
+        "tags": [
+            "std::cout",
+            "<<",
+            "\"Hello\"",
+            "<<",
+            "std::endl",
+            ";"
+        ],
+        "description": "Console Output Statement"
+    },
+    {
+        "tags": [
+            "std::cin",
+            ">>",
+            "x",
+            ";"
+        ],
+        "description": "Console Input Statement"
+    },
+    {
+        "tags": [
+            "std::cerr",
+            "<<",
+            "\"Error!\"",
+            ";"
+        ],
+        "description": "Standard Error Output"
+    },
+    {
+        "tags": [
+            "std::getline(",
+            "std::cin,",
+            "str)",
+            ";"
+        ],
+        "description": "Read Full Line Input"
+    },
+    {
+        "tags": [
+            "int",
+            "x",
+            "=",
+            "10",
+            ";"
+        ],
+        "description": "Integer Variable Declaration"
+    },
+    {
+        "tags": [
+            "double",
+            "d",
+            "=",
+            "3.14",
+            ";"
+        ],
+        "description": "Double Variable Declaration"
+    },
+    {
+        "tags": [
+            "char",
+            "c",
+            "=",
+            "'A'",
+            ";"
+        ],
+        "description": "Char Variable Declaration"
+    },
+    {
+        "tags": [
+            "bool",
+            "flag",
+            "=",
+            "true",
+            ";"
+        ],
+        "description": "Boolean Variable Declaration"
+    },
+    {
+        "tags": [
+            "auto",
+            "val",
+            "=",
+            "42",
+            ";"
+        ],
+        "description": "Auto Type Deduction"
+    },
+    {
+        "tags": [
+            "auto",
+            "pi",
+            "=",
+            "3.14",
+            ";"
+        ],
+        "description": "Auto Double Deduction"
+    },
+    {
+        "tags": [
+            "const",
+            "int",
+            "MAX",
+            "=",
+            "100",
+            ";"
+        ],
+        "description": "Const Integer Declaration"
+    },
+    {
+        "tags": [
+            "constexpr",
+            "int",
+            "SIZE",
+            "=",
+            "256",
+            ";"
+        ],
+        "description": "Constexpr Variable"
+    },
+    {
+        "tags": [
+            "constexpr",
+            "int",
+            "sq(int x)",
+            "{",
+            "return x*x;",
+            "}"
+        ],
+        "description": "Constexpr Function"
+    },
+    {
+        "tags": [
+            "std::string",
+            "name",
+            "=",
+            "\"Alice\"",
+            ";"
+        ],
+        "description": "String Variable Declaration"
+    },
+    {
+        "tags": [
+            "std::string",
+            "s",
+            "=",
+            "str.substr(",
+            "0, 3)",
+            ";"
+        ],
+        "description": "String Substring"
+    },
+    {
+        "tags": [
+            "size_t",
+            "pos",
+            "=",
+            "str.find(",
+            "\"key\")",
+            ";"
+        ],
+        "description": "String Find Substring"
+    },
+    {
+        "tags": [
+            "str.append(",
+            "\"more\"",
+            ")",
+            ";"
+        ],
+        "description": "String Append Text"
+    },
+    {
+        "tags": [
+            "str.replace(",
+            "0,",
+            "3,",
+            "\"new\")",
+            ";"
+        ],
+        "description": "String Replace Range"
+    },
+    {
+        "tags": [
+            "str.erase(",
+            "0,",
+            "5)",
+            ";"
+        ],
+        "description": "String Erase Range"
+    },
+    {
+        "tags": [
+            "str.insert(",
+            "0,",
+            "\"prefix\")",
+            ";"
+        ],
+        "description": "String Insert Text"
+    },
+    {
+        "tags": [
+            "int",
+            "n",
+            "=",
+            "std::stoi(",
+            "str)",
+            ";"
+        ],
+        "description": "String To Integer"
+    },
+    {
+        "tags": [
+            "std::string",
+            "s",
+            "=",
+            "std::to_string(",
+            "42)",
+            ";"
+        ],
+        "description": "Integer To String"
+    },
+    {
+        "tags": [
+            "if",
+            "(x > 0)",
+            "{",
+            "/*true*/",
+            "}",
+            "else",
+            "{",
+            "/*false*/",
+            "}"
+        ],
+        "description": "If Else Statement"
+    },
+    {
+        "tags": [
+            "if",
+            "(a)",
+            "{}",
+            "else if",
+            "(b)",
+            "{}",
+            "else",
+            "{}"
+        ],
+        "description": "If Else-If Chain"
+    },
+    {
+        "tags": [
+            "(x > y)",
+            "?",
+            "x",
+            ":",
+            "y",
+            ";"
+        ],
+        "description": "Ternary Operator Expression"
+    },
+    {
+        "tags": [
+            "switch",
+            "(ch)",
+            "{",
+            "case 'A':",
+            "break;",
+            "default:",
+            "break;",
+            "}"
+        ],
+        "description": "Switch Case Statement"
+    },
+    {
+        "tags": [
+            "for",
+            "(int i=0;",
+            "i<n;",
+            "i++)",
+            "{",
+            "/*body*/",
+            "}"
+        ],
+        "description": "For Loop Structure"
+    },
+    {
+        "tags": [
+            "while",
+            "(x > 0)",
+            "{",
+            "x--;",
+            "}"
+        ],
+        "description": "While Loop Structure"
+    },
+    {
+        "tags": [
+            "do",
+            "{",
+            "x++;",
+            "}",
+            "while",
+            "(x < 10)",
+            ";"
+        ],
+        "description": "Do While Loop"
+    },
+    {
+        "tags": [
+            "for",
+            "(auto&",
+            "item",
+            ":",
+            "vec)",
+            "{",
+            "/*use item*/",
+            "}"
+        ],
+        "description": "Range-Based For Loop"
+    },
+    {
+        "tags": [
+            "for",
+            "(const auto&",
+            "item",
+            ":",
+            "list)",
+            "{",
+            "/*read*/",
+            "}"
+        ],
+        "description": "Const Range For Loop"
+    },
+    {
+        "tags": [
+            "for",
+            "(auto&&",
+            "item",
+            ":",
+            "rng)",
+            "{",
+            "/*forward*/",
+            "}"
+        ],
+        "description": "Universal Ref For Loop"
+    },
+    {
+        "tags": [
+            "int",
+            "add(",
+            "int a,",
+            "int b)",
+            "{",
+            "return a+b;",
+            "}"
+        ],
+        "description": "Function Returning Sum"
+    },
+    {
+        "tags": [
+            "void",
+            "greet()",
+            "{",
+            "std::cout<<\"Hi\";",
+            "}"
+        ],
+        "description": "Void Function Definition"
+    },
+    {
+        "tags": [
+            "int",
+            "add(int a,",
+            "int b=0)",
+            "{",
+            "return a+b;",
+            "}"
+        ],
+        "description": "Default Parameter Function"
+    },
+    {
+        "tags": [
+            "inline",
+            "int",
+            "sq(int x)",
+            "{",
+            "return x*x;",
+            "}"
+        ],
+        "description": "Inline Function Definition"
+    },
+    {
+        "tags": [
+            "void",
+            "swap(",
+            "int &a,",
+            "int &b)",
+            "{",
+            "int t=a;",
+            "a=b;",
+            "b=t;",
+            "}"
+        ],
+        "description": "Pass By Reference Swap"
+    },
+    {
+        "tags": [
+            "int&",
+            "ref",
+            "=",
+            "x",
+            ";"
+        ],
+        "description": "Reference Variable"
+    },
+    {
+        "tags": [
+            "const int&",
+            "cref",
+            "=",
+            "x",
+            ";"
+        ],
+        "description": "Const Reference Variable"
+    },
+    {
+        "tags": [
+            "int&&",
+            "rref",
+            "=",
+            "std::move(x)",
+            ";"
+        ],
+        "description": "Rvalue Reference"
+    },
+    {
+        "tags": [
+            "int",
+            "add(int,int);",
+            "double",
+            "add(double,double);"
+        ],
+        "description": "Function Overloading"
+    },
+    {
+        "tags": [
+            "template",
+            "<typename T>",
+            "T",
+            "max(T a,",
+            "T b)",
+            "{",
+            "return a>b?a:b;",
+            "}"
+        ],
+        "description": "Function Template"
+    },
+    {
+        "tags": [
+            "template",
+            "<typename T>",
+            "T",
+            "add(T a,",
+            "T b)",
+            "{",
+            "return a+b;",
+            "}"
+        ],
+        "description": "Template Add Function"
+    },
+    {
+        "tags": [
+            "template",
+            "<typename T,",
+            "typename U>",
+            "auto",
+            "fn(T a,",
+            "U b)",
+            "{}"
+        ],
+        "description": "Multi-Type Template"
+    },
+    {
+        "tags": [
+            "template",
+            "<int N>",
+            "struct",
+            "Fib{",
+            "static const int",
+            "val=Fib<N-1>::val",
+            "+Fib<N-2>::val;",
+            "};"
+        ],
+        "description": "Template Metaprogramming"
+    },
+    {
+        "tags": [
+            "template<>",
+            "struct Fib<0>",
+            "{",
+            "static const int",
+            "val=0;",
+            "};"
+        ],
+        "description": "Template Specialization"
+    },
+    {
+        "tags": [
+            "template",
+            "<typename... Args>",
+            "void",
+            "print(Args...)",
+            "{}"
+        ],
+        "description": "Variadic Template"
+    },
+    {
+        "tags": [
+            "auto",
+            "fn",
+            "=",
+            "[](int x)",
+            "{",
+            "return x*x;",
+            "};"
+        ],
+        "description": "Lambda Expression"
+    },
+    {
+        "tags": [
+            "auto",
+            "fn",
+            "=",
+            "[&]()",
+            "{",
+            "x++;",
+            "};"
+        ],
+        "description": "Lambda Capture By Ref"
+    },
+    {
+        "tags": [
+            "auto",
+            "fn",
+            "=",
+            "[=]()",
+            "{",
+            "return x;",
+            "};"
+        ],
+        "description": "Lambda Capture By Value"
+    },
+    {
+        "tags": [
+            "auto",
+            "fn",
+            "=",
+            "[x, &y]()",
+            "{",
+            "return x+y;",
+            "};"
+        ],
+        "description": "Lambda Mixed Capture"
+    },
+    {
+        "tags": [
+            "auto",
+            "fn",
+            "=",
+            "[]<typename T>",
+            "(T x)",
+            "{",
+            "return x;",
+            "};"
+        ],
+        "description": "Generic Lambda Template"
+    },
+    {
+        "tags": [
+            "auto",
+            "fn",
+            "=",
+            "[](auto x,",
+            "auto y)",
+            "{",
+            "return x+y;",
+            "};"
+        ],
+        "description": "Generic Lambda Auto"
+    },
+    {
+        "tags": [
+            "[](int x)",
+            "->",
+            "double",
+            "{",
+            "return x*1.5;",
+            "}"
+        ],
+        "description": "Lambda Trailing Return"
+    },
+    {
+        "tags": [
+            "std::function<",
+            "int(int)>",
+            "fn",
+            "=",
+            "[](int x){return x;};"
+        ],
+        "description": "Std Function Wrapper"
+    },
+    {
+        "tags": [
+            "class",
+            "Dog",
+            "{",
+            "public:",
+            "void bark();",
+            "};"
+        ],
+        "description": "Simple Class Definition"
+    },
+    {
+        "tags": [
+            "class",
+            "Point",
+            "{",
+            "int x,y;",
+            "public:",
+            "Point(int,int);",
+            "};"
+        ],
+        "description": "Class With Constructor"
+    },
+    {
+        "tags": [
+            "Point(",
+            "int x,",
+            "int y)",
+            ":",
+            "x(x),",
+            "y(y)",
+            "{}"
+        ],
+        "description": "Constructor Initializer List"
+    },
+    {
+        "tags": [
+            "~MyClass()",
+            "{",
+            "/*cleanup*/",
+            "}"
+        ],
+        "description": "Destructor Definition"
+    },
+    {
+        "tags": [
+            "MyClass()",
+            "=",
+            "default",
+            ";"
+        ],
+        "description": "Default Constructor"
+    },
+    {
+        "tags": [
+            "MyClass(",
+            "const MyClass&)",
+            "=",
+            "delete",
+            ";"
+        ],
+        "description": "Deleted Copy Constructor"
+    },
+    {
+        "tags": [
+            "MyClass(",
+            "const MyClass&",
+            "other)",
+            "=",
+            "default;"
+        ],
+        "description": "Default Copy Constructor"
+    },
+    {
+        "tags": [
+            "MyClass(",
+            "MyClass&&",
+            "other)",
+            "noexcept",
+            "{}"
+        ],
+        "description": "Move Constructor"
+    },
+    {
+        "tags": [
+            "MyClass&",
+            "operator=(",
+            "const MyClass&)",
+            "=",
+            "default;"
+        ],
+        "description": "Default Copy Assignment"
+    },
+    {
+        "tags": [
+            "MyClass&",
+            "operator=(",
+            "MyClass&&)",
+            "noexcept",
+            "{}"
+        ],
+        "description": "Move Assignment Operator"
+    },
+    {
+        "tags": [
+            "class",
+            "Base",
+            "{",
+            "public:",
+            "virtual void",
+            "speak();",
+            "};"
+        ],
+        "description": "Base Class Virtual Method"
+    },
+    {
+        "tags": [
+            "class",
+            "Dog",
+            ":",
+            "public",
+            "Base",
+            "{",
+            "void speak()",
+            "override;",
+            "};"
+        ],
+        "description": "Derived Class Override"
+    },
+    {
+        "tags": [
+            "class",
+            "Shape",
+            "{",
+            "public:",
+            "virtual double",
+            "area()",
+            "= 0;",
+            "};"
+        ],
+        "description": "Pure Virtual Function"
+    },
+    {
+        "tags": [
+            "class",
+            "Circle",
+            ":",
+            "public",
+            "Shape",
+            "{",
+            "double area()",
+            "override;",
+            "};"
+        ],
+        "description": "Abstract Class Override"
+    },
+    {
+        "tags": [
+            "class",
+            "D",
+            ":",
+            "public A,",
+            "public B",
+            "{",
+            "};"
+        ],
+        "description": "Multiple Inheritance"
+    },
+    {
+        "tags": [
+            "class",
+            "Base",
+            "{",
+            "protected:",
+            "int data;",
+            "};"
+        ],
+        "description": "Protected Class Member"
+    },
+    {
+        "tags": [
+            "class",
+            "A",
+            "{",
+            "private:",
+            "int x;",
+            "friend",
+            "class B;",
+            "};"
+        ],
+        "description": "Friend Class Declaration"
+    },
+    {
+        "tags": [
+            "friend",
+            "std::ostream&",
+            "operator<<(",
+            "std::ostream&,",
+            "const Obj&)",
+            ";"
+        ],
+        "description": "Friend Stream Operator"
+    },
+    {
+        "tags": [
+            "Point",
+            "operator+(",
+            "const Point&",
+            "other)",
+            "const",
+            "{",
+            "return {x+other.x,",
+            "y+other.y};",
+            "}"
+        ],
+        "description": "Plus Operator Overload"
+    },
+    {
+        "tags": [
+            "bool",
+            "operator==(",
+            "const Obj&",
+            "other)",
+            "const",
+            "{",
+            "return val==other.val;",
+            "}"
+        ],
+        "description": "Equality Operator Overload"
+    },
+    {
+        "tags": [
+            "bool",
+            "operator<(",
+            "const Obj&",
+            "other)",
+            "const",
+            "{",
+            "return val<other.val;",
+            "}"
+        ],
+        "description": "Less Than Overload"
+    },
+    {
+        "tags": [
+            "Obj&",
+            "operator+=(",
+            "const Obj&",
+            "o)",
+            "{",
+            "val+=o.val;",
+            "return *this;",
+            "}"
+        ],
+        "description": "Plus Equals Overload"
+    },
+    {
+        "tags": [
+            "int&",
+            "operator[](",
+            "size_t i)",
+            "{",
+            "return data[i];",
+            "}"
+        ],
+        "description": "Subscript Operator Overload"
+    },
+    {
+        "tags": [
+            "Obj&",
+            "operator++()",
+            "{",
+            "++val;",
+            "return *this;",
+            "}"
+        ],
+        "description": "Prefix Increment Overload"
+    },
+    {
+        "tags": [
+            "Obj",
+            "operator++(int)",
+            "{",
+            "Obj t=*this;",
+            "++val;",
+            "return t;",
+            "}"
+        ],
+        "description": "Postfix Increment Overload"
+    },
+    {
+        "tags": [
+            "auto",
+            "operator<=>(",
+            "const Obj&)",
+            "const",
+            "=",
+            "default;"
+        ],
+        "description": "Spaceship Operator Default"
+    },
+    {
+        "tags": [
+            "static",
+            "int",
+            "count",
+            ";"
+        ],
+        "description": "Static Class Member"
+    },
+    {
+        "tags": [
+            "int",
+            "MyClass::count",
+            "=",
+            "0",
+            ";"
+        ],
+        "description": "Static Member Init"
+    },
+    {
+        "tags": [
+            "static",
+            "MyClass&",
+            "instance()",
+            "{",
+            "static MyClass s;",
+            "return s;",
+            "}"
+        ],
+        "description": "Singleton Pattern"
+    },
+    {
+        "tags": [
+            "void",
+            "fn()",
+            "const",
+            "{",
+            "/*no modify*/",
+            "}"
+        ],
+        "description": "Const Member Function"
+    },
+    {
+        "tags": [
+            "mutable",
+            "int",
+            "cache",
+            ";"
+        ],
+        "description": "Mutable Member Variable"
+    },
+    {
+        "tags": [
+            "explicit",
+            "MyClass(",
+            "int val)",
+            "{}"
+        ],
+        "description": "Explicit Constructor"
+    },
+    {
+        "tags": [
+            "virtual",
+            "~Base()",
+            "=",
+            "default;"
+        ],
+        "description": "Virtual Destructor"
+    },
+    {
+        "tags": [
+            "class",
+            "final",
+            "Leaf",
+            ":",
+            "public",
+            "Base",
+            "{};"
+        ],
+        "description": "Final Class Declaration"
+    },
+    {
+        "tags": [
+            "void",
+            "fn()",
+            "override",
+            "final",
+            "{}"
+        ],
+        "description": "Final Override Method"
+    },
+    {
+        "tags": [
+            "template",
+            "<typename T>",
+            "class",
+            "Box",
+            "{",
+            "T val;",
+            "public:",
+            "Box(T v);",
+            "};"
+        ],
+        "description": "Class Template"
+    },
+    {
+        "tags": [
+            "template",
+            "<typename T>",
+            "class",
+            "Stack",
+            "{",
+            "std::vector<T>",
+            "data;",
+            "};"
+        ],
+        "description": "Template Stack Class"
+    },
+    {
+        "tags": [
+            "namespace",
+            "MyLib",
+            "{",
+            "void fn();",
+            "int val;",
+            "}"
+        ],
+        "description": "Namespace Definition"
+    },
+    {
+        "tags": [
+            "namespace",
+            "A",
+            "{",
+            "namespace B",
+            "{",
+            "void fn();",
+            "}",
+            "}"
+        ],
+        "description": "Nested Namespace"
+    },
+    {
+        "tags": [
+            "namespace",
+            "A::B",
+            "{",
+            "void fn();",
+            "}"
+        ],
+        "description": "Nested Namespace C++17"
+    },
+    {
+        "tags": [
+            "namespace",
+            "{",
+            "int internal;",
+            "}"
+        ],
+        "description": "Anonymous Namespace"
+    },
+    {
+        "tags": [
+            "using",
+            "MyLib::fn",
+            ";"
+        ],
+        "description": "Using Declaration"
+    },
+    {
+        "tags": [
+            "namespace",
+            "fs",
+            "=",
+            "std::filesystem",
+            ";"
+        ],
+        "description": "Namespace Alias"
+    },
+    {
+        "tags": [
+            "int*",
+            "p",
+            "=",
+            "new",
+            "int(42)",
+            ";"
+        ],
+        "description": "New Single Integer"
+    },
+    {
+        "tags": [
+            "int*",
+            "arr",
+            "=",
+            "new",
+            "int[10]",
+            ";"
+        ],
+        "description": "New Integer Array"
+    },
+    {
+        "tags": [
+            "delete",
+            "p",
+            ";"
+        ],
+        "description": "Delete Single Object"
+    },
+    {
+        "tags": [
+            "delete[]",
+            "arr",
+            ";"
+        ],
+        "description": "Delete Array"
+    },
+    {
+        "tags": [
+            "auto",
+            "p",
+            "=",
+            "std::make_unique<",
+            "int>(42)",
+            ";"
+        ],
+        "description": "Make Unique Pointer"
+    },
+    {
+        "tags": [
+            "std::unique_ptr<",
+            "int>",
+            "p(",
+            "new int(5))",
+            ";"
+        ],
+        "description": "Unique Pointer Declaration"
+    },
+    {
+        "tags": [
+            "auto",
+            "p",
+            "=",
+            "std::make_shared<",
+            "int>(42)",
+            ";"
+        ],
+        "description": "Make Shared Pointer"
+    },
+    {
+        "tags": [
+            "std::shared_ptr<",
+            "int>",
+            "p(",
+            "new int(5))",
+            ";"
+        ],
+        "description": "Shared Pointer Declaration"
+    },
+    {
+        "tags": [
+            "std::weak_ptr<",
+            "int>",
+            "wp",
+            "=",
+            "sp",
+            ";"
+        ],
+        "description": "Weak Pointer Declaration"
+    },
+    {
+        "tags": [
+            "if(auto",
+            "sp",
+            "=",
+            "wp.lock())",
+            "{",
+            "/*use sp*/",
+            "}"
+        ],
+        "description": "Weak Pointer Lock Check"
+    },
+    {
+        "tags": [
+            "auto",
+            "p",
+            "=",
+            "std::make_unique<",
+            "MyClass>(",
+            "args...)",
+            ";"
+        ],
+        "description": "Unique Ptr Custom Type"
+    },
+    {
+        "tags": [
+            "std::vector<int>",
+            "v",
+            "=",
+            "{1,2,3}",
+            ";"
+        ],
+        "description": "Vector Initialization"
+    },
+    {
+        "tags": [
+            "v.push_back(",
+            "42)",
+            ";"
+        ],
+        "description": "Vector Push Back"
+    },
+    {
+        "tags": [
+            "v.emplace_back(",
+            "42)",
+            ";"
+        ],
+        "description": "Vector Emplace Back"
+    },
+    {
+        "tags": [
+            "v.pop_back()",
+            ";"
+        ],
+        "description": "Vector Pop Back"
+    },
+    {
+        "tags": [
+            "int",
+            "val",
+            "=",
+            "v.at(",
+            "0)",
+            ";"
+        ],
+        "description": "Vector Bounds Access"
+    },
+    {
+        "tags": [
+            "v.erase(",
+            "v.begin()",
+            "+",
+            "i)",
+            ";"
+        ],
+        "description": "Vector Erase Element"
+    },
+    {
+        "tags": [
+            "v.insert(",
+            "v.begin(),",
+            "val)",
+            ";"
+        ],
+        "description": "Vector Insert Front"
+    },
+    {
+        "tags": [
+            "v.resize(",
+            "100)",
+            ";"
+        ],
+        "description": "Vector Resize"
+    },
+    {
+        "tags": [
+            "v.reserve(",
+            "1000)",
+            ";"
+        ],
+        "description": "Vector Reserve Capacity"
+    },
+    {
+        "tags": [
+            "v.clear()",
+            ";"
+        ],
+        "description": "Vector Clear All"
+    },
+    {
+        "tags": [
+            "bool",
+            "empty",
+            "=",
+            "v.empty()",
+            ";"
+        ],
+        "description": "Vector Empty Check"
+    },
+    {
+        "tags": [
+            "size_t",
+            "sz",
+            "=",
+            "v.size()",
+            ";"
+        ],
+        "description": "Vector Size Query"
+    },
+    {
+        "tags": [
+            "std::sort(",
+            "v.begin(),",
+            "v.end())",
+            ";"
+        ],
+        "description": "Sort Vector Ascending"
+    },
+    {
+        "tags": [
+            "std::sort(",
+            "v.begin(),",
+            "v.end(),",
+            "std::greater<>())",
+            ";"
+        ],
+        "description": "Sort Vector Descending"
+    },
+    {
+        "tags": [
+            "std::reverse(",
+            "v.begin(),",
+            "v.end())",
+            ";"
+        ],
+        "description": "Reverse Vector Elements"
+    },
+    {
+        "tags": [
+            "auto",
+            "it",
+            "=",
+            "std::find(",
+            "v.begin(),",
+            "v.end(),",
+            "val);"
+        ],
+        "description": "Find Element In Vector"
+    },
+    {
+        "tags": [
+            "int",
+            "cnt",
+            "=",
+            "std::count(",
+            "v.begin(),",
+            "v.end(),",
+            "val);"
+        ],
+        "description": "Count Element Occurrences"
+    },
+    {
+        "tags": [
+            "auto",
+            "mn",
+            "=",
+            "std::min_element(",
+            "v.begin(),",
+            "v.end())",
+            ";"
+        ],
+        "description": "Find Minimum Element"
+    },
+    {
+        "tags": [
+            "auto",
+            "mx",
+            "=",
+            "std::max_element(",
+            "v.begin(),",
+            "v.end())",
+            ";"
+        ],
+        "description": "Find Maximum Element"
+    },
+    {
+        "tags": [
+            "int",
+            "sum",
+            "=",
+            "std::accumulate(",
+            "v.begin(),",
+            "v.end(),",
+            "0);"
+        ],
+        "description": "Accumulate Vector Sum"
+    },
+    {
+        "tags": [
+            "std::for_each(",
+            "v.begin(),",
+            "v.end(),",
+            "[](int x){",
+            "/*use x*/",
+            "});"
+        ],
+        "description": "For Each With Lambda"
+    },
+    {
+        "tags": [
+            "std::transform(",
+            "v.begin(),",
+            "v.end(),",
+            "out.begin(),",
+            "fn);"
+        ],
+        "description": "Transform Container"
+    },
+    {
+        "tags": [
+            "std::copy(",
+            "v.begin(),",
+            "v.end(),",
+            "out.begin())",
+            ";"
+        ],
+        "description": "Copy Range Elements"
+    },
+    {
+        "tags": [
+            "auto",
+            "it",
+            "=",
+            "std::remove(",
+            "v.begin(),",
+            "v.end(),",
+            "val);",
+            "v.erase(it,v.end());"
+        ],
+        "description": "Erase Remove Idiom"
+    },
+    {
+        "tags": [
+            "bool",
+            "all",
+            "=",
+            "std::all_of(",
+            "v.begin(),",
+            "v.end(),",
+            "pred);"
+        ],
+        "description": "All Of Predicate Check"
+    },
+    {
+        "tags": [
+            "bool",
+            "any",
+            "=",
+            "std::any_of(",
+            "v.begin(),",
+            "v.end(),",
+            "pred);"
+        ],
+        "description": "Any Of Predicate Check"
+    },
+    {
+        "tags": [
+            "bool",
+            "none",
+            "=",
+            "std::none_of(",
+            "v.begin(),",
+            "v.end(),",
+            "pred);"
+        ],
+        "description": "None Of Predicate Check"
+    },
+    {
+        "tags": [
+            "std::map<",
+            "std::string,",
+            "int>",
+            "m",
+            ";"
+        ],
+        "description": "Map Declaration"
+    },
+    {
+        "tags": [
+            "m[\"key\"]",
+            "=",
+            "42",
+            ";"
+        ],
+        "description": "Map Insert Element"
+    },
+    {
+        "tags": [
+            "m.insert(",
+            "{\"key\",",
+            "42})",
+            ";"
+        ],
+        "description": "Map Insert Pair"
+    },
+    {
+        "tags": [
+            "auto",
+            "it",
+            "=",
+            "m.find(",
+            "\"key\")",
+            ";"
+        ],
+        "description": "Map Find Element"
+    },
+    {
+        "tags": [
+            "if(",
+            "m.count(",
+            "\"key\"))",
+            "/*exists*/",
+            ";"
+        ],
+        "description": "Map Key Exists Check"
+    },
+    {
+        "tags": [
+            "if(",
+            "m.contains(",
+            "\"key\"))",
+            "/*C++20*/"
+        ],
+        "description": "Map Contains C++20"
+    },
+    {
+        "tags": [
+            "m.erase(",
+            "\"key\")",
+            ";"
+        ],
+        "description": "Map Erase By Key"
+    },
+    {
+        "tags": [
+            "for(",
+            "auto& [k,v]",
+            ":",
+            "m)",
+            "{",
+            "/*use k,v*/",
+            "}"
+        ],
+        "description": "Map Structured Bindings"
+    },
+    {
+        "tags": [
+            "std::unordered_map<",
+            "std::string,",
+            "int>",
+            "um",
+            ";"
+        ],
+        "description": "Unordered Map Declaration"
+    },
+    {
+        "tags": [
+            "std::set<int>",
+            "s",
+            ";"
+        ],
+        "description": "Set Declaration"
+    },
+    {
+        "tags": [
+            "s.insert(",
+            "42)",
+            ";"
+        ],
+        "description": "Set Insert Element"
+    },
+    {
+        "tags": [
+            "s.erase(",
+            "42)",
+            ";"
+        ],
+        "description": "Set Erase Element"
+    },
+    {
+        "tags": [
+            "if(",
+            "s.count(42))",
+            "/*found*/",
+            ";"
+        ],
+        "description": "Set Contains Check"
+    },
+    {
+        "tags": [
+            "std::unordered_set<",
+            "int>",
+            "us",
+            ";"
+        ],
+        "description": "Unordered Set Declaration"
+    },
+    {
+        "tags": [
+            "std::multimap<",
+            "int,",
+            "std::string>",
+            "mm",
+            ";"
+        ],
+        "description": "Multimap Declaration"
+    },
+    {
+        "tags": [
+            "std::multiset<",
+            "int>",
+            "ms",
+            ";"
+        ],
+        "description": "Multiset Declaration"
+    },
+    {
+        "tags": [
+            "std::stack<int>",
+            "st",
+            ";"
+        ],
+        "description": "Stack Declaration"
+    },
+    {
+        "tags": [
+            "st.push(10);",
+            "st.top();",
+            "st.pop();"
+        ],
+        "description": "Stack Push Top Pop"
+    },
+    {
+        "tags": [
+            "std::queue<int>",
+            "q",
+            ";"
+        ],
+        "description": "Queue Declaration"
+    },
+    {
+        "tags": [
+            "q.push(10);",
+            "q.front();",
+            "q.pop();"
+        ],
+        "description": "Queue Push Front Pop"
+    },
+    {
+        "tags": [
+            "std::deque<int>",
+            "dq",
+            ";"
+        ],
+        "description": "Deque Declaration"
+    },
+    {
+        "tags": [
+            "std::priority_queue<",
+            "int>",
+            "pq",
+            ";"
+        ],
+        "description": "Priority Queue Declaration"
+    },
+    {
+        "tags": [
+            "pq.push(10);",
+            "pq.top();",
+            "pq.pop();"
+        ],
+        "description": "Priority Queue Operations"
+    },
+    {
+        "tags": [
+            "std::priority_queue<",
+            "int,",
+            "vector<int>,",
+            "greater<int>>",
+            "minpq;"
+        ],
+        "description": "Min Priority Queue"
+    },
+    {
+        "tags": [
+            "std::list<int>",
+            "lst",
+            ";"
+        ],
+        "description": "Linked List Declaration"
+    },
+    {
+        "tags": [
+            "lst.push_front(",
+            "1);",
+            "lst.push_back(",
+            "2);"
+        ],
+        "description": "List Push Front Back"
+    },
+    {
+        "tags": [
+            "std::forward_list<",
+            "int>",
+            "fl",
+            ";"
+        ],
+        "description": "Forward List Declaration"
+    },
+    {
+        "tags": [
+            "std::array<",
+            "int,",
+            "5>",
+            "arr",
+            "=",
+            "{1,2,3,4,5};"
+        ],
+        "description": "Std Array Declaration"
+    },
+    {
+        "tags": [
+            "std::pair<",
+            "int,",
+            "std::string>",
+            "p",
+            "=",
+            "{1,\"hi\"};"
+        ],
+        "description": "Pair Declaration"
+    },
+    {
+        "tags": [
+            "auto",
+            "p",
+            "=",
+            "std::make_pair(",
+            "1, \"hi\")",
+            ";"
+        ],
+        "description": "Make Pair"
+    },
+    {
+        "tags": [
+            "std::tuple<",
+            "int,",
+            "double,",
+            "std::string>",
+            "t",
+            ";"
+        ],
+        "description": "Tuple Declaration"
+    },
+    {
+        "tags": [
+            "auto",
+            "t",
+            "=",
+            "std::make_tuple(",
+            "1, 3.14,",
+            "\"hi\")",
+            ";"
+        ],
+        "description": "Make Tuple"
+    },
+    {
+        "tags": [
+            "auto",
+            "val",
+            "=",
+            "std::get<0>(",
+            "t)",
+            ";"
+        ],
+        "description": "Tuple Get Element"
+    },
+    {
+        "tags": [
+            "auto",
+            "[a,b,c]",
+            "=",
+            "t",
+            ";"
+        ],
+        "description": "Structured Bindings Tuple"
+    },
+    {
+        "tags": [
+            "auto",
+            "[x,y]",
+            "=",
+            "point",
+            ";"
+        ],
+        "description": "Structured Bindings Pair"
+    },
+    {
+        "tags": [
+            "std::optional<int>",
+            "opt",
+            "=",
+            "42",
+            ";"
+        ],
+        "description": "Optional With Value"
+    },
+    {
+        "tags": [
+            "std::optional<int>",
+            "opt",
+            "=",
+            "std::nullopt",
+            ";"
+        ],
+        "description": "Optional Empty"
+    },
+    {
+        "tags": [
+            "if(",
+            "opt.has_value())",
+            "val",
+            "=",
+            "*opt;"
+        ],
+        "description": "Optional Value Check"
+    },
+    {
+        "tags": [
+            "int",
+            "v",
+            "=",
+            "opt.value_or(",
+            "0)",
+            ";"
+        ],
+        "description": "Optional Value Or Default"
+    },
+    {
+        "tags": [
+            "std::variant<",
+            "int,",
+            "double,",
+            "string>",
+            "var;"
+        ],
+        "description": "Variant Declaration"
+    },
+    {
+        "tags": [
+            "auto",
+            "val",
+            "=",
+            "std::get<int>(",
+            "var)",
+            ";"
+        ],
+        "description": "Variant Get By Type"
+    },
+    {
+        "tags": [
+            "std::visit(",
+            "[](auto& v){",
+            "/*use v*/",
+            "},",
+            "var);"
+        ],
+        "description": "Visit Variant"
+    },
+    {
+        "tags": [
+            "std::any",
+            "val",
+            "=",
+            "42",
+            ";"
+        ],
+        "description": "Any Type Variable"
+    },
+    {
+        "tags": [
+            "int",
+            "v",
+            "=",
+            "std::any_cast<",
+            "int>(val)",
+            ";"
+        ],
+        "description": "Any Cast To Type"
+    },
+    {
+        "tags": [
+            "std::string_view",
+            "sv",
+            "=",
+            "\"hello\"",
+            ";"
+        ],
+        "description": "String View Declaration"
+    },
+    {
+        "tags": [
+            "std::span<int>",
+            "sp(",
+            "arr.data(),",
+            "arr.size())",
+            ";"
+        ],
+        "description": "Span View Declaration"
+    },
+    {
+        "tags": [
+            "try",
+            "{",
+            "/*code*/",
+            "}",
+            "catch(",
+            "const std::exception&",
+            "e)",
+            "{",
+            "/*handle*/",
+            "}"
+        ],
+        "description": "Try Catch Block"
+    },
+    {
+        "tags": [
+            "throw",
+            "std::runtime_error(",
+            "\"msg\")",
+            ";"
+        ],
+        "description": "Throw Runtime Error"
+    },
+    {
+        "tags": [
+            "throw",
+            "std::invalid_argument(",
+            "\"bad\")",
+            ";"
+        ],
+        "description": "Throw Invalid Argument"
+    },
+    {
+        "tags": [
+            "throw",
+            "std::out_of_range(",
+            "\"oob\")",
+            ";"
+        ],
+        "description": "Throw Out Of Range"
+    },
+    {
+        "tags": [
+            "catch(",
+            "...)",
+            "{",
+            "/*catch all*/",
+            "}"
+        ],
+        "description": "Catch All Exceptions"
+    },
+    {
+        "tags": [
+            "try",
+            "{",
+            "throw 42;",
+            "}",
+            "catch(int e)",
+            "{",
+            "/*handle*/",
+            "}"
+        ],
+        "description": "Throw Catch Integer"
+    },
+    {
+        "tags": [
+            "class",
+            "MyErr",
+            ":",
+            "public",
+            "std::exception",
+            "{",
+            "const char*",
+            "what() const",
+            "noexcept override;",
+            "};"
+        ],
+        "description": "Custom Exception Class"
+    },
+    {
+        "tags": [
+            "void",
+            "fn()",
+            "noexcept",
+            "{",
+            "/*no throw*/",
+            "}"
+        ],
+        "description": "Noexcept Function"
+    },
+    {
+        "tags": [
+            "#include",
+            "<fstream>",
+            "std::ifstream",
+            "fin(\"in.txt\")",
+            ";"
+        ],
+        "description": "Open Input File"
+    },
+    {
+        "tags": [
+            "std::ofstream",
+            "fout(",
+            "\"out.txt\")",
+            ";"
+        ],
+        "description": "Open Output File"
+    },
+    {
+        "tags": [
+            "std::fstream",
+            "fs(",
+            "\"data.txt\",",
+            "std::ios::in|",
+            "std::ios::out)",
+            ";"
+        ],
+        "description": "Open Read Write File"
+    },
+    {
+        "tags": [
+            "while(",
+            "std::getline(",
+            "fin,",
+            "line))",
+            "{",
+            "/*process*/",
+            "}"
+        ],
+        "description": "Read File Line By Line"
+    },
+    {
+        "tags": [
+            "fout",
+            "<<",
+            "\"text\"",
+            "<<",
+            "std::endl",
+            ";"
+        ],
+        "description": "Write To File"
+    },
+    {
+        "tags": [
+            "fin.close()",
+            ";",
+            "fout.close()",
+            ";"
+        ],
+        "description": "Close File Streams"
+    },
+    {
+        "tags": [
+            "if(",
+            "!fin.is_open())",
+            "{",
+            "/*error*/",
+            "}"
+        ],
+        "description": "Check File Open"
+    },
+    {
+        "tags": [
+            "std::stringstream",
+            "ss",
+            ";"
+        ],
+        "description": "String Stream Declaration"
+    },
+    {
+        "tags": [
+            "ss",
+            "<<",
+            "42",
+            ";",
+            "std::string",
+            "s",
+            "= ss.str();"
+        ],
+        "description": "Stringstream To String"
+    },
+    {
+        "tags": [
+            "ss",
+            ">> x",
+            ">> y",
+            ";"
+        ],
+        "description": "Stringstream Extract Values"
+    },
+    {
+        "tags": [
+            "enum class",
+            "Color",
+            "{",
+            "Red,",
+            "Green,",
+            "Blue",
+            "};"
+        ],
+        "description": "Scoped Enum Class"
+    },
+    {
+        "tags": [
+            "enum class",
+            "Dir",
+            ":",
+            "uint8_t",
+            "{",
+            "N,S,E,W",
+            "};"
+        ],
+        "description": "Enum With Underlying Type"
+    },
+    {
+        "tags": [
+            "Color",
+            "c",
+            "=",
+            "Color::Red",
+            ";"
+        ],
+        "description": "Scoped Enum Usage"
+    },
+    {
+        "tags": [
+            "struct",
+            "Point",
+            "{",
+            "int x{0};",
+            "int y{0};",
+            "};"
+        ],
+        "description": "Struct Default Members"
+    },
+    {
+        "tags": [
+            "struct",
+            "Config",
+            "{",
+            "int width=800;",
+            "int height=600;",
+            "};"
+        ],
+        "description": "Struct Default Values"
+    },
+    {
+        "tags": [
+            "union",
+            "Data",
+            "{",
+            "int i;",
+            "float f;",
+            "char c;",
+            "};"
+        ],
+        "description": "Union Definition"
+    },
+    {
+        "tags": [
+            "using",
+            "IntVec",
+            "=",
+            "std::vector<int>",
+            ";"
+        ],
+        "description": "Type Alias Using"
+    },
+    {
+        "tags": [
+            "using",
+            "Callback",
+            "=",
+            "std::function<",
+            "void(int)>",
+            ";"
+        ],
+        "description": "Callback Type Alias"
+    },
+    {
+        "tags": [
+            "typedef",
+            "std::map<",
+            "std::string,int>",
+            "Dict",
+            ";"
+        ],
+        "description": "Typedef Map Alias"
+    },
+    {
+        "tags": [
+            "static_cast<",
+            "double>",
+            "(x)",
+            ";"
+        ],
+        "description": "Static Cast"
+    },
+    {
+        "tags": [
+            "dynamic_cast<",
+            "Derived*>",
+            "(base)",
+            ";"
+        ],
+        "description": "Dynamic Cast"
+    },
+    {
+        "tags": [
+            "reinterpret_cast<",
+            "char*>",
+            "(&x)",
+            ";"
+        ],
+        "description": "Reinterpret Cast"
+    },
+    {
+        "tags": [
+            "const_cast<",
+            "int*>",
+            "(cptr)",
+            ";"
+        ],
+        "description": "Const Cast"
+    },
+    {
+        "tags": [
+            "int*",
+            "p",
+            "=",
+            "nullptr",
+            ";"
+        ],
+        "description": "Nullptr Initialization"
+    },
+    {
+        "tags": [
+            "if(",
+            "p",
+            "==",
+            "nullptr)",
+            "/*null*/",
+            ";"
+        ],
+        "description": "Nullptr Check"
+    },
+    {
+        "tags": [
+            "decltype(",
+            "x)",
+            "y",
+            "=",
+            "x",
+            ";"
+        ],
+        "description": "Decltype Type Deduction"
+    },
+    {
+        "tags": [
+            "static_assert(",
+            "sizeof(int)==4,",
+            "\"bad size\")",
+            ";"
+        ],
+        "description": "Static Assert Check"
+    },
+    {
+        "tags": [
+            "[[nodiscard]]",
+            "int",
+            "compute()",
+            "{",
+            "return 42;",
+            "}"
+        ],
+        "description": "Nodiscard Attribute"
+    },
+    {
+        "tags": [
+            "[[maybe_unused]]",
+            "int",
+            "debug_flag",
+            "=",
+            "1;"
+        ],
+        "description": "Maybe Unused Attribute"
+    },
+    {
+        "tags": [
+            "[[deprecated]]",
+            "void",
+            "oldFunc()",
+            "{}"
+        ],
+        "description": "Deprecated Attribute"
+    },
+    {
+        "tags": [
+            "[[fallthrough]]",
+            ";"
+        ],
+        "description": "Fallthrough Attribute"
+    },
+    {
+        "tags": [
+            "[[likely]]",
+            "if(x>0)",
+            "{",
+            "/*fast path*/",
+            "}"
+        ],
+        "description": "Likely Attribute C++20"
+    },
+    {
+        "tags": [
+            "#include",
+            "<thread>",
+            "std::thread",
+            "t(fn)",
+            ";",
+            "t.join();"
+        ],
+        "description": "Create Join Thread"
+    },
+    {
+        "tags": [
+            "std::thread",
+            "t(",
+            "[]()",
+            "{",
+            "/*work*/",
+            "})",
+            ";"
+        ],
+        "description": "Thread With Lambda"
+    },
+    {
+        "tags": [
+            "t.detach()",
+            ";"
+        ],
+        "description": "Detach Thread"
+    },
+    {
+        "tags": [
+            "if(",
+            "t.joinable())",
+            "t.join();"
+        ],
+        "description": "Check Joinable Thread"
+    },
+    {
+        "tags": [
+            "std::mutex",
+            "mtx",
+            ";"
+        ],
+        "description": "Mutex Declaration"
+    },
+    {
+        "tags": [
+            "std::lock_guard<",
+            "std::mutex>",
+            "lock(mtx)",
+            ";"
+        ],
+        "description": "Lock Guard RAII"
+    },
+    {
+        "tags": [
+            "std::unique_lock<",
+            "std::mutex>",
+            "ul(mtx)",
+            ";"
+        ],
+        "description": "Unique Lock Declaration"
+    },
+    {
+        "tags": [
+            "std::scoped_lock",
+            "lock(",
+            "mtx1,",
+            "mtx2)",
+            ";"
+        ],
+        "description": "Scoped Lock Multiple"
+    },
+    {
+        "tags": [
+            "std::condition_variable",
+            "cv",
+            ";"
+        ],
+        "description": "Condition Variable"
+    },
+    {
+        "tags": [
+            "cv.wait(",
+            "lock,",
+            "[]{return ready;})",
+            ";"
+        ],
+        "description": "Condition Wait Predicate"
+    },
+    {
+        "tags": [
+            "cv.notify_one()",
+            ";"
+        ],
+        "description": "Notify One Thread"
+    },
+    {
+        "tags": [
+            "cv.notify_all()",
+            ";"
+        ],
+        "description": "Notify All Threads"
+    },
+    {
+        "tags": [
+            "std::atomic<int>",
+            "counter{0}",
+            ";"
+        ],
+        "description": "Atomic Integer"
+    },
+    {
+        "tags": [
+            "counter.fetch_add(",
+            "1)",
+            ";"
+        ],
+        "description": "Atomic Fetch Add"
+    },
+    {
+        "tags": [
+            "counter.store(",
+            "0)",
+            ";"
+        ],
+        "description": "Atomic Store Value"
+    },
+    {
+        "tags": [
+            "int",
+            "v",
+            "=",
+            "counter.load()",
+            ";"
+        ],
+        "description": "Atomic Load Value"
+    },
+    {
+        "tags": [
+            "auto",
+            "fut",
+            "=",
+            "std::async(",
+            "std::launch::async,",
+            "fn)",
+            ";"
+        ],
+        "description": "Async Launch Task"
+    },
+    {
+        "tags": [
+            "int",
+            "result",
+            "=",
+            "fut.get()",
+            ";"
+        ],
+        "description": "Future Get Result"
+    },
+    {
+        "tags": [
+            "std::promise<int>",
+            "prom;",
+            "auto fut",
+            "= prom.get_future();",
+            "prom.set_value(42);"
+        ],
+        "description": "Promise Future Pattern"
+    },
+    {
+        "tags": [
+            "std::jthread",
+            "jt(fn)",
+            ";"
+        ],
+        "description": "Jthread Auto Join"
+    },
+    {
+        "tags": [
+            "std::move(",
+            "obj)",
+            ";"
+        ],
+        "description": "Move Semantics"
+    },
+    {
+        "tags": [
+            "std::forward<T>(",
+            "arg)",
+            ";"
+        ],
+        "description": "Perfect Forwarding"
+    },
+    {
+        "tags": [
+            "std::swap(",
+            "a,",
+            "b)",
+            ";"
+        ],
+        "description": "Std Swap Values"
+    },
+    {
+        "tags": [
+            "std::initializer_list<",
+            "int>",
+            "il",
+            "=",
+            "{1,2,3};"
+        ],
+        "description": "Initializer List"
+    },
+    {
+        "tags": [
+            "MyClass(",
+            "std::initializer_list<",
+            "int> il)",
+            "{}"
+        ],
+        "description": "Init List Constructor"
+    },
+    {
+        "tags": [
+            "int",
+            "x{42}",
+            ";"
+        ],
+        "description": "Brace Initialization"
+    },
+    {
+        "tags": [
+            "std::vector<int>",
+            "v{",
+            "1,2,3,4,5}",
+            ";"
+        ],
+        "description": "Brace Init Vector"
+    },
+    {
+        "tags": [
+            "if",
+            "(auto x=fn();",
+            "x>0)",
+            "{",
+            "/*use x*/",
+            "}"
+        ],
+        "description": "If Init Statement"
+    },
+    {
+        "tags": [
+            "switch",
+            "(auto x=fn();",
+            "x)",
+            "{",
+            "case 0:",
+            "break;",
+            "}"
+        ],
+        "description": "Switch Init Statement"
+    },
+    {
+        "tags": [
+            "if constexpr",
+            "(sizeof(T)>4)",
+            "{",
+            "/*big*/",
+            "}",
+            "else",
+            "{",
+            "/*small*/",
+            "}"
+        ],
+        "description": "If Constexpr Branch"
+    },
+    {
+        "tags": [
+            "auto",
+            "fn()",
+            "->",
+            "int",
+            "{",
+            "return 42;",
+            "}"
+        ],
+        "description": "Trailing Return Type"
+    },
+    {
+        "tags": [
+            "template<class T>",
+            "concept",
+            "Addable",
+            "=",
+            "requires(T a){",
+            "a+a;",
+            "};"
+        ],
+        "description": "Concept Definition C++20"
+    },
+    {
+        "tags": [
+            "template<Addable T>",
+            "T",
+            "add(T a,",
+            "T b)",
+            "{",
+            "return a+b;",
+            "}"
+        ],
+        "description": "Constrained Template"
+    },
+    {
+        "tags": [
+            "auto",
+            "add(auto a,",
+            "auto b)",
+            "{",
+            "return a+b;",
+            "}"
+        ],
+        "description": "Abbreviated Template"
+    },
+    {
+        "tags": [
+            "requires",
+            "(T x)",
+            "{",
+            "x.size();",
+            "x.begin();",
+            "}"
+        ],
+        "description": "Requires Expression"
+    },
+    {
+        "tags": [
+            "#include",
+            "<ranges>",
+            "auto",
+            "r",
+            "=",
+            "v | std::views::filter(pred);"
+        ],
+        "description": "Ranges View Filter"
+    },
+    {
+        "tags": [
+            "auto",
+            "r",
+            "=",
+            "v |",
+            "std::views::",
+            "transform(fn)",
+            ";"
+        ],
+        "description": "Ranges View Transform"
+    },
+    {
+        "tags": [
+            "auto",
+            "r",
+            "=",
+            "v |",
+            "std::views::",
+            "take(5)",
+            ";"
+        ],
+        "description": "Ranges View Take"
+    },
+    {
+        "tags": [
+            "auto",
+            "r",
+            "=",
+            "v |",
+            "std::views::",
+            "drop(3)",
+            ";"
+        ],
+        "description": "Ranges View Drop"
+    },
+    {
+        "tags": [
+            "auto",
+            "r",
+            "=",
+            "v |",
+            "std::views::",
+            "reverse",
+            ";"
+        ],
+        "description": "Ranges View Reverse"
+    },
+    {
+        "tags": [
+            "auto",
+            "r",
+            "=",
+            "std::views::",
+            "iota(1,10)",
+            ";"
+        ],
+        "description": "Ranges Iota View"
+    },
+    {
+        "tags": [
+            "std::ranges::",
+            "sort(v)",
+            ";"
+        ],
+        "description": "Ranges Sort"
+    },
+    {
+        "tags": [
+            "auto",
+            "it",
+            "=",
+            "std::ranges::",
+            "find(v, val)",
+            ";"
+        ],
+        "description": "Ranges Find"
+    },
+    {
+        "tags": [
+            "co_return",
+            "42",
+            ";"
+        ],
+        "description": "Coroutine Return Value"
+    },
+    {
+        "tags": [
+            "co_yield",
+            "value",
+            ";"
+        ],
+        "description": "Coroutine Yield Value"
+    },
+    {
+        "tags": [
+            "co_await",
+            "asyncOp()",
+            ";"
+        ],
+        "description": "Coroutine Await"
+    },
+    {
+        "tags": [
+            "#include",
+            "<format>",
+            "auto",
+            "s",
+            "=",
+            "std::format(",
+            "\"{} is {}\",",
+            "name, age);"
+        ],
+        "description": "Std Format String"
+    },
+    {
+        "tags": [
+            "std::print(",
+            "\"{}\",",
+            "val)",
+            ";"
+        ],
+        "description": "Std Print C++23"
+    },
+    {
+        "tags": [
+            "std::println(",
+            "\"Hello {}!\",",
+            "name)",
+            ";"
+        ],
+        "description": "Std Println C++23"
+    },
+    {
+        "tags": [
+            "#include",
+            "<algorithm>",
+            "#include",
+            "<vector>",
+            "#include",
+            "<iostream>"
+        ],
+        "description": "Common STL Headers"
+    },
+    {
+        "tags": [
+            "#include",
+            "<memory>",
+            "#include",
+            "<string>",
+            "#include",
+            "<utility>"
+        ],
+        "description": "Core Utility Headers"
+    },
+    {
+        "tags": [
+            "#include",
+            "<chrono>",
+            "auto",
+            "now",
+            "=",
+            "std::chrono::",
+            "steady_clock::now();"
+        ],
+        "description": "Chrono Steady Clock"
+    },
+    {
+        "tags": [
+            "auto",
+            "dur",
+            "=",
+            "std::chrono::",
+            "duration_cast<",
+            "std::chrono::ms>(",
+            "end-start);"
+        ],
+        "description": "Chrono Duration Cast"
+    },
+    {
+        "tags": [
+            "std::this_thread::",
+            "sleep_for(",
+            "std::chrono::",
+            "seconds(1))",
+            ";"
+        ],
+        "description": "Thread Sleep Duration"
+    },
+    {
+        "tags": [
+            "#include",
+            "<random>",
+            "std::mt19937",
+            "gen(rd())",
+            ";"
+        ],
+        "description": "Mersenne Twister RNG"
+    },
+    {
+        "tags": [
+            "std::uniform_int_distribution<>",
+            "dist(",
+            "1,",
+            "100)",
+            ";",
+            "int r=dist(gen);"
+        ],
+        "description": "Uniform Int Distribution"
+    },
+    {
+        "tags": [
+            "std::uniform_real_distribution<>",
+            "dist(",
+            "0.0,",
+            "1.0)",
+            ";"
+        ],
+        "description": "Uniform Real Distribution"
+    },
+    {
+        "tags": [
+            "std::normal_distribution<>",
+            "dist(",
+            "0.0,",
+            "1.0)",
+            ";"
+        ],
+        "description": "Normal Distribution"
+    },
+    {
+        "tags": [
+            "#include",
+            "<filesystem>",
+            "namespace",
+            "fs =",
+            "std::filesystem;"
+        ],
+        "description": "Filesystem Include Alias"
+    },
+    {
+        "tags": [
+            "if(",
+            "fs::exists(",
+            "path))",
+            "/*found*/",
+            ";"
+        ],
+        "description": "Filesystem Path Exists"
+    },
+    {
+        "tags": [
+            "for(auto&",
+            "entry :",
+            "fs::directory_iterator(",
+            "path))",
+            "{}"
+        ],
+        "description": "Iterate Directory"
+    },
+    {
+        "tags": [
+            "fs::create_directory(",
+            "\"newdir\")",
+            ";"
+        ],
+        "description": "Create Directory"
+    },
+    {
+        "tags": [
+            "auto",
+            "sz",
+            "=",
+            "fs::file_size(",
+            "path)",
+            ";"
+        ],
+        "description": "Get File Size"
+    },
+    {
+        "tags": [
+            "fs::copy(",
+            "src,",
+            "dst)",
+            ";"
+        ],
+        "description": "Copy File Filesystem"
+    },
+    {
+        "tags": [
+            "fs::remove(",
+            "path)",
+            ";"
+        ],
+        "description": "Remove File Filesystem"
+    },
+    {
+        "tags": [
+            "#include",
+            "<regex>",
+            "std::regex",
+            "re(\"\\\\d+\")",
+            ";"
+        ],
+        "description": "Regex Pattern Declaration"
+    },
+    {
+        "tags": [
+            "if(",
+            "std::regex_match(",
+            "str, re))",
+            "/*match*/",
+            ";"
+        ],
+        "description": "Regex Full Match"
+    },
+    {
+        "tags": [
+            "if(",
+            "std::regex_search(",
+            "str, m, re))",
+            "/*found*/",
+            ";"
+        ],
+        "description": "Regex Search Match"
+    },
+    {
+        "tags": [
+            "auto",
+            "result",
+            "=",
+            "std::regex_replace(",
+            "str, re,",
+            "\"rep\")",
+            ";"
+        ],
+        "description": "Regex Replace String"
+    },
+    {
+        "tags": [
+            "std::smatch",
+            "match",
+            ";"
+        ],
+        "description": "Regex Match Results"
+    },
+    {
+        "tags": [
+            "std::bitset<8>",
+            "bits(",
+            "\"10110\")",
+            ";"
+        ],
+        "description": "Bitset From String"
+    },
+    {
+        "tags": [
+            "bits.set(3);",
+            "bits.reset(0);",
+            "bits.flip(1);"
+        ],
+        "description": "Bitset Set Reset Flip"
+    },
+    {
+        "tags": [
+            "size_t",
+            "cnt",
+            "=",
+            "bits.count()",
+            ";"
+        ],
+        "description": "Bitset Count Set Bits"
+    },
+    {
+        "tags": [
+            "struct",
+            "RAII",
+            "{",
+            "RAII(){acquire();}",
+            "~RAII(){release();}",
+            "};"
+        ],
+        "description": "RAII Pattern"
+    },
+    {
+        "tags": [
+            "class",
+            "NoCopy",
+            "{",
+            "NoCopy(const NoCopy&)",
+            "= delete;",
+            "NoCopy& operator=(",
+            "const NoCopy&)",
+            "= delete;",
+            "};"
+        ],
+        "description": "Non-Copyable Class"
+    },
+    {
+        "tags": [
+            "class",
+            "Builder",
+            "{",
+            "Builder& setX(int);",
+            "Builder& setY(int);",
+            "Obj build();",
+            "};"
+        ],
+        "description": "Builder Design Pattern"
+    },
+    {
+        "tags": [
+            "class",
+            "Observer",
+            "{",
+            "public:",
+            "virtual void",
+            "update()=0;",
+            "};"
+        ],
+        "description": "Observer Interface"
+    },
+    {
+        "tags": [
+            "template<typename T>",
+            "class Iter",
+            "{",
+            "T* ptr;",
+            "Iter& operator++();",
+            "T& operator*();",
+            "};"
+        ],
+        "description": "Custom Iterator Class"
+    },
+    {
+        "tags": [
+            "auto",
+            "begin()",
+            "->",
+            "iterator",
+            ";",
+            "auto",
+            "end()",
+            "->",
+            "iterator",
+            ";"
+        ],
+        "description": "Begin End Interface"
+    },
+    {
+        "tags": [
+            "std::enable_if_t<",
+            "std::is_integral_v<T>,",
+            "T>"
+        ],
+        "description": "SFINAE Enable If"
+    },
+    {
+        "tags": [
+            "if constexpr",
+            "(std::is_same_v<",
+            "T, int>)",
+            "{",
+            "/*int*/",
+            "}"
+        ],
+        "description": "Type Trait Is Same"
+    },
+    {
+        "tags": [
+            "std::is_pointer_v<",
+            "T>"
+        ],
+        "description": "Type Trait Is Pointer"
+    },
+    {
+        "tags": [
+            "std::is_class_v<",
+            "T>"
+        ],
+        "description": "Type Trait Is Class"
+    },
+    {
+        "tags": [
+            "std::is_arithmetic_v<",
+            "T>"
+        ],
+        "description": "Type Trait Arithmetic"
+    },
+    {
+        "tags": [
+            "std::remove_reference_t<",
+            "T>"
+        ],
+        "description": "Remove Reference Type"
+    },
+    {
+        "tags": [
+            "std::decay_t<",
+            "T>"
+        ],
+        "description": "Decay Type Trait"
+    },
+    {
+        "tags": [
+            "using",
+            "type",
+            "=",
+            "std::conditional_t<",
+            "cond,",
+            "TypeA,",
+            "TypeB>;"
+        ],
+        "description": "Conditional Type Select"
+    },
+    {
+        "tags": [
+            "sizeof...(",
+            "Args)",
+            ";"
+        ],
+        "description": "Parameter Pack Size"
+    },
+    {
+        "tags": [
+            "(fn(args),",
+            "...)",
+            ";"
+        ],
+        "description": "Fold Expression Call"
+    },
+    {
+        "tags": [
+            "return",
+            "(args +",
+            "...)",
+            ";"
+        ],
+        "description": "Fold Expression Sum"
+    },
+    {
+        "tags": [
+            "return",
+            "(args &&",
+            "...)",
+            ";"
+        ],
+        "description": "Fold Expression And"
+    },
+    {
+        "tags": [
+            "struct",
+            "S",
+            "{",
+            "int x;",
+            "int y;",
+            "int z;",
+            "};",
+            "auto [a,b,c]=s;"
+        ],
+        "description": "Structured Bindings Struct"
+    },
+    {
+        "tags": [
+            "auto",
+            "[iter,",
+            "success]",
+            "=",
+            "m.insert(",
+            "{k,v})",
+            ";"
+        ],
+        "description": "Structured Bindings Insert"
+    },
+    {
+        "tags": [
+            "consteval",
+            "int",
+            "sq(int x)",
+            "{",
+            "return x*x;",
+            "}"
+        ],
+        "description": "Consteval Function C++20"
+    },
+    {
+        "tags": [
+            "constinit",
+            "int",
+            "x",
+            "=",
+            "42",
+            ";"
+        ],
+        "description": "Constinit Variable C++20"
+    },
+    {
+        "tags": [
+            "std::expected<",
+            "int,",
+            "Error>",
+            "result",
+            ";"
+        ],
+        "description": "Expected Type C++23"
+    },
+    {
+        "tags": [
+            "auto",
+            "v",
+            "=",
+            "result.value()",
+            ";"
+        ],
+        "description": "Expected Get Value"
+    },
+    {
+        "tags": [
+            "auto",
+            "e",
+            "=",
+            "result.error()",
+            ";"
+        ],
+        "description": "Expected Get Error"
+    },
+    {
+        "tags": [
+            "std::mdspan",
+            "ms(data,",
+            "rows,",
+            "cols)",
+            ";"
+        ],
+        "description": "Multidim Span C++23"
+    },
+    {
+        "tags": [
+            "module;",
+            "export module",
+            "mymod;",
+            "export",
+            "int fn();"
+        ],
+        "description": "Module Declaration C++20"
+    },
+    {
+        "tags": [
+            "import",
+            "mymod",
+            ";"
+        ],
+        "description": "Module Import C++20"
+    },
+    {
+        "tags": [
+            "export",
+            "namespace",
+            "mylib",
+            "{",
+            "void fn();",
+            "}"
+        ],
+        "description": "Module Export Namespace"
+    }
+]

@@ -1,0 +1,1654 @@
+[
+  {
+    "word": "CLASS",
+    "hint": "Blueprint for creating objects"
+  },
+  {
+    "word": "OBJECT",
+    "hint": "Instance of a class"
+  },
+  {
+    "word": "TEMPLATE",
+    "hint": "Generic programming construct"
+  },
+  {
+    "word": "NAMESPACE",
+    "hint": "Scope for grouping identifiers"
+  },
+  {
+    "word": "VIRTUAL",
+    "hint": "Enables runtime polymorphism"
+  },
+  {
+    "word": "OVERRIDE",
+    "hint": "Replaces base class virtual function"
+  },
+  {
+    "word": "FINAL",
+    "hint": "Prevents further inheritance or override"
+  },
+  {
+    "word": "FRIEND",
+    "hint": "Grants private access to external entity"
+  },
+  {
+    "word": "OPERATOR",
+    "hint": "Keyword for overloading operators"
+  },
+  {
+    "word": "PUBLIC",
+    "hint": "Access specifier for open members"
+  },
+  {
+    "word": "PRIVATE",
+    "hint": "Access specifier restricting to class"
+  },
+  {
+    "word": "PROTECTED",
+    "hint": "Access for class and derived classes"
+  },
+  {
+    "word": "INHERIT",
+    "hint": "Deriving properties from base class"
+  },
+  {
+    "word": "POLYMORPHISM",
+    "hint": "Same interface for different types"
+  },
+  {
+    "word": "ABSTRACT",
+    "hint": "Class with at least one pure virtual"
+  },
+  {
+    "word": "ENCAPSULATE",
+    "hint": "Bundling data with its methods"
+  },
+  {
+    "word": "CONSTRUCTOR",
+    "hint": "Initializes object on creation"
+  },
+  {
+    "word": "DESTRUCTOR",
+    "hint": "Cleans up when object is destroyed"
+  },
+  {
+    "word": "IOSTREAM",
+    "hint": "Input output stream header"
+  },
+  {
+    "word": "COUT",
+    "hint": "Standard output stream object"
+  },
+  {
+    "word": "CERR",
+    "hint": "Standard error stream object"
+  },
+  {
+    "word": "CLOG",
+    "hint": "Buffered standard error stream"
+  },
+  {
+    "word": "ENDL",
+    "hint": "Inserts newline and flushes stream"
+  },
+  {
+    "word": "VECTOR",
+    "hint": "Dynamic array container"
+  },
+  {
+    "word": "DEQUE",
+    "hint": "Double-ended queue container"
+  },
+  {
+    "word": "LIST",
+    "hint": "Doubly linked list container"
+  },
+  {
+    "word": "STACK",
+    "hint": "LIFO container adaptor"
+  },
+  {
+    "word": "QUEUE",
+    "hint": "FIFO container adaptor"
+  },
+  {
+    "word": "PAIR",
+    "hint": "Holds two heterogeneous values"
+  },
+  {
+    "word": "TUPLE",
+    "hint": "Holds fixed number of typed values"
+  },
+  {
+    "word": "ARRAY",
+    "hint": "Fixed-size container wrapper"
+  },
+  {
+    "word": "STRING",
+    "hint": "Character sequence container class"
+  },
+  {
+    "word": "ITERATOR",
+    "hint": "Object for traversing containers"
+  },
+  {
+    "word": "ALLOCATOR",
+    "hint": "Manages memory for containers"
+  },
+  {
+    "word": "NULLPTR",
+    "hint": "Type-safe null pointer literal"
+  },
+  {
+    "word": "BOOL",
+    "hint": "Boolean true or false type"
+  },
+  {
+    "word": "WCHAR",
+    "hint": "Wide character data type"
+  },
+  {
+    "word": "AUTO",
+    "hint": "Compiler deduced type specifier"
+  },
+  {
+    "word": "DECLTYPE",
+    "hint": "Deduces type of an expression"
+  },
+  {
+    "word": "CONSTEXPR",
+    "hint": "Compile-time constant expression"
+  },
+  {
+    "word": "CONSTEVAL",
+    "hint": "Forces compile-time evaluation"
+  },
+  {
+    "word": "CONSTINIT",
+    "hint": "Ensures constant initialization"
+  },
+  {
+    "word": "STATIC",
+    "hint": "Persists value or limits linkage"
+  },
+  {
+    "word": "EXTERN",
+    "hint": "Declares variable defined elsewhere"
+  },
+  {
+    "word": "MUTABLE",
+    "hint": "Allows modification in const context"
+  },
+  {
+    "word": "VOLATILE",
+    "hint": "Value may change unexpectedly"
+  },
+  {
+    "word": "INLINE",
+    "hint": "Suggests function code substitution"
+  },
+  {
+    "word": "EXPLICIT",
+    "hint": "Prevents implicit type conversions"
+  },
+  {
+    "word": "NOEXCEPT",
+    "hint": "Specifies function throws no exceptions"
+  },
+  {
+    "word": "THROW",
+    "hint": "Raises an exception object"
+  },
+  {
+    "word": "CATCH",
+    "hint": "Handles a thrown exception"
+  },
+  {
+    "word": "TYPEID",
+    "hint": "Returns runtime type information"
+  },
+  {
+    "word": "TYPENAME",
+    "hint": "Specifies dependent type in template"
+  },
+  {
+    "word": "SIZEOF",
+    "hint": "Returns size of a type in bytes"
+  },
+  {
+    "word": "ALIGNOF",
+    "hint": "Returns alignment of a type"
+  },
+  {
+    "word": "ALIGNAS",
+    "hint": "Specifies alignment requirement"
+  },
+  {
+    "word": "USING",
+    "hint": "Type alias or namespace directive"
+  },
+  {
+    "word": "TYPEDEF",
+    "hint": "Creates an alias for a data type"
+  },
+  {
+    "word": "ENUM",
+    "hint": "Named integer constant set"
+  },
+  {
+    "word": "STRUCT",
+    "hint": "Aggregate type with public default"
+  },
+  {
+    "word": "UNION",
+    "hint": "Members share same memory location"
+  },
+  {
+    "word": "VOID",
+    "hint": "Represents absence of type"
+  },
+  {
+    "word": "CHAR",
+    "hint": "Single character data type"
+  },
+  {
+    "word": "SHORT",
+    "hint": "Reduced size integer type"
+  },
+  {
+    "word": "LONG",
+    "hint": "Extended size integer type"
+  },
+  {
+    "word": "FLOAT",
+    "hint": "Single precision floating point"
+  },
+  {
+    "word": "DOUBLE",
+    "hint": "Double precision floating point"
+  },
+  {
+    "word": "SIGNED",
+    "hint": "Allows negative integer values"
+  },
+  {
+    "word": "UNSIGNED",
+    "hint": "Only non-negative integer values"
+  },
+  {
+    "word": "CONST",
+    "hint": "Declares an immutable variable"
+  },
+  {
+    "word": "RETURN",
+    "hint": "Exits function with a value"
+  },
+  {
+    "word": "SWITCH",
+    "hint": "Multi-way branching statement"
+  },
+  {
+    "word": "CASE",
+    "hint": "Label inside a switch block"
+  },
+  {
+    "word": "DEFAULT",
+    "hint": "Fallback label or defaulted method"
+  },
+  {
+    "word": "BREAK",
+    "hint": "Exits loop or switch immediately"
+  },
+  {
+    "word": "CONTINUE",
+    "hint": "Skips to next loop iteration"
+  },
+  {
+    "word": "GOTO",
+    "hint": "Unconditional jump to a label"
+  },
+  {
+    "word": "WHILE",
+    "hint": "Loop with pre-checked condition"
+  },
+  {
+    "word": "ELSE",
+    "hint": "Alternative branch in conditional"
+  },
+  {
+    "word": "INCLUDE",
+    "hint": "Preprocessor file inclusion directive"
+  },
+  {
+    "word": "DEFINE",
+    "hint": "Preprocessor macro definition"
+  },
+  {
+    "word": "IFDEF",
+    "hint": "Conditional if macro is defined"
+  },
+  {
+    "word": "IFNDEF",
+    "hint": "Conditional if macro not defined"
+  },
+  {
+    "word": "ENDIF",
+    "hint": "Ends preprocessor conditional block"
+  },
+  {
+    "word": "PRAGMA",
+    "hint": "Compiler-specific directive"
+  },
+  {
+    "word": "LAMBDA",
+    "hint": "Anonymous inline function object"
+  },
+  {
+    "word": "CAPTURE",
+    "hint": "Lambda access to outer variables"
+  },
+  {
+    "word": "CLOSURE",
+    "hint": "Lambda with captured variables"
+  },
+  {
+    "word": "FUNCTOR",
+    "hint": "Object that behaves like a function"
+  },
+  {
+    "word": "PREDICATE",
+    "hint": "Function returning boolean result"
+  },
+  {
+    "word": "RAII",
+    "hint": "Resource acquisition is initialization"
+  },
+  {
+    "word": "SCOPE",
+    "hint": "Visibility region of a variable"
+  },
+  {
+    "word": "REFERENCE",
+    "hint": "Alias for an existing variable"
+  },
+  {
+    "word": "POINTER",
+    "hint": "Variable storing a memory address"
+  },
+  {
+    "word": "DANGLING",
+    "hint": "Pointer to freed or invalid memory"
+  },
+  {
+    "word": "LVALUE",
+    "hint": "Expression with assignable address"
+  },
+  {
+    "word": "RVALUE",
+    "hint": "Temporary expression value"
+  },
+  {
+    "word": "XVALUE",
+    "hint": "Expiring value about to be moved"
+  },
+  {
+    "word": "PRVALUE",
+    "hint": "Pure rvalue with no identity"
+  },
+  {
+    "word": "GLVALUE",
+    "hint": "Generalized lvalue expression"
+  },
+  {
+    "word": "MOVE",
+    "hint": "Transfers ownership of resources"
+  },
+  {
+    "word": "FORWARD",
+    "hint": "Perfect forwarding of arguments"
+  },
+  {
+    "word": "SWAP",
+    "hint": "Exchanges values of two variables"
+  },
+  {
+    "word": "EMPLACE",
+    "hint": "Constructs element in-place"
+  },
+  {
+    "word": "RESERVE",
+    "hint": "Pre-allocates container capacity"
+  },
+  {
+    "word": "RESIZE",
+    "hint": "Changes container element count"
+  },
+  {
+    "word": "SHRINK",
+    "hint": "Reduces capacity to fit size"
+  },
+  {
+    "word": "ERASE",
+    "hint": "Removes elements from container"
+  },
+  {
+    "word": "INSERT",
+    "hint": "Adds element at position"
+  },
+  {
+    "word": "FIND",
+    "hint": "Searches for element in container"
+  },
+  {
+    "word": "COUNT",
+    "hint": "Counts matching elements"
+  },
+  {
+    "word": "SORT",
+    "hint": "Arranges elements in order"
+  },
+  {
+    "word": "MERGE",
+    "hint": "Combines two sorted ranges"
+  },
+  {
+    "word": "UNIQUE",
+    "hint": "Removes consecutive duplicate values"
+  },
+  {
+    "word": "REVERSE",
+    "hint": "Reverses order of elements"
+  },
+  {
+    "word": "ROTATE",
+    "hint": "Shifts elements cyclically"
+  },
+  {
+    "word": "PARTITION",
+    "hint": "Divides range by predicate"
+  },
+  {
+    "word": "TRANSFORM",
+    "hint": "Applies function to each element"
+  },
+  {
+    "word": "ACCUMULATE",
+    "hint": "Sums or reduces range values"
+  },
+  {
+    "word": "REDUCE",
+    "hint": "Parallel-safe accumulation of values"
+  },
+  {
+    "word": "FOREACH",
+    "hint": "Applies function to range elements"
+  },
+  {
+    "word": "COPY",
+    "hint": "Duplicates range of elements"
+  },
+  {
+    "word": "FILL",
+    "hint": "Assigns value to all elements"
+  },
+  {
+    "word": "GENERATE",
+    "hint": "Assigns function results to range"
+  },
+  {
+    "word": "REPLACE",
+    "hint": "Substitutes matching values in range"
+  },
+  {
+    "word": "REMOVE",
+    "hint": "Shifts unwanted elements to end"
+  },
+  {
+    "word": "SEARCH",
+    "hint": "Finds subsequence in a range"
+  },
+  {
+    "word": "MISMATCH",
+    "hint": "Finds first differing pair"
+  },
+  {
+    "word": "EQUAL",
+    "hint": "Checks if two ranges are equal"
+  },
+  {
+    "word": "MINMAX",
+    "hint": "Returns both min and max values"
+  },
+  {
+    "word": "CLAMP",
+    "hint": "Constrains value within bounds"
+  },
+  {
+    "word": "EXCHANGE",
+    "hint": "Replaces value and returns old one"
+  },
+  {
+    "word": "VARIANT",
+    "hint": "Type-safe union alternative"
+  },
+  {
+    "word": "OPTIONAL",
+    "hint": "May or may not hold a value"
+  },
+  {
+    "word": "MONOSTATE",
+    "hint": "Empty alternative for variant type"
+  },
+  {
+    "word": "BITSET",
+    "hint": "Fixed-size bit sequence container"
+  },
+  {
+    "word": "SPAN",
+    "hint": "Non-owning view over contiguous data"
+  },
+  {
+    "word": "STRINGVIEW",
+    "hint": "Non-owning reference to string data"
+  },
+  {
+    "word": "FSTREAM",
+    "hint": "File stream input and output"
+  },
+  {
+    "word": "IFSTREAM",
+    "hint": "Input file stream class"
+  },
+  {
+    "word": "OFSTREAM",
+    "hint": "Output file stream class"
+  },
+  {
+    "word": "SSTREAM",
+    "hint": "String-based stream operations"
+  },
+  {
+    "word": "GETLINE",
+    "hint": "Reads entire line from stream"
+  },
+  {
+    "word": "THREAD",
+    "hint": "Unit of concurrent execution"
+  },
+  {
+    "word": "MUTEX",
+    "hint": "Mutual exclusion synchronization"
+  },
+  {
+    "word": "LOCK",
+    "hint": "Acquires mutex ownership"
+  },
+  {
+    "word": "UNLOCK",
+    "hint": "Releases mutex ownership"
+  },
+  {
+    "word": "ATOMIC",
+    "hint": "Lock-free thread-safe operations"
+  },
+  {
+    "word": "FUTURE",
+    "hint": "Holds result of async operation"
+  },
+  {
+    "word": "PROMISE",
+    "hint": "Provides value to a future"
+  },
+  {
+    "word": "ASYNC",
+    "hint": "Launches asynchronous task"
+  },
+  {
+    "word": "CONDITION",
+    "hint": "Thread synchronization variable"
+  },
+  {
+    "word": "JOINABLE",
+    "hint": "Thread that can be waited on"
+  },
+  {
+    "word": "DETACH",
+    "hint": "Separates thread from handle"
+  },
+  {
+    "word": "DEADLOCK",
+    "hint": "Threads blocked waiting for each other"
+  },
+  {
+    "word": "COROUTINE",
+    "hint": "Suspendable and resumable function"
+  },
+  {
+    "word": "CONCEPT",
+    "hint": "Named set of template constraints"
+  },
+  {
+    "word": "REQUIRES",
+    "hint": "Specifies template constraints"
+  },
+  {
+    "word": "MODULE",
+    "hint": "Modern compilation unit replacement"
+  },
+  {
+    "word": "IMPORT",
+    "hint": "Brings module into scope"
+  },
+  {
+    "word": "EXPORT",
+    "hint": "Makes module entities visible"
+  },
+  {
+    "word": "RANGES",
+    "hint": "Composable range-based algorithms"
+  },
+  {
+    "word": "VIEWS",
+    "hint": "Lazy range adaptors"
+  },
+  {
+    "word": "FILTER",
+    "hint": "Range view selecting elements"
+  },
+  {
+    "word": "IOTA",
+    "hint": "Generates incrementing sequence view"
+  },
+  {
+    "word": "EXCEPTION",
+    "hint": "Base class for standard errors"
+  },
+  {
+    "word": "RUNTIME",
+    "hint": "Error detected during execution"
+  },
+  {
+    "word": "LOGIC",
+    "hint": "Error from faulty program logic"
+  },
+  {
+    "word": "OVERFLOW",
+    "hint": "Value exceeds type maximum"
+  },
+  {
+    "word": "UNDERFLOW",
+    "hint": "Value below type minimum"
+  },
+  {
+    "word": "BADALLOC",
+    "hint": "Memory allocation failure exception"
+  },
+  {
+    "word": "BADCAST",
+    "hint": "Failed dynamic_cast exception"
+  },
+  {
+    "word": "NOTHROW",
+    "hint": "Returns null instead of throwing"
+  },
+  {
+    "word": "DELETE",
+    "hint": "Frees dynamically allocated memory"
+  },
+  {
+    "word": "PLACEMENT",
+    "hint": "Constructs object at given address"
+  },
+  {
+    "word": "VTABLE",
+    "hint": "Virtual function dispatch table"
+  },
+  {
+    "word": "VPTR",
+    "hint": "Pointer to virtual function table"
+  },
+  {
+    "word": "DISPATCH",
+    "hint": "Runtime method resolution process"
+  },
+  {
+    "word": "BINDING",
+    "hint": "Connecting call to function body"
+  },
+  {
+    "word": "SLICING",
+    "hint": "Losing derived data in base copy"
+  },
+  {
+    "word": "DOWNCAST",
+    "hint": "Converting base to derived type"
+  },
+  {
+    "word": "UPCAST",
+    "hint": "Converting derived to base type"
+  },
+  {
+    "word": "REINTERPRET",
+    "hint": "Unsafe low-level type cast"
+  },
+  {
+    "word": "CASTING",
+    "hint": "Explicit type conversion operation"
+  },
+  {
+    "word": "CONVERSION",
+    "hint": "Changing value from one type"
+  },
+  {
+    "word": "COERCION",
+    "hint": "Implicit type conversion by compiler"
+  },
+  {
+    "word": "PROMOTION",
+    "hint": "Implicit widening type conversion"
+  },
+  {
+    "word": "NARROWING",
+    "hint": "Potentially lossy type conversion"
+  },
+  {
+    "word": "SFINAE",
+    "hint": "Substitution failure is not an error"
+  },
+  {
+    "word": "TRAITS",
+    "hint": "Compile-time type property queries"
+  },
+  {
+    "word": "ENABLE",
+    "hint": "Conditionally enables template overload"
+  },
+  {
+    "word": "DECAY",
+    "hint": "Removes references and qualifiers"
+  },
+  {
+    "word": "INVOKE",
+    "hint": "Calls any callable uniformly"
+  },
+  {
+    "word": "BIND",
+    "hint": "Creates callable with bound arguments"
+  },
+  {
+    "word": "FUNCTION",
+    "hint": "Type-erased callable wrapper"
+  },
+  {
+    "word": "CHRONO",
+    "hint": "Time utilities library"
+  },
+  {
+    "word": "DURATION",
+    "hint": "Represents a time interval"
+  },
+  {
+    "word": "TIMEPOINT",
+    "hint": "Specific moment in time"
+  },
+  {
+    "word": "RATIO",
+    "hint": "Compile-time rational number"
+  },
+  {
+    "word": "REGEX",
+    "hint": "Regular expression pattern matching"
+  },
+  {
+    "word": "SMATCH",
+    "hint": "String regex match results"
+  },
+  {
+    "word": "FILESYSTEM",
+    "hint": "File and directory operations"
+  },
+  {
+    "word": "PATH",
+    "hint": "Filesystem path representation"
+  },
+  {
+    "word": "RANDOM",
+    "hint": "Random number generation library"
+  },
+  {
+    "word": "UNIFORM",
+    "hint": "Equal probability distribution"
+  },
+  {
+    "word": "MERSENNE",
+    "hint": "High quality random number engine"
+  },
+  {
+    "word": "NUMERIC",
+    "hint": "Numeric operations header"
+  },
+  {
+    "word": "COMPLEX",
+    "hint": "Complex number type support"
+  },
+  {
+    "word": "VALARRAY",
+    "hint": "Numeric array for math operations"
+  },
+  {
+    "word": "ALGORITHM",
+    "hint": "Standard algorithms header"
+  },
+  {
+    "word": "FUNCTIONAL",
+    "hint": "Function objects header"
+  },
+  {
+    "word": "MEMORY",
+    "hint": "Smart pointer and allocator header"
+  },
+  {
+    "word": "UTILITY",
+    "hint": "Miscellaneous utility components"
+  },
+  {
+    "word": "TYPEINFO",
+    "hint": "Runtime type identification header"
+  },
+  {
+    "word": "CASSERT",
+    "hint": "C assert macro wrapper header"
+  },
+  {
+    "word": "CSTRING",
+    "hint": "C string functions wrapper header"
+  },
+  {
+    "word": "CSTDLIB",
+    "hint": "C standard utility wrapper header"
+  },
+  {
+    "word": "CSTDIO",
+    "hint": "C standard IO wrapper header"
+  },
+  {
+    "word": "CMATH",
+    "hint": "C math functions wrapper header"
+  },
+  {
+    "word": "CCTYPE",
+    "hint": "C character classification wrapper"
+  },
+  {
+    "word": "CLIMITS",
+    "hint": "C integer limits wrapper header"
+  },
+  {
+    "word": "CFLOAT",
+    "hint": "C floating point limits header"
+  },
+  {
+    "word": "CSTDINT",
+    "hint": "Fixed width integer types header"
+  },
+  {
+    "word": "MULTIMAP",
+    "hint": "Sorted map allowing duplicate keys"
+  },
+  {
+    "word": "MULTISET",
+    "hint": "Sorted set allowing duplicates"
+  },
+  {
+    "word": "UNORDERED",
+    "hint": "Hash-based container prefix"
+  },
+  {
+    "word": "HASHMAP",
+    "hint": "Hash table key-value container"
+  },
+  {
+    "word": "HASHSET",
+    "hint": "Hash table unique element container"
+  },
+  {
+    "word": "BUCKET",
+    "hint": "Hash table storage slot"
+  },
+  {
+    "word": "REHASH",
+    "hint": "Rebuilds hash table structure"
+  },
+  {
+    "word": "ADAPTOR",
+    "hint": "Wraps container with new interface"
+  },
+  {
+    "word": "COMPARATOR",
+    "hint": "Custom ordering function object"
+  },
+  {
+    "word": "LESS",
+    "hint": "Default ascending comparison functor"
+  },
+  {
+    "word": "GREATER",
+    "hint": "Descending comparison functor"
+  },
+  {
+    "word": "NEGATE",
+    "hint": "Negation function object"
+  },
+  {
+    "word": "PLUS",
+    "hint": "Addition function object"
+  },
+  {
+    "word": "MINUS",
+    "hint": "Subtraction function object"
+  },
+  {
+    "word": "MULTIPLIES",
+    "hint": "Multiplication function object"
+  },
+  {
+    "word": "DIVIDES",
+    "hint": "Division function object"
+  },
+  {
+    "word": "MODULUS",
+    "hint": "Remainder function object"
+  },
+  {
+    "word": "MAIN",
+    "hint": "Program entry point function"
+  },
+  {
+    "word": "ARGC",
+    "hint": "Count of command line arguments"
+  },
+  {
+    "word": "ARGV",
+    "hint": "Array of command line strings"
+  },
+  {
+    "word": "OVERLOAD",
+    "hint": "Multiple functions with same name"
+  },
+  {
+    "word": "MANGLING",
+    "hint": "Compiler encoding of function names"
+  },
+  {
+    "word": "LINKAGE",
+    "hint": "Visibility across translation units"
+  },
+  {
+    "word": "HEADER",
+    "hint": "File included for declarations"
+  },
+  {
+    "word": "GUARD",
+    "hint": "Prevents multiple header inclusion"
+  },
+  {
+    "word": "MACRO",
+    "hint": "Preprocessor text substitution"
+  },
+  {
+    "word": "TERNARY",
+    "hint": "Conditional expression operator"
+  },
+  {
+    "word": "BITWISE",
+    "hint": "Operations on individual bits"
+  },
+  {
+    "word": "SHIFT",
+    "hint": "Moves bits left or right"
+  },
+  {
+    "word": "LOGICAL",
+    "hint": "Boolean AND OR NOT operations"
+  },
+  {
+    "word": "UNARY",
+    "hint": "Operator with single operand"
+  },
+  {
+    "word": "BINARY",
+    "hint": "Operator with two operands"
+  },
+  {
+    "word": "ARROW",
+    "hint": "Member access through pointer"
+  },
+  {
+    "word": "DEREFERENCE",
+    "hint": "Accesses value at pointer address"
+  },
+  {
+    "word": "ADDRESS",
+    "hint": "Memory location of a variable"
+  },
+  {
+    "word": "OFFSET",
+    "hint": "Byte distance within a struct"
+  },
+  {
+    "word": "PADDING",
+    "hint": "Extra bytes for memory alignment"
+  },
+  {
+    "word": "ENDIAN",
+    "hint": "Byte ordering in memory storage"
+  },
+  {
+    "word": "BITFIELD",
+    "hint": "Struct member with specified bits"
+  },
+  {
+    "word": "VARIADIC",
+    "hint": "Accepts variable number of arguments"
+  },
+  {
+    "word": "CALLBACK",
+    "hint": "Function passed as an argument"
+  },
+  {
+    "word": "RECURSION",
+    "hint": "Function that calls itself"
+  },
+  {
+    "word": "ITERATION",
+    "hint": "Repeated execution using loops"
+  },
+  {
+    "word": "ASSERTION",
+    "hint": "Runtime condition verification check"
+  },
+  {
+    "word": "LITERAL",
+    "hint": "Fixed value in source code"
+  },
+  {
+    "word": "IDENTIFIER",
+    "hint": "Name for a program entity"
+  },
+  {
+    "word": "EXPRESSION",
+    "hint": "Code combination producing value"
+  },
+  {
+    "word": "STATEMENT",
+    "hint": "Complete instruction to execute"
+  },
+  {
+    "word": "COMPOUND",
+    "hint": "Block of statements in braces"
+  },
+  {
+    "word": "DIRECTIVE",
+    "hint": "Instruction for preprocessor"
+  },
+  {
+    "word": "PARAMETER",
+    "hint": "Variable in function definition"
+  },
+  {
+    "word": "ARGUMENT",
+    "hint": "Value passed to a function"
+  },
+  {
+    "word": "PROTOTYPE",
+    "hint": "Forward declaration of function"
+  },
+  {
+    "word": "INITIALIZER",
+    "hint": "Value assigned at declaration"
+  },
+  {
+    "word": "AGGREGATE",
+    "hint": "Initializable with brace syntax"
+  },
+  {
+    "word": "DESIGNATED",
+    "hint": "Named member initialization"
+  },
+  {
+    "word": "STRUCTURED",
+    "hint": "Binding to decompose return values"
+  },
+  {
+    "word": "FOLD",
+    "hint": "Reduces parameter pack with operator"
+  },
+  {
+    "word": "PACK",
+    "hint": "Variadic template parameter group"
+  },
+  {
+    "word": "EXPANSION",
+    "hint": "Unpacking parameter pack elements"
+  },
+  {
+    "word": "DEDUCTION",
+    "hint": "Automatic template argument inference"
+  },
+  {
+    "word": "PARTIAL",
+    "hint": "Subset template specialization"
+  },
+  {
+    "word": "INSTANTIATE",
+    "hint": "Creating concrete from template"
+  },
+  {
+    "word": "METAPROGRAM",
+    "hint": "Computing at compile time"
+  },
+  {
+    "word": "NORETURN",
+    "hint": "Function that never returns"
+  },
+  {
+    "word": "DEPRECATED",
+    "hint": "Marks entity as discouraged"
+  },
+  {
+    "word": "NODISCARD",
+    "hint": "Warns if return value is ignored"
+  },
+  {
+    "word": "FALLTHROUGH",
+    "hint": "Intentional switch case fall through"
+  },
+  {
+    "word": "LIKELY",
+    "hint": "Hints expected branch direction"
+  },
+  {
+    "word": "UNLIKELY",
+    "hint": "Hints unexpected branch direction"
+  },
+  {
+    "word": "SHARED",
+    "hint": "Reference counted smart pointer"
+  },
+  {
+    "word": "WEAK",
+    "hint": "Non-owning smart pointer observer"
+  },
+  {
+    "word": "DELETER",
+    "hint": "Custom cleanup for smart pointer"
+  },
+  {
+    "word": "OWNERSHIP",
+    "hint": "Responsibility for resource cleanup"
+  },
+  {
+    "word": "LIFETIME",
+    "hint": "Duration of object existence"
+  },
+  {
+    "word": "MALLOC",
+    "hint": "C-style heap memory allocation"
+  },
+  {
+    "word": "REALLOC",
+    "hint": "Resizes allocated memory block"
+  },
+  {
+    "word": "CALLOC",
+    "hint": "Allocates zeroed memory block"
+  },
+  {
+    "word": "FREE",
+    "hint": "Releases C-style allocated memory"
+  },
+  {
+    "word": "HEAP",
+    "hint": "Dynamic memory allocation region"
+  },
+  {
+    "word": "BUFFER",
+    "hint": "Temporary data storage area"
+  },
+  {
+    "word": "SEGMENT",
+    "hint": "Section of program memory layout"
+  },
+  {
+    "word": "INTERFACE",
+    "hint": "Pure virtual class contract"
+  },
+  {
+    "word": "CONCRETE",
+    "hint": "Fully implemented class type"
+  },
+  {
+    "word": "DIAMOND",
+    "hint": "Ambiguous multiple inheritance"
+  },
+  {
+    "word": "MULTIPLE",
+    "hint": "Inheriting from several base classes"
+  },
+  {
+    "word": "SINGLETON",
+    "hint": "Only one instance allowed pattern"
+  },
+  {
+    "word": "FACTORY",
+    "hint": "Creates objects without specifying type"
+  },
+  {
+    "word": "OBSERVER",
+    "hint": "Notifies dependents of state change"
+  },
+  {
+    "word": "STRATEGY",
+    "hint": "Encapsulates interchangeable algorithms"
+  },
+  {
+    "word": "DECORATOR",
+    "hint": "Adds behavior to object dynamically"
+  },
+  {
+    "word": "PROXY",
+    "hint": "Surrogate controlling object access"
+  },
+  {
+    "word": "CRTP",
+    "hint": "Curiously recurring template pattern"
+  },
+  {
+    "word": "PIMPL",
+    "hint": "Pointer to implementation idiom"
+  },
+  {
+    "word": "ELISION",
+    "hint": "Compiler skips unnecessary copies"
+  },
+  {
+    "word": "NRVO",
+    "hint": "Named return value optimization"
+  },
+  {
+    "word": "TRIVIAL",
+    "hint": "Type with compiler-generated members"
+  },
+  {
+    "word": "STANDARD",
+    "hint": "Layout compatible with C structs"
+  },
+  {
+    "word": "RESTRICT",
+    "hint": "Pointer aliasing optimization hint"
+  },
+  {
+    "word": "REGISTER",
+    "hint": "Suggests CPU register storage"
+  },
+  {
+    "word": "MANGLED",
+    "hint": "Encoded symbol name by compiler"
+  },
+  {
+    "word": "DEMANGLED",
+    "hint": "Human readable symbol name"
+  },
+  {
+    "word": "SYMBOL",
+    "hint": "Named entity in object file"
+  },
+  {
+    "word": "TRANSLATION",
+    "hint": "Single source file compilation unit"
+  },
+  {
+    "word": "CBEGIN",
+    "hint": "Const iterator to first element"
+  },
+  {
+    "word": "CEND",
+    "hint": "Const iterator past last element"
+  },
+  {
+    "word": "RBEGIN",
+    "hint": "Reverse iterator to last element"
+  },
+  {
+    "word": "REND",
+    "hint": "Reverse iterator before first element"
+  },
+  {
+    "word": "ADVANCE",
+    "hint": "Moves iterator by given distance"
+  },
+  {
+    "word": "DISTANCE",
+    "hint": "Count between two iterators"
+  },
+  {
+    "word": "NEXT",
+    "hint": "Returns advanced iterator copy"
+  },
+  {
+    "word": "PREV",
+    "hint": "Returns decremented iterator copy"
+  },
+  {
+    "word": "INSERTER",
+    "hint": "Insert iterator adaptor"
+  },
+  {
+    "word": "OSTREAM",
+    "hint": "Output stream iterator adaptor"
+  },
+  {
+    "word": "ISTREAM",
+    "hint": "Input stream iterator adaptor"
+  },
+  {
+    "word": "STREAMBUF",
+    "hint": "Low level stream buffer class"
+  },
+  {
+    "word": "MANIPULATOR",
+    "hint": "Function modifying stream state"
+  },
+  {
+    "word": "SETW",
+    "hint": "Sets output field width"
+  },
+  {
+    "word": "SETFILL",
+    "hint": "Sets stream fill character"
+  },
+  {
+    "word": "FIXED",
+    "hint": "Fixed point decimal notation"
+  },
+  {
+    "word": "SHOWPOINT",
+    "hint": "Always displays decimal point"
+  },
+  {
+    "word": "BOOLALPHA",
+    "hint": "Displays bool as text words"
+  },
+  {
+    "word": "UPPERCASE",
+    "hint": "Uses uppercase in output format"
+  },
+  {
+    "word": "NOSKIPWS",
+    "hint": "Does not skip whitespace on input"
+  },
+  {
+    "word": "LOCALE",
+    "hint": "Cultural formatting conventions"
+  },
+  {
+    "word": "FACET",
+    "hint": "Locale component for formatting"
+  },
+  {
+    "word": "WSTRING",
+    "hint": "Wide character string class"
+  },
+  {
+    "word": "CODECVT",
+    "hint": "Character encoding conversion"
+  },
+  {
+    "word": "ERRNO",
+    "hint": "C-compatible error number macro"
+  },
+  {
+    "word": "SYSTEM",
+    "hint": "Executes shell command string"
+  },
+  {
+    "word": "ABORT",
+    "hint": "Abnormal program termination"
+  },
+  {
+    "word": "ATEXIT",
+    "hint": "Registers function called at exit"
+  },
+  {
+    "word": "EXIT",
+    "hint": "Terminates program execution"
+  },
+  {
+    "word": "SIGNAL",
+    "hint": "Sets a signal handler function"
+  },
+  {
+    "word": "SETJMP",
+    "hint": "Saves execution context for jump"
+  },
+  {
+    "word": "LONGJMP",
+    "hint": "Restores saved execution context"
+  },
+  {
+    "word": "INFINITY",
+    "hint": "Positive infinity float constant"
+  },
+  {
+    "word": "EPSILON",
+    "hint": "Smallest representable difference"
+  },
+  {
+    "word": "DENORM",
+    "hint": "Subnormal floating point value"
+  },
+  {
+    "word": "COPYSIGN",
+    "hint": "Copies sign between float values"
+  },
+  {
+    "word": "ISNAN",
+    "hint": "Checks for not-a-number value"
+  },
+  {
+    "word": "ISINF",
+    "hint": "Checks for infinity value"
+  },
+  {
+    "word": "FORMAT",
+    "hint": "Type-safe string formatting library"
+  },
+  {
+    "word": "PRINT",
+    "hint": "Formatted output function"
+  },
+  {
+    "word": "PRINTLN",
+    "hint": "Print with trailing newline"
+  },
+  {
+    "word": "SOURCE",
+    "hint": "Current code location information"
+  },
+  {
+    "word": "STACKTRACE",
+    "hint": "Captures call stack frames"
+  },
+  {
+    "word": "EXPECTED",
+    "hint": "Value or error return type"
+  },
+  {
+    "word": "MDSPAN",
+    "hint": "Multidimensional array view"
+  },
+  {
+    "word": "GENERATOR",
+    "hint": "Coroutine producing value sequence"
+  },
+  {
+    "word": "YIELD",
+    "hint": "Produces value from coroutine"
+  },
+  {
+    "word": "RESUME",
+    "hint": "Continues suspended coroutine"
+  },
+  {
+    "word": "SUSPEND",
+    "hint": "Pauses coroutine execution"
+  },
+  {
+    "word": "COAWAIT",
+    "hint": "Suspends until awaitable completes"
+  },
+  {
+    "word": "COYIELD",
+    "hint": "Yields value and suspends"
+  },
+  {
+    "word": "CORETURN",
+    "hint": "Returns from a coroutine"
+  },
+  {
+    "word": "AWAITABLE",
+    "hint": "Type supporting co_await"
+  },
+  {
+    "word": "SEMAPHORE",
+    "hint": "Counting synchronization primitive"
+  },
+  {
+    "word": "LATCH",
+    "hint": "Single-use thread barrier"
+  },
+  {
+    "word": "BARRIER",
+    "hint": "Reusable thread synchronization point"
+  },
+  {
+    "word": "JTHREAD",
+    "hint": "Auto-joining thread class"
+  },
+  {
+    "word": "EXECUTION",
+    "hint": "Parallel algorithm policy"
+  },
+  {
+    "word": "PARALLEL",
+    "hint": "Execution policy for algorithms"
+  },
+  {
+    "word": "SEQUENCED",
+    "hint": "Sequential execution policy"
+  },
+  {
+    "word": "VECTORIZED",
+    "hint": "SIMD execution policy"
+  },
+  {
+    "word": "RELAXED",
+    "hint": "No ordering atomic constraint"
+  },
+  {
+    "word": "ACQUIRE",
+    "hint": "Read synchronization ordering"
+  },
+  {
+    "word": "RELEASE",
+    "hint": "Write synchronization ordering"
+  },
+  {
+    "word": "CONSUME",
+    "hint": "Data dependency atomic ordering"
+  },
+  {
+    "word": "COMPARE",
+    "hint": "Atomic compare and exchange"
+  },
+  {
+    "word": "SPACESHIP",
+    "hint": "Three-way comparison operator"
+  },
+  {
+    "word": "STRONG",
+    "hint": "Distinguishes all unequal values"
+  },
+  {
+    "word": "CONSTCAST",
+    "hint": "Removes const qualification from type"
+  },
+  {
+    "word": "STATICCAST",
+    "hint": "Compile-time checked type cast"
+  },
+  {
+    "word": "DYNAMICCAST",
+    "hint": "Runtime polymorphic type cast"
+  },
+  {
+    "word": "TYPETRAIT",
+    "hint": "Compile-time type property queries"
+  },
+  {
+    "word": "THREADLOCAL",
+    "hint": "Per-thread storage duration"
+  },
+  {
+    "word": "MAKESHARED",
+    "hint": "Efficient shared pointer creation"
+  },
+  {
+    "word": "MAKEUNIQUE",
+    "hint": "Safe unique pointer creation"
+  },
+  {
+    "word": "SCOPEGUARD",
+    "hint": "Cleanup action on scope exit"
+  },
+  {
+    "word": "STOPTOKEN",
+    "hint": "Cooperative thread cancellation"
+  },
+  {
+    "word": "MEMORYORDER",
+    "hint": "Atomic operation ordering"
+  },
+  {
+    "word": "PARTIALORD",
+    "hint": "Allows incomparable values"
+  },
+  {
+    "word": "IFCONSTEXPR",
+    "hint": "Compile-time conditional branch"
+  },
+  {
+    "word": "STATICLIB",
+    "hint": "Archive of compiled object files"
+  },
+  {
+    "word": "SHAREDLIB",
+    "hint": "Shared library loaded at runtime"
+  },
+  {
+    "word": "EXTERNC",
+    "hint": "C language linkage specification"
+  },
+  {
+    "word": "NUMERICLIM",
+    "hint": "Type value range information"
+  },
+  {
+    "word": "MAYBEUNUSED",
+    "hint": "Suppresses unused entity warnings"
+  },
+  {
+    "word": "SASSERT",
+    "hint": "Compile-time condition check"
+  }
+]

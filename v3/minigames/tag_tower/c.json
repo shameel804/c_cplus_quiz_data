@@ -1,0 +1,3458 @@
+[
+    {
+        "tags": [
+            "#include",
+            "<stdio.h>",
+            "int",
+            "main()",
+            "{",
+            "return 0;",
+            "}"
+        ],
+        "description": "Minimal C Program"
+    },
+    {
+        "tags": [
+            "#include",
+            "<stdio.h>",
+            "int",
+            "main()",
+            "{",
+            "printf(\"Hi\");",
+            "return 0;",
+            "}"
+        ],
+        "description": "Hello World Program"
+    },
+    {
+        "tags": [
+            "int",
+            "x",
+            "=",
+            "10",
+            ";"
+        ],
+        "description": "Integer Variable Declaration"
+    },
+    {
+        "tags": [
+            "float",
+            "f",
+            "=",
+            "3.14",
+            ";"
+        ],
+        "description": "Float Variable Declaration"
+    },
+    {
+        "tags": [
+            "double",
+            "d",
+            "=",
+            "3.14159",
+            ";"
+        ],
+        "description": "Double Variable Declaration"
+    },
+    {
+        "tags": [
+            "char",
+            "c",
+            "=",
+            "'A'",
+            ";"
+        ],
+        "description": "Char Variable Declaration"
+    },
+    {
+        "tags": [
+            "const",
+            "int",
+            "MAX",
+            "=",
+            "100",
+            ";"
+        ],
+        "description": "Constant Integer Declaration"
+    },
+    {
+        "tags": [
+            "unsigned",
+            "int",
+            "val",
+            "=",
+            "42",
+            ";"
+        ],
+        "description": "Unsigned Integer Declaration"
+    },
+    {
+        "tags": [
+            "long",
+            "long",
+            "big",
+            "=",
+            "999999",
+            ";"
+        ],
+        "description": "Long Long Declaration"
+    },
+    {
+        "tags": [
+            "short",
+            "s",
+            "=",
+            "10",
+            ";"
+        ],
+        "description": "Short Variable Declaration"
+    },
+    {
+        "tags": [
+            "printf(",
+            "\"%d\"",
+            ",",
+            "x",
+            ")",
+            ";"
+        ],
+        "description": "Print Integer Value"
+    },
+    {
+        "tags": [
+            "printf(",
+            "\"%f\"",
+            ",",
+            "f",
+            ")",
+            ";"
+        ],
+        "description": "Print Float Value"
+    },
+    {
+        "tags": [
+            "printf(",
+            "\"%c\"",
+            ",",
+            "ch",
+            ")",
+            ";"
+        ],
+        "description": "Print Character Value"
+    },
+    {
+        "tags": [
+            "printf(",
+            "\"%s\"",
+            ",",
+            "str",
+            ")",
+            ";"
+        ],
+        "description": "Print String Value"
+    },
+    {
+        "tags": [
+            "printf(",
+            "\"%x\"",
+            ",",
+            "num",
+            ")",
+            ";"
+        ],
+        "description": "Print Hex Value"
+    },
+    {
+        "tags": [
+            "printf(",
+            "\"%o\"",
+            ",",
+            "num",
+            ")",
+            ";"
+        ],
+        "description": "Print Octal Value"
+    },
+    {
+        "tags": [
+            "printf(",
+            "\"%p\"",
+            ",",
+            "ptr",
+            ")",
+            ";"
+        ],
+        "description": "Print Pointer Address"
+    },
+    {
+        "tags": [
+            "printf(",
+            "\"%ld\"",
+            ",",
+            "val",
+            ")",
+            ";"
+        ],
+        "description": "Print Long Value"
+    },
+    {
+        "tags": [
+            "scanf(",
+            "\"%d\"",
+            ",",
+            "&x",
+            ")",
+            ";"
+        ],
+        "description": "Read Integer Input"
+    },
+    {
+        "tags": [
+            "scanf(",
+            "\"%f\"",
+            ",",
+            "&f",
+            ")",
+            ";"
+        ],
+        "description": "Read Float Input"
+    },
+    {
+        "tags": [
+            "scanf(",
+            "\"%c\"",
+            ",",
+            "&ch",
+            ")",
+            ";"
+        ],
+        "description": "Read Character Input"
+    },
+    {
+        "tags": [
+            "scanf(",
+            "\"%s\"",
+            ",",
+            "str",
+            ")",
+            ";"
+        ],
+        "description": "Read String Input"
+    },
+    {
+        "tags": [
+            "if",
+            "(x > 0)",
+            "{",
+            "printf(\"pos\");",
+            "}"
+        ],
+        "description": "Simple If Statement"
+    },
+    {
+        "tags": [
+            "if",
+            "(x > 0)",
+            "{",
+            "/*true*/",
+            "}",
+            "else",
+            "{",
+            "/*false*/",
+            "}"
+        ],
+        "description": "If Else Statement"
+    },
+    {
+        "tags": [
+            "if",
+            "(a)",
+            "{",
+            "}",
+            "else if",
+            "(b)",
+            "{",
+            "}",
+            "else",
+            "{",
+            "}"
+        ],
+        "description": "If Else If Chain"
+    },
+    {
+        "tags": [
+            "(x > y)",
+            "?",
+            "x",
+            ":",
+            "y",
+            ";"
+        ],
+        "description": "Ternary Operator Expression"
+    },
+    {
+        "tags": [
+            "switch",
+            "(ch)",
+            "{",
+            "case 'A':",
+            "break;",
+            "default:",
+            "break;",
+            "}"
+        ],
+        "description": "Switch Case Statement"
+    },
+    {
+        "tags": [
+            "switch",
+            "(n)",
+            "{",
+            "case 1:",
+            "break;",
+            "case 2:",
+            "break;",
+            "default:",
+            "}"
+        ],
+        "description": "Switch Multiple Cases"
+    },
+    {
+        "tags": [
+            "for",
+            "(int i=0;",
+            "i<n;",
+            "i++)",
+            "{",
+            "/*body*/",
+            "}"
+        ],
+        "description": "For Loop Structure"
+    },
+    {
+        "tags": [
+            "while",
+            "(x > 0)",
+            "{",
+            "x--;",
+            "}"
+        ],
+        "description": "While Loop Structure"
+    },
+    {
+        "tags": [
+            "do",
+            "{",
+            "x++;",
+            "}",
+            "while",
+            "(x < 10)",
+            ";"
+        ],
+        "description": "Do While Loop"
+    },
+    {
+        "tags": [
+            "for",
+            "(;;)",
+            "{",
+            "if (done)",
+            "break;",
+            "}"
+        ],
+        "description": "Infinite Loop With Break"
+    },
+    {
+        "tags": [
+            "for",
+            "(i=0;",
+            "i<n;",
+            "i++)",
+            "{",
+            "if (skip)",
+            "continue;",
+            "}"
+        ],
+        "description": "Loop With Continue"
+    },
+    {
+        "tags": [
+            "for",
+            "(i=0;",
+            "i<3;",
+            "i++)",
+            "for",
+            "(j=0;",
+            "j<3;",
+            "j++)",
+            "{}"
+        ],
+        "description": "Nested For Loops"
+    },
+    {
+        "tags": [
+            "int",
+            "add(",
+            "int a,",
+            "int b)",
+            "{",
+            "return a+b;",
+            "}"
+        ],
+        "description": "Function Returning Sum"
+    },
+    {
+        "tags": [
+            "void",
+            "greet()",
+            "{",
+            "printf(\"Hi\");",
+            "}"
+        ],
+        "description": "Void Function Definition"
+    },
+    {
+        "tags": [
+            "int",
+            "square(",
+            "int x)",
+            "{",
+            "return x*x;",
+            "}"
+        ],
+        "description": "Square Function Definition"
+    },
+    {
+        "tags": [
+            "int",
+            "max(",
+            "int a,",
+            "int b)",
+            "{",
+            "return a>b?a:b;",
+            "}"
+        ],
+        "description": "Max Function Definition"
+    },
+    {
+        "tags": [
+            "int",
+            "fact(",
+            "int n)",
+            "{",
+            "if(n<=1)",
+            "return 1;",
+            "return n*fact(n-1);",
+            "}"
+        ],
+        "description": "Recursive Factorial Function"
+    },
+    {
+        "tags": [
+            "int",
+            "fib(",
+            "int n)",
+            "{",
+            "if(n<2)",
+            "return n;",
+            "return fib(n-1)+fib(n-2);",
+            "}"
+        ],
+        "description": "Recursive Fibonacci Function"
+    },
+    {
+        "tags": [
+            "void",
+            "swap(",
+            "int *a,",
+            "int *b)",
+            "{",
+            "int t=*a;",
+            "*a=*b;",
+            "*b=t;",
+            "}"
+        ],
+        "description": "Swap With Pointers"
+    },
+    {
+        "tags": [
+            "int",
+            "*ptr",
+            "=",
+            "&x",
+            ";"
+        ],
+        "description": "Pointer Declaration Assignment"
+    },
+    {
+        "tags": [
+            "int",
+            "*ptr",
+            "=",
+            "NULL",
+            ";"
+        ],
+        "description": "Null Pointer Declaration"
+    },
+    {
+        "tags": [
+            "int",
+            "**pp",
+            "=",
+            "&ptr",
+            ";"
+        ],
+        "description": "Pointer To Pointer"
+    },
+    {
+        "tags": [
+            "*ptr",
+            "=",
+            "42",
+            ";"
+        ],
+        "description": "Pointer Dereference Assignment"
+    },
+    {
+        "tags": [
+            "int",
+            "val",
+            "=",
+            "*ptr",
+            ";"
+        ],
+        "description": "Read Via Pointer"
+    },
+    {
+        "tags": [
+            "ptr++",
+            ";",
+            "/*next*/",
+            "ptr--",
+            ";",
+            "/*prev*/"
+        ],
+        "description": "Pointer Arithmetic Operations"
+    },
+    {
+        "tags": [
+            "void",
+            "fn(",
+            "int *arr,",
+            "int n)",
+            "{",
+            "/*use arr*/",
+            "}"
+        ],
+        "description": "Array Passed As Pointer"
+    },
+    {
+        "tags": [
+            "int",
+            "arr[5]",
+            "=",
+            "{1,2,3,4,5}",
+            ";"
+        ],
+        "description": "Integer Array Initialization"
+    },
+    {
+        "tags": [
+            "char",
+            "str[]",
+            "=",
+            "\"hello\"",
+            ";"
+        ],
+        "description": "String Array Initialization"
+    },
+    {
+        "tags": [
+            "int",
+            "mat[2][3]",
+            "=",
+            "{{1,2,3},",
+            "{4,5,6}}",
+            ";"
+        ],
+        "description": "2D Array Initialization"
+    },
+    {
+        "tags": [
+            "int",
+            "arr[]",
+            "=",
+            "{0}",
+            ";"
+        ],
+        "description": "Zero Initialized Array"
+    },
+    {
+        "tags": [
+            "for(i=0;",
+            "i<n;",
+            "i++)",
+            "sum",
+            "+=",
+            "arr[i];"
+        ],
+        "description": "Array Sum Loop"
+    },
+    {
+        "tags": [
+            "for(i=0;",
+            "i<n;",
+            "i++)",
+            "if(arr[i]>max)",
+            "max=arr[i];"
+        ],
+        "description": "Find Array Maximum"
+    },
+    {
+        "tags": [
+            "for(i=0;",
+            "i<n;",
+            "i++)",
+            "if(arr[i]<min)",
+            "min=arr[i];"
+        ],
+        "description": "Find Array Minimum"
+    },
+    {
+        "tags": [
+            "for(i=0;",
+            "i<n/2;",
+            "i++)",
+            "swap(",
+            "&a[i],",
+            "&a[n-1-i]);"
+        ],
+        "description": "Reverse Array In Place"
+    },
+    {
+        "tags": [
+            "struct",
+            "Point",
+            "{",
+            "int x;",
+            "int y;",
+            "}",
+            ";"
+        ],
+        "description": "Struct Definition"
+    },
+    {
+        "tags": [
+            "struct",
+            "Point",
+            "p",
+            "=",
+            "{10, 20}",
+            ";"
+        ],
+        "description": "Struct Initialization"
+    },
+    {
+        "tags": [
+            "struct",
+            "Point",
+            "*sp",
+            "=",
+            "&p",
+            ";",
+            "sp->x;"
+        ],
+        "description": "Struct Pointer Access"
+    },
+    {
+        "tags": [
+            "typedef",
+            "struct",
+            "{",
+            "int id;",
+            "char name[20];",
+            "}",
+            "Student",
+            ";"
+        ],
+        "description": "Typedef Struct Definition"
+    },
+    {
+        "tags": [
+            "struct",
+            "Node",
+            "{",
+            "int data;",
+            "struct Node",
+            "*next;",
+            "}",
+            ";"
+        ],
+        "description": "Linked List Node"
+    },
+    {
+        "tags": [
+            "typedef",
+            "int",
+            "Count",
+            ";"
+        ],
+        "description": "Typedef Alias Declaration"
+    },
+    {
+        "tags": [
+            "typedef",
+            "unsigned long",
+            "ulong",
+            ";"
+        ],
+        "description": "Typedef Unsigned Long"
+    },
+    {
+        "tags": [
+            "union",
+            "Data",
+            "{",
+            "int i;",
+            "float f;",
+            "char c;",
+            "}",
+            ";"
+        ],
+        "description": "Union Definition"
+    },
+    {
+        "tags": [
+            "enum",
+            "Color",
+            "{",
+            "RED,",
+            "GREEN,",
+            "BLUE",
+            "}",
+            ";"
+        ],
+        "description": "Enum Definition"
+    },
+    {
+        "tags": [
+            "enum",
+            "Bool",
+            "{",
+            "FALSE=0,",
+            "TRUE=1",
+            "}",
+            ";"
+        ],
+        "description": "Enum With Values"
+    },
+    {
+        "tags": [
+            "enum",
+            "Day",
+            "{",
+            "MON=1,",
+            "TUE,",
+            "WED,",
+            "THU",
+            "}",
+            ";"
+        ],
+        "description": "Enum Days Of Week"
+    },
+    {
+        "tags": [
+            "#define",
+            "PI",
+            "3.14159"
+        ],
+        "description": "Macro Constant Definition"
+    },
+    {
+        "tags": [
+            "#define",
+            "MAX(a,b)",
+            "((a)>(b)?(a):(b))"
+        ],
+        "description": "Macro Function Definition"
+    },
+    {
+        "tags": [
+            "#define",
+            "SQUARE(x)",
+            "((x)*(x))"
+        ],
+        "description": "Square Macro Definition"
+    },
+    {
+        "tags": [
+            "#define",
+            "MIN(a,b)",
+            "((a)<(b)?(a):(b))"
+        ],
+        "description": "Min Macro Definition"
+    },
+    {
+        "tags": [
+            "#define",
+            "ABS(x)",
+            "((x)<0?-(x):(x))"
+        ],
+        "description": "Absolute Value Macro"
+    },
+    {
+        "tags": [
+            "#ifdef",
+            "DEBUG",
+            "printf(\"dbg\");",
+            "#endif"
+        ],
+        "description": "Conditional Compilation Debug"
+    },
+    {
+        "tags": [
+            "#ifndef",
+            "HEADER_H",
+            "#define",
+            "HEADER_H",
+            "/*code*/",
+            "#endif"
+        ],
+        "description": "Include Guard Pattern"
+    },
+    {
+        "tags": [
+            "#if",
+            "defined(WIN32)",
+            "/*win*/",
+            "#else",
+            "/*unix*/",
+            "#endif"
+        ],
+        "description": "Platform Conditional Compile"
+    },
+    {
+        "tags": [
+            "#include",
+            "<stdlib.h>",
+            "int *p",
+            "= malloc(",
+            "sizeof(int)",
+            ");"
+        ],
+        "description": "Malloc Single Integer"
+    },
+    {
+        "tags": [
+            "int *arr",
+            "= malloc(",
+            "n *",
+            "sizeof(int)",
+            ");"
+        ],
+        "description": "Malloc Integer Array"
+    },
+    {
+        "tags": [
+            "int *arr",
+            "= calloc(",
+            "n,",
+            "sizeof(int)",
+            ");"
+        ],
+        "description": "Calloc Integer Array"
+    },
+    {
+        "tags": [
+            "arr",
+            "= realloc(",
+            "arr,",
+            "newSize *",
+            "sizeof(int)",
+            ");"
+        ],
+        "description": "Realloc Resize Array"
+    },
+    {
+        "tags": [
+            "free(",
+            "ptr",
+            ")",
+            ";",
+            "ptr=NULL;"
+        ],
+        "description": "Free And Nullify Pointer"
+    },
+    {
+        "tags": [
+            "char **strs",
+            "= malloc(",
+            "n *",
+            "sizeof(char*)",
+            ");"
+        ],
+        "description": "Malloc String Array"
+    },
+    {
+        "tags": [
+            "for(i=0;",
+            "i<n;",
+            "i++)",
+            "free(arr[i]);",
+            "free(arr);"
+        ],
+        "description": "Free 2D Dynamic Array"
+    },
+    {
+        "tags": [
+            "FILE",
+            "*fp",
+            "= fopen(",
+            "\"file.txt\",",
+            "\"r\"",
+            ");"
+        ],
+        "description": "Open File For Reading"
+    },
+    {
+        "tags": [
+            "FILE",
+            "*fp",
+            "= fopen(",
+            "\"file.txt\",",
+            "\"w\"",
+            ");"
+        ],
+        "description": "Open File For Writing"
+    },
+    {
+        "tags": [
+            "FILE",
+            "*fp",
+            "= fopen(",
+            "\"file.txt\",",
+            "\"a\"",
+            ");"
+        ],
+        "description": "Open File For Append"
+    },
+    {
+        "tags": [
+            "FILE",
+            "*fp",
+            "= fopen(",
+            "\"data.bin\",",
+            "\"rb\"",
+            ");"
+        ],
+        "description": "Open Binary File Read"
+    },
+    {
+        "tags": [
+            "if",
+            "(fp == NULL)",
+            "{",
+            "perror(\"Error\");",
+            "return 1;",
+            "}"
+        ],
+        "description": "File Open Error Check"
+    },
+    {
+        "tags": [
+            "fclose(",
+            "fp",
+            ")",
+            ";"
+        ],
+        "description": "Close File Handle"
+    },
+    {
+        "tags": [
+            "fprintf(",
+            "fp,",
+            "\"%d\",",
+            "val",
+            ")",
+            ";"
+        ],
+        "description": "Write Formatted To File"
+    },
+    {
+        "tags": [
+            "fscanf(",
+            "fp,",
+            "\"%d\",",
+            "&val",
+            ")",
+            ";"
+        ],
+        "description": "Read Formatted From File"
+    },
+    {
+        "tags": [
+            "fgets(",
+            "buf,",
+            "sizeof(buf),",
+            "fp",
+            ")",
+            ";"
+        ],
+        "description": "Read Line From File"
+    },
+    {
+        "tags": [
+            "fputs(",
+            "str,",
+            "fp",
+            ")",
+            ";"
+        ],
+        "description": "Write String To File"
+    },
+    {
+        "tags": [
+            "fread(",
+            "buf,",
+            "sizeof(int),",
+            "n,",
+            "fp",
+            ");"
+        ],
+        "description": "Binary File Read"
+    },
+    {
+        "tags": [
+            "fwrite(",
+            "buf,",
+            "sizeof(int),",
+            "n,",
+            "fp",
+            ");"
+        ],
+        "description": "Binary File Write"
+    },
+    {
+        "tags": [
+            "fseek(",
+            "fp,",
+            "0,",
+            "SEEK_SET",
+            ");"
+        ],
+        "description": "Seek File Beginning"
+    },
+    {
+        "tags": [
+            "fseek(",
+            "fp,",
+            "0,",
+            "SEEK_END",
+            ");"
+        ],
+        "description": "Seek File End"
+    },
+    {
+        "tags": [
+            "long",
+            "pos",
+            "=",
+            "ftell(fp)",
+            ";"
+        ],
+        "description": "Get File Position"
+    },
+    {
+        "tags": [
+            "rewind(",
+            "fp",
+            ")",
+            ";"
+        ],
+        "description": "Rewind File Position"
+    },
+    {
+        "tags": [
+            "while(",
+            "fgets(line,",
+            "sizeof(line),",
+            "fp))",
+            "{",
+            "/*process*/",
+            "}"
+        ],
+        "description": "Read File Line By Line"
+    },
+    {
+        "tags": [
+            "int",
+            "ch",
+            "=",
+            "fgetc(fp)",
+            ";"
+        ],
+        "description": "Read Single Character"
+    },
+    {
+        "tags": [
+            "fputc(",
+            "'A',",
+            "fp",
+            ")",
+            ";"
+        ],
+        "description": "Write Single Character"
+    },
+    {
+        "tags": [
+            "strlen(",
+            "str",
+            ")",
+            ";"
+        ],
+        "description": "Get String Length"
+    },
+    {
+        "tags": [
+            "strcpy(",
+            "dest,",
+            "src",
+            ")",
+            ";"
+        ],
+        "description": "Copy String"
+    },
+    {
+        "tags": [
+            "strncpy(",
+            "dest,",
+            "src,",
+            "n",
+            ")",
+            ";"
+        ],
+        "description": "Copy N Characters"
+    },
+    {
+        "tags": [
+            "strcat(",
+            "dest,",
+            "src",
+            ")",
+            ";"
+        ],
+        "description": "Concatenate Strings"
+    },
+    {
+        "tags": [
+            "strncat(",
+            "dest,",
+            "src,",
+            "n",
+            ")",
+            ";"
+        ],
+        "description": "Concatenate N Characters"
+    },
+    {
+        "tags": [
+            "int",
+            "cmp",
+            "=",
+            "strcmp(",
+            "s1, s2)",
+            ";"
+        ],
+        "description": "Compare Two Strings"
+    },
+    {
+        "tags": [
+            "int",
+            "cmp",
+            "=",
+            "strncmp(",
+            "s1, s2, n)",
+            ";"
+        ],
+        "description": "Compare N Characters"
+    },
+    {
+        "tags": [
+            "char",
+            "*p",
+            "=",
+            "strchr(",
+            "str, 'a')",
+            ";"
+        ],
+        "description": "Find Character In String"
+    },
+    {
+        "tags": [
+            "char",
+            "*p",
+            "=",
+            "strrchr(",
+            "str, 'a')",
+            ";"
+        ],
+        "description": "Find Last Character"
+    },
+    {
+        "tags": [
+            "char",
+            "*p",
+            "=",
+            "strstr(",
+            "hay, needle)",
+            ";"
+        ],
+        "description": "Find Substring"
+    },
+    {
+        "tags": [
+            "char",
+            "*tok",
+            "=",
+            "strtok(",
+            "str, \",\")",
+            ";"
+        ],
+        "description": "Tokenize String"
+    },
+    {
+        "tags": [
+            "while(",
+            "(tok=strtok(",
+            "NULL,\",\"))",
+            "!=NULL)",
+            "{",
+            "/*use tok*/",
+            "}"
+        ],
+        "description": "Iterate String Tokens"
+    },
+    {
+        "tags": [
+            "int",
+            "n",
+            "=",
+            "atoi(",
+            "str",
+            ")",
+            ";"
+        ],
+        "description": "String To Integer"
+    },
+    {
+        "tags": [
+            "double",
+            "d",
+            "=",
+            "atof(",
+            "str",
+            ")",
+            ";"
+        ],
+        "description": "String To Double"
+    },
+    {
+        "tags": [
+            "long",
+            "l",
+            "=",
+            "strtol(",
+            "str,NULL,10)",
+            ";"
+        ],
+        "description": "String To Long"
+    },
+    {
+        "tags": [
+            "sprintf(",
+            "buf,",
+            "\"%d\",",
+            "num",
+            ")",
+            ";"
+        ],
+        "description": "Integer To String"
+    },
+    {
+        "tags": [
+            "snprintf(",
+            "buf,",
+            "sizeof(buf),",
+            "\"%d\",",
+            "num",
+            ");"
+        ],
+        "description": "Safe Format To Buffer"
+    },
+    {
+        "tags": [
+            "memset(",
+            "arr,",
+            "0,",
+            "sizeof(arr)",
+            ")",
+            ";"
+        ],
+        "description": "Zero Memory Block"
+    },
+    {
+        "tags": [
+            "memcpy(",
+            "dest,",
+            "src,",
+            "n",
+            ")",
+            ";"
+        ],
+        "description": "Copy Memory Block"
+    },
+    {
+        "tags": [
+            "memmove(",
+            "dest,",
+            "src,",
+            "n",
+            ")",
+            ";"
+        ],
+        "description": "Move Memory Block"
+    },
+    {
+        "tags": [
+            "int",
+            "r",
+            "=",
+            "memcmp(",
+            "a, b, n)",
+            ";"
+        ],
+        "description": "Compare Memory Blocks"
+    },
+    {
+        "tags": [
+            "void*",
+            "p",
+            "=",
+            "memchr(",
+            "buf, 'x', n)",
+            ";"
+        ],
+        "description": "Search Memory Block"
+    },
+    {
+        "tags": [
+            "int",
+            "a",
+            "=",
+            "x & y",
+            ";"
+        ],
+        "description": "Bitwise AND Operation"
+    },
+    {
+        "tags": [
+            "int",
+            "o",
+            "=",
+            "x | y",
+            ";"
+        ],
+        "description": "Bitwise OR Operation"
+    },
+    {
+        "tags": [
+            "int",
+            "xr",
+            "=",
+            "x ^ y",
+            ";"
+        ],
+        "description": "Bitwise XOR Operation"
+    },
+    {
+        "tags": [
+            "int",
+            "n",
+            "=",
+            "~x",
+            ";"
+        ],
+        "description": "Bitwise NOT Operation"
+    },
+    {
+        "tags": [
+            "int",
+            "sl",
+            "=",
+            "x << 2",
+            ";"
+        ],
+        "description": "Left Shift Operation"
+    },
+    {
+        "tags": [
+            "int",
+            "sr",
+            "=",
+            "x >> 2",
+            ";"
+        ],
+        "description": "Right Shift Operation"
+    },
+    {
+        "tags": [
+            "x",
+            "|=",
+            "(1 << n)",
+            ";"
+        ],
+        "description": "Set Bit N"
+    },
+    {
+        "tags": [
+            "x",
+            "&=",
+            "~(1 << n)",
+            ";"
+        ],
+        "description": "Clear Bit N"
+    },
+    {
+        "tags": [
+            "x",
+            "^=",
+            "(1 << n)",
+            ";"
+        ],
+        "description": "Toggle Bit N"
+    },
+    {
+        "tags": [
+            "if",
+            "(x &",
+            "(1 << n))",
+            "/*set*/"
+        ],
+        "description": "Check Bit N"
+    },
+    {
+        "tags": [
+            "size_t",
+            "sz",
+            "=",
+            "sizeof(int)",
+            ";"
+        ],
+        "description": "Sizeof Integer Type"
+    },
+    {
+        "tags": [
+            "size_t",
+            "sz",
+            "=",
+            "sizeof(arr)",
+            "/",
+            "sizeof(arr[0])",
+            ";"
+        ],
+        "description": "Array Length Calculation"
+    },
+    {
+        "tags": [
+            "int",
+            "*vp;",
+            "vp",
+            "= (int*)",
+            "malloc(4)",
+            ";"
+        ],
+        "description": "Void Pointer Cast"
+    },
+    {
+        "tags": [
+            "(int)",
+            "3.14",
+            ";"
+        ],
+        "description": "Float To Int Cast"
+    },
+    {
+        "tags": [
+            "(double)",
+            "x",
+            "/",
+            "y",
+            ";"
+        ],
+        "description": "Integer Division Cast"
+    },
+    {
+        "tags": [
+            "(char)",
+            "65",
+            ";"
+        ],
+        "description": "Int To Char Cast"
+    },
+    {
+        "tags": [
+            "static",
+            "int",
+            "count",
+            "=",
+            "0",
+            ";"
+        ],
+        "description": "Static Variable Declaration"
+    },
+    {
+        "tags": [
+            "extern",
+            "int",
+            "globalVar",
+            ";"
+        ],
+        "description": "Extern Variable Declaration"
+    },
+    {
+        "tags": [
+            "volatile",
+            "int",
+            "flag",
+            "=",
+            "0",
+            ";"
+        ],
+        "description": "Volatile Variable Declaration"
+    },
+    {
+        "tags": [
+            "register",
+            "int",
+            "i",
+            ";"
+        ],
+        "description": "Register Variable Hint"
+    },
+    {
+        "tags": [
+            "static",
+            "void",
+            "helper()",
+            "{",
+            "/*internal*/",
+            "}"
+        ],
+        "description": "Static Function Definition"
+    },
+    {
+        "tags": [
+            "int",
+            "(*fptr)(",
+            "int,",
+            "int)",
+            "=",
+            "add;"
+        ],
+        "description": "Function Pointer Declaration"
+    },
+    {
+        "tags": [
+            "int",
+            "result",
+            "=",
+            "fptr(",
+            "2, 3)",
+            ";"
+        ],
+        "description": "Function Pointer Call"
+    },
+    {
+        "tags": [
+            "void",
+            "apply(",
+            "int (*fn)(int),",
+            "int x)",
+            "{",
+            "fn(x);",
+            "}"
+        ],
+        "description": "Callback Function Pattern"
+    },
+    {
+        "tags": [
+            "typedef",
+            "int",
+            "(*Op)(",
+            "int,",
+            "int)",
+            ";"
+        ],
+        "description": "Typedef Function Pointer"
+    },
+    {
+        "tags": [
+            "int",
+            "abs_val",
+            "=",
+            "abs(x)",
+            ";"
+        ],
+        "description": "Absolute Value Function"
+    },
+    {
+        "tags": [
+            "srand(",
+            "time(NULL)",
+            ")",
+            ";"
+        ],
+        "description": "Seed Random Generator"
+    },
+    {
+        "tags": [
+            "int",
+            "r",
+            "=",
+            "rand()",
+            "%",
+            "100",
+            ";"
+        ],
+        "description": "Random Number Modulo"
+    },
+    {
+        "tags": [
+            "qsort(",
+            "arr,",
+            "n,",
+            "sizeof(int),",
+            "cmp)",
+            ";"
+        ],
+        "description": "Quick Sort Array"
+    },
+    {
+        "tags": [
+            "int*",
+            "p",
+            "= bsearch(",
+            "&key,",
+            "arr,",
+            "n,",
+            "sizeof(int),",
+            "cmp);"
+        ],
+        "description": "Binary Search Array"
+    },
+    {
+        "tags": [
+            "int",
+            "cmp(",
+            "const void *a,",
+            "const void *b)",
+            "{",
+            "return *(int*)a - *(int*)b;",
+            "}"
+        ],
+        "description": "Comparator For Qsort"
+    },
+    {
+        "tags": [
+            "exit(",
+            "EXIT_SUCCESS",
+            ")",
+            ";"
+        ],
+        "description": "Exit With Success"
+    },
+    {
+        "tags": [
+            "exit(",
+            "EXIT_FAILURE",
+            ")",
+            ";"
+        ],
+        "description": "Exit With Failure"
+    },
+    {
+        "tags": [
+            "atexit(",
+            "cleanup",
+            ")",
+            ";"
+        ],
+        "description": "Register Exit Handler"
+    },
+    {
+        "tags": [
+            "assert(",
+            "x > 0",
+            ")",
+            ";"
+        ],
+        "description": "Assert Condition True"
+    },
+    {
+        "tags": [
+            "#include",
+            "<string.h>",
+            "#include",
+            "<stdlib.h>"
+        ],
+        "description": "Multiple Header Includes"
+    },
+    {
+        "tags": [
+            "#include",
+            "<math.h>",
+            "double",
+            "r",
+            "= sqrt(x);"
+        ],
+        "description": "Square Root Function"
+    },
+    {
+        "tags": [
+            "double",
+            "p",
+            "=",
+            "pow(",
+            "base, exp)",
+            ";"
+        ],
+        "description": "Power Function Call"
+    },
+    {
+        "tags": [
+            "double",
+            "c",
+            "=",
+            "ceil(",
+            "3.2)",
+            ";"
+        ],
+        "description": "Ceiling Function Call"
+    },
+    {
+        "tags": [
+            "double",
+            "f",
+            "=",
+            "floor(",
+            "3.8)",
+            ";"
+        ],
+        "description": "Floor Function Call"
+    },
+    {
+        "tags": [
+            "double",
+            "l",
+            "=",
+            "log(",
+            "x)",
+            ";"
+        ],
+        "description": "Natural Log Function"
+    },
+    {
+        "tags": [
+            "double",
+            "s",
+            "=",
+            "sin(",
+            "angle)",
+            ";"
+        ],
+        "description": "Sine Function Call"
+    },
+    {
+        "tags": [
+            "double",
+            "c",
+            "=",
+            "cos(",
+            "angle)",
+            ";"
+        ],
+        "description": "Cosine Function Call"
+    },
+    {
+        "tags": [
+            "if(",
+            "isalpha(ch)",
+            ")",
+            "/*letter*/",
+            ";"
+        ],
+        "description": "Check Alphabetic Character"
+    },
+    {
+        "tags": [
+            "if(",
+            "isdigit(ch)",
+            ")",
+            "/*digit*/",
+            ";"
+        ],
+        "description": "Check Digit Character"
+    },
+    {
+        "tags": [
+            "if(",
+            "isspace(ch)",
+            ")",
+            "/*space*/",
+            ";"
+        ],
+        "description": "Check Whitespace Character"
+    },
+    {
+        "tags": [
+            "if(",
+            "isupper(ch)",
+            ")",
+            "/*upper*/",
+            ";"
+        ],
+        "description": "Check Uppercase Character"
+    },
+    {
+        "tags": [
+            "if(",
+            "islower(ch)",
+            ")",
+            "/*lower*/",
+            ";"
+        ],
+        "description": "Check Lowercase Character"
+    },
+    {
+        "tags": [
+            "ch",
+            "=",
+            "toupper(",
+            "ch)",
+            ";"
+        ],
+        "description": "Convert To Uppercase"
+    },
+    {
+        "tags": [
+            "ch",
+            "=",
+            "tolower(",
+            "ch)",
+            ";"
+        ],
+        "description": "Convert To Lowercase"
+    },
+    {
+        "tags": [
+            "time_t",
+            "t",
+            "=",
+            "time(",
+            "NULL)",
+            ";"
+        ],
+        "description": "Get Current Time"
+    },
+    {
+        "tags": [
+            "struct tm",
+            "*tm",
+            "=",
+            "localtime(",
+            "&t)",
+            ";"
+        ],
+        "description": "Local Time Conversion"
+    },
+    {
+        "tags": [
+            "strftime(",
+            "buf,",
+            "sizeof(buf),",
+            "\"%H:%M\",",
+            "tm)",
+            ";"
+        ],
+        "description": "Format Time String"
+    },
+    {
+        "tags": [
+            "clock_t",
+            "start",
+            "=",
+            "clock()",
+            ";"
+        ],
+        "description": "Start Clock Timer"
+    },
+    {
+        "tags": [
+            "double",
+            "elapsed",
+            "=",
+            "(double)(end-start)",
+            "/",
+            "CLOCKS_PER_SEC;"
+        ],
+        "description": "Calculate Elapsed Time"
+    },
+    {
+        "tags": [
+            "struct",
+            "Node*",
+            "head",
+            "=",
+            "NULL",
+            ";"
+        ],
+        "description": "Init Linked List Head"
+    },
+    {
+        "tags": [
+            "struct Node*",
+            "new",
+            "= malloc(",
+            "sizeof(",
+            "struct Node)",
+            ");"
+        ],
+        "description": "Allocate List Node"
+    },
+    {
+        "tags": [
+            "new->data",
+            "= val;",
+            "new->next",
+            "= head;",
+            "head = new;"
+        ],
+        "description": "Insert At List Head"
+    },
+    {
+        "tags": [
+            "while(",
+            "curr",
+            "!= NULL)",
+            "{",
+            "curr",
+            "= curr->next;",
+            "}"
+        ],
+        "description": "Traverse Linked List"
+    },
+    {
+        "tags": [
+            "struct Node*",
+            "temp",
+            "= head;",
+            "head",
+            "= head->next;",
+            "free(temp);"
+        ],
+        "description": "Delete List Head Node"
+    },
+    {
+        "tags": [
+            "while(curr){",
+            "next=curr->next;",
+            "curr->next=prev;",
+            "prev=curr;",
+            "curr=next;",
+            "}"
+        ],
+        "description": "Reverse Linked List"
+    },
+    {
+        "tags": [
+            "typedef struct {",
+            "int *data;",
+            "int top;",
+            "int cap;",
+            "}",
+            "Stack;"
+        ],
+        "description": "Stack Struct Definition"
+    },
+    {
+        "tags": [
+            "s->data[",
+            "++s->top]",
+            "=",
+            "val",
+            ";"
+        ],
+        "description": "Stack Push Operation"
+    },
+    {
+        "tags": [
+            "int",
+            "val",
+            "=",
+            "s->data[",
+            "s->top--]",
+            ";"
+        ],
+        "description": "Stack Pop Operation"
+    },
+    {
+        "tags": [
+            "if(",
+            "s->top",
+            "==",
+            "-1)",
+            "/*empty*/"
+        ],
+        "description": "Check Stack Empty"
+    },
+    {
+        "tags": [
+            "typedef struct {",
+            "int *data;",
+            "int front;",
+            "int rear;",
+            "}",
+            "Queue;"
+        ],
+        "description": "Queue Struct Definition"
+    },
+    {
+        "tags": [
+            "q->data[",
+            "q->rear++]",
+            "=",
+            "val",
+            ";"
+        ],
+        "description": "Queue Enqueue Operation"
+    },
+    {
+        "tags": [
+            "int",
+            "val",
+            "=",
+            "q->data[",
+            "q->front++]",
+            ";"
+        ],
+        "description": "Queue Dequeue Operation"
+    },
+    {
+        "tags": [
+            "for(i=0;",
+            "i<n-1;",
+            "i++)",
+            "for(j=0;",
+            "j<n-i-1;",
+            "j++)",
+            "/*swap*/"
+        ],
+        "description": "Bubble Sort Algorithm"
+    },
+    {
+        "tags": [
+            "for(i=1;",
+            "i<n;",
+            "i++){",
+            "key=arr[i];",
+            "j=i-1;",
+            "/*shift*/",
+            "}"
+        ],
+        "description": "Insertion Sort Algorithm"
+    },
+    {
+        "tags": [
+            "for(i=0;",
+            "i<n;",
+            "i++){",
+            "min=i;",
+            "/*find min*/",
+            "swap();",
+            "}"
+        ],
+        "description": "Selection Sort Algorithm"
+    },
+    {
+        "tags": [
+            "int",
+            "lo=0,",
+            "hi=n-1;",
+            "while(lo<=hi)",
+            "{",
+            "mid=(lo+hi)/2;",
+            "}"
+        ],
+        "description": "Binary Search Algorithm"
+    },
+    {
+        "tags": [
+            "for(i=0;",
+            "i<n;",
+            "i++)",
+            "if(arr[i]==key)",
+            "return i;",
+            "return -1;"
+        ],
+        "description": "Linear Search Algorithm"
+    },
+    {
+        "tags": [
+            "#pragma",
+            "once"
+        ],
+        "description": "Pragma Once Directive"
+    },
+    {
+        "tags": [
+            "#pragma",
+            "pack(",
+            "push,",
+            "1)",
+            "/*struct*/",
+            "#pragma",
+            "pack(pop)"
+        ],
+        "description": "Pragma Pack Struct"
+    },
+    {
+        "tags": [
+            "#error",
+            "\"Not supported\""
+        ],
+        "description": "Preprocessor Error Directive"
+    },
+    {
+        "tags": [
+            "#warning",
+            "\"Deprecated API\""
+        ],
+        "description": "Preprocessor Warning Directive"
+    },
+    {
+        "tags": [
+            "#undef",
+            "MACRO_NAME"
+        ],
+        "description": "Undefine A Macro"
+    },
+    {
+        "tags": [
+            "#define",
+            "STR(x)",
+            "#x"
+        ],
+        "description": "Stringize Macro Operator"
+    },
+    {
+        "tags": [
+            "#define",
+            "CONCAT(a,b)",
+            "a##b"
+        ],
+        "description": "Token Paste Macro"
+    },
+    {
+        "tags": [
+            "__FILE__",
+            "__LINE__",
+            "__func__"
+        ],
+        "description": "Predefined Debug Macros"
+    },
+    {
+        "tags": [
+            "__DATE__",
+            "__TIME__"
+        ],
+        "description": "Compile Date Time Macros"
+    },
+    {
+        "tags": [
+            "#define",
+            "LOG(msg)",
+            "printf(\"%s:%d %s\\n\",",
+            "__FILE__,",
+            "__LINE__,",
+            "msg)"
+        ],
+        "description": "Debug Log Macro"
+    },
+    {
+        "tags": [
+            "errno",
+            "=",
+            "0;",
+            "/*call*/",
+            "if(errno)",
+            "perror(\"err\");"
+        ],
+        "description": "Errno Error Handling"
+    },
+    {
+        "tags": [
+            "perror(",
+            "\"fopen\"",
+            ")",
+            ";"
+        ],
+        "description": "Print Error Message"
+    },
+    {
+        "tags": [
+            "char*",
+            "msg",
+            "=",
+            "strerror(",
+            "errno)",
+            ";"
+        ],
+        "description": "Get Error String"
+    },
+    {
+        "tags": [
+            "#include",
+            "<signal.h>",
+            "signal(",
+            "SIGINT,",
+            "handler)",
+            ";"
+        ],
+        "description": "Register Signal Handler"
+    },
+    {
+        "tags": [
+            "void",
+            "handler(",
+            "int sig)",
+            "{",
+            "/*handle*/",
+            "}"
+        ],
+        "description": "Signal Handler Function"
+    },
+    {
+        "tags": [
+            "raise(",
+            "SIGTERM",
+            ")",
+            ";"
+        ],
+        "description": "Raise Signal Self"
+    },
+    {
+        "tags": [
+            "#include",
+            "<setjmp.h>",
+            "jmp_buf",
+            "env",
+            ";"
+        ],
+        "description": "Setjmp Buffer Declaration"
+    },
+    {
+        "tags": [
+            "if(",
+            "setjmp(env)",
+            "==0)",
+            "{",
+            "/*try*/",
+            "}",
+            "else",
+            "{",
+            "/*catch*/",
+            "}"
+        ],
+        "description": "Setjmp Longjmp Pattern"
+    },
+    {
+        "tags": [
+            "longjmp(",
+            "env,",
+            "1)",
+            ";"
+        ],
+        "description": "Longjmp Error Jump"
+    },
+    {
+        "tags": [
+            "int",
+            "x",
+            "+=",
+            "5",
+            ";"
+        ],
+        "description": "Add Assign Operator"
+    },
+    {
+        "tags": [
+            "int",
+            "x",
+            "-=",
+            "3",
+            ";"
+        ],
+        "description": "Subtract Assign Operator"
+    },
+    {
+        "tags": [
+            "int",
+            "x",
+            "*=",
+            "2",
+            ";"
+        ],
+        "description": "Multiply Assign Operator"
+    },
+    {
+        "tags": [
+            "int",
+            "x",
+            "/=",
+            "4",
+            ";"
+        ],
+        "description": "Divide Assign Operator"
+    },
+    {
+        "tags": [
+            "int",
+            "x",
+            "%=",
+            "3",
+            ";"
+        ],
+        "description": "Modulo Assign Operator"
+    },
+    {
+        "tags": [
+            "x++",
+            ";",
+            "++y",
+            ";"
+        ],
+        "description": "Increment Operators"
+    },
+    {
+        "tags": [
+            "x--",
+            ";",
+            "--y",
+            ";"
+        ],
+        "description": "Decrement Operators"
+    },
+    {
+        "tags": [
+            "if(",
+            "a && b)",
+            "/*both*/",
+            ";"
+        ],
+        "description": "Logical AND Condition"
+    },
+    {
+        "tags": [
+            "if(",
+            "a || b)",
+            "/*either*/",
+            ";"
+        ],
+        "description": "Logical OR Condition"
+    },
+    {
+        "tags": [
+            "if(",
+            "!done)",
+            "/*negate*/",
+            ";"
+        ],
+        "description": "Logical NOT Condition"
+    },
+    {
+        "tags": [
+            "int",
+            "arr[3][3]",
+            ";",
+            "arr[i][j]",
+            "=",
+            "val;"
+        ],
+        "description": "2D Array Access"
+    },
+    {
+        "tags": [
+            "int",
+            "***p;",
+            "p=malloc(..);",
+            "p[i]=malloc(..);"
+        ],
+        "description": "Triple Pointer Allocation"
+    },
+    {
+        "tags": [
+            "char",
+            "str[50];",
+            "fgets(",
+            "str,",
+            "50,",
+            "stdin);"
+        ],
+        "description": "Safe String Input"
+    },
+    {
+        "tags": [
+            "putchar(",
+            "'A'",
+            ")",
+            ";"
+        ],
+        "description": "Output Single Character"
+    },
+    {
+        "tags": [
+            "int",
+            "ch",
+            "=",
+            "getchar()",
+            ";"
+        ],
+        "description": "Input Single Character"
+    },
+    {
+        "tags": [
+            "puts(",
+            "\"hello\"",
+            ")",
+            ";"
+        ],
+        "description": "Output String With Newline"
+    },
+    {
+        "tags": [
+            "char*",
+            "s;",
+            "gets(s);",
+            "/*unsafe*/"
+        ],
+        "description": "Unsafe String Input"
+    },
+    {
+        "tags": [
+            "void*",
+            "generic",
+            "=",
+            "&x",
+            ";"
+        ],
+        "description": "Generic Void Pointer"
+    },
+    {
+        "tags": [
+            "int",
+            "val",
+            "=",
+            "*(int*)",
+            "generic",
+            ";"
+        ],
+        "description": "Cast Void Pointer"
+    },
+    {
+        "tags": [
+            "struct {",
+            "int x;",
+            "int y;",
+            "}",
+            "pt",
+            "= {1,2};"
+        ],
+        "description": "Anonymous Struct Variable"
+    },
+    {
+        "tags": [
+            "struct Point",
+            "pts[10]",
+            ";"
+        ],
+        "description": "Array Of Structs"
+    },
+    {
+        "tags": [
+            "struct {",
+            "char name[20];",
+            "int age;",
+            "}",
+            "person;"
+        ],
+        "description": "Inline Struct Definition"
+    },
+    {
+        "tags": [
+            "struct Outer{",
+            "struct Inner{",
+            "int x;",
+            "} in;",
+            "};"
+        ],
+        "description": "Nested Struct Definition"
+    },
+    {
+        "tags": [
+            "struct {",
+            "unsigned a:4;",
+            "unsigned b:4;",
+            "}",
+            "bits;"
+        ],
+        "description": "Bit Field Struct"
+    },
+    {
+        "tags": [
+            "union {",
+            "int i;",
+            "float f;",
+            "}",
+            "u;",
+            "u.i=42;"
+        ],
+        "description": "Union Variable Usage"
+    },
+    {
+        "tags": [
+            "goto",
+            "label;",
+            "/*code*/",
+            "label:",
+            "/*target*/"
+        ],
+        "description": "Goto Label Jump"
+    },
+    {
+        "tags": [
+            "for(;;){",
+            "for(;;){",
+            "if(done)",
+            "goto end;",
+            "}",
+            "}",
+            "end:"
+        ],
+        "description": "Goto Break Nested Loops"
+    },
+    {
+        "tags": [
+            "int",
+            "main(",
+            "int argc,",
+            "char *argv[])",
+            "{",
+            "return 0;",
+            "}"
+        ],
+        "description": "Main With Arguments"
+    },
+    {
+        "tags": [
+            "for(i=1;",
+            "i<argc;",
+            "i++)",
+            "printf(\"%s \",",
+            "argv[i]);"
+        ],
+        "description": "Print Command Args"
+    },
+    {
+        "tags": [
+            "char*",
+            "val",
+            "=",
+            "getenv(",
+            "\"PATH\")",
+            ";"
+        ],
+        "description": "Get Environment Variable"
+    },
+    {
+        "tags": [
+            "int",
+            "ret",
+            "=",
+            "system(",
+            "\"ls -l\")",
+            ";"
+        ],
+        "description": "Execute Shell Command"
+    },
+    {
+        "tags": [
+            "void",
+            "fn(",
+            "int arr[],",
+            "int n)",
+            "{",
+            "/*use*/",
+            "}"
+        ],
+        "description": "Array Parameter Function"
+    },
+    {
+        "tags": [
+            "int",
+            "sum(",
+            "int n,",
+            "...)",
+            "{",
+            "/*va_list*/",
+            "}"
+        ],
+        "description": "Variadic Function Signature"
+    },
+    {
+        "tags": [
+            "#include",
+            "<stdarg.h>",
+            "va_list",
+            "args;",
+            "va_start(args,n);"
+        ],
+        "description": "Variadic Args Setup"
+    },
+    {
+        "tags": [
+            "int",
+            "val",
+            "=",
+            "va_arg(",
+            "args, int)",
+            ";"
+        ],
+        "description": "Get Variadic Argument"
+    },
+    {
+        "tags": [
+            "va_end(",
+            "args)",
+            ";"
+        ],
+        "description": "End Variadic Processing"
+    },
+    {
+        "tags": [
+            "inline",
+            "int",
+            "max(int a,",
+            "int b)",
+            "{",
+            "return a>b?a:b;",
+            "}"
+        ],
+        "description": "Inline Function Definition"
+    },
+    {
+        "tags": [
+            "const",
+            "char*",
+            "msg",
+            "=",
+            "\"hello\"",
+            ";"
+        ],
+        "description": "Const String Pointer"
+    },
+    {
+        "tags": [
+            "int* const",
+            "ptr",
+            "=",
+            "&x",
+            ";"
+        ],
+        "description": "Const Pointer To Int"
+    },
+    {
+        "tags": [
+            "const int*",
+            "const ptr",
+            "=",
+            "&x",
+            ";"
+        ],
+        "description": "Const Pointer Const Value"
+    },
+    {
+        "tags": [
+            "int",
+            "gcd(",
+            "int a,",
+            "int b)",
+            "{",
+            "return b?gcd(b,a%b):a;",
+            "}"
+        ],
+        "description": "Recursive GCD Function"
+    },
+    {
+        "tags": [
+            "void",
+            "tower(",
+            "int n,",
+            "char s,",
+            "char d,",
+            "char a)",
+            "{",
+            "}"
+        ],
+        "description": "Tower Of Hanoi Signature"
+    },
+    {
+        "tags": [
+            "int",
+            "power(",
+            "int b,",
+            "int e)",
+            "{",
+            "if(!e)return 1;",
+            "return b*power(b,e-1);",
+            "}"
+        ],
+        "description": "Recursive Power Function"
+    },
+    {
+        "tags": [
+            "void",
+            "rev(",
+            "char *s,",
+            "int i,",
+            "int j)",
+            "{",
+            "if(i>=j)return;",
+            "}"
+        ],
+        "description": "Recursive String Reverse"
+    },
+    {
+        "tags": [
+            "int",
+            "sumArr(",
+            "int *a,",
+            "int n)",
+            "{",
+            "if(!n)return 0;",
+            "return a[0]+sumArr(a+1,n-1);",
+            "}"
+        ],
+        "description": "Recursive Array Sum"
+    },
+    {
+        "tags": [
+            "#define",
+            "FOREACH(i,n)",
+            "for(int i=0;",
+            "i<(n);",
+            "i++)"
+        ],
+        "description": "Foreach Loop Macro"
+    },
+    {
+        "tags": [
+            "#define",
+            "SWAP(a,b)",
+            "{int t=a;",
+            "a=b;",
+            "b=t;}"
+        ],
+        "description": "Swap Macro Definition"
+    },
+    {
+        "tags": [
+            "#define",
+            "ARRAY_SIZE(a)",
+            "(sizeof(a)/",
+            "sizeof(a[0]))"
+        ],
+        "description": "Array Size Macro"
+    },
+    {
+        "tags": [
+            "#define",
+            "CLAMP(x,lo,hi)",
+            "((x)<(lo)?(lo):",
+            "(x)>(hi)?(hi):(x))"
+        ],
+        "description": "Clamp Value Macro"
+    },
+    {
+        "tags": [
+            "#define",
+            "IS_ODD(n)",
+            "((n)&1)"
+        ],
+        "description": "Odd Check Macro"
+    },
+    {
+        "tags": [
+            "#define",
+            "IS_EVEN(n)",
+            "(!((n)&1))"
+        ],
+        "description": "Even Check Macro"
+    },
+    {
+        "tags": [
+            "#include",
+            "<stdbool.h>",
+            "bool",
+            "flag",
+            "=",
+            "true;"
+        ],
+        "description": "Boolean Type Usage"
+    },
+    {
+        "tags": [
+            "#include",
+            "<stdint.h>",
+            "uint8_t",
+            "byte",
+            "=",
+            "255;"
+        ],
+        "description": "Fixed Width Integer"
+    },
+    {
+        "tags": [
+            "int32_t",
+            "val",
+            "=",
+            "INT32_MAX",
+            ";"
+        ],
+        "description": "32-Bit Integer Max"
+    },
+    {
+        "tags": [
+            "uint64_t",
+            "big",
+            "=",
+            "UINT64_MAX",
+            ";"
+        ],
+        "description": "64-Bit Unsigned Max"
+    },
+    {
+        "tags": [
+            "size_t",
+            "len",
+            "=",
+            "strlen(s)",
+            ";"
+        ],
+        "description": "Size Type Usage"
+    },
+    {
+        "tags": [
+            "ptrdiff_t",
+            "diff",
+            "=",
+            "p2",
+            "-",
+            "p1",
+            ";"
+        ],
+        "description": "Pointer Difference Type"
+    },
+    {
+        "tags": [
+            "_Alignof(",
+            "int)",
+            ";"
+        ],
+        "description": "Alignment Of Type"
+    },
+    {
+        "tags": [
+            "_Static_assert(",
+            "sizeof(int)==4,",
+            "\"bad size\")",
+            ";"
+        ],
+        "description": "Static Assert Check"
+    },
+    {
+        "tags": [
+            "_Generic(",
+            "x,",
+            "int: \"int\",",
+            "float: \"float\"",
+            ")"
+        ],
+        "description": "Generic Type Selection"
+    },
+    {
+        "tags": [
+            "_Noreturn",
+            "void",
+            "die()",
+            "{",
+            "exit(1);",
+            "}"
+        ],
+        "description": "Noreturn Function"
+    },
+    {
+        "tags": [
+            "int",
+            "a[5]",
+            "= {",
+            "[2]=10,",
+            "[4]=20",
+            "};"
+        ],
+        "description": "Designated Array Initializer"
+    },
+    {
+        "tags": [
+            "struct P",
+            "p",
+            "= {",
+            ".x=1,",
+            ".y=2",
+            "};"
+        ],
+        "description": "Designated Struct Initializer"
+    },
+    {
+        "tags": [
+            "int",
+            "arr[10]",
+            ";",
+            "int (*p)[10]",
+            "= &arr;"
+        ],
+        "description": "Pointer To Array"
+    },
+    {
+        "tags": [
+            "void",
+            "fn(",
+            "int n,",
+            "int a[n])",
+            "{",
+            "/*VLA*/",
+            "}"
+        ],
+        "description": "Variable Length Array Param"
+    },
+    {
+        "tags": [
+            "int",
+            "n=5;",
+            "int",
+            "vla[n]",
+            ";"
+        ],
+        "description": "Variable Length Array"
+    },
+    {
+        "tags": [
+            "struct {",
+            "int len;",
+            "int data[];",
+            "}",
+            ";"
+        ],
+        "description": "Flexible Array Member"
+    },
+    {
+        "tags": [
+            "(struct P)",
+            "{",
+            ".x=1,",
+            ".y=2",
+            "}"
+        ],
+        "description": "Compound Literal Struct"
+    },
+    {
+        "tags": [
+            "fn(",
+            "(int[])",
+            "{1,2,3}",
+            ");"
+        ],
+        "description": "Compound Literal Array"
+    },
+    {
+        "tags": [
+            "restrict",
+            "int*",
+            "p",
+            "=",
+            "arr;"
+        ],
+        "description": "Restrict Pointer Qualifier"
+    },
+    {
+        "tags": [
+            "_Atomic",
+            "int",
+            "counter",
+            "=",
+            "0",
+            ";"
+        ],
+        "description": "Atomic Integer Variable"
+    },
+    {
+        "tags": [
+            "_Thread_local",
+            "int",
+            "tls_var",
+            "=",
+            "0;"
+        ],
+        "description": "Thread Local Variable"
+    },
+    {
+        "tags": [
+            "FILE *in,",
+            "*out;",
+            "in=fopen(..);",
+            "out=fopen(..);",
+            "/*copy*/",
+            "fclose(in);",
+            "fclose(out);"
+        ],
+        "description": "File Copy Pattern"
+    },
+    {
+        "tags": [
+            "int",
+            "count=0;",
+            "while(",
+            "fscanf(fp,",
+            "\"%s\",w)",
+            "==1)",
+            "count++;"
+        ],
+        "description": "Count Words In File"
+    },
+    {
+        "tags": [
+            "while(",
+            "(ch=fgetc(fp))",
+            "!=EOF)",
+            "if(ch=='\\n')",
+            "lines++;"
+        ],
+        "description": "Count Lines In File"
+    },
+    {
+        "tags": [
+            "remove(",
+            "\"file.txt\"",
+            ")",
+            ";"
+        ],
+        "description": "Delete A File"
+    },
+    {
+        "tags": [
+            "rename(",
+            "\"old.txt\",",
+            "\"new.txt\"",
+            ")",
+            ";"
+        ],
+        "description": "Rename A File"
+    },
+    {
+        "tags": [
+            "FILE*",
+            "tmp",
+            "=",
+            "tmpfile()",
+            ";"
+        ],
+        "description": "Create Temporary File"
+    },
+    {
+        "tags": [
+            "char*",
+            "name",
+            "=",
+            "tmpnam(",
+            "NULL)",
+            ";"
+        ],
+        "description": "Generate Temp Filename"
+    },
+    {
+        "tags": [
+            "setvbuf(",
+            "fp,",
+            "NULL,",
+            "_IONBF,",
+            "0)",
+            ";"
+        ],
+        "description": "Disable File Buffering"
+    },
+    {
+        "tags": [
+            "setvbuf(",
+            "fp,",
+            "buf,",
+            "_IOFBF,",
+            "BUFSIZ)",
+            ";"
+        ],
+        "description": "Set Full Buffering"
+    },
+    {
+        "tags": [
+            "if(",
+            "feof(fp))",
+            "/*end*/",
+            ";"
+        ],
+        "description": "Check End Of File"
+    },
+    {
+        "tags": [
+            "if(",
+            "ferror(fp))",
+            "/*err*/",
+            ";"
+        ],
+        "description": "Check File Error"
+    },
+    {
+        "tags": [
+            "clearerr(",
+            "fp",
+            ")",
+            ";"
+        ],
+        "description": "Clear File Error"
+    },
+    {
+        "tags": [
+            "do{",
+            "printf(\">\");",
+            "scanf(\"%d\",&c);",
+            "}while(",
+            "c!=0)",
+            ";"
+        ],
+        "description": "Menu Input Loop"
+    },
+    {
+        "tags": [
+            "while(1){",
+            "printf(\"menu\");",
+            "if(c==0)",
+            "break;",
+            "}"
+        ],
+        "description": "Infinite Menu Loop"
+    },
+    {
+        "tags": [
+            "for(i=2;",
+            "i<=n;",
+            "i++)",
+            "if(n%i==0)",
+            "/*factor*/"
+        ],
+        "description": "Find Factors Loop"
+    },
+    {
+        "tags": [
+            "for(i=2;",
+            "i*i<=n;",
+            "i++)",
+            "if(n%i==0)",
+            "return 0;",
+            "return 1;"
+        ],
+        "description": "Prime Check Algorithm"
+    },
+    {
+        "tags": [
+            "int",
+            "rev=0;",
+            "while(n>0){",
+            "rev=rev*10+",
+            "n%10;",
+            "n/=10;",
+            "}"
+        ],
+        "description": "Reverse Integer Digits"
+    },
+    {
+        "tags": [
+            "while(n>0){",
+            "sum+=",
+            "n%10;",
+            "n/=10;",
+            "}"
+        ],
+        "description": "Sum Of Digits"
+    },
+    {
+        "tags": [
+            "int",
+            "t1=0,",
+            "t2=1;",
+            "for(i=0;",
+            "i<n;",
+            "i++){",
+            "t1=t2;",
+            "t2=t1+t2;",
+            "}"
+        ],
+        "description": "Iterative Fibonacci"
+    },
+    {
+        "tags": [
+            "int",
+            "f=1;",
+            "for(i=1;",
+            "i<=n;",
+            "i++)",
+            "f*=i;"
+        ],
+        "description": "Iterative Factorial"
+    },
+    {
+        "tags": [
+            "for(i=1;",
+            "i<=n;",
+            "i++){",
+            "for(j=1;",
+            "j<=i;",
+            "j++)",
+            "printf(\"*\");",
+            "printf(\"\\n\");",
+            "}"
+        ],
+        "description": "Print Star Triangle"
+    },
+    {
+        "tags": [
+            "for(i=n;",
+            "i>=1;",
+            "i--){",
+            "for(j=1;",
+            "j<=i;",
+            "j++)",
+            "printf(\"*\");",
+            "printf(\"\\n\");",
+            "}"
+        ],
+        "description": "Inverted Star Triangle"
+    },
+    {
+        "tags": [
+            "#include",
+            "<stdio.h>",
+            "#include",
+            "<string.h>",
+            "#include",
+            "<stdlib.h>"
+        ],
+        "description": "Common Header Trio"
+    },
+    {
+        "tags": [
+            "typedef",
+            "enum",
+            "{",
+            "OK=0,",
+            "ERR=-1",
+            "}",
+            "Status;"
+        ],
+        "description": "Status Enum Typedef"
+    },
+    {
+        "tags": [
+            "typedef",
+            "struct",
+            "Node",
+            "Node;",
+            "struct Node{",
+            "int val;",
+            "Node *next;",
+            "};"
+        ],
+        "description": "Forward Declared Node"
+    },
+    {
+        "tags": [
+            "struct Tree{",
+            "int data;",
+            "struct Tree*",
+            "left;",
+            "struct Tree*",
+            "right;",
+            "};"
+        ],
+        "description": "Binary Tree Node"
+    },
+    {
+        "tags": [
+            "void",
+            "inorder(",
+            "Node *n)",
+            "{",
+            "if(!n)return;",
+            "inorder(n->left);",
+            "print(n);",
+            "inorder(n->right);",
+            "}"
+        ],
+        "description": "Inorder Tree Traversal"
+    },
+    {
+        "tags": [
+            "void",
+            "preorder(",
+            "Node *n)",
+            "{",
+            "if(!n)return;",
+            "print(n);",
+            "preorder(n->left);",
+            "preorder(n->right);",
+            "}"
+        ],
+        "description": "Preorder Tree Traversal"
+    },
+    {
+        "tags": [
+            "void",
+            "postorder(",
+            "Node *n)",
+            "{",
+            "if(!n)return;",
+            "postorder(n->left);",
+            "postorder(n->right);",
+            "print(n);",
+            "}"
+        ],
+        "description": "Postorder Tree Traversal"
+    },
+    {
+        "tags": [
+            "#define",
+            "TABLE_SIZE",
+            "100",
+            "int",
+            "hash(int key){",
+            "return key%TABLE_SIZE;",
+            "}"
+        ],
+        "description": "Simple Hash Function"
+    },
+    {
+        "tags": [
+            "int",
+            "top=-1;",
+            "void push(int v){",
+            "stack[++top]=v;",
+            "}",
+            "int pop(){",
+            "return stack[top--];",
+            "}"
+        ],
+        "description": "Array Stack Implementation"
+    },
+    {
+        "tags": [
+            "int",
+            "front=0,rear=0;",
+            "void enq(int v){",
+            "q[rear++]=v;",
+            "}",
+            "int deq(){",
+            "return q[front++];",
+            "}"
+        ],
+        "description": "Array Queue Implementation"
+    },
+    {
+        "tags": [
+            "void",
+            "merge(",
+            "int a[],",
+            "int l,",
+            "int m,",
+            "int r)",
+            "{",
+            "/*merge*/",
+            "}"
+        ],
+        "description": "Merge Sort Merge Step"
+    },
+    {
+        "tags": [
+            "void",
+            "mergeSort(",
+            "int a[],",
+            "int l,",
+            "int r)",
+            "{",
+            "if(l<r){",
+            "int m=(l+r)/2;",
+            "mergeSort(a,l,m);",
+            "mergeSort(a,m+1,r);",
+            "merge(a,l,m,r);",
+            "}",
+            "}"
+        ],
+        "description": "Merge Sort Recursive"
+    },
+    {
+        "tags": [
+            "int",
+            "partition(",
+            "int a[],",
+            "int lo,",
+            "int hi)",
+            "{",
+            "int pivot=a[hi];",
+            "/*rearrange*/",
+            "}"
+        ],
+        "description": "Quick Sort Partition"
+    },
+    {
+        "tags": [
+            "void",
+            "quickSort(",
+            "int a[],",
+            "int lo,",
+            "int hi)",
+            "{",
+            "if(lo<hi){",
+            "int p=partition(..);",
+            "quickSort(a,lo,p-1);",
+            "quickSort(a,p+1,hi);",
+            "}",
+            "}"
+        ],
+        "description": "Quick Sort Recursive"
+    }
+]
