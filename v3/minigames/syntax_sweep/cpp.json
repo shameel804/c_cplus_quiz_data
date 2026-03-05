@@ -1,0 +1,757 @@
+[
+    {
+        "token": "int x = 5;",
+        "isValid": true,
+        "reason": "Valid integer declaration"
+    },
+    {
+        "token": "auto x = 10;",
+        "isValid": true,
+        "reason": "Valid auto type deduction"
+    },
+    {
+        "token": "std::string s;",
+        "isValid": true,
+        "reason": "Valid string declaration"
+    },
+    {
+        "token": "cout << \"hi\";",
+        "isValid": true,
+        "reason": "Valid output stream"
+    },
+    {
+        "token": "cin >> x;",
+        "isValid": true,
+        "reason": "Valid input stream"
+    },
+    {
+        "token": "printf(\"hello\");",
+        "isValid": true,
+        "reason": "Valid C-style print in C++"
+    },
+    {
+        "token": "let x = 5;",
+        "isValid": false,
+        "reason": "'let' is JavaScript, not C++"
+    },
+    {
+        "token": "var x = 10;",
+        "isValid": false,
+        "reason": "'var' is C#/JS, not C++"
+    },
+    {
+        "token": "print(\"hello\")",
+        "isValid": false,
+        "reason": "'print' is Python, not C++"
+    },
+    {
+        "token": "Console.Write()",
+        "isValid": false,
+        "reason": "C# syntax, not C++"
+    },
+    {
+        "token": "echo \"hello\";",
+        "isValid": false,
+        "reason": "'echo' is PHP/shell, not C++"
+    },
+    {
+        "token": "System.out.print",
+        "isValid": false,
+        "reason": "Java syntax, not C++"
+    },
+    {
+        "token": "class MyClass {",
+        "isValid": true,
+        "reason": "Valid class definition"
+    },
+    {
+        "token": "struct Point {",
+        "isValid": true,
+        "reason": "Valid struct definition"
+    },
+    {
+        "token": "namespace ns {",
+        "isValid": true,
+        "reason": "Valid namespace definition"
+    },
+    {
+        "token": "using namespace std;",
+        "isValid": true,
+        "reason": "Valid using directive"
+    },
+    {
+        "token": "template<typename T>",
+        "isValid": true,
+        "reason": "Valid template declaration"
+    },
+    {
+        "token": "public:",
+        "isValid": true,
+        "reason": "Valid access specifier"
+    },
+    {
+        "token": "private:",
+        "isValid": true,
+        "reason": "Valid access specifier"
+    },
+    {
+        "token": "protected:",
+        "isValid": true,
+        "reason": "Valid access specifier"
+    },
+    {
+        "token": "virtual void f()",
+        "isValid": true,
+        "reason": "Valid virtual function"
+    },
+    {
+        "token": "override",
+        "isValid": true,
+        "reason": "Valid override specifier"
+    },
+    {
+        "token": "final",
+        "isValid": true,
+        "reason": "Valid final specifier"
+    },
+    {
+        "token": "friend class A;",
+        "isValid": true,
+        "reason": "Valid friend declaration"
+    },
+    {
+        "token": "def foo():",
+        "isValid": false,
+        "reason": "'def' is Python, not C++"
+    },
+    {
+        "token": "fn main()",
+        "isValid": false,
+        "reason": "'fn' is Rust, not C++"
+    },
+    {
+        "token": "func main()",
+        "isValid": false,
+        "reason": "'func' is Go/Swift, not C++"
+    },
+    {
+        "token": "fun main()",
+        "isValid": false,
+        "reason": "'fun' is Kotlin, not C++"
+    },
+    {
+        "token": "function foo()",
+        "isValid": false,
+        "reason": "'function' is JS, not C++"
+    },
+    {
+        "token": "sub main {",
+        "isValid": false,
+        "reason": "'sub' is Perl, not C++"
+    },
+    {
+        "token": "new int(5);",
+        "isValid": true,
+        "reason": "Valid dynamic allocation"
+    },
+    {
+        "token": "delete ptr;",
+        "isValid": true,
+        "reason": "Valid memory deallocation"
+    },
+    {
+        "token": "delete[] arr;",
+        "isValid": true,
+        "reason": "Valid array deallocation"
+    },
+    {
+        "token": "new int[10];",
+        "isValid": true,
+        "reason": "Valid dynamic array allocation"
+    },
+    {
+        "token": "malloc(10)",
+        "isValid": true,
+        "reason": "Valid C-style allocation in C++"
+    },
+    {
+        "token": "free(ptr);",
+        "isValid": true,
+        "reason": "Valid C-style free in C++"
+    },
+    {
+        "token": "make_unique<int>()",
+        "isValid": true,
+        "reason": "Valid smart pointer creation"
+    },
+    {
+        "token": "make_shared<int>()",
+        "isValid": true,
+        "reason": "Valid shared pointer creation"
+    },
+    {
+        "token": "unique_ptr<int> p;",
+        "isValid": true,
+        "reason": "Valid unique pointer type"
+    },
+    {
+        "token": "shared_ptr<int> p;",
+        "isValid": true,
+        "reason": "Valid shared pointer type"
+    },
+    {
+        "token": "gc.collect()",
+        "isValid": false,
+        "reason": "Garbage collection is Python/Java"
+    },
+    {
+        "token": "dispose(obj);",
+        "isValid": false,
+        "reason": "'dispose' is C#, not C++"
+    },
+    {
+        "token": "static_cast<int>(x)",
+        "isValid": true,
+        "reason": "Valid static cast"
+    },
+    {
+        "token": "dynamic_cast<T*>(p)",
+        "isValid": true,
+        "reason": "Valid dynamic cast"
+    },
+    {
+        "token": "const_cast<int*>(p)",
+        "isValid": true,
+        "reason": "Valid const cast"
+    },
+    {
+        "token": "reinterpret_cast<>()",
+        "isValid": true,
+        "reason": "Valid reinterpret cast"
+    },
+    {
+        "token": "(int)3.14",
+        "isValid": true,
+        "reason": "Valid C-style cast in C++"
+    },
+    {
+        "token": "as int",
+        "isValid": false,
+        "reason": "'as' cast is Rust/Dart, not C++"
+    },
+    {
+        "token": "int x = (int)y;",
+        "isValid": true,
+        "reason": "Valid C-style cast"
+    },
+    {
+        "token": "try {",
+        "isValid": true,
+        "reason": "Valid try block"
+    },
+    {
+        "token": "catch(...) {",
+        "isValid": true,
+        "reason": "Valid catch-all handler"
+    },
+    {
+        "token": "throw err;",
+        "isValid": true,
+        "reason": "Valid throw statement"
+    },
+    {
+        "token": "noexcept",
+        "isValid": true,
+        "reason": "Valid noexcept specifier"
+    },
+    {
+        "token": "finally { }",
+        "isValid": false,
+        "reason": "'finally' is Java/C#, not C++"
+    },
+    {
+        "token": "except Exception:",
+        "isValid": false,
+        "reason": "'except' is Python, not C++"
+    },
+    {
+        "token": "rescue => e",
+        "isValid": false,
+        "reason": "'rescue' is Ruby, not C++"
+    },
+    {
+        "token": "raises IOError",
+        "isValid": false,
+        "reason": "'raises' is not valid C++"
+    },
+    {
+        "token": "constexpr int x=5;",
+        "isValid": true,
+        "reason": "Valid constexpr declaration"
+    },
+    {
+        "token": "const int N = 10;",
+        "isValid": true,
+        "reason": "Valid const declaration"
+    },
+    {
+        "token": "static int x;",
+        "isValid": true,
+        "reason": "Valid static variable"
+    },
+    {
+        "token": "extern int y;",
+        "isValid": true,
+        "reason": "Valid extern declaration"
+    },
+    {
+        "token": "inline void f()",
+        "isValid": true,
+        "reason": "Valid inline function"
+    },
+    {
+        "token": "volatile int v;",
+        "isValid": true,
+        "reason": "Valid volatile qualifier"
+    },
+    {
+        "token": "mutable int m;",
+        "isValid": true,
+        "reason": "Valid mutable keyword"
+    },
+    {
+        "token": "decltype(x)",
+        "isValid": true,
+        "reason": "Valid decltype specifier"
+    },
+    {
+        "token": "nullptr",
+        "isValid": true,
+        "reason": "Valid null pointer literal"
+    },
+    {
+        "token": "NULL",
+        "isValid": true,
+        "reason": "Valid C-style null in C++"
+    },
+    {
+        "token": "null",
+        "isValid": false,
+        "reason": "C++ uses 'nullptr', not 'null'"
+    },
+    {
+        "token": "nil",
+        "isValid": false,
+        "reason": "'nil' is Obj-C/Swift, not C++"
+    },
+    {
+        "token": "None",
+        "isValid": false,
+        "reason": "'None' is Python, not C++"
+    },
+    {
+        "token": "undefined",
+        "isValid": false,
+        "reason": "'undefined' is JS, not C++"
+    },
+    {
+        "token": "for(auto& x : v)",
+        "isValid": true,
+        "reason": "Valid range-based for loop"
+    },
+    {
+        "token": "while(x > 0)",
+        "isValid": true,
+        "reason": "Valid while loop"
+    },
+    {
+        "token": "do { } while(1);",
+        "isValid": true,
+        "reason": "Valid do-while loop"
+    },
+    {
+        "token": "foreach(x in arr)",
+        "isValid": false,
+        "reason": "'foreach' is C#, not C++"
+    },
+    {
+        "token": "for x in range(10)",
+        "isValid": false,
+        "reason": "Python for loop syntax"
+    },
+    {
+        "token": "for(auto x:v)",
+        "isValid": true,
+        "reason": "Valid range-for by value"
+    },
+    {
+        "token": "elif x > 0:",
+        "isValid": false,
+        "reason": "'elif' is Python, not C++"
+    },
+    {
+        "token": "elsif(x > 0)",
+        "isValid": false,
+        "reason": "'elsif' is Perl, not C++"
+    },
+    {
+        "token": "else if(x > 0)",
+        "isValid": true,
+        "reason": "Valid else-if clause"
+    },
+    {
+        "token": "switch(ch) {",
+        "isValid": true,
+        "reason": "Valid switch statement"
+    },
+    {
+        "token": "case 1:",
+        "isValid": true,
+        "reason": "Valid case label"
+    },
+    {
+        "token": "default:",
+        "isValid": true,
+        "reason": "Valid default label"
+    },
+    {
+        "token": "break;",
+        "isValid": true,
+        "reason": "Valid break statement"
+    },
+    {
+        "token": "continue;",
+        "isValid": true,
+        "reason": "Valid continue statement"
+    },
+    {
+        "token": "return 0;",
+        "isValid": true,
+        "reason": "Valid return statement"
+    },
+    {
+        "token": "x == y",
+        "isValid": true,
+        "reason": "Valid equality operator"
+    },
+    {
+        "token": "x != y",
+        "isValid": true,
+        "reason": "Valid inequality operator"
+    },
+    {
+        "token": "x === y",
+        "isValid": false,
+        "reason": "Strict equality is JS, not C++"
+    },
+    {
+        "token": "x !== y",
+        "isValid": false,
+        "reason": "Strict inequality is JS, not C++"
+    },
+    {
+        "token": "x <=> y",
+        "isValid": true,
+        "reason": "Valid C++20 spaceship operator"
+    },
+    {
+        "token": "x && y",
+        "isValid": true,
+        "reason": "Valid logical AND"
+    },
+    {
+        "token": "x || y",
+        "isValid": true,
+        "reason": "Valid logical OR"
+    },
+    {
+        "token": "x ** y",
+        "isValid": false,
+        "reason": "Power operator is Python, not C++"
+    },
+    {
+        "token": "x // y",
+        "isValid": false,
+        "reason": "Floor div is Python; // is comment"
+    },
+    {
+        "token": "x >>> y",
+        "isValid": false,
+        "reason": "Unsigned shift is Java/JS"
+    },
+    {
+        "token": "x << y",
+        "isValid": true,
+        "reason": "Valid left shift / stream insert"
+    },
+    {
+        "token": "x >> y",
+        "isValid": true,
+        "reason": "Valid right shift / stream extract"
+    },
+    {
+        "token": "[](int x){ }",
+        "isValid": true,
+        "reason": "Valid lambda expression"
+    },
+    {
+        "token": "[=](){ }",
+        "isValid": true,
+        "reason": "Valid lambda capture by value"
+    },
+    {
+        "token": "[&](){ }",
+        "isValid": true,
+        "reason": "Valid lambda capture by ref"
+    },
+    {
+        "token": "=> expr",
+        "isValid": false,
+        "reason": "Arrow function is JS/C#, not C++"
+    },
+    {
+        "token": "lambda x: x+1",
+        "isValid": false,
+        "reason": "'lambda' syntax is Python"
+    },
+    {
+        "token": "|x| x + 1",
+        "isValid": false,
+        "reason": "Closure syntax is Rust, not C++"
+    },
+    {
+        "token": "std::vector<int> v;",
+        "isValid": true,
+        "reason": "Valid vector declaration"
+    },
+    {
+        "token": "std::map<int,int> m;",
+        "isValid": true,
+        "reason": "Valid map declaration"
+    },
+    {
+        "token": "std::pair<int,int>",
+        "isValid": true,
+        "reason": "Valid pair type"
+    },
+    {
+        "token": "std::optional<int>",
+        "isValid": true,
+        "reason": "Valid C++17 optional type"
+    },
+    {
+        "token": "std::variant<int>",
+        "isValid": true,
+        "reason": "Valid C++17 variant type"
+    },
+    {
+        "token": "std::array<int,5>",
+        "isValid": true,
+        "reason": "Valid fixed-size array type"
+    },
+    {
+        "token": "ArrayList<int>",
+        "isValid": false,
+        "reason": "'ArrayList' is Java/C#"
+    },
+    {
+        "token": "HashMap<K,V>",
+        "isValid": false,
+        "reason": "'HashMap' is Java/Rust"
+    },
+    {
+        "token": "List<int>",
+        "isValid": false,
+        "reason": "'List' is C#/Python, not C++"
+    },
+    {
+        "token": "Dict<K,V>",
+        "isValid": false,
+        "reason": "'Dict' is Python, not C++"
+    },
+    {
+        "token": "x?.value",
+        "isValid": false,
+        "reason": "Optional chaining is JS/Swift"
+    },
+    {
+        "token": "x ?? fallback",
+        "isValid": false,
+        "reason": "Null coalescing is C#/JS"
+    },
+    {
+        "token": "val x = 5;",
+        "isValid": false,
+        "reason": "'val' is Kotlin/Scala, not C++"
+    },
+    {
+        "token": "import os",
+        "isValid": false,
+        "reason": "'import' is Python/Java"
+    },
+    {
+        "token": "#include <vector>",
+        "isValid": true,
+        "reason": "Valid preprocessor include"
+    },
+    {
+        "token": "#define MAX 100",
+        "isValid": true,
+        "reason": "Valid macro definition"
+    },
+    {
+        "token": "#ifdef DEBUG",
+        "isValid": true,
+        "reason": "Valid conditional compilation"
+    },
+    {
+        "token": "#pragma once",
+        "isValid": true,
+        "reason": "Valid pragma directive"
+    },
+    {
+        "token": "using std::cout;",
+        "isValid": true,
+        "reason": "Valid using declaration"
+    },
+    {
+        "token": "enum class Color {",
+        "isValid": true,
+        "reason": "Valid scoped enum (C++11)"
+    },
+    {
+        "token": "operator+()",
+        "isValid": true,
+        "reason": "Valid operator overload"
+    },
+    {
+        "token": "operator<=>()",
+        "isValid": true,
+        "reason": "Valid C++20 comparison op"
+    },
+    {
+        "token": "::std::cout",
+        "isValid": true,
+        "reason": "Valid global scope resolution"
+    },
+    {
+        "token": "this->x",
+        "isValid": true,
+        "reason": "Valid this pointer access"
+    },
+    {
+        "token": "self.x",
+        "isValid": false,
+        "reason": "'self' is Python/Rust, not C++"
+    },
+    {
+        "token": "Me.x",
+        "isValid": false,
+        "reason": "'Me' is VB.NET, not C++"
+    },
+    {
+        "token": "@property",
+        "isValid": false,
+        "reason": "'@property' is Python/Obj-C"
+    },
+    {
+        "token": "interface IFoo {",
+        "isValid": false,
+        "reason": "'interface' is Java/C#"
+    },
+    {
+        "token": "implements IBar",
+        "isValid": false,
+        "reason": "'implements' is Java, not C++"
+    },
+    {
+        "token": "extends Base",
+        "isValid": false,
+        "reason": "'extends' is Java/JS, not C++"
+    },
+    {
+        "token": ": public Base {",
+        "isValid": true,
+        "reason": "Valid public inheritance"
+    },
+    {
+        "token": "virtual ~Foo()",
+        "isValid": true,
+        "reason": "Valid virtual destructor"
+    },
+    {
+        "token": "= default;",
+        "isValid": true,
+        "reason": "Valid defaulted function"
+    },
+    {
+        "token": "= delete;",
+        "isValid": true,
+        "reason": "Valid deleted function"
+    },
+    {
+        "token": "explicit Foo(int)",
+        "isValid": true,
+        "reason": "Valid explicit constructor"
+    },
+    {
+        "token": "static_assert()",
+        "isValid": true,
+        "reason": "Valid compile-time assert"
+    },
+    {
+        "token": "sizeof(int)",
+        "isValid": true,
+        "reason": "Valid sizeof operator"
+    },
+    {
+        "token": "typeid(x)",
+        "isValid": true,
+        "reason": "Valid type identification"
+    },
+    {
+        "token": "alignof(int)",
+        "isValid": true,
+        "reason": "Valid C++11 alignment query"
+    },
+    {
+        "token": "concept Sortable",
+        "isValid": true,
+        "reason": "Valid C++20 concept"
+    },
+    {
+        "token": "requires",
+        "isValid": true,
+        "reason": "Valid C++20 requires clause"
+    },
+    {
+        "token": "co_await expr",
+        "isValid": true,
+        "reason": "Valid C++20 coroutine"
+    },
+    {
+        "token": "co_yield val",
+        "isValid": true,
+        "reason": "Valid C++20 coroutine yield"
+    },
+    {
+        "token": "co_return;",
+        "isValid": true,
+        "reason": "Valid C++20 coroutine return"
+    },
+    {
+        "token": "yield val",
+        "isValid": false,
+        "reason": "'yield' alone is Python, not C++"
+    },
+    {
+        "token": "async void f()",
+        "isValid": false,
+        "reason": "'async' keyword is C#/JS"
+    },
+    {
+        "token": "await task;",
+        "isValid": false,
+        "reason": "'await' is JS/C#, not C++"
+    }
+]

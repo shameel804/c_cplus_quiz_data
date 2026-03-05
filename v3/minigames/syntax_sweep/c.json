@@ -1,0 +1,757 @@
+[
+    {
+        "token": "int x = 5;",
+        "isValid": true,
+        "reason": "Valid integer declaration"
+    },
+    {
+        "token": "float f = 3.14;",
+        "isValid": true,
+        "reason": "Valid float declaration"
+    },
+    {
+        "token": "#include <stdio.h>",
+        "isValid": true,
+        "reason": "Valid preprocessor include"
+    },
+    {
+        "token": "printf(\"hello\");",
+        "isValid": true,
+        "reason": "Valid print function call"
+    },
+    {
+        "token": "let x = 5;",
+        "isValid": false,
+        "reason": "'let' is JavaScript, not C"
+    },
+    {
+        "token": "var x = 10;",
+        "isValid": false,
+        "reason": "'var' is not a C keyword"
+    },
+    {
+        "token": "Console.Write()",
+        "isValid": false,
+        "reason": "C# syntax, not C"
+    },
+    {
+        "token": "cout << x;",
+        "isValid": false,
+        "reason": "C++ syntax, not C"
+    },
+    {
+        "token": "return 0;",
+        "isValid": true,
+        "reason": "Valid return statement"
+    },
+    {
+        "token": "void main()",
+        "isValid": true,
+        "reason": "Valid function signature"
+    },
+    {
+        "token": "char *ptr;",
+        "isValid": true,
+        "reason": "Valid pointer declaration"
+    },
+    {
+        "token": "sizeof(int)",
+        "isValid": true,
+        "reason": "Valid sizeof operator"
+    },
+    {
+        "token": "malloc(10)",
+        "isValid": true,
+        "reason": "Valid memory allocation"
+    },
+    {
+        "token": "free(ptr);",
+        "isValid": true,
+        "reason": "Valid memory deallocation"
+    },
+    {
+        "token": "new int[10];",
+        "isValid": false,
+        "reason": "'new' is C++, not C"
+    },
+    {
+        "token": "delete ptr;",
+        "isValid": false,
+        "reason": "'delete' is C++, not C"
+    },
+    {
+        "token": "struct Point {",
+        "isValid": true,
+        "reason": "Valid struct definition"
+    },
+    {
+        "token": "typedef int Age;",
+        "isValid": true,
+        "reason": "Valid typedef declaration"
+    },
+    {
+        "token": "enum Color {",
+        "isValid": true,
+        "reason": "Valid enum definition"
+    },
+    {
+        "token": "union Data {",
+        "isValid": true,
+        "reason": "Valid union definition"
+    },
+    {
+        "token": "class MyClass {",
+        "isValid": false,
+        "reason": "'class' is C++, not C"
+    },
+    {
+        "token": "namespace std;",
+        "isValid": false,
+        "reason": "'namespace' is C++, not C"
+    },
+    {
+        "token": "template<T>",
+        "isValid": false,
+        "reason": "'template' is C++, not C"
+    },
+    {
+        "token": "public:",
+        "isValid": false,
+        "reason": "Access specifier is C++, not C"
+    },
+    {
+        "token": "#define MAX 100",
+        "isValid": true,
+        "reason": "Valid macro definition"
+    },
+    {
+        "token": "#ifdef DEBUG",
+        "isValid": true,
+        "reason": "Valid conditional compilation"
+    },
+    {
+        "token": "#pragma once",
+        "isValid": true,
+        "reason": "Valid pragma directive"
+    },
+    {
+        "token": "const int N = 5;",
+        "isValid": true,
+        "reason": "Valid const declaration"
+    },
+    {
+        "token": "static int x;",
+        "isValid": true,
+        "reason": "Valid static variable"
+    },
+    {
+        "token": "extern int y;",
+        "isValid": true,
+        "reason": "Valid extern declaration"
+    },
+    {
+        "token": "volatile int v;",
+        "isValid": true,
+        "reason": "Valid volatile qualifier"
+    },
+    {
+        "token": "register int r;",
+        "isValid": true,
+        "reason": "Valid register keyword"
+    },
+    {
+        "token": "async function()",
+        "isValid": false,
+        "reason": "'async' is JavaScript, not C"
+    },
+    {
+        "token": "await task;",
+        "isValid": false,
+        "reason": "'await' is not valid in C"
+    },
+    {
+        "token": "import os",
+        "isValid": false,
+        "reason": "'import' is Python, not C"
+    },
+    {
+        "token": "from math import",
+        "isValid": false,
+        "reason": "Python import syntax"
+    },
+    {
+        "token": "for(i=0;i<n;i++)",
+        "isValid": true,
+        "reason": "Valid for loop syntax"
+    },
+    {
+        "token": "while(x > 0)",
+        "isValid": true,
+        "reason": "Valid while loop"
+    },
+    {
+        "token": "do { } while(1);",
+        "isValid": true,
+        "reason": "Valid do-while loop"
+    },
+    {
+        "token": "foreach(x in arr)",
+        "isValid": false,
+        "reason": "'foreach' is not valid in C"
+    },
+    {
+        "token": "switch(ch) {",
+        "isValid": true,
+        "reason": "Valid switch statement"
+    },
+    {
+        "token": "case 'a':",
+        "isValid": true,
+        "reason": "Valid case label"
+    },
+    {
+        "token": "default:",
+        "isValid": true,
+        "reason": "Valid default label"
+    },
+    {
+        "token": "break;",
+        "isValid": true,
+        "reason": "Valid break statement"
+    },
+    {
+        "token": "continue;",
+        "isValid": true,
+        "reason": "Valid continue statement"
+    },
+    {
+        "token": "goto label;",
+        "isValid": true,
+        "reason": "Valid goto statement"
+    },
+    {
+        "token": "if(x == 0)",
+        "isValid": true,
+        "reason": "Valid if condition"
+    },
+    {
+        "token": "else if(x > 0)",
+        "isValid": true,
+        "reason": "Valid else-if clause"
+    },
+    {
+        "token": "elif x > 0:",
+        "isValid": false,
+        "reason": "'elif' is Python, not C"
+    },
+    {
+        "token": "elsif(x > 0)",
+        "isValid": false,
+        "reason": "'elsif' is Perl, not C"
+    },
+    {
+        "token": "x === y",
+        "isValid": false,
+        "reason": "Strict equality is JS, not C"
+    },
+    {
+        "token": "x !== y",
+        "isValid": false,
+        "reason": "Strict inequality is JS, not C"
+    },
+    {
+        "token": "x == y",
+        "isValid": true,
+        "reason": "Valid equality operator"
+    },
+    {
+        "token": "x != y",
+        "isValid": true,
+        "reason": "Valid inequality operator"
+    },
+    {
+        "token": "x && y",
+        "isValid": true,
+        "reason": "Valid logical AND"
+    },
+    {
+        "token": "x || y",
+        "isValid": true,
+        "reason": "Valid logical OR"
+    },
+    {
+        "token": "!x",
+        "isValid": true,
+        "reason": "Valid logical NOT"
+    },
+    {
+        "token": "x & y",
+        "isValid": true,
+        "reason": "Valid bitwise AND"
+    },
+    {
+        "token": "x | y",
+        "isValid": true,
+        "reason": "Valid bitwise OR"
+    },
+    {
+        "token": "x ^ y",
+        "isValid": true,
+        "reason": "Valid bitwise XOR"
+    },
+    {
+        "token": "x << 2",
+        "isValid": true,
+        "reason": "Valid left shift operator"
+    },
+    {
+        "token": "x >> 2",
+        "isValid": true,
+        "reason": "Valid right shift operator"
+    },
+    {
+        "token": "x >>> 2",
+        "isValid": false,
+        "reason": "Unsigned shift is Java/JS, not C"
+    },
+    {
+        "token": "puts(\"hi\");",
+        "isValid": true,
+        "reason": "Valid string output function"
+    },
+    {
+        "token": "scanf(\"%d\",&x);",
+        "isValid": true,
+        "reason": "Valid formatted input"
+    },
+    {
+        "token": "print(\"hello\")",
+        "isValid": false,
+        "reason": "'print' is Python, not C"
+    },
+    {
+        "token": "echo \"hello\";",
+        "isValid": false,
+        "reason": "'echo' is PHP/shell, not C"
+    },
+    {
+        "token": "System.out.print",
+        "isValid": false,
+        "reason": "Java syntax, not C"
+    },
+    {
+        "token": "fmt.Println()",
+        "isValid": false,
+        "reason": "Go syntax, not C"
+    },
+    {
+        "token": "NULL",
+        "isValid": true,
+        "reason": "Valid null pointer constant"
+    },
+    {
+        "token": "null",
+        "isValid": false,
+        "reason": "C uses 'NULL', not 'null'"
+    },
+    {
+        "token": "nil",
+        "isValid": false,
+        "reason": "'nil' is Obj-C/Swift, not C"
+    },
+    {
+        "token": "None",
+        "isValid": false,
+        "reason": "'None' is Python, not C"
+    },
+    {
+        "token": "true",
+        "isValid": true,
+        "reason": "Valid boolean in C99 (stdbool)"
+    },
+    {
+        "token": "false",
+        "isValid": true,
+        "reason": "Valid boolean in C99 (stdbool)"
+    },
+    {
+        "token": "int arr[10];",
+        "isValid": true,
+        "reason": "Valid array declaration"
+    },
+    {
+        "token": "int[] arr;",
+        "isValid": false,
+        "reason": "Java/C# array syntax, not C"
+    },
+    {
+        "token": "arr.length",
+        "isValid": false,
+        "reason": "No .length property in C"
+    },
+    {
+        "token": "strlen(str)",
+        "isValid": true,
+        "reason": "Valid string length function"
+    },
+    {
+        "token": "strcmp(a, b)",
+        "isValid": true,
+        "reason": "Valid string comparison"
+    },
+    {
+        "token": "strcpy(a, b)",
+        "isValid": true,
+        "reason": "Valid string copy function"
+    },
+    {
+        "token": "strcat(a, b)",
+        "isValid": true,
+        "reason": "Valid string concatenation"
+    },
+    {
+        "token": "a + b",
+        "isValid": true,
+        "reason": "Valid addition expression"
+    },
+    {
+        "token": "a ** b",
+        "isValid": false,
+        "reason": "Power operator is Python, not C"
+    },
+    {
+        "token": "a // b",
+        "isValid": false,
+        "reason": "Floor div is Python; // is comment"
+    },
+    {
+        "token": "a % b",
+        "isValid": true,
+        "reason": "Valid modulus operator"
+    },
+    {
+        "token": "a++",
+        "isValid": true,
+        "reason": "Valid increment operator"
+    },
+    {
+        "token": "a--",
+        "isValid": true,
+        "reason": "Valid decrement operator"
+    },
+    {
+        "token": "a += 5;",
+        "isValid": true,
+        "reason": "Valid compound assignment"
+    },
+    {
+        "token": "a **= 2;",
+        "isValid": false,
+        "reason": "Power assignment not valid in C"
+    },
+    {
+        "token": "&x",
+        "isValid": true,
+        "reason": "Valid address-of operator"
+    },
+    {
+        "token": "*ptr",
+        "isValid": true,
+        "reason": "Valid dereference operator"
+    },
+    {
+        "token": "ptr->member",
+        "isValid": true,
+        "reason": "Valid arrow operator"
+    },
+    {
+        "token": "ptr.member",
+        "isValid": false,
+        "reason": "Use -> for pointer, not dot"
+    },
+    {
+        "token": "x ? a : b",
+        "isValid": true,
+        "reason": "Valid ternary operator"
+    },
+    {
+        "token": "(int)3.14",
+        "isValid": true,
+        "reason": "Valid type cast"
+    },
+    {
+        "token": "static_cast<int>",
+        "isValid": false,
+        "reason": "C++ cast, not valid in C"
+    },
+    {
+        "token": "dynamic_cast<T>",
+        "isValid": false,
+        "reason": "C++ cast, not valid in C"
+    },
+    {
+        "token": "try { }",
+        "isValid": false,
+        "reason": "Exception handling is C++/Java"
+    },
+    {
+        "token": "catch(...)",
+        "isValid": false,
+        "reason": "'catch' is C++/Java, not C"
+    },
+    {
+        "token": "throw err;",
+        "isValid": false,
+        "reason": "'throw' is C++, not C"
+    },
+    {
+        "token": "finally { }",
+        "isValid": false,
+        "reason": "'finally' is Java/C#, not C"
+    },
+    {
+        "token": "unsigned int x;",
+        "isValid": true,
+        "reason": "Valid unsigned declaration"
+    },
+    {
+        "token": "long long x;",
+        "isValid": true,
+        "reason": "Valid long long type"
+    },
+    {
+        "token": "short s = 1;",
+        "isValid": true,
+        "reason": "Valid short declaration"
+    },
+    {
+        "token": "double d = 2.5;",
+        "isValid": true,
+        "reason": "Valid double declaration"
+    },
+    {
+        "token": "signed char c;",
+        "isValid": true,
+        "reason": "Valid signed char type"
+    },
+    {
+        "token": "_Bool b;",
+        "isValid": true,
+        "reason": "Valid C99 boolean type"
+    },
+    {
+        "token": "bool b;",
+        "isValid": false,
+        "reason": "Needs stdbool.h or use _Bool"
+    },
+    {
+        "token": "string s;",
+        "isValid": false,
+        "reason": "'string' is C++/C#, not C"
+    },
+    {
+        "token": "auto x = 5;",
+        "isValid": false,
+        "reason": "'auto' type inference is C++"
+    },
+    {
+        "token": "decltype(x)",
+        "isValid": false,
+        "reason": "'decltype' is C++11, not C"
+    },
+    {
+        "token": "constexpr int x;",
+        "isValid": false,
+        "reason": "'constexpr' is C++, not C"
+    },
+    {
+        "token": "inline void f()",
+        "isValid": true,
+        "reason": "Valid inline function (C99)"
+    },
+    {
+        "token": "restrict int *p;",
+        "isValid": false,
+        "reason": "'restrict' qualifies ptr, not int"
+    },
+    {
+        "token": "int *restrict p;",
+        "isValid": true,
+        "reason": "Valid restrict pointer (C99)"
+    },
+    {
+        "token": "_Atomic int a;",
+        "isValid": true,
+        "reason": "Valid C11 atomic type"
+    },
+    {
+        "token": "_Generic(x,",
+        "isValid": true,
+        "reason": "Valid C11 generic selection"
+    },
+    {
+        "token": "atoi(\"42\")",
+        "isValid": true,
+        "reason": "Valid string-to-int function"
+    },
+    {
+        "token": "abs(-5)",
+        "isValid": true,
+        "reason": "Valid absolute value function"
+    },
+    {
+        "token": "exit(0);",
+        "isValid": true,
+        "reason": "Valid program exit call"
+    },
+    {
+        "token": "fopen(\"f\",\"r\")",
+        "isValid": true,
+        "reason": "Valid file open function"
+    },
+    {
+        "token": "fclose(fp);",
+        "isValid": true,
+        "reason": "Valid file close function"
+    },
+    {
+        "token": "fprintf(fp,\"x\")",
+        "isValid": true,
+        "reason": "Valid file print function"
+    },
+    {
+        "token": "fscanf(fp,\"%d\")",
+        "isValid": true,
+        "reason": "Valid file scan function"
+    },
+    {
+        "token": "realloc(p, 20)",
+        "isValid": true,
+        "reason": "Valid memory reallocation"
+    },
+    {
+        "token": "calloc(5, 4)",
+        "isValid": true,
+        "reason": "Valid zeroed mem allocation"
+    },
+    {
+        "token": "def main():",
+        "isValid": false,
+        "reason": "'def' is Python, not C"
+    },
+    {
+        "token": "fn main()",
+        "isValid": false,
+        "reason": "'fn' is Rust, not C"
+    },
+    {
+        "token": "func main()",
+        "isValid": false,
+        "reason": "'func' is Go/Swift, not C"
+    },
+    {
+        "token": "fun main()",
+        "isValid": false,
+        "reason": "'fun' is Kotlin, not C"
+    },
+    {
+        "token": "function main()",
+        "isValid": false,
+        "reason": "'function' is JS/PHP, not C"
+    },
+    {
+        "token": "sub main {",
+        "isValid": false,
+        "reason": "'sub' is Perl, not C"
+    },
+    {
+        "token": "val x = 5;",
+        "isValid": false,
+        "reason": "'val' is Kotlin/Scala, not C"
+    },
+    {
+        "token": "int *p = &x;",
+        "isValid": true,
+        "reason": "Valid pointer initialization"
+    },
+    {
+        "token": "p = (int*)0xFF;",
+        "isValid": true,
+        "reason": "Valid cast to pointer"
+    },
+    {
+        "token": "int a[3]={1,2,3};",
+        "isValid": true,
+        "reason": "Valid array initialization"
+    },
+    {
+        "token": ".name = \"abc\"",
+        "isValid": true,
+        "reason": "Valid designated initializer"
+    },
+    {
+        "token": "x?.value",
+        "isValid": false,
+        "reason": "Optional chaining is JS/Swift"
+    },
+    {
+        "token": "x ?? default",
+        "isValid": false,
+        "reason": "Null coalescing is C#/JS"
+    },
+    {
+        "token": "=>",
+        "isValid": false,
+        "reason": "Arrow function is JS/C#, not C"
+    },
+    {
+        "token": "::scope",
+        "isValid": false,
+        "reason": "Scope resolution is C++, not C"
+    },
+    {
+        "token": "using namespace",
+        "isValid": false,
+        "reason": "'using' is C++/C#, not C"
+    },
+    {
+        "token": "virtual void f()",
+        "isValid": false,
+        "reason": "'virtual' is C++, not C"
+    },
+    {
+        "token": "override void f()",
+        "isValid": false,
+        "reason": "'override' is C++11, not C"
+    },
+    {
+        "token": "friend class A;",
+        "isValid": false,
+        "reason": "'friend' is C++, not C"
+    },
+    {
+        "token": "operator+()",
+        "isValid": false,
+        "reason": "Operator overload is C++, not C"
+    },
+    {
+        "token": "#ifndef GUARD_H",
+        "isValid": true,
+        "reason": "Valid include guard"
+    },
+    {
+        "token": "#endif",
+        "isValid": true,
+        "reason": "Valid preprocessor endif"
+    },
+    {
+        "token": "#error \"fail\"",
+        "isValid": true,
+        "reason": "Valid preprocessor error"
+    },
+    {
+        "token": "#undef MAX",
+        "isValid": true,
+        "reason": "Valid macro undefine"
+    }
+]

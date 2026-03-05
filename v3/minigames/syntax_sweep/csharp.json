@@ -1,0 +1,737 @@
+[
+    {
+        "token": "int x = 5;",
+        "isValid": true,
+        "reason": "Valid integer declaration"
+    },
+    {
+        "token": "var x = 10;",
+        "isValid": true,
+        "reason": "Valid implicitly typed variable"
+    },
+    {
+        "token": "string s = \"hi\";",
+        "isValid": true,
+        "reason": "Valid string declaration"
+    },
+    {
+        "token": "Console.Write(\"x\");",
+        "isValid": true,
+        "reason": "Valid console output"
+    },
+    {
+        "token": "Console.ReadLine();",
+        "isValid": true,
+        "reason": "Valid console input"
+    },
+    {
+        "token": "Console.WriteLine();",
+        "isValid": true,
+        "reason": "Valid console output line"
+    },
+    {
+        "token": "print(\"hello\")",
+        "isValid": false,
+        "reason": "'print' is Python, not C#"
+    },
+    {
+        "token": "cout << \"hi\";",
+        "isValid": false,
+        "reason": "'cout' is C++, not C#"
+    },
+    {
+        "token": "System.out.println",
+        "isValid": false,
+        "reason": "Java syntax, not C#"
+    },
+    {
+        "token": "echo \"hello\";",
+        "isValid": false,
+        "reason": "'echo' is PHP/shell, not C#"
+    },
+    {
+        "token": "printf(\"hello\");",
+        "isValid": false,
+        "reason": "'printf' is C/C++, not C#"
+    },
+    {
+        "token": "fmt.Println()",
+        "isValid": false,
+        "reason": "Go syntax, not C#"
+    },
+    {
+        "token": "class MyClass {",
+        "isValid": true,
+        "reason": "Valid class definition"
+    },
+    {
+        "token": "struct Point {",
+        "isValid": true,
+        "reason": "Valid struct definition"
+    },
+    {
+        "token": "interface IFoo {",
+        "isValid": true,
+        "reason": "Valid interface definition"
+    },
+    {
+        "token": "enum Color {",
+        "isValid": true,
+        "reason": "Valid enum definition"
+    },
+    {
+        "token": "record Person()",
+        "isValid": true,
+        "reason": "Valid C# 9 record type"
+    },
+    {
+        "token": "namespace App {",
+        "isValid": true,
+        "reason": "Valid namespace definition"
+    },
+    {
+        "token": "public:",
+        "isValid": false,
+        "reason": "C++ access style; use 'public' keyword"
+    },
+    {
+        "token": "template<T>",
+        "isValid": false,
+        "reason": "'template' is C++, not C#"
+    },
+    {
+        "token": "friend class A;",
+        "isValid": false,
+        "reason": "'friend' is C++, not C#"
+    },
+    {
+        "token": "virtual void F()",
+        "isValid": true,
+        "reason": "Valid virtual method"
+    },
+    {
+        "token": "override void F()",
+        "isValid": true,
+        "reason": "Valid override method"
+    },
+    {
+        "token": "abstract class A {",
+        "isValid": true,
+        "reason": "Valid abstract class"
+    },
+    {
+        "token": "sealed class S {",
+        "isValid": true,
+        "reason": "Valid sealed class"
+    },
+    {
+        "token": "partial class P {",
+        "isValid": true,
+        "reason": "Valid partial class"
+    },
+    {
+        "token": "static class U {",
+        "isValid": true,
+        "reason": "Valid static class"
+    },
+    {
+        "token": "final class F {",
+        "isValid": false,
+        "reason": "'final' class is Java; use 'sealed'"
+    },
+    {
+        "token": "extends Base",
+        "isValid": false,
+        "reason": "'extends' is Java, not C#"
+    },
+    {
+        "token": "implements IFoo",
+        "isValid": false,
+        "reason": "'implements' is Java, not C#"
+    },
+    {
+        "token": ": Base {",
+        "isValid": true,
+        "reason": "Valid inheritance syntax"
+    },
+    {
+        "token": "new MyClass();",
+        "isValid": true,
+        "reason": "Valid object instantiation"
+    },
+    {
+        "token": "new();",
+        "isValid": true,
+        "reason": "Valid target-typed new (C# 9)"
+    },
+    {
+        "token": "malloc(10)",
+        "isValid": false,
+        "reason": "'malloc' is C/C++, not C#"
+    },
+    {
+        "token": "free(ptr);",
+        "isValid": false,
+        "reason": "'free' is C/C++, not C#"
+    },
+    {
+        "token": "delete obj;",
+        "isValid": false,
+        "reason": "'delete' is C++, not C#"
+    },
+    {
+        "token": "using System;",
+        "isValid": true,
+        "reason": "Valid using directive"
+    },
+    {
+        "token": "using var f = ...",
+        "isValid": true,
+        "reason": "Valid using declaration (C# 8)"
+    },
+    {
+        "token": "#include <stdio.h>",
+        "isValid": false,
+        "reason": "'#include' is C/C++, not C#"
+    },
+    {
+        "token": "import os",
+        "isValid": false,
+        "reason": "'import' is Python/Java"
+    },
+    {
+        "token": "require 'lib'",
+        "isValid": false,
+        "reason": "'require' is Ruby/JS, not C#"
+    },
+    {
+        "token": "try {",
+        "isValid": true,
+        "reason": "Valid try block"
+    },
+    {
+        "token": "catch(Exception e)",
+        "isValid": true,
+        "reason": "Valid catch block"
+    },
+    {
+        "token": "finally { }",
+        "isValid": true,
+        "reason": "Valid finally block"
+    },
+    {
+        "token": "throw new Ex();",
+        "isValid": true,
+        "reason": "Valid throw statement"
+    },
+    {
+        "token": "catch(...)",
+        "isValid": false,
+        "reason": "C++ catch-all; C# uses 'catch'"
+    },
+    {
+        "token": "except Exception:",
+        "isValid": false,
+        "reason": "'except' is Python, not C#"
+    },
+    {
+        "token": "rescue => e",
+        "isValid": false,
+        "reason": "'rescue' is Ruby, not C#"
+    },
+    {
+        "token": "noexcept",
+        "isValid": false,
+        "reason": "'noexcept' is C++, not C#"
+    },
+    {
+        "token": "async Task F()",
+        "isValid": true,
+        "reason": "Valid async method"
+    },
+    {
+        "token": "await task;",
+        "isValid": true,
+        "reason": "Valid await expression"
+    },
+    {
+        "token": "Task.Run(() => {})",
+        "isValid": true,
+        "reason": "Valid task creation"
+    },
+    {
+        "token": "async/await",
+        "isValid": false,
+        "reason": "Not a single token; separate keywords"
+    },
+    {
+        "token": "co_await expr",
+        "isValid": false,
+        "reason": "'co_await' is C++20, not C#"
+    },
+    {
+        "token": "yield return x;",
+        "isValid": true,
+        "reason": "Valid iterator yield"
+    },
+    {
+        "token": "yield break;",
+        "isValid": true,
+        "reason": "Valid iterator termination"
+    },
+    {
+        "token": "yield x",
+        "isValid": false,
+        "reason": "Missing 'return' after yield"
+    },
+    {
+        "token": "foreach(var x in a)",
+        "isValid": true,
+        "reason": "Valid foreach loop"
+    },
+    {
+        "token": "for(int i=0;;i++)",
+        "isValid": true,
+        "reason": "Valid for loop"
+    },
+    {
+        "token": "while(x > 0)",
+        "isValid": true,
+        "reason": "Valid while loop"
+    },
+    {
+        "token": "do { } while(x);",
+        "isValid": true,
+        "reason": "Valid do-while loop"
+    },
+    {
+        "token": "for x in range(10)",
+        "isValid": false,
+        "reason": "Python for syntax, not C#"
+    },
+    {
+        "token": "for(auto& x : v)",
+        "isValid": false,
+        "reason": "C++ range-for, not C#"
+    },
+    {
+        "token": "elif:",
+        "isValid": false,
+        "reason": "'elif' is Python, not C#"
+    },
+    {
+        "token": "else if(x > 0)",
+        "isValid": true,
+        "reason": "Valid else-if clause"
+    },
+    {
+        "token": "switch(x) {",
+        "isValid": true,
+        "reason": "Valid switch statement"
+    },
+    {
+        "token": "case 1:",
+        "isValid": true,
+        "reason": "Valid case label"
+    },
+    {
+        "token": "default:",
+        "isValid": true,
+        "reason": "Valid default label"
+    },
+    {
+        "token": "x switch {",
+        "isValid": true,
+        "reason": "Valid switch expression (C# 8)"
+    },
+    {
+        "token": "when x > 0:",
+        "isValid": true,
+        "reason": "Valid pattern matching guard"
+    },
+    {
+        "token": "is int i",
+        "isValid": true,
+        "reason": "Valid type pattern matching"
+    },
+    {
+        "token": "is not null",
+        "isValid": true,
+        "reason": "Valid negation pattern (C# 9)"
+    },
+    {
+        "token": "and > 0",
+        "isValid": true,
+        "reason": "Valid conjunctive pattern (C# 9)"
+    },
+    {
+        "token": "or < 10",
+        "isValid": true,
+        "reason": "Valid disjunctive pattern (C# 9)"
+    },
+    {
+        "token": "x?.Value",
+        "isValid": true,
+        "reason": "Valid null conditional access"
+    },
+    {
+        "token": "x ?? fallback",
+        "isValid": true,
+        "reason": "Valid null coalescing operator"
+    },
+    {
+        "token": "x ??= val;",
+        "isValid": true,
+        "reason": "Valid null coalescing assignment"
+    },
+    {
+        "token": "x!",
+        "isValid": true,
+        "reason": "Valid null-forgiving operator"
+    },
+    {
+        "token": "int? n;",
+        "isValid": true,
+        "reason": "Valid nullable value type"
+    },
+    {
+        "token": "string? s;",
+        "isValid": true,
+        "reason": "Valid nullable reference type"
+    },
+    {
+        "token": "nullptr",
+        "isValid": false,
+        "reason": "'nullptr' is C++, not C#"
+    },
+    {
+        "token": "None",
+        "isValid": false,
+        "reason": "'None' is Python, not C#"
+    },
+    {
+        "token": "nil",
+        "isValid": false,
+        "reason": "'nil' is Swift/Obj-C, not C#"
+    },
+    {
+        "token": "null",
+        "isValid": true,
+        "reason": "Valid null literal"
+    },
+    {
+        "token": "x => x + 1",
+        "isValid": true,
+        "reason": "Valid lambda expression"
+    },
+    {
+        "token": "(x, y) => x + y",
+        "isValid": true,
+        "reason": "Valid multi-param lambda"
+    },
+    {
+        "token": "delegate { }",
+        "isValid": true,
+        "reason": "Valid anonymous method"
+    },
+    {
+        "token": "Action<int> a;",
+        "isValid": true,
+        "reason": "Valid delegate type"
+    },
+    {
+        "token": "Func<int,bool> f;",
+        "isValid": true,
+        "reason": "Valid function delegate"
+    },
+    {
+        "token": "event EventHandler",
+        "isValid": true,
+        "reason": "Valid event declaration"
+    },
+    {
+        "token": "lambda x: x+1",
+        "isValid": false,
+        "reason": "'lambda' syntax is Python"
+    },
+    {
+        "token": "[](int x){ }",
+        "isValid": false,
+        "reason": "C++ lambda syntax, not C#"
+    },
+    {
+        "token": "|x| x + 1",
+        "isValid": false,
+        "reason": "Rust closure syntax, not C#"
+    },
+    {
+        "token": "List<int> l;",
+        "isValid": true,
+        "reason": "Valid generic list type"
+    },
+    {
+        "token": "Dictionary<K,V>",
+        "isValid": true,
+        "reason": "Valid dictionary type"
+    },
+    {
+        "token": "IEnumerable<T>",
+        "isValid": true,
+        "reason": "Valid enumerable interface"
+    },
+    {
+        "token": "HashSet<int>",
+        "isValid": true,
+        "reason": "Valid hash set type"
+    },
+    {
+        "token": "Queue<string>",
+        "isValid": true,
+        "reason": "Valid queue type"
+    },
+    {
+        "token": "Span<byte>",
+        "isValid": true,
+        "reason": "Valid Span type"
+    },
+    {
+        "token": "std::vector<int>",
+        "isValid": false,
+        "reason": "C++ STL syntax, not C#"
+    },
+    {
+        "token": "ArrayList<int>",
+        "isValid": false,
+        "reason": "'ArrayList' is not generic in C#"
+    },
+    {
+        "token": "HashMap<K,V>",
+        "isValid": false,
+        "reason": "'HashMap' is Java, not C#"
+    },
+    {
+        "token": "Vec<int>",
+        "isValid": false,
+        "reason": "'Vec' is Rust, not C#"
+    },
+    {
+        "token": "def foo():",
+        "isValid": false,
+        "reason": "'def' is Python, not C#"
+    },
+    {
+        "token": "fn main()",
+        "isValid": false,
+        "reason": "'fn' is Rust, not C#"
+    },
+    {
+        "token": "func main()",
+        "isValid": false,
+        "reason": "'func' is Go/Swift, not C#"
+    },
+    {
+        "token": "fun main()",
+        "isValid": false,
+        "reason": "'fun' is Kotlin, not C#"
+    },
+    {
+        "token": "function foo()",
+        "isValid": false,
+        "reason": "'function' is JS, not C#"
+    },
+    {
+        "token": "void Main()",
+        "isValid": true,
+        "reason": "Valid method declaration"
+    },
+    {
+        "token": "get; set;",
+        "isValid": true,
+        "reason": "Valid auto-property accessors"
+    },
+    {
+        "token": "{ get; init; }",
+        "isValid": true,
+        "reason": "Valid init-only property (C# 9)"
+    },
+    {
+        "token": "required string N",
+        "isValid": true,
+        "reason": "Valid required member (C# 11)"
+    },
+    {
+        "token": "[Attribute]",
+        "isValid": true,
+        "reason": "Valid attribute annotation"
+    },
+    {
+        "token": "[Obsolete]",
+        "isValid": true,
+        "reason": "Valid obsolete attribute"
+    },
+    {
+        "token": "@Override",
+        "isValid": false,
+        "reason": "'@Override' is Java annotation"
+    },
+    {
+        "token": "@property",
+        "isValid": false,
+        "reason": "'@property' is Python/Obj-C"
+    },
+    {
+        "token": "#[derive()]",
+        "isValid": false,
+        "reason": "Rust attribute syntax, not C#"
+    },
+    {
+        "token": "where T : class",
+        "isValid": true,
+        "reason": "Valid generic constraint"
+    },
+    {
+        "token": "where T : new()",
+        "isValid": true,
+        "reason": "Valid constructor constraint"
+    },
+    {
+        "token": "nameof(x)",
+        "isValid": true,
+        "reason": "Valid nameof expression"
+    },
+    {
+        "token": "typeof(int)",
+        "isValid": true,
+        "reason": "Valid typeof operator"
+    },
+    {
+        "token": "sizeof(int)",
+        "isValid": true,
+        "reason": "Valid sizeof operator"
+    },
+    {
+        "token": "checked { }",
+        "isValid": true,
+        "reason": "Valid checked context"
+    },
+    {
+        "token": "unchecked { }",
+        "isValid": true,
+        "reason": "Valid unchecked context"
+    },
+    {
+        "token": "lock(obj) { }",
+        "isValid": true,
+        "reason": "Valid lock statement"
+    },
+    {
+        "token": "fixed(int* p=&x)",
+        "isValid": true,
+        "reason": "Valid fixed statement"
+    },
+    {
+        "token": "stackalloc int[5]",
+        "isValid": true,
+        "reason": "Valid stack allocation"
+    },
+    {
+        "token": "ref int x",
+        "isValid": true,
+        "reason": "Valid ref parameter"
+    },
+    {
+        "token": "out int result",
+        "isValid": true,
+        "reason": "Valid out parameter"
+    },
+    {
+        "token": "in ReadOnly val",
+        "isValid": true,
+        "reason": "Valid in parameter"
+    },
+    {
+        "token": "params int[] arr",
+        "isValid": true,
+        "reason": "Valid params array"
+    },
+    {
+        "token": "this.x",
+        "isValid": true,
+        "reason": "Valid this member access"
+    },
+    {
+        "token": "base.Method()",
+        "isValid": true,
+        "reason": "Valid base class call"
+    },
+    {
+        "token": "self.x",
+        "isValid": false,
+        "reason": "'self' is Python/Rust, not C#"
+    },
+    {
+        "token": "super.Method()",
+        "isValid": false,
+        "reason": "'super' is Java; C# uses 'base'"
+    },
+    {
+        "token": "let x = 5;",
+        "isValid": false,
+        "reason": "'let' is JS/Swift, not C#"
+    },
+    {
+        "token": "val x = 5;",
+        "isValid": false,
+        "reason": "'val' is Kotlin/Scala, not C#"
+    },
+    {
+        "token": "const int X = 5;",
+        "isValid": true,
+        "reason": "Valid constant declaration"
+    },
+    {
+        "token": "readonly int Y;",
+        "isValid": true,
+        "reason": "Valid readonly field"
+    },
+    {
+        "token": "x === y",
+        "isValid": false,
+        "reason": "Strict equality is JS, not C#"
+    },
+    {
+        "token": "x !== y",
+        "isValid": false,
+        "reason": "Strict inequality is JS, not C#"
+    },
+    {
+        "token": "x ** y",
+        "isValid": false,
+        "reason": "Power operator is Python, not C#"
+    },
+    {
+        "token": "x // y",
+        "isValid": false,
+        "reason": "Floor div is Python; // is comment"
+    },
+    {
+        "token": "$\"Hello {name}\"",
+        "isValid": true,
+        "reason": "Valid string interpolation"
+    },
+    {
+        "token": "@\"raw\\string\"",
+        "isValid": true,
+        "reason": "Valid verbatim string literal"
+    },
+    {
+        "token": "f\"Hello {name}\"",
+        "isValid": false,
+        "reason": "'f-string' is Python, not C#"
+    },
+    {
+        "token": "global::System",
+        "isValid": true,
+        "reason": "Valid global alias qualifier"
+    }
+]

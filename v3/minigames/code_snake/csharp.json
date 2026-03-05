@@ -1,0 +1,1539 @@
+[
+    {
+        "tokens": [
+            "int",
+            "x",
+            "=",
+            "5",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "double",
+            "pi",
+            "=",
+            "3.14",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "char",
+            "c",
+            "=",
+            "'A'",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "bool",
+            "flag",
+            "=",
+            "true",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "string",
+            "name",
+            "=",
+            "\"Alice\"",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "var",
+            "val",
+            "=",
+            "42",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "float",
+            "f",
+            "=",
+            "1.5f",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "decimal",
+            "price",
+            "=",
+            "9.99m",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "long",
+            "big",
+            "=",
+            "999999L",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "byte",
+            "b",
+            "=",
+            "255",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "int",
+            "sum",
+            "=",
+            "x",
+            "+",
+            "y",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "int",
+            "diff",
+            "=",
+            "x",
+            "-",
+            "y",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "int",
+            "prod",
+            "=",
+            "x",
+            "*",
+            "y",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "double",
+            "div",
+            "=",
+            "x",
+            "/",
+            "2.0",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "int",
+            "mod",
+            "=",
+            "x",
+            "%",
+            "3",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "Console",
+            ".",
+            "WriteLine",
+            "(",
+            "\"Hi\"",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "Console",
+            ".",
+            "WriteLine",
+            "(",
+            "x",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "Console",
+            ".",
+            "Write",
+            "(",
+            "\"Hi\"",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "Console",
+            ".",
+            "ReadLine",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "Console",
+            ".",
+            "ReadKey",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "Console",
+            ".",
+            "WriteLine",
+            "(",
+            "$\"{x}\"",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "Console",
+            ".",
+            "Clear",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "string",
+            "s",
+            "=",
+            "$\"x={x}\"",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "string",
+            "r",
+            "=",
+            "@\"C:\\path\"",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "string",
+            ".",
+            "IsNullOrEmpty",
+            "(",
+            "s",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "if",
+            "(",
+            "x",
+            ">",
+            "0",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "if",
+            "(",
+            "x",
+            "==",
+            "5",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "if",
+            "(",
+            "x",
+            "!=",
+            "y",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "}",
+            "else",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "else",
+            "if",
+            "(",
+            "x",
+            "<",
+            "0",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "if",
+            "(",
+            "x",
+            "&&",
+            "y",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "if",
+            "(",
+            "x",
+            "||",
+            "y",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "if",
+            "(",
+            "!flag",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "if",
+            "(",
+            "obj",
+            "is",
+            "Dog",
+            "d",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "if",
+            "(",
+            "x",
+            "is",
+            "not",
+            "null",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "for",
+            "(",
+            "int",
+            "i=0",
+            ";",
+            "i<10",
+            ";",
+            "i++",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "for",
+            "(",
+            "int",
+            "i=n",
+            ";",
+            "i>0",
+            ";",
+            "i--",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "foreach",
+            "(",
+            "var",
+            "item",
+            "in",
+            "list",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "foreach",
+            "(",
+            "var",
+            "c",
+            "in",
+            "str",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "foreach",
+            "(",
+            "var",
+            "kv",
+            "in",
+            "dict",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "while",
+            "(",
+            "x",
+            ">",
+            "0",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "while",
+            "(",
+            "true",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "do",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "}",
+            "while",
+            "(",
+            "x",
+            ">",
+            "0",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "break",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "continue",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "return",
+            "0",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "return",
+            "x",
+            "+",
+            "y",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "return",
+            "null",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "return",
+            "result",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "switch",
+            "(",
+            "ch",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "case",
+            "\"A\"",
+            ":"
+        ]
+    },
+    {
+        "tokens": [
+            "case",
+            "1",
+            ":",
+            "break",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "default",
+            ":"
+        ]
+    },
+    {
+        "tokens": [
+            "switch",
+            "(",
+            "x",
+            ")",
+            "{",
+            ">",
+            "0",
+            "=>",
+            "\"pos\"",
+            "}",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "using",
+            "System",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "using",
+            "System.Linq",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "using",
+            "System.IO",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "using",
+            "System.Text",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "using",
+            "System.Collections",
+            ".Generic",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "namespace",
+            "App",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "}",
+            "//",
+            "namespace"
+        ]
+    },
+    {
+        "tokens": [
+            "namespace",
+            "App",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "class",
+            "Dog",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "public",
+            "int",
+            "Age",
+            "{",
+            "get;",
+            "set;",
+            "}"
+        ]
+    },
+    {
+        "tokens": [
+            "public",
+            "string",
+            "Name",
+            "{",
+            "get;",
+            "}"
+        ]
+    },
+    {
+        "tokens": [
+            "private",
+            "int",
+            "_count",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "protected",
+            "string",
+            "_name",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "internal",
+            "bool",
+            "IsReady",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "public",
+            "Dog",
+            "(",
+            ")",
+            "{",
+            "}"
+        ]
+    },
+    {
+        "tokens": [
+            "public",
+            "Dog",
+            "(",
+            "int",
+            "age",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "this",
+            ".",
+            "Age",
+            "=",
+            "age",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "public",
+            "void",
+            "Bark",
+            "(",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "public",
+            "int",
+            "GetAge",
+            "(",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "return",
+            "this",
+            ".",
+            "Age",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "}",
+            "}"
+        ]
+    },
+    {
+        "tokens": [
+            "class",
+            "Cat",
+            ":",
+            "Animal",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "public",
+            "override",
+            "void",
+            "Speak",
+            "(",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "public",
+            "virtual",
+            "void",
+            "Move",
+            "(",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "public",
+            "sealed",
+            "override",
+            "void",
+            "Run",
+            "(",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "abstract",
+            "class",
+            "Shape",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "public",
+            "abstract",
+            "double",
+            "Area",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "interface",
+            "IAnimal",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "void",
+            "Speak",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "string",
+            "Name",
+            "{",
+            "get;",
+            "}"
+        ]
+    },
+    {
+        "tokens": [
+            "class",
+            "Dog",
+            ":",
+            "IAnimal",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "static",
+            "int",
+            "Count",
+            "=",
+            "0",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "static",
+            "void",
+            "Main",
+            "(",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "public",
+            "static",
+            "int",
+            "Add",
+            "(",
+            "int",
+            "a",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "const",
+            "int",
+            "MAX",
+            "=",
+            "100",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "readonly",
+            "string",
+            "Id",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "struct",
+            "Point",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "public",
+            "int",
+            "X",
+            ";",
+            "public",
+            "int",
+            "Y",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "var",
+            "p",
+            "=",
+            "new",
+            "Point",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "enum",
+            "Color",
+            "{",
+            "Red",
+            ",",
+            "Blue",
+            "}"
+        ]
+    },
+    {
+        "tokens": [
+            "Color",
+            "c",
+            "=",
+            "Color",
+            ".",
+            "Red",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "record",
+            "Person",
+            "(",
+            "string",
+            "Name",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "var",
+            "list",
+            "=",
+            "new",
+            "List<int>",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "list",
+            ".",
+            "Add",
+            "(",
+            "5",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "list",
+            ".",
+            "Remove",
+            "(",
+            "5",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "list",
+            ".",
+            "Count",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "list",
+            ".",
+            "Clear",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "list",
+            ".",
+            "Contains",
+            "(",
+            "5",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "list",
+            ".",
+            "Sort",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "list",
+            ".",
+            "Reverse",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "var",
+            "dict",
+            "=",
+            "new",
+            "Dictionary",
+            "<s,int>",
+            "()",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "dict",
+            "[",
+            "\"key\"",
+            "]",
+            "=",
+            "42",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "dict",
+            ".",
+            "ContainsKey",
+            "(",
+            "\"key\"",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "dict",
+            ".",
+            "Remove",
+            "(",
+            "\"key\"",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "dict",
+            ".",
+            "TryGetValue",
+            "(",
+            "k",
+            ",",
+            "out",
+            "v",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "var",
+            "set",
+            "=",
+            "new",
+            "HashSet",
+            "<int>",
+            "()",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "int[]",
+            "arr",
+            "=",
+            "new",
+            "int[10]",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "int[]",
+            "arr",
+            "=",
+            "{1,2,3}",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "arr",
+            ".",
+            "Length",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "Array",
+            ".",
+            "Sort",
+            "(",
+            "arr",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "Array",
+            ".",
+            "Reverse",
+            "(",
+            "arr",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "list",
+            ".",
+            "Where",
+            "(",
+            "x=>x>0",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "list",
+            ".",
+            "Select",
+            "(",
+            "x=>x*2",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "list",
+            ".",
+            "OrderBy",
+            "(",
+            "x=>x",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "list",
+            ".",
+            "First",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "list",
+            ".",
+            "Any",
+            "(",
+            "x=>x>5",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "list",
+            ".",
+            "Sum",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "list",
+            ".",
+            "Max",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "list",
+            ".",
+            "Min",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "list",
+            ".",
+            "Average",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "list",
+            ".",
+            "ToArray",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "list",
+            ".",
+            "ToList",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "try",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "}",
+            "catch",
+            "(",
+            "Exception",
+            "e",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "}",
+            "finally",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "throw",
+            "new",
+            "Exception",
+            "(",
+            "\"fail\"",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "throw",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "async",
+            "Task",
+            "RunAsync",
+            "(",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "await",
+            "Task",
+            ".",
+            "Delay",
+            "(",
+            "1000",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "async",
+            "Task<int>",
+            "GetAsync",
+            "(",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "var",
+            "r",
+            "=",
+            "await",
+            "GetAsync",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "Task",
+            ".",
+            "Run",
+            "(",
+            "()",
+            "=>",
+            "Work()",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "int?",
+            "x",
+            "=",
+            "null",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "var",
+            "v",
+            "=",
+            "x",
+            "??",
+            "0",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "obj",
+            "?.",
+            "Method",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "x",
+            "??=",
+            "10",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "var",
+            "d",
+            "=",
+            "obj",
+            "as",
+            "Dog",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "bool",
+            "b",
+            "=",
+            "obj",
+            "is",
+            "Dog",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "typeof",
+            "(",
+            "int",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "nameof",
+            "(",
+            "x",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "s",
+            ".",
+            "ToUpper",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "s",
+            ".",
+            "ToLower",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "s",
+            ".",
+            "Trim",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "s",
+            ".",
+            "Split",
+            "(",
+            "','",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "s",
+            ".",
+            "Contains",
+            "(",
+            "\"lo\"",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "s",
+            ".",
+            "Substring",
+            "(",
+            "0",
+            ",",
+            "3",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "s",
+            ".",
+            "Replace",
+            "(",
+            "\"a\"",
+            ",",
+            "\"b\"",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "int",
+            ".",
+            "Parse",
+            "(",
+            "s",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "int",
+            ".",
+            "TryParse",
+            "(",
+            "s",
+            ",",
+            "out",
+            "n",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "x",
+            ".",
+            "ToString",
+            "(",
+            ")",
+            ";"
+        ]
+    }
+]

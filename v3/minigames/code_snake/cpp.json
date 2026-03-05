@@ -1,0 +1,1479 @@
+[
+    {
+        "tokens": [
+            "int",
+            "x",
+            "=",
+            "5",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "double",
+            "pi",
+            "=",
+            "3.14",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "char",
+            "c",
+            "=",
+            "'A'",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "bool",
+            "flag",
+            "=",
+            "true",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "auto",
+            "val",
+            "=",
+            "42",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::string",
+            "name",
+            "=",
+            "\"Alice\"",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::string",
+            "s",
+            "(",
+            "\"Hello\"",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "int",
+            "sum",
+            "=",
+            "x",
+            "+",
+            "y",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "float",
+            "avg",
+            "=",
+            "sum",
+            "/",
+            "2.0f",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "int",
+            "mod",
+            "=",
+            "x",
+            "%",
+            "3",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::cout",
+            "<<",
+            "\"Hello\"",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::cout",
+            "<<",
+            "x",
+            "<<",
+            "std::endl",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::cout",
+            "<<",
+            "\"x=\"",
+            "<<",
+            "x",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::cin",
+            ">>",
+            "x",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::cin",
+            ">>",
+            "name",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::cerr",
+            "<<",
+            "\"Error\"",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "getline",
+            "(",
+            "std::cin",
+            ",",
+            "s",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::cout",
+            "<<",
+            "'\\n'",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::cout",
+            "<<",
+            "std::fixed",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::cout",
+            "<<",
+            "std::setw",
+            "(",
+            "10",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "if",
+            "(",
+            "x",
+            ">",
+            "0",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "if",
+            "(",
+            "x",
+            "==",
+            "5",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "if",
+            "(",
+            "x",
+            "!=",
+            "y",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "}",
+            "else",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "else",
+            "if",
+            "(",
+            "x",
+            "<",
+            "0",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "if",
+            "(",
+            "x",
+            "&&",
+            "y",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "if",
+            "(",
+            "x",
+            "||",
+            "y",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "if",
+            "(",
+            "!flag",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "if",
+            "(",
+            "auto",
+            "v",
+            "=",
+            "get()",
+            ";",
+            "v",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "if",
+            "constexpr",
+            "(",
+            "N",
+            ">",
+            "0",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "for",
+            "(",
+            "int",
+            "i=0",
+            ";",
+            "i<10",
+            ";",
+            "i++",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "for",
+            "(",
+            "auto",
+            "&x",
+            ":",
+            "vec",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "for",
+            "(",
+            "auto",
+            "it",
+            ":",
+            "map",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "for",
+            "(",
+            "const",
+            "auto&",
+            "s",
+            ":",
+            "list",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "while",
+            "(",
+            "x",
+            ">",
+            "0",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "while",
+            "(",
+            "true",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "do",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "}",
+            "while",
+            "(",
+            "x",
+            ">",
+            "0",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "break",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "continue",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "return",
+            "0",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "return",
+            "x",
+            "+",
+            "y",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "return",
+            "nullptr",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "return",
+            "{}",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "return",
+            "std::move",
+            "(",
+            "obj",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "switch",
+            "(",
+            "ch",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "case",
+            "'A'",
+            ":"
+        ]
+    },
+    {
+        "tokens": [
+            "case",
+            "1",
+            ":",
+            "break",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "default",
+            ":"
+        ]
+    },
+    {
+        "tokens": [
+            "[[fallthru]]",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "#include",
+            "<iostream>"
+        ]
+    },
+    {
+        "tokens": [
+            "#include",
+            "<vector>"
+        ]
+    },
+    {
+        "tokens": [
+            "#include",
+            "<string>"
+        ]
+    },
+    {
+        "tokens": [
+            "#include",
+            "<map>"
+        ]
+    },
+    {
+        "tokens": [
+            "#include",
+            "<algorithm>"
+        ]
+    },
+    {
+        "tokens": [
+            "#include",
+            "<memory>"
+        ]
+    },
+    {
+        "tokens": [
+            "#include",
+            "<fstream>"
+        ]
+    },
+    {
+        "tokens": [
+            "#include",
+            "<sstream>"
+        ]
+    },
+    {
+        "tokens": [
+            "#include",
+            "<cmath>"
+        ]
+    },
+    {
+        "tokens": [
+            "#include",
+            "<numeric>"
+        ]
+    },
+    {
+        "tokens": [
+            "using",
+            "namespace",
+            "std",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "namespace",
+            "App",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "}",
+            "//",
+            "namespace"
+        ]
+    },
+    {
+        "tokens": [
+            "std::vector",
+            "<int>",
+            "vec",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "vec",
+            ".",
+            "push_back",
+            "(",
+            "5",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "vec",
+            ".",
+            "pop_back",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "vec",
+            ".",
+            "size",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "vec",
+            ".",
+            "empty",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "vec",
+            ".",
+            "clear",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "vec",
+            ".",
+            "at",
+            "(",
+            "0",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "vec",
+            "[",
+            "i",
+            "]",
+            "=",
+            "x",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "vec",
+            ".",
+            "begin",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "vec",
+            ".",
+            "end",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::map",
+            "<str,int>",
+            "m",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "m",
+            "[",
+            "\"key\"",
+            "]",
+            "=",
+            "42",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "m",
+            ".",
+            "find",
+            "(",
+            "\"key\"",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "m",
+            ".",
+            "erase",
+            "(",
+            "\"key\"",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "m",
+            ".",
+            "count",
+            "(",
+            "\"key\"",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::set",
+            "<int>",
+            "s",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "s",
+            ".",
+            "insert",
+            "(",
+            "5",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::pair",
+            "<int,int>",
+            "p",
+            "(",
+            "1",
+            ",",
+            "2",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "auto",
+            "[a,b]",
+            "=",
+            "p",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::sort",
+            "(",
+            "v.begin()",
+            ",",
+            "v.end()",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::find",
+            "(",
+            "v.begin()",
+            ",",
+            "v.end()",
+            ",",
+            "x",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::count",
+            "(",
+            "v.begin()",
+            ",",
+            "v.end()",
+            ",",
+            "x",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::reverse",
+            "(",
+            "v.begin()",
+            ",",
+            "v.end()",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::max",
+            "(",
+            "a",
+            ",",
+            "b",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::min",
+            "(",
+            "a",
+            ",",
+            "b",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::swap",
+            "(",
+            "a",
+            ",",
+            "b",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::accumulate",
+            "(",
+            "v.begin()",
+            ",",
+            "v.end()",
+            ",",
+            "0",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "class",
+            "Dog",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "public",
+            ":"
+        ]
+    },
+    {
+        "tokens": [
+            "private",
+            ":"
+        ]
+    },
+    {
+        "tokens": [
+            "protected",
+            ":"
+        ]
+    },
+    {
+        "tokens": [
+            "Dog",
+            "(",
+            ")",
+            "=",
+            "default",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "~Dog",
+            "(",
+            ")",
+            "=",
+            "default",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "Dog",
+            "(",
+            "int",
+            "age",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "void",
+            "bark",
+            "(",
+            ")",
+            "const",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "int",
+            "getAge",
+            "(",
+            ")",
+            "const",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "return",
+            "age_",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "}",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "class",
+            "Cat",
+            ":",
+            "public",
+            "Animal",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "virtual",
+            "void",
+            "speak",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "void",
+            "speak",
+            "(",
+            ")",
+            "override",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "virtual",
+            "~Base",
+            "(",
+            ")",
+            "=",
+            "default",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "void",
+            "run",
+            "(",
+            ")",
+            "final",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "struct",
+            "Point",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "int",
+            "x",
+            ";",
+            "int",
+            "y",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "Point",
+            "p",
+            "{",
+            "1",
+            ",",
+            "2",
+            "}",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "p",
+            ".",
+            "x",
+            "=",
+            "10",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "enum",
+            "class",
+            "Color",
+            "{",
+            "Red",
+            ",",
+            "Blue",
+            "}",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "Color",
+            "c",
+            "=",
+            "Color::Red",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "template",
+            "<typename",
+            "T>"
+        ]
+    },
+    {
+        "tokens": [
+            "T",
+            "add",
+            "(",
+            "T",
+            "a",
+            ",",
+            "T",
+            "b",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "return",
+            "a",
+            "+",
+            "b",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "template",
+            "<class",
+            "T>"
+        ]
+    },
+    {
+        "tokens": [
+            "int*",
+            "ptr",
+            "=",
+            "nullptr",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "auto",
+            "p",
+            "=",
+            "new",
+            "int",
+            "(",
+            "5",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "delete",
+            "p",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "auto",
+            "a",
+            "=",
+            "new",
+            "int",
+            "[",
+            "10",
+            "]",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "delete[]",
+            "a",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "auto",
+            "sp",
+            "=",
+            "make_shared",
+            "<int>",
+            "(",
+            "5",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "auto",
+            "up",
+            "=",
+            "make_unique",
+            "<int>",
+            "(",
+            "5",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "shared_ptr",
+            "<int>",
+            "p",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "unique_ptr",
+            "<int>",
+            "p",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "weak_ptr",
+            "<int>",
+            "wp",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "sp",
+            ".",
+            "get",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "sp",
+            ".",
+            "reset",
+            "(",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "auto",
+            "fn",
+            "=",
+            "[]()",
+            "{}",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "auto",
+            "fn",
+            "=",
+            "[&](int",
+            "x)",
+            "{",
+            "return",
+            "x;}",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "auto",
+            "fn",
+            "=",
+            "[=]()",
+            "{",
+            "return",
+            "y;}",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "try",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "}",
+            "catch",
+            "(",
+            "const",
+            "std::exception&",
+            "e",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "}",
+            "catch",
+            "(",
+            "...",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "throw",
+            "runtime_error",
+            "(",
+            "\"fail\"",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "throw",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "noexcept",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "static_cast",
+            "<int>",
+            "(",
+            "3.14",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "dynamic_cast",
+            "<Dog*>",
+            "(",
+            "ptr",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "const_cast",
+            "<int*>",
+            "(",
+            "cptr",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "reinterpret_cast",
+            "<char*>",
+            "(",
+            "p",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "constexpr",
+            "int",
+            "N",
+            "=",
+            "10",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "static",
+            "int",
+            "count",
+            "=",
+            "0",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "const",
+            "int",
+            "MAX",
+            "=",
+            "100",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "inline",
+            "int",
+            "add",
+            "(",
+            "int",
+            "a",
+            ")",
+            "{"
+        ]
+    },
+    {
+        "tokens": [
+            "extern",
+            "int",
+            "gVar",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "mutable",
+            "int",
+            "cache_",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "x",
+            "++",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "x",
+            "+=",
+            "5",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "x",
+            "&=",
+            "0xFF",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "int",
+            "r",
+            "=",
+            "x",
+            "?",
+            "1",
+            ":",
+            "0",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "std::string",
+            "s",
+            "=",
+            "std::to_string",
+            "(",
+            "42",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "int",
+            "n",
+            "=",
+            "std::stoi",
+            "(",
+            "s",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "s",
+            ".",
+            "substr",
+            "(",
+            "0",
+            ",",
+            "3",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "s",
+            ".",
+            "find",
+            "(",
+            "\"lo\"",
+            ")",
+            ";"
+        ]
+    },
+    {
+        "tokens": [
+            "s",
+            ".",
+            "length",
+            "(",
+            ")",
+            ";"
+        ]
+    }
+]
